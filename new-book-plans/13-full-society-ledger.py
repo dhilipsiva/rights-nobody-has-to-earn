@@ -124,8 +124,20 @@ PROPOSAL_DISPOSITIONS = ["added", "classified-out", "retained-limit"]
 
 # Stage marker: the reviewed source's status and the report's stage label move in
 # lockstep with the content stages; bump both here and in the JSON together.
-EXPECTED_STATUS = "stage_2_defect_backfill"
-STAGE_LABEL = "stage 2"
+EXPECTED_STATUS = "stage_3_executable_projections"
+STAGE_LABEL = "stage 3"
+
+# Second output: the coverage map's section-3 table is a generated region of
+# this ledger — the ratified cell texts live verbatim-frozen on the legacy-row
+# records and render unchanged, plus a generated split-claims column. Only the
+# region between the markers is machine-owned; the heading, canonical-source
+# note, and legend above it stay hand text.
+COVERAGE_MAP = pathlib.Path("new-book-plans/book-1-constitutional-coverage-map.md")
+REGION_RE = re.compile(
+    r"(<!-- BEGIN GENERATED: full-society-coverage -->)(.*?)"
+    r"(<!-- END GENERATED: full-society-coverage -->)",
+    re.S,
+)
 
 SEVERITY_CLASSES = ("critical", "material", "minor")
 SLUG_RE = re.compile(r"^[a-z0-9-]+$")
@@ -560,12 +572,20 @@ def validate_legacy_rows(src: dict, ids: dict):
         ctx = f"legacy_rows[{i}] ({rec.get('id', '?')})"
         exact_keys(
             rec,
-            ["id", "domain_title", "legacy_status", "domain_refs",
+            ["id", "domain_title", "legacy_coverage", "legacy_scope_requirement",
+             "legacy_status_cell", "legacy_gap", "legacy_status", "domain_refs",
              "split_claim_refs", "split_state", "source_ref"],
             ctx, optional=["unresolved"],
         )
         require_str(rec, "domain_title", ctx)
         require_str(rec, "legacy_status", ctx)
+        for key in ("legacy_coverage", "legacy_scope_requirement",
+                    "legacy_status_cell", "legacy_gap"):
+            val = require_str(rec, key, ctx)
+            if "|" in val or "\n" in val:
+                raise LedgerError(
+                    f"{ctx}: {key} may not contain a table pipe or newline"
+                )
         validate_reference(rec["source_ref"], f"{ctx}.source_ref")
         if rec["split_state"] not in ("split", "split-deferred"):
             raise LedgerError(f"{ctx}: split_state must be split or split-deferred")
@@ -1245,6 +1265,84 @@ def validate_stopping_rule(src: dict):
     validate_reference(rule["source_ref"], "stopping_rule.source_ref")
 
 
+def collect_map_needles(src) -> set:
+    """Every needle in the reviewed source that targets the coverage map."""
+    needles = set()
+
+    def walk(obj):
+        if isinstance(obj, dict):
+            for v in obj.values():
+                walk(v)
+        elif isinstance(obj, list):
+            for v in obj:
+                walk(v)
+        elif isinstance(obj, str) and obj.startswith(str(COVERAGE_MAP) + "::"):
+            needles.add(obj.split("::", 1)[1])
+
+    walk(src)
+    return needles
+
+
+def render_coverage_region(src: dict) -> str:
+    claims_by_id = {c["id"]: c for c in src["claims"]}
+    lines = [
+        "| Domain | Current Book 1 coverage | Ratified scope requirement | "
+        "Status | Gap / author ruling required | Split claims (posture) |",
+        "| --- | --- | --- | --- | --- | --- |",
+    ]
+    for row in src["legacy_rows"]:
+        splits = []
+        for cid in row["split_claim_refs"]:
+            claim = claims_by_id[cid]
+            posture = claim["posture"]
+            if posture == "Unestablished":
+                posture += "/" + claim["unestablished_disposition"]
+            splits.append(f"{cid} ({posture})")
+        lines.append(
+            "| " + " | ".join([
+                row["domain_title"], row["legacy_coverage"],
+                row["legacy_scope_requirement"], row["legacy_status_cell"],
+                row["legacy_gap"], "; ".join(splits) or "—",
+            ]) + " |"
+        )
+    return "\n".join(lines)
+
+
+def validate_coverage_region(src: dict):
+    """Guards on the generated region, run against the in-memory splice: no
+    generated heading lines, and every ledger needle targeting the map must
+    still occur exactly once in the spliced result."""
+    body = render_coverage_region(src)
+    for line in body.splitlines():
+        if line.startswith("## ") or line.startswith("### "):
+            raise LedgerError(
+                "the generated coverage region may not emit a heading line"
+            )
+    map_path = ROOT / COVERAGE_MAP
+    if not map_path.is_file():
+        raise LedgerError(f"missing coverage map: {COVERAGE_MAP}")
+    text = map_path.read_text(encoding="utf-8")
+    if not REGION_RE.search(text):
+        raise LedgerError(
+            "coverage map has no generated region — add the BEGIN/END markers "
+            "first"
+        )
+    spliced = splice_coverage(text, body)
+    for needle in collect_map_needles(src):
+        count = spliced.count(needle)
+        if count != 1:
+            raise LedgerError(
+                f"after splicing, coverage-map needle must occur exactly once; "
+                f"found {count}: {needle!r}"
+            )
+    return spliced
+
+
+def splice_coverage(text: str, body: str) -> str:
+    return REGION_RE.sub(lambda m: m.group(1) + "\n" + body + "\n" + m.group(3),
+                         text, count=1)
+
+
 def validate_acceptance(src: dict):
     gate = src.get("acceptance_gate")
     if not isinstance(gate, dict):
@@ -1288,6 +1386,7 @@ def validate(src: dict):
     validate_enum_mapping(src)
     validate_stopping_rule(src)
     validate_acceptance(src)
+    validate_coverage_region(src)
     return resolution
 
 
@@ -1376,6 +1475,11 @@ def negative_controls(src: dict) -> int:
                 {"affected_claim_ref": s["bodies"][0]["id"]}))
     control("a defect layer is never the domain sentinel",
             lambda s: s["defects"][0].update({"layer": DOMAIN_LAYER_SENTINEL}))
+    control("the generated region may not duplicate a coverage-map needle",
+            lambda s: s["legacy_rows"][0].update(
+                {"legacy_gap": s["legacy_rows"][0]["legacy_gap"] +
+                 " ## 3. Current coverage versus target scope"}),
+            "exactly once")
 
     passed = 0
     for entry in controls:
@@ -1765,6 +1869,30 @@ def render(src: dict, resolution: dict) -> str:
     w(f"**Envelope:** `{stub['id']}` is an explicit stub "
       f"({stub['status']}). {stub['note']}")
     w("")
+    w("## Book 2 crosswalk (routed rows only)")
+    w("")
+    w("A collection-only projection: Book 2 remains inactive until Book 1 — "
+      "First Edition actually ships, and this view carries routing and closure "
+      "fields only. No operating owner, workforce, facility, capacity, service, "
+      "or cost field appears here; those belong to Book 2's own responsibility "
+      "view when it activates, generated from this same canonical source.")
+    w("")
+    w("| ID | Title | Routed as | Severity | Consequence | Closure condition |")
+    w("| --- | --- | --- | --- | --- | --- |")
+    for rec in src["claims"]:
+        if rec["layer"] == "book-2-operation" or \
+                rec.get("unestablished_disposition") == "routed-book-2":
+            routed = rec["layer"]
+            if rec.get("unestablished_disposition"):
+                routed += f" ({rec['unestablished_disposition']})"
+            w(f"| {rec['id']} | {rec['title']} | {routed} | {rec['severity']} | "
+              f"{rec['consequence']} | {rec['closure_condition']} |")
+    for rec in src.get("defects", []):
+        if rec.get("book2_crosswalk"):
+            w(f"| {rec['id']} | {rec['title']} | {rec['defect_disposition']} | "
+              f"{severity_class(rec)} | {rec['consequence']} | "
+              f"{rec['closure_condition']} |")
+    w("")
     w("## Deferred populations and projections")
     w("")
     w("| Record type | Stage | Owner | Closure condition |")
@@ -1801,19 +1929,29 @@ def main():
     resolution = validate(src)
     controls = negative_controls(src)
     rendered = render(src, resolution)
+    spliced_map = validate_coverage_region(src)
 
     out_path = ROOT / OUTPUT
+    map_path = ROOT / COVERAGE_MAP
     if args.check:
         current = out_path.read_text(encoding="utf-8") if out_path.exists() else ""
         if current != rendered:
             raise LedgerError(f"{OUTPUT} is STALE — rerun without --check")
-        print(f"{OUTPUT} is current; {controls} structural negative controls "
-              "pass; enum-mapping closure over the six reviewed sources holds; "
+        if map_path.read_text(encoding="utf-8") != spliced_map:
+            raise LedgerError(
+                f"{COVERAGE_MAP} generated region is STALE — rerun without "
+                "--check"
+            )
+        print(f"{OUTPUT} and the coverage-map region are current; {controls} "
+              "structural negative controls pass; enum-mapping and "
+              "residual-coverage closures over the six reviewed sources hold; "
               "routing inventory only — nothing established beyond each row's "
               "own posture")
     else:
         out_path.write_text(rendered, encoding="utf-8")
-        print(f"wrote {OUTPUT}; {controls} structural negative controls pass")
+        map_path.write_text(spliced_map, encoding="utf-8")
+        print(f"wrote {OUTPUT} and the coverage-map region; {controls} "
+              "structural negative controls pass")
 
 
 if __name__ == "__main__":

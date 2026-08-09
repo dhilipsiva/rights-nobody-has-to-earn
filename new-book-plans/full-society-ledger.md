@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-2`; stage 2). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-3x`; stage 3). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -486,6 +486,17 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - **FS-EXA-04 A reviewer or institution actually acts**: That a named reader, reviewer, or institution acts on a derived duty or alarm is assumed, never derived; a duty or an alarm is not evidence that anyone acted. Failure consequence: The breach of the duty is also markable, and what runs out is not links but anybody who has to act — stated in print.
 
 **Envelope:** `FS-ENV-00` is an explicit stub (not-yet-versioned). An ID placeholder only. The stub can route, never assure: no record citing it may carry an operationally-assured stage, an Evidenced liveness posture, or a remedied resolution. Its content belongs to the reference-envelope tracker item and is deliberately not seeded here.
+
+## Book 2 crosswalk (routed rows only)
+
+A collection-only projection: Book 2 remains inactive until Book 1 — First Edition actually ships, and this view carries routing and closure fields only. No operating owner, workforce, facility, capacity, service, or cost field appears here; those belong to Book 2's own responsibility view when it activates, generated from this same canonical source.
+
+| ID | Title | Routed as | Severity | Consequence | Closure condition |
+| --- | --- | --- | --- | --- | --- |
+| FS-CLM-03 | Equality diagnostics and repair operations | book-2-operation (routed-book-2) | serious | an operational claim here would launder routing into assurance | Book 2's own gates |
+| FS-CLM-24 | Economic operations and feasibility | book-2-operation (routed-book-2) | serious | a feasibility claim here would take a route that does not exist | Book 2's own gates |
+| FS-DFT-29 | Operational assurance and liveness remain external | externally-bounded-assumption | material | no repository test can force publication, advancement, review, release, recovery, or remedy | never internal — operational assurance is the only route that can carry an arrival claim, and it is unbuilt |
+| FS-DFT-38 | Other states' cooperation and recognition are assumptions | externally-bounded-assumption | material | the external-power families rest on named assumptions no book can derive | never internal — bounded per treaty and per case with the external-power families |
 
 ## Deferred populations and projections
 

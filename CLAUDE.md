@@ -1396,11 +1396,34 @@ reviewed JSONs **live** for enum-mapping closure and sits off the 7→12 digest
 chain, binding only the assurance-portfolio and full-society-boundary
 decisions by digest. Its verdict line is byte-exact and deliberately weak:
 routing inventory only, nothing established beyond each row's own posture,
-Gate A not passed; the only rollup is the non-numeric worst-case one. Stage 2
-backfills every existing defect as keyed rows and **must precede any new
-resolution language in prose**; stage 3 turns the coverage-map table into a
-generated region and adds the further projections; stage 4 is the independent
-scope review and the Gate A closure record, which is an author checkpoint. A
+Gate A not passed; the only rollup is the non-numeric worst-case one.
+
+**Stages 2 and 3's executable half are enacted (2026-08-09).** Every declared
+defect pin, repair narrative, open gap, and sibling residual is a keyed defect
+row under a second live-read closure: the sibling JSONs' residual pools are
+collected at check time, and every pool token must be cited by a defect row or
+excluded with a recorded reason, in both directions. Resolution is generated,
+never authored — a row resolves for its claim only with an eligible
+disposition at an implemented stage, its typed control present, its affected
+claim's posture established, and exactly one receipt bound; a critical
+unresolved row derives blocking on its claim, and hand-authored resolution or
+blocking fails generation. Receipts exist only for repairs whose
+reintroduction controls already execute in the verifier and whose reader
+narration already exists in print, each naming its residual sibling so no
+receipt implies a narrower repair cured a wider defect; resolution is
+claim-relative and asserts nothing beyond the affected row's own posture. The
+register deficit and the live-record gap are critical and block their claims.
+The coverage map's section-3 table is now a generated region of the ledger
+(the ratified cell texts live verbatim-frozen on the legacy-row records and
+render unchanged plus a generated split-claims column; the generator's
+`--check` gates both outputs and refuses a region that would duplicate any
+coverage-map needle), and the report carries a routed-rows-only Book 2
+crosswalk with no operational fields. The grandfathered Part V passage has no
+defect row, per the register decision's own words; its dated non-conformance
+is a witness on the deficit rows, which the author's pending repair can now
+cite. Roles, powers, dependencies, scenarios, and thresholds stay deferred
+with owners until their sibling items land; stage 4 — independent scope
+review and the Gate A closure record — remains an author checkpoint, and a
 hand-maintained competitor to any projection remains refused.
 
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
