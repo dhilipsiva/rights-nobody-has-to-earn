@@ -779,107 +779,10 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-- [ ] **Complete the full-society domain-and-layer ledger (stages 1-3 +
-  stage-4 machinery landed fcb9b8d, 56c35cd, 79d778f, 2b8b348; R7 protocol
-  and commitment mechanics landed 74d037e).**
-  - The canonical source exists and is populated through its executable
-    projections: `new-book-plans/full-society-ledger.json`, validated and
-    rendered by `new-book-plans/13-full-society-ledger.py`, gating both the
-    generated report and the coverage map's section-3 region in one
-    `verify.sh` step. It declares the named axes and stopping rule; fixes the
-    five-layer `scope_disposition` enum; carries the domains, split coverage
-    claims with the ratified cell texts verbatim-frozen, bodies, routes,
-    external assumptions, and envelope stub; and now holds the keyed defect
-    rows, the five resolution receipts, and the routed-rows-only Book 2
-    crosswalk. Two live-read closures bind it to the sibling reviewed JSONs:
-    enum mapping and residual-coverage citation, both bidirectional.
-    Resolution and blocking are generated, never authored, and bounded by
-    each affected claim's own posture; the register deficit and the
-    live-record gap block their claims as critical. Schema detail lives in
-    the generator and the controlling decision records, not here.
-  - Resolution receipts exist only where a row's generated resolution permits
-    one, and the author's pending passage repair now cites the deficit rows
-    rather than waiting on anything else; new resolution language in prose
-    still requires its receipt discipline through the
-    confession-as-ending item.
-  - **Remaining population — sibling-fed.** Role, power, dependency, and
-    scenario records populate as their owning foundation items land; each
-    carries its deferral record with owner and closure condition in the
-    source itself. Threshold records landed with the envelope structure
-    (dccea62) as meanings, not measurements; their values stay Book 2's
-    Gate D work.
-  - **Stage 4 — independent scope review and Gate A closure; the machinery is
-    landed, the events are not.** Proposal and review-event schemas stand
-    validated and empty behind their deferrals; the severity rubric is
-    author-confirmed (2026-08-09) with its basis recorded on the rubric; the
-    review route's falsification condition, declared ahead of build, now has
-    its commitment mechanics landed: the scope-review protocol
-    (`new-book-plans/full-society-scope-review-protocol.md`, author-confirmed
-    2026-08-09 with the basis recorded on the source binding and in its own
-    confirmation record, its status line live-checked against the
-    canonical source) fixes the hash-committed planted omission and seeded
-    triage controls, and the generator refuses an independent review event
-    without a pre-registered commitment — plant, seed, and protocol SHA-256
-    digests entered in the canonical source at commissioning, only against
-    the confirmed protocol, pre-images author-held outside the repo, which
-    excludes the author from the
-    severity-owner and checker roles for that event. The in-repo reviewer
-    corpus is never admissible independent-review evidence;
-    per-condition Gate A readiness is computed in the report, and a closure
-    record is refused while any condition computes unmet. Give every reviewer
-    proposal one public `proposal_disposition`: add it; classify it with
-    reasons, carrying the matching routing disposition; or retain it as a
-    severity-rated limit joining a stable defect row. The named severity owner
-    applies the rubric and an independent checker reviews the result; a
-    reviewer forces a reasoned disposition, not acceptance or a veto. The
-    severity owner and independent checker are designated (11dfe2d): Darshu
-    as severity owner, Dhanush as independent checker, in the
-    validator-checked designation record (dd5848d) — distinct people,
-    neither the pre-image custodian — after two refusals on this checkpoint
-    (role-echo placeholders, then AI agents), because a fabricated or
-    operator-run identity is invisible to the mechanical check, so the
-    substance is reviewed.
-    No
-    review has run, no reviewer is named, and the closure record is null;
-    review commissioning and its commitment, the
-    review event, and closure
-    record remain author checkpoints.
-  - **Done when:** every projection regenerates from the canonical source and an
-    independent scope review can name no material omitted domain, role,
-    dependency, or failure without the ledger adding it, classifying it out with
-    reasons, or recording a visible severity-rated limit. The closure record
-    binds the gate, claim, source version, envelope, candidate, review cut-off,
-    assurance records, residuals, and claim limits. This is versioned
-    exhaustiveness for those declared axes, not a timeless completeness theorem,
-    and disclosure alone does not cure a critical gap.
-
-- [ ] **Define the reference-society envelope and measurable meanings of
-  “functional” (structure landed dccea62).**
-  - The envelope is versioned in structure in the canonical source: the
-    permanent pre-envelope identity beside `envelope-v1-structure`, whose
-    fields — population/demographics, territory/settlement/geography,
-    resource/ecological endowment, technology/infrastructure baseline,
-    trade/external cooperation, institutional starting state, time horizon,
-    promised service levels, and the ordinary-plus-compound shock set — carry
-    definitions, claim dependents, and invariance statements. No value enters
-    Book 1; every field's value status names Book 2's Gate D calibration as
-    owner, and `calibrated` is refused outright in this contract, entering
-    only through a deliberate future contract amendment. Nothing inherits an
-    envelope field silently: the dependency closure requires the
-    envelope-relative claims as dependents and refuses any established
-    constitutional invariant as one.
-  - The functional criteria are fixed as the seven-member union with
-    provenance, bound to the rulings' actual sentences by needle, with the
-    drift across the ratified variants recorded. Thresholds are meanings, not
-    measurements: each classifies its lawful source, which fixes its layer,
-    and separates its decision owner from its measurement owner.
-  - **Remaining:** values and calibration are Book 2's Gate D work through its
-    mirror item; a calibrated envelope enters Book 1's contract only by a
-    future amendment with author ratification.
-  - **Done when:** every functional or feasibility claim names an envelope
-    version, metric, threshold owner, uncertainty range and failure
-    interpretation, and no single favourable scenario is presented as
-    society-wide feasibility.
+Ordered by dependency: the three population items feed the ledger's
+deferred record types, the closure audit consumes every population, the
+envelope item is a Book 2 wait-state, and the ledger item integrates them
+and closes Gate A last.
 
 - [ ] **Build the roles, life-course, scale, and power-position matrix.**
   - Cover birth/first contact, childhood, adulthood, ageing, disability, illness,
@@ -964,6 +867,77 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     reviewed canonical source, rejects stale/unowned records and all named closure
     failures, and publishes a claim-by-claim pass, block or bounded-unresolved
     result with the responsible verification route.
+
+- [ ] **Define the reference-society envelope and measurable meanings of
+  “functional” (structure landed dccea62).**
+  - Book 1's half is landed: the envelope is versioned in structure (the
+    permanent pre-envelope identity beside `envelope-v1-structure`), the
+    dependency closure holds, the functional criteria are fixed as the
+    seven-member union with provenance, and the thresholds are recorded as
+    meanings with classified lawful sources. History lives in git and the
+    settled record in `CLAUDE.md`.
+  - **Remaining — a wait-state, not Book 1 work:** values and calibration are
+    Book 2's Gate D work through its mirror item; a calibrated envelope enters
+    Book 1's contract only by a future amendment with author ratification, and
+    the Gate A closure record waits on that amendment.
+  - **Done when:** every functional or feasibility claim names an envelope
+    version, metric, threshold owner, uncertainty range and failure
+    interpretation, and no single favourable scenario is presented as
+    society-wide feasibility.
+
+- [ ] **Complete the full-society domain-and-layer ledger.**
+  - The canonical source, generator, defect ledger and receipts, coverage-map
+    region, Book 2 crosswalk, review machinery, confirmed scope-review
+    protocol, commitment mechanics, and the severity-owner and
+    independent-checker designation (Darshu; Dhanush) are landed and
+    verifier-enforced. History lives in git and the settled record in
+    `CLAUDE.md`; schema detail lives in the generator and the controlling
+    decision records, not here. What remains is exactly what the computed
+    Gate A readiness list still refuses, in dependency order below.
+  - **Sibling populations (closure condition one).** Role, dependency, and
+    scenario records land through the three foundation items above, and
+    FS-POW contract cards through the phase-2 coverage-rows item; each
+    landing removes its deferral record from the source. Standing
+    maintenance rides along: the two live-read closures (enum mapping,
+    residual-coverage citation), receipts, and generated resolution must stay
+    green as sibling sources change, and `verify.sh` enforces that.
+  - **Projections (condition two).** The role matrix and dependency map
+    arrive with their populations, the assurance allocation with the closure
+    audit above, and the reader ledger with the reader-sessions item. Once
+    all four exist and regenerate, replace the generator's hardcoded
+    `form-only` readiness status with a computed one — a deliberate code
+    change reserved for that moment.
+  - **Blocking defect rows (condition three).** FS-DFT-16 and FS-DFT-17 close
+    when the accessibility-neutral delivery and receipt rule families land,
+    with the pinned-case rebalance sequenced after; FS-DFT-28 additionally
+    needs external operational assurance to become admissible. This is
+    rule-family work owned by its own items, not ledger bookkeeping, and
+    disclosure alone does not cure it.
+  - **[AUTHOR-GATED] Commission and run the independent scope review
+    (condition five).** In the confirmed protocol's own order: name the
+    reviewers — real people under its selection criteria; the designation
+    precedent holds, and placeholders and AI agents are refused — then
+    construct the plant and seed pre-images (author-held, outside the repo)
+    and publish the commitment digests in a dated commit before the received
+    window opens; issue the packet; Darshu triages every proposal under the
+    confirmed rubric and Dhanush checks each classification; every proposal
+    receives one public disposition; reveal and adjudicate both controls.
+    Run it against the completed map: the review binds a source version, and
+    spending it on a map with open deferrals wastes the plant.
+  - **[AUTHOR-GATED] Close Gate A with the closure record.** Deliberately
+    unreachable today by two refusals — the calibrated-envelope requirement
+    and the pinned not-passed gate status — so closing is its own ratified
+    contract amendment binding the gate, permitted claim, source version,
+    envelope, candidates, review cutoff, the independent event, assurance
+    records, residuals, claim limits, and the author's ratification.
+  - **Done when:** every projection regenerates from the canonical source and an
+    independent scope review can name no material omitted domain, role,
+    dependency, or failure without the ledger adding it, classifying it out with
+    reasons, or recording a visible severity-rated limit. The closure record
+    binds the gate, claim, source version, envelope, candidate, review cut-off,
+    assurance records, residuals, and claim limits. This is versioned
+    exhaustiveness for those declared axes, not a timeless completeness theorem,
+    and disclosure alone does not cure a critical gap.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
 
