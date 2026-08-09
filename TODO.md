@@ -186,9 +186,10 @@ verdict, or exceeds a measured bound. Do not ask one reasoning engine to become 
 budget, population, logistics, psychology, transition, source-deployment, or
 authentication system.
 
-**Interim assignment, until the generated ledger lands.** The portfolio is
-ratified but its ledger is not built, so assignment is stated inline rather than
-looked up: a repair prompt may open when the prompt body itself names, for each
+**Interim assignment, until the affected claim is in the ledger.** The
+canonical source landed at stage 1 (fcb9b8d), but a claim not yet carried as a
+ledger claim record still states its assignment inline rather than looked up:
+a repair prompt may open when the prompt body itself names, for each
 claim it serves, the posture, the route, and — where the route is formal
 entailment — the evidence kind, reviewed at prompt time. A prompt whose claims
 would take an established posture through a route that is neither built here nor
@@ -778,190 +779,45 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-- [ ] **Build a full-society domain-and-layer ledger with a declared stopping rule.**
-  - Create one reviewed, normalized canonical source with stable domain, role,
-    body/institution, power, dependency, scenario, claim, defect, external-
-    assumption, threshold, assurance-route, and resolution-receipt IDs. Give
-    every record applicability, layer, status, severity, consequence, owner and
-    closure fields.
-    Generate the coverage map, contract-card views, role matrix, dependency map,
-    assurance allocation, reader ledger and Book 2 crosswalk from that source; do
-    not maintain competing matrices by hand.
-  - **Carry the ratified assurance triple as fields on every claim record**, per
-    [`new-book-plans/book-1-assurance-portfolio-decision.md`](new-book-plans/book-1-assurance-portfolio-decision.md):
-    posture, route, evidence kind where the route is formal entailment, scope
-    bound, Unestablished disposition, owner, severity, closure condition,
-    public-claim restriction, and a mutation reference for any Derived row
-    resting on a bounded source mutation. The claim-assurance ledger is a
-    **generated projection** of these fields, not a second reviewed file — a
-    parallel hand-maintained matrix of assurance truth is refused by the
-    canonical-source mandate above.
-  - **Add a defect-disposition axis orthogonal to claim assurance.** Claim
-    posture answers how strongly a proposition is supported; assurance route
-    identifies which method may establish it; and assurance overlay says whether
-    it concerns safety, liveness, feasibility, or another surface.
-    `defect_disposition` instead answers what the design did about a known failure.
-    Keep it orthogonal to all
-    three, to the constitutional class, and to the social-domain axis. Use
-    distinct schema keys for `unestablished_disposition`, `scope_disposition`,
-    `proposal_disposition`, and `defect_disposition`; never overload one generic
-    `disposition` field or let one axis satisfy another.
-  - Keep each `defect_id` stable. Key each disposition row by `defect_id` x
-    `affected_claim_id` x `consequence_id` x `scope_id` x `envelope_id` x
-    `source_version`. Give each row exactly one current `defect_disposition` and
-    one current `response_stage`; retain prior values as transition history.
-    Different consequences or scopes create rows, not replacement defect IDs.
-  - Use this closed `defect_disposition` enum; its last three values are explicit
-    non-resolution boundaries; the other values are resolution-eligible only under
-    the claim-ceiling and response-stage rules below:
-    - `eliminated-structurally`: the failure-producing route no longer exists in
-      the declared model. A formal/Derived resolution requires an executable
-      reintroduction mutation; every other route requires its own preregistered
-      reintroduction, ablation, hostile, or negative control. The repaired source
-      or system must refuse the former result for the intended reason.
-    - `prevented`: the initiating failure cannot arise within the named scope.
-      Route-appropriate hostile and negative controls test the initiation boundary.
-    - `protected-consequence-contained`: the initiating failure may arise, but the
-      named protected consequence cannot cross the stated boundary. Bypass,
-      composition, and negative-control cases test that exact boundary.
-    - `remedied`: after harm occurs, an evidenced route restores the protected
-      condition. Record actor, trigger, interim continuity, restoration, challenge/
-      appeal, recurrence control, and evidence. This disposition is resolution-
-      eligible only with `operationally-assured-in-envelope` and an Evidenced
-      liveness claim through operational assurance; it never proves prevention.
-    - `externally-bounded-assumption`: closure depends on a premise outside the
-      model. Name its source/authenticator, falsifier, failure consequence, owner,
-      and public-claim restriction. Explicitly bounded is still not internally
-      resolved.
-    - `irreducible-limitation`: the chosen model cannot close the failure without
-      contradicting a settled boundary or claiming control it does not have.
-      Supply the argument, alternatives considered, residual risk, and exact claim
-      narrowing. Honest limitation is not resolution.
-    - `open-defect`: no adequate response is established. Carry severity,
-      consequence, owner, closure condition, affected claims, and blocking gate.
-  - Track one current `response_stage` under the closed enum below. Stage
-    progression is route-relative, not a universal total order.
-    `operationally-assured-in-envelope` subsumes
-    `implemented-in-assigned-route`; no other stage implication is automatic.
-    Preserve actual prior stages and their evidence in transition history:
-    - `detected`: the failure has a visible, attributable witness; nothing is yet
-      specified, implemented, prevented, repaired, recovered, or resolved.
-    - `interface-specified`: Book 1 assigns a duty, evidence, continuity, challenge,
-      or remedy interface, but no implemented route establishes its effect.
-    - `implemented-in-assigned-route`: the response exists in its assigned formal,
-      model, evidence, argument, editorial, or review route. The stage supplies no
-      assurance; the claim posture and route-specific controls still decide what is
-      established.
-    - `operationally-assured-in-envelope`: a staffed, costed, accountable route is
-      exercised end to end in the named test/pilot setting and declared shock cases.
-      It supports only the reproducible operational-design claim established for
-      that envelope, never deployment or generalisation beyond it.
-  - Never review or hand-author a free-form `resolved: true`. Generate the closed
-    `resolution_status` from affected claim and consequence, claim posture, assigned
-    route and admissible evidence, `defect_disposition`, `response_stage`,
-    `scope_id`, `envelope_id`, `source_version`, and eligible gate. Permit only
-    `resolved-for-claim` and `unresolved-for-claim`; derive gate blocking separately
-    from severity and applicability. A disposition or stage never upgrades a
-    posture or substitutes for an assurance route; resolution may not exceed the
-    affected claim's independently established ceiling. Publish and enforce a
-    defect-disposition x response-stage x posture/route compatibility table;
-    invalid combinations such as `remedied` + `detected` or
-    `eliminated-structurally` + `interface-specified` fail generation.
-    `eliminated-structurally` may resolve only the named failure in its exact model;
-    `prevented` only the initiating-failure claim; and
-    `protected-consequence-contained` only the named consequence and boundary.
-    Each requires route-specific controls and either
-    `implemented-in-assigned-route` or `operationally-assured-in-envelope`, which
-    subsumes that implementation maturity while retaining its evidence in history.
-    `remedied` resolves only the recovery claim and only with
-    `operationally-assured-in-envelope` plus an Evidenced liveness claim through
-    operational assurance. `externally-bounded-assumption`,
-    `irreducible-limitation`, and `open-defect` remain unresolved for the defect.
-    `detected` and `interface-specified` are non-resolution stages;
-    `implemented-in-assigned-route` and `operationally-assured-in-envelope` mature
-    a disposition but resolve nothing by themselves. Detected, specified, assigned,
-    implemented, disclosed, and understood are not synonyms for resolved.
-  - Every generated resolution claim needs one resolution receipt binding: defect,
-    affected-claim, and consequence IDs; defect disposition and response stage;
-    claim posture, assigned route, admissible evidence, and assurance ceiling; what
-    failed and the hostile witness; why it failed; the exact response/change; what
-    now follows; the proof, probe, model, observation, or operational test and its
-    negative control; what still does not follow; remaining external dependencies
-    or residuals; scope, source, and envelope versions; responsible owner; and
-    eligible gate. Parts I-V carry the jargon-free reader form. The generated
-    public ledger carries exact rules, controls, models, evidence, and provenance;
-    neither may imply that a narrower receipt cured a wider defect.
-  - Backfill every existing `:defect`, known design/model/argument/evidence/reader
-    defect, open gap, residual, material red-team finding, and passage claiming a
-    defect was repaired before new resolution language ships. A narrated social
-    harm is a hostile witness or scenario, not automatically a book/design defect.
-    Extend the generator to fail on a missing or multiply active disposition or
-    response stage for one keyed row; a hand-authored resolution status; resolution
-    stronger than the affected claim's posture/route/evidence ceiling; elimination
-    without its route-appropriate reintroduction/ablation control; prevention
-    without an initiation-boundary hostile control; containment without bypass/
-    composition controls; remedy without the recovery fields, Evidenced posture,
-    operational-assurance route, and `operationally-assured-in-envelope` stage;
-    that operational stage counted before its eligible gate, without operational
-    evidence, or as proof of deployment/generalisation; a non-resolution defect
-    or stage counted as closed; a critical unresolved defect that does not block
-    its affected claim; or a resolution receipt with no reader-facing mapping.
-  - Split, do not label. A record that would carry two postures is two records;
-    "partial formalisation" is not a posture but an unsplit claim. One posture and
-    one evidence kind per record is a precondition of the generator, not a
-    preference.
-  - The generator must fail on: a claim with no posture; a posture unsupported by
-    its route; a Derived row whose evidence kind is not executable, or which rests
-    on a mutation with no mutation reference; a Checked row phrased as an
-    impossibility; an Evidenced row with no reachable source or a failing
-    staleness gate; a Specified row without its unimplemented marker; a Reasoned
-    row cited as Derived; an Unestablished row with no
-    `unestablished_disposition`, or with a route-unbuilt disposition lacking
-    severity, owner, closure condition, and claim restriction; a liveness claim in
-    any posture but Unestablished; a feasibility
-    claim present in Book 1 at all; an established posture resting on a route that
-    is neither built nor available; a route with no declared negative control; a
-    reviewed enum with no mapping row; and any aggregate score. One conservative
-    non-numeric rollup is permitted, on the record case's existing rule.
-  - Map the remaining per-case and per-scenario enums in the reviewed sources onto
-    the canonical postures **mechanically**, in the same change. Do not transcribe
-    them; transcribed lists rot here.
-  - Preserve the ratified constitutional taxonomy as the legal-effect axis; it is
-    chosen, not exhaustive. Add an orthogonal social-domain axis answering which
-    part of life is involved and where its decisions belong.
-  - At minimum inventory: personhood/life course; body, health, care, family and
-    intimacy; learning, knowledge, media, science, religion and culture; food,
-    housing, land, utilities, infrastructure and public space; work, property,
-    enterprise, exchange, money, credit, debt and public finance; democracy,
-    government and administration; civil/criminal/administrative justice, safety
-    and repair; records, surveillance and automated power; locality, membership,
-    mobility, migration and external relations; emergencies, security and defence;
-    ecology, non-human animals, commons and future conditions; and friendship, leisure, mutual aid,
-    associations and the residual free social field.
-  - For every domain record: constitutional invariants; decisions left to ordinary
-    majorities; protected private/civic choice; public bodies and expressly bound
-    private actors; Book 2 operations; external facts/liveness assumptions;
-    applicable class cards and structural walls; evidence, time, challenge and
-    remedy contracts; scenario applicability; and its reader-facing destination.
-    Governed/provided domains require ordinary-success, failure/abuse and recovery
-    paths. Protected free/private domains require non-interference, non-recording/
-    non-compulsion and recourse boundaries—not a state-certified successful life.
-  - A scope row is routing-complete only when every applicable field is answered or
-    explicitly marked “not constitutionally prescribed”,
-    “democratic/ordinary-law choice”, “Book 2 operation”, or “external
-    assumption”. Classification is routing, not assurance. An unresolved field
-    must carry severity, consequence, owner, closure condition, and public-claim
-    limitation; a critical gap applicable to the gate's permitted claim blocks
-    that gate. An unclassified public power is a defect. A harmless private
-    practice may map categorically to the protected free field only after checking
-    rights harm, dependency/concentrated power, public duty, and commons/external
-    effects.
-  - Give every reviewer proposal one public `proposal_disposition`: add it to the
+- [ ] **Complete the full-society domain-and-layer ledger (stage 1 landed
+  fcb9b8d).**
+  - The canonical source exists: `new-book-plans/full-society-ledger.json`,
+    validated and rendered by `new-book-plans/13-full-society-ledger.py` and
+    gated as a structural `verify.sh` step. It declares the named axes and the
+    stopping rule; fixes the `scope_disposition` enum, author-ratified
+    2026-08-09 as the reader-facing five layers; seeds the social-domain
+    records with per-layer buckets, the coverage map's frozen legacy rows split
+    into one-posture claim records under that map's own legend, the required
+    bodies, the seven assurance routes, the named external assumptions, and the
+    explicit envelope stub; and carries a deferral record with owner and
+    closure condition for every record type not yet populated. The generator
+    enforces the ratified fail list, the defect-disposition x response-stage x
+    posture/route compatibility table, distinct disposition keys, the
+    no-aggregate rule, and enum-mapping closure over the sibling reviewed
+    JSONs, which it reads live. Schema detail lives in the generator and the
+    controlling decision records, not here.
+  - **Stage 2 — defect backfill, before any new resolution language.**
+    Backfill every existing `:defect`, known design/model/argument/evidence/
+    reader defect, open gap, residual, material red-team finding, and passage
+    claiming a defect was repaired before new resolution language ships. A
+    narrated social harm is a hostile witness or scenario, not automatically a
+    book/design defect. Resolution receipts follow the backfill and the
+    generated resolution rules; none may precede it, and the author's pending
+    passage repair either waits for this stage or lands with its receipt if it
+    narrates a defect as repaired.
+  - **Stage 3 — projections absorb their hand-maintained ancestors.** The
+    coverage map's section-3 table becomes a generated region of the ledger
+    report; role, power, dependency, scenario, and threshold records populate
+    as their owning items land; the Book 2 crosswalk view emits routed rows
+    only and stays within collection-only.
+  - **Stage 4 — independent scope review and Gate A closure.** Give every
+    reviewer proposal one public `proposal_disposition`: add it to the
     canonical source; classify it with reasons under the proposal dispositions
     or as duplicate/immaterial; or retain it as an unresolved severity-rated
     limit. The named severity owner applies the published rubric and an
     independent checker reviews the result; a reviewer forces a reasoned
-    proposal disposition, not automatic acceptance or a personal veto.
+    proposal disposition, not automatic acceptance or a personal veto. The
+    closure record and the severity-owner designation are an author checkpoint.
   - **Done when:** every projection regenerates from the canonical source and an
     independent scope review can name no material omitted domain, role,
     dependency, or failure without the ledger adding it, classifying it out with
