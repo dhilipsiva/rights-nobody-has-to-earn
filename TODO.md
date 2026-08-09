@@ -807,8 +807,8 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     condition in the source itself.
   - **Stage 4 — independent scope review and Gate A closure; the machinery is
     landed, the events are not.** Proposal and review-event schemas stand
-    validated and empty behind their deferrals; the candidate severity rubric
-    awaits author confirmation and computes as unmet until then; the review
+    validated and empty behind their deferrals; the severity rubric is
+    author-confirmed (2026-08-09) with its basis recorded on the rubric; the review
     route's falsification condition is declared ahead of build (a
     hash-committed planted omission plus seeded triage controls) and the
     in-repo reviewer corpus is never admissible independent-review evidence;
@@ -820,7 +820,7 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     applies the rubric and an independent checker reviews the result; a
     reviewer forces a reasoned disposition, not acceptance or a veto. No
     review has run, no reviewer is named, and the closure record is null; the
-    review event, severity-owner designation, rubric confirmation, and closure
+    review event, severity-owner designation, and closure
     record remain author checkpoints.
   - **Done when:** every projection regenerates from the canonical source and an
     independent scope review can name no material omitted domain, role,
