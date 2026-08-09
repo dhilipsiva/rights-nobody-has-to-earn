@@ -2082,7 +2082,8 @@
     "material": "Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives a severity owner, an independent check, and one public disposition; retention as a limit creates or joins a stable defect row.",
     "minor": "The editorial band: no record change and no materiality under the test. Recorded reasons suffice; no severity machinery attaches.",
     "materiality_ref": "stopping_rule.materiality_test",
-    "rubric_status": "candidate — author confirmation pending"
+    "rubric_status": "author-confirmed 2026-08-09 — basis recorded",
+    "confirmation_basis": "Author statement, 2026-08-09: \"I have reviewed. I can confirm it is good to proceed\" — given in answer to the direct question whether the confirmation includes the candidate severity rubric's three class definitions and their binding to the materiality test; answered: yes, rubric confirmed. Recorded in the repo's convention for author acts: the statement quoted verbatim, the question it answered named."
   },
   "closure_record": null,
   "acceptance_gate": {

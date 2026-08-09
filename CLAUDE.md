@@ -1432,9 +1432,12 @@ proposal_disposition with the ratified constraints enforced (added names its
 created records; an outward classification carries its matching Unestablished
 disposition; a retained limit creates or joins a stable defect row; a material
 proposal carries its severity class, severity owner, and independent check).
-The severity rubric ships as a **candidate — author confirmation pending**,
-bound to the stopping rule's materiality test by reference, and an unconfirmed
-rubric computes as an unmet closure condition. R7's falsification condition is
+The severity rubric is **author-confirmed (2026-08-09)**, bound to the
+stopping rule's materiality test by reference, with the confirmation basis —
+the author's statement, quoted verbatim, and the question it answered —
+recorded on the rubric itself; the status may only be the exact candidate or
+confirmed string, and a confirmed rubric without its recorded basis fails
+generation. R7's falsification condition is
 **declared ahead of build** — a hash-committed planted omission withheld from
 the review packet plus seeded triage controls; the declaration does not make
 the route available — and the admissibility bar is doctrine and computation
@@ -1448,8 +1451,7 @@ a present record would also require a gate status this contract refuses, so
 closing Gate A is necessarily a deliberate future amendment with its own
 author ratification. **No review has run, no reviewer is named, the closure
 record is null, and Gate A remains not passed**; the review event, the
-severity-owner designation, the rubric confirmation, and the closure record
-remain author checkpoints.
+severity-owner designation, and the closure record remain author checkpoints.
 
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 

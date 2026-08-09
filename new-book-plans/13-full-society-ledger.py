@@ -133,9 +133,12 @@ PROPOSAL_DISPOSITIONS = ["added", "classified-out", "retained-limit"]
 EXPECTED_STATUS = "stage_4_review_machinery"
 STAGE_LABEL = "stage 4 machinery"
 
-# The candidate rubric's status string is exact until a future author commit
-# confirms it; an unconfirmed rubric computes as an unmet closure condition.
+# The rubric's status string is exact in both states. It shipped as a
+# candidate; the author confirmed it on 2026-08-09, and the confirmation basis
+# is recorded on the rubric itself. An unconfirmed rubric computes as an unmet
+# closure condition.
 RUBRIC_STATUS_CANDIDATE = "candidate — author confirmation pending"
+RUBRIC_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 READINESS_MET = {"met-mechanically", "met-in-form"}
 
 # Second output: the coverage map's section-3 table is a generated region of
@@ -1519,7 +1522,8 @@ def validate_severity_rubric(src: dict):
     if not isinstance(rub, dict):
         raise LedgerError("severity_rubric must be an object")
     exact_keys(rub, ["critical", "material", "minor", "materiality_ref",
-                     "rubric_status"], "severity_rubric")
+                     "rubric_status"], "severity_rubric",
+               optional=["confirmation_basis"])
     for key in ("critical", "material", "minor"):
         require_str(rub, key, "severity_rubric")
     if rub["materiality_ref"] != "stopping_rule.materiality_test":
@@ -1527,11 +1531,20 @@ def validate_severity_rubric(src: dict):
             "severity_rubric.materiality_ref must bind the ratified "
             "materiality test by reference, never a paraphrase"
         )
-    if rub["rubric_status"] != RUBRIC_STATUS_CANDIDATE:
+    status = rub["rubric_status"]
+    if status == RUBRIC_STATUS_CANDIDATE:
+        if "confirmation_basis" in rub:
+            raise LedgerError(
+                "severity_rubric: a candidate rubric carries no confirmation "
+                "basis"
+            )
+    elif status == RUBRIC_STATUS_CONFIRMED:
+        require_str(rub, "confirmation_basis", "severity_rubric")
+    else:
         raise LedgerError(
             f"severity_rubric.rubric_status must be exactly "
-            f"{RUBRIC_STATUS_CANDIDATE!r} until a future author commit "
-            "confirms it"
+            f"{RUBRIC_STATUS_CANDIDATE!r} or {RUBRIC_STATUS_CONFIRMED!r} — "
+            "confirmation is a recorded author act, never a rewording"
         )
 
 
@@ -1794,9 +1807,11 @@ def negative_controls(src: dict) -> int:
             _proposal_class_on_immaterial)
     control("a proposal must name its review event",
             _proposal_unknown_event)
-    control("the rubric status is exact until confirmed",
+    control("the rubric status is exact in both states",
             lambda s: s["severity_rubric"].update(
                 {"rubric_status": "confirmed"}))
+    control("a confirmed rubric records its basis",
+            _confirmed_rubric_without_basis)
 
     passed = 0
     for entry in controls:
@@ -2069,6 +2084,11 @@ def _proposal_unknown_event(s):
     _mk_proposal(s, review_event_ref="FS-REV-00")
 
 
+def _confirmed_rubric_without_basis(s):
+    s["severity_rubric"]["rubric_status"] = RUBRIC_STATUS_CONFIRMED
+    s["severity_rubric"].pop("confirmation_basis", None)
+
+
 def _uncover_residual(s):
     counts = {}
     for rec in s["defects"]:
@@ -2307,8 +2327,8 @@ def render(src: dict, resolution: dict) -> str:
     w("")
     w("The review machinery stands ready and empty: proposal and review-event "
       "records are schema-enforced, and both populations stay deferred with "
-      "owners until the independent scope review runs. The severity rubric is "
-      f"a candidate ({src['severity_rubric']['rubric_status']}), bound to the "
+      "owners until the independent scope review runs. The severity rubric's "
+      f"status is {src['severity_rubric']['rubric_status']}, bound to the "
       "stopping rule's materiality test by reference. The in-repo reviewer "
       "corpus is never admissible independent-review evidence for the "
       "review-condition of closure: an independent event requires named "
@@ -2318,7 +2338,7 @@ def render(src: dict, resolution: dict) -> str:
       "a veto; the severity owner and the closure record are author "
       "checkpoints.")
     w("")
-    w("| Rubric class | Meaning (candidate) |")
+    w("| Rubric class | Meaning |")
     w("| --- | --- |")
     for cls in ("critical", "material", "minor"):
         w(f"| {cls} | {src['severity_rubric'][cls]} |")

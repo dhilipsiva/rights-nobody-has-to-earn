@@ -42,7 +42,6 @@ Per-condition status, generated from the source and echoing the closure conditio
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
 - **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no review event with independence true exists, and the in-repo reviewer corpus is never admissible for this condition
 - **unmet-external** (precondition) — the reference envelope: still the explicit stub; the envelope item owns its versioning
-- **unmet** (precondition) — the severity rubric: candidate — author confirmation pending
 
 ## The five layers
 
@@ -492,9 +491,9 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Proposals and review events
 
-The review machinery stands ready and empty: proposal and review-event records are schema-enforced, and both populations stay deferred with owners until the independent scope review runs. The severity rubric is a candidate (candidate — author confirmation pending), bound to the stopping rule's materiality test by reference. The in-repo reviewer corpus is never admissible independent-review evidence for the review-condition of closure: an independent event requires named reviewer identities, a resolving protocol, and passed seeded and planted-omission controls, none of which that corpus can supply. A reviewer compels a reasoned public disposition, not acceptance and not a veto; the severity owner and the closure record are author checkpoints.
+The review machinery stands ready and empty: proposal and review-event records are schema-enforced, and both populations stay deferred with owners until the independent scope review runs. The severity rubric's status is author-confirmed 2026-08-09 — basis recorded, bound to the stopping rule's materiality test by reference. The in-repo reviewer corpus is never admissible independent-review evidence for the review-condition of closure: an independent event requires named reviewer identities, a resolving protocol, and passed seeded and planted-omission controls, none of which that corpus can supply. A reviewer compels a reasoned public disposition, not acceptance and not a veto; the severity owner and the closure record are author checkpoints.
 
-| Rubric class | Meaning (candidate) |
+| Rubric class | Meaning |
 | --- | --- |
 | critical | Accepting the proposal would falsify the gate's permitted claim — a scope or assurance omission. An unresolved critical item blocks the affected gate even when it has an owner or has been disclosed, and a checked post-closure critical classification reopens Gate A. |
 | material | Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives a severity owner, an independent check, and one public disposition; retention as a limit creates or joins a stable defect row. |
