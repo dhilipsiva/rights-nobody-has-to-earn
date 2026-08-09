@@ -779,8 +779,8 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-- [ ] **Complete the full-society domain-and-layer ledger (stages 1-3
-  executable landed fcb9b8d, 56c35cd, 79d778f).**
+- [ ] **Complete the full-society domain-and-layer ledger (stages 1-3 +
+  stage-4 machinery landed fcb9b8d, 56c35cd, 79d778f, 2b8b348).**
   - The canonical source exists and is populated through its executable
     projections: `new-book-plans/full-society-ledger.json`, validated and
     rendered by `new-book-plans/13-full-society-ledger.py`, gating both the
@@ -805,14 +805,23 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     scenario, and threshold records populate as their owning foundation
     items land; each carries its deferral record with owner and closure
     condition in the source itself.
-  - **Stage 4 — independent scope review and Gate A closure.** Give every
-    reviewer proposal one public `proposal_disposition`: add it to the
-    canonical source; classify it with reasons under the proposal dispositions
-    or as duplicate/immaterial; or retain it as an unresolved severity-rated
-    limit. The named severity owner applies the published rubric and an
-    independent checker reviews the result; a reviewer forces a reasoned
-    proposal disposition, not automatic acceptance or a personal veto. The
-    closure record and the severity-owner designation are an author checkpoint.
+  - **Stage 4 — independent scope review and Gate A closure; the machinery is
+    landed, the events are not.** Proposal and review-event schemas stand
+    validated and empty behind their deferrals; the candidate severity rubric
+    awaits author confirmation and computes as unmet until then; the review
+    route's falsification condition is declared ahead of build (a
+    hash-committed planted omission plus seeded triage controls) and the
+    in-repo reviewer corpus is never admissible independent-review evidence;
+    per-condition Gate A readiness is computed in the report, and a closure
+    record is refused while any condition computes unmet. Give every reviewer
+    proposal one public `proposal_disposition`: add it; classify it with
+    reasons, carrying the matching routing disposition; or retain it as a
+    severity-rated limit joining a stable defect row. The named severity owner
+    applies the rubric and an independent checker reviews the result; a
+    reviewer forces a reasoned disposition, not acceptance or a veto. No
+    review has run, no reviewer is named, and the closure record is null; the
+    review event, severity-owner designation, rubric confirmation, and closure
+    record remain author checkpoints.
   - **Done when:** every projection regenerates from the canonical source and an
     independent scope review can name no material omitted domain, role,
     dependency, or failure without the ledger adding it, classifying it out with
