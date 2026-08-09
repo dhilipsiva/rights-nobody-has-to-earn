@@ -779,31 +779,11 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-Ordered by dependency: the roles matrix (579f8b1) and the dependency map
-(4beaa58) have landed as FS-ROL and FS-DEP records; the one remaining
-population item feeds the ledger's deferred record types, the closure
-audit consumes every population, the envelope item is a Book 2
-wait-state, and the ledger item integrates them and closes Gate A last.
-
-- [ ] **Build whole-society journeys, collisions, and stress cases.**
-  - Execute ordinary-success, failure/abuse, continuity, remedy and recovery paths
-    for every governed, provided or power-bearing domain—not only isolated clauses.
-    For protected private/civic domains, test freedom without permission,
-    non-recording/non-compulsion, the narrow evidenced-harm threshold and recourse
-    against interference; never pin love, belief, friendship, art or fulfilment as
-    a state-defined successful outcome.
-  - Test at least: property versus floor; speech/association versus private harm;
-    majority versus minority; parent/guardian power versus child standing;
-    employer/landlord/platform power versus meaningful exit; emergency versus
-    liberty; present allocation versus future commons; locality versus portability;
-    privacy versus public accountability; and physical scarcity versus equal floor.
-  - Include compound shocks such as pandemic, famine, infrastructure failure,
-    displacement, institutional capture and conflicting jurisdictions. Book 1 must
-    state invariant/failure behavior; Book 2 must test capacity and degradation.
-  - First generate a reviewed scenario catalogue with stable IDs and applicability;
-    execute constitutional cases only after the relevant author ruling and contract
-    cards land. **Done when:** every critical domain/dependency and each high-
-    consequence collision has an owned ordinary, failure and recovery route.
+Ordered by dependency: the roles matrix (579f8b1), the dependency map
+(4beaa58), and the scenario catalogue (ad58f74) have landed as FS-ROL,
+FS-DEP, and FS-SCN records; the closure audit consumes every population,
+the envelope item is a Book 2 wait-state, and the ledger item integrates
+them and closes Gate A last.
 
 - [ ] **Create a generated constitutional-closure and model-allocation audit.**
   - Generate it from reviewed domain, role, dependency, assurance, defect-
@@ -815,7 +795,8 @@ wait-state, and the ledger item integrates them and closes Gate A last.
     writer/challenge/correction; a democratic choice crosses the floor; a Book 2
     operation is presented as Book 1 assurance; an external assumption is hidden;
     a reader-facing claim has no formal/evidentiary owner; an unowned or
-    unsatisfiable dependency edge survives; or an unbounded, self-certifying,
+    unsatisfiable dependency edge survives; a scenario lacks an owned
+    ordinary, failure or recovery route; or an unbounded, self-certifying,
     deadlocking or single-veto cycle or bottleneck stands unrejected — while
     bounded, owned service, feedback, fiscal and ecological loops stay
     classified and tested, never rejected merely for being cyclic.
@@ -866,11 +847,10 @@ wait-state, and the ledger item integrates them and closes Gate A last.
     decision records, not here. What remains is exactly what the computed
     Gate A readiness list still refuses, in dependency order below.
   - **Sibling populations (closure condition one).** Role records
-    (FS-ROL, 579f8b1) and dependency records (FS-DEP, 4beaa58) are landed
-    with their deferrals removed; scenario records land through the
-    journeys item above, and FS-POW contract cards through the phase-2
-    coverage-rows item; each remaining landing removes its deferral
-    record from the source. Standing
+    (FS-ROL, 579f8b1), dependency records (FS-DEP, 4beaa58), and
+    scenario records (FS-SCN, ad58f74) are landed with their deferrals
+    removed; FS-POW contract cards land through the phase-2
+    coverage-rows item and remove the last stage-3 deferral. Standing
     maintenance rides along: the two live-read closures (enum mapping,
     residual-coverage citation), receipts, and generated resolution must stay
     green as sibling sources change, and `verify.sh` enforces that.

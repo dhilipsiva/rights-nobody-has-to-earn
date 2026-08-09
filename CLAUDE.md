@@ -1421,7 +1421,7 @@ coverage-map needle), and the report carries a routed-rows-only Book 2
 crosswalk with no operational fields. The grandfathered Part V passage has no
 defect row, per the register decision's own words; its dated non-conformance
 is a witness on the deficit rows, which the author's pending repair can now
-cite. Powers and scenarios stay deferred with owners until their sibling
+cite. Powers stay deferred with an owner until their sibling
 items land, and a hand-maintained competitor to any projection remains
 refused.
 
@@ -1469,10 +1469,51 @@ reviewed prose, and per-pattern rejection (self-certifying, deadlocking,
 single-veto, unbounded, cascade analysis) belongs to the closure audit
 that consumes this population. The declared loops chain-check into real
 cycles (fiscal, electoral, service, ecological, audit, emergency, federal,
-intelligence oversight). The settlement-backbone failure scenario row does
-not exist and is recorded as a residual, not invented; creating it is
-author-gated. No dependency record creates a predicate, rule, remedy, or
-claim.
+intelligence oversight). The settlement-backbone failure scenario row
+landed author-approved (2026-08-09) as an FS-SCN stress record, and
+FS-DEP-14 records the approval's basis — the question asked and the
+author's choice. No dependency record creates a predicate, rule, remedy,
+or claim.
+
+**The whole-society scenario catalogue is landed (2026-08-09, FS-SCN).**
+Every coverage-map section-7 row, the emergency decision's net-new
+acceptance rows, dedicated collision records for the mandate's named
+axes, and the named compound shocks are records of one catalogue, with
+the kinds, collision axes, shock kinds, and protected-sphere forms as
+closed enum-and-meanings vocabularies. The status literal is
+`reviewed-inventory` and it means the assurance ceiling: kind I, maximum
+posture Checked, never citable as proof or a counterexample harness. The
+layer is pinned constitutional-invariant — a scenario states Book 1
+invariant and failure behaviour; capacity and degradation are Book 2's
+tests. Routes are routing, never delivery: the failure route carries
+interim continuity, the recovery route carries remedy and restoration
+together, and outcome prose uses the owed/duty register, never arrival —
+an adversarial four-lens review (needles, closures, register, doctrine)
+ran before landing and its arrival-register, invented-doctrine, and
+case-bound-claim findings were fixed pre-commit. Seven closures are
+mechanical: no domain still defers scenario applicability (all twelve
+flipped to answers in the landing commit), every domain reached, every
+kind, named axis, and named shock exercised, every ratified
+protected-sphere test exercised against the protected domain, and every
+critical dependency edge stressed or its omission recorded — the
+recorded-omission exemption exists but is unused, since the
+author-approved settlement record covers FS-DEP-14. Omitted candidates
+are closed classification decisions with risk-based reasons
+(acceptance-bullet inventories stay contract-card grain; book prose may
+never source a scenario row; capacity variants are Book 2's; a
+state-defined protected-sphere outcome is refused, not deferred).
+Bounded witnesses live-read the sibling case inventories and establish
+only what those artifacts' own postures state. Stewards respect the
+ratified separations: force and assembly incidents sit with the
+independent investigator, never the deploying body; intelligence
+scenarios with oversight; animal-use authorisation with the
+administration while the Advocate keeps the checking routes. Execution
+of constitutional cases stays sequenced behind the relevant author
+rulings and contract cards — the catalogue asserts no execution.
+FS-SCN-22 carries the single-deprivation claim scoped to the current
+source; the protective-rule-family landing's prose re-audit should sweep
+it beside its four named sites. No scenario record creates a predicate,
+rule, remedy, or claim.
 
 **Stage 4's machinery is enacted (2026-08-09); the review and the closure
 remain author checkpoints.** Proposal and review-event schemas stand validated
