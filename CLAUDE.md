@@ -1451,6 +1451,11 @@ and protocol SHA-256 digests entered in the canonical source at
 commissioning, only against the confirmed protocol, pre-images author-held
 outside the repo, which excludes the
 author from the severity-owner and independent-checker roles for that event.
+The designation record for those two roles is likewise schema-enforced behind
+its absence — real recorded identities, distinct people, neither the
+custodian; a role-echo placeholder is a fabricated identity the mechanical
+check cannot see, so the substance stays reviewed and the designation was
+refused once on exactly that ground.
 Neither the declaration nor the landed mechanics makes the route available —
 it stays unbuilt until a reviewer is named and an event runs. The
 admissibility bar is doctrine and computation

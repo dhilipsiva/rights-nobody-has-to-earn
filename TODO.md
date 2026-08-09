@@ -831,7 +831,12 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     reasons, carrying the matching routing disposition; or retain it as a
     severity-rated limit joining a stable defect row. The named severity owner
     applies the rubric and an independent checker reviews the result; a
-    reviewer forces a reasoned disposition, not acceptance or a veto. No
+    reviewer forces a reasoned disposition, not acceptance or a veto. The
+    designation record for those two roles is schema-enforced behind its
+    absence (dd5848d) — real recorded identities, distinct people, neither
+    the pre-image custodian; a role-echo placeholder is a fabricated
+    identity the mechanical check cannot see, so the substance is reviewed.
+    No
     review has run, no reviewer is named, and the closure record is null;
     review commissioning and its commitment, the
     review event, severity-owner designation, and closure
