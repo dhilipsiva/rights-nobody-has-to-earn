@@ -180,7 +180,11 @@ READINESS_MET = {"met-mechanically", "met-in-form"}
 # commitment record inside `review_protocol` stays null until the author
 # commissions a review; plant and seed pre-images are constructed only then,
 # held outside the repository, and only their SHA-256 digests ever enter this
-# source. A commitment may exist only against a confirmed protocol.
+# source. A commitment may exist only against a confirmed protocol, and so may
+# the designation of the severity owner and independent checker — real
+# recorded identities, distinct people, neither the pre-image custodian; a
+# role-echo placeholder is a fabricated identity the mechanical check cannot
+# see, so the substance stays reviewed.
 PROTOCOL_DOC = pathlib.Path(
     "new-book-plans/full-society-scope-review-protocol.md")
 PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
@@ -1810,11 +1814,16 @@ def validate_severity_rubric(src: dict):
 
 def validate_review_protocol(src: dict):
     """The scope-review protocol binding. The protocol document carries R7's
-    evidence contract and admissibility criteria as a candidate awaiting
-    author confirmation; the commitment record stays null until the author
-    commissions a review. Pre-images are author-held outside the repository —
-    only their SHA-256 digests ever enter this source, and an independent
-    review event is refused without them (validate_review_events)."""
+    evidence contract and admissibility criteria, author-confirmed with the
+    basis recorded; the commitment record stays null and the designation
+    absent until the author commissions a review. Pre-images are author-held
+    outside the repository — only their SHA-256 digests ever enter this
+    source, and an independent review event is refused without them
+    (validate_review_events). The designation names the severity owner and
+    independent checker: real recorded identities, distinct people, neither
+    the pre-image custodian — the mechanical checks are exact-string form;
+    the substance (one person under two spellings, or a label standing in
+    for a person) is reviewed, not computed."""
     if "review_protocol" not in src:
         raise LedgerError(
             "review_protocol must be present — the scope-review protocol "
@@ -1826,7 +1835,7 @@ def validate_review_protocol(src: dict):
         raise LedgerError(f"{ctx} must be an object")
     exact_keys(rp, ["protocol_ref", "protocol_status", "status_line_ref",
                     "review_commitment"], ctx,
-               optional=["confirmation_basis"])
+               optional=["confirmation_basis", "designation"])
     status = require_str(rp, "protocol_status", ctx)
     if status == PROTOCOL_STATUS_CANDIDATE:
         if "confirmation_basis" in rp:
@@ -1848,6 +1857,39 @@ def validate_review_protocol(src: dict):
             f"{ctx}: a commitment may exist only against a confirmed "
             "protocol — confirmation precedes commissioning"
         )
+    designation = rp.get("designation")
+    if designation is not None:
+        if status != PROTOCOL_STATUS_CONFIRMED:
+            raise LedgerError(
+                f"{ctx}: a designation may exist only against a confirmed "
+                "protocol — confirmation precedes commissioning"
+            )
+        dctx = f"{ctx}.designation"
+        if not isinstance(designation, dict):
+            raise LedgerError(f"{dctx} must be an object")
+        exact_keys(designation,
+                   ["severity_owner", "independent_checker", "custodian",
+                    "designated_date", "basis"], dctx)
+        for key in ("severity_owner", "independent_checker", "custodian",
+                    "basis"):
+            require_str(designation, key, dctx)
+        ddate = require_str(designation, "designated_date", dctx)
+        if not ISO_DATE_RE.match(ddate):
+            raise LedgerError(
+                f"{dctx}.designated_date must be an ISO date (YYYY-MM-DD)"
+            )
+        if designation["severity_owner"] == \
+                designation["independent_checker"]:
+            raise LedgerError(
+                f"{dctx}: the severity owner and the independent checker "
+                "must be distinct people"
+            )
+        for key in ("severity_owner", "independent_checker"):
+            if designation[key] == designation["custodian"]:
+                raise LedgerError(
+                    f"{dctx}: the pre-image custodian may not triage — "
+                    f"{key} equals the custodian identity"
+                )
     ref = require_str(rp, "protocol_ref", ctx)
     validate_reference(ref, f"{ctx}.protocol_ref")
     if ref.split("::", 1)[0] != str(PROTOCOL_DOC):
@@ -2218,6 +2260,21 @@ def negative_controls(src: dict) -> int:
     control("a commitment requires a confirmed protocol",
             _commitment_on_candidate_protocol,
             "confirmed protocol")
+    control("owner and checker are distinct people",
+            _designation_owner_is_checker, "distinct people")
+    control("the custodian may not triage as severity owner",
+            _designation_owner_is_custodian, "may not triage")
+    control("the custodian may not triage as independent checker",
+            _designation_checker_is_custodian, "may not triage")
+    control("a designation requires a confirmed protocol",
+            _designation_on_candidate_protocol, "confirmed protocol")
+    control("a designation date is an ISO date",
+            lambda s: _mk_designation(s).update(
+                {"designated_date": "someday"}),
+            "YYYY-MM-DD")
+    control("a designation carries exactly its declared keys",
+            lambda s: _mk_designation(s).update({"note": "extra"}),
+            "unexpected keys")
     control("the protocol's status line is live-checked",
             lambda s: s["review_protocol"].update(
                 {"status_line_ref": str(PROTOCOL_DOC) +
@@ -2582,6 +2639,39 @@ def _commitment_on_candidate_protocol(s):
     _mk_commitment(s)
 
 
+def _mk_designation(s):
+    s["review_protocol"]["designation"] = {
+        "severity_owner": "control-owner — control discipline",
+        "independent_checker": "control-checker — control discipline",
+        "custodian": "control-custodian — pre-image custody",
+        "designated_date": "2026-08-09",
+        "basis": "control fixture",
+    }
+    return s["review_protocol"]["designation"]
+
+
+def _designation_owner_is_checker(s):
+    d = _mk_designation(s)
+    d["independent_checker"] = d["severity_owner"]
+
+
+def _designation_owner_is_custodian(s):
+    d = _mk_designation(s)
+    d["severity_owner"] = d["custodian"]
+
+
+def _designation_checker_is_custodian(s):
+    d = _mk_designation(s)
+    d["independent_checker"] = d["custodian"]
+
+
+def _designation_on_candidate_protocol(s):
+    rp = s["review_protocol"]
+    rp["protocol_status"] = PROTOCOL_STATUS_CANDIDATE
+    rp.pop("confirmation_basis", None)
+    _mk_designation(s)
+
+
 def _proposal_added_unresolvable(s):
     _mk_proposal(s, proposal_disposition="added",
                  created_record_refs=["bogus-file.md::no such anchor"],
@@ -2886,8 +2976,10 @@ def render(src: dict, resolution: dict) -> str:
       + ("the protocol confirmation, "
          if src["review_protocol"]["protocol_status"]
          == PROTOCOL_STATUS_CANDIDATE else "")
-      + "the review commissioning and its "
-      "commitment, the severity owner, and the closure record are author "
+      + "the review commissioning and its commitment, "
+      + ("the severity owner, "
+         if src["review_protocol"].get("designation") is None else "")
+      + "and the closure record are author "
       "checkpoints.")
     w("")
     rp = src["review_protocol"]
@@ -2906,6 +2998,17 @@ def render(src: dict, resolution: dict) -> str:
                  f"plant `{c['plant_commitment_sha256']}`, seeds "
                  f"`{c['seed_commitment_sha256']}`, protocol text "
                  f"`{c['protocol_sha256']}`; {c['custody']}.")
+    if rp.get("designation") is None:
+        line += (" No severity owner or independent checker is designated: "
+                 "the designation record is schema-enforced behind its "
+                 "absence — real recorded identities, distinct people, "
+                 "neither the pre-image custodian — and remains an author "
+                 "checkpoint.")
+    else:
+        d = rp["designation"]
+        line += (f" Designated on {d['designated_date']}: severity owner "
+                 f"{d['severity_owner']}; independent checker "
+                 f"{d['independent_checker']}; custodian {d['custodian']}.")
     w(line)
     w("")
     w("| Rubric class | Meaning |")
