@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-1`; stage 1). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-2`; stage 2). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -229,43 +229,45 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 
 ## Claims (one posture each)
 
-| Claim | Layer | Posture | Route | Overlay | Scope bound |
-| --- | --- | --- | --- | --- | --- |
-| FS-CLM-01 Personhood roots the floor and survives witnessed replacement | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the staged transition path only |
-| FS-CLM-02 Universal substantive equality interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified contract as stated; no predicate exists |
-| FS-CLM-03 Equality diagnostics and repair operations | book-2-operation | Unestablished/routed-book-2 | FS-RTE-05 | none | routing only; Book 2 remains collection-only until Gate C |
-| FS-CLM-04 Eight floor entitlements derive unconditionally | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the firewall reaches the confinement conclusion only |
-| FS-CLM-05 Floor delivery and receipt interfaces | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified interface shape; five floor items have no producing rule |
-| FS-CLM-06 Actual arrival of a floor item to a free person | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-05 | liveness | liveness is never Derived, Checked, or Reasoned; only operational assurance could evidence it |
-| FS-CLM-07 Expression and belief floor names with confinement-scoped limits | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source |
-| FS-CLM-08 General liberty and power-limit interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified liberty contracts as stated |
-| FS-CLM-09 Family, dependency, and reproduction baseline | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; legacy predicates pending disposition cards |
-| FS-CLM-10 The one numeric adulthood age | democratic-ordinary-law-choice | Specified | FS-RTE-01 | none | the interface only; the value is democratic law's |
-| FS-CLM-11 Carceral machinery is formal and guarded | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; custody authority is case-bound with no duration arithmetic |
-| FS-CLM-12 Non-carceral justice interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified interface as stated |
-| FS-CLM-13 A later record or review arrives | external-assumption | Unestablished/external-assumption | FS-RTE-05 | liveness | the constitution cannot make a successor arrive or prove an outside clock advances |
-| FS-CLM-14 Franchise conclusion and amendment labels under the current source | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records; a label verdict proves nothing about target truth or lawful deployment |
-| FS-CLM-15 Federal democratic architecture | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified architecture as stated; every legacy relation needs its retain/replace/retire card |
-| FS-CLM-16 External election result pipeline | external-assumption | Unestablished/external-assumption | FS-RTE-05 | none | the engine can compose supplied result certificates and cannot authenticate completeness or perform an institutional act |
-| FS-CLM-17 Narrow institutional fixtures are formal | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records; the named bodies do not prove real independence |
-| FS-CLM-18 Complete institutional contracts | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified anti-capture and separation rules as stated |
-| FS-CLM-19 Closed record with derived-only conclusions and staged assurance | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records and named bounded snapshot fixtures; monotonic engine, fresh process per current-effect case |
-| FS-CLM-20 Live-record system assurance | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-05 | none | the repository verifies bounded consequences of supplied records, nothing further |
-| FS-CLM-21 Ratified record rule families | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified record contracts as stated |
-| FS-CLM-22 Recognition firewall holds mechanically | constitutional-invariant | Checked (pattern-guard) | FS-RTE-01 | safety | the artifacts as written; a pattern guard is not a proof and a renamed relation routes around it |
-| FS-CLM-23 Bounded plural economy interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified settlement as stated |
-| FS-CLM-24 Economic operations and feasibility | book-2-operation | Unestablished/routed-book-2 | FS-RTE-02 | none | routing only; a feasibility sentence with no route is a defect, not a gap |
-| FS-CLM-25 Movement derives as a current conclusion | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; a movement conclusion, not a border interface |
-| FS-CLM-26 Federal competence and portability interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified federal settlement as stated |
-| FS-CLM-27 Collective and plurality rights baseline | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; effects split across existing classes, no omnibus collective predicate |
-| FS-CLM-28 No-derogation emergency overlay | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified overlay as stated; no declaration relation exists today |
-| FS-CLM-29 Protective-function contracts | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified contracts as stated; every new coercive instrument sits outside the floor firewall until deliberately placed |
-| FS-CLM-30 External-only defence structure | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified structure as stated |
-| FS-CLM-31 Intelligence limits and the assessment firewall | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified limits as stated; the exclusion's standing exhibit is the refused dangerous assertion |
-| FS-CLM-32 Borders, asylum, and transfer limits | constitutional-invariant | Specified | FS-RTE-01 | none | written as a duty and a limit on power, not a record claim — a person never entered is not recorded as missing |
-| FS-CLM-33 Ecological rights, ceilings, and the Guardian | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; no ceiling, finding, or guardian act exists |
-| FS-CLM-34 Non-human-animal protected-subject status | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; no animal relation exists |
-| FS-CLM-35 The voluntary sphere stays unprescribed | protected-private-civic-freedom | Specified | FS-RTE-01 | none | an explicit non-prescription disposition is the coverage; it authorises no rule, record, operator, or success certification |
+| Claim | Layer | Posture | Route | Overlay | Scope bound | Blocked by |
+| --- | --- | --- | --- | --- | --- | --- |
+| FS-CLM-01 Personhood roots the floor and survives witnessed replacement | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the staged transition path only | — |
+| FS-CLM-02 Universal substantive equality interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified contract as stated; no predicate exists | — |
+| FS-CLM-03 Equality diagnostics and repair operations | book-2-operation | Unestablished/routed-book-2 | FS-RTE-05 | none | routing only; Book 2 remains collection-only until Gate C | — |
+| FS-CLM-04 Eight floor entitlements derive unconditionally | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the firewall reaches the confinement conclusion only | — |
+| FS-CLM-05 Floor delivery and receipt interfaces | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified interface shape; five floor items have no producing rule | FS-DFT-16 |
+| FS-CLM-06 Actual arrival of a floor item to a free person | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-05 | liveness | liveness is never Derived, Checked, or Reasoned; only operational assurance could evidence it | FS-DFT-17 |
+| FS-CLM-07 Expression and belief floor names with confinement-scoped limits | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source | — |
+| FS-CLM-08 General liberty and power-limit interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified liberty contracts as stated | — |
+| FS-CLM-09 Family, dependency, and reproduction baseline | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; legacy predicates pending disposition cards | — |
+| FS-CLM-10 The one numeric adulthood age | democratic-ordinary-law-choice | Specified | FS-RTE-01 | none | the interface only; the value is democratic law's | — |
+| FS-CLM-11 Carceral machinery is formal and guarded | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; custody authority is case-bound with no duration arithmetic | — |
+| FS-CLM-12 Non-carceral justice interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified interface as stated | — |
+| FS-CLM-13 A later record or review arrives | external-assumption | Unestablished/external-assumption | FS-RTE-05 | liveness | the constitution cannot make a successor arrive or prove an outside clock advances | — |
+| FS-CLM-14 Franchise conclusion and amendment labels under the current source | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records; a label verdict proves nothing about target truth or lawful deployment | — |
+| FS-CLM-15 Federal democratic architecture | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified architecture as stated; every legacy relation needs its retain/replace/retire card | — |
+| FS-CLM-16 External election result pipeline | external-assumption | Unestablished/external-assumption | FS-RTE-05 | none | the engine can compose supplied result certificates and cannot authenticate completeness or perform an institutional act | — |
+| FS-CLM-17 Narrow institutional fixtures are formal | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records; the named bodies do not prove real independence | — |
+| FS-CLM-18 Complete institutional contracts | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified anti-capture and separation rules as stated | — |
+| FS-CLM-19 Closed record with derived-only conclusions and staged assurance | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records and named bounded snapshot fixtures; monotonic engine, fresh process per current-effect case | — |
+| FS-CLM-20 Live-record system assurance | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-05 | none | the repository verifies bounded consequences of supplied records, nothing further | FS-DFT-28 |
+| FS-CLM-21 Ratified record rule families | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified record contracts as stated | — |
+| FS-CLM-22 Recognition firewall holds mechanically | constitutional-invariant | Checked (pattern-guard) | FS-RTE-01 | safety | the artifacts as written; a pattern guard is not a proof and a renamed relation routes around it | — |
+| FS-CLM-23 Bounded plural economy interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified settlement as stated | — |
+| FS-CLM-24 Economic operations and feasibility | book-2-operation | Unestablished/routed-book-2 | FS-RTE-02 | none | routing only; a feasibility sentence with no route is a defect, not a gap | — |
+| FS-CLM-25 Movement derives as a current conclusion | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; a movement conclusion, not a border interface | — |
+| FS-CLM-26 Federal competence and portability interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified federal settlement as stated | — |
+| FS-CLM-27 Collective and plurality rights baseline | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; effects split across existing classes, no omnibus collective predicate | — |
+| FS-CLM-28 No-derogation emergency overlay | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified overlay as stated; no declaration relation exists today | — |
+| FS-CLM-29 Protective-function contracts | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified contracts as stated; every new coercive instrument sits outside the floor firewall until deliberately placed | — |
+| FS-CLM-30 External-only defence structure | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified structure as stated | — |
+| FS-CLM-31 Intelligence limits and the assessment firewall | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified limits as stated; the exclusion's standing exhibit is the refused dangerous assertion | — |
+| FS-CLM-32 Borders, asylum, and transfer limits | constitutional-invariant | Specified | FS-RTE-01 | none | written as a duty and a limit on power, not a record claim — a person never entered is not recorded as missing | — |
+| FS-CLM-33 Ecological rights, ceilings, and the Guardian | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; no ceiling, finding, or guardian act exists | — |
+| FS-CLM-34 Non-human-animal protected-subject status | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified baseline as stated; no animal relation exists | — |
+| FS-CLM-35 The voluntary sphere stays unprescribed | protected-private-civic-freedom | Specified | FS-RTE-01 | none | an explicit non-prescription disposition is the coverage; it authorises no rule, record, operator, or success certification | — |
+| FS-CLM-36 Recognition mints only through the guarded doors | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the three doors and the surviving wrongdoer rule | — |
+| FS-CLM-37 An ordinary reader comes away with a reliably balanced view | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-06 | none | the tested audience within the disclosed sampling and method limits, per the ratified reader-evidence protocol; the route is neither built nor available | — |
 
 ## Required bodies
 
@@ -357,6 +359,125 @@ Deliberate exclusions (recorded, not silent):
 | `irreducible-limitation` | detected, interface-specified, implemented-in-assigned-route, operationally-assured-in-envelope | no | Supply the argument, alternatives considered, residual risk, and exact claim narrowing. Honest limitation is not resolution. |
 | `open-defect` | detected, interface-specified, implemented-in-assigned-route | no | Carry severity, consequence, owner, closure condition, affected claims, and blocking gate. A critical unresolved defect blocks its affected claim. |
 
+## Defect rows (disposition and stage; resolution generated)
+
+The `:defect` markers in the pin files remain the complete list of book-declared, chapter-load-bearing flaws with flip tripwires; these rows are the wider engineering inventory, and they cite the markers where one exists. A resolved row resolves only its named consequence in its exact scope; resolution is claim-relative and asserts nothing beyond the affected claim's own posture. Rows are keyed by defect family, affected claim, consequence, scope, envelope, and source version; a residual sibling shares its family's defect_id.
+
+| Row | Family | Title | Affected claim | Disposition | Stage | Severity | Resolution (generated) | Blocking |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| FS-DFT-01 | FS-DFT-01 | A targetless amendment proposal receives a law label | FS-CLM-14 | open-defect | detected | material | unresolved-for-claim | no |
+| FS-DFT-02 | FS-DFT-02 | The isolation marker cannot tell one prisoner from another | FS-CLM-05 | open-defect | detected | material | unresolved-for-claim | no |
+| FS-DFT-03 | FS-DFT-03 | The student clawback docked a child for an adult's fraud | FS-CLM-36 | eliminated-structurally | implemented-in-assigned-route | material | resolved-for-claim | no |
+| FS-DFT-04 | FS-DFT-03 | Loss stays an unread leaf with no amount, restoration, or remedy | FS-CLM-22 | irreducible-limitation | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-05 | FS-DFT-05 | The placement alarm fired on eligibility instead of the placement act | FS-CLM-11 | eliminated-structurally | implemented-in-assigned-route | material | resolved-for-claim | no |
+| FS-DFT-06 | FS-DFT-05 | The repaired alarm watches half the space and drops the author | FS-CLM-12 | open-defect | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-07 | FS-DFT-07 | The voiding rule reached a person who was never accused | FS-CLM-14 | eliminated-structurally | implemented-in-assigned-route | material | resolved-for-claim | no |
+| FS-DFT-08 | FS-DFT-07 | The docket check reads an absence whose completeness is external | FS-CLM-14 | externally-bounded-assumption | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-09 | FS-DFT-09 | A voided person was paid for examinations the voiding made worthless | FS-CLM-36 | eliminated-structurally | implemented-in-assigned-route | material | resolved-for-claim | no |
+| FS-DFT-10 | FS-DFT-09 | The door guards cover the named doors only | FS-CLM-22 | irreducible-limitation | implemented-in-assigned-route | minor | unresolved-for-claim | no |
+| FS-DFT-11 | FS-DFT-11 | An omitted required carry once erased protection and evidence together | FS-CLM-01 | protected-consequence-contained | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-12 | FS-DFT-11 | The disappearance alarm is deliberately conservative | FS-CLM-01 | irreducible-limitation | implemented-in-assigned-route | minor | unresolved-for-claim | no |
+| FS-DFT-13 | FS-DFT-13 | An unscoped control widened the base below it | FS-CLM-19 | eliminated-structurally | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-14 | FS-DFT-13 | The harness, generators, reviewed sources, and engine remain the trust root | FS-CLM-19 | externally-bounded-assumption | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-15 | FS-DFT-15 | The prose seated an examiner the record never seated | FS-CLM-19 | eliminated-structurally | implemented-in-assigned-route | minor | resolved-for-claim | no |
+| FS-DFT-16 | FS-DFT-16 | Five floor items have no producing rule and two arrive only through confinement | FS-CLM-05 | open-defect | interface-specified | critical | unresolved-for-claim | yes |
+| FS-DFT-17 | FS-DFT-16 | No arrival of any floor item to a free person is representable | FS-CLM-06 | open-defect | interface-specified | critical | unresolved-for-claim | yes |
+| FS-DFT-18 | FS-DFT-16 | Nearly every chapter pins a confinement query | FS-CLM-05 | open-defect | detected | material | unresolved-for-claim | no |
+| FS-DFT-19 | FS-DFT-19 | No adverse ground relation carries an authorship place | FS-CLM-21 | open-defect | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-20 | FS-DFT-20 | A sympathetic reader concluded the book is a teardown | FS-CLM-37 | open-defect | detected | material | unresolved-for-claim | no |
+| FS-DFT-21 | FS-DFT-21 | The upstream renderer binds the wrong obligated party | FS-CLM-19 | externally-bounded-assumption | interface-specified | minor | unresolved-for-claim | no |
+| FS-DFT-22 | FS-DFT-22 | A confined person can be eligible for home confinement with no derivable destination | FS-CLM-11 | irreducible-limitation | implemented-in-assigned-route | minor | unresolved-for-claim | no |
+| FS-DFT-23 | FS-DFT-23 | The constitutional source is itself an unimplemented consequential record | FS-CLM-21 | irreducible-limitation | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-24 | FS-DFT-24 | A bare judge-plus-capture pair pays an examiner with no grounds | FS-CLM-36 | open-defect | detected | material | unresolved-for-claim | no |
+| FS-DFT-25 | FS-DFT-25 | Nothing reads the derived duty | FS-CLM-12 | open-defect | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-26 | FS-DFT-26 | Floor-delivery markers are refused while the record holds no arrival facts | FS-CLM-05 | irreducible-limitation | detected | material | unresolved-for-claim | no |
+| FS-DFT-27 | FS-DFT-27 | Four fresh facts flip a voiding verdict, held off by a heuristic | FS-CLM-36 | open-defect | detected | material | unresolved-for-claim | no |
+| FS-DFT-28 | FS-DFT-28 | The live-record interfaces are specified and none is implemented | FS-CLM-20 | open-defect | interface-specified | critical | unresolved-for-claim | yes |
+| FS-DFT-29 | FS-DFT-28 | Operational assurance and liveness remain external | FS-CLM-20 | externally-bounded-assumption | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-30 | FS-DFT-30 | Input integrity is assumed: forgery, false sources, collusion, and genesis are external | FS-CLM-19 | externally-bounded-assumption | detected | material | unresolved-for-claim | no |
+| FS-DFT-31 | FS-DFT-31 | Withholding, selection, replay, and broken lineage are contained for supplied records | FS-CLM-19 | protected-consequence-contained | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-32 | FS-DFT-32 | Correction side-effects and shadow decision bases are undetectable | FS-CLM-19 | irreducible-limitation | detected | material | unresolved-for-claim | no |
+| FS-DFT-33 | FS-DFT-33 | One flat snapshot cannot distinguish deletion, withholding, and non-entry | FS-CLM-19 | irreducible-limitation | detected | material | unresolved-for-claim | no |
+| FS-DFT-34 | FS-DFT-34 | The two-entry relief and forgiveness shapes carry reuse and withholding exposure | FS-CLM-12 | irreducible-limitation | detected | material | unresolved-for-claim | no |
+| FS-DFT-35 | FS-DFT-35 | Who holds the pen is outside the model | FS-CLM-19 | externally-bounded-assumption | detected | material | unresolved-for-claim | no |
+| FS-DFT-36 | FS-DFT-36 | Outside liveness cannot be forced | FS-CLM-13 | externally-bounded-assumption | detected | material | unresolved-for-claim | no |
+| FS-DFT-37 | FS-DFT-37 | Institutional action is assumed, never proven | FS-CLM-13 | externally-bounded-assumption | detected | material | unresolved-for-claim | no |
+| FS-DFT-38 | FS-DFT-38 | Other states' cooperation and recognition are assumptions | FS-CLM-30 | externally-bounded-assumption | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-39 | FS-DFT-39 | The franchise conclusion has no election behind it | FS-CLM-16 | open-defect | interface-specified | material | unresolved-for-claim | no |
+| FS-DFT-40 | FS-DFT-40 | The rule-write and deletion trust bases remain | FS-CLM-19 | externally-bounded-assumption | implemented-in-assigned-route | material | unresolved-for-claim | no |
+| FS-DFT-41 | FS-DFT-41 | The refused hardening alternatives keep their exposure on record | FS-CLM-01 | irreducible-limitation | detected | material | unresolved-for-claim | no |
+
+Residual citations bind every sibling residual pool to these rows under the live-read closure; narrowness-impact rows never enter the pool — they are claim-impact anchors, not defects.
+
+## Resolution receipts
+
+Every receipt records its eligible gate beside the ledger's standing gate status (not-passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
+
+### FS-RCP-01 — The student clawback is deleted, and the deletion is watched
+
+- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
+- What failed: A loss was recorded against a student for a teacher's adjudicated fraud — negative scoring of a person who did nothing.
+- Hostile witness: The old :defect pin held lose(Points, Cira) TRUE for as long as the rule stood.
+- Why it failed: The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.
+- The response: The student clawback rule was deleted outright from Article 4; the wrongdoer rule survives.
+- What now follows: lose(Points, Cira) is FALSE and the surviving rule reaches only the adjudicated wrongdoer.
+- Proof: `book-1/06-clawback.pins.nibli::THE CIRA DEFECT IS RESOLVED`; negative control: `book-1/06-clawback.pins.nibli::somebody rebuilt the student clawback`
+- What still does not follow: Nothing reads a loss, nothing restores one, and no lifecycle exists for it — the leaf stays a leaf.
+- Residuals: FS-DFT-04
+- Reader mapping: `book-1/06-clawback.md::It is resolved — the resolution was a deletion`; admissible evidence: executable pins over the current source
+
+### FS-RCP-02 — The placement alarm is keyed on the placement act
+
+- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
+- What failed: The alarm fired on eligibility rather than on any placement act, so it rang on a released man in his own house.
+- Hostile witness: The old marker's pins held the wrong-subject firing under a :defect directive.
+- Why it failed: err/2 read the eligibility combination instead of a reported placement.
+- The response: The alarm was re-keyed onto the reported placement act put/3.
+- What now follows: Only a reported ineligible home placement trips the marker, and the repair is held as plain FALSE pins.
+- Proof: `book-1/11-where-people-are-put.pins.nibli::alarm that does not work`; negative control: `new-book-plans/rights-floor.pins.nibli::RESOLVED DEFECT, kept as the exhibit it was`
+- What still does not follow: The alarm watches half the space, the conclusion drops the author, and the delivery gap is exactly as wide as before.
+- Residuals: FS-DFT-06
+- Reader mapping: `book-1/11-where-people-are-put.md::The repair is to give the record that entry`; admissible evidence: executable pins over the current source
+
+### FS-RCP-03 — The void now requires a docket entry naming the person
+
+- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
+- What failed: Anything recorded as touching a protected item was void — including a person who was never accused of anything.
+- Hostile witness: Jala, never accused and never examined, was voidable through the protected-item route.
+- Why it failed: The voiding rule read the protected-item touch without any docket precondition.
+- The response: A docket-precondition conjunct was added, so the void reaches exactly the docketed.
+- What now follows: false(Jala) is FALSE and lose(Points, Jala) is FALSE while the docket holds no entry naming Jala.
+- Proof: `book-1/12-changing-the-rules.pins.nibli::false(Jala)`; negative control: `book-1/12-changing-the-rules.pins.nibli::suggest(Assembly, Amend_Sneak).`
+- What still does not follow: The deciding check is an absence whose completeness is external, and if an assembly ever dockets a person the void arrives through the front door.
+- Residuals: FS-DFT-08
+- Reader mapping: `book-1/12-changing-the-rules.md::The repair is small, which is the lesson`; admissible evidence: executable pins over the current source
+
+### FS-RCP-04 — The third door closes on voiding, enacted not disclosed
+
+- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
+- What failed: A carried-void, penless person was paid for examinations the same voiding made incapable of counting toward anything.
+- Hostile witness: The pre-guard constitution minted recognition for the voided examiner, and exactly those reward pins flip against it.
+- Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
+- The response: The examiner rule gained the voiding guard, the same shape as the other doors.
+- What now follows: A voided person examines and the mint refuses; the clawback registers on the forced probe.
+- Proof: `book-1/05-voiding.pins.nibli::reported as forgery`; negative control: `book-1/10-contribution.md::That is closed.`
+- What still does not follow: A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.
+- Residuals: FS-DFT-10
+- Reader mapping: `book-1/05-voiding.md::Those are real repairs to the attacks this chapter used to disclose`; admissible evidence: executable pins over the current source
+
+### FS-RCP-05 — The Esa passage tells the truth about Koa
+
+- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
+- What failed: The chapter claimed Koa examined Esa with the credential; the record holds a personhood entry and one documented fact — no judging, no seat, no pen.
+- Hostile witness: Both false clauses, quoted back by a hostile review as the design's own confession.
+- Why it failed: The prose asserted acts the record never held, and no pin guarded the mismatch.
+- The response: The passage was corrected to the record and both false clauses are now pinned FALSE in the chapter's suite.
+- What now follows: The prose and the record agree, and the count isolation lives in a pin-file fixture that cannot void alone.
+- Proof: `book-1/05-voiding.pins.nibli::? judge(Koa, Esa).`; negative control: `book-1/05-voiding.pins.nibli::? capture(Koa, Esa).`
+- What still does not follow: The record still buys an author for the why and not its truth, and the void's own grounds stay deliberately unasked.
+- Residuals: none beyond the affected claim's own scope bound — the family has no residual sibling row
+- Reader mapping: `book-1/05-voiding.md::Koa recorded a finding about Esa`; admissible evidence: executable pins over the current source
+
 ## External assumptions and the envelope
 
 - **FS-EXA-01 Other states cooperate and recognise**: Other states' cooperation, recognition, readmission, and compliance are named external assumptions, not derived facts and not Book 2 deliverables. Failure consequence: The dependent duty stays owed and its restrictive conclusions withhold; nothing manufactures the outside act.
@@ -375,8 +496,6 @@ Deliberate exclusions (recorded, not silent):
 | dependencies | stage-3 | `TODO.md::Model the society's functional flows` | the cross-domain dependency map lands as FS-DEP records classed guaranteed, democratically selected, operationally supplied, or externally assumed |
 | scenarios | stage-3 | `TODO.md::Build whole-society journeys` | the journeys, collisions, and stress cases land as FS-SCN records with stable IDs |
 | thresholds | stage-3 | `TODO.md::Define the reference-society envelope` | adequacy, accessibility, continuity, resilience, and resource thresholds land as FS-THR records bound to a versioned envelope |
-| defects | stage-2 | `TODO.md::Backfill every existing` | every existing defect pin, known gap, residual, and red-team finding is backfilled as keyed FS-DFT rows before any new resolution language ships |
-| receipts | stage-2 | `TODO.md::Backfill every existing` | resolution receipts exist only where a defect row's generated resolution permits one; none may precede the backfill |
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 
 The coverage-map view, contract cards, role matrix, dependency map, assurance allocation, reader ledger, and Book 2 crosswalk are generated projections of this source; each arrives with its owning stage or tracker item, and none may be maintained by hand.
