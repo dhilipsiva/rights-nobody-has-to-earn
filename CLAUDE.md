@@ -1421,9 +1421,9 @@ coverage-map needle), and the report carries a routed-rows-only Book 2
 crosswalk with no operational fields. The grandfathered Part V passage has no
 defect row, per the register decision's own words; its dated non-conformance
 is a witness on the deficit rows, which the author's pending repair can now
-cite. Powers, dependencies, and scenarios stay deferred with owners until
-their sibling items land, and a hand-maintained competitor to any projection
-remains refused.
+cite. Powers and scenarios stay deferred with owners until their sibling
+items land, and a hand-maintained competitor to any projection remains
+refused.
 
 **The roles, life-course, scale, and power-position matrix is landed
 (2026-08-09, FS-ROL).** One record per role, grouped by kind and layer-pinned
@@ -1447,6 +1447,32 @@ required bodies (author-approved) because the coverage-map roster predates
 the ecological ruling. Pairwise sufficiency stays a review question for the
 independent scope review; the FS-POW decomposition stays deferred with its
 own owner; no role record creates a predicate, rule, remedy, or claim.
+
+**The functional-flow and cross-domain dependency map is landed
+(2026-08-09, FS-DEP).** One record per flow per ordered endpoint pair,
+endpoints typed against bodies, roles, domains, and external assumptions —
+an assumption supplies, never receives — with each edge's layer derived
+from its four-way class and an institutional steward beside the tracker
+owner. An edge is routing, never delivery. The three ratified lifecycle
+paths are pinned by needle and never flattened. Every edge declares its
+predeclared alternate route with a doctrine needle or records the absence
+as a named single point of failure — the accountability terminal's reader
+gap is the flagship recorded residual, and no internal reader is
+fabricated. Refused flows are recorded as walls, from the enforcement
+firewall to payment-never-delivery to presumed family supply of the floor.
+Four closures are mechanical: every domain an endpoint, every flow kind
+exercised, every external assumption feeding an externally-assumed edge,
+and every strongly connected region of the declared graph carrying at
+least one declared, classified, bounded, owned loop witness — never say
+"every cycle is classified"; the witness is regional, boundedness is
+reviewed prose, and per-pattern rejection (self-certifying, deadlocking,
+single-veto, unbounded, cascade analysis) belongs to the closure audit
+that consumes this population. The declared loops chain-check into real
+cycles (fiscal, electoral, service, ecological, audit, emergency, federal,
+intelligence oversight). The settlement-backbone failure scenario row does
+not exist and is recorded as a residual, not invented; creating it is
+author-gated. No dependency record creates a predicate, rule, remedy, or
+claim.
 
 **Stage 4's machinery is enacted (2026-08-09); the review and the closure
 remain author checkpoints.** Proposal and review-event schemas stand validated

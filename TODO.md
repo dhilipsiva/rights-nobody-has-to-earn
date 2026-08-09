@@ -779,28 +779,11 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-Ordered by dependency: the roles matrix has landed as FS-ROL records
-(579f8b1); the two remaining population items feed the ledger's deferred
-record types, the closure audit consumes every population, the envelope
-item is a Book 2 wait-state, and the ledger item integrates them and
-closes Gate A last.
-
-- [ ] **Model the society's functional flows and cross-domain dependencies.**
-  - Map flows of authority, information, care, labour, resources, money, claims,
-    services and accountability from lawful source through ordinary operation,
-    interruption, interim continuity, remedy, recovery and systemic correction.
-  - Identify dependency cycles, bottlenecks, conflicts of interest, single points of
-    failure and cascade paths. No right is called delivered because an institution
-    promised it, and no body is called functional because its name exists.
-  - Classify every dependency as constitutionally guaranteed, democratically
-    selected, operationally supplied, or externally assumed. Assign an owner and a
-    consequence for its absence.
-  - **Done when:** the canonical source can generate an owner-labelled dependency
-    graph, every critical input/output has a source, destination and failure
-    consequence, and the closure audit rejects unowned or unsatisfiable edges plus
-    unbounded, self-certifying, deadlocking or single-veto cycles/bottlenecks.
-    Bounded, owned ordinary service, feedback, fiscal and ecological loops must be
-    classified and tested, not rejected merely for being cyclic.
+Ordered by dependency: the roles matrix (579f8b1) and the dependency map
+(4beaa58) have landed as FS-ROL and FS-DEP records; the one remaining
+population item feeds the ledger's deferred record types, the closure
+audit consumes every population, the envelope item is a Book 2
+wait-state, and the ledger item integrates them and closes Gate A last.
 
 - [ ] **Build whole-society journeys, collisions, and stress cases.**
   - Execute ordinary-success, failure/abuse, continuity, remedy and recovery paths
@@ -831,7 +814,11 @@ closes Gate A last.
     remedies itself; a private duty is merely implied; a record lacks
     writer/challenge/correction; a democratic choice crosses the floor; a Book 2
     operation is presented as Book 1 assurance; an external assumption is hidden;
-    or a reader-facing claim has no formal/evidentiary owner.
+    a reader-facing claim has no formal/evidentiary owner; an unowned or
+    unsatisfiable dependency edge survives; or an unbounded, self-certifying,
+    deadlocking or single-veto cycle or bottleneck stands unrejected — while
+    bounded, owned service, feedback, fiscal and ecological loops stay
+    classified and tested, never rejected merely for being cyclic.
   - Join every public claim to its affected defect records and generated
     claim-relative resolution status. Publish disposition history and resolution
     receipts beside the claim audit, so a green derivation cannot hide an open
@@ -878,21 +865,21 @@ closes Gate A last.
     `CLAUDE.md`; schema detail lives in the generator and the controlling
     decision records, not here. What remains is exactly what the computed
     Gate A readiness list still refuses, in dependency order below.
-  - **Sibling populations (closure condition one).** Role records are landed
-    (FS-ROL, 579f8b1, roles deferral removed); dependency and scenario
-    records land through the two foundation items above, and FS-POW
-    contract cards through the phase-2 coverage-rows item; each remaining
-    landing removes its deferral record from the source. Standing
+  - **Sibling populations (closure condition one).** Role records
+    (FS-ROL, 579f8b1) and dependency records (FS-DEP, 4beaa58) are landed
+    with their deferrals removed; scenario records land through the
+    journeys item above, and FS-POW contract cards through the phase-2
+    coverage-rows item; each remaining landing removes its deferral
+    record from the source. Standing
     maintenance rides along: the two live-read closures (enum mapping,
     residual-coverage citation), receipts, and generated resolution must stay
     green as sibling sources change, and `verify.sh` enforces that.
-  - **Projections (condition two).** The role matrix landed with its
-    population; the dependency map arrives with its population, the
-    assurance allocation with the closure audit above, and the reader
-    ledger with the reader-sessions item. Once all four exist and
-    regenerate, replace the generator's hardcoded `form-only` readiness
-    status with a computed one — a deliberate code change reserved for
-    that moment.
+  - **Projections (condition two).** The role matrix and the dependency
+    map landed with their populations; the assurance allocation arrives
+    with the closure audit above, and the reader ledger with the
+    reader-sessions item. Once all four exist and regenerate, replace the
+    generator's hardcoded `form-only` readiness status with a computed
+    one — a deliberate code change reserved for that moment.
   - **Blocking defect rows (condition three).** FS-DFT-16 and FS-DFT-17 close
     when the accessibility-neutral delivery and receipt rule families land,
     with the pinned-case rebalance sequenced after; FS-DFT-28 additionally
