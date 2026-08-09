@@ -20,6 +20,12 @@ resolution receipts only where a row's generated resolution permits one.
 Stage 3's first population is landed: the roles, life-course, scale, and
 power-position matrix (FS-ROL) with domain, scale, and body-position closures
 and recorded risk-based omissions; a role is never a floor-changing status.
+Stage 3's second population, the functional-flow and dependency map (FS-DEP),
+types every edge's endpoints, classes it by lawful source with the layer
+derived, pins the three ratified lifecycle paths without flattening them,
+requires a predeclared alternate route or its recorded absence, gives every
+strongly connected region a declared classified loop witness, and records
+the refused-flow walls; an edge is routing, never delivery.
 Stage 4's machinery makes the future independent scope review admissible and
 the Gate A closure refusable-until-green: proposal and review-event schemas
 stand validated and empty, the severity rubric and the scope-review protocol
@@ -169,6 +175,49 @@ ROLE_ANCHORS = [
     "constitution-predicate-asserted",
     "ratified-doctrine-unimplemented",
 ]
+
+# The dependency map's closed vocabularies. An edge records that a function
+# depends on a flow — never that the flow arrives: no right is called
+# delivered because an institution promised it, and no body is called
+# functional because its name exists. The four-way class was committed in
+# the deferral record's own closure condition; each class fixes the edge's
+# layer. The three ratified lifecycle paths stay deliberately asymmetric —
+# they are pinned by needle, never flattened into one stage vocabulary.
+FLOW_KINDS = [
+    "authority",
+    "information",
+    "care",
+    "labour",
+    "resources",
+    "money",
+    "claims",
+    "services",
+    "accountability",
+]
+DEPENDENCY_CLASSES = [
+    "constitutionally-guaranteed",
+    "democratically-selected",
+    "operationally-supplied",
+    "externally-assumed",
+]
+DEPENDENCY_CLASS_LAYER = {
+    "constitutionally-guaranteed": "constitutional-invariant",
+    "democratically-selected": "democratic-ordinary-law-choice",
+    "operationally-supplied": "book-2-operation",
+    "externally-assumed": "external-assumption",
+}
+LOOP_KINDS = ["service", "feedback", "fiscal", "ecological", "sequence"]
+LIFECYCLE_PATHS = ["right", "power", "record", "outside-ratified-paths"]
+LIFECYCLE_PATH_REFS = {
+    "right": ("new-book-plans/book-1-constitutional-coverage-map.md::"
+              "right  → duty → accessible delivery → recipient-side "
+              "evidence of access/receipt"),
+    "power": ("new-book-plans/book-1-constitutional-coverage-map.md::"
+              "power  → lawful trigger → bounded act → public "
+              "reason/evidence"),
+    "record": ("new-book-plans/book-1-constitutional-coverage-map.md::"
+               "record → authorised basis → limited visibility → challenge"),
+}
 
 # Stage marker: the reviewed source's status and the report's stage label move in
 # lockstep with the content stages; bump both here and in the JSON together.
@@ -502,6 +551,10 @@ def validate_meanings(src: dict):
         "scale_meanings": ROLE_SCALES,
         "power_position_meanings": POWER_POSITIONS,
         "role_anchor_meanings": ROLE_ANCHORS,
+        "flow_kind_meanings": FLOW_KINDS,
+        "dependency_class_meanings": DEPENDENCY_CLASSES,
+        "loop_kind_meanings": LOOP_KINDS,
+        "lifecycle_path_meanings": LIFECYCLE_PATHS,
     }
     for key, values in expected.items():
         block = src.get(key)
@@ -1082,6 +1135,277 @@ def validate_roles(src: dict, ids: dict):
             raise LedgerError(f"{ctx}: duplicate omission {key}")
         seen.add(key)
         require_str(entry, "risk_reason", ctx)
+
+
+def _reach(adj, start):
+    """Nodes reachable from start in >= 1 step (5-spine-gen's DFS idiom)."""
+    seen, stack = set(), [start]
+    while stack:
+        n = stack.pop()
+        for m in adj.get(n, ()):
+            if m not in seen:
+                seen.add(m)
+                stack.append(m)
+    return seen
+
+
+def validate_dependencies(src: dict, ids: dict):
+    """The functional-flow and cross-domain dependency map.
+
+    An edge is routing, never delivery: it records that a function depends
+    on a flow, its lawful source class, its owner, and what breaks when the
+    flow stops. Mechanical closures: every domain an endpoint, every flow
+    kind exercised, every external assumption feeding an externally-assumed
+    edge, and — at SCC grain — every strongly connected region of the
+    declared graph carrying at least one declared, classified, bounded,
+    owned loop witness. Boundedness is reviewed prose, never a proven
+    property; rejection of self-certifying, deadlocking, single-veto, or
+    unbounded patterns, with cascade analysis, belongs to the closure-audit
+    item that consumes this population. The grain is one edge per flow kind
+    per ordered pair; an absent alternate route is a recorded single point
+    of failure, never a silent one."""
+    deps = src.get("dependencies", [])
+    if not deps:
+        for extra in ("dependency_loops", "refused_flows"):
+            if src.get(extra):
+                raise LedgerError(
+                    f"{extra} may not exist while dependencies is deferred "
+                    "— loops and walls are decisions about a populated map"
+                )
+        return
+    for name, ref in LIFECYCLE_PATH_REFS.items():
+        validate_reference(ref, f"lifecycle path `{name}`")
+    domain_ids = {r for r, a in ids.items() if a == "domains"}
+    exa_ids = {r for r, a in ids.items() if a == "external_assumptions"}
+    edges, triples = {}, set()
+    touched, exercised, cited_exas = set(), set(), set()
+    for i, rec in enumerate(deps):
+        ctx = f"dependencies[{i}] ({rec.get('id', '?')})"
+        exact_keys(
+            rec,
+            COMMON_KEYS + ["flow_kind", "dependency_class", "from_ref",
+                           "to_ref", "steward_ref", "lifecycle_path",
+                           "interim_continuity", "remedy_route",
+                           "restoration", "systemic_correction",
+                           "alternate_route", "source_refs"],
+            ctx,
+        )
+        validate_common_record_fields(rec, ctx)
+        if rec["steward_ref"] not in ids or ids[rec["steward_ref"]] != "bodies":
+            raise LedgerError(
+                f"{ctx}: steward_ref must name a required body — the "
+                f"institution answerable for the flow; got "
+                f"{rec['steward_ref']!r}"
+            )
+        if rec["flow_kind"] not in FLOW_KINDS:
+            raise LedgerError(f"{ctx}: unknown flow_kind {rec['flow_kind']!r}")
+        cls = rec["dependency_class"]
+        if cls not in DEPENDENCY_CLASSES:
+            raise LedgerError(f"{ctx}: unknown dependency_class {cls!r}")
+        if rec["layer"] != DEPENDENCY_CLASS_LAYER[cls]:
+            raise LedgerError(
+                f"{ctx}: an edge's layer follows its dependency class — "
+                f"{cls} fixes {DEPENDENCY_CLASS_LAYER[cls]!r}"
+            )
+        f, t = rec["from_ref"], rec["to_ref"]
+        if ids.get(f) not in ("bodies", "roles", "domains",
+                              "external_assumptions"):
+            raise LedgerError(
+                f"{ctx}: source must name a body, role, domain, or external "
+                f"assumption, got {f!r}"
+            )
+        if ids.get(t) not in ("bodies", "roles", "domains"):
+            raise LedgerError(
+                f"{ctx}: destination must name a body, role, or domain — an "
+                f"external assumption supplies, never receives; got {t!r}"
+            )
+        if f == t:
+            raise LedgerError(
+                f"{ctx}: an edge may not terminate on its own source — a "
+                "genuine internal circle is drawn through the roles and "
+                "bodies that carry it and declared as a loop"
+            )
+        if (cls == "externally-assumed") != (ids[f] == "external_assumptions"):
+            if cls == "externally-assumed":
+                raise LedgerError(
+                    f"{ctx}: an externally-assumed edge must flow from a "
+                    "named external assumption — nothing internal "
+                    "manufactures the outside act"
+                )
+            raise LedgerError(
+                f"{ctx}: only an externally-assumed edge may flow from an "
+                "external assumption"
+            )
+        trip = (f, t, rec["flow_kind"])
+        if trip in triples:
+            raise LedgerError(
+                f"{ctx}: duplicate dependency edge {trip} — the map's grain "
+                "is one edge per flow kind per ordered pair; merge the prose"
+            )
+        triples.add(trip)
+        if rec["lifecycle_path"] not in LIFECYCLE_PATHS:
+            raise LedgerError(
+                f"{ctx}: lifecycle_path must be one of {LIFECYCLE_PATHS} — "
+                "the three ratified paths stay asymmetric and are never "
+                "flattened"
+            )
+        for key in ("interim_continuity", "remedy_route", "restoration",
+                    "systemic_correction"):
+            require_str(rec, key, ctx)
+        ar = rec["alternate_route"]
+        if not isinstance(ar, dict):
+            raise LedgerError(f"{ctx}: alternate_route must be an object")
+        shapes = [k for k in ("route", "no_alternate_reason") if k in ar]
+        if len(shapes) != 1:
+            raise LedgerError(
+                f"{ctx}: alternate_route carries exactly one of route / "
+                f"no_alternate_reason, got {shapes} — an absent alternate "
+                "is a recorded single point of failure, never a silent one"
+            )
+        if "route" in ar:
+            exact_keys(ar, ["route", "source_ref"],
+                       f"{ctx}.alternate_route", optional=["misuse_note"])
+            require_str(ar, "route", f"{ctx}.alternate_route")
+            validate_reference(ar["source_ref"],
+                               f"{ctx}.alternate_route.source_ref")
+            if "misuse_note" in ar:
+                require_str(ar, "misuse_note", f"{ctx}.alternate_route")
+        else:
+            exact_keys(ar, ["no_alternate_reason"], f"{ctx}.alternate_route")
+            require_str(ar, "no_alternate_reason", f"{ctx}.alternate_route")
+        srcs = rec["source_refs"]
+        if not isinstance(srcs, list) or not srcs:
+            raise LedgerError(f"{ctx}: source_refs must be non-empty")
+        for j, ref in enumerate(srcs):
+            validate_reference(ref, f"{ctx}.source_refs[{j}]")
+        touched |= {x for x in (f, t) if x in domain_ids}
+        if ids[f] == "external_assumptions":
+            cited_exas.add(f)
+        exercised.add(rec["flow_kind"])
+        edges[rec["id"]] = rec
+    loops = src.get("dependency_loops")
+    if not isinstance(loops, list) or not loops:
+        raise LedgerError(
+            "dependency_loops must be a non-empty list once dependencies "
+            "populate — an acyclic whole-society map would misstate the "
+            "ratified fiscal and accountability circles"
+        )
+    seen_loops = set()
+    loop_nodesets = []
+    for i, loop in enumerate(loops):
+        ctx = f"dependency_loops[{i}]"
+        exact_keys(loop, ["loop_kind", "member_edge_refs", "boundedness",
+                          "steward_ref", "owner_ref"], ctx)
+        if (loop["steward_ref"] not in ids
+                or ids[loop["steward_ref"]] != "bodies"):
+            raise LedgerError(
+                f"{ctx}: steward_ref must name a required body, got "
+                f"{loop['steward_ref']!r}"
+            )
+        if loop["loop_kind"] not in LOOP_KINDS:
+            raise LedgerError(
+                f"{ctx}: unknown loop_kind {loop['loop_kind']!r}"
+            )
+        mem = loop["member_edge_refs"]
+        if (not isinstance(mem, list) or len(mem) < 2
+                or len(set(mem)) != len(mem)):
+            raise LedgerError(
+                f"{ctx}: member_edge_refs must be a duplicate-free ordered "
+                "list of at least two edges"
+            )
+        for m in mem:
+            if m not in edges:
+                raise LedgerError(
+                    f"{ctx}: loop member must name a dependency edge, "
+                    f"got {m!r}"
+                )
+        for j, m in enumerate(mem):
+            nxt = edges[mem[(j + 1) % len(mem)]]
+            if edges[m]["to_ref"] != nxt["from_ref"]:
+                raise LedgerError(
+                    f"{ctx}: loop members must chain into a cycle — "
+                    f"{m} ends at {edges[m]['to_ref']!r}, "
+                    f"{nxt['id']} starts at {nxt['from_ref']!r}"
+                )
+        key = frozenset(mem)
+        if key in seen_loops:
+            raise LedgerError(f"{ctx}: duplicate loop {sorted(key)}")
+        seen_loops.add(key)
+        require_str(loop, "boundedness", ctx)
+        validate_reference(loop["owner_ref"], f"{ctx}.owner_ref")
+        nodes = set()
+        for m in mem:
+            nodes.add(edges[m]["from_ref"])
+            nodes.add(edges[m]["to_ref"])
+        loop_nodesets.append(nodes)
+    walls = src.get("refused_flows")
+    if not isinstance(walls, list) or not walls:
+        raise LedgerError(
+            "refused_flows must be a non-empty list once dependencies "
+            "populate — the ratified walls are part of the map"
+        )
+    seen_walls = set()
+    for i, ent in enumerate(walls):
+        ctx = f"refused_flows[{i}]"
+        exact_keys(ent, ["refused_flow", "flow_kind", "refusal_reason",
+                         "source_ref"], ctx)
+        require_str(ent, "refused_flow", ctx)
+        if ent["flow_kind"] not in FLOW_KINDS:
+            raise LedgerError(
+                f"{ctx}: unknown flow_kind {ent['flow_kind']!r}"
+            )
+        require_str(ent, "refusal_reason", ctx)
+        validate_reference(ent["source_ref"], f"{ctx}.source_ref")
+        if ent["refused_flow"] in seen_walls:
+            raise LedgerError(
+                f"{ctx}: duplicate refused flow {ent['refused_flow']!r}"
+            )
+        seen_walls.add(ent["refused_flow"])
+    # closures — ORDER IS LOAD-BEARING for the negative controls:
+    # domain -> flow kind -> external assumption -> cycle coverage
+    missing = sorted(domain_ids - touched)
+    if missing:
+        raise LedgerError(
+            "dependency/domain closure: every material domain participates "
+            f"in the flow map; no edge touches: {missing}"
+        )
+    missing_kinds = sorted(set(FLOW_KINDS) - exercised)
+    if missing_kinds:
+        raise LedgerError(
+            "flow-kind closure: every named flow kind must be exercised by "
+            f"at least one edge; unexercised: {missing_kinds}"
+        )
+    missing_exas = sorted(exa_ids - cited_exas)
+    if missing_exas:
+        raise LedgerError(
+            "external-assumption closure: every named external assumption "
+            f"must feed at least one externally-assumed edge; uncited: "
+            f"{missing_exas}"
+        )
+    adj = {}
+    for e in edges.values():
+        adj.setdefault(e["from_ref"], set()).add(e["to_ref"])
+    reach = {n: _reach(adj, n) for n in adj}
+    nodes = set(adj)
+    for targets in adj.values():
+        nodes |= targets
+    assigned = set()
+    for n in sorted(nodes):
+        if n in assigned:
+            continue
+        scc = {m for m in nodes
+               if m in reach.get(n, ()) and n in reach.get(m, ())}
+        if n in reach.get(n, ()):
+            scc.add(n)
+        if len(scc) < 2:
+            continue
+        assigned |= scc
+        if not any(ns <= scc for ns in loop_nodesets):
+            raise LedgerError(
+                "cycle closure: a strongly connected region has no "
+                f"declared loop witness: {sorted(scc)} — a cyclic region "
+                "is classified and bounded, never silent"
+            )
 
 
 def validate_routes(src: dict):
@@ -2237,8 +2561,8 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
                      "material sufficiency stays a review question"))
     rows.append((conds[1], "form-only",
                  "the projections that exist regenerate — the check itself is "
-                 "the proof — while the dependency map, assurance "
-                 "allocation, and reader ledger do not exist yet"))
+                 "the proof — while the assurance "
+                 "allocation and reader ledger do not exist yet"))
     if blocking:
         rows.append((conds[2], "unmet",
                      "blocking defect rows exist: " + ", ".join(blocking)))
@@ -2369,6 +2693,7 @@ def validate(src: dict):
     validate_claims(src, ids, routes_by_id)
     validate_bodies(src)
     validate_roles(src, ids)
+    validate_dependencies(src, ids)
     validate_external_assumptions(src)
     validate_envelope(src, ids)
     validate_functional_criteria(src)
@@ -2662,6 +2987,63 @@ def negative_controls(src: dict) -> int:
     control("role_omissions may not outlive a deferred roles array",
             lambda s: s.update({"roles": []}),
             "while roles is deferred")
+    control("a dependency destination must resolve",
+            lambda s: s["dependencies"][0].update({"to_ref": "FS-DOM-99"}),
+            "destination must name a body, role, or domain")
+    control("a dependency endpoint type is closed",
+            lambda s: s["dependencies"][0].update(
+                {"from_ref": s["claims"][0]["id"]}),
+            "source must name a body, role, domain, or external")
+    control("an externally-assumed edge flows from a named assumption",
+            _dep_exa_without_terminal,
+            "must flow from a named external assumption")
+    control("an external assumption feeds only externally-assumed edges",
+            _dep_exa_on_wrong_class,
+            "only an externally-assumed edge may flow")
+    control("an edge's layer follows its class",
+            _dep_layer_mismatch, "layer follows its dependency class")
+    control("each material domain joins the flow map",
+            _dep_uncover_domain, "no edge touches")
+    control("every flow kind is exercised",
+            _dep_unexercise_flow, "unexercised")
+    control("every external assumption stays cited",
+            _dep_uncite_exa, "uncited")
+    control("a cycle needs a declared loop witness",
+            _dep_undeclared_cycle, "no declared loop witness")
+    control("a declared loop is a real cycle",
+            _dep_loop_not_cycle, "must chain into a cycle")
+    control("a loop member is a real edge",
+            lambda s: s["dependency_loops"][0]["member_edge_refs"
+                                               ].__setitem__(0, "FS-DEP-777"),
+            "loop member must name a dependency edge")
+    control("a refused flow cites its wall",
+            lambda s: s["refused_flows"][0].pop("source_ref"),
+            "missing keys")
+    control("a duplicate edge is one edge",
+            _dep_duplicate_edge, "duplicate dependency edge")
+    control("a duplicate refusal is caught",
+            lambda s: s["refused_flows"].append(dict(s["refused_flows"][0])),
+            "duplicate refused flow")
+    control("a populated dependencies sheds its deferral",
+            lambda s: s["deferred_populations"].append(
+                {"record_type": "dependencies", "owner_ref": _CONTROL_NEEDLE,
+                 "closure_condition": "control", "stage": "stage-3"}),
+            "still carries a deferral record")
+    control("loops and walls may not outlive a deferred map",
+            lambda s: s.update({"dependencies": []}),
+            "while dependencies is deferred")
+    control("dependency meanings cannot drift",
+            lambda s: s["flow_kind_meanings"].pop("care"),
+            "must define exactly")
+    control("a lifecycle path is ratified or recorded outside",
+            lambda s: s["dependencies"][0].update(
+                {"lifecycle_path": "delivery"}),
+            "lifecycle_path must be one of")
+    control("an absent alternate is recorded, never silent",
+            lambda s: s["dependencies"][0].update({"alternate_route": {}}),
+            "exactly one of route / no_alternate_reason")
+    control("an edge may not feed itself",
+            _dep_self_edge, "may not terminate on its own source")
 
     passed = 0
     for entry in controls:
@@ -2819,6 +3201,140 @@ def _duplicate_keying_tuple(s):
     twin = copy.deepcopy(s["defects"][0])
     twin["id"] = "FS-DFT-998"
     s["defects"].append(twin)
+
+
+def _dep_exa_without_terminal(s):
+    for rec in s["dependencies"]:
+        if rec["dependency_class"] == "externally-assumed":
+            rec["from_ref"] = s["bodies"][0]["id"]
+            return
+    raise LedgerError("control setup: no externally-assumed edge")
+
+
+def _dep_exa_on_wrong_class(s):
+    triples = {(r["from_ref"], r["to_ref"], r["flow_kind"])
+               for r in s["dependencies"]}
+    for rec in s["dependencies"]:
+        if rec["dependency_class"] == "externally-assumed":
+            continue
+        if ("FS-EXA-01", rec["to_ref"], rec["flow_kind"]) in triples:
+            continue
+        rec["from_ref"] = "FS-EXA-01"
+        return
+    raise LedgerError("control setup: no collision-free non-EXA edge")
+
+
+def _dep_layer_mismatch(s):
+    rec = s["dependencies"][0]
+    if rec["dependency_class"] == "operationally-supplied":
+        rec["layer"] = "constitutional-invariant"
+    else:
+        rec["layer"] = "book-2-operation"
+
+
+def _dep_uncover_domain(s):
+    kept, dropped = [], set()
+    for rec in s["dependencies"]:
+        if "FS-DOM-12" in (rec["from_ref"], rec["to_ref"]):
+            dropped.add(rec["id"])
+        else:
+            kept.append(rec)
+    if not dropped:
+        raise LedgerError("control setup: no edge touches FS-DOM-12")
+    s["dependencies"] = kept
+    s["dependency_loops"] = [
+        loop for loop in s["dependency_loops"]
+        if not dropped & set(loop["member_edge_refs"])
+    ]
+    if not s["dependency_loops"]:
+        raise LedgerError("control setup: dropping FS-DOM-12 emptied loops")
+
+
+def _dep_unexercise_flow(s):
+    triples = {(r["from_ref"], r["to_ref"], r["flow_kind"])
+               for r in s["dependencies"]}
+    for kind in FLOW_KINDS:
+        movers = [r for r in s["dependencies"] if r["flow_kind"] == kind]
+        if not movers:
+            continue
+        for target in FLOW_KINDS:
+            if target == kind:
+                continue
+            if any((r["from_ref"], r["to_ref"], target) in triples
+                   for r in movers):
+                continue
+            for r in movers:
+                r["flow_kind"] = target
+            return
+    raise LedgerError("control setup: no collision-free relabel")
+
+
+def _dep_uncite_exa(s):
+    triples = {(r["from_ref"], r["to_ref"], r["flow_kind"])
+               for r in s["dependencies"]}
+    movers = [r for r in s["dependencies"] if r["from_ref"] == "FS-EXA-01"]
+    if not movers:
+        raise LedgerError("control setup: no edge sourced at FS-EXA-01")
+    for target in ("FS-EXA-02", "FS-EXA-03", "FS-EXA-04"):
+        if any((target, r["to_ref"], r["flow_kind"]) in triples
+               for r in movers):
+            continue
+        for r in movers:
+            r["from_ref"] = target
+        return
+    raise LedgerError("control setup: no collision-free EXA retarget")
+
+
+def _dep_undeclared_cycle(s):
+    # Two roles that are no edge's endpoint guarantee the synthetic
+    # two-cycle forms its own strongly connected region with no witness;
+    # a free body pair could already sit inside a witnessed region.
+    used = set()
+    for r in s["dependencies"]:
+        used.add(r["from_ref"])
+        used.add(r["to_ref"])
+    free = [r["id"] for r in s["roles"] if r["id"] not in used]
+    if len(free) < 2:
+        raise LedgerError("control setup: no free endpoint pair")
+    pair = (free[0], free[1])
+    for i, (f, t) in enumerate([pair, pair[::-1]]):
+        twin = copy.deepcopy(s["dependencies"][0])
+        twin.update({
+            "id": f"FS-DEP-90{i + 1}", "from_ref": f, "to_ref": t,
+            "flow_kind": "services",
+            "dependency_class": "operationally-supplied",
+            "layer": "book-2-operation",
+            "lifecycle_path": "outside-ratified-paths",
+        })
+        s["dependencies"].append(twin)
+
+
+def _dep_loop_not_cycle(s):
+    edges = {r["id"]: r for r in s["dependencies"]}
+    ids = list(edges)
+    for a in ids:
+        for b in ids:
+            if a == b:
+                continue
+            if (edges[a]["to_ref"] != edges[b]["from_ref"]
+                    and edges[b]["to_ref"] != edges[a]["from_ref"]):
+                s["dependency_loops"][0]["member_edge_refs"] = [a, b]
+                return
+    raise LedgerError("control setup: no non-chaining edge pair")
+
+
+def _dep_duplicate_edge(s):
+    twin = copy.deepcopy(s["dependencies"][0])
+    twin["id"] = "FS-DEP-903"
+    s["dependencies"].append(twin)
+
+
+def _dep_self_edge(s):
+    for rec in s["dependencies"]:
+        if rec["dependency_class"] != "externally-assumed":
+            rec["to_ref"] = rec["from_ref"]
+            return
+    raise LedgerError("control setup: every edge is externally assumed")
 
 
 def _uncite_domain(s):
@@ -3293,6 +3809,69 @@ def render(src: dict, resolution: dict) -> str:
             w(f"- `{entry['role_ref']}` omits `{what}`: "
               f"{entry['risk_reason']}")
     w("")
+    w("## Functional flows and cross-domain dependencies")
+    w("")
+    w("Each edge records that a function depends on a flow — its lawful "
+      "source class, its owner, and what breaks when the flow stops. An "
+      "edge never records that the flow arrives: no right is called "
+      "delivered because an institution promised it, and no body is called "
+      "functional because its name exists. The four-way class is routing, "
+      "not assurance — constitutionally-guaranteed names the lawful source "
+      "of the obligation, never a delivery status, and an "
+      "externally-assumed edge names a premise nothing internal "
+      "manufactures. The mechanical cycle check establishes exactly one "
+      "thing: every strongly connected region of the declared graph "
+      "carries at least one declared, classified, owner-named loop witness "
+      "with a recorded boundedness statement. Boundedness is reviewed "
+      "prose, not a proven property, and the rejection of self-certifying, "
+      "deadlocking, single-veto, or unbounded patterns — with cascade "
+      "analysis — belongs to the closure audit, which consumes this "
+      "population. Alternate routes are predeclared with their doctrine "
+      "needle or their absence is recorded as a named single point of "
+      "failure. Refused flows are walls, not edges: doctrine forbids them, "
+      "and drawing one as a dependency would be the defect.")
+    w("")
+    w("| Edge | Flow | Class | Source → Destination | Path | Alternate | "
+      "Owner |")
+    w("| --- | --- | --- | --- | --- | --- | --- |")
+    for rec in src["dependencies"]:
+        alt = ("declared" if "route" in rec["alternate_route"]
+               else "none — recorded")
+        w(f"| {rec['id']} {rec['title']} | {rec['flow_kind']} | "
+          f"{rec['dependency_class']} | {rec['from_ref']} → "
+          f"{rec['to_ref']} | {rec['lifecycle_path']} | {alt} | "
+          f"{rec['steward_ref']} |")
+    w("")
+    w("Per-edge routing (absence, continuity, remedy, restoration, "
+      "correction — routing statements, never delivery):")
+    w("")
+    for rec in src["dependencies"]:
+        w(f"- `{rec['id']}` absence: {rec['consequence']} Continuity: "
+          f"{rec['interim_continuity']} Remedy: {rec['remedy_route']} "
+          f"Restoration: {rec['restoration']} Correction: "
+          f"{rec['systemic_correction']}")
+    w("")
+    w("Single points of failure (no alternate route, recorded):")
+    w("")
+    for rec in src["dependencies"]:
+        ar = rec["alternate_route"]
+        if "no_alternate_reason" in ar:
+            w(f"- `{rec['id']}` {rec['title']}: "
+              f"{ar['no_alternate_reason']}")
+    w("")
+    w("Declared loops (classified, bounded, owned):")
+    w("")
+    for loop in src["dependency_loops"]:
+        chain = " → ".join(loop["member_edge_refs"])
+        w(f"- {loop['loop_kind']} loop (steward {loop['steward_ref']}): "
+          f"{chain} — bounded: {loop['boundedness']}")
+    w("")
+    w("Refused flows (walls, not edges):")
+    w("")
+    for ent in src["refused_flows"]:
+        w(f"- {ent['refused_flow']} [{ent['flow_kind']}]: "
+          f"{ent['refusal_reason']}")
+    w("")
     w("## Legacy coverage rows and their splits")
     w("")
     w("Imported from the coverage map with wording frozen; each split claim "
@@ -3554,9 +4133,9 @@ def render(src: dict, resolution: dict) -> str:
         w(f"| {rec['record_type']} | {rec['stage']} | `{rec['owner_ref']}` | "
           f"{rec['closure_condition']} |")
     w("")
-    w("The coverage-map view, the role matrix, and the Book 2 crosswalk are "
-      "landed generated projections of this source; contract cards, the "
-      "dependency map, the assurance allocation, and the reader ledger "
+    w("The coverage-map view, the role matrix, the dependency map, and the "
+      "Book 2 crosswalk are landed generated projections of this source; "
+      "contract cards, the assurance allocation, and the reader ledger "
       "arrive with their owning stage or tracker item, and none may be "
       "maintained by hand.")
     w("")
