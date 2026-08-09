@@ -41,8 +41,10 @@ then a full-society expansion backlog and cross-cutting sections:
    plural economy/protected private sphere, family/dependency/reproduction/
    collective-plurality, ecological/future-generation/commons/non-human-
    animal, and public-safety/defence/emergency/external-power baselines are
-   settled, as are the assurance portfolio and the narrative register. The
-   reader-threshold decision remains open. Neutral inventory and
+   settled, as are the assurance portfolio, the narrative register, and the
+   reader-evidence protocol with its threshold timing. The release threshold —
+   the pass rule's values and severity taxonomy — is reserved for a second
+   ruling after the pilot. Neutral inventory and
    decision briefs may proceed in parallel; each still-gated domain's rules,
    prose, and public claim wait for its own ruling. The final reader threshold
    waits for the pilot. This section has been destroyed by tooling once and is
@@ -120,8 +122,9 @@ The state form, residence-first political membership, substantive equality,
 bounded plural economy/protected voluntary sphere, family/dependency/
 reproduction/collective-plurality, ecological/future-generation/commons/
 non-human-animal, and public-safety/defence/emergency/external-power baselines
-are also settled, as are the assurance portfolio and the narrative register. The
-remaining decision determines reader thresholds; it
+are also settled, as are the assurance portfolio, the narrative register, and
+the reader-evidence protocol with its threshold timing. The
+remaining decision determines the release threshold; it waits for the pilot and
 does not reopen whether the broader result is wanted.
 Scope inventory, gap discovery, evidence collection and neutral option briefs may
 proceed before a ruling. Do not implement a contested rule family, rewrite
@@ -142,26 +145,23 @@ dependent prose, or make its completion claim until the author has ruled it.
     the slot; the sentences are the author's. Either bring it into conformance or
     record the exception as permanent with its reason.
 
-- [ ] **[AUTHOR-GATED] Rule the reader-balance evidence protocol and threshold
-  timing; ratify the release threshold after the pilot.**
-  - **Input from the 2026-08-08 register ruling, worded as an input rather than a
-    prediction.** The measured ordinary-life deficit does **not** by itself make
-    Gate C unpassable — its permitted claim is protocol-relative, asserting that
-    the destination passed the declared protocol for the tested audience within
-    the disclosed sampling and method limits. This ruling makes **no prediction**
-    about the outcome. But the deficit is a named, disclosed input to the
-    protocol's design: the protocol may not be written so as to hide it, and its
-    disclosed limits must state that the book's ordinary-life account rests on
-    unimplemented families at the time of testing.
-  - **Recommended:** approve now a pre-registered pilot-and-fresh-holdout method,
-    while reserving the numerical/qualitative release threshold for an author ruling
-    after the pilot. This lets constitutional work proceed without inventing a
-    standard before evidence exists.
-  - Require readers to identify ordinary constructive life, democratic choice,
-    private freedom, successful provision, repair, and the prisoner as a stress test
-    rather than the society's central inhabitant.
-  - Do not use an arbitrary word, chapter, demographic or sentiment quota, and do
-    not let an aggregate score hide a repeated core misconception.
+- [ ] **[AUTHOR-GATED] Ratify the release threshold — the pass rule's values and
+  severity taxonomy — after the pilot; pre-register it before the fresh
+  holdout.**
+  - The protocol, its timing, the rule's form, the disclosure minimum, and the
+    ethics terms were author-ratified on 2026-08-09; the controlling record is
+    `new-book-plans/book-1-reader-evidence-protocol-decision.md`. This bullet is
+    that ruling's reserved half. It blocks nothing now and cannot be ruled
+    before pilot evidence exists.
+  - Blocked on the pilot, which the phase-4 sessions item owns. The ruling must
+    land after the pilot and before the fresh holdout's pre-registration
+    freeze; a holdout run under an unratified or post-hoc rule is void and
+    cannot feed Gate C, and the reader route must be available before the
+    holdout runs.
+  - The ruling chooses the severity taxonomy, what counts as a core
+    misconception, whether a single or repeated core finding fails, and every
+    threshold value. It may not reopen the method, the disclosure minimum, the
+    ethics terms, the no-aggregate veto, or the non-substitution of routes.
 
 ---
 
@@ -2287,11 +2287,17 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Readability formulas are diagnostic flags, not truth or pass/fail targets. Each
     visual must earn its cognitive and accessibility cost.
 
-- [ ] **Run pre-registered reader-comprehension and balance sessions.**
-  - Pre-register questions, coding rubric, sample and pass rule; run a pilot, revise,
-    then use a fresh holdout of non-specialists with varied reading confidence,
-    language backgrounds and accessibility needs. Treat this as usability evidence,
-    not population statistics.
+- [ ] **Run pre-registered reader-comprehension and balance sessions.** The
+  method, timing, rule form, disclosure minimum, and ethics terms are
+  author-ratified (2026-08-09); the controlling record is
+  `new-book-plans/book-1-reader-evidence-protocol-decision.md`.
+  - Pre-register questions, coding rubric and sample; run a pilot, revise; the
+    author then ratifies the pass rule on pilot evidence, and it is
+    pre-registered before the fresh holdout of non-specialists with varied
+    reading confidence, language backgrounds and accessibility needs.
+    Pre-registration binds each round's instrument before that round; the pilot
+    carries at most an expressly provisional draft rule and severity taxonomy.
+    Treat this as usability evidence, not population statistics.
   - Include unaided prompts: What do people do in ordinary life? What may they
     choose privately and democratically? What do public bodies do when nothing has
     failed? How does something owed arrive and get repaired? Why is the prisoner
@@ -2300,13 +2306,21 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Obtain informed consent; permit withdrawal; minimize and protect data; provide
     accessible participation and fair compensation; prevent retaliation; add trauma
     safeguards where coercive experience is discussed; and use independent ethics/
-    safety review where appropriate. Reader evidence never purchases authority over
-    the people studied.
+    safety review where appropriate. These are binding admissibility terms — a
+    session run in breach is inadmissible regardless of results — and reader
+    evidence never purchases authority over the people studied.
   - A pass requires readers to identify constructive functions as well as restraints,
     trace one successful delivery/remedy path and one democratic choice, and
     recognise the prisoner as a stress test. Apply the pre-registered,
-    severity-weighted misconception rule ratified by the author after the pilot; no
-    aggregate score may hide a core failure. Revise, then use a fresh holdout.
+    severity-weighted misconception rule ratified by the author after the pilot
+    and before the holdout's pre-registration freeze; no aggregate score may
+    hide a core failure. Revise, then use a fresh holdout — participants with no
+    prior exposure to drafts, previews, the pilot, or the reviews corpus —
+    against the private candidate the edition item names.
+  - The pilot runs against a declared, versioned snapshot only after the
+    Reader's Map and navigation artifacts exist, and the instrument must fail a
+    seeded unbalanced or planted-misconception control, watched failing during
+    the pilot's revise step.
 
 ### Expansion phase 5 — Evidence, psychology, and external review
 
