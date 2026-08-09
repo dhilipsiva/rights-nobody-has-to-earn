@@ -832,21 +832,32 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     and disclosure alone does not cure a critical gap.
 
 - [ ] **Define the reference-society envelope and measurable meanings of
-  “functional”.**
-  - Version the population and demographic profile; territory, settlement pattern
-    and geography; resource and ecological endowment; technology and infrastructure
-    baseline; trade and external-cooperation assumptions; institutional starting
-    state; time horizon; promised service levels; and ordinary plus compound shock
-    set. Never let a result inherit these silently.
-  - Define adequacy, continuity, equity, accessibility, resilience and sustainability
-    criteria for each applicable domain. Distinguish a parameterized design from a
-    result established only for one reference case.
-  - Book 1 records which constitutional claim depends on which envelope field and
-    what remains invariant when it changes. Book 2 owns calibration, empirical
-    validation, capacity models and sensitivity/scenario analysis.
-  - **Done when:** every functional or feasibility claim names an envelope version,
-    metric, threshold owner, uncertainty range and failure interpretation, and no
-    single favourable scenario is presented as society-wide feasibility.
+  “functional” (structure landed dccea62).**
+  - The envelope is versioned in structure in the canonical source: the
+    permanent pre-envelope identity beside `envelope-v1-structure`, whose
+    fields — population/demographics, territory/settlement/geography,
+    resource/ecological endowment, technology/infrastructure baseline,
+    trade/external cooperation, institutional starting state, time horizon,
+    promised service levels, and the ordinary-plus-compound shock set — carry
+    definitions, claim dependents, and invariance statements. No value enters
+    Book 1; every field's value status names Book 2's Gate D calibration as
+    owner, and `calibrated` is refused outright in this contract, entering
+    only through a deliberate future contract amendment. Nothing inherits an
+    envelope field silently: the dependency closure requires the
+    envelope-relative claims as dependents and refuses any established
+    constitutional invariant as one.
+  - The functional criteria are fixed as the seven-member union with
+    provenance, bound to the rulings' actual sentences by needle, with the
+    drift across the ratified variants recorded. Thresholds are meanings, not
+    measurements: each classifies its lawful source, which fixes its layer,
+    and separates its decision owner from its measurement owner.
+  - **Remaining:** values and calibration are Book 2's Gate D work through its
+    mirror item; a calibrated envelope enters Book 1's contract only by a
+    future amendment with author ratification.
+  - **Done when:** every functional or feasibility claim names an envelope
+    version, metric, threshold owner, uncertainty range and failure
+    interpretation, and no single favourable scenario is presented as
+    society-wide feasibility.
 
 - [ ] **Build the roles, life-course, scale, and power-position matrix.**
   - Cover birth/first contact, childhood, adulthood, ageing, disability, illness,
