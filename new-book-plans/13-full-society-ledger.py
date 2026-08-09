@@ -133,6 +133,32 @@ PROPOSAL_DISPOSITIONS = ["added", "classified-out", "retained-limit"]
 EXPECTED_STATUS = "stage_4_review_machinery"
 STAGE_LABEL = "stage 4 machinery"
 
+# Envelope contract: the array begins with the permanent FS-ENV-00 pre-envelope
+# identity and may carry versioned successors. `calibrated` is refused outright
+# in this contract — calibration is Book 2's Gate D work and becomes legal only
+# through a deliberate future contract amendment, never a string flip. A
+# structure-only envelope can route and be reviewed; it cannot assure.
+ENVELOPE_STATUSES = ["stub", "versioned-structure", "calibrated"]
+VALUE_STATUSES = ["declared-pending"]
+LAWFUL_SOURCES = [
+    "constitutional-minimum-or-ceiling",
+    "democratic-policy-target",
+    "scientific-safety-boundary",
+    "operational-diagnostic",
+]
+# The lawful source fixes the threshold's layer; the mapping is closed.
+LAWFUL_SOURCE_LAYER = {
+    "constitutional-minimum-or-ceiling": "constitutional-invariant",
+    "democratic-policy-target": "democratic-ordinary-law-choice",
+    "scientific-safety-boundary": "external-assumption",
+    "operational-diagnostic": "book-2-operation",
+}
+CRITERIA_SLUGS = ["adequacy", "accessibility-equality", "continuity",
+                  "resilience", "sustainability", "resource", "safety"]
+# Envelope-relative claims that MUST appear as dependents of some field: their
+# establishment (never their norm content) varies with the envelope.
+REQUIRED_DEPENDENTS = ("FS-CLM-06", "FS-CLM-20")
+
 # The rubric's status string is exact in both states. It shipped as a
 # candidate; the author confirmed it on 2026-08-09, and the confirmation basis
 # is recorded on the rubric itself. An unconfirmed rubric computes as an unmet
@@ -407,6 +433,9 @@ def validate_meanings(src: dict):
         "resolution_status_meanings": RESOLUTION_STATUSES,
         "proposal_disposition_meanings": PROPOSAL_DISPOSITIONS,
         "routing_marker_meanings": ROUTING_MARKERS,
+        "envelope_status_meanings": ENVELOPE_STATUSES,
+        "value_status_meanings": VALUE_STATUSES,
+        "lawful_source_meanings": LAWFUL_SOURCES,
     }
     for key, values in expected.items():
         block = src.get(key)
@@ -660,8 +689,10 @@ def validate_claims(src: dict, ids: dict, routes_by_id: dict):
             raise LedgerError(f"{ctx}: evidence_notes must be a list of strings")
         if rec["envelope_id"] != ENVELOPE_STUB_ID:
             raise LedgerError(
-                f"{ctx}: envelope_id must name the explicit stub "
-                f"{ENVELOPE_STUB_ID} until the envelope is versioned"
+                f"{ctx}: envelope_id names the pre-envelope identity "
+                f"{ENVELOPE_STUB_ID} — Book 1 claims are not envelope-bound; "
+                "only a functional or feasibility claim binds a versioned "
+                "envelope, and Book 1 may carry none"
             )
         for ref in rec["domain_refs"]:
             if ref not in ids or ids[ref] != "domains":
@@ -815,24 +846,201 @@ def validate_external_assumptions(src: dict):
         validate_reference(rec["source_ref"], f"{ctx}.source_ref")
 
 
-def validate_envelope(src: dict):
+def _envelope_calibrated(src: dict, envelope_id) -> bool:
+    for rec in src.get("envelope", []):
+        if rec.get("id") == envelope_id:
+            return rec.get("envelope_status") == "calibrated"
+    return False
+
+
+def envelope_ids(src: dict) -> set:
+    return {rec.get("id") for rec in src.get("envelope", [])}
+
+
+def validate_envelope(src: dict, ids: dict):
     env = src.get("envelope", [])
-    if len(env) != 1 or env[0].get("id") != ENVELOPE_STUB_ID:
+    if not env or env[0].get("id") != ENVELOPE_STUB_ID:
         raise LedgerError(
-            f"envelope must hold exactly the {ENVELOPE_STUB_ID} stub until the "
-            "reference-envelope item versions it"
+            f"the envelope array begins with the permanent {ENVELOPE_STUB_ID} "
+            "pre-envelope identity"
         )
-    rec = env[0]
-    ctx = f"envelope ({ENVELOPE_STUB_ID})"
-    exact_keys(rec, COMMON_KEYS + ["note"], ctx)
-    validate_common_record_fields(rec, ctx)
-    if rec["status"] != "not-yet-versioned":
-        raise LedgerError(f"{ctx}: the stub's status is not-yet-versioned")
-    if rec["layer"] != "external-assumption":
+    claims_by_id = {c["id"]: c for c in src.get("claims", [])}
+    for i, rec in enumerate(env):
+        ctx = f"envelope[{i}] ({rec.get('id', '?')})"
+        if rec.get("envelope_status") == "calibrated":
+            raise LedgerError(
+                f"{ctx}: calibration is a deliberate future contract "
+                "amendment — this contract refuses a calibrated envelope, "
+                "because calibration is Book 2's Gate D work and a string "
+                "flip must never unlock what only values can"
+            )
+        if rec.get("envelope_status") not in ENVELOPE_STATUSES:
+            raise LedgerError(f"{ctx}: unknown envelope_status")
+        if rec["layer"] != "external-assumption":
+            raise LedgerError(
+                f"{ctx}: until calibrated, an envelope is an external "
+                "assumption"
+            )
+        if i == 0:
+            exact_keys(rec, COMMON_KEYS + ["envelope_status", "note"], ctx)
+            validate_common_record_fields(rec, ctx)
+            if rec["envelope_status"] != "stub":
+                raise LedgerError(f"{ctx}: the first record is the stub")
+            if rec["status"] != "pre-envelope-identity":
+                raise LedgerError(
+                    f"{ctx}: the stub's status is pre-envelope-identity — it "
+                    "is retained forever as the keying identity for records "
+                    "landed before the envelope was versioned"
+                )
+            require_str(rec, "note", ctx)
+            continue
+        exact_keys(rec, COMMON_KEYS + ["envelope_status", "envelope_version",
+                                       "note", "fields"], ctx)
+        validate_common_record_fields(rec, ctx)
+        if rec["envelope_status"] != "versioned-structure":
+            raise LedgerError(
+                f"{ctx}: a successor record is versioned-structure in this "
+                "contract"
+            )
+        require_str(rec, "envelope_version", ctx)
+        require_str(rec, "note", ctx)
+        fields = rec["fields"]
+        if not isinstance(fields, list) or not fields:
+            raise LedgerError(f"{ctx}: a versioned envelope declares its fields")
+        seen = set()
+        dependents_everywhere = set()
+        for j, field in enumerate(fields):
+            fctx = f"{ctx}.fields[{j}] ({field.get('id', '?')})"
+            exact_keys(field, ["id", "definition", "value_status",
+                               "book2_owner_ref", "dependents", "invariance"],
+                       fctx)
+            fid = field.get("id")
+            if not isinstance(fid, str) or not SLUG_RE.match(fid):
+                raise LedgerError(f"{fctx}: field id must be a kebab-case slug")
+            if fid in seen:
+                raise LedgerError(f"{fctx}: duplicate field id")
+            seen.add(fid)
+            require_str(field, "definition", fctx)
+            if field["value_status"] not in VALUE_STATUSES:
+                raise LedgerError(
+                    f"{fctx}: value_status must be declared-pending — values "
+                    "are Book 2's Gate D calibration, never Book 1 content"
+                )
+            validate_reference(field["book2_owner_ref"],
+                              f"{fctx}.book2_owner_ref")
+            deps = field["dependents"]
+            if not isinstance(deps, list):
+                raise LedgerError(f"{fctx}: dependents must be a list")
+            inv = field.get("invariance")
+            if not deps and (not isinstance(inv, str) or not inv):
+                raise LedgerError(
+                    f"{fctx}: a field lists dependents or an explicit "
+                    "invariance statement"
+                )
+            if not isinstance(inv, str) or not inv:
+                raise LedgerError(f"{fctx}: invariance must be stated")
+            for dep in deps:
+                claim = claims_by_id.get(dep)
+                if claim is None:
+                    raise LedgerError(f"{fctx}: dependent {dep} is no claim")
+                if claim["layer"] == "constitutional-invariant" and \
+                        claim["posture"] in ("Derived", "Checked"):
+                    raise LedgerError(
+                        f"{fctx}: norm-content invariance — an established "
+                        "constitutional invariant may not depend on an "
+                        f"envelope field ({dep})"
+                    )
+                dependents_everywhere.add(dep)
+        for req in REQUIRED_DEPENDENTS:
+            if req not in dependents_everywhere:
+                raise LedgerError(
+                    f"{ctx}: envelope-relative claim {req} must appear as a "
+                    "dependent of some field — its establishment varies with "
+                    "the envelope even though its norm content does not"
+                )
+
+
+def validate_functional_criteria(src: dict):
+    block = src.get("functional_criteria")
+    if not isinstance(block, dict):
+        raise LedgerError("functional_criteria must be an object")
+    exact_keys(block, ["criteria", "drift_note"], "functional_criteria")
+    require_str(block, "drift_note", "functional_criteria")
+    criteria = block["criteria"]
+    if not isinstance(criteria, list):
+        raise LedgerError("functional_criteria.criteria must be a list")
+    seen = set()
+    for i, rec in enumerate(criteria):
+        ctx = f"functional_criteria[{i}] ({rec.get('id', '?')})"
+        exact_keys(rec, ["id", "name", "definition", "binding_refs",
+                         "provenance"], ctx)
+        require_str(rec, "name", ctx)
+        require_str(rec, "definition", ctx)
+        if rec.get("id") not in CRITERIA_SLUGS:
+            raise LedgerError(f"{ctx}: unknown criterion slug")
+        if rec["id"] in seen:
+            raise LedgerError(f"{ctx}: duplicate criterion")
+        seen.add(rec["id"])
+        refs = rec["binding_refs"]
+        if not isinstance(refs, list) or not refs:
+            raise LedgerError(
+                f"{ctx}: a criterion binds the rulings' actual sentences by "
+                "needle, never a paraphrase"
+            )
+        for j, ref in enumerate(refs):
+            validate_reference(ref, f"{ctx}.binding_refs[{j}]")
+        prov = rec["provenance"]
+        if not isinstance(prov, list) or not prov or \
+                any(not isinstance(s, str) or not s for s in prov):
+            raise LedgerError(
+                f"{ctx}: provenance lists every ratified text naming this "
+                "criterion"
+            )
+    if seen != set(CRITERIA_SLUGS):
         raise LedgerError(
-            f"{ctx}: until versioned, the envelope is an external assumption"
+            "functional_criteria must carry exactly the seven-member union: "
+            + ", ".join(CRITERIA_SLUGS)
         )
-    require_str(rec, "note", ctx)
+
+
+def validate_thresholds(src: dict, ids: dict):
+    for i, rec in enumerate(src.get("thresholds", [])):
+        ctx = f"thresholds[{i}] ({rec.get('id', '?')})"
+        exact_keys(
+            rec,
+            COMMON_KEYS + ["criterion_ref", "domain_refs", "definition",
+                           "binding_ref", "lawful_source",
+                           "decision_owner_ref", "measurement_owner_ref",
+                           "value_status"],
+            ctx,
+        )
+        validate_common_record_fields(rec, ctx)
+        if rec.get("criterion_ref") not in CRITERIA_SLUGS:
+            raise LedgerError(f"{ctx}: unknown criterion")
+        for ref in rec["domain_refs"]:
+            if ref not in ids or ids[ref] != "domains":
+                raise LedgerError(f"{ctx}: domain_refs must name domains")
+        require_str(rec, "definition", ctx)
+        if re.search(r"\d", rec["definition"]):
+            raise LedgerError(
+                f"{ctx}: no numeric value may appear in a Book 1 threshold — "
+                "meanings, not measurements"
+            )
+        validate_reference(rec["binding_ref"], f"{ctx}.binding_ref")
+        ls = rec.get("lawful_source")
+        if ls not in LAWFUL_SOURCES:
+            raise LedgerError(f"{ctx}: unknown lawful_source")
+        if rec["layer"] != LAWFUL_SOURCE_LAYER[ls]:
+            raise LedgerError(
+                f"{ctx}: layer must follow the lawful source — {ls} fixes "
+                f"{LAWFUL_SOURCE_LAYER[ls]}"
+            )
+        validate_reference(rec["decision_owner_ref"],
+                          f"{ctx}.decision_owner_ref")
+        validate_reference(rec["measurement_owner_ref"],
+                          f"{ctx}.measurement_owner_ref")
+        if rec["value_status"] not in VALUE_STATUSES:
+            raise LedgerError(f"{ctx}: value_status must be declared-pending")
 
 
 def severity_class(rec: dict) -> str:
@@ -933,11 +1141,16 @@ def validate_defect_rows(src: dict, ids: dict):
             raise LedgerError(
                 f"{ctx}: affected_claim_ref must name a claim record"
             )
-        if rec["envelope_id"] == ENVELOPE_STUB_ID and \
-                stage == "operationally-assured-in-envelope":
+        if rec["envelope_id"] not in envelope_ids(src):
             raise LedgerError(
-                f"{ctx}: the envelope stub can route, never assure — no "
-                "operationally-assured stage may cite it"
+                f"{ctx}: envelope_id names no envelope record"
+            )
+        if stage == "operationally-assured-in-envelope" and \
+                not _envelope_calibrated(src, rec["envelope_id"]):
+            raise LedgerError(
+                f"{ctx}: the operationally-assured stage requires a "
+                f"calibrated envelope; {rec['envelope_id']} can route, never "
+                "assure — the stub and a structure-only envelope alike"
             )
         for key in ("resolution_status", "blocking"):
             if key in rec:
@@ -1076,7 +1289,7 @@ def compute_resolution(src: dict) -> dict:
                 and claim.get("overlay") == "liveness"
                 and claim.get("route_ref") == "FS-RTE-05"
                 and rec["response_stage"] == "operationally-assured-in-envelope"
-                and rec["envelope_id"] != ENVELOPE_STUB_ID
+                and _envelope_calibrated(src, rec["envelope_id"])
             )
         candidate = (row["resolution_eligible"] and stage_ok and controls_ok
                      and ceiling_ok)
@@ -1590,10 +1803,19 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
                      "in-repo reviewer corpus is never admissible for this "
                      "condition"))
     preconditions = []
-    if src["envelope"][0]["id"] == ENVELOPE_STUB_ID:
+    successor = next(
+        (r for r in src["envelope"][1:]
+         if r.get("envelope_status") == "versioned-structure"), None)
+    if successor is None:
         preconditions.append(("the reference envelope", "unmet-external",
                               "still the explicit stub; the envelope item owns "
                               "its versioning"))
+    else:
+        preconditions.append(("the reference envelope", "met-in-form",
+                              "versioned in structure and reviewable; "
+                              "calibration is a Gate D condition and values "
+                              "remain Book 2's, and closure and operational "
+                              "assurance still require calibration"))
     if src["severity_rubric"]["rubric_status"] == RUBRIC_STATUS_CANDIDATE:
         preconditions.append(("the severity rubric", "unmet",
                               "candidate — author confirmation pending"))
@@ -1617,6 +1839,8 @@ def validate_closure_record(src: dict, readiness):
          "author_ratification_ref"],
         ctx,
     )
+    if rec["envelope_ref"] not in envelope_ids(src):
+        raise LedgerError(f"{ctx}: envelope_ref names no envelope record")
     if rec["envelope_ref"] == ENVELOPE_STUB_ID:
         raise LedgerError(
             f"{ctx}: a closure record may not cite the envelope stub — the "
@@ -1635,6 +1859,16 @@ def validate_closure_record(src: dict, readiness):
                 f"{ctx}: a closure record may not exist while a closure "
                 f"condition computes unmet — {name}: {reason}"
             )
+    # This branch is unreachable while the calibrated refusal stands: closure
+    # requires a calibrated envelope, which this contract refuses to hold. Its
+    # watched-failing coverage is the defect-row control exercising the same
+    # _envelope_calibrated helper.
+    if not _envelope_calibrated(src, rec["envelope_ref"]):
+        raise LedgerError(
+            f"{ctx}: closure requires a calibrated envelope — "
+            f"{rec['envelope_ref']} is not calibrated, and calibration is a "
+            "deliberate future contract amendment"
+        )
     validate_reference(rec["author_ratification_ref"],
                       f"{ctx}.author_ratification_ref")
     if src["acceptance_gate"]["gate_a_status"] != "passed":
@@ -1679,7 +1913,9 @@ def validate(src: dict):
     validate_claims(src, ids, routes_by_id)
     validate_bodies(src)
     validate_external_assumptions(src)
-    validate_envelope(src)
+    validate_envelope(src, ids)
+    validate_functional_criteria(src)
+    validate_thresholds(src, ids)
     validate_defect_rows(src, ids)
     resolution = compute_resolution(src)
     validate_receipts(src, ids, resolution)
@@ -1812,6 +2048,41 @@ def negative_controls(src: dict) -> int:
                 {"rubric_status": "confirmed"}))
     control("a confirmed rubric records its basis",
             _confirmed_rubric_without_basis)
+    control("a calibrated envelope is refused in this contract",
+            lambda s: s["envelope"][1].update(
+                {"envelope_status": "calibrated"}),
+            "future contract amendment")
+    control("an established invariant may not depend on an envelope field",
+            lambda s: s["envelope"][1]["fields"][0]["dependents"].append(
+                "FS-CLM-01"),
+            "norm-content")
+    control("envelope-relative claims must appear as dependents",
+            _drop_required_dependent, "envelope-relative")
+    control("a defect's envelope must exist",
+            lambda s: s["defects"][0].update({"envelope_id": "FS-ENV-77"}),
+            "names no envelope record")
+    control("a structure-only envelope cannot carry operational assurance",
+            _structure_operationally_assured, "calibrated")
+    control("a closure record's envelope must exist",
+            _closure_envelope_missing, "names no envelope record")
+    control("an envelope field states dependents or invariance",
+            lambda s: s["envelope"][1]["fields"][0].update(
+                {"dependents": [], "invariance": ""}),
+            "dependents or an explicit")
+    control("a threshold's lawful source is closed",
+            lambda s: s["thresholds"][0].update({"lawful_source": "vibes"}))
+    control("a criterion carries its provenance",
+            lambda s: s["functional_criteria"]["criteria"][0].pop(
+                "provenance"))
+    control("a value-bearing key is refused on an envelope field",
+            lambda s: s["envelope"][1]["fields"][0].update({"value": "ten"}))
+    control("no numeric value in a Book 1 threshold",
+            lambda s: s["thresholds"][0].update(
+                {"definition": s["thresholds"][0]["definition"] + " 42"}),
+            "numeric")
+    control("the criteria canon is the seven-member union",
+            lambda s: s["functional_criteria"]["criteria"].pop(0),
+            "seven-member")
 
     passed = 0
     for entry in controls:
@@ -2084,6 +2355,28 @@ def _proposal_unknown_event(s):
     _mk_proposal(s, review_event_ref="FS-REV-00")
 
 
+def _drop_required_dependent(s):
+    for field in s["envelope"][1]["fields"]:
+        if "FS-CLM-06" in field["dependents"]:
+            field["dependents"].remove("FS-CLM-06")
+
+
+def _structure_operationally_assured(s):
+    row = copy.deepcopy(s["defects"][0])
+    row.update({
+        "id": "FS-DFT-997", "defect_id": "FS-DFT-997",
+        "defect_disposition": "remedied",
+        "response_stage": "operationally-assured-in-envelope",
+        "envelope_id": "FS-ENV-01", "consequence_id": "control",
+        "scope_id": "control", "controls": {},
+    })
+    s["defects"].append(row)
+
+
+def _closure_envelope_missing(s):
+    _mk_closure(s)["envelope_ref"] = "FS-ENV-77"
+
+
 def _confirmed_rubric_without_basis(s):
     s["severity_rubric"]["rubric_status"] = RUBRIC_STATUS_CONFIRMED
     s["severity_rubric"].pop("confirmation_basis", None)
@@ -2349,9 +2642,50 @@ def render(src: dict, resolution: dict) -> str:
         w(f"- **{rec['id']} {rec['title']}**: {rec['assumption']} Failure "
           f"consequence: {rec['failure_consequence']}")
     w("")
-    stub = src["envelope"][0]
-    w(f"**Envelope:** `{stub['id']}` is an explicit stub "
-      f"({stub['status']}). {stub['note']}")
+    w("## The reference envelope (structure)")
+    w("")
+    for rec in src["envelope"]:
+        w(f"- **{rec['id']}** ({rec['envelope_status']}): {rec['note']}")
+    w("")
+    successor = next((r for r in src["envelope"][1:]), None)
+    if successor is not None:
+        w(f"Version `{successor['envelope_version']}`. No value enters Book 1: "
+          "every field's value status names Book 2's Gate D calibration as "
+          "owner, and this contract refuses a calibrated envelope outright — "
+          "calibration is a deliberate future contract amendment.")
+        w("")
+        w("| Field | Definition | Value status | Dependents | Invariance |")
+        w("| --- | --- | --- | --- | --- |")
+        for field in successor["fields"]:
+            deps = ", ".join(field["dependents"]) or "—"
+            w(f"| {field['id']} | {field['definition']} | "
+              f"{field['value_status']} | {deps} | {field['invariance']} |")
+        w("")
+    crit = src["functional_criteria"]
+    w("## Functional criteria (the meanings of functional)")
+    w("")
+    w(crit["drift_note"])
+    w("")
+    w("| Criterion | Definition | Provenance |")
+    w("| --- | --- | --- |")
+    for rec in crit["criteria"]:
+        w(f"| {rec['name']} | {rec['definition']} | "
+          f"{'; '.join(rec['provenance'])} |")
+    w("")
+    w("## Thresholds (meanings, not measurements)")
+    w("")
+    w("Each threshold binds a ratified sentence by needle and classifies its "
+      "lawful source; its layer follows that source, its decision owner is "
+      "separated from its measurement owner, and no numeric value appears — "
+      "values arrive with their classified lawful source, never here.")
+    w("")
+    w("| Threshold | Criterion | Domains | Lawful source | Layer | "
+      "Definition |")
+    w("| --- | --- | --- | --- | --- | --- |")
+    for rec in src.get("thresholds", []):
+        w(f"| {rec['id']} {rec['title']} | {rec['criterion_ref']} | "
+          f"{', '.join(rec['domain_refs'])} | {rec['lawful_source']} | "
+          f"{rec['layer']} | {rec['definition']} |")
     w("")
     w("## Book 2 crosswalk (routed rows only)")
     w("")

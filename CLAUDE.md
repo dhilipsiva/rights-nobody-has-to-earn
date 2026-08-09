@@ -1453,6 +1453,36 @@ author ratification. **No review has run, no reviewer is named, the closure
 record is null, and Gate A remains not passed**; the review event, the
 severity-owner designation, and the closure record remain author checkpoints.
 
+**The reference envelope is versioned in structure, enacted 2026-08-09; values,
+calibration, and every feasibility claim stay outside Book 1.** The envelope
+array now carries the permanent `FS-ENV-00` pre-envelope identity — every Book
+1 claim, defect row, and receipt stays keyed to it unmigrated, because Book 1
+claims are not envelope-bound — beside `FS-ENV-01` (`envelope-v1-structure`),
+whose fields are versioned with definitions, dependents, and
+invariance statements and whose every value status names Book 2's Gate D
+calibration as owner. **`calibrated` is refused outright in this contract**:
+calibration becomes legal only through a deliberate future contract amendment,
+and the operationally-assured stage, the remedied path, and the closure record
+all require a calibrated envelope through one shared helper, so a structure
+can route and be reviewed but never assure. The dependency closure is the
+design's thesis made mechanical: no established constitutional invariant may
+depend on an envelope field — norm content is envelope-invariant — while the
+envelope-relative claims (arrival, and live-record persistence under the
+infrastructure-failure shock) must appear as dependents with their relativity
+stated. The **functional criteria** are fixed as the seven-member union with
+provenance (adequacy; accessibility/equality; continuity; resilience;
+sustainability; resource; safety), each bound to the rulings' actual sentences
+by needle, the drift across the five ratified variants recorded, and the
+ledger's own materiality test aligned to the boundary decision's exact
+wording. **Thresholds are meanings, not measurements**: each binds a ratified
+sentence, classifies its lawful source (constitutional minimum or ceiling,
+democratic policy target, scientific safety boundary, or operational
+diagnostic — the source fixes the layer), separates its decision owner from
+its measurement owner, and carries no numeric value; values arrive with their
+classified lawful source, never here. The Gate A readiness row for the
+envelope computes met-in-form with the residue stated: calibration is a Gate D
+condition, and closure and operational assurance still require it.
+
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
 ## Files

@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-4m`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-envelope-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -26,7 +26,7 @@ A version may close only when all of the following hold for the gate's permitted
 4. every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation
 5. independent scope review leaves no proposal that has not received a public disposition
 
-**Materiality:** A proposal is material when accepting it could change a declared right, liberty, power, duty, protected private boundary, cross-domain dependency, ordinary-life account, failure or recovery path, or an adequacy, accessibility, equality, continuity, resilience, sustainability, or resource criterion.
+**Materiality:** A proposal is material when accepting it could change a declared right, liberty, power, duty, protected private boundary, cross-domain dependency, ordinary-life account, failure/recovery path, or adequacy, accessibility/equality, continuity, resilience, sustainability, safety, or resource criterion.
 
 **Boundary:** Exhaustive may describe the disposition map only for the named axes above, a named source version, a named envelope, and a named review event. This is versioned exhaustiveness for those declared axes, not a timeless completeness theorem, and disclosure alone does not cure a critical gap.
 
@@ -36,12 +36,12 @@ A version may close only when all of the following hold for the gate's permitted
 
 Per-condition status, generated from the source and echoing the closure conditions above by index; no aggregate is derived from this list, and a closure record is refused while any row computes unmet. Closing Gate A is a deliberate future amendment with its own author ratification, never a latent flip.
 
-- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: dependencies, powers, proposals, review_events, roles, scenarios, thresholds
+- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: dependencies, powers, proposals, review_events, roles, scenarios
 - **form-only** — every required projection regenerates from that source: the projections that exist regenerate — the check itself is the proof — while the role matrix, dependency map, assurance allocation, and reader ledger do not exist yet
 - **unmet** — no unresolved critical gap applicable to that gate's permitted claim remains: blocking defect rows exist: FS-DFT-16, FS-DFT-17, FS-DFT-28
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
 - **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no review event with independence true exists, and the in-repo reviewer corpus is never admissible for this condition
-- **unmet-external** (precondition) — the reference envelope: still the explicit stub; the envelope item owns its versioning
+- **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; calibration is a Gate D condition and values remain Book 2's, and closure and operational assurance still require calibration
 
 ## The five layers
 
@@ -506,7 +506,58 @@ The review machinery stands ready and empty: proposal and review-event records a
 - **FS-EXA-03 A required record or witness arrives**: Witness production, successor records, authenticated findings, and receipt entries are produced outside the model; the repository cannot detect deletion before or inside the first attested record. Failure consequence: A person never entered is not recorded as missing; no power may treat an absent entry as a finding, and help may not be conditioned on a record entry.
 - **FS-EXA-04 A reviewer or institution actually acts**: That a named reader, reviewer, or institution acts on a derived duty or alarm is assumed, never derived; a duty or an alarm is not evidence that anyone acted. Failure consequence: The breach of the duty is also markable, and what runs out is not links but anybody who has to act — stated in print.
 
-**Envelope:** `FS-ENV-00` is an explicit stub (not-yet-versioned). An ID placeholder only. The stub can route, never assure: no record citing it may carry an operationally-assured stage, an Evidenced liveness posture, or a remedied resolution. Its content belongs to the reference-envelope tracker item and is deliberately not seeded here.
+## The reference envelope (structure)
+
+- **FS-ENV-00** (stub): The permanent pre-envelope identity. Every Book 1 claim, defect row, and receipt stays keyed to it, unmigrated: Book 1 claims are not envelope-bound, because only a functional or feasibility claim binds a versioned envelope and Book 1 may carry none.
+- **FS-ENV-01** (versioned-structure): Structure only, by author-ratified choice: the fields are versioned with definitions, dependents, and invariance statements; no value enters Book 1, and every field's value status names Book 2's Gate D calibration as owner.
+
+Version `envelope-v1-structure`. No value enters Book 1: every field's value status names Book 2's Gate D calibration as owner, and this contract refuses a calibrated envelope outright — calibration is a deliberate future contract amendment.
+
+| Field | Definition | Value status | Dependents | Invariance |
+| --- | --- | --- | --- | --- |
+| population-demographics | The reference population and its demographic profile — size, age structure, distribution — as declared premises of the reference case. | declared-pending | — | Universal standing, the floor entitlements, equality, due process, and every corridor member keep their norm content under any population or demographic profile. |
+| territory-settlement-geography | Territory, settlement pattern, and geography of the reference case. | declared-pending | — | The three protected tiers, justiciable subsidiarity, portability, and the commons ceiling keep their norm content under any geography. |
+| resource-ecological-endowment | The resource and ecological endowment the reference case assumes. | declared-pending | FS-CLM-06, FS-CLM-24 | Entitlements and the scarcity ordering's polarity are invariant — an unmet portion is recorded as failure at any endowment; only delivery establishment varies with it. |
+| technology-infrastructure-baseline | The technology and infrastructure baseline, including record-system infrastructure. | declared-pending | FS-CLM-20, FS-CLM-24 | Record duties, closure rules, and the assessment firewall keep their norm content; persistence and recovery establishment varies with infrastructure. |
+| trade-external-cooperation | Trade and external-cooperation assumptions with other states and systems. | declared-pending | FS-CLM-13, FS-CLM-16 | Non-refoulement, treaty limits, the no-evasion rule, and the categorical refusals are invariant under any external posture. |
+| institutional-starting-state | The institutional starting state the reference case assumes. | declared-pending | — | The bodies' limits, separations, and anti-capture rules keep their norm content from any starting state; staffing and transition are Book 2's. |
+| time-horizon | The time horizon over which the reference case is evaluated. | declared-pending | — | The source admits no duration arithmetic; temporal contracts ride supplied evidence at any horizon. |
+| promised-service-levels | The service levels the reference case promises above the unconditional floor. | declared-pending | FS-CLM-06 | The floor's existence and unconditionality are invariant; service levels parameterize delivery, never entitlement. |
+| shock-set | The ordinary plus compound shock set: pandemic, famine, infrastructure failure, displacement, institutional capture, and conflicting jurisdictions. Book 1 states invariant and failure behaviour per member; Book 2 tests capacity and degradation. | declared-pending | FS-CLM-20 | No derogation: every corridor member is non-derogable under every shock member, and a managed departure is recorded as failure, never renamed compliance. |
+
+## Functional criteria (the meanings of functional)
+
+The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the envelope item's tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording.
+
+| Criterion | Definition | Provenance |
+| --- | --- | --- |
+| Adequacy | A floor condition counts as delivered only on independent recipient-side evidence of timely, accessible, adequate real access; a payment that cannot procure the good is not delivery. | the 2026-08-07 mandate; the envelope item's tracker bullet; the boundary decision's materiality test; the book-2 mirror; the ledger's former threshold deferral |
+| Accessibility / equality | Access is a proactive, systemic duty read against the responsible institution as a whole, with an effective alternative and public continuity route wherever a provider cannot serve. | the 2026-08-07 mandate (equality/accessibility); the envelope item's tracker bullet (equity and accessibility); the boundary decision's materiality test (accessibility/equality); the book-2 mirror (accessibility/equity); the ledger's former threshold deferral (accessibility) |
+| Continuity | Public continuity is immediate and non-delegable when a private arrangement fails, is refused, or is exited; withdrawal, dispute, inaccessibility, inadequacy, or failure activates it. | the 2026-08-07 mandate; the envelope item's tracker bullet; the boundary decision's materiality test; the book-2 mirror (continuity/reserve); the ledger's former threshold deferral |
+| Resilience | Under every shock member the design states what continues, what narrows, who may decide, who is protected first, what cannot be suspended, how review arrives, and how ordinary authority is restored — and no right, institution, election, or remedy is suspended. | the 2026-08-07 mandate; the envelope item's tracker bullet; the boundary decision's materiality test; the book-2 mirror (recovery/resilience); the ledger's former threshold deferral |
+| Sustainability | Protected ecological axes are non-substitutable and may not be collapsed into one sustainability, productivity, or social-value score; ceilings are democratic law inside an independently reviewed scientific envelope. | the 2026-08-07 mandate; the envelope item's tracker bullet; the boundary decision's materiality test; the book-2 mirror (ecological-sustainability) |
+| Resource | Genuine physical scarcity preserves each person's equal constitutional minimum wherever supply allows and records every unmet portion as failure under the forbidden priority keys; budget choice and artificial withholding are never scarcity. | the 2026-08-07 mandate; the boundary decision's materiality test; the book-2 mirror (fiscal/resource-feasibility); the ledger's former threshold deferral |
+| Safety | Force is strictly necessary, least harmful, minimum, warned where feasible, stopped on achievement, and followed by aid, with the burden of lawfulness on the public actor and the categorical refusals absolute. | the boundary decision's materiality test — the seventh member, carried so no ratified criterion is dropped |
+
+## Thresholds (meanings, not measurements)
+
+Each threshold binds a ratified sentence by needle and classifies its lawful source; its layer follows that source, its decision owner is separated from its measurement owner, and no numeric value appears — values arrive with their classified lawful source, never here.
+
+| Threshold | Criterion | Domains | Lawful source | Layer | Definition |
+| --- | --- | --- | --- | --- | --- |
+| FS-THR-01 Floor-delivery adequacy | adequacy | FS-DOM-02, FS-DOM-03, FS-DOM-04 | constitutional-minimum-or-ceiling | constitutional-invariant | A floor condition is delivered only where independent recipient-side evidence establishes timely, accessible, adequate real access. |
+| FS-THR-02 Systemic accessibility | accessibility-equality | FS-DOM-01 | constitutional-minimum-or-ceiling | constitutional-invariant | Accessibility is a proactive, systemic duty; a provider's genuine inability cannot leave the person without the floor or core access. |
+| FS-THR-03 Care continuity | continuity | FS-DOM-02 | constitutional-minimum-or-ceiling | constitutional-invariant | Public continuity is immediate and non-delegable; no family, household, association, or charity is presumed to supply the floor. |
+| FS-THR-04 Delivery continuity | continuity | FS-DOM-04 | constitutional-minimum-or-ceiling | constitutional-invariant | Delivery failure activates public continuity: the duty to provide timely, accessible, adequate real access survives every provider's failure. |
+| FS-THR-05 Emergency conduct | resilience | FS-DOM-10 | constitutional-minimum-or-ceiling | constitutional-invariant | Emergency suspends nothing: no right, institution, election, or remedy; every corridor member is non-derogable. |
+| FS-THR-06 Shock invariants | resilience | FS-DOM-10 | constitutional-minimum-or-ceiling | constitutional-invariant | For normal operation and each compound shock the design states what continues, what narrows, who may decide, who is protected first, what cannot be suspended, how review arrives, and how ordinary authority is restored. |
+| FS-THR-07 Ecological non-substitution | sustainability | FS-DOM-11 | constitutional-minimum-or-ceiling | constitutional-invariant | Protected axes may not be collapsed into one sustainability, productivity, or social-value score; compliance on one dimension excuses no breach of another. |
+| FS-THR-08 Ecological ceilings, democratic | sustainability | FS-DOM-11 | democratic-policy-target | democratic-ordinary-law-choice | Versioned ceilings and budgets are enacted by democratic law; recalibration or weakening needs fresh public evidence of equal or greater expected protection or corrected science. |
+| FS-THR-09 Ecological science boundary | sustainability | FS-DOM-11 | scientific-safety-boundary | external-assumption | The scientific body supplies the reviewed evidence boundary inside which democratic law enacts; the legislature supplies law, not scientific truth. |
+| FS-THR-10 Scarcity ordering | resource | FS-DOM-04, FS-DOM-05 | constitutional-minimum-or-ceiling | constitutional-invariant | Preserve each person's equal constitutional minimum wherever the usable supply makes that physically possible; never redefine a reduced ration as the minimum. |
+| FS-THR-11 Scarcity finding | resource | FS-DOM-05 | operational-diagnostic | book-2-operation | Genuine physical scarcity exists only after authenticated, contestable evidence establishes insufficient usable supply for a named resource and population after alternatives, reserves, substitution, coordination, and assistance are considered. |
+| FS-THR-12 Force limits | safety | FS-DOM-07 | constitutional-minimum-or-ceiling | constitutional-invariant | Force is strictly necessary, least harmful, minimum, warned where feasible, stopped on achievement, and followed by aid, with the burden of lawfulness on the public actor. |
+| FS-THR-13 Promised service levels | adequacy | FS-DOM-04 | democratic-policy-target | democratic-ordinary-law-choice | Above-floor service levels are pre-registered democratic policy targets of the reference case; their levels are chosen by law and calibrated by the operating volume, never by this ledger. |
 
 ## Book 2 crosswalk (routed rows only)
 
@@ -527,7 +578,6 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 | powers | stage-3 | `TODO.md::Maintain completed constitutional coverage rows` | contract cards decompose each domain's public powers into FS-POW records |
 | dependencies | stage-3 | `TODO.md::Model the society's functional flows` | the cross-domain dependency map lands as FS-DEP records classed guaranteed, democratically selected, operationally supplied, or externally assumed |
 | scenarios | stage-3 | `TODO.md::Build whole-society journeys` | the journeys, collisions, and stress cases land as FS-SCN records with stable IDs |
-| thresholds | stage-3 | `TODO.md::Define the reference-society envelope` | adequacy, accessibility, continuity, resilience, and resource thresholds land as FS-THR records bound to a versioned envelope |
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 | review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under a hash-committed protocol with named reviewers and passed seeded and planted-omission controls |
 
