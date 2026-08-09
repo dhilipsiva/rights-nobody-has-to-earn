@@ -814,13 +814,15 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     author-confirmed (2026-08-09) with its basis recorded on the rubric; the
     review route's falsification condition, declared ahead of build, now has
     its commitment mechanics landed: the scope-review protocol
-    (`new-book-plans/full-society-scope-review-protocol.md`, candidate —
-    author confirmation pending, its status line live-checked against the
+    (`new-book-plans/full-society-scope-review-protocol.md`, author-confirmed
+    2026-08-09 with the basis recorded on the source binding and in its own
+    confirmation record, its status line live-checked against the
     canonical source) fixes the hash-committed planted omission and seeded
     triage controls, and the generator refuses an independent review event
     without a pre-registered commitment — plant, seed, and protocol SHA-256
-    digests entered in the canonical source at commissioning, pre-images
-    author-held outside the repo, which excludes the author from the
+    digests entered in the canonical source at commissioning, only against
+    the confirmed protocol, pre-images author-held outside the repo, which
+    excludes the author from the
     severity-owner and checker roles for that event. The in-repo reviewer
     corpus is never admissible independent-review evidence;
     per-condition Gate A readiness is computed in the report, and a closure
@@ -831,7 +833,7 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     applies the rubric and an independent checker reviews the result; a
     reviewer forces a reasoned disposition, not acceptance or a veto. No
     review has run, no reviewer is named, and the closure record is null;
-    protocol confirmation, review commissioning and its commitment, the
+    review commissioning and its commitment, the
     review event, severity-owner designation, and closure
     record remain author checkpoints.
   - **Done when:** every projection regenerates from the canonical source and an

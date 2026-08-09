@@ -1440,13 +1440,16 @@ confirmed string, and a confirmed rubric without its recorded basis fails
 generation. R7's falsification condition was
 **declared ahead of build and its commitment mechanics are now landed
 (2026-08-09)**: the scope-review protocol
-(`new-book-plans/full-society-scope-review-protocol.md`, candidate — author
-confirmation pending, its status line live-checked against the reviewed
+(`new-book-plans/full-society-scope-review-protocol.md`, **author-confirmed
+2026-08-09** with the basis — the author's statement quoted verbatim and the
+question it answered — recorded on the source binding and in the protocol's
+own confirmation record, its status line live-checked against the reviewed
 source on the rubric's own two-state pattern) fixes the hash-committed
 planted omission and seeded triage controls, and the generator refuses an
 independent review event without a pre-registered commitment — plant, seed,
 and protocol SHA-256 digests entered in the canonical source at
-commissioning, pre-images author-held outside the repo, which excludes the
+commissioning, only against the confirmed protocol, pre-images author-held
+outside the repo, which excludes the
 author from the severity-owner and independent-checker roles for that event.
 Neither the declaration nor the landed mechanics makes the route available —
 it stays unbuilt until a reviewer is named and an event runs. The
@@ -1460,7 +1463,7 @@ the generator **refuses a closure record while any condition computes unmet**;
 a present record would also require a gate status this contract refuses, so
 closing Gate A is necessarily a deliberate future amendment with its own
 author ratification. **No review has run, no reviewer is named, the closure
-record is null, and Gate A remains not passed**; protocol confirmation,
+record is null, and Gate A remains not passed**;
 review commissioning and its commitment, the review event, the
 severity-owner designation, and the closure record remain author checkpoints.
 
