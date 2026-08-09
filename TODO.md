@@ -832,14 +832,17 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
     severity-rated limit joining a stable defect row. The named severity owner
     applies the rubric and an independent checker reviews the result; a
     reviewer forces a reasoned disposition, not acceptance or a veto. The
-    designation record for those two roles is schema-enforced behind its
-    absence (dd5848d) — real recorded identities, distinct people, neither
-    the pre-image custodian; a role-echo placeholder is a fabricated
-    identity the mechanical check cannot see, so the substance is reviewed.
+    severity owner and independent checker are designated (11dfe2d): Darshu
+    as severity owner, Dhanush as independent checker, in the
+    validator-checked designation record (dd5848d) — distinct people,
+    neither the pre-image custodian — after two refusals on this checkpoint
+    (role-echo placeholders, then AI agents), because a fabricated or
+    operator-run identity is invisible to the mechanical check, so the
+    substance is reviewed.
     No
     review has run, no reviewer is named, and the closure record is null;
     review commissioning and its commitment, the
-    review event, severity-owner designation, and closure
+    review event, and closure
     record remain author checkpoints.
   - **Done when:** every projection regenerates from the canonical source and an
     independent scope review can name no material omitted domain, role,

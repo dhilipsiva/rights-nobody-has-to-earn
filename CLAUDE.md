@@ -1451,11 +1451,13 @@ and protocol SHA-256 digests entered in the canonical source at
 commissioning, only against the confirmed protocol, pre-images author-held
 outside the repo, which excludes the
 author from the severity-owner and independent-checker roles for that event.
-The designation record for those two roles is likewise schema-enforced behind
-its absence — real recorded identities, distinct people, neither the
-custodian; a role-echo placeholder is a fabricated identity the mechanical
-check cannot see, so the substance stays reviewed and the designation was
-refused once on exactly that ground.
+The severity owner and independent checker are designated (2026-08-09):
+Darshu as severity owner, Dhanush as independent checker, in the
+validator-checked designation record — distinct people, neither the
+custodian. The checkpoint was refused twice first, for role-echo
+placeholders and for AI agents, because a fabricated or operator-run
+identity is invisible to the mechanical check, so the substance of a
+designation stays reviewed.
 Neither the declaration nor the landed mechanics makes the route available —
 it stays unbuilt until a reviewer is named and an event runs. The
 admissibility bar is doctrine and computation
@@ -1469,8 +1471,8 @@ a present record would also require a gate status this contract refuses, so
 closing Gate A is necessarily a deliberate future amendment with its own
 author ratification. **No review has run, no reviewer is named, the closure
 record is null, and Gate A remains not passed**;
-review commissioning and its commitment, the review event, the
-severity-owner designation, and the closure record remain author checkpoints.
+review commissioning and its commitment, the review event,
+and the closure record remain author checkpoints.
 
 **The reference envelope is versioned in structure, enacted 2026-08-09; values,
 calibration, and every feasibility claim stay outside Book 1.** The envelope
