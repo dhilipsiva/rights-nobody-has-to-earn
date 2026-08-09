@@ -1085,6 +1085,82 @@ introducing a claim that appears nowhere else, and the historical cases as a
 substitute for derived ordinary life. The controlling record is
 `new-book-plans/book-1-narrative-register-decision.md`.
 
+**The reader-balance evidence protocol and its threshold timing are
+author-ratified (2026-08-09): pre-registered pilot-and-fresh-holdout + the pass
+rule's form now, its values after the pilot + a specified-but-unbuilt reader
+route.** Summarise it as three statements, never one, because the shorter
+version is an overclaim: the method, timing, disclosure, and ethics terms and
+the pass rule's **form** are ratified; the rule's **values and severity
+taxonomy** remain author-ruling-pending, reserved for a second ruling; and Gate
+C's holdout condition is therefore not yet satisfiable, with every reader
+comprehension, balance, and lived-effect claim keeping
+Unestablished/route-unbuilt. Do not write "the reader-balance protocol is
+ratified" bare, and note the roster's shorthand: this is "the reader-threshold
+decision" that deliberately does not settle the threshold.
+
+The sequencing rule construes the sessions item's own sentence:
+pre-registration binds **each round's instrument before that round**. The pilot
+runs under a pre-registered pilot instrument carrying at most an expressly
+provisional draft rule and draft severity taxonomy; the reserved ruling lands
+**after the pilot and before the fresh holdout's pre-registration freeze**,
+ratifying taxonomy and values together on pilot evidence; a holdout run under
+an unratified, retroactive, or post-hoc rule is **void** and cannot feed Gate
+C; and the route must be **available** — implemented evidence contract, named
+reviewer, in-repo gate, control watched failing — before the holdout runs, so
+its evidence arrives under a standing admissibility contract. The assurance
+portfolio's sentence that the pass rule "is itself a separate open ruling to be
+made after a pilot" **remains true after this ruling** and must not be edited.
+
+The form is a severity-weighted misconception rule defined non-numerically: no
+aggregate may hide a core misconception — a core finding cannot be offset or
+averaged away. Whether a single or repeated core finding fails is deliberately
+reserved with the values, and the record contains **no threshold number, weight,
+sample size, or example value**, because an illustrative number would anchor
+the reserved ruling. The identification targets — ordinary constructive life,
+democratic choice, private freedom, successful provision, repair, and the
+prisoner as a stress test — are the **minimum pass-relevant set, not a closed
+list**; the six unaided prompts and Gate C's own identification and distinction
+conditions remain independent gate conditions the protocol does not discharge.
+The deficit stays a named, disclosed input, and the disclosed-limits minimum is
+fixed: the unimplemented-families sentence, the tested snapshot's exact version
+identity, usability-not-population-statistics, the sampling and method limits
+bounding Gate C's permitted claim, and that no reader result enters the engine
+or proves another route's domain.
+
+The reader route's availability contract is **specified, not created** —
+specifying is naming, and naming a route does not build it. The evidence
+contract fixes session-record contents (pre-registration identity, snapshot
+version, instrument as run, coder identity, deviation log, consent artifacts
+under data minimisation). Admissibility is binding, not guidance: an ethics
+breach — consent, withdrawal, data protection, accessible participation, fair
+compensation, non-retaliation, trauma safeguards, independent review where
+appropriate — makes a session inadmissible regardless of results; holdout
+participants must be fresh (no exposure to drafts, previews, the pilot, or the
+reviews corpus; pilot participants excluded); and the in-repo reviewer corpus
+is **never admissible reader-study evidence**, remaining Reasoned design input
+in the exempt elements. The falsification condition is declared: the
+instrument must fail against a seeded unbalanced or planted-misconception
+control, watched failing during the pilot's revise step. No reviewer is named —
+naming one would begin implementation. The pilot runs against a declared,
+versioned snapshot only after the Reader's Map and navigation artifacts exist,
+and is evidence about the instrument and that snapshot only; the holdout runs
+against the frozen private release candidate exactly as the edition contract
+provides, cited not restated. This ruling declares **the reader-balance half
+only** of Gate C's compound "declared accessibility and reader-balance
+protocol"; the accessibility half stays owned by the accessible-navigation
+work, both halves are required, and neither substitutes for the other.
+
+Refused by name: an aggregate score deciding a pass; word, chapter,
+demographic, or sentiment quotas and any fixed prisoner quota; population
+statistics from usability evidence; reader evidence proving another route's
+domain; any reader result entering the engine; declaring the route built or
+available; predicting any session's outcome; and threshold values or
+illustrative numbers before pilot evidence exists. The ruling is **ratified but
+unimplemented**: it creates no instrument, session, ledger, generator, verifier
+section, predicate, rule, pin, chapter, posture, or public claim. The
+controlling record is
+`new-book-plans/book-1-reader-evidence-protocol-decision.md`.
+
 The existing guardrails survive the expansion: no floor may depend on work,
 virtue, wealth, citizenship, documentation, score, compliance, or approval;
 recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
@@ -1306,10 +1382,12 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   boundary. The substantive-equality, bounded-plural-economy, family/
   dependency/reproduction/collective-plurality, ecological/future-condition/
   commons/non-human-animal, and public-safety/defence/emergency/external-power
-  baselines are settled, as are the assurance portfolio and the narrative
-  register. Phase 1 retains one open author
-  ruling, on reader evidence; it blocks only its dependent
-  implementation, while neutral inventory and decision briefs may proceed. Phase
+  baselines are settled, as are the assurance portfolio, the narrative
+  register, and the reader-evidence protocol with its threshold timing. Phase 1
+  retains one reserved, sequenced author ruling — the release threshold, after
+  the pilot and before the holdout's pre-registration freeze — plus the
+  author-drafted passage obligation; it blocks nothing now, and neutral
+  inventory and decision briefs may proceed. Phase
   2 records the completed finite collective-decision audit, holds two bounded,
   non-blocking engine repair prompts, and carries read-only ecology/animal and
   protective-power finding-boundary audits before formalisation. The expansion backlog uses
