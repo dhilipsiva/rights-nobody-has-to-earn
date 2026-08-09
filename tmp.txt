@@ -1,3 +1,0 @@
-(scratch channel — empty. The opening-note draft that lived here landed as
-book-1/00-opening-note.md on 2026-08-03, session-drafted and author-adopted;
-the record of how is in CLAUDE.md's voice-boundary entry.)
