@@ -1421,9 +1421,32 @@ coverage-map needle), and the report carries a routed-rows-only Book 2
 crosswalk with no operational fields. The grandfathered Part V passage has no
 defect row, per the register decision's own words; its dated non-conformance
 is a witness on the deficit rows, which the author's pending repair can now
-cite. Roles, powers, dependencies, scenarios, and thresholds stay deferred
-with owners until their sibling items land, and a hand-maintained competitor
-to any projection remains refused.
+cite. Powers, dependencies, and scenarios stay deferred with owners until
+their sibling items land, and a hand-maintained competitor to any projection
+remains refused.
+
+**The roles, life-course, scale, and power-position matrix is landed
+(2026-08-09, FS-ROL).** One record per role, grouped by kind and layer-pinned
+to universal standing — a role is never a floor-changing status, and one
+person occupying many roles buys no higher floor. Three closures are
+mechanical where the tracker's done-when asked for review: every domain
+cited by at least one role, every named scale exercised, and every required
+body carrying both an affected and a checking role position, the last
+grounded in the protective-power ruling's plural initiation routes.
+Duty-bearing roles (supporter, parentage, concentrated private function,
+animal custodian, collective internal governance) carry a power_held object
+whose affected counter-roles and checkers are both mandatory. Omitted
+candidates and combinations are recorded with risk-based reasons — a closed
+classification decision on the residual-coverage-exclusions precedent, with
+a staleness check so an omission contradicting a citation fails generation.
+Formal anchors keep the honesty split (derived predicate, asserted predicate
+with its replace-card path, ratified-but-unimplemented doctrine), and a
+constitution-predicate anchor must cite a `.nibli` needle, never only prose.
+The Future Conditions Guardian and the Animal Protection Advocate joined the
+required bodies (author-approved) because the coverage-map roster predates
+the ecological ruling. Pairwise sufficiency stays a review question for the
+independent scope review; the FS-POW decomposition stays deferred with its
+own owner; no role record creates a predicate, rule, remedy, or claim.
 
 **Stage 4's machinery is enacted (2026-08-09); the review and the closure
 remain author checkpoints.** Proposal and review-event schemas stand validated

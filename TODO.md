@@ -779,27 +779,11 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-Ordered by dependency: the three population items feed the ledger's
-deferred record types, the closure audit consumes every population, the
-envelope item is a Book 2 wait-state, and the ledger item integrates them
-and closes Gate A last.
-
-- [ ] **Build the roles, life-course, scale, and power-position matrix.**
-  - Cover birth/first contact, childhood, adulthood, ageing, disability, illness,
-    dependency, caregiving, death and succession without making capacity or
-    documentation a condition of standing.
-  - Cover people as family/household members, friends, learners, patients,
-    caregivers, workers/non-workers, union members, owners/tenants, consumers,
-    creators, worshippers/non-believers, association members, voters/candidates,
-    public servants, newcomers/migrants, claimants, accused people, prisoners and
-    released people. One person may occupy many roles; none buys a higher floor.
-  - Test individual, household/association, local, regional, national,
-    cross-jurisdictional and intergenerational scale. Avoid demographic decoration
-    and the impossible full Cartesian product; justify pairwise and
-    high-consequence edge coverage.
-  - **Done when:** each material domain has reviewed role/scale applicability,
-    each public or concentrated-private power has both affected and checking
-    positions, and omitted combinations carry an explicit risk-based reason.
+Ordered by dependency: the roles matrix has landed as FS-ROL records
+(579f8b1); the two remaining population items feed the ledger's deferred
+record types, the closure audit consumes every population, the envelope
+item is a Book 2 wait-state, and the ledger item integrates them and
+closes Gate A last.
 
 - [ ] **Model the society's functional flows and cross-domain dependencies.**
   - Map flows of authority, information, care, labour, resources, money, claims,
@@ -894,19 +878,21 @@ and closes Gate A last.
     `CLAUDE.md`; schema detail lives in the generator and the controlling
     decision records, not here. What remains is exactly what the computed
     Gate A readiness list still refuses, in dependency order below.
-  - **Sibling populations (closure condition one).** Role, dependency, and
-    scenario records land through the three foundation items above, and
-    FS-POW contract cards through the phase-2 coverage-rows item; each
+  - **Sibling populations (closure condition one).** Role records are landed
+    (FS-ROL, 579f8b1, roles deferral removed); dependency and scenario
+    records land through the two foundation items above, and FS-POW
+    contract cards through the phase-2 coverage-rows item; each remaining
     landing removes its deferral record from the source. Standing
     maintenance rides along: the two live-read closures (enum mapping,
     residual-coverage citation), receipts, and generated resolution must stay
     green as sibling sources change, and `verify.sh` enforces that.
-  - **Projections (condition two).** The role matrix and dependency map
-    arrive with their populations, the assurance allocation with the closure
-    audit above, and the reader ledger with the reader-sessions item. Once
-    all four exist and regenerate, replace the generator's hardcoded
-    `form-only` readiness status with a computed one — a deliberate code
-    change reserved for that moment.
+  - **Projections (condition two).** The role matrix landed with its
+    population; the dependency map arrives with its population, the
+    assurance allocation with the closure audit above, and the reader
+    ledger with the reader-sessions item. Once all four exist and
+    regenerate, replace the generator's hardcoded `form-only` readiness
+    status with a computed one — a deliberate code change reserved for
+    that moment.
   - **Blocking defect rows (condition three).** FS-DFT-16 and FS-DFT-17 close
     when the accessibility-neutral delivery and receipt rule families land,
     with the pinned-case rebalance sequenced after; FS-DFT-28 additionally
