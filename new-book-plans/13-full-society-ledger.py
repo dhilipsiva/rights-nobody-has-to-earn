@@ -26,6 +26,14 @@ derived, pins the three ratified lifecycle paths without flattening them,
 requires a predeclared alternate route or its recorded absence, gives every
 strongly connected region a declared classified loop witness, and records
 the refused-flow walls; an edge is routing, never delivery.
+Stage 3's third population, the whole-society scenario catalogue (FS-SCN),
+records journeys, stress cases, the named collision axes, and the named
+compound shocks as reviewed inventory: every domain reached, every critical
+dependency edge stressed or its omission recorded, each record carrying an
+owned ordinary, failure, and recovery route and the protected sphere tested
+without a state-defined successful outcome; a route is routing, never
+delivery, and no scenario claims execution — constitutional cases execute
+only after the relevant author rulings and contract cards land.
 Stage 4's machinery makes the future independent scope review admissible and
 the Gate A closure refusable-until-green: proposal and review-event schemas
 stand validated and empty, the severity rubric and the scope-review protocol
@@ -218,6 +226,50 @@ LIFECYCLE_PATH_REFS = {
     "record": ("new-book-plans/book-1-constitutional-coverage-map.md::"
                "record → authorised basis → limited visibility → challenge"),
 }
+
+# The scenario catalogue's closed vocabularies. A scenario is reviewed
+# inventory — the assurance portfolio's kind I: citable as a reviewed threat
+# model, never as proof or a counterexample harness. A record routes an owned
+# ordinary, failure, and recovery path and never claims execution:
+# constitutional cases execute only after the relevant author rulings and
+# contract cards land, and the closure audit consumes this population. The
+# collision axes and the compound shocks are the tracker mandate's named test
+# targets — closed universes on the roles-scales precedent; a new axis or
+# shock is a deliberate enum-and-meanings amendment, never a free string. A
+# scenario citing the protected private/civic domain classifies which
+# ratified protected-sphere tests it exercises; no ordinary route may pin
+# love, belief, friendship, art, or fulfilment as a state-defined outcome —
+# that refusal is reviewed prose discipline, stated in the render, not a
+# pattern guard.
+SCENARIO_KINDS = ["journey", "stress", "collision", "compound-shock"]
+COLLISION_AXES = [
+    "property-vs-floor",
+    "speech-association-vs-private-harm",
+    "majority-vs-minority",
+    "parent-guardian-power-vs-child-standing",
+    "employer-landlord-platform-power-vs-meaningful-exit",
+    "emergency-vs-liberty",
+    "present-allocation-vs-future-commons",
+    "locality-vs-portability",
+    "privacy-vs-public-accountability",
+    "physical-scarcity-vs-equal-floor",
+]
+SHOCK_KINDS = [
+    "pandemic",
+    "famine",
+    "infrastructure-failure",
+    "displacement",
+    "institutional-capture",
+    "conflicting-jurisdictions",
+]
+PROTECTED_SPHERE_FORMS = [
+    "freedom-without-permission",
+    "non-recording-non-compulsion",
+    "evidenced-harm-threshold",
+    "recourse-against-interference",
+]
+SCENARIO_STATUS = "reviewed-inventory"
+PROTECTED_SPHERE_DOMAIN = "FS-DOM-12"
 
 # Stage marker: the reviewed source's status and the report's stage label move in
 # lockstep with the content stages; bump both here and in the JSON together.
@@ -555,6 +607,10 @@ def validate_meanings(src: dict):
         "dependency_class_meanings": DEPENDENCY_CLASSES,
         "loop_kind_meanings": LOOP_KINDS,
         "lifecycle_path_meanings": LIFECYCLE_PATHS,
+        "scenario_kind_meanings": SCENARIO_KINDS,
+        "collision_axis_meanings": COLLISION_AXES,
+        "shock_kind_meanings": SHOCK_KINDS,
+        "protected_sphere_form_meanings": PROTECTED_SPHERE_FORMS,
     }
     for key, values in expected.items():
         block = src.get(key)
@@ -1408,6 +1464,286 @@ def validate_dependencies(src: dict, ids: dict):
             )
 
 
+def validate_scenarios(src: dict, ids: dict):
+    """The whole-society journeys, collisions, and stress-case catalogue.
+
+    A scenario is reviewed inventory — kind I in the assurance portfolio:
+    citable as a reviewed threat model, never as proof or a counterexample
+    harness. Each record routes an owned ordinary, failure, and recovery
+    path; a route is routing, never delivery, and no record claims
+    execution — constitutional cases execute only after the relevant
+    author rulings and contract cards land, and the closure audit consumes
+    this population. Mechanical closures: no domain still defers scenario
+    applicability, every domain is reached, every kind, named collision
+    axis, and named compound shock is exercised, every ratified
+    protected-sphere test is exercised against the protected domain, and
+    every critical dependency edge is stressed or its omission recorded.
+    Whether the routes would hold is NOT decided here — capacity and
+    degradation are Book 2's tests, and sufficiency stays a question for
+    the independent scope review."""
+    scenarios = src.get("scenarios", [])
+    if not scenarios:
+        if src.get("scenario_omissions"):
+            raise LedgerError(
+                "scenario_omissions may not exist while scenarios is "
+                "deferred — an omission is a decision about a populated "
+                "catalogue"
+            )
+        return
+    domain_ids = {r for r, a in ids.items() if a == "domains"}
+    dep_ids = {r for r, a in ids.items() if a == "dependencies"}
+    if PROTECTED_SPHERE_DOMAIN not in domain_ids:
+        raise LedgerError(
+            "the protected private/civic domain must exist before "
+            "scenarios can classify against it"
+        )
+    witness_pool = None
+    cited_domains, cited_deps = set(), set()
+    kinds, axes, shocks, forms = set(), set(), set(), set()
+    for i, rec in enumerate(scenarios):
+        ctx = f"scenarios[{i}] ({rec.get('id', '?')})"
+        exact_keys(
+            rec,
+            COMMON_KEYS + ["scenario_kind", "domain_refs",
+                           "dependency_refs", "steward_ref",
+                           "ordinary_route", "failure_route",
+                           "recovery_route", "source_refs"],
+            ctx,
+            optional=["collision_axis", "shock_kind",
+                      "protected_sphere_forms", "bounded_witness_refs"],
+        )
+        validate_common_record_fields(rec, ctx)
+        if rec["status"] != SCENARIO_STATUS:
+            raise LedgerError(
+                f"{ctx}: a scenario's status is the exact literal "
+                f"{SCENARIO_STATUS!r} — the catalogue is reviewed "
+                "inventory and no row may claim execution or assurance"
+            )
+        if rec["layer"] != "constitutional-invariant":
+            raise LedgerError(
+                f"{ctx}: a scenario states Book 1 invariant and failure "
+                "behaviour — capacity and degradation are Book 2's tests; "
+                "its layer is constitutional-invariant, and layer-specific "
+                "rule content stays on domains, claims, and edges"
+            )
+        if rec["scenario_kind"] not in SCENARIO_KINDS:
+            raise LedgerError(
+                f"{ctx}: unknown scenario_kind {rec['scenario_kind']!r}"
+            )
+        kinds.add(rec["scenario_kind"])
+        refs = rec["domain_refs"]
+        if not isinstance(refs, list) or not refs \
+                or len(set(refs)) != len(refs):
+            raise LedgerError(
+                f"{ctx}: domain_refs must be a non-empty duplicate-free "
+                "list"
+            )
+        for ref in refs:
+            if ref not in domain_ids:
+                raise LedgerError(
+                    f"{ctx}: domain_refs must name domains, got {ref!r}"
+                )
+        cited_domains |= set(refs)
+        drefs = rec["dependency_refs"]
+        if not isinstance(drefs, list) or len(set(drefs)) != len(drefs):
+            raise LedgerError(
+                f"{ctx}: dependency_refs must be a duplicate-free list"
+            )
+        for ref in drefs:
+            if ref not in dep_ids:
+                raise LedgerError(
+                    f"{ctx}: dependency_refs must name dependency edges, "
+                    f"got {ref!r}"
+                )
+        cited_deps |= set(drefs)
+        if (rec["steward_ref"] not in ids
+                or ids[rec["steward_ref"]] != "bodies"):
+            raise LedgerError(
+                f"{ctx}: steward_ref must name a required body — the "
+                "institution answerable for the routes; got "
+                f"{rec['steward_ref']!r}"
+            )
+        if rec["scenario_kind"] == "collision":
+            if "collision_axis" not in rec:
+                raise LedgerError(
+                    f"{ctx}: a collision scenario names its axis — the "
+                    "named axes are the closed test targets"
+                )
+            if rec["collision_axis"] not in COLLISION_AXES:
+                raise LedgerError(
+                    f"{ctx}: unknown collision_axis "
+                    f"{rec['collision_axis']!r}"
+                )
+            axes.add(rec["collision_axis"])
+        elif "collision_axis" in rec:
+            raise LedgerError(
+                f"{ctx}: a collision axis belongs only on a collision "
+                "scenario"
+            )
+        if rec["scenario_kind"] == "compound-shock":
+            if "shock_kind" not in rec:
+                raise LedgerError(
+                    f"{ctx}: a compound-shock scenario names its shock — "
+                    "the named shocks are the closed test targets"
+                )
+            if rec["shock_kind"] not in SHOCK_KINDS:
+                raise LedgerError(
+                    f"{ctx}: unknown shock_kind {rec['shock_kind']!r}"
+                )
+            shocks.add(rec["shock_kind"])
+        elif "shock_kind" in rec:
+            raise LedgerError(
+                f"{ctx}: a shock kind belongs only on a compound-shock "
+                "scenario"
+            )
+        if PROTECTED_SPHERE_DOMAIN in refs:
+            psf = rec.get("protected_sphere_forms")
+            if psf is None:
+                raise LedgerError(
+                    f"{ctx}: a scenario citing {PROTECTED_SPHERE_DOMAIN} "
+                    "classifies which protected-sphere tests it exercises"
+                )
+            if (not isinstance(psf, list) or not psf
+                    or len(set(psf)) != len(psf)
+                    or any(f not in PROTECTED_SPHERE_FORMS for f in psf)):
+                raise LedgerError(
+                    f"{ctx}: protected_sphere_forms must be a non-empty "
+                    f"duplicate-free subset of {PROTECTED_SPHERE_FORMS}"
+                )
+            forms |= set(psf)
+        elif "protected_sphere_forms" in rec:
+            raise LedgerError(
+                f"{ctx}: protected_sphere_forms belongs only on a "
+                f"scenario citing {PROTECTED_SPHERE_DOMAIN}"
+            )
+        for key in ("ordinary_route", "failure_route", "recovery_route"):
+            require_str(rec, key, ctx)
+        bw = rec.get("bounded_witness_refs")
+        if bw is not None:
+            if not isinstance(bw, list) or not bw \
+                    or len(set(bw)) != len(bw):
+                raise LedgerError(
+                    f"{ctx}: bounded_witness_refs, if present, must be a "
+                    "non-empty duplicate-free list"
+                )
+            if witness_pool is None:
+                witness_pool = collect_bounded_witnesses()
+            for tok in bw:
+                if tok not in witness_pool:
+                    raise LedgerError(
+                        f"{ctx}: {tok!r} names no case in the live "
+                        "sibling witness pool — a witness is a real "
+                        "sibling row, never a fabricated execution"
+                    )
+        srcs = rec["source_refs"]
+        if not isinstance(srcs, list) or not srcs:
+            raise LedgerError(f"{ctx}: source_refs must be non-empty")
+        for j, ref in enumerate(srcs):
+            rel = ref.split("::", 1)[0] if isinstance(ref, str) else ""
+            if rel.startswith(("book-1/", "book-2/")) \
+                    or rel in ("book.md", "manifesto.md"):
+                raise LedgerError(
+                    f"{ctx}.source_refs[{j}]: a book-prose passage may "
+                    "never support a scenario row — cite the ruling, "
+                    "coverage-map, or planning source "
+                    "(narrative-register rule)"
+                )
+            validate_reference(ref, f"{ctx}.source_refs[{j}]")
+    om = src.get("scenario_omissions")
+    if not isinstance(om, list) or not om:
+        raise LedgerError(
+            "scenario_omissions must be a non-empty list once scenarios "
+            "populate — a bounded catalogue records what it classifies out"
+        )
+    omitted_deps, seen = set(), set()
+    for i, entry in enumerate(om):
+        ctx = f"scenario_omissions[{i}]"
+        axis_keys = [k for k in ("omitted_scenario",
+                                 "omitted_dependency_ref") if k in entry]
+        if len(axis_keys) != 1:
+            raise LedgerError(
+                f"{ctx}: exactly one of omitted_scenario / "
+                "omitted_dependency_ref"
+            )
+        exact_keys(entry, [axis_keys[0], "risk_reason", "source_ref"], ctx)
+        if axis_keys[0] == "omitted_dependency_ref":
+            ref = entry["omitted_dependency_ref"]
+            if ref not in dep_ids:
+                raise LedgerError(f"{ctx}: unknown dependency {ref!r}")
+            if ref in cited_deps:
+                raise LedgerError(
+                    f"{ctx}: stale omission — a scenario already "
+                    f"stresses {ref}"
+                )
+            omitted_deps.add(ref)
+            key = ("dependency", ref)
+        else:
+            require_str(entry, "omitted_scenario", ctx)
+            key = ("scenario", entry["omitted_scenario"])
+        if key in seen:
+            raise LedgerError(f"{ctx}: duplicate omission {key}")
+        seen.add(key)
+        require_str(entry, "risk_reason", ctx)
+        validate_reference(entry["source_ref"], f"{ctx}.source_ref")
+    # closures — ORDER IS LOAD-BEARING for the negative controls:
+    # applicability coupling -> domain -> kind -> collision axis ->
+    # shock kind -> protected sphere -> critical dependency
+    still_deferred = sorted(
+        d["id"] for d in src.get("domains", [])
+        if "deferred_ref" in d["scenario_applicability"]
+    )
+    if still_deferred:
+        raise LedgerError(
+            "scenario-applicability coupling: a populated catalogue "
+            "leaves no domain deferring — still defers scenario "
+            f"applicability: {still_deferred}"
+        )
+    missing_domains = sorted(domain_ids - cited_domains)
+    if missing_domains:
+        raise LedgerError(
+            "scenario/domain closure: every domain needs at least one "
+            f"whole-society scenario; no scenario reaches: "
+            f"{missing_domains}"
+        )
+    missing_kinds = sorted(set(SCENARIO_KINDS) - kinds)
+    if missing_kinds:
+        raise LedgerError(
+            "scenario-kind closure: every scenario kind must be "
+            f"exercised by at least one record; missing kinds: "
+            f"{missing_kinds}"
+        )
+    missing_axes = sorted(set(COLLISION_AXES) - axes)
+    if missing_axes:
+        raise LedgerError(
+            "collision-axis closure: every named collision axis must be "
+            f"tested by at least one collision scenario; untested: "
+            f"{missing_axes}"
+        )
+    missing_shocks = sorted(set(SHOCK_KINDS) - shocks)
+    if missing_shocks:
+        raise LedgerError(
+            "shock-kind closure: every named compound shock must be "
+            f"carried by at least one compound-shock scenario; uncarried: "
+            f"{missing_shocks}"
+        )
+    missing_forms = sorted(set(PROTECTED_SPHERE_FORMS) - forms)
+    if missing_forms:
+        raise LedgerError(
+            "protected-sphere closure: each ratified protected-sphere "
+            "test needs a scenario citing the protected domain; "
+            f"unexercised forms: {missing_forms}"
+        )
+    crit = {d["id"] for d in src.get("dependencies", [])
+            if d["severity"] == "critical"}
+    uncovered = sorted(crit - cited_deps - omitted_deps)
+    if uncovered:
+        raise LedgerError(
+            "critical-dependency closure: every critical dependency edge "
+            "is stressed by a scenario or its omission is recorded; "
+            f"unstressed: {uncovered}"
+        )
+
+
 def validate_routes(src: dict):
     routes = src.get("routes", [])
     by_id = {}
@@ -1947,6 +2283,27 @@ def collect_sibling_residuals():
     pool |= {f"assertion-surface-contracts#premises.{k}"
              for k, v in asf["premises"].items()
              if "deliberately_refused" in json.dumps(v.get("risk_dispositions"))}
+    return pool
+
+
+def collect_bounded_witnesses():
+    """Live-read the sibling case inventories with stable row ids. A witness
+    token records that a bounded sibling case already exercises a slice of a
+    scenario's subject matter; it establishes only what that artifact's own
+    posture states — never that this scenario executed — and never upgrades
+    this catalogue's inventory kind. Live-read means a renamed sibling case
+    fails --check, the house drift rule."""
+    pool = set()
+    rt = load_json(pathlib.Path("new-book-plans/record-integrity-red-team.json"))
+    pool |= {f"record-integrity-red-team#{s['id']}" for s in rt["scenarios"]}
+    ta = load_json(pathlib.Path("new-book-plans/temporal-assurance-case.json"))
+    pool |= {f"temporal-assurance-case#{c['id']}" for c in ta["cases"]}
+    am = load_json(pathlib.Path("new-book-plans/amendment-semantics-audit.json"))
+    pool |= {f"amendment-semantics-audit#{c['id']}" for c in am["cases"]}
+    pe = load_json(pathlib.Path(
+        "new-book-plans/placement-exhaustiveness-audit.json"))
+    pool |= {f"placement-exhaustiveness-audit#{m['id']}"
+             for m in pe["mutations"]}
     return pool
 
 
@@ -2694,6 +3051,7 @@ def validate(src: dict):
     validate_bodies(src)
     validate_roles(src, ids)
     validate_dependencies(src, ids)
+    validate_scenarios(src, ids)
     validate_external_assumptions(src)
     validate_envelope(src, ids)
     validate_functional_criteria(src)
@@ -3044,6 +3402,65 @@ def negative_controls(src: dict) -> int:
             "exactly one of route / no_alternate_reason")
     control("an edge may not feed itself",
             _dep_self_edge, "may not terminate on its own source")
+    control("a populated scenarios sheds its deferral",
+            lambda s: s["deferred_populations"].append(
+                {"record_type": "scenarios", "owner_ref": _CONTROL_NEEDLE,
+                 "closure_condition": "control", "stage": "stage-3"}),
+            "still carries a deferral record")
+    control("omissions may not outlive a deferred catalogue",
+            lambda s: s.update({"scenarios": []}),
+            "while scenarios is deferred")
+    control("a populated catalogue flips every domain's applicability",
+            lambda s: s["domains"][0].update({"scenario_applicability": {
+                "deferred_ref": _CONTROL_NEEDLE}}),
+            "still defers scenario applicability")
+    control("each domain keeps a whole-society scenario",
+            _scn_unreach_domain, "no scenario reaches")
+    control("every scenario kind is exercised",
+            _scn_unexercise_kind, "missing kinds")
+    control("every collision axis is tested",
+            _scn_untest_axis, "untested")
+    control("every named shock is carried",
+            _scn_uncarry_shock, "uncarried")
+    control("every protected-sphere test is exercised",
+            _scn_unexercise_form, "unexercised forms")
+    control("every critical edge is stressed or recorded omitted",
+            _scn_unstress_edge, "unstressed")
+    control("a collision axis belongs only on a collision",
+            _scn_axis_on_noncollision,
+            "belongs only on a collision scenario")
+    control("a collision scenario names its axis",
+            _scn_collision_without_axis, "names its axis")
+    control("a shock kind is closed",
+            _scn_bad_shock_kind, "unknown shock_kind")
+    control("a scenario's dependency ref must resolve",
+            lambda s: s["scenarios"][0].update(
+                {"dependency_refs": [s["claims"][0]["id"]]}),
+            "dependency_refs must name dependency edges")
+    control("a scenario's layer states Book 1 behaviour",
+            lambda s: s["scenarios"][0].update({"layer": "book-2-operation"}),
+            "capacity and degradation are Book 2's tests")
+    control("a scenario's status is the exact inventory literal",
+            lambda s: s["scenarios"][0].update({"status": "reviewed-routing"}),
+            "reviewed-inventory")
+    control("scenario meanings cannot drift",
+            lambda s: s["collision_axis_meanings"].pop("property-vs-floor"),
+            "must define exactly")
+    control("a stale scenario omission is refused",
+            _scn_stale_omission, "stale omission")
+    control("a bounded witness is a real sibling case",
+            lambda s: s["scenarios"][0].update(
+                {"bounded_witness_refs": ["record-integrity-red-team#RS-99"]}),
+            "names no case in the live sibling witness pool")
+    control("a duplicate scenario id is one scenario",
+            _scn_duplicate_id, "duplicate id")
+    control("an omission needs a risk-based reason",
+            lambda s: s["scenario_omissions"][0].update({"risk_reason": ""}),
+            "must be a non-empty string")
+    control("a book passage may never support a scenario",
+            lambda s: s["scenarios"][0].update(
+                {"source_refs": ["book-1/rights-floor.md::the floor"]}),
+            "narrative-register rule")
 
     passed = 0
     for entry in controls:
@@ -3655,6 +4072,129 @@ def _uncover_residual(s):
     raise LedgerError("control setup: no singly-cited residual token")
 
 
+def _scn_unreach_domain(s):
+    # Strip FS-DOM-03 from every scenario, back-filling FS-DOM-01 when a
+    # list would empty so only the domain closure — not the non-empty
+    # rule — decides the verdict. FS-DOM-03 is not the protected domain,
+    # so no protected_sphere_forms XOR side effect fires.
+    touched = False
+    for rec in s["scenarios"]:
+        if "FS-DOM-03" in rec["domain_refs"]:
+            rec["domain_refs"] = [r for r in rec["domain_refs"]
+                                  if r != "FS-DOM-03"]
+            touched = True
+            if not rec["domain_refs"]:
+                rec["domain_refs"] = ["FS-DOM-01"]
+    if not touched:
+        raise LedgerError("control setup: no scenario cites FS-DOM-03")
+
+
+def _scn_unexercise_kind(s):
+    # Relabel every stress record to journey — neither kind carries an
+    # axis or shock, so no XOR side effect fires.
+    touched = False
+    for rec in s["scenarios"]:
+        if rec["scenario_kind"] == "stress":
+            rec["scenario_kind"] = "journey"
+            touched = True
+    if not touched:
+        raise LedgerError("control setup: no stress scenario")
+
+
+def _scn_untest_axis(s):
+    touched = False
+    for rec in s["scenarios"]:
+        if rec.get("collision_axis") == COLLISION_AXES[0]:
+            rec["collision_axis"] = COLLISION_AXES[1]
+            touched = True
+    if not touched:
+        raise LedgerError(
+            f"control setup: no collision carries {COLLISION_AXES[0]}"
+        )
+
+
+def _scn_uncarry_shock(s):
+    touched = False
+    for rec in s["scenarios"]:
+        if rec.get("shock_kind") == SHOCK_KINDS[0]:
+            rec["shock_kind"] = SHOCK_KINDS[1]
+            touched = True
+    if not touched:
+        raise LedgerError(
+            f"control setup: no compound shock carries {SHOCK_KINDS[0]}"
+        )
+
+
+def _scn_unexercise_form(s):
+    # Remove one protected-sphere form from every carrier, substituting
+    # another when a list would empty so only the form closure decides.
+    gone, fill = PROTECTED_SPHERE_FORMS[0], PROTECTED_SPHERE_FORMS[3]
+    touched = False
+    for rec in s["scenarios"]:
+        psf = rec.get("protected_sphere_forms")
+        if psf and gone in psf:
+            psf.remove(gone)
+            touched = True
+            if not psf:
+                psf.append(fill)
+    if not touched:
+        raise LedgerError(f"control setup: no scenario exercises {gone}")
+
+
+def _scn_unstress_edge(s):
+    cited = set()
+    for rec in s["scenarios"]:
+        cited |= set(rec["dependency_refs"])
+    target = None
+    for dep in s["dependencies"]:
+        if dep["severity"] == "critical" and dep["id"] in cited:
+            target = dep["id"]
+            break
+    if target is None:
+        raise LedgerError("control setup: no cited critical edge")
+    for rec in s["scenarios"]:
+        rec["dependency_refs"] = [r for r in rec["dependency_refs"]
+                                  if r != target]
+
+
+def _scn_axis_on_noncollision(s):
+    for rec in s["scenarios"]:
+        if rec["scenario_kind"] not in ("collision", "compound-shock"):
+            rec["collision_axis"] = COLLISION_AXES[0]
+            return
+    raise LedgerError("control setup: no non-collision scenario")
+
+
+def _scn_collision_without_axis(s):
+    for rec in s["scenarios"]:
+        if rec["scenario_kind"] == "collision":
+            del rec["collision_axis"]
+            return
+    raise LedgerError("control setup: no collision scenario")
+
+
+def _scn_bad_shock_kind(s):
+    for rec in s["scenarios"]:
+        if rec["scenario_kind"] == "compound-shock":
+            rec["shock_kind"] = "asteroid"
+            return
+    raise LedgerError("control setup: no compound-shock scenario")
+
+
+def _scn_stale_omission(s):
+    for rec in s["scenarios"]:
+        if rec["dependency_refs"]:
+            s["scenario_omissions"].append(
+                {"omitted_dependency_ref": rec["dependency_refs"][0],
+                 "risk_reason": "control", "source_ref": _CONTROL_NEEDLE})
+            return
+    raise LedgerError("control setup: no scenario cites an edge")
+
+
+def _scn_duplicate_id(s):
+    s["scenarios"].append(copy.deepcopy(s["scenarios"][0]))
+
+
 # ── rendering ────────────────────────────────────────────────────────────────
 
 def _bucket_cell(bucket):
@@ -3871,6 +4411,56 @@ def render(src: dict, resolution: dict) -> str:
     for ent in src["refused_flows"]:
         w(f"- {ent['refused_flow']} [{ent['flow_kind']}]: "
           f"{ent['refusal_reason']}")
+    w("")
+    w("## Whole-society journeys, collisions, and stress cases")
+    w("")
+    w("The scenario catalogue is reviewed inventory — a reviewed threat "
+      "model, never proof and never a counterexample harness. Each record "
+      "routes an owned ordinary, failure, and recovery path: the failure "
+      "route carries interim continuity, the recovery route carries remedy "
+      "and restoration together, and a route is routing, never delivery. "
+      "Nothing here executed — constitutional cases execute only after the "
+      "relevant author rulings and contract cards land, and the closure "
+      "audit consumes this population. The kinds, collision axes, compound "
+      "shocks, and protected-sphere tests are closed vocabularies; every "
+      "domain is reached and every critical dependency edge is stressed or "
+      "its omission recorded. Shock records state Book 1 invariant and "
+      "failure behaviour only — capacity and degradation are Book 2's "
+      "tests. Protected-sphere scenarios test freedom without permission, "
+      "non-recording and non-compulsion, the narrow evidenced-harm "
+      "threshold, and recourse against interference — never a "
+      "state-defined successful life outcome. A bounded witness names a "
+      "sibling case and establishes only what that artifact's own posture "
+      "states.")
+    w("")
+    w("| Scenario | Kind | Domains | Edges | Steward | Axis / shock |")
+    w("| --- | --- | --- | --- | --- | --- |")
+    for rec in src["scenarios"]:
+        axis = (rec.get("collision_axis") or rec.get("shock_kind") or "—")
+        edges_cell = ", ".join(rec["dependency_refs"]) or "—"
+        w(f"| {rec['id']} {rec['title']} | {rec['scenario_kind']} | "
+          f"{', '.join(rec['domain_refs'])} | {edges_cell} | "
+          f"{rec['steward_ref']} | {axis} |")
+    w("")
+    w("Per-scenario routes (routing statements, never delivery or "
+      "execution):")
+    w("")
+    for rec in src["scenarios"]:
+        w(f"- `{rec['id']}` ordinary: {rec['ordinary_route']} Failure: "
+          f"{rec['failure_route']} Recovery: {rec['recovery_route']}")
+        psf = rec.get("protected_sphere_forms")
+        if psf:
+            w(f"  - protected-sphere tests: {', '.join(psf)}")
+        bw = rec.get("bounded_witness_refs")
+        if bw:
+            w(f"  - bounded sibling witnesses: {', '.join(bw)}")
+    w("")
+    w("Deliberately omitted scenario candidates (recorded, not silent):")
+    w("")
+    for ent in src["scenario_omissions"]:
+        label = ent.get("omitted_scenario") \
+            or f"`{ent['omitted_dependency_ref']}`"
+        w(f"- {label}: {ent['risk_reason']}")
     w("")
     w("## Legacy coverage rows and their splits")
     w("")
@@ -4133,11 +4723,11 @@ def render(src: dict, resolution: dict) -> str:
         w(f"| {rec['record_type']} | {rec['stage']} | `{rec['owner_ref']}` | "
           f"{rec['closure_condition']} |")
     w("")
-    w("The coverage-map view, the role matrix, the dependency map, and the "
-      "Book 2 crosswalk are landed generated projections of this source; "
-      "contract cards, the assurance allocation, and the reader ledger "
-      "arrive with their owning stage or tracker item, and none may be "
-      "maintained by hand.")
+    w("The coverage-map view, the role matrix, the dependency map, the "
+      "scenario catalogue, and the Book 2 crosswalk are landed generated "
+      "projections of this source; contract cards, the assurance "
+      "allocation, and the reader ledger arrive with their owning stage or "
+      "tracker item, and none may be maintained by hand.")
     w("")
     w("## Conservative rollup")
     w("")
