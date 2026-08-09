@@ -1437,10 +1437,20 @@ stopping rule's materiality test by reference, with the confirmation basis —
 the author's statement, quoted verbatim, and the question it answered —
 recorded on the rubric itself; the status may only be the exact candidate or
 confirmed string, and a confirmed rubric without its recorded basis fails
-generation. R7's falsification condition is
-**declared ahead of build** — a hash-committed planted omission withheld from
-the review packet plus seeded triage controls; the declaration does not make
-the route available — and the admissibility bar is doctrine and computation
+generation. R7's falsification condition was
+**declared ahead of build and its commitment mechanics are now landed
+(2026-08-09)**: the scope-review protocol
+(`new-book-plans/full-society-scope-review-protocol.md`, candidate — author
+confirmation pending, its status line live-checked against the reviewed
+source on the rubric's own two-state pattern) fixes the hash-committed
+planted omission and seeded triage controls, and the generator refuses an
+independent review event without a pre-registered commitment — plant, seed,
+and protocol SHA-256 digests entered in the canonical source at
+commissioning, pre-images author-held outside the repo, which excludes the
+author from the severity-owner and independent-checker roles for that event.
+Neither the declaration nor the landed mechanics makes the route available —
+it stays unbuilt until a reviewer is named and an event runs. The
+admissibility bar is doctrine and computation
 alike: **the in-repo reviewer corpus is never admissible independent-review
 evidence for the review condition of closure**, because an independent event
 requires named reviewer identities, a resolving protocol, and passed controls.
@@ -1450,7 +1460,8 @@ the generator **refuses a closure record while any condition computes unmet**;
 a present record would also require a gate status this contract refuses, so
 closing Gate A is necessarily a deliberate future amendment with its own
 author ratification. **No review has run, no reviewer is named, the closure
-record is null, and Gate A remains not passed**; the review event, the
+record is null, and Gate A remains not passed**; protocol confirmation,
+review commissioning and its commitment, the review event, the
 severity-owner designation, and the closure record remain author checkpoints.
 
 **The reference envelope is versioned in structure, enacted 2026-08-09; values,
