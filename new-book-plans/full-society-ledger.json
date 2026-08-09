@@ -2113,6 +2113,13 @@
     "protocol_status": "author-confirmed 2026-08-09 — basis recorded",
     "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: author-confirmed 2026-08-09 — basis recorded",
     "confirmation_basis": "Author statement, 2026-08-09: \"I confirm the scope-review protocol — record the confirmation\" — given in answer to whether the candidate protocol landed in 74d037e, with its evidence contract, admissibility criteria, resolving protocol, reviewer-selection criteria, commitment scheme under author-held custody and its role exclusions, and commissioning sequence, is confirmed as the protocol under which the independent scope review will run. Recorded in the repo's convention for author acts: the statement quoted verbatim, the question it answered named; the same record fills the protocol document's own confirmation section.",
+    "designation": {
+      "severity_owner": "Darshu",
+      "independent_checker": "Dhanush",
+      "custodian": "dhilipsiva — author, pre-image custodian",
+      "designated_date": "2026-08-09",
+      "basis": "Author statement, 2026-08-09: \"Let's name them. Darshu & Dhanush.\" — given in answer to who takes the severity-owner and independent-checker roles under the confirmed protocol's exclusions: distinct people, neither the pre-image custodian, both blind to seed identities until every seed's triaged date is recorded. The role assignment was confirmed separately in the same exchange — Darshu as severity owner, Dhanush as independent checker — on the author's statement that both are real people who have agreed to the roles. Recorded after two refusals on this checkpoint, for role-echo placeholders and for AI agents, because a fabricated or operator-run identity is invisible to the mechanical check; the substance is reviewed. Repo convention for author acts: the statement quoted verbatim, the question it answered named."
+    },
     "review_commitment": null
   },
   "deferred_populations": [
