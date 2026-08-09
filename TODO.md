@@ -779,37 +779,32 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
-- [ ] **Complete the full-society domain-and-layer ledger (stage 1 landed
-  fcb9b8d).**
-  - The canonical source exists: `new-book-plans/full-society-ledger.json`,
-    validated and rendered by `new-book-plans/13-full-society-ledger.py` and
-    gated as a structural `verify.sh` step. It declares the named axes and the
-    stopping rule; fixes the `scope_disposition` enum, author-ratified
-    2026-08-09 as the reader-facing five layers; seeds the social-domain
-    records with per-layer buckets, the coverage map's frozen legacy rows split
-    into one-posture claim records under that map's own legend, the required
-    bodies, the seven assurance routes, the named external assumptions, and the
-    explicit envelope stub; and carries a deferral record with owner and
-    closure condition for every record type not yet populated. The generator
-    enforces the ratified fail list, the defect-disposition x response-stage x
-    posture/route compatibility table, distinct disposition keys, the
-    no-aggregate rule, and enum-mapping closure over the sibling reviewed
-    JSONs, which it reads live. Schema detail lives in the generator and the
-    controlling decision records, not here.
-  - **Stage 2 — defect backfill, before any new resolution language.**
-    Backfill every existing `:defect`, known design/model/argument/evidence/
-    reader defect, open gap, residual, material red-team finding, and passage
-    claiming a defect was repaired before new resolution language ships. A
-    narrated social harm is a hostile witness or scenario, not automatically a
-    book/design defect. Resolution receipts follow the backfill and the
-    generated resolution rules; none may precede it, and the author's pending
-    passage repair either waits for this stage or lands with its receipt if it
-    narrates a defect as repaired.
-  - **Stage 3 — projections absorb their hand-maintained ancestors.** The
-    coverage map's section-3 table becomes a generated region of the ledger
-    report; role, power, dependency, scenario, and threshold records populate
-    as their owning items land; the Book 2 crosswalk view emits routed rows
-    only and stays within collection-only.
+- [ ] **Complete the full-society domain-and-layer ledger (stages 1-3
+  executable landed fcb9b8d, 56c35cd, 79d778f).**
+  - The canonical source exists and is populated through its executable
+    projections: `new-book-plans/full-society-ledger.json`, validated and
+    rendered by `new-book-plans/13-full-society-ledger.py`, gating both the
+    generated report and the coverage map's section-3 region in one
+    `verify.sh` step. It declares the named axes and stopping rule; fixes the
+    five-layer `scope_disposition` enum; carries the domains, split coverage
+    claims with the ratified cell texts verbatim-frozen, bodies, routes,
+    external assumptions, and envelope stub; and now holds the keyed defect
+    rows, the five resolution receipts, and the routed-rows-only Book 2
+    crosswalk. Two live-read closures bind it to the sibling reviewed JSONs:
+    enum mapping and residual-coverage citation, both bidirectional.
+    Resolution and blocking are generated, never authored, and bounded by
+    each affected claim's own posture; the register deficit and the
+    live-record gap block their claims as critical. Schema detail lives in
+    the generator and the controlling decision records, not here.
+  - Resolution receipts exist only where a row's generated resolution permits
+    one, and the author's pending passage repair now cites the deficit rows
+    rather than waiting on anything else; new resolution language in prose
+    still requires its receipt discipline through the
+    confession-as-ending item.
+  - **Remaining population — sibling-fed.** Role, power, dependency,
+    scenario, and threshold records populate as their owning foundation
+    items land; each carries its deferral record with owner and closure
+    condition in the source itself.
   - **Stage 4 — independent scope review and Gate A closure.** Give every
     reviewer proposal one public `proposal_disposition`: add it to the
     canonical source; classify it with reasons under the proposal dispositions
