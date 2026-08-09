@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-r7-commitment-mechanics`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-roles-matrix`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -36,8 +36,8 @@ A version may close only when all of the following hold for the gate's permitted
 
 Per-condition status, generated from the source and echoing the closure conditions above by index; no aggregate is derived from this list, and a closure record is refused while any row computes unmet. Closing Gate A is a deliberate future amendment with its own author ratification, never a latent flip.
 
-- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: dependencies, powers, proposals, review_events, roles, scenarios
-- **form-only** — every required projection regenerates from that source: the projections that exist regenerate — the check itself is the proof — while the role matrix, dependency map, assurance allocation, and reader ledger do not exist yet
+- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: dependencies, powers, proposals, review_events, scenarios
+- **form-only** — every required projection regenerates from that source: the projections that exist regenerate — the check itself is the proof — while the dependency map, assurance allocation, and reader ledger do not exist yet
 - **unmet** — no unresolved critical gap applicable to that gate's permitted claim remains: blocking defect rows exist: FS-DFT-16, FS-DFT-17, FS-DFT-28
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
 - **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no review event with independence true exists, and the in-repo reviewer corpus is never admissible for this condition
@@ -195,7 +195,7 @@ The five routing dispositions are the reader-facing five layers (author-ratified
 - Protected private/civic freedom: Harmless ordinary life carries no zero-risk rule; cultural, religious, and Indigenous protection creates consultation and accommodation duties without a severe-suffering exemption.
 - Book 2 operations: Measurement, numerical ceilings, inventories, models, monitoring, restoration and veterinary capacity, food and research transition, staffing, costs, and workflows.
 - External assumptions: Scientific findings, sentience evidence, and causal findings arrive as bounded authenticated premises; the engine measures nothing (FS-EXA-03).
-- Bodies: FS-BOD-19, FS-BOD-20; legacy rows: FS-LGR-17, FS-LGR-18
+- Bodies: FS-BOD-19, FS-BOD-20, FS-BOD-22, FS-BOD-23; legacy rows: FS-LGR-17, FS-LGR-18
 - Scenario applicability: deferred — TODO.md::Build whole-society journeys
 - Reader destination: No current chapter; the ecological and animal chapters arrive with their rule families.
 - Severity if left open: critical if left open — irreversible harms do not wait for formalisation; consequence: ceilings, the Guardian, and animal protection stay prose while authorisations proceed; closure: the ecological and animal rule families land after the versioned-findings audit
@@ -212,6 +212,82 @@ The five routing dispositions are the reader-facing five layers (author-ratified
 - Scenario applicability: deferred — TODO.md::Build whole-society journeys
 - Reader destination: The contribution chapter's care doors today; the free field otherwise deliberately receives no chapter of rules.
 - Severity if left open: serious if left open — a completeness drive that colonised this field would be the failure; consequence: either coercion hides in the residual field or the field gets a rule it must never have; closure: the explicit non-prescription dispositions are recorded with their four-part harm check
+
+## Roles, life-course stages, scales, and power positions
+
+Each role records the standing of a person in a position — life-course stages are roles of a kind — and routes it against domains, scales, and the ratified bodies. A role is never a floor-changing status: one person occupies many roles and none buys a higher floor or a lower one, which is why every role's layer is the constitutional invariant of universal standing; rule content stays on domains and claims. Axis coverage is mechanical — every domain cited, every named scale exercised, every required body carrying both an affected and a checking role position, every recorded private power naming its affected counter-roles and its checkers — while pairwise sufficiency stays a question for the independent scope review; no full Cartesian product is attempted, and deliberately omitted candidates and combinations are recorded below with risk-based reasons. The FS-POW decomposition of each power remains its own deferred population. Formal anchors stay honest: a derived constitution predicate, an asserted predicate with its replace-card path, or ratified-but-unimplemented doctrine.
+
+| Role | Kind | Domains | Scales | Affected by | Checks | Anchor |
+| --- | --- | --- | --- | --- | --- | --- |
+| FS-ROL-01 Person at first contact | life-course | FS-DOM-01, FS-DOM-02, FS-DOM-08, FS-DOM-09 | individual, local, cross-jurisdictional | FS-BOD-16, FS-BOD-10 | — | constitution-predicate-asserted |
+| FS-ROL-02 Child | life-course | FS-DOM-01, FS-DOM-02, FS-DOM-03, FS-DOM-07, FS-DOM-09 | individual, household-association, local | FS-BOD-10, FS-BOD-17 | — | constitution-predicate-asserted |
+| FS-ROL-03 Adult | life-course | FS-DOM-01, FS-DOM-06 | individual, national | FS-BOD-06 | — | constitution-predicate-asserted |
+| FS-ROL-04 Ageing person | life-course | FS-DOM-01, FS-DOM-02, FS-DOM-04, FS-DOM-06 | individual, household-association, local | FS-BOD-07 | — | ratified-doctrine-unimplemented |
+| FS-ROL-05 Succession participant | life-course | FS-DOM-01, FS-DOM-02, FS-DOM-04, FS-DOM-05 | individual, household-association | FS-BOD-17 | — | ratified-doctrine-unimplemented |
+| FS-ROL-06 Dependant and supported person | care-and-dependency | FS-DOM-01, FS-DOM-02, FS-DOM-04 | individual, household-association, local | FS-BOD-07, FS-BOD-20 | FS-BOD-20 | ratified-doctrine-unimplemented |
+| FS-ROL-07 Caregiver | care-and-dependency | FS-DOM-02, FS-DOM-05 | individual, household-association, local | FS-BOD-09 | — | ratified-doctrine-unimplemented |
+| FS-ROL-08 Decision supporter | care-and-dependency | FS-DOM-01, FS-DOM-02, FS-DOM-08 | individual, household-association | FS-BOD-17 | — | ratified-doctrine-unimplemented |
+| FS-ROL-09 Holder of parentage | care-and-dependency | FS-DOM-01, FS-DOM-02 | individual, household-association | FS-BOD-17 | — | ratified-doctrine-unimplemented |
+| FS-ROL-10 Household member | care-and-dependency | FS-DOM-02, FS-DOM-04, FS-DOM-12 | individual, household-association | FS-BOD-21 | — | ratified-doctrine-unimplemented |
+| FS-ROL-11 Patient | care-and-dependency | FS-DOM-02 | individual, local | FS-BOD-07 | — | ratified-doctrine-unimplemented |
+| FS-ROL-12 Pregnant person | care-and-dependency | FS-DOM-02 | individual | FS-BOD-07 | — | ratified-doctrine-unimplemented |
+| FS-ROL-13 Learner | learning-and-culture | FS-DOM-03 | individual, local, regional | FS-BOD-07 | — | constitution-predicate-derived |
+| FS-ROL-14 Creator | learning-and-culture | FS-DOM-03, FS-DOM-05, FS-DOM-12 | individual, national, cross-jurisdictional | FS-BOD-04 | — | ratified-doctrine-unimplemented |
+| FS-ROL-15 Believer, worshipper, and non-believer | learning-and-culture | FS-DOM-03, FS-DOM-12 | individual, household-association, local | FS-BOD-01 | — | ratified-doctrine-unimplemented |
+| FS-ROL-16 Friend, intimate partner, and mutual-aid participant | learning-and-culture | FS-DOM-12, FS-DOM-02 | individual, household-association | — | — | ratified-doctrine-unimplemented |
+| FS-ROL-17 Worker | economic | FS-DOM-05 | individual, local, regional, national, cross-jurisdictional | FS-BOD-09 | — | ratified-doctrine-unimplemented |
+| FS-ROL-18 Person outside employment | economic | FS-DOM-05, FS-DOM-04 | individual | FS-BOD-07, FS-BOD-02 | — | ratified-doctrine-unimplemented |
+| FS-ROL-19 Union member and collective-action participant | economic | FS-DOM-05, FS-DOM-06 | local, regional, national | FS-BOD-09 | FS-BOD-09 | ratified-doctrine-unimplemented |
+| FS-ROL-20 Tenant and dweller | economic | FS-DOM-04 | individual, household-association, local | FS-BOD-21, FS-BOD-17 | — | ratified-doctrine-unimplemented |
+| FS-ROL-21 Owner and property holder | economic | FS-DOM-05, FS-DOM-04, FS-DOM-11 | individual, household-association, local, regional, cross-jurisdictional | FS-BOD-07, FS-BOD-04, FS-BOD-22 | — | ratified-doctrine-unimplemented |
+| FS-ROL-22 Concentrated or essential private function holder | economic | FS-DOM-05, FS-DOM-04, FS-DOM-08 | local, regional, national, cross-jurisdictional | FS-BOD-09 | — | ratified-doctrine-unimplemented |
+| FS-ROL-23 Consumer and essential-service user | economic | FS-DOM-05, FS-DOM-04, FS-DOM-08 | individual, local, national | FS-BOD-08 | — | ratified-doctrine-unimplemented |
+| FS-ROL-24 Debtor and person in insolvency | economic | FS-DOM-05 | individual, household-association, cross-jurisdictional | FS-BOD-09 | — | ratified-doctrine-unimplemented |
+| FS-ROL-25 Voter | civic-political | FS-DOM-06, FS-DOM-09 | local, regional, national | FS-BOD-06 | FS-BOD-02, FS-BOD-05, FS-BOD-21, FS-BOD-03 | constitution-predicate-derived |
+| FS-ROL-26 Candidate and elected office-holder | civic-political | FS-DOM-06 | local, regional, national | FS-BOD-06, FS-BOD-05 | FS-BOD-06, FS-BOD-04 | ratified-doctrine-unimplemented |
+| FS-ROL-27 Public servant | civic-political | FS-DOM-06, FS-DOM-08 | local, regional, national | FS-BOD-04, FS-BOD-19 | FS-BOD-04 | ratified-doctrine-unimplemented |
+| FS-ROL-28 Protective-function officer | civic-political | FS-DOM-07, FS-DOM-10 | local, regional, national, cross-jurisdictional | FS-BOD-10, FS-BOD-12, FS-BOD-14, FS-BOD-15 | FS-BOD-10, FS-BOD-12 | ratified-doctrine-unimplemented |
+| FS-ROL-29 Association member and civic organiser | civic-political | FS-DOM-06, FS-DOM-12, FS-DOM-03 | household-association, local, regional, national | — | FS-BOD-01, FS-BOD-02, FS-BOD-13, FS-BOD-15, FS-BOD-18, FS-BOD-23 | ratified-doctrine-unimplemented |
+| FS-ROL-30 Collective, Indigenous, and minority member | membership-and-mobility | FS-DOM-03, FS-DOM-04, FS-DOM-09, FS-DOM-11 | household-association, local, regional, intergenerational | FS-BOD-18, FS-BOD-21 | — | ratified-doctrine-unimplemented |
+| FS-ROL-31 Nonmember resident in autonomous territory | membership-and-mobility | FS-DOM-09, FS-DOM-06 | local, regional | FS-BOD-21, FS-BOD-03 | — | ratified-doctrine-unimplemented |
+| FS-ROL-32 Newcomer, migrant, and asylum seeker | membership-and-mobility | FS-DOM-09, FS-DOM-01, FS-DOM-04, FS-DOM-07 | individual, local, national, cross-jurisdictional | FS-BOD-16, FS-BOD-10 | FS-BOD-16 | ratified-doctrine-unimplemented |
+| FS-ROL-33 Nonresident and returning former resident | membership-and-mobility | FS-DOM-09, FS-DOM-06 | national, cross-jurisdictional | FS-BOD-16 | — | ratified-doctrine-unimplemented |
+| FS-ROL-34 Claimant and complainant | justice-and-coercion | FS-DOM-07, FS-DOM-04, FS-DOM-08 | individual, local, regional, national | — | FS-BOD-07, FS-BOD-08, FS-BOD-04, FS-BOD-19, FS-BOD-22 | ratified-doctrine-unimplemented |
+| FS-ROL-35 Victim and survivor | justice-and-coercion | FS-DOM-07, FS-DOM-02 | individual, local | FS-BOD-11, FS-BOD-14 | FS-BOD-11, FS-BOD-14 | ratified-doctrine-unimplemented |
+| FS-ROL-36 Accused person | justice-and-coercion | FS-DOM-07 | individual, local, cross-jurisdictional | FS-BOD-11, FS-BOD-10, FS-BOD-17 | FS-BOD-17 | ratified-doctrine-unimplemented |
+| FS-ROL-37 Person physically held or restricted without conviction | justice-and-coercion | FS-DOM-07, FS-DOM-10, FS-DOM-09 | individual, local, cross-jurisdictional | FS-BOD-10, FS-BOD-16 | — | ratified-doctrine-unimplemented |
+| FS-ROL-38 Prisoner | justice-and-coercion | FS-DOM-07, FS-DOM-06, FS-DOM-02 | individual, local, national | FS-BOD-17, FS-BOD-10 | — | constitution-predicate-derived |
+| FS-ROL-39 Released person | justice-and-coercion | FS-DOM-07, FS-DOM-05, FS-DOM-04 | individual, local | FS-BOD-17 | — | constitution-predicate-derived |
+| FS-ROL-40 Record subject | cross-cutting | FS-DOM-08 | individual, national, cross-jurisdictional | FS-BOD-13, FS-BOD-06 | FS-BOD-13 | constitution-predicate-asserted |
+| FS-ROL-41 Animal custodian and user | cross-cutting | FS-DOM-11, FS-DOM-05, FS-DOM-12 | individual, household-association, local, regional | FS-BOD-23 | — | ratified-doctrine-unimplemented |
+| FS-ROL-42 Collective internal governance holder | membership-and-mobility | FS-DOM-09, FS-DOM-03 | local, regional | FS-BOD-18 | — | ratified-doctrine-unimplemented |
+
+Recorded private and delegated powers (the holder's own record names who stands under the power and who checks it):
+
+- `FS-ROL-08` holds: Decision support and representation over a supported adult. Any best-interpretation route is conflict-free, decision-specific, least-restrictive, time-bounded, and independently reviewed; an earlier support record is never a reusable capacity score. Affected: FS-ROL-06; checked by: FS-ROL-06, FS-BOD-20, FS-BOD-17.
+- `FS-ROL-09` holds: Parental authority over a child — responsibility and relationship, never ownership; best interests are a primary consideration, never an adult veto, and the child is heard. Affected: FS-ROL-02; checked by: FS-ROL-02, FS-BOD-20, FS-BOD-17.
+- `FS-ROL-22` holds: A public-facing essential or gatekeeping private function over the people dependent on it. Calibrated duties may require access, continuity, reasons, portability, interoperability, audit, challenge, and remedy; household or intimate dependency alone never creates public-scale status. Affected: FS-ROL-17, FS-ROL-20, FS-ROL-23, FS-ROL-24, FS-ROL-11, FS-ROL-06; checked by: FS-ROL-19, FS-ROL-34, FS-BOD-09, FS-BOD-17, FS-BOD-19.
+- `FS-ROL-41` holds: Control of a protected sentient animal. The animal is not itself a rights-holding role: its direct interests are protected subjects the custodian cannot waive, the alternative-sensitive food rule governs every controlled food use, and the affected roles named here are the humans domestically and economically inside the custodian's use. Affected: FS-ROL-10, FS-ROL-17; checked by: FS-BOD-23, FS-BOD-17.
+- `FS-ROL-42` holds: Internal selection, customary law, and collective-title governance over members and, in established territorial competences, resident nonmembers; actual collective consent governs existential harms, and temporary lifesaving evacuation never extinguishes title. Affected: FS-ROL-30, FS-ROL-31; checked by: FS-BOD-18, FS-ROL-30.
+
+Deliberately omitted candidates and combinations (recorded, not silent):
+
+- No role for demographic identity axes — race, sex or gender, disability, age, religion, caste, and similar grounds: grounds are legal handles for detecting and repairing discrimination, never person-typing axes; statuses that overlap the role axis — homelessness, conviction, migration — are modelled once, as roles, and never double-counted as demographic decoration
+- No role for the full role-by-scale-by-domain product: coverage is pairwise plus high-consequence edges; the coverage map's scenario table carries the reviewed instances, and every unlisted cell is immaterial under the recorded default that a role lists only scales where ratified text attaches a distinct legal effect
+- No role for the enterprise as a rights-holder: corporate personality is a functional statutory tool; an enterprise has no floor, ballot, candidacy, or inherent political weight, and the people behind it appear as worker, owner, and function-holder roles
+- No role for future generations as record-holders: no present person record, ballot, or presumed preference exists for whoever later exists; the protected object is inherited ecological capability, carried by the intergenerational scale and the Guardian's initiation and pause routes
+- No role for the embryo or fetus: no independent constitutional personhood exists that could override the pregnant person's authority; the pregnant person is the role
+- No role for non-human animals as role-holders: protected subjects are not human persons and hold no human floor or ballot; the human duty side is the custodian role and the checking side is the Animal Protection Advocate
+- No role for risk, threat, enemy, and security statuses: no status exists that a person can be moved into and thereby lose the floor; risk, threat, loyalty, dangerousness, clearance, and watchlist products never enter the canonical person record
+- No role for an emergency subject: emergency is a non-derogating overlay, never a personal status; declared measures reach existing roles through their own temporal contracts
+- No role for the deceased person: death is an authenticated external finding, not a role; the living-side claims — succession, records, bereavement — are the succession participant's
+- No role for a separate environmental-right holder: the environmental right attaches to every present person in every role; a separate role would duplicate personhood, and initiation routes ride on the claimant, the association, and the Guardian
+- No role for the conscientious objector as a separate role: one ratified section covers both the officer's protected refusal and the civilian objection — unconditional, with no sincerity tribunal and a genuinely non-punitive equivalent — so both live on the protective-function officer record and the scenario row
+- No role for the teacher as a separate role: teaching is work and mints through the existing doors; recognition for teaching is unconditional and never ranked, the learner is never graded, and the delivery interface lives on the learner record
+- No role for the obligatory adult-kin carer: refused, not omitted: adult kinship creates no compelled personal-care duty and no inherited support debt; voluntary care lives on the caregiver record
+- `FS-ROL-25` omits `intergenerational`: future generations hold no present ballot; the protected object is inherited capability, represented by the Guardian's initiation and pause routes, never by electors
+- `FS-ROL-02` omits `FS-DOM-06`: no proxy franchise exists — no guardian casts the child's ballot; the child's voice and petition routes are participation, and the general ballot arrives with automatic adulthood
+- `FS-ROL-12` omits `national`: reproductive-care policy is domain-grain democratic law; the role's own legal effect is individual bodily authority, and no national-scale role effect exists to record
 
 ## Legacy coverage rows and their splits
 
@@ -305,6 +381,8 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-BOD-19 Integrity and audit | Examine records, conflicts, disparities, and systemic failures. | Create the case facts it later certifies, or impose final remedy alone. | Independent evidence, public findings consistent with privacy, referral and remedy authority. |
 | FS-BOD-20 Ombudsperson and rights advocate | Act for a child, disabled person, prisoner, newcomer, or unregistered claimant. | Become a substitute sovereign or condition help on representation. | Direct access to review and protected independence. |
 | FS-BOD-21 Regional and local bodies | Exercise residual regional authority and protected local choice inside common guarantees. | Create a lower caste of resident, reduce the common floor, or acquire a disputed competence by delay. | Portability, equalisation, intergovernmental reasons and mediation, Constitutional Court review. |
+| FS-BOD-22 Future Conditions Guardian | Obtain evidence, demand assessment and reasons, participate, publish warnings, and seek review and remedy; an evidence-supported objection pauses only the irreversible authorisation pending expedited independent review. | Hold a permanent veto, legislative or budget power, programme control, or scientific-oracle status; invent future preferences; restart an unchanged replay key. | Expedited independent review, the predeclared alternate advocate and independent substitute reviewer, a case-bound temporal contract and replay key, cause-only removal. |
+| FS-BOD-23 Animal Protection Advocate | Investigate, seek rescue and interim relief, and pursue individual and systemic remedies for protected animals; any person or qualified association may initiate. | Hold a final veto, or remove any human's standing, floor, core liberty, due process, or political equality through an animal remedy. | Independent adjudication of conflicts, including with the Future Conditions Guardian; neither office has a final veto. |
 
 ## Assurance routes
 
@@ -576,14 +654,13 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 
 | Record type | Stage | Owner | Closure condition |
 | --- | --- | --- | --- |
-| roles | stage-3 | `TODO.md::Build the roles, life-course` | the roles, life-course, scale, and power-position matrix lands as records with stable FS-ROL IDs |
 | powers | stage-3 | `TODO.md::Maintain completed constitutional coverage rows` | contract cards decompose each domain's public powers into FS-POW records |
 | dependencies | stage-3 | `TODO.md::Model the society's functional flows` | the cross-domain dependency map lands as FS-DEP records classed guaranteed, democratically selected, operationally supplied, or externally assumed |
 | scenarios | stage-3 | `TODO.md::Build whole-society journeys` | the journeys, collisions, and stress cases land as FS-SCN records with stable IDs |
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 | review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under the hash-committed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md), its plant and seed digests pre-registered in this source at commissioning, with named reviewers and passed seeded and planted-omission controls |
 
-The coverage-map view, contract cards, role matrix, dependency map, assurance allocation, reader ledger, and Book 2 crosswalk are generated projections of this source; each arrives with its owning stage or tracker item, and none may be maintained by hand.
+The coverage-map view, the role matrix, and the Book 2 crosswalk are landed generated projections of this source; contract cards, the dependency map, the assurance allocation, and the reader ledger arrive with their owning stage or tracker item, and none may be maintained by hand.
 
 ## Conservative rollup
 

@@ -17,6 +17,9 @@ Stage 2 backfills every declared defect, repair narrative, open gap, and
 sibling residual as keyed FS-DFT rows under a live-read citation closure,
 computes resolution_status and blocking (never hand-authored), and mints
 resolution receipts only where a row's generated resolution permits one.
+Stage 3's first population is landed: the roles, life-course, scale, and
+power-position matrix (FS-ROL) with domain, scale, and body-position closures
+and recorded risk-based omissions; a role is never a floor-changing status.
 Stage 4's machinery makes the future independent scope review admissible and
 the Gate A closure refusable-until-green: proposal and review-event schemas
 stand validated and empty, the severity rubric and the scope-review protocol
@@ -132,6 +135,40 @@ RESPONSE_STAGES = [
 ]
 RESOLUTION_STATUSES = ["resolved-for-claim", "unresolved-for-claim"]
 PROPOSAL_DISPOSITIONS = ["added", "classified-out", "retained-limit"]
+
+# The roles matrix's closed vocabularies. A role records the standing of a
+# person in a position and routes it against domains, scales, and the ratified
+# bodies; it is never a floor-changing status, so every role's layer is pinned
+# to the constitutional invariant of universal standing. Scales are the seven
+# the tracker bullet names as test targets — a closed universe, so the
+# validator requires each to be exercised. Anchors keep the formal honesty
+# split: a derived constitution predicate, an asserted predicate (with its
+# replace-card path recorded in prose), or ratified-but-unimplemented doctrine.
+ROLE_KINDS = [
+    "life-course",
+    "care-and-dependency",
+    "learning-and-culture",
+    "economic",
+    "civic-political",
+    "membership-and-mobility",
+    "justice-and-coercion",
+    "cross-cutting",
+]
+ROLE_SCALES = [
+    "individual",
+    "household-association",
+    "local",
+    "regional",
+    "national",
+    "cross-jurisdictional",
+    "intergenerational",
+]
+POWER_POSITIONS = ["affected", "checking"]
+ROLE_ANCHORS = [
+    "constitution-predicate-derived",
+    "constitution-predicate-asserted",
+    "ratified-doctrine-unimplemented",
+]
 
 # Stage marker: the reviewed source's status and the report's stage label move in
 # lockstep with the content stages; bump both here and in the JSON together.
@@ -461,6 +498,10 @@ def validate_meanings(src: dict):
         "envelope_status_meanings": ENVELOPE_STATUSES,
         "value_status_meanings": VALUE_STATUSES,
         "lawful_source_meanings": LAWFUL_SOURCES,
+        "role_kind_meanings": ROLE_KINDS,
+        "scale_meanings": ROLE_SCALES,
+        "power_position_meanings": POWER_POSITIONS,
+        "role_anchor_meanings": ROLE_ANCHORS,
     }
     for key, values in expected.items():
         block = src.get(key)
@@ -820,6 +861,227 @@ def validate_bodies(src: dict):
         for key in ("job", "may_not_do_alone", "required_check"):
             require_str(rec, key, ctx)
         validate_reference(rec["source_ref"], f"{ctx}.source_ref")
+
+
+def validate_roles(src: dict, ids: dict):
+    """The roles, life-course, scale, and power-position matrix.
+
+    Three closures are mechanical: every domain cited by at least one role,
+    every named scale exercised, and every required body carrying both an
+    affected and a checking role position. Pairwise sufficiency (which
+    role x scale x domain cells matter) is NOT mechanically decidable and
+    stays a question for the independent scope review. An entry in
+    role_omissions is a CLOSED classification decision with a risk-based
+    reason (the residual_coverage_exclusions precedent), never
+    unresolved-shape — "should be covered later" belongs in a defect row or a
+    role's closure_condition, not here."""
+    roles = src.get("roles", [])
+    if not roles:
+        if src.get("role_omissions"):
+            raise LedgerError(
+                "role_omissions may not exist while roles is deferred — an "
+                "omission is a decision about a populated matrix"
+            )
+        return
+    domain_ids = {r for r, a in ids.items() if a == "domains"}
+    body_ids = {r for r, a in ids.items() if a == "bodies"}
+    cited_domains, exercised_scales = set(), set()
+    body_positions = {}
+    roles_by_id = {}
+    for i, rec in enumerate(roles):
+        ctx = f"roles[{i}] ({rec.get('id', '?')})"
+        exact_keys(
+            rec,
+            COMMON_KEYS + ["role_kind", "domain_refs", "scales",
+                           "power_positions", "formal_anchor",
+                           "floor_invariance", "source_refs"],
+            ctx,
+            optional=["power_held"],
+        )
+        validate_common_record_fields(rec, ctx)
+        if rec["layer"] != "constitutional-invariant":
+            raise LedgerError(
+                f"{ctx}: a role is an application of universal standing and "
+                "never a floor-changing status; its layer is "
+                "constitutional-invariant — rule content lives on domains "
+                "and claims, not on a role"
+            )
+        if rec["role_kind"] not in ROLE_KINDS:
+            raise LedgerError(f"{ctx}: unknown role_kind {rec['role_kind']!r}")
+        refs = rec["domain_refs"]
+        if not isinstance(refs, list) or not refs \
+                or len(set(refs)) != len(refs):
+            raise LedgerError(
+                f"{ctx}: domain_refs must be a non-empty duplicate-free list"
+            )
+        for ref in refs:
+            if ref not in ids or ids[ref] != "domains":
+                raise LedgerError(
+                    f"{ctx}: domain_refs must name domains, got {ref!r}"
+                )
+        cited_domains |= set(refs)
+        scales = rec["scales"]
+        if (not isinstance(scales, list) or not scales
+                or len(set(scales)) != len(scales)
+                or any(sc not in ROLE_SCALES for sc in scales)):
+            raise LedgerError(
+                f"{ctx}: scales must be a non-empty duplicate-free subset of "
+                f"{ROLE_SCALES}"
+            )
+        exercised_scales |= set(scales)
+        pps = rec["power_positions"]
+        if not isinstance(pps, list):
+            raise LedgerError(f"{ctx}: power_positions must be a list")
+        for j, pp in enumerate(pps):
+            pctx = f"{ctx}.power_positions[{j}]"
+            exact_keys(pp, ["body_ref", "position", "note"], pctx)
+            if pp["body_ref"] not in ids or ids[pp["body_ref"]] != "bodies":
+                raise LedgerError(
+                    f"{pctx}: body_ref must name a ratified body, got "
+                    f"{pp['body_ref']!r} — the FS-POW decomposition stays "
+                    "with its own deferred population"
+                )
+            if pp["position"] not in POWER_POSITIONS:
+                raise LedgerError(
+                    f"{pctx}: position must be affected or checking"
+                )
+            require_str(pp, "note", pctx)
+            body_positions.setdefault(pp["body_ref"], set()).add(
+                pp["position"])
+        ph = rec.get("power_held")
+        if ph is not None:
+            pctx = f"{ctx}.power_held"
+            exact_keys(ph, ["power", "source_ref", "affected_role_refs",
+                            "checking_refs"], pctx)
+            require_str(ph, "power", pctx)
+            validate_reference(ph["source_ref"], f"{pctx}.source_ref")
+            ar = ph["affected_role_refs"]
+            if not isinstance(ar, list) or not ar \
+                    or len(set(ar)) != len(ar):
+                raise LedgerError(
+                    f"{pctx}: affected_role_refs must be a non-empty "
+                    "duplicate-free list"
+                )
+            for ref in ar:
+                if ref not in ids or ids[ref] != "roles":
+                    raise LedgerError(
+                        f"{pctx}: affected_role_refs must name roles, got "
+                        f"{ref!r}"
+                    )
+                if ref == rec["id"]:
+                    raise LedgerError(
+                        f"{pctx}: a power's holder is not its own affected "
+                        "position"
+                    )
+            cr = ph["checking_refs"]
+            if not isinstance(cr, list) or not cr \
+                    or len(set(cr)) != len(cr):
+                raise LedgerError(
+                    f"{pctx}: checking_refs must be a non-empty "
+                    "duplicate-free list — an unchecked private power is "
+                    "not recordable here"
+                )
+            for ref in cr:
+                if ref not in ids or ids[ref] not in ("bodies", "roles"):
+                    raise LedgerError(
+                        f"{pctx}: checking_refs must name bodies or roles, "
+                        f"got {ref!r}"
+                    )
+        fa = rec["formal_anchor"]
+        exact_keys(fa, ["anchor", "refs"], f"{ctx}.formal_anchor")
+        if fa["anchor"] not in ROLE_ANCHORS:
+            raise LedgerError(
+                f"{ctx}: unknown formal anchor {fa['anchor']!r}"
+            )
+        if not isinstance(fa["refs"], list) or not fa["refs"]:
+            raise LedgerError(f"{ctx}: formal_anchor.refs must be non-empty")
+        for j, ref in enumerate(fa["refs"]):
+            validate_reference(ref, f"{ctx}.formal_anchor.refs[{j}]")
+        if fa["anchor"].startswith("constitution-predicate"):
+            if not any(r.split("::", 1)[0].endswith(".nibli")
+                       for r in fa["refs"]):
+                raise LedgerError(
+                    f"{ctx}: a constitution-predicate anchor must cite the "
+                    "constitution source itself (a .nibli needle), never "
+                    "only prose"
+                )
+        require_str(rec, "floor_invariance", ctx)
+        srcs = rec["source_refs"]
+        if not isinstance(srcs, list) or not srcs:
+            raise LedgerError(f"{ctx}: source_refs must be non-empty")
+        for j, ref in enumerate(srcs):
+            validate_reference(ref, f"{ctx}.source_refs[{j}]")
+        roles_by_id[rec["id"]] = rec
+    missing = sorted(domain_ids - cited_domains)
+    if missing:
+        raise LedgerError(
+            "role/domain closure: each material domain needs reviewed role "
+            f"applicability; no role cites: {missing}"
+        )
+    missing_scales = sorted(set(ROLE_SCALES) - exercised_scales)
+    if missing_scales:
+        raise LedgerError(
+            "role/scale closure: every named scale must be exercised by at "
+            f"least one role; unexercised: {missing_scales}"
+        )
+    for bid in sorted(body_ids):
+        pos = body_positions.get(bid, set())
+        if pos != set(POWER_POSITIONS):
+            raise LedgerError(
+                f"power-position closure: body {bid} needs both an affected "
+                f"and a checking role position; has {sorted(pos) or 'neither'}"
+            )
+    om = src.get("role_omissions")
+    if not isinstance(om, list) or not om:
+        raise LedgerError(
+            "role_omissions must be a non-empty list once roles populate — "
+            "omitted combinations carry an explicit risk-based reason"
+        )
+    seen = set()
+    for i, entry in enumerate(om):
+        ctx = f"role_omissions[{i}]"
+        axis = [k for k in ("omitted_role", "omitted_domain_ref",
+                            "omitted_scale") if k in entry]
+        if len(axis) != 1:
+            raise LedgerError(
+                f"{ctx}: exactly one of omitted_role / omitted_domain_ref / "
+                "omitted_scale"
+            )
+        if axis[0] == "omitted_role":
+            exact_keys(entry, ["omitted_role", "risk_reason", "source_ref"],
+                       ctx)
+            require_str(entry, "omitted_role", ctx)
+            validate_reference(entry["source_ref"], f"{ctx}.source_ref")
+            key = ("role", entry["omitted_role"])
+        else:
+            exact_keys(entry, ["role_ref", axis[0], "risk_reason"], ctx)
+            role = roles_by_id.get(entry.get("role_ref"))
+            if role is None:
+                raise LedgerError(
+                    f"{ctx}: unknown role {entry.get('role_ref')!r}"
+                )
+            val = entry[axis[0]]
+            if axis[0] == "omitted_domain_ref":
+                if val not in domain_ids:
+                    raise LedgerError(f"{ctx}: unknown domain {val!r}")
+                if val in role["domain_refs"]:
+                    raise LedgerError(
+                        f"{ctx}: stale omission — the role already carries "
+                        f"{val}"
+                    )
+            else:
+                if val not in ROLE_SCALES:
+                    raise LedgerError(f"{ctx}: unknown scale {val!r}")
+                if val in role["scales"]:
+                    raise LedgerError(
+                        f"{ctx}: stale omission — the role already carries "
+                        f"{val}"
+                    )
+            key = (entry["role_ref"], val)
+        if key in seen:
+            raise LedgerError(f"{ctx}: duplicate omission {key}")
+        seen.add(key)
+        require_str(entry, "risk_reason", ctx)
 
 
 def validate_routes(src: dict):
@@ -1975,7 +2237,7 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
                      "material sufficiency stays a review question"))
     rows.append((conds[1], "form-only",
                  "the projections that exist regenerate — the check itself is "
-                 "the proof — while the role matrix, dependency map, assurance "
+                 "the proof — while the dependency map, assurance "
                  "allocation, and reader ledger do not exist yet"))
     if blocking:
         rows.append((conds[2], "unmet",
@@ -2106,6 +2368,7 @@ def validate(src: dict):
     validate_legacy_rows(src, ids)
     validate_claims(src, ids, routes_by_id)
     validate_bodies(src)
+    validate_roles(src, ids)
     validate_external_assumptions(src)
     validate_envelope(src, ids)
     validate_functional_criteria(src)
@@ -2350,6 +2613,55 @@ def negative_controls(src: dict) -> int:
     control("the criteria canon is the seven-member union",
             lambda s: s["functional_criteria"]["criteria"].pop(0),
             "seven-member")
+    control("a populated record type sheds its deferral",
+            lambda s: s["deferred_populations"].append(
+                {"record_type": "roles", "owner_ref": _CONTROL_NEEDLE,
+                 "closure_condition": "control", "stage": "stage-3"}),
+            "still carries a deferral record")
+    control("a role's domain ref must resolve",
+            lambda s: s["roles"][0].update({"domain_refs": ["FS-DOM-99"]}),
+            "must name domains")
+    control("a role may not cite a non-domain as its domain",
+            lambda s: s["roles"][0].update(
+                {"domain_refs": [s["bodies"][0]["id"]]}),
+            "must name domains")
+    control("each material domain keeps a reviewed role citation",
+            _uncite_domain, "no role cites")
+    control("every named scale is exercised",
+            _unexercise_scale, "unexercised")
+    control("a required body keeps both positions",
+            _strip_body_positions, "both an affected and a checking")
+    control("an omission carries its risk-based reason",
+            _omission_empty_reason, "risk_reason")
+    control("an omission names a real role",
+            lambda s: s["role_omissions"].append(
+                {"role_ref": "FS-ROL-777", "omitted_scale": "individual",
+                 "risk_reason": "control"}),
+            "unknown role")
+    control("a stale omission is refused",
+            _stale_omission, "stale omission")
+    control("a role's layer is universal standing",
+            lambda s: s["roles"][0].update({"layer": "book-2-operation"}),
+            "never a floor-changing status")
+    control("a role anchor is closed",
+            lambda s: s["roles"][0]["formal_anchor"].update(
+                {"anchor": "vibes"}),
+            "unknown formal anchor")
+    control("a constitution-predicate anchor cites the constitution",
+            _anchor_without_nibli, "never only prose")
+    control("an unchecked private power is refused",
+            _power_held_unchecked, "unchecked private power")
+    control("a private power's affected side names roles",
+            _power_held_bad_affected, "must name roles")
+    control("a duplicate role id is caught",
+            lambda s: s["roles"].append(copy.deepcopy(s["roles"][0])),
+            "duplicate id")
+    control("role meanings cannot drift",
+            lambda s: s["scale_meanings"].pop("intergenerational"),
+            "must define exactly")
+    control("role_omissions may not outlive a deferred roles array",
+            lambda s: s.update({"roles": []}),
+            "while roles is deferred")
 
     passed = 0
     for entry in controls:
@@ -2507,6 +2819,94 @@ def _duplicate_keying_tuple(s):
     twin = copy.deepcopy(s["defects"][0])
     twin["id"] = "FS-DFT-998"
     s["defects"].append(twin)
+
+
+def _uncite_domain(s):
+    # The closure guarantees FS-DOM-12 is cited; strip it everywhere. A role
+    # left with no domains gets one so only the closure — not the non-empty
+    # rule — decides the verdict.
+    touched = False
+    for rec in s["roles"]:
+        if "FS-DOM-12" in rec["domain_refs"]:
+            rec["domain_refs"] = [r for r in rec["domain_refs"]
+                                  if r != "FS-DOM-12"]
+            touched = True
+        if not rec["domain_refs"]:
+            rec["domain_refs"] = ["FS-DOM-01"]
+    if not touched:
+        raise LedgerError("control setup: no role cites FS-DOM-12")
+
+
+def _unexercise_scale(s):
+    touched = False
+    for rec in s["roles"]:
+        if "intergenerational" in rec["scales"]:
+            rec["scales"] = [sc for sc in rec["scales"]
+                             if sc != "intergenerational"]
+            touched = True
+        if not rec["scales"]:
+            rec["scales"] = ["individual"]
+    if not touched:
+        raise LedgerError("control setup: no role exercises intergenerational")
+
+
+def _strip_body_positions(s):
+    bid = s["bodies"][0]["id"]
+    touched = False
+    for rec in s["roles"]:
+        kept = [pp for pp in rec["power_positions"]
+                if pp["body_ref"] != bid]
+        if len(kept) != len(rec["power_positions"]):
+            rec["power_positions"] = kept
+            touched = True
+    if not touched:
+        raise LedgerError(f"control setup: no role positions cite {bid}")
+
+
+def _omission_empty_reason(s):
+    recorded = {(e.get("role_ref"), e.get("omitted_scale"))
+                for e in s["role_omissions"] if "omitted_scale" in e}
+    for rec in s["roles"]:
+        for sc in ROLE_SCALES:
+            if sc not in rec["scales"] \
+                    and (rec["id"], sc) not in recorded:
+                s["role_omissions"].append(
+                    {"role_ref": rec["id"], "omitted_scale": sc,
+                     "risk_reason": ""})
+                return
+    raise LedgerError("control setup: no unrecorded omitted scale pair")
+
+
+def _stale_omission(s):
+    rec = s["roles"][0]
+    s["role_omissions"].append(
+        {"role_ref": rec["id"], "omitted_scale": rec["scales"][0],
+         "risk_reason": "control"})
+
+
+def _anchor_without_nibli(s):
+    for rec in s["roles"]:
+        if rec["formal_anchor"]["anchor"].startswith("constitution-predicate"):
+            rec["formal_anchor"]["refs"] = [
+                s["domains"][0]["source_refs"][0]]
+            return
+    raise LedgerError("control setup: no constitution-predicate role anchor")
+
+
+def _power_held_unchecked(s):
+    for rec in s["roles"]:
+        if rec.get("power_held"):
+            rec["power_held"]["checking_refs"] = []
+            return
+    raise LedgerError("control setup: no role holds a power")
+
+
+def _power_held_bad_affected(s):
+    for rec in s["roles"]:
+        if rec.get("power_held"):
+            rec["power_held"]["affected_role_refs"] = [s["bodies"][0]["id"]]
+            return
+    raise LedgerError("control setup: no role holds a power")
 
 
 _CONTROL_NEEDLE = ("new-book-plans/full-society-boundary-decision.md::"
@@ -2838,6 +3238,61 @@ def render(src: dict, resolution: dict) -> str:
         w(f"- Severity if left open: {rec['severity']}; consequence: "
           f"{rec['consequence']}; closure: {rec['closure_condition']}")
         w("")
+    w("## Roles, life-course stages, scales, and power positions")
+    w("")
+    w("Each role records the standing of a person in a position — life-course "
+      "stages are roles of a kind — and routes it against domains, scales, "
+      "and the ratified bodies. A role is never a floor-changing status: one "
+      "person occupies many roles and none buys a higher floor or a lower "
+      "one, which is why every role's layer is the constitutional invariant "
+      "of universal standing; rule content stays on domains and claims. Axis "
+      "coverage is mechanical — every domain cited, every named scale "
+      "exercised, every required body carrying both an affected and a "
+      "checking role position, every recorded private power naming its "
+      "affected counter-roles and its checkers — while pairwise sufficiency "
+      "stays a question for the independent scope review; no full Cartesian "
+      "product is attempted, and deliberately omitted candidates and "
+      "combinations are recorded below with risk-based reasons. The FS-POW "
+      "decomposition of each power remains its own deferred population. "
+      "Formal anchors stay honest: a derived constitution predicate, an "
+      "asserted predicate with its replace-card path, or "
+      "ratified-but-unimplemented doctrine.")
+    w("")
+    w("| Role | Kind | Domains | Scales | Affected by | Checks | Anchor |")
+    w("| --- | --- | --- | --- | --- | --- | --- |")
+    for rec in src["roles"]:
+        affected, checks = [], []
+        for pp in rec["power_positions"]:
+            (affected if pp["position"] == "affected" else checks).append(
+                pp["body_ref"])
+        w(f"| {rec['id']} {rec['title']} | {rec['role_kind']} | "
+          f"{', '.join(rec['domain_refs'])} | {', '.join(rec['scales'])} | "
+          f"{', '.join(affected) or '—'} | {', '.join(checks) or '—'} | "
+          f"{rec['formal_anchor']['anchor']} |")
+    w("")
+    w("Recorded private and delegated powers (the holder's own record names "
+      "who stands under the power and who checks it):")
+    w("")
+    for rec in src["roles"]:
+        ph = rec.get("power_held")
+        if ph is None:
+            continue
+        w(f"- `{rec['id']}` holds: {ph['power']} Affected: "
+          f"{', '.join(ph['affected_role_refs'])}; checked by: "
+          f"{', '.join(ph['checking_refs'])}.")
+    w("")
+    w("Deliberately omitted candidates and combinations (recorded, not "
+      "silent):")
+    w("")
+    for entry in src["role_omissions"]:
+        if "omitted_role" in entry:
+            w(f"- No role for {entry['omitted_role']}: "
+              f"{entry['risk_reason']}")
+        else:
+            what = entry.get("omitted_domain_ref") or entry["omitted_scale"]
+            w(f"- `{entry['role_ref']}` omits `{what}`: "
+              f"{entry['risk_reason']}")
+    w("")
     w("## Legacy coverage rows and their splits")
     w("")
     w("Imported from the coverage map with wording frozen; each split claim "
@@ -3099,10 +3554,11 @@ def render(src: dict, resolution: dict) -> str:
         w(f"| {rec['record_type']} | {rec['stage']} | `{rec['owner_ref']}` | "
           f"{rec['closure_condition']} |")
     w("")
-    w("The coverage-map view, contract cards, role matrix, dependency map, "
-      "assurance allocation, reader ledger, and Book 2 crosswalk are generated "
-      "projections of this source; each arrives with its owning stage or "
-      "tracker item, and none may be maintained by hand.")
+    w("The coverage-map view, the role matrix, and the Book 2 crosswalk are "
+      "landed generated projections of this source; contract cards, the "
+      "dependency map, the assurance allocation, and the reader ledger "
+      "arrive with their owning stage or tracker item, and none may be "
+      "maintained by hand.")
     w("")
     w("## Conservative rollup")
     w("")
