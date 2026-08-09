@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-09-envelope-v1",
+  "source_version": "fs-ledger-2026-08-09-r7-commitment-mechanics",
   "bound_sources_sha256": {
     "assurance_portfolio": "374d43f7cea935f78a91880d8b69bde8ce436855960b73b6d49d507625944885",
     "full_society_boundary": "7f19c61301c9884f775ff0fa668ffa0335184a420851a2049615259f11589dbc"
@@ -1930,12 +1930,12 @@
       "severity": "critical — Gate A demands a warrant no other route produces",
       "consequence": "independent scope review cannot yet be admitted",
       "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes",
-      "closure_condition": "evidence contract, admissibility criteria, named reviewer, and in-repo gate exist",
+      "closure_condition": "the evidence contract and admissibility criteria are specified by the scope-review protocol (new-book-plans/full-society-scope-review-protocol.md, candidate — author confirmation pending) and the ledger's commitment validation is the in-repo gate; protocol confirmation, the named reviewer, and the commissioning commitment remain author checkpoints",
       "route_status": "unbuilt",
       "warrants": "That named independent reviewers examined a named scope and their proposals received public dispositions, once available",
       "cannot_warrant": "Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure",
-      "falsification_condition": "Declared ahead of build: the review protocol must include a hash-committed material omission withheld from the review packet, and its triage must be exercised against seeded material and immaterial proposals classified correctly; a review event that misses the plant or whose triage passes the seeds fails its control. Declared, not shipped; the declaration does not make the route available",
-      "negative_control": "not-yet-shipped — declared but unbuilt; the declaration does not make the route available",
+      "falsification_condition": "Declared ahead of build and now shipped in structure: the scope-review protocol requires a hash-committed material omission withheld from the review packet plus seeded material and immaterial proposals whose triage must classify them correctly, and the generator refuses an independent review event without a pre-registered commitment — plant, seed, and protocol SHA-256 digests entered in this source at commissioning, pre-images author-held outside the repo. A review event that misses the plant or whose triage passes the seeds fails its control. The mechanics are landed; no reviewer is named and no event exists, so the route stays unbuilt and nothing here makes it available",
+      "negative_control": "Landed and watched failing in the generator's control harness: a missing or malformed commitment digest, a duplicate plant/seed digest, an independent event without a pre-registered commitment, a commitment that postdates its review window, breaks custody outside the repo, or mismatches the protocol text's digest, and a protocol status line that drifts from the reviewed source are each refused. The route remains unbuilt until a reviewer is named and an event runs",
       "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes"
     }
   ],
@@ -2108,13 +2108,19 @@
   ],
   "proposals": [],
   "review_events": [],
+  "review_protocol": {
+    "protocol_ref": "new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol",
+    "protocol_status": "candidate — author confirmation pending",
+    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: candidate — author confirmation pending",
+    "review_commitment": null
+  },
   "deferred_populations": [
     { "record_type": "roles", "owner_ref": "TODO.md::Build the roles, life-course", "closure_condition": "the roles, life-course, scale, and power-position matrix lands as records with stable FS-ROL IDs", "stage": "stage-3" },
     { "record_type": "powers", "owner_ref": "TODO.md::Maintain completed constitutional coverage rows", "closure_condition": "contract cards decompose each domain's public powers into FS-POW records", "stage": "stage-3" },
     { "record_type": "dependencies", "owner_ref": "TODO.md::Model the society's functional flows", "closure_condition": "the cross-domain dependency map lands as FS-DEP records classed guaranteed, democratically selected, operationally supplied, or externally assumed", "stage": "stage-3" },
     { "record_type": "scenarios", "owner_ref": "TODO.md::Build whole-society journeys", "closure_condition": "the journeys, collisions, and stress cases land as FS-SCN records with stable IDs", "stage": "stage-3" },
     { "record_type": "proposals", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure", "closure_condition": "independent scope review runs and every proposal receives one public proposal_disposition", "stage": "stage-4" },
-    { "record_type": "review_events", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure", "closure_condition": "an independent review event runs under a hash-committed protocol with named reviewers and passed seeded and planted-omission controls", "stage": "stage-4" }
+    { "record_type": "review_events", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure", "closure_condition": "an independent review event runs under the hash-committed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md), its plant and seed digests pre-registered in this source at commissioning, with named reviewers and passed seeded and planted-omission controls", "stage": "stage-4" }
   ],
   "stopping_rule": {
     "named_axes": ["legal-effect-class", "social-domain", "layer", "posture", "route", "overlay", "defect-disposition", "response-stage"],

@@ -19,10 +19,14 @@ computes resolution_status and blocking (never hand-authored), and mints
 resolution receipts only where a row's generated resolution permits one.
 Stage 4's machinery makes the future independent scope review admissible and
 the Gate A closure refusable-until-green: proposal and review-event schemas
-stand validated and empty, the candidate severity rubric awaits author
-confirmation, per-condition Gate A readiness is computed and rendered, and a
-closure record is refused while any condition computes unmet — closing Gate A
-is a deliberate future contract amendment, never a latent flip.
+stand validated and empty, the severity rubric is author-confirmed with its
+basis recorded, the scope-review protocol is bound as a candidate with its
+status line live-checked against the reviewed source, an independent review
+event is refused without a pre-registered commitment (plant, seed, and
+protocol SHA-256 digests entered at commissioning; pre-images author-held
+outside the repository), per-condition Gate A readiness is computed and
+rendered, and a closure record is refused while any condition computes unmet —
+closing Gate A is a deliberate future contract amendment, never a latent flip.
 Deferred record types carry explicit deferral records with owners.
 
 Usage:
@@ -166,6 +170,20 @@ REQUIRED_DEPENDENTS = ("FS-CLM-06", "FS-CLM-20")
 RUBRIC_STATUS_CANDIDATE = "candidate — author confirmation pending"
 RUBRIC_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 READINESS_MET = {"met-mechanically", "met-in-form"}
+
+# The scope-review protocol: R7's evidence contract and admissibility criteria
+# live in one candidate document, bound here by needle and by status line so
+# neither can flip alone. The commitment record inside `review_protocol` stays
+# null until the author commissions a review; plant and seed pre-images are
+# constructed only then, held outside the repository, and only their SHA-256
+# digests ever enter this source. The confirmed status constant arrives with
+# the author's confirmation commit — the severity rubric's own two-state
+# history — and until then any other status string is refused.
+PROTOCOL_DOC = pathlib.Path(
+    "new-book-plans/full-society-scope-review-protocol.md")
+PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
+SHA256_HEX_RE = re.compile(r"^[0-9a-f]{64}$")
+ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # Second output: the coverage map's section-3 table is a generated region of
 # this ledger — the ratified cell texts live verbatim-frozen on the legacy-row
@@ -1613,6 +1631,32 @@ def validate_review_events(src: dict):
                         "have passed — a review that misses the plant or "
                         "whose triage passes the seeds fails its control"
                     )
+            if rec["protocol_ref"].split("::", 1)[0] != str(PROTOCOL_DOC):
+                raise LedgerError(
+                    f"{ctx}: an independent event must run under the "
+                    f"scope-review protocol ({PROTOCOL_DOC})"
+                )
+            commitment = (src.get("review_protocol") or {}).get(
+                "review_commitment")
+            if not commitment:
+                raise LedgerError(
+                    f"{ctx}: an independent event requires a pre-registered "
+                    "review commitment — plant and seed digests enter this "
+                    "source at commissioning, before the packet is assembled"
+                )
+            open_date = rec["received_window"].split(" ", 1)[0]
+            if not ISO_DATE_RE.match(open_date):
+                raise LedgerError(
+                    f"{ctx}: an independent event's received_window opens "
+                    "with an ISO date (YYYY-MM-DD …) so the commitment's "
+                    "precedence is checkable"
+                )
+            if commitment.get("committed_date", "") > open_date:
+                raise LedgerError(
+                    f"{ctx}: the review commitment must precede the received "
+                    "window — a commitment that postdates its event is no "
+                    "commitment"
+                )
         else:
             require_str(rec, "protocol_ref", ctx)
 
@@ -1758,6 +1802,97 @@ def validate_severity_rubric(src: dict):
             f"severity_rubric.rubric_status must be exactly "
             f"{RUBRIC_STATUS_CANDIDATE!r} or {RUBRIC_STATUS_CONFIRMED!r} — "
             "confirmation is a recorded author act, never a rewording"
+        )
+
+
+def validate_review_protocol(src: dict):
+    """The scope-review protocol binding. The protocol document carries R7's
+    evidence contract and admissibility criteria as a candidate awaiting
+    author confirmation; the commitment record stays null until the author
+    commissions a review. Pre-images are author-held outside the repository —
+    only their SHA-256 digests ever enter this source, and an independent
+    review event is refused without them (validate_review_events)."""
+    if "review_protocol" not in src:
+        raise LedgerError(
+            "review_protocol must be present — the scope-review protocol "
+            "binding, null commitment until the author commissions a review"
+        )
+    rp = src["review_protocol"]
+    ctx = "review_protocol"
+    if not isinstance(rp, dict):
+        raise LedgerError(f"{ctx} must be an object")
+    exact_keys(rp, ["protocol_ref", "protocol_status", "status_line_ref",
+                    "review_commitment"], ctx)
+    status = require_str(rp, "protocol_status", ctx)
+    if status != PROTOCOL_STATUS_CANDIDATE:
+        raise LedgerError(
+            f"{ctx}: protocol_status must be exactly "
+            f"{PROTOCOL_STATUS_CANDIDATE!r} until a future author commit "
+            "confirms it — confirmation is a recorded author act, never a "
+            "rewording"
+        )
+    ref = require_str(rp, "protocol_ref", ctx)
+    validate_reference(ref, f"{ctx}.protocol_ref")
+    if ref.split("::", 1)[0] != str(PROTOCOL_DOC):
+        raise LedgerError(
+            f"{ctx}.protocol_ref must resolve into the scope-review protocol "
+            f"document ({PROTOCOL_DOC})"
+        )
+    line_ref = require_str(rp, "status_line_ref", ctx)
+    validate_reference(line_ref, f"{ctx}.status_line_ref")
+    line_path, line_needle = line_ref.split("::", 1)
+    if line_path != str(PROTOCOL_DOC):
+        raise LedgerError(
+            f"{ctx}.status_line_ref must resolve into the scope-review "
+            f"protocol document ({PROTOCOL_DOC})"
+        )
+    if line_needle != "Status: " + status:
+        raise LedgerError(
+            f"{ctx}: the protocol document's status line must record the "
+            "recorded status — the document and this source flip together or "
+            "not at all"
+        )
+    commitment = rp["review_commitment"]
+    if commitment is None:
+        return
+    cctx = f"{ctx}.review_commitment"
+    if not isinstance(commitment, dict):
+        raise LedgerError(f"{cctx} must be null or an object")
+    exact_keys(commitment,
+               ["plant_commitment_sha256", "seed_commitment_sha256",
+                "protocol_sha256", "committed_date", "custody"], cctx)
+    for key in ("plant_commitment_sha256", "seed_commitment_sha256",
+                "protocol_sha256"):
+        val = require_str(commitment, key, cctx)
+        if not SHA256_HEX_RE.match(val):
+            raise LedgerError(
+                f"{cctx}.{key} must be 64 lowercase hex characters — the "
+                "SHA-256 digest of an author-held pre-image or of the "
+                "protocol document"
+            )
+    if commitment["plant_commitment_sha256"] == \
+            commitment["seed_commitment_sha256"]:
+        raise LedgerError(
+            f"{cctx}: the plant and seed commitments must be distinct "
+            "pre-images"
+        )
+    actual = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    if commitment["protocol_sha256"] != actual:
+        raise LedgerError(
+            f"{cctx}.protocol_sha256 does not match the protocol document's "
+            "current bytes — a commitment binds the exact protocol text; "
+            "re-commission after any protocol edit"
+        )
+    date = require_str(commitment, "committed_date", cctx)
+    if not ISO_DATE_RE.match(date):
+        raise LedgerError(
+            f"{cctx}.committed_date must be an ISO date (YYYY-MM-DD)"
+        )
+    custody = require_str(commitment, "custody", cctx)
+    if "outside the repo" not in custody:
+        raise LedgerError(
+            f"{cctx}.custody must state that pre-images stay outside the "
+            "repository — only digests ever enter this source"
         )
 
 
@@ -1920,6 +2055,7 @@ def validate(src: dict):
     resolution = compute_resolution(src)
     validate_receipts(src, ids, resolution)
     validate_residual_coverage(src)
+    validate_review_protocol(src)
     validate_review_events(src)
     validate_proposals(src, ids)
     validate_severity_rubric(src)
@@ -2048,6 +2184,53 @@ def negative_controls(src: dict) -> int:
                 {"rubric_status": "confirmed"}))
     control("a confirmed rubric records its basis",
             _confirmed_rubric_without_basis)
+    control("review_protocol must be present",
+            lambda s: s.pop("review_protocol"),
+            "must be present")
+    control("the protocol status is exact until the author confirms",
+            lambda s: s["review_protocol"].update(
+                {"protocol_status": "confirmed"}),
+            "recorded author act")
+    control("the protocol's status line is live-checked",
+            lambda s: s["review_protocol"].update(
+                {"status_line_ref": str(PROTOCOL_DOC) +
+                 "::Status: author-confirmed — control"}),
+            "exactly once")
+    control("the status line must record the recorded status",
+            lambda s: s["review_protocol"].update(
+                {"status_line_ref": _PROTOCOL_NEEDLE}),
+            "status line must record")
+    control("an independent event requires a pre-registered commitment",
+            _event_without_commitment, "pre-registered")
+    control("a commitment digest is 64 lowercase hex",
+            lambda s: _mk_commitment(s).update(
+                {"plant_commitment_sha256": "A" * 64}),
+            "lowercase hex")
+    control("plant and seed commitments are distinct",
+            lambda s: _mk_commitment(s).update(
+                {"seed_commitment_sha256": "a" * 64}),
+            "distinct")
+    control("a commitment binds the protocol text by digest",
+            lambda s: _mk_commitment(s).update(
+                {"protocol_sha256": "0" * 64}),
+            "re-commission")
+    control("a commitment date is an ISO date",
+            lambda s: _mk_commitment(s).update(
+                {"committed_date": "soon"}),
+            "YYYY-MM-DD")
+    control("a commitment may not postdate its review window",
+            _commitment_postdates_window, "precede")
+    control("an independent window opens with its date",
+            _window_without_date, "opens with")
+    control("custody stays outside the repository",
+            lambda s: _mk_commitment(s).update(
+                {"custody": "kept in-repo for convenience"}),
+            "outside the repo")
+    control("an independent event runs under the scope-review protocol",
+            _event_wrong_protocol, "scope-review protocol")
+    control("a commitment carries exactly its declared keys",
+            lambda s: _mk_commitment(s).update({"note": "extra"}),
+            "unexpected keys")
     control("a calibrated envelope is refused in this contract",
             lambda s: s["envelope"][1].update(
                 {"envelope_status": "calibrated"}),
@@ -2244,12 +2427,27 @@ def _duplicate_keying_tuple(s):
 
 _CONTROL_NEEDLE = ("new-book-plans/full-society-boundary-decision.md::"
                    "## 4. Versioned closure")
+_PROTOCOL_NEEDLE = ("new-book-plans/full-society-scope-review-protocol.md::"
+                    "# Full-Society Scope-Review Protocol")
 
 
 def _strip_deferrals(s, *types):
     s["deferred_populations"] = [
         d for d in s["deferred_populations"] if d["record_type"] not in types
     ]
+
+
+def _mk_commitment(s):
+    s["review_protocol"]["review_commitment"] = {
+        "plant_commitment_sha256": "a" * 64,
+        "seed_commitment_sha256": "b" * 64,
+        "protocol_sha256": hashlib.sha256(
+            (ROOT / PROTOCOL_DOC).read_bytes()).hexdigest(),
+        "committed_date": "2026-08-09",
+        "custody": "control fixture — pre-images author-held outside the "
+                   "repository",
+    }
+    return s["review_protocol"]["review_commitment"]
 
 
 def _mk_event(s, independent=False):
@@ -2263,9 +2461,11 @@ def _mk_event(s, independent=False):
     }
     if independent:
         ev["reviewers"] = [{"identity": "control", "discipline": "control"}]
-        ev["protocol_ref"] = _CONTROL_NEEDLE
+        ev["protocol_ref"] = _PROTOCOL_NEEDLE
+        ev["received_window"] = "2026-09-01 to 2026-10-01"
         ev["seeded_control_outcome"] = "passed — control"
         ev["planted_omission_outcome"] = "passed — control"
+        _mk_commitment(s)
     s["review_events"].append(ev)
     return ev
 
@@ -2326,6 +2526,26 @@ def _closure_non_independent_event(s):
 def _event_fake_independence(s):
     ev = _mk_event(s, independent=True)
     ev["reviewers"] = []
+
+
+def _event_without_commitment(s):
+    _mk_event(s, independent=True)
+    s["review_protocol"]["review_commitment"] = None
+
+
+def _commitment_postdates_window(s):
+    _mk_event(s, independent=True)
+    s["review_protocol"]["review_commitment"]["committed_date"] = "2027-01-01"
+
+
+def _window_without_date(s):
+    ev = _mk_event(s, independent=True)
+    ev["received_window"] = "control"
+
+
+def _event_wrong_protocol(s):
+    ev = _mk_event(s, independent=True)
+    ev["protocol_ref"] = _CONTROL_NEEDLE
 
 
 def _proposal_added_unresolvable(s):
@@ -2628,8 +2848,27 @@ def render(src: dict, resolution: dict) -> str:
       "reviewer identities, a resolving protocol, and passed seeded and "
       "planted-omission controls, none of which that corpus can supply. A "
       "reviewer compels a reasoned public disposition, not acceptance and not "
-      "a veto; the severity owner and the closure record are author "
+      "a veto; the protocol confirmation, the review commissioning and its "
+      "commitment, the severity owner, and the closure record are author "
       "checkpoints.")
+    w("")
+    rp = src["review_protocol"]
+    line = (f"The scope-review protocol is bound at `{rp['protocol_ref']}`, "
+            f"status {rp['protocol_status']}; its status line is live-checked "
+            "against this source. ")
+    if rp["review_commitment"] is None:
+        line += ("No review has been commissioned: the commitment record is "
+                 "null, plant and seed pre-images are constructed only at "
+                 "commissioning and stay author-held outside the repository, "
+                 "and an independent review event without a pre-registered "
+                 "commitment is refused.")
+    else:
+        c = rp["review_commitment"]
+        line += (f"A commitment was published on {c['committed_date']}: "
+                 f"plant `{c['plant_commitment_sha256']}`, seeds "
+                 f"`{c['seed_commitment_sha256']}`, protocol text "
+                 f"`{c['protocol_sha256']}`; {c['custody']}.")
+    w(line)
     w("")
     w("| Rubric class | Meaning |")
     w("| --- | --- |")
