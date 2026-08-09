@@ -2,9 +2,9 @@
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
-  "status": "stage_3_executable_projections",
+  "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-09-stage-3x",
+  "source_version": "fs-ledger-2026-08-09-stage-4m",
   "bound_sources_sha256": {
     "assurance_portfolio": "374d43f7cea935f78a91880d8b69bde8ce436855960b73b6d49d507625944885",
     "full_society_boundary": "7f19c61301c9884f775ff0fa668ffa0335184a420851a2049615259f11589dbc"
@@ -228,7 +228,8 @@
     "FS-THR": "threshold",
     "FS-DFT": "defect",
     "FS-RCP": "resolution_receipt",
-    "FS-PRO": "proposal"
+    "FS-PRO": "proposal",
+    "FS-REV": "review_event"
   },
   "domains": [
     {
@@ -1918,9 +1919,9 @@
       "closure_condition": "evidence contract, admissibility criteria, named reviewer, and in-repo gate exist",
       "route_status": "unbuilt",
       "warrants": "That named independent reviewers examined a named scope and their proposals received public dispositions, once available",
-      "cannot_warrant": "Formal entailment or the truth of any reviewed claim",
-      "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption",
-      "negative_control": "not-yet-declared",
+      "cannot_warrant": "Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure",
+      "falsification_condition": "Declared ahead of build: the review protocol must include a hash-committed material omission withheld from the review packet, and its triage must be exercised against seeded material and immaterial proposals classified correctly; a review event that misses the plant or whose triage passes the seeds fails its control. Declared, not shipped; the declaration does not make the route available",
+      "negative_control": "not-yet-shipped — declared but unbuilt; the declaration does not make the route available",
       "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes"
     }
   ],
@@ -2052,13 +2053,15 @@
     { "id": "FS-RCP-05", "title": "The Esa passage tells the truth about Koa", "defect_row_ref": "FS-DFT-15", "defect_id": "FS-DFT-15", "affected_claim_ref": "FS-CLM-19", "consequence_id": "prose-record-mismatch", "defect_disposition": "eliminated-structurally", "response_stage": "implemented-in-assigned-route", "claim_posture": "Derived", "route_ref": "FS-RTE-01", "admissible_evidence": "executable pins over the current source", "assurance_ceiling": "Derived", "what_failed": "The chapter claimed Koa examined Esa with the credential; the record holds a personhood entry and one documented fact — no judging, no seat, no pen.", "hostile_witness": "Both false clauses, quoted back by a hostile review as the design's own confession.", "why_it_failed": "The prose asserted acts the record never held, and no pin guarded the mismatch.", "response_change": "The passage was corrected to the record and both false clauses are now pinned FALSE in the chapter's suite.", "now_follows": "The prose and the record agree, and the count isolation lives in a pin-file fixture that cannot void alone.", "proof_ref": "book-1/05-voiding.pins.nibli::? judge(Koa, Esa).", "negative_control_ref": "book-1/05-voiding.pins.nibli::? capture(Koa, Esa).", "still_does_not_follow": "The record still buys an author for the why and not its truth, and the void's own grounds stay deliberately unasked.", "residuals": ["none beyond the affected claim's own scope bound — the family has no residual sibling row"], "scope_id": "chapter-five-prose", "source_version": "fs-ledger-2026-08-09-stage-2", "envelope_id": "FS-ENV-00", "owner_ref": "TODO.md::Replace confession-as-ending", "eligible_gate": "gate-a", "reader_mapping_ref": "book-1/05-voiding.md::Koa recorded a finding about Esa" }
   ],
   "proposals": [],
+  "review_events": [],
   "deferred_populations": [
     { "record_type": "roles", "owner_ref": "TODO.md::Build the roles, life-course", "closure_condition": "the roles, life-course, scale, and power-position matrix lands as records with stable FS-ROL IDs", "stage": "stage-3" },
     { "record_type": "powers", "owner_ref": "TODO.md::Maintain completed constitutional coverage rows", "closure_condition": "contract cards decompose each domain's public powers into FS-POW records", "stage": "stage-3" },
     { "record_type": "dependencies", "owner_ref": "TODO.md::Model the society's functional flows", "closure_condition": "the cross-domain dependency map lands as FS-DEP records classed guaranteed, democratically selected, operationally supplied, or externally assumed", "stage": "stage-3" },
     { "record_type": "scenarios", "owner_ref": "TODO.md::Build whole-society journeys", "closure_condition": "the journeys, collisions, and stress cases land as FS-SCN records with stable IDs", "stage": "stage-3" },
     { "record_type": "thresholds", "owner_ref": "TODO.md::Define the reference-society envelope", "closure_condition": "adequacy, accessibility, continuity, resilience, and resource thresholds land as FS-THR records bound to a versioned envelope", "stage": "stage-3" },
-    { "record_type": "proposals", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure", "closure_condition": "independent scope review runs and every proposal receives one public proposal_disposition", "stage": "stage-4" }
+    { "record_type": "proposals", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure", "closure_condition": "independent scope review runs and every proposal receives one public proposal_disposition", "stage": "stage-4" },
+    { "record_type": "review_events", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure", "closure_condition": "an independent review event runs under a hash-committed protocol with named reviewers and passed seeded and planted-omission controls", "stage": "stage-4" }
   ],
   "stopping_rule": {
     "named_axes": ["legal-effect-class", "social-domain", "layer", "posture", "route", "overlay", "defect-disposition", "response-stage"],
@@ -2074,6 +2077,14 @@
     "no_hiding_rule": "No critical unresolved defect affecting a gate's permitted claim may be hidden by classification, assignment, disclosure, or a stopping-rule decision.",
     "source_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure"
   },
+  "severity_rubric": {
+    "critical": "Accepting the proposal would falsify the gate's permitted claim — a scope or assurance omission. An unresolved critical item blocks the affected gate even when it has an owner or has been disclosed, and a checked post-closure critical classification reopens Gate A.",
+    "material": "Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives a severity owner, an independent check, and one public disposition; retention as a limit creates or joins a stable defect row.",
+    "minor": "The editorial band: no record change and no materiality under the test. Recorded reasons suffice; no severity machinery attaches.",
+    "materiality_ref": "stopping_rule.materiality_test",
+    "rubric_status": "candidate — author confirmation pending"
+  },
+  "closure_record": null,
   "acceptance_gate": {
     "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",

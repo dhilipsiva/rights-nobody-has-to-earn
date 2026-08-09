@@ -17,6 +17,12 @@ Stage 2 backfills every declared defect, repair narrative, open gap, and
 sibling residual as keyed FS-DFT rows under a live-read citation closure,
 computes resolution_status and blocking (never hand-authored), and mints
 resolution receipts only where a row's generated resolution permits one.
+Stage 4's machinery makes the future independent scope review admissible and
+the Gate A closure refusable-until-green: proposal and review-event schemas
+stand validated and empty, the candidate severity rubric awaits author
+confirmation, per-condition Gate A readiness is computed and rendered, and a
+closure record is refused while any condition computes unmet — closing Gate A
+is a deliberate future contract amendment, never a latent flip.
 Deferred record types carry explicit deferral records with owners.
 
 Usage:
@@ -124,8 +130,13 @@ PROPOSAL_DISPOSITIONS = ["added", "classified-out", "retained-limit"]
 
 # Stage marker: the reviewed source's status and the report's stage label move in
 # lockstep with the content stages; bump both here and in the JSON together.
-EXPECTED_STATUS = "stage_3_executable_projections"
-STAGE_LABEL = "stage 3"
+EXPECTED_STATUS = "stage_4_review_machinery"
+STAGE_LABEL = "stage 4 machinery"
+
+# The candidate rubric's status string is exact until a future author commit
+# confirms it; an unconfirmed rubric computes as an unmet closure condition.
+RUBRIC_STATUS_CANDIDATE = "candidate — author confirmation pending"
+READINESS_MET = {"met-mechanically", "met-in-form"}
 
 # Second output: the coverage map's section-3 table is a generated region of
 # this ledger — the ratified cell texts live verbatim-frozen on the legacy-row
@@ -165,6 +176,7 @@ DEFERRABLE_ARRAYS = [
     "defects",
     "receipts",
     "proposals",
+    "review_events",
 ]
 RECORD_ARRAYS = [
     "domains",
@@ -1343,6 +1355,283 @@ def splice_coverage(text: str, body: str) -> str:
                          text, count=1)
 
 
+REVIEW_EVENT_KEYS = [
+    "id", "title", "reviewers", "protocol_ref", "independence",
+    "received_window", "cutoff_date", "seeded_control_outcome",
+    "planted_omission_outcome",
+]
+
+
+def validate_review_events(src: dict):
+    """The stopping rule's named review event. independence: true is the R7
+    admissibility test: named reviewer identities, a resolving protocol, and
+    passed controls — the in-repo reviewer corpus can never supply these, and
+    it is never admissible independent-review evidence for closure condition
+    five, by doctrine and by this computation."""
+    for i, rec in enumerate(src.get("review_events", [])):
+        ctx = f"review_events[{i}] ({rec.get('id', '?')})"
+        exact_keys(rec, REVIEW_EVENT_KEYS, ctx)
+        for key in ("title", "received_window", "cutoff_date",
+                    "seeded_control_outcome", "planted_omission_outcome"):
+            require_str(rec, key, ctx)
+        if not isinstance(rec["independence"], bool):
+            raise LedgerError(f"{ctx}: independence must be a boolean")
+        reviewers = rec["reviewers"]
+        if not isinstance(reviewers, list):
+            raise LedgerError(f"{ctx}: reviewers must be a list")
+        for j, rv in enumerate(reviewers):
+            exact_keys(rv, ["identity", "discipline"], f"{ctx}.reviewers[{j}]")
+            require_str(rv, "identity", f"{ctx}.reviewers[{j}]")
+            require_str(rv, "discipline", f"{ctx}.reviewers[{j}]")
+        if rec["independence"]:
+            if not reviewers:
+                raise LedgerError(
+                    f"{ctx}: an independent event requires named reviewer "
+                    "identities"
+                )
+            validate_reference(rec["protocol_ref"], f"{ctx}.protocol_ref")
+            for key in ("seeded_control_outcome", "planted_omission_outcome"):
+                if not rec[key].startswith("passed"):
+                    raise LedgerError(
+                        f"{ctx}: an independent event requires its {key} to "
+                        "have passed — a review that misses the plant or "
+                        "whose triage passes the seeds fails its control"
+                    )
+        else:
+            require_str(rec, "protocol_ref", ctx)
+
+
+PROPOSAL_KEYS = [
+    "id", "title", "proposal", "source", "received_date", "triaged_date",
+    "materiality_finding", "materiality_reason", "proposal_disposition",
+    "reasons", "review_event_ref",
+]
+PROPOSAL_OPTIONAL = [
+    "severity", "severity_owner", "independent_check", "created_record_refs",
+    "routed_unestablished_disposition", "defect_row_ref",
+]
+
+
+def validate_proposals(src: dict, ids: dict):
+    events_by_id = {r["id"]: r for r in src.get("review_events", [])}
+    defect_ids = {r["id"] for r in src.get("defects", [])}
+    for i, rec in enumerate(src.get("proposals", [])):
+        ctx = f"proposals[{i}] ({rec.get('id', '?')})"
+        exact_keys(rec, PROPOSAL_KEYS, ctx, optional=PROPOSAL_OPTIONAL)
+        for key in ("title", "proposal", "source", "received_date",
+                    "triaged_date", "materiality_reason", "reasons"):
+            require_str(rec, key, ctx)
+        finding = rec["materiality_finding"]
+        if finding not in ("material", "immaterial"):
+            raise LedgerError(
+                f"{ctx}: materiality_finding must be material or immaterial, "
+                "judged under the stopping rule's materiality test"
+            )
+        disposition = rec["proposal_disposition"]
+        if disposition not in PROPOSAL_DISPOSITIONS:
+            raise LedgerError(f"{ctx}: unknown proposal_disposition")
+        event = events_by_id.get(rec["review_event_ref"])
+        if event is None:
+            raise LedgerError(f"{ctx}: review_event_ref names no review event")
+        if finding == "material":
+            sev = rec.get("severity")
+            if sev not in ("critical", "material"):
+                raise LedgerError(
+                    f"{ctx}: a material proposal carries a severity class of "
+                    "critical or material under the candidate rubric"
+                )
+            validate_reference(rec.get("severity_owner", ""),
+                              f"{ctx}.severity_owner")
+            check = rec.get("independent_check")
+            if not isinstance(check, str) or not check:
+                raise LedgerError(
+                    f"{ctx}: a material proposal requires its independent check"
+                )
+            if event["independence"]:
+                validate_reference(check, f"{ctx}.independent_check")
+            elif not check.startswith("none-recorded — "):
+                raise LedgerError(
+                    f"{ctx}: on a non-independent event the check is recorded "
+                    "as absent with its reason, never fabricated"
+                )
+        else:
+            for key in ("severity", "severity_owner", "independent_check"):
+                if key in rec:
+                    raise LedgerError(
+                        f"{ctx}: {key} belongs only on material proposals — "
+                        "minor is the editorial band inside the rubric prose, "
+                        "not a materiality escape hatch"
+                    )
+            if disposition != "classified-out":
+                raise LedgerError(
+                    f"{ctx}: an immaterial proposal is classified out with "
+                    "reasons"
+                )
+        if disposition == "added":
+            refs = rec.get("created_record_refs")
+            if not isinstance(refs, list) or not refs:
+                raise LedgerError(
+                    f"{ctx}: added means records were created — name them"
+                )
+            for j, ref in enumerate(refs):
+                if ref in ids:
+                    continue
+                validate_reference(ref, f"{ctx}.created_record_refs[{j}]")
+        elif "created_record_refs" in rec:
+            raise LedgerError(
+                f"{ctx}: created_record_refs belongs only on added proposals"
+            )
+        if disposition == "classified-out":
+            routed = rec.get("routed_unestablished_disposition")
+            low = rec["reasons"].lower()
+            if routed is not None:
+                if routed not in UNESTABLISHED_DISPOSITIONS:
+                    raise LedgerError(
+                        f"{ctx}: unknown routed unestablished disposition"
+                    )
+            elif "duplicate" not in low and "immaterial" not in low:
+                raise LedgerError(
+                    f"{ctx}: a classification that routes the item outward "
+                    "carries the matching Unestablished disposition; only a "
+                    "duplicate or immaterial classification carries none"
+                )
+        elif "routed_unestablished_disposition" in rec:
+            raise LedgerError(
+                f"{ctx}: routing dispositions belong only on classified-out "
+                "proposals"
+            )
+        if disposition == "retained-limit":
+            dref = rec.get("defect_row_ref")
+            if dref not in defect_ids:
+                raise LedgerError(
+                    f"{ctx}: retention creates or joins a stable defect row — "
+                    "the retained limit must link one"
+                )
+        elif "defect_row_ref" in rec:
+            raise LedgerError(
+                f"{ctx}: defect_row_ref belongs only on retained-limit "
+                "proposals"
+            )
+
+
+def validate_severity_rubric(src: dict):
+    rub = src.get("severity_rubric")
+    if not isinstance(rub, dict):
+        raise LedgerError("severity_rubric must be an object")
+    exact_keys(rub, ["critical", "material", "minor", "materiality_ref",
+                     "rubric_status"], "severity_rubric")
+    for key in ("critical", "material", "minor"):
+        require_str(rub, key, "severity_rubric")
+    if rub["materiality_ref"] != "stopping_rule.materiality_test":
+        raise LedgerError(
+            "severity_rubric.materiality_ref must bind the ratified "
+            "materiality test by reference, never a paraphrase"
+        )
+    if rub["rubric_status"] != RUBRIC_STATUS_CANDIDATE:
+        raise LedgerError(
+            f"severity_rubric.rubric_status must be exactly "
+            f"{RUBRIC_STATUS_CANDIDATE!r} until a future author commit "
+            "confirms it"
+        )
+
+
+def compute_gate_a_readiness(src: dict, resolution: dict):
+    """The single computation the render and the closure validator both
+    consume. Statuses echo the stopping rule's closure conditions by index so
+    the two texts can never drift. No aggregate is ever derived from this."""
+    conds = src["stopping_rule"]["closure_conditions"]
+    deferred = sorted(d["record_type"] for d in src["deferred_populations"])
+    blocking = sorted(rid for rid, r in resolution.items() if r["blocking"])
+    independent = [e for e in src.get("review_events", [])
+                   if e.get("independence") is True]
+    rows = []
+    if deferred:
+        rows.append((conds[0], "unmet",
+                     "record types remain deferred with owners: "
+                     + ", ".join(deferred)))
+    else:
+        rows.append((conds[0], "met-in-form",
+                     "every record type is populated or classified out; "
+                     "material sufficiency stays a review question"))
+    rows.append((conds[1], "form-only",
+                 "the projections that exist regenerate — the check itself is "
+                 "the proof — while the role matrix, dependency map, assurance "
+                 "allocation, and reader ledger do not exist yet"))
+    if blocking:
+        rows.append((conds[2], "unmet",
+                     "blocking defect rows exist: " + ", ".join(blocking)))
+    else:
+        rows.append((conds[2], "met-mechanically",
+                     "no critical unresolved defect row blocks a claim"))
+    rows.append((conds[3], "met-in-form",
+                 "severity, consequence, owner, closure condition, and "
+                 "public-claim limitation are validator-enforced on every "
+                 "unresolved object; substance is reviewed, not proven"))
+    if independent:
+        rows.append((conds[4], "met-in-form",
+                     "an independent review event exists; its proposals carry "
+                     "their dispositions"))
+    else:
+        rows.append((conds[4], "unmet-external",
+                     "no review event with independence true exists, and the "
+                     "in-repo reviewer corpus is never admissible for this "
+                     "condition"))
+    preconditions = []
+    if src["envelope"][0]["id"] == ENVELOPE_STUB_ID:
+        preconditions.append(("the reference envelope", "unmet-external",
+                              "still the explicit stub; the envelope item owns "
+                              "its versioning"))
+    if src["severity_rubric"]["rubric_status"] == RUBRIC_STATUS_CANDIDATE:
+        preconditions.append(("the severity rubric", "unmet",
+                              "candidate — author confirmation pending"))
+    return rows, preconditions
+
+
+def validate_closure_record(src: dict, readiness):
+    if "closure_record" not in src:
+        raise LedgerError(
+            "closure_record must be present — null until the author closes"
+        )
+    rec = src["closure_record"]
+    if rec is None:
+        return
+    ctx = "closure_record"
+    exact_keys(
+        rec,
+        ["gate", "permitted_claim", "source_version", "envelope_ref",
+         "candidate_ids", "review_cutoff", "review_event_ref",
+         "assurance_record_refs", "residual_refs", "claim_limitations",
+         "author_ratification_ref"],
+        ctx,
+    )
+    if rec["envelope_ref"] == ENVELOPE_STUB_ID:
+        raise LedgerError(
+            f"{ctx}: a closure record may not cite the envelope stub — the "
+            "stub can route, never assure"
+        )
+    events_by_id = {r["id"]: r for r in src.get("review_events", [])}
+    event = events_by_id.get(rec["review_event_ref"])
+    if event is None or event.get("independence") is not True:
+        raise LedgerError(
+            f"{ctx}: the closure record must name an independent review event"
+        )
+    rows, preconditions = readiness
+    for name, status, reason in list(rows) + list(preconditions):
+        if status not in READINESS_MET:
+            raise LedgerError(
+                f"{ctx}: a closure record may not exist while a closure "
+                f"condition computes unmet — {name}: {reason}"
+            )
+    validate_reference(rec["author_ratification_ref"],
+                      f"{ctx}.author_ratification_ref")
+    if src["acceptance_gate"]["gate_a_status"] != "passed":
+        raise LedgerError(
+            f"{ctx}: a closure record requires gate_a_status passed, which "
+            "this contract refuses — closing Gate A is a deliberate future "
+            "amendment, never a latent flip"
+        )
+
+
 def validate_acceptance(src: dict):
     gate = src.get("acceptance_gate")
     if not isinstance(gate, dict):
@@ -1382,10 +1671,15 @@ def validate(src: dict):
     resolution = compute_resolution(src)
     validate_receipts(src, ids, resolution)
     validate_residual_coverage(src)
+    validate_review_events(src)
+    validate_proposals(src, ids)
+    validate_severity_rubric(src)
     validate_deferred(src)
     validate_enum_mapping(src)
     validate_stopping_rule(src)
     validate_acceptance(src)
+    readiness = compute_gate_a_readiness(src, resolution)
+    validate_closure_record(src, readiness)
     validate_coverage_region(src)
     return resolution
 
@@ -1480,6 +1774,29 @@ def negative_controls(src: dict) -> int:
                 {"legacy_gap": s["legacy_rows"][0]["legacy_gap"] +
                  " ## 3. Current coverage versus target scope"}),
             "exactly once")
+    control("a closure record cannot exist while conditions compute unmet",
+            _closure_while_unmet, "may not exist while")
+    control("a closure record may not cite the envelope stub",
+            _closure_env_stub, "never assure")
+    control("a closure record requires an independent review event",
+            _closure_non_independent_event, "independent review event")
+    control("independence requires named reviewers and passed controls",
+            _event_fake_independence, "independent event requires")
+    control("an added proposal names resolvable created records",
+            _proposal_added_unresolvable)
+    control("a retained limit links its defect row",
+            _proposal_retained_without_defect)
+    control("outward classification carries its routing disposition",
+            _proposal_routed_without_disposition)
+    control("a material proposal carries severity, owner, and check",
+            _proposal_material_missing_fields)
+    control("severity belongs only on material proposals",
+            _proposal_class_on_immaterial)
+    control("a proposal must name its review event",
+            _proposal_unknown_event)
+    control("the rubric status is exact until confirmed",
+            lambda s: s["severity_rubric"].update(
+                {"rubric_status": "confirmed"}))
 
     passed = 0
     for entry in controls:
@@ -1639,6 +1956,119 @@ def _duplicate_keying_tuple(s):
     s["defects"].append(twin)
 
 
+_CONTROL_NEEDLE = ("new-book-plans/full-society-boundary-decision.md::"
+                   "## 4. Versioned closure")
+
+
+def _strip_deferrals(s, *types):
+    s["deferred_populations"] = [
+        d for d in s["deferred_populations"] if d["record_type"] not in types
+    ]
+
+
+def _mk_event(s, independent=False):
+    _strip_deferrals(s, "review_events")
+    ev = {
+        "id": "FS-REV-99", "title": "control fixture",
+        "reviewers": [], "protocol_ref": "none — control fixture",
+        "independence": independent, "received_window": "control",
+        "cutoff_date": "control", "seeded_control_outcome": "not-run",
+        "planted_omission_outcome": "not-run",
+    }
+    if independent:
+        ev["reviewers"] = [{"identity": "control", "discipline": "control"}]
+        ev["protocol_ref"] = _CONTROL_NEEDLE
+        ev["seeded_control_outcome"] = "passed — control"
+        ev["planted_omission_outcome"] = "passed — control"
+    s["review_events"].append(ev)
+    return ev
+
+
+def _mk_proposal(s, **overrides):
+    _mk_event(s)
+    _strip_deferrals(s, "proposals")
+    rec = {
+        "id": "FS-PRO-99", "title": "control fixture", "proposal": "control",
+        "source": "control", "received_date": "control",
+        "triaged_date": "control", "materiality_finding": "immaterial",
+        "materiality_reason": "control", "proposal_disposition":
+        "classified-out", "reasons": "immaterial control fixture",
+        "review_event_ref": "FS-REV-99",
+    }
+    rec.update(overrides)
+    s["proposals"].append(rec)
+    return rec
+
+
+def _material_fields():
+    return {
+        "materiality_finding": "material", "severity": "material",
+        "severity_owner": _CONTROL_NEEDLE,
+        "independent_check": "none-recorded — control fixture on a "
+                             "non-independent event",
+        "reasons": "control",
+    }
+
+
+def _mk_closure(s):
+    _mk_event(s, independent=True)
+    s["closure_record"] = {
+        "gate": "gate-a", "permitted_claim": "control",
+        "source_version": s["source_version"], "envelope_ref": "FS-ENV-01",
+        "candidate_ids": [], "review_cutoff": "control",
+        "review_event_ref": "FS-REV-99", "assurance_record_refs": [],
+        "residual_refs": [], "claim_limitations": "control",
+        "author_ratification_ref": _CONTROL_NEEDLE,
+    }
+    return s["closure_record"]
+
+
+def _closure_while_unmet(s):
+    _mk_closure(s)
+
+
+def _closure_env_stub(s):
+    _mk_closure(s)["envelope_ref"] = ENVELOPE_STUB_ID
+
+
+def _closure_non_independent_event(s):
+    _mk_closure(s)
+    s["review_events"][-1]["independence"] = False
+    s["review_events"][-1]["protocol_ref"] = "none — control"
+
+
+def _event_fake_independence(s):
+    ev = _mk_event(s, independent=True)
+    ev["reviewers"] = []
+
+
+def _proposal_added_unresolvable(s):
+    _mk_proposal(s, proposal_disposition="added",
+                 created_record_refs=["bogus-file.md::no such anchor"],
+                 **_material_fields())
+
+
+def _proposal_retained_without_defect(s):
+    _mk_proposal(s, proposal_disposition="retained-limit",
+                 **_material_fields())
+
+
+def _proposal_routed_without_disposition(s):
+    _mk_proposal(s, reasons="routed to operations outside this volume")
+
+
+def _proposal_material_missing_fields(s):
+    _mk_proposal(s, materiality_finding="material", reasons="control")
+
+
+def _proposal_class_on_immaterial(s):
+    _mk_proposal(s, severity="minor")
+
+
+def _proposal_unknown_event(s):
+    _mk_proposal(s, review_event_ref="FS-REV-00")
+
+
 def _uncover_residual(s):
     counts = {}
     for rec in s["defects"]:
@@ -1703,6 +2133,20 @@ def render(src: dict, resolution: dict) -> str:
     w(f"**Boundary:** {rule['boundary']}")
     w("")
     w(f"**No hiding:** {rule['no_hiding_rule']}")
+    w("")
+    w("## Gate A readiness (computed)")
+    w("")
+    w("Per-condition status, generated from the source and echoing the closure "
+      "conditions above by index; no aggregate is derived from this list, and "
+      "a closure record is refused while any row computes unmet. Closing "
+      "Gate A is a deliberate future amendment with its own author "
+      "ratification, never a latent flip.")
+    w("")
+    rows, preconditions = compute_gate_a_readiness(src, resolution)
+    for name, status, reason in rows:
+        w(f"- **{status}** — {name}: {reason}")
+    for name, status, reason in preconditions:
+        w(f"- **{status}** (precondition) — {name}: {reason}")
     w("")
     w("## The five layers")
     w("")
@@ -1859,6 +2303,26 @@ def render(src: dict, resolution: dict) -> str:
         w(f"- Reader mapping: `{rec['reader_mapping_ref']}`; admissible "
           f"evidence: {rec['admissible_evidence']}")
         w("")
+    w("## Proposals and review events")
+    w("")
+    w("The review machinery stands ready and empty: proposal and review-event "
+      "records are schema-enforced, and both populations stay deferred with "
+      "owners until the independent scope review runs. The severity rubric is "
+      f"a candidate ({src['severity_rubric']['rubric_status']}), bound to the "
+      "stopping rule's materiality test by reference. The in-repo reviewer "
+      "corpus is never admissible independent-review evidence for the "
+      "review-condition of closure: an independent event requires named "
+      "reviewer identities, a resolving protocol, and passed seeded and "
+      "planted-omission controls, none of which that corpus can supply. A "
+      "reviewer compels a reasoned public disposition, not acceptance and not "
+      "a veto; the severity owner and the closure record are author "
+      "checkpoints.")
+    w("")
+    w("| Rubric class | Meaning (candidate) |")
+    w("| --- | --- |")
+    for cls in ("critical", "material", "minor"):
+        w(f"| {cls} | {src['severity_rubric'][cls]} |")
+    w("")
     w("## External assumptions and the envelope")
     w("")
     for rec in src["external_assumptions"]:

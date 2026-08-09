@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-3x`; stage 3). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-stage-4m`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -31,6 +31,18 @@ A version may close only when all of the following hold for the gate's permitted
 **Boundary:** Exhaustive may describe the disposition map only for the named axes above, a named source version, a named envelope, and a named review event. This is versioned exhaustiveness for those declared axes, not a timeless completeness theorem, and disclosure alone does not cure a critical gap.
 
 **No hiding:** No critical unresolved defect affecting a gate's permitted claim may be hidden by classification, assignment, disclosure, or a stopping-rule decision.
+
+## Gate A readiness (computed)
+
+Per-condition status, generated from the source and echoing the closure conditions above by index; no aggregate is derived from this list, and a closure record is refused while any row computes unmet. Closing Gate A is a deliberate future amendment with its own author ratification, never a latent flip.
+
+- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: dependencies, powers, proposals, review_events, roles, scenarios, thresholds
+- **form-only** — every required projection regenerates from that source: the projections that exist regenerate — the check itself is the proof — while the role matrix, dependency map, assurance allocation, and reader ledger do not exist yet
+- **unmet** — no unresolved critical gap applicable to that gate's permitted claim remains: blocking defect rows exist: FS-DFT-16, FS-DFT-17, FS-DFT-28
+- **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
+- **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no review event with independence true exists, and the in-repo reviewer corpus is never admissible for this condition
+- **unmet-external** (precondition) — the reference envelope: still the explicit stub; the envelope item owns its versioning
+- **unmet** (precondition) — the severity rubric: candidate — author confirmation pending
 
 ## The five layers
 
@@ -305,7 +317,7 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-RTE-04 The claim registry | built | That a figure matches its named source at its retrieval date; staleness for script-refreshable entries | Truth of the source, or anything about this design | A schema violation or a stale fetchable entry must fail the registry gate | The staleness gate's failure path is the route's control; the split is by name — script-refreshable entries gate on staleness, pinned-source entries are schema-checked and human re-cited |
 | FS-RTE-05 Operational assurance | unbuilt | That a staffed, accountable route was exercised end to end in a named envelope, once available | Deployment, generalisation, or formal entailment | not-yet-declared — a reason the route is unbuilt, not an exemption | not-yet-declared |
 | FS-RTE-06 Reader and lived-experience studies | unbuilt | Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available | Population statistics, authority over the people studied, or any legal or empirical claim | Declared by the reader-evidence protocol decision: the instrument must fail a seeded unbalanced or planted-misconception control, watched failing during the pilot's revise step; not yet shipped | not-yet-shipped — declared but unbuilt; the declaration does not make the route available |
-| FS-RTE-07 Independent multidisciplinary and adversarial review | unbuilt | That named independent reviewers examined a named scope and their proposals received public dispositions, once available | Formal entailment or the truth of any reviewed claim | not-yet-declared — a reason the route is unbuilt, not an exemption | not-yet-declared |
+| FS-RTE-07 Independent multidisciplinary and adversarial review | unbuilt | That named independent reviewers examined a named scope and their proposals received public dispositions, once available | Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure | Declared ahead of build: the review protocol must include a hash-committed material omission withheld from the review packet, and its triage must be exercised against seeded material and immaterial proposals classified correctly; a review event that misses the plant or whose triage passes the seeds fails its control. Declared, not shipped; the declaration does not make the route available | not-yet-shipped — declared but unbuilt; the declaration does not make the route available |
 
 ## Enum mapping (maps, renames nothing)
 
@@ -478,6 +490,16 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Residuals: none beyond the affected claim's own scope bound — the family has no residual sibling row
 - Reader mapping: `book-1/05-voiding.md::Koa recorded a finding about Esa`; admissible evidence: executable pins over the current source
 
+## Proposals and review events
+
+The review machinery stands ready and empty: proposal and review-event records are schema-enforced, and both populations stay deferred with owners until the independent scope review runs. The severity rubric is a candidate (candidate — author confirmation pending), bound to the stopping rule's materiality test by reference. The in-repo reviewer corpus is never admissible independent-review evidence for the review-condition of closure: an independent event requires named reviewer identities, a resolving protocol, and passed seeded and planted-omission controls, none of which that corpus can supply. A reviewer compels a reasoned public disposition, not acceptance and not a veto; the severity owner and the closure record are author checkpoints.
+
+| Rubric class | Meaning (candidate) |
+| --- | --- |
+| critical | Accepting the proposal would falsify the gate's permitted claim — a scope or assurance omission. An unresolved critical item blocks the affected gate even when it has an owner or has been disclosed, and a checked post-closure critical classification reopens Gate A. |
+| material | Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives a severity owner, an independent check, and one public disposition; retention as a limit creates or joins a stable defect row. |
+| minor | The editorial band: no record change and no materiality under the test. Recorded reasons suffice; no severity machinery attaches. |
+
 ## External assumptions and the envelope
 
 - **FS-EXA-01 Other states cooperate and recognise**: Other states' cooperation, recognition, readmission, and compliance are named external assumptions, not derived facts and not Book 2 deliverables. Failure consequence: The dependent duty stays owed and its restrictive conclusions withhold; nothing manufactures the outside act.
@@ -508,6 +530,7 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 | scenarios | stage-3 | `TODO.md::Build whole-society journeys` | the journeys, collisions, and stress cases land as FS-SCN records with stable IDs |
 | thresholds | stage-3 | `TODO.md::Define the reference-society envelope` | adequacy, accessibility, continuity, resilience, and resource thresholds land as FS-THR records bound to a versioned envelope |
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
+| review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under a hash-committed protocol with named reviewers and passed seeded and planted-omission controls |
 
 The coverage-map view, contract cards, role matrix, dependency map, assurance allocation, reader ledger, and Book 2 crosswalk are generated projections of this source; each arrives with its owning stage or tracker item, and none may be maintained by hand.
 
