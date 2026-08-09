@@ -2,7 +2,7 @@
 
 # Full-Society Scope-Review Protocol
 
-> **Status: candidate — author confirmation pending.** This document specifies
+> **Status: author-confirmed 2026-08-09 — basis recorded.** This document specifies
 > the protocol under which the full-society ledger's independent scope review
 > would run — route R7's evidence contract and admissibility criteria, the
 > resolving protocol for reviewer proposals, and the commitment scheme for the
@@ -324,9 +324,15 @@ never by editing this document.
 
 **Confirmation record.** Confirmation follows the severity rubric's
 convention: the author's statement is quoted verbatim beside the question it
-answered, here, in this section. Until that act lands, the status line at the
-head of this document stays in its candidate state, and nothing that requires
-a confirmed protocol may proceed.
+answered, here, in this section. Author statement, 2026-08-09: "I confirm the
+scope-review protocol — record the confirmation" — given in answer to whether
+this document, landed as a candidate in 74d037e with its evidence contract,
+admissibility criteria, resolving protocol, reviewer-selection criteria,
+commitment scheme with author-held custody and its role exclusions, and
+commissioning sequence, is confirmed as the protocol under which the
+independent scope review will run. Every later step of the sequence above
+remains undischarged: no reviewer is named, no severity owner is designated,
+no commitment is published, and no review has run.
 
 ## 11. Evidence and limits
 

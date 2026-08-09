@@ -1930,7 +1930,7 @@
       "severity": "critical — Gate A demands a warrant no other route produces",
       "consequence": "independent scope review cannot yet be admitted",
       "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes",
-      "closure_condition": "the evidence contract and admissibility criteria are specified by the scope-review protocol (new-book-plans/full-society-scope-review-protocol.md, candidate — author confirmation pending) and the ledger's commitment validation is the in-repo gate; protocol confirmation, the named reviewer, and the commissioning commitment remain author checkpoints",
+      "closure_condition": "the evidence contract and admissibility criteria are specified by the author-confirmed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md, confirmed 2026-08-09) and the ledger's commitment validation is the in-repo gate; the named reviewer and the commissioning commitment remain author checkpoints",
       "route_status": "unbuilt",
       "warrants": "That named independent reviewers examined a named scope and their proposals received public dispositions, once available",
       "cannot_warrant": "Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure",
@@ -2110,8 +2110,9 @@
   "review_events": [],
   "review_protocol": {
     "protocol_ref": "new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol",
-    "protocol_status": "candidate — author confirmation pending",
-    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: candidate — author confirmation pending",
+    "protocol_status": "author-confirmed 2026-08-09 — basis recorded",
+    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: author-confirmed 2026-08-09 — basis recorded",
+    "confirmation_basis": "Author statement, 2026-08-09: \"I confirm the scope-review protocol — record the confirmation\" — given in answer to whether the candidate protocol landed in 74d037e, with its evidence contract, admissibility criteria, resolving protocol, reviewer-selection criteria, commitment scheme under author-held custody and its role exclusions, and commissioning sequence, is confirmed as the protocol under which the independent scope review will run. Recorded in the repo's convention for author acts: the statement quoted verbatim, the question it answered named; the same record fills the protocol document's own confirmation section.",
     "review_commitment": null
   },
   "deferred_populations": [

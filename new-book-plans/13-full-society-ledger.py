@@ -19,12 +19,13 @@ computes resolution_status and blocking (never hand-authored), and mints
 resolution receipts only where a row's generated resolution permits one.
 Stage 4's machinery makes the future independent scope review admissible and
 the Gate A closure refusable-until-green: proposal and review-event schemas
-stand validated and empty, the severity rubric is author-confirmed with its
-basis recorded, the scope-review protocol is bound as a candidate with its
-status line live-checked against the reviewed source, an independent review
+stand validated and empty, the severity rubric and the scope-review protocol
+are author-confirmed with their bases recorded and the protocol's status line
+live-checked against the reviewed source, an independent review
 event is refused without a pre-registered commitment (plant, seed, and
 protocol SHA-256 digests entered at commissioning; pre-images author-held
-outside the repository), per-condition Gate A readiness is computed and
+outside the repository; a commitment exists only against a confirmed
+protocol), per-condition Gate A readiness is computed and
 rendered, and a closure record is refused while any condition computes unmet —
 closing Gate A is a deliberate future contract amendment, never a latent flip.
 Deferred record types carry explicit deferral records with owners.
@@ -172,16 +173,18 @@ RUBRIC_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 READINESS_MET = {"met-mechanically", "met-in-form"}
 
 # The scope-review protocol: R7's evidence contract and admissibility criteria
-# live in one candidate document, bound here by needle and by status line so
-# neither can flip alone. The commitment record inside `review_protocol` stays
-# null until the author commissions a review; plant and seed pre-images are
-# constructed only then, held outside the repository, and only their SHA-256
-# digests ever enter this source. The confirmed status constant arrives with
-# the author's confirmation commit — the severity rubric's own two-state
-# history — and until then any other status string is refused.
+# live in one document, bound here by needle and by status line so neither can
+# flip alone. It shipped as a candidate; the author confirmed it on 2026-08-09
+# with the basis recorded on the binding and in the protocol's own
+# confirmation record — the severity rubric's two-state history. The
+# commitment record inside `review_protocol` stays null until the author
+# commissions a review; plant and seed pre-images are constructed only then,
+# held outside the repository, and only their SHA-256 digests ever enter this
+# source. A commitment may exist only against a confirmed protocol.
 PROTOCOL_DOC = pathlib.Path(
     "new-book-plans/full-society-scope-review-protocol.md")
 PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
+PROTOCOL_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 SHA256_HEX_RE = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -1822,14 +1825,28 @@ def validate_review_protocol(src: dict):
     if not isinstance(rp, dict):
         raise LedgerError(f"{ctx} must be an object")
     exact_keys(rp, ["protocol_ref", "protocol_status", "status_line_ref",
-                    "review_commitment"], ctx)
+                    "review_commitment"], ctx,
+               optional=["confirmation_basis"])
     status = require_str(rp, "protocol_status", ctx)
-    if status != PROTOCOL_STATUS_CANDIDATE:
+    if status == PROTOCOL_STATUS_CANDIDATE:
+        if "confirmation_basis" in rp:
+            raise LedgerError(
+                f"{ctx}: a candidate protocol carries no confirmation basis"
+            )
+    elif status == PROTOCOL_STATUS_CONFIRMED:
+        require_str(rp, "confirmation_basis", ctx)
+    else:
         raise LedgerError(
             f"{ctx}: protocol_status must be exactly "
-            f"{PROTOCOL_STATUS_CANDIDATE!r} until a future author commit "
-            "confirms it — confirmation is a recorded author act, never a "
-            "rewording"
+            f"{PROTOCOL_STATUS_CANDIDATE!r} or "
+            f"{PROTOCOL_STATUS_CONFIRMED!r} — confirmation is a recorded "
+            "author act, never a rewording"
+        )
+    if rp["review_commitment"] is not None and \
+            status != PROTOCOL_STATUS_CONFIRMED:
+        raise LedgerError(
+            f"{ctx}: a commitment may exist only against a confirmed "
+            "protocol — confirmation precedes commissioning"
         )
     ref = require_str(rp, "protocol_ref", ctx)
     validate_reference(ref, f"{ctx}.protocol_ref")
@@ -2187,10 +2204,20 @@ def negative_controls(src: dict) -> int:
     control("review_protocol must be present",
             lambda s: s.pop("review_protocol"),
             "must be present")
-    control("the protocol status is exact until the author confirms",
+    control("the protocol status is exact in both states",
             lambda s: s["review_protocol"].update(
                 {"protocol_status": "confirmed"}),
             "recorded author act")
+    control("a confirmed protocol records its basis",
+            lambda s: s["review_protocol"].pop("confirmation_basis"),
+            "confirmation_basis")
+    control("a candidate protocol carries no basis",
+            lambda s: s["review_protocol"].update(
+                {"protocol_status": PROTOCOL_STATUS_CANDIDATE}),
+            "carries no confirmation basis")
+    control("a commitment requires a confirmed protocol",
+            _commitment_on_candidate_protocol,
+            "confirmed protocol")
     control("the protocol's status line is live-checked",
             lambda s: s["review_protocol"].update(
                 {"status_line_ref": str(PROTOCOL_DOC) +
@@ -2548,6 +2575,13 @@ def _event_wrong_protocol(s):
     ev["protocol_ref"] = _CONTROL_NEEDLE
 
 
+def _commitment_on_candidate_protocol(s):
+    rp = s["review_protocol"]
+    rp["protocol_status"] = PROTOCOL_STATUS_CANDIDATE
+    rp.pop("confirmation_basis", None)
+    _mk_commitment(s)
+
+
 def _proposal_added_unresolvable(s):
     _mk_proposal(s, proposal_disposition="added",
                  created_record_refs=["bogus-file.md::no such anchor"],
@@ -2848,7 +2882,11 @@ def render(src: dict, resolution: dict) -> str:
       "reviewer identities, a resolving protocol, and passed seeded and "
       "planted-omission controls, none of which that corpus can supply. A "
       "reviewer compels a reasoned public disposition, not acceptance and not "
-      "a veto; the protocol confirmation, the review commissioning and its "
+      "a veto; "
+      + ("the protocol confirmation, "
+         if src["review_protocol"]["protocol_status"]
+         == PROTOCOL_STATUS_CANDIDATE else "")
+      + "the review commissioning and its "
       "commitment, the severity owner, and the closure record are author "
       "checkpoints.")
     w("")
