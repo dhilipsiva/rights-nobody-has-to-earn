@@ -31,6 +31,8 @@ imprisonment and stops there.
 | `new-book-plans/placement-exhaustiveness-audit.json` | the reviewed axes, routes, source manifest, harmful mutations, limits and affected claims behind that audit |
 | `new-book-plans/temporal-assurance-case.md` | the generated staged T1/T2/T3 transition, order, renewal and residual-liveness assurance record |
 | `new-book-plans/temporal-assurance-case.json` | the reviewed temporal inputs, source/effect bindings, attacks, fresh-process pairs and narrowness ledger |
+| `new-book-plans/full-society-ledger.md` | the generated full-society domain-and-layer routing report: declared axes, the five layers, domains, split coverage claims, bodies, routes, enum mapping and the stopping rule |
+| `new-book-plans/full-society-ledger.json` | the reviewed canonical full-society source owning stable domain, claim, body, route, external-assumption and envelope IDs; every coverage, assurance, reader and Book 2 view is a projection of it |
 | `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
 | `verify.sh` | the one check |
 

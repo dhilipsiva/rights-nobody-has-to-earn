@@ -974,8 +974,10 @@ stores, and the record-integrity case cross-references by literal needle.
 
 The mapping table maps existing vocabularies onto the ceiling **without
 renaming anything inside an artifact**, and a closure rule requires a mapping row
-for every consequential enum. The future **claim-assurance ledger is a generated
-projection of the one canonical source** — posture, route, evidence kind, scope
+for every consequential enum. The **claim-assurance ledger is a generated
+projection of the one canonical source**, which landed at stage 1 on 2026-08-09
+(`full-society-ledger.json`, generated and gated by `13-full-society-ledger.py`)
+— posture, route, evidence kind, scope
 bound, disposition, owner, severity, closure condition, claim restriction and
 mutation reference are fields on that source's claim records. A second
 hand-maintained matrix of assurance truth is refused by the ratified
@@ -985,9 +987,13 @@ generators require each needle to occur **exactly once** in its target, with the
 tracker and the coverage map carrying the most. Re-check needles mechanically
 before committing an edit to either.
 
-The ruling is **ratified but unimplemented**. It creates no predicate, rule,
-pin, generator, verifier section, chapter, or public claim, and reclassifies
-nothing; each artifact keeps its own vocabulary until the ledger lands. The
+The ruling itself created no predicate, rule, pin, generator, verifier section,
+chapter, or public claim, and reclassified nothing. The canonical source landed
+at stage 1 on 2026-08-09, and each artifact keeps its own vocabulary
+**permanently**: the ledger's mapping table binds every consequential reviewed
+enum value to the canonical postures without renaming anything, and its
+generator re-reads the sibling reviewed JSONs live, so a new reviewed enum
+value fails `verify.sh` until its mapping row lands in the same change. The
 controlling record is `new-book-plans/book-1-assurance-portfolio-decision.md`.
 
 **The narrative register is author-ratified (2026-08-08): it stays flat, and the
@@ -1370,6 +1376,33 @@ destinationless row remains truthful, and the placement-input authority,
 provenance, privacy, and challenge gaps remain owned by the future justice
 interface rather than being closed by this audit.
 
+**The full-society domain-and-layer ledger is generated and verifier-enforced
+at stage 1, enacted 2026-08-09.** `new-book-plans/13-full-society-ledger.py`
+validates the reviewed canonical source `full-society-ledger.json` and renders
+`full-society-ledger.md`; `verify.sh` runs its `--check` as a structural step
+that also passes under `--quick`. The source declares the named axes and the
+stopping rule; fixes the `scope_disposition` enum, author-ratified as the
+reader-facing five layers; and carries the social-domain records with per-layer
+buckets, the coverage map's legacy rows frozen and split into one-posture claim
+records under the ratified legend, the required bodies, the seven assurance
+routes with their falsification status, the named external assumptions, and the
+explicit envelope stub `FS-ENV-00`, which can route but never assure. The
+generator enforces the ratified fail list — one posture per record, liveness
+never established, no feasibility claim anywhere, no established posture on an
+unbuilt route, distinct disposition keys, no aggregate score — plus the
+defect-disposition compatibility table and the deferral rule that an empty
+record type needs an owner and closure condition. It re-reads the six sibling
+reviewed JSONs **live** for enum-mapping closure and sits off the 7→12 digest
+chain, binding only the assurance-portfolio and full-society-boundary
+decisions by digest. Its verdict line is byte-exact and deliberately weak:
+routing inventory only, nothing established beyond each row's own posture,
+Gate A not passed; the only rollup is the non-numeric worst-case one. Stage 2
+backfills every existing defect as keyed rows and **must precede any new
+resolution language in prose**; stage 3 turns the coverage-map table into a
+generated region and adds the further projections; stage 4 is the independent
+scope review and the Gate A closure record, which is an author checkpoint. A
+hand-maintained competitor to any projection remains refused.
+
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
 ## Files
@@ -1398,7 +1431,7 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   institution, operation, or narrative current. Delete a bullet when it fully
   lands; update it if partly done. Book 2 remains inactive until Book 1 — First
   Edition actually ships at Gate C.
-- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
+- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs live at `--check` — so refresh it when either bound decision changes, and expect its enum-mapping closure to fail when a sibling adds a reviewed enum value with no mapping row. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
 - `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
 - `book-2/TODO.md` — book-2's deliberately unordered tracker, inactive until

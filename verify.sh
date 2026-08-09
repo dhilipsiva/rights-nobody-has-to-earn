@@ -40,6 +40,7 @@ RED_TEAM=new-book-plans/9-record-integrity-red-team.py
 AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
+LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -115,7 +116,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, or placement audit,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, or full-society ledger,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -174,6 +175,17 @@ out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
 [ "$n" = "39" ] && pass "evidence vocabulary is 39" \
   || fail "evidence vocabulary is $n, not 39" "chapters 1, 3 and 5 describe the list; re-read them against it"
+
+# ── 2g. the full-society domain-and-layer ledger stays reviewed and generated ─
+# Structural only: schema, enum-mapping closure over the six sibling reviewed
+# JSONs (read live, not digest-pinned), split/posture/compatibility rules,
+# needles, bound-decision digests, and the ledger's own negative controls. It
+# executes no engine query and establishes no row beyond its own posture —
+# classification is routing, not assurance.
+step "full-society ledger"
+out=$(python3 "$LEDGER_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "full-society ledger failed" "$out"
 
 # ── 3. no formalism leaks into Parts I-V ─────────────────────────────────────
 step "prose"

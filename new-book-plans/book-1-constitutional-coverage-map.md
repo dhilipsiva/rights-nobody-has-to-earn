@@ -45,6 +45,15 @@ evidence, costs, data, and reproducible analysis.
 
 ## 3. Current coverage versus target scope
 
+> **Canonical-source note (2026-08-09):** the rows below are frozen pending
+> their per-posture split. The reviewed canonical source
+> `new-book-plans/full-society-ledger.json` imports them verbatim as legacy
+> rows and splits each into one-posture claim records under the section-4
+> legend; new domain and scope records land in that source first, and this
+> table becomes a generated region at the ledger's stage 3. The ratified scope
+> content of this map is unchanged, and this map remains where the ratified
+> scope and contract boundary live until that migration.
+
 **Legend:** **Formal now** means a current relation/rule supports the complete
 contract; **partial formalisation** means it supports only part; **Part V
 specification only** means it is argued but not formalised; **absent** means it
