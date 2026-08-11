@@ -664,6 +664,21 @@ dispensable killing; detailed standards remain democratically revisable inside
 that core. Animal remedies cannot remove human standing, the material floor,
 core liberty, due process, or political equality.
 
+The versioned ecological and animal finding boundary was measured on 2026-08-11
+against clean Nibli `main == origin/main` at `07734c8f`, using release
+`nibli-pin` SHA-256 `87b5c7bf351e355352781905a7afedbf29f7c20b3e3d2fc69843921ba0a26f10`.
+The exact binary passed this repository's full verifier. The supported seam is
+narrow: Nibli may derive a bounded consequence from caller-admitted, finite,
+fully keyed, case-bound ordinary facts or result certificates through the
+ordinary KR/decomposed path. Authentication, scientific classification,
+completeness, freshness, conflict priority, time, notification, and execution
+remain external. Only a top-level definitive `TRUE` on that supported shape can
+support the consequence; `FALSE` is closed-world non-entailment, while
+`UNKNOWN`, `RESOURCE_EXCEEDED`, invalid input, and incomplete enumeration cannot
+authorize. Flat raw body-only-variable rules, non-finite exact-zero, mixed-row
+aggregation, and unsupported WIT raw-query parity are excluded. See
+`new-book-plans/nibli-versioned-ecological-and-animal-finding-capability-audit.md`.
+
 The ruling is **ratified but unimplemented**. It creates no predicate, rule,
 finding, ceiling, duty, remedy, institution, chapter, programme, or public claim.
 Book 1 owns rights and protected conditions, legal limits, evidence burdens,
@@ -1732,9 +1747,10 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   the pilot and before the holdout's pre-registration freeze — plus the
   author-drafted passage obligation; it blocks nothing now, and neutral
   inventory and decision briefs may proceed. Phase
-  2 records the completed finite collective-decision audit, holds two bounded,
-  non-blocking engine repair prompts, and carries read-only ecology/animal and
-  protective-power finding-boundary audits before formalisation. The expansion backlog uses
+  2 records the completed finite collective-decision and versioned ecological/
+  animal finding-boundary audits, holds two bounded, non-blocking engine repair
+  prompts, and carries the read-only protective-power finding-boundary audit
+  before formalisation. The expansion backlog uses
   one canonical social model, a versioned
   reference envelope and disposition map, explicit constitutional domain packs,
   role/dependency/stress/gameability/assurance tests, separate completion gates,
