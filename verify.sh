@@ -44,6 +44,7 @@ TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
 LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
 READER_AUDIT=new-book-plans/14-reader-evidence.py
 READER_GATE=new-book-plans/reader-evidence-admission-gate.py
+PILOT_READER_ARTIFACTS=new-book-plans/15-pilot-reader-artifacts.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -194,6 +195,14 @@ step "reader-evidence admission-gate component"
 out=$(python3 "$READER_GATE" --self-test 2>&1) \
   && pass "$out" \
   || fail "reader-evidence admission-gate self-test failed" "$out"
+
+# Structural generation runs in both quick and full modes and writes only to a
+# temporary directory. PDF rendering and human screen-reader attestation remain
+# external prerequisites; this check does not create or attest either one.
+step "pilot reader artifacts"
+out=$(python3 "$PILOT_READER_ARTIFACTS" --check 2>&1) \
+  && pass "$out" \
+  || fail "pilot reader artifacts failed" "$out"
 
 # ── 2h. the full-society domain-and-layer ledger stays reviewed and generated ─
 # Structural only: schema, enum-mapping closure over the sibling reviewed
