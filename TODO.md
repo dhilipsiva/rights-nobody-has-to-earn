@@ -42,13 +42,13 @@ then a full-society expansion backlog and cross-cutting sections:
    collective-plurality, ecological/future-generation/commons/non-human-
    animal, and public-safety/defence/emergency/external-power baselines are
    settled, as are the assurance portfolio, the narrative register, and the
-   reader-evidence protocol with its threshold timing. The release threshold —
-   the pass rule's values and severity taxonomy — is reserved for a second
-   ruling after the pilot. Neutral inventory and
+   reader-evidence protocol with its threshold timing. Execution of the human
+   reader route and its reserved post-pilot threshold ruling was withdrawn from
+   the current Book 1 program at `907ddd0`. Neutral inventory and
    decision briefs may proceed in parallel; each still-gated domain's rules,
-   prose, and public claim wait for its own ruling. The final reader threshold
-   waits for the pilot. This section has been destroyed by tooling once and is
-   watched accordingly.
+   prose, and public claim wait for its own ruling. The reader route remains
+   dormant and Gate C remains unsatisfied. This section has been destroyed by
+   tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision
    capability audit is closed and recorded in the source-bound planning artifact.
    A read-only, source- and binary-bound audit of versioned ecological and animal
@@ -123,12 +123,12 @@ bounded plural economy/protected voluntary sphere, family/dependency/
 reproduction/collective-plurality, ecological/future-generation/commons/
 non-human-animal, and public-safety/defence/emergency/external-power baselines
 are also settled, as are the assurance portfolio, the narrative register, and
-the reader-evidence protocol with its threshold timing. The
-remaining decision determines the release threshold; it waits for the pilot and
-does not reopen whether the broader result is wanted.
-Scope inventory, gap discovery, evidence collection and neutral option briefs may
-proceed before a ruling. Do not implement a contested rule family, rewrite
-dependent prose, or make its completion claim until the author has ruled it.
+the reader-evidence protocol with its threshold timing. Execution of that
+protocol and its reserved threshold ruling is withdrawn from the current Book 1
+program at `907ddd0`; no pilot, threshold, holdout, accessibility pass, or
+reader claim follows. Scope inventory and other author-ruling work may proceed,
+but Gate C remains unsatisfied and the project may not present withdrawal as
+completion.
 
 - [ ] **[AUTHOR-DRAFTED] Bring the existing ordinary-life passage into
   conformance, or record the exception as permanent.**
@@ -144,38 +144,6 @@ dependent prose, or make its completion claim until the author has ruled it.
   - **This is author-owned prose and no session may edit it.** The ruling defines
     the slot; the sentences are the author's. Either bring it into conformance or
     record the exception as permanent with its reason.
-
-- [ ] **[AUTHOR-GATED] Ratify the release threshold — the pass rule's values and
-  severity taxonomy — after the pilot; pre-register it before the fresh
-  holdout.**
-  - The protocol, its timing, the rule's form, the disclosure minimum, and the
-    ethics terms were author-ratified on 2026-08-09; the controlling record is
-    `new-book-plans/book-1-reader-evidence-protocol-decision.md`. This bullet is
-    that ruling's reserved half. It blocks nothing now and cannot be ruled
-    before pilot evidence exists.
-  - Blocked on the pilot, which the phase-4 sessions item owns. The ruling must
-    land after the pilot and before the fresh holdout's pre-registration
-    freeze; a holdout run under an unratified or post-hoc rule is void and
-    cannot feed Gate C, and the reader route must be available before the
-    holdout runs.
-  - The ruling chooses the severity taxonomy, what counts as a core
-    misconception, whether a single or repeated core finding fails, and every
-    threshold value. It may not reopen the method, the disclosure minimum, the
-    ethics terms, the no-aggregate veto, or the non-substitution of routes.
-  - Current state: the dormant machine contract is implemented in the reviewed
-    source `new-book-plans/reader-evidence.json` and rendered by
-    `new-book-plans/14-reader-evidence.py`. It intentionally contains no
-    taxonomy labels or threshold values and establishes neither R6 availability
-    nor reader evidence. This item remains blocked on a valid pilot and closes
-    only after the author-ratified rule digest and complete `frozen_ratification`
-    are bound into the frozen holdout pre-registration and validate
-    independently, the successor pre-registration binds
-    `predecessor_attempt_sha256` and `prior_history_head_sha256` where a
-    predecessor exists, and the root `history_transition` validates that
-    freeze against the nearest earlier normal first-parent source transition.
-    Remove it only in a separate tracker commit that
-    references the freeze commit; keep the phase-4 sessions item open until the
-    holdout runs.
 
 ---
 
@@ -1990,9 +1958,12 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
 ### Expansion phase 4 — Build a reliably balanced non-specialist reader experience
 
-**Tracker:** Reader's Map in the exempt opening note (67a520e).
-This closes only that item. Accessibility validation, reader sessions, pilot
-evidence, R6 availability, and Gate C remain open.
+**Tracker:** Reader's Map in the exempt opening note (67a520e);
+reader-evidence execution withdrawn from the current Book 1 program (907ddd0).
+The latter removes the post-pilot threshold and reader-session objectives from
+this program without reporting completion, evidence, or a pass. Machine
+accessibility work remains open; R6 remains unbuilt, FS-CLM-37 remains
+Unestablished/route-unbuilt, and Gate C remains unsatisfied.
 
 - [ ] **Build a reviewed reader-experience coverage ledger before rewriting.**
   - For every derived chapter and substantive Part V passage record: social domain
@@ -2103,136 +2074,22 @@ evidence, R6 availability, and Gate C remain open.
     record-people's deliberately flat inner lives; do not invent biographies,
     emotions or composite citizens as evidence.
 
-- [ ] **Finish accessible navigation and visual validation.**
+- [ ] **Finish machine-checkable accessible navigation and visual validation.**
   - The annotated contents, concise glossary, role/body and case indexes,
     domain-to-chapter map, and selected text-equivalent diagrams landed with
     the Reader's Map at `67a520e`.
   - Script 15 checks semantic source headings, local link targets, and
-    deterministic HTML/EPUB generation. Keep this item open until the exact
-    pilot snapshot also has a bound PDF; cross-format reading-order, extraction,
-    keyboard, navigation, link, and text-alternative checks; and a human
-    screen-reader smoke test.
+    deterministic HTML/EPUB generation. Bind the exact future preview
+    snapshot's HTML, EPUB, and PDF artifacts and complete every mechanically
+    testable heading, reading-order, extraction, keyboard, navigation, link,
+    and text-alternative check required by its snapshot-specific gate.
+  - Human screen-reader validation was withdrawn from the current program at
+    `907ddd0`, not passed. Automated checks may warrant only properties of the
+    artifacts and may not support an accessibility-for-users claim.
   - No meaning may depend only on colour, layout, vision, hearing, fine motor
     control, or specialist notation.
-  - Readability formulas are diagnostic flags, not truth or pass/fail targets. Each
-    visual must earn its cognitive and accessibility cost.
-
-- [ ] **Run pre-registered reader-comprehension and balance sessions.** The
-  method, timing, rule form, disclosure minimum, and ethics terms are
-  author-ratified (2026-08-09); the controlling record is
-  `new-book-plans/book-1-reader-evidence-protocol-decision.md`.
-  - `new-book-plans/reader-evidence.json` is the sole machine-readable source
-    for reader-study states, locally hash-chained and Git-transition-checked
-    attempt history, `gate_admission_receipt`, taxonomy, rule values,
-    ratification basis, `frozen_ratification`, and holdout pre-registration.
-    Its root `history_transition` carries `previous_source_commit`,
-    `previous_source_sha256`, `previous_history_head_sha256`, and
-    `history_head_sha256`; its generated report references those records, and
-    prose must not duplicate eventual threshold values.
-  - The public-minimum pilot kit and snapshot builder are draft templates and
-    tooling only. No pilot snapshot or instrument has been frozen or
-    pre-registered; no participant session, named reviewer/custodian, admitted
-    evidence, pilot result, taxonomy, or threshold exists. R6 remains
-    unavailable and this item stays open.
-
-  - Pre-register questions, coding rubric and sample; run a pilot, revise; the
-    author then ratifies the pass rule on pilot evidence, and it is
-    pre-registered before the fresh holdout of non-specialists with varied
-    reading confidence, language backgrounds and accessibility needs.
-    Pre-registration binds each round's instrument before that round; the pilot
-    carries at most an expressly provisional draft rule and severity taxonomy.
-    Treat this as usability evidence, not population statistics.
-  - Include unaided prompts: What do people do in ordinary life? What may they
-    choose privately and democratically? What do public bodies do when nothing has
-    failed? How does something owed arrive and get repaired? Why is the prisoner
-    present? What remains operational or externally assumed, and what can no model
-    guarantee?
-  - Obtain informed consent; permit withdrawal; minimize and protect data; provide
-    accessible participation and fair compensation; prevent retaliation; add trauma
-    safeguards where coercive experience is discussed; and use independent ethics/
-    safety review where appropriate. These are binding admissibility terms — a
-    session run in breach is inadmissible regardless of results — and reader
-    evidence never purchases authority over the people studied.
-  - Keep the public repository privacy-minimal: opaque study IDs, coded
-    target/misconception outcomes, artifact or commitment digests, coded
-    deviations, and custody attestations without identity material only.
-    Participant, session, coder, reviewer, and custodian names, pseudonyms,
-    identifiers and identity mappings; raw or free-text responses; consent and
-    withdrawal material; and direct contact, demographic and accessibility
-    records remain private.
-  - A pass requires readers to identify constructive functions as well as restraints,
-    trace one successful delivery/remedy path and one democratic choice, and
-    recognise the prisoner as a stress test. Apply the pre-registered,
-    severity-weighted misconception rule ratified by the author after the pilot
-    and before the holdout's pre-registration freeze; no aggregate score may
-    hide a core failure. Revise, then use a fresh holdout — participants with no
-    prior exposure to drafts, previews, the pilot, or the reviews corpus —
-    against the private candidate the edition item names.
-  - Give every pilot and holdout freeze an external prior-commit or custody
-    binding whose public receipt digest also carries the exact computed
-    `attested_payload_sha256`; a generic attestation is invalid, while the
-    external payload's existence and truth remain outside the checker. The
-    holdout freeze binds the exact rule digest, revised instrument/rubric,
-    private release-candidate identity and artifact hashes, sample/recruitment
-    rule, disclosure set, and study protocol. Every holdout embeds a complete
-    `frozen_ratification` whose own digest, rule, candidate, and pilot basis
-    validate independently of current top-level state. The candidate commit
-    must be an ancestor of current `HEAD`. Each successor pre-registration
-    binds `predecessor_attempt_sha256` and `prior_history_head_sha256` to its
-    frozen predecessor; both are null only where no predecessor exists. If
-    exposing the instrument could
-    contaminate recruitment, publish a nonce-protected commitment under named
-    private custody and reveal its preimage after the holdout. Any bound change
-    voids that attempt and requires a new pre-registration and genuinely fresh
-    sample.
-  - Preserve each attempt's local hash chain and active-attempt pointer, and
-    require more than snapshot-local consistency. The root
-    `history_transition` binds `previous_source_commit`,
-    `previous_source_sha256`, `previous_history_head_sha256`, and
-    `history_head_sha256` to the nearest earlier normal first-parent commit
-    that changed `reader-evidence.json`, its exact previous bytes and history
-    head, and the current history head. Preserve prior attempt prefixes and
-    terminal attempts; permit exactly one domain and one legal step per
-    transition: one pilot or holdout append, or the active nonterminal attempt
-    becoming terminal. The dormant source uses null predecessor fields and the
-    deterministic empty history head. This covers visible normal first-parent
-    Git history only and cannot prove resistance to rewritten history or
-    external truth.
-  - Keep lifecycle orthogonal to result: `holdout_status` follows the active
-    attempt, while the top-level result is the most recent completed non-void
-    outcome and persists independently. A `void` attempt with `not-run` is
-    valid. A later frozen, not-run, or void attempt must not rewrite an earlier
-    valid `fail` as `not-run`; every attempt remains recorded, and no void
-    attempt can feed Gate C. Study IDs, coded-record commitments, custody IDs
-    and digests, and receipt IDs are globally unique across the complete
-    pilot/holdout history. Every run carries exactly one freshness record.
-  - Encode freeze, completion or void, commitment reveal, and successor-attempt
-    times in strict canonical UTC. Freeze precedes completion or void; reveal
-    follows the corresponding completion or void; a successor attempt begins
-    only after its predecessor's required terminal and reveal events.
-  - The pilot runs against a declared, versioned snapshot only after the
-    Reader's Map and navigation artifacts exist, and the instrument must fail a
-    seeded unbalanced or planted-misconception control, watched failing during
-    the pilot's revise step. Candidate, `author-ratified`, frozen, and completed
-    stages must each carry and watch the mutations relevant to that stage;
-    missing, empty, or inapplicable controls fail closed.
-  - The structural checker validates the state, privacy, policy, metric,
-    denominator, repetition-unit, digest, external-custody-binding,
-    `history_transition`, frozen-predecessor, and evaluation-order contracts;
-    its deterministic evaluator recomputes a future
-    receipt from the admitted coded record. Once values exist, it derives
-    end-to-end below-, exact-, and above-boundary fixtures from every eventual
-    value at reachable observations; an unreachable or out-of-domain edge is
-    explicit and fails closed rather than disappearing. These remain artifact
-    checks only.
-  - The fixed digest-bound admission gate is a separate executable component.
-    Its `--self-test` runs in quick and full verification, but building or
-    testing that component does not make R6 built or available. Every active
-    completed attempt stores `gate_admission_receipt`; only the gate's exact
-    output with `decision=admit` may establish FS-CLM-37. The structural
-    checker, deterministic evaluator, gate, gate-bound reviewer custody, and
-    seeded control do not substitute for one another or establish external
-    truth.
+  - Readability formulas are diagnostic flags, not truth or pass/fail targets.
+    Each visual must earn its cognitive and accessibility cost.
 
 ### Expansion phase 5 — Evidence, psychology, and external review
 
