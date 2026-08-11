@@ -59,3 +59,499 @@ told no by my own design.
 
 The poem on the previous page asks whether a life must be spent searching for
 the day's meal. This book is the longest answer I could give.
+
+## Reader's Map
+
+This map is navigation, not another source of rules. It tells you what kind of
+claim you are reading, where to find its support, and where the book stops. The
+chapters remain in their computed order; the map does not rearrange them into a
+more convenient argument.
+
+### The promise
+
+The book promises to make three things visible. It will show what follows from
+the design's rules, what the author argues rather than derives, and what neither
+route establishes. When it calls a defect fixed, it should show the changed rule
+and the check that distinguishes the repair from the old failure. When a route
+ends at a duty, a marker, or an assumption, it should not rename that stopping
+place a resolution.
+
+That is a promise about the honesty and inspectability of a design. It is not a
+promise that the society exists, that its records are true, or that everything
+owed to a person arrives.
+
+### The society's five layers
+
+The five layers are not ranks, institutions, or stages of a programme. They are
+five different answers to the question, *Where does this decision belong?*
+
+- A **constitutional invariant** is a condition no ordinary majority, office,
+  emergency, or remedy may lower.
+
+- A **democratic ordinary-law choice** is left to public decision inside those
+  invariants. The constitution marks the corridor; it does not choose every
+  policy within it.
+
+- A **protected private or civic freedom** belongs to people choosing, refusing,
+  associating, caring, creating, worshipping, speaking, or living together
+  without a public authority prescribing the approved result.
+
+- An **operation** is the practical work that would make a constitutional or
+  democratic decision run: staffing, budgets, capacity, resources, technology,
+  workflows, logistics, transition, and delivery at scale. This volume does not
+  establish those things.
+
+- An **external assumption** is a premise neither a rule nor an operating design
+  can make true: for example, that a witness is honest, that a source record
+  arrives, or that another state cooperates. It must be named and capable of
+  being found false.
+
+A subject can contain questions in all five layers. A particular claim cannot
+move between them merely because a different label would make it sound more
+secure.
+
+### Record, rule, conclusion, and reality
+
+A **record** is the supplied set of entries the rules are allowed to read. A
+**rule** says what follows when specified entries are present or absent. A
+**conclusion** is what the rule produces. **Reality** is what actually happened
+to people and institutions outside that reasoning chain.
+
+The checks in this book can establish that a conclusion follows from a supplied
+record, or that a forbidden rule is refused. They do not establish that the
+record is complete or truthful, that a promised event occurred, that a later
+record arrived, or that an institution acted on a conclusion. Whenever the text
+moves from one of those claims to another, the crossing should be stated rather
+than smuggled through a verb.
+
+### Destination and operation
+
+This volume describes a destination: what a society must guarantee, permit,
+organise, and constrain. It can specify a duty, an authorised decision, a route
+of challenge, a limit on power, or the condition a repair must restore. It does
+not supply staff, money, facilities, inventories, clocks, networks, procedures,
+or a transition from the present.
+
+That boundary does not make operation unimportant. It makes the burden visible.
+An unconditional entitlement with no delivery route remains an entitlement and
+a delivery gap. A review duty with nobody made to act remains a duty and an
+action gap. Naming either gap is not the same as closing it.
+
+### Why the prisoner appears so early
+
+The prisoner is the design's hardest stress test, not its model citizen and not
+the ordinary inhabitant of the society. A person in custody is where public
+power is most concentrated, where exit is least available, and where a promise
+of equal personhood and floor is easiest to qualify away. The rules also make
+that case structurally central: personhood, the floor, the vote, placement,
+movement, and the breach markers depend on one another in an order the chapter
+sequence must follow.
+
+The resulting spine spends many chapters near conviction and confinement. Read
+that as a finding about what the present rules formalise most deeply, not as a
+claim that social life is mostly prison. Ordinary care, work, learning,
+association, democratic choice, and free life remain the standard against which
+the stress test matters.
+
+First-pass readers should read the short map through the prisoner framing above,
+then may continue directly to [Chapter 1](01-what-counts-as-evidence.md). The
+contents, glossary, indexes, and diagrams below are reference sections to return
+to later.
+
+## Annotated contents
+
+The safest first reading is in order. Later readings can use the maps and indexes
+below.
+
+- [Epigraph](epigraph.md) — the human question the design is trying to answer.
+
+- **Opening note and Reader's Map** — the author's reading contract, followed by
+  this navigation layer.
+
+### Part I — What the world is allowed to say
+
+- [Chapter 1: What Counts as Evidence](01-what-counts-as-evidence.md) — closes
+  the record's vocabulary, separates supplied entries from conclusions, and
+  shows the danger in entries that somebody simply writes.
+
+- [Chapter 2: Standing, and Why It Is Never Revoked](02-standing.md) — separates
+  permanent answerability from temporary power and explains why removing an
+  official must not erase protection for the person who exposed them.
+
+### Part II — Accountability
+
+- [Chapter 3: Who Holds the Pen](03-who-holds-the-pen.md) — asks whose findings
+  count, how two differently seated credentials are produced, and where forged
+  or stale authority can enter.
+
+- [Chapter 4: The Shield](04-the-shield.md) — tests protection for exposing
+  authority against false, premature, and repeated claims.
+
+- [Chapter 5: Voiding](05-voiding.md) — follows the two-body route that can
+  destroy credibility and names what its record does and does not preserve.
+
+- [Chapter 6: Clawback](06-clawback.md) — follows voiding into its downstream
+  consequence: voiding destroys credibility, while clawback removes recognition
+  and preserves the floor. It records a harmful rule removed rather than repaired
+  by another condition.
+
+### Part III — Status and consequence
+
+- [Chapter 7: A Prisoner Is a Person](07-a-prisoner-is-a-person.md) — uses the
+  hardest case to bind custody back to personhood and to the unconditionality of
+  everyone else's floor.
+
+- [Chapter 8: What You Are Owed](08-what-you-are-owed.md) — states the floor,
+  then keeps entitlement, delivery, and knowledge of delivery apart.
+
+- [Chapter 9: The Vote Conviction Does Not Take](09-the-vote-conviction-does-not-take.md)
+  — shows why conviction and voiding do not remove the franchise, while exposing
+  the writer-controlled adulthood entry on which it presently depends.
+
+- [Chapter 10: Contribution](10-contribution.md) — recognises teaching, work,
+  and honest examination without turning recognition into a number, price, or
+  claim on the floor.
+
+- [Chapter 11: Where People Are Put](11-where-people-are-put.md) — derives
+  placement from recorded facts, repairs a misplacement alarm, and finds a
+  housing failure inside what first looked like a placement gap.
+
+- [Chapter 12: Changing the Rules](12-changing-the-rules.md) — distinguishes a
+  recorded law label from a change that is authenticated, applied, and effective.
+
+### Part IV — The top of the graph
+
+- [Chapter 13](13-the-one-thing-taken.md) —
+  tests the claim that conviction removes movement and nothing else, then states
+  what current authority and actual release still require.
+
+- [Chapter 14: When the System Notices It Broke](14-when-the-system-notices-it-broke.md)
+  — examines breach markers, the duties they produce, and the point where
+  detection still fails to become action or repair.
+
+### Part V — Outside the graph
+
+- [Chapter 15: The Five Joints](15-the-five-joints.md) — the author, no longer
+  speaking through derived chapters, tests the design against valuation,
+  rotation, coercion, capture, and the state. The verdicts are arguments, not
+  machine results.
+
+### Final part — Optional method
+
+- [The Method](method.md) — the only technical part. It shows the source rules,
+  the computed order, the refusals, and the limits of the checking machinery.
+  The general-reader book is complete before it.
+
+## Concise glossary
+
+- **Record:** the entries supplied for the rules to read. A record may be closed
+  to new kinds of entry and still contain a false, missing, or stale entry.
+
+- **Entry:** one report placed in the record, such as a judgment, injury,
+  seating, challenge, or witnessed source selection.
+
+- **Rule:** a stated route from entries to a conclusion. A rule does not verify
+  the entries that feed it.
+
+- **Conclusion:** something worked out by the rules rather than written directly
+  into the record.
+
+- **Derived:** established as a consequence of the exact rules and supplied
+  record being checked. It does not mean observed in the world.
+
+- **Person:** the root status from which the floor follows. The present design
+  both permits personhood to be recorded and derives it for a prisoner.
+
+- **Standing:** permanent answerability to examination and exposure. It is not
+  a licence to act on another person.
+
+- **Pen or credential:** the temporary authority that makes an examiner's
+  finding count in the voiding machinery.
+
+- **Floor:** what every person is owed without first working, registering,
+  belonging, paying, or behaving in an approved way.
+
+- **Delivery:** the protected condition actually reaching a person. A debt,
+  duty, payment, or institutional output is not by itself proof of delivery.
+
+- **Receipt:** evidence from the receiving side that delivery arrived in an
+  accessible and adequate form.
+
+- **Shield:** protection against imprisonment while an exposure of an authority
+  stands, subject to the chapter's stated boundaries.
+
+- **Voiding:** the conclusion that a person's credibility no longer counts.
+
+- **Clawback:** the loss of recognition that follows voiding; it cannot reduce
+  the floor.
+
+- **Placement:** the conclusion about where a confined person is put. Eligibility,
+  recorded placement, and an actual place in the world are different claims.
+
+- **Breach marker:** a conclusion that names a supplied-record defect. A marker
+  does not itself investigate, correct, compensate, or release anyone.
+
+- **Democratic corridor:** the space in which public choice is permitted,
+  bounded by invariants, protected private freedom, review, and peaceful change.
+
+- **External assumption:** a necessary premise whose truth is not established by
+  this design, such as honest testimony, record arrival, or outside cooperation.
+
+## Roles, bodies, and cases
+
+### Roles and bodies
+
+- **Personhood, including children, unregistered claimants, and prisoners:**
+  ordinary personhood in the current model is writer-enrolled. Custody and the
+  finished-sentence side route are the only current paths for an unlisted person;
+  neither establishes generic unregistered free people. Begin with Chapters
+  [1](01-what-counts-as-evidence.md), [7](07-a-prisoner-is-a-person.md),
+  [8](08-what-you-are-owed.md), and
+  [9](09-the-vote-conviction-does-not-take.md).
+
+- **The electorate and the convocation:** separate seating sources for public
+  answerability and the two credentials used by accountability. See Chapters
+  [2](02-standing.md), [3](03-who-holds-the-pen.md),
+  [5](05-voiding.md), and [12](12-changing-the-rules.md).
+
+- **An examiner or auditor:** records findings, may earn recognition for honest
+  examination, and may lose credibility for deceit or prohibited closeness. See
+  Chapters [3](03-who-holds-the-pen.md), [5](05-voiding.md), and
+  [10](10-contribution.md).
+
+- **The court:** supplies a judgment but not, by itself, a complete or current
+  authority to confine. See Chapters [2](02-standing.md),
+  [4](04-the-shield.md), [7](07-a-prisoner-is-a-person.md), and
+  [13](13-the-one-thing-taken.md).
+
+- **The review and appeals bodies:** examine conduct, receive challenges, and
+  appear as holders of duties. The text distinguishes a duty assigned to them
+  from action by them. See Chapters [2](02-standing.md),
+  [5](05-voiding.md), [9](09-the-vote-conviction-does-not-take.md), and
+  [14](14-when-the-system-notices-it-broke.md).
+
+- **The assembly and approving public:** produce a proposal and recorded result;
+  neither entry proves that the text was authenticated, enacted, or applied. See
+  Chapter [12](12-changing-the-rules.md).
+
+- **TimeService, Chronicle, TemporalReview, and the Electorate:** TimeService
+  supplies review-window boundaries. Chronicle and TemporalReview supply the
+  separately witnessed case, source, and ordering evidence the rules consume.
+  The Electorate and TemporalReview supply the separate custody approvals. These
+  entries remain inputs, not proof of their own honesty or continued operation.
+  See Chapters [1](01-what-counts-as-evidence.md),
+  [3](03-who-holds-the-pen.md), [7](07-a-prisoner-is-a-person.md), and
+  [13](13-the-one-thing-taken.md).
+
+- **The State:** owes the floor and is itself answerable as a public body. That
+  legal position does not prove delivery. See Chapters
+  [2](02-standing.md), [8](08-what-you-are-owed.md), and
+  [15](15-the-five-joints.md#the-state).
+
+### Principal named cases
+
+- **Adam and Kel:** the no-home placement gap, shelter produced through
+  confinement, and the cost when confinement ends. See Chapters
+  [11](11-where-people-are-put.md) and [13](13-the-one-thing-taken.md).
+
+- **Bela and Cira:** voiding, clawback, undelivered floor items, adulthood, and
+  contribution recur across Chapters [5](05-voiding.md),
+  [6](06-clawback.md), [8](08-what-you-are-owed.md),
+  [9](09-the-vote-conviction-does-not-take.md), and
+  [10](10-contribution.md).
+
+- **Boss and Rebel:** why recalled power and permanent answerability must remain
+  separate. See Chapter [2](02-standing.md).
+
+- **Don, Pax, Sly, Kel, and Rex:** the shield's false-target, review-window,
+  deceit, and repeat-claim tests. See Chapter [4](04-the-shield.md).
+
+- **Esa:** a person whose teaching can count while a missing adulthood entry
+  still gates the vote. See Chapters [5](05-voiding.md),
+  [9](09-the-vote-conviction-does-not-take.md), and
+  [10](10-contribution.md).
+
+- **Hano:** custody, home placement, the retained vote, and movement as the
+  claimed boundary of punishment. See Chapters
+  [9](09-the-vote-conviction-does-not-take.md),
+  [11](11-where-people-are-put.md), and
+  [13](13-the-one-thing-taken.md).
+
+- **Jala:** a person nearly voided through vocabulary meant for amendments, and
+  later the free comparator to Hano. See Chapters
+  [12](12-changing-the-rules.md) and [13](13-the-one-thing-taken.md).
+
+- **Ruk, Lalo, and Nando:** the placement routes and the alarm that first watched
+  the wrong fact. See Chapters [11](11-where-people-are-put.md) and
+  [14](14-when-the-system-notices-it-broke.md).
+
+- **Sock, Puppet, Koa, and Vex:** forged, absent, or stale authority and the
+  difference between a recorded finding and a credential that counts. See
+  Chapters [3](03-who-holds-the-pen.md) and [5](05-voiding.md).
+
+- **Zed and Ivo:** an unlisted defendant whose conviction tests whether a
+  prisoner remains a person. See Chapter
+  [7](07-a-prisoner-is-a-person.md).
+
+- **Historical cases:** the documented examples are organised by failure joint,
+  not by the fictional record names. Enter through
+  [Valuation](15-the-five-joints.md#valuation),
+  [Rotation](15-the-five-joints.md#rotation),
+  [Coercion](15-the-five-joints.md#coercion),
+  [Capture](15-the-five-joints.md#capture), or
+  [The State](15-the-five-joints.md#the-state).
+
+## Domains and chapters
+
+This crosswalk shows the strongest present entry into each social domain. It is
+also a gap map: a chapter touching one edge of a domain is not full coverage of
+the domain.
+
+- **Personhood and life course:** Chapters
+  [1](01-what-counts-as-evidence.md), [2](02-standing.md),
+  [7](07-a-prisoner-is-a-person.md), and
+  [9](09-the-vote-conviction-does-not-take.md). Birth, ageing, supported agency,
+  and succession are not yet represented by complete derived routes.
+
+- **Body, health, care, family, and intimacy:** Chapters
+  [8](08-what-you-are-owed.md), [10](10-contribution.md), and
+  [15](15-the-five-joints.md). They establish floor and contribution edges, not
+  a complete care, consent, family, or continuity system.
+
+- **Learning, knowledge, media, science, religion, and culture:** Chapters
+  [7](07-a-prisoner-is-a-person.md), [8](08-what-you-are-owed.md), and
+  [10](10-contribution.md). Learning has a narrow two-sided route; the wider
+  domain does not yet have complete derived coverage.
+
+- **Food, housing, land, utilities, infrastructure, and public space:** Chapters
+  [8](08-what-you-are-owed.md), [11](11-where-people-are-put.md), and
+  [13](13-the-one-thing-taken.md). The entitlement and confinement cases are
+  present; ordinary delivery remains the central gap.
+
+- **Work, property, enterprise, exchange, money, credit, debt, and public
+  finance:** Chapters [6](06-clawback.md), [10](10-contribution.md), and
+  [15](15-the-five-joints.md). Recognition is deliberately not an economy, and
+  these chapters do not supply the missing economic system.
+
+- **Democracy, government, and administration:** Chapters
+  [2](02-standing.md), [3](03-who-holds-the-pen.md),
+  [9](09-the-vote-conviction-does-not-take.md), and
+  [12](12-changing-the-rules.md). They cover selected authority, franchise, and
+  amendment edges rather than a complete government.
+
+- **Civil, criminal, and administrative justice, safety, and repair:** Chapters
+  [4](04-the-shield.md), [5](05-voiding.md),
+  [7](07-a-prisoner-is-a-person.md), [11](11-where-people-are-put.md),
+  [13](13-the-one-thing-taken.md), and
+  [14](14-when-the-system-notices-it-broke.md). This is the most deeply
+  formalised current domain and still stops short of complete conditions,
+  action, and remedy.
+
+- **Records, surveillance, and automated power:** Chapters
+  [1](01-what-counts-as-evidence.md), [3](03-who-holds-the-pen.md),
+  [5](05-voiding.md), [12](12-changing-the-rules.md), and
+  [14](14-when-the-system-notices-it-broke.md). The closed record is central;
+  truth, authorship, storage, surveillance, and live operation remain bounded.
+
+- **Locality, membership, mobility, migration, and external relations:** Chapter
+  [13](13-the-one-thing-taken.md) supplies the present movement conclusion.
+  Membership, portability, borders, migration, and external relations do not yet
+  have complete derived chapters.
+
+- **Emergencies, security, and defence:** no current derived chapter supplies the
+  domain. Custody time and record continuity in Chapter
+  [13](13-the-one-thing-taken.md) are not an emergency or defence system.
+
+- **Ecology, non-human animals, commons, and future conditions:** no current
+  derived chapter supplies the domain. It should not be inferred from the floor
+  or from the historical scorecard.
+
+- **Friendship, leisure, mutual aid, associations, and the residual free social
+  field:** Chapter [8](08-what-you-are-owed.md) currently protects belief,
+  expression, and company, while Chapter [10](10-contribution.md) currently
+  recognises care and teaching through its contribution routes. Wider
+  non-prescription is ratified routing but remains unimplemented; it is not
+  current derived coverage.
+
+## Accessible diagrams
+
+Each diagram below is a one-line reading aid followed by a complete prose
+equivalent. The arrows show questions to follow, not proof that every step exists.
+No distinction depends on colour, position, or the arrow alone.
+
+### Five ways a question can belong
+
+**Text diagram:** question → constitutional invariant / democratic choice /
+protected private or civic freedom / operation / external assumption.
+
+**Prose equivalent:** For every question, ask whether the answer must bind every
+public decision, may be chosen democratically inside that binding, belongs to a
+person or association without public prescription, concerns the practical work
+of carrying a decision out, or depends on a fact outside the design. Those are
+different dispositions. None proves another.
+
+### From the world to a conclusion
+
+**Text diagram:** event in reality → reported entry → rule → conclusion. A
+reported entry does not prove the event, and a conclusion does not perform an
+action.
+
+**Prose equivalent:** Something happens in the world. Somebody or some system
+reports it into the permitted record. A rule reads that entry and may produce a
+conclusion. The check can verify the last step. It cannot, without separate
+evidence, verify that the event happened, the report was honest, the record was
+complete, or anybody acted after the conclusion.
+
+### The floor, delivery, and repair
+
+**Text diagram:** person → unconditional floor → delivery → recipient-side
+receipt → challenge on failure → remedy → restored condition → continuity,
+feedback, and recheck → renewed failure returns to challenge and correction.
+
+**Prose equivalent:** Personhood is meant to establish what is owed without a
+prior test. A separate delivery route must make each item arrive. Evidence from
+the receiving side must establish accessible, adequate receipt. If delivery is
+missing or defective, the person needs a usable challenge, an accountable body,
+and a remedy that restores the protected condition. Continuity, feedback, and
+rechecking must then test whether the restored condition holds; a renewed or
+partial failure feeds back into challenge, correction, and remedy. A rule that
+establishes the debt does not silently supply any later link. The current
+chapters contain some of these links and explicitly leave others open.
+
+### The democratic corridor
+
+**Text diagram:** invariant floor and protected freedom → bounded public choice
+→ authenticated result → effective rule → challenge and peaceful correction.
+
+**Prose equivalent:** Constitutional invariants and private freedoms mark what a
+majority cannot take or prescribe. Within that boundary, people may make public
+choices. A complete route would distinguish the vote or deliberation from an
+authenticated result, the result from an effective rule, and the effective rule
+from the later routes of review, correction, recall, or amendment. The present
+record contains only parts of that chain.
+
+### Institutions and accountability
+
+**Text diagram:** people seat public bodies → authorised actors record or decide
+→ a separate body examines → an affected person challenges → a separate body
+reviews and corrects.
+
+**Prose equivalent:** Public authority should have a named source. The body that
+records, investigates, or decides should not gain authority merely by declaring
+it. A different body should be able to examine the act, the affected person
+should retain a route to contest it, and review should be capable of correction.
+The chapters test several separations but do not claim that every institution or
+correction route is complete or operational.
+
+### Why the chapters have this order
+
+**Text diagram:** permitted evidence → standing → credentials → shield and
+voiding → clawback → prisoner/person → floor and vote → contribution, placement,
+and rule change → movement → breach markers.
+
+**Prose equivalent:** Later conclusions depend on earlier ones. The record comes
+first because every later rule reads it. Standing precedes credentials;
+credentials feed the accountability instruments; voiding feeds clawback;
+custody feeds personhood, the floor, placement, and movement; the final breach
+markers depend on results produced below them. This dependency order explains
+the carceral arc. It is not a ranking of what matters most in a human life.
