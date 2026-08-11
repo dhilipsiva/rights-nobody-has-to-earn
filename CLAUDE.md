@@ -1126,16 +1126,31 @@ taxonomy label, threshold value, active completed attempt, or
 does not make R6 built or available; FS-CLM-37 remains
 Unestablished/route-unbuilt and Gate C is unchanged.
 
+**Reader-evidence execution was withdrawn from the current Book 1 program by
+the author on 2026-08-11.** The independent human roles could not be
+commissioned, so the pilot, holdout, post-pilot threshold ruling, and human
+screen-reader smoke test are not being pursued for this program. This is a
+scope withdrawal, not completion, evidence, or a pass. Leave the empirical
+machine state above unchanged; create no void attempt where nothing was frozen
+or run. Gate C remains unsatisfied, Book 1 — First Edition and its POD may not
+publish, and Book 2 does not activate. Source and test work may continue; after
+independent Gate A and Gate B completion and every applicable preview
+snapshot-specific gate, only an explicitly unvalidated Gate B preview may
+publish. The dormant protocol may be revived only by a later author
+ruling beginning at its original pre-registration boundary. Controlling record:
+`new-book-plans/book-1-reader-evidence-execution-withdrawal-decision.md`.
+
 The Reader's Map, annotated contents, glossary, indexes, domain map, and
 prose-equivalent diagrams landed in the exempt opening note at `67a520e`. The
 public-minimum pilot kit and snapshot builder landed at `c8317ac` as draft
 templates and tooling. Script 15 checks semantic source headings, local links,
-and deterministic HTML/EPUB generation only. A bound PDF, cross-format
-validation, and a human screen-reader smoke test remain open. No pilot snapshot
-or instrument is frozen or pre-registered, no participant evidence exists, and
-R6 remains unavailable.
+and deterministic HTML/EPUB generation only. Automated artifact validation
+does not warrant human accessibility; the human screen-reader test was
+withdrawn rather than passed. No pilot snapshot or instrument is frozen or
+pre-registered, no participant evidence exists, and R6 remains unavailable.
 
-The sequencing rule construes the sessions item's own sentence:
+If a later author ruling revives the route, the sequencing rule construes the
+dormant protocol as follows:
 pre-registration binds **each round's instrument before that round**. The pilot
 runs under a pre-registered pilot instrument carrying at most an expressly
 provisional draft rule and draft severity taxonomy; the reserved ruling lands

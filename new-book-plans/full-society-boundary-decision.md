@@ -3,7 +3,9 @@
 # Full-Society Volume, Edition, and Stopping Boundary Decision
 
 > **Status: author-ratified 2026-08-07 — two-book model + C then E +
-> versioned closure.** This is a scope, publication, and public-claim decision.
+> versioned closure; current Book 1 reader-evidence execution withdrawn
+> 2026-08-11, leaving the Gate C ceiling in force.** This is a scope,
+> publication, and public-claim decision.
 > It does not enact a constitutional rule, activate Book 2, or create a tag,
 > preview, edition, print file, or release.
 
@@ -61,6 +63,18 @@ public object remains a preview and Book 2 does not activate. If the compatible
 Book 1/Book 2 pairing, integrated checks, or manifest does not pass Gate E, Book
 2 remains a preview or release candidate and neither its First Edition nor the
 integrated claim may publish.
+
+**2026-08-11 current-program application.** The author withdrew execution of
+the human reader-evidence route and its human screen-reader validation from the
+current Book 1 program. This does not amend Gate C into a repository-only gate.
+Gate C remains unsatisfied: no Book 1 — First Edition, first-edition POD,
+tested-audience suitability claim, or Book 2 activation follows. Public source
+and the Gate A map/test program may continue; after every independent Gate A
+and Gate B condition and every applicable preview snapshot-specific gate
+passes, only an immutable Gate B preview may publish, with the absence of
+admissible human reader and accessibility validation stated as a claim limit.
+The controlling disposition is
+[`book-1-reader-evidence-execution-withdrawal-decision.md`](book-1-reader-evidence-execution-withdrawal-decision.md).
 
 ## 3. Words whose scope must remain visible
 
@@ -218,3 +232,8 @@ On 2026-08-07 the author selected:
 This ruling changes planning, release semantics, and permitted public claims
 only. It adds no predicate, rule, fact, right, duty, institution, chapter, tag,
 preview, edition, print file, or release.
+
+On 2026-08-11 the author withdrew execution of the reader-evidence route from
+the current Book 1 program. That later decision preserves C then E and accepts
+its consequence: Book 1 remains below Gate C unless the route is revived and
+the unchanged gate actually passes.

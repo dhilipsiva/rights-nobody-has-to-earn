@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-11-git-history-transition`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-11-reader-route-withdrawn`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -793,7 +793,7 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | temporal-assurance-case.json | posture | `exposed_external_boundary` | Not a posture — names an external boundary; dependent claims take Unestablished/external-assumption |
 | temporal-assurance-case.json | posture | `preserved_by_narrowness_test` | Derived — a narrowness control executed against the current source |
 | temporal-assurance-case.json | status | `staged_t3_repository_assurance` | Not a posture — the artifact's declared evidence role; its rows carry their own mappings |
-| reader-evidence.json | threshold_status | `pending-pilot` | Unestablished/author-ruling-pending for the threshold rule; not a reader result |
+| reader-evidence.json | threshold_status | `pending-pilot` | Not a posture — dormant protocol lifecycle; threshold unset and no ruling pursued in the current program |
 | reader-evidence.json | holdout_status | `not-frozen` | Not a posture — active holdout-attempt lifecycle; no active pre-registration is frozen |
 | reader-evidence.json | result | `not-run` | Not a posture — no completed non-void holdout result exists |
 | reader-evidence.json | route_status | `unbuilt` | Unestablished/route-unbuilt for FS-CLM-37 |

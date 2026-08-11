@@ -2,7 +2,9 @@
 
 # Book 1 Assurance Portfolio Decision
 
-> **Status: author-ratified on 2026-08-08; formal implementation pending.**
+> **Status: author-ratified on 2026-08-08; R6 execution withdrawn from the
+> current Book 1 program on 2026-08-11; formal implementation otherwise
+> pending.**
 > This decision selects the assurance portfolio: which route warrants which
 > claim, what posture every claim carries, and what language each posture
 > permits. It adds no predicate, rule, fact, pin, generator, `verify.sh`
@@ -64,12 +66,21 @@ six produces.
 | **R3** | Dynamic simulations | Behaviour of queues, flows, shocks and transitions under stated assumptions | That the modelled behaviour occurred, or that the assumptions hold | Unbuilt |
 | **R4** | The claim registry | Empirical figures about the world, with provenance, population, period, place and method intact | Any constitutional consequence, and any generalisation to this design | **Built**, split — see 2a |
 | **R5** | Operational assurance | That something was actually done, delivered, advanced, or independently reproduced | Legal effect, and anything outside its dated scope | Not yet **available** |
-| **R6** | Reader and lived-experience studies | Comprehension, balance, and human effects, for the tested audience within the disclosed sampling and method limits | Population statistics, authority over the people studied, or any legal or empirical claim | Unbuilt |
+| **R6** | Reader and lived-experience studies | Comprehension, balance, and human effects, for the tested audience within the disclosed sampling and method limits | Population statistics, authority over the people studied, or any legal or empirical claim | Unbuilt; execution withdrawn from the current Book 1 program |
 | **R7** | Independent multidisciplinary and adversarial review | That an omission was proposed and received a reasoned public disposition | Derivation, measurement, authentication, or a veto — a reviewer compels a disposition, not acceptance | Unbuilt |
 
 **Non-substitution.** One green route may not stand in for another. A route may
 not be split, renamed, or reinterpreted to make a claim fit. This restates
 existing doctrine and weakens none of it.
+
+**Current-program disposition.** The 2026-08-11 author ruling withdraws
+execution of R6 from the current Book 1 program because the required independent
+human roles are unavailable. It neither removes R6 from the portfolio nor
+changes its warrant. R6 stays unbuilt, FS-CLM-37 stays
+Unestablished/route-unbuilt, and the reader condition of Gate C stays
+unsatisfied. The dormant protocol may be revived only by a later author ruling
+that restarts at its original pre-registration boundary. See
+[`book-1-reader-evidence-execution-withdrawal-decision.md`](book-1-reader-evidence-execution-withdrawal-decision.md).
 
 ### 2a. R4 is two warrants, not one
 

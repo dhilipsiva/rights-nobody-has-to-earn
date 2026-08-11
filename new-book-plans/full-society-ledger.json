@@ -4,10 +4,10 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-11-git-history-transition",
+  "source_version": "fs-ledger-2026-08-11-reader-route-withdrawn",
   "bound_sources_sha256": {
-    "assurance_portfolio": "86601ec5eb44565bced4de7eb80f442596595c717d8064df6ca12b9a1f9dc557",
-    "full_society_boundary": "7f19c61301c9884f775ff0fa668ffa0335184a420851a2049615259f11589dbc"
+    "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
+    "full_society_boundary": "62ffe52b1cb4613ea0a1181455f3964ecf9b1fedd3382c4e7c35491fb41e4015"
   },
   "axes": [
     {
@@ -311,10 +311,10 @@
     { "source_file": "temporal-assurance-case.json", "field": "posture", "value": "exposed_external_boundary", "canonical": "Not a posture — names an external boundary; dependent claims take Unestablished/external-assumption", "note": "The boundary is epistemic; nothing outside the supplied records is established." },
     { "source_file": "temporal-assurance-case.json", "field": "posture", "value": "preserved_by_narrowness_test", "canonical": "Derived — a narrowness control executed against the current source", "note": "Executed staged-case control outcome." },
     { "source_file": "temporal-assurance-case.json", "field": "status", "value": "staged_t3_repository_assurance", "canonical": "Not a posture — the artifact's declared evidence role; its rows carry their own mappings", "note": "Artifact-level status string." },
-    { "source_file": "reader-evidence.json", "field": "threshold_status", "value": "pending-pilot", "canonical": "Unestablished/author-ruling-pending for the threshold rule; not a reader result", "note": "The taxonomy and values remain empty until a valid completed pilot." },
+    { "source_file": "reader-evidence.json", "field": "threshold_status", "value": "pending-pilot", "canonical": "Not a posture — dormant protocol lifecycle; threshold unset and no ruling pursued in the current program", "note": "The taxonomy and values remain empty; execution is withdrawn from the current Book 1 program and can resume only under a later author revival ruling." },
     { "source_file": "reader-evidence.json", "field": "holdout_status", "value": "not-frozen", "canonical": "Not a posture — active holdout-attempt lifecycle; no active pre-registration is frozen", "note": "This axis is independent of the persistent result axis; the dormant source has no attempts." },
     { "source_file": "reader-evidence.json", "field": "result", "value": "not-run", "canonical": "Not a posture — no completed non-void holdout result exists", "note": "The result axis comes from the most recent completed non-void attempt and persists while newer attempts are frozen or void." },
-    { "source_file": "reader-evidence.json", "field": "route_status", "value": "unbuilt", "canonical": "Unestablished/route-unbuilt for FS-CLM-37", "note": "The external reader route is not yet available." },
+    { "source_file": "reader-evidence.json", "field": "route_status", "value": "unbuilt", "canonical": "Unestablished/route-unbuilt for FS-CLM-37", "note": "The external reader route is unavailable and its execution is withdrawn from the current Book 1 program." },
     { "source_file": "reader-evidence.json", "field": "evidence_contract_status", "value": "implemented", "canonical": "Not a posture or route availability — dormant structural contract only", "note": "Implementation of the record shape alone admits no evidence." },
     { "source_file": "reader-evidence.json", "field": "negative_control_status", "value": "not-run", "canonical": "Not a posture — the active pilot's R6 control is not-run", "note": "Structural schema mutations are not the seeded misconception control, and prior attempt controls cannot substitute for the active attempt." },
     { "source_file": "reader-evidence.json", "field": "pilot_status", "value": "not-run", "canonical": "Not a posture — no active pilot attempt has run", "note": "Earlier attempts, once present, remain in locally hash-chained history whose normal first-parent Git transitions and frozen-predecessor bindings must validate; the pilot tests the instrument, not release suitability." },
@@ -1885,14 +1885,14 @@
       "route_ref": "FS-RTE-06",
       "overlay": "none",
       "scope_bound": "the tested audience within the disclosed sampling and method limits, per the ratified reader-evidence protocol; the route is neither built nor available",
-      "evidence_notes": ["the reader-evidence protocol decision fixes the method; the pass rule's values are reserved for a post-pilot ruling", "the history-transition check covers visible normal first-parent Git history only and proves neither resistance to rewritten history nor external custody truth"],
-      "public_claim_restriction": "No public reader-balance claim; the restriction stands until R6 is available and script 14 admits the active holdout attempt as a matching valid fresh completed pass",
+      "evidence_notes": ["the reader-evidence protocol decision fixes the method; the pass rule's values are reserved for a post-pilot ruling", "the 2026-08-11 author decision withdraws execution from the current Book 1 program without creating evidence or a pass", "the history-transition check covers visible normal first-parent Git history only and proves neither resistance to rewritten history nor external custody truth"],
+      "public_claim_restriction": "No public reader-balance claim; the current program accepts a preview-only ceiling, and the restriction could close only after a later revival makes R6 available and script 14 admits a matching valid fresh completed holdout pass",
       "applicability": "the finished book's ordinary reader",
       "status": "unestablished",
       "severity": "critical — the public-edition gate's holdout condition depends on it",
       "consequence": "an unsupported balance claim would be the exact overclaim the portfolio refuses",
       "owner_ref": "new-book-plans/book-1-reader-evidence-protocol-decision.md::## 2. The method, ratified as specified",
-      "closure_condition": "R6 is available and script 14 admits the active holdout attempt as a matching valid fresh completed pass in a valid history_transition that binds the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and the required predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration fields; that pre-registration also binds the exact frozen rule, frozen ratification, structural checker, and admission gate, and its stored gate-admission receipt exactly matches the fixed gate output with decision admit",
+      "closure_condition": "No closure is pursued in the current Book 1 program. A later author revival must restart the original protocol; R6 must become available and script 14 must admit the active holdout attempt as a matching valid fresh completed pass in a valid history_transition that binds the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and the required predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration fields; that pre-registration must also bind the exact frozen rule, frozen ratification, structural checker, and admission gate, and its stored gate-admission receipt must exactly match the fixed gate output with decision admit",
       "envelope_id": "FS-ENV-00"
     }
   ],
@@ -2016,7 +2016,7 @@
       "severity": "critical — Gate C's holdout condition depends on it",
       "consequence": "reader-balance claims stay Unestablished/route-unbuilt",
       "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes",
-      "closure_condition": "the implemented contract and fixed structural checker validate, including history_transition binding to the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and exact predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration bindings; the active pilot attempt is valid with its seeded control watched failing; the threshold rule is author-ratified; the fixed executable evidence-admission gate passes self-test; and an externally custodied reviewer attestation binds that gate's exact digest and closed review scope",
+      "closure_condition": "not pursued in the current Book 1 program; after a later author revival, the implemented contract and fixed structural checker must validate, including history_transition binding to the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and exact predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration bindings; the active pilot attempt must be valid with its seeded control watched failing; the threshold rule must be author-ratified; the fixed executable evidence-admission gate must pass self-test; and an externally custodied reviewer attestation must bind that gate's exact digest and closed review scope",
       "route_status": "unbuilt",
       "warrants": "Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available",
       "cannot_warrant": "Population statistics, authority over the people studied, resistance to rewritten Git history, external custody truth, or any legal or empirical claim",
