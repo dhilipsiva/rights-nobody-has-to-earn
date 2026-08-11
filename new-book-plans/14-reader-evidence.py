@@ -1492,6 +1492,21 @@ def validate_pilot_attempt(
         expected_study_id=study_id,
         commitment=None,
     )
+    pilot_run_evidence = bool(
+        sessions
+        or raw_deviations
+        or raw_custody
+        or attempt["receipt"] is not None
+        or attempt["decision_packet"] is not None
+        or attempt["sensitivity_brief"] is not None
+    )
+    validate_pilot_run_freshness(
+        custody,
+        f"{path}.custody_attestations",
+        expected_study_id=study_id,
+        run_evidence=pilot_run_evidence,
+        require_attested=status == "completed",
+    )
 
     packet = (
         validate_decision_packet(
@@ -3055,6 +3070,84 @@ def validate_record_links(
         )
 
 
+def validate_pilot_run_freshness(
+    custody: dict[str, dict[str, object]],
+    path: str,
+    *,
+    expected_study_id: str | None,
+    run_evidence: bool,
+    require_attested: bool,
+) -> bool:
+    """Require one study-bound freshness record once a pilot has run."""
+    freshness_records = [
+        item
+        for item in custody.values()
+        if item["scope"] == "study-freshness"
+    ]
+    if run_evidence and len(freshness_records) != 1:
+        raise ReaderEvidenceError(
+            f"{path}: pilot run evidence requires exactly one study-freshness custody attestation"
+        )
+    if not run_evidence:
+        return False
+    freshness = freshness_records[0]
+    if (
+        expected_study_id is not None
+        and freshness["study_id"] != expected_study_id
+    ):
+        raise ReaderEvidenceError(
+            f"{path}: pilot freshness custody cites a different study"
+        )
+    freshness_attested = freshness["freshness_attested"] is True
+    if require_attested and not freshness_attested:
+        raise ReaderEvidenceError(
+            f"{path}: a completed valid pilot requires freshness_attested true"
+        )
+    return freshness_attested
+
+
+def validate_frozen_holdout_payload(
+    *,
+    attempt_result: str,
+    sessions: list[dict[str, object]],
+    deviations: dict[str, dict[str, object]],
+    custody: dict[str, dict[str, object]],
+    receipt_present: bool,
+    commitment_reveal_present: bool,
+    gate_receipt_present: bool,
+    commitment: dict[str, object] | None,
+    path: str,
+) -> None:
+    """Allow only the custody record that freezes a private commitment."""
+    if (
+        attempt_result != "not-run"
+        or sessions
+        or deviations
+        or receipt_present
+        or commitment_reveal_present
+        or gate_receipt_present
+    ):
+        raise ReaderEvidenceError(
+            f"{path}: frozen holdout cannot carry run evidence or a result"
+        )
+    if commitment is None:
+        if custody:
+            raise ReaderEvidenceError(
+                f"{path}: frozen holdout without a commitment cannot carry custody evidence"
+            )
+        return
+    matching = [
+        item
+        for item in custody.values()
+        if item["scope"] == "commitment"
+        and item["sha256"] == commitment["custody_attestation_sha256"]
+    ]
+    if len(custody) != 1 or len(matching) != 1:
+        raise ReaderEvidenceError(
+            f"{path}: frozen private commitment requires exactly one matching commitment custody attestation"
+        )
+
+
 def resolved_policy_action(
     status: str,
     adjudication: str,
@@ -4058,18 +4151,21 @@ def validate_holdout(
         )
 
         if attempt_status == "frozen":
-            if (
-                attempt_result != "not-run"
-                or sessions
-                or raw_deviations
-                or raw_custody
-                or receipt is not None
-                or attempt["commitment_reveal"] is not None
-                or attempt["gate_admission_receipt"] is not None
-            ):
-                raise ReaderEvidenceError(
-                    f"{path}: frozen holdout cannot carry run evidence or a result"
-                )
+            validate_frozen_holdout_payload(
+                attempt_result=attempt_result,
+                sessions=sessions,
+                deviations=deviations,
+                custody=custody,
+                receipt_present=receipt is not None,
+                commitment_reveal_present=(
+                    attempt["commitment_reveal"] is not None
+                ),
+                gate_receipt_present=(
+                    attempt["gate_admission_receipt"] is not None
+                ),
+                commitment=commitment,
+                path=path,
+            )
         elif attempt_status == "completed":
             if active and route_status != "available":
                 raise ReaderEvidenceError(
@@ -5256,6 +5352,33 @@ def structural_controls(
             )
         return False
 
+    def rewrite_custody_record(
+        record: dict[str, object], updates: dict[str, object]
+    ) -> None:
+        record.update(updates)
+        record["record_sha256"] = canonical_sha(
+            record, omit="record_sha256"
+        )
+
+    def append_distinct_custody_record(
+        records: list[dict[str, object]],
+        index: int,
+        updates: dict[str, object] | None = None,
+    ) -> None:
+        record = copy.deepcopy(records[index])
+        record["attestation_id"] = (
+            str(record["attestation_id"]) + "-MUTATION"
+        )
+        record["sha256"] = sha256_bytes(
+            (str(record["sha256"]) + "-mutation").encode("utf-8")
+        )
+        if updates is not None:
+            record.update(updates)
+        record["record_sha256"] = canonical_sha(
+            record, omit="record_sha256"
+        )
+        records.append(record)
+
 
     add("unknown root key", lambda s: s.update({"extra": None}), "unexpected")
     add("boolean schema version", lambda s: s.update({"schema_version": True}), "integer 1")
@@ -5338,7 +5461,33 @@ def structural_controls(
         add("route availability without components", lambda s: s["route"].update({"route_status": "available"}), "must be unbuilt")
         add("claim evidence pending on unbuilt route", lambda s: s["claim"].update({"disposition": "evidence-pending"}), "route-unbuilt")
         add("claim evidenced without a pass", lambda s: s["claim"].update({"posture": "Evidenced", "disposition": "none"}), "Unestablished")
-        add("bootstrap predecessor injected", lambda s: s["history_transition"].update({"previous_source_commit": "0" * 40}), "null predecessor")
+        transition_record = as_object(
+            source["history_transition"], "history_transition"
+        )
+        if transition_record["previous_source_commit"] is None:
+            add("bootstrap predecessor injected", lambda s: s["history_transition"].update({"previous_source_commit": "0" * 40}), "null predecessor")
+        else:
+            add(
+                "dormant history predecessor commit drift",
+                lambda s: s["history_transition"].update(
+                    {"previous_source_commit": "0" * 40}
+                ),
+                "nearest prior JSON-changing commit",
+            )
+            add(
+                "dormant history predecessor source digest drift",
+                lambda s: s["history_transition"].update(
+                    {"previous_source_sha256": "0" * 64}
+                ),
+                "stale",
+            )
+            add(
+                "dormant history predecessor head drift",
+                lambda s: s["history_transition"].update(
+                    {"previous_history_head_sha256": "0" * 64}
+                ),
+                "stale",
+            )
     else:
         transition_record = as_object(
             source["history_transition"], "history_transition"
@@ -5740,6 +5889,87 @@ def structural_controls(
                     ),
                     "duplicate",
                 )
+            pilot_freshness_attempt = next(
+                (
+                    index
+                    for index, attempt in enumerate(pilot_attempts)
+                    if attempt["attempt_status"] == "completed"
+                ),
+                next(
+                    (
+                        index
+                        for index, attempt in enumerate(pilot_attempts)
+                        if (
+                            attempt["session_records"]
+                            or attempt["deviations"]
+                            or attempt["receipt"] is not None
+                            or attempt["decision_packet"] is not None
+                            or attempt["sensitivity_brief"] is not None
+                        )
+                    ),
+                    None,
+                ),
+            )
+            if pilot_freshness_attempt is not None:
+                freshness_index = next(
+                    (
+                        index
+                        for index, item in enumerate(
+                            pilot_attempts[pilot_freshness_attempt][
+                                "custody_attestations"
+                            ]
+                        )
+                        if item["scope"] == "study-freshness"
+                    ),
+                    None,
+                )
+                if freshness_index is None:
+                    raise ReaderEvidenceError(
+                        "validated pilot run lacks its freshness control record"
+                    )
+                add(
+                    "pilot freshness custody removed",
+                    lambda s, attempt_index=pilot_freshness_attempt, item_index=freshness_index: s[
+                        "pilot"
+                    ]["attempts"][attempt_index][
+                        "custody_attestations"
+                    ].pop(item_index),
+                    "exactly one study-freshness",
+                )
+                add(
+                    "pilot freshness custody duplicated",
+                    lambda s, attempt_index=pilot_freshness_attempt, item_index=freshness_index: append_distinct_custody_record(
+                        s["pilot"]["attempts"][attempt_index][
+                            "custody_attestations"
+                        ],
+                        item_index,
+                    ),
+                    "exactly one study-freshness",
+                )
+                add(
+                    "pilot freshness custody wrong study",
+                    lambda s, attempt_index=pilot_freshness_attempt, item_index=freshness_index: rewrite_custody_record(
+                        s["pilot"]["attempts"][attempt_index][
+                            "custody_attestations"
+                        ][item_index],
+                        {"study_id": "RE-PILOT-WRONG-STUDY"},
+                    ),
+                    "different study",
+                )
+                if (
+                    pilot_attempts[pilot_freshness_attempt]["attempt_status"]
+                    == "completed"
+                ):
+                    add(
+                        "pilot freshness attestation false",
+                        lambda s, attempt_index=pilot_freshness_attempt, item_index=freshness_index: rewrite_custody_record(
+                            s["pilot"]["attempts"][attempt_index][
+                                "custody_attestations"
+                            ][item_index],
+                            {"freshness_attested": False},
+                        ),
+                        "freshness_attested true",
+                    )
 
         if holdout_attempts:
             active_index = len(holdout_attempts) - 1
@@ -5852,6 +6082,68 @@ def structural_controls(
                             "custody_attestations"
                         ].pop(item_index),
                     )
+            frozen_private_commitment = next(
+                (
+                    index
+                    for index, attempt in enumerate(holdout_attempts)
+                    if (
+                        attempt["attempt_status"] == "frozen"
+                        and attempt["pre_registration"]["commitment"]
+                        is not None
+                    )
+                ),
+                None,
+            )
+            if frozen_private_commitment is not None:
+                commitment_custody_index = next(
+                    (
+                        index
+                        for index, item in enumerate(
+                            holdout_attempts[frozen_private_commitment][
+                                "custody_attestations"
+                            ]
+                        )
+                        if item["scope"] == "commitment"
+                    ),
+                    None,
+                )
+                if commitment_custody_index is None:
+                    raise ReaderEvidenceError(
+                        "validated frozen private commitment lacks custody"
+                    )
+                add(
+                    "frozen commitment custody removed",
+                    lambda s, attempt_index=frozen_private_commitment, item_index=commitment_custody_index: s[
+                        "holdout"
+                    ]["attempts"][attempt_index][
+                        "custody_attestations"
+                    ].pop(item_index),
+                    "commitment must bind exactly one",
+                )
+                add(
+                    "frozen holdout freshness custody injected",
+                    lambda s, attempt_index=frozen_private_commitment, item_index=commitment_custody_index: append_distinct_custody_record(
+                        s["holdout"]["attempts"][attempt_index][
+                            "custody_attestations"
+                        ],
+                        item_index,
+                        {
+                            "scope": "study-freshness",
+                            "ref": "custody:READER-EVIDENCE-FRESHNESS",
+                            "freshness_attested": True,
+                        },
+                    ),
+                    "exactly one matching commitment custody",
+                )
+                add(
+                    "frozen holdout result injected",
+                    lambda s, attempt_index=frozen_private_commitment: s[
+                        "holdout"
+                    ]["attempts"][attempt_index].update(
+                        {"attempt_result": "fail"}
+                    ),
+                    "cannot carry run evidence or a result",
+                )
             receipt_index = next(
                 (
                     index
@@ -6706,6 +6998,197 @@ def derived_evaluator_controls(
 
 def executable_controls(source: dict[str, object]) -> int:
     controls = 0
+
+    pilot_study_id = "RE-PILOT-FRESHNESS-CONTROL"
+    pilot_freshness = {
+        "RE-CUSTODY-PILOT-FRESHNESS": {
+            "study_id": pilot_study_id,
+            "scope": "study-freshness",
+            "freshness_attested": True,
+        }
+    }
+    validate_pilot_run_freshness(
+        pilot_freshness,
+        "pilot freshness executable control",
+        expected_study_id=pilot_study_id,
+        run_evidence=True,
+        require_attested=True,
+    )
+    controls += 1
+    expect_failure(
+        "pilot freshness missing",
+        lambda: validate_pilot_run_freshness(
+            {},
+            "pilot freshness missing",
+            expected_study_id=pilot_study_id,
+            run_evidence=True,
+            require_attested=True,
+        ),
+        "exactly one study-freshness",
+    )
+    controls += 1
+    duplicate_pilot_freshness = copy.deepcopy(pilot_freshness)
+    duplicate_pilot_freshness["RE-CUSTODY-PILOT-FRESHNESS-DUPLICATE"] = {
+        "study_id": pilot_study_id,
+        "scope": "study-freshness",
+        "freshness_attested": True,
+    }
+    expect_failure(
+        "pilot freshness duplicate",
+        lambda: validate_pilot_run_freshness(
+            duplicate_pilot_freshness,
+            "pilot freshness duplicate",
+            expected_study_id=pilot_study_id,
+            run_evidence=True,
+            require_attested=True,
+        ),
+        "exactly one study-freshness",
+    )
+    controls += 1
+    wrong_study_freshness = copy.deepcopy(pilot_freshness)
+    wrong_study_freshness["RE-CUSTODY-PILOT-FRESHNESS"]["study_id"] = (
+        "RE-PILOT-WRONG-STUDY"
+    )
+    expect_failure(
+        "pilot freshness wrong study",
+        lambda: validate_pilot_run_freshness(
+            wrong_study_freshness,
+            "pilot freshness wrong study",
+            expected_study_id=pilot_study_id,
+            run_evidence=True,
+            require_attested=True,
+        ),
+        "different study",
+    )
+    controls += 1
+    false_pilot_freshness = copy.deepcopy(pilot_freshness)
+    false_pilot_freshness["RE-CUSTODY-PILOT-FRESHNESS"][
+        "freshness_attested"
+    ] = False
+    expect_failure(
+        "completed pilot freshness false",
+        lambda: validate_pilot_run_freshness(
+            false_pilot_freshness,
+            "completed pilot freshness false",
+            expected_study_id=pilot_study_id,
+            run_evidence=True,
+            require_attested=True,
+        ),
+        "freshness_attested true",
+    )
+    controls += 1
+
+    commitment_digest = "a" * 64
+    frozen_commitment = {
+        "custody_attestation_sha256": commitment_digest
+    }
+    frozen_commitment_custody = {
+        "RE-CUSTODY-HOLDOUT-COMMITMENT": {
+            "scope": "commitment",
+            "sha256": commitment_digest,
+        }
+    }
+    validate_frozen_holdout_payload(
+        attempt_result="not-run",
+        sessions=[],
+        deviations={},
+        custody=frozen_commitment_custody,
+        receipt_present=False,
+        commitment_reveal_present=False,
+        gate_receipt_present=False,
+        commitment=frozen_commitment,
+        path="frozen holdout executable control",
+    )
+    controls += 1
+    expect_failure(
+        "frozen commitment custody missing",
+        lambda: validate_frozen_holdout_payload(
+            attempt_result="not-run",
+            sessions=[],
+            deviations={},
+            custody={},
+            receipt_present=False,
+            commitment_reveal_present=False,
+            gate_receipt_present=False,
+            commitment=frozen_commitment,
+            path="frozen commitment custody missing",
+        ),
+        "exactly one matching commitment custody",
+    )
+    controls += 1
+    duplicate_commitment_custody = copy.deepcopy(
+        frozen_commitment_custody
+    )
+    duplicate_commitment_custody[
+        "RE-CUSTODY-HOLDOUT-COMMITMENT-DUPLICATE"
+    ] = {
+        "scope": "commitment",
+        "sha256": commitment_digest,
+    }
+    expect_failure(
+        "frozen commitment custody duplicate",
+        lambda: validate_frozen_holdout_payload(
+            attempt_result="not-run",
+            sessions=[],
+            deviations={},
+            custody=duplicate_commitment_custody,
+            receipt_present=False,
+            commitment_reveal_present=False,
+            gate_receipt_present=False,
+            commitment=frozen_commitment,
+            path="frozen commitment custody duplicate",
+        ),
+        "exactly one matching commitment custody",
+    )
+    controls += 1
+    frozen_freshness_custody = copy.deepcopy(frozen_commitment_custody)
+    frozen_freshness_custody["RE-CUSTODY-HOLDOUT-FRESHNESS"] = {
+        "scope": "study-freshness",
+        "sha256": "b" * 64,
+    }
+    expect_failure(
+        "frozen holdout freshness evidence",
+        lambda: validate_frozen_holdout_payload(
+            attempt_result="not-run",
+            sessions=[],
+            deviations={},
+            custody=frozen_freshness_custody,
+            receipt_present=False,
+            commitment_reveal_present=False,
+            gate_receipt_present=False,
+            commitment=frozen_commitment,
+            path="frozen holdout freshness evidence",
+        ),
+        "exactly one matching commitment custody",
+    )
+    controls += 1
+    for label, overrides in (
+        ("session", {"sessions": [{}]}),
+        ("deviation", {"deviations": {"RE-DEV-MUTATION": {}}}),
+        ("result", {"attempt_result": "fail"}),
+        ("result receipt", {"receipt_present": True}),
+    ):
+        arguments = {
+            "attempt_result": "not-run",
+            "sessions": [],
+            "deviations": {},
+            "custody": frozen_commitment_custody,
+            "receipt_present": False,
+            "commitment_reveal_present": False,
+            "gate_receipt_present": False,
+            "commitment": frozen_commitment,
+            "path": f"frozen holdout {label} evidence",
+        }
+        arguments.update(overrides)
+        expect_failure(
+            f"frozen holdout {label} evidence",
+            lambda arguments=arguments: validate_frozen_holdout_payload(
+                **arguments
+            ),
+            "cannot carry run evidence or a result",
+        )
+        controls += 1
+
     invalid_states = [
         ("pending-pilot", "not-frozen", "pass", "unbuilt", "Unestablished", "route-unbuilt", False),
         ("pending-pilot", "void", "not-run", "unbuilt", "Unestablished", "route-unbuilt", False),
