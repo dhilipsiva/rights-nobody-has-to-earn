@@ -1126,6 +1126,15 @@ taxonomy label, threshold value, active completed attempt, or
 does not make R6 built or available; FS-CLM-37 remains
 Unestablished/route-unbuilt and Gate C is unchanged.
 
+The Reader's Map, annotated contents, glossary, indexes, domain map, and
+prose-equivalent diagrams landed in the exempt opening note at `67a520e`. The
+public-minimum pilot kit and snapshot builder landed at `c8317ac` as draft
+templates and tooling. Script 15 checks semantic source headings, local links,
+and deterministic HTML/EPUB generation only. A bound PDF, cross-format
+validation, and a human screen-reader smoke test remain open. No pilot snapshot
+or instrument is frozen or pre-registered, no participant evidence exists, and
+R6 remains unavailable.
+
 The sequencing rule construes the sessions item's own sentence:
 pre-registration binds **each round's instrument before that round**. The pilot
 runs under a pre-registered pilot instrument carrying at most an expressly
@@ -1256,11 +1265,11 @@ domain; any reader result entering the engine; declaring the route built or
 available; predicting any session's outcome; and threshold values or
 illustrative numbers before pilot evidence exists. The empirical protocol
 remains **unexecuted**: the dormant reviewed source, generated report, structural
-checker, deterministic evaluator, and fixed gate component create no instrument,
-session, threshold, reviewer, admitted evidence, predicate, rule, pin, chapter,
-established posture, or public claim. A built gate component is not a built or
-available R6 route; FS-CLM-37 remains Unestablished/route-unbuilt and Gate C is
-unchanged. The controlling record is
+checker, deterministic evaluator, and fixed gate component create no frozen or
+as-run instrument, session, threshold, reviewer, admitted evidence, predicate,
+rule, pin, chapter, established posture, or public claim. A built gate component
+is not a built or available R6 route; FS-CLM-37 remains
+Unestablished/route-unbuilt and Gate C is unchanged. The controlling record is
 `new-book-plans/book-1-reader-evidence-protocol-decision.md`.
 
 The existing guardrails survive the expansion: no floor may depend on work,
@@ -1724,12 +1733,20 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   report for the dormant reader-evidence contract. The JSON owns exact
   reader-study states and eventual rule values; prose references its stable
   records and never duplicates threshold values.
+- `new-book-plans/15-pilot-reader-artifacts.py` and
+  `new-book-plans/reader-evidence-pilot/` — the deterministic HTML/EPUB
+  snapshot builder and
+  public-minimum pilot templates. They create no private runnable instrument,
+  freeze, pilot evidence, threshold value, PDF accessibility attestation, or R6
+  availability.
 - `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
   Its quick path runs the reader-evidence structural check; the full path also
   runs only the evaluator controls supportable at the recorded stage. Quick and
   full modes both self-test the fixed admission-gate component. The structural
   and evaluator controls are not that gate or R6's seeded misconception control;
   the gate self-test proves its interface only. None makes R6 built or available.
+  Quick and full modes also run script 15's static HTML/EPUB check; that check
+  neither renders PDF nor supplies human accessibility evidence.
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
 - `book-2/TODO.md` — book-2's deliberately unordered tracker, inactive until
   Book 1 — First Edition ships at Gate C. Its collection-only full-society

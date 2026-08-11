@@ -1990,6 +1990,10 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
 ### Expansion phase 4 — Build a reliably balanced non-specialist reader experience
 
+**Tracker:** Reader's Map in the exempt opening note (67a520e).
+This closes only that item. Accessibility validation, reader sessions, pilot
+evidence, R6 availability, and Gate C remain open.
+
 - [ ] **Build a reviewed reader-experience coverage ledger before rewriting.**
   - For every derived chapter and substantive Part V passage record: social domain
     and rule family; normal function and protective/corrective function; setting;
@@ -2081,17 +2085,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
     it agency. Do not add decorative demographic labels or pretend a full Cartesian
     product is meaningful; use reviewed pairwise/high-consequence coverage.
 
-- [ ] **Add a Reader’s Map inside an existing exempt element.**
-  - State the promise, five-layer society map, record/rule/reality distinction,
-    this volume's destination/operation boundary, visible part structure, and why
-    the prisoner is a stress test before Chapter 1. Preserve the settled single
-    Book 2 pointer at the end; explain the earlier scope boundary without adding a
-    second pointer.
-  - Preserve computed chapter order; make the reader-facing arc visible rather than
-    casually reordering the derivation spine. If the generated spine remains
-    carceral after the constitution broadens, treat that as a model finding, not a
-    cosmetic ordering problem.
-
 - [ ] **Use constructive, private/civic, democratic, and coercive chapter patterns,
   not one failure-first formula.**
   - Constructive provision: person seeks a floor → body/duty responds → accessible
@@ -2110,14 +2103,17 @@ Gate B; it does not claim Book 2 operations or feasibility.
     record-people's deliberately flat inner lives; do not invent biographies,
     emotions or composite citizens as evidence.
 
-- [ ] **Add accessible navigation and visual explanation.**
-  - Provide an annotated table of contents, concise glossary, role/body and case
-    indexes, domain-to-chapter map, and selected diagrams for the five layers,
-    record/conclusion distinction, floor, democratic corridor, institutional roles,
-    functional dependencies and delivery/remedy loops.
-  - Every diagram needs a complete prose equivalent; no meaning may depend only on
-    colour, layout, vision, hearing, fine motor control or specialist notation.
-    Check semantic headings/navigation and screen-reader, EPUB, HTML and PDF paths.
+- [ ] **Finish accessible navigation and visual validation.**
+  - The annotated contents, concise glossary, role/body and case indexes,
+    domain-to-chapter map, and selected text-equivalent diagrams landed with
+    the Reader's Map at `67a520e`.
+  - Script 15 checks semantic source headings, local link targets, and
+    deterministic HTML/EPUB generation. Keep this item open until the exact
+    pilot snapshot also has a bound PDF; cross-format reading-order, extraction,
+    keyboard, navigation, link, and text-alternative checks; and a human
+    screen-reader smoke test.
+  - No meaning may depend only on colour, layout, vision, hearing, fine motor
+    control, or specialist notation.
   - Readability formulas are diagnostic flags, not truth or pass/fail targets. Each
     visual must earn its cognitive and accessibility cost.
 
@@ -2133,6 +2129,12 @@ Gate B; it does not claim Book 2 operations or feasibility.
     `previous_source_sha256`, `previous_history_head_sha256`, and
     `history_head_sha256`; its generated report references those records, and
     prose must not duplicate eventual threshold values.
+  - The public-minimum pilot kit and snapshot builder are draft templates and
+    tooling only. No pilot snapshot or instrument has been frozen or
+    pre-registered; no participant session, named reviewer/custodian, admitted
+    evidence, pilot result, taxonomy, or threshold exists. R6 remains
+    unavailable and this item stays open.
+
   - Pre-register questions, coding rubric and sample; run a pilot, revise; the
     author then ratifies the pass rule on pilot evidence, and it is
     pre-registered before the fresh holdout of non-specialists with varied

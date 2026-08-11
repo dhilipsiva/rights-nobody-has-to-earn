@@ -27,6 +27,7 @@ python3 new-book-plans/12-temporal-assurance.py --check --execute
 python3 new-book-plans/14-reader-evidence.py --check
 python3 new-book-plans/14-reader-evidence.py --check --execute
 python3 new-book-plans/reader-evidence-admission-gate.py --self-test
+python3 new-book-plans/15-pilot-reader-artifacts.py --check
 python3 new-book-plans/13-full-society-ledger.py --check
 python3 registry/check.py
 ```
@@ -57,6 +58,13 @@ Every active completed attempt must store `gate_admission_receipt`, and only the
 exact output of the digest-bound gate with `decision=admit` may establish
 FS-CLM-37. The current dormant source supplies no pilot-derived taxonomy label
 or threshold value.
+
+Script 15 checks deterministic HTML/EPUB generation, semantic source headings,
+and local body-link targets for the draft pilot snapshot. It does not render or
+validate PDF, perform a human screen-reader smoke test, freeze an instrument or
+snapshot, run a pilot, create reader evidence, or make R6 built or available.
+The public pilot kit contains templates only; the runnable instrument, rubric,
+seeded-control preimage, identities, and raw responses remain private.
 
 Script 10 manually applies candidates and does not prove enactment. Script 11 rejects conflicts with the current routing matrix when run but adds no runtime placement alarm or housing-delivery evidence. Script 12 proves bounded supplied-record safety, not outside clock, publication, storage, or institutional liveness.
 
