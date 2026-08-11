@@ -25,3 +25,4 @@ Cargo.lock
 # Python bytecode from new-book-plans/*.py
 __pycache__/
 *.pyc
+output/
