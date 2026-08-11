@@ -1,0 +1,168 @@
+{
+  "spdx": "CC-BY-4.0",
+  "schema_version": 1,
+  "contract_id": "book-1-reader-evidence-v1",
+  "protocol_decision_ref": "new-book-plans/book-1-reader-evidence-protocol-decision.md::# Book 1 Reader Evidence Protocol Decision",
+  "threshold_status": "pending-pilot",
+  "holdout_status": "not-frozen",
+  "history_transition": {
+    "previous_source_commit": null,
+    "previous_source_sha256": null,
+    "previous_history_head_sha256": null,
+    "history_head_sha256": "ead19e134be05cf5d9583b87d43673fa5de61759955eaccdd1403be7dcc5d2a2"
+  },
+  "result": "not-run",
+  "route": {
+    "route_id": "FS-RTE-06",
+    "route_status": "unbuilt",
+    "evidence_contract_status": "implemented",
+    "structural_checker_binding": {
+      "artifact_id": "RE-ART-STRUCTURAL-CHECKER",
+      "ref": "new-book-plans/14-reader-evidence.py::def main(",
+      "sha256": "49359bb3dd1dd7ff80f8c20236734a5cc41d19d25f1882b5ecbea5a23b79ee87"
+    },
+    "reviewer_custody_attestation": null,
+    "evidence_admission_gate_binding": null,
+    "negative_control_status": "not-run"
+  },
+  "claim": {
+    "claim_id": "FS-CLM-37",
+    "posture": "Unestablished",
+    "disposition": "route-unbuilt",
+    "result_ref": "new-book-plans/reader-evidence.json::\"result\""
+  },
+  "privacy": {
+    "public_record_policy": "privacy-minimal-coded-records-only",
+    "allowed_public_record_kinds": [
+      "opaque study identifiers",
+      "coded target and misconception outcomes",
+      "artifact and commitment digests",
+      "coded deviations",
+      "custody attestations without identity material"
+    ],
+    "excluded_from_repository": [
+      "participant, session, coder, reviewer, and custodian names, pseudonyms, and identity mappings",
+      "raw responses and free text",
+      "consent and withdrawal forms",
+      "direct contact, demographic, and accessibility records"
+    ],
+    "freshness_attestation_boundary": "The checker validates the evidence contract and the attestation binding; it cannot establish the truth of an externally held freshness or identity attestation."
+  },
+  "protocol": {
+    "decision_sha256": "0317a05d1ed90f653a265cfa715e4dc301b3b8411f133e1fde87f65c45842f74",
+    "method": "pre-registered-pilot-and-fresh-holdout",
+    "evaluation_order": [
+      "protocol-validity",
+      "evaluability",
+      "core-veto",
+      "required-targets",
+      "non-core-rules",
+      "pass"
+    ],
+    "aggregate_offset_prohibited": true,
+    "required_targets": [
+      {
+        "target_id": "RE-TGT-ORDINARY-LIFE",
+        "description": "ordinary constructive life"
+      },
+      {
+        "target_id": "RE-TGT-DEMOCRATIC-CHOICE",
+        "description": "democratic choice"
+      },
+      {
+        "target_id": "RE-TGT-PRIVATE-FREEDOM",
+        "description": "private freedom"
+      },
+      {
+        "target_id": "RE-TGT-SUCCESSFUL-PROVISION",
+        "description": "successful provision"
+      },
+      {
+        "target_id": "RE-TGT-REPAIR",
+        "description": "repair"
+      },
+      {
+        "target_id": "RE-TGT-PRISONER-STRESS-TEST",
+        "description": "the prisoner as a stress test rather than the central inhabitant"
+      }
+    ],
+    "disclosed_limits": [
+      "The ordinary-life account rests on unimplemented families at the time of testing.",
+      "Every tested snapshot must carry its exact version identity.",
+      "The evidence is usability evidence about the tested audience, not population statistics.",
+      "Sampling and method limits bound every permitted reader claim.",
+      "No reader result enters the reasoning engine or establishes a domain assigned to another assurance route."
+    ],
+    "ethics_terms": [
+      "informed consent",
+      "withdrawal",
+      "data minimisation and protection",
+      "accessible participation",
+      "fair compensation",
+      "non-retaliation",
+      "trauma safeguards where coercive experience is discussed",
+      "independent ethics and safety review where appropriate"
+    ],
+    "freshness_terms": [
+      "Holdout participants have no prior exposure to drafts, previews, the pilot, or the reviews corpus.",
+      "Pilot participants are excluded from the holdout.",
+      "The in-repository reviewer corpus is never admissible reader-study evidence."
+    ],
+    "non_substitution": "Reader evidence warrants only comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits."
+  },
+  "pilot": {
+    "pilot_status": "not-run",
+    "control_status": "not-run",
+    "active_attempt_id": null,
+    "attempts": []
+  },
+  "threshold_rule": {
+    "rule_id": null,
+    "severity_taxonomy": [],
+    "misconceptions": [],
+    "core_misconception_ids": [],
+    "core_failure_mode": null,
+    "repetition_unit": null,
+    "denominator": null,
+    "core_failure_threshold": null,
+    "required_target_thresholds": [],
+    "non_core_thresholds": [],
+    "minimum_evaluable_evidence": null,
+    "policies": {
+      "missing": null,
+      "ambiguous": null,
+      "multiply_coded": null,
+      "withdrawn": null,
+      "excluded": null,
+      "unclassified": null,
+      "rounding": null,
+      "coder_adjudication": null
+    },
+    "evaluation_order": [
+      "protocol-validity",
+      "evaluability",
+      "core-veto",
+      "required-targets",
+      "non-core-rules",
+      "pass"
+    ],
+    "aggregate_offset_prohibited": true,
+    "rule_sha256": null
+  },
+  "ratification": null,
+  "holdout": {
+    "active_attempt_id": null,
+    "attempts": []
+  },
+  "acceptance": {
+    "gate_c_satisfied": false,
+    "permitted_claim": "none",
+    "limits": [
+      "Ratification is not a reader result.",
+      "A pilot tests the instrument and supplies threshold-design evidence; it does not test release suitability.",
+      "A valid failure remains fail and leaves the claim Unestablished with evidence-pending once the route is available.",
+      "Only a matching valid fresh-holdout pass can establish the bounded reader claim.",
+      "This contract does not change Gate C wording and sends no reader result into Nibli."
+    ]
+  }
+}

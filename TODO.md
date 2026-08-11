@@ -162,6 +162,20 @@ dependent prose, or make its completion claim until the author has ruled it.
     misconception, whether a single or repeated core finding fails, and every
     threshold value. It may not reopen the method, the disclosure minimum, the
     ethics terms, the no-aggregate veto, or the non-substitution of routes.
+  - Current state: the dormant machine contract is implemented in the reviewed
+    source `new-book-plans/reader-evidence.json` and rendered by
+    `new-book-plans/14-reader-evidence.py`. It intentionally contains no
+    taxonomy labels or threshold values and establishes neither R6 availability
+    nor reader evidence. This item remains blocked on a valid pilot and closes
+    only after the author-ratified rule digest and complete `frozen_ratification`
+    are bound into the frozen holdout pre-registration and validate
+    independently, the successor pre-registration binds
+    `predecessor_attempt_sha256` and `prior_history_head_sha256` where a
+    predecessor exists, and the root `history_transition` validates that
+    freeze against the nearest earlier normal first-parent source transition.
+    Remove it only in a separate tracker commit that
+    references the freeze commit; keep the phase-4 sessions item open until the
+    holdout runs.
 
 ---
 
@@ -2111,6 +2125,14 @@ Gate B; it does not claim Book 2 operations or feasibility.
   method, timing, rule form, disclosure minimum, and ethics terms are
   author-ratified (2026-08-09); the controlling record is
   `new-book-plans/book-1-reader-evidence-protocol-decision.md`.
+  - `new-book-plans/reader-evidence.json` is the sole machine-readable source
+    for reader-study states, locally hash-chained and Git-transition-checked
+    attempt history, `gate_admission_receipt`, taxonomy, rule values,
+    ratification basis, `frozen_ratification`, and holdout pre-registration.
+    Its root `history_transition` carries `previous_source_commit`,
+    `previous_source_sha256`, `previous_history_head_sha256`, and
+    `history_head_sha256`; its generated report references those records, and
+    prose must not duplicate eventual threshold values.
   - Pre-register questions, coding rubric and sample; run a pilot, revise; the
     author then ratifies the pass rule on pilot evidence, and it is
     pre-registered before the fresh holdout of non-specialists with varied
@@ -2129,6 +2151,13 @@ Gate B; it does not claim Book 2 operations or feasibility.
     safety review where appropriate. These are binding admissibility terms — a
     session run in breach is inadmissible regardless of results — and reader
     evidence never purchases authority over the people studied.
+  - Keep the public repository privacy-minimal: opaque study IDs, coded
+    target/misconception outcomes, artifact or commitment digests, coded
+    deviations, and custody attestations without identity material only.
+    Participant, session, coder, reviewer, and custodian names, pseudonyms,
+    identifiers and identity mappings; raw or free-text responses; consent and
+    withdrawal material; and direct contact, demographic and accessibility
+    records remain private.
   - A pass requires readers to identify constructive functions as well as restraints,
     trace one successful delivery/remedy path and one democratic choice, and
     recognise the prisoner as a stress test. Apply the pre-registered,
@@ -2137,10 +2166,71 @@ Gate B; it does not claim Book 2 operations or feasibility.
     hide a core failure. Revise, then use a fresh holdout — participants with no
     prior exposure to drafts, previews, the pilot, or the reviews corpus —
     against the private candidate the edition item names.
+  - Give every pilot and holdout freeze an external prior-commit or custody
+    binding whose public receipt digest also carries the exact computed
+    `attested_payload_sha256`; a generic attestation is invalid, while the
+    external payload's existence and truth remain outside the checker. The
+    holdout freeze binds the exact rule digest, revised instrument/rubric,
+    private release-candidate identity and artifact hashes, sample/recruitment
+    rule, disclosure set, and study protocol. Every holdout embeds a complete
+    `frozen_ratification` whose own digest, rule, candidate, and pilot basis
+    validate independently of current top-level state. The candidate commit
+    must be an ancestor of current `HEAD`. Each successor pre-registration
+    binds `predecessor_attempt_sha256` and `prior_history_head_sha256` to its
+    frozen predecessor; both are null only where no predecessor exists. If
+    exposing the instrument could
+    contaminate recruitment, publish a nonce-protected commitment under named
+    private custody and reveal its preimage after the holdout. Any bound change
+    voids that attempt and requires a new pre-registration and genuinely fresh
+    sample.
+  - Preserve each attempt's local hash chain and active-attempt pointer, and
+    require more than snapshot-local consistency. The root
+    `history_transition` binds `previous_source_commit`,
+    `previous_source_sha256`, `previous_history_head_sha256`, and
+    `history_head_sha256` to the nearest earlier normal first-parent commit
+    that changed `reader-evidence.json`, its exact previous bytes and history
+    head, and the current history head. Preserve prior attempt prefixes and
+    terminal attempts; permit exactly one domain and one legal step per
+    transition: one pilot or holdout append, or the active nonterminal attempt
+    becoming terminal. The dormant source uses null predecessor fields and the
+    deterministic empty history head. This covers visible normal first-parent
+    Git history only and cannot prove resistance to rewritten history or
+    external truth.
+  - Keep lifecycle orthogonal to result: `holdout_status` follows the active
+    attempt, while the top-level result is the most recent completed non-void
+    outcome and persists independently. A `void` attempt with `not-run` is
+    valid. A later frozen, not-run, or void attempt must not rewrite an earlier
+    valid `fail` as `not-run`; every attempt remains recorded, and no void
+    attempt can feed Gate C. Study IDs, coded-record commitments, custody IDs
+    and digests, and receipt IDs are globally unique across the complete
+    pilot/holdout history. Every run carries exactly one freshness record.
+  - Encode freeze, completion or void, commitment reveal, and successor-attempt
+    times in strict canonical UTC. Freeze precedes completion or void; reveal
+    follows the corresponding completion or void; a successor attempt begins
+    only after its predecessor's required terminal and reveal events.
   - The pilot runs against a declared, versioned snapshot only after the
     Reader's Map and navigation artifacts exist, and the instrument must fail a
     seeded unbalanced or planted-misconception control, watched failing during
-    the pilot's revise step.
+    the pilot's revise step. Candidate, `author-ratified`, frozen, and completed
+    stages must each carry and watch the mutations relevant to that stage;
+    missing, empty, or inapplicable controls fail closed.
+  - The structural checker validates the state, privacy, policy, metric,
+    denominator, repetition-unit, digest, external-custody-binding,
+    `history_transition`, frozen-predecessor, and evaluation-order contracts;
+    its deterministic evaluator recomputes a future
+    receipt from the admitted coded record. Once values exist, it derives
+    end-to-end below-, exact-, and above-boundary fixtures from every eventual
+    value at reachable observations; an unreachable or out-of-domain edge is
+    explicit and fails closed rather than disappearing. These remain artifact
+    checks only.
+  - The fixed digest-bound admission gate is a separate executable component.
+    Its `--self-test` runs in quick and full verification, but building or
+    testing that component does not make R6 built or available. Every active
+    completed attempt stores `gate_admission_receipt`; only the gate's exact
+    output with `decision=admit` may establish FS-CLM-37. The structural
+    checker, deterministic evaluator, gate, gate-bound reviewer custody, and
+    seeded control do not substitute for one another or establish external
+    truth.
 
 ### Expansion phase 5 — Evidence, psychology, and external review
 

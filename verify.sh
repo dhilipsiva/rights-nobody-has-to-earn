@@ -9,12 +9,13 @@
 # those actually happened.
 #
 #   ./verify.sh          full run: every declared chapter/floor pin; reviewed
-#                       record, temporal, amendment, placement, and
+#                       record, temporal, amendment, placement, reader, and
 #                       counterfactual suites.
 #   ./verify.sh --quick  everything except the executable suites
 #                       NOTE --quick cannot execute chapter/floor pins, record
 #                       snapshots, temporal transitions, amendment candidates,
-#                       placement cases, or stale counterfactual fixtures. Run the
+#                       placement cases, reader-evaluator fixtures, or stale
+#                       counterfactual fixtures. Run the
 #                       FULL suite after any constitution edit — that is how a
 #                       stale fixture shipped once.
 #
@@ -41,6 +42,8 @@ AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
 LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
+READER_AUDIT=new-book-plans/14-reader-evidence.py
+READER_GATE=new-book-plans/reader-evidence-admission-gate.py
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -116,7 +119,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, or full-society ledger,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, reader-evidence contract, or full-society ledger,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -176,8 +179,24 @@ n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
 [ "$n" = "39" ] && pass "evidence vocabulary is 39" \
   || fail "evidence vocabulary is $n, not 39" "chapters 1, 3 and 5 describe the list; re-read them against it"
 
-# ── 2g. the full-society domain-and-layer ledger stays reviewed and generated ─
-# Structural only: schema, enum-mapping closure over the six sibling reviewed
+# ── 2g. the dormant reader contract stays structural and privacy-minimal ─────
+# This is an artifact check. It is not R6's dedicated executable evidence gate,
+# external custody/freshness attestation, reviewer custody, or seeded control.
+step "reader-evidence contract"
+out=$(python3 "$READER_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "reader-evidence contract failed" "$out"
+
+# Component check in both quick and full modes. A passing self-test proves only
+# that the fixed gate can reject its own mutations and emit its exact interface;
+# it neither supplies a gate_admission_receipt nor makes R6 built or available.
+step "reader-evidence admission-gate component"
+out=$(python3 "$READER_GATE" --self-test 2>&1) \
+  && pass "$out" \
+  || fail "reader-evidence admission-gate self-test failed" "$out"
+
+# ── 2h. the full-society domain-and-layer ledger stays reviewed and generated ─
+# Structural only: schema, enum-mapping closure over the sibling reviewed
 # JSONs (read live, not digest-pinned), split/posture/compatibility rules,
 # needles, bound-decision digests, and the ledger's own negative controls. It
 # executes no engine query and establishes no row beyond its own posture —
@@ -428,9 +447,23 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor pins, record snapshots, temporal, amendment and placement executions, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor pins, record snapshots, temporal, amendment, placement and reader-evaluator executions, and counterfactuals (--quick)\n'
   exit 0
 fi
+
+# The dormant pre-pilot source carries no threshold values. Execution exercises
+# the state machine, evaluator, and watched-failing mutations required by each
+# populated candidate, author-ratified, frozen, or completed stage; required
+# missing, empty, or falsely inapplicable controls fail closed. Once values
+# exist, the same command derives end-to-end below-, exact-, and above-boundary
+# fixtures at reachable observations; edge-domain cases stay explicit and
+# fail-closed. No illustrative threshold is committed in advance. These remain
+# artifact controls (Checked), not reader evidence or a Derived claim, and they
+# do not make R6 built or available.
+step "reader-evidence evaluator controls"
+out=$(python3 "$READER_AUDIT" --check --execute 2>&1) \
+  && pass "$out" \
+  || fail "reader-evidence evaluator controls failed" "$out"
 
 step "chapter/floor pins"
 

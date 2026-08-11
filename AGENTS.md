@@ -24,11 +24,39 @@ python3 new-book-plans/11-placement-exhaustiveness.py --check
 python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 python3 new-book-plans/12-temporal-assurance.py --check
 python3 new-book-plans/12-temporal-assurance.py --check --execute
+python3 new-book-plans/14-reader-evidence.py --check
+python3 new-book-plans/14-reader-evidence.py --check --execute
+python3 new-book-plans/reader-evidence-admission-gate.py --self-test
 python3 new-book-plans/13-full-society-ledger.py --check
 python3 registry/check.py
 ```
 
 Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs live at `--check` — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier.
+
+Validate and render reader evidence with script 14 before checking the
+full-society ledger when its reviewed source changes. `--check` validates the
+reviewed state and digest contract; `--check --execute` also exercises the
+deterministic evaluator, derived end-to-end boundary fixtures, and the
+watched-failing mutations required by the populated stage. The checker enforces
+global pilot/holdout identifier uniqueness, one freshness record per run,
+payload-bound custody, embedded frozen ratification, canonical UTC chronology,
+candidate ancestry, and the root `history_transition` contract. That contract
+binds `previous_source_commit`, `previous_source_sha256`,
+`previous_history_head_sha256`, and `history_head_sha256` to the nearest
+earlier normal first-parent commit that changed `reader-evidence.json`;
+preserves prior attempt prefixes and terminal attempts; and permits one pilot-
+or holdout-domain step only. Each successor pre-registration binds
+`predecessor_attempt_sha256` and `prior_history_head_sha256` to its frozen
+predecessor. These are artifact checks over visible normal first-parent Git
+history only: they neither prove resistance to rewritten Git history nor attest
+to external truth.
+
+Run the fixed admission gate's `--self-test` in both quick and full verification.
+That builds and tests one component only; it does not make R6 built or available.
+Every active completed attempt must store `gate_admission_receipt`, and only the
+exact output of the digest-bound gate with `decision=admit` may establish
+FS-CLM-37. The current dormant source supplies no pilot-derived taxonomy label
+or threshold value.
 
 Script 10 manually applies candidates and does not prove enactment. Script 11 rejects conflicts with the current routing matrix when run but adds no runtime placement alarm or housing-delivery evidence. Script 12 proves bounded supplied-record safety, not outside clock, publication, storage, or institutional liveness.
 

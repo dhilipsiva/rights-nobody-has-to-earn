@@ -2,14 +2,18 @@
 
 # Book 1 Reader Evidence Protocol Decision
 
-> **Status: author-ratified on 2026-08-09; formal implementation pending.** This
-> decision supplies the reader-balance evidence protocol and its threshold
-> timing. It ratifies no threshold values, runs no session, builds no
-> instrument, and makes the reader route **neither built nor available**. It
-> adds no predicate, rule, fact, pin, generator, verifier section, ledger,
-> chapter, release, or public coverage claim; it upgrades no claim's posture;
-> it rewords no gate's permitted-claim string; and it changes no sentence of
-> the book.
+> **Status: author-ratified on 2026-08-09; dormant machine components
+> implemented, empirical protocol execution pending.** The 2026-08-09 decision
+> supplies the reader-balance evidence protocol and its threshold timing. It
+> ratifies no threshold values, runs no session, builds no instrument, and
+> makes the reader route **neither built nor available**. The later dormant
+> source, generator, structural checker, deterministic evaluator, and fixed
+> admission-gate component create no instrument, session, threshold, reviewer,
+> admitted evidence, release, or claim upgrade. Building and self-testing the
+> gate component does not build or make R6 available. Neither the ruling nor
+> those artifacts add a predicate, rule, fact, pin, chapter, or public coverage
+> claim; reword a gate's permitted-claim string; or change a sentence of the
+> book.
 
 ## 1. Decision
 
@@ -22,7 +26,8 @@ second author ruling that must land after the pilot and before the fresh
 holdout's pre-registration freeze. The measured ordinary-life deficit is a
 named, disclosed input to the protocol's design, and the disclosed-limits
 minimum in section 5 is fixed now. The reader route's availability contract is
-specified in section 6 at contract level and deliberately not implemented.
+specified in section 6. Its dormant machine structure is now materialised, but
+the availability tuple remains incomplete.
 
 Summarised anywhere, this ruling is three statements, not one, because the
 shorter version is an overclaim: the method, timing, disclosure, ethics terms,
@@ -99,16 +104,53 @@ pre-registration as binding **each round's instrument before that round**:
    before evidence exists; ratifying them later than the freeze would make
    "pre-registered" false.
 3. **A holdout run under an unratified, retroactively chosen, or post-hoc
-   amended rule is void** and cannot feed the public-edition gate.
+   amended rule is void** and cannot feed the public-edition gate. Voiding is a
+   lifecycle/admissibility finding, not permission to delete the attempt or
+   rewrite a result.
 4. **The reader route must be available before the holdout runs** — the
-   implemented evidence contract, the named reviewer, the in-repo gate, and the
-   control watched failing — so that holdout evidence is collected under a
-   standing admissibility contract rather than admitted retroactively.
+   implemented evidence contract, named reviewer with gate-bound custody, fixed
+   digest-bound admission gate, and watched-failing seeded control must all
+   exist. Every active completed attempt then stores the gate's exact
+   `gate_admission_receipt`; only `decision=admit` may establish FS-CLM-37.
 
 This is the assurance portfolio's own sequence made explicit for this route:
-the pilot may run, the rule may then be ratified, the route becomes available,
-and only then does the gate's claim become sayable. Nothing here shortens that
-sequence, and this ruling does not advance it past its first step.
+the pilot may run and the rule may then be ratified. Separately, the route
+becomes available only after its evidence contract, admissibility criteria,
+named reviewer, evidence-admission gate, and watched-failing seeded control are
+complete; only a matching valid holdout pass can then make the gate's reader
+claim sayable. Nothing here shortens that sequence.
+
+Implementation preserves every pilot and holdout attempt through two coupled
+checks. Inside the current source, attempt hashes are chained and an
+active-attempt pointer selects the current one. That snapshot-local closure is
+insufficient by itself. The root `history_transition` records
+`previous_source_commit`, `previous_source_sha256`,
+`previous_history_head_sha256`, and `history_head_sha256`. The checker finds
+the nearest earlier commit on normal first-parent ancestry that changed
+`reader-evidence.json`, binds its exact source bytes and history head, preserves
+every earlier attempt prefix, and permits one domain and one step only: append
+one attempt, or move the active attempt from a nonterminal to a terminal state.
+A terminal attempt is immutable.
+
+Each successor pre-registration binds `predecessor_attempt_sha256` and
+`prior_history_head_sha256` to the exact frozen predecessor attempt and prior
+history head. The dormant source carries null predecessor fields and the
+deterministic empty history head.
+
+The axes stay orthogonal: `holdout_status` follows the active attempt, while the
+top-level result is the most recent completed non-void outcome and persists
+independently. A `void` attempt with `not-run` is valid. A later frozen,
+not-run, or void attempt cannot rewrite an earlier valid `fail` as `not-run`.
+Every attempt keeps its own record and result, if any, but no void attempt feeds
+Gate C; a replacement is a new pre-registration and genuinely fresh sample,
+not an edit to the old attempt.
+
+Study IDs, coded-record commitments, custody IDs and digests, and receipt IDs
+are globally unique across the complete pilot/holdout history. Every run carries
+exactly one freshness record; zero, duplicates, or a record scoped to another
+run are invalid. The checker verifies these bindings over the visible normal
+first-parent Git history. It does not prove resistance to rewritten Git history
+or the external truth of a freshness, custody, or study statement.
 
 ## 4. The pass rule's form, values reserved
 
@@ -127,6 +169,12 @@ pass/fail mapping for non-core severities; and every quantitative or
 qualitative threshold. The second ruling may not reopen the method, the
 disclosure minimum, the ethics terms, the no-aggregate veto, or the
 non-substitution of routes.
+
+Once the reserved values exist, the executable controls derive end-to-end
+below-, exact-, and above-boundary fixtures from every value at reachable
+observations. An unreachable or out-of-domain edge is explicit and fails closed;
+it may not disappear from the fixture set or be replaced by a hard-coded
+illustrative number.
 
 ## 5. The deficit as disclosed input
 
@@ -151,20 +199,27 @@ The protocol's disclosed limits must contain, at minimum:
 A pre-registration document missing any element of this minimum is not the
 declared protocol.
 
-## 6. The reader route's availability contract, specified
+## 6. The reader route's availability contract, specified and dormant
 
 The assurance portfolio makes the reader route available only when its
-evidence contract, admissibility criteria, named reviewer, and in-repo gate
-exist — and naming a route does not build it. This section specifies what each
-must contain. **Specifying is naming, not building: this ruling makes the
-route neither built nor available**, creates none of the four, and does not
-begin implementation.
+evidence contract, admissibility criteria, named reviewer with gate-bound
+custody attestation, dedicated executable evidence-admission/evaluation gate,
+and watched-failing seeded control exist — and naming a route does not build it.
+This section specifies what each
+must contain. The later machine record materialises their state space and
+digest relationships only. **Specifying and structurally recording are not
+building: R6 remains neither built nor available**, and the availability tuple
+below remains incomplete.
 
-- **Evidence contract.** A session record must carry: the pre-registration
-  document's identity; the tested snapshot's version; the instrument as run —
-  questions and coding rubric; coder identity; a deviation log recording every
-  departure from the pre-registration; and consent and withdrawal artifacts
-  handled under data minimisation.
+- **Evidence contract.** Private custody retains the pre-registration, tested
+  snapshot, instrument and rubric as run, admissibility source records, and
+  participant/session/coder/reviewer/custodian identity material. The public
+  record contains exactly opaque study IDs, coded target/misconception outcomes,
+  artifact or commitment digests, coded deviations, and custody attestations
+  without identity material. Names, pseudonyms, identifiers and identity
+  mappings; raw or free-text responses; consent and withdrawal material; and
+  direct contact, demographic and accessibility records remain outside the
+  public repository.
 - **Admissibility criteria.** Ethics compliance per section 8 — a session run
   in breach is inadmissible regardless of its results. Freshness — holdout
   participants have no prior exposure to drafts, previews, the pilot, or the
@@ -173,10 +228,27 @@ begin implementation.
   consent, compensation, or sampling frame, and it remains what the assurance
   portfolio already says it is — Reasoned design input, permitted in the
   exempt elements.
-- **Named reviewer.** One must be named at implementation. This ruling names
-  none, deliberately: naming a reviewer would begin implementation, and
-  inventing one would be worse.
-- **In-repo gate.** Implementation work, owned by the sessions item.
+- **Named reviewer.** One must be named at implementation, with a custody
+  attestation bound to the dedicated gate interface. This ruling names none,
+  deliberately: naming a reviewer would begin implementation, and inventing one
+  would be worse.
+- **Structural checker.** The implemented dormant checker validates states,
+  completeness, digest relationships, the pre-registration and receipt
+  `structural_checker_sha256` bindings, the root `history_transition`, the
+  frozen-predecessor `predecessor_attempt_sha256` and
+  `prior_history_head_sha256` bindings, and the deterministic evaluator by
+  which a future receipt is recomputed from a ratified rule and admitted coded
+  outcomes. With all threshold fields unset it produces no reader verdict. Its
+  checks and mutations are artifact evidence only.
+- **In-repo evidence-admission/evaluation gate.** The fixed executable gate
+  component exists and its `--self-test` runs in quick and full verification.
+  That component is distinct from the structural checker, and building it does
+  not build or make R6 available. Every active completed attempt must store
+  `gate_admission_receipt` as the gate's exact digest-bound output; only such an
+  output with `decision=admit` may establish FS-CLM-37. No active completed
+  attempt, named reviewer, or gate-bound reviewer custody attestation exists.
+  Neither checker nor gate attests to the external truth of a freshness or
+  custody statement.
 
 ## 7. The negative control
 
@@ -187,6 +259,14 @@ revise step must include watching the control fail, and the control ships with
 the instrument when the route is built. An instrument that cannot be made to
 fail is not an instrument; the house rule carries over unchanged — sabotage
 first, trust after.
+
+The dormant checker's schema and state mutations are not that seeded
+misconception control and do not satisfy this prerequisite. No valid control
+run exists until the pilot actually watches the instrument reject the seed.
+Candidate, `author-ratified`, frozen, and completed states must also carry the
+watched-failing mutations relevant to that populated stage; a required mutation
+set that is missing, empty, or falsely marked inapplicable fails closed. Those
+artifact mutations remain distinct from the seeded misconception control.
 
 ## 8. Ethics as admissibility
 
@@ -208,10 +288,35 @@ populations, nothing about the people themselves.
   accessible-navigation work — exist. Piloting earlier would conflate
   instrument defects with known-missing scaffolding. Pilot results are
   evidence about the instrument and that snapshot only, never about the
-  release candidate and never about the book's suitability.
+  release candidate and never about the book's suitability. Its freeze carries
+  an external prior-commit or custody binding to the pre-registration and
+  tested snapshot, including the computed `attested_payload_sha256`; an opaque
+  external receipt digest without that exact payload binding is insufficient.
+  The checker verifies the binding, not whether the external custodian exists
+  or tells the truth.
 - **The holdout** runs against the frozen private release candidate after the
   expansion freezes, exactly as the edition contract already provides. That
-  rule is cited here, not restated and not amended.
+  rule is cited here, not amended. Its external pre-registration freeze binds
+  the exact ratified-rule digest, revised instrument and rubric, private
+  release-candidate identity and artifact hashes, sample and recruitment rule,
+  disclosure set, and study protocol. The freeze carries the computed
+  `attested_payload_sha256`, and its pre-registration and later receipt bind the
+  exact `structural_checker_sha256`. Every holdout embeds
+  `frozen_ratification`, whose historical rule, candidate, pilot basis, and
+  digest validate independently; the candidate commit must be an ancestor of
+  current `HEAD`. A successor pre-registration also binds
+  `predecessor_attempt_sha256` and `prior_history_head_sha256` to the exact
+  frozen predecessor attempt and prior history head; those fields are null only
+  where the schema declares that no predecessor exists. The public record keeps
+  only the binding digests and privacy-safe custody attestation. If exposing the instrument could contaminate
+  recruitment, publish a nonce-protected commitment under named private custody
+  and reveal its preimage after the holdout. Any bound change voids that attempt
+  and requires a new pre-registration and genuinely fresh sample.
+
+Every freeze and transition time is canonical UTC. A freeze precedes its
+`completed_at` or `voided_at`; when a commitment is revealed, `revealed_at`
+follows that terminal event; and a successor attempt begins only after the
+predecessor's required terminal and reveal events.
 
 ## 10. The accessibility seam
 
@@ -234,8 +339,8 @@ What this decision does **not** establish:
   made in either direction;
 - when the pilot runs, or that the navigation artifacts it waits on will land
   on any schedule;
-- that the reader route will be built or become available — the four
-  availability requirements are specified, and none exists;
+- that the reader route will be built or become available — the availability
+  state is structurally represented, but its tuple remains incomplete;
 - that the instrument is valid — nothing is valid before its control has been
   watched failing;
 - that the public-edition gate's holdout condition is satisfiable today — it
@@ -286,7 +391,26 @@ On 2026-08-09 the author ratified:
 - [x] the refusals in section 1a, including no illustrative threshold numbers
   anywhere in this record.
 
-This decision changes planning only. It is ratified and **unimplemented**: it
-creates no instrument, session, ledger, generator, verifier section, predicate,
-rule, pin, chapter, posture, or public claim, and the reader route remains
-neither built nor available.
+The 2026-08-09 decision changed planning only and created no implementation.
+On 2026-08-11 the author instructed implementation of the dormant record
+contract and approved the `evidence-pending` Unestablished disposition. The
+resulting reviewed source, generated report, structural checker,
+deterministic evaluator, and fixed gate component implement only dormant
+machinery. Their current states are `pending-pilot`, `not-frozen`, and
+`not-run`; they contain no taxonomy labels, threshold values, active completed
+attempt, or `gate_admission_receipt`. The dormant `history_transition` has
+null `previous_source_commit`, `previous_source_sha256`, and
+`previous_history_head_sha256`, plus the deterministic empty
+`history_head_sha256`; no pre-registration predecessor binding exists. The gate component's self-test is not a
+reader result and does not build or make R6 available. These components create
+no instrument, session, reviewer, admitted evidence, release, predicate, rule,
+pin, chapter, established posture, or public claim. No pilot or valid
+seeded-control run has occurred, no second threshold ruling has landed, no
+holdout has been frozen or run, R6 remains neither built nor available, and
+FS-CLM-37 remains Unestablished/route-unbuilt.
+
+This 2026-08-11 paragraph is a current-state implementation note, **not** the
+reserved second author ruling. The 2026-08-09 ratification record above remains
+intact. The second ruling cannot be appended until a valid completed pilot and
+frozen pilot decision packet exist and the author ratifies the exact candidate
+rule and digest.

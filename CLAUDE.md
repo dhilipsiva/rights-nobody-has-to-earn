@@ -879,10 +879,13 @@ can carry an arrival claim and dropping it is what lets a safety result read as
 no other route produces. A route may not be split, renamed, or stretched to make
 a claim fit, and **one green route may never stand in for another**.
 
-A route is **built** when its check runs in `verify.sh` — true of Nibli and the
-registry, and of nothing else. A route is **available** when its evidence
-contract, admissibility criteria, named reviewer, and in-repo gate exist so
-outside evidence can be admitted. Both count; neither is satisfied by naming
+A route is **built** when its route-owned evidence-producing check runs in
+`verify.sh` — true of Nibli and the registry, and of nothing else. A structural
+validator, evaluator fixture, or self-tested admission-gate component for a
+dormant contract does not build its route. A route is **available** when its
+evidence contract, admissibility criteria, named reviewer with the required
+custody attestation, fixed in-repo gate, and watched-failing negative control
+exist so outside evidence can be admitted. Both count; neither is satisfied by naming
 one. Defining "built" as in-repo only would make operational assurance
 impossible by construction, every arrival claim permanently unestablishable, and
 the record-integrity verdict permanently frozen. **Every route must declare a
@@ -897,16 +900,18 @@ amendment, placement and counterfactual runs. **Pattern guard** — the jargon,
 counted-claims, absence, floor-noticing, recognition-arity, no-counted-degree,
 control-scope and evidence-vocabulary checks; one says of itself it is a pattern
 guard and not a proof, another reads only a directive's spelling. **Freshness** —
-the generator `--check` modes, the claim table, the registry gate: currency, not
-truth. **Inventory** — the operation sets, record classes and scenario
+the generator `--check` modes, the claim table, the registry gate, and the
+reader-evidence structural and evaluator controls: artifact currency and
+contract behaviour, not reader truth. **Inventory** — the operation sets, record classes and scenario
 narratives: a reviewed threat model, explicitly not executable proof. Only the
 executable kind warrants Derived. **Two checks are compound**: the spine check
 shells the engine for its stratification and the assertion-surface check
 consumes that output, so both are an engine result *and* an artifact comparison.
 **`--quick` is not "proves nothing"** — it still builds the engine and runs the
 stratification; what it omits is the chapter and floor pins, the record-snapshot,
-temporal, amendment and placement executions, and the counterfactuals. Say which
-half is being cited. No green run authenticates its own trust root.
+temporal, amendment, placement and reader-evaluator executions, and the
+counterfactuals. Say which half is being cited. No green run authenticates its
+own trust root.
 
 **The posture set is three bands.** Established: **Derived** (an executable
 engine result over the exact current source, *or over a named bounded mutation
@@ -919,13 +924,17 @@ method). Stated but not established: **Specified** (a complete contract, not
 formalised) and **Reasoned** (argument against a named adversarial corpus,
 permanently weaker than Derived and never citable as it). Not established:
 **Unestablished**, carrying one mandatory disposition — routed-book-2,
-external-assumption, route-unbuilt, author-ruling-pending, refused, or
-not-establishable. Collapsing routing and refusal into one band is deliberate:
-it makes "classification is a disposition, not assurance" structural rather than
-exhortative. **The names avoid two words that already carry load in the
-chapters, one of which inverts** — a chapter calls the vote *guarded by refusal*,
-meaning the strongest protection available, while the posture would have meant
-the weakest warrant.
+external-assumption, route-unbuilt, evidence-pending, author-ruling-pending,
+refused, or not-establishable. `route-unbuilt` means the assigned route is
+neither built nor available; `evidence-pending` means the route is built or
+available but no admitted evidence currently establishes the claim. A valid
+`fail` or `not-evaluable` result remains recorded as that result and must
+never be rewritten as `not-run`. Collapsing routing and refusal into one band
+is deliberate: it makes "classification is a disposition, not assurance"
+structural rather than exhortative. **The names avoid two words that already
+carry load in the chapters, one of which inverts** — a chapter calls the vote
+*guarded by refusal*, meaning the strongest protection available, while the
+posture would have meant the weakest warrant.
 
 **One posture per claim.** A claim carrying two is two claims and must be split
 until each part carries one posture and one evidence kind. This disposes of
@@ -949,11 +958,15 @@ a feasibility sentence with no route is a defect, not a gap.
 **No Book 1 claim may take an established posture through a route that is
 neither built nor available**; it takes Unestablished/route-unbuilt with
 severity, consequence, owner, closure condition and public-claim restriction.
-**But building a route is work, not a claim** — designing, pre-registering and
-piloting a route asserts nothing and takes no posture. That clause is what keeps
-the gate ladder a **sequence rather than a deadlock**: Gate C needs reader
-evidence, the reader route is unbuilt, and its pass rule is itself a separate
-open ruling to be made after a pilot.
+A built or available route with no establishing admitted evidence takes
+Unestablished/evidence-pending; route availability alone never upgrades it.
+Only sufficient admitted evidence permits the claim-appropriate established
+posture, and any valid adverse result remains exact. **But building a route is
+work, not a claim** — designing, pre-registering and piloting a route asserts
+nothing and takes no posture. That clause is what keeps the gate ladder a
+**sequence rather than a deadlock**: Gate C needs reader evidence, the reader
+route is unbuilt, and its pass rule is itself a separate open ruling to be made
+after a pilot.
 
 **No bridge into the engine.** No modelled, measured, simulated, operational or
 reader result may enter through the compute backend, an external predicate, or
@@ -1104,6 +1117,15 @@ Unestablished/route-unbuilt. Do not write "the reader-balance protocol is
 ratified" bare, and note the roster's shorthand: this is "the reader-threshold
 decision" that deliberately does not settle the threshold.
 
+As of 2026-08-11, `reader-evidence.json`, its generated report, structural
+checker, deterministic evaluator, and the fixed admission-gate component
+implement dormant machinery only. Machine state is `threshold_status:
+pending-pilot`, `holdout_status: not-frozen`, and result `not-run`. No
+taxonomy label, threshold value, active completed attempt, or
+`gate_admission_receipt` exists. Building and self-testing the gate component
+does not make R6 built or available; FS-CLM-37 remains
+Unestablished/route-unbuilt and Gate C is unchanged.
+
 The sequencing rule construes the sessions item's own sentence:
 pre-registration binds **each round's instrument before that round**. The pilot
 runs under a pre-registered pilot instrument carrying at most an expressly
@@ -1112,8 +1134,10 @@ provisional draft rule and draft severity taxonomy; the reserved ruling lands
 ratifying taxonomy and values together on pilot evidence; a holdout run under
 an unratified, retroactive, or post-hoc rule is **void** and cannot feed Gate
 C; and the route must be **available** — implemented evidence contract, named
-reviewer, in-repo gate, control watched failing — before the holdout runs, so
-its evidence arrives under a standing admissibility contract. The assurance
+reviewer with gate-bound custody, fixed digest-bound admission gate, and
+watched-failing seeded control — before the holdout runs. Every active completed
+attempt must then store the gate's exact `gate_admission_receipt`; only
+`decision=admit` may establish FS-CLM-37. The assurance
 portfolio's sentence that the pass rule "is itself a separate open ruling to be
 made after a pilot" **remains true after this ruling** and must not be edited.
 
@@ -1133,11 +1157,26 @@ identity, usability-not-population-statistics, the sampling and method limits
 bounding Gate C's permitted claim, and that no reader result enters the engine
 or proves another route's domain.
 
-The reader route's availability contract is **specified, not created** —
-specifying is naming, and naming a route does not build it. The evidence
-contract fixes session-record contents (pre-registration identity, snapshot
-version, instrument as run, coder identity, deviation log, consent artifacts
-under data minimisation). Admissibility is binding, not guidance: an ethics
+The reader route's availability contract is **specified and structurally
+represented, not fulfilled** — recording a state space does not build it.
+`reader-evidence.json` is the sole machine-readable source for reader-study
+states, locally hash-chained and Git-transition-checked attempt history,
+`gate_admission_receipt`, taxonomy, rule values, ratification basis,
+`frozen_ratification`, and holdout pre-registration. Its checker validates
+state, completeness, digest relationships, and allowed transitions over visible
+normal first-parent Git history; its deterministic evaluator recomputes receipts
+from a ratified rule and admitted coded outcomes. Those are artifact checks, not
+reader evidence. The fixed gate is a separate component, and none of these
+artifacts proves resistance to rewritten Git history or attests to external
+freshness or custody truth.
+
+The public record is exactly opaque study IDs, coded target/misconception
+outcomes, artifact or commitment digests, coded deviations, and custody
+attestations without identity material. Participant, session, coder, reviewer,
+and custodian names, pseudonyms, identifiers and identity mappings; raw or
+free-text responses; consent and withdrawal material; and direct contact,
+demographic and accessibility records remain in private custody. Admissibility
+is binding, not guidance: an ethics
 breach — consent, withdrawal, data protection, accessible participation, fair
 compensation, non-retaliation, trauma safeguards, independent review where
 appropriate — makes a session inadmissible regardless of results; holdout
@@ -1146,12 +1185,66 @@ reviews corpus; pilot participants excluded); and the in-repo reviewer corpus
 is **never admissible reader-study evidence**, remaining Reasoned design input
 in the exempt elements. The falsification condition is declared: the
 instrument must fail against a seeded unbalanced or planted-misconception
-control, watched failing during the pilot's revise step. No reviewer is named —
-naming one would begin implementation. The pilot runs against a declared,
-versioned snapshot only after the Reader's Map and navigation artifacts exist,
-and is evidence about the instrument and that snapshot only; the holdout runs
-against the frozen private release candidate exactly as the edition contract
-provides, cited not restated. This ruling declares **the reader-balance half
+control, watched failing during the pilot's revise step. The checker's schema
+and state mutations are not that seeded misconception control and do not satisfy
+R6's negative-control prerequisite. The structural checker, deterministic
+evaluator, fixed digest-bound gate, reviewer custody attestation, and seeded
+control are distinct. The gate component is built and self-tested, but no
+component test supplies an attempt's `gate_admission_receipt` or makes R6 built
+or available. No reviewer is named and no gate-bound reviewer custody
+attestation exists.
+
+The pilot runs against a declared, versioned snapshot only after the Reader's
+Map and navigation artifacts exist, and is evidence about the instrument and
+that snapshot only. Every pilot or holdout freeze requires an external
+prior-commit or custody binding whose public receipt carries the computed
+`attested_payload_sha256`; a generic attestation is invalid, while external
+existence and truth remain outside the checker. The holdout binding covers the
+exact rule digest, revised instrument and rubric, private release-candidate
+identity and artifact hashes, sample and recruitment rule, disclosure set,
+study protocol, and preregistration `structural_checker_sha256`. Every holdout
+attempt embeds `frozen_ratification`, including its independently validated
+digest, rule, candidate, and pilot basis. The candidate commit must be an
+ancestor of current `HEAD`. Each successor pilot or holdout pre-registration
+binds `predecessor_attempt_sha256` and `prior_history_head_sha256` to its
+frozen predecessor; those fields are null only when no predecessor exists.
+
+If publishing the instrument would contaminate recruitment, a nonce-protected
+commitment is held under named private custody and its preimage is revealed
+after the holdout. Freeze, `completed_at` or `voided_at`, `revealed_at`, and
+successor-attempt times are strict canonical UTC and ordered: freeze precedes
+completion or void, reveal follows it, and a successor starts only afterward.
+Any bound change voids that attempt and requires a new pre-registration and
+genuinely fresh sample.
+
+Attempts retain local hash chains and an active-attempt pointer, but a
+snapshot-local chain is not enough. The root `history_transition` records
+`previous_source_commit`, `previous_source_sha256`,
+`previous_history_head_sha256`, and `history_head_sha256`. Script 14 binds
+those fields to the nearest earlier normal first-parent commit that changed
+`reader-evidence.json`, its exact source bytes and history head, and the
+current history head. It preserves every prior attempt prefix and terminal
+attempt and permits exactly one domain and one legal step per transition: one
+pilot or holdout append, or the active nonterminal attempt becoming terminal.
+The dormant source has null predecessor fields and a deterministic empty history
+head. This validates visible normal first-parent Git transitions only; it cannot
+prove resistance to rewritten Git history or external truth.
+
+`holdout_status` follows the active attempt; the top-level result is the most
+recent completed non-void outcome and persists independently. A `void` attempt
+with `not-run` is valid. A later frozen, not-run, or void attempt never rewrites
+an earlier valid `fail` as `not-run`; every attempt remains recorded, and no
+void attempt can feed Gate C. Study IDs, coded-record commitments, custody IDs
+and digests, and receipt IDs are globally unique across pilot and holdout
+history, and every run carries exactly one freshness record.
+
+Once values exist, end-to-end below-, exact-, and above-boundary fixtures are
+derived from every value at reachable observations. Unreachable or out-of-domain
+edges are explicit and fail closed. Candidate, `author-ratified`, frozen, and
+completed stages each carry the watched-failing mutations relevant to that
+stage; missing, empty, or inapplicable controls fail.
+
+This ruling declares **the reader-balance half
 only** of Gate C's compound "declared accessibility and reader-balance
 protocol"; the accessibility half stays owned by the accessible-navigation
 work, both halves are required, and neither substitutes for the other.
@@ -1161,10 +1254,13 @@ demographic, or sentiment quotas and any fixed prisoner quota; population
 statistics from usability evidence; reader evidence proving another route's
 domain; any reader result entering the engine; declaring the route built or
 available; predicting any session's outcome; and threshold values or
-illustrative numbers before pilot evidence exists. The ruling is **ratified but
-unimplemented**: it creates no instrument, session, ledger, generator, verifier
-section, predicate, rule, pin, chapter, posture, or public claim. The
-controlling record is
+illustrative numbers before pilot evidence exists. The empirical protocol
+remains **unexecuted**: the dormant reviewed source, generated report, structural
+checker, deterministic evaluator, and fixed gate component create no instrument,
+session, threshold, reviewer, admitted evidence, predicate, rule, pin, chapter,
+established posture, or public claim. A built gate component is not a built or
+available R6 route; FS-CLM-37 remains Unestablished/route-unbuilt and Gate C is
+unchanged. The controlling record is
 `new-book-plans/book-1-reader-evidence-protocol-decision.md`.
 
 The existing guardrails survive the expansion: no floor may depend on work,
@@ -1623,7 +1719,17 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   lands; update it if partly done. Book 2 remains inactive until Book 1 — First
   Edition actually ships at Gate C.
 - `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and regenerate with the corresponding script, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs live at `--check` — so refresh it when either bound decision changes, and expect its enum-mapping closure to fail when a sibling adds a reviewed enum value with no mapping row. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact with its script's `--check` mode. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries.
+- `new-book-plans/reader-evidence.json`, `14-reader-evidence.py`, and
+  `reader-evidence.md` — the reviewed source, validator/generator, and generated
+  report for the dormant reader-evidence contract. The JSON owns exact
+  reader-study states and eventual rule values; prose references its stable
+  records and never duplicates threshold values.
 - `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract, and executes the chapter/floor pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, and static guards but deliberately skips executable suites; it is not a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
+  Its quick path runs the reader-evidence structural check; the full path also
+  runs only the evaluator controls supportable at the recorded stage. Quick and
+  full modes both self-test the fixed admission-gate component. The structural
+  and evaluator controls are not that gate or R6's seeded misconception control;
+  the gate self-test proves its interface only. None makes R6 built or available.
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (`no-dead-conjuncts` — chapters 4 and 5's own pin files must pass against it, the standing proof Article 4's `~broken` and `~match(CarriedVoid)` signer checks decide nothing today), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). They exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
 - `book-2/TODO.md` — book-2's deliberately unordered tracker, inactive until
   Book 1 — First Edition ships at Gate C. Its collection-only full-society

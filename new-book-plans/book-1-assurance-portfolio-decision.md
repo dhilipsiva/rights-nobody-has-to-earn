@@ -88,12 +88,17 @@ ratio moves.
 
 ### 2b. Built, available, and the difference
 
-A route is **built** when its check exists and runs in `verify.sh`. That test
-fits R1 and R4 and no other, because the remaining routes produce evidence
-outside this repository by their nature.
+A route is **built** when its route-owned, evidence-producing check exists
+and runs in `verify.sh`. A structural validator, generator, or evaluator
+fixture that checks only a dormant contract does not build its route. A fixed
+admission-gate component whose self-test checks only its interface is likewise
+route machinery, not the route-owned evidence-producing check, and does not
+build R6. The test fits R1 and R4 and no other, because the remaining routes
+produce evidence outside this repository by their nature.
 
 A route is **available** when its evidence contract, admissibility criteria,
-named reviewer, and in-repo gate exist, so that outside evidence can be
+named reviewer with the required custody attestation, fixed in-repo gate, and
+watched-failing negative control exist, so that outside evidence can be
 *admitted* and checked when it arrives. R5, R6, R7 and any externally produced
 R2 or R3 result become usable through availability, never through being built.
 
@@ -124,7 +129,7 @@ separated here because the difference decides what a claim may say.
 | --- | --- | --- |
 | **E — executable** | The chapter and floor pin suites; the record-snapshot, temporal, amendment and placement executions; the counterfactual fixtures | The engine ran and the claim held over the exact sources and records supplied |
 | **G — pattern guard** | The jargon sweep, the counted-claims gate, the absence checks, the floor-noticing invariant, the recognition-arity and no-counted-degree guards, the control-scope check, the evidence-vocabulary check | A regex or text pass over the source found nothing. One of these says of itself that it is a pattern guard and not a proof; another reads only the spelling of a directive |
-| **F — freshness** | The generator `--check` modes, the claim-table check, the registry staleness gate | Reviewed source and generated artifact agree, and the checker's own mutants fail. Currency, not truth |
+| **F — freshness** | The generator `--check` modes, the claim-table check, the registry staleness gate, the reader-evidence structural/evaluator controls, and the fixed reader-admission-gate component self-test | Reviewed source and generated artifact agree, and the checker's own mutants fail. Reader-evaluator fixtures and the gate self-test establish contract or interface behaviour only. Currency and artifact behaviour, not reader truth |
 | **I — inventory** | The assertion-surface operation sets, the record classes, the red-team scenario narratives | A census is complete and reviewed assumptions are drift-sensitive. Explicitly a reviewed threat model rather than executable proof |
 
 **Only kind E warrants Derived.** Kinds G, F and I warrant Checked and nothing
@@ -140,10 +145,14 @@ claim resting on them must say which half it uses.
 
 **What the quick mode omits**, stated exactly, because "quick proves nothing" is
 false: it skips the chapter and floor pins, the record-snapshot executions, the
-temporal executions, the amendment candidates, the placement matrix, and the
-counterfactual fixtures. It still builds the engine and still runs the
-stratification. A quick run may support a Checked claim about the artifacts and
-a narrow Derived claim about stratification; it may support nothing else.
+temporal executions, the amendment candidates, the placement matrix, the
+reader-evaluator fixtures, and the counterfactual fixtures. It still builds the
+engine, runs stratification, validates the reader contract structurally, and
+self-tests the fixed admission-gate component. A quick run may support a
+Checked claim about the artifacts and a narrow Derived claim about
+stratification; it may support nothing else. The gate-component self-test and a
+full reader-evaluator control run are both kind F, never reader evidence, and
+never establish R6 availability or a reader result.
 
 **No green run authenticates its own trust root.** The constitution, reviewed
 contracts, generators, verifier, engine and human review can be weakened
@@ -185,12 +194,15 @@ row writes.
 
 - **Unestablished**, carrying exactly one mandatory disposition:
   `routed-book-2`, `external-assumption`, `route-unbuilt`,
-  `author-ruling-pending`, `refused`, or `not-establishable`.
+  `evidence-pending`, `author-ruling-pending`, `refused`, or
+  `not-establishable`.
 
 Collapsing routing, refusal and the unbuilt route into one band is deliberate.
 It makes the existing rule that classification is a disposition and not
 assurance **structural instead of exhortative**: routing a claim to the second
 volume leaves it, on its face, unestablished.
+`evidence-pending` is the different missing-warrant state: the route exists,
+but no admitted evidence currently establishes the claim.
 
 ### 4a. Why these names
 
@@ -308,6 +320,27 @@ ruling does not disturb it.
   **The disposition may not appear in book prose.** It is not satisfied by
   disclosure alone where the severity is critical, and it is not closed by
   assigning it outward.
+- **evidence-pending** — the assigned route is built or available, but no
+  admitted evidence currently establishes the claim. A valid `fail` or
+  `not-evaluable` result remains recorded as that result and must never be
+  rewritten as `not-run`. This disposition permits no positive public claim,
+  may not be used while the route is neither built nor available, and closes
+  only when admissible evidence establishes the bounded claim. Reader holdout
+  lifecycle and result remain orthogonal. Snapshot-local attempt hashes are
+  necessary but not sufficient: script 14 also requires the root
+  `history_transition` fields `previous_source_commit`,
+  `previous_source_sha256`, `previous_history_head_sha256`, and
+  `history_head_sha256` to bind the nearest earlier normal first-parent commit
+  that changed `reader-evidence.json`, its exact source bytes and prior history
+  head, and the current history head. The transition preserves prior attempt
+  prefixes and terminal attempts and permits exactly one domain and one legal
+  step: one append, or an active nonterminal attempt becoming terminal. A
+  successor pre-registration binds `predecessor_attempt_sha256` and
+  `prior_history_head_sha256` to its frozen predecessor. A void attempt cannot
+  feed a gate, and it does not erase the latest completed non-void result. A
+  `void` attempt with `not-run` is valid. These checks cover visible normal
+  first-parent Git history only; they cannot establish resistance to rewritten
+  history or external truth.
 - **author-ruling-pending** — neutral inventory, gap discovery, evidence
   collection and option briefs may proceed. A brief's recommendation is not a
   decision, and dependent prose, formalisation, pins and public claims wait.
@@ -377,7 +410,7 @@ prose.
 | Empirical fact about the world | Evidenced, naming R4a or R4b |
 | Arrival, delivery, release, correction, institutional action | Unestablished — liveness |
 | Resource, cost, capacity, shock | Unestablished/route-unbuilt |
-| Reader comprehension, balance, lived effect | Unestablished/route-unbuilt until the reader route is available |
+| Reader comprehension, balance, lived effect | Unestablished/route-unbuilt while R6 is neither built nor available; Unestablished/evidence-pending once R6 is available but no matching valid holdout pass establishes the claim; Evidenced only after that pass, bounded to the tested audience and disclosed method limits |
 | Self-authentication of the trust root | Unestablished/refused, permanently |
 
 The record-integrity verdict moves off NOT ESTABLISHED only on the condition
@@ -403,10 +436,19 @@ activity takes no posture and asserts nothing, so it does not violate this rule.
 This distinction is what keeps the rule from freezing the gate ladder. The
 public-edition gate depends on reader evidence, the reader route is unbuilt, and
 its pass rule is itself a separate open author ruling to be made after a pilot.
-That is a **sequence**, not a deadlock: the pilot may run, the rule may then be
-ratified, the route becomes available, and only then does the gate's claim
-become sayable. A gate condition requiring a route to exist is a sequencing
-requirement; it is not a Book 1 claim and this rule does not bite on it.
+That is a **sequence**, not a deadlock: the pilot may run and the rule may then
+be ratified. Separately, R6 becomes available only when its evidence contract,
+admissibility criteria, named reviewer with a gate-bound custody attestation,
+dedicated executable evidence-admission/evaluation gate, and watched-failing
+seeded control are complete. The dormant contract, structural checker,
+deterministic evaluator, and fixed gate component do not complete that tuple.
+The gate component's self-test supplies no reader evidence, reviewer custody, or
+seeded-control result and does not build or make R6 available. Every active
+completed attempt must store `gate_admission_receipt` as the fixed digest-bound
+gate's exact output. Only a matching valid holdout pass whose exact receipt has
+`decision=admit` may establish FS-CLM-37. A gate condition requiring a route to
+exist is a sequencing requirement; it is not a Book 1 claim and this rule does
+not bite on it.
 
 ## 11. No bridge into the reasoning engine
 
@@ -449,6 +491,7 @@ row here before the ledger can check it.
 | Executed pin verdict | Chapter, floor and counterfactual suites | Derived |
 | Structural negative control passed | Generator self-checks | Checked (kind F) |
 | Report is current | Generator `--check` modes | Checked (kind F) |
+| Fixed reader-admission-gate component self-test passes | `verify.sh` quick and full modes | Checked (kind F): interface behaviour only, not R6 availability or reader evidence |
 | Reviewed operation set, record class, scenario | Assertion-surface and record-integrity inventories | Checked (kind I) |
 | `current_verified` | Record-integrity controls | Derived or Checked, per its evidence kind |
 | `external_verified` | Record-integrity controls | Evidenced |
@@ -486,11 +529,52 @@ resting on a mutation with no mutation reference; a Checked row phrased as an
 impossibility; an Evidenced row with no reachable source or a failing staleness
 gate; a Specified row without its unimplemented marker; a Reasoned row cited as
 Derived; an Unestablished row with no disposition, or with a `route-unbuilt`
-disposition and no severity, owner, closure condition and claim restriction; a
-liveness claim in any posture but Unestablished; a feasibility claim present at
-all in Book 1; an established posture resting on a route that is neither built
-nor available; a route with no declared negative control; a reviewed enum with
-no mapping row; and any aggregate score.
+disposition and no severity, owner, closure condition and claim restriction; an
+`evidence-pending` row whose route is neither built nor available; an
+`evidence-pending` claim whose valid `fail` or `not-evaluable` result was
+rewritten as `not-run`; a reader attempt whose local hash chain is invalid; a
+reader `history_transition` that is absent or does not match the nearest
+earlier normal first-parent commit changing `reader-evidence.json`, the exact
+prior source bytes, previous history head, or current history head; a transition
+that rewrites an attempt prefix or terminal attempt, changes both domains,
+advances more than one step, or performs anything other than one append or an
+active nonterminal-to-terminal change; a successor pre-registration whose
+`predecessor_attempt_sha256` or `prior_history_head_sha256` is absent or
+mismatches its frozen predecessor; an active-attempt change that overwrites the
+latest completed non-void result; a study ID,
+coded-record commitment, custody ID or digest, or receipt ID duplicated anywhere
+across pilot and holdout history; a run with anything other than exactly one
+freshness record; a void attempt that feeds a gate; a pilot or holdout freeze
+with no external prior-commit or custody binding, or whose computed
+`attested_payload_sha256` does not match the exact bound payload; a holdout
+freeze that fails to bind the exact rule, protocol, instrument/rubric,
+candidate, sample/recruitment, and disclosure digests; a pre-registration or
+receipt whose `structural_checker_sha256` does not match the checker it binds; a
+holdout with no `frozen_ratification`, or whose embedded historical rule,
+candidate, pilot basis, or digest fails independent validation; a candidate
+commit that is not an ancestor of current `HEAD`; a noncanonical UTC freeze,
+`completed_at`, `voided_at`, or `revealed_at`, or a chronology in which
+freeze does not precede the terminal event, reveal does not follow it, or a
+successor begins before the predecessor's required events; an active completed
+attempt with no `gate_admission_receipt`, a receipt other than the exact output
+of the fixed digest-bound gate, or a decision other than `admit` offered to
+establish FS-CLM-37; a structural checker or evaluator fixture substituted for
+the dedicated R6 gate, gate-bound reviewer custody, or watched seeded control;
+once values exist, a missing derived end-to-end below-, exact-, or
+above-boundary fixture at a reachable observation, or an edge-domain case that
+is neither explicit nor fail-closed; a populated candidate, `author-ratified`,
+frozen, or completed stage with a required watched-failing mutation missing,
+empty, or falsely marked inapplicable; an Evidenced reader claim without a
+matching valid holdout pass and exact gate admission; a liveness claim
+in any posture but Unestablished; a feasibility claim present at all in Book 1;
+an established posture resting on a route that is neither built nor available;
+a route with no declared negative control; a reviewed enum with no mapping row;
+and any aggregate score.
+
+For external custody, these failures validate the recorded structure and exact
+payload binding only; they do not establish external existence or truth. The
+Git transition check is bounded to visible normal first-parent history and does
+not establish resistance to rewritten Git history.
 
 Building it is tracked with the canonical source, not as a competing item.
 
@@ -519,6 +603,7 @@ happened.
 | A chapter sentence says the design refuses something | Derived; the exact conclusion the refusal reaches; the scope bound; the pin, and the counterfactual where monotonicity hides the restriction |
 | A sentence says nothing reads a relation | Checked; the source version; the phrasing that stops short of impossibility |
 | A quick run is green and someone cites it | Which half is being cited — the stratification engine result, or the artifact comparison — and the explicit list of what quick omits |
+| The fixed R6 gate component self-test is green | Checked (kind F) for its interface only; R6 remains unbuilt and unavailable without the complete route tuple |
 | An inventory is offered as proof | Refusal, with the inventory's own limit clause quoted |
 | A figure appears in prose | Evidenced; R4a or R4b; the reachable identifier; population, period, place, method, caveats |
 | A ratified-but-unimplemented family is described | Specified; the unimplemented marker; the bar on appearing as chapter content |
@@ -529,6 +614,8 @@ happened.
 | A model result is proposed as an engine input | The no-bridge clause; the distinct authenticated relation; the conclusion-only predicate still derived |
 | A reader pilot has run but the pass rule is unratified | Building is work, not a claim; the route is not yet available; the gate's claim is not yet sayable |
 | An independent reviewer proposes an omission | R7; a reasoned public disposition; add, classify with reasons, or retain as a severity-rated limit |
+| R6 is available but the holdout is absent, not evaluable, or validly fails | Unestablished/evidence-pending; retain the exact result and permit no positive reader claim |
+| A matching valid holdout passes under available R6 in a valid `history_transition`, carries the required frozen-predecessor pre-registration bindings, and its stored `gate_admission_receipt` exactly matches the fixed digest-bound gate's output with `decision=admit` | Evidenced for the tested audience and disclosed method limits; no wider claim and no substitution for another route |
 
 ## 17. Evidence and limits
 
@@ -594,3 +681,28 @@ This ruling is ratified and **unimplemented**. It creates no predicate, rule,
 fact, pin, generator, verifier section, chapter, programme, release or public
 coverage claim, and it upgrades no existing claim's posture. Each artifact still
 carries its own vocabulary until the ledger lands.
+
+### Subsequent disposition extension
+
+On 2026-08-11 the author selected “Add evidence-pending (Recommended)” when
+asked how to represent the interval in which a route is built or available but
+the evidence required for its claim is not admitted or does not establish it,
+then instructed implementation of the plan carrying that selection. This
+extends only the Unestablished disposition enum and the checks that keep it
+honest. It builds no route, admits no evidence, changes no result, upgrades no
+claim's posture, changes no gate, and closes no tracker item.
+
+### Current reader-route implementation note
+
+The later dormant reader implementation includes the reviewed machine source,
+generated report, structural checker, deterministic evaluator, and fixed
+admission-gate component. The gate component's self-test is Checked kind F
+only. No taxonomy label, threshold value, pilot, valid seeded-control run,
+second threshold ruling, frozen or completed holdout, named reviewer,
+gate-bound reviewer custody attestation, or `gate_admission_receipt` exists.
+The dormant `history_transition` has null `previous_source_commit`,
+`previous_source_sha256`, and `previous_history_head_sha256` values and the
+deterministic empty `history_head_sha256`; no pre-registration predecessor
+binding exists. R6 therefore remains unbuilt and unavailable, FS-CLM-37 remains
+Unestablished/route-unbuilt, and the public-edition gate is unchanged. This
+current-state note is not the reserved second author ruling.

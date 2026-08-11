@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-09-scenario-catalogue`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-11-git-history-transition`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -754,7 +754,7 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-RTE-03 Dynamic simulations | unbuilt | Simulation results for their stated dynamics and envelope, once available | Formal entailment, operation, or reader experience | not-yet-declared — a reason the route is unbuilt, not an exemption | not-yet-declared |
 | FS-RTE-04 The claim registry | built | That a figure matches its named source at its retrieval date; staleness for script-refreshable entries | Truth of the source, or anything about this design | A schema violation or a stale fetchable entry must fail the registry gate | The staleness gate's failure path is the route's control; the split is by name — script-refreshable entries gate on staleness, pinned-source entries are schema-checked and human re-cited |
 | FS-RTE-05 Operational assurance | unbuilt | That a staffed, accountable route was exercised end to end in a named envelope, once available | Deployment, generalisation, or formal entailment | not-yet-declared — a reason the route is unbuilt, not an exemption | not-yet-declared |
-| FS-RTE-06 Reader and lived-experience studies | unbuilt | Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available | Population statistics, authority over the people studied, or any legal or empirical claim | Declared by the reader-evidence protocol decision: the instrument must fail a seeded unbalanced or planted-misconception control, watched failing during the pilot's revise step; not yet shipped | not-yet-shipped — declared but unbuilt; the declaration does not make the route available |
+| FS-RTE-06 Reader and lived-experience studies | unbuilt | Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available | Population statistics, authority over the people studied, resistance to rewritten Git history, external custody truth, or any legal or empirical claim | Declared by the reader-evidence protocol decision: the instrument must fail a seeded unbalanced or planted-misconception control, watched failing during the pilot's revise step; not yet shipped | not-yet-shipped — declared but unbuilt; the declaration does not make the route available |
 | FS-RTE-07 Independent multidisciplinary and adversarial review | unbuilt | That named independent reviewers examined a named scope and their proposals received public dispositions, once available | Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure | Declared ahead of build and now shipped in structure: the scope-review protocol requires a hash-committed material omission withheld from the review packet plus seeded material and immaterial proposals whose triage must classify them correctly, and the generator refuses an independent review event without a pre-registered commitment — plant, seed, and protocol SHA-256 digests entered in this source at commissioning, pre-images author-held outside the repo. A review event that misses the plant or whose triage passes the seeds fails its control. The mechanics are landed; no reviewer is named and no event exists, so the route stays unbuilt and nothing here makes it available | Landed and watched failing in the generator's control harness: a missing or malformed commitment digest, a duplicate plant/seed digest, an independent event without a pre-registered commitment, a commitment that postdates its review window, breaks custody outside the repo, or mismatches the protocol text's digest, and a protocol status line that drifts from the reviewed source are each refused. The route remains unbuilt until a reviewer is named and an event runs |
 
 ## Enum mapping (maps, renames nothing)
@@ -793,6 +793,16 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | temporal-assurance-case.json | posture | `exposed_external_boundary` | Not a posture — names an external boundary; dependent claims take Unestablished/external-assumption |
 | temporal-assurance-case.json | posture | `preserved_by_narrowness_test` | Derived — a narrowness control executed against the current source |
 | temporal-assurance-case.json | status | `staged_t3_repository_assurance` | Not a posture — the artifact's declared evidence role; its rows carry their own mappings |
+| reader-evidence.json | threshold_status | `pending-pilot` | Unestablished/author-ruling-pending for the threshold rule; not a reader result |
+| reader-evidence.json | holdout_status | `not-frozen` | Not a posture — active holdout-attempt lifecycle; no active pre-registration is frozen |
+| reader-evidence.json | result | `not-run` | Not a posture — no completed non-void holdout result exists |
+| reader-evidence.json | route_status | `unbuilt` | Unestablished/route-unbuilt for FS-CLM-37 |
+| reader-evidence.json | evidence_contract_status | `implemented` | Not a posture or route availability — dormant structural contract only |
+| reader-evidence.json | negative_control_status | `not-run` | Not a posture — the active pilot's R6 control is not-run |
+| reader-evidence.json | pilot_status | `not-run` | Not a posture — no active pilot attempt has run |
+| reader-evidence.json | control_status | `not-run` | Not a posture — the active pilot attempt's seeded instrument control has not run |
+| reader-evidence.json | posture | `Unestablished` | Unestablished |
+| reader-evidence.json | disposition | `route-unbuilt` | Unestablished/route-unbuilt |
 
 Deliberate exclusions (recorded, not silent):
 

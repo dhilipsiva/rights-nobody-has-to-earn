@@ -10,7 +10,7 @@ assurance.
 
 Stage 1 seeded domains, legacy coverage rows and their one-posture splits,
 bodies, routes, external assumptions, the envelope stub, every closed enum, the
-compatibility table, and the mechanical enum mapping over the six sibling
+compatibility table, and the mechanical enum mapping over the seven sibling
 reviewed JSONs (which are read LIVE at --check, never digest-pinned, so a new
 reviewed enum value fails here until its mapping row lands in the same change).
 Stage 2 backfills every declared defect, repair narrative, open gap, and
@@ -55,6 +55,7 @@ Usage:
 import argparse
 import copy
 import hashlib
+import importlib.util
 import json
 import pathlib
 import re
@@ -65,7 +66,7 @@ SOURCE = pathlib.Path("new-book-plans/full-society-ledger.json")
 OUTPUT = pathlib.Path("new-book-plans/full-society-ledger.md")
 
 # The two rulings whose text defines the ledger's enums and stopping rule. An
-# edit there must force a deliberate refresh here. The six sibling reviewed
+# edit there must force a deliberate refresh here. The seven sibling reviewed
 # JSONs are deliberately NOT digest-bound: they are read live at --check so the
 # enum-mapping closure fails the moment a new reviewed enum value appears,
 # without putting this artifact at the end of the 7->12 refresh cascade.
@@ -78,6 +79,9 @@ BOUND_SOURCES = {
     ),
 }
 
+READER_EVIDENCE_SOURCE = pathlib.Path("new-book-plans/reader-evidence.json")
+READER_EVIDENCE_VALIDATOR = pathlib.Path("new-book-plans/14-reader-evidence.py")
+
 SIBLING_SOURCES = [
     pathlib.Path("new-book-plans/assertion-surface-contracts.json"),
     pathlib.Path("new-book-plans/record-integrity-assurance-case.json"),
@@ -85,12 +89,13 @@ SIBLING_SOURCES = [
     pathlib.Path("new-book-plans/amendment-semantics-audit.json"),
     pathlib.Path("new-book-plans/placement-exhaustiveness-audit.json"),
     pathlib.Path("new-book-plans/temporal-assurance-case.json"),
+    READER_EVIDENCE_SOURCE,
 ]
 
-# ID prefixes already in use across the six sibling reviewed JSONs. A ledger ID
+# ID prefixes already in use across the seven sibling reviewed JSONs. A ledger ID
 # may never collide with this space; the ledger's own IDs are FS-XXX-NN.
 LIVE_SIBLING_PREFIXES = frozenset(
-    ["AS", "OE", "RA", "RC", "RD", "RF", "RI", "RS", "RT", "TA", "TP"]
+    ["AS", "OE", "RA", "RC", "RD", "RE", "RF", "RI", "RS", "RT", "TA", "TP"]
 )
 ID_RE = re.compile(r"^FS-[A-Z]{3}-[0-9]{2,3}$")
 
@@ -120,6 +125,7 @@ UNESTABLISHED_DISPOSITIONS = [
     "routed-book-2",
     "external-assumption",
     "route-unbuilt",
+    "evidence-pending",
     "author-ruling-pending",
     "refused",
     "not-establishable",
@@ -394,6 +400,21 @@ VERDICT_LINE = (
 # rule; deliberate exclusions are recorded in the reviewed source.
 ENUM_LEAF_KEYS = frozenset(["posture", "status", "disposition", "verdict"])
 
+# Reader evidence uses explicit field names instead of a generic `status`
+# leaf. These consequential state fields join the live mapping closure so a
+# state transition must update the canonical mapping in the same change.
+READER_ENUM_LEAF_KEYS = frozenset([
+    "threshold_status", "holdout_status", "result", "route_status",
+    "evidence_contract_status", "negative_control_status",
+    "pilot_status", "control_status", "admissibility",
+    "protocol_validity", "attempt_status", "attempt_result",
+    "void_reason_code", "binding_type", "scope", "core_failure_mode",
+    "repetition_unit", "metric", "operator", "value_kind", "unit",
+    "denominator", "adjudication", "impact", "missing", "ambiguous",
+    "multiply_coded", "withdrawn", "excluded", "unclassified",
+    "rounding", "coder_adjudication", "code",
+])
+
 FORBIDDEN_SCORE_KEYS = frozenset(
     ["score", "percentage", "total", "coverage_figure", "coverage_percent", "rank"]
 )
@@ -401,6 +422,54 @@ FORBIDDEN_SCORE_KEYS = frozenset(
 
 class LedgerError(Exception):
     pass
+
+
+_READER_EVIDENCE_CACHE = None
+
+
+def load_validated_reader_evidence():
+    """Load the live reader source and run its owning checker once.
+
+    Script 14 owns pilot, threshold, ratification, holdout, and digest
+    validity. Reusing its validator here keeps the cross-ledger posture
+    transition exact without copying a second, drifting definition.
+    """
+    global _READER_EVIDENCE_CACHE
+    if _READER_EVIDENCE_CACHE is not None:
+        return _READER_EVIDENCE_CACHE
+    reader = load_json(READER_EVIDENCE_SOURCE)
+    validator_path = ROOT / READER_EVIDENCE_VALIDATOR
+    spec = importlib.util.spec_from_file_location(
+        "reader_evidence_validator", validator_path
+    )
+    if spec is None or spec.loader is None:
+        raise LedgerError(
+            f"cannot load reader-evidence validator: {READER_EVIDENCE_VALIDATOR}"
+        )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    error_type = getattr(module, "ReaderEvidenceError", None)
+    validate_reader = getattr(module, "validate", None)
+    if error_type is None or not callable(validate_reader):
+        raise LedgerError(
+            "reader-evidence validator does not expose its validation contract"
+        )
+    try:
+        validation = validate_reader(copy.deepcopy(reader))
+    except error_type as exc:
+        raise LedgerError(f"reader-evidence contract invalid: {exc}") from exc
+    if (
+            not isinstance(validation, tuple)
+            or len(validation) != 2
+            or any(type(value) is not bool for value in validation)
+    ):
+        raise LedgerError(
+            "reader-evidence validator must return exactly two booleans: "
+            "valid_pilot and valid_holdout_pass"
+        )
+    _, valid_holdout_pass = validation
+    _READER_EVIDENCE_CACHE = (reader, valid_holdout_pass)
+    return _READER_EVIDENCE_CACHE
 
 
 def sha256(path: pathlib.Path) -> str:
@@ -919,6 +988,11 @@ def validate_claims(src: dict, ids: dict, routes_by_id: dict):
                     f"{ctx}: an Unestablished row needs one named disposition"
                 )
             if ud == "route-unbuilt":
+                if route["route_status"] != "unbuilt":
+                    raise LedgerError(
+                        f"{ctx}: route-unbuilt requires an unbuilt route; "
+                        f"{route['id']} is {route['route_status']}"
+                    )
                 # severity/consequence/owner/closure are already mandatory on
                 # every record; the claim restriction is the extra field.
                 if "restricted" not in rec["public_claim_restriction"].lower() \
@@ -927,6 +1001,12 @@ def validate_claims(src: dict, ids: dict, routes_by_id: dict):
                         f"{ctx}: a route-unbuilt row must state its public-claim "
                         "restriction"
                     )
+            if ud == "evidence-pending" and route["route_status"] not in (
+                    "built", "available"):
+                raise LedgerError(
+                    f"{ctx}: evidence-pending requires a built or available "
+                    f"route; {route['id']} is {route['route_status']}"
+                )
         elif "unestablished_disposition" in rec:
             raise LedgerError(
                 f"{ctx}: unestablished_disposition belongs only on Unestablished rows"
@@ -950,6 +1030,77 @@ def validate_claims(src: dict, ids: dict, routes_by_id: dict):
             raise LedgerError(
                 f"{ctx}: resolution_status is generated, never hand-authored"
             )
+
+
+def validate_reader_evidence_alignment(src: dict, routes_by_id: dict):
+    """Bind R6 and FS-CLM-37 to the live reviewed reader contract.
+
+    R6 is external: it moves from unbuilt to available, never built. The
+    claim is route-unbuilt while R6 is unbuilt, evidence-pending while R6
+    is available without a matching valid pass, and Evidenced only for the
+    exact pass accepted by script 14.
+    """
+    reader, valid_holdout_pass = load_validated_reader_evidence()
+    reader_route = reader["route"]
+    reader_claim = reader["claim"]
+    route = routes_by_id.get("FS-RTE-06")
+    if route is None:
+        raise LedgerError("reader alignment: missing FS-RTE-06")
+    if route["route_status"] == "built":
+        raise LedgerError(
+            "reader alignment: FS-RTE-06 is an external route and may never "
+            "take the in-repository built status"
+        )
+    if route["status"] != route["route_status"]:
+        raise LedgerError(
+            "reader alignment: FS-RTE-06 status and route_status must agree"
+        )
+    if reader_route["route_id"] != route["id"]:
+        raise LedgerError("reader alignment: reader source names the wrong route")
+    if reader_route["route_status"] != route["route_status"]:
+        raise LedgerError(
+            "reader alignment: FS-RTE-06 route_status must match "
+            "reader-evidence.json"
+        )
+    claim = next(
+        (rec for rec in src.get("claims", []) if rec.get("id") == "FS-CLM-37"),
+        None,
+    )
+    if claim is None:
+        raise LedgerError("reader alignment: missing FS-CLM-37")
+    if claim["route_ref"] != route["id"]:
+        raise LedgerError("reader alignment: FS-CLM-37 must use FS-RTE-06")
+    if reader_claim["claim_id"] != claim["id"]:
+        raise LedgerError("reader alignment: reader source names the wrong claim")
+    if valid_holdout_pass:
+        expected = ("Evidenced", "none")
+    elif route["route_status"] == "available":
+        expected = ("Unestablished", "evidence-pending")
+    else:
+        expected = ("Unestablished", "route-unbuilt")
+    reader_state = (reader_claim["posture"], reader_claim["disposition"])
+    ledger_state = (
+        claim["posture"],
+        claim.get("unestablished_disposition", "none"),
+    )
+    if reader_state != expected:
+        raise LedgerError(
+            "reader alignment: reviewed reader claim contradicts its validated "
+            "route and holdout state"
+        )
+    if ledger_state != expected:
+        raise LedgerError(
+            f"reader alignment: FS-CLM-37 must be {expected[0]}/{expected[1]} "
+            "for the live reader-evidence state"
+        )
+    if (reader["result"] == "fail"
+            and reader_route["route_status"] == "available"
+            and ledger_state != ("Unestablished", "evidence-pending")):
+        raise LedgerError(
+            "reader alignment: a persisted failure on an available route "
+            "requires Unestablished/evidence-pending; active holdout status "
+            "may not rewrite it as not-run"
+        )
 
 
 def validate_bodies(src: dict):
@@ -2370,10 +2521,13 @@ def validate_deferred(src: dict):
 
 
 def collect_sibling_enums():
-    """Live-read the six sibling reviewed JSONs and inventory their enums."""
+    """Live-read the seven sibling reviewed JSONs and inventory their enums."""
     found = []
     for path in SIBLING_SOURCES:
         data = load_json(path)
+        leaf_keys = ENUM_LEAF_KEYS
+        if path == READER_EVIDENCE_SOURCE:
+            leaf_keys = leaf_keys | READER_ENUM_LEAF_KEYS
         for key, val in data.items():
             if key.endswith("_meanings") and isinstance(val, dict):
                 for value in val:
@@ -2382,7 +2536,7 @@ def collect_sibling_enums():
         def walk(obj, field_path):
             if isinstance(obj, dict):
                 for k, v in obj.items():
-                    if isinstance(v, str) and k in ENUM_LEAF_KEYS:
+                    if isinstance(v, str) and k in leaf_keys:
                         found.append((path.name, k, v))
                     else:
                         walk(v, k)
@@ -3048,6 +3202,7 @@ def validate(src: dict):
     validate_domains(src, ids)
     validate_legacy_rows(src, ids)
     validate_claims(src, ids, routes_by_id)
+    validate_reader_evidence_alignment(src, routes_by_id)
     validate_bodies(src)
     validate_roles(src, ids)
     validate_dependencies(src, ids)
@@ -3129,6 +3284,10 @@ def negative_controls(src: dict) -> int:
             _unestablished_without_disposition)
     control("a domain layer must be the sentinel",
             lambda s: s["domains"][0].update({"layer": "constitutional-invariant"}))
+    control("route-unbuilt requires an unbuilt route",
+            _route_unbuilt_on_built, "requires an unbuilt route")
+    control("evidence-pending requires a built or available route",
+            _evidence_pending_on_unbuilt, "requires a built or available route")
     control("verdict line is byte-exact",
             lambda s: s["acceptance_gate"].update(
                 {"verdict": VERDICT_LINE.lower()}))
@@ -3535,6 +3694,24 @@ def _unestablished_without_disposition(s):
             rec.pop("unestablished_disposition", None)
             return
     raise LedgerError("control setup: no Unestablished claim to mutate")
+
+
+def _route_unbuilt_on_built(s):
+    built = next(r["id"] for r in s["routes"]
+                 if r["route_status"] == "built")
+    for rec in s["claims"]:
+        if rec.get("unestablished_disposition") == "route-unbuilt":
+            rec["route_ref"] = built
+            return
+    raise LedgerError("control setup: no route-unbuilt claim to mutate")
+
+
+def _evidence_pending_on_unbuilt(s):
+    for rec in s["claims"]:
+        if rec.get("unestablished_disposition") == "route-unbuilt":
+            rec["unestablished_disposition"] = "evidence-pending"
+            return
+    raise LedgerError("control setup: no route-unbuilt claim to mutate")
 
 
 def _remedied_detected(s):
@@ -4767,7 +4944,7 @@ def main():
             )
         print(f"{OUTPUT} and the coverage-map region are current; {controls} "
               "structural negative controls pass; enum-mapping and "
-              "residual-coverage closures over the six reviewed sources hold; "
+              "residual-coverage closures over the seven reviewed sources hold; "
               "routing inventory only — nothing established beyond each row's "
               "own posture")
     else:
