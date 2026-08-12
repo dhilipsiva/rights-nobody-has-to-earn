@@ -877,6 +877,46 @@ prove an order was given or refused, advance a clock, end an emergency, or
 perform an institutional act. The controlling record is
 `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
 
+The multi-power, multi-window protective-authority composition boundary was
+measured on 2026-08-12 against clean Nibli
+`main == origin/main == public main` at
+`07734c8f7af71075cb70e91c112ff75d16a962d9`. The composition findings came
+from separately digest-bound custom native probe sources and outputs recorded
+in the audit; the custom executable binaries were not digest-bound. Separately,
+release `nibli-pin` SHA-256
+`87b5c7bf351e355352781905a7afedbf29f7c20b3e3d2fc69843921ba0a26f10`
+ran the neutral text-boundary pin and passed this repository's full verifier;
+those runs do not establish the custom native-surface findings. The supported
+seam is narrow: exact case-bound ground queries over a raw rule shape that
+retains every positive witness in its head and rejoins the authorising act and
+version, measure, subject, scope, basis, authority, and window. On the dated
+probe, exact keyed ground queries scaled approximately linearly; sibling
+authority could not substitute, removing one measure's active authority left
+the others unchanged, removing the source closed every dependent conclusion,
+and a stale act version failed closed.
+
+This audit does not establish currentness, freshness, replay protection,
+conflict priority, publication, clock advancement, or institutional action.
+`FALSE` remains closed-world non-entailment rather than affirmative cessation;
+a duplicate or frozen renewal is indistinguishable from live evidence without
+external witnesses, and a `Closed` sibling does not override a retained `Open`
+record. Alternate and substitute routes derive only after their positive
+records and actions are supplied. The compiled no-reader graph is an
+observational current-program check, not a permanent seal. An unbound
+eight-variable `find` exhibited catastrophic candidate expansion and a
+process-level memory abort even with three expected rows, and an accepted flat
+raw rule whose positive witness variables appeared only in the antecedent
+silently under-derived. Formalisation must therefore use exact-ground queries
+over the measured fully head-carried raw shape and must not rely on the unsafe
+high-arity find/count/aggregate or antecedent-only-witness raw shapes. Any
+ordinary-KR implementation needs separate vocabulary-admission,
+compiler-lowering, compiled-shape, and behavioural validation against the
+selected source before it can claim this boundary. Aggregate callers must also
+validate that every projected binding is numeric because the current aggregate
+silently filters symbolic or missing values. No authority-specific engine
+feature is needed for the supported seam. See
+`new-book-plans/nibli-multi-power-multi-window-protective-authority-capability-audit.md`.
+
 **The assurance portfolio is author-ratified (2026-08-08): seven
 non-substitutable routes + one posture set + a claim-language rule per posture.**
 This is a method ruling, not a constitutional one. It **upgrades no existing
@@ -1747,10 +1787,10 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   the pilot and before the holdout's pre-registration freeze — plus the
   author-drafted passage obligation; it blocks nothing now, and neutral
   inventory and decision briefs may proceed. Phase
-  2 records the completed finite collective-decision and versioned ecological/
-  animal finding-boundary audits, holds two bounded, non-blocking engine repair
-  prompts, and carries the read-only protective-power finding-boundary audit
-  before formalisation. The expansion backlog uses
+  2 records the completed finite collective-decision, versioned ecological/
+  animal finding-boundary, and multi-power/multi-window protective-authority
+  composition audits, and holds two bounded, non-blocking engine repair prompts.
+  The expansion backlog uses
   one canonical social model, a versioned
   reference envelope and disposition map, explicit constitutional domain packs,
   role/dependency/stress/gameability/assurance tests, separate completion gates,
