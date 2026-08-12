@@ -49,13 +49,12 @@ then a full-society expansion backlog and cross-cutting sections:
    prose, and public claim wait for its own ruling. The reader route remains
    dormant and Gate C remains unsatisfied. This section has been destroyed by
    tooling once and is watched accordingly.
-2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision
-   capability audit and the versioned ecological/animal finding-boundary audit
-   are closed and recorded in source-bound planning artifacts. A read-only audit
-   must still measure multi-power, multi-window protective-authority composition
-   before the emergency and force families are formalised. Two bounded,
-   non-blocking repairs also remain: fail-closed raw witness enumeration and a
-   truthful novel text-compute registration contract. Democratic formalisation
+2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision,
+   versioned ecological/animal finding-boundary, and multi-power/multi-window
+   protective-authority capability audits are closed and recorded in source-bound
+   planning artifacts. Two bounded, non-blocking repairs remain: fail-closed raw
+   witness enumeration and a truthful novel text-compute registration contract.
+   Democratic formalisation
    may proceed through authenticated external result certificates; it may not
    rely on either defective surface.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
@@ -178,158 +177,6 @@ available through an admissibility contract does not open; the claim is recorded
 as Unestablished/route-unbuilt instead. A read-only capability audit is not a
 repair prompt and needs no such assignment: it measures a boundary rather than
 claiming one.
-
-- [ ] **[READ-ONLY] Measure multi-power, multi-window protective authority composition before formalising it.**
-  - This is a capability audit, not an engine-change request. The implemented
-    custody path binds one case to one lease and one window. A declaration binds
-    many concurrent measures, each separately justified and separately renewable,
-    each rejoining the exact declaration version. Nothing has measured that
-    fan-out, and the ratified emergency contract depends on it.
-  - **Done when:** the reply supplies the requested surface matrix, exact probes and
-    outputs, caller/engine responsibility boundary, gaps and minimal general repair
-    recommendation; the engine worktree remains unchanged.
-
-~~~text
-You are working in the Nibli engine repository. Assume no knowledge of any book
-or constitution repository. Perform a read-only, evidence-bound capability
-audit with this exact task title: **Measure multi-power, multi-window protective authority composition before formalising it.**
-
-Do not edit any engine file, generated file, index entry, branch, ref, tag,
-remote, commit, or documentation. Do not commit or push. Put every fixture,
-temporary crate, build target, log, and binary outside the repository. Finish
-by proving the worktree, index, refs, and remotes were not changed.
-
-The question is narrow. An earlier audit established that this engine can gate
-one restrictive conclusion on one authenticated, independently witnessed case
-binding with one authority window, failing closed when that evidence is absent
-or conflicting. The new question is whether the same soundness survives when
-**one authorising act fans out to many concurrently restrictive measures**, each
-carrying its own separately renewable authority, and each required to rejoin the
-exact version of the authorising act rather than a compact status tag.
-
-First bind the audit to the exact implementation:
-
-1. Report the current branch, HEAD SHA, upstream, workspace/package version,
-   public remote URL, and the public remote's current main SHA using a read-only
-   remote query. Do not fetch or update a remote-tracking ref.
-2. Report whether
-   `4cb02aade43b394374c40e661907ad66df3af3fe` and its prerequisite
-   `5cec80080eea0334c87508e60813f8f70f487441` are present and are ancestors of
-   the tested HEAD. Give exact `git cat-file` and
-   `git merge-base --is-ancestor` commands and exit codes. If either object is
-   absent, say so rather than inferring ancestry.
-3. Build the tested release binary into an isolated temporary target directory.
-   Report its absolute path, SHA-256, build command, build profile, source SHA,
-   version output, host/toolchain versions, and audit date. Do not use an old
-   unbound binary.
-4. Capture exact before/after `git status --short --branch`,
-   `git diff --exit-code`, `git diff --cached --exit-code`, refs, and remote
-   configuration sufficient to prove no repository mutation.
-
-Use only neutral fixtures. Do not use any predicate, constant, person, office,
-chapter, or domain name copied from a book — no `emergency`, `declaration`,
-`arrest`, `detention`, `border`, `war`, or similar. Use abstract role and record
-names. Where arbitrary neutral names are not admitted by the text compiler, use
-declared raw IR or a temporary neutral schema and record that surface boundary;
-do not modify the corpus vocabulary. Keep every finding explicit and case-bound.
-
-Probe at least these cases:
-
-### A. One authorising act, many dependent measures
-
-Represent one authorising record and at least three dependent restrictive
-measures. Each measure carries its own subject, scope, justification reference,
-and its own separately renewable authority record.
-
-- Prove that a valid authority for one measure cannot supply authority for a
-  sibling measure sharing the same authorising act.
-- Prove that revoking or failing to renew one measure leaves the others
-  unaffected, and that failing the authorising act withdraws all of them.
-- Report the cost profile as the measure count grows, with exact timings and
-  peak RSS at a few sizes. State plainly whether the join is linear, and whether
-  any candidate-expansion behaviour reappears at this arity.
-
-### B. Version rejoining versus compact status tags
-
-Give the authorising act an identity plus a separately witnessed version field.
-
-- Supply a measure that rejoins the identifier but a stale version. Prove no
-  restrictive conclusion follows.
-- Supply a compact "currently valid" status tag for the authorising act and a
-  raw measure tuple that does not match its version. Prove the tag cannot lend
-  authority across the mismatch.
-- Report which of these the engine can enforce structurally and which remain
-  caller policy.
-
-### C. Frozen, replayed, and withheld renewal evidence
-
-This is the case the constitutional contract explicitly cannot close, and the
-audit must say exactly where the boundary falls.
-
-- Supply a renewal record that is simply absent. Confirm no current restrictive
-  conclusion follows.
-- Supply the same renewal record twice, and supply one whose witnessed window
-  never advances across two snapshots. State precisely whether anything in the
-  engine can distinguish these from a live renewal, or whether that
-  distinction is entirely a property of the supplied witnesses.
-- Confirm that `FALSE` here means not derivable from the supplied snapshot, not
-  proof that a power has ended, and that no absence yields an affirmative
-  cessation conclusion.
-
-### D. Alternate authoriser and substitute reviewer
-
-Use neutral roles for an ordinary authoriser, a predeclared alternate, an
-ordinary reviewer, and a predeclared substitute reviewer.
-
-- Derive authority through the alternate only where the ordinary authoriser's
-  unavailability is itself positively evidenced.
-- Prove that an alternate authorisation which is never ratified by the ordinary
-  authoriser yields no continuing authority in a later fresh evaluation.
-- Prove that silence, vacancy, or conflict never becomes approval, and that no
-  single unavailable writer or reviewer can withhold the route permanently.
-
-### E. Non-cascade between instruments
-
-Represent two independent restrictive instruments over one subject.
-
-- Prove that neither instrument's conclusion is readable by the other, and that
-  no consequence attaches to a subject merely from being under one of them.
-- Show what the engine can and cannot enforce about a capability being read by
-  no rule, and whether that property is checkable from the compiled program
-  rather than only by inspection.
-
-Then report the exact surface boundary between:
-
-- what `nibli-pin` can pin;
-- what native `NibliEngine`, `CoreSession`, and `KnowledgeBase` query, find,
-  count, aggregate, proof, and raw-IR surfaces expose;
-- what the caller must authenticate, compare, classify, persist, publish,
-  schedule, correct, challenge, or execute; and
-- whether the result is definitive, non-definitive, resource-bounded, or
-  observational only.
-
-Return a compact capability matrix and the complete neutral fixtures. Include
-every exact command, exit code, material stdout/stderr, verdict, witness/count
-result, proof boundary, binary SHA-256, source SHA, version, runtime, and any
-resource measurement needed to reproduce the finding. Clearly label:
-
-1. definitive capabilities;
-2. caller/service responsibilities;
-3. unsupported or unsafe surfaces;
-4. gaps that block sound formalisation versus gaps safely handled by an
-   authenticated external-record seam; and
-5. the smallest general, book-neutral repair or documentation recommendation
-   for each real engine gap, with a minimal acceptance test.
-
-Do not implement any recommendation. If the present engine can already express
-the safe bounded seam, say so and recommend no repair. End with what this prompt
-got wrong or assumed without evidence.
-
-Write the final reply directly to the rights-nobody-has-to-earn session through
-dhilipsiva. Include the baseline SHA/version/binary first, then the capability
-matrix, exact probes and outputs, derivation-versus-caller boundary, cost
-profile, gaps, minimal recommendations, mutation-proof checks, and prompt errors.
-~~~
 
 - [ ] **Make raw witness enumeration fail closed on non-definitive leaves.**
   - This repairs a public raw-API undercount found by the completed audit. It does
@@ -1464,7 +1311,9 @@ Gate B; it does not claim Book 2 operations or feasibility.
     or review record. It does not detect a threat, decide necessity,
     proportionality, imminence or attribution, authenticate a warrant, prove an
     order was given or refused, advance a clock, end an emergency, or perform an
-    institutional act. Close the multi-power composition audit above first.
+    institutional act. Formalisation is constrained to the supported exact-ground
+    seam and exclusions recorded in
+    `new-book-plans/nibli-multi-power-multi-window-protective-authority-capability-audit.md`.
   - **Book 2 handoff:** force capability, doctrine, training, equipment and
     less-lethal options; forensics, investigation practice and case
     administration; intelligence tradecraft and information security; border,
