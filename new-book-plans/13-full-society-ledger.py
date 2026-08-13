@@ -3191,14 +3191,14 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
          if r.get("envelope_status") == "versioned-structure"), None)
     if successor is None:
         preconditions.append(("the reference envelope", "unmet-external",
-                              "still the explicit stub; the envelope item owns "
-                              "its versioning"))
+                              "still the explicit stub; Gate A requires a non-stub, "
+                              "versioned-structure envelope"))
     else:
         preconditions.append(("the reference envelope", "met-in-form",
-                              "versioned in structure and reviewable; "
-                              "calibration is a Gate D condition and values "
-                              "remain Book 2's, and closure and operational "
-                              "assurance still require calibration"))
+                              "versioned in structure and reviewable; this satisfies "
+                              "Gate A's envelope precondition. Calibration and "
+                              "values remain Book 2 Gate D work, and operational "
+                              "assurance and remedied resolution still require them"))
     if src["severity_rubric"]["rubric_status"] == RUBRIC_STATUS_CANDIDATE:
         preconditions.append(("the severity rubric", "unmet",
                               "candidate — author confirmation pending"))
@@ -3242,16 +3242,6 @@ def validate_closure_record(src: dict, readiness):
                 f"{ctx}: a closure record may not exist while a closure "
                 f"condition computes unmet — {name}: {reason}"
             )
-    # This branch is unreachable while the calibrated refusal stands: closure
-    # requires a calibrated envelope, which this contract refuses to hold. Its
-    # watched-failing coverage is the defect-row control exercising the same
-    # _envelope_calibrated helper.
-    if not _envelope_calibrated(src, rec["envelope_ref"]):
-        raise LedgerError(
-            f"{ctx}: closure requires a calibrated envelope — "
-            f"{rec['envelope_ref']} is not calibrated, and calibration is a "
-            "deliberate future contract amendment"
-        )
     validate_reference(rec["author_ratification_ref"],
                       f"{ctx}.author_ratification_ref")
     if src["acceptance_gate"]["gate_a_status"] != "passed":
@@ -3712,6 +3702,19 @@ def negative_controls(src: dict) -> int:
             lambda s: s["scenarios"][0].update(
                 {"source_refs": ["book-1/rights-floor.md::the floor"]}),
             "narrative-register rule")
+
+    # Positive regression: Gate A closure-envelope validation accepts the
+    # non-stub versioned structure without pretending it is calibrated. The
+    # full source still refuses gate_a_status=passed until a future author
+    # amendment and all independent readiness conditions are met.
+    closure_ready = copy.deepcopy(src)
+    _mk_closure(closure_ready)
+    closure_ready["acceptance_gate"]["gate_a_status"] = "passed"
+    validate_closure_record(
+        closure_ready,
+        ([("control", "met-in-form", "control")],
+         [("the reference envelope", "met-in-form", "control")]),
+    )
 
     passed = 0
     for entry in controls:
@@ -4933,7 +4936,9 @@ def render(src: dict, resolution: dict) -> str:
         w(f"Version `{successor['envelope_version']}`. No value enters Book 1: "
           "every field's value status names Book 2's Gate D calibration as "
           "owner, and this contract refuses a calibrated envelope outright — "
-          "calibration is a deliberate future contract amendment.")
+          "calibration is a deliberate future contract amendment. This "
+          "versioned structure satisfies only Gate A's envelope precondition; "
+          "operation and remedy still require calibration.")
         w("")
         w("| Field | Definition | Value status | Dependents | Invariance |")
         w("| --- | --- | --- | --- | --- |")

@@ -4,7 +4,8 @@
 
 > **Status: author-ratified 2026-08-07 — two-book model + C then E +
 > versioned closure; current Book 1 reader-evidence execution withdrawn
-> 2026-08-11, leaving the Gate C ceiling in force.** This is a scope,
+> 2026-08-11, leaving the Gate C ceiling in force; reference-envelope
+> ownership clarified 2026-08-13.** This is a scope,
 > publication, and public-claim decision.
 > It does not enact a constitutional rule, activate Book 2, or create a tag,
 > preview, edition, print file, or release.
@@ -75,6 +76,31 @@ passes, only an immutable Gate B preview may publish, with the absence of
 admissible human reader and accessibility validation stated as a claim limit.
 The controlling disposition is
 [`book-1-reader-evidence-execution-withdrawal-decision.md`](book-1-reader-evidence-execution-withdrawal-decision.md).
+
+## 2A. 2026-08-13 reference-envelope ownership clarification
+
+The author asked:
+
+> In that case, can we move this item to book 2, it is not relevant to book-1?
+
+This ruling moves the unfinished work, not the already-enacted shared structural
+contract. FS-ENV-00, FS-ENV-01, the nine field definitions and invariance
+statements, the seven functional-criterion meanings, and the thirteen threshold
+meanings and lawful-source classifications remain canonical cross-book metadata.
+They contain no calibrated value and establish no feasibility or operation.
+
+The Book 2 tracker is the sole owner of population, territory, resource,
+technology, institutional, trade, horizon, service-level, and shock-set values;
+observable metrics; calibration sources; uncertainty; falsifiers; sensitivity;
+and alternative-envelope analysis. Book 2 remains collection-only until Gate C.
+Moving ownership neither activates Book 2 nor permits a functional claim.
+
+Gate A tests the scope map and assurance program. Its closure record may cite a
+non-stub versioned-structure envelope and does not require Gate D calibration;
+the permanent pre-envelope stub remains ineligible. Operationally-assured stages,
+remedied resolutions, Gate D model claims, and the Gate E fully-functional claim
+still require a calibrated successor. No later-gate model or value can substitute
+for an earlier unmet gate.
 
 ## 3. Words whose scope must remain visible
 

@@ -4,10 +4,10 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-13-closure-model-allocation",
+  "source_version": "fs-ledger-2026-08-13-book2-envelope-ownership",
   "bound_sources_sha256": {
     "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
-    "full_society_boundary": "62ffe52b1cb4613ea0a1181455f3964ecf9b1fedd3382c4e7c35491fb41e4015"
+    "full_society_boundary": "00273fa9ac211d3b7bffce5f37625832652e9750e81dce301844ab8a9149a3fd"
   },
   "axes": [
     { "id": "legal-effect-class", "name": "Legal-effect class", "values": "The ten ratified constitutional taxonomy classes, class-01 through class-10", "note": "An author-chosen planning grammar, not derived and not exhaustive; preserved as its own axis and never reused as the domain axis." },
@@ -92,7 +92,7 @@
   },
   "envelope_status_meanings": {
     "stub": "The permanent pre-envelope identity: records keyed before the envelope was versioned cite it; it can route, never assure.",
-    "versioned-structure": "Fields, definitions, dependents, and invariance statements are versioned and reviewable; no value exists, and closure and operational assurance still require calibration.",
+    "versioned-structure": "Fields, definitions, dependents, and invariance statements are versioned and reviewable; no value exists. This satisfies Gate A's envelope precondition, while operational assurance and remedied resolution still require calibration.",
     "calibrated": "Values calibrated and validated by Book 2 at Gate D. Refused outright in this contract: calibration becomes legal only through a deliberate future contract amendment."
   },
   "value_status_meanings": {
@@ -1935,7 +1935,7 @@
     { "id": "FS-EXA-04", "title": "A reviewer or institution actually acts", "applicability": "every duty, alarm, and review endpoint", "layer": "external-assumption", "status": "named", "severity": "critical where it fails", "consequence": "nothing reads obliged; the chain ends at a named duty", "owner_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 22. Book 1, Book 2, and Nibli", "closure_condition": "never internal — operational assurance could evidence action in a named envelope", "assumption": "That a named reader, reviewer, or institution acts on a derived duty or alarm is assumed, never derived; a duty or an alarm is not evidence that anyone acted.", "failure_consequence": "The breach of the duty is also markable, and what runs out is not links but anybody who has to act — stated in print.", "source_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 20. Oversight, review, and remedy — priced honestly" }
   ],
   "envelope": [
-    { "id": "FS-ENV-00", "title": "Pre-envelope identity", "applicability": "every record keyed before the envelope was versioned", "layer": "external-assumption", "status": "pre-envelope-identity", "severity": "material — the permanent keying identity, retained so no record is re-keyed", "consequence": "rows citing it can route, never assure: no operationally-assured stage, remedied resolution, or closure record may cite it", "owner_ref": "TODO.md::Define the reference-society envelope", "closure_condition": "permanent — retained as the pre-envelope keying identity; Book 1 claims are not envelope-bound and stay here", "envelope_status": "stub", "note": "The permanent pre-envelope identity. Every Book 1 claim, defect row, and receipt stays keyed to it, unmigrated: Book 1 claims are not envelope-bound, because only a functional or feasibility claim binds a versioned envelope and Book 1 may carry none." },
+    { "id": "FS-ENV-00", "title": "Pre-envelope identity", "applicability": "every record keyed before the envelope was versioned", "layer": "external-assumption", "status": "pre-envelope-identity", "severity": "material — the permanent keying identity, retained so no record is re-keyed", "consequence": "rows citing it can route, never assure: no operationally-assured stage, remedied resolution, or closure record may cite it", "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 2A. 2026-08-13 reference-envelope ownership clarification", "closure_condition": "permanent — retained as the pre-envelope keying identity; Book 1 claims are not envelope-bound and stay here", "envelope_status": "stub", "note": "The permanent pre-envelope identity. Every Book 1 claim, defect row, and receipt stays keyed to it, unmigrated: Book 1 claims are not envelope-bound, because only a functional or feasibility claim binds a versioned envelope and Book 1 may carry none." },
     {
       "id": "FS-ENV-01",
       "title": "Reference-society envelope, structure version",
@@ -1943,9 +1943,9 @@
       "layer": "external-assumption",
       "status": "versioned-structure — values pending Book 2 calibration",
       "severity": "critical if misread as calibrated — a structure binds no magnitude",
-      "consequence": "the fields and their claim dependencies are reviewable; closure and operational assurance still require calibration",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
-      "closure_condition": "calibration by Book 2 at Gate D, entering only through a deliberate future contract amendment",
+      "consequence": "the fields and their claim dependencies are reviewable; this satisfies Gate A's envelope precondition, while operational assurance and remedied resolution still require calibration",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
+      "closure_condition": "permanent structural contract for Gate A; a calibrated successor is solely Book 2 Gate D work and requires a deliberate future contract amendment",
       "envelope_status": "versioned-structure",
       "envelope_version": "envelope-v1-structure",
       "note": "Structure only, by author-ratified choice: the fields are versioned with definitions, dependents, and invariance statements; no value enters Book 1, and every field's value status names Book 2's Gate D calibration as owner.",
@@ -6360,7 +6360,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — payment would become presumed delivery",
       "consequence": "delivery counts only on recipient-side evidence of real access",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "adequacy",
       "domain_refs": ["FS-DOM-02", "FS-DOM-03", "FS-DOM-04"],
@@ -6379,7 +6379,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — access would shrink to one office's budget",
       "consequence": "an undue-burden claim reads the institution as a whole; an effective alternative must remain",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "accessibility-equality",
       "domain_refs": ["FS-DOM-01"],
@@ -6398,7 +6398,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — a failed private arrangement would strand the dependant",
       "consequence": "public continuity activates immediately when a private arrangement fails, is refused, or is exited",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "continuity",
       "domain_refs": ["FS-DOM-02"],
@@ -6417,7 +6417,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — provider failure would become floor failure",
       "consequence": "a provider label never transfers the public duty to finance, secure, and maintain the floor",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "continuity",
       "domain_refs": ["FS-DOM-04"],
@@ -6436,7 +6436,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — a declaration would become a derogation",
       "consequence": "a declaration confers exactly its four bounded powers and suspends nothing",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "resilience",
       "domain_refs": ["FS-DOM-10"],
@@ -6455,7 +6455,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — capacity talk would replace invariant statements",
       "consequence": "Book 1 states invariant and failure behaviour per shock; Book 2 tests capacity and degradation",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "resilience",
       "domain_refs": ["FS-DOM-10"],
@@ -6474,7 +6474,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — one score would hide one failed condition",
       "consequence": "no abundance on one axis compensates a breach on another",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "sustainability",
       "domain_refs": ["FS-DOM-11"],
@@ -6493,7 +6493,7 @@
       "status": "meaning-declared",
       "severity": "material — the level is democratic law's, inside the scientific envelope",
       "consequence": "the constitution supplies no number; weakening needs fresh public evidence",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "sustainability",
       "domain_refs": ["FS-DOM-11"],
@@ -6512,7 +6512,7 @@
       "status": "meaning-declared",
       "severity": "material — science supplies evidence, not law",
       "consequence": "an independently reviewed scientific process bounds the democratic enactment",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "sustainability",
       "domain_refs": ["FS-DOM-11"],
@@ -6531,7 +6531,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — a reduced ration would be renamed the minimum",
       "consequence": "every unmet portion is recorded as failure under the forbidden priority keys",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "resource",
       "domain_refs": ["FS-DOM-04", "FS-DOM-05"],
@@ -6550,7 +6550,7 @@
       "status": "meaning-declared",
       "severity": "material — a budget cut is not scarcity",
       "consequence": "only an authenticated, contestable, resource-specific finding opens the ordering",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "resource",
       "domain_refs": ["FS-DOM-05"],
@@ -6569,7 +6569,7 @@
       "status": "meaning-declared",
       "severity": "critical if weakened — the burden of lawfulness would leave the public actor",
       "consequence": "lethal force is lawful only where strictly unavoidable to protect life",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "safety",
       "domain_refs": ["FS-DOM-07"],
@@ -6588,7 +6588,7 @@
       "status": "meaning-declared",
       "severity": "material — levels are democratic choices that never touch entitlement",
       "consequence": "service levels parameterize delivery above the floor; the floor's unconditionality is untouchable",
-      "owner_ref": "TODO.md::Define the reference-society envelope",
+      "owner_ref": "book-2/TODO.md::Define the versioned reference envelope and acceptance thresholds",
       "closure_condition": "values arrive with their classified lawful source, never here",
       "criterion_ref": "adequacy",
       "domain_refs": ["FS-DOM-04"],
@@ -7736,35 +7736,35 @@
         "name": "Adequacy",
         "definition": "A floor condition counts as delivered only on independent recipient-side evidence of timely, accessible, adequate real access; a payment that cannot procure the good is not delivery.",
         "binding_refs": ["new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::timely, accessible, adequate real access"],
-        "provenance": ["the 2026-08-07 mandate", "the envelope item's tracker bullet", "the boundary decision's materiality test", "the book-2 mirror", "the ledger's former threshold deferral"]
+        "provenance": ["the 2026-08-07 mandate", "the former Book 1 envelope tracker bullet", "the boundary decision's materiality test", "the book-2 mirror", "the ledger's former threshold deferral"]
       },
       {
         "id": "accessibility-equality",
         "name": "Accessibility / equality",
         "definition": "Access is a proactive, systemic duty read against the responsible institution as a whole, with an effective alternative and public continuity route wherever a provider cannot serve.",
         "binding_refs": ["new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::a proactive, systemic duty"],
-        "provenance": ["the 2026-08-07 mandate (equality/accessibility)", "the envelope item's tracker bullet (equity and accessibility)", "the boundary decision's materiality test (accessibility/equality)", "the book-2 mirror (accessibility/equity)", "the ledger's former threshold deferral (accessibility)"]
+        "provenance": ["the 2026-08-07 mandate (equality/accessibility)", "the former Book 1 envelope tracker bullet (equity and accessibility)", "the boundary decision's materiality test (accessibility/equality)", "the book-2 mirror (accessibility/equity)", "the ledger's former threshold deferral (accessibility)"]
       },
       {
         "id": "continuity",
         "name": "Continuity",
         "definition": "Public continuity is immediate and non-delegable when a private arrangement fails, is refused, or is exited; withdrawal, dispute, inaccessibility, inadequacy, or failure activates it.",
         "binding_refs": ["new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::immediate and non-delegable"],
-        "provenance": ["the 2026-08-07 mandate", "the envelope item's tracker bullet", "the boundary decision's materiality test", "the book-2 mirror (continuity/reserve)", "the ledger's former threshold deferral"]
+        "provenance": ["the 2026-08-07 mandate", "the former Book 1 envelope tracker bullet", "the boundary decision's materiality test", "the book-2 mirror (continuity/reserve)", "the ledger's former threshold deferral"]
       },
       {
         "id": "resilience",
         "name": "Resilience",
         "definition": "Under every shock member the design states what continues, what narrows, who may decide, who is protected first, what cannot be suspended, how review arrives, and how ordinary authority is restored — and no right, institution, election, or remedy is suspended.",
         "binding_refs": ["TODO.md::what continues, what narrows", "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 9. The emergency overlay: no derogation"],
-        "provenance": ["the 2026-08-07 mandate", "the envelope item's tracker bullet", "the boundary decision's materiality test", "the book-2 mirror (recovery/resilience)", "the ledger's former threshold deferral"]
+        "provenance": ["the 2026-08-07 mandate", "the former Book 1 envelope tracker bullet", "the boundary decision's materiality test", "the book-2 mirror (recovery/resilience)", "the ledger's former threshold deferral"]
       },
       {
         "id": "sustainability",
         "name": "Sustainability",
         "definition": "Protected ecological axes are non-substitutable and may not be collapsed into one sustainability, productivity, or social-value score; ceilings are democratic law inside an independently reviewed scientific envelope.",
         "binding_refs": ["new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::collapsed into one sustainability", "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings"],
-        "provenance": ["the 2026-08-07 mandate", "the envelope item's tracker bullet", "the boundary decision's materiality test", "the book-2 mirror (ecological-sustainability)"]
+        "provenance": ["the 2026-08-07 mandate", "the former Book 1 envelope tracker bullet", "the boundary decision's materiality test", "the book-2 mirror (ecological-sustainability)"]
       },
       {
         "id": "resource",
@@ -7781,7 +7781,7 @@
         "provenance": ["the boundary decision's materiality test — the seventh member, carried so no ratified criterion is dropped"]
       }
     ],
-    "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the envelope item's tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
+    "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
   "closure_record": null,
   "acceptance_gate": {

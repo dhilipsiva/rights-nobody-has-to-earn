@@ -1772,9 +1772,11 @@ whose fields are versioned with definitions, dependents, and
 invariance statements and whose every value status names Book 2's Gate D
 calibration as owner. **`calibrated` is refused outright in this contract**:
 calibration becomes legal only through a deliberate future contract amendment,
-and the operationally-assured stage, the remedied path, and the closure record
-all require a calibrated envelope through one shared helper, so a structure
-can route and be reviewed but never assure. The dependency closure is the
+and the operationally-assured stage and remedied path still require a
+calibrated envelope through one shared helper, so a structure can route and be
+reviewed but never assure operation. Gate A instead requires a non-stub,
+versioned-structure envelope; it does not wait on Gate D calibration. The
+dependency closure is the
 design's thesis made mechanical: no established constitutional invariant may
 depend on an envelope field — norm content is envelope-invariant — while the
 envelope-relative claims (arrival, and live-record persistence under the
@@ -1790,8 +1792,10 @@ democratic policy target, scientific safety boundary, or operational
 diagnostic — the source fixes the layer), separates its decision owner from
 its measurement owner, and carries no numeric value; values arrive with their
 classified lawful source, never here. The Gate A readiness row for the
-envelope computes met-in-form with the residue stated: calibration is a Gate D
-condition, and closure and operational assurance still require it.
+envelope computes met-in-form: versioned structure is sufficient for the scope
+and assurance-program gate. Values, calibration, operational assurance, and
+remedied resolution remain Book 2 Gate D work, and Book 2 stays inactive until
+Gate C.
 
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
