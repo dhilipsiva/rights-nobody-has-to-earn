@@ -53,10 +53,11 @@ then a full-society expansion backlog and cross-cutting sections:
    versioned ecological/animal finding-boundary, and multi-power/multi-window
    protective-authority capability audits are closed and recorded in source-bound
    planning artifacts. Fail-closed raw witness enumeration landed in engine
-   `55806188553016c192e6ba7cf73ee6a41cf30eef`. One bounded, non-blocking repair
-   remains: a truthful novel text-compute registration contract. Democratic
-   formalisation may proceed through authenticated external result certificates;
-   it may not rely on the defective text-compute surface.
+   `55806188553016c192e6ba7cf73ee6a41cf30eef`; corpus-scoped text-compute
+   registration landed in `5777ced0ec6c9ebdc20b6536520e02691dd7e6e9`. No
+   bounded engine handoff repair remains. Neither repair is an election result
+   service; democratic formalisation still uses authenticated external result
+   certificates.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
    versioned claim-assurance, defect-disposition, and response-stage map for
@@ -178,67 +179,9 @@ as Unestablished/route-unbuilt instead. A read-only capability audit is not a
 repair prompt and needs no such assignment: it measures a boundary rather than
 claiming one.
 
-
-- [ ] **Reconcile novel text-compute registration with compiler admission.**
-  - This is a public API/documentation mismatch found by the completed audit, not
-    a request for an election arithmetic engine. It does not block the book's
-    bounded external-certificate path.
-  - **Done when:** the implemented text surface and public documentation make one
-    truthful promise for registered novel compute names; unregistered names
-    remain fail closed; raw IR, assertion admission, and query-only boundaries
-    remain explicit; neutral tests cover the selected contract.
-
-~~~text
-You are working in the Nibli engine repository. Assume no knowledge of any book
-or constitution project. Reconcile one general text-compute API/documentation
-mismatch; do not add voting predicates, book-specific cases, or a permissive
-unknown-name fallback.
-
-Start from current engine main and report its exact source SHA and workspace
-version. This behavior was reproduced on 2026-08-08 at
-`a7d288a9ab9b9eb4e0f282469c3bc278ec94894e`:
-
-1. call `register_compute_predicate("quorum")`;
-2. call `query_holds("quorum(Panel).")`;
-3. text compilation fails before compute dispatch with `unknown predicate
-   "quorum": not a corpus name`.
-
-Public documentation broadly says custom backend predicates may be registered.
-Determine the intended supported contract and make implementation, API docs,
-README, guarantees, and tests agree. There are two acceptable shapes:
-
-- make an explicitly registered name and arity visible to the KR compiler before
-  fail-closed vocabulary rejection; or
-- narrow the text API/documentation to corpus-resolvable names and state that
-  arbitrary custom names require raw IR or an explicit vocabulary/schema
-  extension.
-
-Choose the smaller coherent contract after inspecting the architecture and state
-why. Under either choice, unregistered text names must still fail closed;
-registration must not guess arity, bypass assertion validation, persist compute
-nodes as facts/rule literals, or alter the raw-IR query-only contract. Preserve
-all six temporal/deontic flavors, deterministic compilation, and existing
-corpus-resolvable compute behavior. `NibliEngine::validate` remains compile-only,
-not an assertion-admission check.
-
-Add neutral tests for the chosen text contract, unregistered rejection, wrong
-arity, raw IR, assertion/rule refusal, and existing corpus-resolvable names.
-Check every advertised native/component surface and correct documentation that
-claims more than it exposes. Run focused tests, relevant reasoner/engine/host
-suites, and clean `just ci-all`. Commit and push only after those gates pass.
-Then write your reply directly to the rights-nobody-has-to-earn session through
-dhilipsiva. Include the exact commit SHA and version, selected contract and why,
-files changed, exact before/after outputs, tests, whether any verdict or API
-surface moved, and what this prompt got wrong.
-~~~
-
-Do not work around either engine defect in book prose. Until a repair is
-independently rebuilt and verified here, democratic formalisation must use only
-definitive positive queries and authenticated external result certificates.
-
-**When a reply lands here**, independently build or identify its source commit,
-select that binary explicitly, and re-run `./verify.sh` before believing anything.
-This repo has twice measured an engine change that was never rebuilt.
+Neither repair adds election arithmetic, result authentication, or institutional
+execution. Democratic formalisation still uses definitive positive queries and
+authenticated external result certificates.
 
 ---
 
