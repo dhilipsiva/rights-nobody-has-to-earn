@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-13-book2-envelope-ownership`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-13-gate-relative-readiness`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -36,9 +36,9 @@ A version may close only when all of the following hold for the gate's permitted
 
 Per-condition status, generated from the source and echoing the closure conditions above by index; no aggregate is derived from this list, and a closure record is refused while any row computes unmet. Closing Gate A is a deliberate future amendment with its own author ratification, never a latent flip.
 
-- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: powers, proposals, review_events
-- **form-only** — every required projection regenerates from that source: the assurance allocation now regenerates from the canonical source; the reader ledger does not exist in the current withdrawn R6 program, so four-projection closure is not met
-- **unmet** — no unresolved critical gap applicable to that gate's permitted claim remains: blocking defect rows exist: FS-DFT-16, FS-DFT-17, FS-DFT-28
+- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: powers
+- **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
+- **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
 - **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no review event with independence true exists, and the in-repo reviewer corpus is never admissible for this condition
 - **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; this satisfies Gate A's envelope precondition. Calibration and values remain Book 2 Gate D work, and operational assurance and remedied resolution still require them
@@ -1029,7 +1029,7 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 | review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under the hash-committed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md), its plant and seed digests pre-registered in this source at commissioning, with named reviewers and passed seeded and planted-omission controls |
 
-The coverage-map view, the role matrix, the dependency map, the scenario catalogue, the Book 2 crosswalk, and the assurance allocation now regenerate from the canonical source. Contract cards and the reader ledger remain with their owning stage or route; no one projection substitutes for another.
+The coverage-map view, the role matrix, the dependency map, the scenario catalogue, the Book 2 crosswalk, and the assurance allocation now regenerate from the canonical source. The structural reader ledger also regenerates from that source; it is navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. No one projection substitutes for another.
 
 ## Conservative rollup
 

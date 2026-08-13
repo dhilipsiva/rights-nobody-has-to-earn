@@ -1559,8 +1559,11 @@ interface rather than being closed by this audit.
 **The full-society domain-and-layer ledger is generated and verifier-enforced
 at stage 1, enacted 2026-08-09.** `new-book-plans/13-full-society-ledger.py`
 validates the reviewed canonical source `full-society-ledger.json` and renders
-`full-society-ledger.md`; `verify.sh` runs its `--check` as a structural step
-that also passes under `--quick`. The source declares the named axes and the
+`full-society-ledger.md` plus the structural navigation projection
+`full-society-reader-ledger.md`; `verify.sh` runs its `--check` as a structural
+step that also passes under `--quick`. The reader projection is not reader
+evidence: it supplies no R6 result, comprehension finding, accessibility
+validation, reader-suitability claim, Gate C evidence, or route availability. The source declares the named axes and the
 stopping rule; fixes the `scope_disposition` enum, author-ratified as the
 reader-facing five layers; and carries the social-domain records with per-layer
 buckets, the coverage map's legacy rows frozen and split into one-posture claim
@@ -1754,8 +1757,12 @@ alike: **the in-repo reviewer corpus is never admissible independent-review
 evidence for the review condition of closure**, because an independent event
 requires named reviewer identities, a resolving protocol, and passed controls.
 The report renders a computed per-condition **Gate A readiness** list echoing
-the closure conditions by index, with no aggregate ever derived from it, and
-the generator **refuses a closure record while any condition computes unmet**;
+the closure conditions by index, with no aggregate ever derived from it. That
+computation treats proposals and review events as outputs of condition five,
+not circular preconditions under condition one, and filters critical defects
+through their reviewed gate-applicability records while leaving their
+claim-level blocking untouched. The generator **refuses a closure record while
+any condition computes unmet**;
 a present record would also require a gate status this contract refuses, so
 closing Gate A is necessarily a deliberate future amendment with its own
 author ratification. **No review has run, no reviewer is named, the closure

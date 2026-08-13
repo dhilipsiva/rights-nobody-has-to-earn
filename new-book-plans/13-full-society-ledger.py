@@ -64,6 +64,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCE = pathlib.Path("new-book-plans/full-society-ledger.json")
 OUTPUT = pathlib.Path("new-book-plans/full-society-ledger.md")
+READER_OUTPUT = pathlib.Path("new-book-plans/full-society-reader-ledger.md")
 
 # The two rulings whose text defines the ledger's enums and stopping rule. An
 # edit there must force a deliberate refresh here. The seven sibling reviewed
@@ -108,6 +109,46 @@ SCOPE_DISPOSITIONS = [
     "book-2-operation",
     "external-assumption",
 ]
+GATE_REFS = ["gate-a", "gate-b", "gate-c", "gate-d", "gate-e"]
+GATE_APPLICABILITY_MEANINGS = {
+    "gate-a": "versioned scope map and assurance test program",
+    "gate-b": "Book 1 constitutional and social destination",
+    "gate-c": "tested public Book 1 edition",
+    "gate-d": "Book 2 operational model in a calibrated envelope",
+    "gate-e": "integrated Book 1 and Book 2 pair",
+}
+# This is the validator-owned inverse of the reviewed per-defect field. The
+# boundary decision makes applicability gate-relative; the exact groups below
+# prevent a coordinated source-only edit from hiding a critical defect.
+DEFECT_GATE_GROUPS = {
+    tuple(GATE_REFS): frozenset({
+        "FS-DFT-13", "FS-DFT-14", "FS-DFT-27", "FS-DFT-40",
+    }),
+    ("gate-c", "gate-d", "gate-e"): frozenset({"FS-DFT-20"}),
+    ("gate-d", "gate-e"): frozenset({
+        "FS-DFT-17", "FS-DFT-28", "FS-DFT-29",
+        "FS-DFT-36", "FS-DFT-37", "FS-DFT-38",
+    }),
+    ("gate-b", "gate-c", "gate-d", "gate-e"): frozenset({
+        *(f"FS-DFT-{number:02d}" for number in range(1, 42)),
+    }) - frozenset({
+        "FS-DFT-13", "FS-DFT-14", "FS-DFT-17", "FS-DFT-20",
+        "FS-DFT-27", "FS-DFT-28", "FS-DFT-29", "FS-DFT-36",
+        "FS-DFT-37", "FS-DFT-38", "FS-DFT-40",
+    }),
+}
+READER_PROJECTION_POPULATIONS = (
+    "axes", "compatibility_table", "enum_mapping",
+    "enum_mapping_exclusions", "residual_coverage_exclusions",
+    "domains", "legacy_rows", "claims", "bodies", "routes",
+    "external_assumptions", "envelope", "roles", "role_omissions",
+    "powers", "dependencies", "dependency_loops", "refused_flows",
+    "scenarios", "scenario_omissions", "thresholds", "defects",
+    "receipts", "proposals", "review_events", "deferred_populations",
+    "closure_requirement_profiles", "closure_claim_contracts",
+    "model_allocations", "function_allocations", "loop_hazard_controls",
+    "bottleneck_dispositions",
+)
 # A domain record spans every layer (its buckets are the layers), so its layer
 # field carries this sentinel; only leaf records take one of the five values.
 DOMAIN_LAYER_SENTINEL = "spans-all-layers"
@@ -713,6 +754,7 @@ def validate_meanings(src: dict):
         "collision_axis_meanings": COLLISION_AXES,
         "shock_kind_meanings": SHOCK_KINDS,
         "protected_sphere_form_meanings": PROTECTED_SPHERE_FORMS,
+        "gate_applicability_meanings": GATE_REFS,
     }
     for key, values in expected.items():
         block = src.get(key)
@@ -723,6 +765,11 @@ def validate_meanings(src: dict):
         for value, meaning in block.items():
             if not isinstance(meaning, str) or not meaning.strip():
                 raise LedgerError(f"{key}.{value}: meaning must be prose")
+    if src["gate_applicability_meanings"] != GATE_APPLICABILITY_MEANINGS:
+        raise LedgerError(
+            "gate_applicability_meanings must equal the ratified Gate A-E "
+            "contract"
+        )
 
 
 def validate_axes(src: dict):
@@ -2285,6 +2332,19 @@ def _validate_controls(rec: dict, compat_row: dict, ctx: str):
         validate_reference(val, f"{ctx}.controls.{required}")
 
 
+def expected_defect_gate_refs(defect_id: str):
+    matches = [
+        list(gates) for gates, defect_ids in DEFECT_GATE_GROUPS.items()
+        if defect_id in defect_ids
+    ]
+    if len(matches) != 1:
+        raise LedgerError(
+            f"{defect_id}: checker-owned gate-applicability contract has "
+            f"{len(matches)} matches; a deliberate contract update is required"
+        )
+    return matches[0]
+
+
 def validate_defect_rows(src: dict, ids: dict):
     """The ratified stage-2 keying, control, and polarity rules."""
     defect_ids = {rec.get("id") for rec in src.get("defects", [])}
@@ -2296,7 +2356,8 @@ def validate_defect_rows(src: dict, ids: dict):
             COMMON_KEYS + ["defect_id", "defect_disposition", "response_stage",
                            "affected_claim_ref", "consequence_id", "scope_id",
                            "envelope_id", "source_version", "history",
-                           "evidence_notes", "residual_citations", "controls"],
+                           "evidence_notes", "residual_citations", "controls",
+                           "applicable_gate_refs"],
             ctx, optional=["book2_crosswalk"],
         )
         validate_common_record_fields(rec, ctx)
@@ -2347,6 +2408,32 @@ def validate_defect_rows(src: dict, ids: dict):
                 raise LedgerError(
                     f"{ctx}: {key} is generated, never hand-authored"
                 )
+        gate_refs = rec["applicable_gate_refs"]
+        if not isinstance(gate_refs, list) or not gate_refs:
+            raise LedgerError(
+                f"{ctx}: applicable_gate_refs must be a non-empty list"
+            )
+        if len(gate_refs) != len(set(gate_refs)):
+            raise LedgerError(
+                f"{ctx}: applicable_gate_refs contains duplicates"
+            )
+        unknown_gates = sorted(set(gate_refs) - set(GATE_REFS))
+        if unknown_gates:
+            raise LedgerError(
+                f"{ctx}: unknown applicable gate refs {unknown_gates}"
+            )
+        canonical_gates = [gate for gate in GATE_REFS if gate in gate_refs]
+        if gate_refs != canonical_gates:
+            raise LedgerError(
+                f"{ctx}: applicable_gate_refs must follow canonical gate order"
+            )
+        expected_gates = expected_defect_gate_refs(rec["id"])
+        if gate_refs != expected_gates:
+            raise LedgerError(
+                f"{ctx}: applicable_gate_refs must equal the checker-owned "
+                f"gate-applicability contract {expected_gates}; classification "
+                "cannot hide a critical defect"
+            )
         if not isinstance(rec["history"], list):
             raise LedgerError(f"{ctx}: history must be a list")
         for j, entry in enumerate(rec["history"]):
@@ -3144,13 +3231,34 @@ def validate_review_protocol(src: dict):
         )
 
 
+def _gate_a_condition_1_deferred(src: dict):
+    """Return only the populations named by closure condition one.
+
+    Proposals and review events are outputs of condition five's review.
+    Counting their pre-review deferrals here would make commissioning that
+    review circular.
+    """
+    populations = {
+        "domains", "roles", "powers", "dependencies", "scenarios", "defects",
+    }
+    return sorted(
+        row["record_type"] for row in src["deferred_populations"]
+        if row["record_type"] in populations
+    )
+
+
 def compute_gate_a_readiness(src: dict, resolution: dict):
     """The single computation the render and the closure validator both
     consume. Statuses echo the stopping rule's closure conditions by index so
     the two texts can never drift. No aggregate is ever derived from this."""
     conds = src["stopping_rule"]["closure_conditions"]
-    deferred = sorted(d["record_type"] for d in src["deferred_populations"])
-    blocking = sorted(rid for rid, r in resolution.items() if r["blocking"])
+    deferred = _gate_a_condition_1_deferred(src)
+    defects_by_id = {row["id"]: row for row in src["defects"]}
+    blocking = sorted(
+        rid for rid, row in resolution.items()
+        if row["blocking"]
+        and "gate-a" in defects_by_id[rid]["applicable_gate_refs"]
+    )
     independent = [e for e in src.get("review_events", [])
                    if e.get("independence") is True]
     rows = []
@@ -3162,16 +3270,21 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
         rows.append((conds[0], "met-in-form",
                      "every record type is populated or classified out; "
                      "material sufficiency stays a review question"))
-    rows.append((conds[1], "form-only",
-                 "the assurance allocation now regenerates from the canonical source; "
-                 "the reader ledger does not exist in the current withdrawn R6 program, "
-                 "so four-projection closure is not met"))
+    rows.append((conds[1], "met-in-form",
+                 "the coverage, role, dependency, assurance-allocation, "
+                 "structural-reader, and Book 2 projections regenerate from "
+                 "the canonical source; projection freshness establishes no "
+                 "reader evidence or operational result"))
     if blocking:
         rows.append((conds[2], "unmet",
-                     "blocking defect rows exist: " + ", ".join(blocking)))
+                     "critical unresolved defects applicable to Gate A's "
+                     "map-and-test-program claim exist: "
+                     + ", ".join(blocking)))
     else:
         rows.append((conds[2], "met-mechanically",
-                     "no critical unresolved defect row blocks a claim"))
+                     "no critical unresolved defect row is applicable to Gate "
+                     "A's map-and-test-program claim; later-gate claim blockers "
+                     "remain visible and unresolved"))
     rows.append((conds[3], "met-in-form",
                  "severity, consequence, owner, closure condition, and "
                  "public-claim limitation are validator-enforced on every "
@@ -3400,6 +3513,29 @@ def negative_controls(src: dict) -> int:
                 {"affected_claim_ref": s["bodies"][0]["id"]}))
     control("a defect layer is never the domain sentinel",
             lambda s: s["defects"][0].update({"layer": DOMAIN_LAYER_SENTINEL}))
+    control("a defect declares gate applicability",
+            lambda s: s["defects"][0].pop("applicable_gate_refs"),
+            "missing keys")
+    control("gate applicability is non-empty",
+            lambda s: s["defects"][0].update({"applicable_gate_refs": []}),
+            "non-empty")
+    control("gate applicability rejects unknown gates",
+            lambda s: s["defects"][0].update(
+                {"applicable_gate_refs": ["gate-z"]}),
+            "unknown applicable gate")
+    control("gate applicability rejects duplicates",
+            lambda s: s["defects"][0].update(
+                {"applicable_gate_refs": ["gate-a", "gate-a"]}),
+            "duplicates")
+    control("gate applicability follows canonical order",
+            lambda s: s["defects"][0].update(
+                {"applicable_gate_refs": ["gate-b", "gate-a"]}),
+            "canonical gate order")
+    control("gate applicability cannot silently hide or widen a defect",
+            lambda s: next(
+                row for row in s["defects"] if row["id"] == "FS-DFT-16"
+            ).update({"applicable_gate_refs": list(GATE_REFS)}),
+            "checker-owned gate-applicability contract")
     control("the generated region may not duplicate a coverage-map needle",
             lambda s: s["legacy_rows"][0].update(
                 {"legacy_gap": s["legacy_rows"][0]["legacy_gap"] +
@@ -3716,6 +3852,51 @@ def negative_controls(src: dict) -> int:
          [("the reference envelope", "met-in-form", "control")]),
     )
 
+    gate_a_critical = copy.deepcopy(src)
+    gate_a_row = next(
+        row for row in gate_a_critical["defects"] if row["id"] == "FS-DFT-27"
+    )
+    gate_a_row["severity"] = (
+        "critical — semantic control for a scope-map defect"
+    )
+    validate(gate_a_critical)
+    gate_a_rows, _ = compute_gate_a_readiness(
+        gate_a_critical, compute_resolution(gate_a_critical)
+    )
+    if gate_a_rows[2][1] != "unmet" or \
+            "FS-DFT-27" not in gate_a_rows[2][2]:
+        raise LedgerError(
+            "semantic control failed: a valid Gate-A-applicable critical "
+            "defect must make condition three unmet"
+        )
+
+    review_only = copy.deepcopy(src)
+    before = _gate_a_condition_1_deferred(review_only)
+    review_only["deferred_populations"] = [
+        row for row in review_only["deferred_populations"]
+        if row["record_type"] not in {"proposals", "review_events"}
+    ]
+    after = _gate_a_condition_1_deferred(review_only)
+    if before != after:
+        raise LedgerError(
+            "semantic control failed: review outputs may not alter condition one"
+        )
+
+    complete_reader = render_reader(src, compute_resolution(src))
+    validate_reader_projection(src, complete_reader)
+    first_population = READER_PROJECTION_POPULATIONS[0]
+    reader_marker = _reader_population_line(src, first_population)
+    incomplete_reader = complete_reader.replace(reader_marker, "", 1)
+    try:
+        validate_reader_projection(src, incomplete_reader)
+    except LedgerError:
+        pass
+    else:
+        raise LedgerError(
+            "semantic control failed: reader projection may not omit a "
+            "canonical population"
+        )
+
     passed = 0
     for entry in controls:
         name, mutate = entry[0], entry[1]
@@ -3733,7 +3914,7 @@ def negative_controls(src: dict) -> int:
             passed += 1
             continue
         raise LedgerError(f"negative control failed to fail: {name}")
-    return passed
+    return passed + 3
 
 
 def _derived_bad_kind(s):
@@ -5007,13 +5188,216 @@ def render(src: dict, resolution: dict) -> str:
     w("")
     w("The coverage-map view, the role matrix, the dependency map, the "
       "scenario catalogue, the Book 2 crosswalk, and the assurance allocation "
-      "now regenerate from the canonical source. Contract cards and the reader "
-      "ledger remain with their owning stage or route; no one projection "
-      "substitutes for another.")
+      "now regenerate from the canonical source. The structural reader ledger "
+      "also regenerates from that source; it is navigation only and supplies "
+      "no R6 evidence, comprehension result, accessibility validation, reader-"
+      "suitability claim, Gate C evidence, or route availability. No one "
+      "projection substitutes for another.")
     w("")
     w("## Conservative rollup")
     w("")
     w(src["acceptance_gate"]["rollup_rule"])
+    w("")
+    w("## Reproduce")
+    w("")
+    w("```bash")
+    w("python3 new-book-plans/13-full-society-ledger.py --check")
+    w("```")
+    w("")
+    return "\n".join(out)
+
+
+
+
+
+
+def _canonical_digest(value) -> str:
+    encoded = json.dumps(
+        value, ensure_ascii=False, sort_keys=True, separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def _reader_population_line(src: dict, population: str) -> str:
+    rows = src[population]
+    identities = [
+        row["id"] for row in rows
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    ]
+    identity_text = ", ".join(identities) if identities else (
+        "unkeyed rows; digest is authoritative" if rows else "empty"
+    )
+    return (
+        f"| `{population}` | {len(rows)} | `{_canonical_digest(rows)}` | "
+        f"{identity_text} |"
+    )
+
+
+def reader_projection_population_lines(src: dict):
+    actual = {
+        key for key, value in src.items() if isinstance(value, list)
+    }
+    declared = set(READER_PROJECTION_POPULATIONS)
+    if actual != declared:
+        raise LedgerError(
+            "reader projection population contract is stale: "
+            f"missing {sorted(actual - declared)}, "
+            f"extra {sorted(declared - actual)}"
+        )
+    return [
+        _reader_population_line(src, population)
+        for population in READER_PROJECTION_POPULATIONS
+    ]
+
+
+def validate_reader_projection(src: dict, rendered: str):
+    ceiling = (
+        "**STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 "
+        "evidence, comprehension result, accessibility validation, reader-"
+        "suitability claim, Gate C evidence, or route availability."
+    )
+    if rendered.count(ceiling) != 1:
+        raise LedgerError(
+            "reader projection must carry the exact no-evidence ceiling once"
+        )
+    source_line = (
+        f"Canonical source SHA-256: `{_canonical_digest(src)}`. "
+        "Every canonical list population is bound below; this digest also "
+        "binds the non-list contract fields."
+    )
+    if rendered.count(source_line) != 1:
+        raise LedgerError(
+            "reader projection must bind the exact canonical source once"
+        )
+    for line in reader_projection_population_lines(src):
+        if rendered.count(line) != 1:
+            raise LedgerError(
+                "reader projection population closure is missing or duplicated: "
+                + line.split("|")[1].strip()
+            )
+
+
+def render_reader(src: dict, resolution: dict) -> str:
+    """Render a structural, reader-oriented projection of the same source."""
+    out = []
+    w = out.append
+    blocked_by = {}
+    for row in src["defects"]:
+        if resolution[row["id"]]["blocking"]:
+            blocked_by.setdefault(
+                row["affected_claim_ref"], []
+            ).append(row["id"])
+    claims_by_id = {row["id"]: row for row in src["claims"]}
+
+    w("<!-- SPDX-License-Identifier: CC-BY-4.0 -->")
+    w("<!-- Generated by new-book-plans/13-full-society-ledger.py; "
+      "do not edit. -->")
+    w("")
+    w("# Full-Society Structural Reader Ledger — Generated Projection")
+    w("")
+    w("**STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 "
+      "evidence, comprehension result, accessibility validation, reader-"
+      "suitability claim, Gate C evidence, or route availability.")
+    w("")
+    w(f"Canonical source version: `{src['source_version']}`. "
+      f"Gate verdict: **{src['acceptance_gate']['verdict']}**")
+    w("")
+    w(f"Canonical source SHA-256: `{_canonical_digest(src)}`. "
+      "Every canonical list population is bound below; this digest also "
+      "binds the non-list contract fields.")
+    w("")
+    w("## Projection population closure")
+    w("")
+    w("| Canonical population | Rows | Canonical SHA-256 | Stable identities |")
+    w("| --- | ---: | --- | --- |")
+    for line in reader_projection_population_lines(src):
+        w(line)
+    w("")
+    w("## Five-layer key")
+    w("")
+    for layer in SCOPE_DISPOSITIONS:
+        w(f"- `{layer}`: {src['scope_disposition_meanings'][layer]}")
+    w("")
+    w("## Domain navigation")
+    w("")
+    for domain in src["domains"]:
+        domain_id = domain["id"]
+        domain_claims = [
+            row for row in src["claims"] if domain_id in row["domain_refs"]
+        ]
+        claim_ids = {row["id"] for row in domain_claims}
+        domain_scenarios = [
+            row for row in src["scenarios"]
+            if domain_id in row["domain_refs"]
+        ]
+        domain_defects = [
+            row for row in src["defects"]
+            if row["affected_claim_ref"] in claim_ids
+        ]
+        w(f"### {domain_id} — {domain['title']}")
+        w("")
+        w(f"**Reader destination:** {domain['reader_destination']}")
+        w("")
+        w("Layer dispositions:")
+        w("")
+        for bucket_key, layer in zip(DOMAIN_BUCKETS, SCOPE_DISPOSITIONS):
+            w(f"- `{layer}`: {_bucket_cell(domain[bucket_key])}")
+        w("")
+        w("Claims:")
+        w("")
+        for claim in domain_claims:
+            disposition = claim["posture"]
+            if claim.get("unestablished_disposition"):
+                disposition += f" / {claim['unestablished_disposition']}"
+            blockers = ", ".join(
+                blocked_by.get(claim["id"], [])
+            ) or "none"
+            w(f"- **{claim['id']} — {claim['title']}**: {claim['claim']} "
+              f"Posture: `{disposition}`; route: `{claim['route_ref']}`; "
+              f"overlay: `{claim['overlay']}`; blocking defect rows: "
+              f"{blockers}. Scope: {claim['scope_bound']} Public limit: "
+              f"{claim['public_claim_restriction']}")
+        if not domain_claims:
+            w("- None.")
+        w("")
+        w("Ordinary, failure, and recovery routing:")
+        w("")
+        for scenario in domain_scenarios:
+            w(f"- **{scenario['id']} — {scenario['title']}** "
+              f"(`{scenario['scenario_kind']}`): ordinary — "
+              f"{scenario['ordinary_route']}; failure — "
+              f"{scenario['failure_route']}; recovery — "
+              f"{scenario['recovery_route']}")
+        if not domain_scenarios:
+            w("- None recorded.")
+        w("")
+        w("Open and bounded defect consequences:")
+        w("")
+        for defect in domain_defects:
+            generated = resolution[defect["id"]]
+            w(f"- **{defect['id']} — {defect['title']}**: severity "
+              f"{defect['severity']}; consequence: {defect['consequence']}; "
+              f"closure: {defect['closure_condition']}; applicable gates: "
+              f"{', '.join(defect['applicable_gate_refs'])}; generated "
+              f"resolution: `{generated['resolution_status']}`; blocking "
+              f"for `{defect['affected_claim_ref']}`: "
+              f"`{str(generated['blocking']).lower()}`.")
+        if not domain_defects:
+            w("- None recorded.")
+        w("")
+    w("## Bounded repair mappings")
+    w("")
+    w("These are receipt-to-reader mapping references for eligible repairs. "
+      "They do not establish that a reader understood or could access them.")
+    w("")
+    for receipt in src["receipts"]:
+        claim = claims_by_id[receipt["affected_claim_ref"]]
+        w(f"- `{receipt['id']}` → `{claim['id']}` "
+          f"(`{receipt['reader_mapping_ref']}`); ceiling: "
+          f"`{receipt['assurance_ceiling']}`; still does not follow: "
+          f"{receipt['still_does_not_follow']}")
+    if not src["receipts"]:
+        w("- None.")
     w("")
     w("## Reproduce")
     w("")
@@ -5034,29 +5418,41 @@ def main():
     resolution = validate(src)
     controls = negative_controls(src)
     rendered = render(src, resolution)
+    rendered_reader = render_reader(src, resolution)
+    validate_reader_projection(src, rendered_reader)
     spliced_map = validate_coverage_region(src)
 
     out_path = ROOT / OUTPUT
+    reader_out_path = ROOT / READER_OUTPUT
     map_path = ROOT / COVERAGE_MAP
     if args.check:
         current = out_path.read_text(encoding="utf-8") if out_path.exists() else ""
         if current != rendered:
             raise LedgerError(f"{OUTPUT} is STALE — rerun without --check")
+        current_reader = reader_out_path.read_text(
+            encoding="utf-8"
+        ) if reader_out_path.exists() else ""
+        if current_reader != rendered_reader:
+            raise LedgerError(
+                f"{READER_OUTPUT} is STALE — rerun without --check"
+            )
         if map_path.read_text(encoding="utf-8") != spliced_map:
             raise LedgerError(
                 f"{COVERAGE_MAP} generated region is STALE — rerun without "
                 "--check"
             )
-        print(f"{OUTPUT} and the coverage-map region are current; {controls} "
-              "structural negative controls pass; enum-mapping and "
+        print(f"{OUTPUT}, {READER_OUTPUT}, and the coverage-map region are "
+              f"current; {controls} structural negative controls pass; "
+              "enum-mapping and "
               "residual-coverage closures over the seven reviewed sources hold; "
               "routing inventory only — nothing established beyond each row's "
               "own posture")
     else:
         out_path.write_text(rendered, encoding="utf-8")
+        reader_out_path.write_text(rendered_reader, encoding="utf-8")
         map_path.write_text(spliced_map, encoding="utf-8")
-        print(f"wrote {OUTPUT} and the coverage-map region; {controls} "
-              "structural negative controls pass")
+        print(f"wrote {OUTPUT}, {READER_OUTPUT}, and the coverage-map region; "
+              f"{controls} structural negative controls pass")
 
 
 if __name__ == "__main__":
