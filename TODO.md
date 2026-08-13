@@ -52,11 +52,11 @@ then a full-society expansion backlog and cross-cutting sections:
 2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision,
    versioned ecological/animal finding-boundary, and multi-power/multi-window
    protective-authority capability audits are closed and recorded in source-bound
-   planning artifacts. Two bounded, non-blocking repairs remain: fail-closed raw
-   witness enumeration and a truthful novel text-compute registration contract.
-   Democratic formalisation
-   may proceed through authenticated external result certificates; it may not
-   rely on either defective surface.
+   planning artifacts. Fail-closed raw witness enumeration landed in engine
+   `55806188553016c192e6ba7cf73ee6a41cf30eef`. One bounded, non-blocking repair
+   remains: a truthful novel text-compute registration contract. Democratic
+   formalisation may proceed through authenticated external result certificates;
+   it may not rely on the defective text-compute surface.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
    versioned claim-assurance, defect-disposition, and response-stage map for
@@ -178,66 +178,6 @@ as Unestablished/route-unbuilt instead. A read-only capability audit is not a
 repair prompt and needs no such assignment: it measures a boundary rather than
 claiming one.
 
-- [ ] **Make raw witness enumeration fail closed on non-definitive leaves.**
-  - This repairs a public raw-API undercount found by the completed audit. It does
-    not change the constitutional result-service seam and does not block
-    certificate-based democratic formalisation.
-  - **Done when:** raw `query_find` and `count_witnesses` refuse incomplete
-    enumeration for `Unknown(NafDependent)` and `Unknown(NonFinite)`; entailment
-    and exact-zero retain their current non-definitive verdicts; definitive
-    behavior and the text negative-scope firewall do not move; tests and public
-    guarantees agree.
-
-~~~text
-You are working in the Nibli engine repository. Assume no knowledge of any book
-or constitution project. Implement and verify one general raw-API correctness
-repair; do not add voting predicates, book-specific names, arithmetic, or new
-closed-world semantics.
-
-Start from current engine main and report its exact source SHA and workspace
-version. This defect was reproduced on 2026-08-08 at
-`a7d288a9ab9b9eb4e0f282469c3bc278ec94894e` through the public raw
-`KnowledgeBase` API.
-
-Build this neutral raw-IR fixture:
-
-- assert `person(adam)`;
-- add `dog(x) -> cat(x)` and `cat(x) -> dog(x)`;
-- query `exists x. person(x) and not dog(x)`.
-
-The observed behavior was:
-
-- entailment: `Ok(Unknown(NafDependent))`;
-- find: `Ok([])`;
-- count: `Ok(0)`;
-- exact zero: `Ok(Unknown(NafDependent))`.
-
-The empty list and zero are unsound because the witness set was not completely
-decided. Make raw `query_find` and `count_witnesses` return the existing
-incomplete-enumeration error whenever any candidate leaf is non-definitive.
-Acceptance must cover both `Unknown(NafDependent)` and `Unknown(NonFinite)`, and
-you must inspect the witness-cut path for any other non-definitive reason that
-could be silently discarded.
-
-Preserve definitive TRUE/FALSE enumeration, exact-count behavior, equality
-canonicalisation, logical deduplication, proof behavior, depth/resource errors,
-and the text compiler's negative-scope co-reference firewall. Do not convert
-UNKNOWN to FALSE or make absence classical negation. Check aggregate callers so
-none can inherit a silent partial set.
-
-Add neutral regressions at the lowest public API layer and update
-`GUARANTEES.md` and any API documentation whose fail-closed claim changes or is
-made accurate. Keep `NibliEngine::validate` documented as compile-only;
-assertion admission must still use `assert_text` or
-`KnowledgeBase::validate_assertion`.
-
-Run the focused new tests, the relevant reasoner and engine suites, and clean
-`just ci-all`. Commit and push the repair only after those gates pass. Then
-write your reply directly to the rights-nobody-has-to-earn session through
-dhilipsiva. Include the exact commit SHA and version, files and semantics
-changed, before/after reproducer output, tests, whether any definitive verdict
-moved, any performance effect, and what this prompt got wrong.
-~~~
 
 - [ ] **Reconcile novel text-compute registration with compiler admission.**
   - This is a public API/documentation mismatch found by the completed audit, not
@@ -976,8 +916,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     changing roster's threshold, compare dynamic tallies/shares, group affected
     regions, resolve effective submissions, authenticate completeness, or act.
     Exact-count/compute nodes are query-only. Never substitute a fixed finite
-    witness rule for generic election semantics, and do not use the unsafe raw
-    non-definitive find/count path.
+    witness rule for generic election semantics. Raw non-definitive find/count
+    now fails closed; an incomplete-enumeration error is not a result certificate.
   - Give every result card its roster, separate completeness source, submission
     functional key, classification rule, threshold, tie result, empty-roster
     result, challenge/correction route, alternate attestation, certificate effect,
