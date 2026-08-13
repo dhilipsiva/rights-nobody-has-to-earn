@@ -218,6 +218,13 @@ noticing.
 
 - [ ] **Define the versioned reference envelope and acceptance thresholds before
   modelling.**
+  - **Sole remaining owner:** the shared `FS-ENV-00` / `FS-ENV-01`
+    structure, nine field definitions, seven functional meanings, and thirteen
+    meaning-only threshold records already landed in the canonical source at
+    `dccea62`. The `950d1a0` clarification moves only values, observable metrics,
+    calibration, uncertainty, falsifiers, sensitivity, and alternative-envelope
+    analysis here. This remains collection-only until Gate C; the move does not
+    activate Book 2 or establish a functional claim.
   - Record population/demographic profile; territory, settlement and geography;
     resource/ecological endowment; technology/infrastructure baseline; institutional
     starting state; trade/external-cooperation assumptions; time horizon; service

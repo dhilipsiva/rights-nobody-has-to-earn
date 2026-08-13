@@ -278,25 +278,10 @@ Ordered by dependency: the roles matrix (579f8b1), the dependency map
 constitutional-closure/model-allocation audit (b633e44) have landed. The
 audit supplies the assurance-allocation projection and truthfully emits
 claim-scoped `block` or `bounded-unresolved` results; it does not pass Gate A.
-The envelope item is a Book 2 wait-state, and the ledger item integrates the
-remaining populations and closes Gate A last.
-
-- [ ] **Define the reference-society envelope and measurable meanings of
-  “functional” (structure landed dccea62).**
-  - Book 1's half is landed: the envelope is versioned in structure (the
-    permanent pre-envelope identity beside `envelope-v1-structure`), the
-    dependency closure holds, the functional criteria are fixed as the
-    seven-member union with provenance, and the thresholds are recorded as
-    meanings with classified lawful sources. History lives in git and the
-    settled record in `CLAUDE.md`.
-  - **Remaining — a wait-state, not Book 1 work:** values and calibration are
-    Book 2's Gate D work through its mirror item; a calibrated envelope enters
-    Book 1's contract only by a future amendment with author ratification, and
-    the Gate A closure record waits on that amendment.
-  - **Done when:** every functional or feasibility claim names an envelope
-    version, metric, threshold owner, uncertainty range and failure
-    interpretation, and no single favourable scenario is presented as
-    society-wide feasibility.
+The structural envelope and functional meanings landed at `dccea62`; the
+`950d1a0` ownership clarification moves every remaining value and calibration
+task solely to `book-2/TODO.md`. The ledger item integrates the remaining
+populations and closes Gate A last.
 
 - [ ] **Complete the full-society domain-and-layer ledger.**
   - The canonical source, generator, defect ledger and receipts, coverage-map
