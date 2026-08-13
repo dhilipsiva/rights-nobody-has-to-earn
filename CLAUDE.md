@@ -211,8 +211,13 @@ certifies; authorised institutions execute. Missing completeness can become a
 withholding veto, so every route needs alternate attestation and a failure
 default. "No turnout quorum" is an absent legal condition, not an engine
 primitive. No general empty-roster passage rule was supplied; each Book 1 result
-card must state that default before formalisation. The unsafe raw non-definitive
-witness-enumeration path is excluded.
+card must state that default before formalisation. Since Nibli `5580618`, final
+non-definitive witness enumeration fails closed rather than returning a partial
+collection. At `5777ced`, text compute registration routes only
+corpus-resolvable canonical relations; it declares no vocabulary or arity.
+Arbitrary compute remains a caller-built native raw-IR query and is query-only
+at assertion ingress. Neither repair supplies changing-roster computation or
+certification.
 `FALSE` does not affirmatively preserve current law or an incumbent.
 See `new-book-plans/nibli-finite-collective-decision-capability-audit.md`.
 
@@ -1789,8 +1794,11 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   inventory and decision briefs may proceed. Phase
   2 records the completed finite collective-decision, versioned ecological/
   animal finding-boundary, and multi-power/multi-window protective-authority
-  composition audits, and holds two bounded, non-blocking engine repair prompts.
-  The expansion backlog uses
+  composition audits, and the landed fail-closed witness-enumeration
+  (engine 5580618) and corpus-scoped text-compute registration
+  (engine 5777ced) repairs.
+  No bounded engine handoff prompt remains. Neither repair supplies
+  changing-roster computation or certification. The expansion backlog uses
   one canonical social model, a versioned
   reference envelope and disposition map, explicit constitutional domain packs,
   role/dependency/stress/gameability/assurance tests, separate completion gates,
