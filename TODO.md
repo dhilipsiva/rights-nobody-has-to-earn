@@ -274,45 +274,12 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
 ### Expansion foundation — Map the whole society before adding rule families
 
 Ordered by dependency: the roles matrix (579f8b1), the dependency map
-(4beaa58), and the scenario catalogue (ad58f74) have landed as FS-ROL,
-FS-DEP, and FS-SCN records; the closure audit consumes every population,
-the envelope item is a Book 2 wait-state, and the ledger item integrates
-them and closes Gate A last.
-
-- [ ] **Create a generated constitutional-closure and model-allocation audit.**
-  - Generate it from reviewed domain, role, dependency, assurance, defect-
-    disposition, and response-stage data; never infer constitutional importance
-    from predicate names or raw counts.
-  - Fail when a floor lacks delivery/continuity/remedy; a public power lacks source,
-    limit, review or temporal status; a body decides, executes, audits and finally
-    remedies itself; a private duty is merely implied; a record lacks
-    writer/challenge/correction; a democratic choice crosses the floor; a Book 2
-    operation is presented as Book 1 assurance; an external assumption is hidden;
-    a reader-facing claim has no formal/evidentiary owner; an unowned or
-    unsatisfiable dependency edge survives; a scenario lacks an owned
-    ordinary, failure or recovery route; or an unbounded, self-certifying,
-    deadlocking or single-veto cycle or bottleneck stands unrejected — while
-    bounded, owned service, feedback, fiscal and ecological loops stay
-    classified and tested, never rejected merely for being cyclic.
-  - Join every public claim to its affected defect records and generated
-    claim-relative resolution status. Publish disposition history and resolution
-    receipts beside the claim audit, so a green derivation cannot hide an open
-    liveness, operation, evidence, or reader defect.
-  - Also fail when a known defect row has no defect disposition or response stage;
-    resolution is asserted rather than generated or exceeds its claim-assurance
-    ceiling; detection, interface specification, implementation, assignment,
-    disclosure, an external bound, an irreducible limit, or an open item is counted
-    as closure; an elimination, prevention, containment, remedy, or operational
-    assurance stage lacks its required route-specific controls; a narrower
-    resolution is promoted to a wider claim; or a critical unresolved defect fails
-    to block the claim it can falsify.
-  - Record which claims belong to Nibli, quantitative/resource models, dynamic
-    simulations, the evidence registry, operational assurance, or reader/lived-
-    experience testing. One green model may not substitute for another.
-  - **Done when:** a deterministic check regenerates every projection from the
-    reviewed canonical source, rejects stale/unowned records and all named closure
-    failures, and publishes a claim-by-claim pass, block or bounded-unresolved
-    result with the responsible verification route.
+(4beaa58), the scenario catalogue (ad58f74), and the generated
+constitutional-closure/model-allocation audit (b633e44) have landed. The
+audit supplies the assurance-allocation projection and truthfully emits
+claim-scoped `block` or `bounded-unresolved` results; it does not pass Gate A.
+The envelope item is a Book 2 wait-state, and the ledger item integrates the
+remaining populations and closes Gate A last.
 
 - [ ] **Define the reference-society envelope and measurable meanings of
   “functional” (structure landed dccea62).**
@@ -348,12 +315,13 @@ them and closes Gate A last.
     maintenance rides along: the two live-read closures (enum mapping,
     residual-coverage citation), receipts, and generated resolution must stay
     green as sibling sources change, and `verify.sh` enforces that.
-  - **Projections (condition two).** The role matrix and the dependency
-    map landed with their populations; the assurance allocation arrives
-    with the closure audit above, and the reader ledger with the
-    reader-sessions item. Once all four exist and regenerate, replace the
-    generator's hardcoded `form-only` readiness status with a computed
-    one — a deliberate code change reserved for that moment.
+  - **Projections (condition two).** The role matrix, dependency map, and
+    assurance allocation have landed and regenerate; the reader ledger remains
+    absent because the reader-evidence route is withdrawn for the current
+    program. The generator therefore keeps the readiness status `form-only`.
+    If all four projections later exist and regenerate, replace that hardcoded
+    status with a computed one — a deliberate code change reserved for that
+    moment.
   - **Blocking defect rows (condition three).** FS-DFT-16 and FS-DFT-17 close
     when the accessibility-neutral delivery and receipt rule families land,
     with the pinned-case rebalance sequenced after; FS-DFT-28 additionally
