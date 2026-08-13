@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-11-reader-route-withdrawn`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-13-closure-model-allocation`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -37,7 +37,7 @@ A version may close only when all of the following hold for the gate's permitted
 Per-condition status, generated from the source and echoing the closure conditions above by index; no aggregate is derived from this list, and a closure record is refused while any row computes unmet. Closing Gate A is a deliberate future amendment with its own author ratification, never a latent flip.
 
 - **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: powers, proposals, review_events
-- **form-only** — every required projection regenerates from that source: the projections that exist regenerate — the check itself is the proof — while the assurance allocation and reader ledger do not exist yet
+- **form-only** — every required projection regenerates from that source: the assurance allocation now regenerates from the canonical source; the reader ledger does not exist in the current withdrawn R6 program, so four-projection closure is not met
 - **unmet** — no unresolved critical gap applicable to that gate's permitted claim remains: blocking defect rows exist: FS-DFT-16, FS-DFT-17, FS-DFT-28
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
 - **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no review event with independence true exists, and the in-repo reviewer corpus is never admissible for this condition
@@ -291,7 +291,7 @@ Deliberately omitted candidates and combinations (recorded, not silent):
 
 ## Functional flows and cross-domain dependencies
 
-Each edge records that a function depends on a flow — its lawful source class, its owner, and what breaks when the flow stops. An edge never records that the flow arrives: no right is called delivered because an institution promised it, and no body is called functional because its name exists. The four-way class is routing, not assurance — constitutionally-guaranteed names the lawful source of the obligation, never a delivery status, and an externally-assumed edge names a premise nothing internal manufactures. The mechanical cycle check establishes exactly one thing: every strongly connected region of the declared graph carries at least one declared, classified, owner-named loop witness with a recorded boundedness statement. Boundedness is reviewed prose, not a proven property, and the rejection of self-certifying, deadlocking, single-veto, or unbounded patterns — with cascade analysis — belongs to the closure audit, which consumes this population. Alternate routes are predeclared with their doctrine needle or their absence is recorded as a named single point of failure. Refused flows are walls, not edges: doctrine forbids them, and drawing one as a dependency would be the defect.
+Each edge records that a function depends on a flow — its lawful source class, its owner, and what breaks when the flow stops. An edge never records that the flow arrives: no right is called delivered because an institution promised it, and no body is called functional because its name exists. The four-way class is routing, not assurance — constitutionally-guaranteed names the lawful source of the obligation, never a delivery status, and an externally-assumed edge names a premise nothing internal manufactures. The mechanical cycle check establishes exactly one thing: every strongly connected region of the declared graph carries at least one declared, classified, owner-named loop witness with a recorded boundedness statement. Boundedness is reviewed prose, not a proven property. The closure audit publishes self-certifying, deadlocking, single-veto, unbounded, bottleneck, and cascade hazards as bounded-unresolved or scoped blocking; it admits no rejected-by-control result until a route-bound executable-control receipt schema lands. Alternate routes are predeclared with their doctrine needle or their absence is recorded as a named single point of failure. Refused flows are walls, not edges: doctrine forbids them, and drawing one as a dependency would be the defect.
 
 | Edge | Flow | Class | Source → Destination | Path | Alternate | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -444,14 +444,14 @@ Single points of failure (no alternate route, recorded):
 
 Declared loops (classified, bounded, owned):
 
-- fiscal loop (steward FS-BOD-07): FS-DEP-09 → FS-DEP-11 → FS-DEP-58 — bounded: deadlock mints no new spending — prior enumerated essential authority and the floor continue — and every leg needs a legislative source; the circle unwinds through enacted law, never momentum.
-- feedback loop (steward FS-BOD-06): FS-DEP-01 → FS-DEP-02 → FS-DEP-37 — bounded: confidence is revocable only by choosing a successor, terms end, the caretaker carries only essential continuity, and public reasons keep the loop answerable to the electorate that opened it.
-- service loop (steward FS-BOD-20): FS-DEP-25 → FS-DEP-34 → FS-DEP-49 — bounded: a sequence, not a deadlock — provision, receipt evidence, and audit each act on the previous step's output; plural initiation prevents single-initiator starvation, and the terminal reader is recorded as riding on a named external assumption.
-- ecological loop (steward FS-BOD-22): FS-DEP-21 → FS-DEP-59 — bounded: the two-sided bound: a floor cannot be declared delivered by exhausting the conditions of future delivery, and a ceiling cannot be met by denying floor goods; a managed breach stays recorded failure.
-- feedback loop (steward FS-BOD-19): FS-DEP-61 → FS-DEP-49 — bounded: the audit reads records it did not create and its findings return with a defined action duty; terminal closure rides on the named external assumption that a reader acts — recorded, never hidden.
-- feedback loop (steward FS-BOD-02): FS-DEP-06 → FS-DEP-62 — bounded: no renewal evidence means no current legal effect, an unratified alternate authorisation ends, and cessation is a positive recorded act, never derived from silence.
-- feedback loop (steward FS-BOD-15): FS-DEP-36 → FS-DEP-51 — bounded: disclosure and oversight act on each other's outputs under full access and a defined action duty; the circle cannot seal itself because protected disclosure and association initiation enter it from outside.
-- feedback loop (steward FS-BOD-18): FS-DEP-60 → FS-DEP-04 — bounded: the return is suspensive only — repassage under the original rule ends it — and a competence dispute freezes power with its last uncontested holder.
+- `FS-LOP-01` fiscal loop (steward FS-BOD-07): FS-DEP-09 → FS-DEP-11 → FS-DEP-58 — bounded: deadlock mints no new spending — prior enumerated essential authority and the floor continue — and every leg needs a legislative source; the circle unwinds through enacted law, never momentum.
+- `FS-LOP-02` feedback loop (steward FS-BOD-06): FS-DEP-01 → FS-DEP-02 → FS-DEP-37 — bounded: confidence is revocable only by choosing a successor, terms end, the caretaker carries only essential continuity, and public reasons keep the loop answerable to the electorate that opened it.
+- `FS-LOP-03` service loop (steward FS-BOD-20): FS-DEP-25 → FS-DEP-34 → FS-DEP-49 — bounded: a sequence, not a deadlock — provision, receipt evidence, and audit each act on the previous step's output; plural initiation prevents single-initiator starvation, and the terminal reader is recorded as riding on a named external assumption.
+- `FS-LOP-04` ecological loop (steward FS-BOD-22): FS-DEP-21 → FS-DEP-59 — bounded: the two-sided bound: a floor cannot be declared delivered by exhausting the conditions of future delivery, and a ceiling cannot be met by denying floor goods; a managed breach stays recorded failure.
+- `FS-LOP-05` feedback loop (steward FS-BOD-19): FS-DEP-61 → FS-DEP-49 — bounded: the audit reads records it did not create and its findings return with a defined action duty; terminal closure rides on the named external assumption that a reader acts — recorded, never hidden.
+- `FS-LOP-06` feedback loop (steward FS-BOD-02): FS-DEP-06 → FS-DEP-62 — bounded: no renewal evidence means no current legal effect, an unratified alternate authorisation ends, and cessation is a positive recorded act, never derived from silence.
+- `FS-LOP-07` feedback loop (steward FS-BOD-15): FS-DEP-36 → FS-DEP-51 — bounded: disclosure and oversight act on each other's outputs under full access and a defined action duty; the circle cannot seal itself because protected disclosure and association initiation enter it from outside.
+- `FS-LOP-08` feedback loop (steward FS-BOD-18): FS-DEP-60 → FS-DEP-04 — bounded: the return is suspensive only — repassage under the original rule ends it — and a competence dispute freezes power with its last uncontested holder.
 
 Refused flows (walls, not edges):
 
@@ -1029,7 +1029,7 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 | review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under the hash-committed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md), its plant and seed digests pre-registered in this source at commissioning, with named reviewers and passed seeded and planted-omission controls |
 
-The coverage-map view, the role matrix, the dependency map, the scenario catalogue, and the Book 2 crosswalk are landed generated projections of this source; contract cards, the assurance allocation, and the reader ledger arrive with their owning stage or tracker item, and none may be maintained by hand.
+The coverage-map view, the role matrix, the dependency map, the scenario catalogue, the Book 2 crosswalk, and the assurance allocation now regenerate from the canonical source. Contract cards and the reader ledger remain with their owning stage or route; no one projection substitutes for another.
 
 ## Conservative rollup
 

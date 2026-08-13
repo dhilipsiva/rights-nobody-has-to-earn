@@ -42,6 +42,7 @@ AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
 LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
+CLOSURE_AUDIT=new-book-plans/16-constitutional-closure.py
 READER_AUDIT=new-book-plans/14-reader-evidence.py
 READER_GATE=new-book-plans/reader-evidence-admission-gate.py
 PILOT_READER_ARTIFACTS=new-book-plans/15-pilot-reader-artifacts.py
@@ -120,7 +121,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, reader-evidence contract, or full-society ledger,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, reader-evidence contract, full-society ledger, or constitutional-closure audit,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -214,6 +215,15 @@ step "full-society ledger"
 out=$(python3 "$LEDGER_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "full-society ledger failed" "$out"
+
+# 2i. claim-scoped constitutional closure and model allocation
+# Structural only: computes pass, block, or bounded-unresolved from the
+# reviewed canonical source. A pass upgrades no claim posture and establishes
+# no delivery, liveness, feasibility, operation, or Gate A closure.
+step "constitutional-closure and model-allocation audit"
+out=$(python3 "$CLOSURE_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "constitutional-closure audit failed" "$out"
 
 # ── 3. no formalism leaks into Parts I-V ─────────────────────────────────────
 step "prose"

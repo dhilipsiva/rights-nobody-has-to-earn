@@ -384,7 +384,40 @@ RECORD_ARRAYS = [
     "routes",
     "external_assumptions",
     "envelope",
-] + DEFERRABLE_ARRAYS
+] + DEFERRABLE_ARRAYS + [
+    "closure_requirement_profiles",
+    "closure_claim_contracts",
+    "model_allocations",
+    "function_allocations",
+    "dependency_loops",
+    "loop_hazard_controls",
+    "bottleneck_dispositions",
+]
+ARRAY_RECORD_TYPES = {
+    "domains": "domain",
+    "legacy_rows": "legacy_row",
+    "claims": "claim",
+    "bodies": "body",
+    "routes": "assurance_route",
+    "external_assumptions": "external_assumption",
+    "envelope": "envelope",
+    "roles": "role",
+    "powers": "power",
+    "dependencies": "dependency",
+    "scenarios": "scenario",
+    "thresholds": "threshold",
+    "defects": "defect",
+    "receipts": "resolution_receipt",
+    "proposals": "proposal",
+    "review_events": "review_event",
+    "closure_requirement_profiles": "closure_requirement_profile",
+    "closure_claim_contracts": "closure_claim_contract",
+    "model_allocations": "model_allocation",
+    "function_allocations": "function_allocation",
+    "dependency_loops": "dependency_loop",
+    "loop_hazard_controls": "loop_hazard_control",
+    "bottleneck_dispositions": "bottleneck_disposition",
+}
 
 ENVELOPE_STUB_ID = "FS-ENV-00"
 
@@ -626,8 +659,8 @@ DOMAIN_BUCKETS = [
 def validate_header(src: dict):
     if src.get("spdx") != "CC-BY-4.0":
         raise LedgerError('reviewed source must declare "spdx": "CC-BY-4.0"')
-    if src.get("schema_version") != 1:
-        raise LedgerError("schema_version must be 1")
+    if type(src.get("schema_version")) is not int or src["schema_version"] != 2:
+        raise LedgerError("schema_version must be the integer 2")
     require_str(src, "title", "header")
     if src.get("status") != EXPECTED_STATUS:
         raise LedgerError(f"status must be {EXPECTED_STATUS}")
@@ -785,6 +818,12 @@ def validate_id_registry(src: dict):
             prefix = rid[:6]
             if prefix not in registry:
                 raise LedgerError(f"{array}: id {rid} uses unregistered prefix")
+            expected_type = ARRAY_RECORD_TYPES[array]
+            if registry[prefix] != expected_type:
+                raise LedgerError(
+                    f"{array}: id {rid} prefix is registered for "
+                    f"{registry[prefix]!r}, not {expected_type!r}"
+                )
             if rid.split("-")[1] in LIVE_SIBLING_PREFIXES:
                 raise LedgerError(
                     f"{array}: id {rid} collides with a live sibling prefix"
@@ -912,6 +951,7 @@ def validate_claims(src: dict, ids: dict, routes_by_id: dict):
                 "claim", "domain_refs", "legacy_row_ref", "class_refs",
                 "posture", "route_ref", "overlay", "scope_bound",
                 "evidence_notes", "public_claim_restriction", "envelope_id",
+                "closure_requirement_refs",
             ],
             ctx,
             optional=["evidence_kind", "mutation_ref",
@@ -941,6 +981,14 @@ def validate_claims(src: dict, ids: dict, routes_by_id: dict):
         for ref in rec["domain_refs"]:
             if ref not in ids or ids[ref] != "domains":
                 raise LedgerError(f"{ctx}: unknown domain {ref}")
+        closure_refs = rec["closure_requirement_refs"]
+        if (not isinstance(closure_refs, list)
+                or len(closure_refs) != len(set(closure_refs))
+                or any(not isinstance(ref, str) or not ref.startswith("FS-CLR-")
+                       for ref in closure_refs)):
+            raise LedgerError(
+                f"{ctx}: closure_requirement_refs must be unique FS-CLR ids"
+            )
         lr = rec["legacy_row_ref"]
         if lr is not None and (lr not in ids or ids[lr] != "legacy_rows"):
             raise LedgerError(f"{ctx}: unknown legacy row {lr}")
@@ -1366,9 +1414,9 @@ def validate_dependencies(src: dict, ids: dict):
     edge, and — at SCC grain — every strongly connected region of the
     declared graph carrying at least one declared, classified, bounded,
     owned loop witness. Boundedness is reviewed prose, never a proven
-    property; rejection of self-certifying, deadlocking, single-veto, or
-    unbounded patterns, with cascade analysis, belongs to the closure-audit
-    item that consumes this population. The grain is one edge per flow kind
+    property. The constitutional-closure audit consumes typed hazard and
+    bottleneck dispositions; an open row remains unresolved and cyclicity
+    alone is never rejected. The grain is one edge per flow kind
     per ordered pair; an absent alternate route is a recorded single point
     of failure, never a silent one."""
     deps = src.get("dependencies", [])
@@ -1394,7 +1442,9 @@ def validate_dependencies(src: dict, ids: dict):
                            "to_ref", "steward_ref", "lifecycle_path",
                            "interim_continuity", "remedy_route",
                            "restoration", "systemic_correction",
-                           "alternate_route", "source_refs"],
+                           "alternate_route", "source_refs",
+                           "structural_satisfiability",
+                           "closure_component_refs"],
             ctx,
         )
         validate_common_record_fields(rec, ctx)
@@ -1459,6 +1509,48 @@ def validate_dependencies(src: dict, ids: dict):
         for key in ("interim_continuity", "remedy_route", "restoration",
                     "systemic_correction"):
             require_str(rec, key, ctx)
+        sat = rec["structural_satisfiability"]
+        exact_keys(sat, ["satisfiability_status", "defect_refs", "reason"],
+                   f"{ctx}.structural_satisfiability")
+        require_str(sat, "reason", f"{ctx}.structural_satisfiability")
+        expected_sat = {
+            "constitutionally-guaranteed": "specified-interface",
+            "democratically-selected": "specified-interface",
+            "operationally-supplied": "operation-deferred",
+            "externally-assumed": "external-contingent",
+        }[cls]
+        sat_disposition = sat["satisfiability_status"]
+        if sat_disposition not in {expected_sat, "unsatisfiable"}:
+            raise LedgerError(
+                f"{ctx}: {cls} requires {expected_sat!r} or an explicit "
+                "unsatisfiable disposition"
+            )
+        defect_refs = sat["defect_refs"]
+        if (not isinstance(defect_refs, list)
+                or len(set(defect_refs)) != len(defect_refs)):
+            raise LedgerError(
+                f"{ctx}: satisfiability defect_refs must be unique"
+            )
+        if sat_disposition == "unsatisfiable" and not defect_refs:
+            raise LedgerError(f"{ctx}: unsatisfiable requires a named defect")
+        if sat_disposition != "unsatisfiable" and defect_refs:
+            raise LedgerError(
+                f"{ctx}: only unsatisfiable may carry defect_refs"
+            )
+        for defect_ref in defect_refs:
+            if ids.get(defect_ref) != "defects":
+                raise LedgerError(
+                    f"{ctx}: satisfiability defect must name an FS-DFT row"
+                )
+        closure_components = rec["closure_component_refs"]
+        if (not isinstance(closure_components, list)
+                or len(closure_components) != len(set(closure_components))
+                or any(not isinstance(ref, str)
+                       or not re.match(r"^FS-CLR-\d+:[a-z0-9-]+$", ref)
+                       for ref in closure_components)):
+            raise LedgerError(
+                f"{ctx}: closure_component_refs must be unique typed tokens"
+            )
         ar = rec["alternate_route"]
         if not isinstance(ar, dict):
             raise LedgerError(f"{ctx}: alternate_route must be an object")
@@ -1500,8 +1592,8 @@ def validate_dependencies(src: dict, ids: dict):
     seen_loops = set()
     loop_nodesets = []
     for i, loop in enumerate(loops):
-        ctx = f"dependency_loops[{i}]"
-        exact_keys(loop, ["loop_kind", "member_edge_refs", "boundedness",
+        ctx = f"dependency_loops[{i}] ({loop.get('id', '?')})"
+        exact_keys(loop, ["id", "loop_kind", "member_edge_refs", "boundedness",
                           "steward_ref", "owner_ref"], ctx)
         if (loop["steward_ref"] not in ids
                 or ids[loop["steward_ref"]] != "bodies"):
@@ -3071,9 +3163,9 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
                      "every record type is populated or classified out; "
                      "material sufficiency stays a review question"))
     rows.append((conds[1], "form-only",
-                 "the projections that exist regenerate — the check itself is "
-                 "the proof — while the assurance "
-                 "allocation and reader ledger do not exist yet"))
+                 "the assurance allocation now regenerates from the canonical source; "
+                 "the reader ledger does not exist in the current withdrawn R6 program, "
+                 "so four-projection closure is not met"))
     if blocking:
         rows.append((conds[2], "unmet",
                      "blocking defect rows exist: " + ", ".join(blocking)))
@@ -3899,6 +3991,11 @@ def _dep_undeclared_cycle(s):
             "dependency_class": "operationally-supplied",
             "layer": "book-2-operation",
             "lifecycle_path": "outside-ratified-paths",
+            "structural_satisfiability": {
+                "satisfiability_status": "operation-deferred",
+                "defect_refs": [],
+                "reason": "synthetic control edge",
+            },
         })
         s["dependencies"].append(twin)
 
@@ -4540,10 +4637,12 @@ def render(src: dict, resolution: dict) -> str:
       "thing: every strongly connected region of the declared graph "
       "carries at least one declared, classified, owner-named loop witness "
       "with a recorded boundedness statement. Boundedness is reviewed "
-      "prose, not a proven property, and the rejection of self-certifying, "
-      "deadlocking, single-veto, or unbounded patterns — with cascade "
-      "analysis — belongs to the closure audit, which consumes this "
-      "population. Alternate routes are predeclared with their doctrine "
+      "prose, not a proven property. The closure audit publishes "
+      "self-certifying, deadlocking, single-veto, unbounded, bottleneck, "
+      "and cascade hazards as bounded-unresolved or scoped blocking; it "
+      "admits no rejected-by-control result until a route-bound executable-"
+      "control receipt schema lands. Alternate routes are predeclared with "
+      "their doctrine "
       "needle or their absence is recorded as a named single point of "
       "failure. Refused flows are walls, not edges: doctrine forbids them, "
       "and drawing one as a dependency would be the defect.")
@@ -4580,7 +4679,8 @@ def render(src: dict, resolution: dict) -> str:
     w("")
     for loop in src["dependency_loops"]:
         chain = " → ".join(loop["member_edge_refs"])
-        w(f"- {loop['loop_kind']} loop (steward {loop['steward_ref']}): "
+        w(f"- `{loop['id']}` {loop['loop_kind']} loop "
+          f"(steward {loop['steward_ref']}): "
           f"{chain} — bounded: {loop['boundedness']}")
     w("")
     w("Refused flows (walls, not edges):")
@@ -4901,10 +5001,10 @@ def render(src: dict, resolution: dict) -> str:
           f"{rec['closure_condition']} |")
     w("")
     w("The coverage-map view, the role matrix, the dependency map, the "
-      "scenario catalogue, and the Book 2 crosswalk are landed generated "
-      "projections of this source; contract cards, the assurance "
-      "allocation, and the reader ledger arrive with their owning stage or "
-      "tracker item, and none may be maintained by hand.")
+      "scenario catalogue, the Book 2 crosswalk, and the assurance allocation "
+      "now regenerate from the canonical source. Contract cards and the reader "
+      "ledger remain with their owning stage or route; no one projection "
+      "substitutes for another.")
     w("")
     w("## Conservative rollup")
     w("")

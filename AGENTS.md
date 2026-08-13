@@ -29,6 +29,7 @@ python3 new-book-plans/14-reader-evidence.py --check --execute
 python3 new-book-plans/reader-evidence-admission-gate.py --self-test
 python3 new-book-plans/15-pilot-reader-artifacts.py --check
 python3 new-book-plans/13-full-society-ledger.py --check
+python3 new-book-plans/16-constitutional-closure.py --check
 python3 registry/check.py
 ```
 
@@ -51,6 +52,16 @@ or holdout-domain step only. Each successor pre-registration binds
 predecessor. These are artifact checks over visible normal first-parent Git
 history only: they neither prove resistance to rewritten Git history nor attest
 to external truth.
+
+Run script 16 after script 13. It computes the claim-scoped constitutional-
+closure and model-allocation projection from the reviewed canonical source and
+checks `constitutional-closure-and-model-allocation-audit.md` plus its watched-
+failing mutations. Its `pass`, `block`, and `bounded-unresolved` results are
+structural artifact results only. A `pass` means that the reviewed structural
+contract for that claim passes the declared audit; it upgrades no claim posture
+and establishes no delivery, liveness, feasibility, operation, or Gate A
+closure. Both quick and full verification run this structural check. Edit the
+reviewed canonical source, never the generated audit.
 
 Run the fixed admission gate's `--self-test` in both quick and full verification.
 That builds and tests one component only; it does not make R6 built or available.

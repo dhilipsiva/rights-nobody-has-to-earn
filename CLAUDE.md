@@ -1645,9 +1645,13 @@ exercised, every external assumption feeding an externally-assumed edge,
 and every strongly connected region of the declared graph carrying at
 least one declared, classified, bounded, owned loop witness — never say
 "every cycle is classified"; the witness is regional, boundedness is
-reviewed prose, and per-pattern rejection (self-certifying, deadlocking,
-single-veto, unbounded, cascade analysis) belongs to the closure audit
-that consumes this population. The declared loops chain-check into real
+reviewed prose. The constitutional-closure audit now consumes those witnesses
+and keeps self-certifying, deadlocking, single-veto, unbounded, bottleneck,
+and cascade risks `bounded-unresolved` unless an eligible scoped blocking
+defect makes them `block`; it admits no `rejected-by-control` state until a
+route-bound executable-control receipt schema lands, and never treats
+cyclicity alone as failure. The declared loops chain-check
+into real
 cycles (fiscal, electoral, service, ecological, audit, emergency, federal,
 intelligence oversight). The settlement-backbone failure scenario row
 landed author-approved (2026-08-09) as an FS-SCN stress record, and
@@ -1694,6 +1698,21 @@ FS-SCN-22 carries the single-deprivation claim scoped to the current
 source; the protective-rule-family landing's prose re-audit should sweep
 it beside its four named sites. No scenario record creates a predicate,
 rule, remedy, or claim.
+
+**The constitutional-closure and model-allocation audit is enacted
+(2026-08-13).** `new-book-plans/16-constitutional-closure.py` consumes the
+reviewed full-society source after script 13 validates it, generates
+`new-book-plans/constitutional-closure-and-model-allocation-audit.md`, and
+checks the projection and its watched-failing mutations in both quick and full
+`verify.sh`. It computes each claim's `pass`, `block`, or
+`bounded-unresolved` result by joining the claim to its assurance/model route,
+closure contracts, affected defects, generated claim-relative resolution, and
+eligible receipts; it refuses route substitution and undisposed structural
+gaps. The ceiling is structural and artifact-bound: `pass` means only that the
+reviewed structural contract passes this audit. It upgrades no claim posture
+and establishes no delivery, liveness, feasibility, operation, or Gate A
+closure. The audit may therefore be complete while claims remain blocked or
+bounded-unresolved and while Gate A remains not passed.
 
 **Stage 4's machinery is enacted (2026-08-09); the review and the closure
 remain author checkpoints.** Proposal and review-event schemas stand validated
