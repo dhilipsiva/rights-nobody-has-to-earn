@@ -280,8 +280,10 @@ audit supplies the assurance-allocation projection and truthfully emits
 claim-scoped `block` or `bounded-unresolved` results; it does not pass Gate A.
 The structural envelope and functional meanings landed at `dccea62`; the
 `950d1a0` ownership clarification moves every remaining value and calibration
-task solely to `book-2/TODO.md`. The ledger item integrates the remaining
-populations and closes Gate A last.
+task solely to `book-2/TODO.md`. Content commit `ab814fc` adds the structural
+reader projection and corrects Gate A's condition-one and condition-three
+computations without weakening any later-gate claim blocker. The ledger item
+integrates the remaining power population and closes Gate A last.
 
 - [ ] **Complete the full-society domain-and-layer ledger.**
   - The canonical source, generator, defect ledger and receipts, coverage-map
@@ -296,23 +298,30 @@ populations and closes Gate A last.
     (FS-ROL, 579f8b1), dependency records (FS-DEP, 4beaa58), and
     scenario records (FS-SCN, ad58f74) are landed with their deferrals
     removed; FS-POW contract cards land through the phase-2
-    coverage-rows item and remove the last stage-3 deferral. Standing
-    maintenance rides along: the two live-read closures (enum mapping,
+    coverage-rows item and remove the sole remaining condition-one deferral.
+    Proposals and review events remain truthful stage-4 deferrals owned only
+    by condition five; counting those review outputs before the review would
+    make commissioning circular. Standing maintenance rides along: the two
+    live-read closures (enum mapping,
     residual-coverage citation), receipts, and generated resolution must stay
     green as sibling sources change, and `verify.sh` enforces that.
-  - **Projections (condition two).** The role matrix, dependency map, and
-    assurance allocation have landed and regenerate; the reader ledger remains
-    absent because the reader-evidence route is withdrawn for the current
-    program. The generator therefore keeps the readiness status `form-only`.
-    If all four projections later exist and regenerate, replace that hardcoded
-    status with a computed one — a deliberate code change reserved for that
-    moment.
-  - **Blocking defect rows (condition three).** FS-DFT-16 and FS-DFT-17 close
-    when the accessibility-neutral delivery and receipt rule families land,
-    with the pinned-case rebalance sequenced after; FS-DFT-28 additionally
-    needs external operational assurance to become admissible. This is
-    rule-family work owned by its own items, not ledger bookkeeping, and
-    disclosure alone does not cure it.
+  - **Projections (condition two).** The role matrix, dependency map,
+    assurance allocation, and structural reader ledger have landed and
+    regenerate from the canonical source. The reader projection binds every
+    canonical population but supplies no R6 evidence, comprehension result,
+    accessibility validation, reader-suitability claim, Gate C evidence, or
+    route availability. Readiness now computes `met-in-form`; no projection
+    substitutes for another.
+  - **Later-gate defect rows (not Gate A condition three).** The reviewed
+    gate-applicability contract keeps Gate A relative to its map-and-test-
+    program claim while preserving every claim-level block. FS-DFT-16
+    closes when the accessibility-neutral delivery and receipt rule families
+    land, with the pinned-case rebalance sequenced after. FS-DFT-17 additionally
+    requires admissible operational evidence that a floor item actually
+    arrived. FS-DFT-28 requires the record rule families plus external
+    operational assurance. This is rule-family and evidence work owned by its
+    own items, not ledger bookkeeping, and disclosure alone does not cure it.
+    They remain visible blockers at their applicable later gates.
   - **[AUTHOR-GATED] Commission and run the independent scope review
     (condition five).** In the confirmed protocol's own order: name the
     reviewers — real people under its selection criteria; the designation
@@ -325,11 +334,12 @@ populations and closes Gate A last.
     Run it against the completed map: the review binds a source version, and
     spending it on a map with open deferrals wastes the plant.
   - **[AUTHOR-GATED] Close Gate A with the closure record.** Deliberately
-    unreachable today by two refusals — the calibrated-envelope requirement
-    and the pinned not-passed gate status — so closing is its own ratified
-    contract amendment binding the gate, permitted claim, source version,
-    envelope, candidates, review cutoff, the independent event, assurance
-    records, residuals, claim limits, and the author's ratification.
+    unreachable today while the FS-POW population is deferred, condition five
+    has no independent event, and the gate status is pinned not-passed. Closing
+    is its own ratified contract amendment binding the gate, permitted claim,
+    source version, versioned-structure envelope, candidates, review cutoff,
+    the independent event, assurance records, residuals, claim limits, and the
+    author's ratification. Calibration remains Book 2 Gate D work.
   - **Done when:** every projection regenerates from the canonical source and an
     independent scope review can name no material omitted domain, role,
     dependency, or failure without the ledger adding it, classifying it out with
