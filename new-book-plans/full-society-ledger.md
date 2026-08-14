@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-public-safety-defence-emergency-and-external-power`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-current-formal-constitution`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -36,7 +36,7 @@ A version may close only when all of the following hold for the gate's permitted
 
 Per-condition status, generated from the source and echoing the closure conditions above by index; no aggregate is derived from this list, and a closure record is refused while any row computes unmet. Closing Gate A is a deliberate future amendment with its own author ratification, never a latent flip.
 
-- **unmet** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: record types remain deferred with owners: powers
+- **met-in-form** — every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source: every record type is populated or classified out; material sufficiency stays a review question
 - **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
 - **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
@@ -308,9 +308,9 @@ Deliberately omitted candidates and combinations (recorded, not silent):
 
 ## Source-derived power contracts and function allocations
 
-Population status: **partial**. Completed source-family prefix: state-form-and-political-membership, time-model, substantive-equality-and-anti-subordination, economic-pluralism-and-protected-private-sphere, family-dependency-reproduction-and-collective-plurality, ecological-commons-and-non-human-animal, public-safety-defence-emergency-and-external-power.
+Population status: **complete**. Completed source-family prefix: state-form-and-political-membership, time-model, substantive-equality-and-anti-subordination, economic-pluralism-and-protected-private-sphere, family-dependency-reproduction-and-collective-plurality, ecological-commons-and-non-human-animal, public-safety-defence-emergency-and-external-power, current-formal-constitution.
 
-Current rows: 209 FS-POW cards; 1 FS-PCT templates; 19 FS-PRF refusals/limits; 0 FS-PCD formal dispositions; 209 FS-FAL allocations.
+Current rows: 210 FS-POW cards; 1 FS-PCT templates; 19 FS-PRF refusals/limits; 8 FS-PCD formal dispositions; 210 FS-FAL allocations.
 
 Evidence ceiling: Structural source-bound contract and allocation inventory only; no operation, delivery, feasibility, liveness, external truth, calibration, or Gate A passage follows.
 
@@ -478,7 +478,7 @@ Evidence ceiling: Structural source-bound contract and allocation inventory only
 | FS-POW-160 Public protection and policing mandate | `protect-policing-mandate` | ordinary-public-power, coercive-protective | FS-BOD-10 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-161 Independent charging decision | `protect-prosecution-mandate` | ordinary-public-power, coercive-protective | FS-BOD-11 | FS-ROL-27 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-162 Criminal adjudication | `protect-adjudication-mandate` | ordinary-public-power, coercive-protective | FS-BOD-10 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
-| FS-POW-163 Custodial execution mandate | `protect-custodial-execution-mandate` | ordinary-public-power, coercive-protective | FS-BOD-10 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-163 Custodial execution mandate | `protect-custodial-execution-mandate` | ordinary-public-power, coercive-protective | FS-BOD-35 | FS-ROL-56 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-164 External-defence mandate | `protect-defence-mandate` | ordinary-public-power, coercive-protective | FS-BOD-10 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-165 Security-intelligence collection mandate | `protect-intelligence-mandate` | ordinary-public-power, coercive-protective, consequential-record | FS-BOD-13 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-166 Ordinary noncoercive policing act | `protect-noncoercive-policing` | ordinary-public-power, coercive-protective | FS-BOD-10 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
@@ -525,6 +525,7 @@ Evidence ceiling: Structural source-bound contract and allocation inventory only
 | FS-POW-207 Former-resident return | `border-former-resident-return` | ordinary-public-power, coercive-protective | FS-BOD-16 | FS-ROL-27 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-208 Emergency substitute review | `emergency-substitute-reviewer` | ordinary-public-power, emergency | FS-BOD-37 | FS-ROL-58 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-209 External sanctions measure | `external-sanctions-measure` | ordinary-public-power | FS-BOD-10 | FS-ROL-28 | FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-210 Case-bound current Court custody authority | `formal-active-custody` | ordinary-public-power, coercive-protective | FS-BOD-17 | FS-ROL-27 | FS-CLM-11, FS-CLM-17 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 
 Contract templates:
 
@@ -551,6 +552,14 @@ Refusals and formal transitions:
 - `FS-PRF-017` / `limit-no-treaty-rights-lowering`: A substantive supremacy limit; current machinery does not semantically verify treaty text or concealed lowering effects. Non-authorisation: This row authorises no body or role and receives no FS-FAL allocation.
 - `FS-PRF-018` / `limit-no-military-secession-instrument`: A categorical mandate boundary: only legal invalidity, imminent-life-threat policing, and negotiation remain available. Non-authorisation: This row authorises no body or role and receives no FS-FAL allocation.
 - `FS-PRF-019` / `limit-no-general-emergency-security-power`: An express competence boundary preventing enumerated families from collapsing into residual authority. Non-authorisation: This row authorises no body or role and receives no FS-FAL allocation.
+- `FS-PCD-01` / `formal-electorate-seating-authority`: `replace` → FS-POW-010.
+- `FS-PCD-02` / `formal-public-body-authority`: `replace` → FS-POW-001, FS-POW-002, FS-POW-003, FS-POW-004, FS-POW-005, FS-POW-006, FS-POW-007, FS-POW-008, FS-POW-009, FS-POW-010, FS-POW-011, FS-POW-012, FS-POW-013, FS-POW-014, FS-POW-015, FS-POW-016, FS-POW-017, FS-POW-018, FS-POW-019, FS-POW-020, FS-POW-021, FS-POW-022, FS-POW-023, FS-POW-024, FS-POW-025, FS-POW-026, FS-POW-027, FS-POW-028, FS-POW-029, FS-POW-030, FS-POW-031, FS-POW-032, FS-POW-033, FS-POW-034, FS-POW-035, FS-POW-036, FS-POW-037, FS-POW-038, FS-POW-039, FS-POW-040, FS-POW-041, FS-POW-042, FS-POW-043, FS-POW-044, FS-POW-045, FS-POW-046, FS-POW-047, FS-POW-048, FS-POW-049, FS-POW-050, FS-POW-051, FS-POW-052, FS-POW-053, FS-POW-054, FS-POW-055, FS-POW-056, FS-POW-057, FS-POW-058, FS-POW-059, FS-POW-060, FS-POW-061, FS-POW-062, FS-POW-063, FS-POW-064, FS-POW-065, FS-POW-066, FS-POW-067, FS-POW-068, FS-POW-069, FS-POW-070, FS-POW-071, FS-POW-072, FS-POW-073, FS-POW-074, FS-POW-075, FS-POW-076, FS-POW-077, FS-POW-078, FS-POW-079, FS-POW-080, FS-POW-081, FS-POW-082, FS-POW-083, FS-POW-084, FS-POW-085, FS-POW-086, FS-POW-087, FS-POW-088, FS-POW-089, FS-POW-090, FS-POW-091, FS-POW-092, FS-POW-093, FS-POW-094, FS-POW-095, FS-POW-096, FS-POW-097, FS-POW-098, FS-POW-099, FS-POW-100, FS-POW-101, FS-POW-102, FS-POW-103, FS-POW-104, FS-POW-105, FS-POW-106, FS-POW-107, FS-POW-108, FS-POW-109, FS-POW-110, FS-POW-111, FS-POW-112, FS-POW-113, FS-POW-114, FS-POW-115, FS-POW-116, FS-POW-117, FS-POW-118, FS-POW-119, FS-POW-120, FS-POW-121, FS-POW-122, FS-POW-123, FS-POW-124, FS-POW-125, FS-POW-126, FS-POW-127, FS-POW-128, FS-POW-129, FS-POW-130, FS-POW-131, FS-POW-132, FS-POW-133, FS-POW-134, FS-POW-135, FS-POW-136, FS-POW-137, FS-POW-138, FS-POW-139, FS-POW-140, FS-POW-141, FS-POW-142, FS-POW-143, FS-POW-144, FS-POW-145, FS-POW-146, FS-POW-147, FS-POW-148, FS-POW-149, FS-POW-150, FS-POW-151, FS-POW-152, FS-POW-153, FS-POW-154, FS-POW-155, FS-POW-156, FS-POW-157, FS-POW-158, FS-POW-159, FS-POW-160, FS-POW-161, FS-POW-162, FS-POW-163, FS-POW-164, FS-POW-165, FS-POW-166, FS-POW-167, FS-POW-168, FS-POW-169, FS-POW-170, FS-POW-171, FS-POW-172, FS-POW-173, FS-POW-174, FS-POW-175, FS-POW-176, FS-POW-177, FS-POW-178, FS-POW-179, FS-POW-180, FS-POW-181, FS-POW-182, FS-POW-183, FS-POW-184, FS-POW-185, FS-POW-186, FS-POW-187, FS-POW-188, FS-POW-189, FS-POW-190, FS-POW-191, FS-POW-192, FS-POW-193, FS-POW-194, FS-POW-195, FS-POW-196, FS-POW-197, FS-POW-198, FS-POW-199, FS-POW-200, FS-POW-201, FS-POW-202, FS-POW-203, FS-POW-204, FS-POW-205, FS-POW-206, FS-POW-207, FS-POW-208, FS-POW-209, FS-POW-210.
+- `FS-PCD-03` / `formal-review-credential`: `retire` → no successor.
+- `FS-PCD-04` / `formal-tribunal-credential`: `retire` → no successor.
+- `FS-PCD-05` / `formal-appeals-expungement`: `retire` → no successor.
+- `FS-PCD-06` / `formal-appeals-relief`: `replace` → FS-POW-022.
+- `FS-PCD-07` / `formal-active-custody`: `retain` → FS-POW-210.
+- `FS-PCD-08` / `formal-amendment-label-result`: `retire` → no successor.
 
 Function allocations (body functions; role references identify the corresponding position classes, not proof of staffing or independence):
 
@@ -763,6 +772,7 @@ Function allocations (body functions; role references identify the corresponding
 - `FS-FAL-207` → `FS-POW-207`; writer FS-BOD-14; decider FS-BOD-16; executor FS-BOD-38; auditor FS-BOD-19; final remedy FS-BOD-18.
 - `FS-FAL-208` → `FS-POW-208`; writer FS-BOD-14; decider FS-BOD-37; executor FS-BOD-37; auditor FS-BOD-19; final remedy FS-BOD-18.
 - `FS-FAL-209` → `FS-POW-209`; writer FS-BOD-14; decider FS-BOD-10; executor FS-BOD-10; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-210` → `FS-POW-210`; writer FS-BOD-19; decider FS-BOD-17; executor FS-BOD-17; auditor FS-BOD-15; final remedy FS-BOD-18.
 
 ## Functional flows and cross-domain dependencies
 
@@ -1737,12 +1747,12 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 | FS-POW-207 | Former-resident return | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad former-resident return effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 | FS-POW-208 | Emergency substitute review | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad emergency substitute review effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 | FS-POW-209 | External sanctions measure | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad external sanctions measure effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-210 | Case-bound current Court custody authority | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad case-bound current court custody authority effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 
 ## Deferred populations and projections
 
 | Record type | Stage | Owner | Closure condition |
 | --- | --- | --- | --- |
-| powers | stage-3 | `TODO.md::Maintain completed constitutional coverage rows` | complete per-instrument FS-POW contract cards, lawful body and role allocations, and power-bound decider, executor, auditor, and final-remedy separation rows for every card-required and retained formal entry |
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 | review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under the hash-committed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md), its plant and seed digests pre-registered in this source at commissioning, with named reviewers and passed seeded and planted-omission controls |
 

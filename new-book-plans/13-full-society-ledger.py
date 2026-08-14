@@ -284,7 +284,7 @@ POWER_SOURCE_BINDING = {
         "existing-formal-crosswalk": 8,
         "explicit-refusal-limit": 19,
     },
-    "power_population_status": "deferred-contract-cards-bodies-and-allocations",
+    "power_population_status": "complete-source-derived-contract-cards-and-allocations",
     "known_allocation_gaps": [
         "appointments-qualification function and its nominee, selector, and qualification positions",
         "custodial execution function distinct from policing",
@@ -4200,17 +4200,27 @@ def negative_controls(src: dict) -> int:
     control("resolved power-allocation gaps are append-only and exact",
             lambda s: s["power_population"][
                 "resolved_allocation_gaps"].pop())
-    control("power population cannot claim complete early",
-            lambda s: s["power_population"].update({"status": "complete"}))
-    control("powers deferral cannot disappear during a partial prefix",
-            lambda s: s["deferred_populations"].remove(next(
-                row for row in s["deferred_populations"]
-                if row["record_type"] == "powers")))
-    control("powers deferral closure is exact",
-            lambda s: next(
-                row for row in s["deferred_populations"]
-                if row["record_type"] == "powers"
-            ).update({"closure_condition": "cards later"}))
+    if src["power_population"]["status"] != "complete":
+        control("power population cannot claim complete early",
+                lambda s: s["power_population"].update({"status": "complete"}))
+        control("powers deferral cannot disappear during a partial prefix",
+                lambda s: s["deferred_populations"].remove(next(
+                    row for row in s["deferred_populations"]
+                    if row["record_type"] == "powers")))
+        control("powers deferral closure is exact",
+                lambda s: next(
+                    row for row in s["deferred_populations"]
+                    if row["record_type"] == "powers"
+                ).update({"closure_condition": "cards later"}))
+    else:
+        control("complete power population cannot regain its deferral",
+                lambda s: s["deferred_populations"].append({
+                    "record_type": "powers",
+                    "owner_ref": POWER_SOURCE_BINDING["owner_ref"],
+                    "closure_condition": POWER_SOURCE_BINDING[
+                        "closure_condition"],
+                    "stage": "stage-3",
+                }))
     if src["powers"]:
         control("a power grain cannot be bundled or duplicated",
                 lambda s: s["powers"][0].update(
@@ -4349,8 +4359,15 @@ def negative_controls(src: dict) -> int:
                 {"legacy_gap": s["legacy_rows"][0]["legacy_gap"] +
                  " ## 3. Current coverage versus target scope"}),
             "exactly once")
-    control("a closure record cannot exist while conditions compute unmet",
-            _closure_while_unmet, "may not exist while")
+    if src["power_population"]["status"] == "complete":
+        control(
+            "a closure record cannot bypass the deliberate acceptance amendment",
+            _closure_while_unmet,
+            "requires gate_a_status passed",
+        )
+    else:
+        control("a closure record cannot exist while conditions compute unmet",
+                _closure_while_unmet, "may not exist while")
     control("a closure record may not cite the envelope stub",
             _closure_env_stub, "never assure")
     control("a closure record requires an independent review event",

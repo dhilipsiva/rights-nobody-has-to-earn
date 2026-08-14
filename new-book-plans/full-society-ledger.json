@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-14-power-public-safety-defence-emergency-and-external-power",
+  "source_version": "fs-ledger-2026-08-14-power-current-formal-constitution",
   "bound_sources_sha256": {
     "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
     "full_society_boundary": "00273fa9ac211d3b7bffce5f37625832652e9750e81dce301844ab8a9149a3fd"
@@ -4039,7 +4039,7 @@
       "existing-formal-crosswalk": 8,
       "explicit-refusal-limit": 19
     },
-    "power_population_status": "deferred-contract-cards-bodies-and-allocations",
+    "power_population_status": "complete-source-derived-contract-cards-and-allocations",
     "known_allocation_gaps": [
       "appointments-qualification function and its nominee, selector, and qualification positions",
       "custodial execution function distinct from policing",
@@ -4054,7 +4054,7 @@
     "scope_ceiling": "Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage. The cross-power temporal template creates no holder, power, or function allocation."
   },
   "power_population": {
-    "status": "partial",
+    "status": "complete",
     "completed_source_families": [
       "state-form-and-political-membership",
       "time-model",
@@ -4062,7 +4062,8 @@
       "economic-pluralism-and-protected-private-sphere",
       "family-dependency-reproduction-and-collective-plurality",
       "ecological-commons-and-non-human-animal",
-      "public-safety-defence-emergency-and-external-power"
+      "public-safety-defence-emergency-and-external-power",
+      "current-formal-constitution"
     ],
     "expected_final_counts": {
       "powers": 210,
@@ -24038,10 +24039,10 @@
         "FS-CLM-32"
       ],
       "holder_body_refs": [
-        "FS-BOD-10"
+        "FS-BOD-35"
       ],
       "holder_role_refs": [
-        "FS-ROL-28"
+        "FS-ROL-56"
       ],
       "affected_role_refs": [
         "FS-ROL-01",
@@ -24071,7 +24072,9 @@
       "overlay": "safety",
       "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
       "structural_wall_refs": [],
-      "related_power_refs": [],
+      "related_power_refs": [
+        "FS-POW-210"
+      ],
       "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
       "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
       "contract": {
@@ -30464,6 +30467,130 @@
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 17. Treaties, external trade, sanctions, and no evasion"
       ]
+    },
+    {
+      "id": "FS-POW-210",
+      "title": "Case-bound current Court custody authority",
+      "applicability": "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+      "layer": "constitutional-invariant",
+      "status": "implemented-narrow-derived",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad case-bound current court custody authority effect",
+      "owner_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "formal-active-custody",
+      "source_family": "current-formal-constitution",
+      "posture": "Derived",
+      "evidence_kind": "executable",
+      "profiles": [
+        "ordinary-public-power",
+        "coercive-protective"
+      ],
+      "domain_refs": [
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-11",
+        "FS-CLM-17"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-17"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-37",
+        "FS-ROL-38"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-40",
+        "FS-ROL-56"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [
+        "FS-POW-163"
+      ],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>",
+        "trigger": "Only the source-specific trigger for Case-bound current Court custody authority; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ],
+          [
+            "decisive-fact-writer",
+            "executor"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "democratic_source": "democratic source is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "trigger": "trigger is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "evidence": "evidence is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "scope": "scope is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "review": "review is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "appeal": "appeal is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "end_condition": "end condition is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "temporal_status": "temporal status is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power."
+        },
+        "coercive-protective": {
+          "named_instrument": "named instrument is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "authorised_actor_and_mandate": "authorised actor and mandate is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "individualised_recorded_ground": "individualised recorded ground is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "identification_and_reasons": "identification and reasons is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "prior_authorisation_and_immediate_danger_exception": "prior authorisation and immediate danger exception is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "necessity_least_harm_warning_cessation_aid": "necessity least harm warning cessation aid is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "public_actor_burden": "public actor burden is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "capability_removal_and_no_reader": "capability removal and no reader is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "upstream_personhood_and_floor_refusals": "upstream personhood and floor refusals is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "counsel_interpreter_accommodation": "counsel interpreter accommodation is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "third_party_notification": "third party notification is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "prompt_automatic_review": "prompt automatic review is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "investigator_deployer_separation": "investigator deployer separation is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "non_punitive_and_no_consequential_feed": "non punitive and no consequential feed is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "shelter_and_recorded_voice": "shelter and recorded voice is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "record_contract": "record contract is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "failure_polarity": "failure polarity is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "remedy": "remedy is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "audit": "audit is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "source_bound_temporal_contract": "source bound temporal contract is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+      ]
     }
   ],
   "power_contract_templates": [
@@ -31388,7 +31515,393 @@
       ]
     }
   ],
-  "power_crosswalk_dispositions": [],
+  "power_crosswalk_dispositions": [
+    {
+      "id": "FS-PCD-01",
+      "title": "Electorate-seated authority fixture",
+      "applicability": "One exact current derivation of exposable authority from an asserted Electorate seating fact; not a complete appointment or office contract.",
+      "layer": "constitutional-invariant",
+      "status": "replaced-by-typed-source-derived-powers",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-electorate-seating-authority",
+      "crosswalk_action": "replace",
+      "target_power_refs": [
+        "FS-POW-010"
+      ],
+      "current_effect": "One exact current derivation of exposable authority from an asserted Electorate seating fact; not a complete appointment or office contract.",
+      "retired_residual_effect": "No residual effect exists beyond the exact typed target power or powers.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $o: choose(Electorate, $o) -> authority($o)."
+      ]
+    },
+    {
+      "id": "FS-PCD-02",
+      "title": "Named-public-body authority fixture",
+      "applicability": "One exact current derivation of exposable authority from a named public-body fact; not operational independence.",
+      "layer": "constitutional-invariant",
+      "status": "replaced-by-typed-source-derived-powers",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-public-body-authority",
+      "crosswalk_action": "replace",
+      "target_power_refs": [
+        "FS-POW-001",
+        "FS-POW-002",
+        "FS-POW-003",
+        "FS-POW-004",
+        "FS-POW-005",
+        "FS-POW-006",
+        "FS-POW-007",
+        "FS-POW-008",
+        "FS-POW-009",
+        "FS-POW-010",
+        "FS-POW-011",
+        "FS-POW-012",
+        "FS-POW-013",
+        "FS-POW-014",
+        "FS-POW-015",
+        "FS-POW-016",
+        "FS-POW-017",
+        "FS-POW-018",
+        "FS-POW-019",
+        "FS-POW-020",
+        "FS-POW-021",
+        "FS-POW-022",
+        "FS-POW-023",
+        "FS-POW-024",
+        "FS-POW-025",
+        "FS-POW-026",
+        "FS-POW-027",
+        "FS-POW-028",
+        "FS-POW-029",
+        "FS-POW-030",
+        "FS-POW-031",
+        "FS-POW-032",
+        "FS-POW-033",
+        "FS-POW-034",
+        "FS-POW-035",
+        "FS-POW-036",
+        "FS-POW-037",
+        "FS-POW-038",
+        "FS-POW-039",
+        "FS-POW-040",
+        "FS-POW-041",
+        "FS-POW-042",
+        "FS-POW-043",
+        "FS-POW-044",
+        "FS-POW-045",
+        "FS-POW-046",
+        "FS-POW-047",
+        "FS-POW-048",
+        "FS-POW-049",
+        "FS-POW-050",
+        "FS-POW-051",
+        "FS-POW-052",
+        "FS-POW-053",
+        "FS-POW-054",
+        "FS-POW-055",
+        "FS-POW-056",
+        "FS-POW-057",
+        "FS-POW-058",
+        "FS-POW-059",
+        "FS-POW-060",
+        "FS-POW-061",
+        "FS-POW-062",
+        "FS-POW-063",
+        "FS-POW-064",
+        "FS-POW-065",
+        "FS-POW-066",
+        "FS-POW-067",
+        "FS-POW-068",
+        "FS-POW-069",
+        "FS-POW-070",
+        "FS-POW-071",
+        "FS-POW-072",
+        "FS-POW-073",
+        "FS-POW-074",
+        "FS-POW-075",
+        "FS-POW-076",
+        "FS-POW-077",
+        "FS-POW-078",
+        "FS-POW-079",
+        "FS-POW-080",
+        "FS-POW-081",
+        "FS-POW-082",
+        "FS-POW-083",
+        "FS-POW-084",
+        "FS-POW-085",
+        "FS-POW-086",
+        "FS-POW-087",
+        "FS-POW-088",
+        "FS-POW-089",
+        "FS-POW-090",
+        "FS-POW-091",
+        "FS-POW-092",
+        "FS-POW-093",
+        "FS-POW-094",
+        "FS-POW-095",
+        "FS-POW-096",
+        "FS-POW-097",
+        "FS-POW-098",
+        "FS-POW-099",
+        "FS-POW-100",
+        "FS-POW-101",
+        "FS-POW-102",
+        "FS-POW-103",
+        "FS-POW-104",
+        "FS-POW-105",
+        "FS-POW-106",
+        "FS-POW-107",
+        "FS-POW-108",
+        "FS-POW-109",
+        "FS-POW-110",
+        "FS-POW-111",
+        "FS-POW-112",
+        "FS-POW-113",
+        "FS-POW-114",
+        "FS-POW-115",
+        "FS-POW-116",
+        "FS-POW-117",
+        "FS-POW-118",
+        "FS-POW-119",
+        "FS-POW-120",
+        "FS-POW-121",
+        "FS-POW-122",
+        "FS-POW-123",
+        "FS-POW-124",
+        "FS-POW-125",
+        "FS-POW-126",
+        "FS-POW-127",
+        "FS-POW-128",
+        "FS-POW-129",
+        "FS-POW-130",
+        "FS-POW-131",
+        "FS-POW-132",
+        "FS-POW-133",
+        "FS-POW-134",
+        "FS-POW-135",
+        "FS-POW-136",
+        "FS-POW-137",
+        "FS-POW-138",
+        "FS-POW-139",
+        "FS-POW-140",
+        "FS-POW-141",
+        "FS-POW-142",
+        "FS-POW-143",
+        "FS-POW-144",
+        "FS-POW-145",
+        "FS-POW-146",
+        "FS-POW-147",
+        "FS-POW-148",
+        "FS-POW-149",
+        "FS-POW-150",
+        "FS-POW-151",
+        "FS-POW-152",
+        "FS-POW-153",
+        "FS-POW-154",
+        "FS-POW-155",
+        "FS-POW-156",
+        "FS-POW-157",
+        "FS-POW-158",
+        "FS-POW-159",
+        "FS-POW-160",
+        "FS-POW-161",
+        "FS-POW-162",
+        "FS-POW-163",
+        "FS-POW-164",
+        "FS-POW-165",
+        "FS-POW-166",
+        "FS-POW-167",
+        "FS-POW-168",
+        "FS-POW-169",
+        "FS-POW-170",
+        "FS-POW-171",
+        "FS-POW-172",
+        "FS-POW-173",
+        "FS-POW-174",
+        "FS-POW-175",
+        "FS-POW-176",
+        "FS-POW-177",
+        "FS-POW-178",
+        "FS-POW-179",
+        "FS-POW-180",
+        "FS-POW-181",
+        "FS-POW-182",
+        "FS-POW-183",
+        "FS-POW-184",
+        "FS-POW-185",
+        "FS-POW-186",
+        "FS-POW-187",
+        "FS-POW-188",
+        "FS-POW-189",
+        "FS-POW-190",
+        "FS-POW-191",
+        "FS-POW-192",
+        "FS-POW-193",
+        "FS-POW-194",
+        "FS-POW-195",
+        "FS-POW-196",
+        "FS-POW-197",
+        "FS-POW-198",
+        "FS-POW-199",
+        "FS-POW-200",
+        "FS-POW-201",
+        "FS-POW-202",
+        "FS-POW-203",
+        "FS-POW-204",
+        "FS-POW-205",
+        "FS-POW-206",
+        "FS-POW-207",
+        "FS-POW-208",
+        "FS-POW-209",
+        "FS-POW-210"
+      ],
+      "current_effect": "One exact current derivation of exposable authority from a named public-body fact; not operational independence.",
+      "retired_residual_effect": "No residual effect exists beyond the exact typed target power or powers.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $o: public($o) -> authority($o)."
+      ]
+    },
+    {
+      "id": "FS-PCD-03",
+      "title": "Electorate-issued Review credential fixture",
+      "applicability": "One exact current Review credential route with carried-status and recall guards.",
+      "layer": "constitutional-invariant",
+      "status": "retired-no-equivalent-successor",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-review-credential",
+      "crosswalk_action": "retire",
+      "target_power_refs": [],
+      "current_effect": "One exact current Review credential route with carried-status and recall guards.",
+      "retired_residual_effect": "No residual authority survives retirement; a future equivalent requires a new ratified source and census row.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $a: choose(Electorate, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Review, $a)."
+      ]
+    },
+    {
+      "id": "FS-PCD-04",
+      "title": "Convocation-issued Tribunal credential fixture",
+      "applicability": "One exact current second-issuer credential route; it does not authenticate either seating source.",
+      "layer": "constitutional-invariant",
+      "status": "retired-no-equivalent-successor",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-tribunal-credential",
+      "crosswalk_action": "retire",
+      "target_power_refs": [],
+      "current_effect": "One exact current second-issuer credential route; it does not authenticate either seating source.",
+      "retired_residual_effect": "No residual authority survives retirement; a future equivalent requires a new ratified source and census row.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $a: choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a)."
+      ]
+    },
+    {
+      "id": "FS-PCD-05",
+      "title": "Appeals forgiveness fixture",
+      "applicability": "One exact current two-fact expungement mark; no case, purpose, writer, or adjudication lineage.",
+      "layer": "constitutional-invariant",
+      "status": "retired-no-equivalent-successor",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-appeals-expungement",
+      "crosswalk_action": "retire",
+      "target_power_refs": [],
+      "current_effect": "One exact current two-fact expungement mark; no case, purpose, writer, or adjudication lineage.",
+      "retired_residual_effect": "No residual authority survives retirement; a future equivalent requires a new ratified source and census row.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $x: forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x)."
+      ]
+    },
+    {
+      "id": "FS-PCD-06",
+      "title": "Per-case appellate relief fixture",
+      "applicability": "One exact current relief conjunction; generic judgment reuse remains a disclosed limit.",
+      "layer": "constitutional-invariant",
+      "status": "replaced-by-typed-source-derived-powers",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-appeals-relief",
+      "crosswalk_action": "replace",
+      "target_power_refs": [
+        "FS-POW-022"
+      ],
+      "current_effect": "One exact current relief conjunction; generic judgment reuse remains a disclosed limit.",
+      "retired_residual_effect": "No residual effect exists beyond the exact typed target power or powers.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x)."
+      ]
+    },
+    {
+      "id": "FS-PCD-07",
+      "title": "Case-bound current Court custody authority",
+      "applicability": "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+      "layer": "constitutional-invariant",
+      "status": "retained-narrow-current-formal",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-active-custody",
+      "crosswalk_action": "retain",
+      "target_power_refs": [
+        "FS-POW-210"
+      ],
+      "current_effect": "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+      "retired_residual_effect": "No residual effect exists beyond the exact typed target power or powers.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+      ]
+    },
+    {
+      "id": "FS-PCD-08",
+      "title": "Current amendment label verdict fixture",
+      "applicability": "A current label verdict over asserted proposal and outcome facts; it neither authenticates nor enacts a source transition.",
+      "layer": "constitutional-invariant",
+      "status": "retired-no-equivalent-successor",
+      "severity": "critical",
+      "consequence": "a narrow current fixture could be widened, silently preserved, or falsely treated as a complete power",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the checker-owned action and targets remain exact and create no broader authority",
+      "manifest_key": "formal-amendment-label-result",
+      "crosswalk_action": "retire",
+      "target_power_refs": [],
+      "current_effect": "A current label verdict over asserted proposal and outcome facts; it neither authenticates nor enacts a source transition.",
+      "retired_residual_effect": "No residual authority survives retirement; a future equivalent requires a new ratified source and census row.",
+      "non_extension": "The current fixture cannot authenticate, enact, operate, or generalise any authority beyond the exact target contracts.",
+      "transition_owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "source_refs": [
+        "new-book-plans/constitution.nibli::all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)."
+      ]
+    }
+  ],
   "dependencies": [
     {
       "id": "FS-DEP-01",
@@ -36053,12 +36566,6 @@
     "review_commitment": null
   },
   "deferred_populations": [
-    {
-      "record_type": "powers",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "complete per-instrument FS-POW contract cards, lawful body and role allocations, and power-bound decider, executor, auditor, and final-remedy separation rows for every card-required and retained formal entry",
-      "stage": "stage-3"
-    },
     {
       "record_type": "proposals",
       "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure",
@@ -51297,6 +51804,81 @@
       ],
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 17. Treaties, external trade, sanctions, and no evasion"
+      ]
+    },
+    {
+      "id": "FS-FAL-210",
+      "power_ref": "FS-POW-210",
+      "affected_claim_refs": [
+        "FS-CLM-11",
+        "FS-CLM-17"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-19"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-27"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-17"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-17"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-15"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Case-bound current Court custody authority keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Case-bound current Court custody authority keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Case-bound current Court custody authority keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        },
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "executor"
+          ],
+          "reason": "Case-bound current Court custody authority keeps decisive-fact-writer separate from executor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
       ]
     }
   ],
