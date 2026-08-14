@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-time-model`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-substantive-equality-and-anti-subordination`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -308,9 +308,9 @@ Deliberately omitted candidates and combinations (recorded, not silent):
 
 ## Source-derived power contracts and function allocations
 
-Population status: **partial**. Completed source-family prefix: state-form-and-political-membership, time-model.
+Population status: **partial**. Completed source-family prefix: state-form-and-political-membership, time-model, substantive-equality-and-anti-subordination.
 
-Current rows: 51 FS-POW cards; 1 FS-PCT templates; 1 FS-PRF refusals/limits; 0 FS-PCD formal dispositions; 51 FS-FAL allocations.
+Current rows: 60 FS-POW cards; 1 FS-PCT templates; 1 FS-PRF refusals/limits; 0 FS-PCD formal dispositions; 60 FS-FAL allocations.
 
 Evidence ceiling: Structural source-bound contract and allocation inventory only; no operation, delivery, feasibility, liveness, external truth, calibration, or Gate A passage follows.
 
@@ -367,6 +367,15 @@ Evidence ceiling: Structural source-bound contract and allocation inventory only
 | FS-POW-049 Protected local facility management | `gov-local-facility-management` | ordinary-public-power | FS-BOD-21 | FS-ROL-27 | FS-CLM-15, FS-CLM-18, FS-CLM-26 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-050 Protected local assigned-service administration | `gov-local-assigned-service-administration` | ordinary-public-power | FS-BOD-21 | FS-ROL-27 | FS-CLM-15, FS-CLM-18, FS-CLM-26 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 | FS-POW-051 Independent appointments-qualification recipient | `gov-appointments-qualification-recipient` | ordinary-public-power, consequential-record | FS-BOD-24 | FS-ROL-45 | FS-CLM-15, FS-CLM-18, FS-CLM-26 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-052 Direct-distinction justification determination | `eq-direct-distinction-determination` | ordinary-public-power, liberty-power-limit, consequential-record | FS-BOD-17 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-053 Indirect-distinction justification determination | `eq-indirect-distinction-determination` | ordinary-public-power, liberty-power-limit, consequential-record | FS-BOD-17 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-054 Reasonable-accommodation determination | `eq-accommodation-determination` | ordinary-public-power, liberty-power-limit, consequential-record | FS-BOD-17 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-055 Equality-diagnostic authorization | `eq-diagnostic-authorization` | ordinary-public-power, liberty-power-limit, consequential-record | FS-BOD-19 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-056 Diagnostic presumption and systemic review | `eq-diagnostic-systemic-review` | ordinary-public-power, liberty-power-limit, consequential-record | FS-BOD-19 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-057 Positive-measure authorization | `eq-positive-measure-authorization` | ordinary-public-power, liberty-power-limit | FS-BOD-04 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-058 Positive-measure continuation finding | `eq-positive-measure-continuation` | ordinary-public-power, liberty-power-limit | FS-BOD-04 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-059 Historical-barrier repair measure | `eq-historical-repair-measure` | ordinary-public-power, liberty-power-limit | FS-BOD-04 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
+| FS-POW-060 Equality systemic remedy order | `eq-systemic-remedy-order` | ordinary-public-power, liberty-power-limit | FS-BOD-17 | FS-ROL-27 | FS-CLM-02, FS-CLM-03, FS-CLM-08 | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` |
 
 Contract templates:
 
@@ -429,6 +438,15 @@ Function allocations (body functions; role references identify the corresponding
 - `FS-FAL-049` → `FS-POW-049`; writer FS-BOD-21; decider FS-BOD-21; executor FS-BOD-21; auditor FS-BOD-19; final remedy FS-BOD-18.
 - `FS-FAL-050` → `FS-POW-050`; writer FS-BOD-21; decider FS-BOD-21; executor FS-BOD-21; auditor FS-BOD-19; final remedy FS-BOD-18.
 - `FS-FAL-051` → `FS-POW-051`; writer FS-BOD-24; decider FS-BOD-24; executor FS-BOD-24; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-052` → `FS-POW-052`; writer FS-BOD-20; decider FS-BOD-17; executor FS-BOD-17; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-053` → `FS-POW-053`; writer FS-BOD-20; decider FS-BOD-17; executor FS-BOD-17; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-054` → `FS-POW-054`; writer FS-BOD-20; decider FS-BOD-17; executor FS-BOD-17; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-055` → `FS-POW-055`; writer FS-BOD-20; decider FS-BOD-19; executor FS-BOD-19; auditor FS-BOD-15; final remedy FS-BOD-18.
+- `FS-FAL-056` → `FS-POW-056`; writer FS-BOD-20; decider FS-BOD-19; executor FS-BOD-19; auditor FS-BOD-15; final remedy FS-BOD-18.
+- `FS-FAL-057` → `FS-POW-057`; writer FS-BOD-20; decider FS-BOD-04; executor FS-BOD-04; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-058` → `FS-POW-058`; writer FS-BOD-20; decider FS-BOD-04; executor FS-BOD-04; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-059` → `FS-POW-059`; writer FS-BOD-20; decider FS-BOD-04; executor FS-BOD-04; auditor FS-BOD-19; final remedy FS-BOD-18.
+- `FS-FAL-060` → `FS-POW-060`; writer FS-BOD-20; decider FS-BOD-17; executor FS-BOD-17; auditor FS-BOD-19; final remedy FS-BOD-18.
 
 ## Functional flows and cross-domain dependencies
 
@@ -1245,6 +1263,15 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 | FS-POW-049 | Protected local facility management | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad protected local facility management effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 | FS-POW-050 | Protected local assigned-service administration | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad protected local assigned-service administration effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 | FS-POW-051 | Independent appointments-qualification recipient | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad independent appointments-qualification recipient effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-052 | Direct-distinction justification determination | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad direct-distinction justification determination effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-053 | Indirect-distinction justification determination | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad indirect-distinction justification determination effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-054 | Reasonable-accommodation determination | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad reasonable-accommodation determination effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-055 | Equality-diagnostic authorization | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad equality-diagnostic authorization effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-056 | Diagnostic presumption and systemic review | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad diagnostic presumption and systemic review effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-057 | Positive-measure authorization | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad positive-measure authorization effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-058 | Positive-measure continuation finding | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad positive-measure continuation finding effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-059 | Historical-barrier repair measure | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad historical-barrier repair measure effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
+| FS-POW-060 | Equality systemic remedy order | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad equality systemic remedy order effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 
 ## Deferred populations and projections
 

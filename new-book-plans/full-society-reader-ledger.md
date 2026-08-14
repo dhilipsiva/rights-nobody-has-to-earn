@@ -5,9 +5,9 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-14-power-time-model`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-14-power-substantive-equality-and-anti-subordination`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Canonical source SHA-256: `f52aef6da779609b86a844f0bf1e197e2dca5d442dc3f9b41943917748100b42`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `301b97e57cc535dc8284837e08486f92be2136659df0971dc1decfa00bb2df59`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -27,7 +27,7 @@ Canonical source SHA-256: `f52aef6da779609b86a844f0bf1e197e2dca5d442dc3f9b419439
 | `envelope` | 2 | `64370bc341b6ef558608f8a1606f9ba579f1d2c8926d241864ba86e5923bb0cd` | FS-ENV-00, FS-ENV-01 |
 | `roles` | 59 | `f89b2e0e109db3cbabe46ad7a4ca377c2ac18adb22986a3609e70eb85accc614` | FS-ROL-01, FS-ROL-02, FS-ROL-03, FS-ROL-04, FS-ROL-05, FS-ROL-06, FS-ROL-07, FS-ROL-08, FS-ROL-09, FS-ROL-10, FS-ROL-11, FS-ROL-12, FS-ROL-13, FS-ROL-14, FS-ROL-15, FS-ROL-16, FS-ROL-17, FS-ROL-18, FS-ROL-19, FS-ROL-20, FS-ROL-21, FS-ROL-22, FS-ROL-23, FS-ROL-24, FS-ROL-25, FS-ROL-26, FS-ROL-27, FS-ROL-28, FS-ROL-29, FS-ROL-30, FS-ROL-31, FS-ROL-32, FS-ROL-33, FS-ROL-34, FS-ROL-35, FS-ROL-36, FS-ROL-37, FS-ROL-38, FS-ROL-39, FS-ROL-40, FS-ROL-41, FS-ROL-42, FS-ROL-43, FS-ROL-44, FS-ROL-45, FS-ROL-46, FS-ROL-47, FS-ROL-48, FS-ROL-49, FS-ROL-50, FS-ROL-51, FS-ROL-52, FS-ROL-53, FS-ROL-54, FS-ROL-55, FS-ROL-56, FS-ROL-57, FS-ROL-58, FS-ROL-59 |
 | `role_omissions` | 16 | `51d0ef84e9987be32a5c09944e7e82f2dff4de02d57de94568942b2757868ded` | unkeyed rows; digest is authoritative |
-| `powers` | 51 | `17f17310d437af271617b6c90d9c44795698d674e1aef9c486a4ca3267d89c26` | FS-POW-001, FS-POW-002, FS-POW-003, FS-POW-004, FS-POW-005, FS-POW-006, FS-POW-007, FS-POW-008, FS-POW-009, FS-POW-010, FS-POW-011, FS-POW-012, FS-POW-013, FS-POW-014, FS-POW-015, FS-POW-016, FS-POW-017, FS-POW-018, FS-POW-019, FS-POW-020, FS-POW-021, FS-POW-022, FS-POW-023, FS-POW-024, FS-POW-025, FS-POW-026, FS-POW-027, FS-POW-028, FS-POW-029, FS-POW-030, FS-POW-031, FS-POW-032, FS-POW-033, FS-POW-034, FS-POW-035, FS-POW-036, FS-POW-037, FS-POW-038, FS-POW-039, FS-POW-040, FS-POW-041, FS-POW-042, FS-POW-043, FS-POW-044, FS-POW-045, FS-POW-046, FS-POW-047, FS-POW-048, FS-POW-049, FS-POW-050, FS-POW-051 |
+| `powers` | 60 | `85aef4ed3a8d2f6294418ad84759d8c8e2be4f3f68a2775c999667005802e45d` | FS-POW-001, FS-POW-002, FS-POW-003, FS-POW-004, FS-POW-005, FS-POW-006, FS-POW-007, FS-POW-008, FS-POW-009, FS-POW-010, FS-POW-011, FS-POW-012, FS-POW-013, FS-POW-014, FS-POW-015, FS-POW-016, FS-POW-017, FS-POW-018, FS-POW-019, FS-POW-020, FS-POW-021, FS-POW-022, FS-POW-023, FS-POW-024, FS-POW-025, FS-POW-026, FS-POW-027, FS-POW-028, FS-POW-029, FS-POW-030, FS-POW-031, FS-POW-032, FS-POW-033, FS-POW-034, FS-POW-035, FS-POW-036, FS-POW-037, FS-POW-038, FS-POW-039, FS-POW-040, FS-POW-041, FS-POW-042, FS-POW-043, FS-POW-044, FS-POW-045, FS-POW-046, FS-POW-047, FS-POW-048, FS-POW-049, FS-POW-050, FS-POW-051, FS-POW-052, FS-POW-053, FS-POW-054, FS-POW-055, FS-POW-056, FS-POW-057, FS-POW-058, FS-POW-059, FS-POW-060 |
 | `power_contract_templates` | 1 | `2c46804c0d4dd3753b118064cc97806aa34ddbba30b11bd7103d063e460dbf61` | FS-PCT-01 |
 | `power_refusals` | 1 | `bbb42a52aa61b01ee860d2cfd30b52398221b28d0a235cfd013dcb5a6600c1f2` | FS-PRF-001 |
 | `power_crosswalk_dispositions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
@@ -45,7 +45,7 @@ Canonical source SHA-256: `f52aef6da779609b86a844f0bf1e197e2dca5d442dc3f9b419439
 | `closure_requirement_profiles` | 8 | `70012e4f81b171843ec3e8cd9ddaa4ece34792f5f228e8f3e42190d37c340940` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 37 | `3d0ca96d53b7d3cf53edc489e51e3d47e3011350bc69fcf1a42685a02174376c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37 |
 | `model_allocations` | 37 | `bc6e0dee390dd5219c6d43053c6ce8a4423f47f422a9c2cc1d62db72703b1517` | FS-MAL-01, FS-MAL-02, FS-MAL-03, FS-MAL-04, FS-MAL-05, FS-MAL-06, FS-MAL-07, FS-MAL-08, FS-MAL-09, FS-MAL-10, FS-MAL-11, FS-MAL-12, FS-MAL-13, FS-MAL-14, FS-MAL-15, FS-MAL-16, FS-MAL-17, FS-MAL-18, FS-MAL-19, FS-MAL-20, FS-MAL-21, FS-MAL-22, FS-MAL-23, FS-MAL-24, FS-MAL-25, FS-MAL-26, FS-MAL-27, FS-MAL-28, FS-MAL-29, FS-MAL-30, FS-MAL-31, FS-MAL-32, FS-MAL-33, FS-MAL-34, FS-MAL-35, FS-MAL-36, FS-MAL-37 |
-| `function_allocations` | 51 | `ddd10b6a38edf36c91bb16050969f573381c2439b7b5787eef3c14d44f2bbdb9` | FS-FAL-001, FS-FAL-002, FS-FAL-003, FS-FAL-004, FS-FAL-005, FS-FAL-006, FS-FAL-007, FS-FAL-008, FS-FAL-009, FS-FAL-010, FS-FAL-011, FS-FAL-012, FS-FAL-013, FS-FAL-014, FS-FAL-015, FS-FAL-016, FS-FAL-017, FS-FAL-018, FS-FAL-019, FS-FAL-020, FS-FAL-021, FS-FAL-022, FS-FAL-023, FS-FAL-024, FS-FAL-025, FS-FAL-026, FS-FAL-027, FS-FAL-028, FS-FAL-029, FS-FAL-030, FS-FAL-031, FS-FAL-032, FS-FAL-033, FS-FAL-034, FS-FAL-035, FS-FAL-036, FS-FAL-037, FS-FAL-038, FS-FAL-039, FS-FAL-040, FS-FAL-041, FS-FAL-042, FS-FAL-043, FS-FAL-044, FS-FAL-045, FS-FAL-046, FS-FAL-047, FS-FAL-048, FS-FAL-049, FS-FAL-050, FS-FAL-051 |
+| `function_allocations` | 60 | `c7d49930e0aec6764156aac13fca1291c0881c36fdf48310ae6df8aa70f8bec1` | FS-FAL-001, FS-FAL-002, FS-FAL-003, FS-FAL-004, FS-FAL-005, FS-FAL-006, FS-FAL-007, FS-FAL-008, FS-FAL-009, FS-FAL-010, FS-FAL-011, FS-FAL-012, FS-FAL-013, FS-FAL-014, FS-FAL-015, FS-FAL-016, FS-FAL-017, FS-FAL-018, FS-FAL-019, FS-FAL-020, FS-FAL-021, FS-FAL-022, FS-FAL-023, FS-FAL-024, FS-FAL-025, FS-FAL-026, FS-FAL-027, FS-FAL-028, FS-FAL-029, FS-FAL-030, FS-FAL-031, FS-FAL-032, FS-FAL-033, FS-FAL-034, FS-FAL-035, FS-FAL-036, FS-FAL-037, FS-FAL-038, FS-FAL-039, FS-FAL-040, FS-FAL-041, FS-FAL-042, FS-FAL-043, FS-FAL-044, FS-FAL-045, FS-FAL-046, FS-FAL-047, FS-FAL-048, FS-FAL-049, FS-FAL-050, FS-FAL-051, FS-FAL-052, FS-FAL-053, FS-FAL-054, FS-FAL-055, FS-FAL-056, FS-FAL-057, FS-FAL-058, FS-FAL-059, FS-FAL-060 |
 | `loop_hazard_controls` | 8 | `e74f23766bcf5c9c35567dcf743f905aeb73c7240c9255ab304779316b07c31e` | FS-LHC-01, FS-LHC-02, FS-LHC-03, FS-LHC-04, FS-LHC-05, FS-LHC-06, FS-LHC-07, FS-LHC-08 |
 | `bottleneck_dispositions` | 18 | `74d3603a2f8b7ba073784204b78b310b416bde27da3513db6cb448dfb2658651` | FS-BTL-01, FS-BTL-02, FS-BTL-03, FS-BTL-04, FS-BTL-05, FS-BTL-06, FS-BTL-07, FS-BTL-08, FS-BTL-09, FS-BTL-10, FS-BTL-11, FS-BTL-12, FS-BTL-13, FS-BTL-14, FS-BTL-15, FS-BTL-16, FS-BTL-17, FS-BTL-18 |
 
@@ -411,7 +411,15 @@ Claims:
 
 Source-derived power cards:
 
-- None in the completed source-family prefix.
+- `FS-POW-052` — Direct-distinction justification determination (`eq-direct-distinction-determination`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-053` — Indirect-distinction justification determination (`eq-indirect-distinction-determination`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-054` — Reasonable-accommodation determination (`eq-accommodation-determination`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-055` — Equality-diagnostic authorization (`eq-diagnostic-authorization`); holder bodies: FS-BOD-19; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-056` — Diagnostic presumption and systemic review (`eq-diagnostic-systemic-review`); holder bodies: FS-BOD-19; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-057` — Positive-measure authorization (`eq-positive-measure-authorization`); holder bodies: FS-BOD-04; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-058` — Positive-measure continuation finding (`eq-positive-measure-continuation`); holder bodies: FS-BOD-04; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-059` — Historical-barrier repair measure (`eq-historical-repair-measure`); holder bodies: FS-BOD-04; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-060` — Equality systemic remedy order (`eq-systemic-remedy-order`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
 
 Ordinary, failure, and recovery routing:
 
@@ -690,7 +698,15 @@ Claims:
 
 Source-derived power cards:
 
-- None in the completed source-family prefix.
+- `FS-POW-052` — Direct-distinction justification determination (`eq-direct-distinction-determination`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-053` — Indirect-distinction justification determination (`eq-indirect-distinction-determination`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-054` — Reasonable-accommodation determination (`eq-accommodation-determination`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-055` — Equality-diagnostic authorization (`eq-diagnostic-authorization`); holder bodies: FS-BOD-19; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-056` — Diagnostic presumption and systemic review (`eq-diagnostic-systemic-review`); holder bodies: FS-BOD-19; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-057` — Positive-measure authorization (`eq-positive-measure-authorization`); holder bodies: FS-BOD-04; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-058` — Positive-measure continuation finding (`eq-positive-measure-continuation`); holder bodies: FS-BOD-04; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-059` — Historical-barrier repair measure (`eq-historical-repair-measure`); holder bodies: FS-BOD-04; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
+- `FS-POW-060` — Equality systemic remedy order (`eq-systemic-remedy-order`); holder bodies: FS-BOD-17; Book 2 owner: `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner`.
 
 Ordinary, failure, and recovery routing:
 

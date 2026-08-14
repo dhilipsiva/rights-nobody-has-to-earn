@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-14-power-time-model",
+  "source_version": "fs-ledger-2026-08-14-power-substantive-equality-and-anti-subordination",
   "bound_sources_sha256": {
     "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
     "full_society_boundary": "00273fa9ac211d3b7bffce5f37625832652e9750e81dce301844ab8a9149a3fd"
@@ -4057,7 +4057,8 @@
     "status": "partial",
     "completed_source_families": [
       "state-form-and-political-membership",
-      "time-model"
+      "time-model",
+      "substantive-equality-and-anti-subordination"
     ],
     "expected_final_counts": {
       "powers": 210,
@@ -9762,6 +9763,1107 @@
       },
       "source_refs": [
         "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
+      ]
+    },
+    {
+      "id": "FS-POW-052",
+      "title": "Direct-distinction justification determination",
+      "applicability": "One adjudicated exception test tied to a particular function; never a general status authority.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad direct-distinction justification determination effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-direct-distinction-determination",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit",
+        "consequential-record"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-17"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove",
+        "trigger": "Only the source-specific trigger for Direct-distinction justification determination; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One adjudicated exception test tied to a particular function; never a general status authority.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "democratic_source": "democratic source is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "trigger": "trigger is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "evidence": "evidence is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "scope": "scope is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "review": "review is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "appeal": "appeal is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "end_condition": "end condition is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "temporal_status": "temporal status is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "evidence": "evidence is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "public_reason": "public reason is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "review_or_end": "review or end is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "temporal_status": "temporal status is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "remedy": "remedy is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority."
+        },
+        "consequential-record": {
+          "writer": "writer is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "permitted_basis": "permitted basis is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "visibility_and_privacy": "visibility and privacy is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "challenge": "challenge is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "correction": "correction is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "retention": "retention is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "deletion_control": "deletion control is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "external_assurance": "external assurance is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "independent_recipient": "independent recipient is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "action_duty": "action duty is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "continuity_and_remedy": "continuity and remedy is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority.",
+          "temporal_status": "temporal status is fixed by the source-bound Direct-distinction justification determination contract: One adjudicated exception test tied to a particular function; never a general status authority."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove"
+      ]
+    },
+    {
+      "id": "FS-POW-053",
+      "title": "Indirect-distinction justification determination",
+      "applicability": "One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad indirect-distinction justification determination effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-indirect-distinction-determination",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit",
+        "consequential-record"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-17"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:",
+        "trigger": "Only the source-specific trigger for Indirect-distinction justification determination; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "democratic_source": "democratic source is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "trigger": "trigger is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "evidence": "evidence is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "scope": "scope is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "review": "review is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "appeal": "appeal is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "end_condition": "end condition is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "temporal_status": "temporal status is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "evidence": "evidence is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "public_reason": "public reason is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "review_or_end": "review or end is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "temporal_status": "temporal status is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "remedy": "remedy is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination."
+        },
+        "consequential-record": {
+          "writer": "writer is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "permitted_basis": "permitted basis is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "visibility_and_privacy": "visibility and privacy is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "challenge": "challenge is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "correction": "correction is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "retention": "retention is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "deletion_control": "deletion control is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "external_assurance": "external assurance is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "independent_recipient": "independent recipient is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "action_duty": "action duty is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "continuity_and_remedy": "continuity and remedy is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+          "temporal_status": "temporal status is fixed by the source-bound Indirect-distinction justification determination contract: One five-part purpose, evidence, necessity, alternatives, and proportionality determination."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:"
+      ]
+    },
+    {
+      "id": "FS-POW-054",
+      "title": "Reasonable-accommodation determination",
+      "applicability": "One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad reasonable-accommodation determination effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-accommodation-determination",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit",
+        "consequential-record"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-17"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves",
+        "trigger": "Only the source-specific trigger for Reasonable-accommodation determination; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "democratic_source": "democratic source is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "trigger": "trigger is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "evidence": "evidence is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "scope": "scope is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "review": "review is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "appeal": "appeal is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "end_condition": "end condition is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "temporal_status": "temporal status is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "evidence": "evidence is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "public_reason": "public reason is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "review_or_end": "review or end is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "temporal_status": "temporal status is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "remedy": "remedy is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge."
+        },
+        "consequential-record": {
+          "writer": "writer is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "permitted_basis": "permitted basis is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "visibility_and_privacy": "visibility and privacy is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "challenge": "challenge is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "correction": "correction is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "retention": "retention is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "deletion_control": "deletion control is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "external_assurance": "external assurance is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "independent_recipient": "independent recipient is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "action_duty": "action duty is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "continuity_and_remedy": "continuity and remedy is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+          "temporal_status": "temporal status is fixed by the source-bound Reasonable-accommodation determination contract: One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves"
+      ]
+    },
+    {
+      "id": "FS-POW-055",
+      "title": "Equality-diagnostic authorization",
+      "applicability": "One purpose-limited data and methodology authority walled from consequential person records.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad equality-diagnostic authorization effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-diagnostic-authorization",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit",
+        "consequential-record"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-19"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose",
+        "trigger": "Only the source-specific trigger for Equality-diagnostic authorization; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One purpose-limited data and methodology authority walled from consequential person records.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "democratic_source": "democratic source is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "trigger": "trigger is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "evidence": "evidence is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "scope": "scope is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "review": "review is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "appeal": "appeal is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "end_condition": "end condition is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "temporal_status": "temporal status is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "evidence": "evidence is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "public_reason": "public reason is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "review_or_end": "review or end is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "temporal_status": "temporal status is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "remedy": "remedy is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records."
+        },
+        "consequential-record": {
+          "writer": "writer is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "permitted_basis": "permitted basis is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "visibility_and_privacy": "visibility and privacy is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "challenge": "challenge is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "correction": "correction is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "retention": "retention is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "deletion_control": "deletion control is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "external_assurance": "external assurance is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "independent_recipient": "independent recipient is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "action_duty": "action duty is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "continuity_and_remedy": "continuity and remedy is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records.",
+          "temporal_status": "temporal status is fixed by the source-bound Equality-diagnostic authorization contract: One purpose-limited data and methodology authority walled from consequential person records."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose"
+      ]
+    },
+    {
+      "id": "FS-POW-056",
+      "title": "Diagnostic presumption and systemic review",
+      "applicability": "One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad diagnostic presumption and systemic review effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-diagnostic-systemic-review",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit",
+        "consequential-record"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-19"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
+        "trigger": "Only the source-specific trigger for Diagnostic presumption and systemic review; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "democratic_source": "democratic source is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "trigger": "trigger is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "evidence": "evidence is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "scope": "scope is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "review": "review is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "appeal": "appeal is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "end_condition": "end condition is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "temporal_status": "temporal status is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "evidence": "evidence is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "public_reason": "public reason is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "review_or_end": "review or end is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "temporal_status": "temporal status is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "remedy": "remedy is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself."
+        },
+        "consequential-record": {
+          "writer": "writer is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "permitted_basis": "permitted basis is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "visibility_and_privacy": "visibility and privacy is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "challenge": "challenge is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "correction": "correction is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "retention": "retention is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "deletion_control": "deletion control is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "external_assurance": "external assurance is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "independent_recipient": "independent recipient is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "action_duty": "action duty is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "continuity_and_remedy": "continuity and remedy is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+          "temporal_status": "temporal status is fixed by the source-bound Diagnostic presumption and systemic review contract: One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall"
+      ]
+    },
+    {
+      "id": "FS-POW-057",
+      "title": "Positive-measure authorization",
+      "applicability": "One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad positive-measure authorization effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-positive-measure-authorization",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
+        "trigger": "Only the source-specific trigger for Positive-measure authorization; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "democratic_source": "democratic source is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "trigger": "trigger is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "evidence": "evidence is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "scope": "scope is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "review": "review is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "appeal": "appeal is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "end_condition": "end condition is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "temporal_status": "temporal status is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "evidence": "evidence is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "public_reason": "public reason is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "review_or_end": "review or end is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "temporal_status": "temporal status is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+          "remedy": "remedy is fixed by the source-bound Positive-measure authorization contract: One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures"
+      ]
+    },
+    {
+      "id": "FS-POW-058",
+      "title": "Positive-measure continuation finding",
+      "applicability": "A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad positive-measure continuation finding effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-positive-measure-continuation",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows",
+        "trigger": "Only the source-specific trigger for Positive-measure continuation finding; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "democratic_source": "democratic source is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "trigger": "trigger is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "evidence": "evidence is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "scope": "scope is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "review": "review is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "appeal": "appeal is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "end_condition": "end condition is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "temporal_status": "temporal status is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "evidence": "evidence is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "public_reason": "public reason is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "review_or_end": "review or end is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "temporal_status": "temporal status is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+          "remedy": "remedy is fixed by the source-bound Positive-measure continuation finding contract: A separate current continuation finding; review silence cannot renew or enlarge the measure."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows"
+      ]
+    },
+    {
+      "id": "FS-POW-059",
+      "title": "Historical-barrier repair measure",
+      "applicability": "One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad historical-barrier repair measure effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-historical-repair-measure",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution",
+        "trigger": "Only the source-specific trigger for Historical-barrier repair measure; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "democratic_source": "democratic source is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "trigger": "trigger is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "evidence": "evidence is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "scope": "scope is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "review": "review is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "appeal": "appeal is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "end_condition": "end condition is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "temporal_status": "temporal status is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "evidence": "evidence is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "public_reason": "public reason is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "review_or_end": "review or end is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "temporal_status": "temporal status is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+          "remedy": "remedy is fixed by the source-bound Historical-barrier repair measure contract: One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution"
+      ]
+    },
+    {
+      "id": "FS-POW-060",
+      "title": "Equality systemic remedy order",
+      "applicability": "One bounded structural-remedy family; individual liability still requires individual review.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical",
+      "consequence": "an unavailable, fused, or overbroad equality systemic remedy order effect",
+      "owner_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit",
+      "closure_condition": "the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls",
+      "manifest_key": "eq-systemic-remedy-order",
+      "source_family": "substantive-equality-and-anti-subordination",
+      "posture": "Specified",
+      "evidence_kind": "inventory",
+      "profiles": [
+        "ordinary-public-power",
+        "liberty-power-limit"
+      ],
+      "domain_refs": [
+        "FS-DOM-12",
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "holder_body_refs": [
+        "FS-BOD-17"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-27"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-03",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-27",
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "public_claim_restriction": "Structural source-derived legal contract only: no operation, staffing, independence, delivery, liveness, feasibility, calibration, or outside-world fact follows.",
+      "structural_wall_refs": [],
+      "related_power_refs": [],
+      "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
+      "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
+      "contract": {
+        "lawful_source": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit",
+        "trigger": "Only the source-specific trigger for Equality systemic remedy order; absent authenticated trigger evidence, authority is unavailable.",
+        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
+        "bounded_effect": "One bounded structural-remedy family; individual liability still requires individual review.",
+        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
+        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
+        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
+        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
+        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
+        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
+        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
+        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
+        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
+        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
+        "required_separation_pairs": [
+          [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          [
+            "executor",
+            "auditor"
+          ],
+          [
+            "auditor",
+            "final-remedy"
+          ]
+        ]
+      },
+      "profile_contracts": {
+        "ordinary-public-power": {
+          "office": "office is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "democratic_source": "democratic source is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "trigger": "trigger is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "evidence": "evidence is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "scope": "scope is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "conflict_rule": "conflict rule is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "non_delegable_limit": "non delegable limit is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "review": "review is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "appeal": "appeal is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "end_condition": "end condition is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "temporal_status": "temporal status is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review."
+        },
+        "liberty-power-limit": {
+          "protected_person": "protected person is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "prohibited_act": "prohibited act is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "direct_public_binding": "direct public binding is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "private_interference_duty": "private interference duty is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "explicit_private_binding": "explicit private binding is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "narrow_exception_test": "narrow exception test is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "evidence": "evidence is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "independent_reviewer": "independent reviewer is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "public_reason": "public reason is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "review_or_end": "review or end is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "temporal_status": "temporal status is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review.",
+          "remedy": "remedy is fixed by the source-bound Equality systemic remedy order contract: One bounded structural-remedy family; individual liability still requires individual review."
+        }
+      },
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit"
       ]
     }
   ],
@@ -18643,6 +19745,618 @@
       ],
       "source_refs": [
         "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
+      ]
+    },
+    {
+      "id": "FS-FAL-052",
+      "power_ref": "FS-POW-052",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-17"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-17"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Direct-distinction justification determination keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Direct-distinction justification determination keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Direct-distinction justification determination keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove"
+      ]
+    },
+    {
+      "id": "FS-FAL-053",
+      "power_ref": "FS-POW-053",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-17"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-17"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Indirect-distinction justification determination keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Indirect-distinction justification determination keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Indirect-distinction justification determination keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:"
+      ]
+    },
+    {
+      "id": "FS-FAL-054",
+      "power_ref": "FS-POW-054",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-17"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-17"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Reasonable-accommodation determination keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Reasonable-accommodation determination keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Reasonable-accommodation determination keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves"
+      ]
+    },
+    {
+      "id": "FS-FAL-055",
+      "power_ref": "FS-POW-055",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-19"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-15"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Equality-diagnostic authorization keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Equality-diagnostic authorization keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Equality-diagnostic authorization keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose"
+      ]
+    },
+    {
+      "id": "FS-FAL-056",
+      "power_ref": "FS-POW-056",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-19"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-15"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Diagnostic presumption and systemic review keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Diagnostic presumption and systemic review keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Diagnostic presumption and systemic review keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall"
+      ]
+    },
+    {
+      "id": "FS-FAL-057",
+      "power_ref": "FS-POW-057",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-04"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-04"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Positive-measure authorization keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Positive-measure authorization keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Positive-measure authorization keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures"
+      ]
+    },
+    {
+      "id": "FS-FAL-058",
+      "power_ref": "FS-POW-058",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-04"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-04"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Positive-measure continuation finding keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Positive-measure continuation finding keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Positive-measure continuation finding keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows"
+      ]
+    },
+    {
+      "id": "FS-FAL-059",
+      "power_ref": "FS-POW-059",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-04"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-04"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Historical-barrier repair measure keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Historical-barrier repair measure keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Historical-barrier repair measure keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution"
+      ]
+    },
+    {
+      "id": "FS-FAL-060",
+      "power_ref": "FS-POW-060",
+      "affected_claim_refs": [
+        "FS-CLM-02",
+        "FS-CLM-03",
+        "FS-CLM-08"
+      ],
+      "decisive_fact_writer_body_refs": [
+        "FS-BOD-20"
+      ],
+      "decisive_fact_writer_role_refs": [
+        "FS-ROL-34"
+      ],
+      "decider_body_refs": [
+        "FS-BOD-17"
+      ],
+      "decider_role_refs": [
+        "FS-ROL-27"
+      ],
+      "executor_body_refs": [
+        "FS-BOD-17"
+      ],
+      "executor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "auditor_body_refs": [
+        "FS-BOD-19"
+      ],
+      "auditor_role_refs": [
+        "FS-ROL-27"
+      ],
+      "final_remedy_body_refs": [
+        "FS-BOD-18"
+      ],
+      "final_remedy_role_refs": [
+        "FS-ROL-27"
+      ],
+      "separation_constraints": [
+        {
+          "functions": [
+            "decisive-fact-writer",
+            "auditor"
+          ],
+          "reason": "Equality systemic remedy order keeps decisive-fact-writer separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit"
+        },
+        {
+          "functions": [
+            "executor",
+            "auditor"
+          ],
+          "reason": "Equality systemic remedy order keeps executor separate from auditor so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit"
+        },
+        {
+          "functions": [
+            "auditor",
+            "final-remedy"
+          ],
+          "reason": "Equality systemic remedy order keeps auditor separate from final-remedy so no source, execution, audit, or remedy function certifies itself.",
+          "source_ref": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit"
+        }
+      ],
+      "source_refs": [
+        "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit"
       ]
     }
   ],
