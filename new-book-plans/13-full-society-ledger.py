@@ -3474,10 +3474,24 @@ def validate_deferred(src: dict):
             array == "powers" and rows and array in by_type
             and src["power_population"]["status"] == "partial"
         )
-        if rows and array in by_type and not staged_power_prefix:
+        staged_review_population = (
+            array in {"proposals", "review_events"}
+            and rows and array in by_type
+            and not qualifying_review_events(src)
+        )
+        if rows and array in by_type and not (
+                staged_power_prefix or staged_review_population):
             raise LedgerError(
                 f"{array} is populated but still carries a deferral record"
             )
+    qualifying = bool(qualifying_review_events(src))
+    for array in ("proposals", "review_events"):
+        if qualifying and array in by_type:
+            raise LedgerError(
+                f"{array} deferral must be removed after a qualifying event")
+        if not qualifying and array not in by_type:
+            raise LedgerError(
+                f"{array} deferral must remain until a qualifying event")
 
 
 def collect_sibling_enums():
@@ -4414,6 +4428,21 @@ def _gate_a_claim_limitations(src: dict, residual_ids: list) -> list:
     ]
 
 
+def _source_at_commit(commit_sha: str, context: str) -> dict:
+    proc = subprocess.run(
+        ["git", "show", f"{commit_sha}:{SOURCE.as_posix()}"],
+        cwd=ROOT, check=False, capture_output=True, text=True,
+    )
+    if proc.returncode != 0:
+        raise LedgerError(
+            f"{context}: candidate commit does not contain the canonical source")
+    try:
+        return json.loads(proc.stdout)
+    except json.JSONDecodeError as exc:
+        raise LedgerError(
+            f"{context}: candidate canonical source is not valid JSON") from exc
+
+
 def validate_closure_record(src: dict, readiness, resolution: dict):
     if "closure_record" not in src:
         raise LedgerError(
@@ -4438,10 +4467,20 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if not GIT_COMMIT_RE.fullmatch(require_str(
             rec, "candidate_commit_sha", ctx)):
         raise LedgerError(f"{ctx}.candidate_commit_sha must be a Git id")
+    candidate = _source_at_commit(
+        rec["candidate_commit_sha"], f"{ctx}.candidate_commit_sha")
+    if candidate.get("closure_record") is not None:
+        raise LedgerError(f"{ctx}: candidate closure_record must still be null")
+    if candidate.get("acceptance_gate", {}).get("gate_a_status") != "not-passed":
+        raise LedgerError(f"{ctx}: candidate Gate A status must still be not-passed")
     if rec["source_version"] != src["source_version"]:
         raise LedgerError(f"{ctx}.source_version must match the closure source")
     if rec["scope_sha256"] != review_scope_digest(src):
         raise LedgerError(f"{ctx}.scope_sha256 must match the semantic scope")
+    if candidate.get("source_version") != rec["source_version"]:
+        raise LedgerError(f"{ctx}: candidate source version does not match")
+    if review_scope_digest(candidate) != rec["scope_sha256"]:
+        raise LedgerError(f"{ctx}: candidate semantic scope does not match")
     if rec["envelope_ref"] != "FS-ENV-01":
         raise LedgerError(f"{ctx}.envelope_ref must be FS-ENV-01")
     envelope = next(row for row in src["envelope"]
@@ -4507,6 +4546,25 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
             f"{ctx}: a closure record requires gate_a_status passed, which "
             "this contract refuses — closing Gate A is a deliberate future "
             "amendment, never a latent flip")
+    candidate_events = {row["id"]: row
+                        for row in candidate.get("review_events", [])}
+    if candidate_events.get(event["id"]) != event:
+        raise LedgerError(
+            f"{ctx}: candidate commit must contain the exact qualifying event")
+    candidate_commissions = {
+        row["id"]: row for row in candidate.get("review_commissions", [])}
+    if candidate_commissions.get(commission["id"]) != commission:
+        raise LedgerError(
+            f"{ctx}: candidate commit must contain the exact commission")
+    candidate_proposals = [
+        row for row in candidate.get("proposals", [])
+        if row.get("review_event_ref") == event["id"]]
+    current_proposals = [
+        row for row in src.get("proposals", [])
+        if row.get("review_event_ref") == event["id"]]
+    if candidate_proposals != current_proposals:
+        raise LedgerError(
+            f"{ctx}: candidate commit must contain the exact proposal set")
 
 
 def validate_acceptance(src: dict):
@@ -4864,6 +4922,10 @@ def negative_controls(src: dict) -> int:
             _proposal_retained_without_defect, "must link a defect row")
     control("failed events with proposal intake cannot be deleted",
             _delete_failed_event, "names no review event")
+    control("failed review populations retain their deferrals",
+            _failed_event_drops_deferrals, "must remain until")
+    control("a qualifying event removes both review deferrals",
+            _passed_event_regains_deferrals, "populated but still carries")
     control("the rubric status is exact in both states",
             lambda s: s["severity_rubric"].update(
                 {"rubric_status": "confirmed"}))
@@ -5086,19 +5148,8 @@ def negative_controls(src: dict) -> int:
                 {"source_refs": ["book-1/rights-floor.md::the floor"]}),
             "narrative-register rule")
 
-    # Positive regression: Gate A closure-envelope validation accepts the
-    # non-stub versioned structure without pretending it is calibrated. The
-    # full source still refuses gate_a_status=passed until a future author
-    # amendment and all independent readiness conditions are met.
-    closure_ready = copy.deepcopy(src)
-    _mk_closure(closure_ready)
-    closure_ready["acceptance_gate"]["gate_a_status"] = "passed"
-    validate_closure_record(
-        closure_ready,
-        ([("control", "met-in-form", "control")],
-         [("the reference envelope", "met-in-form", "control")]),
-        compute_resolution(closure_ready),
-    )
+    # Closure remains deliberately locked until a real candidate commit
+    # contains the qualifying event, commission, and proposal set.
 
     gate_a_critical = copy.deepcopy(src)
     gate_a_row = next(
@@ -5646,7 +5697,6 @@ def _base_proposal(s, *, pid, source_kind, source_identity, finding,
 
 
 def _mk_event(s, passed=False):
-    _strip_deferrals(s, "proposals", "review_events")
     commission = _mk_commission(s)
     defect = s["defects"][0]
     plant = _base_proposal(
@@ -5724,6 +5774,8 @@ def _mk_event(s, passed=False):
         "outcome_reason": "control terminal outcome",
     }
     s["review_events"].append(ev)
+    if passed:
+        _strip_deferrals(s, "proposals", "review_events")
     _set_r7(s, passed)
     return ev
 
@@ -5748,7 +5800,8 @@ def _mk_closure(s):
     s["closure_record"] = {
         "gate": "gate-a",
         "permitted_claim": GATE_A_PERMITTED_CLAIM,
-        "candidate_commit_sha": "d" * 40,
+        "candidate_commit_sha": subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
         "source_version": s["source_version"],
         "scope_sha256": review_scope_digest(s),
         "envelope_ref": "FS-ENV-01",
@@ -5758,7 +5811,8 @@ def _mk_closure(s):
         "residual_refs": residuals,
         "claim_limitations": _gate_a_claim_limitations(s, residuals),
         "verification_receipt": {
-            "candidate_commit_sha": "d" * 40,
+            "candidate_commit_sha": subprocess.check_output(
+                ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
             "verified_at_utc": "2026-08-18T00:00:00Z",
             "commands": list(REQUIRED_VERIFY_COMMANDS),
             "result": "all-passed",
@@ -5974,6 +6028,22 @@ def _proposal_retained_without_defect(s):
 def _delete_failed_event(s):
     _mk_event(s, passed=False)
     s["review_events"] = []
+
+
+def _failed_event_drops_deferrals(s):
+    _mk_event(s, passed=False)
+    _strip_deferrals(s, "proposals", "review_events")
+
+
+def _passed_event_regains_deferrals(s):
+    _mk_event(s, passed=True)
+    for record_type in ("proposals", "review_events"):
+        s["deferred_populations"].append({
+            "record_type": record_type,
+            "owner_ref": _CONTROL_NEEDLE,
+            "closure_condition": "control deferral",
+            "stage": "stage-4",
+        })
 
 
 def _mk_designation(s):
