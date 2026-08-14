@@ -282,8 +282,10 @@ The structural envelope and functional meanings landed at `dccea62`; the
 `950d1a0` ownership clarification moves every remaining value and calibration
 task solely to `book-2/TODO.md`. Content commit `ab814fc` adds the structural
 reader projection and corrects Gate A's condition-one and condition-three
-computations without weakening any later-gate claim blocker. The ledger item
-integrates the remaining power population and closes Gate A last.
+computations without weakening any later-gate claim blocker. The source-derived
+power population landed through the staged family commits, with the final
+formal-transition batch at `7e5b5f6`. The ledger item now runs
+the independent review and closes Gate A last.
 
 - [ ] **Complete the full-society domain-and-layer ledger.**
   - The canonical source, generator, defect ledger and receipts, coverage-map
@@ -292,13 +294,18 @@ integrates the remaining power population and closes Gate A last.
     independent-checker designation (Darshu; Dhanush) are landed and
     verifier-enforced. History lives in git and the settled record in
     `CLAUDE.md`; schema detail lives in the generator and the controlling
-    decision records, not here. What remains is exactly what the computed
-    Gate A readiness list still refuses, in dependency order below.
+    decision records, not here. The 210 powers, one cross-power temporal
+    template, 19 refusals or limits, eight formal dispositions, and 210
+    power-bound function allocations landed at `7e5b5f6`. What remains is
+    exactly what the computed Gate A readiness list still refuses, in
+    dependency order below.
   - **Sibling populations (closure condition one).** Role records
     (FS-ROL, 579f8b1), dependency records (FS-DEP, 4beaa58), and
     scenario records (FS-SCN, ad58f74) are landed with their deferrals
-    removed; FS-POW contract cards land through the phase-2
-    coverage-rows item and remove the sole remaining condition-one deferral.
+    removed. The source-derived FS-POW cards, template, refusals, formal
+    dispositions, bodies, roles, and allocations culminated at `7e5b5f6` and
+    removed the sole remaining condition-one deferral; condition one now
+    computes `met-in-form`.
     Proposals and review events remain truthful stage-4 deferrals owned only
     by condition five; counting those review outputs before the review would
     make commissioning circular. Standing maintenance rides along: the two
@@ -334,8 +341,8 @@ integrates the remaining power population and closes Gate A last.
     Run it against the completed map: the review binds a source version, and
     spending it on a map with open deferrals wastes the plant.
   - **[AUTHOR-GATED] Close Gate A with the closure record.** Deliberately
-    unreachable today while the FS-POW population is deferred, condition five
-    has no independent event, and the gate status is pinned not-passed. Closing
+    unreachable today because condition five has no independent event and the
+    gate status is pinned not-passed. Closing
     is its own ratified contract amendment binding the gate, permitted claim,
     source version, versioned-structure envelope, candidates, review cutoff,
     the independent event, assurance records, residuals, claim limits, and the

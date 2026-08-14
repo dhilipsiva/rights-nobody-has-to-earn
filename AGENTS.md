@@ -59,9 +59,12 @@ full-society power census: 237 reviewed source entries, comprising 209
 card-required powers, 1 cross-power contract template, 19 explicit
 refusals or limits, and 8 narrow current-
 formal crosswalks. The census is an inventory prerequisite only. It creates no
-FS-POW contract card, lawful holder, operation, assurance, or Gate A result;
-script 13 keeps the power population deferred until the owning coverage rows,
-body and role allocations, and power-bound function-separation rows land.
+FS-POW contract card, lawful holder, operation, assurance, or Gate A result.
+Script 13 now checks the completed source-derived population: 210 actual
+legal-effect cards, 1 cross-power temporal template, 19 refusal or limit rows,
+8 formal dispositions, and 210 power-bound allocations. Completion removes
+only the powers deferral; Gate A remains not-passed until a qualifying
+independent review and separate author-ratified acceptance amendment land.
 
 Run script 16 after script 13. It computes the claim-scoped constitutional-
 closure and model-allocation projection from the reviewed canonical source and
