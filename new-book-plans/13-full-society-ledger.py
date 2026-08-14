@@ -35,16 +35,15 @@ without a state-defined successful outcome; a route is routing, never
 delivery, and no scenario claims execution — constitutional cases execute
 only after the relevant author rulings and contract cards land.
 Stage 4's machinery makes the future independent scope review admissible and
-the Gate A closure refusable-until-green: proposal and review-event schemas
-stand validated and empty, the severity rubric and the scope-review protocol
-are author-confirmed with their bases recorded and the protocol's status line
-live-checked against the reviewed source, an independent review
-event is refused without a pre-registered commitment (plant, seed, and
-protocol SHA-256 digests entered at commissioning; pre-images author-held
-outside the repository; a commitment exists only against a confirmed
-protocol), per-condition Gate A readiness is computed and
-rendered, and a closure record is refused while any condition computes unmet —
-closing Gate A is a deliberate future contract amendment, never a latent flip.
+the Gate A closure refusable-until-green: append-only commission, proposal,
+and terminal-event schemas bind a validator-derived semantic scope digest,
+the exact confirmed protocol bytes, structured UTC windows, eligible named
+reviewers, a frozen intake receipt, blind Darshu triage, Dhanush checking,
+control reveal, and public dispositions. Independence is derived from those
+records rather than self-labelled; a stale or failed event cannot make R7
+available. Per-condition Gate A readiness is computed and rendered, and a
+closure record is refused while any condition computes unmet — closing Gate A
+is a deliberate future contract amendment, never a latent flip.
 Deferred record types carry explicit deferral records with owners.
 
 Usage:
@@ -59,6 +58,7 @@ import importlib.util
 import json
 import pathlib
 import re
+import subprocess
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -388,7 +388,8 @@ READER_PROJECTION_POPULATIONS = (
     "power_crosswalk_dispositions", "dependencies", "dependency_loops",
     "refused_flows",
     "scenarios", "scenario_omissions", "thresholds", "defects",
-    "receipts", "proposals", "review_events", "deferred_populations",
+    "receipts", "review_commissions", "proposals", "review_events",
+    "deferred_populations",
     "closure_requirement_profiles", "closure_claim_contracts",
     "model_allocations", "function_allocations", "loop_hazard_controls",
     "bottleneck_dispositions",
@@ -601,25 +602,67 @@ RUBRIC_STATUS_CANDIDATE = "candidate — author confirmation pending"
 RUBRIC_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 READINESS_MET = {"met-mechanically", "met-in-form"}
 
-# The scope-review protocol: R7's evidence contract and admissibility criteria
-# live in one document, bound here by needle and by status line so neither can
-# flip alone. It shipped as a candidate; the author confirmed it on 2026-08-09
-# with the basis recorded on the binding and in the protocol's own
-# confirmation record — the severity rubric's two-state history. The
-# commitment record inside `review_protocol` stays null until the author
-# commissions a review; plant and seed pre-images are constructed only then,
-# held outside the repository, and only their SHA-256 digests ever enter this
-# source. A commitment may exist only against a confirmed protocol, and so may
-# the designation of the severity owner and independent checker — real
-# recorded identities, distinct people, neither the pre-image custodian; a
-# role-echo placeholder is a fabricated identity the mechanical check cannot
-# see, so the substance stays reviewed.
+# The amended scope-review protocol is author-confirmed and byte-bound at
+# commissioning. Commissions are append-only top-level records. They carry
+# only digests of the author-held plant and seed pre-images, never pre-images.
+# A terminal event derives independence from the current-source commission,
+# panel, intake, chronology, Darshu/Dhanush records, reveal, and controls.
 PROTOCOL_DOC = pathlib.Path(
     "new-book-plans/full-society-scope-review-protocol.md")
 PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
-PROTOCOL_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
+PROTOCOL_STATUS_CONFIRMED = (
+    "author-confirmed 2026-08-14 — amended protocol basis recorded")
 SHA256_HEX_RE = re.compile(r"^[0-9a-f]{64}$")
+GIT_COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")
 ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+UTC_INSTANT_RE = re.compile(
+    r"^\d{4}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\dZ$")
+REVIEW_CRITERIA = (
+    "declared-rights", "declared-liberties", "declared-powers",
+    "declared-duties", "protected-private-boundaries",
+    "cross-domain-dependencies", "ordinary-life-account",
+    "failure-and-recovery-paths", "adequacy", "accessibility-equality",
+    "continuity", "resilience", "sustainability", "safety", "resource",
+)
+REVIEW_PACKET_PATHS = (
+    "new-book-plans/full-society-ledger.json",
+    "new-book-plans/full-society-ledger.md",
+    "new-book-plans/full-society-reader-ledger.md",
+    "new-book-plans/book-1-constitutional-coverage-map.md",
+    "new-book-plans/full-society-boundary-decision.md",
+    "new-book-plans/book-1-assurance-portfolio-decision.md",
+    "new-book-plans/full-society-scope-review-protocol.md",
+    "new-book-plans/constitutional-closure-and-model-allocation-audit.md",
+)
+REVIEWER_CONSENT = "consented-to-the-commissioned-review"
+REVIEWER_CONFLICT_CLEAR = (
+    "no-reviewed-artifact-authorship-or-generation; not-custodian-darshu-"
+    "or-dhanush; no-declared-conflict")
+REVIEWER_COMPENSATION_CLEAR = "not-findings-contingent"
+PROPOSAL_CLASSIFICATIONS = (
+    "material-omission", "retained-limit", "duplicate", "immaterial",
+    *UNESTABLISHED_DISPOSITIONS,
+)
+GATE_A_PERMITTED_CLAIM = (
+    "The project has a versioned, reviewable scope map and assurance program.")
+GATE_A_ACCEPTANCE_LOCK = "not-passed"
+REQUIRED_VERIFY_COMMANDS = (
+    "python3 new-book-plans/14-reader-evidence.py --check",
+    "python3 new-book-plans/14-reader-evidence.py --check --execute",
+    "python3 new-book-plans/17-full-society-power-source-manifest.py --check",
+    "python3 new-book-plans/13-full-society-ledger.py",
+    "python3 new-book-plans/13-full-society-ledger.py --check",
+    "python3 new-book-plans/16-constitutional-closure.py",
+    "python3 new-book-plans/16-constitutional-closure.py --check",
+    "./verify.sh --quick", "./verify.sh", "git diff --check",
+)
+GATE_A_ASSURANCE_REFS = tuple(
+    f'new-book-plans/full-society-ledger.json::"id": "FS-RTE-{n:02d}"'
+    for n in range(1, 8)
+) + (
+    "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
+    "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit",
+)
 
 # Second output: the coverage map's section-3 table is a generated region of
 # this ledger — the ratified cell texts live verbatim-frozen on the legacy-row
@@ -680,6 +723,7 @@ RECORD_ARRAYS = [
     "dependency_loops",
     "loop_hazard_controls",
     "bottleneck_dispositions",
+    "review_commissions",
 ]
 ARRAY_RECORD_TYPES = {
     "domains": "domain",
@@ -701,6 +745,7 @@ ARRAY_RECORD_TYPES = {
     "receipts": "resolution_receipt",
     "proposals": "proposal",
     "review_events": "review_event",
+    "review_commissions": "review_commission",
     "closure_requirement_profiles": "closure_requirement_profile",
     "closure_claim_contracts": "closure_claim_contract",
     "model_allocations": "model_allocation",
@@ -950,8 +995,8 @@ DOMAIN_BUCKETS = [
 def validate_header(src: dict):
     if src.get("spdx") != "CC-BY-4.0":
         raise LedgerError('reviewed source must declare "spdx": "CC-BY-4.0"')
-    if type(src.get("schema_version")) is not int or src["schema_version"] != 3:
-        raise LedgerError("schema_version must be the integer 3")
+    if type(src.get("schema_version")) is not int or src["schema_version"] != 4:
+        raise LedgerError("schema_version must be the integer 4")
     require_str(src, "title", "header")
     if src.get("status") != EXPECTED_STATUS:
         raise LedgerError(f"status must be {EXPECTED_STATUS}")
@@ -3613,189 +3658,571 @@ def splice_coverage(text: str, body: str) -> str:
                          text, count=1)
 
 
+def _require_utc(value, context: str):
+    if not isinstance(value, str) or not UTC_INSTANT_RE.fullmatch(value):
+        raise LedgerError(
+            f"{context} must be canonical UTC YYYY-MM-DDTHH:MM:SSZ")
+    return value
+
+
+def review_scope_digest(src: dict) -> str:
+    """Digest only the semantic map and assurance program.
+
+    Review administration, deferrals, acceptance metadata, and closure are
+    excluded. R7's event-driven state fields are normalised because a
+    qualifying event changes only route availability, not the reviewed map.
+    """
+    excluded = {
+        "review_protocol", "review_commissions", "proposals",
+        "review_events", "deferred_populations", "closure_record",
+        "acceptance_gate",
+    }
+    payload = {k: copy.deepcopy(v) for k, v in src.items()
+               if k not in excluded}
+    for route in payload.get("routes", []):
+        if route.get("id") == "FS-RTE-07":
+            for key in ("status", "route_status", "consequence",
+                        "closure_condition", "negative_control"):
+                route.pop(key, None)
+    return _canonical_digest(payload)
+
+
+def _proposal_intake_digest(event_ref: str, proposals: list) -> str:
+    fields = ("id", "title", "proposal", "source_kind", "source_identity",
+              "received_at_utc", "review_event_ref")
+    payload = {
+        "review_event_ref": event_ref,
+        "ordered_proposals": [
+            {key: row[key] for key in fields} for row in proposals
+        ],
+    }
+    return _canonical_digest(payload)
+
+
+COMMISSION_KEYS = [
+    "id", "title", "source_version", "scope_sha256", "protocol_sha256",
+    "plant_commitment_sha256", "seed_commitment_sha256",
+    "commissioned_at_utc", "received_window", "cutoff_at_utc",
+    "custodian_identity", "reviewers", "criterion_coverage", "packet_paths",
+]
+REVIEWER_KEYS = [
+    "identity", "discipline", "criterion_refs", "consent_attestation",
+    "conflict_attestation", "compensation_attestation",
+]
+
+
+_PRIOR_REVIEW_STATE = None
+
+
+def _prior_review_state():
+    """Nearest visible first-parent review state.
+
+    If the working source differs from HEAD, HEAD is the predecessor. On a
+    clean tree, HEAD^ is the predecessor. This is a visible-Git-history
+    append-only check, not resistance to rewritten history.
+    """
+    global _PRIOR_REVIEW_STATE
+    if _PRIOR_REVIEW_STATE is not None:
+        return _PRIOR_REVIEW_STATE
+    changed = subprocess.run(
+        ["git", "diff", "--quiet", "HEAD", "--", str(SOURCE)],
+        cwd=ROOT, check=False,
+    ).returncode
+    revision = "HEAD" if changed == 1 else "HEAD^"
+    proc = subprocess.run(
+        ["git", "show", f"{revision}:{SOURCE.as_posix()}"],
+        cwd=ROOT, check=False, capture_output=True, text=True,
+    )
+    if proc.returncode != 0:
+        _PRIOR_REVIEW_STATE = {
+            "review_commissions": [], "proposals": [], "review_events": []}
+    else:
+        prior = json.loads(proc.stdout)
+        _PRIOR_REVIEW_STATE = {
+            key: prior.get(key, [])
+            for key in ("review_commissions", "proposals", "review_events")
+        }
+    return _PRIOR_REVIEW_STATE
+
+
+def validate_review_history(src: dict):
+    prior = _prior_review_state()
+    for key in ("review_commissions", "proposals", "review_events"):
+        previous = prior[key]
+        current = src.get(key, [])
+        if current[:len(previous)] != previous:
+            raise LedgerError(
+                f"{key}: visible first-parent history must remain an exact "
+                "append-only prefix; failed and stale records cannot be "
+                "deleted or rewritten"
+            )
+
+
+def validate_review_commissions(src: dict):
+    rp = src["review_protocol"]
+    designation = rp.get("designation")
+    for i, rec in enumerate(src.get("review_commissions", [])):
+        ctx = f"review_commissions[{i}] ({rec.get('id', '?')})"
+        exact_keys(rec, COMMISSION_KEYS, ctx)
+        require_str(rec, "title", ctx)
+        source_version = require_str(rec, "source_version", ctx)
+        for key in ("scope_sha256", "protocol_sha256",
+                    "plant_commitment_sha256", "seed_commitment_sha256"):
+            value = require_str(rec, key, ctx)
+            if not SHA256_HEX_RE.fullmatch(value):
+                raise LedgerError(
+                    f"{ctx}.{key} must be 64 lowercase hex characters")
+        if rec["plant_commitment_sha256"] == rec["seed_commitment_sha256"]:
+            raise LedgerError(
+                f"{ctx}: plant and seed commitments must be distinct")
+        commissioned = _require_utc(
+            rec["commissioned_at_utc"], f"{ctx}.commissioned_at_utc")
+        window = rec["received_window"]
+        if not isinstance(window, dict):
+            raise LedgerError(f"{ctx}.received_window must be an object")
+        exact_keys(window, ["opens_at_utc", "closes_at_utc"],
+                   f"{ctx}.received_window")
+        opens = _require_utc(window["opens_at_utc"],
+                             f"{ctx}.received_window.opens_at_utc")
+        closes = _require_utc(window["closes_at_utc"],
+                              f"{ctx}.received_window.closes_at_utc")
+        cutoff = _require_utc(rec["cutoff_at_utc"],
+                              f"{ctx}.cutoff_at_utc")
+        if not commissioned < opens < closes <= cutoff:
+            raise LedgerError(
+                f"{ctx}: chronology must be commissioned < open < close <= cutoff")
+        if designation is None:
+            raise LedgerError(
+                f"{ctx}: commissioning requires the named Darshu/Dhanush designation")
+        custodian = require_str(rec, "custodian_identity", ctx)
+        if custodian != designation["custodian"]:
+            raise LedgerError(
+                f"{ctx}: custodian_identity must equal the designated custodian")
+        reviewers = rec["reviewers"]
+        if not isinstance(reviewers, list) or not reviewers:
+            raise LedgerError(f"{ctx}: reviewers must be a non-empty list")
+        identities = []
+        disciplines = set()
+        covered = set()
+        barred = {designation["severity_owner"],
+                  designation["independent_checker"], custodian}
+        for j, reviewer in enumerate(reviewers):
+            rctx = f"{ctx}.reviewers[{j}]"
+            if not isinstance(reviewer, dict):
+                raise LedgerError(f"{rctx} must be an object")
+            exact_keys(reviewer, REVIEWER_KEYS, rctx)
+            identity = require_str(reviewer, "identity", rctx)
+            discipline = require_str(reviewer, "discipline", rctx)
+            if identity in barred:
+                raise LedgerError(
+                    f"{rctx}: reviewer conflicts with custodian, Darshu, or Dhanush")
+            identities.append(identity)
+            disciplines.add(discipline)
+            refs = reviewer["criterion_refs"]
+            if not isinstance(refs, list) or not refs:
+                raise LedgerError(f"{rctx}.criterion_refs must be non-empty")
+            canonical = [item for item in REVIEW_CRITERIA if item in refs]
+            if refs != canonical or len(refs) != len(set(refs)):
+                raise LedgerError(
+                    f"{rctx}.criterion_refs must be unique and in canonical order")
+            unknown = set(refs) - set(REVIEW_CRITERIA)
+            if unknown:
+                raise LedgerError(
+                    f"{rctx}.criterion_refs contains unknown criteria: {sorted(unknown)}")
+            covered.update(refs)
+            if reviewer["consent_attestation"] != REVIEWER_CONSENT:
+                raise LedgerError(f"{rctx}: reviewer consent attestation is not exact")
+            if reviewer["conflict_attestation"] != REVIEWER_CONFLICT_CLEAR:
+                raise LedgerError(f"{rctx}: reviewer conflict attestation is not exact")
+            if reviewer["compensation_attestation"] != REVIEWER_COMPENSATION_CLEAR:
+                raise LedgerError(
+                    f"{rctx}: findings-contingent compensation is refused")
+        if len(identities) != len(set(identities)):
+            raise LedgerError(f"{ctx}: reviewer identities must be unique")
+        if len(disciplines) < 2:
+            raise LedgerError(
+                f"{ctx}: the panel must contain at least two disciplines")
+        if rec["criterion_coverage"] != list(REVIEW_CRITERIA):
+            raise LedgerError(
+                f"{ctx}.criterion_coverage must be the exact full criterion list")
+        if covered != set(REVIEW_CRITERIA):
+            raise LedgerError(
+                f"{ctx}: reviewer criterion union must cover every criterion")
+        if rec["packet_paths"] != list(REVIEW_PACKET_PATHS):
+            raise LedgerError(
+                f"{ctx}.packet_paths must be the exact ordered packet manifest")
+        if source_version == src["source_version"]:
+            if rec["scope_sha256"] != review_scope_digest(src):
+                raise LedgerError(
+                    f"{ctx}: current-source commission scope digest is stale")
+            actual_protocol = hashlib.sha256(
+                (ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+            if rec["protocol_sha256"] != actual_protocol:
+                raise LedgerError(
+                    f"{ctx}: current-source commission protocol digest is stale")
+
+
 REVIEW_EVENT_KEYS = [
-    "id", "title", "reviewers", "protocol_ref", "independence",
-    "received_window", "cutoff_date", "seeded_control_outcome",
-    "planted_omission_outcome",
+    "id", "title", "commission_ref", "packet_commit_sha", "source_version",
+    "scope_sha256", "protocol_sha256", "intake_receipt", "control_reveal",
+    "seeded_control", "planted_control", "outcome_status", "outcome_reason",
 ]
 
 
 def validate_review_events(src: dict):
-    """The stopping rule's named review event. independence: true is the R7
-    admissibility test: named reviewer identities, a resolving protocol, and
-    passed controls — the in-repo reviewer corpus can never supply these, and
-    it is never admissible independent-review evidence for closure condition
-    five, by doctrine and by this computation."""
+    commissions = {row["id"]: row
+                   for row in src.get("review_commissions", [])}
     for i, rec in enumerate(src.get("review_events", [])):
         ctx = f"review_events[{i}] ({rec.get('id', '?')})"
         exact_keys(rec, REVIEW_EVENT_KEYS, ctx)
-        for key in ("title", "received_window", "cutoff_date",
-                    "seeded_control_outcome", "planted_omission_outcome"):
-            require_str(rec, key, ctx)
-        if not isinstance(rec["independence"], bool):
-            raise LedgerError(f"{ctx}: independence must be a boolean")
-        reviewers = rec["reviewers"]
-        if not isinstance(reviewers, list):
-            raise LedgerError(f"{ctx}: reviewers must be a list")
-        for j, rv in enumerate(reviewers):
-            exact_keys(rv, ["identity", "discipline"], f"{ctx}.reviewers[{j}]")
-            require_str(rv, "identity", f"{ctx}.reviewers[{j}]")
-            require_str(rv, "discipline", f"{ctx}.reviewers[{j}]")
-        if rec["independence"]:
-            if not reviewers:
-                raise LedgerError(
-                    f"{ctx}: an independent event requires named reviewer "
-                    "identities"
-                )
-            validate_reference(rec["protocol_ref"], f"{ctx}.protocol_ref")
-            for key in ("seeded_control_outcome", "planted_omission_outcome"):
-                if not rec[key].startswith("passed"):
-                    raise LedgerError(
-                        f"{ctx}: an independent event requires its {key} to "
-                        "have passed — a review that misses the plant or "
-                        "whose triage passes the seeds fails its control"
-                    )
-            if rec["protocol_ref"].split("::", 1)[0] != str(PROTOCOL_DOC):
-                raise LedgerError(
-                    f"{ctx}: an independent event must run under the "
-                    f"scope-review protocol ({PROTOCOL_DOC})"
-                )
-            commitment = (src.get("review_protocol") or {}).get(
-                "review_commitment")
-            if not commitment:
-                raise LedgerError(
-                    f"{ctx}: an independent event requires a pre-registered "
-                    "review commitment — plant and seed digests enter this "
-                    "source at commissioning, before the packet is assembled"
-                )
-            open_date = rec["received_window"].split(" ", 1)[0]
-            if not ISO_DATE_RE.match(open_date):
-                raise LedgerError(
-                    f"{ctx}: an independent event's received_window opens "
-                    "with an ISO date (YYYY-MM-DD …) so the commitment's "
-                    "precedence is checkable"
-                )
-            if commitment.get("committed_date", "") > open_date:
-                raise LedgerError(
-                    f"{ctx}: the review commitment must precede the received "
-                    "window — a commitment that postdates its event is no "
-                    "commitment"
-                )
-        else:
-            require_str(rec, "protocol_ref", ctx)
+        require_str(rec, "title", ctx)
+        commission = commissions.get(rec["commission_ref"])
+        if commission is None:
+            raise LedgerError(f"{ctx}: commission_ref names no commission")
+        if not GIT_COMMIT_RE.fullmatch(require_str(rec, "packet_commit_sha", ctx)):
+            raise LedgerError(
+                f"{ctx}.packet_commit_sha must be a 40-character lowercase Git id")
+        for key in ("source_version", "scope_sha256", "protocol_sha256"):
+            if rec[key] != commission[key]:
+                raise LedgerError(f"{ctx}.{key} must equal its commission")
+        intake = rec["intake_receipt"]
+        if not isinstance(intake, dict):
+            raise LedgerError(f"{ctx}.intake_receipt must be an object")
+        exact_keys(intake,
+                   ["frozen_at_utc", "ordered_proposal_ids", "manifest_sha256"],
+                   f"{ctx}.intake_receipt")
+        _require_utc(intake["frozen_at_utc"],
+                     f"{ctx}.intake_receipt.frozen_at_utc")
+        if not isinstance(intake["ordered_proposal_ids"], list):
+            raise LedgerError(
+                f"{ctx}.intake_receipt.ordered_proposal_ids must be a list")
+        if len(intake["ordered_proposal_ids"]) != \
+                len(set(intake["ordered_proposal_ids"])):
+            raise LedgerError(f"{ctx}: intake proposal ids must be unique")
+        if not SHA256_HEX_RE.fullmatch(
+                require_str(intake, "manifest_sha256", f"{ctx}.intake_receipt")):
+            raise LedgerError(f"{ctx}: intake manifest digest is malformed")
+        reveal = rec["control_reveal"]
+        if not isinstance(reveal, dict):
+            raise LedgerError(f"{ctx}.control_reveal must be an object")
+        exact_keys(
+            reveal,
+            ["revealed_at_utc", "plant_preimage_sha256",
+             "seed_preimage_sha256", "planted_proposal_ref", "seed_results",
+             "plant_match_checked_by", "plant_match_reason"],
+            f"{ctx}.control_reveal",
+        )
+        _require_utc(reveal["revealed_at_utc"],
+                     f"{ctx}.control_reveal.revealed_at_utc")
+        for key in ("plant_preimage_sha256", "seed_preimage_sha256"):
+            if not SHA256_HEX_RE.fullmatch(require_str(
+                    reveal, key, f"{ctx}.control_reveal")):
+                raise LedgerError(f"{ctx}.control_reveal.{key} is malformed")
+        planted = reveal["planted_proposal_ref"]
+        if planted is not None and not isinstance(planted, str):
+            raise LedgerError(
+                f"{ctx}.control_reveal.planted_proposal_ref must be null or an id")
+        if not isinstance(reveal["seed_results"], list):
+            raise LedgerError(f"{ctx}.control_reveal.seed_results must be a list")
+        require_str(reveal, "plant_match_checked_by", f"{ctx}.control_reveal")
+        require_str(reveal, "plant_match_reason", f"{ctx}.control_reveal")
+        for key in ("seeded_control", "planted_control"):
+            control = rec[key]
+            if not isinstance(control, dict):
+                raise LedgerError(f"{ctx}.{key} must be an object")
+            exact_keys(control, ["status", "reason"], f"{ctx}.{key}")
+            if control["status"] not in ("passed", "failed"):
+                raise LedgerError(f"{ctx}.{key}.status must be passed or failed")
+            require_str(control, "reason", f"{ctx}.{key}")
+        if rec["outcome_status"] not in ("passed", "failed"):
+            raise LedgerError(f"{ctx}.outcome_status must be passed or failed")
+        require_str(rec, "outcome_reason", ctx)
 
 
 PROPOSAL_KEYS = [
-    "id", "title", "proposal", "source", "received_date", "triaged_date",
-    "materiality_finding", "materiality_reason", "proposal_disposition",
-    "reasons", "review_event_ref",
+    "id", "title", "proposal", "source_kind", "source_identity",
+    "received_at_utc", "triaged_at_utc", "severity_owner_identity",
+    "materiality_finding", "materiality_reason", "classification",
+    "checked_at_utc", "independent_checker_identity", "check_finding",
+    "check_reason", "proposal_disposition", "disposition_at_utc", "reasons",
+    "review_event_ref", "control_kind",
 ]
 PROPOSAL_OPTIONAL = [
-    "severity", "severity_owner", "independent_check", "created_record_refs",
-    "routed_unestablished_disposition", "defect_row_ref",
+    "severity", "created_record_refs", "routed_unestablished_disposition",
+    "defect_row_ref", "retained_limit_binding",
 ]
+
+
+def _expected_retained_binding(src: dict, defect: dict) -> dict:
+    claim = next(row for row in src["claims"]
+                 if row["id"] == defect["affected_claim_ref"])
+    return {
+        "severity": severity_class(defect),
+        "consequence": defect["consequence"],
+        "owner_ref": defect["owner_ref"],
+        "closure_condition": defect["closure_condition"],
+        "applicable_gate_refs": defect["applicable_gate_refs"],
+        "public_claim_restriction": claim["public_claim_restriction"],
+    }
 
 
 def validate_proposals(src: dict, ids: dict):
-    events_by_id = {r["id"]: r for r in src.get("review_events", [])}
-    defect_ids = {r["id"] for r in src.get("defects", [])}
+    events = {row["id"]: row for row in src.get("review_events", [])}
+    commissions = {row["id"]: row
+                   for row in src.get("review_commissions", [])}
+    defects = {row["id"]: row for row in src.get("defects", [])}
+    designation = src["review_protocol"].get("designation")
     for i, rec in enumerate(src.get("proposals", [])):
         ctx = f"proposals[{i}] ({rec.get('id', '?')})"
         exact_keys(rec, PROPOSAL_KEYS, ctx, optional=PROPOSAL_OPTIONAL)
-        for key in ("title", "proposal", "source", "received_date",
-                    "triaged_date", "materiality_reason", "reasons"):
+        for key in ("title", "proposal", "source_identity",
+                    "materiality_reason", "check_reason", "reasons"):
             require_str(rec, key, ctx)
+        event = events.get(rec["review_event_ref"])
+        if event is None:
+            raise LedgerError(f"{ctx}: review_event_ref names no review event")
+        commission = commissions[event["commission_ref"]]
+        received = _require_utc(rec["received_at_utc"],
+                                f"{ctx}.received_at_utc")
+        triaged = _require_utc(rec["triaged_at_utc"],
+                              f"{ctx}.triaged_at_utc")
+        checked = _require_utc(rec["checked_at_utc"],
+                              f"{ctx}.checked_at_utc")
+        disposed = _require_utc(rec["disposition_at_utc"],
+                               f"{ctx}.disposition_at_utc")
+        window = commission["received_window"]
+        if not window["opens_at_utc"] <= received <= window["closes_at_utc"]:
+            raise LedgerError(f"{ctx}: proposal received outside its window")
+        if not received <= triaged <= checked <= disposed:
+            raise LedgerError(
+                f"{ctx}: chronology must be received <= triaged <= checked <= disposed")
+        if designation is None:
+            raise LedgerError(f"{ctx}: Darshu/Dhanush designation is absent")
+        if rec["severity_owner_identity"] != designation["severity_owner"]:
+            raise LedgerError(f"{ctx}: every proposal requires Darshu triage")
+        if rec["independent_checker_identity"] != \
+                designation["independent_checker"]:
+            raise LedgerError(f"{ctx}: every proposal requires Dhanush checking")
+        if rec["check_finding"] not in ("confirmed", "corrected"):
+            raise LedgerError(f"{ctx}.check_finding must be confirmed or corrected")
+        if rec["source_kind"] not in ("reviewer", "seed"):
+            raise LedgerError(f"{ctx}.source_kind must be reviewer or seed")
+        reviewer_ids = {row["identity"] for row in commission["reviewers"]}
+        if rec["source_kind"] == "reviewer" and \
+                rec["source_identity"] not in reviewer_ids:
+            raise LedgerError(f"{ctx}: reviewer source is not on the panel")
+        if rec["source_kind"] == "seed" and \
+                rec["source_identity"] != "committed-seed-control":
+            raise LedgerError(f"{ctx}: seed source identity is not exact")
+        if rec["control_kind"] not in ("none", "seed", "plant-match"):
+            raise LedgerError(f"{ctx}: unknown control_kind")
+        if rec["control_kind"] == "seed" and rec["source_kind"] != "seed":
+            raise LedgerError(f"{ctx}: seed controls must record seeded origin")
+        if rec["control_kind"] == "plant-match" and \
+                rec["source_kind"] != "reviewer":
+            raise LedgerError(
+                f"{ctx}: a planted match must be independently reviewer-sourced")
         finding = rec["materiality_finding"]
         if finding not in ("material", "immaterial"):
-            raise LedgerError(
-                f"{ctx}: materiality_finding must be material or immaterial, "
-                "judged under the stopping rule's materiality test"
-            )
+            raise LedgerError(f"{ctx}: unknown materiality_finding")
+        if finding == "material":
+            if rec.get("severity") not in ("critical", "material"):
+                raise LedgerError(
+                    f"{ctx}: material proposals require critical or material severity")
+        elif "severity" in rec:
+            raise LedgerError(f"{ctx}: severity belongs only on material proposals")
+        classification = rec["classification"]
+        if classification not in PROPOSAL_CLASSIFICATIONS:
+            raise LedgerError(f"{ctx}: unknown classification")
         disposition = rec["proposal_disposition"]
         if disposition not in PROPOSAL_DISPOSITIONS:
             raise LedgerError(f"{ctx}: unknown proposal_disposition")
-        event = events_by_id.get(rec["review_event_ref"])
-        if event is None:
-            raise LedgerError(f"{ctx}: review_event_ref names no review event")
-        if finding == "material":
-            sev = rec.get("severity")
-            if sev not in ("critical", "material"):
-                raise LedgerError(
-                    f"{ctx}: a material proposal carries a severity class of "
-                    "critical or material under the candidate rubric"
-                )
-            validate_reference(rec.get("severity_owner", ""),
-                              f"{ctx}.severity_owner")
-            check = rec.get("independent_check")
-            if not isinstance(check, str) or not check:
-                raise LedgerError(
-                    f"{ctx}: a material proposal requires its independent check"
-                )
-            if event["independence"]:
-                validate_reference(check, f"{ctx}.independent_check")
-            elif not check.startswith("none-recorded — "):
-                raise LedgerError(
-                    f"{ctx}: on a non-independent event the check is recorded "
-                    "as absent with its reason, never fabricated"
-                )
-        else:
-            for key in ("severity", "severity_owner", "independent_check"):
-                if key in rec:
-                    raise LedgerError(
-                        f"{ctx}: {key} belongs only on material proposals — "
-                        "minor is the editorial band inside the rubric prose, "
-                        "not a materiality escape hatch"
-                    )
-            if disposition != "classified-out":
-                raise LedgerError(
-                    f"{ctx}: an immaterial proposal is classified out with "
-                    "reasons"
-                )
         if disposition == "added":
+            if finding != "material" or classification != "material-omission":
+                raise LedgerError(
+                    f"{ctx}: added requires material-omission classification")
             refs = rec.get("created_record_refs")
             if not isinstance(refs, list) or not refs:
-                raise LedgerError(
-                    f"{ctx}: added means records were created — name them"
-                )
+                raise LedgerError(f"{ctx}: added must name created records")
             for j, ref in enumerate(refs):
-                if ref in ids:
-                    continue
-                validate_reference(ref, f"{ctx}.created_record_refs[{j}]")
+                if ref not in ids:
+                    validate_reference(ref, f"{ctx}.created_record_refs[{j}]")
         elif "created_record_refs" in rec:
-            raise LedgerError(
-                f"{ctx}: created_record_refs belongs only on added proposals"
-            )
+            raise LedgerError(f"{ctx}: created_record_refs belongs only on added")
         if disposition == "classified-out":
-            routed = rec.get("routed_unestablished_disposition")
-            low = rec["reasons"].lower()
-            if routed is not None:
-                if routed not in UNESTABLISHED_DISPOSITIONS:
-                    raise LedgerError(
-                        f"{ctx}: unknown routed unestablished disposition"
-                    )
-            elif "duplicate" not in low and "immaterial" not in low:
+            allowed = {"duplicate", "immaterial", *UNESTABLISHED_DISPOSITIONS}
+            if classification not in allowed:
                 raise LedgerError(
-                    f"{ctx}: a classification that routes the item outward "
-                    "carries the matching Unestablished disposition; only a "
-                    "duplicate or immaterial classification carries none"
-                )
+                    f"{ctx}: classified-out classification is not permitted")
+            routed = rec.get("routed_unestablished_disposition")
+            if classification in UNESTABLISHED_DISPOSITIONS:
+                if routed != classification:
+                    raise LedgerError(
+                        f"{ctx}: classification-to-Unestablished mapping must be exact")
+            elif routed is not None:
+                raise LedgerError(
+                    f"{ctx}: duplicate or immaterial carries no routed disposition")
         elif "routed_unestablished_disposition" in rec:
             raise LedgerError(
-                f"{ctx}: routing dispositions belong only on classified-out "
-                "proposals"
-            )
+                f"{ctx}: routing disposition belongs only on classified-out")
         if disposition == "retained-limit":
-            dref = rec.get("defect_row_ref")
-            if dref not in defect_ids:
+            if finding != "material" or classification != "retained-limit":
                 raise LedgerError(
-                    f"{ctx}: retention creates or joins a stable defect row — "
-                    "the retained limit must link one"
-                )
-        elif "defect_row_ref" in rec:
+                    f"{ctx}: retained-limit disposition requires matching classification")
+            defect = defects.get(rec.get("defect_row_ref"))
+            if defect is None:
+                raise LedgerError(f"{ctx}: retained limit must link a defect row")
+            expected = _expected_retained_binding(src, defect)
+            if rec.get("retained_limit_binding") != expected:
+                raise LedgerError(
+                    f"{ctx}: retained-limit binding must match the defect and claim")
+            if rec["severity"] != expected["severity"]:
+                raise LedgerError(
+                    f"{ctx}: retained-limit severity must match its defect")
+        else:
+            for key in ("defect_row_ref", "retained_limit_binding"):
+                if key in rec:
+                    raise LedgerError(
+                        f"{ctx}: {key} belongs only on retained-limit")
+
+
+def validate_review_event_completeness(src: dict):
+    proposals_by_id = {row["id"]: row for row in src.get("proposals", [])}
+    commissions = {row["id"]: row
+                   for row in src.get("review_commissions", [])}
+    designation = src["review_protocol"]["designation"]
+    for rec in src.get("review_events", []):
+        ctx = f"review_events ({rec['id']})"
+        commission = commissions[rec["commission_ref"]]
+        ordered_ids = rec["intake_receipt"]["ordered_proposal_ids"]
+        actual_ids = [row["id"] for row in src.get("proposals", [])
+                      if row["review_event_ref"] == rec["id"]]
+        if ordered_ids != actual_ids:
             raise LedgerError(
-                f"{ctx}: defect_row_ref belongs only on retained-limit "
-                "proposals"
+                f"{ctx}: intake ordered proposal ids must equal the event proposal set")
+        ordered = [proposals_by_id[pid] for pid in ordered_ids]
+        expected_digest = _proposal_intake_digest(rec["id"], ordered)
+        if rec["intake_receipt"]["manifest_sha256"] != expected_digest:
+            raise LedgerError(f"{ctx}: intake manifest digest does not match")
+        frozen = rec["intake_receipt"]["frozen_at_utc"]
+        reveal = rec["control_reveal"]
+        revealed = reveal["revealed_at_utc"]
+        if not commission["received_window"]["closes_at_utc"] <= frozen <= revealed:
+            raise LedgerError(
+                f"{ctx}: intake freezes after window close and before reveal")
+        if revealed < commission["cutoff_at_utc"]:
+            raise LedgerError(f"{ctx}: controls may not reveal before cutoff")
+        for row in ordered:
+            if row["triaged_at_utc"] > revealed or row["checked_at_utc"] > revealed:
+                raise LedgerError(
+                    f"{ctx}: triage and Dhanush checking must finish before reveal")
+        seed_rows = [row for row in ordered if row["control_kind"] == "seed"]
+        results = reveal["seed_results"]
+        result_refs = [row.get("proposal_ref") for row in results]
+        if len(result_refs) != len(set(result_refs)):
+            raise LedgerError(f"{ctx}: seed result proposal refs must be unique")
+        if set(result_refs) != {row["id"] for row in seed_rows}:
+            raise LedgerError(
+                f"{ctx}: reveal must adjudicate every and only seeded proposals")
+        expected_sides = {row.get("expected_materiality") for row in results}
+        if expected_sides != {"material", "immaterial"}:
+            raise LedgerError(
+                f"{ctx}: seeds must cover both material and immaterial cases")
+        seed_ok = (
+            reveal["seed_preimage_sha256"] == commission["seed_commitment_sha256"]
+        )
+        for j, result in enumerate(results):
+            rctx = f"{ctx}.control_reveal.seed_results[{j}]"
+            exact_keys(
+                result,
+                ["proposal_ref", "expected_materiality", "expected_severity",
+                 "expected_disposition", "verified_by", "verification_reason"],
+                rctx,
             )
+            row = proposals_by_id[result["proposal_ref"]]
+            if result["expected_materiality"] not in ("material", "immaterial"):
+                raise LedgerError(f"{rctx}: invalid expected materiality")
+            if result["expected_materiality"] == "material":
+                if result["expected_severity"] not in ("critical", "material"):
+                    raise LedgerError(f"{rctx}: material seed needs expected severity")
+            elif result["expected_severity"] is not None:
+                raise LedgerError(f"{rctx}: immaterial seed severity must be null")
+            if result["expected_disposition"] not in PROPOSAL_DISPOSITIONS:
+                raise LedgerError(f"{rctx}: invalid expected disposition")
+            if result["verified_by"] != designation["independent_checker"]:
+                raise LedgerError(f"{rctx}: Dhanush must verify seed results")
+            require_str(result, "verification_reason", rctx)
+            if (row["materiality_finding"] != result["expected_materiality"]
+                    or row.get("severity") != result["expected_severity"]
+                    or row["proposal_disposition"] != result["expected_disposition"]):
+                seed_ok = False
+        plant_ref = reveal["planted_proposal_ref"]
+        plant_row = proposals_by_id.get(plant_ref)
+        plant_ok = (
+            reveal["plant_preimage_sha256"] == commission["plant_commitment_sha256"]
+            and plant_row is not None
+            and plant_row["control_kind"] == "plant-match"
+            and plant_row["source_kind"] == "reviewer"
+            and reveal["plant_match_checked_by"] ==
+            designation["independent_checker"]
+        )
+        expected_seed = "passed" if seed_ok else "failed"
+        expected_plant = "passed" if plant_ok else "failed"
+        if rec["seeded_control"]["status"] != expected_seed:
+            raise LedgerError(
+                f"{ctx}: seeded-control status must be derived from reveal and results")
+        if rec["planted_control"]["status"] != expected_plant:
+            raise LedgerError(
+                f"{ctx}: planted-control status must be derived from reveal and match")
+        expected_outcome = (
+            "passed" if expected_seed == expected_plant == "passed" else "failed")
+        if rec["outcome_status"] != expected_outcome:
+            raise LedgerError(
+                f"{ctx}: outcome_status must be derived from both controls")
+
+
+def qualifying_review_events(src: dict) -> list:
+    scope = review_scope_digest(src)
+    protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    return [
+        row for row in src.get("review_events", [])
+        if row["outcome_status"] == "passed"
+        and row["source_version"] == src["source_version"]
+        and row["scope_sha256"] == scope
+        and row["protocol_sha256"] == protocol
+    ]
+
+
+R7_UNBUILT = {
+    "status": "unbuilt",
+    "route_status": "unbuilt",
+    "consequence": "independent scope review cannot yet be admitted",
+    "closure_condition": (
+        "the amended protocol and in-repo gate are confirmed; a named-panel "
+        "commission, terminal current-source event, frozen intake, public "
+        "dispositions, reveal, and passed controls remain external work"),
+}
+R7_AVAILABLE = {
+    "status": "available",
+    "route_status": "available",
+    "consequence": (
+        "the qualifying event warrants only that its named panel examined the "
+        "named scope and every frozen-intake proposal received a public disposition"),
+    "closure_condition": (
+        "a terminal current-source qualifying event exists; availability is "
+        "limited to proposal-and-public-disposition evidence and is never built"),
+}
+
+
+def validate_review_route_state(src: dict):
+    route = next(row for row in src["routes"] if row["id"] == "FS-RTE-07")
+    if route["route_status"] == "built" or route["status"] == "built":
+        raise LedgerError("FS-RTE-07 is never built by a review event")
+    expected = R7_AVAILABLE if qualifying_review_events(src) else R7_UNBUILT
+    for key, value in expected.items():
+        if route[key] != value:
+            raise LedgerError(
+                f"FS-RTE-07.{key} must follow the qualifying-event state exactly")
 
 
 def validate_severity_rubric(src: dict):
@@ -3830,146 +4257,51 @@ def validate_severity_rubric(src: dict):
 
 
 def validate_review_protocol(src: dict):
-    """The scope-review protocol binding. The protocol document carries R7's
-    evidence contract and admissibility criteria, author-confirmed with the
-    basis recorded; the commitment record stays null and the designation
-    absent until the author commissions a review. Pre-images are author-held
-    outside the repository — only their SHA-256 digests ever enter this
-    source, and an independent review event is refused without them
-    (validate_review_events). The designation names the severity owner and
-    independent checker: real recorded identities, distinct people, neither
-    the pre-image custodian — the mechanical checks are exact-string form;
-    the substance (one person under two spellings, or a label standing in
-    for a person) is reviewed, not computed."""
+    """Bind the amended confirmed protocol and Darshu/Dhanush designation.
+
+    Commissions live in the append-only `review_commissions` population. The
+    protocol record contains no singular mutable commitment slot.
+    """
     if "review_protocol" not in src:
-        raise LedgerError(
-            "review_protocol must be present — the scope-review protocol "
-            "binding, null commitment until the author commissions a review"
-        )
+        raise LedgerError("review_protocol must be present")
     rp = src["review_protocol"]
     ctx = "review_protocol"
     if not isinstance(rp, dict):
         raise LedgerError(f"{ctx} must be an object")
     exact_keys(rp, ["protocol_ref", "protocol_status", "status_line_ref",
-                    "review_commitment"], ctx,
-               optional=["confirmation_basis", "designation"])
+                    "confirmation_basis", "designation"], ctx)
     status = require_str(rp, "protocol_status", ctx)
-    if status == PROTOCOL_STATUS_CANDIDATE:
-        if "confirmation_basis" in rp:
-            raise LedgerError(
-                f"{ctx}: a candidate protocol carries no confirmation basis"
-            )
-    elif status == PROTOCOL_STATUS_CONFIRMED:
-        require_str(rp, "confirmation_basis", ctx)
-    else:
+    if status != PROTOCOL_STATUS_CONFIRMED:
         raise LedgerError(
-            f"{ctx}: protocol_status must be exactly "
-            f"{PROTOCOL_STATUS_CANDIDATE!r} or "
-            f"{PROTOCOL_STATUS_CONFIRMED!r} — confirmation is a recorded "
-            "author act, never a rewording"
-        )
-    if rp["review_commitment"] is not None and \
-            status != PROTOCOL_STATUS_CONFIRMED:
-        raise LedgerError(
-            f"{ctx}: a commitment may exist only against a confirmed "
-            "protocol — confirmation precedes commissioning"
-        )
-    designation = rp.get("designation")
-    if designation is not None:
-        if status != PROTOCOL_STATUS_CONFIRMED:
-            raise LedgerError(
-                f"{ctx}: a designation may exist only against a confirmed "
-                "protocol — confirmation precedes commissioning"
-            )
-        dctx = f"{ctx}.designation"
-        if not isinstance(designation, dict):
-            raise LedgerError(f"{dctx} must be an object")
-        exact_keys(designation,
-                   ["severity_owner", "independent_checker", "custodian",
-                    "designated_date", "basis"], dctx)
-        for key in ("severity_owner", "independent_checker", "custodian",
-                    "basis"):
-            require_str(designation, key, dctx)
-        ddate = require_str(designation, "designated_date", dctx)
-        if not ISO_DATE_RE.match(ddate):
-            raise LedgerError(
-                f"{dctx}.designated_date must be an ISO date (YYYY-MM-DD)"
-            )
-        if designation["severity_owner"] == \
-                designation["independent_checker"]:
-            raise LedgerError(
-                f"{dctx}: the severity owner and the independent checker "
-                "must be distinct people"
-            )
-        for key in ("severity_owner", "independent_checker"):
-            if designation[key] == designation["custodian"]:
-                raise LedgerError(
-                    f"{dctx}: the pre-image custodian may not triage — "
-                    f"{key} equals the custodian identity"
-                )
+            f"{ctx}.protocol_status must be the author-confirmed amended status")
+    require_str(rp, "confirmation_basis", ctx)
     ref = require_str(rp, "protocol_ref", ctx)
     validate_reference(ref, f"{ctx}.protocol_ref")
     if ref.split("::", 1)[0] != str(PROTOCOL_DOC):
-        raise LedgerError(
-            f"{ctx}.protocol_ref must resolve into the scope-review protocol "
-            f"document ({PROTOCOL_DOC})"
-        )
+        raise LedgerError(f"{ctx}.protocol_ref must resolve into {PROTOCOL_DOC}")
     line_ref = require_str(rp, "status_line_ref", ctx)
     validate_reference(line_ref, f"{ctx}.status_line_ref")
     line_path, line_needle = line_ref.split("::", 1)
-    if line_path != str(PROTOCOL_DOC):
+    if line_path != str(PROTOCOL_DOC) or line_needle != "Status: " + status:
         raise LedgerError(
-            f"{ctx}.status_line_ref must resolve into the scope-review "
-            f"protocol document ({PROTOCOL_DOC})"
-        )
-    if line_needle != "Status: " + status:
-        raise LedgerError(
-            f"{ctx}: the protocol document's status line must record the "
-            "recorded status — the document and this source flip together or "
-            "not at all"
-        )
-    commitment = rp["review_commitment"]
-    if commitment is None:
-        return
-    cctx = f"{ctx}.review_commitment"
-    if not isinstance(commitment, dict):
-        raise LedgerError(f"{cctx} must be null or an object")
-    exact_keys(commitment,
-               ["plant_commitment_sha256", "seed_commitment_sha256",
-                "protocol_sha256", "committed_date", "custody"], cctx)
-    for key in ("plant_commitment_sha256", "seed_commitment_sha256",
-                "protocol_sha256"):
-        val = require_str(commitment, key, cctx)
-        if not SHA256_HEX_RE.match(val):
-            raise LedgerError(
-                f"{cctx}.{key} must be 64 lowercase hex characters — the "
-                "SHA-256 digest of an author-held pre-image or of the "
-                "protocol document"
-            )
-    if commitment["plant_commitment_sha256"] == \
-            commitment["seed_commitment_sha256"]:
-        raise LedgerError(
-            f"{cctx}: the plant and seed commitments must be distinct "
-            "pre-images"
-        )
-    actual = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
-    if commitment["protocol_sha256"] != actual:
-        raise LedgerError(
-            f"{cctx}.protocol_sha256 does not match the protocol document's "
-            "current bytes — a commitment binds the exact protocol text; "
-            "re-commission after any protocol edit"
-        )
-    date = require_str(commitment, "committed_date", cctx)
-    if not ISO_DATE_RE.match(date):
-        raise LedgerError(
-            f"{cctx}.committed_date must be an ISO date (YYYY-MM-DD)"
-        )
-    custody = require_str(commitment, "custody", cctx)
-    if "outside the repo" not in custody:
-        raise LedgerError(
-            f"{cctx}.custody must state that pre-images stay outside the "
-            "repository — only digests ever enter this source"
-        )
+            f"{ctx}: protocol status and document status line must match exactly")
+    designation = rp["designation"]
+    dctx = f"{ctx}.designation"
+    if not isinstance(designation, dict):
+        raise LedgerError(f"{dctx} must be an object")
+    exact_keys(designation,
+               ["severity_owner", "independent_checker", "custodian",
+                "designated_date", "basis"], dctx)
+    for key in ("severity_owner", "independent_checker", "custodian", "basis"):
+        require_str(designation, key, dctx)
+    if not ISO_DATE_RE.fullmatch(require_str(
+            designation, "designated_date", dctx)):
+        raise LedgerError(f"{dctx}.designated_date must be YYYY-MM-DD")
+    if designation["severity_owner"] == designation["independent_checker"]:
+        raise LedgerError(f"{dctx}: Darshu and Dhanush must be distinct people")
+    if designation["custodian"] in (
+            designation["severity_owner"], designation["independent_checker"]):
+        raise LedgerError(f"{dctx}: the pre-image custodian may not triage or check")
 
 
 def _gate_a_condition_1_deferred(src: dict):
@@ -4000,8 +4332,7 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
         if row["blocking"]
         and "gate-a" in defects_by_id[rid]["applicable_gate_refs"]
     )
-    independent = [e for e in src.get("review_events", [])
-                   if e.get("independence") is True]
+    independent = qualifying_review_events(src)
     rows = []
     if deferred:
         rows.append((conds[0], "unmet",
@@ -4032,12 +4363,13 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
                  "unresolved object; substance is reviewed, not proven"))
     if independent:
         rows.append((conds[4], "met-in-form",
-                     "an independent review event exists; its proposals carry "
-                     "their dispositions"))
+                     "a current-source qualifying terminal event exists; its "
+                     "frozen intake equals the fully checked and publicly "
+                     "disposed proposal set"))
     else:
         rows.append((conds[4], "unmet-external",
-                     "no review event with independence true exists, and the "
-                     "in-repo reviewer corpus is never admissible for this "
+                     "no current-source qualifying terminal event exists, and "
+                     "the in-repo reviewer corpus is never admissible for this "
                      "condition"))
     preconditions = []
     successor = next(
@@ -4059,51 +4391,122 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
     return rows, preconditions
 
 
-def validate_closure_record(src: dict, readiness):
+def _gate_a_residual_ids(src: dict, resolution: dict) -> list:
+    return sorted(
+        row["id"] for row in src["defects"]
+        if resolution[row["id"]]["resolution_status"] == "unresolved-for-claim"
+        and severity_class(row) != "critical"
+        and "gate-a" in row["applicable_gate_refs"]
+    )
+
+
+def _gate_a_claim_limitations(src: dict, residual_ids: list) -> list:
+    defects = {row["id"]: row for row in src["defects"]}
+    claims = {row["id"]: row for row in src["claims"]}
+    return [
+        {
+            "defect_ref": rid,
+            "affected_claim_ref": defects[rid]["affected_claim_ref"],
+            "public_claim_restriction": claims[
+                defects[rid]["affected_claim_ref"]]["public_claim_restriction"],
+        }
+        for rid in residual_ids
+    ]
+
+
+def validate_closure_record(src: dict, readiness, resolution: dict):
     if "closure_record" not in src:
         raise LedgerError(
-            "closure_record must be present — null until the author closes"
-        )
+            "closure_record must be present — null until the author closes")
     rec = src["closure_record"]
     if rec is None:
         return
     ctx = "closure_record"
     exact_keys(
         rec,
-        ["gate", "permitted_claim", "source_version", "envelope_ref",
-         "candidate_ids", "review_cutoff", "review_event_ref",
-         "assurance_record_refs", "residual_refs", "claim_limitations",
+        ["gate", "permitted_claim", "candidate_commit_sha", "source_version",
+         "scope_sha256", "envelope_ref", "review_cutoff_at_utc",
+         "review_event_ref", "assurance_record_refs", "residual_refs",
+         "claim_limitations", "verification_receipt",
          "author_ratification_ref"],
         ctx,
     )
-    if rec["envelope_ref"] not in envelope_ids(src):
-        raise LedgerError(f"{ctx}: envelope_ref names no envelope record")
-    if rec["envelope_ref"] == ENVELOPE_STUB_ID:
+    if rec["gate"] != "gate-a":
+        raise LedgerError(f"{ctx}.gate must be gate-a")
+    if rec["permitted_claim"] != GATE_A_PERMITTED_CLAIM:
+        raise LedgerError(f"{ctx}.permitted_claim must be byte-exact")
+    if not GIT_COMMIT_RE.fullmatch(require_str(
+            rec, "candidate_commit_sha", ctx)):
+        raise LedgerError(f"{ctx}.candidate_commit_sha must be a Git id")
+    if rec["source_version"] != src["source_version"]:
+        raise LedgerError(f"{ctx}.source_version must match the closure source")
+    if rec["scope_sha256"] != review_scope_digest(src):
+        raise LedgerError(f"{ctx}.scope_sha256 must match the semantic scope")
+    if rec["envelope_ref"] != "FS-ENV-01":
+        raise LedgerError(f"{ctx}.envelope_ref must be FS-ENV-01")
+    envelope = next(row for row in src["envelope"]
+                    if row["id"] == rec["envelope_ref"])
+    if envelope["envelope_status"] != "versioned-structure":
         raise LedgerError(
-            f"{ctx}: a closure record may not cite the envelope stub — the "
-            "stub can route, never assure"
-        )
-    events_by_id = {r["id"]: r for r in src.get("review_events", [])}
-    event = events_by_id.get(rec["review_event_ref"])
-    if event is None or event.get("independence") is not True:
+            f"{ctx}: envelope must remain versioned structure, never calibration")
+    qualifying = {row["id"]: row for row in qualifying_review_events(src)}
+    event = qualifying.get(rec["review_event_ref"])
+    if event is None:
         raise LedgerError(
-            f"{ctx}: the closure record must name an independent review event"
-        )
+            f"{ctx}: review_event_ref must name a current-source qualifying event")
+    commissions = {row["id"]: row
+                   for row in src.get("review_commissions", [])}
+    commission = commissions[event["commission_ref"]]
+    cutoff = _require_utc(rec["review_cutoff_at_utc"],
+                          f"{ctx}.review_cutoff_at_utc")
+    if cutoff != commission["cutoff_at_utc"]:
+        raise LedgerError(f"{ctx}: review cutoff must equal the event commission")
     rows, preconditions = readiness
     for name, status, reason in list(rows) + list(preconditions):
         if status not in READINESS_MET:
             raise LedgerError(
                 f"{ctx}: a closure record may not exist while a closure "
-                f"condition computes unmet — {name}: {reason}"
-            )
-    validate_reference(rec["author_ratification_ref"],
-                      f"{ctx}.author_ratification_ref")
+                f"condition computes unmet — {name}: {reason}")
+    if rec["assurance_record_refs"] != list(GATE_A_ASSURANCE_REFS):
+        raise LedgerError(
+            f"{ctx}.assurance_record_refs must equal the checker-derived set")
+    for i, ref in enumerate(rec["assurance_record_refs"]):
+        validate_reference(ref, f"{ctx}.assurance_record_refs[{i}]")
+    residuals = _gate_a_residual_ids(src, resolution)
+    if rec["residual_refs"] != residuals:
+        raise LedgerError(f"{ctx}.residual_refs must equal the derived set")
+    limitations = _gate_a_claim_limitations(src, residuals)
+    if rec["claim_limitations"] != limitations:
+        raise LedgerError(
+            f"{ctx}.claim_limitations must bind every derived residual exactly")
+    receipt = rec["verification_receipt"]
+    rctx = f"{ctx}.verification_receipt"
+    if not isinstance(receipt, dict):
+        raise LedgerError(f"{rctx} must be an object")
+    exact_keys(receipt,
+               ["candidate_commit_sha", "verified_at_utc", "commands",
+                "result", "transcript_sha256"], rctx)
+    if receipt["candidate_commit_sha"] != rec["candidate_commit_sha"]:
+        raise LedgerError(f"{rctx}: candidate commit must match closure candidate")
+    _require_utc(receipt["verified_at_utc"], f"{rctx}.verified_at_utc")
+    if receipt["commands"] != list(REQUIRED_VERIFY_COMMANDS):
+        raise LedgerError(f"{rctx}.commands must equal the required verifier chain")
+    if receipt["result"] != "all-passed":
+        raise LedgerError(f"{rctx}.result must be all-passed")
+    if not SHA256_HEX_RE.fullmatch(require_str(
+            receipt, "transcript_sha256", rctx)):
+        raise LedgerError(f"{rctx}.transcript_sha256 is malformed")
+    ratification = require_str(rec, "author_ratification_ref", ctx)
+    validate_reference(ratification, f"{ctx}.author_ratification_ref")
+    needle = ratification.split("::", 1)[1]
+    if not re.search(r"Author statement, \d{4}-\d{2}-\d{2}:", needle):
+        raise LedgerError(
+            f"{ctx}: author ratification must cite a verbatim dated author act")
     if src["acceptance_gate"]["gate_a_status"] != "passed":
         raise LedgerError(
             f"{ctx}: a closure record requires gate_a_status passed, which "
             "this contract refuses — closing Gate A is a deliberate future "
-            "amendment, never a latent flip"
-        )
+            "amendment, never a latent flip")
 
 
 def validate_acceptance(src: dict):
@@ -4121,8 +4524,11 @@ def validate_acceptance(src: dict):
         raise LedgerError(
             "the rollup is non-numeric by rule — no digit may appear in it"
         )
-    if gate["gate_a_status"] != "not-passed":
-        raise LedgerError("gate_a_status must be not-passed until Gate A closes")
+    if gate["gate_a_status"] != GATE_A_ACCEPTANCE_LOCK:
+        raise LedgerError(
+            "gate_a_status must equal the deliberately locked acceptance state")
+    if src.get("closure_record") is None and gate["gate_a_status"] != "not-passed":
+        raise LedgerError("gate_a_status passed requires a closure record")
 
 
 def validate(src: dict):
@@ -4154,15 +4560,19 @@ def validate(src: dict):
     validate_receipts(src, ids, resolution)
     validate_residual_coverage(src)
     validate_review_protocol(src)
+    validate_review_history(src)
+    validate_review_commissions(src)
     validate_review_events(src)
     validate_proposals(src, ids)
+    validate_review_event_completeness(src)
+    validate_review_route_state(src)
     validate_severity_rubric(src)
     validate_deferred(src)
     validate_enum_mapping(src)
     validate_stopping_rule(src)
     validate_acceptance(src)
     readiness = compute_gate_a_readiness(src, resolution)
-    validate_closure_record(src, readiness)
+    validate_closure_record(src, readiness, resolution)
     validate_coverage_region(src)
     return resolution
 
@@ -4368,101 +4778,113 @@ def negative_controls(src: dict) -> int:
     else:
         control("a closure record cannot exist while conditions compute unmet",
                 _closure_while_unmet, "may not exist while")
-    control("a closure record may not cite the envelope stub",
-            _closure_env_stub, "never assure")
-    control("a closure record requires an independent review event",
-            _closure_non_independent_event, "independent review event")
-    control("independence requires named reviewers and passed controls",
-            _event_fake_independence, "independent event requires")
+    control("a closure record gate is exact",
+            _closure_wrong_gate, ".gate must be gate-a")
+    control("a closure record claim is byte-exact",
+            _closure_wrong_claim, "permitted_claim must be byte-exact")
+    control("a closure candidate is an immutable Git id",
+            _closure_bad_candidate, "must be a Git id")
+    control("a closure source version is current",
+            _closure_stale_source, "must match the closure source")
+    control("a closure scope digest is current",
+            _closure_stale_scope, "must match the semantic scope")
+    control("a closure record must cite FS-ENV-01",
+            _closure_env_stub, "must be FS-ENV-01")
+    control("a closure record requires a qualifying current-source event",
+            _closure_non_independent_event, "qualifying event")
+    control("a closure cutoff must match its commission",
+            _closure_wrong_cutoff, "must equal the event commission")
+    control("closure assurance refs are checker-derived",
+            _closure_wrong_assurance, "checker-derived set")
+    control("closure residual refs are checker-derived",
+            _closure_wrong_residuals, "derived set")
+    control("closure claim limitations bind residuals exactly",
+            _closure_wrong_limitations, "bind every derived residual")
+    control("closure verification binds the candidate",
+            _closure_wrong_verifier_candidate, "must match closure candidate")
+    control("closure verification runs the exact command chain",
+            _closure_wrong_verifier_commands, "required verifier chain")
+    control("closure verification result is exact",
+            _closure_wrong_verifier_result, "must be all-passed")
+    control("closure verification transcript is digest-bound",
+            _closure_bad_transcript, "is malformed")
+    control("closure ratification cites a dated author act",
+            _closure_bad_ratification, "verbatim dated author act")
+    control("R7 is never built",
+            _r7_built, "never built")
+    control("R7 cannot become available without a qualifying event",
+            _r7_available_without_event, "qualifying-event state")
+    control("a stale-source passed event cannot make R7 available",
+            _stale_source_event_available, "qualifying-event state")
+    control("a passed event outcome is derived, not prose",
+            _event_passed_with_failed_seed, "outcome_status must be derived")
+    control("a terminal event requires its commission",
+            _event_without_commission, "names no commission")
+    control("a current commission binds the semantic scope digest",
+            _commission_stale_scope, "scope digest is stale")
+    control("a current commission binds the exact protocol digest",
+            _commission_stale_protocol, "protocol digest is stale")
+    control("plant and seed commitments are distinct",
+            _commission_duplicate_digests, "must be distinct")
+    control("commission chronology is canonical UTC and ordered",
+            _commission_postdates_window, "commissioned < open")
+    control("commission windows are structured UTC",
+            _commission_bad_window, "canonical UTC")
+    control("the packet manifest is exact and ordered",
+            _commission_bad_packet, "exact ordered packet manifest")
+    control("the panel contains at least two disciplines",
+            _commission_one_discipline, "at least two disciplines")
+    control("reviewer criteria collectively cover the full rubric",
+            _commission_criterion_gap, "criterion union")
+    control("a reviewer cannot be Darshu, Dhanush, or custodian",
+            _commission_reviewer_conflict, "reviewer conflicts")
+    control("reviewer conflict attestations are exact",
+            _commission_missing_conflict, "missing keys")
+    control("findings-contingent reviewer compensation is refused",
+            _commission_contingent_pay, "findings-contingent")
+    control("the frozen intake equals the event proposal set",
+            _event_intake_mismatch, "must equal the event proposal set")
+    control("the frozen intake digest binds proposal payloads",
+            _event_bad_intake_digest, "does not match")
+    control("controls cannot reveal early",
+            _event_early_reveal, "may not reveal before cutoff")
+    control("every proposal is received inside the window",
+            _proposal_outside_window, "outside its window")
+    control("proposal chronology is ordered",
+            _proposal_check_before_triage, "chronology must be")
+    control("every proposal receives Darshu triage",
+            _proposal_missing_darshu, "requires Darshu triage")
+    control("every proposal receives Dhanush checking",
+            _proposal_missing_dhanush, "requires Dhanush checking")
+    control("classification maps exactly to its outward disposition",
+            _proposal_bad_classification_mapping, "mapping must be exact")
     control("an added proposal names resolvable created records",
-            _proposal_added_unresolvable)
-    control("a retained limit links its defect row",
-            _proposal_retained_without_defect)
-    control("outward classification carries its routing disposition",
-            _proposal_routed_without_disposition)
-    control("a material proposal carries severity, owner, and check",
-            _proposal_material_missing_fields)
-    control("severity belongs only on material proposals",
-            _proposal_class_on_immaterial)
-    control("a proposal must name its review event",
-            _proposal_unknown_event)
+            _proposal_added_unresolvable, "reference target missing")
+    control("a retained limit links its exact defect binding",
+            _proposal_retained_without_defect, "must link a defect row")
+    control("failed events with proposal intake cannot be deleted",
+            _delete_failed_event, "names no review event")
     control("the rubric status is exact in both states",
             lambda s: s["severity_rubric"].update(
                 {"rubric_status": "confirmed"}))
     control("a confirmed rubric records its basis",
             _confirmed_rubric_without_basis)
     control("review_protocol must be present",
-            lambda s: s.pop("review_protocol"),
-            "must be present")
-    control("the protocol status is exact in both states",
+            lambda s: s.pop("review_protocol"), "must be present")
+    control("the amended protocol status is exact",
             lambda s: s["review_protocol"].update(
-                {"protocol_status": "confirmed"}),
-            "recorded author act")
-    control("a confirmed protocol records its basis",
+                {"protocol_status": "confirmed"}), "author-confirmed amended")
+    control("the amended protocol records its basis",
             lambda s: s["review_protocol"].pop("confirmation_basis"),
-            "confirmation_basis")
-    control("a candidate protocol carries no basis",
-            lambda s: s["review_protocol"].update(
-                {"protocol_status": PROTOCOL_STATUS_CANDIDATE}),
-            "carries no confirmation basis")
-    control("a commitment requires a confirmed protocol",
-            _commitment_on_candidate_protocol,
-            "confirmed protocol")
+            "missing keys")
     control("owner and checker are distinct people",
             _designation_owner_is_checker, "distinct people")
-    control("the custodian may not triage as severity owner",
-            _designation_owner_is_custodian, "may not triage")
-    control("the custodian may not triage as independent checker",
-            _designation_checker_is_custodian, "may not triage")
-    control("a designation requires a confirmed protocol",
-            _designation_on_candidate_protocol, "confirmed protocol")
-    control("a designation date is an ISO date",
-            lambda s: _mk_designation(s).update(
-                {"designated_date": "someday"}),
-            "YYYY-MM-DD")
-    control("a designation carries exactly its declared keys",
-            lambda s: _mk_designation(s).update({"note": "extra"}),
-            "unexpected keys")
-    control("the protocol's status line is live-checked",
-            lambda s: s["review_protocol"].update(
-                {"status_line_ref": str(PROTOCOL_DOC) +
-                 "::Status: author-confirmed — control"}),
-            "exactly once")
-    control("the status line must record the recorded status",
+    control("the custodian may not triage or check",
+            _designation_owner_is_custodian, "may not triage or check")
+    control("the protocol status line is live-checked",
             lambda s: s["review_protocol"].update(
                 {"status_line_ref": _PROTOCOL_NEEDLE}),
-            "status line must record")
-    control("an independent event requires a pre-registered commitment",
-            _event_without_commitment, "pre-registered")
-    control("a commitment digest is 64 lowercase hex",
-            lambda s: _mk_commitment(s).update(
-                {"plant_commitment_sha256": "A" * 64}),
-            "lowercase hex")
-    control("plant and seed commitments are distinct",
-            lambda s: _mk_commitment(s).update(
-                {"seed_commitment_sha256": "a" * 64}),
-            "distinct")
-    control("a commitment binds the protocol text by digest",
-            lambda s: _mk_commitment(s).update(
-                {"protocol_sha256": "0" * 64}),
-            "re-commission")
-    control("a commitment date is an ISO date",
-            lambda s: _mk_commitment(s).update(
-                {"committed_date": "soon"}),
-            "YYYY-MM-DD")
-    control("a commitment may not postdate its review window",
-            _commitment_postdates_window, "precede")
-    control("an independent window opens with its date",
-            _window_without_date, "opens with")
-    control("custody stays outside the repository",
-            lambda s: _mk_commitment(s).update(
-                {"custody": "kept in-repo for convenience"}),
-            "outside the repo")
-    control("an independent event runs under the scope-review protocol",
-            _event_wrong_protocol, "scope-review protocol")
-    control("a commitment carries exactly its declared keys",
-            lambda s: _mk_commitment(s).update({"note": "extra"}),
-            "unexpected keys")
+            "status and document status line")
     control("a calibrated envelope is refused in this contract",
             lambda s: s["envelope"][1].update(
                 {"envelope_status": "calibrated"}),
@@ -4478,8 +4900,8 @@ def negative_controls(src: dict) -> int:
             "names no envelope record")
     control("a structure-only envelope cannot carry operational assurance",
             _structure_operationally_assured, "calibrated")
-    control("a closure record's envelope must exist",
-            _closure_envelope_missing, "names no envelope record")
+    control("a closure record's envelope must be the structural envelope",
+            _closure_envelope_missing, "must be FS-ENV-01")
     control("an envelope field states dependents or invariance",
             lambda s: s["envelope"][1]["fields"][0].update(
                 {"dependents": [], "invariance": ""}),
@@ -4675,6 +5097,7 @@ def negative_controls(src: dict) -> int:
         closure_ready,
         ([("control", "met-in-form", "control")],
          [("the reference envelope", "met-in-form", "control")]),
+        compute_resolution(closure_ready),
     )
 
     gate_a_critical = copy.deepcopy(src)
@@ -5137,74 +5560,211 @@ def _strip_deferrals(s, *types):
     ]
 
 
-def _mk_commitment(s):
-    s["review_protocol"]["review_commitment"] = {
-        "plant_commitment_sha256": "a" * 64,
-        "seed_commitment_sha256": "b" * 64,
+def _set_r7(s, available: bool):
+    route = next(row for row in s["routes"] if row["id"] == "FS-RTE-07")
+    route.update(R7_AVAILABLE if available else R7_UNBUILT)
+
+
+def _mk_commission(s):
+    if s.get("review_commissions"):
+        return s["review_commissions"][-1]
+    split = len(REVIEW_CRITERIA) // 2
+    reviewers = [
+        {
+            "identity": "control-reviewer-a",
+            "discipline": "constitutional-law",
+            "criterion_refs": list(REVIEW_CRITERIA[:split]),
+            "consent_attestation": REVIEWER_CONSENT,
+            "conflict_attestation": REVIEWER_CONFLICT_CLEAR,
+            "compensation_attestation": REVIEWER_COMPENSATION_CLEAR,
+        },
+        {
+            "identity": "control-reviewer-b",
+            "discipline": "systems-safety",
+            "criterion_refs": list(REVIEW_CRITERIA[split:]),
+            "consent_attestation": REVIEWER_CONSENT,
+            "conflict_attestation": REVIEWER_CONFLICT_CLEAR,
+            "compensation_attestation": REVIEWER_COMPENSATION_CLEAR,
+        },
+    ]
+    rec = {
+        "id": "FS-COM-99",
+        "title": "control commission",
+        "source_version": s["source_version"],
+        "scope_sha256": review_scope_digest(s),
         "protocol_sha256": hashlib.sha256(
             (ROOT / PROTOCOL_DOC).read_bytes()).hexdigest(),
-        "committed_date": "2026-08-09",
-        "custody": "control fixture — pre-images author-held outside the "
-                   "repository",
+        "plant_commitment_sha256": "a" * 64,
+        "seed_commitment_sha256": "b" * 64,
+        "commissioned_at_utc": "2026-08-14T00:00:00Z",
+        "received_window": {
+            "opens_at_utc": "2026-08-15T00:00:00Z",
+            "closes_at_utc": "2026-08-16T00:00:00Z",
+        },
+        "cutoff_at_utc": "2026-08-17T00:00:00Z",
+        "custodian_identity": s["review_protocol"]["designation"]["custodian"],
+        "reviewers": reviewers,
+        "criterion_coverage": list(REVIEW_CRITERIA),
+        "packet_paths": list(REVIEW_PACKET_PATHS),
     }
-    return s["review_protocol"]["review_commitment"]
+    s["review_commissions"].append(rec)
+    return rec
 
 
-def _mk_event(s, independent=False):
-    _strip_deferrals(s, "review_events")
+def _base_proposal(s, *, pid, source_kind, source_identity, finding,
+                   classification, disposition, control_kind,
+                   severity=None):
+    rec = {
+        "id": pid,
+        "title": f"control proposal {pid}",
+        "proposal": f"control proposal payload {pid}",
+        "source_kind": source_kind,
+        "source_identity": source_identity,
+        "received_at_utc": "2026-08-15T12:00:00Z",
+        "triaged_at_utc": "2026-08-16T01:00:00Z",
+        "severity_owner_identity": s["review_protocol"]["designation"][
+            "severity_owner"],
+        "materiality_finding": finding,
+        "materiality_reason": "control materiality reason",
+        "classification": classification,
+        "checked_at_utc": "2026-08-16T02:00:00Z",
+        "independent_checker_identity": s["review_protocol"]["designation"][
+            "independent_checker"],
+        "check_finding": "confirmed",
+        "check_reason": "control checking reason",
+        "proposal_disposition": disposition,
+        "disposition_at_utc": "2026-08-16T03:00:00Z",
+        "reasons": "control disposition reason",
+        "review_event_ref": "FS-REV-99",
+        "control_kind": control_kind,
+    }
+    if severity is not None:
+        rec["severity"] = severity
+    if classification in UNESTABLISHED_DISPOSITIONS:
+        rec["routed_unestablished_disposition"] = classification
+    return rec
+
+
+def _mk_event(s, passed=False):
+    _strip_deferrals(s, "proposals", "review_events")
+    commission = _mk_commission(s)
+    defect = s["defects"][0]
+    plant = _base_proposal(
+        s, pid="FS-PRO-97", source_kind="reviewer",
+        source_identity=commission["reviewers"][0]["identity"],
+        finding="material", severity=severity_class(defect),
+        classification="retained-limit", disposition="retained-limit",
+        control_kind="plant-match")
+    plant["defect_row_ref"] = defect["id"]
+    plant["retained_limit_binding"] = _expected_retained_binding(s, defect)
+    seed_material = _base_proposal(
+        s, pid="FS-PRO-98", source_kind="seed",
+        source_identity="committed-seed-control", finding="material",
+        severity="material", classification="routed-book-2",
+        disposition="classified-out", control_kind="seed")
+    seed_immaterial = _base_proposal(
+        s, pid="FS-PRO-99", source_kind="seed",
+        source_identity="committed-seed-control", finding="immaterial",
+        classification="immaterial", disposition="classified-out",
+        control_kind="seed")
+    s["proposals"].extend([plant, seed_material, seed_immaterial])
+    seed_results = [
+        {
+            "proposal_ref": seed_material["id"],
+            "expected_materiality": "material",
+            "expected_severity": "material" if passed else "critical",
+            "expected_disposition": "classified-out",
+            "verified_by": s["review_protocol"]["designation"][
+                "independent_checker"],
+            "verification_reason": "control seed verification",
+        },
+        {
+            "proposal_ref": seed_immaterial["id"],
+            "expected_materiality": "immaterial",
+            "expected_severity": None,
+            "expected_disposition": "classified-out",
+            "verified_by": s["review_protocol"]["designation"][
+                "independent_checker"],
+            "verification_reason": "control seed verification",
+        },
+    ]
     ev = {
-        "id": "FS-REV-99", "title": "control fixture",
-        "reviewers": [], "protocol_ref": "none — control fixture",
-        "independence": independent, "received_window": "control",
-        "cutoff_date": "control", "seeded_control_outcome": "not-run",
-        "planted_omission_outcome": "not-run",
+        "id": "FS-REV-99",
+        "title": "control terminal event",
+        "commission_ref": commission["id"],
+        "packet_commit_sha": "c" * 40,
+        "source_version": commission["source_version"],
+        "scope_sha256": commission["scope_sha256"],
+        "protocol_sha256": commission["protocol_sha256"],
+        "intake_receipt": {
+            "frozen_at_utc": "2026-08-16T00:01:00Z",
+            "ordered_proposal_ids": [row["id"] for row in s["proposals"]],
+            "manifest_sha256": _proposal_intake_digest(
+                "FS-REV-99", s["proposals"]),
+        },
+        "control_reveal": {
+            "revealed_at_utc": "2026-08-17T00:00:00Z",
+            "plant_preimage_sha256": commission["plant_commitment_sha256"],
+            "seed_preimage_sha256": commission["seed_commitment_sha256"],
+            "planted_proposal_ref": plant["id"],
+            "seed_results": seed_results,
+            "plant_match_checked_by": s["review_protocol"]["designation"][
+                "independent_checker"],
+            "plant_match_reason": "control plant match",
+        },
+        "seeded_control": {
+            "status": "passed" if passed else "failed",
+            "reason": "control seeded outcome",
+        },
+        "planted_control": {
+            "status": "passed",
+            "reason": "control planted outcome",
+        },
+        "outcome_status": "passed" if passed else "failed",
+        "outcome_reason": "control terminal outcome",
     }
-    if independent:
-        ev["reviewers"] = [{"identity": "control", "discipline": "control"}]
-        ev["protocol_ref"] = _PROTOCOL_NEEDLE
-        ev["received_window"] = "2026-09-01 to 2026-10-01"
-        ev["seeded_control_outcome"] = "passed — control"
-        ev["planted_omission_outcome"] = "passed — control"
-        _mk_commitment(s)
     s["review_events"].append(ev)
+    _set_r7(s, passed)
     return ev
 
 
 def _mk_proposal(s, **overrides):
-    _mk_event(s)
-    _strip_deferrals(s, "proposals")
-    rec = {
-        "id": "FS-PRO-99", "title": "control fixture", "proposal": "control",
-        "source": "control", "received_date": "control",
-        "triaged_date": "control", "materiality_finding": "immaterial",
-        "materiality_reason": "control", "proposal_disposition":
-        "classified-out", "reasons": "immaterial control fixture",
-        "review_event_ref": "FS-REV-99",
-    }
+    _mk_event(s, passed=False)
+    rec = s["proposals"][-1]
     rec.update(overrides)
-    s["proposals"].append(rec)
     return rec
 
 
-def _material_fields():
-    return {
-        "materiality_finding": "material", "severity": "material",
-        "severity_owner": _CONTROL_NEEDLE,
-        "independent_check": "none-recorded — control fixture on a "
-                             "non-independent event",
-        "reasons": "control",
-    }
+_AUTHOR_CONTROL_NEEDLE = (
+    "new-book-plans/full-society-scope-review-protocol.md::"
+    "Author statement, 2026-08-14: \"PLEASE IMPLEMENT THIS")
 
 
 def _mk_closure(s):
-    _mk_event(s, independent=True)
+    event = _mk_event(s, passed=True)
+    resolution = compute_resolution(s)
+    residuals = _gate_a_residual_ids(s, resolution)
+    commission = s["review_commissions"][-1]
     s["closure_record"] = {
-        "gate": "gate-a", "permitted_claim": "control",
-        "source_version": s["source_version"], "envelope_ref": "FS-ENV-01",
-        "candidate_ids": [], "review_cutoff": "control",
-        "review_event_ref": "FS-REV-99", "assurance_record_refs": [],
-        "residual_refs": [], "claim_limitations": "control",
-        "author_ratification_ref": _CONTROL_NEEDLE,
+        "gate": "gate-a",
+        "permitted_claim": GATE_A_PERMITTED_CLAIM,
+        "candidate_commit_sha": "d" * 40,
+        "source_version": s["source_version"],
+        "scope_sha256": review_scope_digest(s),
+        "envelope_ref": "FS-ENV-01",
+        "review_cutoff_at_utc": commission["cutoff_at_utc"],
+        "review_event_ref": event["id"],
+        "assurance_record_refs": list(GATE_A_ASSURANCE_REFS),
+        "residual_refs": residuals,
+        "claim_limitations": _gate_a_claim_limitations(s, residuals),
+        "verification_receipt": {
+            "candidate_commit_sha": "d" * 40,
+            "verified_at_utc": "2026-08-18T00:00:00Z",
+            "commands": list(REQUIRED_VERIFY_COMMANDS),
+            "result": "all-passed",
+            "transcript_sha256": "e" * 64,
+        },
+        "author_ratification_ref": _AUTHOR_CONTROL_NEEDLE,
     }
     return s["closure_record"]
 
@@ -5213,56 +5773,210 @@ def _closure_while_unmet(s):
     _mk_closure(s)
 
 
+def _closure_wrong_gate(s):
+    _mk_closure(s)["gate"] = "gate-b"
+
+
+def _closure_wrong_claim(s):
+    _mk_closure(s)["permitted_claim"] = "broader control claim"
+
+
+def _closure_bad_candidate(s):
+    _mk_closure(s)["candidate_commit_sha"] = "candidate"
+
+
+def _closure_stale_source(s):
+    _mk_closure(s)["source_version"] = "stale"
+
+
+def _closure_stale_scope(s):
+    _mk_closure(s)["scope_sha256"] = "0" * 64
+
+
 def _closure_env_stub(s):
     _mk_closure(s)["envelope_ref"] = ENVELOPE_STUB_ID
 
 
 def _closure_non_independent_event(s):
     _mk_closure(s)
-    s["review_events"][-1]["independence"] = False
-    s["review_events"][-1]["protocol_ref"] = "none — control"
+    event = s["review_events"][-1]
+    event["control_reveal"]["seed_results"][0]["expected_severity"] = "critical"
+    event["seeded_control"]["status"] = "failed"
+    event["outcome_status"] = "failed"
+    _set_r7(s, False)
 
 
-def _event_fake_independence(s):
-    ev = _mk_event(s, independent=True)
-    ev["reviewers"] = []
+def _closure_wrong_cutoff(s):
+    _mk_closure(s)["review_cutoff_at_utc"] = "2026-08-19T00:00:00Z"
 
 
-def _event_without_commitment(s):
-    _mk_event(s, independent=True)
-    s["review_protocol"]["review_commitment"] = None
+def _closure_wrong_assurance(s):
+    _mk_closure(s)["assurance_record_refs"].pop()
 
 
-def _commitment_postdates_window(s):
-    _mk_event(s, independent=True)
-    s["review_protocol"]["review_commitment"]["committed_date"] = "2027-01-01"
+def _closure_wrong_residuals(s):
+    _mk_closure(s)["residual_refs"].append("FS-DFT-999")
 
 
-def _window_without_date(s):
-    ev = _mk_event(s, independent=True)
-    ev["received_window"] = "control"
+def _closure_wrong_limitations(s):
+    rec = _mk_closure(s)
+    rec["claim_limitations"].append({
+        "defect_ref": "FS-DFT-999", "affected_claim_ref": "FS-CLM-01",
+        "public_claim_restriction": "control",
+    })
 
 
-def _event_wrong_protocol(s):
-    ev = _mk_event(s, independent=True)
-    ev["protocol_ref"] = _CONTROL_NEEDLE
+def _closure_wrong_verifier_candidate(s):
+    _mk_closure(s)["verification_receipt"]["candidate_commit_sha"] = "f" * 40
 
 
-def _commitment_on_candidate_protocol(s):
-    rp = s["review_protocol"]
-    rp["protocol_status"] = PROTOCOL_STATUS_CANDIDATE
-    rp.pop("confirmation_basis", None)
-    _mk_commitment(s)
+def _closure_wrong_verifier_commands(s):
+    _mk_closure(s)["verification_receipt"]["commands"].pop()
+
+
+def _closure_wrong_verifier_result(s):
+    _mk_closure(s)["verification_receipt"]["result"] = "mostly-passed"
+
+
+def _closure_bad_transcript(s):
+    _mk_closure(s)["verification_receipt"]["transcript_sha256"] = "no"
+
+
+def _closure_bad_ratification(s):
+    _mk_closure(s)["author_ratification_ref"] = _CONTROL_NEEDLE
+
+
+def _r7_built(s):
+    route = next(row for row in s["routes"] if row["id"] == "FS-RTE-07")
+    route.update({"status": "built", "route_status": "built"})
+
+
+def _r7_available_without_event(s):
+    _set_r7(s, True)
+
+
+def _stale_source_event_available(s):
+    event = _mk_event(s, passed=True)
+    commission = s["review_commissions"][-1]
+    commission["source_version"] = "stale-source"
+    event["source_version"] = "stale-source"
+
+
+def _event_passed_with_failed_seed(s):
+    event = _mk_event(s, passed=True)
+    event["outcome_status"] = "failed"
+
+
+def _event_without_commission(s):
+    _mk_event(s, passed=True)
+    s["review_commissions"] = []
+
+
+def _commission_stale_scope(s):
+    _mk_commission(s)["scope_sha256"] = "0" * 64
+
+
+def _commission_stale_protocol(s):
+    _mk_commission(s)["protocol_sha256"] = "0" * 64
+
+
+def _commission_duplicate_digests(s):
+    rec = _mk_commission(s)
+    rec["seed_commitment_sha256"] = rec["plant_commitment_sha256"]
+
+
+def _commission_postdates_window(s):
+    _mk_commission(s)["commissioned_at_utc"] = "2026-08-15T01:00:00Z"
+
+
+def _commission_bad_window(s):
+    _mk_commission(s)["received_window"]["opens_at_utc"] = "tomorrow"
+
+
+def _commission_bad_packet(s):
+    _mk_commission(s)["packet_paths"].pop()
+
+
+def _commission_one_discipline(s):
+    rec = _mk_commission(s)
+    rec["reviewers"][1]["discipline"] = rec["reviewers"][0]["discipline"]
+
+
+def _commission_criterion_gap(s):
+    _mk_commission(s)["reviewers"][1]["criterion_refs"].pop()
+
+
+def _commission_reviewer_conflict(s):
+    rec = _mk_commission(s)
+    rec["reviewers"][0]["identity"] = s["review_protocol"]["designation"][
+        "severity_owner"]
+
+
+def _commission_missing_conflict(s):
+    _mk_commission(s)["reviewers"][0].pop("conflict_attestation")
+
+
+def _commission_contingent_pay(s):
+    _mk_commission(s)["reviewers"][0]["compensation_attestation"] = \
+        "findings-contingent"
+
+
+def _event_intake_mismatch(s):
+    _mk_event(s, passed=True)["intake_receipt"]["ordered_proposal_ids"].pop()
+
+
+def _event_bad_intake_digest(s):
+    _mk_event(s, passed=True)["intake_receipt"]["manifest_sha256"] = "0" * 64
+
+
+def _event_early_reveal(s):
+    _mk_event(s, passed=True)["control_reveal"]["revealed_at_utc"] = \
+        "2026-08-16T02:30:00Z"
+
+
+def _proposal_outside_window(s):
+    _mk_proposal(s, received_at_utc="2026-08-18T00:00:00Z")
+
+
+def _proposal_check_before_triage(s):
+    _mk_proposal(s, checked_at_utc="2026-08-16T00:30:00Z")
+
+
+def _proposal_missing_darshu(s):
+    _mk_proposal(s, severity_owner_identity="someone-else")
+
+
+def _proposal_missing_dhanush(s):
+    _mk_proposal(s, independent_checker_identity="someone-else")
+
+
+def _proposal_bad_classification_mapping(s):
+    _mk_event(s, passed=False)
+    row = s["proposals"][1]
+    row["routed_unestablished_disposition"] = "external-assumption"
+
+
+def _proposal_added_unresolvable(s):
+    _mk_event(s, passed=False)
+    row = s["proposals"][0]
+    row["classification"] = "material-omission"
+    row["proposal_disposition"] = "added"
+    row.pop("defect_row_ref")
+    row.pop("retained_limit_binding")
+    row["created_record_refs"] = ["bogus-file.md::no such anchor"]
+
+
+def _proposal_retained_without_defect(s):
+    _mk_event(s, passed=False)
+    s["proposals"][0].pop("defect_row_ref")
+
+
+def _delete_failed_event(s):
+    _mk_event(s, passed=False)
+    s["review_events"] = []
 
 
 def _mk_designation(s):
-    s["review_protocol"]["designation"] = {
-        "severity_owner": "control-owner — control discipline",
-        "independent_checker": "control-checker — control discipline",
-        "custodian": "control-custodian — pre-image custody",
-        "designated_date": "2026-08-09",
-        "basis": "control fixture",
-    }
     return s["review_protocol"]["designation"]
 
 
@@ -5274,45 +5988,6 @@ def _designation_owner_is_checker(s):
 def _designation_owner_is_custodian(s):
     d = _mk_designation(s)
     d["severity_owner"] = d["custodian"]
-
-
-def _designation_checker_is_custodian(s):
-    d = _mk_designation(s)
-    d["independent_checker"] = d["custodian"]
-
-
-def _designation_on_candidate_protocol(s):
-    rp = s["review_protocol"]
-    rp["protocol_status"] = PROTOCOL_STATUS_CANDIDATE
-    rp.pop("confirmation_basis", None)
-    _mk_designation(s)
-
-
-def _proposal_added_unresolvable(s):
-    _mk_proposal(s, proposal_disposition="added",
-                 created_record_refs=["bogus-file.md::no such anchor"],
-                 **_material_fields())
-
-
-def _proposal_retained_without_defect(s):
-    _mk_proposal(s, proposal_disposition="retained-limit",
-                 **_material_fields())
-
-
-def _proposal_routed_without_disposition(s):
-    _mk_proposal(s, reasons="routed to operations outside this volume")
-
-
-def _proposal_material_missing_fields(s):
-    _mk_proposal(s, materiality_finding="material", reasons="control")
-
-
-def _proposal_class_on_immaterial(s):
-    _mk_proposal(s, severity="minor")
-
-
-def _proposal_unknown_event(s):
-    _mk_proposal(s, review_event_ref="FS-REV-00")
 
 
 def _drop_required_dependent(s):
@@ -5953,57 +6628,69 @@ def render(src: dict, resolution: dict) -> str:
         w(f"- Reader mapping: `{rec['reader_mapping_ref']}`; admissible "
           f"evidence: {rec['admissible_evidence']}")
         w("")
-    w("## Proposals and review events")
-    w("")
-    w("The review machinery stands ready and empty: proposal and review-event "
-      "records are schema-enforced, and both populations stay deferred with "
-      "owners until the independent scope review runs. The severity rubric's "
-      f"status is {src['severity_rubric']['rubric_status']}, bound to the "
-      "stopping rule's materiality test by reference. The in-repo reviewer "
-      "corpus is never admissible independent-review evidence for the "
-      "review-condition of closure: an independent event requires named "
-      "reviewer identities, a resolving protocol, and passed seeded and "
-      "planted-omission controls, none of which that corpus can supply. A "
-      "reviewer compels a reasoned public disposition, not acceptance and not "
-      "a veto; "
-      + ("the protocol confirmation, "
-         if src["review_protocol"]["protocol_status"]
-         == PROTOCOL_STATUS_CANDIDATE else "")
-      + "the review commissioning and its commitment, "
-      + ("the severity owner, "
-         if src["review_protocol"].get("designation") is None else "")
-      + "and the closure record are author "
-      "checkpoints.")
+    w("## Review commissions, proposals, and terminal events")
     w("")
     rp = src["review_protocol"]
-    line = (f"The scope-review protocol is bound at `{rp['protocol_ref']}`, "
-            f"status {rp['protocol_status']}; its status line is live-checked "
-            "against this source. ")
-    if rp["review_commitment"] is None:
-        line += ("No review has been commissioned: the commitment record is "
-                 "null, plant and seed pre-images are constructed only at "
-                 "commissioning and stay author-held outside the repository, "
-                 "and an independent review event without a pre-registered "
-                 "commitment is refused.")
-    else:
-        c = rp["review_commitment"]
-        line += (f"A commitment was published on {c['committed_date']}: "
-                 f"plant `{c['plant_commitment_sha256']}`, seeds "
-                 f"`{c['seed_commitment_sha256']}`, protocol text "
-                 f"`{c['protocol_sha256']}`; {c['custody']}.")
-    if rp.get("designation") is None:
-        line += (" No severity owner or independent checker is designated: "
-                 "the designation record is schema-enforced behind its "
-                 "absence — real recorded identities, distinct people, "
-                 "neither the pre-image custodian — and remains an author "
-                 "checkpoint.")
-    else:
-        d = rp["designation"]
-        line += (f" Designated on {d['designated_date']}: severity owner "
-                 f"{d['severity_owner']}; independent checker "
-                 f"{d['independent_checker']}; custodian {d['custodian']}.")
-    w(line)
+    qualifying = qualifying_review_events(src)
+    w(
+        "The amended append-only review contract is schema-enforced. "
+        f"Commissions: {len(src['review_commissions'])}; proposals: "
+        f"{len(src['proposals'])}; terminal events: "
+        f"{len(src['review_events'])}; current-source qualifying events: "
+        f"{len(qualifying)}. Proposal and event populations remain deferred "
+        "until the external review runs. The in-repo reviewer corpus is never "
+        "admissible R7 evidence. Independence is derived from the commission, "
+        "panel, scope and protocol digests, frozen intake, UTC chronology, "
+        "Darshu triage, Dhanush checking, reveal, controls, and public "
+        "dispositions; it is not a self-label."
+    )
     w("")
+    d = rp["designation"]
+    w(
+        f"The scope-review protocol is bound at `{rp['protocol_ref']}`, "
+        f"status {rp['protocol_status']}; its status line is live-checked. "
+        f"Semantic scope digest: `{review_scope_digest(src)}`. "
+        f"Designated {d['designated_date']}: severity owner "
+        f"{d['severity_owner']}; independent checker "
+        f"{d['independent_checker']}; custodian {d['custodian']}."
+    )
+    w("")
+    if not src["review_commissions"]:
+        w(
+            "No review is commissioned. No plant or seed pre-image or digest "
+            "has been created, no reviewer panel is selected, no UTC window is "
+            "open, and no packet commit exists. The next step is an author "
+            "checkpoint."
+        )
+        w("")
+    else:
+        w("| Commission | Source | Scope digest | Window | Cutoff | Reviewers |")
+        w("| --- | --- | --- | --- | --- | --- |")
+        for rec in src["review_commissions"]:
+            window = rec["received_window"]
+            reviewers = "; ".join(
+                f"{row['identity']} ({row['discipline']})"
+                for row in rec["reviewers"]
+            )
+            w(
+                f"| {rec['id']} | {rec['source_version']} | "
+                f"`{rec['scope_sha256']}` | "
+                f"{window['opens_at_utc']} to {window['closes_at_utc']} | "
+                f"{rec['cutoff_at_utc']} | {reviewers} |"
+            )
+        w("")
+    if src["review_events"]:
+        w("| Event | Commission | Packet commit | Outcome | Current qualifying |")
+        w("| --- | --- | --- | --- | --- |")
+        qualifying_ids = {row["id"] for row in qualifying}
+        for rec in src["review_events"]:
+            w(
+                f"| {rec['id']} | {rec['commission_ref']} | "
+                f"`{rec['packet_commit_sha']}` | "
+                f"{rec['outcome_status']} — {rec['outcome_reason']} | "
+                f"{'yes' if rec['id'] in qualifying_ids else 'no'} |"
+            )
+        w("")
     w("| Rubric class | Meaning |")
     w("| --- | --- |")
     for cls in ("critical", "material", "minor"):

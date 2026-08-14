@@ -1743,58 +1743,50 @@ and establishes no delivery, liveness, feasibility, operation, or Gate A
 closure. The audit may therefore be complete while claims remain blocked or
 bounded-unresolved and while Gate A remains not passed.
 
-**Stage 4's machinery is enacted (2026-08-09); the review and the closure
-remain author checkpoints.** Proposal and review-event schemas stand validated
-and empty behind their deferrals: a proposal carries one public
-proposal_disposition with the ratified constraints enforced (added names its
-created records; an outward classification carries its matching Unestablished
-disposition; a retained limit creates or joins a stable defect row; a material
-proposal carries its severity class, severity owner, and independent check).
-The severity rubric is **author-confirmed (2026-08-09)**, bound to the
-stopping rule's materiality test by reference, with the confirmation basis —
-the author's statement, quoted verbatim, and the question it answered —
-recorded on the rubric itself; the status may only be the exact candidate or
-confirmed string, and a confirmed rubric without its recorded basis fails
-generation. R7's falsification condition was
-**declared ahead of build and its commitment mechanics are now landed
-(2026-08-09)**: the scope-review protocol
-(`new-book-plans/full-society-scope-review-protocol.md`, **author-confirmed
-2026-08-09** with the basis — the author's statement quoted verbatim and the
-question it answered — recorded on the source binding and in the protocol's
-own confirmation record, its status line live-checked against the reviewed
-source on the rubric's own two-state pattern) fixes the hash-committed
-planted omission and seeded triage controls, and the generator refuses an
-independent review event without a pre-registered commitment — plant, seed,
-and protocol SHA-256 digests entered in the canonical source at
-commissioning, only against the confirmed protocol, pre-images author-held
-outside the repo, which excludes the
-author from the severity-owner and independent-checker roles for that event.
-The severity owner and independent checker are designated (2026-08-09):
-Darshu as severity owner, Dhanush as independent checker, in the
-validator-checked designation record — distinct people, neither the
-custodian. The checkpoint was refused twice first, for role-echo
-placeholders and for AI agents, because a fabricated or operator-run
-identity is invisible to the mechanical check, so the substance of a
-designation stays reviewed.
-Neither the declaration nor the landed mechanics makes the route available —
-it stays unbuilt until a reviewer is named and an event runs. The
-admissibility bar is doctrine and computation
-alike: **the in-repo reviewer corpus is never admissible independent-review
-evidence for the review condition of closure**, because an independent event
-requires named reviewer identities, a resolving protocol, and passed controls.
-The report renders a computed per-condition **Gate A readiness** list echoing
-the closure conditions by index, with no aggregate ever derived from it. That
-computation treats proposals and review events as outputs of condition five,
-not circular preconditions under condition one, and filters critical defects
-through their reviewed gate-applicability records while leaving their
-claim-level blocking untouched. The generator **refuses a closure record while
-any condition computes unmet**;
-a present record would also require a gate status this contract refuses, so
-closing Gate A is necessarily a deliberate future amendment with its own
-author ratification. **No review has run, no reviewer is named, the closure
-record is null, and Gate A remains not passed**;
-review commissioning and its commitment, the review event,
-and the closure record remain author checkpoints.
+**Stage 4's protocol and checker are hardened (amended and author-confirmed
+2026-08-14); the review and closure remain author checkpoints.** Schema v4
+replaces the singular mutable commitment with top-level append-only
+`review_commissions`. Each commission binds the exact source version,
+validator-derived semantic scope digest, exact protocol digest, distinct plant
+and seed commitment digests, canonical UTC commission/window/cutoff chronology,
+author-custodian, eligible real-person roster, two-or-more-discipline panel,
+the exact union of all declared materiality criteria, consent/conflict/
+compensation attestations, and the ordered packet manifest. Visible normal
+first-parent Git history is checked as an exact prefix for commissions,
+proposals, and terminal events; this makes deletion or rewriting visible under
+that history model but does not claim resistance to rewritten Git history.
+
+Every proposal, including immaterial and control rows, must be received inside
+the window and carry blind Darshu triage, Dhanush checking, reasons, a closed
+classification, and one public disposition in canonical chronology. The event
+freezes the exact ordered intake and payload digest, reveals both pre-images
+only after cutoff and blind work, and derives seeded, planted, and terminal
+outcomes from exact digest matches and expected results. An added proposal
+names created records; a routed classification maps byte-for-byte to its
+Unestablished disposition; a retained limit binds the exact defect severity,
+consequence, owner, closure condition, Gate applicability, and affected
+claim's public restriction. Failed and stale records stay append-only.
+Independence is derived, not self-labelled.
+
+The amended protocol
+(`new-book-plans/full-society-scope-review-protocol.md`) is
+**author-confirmed 2026-08-14**, with the author's implementation request and
+source-derived correction authorisation recorded as their exact, bounded
+basis. Darshu remains the designated severity owner and Dhanush the designated
+independent checker; both are distinct from the author-custodian. The in-repo
+reviewer corpus remains inadmissible for closure condition five. R7 stays
+`unbuilt` without a current-source qualifying terminal event, may then become
+only `available`, and is never `built`.
+
+The closure schema now binds the exact Gate A claim, immutable candidate Git
+id, current source version and semantic scope digest, FS-ENV-01, qualifying
+event and cutoff, checker-derived assurance and residual sets, exact per-row
+claim limitations, the required verifier command chain and transcript digest,
+and a verbatim dated author-ratification act. The acceptance state remains
+deliberately locked `not-passed`; closing it still requires a later author
+amendment. **No commission exists, no reviewer panel is selected, no plant or
+seed pre-image or digest exists, no window is open, no proposal or terminal
+event exists, the closure record is null, and Gate A remains not passed.**
 
 **The reference envelope is versioned in structure, enacted 2026-08-09; values,
 calibration, and every feasibility claim stay outside Book 1.** The envelope

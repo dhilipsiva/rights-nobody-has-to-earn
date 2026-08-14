@@ -289,9 +289,10 @@ the independent review and closes Gate A last.
 
 - [ ] **Complete the full-society domain-and-layer ledger.**
   - The canonical source, generator, defect ledger and receipts, coverage-map
-    region, Book 2 crosswalk, review machinery, confirmed scope-review
-    protocol, commitment mechanics, and the severity-owner and
-    independent-checker designation (Darshu; Dhanush) are landed and
+    region, Book 2 crosswalk, review machinery, amended and confirmed
+    scope-review protocol v2, append-only commission mechanics, and the
+    severity-owner and independent-checker designation (Darshu; Dhanush) are
+    landed and
     verifier-enforced. History lives in git and the settled record in
     `CLAUDE.md`; schema detail lives in the generator and the controlling
     decision records, not here. The 210 powers, one cross-power temporal
