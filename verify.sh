@@ -43,6 +43,7 @@ PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
 LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
 CLOSURE_AUDIT=new-book-plans/16-constitutional-closure.py
+POWER_SOURCE_AUDIT=new-book-plans/17-full-society-power-source-manifest.py
 READER_AUDIT=new-book-plans/14-reader-evidence.py
 READER_GATE=new-book-plans/reader-evidence-admission-gate.py
 PILOT_READER_ARTIFACTS=new-book-plans/15-pilot-reader-artifacts.py
@@ -121,7 +122,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, reader-evidence contract, full-society ledger, or constitutional-closure audit,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, reader-evidence contract, power-source manifest, full-society ledger, or constitutional-closure audit,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -205,7 +206,16 @@ out=$(python3 "$PILOT_READER_ARTIFACTS" --check 2>&1) \
   && pass "$out" \
   || fail "pilot reader artifacts failed" "$out"
 
-# ── 2h. the full-society domain-and-layer ledger stays reviewed and generated ─
+# ── 2h. source-identified public powers stay census-bound ────────────────
+# Inventory only: exact source digests, one source anchor per row, closed
+# dispositions, reviewed totals, and watched-failing mutations. It creates no
+# FS-POW contract card, lawful holder, operation, assurance, or Gate A result.
+step "full-society power source manifest"
+out=$(python3 "$POWER_SOURCE_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "full-society power source manifest failed" "$out"
+
+# ── 2i. the full-society domain-and-layer ledger stays reviewed and generated ─
 # Structural only: schema, enum-mapping closure over the sibling reviewed
 # JSONs (read live, not digest-pinned), split/posture/compatibility rules,
 # needles, bound-decision digests, and the ledger's own negative controls. It
@@ -216,7 +226,7 @@ out=$(python3 "$LEDGER_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "full-society ledger failed" "$out"
 
-# 2i. claim-scoped constitutional closure and model allocation
+# 2j. claim-scoped constitutional closure and model allocation
 # Structural only: computes pass, block, or bounded-unresolved from the
 # reviewed canonical source. A pass upgrades no claim posture and establishes
 # no delivery, liveness, feasibility, operation, or Gate A closure.

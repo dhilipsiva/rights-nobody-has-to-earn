@@ -5,9 +5,9 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-13-gate-relative-readiness`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-13-power-source-inventory`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Canonical source SHA-256: `8f8f72e7ad134793f5a7fced35ef841b7f8d0350a17937166d4aacb433795bbf`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `c32644b63369c7302354b150eb0113b3ebbb84c474c4b6609001c400398c7b7a`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -38,7 +38,7 @@ Canonical source SHA-256: `8f8f72e7ad134793f5a7fced35ef841b7f8d0350a17937166d4aa
 | `receipts` | 5 | `268a490343643d8cfb08bb7453e4c2d18e99c4ee6a84ce53f03216228f58d4c9` | FS-RCP-01, FS-RCP-02, FS-RCP-03, FS-RCP-04, FS-RCP-05 |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `deferred_populations` | 3 | `521b7827121b3e3a1611f5a253acc0f589cfef7abb92866a8fa87594f6480c52` | unkeyed rows; digest is authoritative |
+| `deferred_populations` | 3 | `eeaeb966d7696ccd029557c825e1288cdc6a30ba4dba574243da6b86d14c8b1a` | unkeyed rows; digest is authoritative |
 | `closure_requirement_profiles` | 8 | `70012e4f81b171843ec3e8cd9ddaa4ece34792f5f228e8f3e42190d37c340940` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 37 | `3d0ca96d53b7d3cf53edc489e51e3d47e3011350bc69fcf1a42685a02174376c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37 |
 | `model_allocations` | 37 | `bc6e0dee390dd5219c6d43053c6ce8a4423f47f422a9c2cc1d62db72703b1517` | FS-MAL-01, FS-MAL-02, FS-MAL-03, FS-MAL-04, FS-MAL-05, FS-MAL-06, FS-MAL-07, FS-MAL-08, FS-MAL-09, FS-MAL-10, FS-MAL-11, FS-MAL-12, FS-MAL-13, FS-MAL-14, FS-MAL-15, FS-MAL-16, FS-MAL-17, FS-MAL-18, FS-MAL-19, FS-MAL-20, FS-MAL-21, FS-MAL-22, FS-MAL-23, FS-MAL-24, FS-MAL-25, FS-MAL-26, FS-MAL-27, FS-MAL-28, FS-MAL-29, FS-MAL-30, FS-MAL-31, FS-MAL-32, FS-MAL-33, FS-MAL-34, FS-MAL-35, FS-MAL-36, FS-MAL-37 |

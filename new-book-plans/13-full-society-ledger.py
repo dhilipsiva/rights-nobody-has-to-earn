@@ -65,6 +65,47 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCE = pathlib.Path("new-book-plans/full-society-ledger.json")
 OUTPUT = pathlib.Path("new-book-plans/full-society-ledger.md")
 READER_OUTPUT = pathlib.Path("new-book-plans/full-society-reader-ledger.md")
+POWER_SOURCE_MANIFEST = pathlib.Path(
+    "new-book-plans/full-society-power-source-manifest.json"
+)
+POWER_SOURCE_BINDING = {
+    "artifact_ref": str(POWER_SOURCE_MANIFEST),
+    "artifact_sha256": (
+        "b194b2098252b8ea49f0db0ff05c0ea4e8dc3b3fdb26f87efb2890dde4fbc93b"
+    ),
+    "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
+    "inventory_status": (
+        "reviewed-inventory-input-not-law-not-operation-"
+        "not-completeness-beyond-bound-version"
+    ),
+    "row_count": 237,
+    "disposition_counts": {
+        "card-required": 210,
+        "existing-formal-crosswalk": 8,
+        "explicit-refusal-limit": 19,
+    },
+    "power_population_status": "deferred-contract-cards-bodies-and-allocations",
+    "known_allocation_gaps": [
+        "appointments-qualification function and its nominee, selector, and qualification positions",
+        "custodial execution function distinct from policing",
+        "independent ecological science and assessment function",
+        "ecological and animal regulation and inspection functions",
+        "emergency alternate authoriser and independent substitute reviewer",
+        "Guardian alternate advocate and substitute reviewer",
+        "border and removal execution function",
+    ],
+    "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+    "closure_condition": (
+        "complete per-instrument FS-POW contract cards, lawful body and role "
+        "allocations, and power-bound decider, executor, auditor, and final-remedy "
+        "separation rows for every card-required and retained formal entry"
+    ),
+    "scope_ceiling": (
+        "Source-bound candidate census only: no row creates law, a complete "
+        "contract card, a lawful holder, operation, assurance, FS-POW population "
+        "completion, or Gate A passage."
+    ),
+}
 
 # The two rulings whose text defines the ledger's enums and stopping rule. An
 # edit there must force a deliberate refresh here. The seven sibling reviewed
@@ -724,6 +765,52 @@ def validate_bound_sources(src: dict):
                 f"{declared[name][:12]}… actual {actual[:12]}… — re-review the "
                 "ruling change, then refresh without --check"
             )
+
+
+
+def validate_power_source_inventory(src: dict):
+    binding = src.get("power_source_inventory")
+    if binding != POWER_SOURCE_BINDING:
+        raise LedgerError(
+            "power_source_inventory must equal the checker-bound reviewed "
+            "manifest contract"
+        )
+    if sha256(POWER_SOURCE_MANIFEST) != binding["artifact_sha256"]:
+        raise LedgerError("power source manifest digest mismatch")
+    manifest = load_json(POWER_SOURCE_MANIFEST)
+    if manifest.get("source_commit") != binding["source_commit"]:
+        raise LedgerError("power source manifest commit binding is stale")
+    if manifest.get("status") != binding["inventory_status"]:
+        raise LedgerError("power source manifest status binding is stale")
+    if manifest.get("row_count") != binding["row_count"]:
+        raise LedgerError("power source manifest row-count binding is stale")
+    summary = manifest.get("coverage_summary", {}).get("by_disposition")
+    if summary != binding["disposition_counts"]:
+        raise LedgerError("power source manifest disposition binding is stale")
+    deferrals = [
+        row for row in src.get("deferred_populations", [])
+        if row.get("record_type") == "powers"
+    ]
+    if len(deferrals) != 1:
+        raise LedgerError(
+            "the source inventory binds exactly one still-deferred powers population"
+        )
+    deferral = deferrals[0]
+    if deferral.get("owner_ref") != binding["owner_ref"]:
+        raise LedgerError("powers deferral owner differs from the source inventory")
+    if deferral.get("closure_condition") != binding["closure_condition"]:
+        raise LedgerError(
+            "powers deferral closure differs from the source inventory"
+        )
+    if src.get("powers") or src.get("function_allocations"):
+        raise LedgerError(
+            "source inventory may not coexist with invented FS-POW or function "
+            "allocation rows; complete their owning contracts first"
+        )
+    if len(binding["known_allocation_gaps"]) != len(
+            set(binding["known_allocation_gaps"])):
+        raise LedgerError("known power-allocation gaps must be unique")
+    validate_reference(binding["owner_ref"], "power_source_inventory.owner_ref")
 
 
 def validate_meanings(src: dict):
@@ -3387,6 +3474,7 @@ def validate_acceptance(src: dict):
 def validate(src: dict):
     validate_header(src)
     validate_bound_sources(src)
+    validate_power_source_inventory(src)
     validate_meanings(src)
     validate_axes(src)
     validate_compatibility(src)
@@ -3437,6 +3525,21 @@ def negative_controls(src: dict) -> int:
     def first_claim(s):
         return s["claims"][0]
 
+    control("power source inventory binding is required",
+            lambda s: s.pop("power_source_inventory"))
+    control("power source inventory digest is exact",
+            lambda s: s["power_source_inventory"].update(
+                {"artifact_sha256": "0" * 64}))
+    control("power source inventory row count is exact",
+            lambda s: s["power_source_inventory"].update({"row_count": 236}))
+    control("known power allocation gaps cannot disappear silently",
+            lambda s: s["power_source_inventory"][
+                "known_allocation_gaps"].pop())
+    control("powers deferral closure is exact",
+            lambda s: next(
+                row for row in s["deferred_populations"]
+                if row["record_type"] == "powers"
+            ).update({"closure_condition": "cards later"}))
     control("generic disposition key is refused",
             lambda s: first_claim(s).update({"disposition": "open"}))
     control("numeric rollup is an aggregate score",
@@ -4957,6 +5060,27 @@ def render(src: dict, resolution: dict) -> str:
     for rec in src["bodies"]:
         w(f"| {rec['id']} {rec['title']} | {rec['job']} | "
           f"{rec['may_not_do_alone']} | {rec['required_check']} |")
+    w("")
+    power_inventory = src["power_source_inventory"]
+    w("## Public-power source inventory")
+    w("")
+    w(power_inventory["scope_ceiling"])
+    w("")
+    w(f"The reviewed manifest `{power_inventory['artifact_ref']}` binds "
+      f"{power_inventory['row_count']} source-identified entries: "
+      f"{power_inventory['disposition_counts']['card-required']} require "
+      "contract cards, "
+      f"{power_inventory['disposition_counts']['explicit-refusal-limit']} are "
+      "refusals or limits, and "
+      f"{power_inventory['disposition_counts']['existing-formal-crosswalk']} "
+      "crosswalk narrow current formal fixtures.")
+    w("")
+    w("Known lawful-allocation gaps that keep FS-POW deferred:")
+    w("")
+    for gap in power_inventory["known_allocation_gaps"]:
+        w(f"- {gap}")
+    w("")
+    w(f"Closure: {power_inventory['closure_condition']}")
     w("")
     w("## Assurance routes")
     w("")

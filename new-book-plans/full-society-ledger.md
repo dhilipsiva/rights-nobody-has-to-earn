@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-13-gate-relative-readiness`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-13-power-source-inventory`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -745,6 +745,24 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-BOD-22 Future Conditions Guardian | Obtain evidence, demand assessment and reasons, participate, publish warnings, and seek review and remedy; an evidence-supported objection pauses only the irreversible authorisation pending expedited independent review. | Hold a permanent veto, legislative or budget power, programme control, or scientific-oracle status; invent future preferences; restart an unchanged replay key. | Expedited independent review, the predeclared alternate advocate and independent substitute reviewer, a case-bound temporal contract and replay key, cause-only removal. |
 | FS-BOD-23 Animal Protection Advocate | Investigate, seek rescue and interim relief, and pursue individual and systemic remedies for protected animals; any person or qualified association may initiate. | Hold a final veto, or remove any human's standing, floor, core liberty, due process, or political equality through an animal remedy. | Independent adjudication of conflicts, including with the Future Conditions Guardian; neither office has a final veto. |
 
+## Public-power source inventory
+
+Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage.
+
+The reviewed manifest `new-book-plans/full-society-power-source-manifest.json` binds 237 source-identified entries: 210 require contract cards, 19 are refusals or limits, and 8 crosswalk narrow current formal fixtures.
+
+Known lawful-allocation gaps that keep FS-POW deferred:
+
+- appointments-qualification function and its nominee, selector, and qualification positions
+- custodial execution function distinct from policing
+- independent ecological science and assessment function
+- ecological and animal regulation and inspection functions
+- emergency alternate authoriser and independent substitute reviewer
+- Guardian alternate advocate and substitute reviewer
+- border and removal execution function
+
+Closure: complete per-instrument FS-POW contract cards, lawful body and role allocations, and power-bound decider, executor, auditor, and final-remedy separation rows for every card-required and retained formal entry
+
 ## Assurance routes
 
 | Route | Status | Warrants | Cannot warrant | Falsification | Negative control |
@@ -1025,7 +1043,7 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 
 | Record type | Stage | Owner | Closure condition |
 | --- | --- | --- | --- |
-| powers | stage-3 | `TODO.md::Maintain completed constitutional coverage rows` | contract cards decompose each domain's public powers into FS-POW records |
+| powers | stage-3 | `TODO.md::Maintain completed constitutional coverage rows` | complete per-instrument FS-POW contract cards, lawful body and role allocations, and power-bound decider, executor, auditor, and final-remedy separation rows for every card-required and retained formal entry |
 | proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | independent scope review runs and every proposal receives one public proposal_disposition |
 | review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | an independent review event runs under the hash-committed scope-review protocol (new-book-plans/full-society-scope-review-protocol.md), its plant and seed digests pre-registered in this source at commissioning, with named reviewers and passed seeded and planted-omission controls |
 

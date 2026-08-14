@@ -28,6 +28,7 @@ python3 new-book-plans/14-reader-evidence.py --check
 python3 new-book-plans/14-reader-evidence.py --check --execute
 python3 new-book-plans/reader-evidence-admission-gate.py --self-test
 python3 new-book-plans/15-pilot-reader-artifacts.py --check
+python3 new-book-plans/17-full-society-power-source-manifest.py --check
 python3 new-book-plans/13-full-society-ledger.py --check
 python3 new-book-plans/16-constitutional-closure.py --check
 python3 registry/check.py
@@ -52,6 +53,14 @@ or holdout-domain step only. Each successor pre-registration binds
 predecessor. These are artifact checks over visible normal first-parent Git
 history only: they neither prove resistance to rewritten Git history nor attest
 to external truth.
+
+Run script 17 before script 13. It checks the source-digest-bound
+full-society power census: 237 reviewed source entries, comprising 210
+card-required entries, 19 explicit refusals or limits, and 8 narrow current-
+formal crosswalks. The census is an inventory prerequisite only. It creates no
+FS-POW contract card, lawful holder, operation, assurance, or Gate A result;
+script 13 keeps the power population deferred until the owning coverage rows,
+body and role allocations, and power-bound function-separation rows land.
 
 Run script 16 after script 13. It computes the claim-scoped constitutional-
 closure and model-allocation projection from the reviewed canonical source and

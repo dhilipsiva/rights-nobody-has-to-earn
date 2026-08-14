@@ -1246,7 +1246,7 @@ def negative_controls(source):
     add("function inventory removed", lambda s: s.pop("function_allocations"))
     add("id-only powers cannot make function separation pass",
         fabricate_untyped_power_transition,
-        "owning FS-POW contract-card validator")
+        "source inventory binds exactly one still-deferred powers population")
     add("role allocation drift", lambda s: next(r for r in s["roles"] if r["id"] == "FS-ROL-06").update({"domain_refs": ["FS-DOM-02", "FS-DOM-04"]}), "affected-claim binding")
     add("private-duty claim removed from all projections",
         lambda s: (

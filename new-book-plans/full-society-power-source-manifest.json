@@ -1,0 +1,2456 @@
+{
+  "spdx": "CC0-1.0",
+  "schema_version": 1,
+  "title": "Provisional FS-POW source-anchor manifest",
+  "status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
+  "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
+  "source_sha256": {
+    "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md": "d9bda040307eed017b55be751b2a99a73910568b0e8fbafb27c5c185c4f5b13c",
+    "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md": "bd461df84e8aead78206c9c1653ac5b0f5fe9345c566a1beef1fa2fa8112f2be",
+    "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md": "6b42ef36e0ab54b8391f1d2bc174836a8f6f6130dfba4786c8e0483c10b34c59",
+    "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md": "eb5919bbe57107ca7b61df0aa367a44354771c1d60a963e9a98c305b78dd93a4",
+    "new-book-plans/book-1-state-form-and-political-membership-decision.md": "55d921cdbf914f3b63bda91f20a29a54b4e9f219f8ffc18de11b89c2e89cc2e3",
+    "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md": "c27e4175ccbd3034a04d9cebbd80d314400fc290cff07997c1e314d04db28979",
+    "new-book-plans/book-1-time-model-decision.md": "4263f90c831c266121bdac1bfdc233135059dc809ecd96523bff7ed61c44eeeb",
+    "new-book-plans/constitution.nibli": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5"
+  },
+  "allowed_dispositions": [
+    "card-required",
+    "existing-formal-crosswalk",
+    "explicit-refusal-limit"
+  ],
+  "grain_rule_anchor": "new-book-plans/book-1-constitutional-coverage-map.md::posture per row: a row that would carry two is two rows",
+  "scope_note": "One row per source-identified authority, restriction, refusal, or current formal crosswalk in the inspected ratified Book 1 source set. This manifest is an inventory prerequisite only. It creates no law, institution, operation, assurance, Gate A result, or timeless claim of exhaustiveness. Card-required rows still require complete cards.",
+  "row_count": 237,
+  "coverage_summary": {
+    "by_disposition": {
+      "card-required": 210,
+      "existing-formal-crosswalk": 8,
+      "explicit-refusal-limit": 19
+    },
+    "by_source_family": {
+      "current-formal-constitution": 8,
+      "ecological-commons-and-non-human-animal": 43,
+      "economic-pluralism-and-protected-private-sphere": 29,
+      "family-dependency-reproduction-and-collective-plurality": 31,
+      "public-safety-defence-emergency-and-external-power": 64,
+      "state-form-and-political-membership": 51,
+      "substantive-equality-and-anti-subordination": 9,
+      "time-model": 2
+    },
+    "by_source_family_and_disposition": {
+      "current-formal-constitution": {
+        "card-required": 0,
+        "existing-formal-crosswalk": 8,
+        "explicit-refusal-limit": 0
+      },
+      "ecological-commons-and-non-human-animal": {
+        "card-required": 40,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 3
+      },
+      "economic-pluralism-and-protected-private-sphere": {
+        "card-required": 28,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 1
+      },
+      "family-dependency-reproduction-and-collective-plurality": {
+        "card-required": 31,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 0
+      },
+      "public-safety-defence-emergency-and-external-power": {
+        "card-required": 50,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 14
+      },
+      "state-form-and-political-membership": {
+        "card-required": 51,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 0
+      },
+      "substantive-equality-and-anti-subordination": {
+        "card-required": 9,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 0
+      },
+      "time-model": {
+        "card-required": 1,
+        "existing-formal-crosswalk": 0,
+        "explicit-refusal-limit": 1
+      }
+    }
+  },
+  "rows": [
+    {
+      "provisional_key": "formal-electorate-seating-authority",
+      "title": "Electorate-seated authority fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $o: choose(Electorate, $o) -> authority($o).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $o: choose(Electorate, $o) -> authority($o).",
+      "legal_effect_and_grain": "One exact current derivation of exposable authority from an asserted Electorate seating fact; not a complete appointment or office contract.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-public-body-authority",
+      "title": "Named-public-body authority fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $o: public($o) -> authority($o).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $o: public($o) -> authority($o).",
+      "legal_effect_and_grain": "One exact current derivation of exposable authority from a named public-body fact; not operational independence.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-review-credential",
+      "title": "Electorate-issued Review credential fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $a: choose(Electorate, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Review, $a).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $a: choose(Electorate, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Review, $a).",
+      "legal_effect_and_grain": "One exact current Review credential route with carried-status and recall guards.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-tribunal-credential",
+      "title": "Convocation-issued Tribunal credential fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $a: choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $a: choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a).",
+      "legal_effect_and_grain": "One exact current second-issuer credential route; it does not authenticate either seating source.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-appeals-expungement",
+      "title": "Appeals forgiveness fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $x: forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $x: forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x).",
+      "legal_effect_and_grain": "One exact current two-fact expungement mark; no case, purpose, writer, or adjudication lineage.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-appeals-relief",
+      "title": "Per-case appellate relief fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).",
+      "legal_effect_and_grain": "One exact current relief conjunction; generic judgment reuse remains a disclosed limit.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-active-custody",
+      "title": "Case-bound current Court custody authority",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "# <T3-LEASE-RULE-BEGIN>",
+      "legal_effect_and_grain": "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "formal-amendment-label-result",
+      "title": "Current amendment label verdict fixture",
+      "disposition": "existing-formal-crosswalk",
+      "source_anchor": "new-book-plans/constitution.nibli::all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).",
+      "source_path": "new-book-plans/constitution.nibli",
+      "source_needle": "all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).",
+      "legal_effect_and_grain": "A current label verdict over asserted proposal and outcome facts; it neither authenticates nor enacts a source transition.",
+      "source_family": "current-formal-constitution"
+    },
+    {
+      "provisional_key": "gov-common-enumerated-competence",
+      "title": "Common-tier enumerated competence",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::The common tier has only constitutionally enumerated powers.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "The common tier has only constitutionally enumerated powers.",
+      "legal_effect_and_grain": "One jurisdictional authority boundary for the common tier; no residual or inherent power.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-regional-residual-authority",
+      "title": "Regional residual legislative authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions hold every residual not assigned to the common tier",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Regions hold every residual not assigned to the common tier",
+      "legal_effect_and_grain": "One residual regional authority allocation, bounded by protected local competences and common guarantees.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-subsidiarity-displacement",
+      "title": "Subsidiarity displacement decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Displacement must be no broader than the reason establishes.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Displacement must be no broader than the reason establishes.",
+      "legal_effect_and_grain": "One reviewable competence-displacement act; it cannot manufacture general pre-emption.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-competence-interim-allocation",
+      "title": "Interim allocation of disputed competence",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 2. Territorial settlement",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 2. Territorial settlement",
+      "legal_effect_and_grain": "One temporary Court allocation where no uncontested holder exists; preserves floor and prevents irreparable harm without final competence.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-assembly-ordinary-law",
+      "title": "People's Assembly ordinary lawmaking",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::It makes ordinary law, authorises revenue and spending",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "It makes ordinary law, authorises revenue and spending",
+      "legal_effect_and_grain": "One ordinary-law enactment family inside competence and corridor; revenue and spending remain separate authorisations below.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-assembly-revenue",
+      "title": "People's Assembly revenue authorisation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::authorises revenue and spending",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "authorises revenue and spending",
+      "legal_effect_and_grain": "A distinct legislative authority to raise revenue; it does not itself authorise spending.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-assembly-spending",
+      "title": "People's Assembly spending authorisation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### People's Assembly",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### People's Assembly",
+      "legal_effect_and_grain": "A distinct legislative appropriation/spending authority; the anchor sits in the Assembly's enumerated job and is not a delivery claim.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-assembly-oversight",
+      "title": "People's Assembly public oversight",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::performs public oversight, and",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "performs public oversight, and",
+      "legal_effect_and_grain": "One legislative oversight power that cannot adjudicate its own compliance or replace independent audit and courts.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-assembly-amendment-initiation",
+      "title": "People's Assembly amendment initiation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::initiates constitutional amendments.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "initiates constitutional amendments.",
+      "legal_effect_and_grain": "One docket/initiation act, separate from supermajority approval, referendum, review, and enactment.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-proportional-election-certification",
+      "title": "Proportional Assembly election certification",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Before formalisation, a Book 1 electoral card must define the outcome metric",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Before formalisation, a Book 1 electoral card must define the outcome metric",
+      "legal_effect_and_grain": "One result contract for the proportional popular chamber; metric, tolerance, roster, certification, challenge, and execution stay explicit.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-regions-delegation",
+      "title": "Regions Council delegation selection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Regions Council",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Regions Council",
+      "legal_effect_and_grain": "One regional-legislature act creating a proportional delegation; the separate lifecycle card owns tenure, instruction, replacement, and vacancy.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-council-bill-return",
+      "title": "Regions Council one-time reasoned bill return",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::For ordinary law the Council may return a bill once",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "For ordinary law the Council may return a bill once",
+      "legal_effect_and_grain": "One suspensive return instrument; same-rule Assembly repassage ends it and it is never a permanent veto.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-council-regional-consent",
+      "title": "Regions Council federal-settlement consent",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Regions Council",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Regions Council",
+      "legal_effect_and_grain": "One final-consent family confined to enumerated regional constitutional settlements.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-executive-administration",
+      "title": "Executive execution and administration of law",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive authority belongs to a collective Executive Council",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Executive authority belongs to a collective Executive Council",
+      "legal_effect_and_grain": "One collective executive mandate under Assembly confidence; excludes decree, dissolution, veto, term extension, and standing emergency authority.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-confidence-government-certification",
+      "title": "Assembly certification of confidence government",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Executive Council",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Executive Council",
+      "legal_effect_and_grain": "One democratic result and institutional execution act, separate from the Civic President's formal appointment.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-constructive-no-confidence",
+      "title": "Constructive no-confidence replacement",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Executive Council",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Executive Council",
+      "legal_effect_and_grain": "One removal-and-successor act in the same decision; cannot create a vacancy-only executive removal.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-president-joint-selection",
+      "title": "Joint-chamber Civic President selection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Civic President",
+      "legal_effect_and_grain": "One joint selection result; distinct from the President's formal government appointment act.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-president-formal-appointment",
+      "title": "Civic President formal government appointment",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Civic President",
+      "legal_effect_and_grain": "One non-discretionary formal appointment act executing a certified confidence result.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-president-promulgation",
+      "title": "Civic President promulgation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Civic President",
+      "legal_effect_and_grain": "One bounded formal promulgation act; refusal cannot become a policy veto.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-president-certification-receipt",
+      "title": "Civic President certification receipt",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::certification-receipt, and continuity duties.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "certification-receipt, and continuity duties.",
+      "legal_effect_and_grain": "One receipt/formality act; it does not certify the underlying election result.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-president-alternate-continuity",
+      "title": "Civic President alternate and continuity",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::The office requires a predeclared alternate, finite term",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "The office requires a predeclared alternate, finite term",
+      "legal_effect_and_grain": "One limited alternate route carrying only bounded formal duties through refusal, vacancy, failure, or removal.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-ordinary-court-relief",
+      "title": "Ordinary-court case-specific relief",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Ordinary courts provide relief in individual cases.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Ordinary courts provide relief in individual cases.",
+      "legal_effect_and_grain": "One case-specific adjudication and remedy family; no final general invalidation.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-constitutional-general-invalidation",
+      "title": "Constitutional Court general invalidation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Courts and independent institutions",
+      "legal_effect_and_grain": "One final general-review family; the Court may invalidate but not make ordinary policy or run government.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-constitutional-procedure-review",
+      "title": "Constitutional procedure review",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Courts and independent institutions",
+      "legal_effect_and_grain": "One constitutional legality-review family whose three underlying result records remain separately typed.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-alternate-constitutional-panel",
+      "title": "Alternate constitutional panel",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::goes to a predeclared alternate constitutional panel",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "goes to a predeclared alternate constitutional panel",
+      "legal_effect_and_grain": "One alternate review route for challenges to Court composition, appointment, or recusal; members must be uninvolved.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-appointments-qualification-function",
+      "title": "Appointments-qualification function",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Courts and independent institutions",
+      "legal_effect_and_grain": "A dedicated function expressly required by the ratified architecture; holder/body allocation remains unresolved and must not be assigned to audit by implication.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-appointment-qualification-decision",
+      "title": "Reasoned qualification review and adverse decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 4. Appointments, terms, and anti-capture",
+      "legal_effect_and_grain": "One reviewable qualification determination; silence is never an adverse result or approval.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-independent-appointment-selection",
+      "title": "Independent-body appointment selection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Independent appointments use open nominations, reasoned qualification review",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Independent appointments use open nominations, reasoned qualification review",
+      "legal_effect_and_grain": "One divided-source selection family; exact seats, selectors, qualification authority, and fallback remain explicit unimplemented fields.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-cause-only-office-removal",
+      "title": "Cause-only independent-office removal",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 4. Appointments, terms, and anti-capture",
+      "legal_effect_and_grain": "One removal instrument requiring separated fact-finding and confirmation.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-appointment-vacancy-fallback",
+      "title": "Appointment vacancy and capture fallback",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 4. Appointments, terms, and anti-capture",
+      "legal_effect_and_grain": "One bounded continuity route around missing, captured, conflicted, or silent appointing sources; it creates no permanent vacancy veto.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-assembly-term-vacancy-election",
+      "title": "Assembly term, vacancy, and early-election authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 4. Appointments, terms, and anti-capture",
+      "legal_effect_and_grain": "One office-specific unresolved temporal/continuity card for the Assembly.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-council-tenure-replacement",
+      "title": "Regions Council tenure, instruction, replacement, and vacancy",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions Council delegation tenure, instruction, replacement and vacancy",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Regions Council delegation tenure, instruction, replacement and vacancy",
+      "legal_effect_and_grain": "One office-specific unresolved delegation lifecycle card.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-executive-composition-replacement",
+      "title": "Executive composition and replacement",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive Council composition, member replacement, coordinator incapacity",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Executive Council composition, member replacement, coordinator incapacity",
+      "legal_effect_and_grain": "One office-specific unresolved executive composition and succession card.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-president-selection-removal-mechanics",
+      "title": "President selection fallback and removal mechanics",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 4. Appointments, terms, and anti-capture",
+      "legal_effect_and_grain": "One office-specific unresolved finite selection, alternate, and removal-confirmation card.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-court-oversight-seat-allocation",
+      "title": "Court and oversight seat allocation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 4. Appointments, terms, and anti-capture",
+      "legal_effect_and_grain": "One institution-family appointment-control card; exact seats and selectors remain implementation choices inside anti-capture limits.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-political-home-determination",
+      "title": "Political-home determination and transfer",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::A move transfers political home atomically.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "A move transfers political home atomically.",
+      "legal_effect_and_grain": "One membership determination and atomic transfer family with last-uncontested/provisional continuity and no duplicate ballot.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-amendment-approval",
+      "title": "Constitutional amendment approval",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::A constitutional amendment requires:",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "A constitutional amendment requires:",
+      "legal_effect_and_grain": "One multi-body result family: full-Assembly two-thirds plus national referendum and conditional Council/affected-region consent.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-constitutional-initiative",
+      "title": "Elector constitutional initiative docket",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::A constitutional initiative by electors may force a public docket",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "A constitutional initiative by electors may force a public docket",
+      "legal_effect_and_grain": "One initiation power that forces docket and recorded Assembly vote but cannot bypass amendment thresholds.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-ordinary-law-initiative",
+      "title": "Bounded ordinary-law initiative",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::A bounded ordinary-law initiative may proceed to referendum",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "A bounded ordinary-law initiative may proceed to referendum",
+      "legal_effect_and_grain": "One initiative, compatibility-review, referendum, and counterproposal family with a single operative result.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-constructive-recall",
+      "title": "Constructive recall",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::Direct recall is limited to directly elected single-holder offices",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "Direct recall is limited to directly elected single-holder offices",
+      "legal_effect_and_grain": "One direct-office removal plus successor selection on the same ballot; assemblies and Executive Council are excluded.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-caretaker-continuity",
+      "title": "Caretaker continuity authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 7. Continuity, deadlock, and peaceful transfer",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 7. Continuity, deadlock, and peaceful transfer",
+      "legal_effect_and_grain": "One temporary continuity mandate preserving floor and existing law without ordinary or irreversible policy power.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-fresh-election-call",
+      "title": "Electoral body's fresh-election call",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::the electoral body has a legal duty and authority to call a fresh election.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "the electoral body has a legal duty and authority to call a fresh election.",
+      "legal_effect_and_grain": "One source-bound legal authority after caretaker deadline; no claim that the outside clock advances or election occurs.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-budget-continuity",
+      "title": "Budget-deadlock essential continuity",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 7. Continuity, deadlock, and peaceful transfer",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 7. Continuity, deadlock, and peaceful transfer",
+      "legal_effect_and_grain": "One temporary enumerated spending-continuity power; no new programme or permanent spending.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-successor-terminates-predecessor",
+      "title": "Certified succession and transfer",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::A certified successor immediately ends the predecessor's current authority.",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "A certified successor immediately ends the predecessor's current authority.",
+      "legal_effect_and_grain": "One fail-safe succession legal effect; outgoing refusal cannot extend current power.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-secession-settlement",
+      "title": "Negotiated secession settlement and ratification",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 6. Lawmaking, amendment, initiative, and recall",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 6. Lawmaking, amendment, initiative, and recall",
+      "legal_effect_and_grain": "One staged negotiation, settlement, and affected-population ratification family; referendum alone does not accomplish exit.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "eq-direct-distinction-determination",
+      "title": "Direct-distinction justification determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "For a **direct status distinction**, the respondent must prove",
+      "legal_effect_and_grain": "One adjudicated exception test tied to a particular function; never a general status authority.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-indirect-distinction-determination",
+      "title": "Indirect-distinction justification determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For an **indirect distinction**, the respondent must prove:",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "For an **indirect distinction**, the respondent must prove:",
+      "legal_effect_and_grain": "One five-part purpose, evidence, necessity, alternatives, and proportionality determination.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-accommodation-determination",
+      "title": "Reasonable-accommodation determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::An accommodation may be refused only when the duty-bearer proves",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "An accommodation may be refused only when the duty-bearer proves",
+      "legal_effect_and_grain": "One person-specific adjustment/refusal decision with consultation, effective alternative, reasons, and challenge.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-diagnostic-authorization",
+      "title": "Equality-diagnostic authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Book 1 authorises equality diagnostics only for a declared equality purpose",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "Book 1 authorises equality diagnostics only for a declared equality purpose",
+      "legal_effect_and_grain": "One purpose-limited data and methodology authority walled from consequential person records.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-diagnostic-systemic-review",
+      "title": "Diagnostic presumption and systemic review",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "## 8. Equality diagnostics and the data wall",
+      "legal_effect_and_grain": "One aggregate/systemic trigger; never an adverse individual fact, guilt finding, punishment, or entitlement by itself.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-positive-measure-authorization",
+      "title": "Positive-measure authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "## 9. Positive measures",
+      "legal_effect_and_grain": "One evidence-bound remedial-authority family; ordinary law selects compatible means and operational values.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-positive-measure-continuation",
+      "title": "Positive-measure continuation finding",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::A measure continues only while current, independently reviewable evidence shows",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "A measure continues only while current, independently reviewable evidence shows",
+      "legal_effect_and_grain": "A separate current continuation finding; review silence cannot renew or enlarge the measure.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-historical-repair-measure",
+      "title": "Historical-barrier repair measure",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Democratic law may choose compatible means including restitution",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "Democratic law may choose compatible means including restitution",
+      "legal_effect_and_grain": "One family of evidence- and participation-bound repair measures; no fixed roster, valuation, or formula.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "eq-systemic-remedy-order",
+      "title": "Equality systemic remedy order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::Systemic remedies may stop a practice, reopen or re-audit",
+      "source_path": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "source_needle": "Systemic remedies may stop a practice, reopen or re-audit",
+      "legal_effect_and_grain": "One bounded structural-remedy family; individual liability still requires individual review.",
+      "source_family": "substantive-equality-and-anti-subordination"
+    },
+    {
+      "provisional_key": "econ-occupational-licence",
+      "title": "Mandatory occupational licence",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::Mandatory occupational licensing is permitted only for evidenced serious",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "Mandatory occupational licensing is permitted only for evidenced serious",
+      "legal_effect_and_grain": "One function-specific licence authority with safety/fiduciary/core-function trigger, alternatives, portability, review, and expiry discipline.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-compulsory-acquisition",
+      "title": "Compulsory acquisition",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 4. Property, housing, inheritance, and knowledge",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 4. Property, housing, inheritance, and knowledge",
+      "legal_effect_and_grain": "One property-taking authority with necessity, reasons, hearing, review, and calibrated compensation.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-knowledge-compulsory-licence",
+      "title": "Knowledge exclusivity and compulsory access licence",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::compulsory licensing, procurement, or another lawful",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "compulsory licensing, procurement, or another lawful",
+      "legal_effect_and_grain": "One time-bounded statutory-exclusivity/access override family used only to protect floor or commons duties.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-public-scale-power-finding",
+      "title": "Public-scale private-power finding",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::an independent and contestable public-scale-power finding based on one or more",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "an independent and contestable public-scale-power finding based on one or more",
+      "legal_effect_and_grain": "One function-specific finding of essentiality, dominance, gatekeeping, dependency, lock-in, network effects, asymmetry, or unavailable exit.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-access-mandate",
+      "title": "Public-scale access mandate",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::Compatible remedies include access mandates",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "Compatible remedies include access mandates",
+      "legal_effect_and_grain": "One calibrated remedy for the affected public-facing function; continuity and affected-party protection remain mandatory.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-public-option",
+      "title": "Public-option remedy",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::public options, structural",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "public options, structural",
+      "legal_effect_and_grain": "One structural remedy distinct from access mandate, separation, breakup, receivership, licence withdrawal, and acquisition.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-structural-separation",
+      "title": "Structural-separation remedy",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::structural separation, breakup",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "structural separation, breakup",
+      "legal_effect_and_grain": "One structural private-power remedy; investigation, adjudication, execution, audit, and final review stay separated.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-breakup",
+      "title": "Breakup remedy",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 6. Function-specific public-like duties",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 6. Function-specific public-like duties",
+      "legal_effect_and_grain": "One distinct breakup remedy with workers, users, and floor-recipient continuity.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-receivership",
+      "title": "Receivership",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::Receivership and continuity administration need",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "Receivership and continuity administration need",
+      "legal_effect_and_grain": "One temporary management authority with its own source-bound temporal contract and fail-closed end.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-licence-withdrawal",
+      "title": "Licence withdrawal",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::licence withdrawal, or public acquisition.",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "licence withdrawal, or public acquisition.",
+      "legal_effect_and_grain": "One regulatory remedy, distinct from public acquisition and temporary management.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-public-acquisition",
+      "title": "Public acquisition remedy",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 6. Function-specific public-like duties",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 6. Function-specific public-like duties",
+      "legal_effect_and_grain": "One public acquisition power reusing the separate compulsory-acquisition hearing, review, and compensation contract.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-taxation",
+      "title": "Taxation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "One tax-enactment family; rates, bases, exemptions, and mixes remain democratic choices, while collection is a separate authority.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-appropriation",
+      "title": "Legislative appropriation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::Taxation, appropriation, spending, guarantees, and borrowing require",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "Taxation, appropriation, spending, guarantees, and borrowing require",
+      "legal_effect_and_grain": "A distinct legislative authorization for allocation of public money.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-spending",
+      "title": "Public spending",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "A distinct spending authority following appropriation; payment never proves delivery.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-public-guarantee",
+      "title": "Public guarantee",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "A distinct fiscal guarantee family with reporting, audit, risk disclosure, floor, and commons limits.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-borrowing",
+      "title": "Public borrowing",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "One democratically authorized borrowing family; no creditor subordination of floors or inherited personal liability.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-monetary-policy-authority",
+      "title": "Monetary-policy authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::A monetary authority may have operational independence only within a",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "A monetary authority may have operational independence only within a",
+      "legal_effect_and_grain": "One mandate-bound monetary/payment authority with reasons, distributional review, audit, cause removal, and no fiscal veto.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-credit-insurance-decision",
+      "title": "Credit and insurance decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "One public-facing financial decision family with reasons, equality, correction, and challenge; never a floor gate.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-insolvency-restructuring",
+      "title": "Insolvency restructuring",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 9. Debt, insolvency, and institutional failure",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 9. Debt, insolvency, and institutional failure",
+      "legal_effect_and_grain": "One temporary restructuring authority; kept distinct from receivership, licence control, and scarcity administration.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-licence-control",
+      "title": "Temporary licence control",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 9. Debt, insolvency, and institutional failure",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 9. Debt, insolvency, and institutional failure",
+      "legal_effect_and_grain": "One temporary licence-control authority with its own temporal source and end.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-scarcity-finding",
+      "title": "Physical-scarcity finding",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 10. Genuine physical scarcity",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 10. Genuine physical scarcity",
+      "legal_effect_and_grain": "One positive, resource-and-population-specific finding after alternatives and coordination are considered.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-scarcity-allocation",
+      "title": "Physical-scarcity allocation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 10. Genuine physical scarcity",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 10. Genuine physical scarcity",
+      "legal_effect_and_grain": "One allocation family preserving minima where possible, recording every shortfall, and forbidding worth proxies.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-compulsory-continuity",
+      "title": "Narrow compulsory service continuity",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 10. Genuine physical scarcity",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 10. Genuine physical scarcity",
+      "legal_effect_and_grain": "One narrow provider/bargaining-party continuity obligation; never conscription of a named worker.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-price-control-law",
+      "title": "Ordinary-law price control",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::**Price control** is ordinary economic law",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "**Price control** is ordinary economic law",
+      "legal_effect_and_grain": "One ordinary legislative economic instrument; no declaration is needed and no unilateral executive pricing authority exists.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "limit-no-emergency-rationing-power",
+      "title": "No separate emergency rationing power",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Rationing** is not a new power.",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Rationing** is not a new power.",
+      "legal_effect_and_grain": "A referral to the physical-scarcity finding/allocation contract, not an emergency FS-POW card.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-emergency-price-power",
+      "title": "No emergency price-control power",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::It is **not** an emergency power",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "It is **not** an emergency power",
+      "legal_effect_and_grain": "A limit preserving price control as ordinary Assembly law and refusing unilateral executive pricing power.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "family-child-best-interests",
+      "title": "Child best-interests decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::A decision relying on best interests must state",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "A decision relying on best interests must state",
+      "legal_effect_and_grain": "One child- and decision-specific fiduciary determination with voice, evidence, alternatives, reasons, and review.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-early-authority",
+      "title": "Decision-specific early authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 3. General adulthood and early authority",
+      "legal_effect_and_grain": "One child decision-specific authority; never adulthood, global capacity, ballot, or candidacy.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-adulthood-provisional-determination",
+      "title": "Adulthood and provisional-status determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::provisional adult status preserves that opportunity",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "provisional adult status preserves that opportunity",
+      "legal_effect_and_grain": "One evidence, challenge, correction, and continuity determination; records evidence adulthood but do not create it.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-parentage-establishment",
+      "title": "Parentage establishment",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 5. Parentage, origin, and child continuity",
+      "legal_effect_and_grain": "One parentage relation decision with child continuity, process, and bounded effects; biology or registration alone is insufficient.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-adoption-determination",
+      "title": "Adoption determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Adoption and parentage proceedings require",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Adoption and parentage proceedings require",
+      "legal_effect_and_grain": "One adoption/parentage proceeding with child voice, lawful adult consents, independent review, and anti-sale/coercion controls.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-contact-custody-restriction",
+      "title": "Parentage contact or custody restriction",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 5. Parentage, origin, and child continuity",
+      "legal_effect_and_grain": "One individualized restriction family; placement, disability, migration, or household form never supplies an automatic ground.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-care-duty-enforcement",
+      "title": "Assumed care/support duty enforcement",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Law may enforce a clearly assumed support module",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Law may enforce a clearly assumed support module",
+      "legal_effect_and_grain": "One bounded private-duty enforcement family; kinship never creates compulsory personal care or inherited support debt.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-protective-intervention",
+      "title": "Ordinary domestic protective intervention",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Protective action must target the evidenced danger",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Protective action must target the evidenced danger",
+      "legal_effect_and_grain": "One ordinary protective intervention with evidence, reasons, necessity, voice, challenge, restoration, and repair.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-immediate-danger-protection",
+      "title": "Immediate-danger emergency protection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::An immediate danger may support temporary emergency protection",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "An immediate danger may support temporary emergency protection",
+      "legal_effect_and_grain": "A separate temporary instrument with narrow trigger, least restriction, alternate reviewer, prompt review, continuity, correction, and T3 end.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-child-separation",
+      "title": "Child separation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Separating a child from a parent or primary caregiver is a last resort.",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Separating a child from a parent or primary caregiver is a last resort.",
+      "legal_effect_and_grain": "One last-resort separation order with individual evidence, prior practical support, representation, review, and reunification/stable-care path.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-chosen-supporter",
+      "title": "Chosen supporter authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::A person may choose, change, limit, or refuse one or more supporters.",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "A person may choose, change, limit, or refuse one or more supporters.",
+      "legal_effect_and_grain": "One person-created and revocable decision-support relation; it cannot silently become substituted choice.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-best-interpretation",
+      "title": "Best-interpretation authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::law may use only a conflict-free, decision-specific",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "law may use only a conflict-free, decision-specific",
+      "legal_effect_and_grain": "One least-restrictive, time-bounded best interpretation after genuine support fails to ascertain will/preferences.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-emergency-imminent-harm-act",
+      "title": "Supported-agency imminent-harm emergency act",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::An emergency act taken to prevent imminent serious and otherwise unavoidable",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "An emergency act taken to prevent imminent serious and otherwise unavoidable",
+      "legal_effect_and_grain": "One no-broader/no-longer emergency act; creates no continuing incapacity and triggers notice, review, restoration, and remedy.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-advance-directive-representative",
+      "title": "Advance directive and chosen representative authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Advance directives, powers chosen by the person, support agreements",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Advance directives, powers chosen by the person, support agreements",
+      "legal_effect_and_grain": "One consequential-record family with authentication, scope, conflict, challenge, correction, carry, end, and revocation.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-assisted-reproduction-regulation",
+      "title": "Assisted-reproduction ordinary regulation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Democratic law may regulate reimbursement, compensation, brokerage",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Democratic law may regulate reimbursement, compensation, brokerage",
+      "legal_effect_and_grain": "An ordinary-law regulatory family only; the ruling creates no generic prior licence or official reproductive veto.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-institutional-placement",
+      "title": "Adult institutional placement",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Institutional placement requires consent or the same narrow,",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Institutional placement requires consent or the same narrow,",
+      "legal_effect_and_grain": "One narrow adult placement authority; age or caregiver convenience is insufficient and consent remains primary.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-assisted-dying-enabling-law",
+      "title": "Medically assisted-dying enabling authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 10. Ageing, treatment, and end of life",
+      "legal_effect_and_grain": "One democratically optional adult authority with repeated request, independent review, real alternatives, withdrawal, audit, remedy, and own T3 contract.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-succession-adjudication",
+      "title": "Estate succession and probate adjudication",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::A valid will leads the distribution of an estate",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "A valid will leads the distribution of an estate",
+      "legal_effect_and_grain": "One succession family bounded by liabilities, dependant protection, collective title, taxation, equality, and floor continuity.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-membership-determination",
+      "title": "Collective membership determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Collective membership requires the person's self-identification",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Collective membership requires the person's self-identification",
+      "legal_effect_and_grain": "One dual-source membership determination with privacy, exit, procedural challenge, and no general-government effect.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-internal-government",
+      "title": "Collective internal government and customary-law decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Internal selection, representation, and customary law may differ",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Internal selection, representation, and customary law may differ",
+      "legal_effect_and_grain": "One internal authority family bounded by universal individual rights and final constitutional review.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-representative-authority",
+      "title": "Collective representative authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::A collective representative must derive authority from the collective's",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "A collective representative must derive authority from the collective's",
+      "legal_effect_and_grain": "One authenticated, conflict-disclosed, scoped, challengeable representative authority; assertion or state selection cannot manufacture consent.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-title-determination",
+      "title": "Collective title and territorial-basis determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Territorial authority requires an independently established historical or",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Territorial authority requires an independently established historical or",
+      "legal_effect_and_grain": "One historical/territorial basis and title determination; cultural difference alone creates no unbounded jurisdiction.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-consent-gated-authorization",
+      "title": "Existential-effect authorization gated by actual collective consent",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Free, prior, informed, and actual collective consent is required before",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "Free, prior, informed, and actual collective consent is required before",
+      "legal_effect_and_grain": "One authorization family for each listed existential/irreversible effect; consent is necessary but cannot authorize individual-rights violations.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-consultation-decision",
+      "title": "Material collective-effect consultation and accommodation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::the duty is good-faith consultation and accommodation:",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "the duty is good-faith consultation and accommodation:",
+      "legal_effect_and_grain": "One reasoned consultation/accommodation family for material non-existential effects; neither notice-after-decision nor a blanket veto.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "collective-emergency-evacuation",
+      "title": "Emergency evacuation without prior collective consent",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::A temporary evacuation to prevent imminent loss of life",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "A temporary evacuation to prevent imminent loss of life",
+      "legal_effect_and_grain": "One separate emergency restriction preserving title and requiring necessity, least restriction, review, continuity, return, repair, and declaration binding.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "eco-scientific-ceiling-evidence",
+      "title": "Scientific ceiling proposal/authentication",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 4. Versioned ecological ceilings",
+      "legal_effect_and_grain": "One evidence-producing finding family; science supplies evidence, not law.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-legislative-ceiling",
+      "title": "Legislative ecological-ceiling enactment",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Democratic law must enact and publish versioned ecological ceilings",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Democratic law must enact and publish versioned ecological ceilings",
+      "legal_effect_and_grain": "One multidimensional legal ceiling/minimum/resource-budget enactment, versioned with evidence, scope, review, correction, and T3 status.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-ceiling-replacement",
+      "title": "Weaker-ceiling replacement/non-regression determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::It may not enact a weaker limit unless public",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "It may not enact a weaker limit unless public",
+      "legal_effect_and_grain": "One independently reviewed non-regression determination; corrected science may recalibrate only through the same contract.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-ceiling-judicial-review",
+      "title": "Judicial review of ceiling legality",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::an independent court finally reviews legality.",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "an independent court finally reviews legality.",
+      "legal_effect_and_grain": "One legality-review family separated from scientific evidence, democratic enactment, and Guardian advocacy.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-high-consequence-authorization",
+      "title": "High-consequence ecological authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Before a high-consequence authorization, assessment must address:",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Before a high-consequence authorization, assessment must address:",
+      "legal_effect_and_grain": "One project/act authorization requiring cumulative effects, alternatives, cross-domain effects, uncertainty, conflicts, prevention, restoration, and failure response.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-no-fault-protection-cessation",
+      "title": "Immediate no-fault ecological protection and cessation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Prevention, cessation, containment, and continuity do not wait",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Prevention, cessation, containment, and continuity do not wait",
+      "legal_effect_and_grain": "One immediate protective act while liability is unresolved; it establishes neither civil liability nor personal guilt.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-strict-hazard-liability",
+      "title": "Strict hazardous-activity restorative liability",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::bear strict liability for containment, restoration",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "bear strict liability for containment, restoration",
+      "legal_effect_and_grain": "One causal inherently-hazardous liability determination for containment, restoration, and response costs.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-contribution-control-liability",
+      "title": "Contribution/control ecological liability",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::responsibility in proportion to its adjudicated contribution and control.",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "responsibility in proportion to its adjudicated contribution and control.",
+      "legal_effect_and_grain": "One non-strict adjudicated contribution/control liability family, separate from personal punishment.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "eco-public-restoration",
+      "title": "Orphan-harm public restoration and later recovery",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::the public restoration duty continues immediately.",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "the public restoration duty continues immediately.",
+      "legal_effect_and_grain": "One public restoration/continuity authority where responsible actor is unknown, insolvent, absent, or delayed; later cost recovery is separate.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "guardian-information-and-assessment",
+      "title": "Guardian information and assessment demand",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::require a responsible body to publish an assessment",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "require a responsible body to publish an assessment",
+      "legal_effect_and_grain": "One advocacy/information power; no permit, programme, budget, adjudication, or final veto.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "guardian-challenge-and-remedy",
+      "title": "Guardian challenge and remedy initiation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::challenge a ceiling, permit, omission, regression",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "challenge a ceiling, permit, omission, regression",
+      "legal_effect_and_grain": "One challenge/initiation family; ordinary request for relief is separate from automatic pause.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "guardian-automatic-pause",
+      "title": "Guardian evidence-supported automatic pause",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::automatically pauses only the irreversible part",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "automatically pauses only the irreversible part",
+      "legal_effect_and_grain": "One case/version/evidence/ground-bound temporary stay triggered only by the collegial Guardian or its predeclared alternate.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "guardian-independent-merits-decision",
+      "title": "Independent Guardian-stay merits decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 9. Future Conditions Guardian",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 9. Future Conditions Guardian",
+      "legal_effect_and_grain": "One expedited independent merits decision, separated from objection, pause, and evidence production.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "limit-guardian-no-final-veto",
+      "title": "Guardian has no final veto or operating power",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The Guardian has no final veto",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "The Guardian has no final veto",
+      "legal_effect_and_grain": "A categorical institutional limit preventing advocacy/pause powers from becoming policy, fiscal, permitting, scientific, or lifestyle authority.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-taxon-extension",
+      "title": "Animal sentience-presumption extension",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 11. Class 10: non-human-animal welfare and integrity",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 11. Class 10: non-human-animal welfare and integrity",
+      "legal_effect_and_grain": "One independent public evidence-responsive taxon-coverage extension; conclusive sentience proof is not required.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-taxon-removal",
+      "title": "Animal sentience-presumption removal",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 11. Class 10: non-human-animal welfare and integrity",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 11. Class 10: non-human-animal welfare and integrity",
+      "legal_effect_and_grain": "A distinct non-regression removal decision; uncertainty alone cannot remove coverage.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-serious-purpose-use",
+      "title": "Lethal, invasive, or high-severity animal-use authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::A lethal, invasive, or high-severity use of a credibly sentient animal",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "A lethal, invasive, or high-severity use of a credibly sentient animal",
+      "legal_effect_and_grain": "One enhanced serious-purpose, necessity, alternatives, least-harm, care, prior-review, reassessment, end, and remedy authorization.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-euthanasia",
+      "title": "Animal euthanasia authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Euthanasia is lawful only to prevent otherwise unrelievable suffering",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Euthanasia is lawful only to prevent otherwise unrelievable suffering",
+      "legal_effect_and_grain": "One current-evidence and least-distressing-method branch of the enhanced-use contract.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-food-use",
+      "title": "Controlled animal food-use authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Any controlled use of a credibly sentient animal to produce food",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Any controlled use of a credibly sentient animal to produce food",
+      "legal_effect_and_grain": "One alternative-sensitive food-use authority covering lethal and nonlethal production; price alone never establishes no alternative.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-research-use",
+      "title": "Animal research, testing, or education authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Use of a covered animal in research, testing, or education requires:",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Use of a covered animal in research, testing, or education requires:",
+      "legal_effect_and_grain": "One project-level scientific/ethical authorization with replacement first, 3Rs, least harm, current source, inspection, reporting, challenge, and remedy.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "limit-animal-research-severe-suffering",
+      "title": "No unrelieved severe or prolonged research procedure",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::An unrelieved severe or prolonged procedure is categorically prohibited.",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "An unrelieved severe or prolonged procedure is categorically prohibited.",
+      "legal_effect_and_grain": "A categorical refusal no purpose, prestige, commercial advantage, curiosity, or teaching label can authorize.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-wild-intervention",
+      "title": "Bounded wild-animal intervention",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 16. Domestic, farmed, captive, and wild animals",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 16. Domestic, farmed, captive, and wild animals",
+      "legal_effect_and_grain": "One evidence-bound intervention to reduce grave suffering without disproportionate ecological harm.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-disease-control",
+      "title": "Animal disease-control or dangerous-animal response",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Disease control, dangerous-animal response",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "Disease control, dangerous-animal response",
+      "legal_effect_and_grain": "One authenticated-threat, prevention-first, nonlethal-first, least-painful, reviewed, reassessed, repaired, time-bound response family.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-inspection",
+      "title": "Animal inspection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One independent inspection/evidence-writing family separated from use authorization and final remedy.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-advocate-investigation",
+      "title": "Animal Protection Advocate investigation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The Advocate may obtain lawful information, request inspection and evidence",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "The Advocate may obtain lawful information, request inspection and evidence",
+      "legal_effect_and_grain": "One advocate information/investigation initiation family; the Advocate is not regulator, prosecutor, court, or operator.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-advocate-relief-request",
+      "title": "Animal Advocate rescue and relief request",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::seek interim rescue or cessation",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "seek interim rescue or cessation",
+      "legal_effect_and_grain": "One request/initiation power; it cannot itself order rescue, custody, cessation, or final remedy.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "limit-animal-advocate-no-final-power",
+      "title": "Animal Advocate has no final permit or adjudication power",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 17. Animal Protection Advocate",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 17. Animal Protection Advocate",
+      "legal_effect_and_grain": "A categorical separation limit preventing advocacy from becoming final decision or operation.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-guardian-conflict-adjudication",
+      "title": "Guardian–Animal Advocate conflict adjudication",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The independent adjudicator must keep",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "The independent adjudicator must keep",
+      "legal_effect_and_grain": "One independent least-harm compatible-route decision across separate human, ecological, animal, collective, uncertainty, and continuity axes.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "protect-policing-mandate",
+      "title": "Public protection and policing mandate",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Public protection / policing | Prevent and respond to harm",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Public protection / policing | Prevent and respond to harm",
+      "legal_effect_and_grain": "One harm-prevention/investigation mandate; no charging, adjudication, long custody, intelligence, or self-audit.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-prosecution-mandate",
+      "title": "Independent charging decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Prosecution | Decide independently whether to charge",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Prosecution | Decide independently whether to charge",
+      "legal_effect_and_grain": "One charging/no-charge decision on evidence, separated from investigation, adjudication, and execution.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-adjudication-mandate",
+      "title": "Criminal adjudication",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Adjudication | Decide guilt and consequence.",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Adjudication | Decide guilt and consequence.",
+      "legal_effect_and_grain": "One guilt/consequence determination, separated from investigation, prosecution, execution, and final self-review.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-custodial-execution-mandate",
+      "title": "Custodial execution mandate",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Custodial execution | Hold a person a court has lawfully ordered held.",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Custodial execution | Hold a person a court has lawfully ordered held.",
+      "legal_effect_and_grain": "One execution mandate; it cannot decide the ground, extend authority, or review itself.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-defence-mandate",
+      "title": "External-defence mandate",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::External defence | Defend against an external armed attack",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "External defence | Defend against an external armed attack",
+      "legal_effect_and_grain": "One external-only mandate under civilian command; no domestic coercive or surveillance authority.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-intelligence-mandate",
+      "title": "Security-intelligence collection mandate",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Security intelligence | Collect narrowly authorised information",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Security intelligence | Collect narrowly authorised information",
+      "legal_effect_and_grain": "One narrow information mandate; it has no arrest, search, detention, charging, adjudication, custody, or consequential-record power.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-noncoercive-policing",
+      "title": "Ordinary noncoercive policing act",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 4. The policing mandate and its limits",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 4. The policing mandate and its limits",
+      "legal_effect_and_grain": "One presence/information/assistance/mediation/referral family; coercive instruments are separately grounded below.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "coercive-arrest",
+      "title": "Arrest",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Arrest** requires an individualised",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Arrest** requires an individualised",
+      "legal_effect_and_grain": "One coercive instrument with individualized ground, reasons, notification, counsel, interpretation, accommodation, author, review, remedy, and own T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "coercive-pretrial-detention",
+      "title": "Detention before trial",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Detention before trial** requires prompt",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Detention before trial** requires prompt",
+      "legal_effect_and_grain": "One unconvicted holding instrument with automatic and repeated judicial review, liberty default, full floor/voice/franchise/candidacy, and own T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "coercive-search",
+      "title": "Search",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Search and seizure** of a person",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Search and seizure** of a person",
+      "legal_effect_and_grain": "One search instrument requiring prior individualized authorization except a narrow reported immediate-danger route.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "coercive-seizure",
+      "title": "Seizure",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::A seizure creates a duty to inventory",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "A seizure creates a duty to inventory",
+      "legal_effect_and_grain": "One property/record deprivation instrument with inventory, preservation, accounting, return, review, and remedy; not bundled with search.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "coercive-force",
+      "title": "Use of force",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Force is lawful only where it is strictly necessary",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Force is lawful only where it is strictly necessary",
+      "legal_effect_and_grain": "One force instrument with legitimate purpose, least harm, proportionality, minimum sufficiency, warning, cessation, aid, actor burden, review, and remedy.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-lethal-force-branch",
+      "title": "Lethal force is a strict branch, not a standing power",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Lethal force is lawful only where it is strictly unavoidable to protect life.**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Lethal force is lawful only where it is strictly unavoidable to protect life.**",
+      "legal_effect_and_grain": "A strict sub-branch of the force card; never property protection, escape prevention, assembly dispersal, order enforcement, or punishment.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-force-incident-investigation",
+      "title": "Independent force-incident investigation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Every death, life-threatening injury, and credible allegation",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Every death, life-threatening injury, and credible allegation",
+      "legal_effect_and_grain": "One independent investigation mandate held outside the deploying body, with family participation, findings, accountability, and remedy route.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "restriction-quarantine",
+      "title": "Communicable-disease quarantine",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 7. Protective restriction is not punishment",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 7. Protective restriction is not punishment",
+      "legal_effect_and_grain": "One non-punitive protective restriction with separate trigger, evidence, review, holding duties, and temporal contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "restriction-protective-exclusion",
+      "title": "Protective exclusion order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::a protective exclusion order",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "a protective exclusion order",
+      "legal_effect_and_grain": "One non-punitive protective restriction, never a conviction or severity/placement input.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "restriction-border-hold",
+      "title": "Border hold",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::a border hold",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "a border hold",
+      "legal_effect_and_grain": "One non-punitive border restriction with its own source, evidence, review, continuity, and T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "restriction-expulsion-pending-detention",
+      "title": "Detention pending expulsion decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 7. Protective restriction is not punishment",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 7. Protective restriction is not punishment",
+      "legal_effect_and_grain": "One unconvicted holding instrument, separate from pretrial and ordinary immigration detention decisions.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-restriction-not-punishment",
+      "title": "Protective restriction cannot become punishment",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Every such restriction is a separate instrument",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Every such restriction is a separate instrument",
+      "legal_effect_and_grain": "A grain and non-substitution rule: no protective restriction feeds conviction, punishment, severity, placement, or recognition.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "intelligence-covert-measure",
+      "title": "Covert intelligence measure authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::A covert measure requires prior independent judicial authorisation",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "A covert measure requires prior independent judicial authorisation",
+      "legal_effect_and_grain": "One subject/scope/duration-specific surveillance authorization with individualized suspicion, least intrusion, later notice, challenge, remedy, and fresh renewal.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "intelligence-oversight",
+      "title": "Independent intelligence oversight",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Oversight is a separate, independently appointed body",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Oversight is a separate, independently appointed body",
+      "legal_effect_and_grain": "One oversight mandate with own budget/staff, unrestricted classified access, findings, reporting, and protected disclosure.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-mass-surveillance",
+      "title": "No mass or suspicionless collection",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Mass, bulk, suspicionless, or population-scale collection is refused.**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Mass, bulk, suspicionless, or population-scale collection is refused.**",
+      "legal_effect_and_grain": "A categorical collection limit including purchase, partnership, or foreign-exchange evasion.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-declaration",
+      "title": "Emergency declaration",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::An emergency declaration confers exactly the following and nothing else:",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "An emergency declaration confers exactly the following and nothing else:",
+      "legal_effect_and_grain": "One named-hazard/territory/people/powers declaration with cross-branch authorization, reasons, evidence, notice, review, end, audit, remedy, and own T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-procedural-acceleration",
+      "title": "Emergency procedural acceleration",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**procedural acceleration**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**procedural acceleration**",
+      "legal_effect_and_grain": "One separately justified measure that shortens procedure without reducing substantive protection, evidence, or appeal.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-resource-redirection",
+      "title": "Emergency resource redirection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**resource redirection**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**resource redirection**",
+      "legal_effect_and_grain": "One separately justified reallocation of public capacity, facilities, or personnel to the named hazard.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-requisition",
+      "title": "Emergency compensated requisition",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**requisition with compensation**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**requisition with compensation**",
+      "legal_effect_and_grain": "One separately justified temporary property-use/acquisition measure with reason, record, return/compensation, challenge, and own T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-hazard-restriction",
+      "title": "Emergency hazard-specific restriction",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**restriction against the named hazard**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**restriction against the named hazard**",
+      "legal_effect_and_grain": "One separately justified temporary movement/assembly/activity restriction tied to the named hazard and ordinary coercive limits.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-renewal",
+      "title": "Emergency renewal",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::### 9b. Declaration, renewal, and end",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "### 9b. Declaration, renewal, and end",
+      "legal_effect_and_grain": "One fresh source-bound renewal per declaration version and per measure; absence ends current restrictive effect but frozen-record risk remains.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-alternate-authorizer",
+      "title": "Emergency alternate authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::a **predeclared alternate authorising route**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "a **predeclared alternate authorising route**",
+      "legal_effect_and_grain": "One predeclared alternate authorizer, immediately ratifiable by the ordinary body; absence and silence never become approval.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "emergency-posthoc-audit",
+      "title": "Emergency end, accounting, and post-hoc audit",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::### 9b. Declaration, renewal, and end",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "### 9b. Declaration, renewal, and end",
+      "legal_effect_and_grain": "One end/accounting/remedy family for lawful and unlawful measures; no operational claim that the emergency actually ends.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-derogation",
+      "title": "No emergency derogation or standing authority",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 9. The emergency overlay: no derogation",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 9. The emergency overlay: no derogation",
+      "legal_effect_and_grain": "A categorical refusal of rights/institutions/elections/remedies suspension and standing authority between declarations.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-compulsory-service",
+      "title": "Compulsory service enabling law",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Compulsory service is neither required nor prohibited",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Compulsory service is neither required nor prohibited",
+      "legal_effect_and_grain": "One democratically optional service authority bounded by unconditional objection to lethal/armed roles and equivalent civilian alternative.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-conscientious-objection",
+      "title": "Unconditional conscientious objection",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 10. Conscientious objection and the duty to refuse",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 10. Conscientious objection and the duty to refuse",
+      "legal_effect_and_grain": "A limit on any compulsory-service power; no sincerity test, punitive alternative, repeat punishment, or rights loss.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-unlawful-order-refusal",
+      "title": "Duty and protection to refuse manifestly unlawful orders",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 10. Conscientious objection and the duty to refuse",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 10. Conscientious objection and the duty to refuse",
+      "legal_effect_and_grain": "A non-delegable personal limit on command power; superior orders do not excuse a categorical wrong.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "border-entry-settlement",
+      "title": "Entry and settlement decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Democratic law chooses who may enter and settle.",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Democratic law chooses who may enter and settle.",
+      "legal_effect_and_grain": "One ordinary-law border admission family bounded by jurisdiction-wide standing, non-refoulement, due process, and remedy.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "border-asylum-determination",
+      "title": "Asylum determination",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Asylum is a right to a fair determination**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Asylum is a right to a fair determination**",
+      "legal_effect_and_grain": "One individual hearing/reason/advocate/interpreter decision with suspensive effective appeal.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "border-expulsion",
+      "title": "Expulsion decision",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Expulsion requires an individual decision**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Expulsion requires an individual decision**",
+      "legal_effect_and_grain": "One individualized removal decision with reasons, family/child connection, non-refoulement, and suspensive appeal.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "border-immigration-detention",
+      "title": "Adult immigration detention",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 12. Borders, entry, asylum, expulsion, and statelessness",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 12. Borders, entry, asylum, expulsion, and statelessness",
+      "legal_effect_and_grain": "One individual necessity-based detention with prior judicial authorization, maximum, periodic review, and proven insufficiency of noncustodial alternative.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-child-immigration-detention",
+      "title": "No child immigration detention",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**No child is detained for an immigration purpose.**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**No child is detained for an immigration purpose.**",
+      "legal_effect_and_grain": "A categorical age-specific limit on border and expulsion powers.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-non-refoulement",
+      "title": "Absolute non-refoulement",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Non-refoulement is absolute.**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Non-refoulement is absolute.**",
+      "legal_effect_and_grain": "An unamendable limit on entry refusal, return, removal, transfer, handover, and onward-transfer chains.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "border-extradition-transfer",
+      "title": "Extradition, surrender, or transfer of a person",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Surrender, extradition, transfer, or handover of any person",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Surrender, extradition, transfer, or handover of any person",
+      "legal_effect_and_grain": "One individual judicial transfer authority with reasons, suspensive appeal, non-refoulement and justice-protection bars, and own T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "border-mutual-legal-assistance",
+      "title": "Mutual legal assistance",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Mutual legal assistance may not be used",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Mutual legal assistance may not be used",
+      "legal_effect_and_grain": "One international evidence/cooperation authority bounded against laundering unlawful acquisition or enabling categorical wrongs.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-force-maintenance",
+      "title": "Standing defence-force maintenance and structure",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::A standing defence force is permitted, not required.",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "A standing defence force is permitted, not required.",
+      "legal_effect_and_grain": "One democratically authorized external-only force structure with Assembly ceiling, ordinary appropriation, audit, and no civilian jurisdiction.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-civil-assistance",
+      "title": "Unarmed civil assistance",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::The armed forces may assist civil authority",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "The armed forces may assist civil authority",
+      "legal_effect_and_grain": "One individually authorized, public, time-bounded, reviewed, unarmed assistance act carrying no coercive power.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-private-coercion",
+      "title": "No delegation of coercive public force",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 14. Defence: force structure and civilian command",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 14. Defence: force structure and civilian command",
+      "legal_effect_and_grain": "A categorical non-delegation limit covering mercenaries, paramilitaries, armed groups, and private arrest/detention/search/interrogation/crowd/lethal power.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-civilian-weapons-regulation",
+      "title": "Civilian-weapons regulation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Civilian weapons** are a matter for democratic law",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Civilian weapons** are a matter for democratic law",
+      "legal_effect_and_grain": "One ordinary-law regulatory family requiring evidence, equality, proportionality, review, and neither constitutional arms right nor general disarmament power.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-force-abroad-authorization",
+      "title": "Prior authorization of force abroad",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Either requires **prior Assembly authorisation**",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Either requires **prior Assembly authorisation**",
+      "legal_effect_and_grain": "One objective/legal-basis/scope/geography/means/duration/reporting deployment authorization with published reasons and own T3 contract.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-immediate-response",
+      "title": "Immediate defensive response",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::An immediate defensive response to an actual attack may begin",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "An immediate defensive response to an actual attack may begin",
+      "legal_effect_and_grain": "One narrow pre-ratification response that ends absent prompt Assembly ratification.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-deployment",
+      "title": "Foreign deployment",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::no armed force, covert action, targeting programme, or foreign deployment",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "no armed force, covert action, targeting programme, or foreign deployment",
+      "legal_effect_and_grain": "One deployment legal-effect record under published basis and examinable authorization; kept distinct from initial force authorization and operation.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "defence-arms-transfer",
+      "title": "Arms-transfer authorization",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Arms transfers** require an evidenced test",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**Arms transfers** require an evidenced test",
+      "legal_effect_and_grain": "One evidenced transfer-control decision with independent review, reporting, and suspension on credible misuse evidence.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "protect-integrity-investigation",
+      "title": "Protective-office integrity investigation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Every protective function requires an independent integrity route",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Every protective function requires an independent integrity route",
+      "legal_effect_and_grain": "One abuse/integrity investigation outside the actor's chain, separate from force-incident and intelligence oversight.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "external-treaty-negotiation",
+      "title": "Treaty negotiation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Treaties are negotiated by the executive",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "Treaties are negotiated by the executive",
+      "legal_effect_and_grain": "One executive negotiation act; it creates no binding effect without the separate ratification route.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "external-treaty-ratification",
+      "title": "Treaty ratification",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::require Assembly ratification.",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "require Assembly ratification.",
+      "legal_effect_and_grain": "One Assembly treaty-consent act with additional Council/region consent for regional competence or boundary effects.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "external-treaty-withdrawal",
+      "title": "Treaty withdrawal",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 17. Treaties, external trade, sanctions, and no evasion",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 17. Treaties, external trade, sanctions, and no evasion",
+      "legal_effect_and_grain": "One treaty withdrawal result using the same democratic/territorial consent route and its own temporal window.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "external-trade-measure",
+      "title": "External trade measure",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 17. Treaties, external trade, sanctions, and no evasion",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 17. Treaties, external trade, sanctions, and no evasion",
+      "legal_effect_and_grain": "One ordinary-law external trade measure; it cannot deprive a population of the floor or humanitarian access.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-treaty-rights-lowering",
+      "title": "Treaty and trade cannot lower the corridor",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**No treaty, trade agreement, investment protection",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "**No treaty, trade agreement, investment protection",
+      "legal_effect_and_grain": "A substantive supremacy limit; current machinery does not semantically verify treaty text or concealed lowering effects.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "external-exit-settlement",
+      "title": "External/coercive exit settlement",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This ruling supplements it with: the continuing protection",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "This ruling supplements it with: the continuing protection",
+      "legal_effect_and_grain": "One source-bound settlement power over external status, nationality, residents, relations, defence, treaty succession, and rights records, subject to collective-consent gates.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-no-military-secession-instrument",
+      "title": "No military instrument against unilateral exit",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::### 19a. Before, during, and after a lawful exit",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "### 19a. Before, during, and after a lawful exit",
+      "legal_effect_and_grain": "A categorical mandate boundary: only legal invalidity, imminent-life-threat policing, and negotiation remain available.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "limit-protected-voluntary-sphere-no-prescription",
+      "title": "No power to prescribe harmless voluntary social life",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::The constitution protects voluntary gifts, resource pooling, care",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "The constitution protects voluntary gifts, resource pooling, care",
+      "legal_effect_and_grain": "A reviewed no-power disposition for the residual voluntary social domain; evidenced coercion/harm remains governed by separate powers.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "limit-no-general-emergency-security-power",
+      "title": "No general security, foreign-affairs, policing, or emergency power",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::It creates **no** general security, foreign-affairs,",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "It creates **no** general security, foreign-affairs,",
+      "legal_effect_and_grain": "An express competence boundary preventing enumerated families from collapsing into residual authority.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "gov-local-budget-control",
+      "title": "Protected local budget control",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 1. Decision",
+      "legal_effect_and_grain": "One irreducible local authority over a lawful local budget, bounded by common guarantees and reviewable subsidiarity.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-local-administration-control",
+      "title": "Protected local administration control",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 1. Decision",
+      "legal_effect_and_grain": "One irreducible local administration authority; administrative convenience cannot retract the local minimum.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-local-public-space-management",
+      "title": "Protected local public-space management",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 1. Decision",
+      "legal_effect_and_grain": "One irreducible local authority to manage public spaces, bounded by standing, equality, liberties, floor, due process, and commons limits.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-local-facility-management",
+      "title": "Protected local facility management",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 1. Decision",
+      "legal_effect_and_grain": "One irreducible local authority to manage local facilities, distinct from assigned-service administration.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-local-assigned-service-administration",
+      "title": "Protected local assigned-service administration",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "## 1. Decision",
+      "legal_effect_and_grain": "One irreducible local authority to administer constitutionally or regionally assigned services; it makes no delivery or capacity claim.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "gov-appointments-qualification-recipient",
+      "title": "Independent appointments-qualification recipient",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions",
+      "source_path": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "source_needle": "### Courts and independent institutions",
+      "legal_effect_and_grain": "One independent recipient body with a duty to act on qualification referrals, continuity and remedy for inaction, and no allocation to audit by implication.",
+      "source_family": "state-form-and-political-membership"
+    },
+    {
+      "provisional_key": "econ-tax-collection",
+      "title": "Tax collection",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "A collection authority distinct from tax enactment; it may reach above-floor income and assets but not imprison for debt or remove floor essentials, dwelling, standing, or remedy.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "border-former-resident-return",
+      "title": "Former-resident return",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 12. Borders, entry, asylum, expulsion, and statelessness",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 12. Borders, entry, asylum, expulsion, and statelessness",
+      "legal_effect_and_grain": "A return-right recognition and border-effect family distinct from ordinary entry/settlement discretion; it creates no nonresident ballot.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "family-parentage-recognition-module",
+      "title": "Parentage recognition module",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 4. Modular family recognition",
+      "legal_effect_and_grain": "One direct legal-effect recognition module for parentage, separate from establishing the parentage relation and from other family effects.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-caregiving-recognition-module",
+      "title": "Caregiving recognition module",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 4. Modular family recognition",
+      "legal_effect_and_grain": "One direct legal-effect recognition module for caregiving; it does not create omnibus family authority or compulsory personal care.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-household-recognition-module",
+      "title": "Household recognition module",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 4. Modular family recognition",
+      "legal_effect_and_grain": "One direct legal-effect recognition module for household status; co-residence alone does not silently create every family consequence.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-support-recognition-module",
+      "title": "Support recognition module",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 4. Modular family recognition",
+      "legal_effect_and_grain": "One direct legal-effect recognition module for support, distinct from assumed-duty enforcement and inherited support debt.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-property-recognition-module",
+      "title": "Family property recognition module",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 4. Modular family recognition",
+      "legal_effect_and_grain": "One direct legal-effect recognition module for family property, bounded by equality, floor continuity, and separate succession rules.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "family-decision-agency-recognition-module",
+      "title": "Family decision-agency recognition module",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition",
+      "source_path": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "source_needle": "## 4. Modular family recognition",
+      "legal_effect_and_grain": "One direct legal-effect recognition module for decision agency; it cannot displace supported agency or become unbounded substituted choice.",
+      "source_family": "family-dependency-reproduction-and-collective-plurality"
+    },
+    {
+      "provisional_key": "animal-activity-licence-order",
+      "title": "Animal activity licence order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One licence grant, condition, suspension, or withdrawal family based on current source evidence; it is separate from inspection and rescue/custody orders.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-rescue-order",
+      "title": "Animal rescue order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One immediate or final rescue authority grounded in inspected evidence and review, separate from custody, licence, and rehoming effects.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-custody-order",
+      "title": "Animal custody order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One custody placement or transfer authority with care continuity and review, separate from rescue and licence effects.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-rehoming-order",
+      "title": "Animal rehoming order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One final rehoming authority with welfare, continuity, evidence, and challenge, separate from temporary rescue or custody.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "econ-public-unit-of-account",
+      "title": "Public unit-of-account authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "One common-tier authority and duty to maintain the public unit of account, separate from monetary-policy decisions.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-settlement-backbone",
+      "title": "Accessible settlement-backbone authority",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "One common-tier authority and duty to maintain an accessible settlement backbone with a non-digital route; no liveness claim follows.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "econ-complementary-payment-regulation",
+      "title": "Complementary payment-instrument regulation",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance",
+      "source_path": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "source_needle": "## 8. Taxation, public finance, money, and insurance",
+      "legal_effect_and_grain": "One ordinary-law authority to permit and regulate compatible complementary payment instruments.",
+      "source_family": "economic-pluralism-and-protected-private-sphere"
+    },
+    {
+      "provisional_key": "emergency-substitute-reviewer",
+      "title": "Emergency substitute review",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::### 9c. The alternate authorising route, and its price",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "### 9c. The alternate authorising route, and its price",
+      "legal_effect_and_grain": "One predeclared independent substitute reviewer, separate from alternate authorization; review silence cannot approve or extend a measure.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "external-sanctions-measure",
+      "title": "External sanctions measure",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 17. Treaties, external trade, sanctions, and no evasion",
+      "source_path": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "source_needle": "## 17. Treaties, external trade, sanctions, and no evasion",
+      "legal_effect_and_grain": "One ordinary-law external sanctions measure, separately reviewable and unable to deprive a population of the floor or humanitarian access.",
+      "source_family": "public-safety-defence-emergency-and-external-power"
+    },
+    {
+      "provisional_key": "animal-cessation-order",
+      "title": "Animal-harm cessation order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One adjudicated cessation effect, distinct from rescue, treatment, custody, licence, and structural remedies.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-veterinary-treatment-order",
+      "title": "Animal veterinary-treatment order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One adjudicated treatment effect grounded in species-appropriate evidence and care continuity.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-rehabilitation-order",
+      "title": "Animal rehabilitation order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One adjudicated rehabilitation effect, distinct from treatment, sanctuary, custody, and rehoming.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-sanctuary-order",
+      "title": "Animal sanctuary order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One final or continuing sanctuary-placement effect with welfare, continuity, evidence, challenge, and temporal status.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-use-disqualification-order",
+      "title": "Animal-use disqualification order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One adjudicated use-disqualification effect, separate from custody and licence action.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-record-correction-order",
+      "title": "Animal-record correction order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One purpose-limited record-correction effect that cannot migrate animal records into consequential person records.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-care-restitution-order",
+      "title": "Animal-care restitution order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One adjudicated restitution-for-care effect; payment cannot extinguish rescue, treatment, restoration, or recurrence-prevention duties.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-structural-reform-order",
+      "title": "Animal-protection structural-reform order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One systemic structural-reform effect separated from individual criminal or coercive consequences.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-monitoring-order",
+      "title": "Animal-protection monitoring order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One bounded monitoring effect with independent evidence, privacy, challenge, correction, end, and audit.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-habitat-restoration-order",
+      "title": "Animal habitat-restoration order",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One habitat-restoration effect preserving separate ecological and direct-animal interests.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "animal-non-repetition-guarantee",
+      "title": "Animal-harm non-repetition guarantee",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 18. Evidence, records, and remedies",
+      "source_path": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "source_needle": "## 18. Evidence, records, and remedies",
+      "legal_effect_and_grain": "One adjudicated guarantee-of-non-repetition effect; it cannot substitute for stopping present harm.",
+      "source_family": "ecological-commons-and-non-human-animal"
+    },
+    {
+      "provisional_key": "time-power-specific-t3-contract",
+      "title": "Power-specific T3 temporal contract",
+      "disposition": "card-required",
+      "source_anchor": "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
+      "source_path": "new-book-plans/book-1-time-model-decision.md",
+      "source_needle": "## 4. Ratified and implemented ruling",
+      "legal_effect_and_grain": "Each time-dependent public power receives its own current-source, scope, review, renewal/end, challenge, and fail-closed temporal contract; Book 2 alone operates clocks and liveness.",
+      "source_family": "time-model"
+    },
+    {
+      "provisional_key": "limit-no-borrowed-custody-t3",
+      "title": "No borrowed custody temporal contract",
+      "disposition": "explicit-refusal-limit",
+      "source_anchor": "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
+      "source_path": "new-book-plans/book-1-time-model-decision.md",
+      "source_needle": "## 4. Ratified and implemented ruling",
+      "legal_effect_and_grain": "A categorical cross-power limit: the implemented custody T3 cannot establish current effect for another ecological, animal, emergency, coercive, border, deployment, treaty, or exit power.",
+      "source_family": "time-model"
+    }
+  ]
+}

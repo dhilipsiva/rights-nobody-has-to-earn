@@ -1604,9 +1604,30 @@ coverage-map needle), and the report carries a routed-rows-only Book 2
 crosswalk with no operational fields. The grandfathered Part V passage has no
 defect row, per the register decision's own words; its dated non-conformance
 is a witness on the deficit rows, which the author's pending repair can now
-cite. Powers stay deferred with an owner until their sibling
-items land, and a hand-maintained competitor to any projection remains
-refused.
+cite. The power population stays deferred with an owner until its
+per-instrument cards and lawful allocations land; the source-anchor census
+below prevents that deferral from hiding an undiscovered or bundled source
+family. A hand-maintained competitor to any projection remains refused.
+
+**The full-society public-power source census is landed
+(2026-08-13).** `new-book-plans/full-society-power-source-manifest.json`,
+checked by `17-full-society-power-source-manifest.py` before script 13 in both
+quick and full verification, binds the exact inspected source revision and
+eight source digests. Its 237 rows keep direct legal effects at source grain:
+210 require later contract cards, 19 are explicit refusals or limits, and 8
+crosswalk narrow current formal fixtures. This is a candidate census, not an
+FS-POW population or coverage proof. It creates no law, complete contract
+card, lawful holder, operation, assurance, or Gate A result. The canonical
+ledger binds the manifest digest, counts, status, and known allocation gaps.
+Appointments qualification, custodial execution distinct from policing,
+independent ecological science, ecological and animal regulation/inspection,
+emergency alternates, Guardian alternates, and border/removal execution still
+lack complete lawful allocations. Election completeness and result service
+remain external operating assumptions, not institutions to invent. Therefore
+FS-POW and function allocations remain empty and explicitly deferred until the
+coverage-row and Bodies work supplies per-instrument holder, trigger, bounded
+effect, reason/evidence, review, appeal, remedy, end, temporal, and separated
+decider/executor/auditor/final-remedy contracts.
 
 **The roles, life-course, scale, and power-position matrix is landed
 (2026-08-09, FS-ROL).** One record per role, grouped by kind and layer-pinned
