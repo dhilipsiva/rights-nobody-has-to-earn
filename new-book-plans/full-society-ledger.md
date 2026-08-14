@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-13-power-source-inventory`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-contract-foundation`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -215,7 +215,7 @@ The five routing dispositions are the reader-facing five layers (author-ratified
 
 ## Roles, life-course stages, scales, and power positions
 
-Each role records the standing of a person in a position — life-course stages are roles of a kind — and routes it against domains, scales, and the ratified bodies. A role is never a floor-changing status: one person occupies many roles and none buys a higher floor or a lower one, which is why every role's layer is the constitutional invariant of universal standing; rule content stays on domains and claims. Axis coverage is mechanical — every domain cited, every named scale exercised, every required body carrying both an affected and a checking role position, every recorded private power naming its affected counter-roles and its checkers — while pairwise sufficiency stays a question for the independent scope review; no full Cartesian product is attempted, and deliberately omitted candidates and combinations are recorded below with risk-based reasons. The FS-POW decomposition of each power remains its own deferred population. Formal anchors stay honest: a derived constitution predicate, an asserted predicate with its replace-card path, or ratified-but-unimplemented doctrine.
+Each role records the standing of a person in a position — life-course stages are roles of a kind — and routes it against domains, scales, and the ratified bodies. A role is never a floor-changing status: one person occupies many roles and none buys a higher floor or a lower one, which is why every role's layer is the constitutional invariant of universal standing; rule content stays on domains and claims. Axis coverage is mechanical — every domain cited, every named scale exercised, every required body carrying both an affected and a checking role position, every recorded private power naming its affected counter-roles and its checkers — while pairwise sufficiency stays a question for the independent scope review; no full Cartesian product is attempted, and deliberately omitted candidates and combinations are recorded below with risk-based reasons. The FS-POW decomposition of each power is staged below by exact source-family prefix and remains deferred until the complete population. Formal anchors stay honest: a derived constitution predicate, an asserted predicate with its replace-card path, or ratified-but-unimplemented doctrine.
 
 | Role | Kind | Domains | Scales | Affected by | Checks | Anchor |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -261,6 +261,23 @@ Each role records the standing of a person in a position — life-course stages 
 | FS-ROL-40 Record subject | cross-cutting | FS-DOM-08 | individual, national, cross-jurisdictional | FS-BOD-13, FS-BOD-06 | FS-BOD-13 | constitution-predicate-asserted |
 | FS-ROL-41 Animal custodian and user | cross-cutting | FS-DOM-11, FS-DOM-05, FS-DOM-12 | individual, household-association, local, regional | FS-BOD-23 | — | ratified-doctrine-unimplemented |
 | FS-ROL-42 Collective internal governance holder | membership-and-mobility | FS-DOM-09, FS-DOM-03 | local, regional | FS-BOD-18 | — | ratified-doctrine-unimplemented |
+| FS-ROL-43 Appointment nominee | civic-political | FS-DOM-09, FS-DOM-08 | individual, national | FS-BOD-24 | FS-BOD-24 | ratified-doctrine-unimplemented |
+| FS-ROL-44 Appointment selector | civic-political | FS-DOM-09 | national | FS-BOD-24 | FS-BOD-24 | ratified-doctrine-unimplemented |
+| FS-ROL-45 Appointments qualification reviewer | civic-political | FS-DOM-09, FS-DOM-08 | national | FS-BOD-24 | FS-BOD-24 | ratified-doctrine-unimplemented |
+| FS-ROL-46 Alternate constitutional adjudicator | justice-and-coercion | FS-DOM-08, FS-DOM-09 | national | FS-BOD-25 | FS-BOD-25 | ratified-doctrine-unimplemented |
+| FS-ROL-47 Civic President alternate office-holder | civic-political | FS-DOM-09 | national | FS-BOD-26 | FS-BOD-26 | ratified-doctrine-unimplemented |
+| FS-ROL-48 Physical-scarcity evidence assessor | economic | FS-DOM-06, FS-DOM-02 | local, regional, national | FS-BOD-27 | FS-BOD-27 | ratified-doctrine-unimplemented |
+| FS-ROL-49 Ecological and veterinary scientist | cross-cutting | FS-DOM-11 | local, regional, national, intergenerational | FS-BOD-28 | FS-BOD-28 | ratified-doctrine-unimplemented |
+| FS-ROL-50 Ecological and animal regulator | cross-cutting | FS-DOM-11 | local, regional, national | FS-BOD-29 | FS-BOD-29 | ratified-doctrine-unimplemented |
+| FS-ROL-51 Independent ecological and animal inspector | cross-cutting | FS-DOM-11 | local, regional, national | FS-BOD-30 | FS-BOD-30 | ratified-doctrine-unimplemented |
+| FS-ROL-52 Future Conditions Guardian alternate advocate | cross-cutting | FS-DOM-11 | national, intergenerational | FS-BOD-31 | FS-BOD-31 | ratified-doctrine-unimplemented |
+| FS-ROL-53 Future Conditions Guardian substitute reviewer | justice-and-coercion | FS-DOM-11, FS-DOM-08 | national, intergenerational | FS-BOD-32 | FS-BOD-32 | ratified-doctrine-unimplemented |
+| FS-ROL-54 Animal Protection Advocate alternate | cross-cutting | FS-DOM-11 | local, regional, national | FS-BOD-33 | FS-BOD-33 | ratified-doctrine-unimplemented |
+| FS-ROL-55 Animal remedy executor | cross-cutting | FS-DOM-11, FS-DOM-08 | local, regional | FS-BOD-34 | FS-BOD-34 | ratified-doctrine-unimplemented |
+| FS-ROL-56 Custodial execution officer | justice-and-coercion | FS-DOM-08, FS-DOM-07 | local, regional | FS-BOD-35 | FS-BOD-35 | ratified-doctrine-unimplemented |
+| FS-ROL-57 Emergency alternate authoriser | civic-political | FS-DOM-07, FS-DOM-09 | national | FS-BOD-36 | FS-BOD-36 | ratified-doctrine-unimplemented |
+| FS-ROL-58 Emergency substitute reviewer | justice-and-coercion | FS-DOM-07, FS-DOM-08 | national | FS-BOD-37 | FS-BOD-37 | ratified-doctrine-unimplemented |
+| FS-ROL-59 Border, removal, and transfer execution officer | membership-and-mobility | FS-DOM-10, FS-DOM-08 | national, cross-jurisdictional | FS-BOD-38 | FS-BOD-38 | ratified-doctrine-unimplemented |
 
 Recorded private and delegated powers (the holder's own record names who stands under the power and who checks it):
 
@@ -288,6 +305,30 @@ Deliberately omitted candidates and combinations (recorded, not silent):
 - `FS-ROL-25` omits `intergenerational`: future generations hold no present ballot; the protected object is inherited capability, represented by the Guardian's initiation and pause routes, never by electors
 - `FS-ROL-02` omits `FS-DOM-06`: no proxy franchise exists — no guardian casts the child's ballot; the child's voice and petition routes are participation, and the general ballot arrives with automatic adulthood
 - `FS-ROL-12` omits `national`: reproductive-care policy is domain-grain democratic law; the role's own legal effect is individual bodily authority, and no national-scale role effect exists to record
+
+## Source-derived power contracts and function allocations
+
+Population status: **foundation**. Completed source-family prefix: none — foundation only.
+
+Current rows: 0 FS-POW cards; 0 FS-PCT templates; 0 FS-PRF refusals/limits; 0 FS-PCD formal dispositions; 0 FS-FAL allocations.
+
+Evidence ceiling: Structural source-bound contract and allocation inventory only; no operation, delivery, feasibility, liveness, external truth, calibration, or Gate A passage follows.
+
+| Power | Manifest grain | Profiles | Holder bodies | Holder roles | Claims | Book 2 owner |
+| --- | --- | --- | --- | --- | --- | --- |
+| — | no completed source family | — | — | — | — | — |
+
+Contract templates:
+
+- None in the completed prefix.
+
+Refusals and formal transitions:
+
+- None in the completed prefix.
+
+Function allocations (body functions; role references identify the corresponding position classes, not proof of staffing or independence):
+
+- None in the completed prefix.
 
 ## Functional flows and cross-domain dependencies
 
@@ -744,6 +785,21 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-BOD-21 Regional and local bodies | Exercise residual regional authority and protected local choice inside common guarantees. | Create a lower caste of resident, reduce the common floor, or acquire a disputed competence by delay. | Portability, equalisation, intergovernmental reasons and mediation, Constitutional Court review. |
 | FS-BOD-22 Future Conditions Guardian | Obtain evidence, demand assessment and reasons, participate, publish warnings, and seek review and remedy; an evidence-supported objection pauses only the irreversible authorisation pending expedited independent review. | Hold a permanent veto, legislative or budget power, programme control, or scientific-oracle status; invent future preferences; restart an unchanged replay key. | Expedited independent review, the predeclared alternate advocate and independent substitute reviewer, a case-bound temporal contract and replay key, cause-only removal. |
 | FS-BOD-23 Animal Protection Advocate | Investigate, seek rescue and interim relief, and pursue individual and systemic remedies for protected animals; any person or qualified association may initiate. | Hold a final veto, or remove any human's standing, floor, core liberty, due process, or political equality through an animal remedy. | Independent adjudication of conflicts, including with the Future Conditions Guardian; neither office has a final veto. |
+| FS-BOD-24 Appointments qualification function | Receive open nominations and qualification referrals; make reasoned, reviewable qualification determinations and act on them. | Audit unrelated functions, appoint every seat, let silence approve or reject, or make its own evidence conclusive. | Open nominations, divided appointing sources, adverse-reason duties, continuity for inaction, independent review and remedy. |
+| FS-BOD-25 Alternate constitutional panel | Decide only the referred composition, appointment, or recusal challenge when the ordinary Court cannot. | Review an act in which any member participated, become a standing second Constitutional Court, or make ordinary policy. | Predeclared uninvolved membership, public reasons, recusal, and the same constitutional limits as the ordinary Court. |
+| FS-BOD-26 Civic President alternate | Perform only the Civic President’s bounded formal duties during the source-defined continuity condition. | Acquire policy, veto, decree, emergency, dissolution, election-result, or government-formation discretion. | Predeclaration, finite source-bound end, public reasons, cause-only removal, and ordinary institutional review. |
+| FS-BOD-27 Independent physical-scarcity assessment function | Write contestable evidence about the positive resource shortfall, alternatives, coordination, and population scope. | Allocate resources, redefine a minimum, treat budgets or monopoly as physical scarcity, or certify its own review. | Separated authorised decision institution, independent review, reassessment, and every shortfall recorded as failure. |
+| FS-BOD-28 Independent ecological and veterinary evidence function | Supply independently reviewable scientific and veterinary evidence with uncertainty and source-version disclosure. | Legislate, regulate, adjudicate, operate a permit, decide policy, or become a scientific oracle. | Separate legislative and adjudicative sources, challenge, correction, audit, and independent review. |
+| FS-BOD-29 Ecological and animal regulation function | Administer source-bound standards and make licence grant, condition, suspension, or withdrawal decisions. | Supply conclusive science, inspect its own compliance, prosecute, adjudicate final relief, or merge ecology and animal interests. | Independent evidence, separate inspection, reasons, challenge, audit, and judicial remedy. |
+| FS-BOD-30 Independent ecological and animal inspection function | Inspect, preserve and authenticate observations, and issue challengeable inspection records. | Regulate, prosecute, adjudicate, execute final remedy, or make an inspection record unchallengeable. | Evidence-source independence, authorised writer, privacy boundary, correction, audit, and judicial review. |
+| FS-BOD-31 Future Conditions Guardian alternate advocate | Act in the Guardian’s place for initiation and the bounded automatic-pause route on the same replay key. | Decide the merits, restart an unchanged stay, acquire a final veto, or expand the Guardian mandate. | Predeclaration, common replay key, independent merits review, first-opportunity correction, and source-bound end. |
+| FS-BOD-32 Future Conditions Guardian substitute reviewer | Independently decide the stay and merits under the same limits and case-bound replay key. | Initiate the pause, speak for future persons, operate the authorization, or approve by silence. | Predeclaration, independence from Guardian and alternate advocate, public reasons, challenge, and finite source-bound review. |
+| FS-BOD-33 Animal Protection Advocate alternate | Preserve the Advocate’s initiation, information, inspection-request, rescue-request, and remedy-seeking routes. | Regulate, prosecute, act as veterinarian, adjudicate, operate rescue, or gain a final veto. | Predeclaration, the Advocate’s identical limits, independent adjudication, challenge, and source-bound end. |
+| FS-BOD-34 Animal remedy execution administration | Execute only the exact animal-protection remedy ordered, preserving care continuity and records. | Decide liability or the protected ground, enlarge an order, regulate, inspect itself, or finally review itself. | Separate decision, inspection, audit, challenge, correction, and final judicial remedy. |
+| FS-BOD-35 Custodial execution administration | Execute the exact confinement mandate and maintain shelter, care, voice, records, review access, and release on end. | Police, investigate, decide the ground, extend authority, punish an unconvicted person, or review itself. | Court-held authority, independent audit, automatic review, counsel, correction, release, and remedy. |
+| FS-BOD-36 Emergency alternate authorising route | Issue only the predeclared source-bound alternate authorisation under every ordinary emergency limit. | Create standing authority, approve by silence, avoid first-opportunity ratification, or become the substitute reviewer. | Identical limits, immediate notification, first-opportunity ratification, judicial review, audit, remedy, and automatic end if unratified. |
+| FS-BOD-37 Emergency independent substitute reviewer | Review the declaration or measure independently under every ordinary review limit. | Authorise the measure it reviews, approve by silence, extend a measure, or become an indefinite hold. | Predeclaration, independence from authorisers and executors, public reasons, judicial route, correction, audit, and finite end. |
+| FS-BOD-38 Border, removal, and transfer execution administration | Execute only the exact lawful decision while preserving the floor, family and child protections, records, and effective-control duties. | Determine the claim, detain a child for immigration purposes, conduct collective expulsion, defeat appeal, or breach non-refoulement. | Separate determination and appeal, counsel and interpreter, execution record, audit, correction, return, and remedy. |
 
 ## Public-power source inventory
 
@@ -1032,12 +1088,12 @@ Each threshold binds a ratified sentence by needle and classifies its lawful sou
 
 A collection-only projection: Book 2 remains inactive until Book 1 — First Edition actually ships, and this view carries routing and closure fields only. No operating owner, workforce, facility, capacity, service, or cost field appears here; those belong to Book 2's own responsibility view when it activates, generated from this same canonical source.
 
-| ID | Title | Routed as | Severity | Consequence | Closure condition |
-| --- | --- | --- | --- | --- | --- |
-| FS-CLM-03 | Equality diagnostics and repair operations | book-2-operation (routed-book-2) | serious | an operational claim here would launder routing into assurance | Book 2's own gates |
-| FS-CLM-24 | Economic operations and feasibility | book-2-operation (routed-book-2) | serious | a feasibility claim here would take a route that does not exist | Book 2's own gates |
-| FS-DFT-29 | Operational assurance and liveness remain external | externally-bounded-assumption | material | no repository test can force publication, advancement, review, release, recovery, or remedy | never internal — operational assurance is the only route that can carry an arrival claim, and it is unbuilt |
-| FS-DFT-38 | Other states' cooperation and recognition are assumptions | externally-bounded-assumption | material | the external-power families rest on named assumptions no book can derive | never internal — bounded per treaty and per case with the external-power families |
+| ID | Title | Routed as | Owner | Severity | Consequence | Closure condition |
+| --- | --- | --- | --- | --- | --- | --- |
+| FS-CLM-03 | Equality diagnostics and repair operations | book-2-operation (routed-book-2) | `TODO.md::Maintain completed constitutional coverage rows` | serious | an operational claim here would launder routing into assurance | Book 2's own gates |
+| FS-CLM-24 | Economic operations and feasibility | book-2-operation (routed-book-2) | `TODO.md::Maintain completed constitutional coverage rows` | serious | a feasibility claim here would take a route that does not exist | Book 2's own gates |
+| FS-DFT-29 | Operational assurance and liveness remain external | externally-bounded-assumption | `TODO.md::Replace confession-as-ending` | material | no repository test can force publication, advancement, review, release, recovery, or remedy | never internal — operational assurance is the only route that can carry an arrival claim, and it is unbuilt |
+| FS-DFT-38 | Other states' cooperation and recognition are assumptions | externally-bounded-assumption | `TODO.md::Maintain completed constitutional coverage rows` | material | the external-power families rest on named assumptions no book can derive | never internal — bounded per treaty and per case with the external-power families |
 
 ## Deferred populations and projections
 

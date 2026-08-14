@@ -532,26 +532,72 @@ def validate_model_allocations(source, profiles):
             raise ClosureAuditError("book-seam must bind every required model route")
     return by_claim
 
-def validate_function_separation_row(row, bodies, claims, context):
+def validate_function_separation_row(
+        row, bodies, roles, claims, powers, context):
+    function_fields = []
+    for function in LEDGER.POWER_FUNCTIONS:
+        stem = function.replace("-", "_")
+        function_fields.extend([
+            f"{stem}_body_refs", f"{stem}_role_refs",
+        ])
     keys = {
-        "id", "scope_id", "affected_claim_refs", "decider_refs",
-        "executor_refs", "auditor_refs", "final_remedy_refs", "source_refs",
+        "id", "power_ref", "affected_claim_refs", *function_fields,
+        "separation_constraints", "source_refs",
     }
     if not isinstance(row, dict) or set(row) != keys:
         raise ClosureAuditError(f"{context}: exact function keys required")
+    power = powers.get(row["power_ref"])
+    if power is None:
+        raise ClosureAuditError(f"{context}: power_ref must name an FS-POW card")
     affected = row["affected_claim_refs"]
-    if (not unique_string_list(affected)
-            or any(ref not in claims for ref in affected)):
-        raise ClosureAuditError(f"{context}: unique known affected claims required")
-    role_sets = []
-    for key in ("decider_refs", "executor_refs", "auditor_refs", "final_remedy_refs"):
-        refs = row[key]
-        if (not unique_string_list(refs)
-                or any(ref not in bodies for ref in refs)):
-            raise ClosureAuditError(f"{context}.{key}: unique body refs required")
-        role_sets.append(set(refs))
-    if set.intersection(*role_sets):
-        raise ClosureAuditError(f"{context}: body self-certifies all functions")
+    if affected != power["affected_claim_refs"] or any(
+            ref not in claims for ref in affected):
+        raise ClosureAuditError(
+            f"{context}: affected claims must equal the power card"
+        )
+    body_sets = {}
+    for function in LEDGER.POWER_FUNCTIONS:
+        stem = function.replace("-", "_")
+        body_refs = row[f"{stem}_body_refs"]
+        role_refs = row[f"{stem}_role_refs"]
+        if (not unique_string_list(body_refs)
+                or any(ref not in bodies for ref in body_refs)):
+            raise ClosureAuditError(
+                f"{context}.{stem}_body_refs: unique known body refs required"
+            )
+        if (not unique_string_list(role_refs)
+                or any(ref not in roles for ref in role_refs)):
+            raise ClosureAuditError(
+                f"{context}.{stem}_role_refs: unique known role refs required"
+            )
+        body_sets[function] = set(body_refs)
+    constraints = row["separation_constraints"]
+    expected_pairs = power["contract"]["required_separation_pairs"]
+    if not isinstance(constraints, list) or len(constraints) != len(expected_pairs):
+        raise ClosureAuditError(
+            f"{context}: one source-backed constraint is required per pair"
+        )
+    for constraint, pair in zip(constraints, expected_pairs):
+        if not isinstance(constraint, dict) or set(constraint) != {
+                "functions", "reason", "source_ref"}:
+            raise ClosureAuditError(
+                f"{context}: exact separation-constraint keys required"
+            )
+        if constraint["functions"] != pair or not constraint["reason"]:
+            raise ClosureAuditError(
+                f"{context}: separation constraint differs from power card"
+            )
+        LEDGER.validate_reference(
+            constraint["source_ref"], f"{context}.separation_constraints"
+        )
+        if body_sets[pair[0]] & body_sets[pair[1]]:
+            raise ClosureAuditError(
+                f"{context}: required body functions are fused"
+            )
+    if set.intersection(*(body_sets[f] for f in LEDGER.POWER_FUNCTIONS)):
+        raise ClosureAuditError(
+            f"{context}: one body self-certifies all five functions"
+        )
     source_refs = row["source_refs"]
     if not unique_string_list(source_refs):
         raise ClosureAuditError(f"{context}.source_refs: unique exact refs required")
@@ -563,18 +609,59 @@ def validate_function_allocations(source, profiles):
     allocations = source.get("function_allocations")
     if not isinstance(allocations, list):
         raise ClosureAuditError("function_allocations must be reviewed")
-    expected = set(profiles["public-power-lifecycle"]["claims"])
-    powers_deferred = any(d["record_type"] == "powers" for d in source["deferred_populations"])
+    expected_claims = set(profiles["public-power-lifecycle"]["claims"])
+    powers = by_id(source, "powers")
+    bodies = by_id(source, "bodies")
+    roles = by_id(source, "roles")
+    claims = by_id(source, "claims")
+    seen = set()
+    for index, row in enumerate(allocations):
+        context = f"function_allocations[{index}]"
+        validate_function_separation_row(
+            row, bodies, roles, claims, powers, context
+        )
+        if row["power_ref"] in seen:
+            raise ClosureAuditError(
+                f"{context}: duplicate power-bound allocation"
+            )
+        seen.add(row["power_ref"])
+        expected_claims.update(row["affected_claim_refs"])
+    if seen != set(powers):
+        raise ClosureAuditError(
+            "function allocations must be a complete power-card bijection"
+        )
+    status = source["power_population"]["status"]
+    powers_deferred = any(
+        d["record_type"] == "powers"
+        for d in source["deferred_populations"]
+    )
+    if status == "complete":
+        if powers_deferred or len(powers) != LEDGER.POWER_FINAL_COUNTS["powers"]:
+            raise ClosureAuditError(
+                "complete power population must remove its deferral and bind "
+                "every source-derived power"
+            )
+        return {
+            "result": "pass",
+            "affected_claim_refs": sorted(expected_claims),
+            "reason": (
+                "all source-derived FS-POW cards have one typed, power-bound "
+                "function allocation; structural separation establishes no "
+                "operation or institutional independence"
+            ),
+        }
     if not powers_deferred:
         raise ClosureAuditError(
-            "populated powers cannot pass closure until the owning FS-POW "
-            "contract-card validator and power-bound allocation schema land"
+            "the powers deferral must remain through foundation and partial prefixes"
         )
-    if source["powers"] or allocations:
-        raise ClosureAuditError("power deferral requires empty powers and allocations")
     return {
-        "result": "bounded-unresolved", "affected_claim_refs": sorted(expected),
-        "reason": "FS-POW and typed function allocation are explicitly deferred",
+        "result": "bounded-unresolved",
+        "affected_claim_refs": sorted(expected_claims),
+        "reason": (
+            f"source-derived power population is {status}: "
+            f"{len(powers)} cards and {len(allocations)} matching allocations; "
+            "the remaining families stay explicitly deferred"
+        ),
     }
 
 
@@ -1109,6 +1196,10 @@ def negative_controls(source):
         s["deferred_populations"] = [
             d for d in s["deferred_populations"] if d["record_type"] != "powers"
         ]
+        s["power_population"]["status"] = "complete"
+        s["power_population"]["completed_source_families"] = list(
+            LEDGER.POWER_SOURCE_FAMILY_ORDER
+        )
         s["powers"] = [{"id": "FS-POW-99"}]
         s["function_allocations"] = [{
             "id": "FS-FAL-99", "scope_id": "arbitrary",
@@ -1246,7 +1337,7 @@ def negative_controls(source):
     add("function inventory removed", lambda s: s.pop("function_allocations"))
     add("id-only powers cannot make function separation pass",
         fabricate_untyped_power_transition,
-        "source inventory binds exactly one still-deferred powers population")
+        "powers must contain every and only")
     add("role allocation drift", lambda s: next(r for r in s["roles"] if r["id"] == "FS-ROL-06").update({"domain_refs": ["FS-DOM-02", "FS-DOM-04"]}), "affected-claim binding")
     add("private-duty claim removed from all projections",
         lambda s: (
@@ -1418,15 +1509,31 @@ def negative_controls(source):
     controls.append("scoped open loop blocks only its defect claim")
     controls.append("unscoped loop claims remain bounded, not blocked")
 
+    fused_power = {
+        "id": "FS-POW-999",
+        "affected_claim_refs": ["FS-CLM-15"],
+        "contract": {"required_separation_pairs": []},
+    }
     fused = {
-        "id": "FS-FAL-99", "scope_id": "test", "affected_claim_refs": ["FS-CLM-15"],
-        "decider_refs": ["FS-BOD-02"], "executor_refs": ["FS-BOD-02"],
-        "auditor_refs": ["FS-BOD-02"], "final_remedy_refs": ["FS-BOD-02"],
+        "id": "FS-FAL-999", "power_ref": "FS-POW-999",
+        "affected_claim_refs": ["FS-CLM-15"],
+        "decisive_fact_writer_body_refs": ["FS-BOD-02"],
+        "decisive_fact_writer_role_refs": ["FS-ROL-27"],
+        "decider_body_refs": ["FS-BOD-02"],
+        "decider_role_refs": ["FS-ROL-27"],
+        "executor_body_refs": ["FS-BOD-02"],
+        "executor_role_refs": ["FS-ROL-27"],
+        "auditor_body_refs": ["FS-BOD-02"],
+        "auditor_role_refs": ["FS-ROL-27"],
+        "final_remedy_body_refs": ["FS-BOD-02"],
+        "final_remedy_role_refs": ["FS-ROL-27"],
+        "separation_constraints": [],
         "source_refs": ["new-book-plans/16-constitutional-closure.py::def validate_function_separation_row"],
     }
     try:
         validate_function_separation_row(
-            fused, by_id(source, "bodies"), by_id(source, "claims"),
+            fused, by_id(source, "bodies"), by_id(source, "roles"),
+            by_id(source, "claims"), {fused_power["id"]: fused_power},
             "synthetic fused function allocation",
         )
     except ClosureAuditError as exc:

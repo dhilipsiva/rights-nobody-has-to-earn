@@ -68,6 +68,205 @@ READER_OUTPUT = pathlib.Path("new-book-plans/full-society-reader-ledger.md")
 POWER_SOURCE_MANIFEST = pathlib.Path(
     "new-book-plans/full-society-power-source-manifest.json"
 )
+POWER_SOURCE_FAMILY_ORDER = [
+    "state-form-and-political-membership",
+    "time-model",
+    "substantive-equality-and-anti-subordination",
+    "economic-pluralism-and-protected-private-sphere",
+    "family-dependency-reproduction-and-collective-plurality",
+    "ecological-commons-and-non-human-animal",
+    "public-safety-defence-emergency-and-external-power",
+    "current-formal-constitution",
+]
+POWER_FAMILY_CUMULATIVE_COUNTS = {
+    "state-form-and-political-membership": {
+        "powers": 51, "templates": 0, "refusals": 0, "crosswalks": 0,
+    },
+    "time-model": {
+        "powers": 51, "templates": 1, "refusals": 1, "crosswalks": 0,
+    },
+    "substantive-equality-and-anti-subordination": {
+        "powers": 60, "templates": 1, "refusals": 1, "crosswalks": 0,
+    },
+    "economic-pluralism-and-protected-private-sphere": {
+        "powers": 88, "templates": 1, "refusals": 2, "crosswalks": 0,
+    },
+    "family-dependency-reproduction-and-collective-plurality": {
+        "powers": 119, "templates": 1, "refusals": 2, "crosswalks": 0,
+    },
+    "ecological-commons-and-non-human-animal": {
+        "powers": 159, "templates": 1, "refusals": 5, "crosswalks": 0,
+    },
+    "public-safety-defence-emergency-and-external-power": {
+        "powers": 209, "templates": 1, "refusals": 19, "crosswalks": 0,
+    },
+    "current-formal-constitution": {
+        "powers": 210, "templates": 1, "refusals": 19, "crosswalks": 8,
+    },
+}
+POWER_FINAL_COUNTS = {
+    "powers": 210,
+    "templates": 1,
+    "refusals": 19,
+    "crosswalks": 8,
+    "function_allocations": 210,
+}
+POWER_POPULATION_STATUSES = ["foundation", "partial", "complete"]
+POWER_POSTURES = ["Specified", "Derived"]
+POWER_PROFILE_ORDER = [
+    "ordinary-public-power",
+    "liberty-power-limit",
+    "coercive-protective",
+    "emergency",
+    "commons-future-condition",
+    "non-human-animal",
+    "collective-authority-title-consent",
+    "consequential-status-supported-decision",
+    "economic-private-power-limit",
+    "physical-scarcity",
+    "consequential-record",
+]
+POWER_PROFILE_FIELDS = {
+    "ordinary-public-power": [
+        "office", "democratic_source", "trigger", "evidence", "scope",
+        "conflict_rule", "non_delegable_limit", "review", "appeal",
+        "end_condition", "temporal_status",
+    ],
+    "liberty-power-limit": [
+        "protected_person", "prohibited_act", "direct_public_binding",
+        "private_interference_duty", "explicit_private_binding",
+        "narrow_exception_test", "evidence", "independent_reviewer",
+        "public_reason", "review_or_end", "temporal_status", "remedy",
+    ],
+    "coercive-protective": [
+        "named_instrument", "authorised_actor_and_mandate",
+        "individualised_recorded_ground", "identification_and_reasons",
+        "prior_authorisation_and_immediate_danger_exception",
+        "necessity_least_harm_warning_cessation_aid",
+        "public_actor_burden", "capability_removal_and_no_reader",
+        "upstream_personhood_and_floor_refusals",
+        "counsel_interpreter_accommodation", "third_party_notification",
+        "prompt_automatic_review", "investigator_deployer_separation",
+        "non_punitive_and_no_consequential_feed",
+        "shelter_and_recorded_voice", "record_contract",
+        "failure_polarity", "remedy", "audit",
+        "source_bound_temporal_contract",
+    ],
+    "emergency": [
+        "hazard_territory_affected_people", "separately_justified_powers",
+        "narrowest_scope", "published_reasons_and_evidence",
+        "cross_branch_authorisation", "alternate_authorising_route",
+        "independent_substitute_reviewer", "ordinary_body_ratification",
+        "legislature_and_court_notice", "declaration_temporal_contract",
+        "renewal_temporal_contract", "exact_declaration_version_join",
+        "judicial_review", "non_conferred_list", "non_derogable_core",
+        "restoration", "post_hoc_audit", "lawful_and_unlawful_harm_remedy",
+        "failure_polarity_and_frozen_record_limit",
+    ],
+    "commons-future-condition": [
+        "protected_common_and_baseline", "public_and_private_duty",
+        "qualitative_non_destruction_ceiling",
+        "quantitative_standard_source_and_version",
+        "independent_evidence_cumulative_effects_uncertainty_precaution",
+        "functional_non_regression", "avoid_minimise_restore_hierarchy",
+        "independent_initiators", "judicial_interim_relief",
+        "guardian_only_pause", "guardian_appointment_and_conflict",
+        "evidence_source_separation", "case_bound_replay_key",
+        "alternate_advocate", "substitute_reviewer", "no_final_veto",
+        "indigenous_title_and_consent", "prevention_and_cessation",
+        "hazardous_activity_liability", "other_causation_and_control",
+        "personal_culpability_due_process", "breach_and_interim_protection",
+        "restoration", "public_accountability", "review",
+        "temporal_status",
+    ],
+    "non-human-animal": [
+        "protected_animal_or_category", "sentience_evidence_and_uncertainty",
+        "responsible_actor", "welfare_minimum_and_prohibited_harm",
+        "corridor_core", "permitted_use_category", "food_alternatives_test",
+        "research_three_rs_and_categorical_ban", "enhanced_use_test",
+        "species_appropriate_care", "independent_inspection_and_writer",
+        "advocate_and_public_initiation", "challenge",
+        "rescue_and_continuity", "licence_or_custody_correction", "remedy",
+        "audit", "temporal_status", "commons_cross_reference",
+    ],
+    "collective-authority-title-consent": [
+        "individual_and_collective_holders", "source_and_basis",
+        "acceptance_or_decision_rule", "writer", "evidence",
+        "permitted_legal_effect", "independent_reader",
+        "privacy_and_dissent", "challenge_and_appeal", "correction",
+        "carry", "end_or_review", "alternate_route", "continuity",
+        "remedy", "failure_polarity", "constitutional_court_route",
+    ],
+    "consequential-status-supported-decision": [
+        "holder", "source", "writer", "evidence_rule",
+        "scope_and_permitted_effects", "voice_and_preferences",
+        "required_support", "independent_reader_or_decider",
+        "privacy_boundary", "challenge", "correction", "carry",
+        "end_condition", "alternate_route", "continuity", "remedy",
+        "failure_polarity",
+    ],
+    "economic-private-power-limit": [
+        "holder_or_actor", "protected_permission",
+        "public_or_private_trigger", "forbidden_waiver",
+        "public_scale_finding_if_required", "evidence",
+        "necessity_and_proportionality", "continuity", "challenge",
+        "remedy", "temporal_status",
+    ],
+    "physical-scarcity": [
+        "named_resource_and_population", "positive_scarcity_evidence",
+        "alternatives_considered", "responsible_authority",
+        "constitutional_minima_preserved", "no_reduced_redefinition",
+        "every_shortfall_as_failure", "urgency_accessibility_irreversibility",
+        "continuity_and_resource_benefit", "anti_proxy_test",
+        "forbidden_priority_keys", "equal_claim_rotation_or_lottery",
+        "interim_alternative", "review", "reassessment",
+        "source_bound_end", "repair",
+    ],
+    "consequential-record": [
+        "writer", "permitted_basis", "visibility_and_privacy", "challenge",
+        "correction", "retention", "deletion_control", "external_assurance",
+        "independent_recipient", "action_duty", "continuity_and_remedy",
+        "temporal_status",
+    ],
+}
+
+POWER_CONTRACT_KEYS = [
+    "lawful_source", "trigger", "evidence_rule", "bounded_effect",
+    "public_reasons", "conflict_rule", "non_delegable_limit",
+    "independent_review", "appeal", "correction", "remedy",
+    "end_condition", "temporal_status", "failure_polarity",
+    "required_separation_pairs",
+]
+POWER_TEMPLATE_CONTRACT_KEYS = [
+    "current_source", "scope", "review", "renewal_or_end", "challenge",
+    "fail_closed_polarity", "frozen_record_limit", "book2_liveness_limit",
+]
+POWER_FUNCTIONS = [
+    "decisive-fact-writer", "decider", "executor", "auditor",
+    "final-remedy",
+]
+UNIVERSAL_SEPARATION_PAIRS = [
+    ["decisive-fact-writer", "auditor"],
+    ["executor", "auditor"],
+    ["auditor", "final-remedy"],
+]
+CROSSWALK_POLICY = {
+    "formal-electorate-seating-authority": "replace",
+    "formal-public-body-authority": "replace",
+    "formal-review-credential": "retire",
+    "formal-tribunal-credential": "retire",
+    "formal-appeals-expungement": "retire",
+    "formal-appeals-relief": "replace",
+    "formal-active-custody": "retain",
+    "formal-amendment-label-result": "retire",
+}
+RETAINED_FORMAL_KEY = "formal-active-custody"
+POWER_TEMPLATE_KEY = "time-power-specific-t3-contract"
+POWER_BOOK2_OWNER = (
+    "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 "
+    "operator/evidence owner"
+)
+
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
@@ -185,7 +384,9 @@ READER_PROJECTION_POPULATIONS = (
     "enum_mapping_exclusions", "residual_coverage_exclusions",
     "domains", "legacy_rows", "claims", "bodies", "routes",
     "external_assumptions", "envelope", "roles", "role_omissions",
-    "powers", "dependencies", "dependency_loops", "refused_flows",
+    "powers", "power_contract_templates", "power_refusals",
+    "power_crosswalk_dispositions", "dependencies", "dependency_loops",
+    "refused_flows",
     "scenarios", "scenario_omissions", "thresholds", "defects",
     "receipts", "proposals", "review_events", "deferred_populations",
     "closure_requirement_profiles", "closure_claim_contracts",
@@ -469,6 +670,9 @@ RECORD_ARRAYS = [
     "external_assumptions",
     "envelope",
 ] + DEFERRABLE_ARRAYS + [
+    "power_contract_templates",
+    "power_refusals",
+    "power_crosswalk_dispositions",
     "closure_requirement_profiles",
     "closure_claim_contracts",
     "model_allocations",
@@ -487,6 +691,9 @@ ARRAY_RECORD_TYPES = {
     "envelope": "envelope",
     "roles": "role",
     "powers": "power",
+    "power_contract_templates": "power_contract_template",
+    "power_refusals": "power_refusal",
+    "power_crosswalk_dispositions": "power_crosswalk_disposition",
     "dependencies": "dependency",
     "scenarios": "scenario",
     "thresholds": "threshold",
@@ -743,8 +950,8 @@ DOMAIN_BUCKETS = [
 def validate_header(src: dict):
     if src.get("spdx") != "CC-BY-4.0":
         raise LedgerError('reviewed source must declare "spdx": "CC-BY-4.0"')
-    if type(src.get("schema_version")) is not int or src["schema_version"] != 2:
-        raise LedgerError("schema_version must be the integer 2")
+    if type(src.get("schema_version")) is not int or src["schema_version"] != 3:
+        raise LedgerError("schema_version must be the integer 3")
     require_str(src, "title", "header")
     if src.get("status") != EXPECTED_STATUS:
         raise LedgerError(f"status must be {EXPECTED_STATUS}")
@@ -793,26 +1000,462 @@ def validate_power_source_inventory(src: dict):
         row for row in src.get("deferred_populations", [])
         if row.get("record_type") == "powers"
     ]
-    if len(deferrals) != 1:
+    population = src.get("power_population", {})
+    expected_deferrals = 0 if population.get("status") == "complete" else 1
+    if len(deferrals) != expected_deferrals:
         raise LedgerError(
-            "the source inventory binds exactly one still-deferred powers population"
+            "the powers deferral must remain through every partial prefix and "
+            "disappear only with the complete source-derived population"
         )
-    deferral = deferrals[0]
-    if deferral.get("owner_ref") != binding["owner_ref"]:
-        raise LedgerError("powers deferral owner differs from the source inventory")
-    if deferral.get("closure_condition") != binding["closure_condition"]:
-        raise LedgerError(
-            "powers deferral closure differs from the source inventory"
-        )
-    if src.get("powers") or src.get("function_allocations"):
-        raise LedgerError(
-            "source inventory may not coexist with invented FS-POW or function "
-            "allocation rows; complete their owning contracts first"
-        )
+    if deferrals:
+        deferral = deferrals[0]
+        if deferral.get("owner_ref") != binding["owner_ref"]:
+            raise LedgerError(
+                "powers deferral owner differs from the source inventory"
+            )
+        if deferral.get("closure_condition") != binding["closure_condition"]:
+            raise LedgerError(
+                "powers deferral closure differs from the source inventory"
+            )
     if len(binding["known_allocation_gaps"]) != len(
             set(binding["known_allocation_gaps"])):
         raise LedgerError("known power-allocation gaps must be unique")
     validate_reference(binding["owner_ref"], "power_source_inventory.owner_ref")
+
+
+def _power_manifest_rows():
+    return load_json(POWER_SOURCE_MANIFEST)["rows"]
+
+
+def _power_profiles(row: dict):
+    key = row["provisional_key"]
+    family = row["source_family"]
+    profiles = {"ordinary-public-power"}
+    if family == "substantive-equality-and-anti-subordination":
+        profiles.add("liberty-power-limit")
+        if any(token in key for token in (
+                "diagnostic", "finding", "determination", "review")):
+            profiles.add("consequential-record")
+    elif family == "economic-pluralism-and-protected-private-sphere":
+        profiles.add("economic-private-power-limit")
+        if "scarcity" in key:
+            profiles.add("physical-scarcity")
+    elif family == "family-dependency-reproduction-and-collective-plurality":
+        profiles.add("consequential-status-supported-decision")
+        if any(token in key for token in (
+                "collective", "minority", "indigenous", "title", "consent",
+                "customary")):
+            profiles.add("collective-authority-title-consent")
+    elif family == "ecological-commons-and-non-human-animal":
+        profiles.add("non-human-animal" if key.startswith("animal-")
+                     else "commons-future-condition")
+    elif family == "public-safety-defence-emergency-and-external-power":
+        if key.startswith("emergency-"):
+            profiles.add("emergency")
+        if any(token in key for token in (
+                "arrest", "detention", "search", "seizure", "force",
+                "custod", "restriction", "polic", "protect", "border",
+                "expulsion", "extradition", "transfer", "deployment",
+                "defensive", "intelligence", "surveillance", "weapon")):
+            profiles.add("coercive-protective")
+        if "intelligence" in key or "record" in key:
+            profiles.add("consequential-record")
+    elif family == "state-form-and-political-membership":
+        if any(token in key for token in (
+                "certif", "appointment", "qualification", "membership",
+                "election", "selection", "succession")):
+            profiles.add("consequential-record")
+    if key == RETAINED_FORMAL_KEY:
+        profiles.add("coercive-protective")
+    return [p for p in POWER_PROFILE_ORDER if p in profiles]
+
+
+def _power_required_separations(profiles):
+    pairs = copy.deepcopy(UNIVERSAL_SEPARATION_PAIRS)
+    if "coercive-protective" in profiles:
+        pairs.append(["decisive-fact-writer", "executor"])
+    return pairs
+
+
+def _typed_ref_list(value, expected_array, ids, context, allow_empty=False):
+    if (not isinstance(value, list) or len(set(value)) != len(value)
+            or (not value and not allow_empty)):
+        suffix = "" if allow_empty else " non-empty"
+        raise LedgerError(
+            f"{context} must be a{suffix} duplicate-free list"
+        )
+    for ref in value:
+        if ref not in ids or ids[ref] != expected_array:
+            raise LedgerError(
+                f"{context} must name {expected_array}, got {ref!r}"
+            )
+
+
+def _validate_source_refs(refs, context):
+    if (not isinstance(refs, list) or not refs
+            or len(set(refs)) != len(refs)):
+        raise LedgerError(
+            f"{context} must be a non-empty duplicate-free list"
+        )
+    for ref in refs:
+        validate_reference(ref, context)
+
+
+def _manifest_expectations(completed):
+    manifest = _power_manifest_rows()
+    rows = [
+        row for family in completed for row in manifest
+        if row["source_family"] == family
+    ]
+    powers = [r["provisional_key"] for r in rows
+              if r["disposition"] == "card-required"]
+    if "current-formal-constitution" in completed:
+        powers.append(RETAINED_FORMAL_KEY)
+    return {
+        "powers": powers,
+        "templates": [r["provisional_key"] for r in rows
+                      if r["disposition"] == "power-contract-template"],
+        "refusals": [r["provisional_key"] for r in rows
+                     if r["disposition"] == "explicit-refusal-limit"],
+        "crosswalks": [r["provisional_key"] for r in rows
+                       if r["disposition"] == "existing-formal-crosswalk"],
+    }
+
+
+def validate_power_population(src: dict, ids: dict):
+    population = src.get("power_population")
+    if not isinstance(population, dict):
+        raise LedgerError("power_population must be an object")
+    exact_keys(
+        population,
+        ["status", "completed_source_families", "expected_final_counts",
+         "resolved_allocation_gaps", "evidence_ceiling"],
+        "power_population",
+    )
+    completed = population["completed_source_families"]
+    if not isinstance(completed, list):
+        raise LedgerError(
+            "power_population.completed_source_families must be a list"
+        )
+    if completed != POWER_SOURCE_FAMILY_ORDER[:len(completed)]:
+        raise LedgerError(
+            "completed_source_families must be an exact checker-owned prefix"
+        )
+    expected_status = (
+        "foundation" if not completed else
+        "complete" if completed == POWER_SOURCE_FAMILY_ORDER else "partial"
+    )
+    if population["status"] != expected_status:
+        raise LedgerError(
+            f"power_population.status must be {expected_status!r} for its prefix"
+        )
+    if population["expected_final_counts"] != POWER_FINAL_COUNTS:
+        raise LedgerError(
+            "power_population.expected_final_counts must equal the "
+            "checker-owned source-derived partition"
+        )
+    require_str(population, "evidence_ceiling", "power_population")
+    if "no operation" not in population["evidence_ceiling"].lower():
+        raise LedgerError(
+            "power_population.evidence_ceiling must refuse operation claims"
+        )
+
+    gaps = population["resolved_allocation_gaps"]
+    if not isinstance(gaps, list):
+        raise LedgerError("resolved_allocation_gaps must be a list")
+    expected_gaps = POWER_SOURCE_BINDING["known_allocation_gaps"]
+    if [g.get("gap") for g in gaps] != expected_gaps:
+        raise LedgerError(
+            "resolved_allocation_gaps must resolve every checker-bound gap "
+            "once and in canonical order"
+        )
+    for i, gap in enumerate(gaps):
+        ctx = f"power_population.resolved_allocation_gaps[{i}]"
+        exact_keys(gap, ["gap", "body_refs", "role_refs", "source_refs"], ctx)
+        _typed_ref_list(gap["body_refs"], "bodies", ids, f"{ctx}.body_refs")
+        _typed_ref_list(gap["role_refs"], "roles", ids, f"{ctx}.role_refs")
+        _validate_source_refs(gap["source_refs"], f"{ctx}.source_refs")
+
+    expectations = _manifest_expectations(completed)
+    arrays = {
+        "powers": src.get("powers", []),
+        "templates": src.get("power_contract_templates", []),
+        "refusals": src.get("power_refusals", []),
+        "crosswalks": src.get("power_crosswalk_dispositions", []),
+    }
+    for name, records in arrays.items():
+        keys = [r.get("manifest_key") for r in records]
+        if keys != expectations[name]:
+            raise LedgerError(
+                f"{name} must contain every and only its completed-family "
+                "manifest rows in canonical order"
+            )
+    expected_counts = ({"powers": 0, "templates": 0,
+                        "refusals": 0, "crosswalks": 0}
+                       if not completed else
+                       POWER_FAMILY_CUMULATIVE_COUNTS[completed[-1]])
+    actual_counts = {name: len(records) for name, records in arrays.items()}
+    if actual_counts != expected_counts:
+        raise LedgerError(
+            f"power prefix counts {actual_counts} differ from "
+            f"checker-owned {expected_counts}"
+        )
+
+    manifest = {r["provisional_key"]: r for r in _power_manifest_rows()}
+    powers_by_manifest = {}
+    for i, rec in enumerate(arrays["powers"]):
+        ctx = f"powers[{i}] ({rec.get('id', '?')})"
+        exact_keys(
+            rec,
+            COMMON_KEYS + [
+                "manifest_key", "source_family", "posture", "evidence_kind",
+                "profiles", "domain_refs", "affected_claim_refs",
+                "holder_body_refs", "holder_role_refs",
+                "affected_role_refs", "checking_role_refs", "route_ref",
+                "overlay", "public_claim_restriction",
+                "structural_wall_refs", "related_power_refs",
+                "enforcement_mechanism", "book2_owner_ref", "contract",
+                "profile_contracts", "source_refs",
+            ],
+            ctx,
+        )
+        validate_common_record_fields(rec, ctx)
+        row = manifest.get(rec["manifest_key"])
+        if row is None:
+            raise LedgerError(f"{ctx}: unknown manifest_key")
+        if rec["source_family"] != row["source_family"]:
+            raise LedgerError(f"{ctx}: source_family differs from manifest")
+        retained = rec["manifest_key"] == RETAINED_FORMAL_KEY
+        if row["disposition"] != (
+                "existing-formal-crosswalk" if retained else "card-required"):
+            raise LedgerError(f"{ctx}: manifest disposition cannot create a power")
+        if rec["layer"] != "constitutional-invariant":
+            raise LedgerError(f"{ctx}: power contracts are constitutional architecture")
+        expected_posture = "Derived" if retained else "Specified"
+        expected_evidence = "executable" if retained else "inventory"
+        if rec["posture"] != expected_posture or rec["evidence_kind"] != expected_evidence:
+            raise LedgerError(f"{ctx}: posture/evidence must follow source status")
+        expected_status_value = (
+            "implemented-narrow-derived" if retained
+            else "ratified-unimplemented"
+        )
+        if rec["status"] != expected_status_value:
+            raise LedgerError(f"{ctx}: status must be {expected_status_value}")
+        profiles = _power_profiles(row)
+        if rec["profiles"] != profiles:
+            raise LedgerError(f"{ctx}: profiles differ from checker-owned classification")
+        contracts = rec["profile_contracts"]
+        if not isinstance(contracts, dict) or list(contracts) != profiles:
+            raise LedgerError(f"{ctx}: profile_contracts must match profiles in order")
+        for profile in profiles:
+            block = contracts[profile]
+            exact_keys(block, POWER_PROFILE_FIELDS[profile],
+                       f"{ctx}.profile_contracts.{profile}")
+            for field in POWER_PROFILE_FIELDS[profile]:
+                value = require_str(block, field,
+                                    f"{ctx}.profile_contracts.{profile}")
+                if value.strip().lower() in {"n/a", "na", "tbd", "unknown"}:
+                    raise LedgerError(f"{ctx}: blank substitute in profile contract")
+        contract = rec["contract"]
+        exact_keys(contract, POWER_CONTRACT_KEYS, f"{ctx}.contract")
+        for field in POWER_CONTRACT_KEYS[:-1]:
+            value = require_str(contract, field, f"{ctx}.contract")
+            if value.strip().lower() in {"n/a", "na", "tbd", "unknown"}:
+                raise LedgerError(f"{ctx}: blank substitute in contract")
+        expected_pairs = _power_required_separations(profiles)
+        if contract["required_separation_pairs"] != expected_pairs:
+            raise LedgerError(f"{ctx}: required separation pairs are incomplete")
+        _typed_ref_list(rec["domain_refs"], "domains", ids,
+                        f"{ctx}.domain_refs")
+        _typed_ref_list(rec["affected_claim_refs"], "claims", ids,
+                        f"{ctx}.affected_claim_refs")
+        _typed_ref_list(rec["holder_body_refs"], "bodies", ids,
+                        f"{ctx}.holder_body_refs", allow_empty=True)
+        _typed_ref_list(rec["holder_role_refs"], "roles", ids,
+                        f"{ctx}.holder_role_refs")
+        _typed_ref_list(rec["affected_role_refs"], "roles", ids,
+                        f"{ctx}.affected_role_refs")
+        _typed_ref_list(rec["checking_role_refs"], "roles", ids,
+                        f"{ctx}.checking_role_refs")
+        _typed_ref_list(rec["structural_wall_refs"], "power_refusals", ids,
+                        f"{ctx}.structural_wall_refs", allow_empty=True)
+        _typed_ref_list(rec["related_power_refs"], "powers", ids,
+                        f"{ctx}.related_power_refs", allow_empty=True)
+        if rec["route_ref"] not in ids or ids[rec["route_ref"]] != "routes":
+            raise LedgerError(f"{ctx}: route_ref must name a route")
+        if rec["overlay"] not in OVERLAYS:
+            raise LedgerError(f"{ctx}: unknown overlay")
+        require_str(rec, "public_claim_restriction", ctx)
+        if "no operation" not in rec["public_claim_restriction"].lower():
+            raise LedgerError(f"{ctx}: public claim restriction must refuse operation")
+        require_str(rec, "enforcement_mechanism", ctx)
+        if rec["book2_owner_ref"] != POWER_BOOK2_OWNER:
+            raise LedgerError(f"{ctx}: Book 2 owner must remain checker-bound")
+        validate_reference(rec["book2_owner_ref"], f"{ctx}.book2_owner_ref")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        if row["source_anchor"] not in rec["source_refs"]:
+            raise LedgerError(f"{ctx}: source_refs must include manifest anchor")
+        powers_by_manifest[rec["manifest_key"]] = rec
+
+    for i, rec in enumerate(arrays["templates"]):
+        ctx = f"power_contract_templates[{i}]"
+        exact_keys(rec, COMMON_KEYS + ["manifest_key", "contract", "source_refs"], ctx)
+        validate_common_record_fields(rec, ctx)
+        row = manifest[rec["manifest_key"]]
+        if rec["manifest_key"] != POWER_TEMPLATE_KEY:
+            raise LedgerError(f"{ctx}: only the checker-bound time template is allowed")
+        if rec["layer"] != "constitutional-invariant" or rec["status"] != "ratified-template":
+            raise LedgerError(f"{ctx}: template layer/status mismatch")
+        exact_keys(rec["contract"], POWER_TEMPLATE_CONTRACT_KEYS, f"{ctx}.contract")
+        for field in POWER_TEMPLATE_CONTRACT_KEYS:
+            require_str(rec["contract"], field, f"{ctx}.contract")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        if row["source_anchor"] not in rec["source_refs"]:
+            raise LedgerError(f"{ctx}: template must include manifest anchor")
+
+    for i, rec in enumerate(arrays["refusals"]):
+        ctx = f"power_refusals[{i}]"
+        exact_keys(
+            rec,
+            COMMON_KEYS + [
+                "manifest_key", "source_family", "refusal", "scope",
+                "protected_boundary", "permitted_residual",
+                "non_authorisation", "affected_power_refs", "domain_refs",
+                "affected_claim_refs", "affected_role_refs", "route_ref",
+                "public_claim_restriction", "source_refs",
+            ],
+            ctx,
+        )
+        validate_common_record_fields(rec, ctx)
+        row = manifest[rec["manifest_key"]]
+        if row["disposition"] != "explicit-refusal-limit":
+            raise LedgerError(f"{ctx}: only refusal manifest rows are allowed")
+        if rec["source_family"] != row["source_family"]:
+            raise LedgerError(f"{ctx}: source_family differs from manifest")
+        for field in ("refusal", "scope", "protected_boundary",
+                      "permitted_residual", "non_authorisation",
+                      "public_claim_restriction"):
+            require_str(rec, field, ctx)
+        _typed_ref_list(rec["affected_power_refs"], "powers", ids,
+                        f"{ctx}.affected_power_refs", allow_empty=True)
+        _typed_ref_list(rec["domain_refs"], "domains", ids,
+                        f"{ctx}.domain_refs")
+        _typed_ref_list(rec["affected_claim_refs"], "claims", ids,
+                        f"{ctx}.affected_claim_refs")
+        _typed_ref_list(rec["affected_role_refs"], "roles", ids,
+                        f"{ctx}.affected_role_refs")
+        if rec["route_ref"] not in ids or ids[rec["route_ref"]] != "routes":
+            raise LedgerError(f"{ctx}: route_ref must name a route")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        if row["source_anchor"] not in rec["source_refs"]:
+            raise LedgerError(f"{ctx}: source_refs must include manifest anchor")
+
+    for i, rec in enumerate(arrays["crosswalks"]):
+        ctx = f"power_crosswalk_dispositions[{i}]"
+        exact_keys(
+            rec,
+            COMMON_KEYS + [
+                "manifest_key", "crosswalk_action", "target_power_refs",
+                "current_effect", "retired_residual_effect", "non_extension",
+                "transition_owner_ref", "source_refs",
+            ],
+            ctx,
+        )
+        validate_common_record_fields(rec, ctx)
+        key = rec["manifest_key"]
+        row = manifest[key]
+        expected_action = CROSSWALK_POLICY[key]
+        if rec["crosswalk_action"] != expected_action:
+            raise LedgerError(f"{ctx}: crosswalk action violates checker-owned policy")
+        _typed_ref_list(rec["target_power_refs"], "powers", ids,
+                        f"{ctx}.target_power_refs", allow_empty=True)
+        if expected_action == "retire" and rec["target_power_refs"]:
+            raise LedgerError(f"{ctx}: retired effects have no target power")
+        if expected_action != "retire" and not rec["target_power_refs"]:
+            raise LedgerError(f"{ctx}: retain/replace needs a target power")
+        if key == "formal-electorate-seating-authority":
+            expected = [powers_by_manifest["gov-proportional-election-certification"]["id"]]
+        elif key == "formal-public-body-authority":
+            expected = [r["id"] for r in arrays["powers"]]
+        elif key == "formal-appeals-relief":
+            expected = [powers_by_manifest["gov-ordinary-court-relief"]["id"]]
+        elif key == RETAINED_FORMAL_KEY:
+            expected = [powers_by_manifest[RETAINED_FORMAL_KEY]["id"]]
+        else:
+            expected = []
+        if rec["target_power_refs"] != expected:
+            raise LedgerError(f"{ctx}: targets violate checker-owned crosswalk policy")
+        for field in ("current_effect", "retired_residual_effect",
+                      "non_extension"):
+            require_str(rec, field, ctx)
+        validate_reference(rec["transition_owner_ref"],
+                           f"{ctx}.transition_owner_ref")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        if row["source_anchor"] not in rec["source_refs"]:
+            raise LedgerError(f"{ctx}: source_refs must include manifest anchor")
+
+    allocations = src.get("function_allocations", [])
+    if len(allocations) != len(arrays["powers"]):
+        raise LedgerError("every populated power requires exactly one FS-FAL")
+    power_by_id = {r["id"]: r for r in arrays["powers"]}
+    seen_power_refs = set()
+    for i, rec in enumerate(allocations):
+        ctx = f"function_allocations[{i}] ({rec.get('id', '?')})"
+        function_fields = []
+        for function in POWER_FUNCTIONS:
+            stem = function.replace("-", "_")
+            function_fields += [f"{stem}_body_refs", f"{stem}_role_refs"]
+        exact_keys(
+            rec,
+            ["id", "power_ref", "affected_claim_refs"] + function_fields
+            + ["separation_constraints", "source_refs"],
+            ctx,
+        )
+        power = power_by_id.get(rec["power_ref"])
+        if power is None or rec["power_ref"] in seen_power_refs:
+            raise LedgerError(f"{ctx}: power_ref must be unique and name a power")
+        seen_power_refs.add(rec["power_ref"])
+        if rec["affected_claim_refs"] != power["affected_claim_refs"]:
+            raise LedgerError(f"{ctx}: affected claims must equal the power card")
+        bodies_by_function = {}
+        for function in POWER_FUNCTIONS:
+            stem = function.replace("-", "_")
+            body_field = f"{stem}_body_refs"
+            role_field = f"{stem}_role_refs"
+            _typed_ref_list(rec[body_field], "bodies", ids,
+                            f"{ctx}.{body_field}")
+            _typed_ref_list(rec[role_field], "roles", ids,
+                            f"{ctx}.{role_field}")
+            bodies_by_function[function] = set(rec[body_field])
+        constraints = rec["separation_constraints"]
+        pairs = power["contract"]["required_separation_pairs"]
+        if not isinstance(constraints, list) or len(constraints) != len(pairs):
+            raise LedgerError(f"{ctx}: one constraint is required per pair")
+        for j, (constraint, pair) in enumerate(zip(constraints, pairs)):
+            cctx = f"{ctx}.separation_constraints[{j}]"
+            exact_keys(constraint, ["functions", "reason", "source_ref"], cctx)
+            if constraint["functions"] != pair:
+                raise LedgerError(f"{cctx}: function pair differs from power contract")
+            require_str(constraint, "reason", cctx)
+            validate_reference(constraint["source_ref"], f"{cctx}.source_ref")
+            if bodies_by_function[pair[0]] & bodies_by_function[pair[1]]:
+                raise LedgerError(f"{cctx}: required body separation is fused")
+        if set.intersection(*(bodies_by_function[f] for f in POWER_FUNCTIONS)):
+            raise LedgerError(f"{ctx}: one body may not occupy all five functions")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+    if seen_power_refs != set(power_by_id):
+        raise LedgerError("FS-FAL power references must be a complete bijection")
+
+    if completed == POWER_SOURCE_FAMILY_ORDER:
+        t3 = powers_by_manifest[RETAINED_FORMAL_KEY]
+        custody = powers_by_manifest["protect-custodial-execution-mandate"]
+        if t3["related_power_refs"] != [custody["id"]] or \
+                custody["related_power_refs"] != [t3["id"]]:
+            raise LedgerError("T3 Court authority and custody execution must be reciprocal but separate")
+        if t3["holder_body_refs"] != ["FS-BOD-17"]:
+            raise LedgerError("retained T3 authority is held only by the Court")
+        if custody["holder_body_refs"] != ["FS-BOD-35"]:
+            raise LedgerError("custodial execution is held only by the distinct executor")
 
 
 def validate_meanings(src: dict):
@@ -2782,7 +3425,11 @@ def validate_deferred(src: dict):
                 f"{array} is empty with no deferral record — an empty array "
                 "needs an owner and a closure condition"
             )
-        if rows and array in by_type:
+        staged_power_prefix = (
+            array == "powers" and rows and array in by_type
+            and src["power_population"]["status"] == "partial"
+        )
+        if rows and array in by_type and not staged_power_prefix:
             raise LedgerError(
                 f"{array} is populated but still carries a deferral record"
             )
@@ -2905,8 +3552,9 @@ def render_coverage_region(src: dict) -> str:
     claims_by_id = {c["id"]: c for c in src["claims"]}
     lines = [
         "| Domain | Current Book 1 coverage | Ratified scope requirement | "
-        "Status | Gap / author ruling required | Split claims (posture) |",
-        "| --- | --- | --- | --- | --- | --- |",
+        "Status | Gap / author ruling required | Split claims (posture) | "
+        "Source-derived power cards |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for row in src["legacy_rows"]:
         splits = []
@@ -2921,6 +3569,10 @@ def render_coverage_region(src: dict) -> str:
                 row["domain_title"], row["legacy_coverage"],
                 row["legacy_scope_requirement"], row["legacy_status_cell"],
                 row["legacy_gap"], "; ".join(splits) or "—",
+                "; ".join(
+                    power["id"] for power in src["powers"]
+                    if set(row["domain_refs"]) & set(power["domain_refs"])
+                ) or "—",
             ]) + " |"
         )
     return "\n".join(lines)
@@ -3490,6 +4142,7 @@ def validate(src: dict):
     validate_reader_evidence_alignment(src, routes_by_id)
     validate_bodies(src)
     validate_roles(src, ids)
+    validate_power_population(src, ids)
     validate_dependencies(src, ids)
     validate_scenarios(src, ids)
     validate_external_assumptions(src)
@@ -3537,11 +4190,61 @@ def negative_controls(src: dict) -> int:
     control("known power allocation gaps cannot disappear silently",
             lambda s: s["power_source_inventory"][
                 "known_allocation_gaps"].pop())
+    control("power final counts are checker-owned",
+            lambda s: s["power_population"]["expected_final_counts"].update(
+                {"powers": 211}))
+    control("power family completion is an exact prefix",
+            lambda s: s["power_population"].update(
+                {"completed_source_families": ["time-model"],
+                 "status": "partial"}))
+    control("resolved power-allocation gaps are append-only and exact",
+            lambda s: s["power_population"][
+                "resolved_allocation_gaps"].pop())
+    control("power population cannot claim complete early",
+            lambda s: s["power_population"].update({"status": "complete"}))
+    control("powers deferral cannot disappear during a partial prefix",
+            lambda s: s["deferred_populations"].remove(next(
+                row for row in s["deferred_populations"]
+                if row["record_type"] == "powers")))
     control("powers deferral closure is exact",
             lambda s: next(
                 row for row in s["deferred_populations"]
                 if row["record_type"] == "powers"
             ).update({"closure_condition": "cards later"}))
+    if src["powers"]:
+        control("a power grain cannot be bundled or duplicated",
+                lambda s: s["powers"][0].update(
+                    {"manifest_key": s["powers"][1]["manifest_key"]}))
+        control("a power profile cannot be dropped",
+                lambda s: s["powers"][0]["profiles"].pop())
+        control("profile fields reject blank substitutes",
+                lambda s: s["powers"][0]["profile_contracts"][
+                    s["powers"][0]["profiles"][0]].update({"office": "N/A"}))
+        control("unknown power holder body is refused",
+                lambda s: s["powers"][0]["holder_body_refs"].__setitem__(
+                    0, "FS-BOD-999"))
+        control("a power allocation cannot disappear",
+                lambda s: s["function_allocations"].pop())
+        control("one allocation cannot serve two powers",
+                lambda s: s["function_allocations"][0].update(
+                    {"power_ref": s["function_allocations"][1]["power_ref"]}))
+        control("required function separation cannot be fused",
+                lambda s: s["function_allocations"][0][
+                    "auditor_body_refs"].__setitem__(
+                        0, s["function_allocations"][0][
+                            "decisive_fact_writer_body_refs"][0]))
+    if src["power_refusals"]:
+        control("a refusal cannot be promoted into a power",
+                lambda s: s["powers"].append(copy.deepcopy(s["powers"][0])))
+    if src["power_crosswalk_dispositions"]:
+        control("formal crosswalk policy is checker-owned",
+                lambda s: s["power_crosswalk_dispositions"][0].update(
+                    {"crosswalk_action": "retire"}))
+        control("T3 custody authority cannot merge with its executor",
+                lambda s: next(
+                    row for row in s["powers"]
+                    if row["manifest_key"] == RETAINED_FORMAL_KEY
+                ).update({"holder_body_refs": ["FS-BOD-35"]}))
     control("generic disposition key is refused",
             lambda s: first_claim(s).update({"disposition": "open"}))
     control("numeric rollup is an aggregate score",
@@ -4872,7 +5575,8 @@ def render(src: dict, resolution: dict) -> str:
       "stays a question for the independent scope review; no full Cartesian "
       "product is attempted, and deliberately omitted candidates and "
       "combinations are recorded below with risk-based reasons. The FS-POW "
-      "decomposition of each power remains its own deferred population. "
+      "decomposition of each power is staged below by exact source-family "
+      "prefix and remains deferred until the complete population. "
       "Formal anchors stay honest: a derived constitution predicate, an "
       "asserted predicate with its replace-card path, or "
       "ratified-but-unimplemented doctrine.")
@@ -4911,6 +5615,67 @@ def render(src: dict, resolution: dict) -> str:
             what = entry.get("omitted_domain_ref") or entry["omitted_scale"]
             w(f"- `{entry['role_ref']}` omits `{what}`: "
               f"{entry['risk_reason']}")
+    w("")
+    w("## Source-derived power contracts and function allocations")
+    w("")
+    population = src["power_population"]
+    completed = population["completed_source_families"]
+    w(f"Population status: **{population['status']}**. Completed source-family "
+      f"prefix: {', '.join(completed) if completed else 'none — foundation only'}.")
+    w("")
+    w(f"Current rows: {len(src['powers'])} FS-POW cards; "
+      f"{len(src['power_contract_templates'])} FS-PCT templates; "
+      f"{len(src['power_refusals'])} FS-PRF refusals/limits; "
+      f"{len(src['power_crosswalk_dispositions'])} FS-PCD formal "
+      f"dispositions; {len(src['function_allocations'])} FS-FAL allocations.")
+    w("")
+    w(f"Evidence ceiling: {population['evidence_ceiling']}")
+    w("")
+    w("| Power | Manifest grain | Profiles | Holder bodies | Holder roles | "
+      "Claims | Book 2 owner |")
+    w("| --- | --- | --- | --- | --- | --- | --- |")
+    for rec in src["powers"]:
+        w(f"| {rec['id']} {rec['title']} | `{rec['manifest_key']}` | "
+          f"{', '.join(rec['profiles'])} | "
+          f"{', '.join(rec['holder_body_refs']) or 'role-held'} | "
+          f"{', '.join(rec['holder_role_refs'])} | "
+          f"{', '.join(rec['affected_claim_refs'])} | "
+          f"`{rec['book2_owner_ref']}` |")
+    if not src["powers"]:
+        w("| — | no completed source family | — | — | — | — | — |")
+    w("")
+    w("Contract templates:")
+    w("")
+    for rec in src["power_contract_templates"]:
+        w(f"- `{rec['id']}` / `{rec['manifest_key']}`: {rec['title']}. "
+          f"{rec['closure_condition']}")
+    if not src["power_contract_templates"]:
+        w("- None in the completed prefix.")
+    w("")
+    w("Refusals and formal transitions:")
+    w("")
+    for rec in src["power_refusals"]:
+        w(f"- `{rec['id']}` / `{rec['manifest_key']}`: {rec['refusal']} "
+          f"Non-authorisation: {rec['non_authorisation']}")
+    for rec in src["power_crosswalk_dispositions"]:
+        w(f"- `{rec['id']}` / `{rec['manifest_key']}`: "
+          f"`{rec['crosswalk_action']}` → "
+          f"{', '.join(rec['target_power_refs']) or 'no successor'}.")
+    if not src["power_refusals"] and not src["power_crosswalk_dispositions"]:
+        w("- None in the completed prefix.")
+    w("")
+    w("Function allocations (body functions; role references identify the "
+      "corresponding position classes, not proof of staffing or independence):")
+    w("")
+    for rec in src["function_allocations"]:
+        w(f"- `{rec['id']}` → `{rec['power_ref']}`; writer "
+          f"{', '.join(rec['decisive_fact_writer_body_refs'])}; decider "
+          f"{', '.join(rec['decider_body_refs'])}; executor "
+          f"{', '.join(rec['executor_body_refs'])}; auditor "
+          f"{', '.join(rec['auditor_body_refs'])}; final remedy "
+          f"{', '.join(rec['final_remedy_body_refs'])}.")
+    if not src["function_allocations"]:
+        w("- None in the completed prefix.")
     w("")
     w("## Functional flows and cross-domain dependencies")
     w("")
@@ -5288,21 +6053,27 @@ def render(src: dict, resolution: dict) -> str:
       "or cost field appears here; those belong to Book 2's own responsibility "
       "view when it activates, generated from this same canonical source.")
     w("")
-    w("| ID | Title | Routed as | Severity | Consequence | Closure condition |")
-    w("| --- | --- | --- | --- | --- | --- |")
+    w("| ID | Title | Routed as | Owner | Severity | Consequence | "
+      "Closure condition |")
+    w("| --- | --- | --- | --- | --- | --- | --- |")
     for rec in src["claims"]:
         if rec["layer"] == "book-2-operation" or \
                 rec.get("unestablished_disposition") == "routed-book-2":
             routed = rec["layer"]
             if rec.get("unestablished_disposition"):
                 routed += f" ({rec['unestablished_disposition']})"
-            w(f"| {rec['id']} | {rec['title']} | {routed} | {rec['severity']} | "
+            w(f"| {rec['id']} | {rec['title']} | {routed} | "
+              f"`{rec['owner_ref']}` | {rec['severity']} | "
               f"{rec['consequence']} | {rec['closure_condition']} |")
     for rec in src.get("defects", []):
         if rec.get("book2_crosswalk"):
             w(f"| {rec['id']} | {rec['title']} | {rec['defect_disposition']} | "
-              f"{severity_class(rec)} | {rec['consequence']} | "
-              f"{rec['closure_condition']} |")
+              f"`{rec['owner_ref']}` | {severity_class(rec)} | "
+              f"{rec['consequence']} | {rec['closure_condition']} |")
+    for rec in src["powers"]:
+        w(f"| {rec['id']} | {rec['title']} | power operation/evidence handoff | "
+          f"`{rec['book2_owner_ref']}` | {rec['severity']} | "
+          f"{rec['consequence']} | {rec['closure_condition']} |")
     w("")
     w("## Deferred populations and projections")
     w("")
@@ -5485,6 +6256,19 @@ def render_reader(src: dict, resolution: dict) -> str:
               f"{claim['public_claim_restriction']}")
         if not domain_claims:
             w("- None.")
+        w("")
+        domain_powers = [
+            row for row in src["powers"] if domain_id in row["domain_refs"]
+        ]
+        w("Source-derived power cards:")
+        w("")
+        for power in domain_powers:
+            w(f"- `{power['id']}` — {power['title']} "
+              f"(`{power['manifest_key']}`); holder bodies: "
+              f"{', '.join(power['holder_body_refs']) or 'role-held'}; "
+              f"Book 2 owner: `{power['book2_owner_ref']}`.")
+        if not domain_powers:
+            w("- None in the completed source-family prefix.")
         w("")
         w("Ordinary, failure, and recovery routing:")
         w("")

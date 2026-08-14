@@ -1,10 +1,10 @@
 {
   "spdx": "CC-BY-4.0",
-  "schema_version": 2,
+  "schema_version": 3,
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-13-power-source-inventory",
+  "source_version": "fs-ledger-2026-08-14-power-contract-foundation",
   "bound_sources_sha256": {
     "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
     "full_society_boundary": "00273fa9ac211d3b7bffce5f37625832652e9750e81dce301844ab8a9149a3fd"
@@ -305,6 +305,9 @@
     "FS-ENV": "envelope",
     "FS-ROL": "role",
     "FS-POW": "power",
+    "FS-PCT": "power_contract_template",
+    "FS-PRF": "power_refusal",
+    "FS-PCD": "power_crosswalk_disposition",
     "FS-DEP": "dependency",
     "FS-SCN": "scenario",
     "FS-THR": "threshold",
@@ -1924,7 +1927,232 @@
     { "id": "FS-BOD-20", "title": "Ombudsperson and rights advocate", "applicability": "anyone unable to act alone", "layer": "constitutional-invariant", "status": "ratified-unimplemented", "severity": "critical", "consequence": "the unrepresented lose their route", "owner_ref": "TODO.md::Write the Bodies specification", "closure_condition": "bodies specification lands", "job": "Act for a child, disabled person, prisoner, newcomer, or unregistered claimant.", "may_not_do_alone": "Become a substitute sovereign or condition help on representation.", "required_check": "Direct access to review and protected independence.", "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)" },
     { "id": "FS-BOD-21", "title": "Regional and local bodies", "applicability": "regional and local tiers", "layer": "constitutional-invariant", "status": "ratified-unimplemented", "severity": "critical", "consequence": "local choice without common guarantees", "owner_ref": "TODO.md::Write the Bodies specification", "closure_condition": "bodies specification lands", "job": "Exercise residual regional authority and protected local choice inside common guarantees.", "may_not_do_alone": "Create a lower caste of resident, reduce the common floor, or acquire a disputed competence by delay.", "required_check": "Portability, equalisation, intergovernmental reasons and mediation, Constitutional Court review.", "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)" },
     { "id": "FS-BOD-22", "title": "Future Conditions Guardian", "applicability": "the ecological option-space of whoever later exists", "layer": "constitutional-invariant", "status": "ratified-unimplemented", "severity": "critical", "consequence": "irreversible commitments with nobody able to object", "owner_ref": "TODO.md::Write the Bodies specification", "closure_condition": "bodies specification lands", "job": "Obtain evidence, demand assessment and reasons, participate, publish warnings, and seek review and remedy; an evidence-supported objection pauses only the irreversible authorisation pending expedited independent review.", "may_not_do_alone": "Hold a permanent veto, legislative or budget power, programme control, or scientific-oracle status; invent future preferences; restart an unchanged replay key.", "required_check": "Expedited independent review, the predeclared alternate advocate and independent substitute reviewer, a case-bound temporal contract and replay key, cause-only removal.", "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 9. Future Conditions Guardian" },
-    { "id": "FS-BOD-23", "title": "Animal Protection Advocate", "applicability": "sentient and credibly sentient animals as protected subjects", "layer": "constitutional-invariant", "status": "ratified-unimplemented", "severity": "critical", "consequence": "protected subjects without an initiator", "owner_ref": "TODO.md::Write the Bodies specification", "closure_condition": "bodies specification lands", "job": "Investigate, seek rescue and interim relief, and pursue individual and systemic remedies for protected animals; any person or qualified association may initiate.", "may_not_do_alone": "Hold a final veto, or remove any human's standing, floor, core liberty, due process, or political equality through an animal remedy.", "required_check": "Independent adjudication of conflicts, including with the Future Conditions Guardian; neither office has a final veto.", "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 17. Animal Protection Advocate" }
+    { "id": "FS-BOD-23", "title": "Animal Protection Advocate", "applicability": "sentient and credibly sentient animals as protected subjects", "layer": "constitutional-invariant", "status": "ratified-unimplemented", "severity": "critical", "consequence": "protected subjects without an initiator", "owner_ref": "TODO.md::Write the Bodies specification", "closure_condition": "bodies specification lands", "job": "Investigate, seek rescue and interim relief, and pursue individual and systemic remedies for protected animals; any person or qualified association may initiate.", "may_not_do_alone": "Hold a final veto, or remove any human's standing, floor, core liberty, due process, or political equality through an animal remedy.", "required_check": "Independent adjudication of conflicts, including with the Future Conditions Guardian; neither office has a final veto.", "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 17. Animal Protection Advocate" },
+    {
+      "id": "FS-BOD-24",
+      "title": "Appointments qualification function",
+      "applicability": "nominees, selectors, independent offices, courts, and oversight bodies",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "appointments qualification function absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Receive open nominations and qualification referrals; make reasoned, reviewable qualification determinations and act on them.",
+      "may_not_do_alone": "Audit unrelated functions, appoint every seat, let silence approve or reject, or make its own evidence conclusive.",
+      "required_check": "Open nominations, divided appointing sources, adverse-reason duties, continuity for inaction, independent review and remedy.",
+      "source_ref": "new-book-plans/book-1-state-form-and-political-membership-decision.md::appointments-qualification function. A record referral"
+    },
+    {
+      "id": "FS-BOD-25",
+      "title": "Alternate constitutional panel",
+      "applicability": "a challenge to Constitutional Court composition, appointment, or recusal",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "alternate constitutional panel absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Decide only the referred composition, appointment, or recusal challenge when the ordinary Court cannot.",
+      "may_not_do_alone": "Review an act in which any member participated, become a standing second Constitutional Court, or make ordinary policy.",
+      "required_check": "Predeclared uninvolved membership, public reasons, recusal, and the same constitutional limits as the ordinary Court.",
+      "source_ref": "new-book-plans/book-1-state-form-and-political-membership-decision.md::predeclared alternate constitutional panel"
+    },
+    {
+      "id": "FS-BOD-26",
+      "title": "Civic President alternate",
+      "applicability": "refusal, vacancy, failed selection, incapacity, or removal of the Civic President",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "civic president alternate absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Perform only the Civic President’s bounded formal duties during the source-defined continuity condition.",
+      "may_not_do_alone": "Acquire policy, veto, decree, emergency, dissolution, election-result, or government-formation discretion.",
+      "required_check": "Predeclaration, finite source-bound end, public reasons, cause-only removal, and ordinary institutional review.",
+      "source_ref": "new-book-plans/book-1-state-form-and-political-membership-decision.md::The office requires a predeclared alternate"
+    },
+    {
+      "id": "FS-BOD-27",
+      "title": "Independent physical-scarcity assessment function",
+      "applicability": "a named resource and population under a claimed genuine physical shortfall",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "independent physical-scarcity assessment function absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Write contestable evidence about the positive resource shortfall, alternatives, coordination, and population scope.",
+      "may_not_do_alone": "Allocate resources, redefine a minimum, treat budgets or monopoly as physical scarcity, or certify its own review.",
+      "required_check": "Separated authorised decision institution, independent review, reassessment, and every shortfall recorded as failure.",
+      "source_ref": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 10. Genuine physical scarcity"
+    },
+    {
+      "id": "FS-BOD-28",
+      "title": "Independent ecological and veterinary evidence function",
+      "applicability": "ecological ceilings, cumulative effects, sentience, welfare, and animal-use evidence",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "independent ecological and veterinary evidence function absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Supply independently reviewable scientific and veterinary evidence with uncertainty and source-version disclosure.",
+      "may_not_do_alone": "Legislate, regulate, adjudicate, operate a permit, decide policy, or become a scientific oracle.",
+      "required_check": "Separate legislative and adjudicative sources, challenge, correction, audit, and independent review.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The scientific body supplies evidence, not law"
+    },
+    {
+      "id": "FS-BOD-29",
+      "title": "Ecological and animal regulation function",
+      "applicability": "ordinary-law ecological standards and animal activity licences",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "ecological and animal regulation function absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Administer source-bound standards and make licence grant, condition, suspension, or withdrawal decisions.",
+      "may_not_do_alone": "Supply conclusive science, inspect its own compliance, prosecute, adjudicate final relief, or merge ecology and animal interests.",
+      "required_check": "Independent evidence, separate inspection, reasons, challenge, audit, and judicial remedy.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::public regulator"
+    },
+    {
+      "id": "FS-BOD-30",
+      "title": "Independent ecological and animal inspection function",
+      "applicability": "ecological authorisations, animal welfare, controlled uses, and licence compliance",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "independent ecological and animal inspection function absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Inspect, preserve and authenticate observations, and issue challengeable inspection records.",
+      "may_not_do_alone": "Regulate, prosecute, adjudicate, execute final remedy, or make an inspection record unchallengeable.",
+      "required_check": "Evidence-source independence, authorised writer, privacy boundary, correction, audit, and judicial review.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::independent inspection"
+    },
+    {
+      "id": "FS-BOD-31",
+      "title": "Future Conditions Guardian alternate advocate",
+      "applicability": "Guardian silence, vacancy, conflict, capture, removal, refusal, incapacity, or loss of quorum",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "future conditions guardian alternate advocate absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Act in the Guardian’s place for initiation and the bounded automatic-pause route on the same replay key.",
+      "may_not_do_alone": "Decide the merits, restart an unchanged stay, acquire a final veto, or expand the Guardian mandate.",
+      "required_check": "Predeclaration, common replay key, independent merits review, first-opportunity correction, and source-bound end.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::A predeclared alternate advocate preserves"
+    },
+    {
+      "id": "FS-BOD-32",
+      "title": "Future Conditions Guardian substitute reviewer",
+      "applicability": "the ordinary Guardian merits reviewer being unavailable, conflicted, or captured",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "future conditions guardian substitute reviewer absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Independently decide the stay and merits under the same limits and case-bound replay key.",
+      "may_not_do_alone": "Initiate the pause, speak for future persons, operate the authorization, or approve by silence.",
+      "required_check": "Predeclaration, independence from Guardian and alternate advocate, public reasons, challenge, and finite source-bound review.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::separately predeclared independent substitute reviewer"
+    },
+    {
+      "id": "FS-BOD-33",
+      "title": "Animal Protection Advocate alternate",
+      "applicability": "Advocate silence, conflict, capture, removal, refusal, or vacancy",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "animal protection advocate alternate absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Preserve the Advocate’s initiation, information, inspection-request, rescue-request, and remedy-seeking routes.",
+      "may_not_do_alone": "Regulate, prosecute, act as veterinarian, adjudicate, operate rescue, or gain a final veto.",
+      "required_check": "Predeclaration, the Advocate’s identical limits, independent adjudication, challenge, and source-bound end.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::activates a predeclared alternate"
+    },
+    {
+      "id": "FS-BOD-34",
+      "title": "Animal remedy execution administration",
+      "applicability": "a source-bound animal rescue, treatment, custody, rehabilitation, sanctuary, rehoming, or restoration order",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "animal remedy execution administration absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Execute only the exact animal-protection remedy ordered, preserving care continuity and records.",
+      "may_not_do_alone": "Decide liability or the protected ground, enlarge an order, regulate, inspect itself, or finally review itself.",
+      "required_check": "Separate decision, inspection, audit, challenge, correction, and final judicial remedy.",
+      "source_ref": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Animal remedies include cessation, rescue, veterinary treatment,"
+    },
+    {
+      "id": "FS-BOD-35",
+      "title": "Custodial execution administration",
+      "applicability": "one current, case-bound lawful Court order authorising custody",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "custodial execution administration absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Execute the exact confinement mandate and maintain shelter, care, voice, records, review access, and release on end.",
+      "may_not_do_alone": "Police, investigate, decide the ground, extend authority, punish an unconvicted person, or review itself.",
+      "required_check": "Court-held authority, independent audit, automatic review, counsel, correction, release, and remedy.",
+      "source_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::hold long-term custody"
+    },
+    {
+      "id": "FS-BOD-36",
+      "title": "Emergency alternate authorising route",
+      "applicability": "the ordinary cross-branch authorising body being unable to convene",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "emergency alternate authorising route absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Issue only the predeclared source-bound alternate authorisation under every ordinary emergency limit.",
+      "may_not_do_alone": "Create standing authority, approve by silence, avoid first-opportunity ratification, or become the substitute reviewer.",
+      "required_check": "Identical limits, immediate notification, first-opportunity ratification, judicial review, audit, remedy, and automatic end if unratified.",
+      "source_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::predeclared alternate authorising route"
+    },
+    {
+      "id": "FS-BOD-37",
+      "title": "Emergency independent substitute reviewer",
+      "applicability": "the ordinary emergency reviewer being unavailable, conflicted, or captured",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "emergency independent substitute reviewer absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Review the declaration or measure independently under every ordinary review limit.",
+      "may_not_do_alone": "Authorise the measure it reviews, approve by silence, extend a measure, or become an indefinite hold.",
+      "required_check": "Predeclaration, independence from authorisers and executors, public reasons, judicial route, correction, audit, and finite end.",
+      "source_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::independent substitute reviewer**, both named in advance"
+    },
+    {
+      "id": "FS-BOD-38",
+      "title": "Border, removal, and transfer execution administration",
+      "applicability": "a final individual border, expulsion, extradition, surrender, transfer, or return decision after suspensive appeal",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented narrow function",
+      "severity": "critical",
+      "consequence": "border, removal, and transfer execution administration absent or fused with an incompatible function",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning source-family power cards and allocations remain complete and source-bound",
+      "job": "Execute only the exact lawful decision while preserving the floor, family and child protections, records, and effective-control duties.",
+      "may_not_do_alone": "Determine the claim, detain a child for immigration purposes, conduct collective expulsion, defeat appeal, or breach non-refoulement.",
+      "required_check": "Separate determination and appeal, counsel and interpreter, execution record, audit, correction, return, and remedy.",
+      "source_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Surrender, extradition, transfer, or handover"
+    }
   ],
   "routes": [
     { "id": "FS-RTE-01", "title": "Formal entailment (Nibli, executed by verify.sh)", "applicability": "claims about the current source and supplied records", "layer": "spans-all-layers", "status": "current", "severity": "critical if weakened", "consequence": "the derivation gate is the book's spine", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "stays built; its controls stay watched failing", "route_status": "built", "warrants": "Executable engine results over the exact current source or a named bounded mutation", "cannot_warrant": "Anything about the world: arrival, operation, feasibility, or authentication", "falsification_condition": "A pin, counterfactual, or staged execution that must fail when its guarded property is broken", "negative_control": "Scoped-accept controls, counterfactual fixtures, and per-generator structural mutants are watched failing on every full run", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
@@ -3072,6 +3300,713 @@
         "affected_role_refs": ["FS-ROL-30", "FS-ROL-31"],
         "checking_refs": ["FS-BOD-18", "FS-ROL-30"]
       }
+    },
+    {
+      "id": "FS-ROL-43",
+      "title": "Appointment nominee",
+      "applicability": "the narrow source-bound function of appointment nominee",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "appointment nominee absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "civic-political",
+      "domain_refs": [
+        "FS-DOM-09",
+        "FS-DOM-08"
+      ],
+      "scales": [
+        "individual",
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-24",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-24",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-state-form-and-political-membership-decision.md::open nominations"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-state-form-and-political-membership-decision.md::open nominations"
+      ]
+    },
+    {
+      "id": "FS-ROL-44",
+      "title": "Appointment selector",
+      "applicability": "the narrow source-bound function of appointment selector",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "appointment selector absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "civic-political",
+      "domain_refs": [
+        "FS-DOM-09"
+      ],
+      "scales": [
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-24",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-24",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-state-form-and-political-membership-decision.md::divided appointing sources"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-state-form-and-political-membership-decision.md::divided appointing sources"
+      ]
+    },
+    {
+      "id": "FS-ROL-45",
+      "title": "Appointments qualification reviewer",
+      "applicability": "the narrow source-bound function of appointments qualification reviewer",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "appointments qualification reviewer absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "civic-political",
+      "domain_refs": [
+        "FS-DOM-09",
+        "FS-DOM-08"
+      ],
+      "scales": [
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-24",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-24",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-state-form-and-political-membership-decision.md::reasoned qualification review"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-state-form-and-political-membership-decision.md::reasoned qualification review"
+      ]
+    },
+    {
+      "id": "FS-ROL-46",
+      "title": "Alternate constitutional adjudicator",
+      "applicability": "the narrow source-bound function of alternate constitutional adjudicator",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "alternate constitutional adjudicator absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "justice-and-coercion",
+      "domain_refs": [
+        "FS-DOM-08",
+        "FS-DOM-09"
+      ],
+      "scales": [
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-25",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-25",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-state-form-and-political-membership-decision.md::predeclared alternate constitutional panel"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-state-form-and-political-membership-decision.md::predeclared alternate constitutional panel"
+      ]
+    },
+    {
+      "id": "FS-ROL-47",
+      "title": "Civic President alternate office-holder",
+      "applicability": "the narrow source-bound function of civic president alternate office-holder",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "civic president alternate office-holder absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "civic-political",
+      "domain_refs": [
+        "FS-DOM-09"
+      ],
+      "scales": [
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-26",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-26",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-state-form-and-political-membership-decision.md::predeclared alternate performs only"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-state-form-and-political-membership-decision.md::predeclared alternate performs only"
+      ]
+    },
+    {
+      "id": "FS-ROL-48",
+      "title": "Physical-scarcity evidence assessor",
+      "applicability": "the narrow source-bound function of physical-scarcity evidence assessor",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "physical-scarcity evidence assessor absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "economic",
+      "domain_refs": [
+        "FS-DOM-06",
+        "FS-DOM-02"
+      ],
+      "scales": [
+        "local",
+        "regional",
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-27",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-27",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 10. Genuine physical scarcity"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 10. Genuine physical scarcity"
+      ]
+    },
+    {
+      "id": "FS-ROL-49",
+      "title": "Ecological and veterinary scientist",
+      "applicability": "the narrow source-bound function of ecological and veterinary scientist",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "ecological and veterinary scientist absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "cross-cutting",
+      "domain_refs": [
+        "FS-DOM-11"
+      ],
+      "scales": [
+        "local",
+        "regional",
+        "national",
+        "intergenerational"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-28",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-28",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The scientific body supplies evidence, not law"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The scientific body supplies evidence, not law"
+      ]
+    },
+    {
+      "id": "FS-ROL-50",
+      "title": "Ecological and animal regulator",
+      "applicability": "the narrow source-bound function of ecological and animal regulator",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "ecological and animal regulator absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "cross-cutting",
+      "domain_refs": [
+        "FS-DOM-11"
+      ],
+      "scales": [
+        "local",
+        "regional",
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-29",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-29",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::public regulator"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::public regulator"
+      ]
+    },
+    {
+      "id": "FS-ROL-51",
+      "title": "Independent ecological and animal inspector",
+      "applicability": "the narrow source-bound function of independent ecological and animal inspector",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "independent ecological and animal inspector absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "cross-cutting",
+      "domain_refs": [
+        "FS-DOM-11"
+      ],
+      "scales": [
+        "local",
+        "regional",
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-30",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-30",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::independent inspection"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::independent inspection"
+      ]
+    },
+    {
+      "id": "FS-ROL-52",
+      "title": "Future Conditions Guardian alternate advocate",
+      "applicability": "the narrow source-bound function of future conditions guardian alternate advocate",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "future conditions guardian alternate advocate absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "cross-cutting",
+      "domain_refs": [
+        "FS-DOM-11"
+      ],
+      "scales": [
+        "national",
+        "intergenerational"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-31",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-31",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::A predeclared alternate advocate preserves"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::A predeclared alternate advocate preserves"
+      ]
+    },
+    {
+      "id": "FS-ROL-53",
+      "title": "Future Conditions Guardian substitute reviewer",
+      "applicability": "the narrow source-bound function of future conditions guardian substitute reviewer",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "future conditions guardian substitute reviewer absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "justice-and-coercion",
+      "domain_refs": [
+        "FS-DOM-11",
+        "FS-DOM-08"
+      ],
+      "scales": [
+        "national",
+        "intergenerational"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-32",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-32",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::separately predeclared independent substitute reviewer"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::separately predeclared independent substitute reviewer"
+      ]
+    },
+    {
+      "id": "FS-ROL-54",
+      "title": "Animal Protection Advocate alternate",
+      "applicability": "the narrow source-bound function of animal protection advocate alternate",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "animal protection advocate alternate absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "cross-cutting",
+      "domain_refs": [
+        "FS-DOM-11"
+      ],
+      "scales": [
+        "local",
+        "regional",
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-33",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-33",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::activates a predeclared alternate"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::activates a predeclared alternate"
+      ]
+    },
+    {
+      "id": "FS-ROL-55",
+      "title": "Animal remedy executor",
+      "applicability": "the narrow source-bound function of animal remedy executor",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "animal remedy executor absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "cross-cutting",
+      "domain_refs": [
+        "FS-DOM-11",
+        "FS-DOM-08"
+      ],
+      "scales": [
+        "local",
+        "regional"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-34",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-34",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Animal remedies include cessation, rescue, veterinary treatment,"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::Animal remedies include cessation, rescue, veterinary treatment,"
+      ]
+    },
+    {
+      "id": "FS-ROL-56",
+      "title": "Custodial execution officer",
+      "applicability": "the narrow source-bound function of custodial execution officer",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "custodial execution officer absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "justice-and-coercion",
+      "domain_refs": [
+        "FS-DOM-08",
+        "FS-DOM-07"
+      ],
+      "scales": [
+        "local",
+        "regional"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-35",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-35",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::hold long-term custody"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::hold long-term custody"
+      ]
+    },
+    {
+      "id": "FS-ROL-57",
+      "title": "Emergency alternate authoriser",
+      "applicability": "the narrow source-bound function of emergency alternate authoriser",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "emergency alternate authoriser absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "civic-political",
+      "domain_refs": [
+        "FS-DOM-07",
+        "FS-DOM-09"
+      ],
+      "scales": [
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-36",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-36",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::predeclared alternate authorising route"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::predeclared alternate authorising route"
+      ]
+    },
+    {
+      "id": "FS-ROL-58",
+      "title": "Emergency substitute reviewer",
+      "applicability": "the narrow source-bound function of emergency substitute reviewer",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "emergency substitute reviewer absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "justice-and-coercion",
+      "domain_refs": [
+        "FS-DOM-07",
+        "FS-DOM-08"
+      ],
+      "scales": [
+        "national"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-37",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-37",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::independent substitute reviewer**, both named in advance"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::independent substitute reviewer**, both named in advance"
+      ]
+    },
+    {
+      "id": "FS-ROL-59",
+      "title": "Border, removal, and transfer execution officer",
+      "applicability": "the narrow source-bound function of border, removal, and transfer execution officer",
+      "layer": "constitutional-invariant",
+      "status": "reviewed-routing; ratified function unimplemented",
+      "severity": "critical",
+      "consequence": "border, removal, and transfer execution officer absent, fused, or allowed to exceed the source mandate",
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the owning power cards and source-bound allocations remain complete",
+      "role_kind": "membership-and-mobility",
+      "domain_refs": [
+        "FS-DOM-10",
+        "FS-DOM-08"
+      ],
+      "scales": [
+        "national",
+        "cross-jurisdictional"
+      ],
+      "power_positions": [
+        {
+          "body_ref": "FS-BOD-38",
+          "position": "affected",
+          "note": "the function holder remains subject to appointment, conflict, removal, correction, and remedy rules"
+        },
+        {
+          "body_ref": "FS-BOD-38",
+          "position": "checking",
+          "note": "the role performs only the source-bounded checking or execution function named here"
+        }
+      ],
+      "formal_anchor": {
+        "anchor": "ratified-doctrine-unimplemented",
+        "refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Surrender, extradition, transfer, or handover"
+        ]
+      },
+      "floor_invariance": "holding this function adds no standing, floor, ballot weight, policy power, or authority beyond the exact source mandate",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Surrender, extradition, transfer, or handover"
+      ]
     }
   ],
   "role_omissions": [
@@ -3118,7 +4053,116 @@
     "closure_condition": "complete per-instrument FS-POW contract cards, lawful body and role allocations, and power-bound decider, executor, auditor, and final-remedy separation rows for every card-required and retained formal entry",
     "scope_ceiling": "Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage. The cross-power temporal template creates no holder, power, or function allocation."
   },
+  "power_population": {
+    "status": "foundation",
+    "completed_source_families": [],
+    "expected_final_counts": {
+      "powers": 210,
+      "templates": 1,
+      "refusals": 19,
+      "crosswalks": 8,
+      "function_allocations": 210
+    },
+    "resolved_allocation_gaps": [
+      {
+        "gap": "appointments-qualification function and its nominee, selector, and qualification positions",
+        "body_refs": [
+          "FS-BOD-24"
+        ],
+        "role_refs": [
+          "FS-ROL-43",
+          "FS-ROL-44",
+          "FS-ROL-45"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-state-form-and-political-membership-decision.md::appointments-qualification function. A record referral"
+        ]
+      },
+      {
+        "gap": "custodial execution function distinct from policing",
+        "body_refs": [
+          "FS-BOD-35"
+        ],
+        "role_refs": [
+          "FS-ROL-56"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::hold long-term custody"
+        ]
+      },
+      {
+        "gap": "independent ecological science and assessment function",
+        "body_refs": [
+          "FS-BOD-28"
+        ],
+        "role_refs": [
+          "FS-ROL-49"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The scientific body supplies evidence, not law"
+        ]
+      },
+      {
+        "gap": "ecological and animal regulation and inspection functions",
+        "body_refs": [
+          "FS-BOD-29",
+          "FS-BOD-30"
+        ],
+        "role_refs": [
+          "FS-ROL-50",
+          "FS-ROL-51"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::independent inspection"
+        ]
+      },
+      {
+        "gap": "emergency alternate authoriser and independent substitute reviewer",
+        "body_refs": [
+          "FS-BOD-36",
+          "FS-BOD-37"
+        ],
+        "role_refs": [
+          "FS-ROL-57",
+          "FS-ROL-58"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::predeclared alternate authorising route"
+        ]
+      },
+      {
+        "gap": "Guardian alternate advocate and substitute reviewer",
+        "body_refs": [
+          "FS-BOD-31",
+          "FS-BOD-32"
+        ],
+        "role_refs": [
+          "FS-ROL-52",
+          "FS-ROL-53"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::A predeclared alternate advocate preserves"
+        ]
+      },
+      {
+        "gap": "border and removal execution function",
+        "body_refs": [
+          "FS-BOD-38"
+        ],
+        "role_refs": [
+          "FS-ROL-59"
+        ],
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::Surrender, extradition, transfer, or handover"
+        ]
+      }
+    ],
+    "evidence_ceiling": "Structural source-bound contract and allocation inventory only; no operation, delivery, feasibility, liveness, external truth, calibration, or Gate A passage follows."
+  },
   "powers": [],
+  "power_contract_templates": [],
+  "power_refusals": [],
+  "power_crosswalk_dispositions": [],
   "dependencies": [
     {
       "id": "FS-DEP-01",

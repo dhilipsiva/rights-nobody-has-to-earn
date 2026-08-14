@@ -5,9 +5,9 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-13-power-source-inventory`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-14-power-contract-foundation`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Canonical source SHA-256: `da0ae283ed13f4a1aea2c66770dcca2fc0f190844912f25784ec6d24cd354834`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `937eaee0b129974ad895830bb65b7d770142b37a48c30a0c1d3373468cfc9c16`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -21,13 +21,16 @@ Canonical source SHA-256: `da0ae283ed13f4a1aea2c66770dcca2fc0f190844912f25784ec6
 | `domains` | 12 | `7085f34c48936717f595fd50e85d31ba3ee0ca1616c0eba22b01c992d2da7b14` | FS-DOM-01, FS-DOM-02, FS-DOM-03, FS-DOM-04, FS-DOM-05, FS-DOM-06, FS-DOM-07, FS-DOM-08, FS-DOM-09, FS-DOM-10, FS-DOM-11, FS-DOM-12 |
 | `legacy_rows` | 18 | `41852ef694906b315899a6b7b861a942b4a1e3ead3f266075a87b252eb06ee67` | FS-LGR-01, FS-LGR-02, FS-LGR-03, FS-LGR-04, FS-LGR-05, FS-LGR-06, FS-LGR-07, FS-LGR-08, FS-LGR-09, FS-LGR-10, FS-LGR-11, FS-LGR-12, FS-LGR-13, FS-LGR-14, FS-LGR-15, FS-LGR-16, FS-LGR-17, FS-LGR-18 |
 | `claims` | 37 | `44912816c20a97d0cb95a7acf87004eb7961bfcb826f7dc35e53b20596aa8dce` | FS-CLM-01, FS-CLM-02, FS-CLM-03, FS-CLM-04, FS-CLM-05, FS-CLM-06, FS-CLM-07, FS-CLM-08, FS-CLM-09, FS-CLM-10, FS-CLM-11, FS-CLM-12, FS-CLM-13, FS-CLM-14, FS-CLM-15, FS-CLM-16, FS-CLM-17, FS-CLM-18, FS-CLM-19, FS-CLM-20, FS-CLM-21, FS-CLM-22, FS-CLM-23, FS-CLM-24, FS-CLM-25, FS-CLM-26, FS-CLM-27, FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32, FS-CLM-33, FS-CLM-34, FS-CLM-35, FS-CLM-36, FS-CLM-37 |
-| `bodies` | 23 | `9208686ca1d61e41057c0c878d769ccc7f87c03cee91a06d512478e416bccc40` | FS-BOD-01, FS-BOD-02, FS-BOD-03, FS-BOD-04, FS-BOD-05, FS-BOD-06, FS-BOD-07, FS-BOD-08, FS-BOD-09, FS-BOD-10, FS-BOD-11, FS-BOD-12, FS-BOD-13, FS-BOD-14, FS-BOD-15, FS-BOD-16, FS-BOD-17, FS-BOD-18, FS-BOD-19, FS-BOD-20, FS-BOD-21, FS-BOD-22, FS-BOD-23 |
+| `bodies` | 38 | `1d3e56f9d5c7ad4b66c0d735a444d45563412c1be30c31e6823fd990cb11522c` | FS-BOD-01, FS-BOD-02, FS-BOD-03, FS-BOD-04, FS-BOD-05, FS-BOD-06, FS-BOD-07, FS-BOD-08, FS-BOD-09, FS-BOD-10, FS-BOD-11, FS-BOD-12, FS-BOD-13, FS-BOD-14, FS-BOD-15, FS-BOD-16, FS-BOD-17, FS-BOD-18, FS-BOD-19, FS-BOD-20, FS-BOD-21, FS-BOD-22, FS-BOD-23, FS-BOD-24, FS-BOD-25, FS-BOD-26, FS-BOD-27, FS-BOD-28, FS-BOD-29, FS-BOD-30, FS-BOD-31, FS-BOD-32, FS-BOD-33, FS-BOD-34, FS-BOD-35, FS-BOD-36, FS-BOD-37, FS-BOD-38 |
 | `routes` | 7 | `08b74d6d842cccb0a5228ac4e2663bef1100fc39f678f2f5c47a9e885d42a01d` | FS-RTE-01, FS-RTE-02, FS-RTE-03, FS-RTE-04, FS-RTE-05, FS-RTE-06, FS-RTE-07 |
 | `external_assumptions` | 4 | `2da952aa59cb53799e3bce1c52a36a245c431f627f78b112f09e765e3c371545` | FS-EXA-01, FS-EXA-02, FS-EXA-03, FS-EXA-04 |
 | `envelope` | 2 | `64370bc341b6ef558608f8a1606f9ba579f1d2c8926d241864ba86e5923bb0cd` | FS-ENV-00, FS-ENV-01 |
-| `roles` | 42 | `62934ab4f118ebc248382bfd8fd27161c762779d6f2f905aec2573637697f027` | FS-ROL-01, FS-ROL-02, FS-ROL-03, FS-ROL-04, FS-ROL-05, FS-ROL-06, FS-ROL-07, FS-ROL-08, FS-ROL-09, FS-ROL-10, FS-ROL-11, FS-ROL-12, FS-ROL-13, FS-ROL-14, FS-ROL-15, FS-ROL-16, FS-ROL-17, FS-ROL-18, FS-ROL-19, FS-ROL-20, FS-ROL-21, FS-ROL-22, FS-ROL-23, FS-ROL-24, FS-ROL-25, FS-ROL-26, FS-ROL-27, FS-ROL-28, FS-ROL-29, FS-ROL-30, FS-ROL-31, FS-ROL-32, FS-ROL-33, FS-ROL-34, FS-ROL-35, FS-ROL-36, FS-ROL-37, FS-ROL-38, FS-ROL-39, FS-ROL-40, FS-ROL-41, FS-ROL-42 |
+| `roles` | 59 | `f89b2e0e109db3cbabe46ad7a4ca377c2ac18adb22986a3609e70eb85accc614` | FS-ROL-01, FS-ROL-02, FS-ROL-03, FS-ROL-04, FS-ROL-05, FS-ROL-06, FS-ROL-07, FS-ROL-08, FS-ROL-09, FS-ROL-10, FS-ROL-11, FS-ROL-12, FS-ROL-13, FS-ROL-14, FS-ROL-15, FS-ROL-16, FS-ROL-17, FS-ROL-18, FS-ROL-19, FS-ROL-20, FS-ROL-21, FS-ROL-22, FS-ROL-23, FS-ROL-24, FS-ROL-25, FS-ROL-26, FS-ROL-27, FS-ROL-28, FS-ROL-29, FS-ROL-30, FS-ROL-31, FS-ROL-32, FS-ROL-33, FS-ROL-34, FS-ROL-35, FS-ROL-36, FS-ROL-37, FS-ROL-38, FS-ROL-39, FS-ROL-40, FS-ROL-41, FS-ROL-42, FS-ROL-43, FS-ROL-44, FS-ROL-45, FS-ROL-46, FS-ROL-47, FS-ROL-48, FS-ROL-49, FS-ROL-50, FS-ROL-51, FS-ROL-52, FS-ROL-53, FS-ROL-54, FS-ROL-55, FS-ROL-56, FS-ROL-57, FS-ROL-58, FS-ROL-59 |
 | `role_omissions` | 16 | `51d0ef84e9987be32a5c09944e7e82f2dff4de02d57de94568942b2757868ded` | unkeyed rows; digest is authoritative |
 | `powers` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
+| `power_contract_templates` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
+| `power_refusals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
+| `power_crosswalk_dispositions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `dependencies` | 61 | `443108e4a41114e3495aafed934fdd2706dd53c92d83dc0c19e9e62bc5405e2a` | FS-DEP-01, FS-DEP-02, FS-DEP-03, FS-DEP-04, FS-DEP-05, FS-DEP-06, FS-DEP-07, FS-DEP-08, FS-DEP-09, FS-DEP-10, FS-DEP-11, FS-DEP-12, FS-DEP-13, FS-DEP-14, FS-DEP-15, FS-DEP-17, FS-DEP-18, FS-DEP-19, FS-DEP-20, FS-DEP-21, FS-DEP-22, FS-DEP-23, FS-DEP-24, FS-DEP-25, FS-DEP-26, FS-DEP-27, FS-DEP-28, FS-DEP-29, FS-DEP-30, FS-DEP-31, FS-DEP-32, FS-DEP-33, FS-DEP-34, FS-DEP-35, FS-DEP-36, FS-DEP-37, FS-DEP-38, FS-DEP-39, FS-DEP-40, FS-DEP-41, FS-DEP-42, FS-DEP-43, FS-DEP-44, FS-DEP-45, FS-DEP-46, FS-DEP-47, FS-DEP-48, FS-DEP-49, FS-DEP-50, FS-DEP-51, FS-DEP-52, FS-DEP-53, FS-DEP-54, FS-DEP-55, FS-DEP-56, FS-DEP-57, FS-DEP-58, FS-DEP-59, FS-DEP-60, FS-DEP-61, FS-DEP-62 |
 | `dependency_loops` | 8 | `3fa6da149e63c25a73c6890ca9c4da647c56d310c9b16a982354cb46729774cf` | FS-LOP-01, FS-LOP-02, FS-LOP-03, FS-LOP-04, FS-LOP-05, FS-LOP-06, FS-LOP-07, FS-LOP-08 |
 | `refused_flows` | 18 | `a4078c62e0db071e0fc58d819defe3f54c4b04544df091629af179265deaadf2` | unkeyed rows; digest is authoritative |
@@ -77,6 +80,10 @@ Claims:
 - **FS-CLM-08 — General liberty and power-limit interface**: Bodily integrity, privacy, conscience, association, movement, and equal treatment as direct limits on public power with public duties against private interference. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified liberty contracts as stated Public limit: no claim that a general liberty rule currently binds power
 - **FS-CLM-10 — The one numeric adulthood age**: Common-tier law sets one uniform legal-adulthood age; the constitution supplies the interface and no number. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the interface only; the value is democratic law's Public limit: no age number may be asserted anywhere in Book 1
 
+Source-derived power cards:
+
+- None in the completed source-family prefix.
+
 Ordinary, failure, and recovery routing:
 
 - **FS-SCN-01 — An unregistered person needs urgent help** (`journey`): ordinary — Help is owed on presence, not on a record entry; service runs first and the record is reconciled afterward by the provision institutions.; failure — A demand for documents before help is the failure; interim continuity is unconditional service while registration is reconciled, with no enforcement enrolment.; recovery — The remedy is record correction plus a challenge route against the refusing office; audit reads the refusal as a recorded failure, not a gap.
@@ -113,6 +120,10 @@ Claims:
 
 - **FS-CLM-04 — Eight floor entitlements derive unconditionally**: The floor entitlements derive for every person from personhood alone, and the compile-time firewall refuses a rule punishing someone for lacking a floor right. Posture: `Derived`; route: `FS-RTE-01`; overlay: `safety`; blocking defect rows: none. Scope: supplied records under the current source; the firewall reaches the confinement conclusion only Public limit: no claim that any floor item arrives; entitlement is not delivery
 - **FS-CLM-09 — Family, dependency, and reproduction baseline**: Independent child standing, supported agency, modular plural families, reproductive bodily authority, end-of-life agency, and bounded succession as ratified. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified baseline as stated; legacy predicates pending disposition cards Public limit: no claim that a family, consent, or capacity interface currently operates
+
+Source-derived power cards:
+
+- None in the completed source-family prefix.
 
 Ordinary, failure, and recovery routing:
 
@@ -152,6 +163,10 @@ Claims:
 - **FS-CLM-04 — Eight floor entitlements derive unconditionally**: The floor entitlements derive for every person from personhood alone, and the compile-time firewall refuses a rule punishing someone for lacking a floor right. Posture: `Derived`; route: `FS-RTE-01`; overlay: `safety`; blocking defect rows: none. Scope: supplied records under the current source; the firewall reaches the confinement conclusion only Public limit: no claim that any floor item arrives; entitlement is not delivery
 - **FS-CLM-37 — An ordinary reader comes away with a reliably balanced view**: A non-specialist reader of the finished book can identify ordinary constructive life, democratic choice, private freedom, successful provision, repair, and the prisoner as a stress test rather than the central inhabitant. Posture: `Unestablished / route-unbuilt`; route: `FS-RTE-06`; overlay: `none`; blocking defect rows: none. Scope: the tested audience within the disclosed sampling and method limits, per the ratified reader-evidence protocol; the route is neither built nor available Public limit: No public reader-balance claim; the current program accepts a preview-only ceiling, and the restriction could close only after a later revival makes R6 available and script 14 admits a matching valid fresh completed holdout pass
 
+Source-derived power cards:
+
+- None in the completed source-family prefix.
+
 Ordinary, failure, and recovery routing:
 
 - **FS-SCN-05 — A person learns and teaches and is never graded** (`journey`): ordinary — The demonstrated route to a floor actuality is teaching that is heard — currently dormant, and expressly not a generic delivery template; the entitlement stays unconditional and no mark, rank, or grade attaches to the learner.; failure — Non-arrival is the duty-bearer's failure, never evidence about the learner; continuity keeps access open without a qualifying test.; recovery — The remedy is a working route to learning, not a compensatory score; the future delivery family must use accessibility-neutral, recipient-side access evidence, and audit reads absence of arrival as the system's failure.
@@ -183,6 +198,10 @@ Claims:
 - **FS-CLM-04 — Eight floor entitlements derive unconditionally**: The floor entitlements derive for every person from personhood alone, and the compile-time firewall refuses a rule punishing someone for lacking a floor right. Posture: `Derived`; route: `FS-RTE-01`; overlay: `safety`; blocking defect rows: none. Scope: supplied records under the current source; the firewall reaches the confinement conclusion only Public limit: no claim that any floor item arrives; entitlement is not delivery
 - **FS-CLM-05 — Floor delivery and receipt interfaces**: Accessibility-neutral, recipient-side access and receipt evidence with a named authorised writer and challenge route, for every floor item. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: FS-DFT-16. Scope: the ratified interface shape; five floor items have no producing rule Public limit: no public claim may describe the book as showing ordinary social life until the delivery families land
 - **FS-CLM-06 — Actual arrival of a floor item to a free person**: That any floor item actually reaches a free person — an arrival, advance, delivery, or repair event in the world. Posture: `Unestablished / route-unbuilt`; route: `FS-RTE-05`; overlay: `liveness`; blocking defect rows: FS-DFT-17. Scope: liveness is never Derived, Checked, or Reasoned; only operational assurance could evidence it Public limit: No public arrival claim; the disposition is restricted until operational assurance is available
+
+Source-derived power cards:
+
+- None in the completed source-family prefix.
 
 Ordinary, failure, and recovery routing:
 
@@ -233,6 +252,10 @@ Claims:
 - **FS-CLM-24 — Economic operations and feasibility**: Rates, budgets, models, prices, production, inventories, monetary instruments, capacity, and empirical feasibility. Posture: `Unestablished / routed-book-2`; route: `FS-RTE-02`; overlay: `none`; blocking defect rows: none. Scope: routing only; a feasibility sentence with no route is a defect, not a gap Public limit: no feasibility claim may be written in Book 1 at all
 - **FS-CLM-36 — Recognition mints only through the guarded doors**: Recognition derives only through the teaching, work, and examination doors, each guarded against voiding and deceit, and loss derives only against the adjudicated wrongdoer. Posture: `Derived`; route: `FS-RTE-01`; overlay: `safety`; blocking defect rows: none. Scope: supplied records under the current source; the three doors and the surviving wrongdoer rule Public limit: no claim that recognition means anything operative — it stays unread by decision
 
+Source-derived power cards:
+
+- None in the completed source-family prefix.
+
 Ordinary, failure, and recovery routing:
 
 - **FS-SCN-06 — A person refuses work or lacks contribution history** (`journey`): ordinary — Choosing, refusing, leaving, or changing work carries no floor consequence; contribution history is not an allocation key.; failure — Any office conditioning a floor item on work or history is the failure; continuity is the unconditional floor while the condition is struck.; recovery — Challenge voids the condition and the imposing office answers to audit; no repayment or penalty attaches to the person.
@@ -281,6 +304,10 @@ Claims:
 - **FS-CLM-16 — External election result pipeline**: Election administration authenticates and classifies; independent assurance attests completeness; the result service computes and certifies; authorised institutions execute. Posture: `Unestablished / external-assumption`; route: `FS-RTE-05`; overlay: `none`; blocking defect rows: none. Scope: the engine can compose supplied result certificates and cannot authenticate completeness or perform an institutional act Public limit: no claim that elections are formally verified end to end
 - **FS-CLM-17 — Narrow institutional fixtures are formal**: Named judicial and review actors, audit roles, and the Court custody gate with independently witnessed case and lease evidence derive under the current source. Posture: `Derived`; route: `FS-RTE-01`; overlay: `safety`; blocking defect rows: none. Scope: supplied records; the named bodies do not prove real independence Public limit: current names are narrow fixtures, not the ratified institutions
 - **FS-CLM-18 — Complete institutional contracts**: Authority, appointment-control, conflict, term, succession, review, coalition-concentration, and remedy contracts for every ratified body. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified anti-capture and separation rules as stated Public limit: a design against capture, not a claim that capture becomes impossible
+
+Source-derived power cards:
+
+- None in the completed source-family prefix.
 
 Ordinary, failure, and recovery routing:
 
@@ -331,6 +358,10 @@ Claims:
 - **FS-CLM-13 — A later record or review arrives**: That an outside service produces the successor record, review, or release act a held person's case needs. Posture: `Unestablished / external-assumption`; route: `FS-RTE-05`; overlay: `liveness`; blocking defect rows: none. Scope: the constitution cannot make a successor arrive or prove an outside clock advances Public limit: no claim that the design releases anyone; release stays an act, not an expiry
 - **FS-CLM-29 — Protective-function contracts**: Separated policing, prosecution, adjudication, custody, defence, and intelligence mandates; arrest, detention, search, and seizure instruments with automatic judicial review; the force test and categorical refusals. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified contracts as stated; every new coercive instrument sits outside the floor firewall until deliberately placed Public limit: no claim that protective functions currently operate under these limits
 
+Source-derived power cards:
+
+- None in the completed source-family prefix.
+
 Ordinary, failure, and recovery routing:
 
 - **FS-SCN-11 — A person is accused or detained** (`journey`): ordinary — Standing and every floor item survive accusation; counsel, interpreter, and automatic independent review of detention attach without request.; failure — Absence of relief or review holds the person, and that cost is recorded as the design's own; secret process is refused.; recovery — Appeal, forgiveness, and correction routes stand — the relief pair is case-unbound by ruling, and case-bound relief is the justice interface's closure condition; release is an act, never an expiry, and its absence is a recorded failure.
@@ -377,6 +408,10 @@ Claims:
 - **FS-CLM-20 — Live-record system assurance**: Authorship, truth, genesis completeness, persistence, append-only history, recovery, and eventual advancement of the real record system. Posture: `Unestablished / route-unbuilt`; route: `FS-RTE-05`; overlay: `none`; blocking defect rows: FS-DFT-28. Scope: the repository verifies bounded consequences of supplied records, nothing further Public limit: No public claim that the record system operates; the restriction stands until operational assurance is available
 - **FS-CLM-21 — Ratified record rule families**: Visibility, privacy, contestation, correction, retention, external assurance, independent receipt, continuity, and systemic-correction interfaces for the record. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified record contracts as stated Public limit: no claim that contestation or correction currently operates
 - **FS-CLM-31 — Intelligence limits and the assessment firewall**: No bulk collection; prior individualised judicial authorisation; the temporary-assessment exclusion extended to every risk, threat, and watchlist product; separately appointed oversight. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified limits as stated; the exclusion's standing exhibit is the refused dangerous assertion Public limit: no claim that oversight currently operates
+
+Source-derived power cards:
+
+- None in the completed source-family prefix.
 
 Ordinary, failure, and recovery routing:
 
@@ -431,6 +466,10 @@ Claims:
 - **FS-CLM-27 — Collective and plurality rights baseline**: Indigenous self-government, collective title and consent boundaries, minority protections, membership rules, and customary law bounded by universal rights. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified baseline as stated; effects split across existing classes, no omnibus collective predicate Public limit: no claim that a collective status or title interface currently operates
 - **FS-CLM-32 — Borders, asylum, and transfer limits**: Jurisdiction-wide standing as a duty; absolute non-refoulement; the enforcement firewall covering enrolment; individual reasoned decisions with suspensive appeal; the extradition bar. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: written as a duty and a limit on power, not a record claim — a person never entered is not recorded as missing Public limit: no claim that reception or determination currently operates
 
+Source-derived power cards:
+
+- None in the completed source-family prefix.
+
 Ordinary, failure, and recovery routing:
 
 - **FS-SCN-01 — An unregistered person needs urgent help** (`journey`): ordinary — Help is owed on presence, not on a record entry; service runs first and the record is reconciled afterward by the provision institutions.; failure — A demand for documents before help is the failure; interim continuity is unconditional service while registration is reconciled, with no enforcement enrolment.; recovery — The remedy is record correction plus a challenge route against the refusing office; audit reads the refusal as a recorded failure, not a gap.
@@ -468,6 +507,10 @@ Claims:
 
 - **FS-CLM-28 — No-derogation emergency overlay**: A declaration confers exactly four bounded things and suspends nothing; every declaration and renewal needs its own source-bound temporal contract with custody polarity. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified overlay as stated; no declaration relation exists today Public limit: no claim that emergency powers are currently bounded in law
 - **FS-CLM-30 — External-only defence structure**: A permitted standing force with an external-only mandate, Assembly ceiling, civilian command, and no jurisdiction over civilians. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified structure as stated Public limit: no claim of operational defence capability
+
+Source-derived power cards:
+
+- None in the completed source-family prefix.
 
 Ordinary, failure, and recovery routing:
 
@@ -507,6 +550,10 @@ Claims:
 - **FS-CLM-33 — Ecological rights, ceilings, and the Guardian**: The distinct environmental right, non-substitutable protected axes, science-constrained democratic ceilings, the remedy order, and the Guardian's bounded pause. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified baseline as stated; no ceiling, finding, or guardian act exists Public limit: no claim that ecological protection currently operates
 - **FS-CLM-34 — Non-human-animal protected-subject status**: Class 10 direct protection: the welfare baseline, categorical refusals, alternative-sensitive food rule, research limits, and the Animal Protection Advocate. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified baseline as stated; no animal relation exists Public limit: no claim that animal protection currently operates
 
+Source-derived power cards:
+
+- None in the completed source-family prefix.
+
 Ordinary, failure, and recovery routing:
 
 - **FS-SCN-13 — A human controls, uses, confines, transports, or kills an animal** (`journey`): ordinary — Every controlled use carries the welfare baseline; lethal or high-severity use additionally needs a serious purpose, necessity, independent review, and a fresh temporal contract.; failure — Custody or ownership cannot waive the baseline or veto rescue; the categorical refusals are refused, not balanced.; recovery — The Animal Protection Advocate and any person may initiate; conflicts go to independent adjudication, and neither office holds a final veto.
@@ -540,6 +587,10 @@ Claims:
 
 - **FS-CLM-27 — Collective and plurality rights baseline**: Indigenous self-government, collective title and consent boundaries, minority protections, membership rules, and customary law bounded by universal rights. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: the ratified baseline as stated; effects split across existing classes, no omnibus collective predicate Public limit: no claim that a collective status or title interface currently operates
 - **FS-CLM-35 — The voluntary sphere stays unprescribed**: Friendship, leisure, mutual aid, belief, culture, worship, intimacy, and association are protected from prescription, outcome certification, and social scoring; the residual free field may not hide coercion. Posture: `Specified`; route: `FS-RTE-01`; overlay: `none`; blocking defect rows: none. Scope: an explicit non-prescription disposition is the coverage; it authorises no rule, record, operator, or success certification Public limit: no claim that the state certifies a successful private life — that claim is refused, not pending
+
+Source-derived power cards:
+
+- None in the completed source-family prefix.
 
 Ordinary, failure, and recovery routing:
 
