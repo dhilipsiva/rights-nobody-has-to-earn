@@ -18,7 +18,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "new-book-plans/full-society-power-source-manifest.json"
 EXPECTED_MANIFEST_SHA256 = (
-    "b194b2098252b8ea49f0db0ff05c0ea4e8dc3b3fdb26f87efb2890dde4fbc93b"
+    "4525badc3fbc4fdd8ab0a7bbf792e42409b740ea3ff90da036bd32531f358adf"
 )
 EXPECTED_SOURCE_COMMIT = "36ed92c58877cffa5a11928ad200f0ca9a604820"
 STATUS = (
@@ -27,6 +27,7 @@ STATUS = (
 )
 ALLOWED_DISPOSITIONS = [
     "card-required",
+    "power-contract-template",
     "existing-formal-crosswalk",
     "explicit-refusal-limit",
 ]
@@ -65,7 +66,8 @@ EXPECTED_SOURCE_SHA256 = {
         "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
 }
 EXPECTED_BY_DISPOSITION = {
-    "card-required": 210,
+    "card-required": 209,
+    "power-contract-template": 1,
     "existing-formal-crosswalk": 8,
     "explicit-refusal-limit": 19,
 }
@@ -81,36 +83,36 @@ EXPECTED_BY_FAMILY = {
 }
 EXPECTED_BY_FAMILY_AND_DISPOSITION = {
     "current-formal-constitution": {
-        "card-required": 0, "existing-formal-crosswalk": 8,
-        "explicit-refusal-limit": 0,
+        "card-required": 0, "power-contract-template": 0,
+        "existing-formal-crosswalk": 8, "explicit-refusal-limit": 0,
     },
     "ecological-commons-and-non-human-animal": {
-        "card-required": 40, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 3,
+        "card-required": 40, "power-contract-template": 0,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 3,
     },
     "economic-pluralism-and-protected-private-sphere": {
-        "card-required": 28, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 1,
+        "card-required": 28, "power-contract-template": 0,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 1,
     },
     "family-dependency-reproduction-and-collective-plurality": {
-        "card-required": 31, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 0,
+        "card-required": 31, "power-contract-template": 0,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 0,
     },
     "public-safety-defence-emergency-and-external-power": {
-        "card-required": 50, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 14,
+        "card-required": 50, "power-contract-template": 0,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 14,
     },
     "state-form-and-political-membership": {
-        "card-required": 51, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 0,
+        "card-required": 51, "power-contract-template": 0,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 0,
     },
     "substantive-equality-and-anti-subordination": {
-        "card-required": 9, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 0,
+        "card-required": 9, "power-contract-template": 0,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 0,
     },
     "time-model": {
-        "card-required": 1, "existing-formal-crosswalk": 0,
-        "explicit-refusal-limit": 1,
+        "card-required": 0, "power-contract-template": 1,
+        "existing-formal-crosswalk": 0, "explicit-refusal-limit": 1,
     },
 }
 TOP_KEYS = {
@@ -188,7 +190,8 @@ def validate(source: dict, *, check_git: bool = True) -> None:
     require_text(source["grain_rule_anchor"], "grain_rule_anchor")
     require_text(source["scope_note"], "scope_note")
     if any(term not in source["scope_note"] for term in (
-            "creates no law", "Gate A result", "Card-required rows still require")):
+            "creates no law", "Gate A result",
+            "power-contract-template rows constrain cards")):
         raise ManifestError("scope_note lost an inventory-only boundary")
 
     rows = source["rows"]
@@ -280,7 +283,7 @@ def negative_controls(source: dict) -> int:
     add(
         "summary changed",
         lambda s: s["coverage_summary"]["by_disposition"].__setitem__(
-            "card-required", 209
+            "card-required", 208
         ),
     )
     add(
@@ -316,6 +319,13 @@ def negative_controls(source: dict) -> int:
         ),
     )
     add("ceiling removed", lambda s: s.__setitem__("scope_note", "Inventory."))
+    add(
+        "template promoted to power",
+        lambda s: next(
+            row for row in s["rows"]
+            if row["provisional_key"] == "time-power-specific-t3-contract"
+        ).__setitem__("disposition", "card-required"),
+    )
     add("status promoted", lambda s: s.__setitem__("status", "complete"))
     add(
         "source commit drift",
@@ -348,7 +358,8 @@ def main() -> int:
     count = negative_controls(source)
     print(
         "full-society power source manifest is current: 237 reviewed rows "
-        "(210 card-required, 19 refusal/limit, 8 current-formal crosswalk); "
+        "(209 card-required powers, 1 cross-power contract template, "
+        "19 refusal/limit, 8 current-formal crosswalk); "
         f"{count} watched-failing mutations pass; inventory only -- no law, "
         "operation, FS-POW completion, or Gate A result"
     )

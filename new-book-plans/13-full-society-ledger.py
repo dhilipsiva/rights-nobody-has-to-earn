@@ -71,7 +71,7 @@ POWER_SOURCE_MANIFEST = pathlib.Path(
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
-        "b194b2098252b8ea49f0db0ff05c0ea4e8dc3b3fdb26f87efb2890dde4fbc93b"
+        "4525badc3fbc4fdd8ab0a7bbf792e42409b740ea3ff90da036bd32531f358adf"
     ),
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": (
@@ -80,7 +80,8 @@ POWER_SOURCE_BINDING = {
     ),
     "row_count": 237,
     "disposition_counts": {
-        "card-required": 210,
+        "card-required": 209,
+        "power-contract-template": 1,
         "existing-formal-crosswalk": 8,
         "explicit-refusal-limit": 19,
     },
@@ -103,7 +104,8 @@ POWER_SOURCE_BINDING = {
     "scope_ceiling": (
         "Source-bound candidate census only: no row creates law, a complete "
         "contract card, a lawful holder, operation, assurance, FS-POW population "
-        "completion, or Gate A passage."
+        "completion, or Gate A passage. The cross-power temporal template "
+        "creates no holder, power, or function allocation."
     ),
 }
 

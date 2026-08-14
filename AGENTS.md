@@ -55,8 +55,9 @@ history only: they neither prove resistance to rewritten Git history nor attest
 to external truth.
 
 Run script 17 before script 13. It checks the source-digest-bound
-full-society power census: 237 reviewed source entries, comprising 210
-card-required entries, 19 explicit refusals or limits, and 8 narrow current-
+full-society power census: 237 reviewed source entries, comprising 209
+card-required powers, 1 cross-power contract template, 19 explicit
+refusals or limits, and 8 narrow current-
 formal crosswalks. The census is an inventory prerequisite only. It creates no
 FS-POW contract card, lawful holder, operation, assurance, or Gate A result;
 script 13 keeps the power population deferred until the owning coverage rows,

@@ -1614,7 +1614,7 @@ family. A hand-maintained competitor to any projection remains refused.
 checked by `17-full-society-power-source-manifest.py` before script 13 in both
 quick and full verification, binds the exact inspected source revision and
 eight source digests. Its 237 rows keep direct legal effects at source grain:
-210 require later contract cards, 19 are explicit refusals or limits, and 8
+209 require later power cards, 1 is a cross-power temporal-contract template, 19 are explicit refusals or limits, and 8
 crosswalk narrow current formal fixtures. This is a candidate census, not an
 FS-POW population or coverage proof. It creates no law, complete contract
 card, lawful holder, operation, assurance, or Gate A result. The canonical

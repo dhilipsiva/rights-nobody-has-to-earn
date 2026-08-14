@@ -3094,12 +3094,13 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "b194b2098252b8ea49f0db0ff05c0ea4e8dc3b3fdb26f87efb2890dde4fbc93b",
+    "artifact_sha256": "4525badc3fbc4fdd8ab0a7bbf792e42409b740ea3ff90da036bd32531f358adf",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
     "disposition_counts": {
-      "card-required": 210,
+      "card-required": 209,
+      "power-contract-template": 1,
       "existing-formal-crosswalk": 8,
       "explicit-refusal-limit": 19
     },
@@ -3115,7 +3116,7 @@
     ],
     "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
     "closure_condition": "complete per-instrument FS-POW contract cards, lawful body and role allocations, and power-bound decider, executor, auditor, and final-remedy separation rows for every card-required and retained formal entry",
-    "scope_ceiling": "Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage."
+    "scope_ceiling": "Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage. The cross-power temporal template creates no holder, power, or function allocation."
   },
   "powers": [],
   "dependencies": [

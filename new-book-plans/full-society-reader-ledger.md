@@ -7,7 +7,7 @@
 
 Canonical source version: `fs-ledger-2026-08-13-power-source-inventory`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Canonical source SHA-256: `c32644b63369c7302354b150eb0113b3ebbb84c474c4b6609001c400398c7b7a`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `da0ae283ed13f4a1aea2c66770dcca2fc0f190844912f25784ec6d24cd354834`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 

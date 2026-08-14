@@ -16,15 +16,17 @@
   },
   "allowed_dispositions": [
     "card-required",
+    "power-contract-template",
     "existing-formal-crosswalk",
     "explicit-refusal-limit"
   ],
   "grain_rule_anchor": "new-book-plans/book-1-constitutional-coverage-map.md::posture per row: a row that would carry two is two rows",
-  "scope_note": "One row per source-identified authority, restriction, refusal, or current formal crosswalk in the inspected ratified Book 1 source set. This manifest is an inventory prerequisite only. It creates no law, institution, operation, assurance, Gate A result, or timeless claim of exhaustiveness. Card-required rows still require complete cards.",
+  "scope_note": "One row per source-identified authority, restriction, refusal, current formal crosswalk, or cross-power contract template in the inspected ratified Book 1 source set. This manifest is an inventory prerequisite only. It creates no law, institution, operation, assurance, Gate A result, or timeless claim of exhaustiveness. Card-required power rows still require complete cards; power-contract-template rows constrain cards but create no power, holder, or function allocation.",
   "row_count": 237,
   "coverage_summary": {
     "by_disposition": {
-      "card-required": 210,
+      "card-required": 209,
+      "power-contract-template": 1,
       "existing-formal-crosswalk": 8,
       "explicit-refusal-limit": 19
     },
@@ -41,41 +43,49 @@
     "by_source_family_and_disposition": {
       "current-formal-constitution": {
         "card-required": 0,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 8,
         "explicit-refusal-limit": 0
       },
       "ecological-commons-and-non-human-animal": {
         "card-required": 40,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 3
       },
       "economic-pluralism-and-protected-private-sphere": {
         "card-required": 28,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 1
       },
       "family-dependency-reproduction-and-collective-plurality": {
         "card-required": 31,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 0
       },
       "public-safety-defence-emergency-and-external-power": {
         "card-required": 50,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 14
       },
       "state-form-and-political-membership": {
         "card-required": 51,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 0
       },
       "substantive-equality-and-anti-subordination": {
         "card-required": 9,
+        "power-contract-template": 0,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 0
       },
       "time-model": {
-        "card-required": 1,
+        "card-required": 0,
+        "power-contract-template": 1,
         "existing-formal-crosswalk": 0,
         "explicit-refusal-limit": 1
       }
@@ -2435,7 +2445,7 @@
     {
       "provisional_key": "time-power-specific-t3-contract",
       "title": "Power-specific T3 temporal contract",
-      "disposition": "card-required",
+      "disposition": "power-contract-template",
       "source_anchor": "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
       "source_path": "new-book-plans/book-1-time-model-decision.md",
       "source_needle": "## 4. Ratified and implemented ruling",

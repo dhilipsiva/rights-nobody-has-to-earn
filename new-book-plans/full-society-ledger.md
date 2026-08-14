@@ -747,9 +747,9 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 
 ## Public-power source inventory
 
-Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage.
+Source-bound candidate census only: no row creates law, a complete contract card, a lawful holder, operation, assurance, FS-POW population completion, or Gate A passage. The cross-power temporal template creates no holder, power, or function allocation.
 
-The reviewed manifest `new-book-plans/full-society-power-source-manifest.json` binds 237 source-identified entries: 210 require contract cards, 19 are refusals or limits, and 8 crosswalk narrow current formal fixtures.
+The reviewed manifest `new-book-plans/full-society-power-source-manifest.json` binds 237 source-identified entries: 209 require contract cards, 19 are refusals or limits, and 8 crosswalk narrow current formal fixtures.
 
 Known lawful-allocation gaps that keep FS-POW deferred:
 
