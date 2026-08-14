@@ -5,9 +5,9 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-14-power-state-form-and-political-membership`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-14-power-time-model`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Canonical source SHA-256: `78e65bb45af0b18e862c125a8c556f2a120f4c065c11cb1660abb7e7259a6ccc`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `f52aef6da779609b86a844f0bf1e197e2dca5d442dc3f9b41943917748100b42`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -28,8 +28,8 @@ Canonical source SHA-256: `78e65bb45af0b18e862c125a8c556f2a120f4c065c11cb1660abb
 | `roles` | 59 | `f89b2e0e109db3cbabe46ad7a4ca377c2ac18adb22986a3609e70eb85accc614` | FS-ROL-01, FS-ROL-02, FS-ROL-03, FS-ROL-04, FS-ROL-05, FS-ROL-06, FS-ROL-07, FS-ROL-08, FS-ROL-09, FS-ROL-10, FS-ROL-11, FS-ROL-12, FS-ROL-13, FS-ROL-14, FS-ROL-15, FS-ROL-16, FS-ROL-17, FS-ROL-18, FS-ROL-19, FS-ROL-20, FS-ROL-21, FS-ROL-22, FS-ROL-23, FS-ROL-24, FS-ROL-25, FS-ROL-26, FS-ROL-27, FS-ROL-28, FS-ROL-29, FS-ROL-30, FS-ROL-31, FS-ROL-32, FS-ROL-33, FS-ROL-34, FS-ROL-35, FS-ROL-36, FS-ROL-37, FS-ROL-38, FS-ROL-39, FS-ROL-40, FS-ROL-41, FS-ROL-42, FS-ROL-43, FS-ROL-44, FS-ROL-45, FS-ROL-46, FS-ROL-47, FS-ROL-48, FS-ROL-49, FS-ROL-50, FS-ROL-51, FS-ROL-52, FS-ROL-53, FS-ROL-54, FS-ROL-55, FS-ROL-56, FS-ROL-57, FS-ROL-58, FS-ROL-59 |
 | `role_omissions` | 16 | `51d0ef84e9987be32a5c09944e7e82f2dff4de02d57de94568942b2757868ded` | unkeyed rows; digest is authoritative |
 | `powers` | 51 | `17f17310d437af271617b6c90d9c44795698d674e1aef9c486a4ca3267d89c26` | FS-POW-001, FS-POW-002, FS-POW-003, FS-POW-004, FS-POW-005, FS-POW-006, FS-POW-007, FS-POW-008, FS-POW-009, FS-POW-010, FS-POW-011, FS-POW-012, FS-POW-013, FS-POW-014, FS-POW-015, FS-POW-016, FS-POW-017, FS-POW-018, FS-POW-019, FS-POW-020, FS-POW-021, FS-POW-022, FS-POW-023, FS-POW-024, FS-POW-025, FS-POW-026, FS-POW-027, FS-POW-028, FS-POW-029, FS-POW-030, FS-POW-031, FS-POW-032, FS-POW-033, FS-POW-034, FS-POW-035, FS-POW-036, FS-POW-037, FS-POW-038, FS-POW-039, FS-POW-040, FS-POW-041, FS-POW-042, FS-POW-043, FS-POW-044, FS-POW-045, FS-POW-046, FS-POW-047, FS-POW-048, FS-POW-049, FS-POW-050, FS-POW-051 |
-| `power_contract_templates` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `power_refusals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
+| `power_contract_templates` | 1 | `2c46804c0d4dd3753b118064cc97806aa34ddbba30b11bd7103d063e460dbf61` | FS-PCT-01 |
+| `power_refusals` | 1 | `bbb42a52aa61b01ee860d2cfd30b52398221b28d0a235cfd013dcb5a6600c1f2` | FS-PRF-001 |
 | `power_crosswalk_dispositions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `dependencies` | 61 | `443108e4a41114e3495aafed934fdd2706dd53c92d83dc0c19e9e62bc5405e2a` | FS-DEP-01, FS-DEP-02, FS-DEP-03, FS-DEP-04, FS-DEP-05, FS-DEP-06, FS-DEP-07, FS-DEP-08, FS-DEP-09, FS-DEP-10, FS-DEP-11, FS-DEP-12, FS-DEP-13, FS-DEP-14, FS-DEP-15, FS-DEP-17, FS-DEP-18, FS-DEP-19, FS-DEP-20, FS-DEP-21, FS-DEP-22, FS-DEP-23, FS-DEP-24, FS-DEP-25, FS-DEP-26, FS-DEP-27, FS-DEP-28, FS-DEP-29, FS-DEP-30, FS-DEP-31, FS-DEP-32, FS-DEP-33, FS-DEP-34, FS-DEP-35, FS-DEP-36, FS-DEP-37, FS-DEP-38, FS-DEP-39, FS-DEP-40, FS-DEP-41, FS-DEP-42, FS-DEP-43, FS-DEP-44, FS-DEP-45, FS-DEP-46, FS-DEP-47, FS-DEP-48, FS-DEP-49, FS-DEP-50, FS-DEP-51, FS-DEP-52, FS-DEP-53, FS-DEP-54, FS-DEP-55, FS-DEP-56, FS-DEP-57, FS-DEP-58, FS-DEP-59, FS-DEP-60, FS-DEP-61, FS-DEP-62 |
 | `dependency_loops` | 8 | `3fa6da149e63c25a73c6890ca9c4da647c56d310c9b16a982354cb46729774cf` | FS-LOP-01, FS-LOP-02, FS-LOP-03, FS-LOP-04, FS-LOP-05, FS-LOP-06, FS-LOP-07, FS-LOP-08 |

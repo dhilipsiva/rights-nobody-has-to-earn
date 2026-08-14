@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_review_machinery",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-14-power-state-form-and-political-membership",
+  "source_version": "fs-ledger-2026-08-14-power-time-model",
   "bound_sources_sha256": {
     "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
     "full_society_boundary": "00273fa9ac211d3b7bffce5f37625832652e9750e81dce301844ab8a9149a3fd"
@@ -4056,7 +4056,8 @@
   "power_population": {
     "status": "partial",
     "completed_source_families": [
-      "state-form-and-political-membership"
+      "state-form-and-political-membership",
+      "time-model"
     ],
     "expected_final_counts": {
       "powers": 210,
@@ -9764,8 +9765,71 @@
       ]
     }
   ],
-  "power_contract_templates": [],
-  "power_refusals": [],
+  "power_contract_templates": [
+    {
+      "id": "FS-PCT-01",
+      "title": "Power-specific T3 temporal contract",
+      "applicability": "Each time-dependent public power receives its own current-source, scope, review, renewal/end, challenge, and fail-closed temporal contract; Book 2 alone operates clocks and liveness.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-template",
+      "severity": "critical",
+      "consequence": "a time-dependent power could borrow or replay another power’s current-authority record",
+      "owner_ref": "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
+      "closure_condition": "every time-dependent card carries its own source, scope, review, renewal or end, challenge, and fail-closed polarity",
+      "manifest_key": "time-power-specific-t3-contract",
+      "contract": {
+        "current_source": "Each power names its own authenticated current source and version.",
+        "scope": "The temporal record binds only the exact power, person or protected object, case, legal effect, and source version.",
+        "review": "Review tests current source, scope, replay, renewal, correction, and end independently of the holder.",
+        "renewal_or_end": "Renewal requires a fresh source; absence, expiry, invalidation, or an unratified alternate ends authority.",
+        "challenge": "Affected people and authorised representatives may challenge source, currency, scope, replay, renewal, and end.",
+        "fail_closed_polarity": "Missing or non-current positive authority withholds the power; it does not manufacture the opposite fact.",
+        "frozen_record_limit": "Fail-closed polarity does not detect a frozen or replayed record; independent witnessed sources remain required.",
+        "book2_liveness_limit": "Book 2 alone operates clocks, publication, persistence, notification, and institutional action; this template proves none."
+      },
+      "source_refs": [
+        "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+      ]
+    }
+  ],
+  "power_refusals": [
+    {
+      "id": "FS-PRF-001",
+      "title": "No borrowed custody temporal contract",
+      "applicability": "A categorical cross-power limit: the implemented custody T3 cannot establish current effect for another ecological, animal, emergency, coercive, border, deployment, treaty, or exit power.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-refusal",
+      "severity": "critical",
+      "consequence": "the refused no borrowed custody temporal contract could be promoted into authority",
+      "owner_ref": "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
+      "closure_condition": "the refusal remains non-authorising and every permitted residual uses only its separately sourced card",
+      "manifest_key": "limit-no-borrowed-custody-t3",
+      "source_family": "time-model",
+      "refusal": "A categorical cross-power limit: the implemented custody T3 cannot establish current effect for another ecological, animal, emergency, coercive, border, deployment, treaty, or exit power.",
+      "scope": "Only the exact boundary stated by No borrowed custody temporal contract; it creates no actor, trigger, or legal effect.",
+      "protected_boundary": "The refused route cannot lower universal standing, floors, liberties, equality, due process, democratic authority, commons, or protected-animal interests.",
+      "permitted_residual": "Only a separately ratified, source-bound power card may govern any residual evidenced harm, duty, scarcity, or ordinary-law choice.",
+      "non_authorisation": "This row authorises no body or role and receives no FS-FAL allocation.",
+      "affected_power_refs": [],
+      "domain_refs": [
+        "FS-DOM-08"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-11",
+        "FS-CLM-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-37",
+        "FS-ROL-38",
+        "FS-ROL-40"
+      ],
+      "route_ref": "FS-RTE-01",
+      "public_claim_restriction": "A refusal is a structural no-power boundary only; no operation, enforcement, delivery, liveness, feasibility, or outside compliance follows.",
+      "source_refs": [
+        "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+      ]
+    }
+  ],
   "power_crosswalk_dispositions": [],
   "dependencies": [
     {

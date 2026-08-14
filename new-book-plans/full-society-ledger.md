@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-state-form-and-political-membership`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-power-time-model`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -308,9 +308,9 @@ Deliberately omitted candidates and combinations (recorded, not silent):
 
 ## Source-derived power contracts and function allocations
 
-Population status: **partial**. Completed source-family prefix: state-form-and-political-membership.
+Population status: **partial**. Completed source-family prefix: state-form-and-political-membership, time-model.
 
-Current rows: 51 FS-POW cards; 0 FS-PCT templates; 0 FS-PRF refusals/limits; 0 FS-PCD formal dispositions; 51 FS-FAL allocations.
+Current rows: 51 FS-POW cards; 1 FS-PCT templates; 1 FS-PRF refusals/limits; 0 FS-PCD formal dispositions; 51 FS-FAL allocations.
 
 Evidence ceiling: Structural source-bound contract and allocation inventory only; no operation, delivery, feasibility, liveness, external truth, calibration, or Gate A passage follows.
 
@@ -370,11 +370,11 @@ Evidence ceiling: Structural source-bound contract and allocation inventory only
 
 Contract templates:
 
-- None in the completed prefix.
+- `FS-PCT-01` / `time-power-specific-t3-contract`: Power-specific T3 temporal contract. every time-dependent card carries its own source, scope, review, renewal or end, challenge, and fail-closed polarity
 
 Refusals and formal transitions:
 
-- None in the completed prefix.
+- `FS-PRF-001` / `limit-no-borrowed-custody-t3`: A categorical cross-power limit: the implemented custody T3 cannot establish current effect for another ecological, animal, emergency, coercive, border, deployment, treaty, or exit power. Non-authorisation: This row authorises no body or role and receives no FS-FAL allocation.
 
 Function allocations (body functions; role references identify the corresponding position classes, not proof of staffing or independence):
 
