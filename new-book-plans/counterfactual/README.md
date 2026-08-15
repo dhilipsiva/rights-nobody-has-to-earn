@@ -104,3 +104,16 @@ nibli-pin --kb new-book-plans/counterfactual/no-person-line.nibli \
 The `no-environmental-right` fixture deletes the present-person environmental-conditions rule while retaining environmental information and the material floor.
 The `no-class9-climate-axis` fixture deletes only the climate-axis ceiling rule while retaining the clean-air axis and the material-floor boundary.
 Both are one-line deletion fixtures and are regenerated from `constitution.nibli` after every constitutional edit.
+
+## Substantive-equality fixtures
+
+The `no-direct-equality`, `no-equality-data-wall`, and
+`no-positive-measure-end` fixtures each delete exactly one independently
+registered equality effect. Their controls keep an adjacent equality effect and
+the common status baseline live, so a green result cannot come from losing the
+whole family. Regenerate them from `constitution.nibli` after every source edit
+by deleting, respectively:
+
+- `all $x: person($x) -> prevents($x, DirectDiscrimination).`
+- `all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).`
+- `all $x: person($x) -> prevents($x, ExpiredPositiveMeasureContinuation).`

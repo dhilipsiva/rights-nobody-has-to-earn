@@ -521,6 +521,64 @@ public(Court) -> prevents(SeriousEcologicalThreat, DelayedInterimProtection).
 public(Court) -> prevents(RestorationDuty, InsolvencyDelay).
 public(Court) -> prevents(RestorationDuty, LiabilityExtinction).
 # <LIBERTY-ECOLOGY-RULES-END>
+# <SUBSTANTIVE-EQUALITY-RULES-BEGIN>
+# One direct legal effect per line. These are normative barriers over supplied
+# premises, not a population model, service, programme, or operational claim.
+all $x: person($x) -> prevents($x, SubstantiveEqualityStatus).
+all $x: person($x) -> prevents($x, AntiSubordination).
+all $x: person($x) -> prevents($x, OpenProtectedGrounds).
+all $x: person($x) -> prevents($x, DirectDiscrimination).
+all $x: person($x) -> prevents($x, IndirectDiscrimination).
+all $x: person($x) -> prevents($x, SystemicDiscrimination).
+all $x: person($x) -> prevents($x, MultipleDiscrimination).
+all $x: person($x) -> prevents($x, IntersectionalDiscrimination).
+all $x: person($x) -> prevents($x, AssociativeDiscrimination).
+all $x: person($x) -> prevents($x, AccommodationDenial).
+all $x: person($x) -> prevents($x, ImposedSegregation).
+all $x: person($x) -> prevents($x, EqualityHarassment).
+all $x: person($x) -> prevents($x, EqualityRetaliation).
+all $x: person($x) -> prevents($x, PublicDelegatedEqualityEvasion).
+all $x: person($x) -> prevents($x, NamedPrivateEqualityEvasion).
+all $x: person($x) -> prevents($x, PublicEqualityProtectionFailure).
+all $x: person($x) -> prevents($x, InvoluntaryAssociation).
+all $x: person($x) -> prevents($x, NonExpressiveMissionExclusion).
+all $x: person($x) -> prevents($x, UnjustifiedDirectDistinction).
+all $x: person($x) -> prevents($x, UnjustifiedIndirectDistinction).
+all $x: person($x) -> prevents($x, EqualityCoreTradeoff).
+all $x: person($x) -> prevents($x, EqualityRemedialBurdenRefusal).
+all $x: person($x) -> prevents($x, BareAbsenceWithholding).
+all $x: person($x) -> prevents($x, InaccessibleEqualityRoute).
+all $x: person($x) -> prevents($x, AccommodationRefusal).
+all $x: person($x) -> prevents($x, LocalDeskUndueBurden).
+all $x: person($x) -> prevents($x, InferiorAlternateRoute).
+all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).
+all $x: person($x) -> prevents($x, DiagnosticIndividualVerdict).
+all $x: person($x) -> prevents($x, DiagnosticNonparticipationPenalty).
+all $x: person($x) -> prevents($x, UnnecessaryPositiveMeasure).
+all $x: person($x) -> prevents($x, UnboundedPositiveMeasure).
+all $x: person($x) -> prevents($x, PoliticalEqualityMeasureEvasion).
+all $x: person($x) -> prevents($x, ReusableEligibilityIdentity).
+all $x: person($x) -> prevents($x, ExpiredPositiveMeasureContinuation).
+all $x: person($x) -> prevents($x, UnrepairedHistoricalBarrier).
+all $x: person($x) -> prevents($x, HistoricalAccountabilityErasure).
+all $x: person($x) -> prevents($x, EqualityInitiationBlock).
+all $x: person($x) -> prevents($x, EqualityFunctionFusion).
+all $x: person($x) -> prevents($x, IndividualEqualityRemedyDenial).
+all $x: person($x) -> prevents($x, SystemicEqualityRemedyDenial).
+all $x: person($x) -> prevents($x, CourtAdministrationTakeover).
+all $x: person($x) -> prevents($x, FederalEqualityDiscontinuity).
+all $x: person($x) -> prevents($x, CrossBoundaryEqualityEvasion).
+all $x: person($x) -> prevents($x, FamilyStatusSubstitution).
+all $x: person($x) -> prevents($x, HomeStatusSubstitution).
+all $x: person($x) -> prevents($x, GlobalMaturityScore).
+all $x: person($x) -> prevents($x, ConvictionStatusSubstitution).
+all $x: person($x) -> prevents($x, CustodyEqualityErasure).
+all $x: person($x) -> prevents($x, OfficialStatusImmunity).
+all $x: person($x) -> prevents($x, PlacementBaselineReduction).
+all $x: person($x) -> prevents($x, StatusOnlyVoiding).
+all $x: person($x) -> prevents($x, RecognitionOperation).
+all $x: person($x) -> prevents($x, QualificationStatusBarrier).
+# <SUBSTANTIVE-EQUALITY-RULES-END>
 # [v0.4 NEW] A released person is still a person. This line is not optional and
 # it is not symmetry for its own sake: `prisoner -> person` above is the ONLY
 # non-assertion route into the roster, so without this, ending a sentence ends

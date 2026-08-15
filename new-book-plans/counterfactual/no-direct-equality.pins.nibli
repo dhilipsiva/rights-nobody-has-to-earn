@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: direct-discrimination protection deleted
+:expect-pins 3
+? prevents(Adam, DirectDiscrimination).
+# => FALSE
+? prevents(Adam, IndirectDiscrimination).
+# => TRUE
+? prevents(Adam, SubstantiveEqualityStatus).
+# => TRUE

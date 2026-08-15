@@ -1,0 +1,231 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Substantive equality and anti-subordination executable coverage pins
+:expect-pins 58
+
+# FS-CCE-34 executable boundary:
+? prevents(Adam, SubstantiveEqualityStatus).
+# => TRUE
+
+# FS-CCE-35 executable boundary:
+? prevents(Adam, AntiSubordination).
+# => TRUE
+
+# FS-CCE-36 executable boundary:
+? prevents(Adam, OpenProtectedGrounds).
+# => TRUE
+
+# FS-CCE-37 executable boundary:
+? prevents(Adam, DirectDiscrimination).
+# => TRUE
+
+# FS-CCE-38 executable boundary:
+? prevents(Adam, IndirectDiscrimination).
+# => TRUE
+
+# FS-CCE-39 executable boundary:
+? prevents(Adam, SystemicDiscrimination).
+# => TRUE
+
+# FS-CCE-40 executable boundary:
+? prevents(Adam, MultipleDiscrimination).
+# => TRUE
+
+# FS-CCE-41 executable boundary:
+? prevents(Adam, IntersectionalDiscrimination).
+# => TRUE
+
+# FS-CCE-42 executable boundary:
+? prevents(Adam, AssociativeDiscrimination).
+# => TRUE
+
+# FS-CCE-43 executable boundary:
+? prevents(Adam, AccommodationDenial).
+# => TRUE
+
+# FS-CCE-44 executable boundary:
+? prevents(Adam, ImposedSegregation).
+# => TRUE
+
+# FS-CCE-45 executable boundary:
+? prevents(Adam, EqualityHarassment).
+# => TRUE
+
+# FS-CCE-46 executable boundary:
+? prevents(Adam, EqualityRetaliation).
+# => TRUE
+
+# FS-CCE-47 executable boundary:
+? prevents(Adam, PublicDelegatedEqualityEvasion).
+# => TRUE
+
+# FS-CCE-48 executable boundary:
+? prevents(Adam, NamedPrivateEqualityEvasion).
+# => TRUE
+
+# FS-CCE-49 executable boundary:
+? prevents(Adam, PublicEqualityProtectionFailure).
+# => TRUE
+
+# FS-CCE-50 executable boundary:
+? prevents(Adam, InvoluntaryAssociation).
+# => TRUE
+
+# FS-CCE-51 executable boundary:
+? prevents(Adam, NonExpressiveMissionExclusion).
+# => TRUE
+
+# FS-CCE-52 executable boundary:
+? prevents(Adam, UnjustifiedDirectDistinction).
+# => TRUE
+
+# FS-CCE-53 executable boundary:
+? prevents(Adam, UnjustifiedIndirectDistinction).
+# => TRUE
+
+# FS-CCE-54 executable boundary:
+? prevents(Adam, EqualityCoreTradeoff).
+# => TRUE
+
+# FS-CCE-55 executable boundary:
+? prevents(Adam, EqualityRemedialBurdenRefusal).
+# => TRUE
+
+# FS-CCE-56 executable boundary:
+? prevents(Adam, BareAbsenceWithholding).
+# => TRUE
+
+# FS-CCE-57 executable boundary:
+? prevents(Adam, InaccessibleEqualityRoute).
+# => TRUE
+
+# FS-CCE-58 executable boundary:
+? prevents(Adam, AccommodationRefusal).
+# => TRUE
+
+# FS-CCE-59 executable boundary:
+? prevents(Adam, LocalDeskUndueBurden).
+# => TRUE
+
+# FS-CCE-60 executable boundary:
+? prevents(Adam, InferiorAlternateRoute).
+# => TRUE
+
+# FS-CCE-61 executable boundary:
+? prevents(Adam, EqualityDiagnosticRecordReuse).
+# => TRUE
+
+# FS-CCE-62 executable boundary:
+? prevents(Adam, DiagnosticIndividualVerdict).
+# => TRUE
+
+# FS-CCE-63 executable boundary:
+? prevents(Adam, DiagnosticNonparticipationPenalty).
+# => TRUE
+
+# FS-CCE-64 executable boundary:
+? prevents(Adam, UnnecessaryPositiveMeasure).
+# => TRUE
+
+# FS-CCE-65 executable boundary:
+? prevents(Adam, UnboundedPositiveMeasure).
+# => TRUE
+
+# FS-CCE-66 executable boundary:
+? prevents(Adam, PoliticalEqualityMeasureEvasion).
+# => TRUE
+
+# FS-CCE-67 executable boundary:
+? prevents(Adam, ReusableEligibilityIdentity).
+# => TRUE
+
+# FS-CCE-68 executable boundary:
+? prevents(Adam, ExpiredPositiveMeasureContinuation).
+# => TRUE
+
+# FS-CCE-69 executable boundary:
+? prevents(Adam, UnrepairedHistoricalBarrier).
+# => TRUE
+
+# FS-CCE-70 executable boundary:
+? prevents(Adam, HistoricalAccountabilityErasure).
+# => TRUE
+
+# FS-CCE-71 executable boundary:
+? prevents(Adam, EqualityInitiationBlock).
+# => TRUE
+
+# FS-CCE-72 executable boundary:
+? prevents(Adam, EqualityFunctionFusion).
+# => TRUE
+
+# FS-CCE-73 executable boundary:
+? prevents(Adam, IndividualEqualityRemedyDenial).
+# => TRUE
+
+# FS-CCE-74 executable boundary:
+? prevents(Adam, SystemicEqualityRemedyDenial).
+# => TRUE
+
+# FS-CCE-75 executable boundary:
+? prevents(Adam, CourtAdministrationTakeover).
+# => TRUE
+
+# FS-CCE-76 executable boundary:
+? prevents(Adam, FederalEqualityDiscontinuity).
+# => TRUE
+
+# FS-CCE-77 executable boundary:
+? prevents(Adam, CrossBoundaryEqualityEvasion).
+# => TRUE
+
+# FS-CCE-78 executable boundary:
+? prevents(Adam, FamilyStatusSubstitution).
+# => TRUE
+
+# FS-CCE-79 executable boundary:
+? prevents(Adam, HomeStatusSubstitution).
+# => TRUE
+
+# FS-CCE-80 executable boundary:
+? prevents(Adam, GlobalMaturityScore).
+# => TRUE
+
+# FS-CCE-81 executable boundary:
+? prevents(Adam, ConvictionStatusSubstitution).
+# => TRUE
+
+# FS-CCE-82 executable boundary:
+? prevents(Adam, CustodyEqualityErasure).
+# => TRUE
+
+# FS-CCE-83 executable boundary:
+? prevents(Adam, OfficialStatusImmunity).
+# => TRUE
+
+# FS-CCE-84 executable boundary:
+? prevents(Adam, PlacementBaselineReduction).
+# => TRUE
+
+# FS-CCE-85 executable boundary:
+? prevents(Adam, StatusOnlyVoiding).
+# => TRUE
+
+# FS-CCE-86 executable boundary:
+? prevents(Adam, RecognitionOperation).
+# => TRUE
+
+# FS-CCE-87 executable boundary:
+? prevents(Adam, QualificationStatusBarrier).
+# => TRUE
+
+# Derived-only equality forgery is refused.
+:refuse reasoning /declared derived-only/
+prevents(Forge, ForgedEqualityProtection).
+
+# Formal coverage supplies no programme, record-authentication, or T3 result.
+? hears(Adam, EqualityRemedy).
+# => FALSE
+? correct(Adam, EqualityDiagnostic).
+# => FALSE
+? correct(Adam, ActivePower).
+# => FALSE

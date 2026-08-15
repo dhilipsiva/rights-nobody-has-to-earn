@@ -350,6 +350,62 @@ LIBERTY_ECOLOGY_STATEMENT_IDS = (
     "5234bd6eebc9e87361926046fe35b04e9bc64782a18a28eed1bb3bc560cc7b61",
     "02820bda0cbc8f0fdf1b1bdcf218a88fd0e9ca228bfab8acb8bbaa83c84ff313",
 )
+EQUALITY_STATEMENT_IDS = (
+    "785bdec1dac6890ad0d9abf75d896d0c30935aff75254de8194fc0ab7765c72c",
+    "1e8cd72378d2f4eb3fbe18b51b905428102cf085c6b515dbea75f0de6544ea9c",
+    "f003dc353d3b29ed7f7dbc6f091f2f34f4c908b12b3b9f30e14294a02a9de818",
+    "202373ba4ce9c4fdfe0b4cc9de2cd442f2f2e31011ba61084538cb61c6f3722c",
+    "8e8ae8aaee6447d0d9317c9fccc11c532734f0573c4c03d27a0cd8a22e80e9f7",
+    "17e1d36abe0636c759bbfcf430f2becb89fdb8420bff8455b238a4f0dbce79b5",
+    "884608dd758f6cb991268bcdec22380bc680a32dd97af6081aae59a399c9a611",
+    "e62f850f59d5e115f1a476e13fdfd431e5a838064f8c96da191c207393a471ef",
+    "55603d936de1a45957058ef47fdbbef4426886f77a88cf6bc50b37fea607e9f8",
+    "af65ef4a6778aa49138b41101a1a6835e65948d8771108574c210fdc2f1abb21",
+    "9e7d5f63e0f6af43e4a81057cf762f2485d613f3b7bda1b3d2f4fc420420b996",
+    "c467464c89b1e50e17acff0c993c38992398e4bfed86f438cf61c03daef31337",
+    "e919f4f7ed14f8139a406a39d77c71e1aeeb4503a05b37547bd2cb2a8cf5305c",
+    "3a04ecb9237ea09ab6824a0de6b6841862ab0e30312b12eef127df756a547eb2",
+    "b8c849194e86ac82da9dead8f95d61e3730df9cce9f82e867fc1d0b48c338c99",
+    "81376bef276f0c2845532f20d25420f72b950c4a3a6839feac6c2360f8f2c08b",
+    "b1a878aecd175021333ec36b9ce62f7c2aae1213879590b75115316012ba0a5f",
+    "a1443514da8922d9c299daafd04c46ada6ef24110363af81df884c899399afca",
+    "7d18c550d4d404b086ba502aca0c156910f8c88a3d57a75e1c6db5789d0dbf60",
+    "12560623054d6d0629b1244f8b5e44a6a1c95fd57ffaa9aad96c514fa1914293",
+    "8bc2374a7e6f7def90a8c9c9e5e32ac4d3dfd778723f5fe37deefdd1d77a91e8",
+    "9042b3a1d76ba82fc52095e469cd762d8e6bee3d0853723d484dfbd79b678195",
+    "5176f7794546335ca513e19757728a7fdf61f9b74ddfb62123f2e37626ce9529",
+    "6e612ef33471db7a5e205915e474f221806ede17ed587c5b5ea25dabce271dad",
+    "ea6073e25c5aafe7e6302599f62d0ca9b90012ecf96027d2a0b19ec216aa74bd",
+    "618eaf9d9e0ac8e4733c0c1a333d8ec24c3fc97eae5c71492ce84112dc248731",
+    "6a2998193851fc56dad54d380735bc5f6adc7e07283e347463e8d1fa1446d933",
+    "9a187aecb889d21bce360986b6e3eb878fea361beb3b4cd5a161e6713db6fd26",
+    "3b2c40f8eccf7dec9e1909d8260df9f0751ac899342da26df4017cb8453e295c",
+    "5a26bd1ffbcddcf86bad8601a850ab8a872e3b6517195f1d696e06a5ed9992ac",
+    "416882245f01afd29f67f9d51b794a63fe9148cb4b7e5e370df3c4c810d9a277",
+    "92578c4d3d7e0e03c2201564acc5fe7978e98c52b78e566040ec4b56fe263894",
+    "d1cadc8edfa8266a8d148fdb1dd007b7aafca032bc27604a8a761ef785adc421",
+    "76243300ddd45079cb8960f4ef101dc0d5be51335f0adf3b56cd0c0cbc6d7247",
+    "1b16feb27ef2d960096a049ff453f4a6b737e21b53ffb9ba4715fdfe151a4fae",
+    "30662c71136d8534623e83da6b0304e447b1b9d5c9061cbea5b14f1a1dd80670",
+    "f3188eeaeb88e2adfc067971d910b78d23e5c16262ae522d15b403bef61b42bc",
+    "72dd9459072f34c05ee980dec76239e3caf2355cc2c5aa016db8eb15a36103f5",
+    "2dea63f8495bba363a1441ee71eecc5a5c98fe7b92454b06f208b26680978cd7",
+    "fa12d58d8b8b6da30fffdf5d82e1762fc89042f742c5036f1c2741990bd1eede",
+    "57e14a3b6ce5555e863963de0682c419c184ec816f5ce0cca8be1c9c39cd67b9",
+    "00720752bc16c55aec549a57a48e505c3f5055de3c6d019a7338d8f0abf36e52",
+    "a6e9673b829bfa6e2d5985328bb49e6669274302cbd839485a8e9f6546a92df2",
+    "79eaa86280e9069ae70daeb315fef3d3f52a6bfd69819070d08ce3804fd11601",
+    "a843992ae640893d171cda7484a0fd9d7b9b178f718b001c247f35d417637109",
+    "6fe12c1bc0d0ba03316cace645eba543a99cdc8e263f0aa9836bb3b9e2db53b2",
+    "213a603242de02bb37af704298b344b986736e8941527cdf82675298118cf43f",
+    "a87f6cc7920d941766e4546cf288ce0326de046f866bb258904a97e172a4ac0f",
+    "188f7adb2dd576cdb8f48cfb8f3a3b8f7986c387d8e5632b4056227d24cfdbc9",
+    "c4d69a121246f7173c172590d1c85ab786c49fa3d58ea44606bb51be6e47a771",
+    "f216a7da904f738721c44413204d38b5799eb5acfe2f3c77d345995a21c71de9",
+    "f5335bbe370872ebca3c0311896fd113cd6faabecb82fa2ee55f85ee49e35e7a",
+    "5a06084bddd736f543fd903f3c2683abfcc82b51c602d800e3e8aaa8c45c22fd",
+    "a73809db9653992a22efe63774c3bd25d9340f7db6f10d60094d9f77656d05bc",
+)
 EFFECT_PROFILE_FIELDS.update({
  "material-floor-inventory":["inventory_boundary","recipient_evidence","continuity","breach_remedy","ecology_non_substitution"],
  "liberty-power-limit":["holder","duty_bearer","protected_choice","lawful_limit","notice_reasons","challenge_review","remedy","failure_default"],
@@ -513,7 +569,7 @@ POWER_BOOK2_OWNER = (
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
-        "21a8136a82c2f80fb08828f06d232ac2b3e8fb89310c47a935c07b7c6c2031d9"
+        "798f257a3f0ac4bd0647b82ebb5847e9b4efec0a4e10f17d4cada1544e8d3f40"
     ),
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": (
@@ -1686,7 +1742,7 @@ def validate_coverage_families(src: dict, ids: dict):
         assigned_refusals.extend(rec["refusal_refs"])
         assigned_crosswalks.extend(rec["crosswalk_refs"])
         assigned_effects.extend(rec["effect_refs"])
-        statement_policy={"FS-CVF-011":(UNIVERSAL_STANDING_STATEMENT_IDS,"universal-standing"),"FS-CVF-012":(LIBERTY_ECOLOGY_STATEMENT_IDS,"liberty-and-ecology")}
+        statement_policy={"FS-CVF-011":(UNIVERSAL_STANDING_STATEMENT_IDS,"universal-standing"),"FS-CVF-012":(LIBERTY_ECOLOGY_STATEMENT_IDS,"liberty-and-ecology"),"FS-CVF-013":(EQUALITY_STATEMENT_IDS,"substantive-equality")}
         if rec["id"] in statement_policy:
             owned_ids,label=statement_policy[rec["id"]]
             expected=list(owned_ids) if rec["state"] in {"formalized","prose-landed"} else []

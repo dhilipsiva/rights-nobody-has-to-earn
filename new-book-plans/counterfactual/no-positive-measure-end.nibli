@@ -558,7 +558,6 @@ all $x: person($x) -> prevents($x, UnnecessaryPositiveMeasure).
 all $x: person($x) -> prevents($x, UnboundedPositiveMeasure).
 all $x: person($x) -> prevents($x, PoliticalEqualityMeasureEvasion).
 all $x: person($x) -> prevents($x, ReusableEligibilityIdentity).
-all $x: person($x) -> prevents($x, ExpiredPositiveMeasureContinuation).
 all $x: person($x) -> prevents($x, UnrepairedHistoricalBarrier).
 all $x: person($x) -> prevents($x, HistoricalAccountabilityErasure).
 all $x: person($x) -> prevents($x, EqualityInitiationBlock).
@@ -768,7 +767,7 @@ all $contributor: all $task: work($contributor, $task) & ~false($contributor) ->
 # ~($a = $b) is kept even though the bodies now differ. Nothing stops one
 # person holding both pens, and if that ever becomes possible this conjunct is
 # the only thing between it and self-cosigning.
-all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) -> false($audited).
+all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) -> false($audited).
 all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 # [v0.9 2026-08-02] ~false($auditor) added: the THIRD DOOR closes on voiding.
 # Chapter 10 said all three recognition doors shut for a voided person; the

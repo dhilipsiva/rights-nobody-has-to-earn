@@ -19,7 +19,7 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "01e75260673a096b9b5eba83de2918b7aba105c727882822dae5cf3f02945d3c",
+  "rules_sha256": "231b03a4487a723548531becfcc98bdce6c75b98f6637f227387cdf70007e2bd",
   "facts_sha256": "9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
@@ -81,9 +81,9 @@
     "passport": "c47b9efbe78a749ef231d071256dae315035d833cb1e982c46a001abc2e69ada",
     "permanent": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "permits": "4f0d2565d9b7a58b027f790dc0ccbfd136206e5ca54cc64b1a7a089761b8f6d8",
-    "person": "2307657b0335de6d3fae165ad5624f761f598470b3a4db1fb00630521fef6a1a",
+    "person": "a6439fd252eca1414050090d64f61cb8af7bc7fd4c67cf2bcc6e1edbe51b5d0b",
     "precede": "ba77ee02f994d1dbf8f31a424fb2b74cc92d27edc27f0c0cc1bfecc6c357dbb1",
-    "prevents": "421ee8eb0fb17874bb5750145c8cbe03522e7d8e2a2645715506dfb033a62ee3",
+    "prevents": "cd48789c96794123f4ad5bcc45cf3737305e2ce551c4bbaa1e0204f77576df2d",
     "prisoner": "eb0b31e8567cebf1c86b81790f0c3cf596b61cae3e42fd0c2e3d73db2fdffd3d",
     "public": "6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60",
     "put": "afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627",

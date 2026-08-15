@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-16-substantive-equality-coverage-v1",
+  "source_version": "fs-ledger-2026-08-16-substantive-equality-formal-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -1793,25 +1793,26 @@
       "class_refs": [
         "class-01"
       ],
-      "posture": "Specified",
-      "unimplemented_marker": true,
+      "posture": "Derived",
       "route_ref": "FS-RTE-01",
       "overlay": "none",
-      "scope_bound": "the ratified contract as stated; no predicate exists",
+      "scope_bound": "the ratified equality forms, reach, proof, accessibility, diagnostic, positive-measure, repair, federal, and narrowed-distinction effects over supplied premises",
       "evidence_notes": [
-        "controlling record: the substantive-equality decision"
+        "new-book-plans/substantive-equality.pins.nibli executes every FS-CCE-34 through FS-CCE-87 effect boundary",
+        "three equality counterfactuals execute removal of direct discrimination, the diagnostics wall, and the positive-measure end"
       ],
-      "public_claim_restriction": "no claim that equality protection currently operates",
+      "public_claim_restriction": "No claim that equality institutions, diagnostics, accommodations, programmes, remedies, or data systems operate or that any population fact is authenticated.",
       "applicability": "every person",
-      "status": "ratified-unimplemented",
-      "severity": "critical while unimplemented",
-      "consequence": "no equality vocabulary exists in the record",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "the equality rule families land with pins and counterfactuals",
+      "status": "current",
+      "severity": "critical if the formal equality boundary is removed or bypassed",
+      "consequence": "protected-ground disadvantage, inaccessible routes, diagnostic scoring, or unbounded positive measures can escape the typed review and remedy boundary",
+      "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
+      "closure_condition": "the registered equality rules, 58-pin suite, three removal counterfactuals, and coverage-family gate remain green",
       "envelope_id": "FS-ENV-00",
       "closure_requirement_refs": [
         "FS-CLR-03"
-      ]
+      ],
+      "evidence_kind": "executable"
     },
     {
       "id": "FS-CLM-03",
@@ -6609,7 +6610,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "21a8136a82c2f80fb08828f06d232ac2b3e8fb89310c47a935c07b7c6c2031d9",
+    "artifact_sha256": "798f257a3f0ac4bd0647b82ebb5847e9b4efec0a4e10f17d4cada1544e8d3f40",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -82736,7 +82737,7 @@
     {
       "id": "FS-CVF-013",
       "title": "Substantive equality and anti-subordination constitutional effects",
-      "state": "coverage-ready",
+      "state": "formalized",
       "source_family_refs": [
         "substantive-equality-and-anti-subordination"
       ],
@@ -82800,12 +82801,73 @@
         "FS-CCE-86",
         "FS-CCE-87"
       ],
-      "formal_statement_refs": [],
-      "pin_group_refs": [],
-      "counterfactual_refs": [],
+      "formal_statement_refs": [
+        "785bdec1dac6890ad0d9abf75d896d0c30935aff75254de8194fc0ab7765c72c",
+        "1e8cd72378d2f4eb3fbe18b51b905428102cf085c6b515dbea75f0de6544ea9c",
+        "f003dc353d3b29ed7f7dbc6f091f2f34f4c908b12b3b9f30e14294a02a9de818",
+        "202373ba4ce9c4fdfe0b4cc9de2cd442f2f2e31011ba61084538cb61c6f3722c",
+        "8e8ae8aaee6447d0d9317c9fccc11c532734f0573c4c03d27a0cd8a22e80e9f7",
+        "17e1d36abe0636c759bbfcf430f2becb89fdb8420bff8455b238a4f0dbce79b5",
+        "884608dd758f6cb991268bcdec22380bc680a32dd97af6081aae59a399c9a611",
+        "e62f850f59d5e115f1a476e13fdfd431e5a838064f8c96da191c207393a471ef",
+        "55603d936de1a45957058ef47fdbbef4426886f77a88cf6bc50b37fea607e9f8",
+        "af65ef4a6778aa49138b41101a1a6835e65948d8771108574c210fdc2f1abb21",
+        "9e7d5f63e0f6af43e4a81057cf762f2485d613f3b7bda1b3d2f4fc420420b996",
+        "c467464c89b1e50e17acff0c993c38992398e4bfed86f438cf61c03daef31337",
+        "e919f4f7ed14f8139a406a39d77c71e1aeeb4503a05b37547bd2cb2a8cf5305c",
+        "3a04ecb9237ea09ab6824a0de6b6841862ab0e30312b12eef127df756a547eb2",
+        "b8c849194e86ac82da9dead8f95d61e3730df9cce9f82e867fc1d0b48c338c99",
+        "81376bef276f0c2845532f20d25420f72b950c4a3a6839feac6c2360f8f2c08b",
+        "b1a878aecd175021333ec36b9ce62f7c2aae1213879590b75115316012ba0a5f",
+        "a1443514da8922d9c299daafd04c46ada6ef24110363af81df884c899399afca",
+        "7d18c550d4d404b086ba502aca0c156910f8c88a3d57a75e1c6db5789d0dbf60",
+        "12560623054d6d0629b1244f8b5e44a6a1c95fd57ffaa9aad96c514fa1914293",
+        "8bc2374a7e6f7def90a8c9c9e5e32ac4d3dfd778723f5fe37deefdd1d77a91e8",
+        "9042b3a1d76ba82fc52095e469cd762d8e6bee3d0853723d484dfbd79b678195",
+        "5176f7794546335ca513e19757728a7fdf61f9b74ddfb62123f2e37626ce9529",
+        "6e612ef33471db7a5e205915e474f221806ede17ed587c5b5ea25dabce271dad",
+        "ea6073e25c5aafe7e6302599f62d0ca9b90012ecf96027d2a0b19ec216aa74bd",
+        "618eaf9d9e0ac8e4733c0c1a333d8ec24c3fc97eae5c71492ce84112dc248731",
+        "6a2998193851fc56dad54d380735bc5f6adc7e07283e347463e8d1fa1446d933",
+        "9a187aecb889d21bce360986b6e3eb878fea361beb3b4cd5a161e6713db6fd26",
+        "3b2c40f8eccf7dec9e1909d8260df9f0751ac899342da26df4017cb8453e295c",
+        "5a26bd1ffbcddcf86bad8601a850ab8a872e3b6517195f1d696e06a5ed9992ac",
+        "416882245f01afd29f67f9d51b794a63fe9148cb4b7e5e370df3c4c810d9a277",
+        "92578c4d3d7e0e03c2201564acc5fe7978e98c52b78e566040ec4b56fe263894",
+        "d1cadc8edfa8266a8d148fdb1dd007b7aafca032bc27604a8a761ef785adc421",
+        "76243300ddd45079cb8960f4ef101dc0d5be51335f0adf3b56cd0c0cbc6d7247",
+        "1b16feb27ef2d960096a049ff453f4a6b737e21b53ffb9ba4715fdfe151a4fae",
+        "30662c71136d8534623e83da6b0304e447b1b9d5c9061cbea5b14f1a1dd80670",
+        "f3188eeaeb88e2adfc067971d910b78d23e5c16262ae522d15b403bef61b42bc",
+        "72dd9459072f34c05ee980dec76239e3caf2355cc2c5aa016db8eb15a36103f5",
+        "2dea63f8495bba363a1441ee71eecc5a5c98fe7b92454b06f208b26680978cd7",
+        "fa12d58d8b8b6da30fffdf5d82e1762fc89042f742c5036f1c2741990bd1eede",
+        "57e14a3b6ce5555e863963de0682c419c184ec816f5ce0cca8be1c9c39cd67b9",
+        "00720752bc16c55aec549a57a48e505c3f5055de3c6d019a7338d8f0abf36e52",
+        "a6e9673b829bfa6e2d5985328bb49e6669274302cbd839485a8e9f6546a92df2",
+        "79eaa86280e9069ae70daeb315fef3d3f52a6bfd69819070d08ce3804fd11601",
+        "a843992ae640893d171cda7484a0fd9d7b9b178f718b001c247f35d417637109",
+        "6fe12c1bc0d0ba03316cace645eba543a99cdc8e263f0aa9836bb3b9e2db53b2",
+        "213a603242de02bb37af704298b344b986736e8941527cdf82675298118cf43f",
+        "a87f6cc7920d941766e4546cf288ce0326de046f866bb258904a97e172a4ac0f",
+        "188f7adb2dd576cdb8f48cfb8f3a3b8f7986c387d8e5632b4056227d24cfdbc9",
+        "c4d69a121246f7173c172590d1c85ab786c49fa3d58ea44606bb51be6e47a771",
+        "f216a7da904f738721c44413204d38b5799eb5acfe2f3c77d345995a21c71de9",
+        "f5335bbe370872ebca3c0311896fd113cd6faabecb82fa2ee55f85ee49e35e7a",
+        "5a06084bddd736f543fd903f3c2683abfcc82b51c602d800e3e8aaa8c45c22fd",
+        "a73809db9653992a22efe63774c3bd25d9340f7db6f10d60094d9f77656d05bc"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/substantive-equality.pins.nibli::# Substantive equality and anti-subordination executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-direct-equality.pins.nibli::# Counterfactual: direct-discrimination protection deleted",
+        "new-book-plans/counterfactual/no-equality-data-wall.pins.nibli::# Counterfactual: equality-diagnostic data wall deleted",
+        "new-book-plans/counterfactual/no-positive-measure-end.pins.nibli::# Counterfactual: positive-measure temporal end deleted"
+      ],
       "prose_refs": [],
       "part_v_refs": [],
-      "blocked_before_drafting": "Claim-bearing equality prose is blocked until the 54 effects are formalized with executable pins and counterfactuals; Book 2 operations remain outside this family.",
+      "blocked_before_drafting": "The equality family is formally verified; claim-bearing prose remains blocked until the opening note, all numbered chapters, Part V, and method have been audited and the declared prose references land.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -105872,6 +105934,51 @@
       "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-14",
+      "title": "Substantive equality formalization current-source repository adversarial audit",
+      "source_version": "fs-ledger-2026-08-16-substantive-equality-formal-v1",
+      "scope_sha256": "fc820a119d1e59548259e32a9275ededf5e135c7acb5a4f9804aaba6cb879ba2",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-16T10:00:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -114859,12 +114966,12 @@
       "effect_key": "substantive-equality-status",
       "applicability": "Every person holds equal legal status without any worth, risk, entitlement, contribution, or character score.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without equal status without scoring, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-03"
@@ -115059,25 +115166,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-34-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the equal status without scoring boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-34 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-34-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equal status without scoring and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-34 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
@@ -115090,12 +115197,12 @@
       "effect_key": "anti-subordination-baseline",
       "applicability": "Law and delegated action must not create, reproduce, or entrench a group's inferior civic, material, or institutional position.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without anti-subordination baseline, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-03",
@@ -115291,25 +115398,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-35-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the anti-subordination baseline boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-35 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-35-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for anti-subordination baseline and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-35 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 1. Decision",
@@ -115322,12 +115429,12 @@
       "effect_key": "open-protected-grounds",
       "applicability": "Protected grounds remain open and cover actual, past, anticipated, attributed, perceived, associated, and combined status without becoming a personal score.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without open protected-ground architecture, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-07"
@@ -115522,25 +115629,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-36-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the open protected-ground architecture boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 3. Protected grounds",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-36 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-36-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for open protected-ground architecture and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 3. Protected grounds",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-36 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 3. Protected grounds",
@@ -115553,12 +115660,12 @@
       "effect_key": "direct-discrimination",
       "applicability": "Less favourable treatment because of a protected ground is direct discrimination and receives the direct-distinction test.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without direct discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -115812,25 +115919,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-37-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the direct discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-37 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-37-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for direct discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-37 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -115843,12 +115950,12 @@
       "effect_key": "indirect-discrimination",
       "applicability": "A facially neutral rule with disproportionate protected-ground disadvantage is indirect discrimination and receives its own justification test.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without indirect discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -116102,25 +116209,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-38-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the indirect discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-38 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-38-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for indirect discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-38 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -116133,12 +116240,12 @@
       "effect_key": "systemic-discrimination",
       "applicability": "Interacting rules, practices, or institutional patterns that reproduce protected disadvantage are reviewable without requiring one intentional actor.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without systemic discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04",
@@ -116393,25 +116500,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-39-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the systemic discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-39 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-39-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for systemic discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-39 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -116424,12 +116531,12 @@
       "effect_key": "multiple-discrimination",
       "applicability": "Distinct adverse acts on more than one ground remain separately visible and remediable.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without multiple discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -116624,25 +116731,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-40-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the multiple discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-40 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-40-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for multiple discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-40 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -116655,12 +116762,12 @@
       "effect_key": "intersectional-discrimination",
       "applicability": "A combined-ground harm that cannot be understood through one-ground comparators remains independently cognisable.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without intersectional discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -116855,25 +116962,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-41-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the intersectional discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-41 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-41-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for intersectional discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-41 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -116886,12 +116993,12 @@
       "effect_key": "associative-discrimination",
       "applicability": "Adverse treatment because of a person's relationship with or support for another protected person is prohibited.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without associative discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-03"
@@ -117086,25 +117193,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-42-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the associative discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-42 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-42-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for associative discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-42 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -117117,12 +117224,12 @@
       "effect_key": "accommodation-denial",
       "applicability": "Failure to provide a required reasonable accommodation is discrimination unless the institution-wide undue-burden exception is proved.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without accommodation denial as discrimination, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -117379,25 +117486,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-43-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the accommodation denial as discrimination boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-43 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-43-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for accommodation denial as discrimination and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-43 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -117410,12 +117517,12 @@
       "effect_key": "segregation-exclusion",
       "applicability": "Imposed protected-ground segregation, exclusion, or an inferior parallel route is prohibited.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without imposed segregation and exclusion, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01",
@@ -117663,25 +117770,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-44-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the imposed segregation and exclusion boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-44 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-44-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for imposed segregation and exclusion and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-44 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -117694,12 +117801,12 @@
       "effect_key": "equality-harassment",
       "applicability": "One grave act or cumulative conduct that creates a hostile, degrading, humiliating, or intimidating protected-ground environment is prohibited.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without equality harassment, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01",
@@ -117955,25 +118062,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-45-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the equality harassment boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-45 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-45-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equality harassment and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-45 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -117986,12 +118093,12 @@
       "effect_key": "equality-retaliation",
       "applicability": "Retaliation for claiming, assisting, investigating, or reporting equality rights is prohibited and separately remediable.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without equality retaliation, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -118255,25 +118362,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-46-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the equality retaliation boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-46 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-46-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equality retaliation and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-46 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 2. Forms of discrimination",
@@ -118286,12 +118393,12 @@
       "effect_key": "public-delegated-equality-reach",
       "applicability": "Every public tier, institution, contractor, and delegated public function is directly bound by the equality baseline.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without public and delegated equality reach, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-06",
       "secondary_class_refs": [
         "class-01",
@@ -118487,25 +118594,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-47-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the public and delegated equality reach boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-47 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-47-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for public and delegated equality reach and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-47 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
@@ -118518,12 +118625,12 @@
       "effect_key": "named-private-equality-reach",
       "applicability": "Employment, housing, education, health care, utilities, finance, insurance, transport, communications, and public-facing goods and services bear the express private equality duty.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without named public-facing private reach, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01",
@@ -118720,25 +118827,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-48-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the named public-facing private reach boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-48 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-48-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for named public-facing private reach and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-48 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
@@ -118751,12 +118858,12 @@
       "effect_key": "public-equality-protection-duty",
       "applicability": "Each express private equality duty has a matching non-delegable public duty of prevention, investigation, continuity, and remedy.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without non-delegable public equality protection, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-06",
       "secondary_class_refs": [
         "class-01",
@@ -119019,25 +119126,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-49-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the non-delegable public equality protection boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-49 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-49-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for non-delegable public equality protection and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-49 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 4. Public and private reach",
@@ -119050,12 +119157,12 @@
       "effect_key": "voluntary-association-boundary",
       "applicability": "Intimate, affinity, cultural, safety, faith, and expressive association remains voluntary only with free exit and undiminished common rights and services.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without voluntary association boundary, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01"
@@ -119251,25 +119358,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-50-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the voluntary association boundary boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 5. Protected private and associative life",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-50 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-50-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for voluntary association boundary and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 5. Protected private and associative life",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-50 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 5. Protected private and associative life",
@@ -119282,12 +119389,12 @@
       "effect_key": "expressive-role-boundary",
       "applicability": "A mission-linked requirement is limited to a genuinely expressive role, must pass the direct-distinction test, and cannot govern commercial or essential access.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without genuinely expressive role boundary, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01",
@@ -119543,25 +119650,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-51-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the genuinely expressive role boundary boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 5. Protected private and associative life",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-51 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-51-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for genuinely expressive role boundary and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 5. Protected private and associative life",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-51 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 5. Protected private and associative life",
@@ -119574,12 +119681,12 @@
       "effect_key": "direct-distinction-test",
       "applicability": "An adverse direct distinction survives only on proof of a genuine determining necessity, exact fit, and no less discriminatory way to preserve the protected function.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without direct-distinction proof, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01"
@@ -119782,25 +119889,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-52-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the direct-distinction proof boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-52 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-52-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for direct-distinction proof and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-52 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
@@ -119813,12 +119920,12 @@
       "effect_key": "indirect-distinction-test",
       "applicability": "An indirect distinction survives only on proof of a compatible purpose, evidential fit, necessity, least-discriminatory means, and proportionality.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without indirect-distinction proof, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01"
@@ -120021,25 +120128,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-53-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the indirect-distinction proof boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-53 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-53-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for indirect-distinction proof and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-53 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
@@ -120052,12 +120159,12 @@
       "effect_key": "equality-core-nonbalancing",
       "applicability": "No equality justification may balance away standing, the material floor, core liberty, due process, the equal popular ballot, or an effective remedy.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without unabridgeable equality core, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-02",
@@ -120268,25 +120375,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-54-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the unabridgeable equality core boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-54 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-54-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for unabridgeable equality core and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-54 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
@@ -120299,12 +120406,12 @@
       "effect_key": "remedial-burden-shift",
       "applicability": "Credible adverse treatment, a barrier, or a relevant pattern shifts the remedial evidential burden without reversing any criminal burden.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without remedial equality burden shift, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -120508,25 +120615,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-55-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the remedial equality burden shift boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-55 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-55-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for remedial equality burden shift and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-55 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
@@ -120539,12 +120646,12 @@
       "effect_key": "respondent-record-evidence",
       "applicability": "Bare record absence is not withholding; non-production or destruction requires authenticated notice, opportunity, a source-bound deadline, an authorised finding, and review.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without authenticated absence evidence, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-04"
@@ -120806,25 +120913,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-56-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the authenticated absence evidence boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-56 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-56-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for authenticated absence evidence and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-56 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 6. Permissible distinctions and proof",
@@ -120837,12 +120944,12 @@
       "effect_key": "proactive-accessibility",
       "applicability": "Public and covered private routes must proactively address physical, sensory, cognitive, linguistic, digital, geographic, financial, and procedural access.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without eight-mode proactive accessibility, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-02",
       "secondary_class_refs": [
         "class-01",
@@ -121040,25 +121147,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-57-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the eight-mode proactive accessibility boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-57 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-57-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for eight-mode proactive accessibility and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-57 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
@@ -121071,12 +121178,12 @@
       "effect_key": "individual-accommodation",
       "applicability": "A person may require an individualized reasonable accommodation without surrendering standing, privacy, dignity, or ordinary rights.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without individual reasonable accommodation, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -121274,25 +121381,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-58-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the individual reasonable accommodation boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-58 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-58-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for individual reasonable accommodation and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-58 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
@@ -121305,12 +121412,12 @@
       "effect_key": "institution-wide-undue-burden",
       "applicability": "Undue burden is assessed across the responsible institution and available support, not the convenience or budget of one desk or provider.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without institution-wide undue-burden test, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -121568,25 +121675,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-59-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the institution-wide undue-burden test boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-59 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-59-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for institution-wide undue-burden test and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-59 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
@@ -121599,12 +121706,12 @@
       "effect_key": "equivalent-public-route",
       "applicability": "If one provider proves inability to perform, a public route must preserve equivalent timeliness, quality, dignity, privacy, and cost.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without equivalent public continuity route, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-06",
       "secondary_class_refs": [
         "class-01",
@@ -121853,25 +121960,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-60-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the equivalent public continuity route boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-60 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-60-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equivalent public continuity route and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-60 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 7. Accessibility and reasonable accommodation",
@@ -121884,12 +121991,12 @@
       "effect_key": "equality-diagnostics-data-wall",
       "applicability": "Equality diagnostics remain purpose-limited, privacy-preserving, independently governed, and outside the canonical consequential person record.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without equality diagnostics data wall, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-01",
@@ -122093,25 +122200,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-61-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the equality diagnostics data wall boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-61 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-61-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equality diagnostics data wall and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-61 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
@@ -122124,12 +122231,12 @@
       "effect_key": "aggregate-pattern-presumption",
       "applicability": "Relevant aggregate evidence may create a rebuttable remedial presumption and audit trigger but no adverse individual fact or verdict.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without aggregate pattern presumption, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-04"
@@ -122391,25 +122498,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-62-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the aggregate pattern presumption boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-62 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-62-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for aggregate pattern presumption and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-62 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
@@ -122422,12 +122529,12 @@
       "effect_key": "diagnostic-participation-noninference",
       "applicability": "Declining voluntary equality self-description creates no adverse inference, denial, sanction, or identity claim.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without diagnostic participation non-inference, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-01"
@@ -122630,25 +122737,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-63-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the diagnostic participation non-inference boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-63 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-63-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for diagnostic participation non-inference and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-63 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 8. Equality diagnostics and the data wall",
@@ -122661,12 +122768,12 @@
       "effect_key": "positive-measure-trigger",
       "applicability": "A positive measure is available only when ordinary equality, accessibility, and accommodation remain insufficient against evidenced disadvantage.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without positive-measure necessity trigger, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04",
@@ -122878,25 +122985,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-64-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the positive-measure necessity trigger boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-64 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-64-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for positive-measure necessity trigger and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-64 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
@@ -122909,12 +123016,12 @@
       "effect_key": "positive-measure-contract",
       "applicability": "Each positive measure requires a separately enacted objective, evidence, necessity, proportionality, eligibility, review, challenge, and end contract.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without bounded positive-measure contract, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-05",
       "secondary_class_refs": [
         "class-01",
@@ -123129,25 +123236,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-65-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the bounded positive-measure contract boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-65 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-65-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for bounded positive-measure contract and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-65 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
@@ -123160,12 +123267,12 @@
       "effect_key": "political-equality-measure-boundary",
       "applicability": "Candidate-list, nomination, outreach, and appointment measures preserve equal ballots, proportionality, anti-capture, and the ban on separate electorates or reserved seats.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without political equality measure boundary, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-05",
       "secondary_class_refs": [
         "class-01"
@@ -123378,25 +123485,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-66-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the political equality measure boundary boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-66 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-66-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for political equality measure boundary and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-66 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
@@ -123409,12 +123516,12 @@
       "effect_key": "positive-measure-eligibility-firewall",
       "applicability": "Eligibility evidence is purpose-limited, minimally necessary, contestable, and barred from reusable identity and consequential-person records.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without positive-measure eligibility firewall, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-01",
@@ -123685,25 +123792,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-67-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the positive-measure eligibility firewall boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-67 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-67-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for positive-measure eligibility firewall and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-67 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
@@ -123716,12 +123823,12 @@
       "effect_key": "positive-measure-temporal-end",
       "applicability": "A measure needs a fresh source-bound temporal contract, alternate review, a no-enlargement silence default, and ends when its objective is sustainably achieved.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without positive-measure temporal end, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -123934,25 +124041,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-68-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the positive-measure temporal end boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-68 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-68-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for positive-measure temporal end and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-68 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 9. Positive measures",
@@ -123965,12 +124072,12 @@
       "effect_key": "historical-barrier-repair",
       "applicability": "Public institutions must identify and repair continuing historical barriers while democratic law chooses compatible means and inherited guilt is prohibited.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without continuing historical-barrier repair, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -124182,25 +124289,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-69-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the continuing historical-barrier repair boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 10. Historical barriers and repair",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-69 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-69-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for continuing historical-barrier repair and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 10. Historical barriers and repair",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-69 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 10. Historical barriers and repair",
@@ -124213,12 +124320,12 @@
       "effect_key": "historical-record-disposition",
       "applicability": "Correction, sealing, or expungement appends a lawful disposition while preserving provenance, claims, remedies, and permanent historical public answerability.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without provenance-preserving historical disposition, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-01",
@@ -124489,25 +124596,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-70-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the provenance-preserving historical disposition boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 10. Historical barriers and repair",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-70 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-70-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for provenance-preserving historical disposition and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 10. Historical barriers and repair",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-70 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 10. Historical barriers and repair",
@@ -124520,12 +124627,12 @@
       "effect_key": "distributed-equality-initiation",
       "applicability": "Affected people, chosen supporters, qualified associations, and the rights advocate or ombud may initiate review without erasing direct self-assertion or the person's voice.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without distributed equality initiation, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -124737,25 +124844,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-71-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the distributed equality initiation boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-71 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-71-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for distributed equality initiation and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-71 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
@@ -124768,12 +124875,12 @@
       "effect_key": "equality-function-separation",
       "applicability": "Advocacy, investigation, adjudication, execution, audit, and final review remain institutionally separate.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without equality function separation, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-06",
       "secondary_class_refs": [
         "class-04",
@@ -124985,25 +125092,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-72-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the equality function separation boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-72 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-72-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equality function separation and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-72 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
@@ -125016,12 +125123,12 @@
       "effect_key": "individual-equality-remedies",
       "applicability": "Interim continuity, cessation, restoration, accommodation, correction, compensation or reparation, and anti-retaliation protection remain available as typed remedies.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without individual equality remedies, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01"
@@ -125232,25 +125339,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-73-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the individual equality remedies boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-73 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-73-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for individual equality remedies and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-73 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
@@ -125263,12 +125370,12 @@
       "effect_key": "systemic-equality-remedy",
       "applicability": "Related-case review, systemic redesign, monitoring, and non-repetition measures may repair an unlawful condition without diminishing another person's rights.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without systemic equality remedy, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -125480,25 +125587,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-74-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the systemic equality remedy boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-74 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-74-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for systemic equality remedy and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-74 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
@@ -125511,12 +125618,12 @@
       "effect_key": "court-nonadministration",
       "applicability": "Ordinary courts grant case relief and the Constitutional Court grants final general invalidation, while structural orders state the unlawful condition and required result without running administration.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without court non-administration boundary, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-06"
@@ -125727,25 +125834,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-75-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the court non-administration boundary boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-75 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-75-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for court non-administration boundary and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-75 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 11. Standing, institutions, and remedies",
@@ -125758,12 +125865,12 @@
       "effect_key": "federal-equality-portability",
       "applicability": "Every jurisdiction preserves the common equality baseline, portable protection, equalization duties, and an accessible cross-jurisdictional remedy.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without federal equality portability, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-08",
       "secondary_class_refs": [
         "class-01",
@@ -125969,25 +126076,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-76-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the federal equality portability boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 12. Federal and democratic effect",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-76 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-76-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for federal equality portability and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 12. Federal and democratic effect",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-76 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 12. Federal and democratic effect",
@@ -126000,12 +126107,12 @@
       "effect_key": "cross-boundary-equality-corridor",
       "applicability": "Laws, initiatives, amendments, regional rules, secession terms, and emergencies remain inside the common anti-subordination and political-equality corridor.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without cross-boundary equality corridor, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-08",
       "secondary_class_refs": [
         "class-01",
@@ -126212,25 +126319,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-77-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the cross-boundary equality corridor boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 12. Federal and democratic effect",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-77 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-77-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for cross-boundary equality corridor and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 12. Federal and democratic effect",
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-77 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 12. Federal and democratic effect",
@@ -126243,12 +126350,12 @@
       "effect_key": "family-distinction-narrowing",
       "applicability": "Family status may identify a relevant legal relation but cannot substitute for consent, care, authority, standing, or equal entitlement.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without family distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -126426,23 +126533,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-78-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the family distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-78 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-78-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for family distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-78 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -126454,12 +126561,12 @@
       "effect_key": "home-distinction-narrowing",
       "applicability": "A home or household label may locate a relationship but cannot justify exclusion, coercion, inherited duty, or inferior protection.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without home distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -126637,23 +126744,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-79-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the home distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-79 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-79-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for home distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-79 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -126665,12 +126772,12 @@
       "effect_key": "maturity-distinction-narrowing",
       "applicability": "Maturity evidence is decision-specific and cannot become a global capacity, worth, or entitlement score or create indefinite childhood.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without maturity distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -126848,23 +126955,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-80-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the maturity distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-80 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-80-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for maturity distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-80 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -126876,12 +126983,12 @@
       "effect_key": "conviction-distinction-narrowing",
       "applicability": "A conviction record may support only a separately enacted, proportionate, time-bounded consequence with notice, review, and reintegration.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without conviction distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -127059,23 +127166,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-81-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the conviction distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-81 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-81-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for conviction distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-81 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -127087,12 +127194,12 @@
       "effect_key": "custody-distinction-narrowing",
       "applicability": "Custody never erases standing or equality and does not borrow, extend, or generalise the retained case-bound T3 Court authority.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without custody distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -127270,23 +127377,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-82-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the custody distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-82 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-82-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for custody distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-82 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -127298,12 +127405,12 @@
       "effect_key": "official-status-distinction-narrowing",
       "applicability": "Official status supplies only the competence of a named office and never superior personal worth, immunity, or untyped authority.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without official-status distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -127481,23 +127588,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-83-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the official-status distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-83 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-83-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for official-status distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-83 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -127509,12 +127616,12 @@
       "effect_key": "placement-distinction-narrowing",
       "applicability": "Residence or placement may allocate a lawful jurisdictional duty but cannot lower the common baseline or make protection depend on local acceptance.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without placement distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -127692,23 +127799,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-84-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the placement distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-84 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-84-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for placement distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-84 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -127720,12 +127827,12 @@
       "effect_key": "voiding-distinction-narrowing",
       "applicability": "A voiding consequence requires a typed source, affected act, notice, reasons, challenge, and remedy and cannot follow from status alone.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without voiding distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -127903,23 +128010,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-85-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the voiding distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-85 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-85-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for voiding distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-85 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -127931,12 +128038,12 @@
       "effect_key": "recognition-nonoperation-retained",
       "applicability": "Recognition remains evidential and non-operative unless a separately enacted decision rule consumes it; it cannot silently confer or remove rights or authority.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without recognition non-operation retained, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-01"
@@ -128113,23 +128220,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-86-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the recognition non-operation retained boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-86 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-86-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for recognition non-operation retained and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-86 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
@@ -128141,12 +128248,12 @@
       "effect_key": "qualification-distinction-narrowing",
       "applicability": "A qualification may govern a named function only through relevant, contestable criteria and cannot become a general civic-status or entitlement barrier.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the equality boundary is omitted or collapsed",
       "consequence": "Without qualification distinction narrowed, protected status, access, proof, or remedy can be denied or overclaimed.",
       "owner_ref": "TODO.md::Establish substantive equality and anti-subordination across domains",
       "closure_condition": "FS-CVF-013 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -128324,23 +128431,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-87-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to bypass or collapse the qualification distinction narrowed boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-87 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-87-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for qualification distinction narrowed and show that protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/substantive-equality.pins.nibli::# FS-CCE-87 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns data collection, statistical methods, staffing, costs, programme design, monitoring, enforcement workflows, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::## 13. Book 1, Book 2, and formal migration"

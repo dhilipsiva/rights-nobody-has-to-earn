@@ -545,6 +545,14 @@ out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/liberty-environment.pins.ni
   && pass "$out" \
   || fail "liberty and ecological execution failed" "$out"
 
+# 5d. substantive-equality and anti-subordination non-power family
+# This executes normative barriers only. It supplies no population statistics,
+# identity authentication, programme operation, delivery, or T3 evidence.
+step "substantive equality executions"
+out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/substantive-equality.pins.nibli 2>&1) \
+  && pass "$out" \
+  || fail "substantive equality execution failed" "$out"
+
 # ── 6. bounded record-snapshot red-team ─────────────────────────────────────
 # These ephemeral KBs exercise additions, exact deletions, two-entry matrices,
 # and the remaining single-snapshot record levers. They stay outside the chapter
@@ -610,7 +618,7 @@ step "counterfactuals"
 #
 # NOTE these pins are OUTSIDE the :expect-pins reconciliation above, checked
 # per-file here. Do not "fix" the headline sum to include them.
-for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-dead-conjuncts:1:1             unguarded-pen:0:1 undelivered-marker:0:1; do
+for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-direct-equality:1:0             no-equality-data-wall:1:0 no-positive-measure-end:1:0             no-dead-conjuncts:1:1 unguarded-pen:0:1 undelivered-marker:0:1; do
   f=${spec%%:*}; want="${spec#*:}"
   removed=$(diff "$KB" "$CF/$f.nibli" | grep -c '^<')
   added=$(diff "$KB" "$CF/$f.nibli" | grep -c '^>')
