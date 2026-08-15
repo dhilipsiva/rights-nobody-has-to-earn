@@ -44,11 +44,12 @@ then a full-society expansion backlog and cross-cutting sections:
    settled, as are the assurance portfolio, the narrative register, and the
    reader-evidence protocol with its threshold timing. Execution of the human
    reader route and its reserved post-pilot threshold ruling was withdrawn from
-   the current Book 1 program at `907ddd0`. Neutral inventory and
-   decision briefs may proceed in parallel; each still-gated domain's rules,
-   prose, and public claim wait for its own ruling. The reader route remains
-   dormant and Gate C remains unsatisfied. This section has been destroyed by
-   tooling once and is watched accordingly.
+   the current Book 1 program at `907ddd0`. The 2026-08-15 ruling at
+   `a8d6fd5` makes R6 optional and removes external-human participation from
+   Gate A, Gate C, Gate E, publication, and project completion. Neutral inventory
+   and decision briefs may proceed in parallel; each still-gated domain's rules,
+   prose, and public claim wait for its own author ruling. This section has been
+   destroyed by tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision,
    versioned ecological/animal finding-boundary, and multi-power/multi-window
    protective-authority capability audits are closed and recorded in source-bound
@@ -61,8 +62,9 @@ then a full-society expansion backlog and cross-cutting sections:
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
    versioned claim-assurance, defect-disposition, and response-stage map for
-   declared social axes and envelope, a functional cross-domain model, and a balanced
-   reader-experience contract, ordered from scope mapping through public review.
+   declared social axes and envelope, a functional cross-domain model, and a
+   reader-facing structural contract, ordered from scope mapping through the
+   repository adversarial audit and author closure.
 
 The remaining sections are cross-cutting: the book-1 work that remains around the
 finished text (the pre-expansion text was complete as of 2026-08-03 — epigraph, opening note,
@@ -125,9 +127,9 @@ are also settled, as are the assurance portfolio, the narrative register, and
 the reader-evidence protocol with its threshold timing. Execution of that
 protocol and its reserved threshold ruling is withdrawn from the current Book 1
 program at `907ddd0`; no pilot, threshold, holdout, accessibility pass, or
-reader claim follows. Scope inventory and other author-ruling work may proceed,
-but Gate C remains unsatisfied and the project may not present withdrawal as
-completion.
+reader claim follows. Scope inventory and other author-ruling work may proceed.
+Gate C remains open only for its mechanical artifact and release work; the
+project may not present withdrawal as completion of those checks.
 
 - [ ] **[AUTHOR-DRAFTED] Bring the existing ordinary-life passage into
   conformance, or record the exception as permanent.**
@@ -284,78 +286,47 @@ task solely to `book-2/TODO.md`. Content commit `ab814fc` adds the structural
 reader projection and corrects Gate A's condition-one and condition-three
 computations without weakening any later-gate claim blocker. The source-derived
 power population landed through the staged family commits, with the final
-formal-transition batch at `7e5b5f6`. The ledger item now runs
-the independent review and closes Gate A last.
+formal-transition batch at `7e5b5f6`. The repository adversarial audit landed
+at `a8d6fd5`; the ledger item now closes Gate A by author ratification last.
 
 - [ ] **Complete the full-society domain-and-layer ledger.**
-  - The canonical source, generator, defect ledger and receipts, coverage-map
-    region, Book 2 crosswalk, review machinery, amended and confirmed
-    scope-review protocol v2, append-only commission mechanics, and the
-    severity-owner and independent-checker designation (Darshu; Dhanush) are
-    landed and
-    verifier-enforced. History lives in git and the settled record in
-    `CLAUDE.md`; schema detail lives in the generator and the controlling
-    decision records, not here. The 210 powers, one cross-power temporal
-    template, 19 refusals or limits, eight formal dispositions, and 210
-    power-bound function allocations landed at `7e5b5f6`. What remains is
-    exactly what the computed Gate A readiness list still refuses, in
-    dependency order below.
-  - **Sibling populations (closure condition one).** Role records
-    (FS-ROL, 579f8b1), dependency records (FS-DEP, 4beaa58), and
-    scenario records (FS-SCN, ad58f74) are landed with their deferrals
-    removed. The source-derived FS-POW cards, template, refusals, formal
-    dispositions, bodies, roles, and allocations culminated at `7e5b5f6` and
-    removed the sole remaining condition-one deferral; condition one now
-    computes `met-in-form`.
-    Proposals and review events remain truthful stage-4 deferrals owned only
-    by condition five; counting those review outputs before the review would
-    make commissioning circular. Standing maintenance rides along: the two
-    live-read closures (enum mapping,
-    residual-coverage citation), receipts, and generated resolution must stay
-    green as sibling sources change, and `verify.sh` enforces that.
-  - **Projections (condition two).** The role matrix, dependency map,
-    assurance allocation, and structural reader ledger have landed and
-    regenerate from the canonical source. The reader projection binds every
-    canonical population but supplies no R6 evidence, comprehension result,
-    accessibility validation, reader-suitability claim, Gate C evidence, or
-    route availability. Readiness now computes `met-in-form`; no projection
-    substitutes for another.
-  - **Later-gate defect rows (not Gate A condition three).** The reviewed
-    gate-applicability contract keeps Gate A relative to its map-and-test-
-    program claim while preserving every claim-level block. FS-DFT-16
-    closes when the accessibility-neutral delivery and receipt rule families
-    land, with the pinned-case rebalance sequenced after. FS-DFT-17 additionally
-    requires admissible operational evidence that a floor item actually
-    arrived. FS-DFT-28 requires the record rule families plus external
-    operational assurance. This is rule-family and evidence work owned by its
-    own items, not ledger bookkeeping, and disclosure alone does not cure it.
-    They remain visible blockers at their applicable later gates.
-  - **[AUTHOR-GATED] Commission and run the independent scope review
-    (condition five).** In the confirmed protocol's own order: name the
-    reviewers — real people under its selection criteria; the designation
-    precedent holds, and placeholders and AI agents are refused — then
-    construct the plant and seed pre-images (author-held, outside the repo)
-    and publish the commitment digests in a dated commit before the received
-    window opens; issue the packet; Darshu triages every proposal under the
-    confirmed rubric and Dhanush checks each classification; every proposal
-    receives one public disposition; reveal and adjudicate both controls.
-    Run it against the completed map: the review binds a source version, and
-    spending it on a map with open deferrals wastes the plant.
-  - **[AUTHOR-GATED] Close Gate A with the closure record.** Deliberately
-    unreachable today because condition five has no independent event and the
-    gate status is pinned not-passed. Closing
-    is its own ratified contract amendment binding the gate, permitted claim,
-    source version, versioned-structure envelope, candidates, review cutoff,
-    the independent event, assurance records, residuals, claim limits, and the
-    author's ratification. Calibration remains Book 2 Gate D work.
-  - **Done when:** every projection regenerates from the canonical source and an
-    independent scope review can name no material omitted domain, role,
-    dependency, or failure without the ledger adding it, classifying it out with
-    reasons, or recording a visible severity-rated limit. The closure record
-    binds the gate, claim, source version, envelope, candidate, review cut-off,
-    assurance records, residuals, and claim limits. This is versioned
-    exhaustiveness for those declared axes, not a timeless completeness theorem,
-    and disclosure alone does not cure a critical gap.
+  - The canonical source, 210 legal-effect power cards, one cross-power temporal
+    template, 19 refusal/limit rows, eight formal dispositions, 210 power-bound
+    allocations, defect ledger, projections, and constitutional-closure audit
+    are complete and verifier-enforced. The source-derived population culminated
+    at `7e5b5f6`.
+  - Content commit `a8d6fd5` replaces the external-panel dependency with
+    `FS-SAU-01`, a current-source repository adversarial audit. R7 is
+    `built`; every declared criterion, checker entry point, command, and
+    Gate-A-applicable defect is bound to the semantic scope digest. Gate A
+    condition five now computes `met-mechanically`. External human review is
+    optional evidence and never blocks completion or publication.
+  - Gate A conditions one through five and the structural-envelope/rubric
+    preconditions are met in form or mechanically. This establishes only the
+    versioned, reviewable scope map and assurance program. It establishes no
+    independent-human warrant, reader response, external truth, operation,
+    delivery, feasibility, liveness, calibration, timeless completeness, or
+    authentication of the audit's own trust root.
+  - Later-gate defects remain owned by their substantive tasks. In particular,
+    FS-DFT-16, FS-DFT-17, and FS-DFT-28 are not ledger bookkeeping and are not
+    disguised as resolved. FS-DFT-20 is now explicitly non-gating; the optional
+    reader-balance claim remains Unestablished unless optional R6 evidence later
+    supports it.
+  - **[AUTHOR-GATED] Close Gate A with the closure record.** This is the only
+    remaining step in this TODO item. Use the verified content commit
+    `a8d6fd5` as the immutable candidate, record the exact verifier command
+    chain and transcript digest, and land a later deliberate author-ratification
+    amendment that populates the closure record and changes Gate A from
+    `not-passed` to `passed`. The record must bind `gate-a`, the exact
+    permitted claim, current source version and semantic digest, FS-ENV-01,
+    `FS-SAU-01` and its execution cutoff, checker-derived assurance and
+    residual sets, exact claim limitations, the candidate commit, verification
+    receipt, and a verbatim dated author act. Any semantic map change requires a
+    new repository audit and candidate. Calibration remains Book 2 Gate D work.
+  - **Done when:** that author-only closure commit passes the full verifier. The
+    only permitted claim is: “The project has a versioned, reviewable scope map
+    and assurance program.” No outside reviewer, reader, panel, facilitator,
+    coder, adjudicator, custodian, or participant is required.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
 
@@ -1441,16 +1412,16 @@ Gate B; it does not claim Book 2 operations or feasibility.
     evidence and Book 2 operations test behavior and scale. Do not assume either
     universal selfishness or universal altruism.
 
-### Expansion phase 4 — Build a reliably balanced non-specialist reader experience
+### Expansion phase 4 — Build a structurally navigable reader experience
 
 **Tracker:** Reader's Map in the exempt opening note (67a520e);
 reader-evidence execution withdrawn from the current Book 1 program (907ddd0).
 The latter removes the post-pilot threshold and reader-session objectives from
-this program without reporting completion, evidence, or a pass. Machine
-accessibility work remains open; R6 remains unbuilt, FS-CLM-37 remains
-Unestablished/route-unbuilt, and Gate C remains unsatisfied.
+this program without reporting reader evidence or a reader-result pass. Machine
+accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
+remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Build a reviewed reader-experience coverage ledger before rewriting.**
+- [ ] **Build a source-bound reader-experience coverage ledger before rewriting.**
   - For every derived chapter and substantive Part V passage record: social domain
     and rule family; normal function and protective/corrective function; setting;
     person posture (chooses, creates, cares, works, associates, requests, receives,
@@ -1501,10 +1472,10 @@ Unestablished/route-unbuilt, and Gate C remains unsatisfied.
     receipt proves only detection or specification; when a repaired passage omits
     its residual boundary; or when a confessed limit
     has no defect record, owner, claim restriction, and gate consequence.
-  - **Done when:** an independent reader can move from every claimed repair in the
-    book to a version-bound receipt, reproduce or inspect the assigned verification
-    route, and state both the resolution and its surviving boundary without giving
-    disclosure any credit as closure.
+  - **Done when:** every claimed repair has a version-bound receipt and the
+    generated navigation exposes its assigned verification route, exact resolution,
+    and surviving boundary without giving disclosure any credit as closure. No
+    external reader event is required.
 
 - [ ] **Rebalance the pinned case portfolio without fictionalising it.**
   - **This item is the consumer, not the fix.** The 2026-08-08 narrative-register
@@ -1569,14 +1540,15 @@ Unestablished/route-unbuilt, and Gate C remains unsatisfied.
     testable heading, reading-order, extraction, keyboard, navigation, link,
     and text-alternative check required by its snapshot-specific gate.
   - Human screen-reader validation was withdrawn from the current program at
-    `907ddd0`, not passed. Automated checks may warrant only properties of the
-    artifacts and may not support an accessibility-for-users claim.
+    `907ddd0` and is optional evidence, not a gate. Automated checks may
+    warrant only properties of the artifacts and may not support an
+    accessibility-for-users claim.
   - No meaning may depend only on colour, layout, vision, hearing, fine motor
     control, or specialist notation.
   - Readability formulas are diagnostic flags, not truth or pass/fail targets.
     Each visual must earn its cognitive and accessibility cost.
 
-### Expansion phase 5 — Evidence, psychology, and external review
+### Expansion phase 5 — Evidence, psychology, and repository red-team
 
 - [ ] **Apply claim-type-specific scientific, statistical, formal, and normative
   discipline to every expansion.**
@@ -1590,7 +1562,9 @@ Unestablished/route-unbuilt, and Gate C remains unsatisfied.
   - Normative claims need stated values, alternatives, trade-offs, dissent and the
     lawful author/democratic decision owner; citation can inform but cannot prove a
     value choice. Psychological/lived-experience claims need ethical methods and may
-    not be inferred from a formal or administrative record.
+    not be inferred from a formal or administrative record. If optional admissible
+    evidence is unavailable, omit the positive claim or keep it explicitly
+    Unestablished; no project gate waits for participants.
   - Pre-register acceptance criteria where feasible; publish code, data, provenance,
     sensitivity tests and null/negative results subject to privacy and licence. Use
     group-level outcomes for institutional repair, never individual worth.
@@ -1599,32 +1573,31 @@ Unestablished/route-unbuilt, and Gate C remains unsatisfied.
   - Test for autonomy, voice, non-humiliation, relatedness, meaningful control,
     retaliation, status competition, coercive incentives, learned helplessness,
     trust, care burden and the effects of being watched or scored.
-  - Use lived-experience review across ordinary and coercive institutions; do not
-    infer psychology, wellbeing or compliance from a formal proof or service record.
+  - Where optional lived-experience evidence exists, separate ordinary and
+    coercive institutions. Otherwise do not claim psychology, wellbeing, or
+    compliance from a formal proof or service record.
   - Protect refusal and exit where compatible with others' rights; conditions may be
     secured, but belief, eating, learning, treatment, relationship and fulfilment
     may not be compelled or certified.
 
-- [ ] **Run a multidisciplinary and lived-experience red-team before completion.**
-  - Include constitutional law, public administration, disability/accessibility,
-    public health, care/childhood/ageing, labour and enterprise economics, consumer
-    and civil justice, policing/prison, media/science/culture/religious pluralism,
-    local/migration/indigenous governance, defence/foreign affairs, infrastructure,
-    ecology, data/AI governance, quantitative modelling and people directly affected
-    by the relevant institutions.
-  - Ask each reviewer to identify omitted domains, unowned dependencies, hidden
-    liveness assumptions, private-power blind spots, impossible operations,
-    totalising rules and narrative distortions. Give every submission a public
-    proposal disposition. A material finding creates or joins a stable defect ID
-    and its affected claim/consequence row with one current defect disposition and
-    stage; `fixed` is permitted only when the generated claim-relative resolution
-    receipt stays within its assurance ceiling. Classify a proposal out only with
-    reasons, or retain the defect with severity, consequence, owner, closure
-    condition, affected claims, and public-claim limitation. The named
-    severity owner applies the declared rubric and an independent checker reviews
-    it. A critical unresolved finding applicable to a gate's permitted claim
-    blocks that gate;
-    “disclosed” is not “safe”.
+- [ ] **Run the source-derived multidisciplinary adversarial audit before completion.**
+  - Encode the declared lenses for constitutional law, public administration,
+    disability/accessibility, public health, care/life course, labour/economy,
+    consumer/civil justice, policing/prison, media/science/culture/pluralism,
+    local/migration/collective governance, defence/external affairs,
+    infrastructure, ecology, data/AI governance, and quantitative modelling as
+    source-bound criteria and watched-failing mutations.
+  - The repository audit must identify omitted domains, unowned dependencies,
+    hidden liveness assumptions, private-power blind spots, impossible-operation
+    overclaims, totalising rules, and narrative distortions. Every material
+    finding creates or joins a stable defect ID with severity, consequence,
+    owner, closure condition, affected claims, applicable gates, and a public
+    claim limitation. Critical unresolved findings block only gates whose exact
+    permitted claim they affect; disclosure is not closure.
+  - External multidisciplinary or lived-experience submissions remain welcome
+    optional evidence. If received, give them traceable public dispositions, but
+    no recruitment, panel, submission, or response is required for completion.
+
 
 ### Explicitly rejected expansion proposals
 
@@ -1667,8 +1640,8 @@ operational, or reader test cannot substitute for an earlier missing condition.
   claim;
 - the versioned reference envelope, assurance allocation, stopping rule and
   decision briefs are reviewable; and
-- independent scope reviewers can propose no omission that is neither added,
-  classified out nor retained as an explicit severity-rated limit.
+- a current-source repository adversarial audit covers the declared criteria,
+  exact checker controls, command chain, and every Gate-A-applicable defect;
 - every material known defect has a stable ID and claim/consequence/scope row
   with one current defect disposition and response stage, the required evidence
   state or an explicit evidence gap and closure condition, and a generated
@@ -1712,33 +1685,33 @@ destination for its declared scope. It may not claim reader suitability,
 staffing, resources, feasibility, deployment, outside liveness, or an operational
 society.
 
-#### Gate C — Book 1 reader and public-edition readiness
+#### Gate C — Book 1 public-edition readiness
 
-- the full verifier, generated closure/reader audits, adversarial cases,
-  accessibility checks and multidisciplinary/lived-experience red-team pass;
-- each governed/provided domain has applicable ordinary-success, failure and
+- the full verifier, generated closure/reader projections, adversarial cases,
+  deterministic artifact checks, and mechanically testable accessibility checks
+  pass for the exact release candidate;
+- source, ordered inputs, artifact hashes, navigation, internal links, reading
+  order, text alternatives, licence/provenance, and the Gate C closure record
+  bind the exact HTML, EPUB, PDF, and print identities;
+- each governed/provided domain has applicable ordinary-success, failure, and
   recovery coverage; each protected private/civic domain has agency,
-  non-interference, evidenced-harm and recourse coverage; and no non-carceral domain
-  is explained only through prison, punishment or institutional failure;
-- a fresh holdout passes the author-ratified, pre-registered comprehension and
-  balance rule without an aggregate score hiding a core misconception; and
-- readers can identify normal functions, freedoms, democratic choices, guarantees,
-  remedies, Book 2 dependencies and external assumptions without reconstructing them
-  from scattered chapters.
-- readers can distinguish structural elimination, initiating-failure prevention,
-  protected-consequence containment, a specified remedy interface from
-  operationally evidenced recovery, each response stage, external bounds,
-  irreducible limits, and open defects; every claimed repair is traceable to its
-  version-bound reader and technical resolution receipt.
+  non-interference, evidenced-harm and recourse coverage; and no non-carceral
+  domain is explained only through prison, punishment, or institutional failure;
+- every claimed repair is traceable to a version-bound technical and reader-facing
+  resolution receipt, with structural elimination, prevention, containment,
+  remedy, external bounds, irreducible limits, and open defects kept distinct; and
+- no reader-comprehension, reader-suitability, lived-effect, or actual-user
+  accessibility claim is made without optional claim-appropriate evidence.
 
 **Artifact and permitted claim:** publish Book 1 — First Edition, its assembled
-digital artifacts, and its first Book 1 POD atomically under one provenance and
-Gate C closure record. The cumulative Gate B destination passed the declared
-accessibility and balance protocol for the tested sample; the evidence supports
-suitability for the declared audience within stated sampling and method limits.
-It is evidence about the book, not proof that the society is operational. If any
-matching source, artifact, POD identity, provenance, or Gate C record fails, the
-public object remains a preview and Book 2 does not activate.
+digital artifacts, and its first POD atomically under one provenance and Gate C
+closure record. The edition may claim exact source binding, artifact integrity,
+navigation, internal consistency, and mechanical accessibility. It may not claim
+suitability for a tested audience, accessibility for actual users, staffing,
+resources, feasibility, deployment, outside liveness, or an operational society.
+If any matching source, artifact, POD identity, provenance, or Gate C record
+fails, the public object remains a preview and Book 2 does not activate. No
+external reviewer or reader event is required.
 
 #### Gate D — Book 2 operational model
 
@@ -1753,9 +1726,10 @@ public object remains a preview and Book 2 does not activate.
   pre-registered adequacy, accessibility/equity, continuity, resilience,
   sustainability and fiscal/resource-feasibility thresholds in ordinary and
   declared shock cases;
-- the Book 2 reader/lived-operation view covers ordinary agency,
-  maintenance, failure/degradation and recovery and passes its declared
-  comprehension/balance protocol for the tested sample;
+- the Book 2 reader-facing structural view covers ordinary agency,
+  maintenance, failure/degradation, and recovery and passes its deterministic
+  source-binding, navigation, consistency, and artifact checks; any comprehension
+  or lived-operation claim remains optional and separately evidenced;
 - models publish code/data, uncertainty, sensitivity, negative results, capacity
   and failure boundaries; simulations and pilots state external-validity limits; and
 - any unresolved critical floor, equality, safety, capacity, feasibility,
@@ -1785,12 +1759,13 @@ functional society.
   liberties, equality, democracy, privacy and commons;
 - cross-domain journeys and compound shocks pass their declared safety, continuity,
   recovery and feasibility gates with no hidden critical assumption;
-- an integrated reader test can identify ordinary life, agency, maintenance,
-  constraints, failure and recovery across both books without reducing Book 2 to a
-  crisis/cost manual; and
-- independent constitutional, operational, scientific, lived-experience and
-  accessibility reviewers can reproduce applicable analyses, audit provenance and
-  methods for non-reproducible evidence, and identify residual limits.
+- the generated cross-book reader-facing projection exposes ordinary life,
+  agency, maintenance, constraints, failure, and recovery across both books
+  without reducing Book 2 to a crisis/cost manual; and
+- reproducible structural, model, provenance, assurance, and negative-control
+  checks pass for the exact pair, followed by an explicit author-ratification
+  record. Optional external evidence retains its own provenance and limits but is
+  not a Gate E dependency.
 - the paired releases generate one compatible cross-book defect projection:
   every Book 1 interface row has generated `resolved-for-claim` supported by an
   eligible defect disposition, claim posture, route, evidence, and, where liveness
@@ -1804,13 +1779,15 @@ functional society.
 **Artifact and permitted claim:** atomically publish Book 2 — First Edition and
 an immutable integrated release manifest pairing the exact compatible Book 1 and
 Book 2 editions, artifact hashes, canonical-source version, reference-envelope
-version, assurance and review records, external assumptions, and residual limits.
+version, assurance and audit records, external assumptions, and residual limits.
 If the pairing, integrated checks, or manifest fails, Book 2 remains a preview or
 release candidate. Only Gate E permits the bounded claim that the exact paired
-editions model a fully functional society for the declared reference envelope.
-The claim remains versioned, falsifiable and open to the stopping rule; it never
-means successful deployment, timeless completeness, prescription of every
-harmless private life, or control of every external condition.
+editions provide a reproducible integrated constitutional and operational design
+for the declared
+reference envelope. The claim remains versioned, falsifiable and open to the
+stopping rule; it never means human-reviewed correctness, successful deployment,
+real-world functioning, timeless completeness, prescription of every harmless
+private life, or control of every external condition.
 
 ---
 
@@ -1891,7 +1868,7 @@ the gate, claim, and stopping contract is
 [`new-book-plans/full-society-boundary-decision.md`](new-book-plans/full-society-boundary-decision.md).
 
 The publication objective is honest public conversation rather than revenue.
-`Living` names the public project, source, review record, and future versions; it
+`Living` names the public project, source, audit record, and future versions; it
 never authorises silent mutation of a released object. The working source may
 continue to evolve under its visible gate status, while every public preview and
 edition remains immutable, permanently citable, reproducible, and linked to its
@@ -1926,10 +1903,10 @@ may not become the sole custodian of the book or of its future development.
   - Publish coherent milestones, when useful, only after Gate B and their
     snapshot-specific gates, as immutable tags such as
     `book-1-v1.0.0-preview.1`; preserve superseded previews and mark their order
-    provisional. After the expansion freezes, use a private candidate for
-    holdout and release checks. Publish `book-1-v1.0.0`, the assembled digital
+    provisional. After the expansion freezes, use an immutable candidate for
+    deterministic release checks. Publish `book-1-v1.0.0`, the assembled digital
     capstone, and matching POD atomically only after cumulative Gate C and an
-    explicit review-close event pass.
+    explicit author-ratified closure record pass.
   - Give every version a permanent URL; only `latest` navigation may move. New
     content creates a new version, and withdrawal means visibly disrecommended,
     not silently erased.
@@ -1949,7 +1926,7 @@ may not become the sole custodian of the book or of its future development.
     whether it is citable.
   - For every substantive public change, publish a change record linking affected
     claim IDs, defect IDs, `defect_disposition` and `response_stage` transitions,
-    resolution receipts, assurance evidence, reviewer cut-off, verification status,
+    resolution receipts, assurance evidence, audit cut-off, verification status,
     and superseded version. The
     working source may change; a released artifact, manifest, tag, or print
     interior never changes in place. An ISBN/DOI identifies one exact release;
@@ -1960,11 +1937,11 @@ may not become the sole custodian of the book or of its future development.
   - Put the evaluable surface beside the reading surface: exact source, reproducible
     artifacts, verifier instructions, claim-assurance, defect-disposition, and
     response-stage ledgers, resolution receipts, known limits, external assumptions,
-    review record and cut-off, and release manifest. A reader should not need
+    audit record and cut-off, and release manifest. A reader should not need
     repository archaeology to learn what is established, unresolved, superseded, or
     outside the model.
   - Provide a public, accessible submission channel with stable finding IDs, a code
-    of conduct, moderation and safety/privacy rules, and a visible review cut-off.
+    of conduct, moderation and safety/privacy rules, and a visible submission cut-off.
     Give each material criticism a traceable response and proposal disposition;
     create or join a defect record when warranted. A comment, vote, credential, or
     volume of agreement does not automatically become evidence, a rule, or a veto.
@@ -1977,9 +1954,10 @@ may not become the sole custodian of the book or of its future development.
   - Measure the conversation by whether substantive objections receive inspectable
     dispositions and cause verified repair, explicit claim narrowing, or a visible
     open defect, rather than by sales, praise, follower counts, or agreement.
-  - **Done when:** an independent reader can cite an immutable version, reproduce
-    its applicable checks, compare it with its successor, submit a finding, and trace
-    the finding to a public disposition and any resulting source/claim/defect change.
+  - **Done when:** the public surface exposes an immutable version, reproducible
+    checks, successor comparison, optional finding submission, and traceable public
+    dispositions for any received findings. No submission or outside reader is
+    required for release.
 
 - **Seek a publishing steward only on terms that preserve the living public book.**
   - After a Gate B preview exists, prepare a compact proposal containing the thesis,
@@ -1993,14 +1971,15 @@ may not become the sole custodian of the book or of its future development.
     mutable source and receives no authority over defect or assurance verdicts.
   - Contract red lines: the author retains copyright and future-revision/publication
     rights; book prose remains `CC-BY-4.0`; the canonical source, free digital
-    edition, verifier, registry, review record, and release archive stay public.
+    edition, verifier, registry, audit record, and release archive stay public.
     Grant no exclusive right in the CC-BY prose. Any edition-specific exclusivity
     is limited to publisher-created assets or services and may not restrict the
     existing Creative Commons grant, public source, or future editions. Permit no
     DRM, silent replacement, exclusive canonical URL, suppression of prior versions,
     or control over future editions; require every publisher-issued copy to name its
-    exact source, licence, errata, and supersession path. Obtain independent
-    publishing-contract review before signing.
+    exact source, licence, errata, and supersession path. Run the checked-in
+    contract red-line checklist and record the author's decision before signing;
+    professional advice is optional and not a project gate.
   - An external publisher is optional and is not Gate C. If no steward accepts these
     terms, publish the Gate C digital artifacts and POD directly under the same
     provenance, accessibility, licence, and immutability contract.
