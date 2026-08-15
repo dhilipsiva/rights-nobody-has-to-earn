@@ -475,16 +475,26 @@ the domain.
   domain. Custody time and record continuity in Chapter
   [13](13-the-one-thing-taken.md) are not an emergency or defence system.
 
-- **Ecology, non-human animals, commons, and future conditions:** no current
-  derived chapter supplies the domain. It should not be inferred from the floor
-  or from the historical scorecard.
+- **Environment, ecological commons, and future conditions:** the current
+  source now keeps the material floor unchanged while deriving a separate
+  environmental right for every person and separate protections for ecological
+  commons and future capability. Those protections cover information,
+  assessment, participation, reasons, review, interim protection, correction,
+  remedy, distinct ecological axes, precaution, non-regression, restoration,
+  and the refusal to excuse irreplaceable loss with an offset. They are
+  constitutional barriers over supplied records, not measurements, working
+  institutions, delivery, restoration, or proof that any ceiling is being met.
+  Non-human-animal protection and its separate machinery remain outside this
+  landed family.
 
 - **Friendship, leisure, mutual aid, associations, and the residual free social
-  field:** Chapter [8](08-what-you-are-owed.md) currently protects belief,
-  expression, and company, while Chapter [10](10-contribution.md) currently
-  recognises care and teaching through its contribution routes. Wider
-  non-prescription is ratified routing but remains unimplemented; it is not
-  current derived coverage.
+  field:** Chapter [8](08-what-you-are-owed.md) protects belief, expression,
+  and company, while Chapter [10](10-contribution.md) recognises care and
+  teaching through its contribution routes. A separate liberty shell now
+  protects voluntary association, private and intimate life, conscience,
+  expression, movement, bodily choice, due process, and equal civic standing
+  from unsupported power. It does not prescribe a good life or prove that an
+  institution will honour those limits.
 
 ## Accessible diagrams
 
