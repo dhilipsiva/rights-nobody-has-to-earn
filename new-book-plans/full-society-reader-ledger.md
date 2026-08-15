@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-15-universal-standing-formal-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-15-universal-standing-prose-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -21,9 +21,9 @@ Coverage-family drafting states:
 - FS-CVF-008 Ecological Commons And Non Human Animal coverage batch: coverage-ready — Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.
 - FS-CVF-009 Public Safety Defence Emergency And External Power coverage batch: coverage-ready — Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.
 - FS-CVF-010 Current Formal Constitution coverage batch: coverage-ready — Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.
-- FS-CVF-011 Universal standing root and identity boundary: formalized — Formal rules and executable controls are complete; claim-bearing prose remains blocked until each declared chapter and Part V reference lands.
+- FS-CVF-011 Universal standing root and identity boundary: prose-landed — Coverage, formal rules, tests, and declared prose are complete; this remains a supplied-record constitutional claim and does not establish operation or delivery.
 
-Canonical source SHA-256: `9138bccc46eeea58811d7b5978b9c18ac6c9c3c39efd6246b581e41cff46fe93`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `1add3de103a7bc9c7cf3a2617fa227e505ab39fca9cd5b94c63c444efd98fde9`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -47,8 +47,8 @@ Canonical source SHA-256: `9138bccc46eeea58811d7b5978b9c18ac6c9c3c39efd6246b581e
 | `power_contract_templates` | 1 | `87fe5509c5b9cba30b0fdf76344031640a8137e805a8d268104e10a5d71bbcb4` | FS-PCT-01 |
 | `power_refusals` | 19 | `06175a8d73cc41045fa053a59bc32ad58d6e55d0264da40e9ad491dad0763098` | FS-PRF-001, FS-PRF-002, FS-PRF-003, FS-PRF-004, FS-PRF-005, FS-PRF-006, FS-PRF-007, FS-PRF-008, FS-PRF-009, FS-PRF-010, FS-PRF-011, FS-PRF-012, FS-PRF-013, FS-PRF-014, FS-PRF-015, FS-PRF-016, FS-PRF-017, FS-PRF-018, FS-PRF-019 |
 | `power_crosswalk_dispositions` | 8 | `80cf412f2146cb16905c218327136cfdd0fdec7817c35fe29f74dbfc49d265df` | FS-PCD-01, FS-PCD-02, FS-PCD-03, FS-PCD-04, FS-PCD-05, FS-PCD-06, FS-PCD-07, FS-PCD-08 |
-| `constitutional_effects` | 8 | `1cbca08a88f263c3a1148c681c31b4753fd52ed1ddd2e3d23daf7cc7b82eaeef` | FS-CCE-01, FS-CCE-02, FS-CCE-03, FS-CCE-04, FS-CCE-05, FS-CCE-06, FS-CCE-07, FS-CCE-08 |
-| `coverage_families` | 11 | `f64bd447b9d9c79029b2729b481e7d6241e16172865f0929b94f32a041a1364b` | FS-CVF-001, FS-CVF-002, FS-CVF-003, FS-CVF-004, FS-CVF-005, FS-CVF-006, FS-CVF-007, FS-CVF-008, FS-CVF-009, FS-CVF-010, FS-CVF-011 |
+| `constitutional_effects` | 8 | `2ca725e5ac1719fa13330b688d96a57241582ecca7a85041f22721dec3dbca0b` | FS-CCE-01, FS-CCE-02, FS-CCE-03, FS-CCE-04, FS-CCE-05, FS-CCE-06, FS-CCE-07, FS-CCE-08 |
+| `coverage_families` | 11 | `7da323dac58eccc21b620cbed3704aaabcf7a21996e733d350335d2d4ddf7924` | FS-CVF-001, FS-CVF-002, FS-CVF-003, FS-CVF-004, FS-CVF-005, FS-CVF-006, FS-CVF-007, FS-CVF-008, FS-CVF-009, FS-CVF-010, FS-CVF-011 |
 | `dependencies` | 61 | `9c6b81b17e0628169db6eff5fba939bed93fba5b34e4728948ac23109339d0f2` | FS-DEP-01, FS-DEP-02, FS-DEP-03, FS-DEP-04, FS-DEP-05, FS-DEP-06, FS-DEP-07, FS-DEP-08, FS-DEP-09, FS-DEP-10, FS-DEP-11, FS-DEP-12, FS-DEP-13, FS-DEP-14, FS-DEP-15, FS-DEP-17, FS-DEP-18, FS-DEP-19, FS-DEP-20, FS-DEP-21, FS-DEP-22, FS-DEP-23, FS-DEP-24, FS-DEP-25, FS-DEP-26, FS-DEP-27, FS-DEP-28, FS-DEP-29, FS-DEP-30, FS-DEP-31, FS-DEP-32, FS-DEP-33, FS-DEP-34, FS-DEP-35, FS-DEP-36, FS-DEP-37, FS-DEP-38, FS-DEP-39, FS-DEP-40, FS-DEP-41, FS-DEP-42, FS-DEP-43, FS-DEP-44, FS-DEP-45, FS-DEP-46, FS-DEP-47, FS-DEP-48, FS-DEP-49, FS-DEP-50, FS-DEP-51, FS-DEP-52, FS-DEP-53, FS-DEP-54, FS-DEP-55, FS-DEP-56, FS-DEP-57, FS-DEP-58, FS-DEP-59, FS-DEP-60, FS-DEP-61, FS-DEP-62 |
 | `dependency_loops` | 8 | `3fa6da149e63c25a73c6890ca9c4da647c56d310c9b16a982354cb46729774cf` | FS-LOP-01, FS-LOP-02, FS-LOP-03, FS-LOP-04, FS-LOP-05, FS-LOP-06, FS-LOP-07, FS-LOP-08 |
 | `refused_flows` | 18 | `a4078c62e0db071e0fc58d819defe3f54c4b04544df091629af179265deaadf2` | unkeyed rows; digest is authoritative |
@@ -60,7 +60,7 @@ Canonical source SHA-256: `9138bccc46eeea58811d7b5978b9c18ac6c9c3c39efd6246b581e
 | `review_commissions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `scope_audits` | 6 | `af17a7b17b57070e1b2276d3a878d56177b98d56c8df5fe6a6d0f3db6c355be1` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06 |
+| `scope_audits` | 7 | `e1d2717d20dc600bca0010a2a32be5474fb57f80dfeb133008360a7a6768827e` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07 |
 | `deferred_populations` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `closure_requirement_profiles` | 8 | `af587e64a9f295c7c01909abee8d09f39bae8a5da141d10a280884606eb8d70a` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 40 | `fb7c307abf1cc12ac21c888b424a8aab4deca108522f3e1a9ebd7c8fe2fcc60c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37, FS-CCT-38, FS-CCT-39, FS-CCT-40 |
@@ -118,14 +118,14 @@ Source-derived power cards:
 
 Constitutional non-power effects:
 
-- FS-CCE-01  Universal standing root; class class-01; claims FS-CLM-38; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-04  Age-status continuity; class class-01; claims FS-CLM-38, FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-05  Identity linking and correction; class class-07; claims FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-06  Supported agency without a standing gate; class class-01; claims FS-CLM-38; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-07  Death and status boundary; class class-07; claims FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-08  Provenance and accountability retention; class class-07; claims FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-01  Universal standing root; class class-01; claims FS-CLM-38; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-04  Age-status continuity; class class-01; claims FS-CLM-38, FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-05  Identity linking and correction; class class-07; claims FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-06  Supported agency without a standing gate; class class-01; claims FS-CLM-38; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-07  Death and status boundary; class class-07; claims FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-08  Provenance and accountability retention; class class-07; claims FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
 
 Ordinary, failure, and recovery routing:
 
@@ -287,8 +287,8 @@ Source-derived power cards:
 
 Constitutional non-power effects:
 
-- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
 
 Ordinary, failure, and recovery routing:
 
@@ -558,8 +558,8 @@ Source-derived power cards:
 
 Constitutional non-power effects:
 
-- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
 
 Ordinary, failure, and recovery routing:
 
@@ -617,10 +617,10 @@ Source-derived power cards:
 
 Constitutional non-power effects:
 
-- FS-CCE-04  Age-status continuity; class class-01; claims FS-CLM-38, FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-05  Identity linking and correction; class class-07; claims FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-07  Death and status boundary; class class-07; claims FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-08  Provenance and accountability retention; class class-07; claims FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-04  Age-status continuity; class class-01; claims FS-CLM-38, FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-05  Identity linking and correction; class class-07; claims FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-07  Death and status boundary; class class-07; claims FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-08  Provenance and accountability retention; class class-07; claims FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
 
 Ordinary, failure, and recovery routing:
 
@@ -710,11 +710,11 @@ Source-derived power cards:
 
 Constitutional non-power effects:
 
-- FS-CCE-01  Universal standing root; class class-01; claims FS-CLM-38; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-04  Age-status continuity; class class-01; claims FS-CLM-38, FS-CLM-40; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
-- FS-CCE-06  Supported agency without a standing gate; class class-01; claims FS-CLM-38; tests executable/executable; Part V formalized-not-prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-01  Universal standing root; class class-01; claims FS-CLM-38; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-02  Serve before reconciliation; class class-02; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-03  Service enforcement firewall; class class-07; claims FS-CLM-39; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-04  Age-status continuity; class class-01; claims FS-CLM-38, FS-CLM-40; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
+- FS-CCE-06  Supported agency without a standing gate; class class-01; claims FS-CLM-38; tests executable/executable; Part V prose-landed. Boundary: Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.
 
 Ordinary, failure, and recovery routing:
 

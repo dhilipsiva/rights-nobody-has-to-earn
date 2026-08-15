@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-universal-standing-formal-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-universal-standing-prose-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -531,14 +531,14 @@ Constitutional non-power effects:
 
 | Effect | Class / profiles | Claims / domains | Readiness | Boundary |
 | --- | --- | --- | --- | --- |
-| FS-CCE-01 Universal standing root | class-01; standing-status | FS-CLM-38; FS-DOM-01, FS-DOM-09 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-02 Serve before reconciliation | class-02; material-floor-access, fair-process-repair | FS-CLM-39; FS-DOM-01, FS-DOM-04, FS-DOM-07, FS-DOM-09 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-03 Service enforcement firewall | class-07; consequential-record | FS-CLM-39; FS-DOM-01, FS-DOM-04, FS-DOM-07, FS-DOM-09 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-04 Age-status continuity | class-01; standing-status, consequential-record | FS-CLM-38, FS-CLM-40; FS-DOM-01, FS-DOM-09, FS-DOM-08 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-05 Identity linking and correction | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-06 Supported agency without a standing gate | class-01; standing-status, fair-process-repair | FS-CLM-38; FS-DOM-01, FS-DOM-09 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-07 Death and status boundary | class-07; consequential-record | FS-CLM-40; FS-DOM-01, FS-DOM-08 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
-| FS-CCE-08 Provenance and accountability retention | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | formalized-not-prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-01 Universal standing root | class-01; standing-status | FS-CLM-38; FS-DOM-01, FS-DOM-09 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-02 Serve before reconciliation | class-02; material-floor-access, fair-process-repair | FS-CLM-39; FS-DOM-01, FS-DOM-04, FS-DOM-07, FS-DOM-09 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-03 Service enforcement firewall | class-07; consequential-record | FS-CLM-39; FS-DOM-01, FS-DOM-04, FS-DOM-07, FS-DOM-09 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-04 Age-status continuity | class-01; standing-status, consequential-record | FS-CLM-38, FS-CLM-40; FS-DOM-01, FS-DOM-09, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-05 Identity linking and correction | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-06 Supported agency without a standing gate | class-01; standing-status, fair-process-repair | FS-CLM-38; FS-DOM-01, FS-DOM-09 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-07 Death and status boundary | class-07; consequential-record | FS-CLM-40; FS-DOM-01, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-08 Provenance and accountability retention | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
 
 Coverage-family drafting gate:
 
@@ -554,7 +554,7 @@ Coverage-family drafting gate:
 | FS-CVF-008 Ecological Commons And Non Human Animal coverage batch | coverage-ready | 40 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
 | FS-CVF-009 Public Safety Defence Emergency And External Power coverage batch | coverage-ready | 50 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
 | FS-CVF-010 Current Formal Constitution coverage batch | coverage-ready | 0 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-011 Universal standing root and identity boundary | formalized | 0 / 8 | 6 | Formal rules and executable controls are complete; claim-bearing prose remains blocked until each declared chapter and Part V reference lands. |
+| FS-CVF-011 Universal standing root and identity boundary | prose-landed | 0 / 8 | 6 | Coverage, formal rules, tests, and declared prose are complete; this remains a supplied-record constitutional claim and does not establish operation or delivery. |
 
 Contract templates:
 
@@ -1490,7 +1490,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 6; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 7; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -1500,8 +1500,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 6; curren
 | FS-SAU-04 | fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution | `e0e4c0fc4c367aa5535bf39359b01409bfd22acf679022a4b26f5c81a78d7458` | 2026-08-15T11:24:21Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-05 | fs-ledger-2026-08-15-universal-standing-root-v1 | `b069372ab368c0dab39f6c15fa7d331546f32943df1f073d899a8368e773e514` | 2026-08-15T12:53:38Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-06 | fs-ledger-2026-08-15-universal-standing-formal-v1 | `143f50f095f13eb1eeb22c9ff91afe92e3a7b807645a2e62c2bf982550909e3b` | 2026-08-15T13:44:18Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-07 | fs-ledger-2026-08-15-universal-standing-prose-v1 | `2577006456883875aff432978ef6d2c5414ebd5c8c26fa1e43f0ad37f14c354b` | 2026-08-15T15:07:36Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `143f50f095f13eb1eeb22c9ff91afe92e3a7b807645a2e62c2bf982550909e3b`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `2577006456883875aff432978ef6d2c5414ebd5c8c26fa1e43f0ad37f14c354b`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

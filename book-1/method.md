@@ -52,6 +52,24 @@ sections describe. The floor is not a preamble. It is load-bearing text in a
 running system, and the current full list — like every figure in this part —
 lives in the repository, not on this page, for a reason I will come to.
 
+Those lines still need a person. Four new roots now supply that standing, exactly
+as written:
+
+```
+all : born() & ~public() -> person().
+all : at(, FirstContact) & ~public() -> person().
+all : at(, RepublicJurisdiction) & ~public() -> person().
+all : at(, EffectiveControl) & ~public() -> person().
+```
+
+Birth, first contact, physical presence and effective control do not read
+citizenship, documents, age, capacity or an identity match. The supplied subject
+may be a temporary encounter name. The rules derive personhood from it and
+nothing else: not civil identity, family, guilt, liability, record ownership or
+authority. The negative public check prevents a public body from entering through
+a person root. These are consequences of supplied facts, not proof that an
+encounter was observed or help was delivered.
+
 Here is the final gate that makes someone a prisoner — the only rule in the
 file whose conclusion is `prisoner`:
 
@@ -125,6 +143,7 @@ admits("authorized"). admits("carries").    admits("challenge").
 admits("continue").   admits("date").       admits("limit").
 admits("list").       admits("observe").    admits("passport").
 admits("replace").
+admits("at").         admits("born").
 ```
 
 The record's base vocabulary is declared, name by name, and a ground fact in
@@ -149,12 +168,14 @@ not writable. They are only derivable." These are two different guards on
 two different doors — one closes the record's vocabulary, the other makes a
 name conclusion-only — and the book has been careful never to describe them
 as one. One name sits differently from everything around it: `person`. It
-has producing rules *and* ground entries — the roster has to start
-somewhere, and released people re-enter it by rule — so it is a conclusion
-the machinery can reach that the record must nonetheless admit. *What counts
-as evidence* and *what may be written* are therefore different sets,
-`person` is the whole of the difference between them, and chapter 1 put
-personhood on its evidence list for precisely that reason.
+has producing rules *and* direct ground entries, and birth, encounter, custody,
+release and carried status provide independent producing routes. It is therefore
+a conclusion the machinery can reach that the record must nonetheless admit.
+*What counts as evidence* and *what may be written* are different sets:
+`person` is the clearest difference between them, and chapter 1 put personhood
+on its evidence list for precisely that reason. A failed lookup does not reverse
+a root already supplied, and correction or a death mark does not retract
+personhood.
 
 Try to break the first closure. Add one flattering fact the record does not
 admit — `rich(Adam).` — and the engine answers at assert time:
@@ -372,7 +393,11 @@ it must return:
 
 The whole set runs on every check, each file declares how many pins it
 carries so a file cannot be quietly hollowed out, and a changed verdict
-stops the build and names the chapter whose sentence just became false.
+stops the build and names the chapter whose sentence just became false. A
+separate universal-standing group runs twenty-nine more pins: birth, contact,
+presence and control roots; missing records; disputed age; false alias links;
+mistaken death; disability and refused support; retained correction provenance;
+and the refusal to treat a public body as the contact subject.
 
 One of the sweeps deserves its own paragraph, because it polices me. The
 chapters you read are forbidden — mechanically, by the same script — from
@@ -464,6 +489,17 @@ exhaustive for the current declared subject states, axes and source. It is not
 a runtime exclusivity rule, evidence that a reported placement happened, a
 placement appeal or remedy, or delivery of housing to a free person.
 
+A second registry guards when new rule families may be written. Each authored
+formal statement has one stable engine fingerprint and belongs to exactly one
+coverage family. A planned family may contain no rules, pins or claim-bearing
+prose. A coverage-ready family has complete source-bound effect contracts but no
+formal rules. Formalized means the exact fingerprints, pins, executable negative
+tests and counterfactuals all resolve. Prose-landed additionally requires every
+declared chapter and Part V reference. An unassigned new statement, a changed
+fingerprint, or prose arriving before its family is ready fails verification.
+That is a pre-drafting gate over constitutional coverage, not an operational
+claim and not a route for Book 2 delivery machinery.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the
@@ -481,8 +517,8 @@ deletions, replacements and additions for the narrower question of whether a
 declared target matches an effect.
 
 The record red-team adds a second and narrower class. Its ephemeral copies
-delete named ground entries — adulthood, roster standing, raw void marks and
-the two parts of forgiveness — and execute the remaining single-record
+delete named ground entries — adulthood, a directly supplied person fact, raw
+void marks and the two parts of forgiveness — and execute the remaining single-record
 consequences. It also proves that a raw void mark alone is now inert. Transition,
 carry, order, and renewal belong to the staged temporal assurance case described
 next. The red-team tests prove what follows from the supplied records. They do
@@ -500,11 +536,13 @@ honestly test which record is current.
 At the first stage, two witnesses bind exact manifest members and record
 replacement. A separately witnessed passport selects one constitutional
 lineage; only its collision-free terminal successor gives carried voids,
-clearance, or public power current effect. Supportive personhood remains\navailable on an accepted transition only when
+clearance, or public power current effect. A carried personhood route remains available on an accepted transition only when
 both predecessor-standing witnesses are supplied; withholding either can still
-erase that derived route and its omission marker. That is the separate
-universal-standing gap, not a T1 result. Audit reports retain the same
-supplied-record boundary. At the second stage, independently witnessed
+erase that T1 route and its omission marker. It cannot erase personhood supplied
+or derived independently through birth, contact, presence, control, custody or
+release. The universal-standing suite tests those roots separately; T1 neither
+creates nor authenticates them. Audit reports retain the same supplied-record
+boundary. At the second stage, independently witnessed
 event and record entries form separate typed paths. The paths close
 transitively, so a longer cycle is caught as well as a direct reversal, and the
 resulting conflict spreads through the connected path without leaking into the
@@ -523,12 +561,14 @@ way to represent lawful disposal of such a record, so every missing required
 carry is reported as a disappearance. That proves a mismatch, not unlawful
 deletion.
 
-This is bounded safety evidence for supplied records. It does not establish
-universal standing, preserve a challenge that intake withholds, implement
-correction or semantic supersession, enforce non-revival, prove a manifest
-complete, authenticate the outside witnesses, detect deletion before or inside
-the first attested record, advance a clock, make a later record arrive, release
-a person physically, or make Appeals perform its duty.
+This is bounded safety evidence for supplied records. The separate root rules
+and pins establish universal standing only when one of their external birth or
+encounter facts is supplied. Neither suite observes that fact, preserves a
+challenge that intake withholds, operates correction or identity reconciliation,
+proves a manifest complete, authenticates outside witnesses, detects deletion
+before or inside the first attested record, advances a clock, makes a later record
+arrive, serves a person, releases anyone physically, or makes Appeals perform its
+duty.
 
 There is a second thing to say about the fixtures, and it is a weakness
 rather than a strength, so it belongs here rather than in a footnote.
