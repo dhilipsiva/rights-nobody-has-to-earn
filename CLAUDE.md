@@ -1742,12 +1742,12 @@ closure. The audit may therefore be complete while claims remain blocked or
 bounded-unresolved and while Gate A remains not passed.
 
 **Stage 4's repository-adversarial protocol and checker are complete
-(2026-08-15); Gate A closure remains an author checkpoint.** Schema v5 adds
+(2026-08-15); Gate A closure is mechanically derived.** Schema v6 adds
 append-only `scope_audits`. Each audit binds the exact source version,
 validator-derived semantic scope digest, protocol digest, UTC execution time,
 declared criteria, checker control entry points, command chain,
-Gate-A-applicable finding set, result, author basis, and byte-exact evidence
-ceiling. Visible normal first-parent Git history preserves committed audit,
+Gate-A-applicable finding set, result, policy basis, and byte-exact evidence
+ceiling. Historical audit rows retain their recorded basis verbatim. Visible normal first-parent Git history preserves committed audit,
 commission, proposal, and event prefixes under that bounded history model; it
 does not prove resistance to rewritten Git history.
 
@@ -1766,14 +1766,13 @@ still apply. Empty optional populations carry no deferral and block no project
 gate. Darshu, Dhanush, and the custodian remain a historical optional-review
 designation only.
 
-The closure schema now binds the exact Gate A claim, immutable candidate Git
-id, current source version and semantic scope digest, FS-ENV-01, the qualifying
+The closure schema binds the exact Gate A claim, immutable candidate Git id,
+current source version and semantic scope digest, FS-ENV-01, the qualifying
 repository audit and execution cutoff, checker-derived assurance and residual
-sets, exact per-row claim limitations, the required verifier command chain and
-transcript digest, and a verbatim dated author-ratification act. The acceptance
-state remains deliberately locked `not-passed`; the closure record is null.
-Closing Gate A now requires only a later explicit author-ratification amendment,
-not another person's participation.
+sets, exact per-row claim limitations, and the required verifier command chain
+and transcript digest. The closure commit may differ from its candidate only in
+closure and acceptance metadata. The checker derives `passed` from a valid
+record; no author ratification or other human act is required.
 
 **The reference envelope is versioned in structure, enacted 2026-08-09; values,
 calibration, and every feasibility claim stay outside Book 1.** The envelope
@@ -2465,7 +2464,8 @@ alter constitutional requirements for independent courts, reviewers, auditors,
 advocates, alternate authorisers, or separated public functions.
 
 - Gate A uses the built repository source-derived adversarial audit (R7) plus a
-  separate explicit author-ratification commit. R7 binds the semantic scope,
+  checker-derived closure record bound to an immutable verified candidate. No
+  human act is required. R7 binds the semantic scope,
   protocol, declared criteria, checker controls, command chain, and
   Gate-A-applicable findings. It supplies no independent-human, reader,
   external-truth, operation, feasibility, liveness, calibration, timeless-
@@ -2479,8 +2479,9 @@ advocates, alternate authorisers, or separated public functions.
   the artifact but cannot establish reader suitability or accessibility for
   actual users.
 - Gate E uses reproducible cross-book structural, model, provenance, and
-  assurance checks plus author ratification. It makes no human-reviewed or
-  successful-real-world-operation claim.
+  assurance checks plus a checker-derived closure record bound to an immutable
+  verified candidate. No human act is required, and it makes no human-reviewed
+  or successful-real-world-operation claim.
 - External human review and reader studies remain admissible optional evidence.
   If recorded, their strict provenance, custody, chronology, conflict, and
   disposition rules still apply. They never delay project completion or

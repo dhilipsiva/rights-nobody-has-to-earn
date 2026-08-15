@@ -38,12 +38,14 @@ Stage 4 implements the repository source-derived adversarial audit and keeps
 Gate A closure refusable-until-green. Append-only FS-SAU rows bind the
 validator-derived semantic scope digest, exact protocol bytes, declared
 criteria, checker entry points, command chain, Gate-A-applicable findings,
-result, author basis, and evidence ceiling. External commissions, proposals,
-and terminal events remain optional evidence with their strict existing
-admissibility checks; empty optional populations never block a gate.
-Per-condition Gate A readiness is computed and rendered. A closure record is
-refused while any condition computes unmet, and closing Gate A remains a
-deliberate author amendment, never a latent flip.
+result, policy basis, and evidence ceiling. Historical rows may retain their
+recorded author basis. External commissions, proposals, and terminal events
+remain optional evidence with their strict existing admissibility checks; empty
+optional populations never block a gate. Per-condition Gate A readiness is
+computed and rendered. A closure record is refused while any condition computes
+unmet. Gate A passes only through a mechanical closure commit whose semantic
+source exactly matches an immutable, fully verified candidate; no human act is
+a completion dependency.
 Deferred record types carry explicit deferral records with owners.
 
 Usage:
@@ -602,14 +604,17 @@ RUBRIC_STATUS_CANDIDATE = "candidate — author confirmation pending"
 RUBRIC_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 READINESS_MET = {"met-mechanically", "met-in-form"}
 
-# The scope-audit protocol is author-confirmed and byte-bound to each
-# repository audit. External human review remains admissible optional input,
-# but no project gate or release depends on recruiting another person.
+# The scope-audit protocol is repository-enforced and byte-bound to each audit.
+# External human review remains admissible optional input, but no project gate
+# or release depends on recruiting or obtaining an act from another person.
 PROTOCOL_DOC = pathlib.Path(
     "new-book-plans/full-society-scope-review-protocol.md")
 PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
 PROTOCOL_STATUS_CONFIRMED = (
-    "author-confirmed 2026-08-15 -- repository-adversarial protocol v3")
+    "repository-enforced 2026-08-15 -- mechanical-closure protocol v4")
+SCOPE_AUDIT_POLICY_BASIS = (
+    "new-book-plans/full-society-scope-review-protocol.md::"
+    "## 5. Mechanical Gate A closure")
 SHA256_HEX_RE = re.compile(r"^[0-9a-f]{64}$")
 GIT_COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")
 ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -663,7 +668,12 @@ PROPOSAL_CLASSIFICATIONS = (
 )
 GATE_A_PERMITTED_CLAIM = (
     "The project has a versioned, reviewable scope map and assurance program.")
-GATE_A_ACCEPTANCE_LOCK = "not-passed"
+VERDICT_NOT_PASSED = (
+    "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN "
+    "POSTURE; GATE A NOT PASSED")
+VERDICT_PASSED = (
+    "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN "
+    "POSTURE; GATE A PASSED")
 REQUIRED_VERIFY_COMMANDS = (
     "python3 new-book-plans/14-reader-evidence.py --check",
     "python3 new-book-plans/14-reader-evidence.py --check --execute",
@@ -776,11 +786,6 @@ ARRAY_RECORD_TYPES = {
 }
 
 ENVELOPE_STUB_ID = "FS-ENV-00"
-
-VERDICT_LINE = (
-    "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN "
-    "POSTURE; GATE A NOT PASSED"
-)
 
 # Enum detection over the sibling JSONs: (a) every key of a top-level
 # `*_meanings` dict is an enum value; (b) every string value of a field whose
@@ -1015,8 +1020,8 @@ DOMAIN_BUCKETS = [
 def validate_header(src: dict):
     if src.get("spdx") != "CC-BY-4.0":
         raise LedgerError('reviewed source must declare "spdx": "CC-BY-4.0"')
-    if type(src.get("schema_version")) is not int or src["schema_version"] != 5:
-        raise LedgerError("schema_version must be the integer 5")
+    if type(src.get("schema_version")) is not int or src["schema_version"] != 6:
+        raise LedgerError("schema_version must be the integer 6")
     require_str(src, "title", "header")
     if src.get("status") != EXPECTED_STATUS:
         raise LedgerError(f"status must be {EXPECTED_STATUS}")
@@ -4212,8 +4217,7 @@ def validate_review_event_completeness(src: dict):
 SCOPE_AUDIT_KEYS = [
     "id", "title", "source_version", "scope_sha256", "protocol_sha256",
     "executed_at_utc", "method", "criterion_coverage", "control_refs",
-    "commands", "finding_refs", "result", "author_basis",
-    "evidence_ceiling",
+    "commands", "finding_refs", "result", "evidence_ceiling",
 ]
 
 
@@ -4243,7 +4247,15 @@ def validate_scope_audits(src: dict):
     seen = set()
     for i, rec in enumerate(audits):
         ctx = f"scope_audits[{i}] ({rec.get('id', '?')})"
-        exact_keys(rec, SCOPE_AUDIT_KEYS, ctx)
+        exact_keys(rec, SCOPE_AUDIT_KEYS, ctx,
+                   optional=["author_basis", "policy_basis"])
+        basis_keys = [key for key in ("author_basis", "policy_basis")
+                      if key in rec]
+        if len(basis_keys) != 1:
+            raise LedgerError(
+                f"{ctx}: exactly one historical author_basis or current "
+                "policy_basis is required")
+        require_str(rec, basis_keys[0], ctx)
         require_str(rec, "title", ctx)
         require_str(rec, "source_version", ctx)
         for key in ("scope_sha256", "protocol_sha256"):
@@ -4262,7 +4274,6 @@ def validate_scope_audits(src: dict):
                 raise LedgerError(f"{ctx}.{key} must be a unique string list")
         if rec["result"] not in {SCOPE_AUDIT_RESULT, "pending", "failed"}:
             raise LedgerError(f"{ctx}.result is not an audit result")
-        require_str(rec, "author_basis", ctx)
         require_str(rec, "evidence_ceiling", ctx)
         if rec["id"] in seen:
             raise LedgerError(f"{ctx}: duplicate audit id")
@@ -4290,6 +4301,12 @@ def validate_scope_audits(src: dict):
             raise LedgerError(f"{ctx}: finding references must cover Gate A")
         if rec["evidence_ceiling"] != SCOPE_AUDIT_EVIDENCE_CEILING:
             raise LedgerError(f"{ctx}: evidence ceiling must be byte-exact")
+        if "author_basis" in rec:
+            raise LedgerError(
+                f"{ctx}: a current audit may not depend on an author act")
+        if rec.get("policy_basis") != SCOPE_AUDIT_POLICY_BASIS:
+            raise LedgerError(f"{ctx}: policy basis must be checker-owned")
+        validate_reference(rec["policy_basis"], f"{ctx}.policy_basis")
 
 
 def qualifying_review_events(src: dict) -> list:
@@ -4368,13 +4385,15 @@ def validate_review_protocol(src: dict):
     if not isinstance(rp, dict):
         raise LedgerError(f"{ctx} must be an object")
     exact_keys(rp, ["protocol_ref", "protocol_status", "status_line_ref",
-                    "confirmation_basis", "mode", "external_review_policy",
+                    "policy_basis", "mode", "external_review_policy",
                     "designation"], ctx)
     status = require_str(rp, "protocol_status", ctx)
     if status != PROTOCOL_STATUS_CONFIRMED:
         raise LedgerError(
-            f"{ctx}.protocol_status must be the author-confirmed amended status")
-    require_str(rp, "confirmation_basis", ctx)
+            f"{ctx}.protocol_status must be the repository-enforced status")
+    if rp["policy_basis"] != SCOPE_AUDIT_POLICY_BASIS:
+        raise LedgerError(f"{ctx}.policy_basis must be checker-owned")
+    validate_reference(rp["policy_basis"], f"{ctx}.policy_basis")
     if rp["mode"] != "repository-adversarial-audit":
         raise LedgerError(f"{ctx}.mode must be repository-adversarial-audit")
     if rp["external_review_policy"] != "optional-non-gating":
@@ -4536,7 +4555,7 @@ def _source_at_commit(commit_sha: str, context: str) -> dict:
 def validate_closure_record(src: dict, readiness, resolution: dict):
     if "closure_record" not in src:
         raise LedgerError(
-            "closure_record must be present - null until the author closes")
+            "closure_record must be present - null until mechanical closure")
     rec = src["closure_record"]
     if rec is None:
         return
@@ -4547,7 +4566,7 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
          "scope_sha256", "envelope_ref", "audit_cutoff_at_utc",
          "scope_audit_ref", "assurance_record_refs", "residual_refs",
          "claim_limitations", "verification_receipt",
-         "author_ratification_ref"],
+         "closure_policy_ref"],
         ctx,
     )
     if rec["gate"] != "gate-a":
@@ -4612,17 +4631,14 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if not SHA256_HEX_RE.fullmatch(require_str(
             receipt, "transcript_sha256", rctx)):
         raise LedgerError(f"{rctx}.transcript_sha256 is malformed")
-    ratification = require_str(rec, "author_ratification_ref", ctx)
-    validate_reference(ratification, f"{ctx}.author_ratification_ref")
-    needle = ratification.split("::", 1)[1]
-    if not re.search(r"Author statement, \d{4}-\d{2}-\d{2}:", needle):
+    policy = require_str(rec, "closure_policy_ref", ctx)
+    if policy != SCOPE_AUDIT_POLICY_BASIS:
         raise LedgerError(
-            f"{ctx}: author ratification must cite a verbatim dated author act")
+            f"{ctx}.closure_policy_ref must equal the checker-owned policy")
+    validate_reference(policy, f"{ctx}.closure_policy_ref")
     if src["acceptance_gate"]["gate_a_status"] != "passed":
         raise LedgerError(
-            f"{ctx}: a closure record requires gate_a_status passed, which "
-            "this contract refuses - closing Gate A is a deliberate future "
-            "author amendment, never a latent flip")
+            f"{ctx}: a closure record requires gate_a_status passed")
     candidate = _source_at_commit(
         rec["candidate_commit_sha"], f"{ctx}.candidate_commit_sha")
     if candidate.get("closure_record") is not None:
@@ -4638,6 +4654,15 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if candidate_audits.get(audit["id"]) != audit:
         raise LedgerError(
             f"{ctx}: candidate commit must contain the exact repository audit")
+    candidate_frozen = copy.deepcopy(candidate)
+    current_frozen = copy.deepcopy(src)
+    for value in (candidate_frozen, current_frozen):
+        value.pop("closure_record", None)
+        value.pop("acceptance_gate", None)
+    if candidate_frozen != current_frozen:
+        raise LedgerError(
+            f"{ctx}: closure source must exactly match the immutable candidate "
+            "outside closure and acceptance metadata")
 
 def validate_acceptance(src: dict):
     gate = src.get("acceptance_gate")
@@ -4645,20 +4670,22 @@ def validate_acceptance(src: dict):
         raise LedgerError("acceptance_gate must be an object")
     exact_keys(gate, ["verdict", "rollup_rule", "gate_a_status"],
                "acceptance_gate")
-    if gate["verdict"] != VERDICT_LINE:
+    closed = src.get("closure_record") is not None
+    expected_verdict = VERDICT_PASSED if closed else VERDICT_NOT_PASSED
+    if gate["verdict"] != expected_verdict:
         raise LedgerError(
-            "acceptance_gate.verdict must be the byte-exact verdict line"
+            "acceptance_gate.verdict must be the byte-exact closure-derived "
+            "verdict line"
         )
     require_str(gate, "rollup_rule", "acceptance_gate")
     if re.search(r"\d", gate["rollup_rule"]):
         raise LedgerError(
             "the rollup is non-numeric by rule — no digit may appear in it"
         )
-    if gate["gate_a_status"] != GATE_A_ACCEPTANCE_LOCK:
+    expected_status = "passed" if closed else "not-passed"
+    if gate["gate_a_status"] != expected_status:
         raise LedgerError(
-            "gate_a_status must equal the deliberately locked acceptance state")
-    if src.get("closure_record") is None and gate["gate_a_status"] != "not-passed":
-        raise LedgerError("gate_a_status passed requires a closure record")
+            "gate_a_status must be derived exactly from closure-record presence")
 
 
 def validate(src: dict):
@@ -4844,7 +4871,9 @@ def negative_controls(src: dict) -> int:
             _evidence_pending_on_unbuilt, "requires a built or available route")
     control("verdict line is byte-exact",
             lambda s: s["acceptance_gate"].update(
-                {"verdict": VERDICT_LINE.lower()}))
+                {"verdict": (
+                    VERDICT_PASSED if s.get("closure_record")
+                    else VERDICT_NOT_PASSED).lower()}))
     control("a receipt must bind a candidate row", _receipt_noncandidate,
             "non-candidate")
     control("elimination keeps its reintroduction control",
@@ -4900,15 +4929,11 @@ def negative_controls(src: dict) -> int:
                 {"legacy_gap": s["legacy_rows"][0]["legacy_gap"] +
                  " ## 3. Current coverage versus target scope"}),
             "exactly once")
-    if src["power_population"]["status"] == "complete":
-        control(
-            "a closure record cannot bypass the deliberate acceptance amendment",
-            _closure_while_unmet,
-            "requires gate_a_status passed",
-        )
-    else:
-        control("a closure record cannot exist while conditions compute unmet",
-                _closure_while_unmet, "may not exist while")
+    control(
+        "a closure record cannot bypass closure-derived acceptance",
+        _closure_while_unmet,
+        "derived exactly from closure-record presence",
+    )
     control("a closure record gate is exact",
             _closure_wrong_gate, ".gate must be gate-a")
     control("a closure record claim is byte-exact",
@@ -4939,8 +4964,8 @@ def negative_controls(src: dict) -> int:
             _closure_wrong_verifier_result, "must be all-passed")
     control("closure verification transcript is digest-bound",
             _closure_bad_transcript, "is malformed")
-    control("closure ratification cites a dated author act",
-            _closure_bad_ratification, "verbatim dated author act")
+    control("closure policy is checker-owned",
+            _closure_bad_policy, "must equal the checker-owned policy")
     control("R7 cannot be marked unbuilt after its checks land",
             _r7_unbuilt, "repository-audit state")
     control("R7 cannot be relabelled available",
@@ -4963,6 +4988,11 @@ def negative_controls(src: dict) -> int:
             _scope_audit_result_drift, "is not an audit result")
     control("the current scope audit preserves its evidence ceiling",
             _scope_audit_ceiling_drift, "evidence ceiling must be byte-exact")
+    control("the current scope audit binds the mechanical closure policy",
+            _scope_audit_policy_drift, "policy basis must be checker-owned")
+    control("the current scope audit cannot depend on an author act",
+            _scope_audit_author_dependency,
+            "current audit may not depend on an author act")
     control("a passed event outcome is derived, not prose",
             _event_passed_with_failed_seed, "outcome_status must be derived")
     control("a terminal event requires its commission",
@@ -5020,9 +5050,9 @@ def negative_controls(src: dict) -> int:
             lambda s: s.pop("review_protocol"), "must be present")
     control("the amended protocol status is exact",
             lambda s: s["review_protocol"].update(
-                {"protocol_status": "confirmed"}), "author-confirmed amended")
-    control("the amended protocol records its basis",
-            lambda s: s["review_protocol"].pop("confirmation_basis"),
+                {"protocol_status": "confirmed"}), "repository-enforced status")
+    control("the amended protocol binds its mechanical policy",
+            lambda s: s["review_protocol"].pop("policy_basis"),
             "missing keys")
     control("the protocol mode is repository-adversarial",
             lambda s: s["review_protocol"].update({"mode": "panel-review"}),
@@ -5875,10 +5905,6 @@ def _mk_proposal(s, **overrides):
     return rec
 
 
-_AUTHOR_CONTROL_NEEDLE = (
-    "new-book-plans/full-society-scope-review-protocol.md::"
-    "Author statement, 2026-08-15: \"Right now, I cannot depend")
-
 
 def _mk_closure(s):
     resolution = compute_resolution(s)
@@ -5886,11 +5912,16 @@ def _mk_closure(s):
     audit = s["scope_audits"][-1]
     audit["result"] = SCOPE_AUDIT_RESULT
     audit["scope_sha256"] = review_scope_digest(s)
+    prior = s.get("closure_record")
+    candidate_sha = (
+        prior.get("candidate_commit_sha") if isinstance(prior, dict)
+        else subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    )
     s["closure_record"] = {
         "gate": "gate-a",
         "permitted_claim": GATE_A_PERMITTED_CLAIM,
-        "candidate_commit_sha": subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+        "candidate_commit_sha": candidate_sha,
         "source_version": s["source_version"],
         "scope_sha256": review_scope_digest(s),
         "envelope_ref": "FS-ENV-01",
@@ -5900,20 +5931,22 @@ def _mk_closure(s):
         "residual_refs": residuals,
         "claim_limitations": _gate_a_claim_limitations(s, residuals),
         "verification_receipt": {
-            "candidate_commit_sha": subprocess.check_output(
-                ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+            "candidate_commit_sha": candidate_sha,
             "verified_at_utc": "2026-08-18T00:00:00Z",
             "commands": list(REQUIRED_VERIFY_COMMANDS),
             "result": "all-passed",
             "transcript_sha256": "e" * 64,
         },
-        "author_ratification_ref": _AUTHOR_CONTROL_NEEDLE,
+        "closure_policy_ref": SCOPE_AUDIT_POLICY_BASIS,
     }
+    s["acceptance_gate"]["gate_a_status"] = "passed"
+    s["acceptance_gate"]["verdict"] = VERDICT_PASSED
     return s["closure_record"]
 
 
 def _closure_while_unmet(s):
     _mk_closure(s)
+    s["acceptance_gate"]["gate_a_status"] = "not-passed"
 
 
 def _closure_wrong_gate(s):
@@ -5980,8 +6013,8 @@ def _closure_bad_transcript(s):
     _mk_closure(s)["verification_receipt"]["transcript_sha256"] = "no"
 
 
-def _closure_bad_ratification(s):
-    _mk_closure(s)["author_ratification_ref"] = _CONTROL_NEEDLE
+def _closure_bad_policy(s):
+    _mk_closure(s)["closure_policy_ref"] = _CONTROL_NEEDLE
 
 
 def _r7_unbuilt(s):
@@ -6028,6 +6061,16 @@ def _scope_audit_result_drift(s):
 
 def _scope_audit_ceiling_drift(s):
     s["scope_audits"][-1]["evidence_ceiling"] = "broader claim"
+
+
+def _scope_audit_policy_drift(s):
+    s["scope_audits"][-1]["policy_basis"] = _CONTROL_NEEDLE
+
+
+def _scope_audit_author_dependency(s):
+    audit = s["scope_audits"][-1]
+    audit.pop("policy_basis")
+    audit["author_basis"] = "control author dependency"
 
 
 def _event_passed_with_failed_seed(s):
@@ -6377,9 +6420,9 @@ def render(src: dict, resolution: dict) -> str:
     w("")
     w("Per-condition status, generated from the source and echoing the closure "
       "conditions above by index; no aggregate is derived from this list, and "
-      "a closure record is refused while any row computes unmet. Closing "
-      "Gate A is a deliberate future amendment with its own author "
-      "ratification, never a latent flip.")
+      "a closure record is refused while any row computes unmet. Gate A passes "
+      "only when a mechanical closure record binds an immutable, fully verified "
+      "candidate with no semantic drift.")
     w("")
     rows, preconditions = compute_gate_a_readiness(src, resolution)
     for name, status, reason in rows:

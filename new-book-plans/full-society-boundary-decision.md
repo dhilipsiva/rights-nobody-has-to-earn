@@ -90,8 +90,9 @@ claim independence from the repository machinery or replace external truth.
 
 R6 remains an optional route for any future reader or lived-experience evidence.
 No gate waits for it. Gate C therefore makes only the mechanical artifact claim
-in section 2. Gate E likewise requires reproducible cross-book and model
-assurance plus author ratification, not recruitment of an external reviewer.
+in section 2. Gate E likewise requires reproducible cross-book and model assurance plus a
+checker-derived closure record bound to an immutable verified candidate, not
+recruitment, approval, or ratification by any person.
 
 ## 2A. 2026-08-13 reference-envelope ownership clarification
 
@@ -272,7 +273,8 @@ as project completion and publication dependencies. The exact statement was:
 > Right now, I cannot depend on other reviewers to finish the book. Please
 > remove dependency on human reviewers on this one and going forward
 
-The replacement is reproducible repository adversarial audit plus explicit
-author ratification, with narrower public claims wherever human-response
-evidence is absent. Constitutional institutional-independence rules are not
-amended.
+The replacement is reproducible repository adversarial audit plus a
+checker-derived closure record bound to an immutable verified candidate, with
+narrower public claims wherever human-response evidence is absent. No project
+gate requires a later human act. Constitutional institutional-independence
+rules are not amended.

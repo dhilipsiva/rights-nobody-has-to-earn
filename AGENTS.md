@@ -63,9 +63,9 @@ FS-POW contract card, lawful holder, operation, assurance, or Gate A result.
 Script 13 now checks the completed source-derived population: 210 actual
 legal-effect cards, 1 cross-power temporal template, 19 refusal or limit rows,
 8 formal dispositions, and 210 power-bound allocations. Completion removes
-only the powers deferral. Gate A condition five is met by the current-source
-repository adversarial audit; Gate A remains not-passed until the separate
-author-ratified acceptance amendment lands. External human review is optional
+only the powers deferral. Gate A condition five is met by the current-source repository adversarial
+audit. Gate A closes through a checker-derived record bound to an immutable
+verified candidate; no human act is required. External human review is optional
 evidence and no project gate or publication depends on it.
 
 Run script 16 after script 13. It computes the claim-scoped constitutional-

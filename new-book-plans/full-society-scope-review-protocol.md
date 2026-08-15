@@ -2,12 +2,13 @@
 
 # Full-Society Scope-Review Protocol
 
-> **Status: author-confirmed 2026-08-15 -- repository-adversarial protocol v3.**
-> This protocol supersedes the 2026-08-14 requirement to recruit a real-person
-> panel as a Gate A or publication dependency. Gate A now uses an append-only,
-> source-derived repository audit plus a separate explicit author ratification.
-> External human review remains welcome optional evidence. It never blocks Gate
-> A, Gate C, Gate E, a book release, or completion of the project.
+> **Status: repository-enforced 2026-08-15 -- mechanical-closure protocol v4.**
+> This protocol supersedes every requirement for a human act to complete a
+> project or publication gate. Gate A uses an append-only, source-derived
+> repository audit and a mechanically derived closure record bound to an
+> immutable verified candidate. External human review remains welcome optional
+> evidence. It never blocks Gate A, Gate C, Gate E, a book release, or project
+> completion.
 
 ## 1. Warrant and evidence ceiling
 
@@ -24,8 +25,8 @@ A passing audit does not prove that the map is complete in any timeless or
 real-world sense. It supplies no independent-human warrant, reader response,
 external truth, operation, delivery, feasibility, liveness, calibration,
 institutional independence, or authentication of the audit's own trust root.
-The author remains the accountable decision-maker and must ratify Gate A in a
-separate commit.
+No author, reviewer, reader, panel, custodian, or other person must perform a
+later act for the bounded Gate A claim to close.
 
 This project-level rule does not weaken any constitutional rule that requires
 independent courts, reviewers, auditors, alternate authorisers, advocates, or
@@ -48,8 +49,12 @@ Each `FS-SAU-*` row binds:
 - the exact command chain;
 - every Gate-A-applicable defect row;
 - a terminal result;
-- the author basis; and
+- the checker-owned closure-policy basis; and
 - the byte-exact evidence ceiling.
+
+Historical audit rows retain their recorded basis verbatim. A current-source
+audit must use the checker-owned policy reference and may not depend on a new
+author act.
 
 A current-source passing audit is one whose source version, semantic digest,
 protocol digest, method, criteria, controls, command chain, finding set, result,
@@ -99,28 +104,33 @@ The historical Darshu, Dhanush, and custodian designation is therefore
 `retired-as-project-gate-dependency`. It remains meaningful only
 inside an optional commission that actually uses that protocol.
 
-## 5. Route and closure effects
+## 5. Mechanical Gate A closure
 
-R7 is `built` because its repository checks and watched-failing
-mutations are part of the ordinary verifier. It is not `available`:
-that term is reserved for admissible external evidence. R7 warrants only the
-bounded repository-audit claim in section 1.
+R7 is `built` because its repository checks and watched-failing mutations are
+part of the ordinary verifier. It is not `available`: that term is reserved for
+admissible external evidence. R7 warrants only the bounded repository-audit
+claim in section 1.
 
 Gate A condition five is met mechanically only when a current-source passing
 audit covers the exact criteria, controls, commands, and Gate-A-applicable
 finding set.
 
-Gate A still does not pass automatically. A later author-only closure commit
-must cite an immutable candidate commit, the exact current audit, the versioned
-structure envelope, checker-derived assurance and residual sets, the exact
-claim limitations, a complete verification receipt, and a verbatim dated author
-act. Any semantic map change after the candidate requires a new audit and
-candidate.
+Gate A closes through two machine-checkable commits. The first freezes an
+immutable candidate with a null closure record and `not-passed` gate state, then
+runs the exact verifier chain and records its transcript digest. The second may
+change only closure metadata, acceptance metadata, and generated projections.
+Its closure record must cite that candidate, the exact current audit, the
+versioned-structure envelope, checker-derived assurance and residual sets,
+exact claim limitations, and the complete verification receipt. The validator
+derives `passed` from that record and rejects semantic or audit drift. No author
+ratification, reviewer action, or other human act is required. Any semantic map
+change after the candidate requires a new audit and candidate.
 
 ## 6. Going-forward project rule
 
 No project completion gate or publication gate may require recruiting,
-scheduling, or receiving work from an external human reviewer or reader.
+scheduling, receiving work from, or obtaining ratification or approval by any
+human reviewer, reader, author, panel, custodian, or participant.
 External feedback and reader studies are optional evidence only.
 
 Where a former gate depended on such evidence, the permitted claim must be

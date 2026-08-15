@@ -720,13 +720,15 @@ adjudicator, custodian, or participant.
   the checked repository structure for its named source, criteria, and controls.
   It supplies no independent-human, reader, external-truth, operational,
   feasibility, liveness, calibration, or self-authentication claim.
-- Gate A uses R7 plus separate author ratification.
+- Gate A uses R7 plus a checker-derived closure record bound to an immutable
+  verified candidate; no human act is required.
 - Gate C uses source binding, artifact integrity, navigation, internal
   consistency, and mechanical accessibility checks. It makes no reader-
   suitability or actual-user accessibility claim.
 - Gate E uses reproducible cross-book structural, model, provenance, and
-  assurance checks plus author ratification. It makes no human-reviewed or
-  real-world functioning claim.
+  assurance checks plus a checker-derived closure record bound to an immutable
+  verified candidate. No human act is required, and it makes no human-reviewed
+  or real-world functioning claim.
 - External review and reader studies may still be admitted as optional evidence.
   They never delay completion or publication.
 

@@ -5,9 +5,9 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-15-repository-adversarial-scope-audit`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-15-mechanical-gate-a-candidate`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Canonical source SHA-256: `2f526886f528e06abf59fea3ad000f0dbac53fb4f723d6db41966042cd283ba2`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `b87730854ee031cf02b0b878fbe5b072a84b950331df69b5b289fe83692bee3e`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -42,7 +42,7 @@ Canonical source SHA-256: `2f526886f528e06abf59fea3ad000f0dbac53fb4f723d6db41966
 | `review_commissions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `scope_audits` | 1 | `64e7999d15a20bccfac949d8d38481434377564caa3fff166dacc2899bea2688` | FS-SAU-01 |
+| `scope_audits` | 2 | `530fe377b1117912ffb6fbcd33c6f4751c46138682eb21e5116356718e837e94` | FS-SAU-01, FS-SAU-02 |
 | `deferred_populations` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `closure_requirement_profiles` | 8 | `70012e4f81b171843ec3e8cd9ddaa4ece34792f5f228e8f3e42190d37c340940` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 37 | `3d0ca96d53b7d3cf53edc489e51e3d47e3011350bc69fcf1a42685a02174376c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37 |
