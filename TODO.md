@@ -320,8 +320,8 @@ dependency, and Gate A closed mechanically at `405e480`.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Implement the ratified T3 temporal path in stages — staged rule families and
-  the full-source execution gates landed; four semantic and prose closures remain.**
+- [x] **Implement the ratified T3 temporal path in stages — staged rule families,
+  full-source execution gates, and four semantic and prose closures landed.**
   - Content commit `6f6c636` implements witnessed T1 transitions and carry,
     typed transitive T2 event/record paths, and canonical-current, source/window/
     case/lease-bound T3 Court custody. Forty fresh processes now execute 236
@@ -332,22 +332,17 @@ Gate B; it does not claim Book 2 operations or feasibility.
     chapter 7's direct Zed entitlement and made every generated placement subject's
     floor projection execute cold against its exact matrix facts, without a `person`
     overlay. A standing-removal sabotage protects that composition boundary.
-  - Before closure, repair or explicitly narrow four non-engine gaps:
-    - withholding either predecessor-standing witness can still suppress `person`
-      and the floor; resolve this through the universal-standing root item below or
-      an explicit author ruling, then pin the chosen polarity;
-    - temporal correction, supersession, lineage, non-revival, and challenge/duty
-      carry are described more strongly than the current rules establish; formalise
-      them or label each as a target, requirement, or Book 2 boundary;
-    - suppressing a genuine challenge filing can leave a lease unsuspended; correct
-      the fail-safe overclaim and add an executable challenge-intake-withholding case
-      before deciding whether the durable record/advocate route lands here;
-    - reconcile `3-spine.md`'s hand-written strata, floor, error-surface, and delivery
-      interpretation with its current generated block and constitution.
-  - **Done when:** the T3 implementation gate in
-    [`new-book-plans/book-1-time-model-decision.md`](new-book-plans/book-1-time-model-decision.md)
-    passes with the four closures above resolved and pinned, residual liveness
-    explicitly handed to Book 2, and every affected claim revised or pinned.
+  - Content candidate `9419db0` closes the four remaining boundaries without
+    overclaiming them: the dual-witness standing polarity is explicit and pinned;
+    correction, supersession, lineage, non-revival, and challenge/duty carry are
+    split between current supplied-record effects and named target/Book 2 contracts;
+    TA-41 and TP-12 execute the challenge-present and challenge-withheld custody
+    paths; and `3-spine.md` now treats the generated six-stratum graph as
+    authoritative while keeping chapter order editorial.
+  - Closure commit `ab28a5f` binds that immutable candidate to the exact Gate A
+    claim. The T3 gate passes with 41 fresh processes and 244 temporal pins;
+    residual liveness stays explicitly in Book 2, and no operation, delivery,
+    feasibility, outside-record completeness, or calibration claim is added.
 
 - [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
   - Use the coverage map's contract fields and the taxonomy's formalisation metadata
