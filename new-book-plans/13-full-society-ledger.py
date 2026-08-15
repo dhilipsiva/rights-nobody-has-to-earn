@@ -2022,7 +2022,11 @@ def validate_power_population(src: dict, ids: dict):
                             f"{ctx}.{role_field}")
             bodies_by_function[function] = set(rec[body_field])
         constraints = rec["separation_constraints"]
-        pairs = power["contract"]["required_separation_pairs"]
+        pairs = (
+            power["required_separation_pairs"]
+            if "required_separation_pairs" in power
+            else power["contract"]["required_separation_pairs"]
+        )
         if not isinstance(constraints, list) or len(constraints) != len(pairs):
             raise LedgerError(f"{ctx}: one constraint is required per pair")
         for j, (constraint, pair) in enumerate(zip(constraints, pairs)):
@@ -5325,8 +5329,7 @@ def negative_controls(src: dict) -> int:
         control("a power profile cannot be dropped",
                 lambda s: s["powers"][0]["profiles"].pop())
         control("profile fields reject blank substitutes",
-                lambda s: s["powers"][0]["profile_contracts"][
-                    s["powers"][0]["profiles"][0]].update({"office": "N/A"}))
+                _blank_first_power_profile)
         control("unknown power holder body is refused",
                 lambda s: s["powers"][0]["holder_body_refs"].__setitem__(
                     0, "FS-BOD-999"))
@@ -5903,6 +5906,17 @@ def negative_controls(src: dict) -> int:
             continue
         raise LedgerError(f"negative control failed to fail: {name}")
     return passed + 3
+
+
+def _blank_first_power_profile(s):
+    power = s["powers"][0]
+    profile = power["profiles"][0]
+    if "profile_terms" in power:
+        field = next(iter(power["profile_terms"][profile]))
+        power["profile_terms"][profile][field]["text"] = "N/A"
+    else:
+        field = next(iter(power["profile_contracts"][profile]))
+        power["profile_contracts"][profile][field] = "N/A"
 
 
 def _derived_bad_kind(s):

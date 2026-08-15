@@ -572,7 +572,11 @@ def validate_function_separation_row(
             )
         body_sets[function] = set(body_refs)
     constraints = row["separation_constraints"]
-    expected_pairs = power["contract"]["required_separation_pairs"]
+    expected_pairs = (
+        power["required_separation_pairs"]
+        if "required_separation_pairs" in power
+        else power["contract"]["required_separation_pairs"]
+    )
     if not isinstance(constraints, list) or len(constraints) != len(expected_pairs):
         raise ClosureAuditError(
             f"{context}: one source-backed constraint is required per pair"
