@@ -1,0 +1,14 @@
+# Counterfactual: first-contact root deleted
+:expect-pins 5
+
+at(UnregisteredContact, FirstContact).
+? at(UnregisteredContact, FirstContact).
+# => TRUE
+? person(UnregisteredContact).
+# => FALSE
+? entitled(UnregisteredContact, event { eats() }).
+# => FALSE
+? owe(State, Eats, UnregisteredContact).
+# => FALSE
+? match(UnregisteredContact, CivilIdentity).
+# => FALSE

@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-15-universal-standing-root-v1",
+  "source_version": "fs-ledger-2026-08-15-universal-standing-formal-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -2949,26 +2949,27 @@
         "class-01",
         "class-07"
       ],
-      "posture": "Specified",
-      "unimplemented_marker": true,
+      "posture": "Derived",
       "route_ref": "FS-RTE-01",
       "overlay": "none",
       "scope_bound": "the ratified standing roots and the formal first-contact, jurisdiction, effective-control, and birth inputs; the input remains externally supplied and does not authenticate civil identity",
       "evidence_notes": [
-        "coverage contract complete; formal root rules land in the following family transition"
+        "new-book-plans/universal-standing.pins.nibli executes birth, first-contact, jurisdiction, and effective-control roots",
+        "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli executes removal of the first-contact rule"
       ],
       "public_claim_restriction": "No claim that the system discovers every person, authenticates identity, operates an intake service, or delivers aid.",
       "applicability": "every born person and every person at first contact, within jurisdiction, or under effective control",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if standing remains record-gated",
       "consequence": "a missing entry can erase the floor, process, and remedy before any claim is heard",
       "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
-      "closure_condition": "FS-CVF-011 reaches prose-landed with executable root rules and watched failures",
+      "closure_condition": "the registered root rules, live pins, removal counterfactual, and coverage-family gate remain green",
       "envelope_id": "FS-ENV-00",
       "closure_requirement_refs": [
         "FS-CLR-01",
         "FS-CLR-04"
-      ]
+      ],
+      "evidence_kind": "executable"
     },
     {
       "id": "FS-CLM-39",
@@ -6608,7 +6609,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "08697ee258deb099b11f516426d77b25928fca94a9794b91c01edc3d9dec89da",
+    "artifact_sha256": "7a826bfe9264e6080cadd7588d46332bb2b28aa59457bf2f316bb103e9594fe5",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -82583,7 +82584,7 @@
     {
       "id": "FS-CVF-011",
       "title": "Universal standing root and identity boundary",
-      "state": "coverage-ready",
+      "state": "formalized",
       "source_family_refs": [],
       "card_refs": [],
       "template_refs": [],
@@ -82599,12 +82600,25 @@
         "FS-CCE-07",
         "FS-CCE-08"
       ],
-      "formal_statement_refs": [],
-      "pin_group_refs": [],
-      "counterfactual_refs": [],
+      "formal_statement_refs": [
+        "b214c5369507e0eb6eb829be92667f5a72b10cff32e966cb6374f4ef4087d8b9",
+        "ac2a478457f4f7822d0ee1e62da4e08625aacdaf43c65a4b2b179dbdd784c9cc",
+        "127ec74be3d2ec4289977fc4af0144f9ed47e88bde9ca8c3b150f179f8317d28",
+        "d2f8035ff865e7e74254cbbd6daaa6314d93419151cf50b019bdf052db07b9e5",
+        "ff116c9b7a723dda22c72a1a220f5b340b836ca44e7e4b3ba7d6d43c210fc7f6",
+        "249713ae1af1dec1cb17dff9e4c631584d1843826761f1e65454adfcc6388f96"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/universal-standing.pins.nibli::# Universal-standing root family - executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::# Counterfactual: first-contact root deleted",
+        "new-book-plans/universal-standing.pins.nibli::# FS-CCE-05 counterfactual: a false alias claim imports no identity.",
+        "new-book-plans/universal-standing.pins.nibli::# FS-CCE-07 counterfactual: a broken death entry leaves personhood intact."
+      ],
       "prose_refs": [],
       "part_v_refs": [],
-      "blocked_before_drafting": "Coverage is complete; formal rules, pins, and counterfactuals must land before any claim-bearing prose.",
+      "blocked_before_drafting": "Formal rules and executable controls are complete; claim-bearing prose remains blocked until each declared chapter and Part V reference lands.",
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General",
@@ -88714,13 +88728,16 @@
       "source_version": "fs-ledger-2026-08-09-stage-2",
       "history": [],
       "evidence_notes": [
-        "derived_only on person is permanently refused because it would reject the ground roster itself"
+        "derived_only on person is permanently refused because it would reject the ground roster itself",
+        "birth and encounter roots remove registry preconditions but remain unauthenticated supplied inputs; their premise cards price false assertion, withholding, correction, and direct-petition limits"
       ],
       "residual_citations": [
         "assertion-surface-contracts#premises.person",
         "assertion-surface-contracts#premises.show",
         "assertion-surface-contracts#premises.choose",
-        "temporal-assurance-case#attacks.standing_witness_withholding"
+        "temporal-assurance-case#attacks.standing_witness_withholding",
+        "assertion-surface-contracts#premises.at",
+        "assertion-surface-contracts#premises.born"
       ],
       "controls": {}
     }
@@ -105298,6 +105315,51 @@
       "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-06",
+      "title": "Universal-standing formalization audit pending",
+      "source_version": "fs-ledger-2026-08-15-universal-standing-formal-v1",
+      "scope_sha256": "143f50f095f13eb1eeb22c9ff91afe92e3a7b807645a2e62c2bf982550909e3b",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-15T13:44:18Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -105307,12 +105369,12 @@
       "effect_key": "universal-standing-root",
       "applicability": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if omitted or record-gated",
       "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
       "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
-      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
-      "posture": "Specified",
+      "closure_condition": "the six registered formal statements, 29 live pins, and first-contact removal counterfactual remain green",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-07"
@@ -105498,25 +105560,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-01-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-01 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-01-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::# Counterfactual: first-contact root deleted"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
@@ -105797,23 +105859,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-02-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-02 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-02-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-02 counterfactual: an unregistered first contact still reaches the floor."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
@@ -106048,23 +106110,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-03-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-03 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-03-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-03 counterfactual: undocumented jurisdictional presence remains standing."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
@@ -106338,23 +106400,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-04-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-04 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-04-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-04 counterfactual: missing age leaves standing intact near an expiring right."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
@@ -106653,23 +106715,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-05-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-05 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-05-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-05 counterfactual: a false alias claim imports no identity."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
@@ -106921,23 +106983,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-06-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-06 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-06-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-06 counterfactual: missing capacity evidence does not suspend standing."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
@@ -107170,23 +107232,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-07-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-07 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-07-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-07 counterfactual: a broken death entry leaves personhood intact."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
@@ -107485,23 +107547,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-08-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
         "source_refs": [
           "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-08 negative:"
       },
       "counterfactual": {
         "id": "FS-CCE-08-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
         "source_refs": [
           "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/universal-standing.pins.nibli::# FS-CCE-08 counterfactual: correction cannot erase the earlier citation."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
       "source_refs": [
         "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"

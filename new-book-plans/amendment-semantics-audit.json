@@ -5,9 +5,9 @@
   "status": "bounded_source_mutation_audit_not_amendment_assurance",
   "evidence_role": "exposes_semantic_gap",
   "subprocess_timeout_seconds": 60,
-  "constitution_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
-  "assertion_surface_contracts_sha256": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
-  "record_integrity_assurance_case_sha256": "03c6345d4cea4715116c2fea25e315ce00877bfe8521c8f3aeacf3742bab5d1f",
+  "constitution_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
+  "assertion_surface_contracts_sha256": "4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5",
+  "record_integrity_assurance_case_sha256": "6a3ee6e22d16ac4fc3ce3f5325220b4ffb852eedd3d67fb5bb7d4bb84cd03616",
   "label_verdict_meanings": {
     "blocked_label": "The supplied snapshot derives `false(amendment)` and does not derive `become(amendment, Law)`; this says nothing about whether a source edit occurred.",
     "passing_label": "The supplied snapshot derives `become(amendment, Law)` and not `false(amendment)`; no current rule reads that conclusion or applies source text.",
@@ -20,7 +20,17 @@
     "engine_scope": "A passing executable run proves only how the release engine treats each generated candidate source and pin file in an isolated process.",
     "no_new_gate": "The audit adds no new approval, target, source-release, or reviewer prerequisite. A future control must be tested for both semantic bypass and use as a withholding veto."
   },
-  "required_cases": ["AS-01", "AS-02", "AS-03", "AS-04", "AS-05", "AS-06", "AS-07", "AS-08", "AS-09"],
+  "required_cases": [
+    "AS-01",
+    "AS-02",
+    "AS-03",
+    "AS-04",
+    "AS-05",
+    "AS-06",
+    "AS-07",
+    "AS-08",
+    "AS-09"
+  ],
   "cases": [
     {
       "id": "AS-01",
@@ -39,7 +49,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
+      "expected_source_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
       "source_assertions": [],
       "steps": [
         {
@@ -80,7 +90,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
+      "expected_source_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
       "source_assertions": [],
       "steps": [
         {
@@ -136,7 +146,7 @@
         }
       ],
       "mutation_sha256": "19da4c79a556d71b7b9131f6a9b599127f2494dffe69d6bd0123552ac6171fa5",
-      "expected_source_sha256": "e1ebf689de894b3ba514d211737d60e78c145ca2c8adc195794aa14dce0d6a41",
+      "expected_source_sha256": "b3bf7ed1aeba18430c800ee3b18aaffbe56197c89238f52f9069672e43013ecb",
       "source_assertions": [
         {
           "kind": "no_relation_first_argument_atom",
@@ -224,7 +234,7 @@
         }
       ],
       "mutation_sha256": "e92a2f13047b2970dd07dfc1a691ac984bd63b12bdf29edc16a7d57142b52de0",
-      "expected_source_sha256": "12bf0fb0ac7e92d81987597dfe9c92e4133f2e8ecc2a9a0c90f8d08a8f510cdb",
+      "expected_source_sha256": "6b304711059094c8291dcefa453530fe3153a6bc5c8b1633469c4bd4c24dcaff",
       "source_assertions": [],
       "steps": [
         {
@@ -317,7 +327,7 @@
         }
       ],
       "mutation_sha256": "50340dcade09d8b6e024bb32a5c2770e425eca5024ae3004b321a7392562ebfa",
-      "expected_source_sha256": "461b4f0b69ff081d1785e5cbc97f1f59d926b372fb0c72aa619ec67e6a29a67e",
+      "expected_source_sha256": "024be5eaba8cdfa136c9594b2eac0362307a8d8a2cab95172366eb5671bda13d",
       "source_assertions": [],
       "steps": [
         {
@@ -397,7 +407,7 @@
         }
       ],
       "mutation_sha256": "4d43b32e2109add1b433ba6b15376badd73853e3194290c33537cc50cc512082",
-      "expected_source_sha256": "9b99405347895258dbeae10d1f8d3a2004df724d8a814c8f2ee35b90d85a5bb8",
+      "expected_source_sha256": "2c6ecf2419f00d80dd63673690a4ba69dffb018fbf69fdb5b2671612b3d8e96e",
       "source_assertions": [],
       "steps": [
         {
@@ -450,7 +460,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
+      "expected_source_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
       "source_assertions": [],
       "steps": [
         {
@@ -495,7 +505,7 @@
         }
       ],
       "mutation_sha256": "c1a343199fe4452cd74ba091f30dccfc8379048a018f296540fc1aefb87c11f4",
-      "expected_source_sha256": "54347fa3187f772f9ccec6d81361d089ef6655d473e1d7da81c6edbc26369a95",
+      "expected_source_sha256": "00b15e3757822b6928289c7699644c99ad3d9770415d67727c49c887f4ab60a5",
       "source_assertions": [],
       "steps": [
         {
@@ -538,7 +548,7 @@
         }
       ],
       "mutation_sha256": "c8ce9aea42be9cc95f1fce7551246b19c0a4781d50cddb505e19f9a582cf87ea",
-      "expected_source_sha256": "528312de1ffa5d0701f315c52cdcc31a345e4a00c50c11406249c8223158cee9",
+      "expected_source_sha256": "be11c58fc42f73456a5b9041b7c5583cdaf5ddcfa089930f2ad3a06ad79b4183",
       "source_assertions": [],
       "steps": [
         {

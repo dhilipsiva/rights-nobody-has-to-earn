@@ -256,6 +256,14 @@ COVERAGE_EVIDENCE_CEILING = (
     "feasibility, liveness, reader response, external truth, or calibration follows."
 )
 CONSTITUTIONAL_EFFECT_COUNT = 8
+UNIVERSAL_STANDING_STATEMENT_IDS = (
+    "b214c5369507e0eb6eb829be92667f5a72b10cff32e966cb6374f4ef4087d8b9",
+    "ac2a478457f4f7822d0ee1e62da4e08625aacdaf43c65a4b2b179dbdd784c9cc",
+    "127ec74be3d2ec4289977fc4af0144f9ed47e88bde9ca8c3b150f179f8317d28",
+    "d2f8035ff865e7e74254cbbd6daaa6314d93419151cf50b019bdf052db07b9e5",
+    "ff116c9b7a723dda22c72a1a220f5b340b836ca44e7e4b3ba7d6d43c210fc7f6",
+    "249713ae1af1dec1cb17dff9e4c631584d1843826761f1e65454adfcc6388f96",
+)
 EFFECT_CONTRACT_TERM_KEYS = [
     "lawful_source", "trigger", "evidence_rule", "bounded_effect",
     "forbidden_preconditions", "immediate_access", "record_boundary",
@@ -352,7 +360,7 @@ POWER_BOOK2_OWNER = (
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
-        "08697ee258deb099b11f516426d77b25928fca94a9794b91c01edc3d9dec89da"
+        "7a826bfe9264e6080cadd7588d46332bb2b28aa59457bf2f316bb103e9594fe5"
     ),
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": (
@@ -1525,6 +1533,14 @@ def validate_coverage_families(src: dict, ids: dict):
         assigned_refusals.extend(rec["refusal_refs"])
         assigned_crosswalks.extend(rec["crosswalk_refs"])
         assigned_effects.extend(rec["effect_refs"])
+        if rec["id"] == "FS-CVF-011":
+            expected = (
+                list(UNIVERSAL_STANDING_STATEMENT_IDS)
+                if rec["state"] in {"formalized", "prose-landed"} else []
+            )
+            if rec["formal_statement_refs"] != expected:
+                raise LedgerError(
+                    f"{ctx}: universal-standing formal surface drifted")
     if len(assigned_statements) != len(set(assigned_statements)):
         raise LedgerError("a formal statement belongs to multiple coverage families")
     if (set(assigned_statements) != set(statement_ids)
@@ -5509,6 +5525,9 @@ def negative_controls(src: dict) -> int:
             control("coverage family partitions every effect exactly once",
                     lambda s: s["coverage_families"][-1][
                         "effect_refs"].pop())
+            control("universal-standing formal surface is checker-owned",
+                    lambda s: s["coverage_families"][-1][
+                        "formal_statement_refs"].reverse())
             control("bounded delegation is decision-complete",
                     _incomplete_bounded_delegation)
             control("primary class follows the direct effect",

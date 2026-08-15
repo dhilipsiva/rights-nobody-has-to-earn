@@ -1,0 +1,108 @@
+# Universal-standing root family - executable coverage pins
+:expect-pins 29
+
+# FS-CCE-01 negative: birth and first contact attach standing without a registry.
+born(Nia).
+at(Una, FirstContact).
+? person(Nia).
+# => TRUE
+? person(Una).
+# => TRUE
+
+# FS-CCE-02 negative: the floor and debt attach before reconciliation.
+# FS-CCE-02 counterfactual: an unregistered first contact still reaches the floor.
+? entitled(Una, event { eats() }).
+# => TRUE
+? owe(State, Eats, Una).
+# => TRUE
+
+# FS-CCE-03 negative: undocumented presence needs no status disclosure.
+# FS-CCE-03 counterfactual: undocumented jurisdictional presence remains standing.
+at(Nomad, RepublicJurisdiction).
+? person(Nomad).
+# => TRUE
+? passport(Encounter_Nomad, CivilIdentity, Constitution_Temporal, Epoch_Current).
+# => FALSE
+
+# FS-CCE-04 negative: disputed age cannot postpone standing.
+# FS-CCE-04 counterfactual: missing age leaves standing intact near an expiring right.
+at(AgeDispute, FirstContact).
+? person(AgeDispute).
+# => TRUE
+? mature(AgeDispute).
+# => FALSE
+
+# FS-CCE-05 negative: an alias assertion is not an identity merge.
+# FS-CCE-05 counterfactual: a false alias claim imports no identity.
+cite(Registry, AliasClaim, Una).
+cite(Registry, AliasClaim, Mira).
+? cite(Registry, AliasClaim, Una).
+# => TRUE
+? match(Una, Mira).
+# => FALSE
+? match(Mira, Una).
+# => FALSE
+
+# FS-CCE-06 negative: disability or refusal of support is not a standing gate.
+# FS-CCE-06 counterfactual: missing capacity evidence does not suspend standing.
+at(Supported, FirstContact).
+? person(Supported).
+# => TRUE
+? mature(Supported).
+# => FALSE
+
+# FS-CCE-07 negative: a mistaken status entry cannot retract personhood.
+# FS-CCE-07 counterfactual: a broken death entry leaves personhood intact.
+at(Mira, FirstContact).
+cite(Registry, DeathEntry, Mira).
+broken(DeathEntry).
+? person(Mira).
+# => TRUE
+? broken(DeathEntry).
+# => TRUE
+
+# FS-CCE-08 negative: correction preserves the cited provenance.
+# FS-CCE-08 counterfactual: correction cannot erase the earlier citation.
+adjust(Registry, AliasClaim).
+? cite(Registry, AliasClaim, Mira).
+# => TRUE
+? adjust(Registry, AliasClaim).
+# => TRUE
+? person(Una).
+# => TRUE
+
+# Effective control is an independent standing root.
+at(Held, EffectiveControl).
+? person(Held).
+# => TRUE
+? owe(State, Secure, Held).
+# => TRUE
+
+# The encounter handle imports no authority, family, guilt, or custody.
+? authority(Una).
+# => FALSE
+? family(Una, Mira).
+# => FALSE
+? prisoner(Una).
+# => FALSE
+
+# A direct person fact and the existing release route remain valid.
+person(DirectPerson).
+free(ReleasedPerson).
+? person(DirectPerson).
+# => TRUE
+? person(ReleasedPerson).
+# => TRUE
+? travel(ReleasedPerson).
+# => TRUE
+
+# A known public body cannot be smuggled through the contact subject.
+at(Court, FirstContact).
+? person(Court).
+# => FALSE
+
+# The root creates no arrival or operation evidence.
+? eats(Una).
+# => FALSE
+? hears(Una, State).
+# => FALSE

@@ -9,7 +9,7 @@ a file where the change is actually made.
 Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
 
 - **A line deleted** (1 removed, 0 added) — `no-person-line`, `no-public-court`,
-  `no-choose-boss`. What the world loses without the line.
+  `no-choose-boss`, `no-first-contact-standing`. What the world loses without the line.
 - **A line changed** (1 removed, 1 added) — `no-dead-conjuncts`: Article 4's multi-sig with
   its `~broken`/`~match(·, CarriedVoid)` signer checks stripped. It has **no paired pin file on purpose**:
   `verify.sh` runs chapters 4 and 5's own pin files against it, and their passing unchanged
@@ -34,6 +34,8 @@ CF=new-book-plans/counterfactual
 grep -vFx 'all $anyone: prisoner($anyone) -> person($anyone).' $K > $CF/no-person-line.nibli
 grep -vFx 'public(Court).'                                     $K > $CF/no-public-court.nibli
 grep -vFx 'choose(Electorate, Boss).'                          $K > $CF/no-choose-boss.nibli
+grep -vFx 'all $subject: at($subject, FirstContact) & ~public($subject) -> person($subject).' \
+  $K > $CF/no-first-contact-standing.nibli
 ```
 
 **The `$CF/` prefixes are load-bearing and were missing until 2026-07-30.** `$K` is
@@ -84,6 +86,7 @@ guard assigned its result to a variable it never read.
 | `no-person-line.nibli` | `prisoner -> person` | Chapter 7's headline result. With the line, a heresy law is refused; without it the same law **loads**, and the whole population becomes imprisonable for belief. The clause that keeps prisoners human and the clause that keeps everyone's rights unconditional are the same clause. |
 | `no-public-court.nibli` | `public(Court).` | The deletion axis of the fact-write trust base. One deleted line and `authority(Court)` goes FALSE, taking Sly's shield with it — `prisoner(Sly)` flips FALSE→TRUE. |
 | `no-choose-boss.nibli` | `choose(Electorate, Boss).` | The same harm by the other route into standing. `authority(Boss)` goes FALSE and **Rebel — the file's own honest whistleblower — is jailed**, which is the whole of chapter 2's argument, undone by deleting one fact. |
+| `no-first-contact-standing.nibli` | first-contact standing rule | An unregistered first-contact handle no longer acquires standing, the floor, or the State's debt; the other standing roots remain controls. |
 
 Each has a paired `*.pins.nibli` asserting the flipped verdicts. Those pin files are
 **expected to pass against their own fixture**, not against the constitution: they encode

@@ -5,33 +5,33 @@
   "status": "staged_t3_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
+  "constitution_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
   "bound_sources_sha256": {
-    "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44",
-    "assertion_surface": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
-    "record_assurance": "03c6345d4cea4715116c2fea25e315ce00877bfe8521c8f3aeacf3742bab5d1f",
-    "record_red_team": "62d00a43ac1b35b0dba0460cc78038e8624b21a2e14956637270a58dd3813653",
-    "amendment_semantics": "18285fc2e807f035320c1a5c5e6420433bbf3f024553c1e9c6343d7acf228c31",
-    "placement_exhaustiveness": "1852d25123b678c656ad4e424248454f65803f481aa9f79e932a0a1ede5233a5"
+    "amendment_semantics": "e1b15d80d461ee3aadbc1047d786b0adeda09673b147d23d197dc3ea4f8f29bc",
+    "assertion_surface": "4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5",
+    "placement_exhaustiveness": "b638356f39fbc5e5c9869d7bdc34bfa56b1fbb71b4db5448d7e33337c6ecb115",
+    "record_assurance": "6a3ee6e22d16ac4fc3ce3f5325220b4ffb852eedd3d67fb5bb7d4bb84cd03616",
+    "record_red_team": "bda6ae894bae8ba8566149616fe3544a08ee20b152848170693005c85b310914",
+    "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44"
   },
   "marker_sha256": {
     "T1-ADMISSIONS": "3134ec9518e8e80d540d1d984f89213cac06533fa7847658a5b2121a4c7d63c9",
     "T1-DERIVED": "59fa272dd256f1bb65c14df069cd990aae9cd4da23110dac7b7875c64bbdbf73",
-    "T1-RULES": "03fb47aa7823a45bc675bd30620b397ff47daf399f3033b60027439b38de21df",
     "T1-FACTS": "769d0cb31b185780340b4fcf3e9fe9995332bd12cd27ec8d3a3e932e6d17dc00",
+    "T1-RULES": "03fb47aa7823a45bc675bd30620b397ff47daf399f3033b60027439b38de21df",
     "T2-DERIVED": "b98be85e7db2fef50fd8aa2d086868c88915c6e8000f8e789272c57ea1a7bfef",
-    "T2-RULES": "91bee6f6188b7c528e0e71118d3abffcc025b478ba71525f803b984ff5a08396",
     "T2-FACTS": "206cea7dd5b527f02e78605e1a7ad277b69fcb0ad7e9c96821096507739a351c",
-    "T3-DERIVED": "ead3c828571357c6a78cd17663e32d120a15339f272cf1250cf38bee8488ef0c",
-    "T3-RULES": "345501f95423e431c94e13c5a5d661e8c4acd3ef8774983738290d3a66dd7398",
-    "T3-FACTS": "5f57152621a4241c85c1e01a9655c55e3ed41a1f413f32bf87a8a4395b71b7fe",
+    "T2-RULES": "91bee6f6188b7c528e0e71118d3abffcc025b478ba71525f803b984ff5a08396",
     "T3-COURT-GATE": "cf483b6e458e409dd8e3b505cf5120428537daead5e0eaa73066d2c481633936",
-    "T3-LEASE-RULE": "094ec7d7e767e20bf5e89ce98aeb2d699bf505e68c4becd6d077f5c8d6ba455b"
+    "T3-DERIVED": "ead3c828571357c6a78cd17663e32d120a15339f272cf1250cf38bee8488ef0c",
+    "T3-FACTS": "5f57152621a4241c85c1e01a9655c55e3ed41a1f413f32bf87a8a4395b71b7fe",
+    "T3-LEASE-RULE": "094ec7d7e767e20bf5e89ce98aeb2d699bf505e68c4becd6d077f5c8d6ba455b",
+    "T3-RULES": "345501f95423e431c94e13c5a5d661e8c4acd3ef8774983738290d3a66dd7398"
   },
   "stage_source_sha256": {
-    "T1": "bc70dfd1f11252692c565d8b347a6285f8c1202615ab631c8a9831fd025c61c7",
-    "T2": "ce7593cd264e9a20ad789ad116908c32b8feda7916e8320736cab668444fd23e",
-    "T3": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5"
+    "T1": "6f51d75f2255f9f593626ca3841a64d6136ea061295020305ff241bbca7d3d27",
+    "T2": "9e777da91cc3d5e435bd123a249b0ed7ff5da1413551e9d051813e201c5f8ebd",
+    "T3": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa"
   },
   "source_effect_binding": {
     "effective_version": "Constitution_Temporal",

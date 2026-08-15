@@ -83,6 +83,13 @@ admits("mature").     admits("parent").     admits("permanent").
 admits("person").     admits("public").     admits("put").
 admits("rotten").     admits("show").       admits("sibling").
 admits("suggest").    admits("teaches").    admits("work").
+# <UNIVERSAL-STANDING-ADMISSIONS-BEGIN>
+# [v1.1] born and at are externally supplied roots. An at subject is only an
+# encounter handle unless a separate consequential-record process authenticates
+# a civil identity. Neither input supplies citizenship, capacity, family, guilt,
+# liability, record ownership, or authority.
+admits("at").         admits("born").
+# <UNIVERSAL-STANDING-ADMISSIONS-END>
 # <T1-ADMISSIONS-BEGIN>
 # [v1.0 T1-T3] These narrow relations hold the reviewed temporal envelope.
 # `list` and `replace` name snapshot lineage; `authorized`, `carries`, `limit`,
@@ -444,6 +451,16 @@ entitled(every person, event { meets() }).
 # demonstrates the shape — delivery as a rule, not a promise — and the
 # destination book needs nothing more from it.
 all $t: all $s: teaches($t, $s) & hears($s, $t) -> learn($s).
+# <UNIVERSAL-STANDING-RULES-BEGIN>
+# [v1.1] Standing starts from the supplied encounter, not a successful lookup.
+# The public guard refuses a known public body passed as the subject. These rules
+# are monotone: a later correction cannot retract personhood. They authenticate
+# no civil identity and add no operation or delivery claim.
+all $child: born($child) & ~public($child) -> person($child).
+all $subject: at($subject, FirstContact) & ~public($subject) -> person($subject).
+all $subject: at($subject, RepublicJurisdiction) & ~public($subject) -> person($subject).
+all $subject: at($subject, EffectiveControl) & ~public($subject) -> person($subject).
+# <UNIVERSAL-STANDING-RULES-END>
 # [v0.4 NEW] A released person is still a person. This line is not optional and
 # it is not symmetry for its own sake: `prisoner -> person` above is the ONLY
 # non-assertion route into the roster, so without this, ending a sentence ends

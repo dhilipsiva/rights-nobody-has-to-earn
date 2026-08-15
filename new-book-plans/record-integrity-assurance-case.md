@@ -476,8 +476,10 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | --- | --- | --- |
 | `adjust` | `RC-1` | Constitutional-change records |
 | `approves` | `RC-1` | Constitutional-change records |
+| `at` | `RC-2` | Standing, status, and public-power records |
 | `attack` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `authorized` | `RC-6` | Temporal transition, order, and review records |
+| `born` | `RC-2` | Standing, status, and public-power records |
 | `broken` | `RC-2` | Standing, status, and public-power records |
 | `capture` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `carries` | `RC-6` | Temporal transition, order, and review records |
@@ -702,7 +704,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

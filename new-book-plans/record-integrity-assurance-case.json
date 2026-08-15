@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
+  "assertion_surface_contracts_sha256": "4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -684,8 +684,10 @@
   "premise_classes": {
     "adjust": "RC-1",
     "approves": "RC-1",
+    "at": "RC-2",
     "attack": "RC-3",
     "authorized": "RC-6",
+    "born": "RC-2",
     "broken": "RC-2",
     "capture": "RC-3",
     "carries": "RC-6",

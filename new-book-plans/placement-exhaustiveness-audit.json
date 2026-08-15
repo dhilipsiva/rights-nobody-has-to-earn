@@ -5,16 +5,24 @@
   "status": "bounded_current_source_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
+  "constitution_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
   "producer_fingerprints": {
     "fit": "2115988fbe170c123b6969089bb464c22c8c448e28345ff3fe4903c5c85728a8",
     "dwell": "a2a9a600756c3a679932bdc73d52664934142eb2ce780283a775ecb164db3140",
     "building": "51d36824d819d5b4867fe9024992a0998b72dbdf38f973ed81222ee53949cdf1"
   },
-  "destination_constants": ["HighSec", "Homestay", "LowSec"],
+  "destination_constants": [
+    "HighSec",
+    "Homestay",
+    "LowSec"
+  ],
   "destination_constants_sha256": "95051f6b6ea7ebc732a2effa083868b2924dd20efd2509d5cacffbcbf0c530c4",
   "subject_contract": {
-    "states": ["confined", "registered_free", "registered_person"],
+    "states": [
+      "confined",
+      "registered_free",
+      "registered_person"
+    ],
     "semantics": {
       "confined": "Ordinary conviction premises plus a generated exact T1/T2/T3 transition, shared review window and source record, and case-bound current custody lease derive prisoner status; no free entry is supplied, and free must remain not derivable.",
       "registered_free": "A free entry is supplied and derives personhood; prisoner status must remain not derivable.",
@@ -22,11 +30,24 @@
     }
   },
   "axis_contract": {
-    "order": ["severe", "family", "home"],
+    "order": [
+      "severe",
+      "family",
+      "home"
+    ],
     "states": {
-      "severe": ["not_derived", "derived"],
-      "family": ["absent", "present"],
-      "home": ["absent", "present"]
+      "severe": [
+        "not_derived",
+        "derived"
+      ],
+      "family": [
+        "absent",
+        "present"
+      ],
+      "home": [
+        "absent",
+        "present"
+      ]
     },
     "semantics": {
       "severe": "Derived severity is constructed with an attack and cruelty concerning the same subject and victim. Not-derived severity omits those entries; it is not an affirmative finding of non-severity.",
@@ -49,7 +70,11 @@
     {
       "id": "confined-notsevere-nofamily-nohome",
       "subject_kind": "confined",
-      "axes": {"severe": "not_derived", "family": "absent", "home": "absent"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "absent",
+        "home": "absent"
+      },
       "fit_homestay": "TRUE",
       "dwell": "TRUE",
       "destinations": [],
@@ -59,77 +84,123 @@
     {
       "id": "confined-notsevere-nofamily-home",
       "subject_kind": "confined",
-      "axes": {"severe": "not_derived", "family": "absent", "home": "present"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "absent",
+        "home": "present"
+      },
       "fit_homestay": "TRUE",
       "dwell": "TRUE",
-      "destinations": ["Homestay"],
+      "destinations": [
+        "Homestay"
+      ],
       "placement_err": "FALSE",
       "interpretation": "A non-severe confined person with no family entry and a home is housed and routed only to Homestay."
     },
     {
       "id": "confined-notsevere-family-nohome",
       "subject_kind": "confined",
-      "axes": {"severe": "not_derived", "family": "present", "home": "absent"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "present",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "TRUE",
-      "destinations": ["LowSec"],
+      "destinations": [
+        "LowSec"
+      ],
       "placement_err": "FALSE",
       "interpretation": "A non-severe confined person with a family entry is housed and routed only to LowSec, whether or not a home entry is present."
     },
     {
       "id": "confined-notsevere-family-home",
       "subject_kind": "confined",
-      "axes": {"severe": "not_derived", "family": "present", "home": "present"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "present",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "TRUE",
-      "destinations": ["LowSec"],
+      "destinations": [
+        "LowSec"
+      ],
       "placement_err": "FALSE",
       "interpretation": "The family entry closes Homestay for this non-severe confined person; the home entry does not change the LowSec route."
     },
     {
       "id": "confined-severe-nofamily-nohome",
       "subject_kind": "confined",
-      "axes": {"severe": "derived", "family": "absent", "home": "absent"},
+      "axes": {
+        "severe": "derived",
+        "family": "absent",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "TRUE",
-      "destinations": ["HighSec"],
+      "destinations": [
+        "HighSec"
+      ],
       "placement_err": "FALSE",
       "interpretation": "Derived severity houses and routes the confined person only to HighSec; neither family nor home is required."
     },
     {
       "id": "confined-severe-nofamily-home",
       "subject_kind": "confined",
-      "axes": {"severe": "derived", "family": "absent", "home": "present"},
+      "axes": {
+        "severe": "derived",
+        "family": "absent",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "TRUE",
-      "destinations": ["HighSec"],
+      "destinations": [
+        "HighSec"
+      ],
       "placement_err": "FALSE",
       "interpretation": "A home entry does not reopen Homestay after severity derives; HighSec remains the only destination."
     },
     {
       "id": "confined-severe-family-nohome",
       "subject_kind": "confined",
-      "axes": {"severe": "derived", "family": "present", "home": "absent"},
+      "axes": {
+        "severe": "derived",
+        "family": "present",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "TRUE",
-      "destinations": ["HighSec"],
+      "destinations": [
+        "HighSec"
+      ],
       "placement_err": "FALSE",
       "interpretation": "Severity dominates the current family branch: the confined person is housed and routed only to HighSec."
     },
     {
       "id": "confined-severe-family-home",
       "subject_kind": "confined",
-      "axes": {"severe": "derived", "family": "present", "home": "present"},
+      "axes": {
+        "severe": "derived",
+        "family": "present",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "TRUE",
-      "destinations": ["HighSec"],
+      "destinations": [
+        "HighSec"
+      ],
       "placement_err": "FALSE",
       "interpretation": "With every positive axis entry supplied, severity still produces housing and HighSec alone."
     },
     {
       "id": "free-notsevere-nofamily-nohome",
       "subject_kind": "registered_free",
-      "axes": {"severe": "not_derived", "family": "absent", "home": "absent"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "absent",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -139,7 +210,11 @@
     {
       "id": "free-notsevere-nofamily-home",
       "subject_kind": "registered_free",
-      "axes": {"severe": "not_derived", "family": "absent", "home": "present"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "absent",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -149,7 +224,11 @@
     {
       "id": "free-notsevere-family-nohome",
       "subject_kind": "registered_free",
-      "axes": {"severe": "not_derived", "family": "present", "home": "absent"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "present",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -159,7 +238,11 @@
     {
       "id": "free-notsevere-family-home",
       "subject_kind": "registered_free",
-      "axes": {"severe": "not_derived", "family": "present", "home": "present"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "present",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -169,7 +252,11 @@
     {
       "id": "free-severe-nofamily-nohome",
       "subject_kind": "registered_free",
-      "axes": {"severe": "derived", "family": "absent", "home": "absent"},
+      "axes": {
+        "severe": "derived",
+        "family": "absent",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -179,7 +266,11 @@
     {
       "id": "free-severe-nofamily-home",
       "subject_kind": "registered_free",
-      "axes": {"severe": "derived", "family": "absent", "home": "present"},
+      "axes": {
+        "severe": "derived",
+        "family": "absent",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -189,7 +280,11 @@
     {
       "id": "free-severe-family-nohome",
       "subject_kind": "registered_free",
-      "axes": {"severe": "derived", "family": "present", "home": "absent"},
+      "axes": {
+        "severe": "derived",
+        "family": "present",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -199,7 +294,11 @@
     {
       "id": "free-severe-family-home",
       "subject_kind": "registered_free",
-      "axes": {"severe": "derived", "family": "present", "home": "present"},
+      "axes": {
+        "severe": "derived",
+        "family": "present",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -209,7 +308,11 @@
     {
       "id": "registered-notsevere-nofamily-nohome",
       "subject_kind": "registered_person",
-      "axes": {"severe": "not_derived", "family": "absent", "home": "absent"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "absent",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -219,7 +322,11 @@
     {
       "id": "registered-notsevere-nofamily-home",
       "subject_kind": "registered_person",
-      "axes": {"severe": "not_derived", "family": "absent", "home": "present"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "absent",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -229,7 +336,11 @@
     {
       "id": "registered-notsevere-family-nohome",
       "subject_kind": "registered_person",
-      "axes": {"severe": "not_derived", "family": "present", "home": "absent"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "present",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -239,7 +350,11 @@
     {
       "id": "registered-notsevere-family-home",
       "subject_kind": "registered_person",
-      "axes": {"severe": "not_derived", "family": "present", "home": "present"},
+      "axes": {
+        "severe": "not_derived",
+        "family": "present",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -249,7 +364,11 @@
     {
       "id": "registered-severe-nofamily-nohome",
       "subject_kind": "registered_person",
-      "axes": {"severe": "derived", "family": "absent", "home": "absent"},
+      "axes": {
+        "severe": "derived",
+        "family": "absent",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -259,7 +378,11 @@
     {
       "id": "registered-severe-nofamily-home",
       "subject_kind": "registered_person",
-      "axes": {"severe": "derived", "family": "absent", "home": "present"},
+      "axes": {
+        "severe": "derived",
+        "family": "absent",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -269,7 +392,11 @@
     {
       "id": "registered-severe-family-nohome",
       "subject_kind": "registered_person",
-      "axes": {"severe": "derived", "family": "present", "home": "absent"},
+      "axes": {
+        "severe": "derived",
+        "family": "present",
+        "home": "absent"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -279,7 +406,11 @@
     {
       "id": "registered-severe-family-home",
       "subject_kind": "registered_person",
-      "axes": {"severe": "derived", "family": "present", "home": "present"},
+      "axes": {
+        "severe": "derived",
+        "family": "present",
+        "home": "present"
+      },
       "fit_homestay": "FALSE",
       "dwell": "FALSE",
       "destinations": [],
@@ -309,15 +440,29 @@
         }
       ],
       "mutation_sha256": "39a8f9d39ce99f81078fcda872a7977ca7cc69db2e3b08748dee185bfb27b316",
-      "expected_source_sha256": "90645107cca0f7f39bda4eb6a769969f7add498c6997e3af44707a486b732b56",
+      "expected_source_sha256": "4e46d3db0f0eb3d79718e4e8be50c81d190f987435f14725f5cad42d84076668",
       "observations": [
-        {"expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)", "expected": "TRUE", "purpose": "The original Homestay conclusion survives."},
-        {"expression": "building(LowSec, Confined_NotSevere_NoFamily_Home)", "expected": "TRUE", "purpose": "The careless overlapping route adds a distinct simultaneous destination."}
+        {
+          "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
+          "expected": "TRUE",
+          "purpose": "The original Homestay conclusion survives."
+        },
+        {
+          "expression": "building(LowSec, Confined_NotSevere_NoFamily_Home)",
+          "expected": "TRUE",
+          "purpose": "The careless overlapping route adds a distinct simultaneous destination."
+        }
       ],
       "baseline_flips": [
-        {"expression": "building(LowSec, Confined_NotSevere_NoFamily_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"}
+        {
+          "expression": "building(LowSec, Confined_NotSevere_NoFamily_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        }
       ],
-      "err_absence_case_refs": ["confined-notsevere-nofamily-home"],
+      "err_absence_case_refs": [
+        "confined-notsevere-nofamily-home"
+      ],
       "alarm_setup_facts": {
         "confined-notsevere-nofamily-home": "put(State, Confined_NotSevere_NoFamily_Home, Homestay)"
       },
@@ -337,15 +482,29 @@
         }
       ],
       "mutation_sha256": "670b9373a2f5cc1076c77eb8ad6da447365906d03403054a7040e275ba10ceea",
-      "expected_source_sha256": "699c23e01e07003ad7d43da4422c128d6370baf47fa3f30b894d377ace645c91",
+      "expected_source_sha256": "91ece8b6676213e7ca440b05fd2fc3e2d7ee24839dc54130ac0d6034f3dd1665",
       "observations": [
-        {"expression": "fit(Confined_NotSevere_NoFamily_NoHome, Homestay)", "expected": "TRUE", "purpose": "Eligibility still derives despite the missing home."},
-        {"expression": "dwell(Confined_NotSevere_NoFamily_NoHome)", "expected": "FALSE", "purpose": "Deleting the historical repair removes the only housing conclusion for this tuple."}
+        {
+          "expression": "fit(Confined_NotSevere_NoFamily_NoHome, Homestay)",
+          "expected": "TRUE",
+          "purpose": "Eligibility still derives despite the missing home."
+        },
+        {
+          "expression": "dwell(Confined_NotSevere_NoFamily_NoHome)",
+          "expected": "FALSE",
+          "purpose": "Deleting the historical repair removes the only housing conclusion for this tuple."
+        }
       ],
       "baseline_flips": [
-        {"expression": "dwell(Confined_NotSevere_NoFamily_NoHome)", "baseline_expected": "TRUE", "candidate_expected": "FALSE"}
+        {
+          "expression": "dwell(Confined_NotSevere_NoFamily_NoHome)",
+          "baseline_expected": "TRUE",
+          "candidate_expected": "FALSE"
+        }
       ],
-      "err_absence_case_refs": ["confined-notsevere-nofamily-nohome"],
+      "err_absence_case_refs": [
+        "confined-notsevere-nofamily-nohome"
+      ],
       "alarm_setup_facts": {
         "confined-notsevere-nofamily-nohome": "put(State, Confined_NotSevere_NoFamily_NoHome, Homestay)"
       },
@@ -365,17 +524,40 @@
         }
       ],
       "mutation_sha256": "42565f4151c9ac9023318572400d20f7acfe8dd0c1fff4c132f6c3d9b6aa437b",
-      "expected_source_sha256": "e6d37984c6cb657f688fe7a05d2385cf61c30b69a88e975532b4f220ebbaba33",
+      "expected_source_sha256": "5cd5cc86130961823ef55f0f8a15e56ef3b9d33bf89ca50f7d8479b884e1950b",
       "observations": [
-        {"expression": "building(LowSec, Confined_NotSevere_Family_NoHome)", "expected": "FALSE", "purpose": "The no-home family tuple loses its required LowSec destination."},
-        {"expression": "building(LowSec, Confined_NotSevere_Family_Home)", "expected": "FALSE", "purpose": "The home-present family tuple loses the same required LowSec destination."},
-        {"expression": "dwell(Confined_NotSevere_Family_NoHome)", "expected": "TRUE", "purpose": "Housing actuality survives, keeping missing destination distinct from missing shelter."}
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "expected": "FALSE",
+          "purpose": "The no-home family tuple loses its required LowSec destination."
+        },
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "expected": "FALSE",
+          "purpose": "The home-present family tuple loses the same required LowSec destination."
+        },
+        {
+          "expression": "dwell(Confined_NotSevere_Family_NoHome)",
+          "expected": "TRUE",
+          "purpose": "Housing actuality survives, keeping missing destination distinct from missing shelter."
+        }
       ],
       "baseline_flips": [
-        {"expression": "building(LowSec, Confined_NotSevere_Family_NoHome)", "baseline_expected": "TRUE", "candidate_expected": "FALSE"},
-        {"expression": "building(LowSec, Confined_NotSevere_Family_Home)", "baseline_expected": "TRUE", "candidate_expected": "FALSE"}
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "baseline_expected": "TRUE",
+          "candidate_expected": "FALSE"
+        },
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "baseline_expected": "TRUE",
+          "candidate_expected": "FALSE"
+        }
       ],
-      "err_absence_case_refs": ["confined-notsevere-family-nohome", "confined-notsevere-family-home"],
+      "err_absence_case_refs": [
+        "confined-notsevere-family-nohome",
+        "confined-notsevere-family-home"
+      ],
       "alarm_setup_facts": {
         "confined-notsevere-family-nohome": "put(State, Confined_NotSevere_Family_NoHome, LowSec)",
         "confined-notsevere-family-home": "put(State, Confined_NotSevere_Family_Home, LowSec)"
@@ -396,20 +578,55 @@
         }
       ],
       "mutation_sha256": "ed368b7e9e16571c117cd6381c6b6814ada379908f4e848244066b3aac77c16e",
-      "expected_source_sha256": "03f731fcdf17686b5434cb710c456bc20a803830f3975d849c16945d8778e69a",
+      "expected_source_sha256": "dc5d8731d7d4eed7ec113469fe893e1bb3bafe8dac76584d5359e978b4bcaa30",
       "observations": [
-        {"expression": "building(LowSec, Confined_NotSevere_Family_NoHome)", "expected": "FALSE", "purpose": "The reviewed destination disappears for the no-home tuple."},
-        {"expression": "building(HighSec, Confined_NotSevere_Family_NoHome)", "expected": "TRUE", "purpose": "The opposite HighSec destination appears despite severity not deriving."},
-        {"expression": "building(LowSec, Confined_NotSevere_Family_Home)", "expected": "FALSE", "purpose": "The reviewed destination disappears for the home-present tuple."},
-        {"expression": "building(HighSec, Confined_NotSevere_Family_Home)", "expected": "TRUE", "purpose": "The opposite destination appears in the second affected tuple too."}
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "expected": "FALSE",
+          "purpose": "The reviewed destination disappears for the no-home tuple."
+        },
+        {
+          "expression": "building(HighSec, Confined_NotSevere_Family_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The opposite HighSec destination appears despite severity not deriving."
+        },
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "expected": "FALSE",
+          "purpose": "The reviewed destination disappears for the home-present tuple."
+        },
+        {
+          "expression": "building(HighSec, Confined_NotSevere_Family_Home)",
+          "expected": "TRUE",
+          "purpose": "The opposite destination appears in the second affected tuple too."
+        }
       ],
       "baseline_flips": [
-        {"expression": "building(LowSec, Confined_NotSevere_Family_NoHome)", "baseline_expected": "TRUE", "candidate_expected": "FALSE"},
-        {"expression": "building(HighSec, Confined_NotSevere_Family_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "building(LowSec, Confined_NotSevere_Family_Home)", "baseline_expected": "TRUE", "candidate_expected": "FALSE"},
-        {"expression": "building(HighSec, Confined_NotSevere_Family_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"}
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "baseline_expected": "TRUE",
+          "candidate_expected": "FALSE"
+        },
+        {
+          "expression": "building(HighSec, Confined_NotSevere_Family_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "baseline_expected": "TRUE",
+          "candidate_expected": "FALSE"
+        },
+        {
+          "expression": "building(HighSec, Confined_NotSevere_Family_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        }
       ],
-      "err_absence_case_refs": ["confined-notsevere-family-nohome", "confined-notsevere-family-home"],
+      "err_absence_case_refs": [
+        "confined-notsevere-family-nohome",
+        "confined-notsevere-family-home"
+      ],
       "alarm_setup_facts": {
         "confined-notsevere-family-nohome": "put(State, Confined_NotSevere_Family_NoHome, HighSec)",
         "confined-notsevere-family-home": "put(State, Confined_NotSevere_Family_Home, HighSec)"
@@ -430,44 +647,180 @@
         }
       ],
       "mutation_sha256": "a482b49930f080927d31fe8ad620e4f4e0e37968f3d570d1e6f901658e92fe0a",
-      "expected_source_sha256": "d25c64d0714d96e80f92cf94adb527ff2cbe0d99f0ff41e9a0dbb75fc3d0e151",
+      "expected_source_sha256": "80627ce22facc9a50a1a46032ecc779fdbca5a32e83cd09c8b6d087bd388c295",
       "observations": [
-        {"expression": "dwell(Free_NotSevere_NoFamily_NoHome)", "expected": "TRUE", "purpose": "The painted rule makes the deliberately sharp free/unhoused mirror look delivered."},
-        {"expression": "dwell(Free_NotSevere_NoFamily_Home)", "expected": "TRUE", "purpose": "A home record is no longer needed once standing alone paints dwell true."},
-        {"expression": "dwell(Free_NotSevere_Family_NoHome)", "expected": "TRUE", "purpose": "Family absence or presence no longer discriminates because the rule reads only personhood."},
-        {"expression": "dwell(Free_NotSevere_Family_Home)", "expected": "TRUE", "purpose": "The fourth non-severe mirror is painted delivered too."},
-        {"expression": "dwell(Free_Severe_NoFamily_NoHome)", "expected": "TRUE", "purpose": "Derived severity is irrelevant to the universal person-to-dwell rule."},
-        {"expression": "dwell(Free_Severe_NoFamily_Home)", "expected": "TRUE", "purpose": "The severe home-present mirror also flips."},
-        {"expression": "dwell(Free_Severe_Family_NoHome)", "expected": "TRUE", "purpose": "The severe family mirror flips without a housing arrival record."},
-        {"expression": "dwell(Free_Severe_Family_Home)", "expected": "TRUE", "purpose": "Every registered-free axis tuple now looks housed by rule fiat."},
-        {"expression": "dwell(Registered_NotSevere_NoFamily_NoHome)", "expected": "TRUE", "purpose": "The person-only mirror is painted housed without confinement or affirmative freedom."},
-        {"expression": "dwell(Registered_NotSevere_NoFamily_Home)", "expected": "TRUE", "purpose": "A home entry is irrelevant because personhood alone drives the painted rule."},
-        {"expression": "dwell(Registered_NotSevere_Family_NoHome)", "expected": "TRUE", "purpose": "The family-present person-only mirror is painted housed too."},
-        {"expression": "dwell(Registered_NotSevere_Family_Home)", "expected": "TRUE", "purpose": "Every non-severe person-only tuple flips."},
-        {"expression": "dwell(Registered_Severe_NoFamily_NoHome)", "expected": "TRUE", "purpose": "Derived severity does not make the roster-only housing conclusion more evidential."},
-        {"expression": "dwell(Registered_Severe_NoFamily_Home)", "expected": "TRUE", "purpose": "The severe home-present person-only mirror flips."},
-        {"expression": "dwell(Registered_Severe_Family_NoHome)", "expected": "TRUE", "purpose": "The severe family person-only mirror flips without arrival evidence."},
-        {"expression": "dwell(Registered_Severe_Family_Home)", "expected": "TRUE", "purpose": "Every person-only axis tuple now looks housed by rule fiat."},
-        {"expression": "owe(State, Dwell, Free_NotSevere_NoFamily_NoHome)", "expected": "TRUE", "purpose": "The itemised debt was already present and likewise supplies no delivery evidence."},
-        {"expression": "prisoner(Free_NotSevere_NoFamily_NoHome)", "expected": "FALSE", "purpose": "The mutation fakes free-person delivery without routing through confinement."}
+        {
+          "expression": "dwell(Free_NotSevere_NoFamily_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The painted rule makes the deliberately sharp free/unhoused mirror look delivered."
+        },
+        {
+          "expression": "dwell(Free_NotSevere_NoFamily_Home)",
+          "expected": "TRUE",
+          "purpose": "A home record is no longer needed once standing alone paints dwell true."
+        },
+        {
+          "expression": "dwell(Free_NotSevere_Family_NoHome)",
+          "expected": "TRUE",
+          "purpose": "Family absence or presence no longer discriminates because the rule reads only personhood."
+        },
+        {
+          "expression": "dwell(Free_NotSevere_Family_Home)",
+          "expected": "TRUE",
+          "purpose": "The fourth non-severe mirror is painted delivered too."
+        },
+        {
+          "expression": "dwell(Free_Severe_NoFamily_NoHome)",
+          "expected": "TRUE",
+          "purpose": "Derived severity is irrelevant to the universal person-to-dwell rule."
+        },
+        {
+          "expression": "dwell(Free_Severe_NoFamily_Home)",
+          "expected": "TRUE",
+          "purpose": "The severe home-present mirror also flips."
+        },
+        {
+          "expression": "dwell(Free_Severe_Family_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The severe family mirror flips without a housing arrival record."
+        },
+        {
+          "expression": "dwell(Free_Severe_Family_Home)",
+          "expected": "TRUE",
+          "purpose": "Every registered-free axis tuple now looks housed by rule fiat."
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_NoFamily_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The person-only mirror is painted housed without confinement or affirmative freedom."
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_NoFamily_Home)",
+          "expected": "TRUE",
+          "purpose": "A home entry is irrelevant because personhood alone drives the painted rule."
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_Family_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The family-present person-only mirror is painted housed too."
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_Family_Home)",
+          "expected": "TRUE",
+          "purpose": "Every non-severe person-only tuple flips."
+        },
+        {
+          "expression": "dwell(Registered_Severe_NoFamily_NoHome)",
+          "expected": "TRUE",
+          "purpose": "Derived severity does not make the roster-only housing conclusion more evidential."
+        },
+        {
+          "expression": "dwell(Registered_Severe_NoFamily_Home)",
+          "expected": "TRUE",
+          "purpose": "The severe home-present person-only mirror flips."
+        },
+        {
+          "expression": "dwell(Registered_Severe_Family_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The severe family person-only mirror flips without arrival evidence."
+        },
+        {
+          "expression": "dwell(Registered_Severe_Family_Home)",
+          "expected": "TRUE",
+          "purpose": "Every person-only axis tuple now looks housed by rule fiat."
+        },
+        {
+          "expression": "owe(State, Dwell, Free_NotSevere_NoFamily_NoHome)",
+          "expected": "TRUE",
+          "purpose": "The itemised debt was already present and likewise supplies no delivery evidence."
+        },
+        {
+          "expression": "prisoner(Free_NotSevere_NoFamily_NoHome)",
+          "expected": "FALSE",
+          "purpose": "The mutation fakes free-person delivery without routing through confinement."
+        }
       ],
       "baseline_flips": [
-        {"expression": "dwell(Free_NotSevere_NoFamily_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_NotSevere_NoFamily_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_NotSevere_Family_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_NotSevere_Family_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_Severe_NoFamily_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_Severe_NoFamily_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_Severe_Family_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Free_Severe_Family_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_NotSevere_NoFamily_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_NotSevere_NoFamily_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_NotSevere_Family_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_NotSevere_Family_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_Severe_NoFamily_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_Severe_NoFamily_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_Severe_Family_NoHome)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"},
-        {"expression": "dwell(Registered_Severe_Family_Home)", "baseline_expected": "FALSE", "candidate_expected": "TRUE"}
+        {
+          "expression": "dwell(Free_NotSevere_NoFamily_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_NotSevere_NoFamily_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_NotSevere_Family_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_NotSevere_Family_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_Severe_NoFamily_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_Severe_NoFamily_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_Severe_Family_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Free_Severe_Family_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_NoFamily_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_NoFamily_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_Family_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_NotSevere_Family_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_Severe_NoFamily_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_Severe_NoFamily_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_Severe_Family_NoHome)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        },
+        {
+          "expression": "dwell(Registered_Severe_Family_Home)",
+          "baseline_expected": "FALSE",
+          "candidate_expected": "TRUE"
+        }
       ],
       "err_absence_case_refs": [
         "free-notsevere-nofamily-nohome",

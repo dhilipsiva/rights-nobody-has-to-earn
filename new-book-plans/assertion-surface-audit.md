@@ -25,7 +25,7 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `8eab12589f3e547c25bbcb2e3539f1d73816e6fb3f85e2cedeaa66b0c248dc16`.
+- Authored-rule fingerprint: `e12194fcd99b2dda408dc43d9163892f288faa7b913697072091cd0a50c1d25b`.
 - Authored-fact fingerprint: `9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
@@ -83,8 +83,10 @@ channels. No exceptional channel exists in the current contract.
 | --- | --- | --- | --- | --- | --- |
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `approves` | amendment, democracy, public-power, time | `become` | patchable, external | positive `become`, positive `collide`, positive `correct` | `9915b8691afeed45` |
+| `at` | roster-person, standing, first-contact, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `4790557f3ede7a1a` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
 | `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `3573b6207d971c26` |
+| `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
 | `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `65be047ee2ff4cd2` |
 | `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `df0e5ba1ab49c076` |
 | `carries` | epoch-carry, record-integrity, time, witness | `err` | patchable, external | negative `err`, positive `err`, positive `match` | `19621bd13b05a5cd` |
@@ -111,8 +113,8 @@ channels. No exceptional channel exists in the current contract.
 | `parent` | audit, privacy, conflict | `false` | patchable, external | negative `false`, positive `false` | `6ed3d63a3f8a478a` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `c47b9efbe78a749e` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` | `bf440205ead23a2b` |
-| `public` | public-body, seating, record-integrity | `authority` | patchable, external | positive `authority` | `e4774a4466627ff6` |
+| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` | `411f855200e87680` |
+| `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority` | `1b1e8755d27a9b4b` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
 | `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `e27be4808b3e69d4` |
 | `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `err`, positive `match` | `ee4885e9421cf030` |
@@ -156,6 +158,23 @@ channels. No exceptional channel exists in the current contract.
 - **Owner:** `TODO.md::Define the democratic ceiling and majority process`.
 - **Reviewed route fingerprint:** `9915b8691afeed4579c39723769080ae4ffd866bc72dcd44898af6cea07b3a49`.
 
+### `at`
+
+- **Tuple claim:** The encounter subject is at first contact, within the republic's jurisdiction, or under its effective control.
+- **Claimed actor:** The tuple names an encounter subject and contact or control location; neither position authenticates the writer.
+- **Current writer/authority:** Any fact-store writer can assert, omit, or alter the encounter tuple; the constitutional rule excludes a subject already marked public but authenticates no human subject or location.
+- **Required writer/authority:** The subject may self-assert or petition directly, while a source-bound contact or control record can be independently checked without making that record a prerequisite for immediate standing.
+- **Current provenance:** The tuple carries no civil identity, citizenship, document, capacity, family, liability, status, timestamp, writer identity, or reconciliation history.
+- **Required provenance:** A provenance-preserving encounter receipt with source, time, correction, alias separation, and challenge history, while the temporary handle remains distinct from civil identity.
+- **Cheapest harmful assert:** 1 operation(s): assert at(FabricatedSubject, FirstContact). A fabricated non-public encounter subject derives personhood, the constitutional floor, and State debts without authenticating a human encounter. Structural route: `at` → `person`. Evidence: `new-book-plans/constitution.nibli::at($subject, FirstContact) & ~public($subject) -> person($subject)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete at(UnregisteredContact, FirstContact). A real first-contact subject with no other root loses the formal person conclusion, floor, and State debts. Structural route: `at` → `person`. Evidence: `new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::? person(UnregisteredContact).`.
+- **Current challenge route:** The constitutional input supplies no writer, receipt, correction, reconciliation, independent check, or remedy; direct person facts remain writable and direct petition is not barred.
+- **Required challenge route:** Immediate self-assertion and direct petition without an intermediary, followed by accessible independent challenge, correction, alias separation, and provenance-preserving reconciliation.
+- **Risk disposition:** patchable, external, deliberately_refused.
+- **Refused alternative:** Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.
+- **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
+- **Reviewed route fingerprint:** `4790557f3ede7a1a89c7a2e0bdc574327d2757d1b316e2f63afe63dcaba12147`.
+
 ### `attack`
 
 - **Tuple claim:** A person intentionally attacked a named victim.
@@ -187,6 +206,23 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
 - **Reviewed route fingerprint:** `3573b6207d971c26ef4d75801a7ceb5d78b5c3618d3a1ae1aa02822c23e2e506`.
+
+### `born`
+
+- **Tuple claim:** The named subject has been born.
+- **Claimed actor:** The unary tuple names the alleged born subject; no parent, registrar, medical source, witness, date, or place is encoded.
+- **Current writer/authority:** Any fact-store writer can assert, omit, or delete the birth fact; the constitutional rule excludes a subject already marked public but authenticates no birth.
+- **Required writer/authority:** Standing cannot wait for registration; a birth source can later be independently checked and corrected without controlling the immediate root.
+- **Current provenance:** No birth event, date, place, witness, parent, record lineage, correction, or civil identity is attached.
+- **Required provenance:** A separately sourced and challengeable birth finding with retained corrections and alias history, never a condition for immediate floor protection.
+- **Cheapest harmful assert:** 1 operation(s): assert born(FabricatedSubject). A fabricated non-public subject derives personhood, the constitutional floor, and State debts from one unauthenticated write. Structural route: `born` → `person`. Evidence: `new-book-plans/constitution.nibli::born($child) & ~public($child) -> person($child)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete born(UnregisteredNewborn) before any contact record exists. A real newborn with no other supplied root loses the formal person conclusion and its downstream floor in the snapshot. Structural route: `born` → `person`. Evidence: `new-book-plans/universal-standing.pins.nibli::? person(Nia).`.
+- **Current challenge route:** No birth-source challenge, correction, alternate writer, omission alarm, or operational continuity mechanism is encoded.
+- **Required challenge route:** Immediate standing plus direct petition, accessible correction, independent checking, and an alternate source that cannot turn registration into a service gate.
+- **Risk disposition:** patchable, external, deliberately_refused.
+- **Refused alternative:** Do not make a birth certificate, family relation, registry entry, or civil-identity match a premise of standing.
+- **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
+- **Reviewed route fingerprint:** `cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a`.
 
 ### `broken`
 
@@ -621,7 +657,7 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.
 - **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
-- **Reviewed route fingerprint:** `bf440205ead23a2bc733ad3c3f3f4ef4d3a7dff199aa1a15716585a583db1372`.
+- **Reviewed route fingerprint:** `411f855200e87680c559a8b01d32c4260330d68ccb8eda178accb6b00693d1bf`.
 
 ### `public`
 
@@ -637,7 +673,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Public constitutional review and append-only correction of body status.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `e4774a4466627ff63b4e20494d2067375726a28e9de5dc79abd11ffed0f9d5b9`.
+- **Reviewed route fingerprint:** `1b1e8755d27a9b4b3d6903ae03248fc86bd04f99818fc1b5e59a2bdefe59a827`.
 
 ### `put`
 

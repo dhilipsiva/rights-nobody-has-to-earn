@@ -179,8 +179,8 @@ out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and may falsify prose that describes the list.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
-[ "$n" = "39" ] && pass "evidence vocabulary is 39" \
-  || fail "evidence vocabulary is $n, not 39" "chapters 1, 3 and 5 describe the list; re-read them against it"
+[ "$n" = "41" ] && pass "evidence vocabulary is 41" \
+  || fail "evidence vocabulary is $n, not 41" "chapters 1, 3 and 5 describe the list; re-read them against it"
 
 # ── 2g. the dormant reader contract stays structural and privacy-minimal ─────
 # This is an artifact check. It is not R6's dedicated executable evidence gate,
@@ -528,6 +528,15 @@ ran=$(echo "$out" | sed -n 's/.*PASS — \([0-9]*\) pins.*/\1/p')
 [ "$ran" = "$declared" ] && pass "$ran pins, 0 findings — matches the sum of :expect-pins" \
   || fail "ran $ran pins but the files declare $declared" "a file was added or dropped from the run"
 
+# ── 5b. universal-standing non-power family ─────────────────────────────────
+# Kept outside the historical chapter/floor total so the 555-pin baseline stays
+# an exact regression signal. These pins execute the new birth, first-contact,
+# jurisdiction, effective-control, identity-boundary, and public-body controls.
+step "universal-standing executions"
+out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/universal-standing.pins.nibli 2>&1) \
+  && pass "$out" \
+  || fail "universal-standing execution failed" "$out"
+
 # ── 6. bounded record-snapshot red-team ─────────────────────────────────────
 # These ephemeral KBs exercise additions, exact deletions, two-entry matrices,
 # and the remaining single-snapshot record levers. They stay outside the chapter
@@ -593,7 +602,7 @@ step "counterfactuals"
 #
 # NOTE these pins are OUTSIDE the :expect-pins reconciliation above, checked
 # per-file here. Do not "fix" the headline sum to include them.
-for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-dead-conjuncts:1:1 unguarded-pen:0:1 undelivered-marker:0:1; do
+for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-dead-conjuncts:1:1             unguarded-pen:0:1 undelivered-marker:0:1; do
   f=${spec%%:*}; want="${spec#*:}"
   removed=$(diff "$KB" "$CF/$f.nibli" | grep -c '^<')
   added=$(diff "$KB" "$CF/$f.nibli" | grep -c '^>')
