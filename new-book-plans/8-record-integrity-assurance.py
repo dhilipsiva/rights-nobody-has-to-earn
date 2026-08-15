@@ -1371,7 +1371,7 @@ def negative_controls(
         (
             "narrowness_impacts",
             "artifact_ref",
-            "book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a",
+            "book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a",
             "standing narrowness review deleted",
         ),
     )

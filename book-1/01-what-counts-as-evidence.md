@@ -7,8 +7,9 @@ whatever turns out to be useful — a fixed set of entries, and when someone wan
 something about you that is not on the list, they cannot. Not *may not*. Cannot.
 There is nowhere to put it.
 
-Here is the whole list. Someone is a person. Someone worked, or taught, or heard
-their teacher. Someone injured
+Here is the whole list. Someone is a person. Someone was born. Someone is at
+first contact, within the society's jurisdiction, or under its effective control.
+Someone worked, or taught, or heard their teacher. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
 auditor documented what they found, and cited the grounds they looked on. A court
 tied a case to a person. Someone lied. Someone exposed something. A person
@@ -28,17 +29,22 @@ counts as current.
 
 That is it. That is everything the record can hold.
 
-Read it again and one entry will not sit right with the others. Everything else on the
-list is something that happened — an act, a finding, a decision. *Someone is a
+Read it again and one entry will not sit right with the others. *Someone is a
 person* is not an event. Nobody did it, and it is not true of you at some moment rather
 than another. It is the entry that says you are the sort of thing the rest of the list
 can be about.
 
-It is also written down the same way as all the rest: by somebody, into a record. Read
-that slowly, because it is the most consequential fact in this chapter and it is easy to
-read straight past. Every protection described in this book is owed to persons and to
-nobody else. Being a person is not something the design works out. It is something
-typed.
+The design still permits that entry to be written directly. It no longer makes that
+write the only beginning. A supplied birth entry produces personhood. So does a supplied
+entry saying that someone is at first contact, within the jurisdiction, or under
+effective control. The name used at first contact may be temporary. It starts the floor;
+it does not prove a civil identity, citizenship, age, capacity, family, guilt, liability,
+or ownership of some other record.
+
+Read that slowly, because it is the most consequential change in this chapter. Every
+protection described in this book is owed to persons and to nobody else. Being a person
+may be written, and it may now be worked out from those roots. None of the routes proves
+that its supplied entry is true.
 
 Something that used to be on the list is missing from it: nobody can write down that an
 offence was *serious*. Where it went is worth the detour, and it comes back below.
@@ -159,14 +165,14 @@ a different objection from the one this section answers, and the end of the chap
 where it gets taken seriously.
 
 Be exact about which word carries that sentence, because the looser version of it is
-false and the looser version is the one you will want to believe. *Conclusions* cannot
-be written. Facts can — that is what makes them facts — and one of them is personhood.
-Being a person is not something anybody reasons their way to at the end of a chain. It
-is written down at the start of one. So the design shuts the door on writing verdicts
-and leaves it standing open on the fact that every verdict, and every protection, takes
-for granted. Personhood is the entry the design cannot do without, which is why it is
-the one worth staring at first. It is not the only thing the door is standing open on,
-and the end of this chapter is about the rest.
+false and the looser version is the one you will want to believe. Reserved
+*conclusions* cannot be written. Facts can — that is what makes them facts. Personhood
+is deliberately mixed: it can be written directly and can also follow from birth,
+contact, presence, custody, release, or a carried earlier status. So the design shuts
+the door on writing verdicts while keeping several visible doors into the standing on
+which every verdict and protection depends. Those doors are worth staring at first. They
+are not the only premises open to a writer, and the end of this chapter is about the
+rest.
 
 ## One person's word does not move anything
 
@@ -273,19 +279,20 @@ society would push there first.
 Everything above is about the list growing. There is a second route and it changes
 nothing, argues for nothing, and requires nobody's agreement.
 
-A list of what may be written is only as good as the writing. Somebody who is not a
-person can be made one: write the entry, and a name belonging to nobody acquires every
-right on the floor, a vote, the freedom to move, and a public body on the hook for all
-of it. Nothing anywhere asks who this is.
+A list of what may be written is only as good as the writing. A fabricated direct
+person entry still creates the floor. A fabricated birth or encounter entry can now do
+the same. The new roots remove a registry condition; they do not authenticate the
+writer, the event, or the human subject. A known public body is excluded from the
+encounter rules, but an invented non-public name can still be passed through them.
 
-The reverse is worse, and it is the one to watch. A person who is never entered is not
-recorded as missing, because there is no record of them at all. Everything this design
-owes, it owes to persons; somebody left off is owed none of it, and nothing in it
-notices, because noticing would mean holding the roster up against something, and there
-is nothing else to hold it against. Widening the list is loud in one exact sense: it
-takes a visible edit to the opening declaration. It takes no proposal, argument, or
-vote under the amendment procedure. Leaving a name off the roster is a clerk not
-typing.
+The reverse remains dangerous but is narrower. A missing civil-identity match is no
+longer enough to postpone standing: a temporary encounter name can hold the floor while
+records are reconciled. Uncertainty keeps records separate rather than importing one
+person's liabilities, relationships, sanctions, or authority into another. Yet if the
+birth or encounter itself is never supplied, the rules cannot discover a person outside
+their record. The design establishes serve first as a constitutional debt. It does not
+establish that an intake service exists, notices everyone, writes the entry, or delivers
+what is owed.
 
 An entry can still be taken back, but the attack is no longer invisible in every
 case. Once a person's status is separately attested in an accepted earlier record, an
@@ -300,12 +307,13 @@ carry as a disappearance. It may therefore sound when outside law would call the
 removal proper. What it proves is the mismatch between the two supplied records, not
 why the entry is gone.
 
-Keep the size of that repair exact. It protects a standing entry that already appears
-in a witnessed earlier record. It cannot find a person who was never entered, detect a
-deletion made before or inside that earlier record, prove either witness honest, or make
-the next record arrive. Bypass the witnessed transition and the old danger returns:
-everything owed can disappear while adverse findings survive. The design can now
-compare two accepted records. It still cannot compare the record with the world.
+Keep the size of that repair exact. The witnessed transition protects a standing
+entry already present in an earlier record. The new birth and encounter roots answer a
+different question: what can establish standing before civil identity is reconciled.
+Neither mechanism can find an encounter nobody reports, detect a deletion made before
+the records it compares, prove a writer or witness honest, or make the next record
+arrive. The design can compare supplied records and derive personhood from supplied
+roots. It still cannot compare the record with the world.
 
 There is a third route, and unlike the two above it needs nobody added to the roster or
 left off it. It needs only that somebody writes down something they were entitled to
@@ -365,5 +373,7 @@ list for exactly that reason.
 
 The rest of this book describes what the entries on the list are permitted to produce:
 who may hold power, what may be taken away, and what may never be. All of it rests on
-the list, and the list rests on the entry that says you are a person. If you want to
-know where to watch, watch who is on the roster and who is not.
+the list. Personhood may be written directly or follow from birth, contact, presence,
+custody, release, or carried status. If you want to know where to watch, watch whether
+those roots are supplied, whether a temporary encounter name is being mistaken for
+civil identity, and whether reconciliation preserves the history it changes.

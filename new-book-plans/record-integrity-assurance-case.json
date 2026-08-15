@@ -458,7 +458,7 @@
           "kind": "prose",
           "role": "supports_current",
           "supports": "RI-11",
-          "ref": "book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a"
+          "ref": "book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a"
         }
       ],
       "known_failure": "Any claim of internal detection would be a false guarantee and could make an omitted or deleted claimant-supporting fact look lawfully absent.",
@@ -965,10 +965,10 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a",
-      "current_claim": "A person never entered and a deletion before or inside the first attested record remain undetectable; selected later standing-carry omissions can now be exposed.",
+      "artifact_ref": "book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a",
+      "current_claim": "An unreported birth or encounter and a deletion before or inside the first attested record remain undetectable; supplied standing roots and selected later carry omissions narrow different failures.",
       "classification": "revised",
-      "reason": "The staged path detects selected conflicts and disappearance only across accepted supplied snapshots; it does not distinguish deletion, withholding, and non-entry inside one snapshot.",
+      "reason": "The standing roots and staged path work only over supplied inputs and accepted snapshots; neither distinguishes deletion, withholding, and non-reporting inside one snapshot.",
       "future_trigger": "Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit."
     },
     {

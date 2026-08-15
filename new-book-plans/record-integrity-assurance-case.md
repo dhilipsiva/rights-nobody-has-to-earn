@@ -362,7 +362,7 @@ None.
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
 | decision | `supports_current` | `RI-11` | `new-book-plans/book-1-time-model-decision.md::It cannot detect a fact deleted before or inside the first` |
-| prose | `supports_current` | `RI-11` | `book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a` |
+| prose | `supports_current` | `RI-11` | `book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a` |
 
 **Acceptance evidence still required**
 
@@ -675,7 +675,7 @@ even if their own numbered chapter derivations do not change.
 
 | artifact | current claim | classification | reason | future trigger |
 | --- | --- | --- | --- | --- |
-| `book-1/01-what-counts-as-evidence.md::It cannot find a person who was never entered, detect a` | A person never entered and a deletion before or inside the first attested record remain undetectable; selected later standing-carry omissions can now be exposed. | revised | The staged path detects selected conflicts and disappearance only across accepted supplied snapshots; it does not distinguish deletion, withholding, and non-entry inside one snapshot. | Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit. |
+| `book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a` | An unreported birth or encounter and a deletion before or inside the first attested record remain undetectable; supplied standing roots and selected later carry omissions narrow different failures. | revised | The standing roots and staged path work only over supplied inputs and accepted snapshots; neither distinguishes deletion, withholding, and non-reporting inside one snapshot. | Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit. |
 | `book-1/03-who-holds-the-pen.md::It does not prove independent` | Cross-body pens raise decision cost but do not assure record authorship. | preserved | The case distinguishes decisional independence from record witnessing and changes no pen rule. | Revise when authenticated, independently witnessed writer controls are formal and tested. |
 | `book-1/05-voiding.md::They do not make the record self-authenticating.` | The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive. | revised | The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service. | Narrow, never erase, when scoped external assurance evidence exists; genesis, truth, exhaustive disclosure, storage integrity, and liveness limits remain. |
 | `book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds` | Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission. | preserved | The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics. | Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect. |

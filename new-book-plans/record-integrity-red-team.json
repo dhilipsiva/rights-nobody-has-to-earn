@@ -6,7 +6,7 @@
   "evidence_role": "exposes_gap_and_tests_boundary",
   "constitution_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
   "assertion_surface_contracts_sha256": "4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5",
-  "record_integrity_assurance_case_sha256": "6a3ee6e22d16ac4fc3ce3f5325220b4ffb852eedd3d67fb5bb7d4bb84cd03616",
+  "record_integrity_assurance_case_sha256": "0433596b3be61fa16f86d0b3cbe13f262b3038985d504bac3c70f040098bdeca",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",
@@ -1537,10 +1537,10 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/01-what-counts-as-evidence.md::A person who is never entered is not",
-      "current_claim": "Initial non-entry remains invisible, while an accepted later transition must account for separately attested earlier standing.",
+      "artifact_ref": "book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a",
+      "current_claim": "An unreported birth or encounter remains invisible; supplied standing roots and accepted predecessor carry narrow registry dependence without proving completeness.",
       "classification": "preserved_but_scoped",
-      "reason": "The roster equivalence case preserves the pre-attestation boundary; the implemented T1 standing rule narrows the old claim for witnessed predecessor status.",
+      "reason": "The roster equivalence case preserves the unreported-input boundary; the universal-standing roots and implemented T1 carry narrow different record-gating failures.",
       "future_trigger": "Any closed-world completeness, provenance, or runtime deletion claim requires re-review."
     },
     {
