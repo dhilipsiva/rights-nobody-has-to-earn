@@ -96,9 +96,12 @@ whatever feeds it.
 The new record and time reports take a narrower route. A missing carry, invented carry,
 conflicting clear and void histories, missing personhood-status carry, vanished
 protected entry, disputed maturity record, conflicting order, or unsupported custody
-can become an Appeals duty when the affected person challenges it. That gives the
-finding a reader by name. It still gives the reader no consequence
-for silence and gives the person no automatic correction.
+can become an Appeals duty when a challenge fact for the affected person reaches
+the source. That gives the supplied finding a reader by name. It does not prove that
+a genuine filing was received: the fresh-process comparison shows that withholding
+the challenge fact can leave an otherwise valid custody lease unsuspended. The duty
+still gives the reader no consequence for silence and gives the person no automatic
+correction.
 
 “Vanished” is deliberately conservative here. The record has no way to represent a
 lawful retirement of a protected entry, so every missing required carry receives the
@@ -107,8 +110,9 @@ it does not establish why the entry is absent or that its removal was unlawful.
 
 It also inherits a boundary nobody drew on purpose. The duty is not derived from
 wrongness in general; it is derived kind by kind. Placement and isolation have their
-own rules, and each temporal defect has an expressly named challenge route. A new kind
-of breach produces no duty until somebody writes another route. The general sentence
+own rules, and each temporal defect has an expressly named supplied-fact challenge route.
+No durable receipt, alternate intake witness, or advocate-created suspension record is
+implemented. A new kind of breach produces no duty until somebody writes another route. The general sentence
 — every mark obliges a response — is available and was measured while this chapter was
 expanded; the design deliberately keeps the specific rules because they are correct
 and pinned and collapsing them buys nothing. The consequence deserves its own line.

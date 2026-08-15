@@ -18,7 +18,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "new-book-plans/full-society-power-source-manifest.json"
 EXPECTED_MANIFEST_SHA256 = (
-    "4525badc3fbc4fdd8ab0a7bbf792e42409b740ea3ff90da036bd32531f358adf"
+    "08697ee258deb099b11f516426d77b25928fca94a9794b91c01edc3d9dec89da"
 )
 EXPECTED_SOURCE_COMMIT = "36ed92c58877cffa5a11928ad200f0ca9a604820"
 STATUS = (
@@ -61,7 +61,7 @@ EXPECTED_SOURCE_SHA256 = {
     "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md":
         "c27e4175ccbd3034a04d9cebbd80d314400fc290cff07997c1e314d04db28979",
     "new-book-plans/book-1-time-model-decision.md":
-        "4263f90c831c266121bdac1bfdc233135059dc809ecd96523bff7ed61c44eeeb",
+        "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44",
     "new-book-plans/constitution.nibli":
         "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
 }

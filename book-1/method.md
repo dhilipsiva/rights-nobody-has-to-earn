@@ -500,9 +500,11 @@ honestly test which record is current.
 At the first stage, two witnesses bind exact manifest members and record
 replacement. A separately witnessed passport selects one constitutional
 lineage; only its collision-free terminal successor gives carried voids,
-clearance, or public power current effect. Supportive personhood and audit
-reports remain available on an accepted transition so missing carry cannot
-erase the claimant it concerns. At the second stage, independently witnessed
+clearance, or public power current effect. Supportive personhood remains\navailable on an accepted transition only when
+both predecessor-standing witnesses are supplied; withholding either can still
+erase that derived route and its omission marker. That is the separate
+universal-standing gap, not a T1 result. Audit reports retain the same
+supplied-record boundary. At the second stage, independently witnessed
 event and record entries form separate typed paths. The paths close
 transitively, so a longer cycle is caught as well as a direct reversal, and the
 resulting conflict spreads through the connected path without leaking into the
@@ -513,16 +515,20 @@ tag: case subject, court holder, court judgment, injured person, lease, window,
 renewal, source, and canonical terminal record. Competing witnessed
 source/window/case-subject/lease bindings fail closed. The executable cases attack
 omitted and forged carry, disjoint or replayed lineages, direct and transitive
-order conflict, tuple aliasing, source mismatch, and case reuse. The
+order conflict, tuple aliasing, source mismatch, case reuse, withheld standing
+witnesses, and challenge intake. A supplied challenge suspends its exact lease;
+the paired challenge-absent process can remain active. The
 protected-record alarm is intentionally conservative: the constitution has no
 way to represent lawful disposal of such a record, so every missing required
 carry is reported as a disappearance. That proves a mismatch, not unlawful
 deletion.
 
-This is bounded safety evidence for supplied records. It does not prove a
-manifest complete, authenticate the outside witnesses, detect deletion before
-or inside the first attested record, advance a clock, make a later record
-arrive, release a person physically, or make Appeals perform its duty.
+This is bounded safety evidence for supplied records. It does not establish
+universal standing, preserve a challenge that intake withholds, implement
+correction or semantic supersession, enforce non-revival, prove a manifest
+complete, authenticate the outside witnesses, detect deletion before or inside
+the first attested record, advance a clock, make a later record arrive, release
+a person physically, or make Appeals perform its duty.
 
 There is a second thing to say about the fixtures, and it is a weakness
 rather than a strength, so it belongs here rather than in a footnote.

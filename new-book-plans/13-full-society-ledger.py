@@ -272,7 +272,7 @@ POWER_BOOK2_OWNER = (
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
-        "4525badc3fbc4fdd8ab0a7bbf792e42409b740ea3ff90da036bd32531f358adf"
+        "08697ee258deb099b11f516426d77b25928fca94a9794b91c01edc3d9dec89da"
     ),
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": (

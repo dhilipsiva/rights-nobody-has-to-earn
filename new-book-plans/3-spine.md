@@ -1,14 +1,16 @@
 # The Derived Spine — book-1
 
-Regenerated 2026-07-28 against the current constitutional source (`constitution.nibli`). The
+Reconciled 2026-08-15 against the current constitutional source (`constitution.nibli`). The
 previous version of this file computed its order from a graph that no longer
 exists; see the *Superseded* note at the end for what changed and why it matters.
 
-Chapter order is **computed from the constitution's dependency graph, not chosen**.
-Method: parse every rule, build the predicate dependency graph, assign strata by the
-standard fixpoint (positive edge ⇒ `stratum(head) ≥ stratum(body)`; negative edge ⇒
-`stratum(head) > stratum(body)`), then order chapters by stratum and, within a
-stratum, by dependency. Every verdict quoted below was produced by the engine.
+The dependency strata are **computed from the constitution's graph, not chosen**.
+Method: parse every rule, build the predicate dependency graph, and assign strata by
+the standard fixpoint (positive edge ⇒ `stratum(head) ≥ stratum(body)`; negative edge ⇒
+`stratum(head) > stratum(body)`). The generated block is authoritative for the current
+six-stratum graph. The chapter sequence below began from an older computed graph and is
+now an editorial reading order; T1/T2/T3 added intermediate predicates and moved several
+old conclusions without mechanically reordering the drafted book.
 
 ---
 
@@ -69,9 +71,8 @@ rule over facts below it — that part was right. The pairing was not.
 Seating is never revoked — deliberately, so that recall cannot retroactively strip a
 whistleblower's protection.
 
-**`obliged` joined stratum 3 in v0.8 and does not add a chapter.** It derives from `err`
-and is read by nothing, so it sits beside `err` at the top rather than above it, and the
-strata count is unchanged. Chapter 14 is the audit chapter and covers it: the marker and
+**`obliged` is at stratum 5 and does not add a chapter.** It derives from `err`
+and is read by nothing, so it sits beside `err` at the current top rather than above it.\nChapter 14 is the audit chapter and covers it: the marker and
 the duty it produces are one subject, and splitting them would give a chapter whose whole
 content is that a relation exists and does nothing. That is an editorial judgement rather
 than a computed one — the block above is generated, the chapter list below is not — so it
@@ -83,15 +84,16 @@ fixed that binding defect**, so the two rules are now history rather than necess
 
 ## 2. The finding that reorganises the book
 
-**The floor is at stratum 2, not stratum 0.**
+**The floor is at stratum 4, not stratum 0.**
 
 The old spine claimed the floor sat outside the machine — `obligated` appeared in no
 rule head and no rule body, so nothing could reach it, and *that* was said to be what
 made it unconditional. That is now false in every part.
 
 Each floor line compiles to a rule with `person` in the body. `prisoner -> person`
-puts `person` downstream of `prisoner`. So all eight floor predicates sit at
-stratum 2, **inside the prisoner cone**. The engine says so directly: the refusal
+puts `person` downstream of `prisoner`. The temporal and custody gates now put
+`prisoner`, `person`, and all eight floor predicates at stratum 4, **inside the
+prisoner cone**. The engine says so directly: the refusal
 this design depends on reads
 
 ```
@@ -141,8 +143,10 @@ carries no verdicts.
    forever exposable; only power is revocable. *(Editorial: could fold into ch 1,
    giving 13 derived chapters instead of 14.)*
 
-**Part II — Accountability (stratum 1)**
-Forced chain: `permits → false → lose`. `defend` depends only on stratum 0 and floats.
+**Part II — Accountability (current strata 1 and 3)**
+`defend` is at stratum 1. `permits`, `false`, and `lose` are at stratum 3 after
+the temporal status layer at stratum 2. The chapter sequence is editorial rather
+than a strict ascending-stratum sort.
 
 3. **Who Holds the Pen.** `permits` — credentials derive from selection, never from
    assertion, and since the Article 8 split that is *true* rather than merely
@@ -159,9 +163,11 @@ Forced chain: `permits → false → lose`. `defend` depends only on stratum 0 a
    student for a teacher's fraud — was ruled 2026-08-02: the student rule is
    deleted, and the chapter tells the deletion as a repaired defect.
 
-**Part III — Status and consequence (stratum 2)**
-Forced: `prisoner → person → {floor, decide}`; `fit → dwell`. `reward` and `become`
-depend only on strata 0–1 and float.
+**Part III — Status and consequence (stratum 4)**
+`prisoner → person → {floor, decide}` and `fit → dwell` remain dependency facts.
+`reward` and `become` also sit at stratum 4 in the current graph; their position in
+this part is an editorial sequence, not a claim that they float below the temporal
+and accountability layers.
 
 7. **A Prisoner Is a Person.** One rule, and everything it forces. Why removing it
    silently removes eight rights at once.
@@ -182,7 +188,7 @@ depend only on strata 0–1 and float.
     register that can mark a proposal dead. **Watch the scope gate here**: this is change-over-time and drifts
     easily into "how this gets adopted", which is book-2.
 
-**Part IV — The top of the graph (stratum 3)**
+**Part IV — The top of the graph (stratum 5)**
 
 13. **The One Thing Taken.** `travel`. The whole apparatus of punishment reduces to
     a single deprivation.
@@ -243,11 +249,12 @@ prove the proposal's effect. The chapter should say so.
 
 ## 5. Writing still blocked on constitution work
 
-- **The delivery gap.** `eats(Adam)`, `healthy(Bela)`, `secure(Bela)`, `learn(Cira)`
-  and `believe(Bela)` are all FALSE. No rule connects an obligation to any fact
-  about anything reaching a person. The obligation layer is complete; the delivery
-  layer does not exist. Chapters can describe what is owed, never what arrives —
-  state the gap in the prose rather than hiding it.
+- **The delivery gap.** The current source can derive the floor predicates and
+  opaque entitlements from `person`; those are legal conclusions about what is owed,
+  not evidence that food, health care, safety, learning, belief freedom, or any other
+  protected condition arrived. No recipient-side receipt or outcome relation sits
+  downstream. Chapters can describe entitlement and debt, never delivery actuality —
+  state the gap in the prose rather than painting it over.
 - **`err/2` fires on a correctly-placed prisoner** — REPAIRED 2026-08-02: the
   marker is keyed on placement reports (`put/3`) and the false positives are gone.
 - **The Article 4 clawback rules refute a published bright line** — RULED

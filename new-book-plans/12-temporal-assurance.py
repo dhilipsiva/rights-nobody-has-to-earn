@@ -298,6 +298,16 @@ REQUIRED_CASE_SCOPES = {
     "TA-38": {"InjuryVictimScope"},
     "TA-39": {"CaseScope"},
     "TA-40": {"LineageVersionScope"},
+    "TA-41": {
+        "CaseScope",
+        "HolderScope",
+        "JudgmentScope",
+        "InjuryVictimScope",
+        "PowerScope",
+        "CaseBindingScope",
+        "LimitScope",
+        "RenewalScope",
+    },
 }
 REQUIRED_INPUTS = {
     "transition_link",
@@ -356,6 +366,8 @@ REQUIRED_ATTACKS = {
     "office_succession",
     "unread_duty",
     "external_liveness",
+    "standing_witness_withholding",
+    "challenge_intake_withholding",
 }
 REQUIRED_NARROWNESS = {
     "book-1/01-what-counts-as-evidence.md",
@@ -442,6 +454,37 @@ EVENT_ENTITLEMENT_QUERY = re.compile(
     r"^entitled\([A-Za-z][A-Za-z0-9_]*, event \{ [a-z][a-z0-9_]*\(\) \}\)$"
 )
 VERDICTS = {"TRUE", "FALSE"}
+REQUIRED_BOUNDARY_VERDICTS = {
+    ("TA-10", "person(TA_Unregistered)"): "TRUE",
+    ("TA-10", "err(TA_Unregistered, StandingOmission)"): "TRUE",
+    ("TA-10", "person(TA_Unwitnessed_Standing)"): "FALSE",
+    ("TA-10", "err(TA_Unwitnessed_Standing, StandingOmission)"): "FALSE",
+    ("TA-41", "collide(TA_Challenge_Case, LeaseSuspended)"): "TRUE",
+    ("TA-41", "correct(TA_Challenge_Case, ActivePower)"): "FALSE",
+    ("TA-41", "match(TA_Challenge_Case, ActivePower)"): "FALSE",
+    ("TA-41", "prisoner(TA_Challenge_Subject)"): "FALSE",
+    ("TA-41", "err(TA_Challenge_Subject, TemporalDispute)"): "TRUE",
+    ("TA-41", "obliged(Appeals, TA_Challenge_Subject)"): "TRUE",
+    ("TA-41", "free(TA_Challenge_Subject)"): "FALSE",
+    ("TA-41", "person(TA_Challenge_Subject)"): "TRUE",
+}
+REQUIRED_BOUNDARY_PAIR = {
+    "id": "TP-12",
+    "predecessor_case": "TA-41",
+    "successor_case": "TA-14",
+}
+REQUIRED_BOUNDARY_ATTACKS = {
+    "standing_witness_withholding": {
+        "stage": "T1",
+        "case_refs": ["TA-10"],
+        "posture": "exposed_external_boundary",
+    },
+    "challenge_intake_withholding": {
+        "stage": "T3",
+        "case_refs": ["TA-41", "TA-14"],
+        "posture": "exposed_external_boundary",
+    },
+}
 POSTURES = {
     "rejected_by_current_source",
     "detected_as_named_error",
@@ -889,6 +932,12 @@ def validate_source(
             sentinels[(identifier, expression)] = str(check["expected"])
         if sha256_text(candidate) == sha256_text(stage_sources[stage]) and (deletions or additions):
             raise TemporalAssuranceError(f"case {identifier} overlay made no source change")
+    for sentinel, expected in REQUIRED_BOUNDARY_VERDICTS.items():
+        if sentinels.get(sentinel) != expected:
+            raise TemporalAssuranceError(
+                f"boundary verdict differs for {sentinel}: "
+                f"{sentinels.get(sentinel)!r} != {expected!r}"
+            )
     if len(cases) < 12 or {str(case["stage"]) for case in cases} != set(STAGES):
         raise TemporalAssuranceError("cases must cover all stages with a substantial adversarial set")
 
@@ -907,6 +956,12 @@ def validate_source(
             raise TemporalAssuranceError(f"pair {identifier} must name two distinct cases")
         paired_cases.update((before, after))
         text_value(pair["purpose"], f"pair {identifier}.purpose")
+    boundary_pairs = [pair for pair in pairs if pair["id"] == REQUIRED_BOUNDARY_PAIR["id"]]
+    if len(boundary_pairs) != 1 or any(
+        boundary_pairs[0][field] != value
+        for field, value in REQUIRED_BOUNDARY_PAIR.items()
+    ):
+        raise TemporalAssuranceError("challenge-intake fresh-process pair differs")
     roles = {str(case["id"]): str(case["process_role"]) for case in cases}
     if not any(roles[case_id] == "predecessor" for case_id in paired_cases) or not any(roles[case_id] == "successor" for case_id in paired_cases):
         raise TemporalAssuranceError("fresh-process pairs must include predecessor and successor roles")
@@ -932,6 +987,11 @@ def validate_source(
         text_value(attack["boundary"], f"attack {identifier}.boundary")
     if attack_ids != REQUIRED_ATTACKS:
         raise TemporalAssuranceError(f"attack matrix differs: {sorted(attack_ids ^ REQUIRED_ATTACKS)}")
+    attack_by_id = {str(attack["id"]): attack for attack in attacks}
+    for identifier, required in REQUIRED_BOUNDARY_ATTACKS.items():
+        actual = attack_by_id[identifier]
+        if any(actual[field] != value for field, value in required.items()):
+            raise TemporalAssuranceError(f"boundary attack policy differs for {identifier}")
     if not case_ids <= covered_cases:
         raise TemporalAssuranceError(f"cases missing from attack matrix: {sorted(case_ids - covered_cases)}")
 
@@ -1231,6 +1291,29 @@ def negative_controls(reviewed: Mapping[str, object], constitution: str, depende
     changed = copy.deepcopy(reviewed)
     changed["attacks"] = [entry for entry in changed["attacks"] if entry["id"] != "frozen_transition"]
     expect_failure("missing frozen-transition attack", lambda: validate_source(changed, constitution, dependencies))
+    controls += 1
+    changed = copy.deepcopy(reviewed)
+    standing_case = next(case for case in changed["cases"] if case["id"] == "TA-10")
+    standing_check = next(
+        check
+        for check in standing_case["checks"]
+        if check["expression"] == "person(TA_Unwitnessed_Standing)"
+    )
+    standing_check["expected"] = "TRUE"
+    expect_failure("reversed standing-witness polarity", lambda: validate_source(changed, constitution, dependencies))
+    controls += 1
+    changed = copy.deepcopy(reviewed)
+    boundary_pair = next(pair for pair in changed["fresh_process_pairs"] if pair["id"] == "TP-12")
+    boundary_pair["successor_case"] = "TA-22"
+    expect_failure("challenge-intake pair drift", lambda: validate_source(changed, constitution, dependencies))
+    controls += 1
+    changed = copy.deepcopy(reviewed)
+    boundary_attack = next(
+        attack for attack in changed["attacks"]
+        if attack["id"] == "challenge_intake_withholding"
+    )
+    boundary_attack["case_refs"] = ["TA-41"]
+    expect_failure("challenge-intake attack loses withheld case", lambda: validate_source(changed, constitution, dependencies))
     controls += 1
     changed = copy.deepcopy(reviewed)
     changed["narrowness_impacts"] = changed["narrowness_impacts"][:-1]

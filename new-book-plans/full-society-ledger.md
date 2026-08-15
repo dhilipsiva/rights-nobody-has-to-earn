@@ -3,7 +3,7 @@
 
 # Full-Society Domain-and-Layer Ledger — Generated Report
 
-**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
+**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
 Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-mechanical-gate-a-candidate`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
@@ -1389,11 +1389,11 @@ Residual citations bind every sibling residual pool to these rows under the live
 
 ## Resolution receipts
 
-Every receipt records its eligible gate beside the ledger's standing gate status (passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
+Every receipt records its eligible gate beside the ledger's standing gate status (not-passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
 
 ### FS-RCP-01 — The student clawback is deleted, and the deletion is watched
 
-- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A loss was recorded against a student for a teacher's adjudicated fraud — negative scoring of a person who did nothing.
 - Hostile witness: The old :defect pin held lose(Points, Cira) TRUE for as long as the rule stood.
 - Why it failed: The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.
@@ -1406,7 +1406,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-02 — The placement alarm is keyed on the placement act
 
-- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The alarm fired on eligibility rather than on any placement act, so it rang on a released man in his own house.
 - Hostile witness: The old marker's pins held the wrong-subject firing under a :defect directive.
 - Why it failed: err/2 read the eligibility combination instead of a reported placement.
@@ -1419,7 +1419,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-03 — The void now requires a docket entry naming the person
 
-- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: Anything recorded as touching a protected item was void — including a person who was never accused of anything.
 - Hostile witness: Jala, never accused and never examined, was voidable through the protected-item route.
 - Why it failed: The voiding rule read the protected-item touch without any docket precondition.
@@ -1432,7 +1432,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-04 — The third door closes on voiding, enacted not disclosed
 
-- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A carried-void, penless person was paid for examinations the same voiding made incapable of counting toward anything.
 - Hostile witness: The pre-guard constitution minted recognition for the voided examiner, and exactly those reward pins flip against it.
 - Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
@@ -1445,7 +1445,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-05 — The Esa passage tells the truth about Koa
 
-- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The chapter claimed Koa examined Esa with the credential; the record holds a personhood entry and one documented fact — no judging, no seat, no pen.
 - Hostile witness: Both false clauses, quoted back by a hostile review as the design's own confession.
 - Why it failed: The prose asserted acts the record never held, and no pin guarded the mismatch.
@@ -1458,14 +1458,15 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 2; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 3; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
 | FS-SAU-01 | fs-ledger-2026-08-15-repository-adversarial-scope-audit | `9ee20c4702e04adb4c43233f11c70caf1d0b40fe3be30752d149dc524d152103` | 2026-08-15T03:26:50Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-02 | fs-ledger-2026-08-15-mechanical-gate-a-candidate | `37ae22f6050eb0781868146f197045b3eac06fef65204f17b329ce962a18ce7d` | 2026-08-15T04:34:25Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-03 | fs-ledger-2026-08-15-mechanical-gate-a-candidate | `2eabe2892983d3277fcbfb6741fe1badf8fa1df05fd81546e440940ee1f93ef5` | 2026-08-15T06:15:00Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `37ae22f6050eb0781868146f197045b3eac06fef65204f17b329ce962a18ce7d`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `2eabe2892983d3277fcbfb6741fe1badf8fa1df05fd81546e440940ee1f93ef5`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

@@ -7,7 +7,7 @@
   "subprocess_timeout_seconds": 180,
   "constitution_sha256": "3f2d1f19af160e4bd0fd752f9494f4ea0531b248b72a262e58df83f473522aa5",
   "bound_sources_sha256": {
-    "time_model": "4263f90c831c266121bdac1bfdc233135059dc809ecd96523bff7ed61c44eeeb",
+    "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44",
     "assertion_surface": "96126e110e49dfdf4428d95f89afb8bca8fcc1c1b1117e75526f3af59279df5b",
     "record_assurance": "03c6345d4cea4715116c2fea25e315ce00877bfe8521c8f3aeacf3742bab5d1f",
     "record_red_team": "62d00a43ac1b35b0dba0460cc78038e8624b21a2e14956637270a58dd3813653",
@@ -39,8 +39,8 @@
     "case_bound_rule_sha256": "53262ab15af4f23b692ba86b577cb3971ddf5bc6b855b6cedb39090df2d99af8",
     "source_binding_fragment": "all $binding: all $current: passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & ~collide($binding, SourceBinding) -> reference($binding, SourceBound).",
     "source_binding_sha256": "dd23aab90fd994e4a23fb6e16637359548449b7c5cdd277e0476d3b3feeb3de0",
-    "semantic_effect": "A restrictive custody conclusion requires a positive, independently reviewed renewal bound to the exact case, subject, judgment basis, injury victim, symbolic window, canonical terminal transition, and collision-free source. Typed collisions reject ambiguous lineage, manifests, order, windows, cases, leases, and source bindings. A raw lease produces a lease-scoped TemporalRecord defect when inactive, while a sufficiently bound person-facing attempt produces TemporalAuthority; neither error authorises custody or fabricates release.",
-    "compatibility_review": "The staged fixtures preserve standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the unread-duty endpoint while intentionally revising the former permanent no-time claim and raw carry effects. TA-22 executes an exact opaque floor entitlement against the full T3 source; the chapter, red-team, and amendment suites add independent full-source coverage, while every placement probe derives the same projection from its complete generated standing route without an overlay.",
+    "semantic_effect": "A restrictive custody conclusion requires a positive, independently reviewed renewal bound to the exact supplied case, subject, judgment basis, injury victim, symbolic window, canonical terminal transition, and collision-free source. Typed collisions reject enumerated ambiguous lineage, manifests, order, windows, cases, leases, and source bindings. A supplied challenge suspends its exact lease; withheld intake is not detectable. Raw inactive leases and sufficiently bound person-facing attempts produce distinct defects; none authorises custody, performs correction, or fabricates release.",
+    "compatibility_review": "The staged fixtures preserve supplied or otherwise derived standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the unread-duty endpoint while revising raw carry effects. T1 does not establish universal standing when a predecessor witness is withheld. Correction, supersession, non-revival, intake durability, and duty performance remain explicit requirements or Book 2 boundaries.",
     "article9_boundary": "The effective-version binding is reviewed against this exact source digest and executable effects. Article 9's proposer-written target label neither authenticates nor applies this version. Lawful deployment and source-transition authentication remain external."
   },
   "pre_t3_custody_rule": "all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).",
@@ -52,7 +52,7 @@
       "evidence": "The raw replace link names both snapshots and its writer; independently observed manifests bind each endpoint. Transition tags accepted links, while TerminalTransition additionally requires no supplied successor and the independently witnessed Binding_Chronicle passport to select that exact collision-free endpoint as the constitutional lineage. Consumers rejoin the raw predecessor field.",
       "forge_route": "A writer may invent an endpoint, self-loop, conflicting predecessor, or replayed successor.",
       "withholding_route": "A writer or witness may omit the successor, link, or one endpoint's attestation.",
-      "correction": "A visible accepted successor makes the prior endpoint non-terminal in a fresh evaluation; a correction cannot retroactively revive expired restrictive power.",
+      "correction": "Requirement, not a current correction effect: a later supplied accepted successor can make the prior endpoint non-terminal in a fresh evaluation. The source supplies no general supersession, rollback, or non-revival operation.",
       "appeal": "An affected person can challenge carry, standing, disappearance, order, and authority defects through TemporalReview to an Appeals duty.",
       "cross_epoch_handoff": "Book 1 gives adverse carry and public power effect only on the witnessed canonical TerminalTransition; Book 2 publishes, stores, replicates, and recovers the snapshots and its lineage binding.",
       "residual_external_assurance": "No repository rule makes a successor arrive or proves witness independence, identity, availability, or honest publication.",
@@ -65,7 +65,7 @@
       "evidence": "Dual raw ManifestScope observations bind a manifest to one exact snapshot identity. complete tags only the manifest and scope, so transition acceptance must rejoin both raw observations; separately scoped consequential members are likewise rejoined by their consumers.",
       "forge_route": "A writer may inject a member after attestation, omit one before attestation, remap one manifest, or supply multiple fully witnessed manifests for one predecessor epoch.",
       "withholding_route": "Either writer may suppress the manifest or a required member; absence is usable only inside an attested finite scope.",
-      "correction": "Corrections name the superseded manifest and preserve visible lineage, challenge, standing, and non-retroactivity.",
+      "correction": "Target contract: any corrected manifest must name its predecessor, authority, reason, scope, and downstream reconsideration. The current rules detect selected conflicts and disappearance only; they do not implement manifest correction.",
       "appeal": "Omission, forgery, and disappearance are named errors with a claimant challenge route.",
       "cross_epoch_handoff": "The accepted successor consumes the predecessor's attested members rather than trusting a raw current status alone.",
       "residual_external_assurance": "Cryptographic commitment, storage durability, privacy, witness identity, and member truth remain operational assurances.",
@@ -78,7 +78,7 @@
       "evidence": "Both observations must concern the same claim, evidence reference, and scope.",
       "forge_route": "One operator may control both named writers or coordinate equal false observations.",
       "withholding_route": "Either witness may refuse to attest. Unsupported public power then remains suspended. Standing continuity begins only after both witnesses attest the predecessor standing tuple; withholding either one can leave that route, and therefore its floor, non-derivable.",
-      "correction": "A corrected observation is linked prospectively and cannot silently rewrite a prior legal interval.",
+      "correction": "Target contract: a corrected observation must be visible, reasoned, challengeable, and prospective where it would otherwise extend restriction. No current rule implements that correction or its non-retroactivity.",
       "appeal": "The claimant can contest the observed claim and the resulting named temporal defect.",
       "cross_epoch_handoff": "Each successor carries the independently witnessed claim lineage required by its rule.",
       "residual_external_assurance": "Organisational and technical independence cannot be derived from two constants in one file.",
@@ -91,7 +91,7 @@
       "evidence": "EventStartScope and EventEndScope bind the raw list claim to the named earlier and later events; precede tags the claim and derives a ternary path tuple whose third place is EventPath. Transitive closure over precede(_, _, EventPath) exposes cycles of any supplied length, while consequential consumers still rely on the exact witnessed endpoints. Event order is not inferred from record insertion order.",
       "forge_route": "A writer may backdate, reverse, duplicate, or submit both directions.",
       "withholding_route": "The earlier event, later event, or one observation may be suppressed.",
-      "correction": "Opposite accepted directions produce a named conflict requiring review rather than arbitrary selection.",
+      "correction": "Current effect is conflict detection only. Selecting or correcting the true event order, preserving reasons, and reconsidering consequences remain an unimplemented record contract.",
       "appeal": "A person affected by an order conflict can challenge the claim and trigger an Appeals duty.",
       "cross_epoch_handoff": "The event claim is usable only with a record-order claim bound to the accepted successor.",
       "residual_external_assurance": "The file checks consistency of supplied claims, not when the outside events occurred.",
@@ -104,7 +104,7 @@
       "evidence": "RecordStartScope and RecordEndScope bind the raw list claim to the named earlier and later records; precede tags the claim and derives a ternary path tuple whose third place is RecordPath. Transitive closure over precede(_, _, RecordPath) exposes cycles of any supplied length independently of event order.",
       "forge_route": "A writer may backdate the log or bind a current claim to a stale successor.",
       "withholding_route": "Omission of the log or either observation prevents an order conclusion.",
-      "correction": "A visible corrected log preserves the earlier entry and supplies a reason and challenge path.",
+      "correction": "Current effect is conflict detection only. A visible corrected log, its reason, challenge path, and prospective effect remain requirements rather than derived results.",
       "appeal": "Order conflicts remain contestable through the same independent review route.",
       "cross_epoch_handoff": "The log's successor identity must match the accepted T1 transition.",
       "residual_external_assurance": "Append-only storage and clocked insertion are outside the constitutional file.",
@@ -117,7 +117,7 @@
       "evidence": "WindowStartScope and WindowEndScope bind the raw date to current and review boundaries. time tags only a collision-free window after matching ternary precede paths typed by EventPath and RecordPath connect its boundaries and neither path is tainted by an order cycle. Fully witnessed divergent starts or ends derive WindowDefinition; a fully witnessed date whose exact endpoints have a reverse path derives WindowOrder.",
       "forge_route": "The service may forge a future boundary, replay a spent window, or collude with witnesses.",
       "withholding_route": "The service may freeze publication or suppress the boundary event.",
-      "correction": "Correction is visible and prospective; it cannot extend a restriction that already lost authority.",
+      "correction": "Current effect is fail-closed window rejection on supplied conflicts. Prospective correction and the rule against reviving an expired restriction remain requirements; outside clocks and non-revival enforcement belong to Book 2.",
       "appeal": "A missing, stale, or disputed window removes the positive custody authority and creates a contestable defect.",
       "cross_epoch_handoff": "Each renewal is bound to the accepted current snapshot and one symbolic window.",
       "residual_external_assurance": "Only Book 2 can assure that a clock or event source advances and remains available.",
@@ -130,7 +130,7 @@
       "evidence": "CaseScope and HolderScope bind the raw citation to its subject and holder; JudgmentScope and InjuryVictimScope separately attest the Court-judgment basis and exact victim. ConvictionRecorded derives only from that complete substantive tuple, and both ActivePower and the custody gate rejoin it. related tags only the case identifier. Fully witnessed divergent subjects derive CaseBinding.",
       "forge_route": "A generic judgment or valid renewal may be replayed against another case or subject.",
       "withholding_route": "Withholding the case record prevents custody but does not remove personhood, floor, appeal, or historical answerability.",
-      "correction": "A corrected case identity preserves lineage and cannot silently transfer a renewal to another person.",
+      "correction": "A corrected case identity must preserve visible lineage and must not transfer a lease to another person. The current collision rules reject supplied ambiguity but perform no case-record correction.",
       "appeal": "The affected person can challenge case binding and unsupported temporal authority.",
       "cross_epoch_handoff": "A successor carries the exact case binding, not merely a Court-wide permission.",
       "residual_external_assurance": "Case authorship, judgment truth, notice, counsel, and administration remain outside this temporal assurance.",
@@ -143,7 +143,7 @@
       "evidence": "PowerScope, CaseBindingScope, LimitScope, and RenewalScope bind exact raw values; their derived conclusions carry identifier-plus-status tags, so active power rejoins every raw value and observation, including the judgment and injury-victim basis. Fully witnessed divergent power, case, window, or renewal fields derive LeaseBinding; challenge or lawful disposition derives LeaseSuspended. A raw inactive lease derives lease-scoped TemporalRecord, while a bound or substantively incomplete person-facing attempt separately derives TemporalAuthority.",
       "forge_route": "An actor may reuse a valid renewal, self-approve, bind the wrong case, or substitute a stale snapshot.",
       "withholding_route": "A missing renewal or one withheld PowerScope witness suspends custody authority and derives no fictional free fact; a supplied raw case authority remains visible as a named defect.",
-      "correction": "Correction is prospective and cannot revive an authority after its reviewed interval ended.",
+      "correction": "The current source rejects absent, stale, conflicting, or suspended supplied renewal evidence in a fresh evaluation. Correction and non-revival after an outside interval ends are requirements, not current derived effects.",
       "appeal": "Unsupported custody can expose a lease-scoped TemporalRecord and, when the exact person-facing case is bound, a separate TemporalAuthority error with a claimant challenge route.",
       "cross_epoch_handoff": "Every new interval needs a successor-bound renewal; a Court-wide evergreen permit is forbidden.",
       "residual_external_assurance": "Approval authenticity, tally, reviewer independence, scheduling, and eventual action remain external.",
@@ -156,7 +156,7 @@
       "evidence": "The reviewed digest, marked rule family, executable cases, compatibility review, and exact family/version/epoch fields agree. Two fully witnessed divergent source tuples for one binding derive SourceBinding and block SourceBound.",
       "forge_route": "A proposer may use a harmless label beside a harmful diff, or cite Constitution_Temporal beside another source.",
       "withholding_route": "A deployment actor may omit the reviewed version or publish an unauthenticated source transition.",
-      "correction": "A later exact version supersedes prospectively with visible lineage and a repeated effect review.",
+      "correction": "A later exact source may supersede prospectively only through a separately authenticated source transition and renewed effect review. This digest-bound case neither enacts nor operates that transition.",
       "appeal": "Source mismatch removes the positive authority; it is not repaired by Article 9's become label.",
       "cross_epoch_handoff": "The accepted successor and family source record bind the same epoch; each case-renewal must separately bind that epoch through its current continuation.",
       "residual_external_assurance": "The repository cannot authenticate its own deployment, release channel, engine binary, or human trust root.",
@@ -169,7 +169,7 @@
       "evidence": "The challenge names the disputed entry or record family and the claimant.",
       "forge_route": "A writer may submit a challenge under another name or flood the route.",
       "withholding_route": "An institution may refuse to record, read, or act on the challenge.",
-      "correction": "A corrected challenge remains visible and retains the original filing lineage.",
+      "correction": "A supplied challenge fact can suspend the exact custody lease and derive a duty. The source neither preserves filing lineage nor detects withheld intake, and it performs no correction or remedy.",
       "appeal": "Named temporal errors plus a challenge derive an Appeals duty without pretending that the duty performs itself.",
       "cross_epoch_handoff": "Open challenges and duties are preserved across accepted successors.",
       "residual_external_assurance": "Accessibility, advocate authority, notice, response time, action, and remedy are institutional assurances.",
@@ -550,7 +550,7 @@
       "stage": "T1",
       "title": "Supportive standing continuity",
       "process_role": "successor",
-      "description": "A fully witnessed predecessor standing member preserves personhood when the successor omits it and names the omission. A second subject with one missing predecessor witness exposes the boundary: the rule cannot preserve standing it cannot establish.",
+      "description": "A fully witnessed predecessor standing member preserves personhood when the successor omits it and names the omission. A second subject with one missing predecessor witness pins the separate standing-root boundary: T1 cannot establish universal standing or distinguish a withheld witness from an absent entry.",
       "deletions": [],
       "additions": [
         "replace(TA_Standing_Current, TA_Standing_Previous, Chronicle).",
@@ -570,7 +570,7 @@
         {
           "expression": "person(TA_Unregistered)",
           "expected": "TRUE",
-          "purpose": "Standing continuity is supportive rather than a denial gate."
+          "purpose": "Once both predecessor-standing witnesses are supplied, continuity is supportive rather than a denial gate."
         },
         {
           "expression": "err(TA_Unregistered, StandingOmission)",
@@ -580,12 +580,12 @@
         {
           "expression": "person(TA_Unwitnessed_Standing)",
           "expected": "FALSE",
-          "purpose": "Supportive continuity starts only after both predecessor-standing witnesses are supplied."
+          "purpose": "Withholding either predecessor-standing witness can still suppress this derived route; universal standing is not a T1 result."
         },
         {
           "expression": "err(TA_Unwitnessed_Standing, StandingOmission)",
           "expected": "FALSE",
-          "purpose": "Without the second predecessor witness, the model cannot distinguish withheld evidence from absent standing and cannot name a successor omission."
+          "purpose": "Without the second witness, T1 cannot name an omission; the independent standing-root contract must prevent the record from becoming an eligibility gate."
         }
       ]
     },
@@ -2245,6 +2245,85 @@
           "purpose": "The source cannot choose a convenient lineage version to preserve the adverse consequence."
         }
       ]
+    },
+    {
+      "id": "TA-41",
+      "stage": "T3",
+      "title": "Supplied challenge suspension and withheld-intake boundary",
+      "process_role": "control",
+      "description": "A supplied challenge fact suspends an otherwise valid custody lease, derives a person-scoped dispute and Appeals duty, and fabricates no release. The paired fresh process without that fact exposes the intake boundary: this source cannot detect or suspend on a filing that a writer or service withholds.",
+      "deletions": [],
+      "additions": [
+        "person(TA_Challenge_Subject).",
+        "person(TA_Challenge_Victim).",
+        "injure(TA_Challenge_Subject, TA_Challenge_Victim).",
+        "judge(Court, TA_Challenge_Subject).",
+        "cite(Court, TA_Challenge_Case, TA_Challenge_Subject).",
+        "observe(Chronicle, TA_Challenge_Case, TA_Challenge_Subject, CaseScope).",
+        "observe(TemporalReview, TA_Challenge_Case, TA_Challenge_Subject, CaseScope).",
+        "observe(Chronicle, TA_Challenge_Case, Court, HolderScope).",
+        "observe(TemporalReview, TA_Challenge_Case, Court, HolderScope).",
+        "observe(Chronicle, TA_Challenge_Case, CourtJudgment, JudgmentScope).",
+        "observe(TemporalReview, TA_Challenge_Case, CourtJudgment, JudgmentScope).",
+        "observe(Chronicle, TA_Challenge_Case, TA_Challenge_Victim, InjuryVictimScope).",
+        "observe(TemporalReview, TA_Challenge_Case, TA_Challenge_Victim, InjuryVictimScope).",
+        "authorized(TA_Challenge_Case, ActiveCustody, TA_Challenge_Case).",
+        "observe(Chronicle, TA_Challenge_Case, ActiveCustody, PowerScope).",
+        "observe(TemporalReview, TA_Challenge_Case, ActiveCustody, PowerScope).",
+        "observe(Chronicle, TA_Challenge_Case, TA_Challenge_Case, CaseBindingScope).",
+        "observe(TemporalReview, TA_Challenge_Case, TA_Challenge_Case, CaseBindingScope).",
+        "limit(TA_Challenge_Case, TA_Challenge_Case, Window_Custody).",
+        "observe(Chronicle, TA_Challenge_Case, Window_Custody, LimitScope).",
+        "observe(TemporalReview, TA_Challenge_Case, Window_Custody, LimitScope).",
+        "continue(TA_Challenge_Case, Epoch_Current).",
+        "observe(Chronicle, TA_Challenge_Case, Epoch_Current, RenewalScope).",
+        "observe(TemporalReview, TA_Challenge_Case, Epoch_Current, RenewalScope).",
+        "approves(Electorate, TA_Challenge_Case).",
+        "approves(TemporalReview, TA_Challenge_Case).",
+        "challenge(TA_Challenge_Subject, TA_Challenge_Case, TemporalReview)."
+      ],
+      "checks": [
+        {
+          "expression": "collide(TA_Challenge_Case, LeaseSuspended)",
+          "expected": "TRUE",
+          "purpose": "The supplied challenge fact suspends the exact challenged lease."
+        },
+        {
+          "expression": "correct(TA_Challenge_Case, ActivePower)",
+          "expected": "FALSE",
+          "purpose": "A suspended lease cannot receive active-power status."
+        },
+        {
+          "expression": "match(TA_Challenge_Case, ActivePower)",
+          "expected": "FALSE",
+          "purpose": "The challenged lease cannot become current restrictive authority."
+        },
+        {
+          "expression": "prisoner(TA_Challenge_Subject)",
+          "expected": "FALSE",
+          "purpose": "The supplied challenge blocks the custody conclusion in this fresh evaluation."
+        },
+        {
+          "expression": "err(TA_Challenge_Subject, TemporalDispute)",
+          "expected": "TRUE",
+          "purpose": "The supplied challenge makes the person-scoped temporal dispute visible."
+        },
+        {
+          "expression": "obliged(Appeals, TA_Challenge_Subject)",
+          "expected": "TRUE",
+          "purpose": "The visible dispute derives a duty but no performed review or remedy."
+        },
+        {
+          "expression": "free(TA_Challenge_Subject)",
+          "expected": "FALSE",
+          "purpose": "Suspension does not fabricate an affirmative release act."
+        },
+        {
+          "expression": "person(TA_Challenge_Subject)",
+          "expected": "TRUE",
+          "purpose": "The challenge route does not consume the supplied standing fact."
+        }
+      ]
     }
   ],
   "fresh_process_pairs": [
@@ -2313,6 +2392,12 @@
       "predecessor_case": "TA-02",
       "successor_case": "TA-40",
       "purpose": "A collision-free canonical lineage is contrasted with a fully witnessed conflicting lineage version in a fresh process."
+    },
+    {
+      "id": "TP-12",
+      "predecessor_case": "TA-41",
+      "successor_case": "TA-14",
+      "purpose": "Otherwise complete challenge-present and challenge-absent custody envelopes run in fresh processes. The first suspends; the second remains active, proving that withheld challenge intake is an external failure rather than a fail-safe derivation."
     }
   ],
   "attacks": [
@@ -2667,14 +2752,35 @@
       "case_refs": [],
       "posture": "exposed_external_boundary",
       "boundary": "Clock advance, successor arrival, review, publication, physical release, recovery, and remedy require external operational assurance."
+    },
+    {
+      "id": "standing_witness_withholding",
+      "stage": "T1",
+      "control": "TA-10 pins both polarities: dual predecessor-standing witnesses preserve personhood, while withholding either witness leaves personhood and the StandingOmission marker non-derivable through T1.",
+      "case_refs": [
+        "TA-10"
+      ],
+      "posture": "exposed_external_boundary",
+      "boundary": "Universal standing is a separate root condition. This temporal path neither creates a registry-free serve-and-reconcile route nor permits standing or the floor to be claimed fail-safe when the predecessor evidence is withheld."
+    },
+    {
+      "id": "challenge_intake_withholding",
+      "stage": "T3",
+      "control": "TA-41 and TA-14 execute otherwise complete challenge-present and challenge-absent custody envelopes in fresh processes. A supplied challenge suspends the lease; withholding that fact can leave it active.",
+      "case_refs": [
+        "TA-41",
+        "TA-14"
+      ],
+      "posture": "exposed_external_boundary",
+      "boundary": "The current source has no durable filing receipt, alternate intake witness, or advocate-created suspension record. Book 2 must operate intake and custody liveness; a future Book 1 durable-record route requires its own source contract."
     }
   ],
   "narrowness_impacts": [
     {
       "artifact_ref": "book-1/01-what-counts-as-evidence.md",
-      "standing_claim": "The record/evidence distinction and deletion boundary now include independently witnessed transitions without claiming that a listed writer is truthful.",
+      "standing_claim": "The record/evidence distinction and deletion boundary include independently witnessed transitions. T1 can preserve supplied dual-witness predecessor standing but cannot turn that evidence route into universal standing.",
       "classification": "revised_and_pinned",
-      "test_route": "T1 manifest, injection, omission, forgery, standing-continuity, and source-binding cases plus the assertion-surface and record-assurance contracts.",
+      "test_route": "T1 manifest, injection, omission, forgery, dual-witness standing-continuity, standing-witness-withholding, and source-binding cases plus the assertion-surface and record-assurance contracts.",
       "change_trigger": "Any new temporal premise, writer, member scope, or effective source changes this claim and its pins."
     },
     {
@@ -2693,16 +2799,16 @@
     },
     {
       "artifact_ref": "book-1/07-a-prisoner-is-a-person.md",
-      "standing_claim": "A missed or disputed temporal renewal removes authority to confine without fabricating free, erasing personhood, or terminating the floor and appeal.",
+      "standing_claim": "A missed or disputed temporal renewal removes authority to confine without fabricating free or consuming personhood already supplied or derived through an independent route. T3 does not repair a withheld standing root.",
       "classification": "revised_and_pinned",
       "test_route": "T3 missing-renewal, canonical-successor, withheld-power-witness, judgment/victim-withholding, valid-release, typed-collision, wrong-case, and source-mismatch cases pin fail-closed custody, visible defects where readers exist, personhood, travel, the absence of fabricated free, and a full-source opaque floor entitlement in TA-22. Chapter, red-team, amendment, and placement suites add independent full-source entitlement coverage.",
       "change_trigger": "Any release, sentence, custody, standing, or post-release route changes this claim."
     },
     {
       "artifact_ref": "book-1/08-what-you-are-owed.md",
-      "standing_claim": "Every entitlement and itemised debt remains open under missing temporal evidence; T3 adds no delivery actuality or withholding gate.",
+      "standing_claim": "Once personhood is supplied or independently derived, T3 adds no temporal delivery or withholding gate to the entitlements and itemised debts. Universal standing itself remains a separate root contract.",
       "classification": "preserved_and_pinned",
-      "test_route": "The temporal harness pins ground standing and liberty consequences plus one full-source opaque floor entitlement in TA-22; the existing chapter 8 pins and full verifier separately preserve every entitlement/debt route.",
+      "test_route": "TA-22 pins a full-source opaque entitlement for a supplied person; TA-10 separately pins the standing-witness boundary. Chapter 8 and the full verifier preserve the current entitlement/debt routes without claiming delivery.",
       "change_trigger": "Any temporal premise consumed by entitlement, debt, delivery, continuity, or remedy changes the three-open-doors account."
     },
     {
@@ -2721,9 +2827,9 @@
     },
     {
       "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md",
-      "standing_claim": "Temporal errors can derive Appeals duties, but obliged remains unread: the formal chain ends at a duty and does not perform correction or remedy.",
+      "standing_claim": "Supplied temporal errors plus supplied challenge facts can derive Appeals duties, but withheld intake can suppress that route and obliged remains unread. The formal chain does not perform correction or remedy.",
       "classification": "revised_and_pinned",
-      "test_route": "Challenge cases query named errors and obliged while verifying that no relief, reader, deadline, or automatic action follows.",
+      "test_route": "Challenge-present and challenge-absent fresh processes query lease suspension, named errors, and obliged while verifying that no filing receipt, relief, deadline, correction, or automatic action follows.",
       "change_trigger": "Any rule reading obliged or deriving remedy from a temporal error must revise this endpoint."
     },
     {
@@ -2742,20 +2848,20 @@
     }
   ],
   "limits": {
-    "safety_not_liveness": "The executable cases establish bounded safety consequences for supplied records. They cannot prove that a successor, boundary event, review, correction, release, or remedy eventually occurs.",
-    "snapshot_scope": "T1 detects disappearance only between independently attested predecessor and successor scopes. It cannot detect a fact removed within or before an attested snapshot, or prove genesis completeness.",
+    "safety_not_liveness": "The executable cases establish bounded safety consequences for supplied records. They cannot prove universal standing, preserve a withheld challenge filing, or prove that a successor, boundary event, review, correction, release, or remedy eventually occurs.",
+    "snapshot_scope": "T1 detects disappearance only between independently attested predecessor and successor scopes. It cannot detect a fact removed within or before an attested snapshot, prove genesis completeness, or preserve derived standing when either predecessor-standing witness is withheld.",
     "external_time": "Symbolic ordered boundary events are not dates, duration arithmetic, or a clock. Book 2 must assure advancement, availability, recovery, and service independence.",
     "physical_effect": "A non-derived prisoner conclusion or a derived free conclusion is a legal-model result, not proof that a person was physically released, housed, fed, or protected.",
-    "institutional_action": "An err or obliged conclusion does not prove that any reader receives it, that Appeals acts, or that a remedy is performed.",
+    "institutional_action": "An err or obliged conclusion does not prove receipt, intake, review, correction, remedy, or action. Withholding a genuine challenge fact can leave an otherwise valid lease unsuspended in the supplied envelope.",
     "record_truth": "Two named observations and a complete manifest do not by themselves prove writer identity, independence, truth, privacy, append-only storage, or honest membership commitment.",
     "query_shape": "The temporal harness executes simple ground relation pins plus one exact ground event-entitlement shape. Typed status and collide conclusions use one identifier plus a constant tag; ternary precede carries exactly two endpoints plus the EventPath or RecordPath constant for transitive closure. TA-22 checks standing, opaque floor entitlement, authority, custody, recognition, and severity against the full T3 source.",
-    "source_transition": "The reviewed digest binds this repository evidence to one exact source. It does not authenticate proposal-to-diff causation, lawful enactment, deployment, rollback, or the release engine binary.",
+    "source_transition": "The reviewed digest binds this repository evidence to one exact source. It does not implement semantic supersession, general correction, rollback, non-revival, lawful enactment, deployment, or the release engine binary.",
     "trust_root": "The constitution, reviewed contracts, generators, verifier, engine, and human review can be weakened together. A green run cannot authenticate or authorise that shared trust root."
   },
   "acceptance_result": {
     "result": "ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED",
-    "claim": "The exact reviewed source implements cumulative T1 reconciliation, a witnessed canonical TerminalTransition, transitive ternary precede paths typed by EventPath and RecordPath, typed collision categories, and T3 positive case-bound Court-custody authority. Consequential consumers rejoin exact raw fields and matching observations, including judgment and victim evidence. Lease-scoped TemporalRecord and person-scoped TemporalAuthority remain distinct. The adversarial ground cases establish those derivations and bounded ordinary plus opaque floor-query coexistence only for the supplied records.",
-    "does_not_establish": "The case does not establish writer honesty, witness independence, manifest truth, runtime source authenticity, an advancing clock, an arriving successor, physical release, institutional action, recovery, or remedy.",
-    "remaining_boundary": "Book 2 must operate and independently assure identity, clocks, calendars, witness separation, storage, replication, publication, recovery, scheduling, availability, case administration, and release execution; Book 1 preserves the legal default when that evidence is missing or disputed."
+    "claim": "The exact reviewed source implements cumulative T1 reconciliation, a witnessed canonical TerminalTransition, transitive ternary precede paths typed by EventPath and RecordPath, typed collision categories, and T3 positive case-bound Court-custody authority. Consequential consumers rejoin exact raw fields and matching observations. A supplied challenge suspends its exact lease; a paired fresh process proves that withheld intake does not. The ground cases establish these derivations and bounded full-source floor-query coexistence only for supplied records and supplied or independently derived standing.",
+    "does_not_establish": "The case does not establish universal standing, challenge receipt, correction, semantic supersession, non-revival, writer honesty, witness independence, manifest truth, runtime source authenticity, an advancing clock, an arriving successor, physical release, institutional action, recovery, or remedy.",
+    "remaining_boundary": "The separate universal-standing contract must prevent identity or registry evidence from gating standing and the floor. Book 2 must operate and independently assure challenge intake, identity reconciliation, clocks, calendars, witness separation, storage, replication, publication, recovery, scheduling, availability, case administration, correction, non-revival, and release execution. Book 1 here supplies only the declared fresh-evaluation defaults over the evidence actually supplied."
   }
 }
