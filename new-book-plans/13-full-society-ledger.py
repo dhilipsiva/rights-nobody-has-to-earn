@@ -255,6 +255,51 @@ COVERAGE_EVIDENCE_CEILING = (
     "Coverage contracts and pre-drafting checks only; no operation, delivery, "
     "feasibility, liveness, reader response, external truth, or calibration follows."
 )
+CONSTITUTIONAL_EFFECT_COUNT = 8
+EFFECT_CONTRACT_TERM_KEYS = [
+    "lawful_source", "trigger", "evidence_rule", "bounded_effect",
+    "forbidden_preconditions", "immediate_access", "record_boundary",
+    "challenge_correction", "independent_check", "failure_default",
+    "end_or_retention",
+]
+EFFECT_PROFILE_FIELDS = {
+    "standing-status": [
+        "holder", "forbidden_preconditions", "immediate_access_route",
+        "challenge_correction", "independent_check",
+    ],
+    "material-floor-access": [
+        "holder", "duty_bearer", "minimum", "accessibility", "breach",
+        "interim_continuity", "remedy", "appeal", "audit",
+    ],
+    "fair-process-repair": [
+        "trigger", "evidence", "accessible_notice", "advocate", "hearing",
+        "appeal", "repair", "end_or_review", "temporal_status",
+    ],
+    "consequential-record": POWER_PROFILE_FIELDS["consequential-record"],
+}
+EFFECT_POLICY = {
+    "universal-standing-root": ("class-01", ["class-07"],
+                                 ["standing-status"], ["FS-CLM-38"]),
+    "serve-before-reconciliation": ("class-02", ["class-01", "class-04"],
+                                     ["material-floor-access", "fair-process-repair"],
+                                     ["FS-CLM-39"]),
+    "service-enforcement-firewall": ("class-07", ["class-01", "class-02"],
+                                     ["consequential-record"], ["FS-CLM-39"]),
+    "age-status-continuity": ("class-01", ["class-07", "class-04"],
+                              ["standing-status", "consequential-record"],
+                              ["FS-CLM-38", "FS-CLM-40"]),
+    "identity-link-correction": ("class-07", ["class-01", "class-04"],
+                                 ["consequential-record", "fair-process-repair"],
+                                 ["FS-CLM-40"]),
+    "supported-agency-standing": ("class-01", ["class-04", "class-07"],
+                                  ["standing-status", "fair-process-repair"],
+                                  ["FS-CLM-38"]),
+    "death-status-boundary": ("class-07", ["class-01", "class-04"],
+                              ["consequential-record"], ["FS-CLM-40"]),
+    "provenance-accountability-retention": (
+        "class-07", ["class-01", "class-04"],
+        ["consequential-record", "fair-process-repair"], ["FS-CLM-40"]),
+}
 POWER_CLASS_IDS = [f"class-{i:02d}" for i in range(1, 11)]
 CARD_V7_EXTRA_KEYS = [
     "manifest_key", "source_family", "posture", "evidence_kind",
@@ -422,7 +467,8 @@ READER_PROJECTION_POPULATIONS = (
     "domains", "legacy_rows", "claims", "bodies", "routes",
     "external_assumptions", "envelope", "roles", "role_omissions",
     "powers", "power_contract_templates", "power_refusals",
-    "power_crosswalk_dispositions", "coverage_families",
+    "power_crosswalk_dispositions", "constitutional_effects",
+    "coverage_families",
     "dependencies", "dependency_loops",
     "refused_flows",
     "scenarios", "scenario_omissions", "thresholds", "defects",
@@ -778,6 +824,7 @@ RECORD_ARRAYS = [
     "power_contract_templates",
     "power_refusals",
     "power_crosswalk_dispositions",
+    "constitutional_effects",
     "coverage_families",
     "closure_requirement_profiles",
     "closure_claim_contracts",
@@ -804,6 +851,7 @@ ARRAY_RECORD_TYPES = {
     "power_contract_templates": "power_contract_template",
     "power_refusals": "power_refusal",
     "power_crosswalk_dispositions": "power_crosswalk_disposition",
+    "constitutional_effects": "constitutional_effect",
     "coverage_families": "coverage_family",
     "dependencies": "dependency",
     "scenarios": "scenario",
@@ -1323,6 +1371,7 @@ def validate_coverage_population(src: dict):
     exact_keys(
         population,
         ["status", "completed_source_families", "expected_final_card_count",
+         "expected_constitutional_effect_count",
          "legacy_fields_permitted_until_complete", "evidence_ceiling"],
         "coverage_population",
     )
@@ -1340,6 +1389,8 @@ def validate_coverage_population(src: dict):
             f"coverage_population.status must be {expected_status!r}")
     if population["expected_final_card_count"] != 210:
         raise LedgerError("coverage_population final card count must remain 210")
+    if population["expected_constitutional_effect_count"] != CONSTITUTIONAL_EFFECT_COUNT:
+        raise LedgerError("coverage_population constitutional-effect count drifted")
     if population["legacy_fields_permitted_until_complete"] is not True:
         raise LedgerError("transitional legacy permission must remain explicit")
     if population["evidence_ceiling"] != COVERAGE_EVIDENCE_CEILING:
@@ -1382,13 +1433,14 @@ def validate_coverage_families(src: dict, ids: dict):
     assigned_templates = []
     assigned_refusals = []
     assigned_crosswalks = []
+    assigned_effects = []
     for i, rec in enumerate(rows):
         ctx = f"coverage_families[{i}] ({rec.get('id', '?')})"
         exact_keys(
             rec,
             ["id", "title", "state", "source_family_refs", "card_refs",
              "template_refs", "refusal_refs", "crosswalk_refs",
-             "formal_statement_refs", "pin_group_refs",
+             "effect_refs", "formal_statement_refs", "pin_group_refs",
              "counterfactual_refs", "prose_refs", "part_v_refs",
              "blocked_before_drafting", "source_refs"],
             ctx,
@@ -1399,7 +1451,8 @@ def validate_coverage_families(src: dict, ids: dict):
                 ("card_refs", "powers"),
                 ("template_refs", "power_contract_templates"),
                 ("refusal_refs", "power_refusals"),
-                ("crosswalk_refs", "power_crosswalk_dispositions")):
+                ("crosswalk_refs", "power_crosswalk_dispositions"),
+                ("effect_refs", "constitutional_effects")):
             _typed_ref_list(rec[field], array_name, ids, f"{ctx}.{field}",
                             allow_empty=True)
         families = rec["source_family_refs"]
@@ -1426,7 +1479,7 @@ def validate_coverage_families(src: dict, ids: dict):
         if rec["state"] == "planned":
             if any(rec[field] for field in (
                     "card_refs", "template_refs", "refusal_refs",
-                    "crosswalk_refs", "formal_statement_refs",
+                    "crosswalk_refs", "effect_refs", "formal_statement_refs",
                     "pin_group_refs", "counterfactual_refs",
                     "prose_refs", "part_v_refs")):
                 raise LedgerError(
@@ -1442,13 +1495,21 @@ def validate_coverage_families(src: dict, ids: dict):
             if not formal_refs or not rec["pin_group_refs"] or not rec["counterfactual_refs"]:
                 raise LedgerError(
                     f"{ctx}: formalized family requires statements, pins, and counterfactuals")
-            for power_ref in rec["card_refs"]:
-                power = next(row for row in src["powers"]
-                             if row["id"] == power_ref)
+            for record_ref, array_name in (
+                    *((ref, "powers") for ref in rec["card_refs"]),
+                    *((ref, "constitutional_effects") for ref in rec["effect_refs"])):
+                record = next(row for row in src[array_name]
+                              if row["id"] == record_ref)
                 for key in ("negative_test", "counterfactual"):
-                    if power[key]["status"] != "executable":
+                    if record[key]["status"] != "executable":
                         raise LedgerError(
-                            f"{ctx}: formalized cards require executable {key}")
+                            f"{ctx}: formalized coverage requires executable {key}")
+                expected_part_v = (
+                    "prose-landed" if rec["state"] == "prose-landed"
+                    else "formalized-not-prose-landed")
+                if array_name == "constitutional_effects" and record["part_v_status"] != expected_part_v:
+                    raise LedgerError(
+                        f"{ctx}: effect Part V status must match family state")
         elif formal_refs or rec["pin_group_refs"] or rec["prose_refs"]:
             raise LedgerError(
                 f"{ctx}: formal rules, pins, or prose precede formalization")
@@ -1463,6 +1524,7 @@ def validate_coverage_families(src: dict, ids: dict):
         assigned_templates.extend(rec["template_refs"])
         assigned_refusals.extend(rec["refusal_refs"])
         assigned_crosswalks.extend(rec["crosswalk_refs"])
+        assigned_effects.extend(rec["effect_refs"])
     if len(assigned_statements) != len(set(assigned_statements)):
         raise LedgerError("a formal statement belongs to multiple coverage families")
     if (set(assigned_statements) != set(statement_ids)
@@ -1489,7 +1551,9 @@ def validate_coverage_families(src: dict, ids: dict):
              converted_records(src["power_refusals"]), "refusals"),
             (assigned_crosswalks,
              converted_records(src["power_crosswalk_dispositions"]),
-             "crosswalks")):
+             "crosswalks"),
+            (assigned_effects, [row["id"] for row in src["constitutional_effects"]],
+             "constitutional effects")):
         if sorted(values) != sorted(expected) or len(values) != len(set(values)):
             raise LedgerError(
                 f"coverage families must partition current {name} exactly once")
@@ -1627,6 +1691,61 @@ def _validate_card_test(value, kind, card, context):
                            f"{context}.executable_ref")
     elif value["executable_ref"] is not None:
         raise LedgerError(f"{context}: planned tests cannot claim execution")
+
+
+def validate_constitutional_effects(src: dict, ids: dict):
+    rows = src.get("constitutional_effects")
+    if not isinstance(rows, list) or len(rows) != CONSTITUTIONAL_EFFECT_COUNT:
+        raise LedgerError("constitutional_effects must contain the eight root-standing effects")
+    if [row.get("effect_key") for row in rows] != list(EFFECT_POLICY):
+        raise LedgerError("constitutional_effects must follow checker-owned effect order")
+    seen_text = set()
+    for index, rec in enumerate(rows):
+        ctx = f"constitutional_effects[{index}] ({rec.get('id', '?')})"
+        exact_keys(rec, COMMON_KEYS + ["effect_key", "posture", "primary_class_ref", "secondary_class_refs", "profiles", "affected_claim_refs", "domain_refs", "holder_role_refs", "affected_role_refs", "checking_role_refs", "permitted_inputs", "prohibited_inputs", "permitted_downstream_effects", "contract_terms", "profile_terms", "evidence_authority", "negative_test", "counterfactual", "part_v_status", "book2_handoff", "source_refs"], ctx)
+        validate_common_record_fields(rec, ctx)
+        if rec["layer"] != "constitutional-invariant" or rec["posture"] not in {"Specified", "Derived"}:
+            raise LedgerError(f"{ctx}: effect layer or posture is invalid")
+        primary, secondary, profiles, claim_refs = EFFECT_POLICY[rec["effect_key"]]
+        if (rec["primary_class_ref"], rec["secondary_class_refs"], rec["profiles"], rec["affected_claim_refs"]) != (primary, secondary, profiles, claim_refs):
+            raise LedgerError(f"{ctx}: checker-owned classification drifted")
+        if rec["domain_refs"] != _domains_for_claim_refs(src, claim_refs):
+            raise LedgerError(f"{ctx}: domains must derive from affected claims")
+        for field, array_name in (("affected_claim_refs", "claims"), ("domain_refs", "domains"), ("holder_role_refs", "roles"), ("affected_role_refs", "roles"), ("checking_role_refs", "roles")):
+            _typed_ref_list(rec[field], array_name, ids, f"{ctx}.{field}")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        for field in ("permitted_inputs", "prohibited_inputs", "permitted_downstream_effects"):
+            values = rec[field]
+            if not isinstance(values, list) or not values or len(values) != len(set(values)) or any(not isinstance(value, str) or not value.strip() for value in values):
+                raise LedgerError(f"{ctx}.{field} must be non-empty and duplicate-free")
+        exact_keys(rec["contract_terms"], EFFECT_CONTRACT_TERM_KEYS, f"{ctx}.contract_terms")
+        for field in EFFECT_CONTRACT_TERM_KEYS:
+            text = _validate_contract_term(rec["contract_terms"][field], field, rec, f"{ctx}.contract_terms.{field}")
+            if text in seen_text:
+                raise LedgerError(f"{ctx}: repeated generic effect-contract prose")
+            seen_text.add(text)
+        if not isinstance(rec["profile_terms"], dict) or list(rec["profile_terms"]) != profiles:
+            raise LedgerError(f"{ctx}: profile_terms must match applicable profiles")
+        for profile in profiles:
+            exact_keys(rec["profile_terms"][profile], EFFECT_PROFILE_FIELDS[profile], f"{ctx}.profile_terms.{profile}")
+            for field in EFFECT_PROFILE_FIELDS[profile]:
+                text = _validate_contract_term(rec["profile_terms"][profile][field], field, rec, f"{ctx}.profile_terms.{profile}.{field}")
+                if text in seen_text:
+                    raise LedgerError(f"{ctx}: repeated generic effect-profile prose")
+                seen_text.add(text)
+        _validate_contract_term(rec["evidence_authority"], "evidence_authority", rec, f"{ctx}.evidence_authority")
+        _validate_card_test(rec["negative_test"], "negative", rec, f"{ctx}.negative_test")
+        _validate_card_test(rec["counterfactual"], "counterfactual", rec, f"{ctx}.counterfactual")
+        if rec["part_v_status"] not in {"coverage-only-not-formalized", "formalized-not-prose-landed", "prose-landed"}:
+            raise LedgerError(f"{ctx}: Part V status is invalid")
+        prohibited = " ".join(rec["prohibited_inputs"]).lower()
+        for token in ("registry", "citizenship", "capacity", "documentation", "t3"):
+            if token not in prohibited:
+                raise LedgerError(f"{ctx}: prohibited inputs omit {token}")
+        if "encounter handle" not in prohibited or "civil identity" not in prohibited:
+            raise LedgerError(f"{ctx}: encounter identity boundary is incomplete")
+        if "no operation" not in require_str(rec, "book2_handoff", ctx).lower():
+            raise LedgerError(f"{ctx}: Book 2 handoff must refuse operation")
 
 
 def validate_power_population(src: dict, ids: dict):
@@ -4175,15 +4294,16 @@ def render_coverage_region(src: dict) -> str:
                 posture += "/" + claim["unestablished_disposition"]
             splits.append(f"{cid} ({posture})")
         cards = [
-            power for power in src["powers"]
+            record for record in (
+                list(src["powers"]) + list(src["constitutional_effects"]))
             if any(
                 claim_ref in row["split_claim_refs"]
-                for claim_ref in power["affected_claim_refs"]
+                for claim_ref in record["affected_claim_refs"]
             )
         ]
         ready = bool(cards) and all(
-            "contract_terms" in power and "profile_terms" in power
-            for power in cards
+            "contract_terms" in record and "profile_terms" in record
+            for record in cards
         )
         readiness = (
             "coverage-ready; not formalized or operational"
@@ -5274,6 +5394,7 @@ def validate(src: dict):
     validate_bodies(src)
     validate_roles(src, ids)
     validate_power_population(src, ids)
+    validate_constitutional_effects(src, ids)
     validate_coverage_families(src, ids)
     validate_dependencies(src, ids)
     validate_scenarios(src, ids)
@@ -5377,6 +5498,17 @@ def negative_controls(src: dict) -> int:
                     _duplicate_contract_prose)
             control("every contract term keeps a source",
                     _contract_term_without_source)
+            control("constitutional-effect count is checker-owned",
+                    lambda s: s["constitutional_effects"].pop())
+            control("constitutional-effect taxonomy is checker-owned",
+                    lambda s: s["constitutional_effects"][0].update(
+                        {"primary_class_ref": "class-02"}))
+            control("constitutional-effect forbidden gates are explicit",
+                    lambda s: s["constitutional_effects"][0][
+                        "prohibited_inputs"].__setitem__(0, "other limits"))
+            control("coverage family partitions every effect exactly once",
+                    lambda s: s["coverage_families"][-1][
+                        "effect_refs"].pop())
             control("bounded delegation is decision-complete",
                     _incomplete_bounded_delegation)
             control("primary class follows the direct effect",
@@ -7252,13 +7384,25 @@ def render(src: dict, resolution: dict) -> str:
     if not src["powers"]:
         w("| — | no completed source family | — | — | — | — | — |")
     w("")
+    w("Constitutional non-power effects:")
+    w("")
+    w("| Effect | Class / profiles | Claims / domains | Readiness | Boundary |")
+    w("| --- | --- | --- | --- | --- |")
+    for rec in src["constitutional_effects"]:
+        w(f"| {rec['id']} {rec['title']} | {rec['primary_class_ref']}; "
+          f"{', '.join(rec['profiles'])} | "
+          f"{', '.join(rec['affected_claim_refs'])}; "
+          f"{', '.join(rec['domain_refs'])} | {rec['part_v_status']}; "
+          f"{rec['negative_test']['status']}/{rec['counterfactual']['status']} | "
+          f"{rec['book2_handoff']} |")
+    w("")
     w("Coverage-family drafting gate:")
     w("")
-    w("| Family | State | Cards | Formal statements | Drafting block |")
+    w("| Family | State | Powers / effects | Formal statements | Drafting block |")
     w("| --- | --- | ---: | ---: | --- |")
     for family in src["coverage_families"]:
         w(f"| {family['id']} {family['title']} | {family['state']} | "
-          f"{len(family['card_refs'])} | "
+          f"{len(family['card_refs'])} / {len(family['effect_refs'])} | "
           f"{len(family['formal_statement_refs'])} | "
           f"{family['blocked_before_drafting']} |")
     w("")
@@ -7909,6 +8053,10 @@ def render_reader(src: dict, resolution: dict) -> str:
         domain_powers = [
             row for row in src["powers"] if domain_id in row["domain_refs"]
         ]
+        domain_effects = [
+            row for row in src["constitutional_effects"]
+            if domain_id in row["domain_refs"]
+        ]
         w("Source-derived power cards:")
         w("")
         for power in domain_powers:
@@ -7924,6 +8072,19 @@ def render_reader(src: dict, resolution: dict) -> str:
               f"Book 2 boundary: {power['book2_handoff']}")
         if not domain_powers:
             w("- None in the completed source-family prefix.")
+        w("")
+        w("Constitutional non-power effects:")
+        w("")
+        for effect in domain_effects:
+            w(f"- {effect['id']}  {effect['title']}; class "
+              f"{effect['primary_class_ref']}; claims "
+              f"{', '.join(effect['affected_claim_refs'])}; tests "
+              f"{effect['negative_test']['status']}/"
+              f"{effect['counterfactual']['status']}; Part V "
+              f"{effect['part_v_status']}. Boundary: "
+              f"{effect['book2_handoff']}")
+        if not domain_effects:
+            w("- None.")
         w("")
         w("Ordinary, failure, and recovery routing:")
         w("")

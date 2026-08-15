@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution",
+  "source_version": "fs-ledger-2026-08-15-universal-standing-root-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -653,7 +653,8 @@
     "FS-CCT": "closure_claim_contract",
     "FS-COM": "review_commission",
     "FS-SAU": "scope_audit",
-    "FS-CVF": "coverage_family"
+    "FS-CVF": "coverage_family",
+    "FS-CCE": "constitutional_effect"
   },
   "domains": [
     {
@@ -2932,6 +2933,115 @@
       "envelope_id": "FS-ENV-00",
       "closure_requirement_refs": [
         "FS-CLR-08"
+      ]
+    },
+    {
+      "id": "FS-CLM-38",
+      "title": "Universal standing begins before registry identity",
+      "claim": "A born person, a person within the republic's jurisdiction or effective control, and a person at first contact holds constitutional standing without citizenship, documentation, capacity, or a registry match.",
+      "layer": "constitutional-invariant",
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-09"
+      ],
+      "legacy_row_ref": null,
+      "class_refs": [
+        "class-01",
+        "class-07"
+      ],
+      "posture": "Specified",
+      "unimplemented_marker": true,
+      "route_ref": "FS-RTE-01",
+      "overlay": "none",
+      "scope_bound": "the ratified standing roots and the formal first-contact, jurisdiction, effective-control, and birth inputs; the input remains externally supplied and does not authenticate civil identity",
+      "evidence_notes": [
+        "coverage contract complete; formal root rules land in the following family transition"
+      ],
+      "public_claim_restriction": "No claim that the system discovers every person, authenticates identity, operates an intake service, or delivers aid.",
+      "applicability": "every born person and every person at first contact, within jurisdiction, or under effective control",
+      "status": "ratified-unimplemented",
+      "severity": "critical if standing remains record-gated",
+      "consequence": "a missing entry can erase the floor, process, and remedy before any claim is heard",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable root rules and watched failures",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [
+        "FS-CLR-01",
+        "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-CLM-39",
+      "title": "Service precedes identity reconciliation",
+      "claim": "Floor protection, emergency help, process, and remedy attach before identity reconciliation, while service routes refuse status-gated access and enforcement enrolment.",
+      "layer": "constitutional-invariant",
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-04",
+        "FS-DOM-07",
+        "FS-DOM-09"
+      ],
+      "legacy_row_ref": null,
+      "class_refs": [
+        "class-02",
+        "class-01",
+        "class-04",
+        "class-07"
+      ],
+      "posture": "Specified",
+      "unimplemented_marker": true,
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "scope_bound": "the normative serve-first duty and enforcement firewall; actual delivery, intake, staffing, and record operation remain outside the claim",
+      "evidence_notes": [
+        "the root person derivation will activate existing floor debts; no delivery relation is added"
+      ],
+      "public_claim_restriction": "No claim of delivered service, working identity reconciliation, institutional response, or enforcement-system liveness.",
+      "applicability": "every unregistered, undocumented, disputed-status, or first-contact claimant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if service waits for identity resolution",
+      "consequence": "record uncertainty becomes denial and an enforcement price for constitutional access",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 formalizes the root and prose states the service-versus-operation ceiling",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [
+        "FS-CLR-01",
+        "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-CLM-40",
+      "title": "Identity correction preserves standing and accountability",
+      "claim": "Identity linking, age and capacity status, death findings, migration between records, and correction remain bounded consequential records; uncertainty preserves standing, and correction preserves provenance and accountability.",
+      "layer": "constitutional-invariant",
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-08"
+      ],
+      "legacy_row_ref": null,
+      "class_refs": [
+        "class-07",
+        "class-01",
+        "class-04"
+      ],
+      "posture": "Specified",
+      "unimplemented_marker": true,
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "scope_bound": "source-specified failure polarity, challenge, correction, retention, and non-transfer limits; no database, matching algorithm, or recovery system is supplied",
+      "evidence_notes": [
+        "record-integrity assurance RI-8 supplies the bounded failure and reconstruction contract"
+      ],
+      "public_claim_restriction": "No claim that identity, age, capacity, death, linkage, storage, recovery, or correction is operationally authenticated or available.",
+      "applicability": "every consequential identity, life-course, support, death, and correction record",
+      "status": "ratified-unimplemented",
+      "severity": "critical if correction can erase a person or accountability",
+      "consequence": "a false merge can transfer burdens, while deletion can conceal history or extinguish standing",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "all identity-bound effects have source terms, tests, challenge, provenance retention, and honest Book 2 handoffs",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [
+        "FS-CLR-04"
       ]
     }
   ],
@@ -6651,7 +6761,8 @@
     ],
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
-    "evidence_ceiling": "Coverage contracts and pre-drafting checks only; no operation, delivery, feasibility, liveness, reader response, external truth, or calibration follows."
+    "evidence_ceiling": "Coverage contracts and pre-drafting checks only; no operation, delivery, feasibility, liveness, reader response, external truth, or calibration follows.",
+    "expected_constitutional_effect_count": 8
   },
   "powers": [
     {
@@ -81737,7 +81848,8 @@
       "blocked_before_drafting": "Any changed or unassigned formal statement fails before generation; this historical kernel gains no new power or operational claim.",
       "source_refs": [
         "new-book-plans/constitution.nibli::admits(\"adjust\")"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-002",
@@ -82042,7 +82154,8 @@
       "source_refs": [
         "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
         "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-003",
@@ -82115,7 +82228,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-state-form-and-political-membership-decision.md::The common tier has only constitutionally enumerated powers."
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-004",
@@ -82138,7 +82252,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-005",
@@ -82169,7 +82284,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md::For a **direct status distinction**, the respondent must prove"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-006",
@@ -82221,7 +82337,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::Mandatory occupational licensing is permitted only for evidenced serious"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-007",
@@ -82274,7 +82391,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::A decision relying on best interests must state"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-008",
@@ -82340,7 +82458,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings"
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-009",
@@ -82427,7 +82546,8 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**Rationing** is not a new power."
-      ]
+      ],
+      "effect_refs": []
     },
     {
       "id": "FS-CVF-010",
@@ -82457,6 +82577,38 @@
       "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
       "source_refs": [
         "new-book-plans/constitution.nibli::all $o: choose(Electorate, $o) -> authority($o)."
+      ],
+      "effect_refs": []
+    },
+    {
+      "id": "FS-CVF-011",
+      "title": "Universal standing root and identity boundary",
+      "state": "coverage-ready",
+      "source_family_refs": [],
+      "card_refs": [],
+      "template_refs": [],
+      "refusal_refs": [],
+      "crosswalk_refs": [],
+      "effect_refs": [
+        "FS-CCE-01",
+        "FS-CCE-02",
+        "FS-CCE-03",
+        "FS-CCE-04",
+        "FS-CCE-05",
+        "FS-CCE-06",
+        "FS-CCE-07",
+        "FS-CCE-08"
+      ],
+      "formal_statement_refs": [],
+      "pin_group_refs": [],
+      "counterfactual_refs": [],
+      "prose_refs": [],
+      "part_v_refs": [],
+      "blocked_before_drafting": "Coverage is complete; formal rules, pins, and counterfactuals must land before any claim-bearing prose.",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+        "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General",
+        "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
       ]
     }
   ],
@@ -83317,7 +83469,9 @@
         "reason": "This is a reviewed structural interface classification, never proof of capacity, arrival, timing, or operational liveness.",
         "satisfiability_status": "operation-deferred"
       },
-      "closure_component_refs": []
+      "closure_component_refs": [
+        "FS-CLR-04:writer"
+      ]
     },
     {
       "id": "FS-DEP-27",
@@ -88886,78 +89040,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "b9bb15181ff576b3d8700f39ed6df5915c506ed2",
-    "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution",
-    "scope_sha256": "e0e4c0fc4c367aa5535bf39359b01409bfd22acf679022a4b26f5c81a78d7458",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-08-15T11:24:21Z",
-    "scope_audit_ref": "FS-SAU-04",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "verification_receipt": {
-      "candidate_commit_sha": "b9bb15181ff576b3d8700f39ed6df5915c506ed2",
-      "verified_at_utc": "2026-08-15T11:50:27Z",
-      "commands": [
-        "python3 new-book-plans/14-reader-evidence.py --check",
-        "python3 new-book-plans/14-reader-evidence.py --check --execute",
-        "python3 new-book-plans/17-full-society-power-source-manifest.py --check",
-        "python3 new-book-plans/13-full-society-ledger.py",
-        "python3 new-book-plans/13-full-society-ledger.py --check",
-        "python3 new-book-plans/16-constitutional-closure.py",
-        "python3 new-book-plans/16-constitutional-closure.py --check",
-        "./verify.sh --quick",
-        "./verify.sh",
-        "git diff --check"
-      ],
-      "result": "all-passed",
-      "transcript_sha256": "7c56d99282f0b03d4a5367df07630f476d3ff46d286065a325069d309d19159d"
-    },
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -88966,7 +89053,9 @@
       "applies_to_claim_refs": [
         "FS-CLM-04",
         "FS-CLM-05",
-        "FS-CLM-06"
+        "FS-CLM-06",
+        "FS-CLM-38",
+        "FS-CLM-39"
       ],
       "components": [
         {
@@ -89070,14 +89159,18 @@
         "FS-CLM-19",
         "FS-CLM-20",
         "FS-CLM-21",
-        "FS-CLM-31"
+        "FS-CLM-31",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "components": [
         {
           "component": "writer",
           "record_refs": [
             "FS-DEP-23",
-            "FS-DEP-39"
+            "FS-DEP-39",
+            "FS-DEP-26"
           ]
         },
         {
@@ -89432,6 +89525,29 @@
       "claim_ref": "FS-CLM-37",
       "required_profile_refs": [
         "FS-CLR-08"
+      ]
+    },
+    {
+      "id": "FS-CCT-38",
+      "claim_ref": "FS-CLM-38",
+      "required_profile_refs": [
+        "FS-CLR-01",
+        "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-CCT-39",
+      "claim_ref": "FS-CLM-39",
+      "required_profile_refs": [
+        "FS-CLR-01",
+        "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-CCT-40",
+      "claim_ref": "FS-CLM-40",
+      "required_profile_refs": [
+        "FS-CLR-04"
       ]
     }
   ],
@@ -89826,6 +89942,41 @@
       ],
       "closure_profile_refs": [
         "FS-CLR-08"
+      ]
+    },
+    {
+      "id": "FS-MAL-38",
+      "claim_ref": "FS-CLM-38",
+      "primary_route_ref": "FS-RTE-01",
+      "required_route_refs": [
+        "FS-RTE-01"
+      ],
+      "closure_profile_refs": [
+        "FS-CLR-01",
+        "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-MAL-39",
+      "claim_ref": "FS-CLM-39",
+      "primary_route_ref": "FS-RTE-01",
+      "required_route_refs": [
+        "FS-RTE-01"
+      ],
+      "closure_profile_refs": [
+        "FS-CLR-01",
+        "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-MAL-40",
+      "claim_ref": "FS-CLM-40",
+      "primary_route_ref": "FS-RTE-01",
+      "required_route_refs": [
+        "FS-RTE-01"
+      ],
+      "closure_profile_refs": [
+        "FS-CLR-04"
       ]
     }
   ],
@@ -104026,7 +104177,10 @@
         "FS-CLM-27",
         "FS-CLM-35",
         "FS-CLM-36",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "assessments": [
         {
@@ -104089,7 +104243,10 @@
         "FS-CLM-31",
         "FS-CLM-32",
         "FS-CLM-35",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "assessments": [
         {
@@ -104154,7 +104311,10 @@
         "FS-CLM-32",
         "FS-CLM-33",
         "FS-CLM-34",
-        "FS-CLM-36"
+        "FS-CLM-36",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "assessments": [
         {
@@ -104202,7 +104362,8 @@
         "FS-CLM-05",
         "FS-CLM-06",
         "FS-CLM-33",
-        "FS-CLM-34"
+        "FS-CLM-34",
+        "FS-CLM-39"
       ],
       "assessments": [
         {
@@ -104260,7 +104421,8 @@
         "FS-CLM-31",
         "FS-CLM-32",
         "FS-CLM-33",
-        "FS-CLM-34"
+        "FS-CLM-34",
+        "FS-CLM-40"
       ],
       "assessments": [
         {
@@ -104367,7 +104529,8 @@
         "FS-CLM-29",
         "FS-CLM-30",
         "FS-CLM-31",
-        "FS-CLM-32"
+        "FS-CLM-32",
+        "FS-CLM-40"
       ],
       "assessments": [
         {
@@ -104511,7 +104674,10 @@
         "FS-CLM-27",
         "FS-CLM-35",
         "FS-CLM-36",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104529,7 +104695,8 @@
         "FS-CLM-22",
         "FS-CLM-23",
         "FS-CLM-24",
-        "FS-CLM-36"
+        "FS-CLM-36",
+        "FS-CLM-39"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104551,7 +104718,9 @@
         "FS-CLM-26",
         "FS-CLM-27",
         "FS-CLM-32",
-        "FS-CLM-36"
+        "FS-CLM-36",
+        "FS-CLM-38",
+        "FS-CLM-39"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104575,7 +104744,9 @@
         "FS-CLM-28",
         "FS-CLM-30",
         "FS-CLM-31",
-        "FS-CLM-36"
+        "FS-CLM-36",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104599,7 +104770,10 @@
         "FS-CLM-22",
         "FS-CLM-23",
         "FS-CLM-24",
-        "FS-CLM-36"
+        "FS-CLM-36",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104614,7 +104788,8 @@
         "FS-CLM-05",
         "FS-CLM-06",
         "FS-CLM-33",
-        "FS-CLM-34"
+        "FS-CLM-34",
+        "FS-CLM-39"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104649,7 +104824,10 @@
         "FS-CLM-33",
         "FS-CLM-34",
         "FS-CLM-36",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104670,7 +104848,14 @@
         "FS-CLM-15",
         "FS-CLM-16",
         "FS-CLM-17",
-        "FS-CLM-18"
+        "FS-CLM-18",
+        "FS-CLM-19",
+        "FS-CLM-20",
+        "FS-CLM-21",
+        "FS-CLM-31",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104700,7 +104885,10 @@
         "FS-CLM-31",
         "FS-CLM-32",
         "FS-CLM-35",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104724,7 +104912,10 @@
         "FS-CLM-29",
         "FS-CLM-30",
         "FS-CLM-31",
-        "FS-CLM-32"
+        "FS-CLM-32",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104759,7 +104950,10 @@
         "FS-CLM-33",
         "FS-CLM-34",
         "FS-CLM-36",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104786,7 +104980,9 @@
         "FS-CLM-30",
         "FS-CLM-31",
         "FS-CLM-33",
-        "FS-CLM-34"
+        "FS-CLM-34",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104800,7 +104996,9 @@
         "FS-CLM-25",
         "FS-CLM-26",
         "FS-CLM-27",
-        "FS-CLM-32"
+        "FS-CLM-32",
+        "FS-CLM-38",
+        "FS-CLM-39"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104825,7 +105023,8 @@
         "FS-CLM-31",
         "FS-CLM-32",
         "FS-CLM-33",
-        "FS-CLM-34"
+        "FS-CLM-34",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104847,7 +105046,10 @@
         "FS-CLM-10",
         "FS-CLM-27",
         "FS-CLM-35",
-        "FS-CLM-37"
+        "FS-CLM-37",
+        "FS-CLM-38",
+        "FS-CLM-39",
+        "FS-CLM-40"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -104862,7 +105064,8 @@
         "FS-CLM-05",
         "FS-CLM-06",
         "FS-CLM-33",
-        "FS-CLM-34"
+        "FS-CLM-34",
+        "FS-CLM-39"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -105050,6 +105253,2259 @@
       "result": "passed-with-recorded-limits",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-05",
+      "title": "Universal-standing coverage transition audit pending",
+      "source_version": "fs-ledger-2026-08-15-universal-standing-root-v1",
+      "scope_sha256": "b069372ab368c0dab39f6c15fa7d331546f32943df1f073d899a8368e773e514",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-15T12:53:38Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    }
+  ],
+  "constitutional_effects": [
+    {
+      "id": "FS-CCE-01",
+      "title": "Universal standing root",
+      "effect_key": "universal-standing-root",
+      "applicability": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-01",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "standing-status"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-38"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-09"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-02",
+        "FS-ROL-03"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-02",
+        "FS-ROL-03",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "trigger": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "immediate_access": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "record_boundary": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "independent_check": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "failure_default": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+          ]
+        }
+      },
+      "profile_terms": {
+        "standing-status": {
+          "holder": {
+            "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The standing status profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+            ]
+          },
+          "forbidden_preconditions": {
+            "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The standing status profile's forbidden preconditions term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+            ]
+          },
+          "immediate_access_route": {
+            "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The standing status profile's immediate access route term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+            ]
+          },
+          "challenge_correction": {
+            "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The standing status profile's challenge correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+            ]
+          },
+          "independent_check": {
+            "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. The standing status profile's independent check term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Standing attaches on birth, presence within jurisdiction or effective control, or first contact; the encounter handle is not civil identity. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-01-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-01-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 11. Jurisdiction-wide standing and the enforcement firewall",
+        "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every born child is a person with independent constitutional standing. General"
+      ]
+    },
+    {
+      "id": "FS-CCE-02",
+      "title": "Serve before reconciliation",
+      "effect_key": "serve-before-reconciliation",
+      "applicability": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-01",
+        "class-04"
+      ],
+      "profiles": [
+        "material-floor-access",
+        "fair-process-repair"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-39"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-04",
+        "FS-DOM-07",
+        "FS-DOM-09"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "trigger": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "immediate_access": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "record_boundary": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "independent_check": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "failure_default": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "minimum": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "accessibility": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "breach": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "remedy": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "appeal": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "audit": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          }
+        },
+        "fair-process-repair": {
+          "trigger": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's trigger term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "evidence": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's evidence term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "accessible_notice": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's accessible notice term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "advocate": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's advocate term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "hearing": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's hearing term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "appeal": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "repair": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's repair term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "end_or_review": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's end or review term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          },
+          "temporal_status": {
+            "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. The fair process repair profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Help, floor protection, process, and remedy proceed while a missing or disputed identity remains pending. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-02-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-02-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::This is written as a duty and a limit on power, not as a description of the"
+      ]
+    },
+    {
+      "id": "FS-CCE-03",
+      "title": "Service enforcement firewall",
+      "effect_key": "service-enforcement-firewall",
+      "applicability": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-01",
+        "class-02"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-39"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-04",
+        "FS-DOM-07",
+        "FS-DOM-09"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "trigger": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "immediate_access": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "record_boundary": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "independent_check": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "failure_default": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "challenge": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "correction": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "retention": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "deletion_control": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "external_assurance": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "action_duty": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          },
+          "temporal_status": {
+            "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A service route neither demands immigration or security status nor enrols, collects, or transmits it for enforcement. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-03-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-03-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::**The enforcement firewall.** Access to food, water, shelter, health and care,"
+      ]
+    },
+    {
+      "id": "FS-CCE-04",
+      "title": "Age-status continuity",
+      "effect_key": "age-status-continuity",
+      "applicability": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-01",
+      "secondary_class_refs": [
+        "class-07",
+        "class-04"
+      ],
+      "profiles": [
+        "standing-status",
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-38",
+        "FS-CLM-40"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-09",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-03"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-03",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "trigger": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "immediate_access": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "record_boundary": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "independent_check": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "failure_default": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+          ]
+        }
+      },
+      "profile_terms": {
+        "standing-status": {
+          "holder": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The standing status profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "forbidden_preconditions": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The standing status profile's forbidden preconditions term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "immediate_access_route": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The standing status profile's immediate access route term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "challenge_correction": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The standing status profile's challenge correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "independent_check": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The standing status profile's independent check term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          }
+        },
+        "consequential-record": {
+          "writer": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "permitted_basis": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "challenge": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "correction": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "retention": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "deletion_control": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "external_assurance": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "independent_recipient": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "action_duty": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          },
+          "temporal_status": {
+            "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Missing or disputed age evidence cannot create indefinite childhood or decide an expiring constitutional opportunity by delay. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-04-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-04-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Where a person has no prior uncontested status and exact age cannot immediately"
+      ]
+    },
+    {
+      "id": "FS-CCE-05",
+      "title": "Identity linking and correction",
+      "effect_key": "identity-link-correction",
+      "applicability": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-01",
+        "class-04"
+      ],
+      "profiles": [
+        "consequential-record",
+        "fair-process-repair"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-40"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "trigger": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "evidence_rule": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "bounded_effect": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "immediate_access": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "record_boundary": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "challenge_correction": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "independent_check": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "failure_default": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        },
+        "end_or_retention": {
+          "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "permitted_basis": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "challenge": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "correction": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "retention": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "deletion_control": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "external_assurance": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "independent_recipient": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "action_duty": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "temporal_status": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          }
+        },
+        "fair-process-repair": {
+          "trigger": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's trigger term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "evidence": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's evidence term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "accessible_notice": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's accessible notice term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "advocate": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's advocate term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "hearing": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's hearing term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "appeal": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "repair": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's repair term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "end_or_review": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's end or review term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          },
+          "temporal_status": {
+            "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. The fair process repair profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "An asserted identity link remains pending until source-backed independent checking; correction appends a contestable disposition. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-05-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-05-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/record-integrity-assurance-case.md::### RI-8 — Failure polarity, continuity, and recovery"
+      ]
+    },
+    {
+      "id": "FS-CCE-06",
+      "title": "Supported agency without a standing gate",
+      "effect_key": "supported-agency-standing",
+      "applicability": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-01",
+      "secondary_class_refs": [
+        "class-04",
+        "class-07"
+      ],
+      "profiles": [
+        "standing-status",
+        "fair-process-repair"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-38"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-09"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-03",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-03",
+        "FS-ROL-06",
+        "FS-ROL-08",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "trigger": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "immediate_access": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "record_boundary": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "independent_check": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "failure_default": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+          ]
+        }
+      },
+      "profile_terms": {
+        "standing-status": {
+          "holder": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The standing status profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "forbidden_preconditions": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The standing status profile's forbidden preconditions term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "immediate_access_route": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The standing status profile's immediate access route term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "challenge_correction": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The standing status profile's challenge correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "independent_check": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The standing status profile's independent check term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          }
+        },
+        "fair-process-repair": {
+          "trigger": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's trigger term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "evidence": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's evidence term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "accessible_notice": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's accessible notice term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "advocate": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's advocate term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "hearing": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's hearing term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "appeal": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "repair": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's repair term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "end_or_review": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's end or review term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          },
+          "temporal_status": {
+            "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. The fair process repair profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Disability, diagnosis, communication mode, dependency, or refusal of support never removes standing or the independent route. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-06-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-06-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Every adult enjoys legal capacity on an equal basis. Disability, diagnosis,"
+      ]
+    },
+    {
+      "id": "FS-CCE-07",
+      "title": "Death and status boundary",
+      "effect_key": "death-status-boundary",
+      "applicability": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-01",
+        "class-04"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-40"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-03",
+        "FS-ROL-34"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-03",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "trigger": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "immediate_access": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "record_boundary": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "independent_check": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "failure_default": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "permitted_basis": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "challenge": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "correction": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "retention": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "deletion_control": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "external_assurance": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "independent_recipient": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "action_duty": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          },
+          "temporal_status": {
+            "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Death is an external correctable finding and ends only an effect whose own source supplies that end; it does not transfer identity or guilt. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-07-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-07-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::Death and its medical determination are authenticated external findings, not"
+      ]
+    },
+    {
+      "id": "FS-CCE-08",
+      "title": "Provenance and accountability retention",
+      "effect_key": "provenance-accountability-retention",
+      "applicability": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content.",
+      "layer": "constitutional-invariant",
+      "status": "ratified-unimplemented",
+      "severity": "critical if omitted or record-gated",
+      "consequence": "A missing, disputed, or mislinked entry can erase protection or transfer an unsupported burden.",
+      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "closure_condition": "FS-CVF-011 reaches prose-landed with executable tests and current projections",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-01",
+        "class-04"
+      ],
+      "profiles": [
+        "consequential-record",
+        "fair-process-repair"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-40"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-01",
+        "FS-ROL-34"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A source-bound birth, presence, effective-control, first-contact, or consequential-record claim",
+        "A temporary encounter handle that does not claim civil identity",
+        "Independently reviewable evidence limited to the stated effect"
+      ],
+      "prohibited_inputs": [
+        "Registry absence, citizenship, documentation, capacity, diagnosis, or supporter status as a standing gate",
+        "An encounter handle treated as proof of civil identity",
+        "The retained T3 custody record borrowed as identity or standing evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The cited ratified decisions are the only constitutional source for this effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "trigger": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The effect starts only on the named birth, presence, contact, dispute, or consequential-record trigger.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. A supplied event or record is evidence of the bounded trigger, never proof of civil identity or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. No citizenship, liability, relationship, authority, or operational result follows beyond the stated effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. Registry presence, documents, citizenship, capacity, a supporter, and a successful identity match are forbidden gates.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "immediate_access": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. Standing, floor debt, process, and remedy are not postponed while record reconciliation is pending.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "record_boundary": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. Encounter handles and asserted links cannot import another record's liabilities, powers, relationships, or sanctions.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The affected person may petition directly and challenge, correct, and independently review each consequential use.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "independent_check": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. A consequential merge or adverse status requires an independent source-bounded check; the advocate is optional.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "failure_default": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. Uncertainty preserves standing and continuity, keeps identities separate, and withholds unsupported restrictive effects.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. Correction and status change preserve provenance and accountability; only effect-specific end rules terminate an effect.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "permitted_basis": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "challenge": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "correction": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "retention": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "deletion_control": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "external_assurance": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "independent_recipient": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "action_duty": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "temporal_status": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          }
+        },
+        "fair-process-repair": {
+          "trigger": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's trigger term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "evidence": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's evidence term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "accessible_notice": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's accessible notice term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "advocate": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's advocate term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "hearing": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's hearing term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "appeal": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "repair": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's repair term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "end_or_review": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's end or review term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          },
+          "temporal_status": {
+            "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. The fair process repair profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Reconciliation preserves source lineage, uncertainty, prior lawful effects, claims, remedies, and accountability without fabricating or resurrecting content. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-08-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to gate or transfer this effect through a forbidden identity premise; validation must refuse it.",
+        "source_refs": [
+          "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-08-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove or mutate the direct-effect root and show the named standing, continuity, or accountability consequence fails safely.",
+        "source_refs": [
+          "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows.",
+      "source_refs": [
+        "new-book-plans/record-integrity-assurance-case.md::Recovery may reconstruct only from independently held evidence, must mark uncertainty,"
+      ]
     }
   ]
 }

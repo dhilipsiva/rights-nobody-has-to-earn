@@ -3,9 +3,9 @@
 
 # Full-Society Domain-and-Layer Ledger — Generated Report
 
-**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
+**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-universal-standing-root-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -40,7 +40,7 @@ Per-condition status, generated from the source and echoing the closure conditio
 - **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
 - **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
-- **met-mechanically** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: a current-source repository adversarial audit covers the declared criteria, exact checker controls, command chain, and every Gate-A-applicable defect disposition
+- **unmet** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: no current-source repository adversarial audit exists
 - **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; this satisfies Gate A's envelope precondition. Calibration and values remain Book 2 Gate D work, and operational assurance and remedied resolution still require them
 
 ## The five layers
@@ -527,20 +527,34 @@ Evidence ceiling: Coverage contracts and pre-drafting checks only; no operation,
 | FS-POW-209 External sanctions measure | external-sanctions-measure | class-06; ordinary-public-power | FS-CLM-30; FS-DOM-10 | coverage-ready — For External sanctions measure, the holder may produce only the direct legal effect described by the source: One ordinary-law external sanctions measure, separately reviewable and unable to deprive a population of the floor or humanitarian access. | planned/planned | coverage-only-not-formalized; Book 2 may design staffing, capacity, workflow, and evidence custody for External sanctions measure; no operation, delivery, feasibility, liveness, or calibration follows from this card. |
 | FS-POW-210 Case-bound current Court custody authority | formal-active-custody | class-04; ordinary-public-power, coercive-protective | FS-CLM-11, FS-CLM-17; FS-DOM-07, FS-DOM-06 | coverage-ready — For Case-bound current Court custody authority, the holder may produce only the direct legal effect described by the source: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power. | executable/executable | implemented-current-formal; Book 2 may design staffing, capacity, workflow, and evidence custody for Case-bound current Court custody authority; no operation, delivery, feasibility, liveness, or calibration follows from this card. |
 
+Constitutional non-power effects:
+
+| Effect | Class / profiles | Claims / domains | Readiness | Boundary |
+| --- | --- | --- | --- | --- |
+| FS-CCE-01 Universal standing root | class-01; standing-status | FS-CLM-38; FS-DOM-01, FS-DOM-09 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-02 Serve before reconciliation | class-02; material-floor-access, fair-process-repair | FS-CLM-39; FS-DOM-01, FS-DOM-04, FS-DOM-07, FS-DOM-09 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-03 Service enforcement firewall | class-07; consequential-record | FS-CLM-39; FS-DOM-01, FS-DOM-04, FS-DOM-07, FS-DOM-09 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-04 Age-status continuity | class-01; standing-status, consequential-record | FS-CLM-38, FS-CLM-40; FS-DOM-01, FS-DOM-09, FS-DOM-08 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-05 Identity linking and correction | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-06 Supported agency without a standing gate | class-01; standing-status, fair-process-repair | FS-CLM-38; FS-DOM-01, FS-DOM-09 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-07 Death and status boundary | class-07; consequential-record | FS-CLM-40; FS-DOM-01, FS-DOM-08 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-08 Provenance and accountability retention | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | coverage-only-not-formalized; planned/planned | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+
 Coverage-family drafting gate:
 
-| Family | State | Cards | Formal statements | Drafting block |
+| Family | State | Powers / effects | Formal statements | Drafting block |
 | --- | --- | ---: | ---: | --- |
-| FS-CVF-001 Existing constitutional kernel | prose-landed | 0 | 392 | Any changed or unassigned formal statement fails before generation; this historical kernel gains no new power or operational claim. |
-| FS-CVF-002 Implemented T1, T2, and T3 temporal family | prose-landed | 1 | 266 | The retained T3 path stays case, source, lease, and window bound; no other power may borrow its record. |
-| FS-CVF-003 State Form And Political Membership coverage batch | coverage-ready | 51 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-004 Time Model coverage batch | coverage-ready | 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-005 Substantive Equality And Anti Subordination coverage batch | coverage-ready | 9 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-006 Economic Pluralism And Protected Private Sphere coverage batch | coverage-ready | 28 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-007 Family Dependency Reproduction And Collective Plurality coverage batch | coverage-ready | 31 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-008 Ecological Commons And Non Human Animal coverage batch | coverage-ready | 40 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-009 Public Safety Defence Emergency And External Power coverage batch | coverage-ready | 50 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
-| FS-CVF-010 Current Formal Constitution coverage batch | coverage-ready | 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-001 Existing constitutional kernel | prose-landed | 0 / 0 | 392 | Any changed or unassigned formal statement fails before generation; this historical kernel gains no new power or operational claim. |
+| FS-CVF-002 Implemented T1, T2, and T3 temporal family | prose-landed | 1 / 0 | 266 | The retained T3 path stays case, source, lease, and window bound; no other power may borrow its record. |
+| FS-CVF-003 State Form And Political Membership coverage batch | coverage-ready | 51 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-004 Time Model coverage batch | coverage-ready | 0 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-005 Substantive Equality And Anti Subordination coverage batch | coverage-ready | 9 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-006 Economic Pluralism And Protected Private Sphere coverage batch | coverage-ready | 28 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-007 Family Dependency Reproduction And Collective Plurality coverage batch | coverage-ready | 31 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-008 Ecological Commons And Non Human Animal coverage batch | coverage-ready | 40 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-009 Public Safety Defence Emergency And External Power coverage batch | coverage-ready | 50 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-010 Current Formal Constitution coverage batch | coverage-ready | 0 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
+| FS-CVF-011 Universal standing root and identity boundary | coverage-ready | 0 / 8 | 0 | Coverage is complete; formal rules, pins, and counterfactuals must land before any claim-bearing prose. |
 
 Contract templates:
 
@@ -1216,6 +1230,9 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-CLM-35 The voluntary sphere stays unprescribed | protected-private-civic-freedom | Specified | FS-RTE-01 | none | an explicit non-prescription disposition is the coverage; it authorises no rule, record, operator, or success certification | — |
 | FS-CLM-36 Recognition mints only through the guarded doors | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the three doors and the surviving wrongdoer rule | — |
 | FS-CLM-37 An ordinary reader comes away with a reliably balanced view | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-06 | none | the tested audience within the disclosed sampling and method limits, per the ratified reader-evidence protocol; the route is neither built nor available | — |
+| FS-CLM-38 Universal standing begins before registry identity | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified standing roots and the formal first-contact, jurisdiction, effective-control, and birth inputs; the input remains externally supplied and does not authenticate civil identity | — |
+| FS-CLM-39 Service precedes identity reconciliation | constitutional-invariant | Specified | FS-RTE-01 | safety | the normative serve-first duty and enforcement firewall; actual delivery, intake, staffing, and record operation remain outside the claim | — |
+| FS-CLM-40 Identity correction preserves standing and accountability | constitutional-invariant | Specified | FS-RTE-01 | safety | source-specified failure polarity, challenge, correction, retention, and non-transfer limits; no database, matching algorithm, or recovery system is supplied | — |
 
 ## Required bodies
 
@@ -1404,11 +1421,11 @@ Residual citations bind every sibling residual pool to these rows under the live
 
 ## Resolution receipts
 
-Every receipt records its eligible gate beside the ledger's standing gate status (passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
+Every receipt records its eligible gate beside the ledger's standing gate status (not-passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
 
 ### FS-RCP-01 — The student clawback is deleted, and the deletion is watched
 
-- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A loss was recorded against a student for a teacher's adjudicated fraud — negative scoring of a person who did nothing.
 - Hostile witness: The old :defect pin held lose(Points, Cira) TRUE for as long as the rule stood.
 - Why it failed: The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.
@@ -1421,7 +1438,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-02 — The placement alarm is keyed on the placement act
 
-- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The alarm fired on eligibility rather than on any placement act, so it rang on a released man in his own house.
 - Hostile witness: The old marker's pins held the wrong-subject firing under a :defect directive.
 - Why it failed: err/2 read the eligibility combination instead of a reported placement.
@@ -1434,7 +1451,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-03 — The void now requires a docket entry naming the person
 
-- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: Anything recorded as touching a protected item was void — including a person who was never accused of anything.
 - Hostile witness: Jala, never accused and never examined, was voidable through the protected-item route.
 - Why it failed: The voiding rule read the protected-item touch without any docket precondition.
@@ -1447,7 +1464,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-04 — The third door closes on voiding, enacted not disclosed
 
-- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A carried-void, penless person was paid for examinations the same voiding made incapable of counting toward anything.
 - Hostile witness: The pre-guard constitution minted recognition for the voided examiner, and exactly those reward pins flip against it.
 - Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
@@ -1460,7 +1477,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-05 — The Esa passage tells the truth about Koa
 
-- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The chapter claimed Koa examined Esa with the credential; the record holds a personhood entry and one documented fact — no judging, no seat, no pen.
 - Hostile witness: Both false clauses, quoted back by a hostile review as the design's own confession.
 - Why it failed: The prose asserted acts the record never held, and no pin guarded the mismatch.
@@ -1473,7 +1490,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 4; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 5; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -1481,8 +1498,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 4; curren
 | FS-SAU-02 | fs-ledger-2026-08-15-mechanical-gate-a-candidate | `37ae22f6050eb0781868146f197045b3eac06fef65204f17b329ce962a18ce7d` | 2026-08-15T04:34:25Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-03 | fs-ledger-2026-08-15-mechanical-gate-a-candidate | `2eabe2892983d3277fcbfb6741fe1badf8fa1df05fd81546e440940ee1f93ef5` | 2026-08-15T06:15:00Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-04 | fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution | `e0e4c0fc4c367aa5535bf39359b01409bfd22acf679022a4b26f5c81a78d7458` | 2026-08-15T11:24:21Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-05 | fs-ledger-2026-08-15-universal-standing-root-v1 | `b069372ab368c0dab39f6c15fa7d331546f32943df1f073d899a8368e773e514` | 2026-08-15T12:53:38Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `e0e4c0fc4c367aa5535bf39359b01409bfd22acf679022a4b26f5c81a78d7458`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `b069372ab368c0dab39f6c15fa7d331546f32943df1f073d899a8368e773e514`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

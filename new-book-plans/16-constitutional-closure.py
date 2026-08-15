@@ -71,7 +71,7 @@ READER_OWNER_REF = (
 )
 INTRINSIC_PROFILE_CLAIMS = {
     "floor-lifecycle": {
-        "FS-CLM-04", "FS-CLM-05", "FS-CLM-06",
+        "FS-CLM-04", "FS-CLM-05", "FS-CLM-06", "FS-CLM-38", "FS-CLM-39",
     },
     "public-power-lifecycle": {
         "FS-CLM-15", "FS-CLM-17", "FS-CLM-18", "FS-CLM-28",
@@ -83,6 +83,7 @@ INTRINSIC_PROFILE_CLAIMS = {
     },
     "record-lifecycle": {
         "FS-CLM-19", "FS-CLM-20", "FS-CLM-21", "FS-CLM-31",
+        "FS-CLM-38", "FS-CLM-39", "FS-CLM-40",
     },
     "democratic-floor-corridor": {
         "FS-CLM-10", "FS-CLM-14", "FS-CLM-15", "FS-CLM-16",
@@ -118,6 +119,7 @@ INTRINSIC_COMPONENT_ALLOWED_REFS = {
     ("reader-claim-ownership", "evidentiary-owner"): {"FS-RTE-06"},
 }
 COMPOSITE_MODEL_CLAIMS = {"FS-CLM-24"}
+CONSTITUTIONAL_FLOOR_CLAIMS = {"FS-CLM-38", "FS-CLM-39"}
 
 LOOP_HAZARDS = ("unbounded", "self-certifying", "deadlocking", "single-veto", "cascade")
 CLOSURE_STATUSES = {"bounded-unresolved", "open-blocking"}
@@ -141,6 +143,7 @@ def source_ids(source):
     for key in (
         "domains", "legacy_rows", "claims", "bodies", "routes",
         "external_assumptions", "envelope", "roles", "powers",
+        "constitutional_effects", "coverage_families",
         "dependencies", "scenarios", "thresholds", "defects", "receipts",
         "closure_requirement_profiles", "closure_claim_contracts",
         "model_allocations", "function_allocations", "dependency_loops",
@@ -280,8 +283,23 @@ def expanded_profiles(source):
             )
 
     legacy = by_id(source, "legacy_rows")
-    if tuple(legacy["FS-LGR-02"]["split_claim_refs"]) != out["floor-lifecycle"]["claims"]:
-        raise ClosureAuditError("floor profile must equal reviewed FS-LGR-02 split claims")
+    effect_claims = {
+        claim_ref
+        for effect in source.get("constitutional_effects", [])
+        for claim_ref in effect["affected_claim_refs"]
+    }
+    if not CONSTITUTIONAL_FLOOR_CLAIMS <= effect_claims:
+        raise ClosureAuditError(
+            "constitutional floor claims must be bound by reviewed effects"
+        )
+    expected_floor_claims = (
+        set(legacy["FS-LGR-02"]["split_claim_refs"]) | CONSTITUTIONAL_FLOOR_CLAIMS
+    )
+    if set(out["floor-lifecycle"]["claims"]) != expected_floor_claims:
+        raise ClosureAuditError(
+            "floor profile must equal the reviewed FS-LGR-02 split claims plus "
+            "source-bound constitutional standing/material-access effects"
+        )
     book2 = {c["id"] for c in source["claims"] if c["layer"] == "book-2-operation"}
     if set(out["book-seam"]["claims"]) != book2:
         raise ClosureAuditError("book-seam profile must cover every Book 2 claim")
@@ -350,6 +368,12 @@ def validate_profile_bindings(source, profiles):
     require_dependencies(source, p["record-lifecycle"]["components"]["writer"],
                          "record.writer", {"externally-assumed", "operationally-supplied"},
                          {"resources", "services", "information"}, {"record"})
+    if (source.get("constitutional_effects")
+            and "FS-DEP-26" not in p["record-lifecycle"]["components"]["writer"]):
+        raise ClosureAuditError(
+            "constitutional identity effects require the reviewed registration "
+            "and vital-record writer edge"
+        )
     for component in ("challenge", "correction"):
         require_dependencies(source, p["record-lifecycle"]["components"][component],
                              f"record.{component}", {"constitutionally-guaranteed"}, {"claims"},
@@ -1255,10 +1279,16 @@ def negative_controls(source):
         lambda s: reintroduce_dead_component(
             s, "floor-lifecycle", "continuity", "FS-DEP-57"
         ), "no claim-scoped consumer")
-    add("unused record writer cannot be reintroduced",
-        lambda s: reintroduce_dead_component(
-            s, "record-lifecycle", "writer", "FS-DEP-26"
-        ), "no claim-scoped consumer")
+    add("constitutional record writer cannot be removed", lambda s: (
+        next(
+            component for component in profile(s, "record-lifecycle")["components"]
+            if component["component"] == "writer"
+        )["record_refs"].remove("FS-DEP-26"),
+        next(
+            dependency for dependency in s["dependencies"]
+            if dependency["id"] == "FS-DEP-26"
+        )["closure_component_refs"].remove("FS-CLR-04:writer"),
+    ), "constitutional identity effects require")
     add("unused floor-boundary edge cannot be reintroduced",
         lambda s: reintroduce_dead_component(
             s, "democratic-floor-corridor", "floor-boundary", "FS-DEP-11"
