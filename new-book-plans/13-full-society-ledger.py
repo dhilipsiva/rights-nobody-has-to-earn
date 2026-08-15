@@ -232,16 +232,51 @@ POWER_PROFILE_FIELDS = {
     ],
 }
 
-POWER_CONTRACT_KEYS = [
+LEGACY_POWER_CONTRACT_KEYS = [
     "lawful_source", "trigger", "evidence_rule", "bounded_effect",
     "public_reasons", "conflict_rule", "non_delegable_limit",
     "independent_review", "appeal", "correction", "remedy",
     "end_condition", "temporal_status", "failure_polarity",
     "required_separation_pairs",
 ]
+POWER_CONTRACT_TERM_KEYS = LEGACY_POWER_CONTRACT_KEYS[:-1]
 POWER_TEMPLATE_CONTRACT_KEYS = [
     "current_source", "scope", "review", "renewal_or_end", "challenge",
     "fail_closed_polarity", "frozen_record_limit", "book2_liveness_limit",
+]
+TERM_BASES = {"source-specified", "current-derived", "bounded-delegation"}
+COVERAGE_SOURCE_FAMILY_ORDER = list(POWER_SOURCE_FAMILY_ORDER)
+COVERAGE_POPULATION_STATUSES = ["foundation", "partial", "complete"]
+COVERAGE_FAMILY_STATES = [
+    "planned", "coverage-ready", "formalized", "prose-landed",
+]
+COVERAGE_DEFERRAL_TYPE = "coverage-contracts"
+COVERAGE_EVIDENCE_CEILING = (
+    "Coverage contracts and pre-drafting checks only; no operation, delivery, "
+    "feasibility, liveness, reader response, external truth, or calibration follows."
+)
+POWER_CLASS_IDS = [f"class-{i:02d}" for i in range(1, 11)]
+CARD_V7_EXTRA_KEYS = [
+    "manifest_key", "source_family", "posture", "evidence_kind",
+    "primary_class_ref", "secondary_class_refs", "profiles",
+    "domain_refs", "affected_claim_refs", "holder_body_refs",
+    "holder_role_refs", "affected_role_refs", "checking_role_refs",
+    "route_ref", "overlay", "public_claim_restriction",
+    "structural_wall_refs", "related_power_refs", "enforcement_mechanism",
+    "book2_owner_ref", "contract_terms", "profile_terms",
+    "required_separation_pairs", "permitted_inputs", "prohibited_inputs",
+    "permitted_downstream_effects", "evidence_authority",
+    "negative_test", "counterfactual", "part_v_status",
+    "book2_handoff", "source_refs",
+]
+CARD_LEGACY_EXTRA_KEYS = [
+    "manifest_key", "source_family", "posture", "evidence_kind",
+    "profiles", "domain_refs", "affected_claim_refs",
+    "holder_body_refs", "holder_role_refs", "affected_role_refs",
+    "checking_role_refs", "route_ref", "overlay",
+    "public_claim_restriction", "structural_wall_refs",
+    "related_power_refs", "enforcement_mechanism", "book2_owner_ref",
+    "contract", "profile_contracts", "source_refs",
 ]
 POWER_FUNCTIONS = [
     "decisive-fact-writer", "decider", "executor", "auditor",
@@ -387,7 +422,8 @@ READER_PROJECTION_POPULATIONS = (
     "domains", "legacy_rows", "claims", "bodies", "routes",
     "external_assumptions", "envelope", "roles", "role_omissions",
     "powers", "power_contract_templates", "power_refusals",
-    "power_crosswalk_dispositions", "dependencies", "dependency_loops",
+    "power_crosswalk_dispositions", "coverage_families",
+    "dependencies", "dependency_loops",
     "refused_flows",
     "scenarios", "scenario_omissions", "thresholds", "defects",
     "receipts", "review_commissions", "proposals", "review_events",
@@ -742,6 +778,7 @@ RECORD_ARRAYS = [
     "power_contract_templates",
     "power_refusals",
     "power_crosswalk_dispositions",
+    "coverage_families",
     "closure_requirement_profiles",
     "closure_claim_contracts",
     "model_allocations",
@@ -767,6 +804,7 @@ ARRAY_RECORD_TYPES = {
     "power_contract_templates": "power_contract_template",
     "power_refusals": "power_refusal",
     "power_crosswalk_dispositions": "power_crosswalk_disposition",
+    "coverage_families": "coverage_family",
     "dependencies": "dependency",
     "scenarios": "scenario",
     "thresholds": "threshold",
@@ -1020,8 +1058,8 @@ DOMAIN_BUCKETS = [
 def validate_header(src: dict):
     if src.get("spdx") != "CC-BY-4.0":
         raise LedgerError('reviewed source must declare "spdx": "CC-BY-4.0"')
-    if type(src.get("schema_version")) is not int or src["schema_version"] != 6:
-        raise LedgerError("schema_version must be the integer 6")
+    if type(src.get("schema_version")) is not int or src["schema_version"] != 7:
+        raise LedgerError("schema_version must be the integer 7")
     require_str(src, "title", "header")
     if src.get("status") != EXPECTED_STATUS:
         raise LedgerError(f"status must be {EXPECTED_STATUS}")
@@ -1100,11 +1138,17 @@ def _power_manifest_rows():
 def _power_profiles(row: dict):
     key = row["provisional_key"]
     family = row["source_family"]
-    profiles = {"ordinary-public-power"}
-    if family == "substantive-equality-and-anti-subordination":
+    profiles = set()
+    if family == "state-form-and-political-membership":
+        profiles.add("ordinary-public-power")
+        if any(token in key for token in (
+                "certif", "appointment", "qualification", "membership",
+                "election", "selection", "succession", "record")):
+            profiles.add("consequential-record")
+    elif family == "substantive-equality-and-anti-subordination":
         profiles.add("liberty-power-limit")
         if any(token in key for token in (
-                "diagnostic", "finding", "determination", "review")):
+                "diagnostic", "finding", "determination", "review", "record")):
             profiles.add("consequential-record")
     elif family == "economic-pluralism-and-protected-private-sphere":
         profiles.add("economic-private-power-limit")
@@ -1114,7 +1158,7 @@ def _power_profiles(row: dict):
         profiles.add("consequential-status-supported-decision")
         if any(token in key for token in (
                 "collective", "minority", "indigenous", "title", "consent",
-                "customary")):
+                "customary", "self-government")):
             profiles.add("collective-authority-title-consent")
     elif family == "ecological-commons-and-non-human-animal":
         profiles.add("non-human-animal" if key.startswith("animal-")
@@ -1128,16 +1172,74 @@ def _power_profiles(row: dict):
                 "expulsion", "extradition", "transfer", "deployment",
                 "defensive", "intelligence", "surveillance", "weapon")):
             profiles.add("coercive-protective")
+        else:
+            profiles.add("ordinary-public-power")
         if "intelligence" in key or "record" in key:
             profiles.add("consequential-record")
-    elif family == "state-form-and-political-membership":
-        if any(token in key for token in (
-                "certif", "appointment", "qualification", "membership",
-                "election", "selection", "succession")):
-            profiles.add("consequential-record")
-    if key == RETAINED_FORMAL_KEY:
-        profiles.add("coercive-protective")
+    elif key == RETAINED_FORMAL_KEY:
+        profiles.update(("ordinary-public-power", "coercive-protective"))
     return [p for p in POWER_PROFILE_ORDER if p in profiles]
+
+
+def _power_primary_class(row: dict):
+    key = row["provisional_key"]
+    family = row["source_family"]
+    if key == RETAINED_FORMAL_KEY:
+        return "class-04"
+    if family == "state-form-and-political-membership":
+        if any(t in key for t in ("election", "elector", "amendment", "ballot")):
+            return "class-05"
+        if any(t in key for t in (
+                "membership", "residence", "local", "regional",
+                "portability", "secession", "competence")):
+            return "class-08"
+        return "class-06"
+    if family == "substantive-equality-and-anti-subordination":
+        return "class-01"
+    if family == "economic-pluralism-and-protected-private-sphere":
+        return "class-02" if "scarcity" in key else "class-03"
+    if family == "family-dependency-reproduction-and-collective-plurality":
+        if any(t in key for t in (
+                "collective", "minority", "indigenous", "title",
+                "consent", "customary", "self-government")):
+            return "class-08"
+        return "class-01" if "adulthood" in key else "class-04"
+    if family == "ecological-commons-and-non-human-animal":
+        return "class-10" if key.startswith("animal-") else "class-09"
+    if family == "public-safety-defence-emergency-and-external-power":
+        if "intelligence" in key or "surveillance" in key:
+            return "class-07"
+        if any(t in key for t in (
+                "arrest", "detention", "custod", "force", "search",
+                "seizure", "border", "expulsion", "extradition", "transfer")):
+            return "class-04"
+        return "class-06"
+    raise LedgerError(f"no primary class for {key}")
+
+
+PROFILE_SECONDARY_CLASSES = {
+    "ordinary-public-power": "class-06",
+    "liberty-power-limit": "class-01",
+    "coercive-protective": "class-04",
+    "emergency": "class-06",
+    "commons-future-condition": "class-09",
+    "non-human-animal": "class-10",
+    "collective-authority-title-consent": "class-08",
+    "consequential-status-supported-decision": "class-04",
+    "economic-private-power-limit": "class-03",
+    "physical-scarcity": "class-02",
+    "consequential-record": "class-07",
+}
+
+
+def _power_secondary_classes(row, profiles):
+    primary = _power_primary_class(row)
+    result = []
+    for profile in profiles:
+        class_ref = PROFILE_SECONDARY_CLASSES[profile]
+        if class_ref != primary and class_ref not in result:
+            result.append(class_ref)
+    return result
 
 
 def _power_required_separations(profiles):
@@ -1190,6 +1292,340 @@ def _manifest_expectations(completed):
         "crosswalks": [r["provisional_key"] for r in rows
                        if r["disposition"] == "existing-formal-crosswalk"],
     }
+
+
+
+
+def _assertion_statement_fingerprints():
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "new-book-plans/7-assertion-surface.py"),
+         "--fingerprints"],
+        cwd=ROOT, check=False, capture_output=True, text=True,
+    )
+    if proc.returncode != 0:
+        raise LedgerError(
+            "assertion statement fingerprints failed: " + proc.stderr.strip())
+    try:
+        payload = json.loads(proc.stdout)
+        rows = payload["statement_fingerprints"]
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        raise LedgerError("assertion statement fingerprints are malformed") from exc
+    required = {"id", "statement_sha256", "occurrence", "kind", "statement"}
+    if any(set(row) != required for row in rows):
+        raise LedgerError("assertion statement fingerprint schema drifted")
+    return rows
+
+
+def validate_coverage_population(src: dict):
+    population = src.get("coverage_population")
+    if not isinstance(population, dict):
+        raise LedgerError("coverage_population must be an object")
+    exact_keys(
+        population,
+        ["status", "completed_source_families", "expected_final_card_count",
+         "legacy_fields_permitted_until_complete", "evidence_ceiling"],
+        "coverage_population",
+    )
+    completed = population["completed_source_families"]
+    if (not isinstance(completed, list)
+            or completed != COVERAGE_SOURCE_FAMILY_ORDER[:len(completed)]):
+        raise LedgerError(
+            "coverage_population.completed_source_families must be an exact prefix")
+    expected_status = (
+        "foundation" if not completed else
+        "complete" if completed == COVERAGE_SOURCE_FAMILY_ORDER else "partial"
+    )
+    if population["status"] != expected_status:
+        raise LedgerError(
+            f"coverage_population.status must be {expected_status!r}")
+    if population["expected_final_card_count"] != 210:
+        raise LedgerError("coverage_population final card count must remain 210")
+    if population["legacy_fields_permitted_until_complete"] is not True:
+        raise LedgerError("transitional legacy permission must remain explicit")
+    if population["evidence_ceiling"] != COVERAGE_EVIDENCE_CEILING:
+        raise LedgerError("coverage_population evidence ceiling drifted")
+    coverage_deferrals = [
+        row for row in src["deferred_populations"]
+        if row["record_type"] == COVERAGE_DEFERRAL_TYPE
+    ]
+    if completed == COVERAGE_SOURCE_FAMILY_ORDER:
+        if coverage_deferrals:
+            raise LedgerError(
+                "complete coverage may not retain the coverage-contract deferral")
+    elif len(coverage_deferrals) != 1:
+        raise LedgerError(
+            "partial coverage requires exactly one coverage-contract deferral")
+    return completed
+
+
+def _validate_artifact_paths(values, context, allow_empty=False):
+    if (not isinstance(values, list) or len(values) != len(set(values))
+            or (not values and not allow_empty)):
+        raise LedgerError(f"{context} must be a duplicate-free artifact list")
+    for value in values:
+        if not isinstance(value, str) or not value:
+            raise LedgerError(f"{context} contains a blank artifact")
+        path = value.split("::", 1)[0]
+        if not (ROOT / path).is_file():
+            raise LedgerError(f"{context} names missing artifact {path}")
+
+
+def validate_coverage_families(src: dict, ids: dict):
+    completed = src["coverage_population"]["completed_source_families"]
+    rows = src.get("coverage_families")
+    if not isinstance(rows, list) or not rows:
+        raise LedgerError("coverage_families must be a non-empty list")
+    statements = _assertion_statement_fingerprints()
+    statement_ids = [row["id"] for row in statements]
+    assigned_statements = []
+    assigned_cards = []
+    assigned_templates = []
+    assigned_refusals = []
+    assigned_crosswalks = []
+    for i, rec in enumerate(rows):
+        ctx = f"coverage_families[{i}] ({rec.get('id', '?')})"
+        exact_keys(
+            rec,
+            ["id", "title", "state", "source_family_refs", "card_refs",
+             "template_refs", "refusal_refs", "crosswalk_refs",
+             "formal_statement_refs", "pin_group_refs",
+             "counterfactual_refs", "prose_refs", "part_v_refs",
+             "blocked_before_drafting", "source_refs"],
+            ctx,
+        )
+        if rec["state"] not in COVERAGE_FAMILY_STATES:
+            raise LedgerError(f"{ctx}: invalid coverage-family state")
+        for field, array_name in (
+                ("card_refs", "powers"),
+                ("template_refs", "power_contract_templates"),
+                ("refusal_refs", "power_refusals"),
+                ("crosswalk_refs", "power_crosswalk_dispositions")):
+            _typed_ref_list(rec[field], array_name, ids, f"{ctx}.{field}",
+                            allow_empty=True)
+        families = rec["source_family_refs"]
+        if (not isinstance(families, list)
+                or len(families) != len(set(families))
+                or any(f not in COVERAGE_SOURCE_FAMILY_ORDER for f in families)):
+            raise LedgerError(f"{ctx}: source-family refs are invalid")
+        formal_refs = rec["formal_statement_refs"]
+        if (not isinstance(formal_refs, list)
+                or len(formal_refs) != len(set(formal_refs))
+                or any(ref not in statement_ids for ref in formal_refs)):
+            raise LedgerError(f"{ctx}: formal statement refs are invalid")
+        _validate_artifact_paths(
+            rec["pin_group_refs"], f"{ctx}.pin_group_refs", allow_empty=True)
+        _validate_artifact_paths(
+            rec["counterfactual_refs"], f"{ctx}.counterfactual_refs",
+            allow_empty=True)
+        _validate_artifact_paths(
+            rec["prose_refs"], f"{ctx}.prose_refs", allow_empty=True)
+        _validate_artifact_paths(
+            rec["part_v_refs"], f"{ctx}.part_v_refs", allow_empty=True)
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        require_str(rec, "blocked_before_drafting", ctx)
+        if rec["state"] == "planned":
+            if any(rec[field] for field in (
+                    "card_refs", "template_refs", "refusal_refs",
+                    "crosswalk_refs", "formal_statement_refs",
+                    "pin_group_refs", "counterfactual_refs",
+                    "prose_refs", "part_v_refs")):
+                raise LedgerError(
+                    f"{ctx}: planned family cannot contain formal rules, pins, or prose")
+        if rec["state"] in {"coverage-ready", "formalized", "prose-landed"}:
+            missing = [
+                family for family in families if family not in completed
+            ]
+            if missing:
+                raise LedgerError(
+                    f"{ctx}: family is coverage-ready before cards: {missing}")
+        if rec["state"] in {"formalized", "prose-landed"}:
+            if not formal_refs or not rec["pin_group_refs"] or not rec["counterfactual_refs"]:
+                raise LedgerError(
+                    f"{ctx}: formalized family requires statements, pins, and counterfactuals")
+            for power_ref in rec["card_refs"]:
+                power = next(row for row in src["powers"]
+                             if row["id"] == power_ref)
+                for key in ("negative_test", "counterfactual"):
+                    if power[key]["status"] != "executable":
+                        raise LedgerError(
+                            f"{ctx}: formalized cards require executable {key}")
+        elif formal_refs or rec["pin_group_refs"] or rec["prose_refs"]:
+            raise LedgerError(
+                f"{ctx}: formal rules, pins, or prose precede formalization")
+        if rec["state"] == "prose-landed":
+            if not rec["prose_refs"] or not rec["part_v_refs"]:
+                raise LedgerError(
+                    f"{ctx}: prose-landed needs chapter and Part V references")
+        elif rec["part_v_refs"]:
+            raise LedgerError(f"{ctx}: Part V prose precedes formalization")
+        assigned_statements.extend(formal_refs)
+        assigned_cards.extend(rec["card_refs"])
+        assigned_templates.extend(rec["template_refs"])
+        assigned_refusals.extend(rec["refusal_refs"])
+        assigned_crosswalks.extend(rec["crosswalk_refs"])
+    if len(assigned_statements) != len(set(assigned_statements)):
+        raise LedgerError("a formal statement belongs to multiple coverage families")
+    if (set(assigned_statements) != set(statement_ids)
+            or len(assigned_statements) != len(statement_ids)):
+        missing = sorted(set(statement_ids) - set(assigned_statements))
+        extra = sorted(set(assigned_statements) - set(statement_ids))
+        raise LedgerError(
+            f"formal statement assignment is not exact; missing={missing[:3]} "
+            f"extra={extra[:3]}")
+    manifest_family = {
+        row["provisional_key"]: row["source_family"]
+        for row in _power_manifest_rows()
+    }
+    def converted_records(records):
+        return [
+            row["id"] for row in records
+            if manifest_family[row["manifest_key"]] in completed
+        ]
+    for values, expected, name in (
+            (assigned_cards, converted_records(src["powers"]), "cards"),
+            (assigned_templates,
+             converted_records(src["power_contract_templates"]), "templates"),
+            (assigned_refusals,
+             converted_records(src["power_refusals"]), "refusals"),
+            (assigned_crosswalks,
+             converted_records(src["power_crosswalk_dispositions"]),
+             "crosswalks")):
+        if sorted(values) != sorted(expected) or len(values) != len(set(values)):
+            raise LedgerError(
+                f"coverage families must partition current {name} exactly once")
+
+
+def _power_claim_refs(row: dict):
+    key = row["provisional_key"]
+    family = row["source_family"]
+    refs = []
+    def add(*values):
+        for value in values:
+            if value not in refs:
+                refs.append(value)
+    if key == RETAINED_FORMAL_KEY:
+        add("FS-CLM-11", "FS-CLM-17")
+    elif family == "state-form-and-political-membership":
+        if any(t in key for t in (
+                "competence", "regional", "subsidiarity", "political-home",
+                "secession", "local-", "portability", "membership")):
+            add("FS-CLM-26")
+        if any(t in key for t in (
+                "assembly", "election", "elector", "council", "confidence",
+                "president", "amendment", "initiative", "recall", "budget",
+                "revenue", "spending", "secession", "promulgation")):
+            add("FS-CLM-15")
+        if any(t in key for t in (
+                "court", "relief", "invalidation", "panel", "appointment",
+                "qualification", "executive", "oversight", "office",
+                "caretaker", "successor", "administration", "bill-return")):
+            add("FS-CLM-18")
+        if not refs:
+            add("FS-CLM-18")
+    elif family == "substantive-equality-and-anti-subordination":
+        add("FS-CLM-02")
+        if any(t in key for t in ("diagnostic", "systemic", "determination")):
+            add("FS-CLM-08")
+    elif family == "economic-pluralism-and-protected-private-sphere":
+        add("FS-CLM-23")
+        if any(t in key for t in (
+                "licence", "credit", "insurance", "private", "occupational")):
+            add("FS-CLM-35")
+    elif family == "family-dependency-reproduction-and-collective-plurality":
+        add("FS-CLM-09")
+        if "adulthood" in key:
+            add("FS-CLM-10")
+        if key.startswith("collective-"):
+            add("FS-CLM-27")
+        if "recognition-module" in key:
+            add("FS-CLM-22")
+    elif family == "ecological-commons-and-non-human-animal":
+        add("FS-CLM-34" if key.startswith("animal-") else "FS-CLM-33")
+    elif family == "public-safety-defence-emergency-and-external-power":
+        if key.startswith("emergency-"):
+            add("FS-CLM-28")
+        if any(t in key for t in (
+                "protect-", "coercive-", "restriction-", "policing",
+                "custod", "arrest", "detention", "search", "seizure",
+                "force", "prosecution", "adjudication")):
+            add("FS-CLM-29")
+        if key.startswith("defence-") or key == "protect-defence-mandate":
+            add("FS-CLM-30")
+        if "intelligence" in key or "surveillance" in key:
+            add("FS-CLM-31")
+        if key.startswith("border-") or any(t in key for t in (
+                "expulsion", "extradition", "transfer")):
+            add("FS-CLM-32")
+        if key.startswith("external-"):
+            add("FS-CLM-30")
+        if not refs:
+            add("FS-CLM-29")
+    if not refs:
+        raise LedgerError(f"no direct-effect claim mapping for {key}")
+    return refs
+
+
+def _domains_for_claim_refs(src: dict, claim_refs: list):
+    claims = {row["id"]: row for row in src["claims"]}
+    result = []
+    for claim_ref in claim_refs:
+        for domain_ref in claims[claim_ref]["domain_refs"]:
+            if domain_ref not in result:
+                result.append(domain_ref)
+    return result
+
+
+def _validate_contract_term(term, field, card, context):
+    if not isinstance(term, dict):
+        raise LedgerError(f"{context} must be an object")
+    basis = term.get("basis")
+    keys = ["text", "basis", "source_refs"]
+    if basis == "bounded-delegation":
+        keys += ["choice_owner", "bounds", "failure_default"]
+    exact_keys(term, keys, context)
+    text = require_str(term, "text", context)
+    lower = text.lower()
+    banned = ("n/a", "tbd", "unknown", "unresolved",
+              "is fixed by the source-bound")
+    if any(token in lower for token in banned):
+        raise LedgerError(f"{context}: unresolved or legacy generic prose")
+    if text.strip() == card["applicability"].strip():
+        raise LedgerError(f"{context}: applicability duplication is not a term")
+    label = field.replace("_", " ").lower()
+    if lower.startswith(label + " ") or lower.startswith(label + ":"):
+        raise LedgerError(f"{context}: field-name echo is not a contract term")
+    if basis not in TERM_BASES:
+        raise LedgerError(f"{context}.basis is invalid")
+    _validate_source_refs(term["source_refs"], f"{context}.source_refs")
+    if not set(term["source_refs"]).issubset(set(card["source_refs"])):
+        raise LedgerError(f"{context}: term source must be a card source")
+    if basis == "bounded-delegation":
+        for key in ("choice_owner", "bounds", "failure_default"):
+            value = require_str(term, key, context)
+            if value.strip().lower() in {"n/a", "tbd", "unknown", "unresolved"}:
+                raise LedgerError(f"{context}: delegation must be decision-complete")
+    return text
+
+
+def _validate_card_test(value, kind, card, context):
+    if not isinstance(value, dict):
+        raise LedgerError(f"{context} must be an object")
+    exact_keys(value,
+               ["id", "status", "assertion", "source_refs", "executable_ref"],
+               context)
+    if value["id"] != f"{card['id']}-{kind.upper()}":
+        raise LedgerError(f"{context}.id must be card-derived")
+    if value["status"] not in {"planned", "executable"}:
+        raise LedgerError(f"{context}.status must be planned or executable")
+    require_str(value, "assertion", context)
+    _validate_source_refs(value["source_refs"], f"{context}.source_refs")
+    if not set(value["source_refs"]).issubset(set(card["source_refs"])):
+        raise LedgerError(f"{context}: test source must be a card source")
+    if value["status"] == "executable":
+        validate_reference(require_str(value, "executable_ref", context),
+                           f"{context}.executable_ref")
+    elif value["executable_ref"] is not None:
+        raise LedgerError(f"{context}: planned tests cannot claim execution")
 
 
 def validate_power_population(src: dict, ids: dict):
@@ -1272,27 +1708,23 @@ def validate_power_population(src: dict, ids: dict):
         )
 
     manifest = {r["provisional_key"]: r for r in _power_manifest_rows()}
+    coverage_completed = src["coverage_population"]["completed_source_families"]
     powers_by_manifest = {}
+    term_texts = set()
     for i, rec in enumerate(arrays["powers"]):
         ctx = f"powers[{i}] ({rec.get('id', '?')})"
-        exact_keys(
-            rec,
-            COMMON_KEYS + [
-                "manifest_key", "source_family", "posture", "evidence_kind",
-                "profiles", "domain_refs", "affected_claim_refs",
-                "holder_body_refs", "holder_role_refs",
-                "affected_role_refs", "checking_role_refs", "route_ref",
-                "overlay", "public_claim_restriction",
-                "structural_wall_refs", "related_power_refs",
-                "enforcement_mechanism", "book2_owner_ref", "contract",
-                "profile_contracts", "source_refs",
-            ],
-            ctx,
-        )
-        validate_common_record_fields(rec, ctx)
         row = manifest.get(rec["manifest_key"])
         if row is None:
             raise LedgerError(f"{ctx}: unknown manifest_key")
+        converted = row["source_family"] in coverage_completed
+        exact_keys(
+            rec,
+            COMMON_KEYS + (
+                CARD_V7_EXTRA_KEYS if converted else CARD_LEGACY_EXTRA_KEYS
+            ),
+            ctx,
+        )
+        validate_common_record_fields(rec, ctx)
         if rec["source_family"] != row["source_family"]:
             raise LedgerError(f"{ctx}: source_family differs from manifest")
         retained = rec["manifest_key"] == RETAINED_FORMAL_KEY
@@ -1311,30 +1743,113 @@ def validate_power_population(src: dict, ids: dict):
         )
         if rec["status"] != expected_status_value:
             raise LedgerError(f"{ctx}: status must be {expected_status_value}")
-        profiles = _power_profiles(row)
-        if rec["profiles"] != profiles:
+        profiles = _power_profiles(row) if converted else rec["profiles"]
+        if converted and rec["profiles"] != profiles:
             raise LedgerError(f"{ctx}: profiles differ from checker-owned classification")
-        contracts = rec["profile_contracts"]
-        if not isinstance(contracts, dict) or list(contracts) != profiles:
-            raise LedgerError(f"{ctx}: profile_contracts must match profiles in order")
-        for profile in profiles:
-            block = contracts[profile]
-            exact_keys(block, POWER_PROFILE_FIELDS[profile],
-                       f"{ctx}.profile_contracts.{profile}")
-            for field in POWER_PROFILE_FIELDS[profile]:
-                value = require_str(block, field,
-                                    f"{ctx}.profile_contracts.{profile}")
-                if value.strip().lower() in {"n/a", "na", "tbd", "unknown"}:
-                    raise LedgerError(f"{ctx}: blank substitute in profile contract")
-        contract = rec["contract"]
-        exact_keys(contract, POWER_CONTRACT_KEYS, f"{ctx}.contract")
-        for field in POWER_CONTRACT_KEYS[:-1]:
-            value = require_str(contract, field, f"{ctx}.contract")
-            if value.strip().lower() in {"n/a", "na", "tbd", "unknown"}:
-                raise LedgerError(f"{ctx}: blank substitute in contract")
+        if (not isinstance(profiles, list) or not profiles
+                or any(profile not in POWER_PROFILE_ORDER for profile in profiles)):
+            raise LedgerError(f"{ctx}: profiles are invalid")
         expected_pairs = _power_required_separations(profiles)
-        if contract["required_separation_pairs"] != expected_pairs:
-            raise LedgerError(f"{ctx}: required separation pairs are incomplete")
+        if converted:
+            primary = _power_primary_class(row)
+            if rec["primary_class_ref"] != primary:
+                raise LedgerError(f"{ctx}: primary class differs from direct effect")
+            secondary = _power_secondary_classes(row, profiles)
+            if rec["secondary_class_refs"] != secondary:
+                raise LedgerError(f"{ctx}: secondary classes differ from profiles")
+            if rec["affected_claim_refs"] != _power_claim_refs(row):
+                raise LedgerError(f"{ctx}: claims differ from direct legal effect")
+            expected_domains = _domains_for_claim_refs(
+                src, rec["affected_claim_refs"])
+            if rec["domain_refs"] != expected_domains:
+                raise LedgerError(
+                    f"{ctx}: domains must be the ordered union of claim domains")
+            contract = rec["contract_terms"]
+            if not isinstance(contract, dict):
+                raise LedgerError(f"{ctx}.contract_terms must be an object")
+            exact_keys(contract, POWER_CONTRACT_TERM_KEYS,
+                       f"{ctx}.contract_terms")
+            for field in POWER_CONTRACT_TERM_KEYS:
+                text = _validate_contract_term(
+                    contract[field], field, rec,
+                    f"{ctx}.contract_terms.{field}")
+                if text in term_texts:
+                    raise LedgerError(
+                        f"{ctx}: repeated generic contract prose is prohibited")
+                term_texts.add(text)
+            blocks = rec["profile_terms"]
+            if not isinstance(blocks, dict) or list(blocks) != profiles:
+                raise LedgerError(
+                    f"{ctx}: profile_terms must match exact applicable profiles")
+            for profile in profiles:
+                block = blocks[profile]
+                exact_keys(block, POWER_PROFILE_FIELDS[profile],
+                           f"{ctx}.profile_terms.{profile}")
+                for field in POWER_PROFILE_FIELDS[profile]:
+                    text = _validate_contract_term(
+                        block[field], field, rec,
+                        f"{ctx}.profile_terms.{profile}.{field}")
+                    if text in term_texts:
+                        raise LedgerError(
+                            f"{ctx}: repeated generic profile prose is prohibited")
+                    term_texts.add(text)
+            if rec["required_separation_pairs"] != expected_pairs:
+                raise LedgerError(f"{ctx}: required separation pairs are incomplete")
+            for field in (
+                    "permitted_inputs", "prohibited_inputs",
+                    "permitted_downstream_effects"):
+                values = rec[field]
+                if (not isinstance(values, list) or not values
+                        or len(values) != len(set(values))
+                        or any(not isinstance(v, str) or not v.strip()
+                               for v in values)):
+                    raise LedgerError(
+                        f"{ctx}.{field} must be non-empty and duplicate-free")
+            _validate_contract_term(
+                rec["evidence_authority"], "evidence_authority", rec,
+                f"{ctx}.evidence_authority")
+            _validate_card_test(
+                rec["negative_test"], "negative", rec,
+                f"{ctx}.negative_test")
+            _validate_card_test(
+                rec["counterfactual"], "counterfactual", rec,
+                f"{ctx}.counterfactual")
+            expected_part_v = (
+                "implemented-current-formal" if retained
+                else "coverage-only-not-formalized"
+            )
+            if rec["part_v_status"] != expected_part_v:
+                raise LedgerError(f"{ctx}: Part V status overclaims formalization")
+            handoff = require_str(rec, "book2_handoff", ctx)
+            if "no operation" not in handoff.lower():
+                raise LedgerError(f"{ctx}: Book 2 handoff must refuse operation")
+        else:
+            contracts = rec["profile_contracts"]
+            if not isinstance(contracts, dict) or list(contracts) != profiles:
+                raise LedgerError(
+                    f"{ctx}: legacy profile_contracts must match profiles")
+            for profile in profiles:
+                block = contracts[profile]
+                exact_keys(block, POWER_PROFILE_FIELDS[profile],
+                           f"{ctx}.profile_contracts.{profile}")
+                for field in POWER_PROFILE_FIELDS[profile]:
+                    value = require_str(
+                        block, field, f"{ctx}.profile_contracts.{profile}")
+                    if value.strip().lower() in {
+                            "n/a", "na", "tbd", "unknown", "unresolved"}:
+                        raise LedgerError(
+                            f"{ctx}: blank substitute in legacy profile contract")
+            contract = rec["contract"]
+            exact_keys(contract, LEGACY_POWER_CONTRACT_KEYS,
+                       f"{ctx}.contract")
+            for field in LEGACY_POWER_CONTRACT_KEYS[:-1]:
+                value = require_str(contract, field, f"{ctx}.contract")
+                if value.strip().lower() in {
+                        "n/a", "na", "tbd", "unknown", "unresolved"}:
+                    raise LedgerError(
+                        f"{ctx}: blank substitute in legacy contract")
+            if contract["required_separation_pairs"] != expected_pairs:
+                raise LedgerError(f"{ctx}: required separation pairs are incomplete")
         _typed_ref_list(rec["domain_refs"], "domains", ids,
                         f"{ctx}.domain_refs")
         _typed_ref_list(rec["affected_claim_refs"], "claims", ids,
@@ -1369,16 +1884,25 @@ def validate_power_population(src: dict, ids: dict):
 
     for i, rec in enumerate(arrays["templates"]):
         ctx = f"power_contract_templates[{i}]"
-        exact_keys(rec, COMMON_KEYS + ["manifest_key", "contract", "source_refs"], ctx)
-        validate_common_record_fields(rec, ctx)
         row = manifest[rec["manifest_key"]]
+        converted = row["source_family"] in coverage_completed
+        contract_key = "contract_terms" if converted else "contract"
+        exact_keys(rec, COMMON_KEYS + ["manifest_key", contract_key, "source_refs"], ctx)
+        validate_common_record_fields(rec, ctx)
         if rec["manifest_key"] != POWER_TEMPLATE_KEY:
             raise LedgerError(f"{ctx}: only the checker-bound time template is allowed")
         if rec["layer"] != "constitutional-invariant" or rec["status"] != "ratified-template":
             raise LedgerError(f"{ctx}: template layer/status mismatch")
-        exact_keys(rec["contract"], POWER_TEMPLATE_CONTRACT_KEYS, f"{ctx}.contract")
+        contract = rec[contract_key]
+        exact_keys(contract, POWER_TEMPLATE_CONTRACT_KEYS,
+                   f"{ctx}.{contract_key}")
         for field in POWER_TEMPLATE_CONTRACT_KEYS:
-            require_str(rec["contract"], field, f"{ctx}.contract")
+            if converted:
+                _validate_contract_term(
+                    contract[field], field, rec,
+                    f"{ctx}.{contract_key}.{field}")
+            else:
+                require_str(contract, field, f"{ctx}.{contract_key}")
         _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
         if row["source_anchor"] not in rec["source_refs"]:
             raise LedgerError(f"{ctx}: template must include manifest anchor")
@@ -3483,7 +4007,7 @@ def validate_deferred(src: dict):
         exact_keys(rec, ["record_type", "owner_ref", "closure_condition",
                          "stage"], ctx)
         rt = rec["record_type"]
-        if rt not in DEFERRABLE_ARRAYS:
+        if rt not in set(DEFERRABLE_ARRAYS) | {COVERAGE_DEFERRAL_TYPE}:
             raise LedgerError(f"{ctx}: {rt!r} is not a deferrable record type")
         if rt in by_type:
             raise LedgerError(f"{ctx}: duplicate deferral for {rt}")
@@ -4287,6 +4811,8 @@ def validate_scope_audits(src: dict):
         and rec["protocol_sha256"] == protocol
     ]
     if not current:
+        if src["coverage_population"]["status"] != "complete":
+            return
         raise LedgerError(
             "scope_audits requires a current-source repository audit")
     for rec in current:
@@ -4438,6 +4964,7 @@ def _gate_a_condition_1_deferred(src: dict):
     """
     populations = {
         "domains", "roles", "powers", "dependencies", "scenarios", "defects",
+        COVERAGE_DEFERRAL_TYPE,
     }
     return sorted(
         row["record_type"] for row in src["deferred_populations"]
@@ -4692,6 +5219,7 @@ def validate(src: dict):
     validate_header(src)
     validate_bound_sources(src)
     validate_power_source_inventory(src)
+    validate_coverage_population(src)
     validate_meanings(src)
     validate_axes(src)
     validate_compatibility(src)
@@ -4706,6 +5234,7 @@ def validate(src: dict):
     validate_bodies(src)
     validate_roles(src, ids)
     validate_power_population(src, ids)
+    validate_coverage_families(src, ids)
     validate_dependencies(src, ids)
     validate_scenarios(src, ids)
     validate_external_assumptions(src)
@@ -5339,6 +5868,10 @@ def negative_controls(src: dict) -> int:
     for entry in controls:
         name, mutate = entry[0], entry[1]
         expect = entry[2] if len(entry) > 2 else None
+        if (src["coverage_population"]["status"] != "complete"
+                and getattr(mutate, "__name__", "").startswith(
+                    ("_closure", "_scope_audit"))):
+            continue
         mutant = copy.deepcopy(src)
         if mutant.get("scope_audits"):
             control_audit = copy.deepcopy(mutant["scope_audits"][-1])

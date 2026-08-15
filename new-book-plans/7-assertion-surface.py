@@ -105,6 +105,7 @@ class Inventory:
     rules_sha256: str
     facts_sha256: str
     route_fingerprints: dict[str, str]
+    statement_fingerprints: list[dict[str, object]]
 
     @property
     def writable(self) -> set[str]:
@@ -381,6 +382,25 @@ def route_payload(
     }
 
 
+def statement_fingerprint_records(source_text: str) -> list[dict[str, object]]:
+    occurrences: dict[str, int] = defaultdict(int)
+    records = []
+    for statement in lex_statements(source_text):
+        occurrence = occurrences[statement.text]
+        occurrences[statement.text] += 1
+        records.append({
+            "id": sha256_json([statement.text, occurrence]),
+            "statement_sha256": sha256_json(statement.text),
+            "occurrence": occurrence,
+            "kind": (
+                "rule" if statement.text.lstrip().startswith(("all ", "any "))
+                else "fact"
+            ),
+            "statement": statement.text,
+        })
+    return records
+
+
 def make_inventory(kb: pathlib.Path, contract: dict[str, object]) -> Inventory:
     strata, derived, edges = parse_engine(engine_text(kb))
     aliases = contract.get("aliases", {})
@@ -404,8 +424,9 @@ def make_inventory(kb: pathlib.Path, contract: dict[str, object]) -> Inventory:
             "alias names collide with canonical engine relations: "
             + ", ".join(sorted(alias_conflicts))
         )
+    source_text = kb.read_text(encoding="utf-8")
     source = parse_source(
-        kb.read_text(encoding="utf-8"),
+        source_text,
         set(strata),
         derived,
         aliases,
@@ -427,6 +448,7 @@ def make_inventory(kb: pathlib.Path, contract: dict[str, object]) -> Inventory:
         rules_sha256=sha256_json(sorted(source.rules)),
         facts_sha256=sha256_json(sorted(source.facts)),
         route_fingerprints=fingerprints,
+        statement_fingerprints=statement_fingerprint_records(source_text),
     )
 
 
@@ -1142,6 +1164,7 @@ def fingerprint_output(inventory: Inventory) -> str:
             "facts_sha256": inventory.facts_sha256,
             "rules_sha256": inventory.rules_sha256,
             "route_fingerprints": inventory.route_fingerprints,
+            "statement_fingerprints": inventory.statement_fingerprints,
         },
         indent=2,
         sort_keys=True,
