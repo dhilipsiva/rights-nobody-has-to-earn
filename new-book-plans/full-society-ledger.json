@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-state-form-and-political-membership",
+  "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-time-model",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -6640,7 +6640,8 @@
   "coverage_population": {
     "status": "partial",
     "completed_source_families": [
-      "state-form-and-political-membership"
+      "state-form-and-political-membership",
+      "time-model"
     ],
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
@@ -43794,19 +43795,67 @@
       "owner_ref": "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling",
       "closure_condition": "every time-dependent card carries its own source, scope, review, renewal or end, challenge, and fail-closed polarity",
       "manifest_key": "time-power-specific-t3-contract",
-      "contract": {
-        "current_source": "Each power names its own authenticated current source and version.",
-        "scope": "The temporal record binds only the exact power, person or protected object, case, legal effect, and source version.",
-        "review": "Review tests current source, scope, replay, renewal, correction, and end independently of the holder.",
-        "renewal_or_end": "Renewal requires a fresh source; absence, expiry, invalidation, or an unratified alternate ends authority.",
-        "challenge": "Affected people and authorised representatives may challenge source, currency, scope, replay, renewal, and end.",
-        "fail_closed_polarity": "Missing or non-current positive authority withholds the power; it does not manufacture the opposite fact.",
-        "frozen_record_limit": "Fail-closed polarity does not detect a frozen or replayed record; independent witnessed sources remain required.",
-        "book2_liveness_limit": "Book 2 alone operates clocks, publication, persistence, notification, and institutional action; this template proves none."
-      },
       "source_refs": [
         "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
-      ]
+      ],
+      "contract_terms": {
+        "current_source": {
+          "text": "For the power-specific T3 template, current source is limited to the cited temporal rule: Each power names its own authenticated current source and version.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "scope": {
+          "text": "For the power-specific T3 template, scope is limited to the cited temporal rule: The temporal record binds only the exact power, person or protected object, case, legal effect, and source version.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "review": {
+          "text": "For the power-specific T3 template, review is limited to the cited temporal rule: Review tests current source, scope, replay, renewal, correction, and end independently of the holder.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "renewal_or_end": {
+          "text": "For the power-specific T3 template, renewal or end is limited to the cited temporal rule: Renewal requires a fresh source; absence, expiry, invalidation, or an unratified alternate ends authority.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "challenge": {
+          "text": "For the power-specific T3 template, challenge is limited to the cited temporal rule: Affected people and authorised representatives may challenge source, currency, scope, replay, renewal, and end.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "fail_closed_polarity": {
+          "text": "For the power-specific T3 template, fail closed polarity is limited to the cited temporal rule: Missing or non-current positive authority withholds the power; it does not manufacture the opposite fact.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "frozen_record_limit": {
+          "text": "For the power-specific T3 template, frozen record limit is limited to the cited temporal rule: Fail-closed polarity does not detect a frozen or replayed record; independent witnessed sources remain required.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        },
+        "book2_liveness_limit": {
+          "text": "For the power-specific T3 template, book2 liveness limit is limited to the cited temporal rule: Book 2 alone operates clocks, publication, persistence, notification, and institutional action; this template proves none.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-time-model-decision.md::## 4. Ratified and implemented ruling"
+          ]
+        }
+      }
     }
   ],
   "power_refusals": [
@@ -43832,8 +43881,7 @@
         "FS-DOM-08"
       ],
       "affected_claim_refs": [
-        "FS-CLM-11",
-        "FS-CLM-13"
+        "FS-CLM-19"
       ],
       "affected_role_refs": [
         "FS-ROL-37",
@@ -45550,7 +45598,9 @@
       "state": "prose-landed",
       "source_family_refs": [],
       "card_refs": [],
-      "template_refs": [],
+      "template_refs": [
+        "FS-PCT-01"
+      ],
       "refusal_refs": [],
       "crosswalk_refs": [],
       "formal_statement_refs": [
@@ -45921,13 +45971,15 @@
     {
       "id": "FS-CVF-004",
       "title": "Time Model coverage batch",
-      "state": "planned",
+      "state": "coverage-ready",
       "source_family_refs": [
         "time-model"
       ],
       "card_refs": [],
       "template_refs": [],
-      "refusal_refs": [],
+      "refusal_refs": [
+        "FS-PRF-001"
+      ],
       "crosswalk_refs": [],
       "formal_statement_refs": [],
       "pin_group_refs": [],

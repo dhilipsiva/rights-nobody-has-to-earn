@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-coverage-contracts-v7-state-form-and-political-membership`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-coverage-contracts-v7-time-model`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -1466,7 +1466,7 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 3; curren
 | FS-SAU-02 | fs-ledger-2026-08-15-mechanical-gate-a-candidate | `37ae22f6050eb0781868146f197045b3eac06fef65204f17b329ce962a18ce7d` | 2026-08-15T04:34:25Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-03 | fs-ledger-2026-08-15-mechanical-gate-a-candidate | `2eabe2892983d3277fcbfb6741fe1badf8fa1df05fd81546e440940ee1f93ef5` | 2026-08-15T06:15:00Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `4a3ec61ac9be9a10a52a0f3a08f956c6412587c4783329ff53c07d02cb408cc0`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `fba75f716c12b374113ef1101973d51be2f46b475a933aee748a4f7da6a86bbe`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 
