@@ -9,7 +9,11 @@ not a story about one, and not a plan for getting to one from here. It describes
 a place where certain things are owed to every person from the day they exist,
 where nothing has to happen first — no work, no papers, no belonging, no good
 behaviour — and where the machinery that could take those things away has been
-worked on until most of the taking became impossible to even write down.
+worked on until most of the taking became impossible to even write down. The
+rules now say how that beginning enters the design: birth, being within its
+jurisdiction or effective control, or first contact is enough. A temporary name
+for that encounter is enough to start what is owed. It is not proof of civil
+identity, and help may not wait for the proof.
 
 I say "worked on" because that is the honest verb. The society in these pages
 exists as an actual set of rules, and the rules were checked — by a machine that
@@ -118,11 +122,17 @@ A **record** is the supplied set of entries the rules are allowed to read. A
 to people and institutions outside that reasoning chain.
 
 The checks in this book can establish that a conclusion follows from a supplied
-record, or that a forbidden rule is refused. They do not establish that the
-record is complete or truthful, that a promised event occurred, that a later
-record arrived, or that an institution acted on a conclusion. Whenever the text
-moves from one of those claims to another, the crossing should be stated rather
-than smuggled through a verb.
+record, or that a forbidden rule is refused. For standing, the supplied record
+may say that someone was born or met the society at first contact, within its
+jurisdiction, or under its effective control. The rule then reaches personhood
+without asking for citizenship, papers, age, capacity, or a successful identity
+match. The check does not prove that the encounter happened or that the
+temporary name belongs to a particular civil identity.
+
+The checks do not establish that the record is complete or truthful, that a
+promised event occurred, that a later record arrived, or that an institution
+acted on a conclusion. Whenever the text moves from one of those claims to
+another, the crossing should be stated rather than smuggled through a verb.
 
 ### Destination and operation
 
@@ -172,7 +182,8 @@ below.
 
 - [Chapter 1: What Counts as Evidence](01-what-counts-as-evidence.md) — closes
   the record's vocabulary, separates supplied entries from conclusions, and
-  shows the danger in entries that somebody simply writes.
+  shows how birth or encounter can start standing without making a temporary
+  handle into civil identity.
 
 - [Chapter 2: Standing, and Why It Is Never Revoked](02-standing.md) — separates
   permanent answerability from temporary power and explains why removing an
@@ -197,9 +208,9 @@ below.
 
 ### Part III — Status and consequence
 
-- [Chapter 7: A Prisoner Is a Person](07-a-prisoner-is-a-person.md) — uses the
-  hardest case to bind custody back to personhood and to the unconditionality of
-  everyone else's floor.
+- [Chapter 7: A Prisoner Is a Person](07-a-prisoner-is-a-person.md) — keeps the
+  custody route as an independent backstop, then shows that the same floor also
+  begins at birth, presence, effective control, or first contact.
 
 - [Chapter 8: What You Are Owed](08-what-you-are-owed.md) — states the floor,
   then keeps entitlement, delivery, and knowledge of delivery apart.
@@ -302,9 +313,11 @@ below.
 ### Roles and bodies
 
 - **Personhood, including children, unregistered claimants, and prisoners:**
-  ordinary personhood in the current model is writer-enrolled. Custody and the
-  finished-sentence side route are the only current paths for an unlisted person;
-  neither establishes generic unregistered free people. Begin with Chapters
+  personhood may still be written directly, and custody and release remain
+  independent routes. It also follows from a supplied birth or from first
+  contact, presence within the jurisdiction, or effective control. None of
+  those entries authenticates civil identity, and a missing registry match
+  cannot postpone the floor. Begin with Chapters
   [1](01-what-counts-as-evidence.md), [7](07-a-prisoner-is-a-person.md),
   [8](08-what-you-are-owed.md), and
   [9](09-the-vote-conviction-does-not-take.md).
@@ -498,9 +511,12 @@ action.
 
 **Prose equivalent:** Something happens in the world. Somebody or some system
 reports it into the permitted record. A rule reads that entry and may produce a
-conclusion. The check can verify the last step. It cannot, without separate
-evidence, verify that the event happened, the report was honest, the record was
-complete, or anybody acted after the conclusion.
+conclusion. At first contact, the record may use a temporary encounter name so
+the floor starts immediately; that name neither proves civil identity nor
+imports somebody else's history. The check can verify the rule's step. It
+cannot, without separate evidence, verify that the event happened, the report
+was honest, the record was complete, the identities match, or anybody acted
+after the conclusion.
 
 ### The floor, delivery, and repair
 
