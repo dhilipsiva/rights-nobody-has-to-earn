@@ -343,21 +343,24 @@ standing judgment of a person — the risk score, the capability flag, the file
 that follows you. That refusal has a price the capture chapter of my life has
 taught me to say plainly: the assessments do not vanish, they move — into
 hospital charts, school files, employers' notes, records this design does not
-police — and power migrates toward whatever record matters. The design's answer
-is the firewall, not the abolition: under the rules as written, a hospital chart
-can inform care but cannot serve as the fact that voids you; there is no route
-from that outside record to standing, liberty, or the floor. That is a boundary
-in the written rules, not proof that an official never used a shadow file or
-that a future source change would preserve it. Inside this record, an assessment
-would sit upstream of liberty forever. Outside it, the current rules refuse to
-read it. That limits what this design itself can do with the assessment; the
-wider harm remains. And it is why privacy, which several readers went looking
-for on the floor, is not there: this design does not protect your privacy by
-granting a right that could be weighed against others — a right written to be
-outweighed teaches a system how to outweigh rights — it protects the private
-life by building a public record too narrow to hold it. What this public record
-has no words for, the current rules cannot use directly. They do not prove that
-nobody judges you elsewhere.
+police — and power migrates toward whatever record matters.
+
+The design's first answer remains the firewall: under the rules as written, a
+hospital chart can inform care but cannot serve as the supplied fact that voids
+standing or the floor, imports another person's burden, or displaces the
+person-held liberty barriers. That is a boundary in the written rules, not proof
+that an official never used a shadow file or that a future source change would
+preserve it. The narrower record limits what this design itself can do with an
+assessment; the wider harm remains.
+
+Privacy is therefore not on the material floor, and the firewall does not now
+carry the whole burden. Privacy sits in a separate liberty shell with bodily
+autonomy, movement, due process, association, expression, conscience, family
+and intimate life, equal civic status, and safeguards around consequential
+decisions. Each is a limit held by a person, not a service to be earned and not
+a score to be balanced away. The narrow record complements those limits; it
+does not substitute for them. Neither device proves that nobody judges a person
+elsewhere or that an institution will stop an unlawful intrusion.
 
 India, because this is not hypothetical and not every reader carries the
 context. India's welfare system feeds hundreds of millions through ration
@@ -390,6 +393,28 @@ and cannot erase accountability, claims, remedies, or lawful history. Those are
 constitutional effects over supplied facts. They do not show that a hungry person
 reached a service route, that staff served before reconciliation, that the identity
 system stayed live, or that the correction was honoured in practice.
+
+The environmental right follows the same separation. A person living now has a
+claim to environmental conditions compatible with life and health, together
+with information, assessment before a high-consequence decision, participation,
+public reasons, review, interim protection, correction, and remedy. Unequal
+exposure belongs to the equality question. None of this creates an environmental
+worth score, a ninth item on the material floor, or a reason to postpone the
+floor while an ecological record is reconciled.
+
+Class Nine protects the commons and the capability of people not yet present.
+Its ceiling is not one number: climate and atmosphere, clean air, waters and
+wetlands, living soil, habitats and biodiversity, ecological systems,
+regenerative capacity, and land and inherited resources remain separate. A gain
+on one axis cannot quietly buy destruction on another. Science supplies bounded
+evidence; democratic law enacts a versioned ceiling; review checks both.
+Uncertainty is not safety, regression needs public justification, irreplaceable
+loss is not replaceable by an offset, and insolvency does not extinguish a
+restoration duty. If immediate human continuity and a ceiling collide, the rule
+requires the least-harm continuity route and keeps the shortfall and repair due
+visible. These are constitutional limits over supplied records. They do not
+measure the world, set the ceiling numbers, restore an ecosystem, or prove that
+any institution can do so.
 
 **Survives, narrowed.** The guards hold against the exact attacks they refuse.
 Universal standing removes a missing identity entry as a constitutional eligibility
