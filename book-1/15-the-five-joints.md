@@ -295,8 +295,14 @@ be written, "strategic behavior shifts: game the writable facts, avoid
 generating them, manufacture the absences that protect status. The record
 becomes a target rather than a neutral ledger."
 
-Let it stand. It is the deepest objection in the corpus and the book agrees with
-every factual clause in it.
+It named the deepest failure in the earlier source. The revised rules answer one
+part of it and leave the harder part standing. A supplied birth fact, first contact,
+physical presence, or effective control now establishes personhood without citizenship,
+documents, capacity, or a successful registry lookup. A public body cannot be the
+contact subject. The temporary encounter handle proves no civil identity and carries
+no other record's relationships, liabilities, guilt, or authority. But the machinery
+still cannot make an official observe the encounter, tell the truth about it, or deliver
+what follows. Capture can move from eligibility into silence and obstruction.
 
 The answer is about surface, not invulnerability. In the societies you know,
 capture is available at every layer: the law's wording, its interpretation, its
@@ -367,28 +373,35 @@ Kumari died in September 2017, after her family's card was cancelled for
 want of a database link; her family says she died asking for rice. The cause of
 her death is contested. The chain — cancellation, denial, death — is documented.
 That is what it looks like when the computation of eligibility becomes the
-instrument of denial, and it is the shape this design wants to make unbuildable.
-It has not yet done so completely. Once the record recognises someone as a
-person, no further eligibility sits under the floor. A witnessed transition now
-preserves personhood from a separately attested earlier status and reports an omitted
-carry into the later record. That report is conservative: because lawful retirement
-of a protected record is not represented, it cannot distinguish authorised disposal
-from deletion. But the first roster entry is still an eligibility gate, and a
-deletion made before or inside that first accepted record leaves nothing to
-compare. In that case, "no record found" can still gate a meal while adverse
-conclusions survive. Universal initial standing and record recovery remain
-unfinished constitutional work.
+instrument of denial, and it is the shape the revised constitutional source refuses.
+Standing attaches before identity reconciliation. A missing or disputed match cannot
+postpone the floor, process, or remedy, and a service route may not demand status
+disclosure or feed immigration or enforcement records as its price. Disputed age near
+an expiring right defaults provisionally to adult treatment. Capacity, disability, how someone communicates, or refusal of support cannot
+suspend standing; a person can speak for themselves or petition directly without an
+advocate.
+
+Identity work remains consequential rather than clerical. A proposed alias link stays
+pending until source-backed evidence and an independent check support a merge.
+Uncertainty keeps records separate and linked for review. Corrections append
+provenance-preserving dispositions; a death mark or other status change must be
+externally authenticated and correctable, ends only effects with their own end rules,
+and cannot erase accountability, claims, remedies, or lawful history. Those are
+constitutional effects over supplied facts. They do not show that a hungry person
+reached a service route, that staff served before reconciliation, that the identity
+system stayed live, or that the correction was honoured in practice.
 
 **Survives, narrowed.** The guards hold against the exact attacks they refuse.
-The constitutional source and the supplied record remain consequential and
-named; neither protects its own trust root. Exact source binding and witnessed
-record comparisons now expose selected changes, carry failures and missing required
-carry, while one witnessed current record line and exact conflict checks constrain
-which supplied authority counts as current. They neither authenticate their outside
-witnesses, prove a disappearance unlawful, nor force a later record to arrive.
-Exposure is only worth what the people reading the exposures do. The
-specifications are the two given above, and they are the part of this joint I am
-least willing to see traded away.
+Universal standing removes a missing identity entry as a constitutional eligibility
+gate, and provenance-preserving correction keeps reconciliation from becoming lawful
+erasure. The constitutional source and the supplied record nevertheless remain
+consequential and named; neither protects its own trust root. Exact source binding,
+witnessed record comparisons, and independent merge checks constrain what the
+machinery may conclude from what it receives. They do not authenticate outside
+witnesses, prove a disappearance unlawful, make an encounter observable, deliver a
+meal, or force a later record to arrive. Exposure is only worth what the people
+reading the exposures do. The specifications are the two given above, and they are
+the part of this joint I am least willing to see traded away.
 
 ## The State
 

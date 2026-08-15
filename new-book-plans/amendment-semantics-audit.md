@@ -254,7 +254,7 @@ Remaining boundary: Semantic entrenchment requires an external exact-diff and ef
 - Reviewed source: `new-book-plans/amendment-semantics-audit.json`.
 - Constitution: `new-book-plans/constitution.nibli`, SHA-256 `65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa`.
 - Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `0433596b3be61fa16f86d0b3cbe13f262b3038985d504bac3c70f040098bdeca`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `7b5b27d9f27133391abe699651ec3c4603f0f504c11eb0cb0af7662057549bf7`.
 - Reviewed subprocess timeout: `60` seconds for every isolated case, sabotage, and live seam.
 - Bound input bytes are read once, decoded strictly, and hashed without newline translation; constitution CR bytes are refused and candidates are written as exact UTF-8 bytes.
 - Existing inputs must have distinct device/inode identities; the generated output must be a single-link regular file distinct from every input.

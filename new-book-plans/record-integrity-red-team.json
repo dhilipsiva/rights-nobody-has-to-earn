@@ -6,7 +6,7 @@
   "evidence_role": "exposes_gap_and_tests_boundary",
   "constitution_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
   "assertion_surface_contracts_sha256": "4b37995a8321eba1cb8b122e0bba7eda67cd7bfdbfa6dd43fb2ca0d45e48dbe5",
-  "record_integrity_assurance_case_sha256": "0433596b3be61fa16f86d0b3cbe13f262b3038985d504bac3c70f040098bdeca",
+  "record_integrity_assurance_case_sha256": "7b5b27d9f27133391abe699651ec3c4603f0f504c11eb0cb0af7662057549bf7",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",
@@ -1607,18 +1607,18 @@
       "future_trigger": "Any custody, temporal, release, delivery, placement, or sanction rule requires re-review of the title, prose, registry, and counted-claim guard."
     },
     {
-      "artifact_ref": "book-1/15-the-five-joints.md::The constitutional source and the supplied record remain consequential and",
-      "current_claim": "The constitutional source and supplied facts remain separate consequential capture surfaces; exact source binding and witnessed comparisons protect selected uses without authenticating their outside trust roots.",
+      "artifact_ref": "book-1/15-the-five-joints.md::The constitutional source and the supplied record nevertheless remain",
+      "current_claim": "Universal standing removes a missing identity entry as a constitutional eligibility gate, while the constitutional source and supplied facts remain separate consequential capture surfaces whose outside trust roots are not authenticated.",
       "classification": "preserved_but_scoped",
       "reason": "The roster case exposes an uncovered capture consequence, the raw carry control confirms the closed input boundary, and the temporal handoff names the selected protections script 12 now owns.",
       "future_trigger": "Any completeness, operational integrity, independent reader, or capture-prevention claim requires re-review."
     },
     {
-      "artifact_ref": "book-1/15-the-five-joints.md::In that case, \"no record found\" can still gate a meal",
-      "current_claim": "The floor has no eligibility test after recognition, but the current `person` roster remains an eligibility gate capable of removing the formal meal.",
+      "artifact_ref": "book-1/15-the-five-joints.md::Standing attaches before identity reconciliation.",
+      "current_claim": "Birth and encounter roots prevent a missing identity match from removing formal standing, while observation, service access, identity-system liveness, and delivery remain outside the executable claim.",
       "classification": "revised_and_scoped",
-      "reason": "The Bela omission case directly falsified the prior universal claim that a missing record could never gate a meal, so Part V now names the standing defect.",
-      "future_trigger": "Universal standing, claimant continuity, roster recovery, or a new floor condition requires re-review."
+      "reason": "The universal-standing pins and deletion counterfactual repair the earlier roster-gated constitutional defect without claiming that an encounter is observed or a meal is delivered.",
+      "future_trigger": "Any new standing premise, encounter-ingestion claim, identity-system operation, service route, or delivery claim requires re-review."
     },
     {
       "artifact_ref": "book-1/method.md::The record red-team adds a second and narrower class.",
