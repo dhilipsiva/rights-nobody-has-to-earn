@@ -145,6 +145,32 @@ custody record, or delivery result as its premise. Both results matter. One
 prevents the floor from being credited with a protection it does not provide;
 the other prevents liberty from being smuggled back into the floor.
 
+Equality is separate again. The floor says what nobody may be left without;
+equality asks whether a rule or practice marks some people for a worse route.
+The answer now covers an openly worse rule, a neutral-looking rule with a
+discriminatory effect, a pattern made by several rules together, harms on
+several grounds or their combination, and harm because of whom a person knows
+or supports. Denied accommodation, imposed segregation, harassment, and
+retaliation are their own wrongs. None needs a judgment about a person's worth,
+risk, character, or deservingness.
+
+Accessibility therefore is not a ninth floor item. Every covered route must
+anticipate physical, sensory, cognitive, linguistic, digital, geographic,
+financial, and procedural barriers. A person can still require an individual
+accommodation. A refusal must be defended across the responsible institution
+and the support available to it, not by pointing to one desk's inconvenience.
+If one provider genuinely cannot perform, the public route must preserve the
+same timeliness, quality, dignity, privacy, and cost. The rules state those
+boundaries; this record does not prove that the route or accommodation exists.
+
+Patterns can help a claimant without becoming a verdict about anyone. The
+diagnostic record stays apart from the person's consequential record, voluntary
+self-description can be declined without penalty, and aggregate evidence can
+shift a remedial burden but never a criminal one. A temporary positive measure
+needs its own objective, evidence, review, challenge, and end. Without current
+continuation evidence it cannot silently enlarge itself. Ordinary equality,
+accessibility, accommodation, and an accrued remedy do not end with it.
+
 
 One word is deliberately left out of that demonstration, and the reason is worth more
 than the demonstration. The right to move refuses the punishing rule too — but for a
