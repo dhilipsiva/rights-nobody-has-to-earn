@@ -286,47 +286,34 @@ task solely to `book-2/TODO.md`. Content commit `ab814fc` adds the structural
 reader projection and corrects Gate A's condition-one and condition-three
 computations without weakening any later-gate claim blocker. The source-derived
 power population landed through the staged family commits, with the final
-formal-transition batch at `7e5b5f6`. The repository adversarial audit landed
-at `a8d6fd5`; the ledger item now closes Gate A by author ratification last.
+formal-transition batch at `7e5b5f6`. The repository adversarial audit landed at `a8d6fd5`; schema v6 and
+mechanical-closure candidate `2aeca61` remove the remaining human-act
+dependency, and Gate A closed mechanically at `405e480`.
 
-- [ ] **Complete the full-society domain-and-layer ledger.**
-  - The canonical source, 210 legal-effect power cards, one cross-power temporal
-    template, 19 refusal/limit rows, eight formal dispositions, 210 power-bound
-    allocations, defect ledger, projections, and constitutional-closure audit
-    are complete and verifier-enforced. The source-derived population culminated
-    at `7e5b5f6`.
-  - Content commit `a8d6fd5` replaces the external-panel dependency with
-    `FS-SAU-01`, a current-source repository adversarial audit. R7 is
-    `built`; every declared criterion, checker entry point, command, and
-    Gate-A-applicable defect is bound to the semantic scope digest. Gate A
-    condition five now computes `met-mechanically`. External human review is
-    optional evidence and never blocks completion or publication.
-  - Gate A conditions one through five and the structural-envelope/rubric
-    preconditions are met in form or mechanically. This establishes only the
-    versioned, reviewable scope map and assurance program. It establishes no
+- [x] **Complete the full-society domain-and-layer ledger.**
+  - The canonical source contains 210 legal-effect power cards, one cross-power
+    temporal template, 19 refusal/limit rows, eight formal dispositions, 210
+    power-bound allocations, the defect ledger, and every required projection.
+    The source-derived population culminated at `7e5b5f6`.
+  - Schema v6 and protocol v4 replace every Gate A reviewer or ratification
+    dependency with a current-source repository audit and an immutable-candidate
+    mechanical closure contract. `FS-SAU-02` binds the exact semantic scope,
+    protocol, criteria, controls, commands, findings, policy basis, and evidence
+    ceiling. Historical audit records remain append-only.
+  - Closure commit `405e480` binds immutable candidate `2aeca61`, its
+    all-passed verifier transcript digest, `FS-ENV-01`, `FS-SAU-02` and
+    its cutoff, checker-derived assurance and residual sets, and exact claim
+    limitations. The validator proves that no canonical semantic field differs
+    from the candidate outside closure and acceptance metadata.
+  - Gate A is `passed` for exactly this claim: The project has a versioned,
+    reviewable scope map and assurance program. It establishes no
     independent-human warrant, reader response, external truth, operation,
     delivery, feasibility, liveness, calibration, timeless completeness, or
     authentication of the audit's own trust root.
   - Later-gate defects remain owned by their substantive tasks. In particular,
-    FS-DFT-16, FS-DFT-17, and FS-DFT-28 are not ledger bookkeeping and are not
-    disguised as resolved. FS-DFT-20 is now explicitly non-gating; the optional
-    reader-balance claim remains Unestablished unless optional R6 evidence later
-    supports it.
-  - **[AUTHOR-GATED] Close Gate A with the closure record.** This is the only
-    remaining step in this TODO item. Use the verified content commit
-    `a8d6fd5` as the immutable candidate, record the exact verifier command
-    chain and transcript digest, and land a later deliberate author-ratification
-    amendment that populates the closure record and changes Gate A from
-    `not-passed` to `passed`. The record must bind `gate-a`, the exact
-    permitted claim, current source version and semantic digest, FS-ENV-01,
-    `FS-SAU-01` and its execution cutoff, checker-derived assurance and
-    residual sets, exact claim limitations, the candidate commit, verification
-    receipt, and a verbatim dated author act. Any semantic map change requires a
-    new repository audit and candidate. Calibration remains Book 2 Gate D work.
-  - **Done when:** that author-only closure commit passes the full verifier. The
-    only permitted claim is: “The project has a versioned, reviewable scope map
-    and assurance program.” No outside reviewer, reader, panel, facilitator,
-    coder, adjudicator, custodian, or participant is required.
+    FS-DFT-16, FS-DFT-17, and FS-DFT-28 remain unchanged; FS-DFT-20 remains
+    non-gating, and the optional reader-balance claim remains Unestablished
+    unless optional R6 evidence later supports it.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
 
@@ -1763,9 +1750,10 @@ functional society.
   agency, maintenance, constraints, failure, and recovery across both books
   without reducing Book 2 to a crisis/cost manual; and
 - reproducible structural, model, provenance, assurance, and negative-control
-  checks pass for the exact pair, followed by an explicit author-ratification
-  record. Optional external evidence retains its own provenance and limits but is
-  not a Gate E dependency.
+  checks pass for the exact pair, followed by a checker-derived closure record
+  bound to an immutable verified candidate. No human act is required. Optional
+  external evidence retains its own provenance and limits but is not a Gate E
+  dependency.
 - the paired releases generate one compatible cross-book defect projection:
   every Book 1 interface row has generated `resolved-for-claim` supported by an
   eligible defect disposition, claim posture, route, evidence, and, where liveness
