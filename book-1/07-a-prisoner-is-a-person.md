@@ -7,8 +7,9 @@ load-bearing:
 
 It looks like the sort of thing a constitution says to establish its decency — the
 kind of clause you would expect to find in a preamble, doing no work, meaning well.
-It is not that. Delete it and two things happen, and the second one is not what
-anybody would predict.
+It is not that. In a supplied record with no direct, birth, contact, presence,
+control, release, or carried standing fact, delete it and two things happen. The
+second one is not what anybody would predict.
 
 ## Zed
 
@@ -20,9 +21,11 @@ injured person, with two public witnesses agreeing on each tie. A case-specific 
 authority must be bound to the selected current record, its review window, and the exact
 constitutional source. Assume those entries are present and unconflicted.
 
-What is still absent is the one entry this chapter tests. Nobody, anywhere, has written
-down that Zed is a person — Zed is not on any roster, was never enrolled, never
-registered, never appeared in any list of the people this society is for.
+This counterfactual supplies none of the other roots that can establish standing:
+no birth fact, no first-contact or presence fact, no effective-control fact, no direct
+person fact, no release fact, and no carried earlier status. That is deliberately
+sparser than a real custody encounter should be. It isolates the line this chapter
+tests; it is not a claim that registration is ordinarily required.
 
 Zed is a prisoner, which follows from the injury, the witnessed case, and the current
 custody authority. And Zed is a person, which follows from being a prisoner. And
@@ -44,16 +47,18 @@ line and no marker can reconstruct Zed's personhood from facts that no longer pr
 it. Everything this society owed Zed, it owed to a person, so the instant Zed stops
 being one there is no unpaid obligation left over to catch an auditor's eye.
 
-Across an accepted change of records, there is now a narrower protection. If Zed's
-personhood status is separately attested in the earlier record, it keeps Zed a person even
-when its required carry into the later record is omitted, and that omission is
-reported. That does not find Zed before any record recognises him, prove the witnesses
-honest, or make a later record arrive. The prisoner-to-person line remains the route
-that protects an unlisted person at first conviction; the transition rule can preserve
-personhood only after there is a status to preserve.
+Across an accepted change of records, there is a narrower continuity protection. If
+Zed's personhood status is separately attested in the earlier record, it keeps Zed a
+person even when its required carry into the later record is omitted, and that omission
+is reported. That does not establish an outside birth or encounter, prove the witnesses
+honest, or make a later record arrive. The prisoner-to-person line remains an
+independent custody backstop when none of the other supplied roots is present; the
+transition rule can preserve personhood only after there is a status to preserve.
 
-That is the first thing the line does: it is the entire connection between conviction
-and continued humanity, and it is one sentence wide.
+That is the first thing the line does: it keeps conviction tied independently to
+standing, and it is one sentence wide. Birth, first contact, presence, and effective
+control now establish standing without waiting for a registry match, but they do not
+make this custody route redundant.
 
 ## The part nobody predicts
 
@@ -183,36 +188,24 @@ The design refuses the carve-out. Not because prisoners have earned generosity, 
 not as a gesture toward their dignity, but because the alternative is a floor that
 everyone stands on conditionally.
 
-## The uncomfortable corollary
+## The standing roots do not replace this line
 
-One consequence follows from this that ought to be said out loud.
+One consequence follows from this that ought to be said out loud. Standing no longer
+waits for someone to maintain a roster. An externally supplied birth fact, first
+contact, physical presence, or effective control establishes personhood immediately;
+the encounter name may be temporary, and proves no civil identity, citizenship,
+family relationship, liability, or guilt. Missing or disputed records therefore do
+not postpone the floor, process, or remedy while reconciliation happens.
 
-The rule that a prisoner is a person is a route into personhood that asks for nobody's
-willingness. Everyone else in this society is a person because it is recorded that
-they are — someone was willing to list them. Zed is a person because he was convicted:
-his personhood fell out of facts a court wrote for entirely other purposes, and no one
-along the way had to want him included.
+The custody and release rules remain valid independent routes. That redundancy is
+deliberate. If an encounter fact is absent from the supplied record, a lawful custody
+record must not become a route out of standing. Conversely, the presence of an
+encounter token cannot import another record's conviction or sentence. Identity links
+remain consequential claims: uncertainty keeps records separate and challengeable,
+and correction must retain provenance rather than erase accountability or remedy.
 
-It is not the only side door. There is a second, and it is worse. The record can hold
-that someone's sentence is finished, and a finished sentence confers personhood —
-release has to return you to the roster, or serving your term would end with less than
-you started with. Now recall what the first chapter conceded about that entry: it is a
-finding with no finder. Nothing says who decided the sentence was over, and nothing
-has to have happened first. So write it about a name the record has never held — no
-conviction, no sentence, no roster entry, nothing — and the record does not ask. A
-person exists who was never listed and never judged, released from a sentence that
-never existed, owed everything on the floor, free to move, by one entry that one
-person wrote and nobody adjudicated.
-
-So the conviction door needs nobody's willingness but a whole court's machinery, and
-the release door needs no machinery but one writer's pen. Between them, the sole ways
-to acquire the protection of this society without depending on someone's willingness
-to enrol you are to be found guilty of a crime — or to be recorded as finished with a
-sentence nobody checks you ever served.
-
-That is not the design working as intended. It is an artefact of a roster that is
-otherwise entirely maintained by hand, and it points at something the following
-chapters cannot avoid: the floor is unconditional above the line where personhood
-begins, and personhood itself is mostly a list — a list with side doors cut into it by
-rules that were each built for something else. What holds that list open is a question
-this design has not answered.
+There is still an evidence ceiling. These rules say what follows from facts supplied
+to the constitutional record. They do not prove that births and encounters are
+observed, that a service route is reachable, that an identity system reconciles
+records correctly, or that any institution operates in practice. Those delivery and
+identity-system questions remain outside this chapter and outside Gate A.
