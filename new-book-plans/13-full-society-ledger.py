@@ -255,7 +255,7 @@ COVERAGE_EVIDENCE_CEILING = (
     "Coverage contracts and pre-drafting checks only; no operation, delivery, "
     "feasibility, liveness, reader response, external truth, or calibration follows."
 )
-CONSTITUTIONAL_EFFECT_COUNT = 33
+CONSTITUTIONAL_EFFECT_COUNT = 87
 UNIVERSAL_STANDING_STATEMENT_IDS = (
     "b214c5369507e0eb6eb829be92667f5a72b10cff32e966cb6374f4ef4087d8b9",
     "ac2a478457f4f7822d0ee1e62da4e08625aacdaf43c65a4b2b179dbdd784c9cc",
@@ -355,6 +355,15 @@ EFFECT_PROFILE_FIELDS.update({
  "liberty-power-limit":["holder","duty_bearer","protected_choice","lawful_limit","notice_reasons","challenge_review","remedy","failure_default"],
  "environmental-right":["holder","duty_bearer","information","assessment","participation","reasons","review_interim_protection","correction_remedy","equality_route"],
  "commons-future-condition":["protected_condition","evidence_writer","lawful_enactment","version_temporal_status","precaution","non_regression","avoid_minimize_restore","nonfungibility","future_capability","failure_transition"],
+ "equality-status":["holder","open_grounds","forms","anti_subordination","no_score","failure_default"],
+ "equality-reach":["public_reach","delegated_reach","named_private_reach","protected_association","public_continuity","remedy_route"],
+ "equality-proof":["claimant_showing","respondent_burden","evidence","necessity","least_discriminatory_means","core_boundary","review"],
+ "equality-access":["proactive_modes","individual_accommodation","institution_wide_burden","equivalent_route","continuity","remedy"],
+ "equality-diagnostics":["purpose_limit","aggregation","privacy","independent_governance","record_firewall","no_individual_inference","challenge"],
+ "equality-positive-measure":["objective","evidence","eligibility","political_boundary","temporal_source","alternate_review","silence_default","end"],
+ "equality-repair":["historical_barrier","provenance","initiation","function_separation","individual_remedy","systemic_remedy","non_repetition","non_administration"],
+ "equality-federal":["common_baseline","local_variation","portability","equalisation","cross_boundary_duty","dispute_forum","review"],
+ "equality-distinction":["existing_distinction","classification","justification_test","narrowing","review","failure_default"],
 })
 EFFECT_POLICY.update({
  "material-floor-inventory":("class-02",["class-01","class-04"],["material-floor-inventory"],["FS-CLM-04","FS-CLM-05"]),
@@ -383,6 +392,63 @@ EFFECT_POLICY.update({
  "class9-initiation-interim-route":("class-04",["class-09"],["commons-future-condition","fair-process-repair"],["FS-CLM-33"]),
  "class9-liability-public-restoration":("class-04",["class-09"],["commons-future-condition"],["FS-CLM-33"]),
 })
+EQUALITY_EFFECT_POLICY = {
+ "substantive-equality-status":("class-01",["class-03"],["equality-status"],["FS-CLM-02"]),
+ "anti-subordination-baseline":("class-01",["class-03","class-04"],["equality-status"],["FS-CLM-02"]),
+ "open-protected-grounds":("class-01",["class-07"],["equality-status"],["FS-CLM-02"]),
+ "direct-discrimination":("class-01",["class-04"],["equality-status","equality-proof"],["FS-CLM-02"]),
+ "indirect-discrimination":("class-01",["class-04"],["equality-status","equality-proof"],["FS-CLM-02"]),
+ "systemic-discrimination":("class-01",["class-04","class-07"],["equality-status","equality-diagnostics"],["FS-CLM-02"]),
+ "multiple-discrimination":("class-01",["class-04"],["equality-status"],["FS-CLM-02"]),
+ "intersectional-discrimination":("class-01",["class-04"],["equality-status"],["FS-CLM-02"]),
+ "associative-discrimination":("class-01",["class-03"],["equality-status"],["FS-CLM-02"]),
+ "accommodation-denial":("class-04",["class-01","class-02"],["equality-access","equality-proof"],["FS-CLM-02","FS-CLM-05"]),
+ "segregation-exclusion":("class-03",["class-01","class-02"],["equality-status","equality-reach"],["FS-CLM-02","FS-CLM-08"]),
+ "equality-harassment":("class-03",["class-01","class-04"],["equality-status","equality-proof"],["FS-CLM-02","FS-CLM-08"]),
+ "equality-retaliation":("class-04",["class-01","class-03"],["equality-status","equality-repair"],["FS-CLM-02","FS-CLM-08"]),
+ "public-delegated-equality-reach":("class-06",["class-01","class-04"],["equality-reach"],["FS-CLM-02"]),
+ "named-private-equality-reach":("class-03",["class-01","class-06"],["equality-reach"],["FS-CLM-02","FS-CLM-08"]),
+ "public-equality-protection-duty":("class-06",["class-01","class-04"],["equality-reach","equality-repair"],["FS-CLM-02"]),
+ "voluntary-association-boundary":("class-03",["class-01"],["equality-reach"],["FS-CLM-02","FS-CLM-08"]),
+ "expressive-role-boundary":("class-03",["class-01","class-04"],["equality-reach","equality-proof"],["FS-CLM-02","FS-CLM-08"]),
+ "direct-distinction-test":("class-04",["class-01"],["equality-proof"],["FS-CLM-02"]),
+ "indirect-distinction-test":("class-04",["class-01"],["equality-proof"],["FS-CLM-02"]),
+ "equality-core-nonbalancing":("class-01",["class-02","class-03","class-04","class-05"],["equality-proof"],["FS-CLM-02","FS-CLM-05","FS-CLM-08","FS-CLM-26"]),
+ "remedial-burden-shift":("class-04",["class-01","class-07"],["equality-proof"],["FS-CLM-02"]),
+ "respondent-record-evidence":("class-07",["class-04"],["equality-proof","equality-diagnostics"],["FS-CLM-02"]),
+ "proactive-accessibility":("class-02",["class-01","class-06"],["equality-access"],["FS-CLM-02","FS-CLM-05"]),
+ "individual-accommodation":("class-04",["class-01","class-02"],["equality-access"],["FS-CLM-02","FS-CLM-05"]),
+ "institution-wide-undue-burden":("class-04",["class-01","class-02","class-06"],["equality-access","equality-proof"],["FS-CLM-02","FS-CLM-05"]),
+ "equivalent-public-route":("class-06",["class-01","class-02"],["equality-access","equality-reach"],["FS-CLM-02","FS-CLM-05"]),
+ "equality-diagnostics-data-wall":("class-07",["class-01","class-04"],["equality-diagnostics"],["FS-CLM-02"]),
+ "aggregate-pattern-presumption":("class-07",["class-04"],["equality-diagnostics","equality-proof"],["FS-CLM-02"]),
+ "diagnostic-participation-noninference":("class-07",["class-01"],["equality-diagnostics"],["FS-CLM-02"]),
+ "positive-measure-trigger":("class-01",["class-04","class-05"],["equality-positive-measure"],["FS-CLM-02"]),
+ "positive-measure-contract":("class-05",["class-01","class-04","class-07"],["equality-positive-measure"],["FS-CLM-02","FS-CLM-26"]),
+ "political-equality-measure-boundary":("class-05",["class-01"],["equality-positive-measure"],["FS-CLM-02","FS-CLM-26"]),
+ "positive-measure-eligibility-firewall":("class-07",["class-01","class-05"],["equality-positive-measure","equality-diagnostics"],["FS-CLM-02"]),
+ "positive-measure-temporal-end":("class-04",["class-01","class-05","class-07"],["equality-positive-measure"],["FS-CLM-02"]),
+ "historical-barrier-repair":("class-04",["class-01","class-05"],["equality-repair"],["FS-CLM-02"]),
+ "historical-record-disposition":("class-07",["class-01","class-04"],["equality-repair","equality-diagnostics"],["FS-CLM-02"]),
+ "distributed-equality-initiation":("class-04",["class-01","class-06"],["equality-repair"],["FS-CLM-02"]),
+ "equality-function-separation":("class-06",["class-04","class-07"],["equality-repair"],["FS-CLM-02"]),
+ "individual-equality-remedies":("class-04",["class-01"],["equality-repair"],["FS-CLM-02"]),
+ "systemic-equality-remedy":("class-04",["class-01","class-06"],["equality-repair"],["FS-CLM-02"]),
+ "court-nonadministration":("class-04",["class-06"],["equality-repair"],["FS-CLM-02"]),
+ "federal-equality-portability":("class-08",["class-01","class-06"],["equality-federal"],["FS-CLM-02","FS-CLM-26"]),
+ "cross-boundary-equality-corridor":("class-08",["class-01","class-04","class-05"],["equality-federal"],["FS-CLM-02","FS-CLM-26"]),
+ "family-distinction-narrowing":("class-04",["class-01","class-03"],["equality-distinction"],["FS-CLM-02"]),
+ "home-distinction-narrowing":("class-04",["class-01","class-03"],["equality-distinction"],["FS-CLM-02"]),
+ "maturity-distinction-narrowing":("class-04",["class-01","class-07"],["equality-distinction"],["FS-CLM-02"]),
+ "conviction-distinction-narrowing":("class-04",["class-01","class-07"],["equality-distinction"],["FS-CLM-02"]),
+ "custody-distinction-narrowing":("class-04",["class-01","class-03"],["equality-distinction"],["FS-CLM-02"]),
+ "official-status-distinction-narrowing":("class-04",["class-01","class-06"],["equality-distinction"],["FS-CLM-02"]),
+ "placement-distinction-narrowing":("class-04",["class-01","class-08"],["equality-distinction"],["FS-CLM-02"]),
+ "voiding-distinction-narrowing":("class-04",["class-01","class-07"],["equality-distinction"],["FS-CLM-02"]),
+ "recognition-nonoperation-retained":("class-07",["class-01"],["equality-distinction"],["FS-CLM-02"]),
+ "qualification-distinction-narrowing":("class-04",["class-01","class-06"],["equality-distinction"],["FS-CLM-02"]),
+}
+EFFECT_POLICY.update(EQUALITY_EFFECT_POLICY)
 FLOOR_ENTITLEMENT_LINES=(
  "entitled(every person, event { secure() }).","entitled(every person, event { eats() }).",
  "entitled(every person, event { dwell() }).","entitled(every person, event { healthy() }).",
@@ -393,6 +459,7 @@ MATERIAL_FLOOR_EFFECT_KEYS={"material-floor-inventory","dual-floor-ceiling-conti
 LIBERTY_EFFECT_KEYS={"privacy-power-limit","bodily-autonomy-power-limit","movement-power-limit","due-process-power-limit","association-power-limit","expression-power-limit","conscience-power-limit","family-intimate-power-limit","equal-civic-status-limit","residual-private-civic-freedom"}
 ENVIRONMENTAL_EFFECT_KEYS={"environmental-conditions-right","environmental-information-right","environmental-assessment-participation","environmental-reasons-review-remedy","environmental-public-private-reach","environmental-equality-no-score"}
 CLASS9_EFFECT_KEYS={"class9-commons-future-capability","class9-multiaxis-ceilings","class9-science-law-versioning","class9-precaution-nonregression","class9-restoration-nonfungibility","class9-initiation-interim-route","class9-liability-public-restoration"}
+EQUALITY_EFFECT_KEYS=set(EQUALITY_EFFECT_POLICY)
 
 POWER_CLASS_IDS = [f"class-{i:02d}" for i in range(1, 11)]
 CARD_V7_EXTRA_KEYS = [
@@ -1796,7 +1863,7 @@ def _validate_card_test(value, kind, card, context):
 def validate_constitutional_effects(src: dict, ids: dict):
     rows = src.get("constitutional_effects")
     if not isinstance(rows, list) or len(rows) != CONSTITUTIONAL_EFFECT_COUNT:
-        raise LedgerError("constitutional_effects must contain the eight root-standing effects")
+        raise LedgerError("constitutional_effects must contain the checker-owned effect population")
     if [row.get("effect_key") for row in rows] != list(EFFECT_POLICY):
         raise LedgerError("constitutional_effects must follow checker-owned effect order")
     constitution=(ROOT/"new-book-plans/constitution.nibli").read_text(encoding="utf-8")
@@ -1848,6 +1915,7 @@ def validate_constitutional_effects(src: dict, ids: dict):
         elif key in LIBERTY_EFFECT_KEYS: required=("material floor","service delivery","t3")
         elif key in ENVIRONMENTAL_EFFECT_KEYS: required=("material floor","environmental worth score","t3")
         elif key in CLASS9_EFFECT_KEYS: required=("material floor","single scalar","t3")
+        elif key in EQUALITY_EFFECT_KEYS: required=("person worth","risk score","entitlement score","criminal burden","bare record absence","t3")
         else: raise LedgerError(f"{ctx}: missing effect boundary policy")
         for token in required:
             if token not in prohibited: raise LedgerError(f"{ctx}: prohibited inputs omit {token}")
@@ -5620,6 +5688,27 @@ def negative_controls(src: dict) -> int:
                     lambda s: next(row for row in s["coverage_families"] if row["id"]=="FS-CVF-011")["formal_statement_refs"].reverse())
             control("material-floor inventory cannot become an environmental floor",
                     lambda s: next(row for row in s["constitutional_effects"] if row["effect_key"]=="material-floor-inventory")["prohibited_inputs"].__setitem__(0,"Other boundaries only"))
+            if any(row["effect_key"] in EQUALITY_EFFECT_KEYS
+                   for row in src["constitutional_effects"]):
+                control("equality effects cannot lose their closed profile",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "direct-discrimination")[
+                                "profiles"].pop())
+                control("equality effects cannot import person scoring",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "substantive-equality-status")[
+                                "prohibited_inputs"].__setitem__(0, "Other limits"))
+                control("equality domains derive from direct claims",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "proactive-accessibility").update(
+                                {"domain_refs": ["FS-DOM-12"]}))
+                control("constitutional effects receive no power allocation",
+                        lambda s: s["function_allocations"][0].update(
+                            {"power_ref": "FS-CCE-34"}))
+                control("equality effects cannot borrow T3",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "custody-distinction-narrowing")[
+                                "prohibited_inputs"].__setitem__(3, "Other limits"))
             control("bounded delegation is decision-complete",
                     _incomplete_bounded_delegation)
             control("primary class follows the direct effect",
