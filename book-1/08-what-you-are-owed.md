@@ -110,37 +110,41 @@ The last chapter established that no law can imprison you for lacking anything o
 the floor. That protection is real and it is narrower than it sounds, in three specific
 ways, each of which was tested rather than assumed.
 
-**Your credibility is still reachable.** A rule that voids the credibility of anyone
-who does not believe is perfectly writable. It cannot imprison them, but it can mark
-them as someone whose word does not count — and the previous chapter on clawback
-showed what follows: everything they earned goes too.
+At the floor layer, three hostile routes remain syntactically reachable. That
+is no longer the whole constitutional answer.
 
-**Your recognition is still reachable.** A rule that claws back the earnings of
-anyone who keeps no company is writable in the same way. Not prison. Just poverty,
-indefinitely.
+**Your credibility is still reachable through the old floor machinery.** A rule
+that voids the credibility of anyone who does not believe can still be written.
+It cannot imprison them, but it can mark them as someone whose word does not
+count  — and the previous chapter on clawback showed what follows: everything
+they earned goes too.
 
-**And nothing prevents compulsion.** The floor blocks punishment for *absence* — it
-says nothing about manufacture. A rule that makes belief follow from imprisonment is
-accepted without complaint. The design forbids jailing you for what you do not
-believe; it does not forbid arranging for you to believe it.
+**Your recognition is still reachable through that machinery.** A rule that
+claws back the earnings of anyone who keeps no company is writable in the same
+way. Not prison. Just poverty, indefinitely.
 
-Three doors, all open, all verified open. The protection covers imprisonment and
-stops there. A society could honour the floor exactly as written and still make life
-comprehensively unpleasant for the people it disapproves of, by every route except
-the cell.
+**The floor itself does not prevent compulsion.** It blocks punishment for
+*absence* and says nothing about manufacture. That limit is why the constitution
+now carries a separate liberty shell. For every person it records barriers
+against arbitrary interference with privacy, coerced bodily choice, unsupported
+movement restrictions, compelled association or conscience, prescribed
+expression or family form, unequal civic status, an unreviewed consequential
+decision, and prescription of private or civic life.
 
-Verified open is a stronger phrase than it looks, and it cuts both ways. The doors
-are checked by walking through them: each of those bad-but-legal rules is loaded
-against a copy of the record on every run of the book's checks, and each must load,
-because a protection whose edges nobody probes is a protection whose edges nobody
-knows. The boundary is then checked from the other side, which is what makes it a
-measurement rather than an assurance. Take words that are not on the floor — whether
-a person has a home, whether anybody chose them, whether they hold a credential,
-whether their word has been voided — and write the punishing rule against each of
-them: *lacking this, you go to prison.* They all load. So the refusal is not a
-general horror of punishing rules. It is specific to the floor, and the way you can
-tell is that the same sentence, aimed at a word beside the floor, is accepted without
-a murmur.
+Those barriers are rules, not delivery promises and not decorations on the
+floor. They also do not turn every incompatible sentence into a parser error.
+The old bad rules can still be loaded to test the floor's own edge; the separate
+liberty conclusions say that public power may not lawfully use them. Whether an
+institution notices that conclusion, stops an act, or supplies a remedy remains
+outside what this record can prove.
+
+The old tests therefore stay. They walk through the doors in the floor layer
+and show exactly where that layer ends. Then the liberty suite asks a different
+question: whether the person-held barrier derives without a service, score,
+custody record, or delivery result as its premise. Both results matter. One
+prevents the floor from being credited with a protection it does not provide;
+the other prevents liberty from being smuggled back into the floor.
+
 
 One word is deliberately left out of that demonstration, and the reason is worth more
 than the demonstration. The right to move refuses the punishing rule too — but for a

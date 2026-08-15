@@ -601,11 +601,11 @@
       "future_trigger": "Revise if a verified exact-diff binding, semantic review, vocabulary-entrenchment rule, or source-transition mechanism lands."
     },
     {
-      "artifact_ref": "book-1/08-what-you-are-owed.md::Three doors, all open, all verified open",
-      "current_claim": "In the current unmutated constitution, three tested hostile routes outside the anti-sanction guarantee remain open—credibility loss, recognition clawback, and compulsion by deriving belief from imprisonment—while imprisonment for lacking the floor is refused.",
-      "classification": "preserved_but_scoped",
-      "reason": "The floor-deletion cases make the adverse imprisonment rule loadable, so the counted three-door claim depends on the current floor declaration and anti-sanction refusal remaining in the source; the audit does not change that live source.",
-      "future_trigger": "Revise the prose, pins, and counted-claim guard if the floor source, anti-sanction refusal, or set of tested compulsion routes changes."
+      "artifact_ref": "book-1/08-what-you-are-owed.md::At the floor layer, three hostile routes remain syntactically reachable.",
+      "current_claim": "The floor layer still permits the tested credibility, recognition, and compulsion routes, while a separate derived liberty shell now records person-held barriers against their lawful use; neither result proves institutional enforcement.",
+      "classification": "revised_and_scoped",
+      "reason": "The source mutation cases still test the floor's narrow anti-sanction property, while the new liberty family adds an independent normative layer and explicitly leaves operation and enforcement unestablished.",
+      "future_trigger": "Revise the prose, liberty pins, counterfactuals, and this audit if either the floor refusal or the separate liberty barrier changes."
     },
     {
       "artifact_ref": "book-1/12-changing-the-rules.md::The recorded label verdict is real.",

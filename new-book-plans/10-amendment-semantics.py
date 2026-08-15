@@ -126,7 +126,7 @@ SURFACE_EXPECTATIONS = {"not_run", "reject_unreconciled_inventory_relation"}
 NARROWNESS_CLASSIFICATIONS = {"preserved_but_scoped", "revised_and_scoped"}
 REQUIRED_NARROWNESS_REFERENCES = {
     "book-1/01-what-counts-as-evidence.md::That is a check on declared names, not protection of their meaning.",
-    "book-1/08-what-you-are-owed.md::Three doors, all open, all verified open",
+    "book-1/08-what-you-are-owed.md::At the floor layer, three hostile routes remain syntactically reachable.",
     "book-1/12-changing-the-rules.md::The recorded label verdict is real.",
     "book-1/15-the-five-joints.md::The consequential surfaces that remain are the constitutional source",
     "book-1/15-the-five-joints.md::That refusal does not deliver the floor",
@@ -2218,7 +2218,7 @@ def negative_controls(
     )
     chapter_eight_ref = (
         "book-1/08-what-you-are-owed.md::"
-        "Three doors, all open, all verified open"
+        "At the floor layer, three hostile routes remain syntactically reachable."
     )
     method_ref = (
         "book-1/method.md::the candidate edits are applied manually by the audit, not"
