@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-public-safety-defence-emergency-and-external-power",
+  "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -6638,7 +6638,7 @@
     "evidence_ceiling": "Structural source-bound contract and allocation inventory only; no operation, delivery, feasibility, liveness, external truth, calibration, or Gate A passage follows."
   },
   "coverage_population": {
-    "status": "partial",
+    "status": "complete",
     "completed_source_families": [
       "state-form-and-political-membership",
       "time-model",
@@ -6646,7 +6646,8 @@
       "economic-pluralism-and-protected-private-sphere",
       "family-dependency-reproduction-and-collective-plurality",
       "ecological-commons-and-non-human-animal",
-      "public-safety-defence-emergency-and-external-power"
+      "public-safety-defence-emergency-and-external-power",
+      "current-formal-constitution"
     ],
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
@@ -79599,7 +79600,8 @@
         "coercive-protective"
       ],
       "domain_refs": [
-        "FS-DOM-08"
+        "FS-DOM-07",
+        "FS-DOM-06"
       ],
       "affected_claim_refs": [
         "FS-CLM-11",
@@ -79629,80 +79631,394 @@
       ],
       "enforcement_mechanism": "Withhold legal effect when a required premise, separation, reason, review, remedy, end, or temporal term is absent; expose the failure to challenge and correction.",
       "book2_owner_ref": "TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner",
-      "contract": {
-        "lawful_source": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>",
-        "trigger": "Only the source-specific trigger for Case-bound current Court custody authority; absent authenticated trigger evidence, authority is unavailable.",
-        "evidence_rule": "Use only authenticated, contestable, purpose-bound evidence permitted by the owning source; labels, silence, and missing records prove nothing.",
-        "bounded_effect": "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-        "public_reasons": "Record accessible public reasons tied to the exact source, evidence, scope, and affected person or protected object.",
-        "conflict_rule": "A conflicted holder recuses; absence or conflict neither approves nor enlarges the power, and the source-bound alternate route alone may act.",
-        "non_delegable_limit": "No delegation may enlarge the legal effect, evade a separation wall, lower the corridor, or transfer final review to the holder.",
-        "independent_review": "Independent review reaches source, trigger, evidence, scope, reasons, conflict, temporal status, execution, and remedy.",
-        "appeal": "An affected person or authorised representative may use the source-bound appeal or constitutional-review route without losing interim continuity.",
-        "correction": "Correct the decision and every consequential record, preserve prior versions, notify authorised readers, and prevent replay of the superseded effect.",
-        "remedy": "Stop or withhold unlawful effect, preserve the protected condition where possible, repair attributable harm, and keep systemic correction separate from individual liability.",
-        "end_condition": "Authority ends on the source-defined event, expiry, superseding decision, failed renewal, or invalidation; silence and stale evidence never continue it.",
-        "temporal_status": "Current effect requires this power’s own source-bound time record; the custody T3 is never borrowed and Book 2 alone operates clocks or liveness.",
-        "failure_polarity": "Missing, stale, conflicted, unauthenticated, or non-current premises withhold the power; absence never manufactures a permissive or restrictive fact.",
-        "required_separation_pairs": [
-          [
-            "decisive-fact-writer",
-            "auditor"
-          ],
-          [
-            "executor",
-            "auditor"
-          ],
-          [
-            "auditor",
-            "final-remedy"
-          ],
-          [
-            "decisive-fact-writer",
-            "executor"
-          ]
-        ]
-      },
-      "profile_contracts": {
-        "ordinary-public-power": {
-          "office": "office is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "democratic_source": "democratic source is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "trigger": "trigger is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "evidence": "evidence is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "scope": "scope is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "conflict_rule": "conflict rule is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "non_delegable_limit": "non delegable limit is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "review": "review is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "appeal": "appeal is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "end_condition": "end condition is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "temporal_status": "temporal status is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power."
-        },
-        "coercive-protective": {
-          "named_instrument": "named instrument is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "authorised_actor_and_mandate": "authorised actor and mandate is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "individualised_recorded_ground": "individualised recorded ground is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "identification_and_reasons": "identification and reasons is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "prior_authorisation_and_immediate_danger_exception": "prior authorisation and immediate danger exception is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "necessity_least_harm_warning_cessation_aid": "necessity least harm warning cessation aid is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "public_actor_burden": "public actor burden is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "capability_removal_and_no_reader": "capability removal and no reader is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "upstream_personhood_and_floor_refusals": "upstream personhood and floor refusals is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "counsel_interpreter_accommodation": "counsel interpreter accommodation is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "third_party_notification": "third party notification is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "prompt_automatic_review": "prompt automatic review is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "investigator_deployer_separation": "investigator deployer separation is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "non_punitive_and_no_consequential_feed": "non punitive and no consequential feed is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "shelter_and_recorded_voice": "shelter and recorded voice is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "record_contract": "record contract is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "failure_polarity": "failure polarity is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "remedy": "remedy is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "audit": "audit is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
-          "source_bound_temporal_contract": "source bound temporal contract is fixed by the source-bound Case-bound current Court custody authority contract: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power."
-        }
-      },
       "source_refs": [
         "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
-      ]
+      ],
+      "primary_class_ref": "class-04",
+      "secondary_class_refs": [
+        "class-06"
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "For Case-bound current Court custody authority, authority exists only under the cited constitutional source: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "trigger": {
+          "text": "For Case-bound current Court custody authority, legal effect begins only after the cited source premises are authenticated: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "evidence_rule": {
+          "text": "For Case-bound current Court custody authority, the decision record must establish the effect-specific premises and may not substitute labels or silence: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "bounded_effect": {
+          "text": "For Case-bound current Court custody authority, the holder may produce only the direct legal effect described by the source: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "public_reasons": {
+          "text": "For Case-bound current Court custody authority, public reasons must connect the cited source, admitted facts, affected holder, and exact effect: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "conflict_rule": {
+          "text": "For Case-bound current Court custody authority, a conflicted holder withdraws and only a source-authorised alternate may proceed: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "non_delegable_limit": {
+          "text": "For Case-bound current Court custody authority, delegation cannot enlarge the effect, evade a wall, or transfer final review to the holder: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "independent_review": {
+          "text": "For Case-bound current Court custody authority, independent review reaches source, trigger, evidence, scope, reasons, execution, and temporal currency: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "appeal": {
+          "text": "For Case-bound current Court custody authority, an affected holder keeps the source-provided challenge route and interim protection while it is decided: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "correction": {
+          "text": "For Case-bound current Court custody authority, a superseded decision and each consequential record must be corrected without replay: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "remedy": {
+          "text": "For Case-bound current Court custody authority, unlawful effect is withheld or stopped and attributable harm remains separately remediable: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "end_condition": {
+          "text": "For Case-bound current Court custody authority, authority ends on the source-defined expiry, invalidation, supersession, or failed renewal: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "temporal_status": {
+          "text": "For Case-bound current Court custody authority, currency depends on this power's own source record and never on the retained custody t3 record: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        },
+        "failure_polarity": {
+          "text": "For Case-bound current Court custody authority, missing, stale, conflicted, or unauthenticated positive premises withhold authority and create no opposite fact: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+          "basis": "current-derived",
+          "source_refs": [
+            "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+          ]
+        }
+      },
+      "profile_terms": {
+        "ordinary-public-power": {
+          "office": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the office term identifies the source-authorised holder and excludes inherent authority over: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "democratic_source": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the democratic source term admits only authenticated and contestable evidence for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "trigger": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the trigger term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "evidence": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the evidence term admits only authenticated and contestable evidence for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "scope": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the scope term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "conflict_rule": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the conflict rule term prevents conflicted self-authorisation and names the bounded alternate for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "non_delegable_limit": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the non delegable limit term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "review": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the review term keeps an independent challenge or checking route for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "appeal": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the appeal term keeps an independent challenge or checking route for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "end_condition": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the end condition term ends or renews only on a current source-bound record for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "temporal_status": {
+            "text": "Within the ordinary-public-power profile for Case-bound current Court custody authority, the temporal status term ends or renews only on a current source-bound record for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          }
+        },
+        "coercive-protective": {
+          "named_instrument": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the named instrument term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "authorised_actor_and_mandate": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the authorised actor and mandate term identifies the source-authorised holder and excludes inherent authority over: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "individualised_recorded_ground": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the individualised recorded ground term admits only authenticated and contestable evidence for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "identification_and_reasons": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the identification and reasons term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "prior_authorisation_and_immediate_danger_exception": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the prior authorisation and immediate danger exception term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "necessity_least_harm_warning_cessation_aid": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the necessity least harm warning cessation aid term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "public_actor_burden": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the public actor burden term identifies the source-authorised holder and excludes inherent authority over: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "capability_removal_and_no_reader": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the capability removal and no reader term keeps an independent challenge or checking route for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "upstream_personhood_and_floor_refusals": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the upstream personhood and floor refusals term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "counsel_interpreter_accommodation": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the counsel interpreter accommodation term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "third_party_notification": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the third party notification term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "prompt_automatic_review": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the prompt automatic review term keeps an independent challenge or checking route for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "investigator_deployer_separation": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the investigator deployer separation term prevents conflicted self-authorisation and names the bounded alternate for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "non_punitive_and_no_consequential_feed": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the non punitive and no consequential feed term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "shelter_and_recorded_voice": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the shelter and recorded voice term admits only authenticated and contestable evidence for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "record_contract": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the record contract term admits only authenticated and contestable evidence for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "failure_polarity": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the failure polarity term fixes the admissible constitutional boundary for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "remedy": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the remedy term requires cessation, correction, and effect-specific repair for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "audit": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the audit term keeps an independent challenge or checking route for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          },
+          "source_bound_temporal_contract": {
+            "text": "Within the coercive-protective profile for Case-bound current Court custody authority, the source bound temporal contract term admits only authenticated and contestable evidence for: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+            "basis": "current-derived",
+            "source_refs": [
+              "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+            ]
+          }
+        }
+      },
+      "required_separation_pairs": [
+        [
+          "decisive-fact-writer",
+          "auditor"
+        ],
+        [
+          "executor",
+          "auditor"
+        ],
+        [
+          "auditor",
+          "final-remedy"
+        ],
+        [
+          "decisive-fact-writer",
+          "executor"
+        ]
+      ],
+      "permitted_inputs": [
+        "Authenticated current source record for Case-bound current Court custody authority",
+        "Contestable evidence of the specific premises for The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+        "A holder-and-scope record limited to formal-active-custody"
+      ],
+      "prohibited_inputs": [
+        "Labels, silence, status, or institutional name alone for Case-bound current Court custody authority",
+        "A stale, superseded, conflicted, or unauthenticated record for Case-bound current Court custody authority",
+        "The formal-active-custody T3 record borrowed for formal-active-custody"
+      ],
+      "permitted_downstream_effects": [
+        "The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power."
+      ],
+      "evidence_authority": {
+        "text": "For Case-bound current Court custody authority, only the cited source and its authenticated premises may establish this bounded legal effect: The one implemented T3 restrictive-power family; crosswalks the whole marked lease rule rather than generalising it to any other power.",
+        "basis": "current-derived",
+        "source_refs": [
+          "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-POW-210-NEGATIVE",
+        "status": "executable",
+        "assertion": "Withhold one required premise for Case-bound current Court custody authority; the direct effect must not arise and no opposite fact may be manufactured.",
+        "source_refs": [
+          "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        ],
+        "executable_ref": "new-book-plans/12-temporal-assurance.py::def negative_controls(reviewed: Mapping[str, object], constitution: str, dependencies: Mapping[str, bytes]) -> int:"
+      },
+      "counterfactual": {
+        "id": "FS-POW-210-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Replace the source, holder, scope, or temporal record for Case-bound current Court custody authority; the original direct effect must remain unavailable.",
+        "source_refs": [
+          "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
+        ],
+        "executable_ref": "new-book-plans/temporal-assurance-case.json::\"case_bound_rule_fragment\":"
+      },
+      "part_v_status": "implemented-current-formal",
+      "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Case-bound current Court custody authority; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     }
   ],
   "power_contract_templates": [
@@ -81428,7 +81744,9 @@
       "title": "Implemented T1, T2, and T3 temporal family",
       "state": "prose-landed",
       "source_family_refs": [],
-      "card_refs": [],
+      "card_refs": [
+        "FS-POW-210"
+      ],
       "template_refs": [
         "FS-PCT-01"
       ],
@@ -82114,14 +82432,23 @@
     {
       "id": "FS-CVF-010",
       "title": "Current Formal Constitution coverage batch",
-      "state": "planned",
+      "state": "coverage-ready",
       "source_family_refs": [
         "current-formal-constitution"
       ],
       "card_refs": [],
       "template_refs": [],
       "refusal_refs": [],
-      "crosswalk_refs": [],
+      "crosswalk_refs": [
+        "FS-PCD-01",
+        "FS-PCD-02",
+        "FS-PCD-03",
+        "FS-PCD-04",
+        "FS-PCD-05",
+        "FS-PCD-06",
+        "FS-PCD-07",
+        "FS-PCD-08"
+      ],
       "formal_statement_refs": [],
       "pin_group_refs": [],
       "counterfactual_refs": [],
@@ -88420,14 +88747,7 @@
     "external_review_policy": "optional-non-gating"
   },
   "review_commissions": [],
-  "deferred_populations": [
-    {
-      "record_type": "coverage-contracts",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
-      "closure_condition": "all eight source-family prefixes use schema-v7 source-cited terms and the pre-drafting invariant passes",
-      "stage": "schema-v7-source-family-migration"
-    }
-  ],
+  "deferred_populations": [],
   "stopping_rule": {
     "named_axes": [
       "legal-effect-class",
@@ -104581,6 +104901,51 @@
       "scope_sha256": "2eabe2892983d3277fcbfb6741fe1badf8fa1df05fd81546e440940ee1f93ef5",
       "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
       "executed_at_utc": "2026-08-15T06:15:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "passed-with-recorded-limits",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-04",
+      "title": "Schema-v7 coverage-contract repository audit",
+      "source_version": "fs-ledger-2026-08-15-coverage-contracts-v7-current-formal-constitution",
+      "scope_sha256": "e0e4c0fc4c367aa5535bf39359b01409bfd22acf679022a4b26f5c81a78d7458",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-15T11:24:21Z",
       "method": "repository-source-derived-adversarial-audit",
       "criterion_coverage": [
         "declared-rights",

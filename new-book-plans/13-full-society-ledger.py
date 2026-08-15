@@ -1806,6 +1806,11 @@ def validate_power_population(src: dict, ids: dict):
                                for v in values)):
                     raise LedgerError(
                         f"{ctx}.{field} must be non-empty and duplicate-free")
+            if (not retained and not any(
+                    "formal-active-custody" in value
+                    for value in rec["prohibited_inputs"])):
+                raise LedgerError(
+                    f"{ctx}: every other power must prohibit T3 borrowing")
             _validate_contract_term(
                 rec["evidence_authority"], "evidence_authority", rec,
                 f"{ctx}.evidence_authority")
@@ -4155,10 +4160,11 @@ def collect_map_needles(src) -> set:
 def render_coverage_region(src: dict) -> str:
     claims_by_id = {c["id"]: c for c in src["claims"]}
     lines = [
-        "| Domain | Current Book 1 coverage | Ratified scope requirement | "
-        "Status | Gap / author ruling required | Split claims (posture) | "
-        "Source-derived power cards |",
-        "| --- | --- | --- | --- | --- | --- | --- |",
+        "| Domain | Historical frozen coverage | Ratified scope requirement | "
+        "Current contract readiness | Historical gap / ruling record | "
+        "Split claims (posture) | Direct-effect cards | "
+        "Implementation and tests | Book 2 boundary |",
+        "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ]
     for row in src["legacy_rows"]:
         splits = []
@@ -4168,15 +4174,44 @@ def render_coverage_region(src: dict) -> str:
             if posture == "Unestablished":
                 posture += "/" + claim["unestablished_disposition"]
             splits.append(f"{cid} ({posture})")
+        cards = [
+            power for power in src["powers"]
+            if any(
+                claim_ref in row["split_claim_refs"]
+                for claim_ref in power["affected_claim_refs"]
+            )
+        ]
+        ready = bool(cards) and all(
+            "contract_terms" in power and "profile_terms" in power
+            for power in cards
+        )
+        readiness = (
+            "coverage-ready; not formalized or operational"
+            if ready else
+            "historical row has no direct-effect card in this claim split"
+        )
+        tests = "; ".join(
+            f"{power['id']}: "
+            f"{power['negative_test']['status']}/"
+            f"{power['counterfactual']['status']}"
+            for power in cards
+        ) or "—"
+        book2 = (
+            "Every listed card carries a no-operation Book 2 handoff"
+            if cards else
+            "No card handoff in this historical row"
+        )
         lines.append(
             "| " + " | ".join([
-                row["domain_title"], row["legacy_coverage"],
-                row["legacy_scope_requirement"], row["legacy_status_cell"],
-                row["legacy_gap"], "; ".join(splits) or "—",
-                "; ".join(
-                    power["id"] for power in src["powers"]
-                    if set(row["domain_refs"]) & set(power["domain_refs"])
-                ) or "—",
+                row["domain_title"],
+                "Historical: " + row["legacy_coverage"],
+                row["legacy_scope_requirement"],
+                readiness,
+                "Historical: " + row["legacy_gap"],
+                "; ".join(splits) or "—",
+                "; ".join(power["id"] for power in cards) or "—",
+                tests,
+                book2,
             ]) + " |"
         )
     return "\n".join(lines)
@@ -5331,6 +5366,39 @@ def negative_controls(src: dict) -> int:
                 lambda s: s["powers"][0]["profiles"].pop())
         control("profile fields reject blank substitutes",
                 _blank_first_power_profile)
+        if src["coverage_population"]["status"] == "complete":
+            control("coverage completion is an exact source-family prefix",
+                    lambda s: s["coverage_population"][
+                        "completed_source_families"].__setitem__(
+                            0, "time-model"))
+            control("complete coverage cannot regain its deferral",
+                    _coverage_regain_deferral)
+            control("contract prose cannot be repeated across cards",
+                    _duplicate_contract_prose)
+            control("every contract term keeps a source",
+                    _contract_term_without_source)
+            control("bounded delegation is decision-complete",
+                    _incomplete_bounded_delegation)
+            control("primary class follows the direct effect",
+                    lambda s: s["powers"][0].update(
+                        {"primary_class_ref": "class-10"}))
+            control("domains derive only from affected claims",
+                    lambda s: s["powers"][0].update(
+                        {"domain_refs": ["FS-DOM-12"]}))
+            control("planned tests cannot claim execution",
+                    _planned_test_claims_execution)
+            control("formalization cannot precede coverage metadata",
+                    _premature_formalization)
+            control("prose cannot precede formalization",
+                    _premature_prose)
+            control("formal statements are assigned exactly once",
+                    lambda s: s["coverage_families"][0][
+                        "formal_statement_refs"].pop())
+            control("other powers cannot borrow the retained T3 record",
+                    _remove_t3_borrowing_wall)
+            control("Book 2 routing is not a constitutional coverage family",
+                    lambda s: s["coverage_families"][2].update(
+                        {"source_family_refs": ["book-2-operation"]}))
         control("unknown power holder body is refused",
                 lambda s: s["powers"][0]["holder_body_refs"].__setitem__(
                     0, "FS-BOD-999"))
@@ -5918,6 +5986,63 @@ def _blank_first_power_profile(s):
     else:
         field = next(iter(power["profile_contracts"][profile]))
         power["profile_contracts"][profile][field] = "N/A"
+
+
+def _coverage_regain_deferral(s):
+    s["deferred_populations"].append({
+        "record_type": COVERAGE_DEFERRAL_TYPE,
+        "owner_ref": _CONTROL_NEEDLE,
+        "closure_condition": "control",
+        "stage": "control",
+    })
+
+
+def _duplicate_contract_prose(s):
+    s["powers"][1]["contract_terms"]["lawful_source"]["text"] = (
+        s["powers"][0]["contract_terms"]["lawful_source"]["text"])
+
+
+def _contract_term_without_source(s):
+    s["powers"][0]["contract_terms"]["lawful_source"]["source_refs"] = []
+
+
+def _incomplete_bounded_delegation(s):
+    term = next(
+        term for power in s["powers"]
+        for term in power["contract_terms"].values()
+        if term["basis"] == "bounded-delegation")
+    term.pop("failure_default")
+
+
+def _planned_test_claims_execution(s):
+    power = next(
+        row for row in s["powers"]
+        if row["negative_test"]["status"] == "planned")
+    power["negative_test"]["status"] = "executable"
+
+
+def _premature_formalization(s):
+    family = next(
+        row for row in s["coverage_families"]
+        if row["state"] == "coverage-ready")
+    family["state"] = "formalized"
+
+
+def _premature_prose(s):
+    family = next(
+        row for row in s["coverage_families"]
+        if row["state"] == "coverage-ready")
+    family["prose_refs"] = ["book-1/01-what-counts-as-evidence.md"]
+
+
+def _remove_t3_borrowing_wall(s):
+    power = next(
+        row for row in s["powers"]
+        if row["manifest_key"] != RETAINED_FORMAL_KEY)
+    power["prohibited_inputs"] = [
+        value for value in power["prohibited_inputs"]
+        if "formal-active-custody" not in value
+    ]
 
 
 def _derived_bad_kind(s):
@@ -7099,9 +7224,10 @@ def render(src: dict, resolution: dict) -> str:
     w("## Source-derived power contracts and function allocations")
     w("")
     population = src["power_population"]
-    completed = population["completed_source_families"]
-    w(f"Population status: **{population['status']}**. Completed source-family "
-      f"prefix: {', '.join(completed) if completed else 'none — foundation only'}.")
+    coverage = src["coverage_population"]
+    w(f"Power population status: **{population['status']}**. Coverage-contract "
+      f"status: **{coverage['status']}**. Completed coverage prefix: "
+      f"{', '.join(coverage['completed_source_families']) or 'none'}.")
     w("")
     w(f"Current rows: {len(src['powers'])} FS-POW cards; "
       f"{len(src['power_contract_templates'])} FS-PCT templates; "
@@ -7109,20 +7235,32 @@ def render(src: dict, resolution: dict) -> str:
       f"{len(src['power_crosswalk_dispositions'])} FS-PCD formal "
       f"dispositions; {len(src['function_allocations'])} FS-FAL allocations.")
     w("")
-    w(f"Evidence ceiling: {population['evidence_ceiling']}")
+    w(f"Evidence ceiling: {coverage['evidence_ceiling']}")
     w("")
-    w("| Power | Manifest grain | Profiles | Holder bodies | Holder roles | "
-      "Claims | Book 2 owner |")
+    w("| Power | Manifest grain | Class / profiles | Claims / domains | "
+      "Contract readiness | Tests | Part V / Book 2 boundary |")
     w("| --- | --- | --- | --- | --- | --- | --- |")
     for rec in src["powers"]:
-        w(f"| {rec['id']} {rec['title']} | `{rec['manifest_key']}` | "
-          f"{', '.join(rec['profiles'])} | "
-          f"{', '.join(rec['holder_body_refs']) or 'role-held'} | "
-          f"{', '.join(rec['holder_role_refs'])} | "
-          f"{', '.join(rec['affected_claim_refs'])} | "
-          f"`{rec['book2_owner_ref']}` |")
+        summary = rec["contract_terms"]["bounded_effect"]["text"]
+        w(f"| {rec['id']} {rec['title']} | {rec['manifest_key']} | "
+          f"{rec['primary_class_ref']}; {', '.join(rec['profiles'])} | "
+          f"{', '.join(rec['affected_claim_refs'])}; "
+          f"{', '.join(rec['domain_refs'])} | coverage-ready — {summary} | "
+          f"{rec['negative_test']['status']}/"
+          f"{rec['counterfactual']['status']} | "
+          f"{rec['part_v_status']}; {rec['book2_handoff']} |")
     if not src["powers"]:
         w("| — | no completed source family | — | — | — | — | — |")
+    w("")
+    w("Coverage-family drafting gate:")
+    w("")
+    w("| Family | State | Cards | Formal statements | Drafting block |")
+    w("| --- | --- | ---: | ---: | --- |")
+    for family in src["coverage_families"]:
+        w(f"| {family['id']} {family['title']} | {family['state']} | "
+          f"{len(family['card_refs'])} | "
+          f"{len(family['formal_statement_refs'])} | "
+          f"{family['blocked_before_drafting']} |")
     w("")
     w("Contract templates:")
     w("")
@@ -7700,6 +7838,16 @@ def render_reader(src: dict, resolution: dict) -> str:
     w(f"Canonical source version: `{src['source_version']}`. "
       f"Gate verdict: **{src['acceptance_gate']['verdict']}**")
     w("")
+    w(f"Coverage contracts: **{src['coverage_population']['status']}**. "
+      "Coverage-ready means source-specific planning is complete; it does not "
+      "mean formalized, prose-landed, implemented, or operational.")
+    w("")
+    w("Coverage-family drafting states:")
+    w("")
+    for family in src["coverage_families"]:
+        w(f"- {family['id']} {family['title']}: {family['state']} — "
+          f"{family['blocked_before_drafting']}")
+    w("")
     w(f"Canonical source SHA-256: `{_canonical_digest(src)}`. "
       "Every canonical list population is bound below; this digest also "
       "binds the non-list contract fields.")
@@ -7764,10 +7912,16 @@ def render_reader(src: dict, resolution: dict) -> str:
         w("Source-derived power cards:")
         w("")
         for power in domain_powers:
-            w(f"- `{power['id']}` — {power['title']} "
-              f"(`{power['manifest_key']}`); holder bodies: "
-              f"{', '.join(power['holder_body_refs']) or 'role-held'}; "
-              f"Book 2 owner: `{power['book2_owner_ref']}`.")
+            w(f"- {power['id']} — {power['title']} "
+              f"({power['manifest_key']}); class "
+              f"{power['primary_class_ref']}; profiles "
+              f"{', '.join(power['profiles'])}; claims "
+              f"{', '.join(power['affected_claim_refs'])}; tests "
+              f"{power['negative_test']['status']}/"
+              f"{power['counterfactual']['status']}; Part V "
+              f"{power['part_v_status']}. Contract: "
+              f"{power['contract_terms']['bounded_effect']['text']} "
+              f"Book 2 boundary: {power['book2_handoff']}")
         if not domain_powers:
             w("- None in the completed source-family prefix.")
         w("")
