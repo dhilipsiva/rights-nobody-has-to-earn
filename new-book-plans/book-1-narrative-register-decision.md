@@ -316,3 +316,15 @@ On 2026-08-08 the author ratified:
 This decision changes planning and permitted register only. It creates no
 predicate, rule, pin, chapter, or public claim, and it edits no sentence of the
 book.
+
+## 14. 2026-08-15 superseding reader-gate amendment
+
+Section 10 no longer defines a publication dependency. Reader-balance studies
+are optional R6 evidence. Gate C instead tests source binding, artifact
+integrity, navigation, internal consistency, and mechanical accessibility.
+Those checks establish no reader comprehension, reader suitability, lived
+effect, or accessibility for actual users.
+
+The reader-experience ledger remains useful as a structural and editorial
+inventory, but no external reader or reviewer is required to finish or publish
+the book.

@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-14-scope-review-protocol-v2`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-repository-adversarial-scope-audit`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -24,11 +24,11 @@ A version may close only when all of the following hold for the gate's permitted
 2. every required projection regenerates from that source
 3. no unresolved critical gap applicable to that gate's permitted claim remains
 4. every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation
-5. independent scope review leaves no proposal that has not received a public disposition
+5. a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set
 
 **Materiality:** A proposal is material when accepting it could change a declared right, liberty, power, duty, protected private boundary, cross-domain dependency, ordinary-life account, failure/recovery path, or adequacy, accessibility/equality, continuity, resilience, sustainability, safety, or resource criterion.
 
-**Boundary:** Exhaustive may describe the disposition map only for the named axes above, a named source version, a named envelope, and a named review event. This is versioned exhaustiveness for those declared axes, not a timeless completeness theorem, and disclosure alone does not cure a critical gap.
+**Boundary:** Exhaustive may describe the disposition map only for the named axes above, a named source version, a named envelope, and a named current-source repository audit. This is versioned exhaustiveness for those declared axes, not a timeless completeness theorem, and disclosure alone does not cure a critical gap.
 
 **No hiding:** No critical unresolved defect affecting a gate's permitted claim may be hidden by classification, assignment, disclosure, or a stopping-rule decision.
 
@@ -40,7 +40,7 @@ Per-condition status, generated from the source and echoing the closure conditio
 - **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
 - **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
-- **unmet-external** — independent scope review leaves no proposal that has not received a public disposition: no current-source qualifying terminal event exists, and the in-repo reviewer corpus is never admissible for this condition
+- **met-mechanically** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: a current-source repository adversarial audit covers the declared criteria, exact checker controls, command chain, and every Gate-A-applicable defect disposition
 - **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; this satisfies Gate A's envelope precondition. Calibration and values remain Book 2 Gate D work, and operational assurance and remedied resolution still require them
 
 ## The five layers
@@ -215,7 +215,7 @@ The five routing dispositions are the reader-facing five layers (author-ratified
 
 ## Roles, life-course stages, scales, and power positions
 
-Each role records the standing of a person in a position — life-course stages are roles of a kind — and routes it against domains, scales, and the ratified bodies. A role is never a floor-changing status: one person occupies many roles and none buys a higher floor or a lower one, which is why every role's layer is the constitutional invariant of universal standing; rule content stays on domains and claims. Axis coverage is mechanical — every domain cited, every named scale exercised, every required body carrying both an affected and a checking role position, every recorded private power naming its affected counter-roles and its checkers — while pairwise sufficiency stays a question for the independent scope review; no full Cartesian product is attempted, and deliberately omitted candidates and combinations are recorded below with risk-based reasons. The FS-POW decomposition of each power is staged below by exact source-family prefix and remains deferred until the complete population. Formal anchors stay honest: a derived constitution predicate, an asserted predicate with its replace-card path, or ratified-but-unimplemented doctrine.
+Each role records the standing of a person in a position — life-course stages are roles of a kind — and routes it against domains, scales, and the ratified bodies. A role is never a floor-changing status: one person occupies many roles and none buys a higher floor or a lower one, which is why every role's layer is the constitutional invariant of universal standing; rule content stays on domains and claims. Axis coverage is mechanical — every domain cited, every named scale exercised, every required body carrying both an affected and a checking role position, every recorded private power naming its affected counter-roles and its checkers — while pairwise sufficiency is tested only against the declared source-derived audit criteria; no full Cartesian product is attempted, and deliberately omitted candidates and combinations are recorded below with risk-based reasons. The FS-POW decomposition of each power is staged below by exact source-family prefix and remains deferred until the complete population. Formal anchors stay honest: a derived constitution predicate, an asserted predicate with its replace-card path, or ratified-but-unimplemented doctrine.
 
 | Role | Kind | Domains | Scales | Affected by | Checks | Anchor |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1251,7 +1251,7 @@ Source-bound candidate census only: no row creates law, a complete contract card
 
 The reviewed manifest `new-book-plans/full-society-power-source-manifest.json` binds 237 source-identified entries: 209 require contract cards, 19 are refusals or limits, and 8 crosswalk narrow current formal fixtures.
 
-Known lawful-allocation gaps that keep FS-POW deferred:
+Historical lawful-allocation gaps resolved by the complete FS-POW population:
 
 - appointments-qualification function and its nominee, selector, and qualification positions
 - custodial execution function distinct from policing
@@ -1273,7 +1273,7 @@ Closure: complete per-instrument FS-POW contract cards, lawful body and role all
 | FS-RTE-04 The claim registry | built | That a figure matches its named source at its retrieval date; staleness for script-refreshable entries | Truth of the source, or anything about this design | A schema violation or a stale fetchable entry must fail the registry gate | The staleness gate's failure path is the route's control; the split is by name — script-refreshable entries gate on staleness, pinned-source entries are schema-checked and human re-cited |
 | FS-RTE-05 Operational assurance | unbuilt | That a staffed, accountable route was exercised end to end in a named envelope, once available | Deployment, generalisation, or formal entailment | not-yet-declared — a reason the route is unbuilt, not an exemption | not-yet-declared |
 | FS-RTE-06 Reader and lived-experience studies | unbuilt | Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available | Population statistics, authority over the people studied, resistance to rewritten Git history, external custody truth, or any legal or empirical claim | Declared by the reader-evidence protocol decision: the instrument must fail a seeded unbalanced or planted-misconception control, watched failing during the pilot's revise step; not yet shipped | not-yet-shipped — declared but unbuilt; the declaration does not make the route available |
-| FS-RTE-07 Independent multidisciplinary and adversarial review | unbuilt | That named independent reviewers examined a named scope and their proposals received public dispositions, once available | Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure | Each commission precommits distinct plant and seed digests plus the exact protocol and semantic scope digests before a structured UTC window. A terminal event fails if the named panel misses the plant, either side of the seeded materiality boundary is misclassified, the reveal hashes drift, chronology or intake drift, or any proposal lacks Darshu triage, Dhanush checking, reasons, and public disposition. | The generator watches malformed or duplicate digests, incomplete or conflicted panels, criterion gaps, bad windows, stale scope or protocol bindings, intake mismatch, missing checks, early reveal, control-result drift, stale-source success, and any built or premature available R7 state. |
+| FS-RTE-07 Repository source-derived adversarial audit | built | That the named source version passes the declared structural, reference-closure, projection, allocation, defect-disposition, and watched-failing-mutation checks | Independent-human review, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root | The route fails when the current audit drifts from the source or protocol digest, criteria, checker controls, command chain, finding set, result, or evidence ceiling, or when any watched mutation passes | The generator watches stale source/protocol bindings, criterion gaps, control or command drift, missing Gate-A findings, evidence-ceiling widening, and any unbuilt or available R7 relabelling |
 
 ## Enum mapping (maps, renames nothing)
 
@@ -1456,18 +1456,22 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Residuals: none beyond the affected claim's own scope bound — the family has no residual sibling row
 - Reader mapping: `book-1/05-voiding.md::Koa recorded a finding about Esa`; admissible evidence: executable pins over the current source
 
-## Review commissions, proposals, and terminal events
+## Repository scope audit and optional external review
 
-The amended append-only review contract is schema-enforced. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying events: 0. Proposal and event populations remain deferred until the external review runs. The in-repo reviewer corpus is never admissible R7 evidence. Independence is derived from the commission, panel, scope and protocol digests, frozen intake, UTC chronology, Darshu triage, Dhanush checking, reveal, controls, and public dispositions; it is not a self-label.
+Gate A uses the closed, source-derived repository audit. Scope audits: 1; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
-The scope-review protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status author-confirmed 2026-08-14 — amended protocol basis recorded; its status line is live-checked. Semantic scope digest: `2e99cad5fdb4cbb46f25e0f2a5542590a0b39335f139d23fcabb85d578c39c78`. Designated 2026-08-09: severity owner Darshu; independent checker Dhanush; custodian dhilipsiva — author, pre-image custodian.
+| Audit | Source | Scope digest | Executed | Result | Findings |
+| --- | --- | --- | --- | --- | --- |
+| FS-SAU-01 | fs-ledger-2026-08-15-repository-adversarial-scope-audit | `9ee20c4702e04adb4c43233f11c70caf1d0b40fe3be30752d149dc524d152103` | 2026-08-15T03:26:50Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-No review is commissioned. No plant or seed pre-image or digest has been created, no reviewer panel is selected, no UTC window is open, and no packet commit exists. The next step is an author checkpoint.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status author-confirmed 2026-08-15 -- repository-adversarial protocol v3; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `9ee20c4702e04adb4c43233f11c70caf1d0b40fe3be30752d149dc524d152103`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+
+External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 
 | Rubric class | Meaning |
 | --- | --- |
 | critical | Accepting the proposal would falsify the gate's permitted claim — a scope or assurance omission. An unresolved critical item blocks the affected gate even when it has an owner or has been disclosed, and a checked post-closure critical classification reopens Gate A. |
-| material | Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives a severity owner, an independent check, and one public disposition; retention as a limit creates or joins a stable defect row. |
+| material | Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives an author disposition and checker-enforced source-consistency review; retention as a limit creates or joins a stable defect row. |
 | minor | The editorial band: no record change and no materiality under the test. Recorded reasons suffice; no severity machinery attaches. |
 
 ## External assumptions and the envelope
@@ -1755,8 +1759,6 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 
 | Record type | Stage | Owner | Closure condition |
 | --- | --- | --- | --- |
-| proposals | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | a commissioned independent review freezes its exact intake and every proposal receives Darshu triage, Dhanush checking, reasons, and one public proposal_disposition |
-| review_events | stage-4 | `new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure` | a current-source terminal event binds an append-only commission, eligible named panel, exact scope/protocol digests and packet commit, structured UTC chronology, frozen intake, revealed plant and seed pre-images, passed derived controls, and every public proposal disposition |
 
 The coverage-map view, the role matrix, the dependency map, the scenario catalogue, the Book 2 crosswalk, and the assurance allocation now regenerate from the canonical source. The structural reader ledger also regenerates from that source; it is navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. No one projection substitutes for another.
 

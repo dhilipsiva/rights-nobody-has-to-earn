@@ -2,7 +2,7 @@
 
 # Constitutional-closure and model-allocation audit
 
-Canonical source: `fs-ledger-2026-08-14-scope-review-protocol-v2`. This file is generated; edit `full-society-ledger.json`, never this report.
+Canonical source: `fs-ledger-2026-08-15-repository-adversarial-scope-audit`. This file is generated; edit `full-society-ledger.json`, never this report.
 
 **Verdict boundary:** this is a structural, claim-relative audit. `pass` means only that the reviewed contract for that exact claim survives the declared checks at its existing posture and scope. `block` and `bounded-unresolved` remain visible. No result upgrades posture or establishes delivery, liveness, feasibility, operation, external truth, reader response, constitutional completeness, or Gate A.
 
@@ -18,7 +18,7 @@ Every claim has one reviewed primary route and an explicit all-of required-route
 | FS-RTE-04 | evidence registry | built | — | Truth of the source, or anything about this design |
 | FS-RTE-05 | operational assurance | unbuilt | `FS-CLM-03`, `FS-CLM-06`, `FS-CLM-13`, `FS-CLM-16`, `FS-CLM-20` | Deployment, generalisation, or formal entailment |
 | FS-RTE-06 | reader/lived-experience testing | unbuilt | `FS-CLM-37` | Population statistics, authority over the people studied, resistance to rewritten Git history, external custody truth, or any legal or empirical claim |
-| FS-RTE-07 | independent multidisciplinary review | unbuilt | — | Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure |
+| FS-RTE-07 | repository source-derived adversarial audit | built | — | Independent-human review, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root |
 
 ## Constitutional closure surfaces
 

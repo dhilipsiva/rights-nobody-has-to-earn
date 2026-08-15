@@ -2,10 +2,7 @@
 
 # Full-Society Volume, Edition, and Stopping Boundary Decision
 
-> **Status: author-ratified 2026-08-07 — two-book model + C then E +
-> versioned closure; current Book 1 reader-evidence execution withdrawn
-> 2026-08-11, leaving the Gate C ceiling in force; reference-envelope
-> ownership clarified 2026-08-13.** This is a scope,
+> **Status: author-ratified 2026-08-07; reference-envelope ownership clarified 2026-08-13; external-human gate dependencies removed and claims narrowed 2026-08-15.** This is a scope,
 > publication, and public-claim decision.
 > It does not enact a constitutional rule, activate Book 2, or create a tag,
 > preview, edition, print file, or release.
@@ -44,9 +41,9 @@ substitute for an earlier missing condition.
 | --- | --- | --- | --- |
 | **A — scope and assurance** | The versioned map and test program may be public. No book preview, release candidate, or edition may publish. | The project has a versioned, reviewable scope map and assurance program. | Any claim that a complete society has been described or operated. |
 | **B — Book 1 destination** | Immutable Book 1 — First Edition previews may publish under P1 after their snapshot-specific gates. | The preview describes a comprehensive, versioned constitutional and social destination for its declared scope. | Reader-suitability, staffing, resources, feasibility, deployment, outside-liveness, or functioning-society claims. |
-| **C — Book 1 public-edition readiness** | Publish Book 1 — First Edition, its assembled digital artifacts, and its first Book 1 POD. | The cumulative Gate B destination passed the declared accessibility and reader-balance protocol for the tested audience within the disclosed sampling and method limits. | Any claim that Book 1 supplies operations, proves feasibility, or shows that a society works in practice. |
+| **C - Book 1 public-edition readiness** | Publish Book 1 - First Edition, its assembled digital artifacts, and its first Book 1 POD. | The cumulative Gate B destination is source-bound, internally consistent, navigable, and passes the declared mechanical accessibility checks. | Reader comprehension, reader suitability, lived accessibility for actual users, operations, feasibility, or functioning-society claims. |
 | **D — Book 2 operational model** | Immutable Book 2 — First Edition previews or release candidates may publish. No Book 2 edition may publish. | Book 2 supplies a reproducible operational design within the named reference envelope. | A Book 2 — First Edition, proof of deployment, generalisation beyond the envelope, or integrated full-society claim. |
-| **E — integrated two-book model** | Publish Book 2 — First Edition and an immutable integrated release manifest. | The exact paired editions model a fully functional society for the declared reference envelope under the declared criteria and limits. | A claim of actual deployment, successful real-world operation, timeless completeness, or control of every harmless private life or external condition. |
+| **E - integrated two-book model** | Publish Book 2 - First Edition and an immutable integrated release manifest. | The exact paired editions pass the declared cross-book structural, model, provenance, and assurance checks for the declared reference envelope and limits. | Actual deployment, successful real-world operation, human-validated functionality, timeless completeness, or control of harmless private life or external conditions. |
 
 The integrated manifest must identify the exact Book 1 and Book 2 editions,
 artifact hashes, canonical-source version, reference-envelope version, assurance
@@ -65,17 +62,36 @@ Book 1/Book 2 pairing, integrated checks, or manifest does not pass Gate E, Book
 2 remains a preview or release candidate and neither its First Edition nor the
 integrated claim may publish.
 
-**2026-08-11 current-program application.** The author withdrew execution of
-the human reader-evidence route and its human screen-reader validation from the
-current Book 1 program. This does not amend Gate C into a repository-only gate.
-Gate C remains unsatisfied: no Book 1 — First Edition, first-edition POD,
-tested-audience suitability claim, or Book 2 activation follows. Public source
-and the Gate A map/test program may continue; after every independent Gate A
-and Gate B condition and every applicable preview snapshot-specific gate
-passes, only an immutable Gate B preview may publish, with the absence of
-admissible human reader and accessibility validation stated as a claim limit.
-The controlling disposition is
-[`book-1-reader-evidence-execution-withdrawal-decision.md`](book-1-reader-evidence-execution-withdrawal-decision.md).
+**2026-08-15 superseding current-program application.** The 2026-08-11
+withdrawal remains factually correct: no reader study or human screen-reader
+validation was run. Its conclusion that Gate C therefore stays blocked is
+superseded. No project gate now depends on external human reviewers or readers.
+R6 remains an optional, unbuilt evidence route and supplies no current reader
+claim. Gate C instead tests the exact artifact, source binding, navigation,
+internal consistency, and mechanical accessibility contract stated in the table
+above. Passing it establishes no comprehension, suitability, lived effect, or
+accessibility-for-actual-users claim.
+
+This project-level amendment does not alter constitutional requirements for
+independent public institutions, courts, reviewers, advocates, authorisers, or
+auditors. Those remain part of the destination being specified.
+
+## 2B. 2026-08-15 no-external-reviewer dependency amendment
+
+External human review, multidisciplinary panels, reader studies, and lived-
+experience studies are optional evidence, never completion or publication
+dependencies. Where those routes are absent, the project narrows its public
+claim to what deterministic source-bound checks establish.
+
+R7 is the built repository source-derived adversarial audit. It checks the
+declared scope axes, reference closure, projections, allocations, defect
+dispositions, evidence ceilings, and watched-failing mutations. It does not
+claim independence from the repository machinery or replace external truth.
+
+R6 remains an optional route for any future reader or lived-experience evidence.
+No gate waits for it. Gate C therefore makes only the mechanical artifact claim
+in section 2. Gate E likewise requires reproducible cross-book and model
+assurance plus author ratification, not recruitment of an external reviewer.
 
 ## 2A. 2026-08-13 reference-envelope ownership clarification
 
@@ -107,8 +123,8 @@ for an earlier unmet gate.
 - **Comprehensive** may describe Book 1's Gate B/C destination only with its
   source version and declared scope. It does not imply operational feasibility.
 - **Exhaustive** may describe the disposition map only for named axes, a named
-  source version, a named envelope, and a named review event. It may never mean
-  that no later material omission can be discovered.
+  source version, a named envelope, and a named current-source repository audit.
+  It may never mean that no later material omission can be discovered.
 - **Fully functional society** is reserved for Gate E and must be followed by
   "for the declared reference envelope" or an equally explicit bound.
 - **Verified** names the checks actually run. Formal verification does not prove
@@ -142,57 +158,43 @@ permitted claim:
    remains;
 4. every non-critical residual records severity, consequence, owner, closure
    condition, and the resulting public-claim limitation; and
-5. independent scope review leaves no proposal that has not received a public
-   disposition.
+5. a current-source repository adversarial audit covers the exact declared
+   criteria, checker controls, command chain, and Gate-A-applicable finding set.
 
 The closure record binds the exact gate and permitted claim, canonical-source
-version, reference envelope, candidate or edition identities, review cut-off
-date, assurance records, residuals, and claim limitations. Findings received
-after the cut-off use the reopening path below; review does not remain open
-forever. A Book 2 handoff or external assumption may close routing at Gate B or
-C, but it does not establish Gate D or E operational adequacy. Classification is
-a disposition, not assurance, and Gate E cannot launder a critical dependency
-by assigning it outward.
+version, reference envelope, candidate or edition identities, audit cut-off,
+assurance records, residuals, and claim limitations. A semantic change after
+the cut-off requires a new audit and candidate. Closure is never inferred from
+a green check: the author ratifies it in a separate act.
 
-A proposal is material when accepting it could change a declared right, liberty,
+A finding is material when accepting it could change a declared right, liberty,
 power, duty, protected private boundary, cross-domain dependency, ordinary-life
 account, failure/recovery path, or adequacy, accessibility/equality, continuity,
 resilience, sustainability, safety, or resource criterion.
 
-Every reviewer proposal must receive one of three public outcomes:
+Every repository finding receives one of three outcomes:
 
 1. **add it** to the canonical model with stable identity, applicability, owner,
    assurance route, posture, and closure condition;
-2. **classify it with reasons** as a constitutional invariant,
-   democratic/ordinary-law choice, protected private/civic freedom, Book 2
-   operation, external assumption, duplicate, or immaterial item, **carrying the
-   matching Unestablished disposition** where the classification routes the item
-   outward rather than establishing it; or
+2. **classify it with reasons** under an existing exact disposition, carrying
+   the matching Unestablished disposition where it routes outward; or
 3. **retain it as an unresolved limit** with severity, consequence, owner,
-   closure condition, and claim restriction, **as Unestablished with its
-   disposition named**.
+   closure condition, gate applicability, and claim restriction.
 
-The assurance-portfolio decision of 2026-08-08 supplies the closed value set the
-`assurance route` field had been missing. A route is one of: formal entailment;
-versioned quantitative and resource models; dynamic simulations; the claim
-registry; operational assurance; reader and lived-experience studies; or
-independent multidisciplinary and adversarial review. No route may be split,
-renamed, or stretched to fit a claim, and one green route may not stand in for
-another. An item may take an established posture only through a route that is
-built here or available through an admissibility contract; otherwise it is
-Unestablished and records its restriction. Outcomes (2) and (3) are dispositions
-rather than assurance, which is why each carries an Unestablished disposition:
-routing an item does not establish it. See
-[`book-1-assurance-portfolio-decision.md`](book-1-assurance-portfolio-decision.md).
+The checker validates the source consistency of those outcomes. The author owns
+the substantive decision and its public claim limit. This is accountable author
+ratification, not independent review and not self-authentication.
 
-Reviewers compel a reasoned disposition, not automatic acceptance and not an
-individual veto. The named severity owner applies the published rubric, an
-independent checker reviews the classification, and the record carries received
-and triaged dates plus reasons. A reviewer's self-label does not itself freeze a
-release; once the checked classification is critical, the warning and freeze
-below apply. An unresolved critical item blocks the affected gate even when it
-has an owner or has been disclosed. A non-critical item may remain only under
-the recorded limitation above.
+Optional external reviewer proposals use the same public outcomes if they are
+recorded, but no empty external intake blocks closure. External feedback may
+trigger a correction and fresh repository audit; it has no veto and is not a
+gate dependency.
+
+The assurance routes remain distinct. R7 is repository source-derived
+adversarial audit; R6 is optional reader and lived-experience evidence. A green
+route may not stand in for another route, and a repository audit may not be
+reported as human review, reader evidence, external truth, operation, or
+feasibility.
 
 ## 5. Reopening, correction, and supersession
 
@@ -202,7 +204,7 @@ perpetual calendar-based review obligation.
 - A checked post-release critical classification receives an immediate dated
   warning or public-claim qualification and blocks every later release until
   resolved and retested. Any decision to lower the proposed severity publishes
-  the independent check and reasons.
+  the author decision, source basis, mechanical consistency result, and reasons.
 - Immutable artifacts remain identified and accessible unless the existing
   legal, privacy, or security removal exception applies. Correction creates a
   new tag, artifact, and visible supersession path; it never rewrites an edition
@@ -263,3 +265,14 @@ On 2026-08-11 the author withdrew execution of the reader-evidence route from
 the current Book 1 program. That later decision preserves C then E and accepts
 its consequence: Book 1 remains below Gate C unless the route is revived and
 the unchanged gate actually passes.
+
+On 2026-08-15 the author removed external-human review and reader participation
+as project completion and publication dependencies. The exact statement was:
+
+> Right now, I cannot depend on other reviewers to finish the book. Please
+> remove dependency on human reviewers on this one and going forward
+
+The replacement is reproducible repository adversarial audit plus explicit
+author ratification, with narrower public claims wherever human-response
+evidence is absent. Constitutional institutional-independence rules are not
+amended.

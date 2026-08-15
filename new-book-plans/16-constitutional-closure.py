@@ -43,7 +43,7 @@ MODEL_NAMES = {
     "FS-RTE-04": "evidence registry",
     "FS-RTE-05": "operational assurance",
     "FS-RTE-06": "reader/lived-experience testing",
-    "FS-RTE-07": "independent multidisciplinary review",
+    "FS-RTE-07": "repository source-derived adversarial audit",
 }
 REQUIREMENT_COMPONENTS = {
     "floor-lifecycle": {"delivery", "continuity", "remedy"},
@@ -1074,6 +1074,9 @@ def validate_contract(source, resolution):
 def expect_failure(name, source, mutate, contains=None):
     changed = copy.deepcopy(source)
     mutate(changed)
+    if changed.get("scope_audits"):
+        changed["scope_audits"][-1]["scope_sha256"] = \
+            LEDGER.review_scope_digest(changed)
     try:
         resolution = LEDGER.validate(changed)
         validate_contract(changed, resolution)
@@ -1395,6 +1398,8 @@ def negative_controls(source):
     add("narrow receipt promoted wide", lambda s: s["receipts"][0].update({"residuals": ["FS-DFT-41"]}))
 
     def assert_floor_delivery_gap(changed, label):
+        changed["scope_audits"][-1]["scope_sha256"] = \
+            LEDGER.review_scope_digest(changed)
         LEDGER.validate(changed)
         profiles = expanded_profiles(changed)
         validate_profile_bindings(changed, profiles)

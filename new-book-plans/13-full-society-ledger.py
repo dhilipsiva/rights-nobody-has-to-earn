@@ -34,16 +34,16 @@ owned ordinary, failure, and recovery route and the protected sphere tested
 without a state-defined successful outcome; a route is routing, never
 delivery, and no scenario claims execution — constitutional cases execute
 only after the relevant author rulings and contract cards land.
-Stage 4's machinery makes the future independent scope review admissible and
-the Gate A closure refusable-until-green: append-only commission, proposal,
-and terminal-event schemas bind a validator-derived semantic scope digest,
-the exact confirmed protocol bytes, structured UTC windows, eligible named
-reviewers, a frozen intake receipt, blind Darshu triage, Dhanush checking,
-control reveal, and public dispositions. Independence is derived from those
-records rather than self-labelled; a stale or failed event cannot make R7
-available. Per-condition Gate A readiness is computed and rendered, and a
-closure record is refused while any condition computes unmet — closing Gate A
-is a deliberate future contract amendment, never a latent flip.
+Stage 4 implements the repository source-derived adversarial audit and keeps
+Gate A closure refusable-until-green. Append-only FS-SAU rows bind the
+validator-derived semantic scope digest, exact protocol bytes, declared
+criteria, checker entry points, command chain, Gate-A-applicable findings,
+result, author basis, and evidence ceiling. External commissions, proposals,
+and terminal events remain optional evidence with their strict existing
+admissibility checks; empty optional populations never block a gate.
+Per-condition Gate A readiness is computed and rendered. A closure record is
+refused while any condition computes unmet, and closing Gate A remains a
+deliberate author amendment, never a latent flip.
 Deferred record types carry explicit deferral records with owners.
 
 Usage:
@@ -366,7 +366,7 @@ DEFECT_GATE_GROUPS = {
     tuple(GATE_REFS): frozenset({
         "FS-DFT-13", "FS-DFT-14", "FS-DFT-27", "FS-DFT-40",
     }),
-    ("gate-c", "gate-d", "gate-e"): frozenset({"FS-DFT-20"}),
+    (): frozenset({"FS-DFT-20"}),
     ("gate-d", "gate-e"): frozenset({
         "FS-DFT-17", "FS-DFT-28", "FS-DFT-29",
         "FS-DFT-36", "FS-DFT-37", "FS-DFT-38",
@@ -389,7 +389,7 @@ READER_PROJECTION_POPULATIONS = (
     "refused_flows",
     "scenarios", "scenario_omissions", "thresholds", "defects",
     "receipts", "review_commissions", "proposals", "review_events",
-    "deferred_populations",
+    "scope_audits", "deferred_populations",
     "closure_requirement_profiles", "closure_claim_contracts",
     "model_allocations", "function_allocations", "loop_hazard_controls",
     "bottleneck_dispositions",
@@ -565,7 +565,7 @@ PROTECTED_SPHERE_DOMAIN = "FS-DOM-12"
 
 # Stage marker: the reviewed source's status and the report's stage label move in
 # lockstep with the content stages; bump both here and in the JSON together.
-EXPECTED_STATUS = "stage_4_review_machinery"
+EXPECTED_STATUS = "stage_4_repository_audit_complete"
 STAGE_LABEL = "stage 4 machinery"
 
 # Envelope contract: the array begins with the permanent FS-ENV-00 pre-envelope
@@ -602,16 +602,14 @@ RUBRIC_STATUS_CANDIDATE = "candidate — author confirmation pending"
 RUBRIC_STATUS_CONFIRMED = "author-confirmed 2026-08-09 — basis recorded"
 READINESS_MET = {"met-mechanically", "met-in-form"}
 
-# The amended scope-review protocol is author-confirmed and byte-bound at
-# commissioning. Commissions are append-only top-level records. They carry
-# only digests of the author-held plant and seed pre-images, never pre-images.
-# A terminal event derives independence from the current-source commission,
-# panel, intake, chronology, Darshu/Dhanush records, reveal, and controls.
+# The scope-audit protocol is author-confirmed and byte-bound to each
+# repository audit. External human review remains admissible optional input,
+# but no project gate or release depends on recruiting another person.
 PROTOCOL_DOC = pathlib.Path(
     "new-book-plans/full-society-scope-review-protocol.md")
 PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
 PROTOCOL_STATUS_CONFIRMED = (
-    "author-confirmed 2026-08-14 — amended protocol basis recorded")
+    "author-confirmed 2026-08-15 -- repository-adversarial protocol v3")
 SHA256_HEX_RE = re.compile(r"^[0-9a-f]{64}$")
 GIT_COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")
 ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -624,6 +622,26 @@ REVIEW_CRITERIA = (
     "failure-and-recovery-paths", "adequacy", "accessibility-equality",
     "continuity", "resilience", "sustainability", "safety", "resource",
 )
+SCOPE_AUDIT_METHOD = "repository-source-derived-adversarial-audit"
+SCOPE_AUDIT_RESULT = "passed-with-recorded-limits"
+SCOPE_AUDIT_CONTROL_REFS = (
+    "new-book-plans/13-full-society-ledger.py::"
+    "def negative_controls(src: dict) -> int:",
+    "new-book-plans/16-constitutional-closure.py::"
+    "def negative_controls(source):",
+)
+SCOPE_AUDIT_COMMANDS = (
+    "python3 new-book-plans/13-full-society-ledger.py --check",
+    "python3 new-book-plans/16-constitutional-closure.py --check",
+    "./verify.sh --quick",
+    "./verify.sh",
+)
+SCOPE_AUDIT_EVIDENCE_CEILING = (
+    "Checked repository structure and watched-failing mutations over the "
+    "declared axes only; no independent-human warrant, reader response, "
+    "external truth, operation, delivery, feasibility, liveness, calibration, "
+    "timeless completeness, or authentication of the audit's own trust root "
+    "follows.")
 REVIEW_PACKET_PATHS = (
     "new-book-plans/full-society-ledger.json",
     "new-book-plans/full-society-ledger.md",
@@ -701,8 +719,6 @@ DEFERRABLE_ARRAYS = [
     "thresholds",
     "defects",
     "receipts",
-    "proposals",
-    "review_events",
 ]
 RECORD_ARRAYS = [
     "domains",
@@ -724,6 +740,9 @@ RECORD_ARRAYS = [
     "loop_hazard_controls",
     "bottleneck_dispositions",
     "review_commissions",
+    "proposals",
+    "review_events",
+    "scope_audits",
 ]
 ARRAY_RECORD_TYPES = {
     "domains": "domain",
@@ -746,6 +765,7 @@ ARRAY_RECORD_TYPES = {
     "proposals": "proposal",
     "review_events": "review_event",
     "review_commissions": "review_commission",
+    "scope_audits": "scope_audit",
     "closure_requirement_profiles": "closure_requirement_profile",
     "closure_claim_contracts": "closure_claim_contract",
     "model_allocations": "model_allocation",
@@ -995,8 +1015,8 @@ DOMAIN_BUCKETS = [
 def validate_header(src: dict):
     if src.get("spdx") != "CC-BY-4.0":
         raise LedgerError('reviewed source must declare "spdx": "CC-BY-4.0"')
-    if type(src.get("schema_version")) is not int or src["schema_version"] != 4:
-        raise LedgerError("schema_version must be the integer 4")
+    if type(src.get("schema_version")) is not int or src["schema_version"] != 5:
+        raise LedgerError("schema_version must be the integer 5")
     require_str(src, "title", "header")
     if src.get("status") != EXPECTED_STATUS:
         raise LedgerError(f"status must be {EXPECTED_STATUS}")
@@ -2001,8 +2021,8 @@ def validate_roles(src: dict, ids: dict):
     Three closures are mechanical: every domain cited by at least one role,
     every named scale exercised, and every required body carrying both an
     affected and a checking role position. Pairwise sufficiency (which
-    role x scale x domain cells matter) is NOT mechanically decidable and
-    stays a question for the independent scope review. An entry in
+    role x scale x domain cells matter) is NOT mechanically established; the
+    repository audit checks only the declared source-derived criteria. An entry in
     role_omissions is a CLOSED classification decision with a risk-based
     reason (the residual_coverage_exclusions precedent), never
     unresolved-shape — "should be covered later" belongs in a defect row or a
@@ -2546,8 +2566,8 @@ def validate_scenarios(src: dict, ids: dict):
     protected-sphere test is exercised against the protected domain, and
     every critical dependency edge is stressed or its omission recorded.
     Whether the routes would hold is NOT decided here — capacity and
-    degradation are Book 2's tests, and sufficiency stays a question for
-    the independent scope review."""
+    degradation are Book 2's tests, while the repository audit checks only
+    declared structural coverage and watched failures."""
     scenarios = src.get("scenarios", [])
     if not scenarios:
         if src.get("scenario_omissions"):
@@ -3186,9 +3206,15 @@ def validate_defect_rows(src: dict, ids: dict):
                     f"{ctx}: {key} is generated, never hand-authored"
                 )
         gate_refs = rec["applicable_gate_refs"]
-        if not isinstance(gate_refs, list) or not gate_refs:
+        if not isinstance(gate_refs, list):
             raise LedgerError(
-                f"{ctx}: applicable_gate_refs must be a non-empty list"
+                f"{ctx}: applicable_gate_refs must be a list"
+            )
+        expected_gates = expected_defect_gate_refs(rec["id"])
+        if not gate_refs and expected_gates:
+            raise LedgerError(
+                f"{ctx}: applicable_gate_refs must be non-empty for this "
+                "checker-owned gate-applicable defect"
             )
         if len(gate_refs) != len(set(gate_refs)):
             raise LedgerError(
@@ -3204,7 +3230,6 @@ def validate_defect_rows(src: dict, ids: dict):
             raise LedgerError(
                 f"{ctx}: applicable_gate_refs must follow canonical gate order"
             )
-        expected_gates = expected_defect_gate_refs(rec["id"])
         if gate_refs != expected_gates:
             raise LedgerError(
                 f"{ctx}: applicable_gate_refs must equal the checker-owned "
@@ -3474,24 +3499,10 @@ def validate_deferred(src: dict):
             array == "powers" and rows and array in by_type
             and src["power_population"]["status"] == "partial"
         )
-        staged_review_population = (
-            array in {"proposals", "review_events"}
-            and rows and array in by_type
-            and not qualifying_review_events(src)
-        )
-        if rows and array in by_type and not (
-                staged_power_prefix or staged_review_population):
+        if rows and array in by_type and not staged_power_prefix:
             raise LedgerError(
                 f"{array} is populated but still carries a deferral record"
             )
-    qualifying = bool(qualifying_review_events(src))
-    for array in ("proposals", "review_events"):
-        if qualifying and array in by_type:
-            raise LedgerError(
-                f"{array} deferral must be removed after a qualifying event")
-        if not qualifying and array not in by_type:
-            raise LedgerError(
-                f"{array} deferral must remain until a qualifying event")
 
 
 def collect_sibling_enums():
@@ -3682,14 +3693,14 @@ def _require_utc(value, context: str):
 def review_scope_digest(src: dict) -> str:
     """Digest only the semantic map and assurance program.
 
-    Review administration, deferrals, acceptance metadata, and closure are
-    excluded. R7's event-driven state fields are normalised because a
-    qualifying event changes only route availability, not the reviewed map.
+    Audit/review administration, deferrals, acceptance metadata, and closure
+    are excluded. R7's audit-state fields are normalised because executing the
+    checker changes route status, not the reviewed map.
     """
     excluded = {
         "review_protocol", "review_commissions", "proposals",
-        "review_events", "deferred_populations", "closure_record",
-        "acceptance_gate",
+        "review_events", "scope_audits", "deferred_populations",
+        "closure_record", "acceptance_gate",
     }
     payload = {k: copy.deepcopy(v) for k, v in src.items()
                if k not in excluded}
@@ -3749,19 +3760,22 @@ def _prior_review_state():
     )
     if proc.returncode != 0:
         _PRIOR_REVIEW_STATE = {
-            "review_commissions": [], "proposals": [], "review_events": []}
+            "review_commissions": [], "proposals": [], "review_events": [],
+            "scope_audits": []}
     else:
         prior = json.loads(proc.stdout)
         _PRIOR_REVIEW_STATE = {
             key: prior.get(key, [])
-            for key in ("review_commissions", "proposals", "review_events")
+            for key in ("review_commissions", "proposals", "review_events",
+                        "scope_audits")
         }
     return _PRIOR_REVIEW_STATE
 
 
 def validate_review_history(src: dict):
     prior = _prior_review_state()
-    for key in ("review_commissions", "proposals", "review_events"):
+    for key in ("review_commissions", "proposals", "review_events",
+                "scope_audits"):
         previous = prior[key]
         current = src.get(key, [])
         if current[:len(previous)] != previous:
@@ -4195,6 +4209,89 @@ def validate_review_event_completeness(src: dict):
                 f"{ctx}: outcome_status must be derived from both controls")
 
 
+SCOPE_AUDIT_KEYS = [
+    "id", "title", "source_version", "scope_sha256", "protocol_sha256",
+    "executed_at_utc", "method", "criterion_coverage", "control_refs",
+    "commands", "finding_refs", "result", "author_basis",
+    "evidence_ceiling",
+]
+
+
+def _gate_a_audit_finding_refs(src: dict) -> list:
+    return sorted(
+        row["id"] for row in src["defects"]
+        if "gate-a" in row["applicable_gate_refs"]
+    )
+
+
+def qualifying_scope_audits(src: dict) -> list:
+    scope = review_scope_digest(src)
+    protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    return [
+        row for row in src.get("scope_audits", [])
+        if row["source_version"] == src["source_version"]
+        and row["scope_sha256"] == scope
+        and row["protocol_sha256"] == protocol
+        and row["result"] == SCOPE_AUDIT_RESULT
+    ]
+
+
+def validate_scope_audits(src: dict):
+    audits = src.get("scope_audits")
+    if not isinstance(audits, list):
+        raise LedgerError("scope_audits must be an append-only list")
+    seen = set()
+    for i, rec in enumerate(audits):
+        ctx = f"scope_audits[{i}] ({rec.get('id', '?')})"
+        exact_keys(rec, SCOPE_AUDIT_KEYS, ctx)
+        require_str(rec, "title", ctx)
+        require_str(rec, "source_version", ctx)
+        for key in ("scope_sha256", "protocol_sha256"):
+            if not SHA256_HEX_RE.fullmatch(require_str(rec, key, ctx)):
+                raise LedgerError(f"{ctx}.{key} must be a SHA-256 digest")
+        _require_utc(rec["executed_at_utc"], f"{ctx}.executed_at_utc")
+        if rec["method"] != SCOPE_AUDIT_METHOD:
+            raise LedgerError(f"{ctx}.method must be the checker-owned method")
+        for key in ("criterion_coverage", "control_refs", "commands",
+                    "finding_refs"):
+            value = rec[key]
+            if (not isinstance(value, list)
+                    or len(value) != len(set(value))
+                    or any(not isinstance(item, str) or not item
+                           for item in value)):
+                raise LedgerError(f"{ctx}.{key} must be a unique string list")
+        if rec["result"] not in {SCOPE_AUDIT_RESULT, "pending", "failed"}:
+            raise LedgerError(f"{ctx}.result is not an audit result")
+        require_str(rec, "author_basis", ctx)
+        require_str(rec, "evidence_ceiling", ctx)
+        if rec["id"] in seen:
+            raise LedgerError(f"{ctx}: duplicate audit id")
+        seen.add(rec["id"])
+    scope = review_scope_digest(src)
+    protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    current = [
+        rec for rec in audits
+        if rec["source_version"] == src["source_version"]
+        and rec["scope_sha256"] == scope
+        and rec["protocol_sha256"] == protocol
+    ]
+    if not current:
+        raise LedgerError(
+            "scope_audits requires a current-source repository audit")
+    for rec in current:
+        ctx = f"scope_audits current ({rec['id']})"
+        if rec["criterion_coverage"] != list(REVIEW_CRITERIA):
+            raise LedgerError(f"{ctx}: criterion coverage must be exact")
+        if rec["control_refs"] != list(SCOPE_AUDIT_CONTROL_REFS):
+            raise LedgerError(f"{ctx}: control references must be exact")
+        if rec["commands"] != list(SCOPE_AUDIT_COMMANDS):
+            raise LedgerError(f"{ctx}: command chain must be exact")
+        if rec["finding_refs"] != _gate_a_audit_finding_refs(src):
+            raise LedgerError(f"{ctx}: finding references must cover Gate A")
+        if rec["evidence_ceiling"] != SCOPE_AUDIT_EVIDENCE_CEILING:
+            raise LedgerError(f"{ctx}: evidence ceiling must be byte-exact")
+
+
 def qualifying_review_events(src: dict) -> list:
     scope = review_scope_digest(src)
     protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
@@ -4207,36 +4304,24 @@ def qualifying_review_events(src: dict) -> list:
     ]
 
 
-R7_UNBUILT = {
-    "status": "unbuilt",
-    "route_status": "unbuilt",
-    "consequence": "independent scope review cannot yet be admitted",
-    "closure_condition": (
-        "the amended protocol and in-repo gate are confirmed; a named-panel "
-        "commission, terminal current-source event, frozen intake, public "
-        "dispositions, reveal, and passed controls remain external work"),
-}
-R7_AVAILABLE = {
-    "status": "available",
-    "route_status": "available",
+R7_BUILT = {
+    "status": "built",
+    "route_status": "built",
     "consequence": (
-        "the qualifying event warrants only that its named panel examined the "
-        "named scope and every frozen-intake proposal received a public disposition"),
+        "repository structure, declared criteria, Gate-A defect coverage, and "
+        "watched-failing mutations are reproducibly checked"),
     "closure_condition": (
-        "a terminal current-source qualifying event exists; availability is "
-        "limited to proposal-and-public-disposition evidence and is never built"),
+        "the current-source repository audit is present and exact; external "
+        "human review remains optional evidence and is never a project gate"),
 }
 
 
 def validate_review_route_state(src: dict):
     route = next(row for row in src["routes"] if row["id"] == "FS-RTE-07")
-    if route["route_status"] == "built" or route["status"] == "built":
-        raise LedgerError("FS-RTE-07 is never built by a review event")
-    expected = R7_AVAILABLE if qualifying_review_events(src) else R7_UNBUILT
-    for key, value in expected.items():
+    for key, value in R7_BUILT.items():
         if route[key] != value:
             raise LedgerError(
-                f"FS-RTE-07.{key} must follow the qualifying-event state exactly")
+                f"FS-RTE-07.{key} must equal the repository-audit state exactly")
 
 
 def validate_severity_rubric(src: dict):
@@ -4283,12 +4368,17 @@ def validate_review_protocol(src: dict):
     if not isinstance(rp, dict):
         raise LedgerError(f"{ctx} must be an object")
     exact_keys(rp, ["protocol_ref", "protocol_status", "status_line_ref",
-                    "confirmation_basis", "designation"], ctx)
+                    "confirmation_basis", "mode", "external_review_policy",
+                    "designation"], ctx)
     status = require_str(rp, "protocol_status", ctx)
     if status != PROTOCOL_STATUS_CONFIRMED:
         raise LedgerError(
             f"{ctx}.protocol_status must be the author-confirmed amended status")
     require_str(rp, "confirmation_basis", ctx)
+    if rp["mode"] != "repository-adversarial-audit":
+        raise LedgerError(f"{ctx}.mode must be repository-adversarial-audit")
+    if rp["external_review_policy"] != "optional-non-gating":
+        raise LedgerError(f"{ctx}.external_review_policy must be optional-non-gating")
     ref = require_str(rp, "protocol_ref", ctx)
     validate_reference(ref, f"{ctx}.protocol_ref")
     if ref.split("::", 1)[0] != str(PROTOCOL_DOC):
@@ -4305,12 +4395,15 @@ def validate_review_protocol(src: dict):
         raise LedgerError(f"{dctx} must be an object")
     exact_keys(designation,
                ["severity_owner", "independent_checker", "custodian",
-                "designated_date", "basis"], dctx)
+                "designated_date", "designation_status", "basis"], dctx)
     for key in ("severity_owner", "independent_checker", "custodian", "basis"):
         require_str(designation, key, dctx)
     if not ISO_DATE_RE.fullmatch(require_str(
             designation, "designated_date", dctx)):
         raise LedgerError(f"{dctx}.designated_date must be YYYY-MM-DD")
+    if designation["designation_status"] != "retired-as-project-gate-dependency":
+        raise LedgerError(
+            f"{dctx}.designation_status must retire the external dependency")
     if designation["severity_owner"] == designation["independent_checker"]:
         raise LedgerError(f"{dctx}: Darshu and Dhanush must be distinct people")
     if designation["custodian"] in (
@@ -4321,9 +4414,8 @@ def validate_review_protocol(src: dict):
 def _gate_a_condition_1_deferred(src: dict):
     """Return only the populations named by closure condition one.
 
-    Proposals and review events are outputs of condition five's review.
-    Counting their pre-review deferrals here would make commissioning that
-    review circular.
+    Optional external-review records are evidence inputs, not required scope
+    populations. Empty optional arrays therefore cannot create a gate deferral.
     """
     populations = {
         "domains", "roles", "powers", "dependencies", "scenarios", "defects",
@@ -4346,7 +4438,7 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
         if row["blocking"]
         and "gate-a" in defects_by_id[rid]["applicable_gate_refs"]
     )
-    independent = qualifying_review_events(src)
+    audits = qualifying_scope_audits(src)
     rows = []
     if deferred:
         rows.append((conds[0], "unmet",
@@ -4375,16 +4467,14 @@ def compute_gate_a_readiness(src: dict, resolution: dict):
                  "severity, consequence, owner, closure condition, and "
                  "public-claim limitation are validator-enforced on every "
                  "unresolved object; substance is reviewed, not proven"))
-    if independent:
-        rows.append((conds[4], "met-in-form",
-                     "a current-source qualifying terminal event exists; its "
-                     "frozen intake equals the fully checked and publicly "
-                     "disposed proposal set"))
+    if audits:
+        rows.append((conds[4], "met-mechanically",
+                     "a current-source repository adversarial audit covers the "
+                     "declared criteria, exact checker controls, command chain, "
+                     "and every Gate-A-applicable defect disposition"))
     else:
-        rows.append((conds[4], "unmet-external",
-                     "no current-source qualifying terminal event exists, and "
-                     "the in-repo reviewer corpus is never admissible for this "
-                     "condition"))
+        rows.append((conds[4], "unmet",
+                     "no current-source repository adversarial audit exists"))
     preconditions = []
     successor = next(
         (r for r in src["envelope"][1:]
@@ -4446,7 +4536,7 @@ def _source_at_commit(commit_sha: str, context: str) -> dict:
 def validate_closure_record(src: dict, readiness, resolution: dict):
     if "closure_record" not in src:
         raise LedgerError(
-            "closure_record must be present — null until the author closes")
+            "closure_record must be present - null until the author closes")
     rec = src["closure_record"]
     if rec is None:
         return
@@ -4454,8 +4544,8 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     exact_keys(
         rec,
         ["gate", "permitted_claim", "candidate_commit_sha", "source_version",
-         "scope_sha256", "envelope_ref", "review_cutoff_at_utc",
-         "review_event_ref", "assurance_record_refs", "residual_refs",
+         "scope_sha256", "envelope_ref", "audit_cutoff_at_utc",
+         "scope_audit_ref", "assurance_record_refs", "residual_refs",
          "claim_limitations", "verification_receipt",
          "author_ratification_ref"],
         ctx,
@@ -4467,20 +4557,10 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if not GIT_COMMIT_RE.fullmatch(require_str(
             rec, "candidate_commit_sha", ctx)):
         raise LedgerError(f"{ctx}.candidate_commit_sha must be a Git id")
-    candidate = _source_at_commit(
-        rec["candidate_commit_sha"], f"{ctx}.candidate_commit_sha")
-    if candidate.get("closure_record") is not None:
-        raise LedgerError(f"{ctx}: candidate closure_record must still be null")
-    if candidate.get("acceptance_gate", {}).get("gate_a_status") != "not-passed":
-        raise LedgerError(f"{ctx}: candidate Gate A status must still be not-passed")
     if rec["source_version"] != src["source_version"]:
         raise LedgerError(f"{ctx}.source_version must match the closure source")
     if rec["scope_sha256"] != review_scope_digest(src):
         raise LedgerError(f"{ctx}.scope_sha256 must match the semantic scope")
-    if candidate.get("source_version") != rec["source_version"]:
-        raise LedgerError(f"{ctx}: candidate source version does not match")
-    if review_scope_digest(candidate) != rec["scope_sha256"]:
-        raise LedgerError(f"{ctx}: candidate semantic scope does not match")
     if rec["envelope_ref"] != "FS-ENV-01":
         raise LedgerError(f"{ctx}.envelope_ref must be FS-ENV-01")
     envelope = next(row for row in src["envelope"]
@@ -4488,24 +4568,21 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if envelope["envelope_status"] != "versioned-structure":
         raise LedgerError(
             f"{ctx}: envelope must remain versioned structure, never calibration")
-    qualifying = {row["id"]: row for row in qualifying_review_events(src)}
-    event = qualifying.get(rec["review_event_ref"])
-    if event is None:
+    qualifying = {row["id"]: row for row in qualifying_scope_audits(src)}
+    audit = qualifying.get(rec["scope_audit_ref"])
+    if audit is None:
         raise LedgerError(
-            f"{ctx}: review_event_ref must name a current-source qualifying event")
-    commissions = {row["id"]: row
-                   for row in src.get("review_commissions", [])}
-    commission = commissions[event["commission_ref"]]
-    cutoff = _require_utc(rec["review_cutoff_at_utc"],
-                          f"{ctx}.review_cutoff_at_utc")
-    if cutoff != commission["cutoff_at_utc"]:
-        raise LedgerError(f"{ctx}: review cutoff must equal the event commission")
+            f"{ctx}: scope_audit_ref must name a current-source repository audit")
+    cutoff = _require_utc(rec["audit_cutoff_at_utc"],
+                          f"{ctx}.audit_cutoff_at_utc")
+    if cutoff != audit["executed_at_utc"]:
+        raise LedgerError(f"{ctx}: audit cutoff must equal audit execution")
     rows, preconditions = readiness
     for name, status, reason in list(rows) + list(preconditions):
         if status not in READINESS_MET:
             raise LedgerError(
                 f"{ctx}: a closure record may not exist while a closure "
-                f"condition computes unmet — {name}: {reason}")
+                f"condition computes unmet - {name}: {reason}")
     if rec["assurance_record_refs"] != list(GATE_A_ASSURANCE_REFS):
         raise LedgerError(
             f"{ctx}.assurance_record_refs must equal the checker-derived set")
@@ -4544,28 +4621,23 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if src["acceptance_gate"]["gate_a_status"] != "passed":
         raise LedgerError(
             f"{ctx}: a closure record requires gate_a_status passed, which "
-            "this contract refuses — closing Gate A is a deliberate future "
-            "amendment, never a latent flip")
-    candidate_events = {row["id"]: row
-                        for row in candidate.get("review_events", [])}
-    if candidate_events.get(event["id"]) != event:
+            "this contract refuses - closing Gate A is a deliberate future "
+            "author amendment, never a latent flip")
+    candidate = _source_at_commit(
+        rec["candidate_commit_sha"], f"{ctx}.candidate_commit_sha")
+    if candidate.get("closure_record") is not None:
+        raise LedgerError(f"{ctx}: candidate closure_record must still be null")
+    if candidate.get("acceptance_gate", {}).get("gate_a_status") != "not-passed":
+        raise LedgerError(f"{ctx}: candidate Gate A status must still be not-passed")
+    if candidate.get("source_version") != rec["source_version"]:
+        raise LedgerError(f"{ctx}: candidate source version does not match")
+    if review_scope_digest(candidate) != rec["scope_sha256"]:
+        raise LedgerError(f"{ctx}: candidate semantic scope does not match")
+    candidate_audits = {row["id"]: row
+                        for row in candidate.get("scope_audits", [])}
+    if candidate_audits.get(audit["id"]) != audit:
         raise LedgerError(
-            f"{ctx}: candidate commit must contain the exact qualifying event")
-    candidate_commissions = {
-        row["id"]: row for row in candidate.get("review_commissions", [])}
-    if candidate_commissions.get(commission["id"]) != commission:
-        raise LedgerError(
-            f"{ctx}: candidate commit must contain the exact commission")
-    candidate_proposals = [
-        row for row in candidate.get("proposals", [])
-        if row.get("review_event_ref") == event["id"]]
-    current_proposals = [
-        row for row in src.get("proposals", [])
-        if row.get("review_event_ref") == event["id"]]
-    if candidate_proposals != current_proposals:
-        raise LedgerError(
-            f"{ctx}: candidate commit must contain the exact proposal set")
-
+            f"{ctx}: candidate commit must contain the exact repository audit")
 
 def validate_acceptance(src: dict):
     gate = src.get("acceptance_gate")
@@ -4623,6 +4695,7 @@ def validate(src: dict):
     validate_review_events(src)
     validate_proposals(src, ids)
     validate_review_event_completeness(src)
+    validate_scope_audits(src)
     validate_review_route_state(src)
     validate_severity_rubric(src)
     validate_deferred(src)
@@ -4848,10 +4921,10 @@ def negative_controls(src: dict) -> int:
             _closure_stale_scope, "must match the semantic scope")
     control("a closure record must cite FS-ENV-01",
             _closure_env_stub, "must be FS-ENV-01")
-    control("a closure record requires a qualifying current-source event",
-            _closure_non_independent_event, "qualifying event")
-    control("a closure cutoff must match its commission",
-            _closure_wrong_cutoff, "must equal the event commission")
+    control("a closure record requires a current-source repository audit",
+            _closure_unknown_audit, "current-source repository audit")
+    control("a closure cutoff must match its repository audit",
+            _closure_wrong_cutoff, "must equal audit execution")
     control("closure assurance refs are checker-derived",
             _closure_wrong_assurance, "checker-derived set")
     control("closure residual refs are checker-derived",
@@ -4868,12 +4941,28 @@ def negative_controls(src: dict) -> int:
             _closure_bad_transcript, "is malformed")
     control("closure ratification cites a dated author act",
             _closure_bad_ratification, "verbatim dated author act")
-    control("R7 is never built",
-            _r7_built, "never built")
-    control("R7 cannot become available without a qualifying event",
-            _r7_available_without_event, "qualifying-event state")
-    control("a stale-source passed event cannot make R7 available",
-            _stale_source_event_available, "qualifying-event state")
+    control("R7 cannot be marked unbuilt after its checks land",
+            _r7_unbuilt, "repository-audit state")
+    control("R7 cannot be relabelled available",
+            _r7_available, "repository-audit state")
+    control("the current scope audit binds the source version",
+            _scope_audit_stale_source, "current-source repository audit")
+    control("the current scope audit binds the semantic scope digest",
+            _scope_audit_stale_scope, "current-source repository audit")
+    control("the current scope audit binds the protocol digest",
+            _scope_audit_stale_protocol, "current-source repository audit")
+    control("the current scope audit covers every criterion",
+            _scope_audit_criterion_gap, "criterion coverage must be exact")
+    control("the current scope audit binds exact checker controls",
+            _scope_audit_control_drift, "control references must be exact")
+    control("the current scope audit binds the command chain",
+            _scope_audit_command_drift, "command chain must be exact")
+    control("the current scope audit covers Gate A findings",
+            _scope_audit_finding_gap, "finding references must cover Gate A")
+    control("the current scope audit result token is exact",
+            _scope_audit_result_drift, "is not an audit result")
+    control("the current scope audit preserves its evidence ceiling",
+            _scope_audit_ceiling_drift, "evidence ceiling must be byte-exact")
     control("a passed event outcome is derived, not prose",
             _event_passed_with_failed_seed, "outcome_status must be derived")
     control("a terminal event requires its commission",
@@ -4922,10 +5011,6 @@ def negative_controls(src: dict) -> int:
             _proposal_retained_without_defect, "must link a defect row")
     control("failed events with proposal intake cannot be deleted",
             _delete_failed_event, "names no review event")
-    control("failed review populations retain their deferrals",
-            _failed_event_drops_deferrals, "must remain until")
-    control("a qualifying event removes both review deferrals",
-            _passed_event_regains_deferrals, "populated but still carries")
     control("the rubric status is exact in both states",
             lambda s: s["severity_rubric"].update(
                 {"rubric_status": "confirmed"}))
@@ -4939,9 +5024,20 @@ def negative_controls(src: dict) -> int:
     control("the amended protocol records its basis",
             lambda s: s["review_protocol"].pop("confirmation_basis"),
             "missing keys")
-    control("owner and checker are distinct people",
+    control("the protocol mode is repository-adversarial",
+            lambda s: s["review_protocol"].update({"mode": "panel-review"}),
+            "must be repository-adversarial-audit")
+    control("external review is explicitly optional",
+            lambda s: s["review_protocol"].update(
+                {"external_review_policy": "required"}),
+            "must be optional-non-gating")
+    control("the legacy designation is retired as a gate dependency",
+            lambda s: s["review_protocol"]["designation"].update(
+                {"designation_status": "active"}),
+            "must retire the external dependency")
+    control("optional-review owner and checker remain distinct people",
             _designation_owner_is_checker, "distinct people")
-    control("the custodian may not triage or check",
+    control("an optional-review custodian may not triage or check",
             _designation_owner_is_custodian, "may not triage or check")
     control("the protocol status line is live-checked",
             lambda s: s["review_protocol"].update(
@@ -5149,7 +5245,7 @@ def negative_controls(src: dict) -> int:
             "narrative-register rule")
 
     # Closure remains deliberately locked until a real candidate commit
-    # contains the qualifying event, commission, and proposal set.
+    # contains the exact current-source repository audit.
 
     gate_a_critical = copy.deepcopy(src)
     gate_a_row = next(
@@ -5158,6 +5254,8 @@ def negative_controls(src: dict) -> int:
     gate_a_row["severity"] = (
         "critical — semantic control for a scope-map defect"
     )
+    gate_a_critical["scope_audits"][-1]["scope_sha256"] = \
+        review_scope_digest(gate_a_critical)
     validate(gate_a_critical)
     gate_a_rows, _ = compute_gate_a_readiness(
         gate_a_critical, compute_resolution(gate_a_critical)
@@ -5203,6 +5301,10 @@ def negative_controls(src: dict) -> int:
         mutant = copy.deepcopy(src)
         try:
             mutate(mutant)
+            if (name != "the current scope audit binds the semantic scope digest"
+                    and mutant.get("scope_audits")):
+                mutant["scope_audits"][-1]["scope_sha256"] = \
+                    review_scope_digest(mutant)
             validate(mutant)
         except LedgerError as exc:
             if expect is not None and expect not in str(exc):
@@ -5605,17 +5707,6 @@ _PROTOCOL_NEEDLE = ("new-book-plans/full-society-scope-review-protocol.md::"
                     "# Full-Society Scope-Review Protocol")
 
 
-def _strip_deferrals(s, *types):
-    s["deferred_populations"] = [
-        d for d in s["deferred_populations"] if d["record_type"] not in types
-    ]
-
-
-def _set_r7(s, available: bool):
-    route = next(row for row in s["routes"] if row["id"] == "FS-RTE-07")
-    route.update(R7_AVAILABLE if available else R7_UNBUILT)
-
-
 def _mk_commission(s):
     if s.get("review_commissions"):
         return s["review_commissions"][-1]
@@ -5774,9 +5865,6 @@ def _mk_event(s, passed=False):
         "outcome_reason": "control terminal outcome",
     }
     s["review_events"].append(ev)
-    if passed:
-        _strip_deferrals(s, "proposals", "review_events")
-    _set_r7(s, passed)
     return ev
 
 
@@ -5789,14 +5877,15 @@ def _mk_proposal(s, **overrides):
 
 _AUTHOR_CONTROL_NEEDLE = (
     "new-book-plans/full-society-scope-review-protocol.md::"
-    "Author statement, 2026-08-14: \"PLEASE IMPLEMENT THIS")
+    "Author statement, 2026-08-15: \"Right now, I cannot depend")
 
 
 def _mk_closure(s):
-    event = _mk_event(s, passed=True)
     resolution = compute_resolution(s)
     residuals = _gate_a_residual_ids(s, resolution)
-    commission = s["review_commissions"][-1]
+    audit = s["scope_audits"][-1]
+    audit["result"] = SCOPE_AUDIT_RESULT
+    audit["scope_sha256"] = review_scope_digest(s)
     s["closure_record"] = {
         "gate": "gate-a",
         "permitted_claim": GATE_A_PERMITTED_CLAIM,
@@ -5805,8 +5894,8 @@ def _mk_closure(s):
         "source_version": s["source_version"],
         "scope_sha256": review_scope_digest(s),
         "envelope_ref": "FS-ENV-01",
-        "review_cutoff_at_utc": commission["cutoff_at_utc"],
-        "review_event_ref": event["id"],
+        "audit_cutoff_at_utc": audit["executed_at_utc"],
+        "scope_audit_ref": audit["id"],
         "assurance_record_refs": list(GATE_A_ASSURANCE_REFS),
         "residual_refs": residuals,
         "claim_limitations": _gate_a_claim_limitations(s, residuals),
@@ -5851,17 +5940,12 @@ def _closure_env_stub(s):
     _mk_closure(s)["envelope_ref"] = ENVELOPE_STUB_ID
 
 
-def _closure_non_independent_event(s):
-    _mk_closure(s)
-    event = s["review_events"][-1]
-    event["control_reveal"]["seed_results"][0]["expected_severity"] = "critical"
-    event["seeded_control"]["status"] = "failed"
-    event["outcome_status"] = "failed"
-    _set_r7(s, False)
+def _closure_unknown_audit(s):
+    _mk_closure(s)["scope_audit_ref"] = "FS-SAU-99"
 
 
 def _closure_wrong_cutoff(s):
-    _mk_closure(s)["review_cutoff_at_utc"] = "2026-08-19T00:00:00Z"
+    _mk_closure(s)["audit_cutoff_at_utc"] = "2026-08-19T00:00:00Z"
 
 
 def _closure_wrong_assurance(s):
@@ -5900,20 +5984,50 @@ def _closure_bad_ratification(s):
     _mk_closure(s)["author_ratification_ref"] = _CONTROL_NEEDLE
 
 
-def _r7_built(s):
+def _r7_unbuilt(s):
     route = next(row for row in s["routes"] if row["id"] == "FS-RTE-07")
-    route.update({"status": "built", "route_status": "built"})
+    route.update({"status": "unbuilt", "route_status": "unbuilt"})
 
 
-def _r7_available_without_event(s):
-    _set_r7(s, True)
+def _r7_available(s):
+    route = next(row for row in s["routes"] if row["id"] == "FS-RTE-07")
+    route.update({"status": "available", "route_status": "available"})
 
 
-def _stale_source_event_available(s):
-    event = _mk_event(s, passed=True)
-    commission = s["review_commissions"][-1]
-    commission["source_version"] = "stale-source"
-    event["source_version"] = "stale-source"
+def _scope_audit_stale_source(s):
+    s["scope_audits"][-1]["source_version"] = "stale-source"
+
+
+def _scope_audit_stale_scope(s):
+    s["scope_audits"][-1]["scope_sha256"] = "0" * 64
+
+
+def _scope_audit_stale_protocol(s):
+    s["scope_audits"][-1]["protocol_sha256"] = "0" * 64
+
+
+def _scope_audit_criterion_gap(s):
+    s["scope_audits"][-1]["criterion_coverage"].pop()
+
+
+def _scope_audit_control_drift(s):
+    s["scope_audits"][-1]["control_refs"].pop()
+
+
+def _scope_audit_command_drift(s):
+    s["scope_audits"][-1]["commands"].pop()
+
+
+def _scope_audit_finding_gap(s):
+    s["scope_audits"][-1]["finding_refs"].pop()
+
+
+def _scope_audit_result_drift(s):
+    s["scope_audits"][-1]["result"] = "passed"
+
+
+def _scope_audit_ceiling_drift(s):
+    s["scope_audits"][-1]["evidence_ceiling"] = "broader claim"
 
 
 def _event_passed_with_failed_seed(s):
@@ -6028,22 +6142,6 @@ def _proposal_retained_without_defect(s):
 def _delete_failed_event(s):
     _mk_event(s, passed=False)
     s["review_events"] = []
-
-
-def _failed_event_drops_deferrals(s):
-    _mk_event(s, passed=False)
-    _strip_deferrals(s, "proposals", "review_events")
-
-
-def _passed_event_regains_deferrals(s):
-    _mk_event(s, passed=True)
-    for record_type in ("proposals", "review_events"):
-        s["deferred_populations"].append({
-            "record_type": record_type,
-            "owner_ref": _CONTROL_NEEDLE,
-            "closure_condition": "control deferral",
-            "stage": "stage-4",
-        })
 
 
 def _mk_designation(s):
@@ -6334,8 +6432,9 @@ def render(src: dict, resolution: dict) -> str:
       "exercised, every required body carrying both an affected and a "
       "checking role position, every recorded private power naming its "
       "affected counter-roles and its checkers — while pairwise sufficiency "
-      "stays a question for the independent scope review; no full Cartesian "
-      "product is attempted, and deliberately omitted candidates and "
+      "is tested only against the declared source-derived audit criteria; "
+      "no full Cartesian product is attempted, and deliberately omitted "
+      "candidates and "
       "combinations are recorded below with risk-based reasons. The FS-POW "
       "decomposition of each power is staged below by exact source-family "
       "prefix and remains deferred until the complete population. "
@@ -6604,7 +6703,7 @@ def render(src: dict, resolution: dict) -> str:
       f"{power_inventory['disposition_counts']['existing-formal-crosswalk']} "
       "crosswalk narrow current formal fixtures.")
     w("")
-    w("Known lawful-allocation gaps that keep FS-POW deferred:")
+    w("Historical lawful-allocation gaps resolved by the complete FS-POW population:")
     w("")
     for gap in power_inventory["known_allocation_gaps"]:
         w(f"- {gap}")
@@ -6698,42 +6797,51 @@ def render(src: dict, resolution: dict) -> str:
         w(f"- Reader mapping: `{rec['reader_mapping_ref']}`; admissible "
           f"evidence: {rec['admissible_evidence']}")
         w("")
-    w("## Review commissions, proposals, and terminal events")
+    w("## Repository scope audit and optional external review")
     w("")
     rp = src["review_protocol"]
     qualifying = qualifying_review_events(src)
+    audits = qualifying_scope_audits(src)
     w(
-        "The amended append-only review contract is schema-enforced. "
-        f"Commissions: {len(src['review_commissions'])}; proposals: "
-        f"{len(src['proposals'])}; terminal events: "
-        f"{len(src['review_events'])}; current-source qualifying events: "
-        f"{len(qualifying)}. Proposal and event populations remain deferred "
-        "until the external review runs. The in-repo reviewer corpus is never "
-        "admissible R7 evidence. Independence is derived from the commission, "
-        "panel, scope and protocol digests, frozen intake, UTC chronology, "
-        "Darshu triage, Dhanush checking, reveal, controls, and public "
-        "dispositions; it is not a self-label."
+        "Gate A uses the closed, source-derived repository audit. "
+        f"Scope audits: {len(src['scope_audits'])}; current qualifying audits: "
+        f"{len(audits)}. The audit binds the semantic scope, protocol, declared "
+        "criteria, checker controls, command chain, and Gate-A-applicable "
+        "finding set. Its evidence ceiling expressly supplies no independent-"
+        "human, reader-response, external-truth, operational, feasibility, "
+        "liveness, calibration, or timeless-completeness warrant."
     )
+    w("")
+    w("| Audit | Source | Scope digest | Executed | Result | Findings |")
+    w("| --- | --- | --- | --- | --- | --- |")
+    for rec in src["scope_audits"]:
+        w(
+            f"| {rec['id']} | {rec['source_version']} | "
+            f"`{rec['scope_sha256']}` | {rec['executed_at_utc']} | "
+            f"{rec['result']} | {', '.join(rec['finding_refs']) or '-'} |"
+        )
     w("")
     d = rp["designation"]
     w(
-        f"The scope-review protocol is bound at `{rp['protocol_ref']}`, "
-        f"status {rp['protocol_status']}; its status line is live-checked. "
-        f"Semantic scope digest: `{review_scope_digest(src)}`. "
-        f"Designated {d['designated_date']}: severity owner "
-        f"{d['severity_owner']}; independent checker "
-        f"{d['independent_checker']}; custodian {d['custodian']}."
+        f"The protocol is bound at `{rp['protocol_ref']}`, status "
+        f"{rp['protocol_status']}; mode `{rp['mode']}`; external review policy "
+        f"`{rp['external_review_policy']}`; semantic scope digest "
+        f"`{review_scope_digest(src)}`. The historical Darshu/Dhanush/custodian "
+        f"designation is `{d['designation_status']}` as a project-gate "
+        "dependency."
     )
     w("")
-    if not src["review_commissions"]:
-        w(
-            "No review is commissioned. No plant or seed pre-image or digest "
-            "has been created, no reviewer panel is selected, no UTC window is "
-            "open, and no packet commit exists. The next step is an author "
-            "checkpoint."
-        )
-        w("")
-    else:
+    w(
+        "External commissions, proposals, and terminal events remain append-only "
+        "optional evidence. They do not control R7, Gate A, Gate C, Gate E, or "
+        "publication. Their stricter chronology, conflicts, custody, controls, "
+        "and public-disposition checks still apply if that optional route is used. "
+        f"Commissions: {len(src['review_commissions'])}; proposals: "
+        f"{len(src['proposals'])}; terminal events: {len(src['review_events'])}; "
+        f"current-source qualifying optional events: {len(qualifying)}."
+    )
+    w("")
+    if src["review_commissions"]:
         w("| Commission | Source | Scope digest | Window | Cutoff | Reviewers |")
         w("| --- | --- | --- | --- | --- | --- |")
         for rec in src["review_commissions"]:
@@ -6750,14 +6858,14 @@ def render(src: dict, resolution: dict) -> str:
             )
         w("")
     if src["review_events"]:
-        w("| Event | Commission | Packet commit | Outcome | Current qualifying |")
+        w("| Event | Commission | Packet commit | Outcome | Current optional |")
         w("| --- | --- | --- | --- | --- |")
         qualifying_ids = {row["id"] for row in qualifying}
         for rec in src["review_events"]:
             w(
                 f"| {rec['id']} | {rec['commission_ref']} | "
                 f"`{rec['packet_commit_sha']}` | "
-                f"{rec['outcome_status']} — {rec['outcome_reason']} | "
+                f"{rec['outcome_status']} - {rec['outcome_reason']} | "
                 f"{'yes' if rec['id'] in qualifying_ids else 'no'} |"
             )
         w("")

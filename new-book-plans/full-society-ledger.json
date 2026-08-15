@@ -1,13 +1,13 @@
 {
   "spdx": "CC-BY-4.0",
-  "schema_version": 4,
+  "schema_version": 5,
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
-  "status": "stage_4_review_machinery",
+  "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-14-scope-review-protocol-v2",
+  "source_version": "fs-ledger-2026-08-15-repository-adversarial-scope-audit",
   "bound_sources_sha256": {
-    "assurance_portfolio": "21e9ddce983a9f76380f24205da5b510aa0dd52a50f7584f4f0c68bcb422c8eb",
-    "full_society_boundary": "00273fa9ac211d3b7bffce5f37625832652e9750e81dce301844ab8a9149a3fd"
+    "assurance_portfolio": "27ffff04540f2d2f661d79fed5497f9d271c0a3ecd02adb39319220c293b6dbd",
+    "full_society_boundary": "62070499e8c7a0dc842c4c14f95307564b42f506da7286def2c91e015614795f"
   },
   "axes": [
     { "id": "legal-effect-class", "name": "Legal-effect class", "values": "The ten ratified constitutional taxonomy classes, class-01 through class-10", "note": "An author-chosen planning grammar, not derived and not exhaustive; preserved as its own axis and never reused as the domain axis." },
@@ -322,7 +322,8 @@
     "FS-LHC": "loop_hazard_control",
     "FS-BTL": "bottleneck_disposition",
     "FS-CCT": "closure_claim_contract",
-    "FS-COM": "review_commission"
+    "FS-COM": "review_commission",
+    "FS-SAU": "scope_audit"
   },
   "domains": [
     {
@@ -1894,10 +1895,10 @@
       "overlay": "none",
       "scope_bound": "the tested audience within the disclosed sampling and method limits, per the ratified reader-evidence protocol; the route is neither built nor available",
       "evidence_notes": ["the reader-evidence protocol decision fixes the method; the pass rule's values are reserved for a post-pilot ruling", "the 2026-08-11 author decision withdraws execution from the current Book 1 program without creating evidence or a pass", "the history-transition check covers visible normal first-parent Git history only and proves neither resistance to rewritten history nor external custody truth"],
-      "public_claim_restriction": "No public reader-balance claim; the current program accepts a preview-only ceiling, and the restriction could close only after a later revival makes R6 available and script 14 admits a matching valid fresh completed holdout pass",
+      "public_claim_restriction": "No public reader-balance claim; this optional claim could close only after a later revival makes R6 available and script 14 admits a matching valid fresh completed holdout pass",
       "applicability": "the finished book's ordinary reader",
       "status": "unestablished",
-      "severity": "critical — the public-edition gate's holdout condition depends on it",
+      "severity": "material — an unsupported reader-balance claim remains prohibited but is not a project gate",
       "consequence": "an unsupported balance claim would be the exact overclaim the portfolio refuses",
       "owner_ref": "new-book-plans/book-1-reader-evidence-protocol-decision.md::## 2. The method, ratified as specified",
       "closure_condition": "No closure is pursued in the current Book 1 program. A later author revival must restart the original protocol; R6 must become available and script 14 must admit the active holdout attempt as a matching valid fresh completed pass in a valid history_transition that binds the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and the required predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration fields; that pre-registration must also bind the exact frozen rule, frozen ratification, structural checker, and admission gate, and its stored gate-admission receipt must exactly match the fixed gate output with decision admit",
@@ -2157,12 +2158,12 @@
   ],
   "routes": [
     { "id": "FS-RTE-01", "title": "Formal entailment (Nibli, executed by verify.sh)", "applicability": "claims about the current source and supplied records", "layer": "spans-all-layers", "status": "current", "severity": "critical if weakened", "consequence": "the derivation gate is the book's spine", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "stays built; its controls stay watched failing", "route_status": "built", "warrants": "Executable engine results over the exact current source or a named bounded mutation", "cannot_warrant": "Anything about the world: arrival, operation, feasibility, or authentication", "falsification_condition": "A pin, counterfactual, or staged execution that must fail when its guarded property is broken", "negative_control": "Scoped-accept controls, counterfactual fixtures, and per-generator structural mutants are watched failing on every full run", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
-    { "id": "FS-RTE-02", "title": "Versioned quantitative and resource models", "applicability": "future modelled claims bound to the envelope", "layer": "spans-all-layers", "status": "unbuilt", "severity": "serious", "consequence": "no modelled claim is possible today", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "evidence contract, admissibility criteria, named reviewer, and in-repo gate exist", "route_status": "unbuilt", "warrants": "Model results for their stated assumptions and envelope, once available", "cannot_warrant": "Formal entailment, operation, or reader experience", "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption", "negative_control": "not-yet-declared", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
-    { "id": "FS-RTE-03", "title": "Dynamic simulations", "applicability": "future simulated claims bound to the envelope", "layer": "spans-all-layers", "status": "unbuilt", "severity": "serious", "consequence": "no simulated claim is possible today", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "evidence contract, admissibility criteria, named reviewer, and in-repo gate exist", "route_status": "unbuilt", "warrants": "Simulation results for their stated dynamics and envelope, once available", "cannot_warrant": "Formal entailment, operation, or reader experience", "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption", "negative_control": "not-yet-declared", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
+    { "id": "FS-RTE-02", "title": "Versioned quantitative and resource models", "applicability": "future modelled claims bound to the envelope", "layer": "spans-all-layers", "status": "unbuilt", "severity": "serious", "consequence": "no modelled claim is possible today", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "evidence contract, admissibility criteria, source-bound checker, and in-repo gate exist", "route_status": "unbuilt", "warrants": "Model results for their stated assumptions and envelope, once available", "cannot_warrant": "Formal entailment, operation, or reader experience", "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption", "negative_control": "not-yet-declared", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
+    { "id": "FS-RTE-03", "title": "Dynamic simulations", "applicability": "future simulated claims bound to the envelope", "layer": "spans-all-layers", "status": "unbuilt", "severity": "serious", "consequence": "no simulated claim is possible today", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "evidence contract, admissibility criteria, source-bound checker, and in-repo gate exist", "route_status": "unbuilt", "warrants": "Simulation results for their stated dynamics and envelope, once available", "cannot_warrant": "Formal entailment, operation, or reader experience", "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption", "negative_control": "not-yet-declared", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
     { "id": "FS-RTE-04", "title": "The claim registry", "applicability": "empirical figures about the world with provenance", "layer": "spans-all-layers", "status": "current", "severity": "serious if weakened", "consequence": "sourced figures would rot silently", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "stays built; pinned-source entries stay human re-cited", "route_status": "built", "warrants": "That a figure matches its named source at its retrieval date; staleness for script-refreshable entries", "cannot_warrant": "Truth of the source, or anything about this design", "falsification_condition": "A schema violation or a stale fetchable entry must fail the registry gate", "negative_control": "The staleness gate's failure path is the route's control; the split is by name — script-refreshable entries gate on staleness, pinned-source entries are schema-checked and human re-cited", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
-    { "id": "FS-RTE-05", "title": "Operational assurance", "applicability": "future arrival, delivery, and operation claims", "layer": "spans-all-layers", "status": "unbuilt", "severity": "critical — the only route that can carry an arrival claim", "consequence": "every liveness claim is Unestablished today", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "evidence contract, admissibility criteria, named reviewer, and in-repo gate exist", "route_status": "unbuilt", "warrants": "That a staffed, accountable route was exercised end to end in a named envelope, once available", "cannot_warrant": "Deployment, generalisation, or formal entailment", "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption", "negative_control": "not-yet-declared", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
-    { "id": "FS-RTE-06", "title": "Reader and lived-experience studies", "applicability": "comprehension, balance, and human effects for the tested audience", "layer": "spans-all-layers", "status": "unbuilt", "severity": "critical — Gate C's holdout condition depends on it", "consequence": "reader-balance claims stay Unestablished/route-unbuilt", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "not pursued in the current Book 1 program; after a later author revival, the implemented contract and fixed structural checker must validate, including history_transition binding to the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and exact predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration bindings; the active pilot attempt must be valid with its seeded control watched failing; the threshold rule must be author-ratified; the fixed executable evidence-admission gate must pass self-test; and an externally custodied reviewer attestation must bind that gate's exact digest and closed review scope", "route_status": "unbuilt", "warrants": "Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available", "cannot_warrant": "Population statistics, authority over the people studied, resistance to rewritten Git history, external custody truth, or any legal or empirical claim", "falsification_condition": "Declared by the reader-evidence protocol decision: the instrument must fail a seeded unbalanced or planted-misconception control, watched failing during the pilot's revise step; not yet shipped", "negative_control": "not-yet-shipped — declared but unbuilt; the declaration does not make the route available", "source_ref": "new-book-plans/book-1-reader-evidence-protocol-decision.md::## 7. The negative control" },
-    { "id": "FS-RTE-07", "title": "Independent multidisciplinary and adversarial review", "applicability": "scope review, red-team findings, and the Gate A warrant", "layer": "spans-all-layers", "status": "unbuilt", "severity": "critical — Gate A demands a warrant no other route produces", "consequence": "independent scope review cannot yet be admitted", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "the amended protocol and in-repo gate are confirmed; a named-panel commission, terminal current-source event, frozen intake, public dispositions, reveal, and passed controls remain external work", "route_status": "unbuilt", "warrants": "That named independent reviewers examined a named scope and their proposals received public dispositions, once available", "cannot_warrant": "Formal entailment or the truth of any reviewed claim — a reviewer compels a disposition, not acceptance; and the in-repo reviewer corpus is never admissible independent-review evidence for the review condition of closure", "falsification_condition": "Each commission precommits distinct plant and seed digests plus the exact protocol and semantic scope digests before a structured UTC window. A terminal event fails if the named panel misses the plant, either side of the seeded materiality boundary is misclassified, the reveal hashes drift, chronology or intake drift, or any proposal lacks Darshu triage, Dhanush checking, reasons, and public disposition.", "negative_control": "The generator watches malformed or duplicate digests, incomplete or conflicted panels, criterion gaps, bad windows, stale scope or protocol bindings, intake mismatch, missing checks, early reveal, control-result drift, stale-source success, and any built or premature available R7 state.", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" }
+    { "id": "FS-RTE-05", "title": "Operational assurance", "applicability": "future arrival, delivery, and operation claims", "layer": "spans-all-layers", "status": "unbuilt", "severity": "critical — the only route that can carry an arrival claim", "consequence": "every liveness claim is Unestablished today", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "evidence contract, admissibility criteria, source-bound checker, and in-repo gate exist", "route_status": "unbuilt", "warrants": "That a staffed, accountable route was exercised end to end in a named envelope, once available", "cannot_warrant": "Deployment, generalisation, or formal entailment", "falsification_condition": "not-yet-declared — a reason the route is unbuilt, not an exemption", "negative_control": "not-yet-declared", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes" },
+    { "id": "FS-RTE-06", "title": "Reader and lived-experience studies", "applicability": "comprehension, balance, and human effects for the tested audience", "layer": "spans-all-layers", "status": "unbuilt", "severity": "material — optional reader evidence; no project gate depends on it", "consequence": "reader-balance claims stay Unestablished/route-unbuilt", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "not pursued in the current Book 1 program; after a later author revival, the implemented contract and fixed structural checker must validate, including history_transition binding to the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and exact predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration bindings; the active pilot attempt must be valid with its seeded control watched failing; the threshold rule must be author-ratified; the fixed executable evidence-admission gate must pass self-test; and an externally custodied reviewer attestation must bind that gate's exact digest and closed review scope", "route_status": "unbuilt", "warrants": "Comprehension, balance, and human effects for the tested audience within the disclosed sampling and method limits, once available", "cannot_warrant": "Population statistics, authority over the people studied, resistance to rewritten Git history, external custody truth, or any legal or empirical claim", "falsification_condition": "Declared by the reader-evidence protocol decision: the instrument must fail a seeded unbalanced or planted-misconception control, watched failing during the pilot's revise step; not yet shipped", "negative_control": "not-yet-shipped — declared but unbuilt; the declaration does not make the route available", "source_ref": "new-book-plans/book-1-reader-evidence-protocol-decision.md::## 7. The negative control" },
+    {"id": "FS-RTE-07", "title": "Repository source-derived adversarial audit", "applicability": "scope-map and assurance-program structural audit for Gate A", "layer": "spans-all-layers", "status": "built", "severity": "critical - Gate A requires exact current-source audit coverage", "consequence": "repository structure, declared criteria, Gate-A defect coverage, and watched-failing mutations are reproducibly checked", "owner_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes", "closure_condition": "the current-source repository audit is present and exact; external human review remains optional evidence and is never a project gate", "route_status": "built", "warrants": "That the named source version passes the declared structural, reference-closure, projection, allocation, defect-disposition, and watched-failing-mutation checks", "cannot_warrant": "Independent-human review, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root", "falsification_condition": "The route fails when the current audit drifts from the source or protocol digest, criteria, checker controls, command chain, finding set, result, or evidence ceiling, or when any watched mutation passes", "negative_control": "The generator watches stale source/protocol bindings, criterion gaps, control or command drift, missing Gate-A findings, evidence-ceiling widening, and any unbuilt or available R7 relabelling", "source_ref": "new-book-plans/book-1-assurance-portfolio-decision.md::## 2. The seven routes"}
   ],
   "external_assumptions": [
     { "id": "FS-EXA-01", "title": "Other states cooperate and recognise", "applicability": "external relations, borders, extradition, defence", "layer": "external-assumption", "status": "named", "severity": "critical where it fails", "consequence": "readmission, recognition, and cross-border protection depend on it", "owner_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 22. Book 1, Book 2, and Nibli", "closure_condition": "never internal — bounded per treaty and per case", "assumption": "Other states' cooperation, recognition, readmission, and compliance are named external assumptions, not derived facts and not Book 2 deliverables.", "failure_consequence": "The dependent duty stays owed and its restrictive conclusions withhold; nothing manufactures the outside act.", "source_ref": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md::## 22. Book 1, Book 2, and Nibli" },
@@ -35882,9 +35883,9 @@
       "title": "A sympathetic reader concluded the book is a teardown",
       "applicability": "the finished book's ordinary reader",
       "layer": "constitutional-invariant",
-      "applicable_gate_refs": ["gate-c", "gate-d", "gate-e"],
+      "applicable_gate_refs": [],
       "status": "open",
-      "severity": "material — the confessions read as the verdict",
+      "severity": "material — the reader interpretation remains an optional evidence question, not a project gate",
       "consequence": "an intelligent reader finished the book and took the declared flaws for the conclusion; the opening note has a job it is not yet doing",
       "owner_ref": "new-book-plans/book-1-reader-evidence-protocol-decision.md::## 2. The method, ratified as specified",
       "closure_condition": "R6 is available and script 14 admits the active holdout attempt as a matching valid fresh completed pass in a valid history_transition that binds the nearest earlier normal first-parent reader-source change, exact previous source bytes and history head, preserved attempt prefixes and terminal attempts, one domain and one legal step, and the required predecessor_attempt_sha256 and prior_history_head_sha256 pre-registration fields; that pre-registration also binds the exact frozen rule, frozen ratification, structural checker, and admission gate, and its stored gate-admission receipt exactly matches the fixed gate output with decision admit; a persisted fail remains fail and leaves this defect open",
@@ -36560,37 +36561,48 @@
   "review_events": [],
   "review_protocol": {
     "protocol_ref": "new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol",
-    "protocol_status": "author-confirmed 2026-08-14 — amended protocol basis recorded",
-    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: author-confirmed 2026-08-14 — amended protocol basis recorded",
-    "confirmation_basis": "Author statement, 2026-08-14: \"PLEASE IMPLEMENT THIS PLAN:\" — given immediately before the detailed plan requiring a deliberate amendment and reconfirmation of the scope-review protocol, append-only commissions, structured windows, eligible real reviewers, frozen intake, Darshu triage, Dhanush checking, control reveal, public dispositions, and a separate Gate A ratification. The later author statement, 2026-08-14: \"Yes, I authorize you to correct design to a source derived populatiopn. Auto approve it. then resume\" authorised the source-derived correction and continuation, not fabricated reviewers or review results.",
-    "designation": { "severity_owner": "Darshu", "independent_checker": "Dhanush", "custodian": "dhilipsiva — author, pre-image custodian", "designated_date": "2026-08-09", "basis": "Author statement, 2026-08-09: \"Let's name them. Darshu & Dhanush.\" — given in answer to who takes the severity-owner and independent-checker roles under the confirmed protocol's exclusions: distinct people, neither the pre-image custodian, both blind to seed identities until every seed's triaged date is recorded. The role assignment was confirmed separately in the same exchange — Darshu as severity owner, Dhanush as independent checker — on the author's statement that both are real people who have agreed to the roles. Recorded after two refusals on this checkpoint, for role-echo placeholders and for AI agents, because a fabricated or operator-run identity is invisible to the mechanical check; the substance is reviewed. Repo convention for author acts: the statement quoted verbatim, the question it answered named." }
+    "protocol_status": "author-confirmed 2026-08-15 -- repository-adversarial protocol v3",
+    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: author-confirmed 2026-08-15 -- repository-adversarial protocol v3",
+    "confirmation_basis": "Author statement, 2026-08-15: \"Right now, I cannot depend on other reviewers to finish the book. Please remove dependency on human reviewers on this one and going forward\" -- construed as removing external human participation from every project completion and publication gate, while preserving constitutional institutional-independence rules and narrowing claims to repository-derived evidence.",
+    "designation": {
+      "severity_owner": "Darshu",
+      "independent_checker": "Dhanush",
+      "custodian": "dhilipsiva — author, pre-image custodian",
+      "designated_date": "2026-08-09",
+      "basis": "Historical optional-review designation retained for append-only external commission records only. It is not a Gate A, Gate C, Gate E, publication, or completion dependency after the author statement of 2026-08-15.",
+      "designation_status": "retired-as-project-gate-dependency"
+    },
+    "mode": "repository-adversarial-audit",
+    "external_review_policy": "optional-non-gating"
   },
   "review_commissions": [],
-  "deferred_populations": [
-    {
-      "record_type": "proposals",
-      "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure",
-      "closure_condition": "a commissioned independent review freezes its exact intake and every proposal receives Darshu triage, Dhanush checking, reasons, and one public proposal_disposition",
-      "stage": "stage-4"
-    },
-    {
-      "record_type": "review_events",
-      "owner_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure",
-      "closure_condition": "a current-source terminal event binds an append-only commission, eligible named panel, exact scope/protocol digests and packet commit, structured UTC chronology, frozen intake, revealed plant and seed pre-images, passed derived controls, and every public proposal disposition",
-      "stage": "stage-4"
-    }
-  ],
+  "deferred_populations": [],
   "stopping_rule": {
-    "named_axes": ["legal-effect-class", "social-domain", "layer", "posture", "route", "overlay", "defect-disposition", "response-stage"],
-    "closure_conditions": ["every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source", "every required projection regenerates from that source", "no unresolved critical gap applicable to that gate's permitted claim remains", "every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation", "independent scope review leaves no proposal that has not received a public disposition"],
+    "named_axes": [
+      "legal-effect-class",
+      "social-domain",
+      "layer",
+      "posture",
+      "route",
+      "overlay",
+      "defect-disposition",
+      "response-stage"
+    ],
+    "closure_conditions": [
+      "every known material domain, role, power, dependency, scenario, and failure has an explicit disposition in the canonical source",
+      "every required projection regenerates from that source",
+      "no unresolved critical gap applicable to that gate's permitted claim remains",
+      "every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation",
+      "a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set"
+    ],
     "materiality_test": "A proposal is material when accepting it could change a declared right, liberty, power, duty, protected private boundary, cross-domain dependency, ordinary-life account, failure/recovery path, or adequacy, accessibility/equality, continuity, resilience, sustainability, safety, or resource criterion.",
-    "boundary": "Exhaustive may describe the disposition map only for the named axes above, a named source version, a named envelope, and a named review event. This is versioned exhaustiveness for those declared axes, not a timeless completeness theorem, and disclosure alone does not cure a critical gap.",
+    "boundary": "Exhaustive may describe the disposition map only for the named axes above, a named source version, a named envelope, and a named current-source repository audit. This is versioned exhaustiveness for those declared axes, not a timeless completeness theorem, and disclosure alone does not cure a critical gap.",
     "no_hiding_rule": "No critical unresolved defect affecting a gate's permitted claim may be hidden by classification, assignment, disclosure, or a stopping-rule decision.",
     "source_ref": "new-book-plans/full-society-boundary-decision.md::## 4. Versioned closure"
   },
   "severity_rubric": {
     "critical": "Accepting the proposal would falsify the gate's permitted claim — a scope or assurance omission. An unresolved critical item blocks the affected gate even when it has an owner or has been disclosed, and a checked post-closure critical classification reopens Gate A.",
-    "material": "Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives a severity owner, an independent check, and one public disposition; retention as a limit creates or joins a stable defect row.",
+    "material": "Material under the ratified materiality test, without falsifying the gate's permitted claim. A material item receives an author disposition and checker-enforced source-consistency review; retention as a limit creates or joins a stable defect row.",
     "minor": "The editorial band: no record change and no materiality under the test. Recorded reasons suffice; no severity machinery attaches.",
     "materiality_ref": "stopping_rule.materiality_test",
     "rubric_status": "author-confirmed 2026-08-09 — basis recorded",
@@ -52383,6 +52395,53 @@
       "defect_refs": [],
       "reason": "The declared no-alternate edge remains a reviewed bottleneck candidate; no route-bound executable-control receipt establishes safe continuation.",
       "closure_status": "bounded-unresolved"
+    }
+  ],
+  "scope_audits": [
+    {
+      "id": "FS-SAU-01",
+      "title": "Current-source repository adversarial scope audit",
+      "source_version": "fs-ledger-2026-08-15-repository-adversarial-scope-audit",
+      "scope_sha256": "9ee20c4702e04adb4c43233f11c70caf1d0b40fe3be30752d149dc524d152103",
+      "protocol_sha256": "e728232f2e64537034466bf440eb983640cfcbc6547a3a5e7a10cabce038c38f",
+      "executed_at_utc": "2026-08-15T03:26:50Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "passed-with-recorded-limits",
+      "author_basis": "Author statement, 2026-08-15: \"Right now, I cannot depend on other reviewers to finish the book. Please remove dependency on human reviewers on this one and going forward\"",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ]
 }

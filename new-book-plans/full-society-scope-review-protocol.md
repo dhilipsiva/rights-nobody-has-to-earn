@@ -2,231 +2,133 @@
 
 # Full-Society Scope-Review Protocol
 
-> **Status: author-confirmed 2026-08-14 — amended protocol basis recorded.**
-> This is the amended R7 evidence and admissibility contract. It replaces the
-> singular mutable commitment slot with append-only commission records and
-> binds each event to one exact source version, semantic scope digest,
-> protocol digest, panel, UTC window, packet manifest, frozen intake, and
-> revealed control result. Confirmation specifies the contract; it names no
-> reviewer, creates no control pre-image, commissions no review, runs no event,
-> and passes no gate. R7 remains `unbuilt` until a qualifying event exists and
-> can then become only `available`, never `built`.
+> **Status: author-confirmed 2026-08-15 -- repository-adversarial protocol v3.**
+> This protocol supersedes the 2026-08-14 requirement to recruit a real-person
+> panel as a Gate A or publication dependency. Gate A now uses an append-only,
+> source-derived repository audit plus a separate explicit author ratification.
+> External human review remains welcome optional evidence. It never blocks Gate
+> A, Gate C, Gate E, a book release, or completion of the project.
 
 ## 1. Warrant and evidence ceiling
 
-The review answers one bounded question: did named independent reviewers
-examine a named version of the full-society map, and did every proposal in the
-frozen intake receive a checked, reasoned, public disposition? It does not
-prove completeness, truth, enactment, operation, delivery, feasibility,
-liveness, calibration, or institutional independence. Its most permissive
-warrant is the Gate A claim:
+The repository audit answers one bounded question: does the named source
+version pass the declared structural, reference-closure, projection-freshness,
+allocation, defect-disposition, and watched-failing-mutation checks under the
+checked-in protocol?
+
+Its most permissive Gate A claim remains:
 
 > The project has a versioned, reviewable scope map and assurance program.
 
-No review event can widen that sentence. The in-repository reviewer corpus is
-Reasoned design input only and is never R7 evidence.
+A passing audit does not prove that the map is complete in any timeless or
+real-world sense. It supplies no independent-human warrant, reader response,
+external truth, operation, delivery, feasibility, liveness, calibration,
+institutional independence, or authentication of the audit's own trust root.
+The author remains the accountable decision-maker and must ratify Gate A in a
+separate commit.
 
-## 2. Operative records
+This project-level rule does not weaken any constitutional rule that requires
+independent courts, reviewers, auditors, alternate authorisers, advocates, or
+other separated public functions. Those are properties of the proposed
+society, not dependencies on outside reviewers finishing the manuscript.
 
-`full-society-ledger.json` and `13-full-society-ledger.py` are the operative
-schema and validator. This protocol binds their meanings. A divergence is a
-defect, and the validator's refusal governs until repaired.
+## 2. Canonical repository audit
 
-The lifecycle has four record populations:
+The canonical ledger stores audits in the append-only `scope_audits` array.
+Each `FS-SAU-*` row binds:
 
-1. `review_commissions` is append-only. Each commission binds the exact source
-   version, validator-derived semantic scope SHA-256, exact protocol SHA-256,
-   distinct plant and seed SHA-256 commitments, commissioning instant,
-   structured received window and cutoff, custodian, eligible reviewer roster,
-   discipline and criterion coverage, attestations, and ordered packet paths.
-2. `proposals` contains every reviewer, seed, and plant-match proposal in the
-   event's frozen intake. Every row records receipt, Darshu triage, Dhanush
-   checking, classification, reasons, and one public disposition.
-3. `review_events` contains terminal events only. An event binds its
-   commission and packet commit, freezes the ordered intake and digest, records
-   reveal and control adjudication, and carries an enum outcome with reasons.
-4. `closure_record` remains null until a later author-ratified Gate A
-   amendment. A review event cannot populate it by implication.
+- a stable ID and title;
+- the exact ledger `source_version`;
+- the checker-derived semantic scope SHA-256;
+- the SHA-256 of this protocol;
+- a canonical UTC execution time;
+- the checker-owned repository-adversarial method;
+- the exact declared materiality criteria;
+- the exact watched-control entry points;
+- the exact command chain;
+- every Gate-A-applicable defect row;
+- a terminal result;
+- the author basis; and
+- the byte-exact evidence ceiling.
 
-Failed and stale commissions and events stay in the append-only record. They
-cannot satisfy condition five, but their failure remains evidence about the
-review machinery.
+A current-source passing audit is one whose source version, semantic digest,
+protocol digest, method, criteria, controls, command chain, finding set, result,
+and evidence ceiling all match the checker-owned contract. A stale or failed
+audit stays in history and cannot satisfy Gate A.
 
-## 3. Semantic scope and packet binding
+The semantic scope digest excludes audit administration, deferrals, acceptance
+metadata, and closure metadata. This prevents the audit from digesting itself
+while still binding every semantic map and assurance-program field.
 
-The validator derives the semantic scope digest from the canonical map and
-assurance program while excluding review administration, deferrals,
-acceptance metadata, and closure metadata. R7's event-driven status fields are
-normalised so moving R7 from `unbuilt` to `available` does not pretend the map
-changed. Any other semantic map change changes the digest.
+## 3. Execution and findings
 
-The packet is the exact repository commit issued after the commission record
-lands and before the received window opens. Its ordered manifest contains:
+For a semantic source change:
 
-- `new-book-plans/full-society-ledger.json`;
-- `new-book-plans/full-society-ledger.md`;
-- `new-book-plans/full-society-reader-ledger.md`;
-- `new-book-plans/book-1-constitutional-coverage-map.md`;
-- `new-book-plans/full-society-boundary-decision.md`;
-- `new-book-plans/book-1-assurance-portfolio-decision.md`;
-- this protocol; and
-- `new-book-plans/constitutional-closure-and-model-allocation-audit.md`.
+1. Regenerate every source-derived projection.
+2. Run the exact checker-owned audit command chain.
+3. Record all Gate-A-applicable defect rows in the audit finding set.
+4. Correct any failing structural or watched-mutation condition and rerun.
+5. Preserve any failed committed audit as an append-only prefix.
+6. Freeze a passing current-source audit before creating a closure candidate.
 
-The terminal event records that packet commit. A semantic change produced by
-review invalidates the current-source qualification of the old commission and
-event. The resulting source must be recommissioned; an event may not stretch
-its warrant across a changed map.
+A finding is resolved only by a source change, an exact classified-out
+disposition already permitted by the schema, or a retained defect row with its
+severity, consequence, owner, closure condition, gate applicability, and
+public-claim restriction intact. Disclosure cannot cure a critical defect.
 
-## 4. Commissioning and reviewer eligibility
+The audit is reproducible but not independent of the repository machinery.
+That limitation is deliberate and public. The project removes the external
+human dependency by narrowing its claim, not by relabelling automation as a
+human or independent review.
 
-Commissioning occurs only after the power population is complete and scripts
-13, 16, and the full verifier are green. The commission must be committed
-before its received window opens. Its canonical UTC chronology is:
+## 4. Optional external review
 
-`commissioned < opens < closes <= cutoff`.
+The existing `review_commissions`, `proposals`, and
+`review_events` interfaces remain available for optional external
+feedback. If used, they retain their strict append-only history,
+source/protocol binding, reviewer conflict rules, UTC chronology, frozen
+intake, blind control handling, Darshu triage, Dhanush checking, and public
+dispositions.
 
-The author-custodian creates two canonical UTF-8 pre-images outside the
-repository. Each carries a random nonce, construction date, and custody
-metadata. Only their distinct SHA-256 digests enter the commission.
+Those records may add evidence or trigger a semantic correction. They do not
+control R7 state or any project gate. A semantic correction triggered by
+optional feedback requires a new current-source repository audit. No empty
+optional-review array requires a deferral.
 
-- The plant pre-image states one genuine material omission and mechanical
-  match criteria.
-- The seed pre-image contains both material and immaterial proposals, each
-  with expected materiality, expected severity where material, and expected
-  disposition.
+The historical Darshu, Dhanush, and custodian designation is therefore
+`retired-as-project-gate-dependency`. It remains meaningful only
+inside an optional commission that actually uses that protocol.
 
-Every reviewer is a real named person who has consented. No reviewer authored
-or generated a reviewed artifact, is the custodian, Darshu, or Dhanush, has a
-declared conflict, or receives findings-contingent compensation. The panel has
-at least two disciplines. Its reviewer-level criterion union covers, exactly:
+## 5. Route and closure effects
 
-- declared rights, liberties, powers, and duties;
-- protected private boundaries;
-- cross-domain dependencies;
-- the ordinary-life account;
-- failure and recovery paths; and
-- adequacy, accessibility/equality, continuity, resilience, sustainability,
-  safety, and resource criteria.
+R7 is `built` because its repository checks and watched-failing
+mutations are part of the ordinary verifier. It is not `available`:
+that term is reserved for admissible external evidence. R7 warrants only the
+bounded repository-audit claim in section 1.
 
-This protocol fixes no reviewer headcount beyond what those separations and
-coverage conditions logically require.
+Gate A condition five is met mechanically only when a current-source passing
+audit covers the exact criteria, controls, commands, and Gate-A-applicable
+finding set.
 
-## 5. Intake, blindness, and chronology
+Gate A still does not pass automatically. A later author-only closure commit
+must cite an immutable candidate commit, the exact current audit, the versioned
+structure envelope, checker-derived assurance and residual sets, the exact
+claim limitations, a complete verification receipt, and a verbatim dated author
+act. Any semantic map change after the candidate requires a new audit and
+candidate.
 
-Every proposal is received within the commission window. At window close the
-event freezes an ordered proposal-id manifest and a digest over each intake
-row's stable identity, text, source kind and identity, receipt time, and event
-reference. The proposal population for that event must equal the frozen list
-in the same order. No proposal can be silently added, removed, or reordered.
+## 6. Going-forward project rule
 
-Darshu triages every proposal, including immaterial and control proposals.
-Dhanush checks every classification, including immaterial and control
-proposals. Receipt precedes triage; triage precedes checking; checking precedes
-public disposition. Darshu and Dhanush remain blind to seed identity until all
-triage and checking are complete. Reviewers remain blind to the plant.
+No project completion gate or publication gate may require recruiting,
+scheduling, or receiving work from an external human reviewer or reader.
+External feedback and reader studies are optional evidence only.
 
-The pre-images reveal at the cutoff or after all blind triage and checking is
-complete, whichever is later. Early reveal fails. A late public disposition is
-still recorded, but it cannot erase a chronology failure.
+Where a former gate depended on such evidence, the permitted claim must be
+narrowed to what the repository can reproducibly establish. In particular,
+mechanical publication checks may establish artifact structure, source binding,
+navigation, consistency, and accessibility mechanics; they may not establish
+reader comprehension, lived effect, suitability, or accessibility for actual
+users. Those human-response claims remain unestablished unless optional
+evidence later supports them.
 
-## 6. Classification and public disposition
-
-The materiality finding is `material` or `immaterial`. A material proposal
-carries `critical` or `material` severity. Every row also carries one closed
-classification and one disposition:
-
-- `material-omission` maps to `added` and names created records;
-- `retained-limit` maps to `retained-limit` and binds the exact defect
-  severity, consequence, owner, closure condition, Gate applicability, and
-  affected claim's public restriction;
-- `duplicate` or `immaterial` maps to `classified-out` without an outward
-  routing disposition; and
-- a canonical Unestablished disposition maps byte-for-byte to the same routed
-  disposition on a `classified-out` proposal.
-
-Reviewers compel a reasoned disposition, not automatic acceptance and not an
-individual veto. Classification is routing, not assurance. A critical retained
-or otherwise unresolved Gate-A-applicable defect keeps condition three red.
-
-## 7. Reveal and derived outcomes
-
-The event records both revealed pre-image digests. Dhanush verifies every seed
-against its committed expected result and applies the plant's precommitted
-match criteria. The seed result set covers every and only seeded intake row and
-contains at least one material and one immaterial expected case. The plant can
-pass only through a reviewer-sourced proposal independently received before
-reveal.
-
-Control and event statuses are enums, never prose prefixes. The validator
-derives them:
-
-- the seeded control passes only when the revealed digest matches and every
-  seed's checked result matches the pre-image;
-- the planted control passes only when the revealed digest matches and a
-  reviewer-sourced plant match exists; and
-- the event passes only when both controls pass.
-
-Any digest mismatch, missing seed result, missed plant, early reveal, intake
-drift, chronology failure, panel conflict, missing triage/check, or stale scope
-prevents a qualifying event. Failure remains recorded.
-
-## 8. R7 state and closure condition five
-
-A confirmed protocol, designation, or commission alone leaves FS-RTE-07
-`unbuilt`. A terminal event that passes both controls but binds a stale source,
-scope, or protocol also leaves it `unbuilt`. Exactly one state transition is
-permitted: a current-source qualifying event makes R7 `available`. R7 is never
-`built` and warrants only named review plus checked public dispositions.
-
-Condition five is `met-in-form` only when a current-source qualifying event
-exists and its intake equals the fully disposed proposal set. It is otherwise
-`unmet-external`.
-
-## 9. Closure candidate and later ratification
-
-After a qualifying current-source event and all dispositions, the verified
-review-result commit is the immutable closure candidate. A later, separate
-author-ratification commit may populate the closure record only if the source
-version and semantic scope digest still match that candidate and the event.
-The record binds the exact Gate A claim, FS-ENV-01, event and cutoff, derived
-assurance and residual sets, per-residual claim limitations, and a full-verifier
-receipt for the candidate commit.
-
-Only closure and ratification metadata, acceptance-gate state, and regenerated
-reports may differ from the candidate. A semantic map change requires a new
-commission and event. Calibration remains Gate D. The closure is a deliberate
-author act, never a latent consequence of an event passing.
-
-## 10. Author checkpoints and confirmation record
-
-The remaining sequence is:
-
-1. the author selects eligible real reviewers and records consent, disciplines,
-   criterion coverage, conflicts, and compensation attestations;
-2. the author-custodian creates and holds the plant and seed pre-images;
-3. the commission with only their digests lands before the window opens;
-4. the exact commission commit is issued as the packet;
-5. the window, frozen intake, Darshu triage, Dhanush checks, reveal, controls,
-   and public dispositions run externally and enter the append-only record;
-6. any semantic change is recommissioned; and
-7. a later author act ratifies the immutable closure candidate.
-
-**Confirmation record.** Author statement, 2026-08-14: "PLEASE IMPLEMENT THIS
-PLAN:" — given immediately before the detailed plan requiring a deliberate
-amendment and reconfirmation of this protocol, append-only commissions,
-structured windows, eligible real reviewers, frozen intake, Darshu triage,
-Dhanush checking, control reveal, public dispositions, and a separate Gate A
-ratification. The later author statement, 2026-08-14: "Yes, I authorize you to
-correct design to a source derived populatiopn. Auto approve it. then resume"
-authorised the source-derived correction and continuation. Neither statement
-names reviewers, supplies pre-images, reports a review result, or ratifies Gate
-A; those checkpoints remain undischarged.
-
-## 11. Current state
-
-The amended protocol is confirmed and its checker is being landed. No
-commission exists, no reviewer has been selected for an event, no pre-image or
-digest has been created, no window is open, no proposal or event exists, and
-no closure candidate or author ratification exists. FS-RTE-07 remains
-`unbuilt`; condition five remains `unmet-external`; Gate A remains
-`not-passed`.
+Author statement, 2026-08-15: "Right now, I cannot depend on other reviewers to finish the book. Please remove dependency on human reviewers on this one and going forward"

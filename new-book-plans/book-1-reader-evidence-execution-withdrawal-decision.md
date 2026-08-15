@@ -2,8 +2,7 @@
 
 # Book 1 Reader-Evidence Execution Withdrawal Decision
 
-> **Status: author-ratified 2026-08-11 — execution withdrawn from the current
-> Book 1 program; dormant protocol preserved.** This is a scope and publication
+> **Status: author-ratified 2026-08-11 - execution withdrawn and dormant protocol preserved; its former Gate C blocking consequence superseded 2026-08-15.** This is a scope and publication
 > disposition. It records no pilot, accessibility attestation, threshold,
 > ratification, holdout, reader result, route availability, Gate C pass,
 > edition, or release.
@@ -46,7 +45,8 @@ The sole machine-readable reader-evidence source continues to record no admitted
 - holdout status remains `not-frozen` and result remains `not-run`;
 - R6 remains neither built nor available;
 - FS-CLM-37 remains `Unestablished/route-unbuilt`; and
-- Gate C remains false and receives no reader evidence.
+- Gate C receives no reader evidence; its separate mechanical release checks
+  are governed by the superseding 2026-08-15 boundary.
 
 No `void` attempt is created because nothing was frozen or run. The dormant
 contract, checker, evaluator, admission-gate component, public-minimum kit, and
@@ -61,7 +61,7 @@ C. It may not publish as **Book 1 — First Edition**, ship the first-edition PO
 claim suitability for a tested audience, or activate Book 2.
 
 Public source, Git history, and the map and test program may continue. If every
-independent Gate A and Gate B condition and every applicable preview
+applicable Gate A and Gate B condition and every applicable preview
 snapshot-specific gate later passes, an immutable Gate B preview may publish
 under its existing narrow claim. It must state that no admissible human reader
 pilot, holdout, or human screen-reader validation is recorded or established
@@ -88,3 +88,23 @@ valid completed pilot packet exists.
 The 2026-08-09 reader-evidence protocol decision remains the controlling
 method if revived. This decision changes only whether the current Book 1
 program will execute it.
+
+## 7. 2026-08-15 superseding publication consequence
+
+Sections 2 and 3 remain factual as amended above: no human reader study was
+run, R6 is unbuilt,
+and no reader, comprehension, balance, lived-effect, or actual-user
+accessibility claim is established.
+
+Section 4's conclusion that the absence of R6 blocks Gate C is superseded. No
+project completion or publication gate now depends on recruiting or receiving
+work from another human. Gate C is narrowed to source binding, artifact
+integrity, navigation, internal consistency, and mechanical accessibility.
+Passing those checks does not establish reader suitability or accessibility for
+actual users.
+
+The dormant reader protocol remains available as an optional evidence route.
+It may be revived without becoming a release dependency. No synthetic or
+automated result may be relabelled human evidence.
+
+Author statement, 2026-08-15: "Right now, I cannot depend on other reviewers to finish the book. Please remove dependency on human reviewers on this one and going forward"

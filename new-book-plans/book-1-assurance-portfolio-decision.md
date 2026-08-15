@@ -2,10 +2,7 @@
 
 # Book 1 Assurance Portfolio Decision
 
-> **Status: author-ratified on 2026-08-08; R6 execution withdrawn from the
-> current Book 1 program on 2026-08-11; formal implementation otherwise
-> pending.**
-> This decision selects the assurance portfolio: which route warrants which
+> **Status: author-ratified 2026-08-08; R6 optional and unbuilt; R7 repository audit built; external-human gate dependencies removed 2026-08-15.**\n> This decision selects the assurance portfolio: which route warrants which
 > claim, what posture every claim carries, and what language each posture
 > permits. It adds no predicate, rule, fact, pin, generator, `verify.sh`
 > section, chapter, edition, or public coverage claim, and it **upgrades no
@@ -66,21 +63,20 @@ six produces.
 | **R3** | Dynamic simulations | Behaviour of queues, flows, shocks and transitions under stated assumptions | That the modelled behaviour occurred, or that the assumptions hold | Unbuilt |
 | **R4** | The claim registry | Empirical figures about the world, with provenance, population, period, place and method intact | Any constitutional consequence, and any generalisation to this design | **Built**, split — see 2a |
 | **R5** | Operational assurance | That something was actually done, delivered, advanced, or independently reproduced | Legal effect, and anything outside its dated scope | Not yet **available** |
-| **R6** | Reader and lived-experience studies | Comprehension, balance, and human effects, for the tested audience within the disclosed sampling and method limits | Population statistics, authority over the people studied, or any legal or empirical claim | Unbuilt; execution withdrawn from the current Book 1 program |
-| **R7** | Independent multidisciplinary and adversarial review | That an omission was proposed and received a reasoned public disposition | Derivation, measurement, authentication, or a veto — a reviewer compels a disposition, not acceptance | Unbuilt |
+| **R6** | Reader and lived-experience studies | Comprehension, balance, and human effects for a tested audience within disclosed limits | Any wider reader, legal, empirical, or population claim | Optional and unbuilt; no gate depends on it |
+| **R7** | Repository source-derived adversarial audit | That the named source version passes declared structural, reference-closure, projection, allocation, defect-disposition, and watched-mutation checks | Independent-human review, reader response, external truth, operation, feasibility, liveness, calibration, or its own trust root | **Built** |
 
 **Non-substitution.** One green route may not stand in for another. A route may
 not be split, renamed, or reinterpreted to make a claim fit. This restates
 existing doctrine and weakens none of it.
 
-**Current-program disposition.** The 2026-08-11 author ruling withdraws
-execution of R6 from the current Book 1 program because the required independent
-human roles are unavailable. It neither removes R6 from the portfolio nor
-changes its warrant. R6 stays unbuilt, FS-CLM-37 stays
-Unestablished/route-unbuilt, and the reader condition of Gate C stays
-unsatisfied. The dormant protocol may be revived only by a later author ruling
-that restarts at its original pre-registration boundary. See
-[`book-1-reader-evidence-execution-withdrawal-decision.md`](book-1-reader-evidence-execution-withdrawal-decision.md).
+**Current-program disposition, superseded 2026-08-15.** R6 remains in
+the portfolio as optional evidence, stays unbuilt, and establishes no reader
+claim. The earlier consequence that Gate C therefore remained blocked is
+superseded: no project gate depends on external human participation. Gate C's
+claim is narrowed to the exact source-bound artifact, navigation, internal-
+consistency, and mechanical-accessibility checks. R7 is built as the repository
+source-derived adversarial audit and expressly makes no independent-human claim.
 
 ### 2a. R4 is two warrants, not one
 
@@ -99,25 +95,20 @@ ratio moves.
 
 ### 2b. Built, available, and the difference
 
-A route is **built** when its route-owned, evidence-producing check exists
-and runs in `verify.sh`. A structural validator, generator, or evaluator
-fixture that checks only a dormant contract does not build its route. A fixed
-admission-gate component whose self-test checks only its interface is likewise
-route machinery, not the route-owned evidence-producing check, and does not
-build R6. The test fits R1 and R4 and no other, because the remaining routes
-produce evidence outside this repository by their nature.
+A route is **built** when its route-owned, evidence-producing check exists,
+runs in the ordinary verifier, and has watched-failing controls. R1 and R4 are
+built in their declared scopes. R7 is now also built: its source-derived audit
+binds the semantic ledger scope, protocol, criteria, checker entry points,
+command chain, and Gate-A-applicable findings.
 
-A route is **available** when its evidence contract, admissibility criteria,
-named reviewer with the required custody attestation, fixed in-repo gate, and
-watched-failing negative control exist, so that outside evidence can be
-*admitted* and checked when it arrives. R5, R6, R7 and any externally produced
-R2 or R3 result become usable through availability, never through being built.
+A route is **available** when outside evidence can be admitted through a closed
+contract with appropriate provenance, custody, and watched-failing controls.
+R5, R6, and externally produced R2 or R3 evidence use availability. R7 does not:
+it produces only repository audit evidence and must not be relabelled external
+or independent.
 
-Both count as established routes. **Neither is satisfied by naming one.**
-Defining built as "gated in this repository" and stopping there would make
-operational assurance permanently impossible, every arrival claim permanently
-unestablishable, and the record-integrity verdict permanently frozen at NOT
-ESTABLISHED. That consequence is the reason availability is a separate test.
+Both built and available routes remain claim-scoped. Neither is satisfied by
+naming one, and no route substitutes for another.
 
 ### 2c. Every route declares a negative control
 
@@ -444,11 +435,9 @@ and a handoff to the second volume does not build it either.
 and reviewing a route is permitted and required while the route is unbuilt. That
 activity takes no posture and asserts nothing, so it does not violate this rule.
 
-This distinction is what keeps the rule from freezing the gate ladder. The
-public-edition gate depends on reader evidence, the reader route is unbuilt, and
-its pass rule is itself a separate open author ruling to be made after a pilot.
-That is a **sequence**, not a deadlock: the pilot may run and the rule may then
-be ratified. Separately, R6 becomes available only when its evidence contract,
+This distinction keeps optional evidence work from being mistaken for a gate.
+The public-edition gate does not depend on R6. If the optional reader claim is
+later pursued, R6 becomes available only when its evidence contract,
 admissibility criteria, named reviewer with a gate-bound custody attestation,
 dedicated executable evidence-admission/evaluation gate, and watched-failing
 seeded control are complete. The dormant contract, structural checker,
@@ -457,9 +446,8 @@ The gate component's self-test supplies no reader evidence, reviewer custody, or
 seeded-control result and does not build or make R6 available. Every active
 completed attempt must store `gate_admission_receipt` as the fixed digest-bound
 gate's exact output. Only a matching valid holdout pass whose exact receipt has
-`decision=admit` may establish FS-CLM-37. A gate condition requiring a route to
-exist is a sequencing requirement; it is not a Book 1 claim and this rule does
-not bite on it.
+`decision=admit` may establish FS-CLM-37. None of those optional steps controls
+completion or publication.
 
 ## 11. No bridge into the reasoning engine
 
@@ -714,6 +702,36 @@ gate-bound reviewer custody attestation, or `gate_admission_receipt` exists.
 The dormant `history_transition` has null `previous_source_commit`,
 `previous_source_sha256`, and `previous_history_head_sha256` values and the
 deterministic empty `history_head_sha256`; no pre-registration predecessor
-binding exists. R6 therefore remains unbuilt and unavailable, FS-CLM-37 remains
-Unestablished/route-unbuilt, and the public-edition gate is unchanged. This
-current-state note is not the reserved second author ruling.
+binding exists. R6 therefore remains unbuilt and unavailable, and FS-CLM-37 remains
+Unestablished/route-unbuilt. Under the 2026-08-15 amendment no publication
+gate depends on R6, and no positive reader claim follows. This current-state
+note is not a reader-evidence ruling.
+
+## 19. 2026-08-15 no-external-reviewer dependency amendment
+
+This section supersedes every earlier sentence in this decision that made a
+project gate depend on an external reviewer, reader, panel, facilitator, coder,
+adjudicator, custodian, or participant.
+
+- R6 remains optional, unbuilt, and non-substitutable. Its absence blocks only a
+  positive reader, comprehension, balance, lived-effect, or actual-user
+  accessibility claim.
+- R7 is the built repository source-derived adversarial audit. It warrants only
+  the checked repository structure for its named source, criteria, and controls.
+  It supplies no independent-human, reader, external-truth, operational,
+  feasibility, liveness, calibration, or self-authentication claim.
+- Gate A uses R7 plus separate author ratification.
+- Gate C uses source binding, artifact integrity, navigation, internal
+  consistency, and mechanical accessibility checks. It makes no reader-
+  suitability or actual-user accessibility claim.
+- Gate E uses reproducible cross-book structural, model, provenance, and
+  assurance checks plus author ratification. It makes no human-reviewed or
+  real-world functioning claim.
+- External review and reader studies may still be admitted as optional evidence.
+  They never delay completion or publication.
+
+This amendment changes project assurance and public-claim ceilings only. It
+does not weaken constitutional allocations that require independent courts,
+reviewers, auditors, advocates, alternate authorisers, or separated functions.
+
+Author statement, 2026-08-15: "Right now, I cannot depend on other reviewers to finish the book. Please remove dependency on human reviewers on this one and going forward"

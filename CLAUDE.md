@@ -931,13 +931,13 @@ given, and nothing further.**
 
 The routes are formal entailment (Nibli, executed by `verify.sh`); versioned
 quantitative and resource models; dynamic simulations; the claim registry;
-operational assurance; reader and lived-experience studies; and independent
-multidisciplinary and adversarial review. Operational assurance is **restored by
-name** against the gate bullet's shorter list, because it is the only route that
-can carry an arrival claim and dropping it is what lets a safety result read as
-"it works". Independent review is added because Gate A already demands a warrant
-no other route produces. A route may not be split, renamed, or stretched to make
-a claim fit, and **one green route may never stand in for another**.
+operational assurance; reader and lived-experience studies; and repository
+source-derived adversarial audit. Operational assurance is **restored by name**
+because it is the only route that can carry an arrival claim and dropping it is
+what lets a safety result read as "it works". R7 supplies Gate A's bounded
+repository audit warrant and explicitly supplies no independent-human warrant.
+A route may not be split or stretched to make a claim fit, and **one green route
+may never stand in for another**.
 
 A route is **built** when its route-owned evidence-producing check runs in
 `verify.sh` — true of Nibli and the registry, and of nothing else. A structural
@@ -1023,10 +1023,10 @@ Unestablished/evidence-pending; route availability alone never upgrades it.
 Only sufficient admitted evidence permits the claim-appropriate established
 posture, and any valid adverse result remains exact. **But building a route is
 work, not a claim** — designing, pre-registering and piloting a route asserts
-nothing and takes no posture. That clause is what keeps the gate ladder a
-**sequence rather than a deadlock**: Gate C needs reader evidence, the reader
-route is unbuilt, and its pass rule is itself a separate open ruling to be made
-after a pilot.
+nothing and takes no posture. Gate C no longer waits for unbuilt R6: its claim is
+narrowed to source binding, artifact integrity, navigation, internal consistency,
+and mechanical accessibility. Any positive reader or actual-user accessibility
+claim still requires claim-appropriate optional R6 evidence.
 
 **No bridge into the engine.** No modelled, measured, simulated, operational or
 reader result may enter through the compute backend, an external predicate, or
@@ -1187,18 +1187,16 @@ does not make R6 built or available; FS-CLM-37 remains
 Unestablished/route-unbuilt and Gate C is unchanged.
 
 **Reader-evidence execution was withdrawn from the current Book 1 program by
-the author on 2026-08-11.** The independent human roles could not be
-commissioned, so the pilot, holdout, post-pilot threshold ruling, and human
-screen-reader smoke test are not being pursued for this program. This is a
-scope withdrawal, not completion, evidence, or a pass. Leave the empirical
-machine state above unchanged; create no void attempt where nothing was frozen
-or run. Gate C remains unsatisfied, Book 1 — First Edition and its POD may not
-publish, and Book 2 does not activate. Source and test work may continue; after
-independent Gate A and Gate B completion and every applicable preview
-snapshot-specific gate, only an explicitly unvalidated Gate B preview may
-publish. The dormant protocol may be revived only by a later author
-ruling beginning at its original pre-registration boundary. Controlling record:
-`new-book-plans/book-1-reader-evidence-execution-withdrawal-decision.md`.
+the author on 2026-08-11.** No pilot, holdout, post-pilot threshold ruling, or
+human screen-reader smoke test was run. R6 remains optional and unbuilt, and no
+reader-comprehension, suitability, lived-effect, or actual-user accessibility
+claim follows. The 2026-08-15 no-external-reviewer ruling supersedes the former
+Gate C blocking consequence: Gate C now tests only source binding, artifact
+integrity, navigation, internal consistency, and mechanical accessibility.
+The dormant reader protocol may be revived as optional evidence without
+becoming a publication dependency. Controlling records:
+`new-book-plans/book-1-reader-evidence-execution-withdrawal-decision.md` and
+`new-book-plans/full-society-boundary-decision.md`.
 
 The Reader's Map, annotated contents, glossary, indexes, domain map, and
 prose-equivalent diagrams landed in the exempt opening note at `67a520e`. The
@@ -1328,10 +1326,10 @@ edges are explicit and fail closed. Candidate, `author-ratified`, frozen, and
 completed stages each carry the watched-failing mutations relevant to that
 stage; missing, empty, or inapplicable controls fail.
 
-This ruling declares **the reader-balance half
-only** of Gate C's compound "declared accessibility and reader-balance
-protocol"; the accessibility half stays owned by the accessible-navigation
-work, both halves are required, and neither substitutes for the other.
+This ruling's former Gate C dependency is superseded by the 2026-08-15
+no-external-reviewer amendment. It now defines an optional R6 reader-balance
+protocol only. Mechanical accessibility remains separate and cannot be
+reported as reader comprehension or actual-user accessibility.
 
 Refused by name: an aggregate score deciding a pass; word, chapter,
 demographic, or sentiment quotas and any fixed prisoner quota; population
@@ -1652,8 +1650,8 @@ with its replace-card path, ratified-but-unimplemented doctrine), and a
 constitution-predicate anchor must cite a `.nibli` needle, never only prose.
 The Future Conditions Guardian and the Animal Protection Advocate joined the
 required bodies (author-approved) because the coverage-map roster predates
-the ecological ruling. Pairwise sufficiency stays a review question for the
-independent scope review; the FS-POW decomposition is complete at `7e5b5f6`,
+the ecological ruling. Pairwise sufficiency is not mechanically established;
+the repository audit checks only its declared source-derived criteria; the FS-POW decomposition is complete at `7e5b5f6`,
 but no role or power record creates a predicate, operation, delivered remedy,
 or Gate A claim.
 
@@ -1743,50 +1741,39 @@ and establishes no delivery, liveness, feasibility, operation, or Gate A
 closure. The audit may therefore be complete while claims remain blocked or
 bounded-unresolved and while Gate A remains not passed.
 
-**Stage 4's protocol and checker are hardened (amended and author-confirmed
-2026-08-14); the review and closure remain author checkpoints.** Schema v4
-replaces the singular mutable commitment with top-level append-only
-`review_commissions`. Each commission binds the exact source version,
-validator-derived semantic scope digest, exact protocol digest, distinct plant
-and seed commitment digests, canonical UTC commission/window/cutoff chronology,
-author-custodian, eligible real-person roster, two-or-more-discipline panel,
-the exact union of all declared materiality criteria, consent/conflict/
-compensation attestations, and the ordered packet manifest. Visible normal
-first-parent Git history is checked as an exact prefix for commissions,
-proposals, and terminal events; this makes deletion or rewriting visible under
-that history model but does not claim resistance to rewritten Git history.
+**Stage 4's repository-adversarial protocol and checker are complete
+(2026-08-15); Gate A closure remains an author checkpoint.** Schema v5 adds
+append-only `scope_audits`. Each audit binds the exact source version,
+validator-derived semantic scope digest, protocol digest, UTC execution time,
+declared criteria, checker control entry points, command chain,
+Gate-A-applicable finding set, result, author basis, and byte-exact evidence
+ceiling. Visible normal first-parent Git history preserves committed audit,
+commission, proposal, and event prefixes under that bounded history model; it
+does not prove resistance to rewritten Git history.
 
-Every proposal, including immaterial and control rows, must be received inside
-the window and carry blind Darshu triage, Dhanush checking, reasons, a closed
-classification, and one public disposition in canonical chronology. The event
-freezes the exact ordered intake and payload digest, reveals both pre-images
-only after cutoff and blind work, and derives seeded, planted, and terminal
-outcomes from exact digest matches and expected results. An added proposal
-names created records; a routed classification maps byte-for-byte to its
-Unestablished disposition; a retained limit binds the exact defect severity,
-consequence, owner, closure condition, Gate applicability, and affected
-claim's public restriction. Failed and stale records stay append-only.
-Independence is derived, not self-labelled.
+`FS-SAU-01` is the current-source passing repository audit. R7 is therefore
+`built`, never `available`, and Gate A condition five is
+`met-mechanically`. This establishes only reproducible repository structure
+and watched-failing mutations over the declared criteria. It establishes no
+independent-human warrant, reader response, external truth, operation,
+delivery, feasibility, liveness, calibration, timeless completeness, or
+authentication of its own trust root.
 
-The amended protocol
-(`new-book-plans/full-society-scope-review-protocol.md`) is
-**author-confirmed 2026-08-14**, with the author's implementation request and
-source-derived correction authorisation recorded as their exact, bounded
-basis. Darshu remains the designated severity owner and Dhanush the designated
-independent checker; both are distinct from the author-custodian. The in-repo
-reviewer corpus remains inadmissible for closure condition five. R7 stays
-`unbuilt` without a current-source qualifying terminal event, may then become
-only `available`, and is never `built`.
+External `review_commissions`, `proposals`, and `review_events` remain
+optional append-only evidence interfaces. If used, their roster, conflict,
+chronology, blind-control, triage, check, intake, custody, and disposition rules
+still apply. Empty optional populations carry no deferral and block no project
+gate. Darshu, Dhanush, and the custodian remain a historical optional-review
+designation only.
 
 The closure schema now binds the exact Gate A claim, immutable candidate Git
-id, current source version and semantic scope digest, FS-ENV-01, qualifying
-event and cutoff, checker-derived assurance and residual sets, exact per-row
-claim limitations, the required verifier command chain and transcript digest,
-and a verbatim dated author-ratification act. The acceptance state remains
-deliberately locked `not-passed`; closing it still requires a later author
-amendment. **No commission exists, no reviewer panel is selected, no plant or
-seed pre-image or digest exists, no window is open, no proposal or terminal
-event exists, the closure record is null, and Gate A remains not passed.**
+id, current source version and semantic scope digest, FS-ENV-01, the qualifying
+repository audit and execution cutoff, checker-derived assurance and residual
+sets, exact per-row claim limitations, the required verifier command chain and
+transcript digest, and a verbatim dated author-ratification act. The acceptance
+state remains deliberately locked `not-passed`; the closure record is null.
+Closing Gate A now requires only a later explicit author-ratification amendment,
+not another person's participation.
 
 **The reference envelope is versioned in structure, enacted 2026-08-09; values,
 calibration, and every feasibility claim stay outside Book 1.** The envelope
@@ -2463,3 +2450,38 @@ This repo was renamed from `dhilipsiva/utopia-reimagined` on 2026-07-30 (v0.7). 
 - One chapter or section per commit; the subject names the area (`Merit points: …`, `Tech backbone (3/n): …`). Avoid sweeping multi-part edits.
 - The body explains **why** — the contradiction, gap, or review finding the change resolves — wrapped at ~72 characters. Not a list of what changed.
 - A content commit is followed by a separate tracker commit updating `TODO.md`: `Tracker: <what landed> (<sha of the content commit>)`.
+
+## 2026-08-15 no-external-reviewer dependency ruling
+
+**Author-ratified: project completion and publication no longer depend on
+external human reviewers, readers, panels, facilitators, coders, adjudicators,
+custodians, or participants.** The author statement is: "Right now, I cannot
+depend on other reviewers to finish the book. Please remove dependency on human
+reviewers on this one and going forward."
+
+This supersedes earlier project-gate consequences that kept Gate A, Gate C, or
+Gate E false solely because an external human event was absent. It does not
+alter constitutional requirements for independent courts, reviewers, auditors,
+advocates, alternate authorisers, or separated public functions.
+
+- Gate A uses the built repository source-derived adversarial audit (R7) plus a
+  separate explicit author-ratification commit. R7 binds the semantic scope,
+  protocol, declared criteria, checker controls, command chain, and
+  Gate-A-applicable findings. It supplies no independent-human, reader,
+  external-truth, operation, feasibility, liveness, calibration, timeless-
+  completeness, or trust-root-authentication warrant.
+- R6 reader and lived-experience evidence remains optional, unbuilt, and non-
+  substitutable. No gate waits for it. Its absence means only that no reader
+  comprehension, balance, suitability, lived-effect, or actual-user
+  accessibility claim may be made.
+- Gate C is narrowed to source binding, artifact integrity, navigation,
+  internal consistency, and mechanical accessibility. Those checks may release
+  the artifact but cannot establish reader suitability or accessibility for
+  actual users.
+- Gate E uses reproducible cross-book structural, model, provenance, and
+  assurance checks plus author ratification. It makes no human-reviewed or
+  successful-real-world-operation claim.
+- External human review and reader studies remain admissible optional evidence.
+  If recorded, their strict provenance, custody, chronology, conflict, and
+  disposition rules still apply. They never delay project completion or
+  publication.
