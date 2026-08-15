@@ -3,9 +3,9 @@
 
 # Full-Society Domain-and-Layer Ledger — Generated Report
 
-**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
+**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-universal-standing-prose-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-15-liberty-environment-coverage-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -40,7 +40,7 @@ Per-condition status, generated from the source and echoing the closure conditio
 - **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
 - **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
-- **met-mechanically** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: a current-source repository adversarial audit covers the declared criteria, exact checker controls, command chain, and every Gate-A-applicable defect disposition
+- **unmet** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: no current-source repository adversarial audit exists
 - **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; this satisfies Gate A's envelope precondition. Calibration and values remain Book 2 Gate D work, and operational assurance and remedied resolution still require them
 
 ## The five layers
@@ -539,6 +539,31 @@ Constitutional non-power effects:
 | FS-CCE-06 Supported agency without a standing gate | class-01; standing-status, fair-process-repair | FS-CLM-38; FS-DOM-01, FS-DOM-09 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
 | FS-CCE-07 Death and status boundary | class-07; consequential-record | FS-CLM-40; FS-DOM-01, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
 | FS-CCE-08 Provenance and accountability retention | class-07; consequential-record, fair-process-repair | FS-CLM-40; FS-DOM-01, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns intake, identity, storage, matching, staffing, service delivery, recovery, and institutional action; no operation, delivery, feasibility, liveness, or calibration follows. |
+| FS-CCE-09 Material-floor inventory boundary | class-02; material-floor-inventory | FS-CLM-04, FS-CLM-05; FS-DOM-02, FS-DOM-03, FS-DOM-04 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-10 Dual floor-and-ceiling continuity | class-09; material-floor-inventory, commons-future-condition | FS-CLM-04, FS-CLM-33; FS-DOM-02, FS-DOM-03, FS-DOM-04, FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-11 Privacy liberty shell | class-01; liberty-power-limit | FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-12 Bodily-autonomy liberty shell | class-01; liberty-power-limit | FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-13 Movement liberty shell | class-01; liberty-power-limit | FS-CLM-08, FS-CLM-25; FS-DOM-01, FS-DOM-09 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-14 Due-process liberty shell | class-04; liberty-power-limit, fair-process-repair | FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-15 Association liberty shell | class-01; liberty-power-limit | FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-16 Expression liberty shell | class-01; liberty-power-limit | FS-CLM-07, FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-17 Conscience liberty shell | class-01; liberty-power-limit | FS-CLM-07, FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-18 Family and intimate-life liberty shell | class-01; liberty-power-limit | FS-CLM-08, FS-CLM-09; FS-DOM-01, FS-DOM-02 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-19 Equal civic-status liberty shell | class-03; liberty-power-limit | FS-CLM-02, FS-CLM-08; FS-DOM-01 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-20 Residual private and civic freedom | class-01; liberty-power-limit | FS-CLM-08, FS-CLM-35; FS-DOM-01, FS-DOM-12 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-21 Present-person environmental conditions right | class-01; environmental-right | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-22 Environmental information right | class-07; environmental-right | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-23 Environmental assessment and participation right | class-04; environmental-right | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-24 Environmental reasons, review, and remedy right | class-04; environmental-right, fair-process-repair | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-25 Environmental public and private reach | class-06; environmental-right | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-26 Environmental equality route without scoring | class-03; environmental-right | FS-CLM-02, FS-CLM-33; FS-DOM-01, FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-27 Class 9 commons and future capability | class-09; commons-future-condition | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-28 Class 9 multi-axis ceilings | class-09; commons-future-condition | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-29 Class 9 science-law separation and versioning | class-09; commons-future-condition | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-30 Class 9 precaution and non-regression | class-09; commons-future-condition | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-31 Class 9 restoration and nonfungibility | class-09; commons-future-condition | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-32 Class 9 initiation and interim protection | class-04; commons-future-condition, fair-process-repair | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
+| FS-CCE-33 Class 9 liability and public restoration continuity | class-04; commons-future-condition | FS-CLM-33; FS-DOM-11 | coverage-only-not-formalized; planned/planned | Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows. |
 
 Coverage-family drafting gate:
 
@@ -555,6 +580,7 @@ Coverage-family drafting gate:
 | FS-CVF-009 Public Safety Defence Emergency And External Power coverage batch | coverage-ready | 50 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
 | FS-CVF-010 Current Formal Constitution coverage batch | coverage-ready | 0 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
 | FS-CVF-011 Universal standing root and identity boundary | prose-landed | 0 / 8 | 6 | Coverage, formal rules, tests, and declared prose are complete; this remains a supplied-record constitutional claim and does not establish operation or delivery. |
+| FS-CVF-012 Material-floor boundary, liberty shell, environmental right, and Class 9 ceiling | coverage-ready | 0 / 25 | 0 | Coverage contracts are complete, but claim-bearing prose remains blocked until every declared effect has registered formal statements, executable negative tests, and counterfactuals. |
 
 Contract templates:
 
@@ -1421,11 +1447,11 @@ Residual citations bind every sibling residual pool to these rows under the live
 
 ## Resolution receipts
 
-Every receipt records its eligible gate beside the ledger's standing gate status (passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
+Every receipt records its eligible gate beside the ledger's standing gate status (not-passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
 
 ### FS-RCP-01 — The student clawback is deleted, and the deletion is watched
 
-- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A loss was recorded against a student for a teacher's adjudicated fraud — negative scoring of a person who did nothing.
 - Hostile witness: The old :defect pin held lose(Points, Cira) TRUE for as long as the rule stood.
 - Why it failed: The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.
@@ -1438,7 +1464,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-02 — The placement alarm is keyed on the placement act
 
-- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The alarm fired on eligibility rather than on any placement act, so it rang on a released man in his own house.
 - Hostile witness: The old marker's pins held the wrong-subject firing under a :defect directive.
 - Why it failed: err/2 read the eligibility combination instead of a reported placement.
@@ -1451,7 +1477,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-03 — The void now requires a docket entry naming the person
 
-- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: Anything recorded as touching a protected item was void — including a person who was never accused of anything.
 - Hostile witness: Jala, never accused and never examined, was voidable through the protected-item route.
 - Why it failed: The voiding rule read the protected-item touch without any docket precondition.
@@ -1464,7 +1490,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-04 — The third door closes on voiding, enacted not disclosed
 
-- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A carried-void, penless person was paid for examinations the same voiding made incapable of counting toward anything.
 - Hostile witness: The pre-guard constitution minted recognition for the voided examiner, and exactly those reward pins flip against it.
 - Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
@@ -1477,7 +1503,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-05 — The Esa passage tells the truth about Koa
 
-- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The chapter claimed Koa examined Esa with the credential; the record holds a personhood entry and one documented fact — no judging, no seat, no pen.
 - Hostile witness: Both false clauses, quoted back by a hostile review as the design's own confession.
 - Why it failed: The prose asserted acts the record never held, and no pin guarded the mismatch.
@@ -1490,7 +1516,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 8; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 9; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -1502,8 +1528,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 8; curren
 | FS-SAU-06 | fs-ledger-2026-08-15-universal-standing-formal-v1 | `143f50f095f13eb1eeb22c9ff91afe92e3a7b807645a2e62c2bf982550909e3b` | 2026-08-15T13:44:18Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-07 | fs-ledger-2026-08-15-universal-standing-prose-v1 | `2577006456883875aff432978ef6d2c5414ebd5c8c26fa1e43f0ad37f14c354b` | 2026-08-15T15:07:36Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-08 | fs-ledger-2026-08-15-universal-standing-prose-v1 | `2577006456883875aff432978ef6d2c5414ebd5c8c26fa1e43f0ad37f14c354b` | 2026-08-15T15:21:54Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-09 | fs-ledger-2026-08-15-liberty-environment-coverage-v1 | `2aa4ed03e0524dd5472145675661f70720aa61540ec333bc6023c6abf389c80f` | 2026-08-15T16:00:00Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `2577006456883875aff432978ef6d2c5414ebd5c8c26fa1e43f0ad37f14c354b`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `2aa4ed03e0524dd5472145675661f70720aa61540ec333bc6023c6abf389c80f`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

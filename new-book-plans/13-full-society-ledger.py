@@ -255,7 +255,7 @@ COVERAGE_EVIDENCE_CEILING = (
     "Coverage contracts and pre-drafting checks only; no operation, delivery, "
     "feasibility, liveness, reader response, external truth, or calibration follows."
 )
-CONSTITUTIONAL_EFFECT_COUNT = 8
+CONSTITUTIONAL_EFFECT_COUNT = 33
 UNIVERSAL_STANDING_STATEMENT_IDS = (
     "b214c5369507e0eb6eb829be92667f5a72b10cff32e966cb6374f4ef4087d8b9",
     "ac2a478457f4f7822d0ee1e62da4e08625aacdaf43c65a4b2b179dbdd784c9cc",
@@ -308,6 +308,52 @@ EFFECT_POLICY = {
         "class-07", ["class-01", "class-04"],
         ["consequential-record", "fair-process-repair"], ["FS-CLM-40"]),
 }
+
+LIBERTY_ECOLOGY_STATEMENT_IDS = ()
+EFFECT_PROFILE_FIELDS.update({
+ "material-floor-inventory":["inventory_boundary","recipient_evidence","continuity","breach_remedy","ecology_non_substitution"],
+ "liberty-power-limit":["holder","duty_bearer","protected_choice","lawful_limit","notice_reasons","challenge_review","remedy","failure_default"],
+ "environmental-right":["holder","duty_bearer","information","assessment","participation","reasons","review_interim_protection","correction_remedy","equality_route"],
+ "commons-future-condition":["protected_condition","evidence_writer","lawful_enactment","version_temporal_status","precaution","non_regression","avoid_minimize_restore","nonfungibility","future_capability","failure_transition"],
+})
+EFFECT_POLICY.update({
+ "material-floor-inventory":("class-02",["class-01","class-04"],["material-floor-inventory"],["FS-CLM-04","FS-CLM-05"]),
+ "dual-floor-ceiling-continuity":("class-09",["class-02","class-04"],["material-floor-inventory","commons-future-condition"],["FS-CLM-04","FS-CLM-33"]),
+ "privacy-power-limit":("class-01",["class-04","class-07"],["liberty-power-limit"],["FS-CLM-08"]),
+ "bodily-autonomy-power-limit":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-08"]),
+ "movement-power-limit":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-08","FS-CLM-25"]),
+ "due-process-power-limit":("class-04",["class-01","class-07"],["liberty-power-limit","fair-process-repair"],["FS-CLM-08"]),
+ "association-power-limit":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-08"]),
+ "expression-power-limit":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-07","FS-CLM-08"]),
+ "conscience-power-limit":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-07","FS-CLM-08"]),
+ "family-intimate-power-limit":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-08","FS-CLM-09"]),
+ "equal-civic-status-limit":("class-03",["class-01","class-04"],["liberty-power-limit"],["FS-CLM-02","FS-CLM-08"]),
+ "residual-private-civic-freedom":("class-01",["class-04"],["liberty-power-limit"],["FS-CLM-08","FS-CLM-35"]),
+ "environmental-conditions-right":("class-01",["class-09","class-04"],["environmental-right"],["FS-CLM-33"]),
+ "environmental-information-right":("class-07",["class-01","class-09"],["environmental-right"],["FS-CLM-33"]),
+ "environmental-assessment-participation":("class-04",["class-01","class-09"],["environmental-right"],["FS-CLM-33"]),
+ "environmental-reasons-review-remedy":("class-04",["class-01","class-09"],["environmental-right","fair-process-repair"],["FS-CLM-33"]),
+ "environmental-public-private-reach":("class-06",["class-01","class-09"],["environmental-right"],["FS-CLM-33"]),
+ "environmental-equality-no-score":("class-03",["class-01","class-09"],["environmental-right"],["FS-CLM-02","FS-CLM-33"]),
+ "class9-commons-future-capability":("class-09",["class-04"],["commons-future-condition"],["FS-CLM-33"]),
+ "class9-multiaxis-ceilings":("class-09",["class-07"],["commons-future-condition"],["FS-CLM-33"]),
+ "class9-science-law-versioning":("class-09",["class-04","class-07"],["commons-future-condition"],["FS-CLM-33"]),
+ "class9-precaution-nonregression":("class-09",["class-04"],["commons-future-condition"],["FS-CLM-33"]),
+ "class9-restoration-nonfungibility":("class-09",["class-04"],["commons-future-condition"],["FS-CLM-33"]),
+ "class9-initiation-interim-route":("class-04",["class-09"],["commons-future-condition","fair-process-repair"],["FS-CLM-33"]),
+ "class9-liability-public-restoration":("class-04",["class-09"],["commons-future-condition"],["FS-CLM-33"]),
+})
+FLOOR_ENTITLEMENT_LINES=(
+ "entitled(every person, event { secure() }).","entitled(every person, event { eats() }).",
+ "entitled(every person, event { dwell() }).","entitled(every person, event { healthy() }).",
+ "entitled(every person, event { learn() }).","entitled(every person, event { expresses() }).",
+ "entitled(every person, event { believe() }).","entitled(every person, event { meets() }).",
+)
+MATERIAL_FLOOR_EFFECT_KEYS={"material-floor-inventory","dual-floor-ceiling-continuity"}
+LIBERTY_EFFECT_KEYS={"privacy-power-limit","bodily-autonomy-power-limit","movement-power-limit","due-process-power-limit","association-power-limit","expression-power-limit","conscience-power-limit","family-intimate-power-limit","equal-civic-status-limit","residual-private-civic-freedom"}
+ENVIRONMENTAL_EFFECT_KEYS={"environmental-conditions-right","environmental-information-right","environmental-assessment-participation","environmental-reasons-review-remedy","environmental-public-private-reach","environmental-equality-no-score"}
+CLASS9_EFFECT_KEYS={"class9-commons-future-capability","class9-multiaxis-ceilings","class9-science-law-versioning","class9-precaution-nonregression","class9-restoration-nonfungibility","class9-initiation-interim-route","class9-liability-public-restoration"}
+
 POWER_CLASS_IDS = [f"class-{i:02d}" for i in range(1, 11)]
 CARD_V7_EXTRA_KEYS = [
     "manifest_key", "source_family", "posture", "evidence_kind",
@@ -1533,14 +1579,12 @@ def validate_coverage_families(src: dict, ids: dict):
         assigned_refusals.extend(rec["refusal_refs"])
         assigned_crosswalks.extend(rec["crosswalk_refs"])
         assigned_effects.extend(rec["effect_refs"])
-        if rec["id"] == "FS-CVF-011":
-            expected = (
-                list(UNIVERSAL_STANDING_STATEMENT_IDS)
-                if rec["state"] in {"formalized", "prose-landed"} else []
-            )
+        statement_policy={"FS-CVF-011":(UNIVERSAL_STANDING_STATEMENT_IDS,"universal-standing"),"FS-CVF-012":(LIBERTY_ECOLOGY_STATEMENT_IDS,"liberty-and-ecology")}
+        if rec["id"] in statement_policy:
+            owned_ids,label=statement_policy[rec["id"]]
+            expected=list(owned_ids) if rec["state"] in {"formalized","prose-landed"} else []
             if rec["formal_statement_refs"] != expected:
-                raise LedgerError(
-                    f"{ctx}: universal-standing formal surface drifted")
+                raise LedgerError(f"{ctx}: {label} formal surface drifted")
     if len(assigned_statements) != len(set(assigned_statements)):
         raise LedgerError("a formal statement belongs to multiple coverage families")
     if (set(assigned_statements) != set(statement_ids)
@@ -1715,6 +1759,10 @@ def validate_constitutional_effects(src: dict, ids: dict):
         raise LedgerError("constitutional_effects must contain the eight root-standing effects")
     if [row.get("effect_key") for row in rows] != list(EFFECT_POLICY):
         raise LedgerError("constitutional_effects must follow checker-owned effect order")
+    constitution=(ROOT/"new-book-plans/constitution.nibli").read_text(encoding="utf-8")
+    actual_floor=tuple(line.strip() for line in constitution.splitlines() if line.strip().startswith("entitled(every person, event {"))
+    if actual_floor != FLOOR_ENTITLEMENT_LINES:
+        raise LedgerError("the eight-item material-floor inventory changed or gained a ninth item")
     seen_text = set()
     for index, rec in enumerate(rows):
         ctx = f"constitutional_effects[{index}] ({rec.get('id', '?')})"
@@ -1754,12 +1802,15 @@ def validate_constitutional_effects(src: dict, ids: dict):
         _validate_card_test(rec["counterfactual"], "counterfactual", rec, f"{ctx}.counterfactual")
         if rec["part_v_status"] not in {"coverage-only-not-formalized", "formalized-not-prose-landed", "prose-landed"}:
             raise LedgerError(f"{ctx}: Part V status is invalid")
-        prohibited = " ".join(rec["prohibited_inputs"]).lower()
-        for token in ("registry", "citizenship", "capacity", "documentation", "t3"):
-            if token not in prohibited:
-                raise LedgerError(f"{ctx}: prohibited inputs omit {token}")
-        if "encounter handle" not in prohibited or "civil identity" not in prohibited:
-            raise LedgerError(f"{ctx}: encounter identity boundary is incomplete")
+        prohibited=" ".join(rec["prohibited_inputs"]).lower(); key=rec["effect_key"]
+        if key in set(list(EFFECT_POLICY)[:8]): required=("registry","citizenship","capacity","documentation","t3","encounter handle","civil identity")
+        elif key in MATERIAL_FLOOR_EFFECT_KEYS: required=("ninth floor","environmental right","t3")
+        elif key in LIBERTY_EFFECT_KEYS: required=("material floor","service delivery","t3")
+        elif key in ENVIRONMENTAL_EFFECT_KEYS: required=("material floor","environmental worth score","t3")
+        elif key in CLASS9_EFFECT_KEYS: required=("material floor","single scalar","t3")
+        else: raise LedgerError(f"{ctx}: missing effect boundary policy")
+        for token in required:
+            if token not in prohibited: raise LedgerError(f"{ctx}: prohibited inputs omit {token}")
         if "no operation" not in require_str(rec, "book2_handoff", ctx).lower():
             raise LedgerError(f"{ctx}: Book 2 handoff must refuse operation")
 
@@ -5526,8 +5577,9 @@ def negative_controls(src: dict) -> int:
                     lambda s: s["coverage_families"][-1][
                         "effect_refs"].pop())
             control("universal-standing formal surface is checker-owned",
-                    lambda s: s["coverage_families"][-1][
-                        "formal_statement_refs"].reverse())
+                    lambda s: next(row for row in s["coverage_families"] if row["id"]=="FS-CVF-011")["formal_statement_refs"].reverse())
+            control("material-floor inventory cannot become an environmental floor",
+                    lambda s: next(row for row in s["constitutional_effects"] if row["effect_key"]=="material-floor-inventory")["prohibited_inputs"].__setitem__(0,"Other boundaries only"))
             control("bounded delegation is decision-complete",
                     _incomplete_bounded_delegation)
             control("primary class follows the direct effect",
