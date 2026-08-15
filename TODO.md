@@ -344,7 +344,7 @@ Gate B; it does not claim Book 2 operations or feasibility.
     residual liveness stays explicitly in Book 2, and no operation, delivery,
     feasibility, outside-record completeness, or calibration claim is added.
 
-- [ ] **Maintain completed constitutional coverage rows before drafting chapters.**
+- [x] **Maintain completed constitutional coverage rows before drafting chapters.**
   - Use the coverage map's contract fields and the taxonomy's formalisation metadata
     for every new rule family. Every card also records any applicable structural-wall
     ID and enforcement mechanism. At minimum, record:
@@ -365,6 +365,11 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - **Done when:** every domain in the full-society ledger has complete applicable
     rows before its rule family or prose lands; no name, value, office, or floor is
     accepted as coverage by itself.
+  - **Completed:** schema-v7 source-specific coverage contracts and the hard
+    pre-drafting family gate landed in `b9bb15181ff576b3d8700f39ed6df5915c506ed2`;
+    Gate A was mechanically reclosed for that immutable candidate in
+    `0f73a1c6a860341066867d96d64b1b9c2224bb22` without upgrading operation, delivery, feasibility, liveness,
+    reader response, or calibration.
 
 - [ ] **Make universal standing a root condition, not a service denied by a missing entry.**
   - Design a safe “serve and reconcile” route for an unregistered person seeking help.
