@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-15-universal-standing-prose-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-15-universal-standing-prose-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -23,7 +23,7 @@ Coverage-family drafting states:
 - FS-CVF-010 Current Formal Constitution coverage batch: coverage-ready — Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.
 - FS-CVF-011 Universal standing root and identity boundary: prose-landed — Coverage, formal rules, tests, and declared prose are complete; this remains a supplied-record constitutional claim and does not establish operation or delivery.
 
-Canonical source SHA-256: `cc8ad5b60da3db8d331b0b672bb3e4d481b5ab6ad18c45242b76a140022d281c`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `b617fc3194d1f02ba8d9087b33a30843e08d411814e013718cd5d9408a412b39`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
