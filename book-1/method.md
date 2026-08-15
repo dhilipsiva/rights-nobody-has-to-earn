@@ -500,6 +500,27 @@ fingerprint, or prose arriving before its family is ready fails verification.
 That is a pre-drafting gate over constitutional coverage, not an operational
 claim and not a route for Book 2 delivery machinery.
 
+The liberty-and-ecology family is the first new family carried through that
+gate after universal standing. Its coverage record contains twenty-five
+non-power effects. It preserves the material-floor inventory exactly, then
+separates person-held liberties, the environmental right of people living now,
+and the Class Nine commons ceiling. The formal source registers one declaration
+and thirty-eight rules under the family, and its executable suite checks forty-two
+expectations. Two source-removal counterfactuals separately delete the
+environmental-right root and the climate-axis ceiling, so one side cannot make
+the other's absence look green.
+
+The new `prevents` relation is conclusion-only. It records a constitutional
+barrier; it does not make the parser reject every incompatible sentence, measure
+an ecological condition, choose a ceiling number, operate an institution, or
+deliver a remedy. The floor inventory is checked independently so ecology cannot
+become a ninth floor item or erase one of the eight existing items. The Class
+Nine axes remain separate rather than becoming a score. The family neither
+changes the T3 supplied-record path nor borrows T3's executable evidence for a
+different power. Its green result is therefore a formal coverage result over
+supplied records, not proof of environmental liveness, liberty enforcement, or
+restoration.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the
