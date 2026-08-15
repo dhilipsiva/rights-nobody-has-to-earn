@@ -1585,9 +1585,10 @@ def _validate_contract_term(term, field, card, context):
     exact_keys(term, keys, context)
     text = require_str(term, "text", context)
     lower = text.lower()
-    banned = ("n/a", "tbd", "unknown", "unresolved",
-              "is fixed by the source-bound")
-    if any(token in lower for token in banned):
+    blank_tokens = {"n/a", "na", "tbd", "unknown", "unresolved"}
+    if (lower.strip() in blank_tokens
+            or re.search(r"\b(?:tbd|unknown|unresolved)\b", lower)
+            or "is fixed by the source-bound" in lower):
         raise LedgerError(f"{context}: unresolved or legacy generic prose")
     if text.strip() == card["applicability"].strip():
         raise LedgerError(f"{context}: applicability duplication is not a term")

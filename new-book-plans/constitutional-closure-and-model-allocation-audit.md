@@ -2,7 +2,7 @@
 
 # Constitutional-closure and model-allocation audit
 
-Canonical source: `fs-ledger-2026-08-15-coverage-contracts-v7-economic-pluralism-and-protected-private-sphere`. This file is generated; edit `full-society-ledger.json`, never this report.
+Canonical source: `fs-ledger-2026-08-15-coverage-contracts-v7-family-dependency-reproduction-and-collective-plurality`. This file is generated; edit `full-society-ledger.json`, never this report.
 
 **Verdict boundary:** this is a structural, claim-relative audit. `pass` means only that the reviewed contract for that exact claim survives the declared checks at its existing posture and scope. `block` and `bounded-unresolved` remain visible. No result upgrades posture or establishes delivery, liveness, feasibility, operation, external truth, reader response, constitutional completeness, or Gate A.
 
@@ -34,7 +34,7 @@ The bindings below use reviewed stable IDs and typed record contracts. Importanc
 | book-seam | `FS-CLM-03`, `FS-CLM-24` | responsible-book: `FS-RTE-02`, `FS-RTE-03`, `FS-RTE-05`; assurance-ceiling: `FS-RTE-02`, `FS-RTE-03`, `FS-RTE-05` | **bounded-unresolved** |
 | external-assumption-disclosure | `FS-CLM-13`, `FS-CLM-16` | named-assumption: `FS-EXA-01`, `FS-EXA-02`, `FS-EXA-03`, `FS-EXA-04` | **bounded-unresolved** |
 | reader-claim-ownership | `FS-CLM-37` | formal-owner: `FS-CLM-37`; evidentiary-owner: `FS-RTE-06` | **bounded-unresolved** |
-| function separation | `FS-CLM-02`, `FS-CLM-08`, `FS-CLM-09`, `FS-CLM-10`, `FS-CLM-11`, `FS-CLM-15`, `FS-CLM-17`, `FS-CLM-18`, `FS-CLM-23`, `FS-CLM-26`, `FS-CLM-27`, `FS-CLM-28`, `FS-CLM-29`, `FS-CLM-30`, `FS-CLM-31`, `FS-CLM-32`, `FS-CLM-33`, `FS-CLM-34`, `FS-CLM-35` | all source-derived FS-POW cards have one typed, power-bound function allocation; structural separation establishes no operation or institutional independence | **pass** |
+| function separation | `FS-CLM-02`, `FS-CLM-08`, `FS-CLM-09`, `FS-CLM-10`, `FS-CLM-11`, `FS-CLM-15`, `FS-CLM-17`, `FS-CLM-18`, `FS-CLM-22`, `FS-CLM-23`, `FS-CLM-26`, `FS-CLM-27`, `FS-CLM-28`, `FS-CLM-29`, `FS-CLM-30`, `FS-CLM-31`, `FS-CLM-32`, `FS-CLM-33`, `FS-CLM-34`, `FS-CLM-35` | all source-derived FS-POW cards have one typed, power-bound function allocation; structural separation establishes no operation or institutional independence | **pass** |
 
 ## Claim-by-claim audit
 
