@@ -390,7 +390,7 @@ Gate B; it does not claim Book 2 operations or feasibility.
     versioned scope-map and assurance-program claim, not operation, delivery,
     identity-system liveness, feasibility, reader response, or calibration.
 
-- [ ] **Preserve the material-floor inventory; implement the liberty shell,
+- [x] **Preserve the material-floor inventory; implement the liberty shell,
   environmental right, and ecological ceiling.**
   - Keep the constitution's existing floor inventory unchanged. Do not add a
     ninth environmental floor item, delete an existing item, or silently relabel
@@ -419,6 +419,18 @@ Gate B; it does not claim Book 2 operations or feasibility.
     human continuity, record every shortfall as failure, obtain alternatives,
     repair harm, and use a source-bound transition; neither side is renamed
     success.
+  - **Completed:** source-bound non-power coverage landed in
+    `173a8a53b2804cd474e7d052bd9fbd1d50e0b2c0`; the registered formal rules,
+    42 executable pins, and two source-removal counterfactuals landed in
+    `c9ad93a010ce2fdfe21ee01e6c0164e6afffc6aa`; all declared prose reached
+    `prose-landed` in `35b03144a44717b54094ba147a1e54ec4d415447`;
+    and Gate A was mechanically reclosed for immutable candidate
+    `ad9638a2188f8e818ec1f77db155431a3fc83c0e` in
+    `f168642a55b2fc02e7604fae5b97b18700b3c71e`. The material-floor inventory,
+    210 powers, T3 template, refusals, dispositions, and allocations remain
+    unchanged. This establishes only the versioned scope-map and
+    assurance-program claim, not operation, delivery, measurement, restoration,
+    feasibility, liveness, reader response, or calibration.
 
 - [ ] **Establish substantive equality and anti-subordination across domains.**
   - Implement the open protected-ground architecture and direct, indirect,
