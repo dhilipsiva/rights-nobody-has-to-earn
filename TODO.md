@@ -371,7 +371,7 @@ Gate B; it does not claim Book 2 operations or feasibility.
     `0f73a1c6a860341066867d96d64b1b9c2224bb22` without upgrading operation, delivery, feasibility, liveness,
     reader response, or calibration.
 
-- [ ] **Make universal standing a root condition, not a service denied by a missing entry.**
+- [x] **Make universal standing a root condition, not a service denied by a missing entry.**
   - Design a safe “serve and reconcile” route for an unregistered person seeking help.
   - Cover birth/first contact, absent or disputed identity, migration between records,
     decision support, and death/status correction without making registry presence,
@@ -379,6 +379,16 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Keep identity resolution separate from access to emergency aid, floor protections,
     and due process.
   - Do not erase accountability through a right to disappear from the record.
+  - **Completed:** source-bound non-power coverage landed in
+    `6f33c950fceffacf2897b03a70213c64cfde1830`; the exact root rules, fingerprints,
+    pins, negative tests, and counterfactuals landed in
+    `80894292524135872a8f574e54ecf45e0bd3cd12`; all declared prose reached
+    `prose-landed` in `e33d70f4e13f8e484d9c07a43e39b4966eef3d8d`; and Gate A
+    was mechanically reclosed for immutable candidate
+    `8eb2e442a540e3a6a799ae9544bc1b0f7e4506cc` in
+    `7efcd638637e6e9538c10eb2e3cf890950b34d25`. This establishes only the
+    versioned scope-map and assurance-program claim, not operation, delivery,
+    identity-system liveness, feasibility, reader response, or calibration.
 
 - [ ] **Preserve the material-floor inventory; implement the liberty shell,
   environmental right, and ecological ceiling.**
