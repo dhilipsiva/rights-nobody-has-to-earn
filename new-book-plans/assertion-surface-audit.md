@@ -25,7 +25,7 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `e12194fcd99b2dda408dc43d9163892f288faa7b913697072091cd0a50c1d25b`.
+- Authored-rule fingerprint: `01e75260673a096b9b5eba83de2918b7aba105c727882822dae5cf3f02945d3c`.
 - Authored-fact fingerprint: `9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
@@ -61,8 +61,9 @@ the contract ledger.
 | `orderly` | 0 | no | yes | no | `derived_only` | `derived-only-orderly` | positive `correct` |
 | `owe` | 4 | no | yes | no | `derived_only` | `derived-only-owe` | none |
 | `permits` | 3 | no | yes | no | `derived_only` | `derived-only-permits` | negative `prisoner`, positive `false` |
-| `person` | 4 | yes | no | yes | `mixed_base_fact` | `person-roster-mixed` | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` |
+| `person` | 4 | yes | no | yes | `mixed_base_fact` | `person-roster-mixed` | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` |
 | `precede` | 1 | no | yes | no | `derived_only` | `derived-only-precede` | positive `collide`, positive `correct`, positive `err`, positive `precede`, positive `time` |
+| `prevents` | 4 | no | yes | no | `derived_only` | `derived-only-prevents` | none |
 | `prisoner` | 4 | no | yes | no | `derived_only` | `derived-only-prisoner` | negative `travel`, positive `building`, positive `dwell`, positive `err`, positive `expresses`, positive `fit`, positive `person` |
 | `reference` | 2 | no | yes | no | `derived_only` | `derived-only-reference` | positive `correct` |
 | `related` | 0 | no | yes | no | `derived_only` | `derived-only-related` | positive `correct`, positive `err`, positive `match` |
@@ -113,8 +114,8 @@ channels. No exceptional channel exists in the current contract.
 | `parent` | audit, privacy, conflict | `false` | patchable, external | negative `false`, positive `false` | `6ed3d63a3f8a478a` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `c47b9efbe78a749e` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `secure`, positive `travel` | `411f855200e87680` |
-| `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority` | `1b1e8755d27a9b4b` |
+| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` | `2307657b0335de6d` |
+| `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority`, positive `prevents` | `6c4ddcc62e4e5693` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
 | `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `e27be4808b3e69d4` |
 | `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `err`, positive `match` | `ee4885e9421cf030` |
@@ -657,7 +658,7 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.
 - **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
-- **Reviewed route fingerprint:** `411f855200e87680c559a8b01d32c4260330d68ccb8eda178accb6b00693d1bf`.
+- **Reviewed route fingerprint:** `2307657b0335de6d3fae165ad5624f761f598470b3a4db1fb00630521fef6a1a`.
 
 ### `public`
 
@@ -673,7 +674,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Public constitutional review and append-only correction of body status.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `1b1e8755d27a9b4b3d6903ae03248fc86bd04f99818fc1b5e59a2bdefe59a827`.
+- **Reviewed route fingerprint:** `6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60`.
 
 ### `put`
 

@@ -140,6 +140,12 @@ derived_only("severe").
 derived_only("entitled").
 derived_only("owe").
 derived_only("building").
+# <LIBERTY-ECOLOGY-DERIVED-BEGIN>
+# [v1.2] These protections are conclusions, never supplied verdicts. The
+# prevents relation records a constitutional barrier only; it does not operate
+# a service, measure an ecosystem, authenticate a source, or execute a remedy.
+derived_only("prevents").
+# <LIBERTY-ECOLOGY-DERIVED-END>
 # [v0.9 2026-08-02] `clean` is DERIVED absolution — forgive + the body's
 # judgment produce it, nobody writes it. Hold it apart from `clear`, which
 # is the ASSERTED half of appellate relief for convictions: clear is a
@@ -460,6 +466,60 @@ all $child: born($child) & ~public($child) -> person($child).
 all $subject: at($subject, RepublicJurisdiction) & ~public($subject) -> person($subject).
 all $subject: at($subject, EffectiveControl) & ~public($subject) -> person($subject).
 # <UNIVERSAL-STANDING-RULES-END>
+# <LIBERTY-ECOLOGY-RULES-BEGIN>
+# [v1.2] The material floor is unchanged. Ecology is neither a new floor item
+# nor permission to reduce one. A collision preserves immediate human
+# continuity by the least-harm route while leaving the shortfall and repair due.
+public(Court) -> prevents(MaterialFloorInventory, EnvironmentalNinthFloor).
+public(Court) -> prevents(MaterialFloor, EcologicalCeilingErasure).
+all $x: person($x) -> prevents($x, EcologySelectedFloorLoss).
+
+# Core liberties are person-held limits on power, not delivery predicates.
+all $x: person($x) -> prevents($x, ArbitraryPrivacyInterference).
+all $x: person($x) -> prevents($x, CoercedBodilyChoice).
+all $x: person($x) -> prevents($x, UnsupportedMovementRestriction).
+all $x: person($x) -> prevents($x, UnreviewedConsequentialDecision).
+all $x: person($x) -> prevents($x, CoercedAssociation).
+all $x: person($x) -> prevents($x, PrescribedExpression).
+all $x: person($x) -> prevents($x, CompelledConscience).
+all $x: person($x) -> prevents($x, PrescribedFamilyForm).
+all $x: person($x) -> prevents($x, UnequalCivicStatus).
+all $x: person($x) -> prevents($x, PrescribedPrivateCivicLife).
+
+# The environmental right belongs to present persons and stays distinct from
+# the floor and from Class Nine commons. Unequal exposure routes to equality;
+# no environmental-worth score is authorized.
+all $x: person($x) -> prevents($x, EnvironmentalConditionsDenial).
+all $x: person($x) -> prevents($x, EnvironmentalInformationWithholding).
+all $x: person($x) -> prevents($x, UnassessedHighConsequenceDecision).
+all $x: person($x) -> prevents($x, UnreasonedEnvironmentalDecision).
+all $x: person($x) -> prevents($x, EnvironmentalPublicPrivateEvasion).
+all $x: person($x) -> prevents($x, EnvironmentalWorthRanking).
+
+# Class Nine protects separate axes and future ecological capability. Science
+# supplies bounded evidence; democratic law enacts a versioned ceiling; review
+# checks both. The rules below establish only normative barriers over supplied
+# records, never a measurement, ceiling number, clock, institution, or remedy.
+public(Court) -> prevents(FutureEcologicalCapability, CommonsExhaustion).
+public(Court) -> prevents(ClimateAtmosphere, CeilingErasure).
+public(Court) -> prevents(CleanAir, CeilingErasure).
+public(Court) -> prevents(WatersAndWetlands, CeilingErasure).
+public(Court) -> prevents(LivingSoil, CeilingErasure).
+public(Court) -> prevents(BiodiversityAndHabitats, CeilingErasure).
+public(Court) -> prevents(EcologicalSystems, CeilingErasure).
+public(Court) -> prevents(RegenerativeCapacity, CeilingErasure).
+public(Court) -> prevents(LandResourcesAndInheritance, CeilingErasure).
+public(Court) -> prevents(EcologicalCeiling, ScienceLawFunctionFusion).
+public(Court) -> prevents(EcologicalCeiling, UnversionedEnactment).
+public(Court) -> prevents(EcologicalCeiling, UncertaintyTreatedAsSafety).
+public(Court) -> prevents(EcologicalCeiling, UnjustifiedRegression).
+public(Court) -> prevents(EcologicalBreach, OffsetExcuse).
+public(Court) -> prevents(IrreplaceableLoss, Substitution).
+all $x: person($x) -> prevents($x, EcologicalReviewDenial).
+public(Court) -> prevents(SeriousEcologicalThreat, DelayedInterimProtection).
+public(Court) -> prevents(RestorationDuty, InsolvencyDelay).
+public(Court) -> prevents(RestorationDuty, LiabilityExtinction).
+# <LIBERTY-ECOLOGY-RULES-END>
 all $anyone: prisoner($anyone) -> person($anyone).
 # [v0.4 NEW] A released person is still a person. This line is not optional and
 # it is not symmetry for its own sake: `prisoner -> person` above is the ONLY

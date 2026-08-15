@@ -5,7 +5,7 @@
   "status": "bounded_current_source_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "65748d005a8c2d85833f1e60eb55172a2d8fdbe8710a1543444385cce07713aa",
+  "constitution_sha256": "04d3dc16b42925cd016e4c7cc86179cffb1fc2fb3c7dd62a5461c5864e7885b7",
   "producer_fingerprints": {
     "fit": "2115988fbe170c123b6969089bb464c22c8c448e28345ff3fe4903c5c85728a8",
     "dwell": "a2a9a600756c3a679932bdc73d52664934142eb2ce780283a775ecb164db3140",
@@ -440,7 +440,7 @@
         }
       ],
       "mutation_sha256": "39a8f9d39ce99f81078fcda872a7977ca7cc69db2e3b08748dee185bfb27b316",
-      "expected_source_sha256": "4e46d3db0f0eb3d79718e4e8be50c81d190f987435f14725f5cad42d84076668",
+      "expected_source_sha256": "4a5dd1a1def184ed170f7f1e78a24e056cdb5c1f3103786e7e2677db54efd25a",
       "observations": [
         {
           "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
@@ -482,7 +482,7 @@
         }
       ],
       "mutation_sha256": "670b9373a2f5cc1076c77eb8ad6da447365906d03403054a7040e275ba10ceea",
-      "expected_source_sha256": "91ece8b6676213e7ca440b05fd2fc3e2d7ee24839dc54130ac0d6034f3dd1665",
+      "expected_source_sha256": "abaf37cffe65f8ccb1d3e9de1a8915f90488d4b13387f358064868734ee015cc",
       "observations": [
         {
           "expression": "fit(Confined_NotSevere_NoFamily_NoHome, Homestay)",
@@ -524,7 +524,7 @@
         }
       ],
       "mutation_sha256": "42565f4151c9ac9023318572400d20f7acfe8dd0c1fff4c132f6c3d9b6aa437b",
-      "expected_source_sha256": "5cd5cc86130961823ef55f0f8a15e56ef3b9d33bf89ca50f7d8479b884e1950b",
+      "expected_source_sha256": "6a2a2166f0a0145e806021ebd75c09bf90952ae001af3b192605a4436d7b0113",
       "observations": [
         {
           "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
@@ -578,7 +578,7 @@
         }
       ],
       "mutation_sha256": "ed368b7e9e16571c117cd6381c6b6814ada379908f4e848244066b3aac77c16e",
-      "expected_source_sha256": "dc5d8731d7d4eed7ec113469fe893e1bb3bafe8dac76584d5359e978b4bcaa30",
+      "expected_source_sha256": "68421828373c17f9767fe63399568dc2b41d4167b41ee8d414fe175b1350f2e5",
       "observations": [
         {
           "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
@@ -647,7 +647,7 @@
         }
       ],
       "mutation_sha256": "a482b49930f080927d31fe8ad620e4f4e0e37968f3d570d1e6f901658e92fe0a",
-      "expected_source_sha256": "80627ce22facc9a50a1a46032ecc779fdbca5a32e83cd09c8b6d087bd388c295",
+      "expected_source_sha256": "2270ac08b471c887ca7484ca78256a7b0eac7f714bb323c72b801105a36c5335",
       "observations": [
         {
           "expression": "dwell(Free_NotSevere_NoFamily_NoHome)",

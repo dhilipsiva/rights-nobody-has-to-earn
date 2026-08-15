@@ -502,7 +502,6 @@ all $x: person($x) -> prevents($x, EnvironmentalWorthRanking).
 # checks both. The rules below establish only normative barriers over supplied
 # records, never a measurement, ceiling number, clock, institution, or remedy.
 public(Court) -> prevents(FutureEcologicalCapability, CommonsExhaustion).
-public(Court) -> prevents(ClimateAtmosphere, CeilingErasure).
 public(Court) -> prevents(CleanAir, CeilingErasure).
 public(Court) -> prevents(WatersAndWetlands, CeilingErasure).
 public(Court) -> prevents(LivingSoil, CeilingErasure).
@@ -2079,4 +2078,3 @@ approves(Electorate, Amend_Meta).
 # err(X, Isolation) — derived isolation breach: a prisoner with no
 #                  company fact.
 # Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.
-all $x: owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered).

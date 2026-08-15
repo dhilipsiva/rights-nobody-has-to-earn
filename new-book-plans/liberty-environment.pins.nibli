@@ -1,0 +1,167 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Liberty, environmental-right, and Class Nine executable coverage pins
+:expect-pins 42
+
+# FS-CCE-09 executable boundary:
+? prevents(MaterialFloorInventory, EnvironmentalNinthFloor).
+# => TRUE
+
+# FS-CCE-10 executable boundary:
+? prevents(MaterialFloor, EcologicalCeilingErasure).
+# => TRUE
+
+# FS-CCE-11 executable boundary:
+? prevents(Adam, ArbitraryPrivacyInterference).
+# => TRUE
+
+# FS-CCE-12 executable boundary:
+? prevents(Adam, CoercedBodilyChoice).
+# => TRUE
+
+# FS-CCE-13 executable boundary:
+? prevents(Adam, UnsupportedMovementRestriction).
+# => TRUE
+
+# FS-CCE-14 executable boundary:
+? prevents(Adam, UnreviewedConsequentialDecision).
+# => TRUE
+
+# FS-CCE-15 executable boundary:
+? prevents(Adam, CoercedAssociation).
+# => TRUE
+
+# FS-CCE-16 executable boundary:
+? prevents(Adam, PrescribedExpression).
+# => TRUE
+
+# FS-CCE-17 executable boundary:
+? prevents(Adam, CompelledConscience).
+# => TRUE
+
+# FS-CCE-18 executable boundary:
+? prevents(Adam, PrescribedFamilyForm).
+# => TRUE
+
+# FS-CCE-19 executable boundary:
+? prevents(Adam, UnequalCivicStatus).
+# => TRUE
+
+# FS-CCE-20 executable boundary:
+? prevents(Adam, PrescribedPrivateCivicLife).
+# => TRUE
+
+# FS-CCE-21 executable boundary:
+? prevents(Adam, EnvironmentalConditionsDenial).
+# => TRUE
+
+# FS-CCE-22 executable boundary:
+? prevents(Adam, EnvironmentalInformationWithholding).
+# => TRUE
+
+# FS-CCE-23 executable boundary:
+? prevents(Adam, UnassessedHighConsequenceDecision).
+# => TRUE
+
+# FS-CCE-24 executable boundary:
+? prevents(Adam, UnreasonedEnvironmentalDecision).
+# => TRUE
+
+# FS-CCE-25 executable boundary:
+? prevents(Adam, EnvironmentalPublicPrivateEvasion).
+# => TRUE
+
+# FS-CCE-26 executable boundary:
+? prevents(Adam, EnvironmentalWorthRanking).
+# => TRUE
+
+# FS-CCE-27 executable boundary:
+? prevents(FutureEcologicalCapability, CommonsExhaustion).
+# => TRUE
+
+# FS-CCE-28 executable boundary:
+? prevents(ClimateAtmosphere, CeilingErasure).
+# => TRUE
+
+# FS-CCE-29 executable boundary:
+? prevents(EcologicalCeiling, ScienceLawFunctionFusion).
+# => TRUE
+
+# FS-CCE-30 executable boundary:
+? prevents(EcologicalCeiling, UncertaintyTreatedAsSafety).
+# => TRUE
+
+# FS-CCE-31 executable boundary:
+? prevents(EcologicalBreach, OffsetExcuse).
+# => TRUE
+
+# FS-CCE-32 executable boundary:
+? prevents(Adam, EcologicalReviewDenial).
+# => TRUE
+
+# FS-CCE-33 executable boundary:
+? prevents(RestorationDuty, InsolvencyDelay).
+# => TRUE
+
+# FS-CCE-10 additional boundary:
+? prevents(Adam, EcologySelectedFloorLoss).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(CleanAir, CeilingErasure).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(WatersAndWetlands, CeilingErasure).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(LivingSoil, CeilingErasure).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(BiodiversityAndHabitats, CeilingErasure).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(EcologicalSystems, CeilingErasure).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(RegenerativeCapacity, CeilingErasure).
+# => TRUE
+
+# FS-CCE-28 additional boundary:
+? prevents(LandResourcesAndInheritance, CeilingErasure).
+# => TRUE
+
+# FS-CCE-29 additional boundary:
+? prevents(EcologicalCeiling, UnversionedEnactment).
+# => TRUE
+
+# FS-CCE-30 additional boundary:
+? prevents(EcologicalCeiling, UnjustifiedRegression).
+# => TRUE
+
+# FS-CCE-31 additional boundary:
+? prevents(IrreplaceableLoss, Substitution).
+# => TRUE
+
+# FS-CCE-32 additional boundary:
+? prevents(SeriousEcologicalThreat, DelayedInterimProtection).
+# => TRUE
+
+# FS-CCE-33 additional boundary:
+? prevents(RestorationDuty, LiabilityExtinction).
+# => TRUE
+
+# Derived-only forgery is refused.
+:refuse reasoning /declared derived-only/
+prevents(Forge, ForgedProtection).
+
+# T3 is not evidence; no operation or animal rule follows.
+? correct(Adam, EcologicalCeiling).
+# => FALSE
+? hears(Adam, EnvironmentalRemedy).
+# => FALSE
+? prevents(Animal, SpeciesAppropriateHarm).
+# => FALSE

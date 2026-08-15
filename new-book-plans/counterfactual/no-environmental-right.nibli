@@ -490,7 +490,6 @@ all $x: person($x) -> prevents($x, PrescribedPrivateCivicLife).
 # The environmental right belongs to present persons and stays distinct from
 # the floor and from Class Nine commons. Unequal exposure routes to equality;
 # no environmental-worth score is authorized.
-all $x: person($x) -> prevents($x, EnvironmentalConditionsDenial).
 all $x: person($x) -> prevents($x, EnvironmentalInformationWithholding).
 all $x: person($x) -> prevents($x, UnassessedHighConsequenceDecision).
 all $x: person($x) -> prevents($x, UnreasonedEnvironmentalDecision).
@@ -2079,4 +2078,3 @@ approves(Electorate, Amend_Meta).
 # err(X, Isolation) — derived isolation breach: a prisoner with no
 #                  company fact.
 # Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.
-all $x: owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered).

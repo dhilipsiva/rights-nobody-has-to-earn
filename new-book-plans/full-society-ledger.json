@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-15-liberty-environment-coverage-v1",
+  "source_version": "fs-ledger-2026-08-15-liberty-environment-formal-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -6609,7 +6609,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "7a826bfe9264e6080cadd7588d46332bb2b28aa59457bf2f316bb103e9594fe5",
+    "artifact_sha256": "21a8136a82c2f80fb08828f06d232ac2b3e8fb89310c47a935c07b7c6c2031d9",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -82635,7 +82635,7 @@
     {
       "id": "FS-CVF-012",
       "title": "Material-floor boundary, liberty shell, environmental right, and Class 9 ceiling",
-      "state": "coverage-ready",
+      "state": "formalized",
       "source_family_refs": [],
       "card_refs": [],
       "template_refs": [],
@@ -82668,12 +82668,57 @@
         "FS-CCE-32",
         "FS-CCE-33"
       ],
-      "formal_statement_refs": [],
-      "pin_group_refs": [],
-      "counterfactual_refs": [],
+      "formal_statement_refs": [
+        "e8806d1c361e53118c77059fd70b3f50b55f909569a37c0ba89318ee186d887d",
+        "3c0d6902dd8159f13e4c194c306da4ef304e13b73e46f1f6e5943ede137f2f03",
+        "1899560cc11fc0bebe9b537d56c3fe365f5f3753ee97c3b20c4d18901b2faaac",
+        "dcbf1b46c9c998ece28eebb23c0308c640efd0150ef085b12b04bd5ea720c6ed",
+        "ae4ad530d6e286fa6f5ac7ac85078a4aeec0204ca683e3f1438f24a82f990726",
+        "c58c81261c3a3382d5fddfbe15f7a830528e795cc1e8e1298a5acf252e99465b",
+        "c711f18d494ec9234619bcdcff81be30b651780edc9dd15c93e5cc8682893e06",
+        "e22df599d7ef00867dd58c878532e67a37416a49bda108edd1c8105354c8a578",
+        "a17f74f2915cbf73dbc30185ced6e9ef5ef5134a7acf8b7b2b21b10c75019ce5",
+        "281b248e80d5267e646bb1adb65de445bf9906d4161c1f0ebf82d78627537760",
+        "3eaa16e0aee9148de09368aaa43ab7fe44cf0d1b18ff385686132e5b72dd10a6",
+        "d41a5e1cf93d5d9112a0e3b81065126ce4cc17f06727df30e553558caf9ec4d2",
+        "5fcc67708d2421f1b5043d958e327e24d6574fb95ccee5417900a944786e2ad6",
+        "18c3ef4c28e7b9007b3fb463c7cdba6a9c40c2c1a60fa2c3a2175dc76e389e0c",
+        "1d20381a8fd57fffd1c3e9a48b089d117a8e88c0dc2136d606e6eda268b377e6",
+        "59ea8b0b53c4cbb3269a43d778e350354e68111f248defa9af57729833594562",
+        "82fac77aa24990426e484304a34225c1881314c8b342478a91f2be629db94d93",
+        "9945160424467c1c71a5963d1a009e7b0863942ddbe70cac08aa38ab063bfd7f",
+        "e837440e83758b3a842b0193ef8bea4c6155142da093c011c703c8eefee4ecf6",
+        "19b7563ff4f72e5a4e61b22a4dc45ce551497bc6e785e0bb039d3660e70dd3ef",
+        "2f0e914d8ab1f9fa646629b9772b555e660ba0efe8ab86d857940bebe3bd6d1c",
+        "87eb7ccc714f8bce83c703dc52faa31be5186ba812872d49a439237b73f1fbc7",
+        "aed363e71c26f1d87e8ca08ddd4274157f8726a2972ef8b1ad5e005786695592",
+        "67dcfadf4aa344ad7b9c2190d8efe53047823d54194d835984a8f689da71117d",
+        "3b80c16bc175fd59206ac12c2789240219c5425cbb34cb3e9d5072df6fa346bc",
+        "4a44120c2a8201750020f49c03ca98cedf24aa7bfad91d03b453696aa90c40f5",
+        "7bd1313869000b528ba50a5063e98195f3cfcbb19c6121e71d0eb39d7e7c1729",
+        "003d340ad3a8ce35a1e731c689e3a624790fdf656ee872fcada2b8577687ad72",
+        "e5124e15be05e0c717689be90e2cf2cdefff3cb16023d03de13269c49b2f4815",
+        "5c4535432b17d25a2f561b45858dad7806614ef9cdd90caa3b3ee0b06d908191",
+        "45fff99561db38974a68ab71abc3af09d28857871c37cbb95e7871b3914eaf3e",
+        "476aa5ca7e2e4fcb3889a3a482a8f54fd34ee25582c58845ca35983b8e09e54a",
+        "2e599bcc35c8ebaf97d8f773b06bd12489069fb00a5fb32f19d220313c2fd030",
+        "c2543cd256e7a00962f3a42a8194621f9d00cd7199c6c6169d2717291ba72701",
+        "276f33d61f64d8ea8526372eda981b2f83ba8aece503c38844e6b3b91c4a1537",
+        "ca8ff91470872b41ca22c94c4c32e73de2dd0947525a321e6c76ba46f5fd3d71",
+        "dd02be8c23c0f02f2c2df1060c471fa4342f690f9b1d6676cfdbbcb36ee187d3",
+        "5234bd6eebc9e87361926046fe35b04e9bc64782a18a28eed1bb3bc560cc7b61",
+        "02820bda0cbc8f0fdf1b1bdcf218a88fd0e9ca228bfab8acb8bbaa83c84ff313"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/liberty-environment.pins.nibli::# Liberty, environmental-right, and Class Nine executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-environmental-right.pins.nibli::# Counterfactual: present-person environmental-conditions rule deleted",
+        "new-book-plans/counterfactual/no-class9-climate-axis.pins.nibli::# Counterfactual: climate-axis ceiling rule deleted"
+      ],
       "prose_refs": [],
       "part_v_refs": [],
-      "blocked_before_drafting": "Coverage contracts are complete, but claim-bearing prose remains blocked until every declared effect has registered formal statements, executable negative tests, and counterfactuals.",
+      "blocked_before_drafting": "Formal statements, pins, and counterfactuals pass; claim-bearing prose remains blocked until the declared chapter and Part V references land.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -105552,6 +105597,51 @@
       "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-10",
+      "title": "Liberty and ecological formalization audit pending",
+      "source_version": "fs-ledger-2026-08-15-liberty-environment-formal-v1",
+      "scope_sha256": "7c2aa549d1dd19cb2ed93f9aa2ab5749c2ac5244dc69f6382452af516b88b0c8",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-15T16:30:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -107767,12 +107857,12 @@
       "effect_key": "material-floor-inventory",
       "applicability": "The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without material-floor inventory boundary, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-02",
       "secondary_class_refs": [
         "class-01",
@@ -107961,25 +108051,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-09-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the material-floor inventory boundary boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-09 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-09-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for material-floor inventory boundary and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-09 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -107992,12 +108082,12 @@
       "effect_key": "dual-floor-ceiling-continuity",
       "applicability": "Floor continuity and ecological ceilings constrain each other; least-harm continuity records and repairs an unavoidable shortfall without naming breach as success.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without dual floor-and-ceiling continuity, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-09",
       "secondary_class_refs": [
         "class-02",
@@ -108270,25 +108360,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-10-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the dual floor-and-ceiling continuity boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-10 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-10-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for dual floor-and-ceiling continuity and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-10 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -108301,12 +108391,12 @@
       "effect_key": "privacy-power-limit",
       "applicability": "Privacy is a person-held liberty that limits public and public-like power and remains distinct from material provision.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without privacy liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04",
@@ -108516,25 +108606,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-11-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the privacy liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-11 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-11-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for privacy liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-11 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -108547,12 +108637,12 @@
       "effect_key": "bodily-autonomy-power-limit",
       "applicability": "Bodily integrity and autonomous choice limit coercive power and cannot become a service eligibility condition.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without bodily-autonomy liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -108761,25 +108851,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-12-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the bodily-autonomy liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-12 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-12-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for bodily-autonomy liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-12 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -108792,12 +108882,12 @@
       "effect_key": "movement-power-limit",
       "applicability": "Movement is protected against unsupported restriction while lawful limits retain reasons, process, review, and remedy.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without movement liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -109008,25 +109098,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-13-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the movement liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-13 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-13-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for movement liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-13 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -109039,12 +109129,12 @@
       "effect_key": "due-process-power-limit",
       "applicability": "A consequential decision remains bounded by notice, reasons, participation, independent review, correction, and remedy.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without due-process liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -109329,25 +109419,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-14-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the due-process liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-14 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-14-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for due-process liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-14 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -109360,12 +109450,12 @@
       "effect_key": "association-power-limit",
       "applicability": "Voluntary association, exit, collective action, and civic organization remain protected from prescription and coercive certification.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without association liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -109574,25 +109664,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-15-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the association liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-15 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-15-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for association liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-15 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -109605,12 +109695,12 @@
       "effect_key": "expression-power-limit",
       "applicability": "Expression remains a person-held liberty and power limit, not a material delivery item or state-approved outcome.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without expression liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -109820,25 +109910,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-16-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the expression liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-16 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-16-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for expression liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-16 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -109851,12 +109941,12 @@
       "effect_key": "conscience-power-limit",
       "applicability": "Belief, worship, non-belief, and conscience remain protected against compelled orthodoxy and status penalty.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without conscience liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -110066,25 +110156,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-17-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the conscience liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-17 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-17-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for conscience liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-17 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -110097,12 +110187,12 @@
       "effect_key": "family-intimate-power-limit",
       "applicability": "Voluntary family and intimate life remain protected without selection of one lawful form or erasure of individual standing and exit.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without family and intimate-life liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -110313,25 +110403,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-18-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the family and intimate-life liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-18 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-18-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for family and intimate-life liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-18 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -110344,12 +110434,12 @@
       "effect_key": "equal-civic-status-limit",
       "applicability": "Equal civic standing limits status hierarchy, domination, and unequal political weight while measurable exposure routes through substantive equality.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without equal civic-status liberty shell, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01",
@@ -110560,25 +110650,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-19-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the equal civic-status liberty shell boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-19 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-19-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for equal civic-status liberty shell and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-19 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -110591,12 +110681,12 @@
       "effect_key": "residual-private-civic-freedom",
       "applicability": "Lawful private and civic life remains unprescribed unless a source-bound rights, equality, floor, anti-coercion, or public-function limit applies.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without residual private and civic freedom, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-04"
@@ -110807,25 +110897,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-20-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the residual private and civic freedom boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-20 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-20-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for residual private and civic freedom and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
           "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::The constitution protects voluntary family and intimate life without selecting"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-20 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::This decision does not enlarge the unamendable democratic corridor",
@@ -110838,12 +110928,12 @@
       "effect_key": "environmental-conditions-right",
       "applicability": "Every person holds a distinct right to environmental conditions compatible with health, bodily integrity, material-floor use, culture, participation, and an independently chosen life.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without present-person environmental conditions right, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-01",
       "secondary_class_refs": [
         "class-09",
@@ -111062,25 +111152,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-21-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the present-person environmental conditions right boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-21 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-21-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for present-person environmental conditions right and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-environmental-right.pins.nibli::# Counterfactual: present-person environmental-conditions rule deleted"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -111093,12 +111183,12 @@
       "effect_key": "environmental-information-right",
       "applicability": "Every affected person may obtain timely comprehensible environmental information including uncertainty, cumulative effects, conflicts, and source limits.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without environmental information right, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-07",
       "secondary_class_refs": [
         "class-01",
@@ -111317,25 +111407,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-22-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the environmental information right boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-22 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-22-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for environmental information right and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-22 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -111348,12 +111438,12 @@
       "effect_key": "environmental-assessment-participation",
       "applicability": "High-consequence environmental decisions require prior multi-horizon assessment and meaningful accessible participation before decision.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without environmental assessment and participation right, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -111572,25 +111662,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-23-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the environmental assessment and participation right boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-23 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-23-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for environmental assessment and participation right and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-23 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -111603,12 +111693,12 @@
       "effect_key": "environmental-reasons-review-remedy",
       "applicability": "Environmental decisions require public reasons, independent review, necessary interim protection, correction, effective remedy, and protection from retaliation.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without environmental reasons, review, and remedy right, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-01",
@@ -111902,25 +111992,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-24-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the environmental reasons, review, and remedy right boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-24 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-24-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for environmental reasons, review, and remedy right and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-24 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -111933,12 +112023,12 @@
       "effect_key": "environmental-public-private-reach",
       "applicability": "The environmental right binds public tiers and materially controlling, authorizing, financing, or concealing private actors while preserving public responsibility.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without environmental public and private reach, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-06",
       "secondary_class_refs": [
         "class-01",
@@ -112157,25 +112247,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-25-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the environmental public and private reach boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-25 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-25-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for environmental public and private reach and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-25 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -112188,12 +112278,12 @@
       "effect_key": "environmental-equality-no-score",
       "applicability": "Persistent unequal exposure is evidence for substantive equality and never an environmental-worth, vulnerability, or personal-value score.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without environmental equality route without scoring, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-03",
       "secondary_class_refs": [
         "class-01",
@@ -112414,25 +112504,25 @@
       },
       "negative_test": {
         "id": "FS-CCE-26-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the environmental equality route without scoring boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-26 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-26-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for environmental equality route without scoring and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::The right includes:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-26 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 2. The environmental right",
@@ -112445,12 +112535,12 @@
       "effect_key": "class9-commons-future-capability",
       "applicability": "Protected ecological commons and the future capability they sustain resist exhaustion, destruction, and unjustified regression without inventing future preferences.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 commons and future capability, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-09",
       "secondary_class_refs": [
         "class-04"
@@ -112698,27 +112788,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-27-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 commons and future capability boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-27 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-27-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 commons and future capability and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-27 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
@@ -112732,12 +112822,12 @@
       "effect_key": "class9-multiaxis-ceilings",
       "applicability": "Versioned ceilings remain separate across climate, air, water, soil, biodiversity, ecosystems, regenerative capacity, land, non-renewables, and shared inheritance.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 multi-axis ceilings, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-09",
       "secondary_class_refs": [
         "class-07"
@@ -112985,27 +113075,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-28-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 multi-axis ceilings boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-28 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-28-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 multi-axis ceilings and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-class9-climate-axis.pins.nibli::# Counterfactual: climate-axis ceiling rule deleted"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
@@ -113019,12 +113109,12 @@
       "effect_key": "class9-science-law-versioning",
       "applicability": "Independent science proposes and authenticates bounded evidence; democratic law enacts a dated versioned ceiling; review checks both without merging their functions.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 science-law separation and versioning, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-09",
       "secondary_class_refs": [
         "class-04",
@@ -113273,27 +113363,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-29-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 science-law separation and versioning boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-29 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-29-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 science-law separation and versioning and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-29 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
@@ -113307,12 +113397,12 @@
       "effect_key": "class9-precaution-nonregression",
       "applicability": "Credible serious or irreversible risk triggers proportionate precaution, and a new ceiling cannot regress without source-bound reasons, evidence, review, and repair.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 precaution and non-regression, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-09",
       "secondary_class_refs": [
         "class-04"
@@ -113560,27 +113650,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-30-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 precaution and non-regression boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-30 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-30-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 precaution and non-regression and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-30 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
@@ -113594,12 +113684,12 @@
       "effect_key": "class9-restoration-nonfungibility",
       "applicability": "Avoidance precedes minimization and restoration; payment or offset cannot excuse a ceiling breach or substitute for irreplaceable loss.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 restoration and nonfungibility, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-09",
       "secondary_class_refs": [
         "class-04"
@@ -113847,27 +113937,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-31-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 restoration and nonfungibility boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-31 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-31-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 restoration and nonfungibility and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-31 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
@@ -113881,12 +113971,12 @@
       "effect_key": "class9-initiation-interim-route",
       "applicability": "A present person or authorized public route may initiate review; credible threatened serious harm permits interim protection without claiming that a route operates.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 initiation and interim protection, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-09"
@@ -114218,27 +114308,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-32-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 initiation and interim protection boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-32 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-32-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 initiation and interim protection and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-32 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
@@ -114252,12 +114342,12 @@
       "effect_key": "class9-liability-public-restoration",
       "applicability": "Responsible contributors owe containment and restoration while public restoration begins when delay compounds harm, without extinguishing later recovery.",
       "layer": "constitutional-invariant",
-      "status": "ratified-unimplemented",
+      "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
       "consequence": "Without class 9 liability and public restoration continuity, a protected condition can be denied, merged into the wrong layer, or overclaimed.",
       "owner_ref": "TODO.md::Preserve the material-floor inventory; implement the liberty shell,",
       "closure_condition": "FS-CVF-012 is formalized, prose-landed, and mechanically re-audited without changing the 210 power cards or T3 ceiling",
-      "posture": "Specified",
+      "posture": "Derived",
       "primary_class_ref": "class-04",
       "secondary_class_refs": [
         "class-09"
@@ -114505,27 +114595,27 @@
       },
       "negative_test": {
         "id": "FS-CCE-33-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to collapse or bypass the class 9 liability and public restoration continuity boundary; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-33 executable boundary:"
       },
       "counterfactual": {
         "id": "FS-CCE-33-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for class 9 liability and public restoration continuity and show the named protection no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
           "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 8. Dual floor-and-ceiling continuity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/liberty-environment.pins.nibli::# FS-CCE-33 executable boundary:"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns measurement, institutions, staffing, delivery, monitoring, models, restoration operations, costs, and feasibility; no operation, delivery, liveness, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 3. Protected commons and future ecological capability",

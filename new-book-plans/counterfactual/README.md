@@ -98,3 +98,9 @@ nibli-pin --kb new-book-plans/counterfactual/no-person-line.nibli \
 ```
 
 `verify.sh` runs all three.
+
+## Liberty and ecological fixtures
+
+The `no-environmental-right` fixture deletes the present-person environmental-conditions rule while retaining environmental information and the material floor.
+The `no-class9-climate-axis` fixture deletes only the climate-axis ceiling rule while retaining the clean-air axis and the material-floor boundary.
+Both are one-line deletion fixtures and are regenerated from `constitution.nibli` after every constitutional edit.

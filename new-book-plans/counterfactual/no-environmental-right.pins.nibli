@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: present-person environmental-conditions rule deleted
+:expect-pins 3
+? prevents(Adam, EnvironmentalConditionsDenial).
+# => FALSE
+? prevents(Adam, EnvironmentalInformationWithholding).
+# => TRUE
+? entitled(Adam, event { eats() }).
+# => TRUE

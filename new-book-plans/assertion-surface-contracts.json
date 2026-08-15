@@ -19,7 +19,7 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "e12194fcd99b2dda408dc43d9163892f288faa7b913697072091cd0a50c1d25b",
+  "rules_sha256": "01e75260673a096b9b5eba83de2918b7aba105c727882822dae5cf3f02945d3c",
   "facts_sha256": "9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
@@ -81,10 +81,11 @@
     "passport": "c47b9efbe78a749ef231d071256dae315035d833cb1e982c46a001abc2e69ada",
     "permanent": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "permits": "4f0d2565d9b7a58b027f790dc0ccbfd136206e5ca54cc64b1a7a089761b8f6d8",
-    "person": "411f855200e87680c559a8b01d32c4260330d68ccb8eda178accb6b00693d1bf",
+    "person": "2307657b0335de6d3fae165ad5624f761f598470b3a4db1fb00630521fef6a1a",
     "precede": "ba77ee02f994d1dbf8f31a424fb2b74cc92d27edc27f0c0cc1bfecc6c357dbb1",
+    "prevents": "421ee8eb0fb17874bb5750145c8cbe03522e7d8e2a2645715506dfb033a62ee3",
     "prisoner": "eb0b31e8567cebf1c86b81790f0c3cf596b61cae3e42fd0c2e3d73db2fdffd3d",
-    "public": "1b1e8755d27a9b4b3d6903ae03248fc86bd04f99818fc1b5e59a2bdefe59a827",
+    "public": "6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60",
     "put": "afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627",
     "reference": "9c8dc5870fd28e908dfeb28d94b306d6b159a6231ba3561242a4fda9eb012cf3",
     "related": "4f572bb6f317f92ede78886d0f972defab2dbc80efce8a268fdd4830617046e2",
@@ -518,6 +519,17 @@
         "rule_produced": true,
         "admitted": false,
         "derived_only": false,
+        "ground_asserted": false
+      }
+    },
+    "prevents": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-prevents",
+      "decision_ref": "new-book-plans/constitution.nibli::# <LIBERTY-ECOLOGY-DERIVED-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
         "ground_asserted": false
       }
     }
