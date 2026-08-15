@@ -1072,6 +1072,11 @@ def validate_contract(source, resolution):
 
 
 def append_control_audit(changed, title):
+    changed["closure_record"] = None
+    changed["acceptance_gate"].update({
+        "verdict": LEDGER.VERDICT_NOT_PASSED,
+        "gate_a_status": "not-passed",
+    })
     if not changed.get("scope_audits"):
         return
     audit = copy.deepcopy(changed["scope_audits"][-1])
@@ -1681,14 +1686,15 @@ def main():
     contract = validate_contract(source, resolution)
     controls = negative_controls(source)
     rendered = render(source, *contract[:4], *contract[4:], resolution)
+    gate_status = source["acceptance_gate"]["gate_a_status"]
     if args.check:
         current = OUTPUT.read_text(encoding="utf-8") if OUTPUT.exists() else ""
         if current != rendered:
             raise ClosureAuditError(f"{OUTPUT.relative_to(ROOT)} is STALE — rerun without --check")
-        print(f"{OUTPUT.relative_to(ROOT)} is current; {controls} watched-failing structural controls pass; claim results are contract-only; Gate A not passed")
+        print(f"{OUTPUT.relative_to(ROOT)} is current; {controls} watched-failing structural controls pass; claim results are contract-only; Gate A {gate_status}")
     else:
         OUTPUT.write_text(rendered, encoding="utf-8")
-        print(f"wrote {OUTPUT.relative_to(ROOT)}; {controls} watched-failing structural controls pass; Gate A not passed")
+        print(f"wrote {OUTPUT.relative_to(ROOT)}; {controls} watched-failing structural controls pass; Gate A {gate_status}")
 
 
 if __name__ == "__main__":

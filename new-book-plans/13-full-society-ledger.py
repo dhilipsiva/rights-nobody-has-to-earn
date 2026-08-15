@@ -5279,6 +5279,11 @@ def negative_controls(src: dict) -> int:
     # against the mutant's semantic scope.
 
     gate_a_critical = copy.deepcopy(src)
+    gate_a_critical["closure_record"] = None
+    gate_a_critical["acceptance_gate"].update({
+        "verdict": VERDICT_NOT_PASSED,
+        "gate_a_status": "not-passed",
+    })
     gate_a_row = next(
         row for row in gate_a_critical["defects"] if row["id"] == "FS-DFT-27"
     )
@@ -5342,6 +5347,12 @@ def negative_controls(src: dict) -> int:
                 "title": "Watched-mutation current audit",
             })
             mutant["scope_audits"].append(control_audit)
+        if not getattr(mutate, "__name__", "").startswith("_closure"):
+            mutant["closure_record"] = None
+            mutant["acceptance_gate"].update({
+                "verdict": VERDICT_NOT_PASSED,
+                "gate_a_status": "not-passed",
+            })
         try:
             mutate(mutant)
             if (name != "the current scope audit binds the semantic scope digest"
