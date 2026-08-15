@@ -5274,8 +5274,9 @@ def negative_controls(src: dict) -> int:
                 {"source_refs": ["book-1/rights-floor.md::the floor"]}),
             "narrative-register rule")
 
-    # Closure remains deliberately locked until a real candidate commit
-    # contains the exact current-source repository audit.
+    # A semantic mutant appends its own transient current audit so committed
+    # audit history remains an exact prefix while readiness is exercised
+    # against the mutant's semantic scope.
 
     gate_a_critical = copy.deepcopy(src)
     gate_a_row = next(
@@ -5284,8 +5285,13 @@ def negative_controls(src: dict) -> int:
     gate_a_row["severity"] = (
         "critical — semantic control for a scope-map defect"
     )
-    gate_a_critical["scope_audits"][-1]["scope_sha256"] = \
-        review_scope_digest(gate_a_critical)
+    control_audit = copy.deepcopy(gate_a_critical["scope_audits"][-1])
+    control_audit.update({
+        "id": "FS-SAU-99",
+        "title": "Semantic-control current audit",
+        "scope_sha256": review_scope_digest(gate_a_critical),
+    })
+    gate_a_critical["scope_audits"].append(control_audit)
     validate(gate_a_critical)
     gate_a_rows, _ = compute_gate_a_readiness(
         gate_a_critical, compute_resolution(gate_a_critical)
@@ -5329,6 +5335,13 @@ def negative_controls(src: dict) -> int:
         name, mutate = entry[0], entry[1]
         expect = entry[2] if len(entry) > 2 else None
         mutant = copy.deepcopy(src)
+        if mutant.get("scope_audits"):
+            control_audit = copy.deepcopy(mutant["scope_audits"][-1])
+            control_audit.update({
+                "id": "FS-SAU-99",
+                "title": "Watched-mutation current audit",
+            })
+            mutant["scope_audits"].append(control_audit)
         try:
             mutate(mutant)
             if (name != "the current scope audit binds the semantic scope digest"
@@ -5974,7 +5987,7 @@ def _closure_env_stub(s):
 
 
 def _closure_unknown_audit(s):
-    _mk_closure(s)["scope_audit_ref"] = "FS-SAU-99"
+    _mk_closure(s)["scope_audit_ref"] = "FS-SAU-98"
 
 
 def _closure_wrong_cutoff(s):
@@ -6028,14 +6041,18 @@ def _r7_available(s):
 
 
 def _scope_audit_stale_source(s):
+    s["source_version"] = "control-current-source"
     s["scope_audits"][-1]["source_version"] = "stale-source"
 
 
 def _scope_audit_stale_scope(s):
+    s["title"] += " control semantic drift"
     s["scope_audits"][-1]["scope_sha256"] = "0" * 64
 
 
 def _scope_audit_stale_protocol(s):
+    s["source_version"] = "control-current-source"
+    s["scope_audits"][-1]["source_version"] = s["source_version"]
     s["scope_audits"][-1]["protocol_sha256"] = "0" * 64
 
 

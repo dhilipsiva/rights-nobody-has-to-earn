@@ -1071,8 +1071,17 @@ def validate_contract(source, resolution):
     )
 
 
+def append_control_audit(changed, title):
+    if not changed.get("scope_audits"):
+        return
+    audit = copy.deepcopy(changed["scope_audits"][-1])
+    audit.update({"id": "FS-SAU-98", "title": title})
+    changed["scope_audits"].append(audit)
+
+
 def expect_failure(name, source, mutate, contains=None):
     changed = copy.deepcopy(source)
+    append_control_audit(changed, "Closure-audit watched mutation")
     mutate(changed)
     if changed.get("scope_audits"):
         changed["scope_audits"][-1]["scope_sha256"] = \
@@ -1398,6 +1407,7 @@ def negative_controls(source):
     add("narrow receipt promoted wide", lambda s: s["receipts"][0].update({"residuals": ["FS-DFT-41"]}))
 
     def assert_floor_delivery_gap(changed, label):
+        append_control_audit(changed, "Closure-audit semantic control")
         changed["scope_audits"][-1]["scope_sha256"] = \
             LEDGER.review_scope_digest(changed)
         LEDGER.validate(changed)
