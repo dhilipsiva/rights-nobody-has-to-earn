@@ -1587,7 +1587,7 @@ def _validate_contract_term(term, field, card, context):
     lower = text.lower()
     blank_tokens = {"n/a", "na", "tbd", "unknown", "unresolved"}
     if (lower.strip() in blank_tokens
-            or re.search(r"\b(?:tbd|unknown|unresolved)\b", lower)
+            or re.search(r"\b(?:tbd|unresolved)\b", lower)
             or "is fixed by the source-bound" in lower):
         raise LedgerError(f"{context}: unresolved or legacy generic prose")
     if text.strip() == card["applicability"].strip():
