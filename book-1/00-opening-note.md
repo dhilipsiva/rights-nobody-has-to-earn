@@ -475,6 +475,20 @@ the domain.
   domain. Custody time and record continuity in Chapter
   [13](13-the-one-thing-taken.md) are not an emergency or defence system.
 
+- **Substantive equality and anti-subordination:** every person now holds a
+  separate constitutional barrier against direct, indirect, systemic, multiple,
+  intersectional, and associative discrimination; denied accommodation; imposed
+  segregation; harassment; and retaliation. The barrier binds public and
+  delegated functions and the expressly named public-facing private domains. It
+  also separates the direct and indirect proof tests, proactive accessibility,
+  individual accommodation, privacy-walled diagnostics, time-bounded positive
+  measures, historical repair, individual and systemic remedies, and the common
+  federal baseline. A ground is a legal handle for finding and repairing a
+  disadvantage, never a measure of a person's worth, risk, character, or
+  entitlement. These are conclusions over supplied premises. They do not show
+  that an institution, accessible route, diagnostic system, programme, or remedy
+  exists or works.
+
 - **Environment, ecological commons, and future conditions:** the current
   source now keeps the material floor unchanged while deriving a separate
   environmental right for every person and separate protections for ecological
