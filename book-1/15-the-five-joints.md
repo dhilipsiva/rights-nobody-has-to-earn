@@ -329,14 +329,60 @@ lives exactly where Grok pointed, in manufactured absences — the entries never
 written, the examinations never opened, the recognition never recorded, for
 people the record-keepers were taught not to see. A design that abolishes
 written rank while leaving the writing of facts to the same hands has not
-answered him. Two answers, both stated as properties of the finished society
-rather than hopes: the bodies that seat examiners are constituted so that
-reserved places for the historically excluded are visible in the record itself;
-and allocation patterns by group are published in a form an outsider can check —
-who got recognised, who got examined, who got housed, sliced by the communities
-the society knows it contains, on the reasoning that manufactured absence shows
-up as pattern even when no single entry is false. Where those patterns cannot be
-produced, this design is not running; something wearing its vocabulary is.
+answered him. The constitutional answer now begins with anti-subordination:
+neither a deliberately worse rule, a neutral-looking rule with a worse effect,
+nor a pattern made by several rules may reproduce a group's inferior civic,
+material, or institutional position. Multiple and intersecting grounds remain
+visible, including harm because of whom a person knows or supports. Imposed
+segregation, harassment, denied accommodation, and retaliation do not disappear
+inside a general slogan about equal treatment.
+
+That answer reaches every public tier and delegated function, and the named
+public-facing fields of work, housing, education, health care, utilities,
+finance, insurance, transport, communications, and goods and services. Each
+private duty has a matching public duty to prevent, investigate, preserve
+continuity, and remedy. Voluntary intimate, cultural, faith, safety, affinity,
+and expressive association remains protected only with free exit and the common
+rights intact. A mission requirement has to concern a genuinely expressive role
+and cannot become a door around commercial or essential access.
+
+The test is not the same for every distinction. A direct distinction needs a
+genuine determining necessity and no less discriminatory way to preserve the
+function. An indirect one needs a compatible purpose, evidence of fit,
+necessity, the least discriminatory means, and proportionality. Neither may
+trade away standing, the floor, core liberty, due process, an equal popular
+ballot, or remedy. Once a claimant shows credible adverse treatment, a barrier,
+or a relevant pattern, the remedial burden can shift. The criminal burden
+cannot, and a bare absence from a record proves no withholding by itself.
+
+Patterns can still reveal manufactured absence. But the diagnostic record is
+purpose-limited, privacy-preserving, independently governed, and kept outside
+the person's consequential record. An aggregate pattern may create a rebuttable
+presumption and an audit; it cannot write an individual risk, worth,
+entitlement, guilt, or character result. Declining voluntary self-description
+creates no adverse inference.
+
+Where ordinary equality, proactive accessibility, and individual accommodation
+remain insufficient, democratic law may enact a temporary positive measure.
+Its objective, evidence, eligibility, necessity, proportionality, review,
+challenge, and end must be stated separately. A fresh temporal source and
+alternate review are required; silence creates no new preference or expansion.
+The duty to repair continuing historical barriers remains, but no repair assigns
+inherited guilt and no correction erases lawful provenance or public
+answerability. These are formal barriers over supplied premises. They prove no
+population pattern, working diagnostic system, accessible route, programme,
+institutional act, or completed remedy.
+
+An affected person can begin the challenge directly or with a chosen supporter;
+a qualified association or rights advocate can also begin it without replacing
+the person's voice. Advocacy, investigation, decision, execution, audit, and
+final review remain separate. Individual relief can preserve continuity, stop
+the wrong, restore, accommodate, correct a record, compensate or repair, and
+protect against retaliation. A systemic order can reopen related cases and
+require a lawful result without turning the court into the ordinary
+administrator. The same baseline travels across jurisdictions; local law,
+initiatives, amendments, secession terms, and emergencies cannot route around
+it.
 
 Assessment, second. The one instrument this record refuses on principle is the
 standing judgment of a person — the risk score, the capability flag, the file
