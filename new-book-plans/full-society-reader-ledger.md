@@ -5,9 +5,9 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-15-mechanical-gate-a-candidate`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-15-mechanical-gate-a-candidate`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
-Canonical source SHA-256: `5c1e960d922eb1c4517c41d7422e503127e733aeabd9555863bb0200fdbb2512`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `8dfa744558123dfc20d3812b93f10285992a17179626cf83bdc912b59526c992`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
