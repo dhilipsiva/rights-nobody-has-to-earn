@@ -521,6 +521,26 @@ different power. Its green result is therefore a formal coverage result over
 supplied records, not proof of environmental liveness, liberty enforcement, or
 restoration.
 
+The substantive-equality family follows the same gate without compressing its
+content into one omnibus equality fact. Fifty-four source-bound non-power
+effects each have one registered `prevents` rule and one exact statement
+fingerprint. Its executable suite checks fifty-eight expectations. Three
+single-deletion counterfactuals separately remove the direct-discrimination
+barrier, the diagnostic-data wall, and the end rule for a positive measure;
+the surrounding equality controls remain in place so each loss is attributable
+to the deleted statement rather than to a collapsed family.
+
+The effects distinguish ten forms of subordination, public and specified
+private reach, direct and indirect proof, protected association boundaries,
+diagnostic data, bounded positive measures, historical repair, initiation,
+separated functions, individual and systemic remedies, and the federal
+corridor. They preserve the criminal burden and refuse to turn absence from a
+record into proof of withholding. The rules prove only that the declared
+constitutional barriers follow from supplied records. They do not establish a
+population disparity, an operating data system, an authorised measure, an
+accessible route, institutional action, or completed repair. The family adds no
+power allocation and neither changes nor borrows the T3 temporal path.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the
