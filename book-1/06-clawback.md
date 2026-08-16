@@ -115,10 +115,17 @@ student, for any teacher's fraud; the difference between Fin and Cira — which 
 never anything either of them did, only a fact about their teachers — is now no
 difference at all.
 
+The broader family and life-course rule now says why this boundary must survive:
+children and dependants hold rights separately from parents and caregivers. Parentage,
+care, household membership, and support are different relations. None transfers an
+adult's fraud, guilt, debt, or lost recognition to a child. That is a legal barrier
+over supplied records, not proof that a court, advocate, correction process, or remedy
+will act.
+
 What the deletion does not delete is the lesson. The rule wanted the mark, not the
 amount — nobody who wrote it checked whether there was anything there to lose — and
 it stood for a long time beside guards built precisely against marks landing on the
-uninvolved: two auditors, no family, no liars, no matched carried void, every one of them
+uninvolved: two auditors with affirmative case-bound independence findings, no liars, no matched carried void, all of them
 watching the front door while this rule stood propped open at the side. The
 accountability machinery's one wrong against an innocent was not an attacker's work.
 It was written in good faith, by the same hands that built the guards, and it was
