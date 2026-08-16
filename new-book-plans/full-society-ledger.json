@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-16-family-life-formal-v1",
+  "source_version": "fs-ledger-2026-08-16-family-life-prose-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -82878,7 +82878,7 @@
     {
       "id": "FS-CVF-014",
       "title": "Bodily autonomy, health, care, family, and life-course constitutional effects",
-      "state": "formalized",
+      "state": "prose-landed",
       "source_family_refs": [
         "family-dependency-reproduction-and-collective-plurality"
       ],
@@ -83125,9 +83125,24 @@
         "new-book-plans/counterfactual/no-missing-kinship-independence.pins.nibli::# Counterfactual: no missing kinship independence",
         "new-book-plans/counterfactual/no-pregnancy-authority.pins.nibli::# Counterfactual: no pregnancy authority"
       ],
-      "prose_refs": [],
-      "part_v_refs": [],
-      "blocked_before_drafting": "Formal rules, pins, and source-removal counterfactuals pass, but claim-bearing chapter and Part V prose remain blocked until audited references land; no operation or delivery follows.",
+      "prose_refs": [
+        "book-1/00-opening-note.md::- **Personhood and life course:** Chapters",
+        "book-1/01-what-counts-as-evidence.md::The family and life-course entries no longer carry that second kind of power.",
+        "book-1/03-who-holds-the-pen.md::But an absent kinship entry never proved",
+        "book-1/05-voiding.md::A generic independence label, a finding about another case, or the absence of parent,",
+        "book-1/06-clawback.md::The broader family and life-course rule now says why this boundary must survive:",
+        "book-1/08-what-you-are-owed.md::**Care is not a family invoice.**",
+        "book-1/09-the-vote-conviction-does-not-take.md::The law beneath that evidence is stronger than an",
+        "book-1/10-contribution.md::Caregiver and dependant remain separate rights-holders",
+        "book-1/11-where-people-are-put.md::The old unary family entry remains in the cast, but it does no placement work.",
+        "book-1/13-the-one-thing-taken.md::Family status is not a placement input.",
+        "book-1/14-when-the-system-notices-it-broke.md::General adulthood attaches automatically at",
+        "book-1/method.md::The bodily-autonomy, health, care, family, and life-course family is the"
+      ],
+      "part_v_refs": [
+        "book-1/15-the-five-joints.md::Family status is not a constitutional shortcut."
+      ],
+      "blocked_before_drafting": "The bodily-autonomy, health, care, family, and life-course family is prose-landed after audit of the opening note, affected numbered chapters, Part V, and method; operation, delivery, age calibration, service routes, institutions, completed remedies, and Book 2 implementation remain outside this coverage state.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 1. Decision",
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests",
@@ -106423,6 +106438,51 @@
       "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-19",
+      "title": "Family and life-course prose-completion current-source repository adversarial audit",
+      "source_version": "fs-ledger-2026-08-16-family-life-prose-v1",
+      "scope_sha256": "7c9fa059972997fb68083cbd43b1c5beb0819f4fa2bb3d16c5ca1cfb25fa8ba0",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-16T15:00:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -129104,7 +129164,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-88 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -129317,7 +129377,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-89 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -129529,7 +129589,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-90 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -129742,7 +129802,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-91 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -129955,7 +130015,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-92 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -130167,7 +130227,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-93 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -130380,7 +130440,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-94 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 2. Childhood, standing, and best interests"
@@ -130595,7 +130655,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-95 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -130808,7 +130868,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-96 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -131023,7 +131083,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-97 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -131236,7 +131296,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-98 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -131449,7 +131509,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-99 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -131662,7 +131722,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-100 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -131877,7 +131937,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-101 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -132092,7 +132152,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-102 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -132306,7 +132366,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-103 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 3. General adulthood and early authority"
@@ -132520,7 +132580,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-104 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -132738,7 +132798,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-105 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -132953,7 +133013,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-106 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -133168,7 +133228,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-107 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -133383,7 +133443,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-108 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -133599,7 +133659,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-109 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -133814,7 +133874,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-110 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -134027,7 +134087,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-111 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 4. Modular family recognition"
@@ -134240,7 +134300,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-112 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -134452,7 +134512,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-113 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -134665,7 +134725,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-114 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -134878,7 +134938,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-115 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -135092,7 +135152,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-116 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -135305,7 +135365,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-117 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -135522,7 +135582,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-118 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -135739,7 +135799,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-119 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -135954,7 +136014,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-120 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 5. Parentage, origin, and child continuity"
@@ -136170,7 +136230,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-121 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -136384,7 +136444,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-122 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -136599,7 +136659,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-123 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -136812,7 +136872,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-124 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -137025,7 +137085,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-125 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -137239,7 +137299,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-126 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -137454,7 +137514,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-127 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -137668,7 +137728,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-128 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 6. Care, dependency, and private duties"
@@ -137880,7 +137940,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-129 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -138095,7 +138155,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-130 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -138310,7 +138370,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-131 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -138525,7 +138585,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-132 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -138740,7 +138800,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-133 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -138955,7 +139015,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-134 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -139169,7 +139229,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-135 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -139383,7 +139443,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-136 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -139597,7 +139657,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-137 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -139812,7 +139872,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-138 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 7. Domestic protection, intervention, and separation"
@@ -140025,7 +140085,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-139 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -140239,7 +140299,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-140 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -140454,7 +140514,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-141 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -140668,7 +140728,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-142 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -140883,7 +140943,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-143 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -141098,7 +141158,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-144 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -141312,7 +141372,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-145 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -141530,7 +141590,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-146 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 8. Supported legal agency"
@@ -141747,7 +141807,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-147 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -141962,7 +142022,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-148 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -142176,7 +142236,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-149 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -142391,7 +142451,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-150 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -142603,7 +142663,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-151 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -142815,7 +142875,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-152 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -143028,7 +143088,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-153 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -143242,7 +143302,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-154 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -143456,7 +143516,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-155 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -143671,7 +143731,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-156 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -143884,7 +143944,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-157 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -144098,7 +144158,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-158 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -144313,7 +144373,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-159 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 9. Reproductive autonomy and assisted reproduction"
@@ -144528,7 +144588,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-160 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -144745,7 +144805,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-161 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -144960,7 +145020,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-162 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -145174,7 +145234,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-163 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -145388,7 +145448,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-164 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -145602,7 +145662,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-165 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -145815,7 +145875,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-166 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -146032,7 +146092,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-167 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -146250,7 +146310,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-168 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -146466,7 +146526,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-169 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -146685,7 +146745,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-170 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -146902,7 +146962,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-171 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -147118,7 +147178,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-172 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 10. Ageing, treatment, and end of life"
@@ -147334,7 +147394,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-173 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -147550,7 +147610,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-174 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -147766,7 +147826,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-175 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -147983,7 +148043,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-176 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -148200,7 +148260,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-177 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -148418,7 +148478,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-178 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -148635,7 +148695,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-179 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 11. Succession"
@@ -148852,7 +148912,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-180 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 15. Public authority, federal allocation, and remedies"
@@ -149068,7 +149128,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-181 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 15. Public authority, federal allocation, and remedies"
@@ -149284,7 +149344,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-182 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 15. Public authority, federal allocation, and remedies"
@@ -149501,7 +149561,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-183 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 15. Public authority, federal allocation, and remedies"
@@ -149718,7 +149778,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-184 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 17. Formal migration contract"
@@ -149933,7 +149993,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-185 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 17. Formal migration contract"
@@ -150154,7 +150214,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-186 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 17. Formal migration contract"
@@ -150374,7 +150434,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-187 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 17. Formal migration contract"
@@ -150592,7 +150652,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-188 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 17. Formal migration contract"
@@ -150812,7 +150872,7 @@
         ],
         "executable_ref": "new-book-plans/family-life-course.pins.nibli::# FS-CCE-189 executable boundary:"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 16. Book 1, Book 2, and engine boundary"
