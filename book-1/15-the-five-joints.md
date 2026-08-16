@@ -116,20 +116,21 @@ is the design, unable to say that a woman who carried a household for a
 generation did more than a man who filed one census.
 
 The answer has three parts, and the objection survives all three in a narrowed
-form. First, the factual part: raising a child walks through the existing doors —
-the teaching half mints the way all teaching mints, and the tending half is work,
-because nothing in the design narrows work to the salaried or the public. The
-"missing category" was never missing; what is true is that the record has to be
-written, and care that nobody records earns nothing, which this book says out
-loud rather than around. Second, the trade was priced with open eyes: the same
-chapter that cannot say *more* also cannot say *less*, and the history above is
-what the ability to say *more* has cost every society that had it — the valuator
-who becomes the political system, the score that becomes the leash. Third, and
-honestly: the not-seeing charge partly stands. This design sees *that*, never
-*how much*, and a person whose decades of care read identically to a season of
-clerking has been told something untrue about their life. The design accepts that
-untruth to avoid a worse one. I would make the same choice again, and I will not
-pretend it costs nothing.
+form. First, the factual part: teaching remains one recognition route, and care
+can be recorded as work without becoming a marital or family duty. The entry
+supports recognition for the worker only. It does not prove that care reached
+another person, that it was safe or consensual, or that the worker acquired
+authority. Child activity also carries independent limits: it must be voluntary,
+safe, compatible with education, protected like other labour, and never
+hazardous, coerced, exploitative, or conditioned on the floor. Second, the trade
+was priced with open eyes: the same chapter that cannot say *more* also cannot
+say *less*, and the history above is what the ability to say *more* has cost —
+the valuator who becomes the political system, the score that becomes the leash.
+Third, and honestly: the not-seeing charge partly stands. This design sees a
+supplied work entry, never how much care occurred or whether public continuity
+arrived. A person whose decades of care read identically to a season of clerking
+has been told something untrue about their life. The design accepts that
+untruth to avoid a worse one.
 
 **Survives, narrowed.** And the specification that keeps it survivable, stated as
 a property of the finished society rather than a task: any scoring layer a
@@ -277,12 +278,12 @@ old elites captured the new machinery while it went right on running. Capture is
 not what happens when a design breaks. It is what happens while it works.
 
 What this design does against capture, most of this book: the pen split across
-two bodies, the kinship and marriage guards, the grounds a paid examiner must
-cite, the reconciled mark carried into the selected current record on one witnessed
-constitutional line, the shield for whoever
-exposes an authority, the audit whose findings can name a duty but still cannot
-make anyone act — and the confession, made early and repeated, that beneath every
-guard sits a record that people keep.
+two bodies, affirmative case-bound independence for each reviewer, the grounds a
+paid examiner must cite, the reconciled mark carried into the selected current
+record on one witnessed constitutional line, the shield for whoever exposes an
+authority, the audit whose findings can name a duty but still cannot make anyone
+act — and the confession, made early and repeated, that beneath every guard sits
+a record that people keep. Missing kinship never certifies independence.
 
 The objection is that confession, handed back as a verdict. Gemini: "You have
 not destroyed the informal economy of leverage; you have just moved it to the
@@ -407,6 +408,83 @@ decisions. Each is a limit held by a person, not a service to be earned and not
 a score to be balanced away. The narrow record complements those limits; it
 does not substitute for them. Neither device proves that nobody judges a person
 elsewhere or that an institution will stop an unlawful intrusion.
+
+### Family and the life course
+
+Family status is not a constitutional shortcut. Children hold independent
+rights, accessible information and help, and a voice without a fixed age floor.
+Their views receive weight with reasons according to the decision and their
+evolving ability, while best interests remain an individualized rights
+procedure rather than an adult preference. General adulthood attaches
+automatically at one common age; registration is evidence only. A later age
+increase cannot revoke established adulthood. Missing or disputed evidence
+cannot create indefinite childhood, and an expiring opportunity receives
+provisional adult treatment. Earlier authority is decision-specific, supported,
+revocable, and cannot manufacture general adulthood or political rights.
+
+Civil family recognition is modular and plural. Entry requires consent, public
+law must disclose obligations, and exit cannot cost standing, the floor, civic
+status, privacy, or an existing parent-child relation. Marriage has no
+constitutional priority. Parentage is a responsibility rather than ownership;
+birth, adoption, consent, adjudication, and assisted reproduction may supply
+different source routes without buying or selling status. Adoption requires
+consent and the child's voice. Origin records preserve provenance, and access to
+them neither compels contact nor changes parentage. Custody of a parent does not
+erase parentage, while contact restrictions need their own protective ground.
+
+Care is public-first and relation-specific. A caregiver and a dependant keep
+separate standing, privacy, voice, exit, support, and remedy. Kinship creates no
+personal-care debt or authority, and a person may safely relinquish a care role
+without abandoning the dependant to a gap. A work record must name an actual
+care function before it can support recognition, and recognition never proves
+delivery. Household form is not prescribed. Domestic action begins with
+credible evidence of violence, coercion, exploitation, neglect, or another
+named harm — not poverty, disability, culture, custody, or family form.
+Confidential help does not require prior proof of an offence. Child separation
+is a last resort after support, with least disruption, independent review,
+continuity, reunification where safe, or stable care.
+
+Adult legal capacity continues through disability, communication difference,
+ageing, or refusal of support. A chosen supporter assists rather than
+substitutes, and plenary guardianship is refused. Any best interpretation is
+bounded, recorded, reviewable, and displaced by the person's current will when
+it can be known. Emergency authority does not become a lasting agency, and
+agency records must be purpose-specific, visible, challengeable, and revocable.
+
+Reproductive and health decisions remain with the person whose body is affected.
+Access, free and informed choice, confidentiality, and continuity cannot depend
+on a spouse, parent, family, doctor, supporter, or state veto. Pregnancy does not
+transfer bodily authority or create overriding fetal personhood; pregnancy
+outcomes are not crimes or status evidence. A child can reach confidential
+health help through a rights-bounded route. Conscientious refusal cannot strand
+the patient. Assisted reproduction requires continuing consent, preserves the
+gestational person's control, bars exploitation, and fixes parentage and care
+continuity at birth without converting consent into a sale.
+
+Ageing changes none of those rights. Community living and support come before
+institutional placement; placement needs consent or a narrow, reviewed
+authority. The person's current treatment decision has priority, including a
+refusal of life-sustaining treatment, followed only by a bounded authority order
+when the current will cannot be known. Treatment disputes require independent
+review and continuity. Any assisted-dying regime must be separately enacted
+with strict eligibility, voluntariness, alternatives, repeated request,
+independent checks, a fresh temporal record, and no request by a representative.
+Death requires an external, correctable finding and ends only separately typed
+effects.
+
+Succession begins with a valid will, preserves estate liabilities and bounded
+dependant claims, and cannot transmit public status, guilt, office, or authority.
+Without a will, functional care and dependency matter more than marital rank;
+plural children stand equally, collective title cannot be privatized through an
+estate, housing and the floor continue, and beneficiary-caregiver conflicts need
+independent review.
+
+These are formal constitutional barriers over supplied premises. They establish
+no common adulthood age, clinic, care route, confidential intake, support
+network, placement, inspector, reproductive service, palliative capacity,
+death-registration system, probate administration, staff, budget, or completed
+remedy. They do not borrow T3's custody record for another power. Operations,
+service design, and delivery remain a Book 2 handoff.
 
 India, because this is not hypothetical and not every reader carries the
 context. India's welfare system feeds hundreds of millions through ration
