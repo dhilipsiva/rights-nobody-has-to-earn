@@ -11,11 +11,13 @@ without argument.
 Here, nothing takes the vote. Not because anyone decided that prisoners deserve to
 keep it. Because of where the vote comes from.
 
-The right to vote follows from two things the record holds about you: that you are a
-person, and that you are an adult. That is the whole of it. Conviction does not touch
-either one — Chapter 7 established that a prisoner remains a person, and no one has
-ever suggested that imprisonment makes you younger. So the franchise follows for Hano
-exactly as it follows for anyone, and no rule anywhere interrupts it.
+The right to vote follows here from personhood and supplied evidence that the common
+age of adulthood has been reached. The law beneath that evidence is stronger than an
+entry: adulthood attaches automatically at the uniform age and cannot be granted or
+withheld by a registrar. The executable record does not observe an outside clock, so
+it can test only the typed evidence it was given. Hano has that evidence. Conviction
+touches neither personhood nor adulthood, and no rule interrupts the franchise that
+follows.
 
 ## The theorem this completes
 
@@ -54,54 +56,60 @@ those are its subjects, and the franchise sits downstream of neither. Follow the
 heaviest verdicts this design can produce — confined, and not to be believed — all the
 way to the franchise, and neither one arrives.
 
-What would arrive is the thing chapter 7 warned about. The franchise belongs to
-persons who are adults, so the only route to it runs through the roster — and the only
-way it is ever lost here is the way everything is lost at once: the person's entry
-going missing. No court reaches it. No examiner reaches it. The record-keeper does.
+What would arrive is the thing chapter 7 warned about. The executable franchise route
+needs both a person root and typed evidence of the common adulthood threshold. Delete
+the person root and everything disappears. Withhold or dispute the age evidence and
+the ballot conclusion also fails to derive, even though the legal status itself is
+automatic and cannot be revoked by that silence. No court reaches the franchise in
+this example. A defective record can still starve the machine of the premise it reads.
 
 ## Children, the difference between not yet and taken — and a third thing
 
-Cira does not yet hold the franchise. Cira is a person, is owed everything on the
-floor, and lacks the adulthood entry from which the franchise follows.
+Cira is a person and is owed everything on the floor. The supplied record contains no
+typed evidence that Cira has reached the common adulthood threshold, so it produces no
+ballot conclusion. That executable answer does not tell us whether Cira is in fact
+below the age or whether the evidence is missing. The record has no outside clock.
 
 It is worth being careful about why that is a different kind of thing from
 disenfranchisement, since on the surface both are people without a vote.
 
-Nothing was taken from Cira. There is no rule anywhere that removes Cira's franchise,
-no finding, no proceeding, nobody who decided. The franchise follows from the record
-holding you a person *and* an adult, and Cira's record holds one of the two. When it
-holds both, the franchise follows automatically — no permission required, nothing to apply for
-— *once the record says you are an adult*. And there the honesty has to be exact,
-because that entry is an entry like any other: somebody writes it, nothing defines it,
-no rule produces it, and nobody has to. The first chapter put adulthood on its list of
-things somebody concluded, and the franchise is where that entry gates.
+Nothing was taken from Cira. There is no rule that removes a franchise, no finding, no
+proceeding and nobody who decided against Cira. In the law, reaching the common age
+creates general adulthood automatically; registration is evidence, never its source.
+Decision-specific early authority can cover a named choice before that age, but it
+cannot manufacture general adulthood or a ballot. In the executable model, the typed
+age evidence remains a supplied premise. That separation prevents the writer from
+granting legal adulthood while exposing a different weakness: absent evidence can
+still suppress a conclusion the model should produce once the age has actually been
+reached.
 
-So the record has a third category this section's title does not admit, between *not
-yet* and *taken away*: **never written**. Esa teaches, was examined by two people, is
-somebody's recorded child — and Esa holds no franchise, because nobody wrote her
-adulthood down. In the record, the teacher and the child are the same: an entry short
-of the franchise.
+So the record has a third executable category this section's title does not admit,
+between *not yet* and *taken away*: **evidence absent**. Esa teaches, was examined by
+two people, and is somebody's recorded child. None of those facts proves an age. Esa
+has no typed adulthood evidence, so the machine derives no franchise. That does not
+make Esa a child or let the record decide Esa's legal status.
 
-Esa can now challenge that missing maturity record. The challenge produces a named
-dispute and a duty for Appeals. It does not write adulthood, confer the vote, identify
-the original writer, or make Appeals act; the duty is one of the unread duties the last
-derived chapter examines. The silence is therefore visible after a person contests it,
-but not repaired by being visible.
+Esa can challenge the missing or disputed age evidence. The challenge produces a named
+dispute and a duty for Appeals. It does not determine Esa's age, supply the typed
+evidence, confer or deliver a ballot, identify the original writer, or make Appeals
+act; the duty is one of the unread duties the last derived chapter examines. The
+silence is therefore visible after a person contests it, but not repaired by being
+visible.
 
-One more fact makes the entry's strangeness exact. Esa earns here. Her teaching is
-recognised — the doors of the next chapter ask nothing about age — so the record that
-will not grant her the franchise is already counting her contribution. The same
-missing word sorts her out of the franchise and not out of the earning. And it is a word with
-precisely one job: in the entire design, adulthood is consulted by the franchise and
-by nothing else. A single undefined entry, written by nobody-in-particular, read in
-one place, and that place is the vote.
+One more fact makes the evidence gap exact. Esa earns here. Her teaching is recognised
+— the doors of the next chapter ask nothing about age — so the record that lacks typed
+age evidence is already counting her contribution. Supplying that evidence makes the
+anti-denial wall and ballot conclusion derive. It does not constitute adulthood or
+prove when an outside birthday occurred. The distinction is narrow and essential:
+legal status is automatic; the machine's answer is evidence-bound.
 
-A polity that wanted a demographic voteless would not need to pass a
-rule or strip a right. It could decline, quietly, to write adulthood into certain
-records. Unless the affected person challenges the omission, nothing marks it; if they
-do challenge, the system records a dispute and an unanswered duty while the franchise
-still does not derive. A missing vote and a vote not yet due remain indistinguishable
-until somebody contests the missing word.
+A polity that wanted a demographic voteless would not need to pass a rule or strip a
+right. It could decline, quietly, to supply or accept typed age evidence for certain
+people. That act would not lawfully postpone adulthood, but this executable model
+would still fail to derive the ballot. Unless the affected person challenges the
+omission, nothing marks it; if they do, the system records a dispute and an unanswered
+duty. A vote not yet due and a conclusion starved of evidence remain indistinguishable
+inside this bounded record.
 
 Compare what disenfranchisement would be: a rule that reaches in and removes something
 a person already had, on the basis of something they did. The distinction between
@@ -154,11 +162,12 @@ a rule may produce it. The protection covers the word in every form, not just it
 beside a ballot. That reservation has a cost. A cast ballot, a tally, an institution's
 decision and a legal result need their own words rather than borrowing this one.
 
-This repair does not armour the franchise rule. Adulthood may still be withheld, the
-rule may still be narrowed or deleted, and another rule may still produce the same
-conclusion. Nor is this a claim that every rule-produced word has been swept. The
-chapter on clawback closes the same exact-name opening for loss; the wider class stays
-visible for the work each word requires.
+This repair does not armour the franchise rule. Typed age evidence may still be
+missing or disputed, the rule may still be narrowed or deleted, and another rule may
+still produce the same conclusion. Legal adulthood itself may not be withheld once
+the common age is reached. Nor is this a claim that every rule-produced word has been
+swept. The chapter on clawback closes the same exact-name opening for loss; the wider
+class stays visible for the work each word requires.
 
 And the rule that grants the franchise was written to be caught out. Narrow it — slip the
 exception for prisoners into its body — and a checked answer flips in the open, where

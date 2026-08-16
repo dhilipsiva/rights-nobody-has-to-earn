@@ -54,8 +54,9 @@
 ? decide(Bela, Ballot).
 # => TRUE
 
-# "Cira is a person ... and does not yet hold the franchise, because Cira is
-# not an adult."
+# Cira is a person and the supplied record lacks typed evidence that the common
+# adulthood threshold was reached. The FALSE results establish only the bounded
+# executable answer: they do not establish Cira's outside age or legal status.
 ? person(Cira).
 # => TRUE
 
@@ -71,14 +72,13 @@
 :accept-scoped
 all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
 
-# ── NEVER WRITTEN LOOKS LIKE NOT YET. Ground facts below persist ─────────────
-# "In the record, the teacher and the child are the same: an entry short of the
-# franchise." Esa teaches, was examined, is somebody's recorded child — and
-# holds no franchise conclusion, exactly like Cira above, because the rule
-# reads a written adulthood entry and nobody wrote hers. Then one write, by
-# anybody, and the teacher becomes enfranchised. The pair is self-controlling:
-# the FALSE only passes while the entry is absent, the TRUE only after the
-# single write.
+# ── MISSING EVIDENCE LOOKS LIKE NOT YET. Ground facts below persist ──────────
+# Esa teaches, was examined, and is somebody's recorded child. None proves an
+# age. Without typed adulthood evidence the bounded model derives neither the
+# anti-denial wall nor the franchise conclusion. Supplying that evidence makes
+# both derive; it does not constitute adulthood or prove an outside clock. The
+# pair is self-controlling: FALSE holds before the supplied evidence and TRUE
+# after it.
 ? prevents(Esa, GeneralAdulthoodDenial).
 # => FALSE
 
