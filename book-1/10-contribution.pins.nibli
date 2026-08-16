@@ -126,17 +126,18 @@ work(Sata, Care).
 ? reward(Sata).
 # => TRUE
 
-# ...and being tended, like being taught, mints nothing for the recipient —
-# the grades ruling's shape, re-exhibited on the care side.
+# ...and being tended, like being taught, mints nothing for the recipient.
+# The worker's reward proves only the recognition consequence of a supplied
+# work entry; it proves no delivered care, consent, quality, or authority.
 ? reward(Pico).
 # => FALSE
 
 # ── THE DOORS DO NOT ASK HOW OLD YOU ARE ─────────────────────────────────────
-# Cira is the design's own child — person without mature, the whole of the vote
-# chapter's example — and the grades ruling refused to let the record hold a
-# mark for what she was taught. Record a contribution instead and she is
-# recognised, which is the same principle read from the other side. The work
-# door is isolated here by construction: Cira has no other minting route.
+# Cira is a person without supplied GeneralAdulthood evidence. That absence
+# proves no outside age, but it does show that the recognition rule has no age
+# premise. Record a contribution and recognition derives. The work door is
+# isolated here by construction: Cira has no other minting route. The pin does
+# not prove that child-work safeguards, wages, or delivery operate.
 ? prevents(Cira, GeneralAdulthoodDenial).
 # => FALSE
 

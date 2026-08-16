@@ -9,28 +9,24 @@ economy of esteem: three doors, no others.
 
 Before going further, ask where raising a child fits, because most systems that
 acknowledge contribution manage to leave it out. It is not a fourth door and it does
-not need one — it walks through two of the three. A parent who teaches a child is a
-teacher; the record never asks what the relationship is, and it is worth noticing that
-this is a choice with a shape: the same design that forbids you to judge your own
-child permits you to teach them, because the closeness that corrupts an examination is
-much of what makes the teaching work. And the rest of care — the feeding, the tending,
-the staying up — is a piece of work, and nothing anywhere narrows what counts as work
-to what is salaried, or scheduled, or done for strangers. Tending a person is as
-recordable as taking a census. The honest limit is the same one this book states
-about everything: the entry has to be written. Care that nobody records earns
-nothing, so the claim here is that the doors are open to it — not that the society
-sees it.
+not need one — teaching remains teaching, and care can be recorded as work whether it
+was salaried, scheduled, or done for a relative. But the entry proves only that the
+named person performed recorded work. It does not prove that care reached somebody,
+that it was safe, that the recipient consented, or that the worker acquired authority
+over them. Caregiver and dependant remain separate rights-holders, and recognition is
+not a family invoice or a substitute for public care continuity. Unrecorded care earns
+no recognition here, so the narrow claim is that the door is open to care work — not
+that the society sees the work or supplies the care.
 
-And notice one more thing the doors do not ask: how old you are. The child this
-design refuses to grade — the record will not hold a mark for what she was taught —
-is recognised the moment she contributes. Record that she did a piece of work, or
-that she taught someone something, and she stands in the same single relation to this
-society as anyone who ever walked through either door. That is not an oversight
-sitting beside the refusal to grade her; it is the same principle read from the other
-side. Being taught is not a contribution, at any age. Contributing is, at any age.
-And the reason this needs no guard is the reason the whole chapter keeps giving:
-recognition here cannot pay, and what makes a child's work worth exploiting is the
-wage.
+And notice one more thing the recognition doors do not ask: how old you are. A
+recorded contribution can therefore produce the same single recognition fact for a
+child or an adult. That is not permission to exploit children. The constitutional
+boundary requires any child activity to be voluntary, safe, compatible with education,
+and protected by ordinary labour rights and wages; hazardous, coerced, exploitative,
+or floor-conditioned work is refused. The executable recognition rule does not build
+a workplace inspector, payroll, school accommodation, or remedy route, so it cannot
+show those protections arriving. Being taught or cared for is not a contribution by
+the recipient. Performing recorded work may be — within those independent limits.
 
 What arrives when you walk through one of them is worth being precise about, because
 it is not what most readers will assume.
@@ -194,8 +190,9 @@ that you gave.
 
 For a design whose whole purpose is to acknowledge what markets ignore — the
 caregiving, the unpaid, the invisible — that is a peculiar place to end up. The
-instrument built to make contribution visible can see that it happened and not how
-much of it there was.
+instrument built to make contribution visible can see that recorded work happened and
+not how much of it there was. Even that narrow visibility belongs to the worker: it
+does not prove care delivery, consent, quality, need, or authority over another person.
 
 And the refusal is not a limit of the machinery, which is the part that ought to
 trouble you. Degree is perfectly available here. Chapter 1 showed how: the severity

@@ -336,11 +336,14 @@ for p in owe become travel obliged lose reward building; do
   [ "$n" = "0" ] && pass "nothing reads $p" \
     || fail "$p is now read by a rule" "$(body "$p") — the prose saying nothing follows from it is now false"
 done
-# recognition carries no quantity anywhere
-if grep -vE '^\s*#' "$KB" | grep -qE '[0-9]'; then
-  fail "a digit appeared in an enacted line" "chapter 10 turns on there being no arithmetic"
+# Recognition carries no numeric quantity anywhere. Digits inside a typed
+# identifier such as T3LifeCourseNonborrowing or Book2LifeCourseBoundary name a
+# source contract; they are not numeric literals and must not trip this guard.
+numeric_literal_re='(^|[^[:alnum:]_])[0-9]+([^[:alnum:]_]|$)'
+if grep -vE '^\s*#' "$KB" | grep -qE "$numeric_literal_re"; then
+  fail "a numeric literal appeared in an enacted line" "chapter 10 turns on there being no arithmetic"
 else
-  pass "no arithmetic in the constitution"
+  pass "no numeric literals in the constitution"
 fi
 
 # ── 4c. INVARIANT 1: a floor right may be noticed, never acted on ────────────
