@@ -548,7 +548,7 @@ Gate B; it does not claim Book 2 operations or feasibility.
     system liveness, programme authorization, completed remedy, feasibility,
     reader response, or calibration.
 
-- [ ] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
+- [x] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
   - Implement one general legal-adulthood status at the uniform age later set by
     common-tier law. Acquisition is automatic and non-discretionary; registration
     is evidence, never its source; a later increase cannot revoke adulthood already
@@ -632,6 +632,35 @@ Gate B; it does not claim Book 2 operations or feasibility.
     assisted-dying safeguards, and succession. Also prove that missing kinship
     never certifies independence, family never worsens confinement, and recognition
     neither proves care nor creates compensation.
+
+  - **Completed:** 102 source-bound non-power effects landed in
+    `cf1989e28e2949a66f1affce7a419f4c69447355`; 124 registered formal
+    statements, 118 executable pins, and four single-deletion counterfactuals
+    landed in `f276fc02b8825d80142a7915fa194605629fc4d7`. Audited prose landed
+    separately in the opening note (`b5c37ddeff99b2bdadd3e85e02b9b3f1619d7a59`),
+    Chapters 1, 3, 5, 6, 8-11, 13, and 14
+    (`ca80833a67af3968a76353cdcfe5079531e16b4a`,
+    `22bb6f1ad9772b83e5a5b35f8eaff29ad478da3f`,
+    `623e473e39d747cb1cbc949309ed73db909dfcec`,
+    `263156d8dded023fdc69fe24b2be1d6b707dcce3`,
+    `3c33a9906999c9d5601bfe6398b1151594a75f43`,
+    `837eb20b0cdfcb9b408db0c1fe95655d42151c11`,
+    `b403a4fe731d852c568ff5f773ab135dbfb7a4ed`,
+    `69b535412fd2f0237b9136d3986f054f087ce17d`,
+    `fe0250dd03d15c9ce3a3d9d5ae33f727af6cc9c2`, and
+    `241604a09fb81efa2903863528f89deda2ecb357`), Part V
+    (`85a11e307d4e53d0fb90893594af062ed7c2b9be`), and method
+    (`094b855a859d598ee905453038a01306a1ae3750`), then reached
+    `prose-landed` in `84f99419d3e8d60430c79a65873ef4c7f2fc328c`.
+    The append-only repository audit froze candidate
+    `c04f8792dceba525f0886d4f65d243b045f01eb3`, and Gate A was mechanically
+    reclosed in `6b905a6f639adff2203a5394f6cf89003a7cf8c9`. The 210 powers,
+    T3 template, 19 refusals, eight dispositions, and 210 allocations remain
+    unchanged. This establishes only the versioned scope-map and
+    assurance-program claim, not an age value, service route, population fact,
+    operation, delivery, identity-system liveness, programme authorization,
+    institutional action, completed remedy, feasibility, reader response, or
+    calibration.
 
 - [ ] **Write the Bodies specification.**
   - Constitute the ratified People's Assembly, Regions Council, Executive Council
