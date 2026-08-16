@@ -432,7 +432,7 @@ Gate B; it does not claim Book 2 operations or feasibility.
     assurance-program claim, not operation, delivery, measurement, restoration,
     feasibility, liveness, reader response, or calibration.
 
-- [ ] **Establish substantive equality and anti-subordination across domains.**
+- [x] **Establish substantive equality and anti-subordination across domains.**
   - Implement the open protected-ground architecture and direct, indirect,
     systemic, multiple, intersectional, associative, accommodation, segregation,
     harassment, and retaliation forms. Actual, past, anticipated, perceived,
@@ -530,6 +530,23 @@ Gate B; it does not claim Book 2 operations or feasibility.
     engine handoff
     merely for statistics or credit it with population computation, identity
     authentication, or institutional action.
+  - **Completed:** 54 source-bound non-power effects landed in
+    `99b21f2c28afbb90192bdad9dc090bc0a03a0613`; 54 separately registered rules,
+    58 executable pins, and three single-deletion counterfactuals landed in
+    `f3a877fbfe51119d09075d4ce8f05fd4d91dfe75`. Audited prose landed separately
+    in the opening note (`c4f17b8161fc91b95f01717a5de3ae97a13ba4d`), Chapter 8
+    (`cc952649c268240da71fd21fbeecb5538a4cd54`), Part V
+    (`6bcf92aefbd042e56771e8b09f34349d5f2ae3d`), and method
+    (`f4cc06e89eec565f5aaacfaa3504819144c7a53`), then reached
+    `prose-landed` in `a6abdfcd374951becf14cd144a77f1b163fb9bc1`.
+    The append-only repository audit froze candidate
+    `80ebe822c709c14138ba4dc97c63ec61c45fd63e`, and Gate A was mechanically
+    reclosed in `6b173fc22099947d95862bacf2e6cc76e34d52b4`. The 210 powers,
+    T3 template, 19 refusals, eight dispositions, and 210 allocations remain
+    unchanged. This establishes only the versioned scope-map and
+    assurance-program claim, not population facts, operation, delivery, data-
+    system liveness, programme authorization, completed remedy, feasibility,
+    reader response, or calibration.
 
 - [ ] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
   - Implement one general legal-adulthood status at the uniform age later set by
