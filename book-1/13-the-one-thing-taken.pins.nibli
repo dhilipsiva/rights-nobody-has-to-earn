@@ -12,7 +12,8 @@
 #
 # One claim here is still an ABSENCE and cannot be queried: "there is no duration
 # in it anywhere, no term, no length, nothing that counts". `verify.sh` holds
-# that one — a digit in an enacted line fails the build.
+# that one — a standalone numeric literal in an enacted line fails the build;
+# digits inside typed source identifiers such as T3 are not quantities.
 #
 # The other: "Nothing depends on it" — travel appears in the constitution only as
 # a rule head. Test the rule BODIES, since a bare grep matches the head too:

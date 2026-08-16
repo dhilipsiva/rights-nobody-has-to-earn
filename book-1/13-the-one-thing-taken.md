@@ -13,9 +13,9 @@ Hano is a person. Hano is owed everything on the floor, in full, with no
 reduction. Hano speaks. Hano has the right to vote. Hano's credibility is intact —
 nobody has voided it, and conviction does not. Hano's recognition is untouched;
 nothing was clawed back,
-because clawback follows voiding and Hano was not voided. Hano is somewhere specific,
-because convicted people have to be somewhere, and where follows from three recorded
-facts rather than anyone's decision.
+because clawback follows voiding and Hano was not voided. Hano is somewhere specific:
+once custody derives, severity and the separate typed placement-home fact determine
+the current destination. Family status is not a placement input.
 
 And Hano cannot move freely.
 
@@ -60,26 +60,29 @@ someone not looking at the chain.
 
 Here the chain does not exist, and it does not exist because movement was never
 attached to anything. Nobody had to remember to protect Hano's housing from his
-conviction. There is no route by which the conviction could reach it. The
-single-deprivation claim is not a promise about how the punishment will be
-administered; it is a fact about the shape of the design, and it holds without anyone
-maintaining it.
+conviction. Parentage, caregiving, household membership, support, property, and
+decision authority are also separate legal relations: custody cannot terminate or
+transfer them by implication. Any restriction on contact or parenting needs its own
+individualized protective ground, authority, review, and end rule. The executable
+model does not implement those proceedings, but family status cannot be used as the
+missing bridge. The single-deprivation claim is about the shape of this source, not a
+promise about administration.
 
 ## What is not said
 
 Now what the design does not address, which is a great deal.
 
-It says movement is taken. It says nothing whatever about how. There is no rule about
-conditions, about what may be done to a person while confined, about who may enter
-where they are held or what they may do there. Chapter 8 noted that the floor blocks
-punishment for lacking something and does not touch compulsion; that gap is widest
-exactly here, in the place where a person is most reachable and least able to object.
+It says movement is taken. The newer constitutional coverage also states bodily,
+health, care, family-contact, and child-protection limits that remain in force during
+custody. Those limits bar custody from becoming a reproductive veto, a transfer of
+parentage, a family-status penalty, or authority over medical choices. They do not
+supply a clinic, contact process, advocate, inspection, accessible complaint route, or
+performed remedy.
 
-Confinement in this design is a fact with no texture. A person is confined. The design
-knows where — home, low security, high security, or, for some people, nowhere it has
-managed to say — and knows nothing else, and a society could satisfy every rule in this
-book while doing almost anything to the people held in those places, provided it never
-wrote the doing down as punishment for lacking a floor right.
+Confinement in the executable model therefore still has almost no texture. A person is
+confined. The model may name Homestay or HighSec, or derive housing without a named
+destination, and no rule describes the conditions inside. The constitutional walls
+make harms unlawful; this record does not show that anyone observes or stops them.
 
 The silence is more complete than "there is no rule about conditions" makes it sound,
 and it can be checked rather than taken on trust. The placement does nothing. Sending
@@ -87,18 +90,16 @@ somebody to high security produces a single sentence — that this person is in 
 security — and no rule anywhere reads it. The facilities are named in the rules that
 send people to them and nowhere else in the design at all.
 
-Watch it in the place you would most expect the building to matter. Several rules give a
-confined person shelter, and every one of them reads something about the person or about
-the offence: that they are eligible for home confinement and have a home, that the
-offence was severe, that the offender has a family, that they are eligible and have no
-home at all. Not one of them looks at where the person is. Somebody in high security has
-shelter because of what they did, and would have it just the same if the design had
-never said where they were.
+Watch it in the place you would most expect the building to matter. The shelter
+routes read custody, severity, Homestay eligibility, and the typed PlacementHome fact.
+Family does no work. Severe people derive housing through the HighSec route;
+non-severe people derive it with a Homestay destination when the typed fact is present
+and without a destination when it is absent. Not one rule reads the resulting building
+back into a condition, service, or remedy.
 
-There is one exception and it is the one that proves the shape. Home confinement is the
-only placement wired to anything — and it is the placement that is not a facility. The
-design has more to say about the people it does not lock up than about the people it
-does.
+Homestay availability is therefore a placement input, not evidence of civil residence
+or delivered care. HighSec is only a destination name. The design has decided where
+some people are placed while saying almost nothing about what either place does.
 
 That is not a small omission. It is the difference between a design that has thought
 about imprisonment and one that has thought about the decision to imprison.
