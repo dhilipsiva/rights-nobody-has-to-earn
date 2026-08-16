@@ -57,26 +57,27 @@ names — Sock and Puppet, since accuracy is more useful here than dignity. Writ
 that each of them holds the pen. Have them both examine the same innocent person and
 record the same finding.
 
-Every guard on the voiding rule passes. There are two of them, so it is not one
-person acting alone. Neither is the other's parent, spouse or sibling. Neither has
-been recalled. Neither was voided in an earlier period. Neither has been found to
-have lied. The rule
-looks at what it was built to look at, finds everything in order, and voids an
-innocent person who now loses their credibility and their recognition, on the word of
-two people who do not exist in any meaningful sense.
+The old guards all appeared to pass. There were two signers, neither recalled,
+previously voided, or found to have lied, and the record contained no parent, spouse,
+or sibling relation between them. But an absent kinship entry never proved
+independence; it proved only that the relation was absent from this supplied record.
 
-That hole is closed. The credential can now *only* be reached by the rule. Writing it
-down directly is not forbidden-and-punished; it is refused. The sentence does not
-enter the record. Sock and Puppet get nothing, and the multi-signature requirement
-means what it says for the first time.
+That hole is now closed in two places. The credential can only be reached by its rule.
+Writing it down directly is not forbidden-and-punished; it is refused, so Sock and
+Puppet get no pen. And even credentialed signers must each carry an affirmative,
+case-bound independent-reviewer finding for the person whose credibility they would
+destroy. A generic label, an empty kinship field, or independence in another matter
+does not substitute. The record still does not prove that the supplied finding is
+true or that a reviewer exists in practice.
 
 This is the same move as Chapter 1's, one level up. There, no one could write down a
 conclusion about a person. Here, no one can write down a power over them.
 
 The two-body requirement is a second layer over the same hole, and it is worth being
-exact about how much it adds, because the obvious reading gives it too much. Sock and
-Puppet now need to have been seated by two different bodies, so capturing one body is
-no longer enough. That is a real gain against a capturer with reach into one place.
+exact about how much it adds, because the obvious reading gives it too much. The
+signers need credentials from different bodies and separate case-bound independence
+findings, so capturing one issuing body or relying on missing relationship records is
+not enough. That is a real gain against a capturer with reach into one place.
 
 The attack is harder now for a second reason. Seating is still a fact somebody writes,
 but a forged seating no longer produces a pen without clear history reconciled across
