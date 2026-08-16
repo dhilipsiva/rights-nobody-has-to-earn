@@ -12,8 +12,8 @@ about.
 There are several now. The original reports concern a bad placement and a confined
 person with no company on record. Newer ones report a missing or invented carry between
 witnessed records, conflicting clear and void histories, an omitted personhood-status
-carry or protected entry, conflicting order, a disputed maturity record, and custody
-presented without current reviewed authority.
+carry or protected entry, conflicting order, missing or disputed typed adulthood
+evidence, and custody presented without current reviewed authority.
 
 The original reports are still worth examining closely, because together they
 demonstrate the promise of a self-auditing design and several ways it can fail. The newer reports
@@ -95,13 +95,21 @@ whatever feeds it.
 
 The new record and time reports take a narrower route. A missing carry, invented carry,
 conflicting clear and void histories, missing personhood-status carry, vanished
-protected entry, disputed maturity record, conflicting order, or unsupported custody
-can become an Appeals duty when a challenge fact for the affected person reaches
-the source. That gives the supplied finding a reader by name. It does not prove that
-a genuine filing was received: the fresh-process comparison shows that withholding
-the challenge fact can leave an otherwise valid custody lease unsuspended. The duty
-still gives the reader no consequence for silence and gives the person no automatic
-correction.
+protected entry, missing or disputed typed adulthood evidence, conflicting order, or
+unsupported custody can become an Appeals duty when a challenge fact for the affected
+person reaches the source. That gives the supplied finding a reader by name. It does
+not prove that a genuine filing was received: the fresh-process comparison shows that
+withholding the challenge fact can leave an otherwise valid custody lease unsuspended.
+The duty still gives the reader no consequence for silence and gives the person no
+automatic correction.
+
+The adulthood case needs its own boundary. General adulthood attaches automatically at
+the common age; a registry entry is evidence, not the source of status. Missing or
+disputed evidence therefore cannot lawfully prolong childhood, and an expiring right
+requires provisional adult treatment while evidence is reconciled. The executable
+challenge route does much less: it derives an Appeals duty from supplied facts. It
+does not determine an outside age, supply the missing evidence, deliver a ballot or
+other right, or make the review body act.
 
 “Vanished” is deliberately conservative here. The record has no way to represent a
 lawful retirement of a protected entry, so every missing required carry receives the
