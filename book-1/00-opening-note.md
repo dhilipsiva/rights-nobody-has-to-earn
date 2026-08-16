@@ -216,8 +216,10 @@ below.
   then keeps entitlement, delivery, and knowledge of delivery apart.
 
 - [Chapter 9: The Vote Conviction Does Not Take](09-the-vote-conviction-does-not-take.md)
-  — shows why conviction and voiding do not remove the franchise, while exposing
-  the writer-controlled adulthood entry on which it presently depends.
+  - shows why conviction and voiding do not remove the franchise, separates
+  automatic legal adulthood from its typed evidence, and exposes the remaining
+  supplied-record ballot dependency without treating a registry entry as the
+  source of adult status.
 
 - [Chapter 10: Contribution](10-contribution.md) — recognises teaching, work,
   and honest examination without turning recognition into a number, price, or
@@ -379,8 +381,9 @@ below.
 - **Don, Pax, Sly, Kel, and Rex:** the shield's false-target, review-window,
   deceit, and repeat-claim tests. See Chapter [4](04-the-shield.md).
 
-- **Esa:** a person whose teaching can count while a missing adulthood entry
-  still gates the vote. See Chapters [5](05-voiding.md),
+- **Esa:** a person whose teaching can count and whose missing typed
+  adulthood evidence exposes the difference between legal status and the
+  executable ballot record. See Chapters [5](05-voiding.md),
   [9](09-the-vote-conviction-does-not-take.md), and
   [10](10-contribution.md).
 
@@ -423,13 +426,28 @@ the domain.
 - **Personhood and life course:** Chapters
   [1](01-what-counts-as-evidence.md), [2](02-standing.md),
   [7](07-a-prisoner-is-a-person.md), and
-  [9](09-the-vote-conviction-does-not-take.md). Birth, ageing, supported agency,
-  and succession are not yet represented by complete derived routes.
+  [9](09-the-vote-conviction-does-not-take.md). The constitutional source now
+  gives children independent standing and voice; makes general adulthood
+  automatic under the later common-tier age while treating records as evidence
+  only; confines earlier authority to a named decision; preserves adult status
+  through dispute and later age changes; and protects agency, directives,
+  palliative choice, end-of-life decisions, and succession across the life
+  course. These are legal barriers and typed supplied-record consequences, not
+  proof of an age, a clock, a working registry, a proceeding, or delivery.
 
 - **Body, health, care, family, and intimacy:** Chapters
-  [8](08-what-you-are-owed.md), [10](10-contribution.md), and
-  [15](15-the-five-joints.md). They establish floor and contribution edges, not
-  a complete care, consent, family, or continuity system.
+  [5](05-voiding.md), [6](06-clawback.md),
+  [8](08-what-you-are-owed.md), [10](10-contribution.md),
+  [11](11-where-people-are-put.md), and
+  [15](15-the-five-joints.md). The constitutional source now separates family,
+  parentage, caregiving, household, support, property, and decision-agent roles;
+  protects consent, exit, child continuity, supported agency, bodily and
+  reproductive authority, origin records, community living, treatment refusal,
+  advance directives, palliative care, and bounded succession; and forbids
+  kinship from proving independence, care, capacity, authority, or worse
+  confinement. Public care continuity and remedies are constitutional duties,
+  but no service, clinic, advocate, court, record system, staffing plan,
+  completed remedy, feasibility, or liveness follows from those rules.
 
 - **Learning, knowledge, media, science, religion, and culture:** Chapters
   [7](07-a-prisoner-is-a-person.md), [8](08-what-you-are-owed.md), and
