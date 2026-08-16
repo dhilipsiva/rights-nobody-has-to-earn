@@ -115,23 +115,25 @@ person's word worthless:
 
 ```
 all $a: all $b: all $audited: permits(Review, $a) &
-permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) &
-~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) &
-~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) &
-~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) &
-~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid)
+permits(Tribunal, $b) &
+authorized($a, IndependentReviewer, $audited) &
+authorized($b, IndependentReviewer, $audited) &
+judge($a, $audited) & capture($a, $audited) &
+~deceive($a, $audited) & judge($b, $audited) &
+capture($b, $audited) & ~deceive($b, $audited) &
+~($a = $b) & ~broken($a) & ~broken($b) &
+~match($a, CarriedVoid) & ~match($b, CarriedVoid)
 -> false($audited).
 ```
 
-It is long because it counts signers, not signatures: two people, each
-credentialed by a different body, each having examined and documented the
-person themselves, neither lying about them, and — the conjunct chapter 5
-turns on — not the same person twice, not each other's parent, spouse or
-sibling, neither broken nor bearing an effective carried void. Some of those guards have nothing to catch
-in the shipped record; they are kept armed for the day an assumption stops
-holding, and the sabotage fixtures described in the checks section of this
-part are what prove, rather than assert, that they still decide nothing
-today.
+It is long because it counts qualified, case-bound reviewers, not signatures:
+two distinct people, each credentialed by a different body, each affirmatively
+authorized as an independent reviewer for this audited person, each having
+examined and documented the person, and neither lying, broken, or bearing an
+effective carried void. Missing parent, marriage, or sibling entries prove
+nothing about independence. The authorization facts are live in the shipped
+record, and a source-removal counterfactual proves that restoring the old
+absence-based route changes the result.
 
 Two shorter blocks do more work than everything above. The first closes what
 may be *written*:
@@ -472,22 +474,28 @@ Placement has its own audit because a walk through named people cannot prove
 that every case in the current routing table was visited. Its reviewed source is
 `new-book-plans/placement-exhaustiveness-audit.json`; the script
 `new-book-plans/11-placement-exhaustiveness.py` generates the full product of
-severity, family and home status, constructs each confined case from ordinary
-writable premises, and asks separately about eligibility, housing and every
-known destination. It mirrors the same cases twice without confinement: once
-with affirmative freedom and once with personhood alone. In both, the shelter
-debt and entitlement remain while housing and destinations do not appear.
+subject state, severity, legacy family-entry presence, and typed
+PlacementHome availability. Family is an intentionally inert regression axis:
+its two states must produce identical outcomes when the other inputs match.
+Severity selects HighSec. A non-severe confined person is Homestay-eligible,
+and the typed home record determines whether Homestay is an actual destination
+or housing derives without a fabricated location. The audit asks separately
+about eligibility, housing, and every known destination. It mirrors the same
+cases twice without confinement: once with affirmative freedom and once with
+personhood alone. In both, the shelter debt and entitlement remain while
+housing and destinations do not appear.
 
 The source manifest is part of that contract. A new producer or destination
 cannot hide outside a fixed query list. Temporary mutations add an overlapping
 route, delete the historical housing repair, remove a required destination,
-reverse a route, and paint housing onto every registered person. Each harmful
-copy must be caught by the ordinary expectations before the audit is trusted.
-Each alarm-silence probe supplies and confirms a placement report first, so a
-missing report cannot make the result green by accident. The result is
-exhaustive for the current declared subject states, axes and source. It is not
-a runtime exclusivity rule, evidence that a reported placement happened, a
-placement appeal or remedy, or delivery of housing to a free person.
+reverse a route, make family consequential, and paint housing onto every
+registered person. Each harmful copy must be caught by ordinary expectations
+before the audit is trusted. Each alarm-silence probe supplies and confirms a
+placement report first, so a missing report cannot make the result green by
+accident. The result is exhaustive for the current declared subject states,
+axes, and source. It is not a runtime exclusivity rule, evidence that a reported
+placement happened, a placement appeal or remedy, or delivery of housing to a
+free person.
 
 A second registry guards when new rule families may be written. Each authored
 formal statement has one stable engine fingerprint and belongs to exactly one
@@ -541,6 +549,26 @@ population disparity, an operating data system, an authorised measure, an
 accessible route, institutional action, or completed repair. The family adds no
 power allocation and neither changes nor borrows the T3 temporal path.
 
+The bodily-autonomy, health, care, family, and life-course family is the
+next completed non-power family. Its registry holds one hundred and two
+source-bound effects and one hundred and twenty-four exact formal-statement
+fingerprints. The executable suite checks one hundred and eighteen pins. Four
+source-removal counterfactuals isolate automatic adulthood, the family-status
+confinement wall, affirmative reviewer independence, and pregnancy authority.
+
+The migration retired mature as a legal-status proxy, made GeneralAdulthood
+evidence typed and non-constitutive, made legacy family facts inert in
+placement, split civil home from PlacementHome availability, and replaced
+missing kinship with affirmative case-bound reviewer authorization. The wider
+effects cover children's independent rights, modular family recognition,
+parentage and origin, public-first care, domestic protection and separation,
+supported agency, reproduction, ageing, treatment, end of life, death, and
+succession. Each is a constitutional barrier over supplied premises. The family
+adds no power allocation, preserves all two hundred and ten power cards and the
+separate T3 template, and forbids borrowing T3's custody record for a
+life-course power. Its green suite establishes no age value, service route,
+institution, operation, delivery, liveness, or completed remedy.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the
@@ -558,13 +586,15 @@ deletions, replacements and additions for the narrower question of whether a
 declared target matches an effect.
 
 The record red-team adds a second and narrower class. Its ephemeral copies
-delete named ground entries — adulthood, a directly supplied person fact, raw
-void marks and the two parts of forgiveness — and execute the remaining single-record
-consequences. It also proves that a raw void mark alone is now inert. Transition,
-carry, order, and renewal belong to the staged temporal assurance case described
-next. The red-team tests prove what follows from the supplied records. They do
-not show that a live deletion occurred, identify who withheld or removed
-anything, or recover the missing entry.
+delete named ground entries — typed adulthood evidence, a directly supplied
+person fact, raw void marks, and the two parts of forgiveness — and execute the
+remaining single-record consequences. It also proves that a raw void mark alone
+is now inert. The adulthood cases demonstrate an evidence-bound ballot
+conclusion; they neither constitute adulthood nor observe an outside clock.
+Transition, carry, order, and renewal belong to the staged temporal assurance
+case described next. The red-team tests prove what follows from supplied
+records. They do not show that a live deletion occurred, identify who withheld
+or removed anything, or recover the missing entry.
 
 The temporal assurance case adds the transitions that one-file chapter pins
 cannot supply. Its reviewed JSON binds the exact constitutional source and
@@ -617,8 +647,9 @@ Source counterfactuals exist for a few rule and fact changes — a seat, a
 court's standing. The amendment audit executes a bounded set of candidate
 source edits, and the record red-team names a few more ground-entry deletions.
 The placement audit is one bounded exception to accidental coverage: across
-its declared subject states and severity, family and home axes it generates the
-whole outcome table and rejects missing, conflicting and reversed routes. None
+its declared subject states, severity, inert family axis, and typed
+PlacementHome axis it generates the whole outcome table and rejects missing,
+conflicting, reversed, family-sensitive, and painted-delivery routes. None
 of those is a complete census of semantic effects. Deleting the evidence behind a named
 person's severity, or the line that makes the duty-bearer answerable, still
 depends on whatever other check happens to read it. Those changes may turn a
