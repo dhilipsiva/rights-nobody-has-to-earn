@@ -117,3 +117,14 @@ by deleting, respectively:
 - `all $x: person($x) -> prevents($x, DirectDiscrimination).`
 - `all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).`
 - `all $x: person($x) -> prevents($x, ExpiredPositiveMeasureContinuation).`
+
+## Family and life-course fixtures
+
+The family and life-course suite adds four one-line deletion fixtures:
+
+- `no-automatic-adulthood` removes the automatic general-adulthood protection while retaining the ballot control;
+- `no-family-confinement-wall` removes only the explicit family-status placement wall;
+- `no-missing-kinship-independence` removes only the affirmative-independence boundary; and
+- `no-pregnancy-authority` removes only pregnancy continuation and termination authority while retaining the fetal-override refusal.
+
+They are regenerated from `constitution.nibli` after every constitutional edit exactly like the equality deletion fixtures.

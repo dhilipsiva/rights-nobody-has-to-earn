@@ -79,7 +79,7 @@ admits("cite").       admits("clear").      admits("cruel").
 admits("deceive").    admits("family").     admits("forgive").
 admits("free").       admits("hears").      admits("home").
 admits("injure").     admits("judge").      admits("married").
-admits("mature").     admits("parent").     admits("permanent").
+admits("parent").     admits("permanent").
 admits("person").     admits("public").     admits("put").
 admits("rotten").     admits("show").       admits("sibling").
 admits("suggest").    admits("teaches").    admits("work").
@@ -579,6 +579,119 @@ all $x: person($x) -> prevents($x, StatusOnlyVoiding).
 all $x: person($x) -> prevents($x, RecognitionOperation).
 all $x: person($x) -> prevents($x, QualificationStatusBarrier).
 # <SUBSTANTIVE-EQUALITY-RULES-END>
+# <FAMILY-LIFE-COURSE-RULES-BEGIN>
+# [v1.4] One direct normative barrier per source-bound constitutional effect.
+# These rules read supplied personhood only. They create no service, capacity
+# finding, family status, clinical result, institution, delivery, or operation.
+all $x: person($x) -> prevents($x, ChildIndependentRights).
+all $x: person($x) -> prevents($x, ChildAccessibleInformationHelp).
+all $x: person($x) -> prevents($x, ChildVoiceNoAgeFloor).
+all $x: person($x) -> prevents($x, ChildViewWeightReasons).
+all $x: person($x) -> prevents($x, ChildBestInterestsRecord).
+all $x: person($x) -> prevents($x, ChildIndividualAssessment).
+all $x: person($x) -> prevents($x, ChildFiduciaryAuthorityLimit).
+all $x: person($x) -> prevents($x, UniformGeneralAdulthood).
+all $x: person($x) -> prevents($x, AutomaticAdulthoodAcquisition).
+all $x: person($x) -> prevents($x, AdulthoodRecordEvidenceOnly).
+all $x: person($x) -> prevents($x, AdulthoodAlternativeEvidence).
+all $x: person($x) -> prevents($x, EstablishedAdultContinuity).
+all $x: person($x) -> prevents($x, AdulthoodNonretrogression).
+all $x: person($x) -> prevents($x, ProvisionalAdultExpiringOpportunity).
+all $x: person($x) -> prevents($x, EarlyAuthorityDecisionSpecific).
+all $x: person($x) -> prevents($x, EarlyAuthorityPoliticalBoundary).
+all $x: person($x) -> prevents($x, FamilyFormEqualRespect).
+all $x: person($x) -> prevents($x, FamilyModuleSeparation).
+all $x: person($x) -> prevents($x, FamilyModuleEntryConsent).
+all $x: person($x) -> prevents($x, FamilyObligationDisclosure).
+all $x: person($x) -> prevents($x, FamilyExitWindingUp).
+all $x: person($x) -> prevents($x, FamilyPrivateWaiverLimit).
+all $x: person($x) -> prevents($x, MarriageNoConstitutionalPriority).
+all $x: person($x) -> prevents($x, CivilFamilyPublicControl).
+all $x: person($x) -> prevents($x, ParentageResponsibility).
+all $x: person($x) -> prevents($x, ParentageSourcePlurality).
+all $x: person($x) -> prevents($x, PluralParentage).
+all $x: person($x) -> prevents($x, ParentageDutyAllocationContinuity).
+all $x: person($x) -> prevents($x, AdoptionConsentVoice).
+all $x: person($x) -> prevents($x, ParentageAntiSaleStatusGap).
+all $x: person($x) -> prevents($x, OriginRecordIntegrityAccess).
+all $x: person($x) -> prevents($x, OriginAccessNoContactEffect).
+all $x: person($x) -> prevents($x, CustodyParentageContinuity).
+all $x: person($x) -> prevents($x, PublicFirstCareContinuity).
+all $x: person($x) -> prevents($x, AssumedCareDutyBounds).
+all $x: person($x) -> prevents($x, KinshipNoPersonalCareDebt).
+all $x: person($x) -> prevents($x, DependantIndependentRights).
+all $x: person($x) -> prevents($x, CaregiverIndependentRights).
+all $x: person($x) -> prevents($x, CaregiverSafeRelinquishment).
+all $x: person($x) -> prevents($x, CareWorkActualFunction).
+all $x: person($x) -> prevents($x, CareStatusNondelivery).
+all $x: person($x) -> prevents($x, HouseholdNonprescription).
+all $x: person($x) -> prevents($x, StatusNoHarmPresumption).
+all $x: person($x) -> prevents($x, DomesticProtectionEvidenceTrigger).
+all $x: person($x) -> prevents($x, ConfidentialHelpNoOffenceProof).
+all $x: person($x) -> prevents($x, TargetedProtectiveAction).
+all $x: person($x) -> prevents($x, DomesticEmergencyTemporalLimit).
+all $x: person($x) -> prevents($x, ChildSeparationLastResort).
+all $x: person($x) -> prevents($x, SupportBeforeRemoval).
+all $x: person($x) -> prevents($x, SeparationReviewReunification).
+all $x: person($x) -> prevents($x, ChildActivityLabourSafety).
+all $x: person($x) -> prevents($x, AdultLegalCapacity).
+all $x: person($x) -> prevents($x, PlenaryGuardianshipRefusal).
+all $x: person($x) -> prevents($x, ChosenSupportControl).
+all $x: person($x) -> prevents($x, SupportNotSubstitution).
+all $x: person($x) -> prevents($x, SupportRefusalContinuity).
+all $x: person($x) -> prevents($x, BoundedBestInterpretation).
+all $x: person($x) -> prevents($x, EmergencyAgencyNoncarry).
+all $x: person($x) -> prevents($x, AgencyRecordScopeRevocation).
+all $x: person($x) -> prevents($x, ReproductiveServiceAccess).
+all $x: person($x) -> prevents($x, ReproductiveFreeInformedChoice).
+all $x: person($x) -> prevents($x, ReproductiveCoercionProhibition).
+all $x: person($x) -> prevents($x, ThirdPartyReproductiveVetoRefusal).
+all $x: person($x) -> prevents($x, PregnancyContinuationTerminationAuthority).
+all $x: person($x) -> prevents($x, FetalOverrideRefusal).
+all $x: person($x) -> prevents($x, PregnancyOutcomeNonpunishment).
+all $x: person($x) -> prevents($x, ConfidentialChildHealthRoute).
+all $x: person($x) -> prevents($x, ConscientiousRefusalContinuity).
+all $x: person($x) -> prevents($x, AssistedReproductionConsent).
+all $x: person($x) -> prevents($x, GestationalBodyControlRefusal).
+all $x: person($x) -> prevents($x, GestationalAntiExploitation).
+all $x: person($x) -> prevents($x, ParentageAtBirthContinuity).
+all $x: person($x) -> prevents($x, AgeingRightsContinuity).
+all $x: person($x) -> prevents($x, CommunityLivingSupport).
+all $x: person($x) -> prevents($x, PlacementConsentNarrowAuthority).
+all $x: person($x) -> prevents($x, CurrentTreatmentDecision).
+all $x: person($x) -> prevents($x, TreatmentRefusalLifeSustaining).
+all $x: person($x) -> prevents($x, TreatmentAuthorityOrder).
+all $x: person($x) -> prevents($x, TreatmentDisputeReviewContinuity).
+all $x: person($x) -> prevents($x, AssistedDyingDemocraticBoundary).
+all $x: person($x) -> prevents($x, AssistedDyingSafeguards).
+all $x: person($x) -> prevents($x, AssistedDyingRepresentativeRefusal).
+all $x: person($x) -> prevents($x, AssistedDyingFreshTemporal).
+all $x: person($x) -> prevents($x, DeathExternalFinding).
+all $x: person($x) -> prevents($x, RemainsDirectionsBoundary).
+all $x: person($x) -> prevents($x, WillLedSuccession).
+all $x: person($x) -> prevents($x, NoninheritabilityPublicStatus).
+all $x: person($x) -> prevents($x, FunctionalIntestacy).
+all $x: person($x) -> prevents($x, PluralChildSuccessionEquality).
+all $x: person($x) -> prevents($x, CollectiveTitleSuccessionLimit).
+all $x: person($x) -> prevents($x, SuccessionFloorHousingContinuity).
+all $x: person($x) -> prevents($x, BeneficiaryCareConflict).
+all $x: person($x) -> prevents($x, FamilyCommonMinimum).
+all $x: person($x) -> prevents($x, FamilyFunctionSeparation).
+all $x: person($x) -> prevents($x, FamilyRemedySet).
+all $x: person($x) -> prevents($x, FamilyRemedyNonharm).
+all $x: person($x) -> prevents($x, MissingKinshipNoIndependence).
+all $x: person($x) -> prevents($x, FamilyStatusNoConfinement).
+all $x: person($x) -> prevents($x, LegacyStatusNonproof).
+all $x: person($x) -> prevents($x, HomeConceptSeparation).
+all $x: person($x) -> prevents($x, T3LifeCourseNonborrowing).
+all $x: person($x) -> prevents($x, Book2LifeCourseBoundary).
+# Legacy family and protected-home facts can only reinforce the already
+# universal anti-substitution barriers; neither relation routes placement.
+all $x: person($x) & family($x) -> prevents($x, FamilyStatusSubstitution).
+all $x: person($x) & home($x) -> prevents($x, HomeStatusSubstitution).
+all $x: all $y: person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution).
+all $x: all $y: person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution).
+# <FAMILY-LIFE-COURSE-RULES-END>
 # [v0.4 NEW] A released person is still a person. This line is not optional and
 # it is not symmetry for its own sake: `prisoner -> person` above is the ONLY
 # non-assertion route into the roster, so without this, ending a sentence ends
@@ -723,10 +836,13 @@ all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).
 # it: decide(Hano, Ballot) TRUE while travel(Hano) FALSE — a convicted
 # person who retains the franchise and cannot move. And it is falsifiable:
 # slip ~prisoner into this body and the pin below flips where any reader can see it.
-# `mature` guard because no polity has ever had a franchise unconditional
-# from birth; two-place `decide(_, Ballot)` because bare `decide` means
-# deciding anything and prose could not be written honestly against it.
-all $x: person($x) & mature($x) -> decide($x, Ballot).
+# General adulthood is a derived status, never an asserted maturity label.
+# `at(_, GeneralAdulthood)` is bounded supplied age evidence; the common-tier source
+# makes acquisition automatic. A separate early-authority fact is confined to
+# its named decision and expressly cannot manufacture the ballot.
+all $x: person($x) & at($x, GeneralAdulthood) -> prevents($x, GeneralAdulthoodDenial).
+all $x: person($x) & at($x, GeneralAdulthood) -> decide($x, Ballot).
+all $x: all $decision: person($x) & authorized($x, EarlyDecision, $decision) & ~($decision = Ballot) -> decide($x, $decision).
 
 # ─── Article 3: Minting at contribution ───────────────────── [v0.1]
 all $teacher: all $student: teaches($teacher, $student) & ~false($teacher) -> reward($teacher).
@@ -767,7 +883,7 @@ all $contributor: all $task: work($contributor, $task) & ~false($contributor) ->
 # ~($a = $b) is kept even though the bodies now differ. Nothing stops one
 # person holding both pens, and if that ever becomes possible this conjunct is
 # the only thing between it and self-cosigning.
-all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~parent($a, $b) & ~parent($b, $a) & ~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) -> false($audited).
+all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & authorized($a, IndependentReviewer, $audited) & authorized($b, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) -> false($audited).
 all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 # [v0.9 2026-08-02] ~false($auditor) added: the THIRD DOOR closes on voiding.
 # Chapter 10 said all three recognition doors shut for a voided person; the
@@ -941,16 +1057,17 @@ all $offender: all $victim: all $case: all $renewal: injure($offender, $victim) 
 all $x: all $v: attack($x,$v) & cruel($x,$v) -> severe($x).
 all $x: all $v: all $w: attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
 all $x: all $v: all $w: cruel($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x).
-# [v0.2 REPLACES  prisoner & home & ~family -> dwell]
-# home confinement now requires DERIVED eligibility, not a raw home flag.
-all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay).
-all $x: prisoner($x) & home($x) & fit($x, Homestay) -> dwell($x).
+# [v1.4 REPLACES family/home placement proxies] Family status is not a
+# placement input. Eligibility reads severity; an actual Homestay destination
+# additionally requires the separate placement-home-availability record.
+all $x: prisoner($x) & ~severe($x) -> fit($x, Homestay).
+all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> dwell($x).
 # [v0.9 2026-08-02] THE WHERE GETS ITS OWN ATOM. Until this rule, dwell
 # was the only record that a home-confined person's placement existed,
 # which left one atom carrying "housed" and "at Homestay" at once — and
 # dwell(Lalo) reading as "housed at HighSec" is the two-jobs collapse a
 # hostile reviewer finds in an afternoon. Placement now folds into
-# building, the file's own idiom for the where (HighSec, LowSec): a
+# building, the file's own idiom for the where (HighSec, Homestay): a
 # home-confined person derives building(Homestay, ·) beside dwell, and
 # dwell everywhere means one thing — housed, the floor actuality.
 # Constants are free; this costs no vocabulary. The v0.8 default-housing
@@ -959,9 +1076,9 @@ all $x: prisoner($x) & home($x) & fit($x, Homestay) -> dwell($x).
 # anywhere else, and inventing an "Assigned" constant would fabricate
 # the missing where — chapter 13's sting is that there is nothing to
 # write there.
-all $x: prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x).
-# [v0.2 NEW] severity routing is no longer domestic-only (closes E3).
-all $x: prisoner($x) & severe($x) & ~family($x) -> building(HighSec, $x).
+all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> building(Homestay, $x).
+# [v1.4] Severity routing is independent of family or household status.
+all $x: prisoner($x) & severe($x) -> building(HighSec, $x).
 all $x: prisoner($x) & severe($x) -> dwell($x).
 # [v0.9 2026-08-02 REPLACES  home & ~fit -> err] THE ALARM IS REPAIRED.
 # The v0.2 rule tested HAVING a home, not having been PUT at one, and
@@ -989,12 +1106,8 @@ all $a: all $x: put($a, $x, Homestay) & ~fit($x, Homestay) -> err($x, Placement)
 # isolation queryable, which is the other half. Reuses the err idiom so
 # the audit surface stays one predicate:  ? err(?, Isolation).
 all $p: prisoner($p) & ~meets($p) -> err($p, Isolation).
-# [v0.1] domestic dwell + facility routing unchanged.
-all $offender: prisoner($offender) & family($offender) -> dwell($offender).
-all $offender: prisoner($offender) & family($offender) & severe($offender) -> building(HighSec, $offender).
-all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender).
-# [v0.8 NEW] CONFINEMENT HOUSES YOU. The combination not severe / no family /
-# no home derived NOTHING: eligible for home confinement with no home to be
+# [v1.4] CONFINEMENT HOUSES YOU. A non-severe person without a recorded
+# placement-home destination still derives dwell, but no destination is fabricated: eligible for home confinement with no home to be
 # confined in, and neither facility rule reaching them. Adam and Kel stood in
 # it. This is CONSISTENCY, not new policy — the two rules above already hold
 # that the state houses whom it confines; this is the case they missed.
@@ -1011,7 +1124,7 @@ all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> b
 # nothing delivered it. This closes a placement gap. The delivery gap is
 # exactly as wide as it was, and the fact that conviction is what finally
 # produces the roof is the whole of chapter 13's sting.
-all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x).
+all $x: prisoner($x) & fit($x, Homestay) & ~at($x, PlacementHome) -> dwell($x).
 
 # ─── Article 7: Defenses against Systemic Capture ─────────────────
 # [v0.9 STRATIFICATION LANDMINE, documented at last] The most natural
@@ -1439,9 +1552,9 @@ permanent(Art_Entrench).
 # before it was deleted, so no hand list appears here. What the levers
 # do was measured, most recently 2026-08-02, each a probe on top of
 # this exact file:
-#   mature(X).            one write grants the franchise — its asserted
-#                         gate is an asserted, undefined word that no
-#                         rule produces (chapter 9's pair).
+#   at(X, GeneralAdulthood). one supplied typed age-evidence write grants
+#                         the ballot conclusion; it neither constitutes
+#                         adulthood nor proves an outside clock.
 #   public(Pax).          re-derives authority(Pax) and reopens E1a
 #                         verbatim: defend(Don) TRUE, prisoner(Don)
 #                         FALSE — the framed victim becomes an
@@ -1907,6 +2020,8 @@ judge(Gia, Bela).
 capture(Gia, Bela).
 judge(Hex, Bela).
 capture(Hex, Bela).
+authorized(Gia, IndependentReviewer, Bela).
+authorized(Hex, IndependentReviewer, Bela).
 # [v0.9] The examinations' recorded grounds — one complaint, two examiners.
 cite(Gia, Complaint, Bela).
 cite(Hex, Complaint, Bela).
@@ -1919,6 +2034,7 @@ person(Ivo).
 injure(Hano, Ivo).
 judge(Court, Hano).
 home(Hano).
+at(Hano, PlacementHome).
 # [v0.5] Hano carries EXACTLY ONE dimension, and that is the point of the
 # fact. With no dimension at all `? severe(Hano). => FALSE` passes because
 # there is nothing to test; with one, it is the only pin in the suite that
@@ -1947,6 +2063,7 @@ person(Mina).
 injure(Lalo, Mina).
 judge(Court, Lalo).
 home(Lalo).
+at(Lalo, PlacementHome).
 family(Lalo).
 # [v0.5] Lalo's severity was asserted; it is now reached by the first route,
 # intent and kind of harm on the same act.
@@ -1957,14 +2074,12 @@ person(Opal).
 injure(Nando, Opal).
 judge(Court, Nando).
 family(Nando).
-# [v0.3 NEW] Majority, for the Art 2 franchise rule. Note what the
-# absence of a mature fact does and does not mean: a child simply does
-# not yet derive the franchise. Nothing is taken from them — every Article 1
-# obligation is owed to them in full, and no rule anywhere reads ~mature.
-mature(Hano).
-mature(Jala).
-mature(Bela).
-mature(Adam).
+# [v1.4] Supplied age evidence reaches the common adulthood tier. These facts
+# do not constitute adulthood by themselves; the rules above attach the status protection and franchise automatically.
+at(Hano, GeneralAdulthood).
+at(Jala, GeneralAdulthood).
+at(Bela, GeneralAdulthood).
+at(Adam, GeneralAdulthood).
 
 # ─── Adversarial scenario: capture attempt ───── [v0.1, one swap]
 person(Boss).
@@ -2069,6 +2184,7 @@ judge(Court, Ruk).
 attack(Ruk, Opal).
 injure(Ruk, Pax).
 home(Ruk).
+at(Ruk, PlacementHome).
 # Amendment labels — the proposals declaring the floor and register targets
 # do not derive become regardless of tally; the ordinary label verdict does.
 # No line here says what source effect any proposal would have.
@@ -2131,8 +2247,9 @@ approves(Electorate, Amend_Meta).
 #                  means deciding anything. `vote` is not in the committed
 #                  corpus and `choose` is taken by Art 8 seating — and reusing it on
 #                  the floor un-stratifies Art 8 (see the Art 1 invariant).
-# mature(X)      — asserted majority. Guards the franchise only. No rule
-#                  anywhere reads ~mature, so it can gate nothing else.
+# at(X, GeneralAdulthood) - supplied typed adulthood evidence. It supports
+#                  the ballot consequence and anti-denial wall only; it
+#                  neither constitutes adulthood nor proves outside age.
 # err(X, Isolation) — derived isolation breach: a prisoner with no
 #                  company fact.
 # Verbatim-preserved v0.1 vocabulary: see utopia.nibli appendix.

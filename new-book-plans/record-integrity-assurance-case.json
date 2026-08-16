@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "d872b015db94f5d7bc9ececd8bc5b29511544ca5c27e3b6096fbc935a3c19ce7",
+  "assertion_surface_contracts_sha256": "ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -531,7 +531,7 @@
           "kind": "generated",
           "role": "exposes_gap",
           "supports": "RI-13",
-          "ref": "new-book-plans/assertion-surface-audit.md::withhold a true `married(Gia, Hex)` entry."
+          "ref": "new-book-plans/assertion-surface-audit.md::withhold or delete a true `married(Gia, Hex)` entry."
         },
         {
           "kind": "generated",
@@ -620,7 +620,7 @@
     {
       "id": "RC-4",
       "title": "Private relationship and location records",
-      "description": "Family, home, parent, marriage, and sibling facts used for placement, conflict, and independence decisions while carrying acute privacy risk.",
+      "description": "Legacy family, protected-home, parent, marriage, and sibling records: family, home, marriage, and sibling feed only anti-substitution barriers; parent remains relevant only to the affirmative judge-child conflict.",
       "assurance_claims": [
         "RI-1",
         "RI-2",
@@ -636,7 +636,7 @@
         "RI-12",
         "RI-13"
       ],
-      "failure_posture": "Private facts are purpose-limited and challengeable; absence cannot certify independence or justify harsher placement without a safe review and continuity route."
+      "failure_posture": "Private facts are purpose-limited and challengeable; absence cannot certify independence, duty, care, authority, or placement. Reviewer independence requires separate affirmative case-bound authorised records."
     },
     {
       "id": "RC-5",
@@ -709,7 +709,6 @@
     "limit": "RC-6",
     "list": "RC-6",
     "married": "RC-4",
-    "mature": "RC-2",
     "observe": "RC-6",
     "parent": "RC-4",
     "passport": "RC-6",

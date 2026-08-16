@@ -70,11 +70,11 @@
 ? family(Nando).
 # => TRUE
 ? fit(Nando, Homestay).
-# => FALSE
+# => TRUE
 ? severe(Nando).
 # => FALSE
 ? building(LowSec, Nando).
-# => TRUE
+# => FALSE
 
 # Lalo — domestic AND severe: high security. Severity by the other road,
 # intent and cruelty on a single act. The family fact is what makes the case

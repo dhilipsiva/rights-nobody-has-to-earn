@@ -5,18 +5,17 @@
   "status": "bounded_current_source_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a",
+  "constitution_sha256": "090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd",
   "producer_fingerprints": {
-    "fit": "2115988fbe170c123b6969089bb464c22c8c448e28345ff3fe4903c5c85728a8",
-    "dwell": "a2a9a600756c3a679932bdc73d52664934142eb2ce780283a775ecb164db3140",
-    "building": "51d36824d819d5b4867fe9024992a0998b72dbdf38f973ed81222ee53949cdf1"
+    "fit": "5b4d4ee65e23ad7f6f4991bd99303478e1d0ad42c564a103b743d8d9a704a8ac",
+    "dwell": "349561e2e1524f637e59e8e9e020a3600c7e30ab2562df01ba106f69c8f611ce",
+    "building": "84c20af1469913c3868b25673f51989c30ddf58dae9292899cba94b8d320c080"
   },
   "destination_constants": [
     "HighSec",
-    "Homestay",
-    "LowSec"
+    "Homestay"
   ],
-  "destination_constants_sha256": "95051f6b6ea7ebc732a2effa083868b2924dd20efd2509d5cacffbcbf0c530c4",
+  "destination_constants_sha256": "72722479faa871b12184b5d32d5ee834a3d141318a1c653e3b3483cbb19416e0",
   "subject_contract": {
     "states": [
       "confined",
@@ -51,18 +50,18 @@
     },
     "semantics": {
       "severe": "Derived severity is constructed with an attack and cruelty concerning the same subject and victim. Not-derived severity omits those entries; it is not an affirmative finding of non-severity.",
-      "family": "Present means a family entry is supplied. Absent means no family entry is supplied in this bounded fixture; it does not establish that no family exists.",
-      "home": "Present means a home entry is supplied. Absent means no home entry is supplied in this bounded fixture; it does not establish homelessness outside the supplied record."
+      "family": "Present means a legacy family entry is supplied and absent means none is supplied in this bounded fixture. The axis is deliberately inert: neither state may alter eligibility, housing, destination, or remedy.",
+      "home": "Present means the distinct at(subject, PlacementHome) availability record is supplied. It is not civil residence, household membership, protected home life, ownership, or proof of housing delivery."
     }
   },
   "limits": {
     "bounded_absence_meaning": "The negative axis states and FALSE query results mean not derivable from the supplied bounded fixture. They do not prove a classical negative fact, record completeness, or the truth of any asserted positive entry.",
     "current_source": "The matrix binds the exact current constitution, every discovered fit/dwell/building producer, and every literal building destination. It is not a proof about a changed source until the reviewed manifest and expectations are updated.",
     "runtime": "The repository rejects current-source outcomes that conflict with the reviewed matrix, but the constitution has no general exclusivity, completeness, or opposite-destination reader. A deployed harmful rule can therefore leave err(_, Placement) false.",
-    "records_and_remedy": "The audit constructs facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family or home record; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.",
+    "records_and_remedy": "The audit constructs bounded facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family record, civil home, or placement-home availability; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.",
     "housing_delivery": "Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. Every exact generated row also runs a fresh one-pin opaque shelter entitlement against the full current source plus that row's actual facts; standing must derive through the row's own route, with no standing overlay or extracted floor rules. This exposes the current delivery gap rather than closing it.",
     "future_delivery": "The non-confined mirrors are current narrowness tripwires, not a permanent prohibition. A future authorised and challengeable housing-delivery rule must intentionally revise this contract and every affected book claim.",
-    "scope": "The Cartesian product is exhaustive only for the current confined, affirmatively free, and person-only states; current severity derivability, family-record presence, home-record presence; and the discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row's complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, real facilities, or future constitutional axes.",
+    "scope": "The Cartesian product is exhaustive only for current confined, affirmatively free, and person-only states; severity derivability; inert family-record presence; placement-home availability; and discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row’s complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, civil residence, real facilities, or future constitutional axes.",
     "temporal_fixture": "Every confined row receives one self-contained witnessed transition and ordered window shared inside that generated knowledge base, one shared TemporalLeaseFamily source record, and an exact subject-specific case identifier that is also its lease identifier. Non-confined rows receive none of those case facts. This proves only the supplied fixture can reach current formal custody; it does not authenticate the premises or prove outside time and publication advance.",
     "trust_root": "The constitution, reviewed JSON, generator, release engine, verifier, and human review can be weakened together. A green run does not authenticate or authorise that shared repository trust root."
   },
@@ -79,7 +78,7 @@
       "dwell": "TRUE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "The historical uncovered case is now housed because confinement houses the person, but no destination is fabricated where the source has none."
+      "interpretation": "A non-severe confined person is housed without a fabricated destination when no placement-home availability record exists; family status is inert."
     },
     {
       "id": "confined-notsevere-nofamily-home",
@@ -95,7 +94,7 @@
         "Homestay"
       ],
       "placement_err": "FALSE",
-      "interpretation": "A non-severe confined person with no family entry and a home is housed and routed only to Homestay."
+      "interpretation": "A non-severe confined person with a placement-home availability record is housed and routed only to Homestay; family status is inert."
     },
     {
       "id": "confined-notsevere-family-nohome",
@@ -105,13 +104,11 @@
         "family": "present",
         "home": "absent"
       },
-      "fit_homestay": "FALSE",
+      "fit_homestay": "TRUE",
       "dwell": "TRUE",
-      "destinations": [
-        "LowSec"
-      ],
+      "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "A non-severe confined person with a family entry is housed and routed only to LowSec, whether or not a home entry is present."
+      "interpretation": "A non-severe confined person is housed without a fabricated destination when no placement-home availability record exists; family status is inert."
     },
     {
       "id": "confined-notsevere-family-home",
@@ -121,13 +118,13 @@
         "family": "present",
         "home": "present"
       },
-      "fit_homestay": "FALSE",
+      "fit_homestay": "TRUE",
       "dwell": "TRUE",
       "destinations": [
-        "LowSec"
+        "Homestay"
       ],
       "placement_err": "FALSE",
-      "interpretation": "The family entry closes Homestay for this non-severe confined person; the home entry does not change the LowSec route."
+      "interpretation": "A non-severe confined person with a placement-home availability record is housed and routed only to Homestay; family status is inert."
     },
     {
       "id": "confined-severe-nofamily-nohome",
@@ -143,7 +140,7 @@
         "HighSec"
       ],
       "placement_err": "FALSE",
-      "interpretation": "Derived severity houses and routes the confined person only to HighSec; neither family nor home is required."
+      "interpretation": "Derived severity routes the confined person only to HighSec; family and placement-home availability do not change that result."
     },
     {
       "id": "confined-severe-nofamily-home",
@@ -159,7 +156,7 @@
         "HighSec"
       ],
       "placement_err": "FALSE",
-      "interpretation": "A home entry does not reopen Homestay after severity derives; HighSec remains the only destination."
+      "interpretation": "Derived severity routes the confined person only to HighSec; family and placement-home availability do not change that result."
     },
     {
       "id": "confined-severe-family-nohome",
@@ -175,7 +172,7 @@
         "HighSec"
       ],
       "placement_err": "FALSE",
-      "interpretation": "Severity dominates the current family branch: the confined person is housed and routed only to HighSec."
+      "interpretation": "Derived severity routes the confined person only to HighSec; family and placement-home availability do not change that result."
     },
     {
       "id": "confined-severe-family-home",
@@ -191,7 +188,7 @@
         "HighSec"
       ],
       "placement_err": "FALSE",
-      "interpretation": "With every positive axis entry supplied, severity still produces housing and HighSec alone."
+      "interpretation": "Derived severity routes the confined person only to HighSec; family and placement-home availability do not change that result."
     },
     {
       "id": "free-notsevere-nofamily-nohome",
@@ -205,7 +202,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Standing creates the itemised shelter debt but without confinement this current source produces neither housing nor a destination; the same generated candidate directly executes the exact opaque shelter entitlement from its free-derived standing."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-notsevere-nofamily-home",
@@ -219,7 +216,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "A home record alone is neither this source's housing delivery evidence nor a placement route for a free person."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-notsevere-family-nohome",
@@ -233,7 +230,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "A family entry does not route or house a person who is not confined, although the shelter promise and debt remain."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-notsevere-family-home",
@@ -247,7 +244,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Family and home records together still do not turn the current punishment routes into free-person housing delivery."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-severe-nofamily-nohome",
@@ -261,7 +258,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Severity can derive about a registered person without producing a placement when the conviction route is absent."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-severe-nofamily-home",
@@ -275,7 +272,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Severity and a home entry do not themselves place or house a registered person under the current source."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-severe-family-nohome",
@@ -289,7 +286,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Severity and family records remain insufficient for housing or a destination without confinement."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "free-severe-family-home",
@@ -303,7 +300,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Even with every positive axis entry, the current source does not turn a registered free person into a placement case."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-notsevere-nofamily-nohome",
@@ -317,7 +314,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Personhood alone creates the itemised shelter debt but no current housing actuality, destination, confinement, or affirmative freedom; the same generated candidate directly executes the exact opaque shelter entitlement from its supplied standing."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-notsevere-nofamily-home",
@@ -331,7 +328,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "A home entry does not turn a person-only record into housing delivery or a placement route."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-notsevere-family-nohome",
@@ -345,7 +342,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "A family entry does not route or house a person who is neither confined nor affirmatively free."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-notsevere-family-home",
@@ -359,7 +356,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Family and home entries together still do not make the current punishment routes deliver housing to a person-only record."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-severe-nofamily-nohome",
@@ -373,7 +370,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Severity can derive about a person-only record without producing housing or a destination when confinement is absent."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-severe-nofamily-home",
@@ -387,7 +384,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Severity and a home entry do not place or house a person-only record under the current source."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-severe-family-nohome",
@@ -401,7 +398,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Severity and family entries remain insufficient for housing or a destination without confinement."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     },
     {
       "id": "registered-severe-family-home",
@@ -415,7 +412,7 @@
       "dwell": "FALSE",
       "destinations": [],
       "placement_err": "FALSE",
-      "interpretation": "Even with every positive axis entry, personhood alone does not become a placement or housing-delivery case."
+      "interpretation": "The non-confined mirror preserves standing and shelter debt while deriving no placement or housing actuality; family is inert and placement-home availability is not delivery."
     }
   ],
   "required_mutations": [
@@ -428,34 +425,29 @@
   "mutations": [
     {
       "id": "duplicate-destination",
-      "title": "An overlapping route gives Homestay and LowSec together",
+      "title": "An overlapping route adds LowSec beside Homestay",
       "kind": "duplicate_destination",
       "mutations": [
         {
           "op": "append_exact",
           "before": "",
-          "after": "\n# Placement-exhaustiveness duplicate-destination mutation (generated, not enacted).\nall $x: prisoner($x) & home($x) & fit($x, Homestay) -> building(LowSec, $x).\n",
+          "after": "\n# Placement-exhaustiveness duplicate-destination mutation (generated, not enacted).\nall $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> building(HighSec, $x).\n",
           "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "after_sha256": "c8944a5cd71c5a06eec3f9d421c0b26d01e744eaa0a8c15e05875d64a8a8f7c5"
+          "after_sha256": "bb4b18319df752490a611a8b65aebd0a383359549a52a29730bf4e77b25c78bd"
         }
       ],
-      "mutation_sha256": "39a8f9d39ce99f81078fcda872a7977ca7cc69db2e3b08748dee185bfb27b316",
-      "expected_source_sha256": "014c9d23ad03e97c7ff12a06131c47705a9b0bfbf1e3e8113526f43526d04fb3",
+      "mutation_sha256": "7561d95a0fcfd92ca74a3db0baf09e6d3f9137db1d83f36d4e7a4c7144e79d0b",
+      "expected_source_sha256": "12bcf527d7fee8df3f1851340b136bfaa00a3e3eae964903e9950366524682cb",
       "observations": [
         {
-          "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
+          "expression": "building(HighSec, Confined_NotSevere_NoFamily_Home)",
           "expected": "TRUE",
-          "purpose": "The original Homestay conclusion survives."
-        },
-        {
-          "expression": "building(LowSec, Confined_NotSevere_NoFamily_Home)",
-          "expected": "TRUE",
-          "purpose": "The careless overlapping route adds a distinct simultaneous destination."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         }
       ],
       "baseline_flips": [
         {
-          "expression": "building(LowSec, Confined_NotSevere_NoFamily_Home)",
+          "expression": "building(HighSec, Confined_NotSevere_NoFamily_Home)",
           "baseline_expected": "FALSE",
           "candidate_expected": "TRUE"
         }
@@ -466,33 +458,28 @@
       "alarm_setup_facts": {
         "confined-notsevere-nofamily-home": "put(State, Confined_NotSevere_NoFamily_Home, Homestay)"
       },
-      "interpretation": "The repository matrix rejects the duplicate destination, while the current constitutional placement alarm remains silent because it reads reported Homestay eligibility rather than conflicting building conclusions."
+      "interpretation": "The repository rejects simultaneous Homestay and LowSec while the constitutional placement alarm remains silent because it does not compare derived destinations."
     },
     {
       "id": "historical-missing-dwell",
-      "title": "Deleting the historical repair reopens the unhoused confined case",
+      "title": "Deleting the destination-free repair reopens an unhoused confined case",
       "kind": "historical_missing_dwell",
       "mutations": [
         {
           "op": "delete_exact",
-          "before": "all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x).\n",
+          "before": "all $x: prisoner($x) & fit($x, Homestay) & ~at($x, PlacementHome) -> dwell($x).\n",
           "after": "",
-          "before_sha256": "dca351bb41d8b16b6fd90118aa2a896b9a9a9d95928e57e154e97d078559b1b3",
+          "before_sha256": "e1839e3a7f234ed620bb14350c1626b177d6f5205278fc3f88b0211112080912",
           "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
       ],
-      "mutation_sha256": "670b9373a2f5cc1076c77eb8ad6da447365906d03403054a7040e275ba10ceea",
-      "expected_source_sha256": "e7ba340502fdba95da537ee9c4024d918478362c9a5e34b0ef152c1b78056ae0",
+      "mutation_sha256": "1643242b09534be2d9ba9de25ea16cddb41949543af7fd70dc3deaddfe028d94",
+      "expected_source_sha256": "9002d4b9c678ec83e139a08332db039ea10172d27699807f71381a6c883bef7d",
       "observations": [
-        {
-          "expression": "fit(Confined_NotSevere_NoFamily_NoHome, Homestay)",
-          "expected": "TRUE",
-          "purpose": "Eligibility still derives despite the missing home."
-        },
         {
           "expression": "dwell(Confined_NotSevere_NoFamily_NoHome)",
           "expected": "FALSE",
-          "purpose": "Deleting the historical repair removes the only housing conclusion for this tuple."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         }
       ],
       "baseline_flips": [
@@ -508,112 +495,107 @@
       "alarm_setup_facts": {
         "confined-notsevere-nofamily-nohome": "put(State, Confined_NotSevere_NoFamily_NoHome, Homestay)"
       },
-      "interpretation": "The generated matrix reopens the exact omission that named-person examples missed historically. The runtime alarm still does not mark the absent housing conclusion."
+      "interpretation": "The matrix reopens the destination-free housing omission; the runtime alarm still does not mark an absent dwell conclusion."
     },
     {
       "id": "missing-required-destination",
-      "title": "Deleting LowSec leaves non-severe family cases without a required destination",
+      "title": "Deleting Homestay removes the required destination from both family-axis mirrors",
       "kind": "missing_required_destination",
       "mutations": [
         {
           "op": "delete_exact",
-          "before": "all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender).\n",
+          "before": "all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> building(Homestay, $x).\n",
           "after": "",
-          "before_sha256": "292d6327a953794234982ea12f4785f39c9964ccb0a1228864bbb2ccef1105eb",
+          "before_sha256": "bcb1a013c868e493d41d6304ca4233edc622beff5fe48bdd96faabb0d29263d2",
           "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
       ],
-      "mutation_sha256": "42565f4151c9ac9023318572400d20f7acfe8dd0c1fff4c132f6c3d9b6aa437b",
-      "expected_source_sha256": "caddbf99c7c3a3fac43c3cfef864e157bc39984e23ffef4bfab3f933b2f367f0",
+      "mutation_sha256": "7ac21a9bc88b5c140fa33837786d90626246c9d065bf9f3496a89622f2fbbd83",
+      "expected_source_sha256": "12f9d20e2a4302981e831a88d0bf9d0737eb3a48efe7a3b6ad95ec1bcc743a61",
       "observations": [
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
           "expected": "FALSE",
-          "purpose": "The no-home family tuple loses its required LowSec destination."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "expression": "building(Homestay, Confined_NotSevere_Family_Home)",
           "expected": "FALSE",
-          "purpose": "The home-present family tuple loses the same required LowSec destination."
-        },
-        {
-          "expression": "dwell(Confined_NotSevere_Family_NoHome)",
-          "expected": "TRUE",
-          "purpose": "Housing actuality survives, keeping missing destination distinct from missing shelter."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         }
       ],
       "baseline_flips": [
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
           "baseline_expected": "TRUE",
           "candidate_expected": "FALSE"
         },
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "expression": "building(Homestay, Confined_NotSevere_Family_Home)",
           "baseline_expected": "TRUE",
           "candidate_expected": "FALSE"
         }
       ],
       "err_absence_case_refs": [
-        "confined-notsevere-family-nohome",
+        "confined-notsevere-nofamily-home",
         "confined-notsevere-family-home"
       ],
       "alarm_setup_facts": {
-        "confined-notsevere-family-nohome": "put(State, Confined_NotSevere_Family_NoHome, LowSec)",
-        "confined-notsevere-family-home": "put(State, Confined_NotSevere_Family_Home, LowSec)"
+        "confined-notsevere-nofamily-home": "put(State, Confined_NotSevere_NoFamily_Home, Homestay)",
+        "confined-notsevere-family-home": "put(State, Confined_NotSevere_Family_Home, Homestay)"
       },
-      "interpretation": "The audit distinguishes an omitted required destination from the deliberately destination-free historical tuple and from housing actuality. The constitutional alarm notices none of these omissions."
+      "interpretation": "Both family-axis mirrors lose Homestay, proving family is inert and destination availability is the relevant input; the runtime alarm does not detect omission."
     },
     {
       "id": "opposite-destination",
-      "title": "Reversing LowSec to HighSec routes both family tuples the wrong way",
+      "title": "Replacing Homestay with LowSec reverses both family-axis mirrors",
       "kind": "opposite_destination",
       "mutations": [
         {
           "op": "replace_exact",
-          "before": "all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender).\n",
-          "after": "all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(HighSec, $offender).\n",
-          "before_sha256": "292d6327a953794234982ea12f4785f39c9964ccb0a1228864bbb2ccef1105eb",
-          "after_sha256": "81846dfee1cf391326d0677bea2ec9257fe48a9317430326903e01fa14970721"
+          "before": "all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> building(Homestay, $x).\n",
+          "after": "all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> building(HighSec, $x).\n",
+          "before_sha256": "bcb1a013c868e493d41d6304ca4233edc622beff5fe48bdd96faabb0d29263d2",
+          "after_sha256": "2fb2db4ac046ee76c948b1ecd5919f0013ea646ae9d78e8c878aeeeae595310d"
         }
       ],
-      "mutation_sha256": "ed368b7e9e16571c117cd6381c6b6814ada379908f4e848244066b3aac77c16e",
-      "expected_source_sha256": "a4cc4c892c25e8fdcd15f57018e9b6511fc0fe7bc7d3a2f8510d1619bc63810a",
+      "mutation_sha256": "50c48188d47a6cd4fc5076255e0e23ca41f5cc74bc12b31f3a2b7ad596700ffd",
+      "expected_source_sha256": "92cd7ce768685b94926e2d3718645e2894a0bfceb24f94d4e59d0d5308aa3b8d",
       "observations": [
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
           "expected": "FALSE",
-          "purpose": "The reviewed destination disappears for the no-home tuple."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
-          "expression": "building(HighSec, Confined_NotSevere_Family_NoHome)",
+          "expression": "building(HighSec, Confined_NotSevere_NoFamily_Home)",
           "expected": "TRUE",
-          "purpose": "The opposite HighSec destination appears despite severity not deriving."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "expression": "building(Homestay, Confined_NotSevere_Family_Home)",
           "expected": "FALSE",
-          "purpose": "The reviewed destination disappears for the home-present tuple."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "building(HighSec, Confined_NotSevere_Family_Home)",
           "expected": "TRUE",
-          "purpose": "The opposite destination appears in the second affected tuple too."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         }
       ],
       "baseline_flips": [
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_NoHome)",
+          "expression": "building(Homestay, Confined_NotSevere_NoFamily_Home)",
           "baseline_expected": "TRUE",
           "candidate_expected": "FALSE"
         },
         {
-          "expression": "building(HighSec, Confined_NotSevere_Family_NoHome)",
+          "expression": "building(HighSec, Confined_NotSevere_NoFamily_Home)",
           "baseline_expected": "FALSE",
           "candidate_expected": "TRUE"
         },
         {
-          "expression": "building(LowSec, Confined_NotSevere_Family_Home)",
+          "expression": "building(Homestay, Confined_NotSevere_Family_Home)",
           "baseline_expected": "TRUE",
           "candidate_expected": "FALSE"
         },
@@ -624,14 +606,14 @@
         }
       ],
       "err_absence_case_refs": [
-        "confined-notsevere-family-nohome",
+        "confined-notsevere-nofamily-home",
         "confined-notsevere-family-home"
       ],
       "alarm_setup_facts": {
-        "confined-notsevere-family-nohome": "put(State, Confined_NotSevere_Family_NoHome, HighSec)",
+        "confined-notsevere-nofamily-home": "put(State, Confined_NotSevere_NoFamily_Home, HighSec)",
         "confined-notsevere-family-home": "put(State, Confined_NotSevere_Family_Home, HighSec)"
       },
-      "interpretation": "Positive and negative destination queries make reversal visible without relying on one expected destination alone. The current runtime marker does not compare derived destinations and remains silent."
+      "interpretation": "Both family-axis mirrors flip from Homestay to LowSec, proving the opposite route is visible without turning family into a placement premise."
     },
     {
       "id": "painted-free-person-delivery",
@@ -647,97 +629,87 @@
         }
       ],
       "mutation_sha256": "a482b49930f080927d31fe8ad620e4f4e0e37968f3d570d1e6f901658e92fe0a",
-      "expected_source_sha256": "4f16dff540efd20ab17ff4f4617c1680c9187f1959181f8b2aefd11fdec1069e",
+      "expected_source_sha256": "924d5fc77a27e39814ed084d9b7ee1224ab8b0e9e12551132d31e73f140a4ca0",
       "observations": [
         {
           "expression": "dwell(Free_NotSevere_NoFamily_NoHome)",
           "expected": "TRUE",
-          "purpose": "The painted rule makes the deliberately sharp free/unhoused mirror look delivered."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_NotSevere_NoFamily_Home)",
           "expected": "TRUE",
-          "purpose": "A home record is no longer needed once standing alone paints dwell true."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_NotSevere_Family_NoHome)",
           "expected": "TRUE",
-          "purpose": "Family absence or presence no longer discriminates because the rule reads only personhood."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_NotSevere_Family_Home)",
           "expected": "TRUE",
-          "purpose": "The fourth non-severe mirror is painted delivered too."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_Severe_NoFamily_NoHome)",
           "expected": "TRUE",
-          "purpose": "Derived severity is irrelevant to the universal person-to-dwell rule."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_Severe_NoFamily_Home)",
           "expected": "TRUE",
-          "purpose": "The severe home-present mirror also flips."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_Severe_Family_NoHome)",
           "expected": "TRUE",
-          "purpose": "The severe family mirror flips without a housing arrival record."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Free_Severe_Family_Home)",
           "expected": "TRUE",
-          "purpose": "Every registered-free axis tuple now looks housed by rule fiat."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_NotSevere_NoFamily_NoHome)",
           "expected": "TRUE",
-          "purpose": "The person-only mirror is painted housed without confinement or affirmative freedom."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_NotSevere_NoFamily_Home)",
           "expected": "TRUE",
-          "purpose": "A home entry is irrelevant because personhood alone drives the painted rule."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_NotSevere_Family_NoHome)",
           "expected": "TRUE",
-          "purpose": "The family-present person-only mirror is painted housed too."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_NotSevere_Family_Home)",
           "expected": "TRUE",
-          "purpose": "Every non-severe person-only tuple flips."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_Severe_NoFamily_NoHome)",
           "expected": "TRUE",
-          "purpose": "Derived severity does not make the roster-only housing conclusion more evidential."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_Severe_NoFamily_Home)",
           "expected": "TRUE",
-          "purpose": "The severe home-present person-only mirror flips."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_Severe_Family_NoHome)",
           "expected": "TRUE",
-          "purpose": "The severe family person-only mirror flips without arrival evidence."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         },
         {
           "expression": "dwell(Registered_Severe_Family_Home)",
           "expected": "TRUE",
-          "purpose": "Every person-only axis tuple now looks housed by rule fiat."
-        },
-        {
-          "expression": "owe(State, Dwell, Free_NotSevere_NoFamily_NoHome)",
-          "expected": "TRUE",
-          "purpose": "The itemised debt was already present and likewise supplies no delivery evidence."
-        },
-        {
-          "expression": "prisoner(Free_NotSevere_NoFamily_NoHome)",
-          "expected": "FALSE",
-          "purpose": "The mutation fakes free-person delivery without routing through confinement."
+          "purpose": "The deliberate source mutation flips this exact reviewed matrix result."
         }
       ],
       "baseline_flips": [
@@ -858,7 +830,7 @@
         "registered-severe-family-nohome": "put(State, Registered_Severe_Family_NoHome, LowSec)",
         "registered-severe-family-home": "put(State, Registered_Severe_Family_Home, LowSec)"
       },
-      "interpretation": "This counterexample separates current placement completeness from actual non-carceral housing delivery. A rule can make every free and person-only dwell query green from the roster alone, without an offer, access, receipt, authorised writer, challenge, or real roof; positive non-Homestay placement reports still leave the current Homestay-only alarm silent."
+      "interpretation": "The mutation paints every non-confined mirror housed from personhood alone and remains prohibited as delivery self-certification."
     }
   ],
   "narrowness_impacts": [

@@ -177,7 +177,7 @@ REQUIRED_SCENARIO_IDS = {
     "RS-16",
 }
 REQUIRED_OBSERVATIONAL_IDS = {f"OE-{number}" for number in range(1, 5)}
-REQUIRED_PREMISES = {"free", "mature", "person", "rotten", "forgive", "judge", "clear"}
+REQUIRED_PREMISES = {"free", "at", "person", "rotten", "forgive", "judge", "clear"}
 REQUIRED_NARROWNESS_FILES = {
     "book-1/01-what-counts-as-evidence.md",
     "book-1/02-standing.md",
@@ -221,8 +221,8 @@ SEMANTIC_SENTINELS = {
     ("RS-01", "base", "prisoner(Adam)"): "TRUE",
     ("RS-01", "free_adam", "prisoner(Adam)"): "FALSE",
     ("RS-02", "base", "decide(Cira, Ballot)"): "FALSE",
-    ("RS-02", "mature_cira", "decide(Cira, Ballot)"): "TRUE",
-    ("RS-03", "no_mature_hano", "decide(Hano, Ballot)"): "FALSE",
+    ("RS-02", "adulthood_cira", "decide(Cira, Ballot)"): "TRUE",
+    ("RS-03", "no_adulthood_hano", "decide(Hano, Ballot)"): "FALSE",
     ("RS-04", "no_person_bela", "owe(State, Eats, Bela)"): "FALSE",
     ("RS-04", "no_person_bela", "entitled(Bela, event { eats() })"): "FALSE",
     ("RS-04", "no_person_bela", "false(Bela)"): "TRUE",
@@ -1355,13 +1355,13 @@ def negative_controls(
     controls += 1
 
     changed = copy.deepcopy(source)
-    snapshot = next(item for item in changed["snapshots"] if item["id"] == "no_mature_hano")
-    snapshot["deletions"] = ["mature(NeverThere)."]
+    snapshot = next(item for item in changed["snapshots"] if item["id"] == "no_adulthood_hano")
+    snapshot["deletions"] = ["at(NeverThere, GeneralAdulthood)."]
     expect_failure("deletion with zero exact matches", lambda: validate(changed))
     controls += 1
 
-    duplicate_base = kb_text + "mature(Hano).\n"
-    snapshot = next(item for item in source["snapshots"] if item["id"] == "no_mature_hano")
+    duplicate_base = kb_text + "at(Hano, GeneralAdulthood).\n"
+    snapshot = next(item for item in source["snapshots"] if item["id"] == "no_adulthood_hano")
     expect_failure(
         "deletion with multiple exact matches",
         lambda: apply_snapshot(duplicate_base, snapshot, "duplicate deletion control"),

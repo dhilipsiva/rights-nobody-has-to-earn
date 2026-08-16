@@ -551,6 +551,7 @@ all $x: person($x) -> prevents($x, InaccessibleEqualityRoute).
 all $x: person($x) -> prevents($x, AccommodationRefusal).
 all $x: person($x) -> prevents($x, LocalDeskUndueBurden).
 all $x: person($x) -> prevents($x, InferiorAlternateRoute).
+all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).
 all $x: person($x) -> prevents($x, DiagnosticIndividualVerdict).
 all $x: person($x) -> prevents($x, DiagnosticNonparticipationPenalty).
 all $x: person($x) -> prevents($x, UnnecessaryPositiveMeasure).
@@ -840,7 +841,6 @@ all $anyone: person($anyone) & ~prisoner($anyone) -> travel($anyone).
 # `at(_, GeneralAdulthood)` is bounded supplied age evidence; the common-tier source
 # makes acquisition automatic. A separate early-authority fact is confined to
 # its named decision and expressly cannot manufacture the ballot.
-all $x: person($x) & at($x, GeneralAdulthood) -> prevents($x, GeneralAdulthoodDenial).
 all $x: person($x) & at($x, GeneralAdulthood) -> decide($x, Ballot).
 all $x: all $decision: person($x) & authorized($x, EarlyDecision, $decision) & ~($decision = Ballot) -> decide($x, $decision).
 

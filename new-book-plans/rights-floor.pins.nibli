@@ -55,7 +55,7 @@
 ? building(HighSec, Lalo).
 # => TRUE
 ? building(LowSec, Nando).
-# => TRUE
+# => FALSE
 ? dwell(Hano).
 # => TRUE
 # --- E1/E2/E3 closures ---

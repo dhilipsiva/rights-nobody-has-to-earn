@@ -414,7 +414,7 @@ None.
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
 | formal | `sets_boundary` | `RI-13` | `new-book-plans/constitution.nibli::unadjudicated accusation and an unperformed remedy are different absences,` |
-| generated | `exposes_gap` | `RI-13` | ``new-book-plans/assertion-surface-audit.md::withhold a true `married(Gia, Hex)` entry.`` |
+| generated | `exposes_gap` | `RI-13` | ``new-book-plans/assertion-surface-audit.md::withhold or delete a true `married(Gia, Hex)` entry.`` |
 | generated | `exposes_gap` | `RI-13` | `new-book-plans/record-integrity-red-team.md::## Flat-snapshot indistinguishability boundary` |
 
 **Acceptance evidence still required**
@@ -453,10 +453,10 @@ Allegations, judgments, examinations, grounds, deceit findings, protected disclo
 
 ### RC-4 — Private relationship and location records
 
-Family, home, parent, marriage, and sibling facts used for placement, conflict, and independence decisions while carrying acute privacy risk.
+Legacy family, protected-home, parent, marriage, and sibling records: family, home, marriage, and sibling feed only anti-substitution barriers; parent remains relevant only to the affirmative judge-child conflict.
 
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
-- **Failure posture:** Private facts are purpose-limited and challengeable; absence cannot certify independence or justify harsher placement without a safe review and continuity route.
+- **Failure posture:** Private facts are purpose-limited and challengeable; absence cannot certify independence, duty, care, authority, or placement. Reviewer independence requires separate affirmative case-bound authorised records.
 
 ### RC-5 — Delivery and contribution records
 
@@ -501,7 +501,6 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | `limit` | `RC-6` | Temporal transition, order, and review records |
 | `list` | `RC-6` | Temporal transition, order, and review records |
 | `married` | `RC-4` | Private relationship and location records |
-| `mature` | `RC-2` | Standing, status, and public-power records |
 | `observe` | `RC-6` | Temporal transition, order, and review records |
 | `parent` | `RC-4` | Private relationship and location records |
 | `passport` | `RC-6` | Temporal transition, order, and review records |
@@ -704,7 +703,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `d872b015db94f5d7bc9ececd8bc5b29511544ca5c27e3b6096fbc935a3c19ce7`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

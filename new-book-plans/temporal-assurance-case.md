@@ -10,7 +10,7 @@
 The exact reviewed source implements cumulative T1 reconciliation, a witnessed canonical TerminalTransition, transitive ternary precede paths typed by EventPath and RecordPath, typed collision categories, and T3 positive case-bound Court-custody authority. Consequential consumers rejoin exact raw fields and matching observations. A supplied challenge suspends its exact lease; a paired fresh process proves that withheld intake does not. The ground cases establish these derivations and bounded full-source floor-query coexistence only for supplied records and supplied or independently derived standing.
 
 - Reviewed source: `new-book-plans/temporal-assurance-case.json`.
-- Constitution: `new-book-plans/constitution.nibli` at `bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a`.
+- Constitution: `new-book-plans/constitution.nibli` at `090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd`.
 - Every executable case uses a fresh engine process; paired labels describe a reviewed differential, not shared engine state.
 
 ## Cumulative formal stages
@@ -86,7 +86,7 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 | `TA-18` | `T3` | `attack` | 7 | A lease held by TemporalReview cannot authorise itself even with otherwise matching supplied records. |
 | `TA-19` | `T3` | `attack` | 6 | A continuation bound to the predecessor cannot borrow a current-window and source record. |
 | `TA-20` | `T3` | `control` | 5 | A supplied completed-release fact blocks custody without erasing standing, the floor, or historical answerability. |
-| `TA-21` | `T3` | `attack` | 4 | Removing one mature fact can still remove the legacy franchise, but it cannot remove standing, floor, challenge, or the resulting Appeals duty. |
+| `TA-21` | `T3` | `attack` | 4 | Removing one typed adulthood-evidence fact can remove the supplied-record ballot conclusion, but it cannot remove standing, floor, challenge, or the resulting Appeals duty. |
 | `TA-22` | `T3` | `control` | 8 | Ground standing, floor-event entitlement, authority, custody, recognition, and severity queries coexist with T3 identifier-status conclusions against the full source. |
 | `TA-23` | `T3` | `attack` | 4 | Public emergency-labelled records and repeated declarations have no route around exact case-renewal, source-family, review, and successor binding. |
 | `TA-24` | `T3` | `attack` | 4 | A new public office does not consume the Court's case lease or make the original holder's historical authority disappear. |
@@ -124,7 +124,7 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 | `order_conflict` | `T2` | `detected_as_named_error` | `TA-11`, `TA-13`, `TA-26`, `TA-36` | Direct and transitive reverse paths remain visible, derive claim-specific OrderConflict and endpoint collision taint, and suspend a dependent window. The source does not establish which outside report is true. |
 | `backdating` | `T2` | `detected_as_named_error` | `TA-12`, `TA-13`, `TA-26`, `TA-30`, `TA-36` | EventPath and RecordPath independently type the third place of ternary precede path tuples; unobserved reverse order tuples cannot borrow a claim tag, and an unwitnessed reverse date cannot borrow a window tag. Fully witnessed direct or longer reverse paths disable the T3 window only through an exactly witnessed date tuple. Truthful capture time and append-only logging remain external. |
 | `release_withholding` | `T3` | `preserved_by_narrowness_test` | `TA-15`, `TA-20` | Custody requires positive authority; its absence restores travel without manufacturing free, while a supplied free remains effective. Physical release and truth of a free record remain external. |
-| `maturity_forgery` | `T1` | `preserved_by_narrowness_test` | `TA-21` | A maturity challenge derives a named dispute and duty while standing remains independent of mature; existing floor pins own the event-abstraction compatibility check. The legacy franchise gate is still writable and unauthenticated; this artifact exposes rather than repairs it. |
+| `maturity_forgery` | `T1` | `preserved_by_narrowness_test` | `TA-21` | An adulthood-evidence challenge derives a named dispute and duty while standing remains independent of the typed age record; existing floor pins own the event-abstraction compatibility check. The typed supplied record remains unauthenticated in this artifact; it neither constitutes adulthood nor proves outside age or clock liveness. |
 | `source_mismatch` | `T3` | `rejected_by_current_source` | `TA-17`, `TA-29`, `TA-34` | Only one collision-free, dual-witnessed TemporalLeaseFamily binding to Constitution_Temporal at the active epoch can support custody. Deployment authenticity and proposal-to-diff causation remain external. |
 | `renewal_withholding` | `T3` | `detected_as_named_error` | `TA-14`, `TA-15`, `TA-32` | Missing current continuation or a later canonical successor without a fresh renewal removes custody authority and derives no fictional release. The outside reviewer can still withhold service; Book 1 supplies the legal default, not liveness. |
 | `power_witness_withholding` | `T3` | `detected_as_named_error` | `TA-22`, `TA-27` | One withheld PowerScope witness prevents PowerBound and active custody, while the raw case-bound authorization remains visible as TemporalAuthority and reaches Appeals when challenged. The legal default removes restrictive power but cannot force the missing witness to report or authenticate either writer. |
@@ -185,10 +185,10 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 
 ### `book-1/09-the-vote-conviction-does-not-take.md`
 
-- **Standing claim:** Custody duration does not consume the franchise, while mature remains a disputed writable civic gate rather than an authenticated clock result.
+- **Standing claim:** Custody duration does not consume the franchise; at(_, GeneralAdulthood) is bounded supplied evidence for the ballot consequence and cannot constitute adulthood.
 - **Classification:** `boundary_rewritten`.
-- **Test route:** The withheld-maturity case pins personhood, challenge, and Appeals duty independently of mature; existing floor pins separately own event-abstraction compatibility, and the residual franchise vulnerability stays explicit.
-- **Change trigger:** An adopted nondiscretionary adulthood transition or authenticated election interface must revise this boundary.
+- **Test route:** The withheld-adulthood-evidence case pins personhood, challenge, and Appeals duty independently of the typed age record; existing floor pins separately own event-abstraction compatibility.
+- **Change trigger:** Any change to the common-tier adulthood contract, its typed evidence, or the election interface must revise this boundary.
 
 ### `book-1/13-the-one-thing-taken.md`
 

@@ -42,10 +42,10 @@ CLASSIFICATIONS = {"derived_only", "mixed_base_fact", "pending_interface"}
 DISPOSITIONS = {"patchable", "external", "deliberately_refused"}
 OPERATIONS = {"assert", "withhold_or_delete"}
 REQUIRED_TAG_BINDINGS = {
-    "adulthood": {"mature"},
+    "adulthood": {"at"},
     "amendment": {"adjust", "approves", "permanent", "suggest"},
     "epoch-carry": {"rotten"},
-    "placement": {"attack", "cruel", "family", "home", "injure", "put"},
+    "placement": {"at", "attack", "cruel", "injure", "put"},
     "public-body": {"public"},
     "release": {"free"},
     "roster-person": {"person"},

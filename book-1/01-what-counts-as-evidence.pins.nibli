@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 38
+:expect-pins 40
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -129,19 +129,25 @@ deceive(Rebel, Boss).
 # => TRUE
 
 # "A person has a family" — one word, buried in a list of attributes. For
-# Hano's fixed non-severe, home-owning case it alone closes Homestay and opens
-# LowSec; the full placement table has other deciding conditions.
+# Hano's family label is recorded only to prove it changes no placement
+# result; severity and the separate placement-home record decide the route.
 ? fit(Hano, Homestay).
+# => TRUE
+
+? building(Homestay, Hano).
 # => TRUE
 
 :accept
 family(Hano).
 
 ? fit(Hano, Homestay).
-# => FALSE
+# => TRUE
+
+? building(Homestay, Hano).
+# => TRUE
 
 ? building(LowSec, Hano).
-# => TRUE
+# => FALSE
 
 # 1.3c THE PAIRING IS THE RULE. "An offence is severe when two of those stand
 # together in the record: an attack and a cruelty landing on the same person,

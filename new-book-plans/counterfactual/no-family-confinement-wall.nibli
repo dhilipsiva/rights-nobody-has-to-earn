@@ -551,6 +551,7 @@ all $x: person($x) -> prevents($x, InaccessibleEqualityRoute).
 all $x: person($x) -> prevents($x, AccommodationRefusal).
 all $x: person($x) -> prevents($x, LocalDeskUndueBurden).
 all $x: person($x) -> prevents($x, InferiorAlternateRoute).
+all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).
 all $x: person($x) -> prevents($x, DiagnosticIndividualVerdict).
 all $x: person($x) -> prevents($x, DiagnosticNonparticipationPenalty).
 all $x: person($x) -> prevents($x, UnnecessaryPositiveMeasure).
@@ -679,7 +680,6 @@ all $x: person($x) -> prevents($x, FamilyFunctionSeparation).
 all $x: person($x) -> prevents($x, FamilyRemedySet).
 all $x: person($x) -> prevents($x, FamilyRemedyNonharm).
 all $x: person($x) -> prevents($x, MissingKinshipNoIndependence).
-all $x: person($x) -> prevents($x, FamilyStatusNoConfinement).
 all $x: person($x) -> prevents($x, LegacyStatusNonproof).
 all $x: person($x) -> prevents($x, HomeConceptSeparation).
 all $x: person($x) -> prevents($x, T3LifeCourseNonborrowing).

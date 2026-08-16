@@ -137,7 +137,7 @@ work(Sata, Care).
 # mark for what she was taught. Record a contribution instead and she is
 # recognised, which is the same principle read from the other side. The work
 # door is isolated here by construction: Cira has no other minting route.
-? mature(Cira).
+? prevents(Cira, GeneralAdulthoodDenial).
 # => FALSE
 
 work(Cira, Chores).

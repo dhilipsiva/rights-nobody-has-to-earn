@@ -19,21 +19,21 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "231b03a4487a723548531becfcc98bdce6c75b98f6637f227387cdf70007e2bd",
-  "facts_sha256": "9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44",
+  "rules_sha256": "7688c03dbe3bac922ada1b22cd0ce9e6148e3688d6d9130fe2541c3be0331997",
+  "facts_sha256": "16868f1fc40d24051bfcc1f4f02bb76757d4a646b829c0a09b93e84fd39d5f11",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "approves": "9915b8691afeed4579c39723769080ae4ffd866bc72dcd44898af6cea07b3a49",
-    "at": "4790557f3ede7a1a89c7a2e0bdc574327d2757d1b316e2f63afe63dcaba12147",
+    "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
     "authority": "3db0ce4e56f1619d7ab36841d4a9af3d4f036f0e6f002d47dfbd22180785e30e",
-    "authorized": "3573b6207d971c26ef4d75801a7ceb5d78b5c3618d3a1ae1aa02822c23e2e506",
+    "authorized": "bb508da41416e32a678e0963cd48df14d29ac201ee8886576884d465446b4597",
     "become": "efe26b83f9ccb2aa21ba1c3ef48b9b07604db51cabe14ea70b295b730cc4c86e",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
-    "broken": "65be047ee2ff4cd2b396777d951eef2f7da7a71a0ac80f4252bdc835d8138443",
-    "building": "b7f2186a06e8ed821fc035780279b64920d692d5e9a7b972229d8f2be970f92d",
-    "capture": "df0e5ba1ab49c076935fbee5d519490f1527d881b5bed9002e8a7348e5448fb3",
+    "broken": "6fa58bc4be130c534a763f58d08bd1414751f290ceb14958c591d4c158fd88b6",
+    "building": "e00647305bde66edb69daac92b59e4d82ee02e62907b0c9f1e1d29e4c07a2b89",
+    "capture": "9d000cd29a2bee16382072c3200ce1672cc3ff19becb18788dbb490f272199ad",
     "carries": "19621bd13b05a5cd99a3d77d86a5e269ab25f7d16c3890bb93c46ea8485941fe",
     "challenge": "f698abded904ad1ca0e541f8ec8f4f9d8df3fce2b0cb1f9bc47cfb2b5c9be4a9",
     "choose": "1a1477d3ac30c8646aacc5277f4db15806a5eb1b195e06a2f30050ffd86df313",
@@ -47,44 +47,43 @@
     "correct": "97826cff100e32232c3175e869ccea1530c97b00d67603c540419cda6b313b62",
     "cruel": "0093de374030369768dc6db9042a74890cb39f8f7025dde425d00888572ad50a",
     "date": "07e156c91908a377e540ac7dc7f10581c02aefb28d1afa52c18601e409cc9c09",
-    "deceive": "572e367f36413d528f0561a2bfbf7d48f38b9ee7b419f792a346e44d7277514e",
-    "decide": "0f26e5f8cc7045bfe4998deddc8a65a217e1f20cb950c27eac3d5e9590344b8b",
+    "deceive": "a4f72b9ecee3e1f46453b72b2d4264a676dc1ea5718688617c1aae8de824e268",
+    "decide": "944be52dcac568ed0cfb8969ede8a44e2668190e2fbfe058ceab58af39234f66",
     "defend": "ebbf22b30f5700ddb76b2fa1afe988ee8ee6f455feb575fb7173d8db3b3d36c5",
-    "dwell": "bc598c974894a0a1e2fdf9611abeae575c30c08e6324e3e12b61374ee3f1e862",
+    "dwell": "040e09bbcd3af95a073f9e0d65f1ff038fc823e26cf54cf98150be641cdf3db3",
     "eats": "ec5c441c4ad53c3180aea225ef200b4834c1ede4c21879d4f38dbc19d23ad653",
     "entitled": "a8644e00386dce18427fbd010817b70f0488fdfe07c47df9b8a442efdae6fe59",
     "err": "93fbf4723dd77e76f3fb5a4a9000b59feda74dbf239a3515f5a6d79c62e6402f",
     "expresses": "50759c4c4277fd765565e0b0cf2f88dde2174d4647f96c6dfcaf63405b7a77b6",
-    "false": "97588c87a57aa08457c45d237e94422b9b1a6fbabfdad0a4a4a3c0d4e3d640f4",
-    "family": "7ab1a419e85f28871c839ab899df62b1a3e43aab7dc27b84492cac43dfd2bcc8",
-    "fit": "a38e62ee4aa4c26d338c482f962efcbee3a9d62a11052c0880aa753c7a620ca2",
+    "false": "c0604dc2467747b5063db30b627b2bc49364caa06adc1498fbc171a7f79a3a6e",
+    "family": "4c0ec69c70d097433d43850d445500ba4008506b43023e738d6998577aae9d22",
+    "fit": "adaf2ee21afb2b77e5b2239567ffcaed2c6ba0170ee18a48bf935264fe5db4f1",
     "forgive": "4aec77f843480e1174a490affe517a76d4622a9bedb7e93a10ce451f9d0c9e7c",
     "free": "90761d03f8b013b42c210728c2191f5016a9a7f06db6e7d3fbeca09343a1110f",
     "healthy": "5f96c1318f4b6853d786b289e5978e57457f0b47a527a056e92cedb92f40af8f",
     "hears": "74985a06768cd9aba07d5edd0304784870ce67e19a0a58e6f1032c3fbfd960d8",
-    "home": "fc6d2e5aecde311bab334041520434be3c4d3cbae006200ff8b09f1792fdcf24",
+    "home": "01c35f39cdc0b0672dab583823f4c65201f49de6c510836bdc3842d9806375e8",
     "injure": "e91a338c6eda3e8c6b155456211a65c32c684d38d6693f5eb8d3775be22acbd7",
-    "judge": "5f35c2e005d930c0e5fac9ffd5b94364334c3cfd9979c49630a68af60fdcf29f",
+    "judge": "66e13db045016d38cfe3aabacf3d914b0c344fc34ff5cea384218aa60edd266b",
     "learn": "f31216c71fae34042d84cb7dbc79f4dc834876aa160d142d51b5cb5307dd2745",
     "limit": "29307709e75c2d446cde0bc197f6b94231bc69249df856a6272e5eb5ac5caeeb",
     "list": "0e4f71dfe66512de21bd3077110d890210ee2b9604a1479ddfad02c32d92c49c",
     "lose": "4972501f211500ca67f0a74f3e92ee9391e5d9cc4f1349111f46ed7434d15c33",
-    "married": "2501ab2c0b2d02aa80e88f63e074a331e14c62d0f69f3712eb0292279c19d02a",
-    "match": "297691a55f2e793c23235d309d8dd85d1886401cfb640dac276e68409c512972",
-    "mature": "0c872905b2585b4aee023d50cfbc45f6440d6e33d3134304bb319e9f34c3bbc9",
+    "married": "7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6",
+    "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
     "meets": "fe03e07990cdcb7ba3b27a9a82db6bee655e45aec057f6891fd2b2c5de87dd37",
     "obliged": "635a864a87d4b8aff407346d2b14c079714d8c078c78e622babd1972b1d26f9b",
     "observe": "5dfc1c12e584df7717fb2885dc3a48c488377d7f43675997ceaafedfef477549",
     "orderly": "d26f2115f12d9e3e3efb809cb36c6cc5e55204c68155e3a2b01cada86481cdbb",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
-    "parent": "6ed3d63a3f8a478a4361390d92f96cc1b4d424ec0f342ad2a44155ad47246512",
+    "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
     "passport": "c47b9efbe78a749ef231d071256dae315035d833cb1e982c46a001abc2e69ada",
     "permanent": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
-    "permits": "4f0d2565d9b7a58b027f790dc0ccbfd136206e5ca54cc64b1a7a089761b8f6d8",
-    "person": "a6439fd252eca1414050090d64f61cb8af7bc7fd4c67cf2bcc6e1edbe51b5d0b",
+    "permits": "f8c03ccb6abd9b350f00fe93840157596fa6844f5ac5e9152b819413ab726bb0",
+    "person": "ae9c7cf556c7eb769c3340477fb3c7458d5d5a5303f50375d4ca87605de91f4d",
     "precede": "ba77ee02f994d1dbf8f31a424fb2b74cc92d27edc27f0c0cc1bfecc6c357dbb1",
-    "prevents": "cd48789c96794123f4ad5bcc45cf3737305e2ce551c4bbaa1e0204f77576df2d",
-    "prisoner": "eb0b31e8567cebf1c86b81790f0c3cf596b61cae3e42fd0c2e3d73db2fdffd3d",
+    "prevents": "287e86cb2899c504717503648f15c524278a3780ffc9cd3e5ba5b47a62c39e09",
+    "prisoner": "e8a5a69f4f5c2989cc4859ce485ec9cca1fa2b0d827323537fdc4f3b4e18a132",
     "public": "6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60",
     "put": "afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627",
     "reference": "9c8dc5870fd28e908dfeb28d94b306d6b159a6231ba3561242a4fda9eb012cf3",
@@ -93,9 +92,9 @@
     "reward": "381db14138f3712fdef796d739dc48d0cd5429bb61cc857be920c2611c6a95bd",
     "rotten": "ee4885e9421cf0307421540c855456259eb07c5cd5c2ff5dbd34656895ecb07e",
     "secure": "bea1c2803936663b850221e46ae934d455c783bc48fac5a4037d9178eb427a8b",
-    "severe": "4dcc3c0dd770b94fffd0b272f25322c4273a1c538bbce06cc9f81a3d1455f3a6",
+    "severe": "a102d24e46a6291be1fbf1c9150bf310ddcfaa9d8342988b1ed63b02d329cee9",
     "show": "6f8d9509bc118699d35f0dfd418f1b994fe677cbf0387d95e6d18a1431162bd4",
-    "sibling": "2501ab2c0b2d02aa80e88f63e074a331e14c62d0f69f3712eb0292279c19d02a",
+    "sibling": "a66effae83ee434bf2303e7523c1a141bc4702c3ae6b8292c4506110e96aa14a",
     "succeed": "2fb2673fffc725131b19ff41f0bfbb3d639b2866b74246fa6a8919eb0e760245",
     "suggest": "c40d4481c5b33c855551714786774e8178398f286ee46ad4cf4544ba905864d8",
     "teaches": "a139a1576872b087975f3a54be6c49c134b7f15d3cca9c4142a9574da75fea8c",
@@ -1127,40 +1126,41 @@
       ]
     },
     "family": {
-      "claimed_actor": "No writer is encoded; the unary fact classifies the confined person as having family.",
-      "tuple_claim": "A prisoner has a family relation relevant to placement.",
-      "current_writer_authority": "Any fact-store writer can assert or omit the status.",
-      "required_writer_authority": "The affected person and an authorised placement reviewer must be able to establish or dispute the status.",
-      "current_provenance": "No relationship, consent, household, or currency evidence is required.",
-      "required_provenance": "A purpose-limited, current, challengeable relationship record with privacy protection.",
+      "claimed_actor": "No writer is encoded; the unary fact is retained only as a legacy private-status input to an anti-substitution barrier.",
+      "tuple_claim": "A person is described by a legacy family label; the label cannot establish relationship, duty, independence, care, authority, placement, or liberty.",
+      "current_writer_authority": "Any fact-store writer can assert or omit the private label; no placement, care, authority, or delivery rule consumes it.",
+      "required_writer_authority": "Any retained family description needs affected-person control, purpose limitation, privacy, correction, and no service or placement consequence.",
+      "current_provenance": "No relationship, consent, household, duty, currency, or completeness evidence is represented.",
+      "required_provenance": "A purpose-limited, current, challengeable relationship record separated into the source-specific family modules.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `family(Adam)`"
         ],
-        "effect": "Adam gains a facility placement route solely from the new family flag.",
-        "target": "building",
-        "evidence_ref": "new-book-plans/constitution.nibli::prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender)"
+        "effect": "The record gains a false private family label, but placement and authority remain unchanged because family only reinforces an already universal anti-substitution barrier.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & family($x) -> prevents($x, FamilyStatusSubstitution)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `family(Nando)`"
         ],
-        "effect": "Nando's recorded LowSec placement disappears and the no-family eligibility path replaces it.",
-        "target": "building",
-        "evidence_ref": "new-book-plans/constitution.nibli::prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender)"
+        "effect": "The private label disappears without changing fit, dwell, destination, authority, care, or remedy; the missing correction history remains an external record-integrity risk.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/family-life-course.pins.nibli::# Family status is inert across placement."
       },
-      "current_challenge_route": "No relation contests or corrects family status.",
-      "required_challenge_route": "Private correction and placement appeal without making family a service gate.",
+      "current_challenge_route": "The formal barrier prevents status substitution but supplies no operating correction process.",
+      "required_challenge_route": "Private direct correction and remedy without making family a service, authority, independence, or placement gate.",
       "risk_dispositions": [
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
-        "placement",
-        "privacy"
+        "family",
+        "privacy",
+        "anti-substitution"
       ]
     },
     "forgive": {
@@ -1276,41 +1276,41 @@
       ]
     },
     "home": {
-      "claimed_actor": "No writer is encoded; the unary fact reports that a person has a home.",
-      "tuple_claim": "A person has a home relevant to confinement placement.",
-      "current_writer_authority": "Any fact-store writer can assert or remove housing status.",
-      "required_writer_authority": "The affected person and an authorised placement body must be able to establish and contest the status.",
-      "current_provenance": "No address, usability, consent, tenancy, accessibility, or currency evidence is required.",
-      "required_provenance": "Purpose-limited proof that the location is available, safe, accessible, and consented to for the placement decision.",
+      "claimed_actor": "No writer is encoded; the unary home fact is retained only as a protected-home/private-life label feeding an anti-substitution barrier.",
+      "tuple_claim": "A person has a legacy protected-home label; it is not residence, household membership, ownership, placement availability, or housing delivery.",
+      "current_writer_authority": "Any fact-store writer can assert or remove the private label; placement reads only at(_, PlacementHome).",
+      "required_writer_authority": "Any protected-home record needs affected-person control, privacy, correction, and separation from placement and service delivery.",
+      "current_provenance": "No address, usability, consent, tenancy, accessibility, placement availability, or delivery evidence is represented.",
+      "required_provenance": "Purpose-limited protected-home provenance and a separately sourced, current, challengeable PlacementHome availability record when placement is at issue.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `home(Adam)`"
         ],
-        "effect": "Adam gains a Homestay placement atom from a bare housing claim.",
-        "target": "building",
-        "evidence_ref": "new-book-plans/constitution.nibli::prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x)"
+        "effect": "The record gains a false private home label, but Homestay does not derive because placement requires the separate at(_, PlacementHome) input.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & home($x) -> prevents($x, HomeStatusSubstitution)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `home(Hano)`"
         ],
-        "effect": "Hano's Homestay placement record disappears even though confinement still houses him through the default rule.",
-        "target": "building",
-        "evidence_ref": "new-book-plans/constitution.nibli::prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x)"
+        "effect": "The private label disappears without changing Hano’s PlacementHome record or destination; provenance loss remains externally unassured.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/family-life-course.pins.nibli::# Home and placement-home availability remain distinct."
       },
-      "current_challenge_route": "No correction or placement appeal attaches to home status.",
-      "required_challenge_route": "Private correction and independent placement appeal, kept separate from free-person housing delivery.",
+      "current_challenge_route": "The formal barrier prevents home-status substitution but supplies no operating correction or placement process.",
+      "required_challenge_route": "Private direct correction and independent review, separated from free-person housing delivery and placement availability.",
       "risk_dispositions": [
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
-        "placement",
-        "housing",
-        "privacy"
+        "home",
+        "privacy",
+        "anti-substitution"
       ]
     },
     "injure": {
@@ -1475,78 +1475,40 @@
     },
     "married": {
       "claimed_actor": "The tuple names two related people and no writer or registrar.",
-      "tuple_claim": "Two prospective co-signers are married.",
+      "tuple_claim": "Two people carry a legacy married label; the label is no longer evidence for or against reviewer independence.",
       "current_writer_authority": "Any fact-store writer can assert or omit the relationship.",
       "required_writer_authority": "The people concerned or a legally authorised civil-status source, with privacy and contest rights.",
-      "current_provenance": "No source, consent, validity period, or correction history is required.",
-      "required_provenance": "Purpose-limited relationship evidence current for the co-signing decision.",
+      "current_provenance": "No source, consent, legal scope, currency, purpose, or correction history is represented.",
+      "required_provenance": "Purpose-limited private relationship evidence, kept separate from the affirmative case-bound reviewer-independence record.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `married(Gia, Hex)`"
         ],
-        "effect": "The only current cross-body pair is disqualified and Bela's voiding is suppressed.",
-        "target": "false",
-        "evidence_ref": "new-book-plans/constitution.nibli::~married($a, $b) & ~married($b, $a)"
+        "effect": "The record gains a private married label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "withhold a true `married(Gia, Hex)` entry"
+          "withhold or delete a true `married(Gia, Hex)` entry"
         ],
-        "effect": "Related signers count as independent and can void Bela.",
-        "target": "false",
-        "evidence_ref": "new-book-plans/constitution.nibli::~married($a, $b) & ~married($b, $a)"
+        "effect": "The relationship record becomes incomplete, but the absence cannot prove independence or change the voiding result.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
-      "current_challenge_route": "No private correction or co-signing challenge exists.",
-      "required_challenge_route": "Confidential correction and recusal challenge before the voiding takes effect.",
+      "current_challenge_route": "The formal independence rule ignores the label; no operating private correction route is established.",
+      "required_challenge_route": "Confidential correction plus a separate challenge to the affirmative case-bound independence record.",
       "risk_dispositions": [
         "patchable",
         "external"
       ],
-      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "audit",
         "privacy",
         "conflict"
-      ]
-    },
-    "mature": {
-      "claimed_actor": "No finder, writer, or legal adulthood authority is encoded.",
-      "tuple_claim": "A person has reached the franchise's adulthood condition.",
-      "current_writer_authority": "Any fact-store writer can grant or withhold the status.",
-      "required_writer_authority": "A non-discretionary adulthood rule with independently assured evidence and a serve-while-reconciling path.",
-      "current_provenance": "No birth, age, adjudication, temporal transition, or source record is represented.",
-      "required_provenance": "A challengeable adulthood basis that does not let an official withhold political standing.",
-      "cheapest_harm": {
-        "operation": "assert",
-        "operations": [
-          "assert `mature(Cira)`"
-        ],
-        "effect": "Cira receives the franchise conclusion from a single unauthenticated status write.",
-        "target": "decide",
-        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & mature($x) -> decide($x, Ballot)"
-      },
-      "withholding_deletion_harm": {
-        "operation": "withhold_or_delete",
-        "operations": [
-          "delete `mature(Hano)`"
-        ],
-        "effect": "Hano loses the franchise conclusion while personhood and conviction remain.",
-        "target": "decide",
-        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & mature($x) -> decide($x, Ballot)"
-      },
-      "current_challenge_route": "A supplied `challenge(_, MaturityRecord, TemporalReview)` now derives a dispute error and inert Appeals duty; it does not correct `mature`, preserve the ballot conclusion, authenticate receipt, or make anyone act.",
-      "required_challenge_route": "Immediate contest and continuity of political access while the status record is reconciled.",
-      "risk_dispositions": [
-        "patchable",
-        "external"
-      ],
-      "owner_ref": "new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate",
-      "tags": [
-        "adulthood",
-        "democracy",
-        "time"
       ]
     },
     "observe": {
@@ -1591,7 +1553,7 @@
     },
     "parent": {
       "claimed_actor": "The tuple names two people in an alleged parent relationship and no writer.",
-      "tuple_claim": "One person is the parent of another for conflict and judge-your-child rules.",
+      "tuple_claim": "One person is the parent of another for the affirmative judge-your-child conflict rule; parenthood is not reviewer-independence evidence.",
       "current_writer_authority": "Any fact-store writer can assert or omit parenthood.",
       "required_writer_authority": "A legally recognised, purpose-limited source with correction and privacy rights.",
       "current_provenance": "No source, legal status, scope, or correction history is attached.",
@@ -1599,11 +1561,11 @@
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
-          "assert `parent(Gia, Hex)`"
+          "assert `parent(Dev, Esa)`"
         ],
-        "effect": "The current cross-body signers are treated as related and Bela's voiding is suppressed.",
+        "effect": "A supplied parent relation beside Dev’s judgment derives the source-specific judge-child conflict verdict against Dev; it does not decide co-signer independence.",
         "target": "false",
-        "evidence_ref": "new-book-plans/constitution.nibli::~parent($a, $b) & ~parent($b, $a)"
+        "evidence_ref": "new-book-plans/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -1614,13 +1576,13 @@
         "target": "false",
         "evidence_ref": "new-book-plans/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)"
       },
-      "current_challenge_route": "No correction or recusal challenge exists.",
-      "required_challenge_route": "Confidential relationship correction and independent conflict review.",
+      "current_challenge_route": "No operating correction route exists; co-signer independence now uses separate affirmative case-bound authorised records.",
+      "required_challenge_route": "Confidential parentage correction and independent review of the specific judge-child conflict record.",
       "risk_dispositions": [
         "patchable",
         "external"
       ],
-      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "audit",
         "privacy",
@@ -1949,36 +1911,36 @@
     },
     "sibling": {
       "claimed_actor": "The tuple names two related people and no writer or registrar.",
-      "tuple_claim": "Two prospective co-signers are siblings.",
+      "tuple_claim": "Two people carry a legacy sibling label; the label is no longer evidence for or against reviewer independence.",
       "current_writer_authority": "Any fact-store writer can assert or omit the relationship.",
       "required_writer_authority": "The people concerned or a legally authorised civil-status source, with privacy and contest rights.",
-      "current_provenance": "No source, legal scope, or correction history is required.",
-      "required_provenance": "Purpose-limited relationship evidence current for the co-signing decision.",
+      "current_provenance": "No source, consent, legal scope, currency, purpose, or correction history is represented.",
+      "required_provenance": "Purpose-limited private relationship evidence, kept separate from the affirmative case-bound reviewer-independence record.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `sibling(Gia, Hex)`"
         ],
-        "effect": "The only current cross-body pair is disqualified and Bela's voiding is suppressed.",
-        "target": "false",
-        "evidence_ref": "new-book-plans/constitution.nibli::~sibling($a, $b) & ~sibling($b, $a)"
+        "effect": "The record gains a private sibling label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "withhold a true `sibling(Gia, Hex)` entry"
+          "withhold or delete a true `sibling(Gia, Hex)` entry"
         ],
-        "effect": "Related signers count as independent and can void Bela.",
-        "target": "false",
-        "evidence_ref": "new-book-plans/constitution.nibli::~sibling($a, $b) & ~sibling($b, $a)"
+        "effect": "The relationship record becomes incomplete, but the absence cannot prove independence or change the voiding result.",
+        "target": "prevents",
+        "evidence_ref": "new-book-plans/constitution.nibli::person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
-      "current_challenge_route": "No private correction or co-signing challenge exists.",
-      "required_challenge_route": "Confidential correction and recusal challenge before the voiding takes effect.",
+      "current_challenge_route": "The formal independence rule ignores the label; no operating private correction route is established.",
+      "required_challenge_route": "Confidential correction plus a separate challenge to the affirmative case-bound independence record.",
       "risk_dispositions": [
         "patchable",
         "external"
       ],
-      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "audit",
         "privacy",
@@ -2098,12 +2060,12 @@
       ]
     },
     "at": {
-      "claimed_actor": "The tuple names an encounter subject and contact or control location; neither position authenticates the writer.",
-      "tuple_claim": "The encounter subject is at first contact, within the republic's jurisdiction, or under its effective control.",
-      "current_writer_authority": "Any fact-store writer can assert, omit, or alter the encounter tuple; the constitutional rule excludes a subject already marked public but authenticates no human subject or location.",
-      "required_writer_authority": "The subject may self-assert or petition directly, while a source-bound contact or control record can be independently checked without making that record a prerequisite for immediate standing.",
-      "current_provenance": "The tuple carries no civil identity, citizenship, document, capacity, family, liability, status, timestamp, writer identity, or reconciliation history.",
-      "required_provenance": "A provenance-preserving encounter receipt with source, time, correction, alias separation, and challenge history, while the temporary handle remains distinct from civil identity.",
+      "claimed_actor": "The tuple names a subject and a typed contact, control, statutory-age, or placement-availability condition; neither position authenticates the writer.",
+      "tuple_claim": "The subject is at a source-typed condition: a standing root, GeneralAdulthood evidence, or PlacementHome availability. Each constant has a separate consumer and cannot substitute for another.",
+      "current_writer_authority": "Any fact-store writer can assert, omit, or alter an at tuple. The formal rules keep each constant purpose-bound but authenticate neither the subject nor condition.",
+      "required_writer_authority": "Standing stays immediately self-assertable; adulthood evidence follows the non-discretionary statutory source and alternative-evidence route; placement availability requires affected-person participation and independent challenge.",
+      "current_provenance": "The tuple carries a typed constant but no civil identity, citizenship, capacity, family status, timestamp, source digest, writer identity, reconciliation history, safe address, consent, or delivery evidence.",
+      "required_provenance": "Purpose-specific provenance, time, source, correction, uncertainty, challenge, and independent review without turning any record into a prerequisite for standing or proof of delivery.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
@@ -2122,19 +2084,21 @@
         "target": "person",
         "evidence_ref": "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::? person(UnregisteredContact)."
       },
-      "current_challenge_route": "The constitutional input supplies no writer, receipt, correction, reconciliation, independent check, or remedy; direct person facts remain writable and direct petition is not barred.",
-      "required_challenge_route": "Immediate self-assertion and direct petition without an intermediary, followed by accessible independent challenge, correction, alias separation, and provenance-preserving reconciliation.",
+      "current_challenge_route": "The constitutional input supplies no authenticated writer or operating correction process. Direct petition remains available; the family/life-course effects require continuity and challenge without claiming implementation.",
+      "required_challenge_route": "Immediate self-assertion for standing, alternative age evidence and provisional continuity for adulthood, and private independent placement challenge for PlacementHome, all with provenance-preserving correction.",
       "risk_dispositions": [
         "patchable",
         "external",
         "deliberately_refused"
       ],
       "refused_alternative": "Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.",
-      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "roster-person",
         "standing",
         "first-contact",
+        "adulthood",
+        "placement",
         "record-integrity"
       ]
     },

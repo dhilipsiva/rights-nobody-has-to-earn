@@ -49,18 +49,18 @@ assurance case, or prove that an institution acts on a finding.
 
 ### RT-2 — Adulthood
 
-- **Writable premise(s):** `mature`
-- **Executed delta coverage:** `mature`: addition, deletion
-- **Assertion harm:** One unauthenticated `mature(Cira)` grants the franchise conclusion while every unrelated status remains unchanged.
-- **Withholding/deletion harm:** Removing Hano's sole adulthood entry removes the franchise while personhood, custody, and the floor remain. A flat missing entry cannot say whether adulthood was not reached, never recorded, withheld, or deleted.
+- **Writable premise(s):** `at`
+- **Executed delta coverage:** `at`: addition, deletion
+- **Assertion harm:** One unauthenticated `at(Cira, GeneralAdulthood)` assertion grants the franchise conclusion while every unrelated status remains unchanged.
+- **Withholding/deletion harm:** Removing Hano's sole typed adulthood-evidence entry removes the franchise while personhood, custody, and the floor remain. A flat missing entry cannot say whether adulthood was not reached, never recorded, withheld, or deleted.
 - **Claimant/public-power polarity:** The record may not let an official manufacture duplicate votes, but disputed or missing adulthood evidence must not become discretionary disenfranchisement.
-- **Current detectability:** The harness proves the assertion and disappearance consequences and a live comparison subject. The current temporal path makes a maturity dispute contestable but does not verify age, adulthood authority, writer identity, or the cause of a pre-attestation absence.
-- **Safe default:** Use a non-discretionary temporal rule and preserve political access while status is reconciled; treat identity and one-person uniqueness as separate assurance questions.
+- **Current detectability:** The harness proves the assertion and disappearance consequences and a live comparison subject. The current source treats `at(_, GeneralAdulthood)` as bounded supplied age evidence; it does not verify age, writer identity, or the cause of a missing attestation.
+- **Safe default:** Adulthood is not constituted by a registry entry. Preserve political access while disputed age evidence is reconciled, and treat identity and one-person uniqueness as separate assurance questions.
 - **Authorised-disposition boundary:** Correction may supersede a mistaken adulthood entry only through a challengeable status record that preserves political continuity and does not silently erase a valid vote.
 - **Opposite-failure test:** A second certificate must be tested with adulthood evidenced but the certificate absent. If the missing official write suppresses the ballot, the design has created the withholding gate this task forbids.
-- **Temporal status:** Same-snapshot franchise consequences remain tested. T1/T3 are implemented, including a challenged maturity case, but no age threshold or automatic adulthood transition has been enacted.
-- **Residual limit:** The current constitution defines neither an age threshold nor automatic transition; this red-team does not choose either.
-- **Assurance or repair owner:** `new-book-plans/temporal-assurance-case.json::"id": "TA-21"`
+- **Temporal status:** Same-snapshot franchise consequences remain tested. T1/T3 are unchanged; typed adulthood evidence does not constitute adulthood, and outside age, clock, and process liveness remain unestablished.
+- **Residual limit:** The current constitution formalizes only the typed supplied-record consequence and anti-denial wall; it does not prove the common-tier age, an outside clock, or an operational status process.
+- **Assurance or repair owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`
 - **Executable scenarios:** `RS-02`, `RS-03`
 
 ### RT-3 — Bare carry-report boundary
@@ -120,8 +120,8 @@ full verifier executes the resulting ephemeral snapshot independently.
 | --- | --- | --- |
 | `base` | â€” | â€” |
 | `free_adam` | `free(Adam).` | â€” |
-| `mature_cira` | `mature(Cira).` | â€” |
-| `no_mature_hano` | â€” | `mature(Hano).` |
+| `adulthood_cira` | `at(Cira, GeneralAdulthood).` | â€” |
+| `no_adulthood_hano` | â€” | `at(Hano, GeneralAdulthood).` |
 | `no_person_bela` | â€” | `person(Bela).` |
 | `carry_forge_base` | `person(Carry_Forge).`<br>`choose(Electorate, Carry_Forge).`<br>`work(Carry_Forge, RedTeam).` | â€” |
 | `carry_forge_marked` | `person(Carry_Forge).`<br>`choose(Electorate, Carry_Forge).`<br>`work(Carry_Forge, RedTeam).`<br>`rotten(Carry_Forge).` | â€” |
@@ -139,8 +139,8 @@ full verifier executes the resulting ephemeral snapshot independently.
 | scenario | route(s) | kind | result | attribution limit |
 | --- | --- | --- | --- | --- |
 | `RS-01` One constructed unauthenticated release write reverses custody | `RT-1` | `assertion` | `current_harm_reproduced` | `writer_and_authority_not_attributable_in_flat_snapshot` |
-| `RS-02` One constructed unauthenticated adulthood write grants the ballot | `RT-2` | `assertion` | `current_harm_reproduced` | `writer_and_authority_not_attributable_in_flat_snapshot` |
-| `RS-03` A missing adulthood entry removes the ballot | `RT-2` | `disappearance` | `current_harm_reproduced` | `constructed_source_delta_not_runtime_attribution` |
+| `RS-02` One constructed unauthenticated adulthood-evidence write grants the ballot | `RT-2` | `assertion` | `current_harm_reproduced` | `writer_and_authority_not_attributable_in_flat_snapshot` |
+| `RS-03` A missing adulthood-evidence entry removes the ballot | `RT-2` | `disappearance` | `current_harm_reproduced` | `constructed_source_delta_not_runtime_attribution` |
 | `RS-04` Roster omission erases protections while sanctions survive | `RT-4` | `disappearance` | `current_harm_reproduced` | `constructed_source_delta_not_runtime_attribution` |
 | `RS-05` A bare carry report has no legal force | `RT-3` | `negative_control` | `negative_control_preserved` | `raw_temporal_input_boundary` |
 | `RS-07` The current two-entry forgiveness shape has both forgery and withholding failures | `RT-5` | `two_entry_matrix` | `current_harm_reproduced` | `writer_independence_not_represented_in_flat_snapshot` |
@@ -190,43 +190,43 @@ full verifier executes the resulting ephemeral snapshot independently.
 - `owe(State, Dwell, Adam)` stays **TRUE** from `base` to `free_adam` — Release does not remove the itemised floor debt.
 - `entitled(Adam, event { dwell() })` stays **TRUE** from `base` to `free_adam` — Release does not remove the exact opaque shelter entitlement.
 
-### RS-02 — One constructed unauthenticated adulthood write grants the ballot
+### RS-02 — One constructed unauthenticated adulthood-evidence write grants the ballot
 
 **CURRENT HARM REPRODUCED**
 
 - **Attribution:** `writer_and_authority_not_attributable_in_flat_snapshot`
-- **States:** `base`, `mature_cira`
-- **Interpretation:** The engine proves the franchise's one-write dependency. It does not prove Cira's age or who wrote the status.
+- **States:** `base`, `adulthood_cira`
+- **Interpretation:** The engine proves the franchise's one-write supplied-record dependency. It does not prove Cira's age, adulthood, or who wrote the status.
 - **Authorised-disposition boundary:** A corrected adulthood record must be challengeable and preserve political continuity while identity and status are reconciled.
 - **Opposite failure:** A second adulthood certificate would add an official veto; the valid-status/companion-missing state must never silently disenfranchise.
-- **Residual limit:** No age threshold, transition date, identity uniqueness, or voting event is modeled.
+- **Residual limit:** No common-tier age, outside clock, identity uniqueness, or voting event is modeled.
 
 | state | query | expected | purpose |
 | --- | --- | --- | --- |
 | `base` | `person(Cira)` | **TRUE** | Cira is already a roster person. |
-| `base` | `mature(Cira)` | **FALSE** | The live snapshot contains no adulthood entry. |
+| `base` | `at(Cira, GeneralAdulthood)` | **FALSE** | The live snapshot contains no adulthood entry. |
 | `base` | `decide(Cira, Ballot)` | **FALSE** | The ballot does not derive before the write. |
 | `base` | `travel(Cira)` | **TRUE** | Unrelated standing and mobility are live. |
-| `mature_cira` | `person(Cira)` | **TRUE** | The roster is unchanged. |
-| `mature_cira` | `mature(Cira)` | **TRUE** | The exact overlay assertion is visible. |
-| `mature_cira` | `decide(Cira, Ballot)` | **TRUE** | The one write grants the franchise conclusion. |
-| `mature_cira` | `travel(Cira)` | **TRUE** | Unrelated mobility remains live. |
+| `adulthood_cira` | `person(Cira)` | **TRUE** | The roster is unchanged. |
+| `adulthood_cira` | `at(Cira, GeneralAdulthood)` | **TRUE** | The exact overlay assertion is visible. |
+| `adulthood_cira` | `decide(Cira, Ballot)` | **TRUE** | The one write grants the franchise conclusion. |
+| `adulthood_cira` | `travel(Cira)` | **TRUE** | Unrelated mobility remains live. |
 
 **Discriminating flips**
 
-- `decide(Cira, Ballot)`: `base` FALSE → `mature_cira` TRUE — One adulthood assertion grants the ballot conclusion.
+- `decide(Cira, Ballot)`: `base` FALSE → `adulthood_cira` TRUE — One adulthood assertion grants the ballot conclusion.
 
 **Preserved controls**
 
-- `person(Cira)` stays **TRUE** from `base` to `mature_cira` — Personhood predates and survives the adulthood write.
-- `travel(Cira)` stays **TRUE** from `base` to `mature_cira` — The write changes the franchise route rather than general standing.
+- `person(Cira)` stays **TRUE** from `base` to `adulthood_cira` — Personhood predates and survives the adulthood write.
+- `travel(Cira)` stays **TRUE** from `base` to `adulthood_cira` — The write changes the franchise route rather than general standing.
 
-### RS-03 — A missing adulthood entry removes the ballot
+### RS-03 — A missing adulthood-evidence entry removes the ballot
 
 **CURRENT HARM REPRODUCED**
 
 - **Attribution:** `constructed_source_delta_not_runtime_attribution`
-- **States:** `base`, `no_mature_hano`
+- **States:** `base`, `no_adulthood_hano`
 - **Interpretation:** The harness knows it constructed this fixture by deletion. A deployment seeing only the later flat snapshot would not know whether the entry was deleted, withheld, never written, or inapplicable.
 - **Authorised-disposition boundary:** A lawful status correction needs an independently reviewable basis and continuity; unexplained disappearance is not an authorised disposition.
 - **Opposite failure:** Requiring another official entry would create another disappearance whose absence can suppress the ballot.
@@ -234,27 +234,27 @@ full verifier executes the resulting ephemeral snapshot independently.
 
 | state | query | expected | purpose |
 | --- | --- | --- | --- |
-| `base` | `mature(Hano)` | **TRUE** | The source entry exists before fixture construction. |
+| `base` | `at(Hano, GeneralAdulthood)` | **TRUE** | The source entry exists before fixture construction. |
 | `base` | `decide(Hano, Ballot)` | **TRUE** | Hano's franchise is live before the deletion. |
 | `base` | `person(Hano)` | **TRUE** | Hano's standing is live before the deletion. |
 | `base` | `prisoner(Hano)` | **TRUE** | Hano's custody is live before the deletion. |
-| `no_mature_hano` | `mature(Hano)` | **FALSE** | The constructed snapshot omits the exact entry. |
-| `no_mature_hano` | `decide(Hano, Ballot)` | **FALSE** | The franchise disappears with the entry. |
-| `no_mature_hano` | `person(Hano)` | **TRUE** | Standing remains. |
-| `no_mature_hano` | `prisoner(Hano)` | **TRUE** | Custody remains. |
-| `no_mature_hano` | `owe(State, Eats, Hano)` | **TRUE** | The itemised floor debt remains. |
-| `no_mature_hano` | `entitled(Hano, event { eats() })` | **TRUE** | The exact opaque food entitlement remains in the full source. |
-| `no_mature_hano` | `mature(Jala)` | **TRUE** | A second adulthood entry remains as a liveness control. |
-| `no_mature_hano` | `decide(Jala, Ballot)` | **TRUE** | The franchise rule remains live for the comparison subject. |
+| `no_adulthood_hano` | `at(Hano, GeneralAdulthood)` | **FALSE** | The constructed snapshot omits the exact entry. |
+| `no_adulthood_hano` | `decide(Hano, Ballot)` | **FALSE** | The franchise disappears with the entry. |
+| `no_adulthood_hano` | `person(Hano)` | **TRUE** | Standing remains. |
+| `no_adulthood_hano` | `prisoner(Hano)` | **TRUE** | Custody remains. |
+| `no_adulthood_hano` | `owe(State, Eats, Hano)` | **TRUE** | The itemised floor debt remains. |
+| `no_adulthood_hano` | `entitled(Hano, event { eats() })` | **TRUE** | The exact opaque food entitlement remains in the full source. |
+| `no_adulthood_hano` | `at(Jala, GeneralAdulthood)` | **TRUE** | A second adulthood entry remains as a liveness control. |
+| `no_adulthood_hano` | `decide(Jala, Ballot)` | **TRUE** | The franchise rule remains live for the comparison subject. |
 
 **Discriminating flips**
 
-- `decide(Hano, Ballot)`: `base` TRUE → `no_mature_hano` FALSE — The exact one-line disappearance removes Hano's franchise.
+- `decide(Hano, Ballot)`: `base` TRUE → `no_adulthood_hano` FALSE — The exact one-line disappearance removes Hano's franchise.
 
 **Preserved controls**
 
-- `person(Hano)` stays **TRUE** from `base` to `no_mature_hano` — Personhood is not the cause of the flip.
-- `prisoner(Hano)` stays **TRUE** from `base` to `no_mature_hano` — Custody is not the cause of the flip.
+- `person(Hano)` stays **TRUE** from `base` to `no_adulthood_hano` — Personhood is not the cause of the flip.
+- `prisoner(Hano)` stays **TRUE** from `base` to `no_adulthood_hano` — Custody is not the cause of the flip.
 
 ### RS-04 — Roster omission erases protections while sanctions survive
 
@@ -276,7 +276,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `base` | `false(Bela)` | **TRUE** | The adverse voiding chain is live before omission. |
 | `base` | `lose(Points, Bela)` | **TRUE** | The adverse loss is live before omission. |
 | `no_person_bela` | `person(Bela)` | **FALSE** | The sole roster entry is absent. |
-| `no_person_bela` | `mature(Bela)` | **TRUE** | The adulthood entry survives. |
+| `no_person_bela` | `at(Bela, GeneralAdulthood)` | **TRUE** | The adulthood entry survives. |
 | `no_person_bela` | `decide(Bela, Ballot)` | **FALSE** | The franchise disappears. |
 | `no_person_bela` | `travel(Bela)` | **FALSE** | Mobility disappears. |
 | `no_person_bela` | `owe(State, Eats, Bela)` | **FALSE** | The itemised State debt disappears. |
@@ -469,16 +469,16 @@ temporal scopes. No extra fact identifies which world occurred.
 | `free(Adam)` | **FALSE** |
 | `prisoner(Adam)` | **TRUE** |
 
-### OE-2 — Never-written, withheld, and pre-attestation-deleted adulthood
+### OE-2 — Never-written, withheld, and pre-attestation-deleted adulthood evidence
 
 - **One snapshot:** `base`
 - **Worlds with the same record:** Cira has not reached the legal condition.; Cira reached it but the entry was withheld.; The entry was removed before the first attested snapshot.
-- **Boundary:** The current source sees only non-entry and cannot attribute its cause or establish biological or legal adulthood; the T3 dispute route does not manufacture the missing fact.
+- **Boundary:** The current source sees only non-entry and cannot attribute its cause or establish biological or legal adulthood; the formal rule does not manufacture the missing fact.
 - **Prohibited inference:** The missing entry may not become proof of incapacity or a discretionary official power to deny political standing.
 
 | query | expected in every described world |
 | --- | --- |
-| `mature(Cira)` | **FALSE** |
+| `at(Cira, GeneralAdulthood)` | **FALSE** |
 | `decide(Cira, Ballot)` | **FALSE** |
 
 ### OE-3 — Roster non-entry, withholding, and pre-attestation deletion
@@ -557,9 +557,9 @@ Remaining gap owner: `TODO.md::### Expansion phase 2 — Specify the comprehensi
 ## Maintenance
 
 - Reviewed source: `new-book-plans/record-integrity-red-team.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `d872b015db94f5d7bc9ececd8bc5b29511544ca5c27e3b6096fbc935a3c19ce7`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `38cf5392e9efc65c66a0d92df608354f3691a6fdd37f9e39889fc1502544ee10`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `8d58f953f5c0fa415254137badf2b22c3da80035792eedbabaf82f0081cbad73`.
 - Regenerate only through `python3 new-book-plans/9-record-integrity-red-team.py`.
 - Fast freshness/schema check: `python3 new-book-plans/9-record-integrity-red-team.py --check`.
 - Executable check: `python3 new-book-plans/9-record-integrity-red-team.py --check --execute`.

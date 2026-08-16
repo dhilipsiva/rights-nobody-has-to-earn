@@ -25,8 +25,8 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `231b03a4487a723548531becfcc98bdce6c75b98f6637f227387cdf70007e2bd`.
-- Authored-fact fingerprint: `9dcc1901c976ef7fa1c806973c911cd27f4b80d03050b1750b9b17c986b6ed44`.
+- Authored-rule fingerprint: `7688c03dbe3bac922ada1b22cd0ce9e6148e3688d6d9130fe2541c3be0331997`.
+- Authored-fact fingerprint: `16868f1fc40d24051bfcc1f4f02bb76757d4a646b829c0a09b93e84fd39d5f11`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
 
@@ -69,7 +69,7 @@ the contract ledger.
 | `related` | 0 | no | yes | no | `derived_only` | `derived-only-related` | positive `correct`, positive `err`, positive `match` |
 | `reward` | 4 | no | yes | no | `derived_only` | `derived-only-reward` | none |
 | `secure` | 4 | no | no | no | `pending_interface` | `floor-actuality-secure-pending` | none |
-| `severe` | 1 | no | yes | no | `derived_only` | `derived-only-severe` | negative `building`, negative `fit`, positive `building`, positive `dwell` |
+| `severe` | 1 | no | yes | no | `derived_only` | `derived-only-severe` | negative `fit`, positive `building`, positive `dwell` |
 | `succeed` | 2 | no | yes | no | `derived_only` | `derived-only-succeed` | positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` |
 | `time` | 2 | no | yes | no | `derived_only` | `derived-only-time` | positive `correct` |
 | `travel` | 5 | no | no | no | `pending_interface` | `liberty-travel-pending` | none |
@@ -84,12 +84,12 @@ channels. No exceptional channel exists in the current contract.
 | --- | --- | --- | --- | --- | --- |
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `approves` | amendment, democracy, public-power, time | `become` | patchable, external | positive `become`, positive `collide`, positive `correct` | `9915b8691afeed45` |
-| `at` | roster-person, standing, first-contact, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `4790557f3ede7a1a` |
+| `at` | roster-person, standing, first-contact, adulthood, placement, record-integrity | `person` | patchable, external, deliberately_refused | negative `dwell`, positive `building`, positive `decide`, positive `dwell`, positive `person`, positive `prevents` | `4ed39fcb58fb931e` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `3573b6207d971c26` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `decide`, positive `err`, positive `false`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `bb508da41416e32a` |
 | `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
-| `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `65be047ee2ff4cd2` |
-| `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `df0e5ba1ab49c076` |
+| `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `6fa58bc4be130c53` |
+| `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `9d000cd29a2bee16` |
 | `carries` | epoch-carry, record-integrity, time, witness | `err` | patchable, external | negative `err`, positive `err`, positive `match` | `19621bd13b05a5cd` |
 | `challenge` | challenge, record-integrity, time | `collide` | patchable, external | positive `collide`, positive `err`, positive `obliged` | `f698abded904ad1c` |
 | `choose` | seating, public-body, democracy | `permits` | patchable, external, deliberately_refused | positive `authority`, positive `permits` | `1a1477d3ac30c864` |
@@ -98,29 +98,28 @@ channels. No exceptional channel exists in the current contract.
 | `continue` | case-binding, public-power, renewal, time | `collide` | patchable, external | positive `collide`, positive `concurrent`, positive `correct` | `505e9935faa35ca3` |
 | `cruel` | justice, placement | `severe` | patchable, external | positive `severe` | `0093de3740303697` |
 | `date` | public-power, record-integrity, time, window | `time` | patchable, external | positive `collide`, positive `correct`, positive `time` | `07e156c91908a377` |
-| `deceive` | justice, liberty | `defend` | patchable, external | negative `defend`, negative `false`, negative `reward`, positive `false` | `572e367f36413d52` |
-| `family` | placement, privacy | `building` | patchable, external | negative `building`, negative `fit`, positive `building`, positive `dwell` | `7ab1a419e85f2887` |
+| `deceive` | justice, liberty | `defend` | patchable, external | negative `defend`, negative `false`, negative `reward`, positive `false` | `a4f72b9ecee3e1f4` |
+| `family` | family, privacy, anti-substitution | `prevents` | patchable, external | positive `prevents` | `4c0ec69c70d09743` |
 | `forgive` | justice, epoch-carry | `clean` | patchable, external | positive `clean` | `4aec77f843480e11` |
 | `free` | release, time, justice | `prisoner` | patchable, external | negative `prisoner`, positive `person` | `90761d03f8b013b4` |
 | `hears` | delivery, accessibility | `learn` | patchable, external | positive `learn` | `74985a06768cd9ab` |
-| `home` | placement, housing, privacy | `building` | patchable, external | negative `dwell`, positive `building`, positive `dwell` | `fc6d2e5aecde311b` |
+| `home` | home, privacy, anti-substitution | `prevents` | patchable, external | positive `prevents` | `01c35f39cdc0b067` |
 | `injure` | justice, placement | `severe` | patchable, external | positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `severe` | `e91a338c6eda3e8c` |
-| `judge` | justice, audit, public-body | `reward` | patchable, external | positive `clean`, positive `correct`, positive `err`, positive `false`, positive `match`, positive `permits`, positive `prisoner`, positive `reward` | `5f35c2e005d930c0` |
+| `judge` | justice, audit, public-body | `reward` | patchable, external | positive `clean`, positive `correct`, positive `err`, positive `false`, positive `match`, positive `permits`, positive `prisoner`, positive `reward` | `66e13db045016d38` |
 | `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `29307709e75c2d44` |
 | `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
-| `married` | audit, privacy, conflict | `false` | patchable, external | negative `false` | `2501ab2c0b2d02aa` |
-| `mature` | adulthood, democracy, time | `decide` | patchable, external | positive `decide` | `0c872905b2585b4a` |
+| `married` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `7ef6097705ac2859` |
 | `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `err`, positive `match`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `succeed`, positive `time` | `5dfc1c12e584df77` |
-| `parent` | audit, privacy, conflict | `false` | patchable, external | negative `false`, positive `false` | `6ed3d63a3f8a478a` |
+| `parent` | audit, privacy, conflict | `false` | patchable, external | positive `false` | `316cc4529059bf17` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `c47b9efbe78a749e` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` | `a6439fd252eca141` |
+| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` | `ae9c7cf556c7eb76` |
 | `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority`, positive `prevents` | `6c4ddcc62e4e5693` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
 | `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `e27be4808b3e69d4` |
 | `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `err`, positive `match` | `ee4885e9421cf030` |
 | `show` | liberty, public-body, record-integrity | `defend` | patchable, external, deliberately_refused | positive `defend` | `6f8d9509bc118699` |
-| `sibling` | audit, privacy, conflict | `false` | patchable, external | negative `false` | `2501ab2c0b2d02aa` |
+| `sibling` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `a66effae83ee434b` |
 | `suggest` | amendment, public-body | `become` | patchable, external | positive `become`, positive `false` | `c40d4481c5b33c85` |
 | `teaches` | delivery, recognition | `reward` | patchable, external | positive `learn`, positive `reward` | `a139a1576872b087` |
 | `work` | recognition, contribution | `reward` | patchable, external | positive `reward` | `2ff40e4e63270014` |
@@ -161,20 +160,20 @@ channels. No exceptional channel exists in the current contract.
 
 ### `at`
 
-- **Tuple claim:** The encounter subject is at first contact, within the republic's jurisdiction, or under its effective control.
-- **Claimed actor:** The tuple names an encounter subject and contact or control location; neither position authenticates the writer.
-- **Current writer/authority:** Any fact-store writer can assert, omit, or alter the encounter tuple; the constitutional rule excludes a subject already marked public but authenticates no human subject or location.
-- **Required writer/authority:** The subject may self-assert or petition directly, while a source-bound contact or control record can be independently checked without making that record a prerequisite for immediate standing.
-- **Current provenance:** The tuple carries no civil identity, citizenship, document, capacity, family, liability, status, timestamp, writer identity, or reconciliation history.
-- **Required provenance:** A provenance-preserving encounter receipt with source, time, correction, alias separation, and challenge history, while the temporary handle remains distinct from civil identity.
+- **Tuple claim:** The subject is at a source-typed condition: a standing root, GeneralAdulthood evidence, or PlacementHome availability. Each constant has a separate consumer and cannot substitute for another.
+- **Claimed actor:** The tuple names a subject and a typed contact, control, statutory-age, or placement-availability condition; neither position authenticates the writer.
+- **Current writer/authority:** Any fact-store writer can assert, omit, or alter an at tuple. The formal rules keep each constant purpose-bound but authenticate neither the subject nor condition.
+- **Required writer/authority:** Standing stays immediately self-assertable; adulthood evidence follows the non-discretionary statutory source and alternative-evidence route; placement availability requires affected-person participation and independent challenge.
+- **Current provenance:** The tuple carries a typed constant but no civil identity, citizenship, capacity, family status, timestamp, source digest, writer identity, reconciliation history, safe address, consent, or delivery evidence.
+- **Required provenance:** Purpose-specific provenance, time, source, correction, uncertainty, challenge, and independent review without turning any record into a prerequisite for standing or proof of delivery.
 - **Cheapest harmful assert:** 1 operation(s): assert at(FabricatedSubject, FirstContact). A fabricated non-public encounter subject derives personhood, the constitutional floor, and State debts without authenticating a human encounter. Structural route: `at` → `person`. Evidence: `new-book-plans/constitution.nibli::at($subject, FirstContact) & ~public($subject) -> person($subject)`.
 - **Withholding/deletion harm:** 1 operation(s): withhold or delete at(UnregisteredContact, FirstContact). A real first-contact subject with no other root loses the formal person conclusion, floor, and State debts. Structural route: `at` → `person`. Evidence: `new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::? person(UnregisteredContact).`.
-- **Current challenge route:** The constitutional input supplies no writer, receipt, correction, reconciliation, independent check, or remedy; direct person facts remain writable and direct petition is not barred.
-- **Required challenge route:** Immediate self-assertion and direct petition without an intermediary, followed by accessible independent challenge, correction, alias separation, and provenance-preserving reconciliation.
+- **Current challenge route:** The constitutional input supplies no authenticated writer or operating correction process. Direct petition remains available; the family/life-course effects require continuity and challenge without claiming implementation.
+- **Required challenge route:** Immediate self-assertion for standing, alternative age evidence and provisional continuity for adulthood, and private independent placement challenge for PlacementHome, all with provenance-preserving correction.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.
-- **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
-- **Reviewed route fingerprint:** `4790557f3ede7a1a89c7a2e0bdc574327d2757d1b316e2f63afe63dcaba12147`.
+- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Reviewed route fingerprint:** `4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d`.
 
 ### `attack`
 
@@ -206,7 +205,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `3573b6207d971c26ef4d75801a7ceb5d78b5c3618d3a1ae1aa02822c23e2e506`.
+- **Reviewed route fingerprint:** `bb508da41416e32a678e0963cd48df14d29ac201ee8886576884d465446b4597`.
 
 ### `born`
 
@@ -239,7 +238,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Independent review, correction without silent deletion, and continuity while status is disputed.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `65be047ee2ff4cd2b396777d951eef2f7da7a71a0ac80f4252bdc835d8138443`.
+- **Reviewed route fingerprint:** `6fa58bc4be130c534a763f58d08bd1414751f290ceb14958c591d4c158fd88b6`.
 
 ### `capture`
 
@@ -255,7 +254,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subject access, contest, correction history, and independent case review.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions`.
-- **Reviewed route fingerprint:** `df0e5ba1ab49c076935fbee5d519490f1527d881b5bed9002e8a7348e5448fb3`.
+- **Reviewed route fingerprint:** `9d000cd29a2bee16382072c3200ce1672cc3ff19becb18788dbb490f272199ad`.
 
 ### `carries`
 
@@ -401,23 +400,23 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Prompt contest, independent review, correction history, and interim shield continuity.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `572e367f36413d528f0561a2bfbf7d48f38b9ee7b419f792a346e44d7277514e`.
+- **Reviewed route fingerprint:** `a4f72b9ecee3e1f46453b72b2d4264a676dc1ea5718688617c1aae8de824e268`.
 
 ### `family`
 
-- **Tuple claim:** A prisoner has a family relation relevant to placement.
-- **Claimed actor:** No writer is encoded; the unary fact classifies the confined person as having family.
-- **Current writer/authority:** Any fact-store writer can assert or omit the status.
-- **Required writer/authority:** The affected person and an authorised placement reviewer must be able to establish or dispute the status.
-- **Current provenance:** No relationship, consent, household, or currency evidence is required.
-- **Required provenance:** A purpose-limited, current, challengeable relationship record with privacy protection.
-- **Cheapest harmful assert:** 1 operation(s): assert `family(Adam)`. Adam gains a facility placement route solely from the new family flag. Structural route: `family` → `building`. Evidence: `new-book-plans/constitution.nibli::prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `family(Nando)`. Nando's recorded LowSec placement disappears and the no-family eligibility path replaces it. Structural route: `family` → `building`. Evidence: `new-book-plans/constitution.nibli::prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender)`.
-- **Current challenge route:** No relation contests or corrects family status.
-- **Required challenge route:** Private correction and placement appeal without making family a service gate.
+- **Tuple claim:** A person is described by a legacy family label; the label cannot establish relationship, duty, independence, care, authority, placement, or liberty.
+- **Claimed actor:** No writer is encoded; the unary fact is retained only as a legacy private-status input to an anti-substitution barrier.
+- **Current writer/authority:** Any fact-store writer can assert or omit the private label; no placement, care, authority, or delivery rule consumes it.
+- **Required writer/authority:** Any retained family description needs affected-person control, purpose limitation, privacy, correction, and no service or placement consequence.
+- **Current provenance:** No relationship, consent, household, duty, currency, or completeness evidence is represented.
+- **Required provenance:** A purpose-limited, current, challengeable relationship record separated into the source-specific family modules.
+- **Cheapest harmful assert:** 1 operation(s): assert `family(Adam)`. The record gains a false private family label, but placement and authority remain unchanged because family only reinforces an already universal anti-substitution barrier. Structural route: `family` → `prevents`. Evidence: `new-book-plans/constitution.nibli::person($x) & family($x) -> prevents($x, FamilyStatusSubstitution)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `family(Nando)`. The private label disappears without changing fit, dwell, destination, authority, care, or remedy; the missing correction history remains an external record-integrity risk. Structural route: `family` → `prevents`. Evidence: `new-book-plans/family-life-course.pins.nibli::# Family status is inert across placement.`.
+- **Current challenge route:** The formal barrier prevents status substitution but supplies no operating correction process.
+- **Required challenge route:** Private direct correction and remedy without making family a service, authority, independence, or placement gate.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `7ab1a419e85f28871c839ab899df62b1a3e43aab7dc27b84492cac43dfd2bcc8`.
+- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Reviewed route fingerprint:** `4c0ec69c70d097433d43850d445500ba4008506b43023e738d6998577aae9d22`.
 
 ### `forgive`
 
@@ -469,19 +468,19 @@ channels. No exceptional channel exists in the current contract.
 
 ### `home`
 
-- **Tuple claim:** A person has a home relevant to confinement placement.
-- **Claimed actor:** No writer is encoded; the unary fact reports that a person has a home.
-- **Current writer/authority:** Any fact-store writer can assert or remove housing status.
-- **Required writer/authority:** The affected person and an authorised placement body must be able to establish and contest the status.
-- **Current provenance:** No address, usability, consent, tenancy, accessibility, or currency evidence is required.
-- **Required provenance:** Purpose-limited proof that the location is available, safe, accessible, and consented to for the placement decision.
-- **Cheapest harmful assert:** 1 operation(s): assert `home(Adam)`. Adam gains a Homestay placement atom from a bare housing claim. Structural route: `home` → `building`. Evidence: `new-book-plans/constitution.nibli::prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `home(Hano)`. Hano's Homestay placement record disappears even though confinement still houses him through the default rule. Structural route: `home` → `building`. Evidence: `new-book-plans/constitution.nibli::prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x)`.
-- **Current challenge route:** No correction or placement appeal attaches to home status.
-- **Required challenge route:** Private correction and independent placement appeal, kept separate from free-person housing delivery.
+- **Tuple claim:** A person has a legacy protected-home label; it is not residence, household membership, ownership, placement availability, or housing delivery.
+- **Claimed actor:** No writer is encoded; the unary home fact is retained only as a protected-home/private-life label feeding an anti-substitution barrier.
+- **Current writer/authority:** Any fact-store writer can assert or remove the private label; placement reads only at(_, PlacementHome).
+- **Required writer/authority:** Any protected-home record needs affected-person control, privacy, correction, and separation from placement and service delivery.
+- **Current provenance:** No address, usability, consent, tenancy, accessibility, placement availability, or delivery evidence is represented.
+- **Required provenance:** Purpose-limited protected-home provenance and a separately sourced, current, challengeable PlacementHome availability record when placement is at issue.
+- **Cheapest harmful assert:** 1 operation(s): assert `home(Adam)`. The record gains a false private home label, but Homestay does not derive because placement requires the separate at(_, PlacementHome) input. Structural route: `home` → `prevents`. Evidence: `new-book-plans/constitution.nibli::person($x) & home($x) -> prevents($x, HomeStatusSubstitution)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `home(Hano)`. The private label disappears without changing Hano’s PlacementHome record or destination; provenance loss remains externally unassured. Structural route: `home` → `prevents`. Evidence: `new-book-plans/family-life-course.pins.nibli::# Home and placement-home availability remain distinct.`.
+- **Current challenge route:** The formal barrier prevents home-status substitution but supplies no operating correction or placement process.
+- **Required challenge route:** Private direct correction and independent review, separated from free-person housing delivery and placement availability.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `fc6d2e5aecde311bab334041520434be3c4d3cbae006200ff8b09f1792fdcf24`.
+- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Reviewed route fingerprint:** `01c35f39cdc0b0672dab583823f4c65201f49de6c510836bdc3842d9806375e8`.
 
 ### `injure`
 
@@ -513,7 +512,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Route-specific appeal, conflict control, correction history, and independent review.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `5f35c2e005d930c0e5fac9ffd5b94364334c3cfd9979c49630a68af60fdcf29f`.
+- **Reviewed route fingerprint:** `66e13db045016d38cfe3aabacf3d914b0c344fc34ff5cea384218aa60edd266b`.
 
 ### `limit`
 
@@ -549,35 +548,19 @@ channels. No exceptional channel exists in the current contract.
 
 ### `married`
 
-- **Tuple claim:** Two prospective co-signers are married.
+- **Tuple claim:** Two people carry a legacy married label; the label is no longer evidence for or against reviewer independence.
 - **Claimed actor:** The tuple names two related people and no writer or registrar.
 - **Current writer/authority:** Any fact-store writer can assert or omit the relationship.
 - **Required writer/authority:** The people concerned or a legally authorised civil-status source, with privacy and contest rights.
-- **Current provenance:** No source, consent, validity period, or correction history is required.
-- **Required provenance:** Purpose-limited relationship evidence current for the co-signing decision.
-- **Cheapest harmful assert:** 1 operation(s): assert `married(Gia, Hex)`. The only current cross-body pair is disqualified and Bela's voiding is suppressed. Structural route: `married` ─| `false`. Evidence: `new-book-plans/constitution.nibli::~married($a, $b) & ~married($b, $a)`.
-- **Withholding/deletion harm:** 1 operation(s): withhold a true `married(Gia, Hex)` entry. Related signers count as independent and can void Bela. Structural route: `married` ─| `false`. Evidence: `new-book-plans/constitution.nibli::~married($a, $b) & ~married($b, $a)`.
-- **Current challenge route:** No private correction or co-signing challenge exists.
-- **Required challenge route:** Confidential correction and recusal challenge before the voiding takes effect.
+- **Current provenance:** No source, consent, legal scope, currency, purpose, or correction history is represented.
+- **Required provenance:** Purpose-limited private relationship evidence, kept separate from the affirmative case-bound reviewer-independence record.
+- **Cheapest harmful assert:** 1 operation(s): assert `married(Gia, Hex)`. The record gains a private married label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records. Structural route: `married` → `prevents`. Evidence: `new-book-plans/constitution.nibli::person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete a true `married(Gia, Hex)` entry. The relationship record becomes incomplete, but the absence cannot prove independence or change the voiding result. Structural route: `married` → `prevents`. Evidence: `new-book-plans/constitution.nibli::person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution)`.
+- **Current challenge route:** The formal independence rule ignores the label; no operating private correction route is established.
+- **Required challenge route:** Confidential correction plus a separate challenge to the affirmative case-bound independence record.
 - **Risk disposition:** patchable, external.
-- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
-- **Reviewed route fingerprint:** `2501ab2c0b2d02aa80e88f63e074a331e14c62d0f69f3712eb0292279c19d02a`.
-
-### `mature`
-
-- **Tuple claim:** A person has reached the franchise's adulthood condition.
-- **Claimed actor:** No finder, writer, or legal adulthood authority is encoded.
-- **Current writer/authority:** Any fact-store writer can grant or withhold the status.
-- **Required writer/authority:** A non-discretionary adulthood rule with independently assured evidence and a serve-while-reconciling path.
-- **Current provenance:** No birth, age, adjudication, temporal transition, or source record is represented.
-- **Required provenance:** A challengeable adulthood basis that does not let an official withhold political standing.
-- **Cheapest harmful assert:** 1 operation(s): assert `mature(Cira)`. Cira receives the franchise conclusion from a single unauthenticated status write. Structural route: `mature` → `decide`. Evidence: `new-book-plans/constitution.nibli::person($x) & mature($x) -> decide($x, Ballot)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `mature(Hano)`. Hano loses the franchise conclusion while personhood and conviction remain. Structural route: `mature` → `decide`. Evidence: `new-book-plans/constitution.nibli::person($x) & mature($x) -> decide($x, Ballot)`.
-- **Current challenge route:** A supplied `challenge(_, MaturityRecord, TemporalReview)` now derives a dispute error and inert Appeals duty; it does not correct `mature`, preserve the ballot conclusion, authenticate receipt, or make anyone act.
-- **Required challenge route:** Immediate contest and continuity of political access while the status record is reconciled.
-- **Risk disposition:** patchable, external.
-- **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `0c872905b2585b4aee023d50cfbc45f6440d6e33d3134304bb319e9f34c3bbc9`.
+- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Reviewed route fingerprint:** `7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6`.
 
 ### `observe`
 
@@ -597,19 +580,19 @@ channels. No exceptional channel exists in the current contract.
 
 ### `parent`
 
-- **Tuple claim:** One person is the parent of another for conflict and judge-your-child rules.
+- **Tuple claim:** One person is the parent of another for the affirmative judge-your-child conflict rule; parenthood is not reviewer-independence evidence.
 - **Claimed actor:** The tuple names two people in an alleged parent relationship and no writer.
 - **Current writer/authority:** Any fact-store writer can assert or omit parenthood.
 - **Required writer/authority:** A legally recognised, purpose-limited source with correction and privacy rights.
 - **Current provenance:** No source, legal status, scope, or correction history is attached.
 - **Required provenance:** Current relationship evidence limited to the conflict decision at issue.
-- **Cheapest harmful assert:** 1 operation(s): assert `parent(Gia, Hex)`. The current cross-body signers are treated as related and Bela's voiding is suppressed. Structural route: `parent` → `false`. Evidence: `new-book-plans/constitution.nibli::~parent($a, $b) & ~parent($b, $a)`.
+- **Cheapest harmful assert:** 1 operation(s): assert `parent(Dev, Esa)`. A supplied parent relation beside Dev’s judgment derives the source-specific judge-child conflict verdict against Dev; it does not decide co-signer independence. Structural route: `parent` → `false`. Evidence: `new-book-plans/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)`.
 - **Withholding/deletion harm:** 1 operation(s): delete `parent(Dev, Esa)`. Dev's prohibited judgment of his child no longer voids him. Structural route: `parent` → `false`. Evidence: `new-book-plans/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)`.
-- **Current challenge route:** No correction or recusal challenge exists.
-- **Required challenge route:** Confidential relationship correction and independent conflict review.
+- **Current challenge route:** No operating correction route exists; co-signer independence now uses separate affirmative case-bound authorised records.
+- **Required challenge route:** Confidential parentage correction and independent review of the specific judge-child conflict record.
 - **Risk disposition:** patchable, external.
-- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
-- **Reviewed route fingerprint:** `6ed3d63a3f8a478a4361390d92f96cc1b4d424ec0f342ad2a44155ad47246512`.
+- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Reviewed route fingerprint:** `316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0`.
 
 ### `passport`
 
@@ -658,7 +641,7 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.
 - **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
-- **Reviewed route fingerprint:** `a6439fd252eca1414050090d64f61cb8af7bc7fd4c67cf2bcc6e1edbe51b5d0b`.
+- **Reviewed route fingerprint:** `ae9c7cf556c7eb769c3340477fb3c7458d5d5a5303f50375d4ca87605de91f4d`.
 
 ### `public`
 
@@ -743,19 +726,19 @@ channels. No exceptional channel exists in the current contract.
 
 ### `sibling`
 
-- **Tuple claim:** Two prospective co-signers are siblings.
+- **Tuple claim:** Two people carry a legacy sibling label; the label is no longer evidence for or against reviewer independence.
 - **Claimed actor:** The tuple names two related people and no writer or registrar.
 - **Current writer/authority:** Any fact-store writer can assert or omit the relationship.
 - **Required writer/authority:** The people concerned or a legally authorised civil-status source, with privacy and contest rights.
-- **Current provenance:** No source, legal scope, or correction history is required.
-- **Required provenance:** Purpose-limited relationship evidence current for the co-signing decision.
-- **Cheapest harmful assert:** 1 operation(s): assert `sibling(Gia, Hex)`. The only current cross-body pair is disqualified and Bela's voiding is suppressed. Structural route: `sibling` ─| `false`. Evidence: `new-book-plans/constitution.nibli::~sibling($a, $b) & ~sibling($b, $a)`.
-- **Withholding/deletion harm:** 1 operation(s): withhold a true `sibling(Gia, Hex)` entry. Related signers count as independent and can void Bela. Structural route: `sibling` ─| `false`. Evidence: `new-book-plans/constitution.nibli::~sibling($a, $b) & ~sibling($b, $a)`.
-- **Current challenge route:** No private correction or co-signing challenge exists.
-- **Required challenge route:** Confidential correction and recusal challenge before the voiding takes effect.
+- **Current provenance:** No source, consent, legal scope, currency, purpose, or correction history is represented.
+- **Required provenance:** Purpose-limited private relationship evidence, kept separate from the affirmative case-bound reviewer-independence record.
+- **Cheapest harmful assert:** 1 operation(s): assert `sibling(Gia, Hex)`. The record gains a private sibling label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records. Structural route: `sibling` → `prevents`. Evidence: `new-book-plans/constitution.nibli::person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete a true `sibling(Gia, Hex)` entry. The relationship record becomes incomplete, but the absence cannot prove independence or change the voiding result. Structural route: `sibling` → `prevents`. Evidence: `new-book-plans/constitution.nibli::person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution)`.
+- **Current challenge route:** The formal independence rule ignores the label; no operating private correction route is established.
+- **Required challenge route:** Confidential correction plus a separate challenge to the affirmative case-bound independence record.
 - **Risk disposition:** patchable, external.
-- **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-4 — Visibility, privacy, and effective challenge`.
-- **Reviewed route fingerprint:** `2501ab2c0b2d02aa80e88f63e074a331e14c62d0f69f3712eb0292279c19d02a`.
+- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Reviewed route fingerprint:** `a66effae83ee434bf2303e7523c1a141bc4702c3ae6b8292c4506110e96aa14a`.
 
 ### `suggest`
 

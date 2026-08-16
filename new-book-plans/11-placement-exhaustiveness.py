@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 """Validate, execute, and render the placement-exhaustiveness audit.
 
-The reviewed JSON source owns the current severity/family/home matrix, exact
+The reviewed JSON source owns the current severity/family/placement-home matrix, exact
 producer and destination manifest, bounded source mutations, narrowness
 impacts, and limits.  This program generates every matrix case, builds an
 ephemeral knowledge base, and asks the release ``nibli-pin`` binary to check
@@ -141,21 +141,21 @@ ACCEPTANCE_KEYS = {"result", "claim", "does_not_establish", "remaining_boundary"
 NARROWNESS_CLASSIFICATIONS = {"preserved", "revised_and_scoped"}
 
 HISTORICAL_DWELL_LINE = (
-    "all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x).\n"
+    "all $x: prisoner($x) & fit($x, Homestay) & ~at($x, PlacementHome) -> dwell($x).\n"
 )
-LOWSEC_LINE = (
-    "all $offender: prisoner($offender) & family($offender) & "
-    "~severe($offender) -> building(LowSec, $offender).\n"
+HOMESTAY_LINE = (
+    "all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) "
+    "-> building(Homestay, $x).\n"
 )
-REVERSED_LOWSEC_LINE = (
-    "all $offender: prisoner($offender) & family($offender) & "
-    "~severe($offender) -> building(HighSec, $offender).\n"
+REVERSED_HOMESTAY_LINE = (
+    "all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) "
+    "-> building(HighSec, $x).\n"
 )
 DUPLICATE_APPEND = (
     "\n# Placement-exhaustiveness duplicate-destination mutation "
     "(generated, not enacted).\n"
-    "all $x: prisoner($x) & home($x) & fit($x, Homestay) "
-    "-> building(LowSec, $x).\n"
+    "all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) "
+    "-> building(HighSec, $x).\n"
 )
 PAINTED_DELIVERY_APPEND = (
     "\n# Placement-exhaustiveness painted-delivery mutation "
@@ -174,11 +174,11 @@ REQUIRED_MUTATION_SHAPES: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
     ),
     "missing-required-destination": (
         "missing_required_destination",
-        [("delete_exact", LOWSEC_LINE, "")],
+        [("delete_exact", HOMESTAY_LINE, "")],
     ),
     "opposite-destination": (
         "opposite_destination",
-        [("replace_exact", LOWSEC_LINE, REVERSED_LOWSEC_LINE)],
+        [("replace_exact", HOMESTAY_LINE, REVERSED_HOMESTAY_LINE)],
     ),
     "painted-free-person-delivery": (
         "painted_free_person_delivery",
@@ -188,7 +188,7 @@ REQUIRED_MUTATION_SHAPES: dict[str, tuple[str, list[tuple[str, str, str]]]] = {
 REQUIRED_ALARM_DESTINATIONS = {
     "duplicate-destination": "Homestay",
     "historical-missing-dwell": "Homestay",
-    "missing-required-destination": "LowSec",
+    "missing-required-destination": "Homestay",
     "opposite-destination": "HighSec",
     "painted-free-person-delivery": "LowSec",
 }
@@ -645,8 +645,6 @@ def required_outcome(
         return "FALSE", "FALSE", ()
     if severe == "derived":
         return "FALSE", "TRUE", ("HighSec",)
-    if family == "present":
-        return "FALSE", "TRUE", ("LowSec",)
     if home == "present":
         return "TRUE", "TRUE", ("Homestay",)
     return "TRUE", "TRUE", ()
@@ -995,9 +993,9 @@ def case_queries(case: Mapping[str, object], inventory: SourceInventory) -> list
             "The family axis matches the generated fixture record.",
         ),
         Query(
-            f"home({subject})",
+            f"at({subject}, PlacementHome)",
             "TRUE" if home == "present" else "FALSE",
-            "The home axis matches the generated fixture record.",
+            "The placement-home availability axis matches the generated fixture record.",
         ),
         Query(
             f"owe(State, Dwell, {subject})",
@@ -1092,7 +1090,7 @@ def matrix_facts(cases: Sequence[Mapping[str, object]]) -> str:
         if family == "present":
             lines.append(f"family({subject}).")
         if home == "present":
-            lines.append(f"home({subject}).")
+            lines.append(f"at({subject}, PlacementHome).")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
@@ -1225,53 +1223,23 @@ def required_mutation_contract(
 ) -> tuple[list[tuple[str, str, str]], list[str]]:
     if identifier == "duplicate-destination":
         case_ref = "confined-notsevere-nofamily-home"
-        return [
-            (
-                "building(LowSec, Confined_NotSevere_NoFamily_Home)",
-                "FALSE",
-                "TRUE",
-            )
-        ], [case_ref]
+        return [("building(HighSec, Confined_NotSevere_NoFamily_Home)", "FALSE", "TRUE")], [case_ref]
     if identifier == "historical-missing-dwell":
         case_ref = "confined-notsevere-nofamily-nohome"
-        return [
-            ("dwell(Confined_NotSevere_NoFamily_NoHome)", "TRUE", "FALSE")
-        ], [case_ref]
-    family_refs = [
-        "confined-notsevere-family-nohome",
-        "confined-notsevere-family-home",
-    ]
-    family_subjects = [
-        "Confined_NotSevere_Family_NoHome",
-        "Confined_NotSevere_Family_Home",
-    ]
+        return [("dwell(Confined_NotSevere_NoFamily_NoHome)", "TRUE", "FALSE")], [case_ref]
+    home_refs = ["confined-notsevere-nofamily-home", "confined-notsevere-family-home"]
+    home_subjects = ["Confined_NotSevere_NoFamily_Home", "Confined_NotSevere_Family_Home"]
     if identifier == "missing-required-destination":
-        return [
-            (f"building(LowSec, {subject})", "TRUE", "FALSE")
-            for subject in family_subjects
-        ], family_refs
+        return [(f"building(Homestay, {subject})", "TRUE", "FALSE") for subject in home_subjects], home_refs
     if identifier == "opposite-destination":
         flips: list[tuple[str, str, str]] = []
-        for subject in family_subjects:
-            flips.extend(
-                [
-                    (f"building(LowSec, {subject})", "TRUE", "FALSE"),
-                    (f"building(HighSec, {subject})", "FALSE", "TRUE"),
-                ]
-            )
-        return flips, family_refs
+        for subject in home_subjects:
+            flips.extend([(f"building(Homestay, {subject})", "TRUE", "FALSE"), (f"building(HighSec, {subject})", "FALSE", "TRUE")])
+        return flips, home_refs
     if identifier == "painted-free-person-delivery":
-        cases = [
-            (kind, axes)
-            for kind in ("registered_free", "registered_person")
-            for axes in all_axis_tuples()
-        ]
-        return [
-            (f"dwell({case_subject(kind, axes)})", "FALSE", "TRUE")
-            for kind, axes in cases
-        ], [case_id(kind, axes) for kind, axes in cases]
+        cases = [(kind, axes) for kind in ("registered_free", "registered_person") for axes in all_axis_tuples()]
+        return [(f"dwell({case_subject(kind, axes)})", "FALSE", "TRUE") for kind, axes in cases], [case_id(kind, axes) for kind, axes in cases]
     raise PlacementAuditError(f"no code-owned mutation contract for {identifier!r}")
-
 
 def validate_mutations(
     source: Mapping[str, object],
@@ -1699,7 +1667,7 @@ def negative_controls(
     first_mutation = changed["mutations"][0]
     first_case_ref = first_mutation["err_absence_case_refs"][0]
     first_mutation["alarm_setup_facts"][first_case_ref] = (
-        "put(State, Confined_NotSevere_NoFamily_Home, LowSec)"
+        "put(State, Confined_NotSevere_NoFamily_Home, HighSec)"
     )
     expect_failure("downgraded placement-alarm setup", lambda: validate(changed))
     controls += 1

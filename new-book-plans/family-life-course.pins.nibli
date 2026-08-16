@@ -1,0 +1,457 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Bodily autonomy, health, care, family, and life-course executable coverage pins
+:expect-pins 118
+
+# FS-CCE-88 executable boundary:
+? prevents(Adam, ChildIndependentRights).
+# => TRUE
+
+# FS-CCE-89 executable boundary:
+? prevents(Adam, ChildAccessibleInformationHelp).
+# => TRUE
+
+# FS-CCE-90 executable boundary:
+? prevents(Adam, ChildVoiceNoAgeFloor).
+# => TRUE
+
+# FS-CCE-91 executable boundary:
+? prevents(Adam, ChildViewWeightReasons).
+# => TRUE
+
+# FS-CCE-92 executable boundary:
+? prevents(Adam, ChildBestInterestsRecord).
+# => TRUE
+
+# FS-CCE-93 executable boundary:
+? prevents(Adam, ChildIndividualAssessment).
+# => TRUE
+
+# FS-CCE-94 executable boundary:
+? prevents(Adam, ChildFiduciaryAuthorityLimit).
+# => TRUE
+
+# FS-CCE-95 executable boundary:
+? prevents(Adam, UniformGeneralAdulthood).
+# => TRUE
+
+# FS-CCE-96 executable boundary:
+? prevents(Adam, AutomaticAdulthoodAcquisition).
+# => TRUE
+
+# FS-CCE-97 executable boundary:
+? prevents(Adam, AdulthoodRecordEvidenceOnly).
+# => TRUE
+
+# FS-CCE-98 executable boundary:
+? prevents(Adam, AdulthoodAlternativeEvidence).
+# => TRUE
+
+# FS-CCE-99 executable boundary:
+? prevents(Adam, EstablishedAdultContinuity).
+# => TRUE
+
+# FS-CCE-100 executable boundary:
+? prevents(Adam, AdulthoodNonretrogression).
+# => TRUE
+
+# FS-CCE-101 executable boundary:
+? prevents(Adam, ProvisionalAdultExpiringOpportunity).
+# => TRUE
+
+# FS-CCE-102 executable boundary:
+? prevents(Adam, EarlyAuthorityDecisionSpecific).
+# => TRUE
+
+# FS-CCE-103 executable boundary:
+? prevents(Adam, EarlyAuthorityPoliticalBoundary).
+# => TRUE
+
+# FS-CCE-104 executable boundary:
+? prevents(Adam, FamilyFormEqualRespect).
+# => TRUE
+
+# FS-CCE-105 executable boundary:
+? prevents(Adam, FamilyModuleSeparation).
+# => TRUE
+
+# FS-CCE-106 executable boundary:
+? prevents(Adam, FamilyModuleEntryConsent).
+# => TRUE
+
+# FS-CCE-107 executable boundary:
+? prevents(Adam, FamilyObligationDisclosure).
+# => TRUE
+
+# FS-CCE-108 executable boundary:
+? prevents(Adam, FamilyExitWindingUp).
+# => TRUE
+
+# FS-CCE-109 executable boundary:
+? prevents(Adam, FamilyPrivateWaiverLimit).
+# => TRUE
+
+# FS-CCE-110 executable boundary:
+? prevents(Adam, MarriageNoConstitutionalPriority).
+# => TRUE
+
+# FS-CCE-111 executable boundary:
+? prevents(Adam, CivilFamilyPublicControl).
+# => TRUE
+
+# FS-CCE-112 executable boundary:
+? prevents(Adam, ParentageResponsibility).
+# => TRUE
+
+# FS-CCE-113 executable boundary:
+? prevents(Adam, ParentageSourcePlurality).
+# => TRUE
+
+# FS-CCE-114 executable boundary:
+? prevents(Adam, PluralParentage).
+# => TRUE
+
+# FS-CCE-115 executable boundary:
+? prevents(Adam, ParentageDutyAllocationContinuity).
+# => TRUE
+
+# FS-CCE-116 executable boundary:
+? prevents(Adam, AdoptionConsentVoice).
+# => TRUE
+
+# FS-CCE-117 executable boundary:
+? prevents(Adam, ParentageAntiSaleStatusGap).
+# => TRUE
+
+# FS-CCE-118 executable boundary:
+? prevents(Adam, OriginRecordIntegrityAccess).
+# => TRUE
+
+# FS-CCE-119 executable boundary:
+? prevents(Adam, OriginAccessNoContactEffect).
+# => TRUE
+
+# FS-CCE-120 executable boundary:
+? prevents(Adam, CustodyParentageContinuity).
+# => TRUE
+
+# FS-CCE-121 executable boundary:
+? prevents(Adam, PublicFirstCareContinuity).
+# => TRUE
+
+# FS-CCE-122 executable boundary:
+? prevents(Adam, AssumedCareDutyBounds).
+# => TRUE
+
+# FS-CCE-123 executable boundary:
+? prevents(Adam, KinshipNoPersonalCareDebt).
+# => TRUE
+
+# FS-CCE-124 executable boundary:
+? prevents(Adam, DependantIndependentRights).
+# => TRUE
+
+# FS-CCE-125 executable boundary:
+? prevents(Adam, CaregiverIndependentRights).
+# => TRUE
+
+# FS-CCE-126 executable boundary:
+? prevents(Adam, CaregiverSafeRelinquishment).
+# => TRUE
+
+# FS-CCE-127 executable boundary:
+? prevents(Adam, CareWorkActualFunction).
+# => TRUE
+
+# FS-CCE-128 executable boundary:
+? prevents(Adam, CareStatusNondelivery).
+# => TRUE
+
+# FS-CCE-129 executable boundary:
+? prevents(Adam, HouseholdNonprescription).
+# => TRUE
+
+# FS-CCE-130 executable boundary:
+? prevents(Adam, StatusNoHarmPresumption).
+# => TRUE
+
+# FS-CCE-131 executable boundary:
+? prevents(Adam, DomesticProtectionEvidenceTrigger).
+# => TRUE
+
+# FS-CCE-132 executable boundary:
+? prevents(Adam, ConfidentialHelpNoOffenceProof).
+# => TRUE
+
+# FS-CCE-133 executable boundary:
+? prevents(Adam, TargetedProtectiveAction).
+# => TRUE
+
+# FS-CCE-134 executable boundary:
+? prevents(Adam, DomesticEmergencyTemporalLimit).
+# => TRUE
+
+# FS-CCE-135 executable boundary:
+? prevents(Adam, ChildSeparationLastResort).
+# => TRUE
+
+# FS-CCE-136 executable boundary:
+? prevents(Adam, SupportBeforeRemoval).
+# => TRUE
+
+# FS-CCE-137 executable boundary:
+? prevents(Adam, SeparationReviewReunification).
+# => TRUE
+
+# FS-CCE-138 executable boundary:
+? prevents(Adam, ChildActivityLabourSafety).
+# => TRUE
+
+# FS-CCE-139 executable boundary:
+? prevents(Adam, AdultLegalCapacity).
+# => TRUE
+
+# FS-CCE-140 executable boundary:
+? prevents(Adam, PlenaryGuardianshipRefusal).
+# => TRUE
+
+# FS-CCE-141 executable boundary:
+? prevents(Adam, ChosenSupportControl).
+# => TRUE
+
+# FS-CCE-142 executable boundary:
+? prevents(Adam, SupportNotSubstitution).
+# => TRUE
+
+# FS-CCE-143 executable boundary:
+? prevents(Adam, SupportRefusalContinuity).
+# => TRUE
+
+# FS-CCE-144 executable boundary:
+? prevents(Adam, BoundedBestInterpretation).
+# => TRUE
+
+# FS-CCE-145 executable boundary:
+? prevents(Adam, EmergencyAgencyNoncarry).
+# => TRUE
+
+# FS-CCE-146 executable boundary:
+? prevents(Adam, AgencyRecordScopeRevocation).
+# => TRUE
+
+# FS-CCE-147 executable boundary:
+? prevents(Adam, ReproductiveServiceAccess).
+# => TRUE
+
+# FS-CCE-148 executable boundary:
+? prevents(Adam, ReproductiveFreeInformedChoice).
+# => TRUE
+
+# FS-CCE-149 executable boundary:
+? prevents(Adam, ReproductiveCoercionProhibition).
+# => TRUE
+
+# FS-CCE-150 executable boundary:
+? prevents(Adam, ThirdPartyReproductiveVetoRefusal).
+# => TRUE
+
+# FS-CCE-151 executable boundary:
+? prevents(Adam, PregnancyContinuationTerminationAuthority).
+# => TRUE
+
+# FS-CCE-152 executable boundary:
+? prevents(Adam, FetalOverrideRefusal).
+# => TRUE
+
+# FS-CCE-153 executable boundary:
+? prevents(Adam, PregnancyOutcomeNonpunishment).
+# => TRUE
+
+# FS-CCE-154 executable boundary:
+? prevents(Adam, ConfidentialChildHealthRoute).
+# => TRUE
+
+# FS-CCE-155 executable boundary:
+? prevents(Adam, ConscientiousRefusalContinuity).
+# => TRUE
+
+# FS-CCE-156 executable boundary:
+? prevents(Adam, AssistedReproductionConsent).
+# => TRUE
+
+# FS-CCE-157 executable boundary:
+? prevents(Adam, GestationalBodyControlRefusal).
+# => TRUE
+
+# FS-CCE-158 executable boundary:
+? prevents(Adam, GestationalAntiExploitation).
+# => TRUE
+
+# FS-CCE-159 executable boundary:
+? prevents(Adam, ParentageAtBirthContinuity).
+# => TRUE
+
+# FS-CCE-160 executable boundary:
+? prevents(Adam, AgeingRightsContinuity).
+# => TRUE
+
+# FS-CCE-161 executable boundary:
+? prevents(Adam, CommunityLivingSupport).
+# => TRUE
+
+# FS-CCE-162 executable boundary:
+? prevents(Adam, PlacementConsentNarrowAuthority).
+# => TRUE
+
+# FS-CCE-163 executable boundary:
+? prevents(Adam, CurrentTreatmentDecision).
+# => TRUE
+
+# FS-CCE-164 executable boundary:
+? prevents(Adam, TreatmentRefusalLifeSustaining).
+# => TRUE
+
+# FS-CCE-165 executable boundary:
+? prevents(Adam, TreatmentAuthorityOrder).
+# => TRUE
+
+# FS-CCE-166 executable boundary:
+? prevents(Adam, TreatmentDisputeReviewContinuity).
+# => TRUE
+
+# FS-CCE-167 executable boundary:
+? prevents(Adam, AssistedDyingDemocraticBoundary).
+# => TRUE
+
+# FS-CCE-168 executable boundary:
+? prevents(Adam, AssistedDyingSafeguards).
+# => TRUE
+
+# FS-CCE-169 executable boundary:
+? prevents(Adam, AssistedDyingRepresentativeRefusal).
+# => TRUE
+
+# FS-CCE-170 executable boundary:
+? prevents(Adam, AssistedDyingFreshTemporal).
+# => TRUE
+
+# FS-CCE-171 executable boundary:
+? prevents(Adam, DeathExternalFinding).
+# => TRUE
+
+# FS-CCE-172 executable boundary:
+? prevents(Adam, RemainsDirectionsBoundary).
+# => TRUE
+
+# FS-CCE-173 executable boundary:
+? prevents(Adam, WillLedSuccession).
+# => TRUE
+
+# FS-CCE-174 executable boundary:
+? prevents(Adam, NoninheritabilityPublicStatus).
+# => TRUE
+
+# FS-CCE-175 executable boundary:
+? prevents(Adam, FunctionalIntestacy).
+# => TRUE
+
+# FS-CCE-176 executable boundary:
+? prevents(Adam, PluralChildSuccessionEquality).
+# => TRUE
+
+# FS-CCE-177 executable boundary:
+? prevents(Adam, CollectiveTitleSuccessionLimit).
+# => TRUE
+
+# FS-CCE-178 executable boundary:
+? prevents(Adam, SuccessionFloorHousingContinuity).
+# => TRUE
+
+# FS-CCE-179 executable boundary:
+? prevents(Adam, BeneficiaryCareConflict).
+# => TRUE
+
+# FS-CCE-180 executable boundary:
+? prevents(Adam, FamilyCommonMinimum).
+# => TRUE
+
+# FS-CCE-181 executable boundary:
+? prevents(Adam, FamilyFunctionSeparation).
+# => TRUE
+
+# FS-CCE-182 executable boundary:
+? prevents(Adam, FamilyRemedySet).
+# => TRUE
+
+# FS-CCE-183 executable boundary:
+? prevents(Adam, FamilyRemedyNonharm).
+# => TRUE
+
+# FS-CCE-184 executable boundary:
+? prevents(Adam, MissingKinshipNoIndependence).
+# => TRUE
+
+# FS-CCE-185 executable boundary:
+? prevents(Adam, FamilyStatusNoConfinement).
+# => TRUE
+
+# FS-CCE-186 executable boundary:
+? prevents(Adam, LegacyStatusNonproof).
+# => TRUE
+
+# FS-CCE-187 executable boundary:
+? prevents(Adam, HomeConceptSeparation).
+# => TRUE
+
+# FS-CCE-188 executable boundary:
+? prevents(Adam, T3LifeCourseNonborrowing).
+# => TRUE
+
+# FS-CCE-189 executable boundary:
+? prevents(Adam, Book2LifeCourseBoundary).
+# => TRUE
+
+# General adulthood derives without mature.
+? prevents(Hano, GeneralAdulthoodDenial).
+# => TRUE
+? decide(Hano, Ballot).
+# => TRUE
+? prevents(Cira, GeneralAdulthoodDenial).
+# => FALSE
+? decide(Cira, Ballot).
+# => FALSE
+
+# Decision-specific early authority cannot manufacture the ballot.
+person(EarlyCase).
+authorized(EarlyCase, EarlyDecision, TreatmentChoice).
+? decide(EarlyCase, TreatmentChoice).
+# => TRUE
+? decide(EarlyCase, Ballot).
+# => FALSE
+
+# Family status is inert across placement.
+? family(Nando).
+# => TRUE
+? fit(Nando, Homestay).
+# => TRUE
+? building(LowSec, Nando).
+# => FALSE
+? building(Homestay, Nando).
+# => FALSE
+
+# Home and placement-home availability remain distinct.
+? home(Hano).
+# => TRUE
+? at(Hano, PlacementHome).
+# => TRUE
+? building(Homestay, Hano).
+# => TRUE
+
+# Recognition of a care-shaped contribution proves neither health nor housing.
+person(CareProbe).
+work(CareProbe, Care).
+? reward(CareProbe).
+# => TRUE
+? healthy(CareProbe).
+# => FALSE
+? dwell(CareProbe).
+# => FALSE

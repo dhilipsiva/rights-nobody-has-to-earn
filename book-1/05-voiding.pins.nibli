@@ -204,6 +204,8 @@ judge(Unrela, Targo).
 capture(Unrela, Targo).
 judge(Unrelb, Targo).
 capture(Unrelb, Targo).
+authorized(Unrela, IndependentReviewer, Targo).
+authorized(Unrelb, IndependentReviewer, Targo).
 
 ? false(Targo).
 # => TRUE
@@ -221,6 +223,8 @@ choose(Electorate, Ambi).
 choose(Convocation, Ambi).
 judge(Ambi, Solo).
 capture(Ambi, Solo).
+authorized(Ambi, IndependentReviewer, Solo).
+authorized(Ambi, IndependentReviewer, Solo).
 
 ? permits(Review, Ambi).
 # => TRUE
@@ -253,6 +257,8 @@ judge(Lupo, Frisk).
 capture(Lupo, Frisk).
 judge(Partnr, Frisk).
 capture(Partnr, Frisk).
+authorized(Lupo, IndependentReviewer, Frisk).
+authorized(Partnr, IndependentReviewer, Frisk).
 
 ? false(Frisk).
 # => TRUE
@@ -303,6 +309,8 @@ judge(Una, Targ3).
 capture(Una, Targ3).
 judge(Uno, Targ3).
 capture(Uno, Targ3).
+authorized(Una, IndependentReviewer, Targ3).
+authorized(Uno, IndependentReviewer, Targ3).
 
 ? false(Targ3).
 # => TRUE
@@ -333,7 +341,7 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 # proof that nothing but distinctness was holding, which is the section
 # headline executed: it takes two, and one name written twice is one name.
 :accept
-all $a: all $audited: permits(Review, $a) & permits(Tribunal, $a) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) -> false($audited).
+all $a: all $audited: permits(Review, $a) & permits(Tribunal, $a) & authorized($a, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) -> false($audited).
 
 ? false(Solo).
 # => TRUE

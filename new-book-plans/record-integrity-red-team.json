@@ -4,9 +4,9 @@
   "title": "Record-Integrity Red-Team: Flat-Snapshot Levers and Temporal Boundaries",
   "status": "bounded_flat_snapshot_red_team_not_assurance",
   "evidence_role": "exposes_gap_and_tests_boundary",
-  "constitution_sha256": "bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a",
-  "assertion_surface_contracts_sha256": "d872b015db94f5d7bc9ececd8bc5b29511544ca5c27e3b6096fbc935a3c19ce7",
-  "record_integrity_assurance_case_sha256": "38cf5392e9efc65c66a0d92df608354f3691a6fdd37f9e39889fc1502544ee10",
+  "constitution_sha256": "090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd",
+  "assertion_surface_contracts_sha256": "ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595",
+  "record_integrity_assurance_case_sha256": "8d58f953f5c0fa415254137badf2b22c3da80035792eedbabaf82f0081cbad73",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",
@@ -79,24 +79,24 @@
       "id": "RT-2",
       "title": "Adulthood",
       "premises": [
-        "mature"
+        "at"
       ],
       "tested_delta_polarities": {
-        "mature": [
+        "at": [
           "addition",
           "deletion"
         ]
       },
-      "assertion_harm": "One unauthenticated `mature(Cira)` grants the franchise conclusion while every unrelated status remains unchanged.",
-      "withholding_deletion_harm": "Removing Hano's sole adulthood entry removes the franchise while personhood, custody, and the floor remain. A flat missing entry cannot say whether adulthood was not reached, never recorded, withheld, or deleted.",
+      "assertion_harm": "One unauthenticated `at(Cira, GeneralAdulthood)` assertion grants the franchise conclusion while every unrelated status remains unchanged.",
+      "withholding_deletion_harm": "Removing Hano's sole typed adulthood-evidence entry removes the franchise while personhood, custody, and the floor remain. A flat missing entry cannot say whether adulthood was not reached, never recorded, withheld, or deleted.",
       "claimant_public_power_polarity": "The record may not let an official manufacture duplicate votes, but disputed or missing adulthood evidence must not become discretionary disenfranchisement.",
-      "current_detectability": "The harness proves the assertion and disappearance consequences and a live comparison subject. The current temporal path makes a maturity dispute contestable but does not verify age, adulthood authority, writer identity, or the cause of a pre-attestation absence.",
-      "safe_default": "Use a non-discretionary temporal rule and preserve political access while status is reconciled; treat identity and one-person uniqueness as separate assurance questions.",
+      "current_detectability": "The harness proves the assertion and disappearance consequences and a live comparison subject. The current source treats `at(_, GeneralAdulthood)` as bounded supplied age evidence; it does not verify age, writer identity, or the cause of a missing attestation.",
+      "safe_default": "Adulthood is not constituted by a registry entry. Preserve political access while disputed age evidence is reconciled, and treat identity and one-person uniqueness as separate assurance questions.",
       "authorised_disposition_boundary": "Correction may supersede a mistaken adulthood entry only through a challengeable status record that preserves political continuity and does not silently erase a valid vote.",
       "opposite_failure_test": "A second certificate must be tested with adulthood evidenced but the certificate absent. If the missing official write suppresses the ballot, the design has created the withholding gate this task forbids.",
-      "residual_limit": "The current constitution defines neither an age threshold nor automatic transition; this red-team does not choose either.",
-      "owner_ref": "new-book-plans/temporal-assurance-case.json::\"id\": \"TA-21\"",
-      "temporal_status": "Same-snapshot franchise consequences remain tested. T1/T3 are implemented, including a challenged maturity case, but no age threshold or automatic adulthood transition has been enacted.",
+      "residual_limit": "The current constitution formalizes only the typed supplied-record consequence and anti-denial wall; it does not prove the common-tier age, an outside clock, or an operational status process.",
+      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "temporal_status": "Same-snapshot franchise consequences remain tested. T1/T3 are unchanged; typed adulthood evidence does not constitute adulthood, and outside age, clock, and process liveness remain unestablished.",
       "scenario_refs": [
         "RS-02",
         "RS-03"
@@ -205,19 +205,19 @@
       "deletions": []
     },
     {
-      "id": "mature_cira",
-      "description": "The live constitution plus one unauthenticated adulthood assertion.",
+      "id": "adulthood_cira",
+      "description": "The live constitution plus one unauthenticated typed adulthood-evidence assertion.",
       "additions": [
-        "mature(Cira)."
+        "at(Cira, GeneralAdulthood)."
       ],
       "deletions": []
     },
     {
-      "id": "no_mature_hano",
-      "description": "A flat snapshot constructed by removing Hano's sole adulthood entry.",
+      "id": "no_adulthood_hano",
+      "description": "A flat snapshot constructed by removing Hano's sole typed adulthood-evidence entry.",
       "additions": [],
       "deletions": [
-        "mature(Hano)."
+        "at(Hano, GeneralAdulthood)."
       ]
     },
     {
@@ -478,7 +478,7 @@
     },
     {
       "id": "RS-02",
-      "title": "One constructed unauthenticated adulthood write grants the ballot",
+      "title": "One constructed unauthenticated adulthood-evidence write grants the ballot",
       "kind": "assertion",
       "result": "current_harm_reproduced",
       "attribution": "writer_and_authority_not_attributable_in_flat_snapshot",
@@ -487,7 +487,7 @@
       ],
       "state_refs": [
         "base",
-        "mature_cira"
+        "adulthood_cira"
       ],
       "queries": [
         {
@@ -498,7 +498,7 @@
         },
         {
           "state": "base",
-          "expression": "mature(Cira)",
+          "expression": "at(Cira, GeneralAdulthood)",
           "expected": "FALSE",
           "purpose": "The live snapshot contains no adulthood entry."
         },
@@ -515,25 +515,25 @@
           "purpose": "Unrelated standing and mobility are live."
         },
         {
-          "state": "mature_cira",
+          "state": "adulthood_cira",
           "expression": "person(Cira)",
           "expected": "TRUE",
           "purpose": "The roster is unchanged."
         },
         {
-          "state": "mature_cira",
-          "expression": "mature(Cira)",
+          "state": "adulthood_cira",
+          "expression": "at(Cira, GeneralAdulthood)",
           "expected": "TRUE",
           "purpose": "The exact overlay assertion is visible."
         },
         {
-          "state": "mature_cira",
+          "state": "adulthood_cira",
           "expression": "decide(Cira, Ballot)",
           "expected": "TRUE",
           "purpose": "The one write grants the franchise conclusion."
         },
         {
-          "state": "mature_cira",
+          "state": "adulthood_cira",
           "expression": "travel(Cira)",
           "expected": "TRUE",
           "purpose": "Unrelated mobility remains live."
@@ -544,7 +544,7 @@
           "expression": "decide(Cira, Ballot)",
           "from_state": "base",
           "from_expected": "FALSE",
-          "to_state": "mature_cira",
+          "to_state": "adulthood_cira",
           "to_expected": "TRUE",
           "claim": "One adulthood assertion grants the ballot conclusion."
         }
@@ -553,26 +553,26 @@
         {
           "expression": "person(Cira)",
           "from_state": "base",
-          "to_state": "mature_cira",
+          "to_state": "adulthood_cira",
           "expected": "TRUE",
           "claim": "Personhood predates and survives the adulthood write."
         },
         {
           "expression": "travel(Cira)",
           "from_state": "base",
-          "to_state": "mature_cira",
+          "to_state": "adulthood_cira",
           "expected": "TRUE",
           "claim": "The write changes the franchise route rather than general standing."
         }
       ],
-      "interpretation": "The engine proves the franchise's one-write dependency. It does not prove Cira's age or who wrote the status.",
-      "residual_limit": "No age threshold, transition date, identity uniqueness, or voting event is modeled.",
+      "interpretation": "The engine proves the franchise's one-write supplied-record dependency. It does not prove Cira's age, adulthood, or who wrote the status.",
+      "residual_limit": "No common-tier age, outside clock, identity uniqueness, or voting event is modeled.",
       "authorised_disposition_boundary": "A corrected adulthood record must be challengeable and preserve political continuity while identity and status are reconciled.",
       "opposite_failure": "A second adulthood certificate would add an official veto; the valid-status/companion-missing state must never silently disenfranchise."
     },
     {
       "id": "RS-03",
-      "title": "A missing adulthood entry removes the ballot",
+      "title": "A missing adulthood-evidence entry removes the ballot",
       "kind": "disappearance",
       "result": "current_harm_reproduced",
       "attribution": "constructed_source_delta_not_runtime_attribution",
@@ -581,12 +581,12 @@
       ],
       "state_refs": [
         "base",
-        "no_mature_hano"
+        "no_adulthood_hano"
       ],
       "queries": [
         {
           "state": "base",
-          "expression": "mature(Hano)",
+          "expression": "at(Hano, GeneralAdulthood)",
           "expected": "TRUE",
           "purpose": "The source entry exists before fixture construction."
         },
@@ -609,49 +609,49 @@
           "purpose": "Hano's custody is live before the deletion."
         },
         {
-          "state": "no_mature_hano",
-          "expression": "mature(Hano)",
+          "state": "no_adulthood_hano",
+          "expression": "at(Hano, GeneralAdulthood)",
           "expected": "FALSE",
           "purpose": "The constructed snapshot omits the exact entry."
         },
         {
-          "state": "no_mature_hano",
+          "state": "no_adulthood_hano",
           "expression": "decide(Hano, Ballot)",
           "expected": "FALSE",
           "purpose": "The franchise disappears with the entry."
         },
         {
-          "state": "no_mature_hano",
+          "state": "no_adulthood_hano",
           "expression": "person(Hano)",
           "expected": "TRUE",
           "purpose": "Standing remains."
         },
         {
-          "state": "no_mature_hano",
+          "state": "no_adulthood_hano",
           "expression": "prisoner(Hano)",
           "expected": "TRUE",
           "purpose": "Custody remains."
         },
         {
-          "state": "no_mature_hano",
+          "state": "no_adulthood_hano",
           "expression": "owe(State, Eats, Hano)",
           "expected": "TRUE",
           "purpose": "The itemised floor debt remains."
         },
         {
-          "state": "no_mature_hano",
+          "state": "no_adulthood_hano",
           "expression": "entitled(Hano, event { eats() })",
           "expected": "TRUE",
           "purpose": "The exact opaque food entitlement remains in the full source."
         },
         {
-          "state": "no_mature_hano",
-          "expression": "mature(Jala)",
+          "state": "no_adulthood_hano",
+          "expression": "at(Jala, GeneralAdulthood)",
           "expected": "TRUE",
           "purpose": "A second adulthood entry remains as a liveness control."
         },
         {
-          "state": "no_mature_hano",
+          "state": "no_adulthood_hano",
           "expression": "decide(Jala, Ballot)",
           "expected": "TRUE",
           "purpose": "The franchise rule remains live for the comparison subject."
@@ -662,7 +662,7 @@
           "expression": "decide(Hano, Ballot)",
           "from_state": "base",
           "from_expected": "TRUE",
-          "to_state": "no_mature_hano",
+          "to_state": "no_adulthood_hano",
           "to_expected": "FALSE",
           "claim": "The exact one-line disappearance removes Hano's franchise."
         }
@@ -671,14 +671,14 @@
         {
           "expression": "person(Hano)",
           "from_state": "base",
-          "to_state": "no_mature_hano",
+          "to_state": "no_adulthood_hano",
           "expected": "TRUE",
           "claim": "Personhood is not the cause of the flip."
         },
         {
           "expression": "prisoner(Hano)",
           "from_state": "base",
-          "to_state": "no_mature_hano",
+          "to_state": "no_adulthood_hano",
           "expected": "TRUE",
           "claim": "Custody is not the cause of the flip."
         }
@@ -746,7 +746,7 @@
         },
         {
           "state": "no_person_bela",
-          "expression": "mature(Bela)",
+          "expression": "at(Bela, GeneralAdulthood)",
           "expected": "TRUE",
           "purpose": "The adulthood entry survives."
         },
@@ -1460,7 +1460,7 @@
     },
     {
       "id": "OE-2",
-      "title": "Never-written, withheld, and pre-attestation-deleted adulthood",
+      "title": "Never-written, withheld, and pre-attestation-deleted adulthood evidence",
       "route_ref": "RT-2",
       "world_descriptions": [
         "Cira has not reached the legal condition.",
@@ -1470,7 +1470,7 @@
       "snapshot_ref": "base",
       "queries": [
         {
-          "expression": "mature(Cira)",
+          "expression": "at(Cira, GeneralAdulthood)",
           "expected": "FALSE"
         },
         {
@@ -1478,7 +1478,7 @@
           "expected": "FALSE"
         }
       ],
-      "boundary": "The current source sees only non-entry and cannot attribute its cause or establish biological or legal adulthood; the T3 dispute route does not manufacture the missing fact.",
+      "boundary": "The current source sees only non-entry and cannot attribute its cause or establish biological or legal adulthood; the formal rule does not manufacture the missing fact.",
       "prohibited_inference": "The missing entry may not become proof of incapacity or a discretionary official power to deny political standing."
     },
     {

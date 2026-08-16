@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 23
+:expect-pins 24
 
 # "Hano is in custody. Hano still has the right to vote."
 ? prisoner(Hano).
@@ -59,7 +59,7 @@
 ? person(Cira).
 # => TRUE
 
-? mature(Cira).
+? prevents(Cira, GeneralAdulthoodDenial).
 # => FALSE
 
 ? decide(Cira, Ballot).
@@ -69,7 +69,7 @@
 # This is the chapter's honest half. If a later revision armours the franchise,
 # this pin flips to a refusal and the closing sections must be rewritten.
 :accept-scoped
-all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).
+all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
 
 # ── NEVER WRITTEN LOOKS LIKE NOT YET. Ground facts below persist ─────────────
 # "In the record, the teacher and the child are the same: an entry short of the
@@ -79,13 +79,16 @@ all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).
 # anybody, and the teacher becomes enfranchised. The pair is self-controlling:
 # the FALSE only passes while the entry is absent, the TRUE only after the
 # single write.
-? mature(Esa).
+? prevents(Esa, GeneralAdulthoodDenial).
 # => FALSE
 
 ? decide(Esa, Ballot).
 # => FALSE
 
-mature(Esa).
+at(Esa, GeneralAdulthood).
+
+? prevents(Esa, GeneralAdulthoodDenial).
+# => TRUE
 
 ? decide(Esa, Ballot).
 # => TRUE
@@ -125,7 +128,7 @@ decide(Ghost, Ballot, Election).
 # loadable, it is standing in the record while the answer stays. An accepted
 # rule stays in the KB, so nothing may be pinned after this block.
 :accept
-all $x: person($x) & mature($x) & ~prisoner($x) -> decide($x, Ballot).
+all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
 
 ? decide(Hano, Ballot).
 # => TRUE

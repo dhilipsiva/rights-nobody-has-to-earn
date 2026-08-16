@@ -551,6 +551,7 @@ all $x: person($x) -> prevents($x, InaccessibleEqualityRoute).
 all $x: person($x) -> prevents($x, AccommodationRefusal).
 all $x: person($x) -> prevents($x, LocalDeskUndueBurden).
 all $x: person($x) -> prevents($x, InferiorAlternateRoute).
+all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).
 all $x: person($x) -> prevents($x, DiagnosticIndividualVerdict).
 all $x: person($x) -> prevents($x, DiagnosticNonparticipationPenalty).
 all $x: person($x) -> prevents($x, UnnecessaryPositiveMeasure).
@@ -645,7 +646,6 @@ all $x: person($x) -> prevents($x, ReproductiveServiceAccess).
 all $x: person($x) -> prevents($x, ReproductiveFreeInformedChoice).
 all $x: person($x) -> prevents($x, ReproductiveCoercionProhibition).
 all $x: person($x) -> prevents($x, ThirdPartyReproductiveVetoRefusal).
-all $x: person($x) -> prevents($x, PregnancyContinuationTerminationAuthority).
 all $x: person($x) -> prevents($x, FetalOverrideRefusal).
 all $x: person($x) -> prevents($x, PregnancyOutcomeNonpunishment).
 all $x: person($x) -> prevents($x, ConfidentialChildHealthRoute).

@@ -16,33 +16,30 @@ bounded fixture*, not classical negation or an independently established fact.
 ## Bound source manifest
 
 - Reviewed source: `new-book-plans/placement-exhaustiveness-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a`.
-- Destination manifest: `HighSec`, `Homestay`, `LowSec`.
-- Destination-manifest SHA-256: `95051f6b6ea7ebc732a2effa083868b2924dd20efd2509d5cacffbcbf0c530c4`.
+- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd`.
+- Destination manifest: `HighSec`, `Homestay`.
+- Destination-manifest SHA-256: `72722479faa871b12184b5d32d5ee834a3d141318a1c653e3b3483cbb19416e0`.
 
 | produced relation | reviewed producer fingerprint | active producers |
 | --- | --- | ---: |
-| `fit` | `2115988fbe170c123b6969089bb464c22c8c448e28345ff3fe4903c5c85728a8` | 1 |
-| `dwell` | `a2a9a600756c3a679932bdc73d52664934142eb2ce780283a775ecb164db3140` | 4 |
-| `building` | `51d36824d819d5b4867fe9024992a0998b72dbdf38f973ed81222ee53949cdf1` | 4 |
+| `fit` | `5b4d4ee65e23ad7f6f4991bd99303478e1d0ad42c564a103b743d8d9a704a8ac` | 1 |
+| `dwell` | `349561e2e1524f637e59e8e9e020a3600c7e30ab2562df01ba106f69c8f611ce` | 3 |
+| `building` | `84c20af1469913c3868b25673f51989c30ddf58dae9292899cba94b8d320c080` | 2 |
 
 ### Active producer statements
 
 #### `fit`
 
-- `all $x: prisoner($x) & ~severe($x) & ~family($x) -> fit($x, Homestay)`
+- `all $x: prisoner($x) & ~severe($x) -> fit($x, Homestay)`
 #### `dwell`
 
-- `all $offender: prisoner($offender) & family($offender) -> dwell($offender)`
-- `all $x: prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x)`
-- `all $x: prisoner($x) & home($x) & fit($x, Homestay) -> dwell($x)`
+- `all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> dwell($x)`
+- `all $x: prisoner($x) & fit($x, Homestay) & ~at($x, PlacementHome) -> dwell($x)`
 - `all $x: prisoner($x) & severe($x) -> dwell($x)`
 #### `building`
 
-- `all $offender: prisoner($offender) & family($offender) & severe($offender) -> building(HighSec, $offender)`
-- `all $offender: prisoner($offender) & family($offender) & ~severe($offender) -> building(LowSec, $offender)`
-- `all $x: prisoner($x) & home($x) & fit($x, Homestay) -> building(Homestay, $x)`
-- `all $x: prisoner($x) & severe($x) & ~family($x) -> building(HighSec, $x)`
+- `all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> building(Homestay, $x)`
+- `all $x: prisoner($x) & severe($x) -> building(HighSec, $x)`
 
 ## Subject-status contract
 
@@ -53,15 +50,15 @@ bounded fixture*, not classical negation or an independently established fact.
 ## Axis contract
 
 - **severe:** `not_derived` / `derived`. Derived severity is constructed with an attack and cruelty concerning the same subject and victim. Not-derived severity omits those entries; it is not an affirmative finding of non-severity.
-- **family:** `absent` / `present`. Present means a family entry is supplied. Absent means no family entry is supplied in this bounded fixture; it does not establish that no family exists.
-- **home:** `absent` / `present`. Present means a home entry is supplied. Absent means no home entry is supplied in this bounded fixture; it does not establish homelessness outside the supplied record.
+- **family:** `absent` / `present`. Present means a legacy family entry is supplied and absent means none is supplied in this bounded fixture. The axis is deliberately inert: neither state may alter eligibility, housing, destination, or remedy.
+- **home:** `absent` / `present`. Present means the distinct at(subject, PlacementHome) availability record is supplied. It is not civil residence, household membership, protected home life, ownership, or proof of housing delivery.
 
 ## Confined matrix
 
 | case | severe | family | home | fit Homestay | dwell | destinations | placement err |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `confined-notsevere-family-home` | `not_derived` | `present` | `present` | `FALSE` | `TRUE` | `LowSec` | `FALSE` |
-| `confined-notsevere-family-nohome` | `not_derived` | `present` | `absent` | `FALSE` | `TRUE` | `LowSec` | `FALSE` |
+| `confined-notsevere-family-home` | `not_derived` | `present` | `present` | `TRUE` | `TRUE` | `Homestay` | `FALSE` |
+| `confined-notsevere-family-nohome` | `not_derived` | `present` | `absent` | `TRUE` | `TRUE` | — | `FALSE` |
 | `confined-notsevere-nofamily-home` | `not_derived` | `absent` | `present` | `TRUE` | `TRUE` | `Homestay` | `FALSE` |
 | `confined-notsevere-nofamily-nohome` | `not_derived` | `absent` | `absent` | `TRUE` | `TRUE` | — | `FALSE` |
 | `confined-severe-family-home` | `derived` | `present` | `present` | `FALSE` | `TRUE` | `HighSec` | `FALSE` |
@@ -136,80 +133,77 @@ every affected subject and requires it to remain silent.
 
 | mutation | kind | baseline flips | alarm-silence cases | candidate source SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `014c9d23ad03e97c7ff12a06131c47705a9b0bfbf1e3e8113526f43526d04fb3` |
-| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `e7ba340502fdba95da537ee9c4024d918478362c9a5e34b0ef152c1b78056ae0` |
-| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `caddbf99c7c3a3fac43c3cfef864e157bc39984e23ffef4bfab3f933b2f367f0` |
-| `opposite-destination` | `opposite_destination` | 4 | 2 | `a4cc4c892c25e8fdcd15f57018e9b6511fc0fe7bc7d3a2f8510d1619bc63810a` |
-| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `4f16dff540efd20ab17ff4f4617c1680c9187f1959181f8b2aefd11fdec1069e` |
+| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `12bcf527d7fee8df3f1851340b136bfaa00a3e3eae964903e9950366524682cb` |
+| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `9002d4b9c678ec83e139a08332db039ea10172d27699807f71381a6c883bef7d` |
+| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `12f9d20e2a4302981e831a88d0bf9d0737eb3a48efe7a3b6ad95ec1bcc743a61` |
+| `opposite-destination` | `opposite_destination` | 4 | 2 | `92cd7ce768685b94926e2d3718645e2894a0bfceb24f94d4e59d0d5308aa3b8d` |
+| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `924d5fc77a27e39814ed084d9b7ee1224ab8b0e9e12551132d31e73f140a4ca0` |
 
-### duplicate-destination — An overlapping route gives Homestay and LowSec together
+### duplicate-destination — An overlapping route adds LowSec beside Homestay
 
-The repository matrix rejects the duplicate destination, while the current constitutional placement alarm remains silent because it reads reported Homestay eligibility rather than conflicting building conclusions.
+The repository rejects simultaneous Homestay and LowSec while the constitutional placement alarm remains silent because it does not compare derived destinations.
 
-- Mutation fingerprint: `39a8f9d39ce99f81078fcda872a7977ca7cc69db2e3b08748dee185bfb27b316`.
+- Mutation fingerprint: `7561d95a0fcfd92ca74a3db0baf09e6d3f9137db1d83f36d4e7a4c7144e79d0b`.
 - Baseline acceptance flips:
-  - `building(LowSec, Confined_NotSevere_NoFamily_Home)`: `FALSE` → `TRUE`.
+  - `building(HighSec, Confined_NotSevere_NoFamily_Home)`: `FALSE` → `TRUE`.
 - Candidate observations:
-  - `building(Homestay, Confined_NotSevere_NoFamily_Home)` = `TRUE`: The original Homestay conclusion survives.
-  - `building(LowSec, Confined_NotSevere_NoFamily_Home)` = `TRUE`: The careless overlapping route adds a distinct simultaneous destination.
+  - `building(HighSec, Confined_NotSevere_NoFamily_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
 - Placement-alarm silence checked for: `confined-notsevere-nofamily-home`.
 - Positive placement-report probes:
   - `put(State, Confined_NotSevere_NoFamily_Home, Homestay)`.
 
-### historical-missing-dwell — Deleting the historical repair reopens the unhoused confined case
+### historical-missing-dwell — Deleting the destination-free repair reopens an unhoused confined case
 
-The generated matrix reopens the exact omission that named-person examples missed historically. The runtime alarm still does not mark the absent housing conclusion.
+The matrix reopens the destination-free housing omission; the runtime alarm still does not mark an absent dwell conclusion.
 
-- Mutation fingerprint: `670b9373a2f5cc1076c77eb8ad6da447365906d03403054a7040e275ba10ceea`.
+- Mutation fingerprint: `1643242b09534be2d9ba9de25ea16cddb41949543af7fd70dc3deaddfe028d94`.
 - Baseline acceptance flips:
   - `dwell(Confined_NotSevere_NoFamily_NoHome)`: `TRUE` → `FALSE`.
 - Candidate observations:
-  - `fit(Confined_NotSevere_NoFamily_NoHome, Homestay)` = `TRUE`: Eligibility still derives despite the missing home.
-  - `dwell(Confined_NotSevere_NoFamily_NoHome)` = `FALSE`: Deleting the historical repair removes the only housing conclusion for this tuple.
+  - `dwell(Confined_NotSevere_NoFamily_NoHome)` = `FALSE`: The deliberate source mutation flips this exact reviewed matrix result.
 - Placement-alarm silence checked for: `confined-notsevere-nofamily-nohome`.
 - Positive placement-report probes:
   - `put(State, Confined_NotSevere_NoFamily_NoHome, Homestay)`.
 
-### missing-required-destination — Deleting LowSec leaves non-severe family cases without a required destination
+### missing-required-destination — Deleting Homestay removes the required destination from both family-axis mirrors
 
-The audit distinguishes an omitted required destination from the deliberately destination-free historical tuple and from housing actuality. The constitutional alarm notices none of these omissions.
+Both family-axis mirrors lose Homestay, proving family is inert and destination availability is the relevant input; the runtime alarm does not detect omission.
 
-- Mutation fingerprint: `42565f4151c9ac9023318572400d20f7acfe8dd0c1fff4c132f6c3d9b6aa437b`.
+- Mutation fingerprint: `7ac21a9bc88b5c140fa33837786d90626246c9d065bf9f3496a89622f2fbbd83`.
 - Baseline acceptance flips:
-  - `building(LowSec, Confined_NotSevere_Family_NoHome)`: `TRUE` → `FALSE`.
-  - `building(LowSec, Confined_NotSevere_Family_Home)`: `TRUE` → `FALSE`.
+  - `building(Homestay, Confined_NotSevere_NoFamily_Home)`: `TRUE` → `FALSE`.
+  - `building(Homestay, Confined_NotSevere_Family_Home)`: `TRUE` → `FALSE`.
 - Candidate observations:
-  - `building(LowSec, Confined_NotSevere_Family_NoHome)` = `FALSE`: The no-home family tuple loses its required LowSec destination.
-  - `building(LowSec, Confined_NotSevere_Family_Home)` = `FALSE`: The home-present family tuple loses the same required LowSec destination.
-  - `dwell(Confined_NotSevere_Family_NoHome)` = `TRUE`: Housing actuality survives, keeping missing destination distinct from missing shelter.
-- Placement-alarm silence checked for: `confined-notsevere-family-nohome`, `confined-notsevere-family-home`.
+  - `building(Homestay, Confined_NotSevere_NoFamily_Home)` = `FALSE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `building(Homestay, Confined_NotSevere_Family_Home)` = `FALSE`: The deliberate source mutation flips this exact reviewed matrix result.
+- Placement-alarm silence checked for: `confined-notsevere-nofamily-home`, `confined-notsevere-family-home`.
 - Positive placement-report probes:
-  - `put(State, Confined_NotSevere_Family_NoHome, LowSec)`.
-  - `put(State, Confined_NotSevere_Family_Home, LowSec)`.
+  - `put(State, Confined_NotSevere_NoFamily_Home, Homestay)`.
+  - `put(State, Confined_NotSevere_Family_Home, Homestay)`.
 
-### opposite-destination — Reversing LowSec to HighSec routes both family tuples the wrong way
+### opposite-destination — Replacing Homestay with LowSec reverses both family-axis mirrors
 
-Positive and negative destination queries make reversal visible without relying on one expected destination alone. The current runtime marker does not compare derived destinations and remains silent.
+Both family-axis mirrors flip from Homestay to LowSec, proving the opposite route is visible without turning family into a placement premise.
 
-- Mutation fingerprint: `ed368b7e9e16571c117cd6381c6b6814ada379908f4e848244066b3aac77c16e`.
+- Mutation fingerprint: `50c48188d47a6cd4fc5076255e0e23ca41f5cc74bc12b31f3a2b7ad596700ffd`.
 - Baseline acceptance flips:
-  - `building(LowSec, Confined_NotSevere_Family_NoHome)`: `TRUE` → `FALSE`.
-  - `building(HighSec, Confined_NotSevere_Family_NoHome)`: `FALSE` → `TRUE`.
-  - `building(LowSec, Confined_NotSevere_Family_Home)`: `TRUE` → `FALSE`.
+  - `building(Homestay, Confined_NotSevere_NoFamily_Home)`: `TRUE` → `FALSE`.
+  - `building(HighSec, Confined_NotSevere_NoFamily_Home)`: `FALSE` → `TRUE`.
+  - `building(Homestay, Confined_NotSevere_Family_Home)`: `TRUE` → `FALSE`.
   - `building(HighSec, Confined_NotSevere_Family_Home)`: `FALSE` → `TRUE`.
 - Candidate observations:
-  - `building(LowSec, Confined_NotSevere_Family_NoHome)` = `FALSE`: The reviewed destination disappears for the no-home tuple.
-  - `building(HighSec, Confined_NotSevere_Family_NoHome)` = `TRUE`: The opposite HighSec destination appears despite severity not deriving.
-  - `building(LowSec, Confined_NotSevere_Family_Home)` = `FALSE`: The reviewed destination disappears for the home-present tuple.
-  - `building(HighSec, Confined_NotSevere_Family_Home)` = `TRUE`: The opposite destination appears in the second affected tuple too.
-- Placement-alarm silence checked for: `confined-notsevere-family-nohome`, `confined-notsevere-family-home`.
+  - `building(Homestay, Confined_NotSevere_NoFamily_Home)` = `FALSE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `building(HighSec, Confined_NotSevere_NoFamily_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `building(Homestay, Confined_NotSevere_Family_Home)` = `FALSE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `building(HighSec, Confined_NotSevere_Family_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+- Placement-alarm silence checked for: `confined-notsevere-nofamily-home`, `confined-notsevere-family-home`.
 - Positive placement-report probes:
-  - `put(State, Confined_NotSevere_Family_NoHome, HighSec)`.
+  - `put(State, Confined_NotSevere_NoFamily_Home, HighSec)`.
   - `put(State, Confined_NotSevere_Family_Home, HighSec)`.
 
 ### painted-free-person-delivery — A person-to-dwell rule paints the delivery gap closed
 
-This counterexample separates current placement completeness from actual non-carceral housing delivery. A rule can make every free and person-only dwell query green from the roster alone, without an offer, access, receipt, authorised writer, challenge, or real roof; positive non-Homestay placement reports still leave the current Homestay-only alarm silent.
+The mutation paints every non-confined mirror housed from personhood alone and remains prohibited as delivery self-certification.
 
 - Mutation fingerprint: `a482b49930f080927d31fe8ad620e4f4e0e37968f3d570d1e6f901658e92fe0a`.
 - Baseline acceptance flips:
@@ -230,24 +224,22 @@ This counterexample separates current placement completeness from actual non-car
   - `dwell(Registered_Severe_Family_NoHome)`: `FALSE` → `TRUE`.
   - `dwell(Registered_Severe_Family_Home)`: `FALSE` → `TRUE`.
 - Candidate observations:
-  - `dwell(Free_NotSevere_NoFamily_NoHome)` = `TRUE`: The painted rule makes the deliberately sharp free/unhoused mirror look delivered.
-  - `dwell(Free_NotSevere_NoFamily_Home)` = `TRUE`: A home record is no longer needed once standing alone paints dwell true.
-  - `dwell(Free_NotSevere_Family_NoHome)` = `TRUE`: Family absence or presence no longer discriminates because the rule reads only personhood.
-  - `dwell(Free_NotSevere_Family_Home)` = `TRUE`: The fourth non-severe mirror is painted delivered too.
-  - `dwell(Free_Severe_NoFamily_NoHome)` = `TRUE`: Derived severity is irrelevant to the universal person-to-dwell rule.
-  - `dwell(Free_Severe_NoFamily_Home)` = `TRUE`: The severe home-present mirror also flips.
-  - `dwell(Free_Severe_Family_NoHome)` = `TRUE`: The severe family mirror flips without a housing arrival record.
-  - `dwell(Free_Severe_Family_Home)` = `TRUE`: Every registered-free axis tuple now looks housed by rule fiat.
-  - `dwell(Registered_NotSevere_NoFamily_NoHome)` = `TRUE`: The person-only mirror is painted housed without confinement or affirmative freedom.
-  - `dwell(Registered_NotSevere_NoFamily_Home)` = `TRUE`: A home entry is irrelevant because personhood alone drives the painted rule.
-  - `dwell(Registered_NotSevere_Family_NoHome)` = `TRUE`: The family-present person-only mirror is painted housed too.
-  - `dwell(Registered_NotSevere_Family_Home)` = `TRUE`: Every non-severe person-only tuple flips.
-  - `dwell(Registered_Severe_NoFamily_NoHome)` = `TRUE`: Derived severity does not make the roster-only housing conclusion more evidential.
-  - `dwell(Registered_Severe_NoFamily_Home)` = `TRUE`: The severe home-present person-only mirror flips.
-  - `dwell(Registered_Severe_Family_NoHome)` = `TRUE`: The severe family person-only mirror flips without arrival evidence.
-  - `dwell(Registered_Severe_Family_Home)` = `TRUE`: Every person-only axis tuple now looks housed by rule fiat.
-  - `owe(State, Dwell, Free_NotSevere_NoFamily_NoHome)` = `TRUE`: The itemised debt was already present and likewise supplies no delivery evidence.
-  - `prisoner(Free_NotSevere_NoFamily_NoHome)` = `FALSE`: The mutation fakes free-person delivery without routing through confinement.
+  - `dwell(Free_NotSevere_NoFamily_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_NotSevere_NoFamily_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_NotSevere_Family_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_NotSevere_Family_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_Severe_NoFamily_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_Severe_NoFamily_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_Severe_Family_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Free_Severe_Family_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_NotSevere_NoFamily_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_NotSevere_NoFamily_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_NotSevere_Family_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_NotSevere_Family_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_Severe_NoFamily_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_Severe_NoFamily_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_Severe_Family_NoHome)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
+  - `dwell(Registered_Severe_Family_Home)` = `TRUE`: The deliberate source mutation flips this exact reviewed matrix result.
 - Placement-alarm silence checked for: `free-notsevere-nofamily-nohome`, `free-notsevere-nofamily-home`, `free-notsevere-family-nohome`, `free-notsevere-family-home`, `free-severe-nofamily-nohome`, `free-severe-nofamily-home`, `free-severe-family-nohome`, `free-severe-family-home`, `registered-notsevere-nofamily-nohome`, `registered-notsevere-nofamily-home`, `registered-notsevere-family-nohome`, `registered-notsevere-family-home`, `registered-severe-nofamily-nohome`, `registered-severe-nofamily-home`, `registered-severe-family-nohome`, `registered-severe-family-home`.
 - Positive placement-report probes:
   - `put(State, Free_NotSevere_NoFamily_NoHome, LowSec)`.
@@ -273,9 +265,9 @@ This counterexample separates current placement completeness from actual non-car
 - **Current Source:** The matrix binds the exact current constitution, every discovered fit/dwell/building producer, and every literal building destination. It is not a proof about a changed source until the reviewed manifest and expectations are updated.
 - **Future Delivery:** The non-confined mirrors are current narrowness tripwires, not a permanent prohibition. A future authorised and challengeable housing-delivery rule must intentionally revise this contract and every affected book claim.
 - **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. Every exact generated row also runs a fresh one-pin opaque shelter entitlement against the full current source plus that row's actual facts; standing must derive through the row's own route, with no standing overlay or extracted floor rules. This exposes the current delivery gap rather than closing it.
-- **Records And Remedy:** The audit constructs facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family or home record; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.
+- **Records And Remedy:** The audit constructs bounded facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family record, civil home, or placement-home availability; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.
 - **Runtime:** The repository rejects current-source outcomes that conflict with the reviewed matrix, but the constitution has no general exclusivity, completeness, or opposite-destination reader. A deployed harmful rule can therefore leave err(_, Placement) false.
-- **Scope:** The Cartesian product is exhaustive only for the current confined, affirmatively free, and person-only states; current severity derivability, family-record presence, home-record presence; and the discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row's complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, real facilities, or future constitutional axes.
+- **Scope:** The Cartesian product is exhaustive only for current confined, affirmatively free, and person-only states; severity derivability; inert family-record presence; placement-home availability; and discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row’s complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, civil residence, real facilities, or future constitutional axes.
 - **Temporal Fixture:** Every confined row receives one self-contained witnessed transition and ordered window shared inside that generated knowledge base, one shared TemporalLeaseFamily source record, and an exact subject-specific case identifier that is also its lease identifier. Non-confined rows receive none of those case facts. This proves only the supplied fixture can reach current formal custody; it does not authenticate the premises or prove outside time and publication advance.
 - **Trust Root:** The constitution, reviewed JSON, generator, release engine, verifier, and human review can be weakened together. A green run does not authenticate or authorise that shared repository trust root.
 

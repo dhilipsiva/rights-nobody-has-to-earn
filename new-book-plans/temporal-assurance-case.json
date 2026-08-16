@@ -5,13 +5,13 @@
   "status": "staged_t3_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a",
+  "constitution_sha256": "090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd",
   "bound_sources_sha256": {
-    "amendment_semantics": "615a8ad4c1d046aecdcfaa4847274c08f1b7b588a2ae5fd9ab9cbe0f9fc4781b",
-    "assertion_surface": "d872b015db94f5d7bc9ececd8bc5b29511544ca5c27e3b6096fbc935a3c19ce7",
-    "placement_exhaustiveness": "615c58e8e401fe3166aaa9a419635f9073062461349383d10793037a6124a298",
-    "record_assurance": "38cf5392e9efc65c66a0d92df608354f3691a6fdd37f9e39889fc1502544ee10",
-    "record_red_team": "601fa27fe0a175f5cb0c091d239dda8564739e8d9c77869dd02f1329c55ab247",
+    "amendment_semantics": "c900755e482992892383180a25a9ea2578ea72f14e31c84ca0f75295ca12b69b",
+    "assertion_surface": "ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595",
+    "placement_exhaustiveness": "837ab0232ab372faddbfa4ede636a800fa7ec67b7c82016e0ae0e8d4f1f72bdd",
+    "record_assurance": "8d58f953f5c0fa415254137badf2b22c3da80035792eedbabaf82f0081cbad73",
+    "record_red_team": "c3842d4e6a508723c9671c1eeacdd2e48e65a56bef71638d605a52434456514b",
     "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44"
   },
   "marker_sha256": {
@@ -29,9 +29,9 @@
     "T3-RULES": "345501f95423e431c94e13c5a5d661e8c4acd3ef8774983738290d3a66dd7398"
   },
   "stage_source_sha256": {
-    "T1": "2cab190401421592b369734497cf10c3469609cb7d855d9141beb06dc5dc9eb6",
-    "T2": "ad23f1684cfbe66e09be02fbe5bbdf8dd01e4ef31b79588287eb21f251bc7520",
-    "T3": "bdefd6f0f94e267b2d1d6c27f1affd5b55a03934e2b5ac26c6037dde7437a72a"
+    "T1": "69e1ce94b58e9ea687f56e285654169977e157b628e89e4d5e86434b4cf62219",
+    "T2": "a031ede5b087d021a1a1b9c084a8bbaee22e466992b367e2fbfcae5ed7c4a232",
+    "T3": "090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd"
   },
   "source_effect_binding": {
     "effective_version": "Constitution_Temporal",
@@ -1199,11 +1199,11 @@
     {
       "id": "TA-21",
       "stage": "T3",
-      "title": "Withheld and challenged maturity",
+      "title": "Withheld and challenged adulthood evidence",
       "process_role": "attack",
-      "description": "Removing one mature fact can still remove the legacy franchise, but it cannot remove standing, floor, challenge, or the resulting Appeals duty.",
+      "description": "Removing one typed adulthood-evidence fact can remove the supplied-record ballot conclusion, but it cannot remove standing, floor, challenge, or the resulting Appeals duty.",
       "deletions": [
-        "mature(Hano)."
+        "at(Hano, GeneralAdulthood)."
       ],
       "additions": [
         "challenge(Hano, MaturityRecord, TemporalReview)."
@@ -1212,7 +1212,7 @@
         {
           "expression": "decide(Hano, Ballot)",
           "expected": "FALSE",
-          "purpose": "The residual writable-maturity franchise vulnerability remains visible."
+          "purpose": "The supplied-record ballot consequence remains absent while adulthood evidence is disputed."
         },
         {
           "expression": "person(Hano)",
@@ -2538,12 +2538,12 @@
     {
       "id": "maturity_forgery",
       "stage": "T1",
-      "control": "A maturity challenge derives a named dispute and duty while standing remains independent of mature; existing floor pins own the event-abstraction compatibility check.",
+      "control": "An adulthood-evidence challenge derives a named dispute and duty while standing remains independent of the typed age record; existing floor pins own the event-abstraction compatibility check.",
       "case_refs": [
         "TA-21"
       ],
       "posture": "preserved_by_narrowness_test",
-      "boundary": "The legacy franchise gate is still writable and unauthenticated; this artifact exposes rather than repairs it."
+      "boundary": "The typed supplied record remains unauthenticated in this artifact; it neither constitutes adulthood nor proves outside age or clock liveness."
     },
     {
       "id": "source_mismatch",
@@ -2813,10 +2813,10 @@
     },
     {
       "artifact_ref": "book-1/09-the-vote-conviction-does-not-take.md",
-      "standing_claim": "Custody duration does not consume the franchise, while mature remains a disputed writable civic gate rather than an authenticated clock result.",
+      "standing_claim": "Custody duration does not consume the franchise; at(_, GeneralAdulthood) is bounded supplied evidence for the ballot consequence and cannot constitute adulthood.",
       "classification": "boundary_rewritten",
-      "test_route": "The withheld-maturity case pins personhood, challenge, and Appeals duty independently of mature; existing floor pins separately own event-abstraction compatibility, and the residual franchise vulnerability stays explicit.",
-      "change_trigger": "An adopted nondiscretionary adulthood transition or authenticated election interface must revise this boundary."
+      "test_route": "The withheld-adulthood-evidence case pins personhood, challenge, and Appeals duty independently of the typed age record; existing floor pins separately own event-abstraction compatibility.",
+      "change_trigger": "Any change to the common-tier adulthood contract, its typed evidence, or the election interface must revise this boundary."
     },
     {
       "artifact_ref": "book-1/13-the-one-thing-taken.md",
