@@ -53,21 +53,18 @@ rule asks of either signer has been done, by him, twice over. It still fails —
 want of a credential, not for want of the work, for want of a second person. The rule
 does not count signatures; it counts signers, and one name written twice is one name.
 
-One distinction is worth drawing slowly here, because the same word does two jobs in
-two different rules and the chapter would blur them otherwise. You have already seen
-that a parent who judges their own child is voided — that rule is about the pair
-examiner-and-examined, and it costs the judge their word. There is a second rule, and
-it is this chapter's: the two signers must be independent of each other. Seat two
-people properly, one from each body; let them be parent and child; have both examine
-the same stranger, by the book, and document what they found. The void does not land.
-Not because either did anything wrong — neither loses anything — but because the rule
-that destroys a person's word will not accept two signatures from one family. The
-same shape between strangers voids. The first rule watches who you judge; the second
-watches who you sign beside. A design that had only the first would let a household
-hold both pens over a stranger; a design that had only the second would let a parent
-sit in judgment on their own child so long as a stranger co-signed. It has both, and
-they are different rules with different targets, which is why being caught by them
-costs different things.
+One distinction is worth drawing slowly here, because independence is no longer
+inferred from an empty relationship field. You have already seen that a parent who
+judges their own child is voided; that rule is about examiner and examined, and it
+costs the judge their word. The two-signature rule asks a different question: has
+each signer been affirmatively found independent for this person and this matter?
+
+Seat two people properly, one from each body, and have both examine the same stranger.
+The void still does not land unless each carries that separate case-bound finding.
+A generic independence label, a finding about another case, or the absence of parent,
+marriage, sibling, friendship, household, financial, or care records is not enough.
+The first rule watches who you judge. The second requires positive grounds for who may
+sign beside you. They have different targets and different consequences.
 
 This is the first and most obvious guard, and it is worth pausing on how much work it
 does. A single corrupt auditor cannot destroy anyone. Neither can a single mistaken
@@ -106,9 +103,10 @@ without anyone having to notice the pattern — the rule catches the first one.
 
 ## What has to cross the record
 
-Vex was voided in an earlier period. Later, Vex and Wren both examined Tyr — both
+Vex was voided in an earlier period. Later, Vex and Wren both examined Tyr -- both
 credentialed on paper, from different bodies as the rule requires, each recording
-what they found, neither the other's parent, neither having lied.
+what they found, each carrying a case-bound independence finding, neither having
+lied.
 
 Tyr is fine. Vex's signature does not count, because the selected current successor on
 the witnessed constitutional line carries the earlier voiding forward, and the
@@ -160,36 +158,19 @@ Two gaps, both disclosed. The second is the worse of them, and the reason is wor
 having in advance: the first has to be arranged, and the second only has to be
 forgotten.
 
-**The intimate pair, named at last — and only as far as the words reach.** The
-independence condition used to name one relationship: you may not judge your child,
-and your child may not judge you. Spouses could co-sign. Siblings could co-sign. That
-stood for most of this design's life, disclosed as a choice — every word added to the
-record is a new place for a conclusion to hide, and nobody had judged the pairing
-worth the widening. It has now been judged worth it. The record gained the words —
-that two people are married, that two people are siblings — and the independence
-check reads both, in each direction. Neither word appears anywhere in the shipped
-record yet; the guards stand armed for the day somebody writes the fact they watch
-for, which is how this design keeps its guards.
+**Independence must be found, not guessed from silence.** The old condition tried to
+manufacture independence from missing parent, marriage, and sibling entries. It could
+not see friendship, a shared household, financial dependence, care dependence, or
+any relationship the vocabulary omitted; worse, a missing record looked exactly like
+no relationship.
 
-One more reach the words do not have, and it is worth getting the mechanism right
-because the tempting version is wrong. Forgiveness restores a person's word and does
-not put them back at this table — but not because the conditions above catch them.
-Those conditions are about who you sign beside, and a forgiven examiner trips none of
-them. What stops him is earlier: co-signing needs a pen, the pen is issued by a rule
-that reads the matched carried history directly, and that history outlives the
-forgiveness. No pen is ever issued, so he never arrives at the conditions this section
-is about. The way back for a person's word and the way back to power are different
-roads, and this one runs through a door the chapter on the pen describes rather than
-through anything here.
-
-What the widening does not close deserves the same care the old gap was given. Two
-people who have been close friends for thirty years, or who share a household, or who
-owe each other a great deal, still co-sign — and every such pair still satisfies "two
-independent auditors" as far as the design is concerned. Closeness the record has no
-words for is closeness the check cannot see. The conspiracy problem the requirement
-for two was meant to create is real only as far as the vocabulary reaches, and the
-vocabulary now reaches exactly as far as marriage and siblinghood. That is further
-than it reached, and it is not far.
+The current rule refuses that shortcut. Both signers need affirmative, case-bound
+independent-reviewer findings for the person affected. Those findings must be
+challengeable and cannot be borrowed across cases. This closes the logical error; it
+does not make the finding true, prove that the checking body exists, or eliminate
+capture. Two compromised writers can still supply matching false findings. The price
+has moved from pretending silence is evidence to requiring an attributable decision
+whose source and conflicts can be contested.
 
 **And the sequence discipline still rests on outside witnesses.** Omit a required
 carry from an attested successor and the design now reports the omission. Insert a
