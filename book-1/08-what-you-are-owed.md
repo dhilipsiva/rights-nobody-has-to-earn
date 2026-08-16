@@ -29,6 +29,21 @@ imposed on a person is a harm, and a society that guaranteed food, shelter, care
 learning while permitting indefinite isolation would have guaranteed the maintenance
 of a body. The eighth thing is there so that "we kept them alive" is not a defence.
 
+
+**Care is not a family invoice.** Public responsibility for care continuity is
+immediate and cannot be delegated away by naming a parent, partner, child, or other
+relative. A caregiver and a dependant each keep a separate floor, privacy, voice,
+exit, and remedy. No adult inherits a compulsory personal-care duty or support debt
+merely through kinship. A record that someone performed care work may support
+recognition for that work; it does not prove that care reached another person, that
+the care was safe, that anyone consented, or that the worker acquired authority over
+them.
+
+Those are constitutional boundaries, not a service report. They do not establish a
+clinic, home-care route, respite place, advocate, budget, staffed institution, or
+completed remedy. The difference between duty and arrival remains the subject of the
+next section.
+
 ## Owed is not the same as delivered
 
 Now the thing this book will not soften.
