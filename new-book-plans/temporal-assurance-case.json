@@ -9,7 +9,7 @@
   "bound_sources_sha256": {
     "amendment_semantics": "c900755e482992892383180a25a9ea2578ea72f14e31c84ca0f75295ca12b69b",
     "assertion_surface": "ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595",
-    "placement_exhaustiveness": "837ab0232ab372faddbfa4ede636a800fa7ec67b7c82016e0ae0e8d4f1f72bdd",
+    "placement_exhaustiveness": "fe365c014892a560742c213fc95f8661f92c9edb912add4795de9794c82b60bf",
     "record_assurance": "8d58f953f5c0fa415254137badf2b22c3da80035792eedbabaf82f0081cbad73",
     "record_red_team": "c3842d4e6a508723c9671c1eeacdd2e48e65a56bef71638d605a52434456514b",
     "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44"

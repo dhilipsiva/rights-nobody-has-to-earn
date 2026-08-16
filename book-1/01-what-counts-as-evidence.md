@@ -13,8 +13,8 @@ Someone worked, or taught, or heard their teacher. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
 auditor documented what they found, and cited the grounds they looked on. A court
 tied a case to a person. Someone lied. Someone exposed something. A person
-has a home, or a family, or a parent, or a spouse, or a sibling, or has reached
-adulthood. An assembly proposed a
+has a home, or a family, or a parent, or a spouse, or a sibling. A typed record
+places someone at the general-adulthood threshold. An assembly proposed a
 change; a named body approved something; the change touches a particular article; that
 article is protected. A body is a public institution. A seating body seated someone.
 Somebody put someone somewhere. Someone was cleared. Someone was recalled. Someone was
@@ -328,12 +328,24 @@ Several entries fail that test. *Someone lied* is not seen, it is found. Whether
 people are family is a determination. So is whether a sentence is finished. Nothing in
 the design defines any of them, and nothing has to happen before one is written down.
 
-What follows is not small. Write that a man lied about the official he exposed — nothing
-else, no examination recorded, nobody's name attached to the finding — and the
-protection he had for exposing it is gone and he is a prisoner. Write that a non-severe
-convicted man has family, one word, and he stops being eligible to serve his sentence at
-home and goes to a facility instead. In both cases nobody wrote the verdict. It
-followed, correctly, from a premise somebody typed.
+What follows is not small. Write that a man lied about the official he exposed -- nothing
+else, no examination recorded, nobody's name attached to the finding -- and the
+protection he had for exposing it is gone and he is a prisoner.
+
+The family and life-course entries no longer carry that second kind of power. Writing
+that someone has a family cannot worsen confinement. Missing parent, marriage, or
+sibling entries cannot certify that two reviewers are independent; independence now
+needs an affirmative, case-bound finding for the matter being reviewed. A care-work
+entry cannot prove that care arrived, that anyone consented, or that one person may
+decide for another.
+
+The adulthood entry is narrower too. It is typed evidence for a general-adulthood
+threshold, not the source of adulthood itself. The executable ballot rule can still
+turn that supplied entry into a ballot conclusion, so a forged or withheld entry
+remains visible as a record hazard. The constitutional barrier says the opposite
+failure is forbidden: adulthood arises automatically under the later common-tier age,
+missing evidence cannot create indefinite childhood, and correction cannot take away
+adult status already acquired. This file proves neither the age nor an outside clock.
 
 The largest of these levers deserves its own paragraph, because it moves the most with
 the least. Whether a court is itself compromised is among the things the world may

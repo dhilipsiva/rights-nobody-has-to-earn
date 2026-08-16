@@ -273,12 +273,12 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 
 ## Narrowness impacts
 
-### `book-1/01-what-counts-as-evidence.md::Write that a non-severe`
+### `book-1/01-what-counts-as-evidence.md::that someone has a family cannot worsen confinement.`
 
-- **Current claim:** Adding a family entry closes Homestay eligibility and opens LowSec for a non-severe confined person; it does not reroute a person whose severity already selects HighSec.
+- **Current claim:** Family status is inert for confinement: severity selects HighSec, while a typed PlacementHome record and Homestay eligibility select the named home destination.
 - **Classification:** `revised_and_scoped`.
-- **Reason:** The exhaustive matrix exposed severity as a dominating branch that the earlier generic sentence and its Hano-only pin did not name.
-- **Future trigger:** Revisit the sentence and pin comment if eligibility, severity precedence, or the family placement branch changes.
+- **Reason:** The formal family migration removed the family branch; the matrix keeps family as an inert axis and separately observes severity and typed placement-home evidence.
+- **Future trigger:** Revisit the sentence and audit if any placement rule reads family, kinship, or an untyped home fact again.
 
 ### `book-1/07-a-prisoner-is-a-person.md::shelter and recorded speech arrive for prisoners and for`
 
