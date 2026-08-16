@@ -31,9 +31,9 @@
 ? severe(Hano).
 # => FALSE
 
-# "Hano has no family on record either." — the input the chapter warns about at
-# its opening, pinned on the man the warning is about: one written word here and
-# Hano leaves his house for a facility (chapter 1 runs that exact write).
+# Hano has no family entry, but family is now an inert regression input: adding
+# it may not change eligibility, housing, or destination. The typed
+# PlacementHome fact, not family or the legacy home fact, supports Homestay.
 ? family(Hano).
 # => FALSE
 ? fit(Hano, Homestay).
@@ -64,9 +64,9 @@
 ? building(HighSec, Ruk).
 # => TRUE
 
-# Nando — domestic, not severe: low security. The family entry does not merely
-# route Nando somewhere; it closes the home-confinement door first, and that
-# half was pinned nowhere until now.
+# Nando — family present, not severe, no typed placement-home option. Family
+# does not route or disqualify: Homestay eligibility derives, LowSec does not,
+# and no named destination is fabricated.
 ? family(Nando).
 # => TRUE
 ? fit(Nando, Homestay).
@@ -76,9 +76,9 @@
 ? building(LowSec, Nando).
 # => FALSE
 
-# Lalo — domestic AND severe: high security. Severity by the other road,
-# intent and cruelty on a single act. The family fact is what makes the case
-# domestic, and it went unpinned while the chapter's walk leaned on it.
+# Lalo — family and typed home entries present, but severe: HighSec. Severity
+# comes from intent and cruelty on one act; family and home availability do not
+# alter the destination.
 ? family(Lalo).
 # => TRUE
 ? attack(Lalo, Mina).
@@ -90,12 +90,11 @@
 ? building(HighSec, Lalo).
 # => TRUE
 
-# Don — cruelty plus a second person harmed. Don has no home and no family, so
-# before severity derived he had no placement at all; he is the reason the third
-# route is exercised rather than decorative.
+# Don — cruelty plus a second person harmed. Severity routes HighSec without
+# any family or typed placement-home premise.
 ? severe(Don).
 # => TRUE
-? home(Don).
+? at(Don, PlacementHome).
 # => FALSE
 ? building(HighSec, Don).
 # => TRUE
@@ -112,19 +111,18 @@
 ? err(Hano, Placement).
 # => FALSE
 
-# Nando still has no home fact — under the old marker that absence was what
-# kept him unreachable; under the repaired one it is simply a fact, and only
-# a report could put him in the alarm's sight.
-? home(Nando).
+# Nando has no typed placement-home fact. That absence prevents a named
+# Homestay destination; only a placement report can put someone in the alarm's
+# sight.
+? at(Nando, PlacementHome).
 # => FALSE
 
-# THE CASE NOBODY WROTE A RULE FOR. Not severe, no family, no home: eligibility
-# derives and, until v0.8, nothing else did. The two FALSE building queries stay
-# load-bearing — "the missing thing is not a destination" is the chapter's whole
-# argument, and if a facility rule ever reaches these two the section is wrong.
+# THE DESTINATION-FREE CASE. Kel is non-severe and has no typed placement-home
+# fact. Eligibility and housing derive, but no destination is fabricated. The
+# two FALSE facility queries remain load-bearing.
 ? fit(Kel, Homestay).
 # => TRUE
-? home(Kel).
+? at(Kel, PlacementHome).
 # => FALSE
 ? building(HighSec, Kel).
 # => FALSE
@@ -151,11 +149,10 @@
 ? dwell(Adam).
 # => TRUE
 
-# "Every convicted person in this design now has shelter ... the routes are
-#  rules, and between them they leave no combination of the three facts
-#  uncovered." These cast queries remain chapter-local witnesses, one per
-#  route. The generated placement audit owns the universal three-axis check,
-#  including combinations with no named person standing in them.
+# Every confined person in the current bounded model derives shelter. These
+# cast queries remain chapter-local witnesses across current routes. The
+# generated placement audit owns the full subject/severity/family/home matrix,
+# with family required to remain inert.
 ? dwell(Hano).
 # => TRUE
 ? dwell(Ruk).
@@ -170,7 +167,8 @@
 ? dwell(Bela).
 # => FALSE
 
-# "Nothing anywhere says Nando's victim was family; the rule never asked."
+# Family presence and absence are retained as regression facts, not placement
+# premises. Nando's TRUE and Opal's FALSE cannot decide a destination.
 ? family(Nando).
 # => TRUE
 ? family(Opal).

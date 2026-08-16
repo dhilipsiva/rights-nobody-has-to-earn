@@ -2,52 +2,45 @@
 
 Somebody convicted has to be somewhere. In most systems that somewhere is chosen —
 an assessment is made, a category assigned, a decision recorded, and a person with a
-title signs it. The decision is reviewable in principle and, in the ordinary run of
-things, made by someone with a caseload and a preference.
+title signs it. The decision may be reviewable, but it is still a place where
+discretion enters.
 
-Here nobody chooses. Where a convicted person goes turns on whether the offence was
-severe, whether the offender has a family, and whether they have a home — and only the
-last two of those are things anyone writes down. Severity is worked out, by the route
-Chapter 1 described: it follows from whether the person attacked, whether they were
-cruel, and whether the offence reached more than one person — and it takes a pairing,
-not a tally: an attack and a cruelty landing on the same person, or either of them
-beside an injury to somebody else.
+In this bounded design, the current route reads two relevant things after custody has
+lawfully derived. Severity selects HighSec. If severity does not derive, the person is
+eligible for Homestay, but an actual Homestay destination also requires the separate
+typed fact at(person, PlacementHome). That fact means only that this placement-home
+option is available. It is not civil residence, ownership, household membership,
+protected family life, or proof that housing was delivered.
 
-Read the middle one again, because it does not say what you would expect and the design
-should be held to what it actually says. The record has a slot for *this person has a
-family*. It has no slot for *this person harmed their own family*. So the routing turns
-on the offender having a family at all, and not on who was hurt. That is a weaker and
-stranger rule than the one anybody would write on purpose, and it runs both ways: an
-offender with nobody on record is eligible for home confinement however domestic the
-offence, and an offender with a family goes to a facility however unrelated the victim.
-It is worth knowing that this is what the machinery is doing before watching it work.
+The old unary family entry remains in the cast, but it does no placement work. A person
+with family and a person without it receive the same result when every relevant fact is
+otherwise the same. That is now a constitutional wall: family form, kinship, caregiving,
+pregnancy, disability, poverty, culture, or custody status cannot make confinement
+harsher. Domestic protection must turn on evidence of violence, coercion, exploitation,
+neglect, or another named harm — never on the existence or shape of a family.
 
-Hano injured Ivo, was convicted, and has a home. Hano meant it — that much is on the
-record — but nothing else about the offence is, and intent on its own does not reach
-the threshold. The offence is not severe. Hano has no family on record either. Hano is
-therefore eligible for home confinement, and is confined at home. There was no
-assessment and no assessor.
+Hano injured Ivo, was convicted, and has the typed placement-home fact. Intent alone
+does not make the offence severe. Hano is therefore eligible for Homestay, is housed,
+and has Homestay as the named destination. No family fact is needed.
 
-Ruk injured Opal, was convicted, and also has a home. But Ruk meant it and Ruk harmed
-somebody else as well, and the two together make the offence severe. Severity blocks
-eligibility for home confinement absolutely, so Ruk is not eligible, and Ruk is in high
-security.
+Ruk also has the typed placement-home fact, but Ruk meant the harm and injured a second
+person. Severity derives, so Ruk is not eligible for Homestay and is routed to HighSec.
+The available home option cannot soften that result, and family status could not worsen
+it.
 
-Nando has a family and the offence was not severe, and Nando goes to low security.
-Nothing anywhere says Nando's victim was family; the rule never asked. Lalo has a family
-and the offence *was* severe — Lalo attacked Mina and was cruel about it — and Lalo goes
-to high security. Don, who has no home and no family, gets there by the remaining
-route — cruelty, and a second person harmed — and is in high security too.
+Nando has a family entry and a non-severe offence, but no typed placement-home fact.
+Nando is eligible for Homestay and is housed; the model names no destination. The
+family entry neither sends Nando to a facility nor supplies the missing home fact. Lalo
+has both family and placement-home entries, but the offence is severe, so Lalo goes to
+HighSec. Don is severe without either entry and goes to HighSec as well.
 
-Walking cases like this is a good way to see the machinery and a bad way to be sure of
-it. An earlier draft of this chapter said the cases above exhausted the possibilities.
-They do not. Severity, having a family and having a home vary independently, so what
-needs checking is every combination of the three. The checks beside this book now make
-each of those cases, including the ones with nobody in the story, and ask where each one
-ends. The named people above remain examples, not the proof. What holds across the full
-set is not a tally; it is that in none of them does anyone exercise judgment. There is a
-combination nobody originally wrote a rule for — not severe, no family, no home — and it
-is at the end of this chapter, and it is the most interesting thing in it.
+Walking named cases is useful and insufficient. The checks beside this book now make every combination
+of confinement state, severity, legacy family entry, and typed
+placement-home availability. The two family states must remain exact mirrors. The
+checks also ask every discovered destination, preserve destination-free housing when
+the typed home fact is absent, and reject duplicate, missing, reversed, or painted
+delivery outcomes. They verify this source; they do not create a runtime assessor,
+alarm, appeal, remedy, facility, or delivered placement.
 
 ## The farmhouse
 
@@ -168,14 +161,14 @@ but only some, by accident, never by guarantee.
 
 One further caution keeps derived placement from sounding like a solved problem. No
 rule inside the society forbids overlapping destinations. The current routes happen not
-to overlap: severity separates high security from the rest, and having a family
-separates the routes that remain. The checks beside this book now make every combination
-and reject a changed version that gives one person conflicting destinations, omits a
-required result, or reverses a route. Add a careless placement rule on a copy and that
-check fails. The society's alarm, which watches reported home placement and nothing
-else, stays perfectly silent. The check protects the version of the rules that reaches
-this book; it gives the society no new alarm and no remedy after a conflicting version
-is put into use.
+to overlap: severity selects HighSec, while non-severity plus the typed PlacementHome
+fact selects Homestay. The matrix still varies family deliberately as an inert
+regression axis; either family state must leave the outcome unchanged. The repository
+rejects a changed version that gives one person conflicting destinations, omits a
+required result, reverses a route, or makes family matter. Add a careless placement
+rule on a copy and that check fails. The society's alarm, which watches reported
+Homestay placement against eligibility, stays perfectly silent about several of those
+failures. The check protects the reviewed source; it creates no runtime remedy.
 
 A late repair in the same spirit belongs in this chapter's record. For most of this
 design's life a home-confined person's housing and their whereabouts were a single
@@ -193,15 +186,14 @@ the end of a short chain, and every link is a thing that either happened or did 
 
 ## The case nobody wrote a rule for
 
-The combination this chapter did not walk is the plainest one: not severe, no family,
-and no home.
+The combination this chapter did not walk is the plainest one: not severe and no
+typed placement-home option. Family presence or absence changes nothing.
 
-Such a person is eligible for home confinement — that much derives — and there is no
-home to confine them in. Nothing else used to fire. No rule sent them to a facility,
-because the facility rules are for severe offences and offenders with families. So the
-machinery reached the end of its reasoning and produced no placement whatsoever. Kel was
-in this position. So was Adam. Both convicted, both having lost the right to move
-freely, and the design simply did not say where they were while that was true.
+Such a person is eligible for Homestay in the abstract, but the record supplies no
+available home destination. No rule sends a non-severe person to HighSec merely to fill
+that silence. The machinery therefore produces housing and no named placement. Kel is
+in this position. So is Adam. Both are convicted and have lost movement; the design
+does not invent a location it was never given.
 
 That was worse than it sounds, and not for the reason it first appears. In a real
 society they would be somewhere, and the somewhere would be chosen by whoever was
@@ -227,15 +219,16 @@ So the gap in the placement rules was never really a placement gap. It was the d
 failure showing through at the one point where the design is forced to look: the moment
 it has to put its hands on somebody and finds there is nowhere to put them.
 
-Stated that way the repair is not a new policy at all, only consistency. This design
-already holds that the state houses whom it confines — that is why a severe offender has
-shelter, and why an offender with a family has shelter. It simply never said so for the
-one combination where the person had nothing. Now it does: confined, eligible for home
-confinement, and no home, and shelter follows.
+Stated that way the repair is not a new family or placement policy, only consistency.
+The source now derives housing for everyone it confines: severe people through the
+HighSec route, non-severe people with a typed home option through Homestay, and
+non-severe people without that option through destination-free housing. The last rule
+does not say where the roof is or show that it exists in the world.
 
-Kel and Adam are housed. Every convicted person in this design now has shelter, and no
-route into it is a choice: the routes are rules, and between them they leave no
-combination of the three facts uncovered.
+Kel and Adam are housed in the bounded model. Family status changes nothing. Every
+confined row in the reviewed matrix derives shelter, while no non-confined mirror does.
+The result closes the placement table without pretending that the unconditional
+housing debt was delivered.
 
 ## What that does not fix
 
