@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-17-bodies-specification-v2",
+  "source_version": "fs-ledger-2026-08-17-mature-reservation-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -27085,7 +27085,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "550211c8454097c0ad3d66007ad14c5569c24994712c3824c3f74ec4f5a8da68",
+    "artifact_sha256": "2247fb96876e75eb16046d4812ae512856e6a06eb53d2e95d0c8789dcd150729",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -102261,7 +102261,8 @@
         "07f9b64237bfd02f0f02f024ac47a8a948bd68032ffd3f36f9e9bec80d5d6ac0",
         "37979e19fad6f4c0e66e6c0ab63d9f6726879935653a0506fdf57880b01415e2",
         "6b65b5baa8168c05c9c966a58b1f93ce5873be51dd7ce806d7e2c8883656d342",
-        "08c1ac39642ca97d09dd3b2f0bdaa4682fb702675ff05f63f365d3869eea3a99"
+        "08c1ac39642ca97d09dd3b2f0bdaa4682fb702675ff05f63f365d3869eea3a99",
+        "99b7ac8addcd0acd913538388bce581542f9cc4f9b177a1313428e19deedee9f"
       ],
       "pin_group_refs": [
         "book-1/01-what-counts-as-evidence.pins.nibli",
@@ -110070,78 +110071,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "b7843fe13d4ffe63fe302d3c365e98956aef31ff",
-    "source_version": "fs-ledger-2026-08-17-bodies-specification-v2",
-    "scope_sha256": "683e2f89e3ca8912c5a0f4542f5b527ec3d56a6ce0ad9623d6a169e874fc3365",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-08-17T16:10:00Z",
-    "scope_audit_ref": "FS-SAU-23",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "verification_receipt": {
-      "candidate_commit_sha": "b7843fe13d4ffe63fe302d3c365e98956aef31ff",
-      "verified_at_utc": "2026-08-17T15:50:30Z",
-      "commands": [
-        "python3 new-book-plans/14-reader-evidence.py --check",
-        "python3 new-book-plans/14-reader-evidence.py --check --execute",
-        "python3 new-book-plans/17-full-society-power-source-manifest.py --check",
-        "python3 new-book-plans/13-full-society-ledger.py",
-        "python3 new-book-plans/13-full-society-ledger.py --check",
-        "python3 new-book-plans/16-constitutional-closure.py",
-        "python3 new-book-plans/16-constitutional-closure.py --check",
-        "./verify.sh --quick",
-        "./verify.sh",
-        "git diff --check"
-      ],
-      "result": "all-passed",
-      "transcript_sha256": "a64bc965c0629e023410f76e963f143a6b3a25381a59689689b7d0e8664f8a35"
-    },
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -127203,6 +127137,51 @@
         "FS-DFT-40"
       ],
       "result": "passed-with-recorded-limits",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-24",
+      "title": "Retired-name reservation current-source repository adversarial audit",
+      "source_version": "fs-ledger-2026-08-17-mature-reservation-v1",
+      "scope_sha256": "c572e204354c897c1f469340fec5ee0138d58647ec43bfa8601578e0eb6f5fce",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-17T18:20:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }

@@ -1,5 +1,5 @@
 # Universal-standing root family - executable coverage pins
-:expect-pins 29
+:expect-pins 32
 
 # FS-CCE-01 negative: birth and first contact attach standing without a registry.
 born(Nia).
@@ -29,7 +29,16 @@ at(Nomad, RepublicJurisdiction).
 at(AgeDispute, FirstContact).
 ? person(AgeDispute).
 # => TRUE
-? mature(AgeDispute).
+# This pair used to ask `mature(AgeDispute)` and expect FALSE. That verdict was
+# meaningful while `mature` was admitted and asserted for four cast members: it
+# said standing attaches with no maturity fact. The relation is retired, so the
+# same query is now the empty kind of FALSE — nothing could have made it TRUE.
+# The claim is unchanged and is asked against the relation that carries
+# adulthood today: no supplied age evidence, so no franchise, and personhood
+# regardless.
+? at(AgeDispute, GeneralAdulthood).
+# => FALSE
+? decide(AgeDispute, Ballot).
 # => FALSE
 
 # FS-CCE-05 negative: an alias assertion is not an identity merge.
@@ -48,8 +57,25 @@ cite(Registry, AliasClaim, Mira).
 at(Supported, FirstContact).
 ? person(Supported).
 # => TRUE
-? mature(Supported).
+# Same repair as the age-dispute pair above, and the same claim: missing
+# capacity evidence costs the ballot and never personhood.
+? at(Supported, GeneralAdulthood).
 # => FALSE
+? decide(Supported, Ballot).
+# => FALSE
+
+# The retired name is reserved, and this is the live control that proves it.
+# `mature` has no producer and no admission, so a query on it would be the
+# empty FALSE; a ground assertion is what the reservation actually refuses.
+# Measured against the pre-reservation constitution, this same statement was
+# refused for a DIFFERENT reason — "not admitted vocabulary" — and the engine's
+# own message said how to reopen it: "Add `admits("mature")` ABOVE the first
+# `mature` assertion". That is the whole gap in one sentence: closure by
+# omission is one reviewable line away from a retired legal status becoming
+# writable again. The pin discriminates the two refusals by message, so it goes
+# red if the reservation is ever removed and the name falls back to omission.
+:refuse reasoning /declared derived-only/
+mature(RetiredNameProbe).
 
 # FS-CCE-07 negative: a mistaken status entry cannot retract personhood.
 # FS-CCE-07 counterfactual: a broken death entry leaves personhood intact.

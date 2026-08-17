@@ -18,7 +18,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "new-book-plans/full-society-power-source-manifest.json"
 EXPECTED_MANIFEST_SHA256 = (
-    "550211c8454097c0ad3d66007ad14c5569c24994712c3824c3f74ec4f5a8da68"
+    "2247fb96876e75eb16046d4812ae512856e6a06eb53d2e95d0c8789dcd150729"
 )
 EXPECTED_SOURCE_COMMIT = "36ed92c58877cffa5a11928ad200f0ca9a604820"
 STATUS = (
@@ -63,7 +63,7 @@ EXPECTED_SOURCE_SHA256 = {
     "new-book-plans/book-1-time-model-decision.md":
         "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44",
     "new-book-plans/constitution.nibli":
-        "090764481c9e98b5321d79015857d52f69798fd3c0fd7cf52b2abc76f174f2dd",
+        "1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130",
 }
 EXPECTED_BY_DISPOSITION = {
     "card-required": 209,

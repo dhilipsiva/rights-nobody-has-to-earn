@@ -163,6 +163,16 @@ derived_only("clean").
 # their interface decisions and the generated census.
 derived_only("lose").
 derived_only("decide").
+# [2026-08-17] M1 closes the same gap for `mature`, which is not merely
+# unadmitted but gone: its franchise rule and its four cast facts were removed
+# when general adulthood became typed supplied evidence. That left the name
+# reserved by OMISSION from `admits` alone — exactly the state L1 and D1 were
+# written to end for two other relations — so one re-added admission would make
+# a retired legal status writable again. This reserves it at every arity and
+# through any future converted alias. It does not resurrect the relation, give
+# it a producer or a reader, or make adulthood assertable by another route:
+# `at($x, GeneralAdulthood)` remains the only path, and nothing reads `~mature`.
+derived_only("mature").
 # <T1-DERIVED-BEGIN>
 # [v1.0 T1-T3] Assurance conclusions cannot be supplied as facts. `complete`
 # tags a witnessed evidence item and scope, `succeed` tags an accepted successor,

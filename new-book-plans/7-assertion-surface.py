@@ -549,6 +549,60 @@ def validate_scenario(
     validate_reference(scenario.get("evidence_ref"), f"{path}.evidence_ref")
 
 
+RESERVED_RETIREMENT_KEYS = ("retired_at", "reason", "must_not_become", "source_ref")
+
+
+def validate_reserved_retirements(
+    contract: dict[str, object], inventory: Inventory
+) -> set[str]:
+    """Names kept `derived_only` precisely because nothing may reach them.
+
+    Returns the reserved set so the producerless-guard check can exempt it.
+    Every clause below is a way the reservation could quietly stop being one:
+    a producer makes it a live relation again, an admission reopens the ground
+    write the reservation exists to refuse, a ground fact proves it already
+    did, and a missing declaration means the name is reserved by omission —
+    which is the defect, not the fix.
+    """
+    raw = contract.get("reserved_retired_relations", {})
+    if not isinstance(raw, dict):
+        raise AuditError("reserved_retired_relations must be an object")
+    for relation, entry in sorted(raw.items()):
+        path = f"reserved_retired_relations.{relation}"
+        if not isinstance(entry, dict):
+            raise AuditError(f"{path} must be an object")
+        missing = [k for k in RESERVED_RETIREMENT_KEYS if k not in entry]
+        extra = [k for k in entry if k not in RESERVED_RETIREMENT_KEYS]
+        if missing or extra:
+            raise AuditError(
+                f"{path}: exact keys required; missing {missing}, extra {extra}"
+            )
+        for key in RESERVED_RETIREMENT_KEYS[:-1]:
+            require_text(entry.get(key), f"{path}.{key}")
+        validate_reference(entry.get("source_ref"), f"{path}.source_ref")
+        if relation not in inventory.derived_only:
+            raise AuditError(
+                f"{path}: a reserved retirement must carry the derived_only "
+                "declaration; omission from admits is the defect, not the fix"
+            )
+        if relation in inventory.derived:
+            raise AuditError(
+                f"{path}: a reserved retirement has no producer; this relation "
+                "is derived, so it is live vocabulary and not retired"
+            )
+        if relation in inventory.admitted:
+            raise AuditError(
+                f"{path}: a reserved retirement may not be admitted; the "
+                "admission is exactly the ground write it exists to refuse"
+            )
+        if relation in inventory.ground_asserted:
+            raise AuditError(
+                f"{path}: a reserved retirement carries a ground fact, so the "
+                "write it claims to refuse has already happened"
+            )
+    return set(raw)
+
+
 def validate_contract(contract: dict[str, object], inventory: Inventory) -> None:
     if contract.get("schema_version") != 1:
         raise AuditError("schema_version must be 1")
@@ -616,7 +670,17 @@ def validate_contract(contract: dict[str, object], inventory: Inventory) -> None
         ):
             raise AuditError(f"{relation} pending contract does not match raw posture")
 
-    undeclared_guards = inventory.derived_only - inventory.derived
+    # A `derived_only` guard on a name nothing derives is normally dead
+    # vocabulary, and that is what this check exists to catch. The one lawful
+    # exception is a RETIRED relation: there the whole point is that the name
+    # is reserved and unreachable, so reserving it by omission from `admits`
+    # alone — the state L1 and D1 were written to end — is what we are fixing.
+    # The exception is reviewed rather than silent: each reserved name carries
+    # a contract, and the checks below make the reservation self-policing. A
+    # reservation that acquires a producer, an admission, or a ground fact
+    # stops being a retirement and fails here.
+    reserved = validate_reserved_retirements(contract, inventory)
+    undeclared_guards = inventory.derived_only - inventory.derived - reserved
     if undeclared_guards:
         raise AuditError(
             "derived_only declarations without a current producer: "
@@ -1006,6 +1070,44 @@ def negative_controls(
         changed.admitted = set(changed.admitted) | {pending_relation}
         expect_failure(
             "pending relation admitted", lambda: validate_contract(contract, changed)
+        )
+        controls += 1
+
+    # A reserved retirement is a claim that nothing can reach the name. Each
+    # control below is one way that claim could quietly stop being true.
+    reserved_relation = next(iter(sorted(
+        contract.get("reserved_retired_relations", {})
+    )), None)
+    if reserved_relation is not None:
+        changed = copy.deepcopy(inventory)
+        changed.derived = set(changed.derived) | {reserved_relation}
+        expect_failure(
+            "a reserved retirement acquired a producer",
+            lambda: validate_contract(contract, changed),
+        )
+        controls += 1
+
+        changed = copy.deepcopy(inventory)
+        changed.admitted = set(changed.admitted) | {reserved_relation}
+        expect_failure(
+            "a reserved retirement was re-admitted",
+            lambda: validate_contract(contract, changed),
+        )
+        controls += 1
+
+        changed = copy.deepcopy(inventory)
+        changed.ground_asserted = set(changed.ground_asserted) | {reserved_relation}
+        expect_failure(
+            "a reserved retirement carries a ground fact",
+            lambda: validate_contract(contract, changed),
+        )
+        controls += 1
+
+        changed = copy.deepcopy(inventory)
+        changed.derived_only = set(changed.derived_only) - {reserved_relation}
+        expect_failure(
+            "a reserved retirement lost its derived_only declaration",
+            lambda: validate_contract(contract, changed),
         )
         controls += 1
 

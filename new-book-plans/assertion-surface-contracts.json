@@ -102,6 +102,14 @@
     "travel": "f4ef5fab3f8d34e16d15d91c99a599c9ecad4d6b4819ac2ba2b076578fb41a39",
     "work": "2ff40e4e632700145d62b336726f51e7608e6ccdf4edbae9fe4cad92c4207719"
   },
+  "reserved_retired_relations": {
+    "mature": {
+      "retired_at": "2026-08-17",
+      "reason": "Retired when general adulthood became typed supplied evidence: the franchise rule and the four cast facts were removed together, leaving the name reserved by omission from admits alone. One re-added admission would have made a retired legal status writable again.",
+      "must_not_become": "A maturity gate, a global capability score, or any second route to adulthood. `at($x, GeneralAdulthood)` is the only path, and nothing reads a missing maturity mark.",
+      "source_ref": "new-book-plans/legacy-relation-census.md::## The headline finding: `mature` is already gone"
+    }
+  },
   "derived_relations": {
     "authority": {
       "classification": "derived_only",

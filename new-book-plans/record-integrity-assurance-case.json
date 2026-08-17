@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "ef4df857bb8c8bdf8279d17284b299ca541fe8b83c1aa54cf141fe1561c96595",
+  "assertion_surface_contracts_sha256": "b31eaad820b67d6cd4848d3be36921cbc7f84632d37708820035fd6f526d20f0",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
