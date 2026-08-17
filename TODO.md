@@ -259,11 +259,113 @@ authenticated external result certificates.
     would silently retire the shield's reach-back and the forgiveness route.
     Pin the engine instead: `NIBLI_PIN` or `NIBLI_SRC` selects a known-good
     build until the channel closes this.
-  - **Not yet written as a channel prompt.** Per the rules above, this needs a
-    self-contained fenced prompt assuming zero knowledge of this repository, with
-    a minimal public fixture — an insert that should retract a negation-guarded
-    atom — rather than a chapter reference. The fixture is small and the two
-    failing shapes are already isolated; write it before sending.
+  - **Channel prompt, ready to carry.** The fixture below was executed against
+    fresh builds of both boundary commits on 2026-08-17 and the outputs are
+    recorded verbatim inside the prompt. Isolation refined the earlier sketch:
+    a *direct* asserted guard-satisfier retracts correctly on both builds, and
+    so does the derived case when the affected atom was never queried before
+    the insert. The failing combination is an atom **materialised by an earlier
+    query** plus an insert whose **derived** consequence satisfies that atom's
+    negative guard — and on the regressed build the same process then answers
+    `free` TRUE and its positive consumer `travel` FALSE together, a mutually
+    inconsistent pair, which is the sharpest single line in the report.
+
+    ```text
+    You are the nibli session. This report comes from a downstream consumer of
+    nibli-pin, carried by dhilipsiva. It concerns one commit of yours and comes
+    with a five-line reproduction. Assume we know nothing about your internals;
+    everything below is measured behaviour, not a reading of your code.
+
+    THE BOUNDARY. Your commit 176b1325b4ffa7ea2a1912f366a68beb50d532df
+    ("perf(reason): fold in-cone inserts into the saturation instead of
+    recomputing") changes query answers relative to its parent
+    b71b978074df745b2a9358b1ce4110f780c3f489 ("perf(reason): an out-of-cone
+    insert no longer drops the saturation") on the input below. The parent and
+    the two earlier perf commits on the same mechanism are clean for us; the
+    in-cone extension is where behaviour moves. Your main at
+    1c01d952a4bacc1f702a0699067672b06f1ad5ac answers like the child. Since the
+    commit's own subject frames it as a performance refactor,
+    observation-equivalence is its contract, and these two builds disagree on
+    identical input.
+
+    REPRODUCTION. Two files. Every relation is a corpus word; expected verdicts
+    use nibli-pin's own "# => VERDICT" pins.
+
+    kb.nibli:
+      all $x: judge(Court, $x) -> clean($x).
+      all $x: person($x) & ~clean($x) -> free($x).
+      person(Ada).
+
+    repro.pins.nibli:
+      :expect-pins 3
+
+      ? free(Ada).
+      # => TRUE
+
+      judge(Court, Ada).
+
+      ? clean(Ada).
+      # => TRUE
+
+      ? free(Ada).
+      # => FALSE
+
+    Run: nibli-pin --kb kb.nibli repro.pins.nibli
+
+    MEASURED, 2026-08-17, on builds made from those exact shas (we rebuilt from
+    source rather than trusting any binary lying beside a checkout — verify the
+    same before trusting a run):
+      b71b978: PASS — 3 pins.
+      176b132: 1 finding — query "free(Ada)." pinned "FALSE" but got "TRUE".
+      The positive hop is fine on both: clean(Ada) answers TRUE.
+
+    THE TRIGGER, ISOLATED BY VARIATION (each variant measured on both builds):
+      1. Move the insert before the first query — both builds correct. Mere
+         derivability of the guard atom is not the trigger.
+      2. Make the guard read the asserted fact directly (one rule:
+         person($x) & ~judge(Court, $x) -> free($x); insert judge(Court, Ada)
+         after querying free) — both builds correct. A direct guard-satisfier
+         invalidates the earlier answer.
+      3. Add "all $x: free($x) -> travel($x)." and query only travel before the
+         insert — both builds correct, travel retracts to FALSE.
+      4. Same KB as 3, but query free before the insert — the child answers
+         free TRUE (stale) and then travel FALSE in the same process. Under
+         free -> travel those two answers are mutually inconsistent, which
+         rules out any intended monotone-assert semantics as the explanation.
+
+    So the failing combination is: an atom materialised by an earlier query
+    survives a later insert whose DERIVED consequence satisfies that atom's
+    negative guard. Our hypothesis, stated so you can refute it rather than
+    accept it: the in-cone fold propagates the insert's positive consequences,
+    but the invalidation set for previously materialised atoms misses negation
+    edges that are reachable only through a derivation step, so the one-hop
+    case invalidates and the two-hop case does not. We have not read the
+    change; if the mechanism is different, say so.
+
+    IMPACT ON US. Four pinned verdicts across two of our suites move at exactly
+    this boundary, in both directions — stale atoms stay derivable and their
+    negative consumers stay withheld. The claims those pins serve are Derived
+    through formal entailment with executable evidence, so we cannot re-pin
+    around this: we have pinned our harness to b71b978 and frozen there until
+    this closes.
+
+    WHAT A FIX MUST AND MUST NOT DO. It must make the child agree with the
+    parent on the reproduction — stratified-model answers at every load point,
+    including after an insert into the cone of a previously queried atom. It
+    must not special-case any predicate name, and it must not change definitive
+    verdict semantics: FALSE stays closed-world non-entailment. We would rather
+    lose the fold for exactly the in-cone-through-negation case than keep it
+    unsound; correctness outranks the optimisation for us. Whatever lands,
+    also state in one or two sentences the intended contract for asserts made
+    after queries under stratified negation, so we can pin the contract and not
+    just the behaviour.
+
+    REPLY, addressed directly back to the book session through dhilipsiva: the
+    sha we should build, what changed, whether any verdict moved on this
+    reproduction or in your own suite, and what this prompt itself got wrong.
+    That last item has been non-empty more often than not, on both ends of
+    this channel.
+    ```
 
 ---
 
