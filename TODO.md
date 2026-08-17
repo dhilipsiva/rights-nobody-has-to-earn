@@ -146,6 +146,34 @@ project may not present withdrawal as completion of those checks.
     the slot; the sentences are the author's. Either bring it into conformance or
     record the exception as permanent with its reason.
 
+- [ ] **Rule the book's stated thesis and whether a second stress case joins the
+  prisoner.**
+  - The neutral brief is
+    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md)
+    (2026-08-17). It decides nothing and creates no predicate, pin, defect row,
+    receipt, coverage row, or Gate consequence.
+  - **Question 1 — the thesis.** The proposed sentence is normative plus
+    empirical, so it can be stated only in the opening note and Part V, beside
+    the existing stress-test framing. Two costs are recorded: a thesis whose verb
+    is *owes*, on *dignity* grounds, asserts the value justification the floor's
+    admission criterion deliberately refuses; and `dignity` is an undefined bare
+    prose word while `safety` already names one of the seven fixed functional
+    criteria bound to the reference envelope. The methodological half must also
+    split — the general claim is Reasoned at best, while a named bounded instance
+    can be Derived, and the universal-standing root family is one such instance.
+  - **Question 2 — the case.** An infant without a reliable caregiver can occupy
+    only the *receives* and *is acted upon* postures, so running it as the
+    through-line fails the agency clause of the pinned-case item below, and
+    reproduces the single-lens defect the tracker guards against four times.
+    Pairing it with the prisoner as a **second** stress case straining no
+    constraint is the brief's recorded alternative: the two fail in opposite
+    directions, since the prisoner is the person public power has acted upon and
+    this subject is the person it has not.
+  - **Sequenced, and it blocks nothing now.** The framing ruling belongs after
+    the delivery and receipt families land and after the pinned portfolio is
+    rebalanced; ruling it earlier would state a thesis the source cannot yet
+    carry. Neutral inventory and brief work may proceed meanwhile.
+
 ---
 
 ## Phase 2 — Engine handoffs (nibli)
@@ -184,6 +212,37 @@ claiming one.
 Neither repair adds election arithmetic, result authentication, or institutional
 execution. Democratic formalisation still uses definitive positive queries and
 authenticated external result certificates.
+
+- [ ] **LIVE REGRESSION — the suite is red against current nibli, and the cause
+  is upstream, not here.** Bisected 2026-08-17 against an unmodified
+  constitution: the engine stopped retracting a derived conclusion when a later
+  asserted fact should remove it. Two independent chapter suites catch it. The
+  shield's reach-back no longer lifts a conviction when the exposure fact
+  arrives, and forgiveness no longer lands — the mark stays, the clawback keeps
+  running, and the reopened door stays shut.
+  - **Green at the parent, red at the child**, same repository state, same
+    constitution, four verdicts moving together. Green: `b71b978`. Red:
+    `176b132`, whose subject is folding an in-cone insert into the existing
+    saturation instead of recomputing it. Also red at current nibli `main`
+    (`1c01d95`); the two commits in between are a renderer fix and a test
+    baseline and move no verdict here.
+  - **The suspected rule, stated so the engine session can refute it rather than
+    accept it:** folding an insert into a saturation is sound only while
+    consequences are monotone, and under stratified negation an insert can
+    *retract* — asserting the fact that satisfies a guard kills an atom already
+    derived. Recomputation caught that; folding appears to keep the stale atom.
+    This is a reading of four moved verdicts, not a diagnosis of the engine's
+    code, and this session has not read the change.
+  - **Do not repair it here, and do not re-pin around it.** The four pins state
+    properties two chapters argue in print; editing them to match the engine
+    would silently retire the shield's reach-back and the forgiveness route.
+    Pin the engine instead: `NIBLI_PIN` or `NIBLI_SRC` selects a known-good
+    build until the channel closes this.
+  - **Not yet written as a channel prompt.** Per the rules above, this needs a
+    self-contained fenced prompt assuming zero knowledge of this repository, with
+    a minimal public fixture — an insert that should retract a negation-guarded
+    atom — rather than a chapter reference. The fixture is small and the two
+    failing shapes are already isolated; write it before sending.
 
 ---
 
@@ -720,6 +779,22 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Apply the lifecycle across food, water, housing, utilities, health/care,
     learning/information, mobility, communication and other essential systems.
   - A missing receipt must invite outreach and challenge, never terminate entitlement.
+  - **Resolve receipt for a recipient who cannot acknowledge through any channel.**
+    `medium-neutral` and `accessibility-neutral` bind the *channel* — not requiring
+    literacy, sight, hearing, a device, or a particular language. Neither reaches a
+    person who can form no acknowledgment at all. For that person the two obvious
+    authorised writers both fail: the provider's own assertion is already refused as
+    proof of delivery or receipt, and a chosen supporter is unavailable to anyone
+    whose defining condition is having none. State which authorised writer is on the
+    recipient's side and independent of the provider, or make the receipt's
+    **absence** the operative trigger under the outreach rule above. Measured
+    2026-08-17 and recorded in
+    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md);
+    an infant without a caregiver is the sharpest case, and the resolution also
+    governs the unconscious patient, advanced dementia, incommunicado detention, a
+    person whose language nobody present speaks, and any person whose supporter is
+    the party alleged to have failed them. Do not close this by letting a provider
+    attest on the recipient's behalf.
   - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement,
     routing, maintenance, capacity planning and graceful degradation.
 
@@ -1086,6 +1161,19 @@ Gate B; it does not claim Book 2 operations or feasibility.
     leaf, not the instrument: every capability an instrument removes joins the
     no-reader guard family in the same change, while the instrument itself may
     be read where the design requires it.
+  - **The same firewall boundary already bites on an existing conclusion through an
+    existing status, and those two obligations do not by their terms reach it.**
+    Measured 2026-08-17: confinement for the absence of a floor right is refused by
+    the stratifier, while confinement for the absence of a family status, and for
+    the absence of a parent relation, both load. `FamilyStatusNoConfinement` is the
+    barrier that would forbid them and it is a `prevents` leaf that no rule reads.
+    Institutionalisation for want of a family is the historical harm the ratified
+    family baseline refuses in words. Fix it inside a coherent rule family with its
+    own refusal pins and re-measurement, never by bolting a conjunct onto the
+    conviction rule. Recorded in
+    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md);
+    a probe is not a verification run and this needs re-measuring under
+    `./verify.sh` before any repair claims it.
   - Keep protective restriction separate from punishment. A quarantine,
     exclusion order, border hold, or pre-expulsion detention carries no punitive
     consequence, never feeds severity, placement, conviction or recognition,
@@ -1566,6 +1654,18 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
   - No role may appear only as an object of intervention when the constitution gives
     it agency. Do not add decorative demographic labels or pretend a full Cartesian
     product is meaningful; use reviewed pairwise/high-consequence coverage.
+  - **The agency clause is what decides any proposed second lead case, and it bites
+    hardest on the most sympathetic one.** A candidate whose only available postures
+    are *receives* and *is acted upon* cannot carry a protected private/civic domain,
+    however sharp it is as a delivery test. An infant without a caregiver is the
+    worked example: it is the strongest available stress case for delivery, receipt,
+    and the standing root, and it fails the agency clause as a through-line, because
+    the constitution gives the child voice, weight and decision-specific early
+    authority that an infant cannot exercise. Pair a second case with the prisoner
+    rather than substituting one lens for another — a book explaining every domain
+    through one subject fails the same way whether the subject is a prisoner or an
+    infant. See
+    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md).
 
 - [ ] **Use constructive, private/civic, democratic, and coercive chapter patterns,
   not one failure-first formula.**
