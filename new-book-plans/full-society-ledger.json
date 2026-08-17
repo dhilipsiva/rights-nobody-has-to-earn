@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-17-bodies-specification-v1",
+  "source_version": "fs-ledger-2026-08-17-bodies-specification-v2",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -3480,9 +3480,9 @@
       "consequence": "no democratic source of law",
       "owner_ref": "TODO.md::Write the Bodies specification",
       "closure_condition": "bodies specification lands",
-      "job": "Make ordinary law, authorise revenue and spending, sustain or replace the government, oversee public power, initiate amendment.",
+      "job": "Make ordinary law, authorise revenue/spending, sustain or replace the government, oversee public power, and initiate amendment.",
       "may_not_do_alone": "Lower the floor, override equal standing, extend its own authority, or judge its own contested compliance.",
-      "required_check": "Regions Council reasoned return; public reasons; election and compatibility review; constitutional challenge.",
+      "required_check": "Regions Council's one-time reasoned return; public reasons; election and compatibility review; constitutional challenge.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -3965,9 +3965,9 @@
       "consequence": "regions lose their protected voice",
       "owner_ref": "TODO.md::Write the Bodies specification",
       "closure_condition": "bodies specification lands",
-      "job": "Represent regions through proportional legislative delegations and protect federal competences.",
+      "job": "Represent regions through proportional legislative delegations and protect federal competences. Equal regional weight is an express territorial exception to population weight, not a second popular chamber.",
       "may_not_do_alone": "Permanently veto ordinary law, lower the common floor, or convert regional voice into executive power.",
-      "required_check": "Assembly repassage for ordinary law; final Council consent only for the regional settlement; Constitutional Court for competence disputes.",
+      "required_check": "Assembly repassage under the original rule for ordinary law; final Council consent only for the ratified regional settlement; Constitutional Court for competence disputes.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -4928,7 +4928,7 @@
       "closure_condition": "bodies specification lands",
       "job": "Perform formal appointment, promulgation, certification-receipt, and continuity duties.",
       "may_not_do_alone": "Exercise policy, veto, decree, emergency, dissolution, or election-result discretion.",
-      "required_check": "Joint-chamber selection; predeclared alternate; cause-only removal with independent finding.",
+      "required_check": "Joint-chamber selection; predeclared alternate; cause-only removal with independent finding and cross-body confirmation.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -5454,7 +5454,7 @@
       "closure_condition": "bodies specification lands",
       "job": "Give adult ordinary residents equal political voice and authenticate contestable public results.",
       "may_not_do_alone": "Create membership by registration, convert wealth or recognition into weight, decide its own challenge, or let one missing writer withhold the route forever.",
-      "required_check": "Accessible participation; independent certification, recount, challenge, alternate writer and reviewer, correction.",
+      "required_check": "Accessible participation; independent certification, recount/challenge, alternate writer/reviewer, and correction.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -8566,7 +8566,7 @@
       "owner_ref": "TODO.md::Write the Bodies specification",
       "closure_condition": "bodies specification lands",
       "job": "Defend against an external armed attack under civilian, democratically sourced command.",
-      "may_not_do_alone": "Hold any domestic policing, surveillance, detention, arrest, search, or interrogation mandate; exercise jurisdiction over civilians; be funded outside the ordinary appropriation.",
+      "may_not_do_alone": "Hold any domestic policing, surveillance, detention, arrest, search, or interrogation mandate; exercise jurisdiction over civilians; be funded, armed, or maintained outside the ordinary appropriation.",
       "required_check": "Assembly ceiling on size and armament; prior authorisation for force abroad; lapse of an unratified defensive response; full audit access; anti-fusion incompatibilities.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
@@ -11634,7 +11634,7 @@
       "closure_condition": "bodies specification lands",
       "job": "Decide disputes and limit coercion.",
       "may_not_do_alone": "Investigate, prosecute, decide, execute, and review one case alone.",
-      "required_check": "Notice, advocate, hearing, appeal, release and repair path.",
+      "required_check": "Notice, advocate, hearing, appeal, release/repair path.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -12346,7 +12346,7 @@
       "closure_condition": "bodies specification lands",
       "job": "Give final general constitutional rulings and resolve competence, election, amendment, and secession disputes; ordinary courts retain case relief.",
       "may_not_do_alone": "Run ordinary government, invent policy, certify its own decisive facts, or insulate itself from correction.",
-      "required_check": "Public reasons, recusal, effective remedy, divided appointments, cause-only removal, amendment-bound limits.",
+      "required_check": "Public reasons, recusal, effective remedy, divided appointments, cause-only removal, and amendment-bound limits.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -13017,7 +13017,7 @@
       "closure_condition": "bodies specification lands",
       "job": "Examine records, conflicts, disparities, and systemic failures.",
       "may_not_do_alone": "Create the case facts it later certifies, or impose final remedy alone.",
-      "required_check": "Independent evidence, public findings consistent with privacy, referral and remedy authority.",
+      "required_check": "Independent evidence, public findings consistent with privacy, referral/remedy authority.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -13904,7 +13904,7 @@
       "closure_condition": "bodies specification lands",
       "job": "Exercise residual regional authority and protected local choice inside common guarantees.",
       "may_not_do_alone": "Create a lower caste of resident, reduce the common floor, or acquire a disputed competence by delay.",
-      "required_check": "Portability, equalisation, intergovernmental reasons and mediation, Constitutional Court review.",
+      "required_check": "Portability, equalisation, intergovernmental reasons/mediation, and Constitutional Court review.",
       "source_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 5. Required bodies and constitutional functions (architecture pending)",
@@ -127011,6 +127011,51 @@
       "scope_sha256": "7b23e423ec086f89ece0abc3547d92e6fc33d2efcfb36a383b31aa4a8220e203",
       "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
       "executed_at_utc": "2026-08-17T05:30:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-22",
+      "title": "Bodies specification map-cell restoration current-source audit",
+      "source_version": "fs-ledger-2026-08-17-bodies-specification-v2",
+      "scope_sha256": "683e2f89e3ca8912c5a0f4542f5b527ec3d56a6ce0ad9623d6a169e874fc3365",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-17T09:15:00Z",
       "method": "repository-source-derived-adversarial-audit",
       "criterion_coverage": [
         "declared-rights",

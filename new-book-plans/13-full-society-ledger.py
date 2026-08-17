@@ -3487,6 +3487,77 @@ def _body_term(rec, value, field, ctx):
     return text
 
 
+BODY_MAP_CELLS = ["job", "may_not_do_alone", "required_check"]
+
+
+def _coverage_map_body_rows() -> dict:
+    """The reviewed required-bodies table, keyed by normalised title.
+
+    Section 5 is hand-authored and sits outside the generated region, so it is
+    the source these three cells are copied from — which is exactly why they
+    can drift from it silently.  The map writes `Provision / treasury` where
+    the ledger writes `Provision and treasury`; that difference is deliberate
+    and normalised away, nothing else is.
+    """
+    text = COVERAGE_MAP.read_text(encoding="utf-8")
+    if "## 5. Required bodies" not in text:
+        raise LedgerError(
+            "coverage map has no required-bodies section to bind the body "
+            "cells to"
+        )
+    section = text.split("## 5. Required bodies", 1)[1].split("\n## 6.", 1)[0]
+    rows = {}
+    for line in section.splitlines():
+        if not line.startswith("| ") or line.startswith(("| ---", "| Body")):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split(" | ")]
+        if len(cells) != len(BODY_MAP_CELLS) + 1:
+            continue
+        rows[_normalise_body_title(cells[0])] = cells[1:]
+    return rows
+
+
+def _normalise_body_title(title: str) -> str:
+    return title.replace(" / ", " and ").replace("/", " and ").strip().lower()
+
+
+def validate_body_map_cells(src: dict):
+    """A body's three reviewed cells are a COPY of the coverage map's row.
+
+    They were copied once and then paraphrased in place, and the paraphrases
+    lost ratified content: the Civic President's removal shed `and cross-body
+    confirmation`, leaving one half of a two-stage requirement; the armed
+    forces shed `armed, or maintained`; the Council's return shed `one-time`,
+    which is the whole difference between a suspensive return and a veto.
+    Every card cites that section as its source, so a drifted copy is a card
+    misquoting the source it names.  Bodies added after the section was
+    written have no row and are skipped, but the row population must be fully
+    consumed — a parser that matches nothing must fail, not pass quietly.
+    """
+    rows = _coverage_map_body_rows()
+    if not rows:
+        raise LedgerError("required-bodies table parsed to no rows")
+    unmatched = set(rows)
+    for i, rec in enumerate(src.get("bodies", [])):
+        row = rows.get(_normalise_body_title(rec.get("title", "")))
+        if row is None:
+            continue
+        unmatched.discard(_normalise_body_title(rec["title"]))
+        for cell, expected in zip(BODY_MAP_CELLS, row):
+            if rec[cell].strip() != expected.strip():
+                raise LedgerError(
+                    f"bodies[{i}] ({rec['id']}).{cell} has drifted from the "
+                    "coverage map row it cites; the card must quote its "
+                    f"source, not paraphrase it\n  card: {rec[cell]}\n  "
+                    f"map:  {expected}"
+                )
+    if unmatched:
+        raise LedgerError(
+            "every required-bodies row must bind a body card; unbound: "
+            + ", ".join(sorted(unmatched))
+        )
+
+
 def validate_bodies(src: dict, ids: dict):
     """The bodies specification: one constitutional contract per body.
 
@@ -6394,6 +6465,7 @@ def validate(src: dict):
     # emptied roles array must be diagnosed as that, not as a dangling body ref.
     validate_roles(src, ids)
     validate_bodies(src, ids)
+    validate_body_map_cells(src)
     validate_power_population(src, ids)
     validate_constitutional_effects(src, ids)
     validate_coverage_families(src, ids)
@@ -6954,6 +7026,10 @@ def negative_controls(src: dict) -> int:
             _body_relabels_fixture, "may not relabel a current fixture")
     control("the advocate declares its non-substitution boundary",
             _body_advocate_boundary_blank, "must be a non-empty string")
+    control("a body cell may not paraphrase the map row it cites",
+            _body_cell_paraphrases_map, "drifted from the coverage map row")
+    control("every required-bodies row still binds a card",
+            _body_unbinds_a_map_row, "every required-bodies row must bind")
     control("an omission carries its risk-based reason",
             _omission_empty_reason, "risk_reason")
     control("an omission names a real role",
@@ -7741,6 +7817,20 @@ def _body_asserts_feasibility(s):
 def _body_relabels_fixture(s):
     term = _a_body_term(s["bodies"][0])
     term["text"] = term["text"] + " Read Convocation as the Executive Council."
+
+
+def _body_cell_paraphrases_map(s):
+    # the exact edit that happened: a cell reworded to say almost the same
+    rec = _first_body(s, lambda r: r["id"] == "FS-BOD-05",
+                      "is the Civic President")
+    rec["required_check"] = rec["required_check"].replace(
+        " and cross-body confirmation", "")
+
+
+def _body_unbinds_a_map_row(s):
+    rec = _first_body(s, lambda r: r["id"] == "FS-BOD-05",
+                      "is the Civic President")
+    rec["title"] = "Ceremonial President"
 
 
 def _body_advocate_boundary_blank(s):

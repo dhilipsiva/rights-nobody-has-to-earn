@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-17-bodies-specification-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-17-bodies-specification-v2`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -26,7 +26,7 @@ Coverage-family drafting states:
 - FS-CVF-013 Substantive equality and anti-subordination constitutional effects: prose-landed — The equality family is prose-landed after audit of the opening note, every numbered chapter, Part V, and method; operation, population facts, data systems, programmes, institutional acts, completed remedies, and Book 2 delivery remain outside this coverage state.
 - FS-CVF-014 Bodily autonomy, health, care, family, and life-course constitutional effects: prose-landed — The bodily-autonomy, health, care, family, and life-course family is prose-landed after audit of the opening note, affected numbered chapters, Part V, and method; operation, delivery, age calibration, service routes, institutions, completed remedies, and Book 2 implementation remain outside this coverage state.
 
-Canonical source SHA-256: `009a659e8b468ded4fef62d30d02d747ad696b13d864f63308a3a145abc07e58`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `41c59abba7fc86d72d01b8ebe31b5956106454da264d9590ce31895b2a1de8b2`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -40,7 +40,7 @@ Canonical source SHA-256: `009a659e8b468ded4fef62d30d02d747ad696b13d864f63308a3a
 | `domains` | 12 | `7085f34c48936717f595fd50e85d31ba3ee0ca1616c0eba22b01c992d2da7b14` | FS-DOM-01, FS-DOM-02, FS-DOM-03, FS-DOM-04, FS-DOM-05, FS-DOM-06, FS-DOM-07, FS-DOM-08, FS-DOM-09, FS-DOM-10, FS-DOM-11, FS-DOM-12 |
 | `legacy_rows` | 18 | `15bc5e80f65e28a94cb5c50dc63d37dd9636e8710616327408c73388e9c131ea` | FS-LGR-01, FS-LGR-02, FS-LGR-03, FS-LGR-04, FS-LGR-05, FS-LGR-06, FS-LGR-07, FS-LGR-08, FS-LGR-09, FS-LGR-10, FS-LGR-11, FS-LGR-12, FS-LGR-13, FS-LGR-14, FS-LGR-15, FS-LGR-16, FS-LGR-17, FS-LGR-18 |
 | `claims` | 40 | `2be0c8b4c718c0001cfcc508e27b1e92941c5a72a80ab4d31fb90b89b4af259b` | FS-CLM-01, FS-CLM-02, FS-CLM-03, FS-CLM-04, FS-CLM-05, FS-CLM-06, FS-CLM-07, FS-CLM-08, FS-CLM-09, FS-CLM-10, FS-CLM-11, FS-CLM-12, FS-CLM-13, FS-CLM-14, FS-CLM-15, FS-CLM-16, FS-CLM-17, FS-CLM-18, FS-CLM-19, FS-CLM-20, FS-CLM-21, FS-CLM-22, FS-CLM-23, FS-CLM-24, FS-CLM-25, FS-CLM-26, FS-CLM-27, FS-CLM-28, FS-CLM-29, FS-CLM-30, FS-CLM-31, FS-CLM-32, FS-CLM-33, FS-CLM-34, FS-CLM-35, FS-CLM-36, FS-CLM-37, FS-CLM-38, FS-CLM-39, FS-CLM-40 |
-| `bodies` | 38 | `7f81fe16c7f49e4a23d454e50245e51e649172f798babe42a42b36f84526f656` | FS-BOD-01, FS-BOD-02, FS-BOD-03, FS-BOD-04, FS-BOD-05, FS-BOD-06, FS-BOD-07, FS-BOD-08, FS-BOD-09, FS-BOD-10, FS-BOD-11, FS-BOD-12, FS-BOD-13, FS-BOD-14, FS-BOD-15, FS-BOD-16, FS-BOD-17, FS-BOD-18, FS-BOD-19, FS-BOD-20, FS-BOD-21, FS-BOD-22, FS-BOD-23, FS-BOD-24, FS-BOD-25, FS-BOD-26, FS-BOD-27, FS-BOD-28, FS-BOD-29, FS-BOD-30, FS-BOD-31, FS-BOD-32, FS-BOD-33, FS-BOD-34, FS-BOD-35, FS-BOD-36, FS-BOD-37, FS-BOD-38 |
+| `bodies` | 38 | `9ff607dd145f909a870b9fd4ab686d4d1363fb585a9552c716e27ce08a5140d3` | FS-BOD-01, FS-BOD-02, FS-BOD-03, FS-BOD-04, FS-BOD-05, FS-BOD-06, FS-BOD-07, FS-BOD-08, FS-BOD-09, FS-BOD-10, FS-BOD-11, FS-BOD-12, FS-BOD-13, FS-BOD-14, FS-BOD-15, FS-BOD-16, FS-BOD-17, FS-BOD-18, FS-BOD-19, FS-BOD-20, FS-BOD-21, FS-BOD-22, FS-BOD-23, FS-BOD-24, FS-BOD-25, FS-BOD-26, FS-BOD-27, FS-BOD-28, FS-BOD-29, FS-BOD-30, FS-BOD-31, FS-BOD-32, FS-BOD-33, FS-BOD-34, FS-BOD-35, FS-BOD-36, FS-BOD-37, FS-BOD-38 |
 | `routes` | 7 | `42ce7cd4e944bf07c9a3241ab88066782001effd26384a2337465039c35e875a` | FS-RTE-01, FS-RTE-02, FS-RTE-03, FS-RTE-04, FS-RTE-05, FS-RTE-06, FS-RTE-07 |
 | `external_assumptions` | 4 | `2da952aa59cb53799e3bce1c52a36a245c431f627f78b112f09e765e3c371545` | FS-EXA-01, FS-EXA-02, FS-EXA-03, FS-EXA-04 |
 | `envelope` | 2 | `64370bc341b6ef558608f8a1606f9ba579f1d2c8926d241864ba86e5923bb0cd` | FS-ENV-00, FS-ENV-01 |
@@ -63,7 +63,7 @@ Canonical source SHA-256: `009a659e8b468ded4fef62d30d02d747ad696b13d864f63308a3a
 | `review_commissions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `scope_audits` | 21 | `f04d82e7570b3e4106f55e8b4f07f4560f93e8de4afd1541aebb8c0e475343c7` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21 |
+| `scope_audits` | 22 | `cae24c6ad589f9298150014131c1d76f00451197f4fe3b2116172c05fd82d2e8` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22 |
 | `deferred_populations` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `closure_requirement_profiles` | 8 | `af587e64a9f295c7c01909abee8d09f39bae8a5da141d10a280884606eb8d70a` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 40 | `fb7c307abf1cc12ac21c888b424a8aab4deca108522f3e1a9ebd7c8fe2fcc60c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37, FS-CCT-38, FS-CCT-39, FS-CCT-40 |
