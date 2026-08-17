@@ -146,7 +146,7 @@ project may not present withdrawal as completion of those checks.
     the slot; the sentences are the author's. Either bring it into conformance or
     record the exception as permanent with its reason.
 
-- [ ] **Rule the book's stated thesis and whether a second stress case joins the
+- [x] **Rule the book's stated thesis and whether a second stress case joins the
   prisoner.**
   - The neutral brief is
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md)
@@ -173,6 +173,27 @@ project may not present withdrawal as completion of those checks.
     the delivery and receipt families land and after the pinned portfolio is
     rebalanced; ruling it earlier would state a thesis the source cannot yet
     carry. Neutral inventory and brief work may proceed meanwhile.
+  - **Completed — ruled 2026-08-17, implementation sequenced.** The author
+    ruled 1A on the thesis (restated structural form: the verb states what the
+    design does, `dignity` and `safety` refused as thesis nouns, the
+    methodological claim split into Reasoned-general plus the Derived
+    universal-standing instance, "designing for" readable only as
+    unconditionality plus demand-nothing interfaces) and, on the case, "2A +
+    treat infant stress test as primary stress test if possible" — the infant
+    joins as the second stress case paired with the prisoner, holding framing
+    primacy in the exempt elements where the landed rulings permit, while
+    substance primacy stays a measured outcome and the through-line stays
+    refused. The controlling record, including the ratified reading of the
+    conditional, is
+    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
+    Residue is routed, not open here: the exempt prose is author-drafted at
+    the sequenced step's end; the pairing, primacy re-measurement, and
+    standing-root liveness case land with the pinned-portfolio rebalance; the
+    named row lands with the reader-experience coverage ledger; and the
+    opening-note stress-test section is re-audited when the prose lands,
+    since its hardest-stress-test sentence is a source-property claim that
+    must track the source after the delivery families land. The receipt and
+    firewall gaps keep their own items unchanged.
 
 ---
 
@@ -1743,6 +1764,12 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     through one subject fails the same way whether the subject is a prisoner or an
     infant. See
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md).
+    The framing ruling has since landed: the infant is ratified as the paired
+    second stress case with framing primacy in the exempt elements where the
+    landed rulings permit, the through-line stays refused, and this item
+    consumes the pairing, the primacy re-measurement, and the standing-root
+    liveness case when it runs — see
+    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
 
 - [ ] **Use constructive, private/civic, democratic, and coercive chapter patterns,
   not one failure-first formula.**
