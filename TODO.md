@@ -761,6 +761,83 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Define a rights advocate able to act without replacing the voice of a child,
     disabled person, prisoner, newcomer, dependant or unregistered claimant.
 
+  - **Landed — the specification itself.** The `bodies` record grew from a
+    thin row into a constitutional contract card, and all 38 FS-BOD records
+    are populated against it. Each card separates the seven ratified status
+    senses, carries the eleven office-contract terms plus `anti_capture`,
+    names typed challenge/review/audit/political-accountability routes with
+    real checking bodies, declares its individualized adverse determinations
+    with a per-determination appeal and remedy, and carries its own
+    source-bound temporal contract. The nine bodies whose mechanics block
+    formal enactment carry bounded delegations recording choice owner, bounds
+    and failure default — no reserved number is invented. `13-full-society-
+    ledger.py` enforces the schema and its watched-failing controls; the
+    report gains a per-body contract projection. The producer-and-consumer
+    census the ruling requires before any retain/replace/retire card is
+    `new-book-plans/legacy-relation-census.md`.
+    Mechanically held by the checker: standing is refused in the three office
+    senses; no body checks itself; every body names an external checker; only
+    the custodial executor applies the retained custody contract; an
+    enumerated determination must carry appeal and remedy while a
+    none-by-design card carries neither, which is how "do not recreate a
+    universal right of appeal" stops being an exhortation; and no card text
+    may assert an arrival, an aggregate figure, a feasibility claim, or
+    relabel a current fixture as a ratified institution.
+    This establishes no institution, staffing, independence, operation, or
+    delivery. Every card stays `ratified-unimplemented` and FS-CLM-18 keeps
+    its `Specified` posture, because its closure names the specification
+    **and** its rule families.
+
+  - **The cards were adversarially reviewed and repaired before landing, and
+    the review is the reason to trust them at all.** A first pass validated
+    cleanly against the schema and was still wrong in ways no checker can see.
+    Four defect classes recurred. **False provenance** — a needle that resolves
+    while the sentence around it does not make the claim: the people-and-
+    associations card sourced a petition right from an enterprise
+    electoral-finance savings clause while the on-point participation sentence
+    sat uncited two decisions away. **Fused regimes** — the Assembly card
+    imposed the amendment-only aggregate-weight and affected-region rules on
+    ordinary legislation, and contradicted the Council card on the same rule.
+    **Invented allocation into a recorded silence** — the Civic President card
+    named the removal-confirming bodies the ruling expressly lists among its
+    unfixed blockers, in the same card that recorded them as reserved.
+    **Over-import of the independent-appointments contract** onto ordinary
+    administrations, where the scoping word is the first word of the source
+    sentence. Every finding was fixed or rebutted with a quoted source; the
+    repaired cards record the silences the inventions had covered over. Where a
+    card now cites that appointments contract for an ordinary administration it
+    says in terms that it is the nearest ratified pattern and expressly not
+    that body's rule.
+    Two lessons worth keeping: a schema-valid card can still be false, so the
+    provenance audit is not optional; and the checker's job is to make the
+    mechanical failures impossible so that review attention is free for the
+    semantic ones.
+
+  - **Outstanding, and why each is not in the specification.**
+    (a) The chapter-2 `standing` rename is prose, and this item's own later
+    bullet sequences the chapter audit for when a state-form rule family
+    lands; chapter 2 is first on that list, and renaming it now would touch it
+    twice while leaving the universal sense in chapters 1, 7, 15 and the
+    opening note untouched. No relation is called `standing`, so the rename
+    costs no constitution or pin edit when it runs.
+    (b) The retain/replace/retire dispositions: the ruling says census
+    *before* deciding, and a replacement must revise every downstream verdict
+    atomically. The census landed; the decisions belong to the item that
+    defines the democratic ceiling and to the coverage row whose closure names
+    those cards.
+    (c) Gate A is reopened, as any source edit requires, and the pending
+    `FS-SAU-21` row is appended. It cannot be reclosed until the engine
+    regression below is resolved, because the closure binds a candidate whose
+    verification receipt names `./verify.sh`.
+
+  - **Blocked on the live upstream regression**, which has its own item above
+    and is not restated here. This landing was verified with `NIBLI_PIN`
+    pinned to a `b71b978` build; the same four verdicts move on `176b132`, and
+    an independent bisect from a separate session reached the same parent/child
+    boundary and carried it further to current `main`. Gate A cannot be
+    reclosed until the channel closes it, because the closure binds a candidate
+    whose verification receipt names `./verify.sh` on the default path.
+
 - [ ] **Specify obligations without making rights reciprocal bargains.**
   - Public institutions must respect, protect, fulfil, continue and remedy.
   - Contractors remain bound when delivering a public function. Direct private
