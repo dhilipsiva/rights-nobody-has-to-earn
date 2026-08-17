@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-17-bodies-specification-v2`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-17-bodies-specification-v2`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -26,7 +26,7 @@ Coverage-family drafting states:
 - FS-CVF-013 Substantive equality and anti-subordination constitutional effects: prose-landed — The equality family is prose-landed after audit of the opening note, every numbered chapter, Part V, and method; operation, population facts, data systems, programmes, institutional acts, completed remedies, and Book 2 delivery remain outside this coverage state.
 - FS-CVF-014 Bodily autonomy, health, care, family, and life-course constitutional effects: prose-landed — The bodily-autonomy, health, care, family, and life-course family is prose-landed after audit of the opening note, affected numbered chapters, Part V, and method; operation, delivery, age calibration, service routes, institutions, completed remedies, and Book 2 implementation remain outside this coverage state.
 
-Canonical source SHA-256: `99cd51f72469b8c6694fe8e354747964f4ebb53c083d7f12846649517849d3be`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `12bcdb5ebd08d249422439408bd125d8c5b241d40e735ef62ff987cf0a12a442`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 

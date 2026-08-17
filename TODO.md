@@ -993,10 +993,20 @@ Gate B; it does not claim Book 2 operations or feasibility.
     atomically. The census landed; the decisions belong to the item that
     defines the democratic ceiling and to the coverage row whose closure names
     those cards.
-    (c) Gate A is reopened, as any source edit requires, and the pending
-    `FS-SAU-21` row is appended. It cannot be reclosed until the engine
-    regression below is resolved, because the closure binds a candidate whose
-    verification receipt names `./verify.sh`.
+    (c) **Closed.** Gate A was reopened, as any source edit requires, with
+    `FS-SAU-21` appended pending and `FS-SAU-22` after the map-cell
+    restoration. It could not be reclosed while the engine regression held,
+    because the closure binds a candidate whose verification receipt names
+    `./verify.sh`. That closed on 2026-08-17, and Gate A was reclosed the same
+    day: `FS-SAU-23` records the passing current-source audit (a landed row is
+    an append-only prefix, so the passing result is a new row rather than an
+    edit to `FS-SAU-22`), candidate `b7843fe13d4ffe63fe302d3c365e98956aef31ff`
+    is frozen, and the closure record binds it with a receipt over the full
+    ten-command chain run unpinned, `all-passed`, transcript SHA-256
+    `a64bc965c0629e023410f76e963f143a6b3a25381a59689689b7d0e8664f8a35`. The
+    permitted claim is unchanged and deliberately narrow — a versioned,
+    reviewable scope map and assurance program — and the four
+    Gate-A-applicable defects keep their recorded claim limitations.
 
   - **Was blocked on the live upstream regression; that item is now closed.**
     This landing was verified at the time with `NIBLI_PIN` pinned to a
