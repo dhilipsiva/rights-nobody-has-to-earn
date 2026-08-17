@@ -1238,6 +1238,105 @@ ROLE_ANCHORS = [
     "ratified-doctrine-unimplemented",
 ]
 
+# ── the bodies specification ─────────────────────────────────────────────────
+# A body card is a constitutional contract, never an operating description. The
+# seven status senses exist because the state-form ruling refused to let one
+# word carry them: universal standing is not membership, membership is not the
+# ballot, the ballot is not candidacy, holding office is not holding power, and
+# none of them is the answerability that survives removal. Collapsing any two
+# was the specific failure the ruling named, so the schema keeps them apart by
+# construction and the checker refuses a card that fuses them.
+BODY_KINDS = [
+    "universal-holder",
+    "representative-chamber",
+    "executive",
+    "formal-continuity-office",
+    "court",
+    "independent-office",
+    "administration",
+    "predeclared-alternate",
+    "predeclared-substitute-reviewer",
+]
+BODY_STATUS_SENSES = [
+    "universal_human_standing",
+    "political_membership",
+    "franchise",
+    "candidacy",
+    "current_office",
+    "current_lawful_power",
+    "permanent_historical_public_answerability",
+]
+# The office contract the ruling requires of every office, in its own order.
+# `anti_capture` is the eleventh: the ruling demands that direct AND de facto
+# appointment control be observable, which the other ten do not reach.
+BODY_OFFICE_TERMS = [
+    "democratic_source",
+    "jurisdiction",
+    "ordinary_function",
+    "delegation_boundary",
+    "conflict_and_recusal",
+    "appointment",
+    "removal",
+    "succession",
+    "temporal_status",
+    "public_reason_duty",
+    "anti_capture",
+]
+ACCOUNTABILITY_ROUTE_TYPES = [
+    "challenge", "review", "audit", "political-accountability",
+]
+ADVERSE_DETERMINATION_KINDS = ["none-by-design", "enumerated"]
+CUSTODY_T3_RELATIONS = ["not-reusable", "retained-application"]
+# Custody is the one ratified case-bound temporal contract. Every other power
+# needs its own; the ruling says so in five separate decisions. Only the
+# custodial executor may declare that it applies the retained record.
+CUSTODY_T3_APPLICANT = "FS-BOD-35"
+CUSTODY_T3_SOURCE_MARKERS = (
+    "book-1-time-model-decision.md",
+    "temporal-assurance-case.json",
+    "temporal-assurance-case.md",
+)
+# The five mechanics the state-form ruling says block formal enactment until a
+# body card fixes them. A card fixes one by recording its bounded delegation,
+# never by inventing the number the ruling reserved.
+BODY_DELEGATED_MECHANICS_REQUIRED = {
+    "FS-BOD-02", "FS-BOD-03", "FS-BOD-04", "FS-BOD-05",
+    "FS-BOD-17", "FS-BOD-18", "FS-BOD-19", "FS-BOD-24", "FS-BOD-25",
+}
+# The ruling's own words: do not relabel a current narrow fixture as a ratified
+# institution. These are the exact equations it refused.
+BODY_FIXTURE_RELABELS = (
+    "convocation is the executive council",
+    "convocation as the executive council",
+    "court is the constitutional court",
+    "current court as the constitutional court",
+    "state is a completed federal",
+    "state as a completed federal government",
+    "assembly constant is the people's assembly",
+    "electorate constant is the electorate",
+)
+# Routing prose drifts into arrival prose one verb at a time, and the ledger
+# routes rather than delivers. A card states what is owed and what withholds a
+# conclusion; it never states that anyone acted.
+BODY_ARRIVAL_PHRASES = (
+    "is delivered", "are delivered", "was delivered", "were delivered",
+    "the remedy arrives", "the remedy reaches", "the election occurs",
+    "the election happens", "the election takes place", "the body acts",
+    "will act", "guarantees delivery", "actually arrives",
+)
+BODY_FEASIBILITY_TOKENS = (
+    "feasible", "feasibility", "affordable", "affordability",
+    "cost-effective", "capacity to deliver",
+)
+BODY_AGGREGATE_RE = re.compile(r"\b\d+\s*%|\b\d+\s+(?:of|out\s+of)\s+\d+\b")
+BODY_STANDING_RE = re.compile(r"\bstanding\b", re.IGNORECASE)
+# The three office senses the state-form ruling renamed away from "standing".
+BODY_OFFICE_SENSES = (
+    "current_office",
+    "current_lawful_power",
+    "permanent_historical_public_answerability",
+)
+
 # The dependency map's closed vocabularies. An edge records that a function
 # depends on a flow — never that the flow arrives: no right is called
 # delivered because an institution promised it, and no body is called
@@ -3346,13 +3445,69 @@ def validate_reader_evidence_alignment(src: dict, routes_by_id: dict):
         )
 
 
-def validate_bodies(src: dict):
+def _body_register_guard(text: str, context: str):
+    """A body card routes and states duties; it never reports an arrival.
+
+    Three registers are refused together because each converts a specification
+    into a claim it cannot support: an arrival verb turns an owed duty into a
+    delivered one, an aggregate figure turns a routing inventory into a score
+    the ledger refuses to compute, and a feasibility word makes a Book 2 claim
+    inside Book 1, where no route can establish it.
+    """
+    lower = text.lower()
+    for phrase in BODY_ARRIVAL_PHRASES:
+        if phrase in lower:
+            raise LedgerError(
+                f"{context}: arrival register is refused — {phrase!r} states "
+                "that something happened; a card states what is owed and what "
+                "withholds a conclusion"
+            )
+    if BODY_AGGREGATE_RE.search(text):
+        raise LedgerError(
+            f"{context}: aggregate figure is refused — the ledger produces no "
+            "score, total, percentage, or coverage figure"
+        )
+    for token in BODY_FEASIBILITY_TOKENS:
+        if token in lower:
+            raise LedgerError(
+                f"{context}: feasibility claim is refused — {token!r} belongs "
+                "to Book 2; no Book 1 route can establish it"
+            )
+    for relabel in BODY_FIXTURE_RELABELS:
+        if relabel in lower:
+            raise LedgerError(
+                f"{context}: may not relabel a current fixture as a ratified "
+                "institution — the ruling refuses this equation by name"
+            )
+
+
+def _body_term(rec, value, field, ctx):
+    text = _validate_contract_term(value, field, rec, ctx)
+    _body_register_guard(text, ctx)
+    return text
+
+
+def validate_bodies(src: dict, ids: dict):
+    """The bodies specification: one constitutional contract per body.
+
+    The card says what a body ordinarily does, what it may not do alone, who
+    checks it, which individualized adverse determinations it can make, and on
+    what its authority depends. It does not say that the body exists, is
+    staffed, or has ever acted: every record stays `ratified-unimplemented`,
+    and the affected claim keeps its `Specified` posture. Appeal attaches to a
+    NAMED determination, never to the body as such — that is the mechanical
+    form of the ruling's refusal to recreate a universal right of appeal.
+    """
     for i, rec in enumerate(src.get("bodies", [])):
         ctx = f"bodies[{i}] ({rec.get('id', '?')})"
         exact_keys(
             rec,
             COMMON_KEYS + ["job", "may_not_do_alone", "required_check",
-                           "source_ref"],
+                           "source_ref", "source_refs", "body_kind",
+                           "status_senses", "office_contract",
+                           "accountability_routes", "adverse_determinations",
+                           "temporal_contract", "delegated_mechanics",
+                           "book2_handoff"],
             ctx,
         )
         validate_common_record_fields(rec, ctx)
@@ -3361,9 +3516,160 @@ def validate_bodies(src: dict):
                 f"{ctx}: a required body is constitutional architecture; its "
                 "layer is constitutional-invariant"
             )
-        for key in ("job", "may_not_do_alone", "required_check"):
+        for key in ("job", "may_not_do_alone", "required_check",
+                    "book2_handoff"):
             require_str(rec, key, ctx)
         validate_reference(rec["source_ref"], f"{ctx}.source_ref")
+        _validate_source_refs(rec["source_refs"], f"{ctx}.source_refs")
+        if rec["source_ref"] not in rec["source_refs"]:
+            raise LedgerError(
+                f"{ctx}: card sources must contain the rendered source"
+            )
+        if rec["body_kind"] not in BODY_KINDS:
+            raise LedgerError(
+                f"{ctx}: body_kind is invalid; declared kinds are "
+                f"{', '.join(BODY_KINDS)}"
+            )
+
+        senses = rec["status_senses"]
+        if not isinstance(senses, dict):
+            raise LedgerError(f"{ctx}.status_senses must be an object")
+        exact_keys(senses, BODY_STATUS_SENSES, f"{ctx}.status_senses")
+        for sense in BODY_STATUS_SENSES:
+            sctx = f"{ctx}.status_senses.{sense}"
+            text = _body_term(rec, senses[sense], sense, sctx)
+            if sense in BODY_OFFICE_SENSES and BODY_STANDING_RE.search(text):
+                raise LedgerError(
+                    f"{sctx}: standing is reserved for universal personhood; "
+                    "the office sense is public or historical answerability"
+                )
+
+        office = rec["office_contract"]
+        if not isinstance(office, dict):
+            raise LedgerError(f"{ctx}.office_contract must be an object")
+        exact_keys(office, BODY_OFFICE_TERMS, f"{ctx}.office_contract")
+        for term in BODY_OFFICE_TERMS:
+            octx = f"{ctx}.office_contract.{term}"
+            text = _body_term(rec, office[term], term, octx)
+            if term == "ordinary_function" and text.strip() == rec["job"].strip():
+                raise LedgerError(
+                    f"{octx}: the ordinary function must expand the job, not "
+                    "copy it — the check and the day job are both shown"
+                )
+
+        routes = rec["accountability_routes"]
+        if not isinstance(routes, list) or not routes:
+            raise LedgerError(
+                f"{ctx}.accountability_routes must name at least one typed route"
+            )
+        seen_types, external_checker = set(), False
+        for j, route in enumerate(routes):
+            rctx = f"{ctx}.accountability_routes[{j}]"
+            exact_keys(route, ["route_type", "checker_body_refs",
+                               "checker_role_refs", "term"], rctx)
+            if route["route_type"] not in ACCOUNTABILITY_ROUTE_TYPES:
+                raise LedgerError(
+                    f"{rctx}.route_type must be one of "
+                    f"{', '.join(ACCOUNTABILITY_ROUTE_TYPES)}"
+                )
+            if route["route_type"] in seen_types:
+                raise LedgerError(f"{rctx}: route types are duplicate-free")
+            seen_types.add(route["route_type"])
+            _typed_ref_list(route["checker_body_refs"], "bodies", ids,
+                            f"{rctx}.checker_body_refs", allow_empty=True)
+            _typed_ref_list(route["checker_role_refs"], "roles", ids,
+                            f"{rctx}.checker_role_refs", allow_empty=True)
+            if rec["id"] in route["checker_body_refs"]:
+                raise LedgerError(
+                    f"{rctx}: a body may not check itself — separation is the "
+                    "whole of the required check"
+                )
+            if route["checker_body_refs"]:
+                external_checker = True
+            _body_term(rec, route["term"], route["route_type"], f"{rctx}.term")
+        if not external_checker:
+            raise LedgerError(
+                f"{ctx}.accountability_routes needs at least one checking body"
+            )
+
+        adverse = rec["adverse_determinations"]
+        if not isinstance(adverse, dict):
+            raise LedgerError(f"{ctx}.adverse_determinations must be an object")
+        exact_keys(adverse, ["kind", "note", "items"],
+                   f"{ctx}.adverse_determinations")
+        if adverse["kind"] not in ADVERSE_DETERMINATION_KINDS:
+            raise LedgerError(
+                f"{ctx}.adverse_determinations.kind must be "
+                f"{' or '.join(ADVERSE_DETERMINATION_KINDS)}"
+            )
+        _body_term(rec, adverse["note"], "note",
+                   f"{ctx}.adverse_determinations.note")
+        items = adverse["items"]
+        if not isinstance(items, list):
+            raise LedgerError(f"{ctx}.adverse_determinations.items must be a list")
+        if adverse["kind"] == "none-by-design" and items:
+            raise LedgerError(
+                f"{ctx}.adverse_determinations: none-by-design lists no items"
+            )
+        if adverse["kind"] == "enumerated" and not items:
+            raise LedgerError(
+                f"{ctx}.adverse_determinations: enumerated needs at least one item"
+            )
+        for j, item in enumerate(items):
+            ictx = f"{ctx}.adverse_determinations.items[{j}]"
+            exact_keys(item, ["name", "subject", "appeal", "remedy"], ictx)
+            require_str(item, "name", ictx)
+            require_str(item, "subject", ictx)
+            _body_term(rec, item["appeal"], "appeal", f"{ictx}.appeal")
+            _body_term(rec, item["remedy"], "remedy", f"{ictx}.remedy")
+
+        temporal = rec["temporal_contract"]
+        if not isinstance(temporal, dict):
+            raise LedgerError(f"{ctx}.temporal_contract must be an object")
+        exact_keys(temporal, ["contract_kind", "custody_t3_relation", "term",
+                              "failure_polarity", "expiry_default"],
+                   f"{ctx}.temporal_contract")
+        require_str(temporal, "contract_kind", f"{ctx}.temporal_contract")
+        if temporal["custody_t3_relation"] not in CUSTODY_T3_RELATIONS:
+            raise LedgerError(
+                f"{ctx}.temporal_contract.custody_t3_relation must be "
+                f"{' or '.join(CUSTODY_T3_RELATIONS)}"
+            )
+        if (temporal["custody_t3_relation"] == "retained-application"
+                and rec["id"] != CUSTODY_T3_APPLICANT):
+            raise LedgerError(
+                f"{ctx}.temporal_contract: custody T3 is not reusable — only "
+                f"{CUSTODY_T3_APPLICANT} applies the retained record"
+            )
+        for key in ("term", "failure_polarity", "expiry_default"):
+            tctx = f"{ctx}.temporal_contract.{key}"
+            _body_term(rec, temporal[key], key, tctx)
+            if rec["id"] == CUSTODY_T3_APPLICANT:
+                continue
+            for ref in temporal[key]["source_refs"]:
+                if any(marker in ref for marker in CUSTODY_T3_SOURCE_MARKERS):
+                    raise LedgerError(
+                        f"{tctx}: custody T3 is not reusable as an office term "
+                        "or election clock; this body needs its own source"
+                    )
+
+        mechanics = rec["delegated_mechanics"]
+        if not isinstance(mechanics, list):
+            raise LedgerError(f"{ctx}.delegated_mechanics must be a list")
+        if rec["id"] in BODY_DELEGATED_MECHANICS_REQUIRED and not mechanics:
+            raise LedgerError(
+                f"{ctx}: a blocked mechanic must be filled — the ruling holds "
+                "formal enactment until this card fixes it"
+            )
+        for j, entry in enumerate(mechanics):
+            mctx = f"{ctx}.delegated_mechanics[{j}]"
+            if not isinstance(entry, dict) or \
+                    entry.get("basis") != "bounded-delegation":
+                raise LedgerError(
+                    f"{mctx}: a delegated mechanic is a bounded delegation, so "
+                    "it declares its choice owner, bounds, and failure default"
+                )
+            _body_term(rec, entry, "delegated mechanic", mctx)
 
 
 def validate_roles(src: dict, ids: dict):
@@ -6084,8 +6390,10 @@ def validate(src: dict):
     validate_legacy_rows(src, ids)
     validate_claims(src, ids, routes_by_id)
     validate_reader_evidence_alignment(src, routes_by_id)
-    validate_bodies(src)
+    # roles first: a body card's checking routes name roles, so a deferred or
+    # emptied roles array must be diagnosed as that, not as a dangling body ref.
     validate_roles(src, ids)
+    validate_bodies(src, ids)
     validate_power_population(src, ids)
     validate_constitutional_effects(src, ids)
     validate_coverage_families(src, ids)
@@ -6590,6 +6898,62 @@ def negative_controls(src: dict) -> int:
             _unexercise_scale, "unexercised")
     control("a required body keeps both positions",
             _strip_body_positions, "both an affected and a checking")
+
+    # ── the bodies specification: sabotage first, trust after ────────────────
+    # Each control below is the falsification condition for one clause of the
+    # ratified mandate. A clause with no watched-failing control is a clause
+    # the checker does not actually hold.
+    control("a body separates all seven status senses",
+            lambda s: s["bodies"][0]["status_senses"].pop("franchise"),
+            "missing keys")
+    control("a body carries the whole office contract",
+            lambda s: s["bodies"][0]["office_contract"].pop("succession"),
+            "missing keys")
+    control("a body kind is a declared kind",
+            lambda s: s["bodies"][0].update({"body_kind": "ministry"}),
+            "body_kind is invalid")
+    control("a body's rendered source is one of its card sources",
+            _body_source_not_in_sources,
+            "card sources must contain the rendered source")
+    control("a body term source must be a card source",
+            _body_term_foreign_source, "term source must be a card source")
+    control("the office senses do not reuse the word standing",
+            _body_office_sense_says_standing,
+            "standing is reserved for universal personhood")
+    control("the ordinary function expands the job rather than copying it",
+            _body_ordinary_function_copies_job, "must expand the job")
+    control("a body may not check itself",
+            _body_checks_itself, "may not check itself")
+    control("a body names at least one external checker",
+            _body_without_external_checker, "needs at least one checking body")
+    control("a body's accountability routes are typed and duplicate-free",
+            _body_duplicate_route_type, "duplicate-free")
+    control("an enumerated adverse determination carries an appeal",
+            _body_adverse_without_appeal, "missing keys")
+    control("an enumerated adverse determination carries a remedy",
+            _body_adverse_blank_remedy, "non-empty string")
+    control("a body claiming no adverse determination lists none",
+            _body_none_by_design_with_items, "none-by-design lists no items")
+    control("an enumerated adverse determination names one",
+            _body_enumerated_without_items, "needs at least one item")
+    control("only custodial execution applies the retained custody contract",
+            _body_borrows_custody_t3, "custody T3 is not reusable")
+    control("a body temporal contract may not cite the custody clock source",
+            _body_cites_custody_source, "custody T3 is not reusable")
+    control("a blocked mechanic is filled",
+            _body_drops_blocked_mechanic, "a blocked mechanic must be filled")
+    control("a delegated mechanic declares its choice owner and bounds",
+            _body_mechanic_not_delegated, "bounded delegation")
+    control("a body card may not assert an arrival",
+            _body_asserts_arrival, "arrival register is refused")
+    control("a body card may not carry an aggregate figure",
+            _body_asserts_aggregate, "aggregate figure is refused")
+    control("a body card may not carry a feasibility claim",
+            _body_asserts_feasibility, "feasibility claim is refused")
+    control("a body card may not relabel a current fixture",
+            _body_relabels_fixture, "may not relabel a current fixture")
+    control("the advocate declares its non-substitution boundary",
+            _body_advocate_boundary_blank, "must be a non-empty string")
     control("an omission carries its risk-based reason",
             _omission_empty_reason, "risk_reason")
     control("an omission names a real role",
@@ -7243,6 +7607,146 @@ def _strip_body_positions(s):
             touched = True
     if not touched:
         raise LedgerError(f"control setup: no role positions cite {bid}")
+
+
+# ── bodies-specification control mutations ───────────────────────────────────
+# A foreign but real reference, used to prove the term-source subset rule.
+_FOREIGN_REF = (
+    "new-book-plans/full-society-scope-review-protocol.md::"
+    "## 5. Mechanical Gate A closure"
+)
+_CUSTODY_REF = (
+    "new-book-plans/book-1-time-model-decision.md::# Book 1 Time-Model Decision"
+)
+
+
+def _first_body(s, predicate, what):
+    for rec in s["bodies"]:
+        if predicate(rec):
+            return rec
+    raise LedgerError(f"control setup: no body {what}")
+
+
+def _a_body_term(rec):
+    """One term object from a card, for the register controls."""
+    return rec["status_senses"]["universal_human_standing"]
+
+
+def _body_source_not_in_sources(s):
+    rec = _first_body(s, lambda r: len(r["source_refs"]) > 1,
+                      "carries more than one card source")
+    rec["source_refs"] = [r for r in rec["source_refs"]
+                          if r != rec["source_ref"]]
+
+
+def _body_term_foreign_source(s):
+    # A real, resolvable reference the CARD does not carry: only the subset
+    # rule can object, which is exactly the rule under test.
+    term = _a_body_term(s["bodies"][0])
+    term["source_refs"] = term["source_refs"] + [_FOREIGN_REF]
+
+
+def _body_office_sense_says_standing(s):
+    sense = s["bodies"][0]["status_senses"]["current_office"]
+    sense["text"] = sense["text"] + " This is the body's standing."
+
+
+def _body_ordinary_function_copies_job(s):
+    rec = s["bodies"][0]
+    rec["office_contract"]["ordinary_function"]["text"] = rec["job"]
+
+
+def _body_checks_itself(s):
+    rec = s["bodies"][0]
+    rec["accountability_routes"][0]["checker_body_refs"] = [rec["id"]]
+
+
+def _body_without_external_checker(s):
+    for route in s["bodies"][0]["accountability_routes"]:
+        route["checker_body_refs"] = []
+
+
+def _body_duplicate_route_type(s):
+    routes = s["bodies"][0]["accountability_routes"]
+    routes.append(copy.deepcopy(routes[0]))
+
+
+def _enumerated_body(s):
+    return _first_body(s,
+                       lambda r: r["adverse_determinations"]["kind"] == "enumerated",
+                       "enumerates an adverse determination")
+
+
+def _body_adverse_without_appeal(s):
+    _enumerated_body(s)["adverse_determinations"]["items"][0].pop("appeal")
+
+
+def _body_adverse_blank_remedy(s):
+    _enumerated_body(s)["adverse_determinations"]["items"][0]["remedy"]["text"] = ""
+
+
+def _body_none_by_design_with_items(s):
+    donor = _enumerated_body(s)["adverse_determinations"]["items"][0]
+    target = _first_body(
+        s, lambda r: r["adverse_determinations"]["kind"] == "none-by-design",
+        "claims no adverse determination")
+    target["adverse_determinations"]["items"] = [copy.deepcopy(donor)]
+
+
+def _body_enumerated_without_items(s):
+    _enumerated_body(s)["adverse_determinations"]["items"] = []
+
+
+def _body_borrows_custody_t3(s):
+    rec = _first_body(s, lambda r: r["id"] != CUSTODY_T3_APPLICANT,
+                      "other than the custodial executor")
+    rec["temporal_contract"]["custody_t3_relation"] = "retained-application"
+
+
+def _body_cites_custody_source(s):
+    rec = _first_body(s, lambda r: r["id"] != CUSTODY_T3_APPLICANT,
+                      "other than the custodial executor")
+    rec["source_refs"] = rec["source_refs"] + [_CUSTODY_REF]
+    term = rec["temporal_contract"]["term"]
+    term["source_refs"] = term["source_refs"] + [_CUSTODY_REF]
+
+
+def _body_drops_blocked_mechanic(s):
+    rec = _first_body(s, lambda r: r["id"] in BODY_DELEGATED_MECHANICS_REQUIRED,
+                      "carries a blocked mechanic")
+    rec["delegated_mechanics"] = []
+
+
+def _body_mechanic_not_delegated(s):
+    rec = _first_body(s, lambda r: bool(r["delegated_mechanics"]),
+                      "carries a delegated mechanic")
+    rec["delegated_mechanics"][0]["basis"] = "source-specified"
+
+
+def _body_asserts_arrival(s):
+    term = _a_body_term(s["bodies"][0])
+    term["text"] = term["text"] + " The remedy is delivered."
+
+
+def _body_asserts_aggregate(s):
+    term = _a_body_term(s["bodies"][0])
+    term["text"] = term["text"] + " 5 of 7 are established."
+
+
+def _body_asserts_feasibility(s):
+    term = _a_body_term(s["bodies"][0])
+    term["text"] = term["text"] + " The design is feasible."
+
+
+def _body_relabels_fixture(s):
+    term = _a_body_term(s["bodies"][0])
+    term["text"] = term["text"] + " Read Convocation as the Executive Council."
+
+
+def _body_advocate_boundary_blank(s):
+    rec = _first_body(s, lambda r: r["id"] == "FS-BOD-20",
+                      "is the rights advocate")
+    rec["office_contract"]["delegation_boundary"]["text"] = " "
 
 
 def _omission_empty_reason(s):
@@ -8315,12 +8819,69 @@ def render(src: dict, resolution: dict) -> str:
     w("")
     w("## Required bodies")
     w("")
-    w("| Body | Constitutional job | May not do alone | Required check / remedy |")
-    w("| --- | --- | --- | --- |")
+    w("| Body | Kind | Constitutional job | May not do alone | Required check / remedy |")
+    w("| --- | --- | --- | --- | --- |")
     for rec in src["bodies"]:
-        w(f"| {rec['id']} {rec['title']} | {rec['job']} | "
-          f"{rec['may_not_do_alone']} | {rec['required_check']} |")
+        w(f"| {rec['id']} {rec['title']} | {rec['body_kind']} | "
+          f"{rec['job']} | {rec['may_not_do_alone']} | "
+          f"{rec['required_check']} |")
     w("")
+    w("### Body contracts")
+    w("")
+    w("Each card separates the seven status senses the state-form ruling "
+      "refused to let one word carry, states the office contract, names who "
+      "checks the body, and lists the individualized adverse determinations "
+      "it can make. A determination carries an appeal and a remedy; a body "
+      "that makes none carries neither, which is how the ruling's refusal to "
+      "recreate a universal right of appeal is held mechanically rather than "
+      "promised. A reserved choice appears as a bounded delegation with its "
+      "owner, bounds, and failure default — never as an invented number. "
+      "Every card stays ratified-unimplemented: this is what a body is "
+      "constitutionally obliged to do and what withholds its conclusions, "
+      "not a record that any body exists, is staffed, is independent in "
+      "fact, or has ever acted.")
+    w("")
+    for rec in src["bodies"]:
+        w(f"#### {rec['id']} — {rec['title']} ({rec['body_kind']})")
+        w("")
+        w(f"- Applicability: {rec['applicability']}")
+        w(f"- Status: {rec['status']}; severity {rec['severity']}; "
+          f"consequence: {rec['consequence']}")
+        w(f"- Owner: `{rec['owner_ref']}`; closure: {rec['closure_condition']}")
+        w("- Status senses:")
+        for sense in BODY_STATUS_SENSES:
+            label = sense.replace("_", " ")
+            w(f"    - *{label}* — {rec['status_senses'][sense]['text']}")
+        w("- Office contract:")
+        for term in BODY_OFFICE_TERMS:
+            label = term.replace("_", " ")
+            w(f"    - *{label}* — {rec['office_contract'][term]['text']}")
+        w("- Accountability routes:")
+        for route in rec["accountability_routes"]:
+            checkers = ", ".join(route["checker_body_refs"]
+                                 + route["checker_role_refs"]) or "none named"
+            w(f"    - *{route['route_type']}* ({checkers}) — "
+              f"{route['term']['text']}")
+        adverse = rec["adverse_determinations"]
+        w(f"- Individualized adverse determinations: {adverse['kind']} — "
+          f"{adverse['note']['text']}")
+        for item in adverse["items"]:
+            w(f"    - **{item['name']}** against {item['subject']}. "
+              f"Appeal: {item['appeal']['text']} "
+              f"Remedy: {item['remedy']['text']}")
+        temporal = rec["temporal_contract"]
+        w(f"- Temporal contract ({temporal['contract_kind']}; custody T3 "
+          f"{temporal['custody_t3_relation']}): {temporal['term']['text']}")
+        w(f"    - Failure polarity: {temporal['failure_polarity']['text']}")
+        w(f"    - Expiry default: {temporal['expiry_default']['text']}")
+        if rec["delegated_mechanics"]:
+            w("- Delegated mechanics (bounded, never an invented value):")
+            for entry in rec["delegated_mechanics"]:
+                w(f"    - {entry['text']} Choice owner: {entry['choice_owner']} "
+                  f"Bounds: {entry['bounds']} "
+                  f"Failure default: {entry['failure_default']}")
+        w(f"- Book 2 handoff: {rec['book2_handoff']}")
+        w("")
     power_inventory = src["power_source_inventory"]
     w("## Public-power source inventory")
     w("")
