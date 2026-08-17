@@ -46,18 +46,21 @@ then a full-society expansion backlog and cross-cutting sections:
    reader route and its reserved post-pilot threshold ruling was withdrawn from
    the current Book 1 program at `907ddd0`. The 2026-08-15 ruling at
    `a8d6fd5` makes R6 optional and removes external-human participation from
-   Gate A, Gate C, Gate E, publication, and project completion. Neutral inventory
-   and decision briefs may proceed in parallel; each still-gated domain's rules,
-   prose, and public claim wait for its own author ruling. This section has been
+   Gate A, Gate C, Gate E, publication, and project completion. The book's
+   stated thesis and its paired second stress case were ruled 2026-08-17 at
+   `ef0a48c`. **No author ruling is currently blocking implementation work**;
+   the outstanding author obligation is drafted prose, not a decision. Neutral
+   inventory and decision briefs may proceed in parallel; each still-gated
+   domain's rules, prose, and public claim wait for its own author ruling. This section has been
    destroyed by tooling once and is watched accordingly.
-2. **Phase 2 — engine handoffs (nibli).** The finite collective-decision,
-   versioned ecological/animal finding-boundary, and multi-power/multi-window
-   protective-authority capability audits are closed and recorded in source-bound
-   planning artifacts. Fail-closed raw witness enumeration landed in engine
-   `55806188553016c192e6ba7cf73ee6a41cf30eef`; corpus-scoped text-compute
-   registration landed in `5777ced0ec6c9ebdc20b6536520e02691dd7e6e9`. No
-   bounded engine handoff repair remains. Neither repair is an election result
-   service; democratic formalisation still uses authenticated external result
+2. **Phase 2 — engine handoffs (nibli).** The three capability audits are closed
+   and recorded in source-bound planning artifacts, and the fail-closed witness
+   enumeration and corpus-scoped text-compute repairs have landed. **One handoff
+   is open and blocking: the corpus request for two approval names.** The
+   soundness regression that made the suite red is closed — engine `b97d1af`,
+   verified here before acceptance — so the default `./verify.sh` path is green
+   again and needs no pin. No repair here is an election result service;
+   democratic formalisation still uses authenticated external result
    certificates.
 3. **Full-society expansion — implementation backlog.** The ratified constitutional
    mandate remains the legal spine, but the completion target also requires a
@@ -75,7 +78,14 @@ plan, data work, legacy harvest, and a pointer to book-2's own tracker. **Standi
 facts and methods** closes the file and holds knowledge, not tasks.
 
 Plain bullets, never numbered. Delete a bullet entirely when it fully lands;
-update it if only partly done. Read-only inventory, evidence gathering and neutral
+update it if only partly done. **The `[x]` items that remain are the exception
+and must not be tidied away**: their heading lines are live `owner_ref` needles
+on ledger, assertion-surface and manifest records, and a needle must resolve
+exactly once, so deleting a heading turns `./verify.sh` red in a message about
+a reference rather than about the deletion. Their bodies are compressed to a
+landed line plus any standing constraint that lives only here; the ratified
+content sits in the controlling decision records. Before rewording any heading,
+run a needle census — several strings are also *prefixes* of longer needles. Read-only inventory, evidence gathering and neutral
 decision briefs may run in parallel; shared-tree edits, verification and commits land
 serially, one owned item at a time.
 
@@ -148,268 +158,28 @@ project may not present withdrawal as completion of those checks.
 
 - [x] **Rule the book's stated thesis and whether a second stress case joins the
   prisoner.**
-  - The neutral brief is
-    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md)
-    (2026-08-17). It decides nothing and creates no predicate, pin, defect row,
-    receipt, coverage row, or Gate consequence.
-  - **Question 1 — the thesis.** The proposed sentence is normative plus
-    empirical, so it can be stated only in the opening note and Part V, beside
-    the existing stress-test framing. Two costs are recorded: a thesis whose verb
-    is *owes*, on *dignity* grounds, asserts the value justification the floor's
-    admission criterion deliberately refuses; and `dignity` is an undefined bare
-    prose word while `safety` already names one of the seven fixed functional
-    criteria bound to the reference envelope. The methodological half must also
-    split — the general claim is Reasoned at best, while a named bounded instance
-    can be Derived, and the universal-standing root family is one such instance.
-  - **Question 2 — the case.** An infant without a reliable caregiver can occupy
-    only the *receives* and *is acted upon* postures, so running it as the
-    through-line fails the agency clause of the pinned-case item below, and
-    reproduces the single-lens defect the tracker guards against four times.
-    Pairing it with the prisoner as a **second** stress case straining no
-    constraint is the brief's recorded alternative: the two fail in opposite
-    directions, since the prisoner is the person public power has acted upon and
-    this subject is the person it has not.
-  - **Sequenced, and it blocks nothing now.** The framing ruling belongs after
-    the delivery and receipt families land and after the pinned portfolio is
-    rebalanced; ruling it earlier would state a thesis the source cannot yet
-    carry. Neutral inventory and brief work may proceed meanwhile.
-  - **Completed — ruled 2026-08-17, implementation sequenced.** The author
-    ruled 1A on the thesis (restated structural form: the verb states what the
-    design does, `dignity` and `safety` refused as thesis nouns, the
-    methodological claim split into Reasoned-general plus the Derived
-    universal-standing instance, "designing for" readable only as
-    unconditionality plus demand-nothing interfaces) and, on the case, "2A +
-    treat infant stress test as primary stress test if possible" — the infant
-    joins as the second stress case paired with the prisoner, holding framing
-    primacy in the exempt elements where the landed rulings permit, while
-    substance primacy stays a measured outcome and the through-line stays
-    refused. The controlling record, including the ratified reading of the
-    conditional, is
+  - **Ruled 2026-08-17** (`ef0a48c`): thesis restated-structural, exempt
+    elements only; the caregiverless infant paired with the prisoner, holding
+    framing primacy where the landed rulings permit. Controlling record:
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
-    Residue is routed, not open here: the exempt prose is author-drafted at
-    the sequenced step's end; the pairing, primacy re-measurement, and
-    standing-root liveness case land with the pinned-portfolio rebalance; the
-    named row lands with the reader-experience coverage ledger; and the
-    opening-note stress-test section is re-audited when the prose lands,
-    since its hardest-stress-test sentence is a source-property claim that
-    must track the source after the delivery families land. The receipt and
-    firewall gaps keep their own items unchanged.
-
----
-
-## Phase 2 — Engine handoffs (nibli)
-
-**dhilipsiva wrote nibli, and he is the channel between the sessions — for book-2's
-tracker exactly as for this one.** The sessions cannot see each other, so **an item is not
-ready until it carries a self-contained prompt in a fenced block**. Write the prompt as
-one session speaking directly to the other, with dhilipsiva carrying it: address the
-engine session in the second person, assume **zero** knowledge of this repo — no bullet
-references, no chapter numbers, no "see above" — and close by instructing that session to
-write its reply addressed directly back to this one, again through dhilipsiva: the sha,
-what changed, whether any verdict moved, and what the prompt itself got wrong. That last
-item has been non-empty more often than not, on both ends of the channel.
-
-Breadth by itself is not an engine defect. First assign each claim to the assurance
-route ruled in
-[`new-book-plans/book-1-assurance-portfolio-decision.md`](new-book-plans/book-1-assurance-portfolio-decision.md).
-Open a repair prompt only when a minimal public fixture shows
-that a claim assigned to Nibli cannot be expressed soundly, loses a definitive
-verdict, or exceeds a measured bound. Do not ask one reasoning engine to become a
-budget, population, logistics, psychology, transition, source-deployment, or
-authentication system.
-
-**Interim assignment, until the affected claim is in the ledger.** The
-canonical source landed at stage 1 (fcb9b8d), but a claim not yet carried as a
-ledger claim record still states its assignment inline rather than looked up:
-a repair prompt may open when the prompt body itself names, for each
-claim it serves, the posture, the route, and — where the route is formal
-entailment — the evidence kind, reviewed at prompt time. A prompt whose claims
-would take an established posture through a route that is neither built here nor
-available through an admissibility contract does not open; the claim is recorded
-as Unestablished/route-unbuilt instead. A read-only capability audit is not a
-repair prompt and needs no such assignment: it measures a boundary rather than
-claiming one.
-
-Neither repair adds election arithmetic, result authentication, or institutional
-execution. Democratic formalisation still uses definitive positive queries and
-authenticated external result certificates.
+    Residue is routed to its consumers, not held here: exempt prose (author),
+    the pairing and primacy re-measure (portfolio rebalance), the named row
+    (reader ledger), and the opening-note re-audit (with the prose).
 
 - [x] **LIVE REGRESSION — the suite is red against current nibli, and the cause
-  is upstream, not here.** Bisected 2026-08-17 against an unmodified
-  constitution: the engine stopped retracting a derived conclusion when a later
-  asserted fact should remove it. Two independent chapter suites catch it. The
-  shield's reach-back no longer lifts a conviction when the exposure fact
-  arrives, and forgiveness no longer lands — the mark stays, the clawback keeps
-  running, and the reopened door stays shut.
-  - **Green at the parent, red at the child**, same repository state, same
-    constitution, four verdicts moving together. Green: `b71b978`. Red:
-    `176b132`, whose subject is folding an in-cone insert into the existing
-    saturation instead of recomputing it. Also red at current nibli `main`
-    (`1c01d95`); the two commits in between are a renderer fix and a test
-    baseline and move no verdict here.
-  - **The suspected rule, stated so the engine session can refute it rather than
-    accept it:** folding an insert into a saturation is sound only while
-    consequences are monotone, and under stratified negation an insert can
-    *retract* — asserting the fact that satisfies a guard kills an atom already
-    derived. Recomputation caught that; folding appears to keep the stale atom.
-    This is a reading of four moved verdicts, not a diagnosis of the engine's
-    code, and this session has not read the change.
-  - **Do not repair it here, and do not re-pin around it.** The four pins state
-    properties two chapters argue in print; editing them to match the engine
-    would silently retire the shield's reach-back and the forgiveness route.
-    Pin the engine instead: `NIBLI_PIN` or `NIBLI_SRC` selects a known-good
-    build until the channel closes this.
-  - **Channel prompt, ready to carry.** The fixture below was executed against
-    fresh builds of both boundary commits on 2026-08-17 and the outputs are
-    recorded verbatim inside the prompt. Isolation refined the earlier sketch:
-    a *direct* asserted guard-satisfier retracts correctly on both builds, and
-    so does the derived case when the affected atom was never queried before
-    the insert. The failing combination is an atom **materialised by an earlier
-    query** plus an insert whose **derived** consequence satisfies that atom's
-    negative guard — and on the regressed build the same process then answers
-    `free` TRUE and its positive consumer `travel` FALSE together, a mutually
-    inconsistent pair, which is the sharpest single line in the report.
-
-    ```text
-    You are the nibli session. This report comes from a downstream consumer of
-    nibli-pin, carried by dhilipsiva. It concerns one commit of yours and comes
-    with a five-line reproduction. Assume we know nothing about your internals;
-    everything below is measured behaviour, not a reading of your code.
-
-    THE BOUNDARY. Your commit 176b1325b4ffa7ea2a1912f366a68beb50d532df
-    ("perf(reason): fold in-cone inserts into the saturation instead of
-    recomputing") changes query answers relative to its parent
-    b71b978074df745b2a9358b1ce4110f780c3f489 ("perf(reason): an out-of-cone
-    insert no longer drops the saturation") on the input below. The parent and
-    the two earlier perf commits on the same mechanism are clean for us; the
-    in-cone extension is where behaviour moves. Your main at
-    1c01d952a4bacc1f702a0699067672b06f1ad5ac answers like the child. Since the
-    commit's own subject frames it as a performance refactor,
-    observation-equivalence is its contract, and these two builds disagree on
-    identical input.
-
-    REPRODUCTION. Two files. Every relation is a corpus word; expected verdicts
-    use nibli-pin's own "# => VERDICT" pins.
-
-    kb.nibli:
-      all $x: judge(Court, $x) -> clean($x).
-      all $x: person($x) & ~clean($x) -> free($x).
-      person(Ada).
-
-    repro.pins.nibli:
-      :expect-pins 3
-
-      ? free(Ada).
-      # => TRUE
-
-      judge(Court, Ada).
-
-      ? clean(Ada).
-      # => TRUE
-
-      ? free(Ada).
-      # => FALSE
-
-    Run: nibli-pin --kb kb.nibli repro.pins.nibli
-
-    MEASURED, 2026-08-17, on builds made from those exact shas (we rebuilt from
-    source rather than trusting any binary lying beside a checkout — verify the
-    same before trusting a run):
-      b71b978: PASS — 3 pins.
-      176b132: 1 finding — query "free(Ada)." pinned "FALSE" but got "TRUE".
-      The positive hop is fine on both: clean(Ada) answers TRUE.
-
-    THE TRIGGER, ISOLATED BY VARIATION (each variant measured on both builds):
-      1. Move the insert before the first query — both builds correct. Mere
-         derivability of the guard atom is not the trigger.
-      2. Make the guard read the asserted fact directly (one rule:
-         person($x) & ~judge(Court, $x) -> free($x); insert judge(Court, Ada)
-         after querying free) — both builds correct. A direct guard-satisfier
-         invalidates the earlier answer.
-      3. Add "all $x: free($x) -> travel($x)." and query only travel before the
-         insert — both builds correct, travel retracts to FALSE.
-      4. Same KB as 3, but query free before the insert — the child answers
-         free TRUE (stale) and then travel FALSE in the same process. Under
-         free -> travel those two answers are mutually inconsistent, which
-         rules out any intended monotone-assert semantics as the explanation.
-
-    So the failing combination is: an atom materialised by an earlier query
-    survives a later insert whose DERIVED consequence satisfies that atom's
-    negative guard. Our hypothesis, stated so you can refute it rather than
-    accept it: the in-cone fold propagates the insert's positive consequences,
-    but the invalidation set for previously materialised atoms misses negation
-    edges that are reachable only through a derivation step, so the one-hop
-    case invalidates and the two-hop case does not. We have not read the
-    change; if the mechanism is different, say so.
-
-    IMPACT ON US. Four pinned verdicts across two of our suites move at exactly
-    this boundary, in both directions — stale atoms stay derivable and their
-    negative consumers stay withheld. The claims those pins serve are Derived
-    through formal entailment with executable evidence, so we cannot re-pin
-    around this: we have pinned our harness to b71b978 and frozen there until
-    this closes.
-
-    WHAT A FIX MUST AND MUST NOT DO. It must make the child agree with the
-    parent on the reproduction — stratified-model answers at every load point,
-    including after an insert into the cone of a previously queried atom. It
-    must not special-case any predicate name, and it must not change definitive
-    verdict semantics: FALSE stays closed-world non-entailment. We would rather
-    lose the fold for exactly the in-cone-through-negation case than keep it
-    unsound; correctness outranks the optimisation for us. Whatever lands,
-    also state in one or two sentences the intended contract for asserts made
-    after queries under stratified negation, so we can pin the contract and not
-    just the behaviour.
-
-    REPLY, addressed directly back to the book session through dhilipsiva: the
-    sha we should build, what changed, whether any verdict moved on this
-    reproduction or in your own suite, and what this prompt itself got wrong.
-    That last item has been non-empty more often than not, on both ends of
-    this channel.
-    ```
-
-  - **Closed 2026-08-17 by engine `b97d1aff0f6a701fe1250b56f506af5f551e4144`,
-    verified here before accepting.** The freeze is lifted: `./verify.sh` is
-    green on the **default path** with no `NIBLI_PIN`, and the two suites that
-    caught it are clean (34 and 39 pins, 0 findings). The engine session's
-    account was confirmed rather than taken on trust — rebuilt from source at
-    that sha (binary SHA-256
-    `56707159eed998038221d835c4c41f5173de25496f145703a4a9775e978c6b89`, because
-    a binary lying beside a checkout says nothing about what produced it), and
-    all four isolating variants now answer as the parent `b71b978` does while
-    the child `176b132` still fails exactly the two shapes reported.
-  - **The mechanism, confirmed and worth keeping.** The defect was a
-    specification error, not a coding slip: the fold's own documented refusal
-    covered relations *read* under negation, while soundness needs every
-    relation the delta can *reach* under negation. Growth propagates one hop
-    and then must shrink a higher stratum, which monotone folding cannot do.
-    The repair closes forward over the rules from the delta and refuses when
-    that closure meets the negatively-read set; purely positive cones keep the
-    optimisation.
-  - **A diagnostic this repository should use, independently verified.** The
-    engine carries a `debug_assert` comparing a resumed extension against a
-    full recompute, and it is compiled out of release builds. Rebuilt
-    `176b132` as a debug binary and ran the reproduction: it panics with
-    `resumed extension for 'free' disagrees with a full recompute`. So when a
-    verdict looks wrong against this mechanism, **build the engine debug and it
-    will often accuse itself** — a release build silently returns the stale
-    tuple instead.
-  - **What this session's prompt got wrong**, recorded because the channel
-    requires it in both directions. The prompt argued observation-equivalence
-    was the commit's contract *because its subject says "perf"*. That
-    reasoning was more contingent than it needed to be: the engine's ON/OFF
-    metamorphic differential already asserts that a definitive verdict may
-    never change, and it predates the commit, so the contract held regardless
-    of how the subject line was worded. The conclusion stood; the argument for
-    it was weaker than the available one. The engine session also recorded a
-    fault of its own — `176b132`'s commit message claimed the resume refuses
-    "any relation read under NEGATION", which described reachability while the
-    code checked membership. That is the sentence a reader here would have
-    used to judge the mechanism safe, and it is why a reproduction beat a code
-    reading.
-  - **Consequence for Gate A.** The reclosure was blocked only by this: the
-    closure record binds a candidate whose verification receipt names
-    `./verify.sh`, and that command now passes unpinned. **Closed 2026-08-17**
-    by `FS-SAU-23`, candidate `b7843fe`, and the closure record at `3e659e3`.
+  - **Closed 2026-08-17** by engine `b97d1af`, verified here before accepting:
+    rebuilt from source, all four isolating variants answer as the parent
+    `b71b978` does, and `./verify.sh` is green on the default path with no
+    pin. The defect was a specification error — the in-cone fold refused
+    relations *read* under negation when soundness needs every relation the
+    delta can *reach* under negation.
+  - **The durable lesson, kept because it will recur:** when a verdict looks
+    wrong against this mechanism, build the engine **debug** — it carries a
+    self-check comparing a resumed extension against a full recompute that a
+    release build compiles out. Verified here by rebuilding the regressed
+    commit debug and reproducing the panic. The engine's assert-after-query
+    contract now lives in `CLAUDE.md`; pin against the contract, not the
+    observed behaviour.
 
 - [ ] **CORPUS REQUEST — two approval names, so one relation stops carrying two
   legal regimes.** The author ratified splitting `approves` into `ratifies`
@@ -698,12 +468,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - **Done when:** every domain in the full-society ledger has complete applicable
     rows before its rule family or prose lands; no name, value, office, or floor is
     accepted as coverage by itself.
-  - **Completed:** schema-v7 source-specific coverage contracts and the hard
-    pre-drafting family gate landed in `b9bb15181ff576b3d8700f39ed6df5915c506ed2`;
-    Gate A was mechanically reclosed for that immutable candidate in
-    `0f73a1c6a860341066867d96d64b1b9c2224bb22` without upgrading operation, delivery, feasibility, liveness,
-    reader response, or calibration.
-
+  - **Landed** (`0f73a1c`); the ratified content is in its controlling decision
+    record and the canonical ledger, not restated here.
 - [x] **Make universal standing a root condition, not a service denied by a missing entry.**
   - Design a safe “serve and reconcile” route for an unregistered person seeking help.
   - Cover birth/first contact, absent or disputed identity, migration between records,
@@ -712,17 +478,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Keep identity resolution separate from access to emergency aid, floor protections,
     and due process.
   - Do not erase accountability through a right to disappear from the record.
-  - **Completed:** source-bound non-power coverage landed in
-    `6f33c950fceffacf2897b03a70213c64cfde1830`; the exact root rules, fingerprints,
-    pins, negative tests, and counterfactuals landed in
-    `80894292524135872a8f574e54ecf45e0bd3cd12`; all declared prose reached
-    `prose-landed` in `e33d70f4e13f8e484d9c07a43e39b4966eef3d8d`; and Gate A
-    was mechanically reclosed for immutable candidate
-    `8eb2e442a540e3a6a799ae9544bc1b0f7e4506cc` in
-    `7efcd638637e6e9538c10eb2e3cf890950b34d25`. This establishes only the
-    versioned scope-map and assurance-program claim, not operation, delivery,
-    identity-system liveness, feasibility, reader response, or calibration.
-
+  - **Landed** (`7efcd63`); the ratified content is in its controlling decision
+    record and the canonical ledger, not restated here.
 - [x] **Preserve the material-floor inventory; implement the liberty shell,
   environmental right, and ecological ceiling.**
   - Keep the constitution's existing floor inventory unchanged. Do not add a
@@ -752,19 +509,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     human continuity, record every shortfall as failure, obtain alternatives,
     repair harm, and use a source-bound transition; neither side is renamed
     success.
-  - **Completed:** source-bound non-power coverage landed in
-    `173a8a53b2804cd474e7d052bd9fbd1d50e0b2c0`; the registered formal rules,
-    42 executable pins, and two source-removal counterfactuals landed in
-    `c9ad93a010ce2fdfe21ee01e6c0164e6afffc6aa`; all declared prose reached
-    `prose-landed` in `35b03144a44717b54094ba147a1e54ec4d415447`;
-    and Gate A was mechanically reclosed for immutable candidate
-    `ad9638a2188f8e818ec1f77db155431a3fc83c0e` in
-    `f168642a55b2fc02e7604fae5b97b18700b3c71e`. The material-floor inventory,
-    210 powers, T3 template, refusals, dispositions, and allocations remain
-    unchanged. This establishes only the versioned scope-map and
-    assurance-program claim, not operation, delivery, measurement, restoration,
-    feasibility, liveness, reader response, or calibration.
-
+  - **Landed** (`f168642`); the ratified content is in its controlling decision
+    record and the canonical ledger, not restated here.
 - [x] **Establish substantive equality and anti-subordination across domains.**
   - Implement the open protected-ground architecture and direct, indirect,
     systemic, multiple, intersectional, associative, accommodation, segregation,
@@ -863,24 +609,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     engine handoff
     merely for statistics or credit it with population computation, identity
     authentication, or institutional action.
-  - **Completed:** 54 source-bound non-power effects landed in
-    `99b21f2c28afbb90192bdad9dc090bc0a03a0613`; 54 separately registered rules,
-    58 executable pins, and three single-deletion counterfactuals landed in
-    `f3a877fbfe51119d09075d4ce8f05fd4d91dfe75`. Audited prose landed separately
-    in the opening note (`c4f17b8161fc91b95f01717a5de3ae97a13ba4d`), Chapter 8
-    (`cc952649c268240da71fd21fbeecb5538a4cd54`), Part V
-    (`6bcf92aefbd042e56771e8b09f34349d5f2ae3d`), and method
-    (`f4cc06e89eec565f5aaacfaa3504819144c7a53`), then reached
-    `prose-landed` in `a6abdfcd374951becf14cd144a77f1b163fb9bc1`.
-    The append-only repository audit froze candidate
-    `80ebe822c709c14138ba4dc97c63ec61c45fd63e`, and Gate A was mechanically
-    reclosed in `6b173fc22099947d95862bacf2e6cc76e34d52b4`. The 210 powers,
-    T3 template, 19 refusals, eight dispositions, and 210 allocations remain
-    unchanged. This establishes only the versioned scope-map and
-    assurance-program claim, not population facts, operation, delivery, data-
-    system liveness, programme authorization, completed remedy, feasibility,
-    reader response, or calibration.
-
+  - **Landed** (`6b173fc`); the ratified content is in its controlling decision
+    record and the canonical ledger, not restated here.
 - [x] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
   - Implement one general legal-adulthood status at the uniform age later set by
     common-tier law. Acquisition is automatic and non-discretionary; registration
@@ -966,35 +696,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
     never certifies independence, family never worsens confinement, and recognition
     neither proves care nor creates compensation.
 
-  - **Completed:** 102 source-bound non-power effects landed in
-    `cf1989e28e2949a66f1affce7a419f4c69447355`; 124 registered formal
-    statements, 118 executable pins, and four single-deletion counterfactuals
-    landed in `f276fc02b8825d80142a7915fa194605629fc4d7`. Audited prose landed
-    separately in the opening note (`b5c37ddeff99b2bdadd3e85e02b9b3f1619d7a59`),
-    Chapters 1, 3, 5, 6, 8-11, 13, and 14
-    (`ca80833a67af3968a76353cdcfe5079531e16b4a`,
-    `22bb6f1ad9772b83e5a5b35f8eaff29ad478da3f`,
-    `623e473e39d747cb1cbc949309ed73db909dfcec`,
-    `263156d8dded023fdc69fe24b2be1d6b707dcce3`,
-    `3c33a9906999c9d5601bfe6398b1151594a75f43`,
-    `837eb20b0cdfcb9b408db0c1fe95655d42151c11`,
-    `b403a4fe731d852c568ff5f773ab135dbfb7a4ed`,
-    `69b535412fd2f0237b9136d3986f054f087ce17d`,
-    `fe0250dd03d15c9ce3a3d9d5ae33f727af6cc9c2`, and
-    `241604a09fb81efa2903863528f89deda2ecb357`), Part V
-    (`85a11e307d4e53d0fb90893594af062ed7c2b9be`), and method
-    (`094b855a859d598ee905453038a01306a1ae3750`), then reached
-    `prose-landed` in `84f99419d3e8d60430c79a65873ef4c7f2fc328c`.
-    The append-only repository audit froze candidate
-    `c04f8792dceba525f0886d4f65d243b045f01eb3`, and Gate A was mechanically
-    reclosed in `6b905a6f639adff2203a5394f6cf89003a7cf8c9`. The 210 powers,
-    T3 template, 19 refusals, eight dispositions, and 210 allocations remain
-    unchanged. This establishes only the versioned scope-map and
-    assurance-program claim, not an age value, service route, population fact,
-    operation, delivery, identity-system liveness, programme authorization,
-    institutional action, completed remedy, feasibility, reader response, or
-    calibration.
-
+  - **Landed** (`6b905a6`); the ratified content is in its controlling decision
+    record and the canonical ledger, not restated here.
 - [ ] **Write the Bodies specification.**
   - Constitute the ratified People's Assembly, Regions Council, Executive Council
     and public administration, non-executive Civic President, ordinary courts,
