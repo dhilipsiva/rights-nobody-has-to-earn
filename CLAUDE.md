@@ -2192,6 +2192,37 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   trace and proximity. The rationale above is unchanged and is not superseded; see
   `new-book-plans/book-1-narrative-register-decision.md`.
 
+- **The thesis is ruled restated-structural, and the infant joins as the paired
+  second stress case with framing primacy**, author-ratified 2026-08-17. The
+  thesis lives only in the exempt elements and states what the design does —
+  the floor's absence can never be a lawful ground for sanction, and the
+  interfaces demand nothing of the recipient — never what is axiologically
+  owed: "owes" does not survive verbatim, `dignity` may not become a
+  load-bearing thesis noun (undefined term; the title ruling's failure mode),
+  and `safety` may not be a thesis word (it names an envelope criterion that is
+  Book 2's to calibrate). The methodological half splits per the one-posture
+  rule: the general claim is Reasoned at best and never citable as Derived,
+  beside the named executable instance (the universal-standing family).
+  "Designing for the most vulnerable" reads only as unconditionality plus
+  demand-nothing interfaces — never targeting, never a vulnerability score or
+  status entry. The caregiverless infant is the **second stress case paired
+  with the prisoner** — the two fail in opposite directions (the prisoner is
+  the person public power acted upon; the infant is the person it has not) —
+  and holds **framing primacy in the exempt elements where the landed rulings
+  permit**: the stress-test framing may lead with the infant. Substance
+  primacy is not allocatable — chapter order is computed, portfolio density
+  follows the landed rules, and "hardest stress test" is a measured source
+  property (today the prisoner's) re-measured after the delivery/receipt
+  families land. **The through-line stays refused** (agency clause,
+  anti-monoculture guards, register ruling — an infant occupies only the
+  *receives* and *is acted upon* postures, and it is the register's
+  highest-risk subject because the reader supplies the affect unasked).
+  Implementation is sequenced: delivery/receipt families, then the portfolio
+  rebalance, then the reader ledger, then the author-drafted prose — the
+  ruling settles the frame now precisely so it cannot be settled by accident
+  later, and no session supplies the thesis sentence. The controlling record is
+  `new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`.
+
 - **The voice boundary is the derivation boundary**, ruled 2026-08-02. The plain, direct,
   reader-facing register of the fourteen derived chapters is ratified as their voice — it is a
   voice, and the texture ruling cites its restraint as the thesis performed. The author's
