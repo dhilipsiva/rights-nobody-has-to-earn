@@ -408,9 +408,115 @@ authenticated external result certificates.
     reading.
   - **Consequence for Gate A.** The reclosure was blocked only by this: the
     closure record binds a candidate whose verification receipt names
-    `./verify.sh`, and that command now passes unpinned. Gate A is unblocked
-    and not yet reclosed — it still needs a frozen candidate commit and a
-    closure record, and `FS-SAU-22` is still `pending`.
+    `./verify.sh`, and that command now passes unpinned. **Closed 2026-08-17**
+    by `FS-SAU-23`, candidate `b7843fe`, and the closure record at `3e659e3`.
+
+- [ ] **CORPUS REQUEST — two approval names, so one relation stops carrying two
+  legal regimes.** The author ratified splitting `approves` into `ratifies`
+  (democratic tally outcome) and `endorses` (case-bound review decision) on
+  2026-08-17. Neither is a corpus name, so both are compile errors and the
+  split cannot start. Measured the same day against engine `b97d1af`; the
+  curated corpus carries no ratify, endorse, certify, confirm, enact, vote,
+  tally or attest, and `approves` is arity-2 capped so a third place cannot
+  disambiguate either.
+  - **Claims served, reviewed at prompt time.** FS-CLM-19 "Closed record with
+    derived-only conclusions and staged assurance" — posture `Derived`, route
+    `FS-RTE-01` (formal entailment), evidence kind `executable`. The split also
+    unblocks the `approves` retain/replace/retire disposition, whose premise
+    contract is owned by the democratic-ceiling item below (its heading is a
+    live owner needle, so it is described here rather than quoted) and whose
+    required writer authority already distinguishes "an independently
+    verifiable democratic result or case-bound review decision" — two regimes
+    the record cannot currently tell apart.
+  - **This is a corpus-vocabulary request, not a reasoning repair.** It asks
+    for two curated names, not for the engine to authenticate a tally, hold an
+    election, or know what ratification means.
+
+    ```text
+    You are the nibli session. This request comes from a downstream consumer of
+    nibli-pin, carried by dhilipsiva. It asks for two curated corpus names and
+    nothing else. Assume we know nothing about your internals.
+
+    WHAT WE HAVE. One arity-2 relation in our knowledge base carries two
+    legally distinct kinds of approval: a democratic tally outcome, and a
+    case-bound review decision about a custody lease. Nothing in the record
+    distinguishes them except which constant sits in place one, so an approval
+    written by one authority and an approval written by the other are
+    indistinguishable as data. We want to split them into two relations.
+
+    THREE MEASURED FACTS, engine b97d1aff0f6a701fe1250b56f506af5f551e4144,
+    2026-08-17. Every file below is complete; no repository knowledge needed.
+
+    (A) The fused state compiles, which is the problem.
+        kb:   admits("approves").
+              approves(Electorate, Item).
+              approves(ReviewBody, Item).
+        pins: ? approves(Electorate, Item).   # => TRUE
+              ? approves(ReviewBody, Item).   # => TRUE
+        Result: PASS — 2 pins. Two regimes, one relation, no way to tell them
+        apart by name.
+
+    (B) A third place to disambiguate is refused.
+        approves(Electorate, Item, Amendment).
+        → [Syntax Error] line 1:28: too many arguments for "approves" (arity 2)
+
+    (C) Both names we want are compile errors.
+        ratifies(Electorate, Item).
+        → [Syntax Error] line 1:1: unknown predicate "ratifies": not a corpus
+          name — unknown names are a compile error, never an arity-2 guess
+          (NIBLI_KR §13)
+        endorses(ReviewBody, Item).
+        → the same error for "endorses"
+
+    We take (C) to be your design working as intended, not a defect. We are
+    asking you to widen the corpus deliberately rather than route around it.
+
+    THE REQUEST. Two curated arity-2 entries:
+
+      ratifies   x1 ratifies x2   — an authority ratifies a proposal or
+                                    instrument; the outcome is official
+      endorses   x1 endorses x2   — a reviewer endorses a specific decision or
+                                    instrument in a bounded case
+
+    Candidate source words, offered so you can reject them on grounds we
+    cannot see. Both are already in the Lojban dictionary shipped in your tree:
+
+      ca'irzau  (lujvo) "x1 officially approves x2 (object / event); x2 is
+                official, approved by x1" — a two-place match for `ratifies`,
+                and closer to ratification than zanru, which is the source of
+                our existing `approves` and reads as ordinary favour.
+      fitytu'i  (lujvo) "x1 accepts x2 (an offer/suggestion) from x3" — an
+                acceptance sense for `endorses`; the third place is not needed
+                by us and we would use two.
+
+    If your curation rules prefer different source words, different place
+    names, or a different arity, take them — we need two distinguishable
+    approval predicates, not these exact spellings. What we cannot use is a
+    single name with a disambiguating place, because of (B).
+
+    WHAT THIS IS NOT. We are not asking the engine to authenticate a tally,
+    compute a threshold, decide who may approve, know that ratification differs
+    from endorsement in law, or perform any institutional act. All of that is
+    external to the engine and stays external. This is vocabulary only: two
+    names that compile, so a distinction we already make in law can be made in
+    the record too.
+
+    ONE THING WE MAY HAVE WRONG. We searched your curated predicate list and
+    the shipped dictionary and concluded no existing name carries either sense
+    at arity 2. If one does and we missed it, that is a better answer than a
+    corpus addition and we would rather have it.
+
+    REPLY, addressed directly back to the book session through dhilipsiva: the
+    sha we should build, the exact names, source words, arities and place names
+    as landed, whether any existing verdict moved, and what this prompt itself
+    got wrong. That last item has been non-empty more often than not, on both
+    ends of this channel.
+    ```
+
+  - **Blocked until it returns.** The `approves` split, and therefore the full
+    legacy-relation migration, cannot start. The five other dispositions
+    (`mature` name-reservation, and the retains for `decide`, `authority`,
+    `choose`, `broken`) need no new vocabulary and may land first.
 
 ---
 
