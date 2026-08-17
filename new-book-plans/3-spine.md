@@ -60,8 +60,11 @@ No one of these lists is a minimality proof. Read the generated block for depend
 structure and the two constitutional rosters for assertion posture; do not turn their
 current sizes into another hand-maintained writable-surface count.
 
-`authority` is derived at stratum 0 with a wholly negation-free cone, and it is the only
-one. This file claimed until 2026-07-31 that `severe` had joined it. **It has not, and the
+`authority` is derived at stratum 0 with a wholly negation-free cone. It was the only one
+when this sentence was written; the T1/T3 layer added more, and **the generated block
+above is the list** — do not restate the set here, because this paragraph has already gone
+stale once by doing exactly that. This file claimed until 2026-07-31 that `severe` had
+joined it. **It has not, and the
 engine says so**: `severe`'s rules carry `~($a = $b)`, which is a real negative edge to
 the `equals` builtin, so `severe` sits at **stratum 1** and its cone is not negation-free.
 The regex generator dropped that conjunct and reported stratum 0. Both predicates are
