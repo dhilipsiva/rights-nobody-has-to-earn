@@ -234,7 +234,7 @@ Neither repair adds election arithmetic, result authentication, or institutional
 execution. Democratic formalisation still uses definitive positive queries and
 authenticated external result certificates.
 
-- [ ] **LIVE REGRESSION — the suite is red against current nibli, and the cause
+- [x] **LIVE REGRESSION — the suite is red against current nibli, and the cause
   is upstream, not here.** Bisected 2026-08-17 against an unmodified
   constitution: the engine stopped retracting a derived conclusion when a later
   asserted fact should remove it. Two independent chapter suites catch it. The
@@ -366,6 +366,51 @@ authenticated external result certificates.
     That last item has been non-empty more often than not, on both ends of
     this channel.
     ```
+
+  - **Closed 2026-08-17 by engine `b97d1aff0f6a701fe1250b56f506af5f551e4144`,
+    verified here before accepting.** The freeze is lifted: `./verify.sh` is
+    green on the **default path** with no `NIBLI_PIN`, and the two suites that
+    caught it are clean (34 and 39 pins, 0 findings). The engine session's
+    account was confirmed rather than taken on trust — rebuilt from source at
+    that sha (binary SHA-256
+    `56707159eed998038221d835c4c41f5173de25496f145703a4a9775e978c6b89`, because
+    a binary lying beside a checkout says nothing about what produced it), and
+    all four isolating variants now answer as the parent `b71b978` does while
+    the child `176b132` still fails exactly the two shapes reported.
+  - **The mechanism, confirmed and worth keeping.** The defect was a
+    specification error, not a coding slip: the fold's own documented refusal
+    covered relations *read* under negation, while soundness needs every
+    relation the delta can *reach* under negation. Growth propagates one hop
+    and then must shrink a higher stratum, which monotone folding cannot do.
+    The repair closes forward over the rules from the delta and refuses when
+    that closure meets the negatively-read set; purely positive cones keep the
+    optimisation.
+  - **A diagnostic this repository should use, independently verified.** The
+    engine carries a `debug_assert` comparing a resumed extension against a
+    full recompute, and it is compiled out of release builds. Rebuilt
+    `176b132` as a debug binary and ran the reproduction: it panics with
+    `resumed extension for 'free' disagrees with a full recompute`. So when a
+    verdict looks wrong against this mechanism, **build the engine debug and it
+    will often accuse itself** — a release build silently returns the stale
+    tuple instead.
+  - **What this session's prompt got wrong**, recorded because the channel
+    requires it in both directions. The prompt argued observation-equivalence
+    was the commit's contract *because its subject says "perf"*. That
+    reasoning was more contingent than it needed to be: the engine's ON/OFF
+    metamorphic differential already asserts that a definitive verdict may
+    never change, and it predates the commit, so the contract held regardless
+    of how the subject line was worded. The conclusion stood; the argument for
+    it was weaker than the available one. The engine session also recorded a
+    fault of its own — `176b132`'s commit message claimed the resume refuses
+    "any relation read under NEGATION", which described reachability while the
+    code checked membership. That is the sentence a reader here would have
+    used to judge the mechanism safe, and it is why a reproduction beat a code
+    reading.
+  - **Consequence for Gate A.** The reclosure was blocked only by this: the
+    closure record binds a candidate whose verification receipt names
+    `./verify.sh`, and that command now passes unpinned. Gate A is unblocked
+    and not yet reclosed — it still needs a frozen candidate commit and a
+    closure record, and `FS-SAU-22` is still `pending`.
 
 ---
 
@@ -953,13 +998,14 @@ Gate B; it does not claim Book 2 operations or feasibility.
     regression below is resolved, because the closure binds a candidate whose
     verification receipt names `./verify.sh`.
 
-  - **Blocked on the live upstream regression**, which has its own item above
-    and is not restated here. This landing was verified with `NIBLI_PIN`
-    pinned to a `b71b978` build; the same four verdicts move on `176b132`, and
-    an independent bisect from a separate session reached the same parent/child
-    boundary and carried it further to current `main`. Gate A cannot be
-    reclosed until the channel closes it, because the closure binds a candidate
-    whose verification receipt names `./verify.sh` on the default path.
+  - **Was blocked on the live upstream regression; that item is now closed.**
+    This landing was verified at the time with `NIBLI_PIN` pinned to a
+    `b71b978` build, because the same four verdicts moved on `176b132`. The
+    channel closed it on 2026-08-17 with engine `b97d1af`, and `./verify.sh`
+    now passes on the default path with no pin, so the cards' verification is
+    no longer engine-pinned and Gate A's reclosure is unblocked. It still has
+    to be earned: a frozen candidate commit, a passing audit row in place of
+    `FS-SAU-22`'s `pending`, and a closure record.
 
 - [ ] **Specify obligations without making rights reciprocal bargains.**
   - Public institutions must respect, protect, fulfil, continue and remedy.
