@@ -221,6 +221,25 @@ independent of questions A and B and can start immediately. Naming the needed
 senses is a decision the author may want to make first, but establishing
 *availability* does not require a ruling.
 
+**Narrowed on measurement, 2026-08-18 — the request is one name, not nine.**
+Drafting the request against the engine rather than the corpus file showed the
+ask is much smaller than the table above suggests. Two of the three roles a
+delivery rule needs are already available: `gives` at arity 3
+(`giver / gift / recipient`) is the provider half, and `observe` at arity 4 is
+**already this source's independent-witness idiom** — `observe(Chronicle, …)`
+beside `observe(TemporalReview, …)` at a named scope, the pattern the T3 rules
+use. Only the recipient-side arrival predicate is missing.
+
+Measured with `carries` standing in for the absent name, the whole shape
+compiles and derives, and the property the family exists for holds: a person
+with a provider record, a recipient-side record and two independent witnesses
+derives the actuality, while a person with **only** the provider's record
+derives nothing. So the structure is not in question — the name is. The request
+is recorded in `TODO.md` and asks for `receives/3`, preferring the stative
+`terdu'a` (the exact converse of `dunda`, which already sources `gives`) over
+the volitional `cpacu`, because "gets / procures / accepts" would be false of
+precisely the recipients §6 is about.
+
 ## 8. A mechanical guard this family could ship
 
 The constitution names the defence — *what arrival evidence sits upstream of

@@ -310,6 +310,139 @@ project may not present withdrawal as completion of those checks.
     wrong. Separately, neither lemma is in the vendored Predilex, so that gate
     derives no arity bound for either and is not checking these two.
 
+- [ ] **CORPUS REQUEST — one recipient-side name, so delivery stops being the
+  provider's word for it.** The delivery and receipt families are what close
+  FS-DFT-16 and FS-DFT-17, the project's two open criticals, and the settled
+  shape requires accessibility-neutral, recipient-side access/receipt evidence
+  that a provider cannot write for itself. Measured 2026-08-18 against engine
+  `893561189418df1d24ae505c6eab6ba455da3194`, binary SHA-256
+  `e927fc3a308849191dd2209b1ae0d105d3c5576b55817829c44288ba3d5abde3`: the
+  provider half and both independent-witness slots already exist, and the only
+  missing vocabulary is the recipient-side arrival predicate. This is a much
+  smaller ask than the delivery brief first implied, and the narrowing is the
+  point — `observe` already supplies the independent-witness half.
+  - **Claims served, reviewed at prompt time.** FS-CLM-05 "material floor"
+    (posture `Specified`) and FS-CLM-06 (`Unestablished/route-unbuilt`), whose
+    coverage row records that only learning has a non-carceral arrival route
+    and that every future route needs accessibility-neutral, recipient-side
+    access/receipt evidence with an authorised writer and challenge route.
+  - **This is a corpus-vocabulary request, not a reasoning repair.** It asks
+    for one curated name. It does not ask the engine to authenticate a
+    delivery, know that a meal arrived, or decide who may attest.
+
+    ```text
+    You are the nibli session. This request comes from a downstream consumer of
+    nibli-pin, carried by dhilipsiva. It asks for one curated corpus name and
+    nothing else. Assume we know nothing about your internals.
+
+    WHAT WE HAVE. Our knowledge base states a floor of things every person is
+    owed. Today almost nothing derives them: the only non-carceral arrival
+    route we have is a teaching one, and the rest are reachable only through
+    confinement or not at all. We are building the general delivery route. Its
+    governing rule, settled before this request, is that a provider's own
+    assertion can never by itself establish that something reached a person —
+    so the record needs a recipient-side fact that is not the provider's claim.
+
+    FOUR MEASURED FACTS, engine 893561189418df1d24ae505c6eab6ba455da3194,
+    binary SHA-256
+    e927fc3a308849191dd2209b1ae0d105d3c5576b55817829c44288ba3d5abde3,
+    2026-08-18. Every file below is complete; no repository knowledge needed.
+
+    (A) The structure we want already works. Only the name is missing. Here it
+        is with `carries` standing in for the predicate we are asking for, to
+        show that nothing about the shape is in question:
+
+        kb:   admits("person"). admits("gives"). admits("observe").
+              admits("carries").
+              person(Ada).
+              gives(Kitchen, Meal, Ada).
+              carries(Ada, Meal, Kitchen).
+              observe(Chronicle, Meal, Ada, DeliveryScope).
+              observe(TemporalReview, Meal, Ada, DeliveryScope).
+              person(Bo).
+              gives(Kitchen, Meal, Bo).
+              all $p: all $item: all $src: gives($src, $item, $p) &
+                carries($p, $item, $src) &
+                observe(Chronicle, $item, $p, DeliveryScope) &
+                observe(TemporalReview, $item, $p, DeliveryScope) -> eats($p).
+        pins: ? eats(Ada).   # => TRUE
+              ? eats(Bo).    # => FALSE
+        Result: PASS — 2 pins. Bo is the case that matters: the provider gave,
+        and nothing derives, because the provider's word alone is not enough.
+
+    (B) The provider half and both witness slots are already available to us.
+        `gives` is curated at arity 3 with places giver/gift/recipient, and
+        `observe` at arity 4 is already how our source records two independent
+        witnesses at a named scope. We are not asking for either.
+
+    (C) Every spelling of the recipient half is a compile error.
+        receive(Ada, Meal).
+        → [Syntax Error] line 1:1: unknown predicate "receive": not a corpus
+          name — unknown names are a compile error, never an arity-2 guess
+          (NIBLI_KR §13)
+        The same error for: receives, access, obtain, acknowledge, attest,
+        reaches.
+
+    (D) Widening `gives` instead is refused.
+        gives(Kitchen, Meal, Ada, Tuesday).
+        → [Syntax Error] line 1:27: too many arguments for "gives" (arity 3)
+
+    We take (C) to be your design working as intended, not a defect. We are
+    asking you to widen the corpus deliberately rather than route around it.
+
+    THE REQUEST. One curated arity-3 entry:
+
+      receives   x1 receives x2 from x3   — a recipient-side record that
+                                            something reached x1; the mirror of
+                                            the existing `gives`
+
+    Candidate source words, offered so you can reject them on grounds we
+    cannot see:
+
+      terdu'a  (lujvo) "x1 is a recipient of gift x2 with/from donor x3" — the
+               exact converse of dunda, which already sources our `gives`, so
+               the pair would be same-family. This is our preference, and the
+               reason is semantic rather than tidy: terdu'a is STATIVE. The
+               recipient does not have to do anything to be one.
+      cpacu    (gismu) "x1 gets/procures/acquires/obtains/accepts x2 from
+               source x3" — a five-letter gismu if you prefer one, but it is
+               VOLITIONAL: gets, procures, accepts. That is wrong for our
+               hardest subject. A large part of why we need this predicate is
+               the person who cannot act or acknowledge at all — an infant, an
+               unconscious patient, someone held incommunicado. A predicate
+               that says they accepted something would be false of exactly the
+               people the rule exists to protect.
+
+    If your curation rules prefer different source words, different place
+    names, or a different arity, take them — we need one recipient-side
+    predicate that does not imply the recipient acted, not this exact
+    spelling. What we cannot use is a fourth place on `gives`, because of (D).
+
+    WHAT THIS IS NOT. We are not asking the engine to authenticate a delivery,
+    know whether a meal actually arrived, decide who may attest to it, model an
+    entitlement, or perform any institutional act. All of that is external and
+    stays external. This is vocabulary only: one name that compiles, so a
+    distinction we already make in law — the provider's claim is not the
+    recipient's evidence — can be made in the record too.
+
+    TWO THINGS WE MAY HAVE WRONG. First, we searched your curated predicate
+    list and concluded no existing name carries a stative recipient sense at
+    arity 3. If one does and we missed it, that is a better answer than a
+    corpus addition and we would rather have it. Second, we looked at
+    dictionary-en.json from a local checkout; we know from your last reply that
+    it is gitignored, fetched on demand, and feeds a regeneration tool rather
+    than the build, so we are citing it as a lemma source only and infer
+    nothing about your build from it. Neither candidate appears in the vendored
+    Predilex arity file, so that gate derives no bound for either — the same
+    situation you recorded for ca'irzau and fitytu'i.
+
+    REPLY, addressed directly back to the book session through dhilipsiva: the
+    sha we should build, the exact name, source word, arity and place names as
+    landed, whether any existing verdict moved, and what this prompt itself got
+    wrong. That last item has been non-empty more often than not, on both ends
+    of this channel.
+    ```
+
 ---
 
 ## Full-society expansion — implementation backlog
