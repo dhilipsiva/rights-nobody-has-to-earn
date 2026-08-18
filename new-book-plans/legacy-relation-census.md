@@ -2,14 +2,15 @@
 
 # Legacy Relation and Institutional-Constant Census
 
-> **Status: measurement only, 2026-08-16.** This is the producer-and-consumer
-> census the state-form ruling requires *before* any retain/replace/retire
-> card. It records what each name currently does. It decides nothing: no
-> relation is retained, replaced, or retired here, and no card is opened or
-> closed. The dispositions are owned by the TODO item that defines the
-> democratic ceiling and majority process, and by the coverage row whose
-> closure condition names "retain/replace/retire cards for the legacy
-> relations".
+> **Status: census 2026-08-16; dispositions recorded 2026-08-17.** The
+> producer-and-consumer census the state-form ruling requires *before* any
+> retain/replace/retire card is sections 1-5 below, and it decided nothing.
+> Section 6 now records the disposition each relation received, in the order
+> the ruling requires: census first, decision after. Two are executed and
+> landed; four are retentions, which are decisions rather than deferrals — the
+> relation stays as a narrow fixture, and the card names what would have to
+> exist before anything could replace it. Nothing here creates a rule, a
+> reader, or a public claim.
 
 The controlling requirement is in
 [`book-1-state-form-and-political-membership-decision.md`](book-1-state-form-and-political-membership-decision.md),
@@ -199,11 +200,98 @@ was corrected in the same change that added this census, and rewritten to point
 at the generated block instead of restating its contents — which is how it went
 stale in the first place.
 
+## 6. Dispositions
+
+Recorded 2026-08-17, after the census above and in the order the ruling
+requires. **A retention is a decision, not a deferral**: the relation stays a
+narrow fixture on purpose, and its entry names what would have to exist before
+anything could replace it. Where that thing is vocabulary the state-form family
+owns, the entry says so rather than inventing a name — the ruling reserves
+those choices and says any choice outside its bounds returns for a new author
+ruling.
+
+**Two grains, and they do not conflict.** The ledger already carries eight
+`power_crosswalk_disposition` cards keyed by *rule*, and their actions are
+checker-owned. This section is keyed by *relation*. A relation retained today
+can sit inside a rule whose card says `replace` or `retire`: the rule goes when
+its family lands, and the relation goes only when something exists to take its
+place. `choose` is the clearest case — retained here, while all three rules
+that read it are already carded for replacement or retirement.
+
+| Relation | Disposition | Rule-level cards that carry it |
+| --- | --- | --- |
+| `mature` | **retire + reserve** — executed | none; it was never a power |
+| `decide` | **retain** | none |
+| `authority` | **retain** | FS-PCD-01, FS-PCD-02 (both `replace`) |
+| `choose` | **retain as narrow fixture** | FS-PCD-01 (`replace`), FS-PCD-03, FS-PCD-04 (both `retire`) |
+| `broken` | **retain as narrow fixture** | FS-PCD-03, FS-PCD-04 (both `retire`) |
+| `approves` | **split** — executed | FS-PCD-08 (`retire`), now citing the split rule |
+
+### `mature` — retire and reserve. Executed.
+Landed at `53897d4`. `derived_only("mature")` reserves the name at every arity
+and through any converted alias, replacing closure-by-omission, which was one
+reviewable line away from making a retired legal status writable again. It
+gains no producer and no reader; `at($x, GeneralAdulthood)` remains the only
+route to adulthood. A live refusal control discriminates the two refusals by
+message, so dropping the reservation turns the suite red.
+
+### `decide` — retain.
+Conclusion-only and a leaf: nothing reads it, so its whole legal effect today is
+being queryable. Retention costs nothing and replacement buys nothing until a
+franchise interface exists to replace it with. The closure ruling already
+permits a later atomic replacement, and its own words are the standing
+constraint — `decide(_, Ballot)` is the franchise conclusion and **not** a cast
+ballot, tally, election, or legal result, so any successor must be a distinct
+name rather than a widening of this one. **Before replacement:** the franchise
+rule family, and prose repair across chapter 9 entire, chapter 13's
+single-deprivation pin, and chapter 6's franchise-survives-voiding pin. Cheap in
+the engine, expensive in the prose.
+
+### `authority` — retain.
+A single consumer, the whistleblower shield, and deliberately never revoked so
+that a recall cannot retroactively strip protection. Retention preserves that
+permanence; replacement would have to reproduce it or state that it is being
+given up. **Before replacement:** the state-form seating and public-body
+families, which the two `replace` cards already anticipate at rule level.
+**A complication the tracker should carry:** three separate items claim this
+relation — the state-form migration, the economic census, and the
+public-safety census — so no single item can retire it alone.
+
+### `choose` — retain as narrow fixture.
+A pure seating certificate with no producer, feeding both `authority` routes and
+both credential routes. Replacement means a real seating interface with an
+authenticated selection result, which is the state-form family's to define; the
+name for it is reserved and is not invented here. **Two binding limits carry
+forward unchanged.** It may never become a floor predicate — doing so
+un-stratifies Article 8 and silently drops the credential rule, so the capture
+defence dies while the amendment engine keeps running. And its refused
+alternative is binding: recall or lapse may remove a current pen, but must not
+erase historical exposure and thereby destroy a whistleblower's shield
+retroactively.
+
+### `broken` — retain as narrow fixture.
+No producer, and five consumers that read it **only** under negation.
+Replacement means a defined removal-or-incapacity process with an independent
+finding and a continuity rule, which does not exist; its reviewed premise
+contract already states that as the required writer authority. **Two open
+questions a replacement must answer, recorded so they are not rediscovered.**
+The conviction rule guards a constant rather than a variable — `~broken(Court)`
+— so one write is a universal amnesty, the cheapest documented catastrophic
+write in the assertion-surface audit. And the pinned corpus asserts the name of
+a *record entry* as well as a power-holder, so a replacement must decide
+whether those are one relation or two.
+
+### `approves` — split. Executed.
+Landed at `b8d3f9b`. `ratifies` takes the amendment tally, `endorses` the
+case-bound custody review, ending a fusion where the only discriminator was
+which constant sat in place one. Both names are curated upstream; neither was
+invented here. The rule-level card FS-PCD-08 keeps its `retire` action and now
+cites the split rule.
+
 ## What this census does not do
 
-It makes no disposition. It opens no card. It does not decide whether any
-relation is retained, replaced, or retired, and it supplies no replacement
-vocabulary. It establishes nothing about the world, nothing about any
+It supplies no replacement vocabulary, and the four retentions create no rule,
+reader, or public claim. It establishes nothing about the world, nothing about any
 institution's existence or independence, and nothing about the engine beyond
 what a probe answered once on a dated binary.
 
