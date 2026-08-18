@@ -899,6 +899,47 @@ Gate B; it does not claim Book 2 operations or feasibility.
     attest on the recipient's behalf.
   - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement,
     routing, maintenance, capacity planning and graceful degradation.
+  - **Neutral brief landed 2026-08-18** —
+    [`new-book-plans/book-1-delivery-and-receipt-brief.md`](new-book-plans/book-1-delivery-and-receipt-brief.md).
+    It decides nothing and creates no predicate, rule, defect row or claim. It
+    measures the deficit against the current source, states the rule rather
+    than the count — no floor actuality has a rule that reaches a free person,
+    and the only non-carceral route produces no cast arrival — and records
+    three findings that change how the family must be built.
+    **(1) `derived_only` is not the guard it looks like.** The constitution
+    already measured this in its own comment: `derived_only` closes the fiat
+    *fact* and leaves the fiat *rule* open, so a fiat is syntactically
+    indistinguishable from a real delivery route. Declaring the actualities
+    conclusion-only is still worth doing on the L1+D1 precedent, but must not
+    be described as preventing fiat. The source names the real defence —
+    *what arrival evidence sits upstream of this head?* — and the brief
+    proposes making that structural question a checked guard with its own
+    watched-failing control.
+    **(2) The bar on certifying a personal state does not fall evenly.**
+    `eats`, `secure`, `dwell` and `meets` are material conditions;
+    `expresses` and `believe` are liberty-shaped and may be a category error
+    rather than a gap; `healthy` and `learn` are outcomes whose entitlement is
+    written to the outcome while only the access condition may be secured.
+    FS-DFT-16's closure condition is narrower than it first reads, and whether
+    some actualities stay deliberately underived with a stated reason is a
+    real question rather than something to route around.
+    **(3) The corpus blocks the recipient side.** Measured against engine
+    `8935611`: `receive`, `accept`, `obtain`, `access`, `reach`, `arrive`,
+    `acknowledge`, `attest` and `witness` are all **absent**, while the
+    provider-side verbs exist — and of those only `gives` has hand-verified
+    places (`giver / gift / recipient`); `provide` carries the same
+    `TODO(corpus): guessed places` marker that got `reward`'s provenance
+    proposal refused. A corpus request on the `ratifies`/`endorses` precedent
+    is needed, and **it is startable now** — establishing availability needs
+    no ruling.
+  - **Two questions are open for the author** and are recorded in the brief
+    with options and costs: which floor items get an arrival route at all, and
+    who writes the receipt for a recipient who can acknowledge through no
+    channel. The second is the thesis brief's §4 gap, still unowned. Note the
+    measured trap on the third candidate: absence-of-receipt as the trigger
+    fires on everyone while no arrival facts exist, which is exactly why the
+    floor-delivery markers were refused, so it is a consumer of this family
+    and not a substitute for it.
 
 - [ ] **Write the economic, labour, property, and fiscal constitution.**
   - Implement the ratified settlement by direct legal effect; create no omnibus
