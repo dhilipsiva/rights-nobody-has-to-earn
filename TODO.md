@@ -134,8 +134,10 @@ The state form, residence-first political membership, substantive equality,
 bounded plural economy/protected voluntary sphere, family/dependency/
 reproduction/collective-plurality, ecological/future-generation/commons/
 non-human-animal, and public-safety/defence/emergency/external-power baselines
-are also settled, as are the assurance portfolio, the narrative register, and
-the reader-evidence protocol with its threshold timing. Execution of that
+are also settled, as are the assurance portfolio, the narrative register, the
+reader-evidence protocol with its threshold timing, and the delivery-and-receipt
+ruling of 2026-08-18 that fixes which floor items get an arrival route, who may
+write the recipient-side receipt, and that the routes ship dormant. Execution of that
 protocol and its reserved threshold ruling is withdrawn from the current Book 1
 program at `907ddd0`; no pilot, threshold, holdout, accessibility pass, or
 reader claim follows. Scope inventory and other author-ruling work may proceed.
@@ -157,347 +159,25 @@ project may not present withdrawal as completion of those checks.
     the slot; the sentences are the author's. Either bring it into conformance or
     record the exception as permanent with its reason.
 
-- [x] **Rule the book's stated thesis and whether a second stress case joins the
-  prisoner.**
-  - **Ruled 2026-08-17** (`ef0a48c`): thesis restated-structural, exempt
-    elements only; the caregiverless infant paired with the prisoner, holding
-    framing primacy where the landed rulings permit. Controlling record:
-    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
-    Residue is routed to its consumers, not held here: exempt prose (author),
-    the pairing and primacy re-measure (portfolio rebalance), the named row
-    (reader ledger), and the opening-note re-audit (with the prose).
-
-- [x] **LIVE REGRESSION — the suite is red against current nibli, and the cause
-  - **Closed 2026-08-17** by engine `b97d1af`, verified here before accepting:
-    rebuilt from source, all four isolating variants answer as the parent
-    `b71b978` does, and `./verify.sh` is green on the default path with no
-    pin. The defect was a specification error — the in-cone fold refused
-    relations *read* under negation when soundness needs every relation the
-    delta can *reach* under negation.
-  - **The durable lesson, kept because it will recur:** when a verdict looks
-    wrong against this mechanism, build the engine **debug** — it carries a
-    self-check comparing a resumed extension against a full recompute that a
-    release build compiles out. Verified here by rebuilding the regressed
-    commit debug and reproducing the panic. The engine's assert-after-query
-    contract now lives in `CLAUDE.md`; pin against the contract, not the
-    observed behaviour.
-
-- [x] **CORPUS REQUEST — two approval names, so one relation stops carrying two
-  legal regimes.** The author ratified splitting `approves` into `ratifies`
-  (democratic tally outcome) and `endorses` (case-bound review decision) on
-  2026-08-17. Neither is a corpus name, so both are compile errors and the
-  split cannot start. Measured the same day against engine `b97d1af`; the
-  curated corpus carries no ratify, endorse, certify, confirm, enact, vote,
-  tally or attest, and `approves` is arity-2 capped so a third place cannot
-  disambiguate either.
-  - **Claims served, reviewed at prompt time.** FS-CLM-19 "Closed record with
-    derived-only conclusions and staged assurance" — posture `Derived`, route
-    `FS-RTE-01` (formal entailment), evidence kind `executable`. The split also
-    unblocks the `approves` retain/replace/retire disposition, whose premise
-    contract is owned by the democratic-ceiling item below (its heading is a
-    live owner needle, so it is described here rather than quoted) and whose
-    required writer authority already distinguishes "an independently
-    verifiable democratic result or case-bound review decision" — two regimes
-    the record cannot currently tell apart.
-  - **This is a corpus-vocabulary request, not a reasoning repair.** It asks
-    for two curated names, not for the engine to authenticate a tally, hold an
-    election, or know what ratification means.
-
-    ```text
-    You are the nibli session. This request comes from a downstream consumer of
-    nibli-pin, carried by dhilipsiva. It asks for two curated corpus names and
-    nothing else. Assume we know nothing about your internals.
-
-    WHAT WE HAVE. One arity-2 relation in our knowledge base carries two
-    legally distinct kinds of approval: a democratic tally outcome, and a
-    case-bound review decision about a custody lease. Nothing in the record
-    distinguishes them except which constant sits in place one, so an approval
-    written by one authority and an approval written by the other are
-    indistinguishable as data. We want to split them into two relations.
-
-    THREE MEASURED FACTS, engine b97d1aff0f6a701fe1250b56f506af5f551e4144,
-    2026-08-17. Every file below is complete; no repository knowledge needed.
-
-    (A) The fused state compiles, which is the problem.
-        kb:   admits("approves").
-              approves(Electorate, Item).
-              approves(ReviewBody, Item).
-        pins: ? approves(Electorate, Item).   # => TRUE
-              ? approves(ReviewBody, Item).   # => TRUE
-        Result: PASS — 2 pins. Two regimes, one relation, no way to tell them
-        apart by name.
-
-    (B) A third place to disambiguate is refused.
-        approves(Electorate, Item, Amendment).
-        → [Syntax Error] line 1:28: too many arguments for "approves" (arity 2)
-
-    (C) Both names we want are compile errors.
-        ratifies(Electorate, Item).
-        → [Syntax Error] line 1:1: unknown predicate "ratifies": not a corpus
-          name — unknown names are a compile error, never an arity-2 guess
-          (NIBLI_KR §13)
-        endorses(ReviewBody, Item).
-        → the same error for "endorses"
-
-    We take (C) to be your design working as intended, not a defect. We are
-    asking you to widen the corpus deliberately rather than route around it.
-
-    THE REQUEST. Two curated arity-2 entries:
-
-      ratifies   x1 ratifies x2   — an authority ratifies a proposal or
-                                    instrument; the outcome is official
-      endorses   x1 endorses x2   — a reviewer endorses a specific decision or
-                                    instrument in a bounded case
-
-    Candidate source words, offered so you can reject them on grounds we
-    cannot see. Both are already in the Lojban dictionary shipped in your tree:
-
-      ca'irzau  (lujvo) "x1 officially approves x2 (object / event); x2 is
-                official, approved by x1" — a two-place match for `ratifies`,
-                and closer to ratification than zanru, which is the source of
-                our existing `approves` and reads as ordinary favour.
-      fitytu'i  (lujvo) "x1 accepts x2 (an offer/suggestion) from x3" — an
-                acceptance sense for `endorses`; the third place is not needed
-                by us and we would use two.
-
-    If your curation rules prefer different source words, different place
-    names, or a different arity, take them — we need two distinguishable
-    approval predicates, not these exact spellings. What we cannot use is a
-    single name with a disambiguating place, because of (B).
-
-    WHAT THIS IS NOT. We are not asking the engine to authenticate a tally,
-    compute a threshold, decide who may approve, know that ratification differs
-    from endorsement in law, or perform any institutional act. All of that is
-    external to the engine and stays external. This is vocabulary only: two
-    names that compile, so a distinction we already make in law can be made in
-    the record too.
-
-    ONE THING WE MAY HAVE WRONG. We searched your curated predicate list and
-    the shipped dictionary and concluded no existing name carries either sense
-    at arity 2. If one does and we missed it, that is a better answer than a
-    corpus addition and we would rather have it.
-
-    REPLY, addressed directly back to the book session through dhilipsiva: the
-    sha we should build, the exact names, source words, arities and place names
-    as landed, whether any existing verdict moved, and what this prompt itself
-    got wrong. That last item has been non-empty more often than not, on both
-    ends of this channel.
-    ```
-
-  - **Returned and verified 2026-08-17; the split is unblocked.** Engine
-    `8935611` curates both names exactly as asked: `ratifies` (places
-    authority/instrument, source `ca'irzau`) and `endorses` (places
-    reviewer/decision, source `fitytu'i`), both arity 2, both Curated.
-    Verified here before accepting rather than on the reply: rebuilt from
-    source, confirmed the entries in the corpus, and measured the property the
-    split exists for — each name answers TRUE for its own authority and FALSE
-    for the other, with a third place still refused. The full suite is green on
-    the default path, so no verdict moved and `approves` is untouched until the
-    migration chooses to move it.
-  - **A precedent the engine session flagged, worth carrying:** both source
-    words are lujvo, and every other corpus row cites a five-letter gismu or a
-    synthetic marker. `source_gismu` now means "the Lojban source lemma"
-    rather than strictly a gismu. It is inert by construction — never validated
-    for shape, never an input — but a later reader should not infer a shape
-    rule from the other rows.
-  - **What this repository's prompt got wrong**, recorded because the channel
-    requires it in both directions. The prompt said both words were "already in
-    the Lojban dictionary shipped in your tree". `dictionary-en.json` is
-    gitignored and fetched on demand; it was present locally only because
-    someone had fetched it, and it feeds a regeneration tool rather than the
-    build. Nothing followed from the error — the words are real and were used —
-    but a session inferring that the dictionary is a build input would be
-    wrong. Separately, neither lemma is in the vendored Predilex, so that gate
-    derives no arity bound for either and is not checking these two.
-
-- [x] **CORPUS REQUEST — one recipient-side name, so delivery stops being the
-  provider's word for it.** The delivery and receipt families are what close
-  FS-DFT-16 and FS-DFT-17, the project's two open criticals, and the settled
-  shape requires accessibility-neutral, recipient-side access/receipt evidence
-  that a provider cannot write for itself. Measured 2026-08-18 against engine
-  `893561189418df1d24ae505c6eab6ba455da3194`, binary SHA-256
-  `e927fc3a308849191dd2209b1ae0d105d3c5576b55817829c44288ba3d5abde3`: the
-  provider half and both independent-witness slots already exist, and the only
-  missing vocabulary is the recipient-side arrival predicate. This is a much
-  smaller ask than the delivery brief first implied, and the narrowing is the
-  point — `observe` already supplies the independent-witness half.
-  - **Claims served, reviewed at prompt time.** FS-CLM-05 "material floor"
-    (posture `Specified`) and FS-CLM-06 (`Unestablished/route-unbuilt`), whose
-    coverage row records that only learning has a non-carceral arrival route
-    and that every future route needs accessibility-neutral, recipient-side
-    access/receipt evidence with an authorised writer and challenge route.
-  - **This is a corpus-vocabulary request, not a reasoning repair.** It asks
-    for one curated name. It does not ask the engine to authenticate a
-    delivery, know that a meal arrived, or decide who may attest.
-
-    ```text
-    You are the nibli session. This request comes from a downstream consumer of
-    nibli-pin, carried by dhilipsiva. It asks for one curated corpus name and
-    nothing else. Assume we know nothing about your internals.
-
-    WHAT WE HAVE. Our knowledge base states a floor of things every person is
-    owed. Today almost nothing derives them: the only non-carceral arrival
-    route we have is a teaching one, and the rest are reachable only through
-    confinement or not at all. We are building the general delivery route. Its
-    governing rule, settled before this request, is that a provider's own
-    assertion can never by itself establish that something reached a person —
-    so the record needs a recipient-side fact that is not the provider's claim.
-
-    FOUR MEASURED FACTS, engine 893561189418df1d24ae505c6eab6ba455da3194,
-    binary SHA-256
-    e927fc3a308849191dd2209b1ae0d105d3c5576b55817829c44288ba3d5abde3,
-    2026-08-18. Every file below is complete; no repository knowledge needed.
-
-    (A) The structure we want already works. Only the name is missing. Here it
-        is with `carries` standing in for the predicate we are asking for, to
-        show that nothing about the shape is in question:
-
-        kb:   admits("person"). admits("gives"). admits("observe").
-              admits("carries").
-              person(Ada).
-              gives(Kitchen, Meal, Ada).
-              carries(Ada, Meal, Kitchen).
-              observe(Chronicle, Meal, Ada, DeliveryScope).
-              observe(TemporalReview, Meal, Ada, DeliveryScope).
-              person(Bo).
-              gives(Kitchen, Meal, Bo).
-              all $p: all $item: all $src: gives($src, $item, $p) &
-                carries($p, $item, $src) &
-                observe(Chronicle, $item, $p, DeliveryScope) &
-                observe(TemporalReview, $item, $p, DeliveryScope) -> eats($p).
-        pins: ? eats(Ada).   # => TRUE
-              ? eats(Bo).    # => FALSE
-        Result: PASS — 2 pins. Bo is the case that matters: the provider gave,
-        and nothing derives, because the provider's word alone is not enough.
-
-    (B) The provider half and both witness slots are already available to us.
-        `gives` is curated at arity 3 with places giver/gift/recipient, and
-        `observe` at arity 4 is already how our source records two independent
-        witnesses at a named scope. We are not asking for either.
-
-    (C) Every spelling of the recipient half is a compile error.
-        receive(Ada, Meal).
-        → [Syntax Error] line 1:1: unknown predicate "receive": not a corpus
-          name — unknown names are a compile error, never an arity-2 guess
-          (NIBLI_KR §13)
-        The same error for: receives, access, obtain, acknowledge, attest,
-        reaches.
-
-    (D) Widening `gives` instead is refused.
-        gives(Kitchen, Meal, Ada, Tuesday).
-        → [Syntax Error] line 1:27: too many arguments for "gives" (arity 3)
-
-    We take (C) to be your design working as intended, not a defect. We are
-    asking you to widen the corpus deliberately rather than route around it.
-
-    THE REQUEST. One curated arity-3 entry:
-
-      receives   x1 receives x2 from x3   — a recipient-side record that
-                                            something reached x1; the mirror of
-                                            the existing `gives`
-
-    Candidate source words, offered so you can reject them on grounds we
-    cannot see:
-
-      terdu'a  (lujvo) "x1 is a recipient of gift x2 with/from donor x3" — the
-               exact converse of dunda, which already sources our `gives`, so
-               the pair would be same-family. This is our preference, and the
-               reason is semantic rather than tidy: terdu'a is STATIVE. The
-               recipient does not have to do anything to be one.
-      cpacu    (gismu) "x1 gets/procures/acquires/obtains/accepts x2 from
-               source x3" — a five-letter gismu if you prefer one, but it is
-               VOLITIONAL: gets, procures, accepts. That is wrong for our
-               hardest subject. A large part of why we need this predicate is
-               the person who cannot act or acknowledge at all — an infant, an
-               unconscious patient, someone held incommunicado. A predicate
-               that says they accepted something would be false of exactly the
-               people the rule exists to protect.
-
-    If your curation rules prefer different source words, different place
-    names, or a different arity, take them — we need one recipient-side
-    predicate that does not imply the recipient acted, not this exact
-    spelling. What we cannot use is a fourth place on `gives`, because of (D).
-
-    WHAT THIS IS NOT. We are not asking the engine to authenticate a delivery,
-    know whether a meal actually arrived, decide who may attest to it, model an
-    entitlement, or perform any institutional act. All of that is external and
-    stays external. This is vocabulary only: one name that compiles, so a
-    distinction we already make in law — the provider's claim is not the
-    recipient's evidence — can be made in the record too.
-
-    TWO THINGS WE MAY HAVE WRONG. First, we searched your curated predicate
-    list and concluded no existing name carries a stative recipient sense at
-    arity 3. If one does and we missed it, that is a better answer than a
-    corpus addition and we would rather have it. Second, we looked at
-    dictionary-en.json from a local checkout; we know from your last reply that
-    it is gitignored, fetched on demand, and feeds a regeneration tool rather
-    than the build, so we are citing it as a lemma source only and infer
-    nothing about your build from it. Neither candidate appears in the vendored
-    Predilex arity file, so that gate derives no bound for either — the same
-    situation you recorded for ca'irzau and fitytu'i.
-
-    REPLY, addressed directly back to the book session through dhilipsiva: the
-    sha we should build, the exact name, source word, arity and place names as
-    landed, whether any existing verdict moved, and what this prompt itself got
-    wrong. That last item has been non-empty more often than not, on both ends
-    of this channel.
-    ```
-
-  - **Returned and verified 2026-08-18; the recipient half exists.** Engine
-    `bc03c9a00b28f566c9efe0e7808d3c9160915781` curates `receives` exactly as
-    asked: places `recipient / gift / donor`, source `terdu'a`, arity 3,
-    `CorpusTier::Curated`, template `{x1} receives {x2} from {x3}`, and
-    `swap: None`. Verified here before accepting rather than on the reply:
-    rebuilt from the sha rather than trusting the binary beside the checkout
-    (rebuild SHA-256
-    `f9f094b14efe1a8549660542edf263f2afe5380dc84e99e197cc5f3f95683772`), read
-    the entry, measured the behaviour, and ran the full suite — 558 pins, 0
-    findings, no verdict moved. The engine session's report that our two
-    `nibli-pin` binaries hashed identically was about the previous `8935611`
-    build, which we both had; bit-identity was not re-tested for `bc03c9a`,
-    where only our own build exists here.
-  - **The independence was measured, not read off the declaration.**
-    `swap: None` is a source fact; the property the request exists for is
-    behavioural, so it was tested in both directions. A `gives` fact does not
-    make the matching `receives` true, and a `receives` fact does not make the
-    matching `gives` true. The delivery probe was also strengthened past the
-    engine session's version: their negative case carried only `gives`, while
-    ours carries `gives` **and both independent witnesses**, so the only thing
-    missing is the recipient-side fact — and `receives` is still FALSE and the
-    actuality still does not derive. That is the exact shape a provider trying
-    to self-certify would produce.
-  - **The most valuable part of the reply was a decision we did not ask for,
-    and it is the precedent to carry.** `terdu'a` is the converse of `dunda`,
-    which sources `gives`, so the tidy modelling is a `Swap` converse alias.
-    A converted alias compiles to the same stored relation with places
-    exchanged, so `gives(Kitchen, Meal, Bo)` would have made
-    `receives(Bo, Meal, Kitchen)` TRUE — the giver's word establishing receipt,
-    the one thing the governing rule forbids, arriving through a curation
-    choice where no rule review would ever look. Any future request for a
-    converse-sense name must state whether it needs an independent relation or
-    an alias, because the two are indistinguishable in the request and decisive
-    in the result.
-  - **The independence pins must ship with the delivery family.** They have
-    nowhere to live yet — there is no delivery rule — but the guard belongs
-    beside the rule when it lands, on the confinement-ruling precedent that a
-    guard is written for the day the assumption hiding it stops holding.
-  - **What this repository's prompt got wrong**, recorded because the channel
-    requires it in both directions, and this one is worse than the last. The
-    prompt claimed "every spelling of the recipient half is a compile error".
-    False: `get` is curated at arity 3 with places `subject / gets / source`,
-    sourced from `cpacu` — our own second candidate — and it compiled at
-    `8935611`, the sha we measured against. Worse, our own corpus scan had
-    already listed `get` as available; the request contradicted evidence we had
-    collected ourselves and did not reconcile. Nothing followed from the error,
-    because `cpacu`'s volitional sense was rejected on the merits and that
-    rejection stands. **The method fix is specific:** when a candidate Lojban
-    lemma is in hand, resolve it to its English corpus name through the
-    provenance index rather than guessing English spellings — `by_provenance`
-    in `nibli-lexicon` is that bridge, and it maps `cpacu` straight to `get`.
-    Both near-misses on this channel would have been caught by it.
-
----
-
+- **Channel precedents worth carrying.** Two corpus requests closed (`ratifies`
+  and `endorses` for the approval split; `receives` for the recipient-side half
+  of a delivery). The prompts are in git history; three lessons are not, and
+  each cost a round trip.
+  - **Resolve a candidate lemma to its English corpus name; never guess English
+    spellings.** `nibli-lexicon`'s `by_provenance` is that bridge. Both
+    near-misses on this channel were the same shape — a Lojban source word in
+    hand, English spellings guessed, the name declared absent. `cpacu` maps to
+    `get`, which existed at the sha we measured against.
+  - **Say whether a converse-sense name must be an independent relation or an
+    alias.** A `Swap` alias compiles to the same stored relation with places
+    exchanged, so asking for `receives` as the converse of `gives` would have
+    made the giver's assertion establish receipt — the one thing the delivery
+    family forbids, arriving through a curation choice no rule review inspects.
+    The engine session caught this unasked; the request could not distinguish
+    the two and the result turned on it entirely.
+  - **Verify the reply, do not accept it.** Rebuild from the named sha rather
+    than trusting the binary beside the checkout, and measure the property the
+    request exists for instead of reading it off a declaration.
 ## Full-society expansion — implementation backlog
 
 This is the canonical merged redesign backlog for the ratified constitutional
@@ -601,59 +281,10 @@ formal-transition batch at `7e5b5f6`. The repository adversarial audit landed at
 mechanical-closure candidate `2aeca61` remove the remaining human-act
 dependency, and Gate A closed mechanically at `405e480`.
 
-- [x] **Complete the full-society domain-and-layer ledger.**
-  - The canonical source contains 210 legal-effect power cards, one cross-power
-    temporal template, 19 refusal/limit rows, eight formal dispositions, 210
-    power-bound allocations, the defect ledger, and every required projection.
-    The source-derived population culminated at `7e5b5f6`.
-  - Schema v6 and protocol v4 replace every Gate A reviewer or ratification
-    dependency with a current-source repository audit and an immutable-candidate
-    mechanical closure contract. `FS-SAU-02` binds the exact semantic scope,
-    protocol, criteria, controls, commands, findings, policy basis, and evidence
-    ceiling. Historical audit records remain append-only.
-  - Closure commit `405e480` binds immutable candidate `2aeca61`, its
-    all-passed verifier transcript digest, `FS-ENV-01`, `FS-SAU-02` and
-    its cutoff, checker-derived assurance and residual sets, and exact claim
-    limitations. The validator proves that no canonical semantic field differs
-    from the candidate outside closure and acceptance metadata.
-  - Gate A is `passed` for exactly this claim: The project has a versioned,
-    reviewable scope map and assurance program. It establishes no
-    independent-human warrant, reader response, external truth, operation,
-    delivery, feasibility, liveness, calibration, timeless completeness, or
-    authentication of the audit's own trust root.
-  - Later-gate defects remain owned by their substantive tasks. In particular,
-    FS-DFT-16, FS-DFT-17, and FS-DFT-28 remain unchanged; FS-DFT-20 remains
-    non-gating, and the optional reader-balance claim remains Unestablished
-    unless optional R6 evidence later supports it.
-
 ### Expansion phase 2 — Specify the comprehensive constitution
 
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
-
-- [x] **Implement the ratified T3 temporal path in stages — staged rule families,
-  full-source execution gates, and four semantic and prose closures landed.**
-  - Content commit `6f6c636` implements witnessed T1 transitions and carry,
-    typed transitive T2 event/record paths, and canonical-current, source/window/
-    case/lease-bound T3 Court custody. Forty fresh processes now execute 236
-    temporal pins, including replay, divergence, omission, forgery, typed cycles,
-    conflicting bindings, unwitnessed reverse dates, and withheld standing evidence.
-  - Content commit `ed93d42` restored ordinary full-source opaque entitlements and
-    deleted the extracted-floor workaround. Content commit `c7d9a19` then restored
-    chapter 7's direct Zed entitlement and made every generated placement subject's
-    floor projection execute cold against its exact matrix facts, without a `person`
-    overlay. A standing-removal sabotage protects that composition boundary.
-  - Content candidate `9419db0` closes the four remaining boundaries without
-    overclaiming them: the dual-witness standing polarity is explicit and pinned;
-    correction, supersession, lineage, non-revival, and challenge/duty carry are
-    split between current supplied-record effects and named target/Book 2 contracts;
-    TA-41 and TP-12 execute the challenge-present and challenge-withheld custody
-    paths; and `3-spine.md` now treats the generated six-stratum graph as
-    authoritative while keeping chapter order editorial.
-  - Closure commit `ab28a5f` binds that immutable candidate to the exact Gate A
-    claim. The T3 gate passes with 41 fresh processes and 244 temporal pins;
-    residual liveness stays explicitly in Book 2, and no operation, delivery,
-    feasibility, outside-record completeness, or calibration claim is added.
 
 - [x] **Maintain completed constitutional coverage rows before drafting chapters.**
   - Use the coverage map's contract fields and the taxonomy's formalisation metadata
@@ -679,231 +310,16 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - **Landed** (`0f73a1c`); the ratified content is in its controlling decision
     record and the canonical ledger, not restated here.
 - [x] **Make universal standing a root condition, not a service denied by a missing entry.**
-  - Design a safe “serve and reconcile” route for an unregistered person seeking help.
-  - Cover birth/first contact, absent or disputed identity, migration between records,
-    decision support, and death/status correction without making registry presence,
-    capacity, citizenship, or documentation a condition of standing.
-  - Keep identity resolution separate from access to emergency aid, floor protections,
-    and due process.
-  - Do not erase accountability through a right to disappear from the record.
   - **Landed** (`7efcd63`); the ratified content is in its controlling decision
     record and the canonical ledger, not restated here.
 - [x] **Preserve the material-floor inventory; implement the liberty shell,
   environmental right, and ecological ceiling.**
-  - Keep the constitution's existing floor inventory unchanged. Do not add a
-    ninth environmental floor item, delete an existing item, or silently relabel
-    food, water/sanitation, housing/land access, utilities, material security,
-    health/care, learning/information, disability access, mobility,
-    communication, public space, or voluntary social life as a new floor. Map
-    each claimed gap explicitly to an existing floor and its delivery interface,
-    a distinct right or liberty, a public duty, protected free life, Book 2
-    operation, or an unresolved limit.
-  - Retain unconditional standing, medium-neutral recipient-side access/receipt
-    evidence, continuity, breach, and remedy for every existing floor item.
-    Ecological policy cannot select people for floor loss, and floor delivery
-    cannot erase an ecological ceiling.
-  - Put privacy, bodily autonomy, movement, due process, association, expression,
-    conscience, family/intimate life, equal civic status, and procedural
-    safeguards in a power-limiting layer where appropriate rather than turning
-    them into delivery predicates.
-  - Implement every person's distinct right to clean, healthy, sustainable
-    environmental conditions, including information, prior assessment,
-    participation, public reasons, review, interim protection, correction, and
-    remedy. Keep unequal exposure connected to the equality route, never a
-    vulnerability or ecological-worth score.
-  - Implement Class 9 commons, versioned multidimensional ceilings, precaution,
-    non-regression, nonfungibility, restoration, and future ecological capability.
-    Where floor and ceiling cannot both be met immediately, preserve least-harm
-    human continuity, record every shortfall as failure, obtain alternatives,
-    repair harm, and use a source-bound transition; neither side is renamed
-    success.
   - **Landed** (`f168642`); the ratified content is in its controlling decision
     record and the canonical ledger, not restated here.
 - [x] **Establish substantive equality and anti-subordination across domains.**
-  - Implement the open protected-ground architecture and direct, indirect,
-    systemic, multiple, intersectional, associative, accommodation, segregation,
-    harassment, and retaliation forms. Actual, past, anticipated, perceived,
-    associated, and combined grounds remain legal handles, never person-worth,
-    risk, entitlement, or character scores.
-  - Split cards by direct legal effect across every applicable taxonomy class,
-    including accessible floor delivery and territorial equality. Do not create
-    one omnibus equality predicate or silently turn the Article 1 firewall,
-    `admits`, `derived_only`, recognition non-operation, or no-score guards into
-    equality rules.
-  - Bind every public tier, institution, contractor, and delegated function plus
-    the ratified public-facing private domains. Give each express private duty a
-    matching, non-delegable public prevention, investigation, continuity, and
-    remedy duty. Preserve intimate choice and genuinely voluntary affinity,
-    cultural, safety, faith, and expressive association only with free exit and
-    undiminished common rights and services. Prohibit imposed status segregation
-    and inferior parallel systems. Mission-linked requirements must concern a
-    genuinely expressive role, satisfy the direct-distinction test, and cannot
-    cover commercial or essential access.
-  - Apply the separate legal tests: genuine determining necessity for an adverse
-    direct distinction; compatible purpose, evidential fit, necessity, least-
-    discriminatory means, and proportionality for indirect effects; the
-    decision's accommodation and remedial-positive-measure contracts. None may
-    balance away standing, the floor, core liberty, due process, the adult ordinary
-    resident's equal popular ballot, or remedy.
-  - Shift the burden in remedial equality proceedings after credible adverse
-    treatment, a barrier, or a relevant pattern. Intent and one-ground comparator
-    are unnecessary. Never reverse a criminal burden or derive guilt, punishment,
-    or an adverse individual fact from a diagnostic pattern. Bare record absence
-    is not withholding; require authenticated notice, opportunity, source-bound
-    deadline, authorised non-production/destruction finding, and review.
-  - Require proactive physical, sensory, cognitive, linguistic, digital,
-    geographic, financial, and procedural accessibility plus individualized
-    accommodation. Assess undue burden across the responsible institution and
-    available support. If one provider genuinely cannot perform, preserve an
-    equivalent public route in timeliness, quality, dignity, privacy, and cost.
-  - Keep diagnostics purpose-limited, privacy-preserving, independently governed,
-    and outside the canonical consequential person record. Aggregate evidence may
-    create a rebuttable presumption and audit, never an individual standing,
-    floor, sanction, risk, entitlement, or worth result.
-  - Implement, and require where ordinary equality, accessibility, and
-    accommodation remain insufficient, positive measures, including bounded
-    quotas, only through a separately enacted objective, evidence, necessity,
-    proportionality, review, challenge, and end contract. Use purpose-limited,
-    minimally necessary, contestable eligibility evidence that cannot become a
-    reusable identity registry or enter the canonical consequential person record;
-    declining voluntary self-description creates no adverse inference. General-
-    government candidate-list, nomination, outreach, and appointment measures
-    preserve equal ballots, proportionality, appointment anti-capture, and the
-    bans on a protected-ground separate electorate or reserved-seat exception.
-  - Give each measure a fresh source-bound temporal contract, alternate reviewer,
-    and review-silence default. Without current continuation evidence it creates
-    no new preference or enlargement; bounded continuity may preserve accrued
-    positions while alternate review proceeds. End the measure when its objective
-    is sustainably achieved; ordinary equality, accessibility, accommodation, and
-    accrued remedies continue.
-  - Implement the duty to identify and repair continuing historical barriers while
-    democratic law chooses compatible means. Record correction, sealing, or
-    expungement must preserve lawful provenance and permanent historical public
-    answerability; no repair assigns inherited guilt.
-  - Permit affected people, chosen supporters, qualified associations, and the
-    rights advocate or ombud to initiate review without erasing the person's voice.
-    Keep advocacy, investigation, adjudication, execution, audit, and final review
-    separate. Route case relief through ordinary courts and final general
-    invalidation through the Constitutional Court; structural orders state the
-    unlawful condition and required result without running ordinary administration.
-  - Provide interim continuity, cessation, and individual restoration,
-    accommodation, record correction, compensation/reparation, and anti-retaliation
-    protection plus
-    reasoned related-case review, systemic redesign, monitoring, and measures
-    directed at non-repetition. No remedy removes another person's standing,
-    floor, core liberty, due process, or political equality.
-  - Before formalisation, audit the opening note, every numbered chapter, Part V,
-    `method.md`, every affected TRUE/FALSE pin, every narrowness/count guard, and
-    every claim whose truth depends on the absence of an equality/remedy reader.
-    Give family, home, maturity, conviction, custody, official-status, placement,
-    voiding, recognition, and qualification distinctions explicit retain, replace,
-    narrow, or retire decisions.
-  - Acceptance must distinguish direct, indirect, systemic, multiple,
-    intersectional, and associative cases; undocumented claimants; accessibility
-    modes; valid/pretextual undue burden; public, delegated, named-private,
-    intimate, and expressive contexts; forced versus voluntary separation; one
-    grave act and cumulative harassment, protected expression, and retaliation;
-    privacy-safe burden shift; lawful quota, unjustified continuation, prohibited
-    identity reuse, review silence, and end;
-    political measures; historical record disposition; individual and systemic
-    remedy; related-case reopening; court non-administration; federal variation;
-    and discriminatory laws, initiatives, amendments, regional rules, secession
-    terms, and emergencies.
-  - Book 1 owns definitions, reach, burdens, data walls, review, continuity,
-    remedies, and failure polarity. Book 2 owns collection/statistical methods,
-    staffing, costs, operational accommodation and programme design, monitoring,
-    enforcement workflows, and empirical evaluation within that contract. Nibli
-    may consume an authenticated, contestable, bounded finding; do not open an
-    engine handoff
-    merely for statistics or credit it with population computation, identity
-    authentication, or institutional action.
   - **Landed** (`6b173fc`); the ratified content is in its controlling decision
     record and the canonical ledger, not restated here.
 - [x] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
-  - Implement one general legal-adulthood status at the uniform age later set by
-    common-tier law. Acquisition is automatic and non-discretionary; registration
-    is evidence, never its source; a later increase cannot revoke adulthood already
-    acquired. Provide accessible evidence, prompt independent determination,
-    challenge and correction, preserve established status, and provide provisional adult status
-    for an expiring political opportunity when credible evidence shows the
-    threshold may have been crossed. Missing, disputed, or corrected records and
-    administrative silence cannot create a franchise or candidacy gap.
-  - Research supported, decision-specific authority before adulthood. It may grant
-    an earlier power for a particular decision, but may not replace general
-    adulthood, become a global maturity score, confer the general-government ballot
-    or candidacy, or leave anyone permanently below adult status.
-  - Give every born child independent standing, floors, privacy, information, voice,
-    representation, and remedy. Make best interests a primary substantive and
-    procedural consideration rather than an adult veto; hear the child without a
-    speaking-age floor and weight supported, decision-specific capacity. Bound
-    parent/caregiver authority as fiduciary and challengeable.
-  - Formalise child-separation safeguards: individualized serious-harm or neglect
-    evidence, support before removal, least disruption, independent review,
-    continuity, and reunification or stable care. Poverty, disability, custody,
-    culture, and family form do not suffice. Give safe, voluntary, education-
-    compatible child activity ordinary labour protection and wages while refusing
-    hazardous, coerced, exploitative, or floor-conditioned work.
-  - Separate parentage, caregiving, household, support, property, and decision-agent
-    roles. Permit pair and plural families to combine modules without marital
-    privilege; require consent, disclosure, defined duties, free exit, winding up,
-    and independent rights for children and dependants. Support more than two legal
-    parents through prior intent, adoption, or an adjudicated child-continuity
-    finding without creating a status gap.
-  - Make public care continuity immediate and non-delegable while keeping assumed
-    parent/caregiver duties capacity-bounded. Give caregivers and dependants
-    separate floors, advocates, privacy, respite, exit, and remedies; impose no
-    compulsory adult-kin personal-care duty or inherited support debt. Imprisonment
-    never automatically ends parentage, contact, or custody.
-  - Protect harmless unconventional households. Permit domestic intervention only
-    on credible evidence of violence, sexual abuse, coercive control, exploitation,
-    serious neglect, captivity, document control, obstruction of help, or denial
-    of free exit. Make emergency action temporary, reviewable, and least restrictive.
-  - Reject plenary guardianship and status-based incapacity. Preserve adult legal
-    capacity and support that the person may choose, change, or refuse. If will and
-    preferences remain unascertainable after support, allow only a conflict-free,
-    decision-specific, least-restrictive, time-bounded best-interpretation route
-    with independent review.
-  - Protect contraception, fertility assistance, pregnancy care, birth, postpartum
-    care, sterilization decisions, and abortion against coercion, discrimination,
-    third-party authorization, and punishment. Preserve the pregnant person's
-    authority over continuation or termination throughout pregnancy; create no
-    separate fetal constitutional personhood capable of overriding it.
-  - Permit assisted reproduction and gestational agreements under consent and
-    anti-exploitation safeguards. No agreement controls bodily decisions; parentage
-    cannot leave a child in a status gap. Preserve accurate birth, adoption, donor,
-    and gestational-origin records and the concerned person's access to identity and
-    health information without creating an automatic contact or relationship right.
-  - Protect supported community living, palliative care, current informed treatment
-    decisions, advance directives, and chosen representatives across ageing,
-    disability, diagnosis, and residence settings, including refusal of life-
-    sustaining treatment. Keep assisted dying democratically permissible for adults
-    only under the ratified consent, review,
-    anti-pressure, real-alternative, and fresh temporal safeguards. Implement
-    will-led succession with bounded dependant claims, estate liabilities,
-    collective-title limits, anti-domination, and functional rather than marital
-    intestacy.
-  - Before formalisation, explicitly replace `mature`; retire unary `family` as
-    a placement/liberty proxy; split `home`; and replace absence-based
-    `parent`/`married`/`sibling` independence with case-bound conflict
-    findings. Never reuse `work(Care)`, `healthy`, `free`, `public`, or
-    `owe` as evidence of care, consent, emancipation, status, or responsibility.
-    Give every consequential status the completed source, writer, evidence, reader,
-    privacy, challenge, correction, carry, end, alternate-route, continuity,
-    remedy, failure-polarity, and temporal contract.
-  - Book 1 owns these legal boundaries; Book 2 owns services, proceedings, records
-    operations, capacity, staffing, costs, and workflows. Nibli may consume an
-    authenticated bounded finding but may not decide capacity, best interests,
-    consent, pregnancy, parentage, death, or institutional action.
-  - Audit chapters 1, 3, 5, 6, 8-11, and 13-14, Part V, `method.md`, placement
-    assurance, affected pins and registries, and counted-claim guards. Acceptance
-    must cover undocumented adulthood, early authority, child medical choice,
-    poverty versus neglect, supported adult decisions, caregiver conflict, plural
-    parentage, domestic coercion, custody parenting, reproductive vetoes,
-    gestational agreements, origin access, treatment refusal, advance directives,
-    assisted-dying safeguards, and succession. Also prove that missing kinship
-    never certifies independence, family never worsens confinement, and recognition
-    neither proves care nor creates compensation.
-
   - **Landed** (`6b905a6`); the ratified content is in its controlling decision
     record and the canonical ledger, not restated here.
 - [ ] **Write the Bodies specification.**
@@ -946,109 +362,37 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Define a rights advocate able to act without replacing the voice of a child,
     disabled person, prisoner, newcomer, dependant or unregistered claimant.
 
-  - **Landed — the specification itself.** The `bodies` record grew from a
-    thin row into a constitutional contract card, and all 38 FS-BOD records
-    are populated against it. Each card separates the seven ratified status
-    senses, carries the eleven office-contract terms plus `anti_capture`,
-    names typed challenge/review/audit/political-accountability routes with
-    real checking bodies, declares its individualized adverse determinations
-    with a per-determination appeal and remedy, and carries its own
-    source-bound temporal contract. The nine bodies whose mechanics block
-    formal enactment carry bounded delegations recording choice owner, bounds
-    and failure default — no reserved number is invented. `13-full-society-
-    ledger.py` enforces the schema and its watched-failing controls; the
-    report gains a per-body contract projection. The producer-and-consumer
-    census the ruling requires before any retain/replace/retire card is
-    `new-book-plans/legacy-relation-census.md`.
-    Mechanically held by the checker: standing is refused in the three office
-    senses; no body checks itself; every body names an external checker; only
-    the custodial executor applies the retained custody contract; an
-    enumerated determination must carry appeal and remedy while a
-    none-by-design card carries neither, which is how "do not recreate a
-    universal right of appeal" stops being an exhortation; and no card text
-    may assert an arrival, an aggregate figure, a feasibility claim, or
-    relabel a current fixture as a ratified institution.
-    This establishes no institution, staffing, independence, operation, or
-    delivery. Every card stays `ratified-unimplemented` and FS-CLM-18 keeps
-    its `Specified` posture, because its closure names the specification
-    **and** its rule families.
-
-  - **The cards were adversarially reviewed and repaired before landing, and
-    the review is the reason to trust them at all.** A first pass validated
-    cleanly against the schema and was still wrong in ways no checker can see.
-    Four defect classes recurred. **False provenance** — a needle that resolves
-    while the sentence around it does not make the claim: the people-and-
-    associations card sourced a petition right from an enterprise
-    electoral-finance savings clause while the on-point participation sentence
-    sat uncited two decisions away. **Fused regimes** — the Assembly card
-    imposed the amendment-only aggregate-weight and affected-region rules on
-    ordinary legislation, and contradicted the Council card on the same rule.
-    **Invented allocation into a recorded silence** — the Civic President card
-    named the removal-confirming bodies the ruling expressly lists among its
-    unfixed blockers, in the same card that recorded them as reserved.
-    **Over-import of the independent-appointments contract** onto ordinary
-    administrations, where the scoping word is the first word of the source
-    sentence. Every finding was fixed or rebutted with a quoted source; the
-    repaired cards record the silences the inventions had covered over. Where a
-    card now cites that appointments contract for an ordinary administration it
-    says in terms that it is the nearest ratified pattern and expressly not
-    that body's rule.
-    Two lessons worth keeping: a schema-valid card can still be false, so the
-    provenance audit is not optional; and the checker's job is to make the
-    mechanical failures impossible so that review attention is free for the
-    semantic ones.
-
-  - **Outstanding, and why each is not in the specification.**
-    (a) **Closed.** The `standing` rename landed book-wide at `13d0a7e`,
-    on the author's ruling to sweep the whole book rather than wait for the
-    chapter audit. The reserved word now carries only the universal status
-    every person holds; the office sense reads "public answerability", which
-    is the term the ledger's own office-sense guard already named in its
-    error message. No relation is called `standing`, so the constitution was
-    untouched and the pin suite moved by two comments and a filename. The
-    sweep also found a third sense live in print: `03:163` and two "in good
-    standing" idioms carried *credibility* — the sense chapter 2's pin file
-    records as migrated in v0.6, with three adjacent pins held against the
-    senses re-merging — and `3-spine.md:181` used "standing and points" for
-    credibility and recognition, which chapter 8's own pins contradict by
-    name. All four now say which sense they mean. Personhood and adjectival
-    uses are untouched, and chapter 2 keeps the ordinary word once as a
-    mention that says why it is reserved.
-    (b) **Closed.** The retain/replace/retire dispositions landed at
-    `ecd9937`, after the census the ruling requires first. `mature` was
-    retired with its name reserved (`53897d4`) and `approves` split into
-    `ratifies`/`endorses` (`b8d3f9b`); `decide`, `authority`, `choose` and
-    `broken` were retained, each with the blocker its replacement waits on
-    recorded beside it. The per-relation dispositions sit in the census, and
-    the per-rule FS-PCD cards keep the grain the checker validates.
-    (c) **Closed.** Gate A reopens on every source edit and has to be earned
-    back each time; since the bodies specification it reopened for the
-    maturity reservation (`FS-SAU-24`), the approval split (`FS-SAU-25`) and
-    this rename (`FS-SAU-26`), each appended pending. It is closed again at
-    `FS-SAU-27`, the passing current-source audit. Candidate
-    `d7e6acf241e81253a348b21d899bfd67455c6225` is frozen with its
-    `closure_record` still null and its status still not-passed — both of
-    which the closure checker requires of a candidate — and the closure
-    record binds it with a receipt over the full ten-command chain run
-    unpinned, `all-passed`, transcript SHA-256
-    `74f012ab4d072f5bd04de1a1347a010eb313af2f887385a3aea3c9038865f74d`. A
-    landed row is an append-only prefix, so each passing result is a new row
-    rather than an edit to the pending one, and appending a row cannot move
-    the semantic scope because `review_scope_digest` excludes `scope_audits`,
-    `closure_record` and `acceptance_gate` by construction. The permitted
-    claim is unchanged and deliberately narrow — a versioned, reviewable
-    scope map and assurance program — and the four Gate-A-applicable defects
-    keep their recorded claim limitations.
-
-  - **Was blocked on the live upstream regression; that item is now closed.**
-    This landing was verified at the time with `NIBLI_PIN` pinned to a
-    `b71b978` build, because the same four verdicts moved on `176b132`. The
-    channel closed it on 2026-08-17 with engine `b97d1af`, and `./verify.sh`
-    now passes on the default path with no pin, so the cards' verification is
-    no longer engine-pinned and Gate A's reclosure is unblocked. It still has
-    to be earned: a frozen candidate commit, a passing audit row in place of
-    `FS-SAU-22`'s `pending`, and a closure record.
-
+  - **Landed.** All 38 FS-BOD cards are constitutional contract cards: seven
+    ratified status senses held apart, eleven office-contract terms plus
+    `anti_capture`, typed challenge/review/audit/political-accountability routes
+    with real checking bodies, per-determination appeal and remedy, and each
+    body's own source-bound temporal contract. The nine bodies whose mechanics
+    block enactment carry bounded delegations recording choice owner, bounds and
+    failure default; no reserved number is invented. Held by the checker rather
+    than by prose: `standing` is refused in the three office senses, no body
+    checks itself, only the custodial executor applies the retained custody
+    contract, an enumerated determination must carry appeal and remedy while a
+    none-by-design card carries neither, and no card text may assert an arrival,
+    an aggregate figure, a feasibility claim, or relabel a fixture as a ratified
+    institution. Every card stays `ratified-unimplemented`; FS-CLM-18 keeps its
+    `Specified` posture because its closure names the specification **and** its
+    rule families.
+  - **Two lessons from the adversarial review, kept because they generalise.** A
+    schema-valid card can still be false — the review found sourced-to-the-wrong-
+    clause rights, fused regimes, invented allocations into recorded silences,
+    and an over-imported appointments contract, all of which passed the checker.
+    And the checker's job is to make mechanical failure impossible so review
+    attention is free for the semantic kind.
+  - **Remaining: the pre-landing chapter audit, and it is not yet due.** Its
+    trigger is a state-form rule family landing, and none has — FS-CVF-003 is
+    `coverage-ready` with no formal statements, pins or prose, and its own
+    contract bars them until every direct-effect card is ready. Running the audit
+    now would test prose against rules that do not exist. It runs with that
+    family, and chapter 2 is first on its list.
+  - **Everything else in this item is closed.** The `standing` rename landed
+    book-wide (`13d0a7e`), the retain/replace/retire dispositions landed after
+    the census (`ecd9937`, with `mature` retired at `53897d4` and `approves`
+    split at `b8d3f9b`), and Gate A has been reclosed since.
 - [ ] **Specify obligations without making rights reciprocal bargains.**
   - Public institutions must respect, protect, fulfil, continue and remedy.
   - Contractors remain bound when delivering a public function. Direct private
@@ -1067,66 +411,38 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Apply the lifecycle across food, water, housing, utilities, health/care,
     learning/information, mobility, communication and other essential systems.
   - A missing receipt must invite outreach and challenge, never terminate entitlement.
-  - **Resolve receipt for a recipient who cannot acknowledge through any channel.**
-    `medium-neutral` and `accessibility-neutral` bind the *channel* — not requiring
-    literacy, sight, hearing, a device, or a particular language. Neither reaches a
-    person who can form no acknowledgment at all. For that person the two obvious
-    authorised writers both fail: the provider's own assertion is already refused as
-    proof of delivery or receipt, and a chosen supporter is unavailable to anyone
-    whose defining condition is having none. State which authorised writer is on the
-    recipient's side and independent of the provider, or make the receipt's
-    **absence** the operative trigger under the outreach rule above. Measured
-    2026-08-17 and recorded in
-    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md);
-    an infant without a caregiver is the sharpest case, and the resolution also
-    governs the unconscious patient, advanced dementia, incommunicado detention, a
-    person whose language nobody present speaks, and any person whose supporter is
-    the party alleged to have failed them. Do not close this by letting a provider
-    attest on the recipient's behalf.
   - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement,
     routing, maintenance, capacity planning and graceful degradation.
-  - **Neutral brief landed 2026-08-18** —
-    [`new-book-plans/book-1-delivery-and-receipt-brief.md`](new-book-plans/book-1-delivery-and-receipt-brief.md).
-    It decides nothing and creates no predicate, rule, defect row or claim. It
-    measures the deficit against the current source, states the rule rather
-    than the count — no floor actuality has a rule that reaches a free person,
-    and the only non-carceral route produces no cast arrival — and records
-    three findings that change how the family must be built.
-    **(1) `derived_only` is not the guard it looks like.** The constitution
-    already measured this in its own comment: `derived_only` closes the fiat
-    *fact* and leaves the fiat *rule* open, so a fiat is syntactically
-    indistinguishable from a real delivery route. Declaring the actualities
-    conclusion-only is still worth doing on the L1+D1 precedent, but must not
-    be described as preventing fiat. The source names the real defence —
-    *what arrival evidence sits upstream of this head?* — and the brief
-    proposes making that structural question a checked guard with its own
-    watched-failing control.
-    **(2) The bar on certifying a personal state does not fall evenly.**
-    `eats`, `secure`, `dwell` and `meets` are material conditions;
-    `expresses` and `believe` are liberty-shaped and may be a category error
-    rather than a gap; `healthy` and `learn` are outcomes whose entitlement is
-    written to the outcome while only the access condition may be secured.
-    FS-DFT-16's closure condition is narrower than it first reads, and whether
-    some actualities stay deliberately underived with a stated reason is a
-    real question rather than something to route around.
-    **(3) The corpus blocks the recipient side.** Measured against engine
-    `8935611`: `receive`, `accept`, `obtain`, `access`, `reach`, `arrive`,
-    `acknowledge`, `attest` and `witness` are all **absent**, while the
-    provider-side verbs exist — and of those only `gives` has hand-verified
-    places (`giver / gift / recipient`); `provide` carries the same
-    `TODO(corpus): guessed places` marker that got `reward`'s provenance
-    proposal refused. A corpus request on the `ratifies`/`endorses` precedent
-    is needed, and **it is startable now** — establishing availability needs
-    no ruling.
-  - **Two questions are open for the author** and are recorded in the brief
-    with options and costs: which floor items get an arrival route at all, and
-    who writes the receipt for a recipient who can acknowledge through no
-    channel. The second is the thesis brief's §4 gap, still unowned. Note the
-    measured trap on the third candidate: absence-of-receipt as the trigger
-    fires on everyone while no arrival facts exist, which is exactly why the
-    floor-delivery markers were refused, so it is a consumer of this family
-    and not a substitute for it.
-
+  - **Ruled 2026-08-18** —
+    [`new-book-plans/book-1-delivery-and-receipt-decision.md`](new-book-plans/book-1-delivery-and-receipt-decision.md).
+    Routes for `eats`, `secure`, `meets`, `healthy` and a non-carceral `dwell`;
+    `learn` keeps its teaching route; `believe` and `expresses` get none. The
+    receipt writer is an authorised writer independent of the source, with a
+    predeclared alternate — an instantiation of the ratified rule that an
+    unavailable *writer* may not obtain a withholding veto, not a new principle.
+    The routes ship dormant. Two findings the ruling records: `healthy` is
+    already glossed as care rather than health, so a care route is consistent
+    with the book; and `believe`'s entitlement line exists to refuse a heresy
+    law, so a delivery route there would build the instrument it was written
+    against.
+  - **Landed: the coverage effects (`65e5da9`) and the formal rules (`55fe5be`).**
+    Eight effect cards and coverage family FS-CVF-015, now `formalized`. Five
+    rules, one new predicate (`receives`), 28 family pins, and the
+    `no-delivery-independence` fixture that executes what `~($w = $src)`
+    prevents — the guard cannot be tested by probe, because derivation is
+    monotone. Strata unchanged at six, chapter order unmoved, the 558-pin
+    chapter/floor baseline untouched, evidence vocabulary 41 → 42.
+  - **Remaining, in order.** Chapter prose — chapter 8 is the primary site and
+    needs reframing, because a design with five dormant routes is materially
+    different from one with none, and its "two exceptions" passage is written
+    for the latter. Then Part V, the ledger's `prose-landed` transition, an audit
+    candidate freeze, Gate A reclosure, and the tracker commit. Gate A is open
+    now with `FS-SAU-29` pending.
+  - **What it does not close.** FS-DFT-16 can resolve once FS-CLM-05 moves from
+    `Specified` to `Derived`. **FS-DFT-17 cannot**: its claim is actual arrival,
+    which is liveness, and liveness is never `Derived`. It stays open and
+    blocking until Book 2 supplies operational assurance in a calibrated
+    envelope. The family makes arrival representable and makes none happen.
 - [ ] **Write the economic, labour, property, and fiscal constitution.**
   - Implement the ratified settlement by direct legal effect; create no omnibus
     `economy` predicate. Cover public, cooperative, commons, mutual, nonprofit,
