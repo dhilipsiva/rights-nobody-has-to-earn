@@ -5,13 +5,13 @@
   "status": "staged_t3_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130",
+  "constitution_sha256": "a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9",
   "bound_sources_sha256": {
-    "amendment_semantics": "f1bd6d36bc3473b621b04f4b9e243c16201743a58bfd6fa2df7390ad1dbbe7b8",
-    "assertion_surface": "b31eaad820b67d6cd4848d3be36921cbc7f84632d37708820035fd6f526d20f0",
-    "placement_exhaustiveness": "61f0d5c3dbce284e7c029e0f0801a74bc2d8f3ce9f428006856e8f794d17623f",
-    "record_assurance": "aa6baaded73ed98ced32e34d7c9b6aa5add561fb40ffbb64abc1d18846c09576",
-    "record_red_team": "85f8d2e44f9a921c86a9db7df8c6a39d8ff4a8509b318ce9c74f8074c199d506",
+    "amendment_semantics": "b4693d96ae4aa053716c1e5a592dd14abdb2370f61fe298e2cd88796400466bf",
+    "assertion_surface": "942abf5976afd4012b3b07fdeab01c6d84952d92b6d0cf6cd98b68b48b424461",
+    "placement_exhaustiveness": "4a1ccca4f894475981e55a39ba2f804d864f61b90f63f2bcef2a902eb2d4d88c",
+    "record_assurance": "d78e301021eb17f4dd1258aa67724d06cb9960b8f2bd3499638638e0e3a237a9",
+    "record_red_team": "6ffe755e22d1d449dcaf9b1da34f03a698ac73486cd127cf87acceea711ad6a8",
     "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44"
   },
   "marker_sha256": {
@@ -24,14 +24,14 @@
     "T2-RULES": "91bee6f6188b7c528e0e71118d3abffcc025b478ba71525f803b984ff5a08396",
     "T3-COURT-GATE": "cf483b6e458e409dd8e3b505cf5120428537daead5e0eaa73066d2c481633936",
     "T3-DERIVED": "ead3c828571357c6a78cd17663e32d120a15339f272cf1250cf38bee8488ef0c",
-    "T3-FACTS": "5f57152621a4241c85c1e01a9655c55e3ed41a1f413f32bf87a8a4395b71b7fe",
-    "T3-LEASE-RULE": "094ec7d7e767e20bf5e89ce98aeb2d699bf505e68c4becd6d077f5c8d6ba455b",
-    "T3-RULES": "345501f95423e431c94e13c5a5d661e8c4acd3ef8774983738290d3a66dd7398"
+    "T3-FACTS": "eeb1fecff2546d72ad89b77a1a4a1a5bd973189b727341f748b4713bd635078e",
+    "T3-LEASE-RULE": "66a49c36786f1cc60c6aaa9e332566859012e129b3924d9e53fbdb209b7f036b",
+    "T3-RULES": "eb6d07d536ef886d2e5295f053ff5e6108b0bf8eb105bbd948015edff5eccc42"
   },
   "stage_source_sha256": {
-    "T1": "1821eb0e28f005b5bc266cb89fdfec674a02807e102cf8f4c66f69911cb6611b",
-    "T2": "7d3dd17955ca2cdc0a472f6408462ca2f0509a6c53bf01821f25c94fb8d9d368",
-    "T3": "1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130"
+    "T1": "edc87c7d22b75d3e26cfa7f021d9eea21936d6d60245691daee46c13ddd781db",
+    "T2": "daa1a2f330c12f3fdad13a1a1db2b57082af08f6dfb2a8b6cf2628a15f885ce1",
+    "T3": "a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9"
   },
   "source_effect_binding": {
     "effective_version": "Constitution_Temporal",
@@ -747,8 +747,8 @@
         "continue(TA_Case, Epoch_Current).",
         "observe(Chronicle, TA_Case, Epoch_Current, RenewalScope).",
         "observe(TemporalReview, TA_Case, Epoch_Current, RenewalScope).",
-        "approves(Electorate, TA_Case).",
-        "approves(TemporalReview, TA_Case)."
+        "endorses(Electorate, TA_Case).",
+        "endorses(TemporalReview, TA_Case)."
       ],
       "checks": [
         {
@@ -914,8 +914,8 @@
         "continue(TA_Reused_Case, Epoch_Current).",
         "observe(Chronicle, TA_Reused_Case, Epoch_Current, RenewalScope).",
         "observe(TemporalReview, TA_Reused_Case, Epoch_Current, RenewalScope).",
-        "approves(Electorate, TA_Reused_Case).",
-        "approves(TemporalReview, TA_Reused_Case)."
+        "endorses(Electorate, TA_Reused_Case).",
+        "endorses(TemporalReview, TA_Reused_Case)."
       ],
       "checks": [
         {
@@ -986,8 +986,8 @@
         "observe(TemporalReview, TA_Wrong_Source_Binding, Constitution_Other, SourceVersionScope).",
         "observe(Chronicle, TA_Wrong_Source_Binding, Epoch_Current, SourceEpochScope).",
         "observe(TemporalReview, TA_Wrong_Source_Binding, Epoch_Current, SourceEpochScope).",
-        "approves(Electorate, TA_Wrong_Source_Case).",
-        "approves(TemporalReview, TA_Wrong_Source_Case)."
+        "endorses(Electorate, TA_Wrong_Source_Case).",
+        "endorses(TemporalReview, TA_Wrong_Source_Case)."
       ],
       "checks": [
         {
@@ -1049,8 +1049,8 @@
         "continue(TA_Self_Review_Case, Epoch_Current).",
         "observe(Chronicle, TA_Self_Review_Case, Epoch_Current, RenewalScope).",
         "observe(TemporalReview, TA_Self_Review_Case, Epoch_Current, RenewalScope).",
-        "approves(Electorate, TA_Self_Review_Case).",
-        "approves(TemporalReview, TA_Self_Review_Case)."
+        "endorses(Electorate, TA_Self_Review_Case).",
+        "endorses(TemporalReview, TA_Self_Review_Case)."
       ],
       "checks": [
         {
@@ -1122,8 +1122,8 @@
         "continue(TA_Stale_Case, Epoch_Previous).",
         "observe(Chronicle, TA_Stale_Case, Epoch_Previous, RenewalScope).",
         "observe(TemporalReview, TA_Stale_Case, Epoch_Previous, RenewalScope).",
-        "approves(Electorate, TA_Stale_Case).",
-        "approves(TemporalReview, TA_Stale_Case)."
+        "endorses(Electorate, TA_Stale_Case).",
+        "endorses(TemporalReview, TA_Stale_Case)."
       ],
       "checks": [
         {
@@ -2278,8 +2278,8 @@
         "continue(TA_Challenge_Case, Epoch_Current).",
         "observe(Chronicle, TA_Challenge_Case, Epoch_Current, RenewalScope).",
         "observe(TemporalReview, TA_Challenge_Case, Epoch_Current, RenewalScope).",
-        "approves(Electorate, TA_Challenge_Case).",
-        "approves(TemporalReview, TA_Challenge_Case).",
+        "endorses(Electorate, TA_Challenge_Case).",
+        "endorses(TemporalReview, TA_Challenge_Case).",
         "challenge(TA_Challenge_Subject, TA_Challenge_Case, TemporalReview)."
       ],
       "checks": [

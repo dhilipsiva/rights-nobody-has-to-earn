@@ -169,19 +169,19 @@ THREADED_FLOOR_LINE = "entitled(every person, event { eats($x) }).\n"
 TARGETLESS_APPEND = (
     "\n# Amendment-semantics candidate additions (generated, not enacted).\n"
     "suggest(Assembly, Amend_Targetless).\n"
-    "approves(Electorate, Amend_Targetless).\n"
+    "ratifies(Electorate, Amend_Targetless).\n"
 )
 MISDIRECT_APPEND = (
     "\n# Amendment-semantics candidate additions (generated, not enacted).\n"
     "suggest(Assembly, Amend_Misdirect).\n"
     "adjust(Amend_Misdirect, Art_Mint).\n"
-    "approves(Electorate, Amend_Misdirect).\n"
+    "ratifies(Electorate, Amend_Misdirect).\n"
 )
 SYNTAX_APPEND = (
     "\n# Amendment-semantics candidate additions (generated, not enacted).\n"
     "suggest(Assembly, Amend_Syntax).\n"
     "adjust(Amend_Syntax, Art_Syntax).\n"
-    "approves(Electorate, Amend_Syntax).\n"
+    "ratifies(Electorate, Amend_Syntax).\n"
 )
 ART_FLOOR_LABEL_APPEND = (
     "\n# Amendment-semantics candidate addition (generated, not enacted).\n"

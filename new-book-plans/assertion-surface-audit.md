@@ -25,8 +25,8 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `7688c03dbe3bac922ada1b22cd0ce9e6148e3688d6d9130fe2541c3be0331997`.
-- Authored-fact fingerprint: `16868f1fc40d24051bfcc1f4f02bb76757d4a646b829c0a09b93e84fd39d5f11`.
+- Authored-rule fingerprint: `e4b53eb03f209288457fa6124356ffe7bc3d363137ba3894157256b8e46251f8`.
+- Authored-fact fingerprint: `d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
 
@@ -83,44 +83,45 @@ channels. No exceptional channel exists in the current contract.
 | premise | tags | cheapest target | dispositions | direct readers | route fingerprint |
 | --- | --- | --- | --- | --- | --- |
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `approves` | amendment, democracy, public-power, time | `become` | patchable, external | positive `become`, positive `collide`, positive `correct` | `9915b8691afeed45` |
 | `at` | roster-person, standing, first-contact, adulthood, placement, record-integrity | `person` | patchable, external, deliberately_refused | negative `dwell`, positive `building`, positive `decide`, positive `dwell`, positive `person`, positive `prevents` | `4ed39fcb58fb931e` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `decide`, positive `err`, positive `false`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `bb508da41416e32a` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `decide`, positive `err`, positive `false`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `077f7057e8f4bdc4` |
 | `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
 | `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `6fa58bc4be130c53` |
 | `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `9d000cd29a2bee16` |
 | `carries` | epoch-carry, record-integrity, time, witness | `err` | patchable, external | negative `err`, positive `err`, positive `match` | `19621bd13b05a5cd` |
 | `challenge` | challenge, record-integrity, time | `collide` | patchable, external | positive `collide`, positive `err`, positive `obliged` | `f698abded904ad1c` |
 | `choose` | seating, public-body, democracy | `permits` | patchable, external, deliberately_refused | positive `authority`, positive `permits` | `1a1477d3ac30c864` |
-| `cite` | audit, case-binding, provenance, public-power, time | `collide` | patchable, external | positive `collide`, positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `related`, positive `reward` | `b74df56401b4f54a` |
+| `cite` | audit, case-binding, provenance, public-power, time | `collide` | patchable, external | positive `collide`, positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `related`, positive `reward` | `aacb6724db7bb610` |
 | `clear` | justice, release | `permits` | patchable, external, deliberately_refused | positive `permits` | `affd727ee37bc030` |
-| `continue` | case-binding, public-power, renewal, time | `collide` | patchable, external | positive `collide`, positive `concurrent`, positive `correct` | `505e9935faa35ca3` |
+| `continue` | case-binding, public-power, renewal, time | `collide` | patchable, external | positive `collide`, positive `concurrent`, positive `correct` | `b7de0ce64ec41c5f` |
 | `cruel` | justice, placement | `severe` | patchable, external | positive `severe` | `0093de3740303697` |
-| `date` | public-power, record-integrity, time, window | `time` | patchable, external | positive `collide`, positive `correct`, positive `time` | `07e156c91908a377` |
+| `date` | public-power, record-integrity, time, window | `time` | patchable, external | positive `collide`, positive `correct`, positive `time` | `13214c509302763c` |
 | `deceive` | justice, liberty | `defend` | patchable, external | negative `defend`, negative `false`, negative `reward`, positive `false` | `a4f72b9ecee3e1f4` |
+| `endorses` | public-power, time | `correct` | patchable, external | positive `collide`, positive `correct` | `b5c9d36cb2d09506` |
 | `family` | family, privacy, anti-substitution | `prevents` | patchable, external | positive `prevents` | `4c0ec69c70d09743` |
 | `forgive` | justice, epoch-carry | `clean` | patchable, external | positive `clean` | `4aec77f843480e11` |
 | `free` | release, time, justice | `prisoner` | patchable, external | negative `prisoner`, positive `person` | `90761d03f8b013b4` |
 | `hears` | delivery, accessibility | `learn` | patchable, external | positive `learn` | `74985a06768cd9ab` |
 | `home` | home, privacy, anti-substitution | `prevents` | patchable, external | positive `prevents` | `01c35f39cdc0b067` |
-| `injure` | justice, placement | `severe` | patchable, external | positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `severe` | `e91a338c6eda3e8c` |
-| `judge` | justice, audit, public-body | `reward` | patchable, external | positive `clean`, positive `correct`, positive `err`, positive `false`, positive `match`, positive `permits`, positive `prisoner`, positive `reward` | `66e13db045016d38` |
-| `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `29307709e75c2d44` |
+| `injure` | justice, placement | `severe` | patchable, external | positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `severe` | `260cd39a3f38a875` |
+| `judge` | justice, audit, public-body | `reward` | patchable, external | positive `clean`, positive `correct`, positive `err`, positive `false`, positive `match`, positive `permits`, positive `prisoner`, positive `reward` | `a63a90383a7ebcca` |
+| `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `4e3f1f3437d1e8e3` |
 | `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
 | `married` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `7ef6097705ac2859` |
-| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `err`, positive `match`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `succeed`, positive `time` | `5dfc1c12e584df77` |
+| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `err`, positive `match`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `succeed`, positive `time` | `8debd68e43b9b3c9` |
 | `parent` | audit, privacy, conflict | `false` | patchable, external | positive `false` | `316cc4529059bf17` |
-| `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `c47b9efbe78a749e` |
+| `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `cd0ddf58592a42a0` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` | `ae9c7cf556c7eb76` |
 | `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority`, positive `prevents` | `6c4ddcc62e4e5693` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
-| `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `e27be4808b3e69d4` |
+| `ratifies` | amendment, democracy, public-power | `become` | patchable, external | positive `become` | `f29f74a1c73f8eb0` |
+| `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `7c7b9e76b5f26c8f` |
 | `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `err`, positive `match` | `ee4885e9421cf030` |
 | `show` | liberty, public-body, record-integrity | `defend` | patchable, external, deliberately_refused | positive `defend` | `6f8d9509bc118699` |
 | `sibling` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `a66effae83ee434b` |
-| `suggest` | amendment, public-body | `become` | patchable, external | positive `become`, positive `false` | `c40d4481c5b33c85` |
+| `suggest` | amendment, public-body | `become` | patchable, external | positive `become`, positive `false` | `7b5fcdb8bd8342e6` |
 | `teaches` | delivery, recognition | `reward` | patchable, external | positive `learn`, positive `reward` | `a139a1576872b087` |
 | `work` | recognition, contribution | `reward` | patchable, external | positive `reward` | `2ff40e4e63270014` |
 
@@ -141,22 +142,6 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor`.
 - **Reviewed route fingerprint:** `b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106`.
-
-### `approves`
-
-- **Tuple claim:** The tuple asserts that a named public body approved an amendment or temporal renewal; it does not prove a docket, review, tally, certificate, case, scope, or writer.
-- **Claimed actor:** The first argument names the approving body; it does not authenticate that body as the writer.
-- **Current writer/authority:** Any fact-store writer can assert the approval outcome.
-- **Required writer/authority:** A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable democratic result or case-bound review decision; no single writer or reviewer controls availability.
-- **Current provenance:** The constitution treats each fact as an asserted outcome and verifies no writer, certificate, count, case review, independence, challenge, correction, or immutable source artifact.
-- **Required provenance:** A public, contestable result bound to the exact proposal or renewal, approving body, case and subject where applicable, legal basis, snapshot, and constitutional version.
-- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `approves(Electorate, Amend_Mint)`. The ordinary reform cannot derive the unread `become(_, Law)` label. Structural route: `approves` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
-- **Current challenge route:** No in-model recount, approval contest, correction, or reviewer-independence test exists. A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct either approval or make Appeals act.
-- **Required challenge route:** A public contest and independent review route tied to the exact tally or renewal certificate, with safe continuity for rights and no withholding-based extension of restrictive power.
-- **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Define the democratic ceiling and majority process`.
-- **Reviewed route fingerprint:** `9915b8691afeed4579c39723769080ae4ffd866bc72dcd44898af6cea07b3a49`.
 
 ### `at`
 
@@ -205,7 +190,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `bb508da41416e32a678e0963cd48df14d29ac201ee8886576884d465446b4597`.
+- **Reviewed route fingerprint:** `077f7057e8f4bdc4b0e94859b21651ebd4d41034348ab61eb8c6a45e78e13792`.
 
 ### `born`
 
@@ -319,7 +304,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** The subject can inspect and challenge the ground or case binding before an independent reviewer, with correction, continuity, escalation, and remedy.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/record-integrity-assurance-case.md::### RI-3 — Provenance, authenticity, and truth limits`.
-- **Reviewed route fingerprint:** `b74df56401b4f54a2c2bb7d2bd402d5b572f6d657564141b5a5f9abc0e3f5d05`.
+- **Reviewed route fingerprint:** `aacb6724db7bb6106c5013cee27e0d91f1c222be0e209f13a1068f5cec5a77a3`.
 
 ### `clear`
 
@@ -352,7 +337,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Notice, accessible subject or advocate contest, independent review, safe suspension, correction, escalation, and remedy with no renewal-by-silence.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `505e9935faa35ca35ac5253f49f78c8d2c0da55274aa8a55e43fcb51f39b624c`.
+- **Reviewed route fingerprint:** `b7de0ce64ec41c5f77cfd3b9495e3d8a97ef957716b025740239421b809c3e48`.
 
 ### `cruel`
 
@@ -384,7 +369,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Window and clock-source contest, independent correction, alternate time evidence, outage continuity, safe power suspension, escalation, and remedy.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `07e156c91908a377e540ac7dc7f10581c02aefb28d1afa52c18601e409cc9c09`.
+- **Reviewed route fingerprint:** `13214c509302763c55a39de65ce7bb531fe7c1a8355034b831dccb6e37caf27c`.
 
 ### `deceive`
 
@@ -401,6 +386,22 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `a4f72b9ecee3e1f46453b72b2d4264a676dc1ea5718688617c1aae8de824e268`.
+
+### `endorses`
+
+- **Tuple claim:** The tuple asserts that a named body endorsed a case-bound custody lease or disposition; it does not prove a case, scope, review, or writer.
+- **Claimed actor:** The first argument names the reviewing body; it does not authenticate that body as the writer.
+- **Current writer/authority:** Any fact-store writer can assert the endorsement outcome for either reviewing body.
+- **Required writer/authority:** A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable case-bound review decision; no single writer or reviewer controls availability.
+- **Current provenance:** The constitution treats each fact as an asserted outcome and verifies no writer, case review, independence, challenge, correction, or immutable source artifact.
+- **Required provenance:** A public, contestable review decision bound to the exact lease or disposition, reviewing body, case and subject, legal basis, snapshot, and constitutional version.
+- **Cheapest harmful assert:** 2 operation(s): assert `endorses(Electorate, Fresh_Lease)`; assert `endorses(TemporalReview, Fresh_Lease)`. A supplied lease gains both review endorsements without an internally verified case review. Structural route: `endorses` → `correct`. Evidence: `new-book-plans/constitution.nibli::endorses(Electorate, $lease) & endorses(TemporalReview, $lease)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `endorses(TemporalReview, Case_Adam)`. The case-bound lease cannot derive current active power; custody authority is withheld rather than reversed. Structural route: `endorses` → `correct`. Evidence: `new-book-plans/constitution.nibli::endorses(Electorate, $lease) & endorses(TemporalReview, $lease)`.
+- **Current challenge route:** A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct an endorsement or make Appeals act.
+- **Required challenge route:** A public contest and independent review route tied to the exact renewal decision, with safe continuity for rights and no withholding-based extension of restrictive power.
+- **Risk disposition:** patchable, external.
+- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`.
+- **Reviewed route fingerprint:** `b5c9d36cb2d095065308d47d10cf24e98cca7b395c2f50acad58395fd52fcbab`.
 
 ### `family`
 
@@ -496,7 +497,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Notice, hearing, appeal, and append-only correction of the factual finding.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
-- **Reviewed route fingerprint:** `e91a338c6eda3e8c6b155456211a65c32c684d38d6693f5eb8d3775be22acbd7`.
+- **Reviewed route fingerprint:** `260cd39a3f38a8757942ea8ad1e2da0909017a414a6a0660ce77ab4def76d46d`.
 
 ### `judge`
 
@@ -512,7 +513,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Route-specific appeal, conflict control, correction history, and independent review.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Write the Bodies specification`.
-- **Reviewed route fingerprint:** `66e13db045016d38cfe3aabacf3d914b0c344fc34ff5cea384218aa60edd266b`.
+- **Reviewed route fingerprint:** `a63a90383a7ebcca4e1fd07625ea34af503d566062ecb0a9fd532bca1e84437a`.
 
 ### `limit`
 
@@ -528,7 +529,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subject notice and challenge, independent review, correction, safe suspension, alternative continuity, escalation, and remedy.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `29307709e75c2d446cde0bc197f6b94231bc69249df856a6272e5eb5ac5caeeb`.
+- **Reviewed route fingerprint:** `4e3f1f3437d1e8e3107cca6920e9fef155fec49d740f4b86b5c65dc45dcb4503`.
 
 ### `list`
 
@@ -576,7 +577,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `5dfc1c12e584df7717fb2885dc3a48c488377d7f43675997ceaafedfef477549`.
+- **Reviewed route fingerprint:** `8debd68e43b9b3c94de923e310d93cc3a66df8d7ffb313ad4ce7c89fadf8910d`.
 
 ### `parent`
 
@@ -608,7 +609,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Public source inspection, subject challenge, independent effect and release review, linked correction, rollback prevention, safe suspension, escalation, and remedy.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `c47b9efbe78a749ef231d071256dae315035d833cb1e982c46a001abc2e69ada`.
+- **Reviewed route fingerprint:** `cd0ddf58592a42a0437d2995c5ede1a245c80cf7cbc3feb031d5a3ae6c8136a2`.
 
 ### `permanent`
 
@@ -675,6 +676,22 @@ channels. No exceptional channel exists in the current contract.
 - **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
 - **Reviewed route fingerprint:** `afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627`.
 
+### `ratifies`
+
+- **Tuple claim:** The tuple asserts that a named authority ratified an amendment proposal; it does not prove a docket, tally, certificate, or writer.
+- **Claimed actor:** The first argument names the ratifying authority; it does not authenticate that authority as the writer.
+- **Current writer/authority:** Any fact-store writer can assert the ratification outcome.
+- **Required writer/authority:** A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable democratic result; no single writer or reviewer controls availability.
+- **Current provenance:** The constitution treats each fact as an asserted outcome and verifies no writer, certificate, count, independence, challenge, correction, or immutable source artifact.
+- **Required provenance:** A public, contestable result bound to the exact proposal, ratifying authority, legal basis, snapshot, and constitutional version.
+- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `ratifies(Electorate, Fresh_Amendment)`. A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics. Structural route: `ratifies` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `ratifies(Electorate, Amend_Mint)`. The ordinary reform cannot derive the unread `become(_, Law)` label. Structural route: `ratifies` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Current challenge route:** No in-model recount, ratification contest, correction, or reviewer-independence test exists.
+- **Required challenge route:** A public contest and independent review route tied to the exact tally certificate, with safe continuity for rights.
+- **Risk disposition:** patchable, external.
+- **Owner:** `TODO.md::Define the democratic ceiling and majority process`.
+- **Reviewed route fingerprint:** `f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed`.
+
 ### `replace`
 
 - **Tuple claim:** One named snapshot replaces a named predecessor in the Chronicle lineage.
@@ -689,7 +706,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Public conflict notice, subject challenge, independently reviewed fork/replay resolution, append-only correction, safe continuity, recovery, and escalation when no successor arrives.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `e27be4808b3e69d4de66426d41d2499916d3981169bbfe35a1afa15030154374`.
+- **Reviewed route fingerprint:** `7c7b9e76b5f26c8f2ccacda3296897824209b86b4b03b939a8a78a319a7355e0`.
 
 ### `rotten`
 
@@ -748,13 +765,13 @@ channels. No exceptional channel exists in the current contract.
 - **Required writer/authority:** A constitutionally authorised, public docket process bound to exact proposal text.
 - **Current provenance:** No proposer, text hash, notice, jurisdiction, or docket history is represented.
 - **Required provenance:** Public proposal text, proposer, docket decision, notice, and append-only status history.
-- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `approves(Electorate, Fresh_Amendment)`. A proposal with no target or semantic review derives the unread `become(_, Law)` label. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
-- **Withholding/deletion harm:** 1 operation(s): delete `suggest(Assembly, Amend_Mint)`. The ordinary reform carrying a recorded approval entry cannot derive the unread `become(_, Law)` label; no candidate semantics were ever in the formal path. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Cheapest harmful assert:** 2 operation(s): assert `suggest(Assembly, Fresh_Amendment)`; assert `ratifies(Electorate, Fresh_Amendment)`. A proposal with no target or semantic review derives the unread `become(_, Law)` label. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)`.
+- **Withholding/deletion harm:** 1 operation(s): delete `suggest(Assembly, Amend_Mint)`. The ordinary reform carrying a recorded approval entry cannot derive the unread `become(_, Law)` label; no candidate semantics were ever in the formal path. Structural route: `suggest` → `become`. Evidence: `new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)`.
 - **Current challenge route:** No docket contest, correction, or target-truth review exists.
 - **Required challenge route:** Public notice, correction, challenge, and independent semantic review before approval.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor`.
-- **Reviewed route fingerprint:** `c40d4481c5b33c855551714786774e8178398f286ee46ad4cf4544ba905864d8`.
+- **Reviewed route fingerprint:** `7b5fcdb8bd8342e66d57bdf6f8ee69223268b7392a927a933bb1e221bae85dc3`.
 
 ### `teaches`
 

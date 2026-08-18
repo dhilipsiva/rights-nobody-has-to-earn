@@ -131,8 +131,8 @@ observe(TemporalReview, Case_Voss, Window_Custody, LimitScope).
 continue(Case_Voss, Epoch_Current).
 observe(Chronicle, Case_Voss, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Voss, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Voss).
-approves(TemporalReview, Case_Voss).
+endorses(Electorate, Case_Voss).
+endorses(TemporalReview, Case_Voss).
 
 ? prisoner(Voss).
 # => TRUE

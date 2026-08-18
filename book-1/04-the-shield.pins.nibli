@@ -185,8 +185,8 @@ observe(TemporalReview, Case_Zeno, Window_Custody, LimitScope).
 continue(Case_Zeno, Epoch_Current).
 observe(Chronicle, Case_Zeno, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Zeno, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Zeno).
-approves(TemporalReview, Case_Zeno).
+endorses(Electorate, Case_Zeno).
+endorses(TemporalReview, Case_Zeno).
 
 ? prisoner(Zeno).
 # => TRUE

@@ -179,8 +179,14 @@ out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and may falsify prose that describes the list.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
-[ "$n" = "40" ] && pass "evidence vocabulary is 40" \
-  || fail "evidence vocabulary is $n, not 40" "chapters 1, 3 and 5 describe the list; re-read them against it"
+# 2026-08-17: 40 -> 41. `approves` split into `ratifies` (amendment tally) and
+# `endorses` (case-bound custody review), so one name became two. Chapters 1, 3,
+# 5, 12 and 13 were re-read against the list: they describe the SENSE in
+# ordinary English ("the electorate approves it", "separate routes must approve
+# it") and never the relation name, which the jargon sweep guarantees, so no
+# prose claim moved with the split.
+[ "$n" = "41" ] && pass "evidence vocabulary is 41" \
+  || fail "evidence vocabulary is $n, not 41" "chapters 1, 3 and 5 describe the list; re-read them against it"
 
 # ── 2g. the dormant reader contract stays structural and privacy-minimal ─────
 # This is an artifact check. It is not R6's dedicated executable evidence gate,

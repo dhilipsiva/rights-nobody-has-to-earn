@@ -19,20 +19,20 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **80** | **39** | **349** | **6** |
+| computed from the constitution | **81** | **39** | **349** | **6** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 4 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
-| **0** | `adjust`, `approves`, `at`, `attack`, `authority` *(monotone cone)*, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `complete` *(monotone cone)*, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `equals`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `orderly` *(monotone cone)*, `parent`, `passport`, `permanent`, `public`, `put`, `related` *(monotone cone)*, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
+| **0** | `adjust`, `at`, `attack`, `authority` *(monotone cone)*, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `complete` *(monotone cone)*, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `orderly` *(monotone cone)*, `parent`, `passport`, `permanent`, `public`, `put`, `ratifies`, `related` *(monotone cone)*, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
 | **1** | `collide`, `defend`, `precede`, `severe` |
 | **2** | `correct`, `match`, `reference`, `succeed`, `time` |
 | **3** | `false`, `lose`, `permits` |
 | **4** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prevents`, `prisoner`, `reward`, **secure** |
 | **5** | `err`, `obliged`, `travel` |
 
-Evidence predicates (40), the complete list of what the world may report: `adjust`, `approves`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `parent`, `passport`, `permanent`, `public`, `put`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
+Evidence predicates (41), the complete list of what the world may report: `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `parent`, `passport`, `permanent`, `public`, `put`, `ratifies`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
 
 Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is not evidence, since nobody writes it.
 <!-- END GENERATED: stratification -->

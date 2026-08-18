@@ -475,7 +475,6 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | writable premise | record class | class title |
 | --- | --- | --- |
 | `adjust` | `RC-1` | Constitutional-change records |
-| `approves` | `RC-1` | Constitutional-change records |
 | `at` | `RC-2` | Standing, status, and public-power records |
 | `attack` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `authorized` | `RC-6` | Temporal transition, order, and review records |
@@ -491,6 +490,7 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | `cruel` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `date` | `RC-6` | Temporal transition, order, and review records |
 | `deceive` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `endorses` | `RC-6` | Temporal transition, order, and review records |
 | `family` | `RC-4` | Private relationship and location records |
 | `forgive` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `free` | `RC-2` | Standing, status, and public-power records |
@@ -508,6 +508,7 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | `person` | `RC-2` | Standing, status, and public-power records |
 | `public` | `RC-2` | Standing, status, and public-power records |
 | `put` | `RC-3` | Case evidence, findings, filings, and remedy records |
+| `ratifies` | `RC-1` | Constitutional-change records |
 | `replace` | `RC-6` | Temporal transition, order, and review records |
 | `rotten` | `RC-2` | Standing, status, and public-power records |
 | `show` | `RC-3` | Case evidence, findings, filings, and remedy records |
@@ -703,7 +704,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `b31eaad820b67d6cd4848d3be36921cbc7f84632d37708820035fd6f526d20f0`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `942abf5976afd4012b3b07fdeab01c6d84952d92b6d0cf6cd98b68b48b424461`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

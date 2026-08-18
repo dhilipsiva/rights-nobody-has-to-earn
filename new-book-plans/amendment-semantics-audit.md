@@ -60,19 +60,19 @@ is reviewed in the JSON source.
 
 | case | operation | before SHA-256 | after SHA-256 | candidate SHA-256 |
 | --- | --- | --- | --- | --- |
-| `AS-01` | byte-identical control | — | — | `1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130` |
-| `AS-02` | byte-identical control | — | — | `1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130` |
-| `AS-03` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `b1a994ad3e6ec5b6e85f166efc4e2814f2c8824b4abc7f439fcadda1a8bc7bda` |
-| `AS-03` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `500c23fc1f95176741be1c6530219a31f5a73ceafa190d313407cadca5bc0359` | `↳` |
-| `AS-04` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `b3a784dab0f6004e9b16e51f8ba1e0ab816870d8961302348d0048de195a37d4` |
-| `AS-04` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `e5d1179bbe8691639d0a688d6630fe207b1d6b26307c8c036cb64128a2d77b7b` | `↳` |
-| `AS-05` | `replace_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `95caa2ea756506072ceccabedec38b5bd2f97a233482466c11f48e0cd3083e20` | `88f65cdd6992633061e73a2822bcc2ce9d5c25cc788f54dc41a6ac22bbe3f5c7` |
-| `AS-05` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `7cde71bda5c8b68adae8922c26bd72780abe562e29fd586113f529ca9a0df00e` | `↳` |
-| `AS-06` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `d35f66b5b67a8c371fc98ebefb30c829df95a437e1601508cf9d4d6d5d262c8a` | `486220a50cd4e038f4f14e92df26a0dc0354a0780221ef4d5ed43b18e49e3dae` |
-| `AS-07` | byte-identical control | — | — | `1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130` |
-| `AS-08` | `replace_exact` | `8c266bf505ed1c39691c10e34d6b50f266cd5a293b2d246977cf1cf2a8953c09` | `d5117c777f339747fd8a0a1a332ad7e97c3c5d9f79f7a3851040896c285358fa` | `c2e2676b99bfb0f92d359df2361eefd06fdff4707764909f1fc753e44d338836` |
+| `AS-01` | byte-identical control | — | — | `a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9` |
+| `AS-02` | byte-identical control | — | — | `a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9` |
+| `AS-03` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `6c3944bf29619b0e181e5862f238163a5bd223f72fba2737681d98992f53d742` |
+| `AS-03` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `21cff1413a2b4f3caff42d29fe106fab1dd810985b09e9564db20e8828107dd6` | `↳` |
+| `AS-04` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `b362301ed4470fb5a387e13fc6ce4d63aa63f5fbe27cf731007f3d3d7364a67b` |
+| `AS-04` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `6b65ab050b147e8e0009d57942c95e32245fdd29c1b2166420b404e345c24a89` | `↳` |
+| `AS-05` | `replace_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `95caa2ea756506072ceccabedec38b5bd2f97a233482466c11f48e0cd3083e20` | `c75aed5bb4eb9c39aa92b9b5d38ec6c7b3d3a8b4a995d5d0371fe6d3838518a5` |
+| `AS-05` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `de66f9e974fa6ba10132ffdc4757ed12027f71867259b264aec62377bb8a26af` | `↳` |
+| `AS-06` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `d35f66b5b67a8c371fc98ebefb30c829df95a437e1601508cf9d4d6d5d262c8a` | `995fc58846f8b7dfd645a533a9a3a70486066b00fdff147bc68e7488639e3b8f` |
+| `AS-07` | byte-identical control | — | — | `a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9` |
+| `AS-08` | `replace_exact` | `8c266bf505ed1c39691c10e34d6b50f266cd5a293b2d246977cf1cf2a8953c09` | `d5117c777f339747fd8a0a1a332ad7e97c3c5d9f79f7a3851040896c285358fa` | `3570b673b6ede7b91607ef10a1bb72d68a03719fda767161af60be6916f35d7d` |
 | `AS-08` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `1bf91264fb9349375d512dcc6f604a9c10e32242fbdf665ba7ae714a0e592a1c` | `↳` |
-| `AS-09` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `a7543354e67aea9180aed04b3a03ac6707e20ea61ce935d3799952567a447e0a` |
+| `AS-09` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `73210c135a510624beb99077aa79a4d471bb4fa25ef003374978501e4f42b86e` |
 
 ## Executable cases
 
@@ -112,7 +112,7 @@ with it in the same full-candidate process.
 - **Label verdict:** `passing_label` — A docket and approval with no `adjust` fact still receive the passing label.
 - **Source effect:** `direct_deletion` — The candidate source directly deletes the food entitlement while Article 9 sees no target at all.
 - **Protected/adverse consequence:** The food entitlement disappears and the former anti-sanction rule shape becomes loadable.
-- **Mutation contract:** `19da4c79a556d71b7b9131f6a9b599127f2494dffe69d6bd0123552ac6171fa5`
+- **Mutation contract:** `e52d60131b46210ec636eee54512b4c0312de125bdb65633e73487069b65bc16`
 
 | check | expected | purpose |
 | --- | --- | --- |
@@ -130,7 +130,7 @@ with it in the same full-candidate process.
 - **Label verdict:** `passing_label` — The proposal declares only the unregistered Art_Mint label and receives the passing label.
 - **Source effect:** `direct_deletion` — The candidate source directly deletes the food entitlement despite its harmless declared target.
 - **Protected/adverse consequence:** The food entitlement disappears and the former anti-sanction rule shape becomes loadable.
-- **Mutation contract:** `e92a2f13047b2970dd07dfc1a691ac984bd63b12bdf29edc16a7d57142b52de0`
+- **Mutation contract:** `fe156cd24bae96eaf28a05f2d3804aa286fc7fd5838f45d6ff41d93ac2cd91f1`
 
 | check | expected | purpose |
 | --- | --- | --- |
@@ -149,7 +149,7 @@ with it in the same full-candidate process.
 - **Label verdict:** `passing_label` — A proposal labelled as syntax receives the passing label.
 - **Source effect:** `direct_replacement` — A one-line arity-shape replacement removes the food promise while retaining the engine's anti-sanction refusal.
 - **Protected/adverse consequence:** The reader-visible floor promise disappears even though the structural refusal still fires.
-- **Mutation contract:** `50340dcade09d8b6e024bb32a5c2770e425eca5024ae3004b321a7392562ebfa`
+- **Mutation contract:** `3736b232fff93fde2467bc640ed44c45a54f54d24a08a221fea9d8447eef3414`
 
 | check | expected | purpose |
 | --- | --- | --- |
@@ -252,9 +252,9 @@ Remaining boundary: Semantic entrenchment requires an external exact-diff and ef
 ## Maintenance
 
 - Reviewed source: `new-book-plans/amendment-semantics-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `1b30cc756bbb77000701d7ce398c4d5a2467108c3b26b6630177dce4eb9ab130`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `b31eaad820b67d6cd4848d3be36921cbc7f84632d37708820035fd6f526d20f0`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `aa6baaded73ed98ced32e34d7c9b6aa5add561fb40ffbb64abc1d18846c09576`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `942abf5976afd4012b3b07fdeab01c6d84952d92b6d0cf6cd98b68b48b424461`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `d78e301021eb17f4dd1258aa67724d06cb9960b8f2bd3499638638e0e3a237a9`.
 - Reviewed subprocess timeout: `60` seconds for every isolated case, sabotage, and live seam.
 - Bound input bytes are read once, decoded strictly, and hashed without newline translation; constitution CR bytes are refused and candidates are written as exact UTF-8 bytes.
 - Existing inputs must have distinct device/inode identities; the generated output must be a single-link regular file distinct from every input.

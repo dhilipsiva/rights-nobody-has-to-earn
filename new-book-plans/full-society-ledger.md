@@ -5,7 +5,7 @@
 
 **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-17-mature-reservation-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-17-approves-split-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -725,7 +725,7 @@ Coverage-family drafting gate:
 
 | Family | State | Powers / effects | Formal statements | Drafting block |
 | --- | --- | ---: | ---: | --- |
-| FS-CVF-001 Existing constitutional kernel | prose-landed | 0 / 0 | 378 | Any changed or unassigned formal statement fails before generation; this historical kernel gains no new power or operational claim. |
+| FS-CVF-001 Existing constitutional kernel | prose-landed | 0 / 0 | 379 | Any changed or unassigned formal statement fails before generation; this historical kernel gains no new power or operational claim. |
 | FS-CVF-002 Implemented T1, T2, and T3 temporal family | prose-landed | 1 / 0 | 266 | The retained T3 path stays case, source, lease, and window bound; no other power may borrow its record. |
 | FS-CVF-003 State Form And Political Membership coverage batch | coverage-ready | 51 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
 | FS-CVF-004 Time Model coverage batch | coverage-ready | 0 / 0 | 0 | Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready. |
@@ -3197,7 +3197,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 24; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 25; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -3225,8 +3225,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 24; curre
 | FS-SAU-22 | fs-ledger-2026-08-17-bodies-specification-v2 | `683e2f89e3ca8912c5a0f4542f5b527ec3d56a6ce0ad9623d6a169e874fc3365` | 2026-08-17T09:15:00Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-23 | fs-ledger-2026-08-17-bodies-specification-v2 | `683e2f89e3ca8912c5a0f4542f5b527ec3d56a6ce0ad9623d6a169e874fc3365` | 2026-08-17T16:10:00Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-24 | fs-ledger-2026-08-17-mature-reservation-v1 | `c572e204354c897c1f469340fec5ee0138d58647ec43bfa8601578e0eb6f5fce` | 2026-08-17T18:20:00Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-25 | fs-ledger-2026-08-17-approves-split-v1 | `ac1a7539e907d0ba35fe5bb4d7244457512e97afbe17825c80e30fe96331f247` | 2026-08-17T21:05:00Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `c572e204354c897c1f469340fec5ee0138d58647ec43bfa8601578e0eb6f5fce`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `ac1a7539e907d0ba35fe5bb4d7244457512e97afbe17825c80e30fe96331f247`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

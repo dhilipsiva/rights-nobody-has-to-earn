@@ -73,7 +73,8 @@
 # **"What counts as evidence" and "what may be written" are different
 # sets**, and `person` is the whole of the difference — which is exactly
 # what chapter 1 says when it puts personhood on its list.
-admits("adjust").     admits("approves").   admits("attack").
+admits("adjust").     admits("attack").
+admits("ratifies").   admits("endorses").
 admits("broken").     admits("capture").    admits("choose").
 admits("cite").       admits("clear").      admits("cruel").
 admits("deceive").    admits("family").     admits("forgive").
@@ -1475,7 +1476,7 @@ all $lease: all $first_case: all $first_window: all $second_case: all $second_wi
 all $lease: all $first_case: all $first_window: all $second_case: all $second_window: limit($lease, $first_case, $first_window) & observe(Chronicle, $lease, $first_window, LimitScope) & observe(TemporalReview, $lease, $first_window, LimitScope) & limit($lease, $second_case, $second_window) & observe(Chronicle, $lease, $second_window, LimitScope) & observe(TemporalReview, $lease, $second_window, LimitScope) & ~($first_window = $second_window) -> collide($lease, LeaseBinding).
 all $lease: all $first: all $second: continue($lease, $first) & observe(Chronicle, $lease, $first, RenewalScope) & observe(TemporalReview, $lease, $first, RenewalScope) & continue($lease, $second) & observe(Chronicle, $lease, $second, RenewalScope) & observe(TemporalReview, $lease, $second, RenewalScope) & ~($first = $second) -> collide($lease, LeaseBinding).
 all $subject: all $lease: all $case: challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) -> collide($lease, LeaseSuspended).
-all $disposition: all $lease: authorized($disposition, LawfulDisposition, $lease) & complete($disposition, DispositionKindScope) & observe(Chronicle, $disposition, LawfulDisposition, DispositionKindScope) & observe(TemporalReview, $disposition, LawfulDisposition, DispositionKindScope) & complete($disposition, DispositionLeaseScope) & observe(Chronicle, $disposition, $lease, DispositionLeaseScope) & observe(TemporalReview, $disposition, $lease, DispositionLeaseScope) & approves(Electorate, $disposition) & approves(TemporalReview, $disposition) -> collide($lease, LeaseSuspended).
+all $disposition: all $lease: authorized($disposition, LawfulDisposition, $lease) & complete($disposition, DispositionKindScope) & observe(Chronicle, $disposition, LawfulDisposition, DispositionKindScope) & observe(TemporalReview, $disposition, LawfulDisposition, DispositionKindScope) & complete($disposition, DispositionLeaseScope) & observe(Chronicle, $disposition, $lease, DispositionLeaseScope) & observe(TemporalReview, $disposition, $lease, DispositionLeaseScope) & endorses(Electorate, $disposition) & endorses(TemporalReview, $disposition) -> collide($lease, LeaseSuspended).
 
 # <T3-LEASE-RULE-BEGIN>
 # The lease is case-, power-, holder-, subject-, judgment-, victim-, source-,
@@ -1483,7 +1484,7 @@ all $disposition: all $lease: authorized($disposition, LawfulDisposition, $lease
 # the current schedule, and neither may be the power holder. A lease is a
 # permission to exercise one restrictive power, never a property of or score
 # about the person.
-all $lease: all $case: all $subject: all $victim: all $window: all $current: all $end: all $previous: all $binding: succeed($lease, PowerBound) & authorized($lease, ActiveCustody, $case) & observe(Chronicle, $lease, ActiveCustody, PowerScope) & observe(TemporalReview, $lease, ActiveCustody, PowerScope) & observe(Chronicle, $lease, $case, CaseBindingScope) & observe(TemporalReview, $lease, $case, CaseBindingScope) & related($case, CaseBound) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & judge(Court, $subject) & injure($subject, $victim) & observe(Chronicle, $case, CourtJudgment, JudgmentScope) & observe(TemporalReview, $case, CourtJudgment, JudgmentScope) & observe(Chronicle, $case, $victim, InjuryVictimScope) & observe(TemporalReview, $case, $victim, InjuryVictimScope) & limit($lease, $case, $window) & orderly($lease, WindowBound) & observe(Chronicle, $lease, $window, LimitScope) & observe(TemporalReview, $lease, $window, LimitScope) & continue($lease, $current) & concurrent($lease, RenewalBound) & observe(Chronicle, $lease, $current, RenewalScope) & observe(TemporalReview, $lease, $current, RenewalScope) & ~collide($case, CaseBinding) & ~collide($lease, LeaseBinding) & ~collide($lease, LeaseSuspended) & passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & reference($binding, SourceBound) & ~collide($binding, SourceBinding) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & approves(Electorate, $lease) & approves(TemporalReview, $lease) & date($window, $current, $end, TimeService) & time($window, ReviewedInterval) & ~collide($window, WindowDefinition) & ~collide($window, WindowOrder) & observe(Chronicle, $window, $current, WindowStartScope) & observe(TemporalReview, $window, $current, WindowStartScope) & observe(Chronicle, $window, $end, WindowEndScope) & observe(TemporalReview, $window, $end, WindowEndScope) & precede($current, $end, EventPath) & precede($current, $end, RecordPath) & replace($current, $previous, Chronicle) & succeed($current, TerminalTransition) -> correct($lease, ActivePower).
+all $lease: all $case: all $subject: all $victim: all $window: all $current: all $end: all $previous: all $binding: succeed($lease, PowerBound) & authorized($lease, ActiveCustody, $case) & observe(Chronicle, $lease, ActiveCustody, PowerScope) & observe(TemporalReview, $lease, ActiveCustody, PowerScope) & observe(Chronicle, $lease, $case, CaseBindingScope) & observe(TemporalReview, $lease, $case, CaseBindingScope) & related($case, CaseBound) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & judge(Court, $subject) & injure($subject, $victim) & observe(Chronicle, $case, CourtJudgment, JudgmentScope) & observe(TemporalReview, $case, CourtJudgment, JudgmentScope) & observe(Chronicle, $case, $victim, InjuryVictimScope) & observe(TemporalReview, $case, $victim, InjuryVictimScope) & limit($lease, $case, $window) & orderly($lease, WindowBound) & observe(Chronicle, $lease, $window, LimitScope) & observe(TemporalReview, $lease, $window, LimitScope) & continue($lease, $current) & concurrent($lease, RenewalBound) & observe(Chronicle, $lease, $current, RenewalScope) & observe(TemporalReview, $lease, $current, RenewalScope) & ~collide($case, CaseBinding) & ~collide($lease, LeaseBinding) & ~collide($lease, LeaseSuspended) & passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & reference($binding, SourceBound) & ~collide($binding, SourceBinding) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & endorses(Electorate, $lease) & endorses(TemporalReview, $lease) & date($window, $current, $end, TimeService) & time($window, ReviewedInterval) & ~collide($window, WindowDefinition) & ~collide($window, WindowOrder) & observe(Chronicle, $window, $current, WindowStartScope) & observe(TemporalReview, $window, $current, WindowStartScope) & observe(Chronicle, $window, $end, WindowEndScope) & observe(TemporalReview, $window, $end, WindowEndScope) & precede($current, $end, EventPath) & precede($current, $end, RecordPath) & replace($current, $previous, Chronicle) & succeed($current, TerminalTransition) -> correct($lease, ActivePower).
 # <T3-LEASE-RULE-END>
 
 all $lease: correct($lease, ActivePower) -> match($lease, ActivePower).
@@ -1504,8 +1505,13 @@ all $x: all $entry: err($x, TemporalDispute) & challenge($x, $entry, TemporalRev
 
 # ─── Article 9 [v0.2 NEW]: Amendment ──────────────────────────────
 # This article classifies recorded proposals; it does not apply a source
-# change. suggest(Assembly, m) dockets a proposal; approves(Electorate, m)
+# change. suggest(Assembly, m) dockets a proposal; ratifies(Electorate, m)
 # is an asserted outcome intended to carry an externally certified tally.
+# [2026-08-17] `ratifies` replaces the amendment half of `approves`, which
+# carried a democratic tally outcome and a case-bound custody review at one
+# arity, told apart only by which constant sat in place one. An approval
+# written by an amendment writer and one written by a custody reviewer were
+# indistinguishable as data; they are now different relations.
 # The counting arithmetic is outside this model, and no rule here authenticates
 # the writer, certificate, recount, challenge, or correction. adjust(m, t) is
 # the proposal's own
@@ -1536,7 +1542,7 @@ all $x: all $entry: err($x, TemporalDispute) & challenge($x, $entry, TemporalRev
 # Art_Entrench still fail to derive become, while the ordinary proposal does.
 # No new vocabulary; the docket entry was always the missing conjunct.
 all $m: all $t: suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m).
-all $m: suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law).
+all $m: suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law).
 permanent(Art_Floor).
 permanent(Art_Person).
 permanent(Art_Entrench).
@@ -1768,8 +1774,8 @@ observe(TemporalReview, Case_Adam, Window_Custody, LimitScope).
 continue(Case_Adam, Epoch_Current).
 observe(Chronicle, Case_Adam, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Adam, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Adam).
-approves(TemporalReview, Case_Adam).
+endorses(Electorate, Case_Adam).
+endorses(TemporalReview, Case_Adam).
 
 cite(Court, Case_Hano, Hano).
 observe(Chronicle, Case_Hano, Hano, CaseScope).
@@ -1791,8 +1797,8 @@ observe(TemporalReview, Case_Hano, Window_Custody, LimitScope).
 continue(Case_Hano, Epoch_Current).
 observe(Chronicle, Case_Hano, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Hano, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Hano).
-approves(TemporalReview, Case_Hano).
+endorses(Electorate, Case_Hano).
+endorses(TemporalReview, Case_Hano).
 
 cite(Court, Case_Nia, Nia).
 observe(Chronicle, Case_Nia, Nia, CaseScope).
@@ -1814,8 +1820,8 @@ observe(TemporalReview, Case_Nia, Window_Custody, LimitScope).
 continue(Case_Nia, Epoch_Current).
 observe(Chronicle, Case_Nia, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Nia, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Nia).
-approves(TemporalReview, Case_Nia).
+endorses(Electorate, Case_Nia).
+endorses(TemporalReview, Case_Nia).
 
 cite(Court, Case_Lalo, Lalo).
 observe(Chronicle, Case_Lalo, Lalo, CaseScope).
@@ -1837,8 +1843,8 @@ observe(TemporalReview, Case_Lalo, Window_Custody, LimitScope).
 continue(Case_Lalo, Epoch_Current).
 observe(Chronicle, Case_Lalo, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Lalo, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Lalo).
-approves(TemporalReview, Case_Lalo).
+endorses(Electorate, Case_Lalo).
+endorses(TemporalReview, Case_Lalo).
 
 cite(Court, Case_Nando, Nando).
 observe(Chronicle, Case_Nando, Nando, CaseScope).
@@ -1860,8 +1866,8 @@ observe(TemporalReview, Case_Nando, Window_Custody, LimitScope).
 continue(Case_Nando, Epoch_Current).
 observe(Chronicle, Case_Nando, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Nando, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Nando).
-approves(TemporalReview, Case_Nando).
+endorses(Electorate, Case_Nando).
+endorses(TemporalReview, Case_Nando).
 
 cite(Court, Case_Rebel, Rebel).
 observe(Chronicle, Case_Rebel, Rebel, CaseScope).
@@ -1883,8 +1889,8 @@ observe(TemporalReview, Case_Rebel, Window_Custody, LimitScope).
 continue(Case_Rebel, Epoch_Current).
 observe(Chronicle, Case_Rebel, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Rebel, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Rebel).
-approves(TemporalReview, Case_Rebel).
+endorses(Electorate, Case_Rebel).
+endorses(TemporalReview, Case_Rebel).
 
 cite(Court, Case_Don, Don).
 observe(Chronicle, Case_Don, Don, CaseScope).
@@ -1906,8 +1912,8 @@ observe(TemporalReview, Case_Don, Window_Custody, LimitScope).
 continue(Case_Don, Epoch_Current).
 observe(Chronicle, Case_Don, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Don, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Don).
-approves(TemporalReview, Case_Don).
+endorses(Electorate, Case_Don).
+endorses(TemporalReview, Case_Don).
 
 cite(Court, Case_Sly, Sly).
 observe(Chronicle, Case_Sly, Sly, CaseScope).
@@ -1929,8 +1935,8 @@ observe(TemporalReview, Case_Sly, Window_Custody, LimitScope).
 continue(Case_Sly, Epoch_Current).
 observe(Chronicle, Case_Sly, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Sly, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Sly).
-approves(TemporalReview, Case_Sly).
+endorses(Electorate, Case_Sly).
+endorses(TemporalReview, Case_Sly).
 
 cite(Court, Case_Kel, Kel).
 observe(Chronicle, Case_Kel, Kel, CaseScope).
@@ -1952,8 +1958,8 @@ observe(TemporalReview, Case_Kel, Window_Custody, LimitScope).
 continue(Case_Kel, Epoch_Current).
 observe(Chronicle, Case_Kel, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Kel, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Kel).
-approves(TemporalReview, Case_Kel).
+endorses(Electorate, Case_Kel).
+endorses(TemporalReview, Case_Kel).
 
 cite(Court, Case_Rex, Rex).
 observe(Chronicle, Case_Rex, Rex, CaseScope).
@@ -1975,8 +1981,8 @@ observe(TemporalReview, Case_Rex, Window_Custody, LimitScope).
 continue(Case_Rex, Epoch_Current).
 observe(Chronicle, Case_Rex, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Rex, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Rex).
-approves(TemporalReview, Case_Rex).
+endorses(Electorate, Case_Rex).
+endorses(TemporalReview, Case_Rex).
 
 cite(Court, Case_Ruk, Ruk).
 observe(Chronicle, Case_Ruk, Ruk, CaseScope).
@@ -1998,8 +2004,8 @@ observe(TemporalReview, Case_Ruk, Window_Custody, LimitScope).
 continue(Case_Ruk, Epoch_Current).
 observe(Chronicle, Case_Ruk, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Ruk, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Ruk).
-approves(TemporalReview, Case_Ruk).
+endorses(Electorate, Case_Ruk).
+endorses(TemporalReview, Case_Ruk).
 
 # <T3-FACTS-END>
 
@@ -2200,13 +2206,13 @@ at(Ruk, PlacementHome).
 # No line here says what source effect any proposal would have.
 suggest(Assembly, Amend_Floor).
 adjust(Amend_Floor, Art_Floor).
-approves(Electorate, Amend_Floor).
+ratifies(Electorate, Amend_Floor).
 suggest(Assembly, Amend_Mint).
 adjust(Amend_Mint, Art_Mint).
-approves(Electorate, Amend_Mint).
+ratifies(Electorate, Amend_Mint).
 suggest(Assembly, Amend_Meta).
 adjust(Amend_Meta, Art_Entrench).
-approves(Electorate, Amend_Meta).
+ratifies(Electorate, Amend_Meta).
 
 # ─── Adversarial pins v0.3: the floor firewall ────────────────────
 # POSITIVE pins — queryable, and they belong in the pinned-verdict file:
@@ -2241,10 +2247,15 @@ approves(Electorate, Amend_Meta).
 # fit(X, Homestay)    — derived home-confinement eligibility.
 # err(X, Placement)   — derived placement breach: asserted home without
 #                       derived eligibility.
-# suggest / approves / adjust / permanent / become(M, Law)
-#                — amendment labels (Art 9). approves is an asserted outcome;
+# suggest / ratifies / adjust / permanent / become(M, Law)
+#                — amendment labels (Art 9). ratifies is an asserted outcome;
 #                  permanent is the declared-target label register. No rule
 #                  authenticates a tally, binds an effect, or applies a change.
+#                  Corpus: ca'irzau.
+# endorses(B, X)  — a case-bound review decision on a custody lease or
+#                  disposition (T3). Asserted, never derived. Held apart from
+#                  ratifies so an amendment tally and a custody review cannot
+#                  be confused in the record. Corpus: fitytu'i.
 # ─── v0.3 additions ───
 # believe(X)     — floor right, the inner forum (Art 1). Corpus: krici.
 #                  Appears in no rule body, per the floor invariant.

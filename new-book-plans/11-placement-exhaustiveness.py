@@ -952,8 +952,8 @@ def t3_prisoner_fixture_facts(
     )
     facts.extend(
         [
-            f"approves(Electorate, {prerequisites.lease}).",
-            f"approves(TemporalReview, {prerequisites.lease}).",
+            f"endorses(Electorate, {prerequisites.lease}).",
+            f"endorses(TemporalReview, {prerequisites.lease}).",
         ]
     )
     return facts

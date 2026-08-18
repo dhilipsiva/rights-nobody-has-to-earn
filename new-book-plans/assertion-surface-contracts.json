@@ -19,16 +19,15 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "7688c03dbe3bac922ada1b22cd0ce9e6148e3688d6d9130fe2541c3be0331997",
-  "facts_sha256": "16868f1fc40d24051bfcc1f4f02bb76757d4a646b829c0a09b93e84fd39d5f11",
+  "rules_sha256": "e4b53eb03f209288457fa6124356ffe7bc3d363137ba3894157256b8e46251f8",
+  "facts_sha256": "d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
-    "approves": "9915b8691afeed4579c39723769080ae4ffd866bc72dcd44898af6cea07b3a49",
     "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
     "authority": "3db0ce4e56f1619d7ab36841d4a9af3d4f036f0e6f002d47dfbd22180785e30e",
-    "authorized": "bb508da41416e32a678e0963cd48df14d29ac201ee8886576884d465446b4597",
-    "become": "efe26b83f9ccb2aa21ba1c3ef48b9b07604db51cabe14ea70b295b730cc4c86e",
+    "authorized": "077f7057e8f4bdc4b0e94859b21651ebd4d41034348ab61eb8c6a45e78e13792",
+    "become": "4267335bc5356d9b87bbaed0feeafc589728043818ecf5cb6757cbeec3ca05d4",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
     "broken": "6fa58bc4be130c534a763f58d08bd1414751f290ceb14958c591d4c158fd88b6",
@@ -37,25 +36,26 @@
     "carries": "19621bd13b05a5cd99a3d77d86a5e269ab25f7d16c3890bb93c46ea8485941fe",
     "challenge": "f698abded904ad1ca0e541f8ec8f4f9d8df3fce2b0cb1f9bc47cfb2b5c9be4a9",
     "choose": "1a1477d3ac30c8646aacc5277f4db15806a5eb1b195e06a2f30050ffd86df313",
-    "cite": "b74df56401b4f54a2c2bb7d2bd402d5b572f6d657564141b5a5f9abc0e3f5d05",
+    "cite": "aacb6724db7bb6106c5013cee27e0d91f1c222be0e209f13a1068f5cec5a77a3",
     "clean": "8c4fa6ea07e9fadc34004db14dc81b67de9b0c1a4c6aa7dc77a3f56a929066f7",
     "clear": "affd727ee37bc0305631a0e1a3b9b75b28927467957d9f35ec0ca3b7e0dd7978",
-    "collide": "ec8b62d660126246242c63d06ff3ae4878c77b48a720ed47b8d834f22f0adf1c",
-    "complete": "8f53934bfa758173f157588b9bf8b340ab488265216c8684edf1790b0ea82173",
-    "concurrent": "612c2ceba39f3609b39d432ee297ce4b4e2650fc4dd11c231e961689dbaf01f9",
-    "continue": "505e9935faa35ca35ac5253f49f78c8d2c0da55274aa8a55e43fcb51f39b624c",
-    "correct": "97826cff100e32232c3175e869ccea1530c97b00d67603c540419cda6b313b62",
+    "collide": "57a7ae8591c8202522e5578fcf49e311c4bf3f2eebe7d5ca61174cc8dc1a888b",
+    "complete": "ffc08df609f81d46ef8359bf1acd1744c3b58f4e3f06af952fbdff339732a929",
+    "concurrent": "239a163bccf7deec1f62e9cad53c1ba5f03af2d4c52c616a321c4bcf0726c6c7",
+    "continue": "b7de0ce64ec41c5f77cfd3b9495e3d8a97ef957716b025740239421b809c3e48",
+    "correct": "e3001e25bfd9f28c2f552de2bb597b15526ea2c1f400cb4b5edb927a84277c3c",
     "cruel": "0093de374030369768dc6db9042a74890cb39f8f7025dde425d00888572ad50a",
-    "date": "07e156c91908a377e540ac7dc7f10581c02aefb28d1afa52c18601e409cc9c09",
+    "date": "13214c509302763c55a39de65ce7bb531fe7c1a8355034b831dccb6e37caf27c",
     "deceive": "a4f72b9ecee3e1f46453b72b2d4264a676dc1ea5718688617c1aae8de824e268",
     "decide": "944be52dcac568ed0cfb8969ede8a44e2668190e2fbfe058ceab58af39234f66",
     "defend": "ebbf22b30f5700ddb76b2fa1afe988ee8ee6f455feb575fb7173d8db3b3d36c5",
     "dwell": "040e09bbcd3af95a073f9e0d65f1ff038fc823e26cf54cf98150be641cdf3db3",
     "eats": "ec5c441c4ad53c3180aea225ef200b4834c1ede4c21879d4f38dbc19d23ad653",
+    "endorses": "b5c9d36cb2d095065308d47d10cf24e98cca7b395c2f50acad58395fd52fcbab",
     "entitled": "a8644e00386dce18427fbd010817b70f0488fdfe07c47df9b8a442efdae6fe59",
     "err": "93fbf4723dd77e76f3fb5a4a9000b59feda74dbf239a3515f5a6d79c62e6402f",
     "expresses": "50759c4c4277fd765565e0b0cf2f88dde2174d4647f96c6dfcaf63405b7a77b6",
-    "false": "c0604dc2467747b5063db30b627b2bc49364caa06adc1498fbc171a7f79a3a6e",
+    "false": "59f4f3f3e816b933faa43fad109827fd68d05e7422769c33e4e746859bb9dfc1",
     "family": "4c0ec69c70d097433d43850d445500ba4008506b43023e738d6998577aae9d22",
     "fit": "adaf2ee21afb2b77e5b2239567ffcaed2c6ba0170ee18a48bf935264fe5db4f1",
     "forgive": "4aec77f843480e1174a490affe517a76d4622a9bedb7e93a10ce451f9d0c9e7c",
@@ -63,42 +63,43 @@
     "healthy": "5f96c1318f4b6853d786b289e5978e57457f0b47a527a056e92cedb92f40af8f",
     "hears": "74985a06768cd9aba07d5edd0304784870ce67e19a0a58e6f1032c3fbfd960d8",
     "home": "01c35f39cdc0b0672dab583823f4c65201f49de6c510836bdc3842d9806375e8",
-    "injure": "e91a338c6eda3e8c6b155456211a65c32c684d38d6693f5eb8d3775be22acbd7",
-    "judge": "66e13db045016d38cfe3aabacf3d914b0c344fc34ff5cea384218aa60edd266b",
+    "injure": "260cd39a3f38a8757942ea8ad1e2da0909017a414a6a0660ce77ab4def76d46d",
+    "judge": "a63a90383a7ebcca4e1fd07625ea34af503d566062ecb0a9fd532bca1e84437a",
     "learn": "f31216c71fae34042d84cb7dbc79f4dc834876aa160d142d51b5cb5307dd2745",
-    "limit": "29307709e75c2d446cde0bc197f6b94231bc69249df856a6272e5eb5ac5caeeb",
+    "limit": "4e3f1f3437d1e8e3107cca6920e9fef155fec49d740f4b86b5c65dc45dcb4503",
     "list": "0e4f71dfe66512de21bd3077110d890210ee2b9604a1479ddfad02c32d92c49c",
     "lose": "4972501f211500ca67f0a74f3e92ee9391e5d9cc4f1349111f46ed7434d15c33",
     "married": "7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6",
     "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
     "meets": "fe03e07990cdcb7ba3b27a9a82db6bee655e45aec057f6891fd2b2c5de87dd37",
     "obliged": "635a864a87d4b8aff407346d2b14c079714d8c078c78e622babd1972b1d26f9b",
-    "observe": "5dfc1c12e584df7717fb2885dc3a48c488377d7f43675997ceaafedfef477549",
-    "orderly": "d26f2115f12d9e3e3efb809cb36c6cc5e55204c68155e3a2b01cada86481cdbb",
+    "observe": "8debd68e43b9b3c94de923e310d93cc3a66df8d7ffb313ad4ce7c89fadf8910d",
+    "orderly": "59535e1c160c90a8cc609b4c73581a2b17a1bab4f31f46fecd54af05b69455ec",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
     "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
-    "passport": "c47b9efbe78a749ef231d071256dae315035d833cb1e982c46a001abc2e69ada",
+    "passport": "cd0ddf58592a42a0437d2995c5ede1a245c80cf7cbc3feb031d5a3ae6c8136a2",
     "permanent": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "permits": "f8c03ccb6abd9b350f00fe93840157596fa6844f5ac5e9152b819413ab726bb0",
     "person": "ae9c7cf556c7eb769c3340477fb3c7458d5d5a5303f50375d4ca87605de91f4d",
-    "precede": "ba77ee02f994d1dbf8f31a424fb2b74cc92d27edc27f0c0cc1bfecc6c357dbb1",
+    "precede": "d689eb759af959e0d33e23ebfe8fbbfce829a5da199061498343503aa0907351",
     "prevents": "287e86cb2899c504717503648f15c524278a3780ffc9cd3e5ba5b47a62c39e09",
     "prisoner": "e8a5a69f4f5c2989cc4859ce485ec9cca1fa2b0d827323537fdc4f3b4e18a132",
     "public": "6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60",
     "put": "afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627",
-    "reference": "9c8dc5870fd28e908dfeb28d94b306d6b159a6231ba3561242a4fda9eb012cf3",
-    "related": "4f572bb6f317f92ede78886d0f972defab2dbc80efce8a268fdd4830617046e2",
-    "replace": "e27be4808b3e69d4de66426d41d2499916d3981169bbfe35a1afa15030154374",
+    "ratifies": "f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed",
+    "reference": "93a4c6011f6ba49f45404b057d5d48bede4fd4af01bd7db375be7889797e951b",
+    "related": "db842b4ed0ab783144c9b6b54230dadab4127139359fc264d29b98c6042143d2",
+    "replace": "7c7b9e76b5f26c8f2ccacda3296897824209b86b4b03b939a8a78a319a7355e0",
     "reward": "381db14138f3712fdef796d739dc48d0cd5429bb61cc857be920c2611c6a95bd",
     "rotten": "ee4885e9421cf0307421540c855456259eb07c5cd5c2ff5dbd34656895ecb07e",
     "secure": "bea1c2803936663b850221e46ae934d455c783bc48fac5a4037d9178eb427a8b",
     "severe": "a102d24e46a6291be1fbf1c9150bf310ddcfaa9d8342988b1ed63b02d329cee9",
     "show": "6f8d9509bc118699d35f0dfd418f1b994fe677cbf0387d95e6d18a1431162bd4",
     "sibling": "a66effae83ee434bf2303e7523c1a141bc4702c3ae6b8292c4506110e96aa14a",
-    "succeed": "2fb2673fffc725131b19ff41f0bfbb3d639b2866b74246fa6a8919eb0e760245",
-    "suggest": "c40d4481c5b33c855551714786774e8178398f286ee46ad4cf4544ba905864d8",
+    "succeed": "d37046df77aaa730f889420f9dc3118d5ab534b37371afe31f635b6624cef316",
+    "suggest": "7b5fcdb8bd8342e66d57bdf6f8ee69223268b7392a927a933bb1e221bae85dc3",
     "teaches": "a139a1576872b087975f3a54be6c49c134b7f15d3cca9c4142a9574da75fea8c",
-    "time": "01e88fb6b86fba6d434dc59ef1d458e94fe3149b101f7f9684645115ca5389e7",
+    "time": "e077844bc0c7bbe2e7fa71343024cc4f1ac0ba86f33cd489f30099934e3111d3",
     "travel": "f4ef5fab3f8d34e16d15d91c99a599c9ecad4d6b4819ac2ba2b076578fb41a39",
     "work": "2ff40e4e632700145d62b336726f51e7608e6ccdf4edbae9fe4cad92c4207719"
   },
@@ -576,46 +577,6 @@
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor",
       "tags": [
         "amendment"
-      ]
-    },
-    "approves": {
-      "claimed_actor": "The first argument names the approving body; it does not authenticate that body as the writer.",
-      "tuple_claim": "The tuple asserts that a named public body approved an amendment or temporal renewal; it does not prove a docket, review, tally, certificate, case, scope, or writer.",
-      "current_writer_authority": "Any fact-store writer can assert the approval outcome.",
-      "required_writer_authority": "A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable democratic result or case-bound review decision; no single writer or reviewer controls availability.",
-      "current_provenance": "The constitution treats each fact as an asserted outcome and verifies no writer, certificate, count, case review, independence, challenge, correction, or immutable source artifact.",
-      "required_provenance": "A public, contestable result bound to the exact proposal or renewal, approving body, case and subject where applicable, legal basis, snapshot, and constitutional version.",
-      "cheapest_harm": {
-        "operation": "assert",
-        "operations": [
-          "assert `suggest(Assembly, Fresh_Amendment)`",
-          "assert `approves(Electorate, Fresh_Amendment)`"
-        ],
-        "effect": "A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics.",
-        "target": "become",
-        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)"
-      },
-      "withholding_deletion_harm": {
-        "operation": "withhold_or_delete",
-        "operations": [
-          "delete `approves(Electorate, Amend_Mint)`"
-        ],
-        "effect": "The ordinary reform cannot derive the unread `become(_, Law)` label.",
-        "target": "become",
-        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)"
-      },
-      "current_challenge_route": "No in-model recount, approval contest, correction, or reviewer-independence test exists. A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct either approval or make Appeals act.",
-      "required_challenge_route": "A public contest and independent review route tied to the exact tally or renewal certificate, with safe continuity for rights and no withholding-based extension of restrictive power.",
-      "risk_dispositions": [
-        "patchable",
-        "external"
-      ],
-      "owner_ref": "TODO.md::Define the democratic ceiling and majority process",
-      "tags": [
-        "amendment",
-        "democracy",
-        "public-power",
-        "time"
       ]
     },
     "attack": {
@@ -1131,6 +1092,44 @@
       "tags": [
         "justice",
         "liberty"
+      ]
+    },
+    "endorses": {
+      "claimed_actor": "The first argument names the reviewing body; it does not authenticate that body as the writer.",
+      "tuple_claim": "The tuple asserts that a named body endorsed a case-bound custody lease or disposition; it does not prove a case, scope, review, or writer.",
+      "current_writer_authority": "Any fact-store writer can assert the endorsement outcome for either reviewing body.",
+      "required_writer_authority": "A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable case-bound review decision; no single writer or reviewer controls availability.",
+      "current_provenance": "The constitution treats each fact as an asserted outcome and verifies no writer, case review, independence, challenge, correction, or immutable source artifact.",
+      "required_provenance": "A public, contestable review decision bound to the exact lease or disposition, reviewing body, case and subject, legal basis, snapshot, and constitutional version.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert `endorses(Electorate, Fresh_Lease)`",
+          "assert `endorses(TemporalReview, Fresh_Lease)`"
+        ],
+        "effect": "A supplied lease gains both review endorsements without an internally verified case review.",
+        "target": "correct",
+        "evidence_ref": "new-book-plans/constitution.nibli::endorses(Electorate, $lease) & endorses(TemporalReview, $lease)"
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "delete `endorses(TemporalReview, Case_Adam)`"
+        ],
+        "effect": "The case-bound lease cannot derive current active power; custody authority is withheld rather than reversed.",
+        "target": "correct",
+        "evidence_ref": "new-book-plans/constitution.nibli::endorses(Electorate, $lease) & endorses(TemporalReview, $lease)"
+      },
+      "current_challenge_route": "A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct an endorsement or make Appeals act.",
+      "required_challenge_route": "A public contest and independent review route tied to the exact renewal decision, with safe continuity for rights and no withholding-based extension of restrictive power.",
+      "risk_dispositions": [
+        "patchable",
+        "external"
+      ],
+      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "tags": [
+        "public-power",
+        "time"
       ]
     },
     "family": {
@@ -1795,6 +1794,45 @@
         "audit"
       ]
     },
+    "ratifies": {
+      "claimed_actor": "The first argument names the ratifying authority; it does not authenticate that authority as the writer.",
+      "tuple_claim": "The tuple asserts that a named authority ratified an amendment proposal; it does not prove a docket, tally, certificate, or writer.",
+      "current_writer_authority": "Any fact-store writer can assert the ratification outcome.",
+      "required_writer_authority": "A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable democratic result; no single writer or reviewer controls availability.",
+      "current_provenance": "The constitution treats each fact as an asserted outcome and verifies no writer, certificate, count, independence, challenge, correction, or immutable source artifact.",
+      "required_provenance": "A public, contestable result bound to the exact proposal, ratifying authority, legal basis, snapshot, and constitutional version.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert `suggest(Assembly, Fresh_Amendment)`",
+          "assert `ratifies(Electorate, Fresh_Amendment)`"
+        ],
+        "effect": "A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics.",
+        "target": "become",
+        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "delete `ratifies(Electorate, Amend_Mint)`"
+        ],
+        "effect": "The ordinary reform cannot derive the unread `become(_, Law)` label.",
+        "target": "become",
+        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
+      },
+      "current_challenge_route": "No in-model recount, ratification contest, correction, or reviewer-independence test exists.",
+      "required_challenge_route": "A public contest and independent review route tied to the exact tally certificate, with safe continuity for rights.",
+      "risk_dispositions": [
+        "patchable",
+        "external"
+      ],
+      "owner_ref": "TODO.md::Define the democratic ceiling and majority process",
+      "tags": [
+        "amendment",
+        "democracy",
+        "public-power"
+      ]
+    },
     "replace": {
       "claimed_actor": "The third argument names Chronicle as the transition channel, not an authenticated writer or an independent predecessor witness.",
       "tuple_claim": "One named snapshot replaces a named predecessor in the Chronicle lineage.",
@@ -1966,11 +2004,11 @@
         "operation": "assert",
         "operations": [
           "assert `suggest(Assembly, Fresh_Amendment)`",
-          "assert `approves(Electorate, Fresh_Amendment)`"
+          "assert `ratifies(Electorate, Fresh_Amendment)`"
         ],
         "effect": "A proposal with no target or semantic review derives the unread `become(_, Law)` label.",
         "target": "become",
-        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)"
+        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -1979,7 +2017,7 @@
         ],
         "effect": "The ordinary reform carrying a recorded approval entry cannot derive the unread `become(_, Law)` label; no candidate semantics were ever in the formal path.",
         "target": "become",
-        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & approves(Electorate, $m) & ~false($m) -> become($m, Law)"
+        "evidence_ref": "new-book-plans/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
       },
       "current_challenge_route": "No docket contest, correction, or target-truth review exists.",
       "required_challenge_route": "Public notice, correction, challenge, and independent semantic review before approval.",

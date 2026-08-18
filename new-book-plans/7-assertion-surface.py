@@ -43,7 +43,7 @@ DISPOSITIONS = {"patchable", "external", "deliberately_refused"}
 OPERATIONS = {"assert", "withhold_or_delete"}
 REQUIRED_TAG_BINDINGS = {
     "adulthood": {"at"},
-    "amendment": {"adjust", "approves", "permanent", "suggest"},
+    "amendment": {"adjust", "permanent", "ratifies", "suggest"},
     "epoch-carry": {"rotten"},
     "placement": {"at", "attack", "cruel", "injure", "put"},
     "public-body": {"public"},

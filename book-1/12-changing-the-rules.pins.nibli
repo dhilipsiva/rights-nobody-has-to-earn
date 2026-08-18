@@ -37,7 +37,7 @@
 # => TRUE
 
 # "The approval entry is present ... the words becomes law are withheld."
-? approves(Electorate, Amend_Floor).
+? ratifies(Electorate, Amend_Floor).
 # => TRUE
 
 ? adjust(Amend_Floor, Art_Floor).
@@ -80,7 +80,7 @@
 # "Propose one that declares no target at all" — Amend_Sneak is introduced
 # here rather than in the constitution, because it is an attack.
 suggest(Assembly, Amend_Sneak).
-approves(Electorate, Amend_Sneak).
+ratifies(Electorate, Amend_Sneak).
 
 :defect "a totality guard: a targetless proposal receives no law label"
 ? false(Amend_Sneak).
@@ -96,7 +96,7 @@ approves(Electorate, Amend_Sneak).
 # a manually applied candidate that removes a protected promise; these pins alone
 # make no claim about the candidate effect.
 suggest(Assembly, Amend_Decoy).
-approves(Electorate, Amend_Decoy).
+ratifies(Electorate, Amend_Decoy).
 adjust(Amend_Decoy, Art_Mint).
 
 ? permanent(Art_Mint).

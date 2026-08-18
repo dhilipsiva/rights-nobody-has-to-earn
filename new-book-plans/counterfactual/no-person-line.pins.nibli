@@ -43,8 +43,8 @@ observe(TemporalReview, Case_Zed, Window_Custody, LimitScope).
 continue(Case_Zed, Epoch_Current).
 observe(Chronicle, Case_Zed, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Zed, Epoch_Current, RenewalScope).
-approves(Electorate, Case_Zed).
-approves(TemporalReview, Case_Zed).
+endorses(Electorate, Case_Zed).
+endorses(TemporalReview, Case_Zed).
 
 ? prisoner(Zed).
 # => TRUE
