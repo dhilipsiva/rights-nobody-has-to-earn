@@ -55,9 +55,10 @@ then a full-society expansion backlog and cross-cutting sections:
    destroyed by tooling once and is watched accordingly.
 2. **Phase 2 — engine handoffs (nibli).** The three capability audits are closed
    and recorded in source-bound planning artifacts, and the fail-closed witness
-   enumeration and corpus-scoped text-compute repairs have landed. **One handoff
-   is open and blocking: the corpus request for two approval names.** The
-   soundness regression that made the suite red is closed — engine `b97d1af`,
+   enumeration and corpus-scoped text-compute repairs have landed, as have the
+   two curated approval names the `approves` split needed (engine `8935611`).
+   **No engine handoff is open.** The soundness regression that made the suite
+   red is closed — engine `b97d1af`,
    verified here before acceptance — so the default `./verify.sh` path is green
    again and needs no pin. No repair here is an election result service;
    democratic formalisation still uses authenticated external result
@@ -181,7 +182,7 @@ project may not present withdrawal as completion of those checks.
     contract now lives in `CLAUDE.md`; pin against the contract, not the
     observed behaviour.
 
-- [ ] **CORPUS REQUEST — two approval names, so one relation stops carrying two
+- [x] **CORPUS REQUEST — two approval names, so one relation stops carrying two
   legal regimes.** The author ratified splitting `approves` into `ratifies`
   (democratic tally outcome) and `endorses` (case-bound review decision) on
   2026-08-17. Neither is a corpus name, so both are compile errors and the
@@ -283,10 +284,31 @@ project may not present withdrawal as completion of those checks.
     ends of this channel.
     ```
 
-  - **Blocked until it returns.** The `approves` split, and therefore the full
-    legacy-relation migration, cannot start. The five other dispositions
-    (`mature` name-reservation, and the retains for `decide`, `authority`,
-    `choose`, `broken`) need no new vocabulary and may land first.
+  - **Returned and verified 2026-08-17; the split is unblocked.** Engine
+    `8935611` curates both names exactly as asked: `ratifies` (places
+    authority/instrument, source `ca'irzau`) and `endorses` (places
+    reviewer/decision, source `fitytu'i`), both arity 2, both Curated.
+    Verified here before accepting rather than on the reply: rebuilt from
+    source, confirmed the entries in the corpus, and measured the property the
+    split exists for — each name answers TRUE for its own authority and FALSE
+    for the other, with a third place still refused. The full suite is green on
+    the default path, so no verdict moved and `approves` is untouched until the
+    migration chooses to move it.
+  - **A precedent the engine session flagged, worth carrying:** both source
+    words are lujvo, and every other corpus row cites a five-letter gismu or a
+    synthetic marker. `source_gismu` now means "the Lojban source lemma"
+    rather than strictly a gismu. It is inert by construction — never validated
+    for shape, never an input — but a later reader should not infer a shape
+    rule from the other rows.
+  - **What this repository's prompt got wrong**, recorded because the channel
+    requires it in both directions. The prompt said both words were "already in
+    the Lojban dictionary shipped in your tree". `dictionary-en.json` is
+    gitignored and fetched on demand; it was present locally only because
+    someone had fetched it, and it feeds a regeneration tool rather than the
+    build. Nothing followed from the error — the words are real and were used —
+    but a session inferring that the dictionary is a build input would be
+    wrong. Separately, neither lemma is in the vendored Predilex, so that gate
+    derives no arity bound for either and is not checking these two.
 
 ---
 
