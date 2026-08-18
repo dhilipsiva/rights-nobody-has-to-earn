@@ -240,6 +240,32 @@ is recorded in `TODO.md` and asks for `receives/3`, preferring the stative
 the volitional `cpacu`, because "gets / procures / accepts" would be false of
 precisely the recipients §6 is about.
 
+**Returned 2026-08-18 — the vocabulary gate is closed.** Engine `bc03c9a`
+curates `receives` at arity 3, places `recipient / gift / donor`, source
+`terdu'a`, `CorpusTier::Curated`. Verified here rather than on the reply: the
+suite is green against a rebuild of that sha with no verdict moved.
+
+Two things from that exchange bear on how the family gets built, and both
+belong here rather than only in the tracker.
+
+**A curation choice could have defeated the rule silently.** `terdu'a` is the
+converse of `dunda`, so the tidy modelling is a converse alias — and an alias
+compiles to the same stored relation with places exchanged, which would have
+made `gives(Kitchen, Meal, Bo)` establish `receives(Bo, Meal, Kitchen)`. The
+giver's word would have established receipt through a vocabulary decision, in a
+place no rule review looks. `receives` is an independent relation, and this was
+confirmed behaviourally in both directions rather than read off the `swap:
+None` declaration. **The pins that establish it must ship beside the delivery
+rule when it lands** — they have nowhere to live until then.
+
+**The brief's own corpus table was wrong in one row.** `get` is curated at
+arity 3 from `cpacu` — the second candidate above — so "every recipient-side
+spelling is a compile error" was false. It changes no conclusion, because
+`cpacu`'s volitional sense is rejected on the merits and that rejection is what
+selected `terdu'a`. The method fix: resolve a candidate lemma to its English
+corpus name through `nibli-lexicon`'s provenance index instead of guessing
+spellings.
+
 ## 8. A mechanical guard this family could ship
 
 The constitution names the defence — *what arrival evidence sits upstream of

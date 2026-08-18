@@ -310,7 +310,7 @@ project may not present withdrawal as completion of those checks.
     wrong. Separately, neither lemma is in the vendored Predilex, so that gate
     derives no arity bound for either and is not checking these two.
 
-- [ ] **CORPUS REQUEST — one recipient-side name, so delivery stops being the
+- [x] **CORPUS REQUEST — one recipient-side name, so delivery stops being the
   provider's word for it.** The delivery and receipt families are what close
   FS-DFT-16 and FS-DFT-17, the project's two open criticals, and the settled
   shape requires accessibility-neutral, recipient-side access/receipt evidence
@@ -442,6 +442,59 @@ project may not present withdrawal as completion of those checks.
     wrong. That last item has been non-empty more often than not, on both ends
     of this channel.
     ```
+
+  - **Returned and verified 2026-08-18; the recipient half exists.** Engine
+    `bc03c9a00b28f566c9efe0e7808d3c9160915781` curates `receives` exactly as
+    asked: places `recipient / gift / donor`, source `terdu'a`, arity 3,
+    `CorpusTier::Curated`, template `{x1} receives {x2} from {x3}`, and
+    `swap: None`. Verified here before accepting rather than on the reply:
+    rebuilt from the sha rather than trusting the binary beside the checkout
+    (rebuild SHA-256
+    `f9f094b14efe1a8549660542edf263f2afe5380dc84e99e197cc5f3f95683772`), read
+    the entry, measured the behaviour, and ran the full suite — 558 pins, 0
+    findings, no verdict moved. The engine session's report that our two
+    `nibli-pin` binaries hashed identically was about the previous `8935611`
+    build, which we both had; bit-identity was not re-tested for `bc03c9a`,
+    where only our own build exists here.
+  - **The independence was measured, not read off the declaration.**
+    `swap: None` is a source fact; the property the request exists for is
+    behavioural, so it was tested in both directions. A `gives` fact does not
+    make the matching `receives` true, and a `receives` fact does not make the
+    matching `gives` true. The delivery probe was also strengthened past the
+    engine session's version: their negative case carried only `gives`, while
+    ours carries `gives` **and both independent witnesses**, so the only thing
+    missing is the recipient-side fact — and `receives` is still FALSE and the
+    actuality still does not derive. That is the exact shape a provider trying
+    to self-certify would produce.
+  - **The most valuable part of the reply was a decision we did not ask for,
+    and it is the precedent to carry.** `terdu'a` is the converse of `dunda`,
+    which sources `gives`, so the tidy modelling is a `Swap` converse alias.
+    A converted alias compiles to the same stored relation with places
+    exchanged, so `gives(Kitchen, Meal, Bo)` would have made
+    `receives(Bo, Meal, Kitchen)` TRUE — the giver's word establishing receipt,
+    the one thing the governing rule forbids, arriving through a curation
+    choice where no rule review would ever look. Any future request for a
+    converse-sense name must state whether it needs an independent relation or
+    an alias, because the two are indistinguishable in the request and decisive
+    in the result.
+  - **The independence pins must ship with the delivery family.** They have
+    nowhere to live yet — there is no delivery rule — but the guard belongs
+    beside the rule when it lands, on the confinement-ruling precedent that a
+    guard is written for the day the assumption hiding it stops holding.
+  - **What this repository's prompt got wrong**, recorded because the channel
+    requires it in both directions, and this one is worse than the last. The
+    prompt claimed "every spelling of the recipient half is a compile error".
+    False: `get` is curated at arity 3 with places `subject / gets / source`,
+    sourced from `cpacu` — our own second candidate — and it compiled at
+    `8935611`, the sha we measured against. Worse, our own corpus scan had
+    already listed `get` as available; the request contradicted evidence we had
+    collected ourselves and did not reconcile. Nothing followed from the error,
+    because `cpacu`'s volitional sense was rejected on the merits and that
+    rejection stands. **The method fix is specific:** when a candidate Lojban
+    lemma is in hand, resolve it to its English corpus name through the
+    provenance index rather than guessing English spellings — `by_provenance`
+    in `nibli-lexicon` is that bridge, and it maps `cpacu` straight to `get`.
+    Both near-misses on this channel would have been caught by it.
 
 ---
 
