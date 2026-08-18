@@ -813,31 +813,46 @@ Gate B; it does not claim Book 2 operations or feasibility.
     semantic ones.
 
   - **Outstanding, and why each is not in the specification.**
-    (a) The chapter-2 `standing` rename is prose, and this item's own later
-    bullet sequences the chapter audit for when a state-form rule family
-    lands; chapter 2 is first on that list, and renaming it now would touch it
-    twice while leaving the universal sense in chapters 1, 7, 15 and the
-    opening note untouched. No relation is called `standing`, so the rename
-    costs no constitution or pin edit when it runs.
-    (b) The retain/replace/retire dispositions: the ruling says census
-    *before* deciding, and a replacement must revise every downstream verdict
-    atomically. The census landed; the decisions belong to the item that
-    defines the democratic ceiling and to the coverage row whose closure names
-    those cards.
-    (c) **Closed.** Gate A was reopened, as any source edit requires, with
-    `FS-SAU-21` appended pending and `FS-SAU-22` after the map-cell
-    restoration. It could not be reclosed while the engine regression held,
-    because the closure binds a candidate whose verification receipt names
-    `./verify.sh`. That closed on 2026-08-17, and Gate A was reclosed the same
-    day: `FS-SAU-23` records the passing current-source audit (a landed row is
-    an append-only prefix, so the passing result is a new row rather than an
-    edit to `FS-SAU-22`), candidate `b7843fe13d4ffe63fe302d3c365e98956aef31ff`
-    is frozen, and the closure record binds it with a receipt over the full
-    ten-command chain run unpinned, `all-passed`, transcript SHA-256
-    `a64bc965c0629e023410f76e963f143a6b3a25381a59689689b7d0e8664f8a35`. The
-    permitted claim is unchanged and deliberately narrow — a versioned,
-    reviewable scope map and assurance program — and the four
-    Gate-A-applicable defects keep their recorded claim limitations.
+    (a) **Closed.** The `standing` rename landed book-wide at `13d0a7e`,
+    on the author's ruling to sweep the whole book rather than wait for the
+    chapter audit. The reserved word now carries only the universal status
+    every person holds; the office sense reads "public answerability", which
+    is the term the ledger's own office-sense guard already named in its
+    error message. No relation is called `standing`, so the constitution was
+    untouched and the pin suite moved by two comments and a filename. The
+    sweep also found a third sense live in print: `03:163` and two "in good
+    standing" idioms carried *credibility* — the sense chapter 2's pin file
+    records as migrated in v0.6, with three adjacent pins held against the
+    senses re-merging — and `3-spine.md:181` used "standing and points" for
+    credibility and recognition, which chapter 8's own pins contradict by
+    name. All four now say which sense they mean. Personhood and adjectival
+    uses are untouched, and chapter 2 keeps the ordinary word once as a
+    mention that says why it is reserved.
+    (b) **Closed.** The retain/replace/retire dispositions landed at
+    `ecd9937`, after the census the ruling requires first. `mature` was
+    retired with its name reserved (`53897d4`) and `approves` split into
+    `ratifies`/`endorses` (`b8d3f9b`); `decide`, `authority`, `choose` and
+    `broken` were retained, each with the blocker its replacement waits on
+    recorded beside it. The per-relation dispositions sit in the census, and
+    the per-rule FS-PCD cards keep the grain the checker validates.
+    (c) **Closed.** Gate A reopens on every source edit and has to be earned
+    back each time; since the bodies specification it reopened for the
+    maturity reservation (`FS-SAU-24`), the approval split (`FS-SAU-25`) and
+    this rename (`FS-SAU-26`), each appended pending. It is closed again at
+    `FS-SAU-27`, the passing current-source audit. Candidate
+    `d7e6acf241e81253a348b21d899bfd67455c6225` is frozen with its
+    `closure_record` still null and its status still not-passed — both of
+    which the closure checker requires of a candidate — and the closure
+    record binds it with a receipt over the full ten-command chain run
+    unpinned, `all-passed`, transcript SHA-256
+    `74f012ab4d072f5bd04de1a1347a010eb313af2f887385a3aea3c9038865f74d`. A
+    landed row is an append-only prefix, so each passing result is a new row
+    rather than an edit to the pending one, and appending a row cannot move
+    the semantic scope because `review_scope_digest` excludes `scope_audits`,
+    `closure_record` and `acceptance_gate` by construction. The permitted
+    claim is unchanged and deliberately narrow — a versioned, reviewable
+    scope map and assurance program — and the four Gate-A-applicable defects
+    keep their recorded claim limitations.
 
   - **Was blocked on the live upstream regression; that item is now closed.**
     This landing was verified at the time with `NIBLI_PIN` pinned to a
