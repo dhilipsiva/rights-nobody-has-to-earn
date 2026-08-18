@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-18-public-answerability-rename-v1",
+  "source_version": "fs-ledger-2026-08-18-delivery-receipt-coverage-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -27239,7 +27239,7 @@
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
     "evidence_ceiling": "Coverage contracts and pre-drafting checks only; no operation, delivery, feasibility, liveness, reader response, external truth, or calibration follows.",
-    "expected_constitutional_effect_count": 189
+    "expected_constitutional_effect_count": 197
   },
   "powers": [
     {
@@ -103639,6 +103639,35 @@
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 19. Evidence and limits",
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 20. Ratification record"
       ]
+    },
+    {
+      "id": "FS-CVF-015",
+      "title": "Delivery and receipt interfaces for the material floor",
+      "state": "coverage-ready",
+      "source_family_refs": [],
+      "card_refs": [],
+      "template_refs": [],
+      "refusal_refs": [],
+      "crosswalk_refs": [],
+      "formal_statement_refs": [],
+      "pin_group_refs": [],
+      "counterfactual_refs": [],
+      "prose_refs": [],
+      "part_v_refs": [],
+      "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready; belief and expression are deliberately unrouted with recorded reasons and no delivery route may be written for either.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ],
+      "effect_refs": [
+        "FS-CCE-190",
+        "FS-CCE-191",
+        "FS-CCE-192",
+        "FS-CCE-193",
+        "FS-CCE-194",
+        "FS-CCE-195",
+        "FS-CCE-196",
+        "FS-CCE-197"
+      ]
     }
   ],
   "dependencies": [
@@ -110072,78 +110101,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "d7e6acf241e81253a348b21d899bfd67455c6225",
-    "source_version": "fs-ledger-2026-08-18-public-answerability-rename-v1",
-    "scope_sha256": "6adc3639a3fa8df5e42920062bf9ca9a97a170f36479fbbcc7a9952e2204fe1e",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-08-18T03:35:48Z",
-    "scope_audit_ref": "FS-SAU-27",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "verification_receipt": {
-      "candidate_commit_sha": "d7e6acf241e81253a348b21d899bfd67455c6225",
-      "verified_at_utc": "2026-08-18T04:10:21Z",
-      "commands": [
-        "python3 new-book-plans/14-reader-evidence.py --check",
-        "python3 new-book-plans/14-reader-evidence.py --check --execute",
-        "python3 new-book-plans/17-full-society-power-source-manifest.py --check",
-        "python3 new-book-plans/13-full-society-ledger.py",
-        "python3 new-book-plans/13-full-society-ledger.py --check",
-        "python3 new-book-plans/16-constitutional-closure.py",
-        "python3 new-book-plans/16-constitutional-closure.py --check",
-        "./verify.sh --quick",
-        "./verify.sh",
-        "git diff --check"
-      ],
-      "result": "all-passed",
-      "transcript_sha256": "74f012ab4d072f5bd04de1a1347a010eb313af2f887385a3aea3c9038865f74d"
-    },
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -127385,6 +127347,51 @@
         "FS-DFT-40"
       ],
       "result": "passed-with-recorded-limits",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-28",
+      "title": "Delivery and receipt coverage-effect current-source repository adversarial audit",
+      "source_version": "fs-ledger-2026-08-18-delivery-receipt-coverage-v1",
+      "scope_sha256": "060b825f1a5fd3279c3613943e64c3c1baee4c6fb53779ba3418b2b7689a2880",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-18T09:18:16Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
@@ -171780,6 +171787,1830 @@
       "book2_handoff": "Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md::## 16. Book 1, Book 2, and engine boundary"
+      ]
+    },
+    {
+      "id": "FS-CCE-190",
+      "title": "Food delivery on recipient-side receipt",
+      "effect_key": "food-delivery-receipt",
+      "applicability": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without food delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to food delivery receipt",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Food reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-190-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish food delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-190-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for food delivery receipt and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-191",
+      "title": "Shelter delivery on recipient-side receipt",
+      "effect_key": "shelter-delivery-receipt",
+      "applicability": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without shelter delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to shelter delivery receipt",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Shelter reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider, and the route does not run through confinement. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-191-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish shelter delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-191-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for shelter delivery receipt and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-192",
+      "title": "Care delivery on recipient-side receipt",
+      "effect_key": "care-delivery-receipt",
+      "applicability": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without care delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to care delivery receipt",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Care reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider; nothing derives that the person is well. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-192-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish care delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-192-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for care delivery receipt and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-193",
+      "title": "Material security on recipient-side receipt",
+      "effect_key": "security-delivery-receipt",
+      "applicability": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without security delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to security delivery receipt",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Material security reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-193-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish security delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-193-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for security delivery receipt and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-194",
+      "title": "Company on recipient-side receipt",
+      "effect_key": "company-delivery-receipt",
+      "applicability": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without company delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to company delivery receipt",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Company reaches a person only on a recipient-side record independently attested by an authorised writer who is not the provider. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-194-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish company delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-194-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for company delivery receipt and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-195",
+      "title": "Provider may not certify its own delivery",
+      "effect_key": "provider-may-not-certify-receipt",
+      "applicability": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without provider may not certify receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-02"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to provider may not certify receipt",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A provider's own record cannot establish that its delivery arrived, because the attesting witness must be distinct from the named source. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-195-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish provider may not certify receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-195-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for provider may not certify receipt and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-196",
+      "title": "Authorised independent delivery writer",
+      "effect_key": "authorised-independent-delivery-writer",
+      "applicability": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without authorised independent delivery writer, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-06"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to authorised independent delivery writer",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Only a writer holding an authorised delivery-witness role for that person may attest an arrival, and a predeclared alternate carries the route when the ordinary writer cannot act. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-196-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish authorised independent delivery writer from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-196-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for authorised independent delivery writer and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+      ]
+    },
+    {
+      "id": "FS-CCE-197",
+      "title": "Arrival is not conditioned on a roster entry",
+      "effect_key": "arrival-not-roster-conditioned",
+      "applicability": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this delivery and receipt effect is omitted or collapsed",
+      "consequence": "Without arrival not roster conditioned, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
+      "posture": "Specified",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-01"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-05"
+      ],
+      "domain_refs": [
+        "FS-DOM-04"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-06"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Source-bound facts relevant only to arrival not roster conditioned",
+        "A recipient-side arrival record naming the recipient, the thing, and its source",
+        "An independent attestation by a writer authorised for that person at the named scope"
+      ],
+      "prohibited_inputs": [
+        "Provider self-certification, or any route where the attesting witness is the named source",
+        "Any inference of a personal state — health, learning, or belief — from an arrival record",
+        "A roster entry used as a precondition of help, or bare record absence used as a finding",
+        "Confinement used as the route to a floor actuality for a free person",
+        "The implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The lawful source term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "trigger": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The trigger term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "evidence_rule": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The evidence rule term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "bounded_effect": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The bounded effect term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The forbidden preconditions term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "immediate_access": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The immediate access term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "record_boundary": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The record boundary term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "challenge_correction": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The challenge correction term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "independent_check": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The independent check term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "failure_default": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The failure default term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        },
+        "end_or_retention": {
+          "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The end or retention term binds this direct effect to its cited ratified source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "duty_bearer": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "minimum": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "accessibility": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "breach": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "interim_continuity": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "remedy": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "appeal": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          },
+          "audit": {
+            "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "An arrival derives from the witnessed record alone, so a person never entered on the roster still derives the actuality; help is never conditioned on a record entry. Only the cited constitutional sources and their bounded supplied inputs authorize this effect; no repository record authenticates external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-197-NEGATIVE",
+        "status": "planned",
+        "assertion": "Attempt to establish arrival not roster conditioned from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "counterfactual": {
+        "id": "FS-CCE-197-COUNTERFACTUAL",
+        "status": "planned",
+        "assertion": "Remove the direct effect for arrival not roster conditioned and show the actuality no longer derives while unrelated effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
+        ],
+        "executable_ref": null
+      },
+      "part_v_status": "coverage-only-not-formalized",
+      "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
       ]
     }
   ]

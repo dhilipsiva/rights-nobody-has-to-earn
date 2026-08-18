@@ -255,7 +255,7 @@ COVERAGE_EVIDENCE_CEILING = (
     "Coverage contracts and pre-drafting checks only; no operation, delivery, "
     "feasibility, liveness, reader response, external truth, or calibration follows."
 )
-CONSTITUTIONAL_EFFECT_COUNT = 189
+CONSTITUTIONAL_EFFECT_COUNT = 197
 UNIVERSAL_STANDING_STATEMENT_IDS = (
     "b214c5369507e0eb6eb829be92667f5a72b10cff32e966cb6374f4ef4087d8b9",
     "ac2a478457f4f7822d0ee1e62da4e08625aacdaf43c65a4b2b179dbdd784c9cc",
@@ -965,6 +965,22 @@ FAMILY_LIFE_EFFECT_POLICY = {'child-independent-rights': ('class-01', ['class-02
                                 ['family-remedy'],
                                 ['FS-CLM-09'])}
 EFFECT_POLICY.update(FAMILY_LIFE_EFFECT_POLICY)
+# Delivery and receipt: one direct effect per routed floor item plus the three
+# structural guards. `believe` and `expresses` are deliberately unrouted and
+# carry no effect here — a refusal has no counterfactual, so the reasons live in
+# the ratified decision rather than in a card that could not be formalized.
+DELIVERY_EFFECT_POLICY = {
+ 'food-delivery-receipt': ('class-02', ['class-07'], ['material-floor-access'], ['FS-CLM-05']),
+ 'shelter-delivery-receipt': ('class-02', ['class-07'], ['material-floor-access'], ['FS-CLM-05']),
+ 'care-delivery-receipt': ('class-02', ['class-07'], ['material-floor-access'], ['FS-CLM-05']),
+ 'security-delivery-receipt': ('class-02', ['class-07'], ['material-floor-access'], ['FS-CLM-05']),
+ 'company-delivery-receipt': ('class-02', ['class-07'], ['material-floor-access'], ['FS-CLM-05']),
+ 'provider-may-not-certify-receipt': ('class-07', ['class-02'], ['material-floor-access'], ['FS-CLM-05']),
+ 'authorised-independent-delivery-writer': ('class-07', ['class-06'], ['material-floor-access'], ['FS-CLM-05']),
+ 'arrival-not-roster-conditioned': ('class-02', ['class-01'], ['material-floor-access'], ['FS-CLM-05']),
+}
+EFFECT_POLICY.update(DELIVERY_EFFECT_POLICY)
+DELIVERY_STATEMENT_IDS = ()
 FLOOR_ENTITLEMENT_LINES=(
  "entitled(every person, event { secure() }).","entitled(every person, event { eats() }).",
  "entitled(every person, event { dwell() }).","entitled(every person, event { healthy() }).",
@@ -977,6 +993,7 @@ ENVIRONMENTAL_EFFECT_KEYS={"environmental-conditions-right","environmental-infor
 CLASS9_EFFECT_KEYS={"class9-commons-future-capability","class9-multiaxis-ceilings","class9-science-law-versioning","class9-precaution-nonregression","class9-restoration-nonfungibility","class9-initiation-interim-route","class9-liability-public-restoration"}
 EQUALITY_EFFECT_KEYS=set(EQUALITY_EFFECT_POLICY)
 FAMILY_LIFE_EFFECT_KEYS=set(FAMILY_LIFE_EFFECT_POLICY)
+DELIVERY_EFFECT_KEYS=set(DELIVERY_EFFECT_POLICY)
 
 POWER_CLASS_IDS = [f"class-{i:02d}" for i in range(1, 11)]
 CARD_V7_EXTRA_KEYS = [
@@ -2302,7 +2319,7 @@ def validate_coverage_families(src: dict, ids: dict):
         assigned_refusals.extend(rec["refusal_refs"])
         assigned_crosswalks.extend(rec["crosswalk_refs"])
         assigned_effects.extend(rec["effect_refs"])
-        statement_policy={"FS-CVF-011":(UNIVERSAL_STANDING_STATEMENT_IDS,"universal-standing"),"FS-CVF-012":(LIBERTY_ECOLOGY_STATEMENT_IDS,"liberty-and-ecology"),"FS-CVF-013":(EQUALITY_STATEMENT_IDS,"substantive-equality"),"FS-CVF-014":(FAMILY_LIFE_STATEMENT_IDS,"family-and-life-course")}
+        statement_policy={"FS-CVF-011":(UNIVERSAL_STANDING_STATEMENT_IDS,"universal-standing"),"FS-CVF-012":(LIBERTY_ECOLOGY_STATEMENT_IDS,"liberty-and-ecology"),"FS-CVF-013":(EQUALITY_STATEMENT_IDS,"substantive-equality"),"FS-CVF-014":(FAMILY_LIFE_STATEMENT_IDS,"family-and-life-course"),"FS-CVF-015":(DELIVERY_STATEMENT_IDS,"delivery-and-receipt")}
         if rec["id"] in statement_policy:
             owned_ids,label=statement_policy[rec["id"]]
             expected=list(owned_ids) if rec["state"] in {"formalized","prose-landed"} else []
@@ -2533,6 +2550,7 @@ def validate_constitutional_effects(src: dict, ids: dict):
         elif key in CLASS9_EFFECT_KEYS: required=("material floor","single scalar","t3")
         elif key in EQUALITY_EFFECT_KEYS: required=("person worth","risk score","entitlement score","criminal burden","bare record absence","t3")
         elif key in FAMILY_LIFE_EFFECT_KEYS: required=("omnibus family","mature predicate","missing kinship","recognition","confinement","t3")
+        elif key in DELIVERY_EFFECT_KEYS: required=("provider self-certification","personal state","roster entry","confinement","t3")
         else: raise LedgerError(f"{ctx}: missing effect boundary policy")
         for token in required:
             if token not in prohibited: raise LedgerError(f"{ctx}: prohibited inputs omit {token}")
