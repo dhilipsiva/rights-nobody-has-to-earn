@@ -1,8 +1,8 @@
 # Who Holds the Pen
 
-Standing marks you as someone who can be held to account. It does not, by itself, let
-you do anything to anybody. For that you need the pen: the credential that makes your
-findings count.
+Public answerability marks you as someone who can be held to account. It does not, by
+itself, let you do anything to anybody. For that you need the pen: the credential that
+makes your findings count.
 
 Two people with a pen, examining the same person and each recording what they found,
 can void that person's credibility, and strip what they have earned along with it. That is the
@@ -14,16 +14,16 @@ the people the electorate seats. The other is issued to the people a second body
 convocation, seats. A voiding needs one of each — two people who were put where they
 are by different hands.
 
-Three things have now been named and it is worth keeping them apart, because the rest
-of the book depends on the difference and they are easy to hear as one. Standing is
+Three things have now been named and it is worth keeping them apart, because the rest of
+the book depends on the difference and they are easy to hear as one. Answerability is
 whether you can be *asked*. A pen is whether your findings *count* — and which of the
-two you hold matters only when a voiding is being assembled. Credibility is whether
-what the record already says about you *stands*. A person can have all three, or any
-one without the others: the court has standing and neither pen; Koa has recorded a
-finding and has no standing; Vex, voided last period, has standing still and neither
-of the others. And they come apart in different directions — standing is never taken
-away, a pen is taken by recall, and credibility is the one of the three that two other
-people, seated by different bodies, can destroy between them.
+two you hold matters only when a voiding is being assembled. Credibility is whether what
+the record already says about you *stands*. A person can have all three, or any one
+without the others: the court is answerable and holds neither pen; Koa has recorded a
+finding and is answerable to nobody; Vex, voided last period, is answerable still and
+holds neither of the others. And they come apart in different directions — answerability
+is never taken away, a pen is taken by recall, and credibility is the one of the three
+that two other people, seated by different bodies, can destroy between them.
 
 You are allowed to pick one up only if one of the two bodies seated you, you have not
 been recalled, the witnessed current record positively carries your clear status
@@ -102,7 +102,7 @@ Recall and carried history are both about what has already happened to you, and 
 behave differently from each other in a way worth noticing.
 
 Boss was seated, and then recalled. Boss has no pen. This is the same Boss from the
-last chapter, and the pair of facts is the point: Boss keeps standing permanently and
+last chapter, and the pair of facts is the point: Boss stays answerable permanently and
 loses the credential immediately. Answerable forever, powerful never again. The two
 things were separated precisely so that one could be taken while the other could not.
 
@@ -158,13 +158,13 @@ dead weight exactly until the first copy is skipped, and whoever tidies it away 
 built for. The doors hold the full conditions. The signing table repeats the two
 adverse ones, and the distinction now matters.
 
-Those doors also answer a question this book could not ask until late: what happens
-to the pen when a voided examiner is forgiven. Forgiveness exists — a later chapter
-gives it its due — and it restores what a voiding takes from a person's standing in
-the record: the weight of their word. It does not restore the pen, and
-the reason is in the credential doors you have just watched: they read the matched
-carried history, not the conclusion that history once fed. The mark stays in the
-selected current record — forgiven, not erased — and a door that reads it stays shut.
+Those doors also answer a question this book could not ask until late: what happens to
+the pen when a voided examiner is forgiven. Forgiveness exists — a later chapter gives
+it its due — and it restores what a voiding takes: the weight of a person's word in the
+record. It does not restore the pen, and the reason is in the credential doors you have
+just watched: they read the matched carried history, not the conclusion that history
+once fed. The mark stays in the selected current record — forgiven, not erased — and a
+door that reads it stays shut.
 
 Be exact about what that does and does not mean, because two obvious readings are
 both wrong. It is not that being voided costs you the pen; the next chapter is

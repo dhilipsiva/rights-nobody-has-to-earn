@@ -185,8 +185,8 @@ below.
   shows how birth or encounter can start standing without making a temporary
   handle into civil identity.
 
-- [Chapter 2: Standing, and Why It Is Never Revoked](02-standing.md) — separates
-  permanent answerability from temporary power and explains why removing an
+- [Chapter 2: Public Answerability, and Why It Is Never Revoked](02-public-answerability.md) —
+  separates permanent answerability from temporary power and explains why removing an
   official must not erase protection for the person who exposed them.
 
 ### Part II — Accountability
@@ -275,8 +275,13 @@ below.
 - **Person:** the root status from which the floor follows. The present design
   both permits personhood to be recorded and derives it for a prisoner.
 
-- **Standing:** permanent answerability to examination and exposure. It is not
-  a licence to act on another person.
+- **Standing:** the universal status every person holds. It is not earned, not
+  ranked, and not a licence to act on anyone. This book reserves the word for
+  that sense alone.
+
+- **Public answerability:** permanent answerability to examination and exposure,
+  held by public bodies and by whoever has been seated. It is not a licence to
+  act on another person.
 
 - **Pen or credential:** the temporary authority that makes an examiner's
   finding count in the voiding machinery.
@@ -326,7 +331,7 @@ below.
 
 - **The electorate and the convocation:** separate seating sources for public
   answerability and the two credentials used by accountability. See Chapters
-  [2](02-standing.md), [3](03-who-holds-the-pen.md),
+  [2](02-public-answerability.md), [3](03-who-holds-the-pen.md),
   [5](05-voiding.md), and [12](12-changing-the-rules.md).
 
 - **An examiner or auditor:** records findings, may earn recognition for honest
@@ -335,13 +340,13 @@ below.
   [10](10-contribution.md).
 
 - **The court:** supplies a judgment but not, by itself, a complete or current
-  authority to confine. See Chapters [2](02-standing.md),
+  authority to confine. See Chapters [2](02-public-answerability.md),
   [4](04-the-shield.md), [7](07-a-prisoner-is-a-person.md), and
   [13](13-the-one-thing-taken.md).
 
 - **The review and appeals bodies:** examine conduct, receive challenges, and
   appear as holders of duties. The text distinguishes a duty assigned to them
-  from action by them. See Chapters [2](02-standing.md),
+  from action by them. See Chapters [2](02-public-answerability.md),
   [5](05-voiding.md), [9](09-the-vote-conviction-does-not-take.md), and
   [14](14-when-the-system-notices-it-broke.md).
 
@@ -360,7 +365,7 @@ below.
 
 - **The State:** owes the floor and is itself answerable as a public body. That
   legal position does not prove delivery. See Chapters
-  [2](02-standing.md), [8](08-what-you-are-owed.md), and
+  [2](02-public-answerability.md), [8](08-what-you-are-owed.md), and
   [15](15-the-five-joints.md#the-state).
 
 ### Principal named cases
@@ -376,7 +381,7 @@ below.
   [10](10-contribution.md).
 
 - **Boss and Rebel:** why recalled power and permanent answerability must remain
-  separate. See Chapter [2](02-standing.md).
+  separate. See Chapter [2](02-public-answerability.md).
 
 - **Don, Pax, Sly, Kel, and Rex:** the shield's false-target, review-window,
   deceit, and repeat-claim tests. See Chapter [4](04-the-shield.md).
@@ -424,7 +429,7 @@ also a gap map: a chapter touching one edge of a domain is not full coverage of
 the domain.
 
 - **Personhood and life course:** Chapters
-  [1](01-what-counts-as-evidence.md), [2](02-standing.md),
+  [1](01-what-counts-as-evidence.md), [2](02-public-answerability.md),
   [7](07-a-prisoner-is-a-person.md), and
   [9](09-the-vote-conviction-does-not-take.md). The constitutional source now
   gives children independent standing and voice; makes general adulthood
@@ -465,7 +470,7 @@ the domain.
   these chapters do not supply the missing economic system.
 
 - **Democracy, government, and administration:** Chapters
-  [2](02-standing.md), [3](03-who-holds-the-pen.md),
+  [2](02-public-answerability.md), [3](03-who-holds-the-pen.md),
   [9](09-the-vote-conviction-does-not-take.md), and
   [12](12-changing-the-rules.md). They cover selected authority, franchise, and
   amendment edges rather than a complete government.
@@ -603,12 +608,12 @@ correction route is complete or operational.
 
 ### Why the chapters have this order
 
-**Text diagram:** permitted evidence → standing → credentials → shield and
-voiding → clawback → prisoner/person → floor and vote → contribution, placement,
-and rule change → movement → breach markers.
+**Text diagram:** permitted evidence → public answerability → credentials →
+shield and voiding → clawback → prisoner/person → floor and vote → contribution,
+placement, and rule change → movement → breach markers.
 
 **Prose equivalent:** Later conclusions depend on earlier ones. The record comes
-first because every later rule reads it. Standing precedes credentials;
+first because every later rule reads it. Public answerability precedes credentials;
 credentials feed the accountability instruments; voiding feeds clawback;
 custody feeds personhood, the floor, placement, and movement; the final breach
 markers depend on results produced below them. This dependency order explains

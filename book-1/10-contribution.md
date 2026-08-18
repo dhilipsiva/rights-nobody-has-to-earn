@@ -76,11 +76,11 @@ earns nothing.
 Bela taught Cira — a real act, still on the record, never disputed. Bela is not
 recognised, because Bela was voided. The teaching happened and produces nothing.
 
-The same for the examiner, and here the door refuses twice over. Lupo examined Mira
-and lied about it. The lie shuts the door on that examination by itself — a dishonest
-examination earns nothing, even for an examiner in otherwise good standing — and the
-lie was adjudicated, so Lupo is voided, and the void shuts every door after it. Dev
-judged his own child, lost his credibility for it, and earns nothing either — not
+The same for the examiner, and here the door refuses twice over. Lupo examined Mira and
+lied about it. The lie shuts the door on that examination by itself — a dishonest
+examination earns nothing, even for an examiner whose credibility is otherwise intact —
+and the lie was adjudicated, so Lupo is voided, and the void shuts every door after it.
+Dev judged his own child, lost his credibility for it, and earns nothing either — not
 merely nothing for that judgment, nothing at all.
 
 This is the sharp edge of the previous chapters meeting this one. Voiding does not
@@ -152,17 +152,17 @@ price. It is low, and it is no longer nothing, and the void's own examinations �
 the ones that destroy a person's word — still ask for no reason at all, which is
 chapter 5's open question and stays it.
 
-One more refusal was on that door all along, and it is worth naming now that the
-door has been in the light: it does not pay the recalled. Having your power
-withdrawn and being found a liar are separate findings, and the door reads each on
-its own — a recall is not a voiding, so the voiding guard would never catch it, and
-the door carries a guard of its own. (The recall does not touch the seat, either;
-the chapter on standing is where that matters.) The record's live case is the official this book
-has already watched being removed, who left a real examination standing on the
-books. He earns nothing from it. And not for want of grounds: give that examination
-its written why, measured, and the door still refuses, because the recall mark is
-read by itself and it is enough. Power was withdrawn, so the work of wielding it
-stops paying — including the work already done.
+One more refusal was on that door all along, and it is worth naming now that the door
+has been in the light: it does not pay the recalled. Having your power withdrawn and
+being found a liar are separate findings, and the door reads each on its own — a recall
+is not a voiding, so the voiding guard would never catch it, and the door carries a
+guard of its own. (The recall does not touch the seat, either; the chapter on public
+answerability is where that matters.) The record's live case is the official this book
+has already watched being removed, who left a real examination standing on the books. He
+earns nothing from it. And not for want of grounds: give that examination its written
+why, measured, and the door still refuses, because the recall mark is read by itself and
+it is enough. Power was withdrawn, so the work of wielding it stops paying — including
+the work already done.
 
 That is a better arrangement than most, and it is not nothing to worry about. The
 design has decided that scrutiny is a contribution on a par with teaching and work.

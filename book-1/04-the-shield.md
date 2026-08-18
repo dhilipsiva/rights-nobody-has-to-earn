@@ -34,38 +34,38 @@ their accuser, their victim, a stranger — and become unjailable. The strongest
 protection in the society was available to anyone who could type a sentence, and it
 protected them from consequences for the very act they were being prosecuted over.
 
-It fails now, and the fix is one condition: **the person you expose must have
-standing.** Pax has none. Pax was never seated, holds no public office, and is not the
+It fails now, and the fix is one condition: **the person you expose must be publicly
+answerable.** Pax is not. Pax was never seated, holds no public office, and is not the
 sort of person the shield exists to let you point at. Don has no shield and Don is a
 prisoner.
 
 The condition is doing something precise. The shield is not a reward for making an
 accusation. It is a protection against *retaliation by power*, and the design's test
-for power is standing — held now or ever, since the last chapter made it
+for power is public answerability — held now or ever, since the last chapter made it
 permanent. Point at a private person and you have not exposed
 anything the shield was built for — you have simply made an accusation, and
 accusations, as Chapter 1 established, do not by themselves move anything.
 
 So how narrow is the thing standing between Don and a shield? One entry wide. The
 frame-up fails on an absence — Pax was never seated, holds no office, is nobody's
-authority — which means it can be repaired by supplying the missing presence. Standing
-arrives by two routes, and one of them is a single line saying that a body is public,
-adjudicated by nobody and asked of no one. Write that line about the victim. Pax
-becomes an authority; the shield attaches to the very exposure Don manufactured; the
-conviction stops deriving and Don walks, defended by the machinery for having framed
-the person he injured. Measured on a copy, and pinned beside this chapter's own case.
-What separates a failed frame-up from a working one is a word about the target, and it
-is a word the world may say.
+authority — which means it can be repaired by supplying the missing presence.
+Answerability arrives by two routes, and one of them is a single line saying that a body
+is public, adjudicated by nobody and asked of no one. Write that line about the victim.
+Pax becomes an authority; the shield attaches to the very exposure Don manufactured; the
+conviction stops deriving and Don walks, defended by the machinery for having framed the
+person he injured. Measured on a copy, and pinned beside this chapter's own case. What
+separates a failed frame-up from a working one is a word about the target, and it is a
+word the world may say.
 
 ## Sly
 
 Sly injured Pax too. Then Sly exposed the court.
 
-The court has standing. There is no finding that Sly's exposure was made in bad
+The court is answerable. There is no finding that Sly's exposure was made in bad
 faith, because nobody has examined it yet. So Sly's shield holds, and Sly — who
 injured someone, and who is being prosecuted for it — walks free.
 
-The court's standing, on which all of that rests, is itself an entry: a line saying
+The court's answerability, on which all of that rests, is itself an entry: a line saying
 the court is public. Remove it and every verdict in this section inverts. The book
 keeps a sabotaged copy of the record with exactly that line missing and runs its
 checks against it, so this is a claim executed rather than argued, on every run.
@@ -170,16 +170,16 @@ window has to be closed separately, one examination at a time.
 
 Notice what every case above has in common. In none of them does anyone decide whether
 the person reaching for the shield deserves protection. Nobody weighs their sincerity. The shield attaches
-or does not attach according to two questions the record answers — does the person you
-exposed hold standing, and has your exposure been found deceitful — and everything
+or does not attach according to two questions the record answers — is the person you
+exposed answerable, and has your exposure been found deceitful — and everything
 both rest on is written where it can be argued with. Sincerity never enters, which is what stops the shield from
 becoming a matter of whether the people evaluating you find you sympathetic.
 
 ## What it costs
 
 The costs line up with the choices defended above — the default that favours the
-accuser, the scope that closes one claim at a time, and the standing that never lapses
-— and the later ones compound each other.
+accuser, the scope that closes one claim at a time, and the answerability that never
+lapses — and the later ones compound each other.
 
 The first is Sly, and it has already been named: a guilty person is free during the
 window, every time.
@@ -189,7 +189,7 @@ review body, and opening the next one costs a sentence. The exchange rate runs t
 way, and nothing in the design changes it.
 
 The third compounds with the last chapter. The shield attaches when you expose
-someone *with standing*, and standing is never revoked. So the set of people whose
+someone *answerable*, and answerability is never revoked. So the set of people whose
 exposure grants protection only ever grows. Every person a seating body has ever
 chosen stays on that list permanently, including the recalled, the disgraced and the
 long dead. A defendant a century from now can reach back, expose someone nobody
@@ -204,18 +204,18 @@ without anybody doing anything, because the only thing that ever changes is that
 gets longer.
 
 Should it be bounded — by time, or by requiring the exposed conduct to be recent? The
-record can now hold a witnessed claim that one event preceded another. It can also
-limit a court's authority through a reviewed interval. Neither change ages an exposure
-or narrows this shield. The shield asks only whether the exposed person ever held
-standing and whether this particular exposure has been found deceitful; it deliberately
-does not read the new order or interval.
+record can now hold a witnessed claim that one event preceded another. It can also limit
+a court's authority through a reviewed interval. Neither change ages an exposure or
+narrows this shield. The shield asks only whether the exposed person ever held
+answerability and whether this particular exposure has been found deceitful; it
+deliberately does not read the new order or interval.
 
 That refusal preserves two things. A recall still cannot become an escape hatch for the
 official who was exposed, and missing or disputed time evidence cannot strip protection
 from the person exposing them. The cost remains the reach-back already priced here:
-standing never lapses, an old name can still open a shield, and each claim must still
-be examined on its own. The design can now describe order elsewhere. It has chosen not
-to make recency the price of this protection.
+answerability never lapses, an old name can still open a shield, and each claim must
+still be examined on its own. The design can now describe order elsewhere. It has chosen
+not to make recency the price of this protection.
 
 So the list grows, because three protections hold, and the growing is what they
 jointly cost. That bill was already itemised above; nothing here shrinks it. A

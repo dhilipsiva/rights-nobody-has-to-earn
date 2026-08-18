@@ -139,7 +139,8 @@ carries no verdicts.
    Since v0.5 this chapter also carries the severity derivation, because `severe`
    left the list and the chapter whose subject is the boundary is the chapter that
    has to say so.
-2. **Standing, and Why It Is Never Revoked.** `authority`: derived here, with a
+2. **Public Answerability, and Why It Is Never Revoked.** `authority`: derived here,
+   with a
    negation-free cone — a property it does **not** share with `severe`, which reads a
    disequality and therefore sits at stratum 1. Two derivations since
    the Article 7 split — `public` for institutions, `choose` for seating. Seating is
@@ -178,7 +179,7 @@ and accountability layers.
    firewall demonstration lives here**: write a law that jails people for not
    holding the right belief, and the constitution will not compile. Show the rule,
    the error, and the same rule loading fine against a right that is not on the
-   floor. Then state where the protection stops — standing and points are still
+   floor. Then state where the protection stops — credibility and recognition are still
    reachable, and positive compulsion is untouched.
 9. **The Vote Conviction Does Not Take.** `decide($x, Ballot)` — a convicted person
    retains the franchise. New; the old spine had no such chapter.

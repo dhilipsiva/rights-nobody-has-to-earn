@@ -216,8 +216,8 @@ the same terms as anyone who exposes any other authority. It owes, and it is
 answerable, and it was never given the credential that makes an examination count —
 so it can write down what it likes about you and none of it will void your credibility
 or take what you earned. The duty and the pen are in different hands. That
-answerability rests on an entry, like everything else here, and the chapter on
-standing prices exactly what a single deletion would do to it.
+answerability rests on an entry, like everything else here, and the chapter on public
+answerability prices exactly what a single deletion would do to it.
 
 Then the three things this does not buy, and they have the shape everything in this
 chapter has.

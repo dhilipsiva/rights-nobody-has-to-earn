@@ -109,10 +109,10 @@ and it arrived whole: her word worth nothing, the loss recorded against her
 recognition, every door to earning shut — everything the strongest sanction in this
 design carries, delivered through the article about changing rules.
 
-Put that route beside the front door and measure it. Voiding a person properly takes
-two examiners, seated by different bodies, neither related to her, both in good
-standing, in the same period — the whole apparatus of chapter 5, built so that no
-single hand can do it. This route took one entry, written by anyone, naming no
+Put that route beside the front door and measure it. Voiding a person properly takes two
+examiners, seated by different bodies, neither related to her, both with their
+credibility intact, in the same period — the whole apparatus of chapter 5, built so that
+no single hand can do it. This route took one entry, written by anyone, naming no
 examiner, showing no grounds. The most carefully guarded verdict in the design had a
 back entrance through a rule about a different subject entirely.
 

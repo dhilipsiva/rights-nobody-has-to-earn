@@ -1544,7 +1544,7 @@
       "future_trigger": "Any closed-world completeness, provenance, or runtime deletion claim requires re-review."
     },
     {
-      "artifact_ref": "book-1/02-standing.md::Those facts name Appeals but authenticate no writer",
+      "artifact_ref": "book-1/02-public-answerability.md::Those facts name Appeals but authenticate no writer",
       "current_claim": "The forgiveness pair changes only the formal believability conclusion; it names Appeals without authenticating either writer or purpose.",
       "classification": "revised_and_scoped",
       "reason": "The forgiveness matrix and generic-judgment reuse case disproved the prior description of two entries written by the body whose business relief is.",

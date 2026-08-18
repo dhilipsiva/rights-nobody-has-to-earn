@@ -1,7 +1,7 @@
 # ── Chapter 2 fidelity pins: "Standing, and Why It Is Never Revoked" ─────────
 #
 # KIND: CONTENT pin. Run:
-#   ./verify.sh --only book-1/02-standing.pins.nibli
+#   ./verify.sh --only book-1/02-public-answerability.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
@@ -99,7 +99,7 @@ authority(Pax).
 # => FALSE
 
 # [v0.7] Both pens, or the claim is only half-tested. Chapter 3 says the court
-# has "standing and neither pen"; with two issuers, a pin on one of them would
+# "is answerable and holds neither pen"; with two issuers, a pin on one of them would
 # leave the other free to drift.
 ? permits(Tribunal, Court).
 # => FALSE
@@ -107,7 +107,9 @@ authority(Pax).
 # ── The two senses of one English word, held apart ───────────────────────────
 # The manuscript used "standing" for BOTH `authority` and `false` until v0.6,
 # and carried two bolded sentences six chapters apart saying opposite things
-# about the same noun. `false` is now "credibility" in the prose. These three
+# about the same noun. `false` is now "credibility" in the prose, and `authority`
+# is "public answerability" since the state-form ruling reserved "standing" for
+# universal personhood. These three
 # pins are the guard against the senses re-merging: they must sit ADJACENT, on
 # one person, so that a future edit collapsing them cannot pass green.
 #

@@ -105,7 +105,7 @@ otherwise would be the kind of claim this chapter is about.
 The distinction the list enforces is between what happened and what follows.
 
 Take a case. Hano injured Ivo. A court judged Hano. Both of those are facts: they are
-events in the world, and someone with standing recorded them. Hano is also a
+events in the world, and someone publicly answerable recorded them. Hano is also a
 prisoner — but that is not a fact anyone recorded. Nobody wrote it down. It follows,
 from the injury and the judgment together, and from the absence of certain other
 things: no successful appeal, no finding that the court itself was compromised, no
@@ -120,11 +120,11 @@ want a person imprisoned, you must produce the facts that lead there, and every 
 of those facts is itself something the world may say and someone can dispute. The
 short path — writing down the answer — is closed.
 
-**Nor can you hand yourself the authority to judge.** Standing is a conclusion too.
-Either a seating body chose you, or you hold a public office. Those are the only
-routes, and every one leaves a mark somebody else can see. You cannot appoint yourself.
-Somebody accused of a crime cannot become, in the course of defending themselves, the
-sort of person whose findings count.
+**Nor can you hand yourself the authority to judge.** Public answerability is a
+conclusion too. Either a seating body chose you, or you hold a public office. Those are
+the only routes, and every one leaves a mark somebody else can see. You cannot appoint
+yourself. Somebody accused of a crime cannot become, in the course of defending
+themselves, the sort of person whose findings count.
 
 **Nor can you write down that an offence was serious.** This one was a slot on the
 list until recently, and taking it off is the clearest example of the whole idea, so it

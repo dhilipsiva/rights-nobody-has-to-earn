@@ -151,13 +151,13 @@ them, which somebody can answer.
 
 Contradict it, or delete it. The record of the offence is entries, and the design's
 measured levers include this one: remove the single line recording what Lalo did to
-Mina, and the severity conclusion goes with it, and Lalo moves out of high security.
-No contradiction, no answering, nobody attached — an absence where a fact used to be.
-The dispute described above is the honest route to moving somebody; the deletion is
-the quiet one. What the standing chapter says about deletions applies here with a
-person's placement on the other end: some of them would be noticed, because the books
-this design keeps about itself happen to read the deleted fact for other reasons —
-but only some, by accident, never by guarantee.
+Mina, and the severity conclusion goes with it, and Lalo moves out of high security. No
+contradiction, no answering, nobody attached — an absence where a fact used to be. The
+dispute described above is the honest route to moving somebody; the deletion is the
+quiet one. What the public-answerability chapter says about deletions applies here with
+a person's placement on the other end: some of them would be noticed, because the books
+this design keeps about itself happen to read the deleted fact for other reasons — but
+only some, by accident, never by guarantee.
 
 One further caution keeps derived placement from sounding like a solved problem. No
 rule inside the society forbids overlapping destinations. The current routes happen not

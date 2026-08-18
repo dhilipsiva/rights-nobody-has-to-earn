@@ -180,7 +180,7 @@ REQUIRED_OBSERVATIONAL_IDS = {f"OE-{number}" for number in range(1, 5)}
 REQUIRED_PREMISES = {"free", "at", "person", "rotten", "forgive", "judge", "clear"}
 REQUIRED_NARROWNESS_FILES = {
     "book-1/01-what-counts-as-evidence.md",
-    "book-1/02-standing.md",
+    "book-1/02-public-answerability.md",
     "book-1/03-who-holds-the-pen.md",
     "book-1/03-who-holds-the-pen.pins.nibli",
     "book-1/05-voiding.md",

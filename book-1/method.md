@@ -644,7 +644,7 @@ duty.
 There is a second thing to say about the fixtures, and it is a weakness
 rather than a strength, so it belongs here rather than in a footnote.
 Source counterfactuals exist for a few rule and fact changes — a seat, a
-court's standing. The amendment audit executes a bounded set of candidate
+court's answerability. The amendment audit executes a bounded set of candidate
 source edits, and the record red-team names a few more ground-entry deletions.
 The placement audit is one bounded exception to accidental coverage: across
 its declared subject states, severity, inert family axis, and typed
