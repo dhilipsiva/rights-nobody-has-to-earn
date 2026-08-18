@@ -980,7 +980,14 @@ DELIVERY_EFFECT_POLICY = {
  'arrival-not-roster-conditioned': ('class-02', ['class-01'], ['material-floor-access'], ['FS-CLM-05']),
 }
 EFFECT_POLICY.update(DELIVERY_EFFECT_POLICY)
-DELIVERY_STATEMENT_IDS = ()
+DELIVERY_STATEMENT_IDS = (
+    "1895923b6ccf7fa49418d3b44a7eeaceeaa287db2371586052782d74bc337d7c",
+    "ba4be9a5c3e7dc0ff6a5abef5813871b2494511fca4c841ef381e218538952a9",
+    "7ed9f9790f518441114bf12d10f649ad0c1d3d00fc122da404301c49b6535726",
+    "ac57535a9a230c5ecb0d1a0862e61a8eb1a4e5ce71801d5e4e907972517e9e72",
+    "2bdefdb9e029bc4ad762ea2508072c8914adfdaed92eeaf818fd6b400a9e95b4",
+    "fa4ba5b070f5187db305b21ee2759a4efdcd186874df846808670c1dfc2827a3",
+)
 FLOOR_ENTITLEMENT_LINES=(
  "entitled(every person, event { secure() }).","entitled(every person, event { eats() }).",
  "entitled(every person, event { dwell() }).","entitled(every person, event { healthy() }).",
@@ -1047,7 +1054,7 @@ POWER_BOOK2_OWNER = (
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
-        "fcb8b0d7052d7b35c41040a8040fa1f82ccf22d3d48fe6213fcc601bb44b9fbe"
+        "4820e600d1eb4249cf6adf2d45b86169a2f3c61a431baf803fd993155bda87cf"
     ),
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": (

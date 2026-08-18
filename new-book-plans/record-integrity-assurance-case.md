@@ -460,7 +460,7 @@ Legacy family, protected-home, parent, marriage, and sibling records: family, ho
 
 ### RC-5 — Delivery and contribution records
 
-Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model.
+Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source.
 
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
 - **Failure posture:** A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome.
@@ -509,6 +509,7 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | `public` | `RC-2` | Standing, status, and public-power records |
 | `put` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `ratifies` | `RC-1` | Constitutional-change records |
+| `receives` | `RC-5` | Delivery and contribution records |
 | `replace` | `RC-6` | Temporal transition, order, and review records |
 | `rotten` | `RC-2` | Standing, status, and public-power records |
 | `show` | `RC-3` | Case evidence, findings, filings, and remedy records |
@@ -704,7 +705,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `942abf5976afd4012b3b07fdeab01c6d84952d92b6d0cf6cd98b68b48b424461`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

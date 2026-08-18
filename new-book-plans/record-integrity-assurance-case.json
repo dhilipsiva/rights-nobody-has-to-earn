@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "942abf5976afd4012b3b07fdeab01c6d84952d92b6d0cf6cd98b68b48b424461",
+  "assertion_surface_contracts_sha256": "8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -641,7 +641,7 @@
     {
       "id": "RC-5",
       "title": "Delivery and contribution records",
-      "description": "Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model.",
+      "description": "Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source.",
       "assurance_claims": [
         "RI-1",
         "RI-2",
@@ -717,6 +717,7 @@
     "public": "RC-2",
     "put": "RC-3",
     "ratifies": "RC-1",
+    "receives": "RC-5",
     "replace": "RC-6",
     "rotten": "RC-2",
     "show": "RC-3",

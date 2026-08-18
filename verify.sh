@@ -179,14 +179,18 @@ out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
 # ground fact) moves this and may falsify prose that describes the list.
 n=$(grep -o 'Evidence predicates ([0-9]*)' "$SPINE" | grep -o '[0-9]*')
+# 2026-08-18: 41 -> 42. `receives` joined the record as the recipient-side
+# half of a delivery. Chapters 1, 3 and 5 were re-read against the list: they
+# describe what the record may hold in ordinary English and never the relation
+# name, which the jargon sweep guarantees, so no prose claim moved with it.
 # 2026-08-17: 40 -> 41. `approves` split into `ratifies` (amendment tally) and
 # `endorses` (case-bound custody review), so one name became two. Chapters 1, 3,
 # 5, 12 and 13 were re-read against the list: they describe the SENSE in
 # ordinary English ("the electorate approves it", "separate routes must approve
 # it") and never the relation name, which the jargon sweep guarantees, so no
 # prose claim moved with the split.
-[ "$n" = "41" ] && pass "evidence vocabulary is 41" \
-  || fail "evidence vocabulary is $n, not 41" "chapters 1, 3 and 5 describe the list; re-read them against it"
+[ "$n" = "42" ] && pass "evidence vocabulary is 42" \
+  || fail "evidence vocabulary is $n, not 42" "chapters 1, 3 and 5 describe the list; re-read them against it"
 
 # ── 2g. the dormant reader contract stays structural and privacy-minimal ─────
 # This is an artifact check. It is not R6's dedicated executable evidence gate,
@@ -565,6 +569,12 @@ out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/substantive-equality.pins.n
 # 5e. bodily-autonomy, care, family, and life-course non-power family
 # This executes source-bound normative barriers and typed evidence routes only.
 # It supplies no clinical finding, service, operation, delivery, or T3 evidence.
+step "delivery and receipt executions"
+out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/delivery-receipt.pins.nibli 2>&1) \
+  && pass "$out" \
+  || fail "delivery and receipt execution failed" "$out"
+
+# ── 5f. bodily-autonomy, care, family, and life-course non-power family
 step "family and life-course executions"
 out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/family-life-course.pins.nibli 2>&1) \
   && pass "$out" \
@@ -635,7 +645,8 @@ step "counterfactuals"
 #
 # NOTE these pins are OUTSIDE the :expect-pins reconciliation above, checked
 # per-file here. Do not "fix" the headline sum to include them.
-for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-direct-equality:1:0             no-equality-data-wall:1:0 no-positive-measure-end:1:0             no-automatic-adulthood:1:0 no-family-confinement-wall:1:0             no-missing-kinship-independence:1:0 no-pregnancy-authority:1:0             no-dead-conjuncts:1:1 unguarded-pen:0:1 undelivered-marker:0:1; do
+for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-direct-equality:1:0             no-equality-data-wall:1:0 no-positive-measure-end:1:0             no-automatic-adulthood:1:0 no-family-confinement-wall:1:0             no-missing-kinship-independence:1:0 no-pregnancy-authority:1:0             no-dead-conjuncts:1:1 no-delivery-independence:1:1 \
+            unguarded-pen:0:1 undelivered-marker:0:1; do
   f=${spec%%:*}; want="${spec#*:}"
   removed=$(diff "$KB" "$CF/$f.nibli" | grep -c '^<')
   added=$(diff "$KB" "$CF/$f.nibli" | grep -c '^>')

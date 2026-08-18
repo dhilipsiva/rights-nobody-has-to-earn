@@ -582,6 +582,7 @@ all $x: person($x) -> prevents($x, UnnecessaryPositiveMeasure).
 all $x: person($x) -> prevents($x, UnboundedPositiveMeasure).
 all $x: person($x) -> prevents($x, PoliticalEqualityMeasureEvasion).
 all $x: person($x) -> prevents($x, ReusableEligibilityIdentity).
+all $x: person($x) -> prevents($x, ExpiredPositiveMeasureContinuation).
 all $x: person($x) -> prevents($x, UnrepairedHistoricalBarrier).
 all $x: person($x) -> prevents($x, HistoricalAccountabilityErasure).
 all $x: person($x) -> prevents($x, EqualityInitiationBlock).
@@ -752,7 +753,7 @@ all $x: all $y: person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubsti
 # arrives for a confined person. The liberty shell carries both freedoms as
 # person-held limits, using constants that are deliberately not joined to these
 # predicates. Do not wire them together.
-all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p).
+all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, FoodScope) -> eats($p).
 all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, ShelterScope) & ~($w = $src) -> dwell($p).
 all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, CareScope) & ~($w = $src) -> healthy($p).
 all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, SecurityScope) & ~($w = $src) -> secure($p).

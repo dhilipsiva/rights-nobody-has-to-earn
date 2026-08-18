@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-18-delivery-receipt-coverage-v1",
+  "source_version": "fs-ledger-2026-08-18-delivery-receipt-formal-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -27085,7 +27085,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "fcb8b0d7052d7b35c41040a8040fa1f82ccf22d3d48fe6213fcc601bb44b9fbe",
+    "artifact_sha256": "4820e600d1eb4249cf6adf2d45b86169a2f3c61a431baf803fd993155bda87cf",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -103643,18 +103643,29 @@
     {
       "id": "FS-CVF-015",
       "title": "Delivery and receipt interfaces for the material floor",
-      "state": "coverage-ready",
+      "state": "formalized",
       "source_family_refs": [],
       "card_refs": [],
       "template_refs": [],
       "refusal_refs": [],
       "crosswalk_refs": [],
-      "formal_statement_refs": [],
-      "pin_group_refs": [],
-      "counterfactual_refs": [],
+      "formal_statement_refs": [
+        "1895923b6ccf7fa49418d3b44a7eeaceeaa287db2371586052782d74bc337d7c",
+        "ba4be9a5c3e7dc0ff6a5abef5813871b2494511fca4c841ef381e218538952a9",
+        "7ed9f9790f518441114bf12d10f649ad0c1d3d00fc122da404301c49b6535726",
+        "ac57535a9a230c5ecb0d1a0862e61a8eb1a4e5ce71801d5e4e907972517e9e72",
+        "2bdefdb9e029bc4ad762ea2508072c8914adfdaed92eeaf818fd6b400a9e95b4",
+        "fa4ba5b070f5187db305b21ee2759a4efdcd186874df846808670c1dfc2827a3"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/delivery-receipt.pins.nibli::# Delivery and receipt family - executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route"
+      ],
       "prose_refs": [],
       "part_v_refs": [],
-      "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready; belief and expression are deliberately unrouted with recorded reasons and no delivery route may be written for either.",
+      "blocked_before_drafting": "Formal rules, pins, and the source-removal counterfactual pass, but claim-bearing chapter and Part V prose remain blocked until audited references land. The routes are dormant, no arrival derives, and belief and expression stay deliberately unrouted with recorded reasons.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
       ],
@@ -127357,6 +127368,51 @@
       "scope_sha256": "060b825f1a5fd3279c3613943e64c3c1baee4c6fb53779ba3418b2b7689a2880",
       "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
       "executed_at_utc": "2026-08-18T09:18:16Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-29",
+      "title": "Delivery and receipt formalization current-source repository adversarial audit",
+      "source_version": "fs-ledger-2026-08-18-delivery-receipt-formal-v1",
+      "scope_sha256": "3fcd8c6d1c3f2faa4347fe2bd227caa3d5c24c21100b494d78aa693c6872cef6",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-18T09:47:19Z",
       "method": "repository-source-derived-adversarial-audit",
       "criterion_coverage": [
         "declared-rights",
@@ -171995,23 +172051,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-190-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish food delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-190 negative: an arrival record with no attestation at all feeds"
       },
       "counterfactual": {
         "id": "FS-CCE-190-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for food delivery receipt and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-190 counterfactual: with the arrival record and an independent"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -172223,23 +172279,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-191-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish shelter delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-191 negative: the attestation names a different scope, so the shelter"
       },
       "counterfactual": {
         "id": "FS-CCE-191-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for shelter delivery receipt and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-191 counterfactual: shelter now has a route that does not run through"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -172451,23 +172507,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-192-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish care delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-192 negative: an attestation with no arrival record behind it certifies"
       },
       "counterfactual": {
         "id": "FS-CCE-192-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for care delivery receipt and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-192 counterfactual: care reaching a person derives the floor item the"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -172679,23 +172735,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-193-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish security delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-193 negative: one route does not leak into another. Gita's security"
       },
       "counterfactual": {
         "id": "FS-CCE-193-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for security delivery receipt and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-193 counterfactual: the security floor item derives on the same shape."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -172907,23 +172963,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-194-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish company delivery receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-194 negative: an unwitnessed visit derives no company."
       },
       "counterfactual": {
         "id": "FS-CCE-194-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for company delivery receipt and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-194 counterfactual: company is a floor item and reaches a person the"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173135,23 +173191,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-195-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish provider may not certify receipt from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-195 negative: the provider attests its own delivery and it counts for"
       },
       "counterfactual": {
         "id": "FS-CCE-195-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for provider may not certify receipt and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-195 counterfactual: the same evidence with a witness who is not the"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173363,23 +173419,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-196-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish authorised independent delivery writer from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-196 negative: a witness who observes but holds no authorised role for"
       },
       "counterfactual": {
         "id": "FS-CCE-196-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for authorised independent delivery writer and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-196 counterfactual: authorisation is per person, so a role held for"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173591,23 +173647,23 @@
       },
       "negative_test": {
         "id": "FS-CCE-197-NEGATIVE",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Attempt to establish arrival not roster conditioned from the provider's own record, from a personal-state inference, or from a roster condition; formalization must supply an executable refusal.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-197 negative: the absence of a roster entry is not a finding either. It"
       },
       "counterfactual": {
         "id": "FS-CCE-197-COUNTERFACTUAL",
-        "status": "planned",
+        "status": "executable",
         "assertion": "Remove the direct effect for arrival not roster conditioned and show the actuality no longer derives while unrelated effects remain.",
         "source_refs": [
           "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-197 counterfactual: serve first. A person never entered on the roster,"
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "formalized-not-prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"

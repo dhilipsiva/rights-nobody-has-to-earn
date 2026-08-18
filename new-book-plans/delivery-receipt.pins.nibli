@@ -1,0 +1,187 @@
+# Delivery and receipt family - executable coverage pins
+#
+# Run just this suite:
+#   ./verify.sh --only new-book-plans/delivery-receipt.pins.nibli
+#
+# These pins prove two different things and the difference matters. The first
+# section proves the routes are DORMANT: the shipped record holds no arrival, so
+# no floor actuality derives for anybody through this family. The rest prove the
+# routes are not blind — supply the evidence in a probe and the actuality
+# derives, strip any one conjunct and it stops. Dormant is not the same as
+# absent, and a suite that only showed FALSE could not tell them apart.
+#
+# Nothing here establishes that anything arrived. Every probe fact below is
+# written by this file, not by the world.
+:expect-pins 28
+
+# ── The routes ship dormant ──────────────────────────────────────────────────
+# Adam is confined, so shelter and recorded speech derive for him through the
+# carceral routes that already existed. Food, care, security and company do not
+# derive for anyone at all, and that is the delivery gap this family makes
+# representable without closing.
+? eats(Adam).
+# => FALSE
+? healthy(Adam).
+# => FALSE
+? secure(Adam).
+# => FALSE
+? meets(Adam).
+# => FALSE
+
+# Bela is not confined. Shelter still does not reach her, because the new route
+# is dormant and the old one runs through confinement.
+? dwell(Bela).
+# => FALSE
+
+# ── FS-CCE-190 food delivery on recipient-side receipt ───────────────────────
+# FS-CCE-190 counterfactual: with the arrival record and an independent
+# attestation, food derives; the same person without them derives nothing.
+receives(Ama, Meal, Canteen).
+authorized(Inspector, DeliveryWitness, Ama).
+observe(Inspector, Meal, Ama, FoodScope).
+? eats(Ama).
+# => TRUE
+
+# FS-CCE-190 negative: an arrival record with no attestation at all feeds
+# nothing. The record of a thing changing hands is not evidence it arrived.
+receives(Bram, Meal, Canteen).
+? eats(Bram).
+# => FALSE
+
+# ── FS-CCE-191 shelter delivery on recipient-side receipt ────────────────────
+# FS-CCE-191 counterfactual: shelter now has a route that does not run through
+# a conviction. Cass is not confined and is housed.
+receives(Cass, Room, Housing).
+authorized(Inspector, DeliveryWitness, Cass).
+observe(Inspector, Room, Cass, ShelterScope).
+? dwell(Cass).
+# => TRUE
+? prisoner(Cass).
+# => FALSE
+
+# FS-CCE-191 negative: the attestation names a different scope, so the shelter
+# route does not fire. A witness cannot certify a nearby fact and have it count.
+receives(Dov, Room, Housing).
+authorized(Inspector, DeliveryWitness, Dov).
+observe(Inspector, Room, Dov, FoodScope).
+? dwell(Dov).
+# => FALSE
+
+# ── FS-CCE-192 care delivery on recipient-side receipt ───────────────────────
+# FS-CCE-192 counterfactual: care reaching a person derives the floor item the
+# book glosses as being cared for when ill. It does NOT derive that Elia is
+# well, and no rule anywhere reads this conclusion as a health finding.
+receives(Elia, Treatment, Clinic).
+authorized(Inspector, DeliveryWitness, Elia).
+observe(Inspector, Treatment, Elia, CareScope).
+? healthy(Elia).
+# => TRUE
+
+# FS-CCE-192 negative: an attestation with no arrival record behind it certifies
+# nothing. This is the shape a provider's own paperwork would take.
+authorized(Inspector, DeliveryWitness, Fen).
+observe(Inspector, Treatment, Fen, CareScope).
+? healthy(Fen).
+# => FALSE
+
+# ── FS-CCE-193 material security on recipient-side receipt ───────────────────
+# FS-CCE-193 counterfactual: the security floor item derives on the same shape.
+receives(Gita, Kit, Depot).
+authorized(Inspector, DeliveryWitness, Gita).
+observe(Inspector, Kit, Gita, SecurityScope).
+? secure(Gita).
+# => TRUE
+
+# FS-CCE-193 negative: one route does not leak into another. Gita's security
+# arrival says nothing about whether she ate.
+? eats(Gita).
+# => FALSE
+
+# ── FS-CCE-194 company on recipient-side receipt ─────────────────────────────
+# FS-CCE-194 counterfactual: company is a floor item and reaches a person the
+# same way. The isolation marker reads this conclusion, so it is the one route
+# here that an existing alarm can already see.
+receives(Hux, Visit, Community).
+authorized(Inspector, DeliveryWitness, Hux).
+observe(Inspector, Visit, Hux, CompanyScope).
+? meets(Hux).
+# => TRUE
+
+# FS-CCE-194 negative: an unwitnessed visit derives no company.
+receives(Ines, Visit, Community).
+? meets(Ines).
+# => FALSE
+
+# ── FS-CCE-195 a provider may not certify its own delivery ───────────────────
+# This is the family's load-bearing guard and the reason it exists. Jae has an
+# arrival record and an attestation, and the attesting witness is the provider
+# named as the source. Nothing derives.
+# FS-CCE-195 negative: the provider attests its own delivery and it counts for
+# nothing.
+receives(Jae, Meal, Kitchen).
+authorized(Kitchen, DeliveryWitness, Jae).
+observe(Kitchen, Meal, Jae, FoodScope).
+? eats(Jae).
+# => FALSE
+
+# FS-CCE-195 counterfactual: the same evidence with a witness who is not the
+# source derives. The only thing that changed is who attested.
+receives(Kip, Meal, Kitchen).
+authorized(Inspector, DeliveryWitness, Kip).
+observe(Inspector, Meal, Kip, FoodScope).
+? eats(Kip).
+# => TRUE
+
+# ── FS-CCE-196 authorised independent delivery writer ────────────────────────
+# FS-CCE-196 negative: a witness who observes but holds no authorised role for
+# this person attests nothing. Anyone may watch; not everyone may write.
+receives(Liv, Meal, Canteen).
+observe(Inspector, Meal, Liv, FoodScope).
+? eats(Liv).
+# => FALSE
+
+# FS-CCE-196 counterfactual: authorisation is per person, so a role held for
+# somebody else does not carry. Mira has a witness authorised for Liv.
+receives(Mira, Meal, Canteen).
+authorized(Warden, DeliveryWitness, Liv).
+observe(Warden, Meal, Mira, FoodScope).
+? eats(Mira).
+# => FALSE
+
+# A predeclared alternate is another holder of the same authorised role, not a
+# second rule. Nyx's ordinary witness is absent and the alternate carries it.
+receives(Nyx, Meal, Canteen).
+authorized(AlternateWriter, DeliveryWitness, Nyx).
+observe(AlternateWriter, Meal, Nyx, FoodScope).
+? eats(Nyx).
+# => TRUE
+
+# ── FS-CCE-197 an arrival is not conditioned on a roster entry ───────────────
+# FS-CCE-197 counterfactual: serve first. A person never entered on the roster,
+# whose arrival is independently witnessed, still derives the actuality — and is
+# still not on the roster. Requiring personhood here would make the record a
+# precondition of being fed.
+receives(Oke, Meal, Canteen).
+authorized(Inspector, DeliveryWitness, Oke).
+observe(Inspector, Meal, Oke, FoodScope).
+? eats(Oke).
+# => TRUE
+? person(Oke).
+# => FALSE
+
+# FS-CCE-197 negative: the absence of a roster entry is not a finding either. It
+# does not derive that Oke was refused, only that nothing was recorded.
+? err(Oke, Undelivered).
+# => FALSE
+
+# ── What none of this establishes ────────────────────────────────────────────
+# Every arrival above was written by this file. The design cannot make one
+# happen, and the floor items with no probe stay exactly where they were.
+? eats(Bela).
+# => FALSE
+? healthy(Bela).
+# => FALSE
+? secure(Bela).
+# => FALSE
+? meets(Bela).
+# => FALSE

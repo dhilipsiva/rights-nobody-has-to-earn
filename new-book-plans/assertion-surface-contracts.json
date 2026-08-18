@@ -19,14 +19,14 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "e4b53eb03f209288457fa6124356ffe7bc3d363137ba3894157256b8e46251f8",
+  "rules_sha256": "be60cf8404f29a0f5d7072e3fb69d0ac2d948f93906224a46d9dbc66abd34a7b",
   "facts_sha256": "d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
     "authority": "3db0ce4e56f1619d7ab36841d4a9af3d4f036f0e6f002d47dfbd22180785e30e",
-    "authorized": "077f7057e8f4bdc4b0e94859b21651ebd4d41034348ab61eb8c6a45e78e13792",
+    "authorized": "60e8c4dbbbf08cd34c10f9bbc286311bcca68ce3adcd0ced5feb76e72a6bc690",
     "become": "4267335bc5356d9b87bbaed0feeafc589728043818ecf5cb6757cbeec3ca05d4",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
@@ -49,8 +49,8 @@
     "deceive": "a4f72b9ecee3e1f46453b72b2d4264a676dc1ea5718688617c1aae8de824e268",
     "decide": "944be52dcac568ed0cfb8969ede8a44e2668190e2fbfe058ceab58af39234f66",
     "defend": "ebbf22b30f5700ddb76b2fa1afe988ee8ee6f455feb575fb7173d8db3b3d36c5",
-    "dwell": "040e09bbcd3af95a073f9e0d65f1ff038fc823e26cf54cf98150be641cdf3db3",
-    "eats": "ec5c441c4ad53c3180aea225ef200b4834c1ede4c21879d4f38dbc19d23ad653",
+    "dwell": "53fa678a18aa6c49af4da610e7b023097a335b4d1b29bcd7f7c9184af6cf85b5",
+    "eats": "418f543b52f7f350af7508d00c93a7f3b45e26cf1a895b29a2ab183624bfcb8c",
     "endorses": "b5c9d36cb2d095065308d47d10cf24e98cca7b395c2f50acad58395fd52fcbab",
     "entitled": "a8644e00386dce18427fbd010817b70f0488fdfe07c47df9b8a442efdae6fe59",
     "err": "93fbf4723dd77e76f3fb5a4a9000b59feda74dbf239a3515f5a6d79c62e6402f",
@@ -60,7 +60,7 @@
     "fit": "adaf2ee21afb2b77e5b2239567ffcaed2c6ba0170ee18a48bf935264fe5db4f1",
     "forgive": "4aec77f843480e1174a490affe517a76d4622a9bedb7e93a10ce451f9d0c9e7c",
     "free": "90761d03f8b013b42c210728c2191f5016a9a7f06db6e7d3fbeca09343a1110f",
-    "healthy": "5f96c1318f4b6853d786b289e5978e57457f0b47a527a056e92cedb92f40af8f",
+    "healthy": "ffb46e0c9c2a41f9b40297d2205e4b52227df7c436d1ecab8358fe6c29f09398",
     "hears": "74985a06768cd9aba07d5edd0304784870ce67e19a0a58e6f1032c3fbfd960d8",
     "home": "01c35f39cdc0b0672dab583823f4c65201f49de6c510836bdc3842d9806375e8",
     "injure": "260cd39a3f38a8757942ea8ad1e2da0909017a414a6a0660ce77ab4def76d46d",
@@ -71,9 +71,9 @@
     "lose": "4972501f211500ca67f0a74f3e92ee9391e5d9cc4f1349111f46ed7434d15c33",
     "married": "7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6",
     "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
-    "meets": "fe03e07990cdcb7ba3b27a9a82db6bee655e45aec057f6891fd2b2c5de87dd37",
+    "meets": "a9cca28717bb66c3f33f3ae83ed83caa3a7c6b75cd7bd226f41089f9c026c061",
     "obliged": "635a864a87d4b8aff407346d2b14c079714d8c078c78e622babd1972b1d26f9b",
-    "observe": "8debd68e43b9b3c94de923e310d93cc3a66df8d7ffb313ad4ce7c89fadf8910d",
+    "observe": "9f94170909c199add3a50931ba74fc967f6393870d3f5fda9bf8f38d0e499c99",
     "orderly": "59535e1c160c90a8cc609b4c73581a2b17a1bab4f31f46fecd54af05b69455ec",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
     "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
@@ -87,12 +87,13 @@
     "public": "6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60",
     "put": "afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627",
     "ratifies": "f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed",
+    "receives": "831a4f6828235da8359f1c1a63c78926ba874c1edda9dccff95c464c128df655",
     "reference": "93a4c6011f6ba49f45404b057d5d48bede4fd4af01bd7db375be7889797e951b",
     "related": "db842b4ed0ab783144c9b6b54230dadab4127139359fc264d29b98c6042143d2",
     "replace": "7c7b9e76b5f26c8f2ccacda3296897824209b86b4b03b939a8a78a319a7355e0",
     "reward": "381db14138f3712fdef796d739dc48d0cd5429bb61cc857be920c2611c6a95bd",
     "rotten": "ee4885e9421cf0307421540c855456259eb07c5cd5c2ff5dbd34656895ecb07e",
-    "secure": "bea1c2803936663b850221e46ae934d455c783bc48fac5a4037d9178eb427a8b",
+    "secure": "0d51f9a91db9dd75efac8136ea773463a82458093234b1ba6ebf9793ea71df6a",
     "severe": "a102d24e46a6291be1fbf1c9150bf310ddcfaa9d8342988b1ed63b02d329cee9",
     "show": "6f8d9509bc118699d35f0dfd418f1b994fe677cbf0387d95e6d18a1431162bd4",
     "sibling": "a66effae83ee434bf2303e7523c1a141bc4702c3ae6b8292c4506110e96aa14a",
@@ -2187,6 +2188,43 @@
         "standing",
         "birth",
         "record-integrity"
+      ]
+    },
+    "receives": {
+      "claimed_actor": "The first argument names the recipient, the second the thing, the third the source; no position authenticates the writer, and the relation is stative so it asserts no act by the recipient.",
+      "tuple_claim": "A thing reached this person from this source.",
+      "current_writer_authority": "Any fact-store writer can assert the recipient-side entry.",
+      "required_writer_authority": "An authorised delivery writer independent of the named source, with a predeclared alternate so an unavailable writer cannot withhold the route.",
+      "current_provenance": "No occasion, medium, accessibility accommodation, or challenge record is attached to the arrival entry.",
+      "required_provenance": "Recipient-side arrival evidence bound to the offered service and to the attesting witness, without inferring any personal outcome.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert `receives(Oke, Meal, Canteen)` beside an authorised attestation"
+        ],
+        "effect": "A floor actuality is certified from entries the recipient never controlled, and the delivery gap reads as closed for that person.",
+        "target": "eats",
+        "evidence_ref": "new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "withhold or delete `receives(Oke, Meal, Canteen)` after actual arrival"
+        ],
+        "effect": "The floor actuality stops deriving; absence is not a finding of non-delivery and must trigger outreach rather than terminate the entitlement.",
+        "target": "eats",
+        "evidence_ref": "new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+      },
+      "current_challenge_route": "No recipient correction, outreach, or accessible alternative is attached; the entry is a bare report and the engine authenticates nothing about it.",
+      "required_challenge_route": "Recipient contest, correction, outreach on a missing receipt, and medium-neutral alternatives that do not require the recipient to act.",
+      "risk_dispositions": [
+        "patchable",
+        "external"
+      ],
+      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "tags": [
+        "delivery",
+        "accessibility"
       ]
     }
   }

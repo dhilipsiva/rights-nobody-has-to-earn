@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: the provider-independence conjunct stripped from the food route
+#
+# Derivation is monotone and probe facts load on top, so no probe against the
+# real constitution can show what `~($w = $src)` prevents. This copy is the only
+# way that claim is executed rather than argued: one conjunct removed, and the
+# provider certifying its own delivery starts counting.
+:expect-pins 3
+# The kitchen supplies the meal AND attests that it arrived. Against the real
+# constitution this derives nothing; here it feeds the floor.
+receives(Jae, Meal, Kitchen).
+authorized(Kitchen, DeliveryWitness, Jae).
+observe(Kitchen, Meal, Jae, FoodScope).
+? eats(Jae).
+# => TRUE
+
+# The independent route still works, so this fixture removes a guard rather
+# than the rule — the difference a stale or over-broad fixture would hide.
+receives(Kip, Meal, Kitchen).
+authorized(Inspector, DeliveryWitness, Kip).
+observe(Inspector, Meal, Kip, FoodScope).
+? eats(Kip).
+# => TRUE
+
+# Only the food route lost its guard. Shelter still refuses a self-certifying
+# provider, which is what makes the flip above attributable to the one conjunct.
+receives(Lore, Room, Housing).
+authorized(Housing, DeliveryWitness, Lore).
+observe(Housing, Room, Lore, ShelterScope).
+? dwell(Lore).
+# => FALSE

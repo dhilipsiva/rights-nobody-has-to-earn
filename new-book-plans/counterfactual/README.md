@@ -54,6 +54,14 @@ three pins still passed, because a fixture that is a copy of the real file answe
 question the real file answers. `-F` (fixed string) and `-x` (whole line) cannot be
 misread that way.
 
+`no-delivery-independence` is the delivery family's guard on a copy. The food route
+carries `~($w = $src)`, which is the whole of what stops a provider certifying that its
+own delivery arrived, and derivation is monotone, so no probe against the real file can
+show what that conjunct prevents. Strip it here and the kitchen that supplied the meal can
+attest that it arrived. Its pins keep two controls beside the flipped verdict: the
+independent route still derives, and shelter still refuses a self-certifying provider, so
+a green result cannot come from having broken the family instead of the guard.
+
 Regenerate the changed-line and added-line fixtures with:
 
 ```
@@ -64,6 +72,14 @@ old = " & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, Carri
 assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
 pathlib.Path('new-book-plans/counterfactual/no-dead-conjuncts.nibli').write_text(
     s.replace(old, " -> false($audited)."), encoding='utf-8')
+EOF
+python3 - <<'EOF'
+import pathlib
+s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
+old = "observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
+pathlib.Path('new-book-plans/counterfactual/no-delivery-independence.nibli').write_text(
+    s.replace(old, "observe($w, $item, $p, FoodScope) -> eats($p)."), encoding='utf-8')
 EOF
 cp new-book-plans/constitution.nibli new-book-plans/counterfactual/unguarded-pen.nibli
 printf 'all $a: choose(Electorate, $a) -> permits(Review, $a).\n' \

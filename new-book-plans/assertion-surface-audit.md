@@ -25,7 +25,7 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `e4b53eb03f209288457fa6124356ffe7bc3d363137ba3894157256b8e46251f8`.
+- Authored-rule fingerprint: `be60cf8404f29a0f5d7072e3fb69d0ac2d948f93906224a46d9dbc66abd34a7b`.
 - Authored-fact fingerprint: `d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
@@ -85,7 +85,7 @@ channels. No exceptional channel exists in the current contract.
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `at` | roster-person, standing, first-contact, adulthood, placement, record-integrity | `person` | patchable, external, deliberately_refused | negative `dwell`, positive `building`, positive `decide`, positive `dwell`, positive `person`, positive `prevents` | `4ed39fcb58fb931e` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `decide`, positive `err`, positive `false`, positive `match`, positive `person`, positive `prisoner`, positive `succeed` | `077f7057e8f4bdc4` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `healthy`, positive `match`, positive `meets`, positive `person`, positive `prisoner`, positive `secure`, positive `succeed` | `60e8c4dbbbf08cd3` |
 | `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
 | `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `6fa58bc4be130c53` |
 | `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `9d000cd29a2bee16` |
@@ -109,7 +109,7 @@ channels. No exceptional channel exists in the current contract.
 | `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `4e3f1f3437d1e8e3` |
 | `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
 | `married` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `7ef6097705ac2859` |
-| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `err`, positive `match`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `succeed`, positive `time` | `8debd68e43b9b3c9` |
+| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `healthy`, positive `match`, positive `meets`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `9f94170909c199ad` |
 | `parent` | audit, privacy, conflict | `false` | patchable, external | positive `false` | `316cc4529059bf17` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `cd0ddf58592a42a0` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
@@ -117,6 +117,7 @@ channels. No exceptional channel exists in the current contract.
 | `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority`, positive `prevents` | `6c4ddcc62e4e5693` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
 | `ratifies` | amendment, democracy, public-power | `become` | patchable, external | positive `become` | `f29f74a1c73f8eb0` |
+| `receives` | delivery, accessibility | `eats` | patchable, external | positive `dwell`, positive `eats`, positive `healthy`, positive `meets`, positive `secure` | `831a4f6828235da8` |
 | `replace` | epoch-carry, record-integrity, replay, time | `collide` | patchable, external | positive `collide`, positive `complete`, positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` | `7c7b9e76b5f26c8f` |
 | `rotten` | epoch-carry, record-integrity, time | `false` | patchable, external | negative `err`, positive `match` | `ee4885e9421cf030` |
 | `show` | liberty, public-body, record-integrity | `defend` | patchable, external, deliberately_refused | positive `defend` | `6f8d9509bc118699` |
@@ -190,7 +191,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `077f7057e8f4bdc4b0e94859b21651ebd4d41034348ab61eb8c6a45e78e13792`.
+- **Reviewed route fingerprint:** `60e8c4dbbbf08cd34c10f9bbc286311bcca68ce3adcd0ced5feb76e72a6bc690`.
 
 ### `born`
 
@@ -577,7 +578,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `8debd68e43b9b3c94de923e310d93cc3a66df8d7ffb313ad4ce7c89fadf8910d`.
+- **Reviewed route fingerprint:** `9f94170909c199add3a50931ba74fc967f6393870d3f5fda9bf8f38d0e499c99`.
 
 ### `parent`
 
@@ -691,6 +692,22 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external.
 - **Owner:** `TODO.md::Define the democratic ceiling and majority process`.
 - **Reviewed route fingerprint:** `f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed`.
+
+### `receives`
+
+- **Tuple claim:** A thing reached this person from this source.
+- **Claimed actor:** The first argument names the recipient, the second the thing, the third the source; no position authenticates the writer, and the relation is stative so it asserts no act by the recipient.
+- **Current writer/authority:** Any fact-store writer can assert the recipient-side entry.
+- **Required writer/authority:** An authorised delivery writer independent of the named source, with a predeclared alternate so an unavailable writer cannot withhold the route.
+- **Current provenance:** No occasion, medium, accessibility accommodation, or challenge record is attached to the arrival entry.
+- **Required provenance:** Recipient-side arrival evidence bound to the offered service and to the attesting witness, without inferring any personal outcome.
+- **Cheapest harmful assert:** 1 operation(s): assert `receives(Oke, Meal, Canteen)` beside an authorised attestation. A floor actuality is certified from entries the recipient never controlled, and the delivery gap reads as closed for that person. Structural route: `receives` → `eats`. Evidence: `new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p).`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `receives(Oke, Meal, Canteen)` after actual arrival. The floor actuality stops deriving; absence is not a finding of non-delivery and must trigger outreach rather than terminate the entitlement. Structural route: `receives` → `eats`. Evidence: `new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p).`.
+- **Current challenge route:** No recipient correction, outreach, or accessible alternative is attached; the entry is a bare report and the engine authenticates nothing about it.
+- **Required challenge route:** Recipient contest, correction, outreach on a missing receipt, and medium-neutral alternatives that do not require the recipient to act.
+- **Risk disposition:** patchable, external.
+- **Owner:** `TODO.md::Specify delivery as a lifecycle`.
+- **Reviewed route fingerprint:** `831a4f6828235da8359f1c1a63c78926ba874c1edda9dccff95c464c128df655`.
 
 ### `replace`
 

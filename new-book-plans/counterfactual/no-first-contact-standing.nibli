@@ -103,6 +103,19 @@ admits("continue").   admits("date").       admits("limit").
 admits("list").       admits("observe").    admits("passport").
 admits("replace").
 # <T1-ADMISSIONS-END>
+# <DELIVERY-RECEIPT-ADMISSIONS-BEGIN>
+# [2026-08-18] `receives` (terdu'a: x1 is a recipient of gift x2 from donor x3)
+# is the recipient-side half of a delivery. It is STATIVE by deliberate choice:
+# the volitional alternative in the corpus — `get`, from cpacu, "gets /
+# procures / accepts" — would assert that the recipient acted, and the subjects
+# this relation exists for cannot. An infant, an unconscious patient and a
+# person held incommunicado are exactly who a receipt has to be writable about.
+# It is an INDEPENDENT relation and not a converse alias of any giving
+# relation. That distinction is the whole point: an alias compiles to the same
+# stored relation with places exchanged, so the giver's assertion would have
+# made the recipient-side fact true, which is the one thing this family forbids.
+admits("receives").
+# <DELIVERY-RECEIPT-ADMISSIONS-END>
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -702,6 +715,49 @@ all $x: person($x) & home($x) -> prevents($x, HomeStatusSubstitution).
 all $x: all $y: person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution).
 all $x: all $y: person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution).
 # <FAMILY-LIFE-COURSE-RULES-END>
+# <DELIVERY-RECEIPT-RULES-BEGIN>
+# [2026-08-18] DELIVERY AND RECEIPT. One rule per routed floor item. Each reads
+# a recipient-side arrival record and an independent attestation, and derives
+# the actuality. What makes these delivery routes rather than fiat is entirely
+# what sits upstream of the head: a record of something reaching a person.
+#
+# THE LOAD-BEARING CONJUNCT IS `~($w = $src)`. A provider's own record cannot
+# establish that its delivery arrived. Strip that one conjunct and the family's
+# whole purpose is gone while every pin below still looks plausible, which is
+# why it has its own counterfactual fixture. Same idiom as Article 4's
+# multi-signature rule, kept for the same reason.
+#
+# THERE IS DELIBERATELY NO `person($p)` CONJUNCT. Serve first: help is not
+# conditioned on a record entry, and a person never entered on the roster whose
+# arrival is independently witnessed still derives the actuality. Verified: the
+# actuality derives while `person` stays false. Adding the conjunct would make
+# the roster a precondition of being fed, which is the thing the design refuses.
+#
+# THE SCOPE CONSTANT CARRIES THE ITEM. `observe` is already this file's
+# two-place-and-scope attestation idiom; the witness attests at a named scope
+# and the scope is what routes the arrival to one floor item and no other.
+#
+# WHAT THIS DOES NOT DO. It makes an arrival REPRESENTABLE. It does not make
+# one happen, authenticate a witness, prove a writer honest, or establish that
+# any floor item ever reached anybody. Those are liveness claims and no rule
+# here can carry one. The routes ship DORMANT — the record holds no arrival, so
+# none of these heads derives for anyone, and every "derives" sentence written
+# before today stays true.
+#
+# `believe` AND `expresses` GET NO ROUTE, and that is a decision rather than an
+# omission. Certifying that a person believes is the compelled personal state
+# this design refuses, and the entitlement line for `believe` exists to refuse a
+# heresy law rather than to deliver a state. For `expresses` the claim is
+# narrower: the liberty is not delivered, while the record of speech already
+# arrives for a confined person. The liberty shell carries both freedoms as
+# person-held limits, using constants that are deliberately not joined to these
+# predicates. Do not wire them together.
+all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p).
+all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, ShelterScope) & ~($w = $src) -> dwell($p).
+all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, CareScope) & ~($w = $src) -> healthy($p).
+all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, SecurityScope) & ~($w = $src) -> secure($p).
+all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, CompanyScope) & ~($w = $src) -> meets($p).
+# <DELIVERY-RECEIPT-RULES-END>
 all $anyone: prisoner($anyone) -> person($anyone).
 # [v0.4 NEW] A released person is still a person. This line is not optional and
 # it is not symmetry for its own sake: `prisoner -> person` above is the ONLY

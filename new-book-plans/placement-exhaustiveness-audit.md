@@ -16,14 +16,14 @@ bounded fixture*, not classical negation or an independently established fact.
 ## Bound source manifest
 
 - Reviewed source: `new-book-plans/placement-exhaustiveness-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `a1151d7b0865785b099ffa2ce9ea48bb0d92655006bdf7b186930ae776a554d9`.
+- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10`.
 - Destination manifest: `HighSec`, `Homestay`.
 - Destination-manifest SHA-256: `72722479faa871b12184b5d32d5ee834a3d141318a1c653e3b3483cbb19416e0`.
 
 | produced relation | reviewed producer fingerprint | active producers |
 | --- | --- | ---: |
 | `fit` | `5b4d4ee65e23ad7f6f4991bd99303478e1d0ad42c564a103b743d8d9a704a8ac` | 1 |
-| `dwell` | `349561e2e1524f637e59e8e9e020a3600c7e30ab2562df01ba106f69c8f611ce` | 3 |
+| `dwell` | `bfdad6f0bb42683bfdae6bef626e9ab1a0b655c87ae58c6b01695b0e62dd74d7` | 4 |
 | `building` | `84c20af1469913c3868b25673f51989c30ddf58dae9292899cba94b8d320c080` | 2 |
 
 ### Active producer statements
@@ -33,6 +33,7 @@ bounded fixture*, not classical negation or an independently established fact.
 - `all $x: prisoner($x) & ~severe($x) -> fit($x, Homestay)`
 #### `dwell`
 
+- `all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, ShelterScope) & ~($w = $src) -> dwell($p)`
 - `all $x: prisoner($x) & at($x, PlacementHome) & fit($x, Homestay) -> dwell($x)`
 - `all $x: prisoner($x) & fit($x, Homestay) & ~at($x, PlacementHome) -> dwell($x)`
 - `all $x: prisoner($x) & severe($x) -> dwell($x)`
@@ -133,11 +134,11 @@ every affected subject and requires it to remain silent.
 
 | mutation | kind | baseline flips | alarm-silence cases | candidate source SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `d796ec5dccb6b0b443da76ddf8078bc7d9d9f2c7ddf945a3efdfe86956183de7` |
-| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `80c5690cc0ec60d95d8000c4c8c6c4299e5d9879450cb9f58b98582d11f1ac31` |
-| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `3e67ec4851884696ea675dbf076057fae75c82d00d55a527d797739134912572` |
-| `opposite-destination` | `opposite_destination` | 4 | 2 | `6fb143978b2b6ec0e3ecdd8b68109414266585793c69701f6231d128e653d7e9` |
-| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `751d78305db216b029566a8efa6eb1e158a1d35fdf54145556688848738a47aa` |
+| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `3d8d5dad8dc38d17d70f7916b25e9e88ca24b4076201ddcfa050007f4365faa6` |
+| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `ba1266c7cf30b5c3cf3760573d5acc1f0261341d890babe0e0d14d1144579451` |
+| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `5d97404eb8e0ee8e3d28cfe12f2a98ae562d7f06a5fba7a934b6c841b0277f6e` |
+| `opposite-destination` | `opposite_destination` | 4 | 2 | `e2f9b7fd3964f0c4261bf65489a998d78ebebe9cfa966a939cd05145b7ebb22a` |
+| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `d79b0c8fe95974724df88d508a913c2dab46ca0f374285d27afc11e43472fe2c` |
 
 ### duplicate-destination — An overlapping route adds LowSec beside Homestay
 
