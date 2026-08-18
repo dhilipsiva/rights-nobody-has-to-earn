@@ -1897,6 +1897,31 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 - **The current formal floor is eight rights**, spelled `entitled(every person, event { P() })`, and its protection is a **compile-time prohibition**: a rule punishing someone for lacking a floor right is refused by the stratifier. The floor is protected *because* it is reachable — it sits inside the `prisoner` cone. This is the verified kernel, not the final social taxonomy under the 2026-08-03 mandate; any expansion still needs a completed map contract and formal proof. Do not restate the older claim that "nothing derives it, so nothing can retract it"; that had the mechanism backwards.
 - **The current formal duty-bearer is a thin constitutional layer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider. Under the 2026-08-03 mandate, this is not the final public-branch or remedy architecture.
 - **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`08-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says.
+- **"Standing" is reserved for universal personhood; the office sense is "public
+  answerability"** — renamed book-wide 2026-08-18 (`13d0a7e`). The state-form and
+  family/life-course rulings reserve the word, and the bodies specification already
+  enforced that mechanically: an office-sense status field carrying it fails
+  generation, and the checker's own error names the replacement. Only the prose had
+  not moved, so chapter 2 taught the reserved word in the sense it is reserved
+  against. **The formal layer was untouched** — nothing is called `standing`;
+  `authority` carries the office sense and the `Standing*` constants feeding `person`
+  carry universal personhood — so no pin query depends on the word and the suite moved
+  by two comments and a filename. `book-1/02-standing.md` and its pin file are now
+  `02-public-answerability.*`, and the path is hard-coded in
+  `9-record-integrity-red-team.py`'s `REQUIRED_NARROWNESS_FILES`, one reviewed
+  `artifact_ref`, two ledger path lists, eight opening-note links, and `3-spine.md`'s
+  hand-authored chapter list, **which no generator covers**. **Three senses are held
+  apart and the third had leaked back**: universal standing (personhood), public
+  answerability (`authority`), and credibility (`false`). The last was migrated to
+  "credibility" in v0.6 with three adjacent pins guarding it, and the sweep found it
+  live again in `03:163`, in two "in good standing" idioms — one a few lines from
+  "lost his credibility" about the same person — and in `3-spine.md:181`, which used
+  "standing and points" for credibility and recognition against chapter 8's own pins.
+  **Do not reintroduce "standing" for either the office or the credibility sense.**
+  Chapter 2 keeps the ordinary word exactly once, as a mention that says why it is
+  reserved; the opening note's glossary carries an entry for each sense; and the
+  personhood and adjectival uses elsewhere are deliberately untouched.
+
 - **Recognition is a bare fact and is never ranked** — not by writing a mark, not by counting entries. Decided 2026-07-30 against the proposal that verified learning mint grades for the student and outcome-conditioned perks for the teacher; all three halves are refused. **(a) Students earn nothing for being taught.** Being taught is not a contribution, the doors in `10-contribution.md:3-8` are the doors, and the constitution is **not** edited to add a student minting rule — that would commit the design to paying a child (Cira is `person` without `mature`, which is the whole of `09:43-51`). **(b) Counted degree on the reward side is refused, not merely unbuilt.** Degree needs no arithmetic here, only the same relation twice with the objects held apart — the idiom the severity rules use at `constitution.nibli:452-453` — and the cast already supplies the mirror, since Cira has two teachers. **(c) Article 3 stays unconditional**: a teacher's recognition does not depend on whether the student learned, the same shape as the auditor rule that pays for the examination and not the outcome (`10:85-87`). **State the disanalogy, never "there is no score here"** — that is verified false and its source sentence was deleted in `c0bede6`. Chapter 1 concedes a computed rating already — the paragraph opening *“Even that concedes something, and it should be said out loud rather than found later”*: severity rates an **act**, is reached through a process the accused was part of, and ends with the sentence; a grade rates a **person's capability**, with nothing adjudicated and no end. That concession is an exception the design paid for once, not a precedent. Enforced, not merely recorded — `verify.sh` section 4 checks that nothing reads `reward`, and section 4b that no rule joins `teaches` or `work` with itself; both were negative-controlled against a scratch copy. Neither is a proof: a new name for a learning record (`studies` is in the corpus, unused) routes around both, and is caught by the evidence-count gate instead, which is the only reason the pair is sufficient. **This does not block the delivery route**: teaching that delivers `learn` is a floor actuality, not recognition. Delivering learning is not grading the learner.
 - **`person` is on chapter 1's evidence list**, decided 2026-07-30 and extended
   by T1 on 2026-08-05. The list had claimed to be everything the record can hold
@@ -2016,7 +2041,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   entry and one `capture` fact — no judging, no seat, no pen — and both false clauses are now
   pinned FALSE in chapter 5's suite. The tracker's alternative repair, seating Koa on both
   bodies as the count-isolating fixture, is **refused**: chapter 2 pins `authority(Koa)` as its
-  no-standing exhibit (*"two facts in the whole constitution, no seat, no office"*) and chapter
+  no-answerability exhibit (*"two facts in the whole constitution, no seat, no office"*) and chapter
   1's *"documented something"* rests on the same two facts, so that route falsifies two chapters
   to repair one. The count isolation lives in a **pin-file fixture** instead: Ambi, a fresh
   person seated by both bodies who judges and records — every act the rule asks of either
@@ -2080,7 +2105,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   where they bite**: the chapter's worked reasons needed correcting anyway — Lupo's door
   shuts twice over (per-pair `~deceive` for the lie itself, then the void) and Dev never
   documented anybody, so his "nothing at all" is carried by the void alone — and the third
-  door still pays a person in good standing for a bare `judge`+`capture` pair with no
+  door still pays a person of intact credibility for a bare `judge`+`capture` pair with no
   credential and no grounds (measured post-guard: a fresh clean person mints from the two
   writes), which is the `capture`-precondition bullet's territory, not this ruling's.
   Exhibits pinned in chapter 10's suite: the Vex pair, and the closing forced-Bela probe
@@ -2143,7 +2168,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   rather than an individual exception; an **epoch-recency fact** is an unadjudicated
   shield-stripping write — one fact retires a target from everyone's shield surface, the
   finding-with-no-finder class chapter 1 conceded, handed to whoever writes it; **lapsing or
-  re-certifying standing** revokes it, and Rebel's shield surviving Boss's recall (chapter 2's
+  re-certifying public answerability** revokes it, and Rebel's shield surviving Boss's recall (chapter 2's
   thesis, pinned three files over) is the standing refutation. Beneath all three, **the shield
   remains non-temporal**: T2 can represent a separately witnessed sequence, but no shield rule
   reads it, and within an unordered snapshot exposed-then-recalled and recalled-then-exposed
