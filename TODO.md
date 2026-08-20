@@ -144,21 +144,6 @@ reader claim follows. Scope inventory and other author-ruling work may proceed.
 Gate C remains open only for its mechanical artifact and release work; the
 project may not present withdrawal as completion of those checks.
 
-- [ ] **[AUTHOR-DRAFTED] Bring the existing ordinary-life passage into
-  conformance, or record the exception as permanent.**
-  - The 2026-08-08 register ruling is prospective and grandfathers the one
-    existing second-person passage, dating it **non-conforming on three counts**:
-    the warmth-and-water sentence depicts an arrival without naming the
-    entitlement that grounds it in the same sentence; the accusation sentence
-    traces to nothing, because the harm relations name the alleged offender and
-    victim and expressly not the writer; and no delivery-gap disclosure sits near
-    it in its part.
-  - The passage is the exemplar of the ruling's **form** clauses and remains so.
-    Only the assertion and proximity clauses are at issue.
-  - **This is author-owned prose and no session may edit it.** The ruling defines
-    the slot; the sentences are the author's. Either bring it into conformance or
-    record the exception as permanent with its reason.
-
 - **Channel precedents worth carrying.** Two corpus requests closed (`ratifies`
   and `endorses` for the approval split; `receives` for the recipient-side half
   of a delivery). The prompts are in git history; three lessons are not, and
