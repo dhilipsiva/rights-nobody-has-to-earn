@@ -1085,15 +1085,26 @@ repair.
 **The register ruling amends the two 2026-08-02 rulings in exactly two ways, and
 both are named rather than silent.** (a) The passage channel **widens** from
 Part V — which the flatness ruling scoped it to in its own words — to **the
-opening note and Part V**, because both are exempt elements the author writes in
-the first person. (b) **`method.md` is excluded despite being exempt**, not
-because it is less exempt but because its scope is sealed by five decisions and
-its reading contract is what keeps a documented renderer defect dormant.
-Derived chapters stay closed by three standing rulings; no fourth exempt element
-exists. Supply is **author-drafted**: the ruling defines the slot, the form, the
-assertion rule and the legal role, and the prose is the author's. The
-ghost-writing refusal stands unamended — it is written into the constitutional
-source's own header comment, not merely into this file.
+opening note and Part V**, because both are exempt elements in the first-person
+channel. (b) **`method.md` is excluded despite being exempt**, not because it is
+less exempt but because its scope is sealed by five decisions and its reading
+contract is what keeps a documented renderer defect dormant. Derived chapters
+stay closed by three standing rulings; no fourth exempt element exists.
+
+**Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
+draft the Book 1 manuscript, including its epigraph, opening note, numbered
+chapters, Part V, and method, plus the launch essay and Book 1 companion prose.
+The lifecycle is `session draft → exact displayed candidate → explicit author
+approval of that version → canonical prose`. Any substantive wording, meaning,
+or voice change requires renewed approval; mechanical Markdown wrapping or
+formatting does not. Canonical session supply is recorded as
+`session-drafted, author-approved`. Book 2, legacy `book.md` and `manifesto.md`,
+and planning prose remain outside this drafting scope. All derivation, sourcing,
+register, evidence, pin, Book 1/Book 2 seam, and verification rules remain
+binding. `tmp.txt` is optional noncanonical scratch space, never the approval
+record. This protocol supersedes only the older author-as-drafter and
+ghost-writing dispositions; it does not widen any narrative channel or bypass
+an approval or evidence gate.
 
 **The passage rule** is form plus assertion. *Form:* generic second person,
 never a name; **no interior state attributed to any person in the scene**,
@@ -1129,8 +1140,10 @@ relations name the alleged offender and victim, expressly not the writer, and
 the reviewed ledger records that no finder, evidence, causation standard or
 correction history is attached. The passage is therefore dated **non-conforming
 on arrival, trace and proximity as of 2026-08-08**, grandfathered with that
-visible, and the rule is prospective. The fix is author-owned prose and **no
-session may make it**.
+visible, and the rule is prospective. That dated finding remains historical;
+its supply restriction is superseded by the 2026-08-20 protocol. `OL-15-v1` is
+the exact author-approved repair and becomes canonical only when mechanically
+transcribed in its content commit.
 
 **The deficit is measured and classified.** Five of the eight floor items have
 no producing rule; the two that arrive derive only from confinement; every
@@ -1823,9 +1836,10 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   baselines are settled, as are the assurance portfolio, the narrative
   register, and the reader-evidence protocol with its threshold timing. Phase 1
   retains one reserved, sequenced author ruling — the release threshold, after
-  the pilot and before the holdout's pre-registration freeze — plus the
-  author-drafted passage obligation; it blocks nothing now, and neutral
-  inventory and decision briefs may proceed. Phase
+  the pilot and before the holdout's pre-registration freeze. The prose-supply
+  protocol no longer leaves an author-as-drafter obligation; ordinary-life
+  passage conformance follows the tracker. Neutral inventory and decision briefs
+  may proceed. Phase
   2 records the completed finite collective-decision, versioned ecological/
   animal finding-boundary, and multi-power/multi-window protective-authority
   composition audits, and the landed fail-closed witness-enumeration
@@ -2205,8 +2219,9 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   the cast in any pass, any part, ever**, and do not read the flatness as awaiting repair:
   Part V states the restraint once as chosen and cites the five-of-six as evidence that a
   reader who felt it has felt the design. Part V's approved register channels, each with its
-  guard: the **author's first person** (supplied at the Voice ruling, not ghost-written); one
-  **second-person domestic vignette** — a household through food, care, housing and crisis,
+  guard: the **author's first person** (historically supplied at the Voice ruling; current
+  supply follows the 2026-08-20 exact-version author-approval protocol); one **second-person
+  domestic vignette** — a household through food, care, housing and crisis,
   generic "you", never a cast name; the **hostile reviewer corpus as the antagonist**, quoted
   from `reviews/` and answered at the joints; and the **nine historical cases as the
   documented feeling**. Nothing else — no invented antagonist, no composite citizens, no
@@ -2243,9 +2258,10 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   *receives* and *is acted upon* postures, and it is the register's
   highest-risk subject because the reader supplies the affect unasked).
   Implementation is sequenced: delivery/receipt families, then the portfolio
-  rebalance, then the reader ledger, then the author-drafted prose — the
-  ruling settles the frame now precisely so it cannot be settled by accident
-  later, and no session supplies the thesis sentence. The controlling record is
+  rebalance, then the reader ledger, then exact-version author-approved prose —
+  the ruling settles the frame now precisely so it cannot be settled by accident
+  later. A session may propose the thesis sentence under the 2026-08-20 protocol;
+  approval of that exact displayed version makes it canonical. The controlling record is
   `new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`.
 
 - **The voice boundary is the derivation boundary**, ruled 2026-08-02. The plain, direct,
@@ -2255,10 +2271,12 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   opening note, Part V, and the method part. **The seam is audible and deliberate** — a reader
   can hear the crossing from what the machine derived to where the author argues — so **do not
   warm the derived chapters and do not flatten the exempt three**; either direction erases a
-  boundary that is doing epistemic work. **Supply protocol**: the first person is
-  author-drafted — sessions edit mechanics only (guards, citations, wrapping, the ratchet) and
-  never generate or extend the voice; ghost-writing stays refused, per the constitution's own
-  register note, which stands as written. `tmp.txt` is the channel for drafts in progress.
+  boundary that is doing epistemic work. **Current supply protocol:** the
+  author-approved 2026-08-20 exact-version protocol above governs the first
+  person and every other in-scope Book 1 prose channel. Sessions may propose the
+  wording; explicit approval of the exact displayed version makes it canonical.
+  `tmp.txt` is optional noncanonical scratch space rather than a required channel
+  or approval record.
   **All three exempt elements were session-drafted by the author's explicit instruction,
   each a recorded exception (2026-08-03).** The opening note: "You draft it yourself",
   reviewed in `tmp.txt`, adopted with no changes ("I have no changes to suggest"). Part V:
@@ -2267,14 +2285,15 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   misattributions and two overclaims caught and fixed pre-commit). The method part: ruled
   session-drafted in the planning session for its landing (AskUserQuestion, the same
   explicit-override basis), adversarially verified the same way. This line is the record of
-  all three. The ghost-writing refusal stands for any future first-person writing — the
-  launch essay and the epigraph translation remain the author's — unless the author rules
-  again. The
+  all three. Those are historical precedents, not exceptions required by the
+  current protocol. Future first-person writing, the launch essay, and an
+  epigraph translation follow the 2026-08-20 exact-version approval lifecycle. The
   full re-weave the tracker once priced (every chapter re-touched, dearer each week) is dead
-  by this ruling, not deferred. **Confirmed 2026-08-08 by the narrative-register ruling**:
-  supply for any ordinary-life passage is author-drafted, the refusal stands unamended, and
-  `method.md` is excluded from that channel despite being one of the three exempt elements —
-  because its scope is sealed, not because it is less exempt.
+  by this ruling, not deferred. **The 2026-08-08 narrative-register ruling
+  originally reserved ordinary-life supply to the author; that supply
+  disposition is superseded.** Its location rule remains: `method.md` is
+  excluded from the ordinary-life passage channel despite being one of the three
+  exempt elements, because its scope is sealed, not because it is less exempt.
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be
@@ -2313,7 +2332,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   history is the method's proof, previews recruit the outside red team, and
   defect pins make known flaws declared features. Four companions remain: the
   launch essay (*The Furnished Prison* the standing headline candidate; inside
-  the voice boundary — author-drafted), the method paper (formal-methods-for-law
+  the voice boundary — session draft permitted, exact author approval required),
+  the method paper (formal-methods-for-law
   genre; cites the book, never the reverse dependency), run-it-yourself as a
   front-page claim once the exact nibli dependency is reproducible (`verify.sh`
   is the core artifact, not yet a one-repo reproduction), and the D2 physical
@@ -2430,9 +2450,10 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   verbatim from `book.md`'s appendix — the stanza whose subject, the daily search for a
   meal, is the condition the floor abolishes, closing on "Did you think I, too, would
   yield?". At most one, never structure, one sentence on who Bharati was — the settled
-  constraints, all honored. **The translation is the author's voice**: whether to
-  replace the rhymed rendering with a plainer one is theirs alone; sessions never
-  redraft it. The full two-stanza text and both translations stay in git history when
+  constraints, all honored. **The current translation is the author's voice and
+  remains theirs.** A session may propose a plainer rendering under the
+  2026-08-20 protocol; it becomes canonical only after explicit approval of the
+  exact displayed version. The full two-stanza text and both translations stay in git history when
   `book.md` is deleted, recorded in the deletion manifest as consciously kept there;
   the registry entry `bharati-yoga-siddhi` is the standing pointer.
 

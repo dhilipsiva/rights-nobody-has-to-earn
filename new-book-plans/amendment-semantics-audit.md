@@ -60,19 +60,19 @@ is reviewed in the JSON source.
 
 | case | operation | before SHA-256 | after SHA-256 | candidate SHA-256 |
 | --- | --- | --- | --- | --- |
-| `AS-01` | byte-identical control | — | — | `da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10` |
-| `AS-02` | byte-identical control | — | — | `da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10` |
-| `AS-03` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `6e987e170bd77e008ce4523c88c47e49a5bf31ed7adf68727d1c6624575ecc92` |
+| `AS-01` | byte-identical control | — | — | `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2` |
+| `AS-02` | byte-identical control | — | — | `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2` |
+| `AS-03` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `e7e21542dba64f9262e56c51b1a95b536bd475765f21a7c34a9eecbdb9e82336` |
 | `AS-03` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `21cff1413a2b4f3caff42d29fe106fab1dd810985b09e9564db20e8828107dd6` | `↳` |
-| `AS-04` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `555334ccd012b5092925272a2f8b3b92c550ee12478fbd3562966f1d1bfcc385` |
+| `AS-04` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `788f621cb7eac3d50d9e2f2956b50fdc4a5246bbbe71c6d603578e88914f1907` |
 | `AS-04` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `6b65ab050b147e8e0009d57942c95e32245fdd29c1b2166420b404e345c24a89` | `↳` |
-| `AS-05` | `replace_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `95caa2ea756506072ceccabedec38b5bd2f97a233482466c11f48e0cd3083e20` | `01fdad5cf3a447dd9c641fd37d1f5f43131c330b41219e797f4bfca781c60c8c` |
+| `AS-05` | `replace_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `95caa2ea756506072ceccabedec38b5bd2f97a233482466c11f48e0cd3083e20` | `f41d5202744913e39ed035d890ab8396959915df178c1ed94914a6f9ff279956` |
 | `AS-05` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `de66f9e974fa6ba10132ffdc4757ed12027f71867259b264aec62377bb8a26af` | `↳` |
-| `AS-06` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `d35f66b5b67a8c371fc98ebefb30c829df95a437e1601508cf9d4d6d5d262c8a` | `2e2d11d25c665e4c2c8864d7a930b15e64a71c1fb95d7002a46a815bee549c99` |
-| `AS-07` | byte-identical control | — | — | `da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10` |
-| `AS-08` | `replace_exact` | `8c266bf505ed1c39691c10e34d6b50f266cd5a293b2d246977cf1cf2a8953c09` | `d5117c777f339747fd8a0a1a332ad7e97c3c5d9f79f7a3851040896c285358fa` | `4e009e333f72e0cfc3164b28a9f86a800b76ae46ca8b072e05a4157032724e28` |
+| `AS-06` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `d35f66b5b67a8c371fc98ebefb30c829df95a437e1601508cf9d4d6d5d262c8a` | `cccd51b49aac7600af55ab0e6edd2e835cdd5079e7594d26b84bf4907eecf01e` |
+| `AS-07` | byte-identical control | — | — | `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2` |
+| `AS-08` | `replace_exact` | `8c266bf505ed1c39691c10e34d6b50f266cd5a293b2d246977cf1cf2a8953c09` | `d5117c777f339747fd8a0a1a332ad7e97c3c5d9f79f7a3851040896c285358fa` | `edfdfa783b8fe1e0e50b43a9cfb7465bcd985d623acb4e1ea1deb8584c206203` |
 | `AS-08` | `append_exact` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `1bf91264fb9349375d512dcc6f604a9c10e32242fbdf665ba7ae714a0e592a1c` | `↳` |
-| `AS-09` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `daed9410d7f180b380c147be32f3807edecd5453c0c52f78680506d08ade529e` |
+| `AS-09` | `delete_exact` | `0ad7323e6f25e7ff5a64380166bee86d6ace06a9459c911ec79a227d1519ea53` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | `53c6c2c52b30325c413d401dcd576519fb4a23a288cb1b9319a1cc11a8907a74` |
 
 ## Executable cases
 
@@ -252,7 +252,7 @@ Remaining boundary: Semantic entrenchment requires an external exact-diff and ef
 ## Maintenance
 
 - Reviewed source: `new-book-plans/amendment-semantics-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2`.
 - Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67`.
 - Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `7f260fba4f330fe3613d19585fc90e2c8a3ec339a0626929919df9c2ecf6afcc`.
 - Reviewed subprocess timeout: `60` seconds for every isolated case, sabotage, and live seam.

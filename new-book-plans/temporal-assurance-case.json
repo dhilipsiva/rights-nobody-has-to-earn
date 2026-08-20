@@ -5,13 +5,13 @@
   "status": "staged_t3_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10",
+  "constitution_sha256": "48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2",
   "bound_sources_sha256": {
-    "amendment_semantics": "52283554b81a9e098690ffc7932f8312972e02f6c7c2698d16127457884da0ea",
+    "amendment_semantics": "cacde72ef687e55bfd5c92b577f568c219d6585a4381e2714bb71adfe3460345",
     "assertion_surface": "8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67",
-    "placement_exhaustiveness": "6b0dd26d8de5655c7218e783e9c7f6180c896b5948a51b4105c67ee87c9232f7",
+    "placement_exhaustiveness": "800ab4acba7e51fcffaa00ed02cd963edf63c1190a564f5b49c1f74f9dcf6e65",
     "record_assurance": "7f260fba4f330fe3613d19585fc90e2c8a3ec339a0626929919df9c2ecf6afcc",
-    "record_red_team": "f355963b3b1101e6fe92eccc22b75e92dab7b11d874eac879654556c90c984b3",
+    "record_red_team": "329a791ae947d3fbc80ebf1d7e6acf2949946cfa266ddb01b26b70b8eeee649e",
     "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44"
   },
   "marker_sha256": {
@@ -29,9 +29,9 @@
     "T3-RULES": "eb6d07d536ef886d2e5295f053ff5e6108b0bf8eb105bbd948015edff5eccc42"
   },
   "stage_source_sha256": {
-    "T1": "7cec006f6217a60ee716d9244e58795f59af4d3a53312906f133fcfc4ca71140",
-    "T2": "7a5aa003999adfadc7e4e29c23a08aae078567babed481c65979c137b003cbe8",
-    "T3": "da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10"
+    "T1": "d375f638983f73cb386a01b135b43debb441264aa01d3f960d7cefbc427dfa4e",
+    "T2": "4c43788e19a3a8976053e961a35f580b84f423fbababbebb2b25cbf86fcf35eb",
+    "T3": "48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2"
   },
   "source_effect_binding": {
     "effective_version": "Constitution_Temporal",

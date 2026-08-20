@@ -2,10 +2,11 @@
 
 # Book 1 Narrative Register Decision
 
-> **Status: author-ratified on 2026-08-08.** This decision closes the register
-> question. It adds no predicate, rule, fact, pin, chapter, release, or public
-> coverage claim, and **it changes no sentence of the book** — including the one
-> existing ordinary-life passage, which is the author's and stays as written.
+> **Status: author-ratified on 2026-08-08; prose supply amended on
+> 2026-08-20.** The register, trace, location, and evidence rules remain binding.
+> Section 15 supersedes only the author-as-drafter restriction and the current
+> disposition of the existing ordinary-life passage; the dated 2026-08-08
+> record remains visible as history.
 
 ## 1. Decision
 
@@ -37,7 +38,7 @@ a closed list reopens.
 
 | Channel | Disposition |
 | --- | --- |
-| The author's first person | Unchanged. Author-drafted, in the exempt elements. |
+| The author's first person | Register unchanged. In-scope supply follows the exact-version author-approval protocol in section 15. |
 | One second-person domestic passage | Retained, singular, under the rule in section 4. Its location widens as stated in section 5. |
 | The hostile reviewer corpus as antagonist | Part V only, unchanged. **Not claim-free**: a quotation carries its own posture and its attribution, and the corpus is an antagonist rather than evidence about this design. |
 | The historical cases | Part V only, capped at their sourced members. **Not a substitute for derived ordinary life.** They are evidence about other societies and how they failed; they establish nothing about this one. |
@@ -149,8 +150,8 @@ Two deltas, named rather than left to be discovered:
 
 1. **The channel widens.** The settled ruling scopes all four channels to Part
    V's approved register channels. This decision widens the passage channel to
-   the opening note as well, because both are exempt elements the author writes
-   in the first person, and confining an illustration to one of them is a
+   the opening note as well, because both are exempt elements in
+   the first-person channel, and confining an illustration to one of them is a
    distinction without a reason.
 2. **The method part is excluded despite being exempt.** It is the third exempt
    element, and it stays closed — not because it is less exempt, but because its
@@ -170,6 +171,10 @@ convention: it is written into the constitutional source's own header comment,
 which the voice ruling holds stands as written. The recorded exceptions of
 2026-08-03 remain what they are — explicit, quoted, adversarially verified, and
 specific to the elements they named.
+
+> **Supersession note — 2026-08-20.** Section 15 supersedes only the
+> author-as-drafter and ghost-writing dispositions above. The historical supply
+> record and the 2026-08-03 provenance remain unchanged.
 
 ## 7. The existing passage: recorded, not edited
 
@@ -196,6 +201,11 @@ This is recorded as an **author obligation**, not a defect to be silently
 repaired. The fix is author-owned prose, and no session may make it. The rule in
 section 4 takes effect on ratification and is **prospective**; the existing
 passage is grandfathered with its non-conformance visible and dated.
+
+> **Supersession note — 2026-08-20.** The dated author obligation and
+> prohibition above remain the 2026-08-08 record. Section 15 supersedes their
+> current supply effect and records `OL-15-v1` as an exact author-approved
+> candidate awaiting separate mechanical transcription.
 
 ## 8. Classifying the deficit
 
@@ -280,6 +290,10 @@ have much to show.
 
 ## 13. Ratification record
 
+This section records the 2026-08-08 decision. Its supply and passage-ownership
+dispositions are historical and superseded by section 15; the other rulings
+remain current.
+
 On 2026-08-08 the author ratified:
 
 - [x] the register stays flat, permanently, with the four channels a closed list
@@ -313,9 +327,10 @@ On 2026-08-08 the author ratified:
 - [x] the reader-experience ledger treatment that enrols a passage for
   completeness while giving it zero coverage.
 
-This decision changes planning and permitted register only. It creates no
-predicate, rule, pin, chapter, or public claim, and it edits no sentence of the
-book.
+On 2026-08-08 this decision changed planning and permitted register only. It
+created no predicate, rule, pin, chapter, or public claim and edited no sentence
+of the book. Section 15 records the later supply-only amendment and approved
+candidate without changing the register or evidentiary boundary.
 
 ## 14. 2026-08-15 superseding reader-gate amendment
 
@@ -328,3 +343,60 @@ effect, or accessibility for actual users.
 The reader-experience ledger remains useful as a structural and editorial
 inventory, but no external reader or reviewer is required to finish or publish
 the book.
+
+## 15. 2026-08-20 superseding prose-supply amendment
+
+Sessions may draft the Book 1 manuscript, including its epigraph, opening note,
+numbered chapters, Part V, and method, plus the launch essay and Book 1 companion
+prose. The lifecycle is `session draft → exact displayed candidate → explicit
+author approval of that version → canonical prose`. Any substantive wording,
+meaning, or voice change requires renewed approval; mechanical Markdown wrapping
+or formatting does not. Canonical session supply is recorded as
+`session-drafted, author-approved`.
+
+Book 2, legacy `book.md` and `manifesto.md`, and planning prose remain outside
+this drafting scope. `tmp.txt` is optional noncanonical scratch space, never the
+approval record. Derivation, sourcing, register, evidence, pin, Book 1/Book 2
+seam, and verification rules remain binding. This amendment changes who may
+prepare a candidate and how it becomes canonical; it creates no new narrative
+channel, claim, predicate, fact, rule, pin, claim/defect/coverage/power/allocation
+ledger row, or public posture. The administrative scope-audit row records only
+the digest refresh. In particular, the global drafting permission does not
+authorize an ordinary-life passage in `method.md`; section 5's location rule
+remains unchanged.
+
+### 15a. `OL-15-v1` approval record
+
+- **Identifier:** `OL-15-v1`.
+- **Target:** `book-1/15-the-five-joints.md`, paragraph anchored by “Now the
+  stakes, because a design like this is not for reviewers.”
+- **Supply provenance:** `session-drafted, author-approved`.
+- **Approval:** explicit approval on 2026-08-20 of the exact displayed version
+  below.
+- **Change bound:** only mechanical Markdown line wrapping is permitted without
+  renewed approval. No copy edit, wording change, meaning change, or voice
+  change is included.
+- **Canonical state at this policy amendment:** approved candidate awaiting
+  exact mechanical transcription in its separate content commit.
+
+> Now the stakes, because a design like this is not for reviewers. Imagine a
+> household — yours, if you like. You wake and there is food, not because you
+> earned it this week but because food is owed to you the way daylight is. Your
+> mother is ill, and the person who tends her — you, some mornings; a neighbour,
+> others — is doing what this society calls work, whether or not anyone pays for
+> it. The flat is warm and the water is clean because somewhere to live is owed
+> to you, and a roof that keeps out neither cold nor rain does not discharge that
+> debt. Then the crisis: an accusation, from somewhere, about someone in the
+> house. In the society you live in now, this is the moment the file opens — the
+> assessments, the flags, the quiet notes that follow your family for years. In
+> the society this book describes, an accusation by itself moves nothing, the
+> examination that follows must name its examiners, and nothing — no verdict, no
+> panic, no furious official — can reach the food, the warmth, or your mother’s
+> care. This kitchen is hypothetical, not a delivery report: outside confinement,
+> the record supplied with this book shows no floor item reaching anyone. That is
+> the whole book, felt from inside a kitchen. The joints below are the five ways
+> history says a kitchen like that gets broken.
+
+Approval alone does not adjudicate conformance or alter section 7's dated
+finding. The content commit must transcribe the approved text exactly and record
+its trace and proximity adjudication before the passage becomes canonical.

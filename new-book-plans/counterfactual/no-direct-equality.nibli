@@ -4,9 +4,11 @@
 # நான் வீழ்வேனென்று நினைத்தாயோ? — "Did you think I would fall?"
 # ═══════════════════════════════════════════════════════════════════
 #
-# REGISTER: commentary here is deliberately flat and technical so the KR
-# diff against v0.1 is legible. The manifesto voice is the author's to
-# re-weave — I am not ghost-writing it. Provenance tags:
+# REGISTER: commentary here stays flat and technical so the KR diff against
+# v0.1 is legible. Sessions may draft Book 1 and its in-scope companion prose
+# under the 2026-08-20 exact-version approval protocol; approval, not drafting,
+# makes that prose canonical. Book 2, legacy book.md/manifesto.md, and planning
+# prose remain outside that scope. Provenance tags:
 #   [v0.1]          — KR line unchanged from utopia.nibli
 #   [v0.2 NEW]      — new rule or fact
 #   [v0.2 REPLACES] — supersedes a v0.1 rule. The old rule must be DELETED,

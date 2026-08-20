@@ -557,7 +557,7 @@ Remaining gap owner: `TODO.md::### Expansion phase 2 — Specify the comprehensi
 ## Maintenance
 
 - Reviewed source: `new-book-plans/record-integrity-red-team.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `da783f3087003a512a7be9c1ca2958f0ff50714e3d9da14bda625cc429879b10`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2`.
 - Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67`.
 - Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `7f260fba4f330fe3613d19585fc90e2c8a3ec339a0626929919df9c2ecf6afcc`.
 - Regenerate only through `python3 new-book-plans/9-record-integrity-red-team.py`.

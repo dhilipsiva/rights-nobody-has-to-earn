@@ -27,8 +27,8 @@ cage) records in its own closure condition that *"the delivery families land
 first; the rebalance is the consumer that can only run afterwards"*, and
 **FS-DFT-26** (floor-delivery markers refused) expires when arrival facts
 exist. The thesis ruling sequences the same way: delivery/receipt families,
-then the portfolio rebalance, then the reader ledger, then author-drafted
-prose.
+then the portfolio rebalance, then the reader ledger, then canonical prose
+under the 2026-08-20 exact-version author-approval protocol.
 
 The drafting gate is passed. The coverage map's material-floor row is
 `coverage-ready`, and the assertion surface already carries a governed hook for

@@ -10,6 +10,11 @@
 > inventory behind it is
 > [`book-1-thesis-framing-and-second-stress-case-brief.md`](book-1-thesis-framing-and-second-stress-case-brief.md);
 > this record supersedes nothing in that brief except its open status.
+>
+> **Supply amendment, author-approved 2026-08-20.** The framing and sequencing
+> rulings remain unchanged. The author-as-drafter restriction is superseded by
+> the exact-version approval protocol in the narrative-register decision's
+> section 15.
 
 ## 1. What was ruled, verbatim
 
@@ -70,9 +75,11 @@ constraints, each traceable to the brief:
   beside the existing stress-test framing. The sentence is normative plus
   empirical and cannot pass the derivation gate; that is a placement fact, not
   a demotion.
-- **The exact wording is author-drafted** at the sequenced prose step, through
-  the `tmp.txt` channel. The ghost-writing refusal stands unamended; this
-  record fixes the form constraints and no session supplies the sentence.
+- **The exact wording follows the 2026-08-20 prose-supply protocol** at the
+  sequenced prose step. A session may present a candidate; only explicit author
+  approval of that exact displayed version makes it canonical. `tmp.txt` is
+  optional scratch context, not the approval record. This record still fixes
+  the form constraints.
 
 ## 3. Question 2 — the infant joins as the paired second stress case
 
@@ -120,7 +127,8 @@ resolves against that partition:
   the caregiverless infant is that thesis's sharpest subject — the person
   public power has *not* acted upon. The stress-test framing may lead with the
   infant, with the prisoner as the paired case testing the opposite direction.
-  This is exempt prose and lands at the sequenced prose step, author-drafted.
+  This is exempt prose and lands at the sequenced prose step only through
+  exact-version author approval under the 2026-08-20 protocol.
 - **Not allocatable — substance primacy.** Chapter order is computed from the
   dependency stratification; portfolio density follows what the landed rule
   families support; and "the design's hardest stress test" is a measured
@@ -156,7 +164,8 @@ So nothing trickles back one piece at a time:
 - settling the recipient-side receipt gap or the family-status firewall gap
   here — each keeps its owning tracker item, and in particular the receipt gap
   may not be closed by letting a provider attest on the recipient's behalf;
-- any edit to the grandfathered Part V passage, which remains author-owned.
+- any edit to the grandfathered Part V passage that bypasses its register,
+  trace, or exact-version author-approval requirements.
 
 ## 6. Sequencing, which is forced and unchanged
 
@@ -164,8 +173,9 @@ The brief's order stands
 (`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md::## 7. Sequencing, which is forced`):
 the delivery and receipt families land first, including a resolution of the
 receipt gap; the pinned case portfolio is rebalanced second; the
-reader-experience coverage ledger is built third; and only then is the framing
-prose written, by the author. Ruling now settles the frame so it cannot be
+reader-experience coverage ledger is built third; and only then is a framing
+candidate prepared and made canonical through exact-version author approval.
+Ruling now settles the frame so it cannot be
 settled by accident later; it does not accelerate any implementation step.
 Adopting the framing in prose before the source can carry it would produce a
 book whose thesis its own source cannot support, and the receipt and
@@ -179,7 +189,8 @@ posture, defect row, receipt, claim restriction, or Gate consequence. It
 reclassifies nothing and upgrades no posture. It does not reopen Gate A. It
 does not resolve the brief's two recorded gaps, which keep their owners. It
 does not rename the `no-family-confinement-wall` fixture. It supplies no
-thesis sentence: the words are the author's, later.
+thesis sentence; a later candidate must pass the 2026-08-20 exact-version
+approval protocol.
 
 ## 8. Ratification record
 
@@ -189,3 +200,12 @@ and recorded costs, and answered in the author's own words quoted in §1. The
 was presented to the author as part of the implementation plan and approved in
 the same session. The session's earlier reading (1A and 2A) was offered as a
 reading and not a ruling; the ruling is the author's.
+
+## 9. 2026-08-20 supply-only amendment
+
+The 2026-08-20 prose-supply protocol supersedes this decision's author-as-drafter
+and required-`tmp.txt` clauses. It does not alter the thesis form, paired stress
+case, framing/substance distinction, sequencing, anti-monoculture guard, or
+derivation boundary. A session may prepare the eventual thesis and framing
+candidate, but only explicit author approval of the exact displayed version
+makes it canonical; any later substantive change requires renewed approval.

@@ -27085,7 +27085,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "4820e600d1eb4249cf6adf2d45b86169a2f3c61a431baf803fd993155bda87cf",
+    "artifact_sha256": "36f612f8bcb5617cb8615dc3113893ca5544e0d86a1acb63c4e888d8e05d3a4b",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -108967,7 +108967,7 @@
       "source_version": "fs-ledger-2026-08-09-stage-2",
       "history": [],
       "evidence_notes": [
-        "the grandfathered Part V passage's dated non-conformance is a witness here: it conflates being owed with getting, and its repair is author-owned prose no session may make"
+        "the grandfathered Part V passage's dated non-conformance is a witness here: it conflates being owed with getting; its former author-only supply restriction was superseded on 2026-08-20 without changing this delivery-gap finding"
       ],
       "residual_citations": [
         "placement-exhaustiveness-audit#limits.future_delivery"
@@ -127413,6 +127413,51 @@
       "scope_sha256": "3fcd8c6d1c3f2faa4347fe2bd227caa3d5c24c21100b494d78aa693c6872cef6",
       "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
       "executed_at_utc": "2026-08-18T09:47:19Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-30",
+      "title": "Prose-supply policy digest refresh current-source repository adversarial audit",
+      "source_version": "fs-ledger-2026-08-18-delivery-receipt-formal-v1",
+      "scope_sha256": "ce9ba6d6fce98d5f12682bc0737aa6d9da31484fe6f68dd92958fbaab609bbb4",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-20T13:20:37Z",
       "method": "repository-source-derived-adversarial-audit",
       "criterion_coverage": [
         "declared-rights",

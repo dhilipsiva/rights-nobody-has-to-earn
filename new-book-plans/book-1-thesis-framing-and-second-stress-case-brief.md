@@ -360,7 +360,8 @@ The order is therefore:
 1. the delivery and receipt families land, including a resolution of §4;
 2. the pinned case portfolio is rebalanced;
 3. the reader-experience coverage ledger is built as a projection;
-4. the framing ruling lands and the exempt prose is written by the author.
+4. the framing ruling lands and the exempt prose becomes canonical through
+   exact-version author approval under the 2026-08-20 protocol.
 
 Adopting the framing first would produce a book whose thesis its own source
 cannot yet support, and the receipt and counted-claims gates would catch it at
@@ -373,6 +374,7 @@ posture, coverage row, claim restriction, or Gate consequence. It reclassifies
 nothing and upgrades no posture. It does not reopen Gate A: §1's findings are a
 formalisation gap inside already-mapped scope, which is the classification the
 register ruling already assigned to the delivery deficit. It does not rule on the
-grandfathered Part V passage, which remains author-owned. The §4 and §5 gaps are
-recorded as findings with no proposed repair, and the two questions remain open
-for the author.
+grandfathered Part V passage, whose edits remain bound by the register, trace,
+and exact-version author-approval rules. The §4 and §5 gaps are recorded as
+findings with no proposed repair, and the two questions remain open for the
+author.

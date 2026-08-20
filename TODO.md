@@ -1805,7 +1805,8 @@ may not become the sole custodian of the book or of its future development.
 - **The launch essay. [AUTHOR-GATED]** A standalone distillation for someone who will
   never read the book, carrying the thesis and the honest second half in miniature. *The
   Furnished Prison* is the standing headline candidate. First-person territory: the voice
-  protocol applies — the author drafts, sessions edit mechanics only.
+  protocol applies — sessions may draft candidates, and only exact-version author
+  approval makes prose canonical.
 - **The method paper.** JURIX/ICAIL/formal-methods-for-law genre: the derivation gate,
   the pin suite, the counterfactual classes, the defect markers — the methodology made
   citable. Coordinate with the method part rather than duplicating it; the paper cites

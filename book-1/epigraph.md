@@ -20,8 +20,10 @@ Did you think I, too, would yield?
 
 <!-- Stanza 4 of Yoga Siddhi as digitized by Project Madurai (registry entry:
      bharati-yoga-siddhi). The translation is the author's own, ported
-     verbatim from book.md's appendix; whether to replace it with a plainer
-     rendering is the author's call alone — translation is voice. One
+     verbatim from book.md's appendix. A session may propose a plainer rendering
+     under the 2026-08-20 prose-supply protocol; it becomes canonical only after
+     explicit approval of the exact displayed version. Translation remains
+     voice. One
      epigraph, never structure, per the 2026-08-02 ruling; the full two-stanza
      text and both translations remain in git history and the deletion
      manifest records them as consciously kept there. -->
