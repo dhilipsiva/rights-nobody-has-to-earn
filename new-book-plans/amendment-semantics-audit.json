@@ -6,8 +6,8 @@
   "evidence_role": "exposes_semantic_gap",
   "subprocess_timeout_seconds": 60,
   "constitution_sha256": "48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2",
-  "assertion_surface_contracts_sha256": "8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67",
-  "record_integrity_assurance_case_sha256": "7f260fba4f330fe3613d19585fc90e2c8a3ec339a0626929919df9c2ecf6afcc",
+  "assertion_surface_contracts_sha256": "33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3",
+  "record_integrity_assurance_case_sha256": "5e195e85bd5be958846e27bd7f5c35eb7b5ff46eca18a82f2a3697a21345ccef",
   "label_verdict_meanings": {
     "blocked_label": "The supplied snapshot derives `false(amendment)` and does not derive `become(amendment, Law)`; this says nothing about whether a source edit occurred.",
     "passing_label": "The supplied snapshot derives `become(amendment, Law)` and not `false(amendment)`; no current rule reads that conclusion or applies source text.",

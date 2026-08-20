@@ -110,7 +110,7 @@ None.
 - **Residual assumption:** A correctly authenticated official can still lie, omit context, exceed lawful purpose, or act under capture.
 - **Temporal status:** The authority contract applies at T0; effective-time and revocation claims require T2/T3 evidence where order or duration matters.
 - **Book 2 handoff:** Authenticate writers and roles, operate identity and credential recovery, and retain evidence binding each write to the authorised channel.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -137,7 +137,7 @@ None.
 - **Residual assumption:** No finite record proves every physical-world event, the completeness of all available evidence, or by itself that a human or external system used no shadow input.
 - **Temporal status:** Source identity is required at T0; source order, correction, and staleness require T2/T3 where legally relevant.
 - **Book 2 handoff:** Bind source artifacts and acquisition metadata to case records, preserve their integrity, and expose operational evidence quality without writing a personal score into the constitution.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -165,7 +165,7 @@ None.
 - **Residual assumption:** Operational access controls and reviewers can still disclose improperly, delay access, or make a formally available challenge unusable.
 - **Temporal status:** Notice and challenge exist as T0 acts; promptness and maximum delay need T3 plus external liveness assurance.
 - **Book 2 handoff:** Operate access control, redaction or sealing, secure disclosure, notification, accessibility, advocate workflows, and auditable privacy enforcement.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -219,7 +219,7 @@ None.
 - **Residual assumption:** Book 1 cannot make bytes immutable or guarantee that an operator retained every entry and recovery copy.
 - **Temporal status:** A correction and a non-temporal purpose- or event-based disposition can be represented at T0; reliable predecessor/successor history requires T1, order-dependent effect requires T2, and every duration-based retention, review, or deletion schedule requires T3 plus external clock and liveness evidence.
 - **Book 2 handoff:** Implement tamper-evident history, encrypted or sealed retention, authorised deletion workflows, backups, and evidence linking the stored versions to the constitutional correction record.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -272,7 +272,7 @@ None.
 - **Residual assumption:** Some lost facts cannot be reconstructed; in that case the constitutional default can contain harm but cannot recreate historical truth.
 - **Temporal status:** Selected supplied-record routes now implement T1 carry and disappearance checks, T2 order conflicts, and a T3 custody-power default. General reconstruction, downstream reconsideration, delay control for other powers, and operational recovery remain unimplemented or external.
 - **Book 2 handoff:** Maintain independent recovery sources, backups, incident records, service continuity, claimant support, and operational procedures for reviewing and remedying decisions after integrity failure.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -407,7 +407,7 @@ None.
 - **Residual assumption:** No internal completeness declaration proves that an external writer disclosed every in-scope event or that a first snapshot was complete.
 - **Temporal status:** A route-specific T0 default can be stated, but cross-snapshot completeness and disappearance require T1, order-sensitive absence requires T2, and expiry or delay requires T3 plus external liveness evidence.
 - **Book 2 handoff:** Operate independently controlled scope and completeness attestations, preserve external evidence of missing or disposed entries, and report uncertainty without converting operational absence into a constitutional fact.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`
 
 **Current evidence**
 
@@ -694,7 +694,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 | gate | requirement | evidence needed | owner |
 | --- | --- | --- | --- |
 | `RA-1` | The assertion-surface ledger digest matches, every writable premise has exactly one record-class assignment, each class reaches every mandatory assurance dimension, and every negative consumer is separately inventoried as an effective-premise route. | Generated positive and negative premise checks plus their negative controls; explicit semantic review after any route, premise-contract, or classification change. | `new-book-plans/7-assertion-surface.py::def validate_contract(` |
-| `RA-2` | Every new record-dependent right, limit, institution, or power has a completed record contract and declared complete legally operative basis before its rule family is drafted. | Writer, authority, permitted and prohibited inputs, provenance, visibility/privacy, challenge, correction, retention, deletion, assurance, negative-premise admissibility, independent reader, action and systemic-correction duties, continuity/remedy, and temporal fields. | `TODO.md::Maintain completed constitutional coverage rows before drafting chapters` |
+| `RA-2` | Every new record-dependent right, limit, institution, or power has a completed record contract and declared complete legally operative basis before its rule family is drafted. | Writer, authority, permitted and prohibited inputs, provenance, visibility/privacy, challenge, correction, retention, deletion, assurance, negative-premise admissibility, independent reader, action and systemic-correction duties, continuity/remedy, and temporal fields. | `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters` |
 | `RA-3` | Assertion and withholding or deletion harms are tested separately, including the opposite failure created by every added authorisation, witness, or closed-world gate and the settled difference between an absent accusation and an unperformed remedy. | Executable non-vacuous pins or harness cases with a positive control, declared route-specific risk posture, and authorised-disposition boundary. | `new-book-plans/9-record-integrity-red-team.py::def validate_source(` |
 | `RA-4` | No cross-snapshot, order, expiry, deadline, or liveness claim is promoted before its T1/T2/T3 gate and differential evidence exists. | Two-snapshot harness, ordering tests where applicable, T3 controls, and explicit external liveness evidence. | `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate` |
 | `RA-5` | Every integrity finding has an independent recipient, action duty, continuity, escalation, review, individual remedy, common-cause correction, affected-case re-audit, and recurrence-verification path; a referral alone does not pass and systemic work cannot delay individual relief. | Formal reader/action family, wrong-recipient and non-response controls, systemic-correction and recurrence evidence, and updated audit endpoint claims. | `TODO.md::Specify obligations without making rights reciprocal bargains` |
@@ -705,7 +705,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

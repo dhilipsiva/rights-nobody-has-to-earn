@@ -1078,7 +1078,7 @@ POWER_SOURCE_BINDING = {
         "Guardian alternate advocate and substitute reviewer",
         "border and removal execution function",
     ],
-    "owner_ref": "TODO.md::Maintain completed constitutional coverage rows",
+    "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
     "closure_condition": (
         "complete per-instrument FS-POW contract cards, lawful body and role "
         "allocations, and power-bound decider, executor, auditor, and final-remedy "

@@ -2404,7 +2404,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: nominees, selectors, independent offices, courts, and oversight bodies
 - Status: ratified-unimplemented narrow function; severity critical; consequence: appointments qualification function absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — A nominee, a selector, and anyone affected by a qualification decision hold universal human standing as persons rather than through an office, and this function confers none and removes none. Formal implementation must separate universal human standing from political membership, franchise, candidacy, current office, current lawful power, and permanent historical public answerability, which is exactly why an adverse qualification decision may reach a nomination for a seat and never a person's standing as a person.
     - *political membership* — Ordinary residence creates political membership and a qualification file changes nothing about it: registration records evidence of membership and does not create membership, so a nomination record, a referral, or an adverse determination is evidence about a candidacy for an appointed seat rather than evidence about whether a person belongs. A person refused qualification for one office remains an ordinary resident with every membership right intact.
@@ -2443,7 +2443,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: a challenge to Constitutional Court composition, appointment, or recusal
 - Status: ratified-unimplemented narrow function; severity critical; consequence: alternate constitutional panel absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Sitting on this panel confers no universal human standing and leaving it removes none: the challenged member, the party who raised the challenge, and every panellist holds standing as a person rather than through the seat, and the ratified separation of the seven senses reserves standing for universal personhood. A decision here reaches a seat and its occupant's authority over one act; it does not reach the sense, and no remedy may remove another person's standing, material floor, core liberty, due process, or equal political voice.
     - *political membership* — Residence-first membership belongs to the person and this panel neither creates nor extinguishes it: ordinary residence is a factual settled connection to a place, registration records evidence of membership rather than being its source, and a decision on whether a member of the Constitutional Court may sit on a disputed act touches no person's political home at any tier.
@@ -2483,7 +2483,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: refusal, vacancy, failed selection, incapacity, or removal of the Civic President
 - Status: ratified-unimplemented narrow function; severity critical; consequence: civic president alternate absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — The stand-in function confers no universal human standing and removes none: whoever is predeclared holds it as a person before, during, and after the continuity condition, as does every person affected by a bounded formal act performed under it, and formal implementation must keep that universal sense separate from office, power, and answerability.
     - *political membership* — Residence-first membership is untouched by predeclaration or by holding the function: neither creates nor removes a political home, and registration records evidence of membership rather than creating it, so no continuity record may be treated as the source of the membership it merely evidences.
@@ -2521,7 +2521,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: a named resource and population under a claimed genuine physical shortfall
 - Status: ratified-unimplemented narrow function; severity critical; consequence: independent physical-scarcity assessment function absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — This function confers no standing and removes none: everyone inside a named population holds universal human standing as a person whether or not an assessment records a shortfall, because scarcity is a constitutional failure condition to be managed and never permission to redefine the floor or to reclassify anyone's claim on it.
     - *political membership* — Residence-first membership is untouched by an assessment: registration records evidence of membership and does not create it, and naming a population for a resource assessment neither adds nor removes anyone's political membership at any tier.
@@ -2560,7 +2560,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: ecological ceilings, cumulative effects, sentience, welfare, and animal-use evidence
 - Status: ratified-unimplemented narrow function; severity critical; consequence: independent ecological and veterinary evidence function absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — This function confers no standing and removes none: every person who writes, reviews, relies on, or is named in its evidence holds universal human standing as a person rather than through the office, and formal implementation must keep that sense separate from political membership, franchise, candidacy, current office, current lawful power, and historical answerability.
     - *political membership* — Residence-first membership is untouched by an evidence product: registration records evidence of membership and does not create it, and naming the protected common, pressure or minimum condition, territory, affected population, and legal scope of a ceiling neither adds nor removes anyone's political membership at any tier.
@@ -2598,7 +2598,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: ordinary-law ecological standards and animal activity licences
 - Status: ratified-unimplemented narrow function; severity critical; consequence: ecological and animal regulation function absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Administering a standard confers no standing and removes none: an applicant, a licence holder, a keeper, a neighbour, and the official deciding all hold universal human standing as persons rather than through a licence, and no animal remedy may remove a person's standing, floor, core liberty, due process, equal political weight, or protected collective right.
     - *political membership* — Residence-first membership is untouched by regulation: registration records evidence of membership and does not create it, and naming a territory, affected population, or legal scope in a ceiling or a licence condition neither adds nor removes anyone's political membership at any tier.
@@ -2641,7 +2641,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: ecological authorisations, animal welfare, controlled uses, and licence compliance
 - Status: ratified-unimplemented narrow function; severity critical; consequence: independent ecological and animal inspection function absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — An inspection changes nobody's standing: the keeper, the worker, the complainant, and the inspector each hold universal human standing as persons rather than through a record, and a purpose-limited animal record may never become evidence of a human's worth, politics, family, migration, risk, or entitlement.
     - *political membership* — Residence-first membership is untouched by an inspection record: registration records evidence of membership and does not create it, and on the animal side registration coordinates responsibility and is not the source of protection, so neither the presence nor the absence of a record moves anyone's political membership at any tier.
@@ -2680,7 +2680,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: Guardian silence, vacancy, conflict, capture, removal, refusal, incapacity, or loss of quorum
 - Status: ratified-unimplemented narrow function; severity critical; consequence: future conditions guardian alternate advocate absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Predeclaration confers no universal human standing and removes none: whoever is predeclared holds it as a person before, during, and after any trigger state, as does every person affected by an objection made in the Guardian's place, and formal implementation must keep that universal sense apart from office, current power, and historical answerability. Standing in for the Guardian creates no representative of anyone not yet existing either — future generations receive no current person entry and no official may claim to know their preferences.
     - *political membership* — Residence-first political membership is untouched by predeclaration or by acting in the Guardian's place: neither creates nor removes a political home, and registration records evidence of membership rather than creating it. The initiation route borrowed here is in any case open to any present person, qualified association, and the rights advocate independently, so nothing in this function makes a claimant's route depend on membership.
@@ -2718,7 +2718,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: the ordinary Guardian merits reviewer being unavailable, conflicted, or captured
 - Status: ratified-unimplemented narrow function; severity critical; consequence: future conditions guardian substitute reviewer absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Predeclaration as a substitute reviewer confers no universal human standing and removes none: whoever is predeclared holds it as a person before, during, and after any substitution, as do the proponent, the objector, and everyone affected by the authorization under review, and formal implementation must keep that universal sense apart from office, current power, and historical answerability. Deciding the merits creates no representative of anyone not yet existing — future generations receive no current person entry and no official may claim to know their preferences.
     - *political membership* — Residence-first political membership is untouched by predeclaration or by deciding a stay: neither creates nor removes a political home, and registration records evidence of membership rather than creating it. Nor may membership condition who may bring the matter, since any present person, qualified association, and the rights advocate hold an independent initiation route into a commons or future-condition duty.
@@ -2757,7 +2757,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: Advocate silence, conflict, capture, removal, refusal, or vacancy
 - Status: ratified-unimplemented narrow function; severity critical; consequence: animal protection advocate alternate absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Predeclaration confers no standing on whoever is named and subtracts none from anyone an activation reaches: every person is equal before and under the constitution as a person rather than through an office. Because this office may exercise only the Advocate's routes, the same wall holds on the animal side — no animal remedy may remove a person's standing, floor, core liberty, due process, equal political weight, or protected collective right, and credibly sentient animals are direct protected subjects rather than constitutional persons.
     - *political membership* — Residence-first membership is untouched: ordinary residence creates civic membership and registration records evidence of it rather than creating it, so being predeclared, being activated, or being named in a route this office carries may not move, prove, or unmake anyone's political home.
@@ -2794,7 +2794,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: a source-bound animal rescue, treatment, custody, rehabilitation, sanctuary, rehoming, or restoration order
 - Status: ratified-unimplemented narrow function; severity critical; consequence: animal remedy execution administration absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Executing an order confers no standing on the officer and subtracts none from the person the order reaches: every person is equal before and under the constitution as a person rather than through an office, and no animal remedy may remove a person's standing, floor, core liberty, due process, equal political weight, or protected collective right. That wall matters most here, because this is the body whose acts land physically on a named keeper, and its authority to carry out a seizure or a rehoming is not an authority over the person's constitutional position.
     - *political membership* — Residence-first membership is untouched: ordinary residence creates civic membership and registration records evidence of it rather than creating it, so nothing this administration records about a keeper, an owner, or a placement may move, prove, or unmake a political home. Purpose-limited animal records may not enter the canonical consequential person record or become evidence of a human's worth, politics, family, migration, risk, or entitlement.
@@ -2834,7 +2834,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: one current, case-bound lawful Court order authorising custody
 - Status: ratified-unimplemented narrow function; severity critical; consequence: custodial execution administration absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Anyone the state physically holds, by any instrument, is owed shelter and a recorded voice, on the reasoning that a society that holds a person and does not house them has abandoned them and a society that holds a person whose words reach no record can hold them silently. That is a floor non-reduction rule and an affirmative duty rather than a claim that holding improves anyone's position, and it does not make holding a route to the floor; the office confers no personhood and removes none, and formal implementation must keep universal human standing separate from political membership, franchise, candidacy, current office, current lawful power, and permanent historical public answerability.
     - *political membership* — Ordinary residence creates political membership and custody neither creates nor removes it: a prison, detention site, institution, shelter, eviction destination, military posting, or other compelled displacement never changes political home by itself, and registration records evidence of membership rather than creating it. A custody file is therefore evidence about a person and may never be read back as an absence of membership.
@@ -2874,7 +2874,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: the ordinary cross-branch authorising body being unable to convene
 - Status: ratified-unimplemented narrow function; severity critical; consequence: emergency alternate authorising route absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Emergency is an overlay that suspends nothing: a declaration may accelerate procedure, redirect resources, requisition with compensation, and impose reviewable restrictions against the named hazard, and it confers no power to derogate from any categorical refusal or to lower the material floor. The route therefore confers no personhood and removes none, and formal implementation must keep universal human standing separate from political membership, franchise, candidacy, current office, current lawful power, and permanent historical public answerability.
     - *political membership* — Ordinary residence creates political membership and an emergency route neither creates nor removes it; registration records evidence of membership rather than creating it, and a declaration confers no power to alter the franchise. A person named in a declaration or affected by a measure is a person the record holds something about, never a person whose membership the record may be read to withdraw.
@@ -2916,7 +2916,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: the ordinary emergency reviewer being unavailable, conflicted, or captured
 - Status: ratified-unimplemented narrow function; severity critical; consequence: emergency independent substitute reviewer absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Emergency is an overlay that suspends nothing, so the review this route conducts is review inside unchanged substantive protections rather than review of what may be set aside: a declaration confers no power to derogate from any categorical refusal or to lower the material floor. Reviewing confers no personhood and removes none, and formal implementation must keep universal human standing separate from political membership, franchise, candidacy, current office, current lawful power, and permanent historical public answerability.
     - *political membership* — Ordinary residence creates political membership and a review function neither creates nor removes it; registration records evidence of membership rather than creating it, and a declaration confers no power to alter the franchise. A person who appears in a review file is a person the record holds something about, never a person whose membership the file may be read to withdraw.
@@ -2956,7 +2956,7 @@ Each card separates the seven status senses the state-form ruling refused to let
 
 - Applicability: a final individual border, expulsion, extradition, surrender, transfer, or return decision after suspensive appeal
 - Status: ratified-unimplemented narrow function; severity critical; consequence: border, removal, and transfer execution administration absent or fused with an incompatible function
-- Owner: `TODO.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
+- Owner: `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows`; closure: the owning source-family power cards and allocations remain complete and source-bound
 - Status senses:
     - *universal human standing* — Every person within the republic's jurisdiction or effective control is owed standing, the material floor, due process, and an effective remedy regardless of citizenship, nationality, immigration classification, documentation, manner of entry, or the absence of any record, and a final decision against that person changes none of it. Formal implementation must keep universal human standing separate from political membership, franchise, candidacy, current office, current lawful power, and permanent historical public answerability, and handing a person over is a coercive act by this republic to which every limit on arrest, detention, and force attaches.
     - *political membership* — Ordinary residence creates political membership and an execution function neither creates nor removes it; registration records evidence of membership and does not create membership, so an execution file is evidence about a person and may never be read back as an absence of membership. Serve first and reconcile the record afterwards; no record found reads as pending, never as denied.
@@ -3206,7 +3206,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 30; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 31; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -3240,8 +3240,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 30; curre
 | FS-SAU-28 | fs-ledger-2026-08-18-delivery-receipt-coverage-v1 | `060b825f1a5fd3279c3613943e64c3c1baee4c6fb53779ba3418b2b7689a2880` | 2026-08-18T09:18:16Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-29 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `3fcd8c6d1c3f2faa4347fe2bd227caa3d5c24c21100b494d78aa693c6872cef6` | 2026-08-18T09:47:19Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-30 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `ce9ba6d6fce98d5f12682bc0737aa6d9da31484fe6f68dd92958fbaab609bbb4` | 2026-08-20T13:20:37Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-31 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `1bdb074db477ce41be44b9ef3df52614b8757c289c9202604986837679e2f35f` | 2026-08-20T15:59:11Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `ce9ba6d6fce98d5f12682bc0737aa6d9da31484fe6f68dd92958fbaab609bbb4`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `1bdb074db477ce41be44b9ef3df52614b8757c289c9202604986837679e2f35f`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 
@@ -3317,10 +3318,10 @@ A collection-only projection: Book 2 remains inactive until Book 1 — First Edi
 
 | ID | Title | Routed as | Owner | Severity | Consequence | Closure condition |
 | --- | --- | --- | --- | --- | --- | --- |
-| FS-CLM-03 | Equality diagnostics and repair operations | book-2-operation (routed-book-2) | `TODO.md::Maintain completed constitutional coverage rows` | serious | an operational claim here would launder routing into assurance | Book 2's own gates |
-| FS-CLM-24 | Economic operations and feasibility | book-2-operation (routed-book-2) | `TODO.md::Maintain completed constitutional coverage rows` | serious | a feasibility claim here would take a route that does not exist | Book 2's own gates |
+| FS-CLM-03 | Equality diagnostics and repair operations | book-2-operation (routed-book-2) | `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows` | serious | an operational claim here would launder routing into assurance | Book 2's own gates |
+| FS-CLM-24 | Economic operations and feasibility | book-2-operation (routed-book-2) | `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows` | serious | a feasibility claim here would take a route that does not exist | Book 2's own gates |
 | FS-DFT-29 | Operational assurance and liveness remain external | externally-bounded-assumption | `TODO.md::Replace confession-as-ending` | material | no repository test can force publication, advancement, review, release, recovery, or remedy | never internal — operational assurance is the only route that can carry an arrival claim, and it is unbuilt |
-| FS-DFT-38 | Other states' cooperation and recognition are assumptions | externally-bounded-assumption | `TODO.md::Maintain completed constitutional coverage rows` | material | the external-power families rest on named assumptions no book can derive | never internal — bounded per treaty and per case with the external-power families |
+| FS-DFT-38 | Other states' cooperation and recognition are assumptions | externally-bounded-assumption | `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows` | material | the external-power families rest on named assumptions no book can derive | never internal — bounded per treaty and per case with the external-power families |
 | FS-POW-001 | Common-tier enumerated competence | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad common-tier enumerated competence effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 | FS-POW-002 | Regional residual legislative authority | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad regional residual legislative authority effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |
 | FS-POW-003 | Subsidiarity displacement decision | power operation/evidence handoff | `TODO.md::Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner` | critical | an unavailable, fused, or overbroad subsidiarity displacement decision effect | the card remains source-bound, profile-complete, allocation-bound, and subject to its refusal and temporal walls |

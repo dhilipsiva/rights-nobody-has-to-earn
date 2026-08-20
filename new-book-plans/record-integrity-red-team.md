@@ -60,7 +60,7 @@ assurance case, or prove that an institution acts on a finding.
 - **Opposite-failure test:** A second certificate must be tested with adulthood evidenced but the certificate absent. If the missing official write suppresses the ballot, the design has created the withholding gate this task forbids.
 - **Temporal status:** Same-snapshot franchise consequences remain tested. T1/T3 are unchanged; typed adulthood evidence does not constitute adulthood, and outside age, clock, and process liveness remain unestablished.
 - **Residual limit:** The current constitution formalizes only the typed supplied-record consequence and anti-denial wall; it does not prove the common-tier age, an outside clock, or an operational status process.
-- **Assurance or repair owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`
+- **Assurance or repair owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`
 - **Executable scenarios:** `RS-02`, `RS-03`
 
 ### RT-3 — Bare carry-report boundary
@@ -92,7 +92,7 @@ assurance case, or prove that an institution acts on a finding.
 - **Opposite-failure test:** Any duplicate-control or witness proposal must be tested with the claimant present and the official companion absent. If that state denies standing or the floor, the proposal is an impermissible withholding gate.
 - **Temporal status:** The flat omission harm remains reproducible because Bela is outside the finite standing-carry fixture. T1 standing continuity exists for witnessed predecessor status; universal identity continuity and external identity assurance do not.
 - **Residual limit:** This fixture demonstrates one known deletion consequence, not universal roster completeness, identity proof, or runtime deletion detection.
-- **Assurance or repair owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`
+- **Assurance or repair owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry`
 - **Executable scenarios:** `RS-04`
 
 ### RT-5 — Relief, forgiveness, and two-entry failure
@@ -558,8 +558,8 @@ Remaining gap owner: `TODO.md::### Expansion phase 2 — Specify the comprehensi
 
 - Reviewed source: `new-book-plans/record-integrity-red-team.json`.
 - Constitution: `new-book-plans/constitution.nibli`, SHA-256 `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `7f260fba4f330fe3613d19585fc90e2c8a3ec339a0626929919df9c2ecf6afcc`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `5e195e85bd5be958846e27bd7f5c35eb7b5ff46eca18a82f2a3697a21345ccef`.
 - Regenerate only through `python3 new-book-plans/9-record-integrity-red-team.py`.
 - Fast freshness/schema check: `python3 new-book-plans/9-record-integrity-red-team.py --check`.
 - Executable check: `python3 new-book-plans/9-record-integrity-red-team.py --check --execute`.

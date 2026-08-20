@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67",
+  "assertion_surface_contracts_sha256": "33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -133,7 +133,7 @@
         "A rule or structural wall proving that a tuple actor alone cannot satisfy writer authority."
       ],
       "residual_assumption": "A correctly authenticated official can still lie, omit context, exceed lawful purpose, or act under capture.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "The authority contract applies at T0; effective-time and revocation claims require T2/T3 evidence where order or duration matters.",
       "book2_handoff": "Authenticate writers and roles, operate identity and credential recovery, and retain evidence binding each write to the authorised channel."
     },
@@ -170,7 +170,7 @@
         "Decision-basis tests and independent operational evidence that prohibited or shadow inputs cannot silently affect the consequence."
       ],
       "residual_assumption": "No finite record proves every physical-world event, the completeness of all available evidence, or by itself that a human or external system used no shadow input.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "Source identity is required at T0; source order, correction, and staleness require T2/T3 where legally relevant.",
       "book2_handoff": "Bind source artifacts and acquisition metadata to case records, preserve their integrity, and expose operational evidence quality without writing a personal score into the constitution."
     },
@@ -206,7 +206,7 @@
         "An accessible challenge route that does not depend on already having the disputed status."
       ],
       "residual_assumption": "Operational access controls and reviewers can still disclose improperly, delay access, or make a formally available challenge unusable.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "Notice and challenge exist as T0 acts; promptness and maximum delay need T3 plus external liveness assurance.",
       "book2_handoff": "Operate access control, redaction or sealing, secure disclosure, notification, accessibility, advocate workflows, and auditable privacy enforcement."
     },
@@ -279,7 +279,7 @@
         "External evidence that stored history and disposition attestations resist undetected alteration."
       ],
       "residual_assumption": "Book 1 cannot make bytes immutable or guarantee that an operator retained every entry and recovery copy.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "A correction and a non-temporal purpose- or event-based disposition can be represented at T0; reliable predecessor/successor history requires T1, order-dependent effect requires T2, and every duration-based retention, review, or deletion schedule requires T3 plus external clock and liveness evidence.",
       "book2_handoff": "Implement tamper-evident history, encrypted or sealed retention, authorised deletion workflows, backups, and evidence linking the stored versions to the constitutional correction record."
     },
@@ -360,7 +360,7 @@
         "Recovery tests showing independent reconstruction, uncertainty, downstream review, and remedy without fabricated facts or resurrection of lawfully disposed content."
       ],
       "residual_assumption": "Some lost facts cannot be reconstructed; in that case the constitutional default can contain harm but cannot recreate historical truth.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "Selected supplied-record routes now implement T1 carry and disappearance checks, T2 order conflicts, and a T3 custody-power default. General reconstruction, downstream reconsideration, delay control for other powers, and operational recovery remain unimplemented or external.",
       "book2_handoff": "Maintain independent recovery sources, backups, incident records, service continuity, claimant support, and operational procedures for reviewing and remedying decisions after integrity failure."
     },
@@ -548,7 +548,7 @@
         "Tests preserving the current appeal polarity while refusing absent relationship, delivery, capacity, or independence entries as self-proving facts."
       ],
       "residual_assumption": "No internal completeness declaration proves that an external writer disclosed every in-scope event or that a first snapshot was complete.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "temporal_status": "A route-specific T0 default can be stated, but cross-snapshot completeness and disappearance require T1, order-sensitive absence requires T2, and expiry or delay requires T3 plus external liveness evidence.",
       "book2_handoff": "Operate independently controlled scope and completeness attestations, preserve external evidence of missing or disposed entries, and report uncertainty without converting operational absence into a constitutional fact."
     }
@@ -1033,7 +1033,7 @@
       "id": "RA-2",
       "requirement": "Every new record-dependent right, limit, institution, or power has a completed record contract and declared complete legally operative basis before its rule family is drafted.",
       "evidence_needed": "Writer, authority, permitted and prohibited inputs, provenance, visibility/privacy, challenge, correction, retention, deletion, assurance, negative-premise admissibility, independent reader, action and systemic-correction duties, continuity/remedy, and temporal fields.",
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters"
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters"
     },
     {
       "id": "RA-3",

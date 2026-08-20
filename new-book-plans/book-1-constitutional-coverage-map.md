@@ -594,3 +594,16 @@ independent check and remedy; every floor has a non-reciprocal access path; the
 majority corridor is explicit; the Book 2 handoffs are named; and the formal
 model, pins, counterfactuals, prose, and reader-facing explanation agree about
 what is proved, what is specified, and what remains operational.
+
+## 10. Stable completed-work reference labels
+
+These are non-task reference labels for reviewed artifacts whose former owner
+needles lived in `TODO.md`. They preserve stable ownership history without
+retaining completed work in the future-facing tracker.
+
+- Maintain completed constitutional coverage rows before drafting chapters.
+- Make universal standing a root condition, not a service denied by a missing entry.
+- Preserve the material-floor inventory; implement the liberty shell,
+  environmental right, and ecological ceiling.
+- Establish substantive equality and anti-subordination across domains.
+- Complete bodily autonomy, health, care, family, and life-course interfaces.

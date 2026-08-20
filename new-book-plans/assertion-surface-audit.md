@@ -158,7 +158,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Immediate self-assertion for standing, alternative age evidence and provisional continuity for adulthood, and private independent placement challenge for PlacementHome, all with provenance-preserving correction.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.
-- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
 - **Reviewed route fingerprint:** `4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d`.
 
 ### `attack`
@@ -207,7 +207,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Immediate standing plus direct petition, accessible correction, independent checking, and an alternate source that cannot turn registration into a service gate.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make a birth certificate, family relation, registry entry, or civil-identity match a premise of standing.
-- **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry`.
 - **Reviewed route fingerprint:** `cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a`.
 
 ### `broken`
@@ -401,7 +401,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct an endorsement or make Appeals act.
 - **Required challenge route:** A public contest and independent review route tied to the exact renewal decision, with safe continuity for rights and no withholding-based extension of restrictive power.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Maintain completed constitutional coverage rows before drafting chapters`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters`.
 - **Reviewed route fingerprint:** `b5c9d36cb2d095065308d47d10cf24e98cca7b395c2f50acad58395fd52fcbab`.
 
 ### `family`
@@ -417,7 +417,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The formal barrier prevents status substitution but supplies no operating correction process.
 - **Required challenge route:** Private direct correction and remedy without making family a service, authority, independence, or placement gate.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
 - **Reviewed route fingerprint:** `4c0ec69c70d097433d43850d445500ba4008506b43023e738d6998577aae9d22`.
 
 ### `forgive`
@@ -481,7 +481,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The formal barrier prevents home-status substitution but supplies no operating correction or placement process.
 - **Required challenge route:** Private direct correction and independent review, separated from free-person housing delivery and placement availability.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
 - **Reviewed route fingerprint:** `01c35f39cdc0b0672dab583823f4c65201f49de6c510836bdc3842d9806375e8`.
 
 ### `injure`
@@ -561,7 +561,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The formal independence rule ignores the label; no operating private correction route is established.
 - **Required challenge route:** Confidential correction plus a separate challenge to the affirmative case-bound independence record.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
 - **Reviewed route fingerprint:** `7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6`.
 
 ### `observe`
@@ -593,7 +593,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No operating correction route exists; co-signer independence now uses separate affirmative case-bound authorised records.
 - **Required challenge route:** Confidential parentage correction and independent review of the specific judge-child conflict record.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
 - **Reviewed route fingerprint:** `316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0`.
 
 ### `passport`
@@ -642,7 +642,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Immediate service and standing, followed by independent reconciliation, correction history, and deletion recovery.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.
-- **Owner:** `TODO.md::Make universal standing a root condition, not a service denied by a missing entry`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry`.
 - **Reviewed route fingerprint:** `ae9c7cf556c7eb769c3340477fb3c7458d5d5a5303f50375d4ca87605de91f4d`.
 
 ### `public`
@@ -771,7 +771,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The formal independence rule ignores the label; no operating private correction route is established.
 - **Required challenge route:** Confidential correction plus a separate challenge to the affirmative case-bound independence record.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces`.
 - **Reviewed route fingerprint:** `a66effae83ee434bf2303e7523c1a141bc4702c3ae6b8292c4506110e96aa14a`.
 
 ### `suggest`

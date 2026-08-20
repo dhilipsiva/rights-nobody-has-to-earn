@@ -1127,7 +1127,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Maintain completed constitutional coverage rows before drafting chapters",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters",
       "tags": [
         "public-power",
         "time"
@@ -1164,7 +1164,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "family",
         "privacy",
@@ -1314,7 +1314,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "home",
         "privacy",
@@ -1512,7 +1512,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "audit",
         "privacy",
@@ -1590,7 +1590,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "audit",
         "privacy",
@@ -1712,7 +1712,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.",
-      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry",
       "tags": [
         "roster-person",
         "standing",
@@ -1987,7 +1987,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "audit",
         "privacy",
@@ -2139,7 +2139,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.",
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "tags": [
         "roster-person",
         "standing",
@@ -2182,7 +2182,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Do not make a birth certificate, family relation, registry entry, or civil-identity match a premise of standing.",
-      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry",
       "tags": [
         "roster-person",
         "standing",

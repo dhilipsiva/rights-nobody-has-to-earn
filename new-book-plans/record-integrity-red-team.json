@@ -5,8 +5,8 @@
   "status": "bounded_flat_snapshot_red_team_not_assurance",
   "evidence_role": "exposes_gap_and_tests_boundary",
   "constitution_sha256": "48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2",
-  "assertion_surface_contracts_sha256": "8f96e84d3011bbc7ed66acf54c5e3fba29d2ed60f43da8b25acbe5ce1b686d67",
-  "record_integrity_assurance_case_sha256": "7f260fba4f330fe3613d19585fc90e2c8a3ec339a0626929919df9c2ecf6afcc",
+  "assertion_surface_contracts_sha256": "33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3",
+  "record_integrity_assurance_case_sha256": "5e195e85bd5be958846e27bd7f5c35eb7b5ff46eca18a82f2a3697a21345ccef",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",
@@ -95,7 +95,7 @@
       "authorised_disposition_boundary": "Correction may supersede a mistaken adulthood entry only through a challengeable status record that preserves political continuity and does not silently erase a valid vote.",
       "opposite_failure_test": "A second certificate must be tested with adulthood evidenced but the certificate absent. If the missing official write suppresses the ballot, the design has created the withholding gate this task forbids.",
       "residual_limit": "The current constitution formalizes only the typed supplied-record consequence and anti-denial wall; it does not prove the common-tier age, an outside clock, or an operational status process.",
-      "owner_ref": "TODO.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
       "temporal_status": "Same-snapshot franchise consequences remain tested. T1/T3 are unchanged; typed adulthood evidence does not constitute adulthood, and outside age, clock, and process liveness remain unestablished.",
       "scenario_refs": [
         "RS-02",
@@ -146,7 +146,7 @@
       "authorised_disposition_boundary": "Roster consolidation or correction may change identifiers only through a traceable disposition that preserves the person's standing, services, history, challenge, and affected decisions.",
       "opposite_failure_test": "Any duplicate-control or witness proposal must be tested with the claimant present and the official companion absent. If that state denies standing or the floor, the proposal is an impermissible withholding gate.",
       "residual_limit": "This fixture demonstrates one known deletion consequence, not universal roster completeness, identity proof, or runtime deletion detection.",
-      "owner_ref": "TODO.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry",
       "temporal_status": "The flat omission harm remains reproducible because Bela is outside the finite standing-carry fixture. T1 standing continuity exists for witnessed predecessor status; universal identity continuity and external identity assurance do not.",
       "scenario_refs": [
         "RS-04"
