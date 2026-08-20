@@ -1131,19 +1131,19 @@ It therefore adds no ledger row. A contrast scene about the reader's present
 society is rhetorical contrast carrying no evidentiary weight, explicitly
 outside Part V's sourcing discipline.
 
-**The existing passage is recorded, not edited**, and it is the exemplar of the
-form clauses only. Its per-clause trace is in the decision. Two results matter:
-"the flat is warm and the water is clean" traces to **chapter 8's gloss, not the
-constitution**, which contains no warmth or water term; and "the record can hold
-an accusation only as an entry with an author" **traces to nothing** — the harm
-relations name the alleged offender and victim, expressly not the writer, and
-the reviewed ledger records that no finder, evidence, causation standard or
-correction history is attached. The passage is therefore dated **non-conforming
-on arrival, trace and proximity as of 2026-08-08**, grandfathered with that
-visible, and the rule is prospective. That dated finding remains historical;
-its supply restriction is superseded by the 2026-08-20 protocol. `OL-15-v1` is
-the exact author-approved repair and becomes canonical only when mechanically
-transcribed in its content commit.
+**The pre-repair passage remains recorded as dated history.** Its per-clause
+trace is in the decision. Two results mattered: "the flat is warm and the water
+is clean" traced to **chapter 8's gloss, not the constitution**, and did not name
+the housing entitlement in the same sentence; "the record can hold an
+accusation only as an entry with an author" **traced to nothing** because the
+harm relations name the alleged offender and victim, expressly not the writer.
+It was dated **non-conforming on arrival, trace and proximity as of
+2026-08-08**. `OL-15-v1` was mechanically transcribed on 2026-08-20 and is the
+current canonical, `session-drafted, author-approved` passage. It names the
+housing entitlement in the arrival sentence, removes the unsupported writer
+identity without claiming to close `FS-DFT-19`, and places the record-bounded,
+outside-confinement delivery disclosure beside the scene. Section 7a of the
+narrative-register decision controls its current conformance disposition.
 
 **The deficit is measured and classified.** Five of the eight floor items have
 no producing rule; the two that arrive derive only from confinement; every

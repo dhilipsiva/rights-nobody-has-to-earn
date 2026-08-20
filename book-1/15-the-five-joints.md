@@ -66,16 +66,18 @@ household — yours, if you like. You wake and there is food, not because you
 earned it this week but because food is owed to you the way daylight is. Your
 mother is ill, and the person who tends her — you, some mornings; a neighbour,
 others — is doing what this society calls work, whether or not anyone pays for
-it. The flat is warm and the water is clean, because a roof that keeps out
-neither cold nor rain is not a roof here. Then the crisis: an accusation, from
-somewhere, about someone in the house. In the society you live in now, this is
-the moment the file opens — the assessments, the flags, the quiet notes that
-follow your family for years. In the society this book describes, the record can
-hold an accusation only as an entry with an author, the examination that follows
-must name its examiners, and nothing — no verdict, no panic, no furious
-official — can reach the food, the warmth, or your mother's care.
-That is the whole book, felt from inside a kitchen. The joints below are the five
-ways history says a kitchen like that gets broken.
+it. The flat is warm and the water is clean because somewhere to live is owed
+to you, and a roof that keeps out neither cold nor rain does not discharge that
+debt. Then the crisis: an accusation, from somewhere, about someone in the
+house. In the society you live in now, this is the moment the file opens — the
+assessments, the flags, the quiet notes that follow your family for years. In
+the society this book describes, an accusation by itself moves nothing, the
+examination that follows must name its examiners, and nothing — no verdict, no
+panic, no furious official — can reach the food, the warmth, or your mother’s
+care. This kitchen is hypothetical, not a delivery report: outside confinement,
+the record supplied with this book shows no floor item reaching anyone. That is
+the whole book, felt from inside a kitchen. The joints below are the five ways
+history says a kitchen like that gets broken.
 
 ## Valuation
 

@@ -4,9 +4,9 @@
 
 > **Status: author-ratified on 2026-08-08; prose supply amended on
 > 2026-08-20.** The register, trace, location, and evidence rules remain binding.
-> Section 15 supersedes only the author-as-drafter restriction and the current
-> disposition of the existing ordinary-life passage; the dated 2026-08-08
-> record remains visible as history.
+> Section 15 supersedes only the author-as-drafter restriction; section 7a records
+> `OL-15-v1` as the current canonical, conforming ordinary-life passage. The dated
+> 2026-08-08 disposition and wording remain visible as history.
 
 ## 1. Decision
 
@@ -207,6 +207,30 @@ passage is grandfathered with its non-conformance visible and dated.
 > current supply effect and records `OL-15-v1` as an exact author-approved
 > candidate awaiting separate mechanical transcription.
 
+### 7a. `OL-15-v1` conformance disposition — 2026-08-20
+
+The table above is the unchanged adjudication of the superseded passage, called
+`OL-15-v0` here only to distinguish it from the approved repair. The content
+commit mechanically transcribes the exact approved `OL-15-v1` text, with only
+Markdown line wrapping changed.
+
+| Approved clause | Existing trace or permitted role | Current disposition |
+| --- | --- | --- |
+| Food is owed to you | The itemised debt rule for food | Conforms: the hypothetical arrival names the food entitlement in the same sentence |
+| The person tending the mother is doing what this society calls work | The work door, and the ruling that care walks through two existing doors | Conforms |
+| The flat is warm and the water is clean because somewhere to live is owed to you | The itemised housing entitlement together with Chapter 8's fixed warmth-and-water gloss | Conforms: the same sentence now names the housing entitlement; the warmth and water details remain a chapter gloss, not constitutional terms |
+| An accusation, from somewhere, about someone in the house | Generic scene scaffolding under section 4a; it assigns no writer, finder, basis, or record effect | Conforms: the unsupported writer identity is removed, and no closure of `FS-DFT-19` is claimed |
+| An accusation by itself moves nothing, the examination that follows must name its examiners | The multi-signature rule, including its distinctness conjunct, and the absence of a sanction path from an accusation alone | Conforms as restatement |
+| Nothing — no verdict, no panic, no furious official — can reach the food, the warmth, or the mother's care | The anti-sanction firewall; `panic` and `furious official` are negatively named forces, not attributed interior states | Conforms as a bounded restatement |
+| Outside confinement, the supplied record shows no floor item reaching anyone | Chapter 13's “Leaving custody returns a person to a population this design delivers nothing to” and the current shipped delivery verdicts | Conforms: the disclosure is adjacent, says record rather than world, and preserves the confinement bound |
+| The contrast with the society the reader lives in now | Section 4b's expressly permitted present-society contrast | Conforms as rhetorical contrast, not a claim about this design |
+
+**Current disposition:** `OL-15-v1` conforms on form, assertion, trace, arrival,
+and proximity. It remains generic second person, attributes no interior state to
+a person in the scene, and returns to the five-joints argument. It introduces no
+dormant route or other claim for the first time, adds no statistic, and requires
+no pin or substantive ledger row.
+
 ## 8. Classifying the deficit
 
 The deficit in section 3 is a **formalisation gap inside already-mapped scope**.
@@ -378,6 +402,8 @@ remains unchanged.
   change is included.
 - **Canonical state at this policy amendment:** approved candidate awaiting
   exact mechanical transcription in its separate content commit.
+- **Canonical state after content commit:** canonical as the exact approved text
+  at the target path; current conformance disposition in section 7a.
 
 > Now the stakes, because a design like this is not for reviewers. Imagine a
 > household — yours, if you like. You wake and there is food, not because you
@@ -400,3 +426,7 @@ remains unchanged.
 Approval alone does not adjudicate conformance or alter section 7's dated
 finding. The content commit must transcribe the approved text exactly and record
 its trace and proximity adjudication before the passage becomes canonical.
+
+**Satisfied — 2026-08-20:** the content commit mechanically transcribes the
+approved text without a substantive change, and section 7a records the current
+trace and proximity adjudication. `OL-15-v1` is canonical.
