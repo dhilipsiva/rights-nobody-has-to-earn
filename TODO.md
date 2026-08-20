@@ -79,14 +79,9 @@ plan, data work, legacy harvest, and a pointer to book-2's own tracker. **Standi
 facts and methods** closes the file and holds knowledge, not tasks.
 
 Plain bullets, never numbered. Delete a bullet entirely when it fully lands;
-update it if only partly done. **The `[x]` items that remain are the exception
-and must not be tidied away**: their heading lines are live `owner_ref` needles
-on ledger, assertion-surface and manifest records, and a needle must resolve
-exactly once, so deleting a heading turns `./verify.sh` red in a message about
-a reference rather than about the deletion. Their bodies are compressed to a
-landed line plus any standing constraint that lives only here; the ratified
-content sits in the controlling decision records. Before rewording any heading,
-run a needle census — several strings are also *prefixes* of longer needles. Read-only inventory, evidence gathering and neutral
+update it if only partly done. Before rewording or deleting any heading, run a
+needle census and migrate any live `owner_ref` or `source_ref` to its controlling
+decision record; several strings are also *prefixes* of longer needles. Read-only inventory, evidence gathering and neutral
 decision briefs may run in parallel; shared-tree edits, verification and commits land
 serially, one owned item at a time.
 
@@ -271,42 +266,6 @@ dependency, and Gate A closed mechanically at `405e480`.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [x] **Maintain completed constitutional coverage rows before drafting chapters.**
-  - Use the coverage map's contract fields and the taxonomy's formalisation metadata
-    for every new rule family. Every card also records any applicable structural-wall
-    ID and enforcement mechanism. At minimum, record:
-
-    | Object | Required fields |
-    | --- | --- |
-    | Material floor — existing inventory only | holder, duty-bearer, existing minimum and inventory ID, accessibility, medium-neutral recipient-side access/receipt evidence, authorised writer, challenge route, no personal-outcome inference, breach, interim continuity, remedy, appeal, audit, temporal status |
-    | Environmental right — distinct from the floor | every present person, protected condition and threatened/completed harm, direct public and ratified private reach, information, prior assessment and accessible participation, uncertainty and cumulative/distributional evidence, prevention and continuity, public reason, independent review, interim protection, correction, remedy, equality route, failure polarity, temporal status |
-    | Liberty/power limit | protected person, prohibited act, direct public binding, public prevention/investigation/remedy duty for private interference, any explicit private binding, narrow exception test, evidence, independent reviewer, public reason, review or current-T0 non-temporal end condition, temporal status, remedy |
-    | Public power | office, democratic source, trigger, evidence, scope, conflict rule, non-delegable limit, review, appeal, current-T0 non-temporal end condition, temporal status |
-    | Record | writer, permitted basis, visibility/privacy, challenge, correction, retention, deletion control, external assurance, independent recipient, action duty, continuity/remedy path, temporal status |
-    | Commons/future condition — Class 9 | protected common and future capability, independent initiation/standing for every present person, qualified association, ordinary rights advocate and Future Conditions Guardian, ordinary-route judicial-interim-relief request without automatic stay, bounded automatic stay only for an evidence-supported Guardian objection or its predeclared alternate advocate acting in its place, versioned non-substitutable ceiling/minimum/resource budget, source/evidence/version/place/jurisdiction/time scope, scientific proposer/reviewer and democratic enactor, uncertainty/precaution/non-regression, avoidance/minimisation/restoration/nonfungibility, dual floor-and-ceiling continuity, immediate no-fault protection/public restoration plus strict causal inherently-hazardous and adjudicated contribution/control liability, one shared case/authorization/evidence/ground replay key across Guardian/alternate/successor/primary and substitute reviewers, final-resolution non-restart, materially-new-evidence or changed-authorization rule, predeclared alternate advocate and substitute reviewer, remedy, audit, failure polarity, temporal status |
-    | Non-human-animal protected subject — Class 10 | covered animal/taxon and sentience evidence, direct bodily/life/species-appropriate interest, controller and public duty, non-waivable welfare baseline for every controlled use, ordinary non-food/non-lethal/non-invasive/non-high-severity no-enhanced-test branch, lethal/invasive/high-severity enhanced-use trigger, strict alternative-sensitive rule for every controlled food-producing use in addition to the baseline, strict research 3Rs/replacement-first route and categorical unrelieved-severe/prolonged ban, categorical refusals and animal corridor core, purpose/necessity/alternatives/least-harm evidence where applicable, Animal Protection Advocate, Guardian conflict and independent adjudicator, rescue/continuity, record/privacy boundary, challenge, correction, remedy, audit, end condition, failure polarity, temporal status |
-    | Consequential status or supported decision | status or decision effect, source, writer, permitted evidence, affected person's voice and preferences, required support, authorised reader or decider, scope, conflict rule, privacy, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
-    | Collective status, authority, title, or consent | collective and right type, member or affected people, source, writer, evidence, jurisdiction, common-rights floor, consent or consultation trigger, dissent, exit, privacy, authorised reader or reviewer, challenge, correction, carry, end condition, alternate route, continuity, remedy, failure polarity, temporal status |
-    | Coercive or protective public power | named instrument, authorised actor and its mandate, individualised recorded ground, contemporaneous identification and accessible reasons, prior independent authorisation and any narrow reported immediate-danger exception, strict-necessity/least-harmful-means/minimum-sufficiency/warning/cessation/aid tests, burden of lawfulness on the public actor, the capability removed and its no-reader obligation, the instrument's own upstream-of-personhood rule and per-floor-predicate refusal pin, counsel/interpreter/accommodation, third-party notification, prompt automatic independent review, investigating body separated from the deploying body, non-punitive character where the person is unconvicted with an express bar on feeding severity/placement/conviction/recognition, shelter and recorded-voice duties wherever the state physically holds the person, record author/basis/visibility/challenge/correction/retention, failure polarity, remedy, audit, source-bound temporal contract |
-    | Emergency declaration | named hazard, territory and affected people, each conferred power separately justified, narrowest sufficient scope as a validity condition, published reasons and evidence, cross-branch authorisation plus a predeclared alternate authorising route and predeclared independent substitute reviewer each ratified at the ordinary body's first opportunity, immediate legislature and constitutional-court notification, a fresh source-bound temporal contract per declaration and separately per renewal, each measure rejoining the exact declaration version rather than a compact status tag, judicial review of existence and of every measure available during the emergency, the express list of what is not conferred, the non-derogable core untouched, restoration on end, mandatory post-hoc audit and accounting, remedy for harms from lawful as well as unlawful measures, fail-safe polarity with the frozen-record limit stated |
-  - **Done when:** every domain in the full-society ledger has complete applicable
-    rows before its rule family or prose lands; no name, value, office, or floor is
-    accepted as coverage by itself.
-  - **Landed** (`0f73a1c`); the ratified content is in its controlling decision
-    record and the canonical ledger, not restated here.
-- [x] **Make universal standing a root condition, not a service denied by a missing entry.**
-  - **Landed** (`7efcd63`); the ratified content is in its controlling decision
-    record and the canonical ledger, not restated here.
-- [x] **Preserve the material-floor inventory; implement the liberty shell,
-  environmental right, and ecological ceiling.**
-  - **Landed** (`f168642`); the ratified content is in its controlling decision
-    record and the canonical ledger, not restated here.
-- [x] **Establish substantive equality and anti-subordination across domains.**
-  - **Landed** (`6b173fc`); the ratified content is in its controlling decision
-    record and the canonical ledger, not restated here.
-- [x] **Complete bodily autonomy, health, care, family, and life-course interfaces.**
-  - **Landed** (`6b905a6`); the ratified content is in its controlling decision
-    record and the canonical ledger, not restated here.
 - [ ] **Write the Bodies specification.**
   - Constitute the ratified People's Assembly, Regions Council, Executive Council
     and public administration, non-executive Civic President, ordinary courts,
