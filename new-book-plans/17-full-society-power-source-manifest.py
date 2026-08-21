@@ -18,7 +18,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "new-book-plans/full-society-power-source-manifest.json"
 EXPECTED_MANIFEST_SHA256 = (
-    "36f612f8bcb5617cb8615dc3113893ca5544e0d86a1acb63c4e888d8e05d3a4b"
+    "7c7ebe7ae9c90c5e3b9958be46ab2a4cc1008dbaf5c5c5992c4c64d0fcdf36c1"
 )
 EXPECTED_SOURCE_COMMIT = "36ed92c58877cffa5a11928ad200f0ca9a604820"
 STATUS = (
@@ -57,7 +57,7 @@ EXPECTED_SOURCE_SHA256 = {
     "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md":
         "eb5919bbe57107ca7b61df0aa367a44354771c1d60a963e9a98c305b78dd93a4",
     "new-book-plans/book-1-state-form-and-political-membership-decision.md":
-        "55d921cdbf914f3b63bda91f20a29a54b4e9f219f8ffc18de11b89c2e89cc2e3",
+        "ec5150e624117993bfe848d5319b26f60654961af5c3eb7d664c554dac4d7df4",
     "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md":
         "c27e4175ccbd3034a04d9cebbd80d314400fc290cff07997c1e314d04db28979",
     "new-book-plans/book-1-time-model-decision.md":

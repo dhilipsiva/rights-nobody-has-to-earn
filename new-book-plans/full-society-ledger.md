@@ -3206,7 +3206,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 31; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 32; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -3241,8 +3241,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 31; curre
 | FS-SAU-29 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `3fcd8c6d1c3f2faa4347fe2bd227caa3d5c24c21100b494d78aa693c6872cef6` | 2026-08-18T09:47:19Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-30 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `ce9ba6d6fce98d5f12682bc0737aa6d9da31484fe6f68dd92958fbaab609bbb4` | 2026-08-20T13:20:37Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-31 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `1bdb074db477ce41be44b9ef3df52614b8757c289c9202604986837679e2f35f` | 2026-08-20T15:59:11Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-32 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `bb5490d876583966c24aee81651efd0e663910a884d134e844984bd329827f40` | 2026-08-21T06:58:14Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `1bdb074db477ce41be44b9ef3df52614b8757c289c9202604986837679e2f35f`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `bb5490d876583966c24aee81651efd0e663910a884d134e844984bd329827f40`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

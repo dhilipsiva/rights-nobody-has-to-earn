@@ -702,3 +702,143 @@ On 2026-08-07 the author ratified:
 
 The ruling changes planning and permitted future claims only. Formal status
 remains **ratified, unimplemented**.
+
+## 13. Pre-landing narrowness-impact matrix — 2026-08-21
+
+This section is the source-bound impact note required by the constitutional
+coverage map before `FS-CVF-003` may land. It classifies all 51 existing
+state-form power cards and the standing claims that can be made false by their
+formalisation. It adds no constitutional statement, pin, body in law, result
+certificate, public claim, or operational assurance.
+
+### 13.1 Power-family implementation disposition
+
+| Existing cards | Direct legal-effect family | Source-bound formal boundary | Required executable control | Prose and count consequence |
+| --- | --- | --- | --- | --- |
+| `FS-POW-001`–`004`, `FS-POW-046`–`050` | Common enumeration, regional residue, subsidiarity, disputed-competence continuity, and protected local authority | Derive only the exact current holder, competence, scope, reasons, independent review, and bounded interim effect supplied by the ratified territorial settlement. A dispute or delay creates no new competence. | Positive holder/scope/current-source cases; missing source, overbroad scope, self-review, disputed-holder, and interim-to-final escalation negatives; source-removal counterfactual. | Revise the opening-note government inventory and Part V State verdict. Economic and collective-rights TODOs consume this authority shell but retain their subject-specific substance. No floor-arrival or capacity count changes. |
+| `FS-POW-005`–`013` | Assembly lawmaking, revenue, spending, oversight, amendment initiation, proportional election, Council delegation, one-time return, and confined federal-settlement consent | Keep lawmaking, revenue, spending, oversight, initiation, election certification, delegation, return, and consent as separate effects. Dynamic rosters, proportionality metrics, tallies, completeness, and certifications are bounded external premises; the Council return never becomes a permanent veto. | One positive and one negative anchor per card; manufactured-majority, missing-completeness, conflicting-result, duplicate-submission, Council-veto, and out-of-competence counterfactuals. | Revise the opening note, Chapters 2, 9, and 12, Part V State, and the method. Preserve Chapter 8's no-delivery claim and Chapter 13's counted claim. The economic TODO retains substantive tax and fiscal rules after consuming the authority shell. |
+| `FS-POW-014`–`021` | Collective executive authority, confidence, constructive replacement, presidential selection and bounded formal acts, alternate continuity | Ordinary executive power requires a current Assembly-derived mandate. Presidential appointment, promulgation, and receipt are nondiscretionary formal effects and no refusal, vacancy, or selection failure transfers policy power. | Certified-government, constructive-successor, presidential-refusal, alternate-only, missing-currentness, and incumbent-extension cases; removal of the confidence/source conjunct must fail. | Revise Chapters 2 and 12, Part V Rotation and State, and the method. Preserve the Book 2 boundary for formation, staffing, publication, clocks, and action. |
+| `FS-POW-022`–`035`, `FS-POW-051` | Ordinary and constitutional adjudication, procedure review, alternate panel, qualification, divided appointments, cause-only removal, vacancy/capture fallback, and bounded office mechanics | Every effect keeps adjudication, qualification, selection, fact-finding, confirmation, execution, audit, and remedy separated. Seats, selectors, finite terms, and fallbacks arrive only through current source-bound choices satisfying the ratified anti-capture limits; silence supplies no choice. Before formalisation, repair `FS-POW-023`/`FS-FAL-023`: the Constitutional Court, not the People's Assembly, holds and decides general invalidation; the source record, execution, audit, and alternate-panel remedy remain separately allocated. | Case-specific/general-effect separation, uninvolved alternate panel, adverse-qualification versus silence, coalition concentration, divided-source, cause-only removal, vacancy fallback, stale term, and self-certification negatives. | Revise Chapters 2 and 3, Part V Rotation and State, and the method. The integrity and non-carceral-justice TODOs consume the institutional shell while retaining their substantive controls and remedies. |
+| `FS-POW-036` | Political-home determination and atomic transfer | Ordinary residence and the imported general-adulthood status remain distinct. One claimant-chosen nested home is current at a time; custody, institutional placement, eviction, shelter use, or forced displacement cannot move it. Registration is evidence, not source. | Prisoner, homeless, displaced, refugee, stateless, multiple-residence, first-home provisional, atomic-transfer, last-uncontested, no-double/no-gap ballot, and missing-adulthood-record cases. | Revise Chapters 9 and 13 where political status is discussed, Part V State, and the method. Preserve universal standing and the single-deprivation claim. Remove the duplicate political-home work from the later territory TODO. |
+| `FS-POW-037`–`040` | Amendment approval, constitutional initiative docket, bounded ordinary-law initiative, and constructive recall | Each route consumes an exact proposal, current roster, unique submissions, separate completeness assurance, rule-bound result, challenge/correction record, and current certificate. A tie, missing certificate, or `FALSE` is never approval or a source of persistence. | Full-Assembly and referendum conjunction, affected-region consent, initiative-no-bypass, counterproposal uniqueness, constructive-recall successor, tie, empty-roster, omitted-resident, duplicate-submission, and conflicting-certificate cases. | Revise Chapter 12 and its pins, Part V State, and the method. Delete the duplicate democratic-ceiling TODO after owner migration; the amendment-assurance TODO retains byte identity, publication, deployment, rollback, and source-transition work. |
+| `FS-POW-041`–`044` | Caretaker, fresh-election call, budget continuity, and certified succession | Each temporary effect requires its own positive current source and end record. Essential continuity never expands into ordinary policy; missing time evidence never extends an incumbent; an election duty proves no clock advance or election occurrence. | Formation failure, narrow caretaker, nonpolitical succession, budget-floor continuity, no-new-programme, valid end, outgoing refusal, stale source, and custody-T3 non-reuse cases. | Revise Part V Rotation and State and the method. Preserve Chapters 7, 8, and 13's custody, floor, delivery, and single-deprivation limits. The economic TODO consumes only the budget-continuity shell. |
+| `FS-POW-045` | Negotiated secession settlement and final ratification | An opening referendum is not exit. Legal effect requires the complete federal agreement, rights and minority review, settlement, affected-population ratification, and any required actual collective consent. No military or withholding route is created. | Referendum-only, missing-settlement, rights-corridor, collective-consent, conflicting-certificate, unilateral-exit, and completed-ratification cases. | Revise Part V State and the method. The later collective/external-relations TODO retains collective-title consent and external consequences while consuming this internal constitutional route. |
+
+No row authorises a new `FS-POW` grain. If implementation reveals a direct
+legal effect not already owned by `FS-POW-001`–`051`, the family must stop
+rather than hide the effect inside an existing card.
+
+#### 13.1.1 Reviewed allocation repairs required before formalisation
+
+The completed matrix census found that the 51 power grains are sufficient but
+several frozen holder and function allocations are not faithful to their own
+ratified source. Formalisation must repair the existing cards and `FS-FAL` rows
+in place, without adding a power or allocation row:
+
+- `FS-POW-004` moves the independent interim competence order from the
+  People's Assembly to the Constitutional Court route; `FS-POW-011` moves
+  Council delegation to the regional-legislature route.
+- `FS-POW-015` and `016` place confidence certification and constructive
+  replacement with the People's Assembly; `FS-POW-017` records the joint
+  Assembly--Regions Council selection; and `FS-POW-018` separates the
+  confidence result from qualification review and the President's bounded
+  formal appointment.
+- `FS-POW-022` keeps the ordinary appeal/remedy route case-specific;
+  `FS-POW-023` places general invalidation with the Constitutional Court;
+  `FS-POW-024` keeps the ordinary constitutional procedure route final in its
+  own case; and `FS-POW-025` makes the unaffected alternate panel, not the
+  challenged Court, the composition-case adjudicator and remedy route.
+- `FS-POW-028`--`035` replace single-body placeholders with the exact
+  source-supplied divided selector, fact-finding, cross-body confirmation,
+  office-specific succession, vacancy, term, seat, and fallback interfaces.
+  They choose no numeric duration, seat count, threshold, or fallback count.
+- `FS-POW-037` records Assembly, electorate, and conditional regional consent;
+  `FS-POW-038` and `040` place initiative and constructive recall with
+  electors rather than their administrator; and `FS-POW-039` separates
+  administration, compatibility review, referendum result, counterproposal,
+  and operative effect.
+- `FS-POW-043` places essential budget execution with Provision and Treasury;
+  `FS-POW-044` uses the office-specific certified executor rather than a
+  generic Assembly successor; and `FS-POW-045` separates federal agreement,
+  negotiation, rights review, and affected-population ratification.
+- The corresponding role references are repaired wherever a generic public
+  servant or elected-office role currently stands in for an elector,
+  adjudicator, regional legislature, treasury executor, selector, or
+  office-specific holder.
+
+The four-role result pipeline does not require a thirty-ninth body or a new
+public-power grain. `FS-CLM-16` already records election administration,
+independent completeness assurance, the result service, and institutional
+execution as an external-assumption pipeline. Dynamic rules therefore bind four
+pairwise-distinct, source-supplied authority terms through existing
+`authorized/3` and `observe/4` premises; bind them to one exact current record,
+configuration, roster, result, and source/version lineage; and require the
+execution authority to match the repaired constitutional holder. Only the
+card-specific `authority/3` legal effect may follow. Authentication,
+completeness, computation, certification, institutional action, and delivery do
+not follow. A bare result certificate, an unbound compatibility label, or an
+unidentified configuration is insufficient.
+
+The existing 210 `FS-FAL` rows continue to allocate constitutional fact
+receipt, decision, execution, audit, and final remedy. They are not a census of
+the external certificate producers named by `FS-CLM-16`. This distinction
+preserves both the exact allocation count and the four-role seam.
+
+### 13.2 Result and parameter defaults
+
+Every result route uses a positive, current, externally certified result premise.
+Zero eligible roster, missing completeness, conflict, invalidity, or absence
+therefore supplies **no affirmative legal effect**. That rule has these
+card-specific consequences:
+
+- no Assembly, Council delegation, President, government, appointee, amendment,
+  initiative choice, recall successor, or secession result is created;
+- no removal, consent, promulgation, transfer, or appointment is inferred;
+- no prior law, office, delegation, or ordinary mandate is extended merely
+  because the new result is absent; and
+- any last-uncontested home, live term, caretaker mandate, essential budget
+  continuity, alternate formal duty, or rights protection must derive from its
+  own positive source-bound rule and end condition.
+
+`FS-POW-031`–`035` consume current choices for finite term, vacancy, selector,
+succession, proportionality, and fallback parameters. The formal source checks
+those choices against the ratified finite, divided-source, nonrenewable,
+anti-capture, alternate-route, and failure-default bounds. It does not invent a
+numeric age, duration, seat count, threshold, tolerance, district magnitude, or
+fallback count, and it does not ask Nibli to calculate or authenticate one.
+
+### 13.3 Legacy-relation disposition
+
+| Relation or fixture | Disposition for `FS-CVF-003` | Required protection |
+| --- | --- | --- |
+| `mature` | **Retire/reserve unchanged.** It remains conclusion-only and unread; the imported `at($x, GeneralAdulthood)` route remains the only general-adulthood source. | Existing maturity-refusal pins plus political-home cases using no numeric age or discretionary maturity test. |
+| `decide` | **Retain narrowly.** It remains the legacy two-place franchise fixture and is not a submission, tally, roster, candidacy, office, or result certificate. | Existing Chapter 9 positive/negative pins plus new membership and certificate relations that never read or rewrite `decide`. |
+| `choose` | **Retain narrowly.** Electorate/Convocation seating remains the historical pen and answerability fixture; neither source is relabelled as a ratified institution. | Existing Chapters 1–5 pins plus counterfactuals proving new public power does not borrow the legacy seating fact. |
+| `broken` | **Retain narrowly.** It continues to affect legacy recall, voiding, custody, and recognition controls; it is not a general vacancy, removal, capture, or invalid-result status. | Existing voiding, custody, recognition, and counterfactual controls remain byte- and verdict-stable. |
+| `approves` | **Retain its completed split.** `ratifies` remains the narrow declared-target amendment label and no state-form result is inferred from either word. | Existing amendment and temporal cases plus new result-certificate pins separating proposal, political result, legal review, and source transition. |
+| `authority` | **Retain as permanent historical public answerability.** It is not current office, current lawful power, jurisdiction, or mandate. | Existing shield/answerability pins plus new current-source predicates whose absence cannot erase historical answerability. |
+| `public` and the constants `Electorate`, `Convocation`, `Assembly`, `State`, `Court`, `Appeals`, `Review`, and `TemporalReview` | **Retain as fixtures.** None is silently renamed or treated as the complete ratified body with the same English label. | Existing producer/consumer pins remain; each new body/power rule uses a distinct source-bound relation and explicit holder card. |
+
+### 13.4 Standing-claim impact disposition
+
+| Standing source | Classification | New formal test | Exact same-change consequence |
+| --- | --- | --- | --- |
+| Opening note overview, glossary, institutional cast, and the statement that the book covers selected authority edges rather than a complete government | `revise_and_pin` | Full family suite plus exact institution/power references | Replace the incomplete-government account with the formally covered constitutional interfaces while retaining the no-operation, no-delivery, and Book 2 seams. |
+| Chapter 1's claim that vocabulary widening is visible but neither constitutionally approved nor entrenched | `revise_and_pin` | Assertion-surface fingerprints, admission/derived-only guards, and statement ownership | Confine the warning to unapproved or unowned widening; identify `FS-CVF-003` as a reviewed, source-owned family without treating corpus admission as legal approval. |
+| Chapter 2's two answerability routes and its legacy seating/public-body account | `revise_and_pin` | Existing answerability pins plus current-source, office, lawful-power, and historical-answerability controls | Distinguish permanent public answerability from current office and current lawful power; do not delete the legacy examples. |
+| Chapter 3's two pen families and legacy writer controls | `revise_and_pin` | Existing pen/carry pins plus separated state-form writer, assurance, result, review, and execution controls | State that the legacy pens remain fixtures and add the new lawful institutional writer boundary without claiming authentication or operation. |
+| Chapters 4–7's shield, voiding, clawback, and custody claims | `preserve_and_pin` | Existing chapter, record, and T3 suites plus explicit no-reader/no-T3-reuse checks | No prose change unless the producer/consumer census finds a changed verdict. Custody remains the only implemented coercive temporal contract and supplies no office clock. |
+| Chapter 8's entitlement/debt account and no-outside-confinement delivery boundary | `preserve_and_pin` | Existing floor/debt/delivery pins and the state-family no-arrival controls | No state-form rule produces a floor actuality or operational delivery. Keep the current prose and counted-claim state unless the full audit finds a changed sentence. |
+| Chapter 9's franchise-only account | `revise_and_pin` | Membership, adulthood-evidence, political-home, candidacy, one-submission, result-certificate, prisoner, and nonresident cases | Replace the narrow `decide`-only explanation with the full residence-first interface while retaining the legacy fixture and no-clock/no-delivery limits. |
+| Chapters 10 and 11's recognition, work, placement, and home claims | `preserve_and_pin` | Existing no-recognition-reader and placement suites plus political-home/non-placement controls | State-form rules neither weight recognition nor turn a placement into political home. Edit only a sentence made false by the completed census. |
+| Chapter 12's declared-target amendment label and manually applied source account | `revise_and_pin` | Amendment-result, procedure-review, certificate-conflict, wrong-source, and source-transition controls | Distinguish lawful political result from compatibility review, byte identity, publication, deployment, and actual source transition. |
+| Chapter 13's title, single-deprivation claim, and counted-claim allowlist | `preserve_and_pin` | Chapter 13, floor, placement, custody, and counted-claim guards | The family creates no deprivation or floor arrival. Keep the title and sole allowlist location unchanged unless the executable census disproves that result. |
+| Chapter 14's unread-duty endpoint | `preserve_and_pin` | Existing duty-polarity pins plus an assertion-surface check that no state-form rule reads `obliged` | New institutions and routes do not make the existing audit duty act or establish remedy liveness. |
+| Part V Rotation and State verdicts | `revise_and_pin` | Family pins, counterfactuals, assertion fingerprints, and the Book 1/Book 2 boundary record | Rotation must acknowledge finite office terms while retaining the unresolved unwanted-work question. State must acknowledge a formal federal architecture while retaining operation, staffing, funding, delivery, feasibility, and legitimacy limits. |
+| Final method part | `revise_and_pin` | Exact statement inventory, family pins, counterfactual mutations, generated audits, and full verifier | Add the family and its trust-root/result seam; revise any claim of absent state architecture while keeping the assurance ceiling explicit. |
+| Staged temporal-assurance case and custody claims | `preserve_and_pin` | Existing T1–T3 executable cases plus explicit state-family temporal cases | Regenerate digest-bound artifacts mechanically; do not revise custody semantics or reuse its source, lease, case, or renewal relations. |
+| Registry and generated assertion/count artifacts | `audit_then_preserve_or_revise` | Registry check, assertion fingerprints, spine, all reviewed report checkers, and counted-claim gate | Update only exact bindings and claims whose truth changes. Add no statistic, aggregate coverage claim, or unreviewed public assertion. |
+
+The family may move from `coverage-ready` only after every row above has an
+executable disposition and every `revise_and_pin` row's exact canonical Book 1
+wording has completed the author-approval lifecycle.
