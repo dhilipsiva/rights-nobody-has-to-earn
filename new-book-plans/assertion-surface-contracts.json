@@ -19,14 +19,14 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "be60cf8404f29a0f5d7072e3fb69d0ac2d948f93906224a46d9dbc66abd34a7b",
+  "rules_sha256": "ca475b13d5f68d5229f1b0a51e875bf39a818d77882915974e05b01e9979742a",
   "facts_sha256": "d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
-    "authority": "3db0ce4e56f1619d7ab36841d4a9af3d4f036f0e6f002d47dfbd22180785e30e",
-    "authorized": "60e8c4dbbbf08cd34c10f9bbc286311bcca68ce3adcd0ced5feb76e72a6bc690",
+    "authority": "cac307513023cdafcd40595d857d62b1237e5a3a1e87d5cbc8b92b5d2514e78e",
+    "authorized": "f956f41a629b1e6a52235dc0b28558806bc9ad4650e7c175780f4da554492329",
     "become": "4267335bc5356d9b87bbaed0feeafc589728043818ecf5cb6757cbeec3ca05d4",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
@@ -40,7 +40,7 @@
     "clean": "8c4fa6ea07e9fadc34004db14dc81b67de9b0c1a4c6aa7dc77a3f56a929066f7",
     "clear": "affd727ee37bc0305631a0e1a3b9b75b28927467957d9f35ec0ca3b7e0dd7978",
     "collide": "57a7ae8591c8202522e5578fcf49e311c4bf3f2eebe7d5ca61174cc8dc1a888b",
-    "complete": "ffc08df609f81d46ef8359bf1acd1744c3b58f4e3f06af952fbdff339732a929",
+    "complete": "4de65175e6593aeefaddf5a169877cf4fd57dd805648dda5b46a4e1a614b9968",
     "concurrent": "239a163bccf7deec1f62e9cad53c1ba5f03af2d4c52c616a321c4bcf0726c6c7",
     "continue": "b7de0ce64ec41c5f77cfd3b9495e3d8a97ef957716b025740239421b809c3e48",
     "correct": "e3001e25bfd9f28c2f552de2bb597b15526ea2c1f400cb4b5edb927a84277c3c",
@@ -73,7 +73,7 @@
     "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
     "meets": "a9cca28717bb66c3f33f3ae83ed83caa3a7c6b75cd7bd226f41089f9c026c061",
     "obliged": "635a864a87d4b8aff407346d2b14c079714d8c078c78e622babd1972b1d26f9b",
-    "observe": "9f94170909c199add3a50931ba74fc967f6393870d3f5fda9bf8f38d0e499c99",
+    "observe": "8a69ec30efe5a811ea954fcc320bfea45373a6262e27ed39d14f6ebba8f04219",
     "orderly": "59535e1c160c90a8cc609b4c73581a2b17a1bab4f31f46fecd54af05b69455ec",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
     "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
@@ -690,7 +690,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Write the Bodies specification",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
       "tags": [
         "public-body",
         "seating",
@@ -848,7 +848,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Recall or lapse may remove a current pen, but must not erase historical authority or exposure and thereby destroy a whistleblower's shield retroactively.",
-      "owner_ref": "TODO.md::Write the Bodies specification",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
       "tags": [
         "seating",
         "public-body",
@@ -1390,7 +1390,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Write the Bodies specification",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
       "tags": [
         "justice",
         "audit",
@@ -1750,7 +1750,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Write the Bodies specification",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
       "tags": [
         "public-body",
         "seating",
@@ -1827,7 +1827,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Define the democratic ceiling and majority process",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Define the democratic ceiling and majority process.",
       "tags": [
         "amendment",
         "democracy",

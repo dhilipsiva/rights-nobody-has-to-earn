@@ -162,27 +162,39 @@ rotation — who leads, who does the thankless administrative work, who empties 
 bins nobody volunteers for — done without memory, without relief, and without any
 way to say thank you that counted.
 
-What does this design do about rotation? Almost nothing, and this joint is where
-I say so. Recognition does not price the unpleasant against the pleasant — a
-recognised cleaner and a recognised surgeon stand identically, which removes the
-market's answer without supplying another. The design can now represent witnessed
-order and a reviewed interval, but it applies that machinery to case-bound custody,
-not office terms, staggered rotation, or unwanted work. What it does contribute is
-negative and real: because the floor never
-depends on work, nobody can be starved into the jobs nobody wants, which takes
-the historical worst answer — assignment by hunger — off the table permanently.
-But taking the worst answer away is not giving an answer.
+What does this design do about rotation? It now has a constitutional answer for
+rotation of public authority. Current office and current lawful power are
+separate from permanent answerability. Assembly, Council, executive,
+presidential, judicial, oversight, and local powers depend on positive current
+sources, finite end conditions, and their own succession, vacancy, alternate,
+or fallback routes. A certified successor ends the predecessor's current
+authority; refusal to leave does not extend it. A caretaker receives only
+essential continuity, not the ordinary mandate.
 
-**Fails as stated.** The design, as designed, does not solve rotation; it
-inherits the kibbutz problem with fewer tools and better guarantees for the
-people the problem lands on. The specification, as a property: in the finished
-society, the work nobody chooses is visibly done, and the record of who does it
-shows neither a caste nor a draft — no cluster of the unpleasant on any group the
-record can name, and no rule anywhere that made anyone do it. If that property
-cannot be exhibited, this design has no business scaling past the size where
-neighbours shame each other into fairness. The machinery that could exhibit it
-belongs to the operational book, and I have left the joint open rather than
-paper it.
+That is real rotation in law, and it is not a clock. The source supplies the
+finite term, seat, selector, succession, proportionality, and fallback choices
+inside the constitutional limits. The rules do not invent their numbers,
+advance outside time, hold an election, make an appointment, staff an alternate,
+or cause a successor to arrive. The custody time path is not reused as an
+office term.
+
+And none of that answers the joint history raised. Recognition still does not
+price the unpleasant against the pleasant — a recognised cleaner and a
+recognised surgeon stand identically, which removes the market's answer without
+supplying another. Because the floor never depends on work, nobody can be
+starved into the jobs nobody wants, which takes the historical worst answer —
+assignment by hunger — off the table permanently. But taking the worst answer
+away is not giving an answer.
+
+**Fails as stated.** The design no longer leaves rotation of public office
+wholly open. It still does not solve rotation of the work nobody chooses. The
+specification, as a property: in the finished society, that work is visibly
+done, and the record of who does it shows neither a caste nor a draft — no
+cluster of the unpleasant on any group the record can name, and no rule anywhere
+that made anyone do it. If that property cannot be exhibited, this design has
+no business scaling past the size where neighbours shame each other into
+fairness. The machinery that could exhibit it belongs to the operational book,
+and I have left that part of the joint open rather than paper it.
 
 ## Coercion
 
@@ -577,25 +589,48 @@ campaign — the state, rarely and conditionally, making a design like this more
 possible rather than less.
 
 What this design does about the state is the book's least hidden secret: it
-does not evade the state, it *specifies* one. A public body owes the floor to
-every person; it is named, answerable, exposable, and it holds no pen. And here
-is the concession I promised in the frame, in the plain words the reviewers
-noticed were missing: that body is funded by coercion. A floor owed to everyone
-at scale is paid for the way states pay for things — compulsorily, from people
-who did not individually agree — and a reader who caught this book avoiding the
-word *tax* would have been right to stop trusting it. The ends of this design
-are social-democratic; the provider is a fiscal agent; I have no interest in
-pretending otherwise. What is new here is not the absence of a provider — it is
-the constraint mechanism wrapped around one. Somebody once summarised an
-argument like this as social democracy with extra steps, and the answer is yes —
-and the extra step is narrower than the praise once given it. Under the rules as
-written, the absence of something owed on the floor cannot be made a reason to
-imprison a person. That refusal does not deliver the floor, block every hostile
-rule, stop defunding, or keep the constitutional source from changing. One of
-this book's early readers said that no politician could quietly defund a
-citizen's basic rights; "it makes the welfare state mathematically enforceable."
-I accept that sentence as an ambition, not as a description of what this version
-has proved.
+does not evade the state, it *specifies* one. It now specifies more than a
+debtor. The destination is a federal constitutional parliamentary republic:
+enumerated common powers, regional residual authority, protected local
+competence, a population-elected People's Assembly, a Regions Council, a
+collective Executive Council held to confidence, a Civic President confined to
+bounded formal acts, ordinary and constitutional courts, divided appointments,
+independent oversight, residence-first political membership, peaceful
+succession, and a negotiated internal route for secession.
+
+Each constitutional power still has to pass through its own positive supplied
+record: lawful source and version, holder, jurisdiction, scope, separate
+evidence and review, a bounded result, and its own time record. When a required
+positive entry is absent, the power does not follow.
+
+That is all the check establishes. It does not authenticate the entries, search
+for an omitted conflict, or decide for itself that a record is stale. If every
+required entry is supplied, the formal conclusion can follow even when an
+outside attestation is false. This is a formal architecture, not proof that one
+institution exists, that a roster is complete, that an election was honest,
+that an office is staffed, or that an order was obeyed.
+
+The older `State` that owes the floor remains named and answerable; it has not
+been stretched into the whole republic. And here is the concession I promised
+in the frame, in the plain words the reviewers noticed were missing: a state
+that supplies a floor at scale is funded by coercion. It takes resources
+compulsorily from people who did not individually agree. The state-form rules
+separate authority to raise revenue from authority to spend it. They do not
+choose a tax base or rate, borrowing rule, monetary system, labour settlement,
+property regime, operating budget, or delivery capacity.
+
+The ends of this design are social-democratic; the provider is a fiscal agent;
+I have no interest in pretending otherwise. What is new here is not the absence
+of a provider — it is the constraint mechanism wrapped around one. Somebody
+once summarised an argument like this as social democracy with extra steps, and
+the answer is yes. The extra steps now include a formal federal architecture,
+but still do not bake bread. Under the rules as written, the absence of
+something owed on the floor cannot be made a reason to imprison a person.
+That refusal does not deliver the floor, block every hostile rule, stop defunding, or
+keep the constitutional source from changing. One of this book's early readers
+said that no politician could quietly defund a citizen's basic rights; “it
+makes the welfare state mathematically enforceable.” I accept that sentence as
+an ambition, not as a description of what this version has proved.
 
 The objections, and this joint collects the heaviest. DeepSeek: "A society that
 can state its obligations but cannot fulfill them is not a society; it is a
@@ -612,26 +647,36 @@ anti-assessment purity that is the book's distinctive contribution."
 Let them stand. They are, among them, correct about the size of the gap.
 
 The answer is the book's oldest honesty, sharpened. This is a destination book.
-It describes what a society *is* under these rules — never how to get there,
+It describes what a society *is* under these rules — never how to get there —
 and, outside the machinery of punishment, at only one deliberate point how
-anything arrives: teaching that was heard delivers learning, one route that runs
-through no prison, built to show the shape of a delivery rule so that the shape
-cannot be argued away as impossible. Everything else on the delivery
-side — the bakeries, the budgets, the logistics, the legitimacy — belongs to a
-second book about building, and the last pages of this one point to it. What
-this book contributes to that future work is not nothing: it is the binding
-layer — a named duty, plus the exact refusal to turn the absence of a floor item
-into a reason for imprisonment. It is not a ban on defunding, and it does not
-make delivery self-executing. The objection that survives, whole, is legitimacy:
-no argument in this part makes anyone *adopt* these rules, constitutions are not
-adopted for technical merit, and the reviewer who said the bridging book is
-unwritten is right. I am one author; that book needs people I have not met.
+anything arrives: teaching that was heard delivers learning, one route that
+runs through no prison, built to show the shape of a delivery rule so that the
+shape cannot be argued away as impossible.
 
-**Survives, narrowed.** The claim that survives is smaller than "this feeds
-people": under these rules, the floor is owed without an earned condition, its
-absence cannot be made a reason for imprisonment, and the duty has a name. That
-claim was attacked and holds still. The narrowing is everything the current
-source cannot prove: delivery, funding, enforcement, and legitimacy. The
+The binding layer is now wider than one debtor and one refusal. It names the
+tiers, bodies, holders, jurisdictions, scopes, democratic results, courts,
+continuity rules, and failure defaults through which public power may be lawful.
+It also names where each conclusion stops. The supplied record does not
+authenticate itself. A current authority does not staff its holder. A budget
+continuity rule does not find money. A duty does not make anyone act.
+
+Everything on the operating side — bakeries, tax administration, rosters,
+ballots, tallies, publications, facilities, salaries, logistics, staffing,
+capacity, transition, and legitimacy — belongs to the second book about
+building. The objection that survives, whole, is legitimacy: no argument in
+this part makes anyone *adopt* these rules, constitutions are not adopted for
+technical merit, and the reviewer who said the bridging book is unwritten is
+right. I am one author; that book needs people I have not met.
+
+**Survives, narrowed.** Two claims survive. Under these rules, the floor is owed
+without an earned condition, its absence cannot be made a reason for
+imprisonment, and the duty has a name. And the republic's constitutional powers
+now have named holders and positive, source-bound limits rather than an
+unwritten state-shaped gap.
+
+The narrowing is everything those conclusions cannot prove: authentic records,
+honest elections, complete rosters, funding, staffing, independence in fact,
+operation, delivery, enforcement, feasibility, and legitimacy. The
 specification, as a property: the bearer's taking and spending resolve to
 published entries an outsider can re-run — where the money came from, where it
 went, held to the same standard of retraceability as every other conclusion in

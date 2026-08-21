@@ -1,5 +1,7 @@
 # ── Chapter 2 fidelity pins: "Standing, and Why It Is Never Revoked" ─────────
 #
+# FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/02-public-answerability.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see

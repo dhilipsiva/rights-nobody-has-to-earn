@@ -1,5 +1,7 @@
 # ── Chapter 1 fidelity pins: "What Counts as Evidence" ───────────────────────
 #
+# FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+#
 # KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
 # inlined. Run:
 #   ./verify.sh --only book-1/01-what-counts-as-evidence.pins.nibli

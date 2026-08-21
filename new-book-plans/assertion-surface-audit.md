@@ -25,7 +25,7 @@ the contract ledger.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `be60cf8404f29a0f5d7072e3fb69d0ac2d948f93906224a46d9dbc66abd34a7b`.
+- Authored-rule fingerprint: `ca475b13d5f68d5229f1b0a51e875bf39a818d77882915974e05b01e9979742a`.
 - Authored-fact fingerprint: `d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
@@ -34,13 +34,13 @@ the contract ledger.
 
 | relation | stratum | admitted | derived-only | ground facts | classification | contract | direct readers |
 | --- | ---: | --- | --- | --- | --- | --- | --- |
-| `authority` | 0 | no | yes | no | `derived_only` | `derived-only-authority` | positive `defend` |
+| `authority` | 1 | no | yes | no | `derived_only` | `derived-only-authority` | positive `defend` |
 | `become` | 4 | no | yes | no | `derived_only` | `derived-only-become` | none |
 | `believe` | 4 | no | no | no | `pending_interface` | `floor-actuality-believe-pending` | none |
 | `building` | 4 | no | yes | no | `derived_only` | `derived-only-building` | none |
 | `clean` | 0 | no | yes | no | `derived_only` | `derived-only-clean` | negative `false` |
 | `collide` | 1 | no | yes | no | `derived_only` | `derived-only-collide` | negative `correct`, negative `match`, negative `reference`, negative `succeed`, negative `time`, positive `collide` |
-| `complete` | 0 | no | yes | no | `derived_only` | `derived-only-complete` | negative `succeed`, positive `collide`, positive `err`, positive `match`, positive `person`, positive `succeed` |
+| `complete` | 1 | no | yes | no | `derived_only` | `derived-only-complete` | negative `succeed`, positive `authority`, positive `collide`, positive `complete`, positive `err`, positive `match`, positive `person`, positive `succeed` |
 | `concurrent` | 0 | no | yes | no | `derived_only` | `derived-only-concurrent` | positive `correct` |
 | `correct` | 2 | no | yes | no | `derived_only` | `derived-only-correct` | positive `match`, positive `prisoner` |
 | `decide` | 4 | no | yes | no | `derived_only` | `derived-only-decide` | none |
@@ -85,7 +85,7 @@ channels. No exceptional channel exists in the current contract.
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `at` | roster-person, standing, first-contact, adulthood, placement, record-integrity | `person` | patchable, external, deliberately_refused | negative `dwell`, positive `building`, positive `decide`, positive `dwell`, positive `person`, positive `prevents` | `4ed39fcb58fb931e` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `collide`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `healthy`, positive `match`, positive `meets`, positive `person`, positive `prisoner`, positive `secure`, positive `succeed` | `60e8c4dbbbf08cd3` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `authority`, positive `collide`, positive `complete`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `healthy`, positive `match`, positive `meets`, positive `person`, positive `prisoner`, positive `secure`, positive `succeed` | `f956f41a629b1e6a` |
 | `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
 | `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `6fa58bc4be130c53` |
 | `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `9d000cd29a2bee16` |
@@ -109,7 +109,7 @@ channels. No exceptional channel exists in the current contract.
 | `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `4e3f1f3437d1e8e3` |
 | `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
 | `married` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `7ef6097705ac2859` |
-| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `healthy`, positive `match`, positive `meets`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `9f94170909c199ad` |
+| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `authority`, positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `healthy`, positive `match`, positive `meets`, positive `orderly`, positive `person`, positive `precede`, positive `prisoner`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `8a69ec30efe5a811` |
 | `parent` | audit, privacy, conflict | `false` | patchable, external | positive `false` | `316cc4529059bf17` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `cd0ddf58592a42a0` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
@@ -191,7 +191,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `60e8c4dbbbf08cd34c10f9bbc286311bcca68ce3adcd0ced5feb76e72a6bc690`.
+- **Reviewed route fingerprint:** `f956f41a629b1e6a52235dc0b28558806bc9ad4650e7c175780f4da554492329`.
 
 ### `born`
 
@@ -223,7 +223,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No rule challenges or corrects a raw mark; deleting one remains external and invisible inside a supplied snapshot. Temporal conflicts and lease challenges use `collide` instead.
 - **Required challenge route:** Independent review, correction without silent deletion, and continuity while status is disputed.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Write the Bodies specification`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.`.
 - **Reviewed route fingerprint:** `6fa58bc4be130c534a763f58d08bd1414751f290ceb14958c591d4c158fd88b6`.
 
 ### `capture`
@@ -288,7 +288,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Contest, correction, and independent review of selection while preserving historical accountability.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Recall or lapse may remove a current pen, but must not erase historical authority or exposure and thereby destroy a whistleblower's shield retroactively.
-- **Owner:** `TODO.md::Write the Bodies specification`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.`.
 - **Reviewed route fingerprint:** `1a1477d3ac30c8646aacc5277f4db15806a5eb1b195e06a2f30050ffd86df313`.
 
 ### `cite`
@@ -513,7 +513,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No generic challenge exists; Appeals is itself another unauthenticated `judge` route.
 - **Required challenge route:** Route-specific appeal, conflict control, correction history, and independent review.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Write the Bodies specification`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.`.
 - **Reviewed route fingerprint:** `a63a90383a7ebcca4e1fd07625ea34af503d566062ecb0a9fd532bca1e84437a`.
 
 ### `limit`
@@ -578,7 +578,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `9f94170909c199add3a50931ba74fc967f6393870d3f5fda9bf8f38d0e499c99`.
+- **Reviewed route fingerprint:** `8a69ec30efe5a811ea954fcc320bfea45373a6262e27ed39d14f6ebba8f04219`.
 
 ### `parent`
 
@@ -658,7 +658,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No creation-status challenge, correction, or continuity mechanism exists.
 - **Required challenge route:** Public constitutional review and append-only correction of body status.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Write the Bodies specification`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.`.
 - **Reviewed route fingerprint:** `6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60`.
 
 ### `put`
@@ -690,7 +690,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No in-model recount, ratification contest, correction, or reviewer-independence test exists.
 - **Required challenge route:** A public contest and independent review route tied to the exact tally certificate, with safe continuity for rights.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Define the democratic ceiling and majority process`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Define the democratic ceiling and majority process.`.
 - **Reviewed route fingerprint:** `f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed`.
 
 ### `receives`

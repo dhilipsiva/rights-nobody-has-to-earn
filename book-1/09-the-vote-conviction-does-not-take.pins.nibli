@@ -1,5 +1,7 @@
 # ── Chapter 9 fidelity pins: "The Vote Conviction Does Not Take" ─────────────
 #
+# FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/09-the-vote-conviction-does-not-take.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see

@@ -9,13 +9,13 @@
 # those actually happened.
 #
 #   ./verify.sh          full run: every declared chapter/floor pin; reviewed
-#                       record, temporal, amendment, placement, reader, and
-#                       counterfactual suites.
+#                       record, temporal, amendment, placement, state-form,
+#                       reader, and counterfactual suites.
 #   ./verify.sh --quick  everything except the executable suites
 #                       NOTE --quick cannot execute chapter/floor pins, record
 #                       snapshots, temporal transitions, amendment candidates,
-#                       placement cases, reader-evaluator fixtures, or stale
-#                       counterfactual fixtures. Run the
+#                       placement cases, state-form pins, reader-evaluator
+#                       fixtures, or stale counterfactual fixtures. Run the
 #                       FULL suite after any constitution edit — that is how a
 #                       stale fixture shipped once.
 #
@@ -41,12 +41,15 @@ RED_TEAM=new-book-plans/9-record-integrity-red-team.py
 AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
+STATE_FORM_AUDIT=new-book-plans/19-state-form.py
 LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
 CLOSURE_AUDIT=new-book-plans/16-constitutional-closure.py
 POWER_SOURCE_AUDIT=new-book-plans/17-full-society-power-source-manifest.py
 READER_AUDIT=new-book-plans/14-reader-evidence.py
 READER_GATE=new-book-plans/reader-evidence-admission-gate.py
 PILOT_READER_ARTIFACTS=new-book-plans/15-pilot-reader-artifacts.py
+STATE_FORM_SHARD_DIR=""
+STATE_FORM_MAX_PARALLEL=4
 QUICK=0
 ONLY=""
 case "${1:-}" in
@@ -60,6 +63,68 @@ esac
 pass() { printf '  \033[32mok\033[0m   %s\n' "$1"; }
 fail() { printf '  \033[31mFAIL\033[0m %s\n' "$1"; [ -n "${2:-}" ] && printf '       %s\n' "$2"; exit 1; }
 step() { printf '\n\033[1m%s\033[0m\n' "$1"; }
+
+run_pin_shards() {
+  local kb=$1
+  shift
+  local -a all_shards=("$@")
+  local -a pids shards logs
+  local shard log
+  local start end index status=0
+  local summary="" detail=""
+  for ((start = 0; start < ${#all_shards[@]}; \
+       start += STATE_FORM_MAX_PARALLEL)); do
+    end=$((start + STATE_FORM_MAX_PARALLEL))
+    [ "$end" -le "${#all_shards[@]}" ] || end=${#all_shards[@]}
+    pids=()
+    shards=()
+    logs=()
+    for ((index = start; index < end; index++)); do
+      shard=${all_shards[$index]}
+      log="${shard%.pins.nibli}.out"
+      "$PIN" --allow-shell --kb "$kb" "$shard" >"$log" 2>&1 &
+      pids+=("$!")
+      shards+=("$shard")
+      logs+=("$log")
+    done
+    for index in "${!pids[@]}"; do
+      if wait "${pids[$index]}"; then
+        if grep -q 'PASS' "${logs[$index]}"; then
+          summary="${summary}$(basename "${shards[$index]}"): $(tail -n 1 "${logs[$index]}")
+"
+        else
+          status=1
+          detail="${detail}$(basename "${shards[$index]}"): no PASS verdict
+$(tail -n 3 "${logs[$index]}")
+"
+        fi
+      else
+        status=1
+        detail="${detail}$(basename "${shards[$index]}"): execution failed
+$(tail -n 3 "${logs[$index]}")
+"
+      fi
+    done
+    if [ "$status" -ne 0 ]; then
+      printf '%s' "$detail"
+      return 1
+    fi
+  done
+  printf '%s' "$summary"
+}
+
+cleanup_state_form_shards() {
+  if [ -n "$STATE_FORM_SHARD_DIR" ] && [ -d "$STATE_FORM_SHARD_DIR" ]; then
+    local path
+    for path in "$STATE_FORM_SHARD_DIR"/main-*.pins.nibli \
+                "$STATE_FORM_SHARD_DIR"/counterfactual-*.pins.nibli \
+                "$STATE_FORM_SHARD_DIR"/*.out \
+                "$STATE_FORM_SHARD_DIR"/index.json; do
+      [ ! -e "$path" ] || rm -f -- "$path"
+    done
+    rmdir -- "$STATE_FORM_SHARD_DIR" 2>/dev/null || true
+  fi
+}
 
 # THE BINARY MUST MATCH THE SOURCE, AND THIS IS WHY THE SCRIPT DOES IT.
 # On 2026-07-31 nibli landed NAF materialisation. The commit was on main and
@@ -116,13 +181,41 @@ if [ -n "$ONLY" ]; then
   build_engine
   step "pins — $ONLY"
   printf '  against %s\n' "$kb"
-  "$PIN" --allow-shell --kb "$kb" "$ONLY"
-  rc=$?
+  case "$ONLY" in
+    new-book-plans/state-form.pins.nibli|\
+    "$CF"/no-state-form-independent-current-review.pins.nibli)
+      STATE_FORM_SHARD_DIR=$(mktemp -d \
+        "${TMPDIR:-/tmp}/state-form-shards.XXXXXX"
+      ) || fail "could not create a state-form shard directory"
+      trap cleanup_state_form_shards EXIT
+      generated=$(python3 "$STATE_FORM_AUDIT" \
+        --write-shards "$STATE_FORM_SHARD_DIR" 2>&1
+      ) || fail "state-form shard generation failed" "$generated"
+      pass "$generated"
+      if [ "$ONLY" = "new-book-plans/state-form.pins.nibli" ]; then
+        only_shards=("$STATE_FORM_SHARD_DIR"/main-*.pins.nibli)
+        expected_shards=64
+      else
+        only_shards=("$STATE_FORM_SHARD_DIR"/counterfactual-*.pins.nibli)
+        expected_shards=17
+      fi
+      [ "${#only_shards[@]}" -eq "$expected_shards" ] \
+        || fail "state-form shard inventory drifted" \
+          "expected $expected_shards files, found ${#only_shards[@]}"
+      out=$(run_pin_shards "$kb" "${only_shards[@]}")
+      rc=$?
+      printf '%s' "$out"
+      ;;
+    *)
+      "$PIN" --allow-shell --kb "$kb" "$ONLY"
+      rc=$?
+      ;;
+  esac
   # Propagate, including 3 (a pinned defect stopped reproducing). Swallowing that
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, reader-evidence contract, power-source manifest, full-society ledger, or constitutional-closure audit,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, state-form contract, reader-evidence contract, power-source manifest, full-society ledger, or constitutional-closure audit,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -132,7 +225,11 @@ fi
 # ── 1. the spine is regenerated from the constitution ────────────────────────
 build_engine
 STRATA_FILE=$(mktemp) || fail "could not create a strata cache"
-trap 'rm -f -- "$STRATA_FILE"' EXIT
+cleanup() {
+  rm -f -- "$STRATA_FILE"
+  cleanup_state_form_shards
+}
+trap cleanup EXIT
 
 step "spine"
 out=$(NIBLI_PIN="$PIN" NIBLI_STRATA_CACHE_OUT="$STRATA_FILE" python3 new-book-plans/5-spine-gen.py "$KB" "$SPINE" --check 2>&1) \
@@ -174,6 +271,13 @@ step "temporal-assurance contract"
 out=$(python3 "$TEMPORAL_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "temporal-assurance contract failed" "$out"
+
+# Structural in both quick and full modes. The dedicated pins and watched
+# source-review mutation execute only in the full path below.
+step "state-form contract"
+out=$(python3 "$STATE_FORM_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "state-form contract failed" "$out"
 
 # ── 2f. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
@@ -489,7 +593,7 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor pins, record snapshots, temporal, amendment, placement and reader-evaluator executions, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor and state-form pins, record snapshots, temporal, amendment, placement and reader-evaluator executions, and counterfactuals (--quick)\n'
   exit 0
 fi
 
@@ -580,6 +684,24 @@ out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/family-life-course.pins.nib
   && pass "$out" \
   || fail "family and life-course execution failed" "$out"
 
+# State-form and political-membership power family. The contract checker runs
+# in both modes. The full-only path executes lossless checker-owned projections
+# of the canonical aggregate: 64 main shards here and 17 counterfactual shards
+# in the standing-counterfactual loop below, with at most four live workers.
+step "state-form executions"
+STATE_FORM_SHARD_DIR=$(mktemp -d "${TMPDIR:-/tmp}/state-form-shards.XXXXXX") \
+  || fail "could not create a state-form shard directory"
+out=$(python3 "$STATE_FORM_AUDIT" --write-shards "$STATE_FORM_SHARD_DIR" 2>&1) \
+  && pass "$out" \
+  || fail "state-form shard generation failed" "$out"
+main_shards=("$STATE_FORM_SHARD_DIR"/main-*.pins.nibli)
+[ "${#main_shards[@]}" -eq 64 ] \
+  || fail "state-form main shard inventory drifted" \
+    "expected 64 files, found ${#main_shards[@]}"
+out=$(run_pin_shards "$KB" "${main_shards[@]}") \
+  && pass "$out" \
+  || fail "state-form sharded execution failed" "$out"
+
 # ── 6. bounded record-snapshot red-team ─────────────────────────────────────
 # These ephemeral KBs exercise additions, exact deletions, two-entry matrices,
 # and the remaining single-snapshot record levers. They stay outside the chapter
@@ -629,10 +751,11 @@ step "counterfactuals"
 # THREE CLASSES OF FIXTURE, and the diff shape is the fixture's identity:
 #   1:0  a line deleted  — what the world loses without it
 #   1:1  a line changed  — no-dead-conjuncts strips Article 4's
-#        ~broken/~match(CarriedVoid)
-#        conjuncts; chapters 4 and 5's OWN pin files must pass against it, which
-#        is the standing proof those conjuncts decide nothing today (and the
-#        proof strengthens automatically as those suites grow)
+#        ~broken/~match(CarriedVoid) conjuncts; chapters 4 and 5's OWN pin files
+#        must pass against it, which is the standing proof those conjuncts
+#        decide nothing today. no-state-form-independent-current-review removes
+#        only the source-writer/temporal-reviewer disequality; its paired pins
+#        show every fused card gaining authority while separated controls hold.
 #   0:1  a line added    — unguarded-pen is the credential route somebody might
 #        someday write; its pins show the kept conjuncts are the only thing
 #        standing between that line and a carried-void signature counting; and
@@ -645,7 +768,7 @@ step "counterfactuals"
 #
 # NOTE these pins are OUTSIDE the :expect-pins reconciliation above, checked
 # per-file here. Do not "fix" the headline sum to include them.
-for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-direct-equality:1:0             no-equality-data-wall:1:0 no-positive-measure-end:1:0             no-automatic-adulthood:1:0 no-family-confinement-wall:1:0             no-missing-kinship-independence:1:0 no-pregnancy-authority:1:0             no-dead-conjuncts:1:1 no-delivery-independence:1:1 \
+for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-direct-equality:1:0             no-equality-data-wall:1:0 no-positive-measure-end:1:0             no-automatic-adulthood:1:0 no-family-confinement-wall:1:0             no-missing-kinship-independence:1:0 no-pregnancy-authority:1:0             no-dead-conjuncts:1:1 no-delivery-independence:1:1             no-state-form-independent-current-review:1:1 \
             unguarded-pen:0:1 undelivered-marker:0:1; do
   f=${spec%%:*}; want="${spec#*:}"
   removed=$(diff "$KB" "$CF/$f.nibli" | grep -c '^<')
@@ -655,7 +778,23 @@ for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0           
             "$removed removed, $added added; expected ${want%:*} removed, ${want#*:} added — regenerate it from $KB per $CF/README.md"
   case "$f" in
     no-dead-conjuncts) pins="book-1/05-voiding.pins.nibli book-1/04-the-shield.pins.nibli" ;;
-    *)                 pins="$CF/$f.pins.nibli" ;;
+    no-state-form-independent-current-review)
+      counterfactual_shards=(
+        "$STATE_FORM_SHARD_DIR"/counterfactual-*.pins.nibli
+      )
+      [ "${#counterfactual_shards[@]}" -eq 17 ] \
+        || fail "state-form counterfactual shard inventory drifted" \
+          "expected 17 files, found ${#counterfactual_shards[@]}"
+      if out=$(run_pin_shards \
+          "$CF/$f.nibli" "${counterfactual_shards[@]}"
+      ); then
+        pass "$f"
+      else
+        fail "$f" "$out — sharded counterfactual execution failed"
+      fi
+      continue
+      ;;
+    *) pins="$CF/$f.pins.nibli" ;;
   esac
   out=$("$PIN" --kb "$CF/$f.nibli" $pins 2>&1)
   echo "$out" | grep -q 'PASS' && pass "$f" \

@@ -430,3 +430,60 @@ its trace and proximity adjudication before the passage becomes canonical.
 **Satisfied — 2026-08-20:** the content commit mechanically transcribes the
 approved text without a substantive change, and section 7a records the current
 trace and proximity adjudication. `OL-15-v1` is canonical.
+
+### 15b. `SF-B1-v1` approval and canonicalization record
+
+- **Identifier:** `SF-B1-v1`.
+- **Approval:** explicit author approval on 2026-08-21 of the exact displayed
+  candidate.
+- **Supply provenance:** `session-drafted, author-approved`.
+- **Approved-candidate binding:** 34,164 UTF-8 bytes; SHA-256
+  `fc1b753a027bc1efb0fc9986b58fafe7a110144f574b8c833dee421589eb815d`.
+- **Change bound:** only mechanical Markdown line wrapping or formatting is
+  permitted without renewed approval. Any substantive wording, meaning, or
+  voice change requires approval of a newly displayed exact version.
+- **Canonical state:** satisfied on 2026-08-21. The 24 approved Markdown
+  payloads are present at the recorded targets: 22 as contiguous blocks and the
+  first two as four individually positioned opening-note entries.
+
+The aggregate displayed-candidate binding covers the exact approval display,
+including its display scaffolding; it is not a concatenation contract over the
+row payloads, whose per-row hashes are the reproducible canonical repository binding.
+
+The first two manifest rows bind composite payloads. For each of those rows, the
+digest is over the two exact approved entries joined by one blank line; unchanged
+entries that remain between them in the opening note are not part of the
+payload. All other rows bind one contiguous block. Byte counts and digests are
+over the exact approved UTF-8 payload before any mechanical Markdown wrapping.
+
+| ID | Target and exact anchor | UTF-8 bytes | SHA-256 |
+| --- | --- | ---: | --- |
+| 01 | `book-1/00-opening-note.md`: contents entries “Public answerability” and “The hand that holds the pen” | 583 | `b87b56dfda8e13ca88a776b4a9f23f16a97b61e2033fcadafd714fbdf8eaff77` |
+| 02 | `book-1/00-opening-note.md`: contents entries “The vote conviction does not take” and “Changing the rules” | 686 | `409298ebf67065981514753242147cf60237c52ed4a802702cc34b36845a8886` |
+| 03 | `book-1/00-opening-note.md`: glossary entries immediately after “public answerability” | 516 | `affb46141d45b5d24dbfc5f94db7a9cda9d5a98075ff81163dcac0a09505928a` |
+| 04 | `book-1/00-opening-note.md`: glossary entries immediately after “electorate / convocation / cast” | 535 | `4a01771f50deb9953a59c3be4a03e19253de4b087c89d5bcc2481b3bdbe7de32` |
+| 05 | `book-1/00-opening-note.md`: older-term entry “assembly” | 361 | `b67119fd11b11f1c52c7aea756d5caaceea528e0a58c7171261670d830597d11` |
+| 06 | `book-1/00-opening-note.md`: older-term entry “State” | 482 | `7f8133d965406b6331914ae6f35772f53deea081d028626b136bbd70088bb423` |
+| 07 | `book-1/00-opening-note.md`: democracy crosswalk beginning “When the numbered chapters say” | 743 | `a7b98cccfb6f56678b72f481e9bd73a228e9177a8db7d830e65e2b7dfd0d88da` |
+| 08 | `book-1/00-opening-note.md`: locality crosswalk beginning “When they say” | 559 | `ec4b18357a00227521d214a33917155f0b9186ac3073604688e575ce62a23c0d` |
+| 09 | `book-1/01-what-counts-as-evidence.md`: paragraph beginning “This is a real gap” | 1,026 | `1cd457ad2668dae35f23a41b54b9f267da6c2925f043298db855b61c0ef6920c` |
+| 10 | `book-1/02-public-answerability.md`: block after “public bodies are answerable” | 544 | `fbe2568e9bb0fb2c48d657794a02ffaf70673f98e5823c866fae067cbc04143e` |
+| 11 | `book-1/03-who-holds-the-pen.md`: block before “That is not a flaw” | 1,142 | `15ad32e1793fae97598b653db7d319d0d79617aa95a5b3d5088c4298f71a63de` |
+| 12 | `book-1/09-the-vote-conviction-does-not-take.md`: opening block beginning “Here, nothing takes the vote” | 1,942 | `7e75e881a3832fd07db2f4ff86028902a5665e3661c7351e15a88c053dab3456` |
+| 13 | `book-1/09-the-vote-conviction-does-not-take.md`: block after “and neither one arrives” | 1,832 | `455120a54ed6ccde6d11bb053199fb8abf13c61043e96e87b45f7e3934cabf9b` |
+| 14 | `book-1/09-the-vote-conviction-does-not-take.md`: block beginning “Esa can challenge” | 1,777 | `6fab52d11ad6fd3d6c3e0a6b09ab7fa54b04f1c71a665d3eb26cb0f2a289f4a1` |
+| 15 | `book-1/09-the-vote-conviction-does-not-take.md`: section “And the same silence as before” | 1,234 | `e283d6955fbcafe7eb3917a63dd1c9c8d79a69608657c51f10a6843613b67146` |
+| 16 | `book-1/12-changing-the-rules.md`: opening block | 1,933 | `2440a6ddf9cca65d35ebd356c8a15404bda06289bbe2281b268d6a7cf15659b6` |
+| 17 | `book-1/12-changing-the-rules.md`: block beginning “What it proposes is a trade” | 1,004 | `56ef267f7c41de622155562717bb92acb573768a91d2417957ab17379cb65615` |
+| 18 | `book-1/12-changing-the-rules.md`: thinness introduction | 274 | `b0dd7d93ed26433db71b232175d6e59b75807226fcc30a4e39ec341c11c59490` |
+| 19 | `book-1/12-changing-the-rules.md`: block beginning “Nothing happens when something receives the law label” | 840 | `2c3e5d8d15acab18ff4ef6204cb31e02c6e8f867280a49cf5ab796a1db14e999` |
+| 20 | `book-1/15-the-five-joints.md`: “Rotation” section | 2,152 | `3ae8f079662e63db5dad89d33f2b993d77c77e7298f628c0e254c32c8b89349d` |
+| 21 | `book-1/15-the-five-joints.md`: State architecture block | 2,918 | `c02ae383e27f035b63ef09e980c3b0051296c5ebefb1eeb0baa749d496c9589a` |
+| 22 | `book-1/15-the-five-joints.md`: State answer block | 1,407 | `81be9d8745b00a7ce8a0a7488c03e475311b2a6a41831a2a60e0666f6b9edaaa` |
+| 23 | `book-1/15-the-five-joints.md`: State verdict block | 896 | `5c065764f21626ac58460e917ab236c127b7b97cbb87bf84b8c28573faeab958` |
+| 24 | `book-1/method.md`: state-form method block after the family paragraph ending “completed remedy” | 3,255 | `ee7c3cd97c7049f801c9ec93989343821fe2b21d973545ced1d4332d46aaa517` |
+
+This record canonicalizes Book 1 prose only. It changes no constitutional rule
+or fact, executable relation, fixture, pin, reviewed ledger row, power card,
+allocation, census result, or claim posture. The approved no-change audits are
+not manifest rows and did not produce canonical prose edits.

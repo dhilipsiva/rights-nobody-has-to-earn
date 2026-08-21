@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-18-delivery-receipt-formal-v1",
+  "source_version": "fs-ledger-2026-08-21-state-form-prose-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -2322,8 +2322,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical while unimplemented",
       "consequence": "separation stays a fixture property, not a rule",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "the bodies specification and its rule families land",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "envelope_id": "FS-ENV-00",
       "closure_requirement_refs": [
         "FS-CLR-02"
@@ -3056,8 +3056,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "no rights-holder, no design",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Hold rights, participate, petition, organise, and challenge.",
       "may_not_do_alone": "Lose the floor for non-participation, work, identity proof, or approval.",
       "required_check": "Advocate/ombudsperson route for people unable to act alone.",
@@ -3478,8 +3478,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "no democratic source of law",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Make ordinary law, authorise revenue/spending, sustain or replace the government, oversee public power, and initiate amendment.",
       "may_not_do_alone": "Lower the floor, override equal standing, extend its own authority, or judge its own contested compliance.",
       "required_check": "Regions Council's one-time reasoned return; public reasons; election and compatibility review; constitutional challenge.",
@@ -3963,8 +3963,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "regions lose their protected voice",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Represent regions through proportional legislative delegations and protect federal competences. Equal regional weight is an express territorial exception to population weight, not a second popular chamber.",
       "may_not_do_alone": "Permanently veto ordinary law, lower the common floor, or convert regional voice into executive power.",
       "required_check": "Assembly repassage under the original rule for ordinary law; final Council consent only for the ratified regional settlement; Constitutional Court for competence disputes.",
@@ -4416,8 +4416,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "execution without confidence limits",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Execute law and maintain lawful continuity under Assembly confidence.",
       "may_not_do_alone": "Legislate by decree, dissolve the Assembly unilaterally, extend its own mandate, certify its own election, or create standing emergency power.",
       "required_check": "Constructive no confidence; legislative oversight; courts; audit; finite caretaker and succession routes.",
@@ -4924,8 +4924,8 @@
       "status": "ratified-unimplemented",
       "severity": "serious",
       "consequence": "formal continuity duties would fuse with policy",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Perform formal appointment, promulgation, certification-receipt, and continuity duties.",
       "may_not_do_alone": "Exercise policy, veto, decree, emergency, dissolution, or election-result discretion.",
       "required_check": "Joint-chamber selection; predeclared alternate; cause-only removal with independent finding and cross-body confirmation.",
@@ -5450,8 +5450,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "no authenticated contestable results",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Give adult ordinary residents equal political voice and authenticate contestable public results.",
       "may_not_do_alone": "Create membership by registration, convert wealth or recognition into weight, decide its own challenge, or let one missing writer withhold the route forever.",
       "required_check": "Accessible participation; independent certification, recount/challenge, alternate writer/reviewer, and correction.",
@@ -6082,8 +6082,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "the floor loses its financier of last resort",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Finance and maintain the noncontributory floor, equalisation, lawful public finance, and continuity regardless of provider.",
       "may_not_do_alone": "Convert payment into presumed delivery, make the floor creditor-subordinate, create permanent spending through deadlock, or decide final disputes about its own failures.",
       "required_check": "Recipient-side real-access evidence; legislative source; reporting; delivery challenge; interim continuity; independent audit and review.",
@@ -6514,8 +6514,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "the payment backbone loses its duties",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Maintain the common unit of account and an accessible settlement backbone under a democratically enacted mandate.",
       "may_not_do_alone": "Acquire a fiscal veto, treat digital access as mandatory, hide distributional effects, or certify its own compliance.",
       "required_check": "Non-digital route; published reasons; distributional review; audit; cause-only removal; challenge and continuity.",
@@ -6884,8 +6884,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "private power loses its function-specific checks",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Enforce common minima, public-scale private-power duties, and essential-service continuity across ownership forms.",
       "may_not_do_alone": "Treat form, label, confidentiality, or insolvency as immunity; investigate, decide, execute, and finally review the same case.",
       "required_check": "Functional evidence; separated adjudication; individual and structural remedy; continuity during correction.",
@@ -7468,8 +7468,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "harm response without its limits",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Prevent and respond to harm, investigate, and protect people at immediate risk.",
       "may_not_do_alone": "Charge, adjudicate, hold long-term custody, conduct security intelligence, audit its own use of force, or exercise a general order-maintenance power.",
       "required_check": "Identification and reasons duty; prior authorisation for search; prompt automatic judicial review of detention; independent force-incident investigation; integrity route outside its own chain.",
@@ -8093,8 +8093,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "charging fuses with investigation",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Decide independently whether to charge, and on what evidence.",
       "may_not_do_alone": "Run the investigation it charges as its own inquiry, adjudicate it, or execute the result.",
       "required_check": "Reasoned decisions; separated investigation and adjudication; review of a decision to charge or not; victim route through the justice interface.",
@@ -8563,8 +8563,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "the anti-fusion wall loses its subject",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Defend against an external armed attack under civilian, democratically sourced command.",
       "may_not_do_alone": "Hold any domestic policing, surveillance, detention, arrest, search, or interrogation mandate; exercise jurisdiction over civilians; be funded, armed, or maintained outside the ordinary appropriation.",
       "required_check": "Assembly ceiling on size and armament; prior authorisation for force abroad; lapse of an unratified defensive response; full audit access; anti-fusion incompatibilities.",
@@ -9224,8 +9224,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "the narrowest mandate loses its heaviest controls",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Collect narrowly authorised information about a specific serious external or organised threat.",
       "may_not_do_alone": "Arrest, search, detain, charge, adjudicate, hold custody, collect at population scale, or write to the canonical consequential person record.",
       "required_check": "Prior individualised judicial authorisation; fresh authorisation per renewal; later notification; separately appointed oversight with unrestricted access and publication power; protected disclosure.",
@@ -9874,8 +9874,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "deaths investigated by the deploying body",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Investigate every death, life-threatening injury, and credible allegation of torture or disappearance involving a protective actor.",
       "may_not_do_alone": "Belong to, report through, or be staffed from the deploying body.",
       "required_check": "Family participation; public findings consistent with privacy; referral and remedy authority; personal accountability unabsorbed by rank or institution.",
@@ -10388,8 +10388,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "covert power without a reader",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Examine covert authorisations, collection, retention, and the assessment firewall.",
       "may_not_do_alone": "Authorise the measures it later reviews, or be denied access to classified material.",
       "required_check": "Own budget and staff; unrestricted access; publication power; a defined action duty; cause-only removal.",
@@ -11003,8 +11003,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "determination without the firewall",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Determine entry, protection, and removal claims individually and on evidence.",
       "may_not_do_alone": "Condition floor access on status, enrol a person into an enforcement record as the price of a service, detain a child, order collective expulsion, or return anyone in breach of non-refoulement.",
       "required_check": "Advocate, interpreter and accessible process; reasons; independent appeal with suspensive effect; judicial authorisation and a maximum for any detention; enforcement firewall.",
@@ -11630,8 +11630,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "disputes without separated decision",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Decide disputes and limit coercion.",
       "may_not_do_alone": "Investigate, prosecute, decide, execute, and review one case alone.",
       "required_check": "Notice, advocate, hearing, appeal, release/repair path.",
@@ -12342,8 +12342,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "no final general invalidation",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Give final general constitutional rulings and resolve competence, election, amendment, and secession disputes; ordinary courts retain case relief.",
       "may_not_do_alone": "Run ordinary government, invent policy, certify its own decisive facts, or insulate itself from correction.",
       "required_check": "Public reasons, recusal, effective remedy, divided appointments, cause-only removal, and amendment-bound limits.",
@@ -13013,8 +13013,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "systemic failure without an examiner",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Examine records, conflicts, disparities, and systemic failures.",
       "may_not_do_alone": "Create the case facts it later certifies, or impose final remedy alone.",
       "required_check": "Independent evidence, public findings consistent with privacy, referral/remedy authority.",
@@ -13460,8 +13460,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "the unrepresented lose their route",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Act for a child, disabled person, prisoner, newcomer, or unregistered claimant.",
       "may_not_do_alone": "Become a substitute sovereign or condition help on representation.",
       "required_check": "Direct access to review and protected independence.",
@@ -13900,8 +13900,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "local choice without common guarantees",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Exercise residual regional authority and protected local choice inside common guarantees.",
       "may_not_do_alone": "Create a lower caste of resident, reduce the common floor, or acquire a disputed competence by delay.",
       "required_check": "Portability, equalisation, intergovernmental reasons/mediation, and Constitutional Court review.",
@@ -14484,8 +14484,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "irreversible commitments with nobody able to object",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Obtain evidence, demand assessment and reasons, participate, publish warnings, and seek review and remedy; an evidence-supported objection pauses only the irreversible authorisation pending expedited independent review.",
       "may_not_do_alone": "Hold a permanent veto, legislative or budget power, programme control, or scientific-oracle status; invent future preferences; restart an unchanged replay key.",
       "required_check": "Expedited independent review, the predeclared alternate advocate and independent substitute reviewer, a case-bound temporal contract and replay key, cause-only removal.",
@@ -15049,8 +15049,8 @@
       "status": "ratified-unimplemented",
       "severity": "critical",
       "consequence": "protected subjects without an initiator",
-      "owner_ref": "TODO.md::Write the Bodies specification",
-      "closure_condition": "bodies specification lands",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
+      "closure_condition": "formal rules have landed; closure still requires applicable staffing and independence in fact, route availability, lawful operation, and institutional action",
       "job": "Investigate, seek rescue and interim relief, and pursue individual and systemic remedies for protected animals; any person or qualified association may initiate.",
       "may_not_do_alone": "Hold a final veto, or remove any human's standing, floor, core liberty, due process, or political equality through an animal remedy.",
       "required_check": "Independent adjudication of conflicts, including with the Future Conditions Guardian; neither office has a final veto.",
@@ -27085,7 +27085,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "7c7ebe7ae9c90c5e3b9958be46ab2a4cc1008dbaf5c5c5992c4c64d0fcdf36c1",
+    "artifact_sha256": "1a34edee3bb85927a0dde46686e82db2de340d5e514181f32b20584ad53acfba",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -27520,23 +27520,23 @@
       },
       "negative_test": {
         "id": "FS-POW-001-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Common-tier enumerated competence; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Common-tier enumerated competence; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::The common tier has only constitutionally enumerated powers."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-001 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-001-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Common-tier enumerated competence; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Common-tier enumerated competence; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::The common tier has only constitutionally enumerated powers."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-001 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Common-tier enumerated competence; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -27823,23 +27823,23 @@
       },
       "negative_test": {
         "id": "FS-POW-002-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Regional residual legislative authority; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Regional residual legislative authority; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions hold every residual not assigned to the common tier"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-002 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-002-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Regional residual legislative authority; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Regional residual legislative authority; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions hold every residual not assigned to the common tier"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-002 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Regional residual legislative authority; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -28118,23 +28118,23 @@
       },
       "negative_test": {
         "id": "FS-POW-003-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Subsidiarity displacement decision; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Subsidiarity displacement decision; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Displacement must be no broader than the reason establishes."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-003 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-003-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Subsidiarity displacement decision; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Subsidiarity displacement decision; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Displacement must be no broader than the reason establishes."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-003 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Subsidiarity displacement decision; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -28161,10 +28161,10 @@
         "FS-CLM-26"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-18"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -28415,23 +28415,23 @@
       },
       "negative_test": {
         "id": "FS-POW-004-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Interim allocation of disputed competence; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Interim allocation of disputed competence; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 2. Territorial settlement"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-004 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-004-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Interim allocation of disputed competence; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Interim allocation of disputed competence; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 2. Territorial settlement"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-004 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Interim allocation of disputed competence; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -28716,23 +28716,23 @@
       },
       "negative_test": {
         "id": "FS-POW-005-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for People's Assembly ordinary lawmaking; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for People's Assembly ordinary lawmaking; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::It makes ordinary law, authorises revenue and spending"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-005 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-005-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for People's Assembly ordinary lawmaking; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for People's Assembly ordinary lawmaking; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::It makes ordinary law, authorises revenue and spending"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-005 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for People's Assembly ordinary lawmaking; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -29017,23 +29017,23 @@
       },
       "negative_test": {
         "id": "FS-POW-006-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for People's Assembly revenue authorisation; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for People's Assembly revenue authorisation; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::authorises revenue and spending"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-006 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-006-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for People's Assembly revenue authorisation; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for People's Assembly revenue authorisation; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::authorises revenue and spending"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-006 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for People's Assembly revenue authorisation; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -29318,23 +29318,23 @@
       },
       "negative_test": {
         "id": "FS-POW-007-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for People's Assembly spending authorisation; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for People's Assembly spending authorisation; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### People's Assembly"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-007 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-007-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for People's Assembly spending authorisation; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for People's Assembly spending authorisation; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### People's Assembly"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-007 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for People's Assembly spending authorisation; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -29620,23 +29620,23 @@
       },
       "negative_test": {
         "id": "FS-POW-008-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for People's Assembly public oversight; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for People's Assembly public oversight; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::performs public oversight, and"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-008 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-008-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for People's Assembly public oversight; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for People's Assembly public oversight; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::performs public oversight, and"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-008 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for People's Assembly public oversight; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -29917,23 +29917,23 @@
       },
       "negative_test": {
         "id": "FS-POW-009-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for People's Assembly amendment initiation; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for People's Assembly amendment initiation; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::initiates constitutional amendments."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-009 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-009-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for People's Assembly amendment initiation; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for People's Assembly amendment initiation; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::initiates constitutional amendments."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-009 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for People's Assembly amendment initiation; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -30302,23 +30302,23 @@
       },
       "negative_test": {
         "id": "FS-POW-010-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Proportional Assembly election certification; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Proportional Assembly election certification; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Before formalisation, a Book 1 electoral card must define the outcome metric"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-010 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-010-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Proportional Assembly election certification; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Proportional Assembly election certification; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Before formalisation, a Book 1 electoral card must define the outcome metric"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-010 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Proportional Assembly election certification; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -30345,7 +30345,7 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
         "FS-ROL-26"
@@ -30603,23 +30603,23 @@
       },
       "negative_test": {
         "id": "FS-POW-011-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Regions Council delegation selection; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Regions Council delegation selection; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Regions Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-011 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-011-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Regions Council delegation selection; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Regions Council delegation selection; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Regions Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-011 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Regions Council delegation selection; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -30899,23 +30899,23 @@
       },
       "negative_test": {
         "id": "FS-POW-012-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Regions Council one-time reasoned bill return; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Regions Council one-time reasoned bill return; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::For ordinary law the Council may return a bill once"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-012 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-012-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Regions Council one-time reasoned bill return; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Regions Council one-time reasoned bill return; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::For ordinary law the Council may return a bill once"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-012 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Regions Council one-time reasoned bill return; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -31198,23 +31198,23 @@
       },
       "negative_test": {
         "id": "FS-POW-013-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Regions Council federal-settlement consent; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Regions Council federal-settlement consent; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Regions Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-013 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-013-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Regions Council federal-settlement consent; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Regions Council federal-settlement consent; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Regions Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-013 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Regions Council federal-settlement consent; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -31493,23 +31493,23 @@
       },
       "negative_test": {
         "id": "FS-POW-014-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Executive execution and administration of law; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Executive execution and administration of law; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive authority belongs to a collective Executive Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-014 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-014-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Executive execution and administration of law; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Executive execution and administration of law; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive authority belongs to a collective Executive Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-014 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Executive execution and administration of law; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -31537,10 +31537,10 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "holder_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -31877,23 +31877,23 @@
       },
       "negative_test": {
         "id": "FS-POW-015-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Assembly certification of confidence government; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Assembly certification of confidence government; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Executive Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-015 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-015-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Assembly certification of confidence government; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Assembly certification of confidence government; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Executive Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-015 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Assembly certification of confidence government; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -31920,10 +31920,10 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "holder_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -32172,23 +32172,23 @@
       },
       "negative_test": {
         "id": "FS-POW-016-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Constructive no-confidence replacement; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Constructive no-confidence replacement; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Executive Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-016 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-016-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Constructive no-confidence replacement; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Constructive no-confidence replacement; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Executive Council"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-016 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Constructive no-confidence replacement; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -32216,7 +32216,8 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-05"
+        "FS-BOD-02",
+        "FS-BOD-03"
       ],
       "holder_role_refs": [
         "FS-ROL-26"
@@ -32557,23 +32558,23 @@
       },
       "negative_test": {
         "id": "FS-POW-017-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Joint-chamber Civic President selection; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Joint-chamber Civic President selection; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-017 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-017-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Joint-chamber Civic President selection; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Joint-chamber Civic President selection; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-017 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Joint-chamber Civic President selection; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -32942,23 +32943,23 @@
       },
       "negative_test": {
         "id": "FS-POW-018-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Civic President formal government appointment; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Civic President formal government appointment; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-018 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-018-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Civic President formal government appointment; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Civic President formal government appointment; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-018 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Civic President formal government appointment; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -33237,23 +33238,23 @@
       },
       "negative_test": {
         "id": "FS-POW-019-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Civic President promulgation; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Civic President promulgation; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-019 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-019-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Civic President promulgation; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Civic President promulgation; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Civic President"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-019 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Civic President promulgation; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -33621,23 +33622,23 @@
       },
       "negative_test": {
         "id": "FS-POW-020-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Civic President certification receipt; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Civic President certification receipt; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::certification-receipt, and continuity duties."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-020 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-020-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Civic President certification receipt; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Civic President certification receipt; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::certification-receipt, and continuity duties."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-020 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Civic President certification receipt; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -33916,23 +33917,23 @@
       },
       "negative_test": {
         "id": "FS-POW-021-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Civic President alternate and continuity; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Civic President alternate and continuity; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::The office requires a predeclared alternate, finite term"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-021 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-021-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Civic President alternate and continuity; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Civic President alternate and continuity; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::The office requires a predeclared alternate, finite term"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-021 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Civic President alternate and continuity; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -34211,23 +34212,23 @@
       },
       "negative_test": {
         "id": "FS-POW-022-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Ordinary-court case-specific relief; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Ordinary-court case-specific relief; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Ordinary courts provide relief in individual cases."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-022 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-022-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Ordinary-court case-specific relief; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Ordinary-court case-specific relief; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Ordinary courts provide relief in individual cases."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-022 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Ordinary-court case-specific relief; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -34254,10 +34255,10 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-18"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -34506,23 +34507,23 @@
       },
       "negative_test": {
         "id": "FS-POW-023-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Constitutional Court general invalidation; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Constitutional Court general invalidation; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-023 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-023-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Constitutional Court general invalidation; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Constitutional Court general invalidation; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-023 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Constitutional Court general invalidation; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -34801,23 +34802,23 @@
       },
       "negative_test": {
         "id": "FS-POW-024-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Constitutional procedure review; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Constitutional procedure review; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-024 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-024-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Constitutional procedure review; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Constitutional procedure review; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-024 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Constitutional procedure review; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -35096,23 +35097,23 @@
       },
       "negative_test": {
         "id": "FS-POW-025-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Alternate constitutional panel; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Alternate constitutional panel; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::goes to a predeclared alternate constitutional panel"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-025 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-025-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Alternate constitutional panel; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Alternate constitutional panel; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::goes to a predeclared alternate constitutional panel"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-025 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Alternate constitutional panel; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -35480,23 +35481,23 @@
       },
       "negative_test": {
         "id": "FS-POW-026-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Appointments-qualification function; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Appointments-qualification function; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-026 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-026-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Appointments-qualification function; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Appointments-qualification function; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-026 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Appointments-qualification function; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -35864,23 +35865,23 @@
       },
       "negative_test": {
         "id": "FS-POW-027-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Reasoned qualification review and adverse decision; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Reasoned qualification review and adverse decision; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-027 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-027-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Reasoned qualification review and adverse decision; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Reasoned qualification review and adverse decision; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-027 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Reasoned qualification review and adverse decision; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -35909,10 +35910,13 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-44"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -35949,7 +35953,7 @@
       ],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Independent-body appointment selection, authority exists only under the cited constitutional source: One divided-source selection family; exact seats, selectors, qualification authority, and fallback remain explicit unimplemented fields.",
+          "text": "For Independent-body appointment selection, authority exists only under the cited constitutional source: One divided-source selection family; exact seats, selectors, qualification authority, and fallback remain explicit unimplemented fields. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::Independent appointments use open nominations, reasoned qualification review"
@@ -36250,23 +36254,23 @@
       },
       "negative_test": {
         "id": "FS-POW-028-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Independent-body appointment selection; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Independent-body appointment selection; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Independent appointments use open nominations, reasoned qualification review"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-028 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-028-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Independent-body appointment selection; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Independent-body appointment selection; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Independent appointments use open nominations, reasoned qualification review"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-028 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Independent-body appointment selection; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -36293,7 +36297,9 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
         "FS-ROL-26"
@@ -36330,7 +36336,7 @@
       "secondary_class_refs": [],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Cause-only independent-office removal, authority exists only under the cited constitutional source: One removal instrument requiring separated fact-finding and confirmation.",
+          "text": "For Cause-only independent-office removal, authority exists only under the cited constitutional source: One removal instrument requiring separated fact-finding and confirmation. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied fact-finding, confirmation, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
@@ -36545,23 +36551,23 @@
       },
       "negative_test": {
         "id": "FS-POW-029-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Cause-only independent-office removal; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Cause-only independent-office removal; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-029 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-029-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Cause-only independent-office removal; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Cause-only independent-office removal; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-029 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Cause-only independent-office removal; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -36589,10 +36595,13 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-44"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -36628,7 +36637,7 @@
       ],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Appointment vacancy and capture fallback, authority exists only under the cited constitutional source: One bounded continuity route around missing, captured, conflicted, or silent appointing sources; it creates no permanent vacancy veto.",
+          "text": "For Appointment vacancy and capture fallback, authority exists only under the cited constitutional source: One bounded continuity route around missing, captured, conflicted, or silent appointing sources; it creates no permanent vacancy veto. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
@@ -36929,23 +36938,23 @@
       },
       "negative_test": {
         "id": "FS-POW-030-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Appointment vacancy and capture fallback; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Appointment vacancy and capture fallback; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-030 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-030-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Appointment vacancy and capture fallback; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Appointment vacancy and capture fallback; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-030 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Appointment vacancy and capture fallback; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -36973,9 +36982,11 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
+        "FS-BOD-02",
         "FS-BOD-06"
       ],
       "holder_role_refs": [
+        "FS-ROL-26",
         "FS-ROL-27"
       ],
       "affected_role_refs": [
@@ -37013,7 +37024,7 @@
       ],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Assembly term, vacancy, and early-election authority, authority exists only under the cited constitutional source: One Assembly-specific term, vacancy, and early-election lifecycle choice inside the source bounds; no choice exists by silence.",
+          "text": "For Assembly term, vacancy, and early-election authority, authority exists only under the cited constitutional source: One Assembly-specific term, vacancy, and early-election lifecycle choice inside the source bounds; no choice exists by silence. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
@@ -37320,23 +37331,23 @@
       },
       "negative_test": {
         "id": "FS-POW-031-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Assembly term, vacancy, and early-election authority; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Assembly term, vacancy, and early-election authority; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-031 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-031-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Assembly term, vacancy, and early-election authority; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Assembly term, vacancy, and early-election authority; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-031 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Assembly term, vacancy, and early-election authority; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -37363,7 +37374,8 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-03"
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
         "FS-ROL-26"
@@ -37400,7 +37412,7 @@
       "secondary_class_refs": [],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Regions Council tenure, instruction, replacement, and vacancy, authority exists only under the cited constitutional source: One Regions Council tenure, instruction, replacement, and vacancy lifecycle choice inside the source bounds; no choice exists by silence.",
+          "text": "For Regions Council tenure, instruction, replacement, and vacancy, authority exists only under the cited constitutional source: One Regions Council tenure, instruction, replacement, and vacancy lifecycle choice inside the source bounds; no choice exists by silence. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions Council delegation tenure, instruction, replacement and vacancy"
@@ -37621,23 +37633,23 @@
       },
       "negative_test": {
         "id": "FS-POW-032-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Regions Council tenure, instruction, replacement, and vacancy; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Regions Council tenure, instruction, replacement, and vacancy; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions Council delegation tenure, instruction, replacement and vacancy"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-032 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-032-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Regions Council tenure, instruction, replacement, and vacancy; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Regions Council tenure, instruction, replacement, and vacancy; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Regions Council delegation tenure, instruction, replacement and vacancy"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-032 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Regions Council tenure, instruction, replacement, and vacancy; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -37664,9 +37676,11 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
+        "FS-BOD-02",
         "FS-BOD-04"
       ],
       "holder_role_refs": [
+        "FS-ROL-26",
         "FS-ROL-27"
       ],
       "affected_role_refs": [
@@ -37701,7 +37715,7 @@
       "secondary_class_refs": [],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Executive composition and replacement, authority exists only under the cited constitutional source: One executive composition and succession lifecycle choice inside the source bounds; no choice exists by silence.",
+          "text": "For Executive composition and replacement, authority exists only under the cited constitutional source: One executive composition and succession lifecycle choice inside the source bounds; no choice exists by silence. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive Council composition, member replacement, coordinator incapacity"
@@ -37922,23 +37936,23 @@
       },
       "negative_test": {
         "id": "FS-POW-033-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Executive composition and replacement; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Executive composition and replacement; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive Council composition, member replacement, coordinator incapacity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-033 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-033-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Executive composition and replacement; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Executive composition and replacement; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Executive Council composition, member replacement, coordinator incapacity"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-033 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Executive composition and replacement; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -37966,9 +37980,12 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
+        "FS-BOD-02",
+        "FS-BOD-03",
         "FS-BOD-26"
       ],
       "holder_role_refs": [
+        "FS-ROL-26",
         "FS-ROL-47"
       ],
       "affected_role_refs": [
@@ -38006,7 +38023,7 @@
       ],
       "contract_terms": {
         "lawful_source": {
-          "text": "For President selection fallback and removal mechanics, authority exists only under the cited constitutional source: One finite presidential selection, alternate, and removal-confirmation choice inside the source bounds; no choice exists by silence.",
+          "text": "For President selection fallback and removal mechanics, authority exists only under the cited constitutional source: One finite presidential selection, alternate, and removal-confirmation choice inside the source bounds; no choice exists by silence. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
@@ -38313,23 +38330,23 @@
       },
       "negative_test": {
         "id": "FS-POW-034-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for President selection fallback and removal mechanics; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for President selection fallback and removal mechanics; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-034 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-034-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for President selection fallback and removal mechanics; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for President selection fallback and removal mechanics; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-034 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for President selection fallback and removal mechanics; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -38356,10 +38373,13 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-44"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -38393,7 +38413,7 @@
       "secondary_class_refs": [],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Court and oversight seat allocation, authority exists only under the cited constitutional source: One institution-family appointment-control card; exact seats and selectors remain implementation choices inside anti-capture limits.",
+          "text": "For Court and oversight seat allocation, authority exists only under the cited constitutional source: One institution-family appointment-control card; exact seats and selectors remain implementation choices inside anti-capture limits. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, and fallback configuration for this card; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
@@ -38608,23 +38628,23 @@
       },
       "negative_test": {
         "id": "FS-POW-035-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Court and oversight seat allocation; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Court and oversight seat allocation; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-035 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-035-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Court and oversight seat allocation; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Court and oversight seat allocation; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 4. Appointments, terms, and anti-capture"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-035 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Court and oversight seat allocation; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -38903,23 +38923,23 @@
       },
       "negative_test": {
         "id": "FS-POW-036-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Political-home determination and transfer; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Political-home determination and transfer; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A move transfers political home atomically."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-036 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-036-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Political-home determination and transfer; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Political-home determination and transfer; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A move transfers political home atomically."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-036 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Political-home determination and transfer; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -38946,10 +38966,15 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-25",
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -39200,23 +39225,23 @@
       },
       "negative_test": {
         "id": "FS-POW-037-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Constitutional amendment approval; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Constitutional amendment approval; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A constitutional amendment requires:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-037 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-037-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Constitutional amendment approval; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Constitutional amendment approval; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A constitutional amendment requires:"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-037 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Constitutional amendment approval; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -39243,10 +39268,10 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01"
       ],
       "holder_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-25"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -39495,23 +39520,23 @@
       },
       "negative_test": {
         "id": "FS-POW-038-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Elector constitutional initiative docket; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Elector constitutional initiative docket; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A constitutional initiative by electors may force a public docket"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-038 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-038-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Elector constitutional initiative docket; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Elector constitutional initiative docket; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A constitutional initiative by electors may force a public docket"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-038 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Elector constitutional initiative docket; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -39538,10 +39563,10 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01"
       ],
       "holder_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-25"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -39796,23 +39821,23 @@
       },
       "negative_test": {
         "id": "FS-POW-039-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Bounded ordinary-law initiative; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Bounded ordinary-law initiative; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A bounded ordinary-law initiative may proceed to referendum"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-039 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-039-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Bounded ordinary-law initiative; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Bounded ordinary-law initiative; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A bounded ordinary-law initiative may proceed to referendum"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-039 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Bounded ordinary-law initiative; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -39839,10 +39864,10 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01"
       ],
       "holder_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-25"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -40091,23 +40116,23 @@
       },
       "negative_test": {
         "id": "FS-POW-040-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Constructive recall; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Constructive recall; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Direct recall is limited to directly elected single-holder offices"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-040 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-040-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Constructive recall; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Constructive recall; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::Direct recall is limited to directly elected single-holder offices"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-040 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Constructive recall; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -40386,23 +40411,23 @@
       },
       "negative_test": {
         "id": "FS-POW-041-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Caretaker continuity authority; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Caretaker continuity authority; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 7. Continuity, deadlock, and peaceful transfer"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-041 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-041-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Caretaker continuity authority; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Caretaker continuity authority; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 7. Continuity, deadlock, and peaceful transfer"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-041 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Caretaker continuity authority; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -40771,23 +40796,23 @@
       },
       "negative_test": {
         "id": "FS-POW-042-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Electoral body's fresh-election call; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Electoral body's fresh-election call; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::the electoral body has a legal duty and authority to call a fresh election."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-042 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-042-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Electoral body's fresh-election call; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Electoral body's fresh-election call; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::the electoral body has a legal duty and authority to call a fresh election."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-042 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Electoral body's fresh-election call; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -40814,10 +40839,10 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-07"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -41066,23 +41091,23 @@
       },
       "negative_test": {
         "id": "FS-POW-043-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Budget-deadlock essential continuity; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Budget-deadlock essential continuity; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 7. Continuity, deadlock, and peaceful transfer"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-043 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-043-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Budget-deadlock essential continuity; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Budget-deadlock essential continuity; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 7. Continuity, deadlock, and peaceful transfer"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-043 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Budget-deadlock essential continuity; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -41109,10 +41134,12 @@
         "FS-CLM-18"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-05",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -41146,7 +41173,7 @@
       "secondary_class_refs": [],
       "contract_terms": {
         "lawful_source": {
-          "text": "For Certified succession and transfer, authority exists only under the cited constitutional source: One fail-safe succession legal effect; outgoing refusal cannot extend current power.",
+          "text": "For Certified succession and transfer, authority exists only under the cited constitutional source: One fail-safe succession legal effect; outgoing refusal cannot extend current power. The holder body and role arrays name only eligible constitutional participants or subjects. Legal effect additionally requires an exact current source-supplied selector, term, fallback, and succession configuration for this card as applicable; neither the arrays nor silence choose any numeric or procedural mechanic.",
           "basis": "source-specified",
           "source_refs": [
             "new-book-plans/book-1-state-form-and-political-membership-decision.md::A certified successor immediately ends the predecessor's current authority."
@@ -41361,23 +41388,23 @@
       },
       "negative_test": {
         "id": "FS-POW-044-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Certified succession and transfer; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Certified succession and transfer; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A certified successor immediately ends the predecessor's current authority."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-044 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-044-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Certified succession and transfer; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Certified succession and transfer; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::A certified successor immediately ends the predecessor's current authority."
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-044 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Certified succession and transfer; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -41406,10 +41433,15 @@
         "FS-CLM-15"
       ],
       "holder_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "holder_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-25",
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "affected_role_refs": [
         "FS-ROL-25",
@@ -41660,23 +41692,23 @@
       },
       "negative_test": {
         "id": "FS-POW-045-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Negotiated secession settlement and ratification; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Negotiated secession settlement and ratification; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 6. Lawmaking, amendment, initiative, and recall"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-045 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-045-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Negotiated secession settlement and ratification; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Negotiated secession settlement and ratification; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 6. Lawmaking, amendment, initiative, and recall"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-045 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Negotiated secession settlement and ratification; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -41959,23 +41991,23 @@
       },
       "negative_test": {
         "id": "FS-POW-046-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Protected local budget control; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Protected local budget control; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-046 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-046-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Protected local budget control; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Protected local budget control; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-046 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Protected local budget control; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -42258,23 +42290,23 @@
       },
       "negative_test": {
         "id": "FS-POW-047-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Protected local administration control; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Protected local administration control; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-047 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-047-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Protected local administration control; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Protected local administration control; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-047 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Protected local administration control; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -42555,23 +42587,23 @@
       },
       "negative_test": {
         "id": "FS-POW-048-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Protected local public-space management; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Protected local public-space management; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-048 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-048-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Protected local public-space management; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Protected local public-space management; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-048 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Protected local public-space management; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -42852,23 +42884,23 @@
       },
       "negative_test": {
         "id": "FS-POW-049-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Protected local facility management; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Protected local facility management; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-049 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-049-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Protected local facility management; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Protected local facility management; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-049 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Protected local facility management; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -43151,23 +43183,23 @@
       },
       "negative_test": {
         "id": "FS-POW-050-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Protected local assigned-service administration; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Protected local assigned-service administration; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-050 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-050-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Protected local assigned-service administration; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Protected local assigned-service administration; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::## 1. Decision"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-050 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Protected local assigned-service administration; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -43535,23 +43567,23 @@
       },
       "negative_test": {
         "id": "FS-POW-051-NEGATIVE",
-        "status": "planned",
-        "assertion": "Withhold one required premise for Independent appointments-qualification recipient; the direct effect must not arise and no opposite fact may be manufactured.",
+        "status": "executable",
+        "assertion": "Fuse the state-form source writer with the temporal reviewer for Independent appointments-qualification recipient; the current record and its direct effect must remain unavailable.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/state-form.pins.nibli::# FS-POW-051 negative: fused source/current reviewer cannot derive authority."
       },
       "counterfactual": {
         "id": "FS-POW-051-COUNTERFACTUAL",
-        "status": "planned",
-        "assertion": "Replace the source, holder, scope, or temporal record for Independent appointments-qualification recipient; the original direct effect must remain unavailable.",
+        "status": "executable",
+        "assertion": "Remove the source-writer/temporal-reviewer disequality for Independent appointments-qualification recipient; the fused-role record derives the bounded authority that the current constitution withholds.",
         "source_refs": [
           "new-book-plans/book-1-state-form-and-political-membership-decision.md::### Courts and independent institutions"
         ],
-        "executable_ref": null
+        "executable_ref": "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# FS-POW-051 counterfactual: removing the independent-current-review guard derives authority."
       },
-      "part_v_status": "coverage-only-not-formalized",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 may design staffing, capacity, workflow, and evidence custody for Independent appointments-qualification recipient; no operation, delivery, feasibility, liveness, or calibration follows from this card."
     },
     {
@@ -102624,7 +102656,7 @@
     {
       "id": "FS-CVF-003",
       "title": "State Form And Political Membership coverage batch",
-      "state": "coverage-ready",
+      "state": "prose-landed",
       "source_family_refs": [
         "state-form-and-political-membership"
       ],
@@ -102684,12 +102716,317 @@
       "template_refs": [],
       "refusal_refs": [],
       "crosswalk_refs": [],
-      "formal_statement_refs": [],
-      "pin_group_refs": [],
-      "counterfactual_refs": [],
-      "prose_refs": [],
-      "part_v_refs": [],
-      "blocked_before_drafting": "Formal rules, claim-bearing pins, and prose are prohibited until every direct-effect card in this batch is coverage-ready.",
+      "formal_statement_refs": [
+        "7a34ee5c097abec3395b3144cbae0bff7413ece16c79b7541c997636cb0be120",
+        "cbf6c93b1b009e2e03f6cabac00c4776b0381cc4e6f93f2fb833d1ca9e72fc97",
+        "0b381309d82872f11307b73446c944d57b6be83f02a89dd9f23c40c7241349f9",
+        "5df1de18eb3cb76f38b635c81fa1add72983aabe2cd26e7d5a848f6aebb8be72",
+        "a1ce338f549d85b1bde69bae312bd5e2928f4207b6f3f58cf72163675c3c300e",
+        "b7c10d5ca1eaf0192a9323e982780b196116b581aeab79b36d5ed43fd8d44fd1",
+        "2105fce9f4488eeaa93913628f63dc5345033d23186644be83a4f5d577f23867",
+        "47017762332d02f73157f85782a28ef139acff3a542f50f3d0200894ac415998",
+        "5cc3830db7eb847fce8dc6926d3c2313f1253d09d5b780047c503eb632834a21",
+        "d6a27797099ff55a70016ac62f486b6b04059284e70f160b777405f3da5b13c3",
+        "301eb1908e99947db1e826623623c0bb5b3d3489b42872fac7acfaf5d8b9ba95",
+        "c973da590eddfcbb752f7bbe93d4a76461ca8161b92945b7fdffffeed8071e1a",
+        "c89d69111546e028229cde242febb661987612e2170d6c9268528571d14e4621",
+        "37f23e62b26e0f89ba1dce1983251a197b2f5cfa24e3c71a1293994664e2bd23",
+        "91d0dcf7e3bd8eae6ef2f690f14068c940c32d4c1f417b5661f9bb995b226665",
+        "6a359753af497812fba0683c77b2e8b07d52e40937906d770d619508c9eda68a",
+        "b321bb7e9e538d824c7e194aff69ebc3e62902c6c4580b0bc8d0da4eb1a186dd",
+        "03dafcc9d115af36d25587fa94cb0f7f32aa62c76a4c5bdf07b27505fa27da82",
+        "d4490fd4ae7bacec9c6bfb7dbaf248840d7ce4245af66c37bc803a5b7d71228e",
+        "b5eda4abccaf4e656c599fdf2320ca172351ed7957df79a66d1c31c809afe024",
+        "4311524ec5cd8207454a76f48241ad24447e509f90a1a5662d84cc2d80be9897",
+        "3be9cdfa59790c6093ce997acd88527514ad18443997105c179ca92dbb8b06a8",
+        "ffe7421ac9d93a9fea22903d5145b215009aa0bc112ceac0a2ac2f6a6323dcc3",
+        "e11c660cb453f49c4462dd1e3520375992c02c64b76a28e77e5536ae495bad1b",
+        "558110170f915b56acf28880339fa6d7d6811f84803870901d6d3dc7ab2ae61f",
+        "2df2234cba02115e9a19fe52d0d5c80af904ca78bff8f2d67e95d7457ddc5838",
+        "45d684532d8076cc742bd857b39bbb79ed3b2105ab021004b8e5919a0e10b367",
+        "2dd3546dcf2aef0762ec5805820760a051c8c579ee4b0eda08c0d9e7f3226cf4",
+        "b5870cab343940e4e9f33871c98b4c24fc7f1324afadc64ecf3d1106bd52d05c",
+        "1b53adbdcf7a20ccba6f231f8a3b877aba0b750f329e818d6a9bb2773b9959c7",
+        "020976a0c155fd00ca02a0d9eb9a5d8ed5a876be70e2e99434f84b84b63d22ce",
+        "5cec2d2fe2d937352709d0d499bbdec51ff1f3e8ca64594285e4ffb1b19f4cf8",
+        "0fb318876a97134050201121d98ee04c4dfc10ff661f22ff7481d01b8b2f6b33",
+        "c04e3151686f44a0ee06c2a9557850d5791e1d82803d53fdcd3e2d0d3a3d0b5d",
+        "850dcf4f1ae0e454beb9e99a6c3cc62a25a297879ea9560559acd5f8b8863b45",
+        "05ef13f79aadb0bbf80b22f8b1e98b6efa5413b6658dbfb39760f850dba68989",
+        "4ebbddb8b1cb7f7bae5fa3548f3d8c7b17854243d50332dc67dd7990eb1f7523",
+        "c7904e0bad5db7105c3d64b635484b30f0f5e70e63bd9bcaf4ebf8e2a99a25fe",
+        "d1d37a665a68b054798556c1b52e7bc3bed6516f0fb1b379ef006ca0d7652e39",
+        "acda35ac4d21ec1f3f5bc181f9ba11cde6e18a5fbc6c0d2c4ed1de9102cfe080",
+        "133550566d4a774f521d07884566f1243cc621c16825c108e648260ee19d5893",
+        "e3389dd76f686ddaca60510dd099a73fcf286c5d305e6f7268522ffc150e2273",
+        "516edc2a5fdc40f10562e892805aebb8c0c314bf282d4c6a325f9b9399aaf1a5",
+        "f9dc52af720f84aa828f72bc8e8d882d7247d08905b35241fce4a3dbcffd5fde",
+        "057890160bfdae20a7add0e2ec8b581874af772caf32db68b8a64ea79c2879d8",
+        "75c286f547bc4050c6b07ffb23d1a9ad2993419dc62cdf02429bcd5b6a1d1937",
+        "fd6fbd1fa094e23e99acd76a7a7f4fec86741cddbac89fcdfb733bccc70786f5",
+        "5616f6a3969473715bd4d36d7d4317583eee5926d5159149dc2094f087eede16",
+        "3776ffdaccdabfb9a1ecb45fdc0c129e4b3e746472868e0736dd65f6754ca929",
+        "56d26f1a5d15c0c4a2ad93d5c237ca088530190ea382d538475b449c01f2f51b",
+        "9efe739f709bfb56fbd8d9fe7c9800cf6237268242a61ba45dcd22a954004f75",
+        "cca9d169b46a6f56831712e59c91845cd1e30f5d20f191b898533fd35c104e35",
+        "4ef6fd700e7b049f0162997d0fa81c08c4e3de9d7aa5a120c4a504bbd97de47e",
+        "3c884b360dbfd362eab19099ba6ad0c96d5290b4249a8417d847c411d3e6487b",
+        "579db7615d1c40d9b973ee18e1245fd3b670b8511922f2860deefb6a40c8ae44",
+        "0826ae8b88cef9e722c84461d0b47359c46d19241ab992ab888f41fd2d16baa8",
+        "cd1663ceb0e0941c0ad1fe8287728a2d41365d04bf52da5f253e78d251d35955",
+        "7896685fcdbc53550f6e96ac823671faf380f09d8c415b1662929f0f72a2f2e8",
+        "6dc367e0683e9615e4aeb6c43e24a1a918176f5989b8dd8d2f94e413a51624f8",
+        "89b1cd919147ae1f974fa388388251bf17280866a0d20afb52ccba267298d41f",
+        "4ba8ac8a542834db88083ecf8ce2fd9e4053a7c175b6ebc0e40caf030cb579f1",
+        "58f2f552f74de7b3b85f26c1b45cfb6b9087b6aef1a5049355ba9a5948b01aae",
+        "f3ad283c813a7bd13c2f5f602e97ebfa669a065c98948afe75e99f9df87065c6",
+        "e8faeade1cf500b7c4a41cddd5f9f9c4c039ac703309f078fe7995b8edd1156a",
+        "9593427b2a36c9a79ba6402540223783e27cc3a12f514732bda74e81e6e13eac",
+        "d851961eb17aaf6b254131d169feb47ab7a8c3fd200a00646dd278b96cff7633",
+        "5798d2880d76b6e611dc6c756cabe514b389f6bfb83d3b0a033b67315356134d",
+        "b13053e7c2792b5aa9254b3c9107983b6d33e744fb105ed2617024e764810159",
+        "753e10550dbff81259f52c3ae0f6c6fd2ba8295a07cea017e1a900222eba9ac3",
+        "52eccc856429fe6df17c872125977f2651ac933e876211233628d54abe433582",
+        "6e8f8960300de2c3330656e54dcbfa813b1355b453b1f8c4c4363b5361ccf799",
+        "c6620cc09fd432bc3a504c20a232a4ca347f7667f78a04dfd60e43768e80303b",
+        "a2772a9887a071a933d079df7623605a8653c4eb7ff2b68699f99db2c8a4c4a7",
+        "99e4b7d6ec9dc2f422b53f3faad5760de9b568b1634872db37f8c61f5669796b",
+        "fc6d53363e7b2050728743bdecbe6a0961716cb939d61133b53107523791caee",
+        "0ffd8237e5daa8fa9bcf7b0cd65abe8fb0918c9e0eb3ad245c1c960cc5483cc1",
+        "082e8815bbed9d15ff0cfd83524252e8fce389741a5b82dc03ebcdf6dd09d1d0",
+        "4b29da3e725e989939a01ec1b8a607f250ae40bab74f53d5ccd1358d7e29358a",
+        "96f48e563b5ff8e6aace61f5e75fef0d45212eddcbe247ad1668c512de70fcf8",
+        "957c082d4b60607e363ed2abf56bc372824937e2f3c65f58b9428f3f29754c62",
+        "267a973bb694aa9d8f8314b24cb68e31703ac1d4cfab989365fba0a86cd9d1ba",
+        "1a3cf10104175d69077ecbadd180d533849efe45f088888cb13dc1a3d10771bc",
+        "5353e2d61da3c99b95a1d6c547e3e536922fbfdd35a1a613001cd482ded0b091",
+        "3cd028eb4acc0117d766afa4c589cb0578518b1a30c24cfda2ad6110b7add689",
+        "0da79dacb556baeea204782dd8f1a08a4b1c49c5ffbd1a66d5354ca2edee695b",
+        "7b6b4d386950167d47c7cf5ad0eb1b234b686df86a54da635adef33ac7707ed3",
+        "78e52857b51bf81f6d140f12d476aaf68bd9266be7e252a3525c0dfa5dcf0159",
+        "12226377175bab15cd721b3d742da0f4da18f3834e418d470a402a19c48be7ee",
+        "3cffbd750f70b341de6d5e144469e34f40c3c62f1fd5db19989a6d2663a547d3",
+        "01d93956d24218e23bb53956e0bd33e94f40a7f80cd75ee46c2621df8b70f56f",
+        "a02945b86ec64bfb4f4faaf612a7ab5836b214b6a70922ce6be1d4823ad088b2",
+        "bef0a27648a863170be59b38a237110332137bed687e09959a6200cf4ad49132",
+        "92e0ae8a42d85de3b7937bff65fa856f577976f86d3c29d24ccba878fbb8ac50",
+        "3e64535fdc74e63b8b97b8081c655f41bd4c5dec5309c340326a28d070746481",
+        "9fc55227548e3bf6e3204356ca8c3078b5c42c1a961de3d5859b23c9f9b80ca5",
+        "284f703c78e697e1e0d18ddb9048da821c348ee27c936638afffecce66a5c076",
+        "e6a42adc787a8445fc3b1c7a4f541d36ae69d5cf7b0e39b92c5f7bf604c0e6a7",
+        "6541898250d7dce40a58b0fe0c2a16b24b8e72f960c7b72a60a6ac921a9787ab",
+        "ed51b86d772ca1181a67c37dce7db0cb3918e8442c83862f20e419ac45beabc6",
+        "fce6d56b7cbba7ebb5da79bdf602da7c0ed39825add2f72fae4e6bad57af7240",
+        "a926def6bbae6b914571eedd610234e69c05d8e99b33e698a612def82762dae5",
+        "c5de098b16aece0821132d254a47de2f21b82c2c81286f31aae4a4f77feb0f05",
+        "cce90789328ea1de568e45d6eaa0e9aa7ce72939598c15e3c249d02be5af8f8d",
+        "cfb40a88aa07f5268e4e427621582be47cde76af83a6e1f651f22ebb19dc5a4e",
+        "e37dd2d8b5390d9e58c50724b644f2899fec592e3e8316000e86e61606e18551",
+        "a551b3a66d75332be5eed3658b411145ff4e030b83257582b45edca8698535ba",
+        "bc67afc2bd7145b3ff0fcb72ca59923ba7a9e4bc7792c0e17d1e5e76200d464a",
+        "9e449d65b0ee849d12d3f2bed9b37173f5289652606287c5afc9b1d72c94a117",
+        "cd0c0850bcce2c413bb77bcb8d920ec98ff693b91da6ebd5dde7ad1cb7742781",
+        "9faceca870ca64dac1682e9c7acc5cb3326c56d26e3715b40d1862881226bcca",
+        "e5afca140e69f71d3ed6bd10e7c4aa21e674c9968d020879b7aff98fc2479a06",
+        "0defac9594f57f6fd96fae1440d687f32a9a7220b38917fb89ca5bc2530c2a84",
+        "f7c0a0c1cb272ff40bf66af86e5fb197e37eb6dcebf62313c9e5cecbfd04bad4",
+        "8fc4e69b5915c16070e460cbebb327188f00e64e54c384fe480691fb39f5f177",
+        "51325d0040858a6c444b7146f1c4dd3b30a05c5ae5a44e48ea7e8f03ecf21f91",
+        "54be7ad4ff624e0291f85f423886874c54c71d3b835b20da121529656ecb08d0",
+        "433e7a84b63e526dfa8ce0abcd65c7cbecf17205cd1d98767e0cbbe0809e3541",
+        "64b6be1473e2113877bf5aebd9912b9d0844f65fa79de35d4d5bba4f7808dd7a",
+        "ff2fb20915766413de18581630c8125401720512a5c0c9cdc933c84f157c703c",
+        "e388ffacdc1b15dc1951920c249d4a511d83592c71cac0abb2c3f63dc7b6e041",
+        "16e97cb5fb888eb7796e1e29c7224ea4ddf8cc9e8710b706e7f37fd2ac88bc59",
+        "10f4006804318fee8288ff717a04e12ddf4409b14540c75e2f8c50cc855522ab",
+        "350086119a346c090900c1ccf742bbb0e47f0cf73a7d947edd4007155b938a3f",
+        "16e0b4d8a92438ce26657dbdd11a86bde4f24e60abdc0aa83721ff9bf6b24132",
+        "e8a463dfadfb5af539d3a6b091bf7d4c53a28d06cd85f30cf156009f397aa37a",
+        "51f42a0f72f96b0edecad60cc3de05fe2d34838ba3934361042d69f8e1d6dc81",
+        "cdd535a5cee42f87cee45a9f4f1b3ef071c13e8a834e9efc028512020c1de50b",
+        "81fe0d3f7eb366b67e375ef49ef95afd843fdf9e2aa1fc3fa273165afcee2cef",
+        "b5303148ac0ce3c9b481602d85e519d75be536672000227ab615101f8533ed86",
+        "84c83a3485f4d704601aed8ecb6b59166322968e5b705e62ea2bf3740715ef79",
+        "24a489f5cca970368ad37c56238cc883bb42e610f34cb4da21ab0af3e92b8138",
+        "a3337ba557b24f4e37b3ac844123d2815491269cfa7bf9b3ffa7e850af0d5b5e",
+        "36b28737c6f7f727b34ec40a9033ef9b710f600c636955c40e2a3f72c705ac0e",
+        "0452220339dfbc1d724210e87d3842bbae0ddd2ff1e6df500bec6c4557c7eaa5",
+        "f784f404808ba30e36c8a43167d031c43efbb6ba141716a665bf440ffa154a28",
+        "3956793c5525d451323437108356878c767b426047f5cabab4adafe8dcc5009f",
+        "9833b7764fac31247062ef00144c0ce302311e51c7069725fe1263fa152de751",
+        "192fa339b8db7a29082415491be713a36127dd8428f7a7db2447580acd5831f5",
+        "e755b6b76876d289933be1ced905757a75c9dac3ba37ec1567027f10015b3114",
+        "0c403ba71581236e01ee8c8efe2c196c16ecc7ea8ce511227e05c49405434e4d",
+        "f1b1bf3165dfee038e53fe1760b57672b9755bf8cf55bef45cc9776772dbffcd",
+        "90299b0277dd6c29e59e3e9cf0705616950fc4a485b66a2e574be854b41f2936",
+        "3fc366948a942e64eab81e7843db3e2ca77276fa54c49b5c39cc5568ba3ce882",
+        "bd3a2112df4860bc25e5106447a00681242b53d5f5455f95c91509a2e8154f7e",
+        "c7a8c628a4033c5bf1373935aa68c5ba4fd3d400b30a72527b33e8f642dfc8de",
+        "f3ff53d0f6b082221138b02948442cf17c61b2f778ca75942e644b0559e36705",
+        "65897ebb7a978d07460dd74a3e559b486a8e32be6824eadb45387398a6e31645",
+        "b2a411702add4d4a697be5806a5ddf02c8d828f494a93ecc6f925c2adf3f9c22",
+        "e960d4603dd0d8d853279f4f4d0843f5bd2969abc47e3013f32401fe742cf9a5",
+        "83b39542cae3643819c2abe12f895e198e734c4d0f905dea1d59d3a8f809cc5e",
+        "f0c4ea007833b5e5cd43f925938f22d5fbd5300ef6e2f8fd1beec1a0dd824563",
+        "51e28be0ff227fec9ed8ee33abf829665207eb5495d55f465b5aaced082e0d15",
+        "7f641eb86eca3e65e6a7f72730e041790661ccd8b744a1fabede6955fc036e86",
+        "0964a596e29c5a91030ac1cc8f4d0c38bebe75c8b49d558a6ee65ef2ba8ebba2",
+        "dbd91524c04c1c4702546af0e03e8cc260b7bfdd17f8afde6296fdc90171474a",
+        "02c5f5de64ad6b9f3721d68c244cbdc9e35c341636e65e383fdc62ca87af5321",
+        "6b67e4c6e9727384e05f21b753482cfc22237b054fba619419db0eb8c7915ad8",
+        "ee4710ca537e769d4a711d868fcf4f4c1830f6748442a6887938eb76e3eeadfb",
+        "9580b4648de0b051edc2d04a4254783fbffd8995277093c1f1a2e39194d9a1af",
+        "5a1bb23d40a9ece21a90fac0bb8d69c3f925209559a08c3b4b323db44f3647b7",
+        "a9ae37eded85be9070a5984e9985d4a4caba8574c6d5e14a17fc2092a9e936be",
+        "7a0afa7281b735b60732103ddbfd6818e2ffff8399b1bcb9ca4d3ba60459bc86",
+        "195a27f3b6eb6546258f5af859542fc6e3c887290f2f56d6d5531f3635e14262",
+        "b3c2a02c0a08b899a639675327c09028ff84e402fdeb4dcb01842360fabf1453",
+        "eecfbd887694ff4d9c6a4bd7053d2065994fbbc16d6be6384acd7c7bea97e8b0",
+        "c10ce0a52b259c6404a357e8a1cb4c5b9f1a76a0ad3608e6e0aa4f8f0f02a769",
+        "b11119304134396a1905fb9a2af814ea3295438c61830c0a7fd752eea042799a",
+        "17636da5289bd66b5ef3fd810b99127eee1d4160871e7a7e56181367a3d0711f",
+        "4beaa588bb33fb557e0fbaecbcef41b2c940f1d438d3e4d416390958942cd0f5",
+        "3e49cac9109d4e8c1d2a0c7f89e0ded1cc4e30bda5186da0328ac9920bb28df1",
+        "2fa7b8d7899694c982fe001ce5bf9dec4c5c9256aa6162da6eb684d448b3f7d7",
+        "15c9edf969351c6730cf1358fc679451cbefae2e05e81a73d63e2e6694b1c867",
+        "450f00386b09feda9d1ee4849d3abd3e1dd8ffbfa5199686a0d687601038b5c0",
+        "8e707ddb31a5d023c0da42466a31c04974246612ee02050a565f8441a44974d3",
+        "c9299e72da9cd7d2ba6d64744d8b9e755570b78dedd096ba9f6027031a3deca7",
+        "e6585dac77c5333c237d93bca90ee8fd214e30ad242803c2861f4cc588fd2338",
+        "0e3c1a3f47230bc4db1dda1576fef71499d3e2330c038ac8f045d69f0d0cfdf6",
+        "e14440888c0e3bbca886c12d227e7104b767557e4ad0bcdcb25faaf406d8a5fe",
+        "18c234247a3b43707c53f398a64d2a8f0fe10ee532bc8dbbb2474e02dd446582",
+        "460870ffa2ba316109a01dc87cb32ed888d97f090d228186beba9502116d6e82",
+        "e09f2a737625390107e6709060aaadad515f8c53a8c3e449a3dfc474ed546a3b",
+        "07d61e65f8bfbac38c7899d2c014f2bb8930747b3998fcebfb2e2f9c6074e04f",
+        "949a457fdb152c110df3ab99f99c09e08a557c19d22b8b34b5ce4fcc9f1cd6d3",
+        "7c2732069daf6b1fb7abd013480274977b3950a62782c45c413694082d64ef21",
+        "c06c3ba3ac9c4a85cc5311649c094a126158301c67afca1800faf749c7233a57",
+        "f3ed700f74607a585a63d43796c1d32f90dce533b1f29f54f96b4fe3ea2cd7a9",
+        "5ffb33c9cde32cb9e3f983ea969e4926cad9b88abfa7758ae83a4dcf7b63467b",
+        "48904081b766912b6f0d8bb56c8f68f101e75cbcc1760a4e710b33f72b7223f4",
+        "fdccd06a69ca78d6d252e1f3fd5f9aa7f91c17590238abbf279ed7da15a599c8",
+        "43ba973254aa21c0fbd8deaedfd16dcac0042f5a2b07800eb932603b5eda80b5",
+        "85740b73fd3ce206fcefdbb08b855ed2d409d49f4b2a26df2f91cab343d21443",
+        "ee8d64bac85f66cf079680bad271f4596a24e5a022ff6c77fed8c0ffda1c0cfd",
+        "0e5e4b4c53c71db426ed1ebbfa82bc54c82aeb6c6f2049d50fb96d6e3bea0c22",
+        "cca51a2111abdc152426b7d722e2c6225044d9af4715e99df1d2ccbfd916f763",
+        "82c7a9c6c5be7c8a404414aae19d1376c33ef2ae9c68819afb422be9f7ac4e6d",
+        "1c1ddd1d3c6e3af9b1215a739147df9b032f7ec01fed9cd04821933cccfe3118",
+        "39c24c3bdf730c86a8a48bb33f975a35d51601ba2442949eccf71e9f5140031a",
+        "968a3936ef23525dfc75c08a91cdd12b758246a7e5b4e2068ac91847ba0d38cb",
+        "527654c3bb138a63ae2b223877b5ad8dc0051b6c3210302eb1782f7949a3fc5a",
+        "242a8a269a5b1345b66b975e4f7f30a4bc0bbb4401e6976c3e8bec92d131203b",
+        "8b0b8c4916f70bf48ebe92784830220a5024aa71484d5d01ce23e1f7047715b9",
+        "466a38dadb128b94d0d0f2fe0749768372da148a636500625b15ad527e5817ac",
+        "3c3be5b750e5f9a0bbab16bc00f067dcf0a9d7006ef711b13ccf34d9ffc4df6a",
+        "c3bb42b4742672b5a24ea03bd13de8043df7a61f4cb37abdc4cfb26ebfc5cc58",
+        "a2e3741a85d50ebc070ed19ffdade6a26899bc8710ea17e7dba02e402ee9a5cb",
+        "1f0a9a5080f02544a5e6aac0007f373d7ac28d1066be1db350c7e735683ab468",
+        "14635ac45d4e7a84f9b91a4e3cb32f0fdf700a7c3dd8b833c45f1b250f91b7d3",
+        "d0d2b7b91088f3a9bc04ea593a9b93de689375427bfa20852fab426f97f8d2fb",
+        "3cffc3e473b31ef9eb7821ae893489860baebc3ec8af58be1ac25ecc6c456121",
+        "aaba18bd63479f33c82cbbfbd6cd985ec1a62a13d9fe4520c7955b8d0ec22365",
+        "d42313e739b3d479f81c871fd5b01f1f1bcd654743aecdf6bdfc4a750ea4f4a5",
+        "1af8454c86e8d67e1f7da651c639c289a14c913b4d8291d1fdcfb70dce417834",
+        "0dba95ad1a4367917452681009ee3e06fee9308fd01bdad7f6b371e565344b7a",
+        "d892fdb38fb69c1ff92ba9828a02b5aed593015ebeaf027f7583a79cc408f018",
+        "4e3eb27a123197df05ad200ae04f16ac02a7085edc9ff6be1cc64854d20666fb",
+        "04e6db8444ae710d32907edbf9d3fe0a4a94848bb88bdab5d43aa0917b07a325",
+        "6b77b98bbf941ff53b28341d4498de1821257cc07286aaf6d868917e6ef672a0",
+        "45b1452476ac37177616519bc3df48d554d7a09ab225febec5436bb612198c66",
+        "d5f7c5cf9d41cbb2e281a48493f491cdbe5cc78c8d95b1507101c8c01fc40949",
+        "71f590774f510033fff1e0df5d503a40ecfb3a4169538bce7a69c9bf07c2731a",
+        "3ffee9f823ccef59d875ece3e1f97183b0222d02723089aa5e08726a112c5786",
+        "a0f19b62aeb2a8b10725f947e1ce12ffdace6462b0471b102da80884ffa24921",
+        "7b765c609b4596c4a609be6e833ce46506d5419dc8242d2a8bdd1bf68f51fc61",
+        "af2acd9933eb00ede16a799439eb4f512ec78dacf756f5174deb3cbd17ee4084",
+        "e88797836a086677448ffd78fed18cf1c7670faab63df43a63f22bb5f8f97796",
+        "38570856d781dde14ea1f3cf24a437a4cf9695c83401cc410ba6a2386d01dd98",
+        "4ae8cba04a8435ef8c3fc56b8f3d5b77408740ed4541e283af4f6066a833e832",
+        "0a7c6056469eed45063737f482ac0a4fdeda8dec8608982c735282c87fd9a8f6",
+        "094fdb3424c36dedcb9e32a4c6950f0e2c6db35aebdaf7678034eacad2a69288",
+        "b0085c4d8c1ef6d978b45e764f08660f83e58137f3eb84b5ffe65b41e06bb26a",
+        "12a94d890ba82a4efd0d9b847e8dfab2befdbeaebbcd41f77ef5fad5868619a6",
+        "32e00208ff691b8726627f102aeef3962515dc7cb9a2b1e0686422ba4fc951da",
+        "b87e810a015e3dcafdc8346d65c8e3fa32cbd1f741641aa375b5854b752c51e5",
+        "23afacc041496b02fae01ddf851f32d5680a450fc18eeb5fe36df758eeafcc17",
+        "d844abcf68074ba3d0fe4a85fff5cff583e4cb59fe193cfc1c64e67c2b82f13b",
+        "65b359ed43c9f43e9a1c10d8b6a7bc4c89435656e41ce1f91f033934162f5978",
+        "7c1b78f953eb3758a33f5518ddb820b255f7b52a34c9e5196d091bad8e1f27b7",
+        "266b8f319c428e8c6b08d7cfffc9225fedc9d639363e4a662828748faf9958b2",
+        "c320f448ace552a61198578514dd3136c62eb24cd7fbe49c75259e7040633342",
+        "4ad1cdb63e299d9ad0b96a255393e12bd8a031c4af15012c0a35f9b41162cfe6",
+        "5021e8b7259ebeaa4355216467ace37b8c49a0e25005dc51da978a9f05e05cc3",
+        "bf7b0bc652e86120fd3c054581f8b687e36f72eafddf7d105b86028f7f4c6bc1",
+        "6358de559cfe9f3ae7a10f67686904c8cda8df0b4f418c2e3c5925e89ca80dd4",
+        "cb15b4b63703cf75504698bf8e256c88e6ef2571af9a9a0906e2431b24e3163c",
+        "336d6aa50d747e1ddc547faac9e288afa62c7f3897c2371b458697299da79087",
+        "5205806d59331920e58b4cb87a2472fa0f44755458f7b473c7dc56612b6d07ca",
+        "e09aaafd44367e85523f590b8c7bcbf2a7cb28b1cb2dab9cbdd842237a9a6acb",
+        "1457d144e0b14ca35f717f434c7d4c22bbc73142fef9c9625c8d9fdf8e897f92",
+        "8d443d516fee61a84ab72d0ca06680e034114ecd18715148c484e194666bb947",
+        "6a982d963df881790e6eeab842a326b2bd6dee3e4b014badc51c87026be671b6",
+        "d177c63608303b4ab72366641a1606817d017f20c4b4e17dd6fa690b3b49a65d",
+        "d1f138614beaa8fa535c8f4e68fabfe08111ed26765e1773e0fbef9ee406625e",
+        "b08be2b93635aa77c98b2bf37c6e872de68cc877c58adeddfc280e520a8ebb70",
+        "c9ad473839203c290db224d5b729bce5132362909af476b2e1681c855d047f19",
+        "03f7c39be1da61367cc249f84a3143cd2e771561f5f9e4be55f740bd8a7f37d4",
+        "62fa15581db12fba63a8e56da4ec1a7e1223d07caacbc48ba264d09b23d36f5a",
+        "6c6a44f30a8bd886183b852bc2d1ce3aac475ab7e8b9f1004a82ffec06166afd",
+        "56f1b58f8ab7960b9926c163639d0840aaed8a505fafa62faa0b475e01ee2bb0",
+        "c99dd45cafdb4e8f6653578916c989bcb6f9f17345f8cf202170363af9c228d4",
+        "ff3e27d4d34781267fe81a4cca5c4726575c0d87f12b4eb55c220d59f2a90c9c",
+        "50d6ae9adad65f1b0742d6d5770beff0ba12f5ebb284340c115860269c72a179",
+        "d834c4682f6d424d9294201a7ade6d4a5bc4d344f1e5368529587f29b7cd71e8",
+        "bb4cf648f2adb5f492a70a352d97304123f1ef14b8e3fab0197a37afd617770c",
+        "46f2cdfa9f0d4f5049dab61a4f981dd2341997ec9051ea0309ef37a2ab043d08",
+        "3cd6da30a961de626b46301719a85fa398d99cce4c31bd1cf1509e4f809d1326",
+        "1ff7019a82d6d0139a20b83aafe5362016d2586a7292c2aebb860b7957504ad7",
+        "1545c940a4661be967a851ff8bbf779aa9e309f229eee8d9727b77079dd13bd5",
+        "3d3979db4d30eb1fda839c5dc8028ed3157857ee48059d0aeb72eba080722a17",
+        "2fc97abb5a3237386d31ddbe51b34e7eea9ec8b8ef3453894ae8c66923b4d7c5",
+        "5bbb2459a2d73437afafa71ccf729b6ced5de87a26203f51f73e7fc3b74860fa",
+        "fbed463327dd6c7c1e87d4e72954f4d1e010a201ee9b45d414b26942eb5eac47",
+        "dc9d8f83eb2025a83ee61cc2ed8d9c422d1aa631bdc0478ba0a7f5e441afd204",
+        "a7e46755ab833078c8eaf54b7a2fa886607b282155cb4b3c5bef96f1daa4824a",
+        "4d6af92950a9dd514e11e59e61b4952ec8a4a246385bc4b3ce7f65d3fa5f8d6d"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/state-form.pins.nibli::# State-form and political-membership family - executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli::# Counterfactual: state-form source writer serves as temporal reviewer"
+      ],
+      "prose_refs": [
+        "book-1/00-opening-note.md::separates permanent public answerability from current office and current",
+        "book-1/00-opening-note.md::shows why conviction and custody remove neither franchise nor candidacy,",
+        "book-1/00-opening-note.md::**Current lawful authority:** a source-bound conclusion",
+        "book-1/00-opening-note.md::**The federal constitutional bodies:** the People's Assembly, Regions",
+        "book-1/00-opening-note.md::**The older assembly and approving-public entries:** produce a proposal and",
+        "book-1/00-opening-note.md::**The State and the constitutional bodies:** the older `State` entry owes the",
+        "book-1/00-opening-note.md::**Democracy, government, and administration:** Chapters",
+        "book-1/00-opening-note.md::**Locality, membership, mobility, migration, and external relations:**",
+        "book-1/01-what-counts-as-evidence.md::This is a real gap and it is stated here rather than buried, because it is",
+        "book-1/02-public-answerability.md::Do not read those older routes as the map of the federal government added later.",
+        "book-1/03-who-holds-the-pen.md::The later state-form rules close a different boundary without turning it into",
+        "book-1/09-the-vote-conviction-does-not-take.md::Here, conviction and custody take neither franchise nor candidacy.",
+        "book-1/09-the-vote-conviction-does-not-take.md::## The home custody does not move",
+        "book-1/09-the-vote-conviction-does-not-take.md::Esa can challenge the missing or disputed age evidence.",
+        "book-1/09-the-vote-conviction-does-not-take.md::## And the same silence as before",
+        "book-1/12-changing-the-rules.md::A society that cannot change its rules is not stable, it is brittle. This record",
+        "book-1/12-changing-the-rules.md::What the older route proposes is a trade.",
+        "book-1/12-changing-the-rules.md::## Why this is thinner than it looks",
+        "book-1/12-changing-the-rules.md::**Nothing happens when something receives the older law label.**",
+        "book-1/method.md::The state-form and political-membership family completes the existing"
+      ],
+      "part_v_refs": [
+        "book-1/15-the-five-joints.md::What does this design do about rotation? It now has a constitutional answer for",
+        "book-1/15-the-five-joints.md::does not evade the state, it *specifies* one. It now specifies more than a",
+        "book-1/15-the-five-joints.md::The binding layer is now wider than one debtor and one refusal.",
+        "book-1/15-the-five-joints.md::**Survives, narrowed.** Two claims survive."
+      ],
+      "blocked_before_drafting": "Coverage, formal rules, executable tests, counterfactuals, and approved SF-B1-v1 prose are complete; these remain supplied-record constitutional declarations and authority only, and establish no authentication, operation, staffing, election, delivery, feasibility, liveness, calibration, outside time, or institutional action.",
       "source_refs": [
         "new-book-plans/book-1-state-form-and-political-membership-decision.md::The common tier has only constitutionally enumerated powers."
       ],
@@ -109580,7 +109917,7 @@
       "status": "named-boundary",
       "severity": "material — selection itself is open and cannot be patched from inside",
       "consequence": "everything downstream of selection is closed while writer identity and selection remain external",
-      "owner_ref": "TODO.md::Write the Bodies specification",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.",
       "closure_condition": "never internal — writer authentication is external; the bodies specification owns the constitutional selection contracts",
       "defect_disposition": "externally-bounded-assumption",
       "response_stage": "detected",
@@ -111258,22 +111595,26 @@
         "FS-CLM-26"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-21"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-18"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-21"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -111721,19 +112062,19 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-21"
       ],
       "decisive_fact_writer_role_refs": [
         "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
         "FS-ROL-26"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-03"
       ],
       "executor_role_refs": [
         "FS-ROL-26"
@@ -111987,22 +112328,22 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-02"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "executor_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "executor_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -112053,22 +112394,22 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "executor_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "executor_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -112119,19 +112460,22 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-02",
+        "FS-BOD-03"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-05"
+        "FS-BOD-02",
+        "FS-BOD-03"
       ],
       "decider_role_refs": [
         "FS-ROL-26"
       ],
       "executor_body_refs": [
-        "FS-BOD-05"
+        "FS-BOD-02",
+        "FS-BOD-03"
       ],
       "executor_role_refs": [
         "FS-ROL-26"
@@ -112186,10 +112530,10 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-24"
+        "FS-BOD-02"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-45"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
         "FS-BOD-05"
@@ -112474,7 +112818,7 @@
         "FS-ROL-27"
       ],
       "final_remedy_body_refs": [
-        "FS-BOD-18"
+        "FS-BOD-17"
       ],
       "final_remedy_role_refs": [
         "FS-ROL-27"
@@ -112522,10 +112866,10 @@
         "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-18"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
         "FS-BOD-02"
@@ -112540,10 +112884,10 @@
         "FS-ROL-27"
       ],
       "final_remedy_body_refs": [
-        "FS-BOD-18"
+        "FS-BOD-25"
       ],
       "final_remedy_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-46"
       ],
       "separation_constraints": [
         {
@@ -112606,10 +112950,10 @@
         "FS-ROL-27"
       ],
       "final_remedy_body_refs": [
-        "FS-BOD-25"
+        "FS-BOD-18"
       ],
       "final_remedy_role_refs": [
-        "FS-ROL-46"
+        "FS-ROL-27"
       ],
       "separation_constraints": [
         {
@@ -112648,10 +112992,10 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-25"
+        "FS-BOD-18"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-46"
+        "FS-ROL-27"
       ],
       "decider_body_refs": [
         "FS-BOD-25"
@@ -112672,10 +113016,10 @@
         "FS-ROL-27"
       ],
       "final_remedy_body_refs": [
-        "FS-BOD-18"
+        "FS-BOD-25"
       ],
       "final_remedy_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-46"
       ],
       "separation_constraints": [
         {
@@ -112847,21 +113191,26 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-24"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-45"
       ],
       "decider_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-44"
       ],
       "executor_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-05",
+        "FS-BOD-21"
       ],
       "executor_role_refs": [
+        "FS-ROL-26",
         "FS-ROL-27"
       ],
       "auditor_body_refs": [
@@ -112913,22 +113262,28 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "decisive_fact_writer_role_refs": [
         "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
         "FS-ROL-26"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-05",
+        "FS-BOD-21"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -112985,16 +113340,19 @@
         "FS-ROL-45"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-17"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-44"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113045,10 +113403,10 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-02"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
         "FS-BOD-06"
@@ -113111,13 +113469,13 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-03"
+        "FS-BOD-21"
       ],
       "decisive_fact_writer_role_refs": [
         "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-03"
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
         "FS-ROL-26"
@@ -113177,16 +113535,16 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-04"
+        "FS-BOD-02"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "executor_body_refs": [
         "FS-BOD-04"
@@ -113243,16 +113601,18 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-02",
+        "FS-BOD-03"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-26"
+        "FS-BOD-02",
+        "FS-BOD-03"
       ],
       "decider_role_refs": [
-        "FS-ROL-47"
+        "FS-ROL-26"
       ],
       "executor_body_refs": [
         "FS-BOD-26"
@@ -113309,22 +113669,25 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-24"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-45"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-44"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-24"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-45"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113441,16 +113804,25 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-06",
+        "FS-BOD-21"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-25",
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
         "FS-BOD-02"
@@ -113513,16 +113885,16 @@
         "FS-ROL-27"
       ],
       "decider_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-25"
       ],
       "executor_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-02"
       ],
       "executor_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113579,16 +113951,18 @@
         "FS-ROL-27"
       ],
       "decider_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-18",
+        "FS-BOD-01"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-27",
+        "FS-ROL-25"
       ],
       "executor_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-05"
       ],
       "executor_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113645,16 +114019,16 @@
         "FS-ROL-27"
       ],
       "decider_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-01"
       ],
       "decider_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-25"
       ],
       "executor_body_refs": [
-        "FS-BOD-06"
+        "FS-BOD-21"
       ],
       "executor_role_refs": [
-        "FS-ROL-27"
+        "FS-ROL-26"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113843,16 +114217,16 @@
         "FS-ROL-26"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-07"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-07"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113903,22 +114277,32 @@
         "FS-CLM-18"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-06",
+        "FS-BOD-21",
+        "FS-BOD-24"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27",
+        "FS-ROL-45"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-05",
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-05",
+        "FS-BOD-21"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -113970,22 +114354,28 @@
         "FS-CLM-15"
       ],
       "decisive_fact_writer_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-04",
+        "FS-BOD-06"
       ],
       "decisive_fact_writer_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "decider_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-01",
+        "FS-BOD-02",
+        "FS-BOD-03",
+        "FS-BOD-21"
       ],
       "decider_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-25",
+        "FS-ROL-26",
+        "FS-ROL-27"
       ],
       "executor_body_refs": [
-        "FS-BOD-02"
+        "FS-BOD-04"
       ],
       "executor_role_refs": [
-        "FS-ROL-26"
+        "FS-ROL-27"
       ],
       "auditor_body_refs": [
         "FS-BOD-19"
@@ -127548,6 +127938,51 @@
       "scope_sha256": "bb5490d876583966c24aee81651efd0e663910a884d134e844984bd329827f40",
       "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
       "executed_at_utc": "2026-08-21T06:58:14Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --check",
+        "python3 new-book-plans/16-constitutional-closure.py --check",
+        "./verify.sh --quick",
+        "./verify.sh"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-33",
+      "title": "State-form and Bodies formalization and prose-completion current-source repository audit",
+      "source_version": "fs-ledger-2026-08-21-state-form-prose-v1",
+      "scope_sha256": "e317dd58423c7ebf59c35b128c17c953bb087e89d395879664dd9509ccb5ecae",
+      "protocol_sha256": "76b649b99ece4859da8e48f0c5d9081b1eabc1ff93f6316de7a8bd4ffad237c5",
+      "executed_at_utc": "2026-08-21T13:36:57Z",
       "method": "repository-source-derived-adversarial-audit",
       "criterion_coverage": [
         "declared-rights",

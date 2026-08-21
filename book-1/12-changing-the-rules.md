@@ -1,21 +1,38 @@
 # Changing the Rules
 
-A society that cannot change its rules is not stable, it is brittle. This record can
-decide which proposals receive the words *becomes law*. An assembly proposes a change,
-the electorate approves it, and—unless another entry marks it dead—the words follow.
-Two steps, both on the record. Nothing here yet applies the proposed change.
+A society that cannot change its rules is not stable, it is brittle. This record
+contains two different change interfaces, and confusing them would make both
+look stronger than they are.
 
-Look closely at what the record holds when "the electorate approves," because it is
-less than you expect and the less is deliberate. Not the count. No tally, no total, no
-margin lives anywhere in this record — it has no way of writing a number and refuses to
-learn one. What it holds is the outcome, entered as a fact like any other fact: this
-proposal, approved, in the electorate's name. The counting itself happens outside,
-however this society chooses to run a count, and what crosses into the record is the
-recorded result. That keeps the arithmetic — with all the ways arithmetic can be
-quietly gotten wrong — out of the machinery this book has been describing, and it means
-the entry itself stays small. But it names the electorate, not the writer. Nothing
-here authenticates the count, identifies who entered the result, or supplies a route
-to challenge or correct it. Those controls remain outside this record.
+The older route can decide which proposals receive the words *becomes law*. An
+assembly proposes a change, the electorate approves it, and — unless another
+entry marks it dead — the words follow. Two steps, both on the record. Nothing
+in that route applies the proposed change.
+
+Look closely at what the older record holds when “the electorate approves.”
+Not the count, total, margin, roster, writer, challenge, or correction. It holds
+one outcome fact in the electorate's name. Nothing in the older route
+authenticates the count or identifies who entered it.
+
+The state-form amendment route does not rename that fact or repair it by
+implication. It requires a positive current record for the exact proposal; the
+full-membership Assembly result; the national referendum result; any required
+Regions Council and affected-region consent; separate completeness assurance;
+constitutional review; challenge and correction; and a current certificate.
+The legal rules require two-thirds of the full Assembly membership, more
+affirmative than negative valid referendum votes, no turnout quorum, and failure
+on a tie, with the additional regional approvals where the settlement is
+directly affected.
+
+Those thresholds are legal conditions, not arithmetic the checks perform over a
+changing roster. The result certificate is supplied from outside. The checks do
+not prove the count, prove that the roster was complete, discover an omitted
+submission or competing certificate, or decide for themselves that the record
+is stale.
+
+The resulting conclusion is bounded current constitutional authority. It does
+not authenticate the submissions, identify the exact source bytes, publish or
+deploy them, or make one constitutional version become another.
 
 Three declared target names receive a different verdict.
 
@@ -161,19 +178,29 @@ decision they had no part in.
 That is the objection to the target design, it is serious, and there is no clever
 answer to it.
 
-What it proposes is a trade. Ordinary proposals may receive the law label, while the
-registered names may not. The intended permanent core contains the things without
-which the rest has no floor to stand on. But a label register is not yet that core:
-the source effect, its review, and the transition that applies it are all missing.
+What the older route proposes is a trade. Ordinary proposals may receive the
+law label, while proposals declaring the registered names may not. The intended
+permanent core contains the things without which the rest has no floor to stand
+on. But a label register is not that core.
 
-You may think the intended bet is wrong. It is the kind a constitution has to make one
-way or the other. This version has stated the bet and has not yet protected actual
-effects.
+The state-form rules now supply a separate amendment-result interface. They
+require the exact positive Assembly, referendum, regional, review, completeness,
+challenge, correction, and current-certificate premises before the
+constitutional holders receive amendment authority. They do not inspect the
+older label's declared target, bind that label to the exact proposed bytes,
+publish or deploy a source, or prove that the source transition occurred.
+
+You may think the intended bet is wrong. It is the kind a constitution has to
+make one way or the other. This version has stated the bet and formalised who
+may exercise the bounded amendment power. It has not made the protected source
+self-authenticating or self-applying.
 
 ## Why this is thinner than it looks
 
-The recorded label verdict is real. Protection against what a change actually does is
-not yet established.
+The recorded label verdict is real. The separate state-form amendment authority
+is also a real bounded conclusion when every positive current premise is
+supplied. Protection of the exact bytes, and proof that a lawful source change
+actually took effect, are not established.
 
 **The check is self-declared.** An amendment is caught because it says what it
 intends to adjust. Propose one that declares no target at all, and there is nothing
@@ -195,16 +222,21 @@ target, the exact proposed text, its effects, and the version that takes effect.
 proposal honestly declaring a protected name can be marked dead while somebody hands
 the machinery a source in which the protected line is already missing.
 
-**Nothing happens when something receives the law label.** The machinery determines
-which proposals receive it. That determination then sits there. No other rule in the
-entire design consults it, changes behaviour because of it, or does anything with it
-whatsoever. The society can record that an amendment received the law label and cannot
-tell you what became different.
+**Nothing happens when something receives the older law label.** The machinery
+determines which proposals receive it. That determination then sits there. No
+other rule consults it, changes behaviour because of it, or treats it as the
+state-form amendment certificate.
 
-That is the same shape as the gap in Chapter 8 — an exact account of what is owed and
-silence about arrival — and it is arguably worse here, because it is the *procedure*
-for change rather than the substance. A constitution that can issue law labels and
-cannot inspect or apply the changes has described a legislature rather than built one.
+The new amendment route does not read the old label. It derives bounded current
+authority from its own exact positive record. That closes neither side by
+borrowing the other: the label still applies no text, while the current
+authority still proves no byte identity, publication, deployment, or source
+transition.
+
+The distinction matters because issuing a law label, certifying a lawful
+political result, and changing the source are three different acts. This design
+now formalises the middle one. It does not pretend that the first caused it or
+that the third occurred.
 
 **And the constitution is another record that people keep.** Nothing derives which
 target labels are registered; somebody wrote them down. The rules cannot prevent

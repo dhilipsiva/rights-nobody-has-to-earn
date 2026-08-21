@@ -267,12 +267,24 @@ The list of what counts as evidence is not on that register. Putting its name th
 would still catch only a proposal honest enough to declare that name; it would not
 govern a direct edit to the opening declaration.
 
-This is a real gap and it is stated here rather than buried, because it is precisely
-the kind of thing a design should be caught at rather than confess later. The design
-treats widening the vocabulary as the quietest way to capture a system — and makes
-that widening visible without making it constitutionally approved or entrenched. It
-is currently the softest place to push, and anyone serious about attacking this
-society would push there first.
+This is a real gap and it is stated here rather than buried, because it is
+precisely the kind of thing a design should be caught at rather than confess
+later. The design treats an unreviewed widening of the vocabulary as one of the
+quietest ways to capture a system.
+
+The later rules for federal government and political membership are different
+in one narrow respect. Every added rule belongs to a reviewed source decision,
+an existing constitutional power, and a check that rejects an unowned or
+changed sentence. That makes the addition deliberate and visible. It does not
+make the rules democratically adopted, authenticate the records they read, or
+entrench the meaning of any word.
+
+<!-- Coverage owner: FS-CVF-003. -->
+
+An unapproved or unowned widening remains the softest place to push. Reviewed
+ownership proves that this repository expected a sentence and knows what
+decision it came from. It does not prove that a society approved the sentence,
+that its premises are true, or that a future source cannot change it.
 
 ## The other way in
 

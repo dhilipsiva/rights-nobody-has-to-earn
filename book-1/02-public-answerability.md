@@ -22,6 +22,14 @@ safely expose. They are all answerable by being what they are, and nothing else 
 the design confers it on them; there is no ceremony, no appointment, no moment at
 which they were granted it. They are public bodies, and public bodies are answerable.
 
+Do not read those older routes as the map of the federal government added later.
+The electorate and convocation here remain the two seating sources used by this
+accountability machinery. The state-form rules separately name the People's
+Assembly, Regions Council, Executive Council, Civic President, courts, and
+independent bodies, and determine current lawful authority one power at a time.
+That authority depends on a positive, current, source-bound record and can end
+with its mandate or a certified successor. Public answerability does not.
+
 The second is to be seated. The electorate seats people, and so does the
 convocation — a second seating body the next chapter introduces properly — and a seat
 from either carries public answerability on the same terms. Someone was chosen, and

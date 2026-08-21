@@ -557,9 +557,9 @@ Remaining gap owner: `TODO.md::### Expansion phase 2 — Specify the comprehensi
 ## Maintenance
 
 - Reviewed source: `new-book-plans/record-integrity-red-team.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `48ec1b697c08a840b62bc7e0d0f49f02eca806c3aa02ca9b8c4703aae5841eb2`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `5e195e85bd5be958846e27bd7f5c35eb7b5ff46eca18a82f2a3697a21345ccef`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `f845de70663549ede5663b000060d4fe6c424a67f2177d6863730ff4cb6f80dd`.
 - Regenerate only through `python3 new-book-plans/9-record-integrity-red-team.py`.
 - Fast freshness/schema check: `python3 new-book-plans/9-record-integrity-red-team.py --check`.
 - Executable check: `python3 new-book-plans/9-record-integrity-red-team.py --check --execute`.

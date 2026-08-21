@@ -10,11 +10,14 @@ Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
 
 - **A line deleted** (1 removed, 0 added) — `no-person-line`, `no-public-court`,
   `no-choose-boss`, `no-first-contact-standing`. What the world loses without the line.
-- **A line changed** (1 removed, 1 added) — `no-dead-conjuncts`: Article 4's multi-sig with
-  its `~broken`/`~match(·, CarriedVoid)` signer checks stripped. It has **no paired pin file on purpose**:
-  `verify.sh` runs chapters 4 and 5's own pin files against it, and their passing unchanged
-  is the standing proof those conjuncts decide nothing today. The proof strengthens by
-  itself as those suites grow.
+- **A line changed** (1 removed, 1 added) — `no-dead-conjuncts` strips
+  Article 4's `~broken`/`~match(·, CarriedVoid)` signer checks. It has
+  **no paired pin file on purpose**: `verify.sh` runs chapters 4 and 5's own
+  pin files against it, and their passing unchanged is the standing proof those
+  conjuncts decide nothing today. `no-delivery-independence` strips the
+  food-delivery writer/source disequality. The state-form fixture
+  `no-state-form-independent-current-review` strips only the shared
+  source-writer/temporal-reviewer disequality and has its own pins.
 - **A line added** (0 removed, 1 added) — `unguarded-pen`: the constitution *plus* a
   credential route that forgets the guards. A postulated future, not a deletion — its pins
   show Article 4's kept conjuncts are the only thing standing between that one line and a
@@ -62,6 +65,13 @@ attest that it arrived. Its pins keep two controls beside the flipped verdict: t
 independent route still derives, and shelter still refuses a self-certifying provider, so
 a green result cannot come from having broken the family instead of the guard.
 
+`no-state-form-independent-current-review` is the state-form currentness guard
+on a copy. The shared rule carries `~($source = $temporal_review)`, which
+keeps the source writer from serving as its own temporal reviewer. Strip only
+that conjunct and every card's fused-role fixture gains current lawful authority.
+Its paired pins keep properly separated controls beside those flipped verdicts,
+so a green result cannot come from disabling currentness or the card family.
+
 Regenerate the changed-line and added-line fixtures with:
 
 ```
@@ -80,6 +90,15 @@ old = "observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
 assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
 pathlib.Path('new-book-plans/counterfactual/no-delivery-independence.nibli').write_text(
     s.replace(old, "observe($w, $item, $p, FoodScope) -> eats($p)."), encoding='utf-8')
+EOF
+python3 - <<'EOF'
+import pathlib
+s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
+old = " & ~($source = $temporal_review)"
+assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
+pathlib.Path(
+    'new-book-plans/counterfactual/no-state-form-independent-current-review.nibli'
+).write_text(s.replace(old, ""), encoding='utf-8')
 EOF
 cp new-book-plans/constitution.nibli new-book-plans/counterfactual/unguarded-pen.nibli
 printf 'all $a: choose(Electorate, $a) -> permits(Review, $a).\n' \

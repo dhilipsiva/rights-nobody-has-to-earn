@@ -192,7 +192,7 @@ None.
 - **Residual assumption:** Formal separation cannot prove that institutions are socially independent or that witnesses did not coordinate a false account.
 - **Temporal status:** Independence can be specified at T0; changes in role, conflict, or credential status require T2/T3 where order or expiry matters.
 - **Book 2 handoff:** Operate independent witness channels, credential issuers, conflict checks, quorum availability, and evidence that control and failure domains remain separate.
-- **Owner:** `TODO.md::Write the Bodies specification`
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Write the Bodies specification.`
 
 **Current evidence**
 
@@ -705,7 +705,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `33f112cd3e84769218cf4190c43f02928ebb895ef43e80ec7af541f2c1e63be3`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

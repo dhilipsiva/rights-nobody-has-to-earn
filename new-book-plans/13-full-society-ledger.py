@@ -988,6 +988,326 @@ DELIVERY_STATEMENT_IDS = (
     "2bdefdb9e029bc4ad762ea2508072c8914adfdaed92eeaf818fd6b400a9e95b4",
     "fa4ba5b070f5187db305b21ee2759a4efdcd186874df846808670c1dfc2827a3",
 )
+STATE_FORM_STATEMENT_IDS = (
+    "7a34ee5c097abec3395b3144cbae0bff7413ece16c79b7541c997636cb0be120",
+    "cbf6c93b1b009e2e03f6cabac00c4776b0381cc4e6f93f2fb833d1ca9e72fc97",
+    "0b381309d82872f11307b73446c944d57b6be83f02a89dd9f23c40c7241349f9",
+    "5df1de18eb3cb76f38b635c81fa1add72983aabe2cd26e7d5a848f6aebb8be72",
+    "a1ce338f549d85b1bde69bae312bd5e2928f4207b6f3f58cf72163675c3c300e",
+    "b7c10d5ca1eaf0192a9323e982780b196116b581aeab79b36d5ed43fd8d44fd1",
+    "2105fce9f4488eeaa93913628f63dc5345033d23186644be83a4f5d577f23867",
+    "47017762332d02f73157f85782a28ef139acff3a542f50f3d0200894ac415998",
+    "5cc3830db7eb847fce8dc6926d3c2313f1253d09d5b780047c503eb632834a21",
+    "d6a27797099ff55a70016ac62f486b6b04059284e70f160b777405f3da5b13c3",
+    "301eb1908e99947db1e826623623c0bb5b3d3489b42872fac7acfaf5d8b9ba95",
+    "c973da590eddfcbb752f7bbe93d4a76461ca8161b92945b7fdffffeed8071e1a",
+    "c89d69111546e028229cde242febb661987612e2170d6c9268528571d14e4621",
+    "37f23e62b26e0f89ba1dce1983251a197b2f5cfa24e3c71a1293994664e2bd23",
+    "91d0dcf7e3bd8eae6ef2f690f14068c940c32d4c1f417b5661f9bb995b226665",
+    "6a359753af497812fba0683c77b2e8b07d52e40937906d770d619508c9eda68a",
+    "b321bb7e9e538d824c7e194aff69ebc3e62902c6c4580b0bc8d0da4eb1a186dd",
+    "03dafcc9d115af36d25587fa94cb0f7f32aa62c76a4c5bdf07b27505fa27da82",
+    "d4490fd4ae7bacec9c6bfb7dbaf248840d7ce4245af66c37bc803a5b7d71228e",
+    "b5eda4abccaf4e656c599fdf2320ca172351ed7957df79a66d1c31c809afe024",
+    "4311524ec5cd8207454a76f48241ad24447e509f90a1a5662d84cc2d80be9897",
+    "3be9cdfa59790c6093ce997acd88527514ad18443997105c179ca92dbb8b06a8",
+    "ffe7421ac9d93a9fea22903d5145b215009aa0bc112ceac0a2ac2f6a6323dcc3",
+    "e11c660cb453f49c4462dd1e3520375992c02c64b76a28e77e5536ae495bad1b",
+    "558110170f915b56acf28880339fa6d7d6811f84803870901d6d3dc7ab2ae61f",
+    "2df2234cba02115e9a19fe52d0d5c80af904ca78bff8f2d67e95d7457ddc5838",
+    "45d684532d8076cc742bd857b39bbb79ed3b2105ab021004b8e5919a0e10b367",
+    "2dd3546dcf2aef0762ec5805820760a051c8c579ee4b0eda08c0d9e7f3226cf4",
+    "b5870cab343940e4e9f33871c98b4c24fc7f1324afadc64ecf3d1106bd52d05c",
+    "1b53adbdcf7a20ccba6f231f8a3b877aba0b750f329e818d6a9bb2773b9959c7",
+    "020976a0c155fd00ca02a0d9eb9a5d8ed5a876be70e2e99434f84b84b63d22ce",
+    "5cec2d2fe2d937352709d0d499bbdec51ff1f3e8ca64594285e4ffb1b19f4cf8",
+    "0fb318876a97134050201121d98ee04c4dfc10ff661f22ff7481d01b8b2f6b33",
+    "c04e3151686f44a0ee06c2a9557850d5791e1d82803d53fdcd3e2d0d3a3d0b5d",
+    "850dcf4f1ae0e454beb9e99a6c3cc62a25a297879ea9560559acd5f8b8863b45",
+    "05ef13f79aadb0bbf80b22f8b1e98b6efa5413b6658dbfb39760f850dba68989",
+    "4ebbddb8b1cb7f7bae5fa3548f3d8c7b17854243d50332dc67dd7990eb1f7523",
+    "c7904e0bad5db7105c3d64b635484b30f0f5e70e63bd9bcaf4ebf8e2a99a25fe",
+    "d1d37a665a68b054798556c1b52e7bc3bed6516f0fb1b379ef006ca0d7652e39",
+    "acda35ac4d21ec1f3f5bc181f9ba11cde6e18a5fbc6c0d2c4ed1de9102cfe080",
+    "133550566d4a774f521d07884566f1243cc621c16825c108e648260ee19d5893",
+    "e3389dd76f686ddaca60510dd099a73fcf286c5d305e6f7268522ffc150e2273",
+    "516edc2a5fdc40f10562e892805aebb8c0c314bf282d4c6a325f9b9399aaf1a5",
+    "f9dc52af720f84aa828f72bc8e8d882d7247d08905b35241fce4a3dbcffd5fde",
+    "057890160bfdae20a7add0e2ec8b581874af772caf32db68b8a64ea79c2879d8",
+    "75c286f547bc4050c6b07ffb23d1a9ad2993419dc62cdf02429bcd5b6a1d1937",
+    "fd6fbd1fa094e23e99acd76a7a7f4fec86741cddbac89fcdfb733bccc70786f5",
+    "5616f6a3969473715bd4d36d7d4317583eee5926d5159149dc2094f087eede16",
+    "3776ffdaccdabfb9a1ecb45fdc0c129e4b3e746472868e0736dd65f6754ca929",
+    "56d26f1a5d15c0c4a2ad93d5c237ca088530190ea382d538475b449c01f2f51b",
+    "9efe739f709bfb56fbd8d9fe7c9800cf6237268242a61ba45dcd22a954004f75",
+    "cca9d169b46a6f56831712e59c91845cd1e30f5d20f191b898533fd35c104e35",
+    "4ef6fd700e7b049f0162997d0fa81c08c4e3de9d7aa5a120c4a504bbd97de47e",
+    "3c884b360dbfd362eab19099ba6ad0c96d5290b4249a8417d847c411d3e6487b",
+    "579db7615d1c40d9b973ee18e1245fd3b670b8511922f2860deefb6a40c8ae44",
+    "0826ae8b88cef9e722c84461d0b47359c46d19241ab992ab888f41fd2d16baa8",
+    "cd1663ceb0e0941c0ad1fe8287728a2d41365d04bf52da5f253e78d251d35955",
+    "7896685fcdbc53550f6e96ac823671faf380f09d8c415b1662929f0f72a2f2e8",
+    "6dc367e0683e9615e4aeb6c43e24a1a918176f5989b8dd8d2f94e413a51624f8",
+    "89b1cd919147ae1f974fa388388251bf17280866a0d20afb52ccba267298d41f",
+    "4ba8ac8a542834db88083ecf8ce2fd9e4053a7c175b6ebc0e40caf030cb579f1",
+    "58f2f552f74de7b3b85f26c1b45cfb6b9087b6aef1a5049355ba9a5948b01aae",
+    "f3ad283c813a7bd13c2f5f602e97ebfa669a065c98948afe75e99f9df87065c6",
+    "e8faeade1cf500b7c4a41cddd5f9f9c4c039ac703309f078fe7995b8edd1156a",
+    "9593427b2a36c9a79ba6402540223783e27cc3a12f514732bda74e81e6e13eac",
+    "d851961eb17aaf6b254131d169feb47ab7a8c3fd200a00646dd278b96cff7633",
+    "5798d2880d76b6e611dc6c756cabe514b389f6bfb83d3b0a033b67315356134d",
+    "b13053e7c2792b5aa9254b3c9107983b6d33e744fb105ed2617024e764810159",
+    "753e10550dbff81259f52c3ae0f6c6fd2ba8295a07cea017e1a900222eba9ac3",
+    "52eccc856429fe6df17c872125977f2651ac933e876211233628d54abe433582",
+    "6e8f8960300de2c3330656e54dcbfa813b1355b453b1f8c4c4363b5361ccf799",
+    "c6620cc09fd432bc3a504c20a232a4ca347f7667f78a04dfd60e43768e80303b",
+    "a2772a9887a071a933d079df7623605a8653c4eb7ff2b68699f99db2c8a4c4a7",
+    "99e4b7d6ec9dc2f422b53f3faad5760de9b568b1634872db37f8c61f5669796b",
+    "fc6d53363e7b2050728743bdecbe6a0961716cb939d61133b53107523791caee",
+    "0ffd8237e5daa8fa9bcf7b0cd65abe8fb0918c9e0eb3ad245c1c960cc5483cc1",
+    "082e8815bbed9d15ff0cfd83524252e8fce389741a5b82dc03ebcdf6dd09d1d0",
+    "4b29da3e725e989939a01ec1b8a607f250ae40bab74f53d5ccd1358d7e29358a",
+    "96f48e563b5ff8e6aace61f5e75fef0d45212eddcbe247ad1668c512de70fcf8",
+    "957c082d4b60607e363ed2abf56bc372824937e2f3c65f58b9428f3f29754c62",
+    "267a973bb694aa9d8f8314b24cb68e31703ac1d4cfab989365fba0a86cd9d1ba",
+    "1a3cf10104175d69077ecbadd180d533849efe45f088888cb13dc1a3d10771bc",
+    "5353e2d61da3c99b95a1d6c547e3e536922fbfdd35a1a613001cd482ded0b091",
+    "3cd028eb4acc0117d766afa4c589cb0578518b1a30c24cfda2ad6110b7add689",
+    "0da79dacb556baeea204782dd8f1a08a4b1c49c5ffbd1a66d5354ca2edee695b",
+    "7b6b4d386950167d47c7cf5ad0eb1b234b686df86a54da635adef33ac7707ed3",
+    "78e52857b51bf81f6d140f12d476aaf68bd9266be7e252a3525c0dfa5dcf0159",
+    "12226377175bab15cd721b3d742da0f4da18f3834e418d470a402a19c48be7ee",
+    "3cffbd750f70b341de6d5e144469e34f40c3c62f1fd5db19989a6d2663a547d3",
+    "01d93956d24218e23bb53956e0bd33e94f40a7f80cd75ee46c2621df8b70f56f",
+    "a02945b86ec64bfb4f4faaf612a7ab5836b214b6a70922ce6be1d4823ad088b2",
+    "bef0a27648a863170be59b38a237110332137bed687e09959a6200cf4ad49132",
+    "92e0ae8a42d85de3b7937bff65fa856f577976f86d3c29d24ccba878fbb8ac50",
+    "3e64535fdc74e63b8b97b8081c655f41bd4c5dec5309c340326a28d070746481",
+    "9fc55227548e3bf6e3204356ca8c3078b5c42c1a961de3d5859b23c9f9b80ca5",
+    "284f703c78e697e1e0d18ddb9048da821c348ee27c936638afffecce66a5c076",
+    "e6a42adc787a8445fc3b1c7a4f541d36ae69d5cf7b0e39b92c5f7bf604c0e6a7",
+    "6541898250d7dce40a58b0fe0c2a16b24b8e72f960c7b72a60a6ac921a9787ab",
+    "ed51b86d772ca1181a67c37dce7db0cb3918e8442c83862f20e419ac45beabc6",
+    "fce6d56b7cbba7ebb5da79bdf602da7c0ed39825add2f72fae4e6bad57af7240",
+    "a926def6bbae6b914571eedd610234e69c05d8e99b33e698a612def82762dae5",
+    "c5de098b16aece0821132d254a47de2f21b82c2c81286f31aae4a4f77feb0f05",
+    "cce90789328ea1de568e45d6eaa0e9aa7ce72939598c15e3c249d02be5af8f8d",
+    "cfb40a88aa07f5268e4e427621582be47cde76af83a6e1f651f22ebb19dc5a4e",
+    "e37dd2d8b5390d9e58c50724b644f2899fec592e3e8316000e86e61606e18551",
+    "a551b3a66d75332be5eed3658b411145ff4e030b83257582b45edca8698535ba",
+    "bc67afc2bd7145b3ff0fcb72ca59923ba7a9e4bc7792c0e17d1e5e76200d464a",
+    "9e449d65b0ee849d12d3f2bed9b37173f5289652606287c5afc9b1d72c94a117",
+    "cd0c0850bcce2c413bb77bcb8d920ec98ff693b91da6ebd5dde7ad1cb7742781",
+    "9faceca870ca64dac1682e9c7acc5cb3326c56d26e3715b40d1862881226bcca",
+    "e5afca140e69f71d3ed6bd10e7c4aa21e674c9968d020879b7aff98fc2479a06",
+    "0defac9594f57f6fd96fae1440d687f32a9a7220b38917fb89ca5bc2530c2a84",
+    "f7c0a0c1cb272ff40bf66af86e5fb197e37eb6dcebf62313c9e5cecbfd04bad4",
+    "8fc4e69b5915c16070e460cbebb327188f00e64e54c384fe480691fb39f5f177",
+    "51325d0040858a6c444b7146f1c4dd3b30a05c5ae5a44e48ea7e8f03ecf21f91",
+    "54be7ad4ff624e0291f85f423886874c54c71d3b835b20da121529656ecb08d0",
+    "433e7a84b63e526dfa8ce0abcd65c7cbecf17205cd1d98767e0cbbe0809e3541",
+    "64b6be1473e2113877bf5aebd9912b9d0844f65fa79de35d4d5bba4f7808dd7a",
+    "ff2fb20915766413de18581630c8125401720512a5c0c9cdc933c84f157c703c",
+    "e388ffacdc1b15dc1951920c249d4a511d83592c71cac0abb2c3f63dc7b6e041",
+    "16e97cb5fb888eb7796e1e29c7224ea4ddf8cc9e8710b706e7f37fd2ac88bc59",
+    "10f4006804318fee8288ff717a04e12ddf4409b14540c75e2f8c50cc855522ab",
+    "350086119a346c090900c1ccf742bbb0e47f0cf73a7d947edd4007155b938a3f",
+    "16e0b4d8a92438ce26657dbdd11a86bde4f24e60abdc0aa83721ff9bf6b24132",
+    "e8a463dfadfb5af539d3a6b091bf7d4c53a28d06cd85f30cf156009f397aa37a",
+    "51f42a0f72f96b0edecad60cc3de05fe2d34838ba3934361042d69f8e1d6dc81",
+    "cdd535a5cee42f87cee45a9f4f1b3ef071c13e8a834e9efc028512020c1de50b",
+    "81fe0d3f7eb366b67e375ef49ef95afd843fdf9e2aa1fc3fa273165afcee2cef",
+    "b5303148ac0ce3c9b481602d85e519d75be536672000227ab615101f8533ed86",
+    "84c83a3485f4d704601aed8ecb6b59166322968e5b705e62ea2bf3740715ef79",
+    "24a489f5cca970368ad37c56238cc883bb42e610f34cb4da21ab0af3e92b8138",
+    "a3337ba557b24f4e37b3ac844123d2815491269cfa7bf9b3ffa7e850af0d5b5e",
+    "36b28737c6f7f727b34ec40a9033ef9b710f600c636955c40e2a3f72c705ac0e",
+    "0452220339dfbc1d724210e87d3842bbae0ddd2ff1e6df500bec6c4557c7eaa5",
+    "f784f404808ba30e36c8a43167d031c43efbb6ba141716a665bf440ffa154a28",
+    "3956793c5525d451323437108356878c767b426047f5cabab4adafe8dcc5009f",
+    "9833b7764fac31247062ef00144c0ce302311e51c7069725fe1263fa152de751",
+    "192fa339b8db7a29082415491be713a36127dd8428f7a7db2447580acd5831f5",
+    "e755b6b76876d289933be1ced905757a75c9dac3ba37ec1567027f10015b3114",
+    "0c403ba71581236e01ee8c8efe2c196c16ecc7ea8ce511227e05c49405434e4d",
+    "f1b1bf3165dfee038e53fe1760b57672b9755bf8cf55bef45cc9776772dbffcd",
+    "90299b0277dd6c29e59e3e9cf0705616950fc4a485b66a2e574be854b41f2936",
+    "3fc366948a942e64eab81e7843db3e2ca77276fa54c49b5c39cc5568ba3ce882",
+    "bd3a2112df4860bc25e5106447a00681242b53d5f5455f95c91509a2e8154f7e",
+    "c7a8c628a4033c5bf1373935aa68c5ba4fd3d400b30a72527b33e8f642dfc8de",
+    "f3ff53d0f6b082221138b02948442cf17c61b2f778ca75942e644b0559e36705",
+    "65897ebb7a978d07460dd74a3e559b486a8e32be6824eadb45387398a6e31645",
+    "b2a411702add4d4a697be5806a5ddf02c8d828f494a93ecc6f925c2adf3f9c22",
+    "e960d4603dd0d8d853279f4f4d0843f5bd2969abc47e3013f32401fe742cf9a5",
+    "83b39542cae3643819c2abe12f895e198e734c4d0f905dea1d59d3a8f809cc5e",
+    "f0c4ea007833b5e5cd43f925938f22d5fbd5300ef6e2f8fd1beec1a0dd824563",
+    "51e28be0ff227fec9ed8ee33abf829665207eb5495d55f465b5aaced082e0d15",
+    "7f641eb86eca3e65e6a7f72730e041790661ccd8b744a1fabede6955fc036e86",
+    "0964a596e29c5a91030ac1cc8f4d0c38bebe75c8b49d558a6ee65ef2ba8ebba2",
+    "dbd91524c04c1c4702546af0e03e8cc260b7bfdd17f8afde6296fdc90171474a",
+    "02c5f5de64ad6b9f3721d68c244cbdc9e35c341636e65e383fdc62ca87af5321",
+    "6b67e4c6e9727384e05f21b753482cfc22237b054fba619419db0eb8c7915ad8",
+    "ee4710ca537e769d4a711d868fcf4f4c1830f6748442a6887938eb76e3eeadfb",
+    "9580b4648de0b051edc2d04a4254783fbffd8995277093c1f1a2e39194d9a1af",
+    "5a1bb23d40a9ece21a90fac0bb8d69c3f925209559a08c3b4b323db44f3647b7",
+    "a9ae37eded85be9070a5984e9985d4a4caba8574c6d5e14a17fc2092a9e936be",
+    "7a0afa7281b735b60732103ddbfd6818e2ffff8399b1bcb9ca4d3ba60459bc86",
+    "195a27f3b6eb6546258f5af859542fc6e3c887290f2f56d6d5531f3635e14262",
+    "b3c2a02c0a08b899a639675327c09028ff84e402fdeb4dcb01842360fabf1453",
+    "eecfbd887694ff4d9c6a4bd7053d2065994fbbc16d6be6384acd7c7bea97e8b0",
+    "c10ce0a52b259c6404a357e8a1cb4c5b9f1a76a0ad3608e6e0aa4f8f0f02a769",
+    "b11119304134396a1905fb9a2af814ea3295438c61830c0a7fd752eea042799a",
+    "17636da5289bd66b5ef3fd810b99127eee1d4160871e7a7e56181367a3d0711f",
+    "4beaa588bb33fb557e0fbaecbcef41b2c940f1d438d3e4d416390958942cd0f5",
+    "3e49cac9109d4e8c1d2a0c7f89e0ded1cc4e30bda5186da0328ac9920bb28df1",
+    "2fa7b8d7899694c982fe001ce5bf9dec4c5c9256aa6162da6eb684d448b3f7d7",
+    "15c9edf969351c6730cf1358fc679451cbefae2e05e81a73d63e2e6694b1c867",
+    "450f00386b09feda9d1ee4849d3abd3e1dd8ffbfa5199686a0d687601038b5c0",
+    "8e707ddb31a5d023c0da42466a31c04974246612ee02050a565f8441a44974d3",
+    "c9299e72da9cd7d2ba6d64744d8b9e755570b78dedd096ba9f6027031a3deca7",
+    "e6585dac77c5333c237d93bca90ee8fd214e30ad242803c2861f4cc588fd2338",
+    "0e3c1a3f47230bc4db1dda1576fef71499d3e2330c038ac8f045d69f0d0cfdf6",
+    "e14440888c0e3bbca886c12d227e7104b767557e4ad0bcdcb25faaf406d8a5fe",
+    "18c234247a3b43707c53f398a64d2a8f0fe10ee532bc8dbbb2474e02dd446582",
+    "460870ffa2ba316109a01dc87cb32ed888d97f090d228186beba9502116d6e82",
+    "e09f2a737625390107e6709060aaadad515f8c53a8c3e449a3dfc474ed546a3b",
+    "07d61e65f8bfbac38c7899d2c014f2bb8930747b3998fcebfb2e2f9c6074e04f",
+    "949a457fdb152c110df3ab99f99c09e08a557c19d22b8b34b5ce4fcc9f1cd6d3",
+    "7c2732069daf6b1fb7abd013480274977b3950a62782c45c413694082d64ef21",
+    "c06c3ba3ac9c4a85cc5311649c094a126158301c67afca1800faf749c7233a57",
+    "f3ed700f74607a585a63d43796c1d32f90dce533b1f29f54f96b4fe3ea2cd7a9",
+    "5ffb33c9cde32cb9e3f983ea969e4926cad9b88abfa7758ae83a4dcf7b63467b",
+    "48904081b766912b6f0d8bb56c8f68f101e75cbcc1760a4e710b33f72b7223f4",
+    "fdccd06a69ca78d6d252e1f3fd5f9aa7f91c17590238abbf279ed7da15a599c8",
+    "43ba973254aa21c0fbd8deaedfd16dcac0042f5a2b07800eb932603b5eda80b5",
+    "85740b73fd3ce206fcefdbb08b855ed2d409d49f4b2a26df2f91cab343d21443",
+    "ee8d64bac85f66cf079680bad271f4596a24e5a022ff6c77fed8c0ffda1c0cfd",
+    "0e5e4b4c53c71db426ed1ebbfa82bc54c82aeb6c6f2049d50fb96d6e3bea0c22",
+    "cca51a2111abdc152426b7d722e2c6225044d9af4715e99df1d2ccbfd916f763",
+    "82c7a9c6c5be7c8a404414aae19d1376c33ef2ae9c68819afb422be9f7ac4e6d",
+    "1c1ddd1d3c6e3af9b1215a739147df9b032f7ec01fed9cd04821933cccfe3118",
+    "39c24c3bdf730c86a8a48bb33f975a35d51601ba2442949eccf71e9f5140031a",
+    "968a3936ef23525dfc75c08a91cdd12b758246a7e5b4e2068ac91847ba0d38cb",
+    "527654c3bb138a63ae2b223877b5ad8dc0051b6c3210302eb1782f7949a3fc5a",
+    "242a8a269a5b1345b66b975e4f7f30a4bc0bbb4401e6976c3e8bec92d131203b",
+    "8b0b8c4916f70bf48ebe92784830220a5024aa71484d5d01ce23e1f7047715b9",
+    "466a38dadb128b94d0d0f2fe0749768372da148a636500625b15ad527e5817ac",
+    "3c3be5b750e5f9a0bbab16bc00f067dcf0a9d7006ef711b13ccf34d9ffc4df6a",
+    "c3bb42b4742672b5a24ea03bd13de8043df7a61f4cb37abdc4cfb26ebfc5cc58",
+    "a2e3741a85d50ebc070ed19ffdade6a26899bc8710ea17e7dba02e402ee9a5cb",
+    "1f0a9a5080f02544a5e6aac0007f373d7ac28d1066be1db350c7e735683ab468",
+    "14635ac45d4e7a84f9b91a4e3cb32f0fdf700a7c3dd8b833c45f1b250f91b7d3",
+    "d0d2b7b91088f3a9bc04ea593a9b93de689375427bfa20852fab426f97f8d2fb",
+    "3cffc3e473b31ef9eb7821ae893489860baebc3ec8af58be1ac25ecc6c456121",
+    "aaba18bd63479f33c82cbbfbd6cd985ec1a62a13d9fe4520c7955b8d0ec22365",
+    "d42313e739b3d479f81c871fd5b01f1f1bcd654743aecdf6bdfc4a750ea4f4a5",
+    "1af8454c86e8d67e1f7da651c639c289a14c913b4d8291d1fdcfb70dce417834",
+    "0dba95ad1a4367917452681009ee3e06fee9308fd01bdad7f6b371e565344b7a",
+    "d892fdb38fb69c1ff92ba9828a02b5aed593015ebeaf027f7583a79cc408f018",
+    "4e3eb27a123197df05ad200ae04f16ac02a7085edc9ff6be1cc64854d20666fb",
+    "04e6db8444ae710d32907edbf9d3fe0a4a94848bb88bdab5d43aa0917b07a325",
+    "6b77b98bbf941ff53b28341d4498de1821257cc07286aaf6d868917e6ef672a0",
+    "45b1452476ac37177616519bc3df48d554d7a09ab225febec5436bb612198c66",
+    "d5f7c5cf9d41cbb2e281a48493f491cdbe5cc78c8d95b1507101c8c01fc40949",
+    "71f590774f510033fff1e0df5d503a40ecfb3a4169538bce7a69c9bf07c2731a",
+    "3ffee9f823ccef59d875ece3e1f97183b0222d02723089aa5e08726a112c5786",
+    "a0f19b62aeb2a8b10725f947e1ce12ffdace6462b0471b102da80884ffa24921",
+    "7b765c609b4596c4a609be6e833ce46506d5419dc8242d2a8bdd1bf68f51fc61",
+    "af2acd9933eb00ede16a799439eb4f512ec78dacf756f5174deb3cbd17ee4084",
+    "e88797836a086677448ffd78fed18cf1c7670faab63df43a63f22bb5f8f97796",
+    "38570856d781dde14ea1f3cf24a437a4cf9695c83401cc410ba6a2386d01dd98",
+    "4ae8cba04a8435ef8c3fc56b8f3d5b77408740ed4541e283af4f6066a833e832",
+    "0a7c6056469eed45063737f482ac0a4fdeda8dec8608982c735282c87fd9a8f6",
+    "094fdb3424c36dedcb9e32a4c6950f0e2c6db35aebdaf7678034eacad2a69288",
+    "b0085c4d8c1ef6d978b45e764f08660f83e58137f3eb84b5ffe65b41e06bb26a",
+    "12a94d890ba82a4efd0d9b847e8dfab2befdbeaebbcd41f77ef5fad5868619a6",
+    "32e00208ff691b8726627f102aeef3962515dc7cb9a2b1e0686422ba4fc951da",
+    "b87e810a015e3dcafdc8346d65c8e3fa32cbd1f741641aa375b5854b752c51e5",
+    "23afacc041496b02fae01ddf851f32d5680a450fc18eeb5fe36df758eeafcc17",
+    "d844abcf68074ba3d0fe4a85fff5cff583e4cb59fe193cfc1c64e67c2b82f13b",
+    "65b359ed43c9f43e9a1c10d8b6a7bc4c89435656e41ce1f91f033934162f5978",
+    "7c1b78f953eb3758a33f5518ddb820b255f7b52a34c9e5196d091bad8e1f27b7",
+    "266b8f319c428e8c6b08d7cfffc9225fedc9d639363e4a662828748faf9958b2",
+    "c320f448ace552a61198578514dd3136c62eb24cd7fbe49c75259e7040633342",
+    "4ad1cdb63e299d9ad0b96a255393e12bd8a031c4af15012c0a35f9b41162cfe6",
+    "5021e8b7259ebeaa4355216467ace37b8c49a0e25005dc51da978a9f05e05cc3",
+    "bf7b0bc652e86120fd3c054581f8b687e36f72eafddf7d105b86028f7f4c6bc1",
+    "6358de559cfe9f3ae7a10f67686904c8cda8df0b4f418c2e3c5925e89ca80dd4",
+    "cb15b4b63703cf75504698bf8e256c88e6ef2571af9a9a0906e2431b24e3163c",
+    "336d6aa50d747e1ddc547faac9e288afa62c7f3897c2371b458697299da79087",
+    "5205806d59331920e58b4cb87a2472fa0f44755458f7b473c7dc56612b6d07ca",
+    "e09aaafd44367e85523f590b8c7bcbf2a7cb28b1cb2dab9cbdd842237a9a6acb",
+    "1457d144e0b14ca35f717f434c7d4c22bbc73142fef9c9625c8d9fdf8e897f92",
+    "8d443d516fee61a84ab72d0ca06680e034114ecd18715148c484e194666bb947",
+    "6a982d963df881790e6eeab842a326b2bd6dee3e4b014badc51c87026be671b6",
+    "d177c63608303b4ab72366641a1606817d017f20c4b4e17dd6fa690b3b49a65d",
+    "d1f138614beaa8fa535c8f4e68fabfe08111ed26765e1773e0fbef9ee406625e",
+    "b08be2b93635aa77c98b2bf37c6e872de68cc877c58adeddfc280e520a8ebb70",
+    "c9ad473839203c290db224d5b729bce5132362909af476b2e1681c855d047f19",
+    "03f7c39be1da61367cc249f84a3143cd2e771561f5f9e4be55f740bd8a7f37d4",
+    "62fa15581db12fba63a8e56da4ec1a7e1223d07caacbc48ba264d09b23d36f5a",
+    "6c6a44f30a8bd886183b852bc2d1ce3aac475ab7e8b9f1004a82ffec06166afd",
+    "56f1b58f8ab7960b9926c163639d0840aaed8a505fafa62faa0b475e01ee2bb0",
+    "c99dd45cafdb4e8f6653578916c989bcb6f9f17345f8cf202170363af9c228d4",
+    "ff3e27d4d34781267fe81a4cca5c4726575c0d87f12b4eb55c220d59f2a90c9c",
+    "50d6ae9adad65f1b0742d6d5770beff0ba12f5ebb284340c115860269c72a179",
+    "d834c4682f6d424d9294201a7ade6d4a5bc4d344f1e5368529587f29b7cd71e8",
+    "bb4cf648f2adb5f492a70a352d97304123f1ef14b8e3fab0197a37afd617770c",
+    "46f2cdfa9f0d4f5049dab61a4f981dd2341997ec9051ea0309ef37a2ab043d08",
+    "3cd6da30a961de626b46301719a85fa398d99cce4c31bd1cf1509e4f809d1326",
+    "1ff7019a82d6d0139a20b83aafe5362016d2586a7292c2aebb860b7957504ad7",
+    "1545c940a4661be967a851ff8bbf779aa9e309f229eee8d9727b77079dd13bd5",
+    "3d3979db4d30eb1fda839c5dc8028ed3157857ee48059d0aeb72eba080722a17",
+    "2fc97abb5a3237386d31ddbe51b34e7eea9ec8b8ef3453894ae8c66923b4d7c5",
+    "5bbb2459a2d73437afafa71ccf729b6ced5de87a26203f51f73e7fc3b74860fa",
+    "fbed463327dd6c7c1e87d4e72954f4d1e010a201ee9b45d414b26942eb5eac47",
+    "dc9d8f83eb2025a83ee61cc2ed8d9c422d1aa631bdc0478ba0a7f5e441afd204",
+    "a7e46755ab833078c8eaf54b7a2fa886607b282155cb4b3c5bef96f1daa4824a",
+    "4d6af92950a9dd514e11e59e61b4952ec8a4a246385bc4b3ce7f65d3fa5f8d6d",
+)
+STATE_FORM_PIN_GROUP_REF = (
+    "new-book-plans/state-form.pins.nibli::"
+    "# State-form and political-membership family - executable coverage pins"
+)
+STATE_FORM_COUNTERFACTUAL_REF = (
+    "new-book-plans/counterfactual/"
+    "no-state-form-independent-current-review.pins.nibli::"
+    "# Counterfactual: state-form source writer serves as temporal reviewer"
+)
+STATE_FORM_PROSE_REFS = (
+    "book-1/00-opening-note.md::separates permanent public answerability from current office and current",
+    "book-1/00-opening-note.md::shows why conviction and custody remove neither franchise nor candidacy,",
+    "book-1/00-opening-note.md::**Current lawful authority:** a source-bound conclusion",
+    "book-1/00-opening-note.md::**The federal constitutional bodies:** the People's Assembly, Regions",
+    "book-1/00-opening-note.md::**The older assembly and approving-public entries:** produce a proposal and",
+    "book-1/00-opening-note.md::**The State and the constitutional bodies:** the older `State` entry owes the",
+    "book-1/00-opening-note.md::**Democracy, government, and administration:** Chapters",
+    "book-1/00-opening-note.md::**Locality, membership, mobility, migration, and external relations:**",
+    "book-1/01-what-counts-as-evidence.md::This is a real gap and it is stated here rather than buried, because it is",
+    "book-1/02-public-answerability.md::Do not read those older routes as the map of the federal government added later.",
+    "book-1/03-who-holds-the-pen.md::The later state-form rules close a different boundary without turning it into",
+    "book-1/09-the-vote-conviction-does-not-take.md::Here, conviction and custody take neither franchise nor candidacy.",
+    "book-1/09-the-vote-conviction-does-not-take.md::## The home custody does not move",
+    "book-1/09-the-vote-conviction-does-not-take.md::Esa can challenge the missing or disputed age evidence.",
+    "book-1/09-the-vote-conviction-does-not-take.md::## And the same silence as before",
+    "book-1/12-changing-the-rules.md::A society that cannot change its rules is not stable, it is brittle. This record",
+    "book-1/12-changing-the-rules.md::What the older route proposes is a trade.",
+    "book-1/12-changing-the-rules.md::## Why this is thinner than it looks",
+    "book-1/12-changing-the-rules.md::**Nothing happens when something receives the older law label.**",
+    "book-1/method.md::The state-form and political-membership family completes the existing",
+)
+STATE_FORM_PART_V_REFS = (
+    "book-1/15-the-five-joints.md::What does this design do about rotation? It now has a constitutional answer for",
+    "book-1/15-the-five-joints.md::does not evade the state, it *specifies* one. It now specifies more than a",
+    "book-1/15-the-five-joints.md::The binding layer is now wider than one debtor and one refusal.",
+    "book-1/15-the-five-joints.md::**Survives, narrowed.** Two claims survive.",
+)
+STATE_FORM_PROSE_DISPOSITION = (
+    "Coverage, formal rules, executable tests, counterfactuals, and approved "
+    "SF-B1-v1 prose are complete; these remain supplied-record constitutional "
+    "declarations and authority only, and establish no authentication, operation, "
+    "staffing, election, delivery, feasibility, liveness, calibration, outside "
+    "time, or institutional action."
+)
 FLOOR_ENTITLEMENT_LINES=(
  "entitled(every person, event { secure() }).","entitled(every person, event { eats() }).",
  "entitled(every person, event { dwell() }).","entitled(every person, event { healthy() }).",
@@ -1029,6 +1349,213 @@ POWER_FUNCTIONS = [
     "decisive-fact-writer", "decider", "executor", "auditor",
     "final-remedy",
 ]
+STATE_FORM_SEMANTIC_MAPPINGS = {
+    "FS-POW-004": (
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-02", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-02", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-011": (
+        (("FS-BOD-21",), ("FS-ROL-26",)),
+        (("FS-BOD-21",), ("FS-ROL-26",)),
+        (("FS-BOD-21",), ("FS-ROL-26",)),
+        (("FS-BOD-03",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-015": (
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-016": (
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-017": (
+        (("FS-BOD-02", "FS-BOD-03"), ("FS-ROL-26",)),
+        (("FS-BOD-02", "FS-BOD-03"), ("FS-ROL-26",)),
+        (("FS-BOD-02", "FS-BOD-03"), ("FS-ROL-26",)),
+        (("FS-BOD-02", "FS-BOD-03"), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-018": (
+        (("FS-BOD-05",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-05",), ("FS-ROL-26",)),
+        (("FS-BOD-05",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-022": (
+        (("FS-BOD-17",), ("FS-ROL-27",)),
+        (("FS-BOD-17",), ("FS-ROL-27",)),
+        (("FS-BOD-17",), ("FS-ROL-27",)),
+        (("FS-BOD-17",), ("FS-ROL-27",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-17",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-023": (
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-25",), ("FS-ROL-46",)),
+    ),
+    "FS-POW-024": (
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-025": (
+        (("FS-BOD-25",), ("FS-ROL-46",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+        (("FS-BOD-25",), ("FS-ROL-46",)),
+        (("FS-BOD-25",), ("FS-ROL-46",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-25",), ("FS-ROL-46",)),
+    ),
+    "FS-POW-028": (
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-44",)),
+        (("FS-BOD-24",), ("FS-ROL-45",)),
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-44",)),
+        (("FS-BOD-05", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-029": (
+        (("FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-26",)),
+        (("FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-26",)),
+        (("FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-26",)),
+        (("FS-BOD-05", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-030": (
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-44",)),
+        (("FS-BOD-24",), ("FS-ROL-45",)),
+        (("FS-BOD-17",), ("FS-ROL-27",)),
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-44",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-031": (
+        (("FS-BOD-02", "FS-BOD-06"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-06",), ("FS-ROL-27",)),
+        (("FS-BOD-06",), ("FS-ROL-27",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-032": (
+        (("FS-BOD-03", "FS-BOD-21"), ("FS-ROL-26",)),
+        (("FS-BOD-21",), ("FS-ROL-26",)),
+        (("FS-BOD-21",), ("FS-ROL-26",)),
+        (("FS-BOD-03",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-033": (
+        (("FS-BOD-02", "FS-BOD-04"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-04",), ("FS-ROL-27",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-034": (
+        (("FS-BOD-02", "FS-BOD-03", "FS-BOD-26"), ("FS-ROL-26", "FS-ROL-47")),
+        (("FS-BOD-02", "FS-BOD-03"), ("FS-ROL-26",)),
+        (("FS-BOD-02", "FS-BOD-03"), ("FS-ROL-26",)),
+        (("FS-BOD-26",), ("FS-ROL-47",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-035": (
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-44",)),
+        (("FS-BOD-24",), ("FS-ROL-45",)),
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-44",)),
+        (("FS-BOD-24",), ("FS-ROL-45",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-037": (
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-25", "FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-02", "FS-BOD-03", "FS-BOD-06", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-25", "FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-038": (
+        (("FS-BOD-01",), ("FS-ROL-25",)),
+        (("FS-BOD-06",), ("FS-ROL-27",)),
+        (("FS-BOD-01",), ("FS-ROL-25",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-039": (
+        (("FS-BOD-01",), ("FS-ROL-25",)),
+        (("FS-BOD-06",), ("FS-ROL-27",)),
+        (("FS-BOD-18", "FS-BOD-01"), ("FS-ROL-27", "FS-ROL-25")),
+        (("FS-BOD-05",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-040": (
+        (("FS-BOD-01",), ("FS-ROL-25",)),
+        (("FS-BOD-06",), ("FS-ROL-27",)),
+        (("FS-BOD-01",), ("FS-ROL-25",)),
+        (("FS-BOD-21",), ("FS-ROL-26",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-043": (
+        (("FS-BOD-07",), ("FS-ROL-27",)),
+        (("FS-BOD-02",), ("FS-ROL-26",)),
+        (("FS-BOD-07",), ("FS-ROL-27",)),
+        (("FS-BOD-07",), ("FS-ROL-27",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-044": (
+        (("FS-BOD-05", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-02", "FS-BOD-03", "FS-BOD-06", "FS-BOD-21", "FS-BOD-24"), ("FS-ROL-26", "FS-ROL-27", "FS-ROL-45")),
+        (("FS-BOD-05", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-05", "FS-BOD-21"), ("FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+    "FS-POW-045": (
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-25", "FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-04", "FS-BOD-06"), ("FS-ROL-27",)),
+        (("FS-BOD-01", "FS-BOD-02", "FS-BOD-03", "FS-BOD-21"), ("FS-ROL-25", "FS-ROL-26", "FS-ROL-27")),
+        (("FS-BOD-04",), ("FS-ROL-27",)),
+        (("FS-BOD-19",), ("FS-ROL-27",)),
+        (("FS-BOD-18",), ("FS-ROL-27",)),
+    ),
+}
+STATE_FORM_DELEGATED_CONFIG_POWER_IDS = (
+    "FS-POW-028", "FS-POW-029", "FS-POW-030", "FS-POW-031",
+    "FS-POW-032", "FS-POW-033", "FS-POW-034", "FS-POW-035",
+    "FS-POW-044",
+)
 UNIVERSAL_SEPARATION_PAIRS = [
     ["decisive-fact-writer", "auditor"],
     ["executor", "auditor"],
@@ -1054,7 +1581,7 @@ POWER_BOOK2_OWNER = (
 POWER_SOURCE_BINDING = {
     "artifact_ref": str(POWER_SOURCE_MANIFEST),
     "artifact_sha256": (
-        "7c7ebe7ae9c90c5e3b9958be46ab2a4cc1008dbaf5c5c5992c4c64d0fcdf36c1"
+        "1a34edee3bb85927a0dde46686e82db2de340d5e514181f32b20584ad53acfba"
     ),
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": (
@@ -2145,7 +2672,19 @@ def _manifest_expectations(completed):
 
 
 
+_ASSERTION_STATEMENT_FINGERPRINT_FIELDS = (
+    "id", "statement_sha256", "occurrence", "kind", "statement",
+)
+_ASSERTION_STATEMENT_FINGERPRINT_CACHE = None
+
+
 def _assertion_statement_fingerprints():
+    global _ASSERTION_STATEMENT_FINGERPRINT_CACHE
+    if _ASSERTION_STATEMENT_FINGERPRINT_CACHE is not None:
+        return [
+            dict(zip(_ASSERTION_STATEMENT_FINGERPRINT_FIELDS, values))
+            for values in _ASSERTION_STATEMENT_FINGERPRINT_CACHE
+        ]
     proc = subprocess.run(
         [sys.executable, str(ROOT / "new-book-plans/7-assertion-surface.py"),
          "--fingerprints"],
@@ -2159,10 +2698,17 @@ def _assertion_statement_fingerprints():
         rows = payload["statement_fingerprints"]
     except (json.JSONDecodeError, KeyError, TypeError) as exc:
         raise LedgerError("assertion statement fingerprints are malformed") from exc
-    required = {"id", "statement_sha256", "occurrence", "kind", "statement"}
+    required = set(_ASSERTION_STATEMENT_FINGERPRINT_FIELDS)
     if any(set(row) != required for row in rows):
         raise LedgerError("assertion statement fingerprint schema drifted")
-    return rows
+    _ASSERTION_STATEMENT_FINGERPRINT_CACHE = tuple(
+        tuple(row[field] for field in _ASSERTION_STATEMENT_FINGERPRINT_FIELDS)
+        for row in rows
+    )
+    return [
+        dict(zip(_ASSERTION_STATEMENT_FINGERPRINT_FIELDS, values))
+        for values in _ASSERTION_STATEMENT_FINGERPRINT_CACHE
+    ]
 
 
 def validate_coverage_population(src: dict):
@@ -2326,7 +2872,14 @@ def validate_coverage_families(src: dict, ids: dict):
         assigned_refusals.extend(rec["refusal_refs"])
         assigned_crosswalks.extend(rec["crosswalk_refs"])
         assigned_effects.extend(rec["effect_refs"])
-        statement_policy={"FS-CVF-011":(UNIVERSAL_STANDING_STATEMENT_IDS,"universal-standing"),"FS-CVF-012":(LIBERTY_ECOLOGY_STATEMENT_IDS,"liberty-and-ecology"),"FS-CVF-013":(EQUALITY_STATEMENT_IDS,"substantive-equality"),"FS-CVF-014":(FAMILY_LIFE_STATEMENT_IDS,"family-and-life-course"),"FS-CVF-015":(DELIVERY_STATEMENT_IDS,"delivery-and-receipt")}
+        statement_policy = {
+            "FS-CVF-003": (STATE_FORM_STATEMENT_IDS, "state-form"),
+            "FS-CVF-011": (UNIVERSAL_STANDING_STATEMENT_IDS, "universal-standing"),
+            "FS-CVF-012": (LIBERTY_ECOLOGY_STATEMENT_IDS, "liberty-and-ecology"),
+            "FS-CVF-013": (EQUALITY_STATEMENT_IDS, "substantive-equality"),
+            "FS-CVF-014": (FAMILY_LIFE_STATEMENT_IDS, "family-and-life-course"),
+            "FS-CVF-015": (DELIVERY_STATEMENT_IDS, "delivery-and-receipt"),
+        }
         if rec["id"] in statement_policy:
             owned_ids,label=statement_policy[rec["id"]]
             expected=list(owned_ids) if rec["state"] in {"formalized","prose-landed"} else []
@@ -2364,6 +2917,103 @@ def validate_coverage_families(src: dict, ids: dict):
         if sorted(values) != sorted(expected) or len(values) != len(set(values)):
             raise LedgerError(
                 f"coverage families must partition current {name} exactly once")
+
+
+def validate_state_form_coverage_coupling(src: dict):
+    family = next(
+        (row for row in src["coverage_families"]
+         if row["id"] == "FS-CVF-003"),
+        None,
+    )
+    if family is None:
+        raise LedgerError("FS-CVF-003 state-form coverage family is missing")
+    expected_card_refs = [f"FS-POW-{number:03d}" for number in range(1, 52)]
+    if family["card_refs"] != expected_card_refs:
+        raise LedgerError(
+            "FS-CVF-003 must own FS-POW-001..051 in exact order")
+    powers_by_id = {row["id"]: row for row in src["powers"]}
+    formalized = family["state"] in {"formalized", "prose-landed"}
+    prose_landed = family["state"] == "prose-landed"
+    expected_pin_refs = [STATE_FORM_PIN_GROUP_REF] if formalized else []
+    expected_counterfactual_refs = (
+        [STATE_FORM_COUNTERFACTUAL_REF] if formalized else [])
+    expected_prose_refs = list(STATE_FORM_PROSE_REFS) if prose_landed else []
+    expected_part_v_refs = list(STATE_FORM_PART_V_REFS) if prose_landed else []
+    for field, expected in (
+            ("pin_group_refs", expected_pin_refs),
+            ("counterfactual_refs", expected_counterfactual_refs),
+            ("prose_refs", expected_prose_refs),
+            ("part_v_refs", expected_part_v_refs)):
+        if family[field] != expected:
+            raise LedgerError(
+                f"FS-CVF-003 {field} must match the checker-owned references")
+    if prose_landed and (
+            family["blocked_before_drafting"]
+            != STATE_FORM_PROSE_DISPOSITION):
+        raise LedgerError(
+            "FS-CVF-003 prose disposition must preserve the evidence ceiling")
+    expected_test_status = "executable" if formalized else "planned"
+    expected_part_v_status = (
+        "prose-landed"
+        if prose_landed
+        else (
+            "formalized-not-prose-landed"
+            if formalized
+            else "coverage-only-not-formalized"
+        )
+    )
+    for power_ref in family["card_refs"]:
+        power = powers_by_id[power_ref]
+        if (
+                power["status"] != "ratified-unimplemented"
+                or power["posture"] != "Specified"):
+            raise LedgerError(
+                f"{power_ref}: formal coverage cannot claim operation")
+        number = int(power_ref.rsplit("-", 1)[1])
+        expected_tests = {
+            "negative_test": {
+                "assertion": (
+                    "Fuse the state-form source writer with the temporal "
+                    f"reviewer for {power['title']}; the current record and "
+                    "its direct effect must remain unavailable."
+                ),
+                "executable_ref": (
+                    "new-book-plans/state-form.pins.nibli::"
+                    f"# FS-POW-{number:03d} negative: fused source/current "
+                    "reviewer cannot derive authority."
+                ) if formalized else None,
+            },
+            "counterfactual": {
+                "assertion": (
+                    "Remove the source-writer/temporal-reviewer disequality "
+                    f"for {power['title']}; the fused-role record derives the "
+                    "bounded authority that the current constitution "
+                    "withholds."
+                ),
+                "executable_ref": (
+                    "new-book-plans/counterfactual/"
+                    "no-state-form-independent-current-review.pins.nibli::"
+                    f"# FS-POW-{number:03d} counterfactual: removing the "
+                    "independent-current-review guard derives authority."
+                ) if formalized else None,
+            },
+        }
+        for field, expected in expected_tests.items():
+            if power[field]["status"] != expected_test_status:
+                raise LedgerError(
+                    f"{power_ref}: {field} status must follow FS-CVF-003 state")
+            if formalized:
+                for key in ("assertion", "executable_ref"):
+                    if power[field][key] != expected[key]:
+                        raise LedgerError(
+                            f"{power_ref}: {field}.{key} must match the "
+                            "checker-owned state-form anchor")
+            elif power[field]["executable_ref"] is not None:
+                raise LedgerError(
+                    f"{power_ref}: planned {field} cannot cite an executable")
+        if power["part_v_status"] != expected_part_v_status:
+            raise LedgerError(
+                f"{power_ref}: Part V status must follow FS-CVF-003 state")
 
 
 def _power_claim_refs(row: dict):
@@ -2756,10 +3406,22 @@ def validate_power_population(src: dict, ids: dict):
             _validate_card_test(
                 rec["counterfactual"], "counterfactual", rec,
                 f"{ctx}.counterfactual")
-            expected_part_v = (
-                "implemented-current-formal" if retained
-                else "coverage-only-not-formalized"
-            )
+            if retained:
+                expected_part_v = "implemented-current-formal"
+            elif (
+                    rec["source_family"]
+                    == "state-form-and-political-membership"):
+                state_form_family = next(
+                    row for row in src["coverage_families"]
+                    if row["id"] == "FS-CVF-003")
+                expected_part_v = {
+                    "planned": "coverage-only-not-formalized",
+                    "coverage-ready": "coverage-only-not-formalized",
+                    "formalized": "formalized-not-prose-landed",
+                    "prose-landed": "prose-landed",
+                }[state_form_family["state"]]
+            else:
+                expected_part_v = "coverage-only-not-formalized"
             if rec["part_v_status"] != expected_part_v:
                 raise LedgerError(f"{ctx}: Part V status overclaims formalization")
             handoff = require_str(rec, "book2_handoff", ctx)
@@ -2996,6 +3658,39 @@ def validate_power_population(src: dict, ids: dict):
             raise LedgerError("retained T3 authority is held only by the Court")
         if custody["holder_body_refs"] != ["FS-BOD-35"]:
             raise LedgerError("custodial execution is held only by the distinct executor")
+
+
+def validate_state_form_semantic_mappings(src: dict):
+    powers = {row["id"]: row for row in src["powers"]}
+    allocations = {
+        row["power_ref"]: row for row in src["function_allocations"]
+    }
+    fields = ("holder", *POWER_FUNCTIONS)
+    for power_ref, expected_rows in STATE_FORM_SEMANTIC_MAPPINGS.items():
+        power = powers[power_ref]
+        allocation = allocations[power_ref]
+        for field, (expected_bodies, expected_roles) in zip(
+                fields, expected_rows):
+            if field == "holder":
+                body_refs = power["holder_body_refs"]
+                role_refs = power["holder_role_refs"]
+            else:
+                stem = field.replace("-", "_")
+                body_refs = allocation[f"{stem}_body_refs"]
+                role_refs = allocation[f"{stem}_role_refs"]
+            if (body_refs != list(expected_bodies)
+                    or role_refs != list(expected_roles)):
+                raise LedgerError(
+                    f"{power_ref}: checker-owned {field} mapping drifted")
+    for power_ref in STATE_FORM_DELEGATED_CONFIG_POWER_IDS:
+        text = powers[power_ref]["contract_terms"]["lawful_source"]["text"]
+        for needle in (
+                "holder body and role arrays name only eligible constitutional "
+                "participants or subjects",
+                "exact current source-supplied"):
+            if needle not in text:
+                raise LedgerError(
+                    f"{power_ref}: supplied-configuration boundary drifted")
 
 
 def validate_meanings(src: dict):
@@ -6492,8 +7187,10 @@ def validate(src: dict):
     validate_bodies(src, ids)
     validate_body_map_cells(src)
     validate_power_population(src, ids)
+    validate_state_form_semantic_mappings(src)
     validate_constitutional_effects(src, ids)
     validate_coverage_families(src, ids)
+    validate_state_form_coverage_coupling(src)
     validate_dependencies(src, ids)
     validate_scenarios(src, ids)
     validate_external_assumptions(src)
@@ -6659,6 +7356,20 @@ def negative_controls(src: dict) -> int:
                     _premature_formalization)
             control("prose cannot precede formalization",
                     _premature_prose)
+            control("state-form test status follows coverage-family state",
+                    _break_state_form_test_status_coupling)
+            control("state-form Part V status follows coverage-family state",
+                    _break_state_form_part_v_coupling)
+            control("state-form formal statement order is checker-owned",
+                    _break_state_form_statement_ref)
+            control("state-form pin group reference is checker-owned",
+                    _break_state_form_pin_group_ref)
+            control("state-form counterfactual reference is checker-owned",
+                    _break_state_form_counterfactual_ref)
+            control("state-form per-card negative anchor is checker-owned",
+                    _break_state_form_power_negative_ref)
+            control("state-form per-card counterfactual anchor is checker-owned",
+                    _break_state_form_power_counterfactual_ref)
             control("formal statements are assigned exactly once",
                     lambda s: s["coverage_families"][0][
                         "formal_statement_refs"].pop())
@@ -6670,6 +7381,21 @@ def negative_controls(src: dict) -> int:
         control("unknown power holder body is refused",
                 lambda s: s["powers"][0]["holder_body_refs"].__setitem__(
                     0, "FS-BOD-999"))
+        control("state-form power holder semantics are checker-owned",
+                lambda s: next(
+                    row for row in s["powers"]
+                    if row["id"] == "FS-POW-023"
+                ).update({
+                    "holder_body_refs": ["FS-BOD-02"],
+                    "holder_role_refs": ["FS-ROL-26"],
+                }))
+        control("delegated state-form holders cannot choose mechanics",
+                lambda s: next(
+                    row for row in s["powers"]
+                    if row["id"] == "FS-POW-028"
+                )["contract_terms"]["lawful_source"].update({
+                    "text": "The holder arrays choose the appointment."
+                }))
         control("a power allocation cannot disappear",
                 lambda s: s["function_allocations"].pop())
         control("one allocation cannot serve two powers",
@@ -6680,6 +7406,14 @@ def negative_controls(src: dict) -> int:
                     "auditor_body_refs"].__setitem__(
                         0, s["function_allocations"][0][
                             "decisive_fact_writer_body_refs"][0]))
+        control("state-form function allocation semantics are checker-owned",
+                lambda s: next(
+                    row for row in s["function_allocations"]
+                    if row["power_ref"] == "FS-POW-023"
+                ).update({
+                    "decider_body_refs": ["FS-BOD-02"],
+                    "decider_role_refs": ["FS-ROL-26"],
+                }))
     if src["power_refusals"]:
         control("a refusal cannot be promoted into a power",
                 lambda s: s["powers"].append(copy.deepcopy(s["powers"][0])))
@@ -7361,6 +8095,78 @@ def _premature_prose(s):
         row for row in s["coverage_families"]
         if row["state"] == "coverage-ready")
     family["prose_refs"] = ["book-1/01-what-counts-as-evidence.md"]
+
+
+def _break_state_form_test_status_coupling(s):
+    family = next(
+        row for row in s["coverage_families"]
+        if row["id"] == "FS-CVF-003")
+    power = next(
+        row for row in s["powers"]
+        if row["id"] == family["card_refs"][0])
+    power["negative_test"]["status"] = (
+        "planned"
+        if power["negative_test"]["status"] == "executable"
+        else "executable"
+    )
+
+
+def _break_state_form_part_v_coupling(s):
+    family = next(
+        row for row in s["coverage_families"]
+        if row["id"] == "FS-CVF-003")
+    power = next(
+        row for row in s["powers"]
+        if row["id"] == family["card_refs"][0])
+    power["part_v_status"] = (
+        "coverage-only-not-formalized"
+        if power["part_v_status"] != "coverage-only-not-formalized"
+        else "formalized-not-prose-landed"
+    )
+
+
+def _state_form_family(s):
+    return next(
+        row for row in s["coverage_families"]
+        if row["id"] == "FS-CVF-003")
+
+
+def _break_state_form_statement_ref(s):
+    _state_form_family(s)["formal_statement_refs"].reverse()
+
+
+def _break_state_form_pin_group_ref(s):
+    replacement = next(
+        row for row in s["coverage_families"]
+        if row["id"] == "FS-CVF-011")["pin_group_refs"][0]
+    _state_form_family(s)["pin_group_refs"][0] = replacement
+
+
+def _break_state_form_counterfactual_ref(s):
+    replacement = next(
+        row for row in s["coverage_families"]
+        if row["id"] == "FS-CVF-011")["counterfactual_refs"][0]
+    _state_form_family(s)["counterfactual_refs"][0] = replacement
+
+
+def _break_state_form_power_negative_ref(s):
+    family = _state_form_family(s)
+    first, second = (
+        next(row for row in s["powers"] if row["id"] == power_ref)
+        for power_ref in family["card_refs"][:2]
+    )
+    first["negative_test"]["executable_ref"] = (
+        second["negative_test"]["executable_ref"])
+
+
+def _break_state_form_power_counterfactual_ref(s):
+    family = _state_form_family(s)
+    first, second = (
+        next(row for row in s["powers"] if row["id"] == power_ref)
+        for power_ref in family["card_refs"][:2]
+    )
+    first["counterfactual"]["executable_ref"] = (
+        second["counterfactual"]["executable_ref"])
 
 
 def _remove_t3_borrowing_wall(s):

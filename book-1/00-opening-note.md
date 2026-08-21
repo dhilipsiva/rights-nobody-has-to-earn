@@ -186,14 +186,16 @@ below.
   handle into civil identity.
 
 - [Chapter 2: Public Answerability, and Why It Is Never Revoked](02-public-answerability.md) —
-  separates permanent answerability from temporary power and explains why removing an
-  official must not erase protection for the person who exposed them.
+  separates permanent public answerability from current office and current
+  lawful power, keeps the older public-body and seating routes visible, and
+  explains why removing an official must not erase protection for the person
+  who exposed them.
 
 ### Part II — Accountability
 
 - [Chapter 3: Who Holds the Pen](03-who-holds-the-pen.md) — asks whose findings
-  count, how two differently seated credentials are produced, and where forged
-  or stale authority can enter.
+  count, how two older credentials are produced, how those pens differ from
+  source-bound public authority, and where forged or stale authority can enter.
 
 - [Chapter 4: The Shield](04-the-shield.md) — tests protection for exposing
   authority against false, premature, and repeated claims.
@@ -216,10 +218,10 @@ below.
   then keeps entitlement, delivery, and knowledge of delivery apart.
 
 - [Chapter 9: The Vote Conviction Does Not Take](09-the-vote-conviction-does-not-take.md)
-  - shows why conviction and voiding do not remove the franchise, separates
-  automatic legal adulthood from its typed evidence, and exposes the remaining
-  supplied-record ballot dependency without treating a registry entry as the
-  source of adult status.
+  — shows why conviction and custody remove neither franchise nor candidacy,
+  separates automatic legal adulthood from its evidence, adds residence-first
+  political home and atomic transfer, and keeps the supplied-record result
+  distinct from a delivered ballot or operated election.
 
 - [Chapter 10: Contribution](10-contribution.md) — recognises teaching, work,
   and honest examination without turning recognition into a number, price, or
@@ -229,8 +231,10 @@ below.
   placement from recorded facts, repairs a misplacement alarm, and finds a
   housing failure inside what first looked like a placement gap.
 
-- [Chapter 12: Changing the Rules](12-changing-the-rules.md) — distinguishes a
-  recorded law label from a change that is authenticated, applied, and effective.
+- [Chapter 12: Changing the Rules](12-changing-the-rules.md) — keeps the older
+  declared-target law label separate from a source-bound constitutional result,
+  then separates both from exact source identity, publication, deployment, and
+  an actual transition from one constitutional version to another.
 
 ### Part IV — The top of the graph
 
@@ -283,6 +287,15 @@ below.
   held by public bodies and by whoever has been seated. It is not a licence to
   act on another person.
 
+- **Current lawful authority:** a source-bound conclusion that a named
+  constitutional holder may exercise one exact power in one jurisdiction and
+  scope under the supplied current record. It is not permanent answerability,
+  and it does not prove that the holder exists or acts.
+
+- **Political home:** the one chosen local connection from which a resident's
+  regional and common democratic home follows. Registration is evidence of it,
+  not its source, and custody or another compelled placement cannot move it.
+
 - **Pen or credential:** the temporary authority that makes an examiner's
   finding count in the voiding machinery.
 
@@ -334,6 +347,15 @@ below.
   [2](02-public-answerability.md), [3](03-who-holds-the-pen.md),
   [5](05-voiding.md), and [12](12-changing-the-rules.md).
 
+- **The federal constitutional bodies:** the People's Assembly, Regions
+  Council, Executive Council, Civic President, ordinary courts,
+  Constitutional Court, alternate panels, and the electoral, audit,
+  qualification, rights, provision, treasury, regional, and local bodies hold
+  separated constitutional functions. Their current lawful authority is
+  established one power at a time from a positive, current, source-bound
+  record. That does not prove that any body is staffed, independent in fact,
+  funded, available, or acting.
+
 - **An examiner or auditor:** records findings, may earn recognition for honest
   examination, and may lose credibility for deceit or prohibited closeness. See
   Chapters [3](03-who-holds-the-pen.md), [5](05-voiding.md), and
@@ -350,9 +372,11 @@ below.
   [5](05-voiding.md), [9](09-the-vote-conviction-does-not-take.md), and
   [14](14-when-the-system-notices-it-broke.md).
 
-- **The assembly and approving public:** produce a proposal and recorded result;
-  neither entry proves that the text was authenticated, enacted, or applied. See
-  Chapter [12](12-changing-the-rules.md).
+- **The older assembly and approving-public entries:** produce a proposal and
+  recorded outcome for the older law-label route. They are not the People's
+  Assembly or the certified-result machinery of the federal architecture, and
+  neither entry proves that text was authenticated, enacted, published, or
+  applied. See Chapter [12](12-changing-the-rules.md).
 
 - **TimeService, Chronicle, TemporalReview, and the Electorate:** TimeService
   supplies review-window boundaries. Chronicle and TemporalReview supply the
@@ -363,9 +387,12 @@ below.
   [3](03-who-holds-the-pen.md), [7](07-a-prisoner-is-a-person.md), and
   [13](13-the-one-thing-taken.md).
 
-- **The State:** owes the floor and is itself answerable as a public body. That
-  legal position does not prove delivery. See Chapters
-  [2](02-public-answerability.md), [8](08-what-you-are-owed.md), and
+- **The State and the constitutional bodies:** the older `State` entry owes the
+  floor and is answerable as a public body; it has not been silently renamed as
+  the whole federal republic. The state-form rules separately identify the
+  holders and limits of constitutional powers. Neither route proves operation
+  or delivery. See Chapters [2](02-public-answerability.md),
+  [8](08-what-you-are-owed.md), [12](12-changing-the-rules.md), and
   [15](15-the-five-joints.md#the-state).
 
 ### Principal named cases
@@ -472,8 +499,14 @@ the domain.
 - **Democracy, government, and administration:** Chapters
   [2](02-public-answerability.md), [3](03-who-holds-the-pen.md),
   [9](09-the-vote-conviction-does-not-take.md), and
-  [12](12-changing-the-rules.md). They cover selected authority, franchise, and
-  amendment edges rather than a complete government.
+  [12](12-changing-the-rules.md). The constitutional source now formalises the
+  legal interfaces of a federal parliamentary republic across common,
+  regional, and protected local tiers: competence, lawmaking, revenue,
+  spending, oversight, collective executive confidence and continuity,
+  bounded formal acts, courts, appointments, political home, democratic
+  procedures, succession, and negotiated secession. These are source-bound
+  legal effects, not proof of authentic elections, working institutions,
+  staffing, funding, publication, operation, or delivery.
 
 - **Civil, criminal, and administrative justice, safety, and repair:** Chapters
   [4](04-the-shield.md), [5](05-voiding.md),
@@ -489,10 +522,14 @@ the domain.
   [14](14-when-the-system-notices-it-broke.md). The closed record is central;
   truth, authorship, storage, surveillance, and live operation remain bounded.
 
-- **Locality, membership, mobility, migration, and external relations:** Chapter
-  [13](13-the-one-thing-taken.md) supplies the present movement conclusion.
-  Membership, portability, borders, migration, and external relations do not yet
-  have complete derived chapters.
+- **Locality, membership, mobility, migration, and external relations:**
+  Chapters [9](09-the-vote-conviction-does-not-take.md) and
+  [13](13-the-one-thing-taken.md) now supply residence-first political
+  membership, one nested political home, atomic transfer, nonresident limits
+  and return, protected local authority, and the republic's internal
+  negotiated-secession route. Wider mobility, border administration,
+  migration, collective title, external recognition, defence, treaty
+  succession, and cross-border operation remain separate or incomplete.
 
 - **Emergencies, security, and defence:** no current derived chapter supplies the
   domain. Custody time and record continuity in Chapter

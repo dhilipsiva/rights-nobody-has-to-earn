@@ -254,5 +254,24 @@ worth naming exactly: **everything downstream of selection is closed, and select
 itself is open.** Whoever controls what gets recorded about who was chosen controls who
 holds the pen, and no rule inside the design can reach up to stop them.
 
+The later state-form rules close a different boundary without turning it into
+either pen in this chapter. For each common, regional, or local power, the
+supplied record must identify the same current source and version, the lawful
+holder, jurisdiction, legal scope, and its own time record, with separate
+review. A positive result for that exact power then yields only the holder's
+current lawful authority.
+
+Where a public result changes through an election, confidence decision,
+appointment, initiative, recall, amendment, succession, or secession,
+administration, completeness assurance, result certification, and institutional
+execution remain separate. The rules can require the supplied roles and records
+to agree on the same bounded result. They cannot authenticate the writers,
+assemble a changing roster, calculate its tally, choose between conflicting
+submissions, or make an institution act.
+
+The two credentials in this chapter remain exactly what they were. Neither the
+electorate's older seating entry nor the convocation's entry is silently renamed
+as a federal office, a current mandate, or one of the new result certificates.
+
 That is not a flaw that can be patched from inside. A system cannot verify its own
 foundations; it can only be honest about where they are. This is where they are.

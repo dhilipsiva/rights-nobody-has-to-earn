@@ -19,14 +19,14 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **82** | **39** | **354** | **6** |
+| computed from the constitution | **82** | **39** | **628** | **6** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 4 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
-| **0** | `adjust`, `at`, `attack`, `authority` *(monotone cone)*, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `complete` *(monotone cone)*, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `orderly` *(monotone cone)*, `parent`, `passport`, `permanent`, `public`, `put`, `ratifies`, `receives`, `related` *(monotone cone)*, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
-| **1** | `collide`, `defend`, `precede`, `severe` |
+| **0** | `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `orderly` *(monotone cone)*, `parent`, `passport`, `permanent`, `public`, `put`, `ratifies`, `receives`, `related` *(monotone cone)*, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
+| **1** | `authority`, `collide`, `complete`, `defend`, `precede`, `severe` |
 | **2** | `correct`, `match`, `reference`, `succeed`, `time` |
 | **3** | `false`, `lose`, `permits` |
 | **4** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prevents`, `prisoner`, `reward`, **secure** |

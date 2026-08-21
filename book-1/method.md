@@ -569,6 +569,58 @@ separate T3 template, and forbids borrowing T3's custody record for a
 life-course power. Its green suite establishes no age value, service route,
 institution, operation, delivery, liveness, or completed remedy.
 
+The state-form and political-membership family completes the existing
+constitutional architecture rather than enlarging its census. No reviewed row
+was added. The family formalises the existing fifty-one state-form power cards,
+uses the existing thirty-eight body cards, and repairs holders and functions
+inside the existing two hundred and ten power allocations. It adds no power,
+claim, status, body, census grain, or allocation.
+
+Its formal seam has three positive stages. First, separately authorised source,
+record-review, temporal, and temporal-review roles establish
+`complete(record, StateFormCurrent, temporal_record)` for one exact source
+family, version, epoch, power, jurisdiction, legal scope, reconciliation, and
+time record. Second, card-specific raw fields and the separated result roles
+establish `complete(result, FSPOW_nnn, record)`. Only then may
+`authority(holder, FSPOW_nnn, record)` follow. That three-place authority is the
+sole state-form legal effect. It is not the older one-place answerability
+relation, and this family derives no state-form `match` conclusion.
+
+Dynamic elections, confidence decisions, appointments, initiatives, recalls,
+amendments, successions, and secession consume externally supplied
+administration, completeness, result, review, and execution records. Static
+competence, lawmaking, adjudication, continuity, and local-power cards consume
+their own positive source-supplied fields.
+
+No affirmative result follows when a required positive premise is absent. The
+machinery does not authenticate an attestation, discover an omitted conflict,
+or determine from an outside clock that a record is stale. A false attestation
+can support the formal result when it is supplied in the required shape. A zero
+roster, tie, conflict, or other failure has only the consequence positively
+specified for that exact route; absence alone creates nothing. `FALSE`
+preserves no law, office, mandate, or claimant protection. Any continuation
+requires its own positive current premise and end condition.
+
+The dedicated suite
+`new-book-plans/state-form.pins.nibli` gives every card positive, negative, and
+counterfactual anchors. The single-mutation copy
+`new-book-plans/counterfactual/no-state-form-independent-current-review.nibli`
+removes only `~($source = $temporal_review)` from the shared currentness rule.
+In that copy the source writer can also serve as temporal reviewer, and the
+watched fused-role case for every card derives authority that the real source
+withholds; properly separated controls remain green. Its paired pin file and
+the exact-diff check bind the copy to that one mutation.
+
+The suite proves bounded legal effects over supplied records. It does not
+authenticate a source or certificate, calculate a changing tally, resolve
+competing submissions, choose a term, seat count, threshold, tolerance, or
+fallback number, operate an institution, advance time, publish a result, deploy
+a source, transfer an office in the world, or deliver the floor. It does not
+reuse custody's T3 source, lease, case, or renewal. Every affected power, body,
+and claim therefore remains `Specified` and `ratified-unimplemented`: formal law
+is not staffing, independence in fact, operation, delivery, or institutional
+action.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the
