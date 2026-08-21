@@ -40,7 +40,7 @@ Per-condition status, generated from the source and echoing the closure conditio
 - **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
 - **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
-- **unmet** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: no current-source repository adversarial audit exists
+- **met-mechanically** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: a current-source repository adversarial audit covers the declared criteria, exact checker controls, command chain, and every Gate-A-applicable defect disposition
 - **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; this satisfies Gate A's envelope precondition. Calibration and values remain Book 2 Gate D work, and operational assurance and remedied resolution still require them
 
 ## The five layers
@@ -3206,7 +3206,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 33; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 34; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -3243,6 +3243,7 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 33; curre
 | FS-SAU-31 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `1bdb074db477ce41be44b9ef3df52614b8757c289c9202604986837679e2f35f` | 2026-08-20T15:59:11Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-32 | fs-ledger-2026-08-18-delivery-receipt-formal-v1 | `bb5490d876583966c24aee81651efd0e663910a884d134e844984bd329827f40` | 2026-08-21T06:58:14Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-33 | fs-ledger-2026-08-21-state-form-prose-v1 | `e317dd58423c7ebf59c35b128c17c953bb087e89d395879664dd9509ccb5ecae` | 2026-08-21T13:36:57Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-34 | fs-ledger-2026-08-21-state-form-prose-v1 | `e317dd58423c7ebf59c35b128c17c953bb087e89d395879664dd9509ccb5ecae` | 2026-08-21T17:08:31Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
 The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-15 -- mechanical-closure protocol v4; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `e317dd58423c7ebf59c35b128c17c953bb087e89d395879664dd9509ccb5ecae`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
