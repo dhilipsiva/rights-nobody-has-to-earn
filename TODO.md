@@ -266,77 +266,6 @@ dependency, and Gate A closed mechanically at `405e480`.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Write the Bodies specification.**
-  - Constitute the ratified People's Assembly, Regions Council, Executive Council
-    and public administration, non-executive Civic President, ordinary courts,
-    Constitutional Court, electoral administration, audit/integrity,
-    ombudsperson/rights advocate, and appointments-qualification function. Complete
-    provision/treasury, regulators, justice/appeal, and regional/local cards without
-    silently relabelling current fixtures as those institutions.
-  - Separate in every card: universal human standing; political membership;
-    franchise; candidacy; current office; current lawful power; and permanent
-    historical public answerability. Reserve `standing` for universal personhood
-    and rename chapter 2's official-status sense to public or historical
-    answerability.
-  - Give every office a democratic/legal source, jurisdiction, ordinary function,
-    delegation boundary, conflict/recusal rule, appointment, removal, succession,
-    temporal status, public-reason duty, and a typed challenge, review, audit or
-    political-accountability route. Require appeal and remedy for individualized
-    adverse determinations; do not recreate a universal right of appeal.
-  - Fill the decision's delegated mechanics before formal enactment: Assembly
-    term/vacancy/early-election source; Council delegation tenure/instruction/
-    replacement; Executive composition/replacement/incapacity; presidential
-    selection fallback/alternate/removal; and court/oversight seats, selectors, and
-    vacancy fallback. Stay inside the ratified anti-capture and continuity limits.
-  - Give elections, office terms, caretaker limits, succession, and record/office
-    transfer their own source-bound temporal contracts. Custody T3 is not reusable,
-    and a legal duty to call an election is not proof that a clock advances or the
-    election occurs.
-  - Census every producer and consumer before deciding whether to retain, replace,
-    or retire `mature`, `decide`, `choose`, `broken`, `approves`,
-    `authority`, or any current institutional constant and its floor-debt,
-    credential, judgment, permission, or custody route.
-  - Before a state-form rule family lands, audit chapters 2, 3, 9, 12, and 13,
-    chapter 13's counted-claim guard, every additional census-found chapter, the
-    temporal case,
-    Part V's rotation/State verdicts, and `method.md`.
-  - Apply separation of functions: no actor may assert case facts, decide their
-    consequence, execute it, audit it, and remedy it alone. Show every body doing its
-    ordinary job as well as being checked.
-  - Define a rights advocate able to act without replacing the voice of a child,
-    disabled person, prisoner, newcomer, dependant or unregistered claimant.
-
-  - **Landed.** All 38 FS-BOD cards are constitutional contract cards: seven
-    ratified status senses held apart, eleven office-contract terms plus
-    `anti_capture`, typed challenge/review/audit/political-accountability routes
-    with real checking bodies, per-determination appeal and remedy, and each
-    body's own source-bound temporal contract. The nine bodies whose mechanics
-    block enactment carry bounded delegations recording choice owner, bounds and
-    failure default; no reserved number is invented. Held by the checker rather
-    than by prose: `standing` is refused in the three office senses, no body
-    checks itself, only the custodial executor applies the retained custody
-    contract, an enumerated determination must carry appeal and remedy while a
-    none-by-design card carries neither, and no card text may assert an arrival,
-    an aggregate figure, a feasibility claim, or relabel a fixture as a ratified
-    institution. Every card stays `ratified-unimplemented`; FS-CLM-18 keeps its
-    `Specified` posture because its closure names the specification **and** its
-    rule families.
-  - **Two lessons from the adversarial review, kept because they generalise.** A
-    schema-valid card can still be false — the review found sourced-to-the-wrong-
-    clause rights, fused regimes, invented allocations into recorded silences,
-    and an over-imported appointments contract, all of which passed the checker.
-    And the checker's job is to make mechanical failure impossible so review
-    attention is free for the semantic kind.
-  - **Remaining: the pre-landing chapter audit, and it is not yet due.** Its
-    trigger is a state-form rule family landing, and none has — FS-CVF-003 is
-    `coverage-ready` with no formal statements, pins or prose, and its own
-    contract bars them until every direct-effect card is ready. Running the audit
-    now would test prose against rules that do not exist. It runs with that
-    family, and chapter 2 is first on its list.
-  - **Everything else in this item is closed.** The `standing` rename landed
-    book-wide (`13d0a7e`), the retain/replace/retire dispositions landed after
-    the census (`ecd9937`, with `mature` retired at `53897d4` and `approves`
-    split at `b8d3f9b`), and Gate A has been reclosed since.
 - [ ] **Specify obligations without making rights reciprocal bargains.**
   - Public institutions must respect, protect, fulfil, continue and remedy.
   - Contractors remain bound when delivering a public function. Direct private
@@ -416,14 +345,12 @@ Gate B; it does not claim Book 2 operations or feasibility.
     enterprise capacity, conditional limited liability, enterprise-treasury
     electoral-spending refusal, public-scale private-power triggers, and
     calibrated individual and structural remedies that preserve service.
-  - Formalise capacity-based taxation, lawful appropriation/spending/borrowing,
-    fiscal transparency, the budget-deadlock default, accessible public payment
+  - Formalise substantive capacity-based taxation, lawful appropriation,
+    spending and borrowing, fiscal transparency, an accessible public payment
     backbone with a non-digital route, bounded monetary authority, credit reasons,
-    fresh-start insolvency, and wage/pension protection.
-  - Respect the ratified federal allocation: common monetary/payment, floor-
-    finance, portability/equalisation, interregional commerce/competition,
-    insolvency, labour/consumer minima, and cross-regional private power; regional
-    or local residual economic policy and stronger compatible protections survive.
+    fresh-start insolvency, and wage/pension protection. Work through the landed
+    authority-allocation, federal/local-tier, and essential-budget-continuity
+    interfaces; do not recreate or widen them.
   - Keep raw financial, contribution, insurance, credit, and equality data outside
     the canonical consequential person record. Import only minimal authenticated,
     adjudicated, purpose-bound premise/result records; every `derived_only`
@@ -491,81 +418,17 @@ Gate B; it does not claim Book 2 operations or feasibility.
     relabeling, confidentiality, capture, and structural remedies that preserve
     workers, users, savers, and essential services.
 
-- [ ] **Define the democratic ceiling and majority process.**
-  - Ordinary majorities decide policy, tax mix, providers, public, cooperative,
-    commons, mutual, nonprofit, household, and private institutional mixtures and
-    choices above the core; the protected free field
-    remains neither a public programme nor a plebiscite.
-  - Implement residence-first membership: ordinary residence plus the one general
-    adulthood status gives equal franchise and candidacy at one claimant-chosen,
-    nested political home. Registration is evidence, not source; citizenship adds
-    no weight; custody, institutional placement, eviction, and forced displacement
-    do not move the home; conviction or custody removes neither vote nor candidacy.
-  - Transfer homes atomically, preserve the last uncontested home during dispute,
-    give first-time residents a guarded provisional status, and admit at most one
-    person-bound effective submission per decision across jurisdictions.
-  - Require proportional People's Assembly outcomes and independent administration;
-    keep the Regions Council's equal territorial weight confined to its limited
-    federal role and one-time ordinary-law return. Implement constructive no
-    confidence and single-holder constructive recall without an avoidable vacancy.
-  - Current `approves(Electorate, amendment)` names the electorate but authenticates
-    neither writer, roster, tally, certificate, recount, challenge, nor correction.
-    Implement a four-role external result pipeline: election administration
-    authenticates and classifies submissions; independent assurance attests roster
-    and submission completeness through redundant or alternate writers; the result
-    service computes and certifies; and authorised institutions execute. Keep each
-    bounded certificate an explicit trust-root premise to Nibli.
-  - Respect the measured engine boundary. Nibli may inspect definitive finite
-    positive snapshot facts and compose supplied certificates; it cannot compute a
-    changing roster's threshold, compare dynamic tallies/shares, group affected
-    regions, resolve effective submissions, authenticate completeness, or act.
-    Exact-count/compute nodes are query-only. Never substitute a fixed finite
-    witness rule for generic election semantics. Raw non-definitive find/count
-    now fails closed; an incomplete-enumeration error is not a result certificate.
-  - Give every result card its roster, separate completeness source, submission
-    functional key, classification rule, threshold, tie result, empty-roster
-    result, challenge/correction route, alternate attestation, certificate effect,
-    and positive failure/persistence consequence. "No turnout quorum" means that
-    the legal rule has no turnout condition; it is not an engine primitive.
-    Nibli `FALSE` alone cannot preserve current law, government, or an ordinary
-    term.
-  - Implement the ratified amendment route: two-thirds of the full Assembly and
-    more affirmative than negative valid national referendum votes, no turnout
-    quorum, and failure on a tie; add a full-weight Council majority for directly
-    regional changes and the same valid-vote consent in each affected region for
-    competence/boundary changes. An elector initiative can force an Assembly vote
-    but cannot bypass two-thirds.
-  - Bound direct ordinary-law initiatives by compatibility review and the
-    deterministic initiative/counterproposal default. Silence cannot approve a
-    proposal, while a missing reviewer must have a limited alternate route.
-  - Every restrictive proposal needs public reasons, evidence,
-    non-discrimination, least-restrictive means and a typed constitutional,
-    judicial, administrative, audit or political challenge/review route. Require
-    delivery/continuity duties where a floor is affected, and appeal/remedy for an
-    individualized adverse determination. Capacity modelling remains Book 2;
-    election, term, caretaker, recall, succession, and transfer time each need a
-    source-bound T3 contract. Prove legal effect only from supplied time evidence;
-    do not claim Book 1 advances clocks, publishes records, forms governments, or
-    causes elections.
-
 - [ ] **Protect democratic and administrative integrity.**
-  - Cover electoral systems, parties and opposition, districting, campaign finance,
-    political advertising, lobbying, gifts, procurement, public appointments,
-    patronage/nepotism, conflicts of interest, revolving doors, corruption and
-    coordinated information manipulation.
+  - Cover parties and opposition, districting, campaign finance, political
+    advertising, lobbying, gifts, procurement, conflicts of interest, revolving
+    doors, corruption, and coordinated information manipulation.
   - Define permitted writers and money/influence records; proportionate disclosure
-    and privacy; independent election, procurement, ethics and anti-corruption
-    oversight; recusal, challenge, correction, remedy and disqualification; and
-    institutional independence from the governing coalition.
-  - Implement open nominations, reasoned qualification review, divided selectors,
-    staggered nonrenewable mandates, cause-only removal, and the legal
-    incompatibility of majority appointment control by one current government,
-    chamber, party coalition, profession, or appointing source. Make direct and de
-    facto concentration detectable, challengeable, correctable, and unable to use
-    vacancy or reviewer silence as a withholding veto.
-  - Test capture through legal form, shell actors, third parties, media/platform
-    concentration, selective enforcement, audit starvation and manufactured
-    withholding. No integrity body may certify its own decisive facts and final cure.
+    and privacy; and campaign, procurement, ethics, and anti-corruption oversight,
+    challenge, correction, remedy, disqualification, and enforcement through the
+    landed appointment and anti-capture interfaces.
+  - Test shell actors, third parties, media/platform concentration, selective
+    enforcement, audit starvation, and manufactured withholding against those
+    controls.
 
 - [ ] **Constitute official statistics and planning information without building a
   population score.**
@@ -593,36 +456,22 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Build amendment enactment and effective-version assurance outside the
   reasoning engine.**
-  - Bind exact base/candidate byte identity and bounded semantic effects to the
-    ratified lawful result: two-thirds of the full People's Assembly, national
-    valid-vote majority with no turnout quorum and tie failure, plus a full-weight
-    Regions Council majority and each affected region where the federal settlement
-    requires them. Keep corridor compatibility separate from political consent.
-  - Distinguish proposal, submissions, tally, review, certificate, publication,
-    uniquely effective deployment, and later rollback/supersession. The current
-    amendment audit manually applies candidates and proves only named bounded
-    consequences.
-  - Book 1 defines the constitutional source, proposal, result, challenge,
-    independent review, successor/conflict/replay and remedy contract. A host harness
-    and Book 2 must authenticate digests/signatures, store and publish versions,
-    select/deploy the effective source, preserve rollback evidence and launch fresh
-    reasoner sessions against that exact version.
-  - Test stale base, replay, divergent candidates, conflicting approvals,
-    withholding veto, unauthorised vocabulary change, semantic mismatch, rollback
-    and query against the wrong source. Nibli may reason about supplied version facts
-    but may not be credited with authenticating or deploying them.
+  - Bind exact base/candidate byte identity and bounded semantic effects to a
+    supplied result admitted through the landed bounded result-certificate
+    interface. Keep corridor compatibility separate from political consent.
+  - Distinguish that certified candidate from publication, uniquely effective
+    deployment, and later rollback or supersession. The current amendment audit
+    manually applies candidates and proves only named bounded consequences.
+  - Book 1 defines exact-source identity and the successor, conflict, replay, and
+    remedy contract. A host harness and Book 2 must authenticate digests/signatures,
+    store and publish versions, select/deploy the effective source, preserve rollback
+    evidence, and launch fresh reasoner sessions against that exact version.
+  - Test stale base, replay, divergent candidates, unauthorised vocabulary change,
+    semantic mismatch, rollback, and query against the wrong source. Nibli may
+    reason about supplied version facts but may not be credited with authenticating,
+    publishing, selecting, or deploying them.
 
-- [ ] **Complete territory, political membership, mobility, collective/plurality rights, and external relations.**
-  - Formalise the ratified federal settlement: enumerated common powers, regional
-    residual authority, the protected local minimum, justiciable subsidiarity,
-    equalisation, portability, and a competence-dispute route that cannot acquire
-    power through delay.
-  - Formalise residence-first political membership independently of human standing:
-    factual ordinary residence, claimant choice among genuine homes, one nested
-    political home, atomic transfer, last-uncontested-home continuity, guarded
-    provisional status, and no move caused merely by custody, institutional
-    placement, eviction, shelter use, or other compelled displacement. Citizenship
-    adds no electoral weight.
+- [ ] **Complete mobility, collective/plurality rights, and external relations.**
   - Cover newcomers, migrants, refugees, stateless people, borders, asylum,
     expulsion, extradition, accessible language and process, and continuity of
     standing, floors, liberty, and remedy.
@@ -642,29 +491,17 @@ Gate B; it does not claim Book 2 operations or feasibility.
     voice, appeal, and Constitutional Court review. Preserve one equal
     general-government ballot and common services for members and nonmembers.
   - Require actual collective consent before permanent forced relocation,
-    extinguishment or irreversible impairment of collective title, sacred-site
-    destruction, hazardous-material placement, or a comparable existential harm.
-    Temporary lifesaving evacuation needs its own emergency contract and cannot
-    extinguish title. For other material effects require good-faith consultation,
-    accessible information, adequate time, accommodation, public reasons, and
-    review rather than a blanket veto.
-  - Keep collective autonomy inside the settled negotiated-secession path; it
-    creates no unilateral exit from the republic. The ratified external-power work
-    owns recognition, defence, cross-border status, international obligations, and
-    post-exit effects, and did not replace the affected-region vote, federal
-    agreement, rights/minority review, settlement, or final affected-population
-    ratification. It treats the settlement contents as a floor, adds actual
-    collective consent as a **gate** where exit would transfer, extinguish or
-    irreversibly impair collective title or transfer sovereignty over collective
-    lands, and records that the external-only defence mandate leaves no military
-    instrument against a unilateral exit.
+    extinguishment or irreversible impairment of collective title, transfer of
+    sovereignty over collective lands, sacred-site destruction, hazardous-material
+    placement, or a comparable existential harm. Temporary lifesaving evacuation
+    needs its own emergency contract and cannot extinguish title. For other material
+    effects require good-faith consultation, accessible information, adequate time,
+    accommodation, public reasons, and review rather than a blanket veto.
   - Split formal work by direct legal effect across the existing taxonomy; create
-    no new class or omnibus `collective` predicate. Census and explicitly dispose
-    of `public`, `authority`, `home`, `family`, and every status proxy before
-    reuse. Give membership, authority, title, consultation, and consent findings
-    complete source, writer, evidence, privacy, reader, challenge, correction,
-    carry, end, alternate-route, continuity, remedy, failure-polarity, and temporal
-    contracts.
+    no new class or omnibus `collective` predicate. Give collective membership,
+    authority, title, consultation, and consent findings complete source, writer,
+    evidence, privacy, reader, challenge, correction, carry, end, alternate-route,
+    continuity, remedy, failure-polarity, and temporal contracts.
   - Nibli may consume an authenticated, bounded membership, title, consultation, or
     consent finding but may not decide collective identity, membership, territory,
     title, consent, or institutional action. Apply the completed finite
@@ -683,21 +520,24 @@ Gate B; it does not claim Book 2 operations or feasibility.
     political equality and never creates a second general-government ballot.
   - Treaty, diplomacy, external trade, war/peace and humanitarian authority is now
     ratified and owned by the public-safety and external-power implementation bullet
-    below; do not duplicate it here. This bullet retains only the locality and
-    membership half. The no-evasion rule stands: public procurement, investment,
-    trade or corporate form may not export labour exploitation, ecological damage
-    or rights violations that would be unlawful at home. Other states' cooperation
-    and supply-chain facts remain external assumptions, not derived facts.
+    below; do not duplicate it here. This item retains mobility,
+    collective/plurality rights, and the external no-evasion rule: public
+    procurement, investment, trade or corporate form may not export labour
+    exploitation, ecological damage or rights violations that would be unlawful at
+    home. Other states' cooperation and supply-chain facts remain external
+    assumptions, not derived facts.
 
 - [ ] **Add the missing non-carceral justice interface.**
-  - Cover notice, counsel/advocacy, hearing, challenge, reparation and enforcement
-    across civil, administrative, family, labour, consumer and constitutional
-    disputes as well as criminal justice.
-  - Separate investigation/policing, prosecution, defence, adjudication, execution
-    and review. Add victim/survivor protection, restitution, reparation, restorative
-    options and least-coercive response without compelling forgiveness.
+  - Use the landed court-holder and independent-review contracts; specify notice,
+    counsel/advocacy, hearing, challenge, reparation, remedy, and enforcement across
+    civil, administrative, family, labour, consumer, constitutional, and criminal
+    justice.
+  - Specify investigation/policing, prosecution, defence, adjudication, execution,
+    and review procedures without reconstituting their holders. Add victim/survivor
+    protection, restitution, reparation, restorative options, and least-coercive
+    response without compelling forgiveness.
   - Add explicit carceral limits: bodily integrity, communication, conditions,
-    proportionality, release review, post-release continuity and reintegration.
+    proportionality, release review, post-release continuity, and reintegration.
     Prison remains the hardest stress test, not the default social case.
 
 - [ ] **Implement the ratified public-safety, defence, emergency, and
