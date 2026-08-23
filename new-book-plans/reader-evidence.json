@@ -6,8 +6,8 @@
   "threshold_status": "pending-pilot",
   "holdout_status": "not-frozen",
   "history_transition": {
-    "previous_source_commit": "e09a5fd14cf1c5ae970092653043ff7189b03d81",
-    "previous_source_sha256": "a8bf8276baca0dd5d63dd5523f24fde8b3a6c8bfc5f2e8bf042631242beafaf7",
+    "previous_source_commit": "e27a852a5783c13b0610cead8faa0b0cb9bc4c5c",
+    "previous_source_sha256": "5cf4027585d26bf7b7e10178fb3f1a042affca213724d9eee3e86bf240c4e0bf",
     "previous_history_head_sha256": "ead19e134be05cf5d9583b87d43673fa5de61759955eaccdd1403be7dcc5d2a2",
     "history_head_sha256": "ead19e134be05cf5d9583b87d43673fa5de61759955eaccdd1403be7dcc5d2a2"
   },
@@ -19,7 +19,7 @@
     "structural_checker_binding": {
       "artifact_id": "RE-ART-STRUCTURAL-CHECKER",
       "ref": "new-book-plans/14-reader-evidence.py::def main(",
-      "sha256": "b80563234d1b6337032695f98adbc937c7c30cd07b037b7fb3399f66b8aa6e31"
+      "sha256": "a0387f8cd60a9e6b8affd959777a7d8fc1ee863ea1c7f75e1d06fccc15325c48"
     },
     "reviewer_custody_attestation": null,
     "evidence_admission_gate_binding": null,

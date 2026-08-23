@@ -2446,6 +2446,7 @@ def main(argv: Iterable[str] | None = None) -> int:
     parser.add_argument("--pin", type=pathlib.Path, default=None)
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--wait-for-lock", type=float, default=0.0)
     parser.add_argument("--fingerprints", action="store_true")
     args = parser.parse_args(argv)
 
@@ -2536,7 +2537,11 @@ def main(argv: Iterable[str] | None = None) -> int:
 
 if __name__ == "__main__":
     try:
-        raise SystemExit(main())
+        from verification_lock_client import run_checker
+
+        raise SystemExit(
+            run_checker(main, sys.argv[1:], nonheavy_flags=("--fingerprints",))
+        )
     except PlacementAuditError as exc:
         print(f"11-placement-exhaustiveness: {exc}", file=sys.stderr)
         raise SystemExit(1)

@@ -19,6 +19,14 @@
 #                       FULL suite after any constitution edit — that is how a
 #                       stale fixture shipped once.
 #
+#   ./verify.sh --emit-receipt PATH
+#                       one staged full run plus a content-addressed v2 receipt
+#   ./verify.sh --commit-gate RECEIPT --transition audit|closure|tracker
+#                       structural validation of one exact administrative delta;
+#                       never a silent fallback to a full run
+#   ./verify.sh --wait-for-lock SECONDS ...
+#                       explicit bounded waiting; contention otherwise exits 75
+#
 # NEVER use nibli-host: its wasm predates the derived_only and entitled corpus
 # entries, so it silently drops the rights floor and every conclusion-only gate
 # and then reports a clean run over a constitution it is not reading.
@@ -50,71 +58,117 @@ READER_GATE=new-book-plans/reader-evidence-admission-gate.py
 PILOT_READER_ARTIFACTS=new-book-plans/15-pilot-reader-artifacts.py
 STATE_FORM_SHARD_DIR=""
 STATE_FORM_MAX_PARALLEL=4
+RECEIPT_TOOL=new-book-plans/20-verification-receipt.py
+LOCK_TOOL=new-book-plans/verification_lock.py
 QUICK=0
 ONLY=""
+WAIT_FOR_LOCK=""
+UNDER_VERIFICATION_LOCK=0
+
+if [ "${1:-}" = "--under-verification-lock" ]; then
+  UNDER_VERIFICATION_LOCK=1
+  shift
+fi
+
+usage() {
+  printf '%s\n' \
+    'usage: ./verify.sh [--wait-for-lock SECONDS] [--quick | --only <pinfile> | --table]' \
+    '       ./verify.sh [--wait-for-lock SECONDS] --emit-receipt PATH' \
+    '       ./verify.sh [--wait-for-lock SECONDS] --commit-gate RECEIPT --transition audit|closure|tracker' >&2
+  exit 2
+}
+
+if [ "${1:-}" = "--wait-for-lock" ]; then
+  [ "$#" -ge 2 ] || usage
+  WAIT_FOR_LOCK=$2
+  [[ "$WAIT_FOR_LOCK" =~ ^[0-9]+([.][0-9]+)?$ ]] || usage
+  shift 2
+fi
+
 case "${1:-}" in
-  --quick) QUICK=1 ;;
-  --only)  ONLY="${2:-}" ;;
-  --table) exec python3 new-book-plans/6-claim-table.py ;;
-  "")      ;;
-  *)       printf 'usage: ./verify.sh [--quick | --only <pinfile> | --table]\n' >&2; exit 2 ;;
+  --emit-receipt)
+    [ "$#" -eq 2 ] || usage
+    receipt_args=(
+      python3 "$RECEIPT_TOOL" emit --output "$2"
+    )
+    [ -z "$WAIT_FOR_LOCK" ] \
+      || receipt_args+=(--wait-for-lock "$WAIT_FOR_LOCK")
+    exec "${receipt_args[@]}" -- ./verify.sh
+    ;;
+  --commit-gate)
+    [ "$#" -eq 4 ] || usage
+    [ "$3" = "--transition" ] || usage
+    case "$4" in audit|closure|tracker) ;; *) usage ;; esac
+    gate_args=(
+      python3 "$RECEIPT_TOOL" commit-gate "$2" --transition "$4"
+    )
+    [ -z "$WAIT_FOR_LOCK" ] \
+      || gate_args+=(--wait-for-lock "$WAIT_FOR_LOCK")
+    exec "${gate_args[@]}"
+    ;;
+  --quick)
+    [ "$#" -eq 1 ] || usage
+    QUICK=1
+    ;;
+  --only)
+    [ "$#" -eq 2 ] || usage
+    ONLY=$2
+    ;;
+  --table)
+    [ "$#" -eq 1 ] || usage
+    exec python3 new-book-plans/6-claim-table.py
+    ;;
+  "")
+    [ "$#" -eq 0 ] || usage
+    ;;
+  *)
+    usage
+    ;;
 esac
+
+core_args=()
+if [ "$QUICK" -eq 1 ]; then
+  core_args+=(--quick)
+elif [ -n "$ONLY" ]; then
+  core_args+=(--only "$ONLY")
+fi
+
+LOCK_CONTEXT_PRESENT=0
+if [ -n "${RIGHTS_VERIFY_LOCK_TOKEN+x}" ] \
+   || [ -n "${RIGHTS_VERIFY_LOCK_OWNER_PID+x}" ] \
+   || [ -n "${RIGHTS_VERIFY_LOCK_OWNER_START+x}" ] \
+   || [ -n "${RIGHTS_VERIFY_LOCK_COMMON_DIR+x}" ] \
+   || [ -n "${RIGHTS_VERIFY_LOCK_NAME+x}" ]; then
+  LOCK_CONTEXT_PRESENT=1
+fi
+
+if [ "$UNDER_VERIFICATION_LOCK" -eq 1 ] \
+   || [ "$LOCK_CONTEXT_PRESENT" -eq 1 ]; then
+  python3 "$LOCK_TOOL" validate-inherited --name verify
+  lock_status=$?
+  [ "$lock_status" -eq 0 ] || exit "$lock_status"
+else
+  lock_args=(python3 "$LOCK_TOOL" run --name verify)
+  [ -z "$WAIT_FOR_LOCK" ] \
+    || lock_args+=(--wait-for-lock "$WAIT_FOR_LOCK")
+  lock_args+=(-- ./verify.sh --under-verification-lock "${core_args[@]}")
+  exec "${lock_args[@]}"
+fi
 
 pass() { printf '  \033[32mok\033[0m   %s\n' "$1"; }
 fail() { printf '  \033[31mFAIL\033[0m %s\n' "$1"; [ -n "${2:-}" ] && printf '       %s\n' "$2"; exit 1; }
 step() { printf '\n\033[1m%s\033[0m\n' "$1"; }
 
-run_pin_shards() {
-  local kb=$1
-  shift
-  local -a all_shards=("$@")
-  local -a pids shards logs
-  local shard log
-  local start end index status=0
-  local summary="" detail=""
-  for ((start = 0; start < ${#all_shards[@]}; \
-       start += STATE_FORM_MAX_PARALLEL)); do
-    end=$((start + STATE_FORM_MAX_PARALLEL))
-    [ "$end" -le "${#all_shards[@]}" ] || end=${#all_shards[@]}
-    pids=()
-    shards=()
-    logs=()
-    for ((index = start; index < end; index++)); do
-      shard=${all_shards[$index]}
-      log="${shard%.pins.nibli}.out"
-      "$PIN" --allow-shell --kb "$kb" "$shard" >"$log" 2>&1 &
-      pids+=("$!")
-      shards+=("$shard")
-      logs+=("$log")
-    done
-    for index in "${!pids[@]}"; do
-      if wait "${pids[$index]}"; then
-        if grep -q 'PASS' "${logs[$index]}"; then
-          summary="${summary}$(basename "${shards[$index]}"): $(tail -n 1 "${logs[$index]}")
-"
-        else
-          status=1
-          detail="${detail}$(basename "${shards[$index]}"): no PASS verdict
-$(tail -n 3 "${logs[$index]}")
-"
-        fi
-      else
-        status=1
-        detail="${detail}$(basename "${shards[$index]}"): execution failed
-$(tail -n 3 "${logs[$index]}")
-"
-      fi
-    done
-    if [ "$status" -ne 0 ]; then
-      printf '%s' "$detail"
-      return 1
-    fi
-  done
-  printf '%s' "$summary"
-}
+# shellcheck source=new-book-plans/verification-shard-runner.sh
+. new-book-plans/verification-shard-runner.sh
 
 cleanup_state_form_shards() {
   if [ -n "$STATE_FORM_SHARD_DIR" ] && [ -d "$STATE_FORM_SHARD_DIR" ]; then
+    if [ -e "$STATE_FORM_SHARD_DIR/.retain" ]; then
+      printf '  retained state-form failure diagnostics at %s\n' \
+        "$STATE_FORM_SHARD_DIR" >&2
+      return
+    fi
     local path
     for path in "$STATE_FORM_SHARD_DIR"/main-*.pins.nibli \
                 "$STATE_FORM_SHARD_DIR"/counterfactual-*.pins.nibli \
@@ -230,6 +284,21 @@ cleanup() {
   cleanup_state_form_shards
 }
 trap cleanup EXIT
+
+step "verification infrastructure"
+out=$(python3 new-book-plans/20-verification-receipt-self-test.py 2>&1) \
+  || fail "verification receipt and lock self-test failed" "$out"
+pass "$out"
+out=$(python3 new-book-plans/verification-refresh-self-test.py 2>&1) \
+  || fail "verification refresh self-test failed" "$out"
+pass "$out"
+out=$(python3 new-book-plans/verification-scheduler-self-test.py 2>&1) \
+  || fail "verification scheduler self-test failed" "$out"
+pass "$out"
+
+# These focused tests run in both quick and full modes. They validate the
+# administrative-reuse boundary and scheduler mechanics without repeating any
+# constitutional or executable pin suite.
 
 step "spine"
 out=$(NIBLI_PIN="$PIN" NIBLI_STRATA_CACHE_OUT="$STRATA_FILE" python3 new-book-plans/5-spine-gen.py "$KB" "$SPINE" --check 2>&1) \

@@ -1,0 +1,75 @@
+{
+  "schema_version": "state-form-shard-benchmark-v1",
+  "spdx_license": "CC0-1.0",
+  "executed_at_utc": "2026-08-23T03:16:31Z",
+  "decision_rule": "If the proposed median wall time or peak RSS regresses by more than 10 percent, retain count-balanced partitioning and land only the sliding scheduler.",
+  "decision": "retain-byte-balanced-partitioning-and-sliding-scheduler",
+  "engine": {
+    "path": "/home/dhilipsiva/projects/dhilipsiva/nibli/target/release/nibli-pin",
+    "sha256": "f9f094b14efe1a8549660542edf263f2afe5380dc84e99e197cc5f3f95683772",
+    "source_commit": "bc03c9a00b28f566c9efe0e7808d3c9160915781",
+    "source_worktree": "clean"
+  },
+  "knowledge_base": {
+    "path": "new-book-plans/constitution.nibli",
+    "sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed"
+  },
+  "command_template": "/usr/bin/time -v <engine> --allow-shell --kb new-book-plans/constitution.nibli <generated-largest-main-shard>",
+  "count_baseline": {
+    "partition": "count",
+    "largest_shard": "main-17.pins.nibli",
+    "projection_utf8_bytes": 250490,
+    "runs": [
+      {
+        "wall_seconds": 45.64,
+        "peak_rss_kib": 852996
+      },
+      {
+        "wall_seconds": 44.69,
+        "peak_rss_kib": 853076
+      },
+      {
+        "wall_seconds": 45.59,
+        "peak_rss_kib": 853160
+      }
+    ],
+    "median_wall_seconds": 45.59,
+    "median_peak_rss_kib": 853076
+  },
+  "byte_proposal": {
+    "partition": "bytes",
+    "largest_shard": "main-35.pins.nibli",
+    "projection_utf8_bytes": 150688,
+    "runs": [
+      {
+        "wall_seconds": 31.39,
+        "peak_rss_kib": 417640
+      },
+      {
+        "wall_seconds": 31.42,
+        "peak_rss_kib": 421032
+      },
+      {
+        "wall_seconds": 34.44,
+        "peak_rss_kib": 420428
+      }
+    ],
+    "median_wall_seconds": 31.42,
+    "median_peak_rss_kib": 420428
+  },
+  "comparison": {
+    "median_wall_percent_change": -31.08,
+    "median_peak_rss_percent_change": -50.72,
+    "worst_observed_peak_rss_percent_change": -50.65,
+    "all_runs_exit_zero_and_pass": true
+  },
+  "aggregate_invariants": {
+    "main_shards": 64,
+    "counterfactual_shards": 17,
+    "canonical_queries": 442,
+    "query_order": "unchanged",
+    "fact_union": "unchanged",
+    "counterfactual_semantics": "unchanged"
+  },
+  "evidence_ceiling": "A same-host microbenchmark over the generated largest main shard supports this partition choice. It does not predict every shard, another machine, institutional operation, or future engine performance."
+}

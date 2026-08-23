@@ -51,17 +51,25 @@ Deferred record types carry explicit deferral records with owners.
 Usage:
   python3 new-book-plans/13-full-society-ledger.py            # regenerate MD
   python3 new-book-plans/13-full-society-ledger.py --check    # validate + fresh
+  python3 new-book-plans/13-full-society-ledger.py \
+      --refresh-and-check                                      # atomic refresh
 """
 
 import argparse
+import contextlib
 import copy
 import hashlib
-import importlib.util
 import json
+import math
+import os
 import pathlib
 import re
+import shutil
+import stat
 import subprocess
 import sys
+import tempfile
+import types
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SOURCE = pathlib.Path("new-book-plans/full-society-ledger.json")
@@ -2021,7 +2029,7 @@ PROTOCOL_DOC = pathlib.Path(
     "new-book-plans/full-society-scope-review-protocol.md")
 PROTOCOL_STATUS_CANDIDATE = "candidate — author confirmation pending"
 PROTOCOL_STATUS_CONFIRMED = (
-    "repository-enforced 2026-08-15 -- mechanical-closure protocol v4")
+    "repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5")
 SCOPE_AUDIT_POLICY_BASIS = (
     "new-book-plans/full-society-scope-review-protocol.md::"
     "## 5. Mechanical Gate A closure")
@@ -2041,16 +2049,19 @@ SCOPE_AUDIT_METHOD = "repository-source-derived-adversarial-audit"
 SCOPE_AUDIT_RESULT = "passed-with-recorded-limits"
 SCOPE_AUDIT_CONTROL_REFS = (
     "new-book-plans/13-full-society-ledger.py::"
-    "def negative_controls(src: dict) -> int:",
+    "def negative_controls(src: dict) "
+    "-> int:",
     "new-book-plans/16-constitutional-closure.py::"
     "def negative_controls(source):",
 )
-SCOPE_AUDIT_COMMANDS = (
-    "python3 new-book-plans/13-full-society-ledger.py --check",
-    "python3 new-book-plans/16-constitutional-closure.py --check",
-    "./verify.sh --quick",
-    "./verify.sh",
+SCOPE_AUDIT_V2_PENDING_COMMANDS = (
+    "python3 new-book-plans/13-full-society-ledger.py --refresh-and-check",
+    "python3 new-book-plans/16-constitutional-closure.py --refresh-and-check",
+    "./verify.sh --emit-receipt new-book-plans/verification-receipts",
 )
+VERIFICATION_RECEIPT_REF_RE = re.compile(
+    r"^new-book-plans/verification-receipts/"
+    r"sha256-[0-9a-f]{64}\.json$")
 SCOPE_AUDIT_EVIDENCE_CEILING = (
     "Checked repository structure and watched-failing mutations over the "
     "declared axes only; no independent-human warrant, reader response, "
@@ -2094,6 +2105,12 @@ REQUIRED_VERIFY_COMMANDS = (
     "python3 new-book-plans/16-constitutional-closure.py --check",
     "./verify.sh --quick", "./verify.sh", "git diff --check",
 )
+LEGACY_V1_CLOSURE_CANDIDATE = (
+    "e0e0ca1a09dc8bceaac95f29ab5f1afdc9795bb5")
+LEGACY_V1_CLOSURE_SOURCE = "fs-ledger-2026-08-21-state-form-prose-v1"
+LEGACY_V1_CLOSURE_AUDIT = "FS-SAU-34"
+LEGACY_V1_CLOSURE_TRANSCRIPT = (
+    "dc0eb1d869629a9093457fcc8a7c48d5a438777bae756e24a0447e4d60e1032f")
 GATE_A_ASSURANCE_REFS = tuple(
     f'new-book-plans/full-society-ledger.json::"id": "FS-RTE-{n:02d}"'
     for n in range(1, 8)
@@ -2232,6 +2249,335 @@ class LedgerError(Exception):
     pass
 
 
+class ImmutableRepositoryInputs:
+    """One-invocation cache for external repository inputs.
+
+    The reviewed-source mutants are deliberately absent from this cache:
+    every watched mutation still receives its own deep copy and traverses the
+    full validator. Only bytes outside those in-memory mutants are cached. A
+    successful check re-reads every cached path and HEAD once, so concurrent
+    input drift cannot be accepted through a stale cache entry.
+    """
+
+    def __init__(self, root: pathlib.Path):
+        self.root = root.resolve()
+        self._bytes = {}
+        self._text = {}
+        self._json = {}
+        self._digests = {}
+        self._needle_counts = {}
+        self._initial_reads = {}
+        self._rehashes = {}
+        self._metadata = {}
+        self._head = self._git_head()
+
+    def path(self, value: pathlib.Path) -> pathlib.Path:
+        value = pathlib.Path(value)
+        return (value if value.is_absolute() else self.root / value).resolve()
+
+    @staticmethod
+    def _stat_signature(path: pathlib.Path) -> tuple:
+        info = path.stat()
+        return (
+            info.st_dev, info.st_ino, stat.S_IMODE(info.st_mode),
+            info.st_size, info.st_mtime_ns, info.st_ctime_ns,
+        )
+
+    def read_bytes(self, value: pathlib.Path) -> bytes:
+        path = self.path(value)
+        if path not in self._bytes:
+            try:
+                before = self._stat_signature(path)
+                payload = path.read_bytes()
+                after = self._stat_signature(path)
+            except OSError as exc:
+                raise LedgerError(
+                    f"cannot read immutable input {path}: {exc}"
+                ) from exc
+            if before != after:
+                raise LedgerError(
+                    f"immutable input drifted during initial read: {path}")
+            self._bytes[path] = payload
+            self._metadata[path] = after
+            self._initial_reads[path] = self._initial_reads.get(path, 0) + 1
+        return self._bytes[path]
+
+    def read_text(self, value: pathlib.Path) -> str:
+        path = self.path(value)
+        if path not in self._text:
+            try:
+                self._text[path] = self.read_bytes(path).decode("utf-8")
+            except UnicodeDecodeError as exc:
+                raise LedgerError(
+                    f"immutable input is not UTF-8: {path}") from exc
+        return self._text[path]
+
+    def load_json(self, value: pathlib.Path):
+        path = self.path(value)
+        if path not in self._json:
+            try:
+                self._json[path] = json.loads(self.read_text(path))
+            except json.JSONDecodeError as exc:
+                try:
+                    label = path.relative_to(self.root)
+                except ValueError:
+                    label = path
+                raise LedgerError(f"{label} is not valid JSON: {exc}") from exc
+        return self._json[path]
+
+    def sha256(self, value: pathlib.Path) -> str:
+        path = self.path(value)
+        if path not in self._digests:
+            self._digests[path] = hashlib.sha256(
+                self.read_bytes(path)).hexdigest()
+        return self._digests[path]
+
+    def needle_count(self, value: pathlib.Path, needle: str) -> int:
+        path = self.path(value)
+        key = (path, needle)
+        if key not in self._needle_counts:
+            self._needle_counts[key] = self.read_text(path).count(needle)
+        return self._needle_counts[key]
+
+    def adopt_bytes(self, value: pathlib.Path, payload: bytes):
+        """Bind bytes read before this snapshot without reading them again."""
+        path = self.path(value)
+        if not isinstance(payload, bytes):
+            raise LedgerError("adopted immutable input must be bytes")
+        if path in self._bytes:
+            if self._bytes[path] != payload:
+                raise LedgerError(
+                    f"conflicting immutable input bytes adopted for {path}")
+            return
+        try:
+            metadata = self._stat_signature(path)
+        except OSError as exc:
+            raise LedgerError(
+                f"cannot stat adopted immutable input {path}: {exc}") from exc
+        self._bytes[path] = payload
+        self._metadata[path] = metadata
+        self._initial_reads[path] = 1
+
+    def mode(self, value: pathlib.Path) -> int:
+        """Return the snapshotted permission bits for an already-read path."""
+        path = self.path(value)
+        if path not in self._metadata:
+            self.read_bytes(path)
+        return self._metadata[path][2]
+
+    def advance_replacement(self, value: pathlib.Path, payload: bytes):
+        """Advance one intentionally replaced output before the final rehash."""
+        path = self.path(value)
+        if not isinstance(payload, bytes):
+            raise LedgerError("replacement expectation must be bytes")
+        self._bytes[path] = payload
+        self._metadata[path] = self._stat_signature(path)
+        self._initial_reads.setdefault(path, 1)
+        self._text.pop(path, None)
+        self._json.pop(path, None)
+        self._digests.pop(path, None)
+        for key in [
+                key for key in self._needle_counts if key[0] == path
+        ]:
+            self._needle_counts.pop(key, None)
+
+    def _git_head(self) -> str:
+        proc = subprocess.run(
+            ["git", "rev-parse", "--verify", "HEAD"],
+            cwd=self.root,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if (
+                proc.returncode != 0
+                or not GIT_COMMIT_RE.fullmatch(proc.stdout.strip())):
+            raise LedgerError("cannot snapshot the current Git HEAD")
+        return proc.stdout.strip()
+
+    def assert_metadata_unchanged(self):
+        """Cheap pre-replace guard; final success still requires byte rehash."""
+        for path, expected in self._metadata.items():
+            try:
+                current = self._stat_signature(path)
+            except OSError as exc:
+                raise LedgerError(
+                    f"immutable input disappeared before refresh: {path}"
+                ) from exc
+            if current != expected:
+                raise LedgerError(
+                    f"immutable input metadata drifted before refresh: {path}")
+        if self._git_head() != self._head:
+            raise LedgerError("Git HEAD changed before refresh")
+
+    def assert_unchanged(self):
+        for path, expected in self._bytes.items():
+            try:
+                before = self._stat_signature(path)
+                current = path.read_bytes()
+                after = self._stat_signature(path)
+            except OSError as exc:
+                raise LedgerError(
+                    f"immutable input disappeared during validation: {path}"
+                ) from exc
+            self._rehashes[path] = self._rehashes.get(path, 0) + 1
+            if before != after:
+                raise LedgerError(
+                    f"immutable input drifted during final rehash: {path}")
+            if current != expected:
+                raise LedgerError(
+                    f"immutable input drifted during validation: {path}"
+                )
+            if after != self._metadata[path]:
+                raise LedgerError(
+                    f"immutable input metadata drifted during validation: {path}")
+        if self._git_head() != self._head:
+            raise LedgerError("Git HEAD changed during validation")
+        if any(count != 1 for count in self._initial_reads.values()):
+            raise LedgerError(
+                "immutable input cache performed a duplicate disk read")
+        if any(self._rehashes.get(path) != 1 for path in self._bytes):
+            raise LedgerError(
+                "an immutable input was not rehashed exactly once")
+
+
+_IMMUTABLE_INPUTS = None
+_GIT_SOURCE_CACHE = {}
+_VERIFICATION_RECEIPT_CACHE = {}
+_CACHED_SOURCE_MODULE_BYTES = {}
+
+
+def install_immutable_input_snapshot(snapshot):
+    """Install a fresh snapshot and clear process-local external caches."""
+    global _IMMUTABLE_INPUTS, _READER_EVIDENCE_CACHE
+    global _ASSERTION_STATEMENT_FINGERPRINT_CACHE, _PRIOR_REVIEW_STATE
+    global _GIT_SOURCE_CACHE, _VERIFICATION_RECEIPT_CACHE
+    _IMMUTABLE_INPUTS = snapshot
+    _READER_EVIDENCE_CACHE = None
+    _ASSERTION_STATEMENT_FINGERPRINT_CACHE = None
+    _PRIOR_REVIEW_STATE = None
+    _GIT_SOURCE_CACHE = {}
+    _VERIFICATION_RECEIPT_CACHE = {}
+
+
+def _input_bytes(path: pathlib.Path) -> bytes:
+    if _IMMUTABLE_INPUTS is not None:
+        return _IMMUTABLE_INPUTS.read_bytes(path)
+    target = path if pathlib.Path(path).is_absolute() else ROOT / path
+    return target.read_bytes()
+
+
+def _input_text(path: pathlib.Path) -> str:
+    if _IMMUTABLE_INPUTS is not None:
+        return _IMMUTABLE_INPUTS.read_text(path)
+    target = path if pathlib.Path(path).is_absolute() else ROOT / path
+    return target.read_text(encoding="utf-8")
+
+
+def _input_needle_count(path: pathlib.Path, needle: str) -> int:
+    if _IMMUTABLE_INPUTS is not None:
+        return _IMMUTABLE_INPUTS.needle_count(path, needle)
+    return _input_text(path).count(needle)
+
+
+def load_cached_source_module(module_name: str, path: pathlib.Path):
+    """Execute exactly the source bytes cached and rehashed by this run."""
+    target = pathlib.Path(path)
+    target = (
+        target if target.is_absolute() else ROOT / target
+    ).resolve()
+    payload = _input_bytes(target)
+    digest = hashlib.sha256(payload).hexdigest()
+    previous = sys.modules.get(module_name)
+    if (
+            previous is not None
+            and getattr(previous, "__cached_source_path__", None)
+            == str(target)
+            and getattr(previous, "__cached_source_sha256__", None) == digest
+    ):
+        _CACHED_SOURCE_MODULE_BYTES[target] = payload
+        return previous
+    try:
+        code = compile(payload, str(target), "exec", dont_inherit=True)
+    except (SyntaxError, ValueError) as exc:
+        raise LedgerError(
+            f"cannot compile cached module source {target}: {exc}") from exc
+    module = types.ModuleType(module_name)
+    module.__file__ = str(target)
+    module.__package__ = module_name.rpartition(".")[0]
+    module.__cached_source_path__ = str(target)
+    module.__cached_source_sha256__ = digest
+    sys.modules[module_name] = module
+    try:
+        exec(code, module.__dict__)
+    except BaseException:
+        if previous is None:
+            sys.modules.pop(module_name, None)
+        else:
+            sys.modules[module_name] = previous
+        raise
+    _CACHED_SOURCE_MODULE_BYTES[target] = payload
+    return module
+
+
+_SNAPSHOT_PATH_BASE = type(pathlib.Path())
+
+
+class _SnapshotBackedPath(_SNAPSHOT_PATH_BASE):
+    """Path whose content reads participate in the installed snapshot."""
+
+    def read_bytes(self) -> bytes:
+        return _input_bytes(pathlib.Path(str(self)))
+
+    def read_text(self, encoding=None, errors=None) -> str:
+        return self.read_bytes().decode(
+            encoding or "utf-8", errors or "strict")
+
+
+def _bind_reader_evidence_repository_reads(module):
+    """Route Script 14's live repository reads through this invocation cache."""
+    if getattr(module, "__immutable_repository_reads_bound__", False):
+        return
+    original_resolve = getattr(module, "resolve", None)
+    if not callable(original_resolve):
+        raise LedgerError(
+            "reader-evidence validator exposes no repository path resolver")
+
+    def snapshot_resolve(value):
+        return _SnapshotBackedPath(original_resolve(value))
+
+    module.resolve = snapshot_resolve
+    module.__immutable_repository_reads_bound__ = True
+
+
+def _prime_repository_reference_inputs(value):
+    """Bind every extant repository path named by a path::anchor value."""
+    if isinstance(value, dict):
+        for child in value.values():
+            _prime_repository_reference_inputs(child)
+        return
+    if isinstance(value, list):
+        for child in value:
+            _prime_repository_reference_inputs(child)
+        return
+    if not isinstance(value, str) or "::" not in value:
+        return
+    relative = value.split("::", 1)[0]
+    if (
+            not re.fullmatch(r"[A-Za-z0-9_.][A-Za-z0-9_./-]*", relative)
+            or pathlib.PurePosixPath(relative).is_absolute()
+            or ".." in pathlib.PurePosixPath(relative).parts
+    ):
+        return
+    target = (ROOT / relative).resolve()
+    try:
+        target.relative_to(ROOT.resolve())
+    except ValueError:
+        return
+    if target.is_file():
+        _input_bytes(target)
+
+
 _READER_EVIDENCE_CACHE = None
 
 
@@ -2246,16 +2592,14 @@ def load_validated_reader_evidence():
     if _READER_EVIDENCE_CACHE is not None:
         return _READER_EVIDENCE_CACHE
     reader = load_json(READER_EVIDENCE_SOURCE)
+    _prime_repository_reference_inputs(reader)
     validator_path = ROOT / READER_EVIDENCE_VALIDATOR
-    spec = importlib.util.spec_from_file_location(
-        "reader_evidence_validator", validator_path
-    )
-    if spec is None or spec.loader is None:
-        raise LedgerError(
-            f"cannot load reader-evidence validator: {READER_EVIDENCE_VALIDATOR}"
-        )
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
+    lock_path = ROOT / "new-book-plans/verification_lock.py"
+    if lock_path.is_file():
+        load_cached_source_module("verification_lock", lock_path)
+    module = load_cached_source_module(
+        "reader_evidence_validator", validator_path)
+    _bind_reader_evidence_repository_reads(module)
     error_type = getattr(module, "ReaderEvidenceError", None)
     validate_reader = getattr(module, "validate", None)
     if error_type is None or not callable(validate_reader):
@@ -2281,10 +2625,14 @@ def load_validated_reader_evidence():
 
 
 def sha256(path: pathlib.Path) -> str:
+    if _IMMUTABLE_INPUTS is not None:
+        return _IMMUTABLE_INPUTS.sha256(path)
     return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
 
 
 def load_json(path: pathlib.Path):
+    if _IMMUTABLE_INPUTS is not None:
+        return _IMMUTABLE_INPUTS.load_json(path)
     try:
         return json.loads((ROOT / path).read_text(encoding="utf-8"))
     except FileNotFoundError:
@@ -2324,8 +2672,7 @@ def validate_reference(ref: str, context: str):
     target = ROOT / rel
     if not target.is_file():
         raise LedgerError(f"{context}: reference target missing: {rel}")
-    body = target.read_text(encoding="utf-8")
-    count = body.count(needle)
+    count = _input_needle_count(target, needle)
     if count != 1:
         raise LedgerError(
             f"{context}: needle must occur exactly once in {rel}; found {count}: "
@@ -2678,6 +3025,30 @@ _ASSERTION_STATEMENT_FINGERPRINT_FIELDS = (
 _ASSERTION_STATEMENT_FINGERPRINT_CACHE = None
 
 
+def _prime_assertion_fingerprint_inputs():
+    if _IMMUTABLE_INPUTS is None:
+        return
+    _input_bytes(pathlib.Path("new-book-plans/7-assertion-surface.py"))
+    _input_bytes(pathlib.Path("new-book-plans/constitution.nibli"))
+    assertion_contract = pathlib.Path(
+        "new-book-plans/assertion-surface-contracts.json")
+    contract = load_json(assertion_contract)
+    _prime_repository_reference_inputs(contract)
+    strata_path = os.environ.get("NIBLI_STRATA_FILE")
+    if strata_path:
+        _input_bytes(pathlib.Path(strata_path))
+        return
+    engine = (
+        os.environ.get("NIBLI_PIN")
+        or shutil.which("nibli-pin")
+        or os.path.expanduser(
+            "~/projects/dhilipsiva/nibli/target/release/nibli-pin")
+    )
+    engine_path = pathlib.Path(engine)
+    if engine_path.is_file():
+        _input_bytes(engine_path)
+
+
 def _assertion_statement_fingerprints():
     global _ASSERTION_STATEMENT_FINGERPRINT_CACHE
     if _ASSERTION_STATEMENT_FINGERPRINT_CACHE is not None:
@@ -2685,6 +3056,7 @@ def _assertion_statement_fingerprints():
             dict(zip(_ASSERTION_STATEMENT_FINGERPRINT_FIELDS, values))
             for values in _ASSERTION_STATEMENT_FINGERPRINT_CACHE
         ]
+    _prime_assertion_fingerprint_inputs()
     proc = subprocess.run(
         [sys.executable, str(ROOT / "new-book-plans/7-assertion-surface.py"),
          "--fingerprints"],
@@ -3156,7 +3528,8 @@ def validate_constitutional_effects(src: dict, ids: dict):
         raise LedgerError("constitutional_effects must contain the checker-owned effect population")
     if [row.get("effect_key") for row in rows] != list(EFFECT_POLICY):
         raise LedgerError("constitutional_effects must follow checker-owned effect order")
-    constitution=(ROOT/"new-book-plans/constitution.nibli").read_text(encoding="utf-8")
+    constitution = _input_text(
+        pathlib.Path("new-book-plans/constitution.nibli"))
     actual_floor=tuple(line.strip() for line in constitution.splitlines() if line.strip().startswith("entitled(every person, event {"))
     if actual_floor != FLOOR_ENTITLEMENT_LINES:
         raise LedgerError("the eight-item material-floor inventory changed or gained a ninth item")
@@ -3825,7 +4198,16 @@ def validate_id_registry(src: dict):
     for array in RECORD_ARRAYS:
         for rec in src.get(array, []):
             rid = rec.get("id")
-            if not isinstance(rid, str) or not ID_RE.match(rid):
+            temporary_pending_audit = (
+                array == "scope_audits"
+                and isinstance(rid, str)
+                and re.fullmatch(r"FS-SAU-[0-9]+-PENDING", rid)
+                and rec.get("source_version")
+                != LEGACY_V1_CLOSURE_SOURCE
+                and rec.get("result") == "pending"
+            )
+            if (not isinstance(rid, str)
+                    or not ID_RE.match(rid) and not temporary_pending_audit):
                 raise LedgerError(
                     f"{array}: id {rid!r} must match FS-XXX-NN"
                 )
@@ -4219,7 +4601,7 @@ def _coverage_map_body_rows() -> dict:
     the ledger writes `Provision and treasury`; that difference is deliberate
     and normalised away, nothing else is.
     """
-    text = COVERAGE_MAP.read_text(encoding="utf-8")
+    text = _input_text(COVERAGE_MAP)
     if "## 5. Required bodies" not in text:
         raise LedgerError(
             "coverage map has no required-bodies section to bind the body "
@@ -6140,7 +6522,7 @@ def validate_coverage_region(src: dict):
     map_path = ROOT / COVERAGE_MAP
     if not map_path.is_file():
         raise LedgerError(f"missing coverage map: {COVERAGE_MAP}")
-    text = map_path.read_text(encoding="utf-8")
+    text = _input_text(map_path)
     if not REGION_RE.search(text):
         raise LedgerError(
             "coverage map has no generated region — add the BEGIN/END markers "
@@ -6362,8 +6744,7 @@ def validate_review_commissions(src: dict):
             if rec["scope_sha256"] != review_scope_digest(src):
                 raise LedgerError(
                     f"{ctx}: current-source commission scope digest is stale")
-            actual_protocol = hashlib.sha256(
-                (ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+            actual_protocol = hashlib.sha256(_input_bytes(PROTOCOL_DOC)).hexdigest()
             if rec["protocol_sha256"] != actual_protocol:
                 raise LedgerError(
                     f"{ctx}: current-source commission protocol digest is stale")
@@ -6695,6 +7076,99 @@ SCOPE_AUDIT_KEYS = [
 ]
 
 
+def _validated_compact_verification_receipt(
+        ref: str,
+        context: str,
+        expected_source_version: str,
+        expected_audit_id: str,
+):
+    if not isinstance(ref, str) or not VERIFICATION_RECEIPT_REF_RE.fullmatch(ref):
+        raise LedgerError(
+            f"{context}: verification_receipt_ref must be a content-addressed "
+            "tracked receipt path"
+        )
+    if ref in _VERIFICATION_RECEIPT_CACHE:
+        cached = _VERIFICATION_RECEIPT_CACHE[ref]
+        if cached.get("source_version") != expected_source_version:
+            raise LedgerError(
+                f"{context}: receipt source version must match the current "
+                "ledger source")
+        if cached.get("audit_id") != expected_audit_id:
+            raise LedgerError(
+                f"{context}: receipt audit id must match the current audit")
+        return cached
+    path = ROOT / ref
+    receipt_bytes = _input_bytes(path)
+    helper = ROOT / "new-book-plans/20-verification-receipt.py"
+    if not helper.is_file():
+        raise LedgerError(
+            f"{context}: verification receipt validator is missing")
+    module_name = "_rights_verification_receipt_for_ledger"
+    try:
+        load_cached_source_module(
+            "verification_lock",
+            ROOT / "new-book-plans/verification_lock.py",
+        )
+        module = load_cached_source_module(module_name, helper)
+    except Exception as exc:
+        raise LedgerError(
+            f"{context}: cannot load verification receipt validator: {exc}"
+        ) from exc
+    validator = getattr(module, "load_and_validate_receipt", None)
+    if not callable(validator):
+        raise LedgerError(
+            f"{context}: receipt validator exposes no portable loader")
+    try:
+        receipt = validator(
+            path,
+            require_local=False,
+            check_environment=False,
+            check_engine=False,
+            root=ROOT,
+            raw_bytes=receipt_bytes,
+        )
+    except Exception as exc:
+        raise LedgerError(
+            f"{context}: verification receipt is invalid: {exc}") from exc
+    if not isinstance(receipt, dict):
+        raise LedgerError(
+            f"{context}: receipt validator returned no compact receipt")
+    if receipt.get("schema_version") != 2:
+        raise LedgerError(f"{context}: receipt schema must be v2")
+    if receipt.get("protocol_version") != 5:
+        raise LedgerError(f"{context}: receipt protocol must be v5")
+    if receipt.get("status") != "all-passed":
+        raise LedgerError(f"{context}: receipt status must be all-passed")
+    if receipt.get("source_version") == LEGACY_V1_CLOSURE_SOURCE:
+        raise LedgerError(f"{context}: a v2 receipt may not downgrade to v1")
+    if receipt.get("source_version") != expected_source_version:
+        raise LedgerError(
+            f"{context}: receipt source version must match the current ledger source")
+    if receipt.get("audit_id") != expected_audit_id:
+        raise LedgerError(
+            f"{context}: receipt audit id must match the current audit")
+    _VERIFICATION_RECEIPT_CACHE[ref] = receipt
+    return receipt
+
+
+def _expected_current_scope_audit_commands(rec: dict, context: str) -> list:
+    expected = list(SCOPE_AUDIT_V2_PENDING_COMMANDS)
+    if rec["result"] == SCOPE_AUDIT_RESULT:
+        receipt_ref = require_str(rec, "verification_receipt_ref", context)
+        _validated_compact_verification_receipt(
+            receipt_ref,
+            context,
+            rec["source_version"],
+            rec["id"],
+        )
+        expected.append(
+            f"./verify.sh --commit-gate {receipt_ref} --transition audit")
+    elif "verification_receipt_ref" in rec:
+        raise LedgerError(
+            f"{context}: only a passing current audit may name a receipt")
+    return expected
+
+
 def _gate_a_audit_finding_refs(src: dict) -> list:
     return sorted(
         row["id"] for row in src["defects"]
@@ -6704,7 +7178,7 @@ def _gate_a_audit_finding_refs(src: dict) -> list:
 
 def qualifying_scope_audits(src: dict) -> list:
     scope = review_scope_digest(src)
-    protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    protocol = hashlib.sha256(_input_bytes(PROTOCOL_DOC)).hexdigest()
     return [
         row for row in src.get("scope_audits", [])
         if row["source_version"] == src["source_version"]
@@ -6722,7 +7196,9 @@ def validate_scope_audits(src: dict):
     for i, rec in enumerate(audits):
         ctx = f"scope_audits[{i}] ({rec.get('id', '?')})"
         exact_keys(rec, SCOPE_AUDIT_KEYS, ctx,
-                   optional=["author_basis", "policy_basis"])
+                   optional=[
+                       "author_basis", "policy_basis",
+                       "verification_receipt_ref"])
         basis_keys = [key for key in ("author_basis", "policy_basis")
                       if key in rec]
         if len(basis_keys) != 1:
@@ -6753,7 +7229,7 @@ def validate_scope_audits(src: dict):
             raise LedgerError(f"{ctx}: duplicate audit id")
         seen.add(rec["id"])
     scope = review_scope_digest(src)
-    protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    protocol = hashlib.sha256(_input_bytes(PROTOCOL_DOC)).hexdigest()
     current = [
         rec for rec in audits
         if rec["source_version"] == src["source_version"]
@@ -6771,7 +7247,8 @@ def validate_scope_audits(src: dict):
             raise LedgerError(f"{ctx}: criterion coverage must be exact")
         if rec["control_refs"] != list(SCOPE_AUDIT_CONTROL_REFS):
             raise LedgerError(f"{ctx}: control references must be exact")
-        if rec["commands"] != list(SCOPE_AUDIT_COMMANDS):
+        expected_commands = _expected_current_scope_audit_commands(rec, ctx)
+        if rec["commands"] != expected_commands:
             raise LedgerError(f"{ctx}: command chain must be exact")
         if rec["finding_refs"] != _gate_a_audit_finding_refs(src):
             raise LedgerError(f"{ctx}: finding references must cover Gate A")
@@ -6787,7 +7264,7 @@ def validate_scope_audits(src: dict):
 
 def qualifying_review_events(src: dict) -> list:
     scope = review_scope_digest(src)
-    protocol = hashlib.sha256((ROOT / PROTOCOL_DOC).read_bytes()).hexdigest()
+    protocol = hashlib.sha256(_input_bytes(PROTOCOL_DOC)).hexdigest()
     return [
         row for row in src.get("review_events", [])
         if row["outcome_status"] == "passed"
@@ -7015,6 +7492,8 @@ def _gate_a_claim_limitations(src: dict, residual_ids: list) -> list:
 
 
 def _source_at_commit(commit_sha: str, context: str) -> dict:
+    if commit_sha in _GIT_SOURCE_CACHE:
+        return _GIT_SOURCE_CACHE[commit_sha]
     proc = subprocess.run(
         ["git", "show", f"{commit_sha}:{SOURCE.as_posix()}"],
         cwd=ROOT, check=False, capture_output=True, text=True,
@@ -7023,10 +7502,88 @@ def _source_at_commit(commit_sha: str, context: str) -> dict:
         raise LedgerError(
             f"{context}: candidate commit does not contain the canonical source")
     try:
-        return json.loads(proc.stdout)
+        candidate = json.loads(proc.stdout)
+        _GIT_SOURCE_CACHE[commit_sha] = candidate
+        return candidate
     except json.JSONDecodeError as exc:
         raise LedgerError(
             f"{context}: candidate canonical source is not valid JSON") from exc
+
+
+def _validate_legacy_v1_closure_receipt(rec: dict, audit: dict):
+    ctx = "closure_record"
+    receipt = rec["verification_receipt"]
+    rctx = f"{ctx}.verification_receipt"
+    if not isinstance(receipt, dict):
+        raise LedgerError(f"{rctx} must be an object")
+    exact_keys(
+        receipt,
+        ["candidate_commit_sha", "verified_at_utc", "commands",
+         "result", "transcript_sha256"],
+        rctx,
+    )
+    allowlisted = (
+        rec["candidate_commit_sha"] == LEGACY_V1_CLOSURE_CANDIDATE
+        and rec["source_version"] == LEGACY_V1_CLOSURE_SOURCE
+        and audit["id"] == LEGACY_V1_CLOSURE_AUDIT
+        and receipt.get("transcript_sha256") == LEGACY_V1_CLOSURE_TRANSCRIPT
+    )
+    if not allowlisted:
+        raise LedgerError(
+            f"{rctx}: legacy v1 is accepted only for the exact state-form "
+            "candidate, source, audit, and transcript allowlist")
+    if receipt["candidate_commit_sha"] != rec["candidate_commit_sha"]:
+        raise LedgerError(
+            f"{rctx}: candidate commit must match closure candidate")
+    _require_utc(receipt["verified_at_utc"], f"{rctx}.verified_at_utc")
+    if receipt["commands"] != list(REQUIRED_VERIFY_COMMANDS):
+        raise LedgerError(
+            f"{rctx}.commands must equal the legacy required verifier chain")
+    if receipt["result"] != "all-passed":
+        raise LedgerError(f"{rctx}.result must be all-passed")
+    if not SHA256_HEX_RE.fullmatch(require_str(
+            receipt, "transcript_sha256", rctx)):
+        raise LedgerError(f"{rctx}.transcript_sha256 is malformed")
+
+
+def _validate_v2_closure_receipt(rec: dict, audit: dict):
+    ctx = "closure_record"
+    rctx = f"{ctx}.verification_receipt_ref"
+    receipt_ref = require_str(rec, "verification_receipt_ref", ctx)
+    if audit.get("verification_receipt_ref") != receipt_ref:
+        raise LedgerError(
+            f"{ctx}: audit and closure must bind the same verification receipt")
+    receipt = _validated_compact_verification_receipt(
+        receipt_ref,
+        rctx,
+        rec["source_version"],
+        audit["id"],
+    )
+    module = sys.modules.get("_rights_verification_receipt_for_ledger")
+    transition_validator = getattr(
+        module, "validate_recorded_transition", None)
+    if not callable(transition_validator):
+        raise LedgerError(
+            f"{rctx}: receipt validator exposes no recorded-transition check")
+    try:
+        semantic_candidate_sha = transition_validator(
+            receipt,
+            rec["candidate_commit_sha"],
+            "audit",
+            receipt_path=receipt_ref,
+            root=ROOT,
+        )
+    except Exception as exc:
+        raise LedgerError(
+            f"{rctx}: recorded audit transition is invalid: {exc}") from exc
+    if not GIT_COMMIT_RE.fullmatch(semantic_candidate_sha):
+        raise LedgerError(
+            f"{rctx}: recorded transition returned no semantic candidate")
+    semantic_candidate = _source_at_commit(
+        semantic_candidate_sha, f"{rctx}.semantic_candidate")
+    if semantic_candidate.get("source_version") != rec["source_version"]:
+        raise LedgerError(
+            f"{rctx}: receipt-bound semantic source version does not match")
 
 
 def validate_closure_record(src: dict, readiness, resolution: dict):
@@ -7037,13 +7594,16 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if rec is None:
         return
     ctx = "closure_record"
+    if src["source_version"] == LEGACY_V1_CLOSURE_SOURCE:
+        receipt_field = "verification_receipt"
+    else:
+        receipt_field = "verification_receipt_ref"
     exact_keys(
         rec,
         ["gate", "permitted_claim", "candidate_commit_sha", "source_version",
          "scope_sha256", "envelope_ref", "audit_cutoff_at_utc",
          "scope_audit_ref", "assurance_record_refs", "residual_refs",
-         "claim_limitations", "verification_receipt",
-         "closure_policy_ref"],
+         "claim_limitations", receipt_field, "closure_policy_ref"],
         ctx,
     )
     if rec["gate"] != "gate-a":
@@ -7091,28 +7651,15 @@ def validate_closure_record(src: dict, readiness, resolution: dict):
     if rec["claim_limitations"] != limitations:
         raise LedgerError(
             f"{ctx}.claim_limitations must bind every derived residual exactly")
-    receipt = rec["verification_receipt"]
-    rctx = f"{ctx}.verification_receipt"
-    if not isinstance(receipt, dict):
-        raise LedgerError(f"{rctx} must be an object")
-    exact_keys(receipt,
-               ["candidate_commit_sha", "verified_at_utc", "commands",
-                "result", "transcript_sha256"], rctx)
-    if receipt["candidate_commit_sha"] != rec["candidate_commit_sha"]:
-        raise LedgerError(f"{rctx}: candidate commit must match closure candidate")
-    _require_utc(receipt["verified_at_utc"], f"{rctx}.verified_at_utc")
-    if receipt["commands"] != list(REQUIRED_VERIFY_COMMANDS):
-        raise LedgerError(f"{rctx}.commands must equal the required verifier chain")
-    if receipt["result"] != "all-passed":
-        raise LedgerError(f"{rctx}.result must be all-passed")
-    if not SHA256_HEX_RE.fullmatch(require_str(
-            receipt, "transcript_sha256", rctx)):
-        raise LedgerError(f"{rctx}.transcript_sha256 is malformed")
     policy = require_str(rec, "closure_policy_ref", ctx)
     if policy != SCOPE_AUDIT_POLICY_BASIS:
         raise LedgerError(
             f"{ctx}.closure_policy_ref must equal the checker-owned policy")
     validate_reference(policy, f"{ctx}.closure_policy_ref")
+    if receipt_field == "verification_receipt":
+        _validate_legacy_v1_closure_receipt(rec, audit)
+    else:
+        _validate_v2_closure_receipt(rec, audit)
     if src["acceptance_gate"]["gate_a_status"] != "passed":
         raise LedgerError(
             f"{ctx}: a closure record requires gate_a_status passed")
@@ -7222,13 +7769,29 @@ def validate(src: dict):
 
 # ── negative controls: sabotage first, trust after ───────────────────────────
 
+def _transient_control_audit(src: dict, title: str) -> dict:
+    """Build a synthetic current audit without reusing a bound receipt."""
+    audit = copy.deepcopy(src["scope_audits"][-1])
+    audit.update({
+        "id": "FS-SAU-99",
+        "title": title,
+    })
+    if "verification_receipt_ref" in audit:
+        audit.update({
+            "id": "FS-SAU-99",
+            "result": "pending",
+            "commands": list(SCOPE_AUDIT_V2_PENDING_COMMANDS),
+        })
+        audit.pop("verification_receipt_ref")
+    return audit
+
 def negative_controls(src: dict) -> int:
     """Each mutation must be rejected; a check never watched failing is not a
     check."""
     controls = []
 
-    def control(name, mutate, expect=None):
-        controls.append((name, mutate, expect))
+    def control(name, mutate, expect=None, validator=None):
+        controls.append((name, mutate, expect, validator))
 
     def first_claim(s):
         return s["claims"][0]
@@ -7453,7 +8016,10 @@ def negative_controls(src: dict) -> int:
     control("hand-authored resolution_status is refused",
             lambda s: first_claim(s).update(
                 {"resolution_status": "resolved-for-claim"}))
-    control("empty array without deferral is refused", _drop_empty_deferral)
+    control("empty array without deferral is refused",
+            lambda s: s.update({"thresholds": []}),
+            "thresholds is empty with no deferral record",
+            validate_deferred)
     control("the envelope stub can route, never assure",
             _stub_operationally_assured)
     control("a stale bound-source digest is caught",
@@ -7551,24 +8117,40 @@ def negative_controls(src: dict) -> int:
             _closure_env_stub, "must be FS-ENV-01")
     control("a closure record requires a current-source repository audit",
             _closure_unknown_audit, "current-source repository audit")
-    control("a closure cutoff must match its repository audit",
-            _closure_wrong_cutoff, "must equal audit execution")
-    control("closure assurance refs are checker-derived",
-            _closure_wrong_assurance, "checker-derived set")
-    control("closure residual refs are checker-derived",
-            _closure_wrong_residuals, "derived set")
-    control("closure claim limitations bind residuals exactly",
-            _closure_wrong_limitations, "bind every derived residual")
-    control("closure verification binds the candidate",
-            _closure_wrong_verifier_candidate, "must match closure candidate")
-    control("closure verification runs the exact command chain",
-            _closure_wrong_verifier_commands, "required verifier chain")
-    control("closure verification result is exact",
-            _closure_wrong_verifier_result, "must be all-passed")
-    control("closure verification transcript is digest-bound",
-            _closure_bad_transcript, "is malformed")
-    control("closure policy is checker-owned",
-            _closure_bad_policy, "must equal the checker-owned policy")
+    current_audits = qualifying_scope_audits(src)
+    detailed_closure_receipt = (
+        src["source_version"] == LEGACY_V1_CLOSURE_SOURCE
+        or any("verification_receipt_ref" in row for row in current_audits)
+    )
+    if detailed_closure_receipt:
+        control("a closure cutoff must match its repository audit",
+                _closure_wrong_cutoff, "must equal audit execution")
+        control("closure assurance refs are checker-derived",
+                _closure_wrong_assurance, "checker-derived set")
+        control("closure residual refs are checker-derived",
+                _closure_wrong_residuals, "derived set")
+        control("closure claim limitations bind residuals exactly",
+                _closure_wrong_limitations, "bind every derived residual")
+        if src["source_version"] != LEGACY_V1_CLOSURE_SOURCE:
+            control("closure verification uses a content-addressed v2 receipt",
+                    _closure_bad_v2_receipt_ref, "content-addressed")
+            control("audit and closure bind the same v2 receipt",
+                    _closure_mismatched_v2_receipt_ref,
+                    "same verification receipt")
+            control("v2 closure refuses an inline v1 downgrade",
+                    _closure_v1_downgrade, "missing keys")
+        else:
+            control("closure verification binds the candidate",
+                    _closure_wrong_verifier_candidate,
+                    "must match closure candidate")
+            control("closure verification runs the exact command chain",
+                    _closure_wrong_verifier_commands, "required verifier chain")
+            control("closure verification result is exact",
+                    _closure_wrong_verifier_result, "must be all-passed")
+            control("closure verification transcript is digest-bound",
+                    _closure_bad_transcript, "is malformed")
+        control("closure policy is checker-owned",
+                _closure_bad_policy, "must equal the checker-owned policy")
     control("R7 cannot be marked unbuilt after its checks land",
             _r7_unbuilt, "repository-audit state")
     control("R7 cannot be relabelled available",
@@ -7953,12 +8535,9 @@ def negative_controls(src: dict) -> int:
     gate_a_row["severity"] = (
         "critical — semantic control for a scope-map defect"
     )
-    control_audit = copy.deepcopy(gate_a_critical["scope_audits"][-1])
-    control_audit.update({
-        "id": "FS-SAU-99",
-        "title": "Semantic-control current audit",
-        "scope_sha256": review_scope_digest(gate_a_critical),
-    })
+    control_audit = _transient_control_audit(
+        gate_a_critical, "Semantic-control current audit")
+    control_audit["scope_sha256"] = review_scope_digest(gate_a_critical)
     gate_a_critical["scope_audits"].append(control_audit)
     validate(gate_a_critical)
     gate_a_rows, _ = compute_gate_a_readiness(
@@ -7999,34 +8578,39 @@ def negative_controls(src: dict) -> int:
         )
 
     passed = 0
+    executed = set()
+    validation_entries = {}
     for entry in controls:
-        name, mutate = entry[0], entry[1]
-        expect = entry[2] if len(entry) > 2 else None
+        name, mutate, expect, validator = entry
         if (src["coverage_population"]["status"] != "complete"
                 and getattr(mutate, "__name__", "").startswith(
                     ("_closure", "_scope_audit"))):
             continue
+        if name in executed:
+            raise LedgerError(
+                f"negative control registered or executed twice: {name}")
+        executed.add(name)
         mutant = copy.deepcopy(src)
-        if mutant.get("scope_audits"):
-            control_audit = copy.deepcopy(mutant["scope_audits"][-1])
-            control_audit.update({
-                "id": "FS-SAU-99",
-                "title": "Watched-mutation current audit",
-            })
+        is_closure_mutation = getattr(
+            mutate, "__name__", "").startswith("_closure")
+        if mutant.get("scope_audits") and not is_closure_mutation:
+            control_audit = _transient_control_audit(
+                mutant, "Watched-mutation current audit")
             mutant["scope_audits"].append(control_audit)
-        if not getattr(mutate, "__name__", "").startswith("_closure"):
+        if not is_closure_mutation:
             mutant["closure_record"] = None
             mutant["acceptance_gate"].update({
                 "verdict": VERDICT_NOT_PASSED,
                 "gate_a_status": "not-passed",
             })
+        mutate(mutant)
+        if (name != "the current scope audit binds the semantic scope digest"
+                and mutant.get("scope_audits")):
+            mutant["scope_audits"][-1]["scope_sha256"] = \
+                review_scope_digest(mutant)
+        validation_entries[name] = validation_entries.get(name, 0) + 1
         try:
-            mutate(mutant)
-            if (name != "the current scope audit binds the semantic scope digest"
-                    and mutant.get("scope_audits")):
-                mutant["scope_audits"][-1]["scope_sha256"] = \
-                    review_scope_digest(mutant)
-            validate(mutant)
+            (validator or validate)(mutant)
         except LedgerError as exc:
             if expect is not None and expect not in str(exc):
                 raise LedgerError(
@@ -8036,6 +8620,12 @@ def negative_controls(src: dict) -> int:
             passed += 1
             continue
         raise LedgerError(f"negative control failed to fail: {name}")
+    if (
+            passed != len(executed)
+            or set(validation_entries) != executed
+            or any(count != 1 for count in validation_entries.values())):
+        raise LedgerError(
+            "not every active watched control executed exactly once")
     return passed + 3
 
 
@@ -8278,14 +8868,6 @@ def _stub_operationally_assured(s):
         "history": [], "evidence_notes": [], "residual_citations": [],
         "controls": {},
     })
-
-
-def _drop_empty_deferral(s):
-    for i, entry in enumerate(s["deferred_populations"]):
-        if not s.get(entry["record_type"], []):
-            s["deferred_populations"].pop(i)
-            return
-    raise LedgerError("control setup: no empty-array deferral to drop")
 
 
 def _receipt_noncandidate(s):
@@ -8749,8 +9331,7 @@ def _mk_commission(s):
         "title": "control commission",
         "source_version": s["source_version"],
         "scope_sha256": review_scope_digest(s),
-        "protocol_sha256": hashlib.sha256(
-            (ROOT / PROTOCOL_DOC).read_bytes()).hexdigest(),
+        "protocol_sha256": hashlib.sha256(_input_bytes(PROTOCOL_DOC)).hexdigest(),
         "plant_commitment_sha256": "a" * 64,
         "seed_commitment_sha256": "b" * 64,
         "commissioned_at_utc": "2026-08-14T00:00:00Z",
@@ -8895,7 +9476,10 @@ def _mk_closure(s):
     resolution = compute_resolution(s)
     residuals = _gate_a_residual_ids(s, resolution)
     audit = s["scope_audits"][-1]
-    audit["result"] = SCOPE_AUDIT_RESULT
+    is_v2 = s["source_version"] != LEGACY_V1_CLOSURE_SOURCE
+    receipt_ref = audit.get("verification_receipt_ref")
+    if not is_v2:
+        audit["result"] = SCOPE_AUDIT_RESULT
     audit["scope_sha256"] = review_scope_digest(s)
     prior = s.get("closure_record")
     candidate_sha = (
@@ -8915,15 +9499,27 @@ def _mk_closure(s):
         "assurance_record_refs": list(GATE_A_ASSURANCE_REFS),
         "residual_refs": residuals,
         "claim_limitations": _gate_a_claim_limitations(s, residuals),
-        "verification_receipt": {
-            "candidate_commit_sha": candidate_sha,
-            "verified_at_utc": "2026-08-18T00:00:00Z",
-            "commands": list(REQUIRED_VERIFY_COMMANDS),
-            "result": "all-passed",
-            "transcript_sha256": "e" * 64,
-        },
         "closure_policy_ref": SCOPE_AUDIT_POLICY_BASIS,
     }
+    if is_v2:
+        s["closure_record"]["verification_receipt_ref"] = (
+            receipt_ref
+            or "new-book-plans/verification-receipts/sha256-"
+            + "0" * 64 + ".json"
+        )
+    else:
+        if isinstance(prior, dict) and isinstance(
+                prior.get("verification_receipt"), dict):
+            receipt = copy.deepcopy(prior["verification_receipt"])
+        else:
+            receipt = {
+                "candidate_commit_sha": candidate_sha,
+                "verified_at_utc": "2026-08-18T00:00:00Z",
+                "commands": list(REQUIRED_VERIFY_COMMANDS),
+                "result": "all-passed",
+                "transcript_sha256": "e" * 64,
+            }
+        s["closure_record"]["verification_receipt"] = receipt
     s["acceptance_gate"]["gate_a_status"] = "passed"
     s["acceptance_gate"]["verdict"] = VERDICT_PASSED
     return s["closure_record"]
@@ -8996,6 +9592,30 @@ def _closure_wrong_verifier_result(s):
 
 def _closure_bad_transcript(s):
     _mk_closure(s)["verification_receipt"]["transcript_sha256"] = "no"
+
+
+def _closure_bad_v2_receipt_ref(s):
+    rec = _mk_closure(s)
+    rec["verification_receipt_ref"] = "not-a-receipt"
+    s["scope_audits"][-1]["verification_receipt_ref"] = "not-a-receipt"
+
+
+def _closure_mismatched_v2_receipt_ref(s):
+    _mk_closure(s)["verification_receipt_ref"] = (
+        "new-book-plans/verification-receipts/sha256-" + "0" * 64 + ".json"
+    )
+
+
+def _closure_v1_downgrade(s):
+    rec = _mk_closure(s)
+    rec.pop("verification_receipt_ref")
+    rec["verification_receipt"] = {
+        "candidate_commit_sha": rec["candidate_commit_sha"],
+        "verified_at_utc": "2026-08-23T00:00:00Z",
+        "commands": [],
+        "result": "all-passed",
+        "transcript_sha256": "0" * 64,
+    }
 
 
 def _closure_bad_policy(s):
@@ -10347,11 +10967,168 @@ def render_reader(src: dict, resolution: dict) -> str:
     return "\n".join(out)
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true",
-                        help="validate and confirm the report is current")
-    args = parser.parse_args()
+def parse_lock_wait_seconds(value: str) -> float:
+    """Argparse type for an explicit finite, non-negative lock timeout."""
+    try:
+        seconds = float(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(
+            "lock wait must be a number of seconds") from exc
+    if not math.isfinite(seconds) or seconds < 0:
+        raise argparse.ArgumentTypeError(
+            "lock wait must be finite and non-negative")
+    return seconds
+
+
+@contextlib.contextmanager
+def verification_refresh_lock(command_name: str, *, wait_seconds: float = 0.0):
+    helper = ROOT / "new-book-plans/verification_lock.py"
+    if not helper.is_file():
+        raise LedgerError(
+            "verification lock helper is missing; command refuses to run")
+    try:
+        module = load_cached_source_module("verification_lock", helper)
+    except Exception as exc:
+        raise LedgerError(
+            f"cannot load the verification lock helper: {exc}") from exc
+    lock_type = getattr(module, "VerificationLock", None)
+    if lock_type is None:
+        raise LedgerError(
+            "verification lock helper exposes no VerificationLock")
+    busy_type = getattr(module, "VerificationLockBusy", ())
+    try:
+        with lock_type(command_name, wait_seconds=wait_seconds):
+            yield
+    except busy_type as exc:
+        print(
+            f"verification lock busy: {exc}",
+            file=sys.stderr,
+        )
+        raise SystemExit(getattr(module, "EX_TEMPFAIL", 75)) from exc
+
+
+def atomic_refresh_and_check(outputs, snapshot):
+    """Replace all outputs or restore their exact prior byte/mode set."""
+    prepared = []
+    replaced = set()
+    seen = set()
+
+    def write_temp(path, prefix, payload, mode):
+        descriptor, raw_temp = tempfile.mkstemp(
+            prefix=f".{path.name}.{prefix}-", dir=path.parent)
+        temp_path = pathlib.Path(raw_temp)
+        try:
+            with os.fdopen(descriptor, "wb") as handle:
+                handle.write(payload)
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.chmod(temp_path, mode)
+            if temp_path.read_bytes() != payload:
+                raise LedgerError(
+                    f"temporary {prefix} byte check failed: {path}")
+        except BaseException:
+            try:
+                os.close(descriptor)
+            except OSError:
+                pass
+            try:
+                temp_path.unlink()
+            except FileNotFoundError:
+                pass
+            raise
+        return temp_path
+
+    def rollback():
+        for entry in reversed(prepared):
+            path = entry["path"]
+            if path not in replaced:
+                continue
+            if entry["existed"]:
+                os.replace(entry["backup"], path)
+                entry["backup"] = None
+            else:
+                try:
+                    path.unlink()
+                except FileNotFoundError:
+                    pass
+        for entry in prepared:
+            path = entry["path"]
+            if entry["existed"]:
+                if (
+                        path.read_bytes() != entry["original"]
+                        or stat.S_IMODE(path.stat().st_mode) != entry["mode"]
+                ):
+                    raise LedgerError(
+                        f"atomic refresh rollback verification failed: {path}")
+            elif path.exists():
+                raise LedgerError(
+                    f"atomic refresh rollback left a new output: {path}")
+
+    try:
+        for raw_path, text in outputs:
+            path = pathlib.Path(raw_path).resolve()
+            if path in seen:
+                raise LedgerError(f"duplicate atomic output path: {path}")
+            seen.add(path)
+            payload = text.encode("utf-8")
+            existed = path.exists()
+            original = snapshot.read_bytes(path) if existed else None
+            mode = snapshot.mode(path) if existed else 0o644
+            entry = {
+                "path": path,
+                "temp": None,
+                "payload": payload,
+                "mode": mode,
+                "existed": existed,
+                "original": original,
+                "backup": None,
+            }
+            prepared.append(entry)
+            entry["temp"] = write_temp(path, "refresh", payload, mode)
+            if existed:
+                entry["backup"] = write_temp(
+                    path, "backup", original, mode)
+
+        snapshot.assert_metadata_unchanged()
+        for entry in prepared:
+            if not entry["existed"] and entry["path"].exists():
+                raise LedgerError(
+                    f"new output appeared before atomic refresh: {entry['path']}")
+        for entry in prepared:
+            path = entry["path"]
+            replaced.add(path)
+            os.replace(entry["temp"], path)
+            entry["temp"] = None
+            if path.read_bytes() != entry["payload"]:
+                raise LedgerError(
+                    f"refreshed output failed its byte check: {path}")
+            if stat.S_IMODE(path.stat().st_mode) != entry["mode"]:
+                raise LedgerError(
+                    f"refreshed output mode drifted: {path}")
+            snapshot.advance_replacement(path, entry["payload"])
+        snapshot.assert_unchanged()
+    except BaseException as exc:
+        try:
+            rollback()
+        except Exception as rollback_exc:
+            raise LedgerError(
+                f"atomic refresh failed and rollback failed: {rollback_exc}"
+            ) from rollback_exc
+        if isinstance(exc, (KeyboardInterrupt, SystemExit, LedgerError)):
+            raise
+        raise LedgerError(f"atomic refresh failed: {exc}") from exc
+    finally:
+        for entry in prepared:
+            for key in ("temp", "backup"):
+                temp_path = entry[key]
+                if temp_path is not None:
+                    try:
+                        temp_path.unlink()
+                    except FileNotFoundError:
+                        pass
+
+
+def _run(*, snapshot, check: bool, refresh_and_check: bool):
 
     src = load_json(SOURCE)
     resolution = validate(src)
@@ -10364,34 +11141,93 @@ def main():
     out_path = ROOT / OUTPUT
     reader_out_path = ROOT / READER_OUTPUT
     map_path = ROOT / COVERAGE_MAP
-    if args.check:
-        current = out_path.read_text(encoding="utf-8") if out_path.exists() else ""
+    if check:
+        current = _input_text(out_path) if out_path.exists() else ""
         if current != rendered:
             raise LedgerError(f"{OUTPUT} is STALE — rerun without --check")
-        current_reader = reader_out_path.read_text(
-            encoding="utf-8"
-        ) if reader_out_path.exists() else ""
+        current_reader = (
+            _input_text(reader_out_path) if reader_out_path.exists() else "")
         if current_reader != rendered_reader:
             raise LedgerError(
                 f"{READER_OUTPUT} is STALE — rerun without --check"
             )
-        if map_path.read_text(encoding="utf-8") != spliced_map:
+        if _input_text(map_path) != spliced_map:
             raise LedgerError(
                 f"{COVERAGE_MAP} generated region is STALE — rerun without "
                 "--check"
             )
+        snapshot.assert_unchanged()
         print(f"{OUTPUT}, {READER_OUTPUT}, and the coverage-map region are "
               f"current; {controls} structural negative controls pass; "
               "enum-mapping and "
               "residual-coverage closures over the seven reviewed sources hold; "
               "routing inventory only — nothing established beyond each row's "
               "own posture")
+    elif refresh_and_check:
+        atomic_refresh_and_check(
+            [
+                (out_path, rendered),
+                (reader_out_path, rendered_reader),
+                (map_path, spliced_map),
+            ],
+            snapshot,
+        )
+        print(
+            f"refreshed and checked {OUTPUT}, {READER_OUTPUT}, and the "
+            f"coverage-map region; {controls} structural negative controls "
+            "pass; enum-mapping and residual-coverage closures over the seven "
+            "reviewed sources hold; routing inventory only — nothing "
+            "established beyond each row's own posture"
+        )
     else:
         out_path.write_text(rendered, encoding="utf-8")
         reader_out_path.write_text(rendered_reader, encoding="utf-8")
         map_path.write_text(spliced_map, encoding="utf-8")
         print(f"wrote {OUTPUT}, {READER_OUTPUT}, and the coverage-map region; "
               f"{controls} structural negative controls pass")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument("--check", action="store_true",
+                       help="validate and confirm the report is current")
+    modes.add_argument(
+        "--refresh-and-check",
+        action="store_true",
+        help="atomically refresh outputs and confirm their bytes under the lock",
+    )
+    parser.add_argument(
+        "--wait-for-lock",
+        type=parse_lock_wait_seconds,
+        default=None,
+        metavar="SECONDS",
+        help="wait up to SECONDS for the generation/refresh lock",
+    )
+    args = parser.parse_args()
+    if args.check and args.wait_for_lock is not None:
+        parser.error("--wait-for-lock is unavailable with lock-free --check")
+    command_name = (
+        "script-13-refresh" if args.refresh_and_check
+        else "script-13-check" if args.check
+        else "script-13-generate"
+    )
+    snapshot = ImmutableRepositoryInputs(ROOT)
+    install_immutable_input_snapshot(snapshot)
+    _input_bytes(pathlib.Path(__file__))
+    lock_context = (
+        contextlib.nullcontext() if args.check
+        else verification_refresh_lock(
+            command_name,
+            wait_seconds=args.wait_for_lock or 0.0,
+        )
+    )
+    with lock_context:
+        _run(
+            snapshot=snapshot,
+            check=args.check,
+            refresh_and_check=args.refresh_and_check,
+        )
 
 
 if __name__ == "__main__":

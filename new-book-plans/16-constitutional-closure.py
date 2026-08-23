@@ -9,10 +9,11 @@ source. It reuses script 13's validator and generated defect resolution.
 from __future__ import annotations
 
 import argparse
+import contextlib
 import copy
-import importlib.util
 import pathlib
 import sys
+import types
 
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -25,16 +26,32 @@ class ClosureAuditError(ValueError):
     pass
 
 
-def load_ledger_module():
-    spec = importlib.util.spec_from_file_location("full_society_ledger", LEDGER_SCRIPT)
-    if spec is None or spec.loader is None:
-        raise ClosureAuditError("cannot load the canonical ledger validator")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
+def load_cached_ledger_module():
+    """Execute one exact read of Script 13 and retain those bytes for binding."""
+    try:
+        payload = LEDGER_SCRIPT.read_bytes()
+        code = compile(payload, str(LEDGER_SCRIPT), "exec", dont_inherit=True)
+    except (OSError, SyntaxError, ValueError) as exc:
+        raise ClosureAuditError(
+            f"cannot load the canonical ledger validator: {exc}") from exc
+    module_name = "full_society_ledger"
+    previous = sys.modules.get(module_name)
+    module = types.ModuleType(module_name)
+    module.__file__ = str(LEDGER_SCRIPT)
+    module.__package__ = ""
+    sys.modules[module_name] = module
+    try:
+        exec(code, module.__dict__)
+    except BaseException:
+        if previous is None:
+            sys.modules.pop(module_name, None)
+        else:
+            sys.modules[module_name] = previous
+        raise
+    return module, payload
 
 
-LEDGER = load_ledger_module()
+LEDGER, LEDGER_SCRIPT_BYTES = load_cached_ledger_module()
 
 MODEL_NAMES = {
     "FS-RTE-01": "Nibli formal entailment",
@@ -1109,6 +1126,12 @@ def append_control_audit(changed, title):
         return
     audit = copy.deepcopy(changed["scope_audits"][-1])
     audit.update({"id": "FS-SAU-98", "title": title})
+    if "verification_receipt_ref" in audit:
+        audit.update({
+            "result": "pending",
+            "commands": list(LEDGER.SCOPE_AUDIT_V2_PENDING_COMMANDS),
+        })
+        audit.pop("verification_receipt_ref")
     changed["scope_audits"].append(audit)
 
 
@@ -1146,9 +1169,15 @@ def claim_contract(source, claim_ref):
 
 def negative_controls(source):
     controls = []
+    executions = {}
 
     def add(name, mutate, contains=None):
+        if name in executions:
+            raise ClosureAuditError(
+                f"watched control registered twice: {name}")
+        executions[name] = 0
         expect_failure(name, source, mutate, contains)
+        executions[name] += 1
         controls.append(name)
 
     def substitute_floor_delivery_with_wrong_lifecycle(s):
@@ -1596,6 +1625,11 @@ def negative_controls(source):
         controls.append("body cannot decide execute audit and finally remedy itself")
     else:
         raise ClosureAuditError("self-certification control did not fail")
+    if any(count != 1 for count in executions.values()):
+        raise ClosureAuditError(
+            "not every registered watched control executed exactly once")
+    if len(controls) != len(set(controls)):
+        raise ClosureAuditError("a watched control name is duplicated")
     return len(controls)
 
 
@@ -1711,24 +1745,72 @@ def render(source, profiles, allocations, function_row, dependency_claims,
     return "\n".join(out)
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true")
-    args = parser.parse_args()
+def _run(*, snapshot, check: bool, refresh_and_check: bool):
     source = LEDGER.load_json(LEDGER.SOURCE)
     resolution = LEDGER.validate(source)
     contract = validate_contract(source, resolution)
     controls = negative_controls(source)
     rendered = render(source, *contract[:4], *contract[4:], resolution)
     gate_status = source["acceptance_gate"]["gate_a_status"]
-    if args.check:
-        current = OUTPUT.read_text(encoding="utf-8") if OUTPUT.exists() else ""
+    if check:
+        current = LEDGER._input_text(OUTPUT) if OUTPUT.exists() else ""
         if current != rendered:
             raise ClosureAuditError(f"{OUTPUT.relative_to(ROOT)} is STALE — rerun without --check")
+        snapshot.assert_unchanged()
         print(f"{OUTPUT.relative_to(ROOT)} is current; {controls} watched-failing structural controls pass; claim results are contract-only; Gate A {gate_status}")
+    elif refresh_and_check:
+        LEDGER.atomic_refresh_and_check([(OUTPUT, rendered)], snapshot)
+        print(
+            f"refreshed and checked {OUTPUT.relative_to(ROOT)}; {controls} "
+            "watched-failing structural controls pass; claim results are "
+            f"contract-only; Gate A {gate_status}"
+        )
     else:
         OUTPUT.write_text(rendered, encoding="utf-8")
         print(f"wrote {OUTPUT.relative_to(ROOT)}; {controls} watched-failing structural controls pass; Gate A {gate_status}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument("--check", action="store_true")
+    modes.add_argument(
+        "--refresh-and-check",
+        action="store_true",
+        help="atomically refresh the audit and confirm its bytes under the lock",
+    )
+    parser.add_argument(
+        "--wait-for-lock",
+        type=LEDGER.parse_lock_wait_seconds,
+        default=None,
+        metavar="SECONDS",
+        help="wait up to SECONDS for the generation/refresh lock",
+    )
+    args = parser.parse_args()
+    if args.check and args.wait_for_lock is not None:
+        parser.error("--wait-for-lock is unavailable with lock-free --check")
+    command_name = (
+        "script-16-refresh" if args.refresh_and_check
+        else "script-16-check" if args.check
+        else "script-16-generate"
+    )
+    snapshot = LEDGER.ImmutableRepositoryInputs(ROOT)
+    snapshot.adopt_bytes(LEDGER_SCRIPT, LEDGER_SCRIPT_BYTES)
+    LEDGER.install_immutable_input_snapshot(snapshot)
+    LEDGER._input_bytes(pathlib.Path(__file__))
+    lock_context = (
+        contextlib.nullcontext() if args.check
+        else LEDGER.verification_refresh_lock(
+            command_name,
+            wait_seconds=args.wait_for_lock or 0.0,
+        )
+    )
+    with lock_context:
+        _run(
+            snapshot=snapshot,
+            check=args.check,
+            refresh_and_check=args.refresh_and_check,
+        )
 
 
 if __name__ == "__main__":

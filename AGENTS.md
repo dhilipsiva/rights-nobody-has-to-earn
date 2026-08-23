@@ -12,7 +12,10 @@ Run from the repository root:
 
 ```bash
 ./verify.sh --quick   # schema/freshness; skips executable suites
-./verify.sh           # authoritative suite; required before every commit
+./verify.sh           # authoritative full suite
+./verify.sh --emit-receipt new-book-plans/verification-receipts
+./verify.sh --wait-for-lock 300 --emit-receipt new-book-plans/verification-receipts
+./verify.sh --commit-gate <receipt> --transition audit|closure|tracker
 ./verify.sh --only book-1/<NN-chapter>.pins.nibli   # one pin suite in a fresh engine
 ./verify.sh --table   # print the claim table
 python3 new-book-plans/5-spine-gen.py new-book-plans/constitution.nibli new-book-plans/3-spine.md --check
@@ -32,9 +35,28 @@ python3 new-book-plans/reader-evidence-admission-gate.py --self-test
 python3 new-book-plans/15-pilot-reader-artifacts.py --check
 python3 new-book-plans/17-full-society-power-source-manifest.py --check
 python3 new-book-plans/13-full-society-ledger.py --check
+python3 new-book-plans/13-full-society-ledger.py --refresh-and-check
 python3 new-book-plans/16-constitutional-closure.py --check
+python3 new-book-plans/16-constitutional-closure.py --refresh-and-check
 python3 registry/check.py
 ```
+
+**Superseding commit rule, 2026-08-23.** A semantic, executable, verifier,
+fixture, engine, or generated-artifact change requires one fully staged
+`--emit-receipt` full run. Do not run quick immediately before that unchanged
+full run. Only the exact following audit, closure, and tracker administrative
+successors may use `--commit-gate`, and only while the receipt's heavyweight
+dependency manifest is byte-identical and their transition-specific structural
+validators pass. Missing local evidence or any unexpected delta fails closed
+without silently launching a full run. Existing default, quick, only, and table
+modes retain their meanings; quick and focused modes are not semantic gates.
+
+Heavyweight verifier entry points share one Git-common-directory kernel lock.
+Contention exits 75 with sanitised owner details unless `--wait-for-lock
+SECONDS` supplies an explicit bounded wait. Scripts 13 and 16 use atomic
+`--refresh-and-check` snapshots with final installed-byte rereads and rollback;
+state-form execution retains its 64 main and 17 counterfactual byte-balanced
+shards under a sliding four-worker, canonical-output, fail-fast scheduler.
 
 Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs live at `--check` — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. The same run generates and freshness-checks `full-society-ledger.md` and `full-society-reader-ledger.md`; the latter is structural navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier. `new-book-plans/4-strata.py` is retained wrong on purpose as a method-part exhibit — do not repair it; `18-coverage-contract-migration.py` is a reviewed-source migration helper only, outside the verify chain, and script 13 must validate everything it emits.
 

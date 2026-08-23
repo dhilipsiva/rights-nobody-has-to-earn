@@ -190,8 +190,8 @@ everyone stands on conditionally.
 
 ## The standing roots do not replace this line
 
-One consequence follows from this that ought to be said out loud. Standing no longer
-waits for someone to maintain a roster. An externally supplied birth fact, first
+One consequence follows from this that ought to be said out loud. Standing no longer waits for someone to maintain a roster.
+An externally supplied birth fact, first
 contact, physical presence, or effective control establishes personhood immediately;
 the encounter name may be temporary, and proves no civil identity, citizenship,
 family relationship, liability, or guilt. Missing or disputed records therefore do

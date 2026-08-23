@@ -13,6 +13,13 @@ import re
 import sys
 from typing import Iterable, Sequence
 
+from verification_lock import (
+    EX_TEMPFAIL,
+    VerificationLock,
+    VerificationLockBusy,
+    VerificationLockError,
+)
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CONSTITUTION = ROOT / "new-book-plans" / "constitution.nibli"
 STATE_FORM_PINS = ROOT / "new-book-plans" / "state-form.pins.nibli"
@@ -40,6 +47,8 @@ EXPECTED_MAIN_PIN_COUNT = 391
 EXPECTED_COUNTERFACTUAL_PIN_COUNT = 51
 MAIN_SHARD_COUNT = 64
 COUNTERFACTUAL_SHARD_COUNT = 17
+DEFAULT_SHARD_PARTITION = "bytes"
+SHARD_PARTITION_MODES = ("bytes", "count")
 EXPECTED_MAIN_PINS_SHA256 = (
     "41c36aa72b5330bd515363bade95ff118492e60d3e8ba76735c6c3aa2bebfbc2"
 )
@@ -4341,6 +4350,9 @@ def _validate_counterfactual_pin_manifest(text: str) -> None:
 _SHARD_FIXTURE_TERM_RE = re.compile(
     r"\bSF(?:Main|Acc)[A-Za-z0-9_]*\b"
 )
+_SHARD_RELATION_CALL_RE = re.compile(
+    r"(?<![A-Za-z0-9_])(?:[a-z][A-Za-z0-9_]*)\("
+)
 
 
 @dataclass(frozen=True)
@@ -4355,6 +4367,14 @@ class RenderedPinShard:
     name: str
     text: str
     query_count: int
+    fixture_fact_count: int
+    relation_call_count: int
+    projection_utf8_bytes: int
+    utf8_bytes: int
+    fixture_facts_sha256: str
+    query_stream_sha256: str
+    projection_sha256: str
+    partition_strategy: str
 
 
 def _canonical_pin_facts(text: str) -> tuple[str, ...]:
@@ -4387,7 +4407,12 @@ def _canonical_pin_query_pairs(text: str) -> tuple[tuple[str, str], ...]:
 
 
 def _pin_query_stream_sha256(text: str) -> str:
-    pairs = _canonical_pin_query_pairs(text)
+    return _pin_pairs_sha256(_canonical_pin_query_pairs(text))
+
+
+def _pin_pairs_sha256(
+    pairs: Sequence[tuple[str, str]],
+) -> str:
     serialized = "".join(
         f"{query}\n{expectation}\n"
         for query, expectation in pairs
@@ -4484,12 +4509,183 @@ def _balanced_pin_slices(
     return tuple(slices)
 
 
+def _render_pin_projection(
+    blocks: Sequence[PinProjectionQuery],
+) -> tuple[str, tuple[str, ...], tuple[tuple[str, str], ...]]:
+    if not blocks:
+        raise RuntimeError("state-form shard projection must not be empty")
+    lines: list[str] = []
+    emitted_fact_set: set[str] = set()
+    emitted_facts: list[str] = []
+    pairs: list[tuple[str, str]] = []
+    for block in blocks:
+        for fact in block.facts:
+            if fact in emitted_fact_set:
+                continue
+            emitted_fact_set.add(fact)
+            emitted_facts.append(fact)
+            lines.append(fact)
+        lines.append(block.query_line)
+        lines.append(block.expectation_line)
+        lines.append("")
+        pairs.append((block.query_line, block.expectation_line))
+    return (
+        "\n".join(lines).rstrip() + "\n",
+        tuple(emitted_facts),
+        tuple(pairs),
+    )
+
+
+def _projection_utf8_bytes(
+    blocks: Sequence[PinProjectionQuery],
+) -> int:
+    projection, _, _ = _render_pin_projection(blocks)
+    return len(projection.encode("utf-8"))
+
+
+def _greedy_byte_slices(
+    blocks: Sequence[PinProjectionQuery],
+    capacity: int,
+) -> list[tuple[int, int]]:
+    slices: list[tuple[int, int]] = []
+    start = 0
+    while start < len(blocks):
+        end = start
+        emitted_facts: set[str] = set()
+        current_bytes = 0
+        while end < len(blocks):
+            block = blocks[end]
+            new_facts = tuple(
+                fact for fact in block.facts if fact not in emitted_facts
+            )
+            increment = sum(
+                len(f"{fact}\n".encode("utf-8")) for fact in new_facts
+            )
+            increment += len(f"{block.query_line}\n".encode("utf-8"))
+            increment += len(
+                f"{block.expectation_line}\n".encode("utf-8")
+            )
+            if end > start:
+                increment += 1  # the exact blank line between query blocks
+            if current_bytes + increment > capacity:
+                break
+            current_bytes += increment
+            emitted_facts.update(new_facts)
+            end += 1
+        if end == start:
+            raise RuntimeError(
+                "state-form byte capacity cannot hold one query block"
+            )
+        slices.append((start, end))
+        start = end
+    return slices
+
+
+def _byte_balanced_pin_slices(
+    blocks: Sequence[PinProjectionQuery],
+    shard_count: int,
+) -> tuple[tuple[int, int], ...]:
+    total = len(blocks)
+    if shard_count <= 0 or total < shard_count:
+        raise RuntimeError(
+            f"cannot divide {total} queries into {shard_count} shards"
+        )
+
+    lower = max(
+        _projection_utf8_bytes((block,)) for block in blocks
+    )
+    upper = _projection_utf8_bytes(blocks)
+    while lower < upper:
+        candidate = (lower + upper) // 2
+        if len(_greedy_byte_slices(blocks, candidate)) <= shard_count:
+            upper = candidate
+        else:
+            lower = candidate + 1
+    capacity = lower
+    slices = _greedy_byte_slices(blocks, capacity)
+
+    # A capacity feasible with fewer than the requested number of shards is
+    # also feasible with exactly that many: splitting a contiguous projection
+    # cannot make either child larger than its parent. Split the largest
+    # remaining projection at its best byte-balanced boundary.
+    while len(slices) < shard_count:
+        splittable = [
+            (index, start, end)
+            for index, (start, end) in enumerate(slices)
+            if end - start > 1
+        ]
+        if not splittable:
+            raise RuntimeError(
+                "state-form byte partition cannot reach shard census"
+            )
+        selected_index, start, end = max(
+            splittable,
+            key=lambda item: (
+                _projection_utf8_bytes(blocks[item[1]:item[2]]),
+                item[2] - item[1],
+                -item[1],
+            ),
+        )
+        midpoint = min(
+            range(start + 1, end),
+            key=lambda split: (
+                max(
+                    _projection_utf8_bytes(blocks[start:split]),
+                    _projection_utf8_bytes(blocks[split:end]),
+                ),
+                abs(
+                    _projection_utf8_bytes(blocks[start:split])
+                    - _projection_utf8_bytes(blocks[split:end])
+                ),
+                split,
+            ),
+        )
+        slices[selected_index:selected_index + 1] = [
+            (start, midpoint),
+            (midpoint, end),
+        ]
+
+    result = tuple(slices)
+    if result[0][0] != 0 or result[-1][1] != total:
+        raise RuntimeError("state-form byte shard endpoints drifted")
+    if any(
+        left_end != right_start
+        for (_, left_end), (right_start, _) in zip(
+            result,
+            result[1:],
+            strict=False,
+        )
+    ):
+        raise RuntimeError("state-form byte shard contiguity drifted")
+    if max(
+        _projection_utf8_bytes(blocks[start:end])
+        for start, end in result
+    ) > capacity:
+        raise RuntimeError("state-form byte shard capacity drifted")
+    return result
+
+
+def _pin_slices(
+    blocks: Sequence[PinProjectionQuery],
+    shard_count: int,
+    partition_mode: str,
+) -> tuple[tuple[int, int], ...]:
+    if partition_mode == "bytes":
+        return _byte_balanced_pin_slices(blocks, shard_count)
+    if partition_mode == "count":
+        return _balanced_pin_slices(len(blocks), shard_count)
+    raise RuntimeError(
+        f"unknown state-form shard partition mode: {partition_mode!r}"
+    )
+
+
 def _render_pin_shards(
     canonical: str,
     *,
     family: str,
     shard_count: int,
     allow_prisoner: bool,
+    partition_mode: str,
 ) -> tuple[RenderedPinShard, ...]:
     blocks = _canonical_pin_query_blocks(canonical)
     canonical_pairs = _canonical_pin_query_pairs(canonical)
@@ -4500,10 +4696,13 @@ def _render_pin_shards(
     projected_pairs: list[tuple[str, str]] = []
     projected_facts: set[str] = set()
     for index, (start, end) in enumerate(
-        _balanced_pin_slices(len(blocks), shard_count),
+        _pin_slices(blocks, shard_count, partition_mode),
         1,
     ):
         selected = blocks[start:end]
+        projection, emitted_facts, selected_pairs = (
+            _render_pin_projection(selected)
+        )
         header = (
             f"# State-form {family} execution shard "
             f"{index:02d} of {shard_count:02d}"
@@ -4515,22 +4714,11 @@ def _render_pin_shards(
             "# Ephemeral lossless projection of the canonical aggregate pins.",
             f"# Canonical aggregate SHA-256: {aggregate_sha256}",
             f"# Canonical query-stream SHA-256: {stream_sha256}",
+            f"# Partition strategy: {partition_mode}",
             f":expect-pins {len(selected)}",
             "",
         ]
-        emitted_facts: set[str] = set()
-        for block in selected:
-            for fact in block.facts:
-                projected_facts.add(fact)
-                if fact not in emitted_facts:
-                    lines.append(fact)
-                    emitted_facts.add(fact)
-            lines.append(block.query_line)
-            lines.append(block.expectation_line)
-            lines.append("")
-            projected_pairs.append(
-                (block.query_line, block.expectation_line)
-            )
+        lines.extend(projection.splitlines())
         rendered = "\n".join(lines).rstrip() + "\n"
         _validate_pin_surface(
             rendered,
@@ -4543,8 +4731,20 @@ def _render_pin_shards(
                 f"{family}-{index:02d}.pins.nibli",
                 rendered,
                 len(selected),
+                len(emitted_facts),
+                len(_SHARD_RELATION_CALL_RE.findall(projection)),
+                len(projection.encode("utf-8")),
+                len(rendered.encode("utf-8")),
+                _sha256_text(
+                    "".join(f"{fact}\n" for fact in emitted_facts)
+                ),
+                _pin_pairs_sha256(selected_pairs),
+                _sha256_text(projection),
+                partition_mode,
             )
         )
+        projected_facts.update(emitted_facts)
+        projected_pairs.extend(selected_pairs)
     if tuple(projected_pairs) != canonical_pairs:
         raise RuntimeError(
             f"state-form {family} shard query stream is not lossless"
@@ -4556,7 +4756,9 @@ def _render_pin_shards(
     return tuple(shards)
 
 
-def render_state_form_shard_bundle() -> tuple[RenderedPinShard, ...]:
+def render_state_form_shard_bundle(
+    partition_mode: str = DEFAULT_SHARD_PARTITION,
+) -> tuple[RenderedPinShard, ...]:
     main = render_state_form_pins()
     counterfactual = render_state_form_counterfactual_pins()
     shards = (
@@ -4565,12 +4767,14 @@ def render_state_form_shard_bundle() -> tuple[RenderedPinShard, ...]:
             family="main",
             shard_count=MAIN_SHARD_COUNT,
             allow_prisoner=False,
+            partition_mode=partition_mode,
         ),
         *_render_pin_shards(
             counterfactual,
             family="counterfactual",
             shard_count=COUNTERFACTUAL_SHARD_COUNT,
             allow_prisoner=False,
+            partition_mode=partition_mode,
         ),
     )
     expected_names = (
@@ -4589,13 +4793,34 @@ def render_state_form_shard_index(
 ) -> str:
     main = render_state_form_pins()
     counterfactual = render_state_form_counterfactual_pins()
+    partition_strategies = {
+        shard.partition_strategy for shard in shards
+    }
+    if len(partition_strategies) != 1:
+        raise RuntimeError("state-form shard partition strategy drifted")
+    partition_strategy = partition_strategies.pop()
     payload = {
-        "schema_version": "state-form-pin-shards-v1",
+        "schema_version": "state-form-pin-shards-v2",
+        "partition": {
+            "strategy": partition_strategy,
+            "contiguous_query_blocks": True,
+            "byte_basis": (
+                "exact rendered UTF-8 query projection with transitive "
+                "fixture closure and per-shard fact deduplication"
+            ),
+            "main_shard_count": MAIN_SHARD_COUNT,
+            "counterfactual_shard_count": COUNTERFACTUAL_SHARD_COUNT,
+        },
         "canonical": {
             "main": {
                 "path": str(STATE_FORM_PINS.relative_to(ROOT)),
                 "sha256": EXPECTED_MAIN_PINS_SHA256,
                 "query_count": EXPECTED_MAIN_PIN_COUNT,
+                "fixture_fact_count": len(_canonical_pin_facts(main)),
+                "relation_call_count": len(
+                    _SHARD_RELATION_CALL_RE.findall(main)
+                ),
+                "utf8_bytes": len(main.encode("utf-8")),
                 "query_stream_sha256": _pin_query_stream_sha256(main),
             },
             "counterfactual": {
@@ -4604,6 +4829,13 @@ def render_state_form_shard_index(
                 ),
                 "sha256": EXPECTED_COUNTERFACTUAL_PINS_SHA256,
                 "query_count": EXPECTED_COUNTERFACTUAL_PIN_COUNT,
+                "fixture_fact_count": len(
+                    _canonical_pin_facts(counterfactual)
+                ),
+                "relation_call_count": len(
+                    _SHARD_RELATION_CALL_RE.findall(counterfactual)
+                ),
+                "utf8_bytes": len(counterfactual.encode("utf-8")),
                 "query_stream_sha256": (
                     _pin_query_stream_sha256(counterfactual)
                 ),
@@ -4613,6 +4845,13 @@ def render_state_form_shard_index(
             {
                 "path": shard.name,
                 "query_count": shard.query_count,
+                "fixture_fact_count": shard.fixture_fact_count,
+                "relation_call_count": shard.relation_call_count,
+                "projection_utf8_bytes": shard.projection_utf8_bytes,
+                "utf8_bytes": shard.utf8_bytes,
+                "fixture_facts_sha256": shard.fixture_facts_sha256,
+                "query_stream_sha256": shard.query_stream_sha256,
+                "projection_sha256": shard.projection_sha256,
                 "sha256": _sha256_text(shard.text),
             }
             for shard in shards
@@ -4689,9 +4928,12 @@ def write_state_form_artifacts() -> None:
         print(f"wrote {path.relative_to(ROOT)}")
 
 
-def write_state_form_shards(output_dir: pathlib.Path) -> None:
+def write_state_form_shards(
+    output_dir: pathlib.Path,
+    partition_mode: str = DEFAULT_SHARD_PARTITION,
+) -> None:
     check()
-    shards = render_state_form_shard_bundle()
+    shards = render_state_form_shard_bundle(partition_mode)
     index_text = render_state_form_shard_index(shards)
     if output_dir.exists() and not output_dir.is_dir():
         raise RuntimeError(
@@ -4821,6 +5063,15 @@ def main(argv: Sequence[str] | None = None) -> int:
         type=pathlib.Path,
         metavar="DIRECTORY",
     )
+    parser.add_argument(
+        "--shard-partition",
+        choices=SHARD_PARTITION_MODES,
+        default=DEFAULT_SHARD_PARTITION,
+        help=(
+            "partition execution shards by exact projection bytes "
+            "(default) or by query count for benchmark fallback"
+        ),
+    )
     args = parser.parse_args(argv)
     selected = sum(
         (
@@ -4837,12 +5088,30 @@ def main(argv: Sequence[str] | None = None) -> int:
         )
     if args.print_block:
         sys.stdout.write(rendered_block())
-    elif args.check:
-        check()
-    elif args.write_artifacts:
-        write_state_form_artifacts()
-    else:
-        write_state_form_shards(args.write_shards)
+        return 0
+    try:
+        with VerificationLock(
+            "verify",
+            source_digest=hashlib.sha256(
+                CONSTITUTION.read_bytes()
+            ).hexdigest(),
+            root=ROOT,
+        ):
+            if args.check:
+                check()
+            elif args.write_artifacts:
+                write_state_form_artifacts()
+            else:
+                write_state_form_shards(
+                    args.write_shards,
+                    partition_mode=args.shard_partition,
+                )
+    except VerificationLockBusy as exc:
+        print(f"state-form verification lock: {exc}", file=sys.stderr)
+        return EX_TEMPFAIL
+    except VerificationLockError as exc:
+        print(f"state-form verification lock: {exc}", file=sys.stderr)
+        return 2
     return 0
 
 

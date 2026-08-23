@@ -167,10 +167,12 @@ map, taxonomy, democratic corridor, domain ledger, system map and reader contrac
 set requirements, but do not make an unimplemented predicate, duty, institution,
 operation, delivery route, remedy, social outcome or narrative current.
 The federal parliamentary state form and residence-first political membership
-are author-ratified but unimplemented. Their controlling contract is
+are formalized and prose-landed; their institutions remain operationally
+unimplemented. Their controlling contract is
 `new-book-plans/book-1-state-form-and-political-membership-decision.md`;
-remaining office-term numbers and finite mechanics are delegated implementation
-choices only inside its hard constraints, not a reopened author gate.
+source-supplied office parameters and later operational mechanics remain
+delegated implementation choices only inside its hard constraints, not a
+reopened author gate.
 The substantive-equality and anti-subordination baseline is likewise author-
 ratified but unimplemented. Its controlling contract is
 `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`;
@@ -259,12 +261,29 @@ computations without weakening any later-gate claim blocker. The source-derived
 power population landed through the staged family commits, with the final
 formal-transition batch at `7e5b5f6`. The repository adversarial audit landed at `a8d6fd5`; schema v6 and
 mechanical-closure candidate `2aeca61` remove the remaining human-act
-dependency, and Gate A closed mechanically at `405e480`.
+dependency, and Gate A closed mechanically under protocol v4 at `405e480`.
+Protocol v5's receipt migration records current Gate A state only in the
+canonical ledger; this historical foundation summary does not override it.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
 
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
+
+- [ ] **Make authoritative verification receipt-aware and single-runner.**
+  - Add content-addressed schema-v2 verification receipts, a shared Git-common-
+    directory heavyweight lock, atomic Script 13/16 refresh-and-check modes,
+    and continuous four-worker state-form shard scheduling.
+  - Bind one staged full verification to its prospective tree and permit only
+    checker-classified audit, closure, and tracker successors whose heavyweight
+    dependency manifest remains byte-identical.
+  - Reclose Gate A under mechanical-closure protocol v5 without changing a
+    constitutional rule, Book 1 passage, claim posture, power census, or
+    allocation.
+  - **Done when:** the migration uses exactly one new authoritative full run,
+    all three administrative commit gates pass, Gate A is passed under receipt
+    schema v2, this bullet is deleted, `tmp.txt` remains absent, and the
+    obligations item below is again first.
 
 - [ ] **Specify obligations without making rights reciprocal bargains.**
   - Public institutions must respect, protect, fulfil, continue and remedy.
@@ -1753,6 +1772,19 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./verify.sh --table         # emit the claim-to-query table extracted from the pins
 ```
 
+**Current verifier rule, superseding the historical command notes above on
+2026-08-23.** Any semantic, executable, verifier, fixture, engine-binding, or
+generated-artifact candidate is fully staged and receives one `./verify.sh
+--emit-receipt new-book-plans/verification-receipts` run.
+Full already contains the quick path. Only its exact audit, closure, and tracker
+successors may reuse it through the named `--commit-gate` transition while the
+heavyweight manifest remains byte-identical and the narrow structural gate
+passes. Missing local evidence or any unclassified delta fails closed without a
+silent full run. Heavyweight entry points share one Git-common-directory lock;
+contention exits 75 unless an explicit bounded `--wait-for-lock SECONDS` is
+supplied. The older timings, suite inventory, and v1 workflow remain
+historical measurements, not current commit instructions.
+
 Prefer it to any check by hand. It exits non-zero on the first failure and names the
 claim that stopped being true — including exit 3, the failure that is good news: a
 pinned `:defect` stopped reproducing, and the script names it a REPAIR, not a
@@ -1767,7 +1799,10 @@ standing itself had to traverse the T3 custody chain. `4cb02aa` closes that comp
 boundary, so a green pin result alone does not establish engine freshness. **Gate on
 the verifier's exit status, never on its output**: piping to `tail` swallows the exit, and `echo $?`
 followed by `&&` gates on the echo — both shapes shipped a red commit on 2026-08-02.
-The only safe chain is `./verify.sh > /dev/null 2>&1 && git commit …`.
+The pre-v5 safe chain was `./verify.sh > /dev/null 2>&1 && git commit …`.
+That shell-shape lesson still applies, but protocol v5 uses `--emit-receipt` for
+the semantic commit and the exact named `--commit-gate` for each permitted
+administrative successor.
 
 **Every check was negative-controlled before it was trusted, and one failed the
 control.** The jargon pattern this file used to specify (`stratum|strata`) does not

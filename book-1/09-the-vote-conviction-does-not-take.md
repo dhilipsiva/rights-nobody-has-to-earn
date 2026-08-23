@@ -13,8 +13,8 @@ anyone decided that prisoners deserve to keep them. Because neither political
 right comes from punishment status.
 
 The older executable ballot conclusion still follows from personhood and
-supplied evidence that the common age of adulthood has been reached. The law
-beneath that evidence is stronger than an entry: adulthood attaches
+supplied evidence that the common age of adulthood has been reached. The law beneath that evidence is stronger than an
+entry: adulthood attaches
 automatically at the uniform age and cannot be granted or withheld by a
 registrar. The executable record does not observe an outside clock, so it can
 test only the typed evidence it was given. Hano has that evidence. Conviction

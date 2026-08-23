@@ -39,11 +39,30 @@ imprisonment and stops there.
 ```bash
 ./verify.sh          # everything, including pins, executable audits and counterfactuals
 ./verify.sh --quick  # schema/freshness checks; skips the executable suites
+./verify.sh --emit-receipt new-book-plans/verification-receipts
+./verify.sh --wait-for-lock 300 --emit-receipt new-book-plans/verification-receipts
+./verify.sh --commit-gate <receipt> --transition audit|closure|tracker
 python3 new-book-plans/9-record-integrity-red-team.py --check --execute
 python3 new-book-plans/10-amendment-semantics.py --check --execute
 python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 python3 new-book-plans/12-temporal-assurance.py --check --execute
 ```
+
+Since 2026-08-23, any semantic, executable, verifier, fixture, engine-binding,
+or generated-artifact change requires one fully staged authoritative receipt.
+A following audit, closure, or tracker-only commit uses `--commit-gate` only
+when the receipt's heavyweight dependency manifest is byte-identical and the
+transition-specific structural validator passes. Missing local evidence, a
+merge, an intervening unclassified commit, or any unexpected path, mode,
+engine, environment, or input change fails closed; the gate never launches a
+silent full run.
+
+Heavyweight verifier entry points share one Git-common-directory kernel lock.
+Contention exits 75 with sanitised owner details unless `--wait-for-lock
+SECONDS` supplies an explicit bounded wait. Scripts 13 and 16 provide atomic
+`--refresh-and-check`; state-form pins retain 64 main and 17 counterfactual
+byte-balanced shards under a sliding four-worker, canonical-output, fail-fast
+scheduler.
 
 Use release `nibli-pin` at or after engine commit
 `4cb02aade43b394374c40e661907ad66df3af3fe`; earlier builds may fail to complete

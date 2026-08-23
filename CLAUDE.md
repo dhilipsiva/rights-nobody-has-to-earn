@@ -228,6 +228,14 @@ consumer route require explicit retain/replace/retire cards; custody T3 supplies
 no office term or election clock. The controlling record is
 `new-book-plans/book-1-state-form-and-political-membership-decision.md`.
 
+**Implementation supersession, 2026-08-22.** The preceding paragraph records
+the state at ratification. `FS-CVF-003`, all 51 state-form cards, their pins,
+counterfactuals, reviewed references, and approved Book 1 prose are now
+formalized and prose-landed. That structural landing leaves every power, body,
+and `FS-CLM-18` at `Specified`/`ratified-unimplemented`: it proves no staffing,
+independence, operation, delivery, institutional action, or changing-result
+authentication.
+
 **The substantive-equality and anti-subordination baseline is author-ratified
 (2026-08-07): universal substantive equality + structural repair.** Every person
 receives equal and effective constitutional protection. Purpose or effect can
@@ -1754,6 +1762,13 @@ and establishes no delivery, liveness, feasibility, operation, or Gate A
 closure. The audit may therefore be complete while claims remain blocked or
 bounded-unresolved and while Gate A remains not passed.
 
+**Supersession note, 2026-08-23.** The following Stage 4 paragraphs are the
+preserved protocol-v4 historical record. Protocol v5 supersedes their
+current-audit and commit-sequencing statements for every new candidate;
+current Gate A state is derived from `full-society-ledger.json`, not from the
+historical prose below. The exact v1 closure remains accepted only by the
+legacy tuple in the scope-review protocol.
+
 **Stage 4's repository-adversarial protocol and checker are complete
 (2026-08-15); Gate A closure is mechanically derived.** Schema v6 adds
 append-only `scope_audits`. Each audit binds the exact source version,
@@ -1866,7 +1881,35 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   public-minimum pilot templates. They create no private runnable instrument,
   freeze, pilot evidence, threshold value, PDF accessibility attestation, or R6
   availability.
-- `verify.sh` — **the one check.** The full command rebuilds `nibli-pin` unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, prints the engine commit when it builds from a source checkout and identifies an explicit binary path otherwise, validates every generated contract including the state-form source block, and executes the chapter/floor and state-form pins, flat-record cases, staged temporal cases, amendment candidates, placement matrix, and source counterfactuals. `./verify.sh --quick` checks schemas, digests, generated freshness, static guards, and `python3 new-book-plans/19-state-form.py --check`, but deliberately skips executable suites; it is not a commit gate. `./verify.sh --only <path/to/file.pins.nibli>` executes exactly one pin suite in a fresh engine — use `./verify.sh --only new-book-plans/state-form.pins.nibli` for the state-form family; a pin file under `counterfactual/` runs against its own sibling fixture constitution, not the live one. `./verify.sh --table` prints the claim table. Neither focused mode is a commit gate. The suite exits non-zero on the first failure and names the claim that stopped being true. Run the full command after every constitution edit and before every commit; do not copy runtimes or suite counts here because both change with the governed sources.
+- `verify.sh` — **the one check.** The full command rebuilds `nibli-pin`
+  unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, records its
+  source and binary identity, validates every generated contract including the
+  state-form source block, and executes the chapter/floor and state-form pins,
+  record, temporal, amendment, placement, reader, and counterfactual suites.
+  `./verify.sh --quick` checks the structural path but skips executable suites;
+  `--only` runs one pin suite and `--table` prints the claim table. Those modes
+  remain partial and are not semantic commit gates.
+  **Superseding commit rule, 2026-08-23:** stage every semantic, executable,
+  verifier, fixture, engine-binding, or generated-artifact change and run one
+  `./verify.sh --emit-receipt new-book-plans/verification-receipts`. Full
+  already includes quick, so do not precede it with quick on unchanged bytes.
+  Only the exact following audit, closure, and tracker successors may use
+  `./verify.sh --commit-gate <receipt> --transition
+  audit|closure|tracker`. Reuse requires a byte-identical heavyweight
+  dependency manifest plus the transition-specific structural validator.
+  Missing local evidence or any unexpected path, mode, input, engine,
+  environment, merge, or intervening commit fails closed without a silent full
+  run. Ordinary `./verify.sh` retains its full validation semantics for
+  iteration, but emits no reusable receipt and cannot gate a semantic commit
+  under protocol v5. Heavyweight verifier entry points share one Git-common-
+  directory kernel lock. Contention exits 75 with sanitised owner details
+  unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Scripts
+  13 and 16 atomically refresh, reread, and check their complete output sets
+  from one immutable-input snapshot; state-form execution uses its fixed
+  64-main/17-counterfactual byte-balanced shards through a sliding four-worker
+  pool with canonical output order and fail-fast worker reaping. The suite
+  exits non-zero on the first failure and names the claim that stopped being
+  true; do not copy runtimes or suite counts here because governed sources move.
   Its quick path runs the reader-evidence structural check; the full path also
   runs only the evaluator controls supportable at the recorded stage. Quick and
   full modes both self-test the fixed admission-gate component. The structural

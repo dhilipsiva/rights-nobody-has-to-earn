@@ -1520,6 +1520,7 @@ def main(argv: Iterable[str] | None = None) -> int:
     parser.add_argument("--pin", type=pathlib.Path, default=None)
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--wait-for-lock", type=float, default=0.0)
     args = parser.parse_args(argv)
 
     source_path = resolve(args.source)
@@ -1595,7 +1596,9 @@ def main(argv: Iterable[str] | None = None) -> int:
 
 if __name__ == "__main__":
     try:
-        raise SystemExit(main())
+        from verification_lock_client import run_checker
+
+        raise SystemExit(run_checker(main, sys.argv[1:]))
     except RedTeamError as exc:
         print(f"9-record-integrity-red-team: {exc}", file=sys.stderr)
         raise SystemExit(1)

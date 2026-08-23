@@ -20,7 +20,7 @@ FS-CLM-37, or satisfy Gate C.
 | Holdout | `not-frozen` |
 | Result | `not-run` |
 | History head | `ead19e134be05cf5d9583b87d43673fa5de61759955eaccdd1403be7dcc5d2a2` |
-| Prior source transition | `e09a5fd14cf1c5ae970092653043ff7189b03d81` |
+| Prior source transition | `e27a852a5783c13b0610cead8faa0b0cb9bc4c5c` |
 | Claim | `Unestablished`/`route-unbuilt` |
 | Gate C satisfied here | `false` |
 
@@ -91,7 +91,7 @@ The checker validates the evidence contract and the attestation binding; it cann
 
 ## Provenance and verification
 
-- Source: `new-book-plans/reader-evidence.json`, SHA-256 `5cf4027585d26bf7b7e10178fb3f1a042affca213724d9eee3e86bf240c4e0bf`.
+- Source: `new-book-plans/reader-evidence.json`, SHA-256 `4600e90638c0b1d88c236f810d2e9a9a15400a40e8cc46605163b3c9c310e476`.
 - Controlling decision: `new-book-plans/book-1-reader-evidence-protocol-decision.md::# Book 1 Reader Evidence Protocol Decision`, SHA-256 `0317a05d1ed90f653a265cfa715e4dc301b3b8411f133e1fde87f65c45842f74`.
 - Structural/freshness check: `python3 new-book-plans/14-reader-evidence.py --check`.
 - Executable contract controls: `python3 new-book-plans/14-reader-evidence.py --check --execute`.
