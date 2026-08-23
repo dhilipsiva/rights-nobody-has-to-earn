@@ -1,0 +1,76 @@
+{
+  "audit_id": "FS-SAU-35",
+  "candidate": {
+    "class_manifests": {
+      "administrative": {
+        "count": 5,
+        "sha256": "18a827244acec793da259132d3f4f41c25f06d52235183b2abfabb4d50b799c9"
+      },
+      "fixture": {
+        "count": 57,
+        "sha256": "5603fd11ebb4106011d516c9f76339a7b686fc8af2dc0dc40fba18e8c94de846"
+      },
+      "generated-artifact": {
+        "count": 11,
+        "sha256": "32938398bdbd6cff8b71c857c22eea9aec4448cf55a71301a50345b964a9786e"
+      },
+      "source": {
+        "count": 96,
+        "sha256": "c799a7b41c39fe7dcbd97b24b01725ae6ad450203ee487e6b0f873aa83dc1cd9"
+      },
+      "verifier-input": {
+        "count": 26,
+        "sha256": "57590c05541a1b644548403934a8b699e7dd432b16196673de6d40150f48e432"
+      }
+    },
+    "parent_commit_sha": "d423f5cb072e829f8a0522e40734b1f4b5901ba7",
+    "path_count": 195,
+    "path_manifest_sha256": "a232a4ab4fd2abd5ac20127d16775ddd97ec3b545a70d4e8fe36904034f70b85",
+    "tree_sha": "c7d3191d7c403fb9ab2c86cb06e6bd21c3432d33"
+  },
+  "engine": {
+    "binary_basename": "nibli-pin",
+    "binary_path_sha256": "c30aeae33d8217a45b7eac61f53ce43107c80dcb29daeef560c51673b395e332",
+    "binary_sha256": "f9f094b14efe1a8549660542edf263f2afe5380dc84e99e197cc5f3f95683772",
+    "binary_size": 2557248,
+    "source_available": true,
+    "source_commit_sha": "bc03c9a00b28f566c9efe0e7808d3c9160915781",
+    "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_dirty": true,
+    "source_override": false,
+    "source_status_sha256": "78bc7d03254b914c425e8c2dc83a8fc66666aeb6cb16a35fb7522660e9f23cc1",
+    "source_untracked_count": 1,
+    "source_untracked_sha256": "915bdbaa6f905354149c3d003258bb0826ea20d018daaf8789c12d1890abe648"
+  },
+  "environment": {
+    "fields": [
+      "LANG",
+      "PATH"
+    ],
+    "sha256": "89df50f24604c534d08dccbd3e5371984d3585b0aeae0ec0e3a1ddfa3d3c925c"
+  },
+  "evidence_ceiling": "Repository verification over the bound staged bytes only; no external truth, operation, delivery, liveness, feasibility, calibration, or institutional action follows.",
+  "local_evidence": {
+    "expanded_manifest_sha256": "deb9b08dfe20f781fefbe6064c230989032fcad779fde19742fc578242a95aaf",
+    "transcript_sha256": "519dc94a1b376b2c120e03b91b093a0402022e4d7c4845649e817390fa047f9d"
+  },
+  "protocol_status": "repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5",
+  "protocol_version": 5,
+  "receipt_id": "f1f781ce58025d6226bf5dd8e7242924f1447f9bd75c9039030f649d9d97a334",
+  "schema_version": 2,
+  "source_version": "fs-ledger-2026-08-23-verification-receipt-v2",
+  "spdx": "CC0-1.0",
+  "status": "all-passed",
+  "verification": {
+    "command_sha256": "a0a7c11fb18db95bfb48784021057a1c712284f61b34bd1466d24d79de441c69",
+    "finished_at_utc": "2026-08-23T15:00:42Z",
+    "results": [
+      {
+        "command": "./verify.sh",
+        "exit_code": 0
+      }
+    ],
+    "started_at_utc": "2026-08-23T14:07:11Z",
+    "transcript_sha256": "519dc94a1b376b2c120e03b91b093a0402022e4d7c4845649e817390fa047f9d"
+  }
+}
