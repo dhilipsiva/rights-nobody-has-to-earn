@@ -270,21 +270,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Make authoritative verification receipt-aware and single-runner.**
-  - Add content-addressed schema-v2 verification receipts, a shared Git-common-
-    directory heavyweight lock, atomic Script 13/16 refresh-and-check modes,
-    and continuous four-worker state-form shard scheduling.
-  - Bind one staged full verification to its prospective tree and permit only
-    checker-classified audit, closure, and tracker successors whose heavyweight
-    dependency manifest remains byte-identical.
-  - Reclose Gate A under mechanical-closure protocol v5 without changing a
-    constitutional rule, Book 1 passage, claim posture, power census, or
-    allocation.
-  - **Done when:** the migration uses exactly one new authoritative full run,
-    all three administrative commit gates pass, Gate A is passed under receipt
-    schema v2, this bullet is deleted, `tmp.txt` remains absent, and the
-    obligations item below is again first.
-
 - [ ] **Specify obligations without making rights reciprocal bargains.**
   - Public institutions must respect, protect, fulfil, continue and remedy.
   - Contractors remain bound when delivering a public function. Direct private
