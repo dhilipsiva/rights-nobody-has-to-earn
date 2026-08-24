@@ -28,7 +28,7 @@ Coverage-family drafting states:
 - FS-CVF-015 Delivery and receipt interfaces for the material floor: formalized — Formal rules, pins, and the source-removal counterfactual pass, but claim-bearing chapter and Part V prose remain blocked until audited references land. The routes are dormant, no arrival derives, and belief and expression stay deliberately unrouted with recorded reasons.
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: coverage-ready — Formal rules, claim-bearing pins, and prose are prohibited until all source-bound obligation and finding-action effect cards are coverage-ready; the family creates no claim, power, body, status, allocation, receipt, action, delivery, remedy, recurrence control, or institutional liveness.
 
-Canonical source SHA-256: `98633e16ad2ed9646ac6beff4086b0310e1ce679194493279ecf6445e11bae1f`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `cb379db86e32c21da6b4a969c0ab266a25a4952f979b1aa00f2aa8259776d301`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -65,7 +65,7 @@ Canonical source SHA-256: `98633e16ad2ed9646ac6beff4086b0310e1ce679194493279ecf6
 | `review_commissions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `scope_audits` | 37 | `166104eeb49495132e9a5b196d8d6a413b500ac99ac5b02a61ba4820163b2e24` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22, FS-SAU-23, FS-SAU-24, FS-SAU-25, FS-SAU-26, FS-SAU-27, FS-SAU-28, FS-SAU-29, FS-SAU-30, FS-SAU-31, FS-SAU-32, FS-SAU-33, FS-SAU-34, FS-SAU-35-PENDING, FS-SAU-35, FS-SAU-36-PENDING |
+| `scope_audits` | 38 | `7f89c462a05d9086191657b5f70b0a8fb30951b3b9c94f6aca7fe1705b0e3eea` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22, FS-SAU-23, FS-SAU-24, FS-SAU-25, FS-SAU-26, FS-SAU-27, FS-SAU-28, FS-SAU-29, FS-SAU-30, FS-SAU-31, FS-SAU-32, FS-SAU-33, FS-SAU-34, FS-SAU-35-PENDING, FS-SAU-35, FS-SAU-36-PENDING, FS-SAU-36 |
 | `deferred_populations` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `closure_requirement_profiles` | 8 | `af587e64a9f295c7c01909abee8d09f39bae8a5da141d10a280884606eb8d70a` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 40 | `fb7c307abf1cc12ac21c888b424a8aab4deca108522f3e1a9ebd7c8fe2fcc60c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37, FS-CCT-38, FS-CCT-39, FS-CCT-40 |
