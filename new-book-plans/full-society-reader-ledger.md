@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-24-obligations-coverage-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-24-obligations-coverage-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -28,7 +28,7 @@ Coverage-family drafting states:
 - FS-CVF-015 Delivery and receipt interfaces for the material floor: formalized — Formal rules, pins, and the source-removal counterfactual pass, but claim-bearing chapter and Part V prose remain blocked until audited references land. The routes are dormant, no arrival derives, and belief and expression stay deliberately unrouted with recorded reasons.
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: coverage-ready — Formal rules, claim-bearing pins, and prose are prohibited until all source-bound obligation and finding-action effect cards are coverage-ready; the family creates no claim, power, body, status, allocation, receipt, action, delivery, remedy, recurrence control, or institutional liveness.
 
-Canonical source SHA-256: `cb379db86e32c21da6b4a969c0ab266a25a4952f979b1aa00f2aa8259776d301`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `813eb74beee59685a757678bdfdd8e5186c3f41069445a3974fa4980dd863425`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
