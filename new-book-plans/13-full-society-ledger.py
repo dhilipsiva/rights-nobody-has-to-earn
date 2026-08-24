@@ -263,7 +263,7 @@ COVERAGE_EVIDENCE_CEILING = (
     "Coverage contracts and pre-drafting checks only; no operation, delivery, "
     "feasibility, liveness, reader response, external truth, or calibration follows."
 )
-CONSTITUTIONAL_EFFECT_COUNT = 197
+CONSTITUTIONAL_EFFECT_COUNT = 222
 UNIVERSAL_STANDING_STATEMENT_IDS = (
     "b214c5369507e0eb6eb829be92667f5a72b10cff32e966cb6374f4ef4087d8b9",
     "ac2a478457f4f7822d0ee1e62da4e08625aacdaf43c65a4b2b179dbdd784c9cc",
@@ -293,6 +293,32 @@ EFFECT_PROFILE_FIELDS = {
     ],
     "consequential-record": POWER_PROFILE_FIELDS["consequential-record"],
 }
+EFFECT_PROFILE_FIELDS.update({
+    "source-bound-obligation": [
+        "bearer", "bearer_mode", "beneficiary_or_object", "duty_kind",
+        "function_or_commitment", "exact_origin", "source", "version",
+        "jurisdiction", "legal_scope", "end", "public_principal_retention",
+        "express_private_reach", "priority", "excuse", "breach",
+        "continuity", "remedy", "non_waiver", "failure_polarity",
+    ],
+    "finding-action-accountability": [
+        "finding_kind", "subject_and_case", "independent_recipient",
+        "receipt_evidence", "permitted_actions", "reasons_and_review",
+        "positive_nonresponse", "alternate_escalation", "continuity",
+        "individual_remedy", "prior_decision_review", "common_cause",
+        "responsible_control_correction", "re_audit", "recurrence",
+        "individual_relief_non_delay",
+    ],
+    # These adapters deliberately reuse the power-card field sets.  They expose
+    # the same contract vocabulary to constitutional effects without creating a
+    # second hand-maintained definition that could drift.
+    "liberty-power-limit-adapter":
+        POWER_PROFILE_FIELDS["liberty-power-limit"],
+    "economic-private-power-limit-adapter":
+        POWER_PROFILE_FIELDS["economic-private-power-limit"],
+    "class9-common-adapter":
+        POWER_PROFILE_FIELDS["commons-future-condition"],
+})
 EFFECT_POLICY = {
     "universal-standing-root": ("class-01", ["class-07"],
                                  ["standing-status"], ["FS-CLM-38"]),
@@ -996,6 +1022,154 @@ DELIVERY_STATEMENT_IDS = (
     "2bdefdb9e029bc4ad762ea2508072c8914adfdaed92eeaf818fd6b400a9e95b4",
     "fa4ba5b070f5187db305b21ee2759a4efdcd186874df846808670c1dfc2827a3",
 )
+OBLIGATION_EFFECT_POLICY = {
+    "public-respect-duty": (
+        "class-01", ["class-04", "class-06"],
+        ["source-bound-obligation", "liberty-power-limit-adapter"],
+        ["FS-CLM-08"],
+    ),
+    "public-protect-duty": (
+        "class-01", ["class-04", "class-06"],
+        ["source-bound-obligation", "liberty-power-limit-adapter",
+         "economic-private-power-limit-adapter"],
+        ["FS-CLM-08"],
+    ),
+    "public-fulfil-duty": (
+        "class-02", ["class-01", "class-06"],
+        ["source-bound-obligation", "material-floor-access"],
+        ["FS-CLM-04", "FS-CLM-05"],
+    ),
+    "public-continuity-duty": (
+        "class-02", ["class-04", "class-06"],
+        ["source-bound-obligation", "material-floor-access"],
+        ["FS-CLM-05"],
+    ),
+    "public-remedy-duty": (
+        "class-04", ["class-02", "class-06", "class-07"],
+        ["source-bound-obligation", "material-floor-access",
+         "fair-process-repair"],
+        ["FS-CLM-05", "FS-CLM-12", "FS-CLM-21"],
+    ),
+    "delegation-without-discharge": (
+        "class-06", ["class-04", "class-07"],
+        ["source-bound-obligation"], ["FS-CLM-18"],
+    ),
+    "express-private-duty-prerequisite": (
+        "class-06", ["class-03", "class-07"],
+        ["source-bound-obligation",
+         "economic-private-power-limit-adapter"],
+        ["FS-CLM-02", "FS-CLM-23"],
+    ),
+    "no-subject-matter-private-duty": (
+        "class-01", ["class-03", "class-07"],
+        ["source-bound-obligation", "liberty-power-limit-adapter",
+         "economic-private-power-limit-adapter"],
+        ["FS-CLM-08", "FS-CLM-35"],
+    ),
+    "person-duty-continuity-restoration": (
+        "class-04", ["class-01", "class-02"],
+        ["source-bound-obligation", "standing-status",
+         "fair-process-repair"],
+        ["FS-CLM-08", "FS-CLM-12"],
+    ),
+    "class9-common-cessation-restoration": (
+        "class-09", ["class-04", "class-07"],
+        ["source-bound-obligation", "class9-common-adapter",
+         "fair-process-repair"],
+        ["FS-CLM-33"],
+    ),
+    "role-duty-correction-reassignment": (
+        "class-06", ["class-04", "class-07"],
+        ["source-bound-obligation", "fair-process-repair"],
+        ["FS-CLM-12", "FS-CLM-18"],
+    ),
+    "voluntary-duty-bounded-cure": (
+        "class-03", ["class-01", "class-04"],
+        ["source-bound-obligation", "liberty-power-limit-adapter",
+         "fair-process-repair"],
+        ["FS-CLM-23", "FS-CLM-35"],
+    ),
+    "source-specific-conflict-priority": (
+        "class-04", ["class-02", "class-06", "class-07"],
+        ["source-bound-obligation", "material-floor-access",
+         "fair-process-repair"],
+        ["FS-CLM-12", "FS-CLM-18", "FS-CLM-21"],
+    ),
+    "bounded-performance-excuse": (
+        "class-04", ["class-02", "class-06", "class-07"],
+        ["source-bound-obligation", "material-floor-access",
+         "fair-process-repair"],
+        ["FS-CLM-05", "FS-CLM-18", "FS-CLM-21"],
+    ),
+    "all-entitlement-nonreciprocity": (
+        "class-01", ["class-02", "class-04", "class-05", "class-07"],
+        ["source-bound-obligation", "standing-status",
+         "material-floor-access", "fair-process-repair"],
+        ["FS-CLM-01", "FS-CLM-02", "FS-CLM-04", "FS-CLM-05",
+         "FS-CLM-07", "FS-CLM-08", "FS-CLM-12", "FS-CLM-14",
+         "FS-CLM-25", "FS-CLM-35", "FS-CLM-38", "FS-CLM-39",
+         "FS-CLM-40"],
+    ),
+    "finding-reader-action-duty": (
+        "class-07", ["class-04", "class-06"],
+        ["source-bound-obligation", "finding-action-accountability",
+         "consequential-record"],
+        ["FS-CLM-12", "FS-CLM-18", "FS-CLM-21"],
+    ),
+    "certified-positive-nonresponse": (
+        "class-07", ["class-04", "class-06"],
+        ["finding-action-accountability", "consequential-record",
+         "fair-process-repair"],
+        ["FS-CLM-12", "FS-CLM-18", "FS-CLM-21"],
+    ),
+    "finding-alternate-escalation": (
+        "class-04", ["class-06", "class-07"],
+        ["finding-action-accountability", "consequential-record",
+         "fair-process-repair"],
+        ["FS-CLM-12", "FS-CLM-18", "FS-CLM-21"],
+    ),
+    "finding-claimant-continuity": (
+        "class-02", ["class-04", "class-06"],
+        ["finding-action-accountability", "material-floor-access",
+         "fair-process-repair"],
+        ["FS-CLM-05", "FS-CLM-12", "FS-CLM-18"],
+    ),
+    "individual-remedy-prior-decision-review": (
+        "class-04", ["class-02", "class-07"],
+        ["finding-action-accountability", "material-floor-access",
+         "fair-process-repair"],
+        ["FS-CLM-05", "FS-CLM-12", "FS-CLM-21"],
+    ),
+    "finding-common-cause-investigation": (
+        "class-07", ["class-04", "class-06"],
+        ["finding-action-accountability", "consequential-record"],
+        ["FS-CLM-18", "FS-CLM-21"],
+    ),
+    "responsible-control-correction": (
+        "class-06", ["class-04", "class-07"],
+        ["finding-action-accountability", "consequential-record"],
+        ["FS-CLM-18", "FS-CLM-21"],
+    ),
+    "affected-case-reaudit": (
+        "class-04", ["class-06", "class-07"],
+        ["finding-action-accountability", "consequential-record",
+         "fair-process-repair"],
+        ["FS-CLM-12", "FS-CLM-21"],
+    ),
+    "recurrence-verification": (
+        "class-07", ["class-04", "class-06"],
+        ["finding-action-accountability", "consequential-record"],
+        ["FS-CLM-18", "FS-CLM-21"],
+    ),
+    "systemic-work-no-individual-delay": (
+        "class-04", ["class-02", "class-07"],
+        ["finding-action-accountability", "material-floor-access",
+         "fair-process-repair"],
+        ["FS-CLM-05", "FS-CLM-12"],
+    ),
+}
+EFFECT_POLICY.update(OBLIGATION_EFFECT_POLICY)
+OBLIGATION_STATEMENT_IDS = ()
 STATE_FORM_STATEMENT_IDS = (
     "7a34ee5c097abec3395b3144cbae0bff7413ece16c79b7541c997636cb0be120",
     "cbf6c93b1b009e2e03f6cabac00c4776b0381cc4e6f93f2fb833d1ca9e72fc97",
@@ -1329,6 +1503,8 @@ CLASS9_EFFECT_KEYS={"class9-commons-future-capability","class9-multiaxis-ceiling
 EQUALITY_EFFECT_KEYS=set(EQUALITY_EFFECT_POLICY)
 FAMILY_LIFE_EFFECT_KEYS=set(FAMILY_LIFE_EFFECT_POLICY)
 DELIVERY_EFFECT_KEYS=set(DELIVERY_EFFECT_POLICY)
+OBLIGATION_EFFECT_KEYS=set(OBLIGATION_EFFECT_POLICY)
+OBLIGATION_FINDING_EFFECT_KEYS=set(list(OBLIGATION_EFFECT_POLICY)[15:])
 
 POWER_CLASS_IDS = [f"class-{i:02d}" for i in range(1, 11)]
 CARD_V7_EXTRA_KEYS = [
@@ -3251,6 +3427,8 @@ def validate_coverage_families(src: dict, ids: dict):
             "FS-CVF-013": (EQUALITY_STATEMENT_IDS, "substantive-equality"),
             "FS-CVF-014": (FAMILY_LIFE_STATEMENT_IDS, "family-and-life-course"),
             "FS-CVF-015": (DELIVERY_STATEMENT_IDS, "delivery-and-receipt"),
+            "FS-CVF-016": (OBLIGATION_STATEMENT_IDS,
+                           "obligations-and-nonreciprocity"),
         }
         if rec["id"] in statement_policy:
             owned_ids,label=statement_policy[rec["id"]]
@@ -3581,9 +3759,42 @@ def validate_constitutional_effects(src: dict, ids: dict):
         elif key in EQUALITY_EFFECT_KEYS: required=("person worth","risk score","entitlement score","criminal burden","bare record absence","t3")
         elif key in FAMILY_LIFE_EFFECT_KEYS: required=("omnibus family","mature predicate","missing kinship","recognition","confinement","t3")
         elif key in DELIVERY_EFFECT_KEYS: required=("provider self-certification","personal state","roster entry","confinement","t3")
+        elif key == "all-entitlement-nonreciprocity": required=(
+            "work", "payment", "identity", "compliance", "contribution",
+            "score", "approval", "role duty", "civic duty", "private duty",
+            "voluntary duty", "personhood", "entitlement or public debt",
+            "political voice", "evidence and challenge", "continuity",
+            "remedy", "restrictive power", "bare obliged", "t3",
+        )
+        elif key in OBLIGATION_FINDING_EFFECT_KEYS: required=(
+            "wrong recipient", "silent nonresponse",
+            "systemic work delays individual relief", "bare obliged", "t3",
+        )
+        elif key in OBLIGATION_EFFECT_KEYS: required=(
+            "duty class as priority", "subject matter",
+            "self-certified excuse", "bare obliged", "t3",
+        )
         else: raise LedgerError(f"{ctx}: missing effect boundary policy")
         for token in required:
             if token not in prohibited: raise LedgerError(f"{ctx}: prohibited inputs omit {token}")
+        if key in OBLIGATION_EFFECT_KEYS:
+            role_refs = set(rec["holder_role_refs"] + rec["affected_role_refs"]
+                            + rec["checking_role_refs"])
+            permitted_roles = {"FS-ROL-01", "FS-ROL-34", "FS-ROL-35",
+                               "FS-ROL-40"}
+            if key == "class9-common-cessation-restoration":
+                permitted_roles.add("FS-ROL-49")
+                if "FS-ROL-49" not in rec["checking_role_refs"]:
+                    raise LedgerError(
+                        f"{ctx}: Class 9 evidence must name the ecological scientist")
+            if not role_refs.issubset(permitted_roles):
+                raise LedgerError(
+                    f"{ctx}: obligations must reuse protected-person, claimant, "
+                    "victim, and record-subject roles without an institutional proxy")
+            if (key != "class9-common-cessation-restoration"
+                    and "FS-ROL-49" in role_refs):
+                raise LedgerError(
+                    f"{ctx}: ecological scientist is restricted to FS-CCE-207")
         if "no operation" not in require_str(rec, "book2_handoff", ctx).lower():
             raise LedgerError(f"{ctx}: Book 2 handoff must refuse operation")
 
@@ -7905,6 +8116,33 @@ def negative_controls(src: dict) -> int:
                 control("family effects receive no power allocation",
                         lambda s: s["function_allocations"][0].update(
                             {"power_ref": "FS-CCE-88"}))
+            if any(row["effect_key"] in OBLIGATION_EFFECT_KEYS
+                   for row in src["constitutional_effects"]):
+                control("obligation origin profile cannot be dropped",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "public-respect-duty")[
+                                "profiles"].pop(0))
+                control("obligation adapters reuse every power-profile field",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "public-respect-duty")[
+                                "profile_terms"][
+                                    "liberty-power-limit-adapter"].popitem())
+                control("nonreciprocity wall is explicit for every duty gate",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] ==
+                                "all-entitlement-nonreciprocity")[
+                                    "prohibited_inputs"].__setitem__(0,
+                                        "Other limits"))
+                control("finding routes require positive nonresponse",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] ==
+                                "certified-positive-nonresponse")[
+                                    "prohibited_inputs"].__setitem__(0,
+                                        "Other limits"))
+                control("ecological scientist is not an institutional proxy",
+                        lambda s: next(row for row in s["constitutional_effects"]
+                            if row["effect_key"] == "public-fulfil-duty")[
+                                "checking_role_refs"].append("FS-ROL-49"))
             control("bounded delegation is decision-complete",
                     _incomplete_bounded_delegation)
             control("primary class follows the direct effect",
