@@ -1546,8 +1546,8 @@ STATE_FORM_PROSE_REFS = (
 STATE_FORM_PART_V_REFS = (
     "book-1/15-the-five-joints.md::What does this design do about rotation? It now has a constitutional answer for",
     "book-1/15-the-five-joints.md::does not evade the state, it *specifies* one. It now specifies more than a",
-    "book-1/15-the-five-joints.md::The binding layer is now wider than one debtor and one refusal.",
-    "book-1/15-the-five-joints.md::**Survives, narrowed.** Two claims survive.",
+    "book-1/15-the-five-joints.md::The binding layer is now wider. It names the tiers, bodies, holders,",
+    "book-1/15-the-five-joints.md::**Survives, narrowed.** Under these rules, the floor is owed without an earned",
 )
 STATE_FORM_PROSE_DISPOSITION = (
     "Coverage, formal rules, executable tests, counterfactuals, and approved "
