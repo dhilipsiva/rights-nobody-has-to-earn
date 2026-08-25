@@ -270,16 +270,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Specify obligations without making rights reciprocal bargains.**
-  - Public institutions must respect, protect, fulfil, continue and remedy.
-  - Contractors remain bound when delivering a public function. Direct private
-    duties must be express, never inferred merely from the domain's subject matter.
-  - Civic duties may exist, but failure to work, pay, identify oneself, comply, or be
-    socially approved must not remove a basic floor.
-  - Separate duties owed to a person, duties owed to a common, role duties, and
-    voluntary commitments; define priority, conflict, excuse and remedy without
-    turning rights into reciprocal bargains.
-
 - [ ] **Specify delivery as a lifecycle.**
   - Model: entitlement → service offered → accessible service → authorised,
     recipient-side access/receipt evidence → disputed/failed → interim continuity
