@@ -5,20 +5,20 @@
   "status": "staged_t3_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
+  "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
   "bound_sources_sha256": {
-    "amendment_semantics": "871e9e280b5faf2e86147693f1d68361f6da71d75d01c9addbcf61e6f0424af2",
-    "assertion_surface": "6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4",
-    "placement_exhaustiveness": "f19e8138ac3495ea15bbd6e9668be9cd91b5c5f63928a782b0bb7ff8de9424da",
-    "record_assurance": "f845de70663549ede5663b000060d4fe6c424a67f2177d6863730ff4cb6f80dd",
-    "record_red_team": "afc9cb62899feb42d5aadb76ffd21b2bbd66de8424eb0b52164fb3f06c2eb26a",
-    "time_model": "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44"
+    "amendment_semantics": "3fc0196b08593e576d53fe9fc8caceaedc41906a845d874cbddf20fad1a9fbe9",
+    "assertion_surface": "dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb",
+    "placement_exhaustiveness": "ac32b3950084a5458704e2836239b9737bdfd8505344495b4ff89337d5914668",
+    "record_assurance": "9e18d8d442b734cc7265959d6a2c2b0f6799619efed61680ede9aff2ffbc15e4",
+    "record_red_team": "d1217d15e8faa6a309d3ddc6bfd2dc45901b98b33682f16025634584a8e8d88d",
+    "time_model": "b164e60532a2179b12ff675050007ee88b8a17fe20a3d6b02e07fb74873d68f6"
   },
   "marker_sha256": {
     "T1-ADMISSIONS": "3134ec9518e8e80d540d1d984f89213cac06533fa7847658a5b2121a4c7d63c9",
     "T1-DERIVED": "59fa272dd256f1bb65c14df069cd990aae9cd4da23110dac7b7875c64bbdbf73",
     "T1-FACTS": "769d0cb31b185780340b4fcf3e9fe9995332bd12cd27ec8d3a3e932e6d17dc00",
-    "T1-RULES": "03fb47aa7823a45bc675bd30620b397ff47daf399f3033b60027439b38de21df",
+    "T1-RULES": "373104ba89563cc5e945a44cda58ee49213c38b85c5ada1543f26e04ca504fe7",
     "T2-DERIVED": "b98be85e7db2fef50fd8aa2d086868c88915c6e8000f8e789272c57ea1a7bfef",
     "T2-FACTS": "206cea7dd5b527f02e78605e1a7ad277b69fcb0ad7e9c96821096507739a351c",
     "T2-RULES": "91bee6f6188b7c528e0e71118d3abffcc025b478ba71525f803b984ff5a08396",
@@ -29,9 +29,9 @@
     "T3-RULES": "eb6d07d536ef886d2e5295f053ff5e6108b0bf8eb105bbd948015edff5eccc42"
   },
   "stage_source_sha256": {
-    "T1": "ce2cf521f2bf4837af29d7c65b91403d08ef3771f02cde2247e6c78856cf5faa",
-    "T2": "24c45ef8fca4741fc6fd748b9398c4094ee119eeef9a9ca0cd2d5f9bcea5f1ca",
-    "T3": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed"
+    "T1": "0063b3f1312b54c54d4f9a1348928d9d54403faae166b04781414d7886021419",
+    "T2": "87e79b43fc7c4ba1f50e2b3f87688ad847391ff73adc15277d4f70c4897d4181",
+    "T3": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace"
   },
   "source_effect_binding": {
     "effective_version": "Constitution_Temporal",
@@ -40,7 +40,7 @@
     "source_binding_fragment": "all $binding: all $current: passport($binding, TemporalLeaseFamily, Constitution_Temporal, $current) & observe(Chronicle, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(TemporalReview, $binding, TemporalLeaseFamily, SourceFamilyScope) & observe(Chronicle, $binding, Constitution_Temporal, SourceVersionScope) & observe(TemporalReview, $binding, Constitution_Temporal, SourceVersionScope) & observe(Chronicle, $binding, $current, SourceEpochScope) & observe(TemporalReview, $binding, $current, SourceEpochScope) & ~collide($binding, SourceBinding) -> reference($binding, SourceBound).",
     "source_binding_sha256": "dd23aab90fd994e4a23fb6e16637359548449b7c5cdd277e0476d3b3feeb3de0",
     "semantic_effect": "A restrictive custody conclusion requires a positive, independently reviewed renewal bound to the exact supplied case, subject, judgment basis, injury victim, symbolic window, canonical terminal transition, and collision-free source. Typed collisions reject enumerated ambiguous lineage, manifests, order, windows, cases, leases, and source bindings. A supplied challenge suspends its exact lease; withheld intake is not detectable. Raw inactive leases and sufficiently bound person-facing attempts produce distinct defects; none authorises custody, performs correction, or fabricates release.",
-    "compatibility_review": "The staged fixtures preserve supplied or otherwise derived standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the unread-duty endpoint while revising raw carry effects. T1 does not establish universal standing when a predecessor witness is withheld. Correction, supersession, non-revival, intake durability, and duty performance remain explicit requirements or Book 2 boundaries.",
+    "compatibility_review": "The staged fixtures preserve supplied or otherwise derived standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the source-bound finding/action route while revising raw carry effects. T1 does not establish universal standing when a predecessor witness is withheld. Correction, supersession, non-revival, intake durability, actual duty performance, and institutional liveness remain explicit requirements or Book 2 boundaries.",
     "article9_boundary": "The effective-version binding is reviewed against this exact source digest and executable effects. Article 9's proposer-written target label neither authenticates nor applies this version. Lawful deployment and source-transition authentication remain external."
   },
   "pre_t3_custody_rule": "all $offender: all $victim: injure($offender, $victim) & judge(Court, $offender) & ~permits(Appeals, $offender) & ~broken(Court) & ~defend($offender) & ~free($offender) -> prisoner($offender).",
@@ -2734,16 +2734,16 @@
       "boundary": "A complete office-term and succession interface remains future constitutional work."
     },
     {
-      "id": "unread_duty",
+      "id": "finding_action_route",
       "stage": "T1",
-      "control": "Named temporal errors plus a challenge can derive obliged without deriving relief or action.",
+      "control": "Named temporal errors plus a challenge can derive the legacy compatibility duty and its source-bound typed reader/action route without deriving performed relief or action.",
       "case_refs": [
         "TA-03",
         "TA-15",
         "TA-21"
       ],
       "posture": "preserved_by_narrowness_test",
-      "boundary": "No current rule reads obliged; action, deadline, recovery, and remedy remain unestablished."
+      "boundary": "The current source reads the compatibility duty through one typed bridge. It establishes legal action, nonresponse, alternate, continuity, remedy, correction, re-audit, recurrence, and non-delay effects, but no deadline, receipt, performed recovery, completed remedy, or institutional liveness."
     },
     {
       "id": "external_liveness",
@@ -2827,10 +2827,10 @@
     },
     {
       "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md",
-      "standing_claim": "Supplied temporal errors plus supplied challenge facts can derive Appeals duties, but withheld intake can suppress that route and obliged remains unread. The formal chain does not perform correction or remedy.",
+      "standing_claim": "Supplied temporal errors plus supplied challenge facts derive Appeals compatibility duties that feed exact source-bound typed reader/action routes. Withheld intake can suppress the premise, and neither compatibility nor typed duty performs correction or remedy.",
       "classification": "revised_and_pinned",
-      "test_route": "Challenge-present and challenge-absent fresh processes query lease suspension, named errors, and obliged while verifying that no filing receipt, relief, deadline, correction, or automatic action follows.",
-      "change_trigger": "Any rule reading obliged or deriving remedy from a temporal error must revise this endpoint."
+      "test_route": "Challenge-present and challenge-absent fresh processes query lease suspension, named errors, and compatibility duties; the obligations suite separately pins every current finding kind, wrong recipients, the typed bridge, positive nonresponse, alternates, continuity, remedies, systemic work, and individual non-delay while proving no filing receipt or automatic action.",
+      "change_trigger": "Any change to the err/2 inventory, typed obliged bridge, source-bound reader route, or external receipt and action evidence must revise this endpoint."
     },
     {
       "artifact_ref": "book-1/15-the-five-joints.md",
@@ -2852,7 +2852,7 @@
     "snapshot_scope": "T1 detects disappearance only between independently attested predecessor and successor scopes. It cannot detect a fact removed within or before an attested snapshot, prove genesis completeness, or preserve derived standing when either predecessor-standing witness is withheld.",
     "external_time": "Symbolic ordered boundary events are not dates, duration arithmetic, or a clock. Book 2 must assure advancement, availability, recovery, and service independence.",
     "physical_effect": "A non-derived prisoner conclusion or a derived free conclusion is a legal-model result, not proof that a person was physically released, housed, fed, or protected.",
-    "institutional_action": "An err or obliged conclusion does not prove receipt, intake, review, correction, remedy, or action. Withholding a genuine challenge fact can leave an otherwise valid lease unsuspended in the supplied envelope.",
+    "institutional_action": "Neither an err finding, the legacy obliged compatibility conclusion, nor the typed reader/action duty proves receipt, intake, review, correction, completed remedy, or action. Withholding a genuine challenge fact can leave an otherwise valid lease unsuspended in the supplied envelope.",
     "record_truth": "Two named observations and a complete manifest do not by themselves prove writer identity, independence, truth, privacy, append-only storage, or honest membership commitment.",
     "query_shape": "The temporal harness executes simple ground relation pins plus one exact ground event-entitlement shape. Typed status and collide conclusions use one identifier plus a constant tag; ternary precede carries exactly two endpoints plus the EventPath or RecordPath constant for transitive closure. TA-22 checks standing, opaque floor entitlement, authority, custody, recognition, and severity against the full T3 source.",
     "source_transition": "The reviewed digest binds this repository evidence to one exact source. It does not implement semantic supersession, general correction, rollback, non-revival, lawful enactment, deployment, or the release engine binary.",

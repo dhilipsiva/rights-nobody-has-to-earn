@@ -18,7 +18,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "new-book-plans/full-society-power-source-manifest.json"
 EXPECTED_MANIFEST_SHA256 = (
-    "1a34edee3bb85927a0dde46686e82db2de340d5e514181f32b20584ad53acfba"
+    "e8dfa12813ce1bafc970e2350598482cdf5c159f6305846bc01063b6399ff3e7"
 )
 EXPECTED_SOURCE_COMMIT = "36ed92c58877cffa5a11928ad200f0ca9a604820"
 STATUS = (
@@ -55,15 +55,15 @@ EXPECTED_SOURCE_SHA256 = {
     "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md":
         "6b42ef36e0ab54b8391f1d2bc174836a8f6f6130dfba4786c8e0483c10b34c59",
     "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md":
-        "eb5919bbe57107ca7b61df0aa367a44354771c1d60a963e9a98c305b78dd93a4",
+        "383790a454415a79f8769923b7cb56a2c7eecad8da4edee9fa010e5e54576a0c",
     "new-book-plans/book-1-state-form-and-political-membership-decision.md":
-        "ec5150e624117993bfe848d5319b26f60654961af5c3eb7d664c554dac4d7df4",
+        "ceed78c9df3ca1a60d993a3684058fb977042c7b2b8904d99ae697a583592f70",
     "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md":
         "c27e4175ccbd3034a04d9cebbd80d314400fc290cff07997c1e314d04db28979",
     "new-book-plans/book-1-time-model-decision.md":
-        "049f8d1ff0dda90e50751768c108d704d5eb908caf8a8b663092cb8bb79e7e44",
+        "b164e60532a2179b12ff675050007ee88b8a17fe20a3d6b02e07fb74873d68f6",
     "new-book-plans/constitution.nibli":
-        "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
+        "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
 }
 EXPECTED_BY_DISPOSITION = {
     "card-required": 209,

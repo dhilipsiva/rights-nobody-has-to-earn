@@ -6,10 +6,11 @@
 #                        # the cross-file reconciliation or the prose guards
 #
 # NOTE — one absence this file cannot hold as a query, and it is load-bearing.
-# "Nothing compels the body" rests on nothing anywhere READING the obligation.
-# That was a grep in this comment until nibli 80a87e9; it is a precondition now,
-# with a positive control beside it. Test the rule BODY, left of the arrow — a
-# plain `grep owe` matches Article 1b's own head and can never fail.
+# "The general floor debt still has no machinery that checks performance against
+# arrival" rests on nothing anywhere READING `owe`. The obligations family gives
+# other duties typed consumers without turning the legacy debt into delivery.
+# Test the rule BODY, left of the arrow — a plain `grep owe` matches Article 1b's
+# own head and can never fail.
 #
 # The `:require` lines need `--allow-shell`, and both commands above pass it. The
 # older per-file command did not, and its failure was doubly misleading: the

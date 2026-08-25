@@ -17,7 +17,10 @@ Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
   conjuncts decide nothing today. `no-delivery-independence` strips the
   food-delivery writer/source disequality. The state-form fixture
   `no-state-form-independent-current-review` strips only the shared
-  source-writer/temporal-reviewer disequality and has its own pins.
+  source-writer/temporal-reviewer disequality and has its own pins. The
+  `no-obligations-independent-source-review` fixture strips that same
+  obligations source-writer/record-reviewer disequality from every repeated
+  source-bound conclusion and has its own pins.
 - **A line added** (0 removed, 1 added) — `unguarded-pen`: the constitution *plus* a
   credential route that forgets the guards. A postulated future, not a deletion — its pins
   show Article 4's kept conjuncts are the only thing standing between that one line and a
@@ -72,6 +75,15 @@ that conjunct and every card's fused-role fixture gains current lawful authority
 Its paired pins keep properly separated controls beside those flipped verdicts,
 so a green result cannot come from disabling currentness or the card family.
 
+`no-obligations-independent-source-review` is the obligations current-source
+guard on a copy. Its checker removes only `~($source = $record_review)` from
+each of the repeated raw-current joins. The paired pins show all 25 fused
+effects deriving. `no-obligations-source` removes the 35 rules that expose the
+family's legal conclusions while leaving unrelated personhood intact.
+`no-obligations-finding-reader` removes only the typed reader bridge: every
+legacy two-place finding conclusion remains while all 14 typed reader duties
+disappear.
+
 Regenerate the changed-line and added-line fixtures with:
 
 ```
@@ -100,6 +112,7 @@ pathlib.Path(
     'new-book-plans/counterfactual/no-state-form-independent-current-review.nibli'
 ).write_text(s.replace(old, ""), encoding='utf-8')
 EOF
+python3 new-book-plans/21-obligations.py --write-artifacts
 cp new-book-plans/constitution.nibli new-book-plans/counterfactual/unguarded-pen.nibli
 printf 'all $a: choose(Electorate, $a) -> permits(Review, $a).\n' \
   >> new-book-plans/counterfactual/unguarded-pen.nibli

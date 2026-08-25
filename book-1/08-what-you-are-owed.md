@@ -5,12 +5,13 @@ What every person is owed fits in one breath.
 To be safe. To eat. To have somewhere to live. To be cared for when ill. To learn. To
 speak. To believe what you believe. To have the company of other people.
 
-That is the floor. Not a target, not an aspiration, not a set of outcomes the society
-works toward — a statement of what is owed to every person, in full, with no
-qualifying condition of any kind. Nothing has to happen first. You do not have to
-work, or contribute, or belong, or register, or behave. The previous chapter showed
-that this is structural rather than promised: the floor cannot be made conditional
-without unmaking the machinery that makes anything conditional at all.
+That is the floor. Not a target, not an aspiration, not a set of outcomes the
+society works toward — a statement of what is owed to every person, in full,
+with no qualifying condition of any kind. Nothing has to happen first. You do
+not have to work, pay, identify yourself, contribute, comply, belong, register,
+or win anybody's approval. The previous chapter showed that this is structural
+rather than promised: the floor cannot be made conditional without unmaking the
+machinery that makes anything conditional at all.
 
 One phrase should have its content fixed before anything leans on it. *Somewhere to
 live* means shelter that protects: weatherproof, warm enough to be safe in, with clean
@@ -101,13 +102,13 @@ Read the shape of those two. The society is certain about the housing and the he
 words of exactly the people it is punishing, and the two certainties have the same
 boundary: the walls.
 
-The only part of the floor that has been built out into working machinery is the part
-that overlaps with punishment. Everywhere the society does something *to* people, the
-detail exists. Everywhere it owes something *to* people, there is a statement of the
-obligation and nothing underneath it. That asymmetry is not a coincidence and it is
-not a joke at the design's expense; it is what happens when a system is built by
-thinking hard about the ways it might harm someone and less hard about the ways it is
-supposed to help.
+The floor machinery that currently produces an actual arrival overlaps with
+punishment. Everywhere the society does something *to* people, the detail
+exists. Where it owes something *to* people, the debt is now joined by exact
+public duties to respect, protect, fulfil, continue, and remedy. What remains
+missing is the event those duties cannot manufacture: the food, home, care,
+learning, safety, expression, belief, or company actually reaching a person.
+The asymmetry has narrowed in law and remains in life.
 
 It is also, now, a line drawn on purpose rather than an accident the book found. The
 same machinery that watches confinement could be pointed at the debts — a rule that
@@ -196,33 +197,80 @@ a claim and dressing one.
 
 ## Owed by whom
 
-For most of the way here that question had no answer, and saying so was the honest
-course. It has one now.
+For most of the way here that question had no answer, and saying so was the
+honest course. It has an answer now, and that answer is more exact.
 
-There is a public body named in the design, and it owes. What it owes runs to every
-person — not to members, not to contributors, not to residents, not to anyone who has
-qualified for it. That is the whole of what is claimed, and it is a smaller claim than
-it sounds. It also does more than it looks like it does.
+There is an older public body named in the design, and it owes. What it owes
+runs to every person — not to members, not to contributors, not to residents,
+not to anyone who has qualified for it. That is the whole of the debt claimed
+here, and it remains a smaller claim than it sounds.
 
-**The obligation carries the same protection the floor itself carries.** No law can be
-written that puts a class of people outside the provision and then punishes them for
-being outside it. The manoeuvre that would otherwise be available — declare a group not
-owed, then treat not being owed as the offence — cannot be written, in the same way and
-for the same reason that a law punishing you for not eating cannot be written. Nobody
-extended the protection to the obligation. It arrived with the naming.
+Public responsibility around it takes distinct forms. To respect is not to
+interfere. To protect is to prevent, investigate, and answer private interference
+through the public route. To fulfil is to bear the legal responsibility for
+securing what the floor requires. To continue is to keep the protected position
+from collapsing when the ordinary bearer or provider fails. To remedy is to
+restore the person after a breach. Being public does not assign every task to
+every office. Each duty belongs only where a current lawful source names the
+bearer, function, jurisdiction, and scope.
 
-**And the body can be looked at.** Someone who exposes it is protected for doing so, on
-the same terms as anyone who exposes any other authority. It owes, and it is
-answerable, and it was never given the credential that makes an examination count —
-so it can write down what it likes about you and none of it will void your credibility
-or take what you earned. The duty and the pen are in different hands. That
-answerability rests on an entry, like everything else here, and the chapter on public
-answerability prices exactly what a single deletion would do to it.
+A public function cannot shed its duties by being contracted out. Whoever
+performs that function inherits its exact duties for that work. The contractor
+does not thereby become a public body, acquire public authority, or gain a
+wider mandate.
 
-Then the three things this does not buy, and they have the shape everything in this
-chapter has.
+The reverse boundary matters just as much. A private duty must be stated
+expressly. The equality and economic duties already named for particular
+public-facing domains and forms of public-scale power remain because their
+sources name them. A constitutional subject, a relationship, care, dependency,
+ownership, or market activity by itself creates no direct private duty. Other
+private interference reaches the public duty to protect and the justice route;
+it is not turned into a general power over private life.
 
-**The debt says what it is about, and nothing checks it against anything.** The record
+Duties do not all run to the same place. A duty owed to a person, a duty owed
+to a source-defined common, a duty of an office or role, and a voluntary
+commitment remain different kinds of obligation. None is payment for a right.
+None automatically outranks the others. Existing protections that cannot be
+waived constrain every resolution, and one duty displaces another only when a
+current source supplies the exact priority rule and independently reviewed
+conflict evidence. A missing or conflicting priority record decides nothing and
+discharges nothing.
+
+An excuse also has to arrive as a positive, current, reviewable premise. It may
+suspend or move a person's performance; it cannot erase the claim on the other
+side. Continuity must pass to a separately named alternate. The bearer cannot
+create its own excuse by failing to answer.
+
+Civic duties may exist. Their breach cannot remove standing, the floor,
+political voice, access to evidence or challenge, or an effective remedy.
+Failure to work, pay, identify oneself, comply, contribute, or win social
+approval therefore buys no right to make a person less protected. Any other
+consequence needs its own lawful source and process.
+
+A voluntary commitment cannot waive a protection the constitution makes
+non-waivable. If its breach is said to limit some other right, that limit must
+pass the right's own test; the promise does not become a short route around it.
+
+**The debt carries the same protection the floor itself carries.** No law can be
+written that puts a class of people outside the provision and then punishes them
+for being outside it. The manoeuvre that would otherwise be available — declare
+a group not owed, then treat not being owed as the offence — cannot be written,
+in the same way and for the same reason that a law punishing you for not eating
+cannot be written. Nobody extended the protection to the debt. It arrived with
+the naming.
+
+**And the body can be looked at.** Someone who exposes it is protected for
+doing so, on the same terms as anyone who exposes any other authority. It owes,
+and it is answerable, and it was never given the credential that makes an
+examination count — so it can write down what it likes about you and none of it
+will void your credibility or take what you earned. The debt and the pen are in
+different hands. That answerability rests on an entry, like everything else
+here, and the chapter on public answerability prices exactly what deleting its
+supporting entry would do.
+
+Then the limits, and they have the shape everything in this chapter has.
+
+**The debt says what it is about, and nothing checks it against arrival.** The record
 names each of the things owed — food, shelter, care, learning, safety, speech, belief,
 company — and owes each of them to every person. That is worth more than a body owing
 *something*, which is what it used to say. It is also less than it sounds. The entry
@@ -284,16 +332,17 @@ somebody wrote down, in a form re-checked every time, that these people are stil
 owed something. A promise nobody records as a promise is a promise that can be
 deleted quietly.
 
-**Nothing compels the body.** The design states the debt and contains no machinery for
-collecting it. There is no consequence anywhere for the obligation going unmet — the
-marked absence above is noticed about the person, never collected from the bearer, and
-what follows from the mark lands on the body that audits, not the body that owes, and
-is read by nothing after that. The bearer is named and then left alone — which
-puts this beside the other places where this design establishes what is true and has
-almost nothing to say about what is then done about it.
+**Some duties now have legal consequences, but the debt is still not
+collected.** For a finding on an exact named route, the design can identify an
+independent reader, impose an action duty, mark a separately established
+failure to respond, preserve the person's protected position, activate an
+alternate, and name individual and systemic repair. The general floor debt
+still has no machinery that checks performance against arrival. Nor does any
+action duty prove that the bearer acted.
 
-**And naming a debtor is not paying the debt.** Ask whether Bela eats and the answer is
-still no. Every gap this chapter opened with is exactly as wide as it was. What changed
-is that there is now somebody standing on the far side of it. That is a precondition
-for closing the gap and it is not a closure, and a reader who takes the naming for
-provision has been handed something this design has not built.
+**And naming a debtor is not paying the debt.** Ask whether Bela eats and the
+answer is still no. Every delivery gap this chapter opened with is exactly as
+wide as it was. What changed is that responsibility no longer ends in every
+case at an unread word. That is a precondition for closing a gap and it is not
+closure, and a reader who takes a duty or remedy conclusion for provision has
+been handed something this design has not built.

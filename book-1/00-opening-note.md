@@ -138,14 +138,20 @@ another, the crossing should be stated rather than smuggled through a verb.
 
 This volume describes a destination: what a society must guarantee, permit,
 organise, and constrain. It can specify a duty, an authorised decision, a route
-of challenge, a limit on power, or the condition a repair must restore. It does
-not supply staff, money, facilities, inventories, clocks, networks, procedures,
-or a transition from the present.
+of challenge, a limit on power, or the condition a repair must restore. It can
+now distinguish public responsibility to respect a right, protect it against
+interference, fulfil what the public floor requires, continue protection when an
+ordinary route fails, and remedy a breach. Each belongs only to the body,
+function, jurisdiction, and scope a current lawful source names. It does not
+supply staff, money, facilities, inventories, clocks, networks, procedures, or
+a transition from the present.
 
 That boundary does not make operation unimportant. It makes the burden visible.
 An unconditional entitlement with no delivery route remains an entitlement and
-a delivery gap. A review duty with nobody made to act remains a duty and an
-action gap. Naming either gap is not the same as closing it.
+a delivery gap. A formal action duty can give a finding an independent reader,
+make a certified failure to respond consequential, and name continuity and
+remedy. It still does not prove that the reader received the case, acted, or
+repaired anything. Naming either gap is not the same as closing it.
 
 ### Why the prisoner appears so early
 
@@ -367,9 +373,12 @@ below.
   [13](13-the-one-thing-taken.md).
 
 - **The review and appeals bodies:** examine conduct, receive challenges, and
-  appear as holders of duties. The text distinguishes a duty assigned to them
-  from action by them. See Chapters [2](02-public-answerability.md),
-  [5](05-voiding.md), [9](09-the-vote-conviction-does-not-take.md), and
+  hold source-bound duties to read the findings routed to them and act within
+  each named path. A separately established failure to respond can activate an
+  alternate, continuity, and remedy conclusion. None of those conclusions proves
+  that a filing arrived, a body acted, or a remedy was completed. See Chapters
+  [2](02-public-answerability.md), [5](05-voiding.md),
+  [9](09-the-vote-conviction-does-not-take.md), and
   [14](14-when-the-system-notices-it-broke.md).
 
 - **The older assembly and approving-public entries:** produce a proposal and
@@ -390,10 +399,12 @@ below.
 - **The State and the constitutional bodies:** the older `State` entry owes the
   floor and is answerable as a public body; it has not been silently renamed as
   the whole federal republic. The state-form rules separately identify the
-  holders and limits of constitutional powers. Neither route proves operation
-  or delivery. See Chapters [2](02-public-answerability.md),
-  [8](08-what-you-are-owed.md), [12](12-changing-the-rules.md), and
-  [15](15-the-five-joints.md#the-state).
+  holders and limits of constitutional powers. The obligations rules separately
+  assign public duties by lawful function, jurisdiction, scope, and current
+  source. No route proves operation, action, or delivery. See Chapters
+  [2](02-public-answerability.md), [8](08-what-you-are-owed.md),
+  [12](12-changing-the-rules.md), [14](14-when-the-system-notices-it-broke.md),
+  and [15](15-the-five-joints.md#the-state).
 
 ### Principal named cases
 
@@ -513,8 +524,12 @@ the domain.
   [7](07-a-prisoner-is-a-person.md), [11](11-where-people-are-put.md),
   [13](13-the-one-thing-taken.md), and
   [14](14-when-the-system-notices-it-broke.md). This is the most deeply
-  formalised current domain and still stops short of complete conditions,
-  action, and remedy.
+  formalised current domain. Named findings now have independent recipients,
+  action duties, non-response consequences, claimant continuity, individual
+  remedies, and separately tracked duties of common-cause correction,
+  affected-case re-examination, and recurrence checking. Those are legal
+  conclusions over supplied records, not proof of action, enforcement, repair,
+  or institutional operation.
 
 - **Records, surveillance, and automated power:** Chapters
   [1](01-what-counts-as-evidence.md), [3](03-who-holds-the-pen.md),
@@ -602,21 +617,26 @@ cannot, without separate evidence, verify that the event happened, the report
 was honest, the record was complete, the identities match, or anybody acted
 after the conclusion.
 
-### The floor, delivery, and repair
+### The floor, duty, delivery, and repair
 
-**Text diagram:** person → unconditional floor → delivery → recipient-side
-receipt → challenge on failure → remedy → restored condition → continuity,
-feedback, and recheck → renewed failure returns to challenge and correction.
+**Text diagram:** person → unconditional floor → source-bound public duty →
+delivery → recipient-side receipt → challenge on failure → remedy → restored
+condition → continuity, feedback, and recheck → renewed failure returns to
+challenge and correction.
 
-**Prose equivalent:** Personhood is meant to establish what is owed without a
-prior test. A separate delivery route must make each item arrive. Evidence from
-the receiving side must establish accessible, adequate receipt. If delivery is
-missing or defective, the person needs a usable challenge, an accountable body,
-and a remedy that restores the protected condition. Continuity, feedback, and
+**Prose equivalent:** Personhood establishes what is owed without a prior test.
+Work, payment, identity, compliance, contribution, or approval is not upstream
+of the floor. A separate current source names the public bearer, function, and
+scope of any duty to respect, protect, fulfil, continue, or remedy. A separate
+delivery route must still make each item arrive. Evidence from the receiving
+side must establish accessible, adequate receipt. If delivery is missing or
+defective, the person needs a usable challenge, an accountable body, and a
+remedy that restores the protected condition. Continuity, feedback, and
 rechecking must then test whether the restored condition holds; a renewed or
 partial failure feeds back into challenge, correction, and remedy. A rule that
-establishes the debt does not silently supply any later link. The current
-chapters contain some of these links and explicitly leave others open.
+establishes the debt or duty does not silently supply any later link. The
+current chapters contain some of these links and explicitly leave operation and
+actual delivery open.
 
 ### The democratic corridor
 

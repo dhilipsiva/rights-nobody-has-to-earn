@@ -72,86 +72,97 @@ by asking the design what it would say about a specific person and checking the 
 And the repaired marker is made of the same material as the old one. What changed is
 what it reads, not who writes it.
 
-## And then a duty, which is also the end of it
+## And then a duty, which no longer has to be the end
 
-The deepest failure is the one that matters most, and it is the one this book got wrong
-for longest.
+The deepest failure is the one that matters most, and it is the one this book
+got wrong for longest.
 
-A violation is recorded, and now something does follow: the review body is obliged.
-Where the placement marker fires, the review body has a duty about that person. Where
-the isolation marker fires, the same. The design can state that somebody is misplaced
-and can state, in the same breath, that somebody else is supposed to do something
-about it.
+A violation is recorded, and now something does follow: the review body is
+obliged. Where the placement marker fires, the review body has a duty about
+that person. Where the isolation marker fires, the same. The design can state
+that somebody is misplaced and can state, in the same breath, that somebody
+else is bound to answer.
 
-Read the duty carefully, because it arrives carrying what is still wrong with the
-signals that produce it. In the worked record, the older duties come through the
-isolation marker, which fires on every prisoner without exception — so the duty is
-owed about all of them, equally, regardless of anything any of them did or suffered. A
-duty derived from a signal that fires on everyone is a duty owed to a category rather
-than to a case. Before the placement repair it was worse — a duty pointed at named,
-correctly placed people, derived from a signal that could not tell right from wrong —
-and that half is fixed, which shows the duty machinery inherits exactly the quality of
-whatever feeds it.
+Read the duty carefully, because it arrives carrying what is still wrong with
+the signals that produce it. In the worked record, the older duties come
+through the isolation marker, which fires on every prisoner without exception
+— so the duty is owed about all of them, equally, regardless of anything any of
+them did or suffered. A duty derived from a signal that fires throughout a
+category is a duty owed to the category rather than to a discriminating case.
+Before the placement repair it was worse — a duty pointed at named, correctly
+placed people, derived from a signal that could not tell right from wrong — and
+that half is fixed, which shows the duty machinery inherits exactly the quality
+of whatever feeds it.
 
-The new record and time reports take a narrower route. A missing carry, invented carry,
-conflicting clear and void histories, missing personhood-status carry, vanished
-protected entry, missing or disputed typed adulthood evidence, conflicting order, or
-unsupported custody can become an Appeals duty when a challenge fact for the affected
-person reaches the source. That gives the supplied finding a reader by name. It does
-not prove that a genuine filing was received: the fresh-process comparison shows that
-withholding the challenge fact can leave an otherwise valid custody lease unsuspended.
-The duty still gives the reader no consequence for silence and gives the person no
-automatic correction.
+The new record and time reports take a narrower route. A missing carry,
+invented carry, conflicting clear and void histories, missing personhood-status
+carry, vanished protected entry, missing or disputed typed adulthood evidence,
+conflicting order, or unsupported custody can become an Appeals duty when a
+challenge fact for the affected person reaches the source. That gives the
+supplied finding a reader by name. It does not prove that a genuine filing was
+received: the fresh-process comparison shows that withholding the challenge
+fact can leave an otherwise valid custody lease unsuspended.
 
-The adulthood case needs its own boundary. General adulthood attaches automatically at
-the common age; a registry entry is evidence, not the source of status. Missing or
-disputed evidence therefore cannot lawfully prolong childhood, and an expiring right
-requires provisional adult treatment while evidence is reconciled. The executable
-challenge route does much less: it derives an Appeals duty from supplied facts. It
-does not determine an outside age, supply the missing evidence, deliver a ballot or
-other right, or make the review body act.
+The adulthood case needs its own boundary. General adulthood attaches
+automatically at the common age; a registry entry is evidence, not the source
+of status. Missing or disputed evidence therefore cannot lawfully prolong
+childhood, and an expiring right requires provisional adult treatment while
+evidence is reconciled. The executable challenge route still does much less
+than life requires: it does not determine an outside age, supply the missing
+evidence, deliver a ballot or other right, or make the review body act.
 
-“Vanished” is deliberately conservative here. The record has no way to represent a
-lawful retirement of a protected entry, so every missing required carry receives the
-same disappearance report. The report establishes a mismatch between supplied records;
-it does not establish why the entry is absent or that its removal was unlawful.
+“Vanished” is deliberately conservative here. The record has no way to
+represent a lawful retirement of a protected entry, so every missing required
+carry receives the same disappearance report. The report establishes a
+mismatch between supplied records; it does not establish why the entry is
+absent or that its removal was unlawful.
 
-It also inherits a boundary nobody drew on purpose. The duty is not derived from
-wrongness in general; it is derived kind by kind. Placement and isolation have their
-own rules, and each temporal defect has an expressly named supplied-fact challenge route.
-No durable receipt, alternate intake witness, or advocate-created suspension record is
-implemented. A new kind of breach produces no duty until somebody writes another route. The general sentence
-— every mark obliges a response — is available and was measured while this chapter was
-expanded; the design deliberately keeps the specific rules because they are correct
-and pinned and collapsing them buys nothing. The consequence deserves its own line.
-In this design even the obligation to respond to wrongdoing is itemised, and a new
-kind of wrong begins life unowed.
+The duty also inherits a boundary nobody drew on purpose. It is not derived
+from wrongness in general; it is derived kind by kind. Placement and isolation
+have their own rules, and each temporal defect has an expressly named
+supplied-fact challenge route. No durable receipt, alternate intake witness, or
+advocate-created suspension record is implemented. A new kind of breach
+produces no duty until somebody writes another route. In this design even the
+obligation to respond to wrongdoing is itemised, and a new kind of wrong begins
+life unowed.
 
-The duty also points one way. It is owed about the person who was wronged, never at
-whoever did the wrong — the placement chapter tells how the report's author is
-dropped between the premise and the conclusion, and the newer reports likewise send
-the affected person's challenge to Appeals rather than identifying or punishing the
-writer or omission that caused the defect.
+The duty points toward the affected person. It does not point at whoever did
+the wrong — the placement chapter tells how the report's author is dropped
+between the premise and the conclusion, and the newer reports likewise send
+the affected person's challenge to Appeals rather than identifying or punishing
+the writer or omission that caused the defect.
 
-And then **nothing reads the duty.** No rule consults it. No deadline follows, no
-performed review derives, and nothing changes about the placement or isolation being
-reported. The chain
-is one link longer than it was and it ends in the same place.
+The chain no longer ends there. For the kinds named here, the duty reaches an
+independently named reader and becomes an action duty. A separately certified
+failure to respond can send the case to a predeclared alternate and preserve
+the person's protected position while it waits. The source can name an
+individual remedy. It keeps common-cause correction, re-examination of affected
+cases, and recurrence checking separate, so repairing a person cannot be
+passed off as repairing the system.
 
-This is the same shape as earlier gaps and it is worth naming as a family. The floor
-states what is owed and delivers to the confined. The amendment machinery decides which
-proposals receive the law label and nothing applies the change. The audit states what is
-broken, states who owes a
-response, and nothing responds. Repeatedly, the design reaches the moment where a
-determination has been made correctly and then stops. The audit now stops one step
-later, which is not the same as arriving.
+Each result needs its own positive, current, source-bound record. Missing or
+conflicting evidence supplies no duty, excuse, priority, discharge, alternate,
+or remedy. The bearer does not certify its own excuse. A wrong recipient gains
+no duty merely because a finding exists, and none of these rules discovers who
+caused the original wrong.
 
-There is a real diagnosis in that pattern, and adding the link is what made it legible.
-This design is very good at establishing *what is true* and has almost nothing to say
-about *what is then done*. You can keep extending the chain: the duty could produce a
-mark for having been ignored, and that mark could produce another duty, and each of
-those is expressible. What the design runs out of is not links. It is anybody who has
-to act.
+And then nobody has necessarily acted. A formal action duty is not a performed
+review. A non-response conclusion is not an escalation received. Continuity is
+not care delivered, and a remedy is not restoration completed. The chain is
+legally longer than it was. It still stops on this side of the world.
+
+That is the same shape as the earlier gaps, with its remaining limit now made
+visible. The floor states what is owed and mostly does not deliver it. The
+amendment machinery can state a source-bound result and does not deploy a new
+constitution. The audit can now state what is broken, who must read it, what
+that reader must do, what follows from established silence, and which
+protections and remedies continue. It cannot state that any of those acts
+happened.
+
+The diagnosis has therefore narrowed. This design no longer runs out of someone
+who has to act. It runs out of the act. That is not wordplay. The constitutional
+omission is closed; the operating-world gap remains outside what these rules can
+make true.
 
 ## What it does have
 
@@ -186,19 +197,24 @@ what the audit reads arrives as reports somebody chooses to write, and an act no
 writes down is an act no marker in this book can see. The audit cannot be bought.
 It can be starved.
 
-An earlier version of this chapter went one step further and said that being a pure
-observer was *precisely why* nothing could follow from its observations — that the
-powerlessness was structural, a consequence of where the audit sits. That was wrong, and
-it was the most comfortable kind of wrong: it turned a decision into a law of nature and
-let the design take credit for a limit it had chosen. A duty does follow now, and the
-rule producing it was always available. So was the next link, and the one after that. The
-design could mark the review body for having ignored the duty; that rule was tried and it
-works. Nothing structural stood in the way of any of it.
+An earlier version of this chapter said that being a pure observer was
+*precisely why* nothing could follow from the audit — that the powerlessness was
+structural, a consequence of where it sits. That was wrong, and it was the most
+comfortable kind of wrong: it turned a decision into a law of nature and let
+the design take credit for a limit it had chosen.
 
-That is the trade, stated honestly, and it is smaller than the version this chapter used
-to offer. The audit cannot be corrupted from below, and that much is real and worth
-having. What follows from it is a question the design answers by choosing, not by being
-unable — and where it has chosen, it has chosen to stop.
+A later version admitted that a duty could follow and stopped there because
+nothing read it. That stopping point is history too. The current source chooses
+exact readers, action duties, non-response consequences, continuity, alternate
+routes, individual remedies, common-cause correction, affected-case
+re-examination, and recurrence checking. Each remains bound to its exact kind
+of finding and supplied record.
+
+That is the trade, stated honestly. The audit can now produce a path the law
+requires somebody to follow. It cannot receive the filing, convene the reader,
+perform the review, enforce the result, restore the person, correct the common
+cause, or check whether the wrong returned. The source has stopped choosing
+silence. It has not made institutions live.
 
 What the slot is worth is this: every defect named in this book was found by asking the
 design what it thought was true and comparing the answer to what it claimed. The

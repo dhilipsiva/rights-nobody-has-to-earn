@@ -292,12 +292,14 @@ old elites captured the new machinery while it went right on running. Capture is
 not what happens when a design breaks. It is what happens while it works.
 
 What this design does against capture, most of this book: the pen split across
-two bodies, affirmative case-bound independence for each reviewer, the grounds a
-paid examiner must cite, the reconciled mark carried into the selected current
-record on one witnessed constitutional line, the shield for whoever exposes an
-authority, the audit whose findings can name a duty but still cannot make anyone
-act — and the confession, made early and repeated, that beneath every guard sits
-a record that people keep. Missing kinship never certifies independence.
+independent bodies, affirmative case-bound independence for each reviewer, the grounds
+a paid examiner must cite, the reconciled mark carried into the selected
+current record on a witnessed constitutional line, the shield for whoever
+exposes an authority, and the audit whose findings now reach independent
+readers, action duties, non-response consequences, continuity, and remedy while
+still proving none of those acts occurred — and the confession, made early and
+repeated, that beneath every guard sits a record that people keep. Missing
+kinship never certifies independence.
 
 The objection is that confession, handed back as a verdict. Gemini: "You have
 not destroyed the informal economy of leverage; you have just moved it to the
@@ -653,31 +655,49 @@ anything arrives: teaching that was heard delivers learning, one route that
 runs through no prison, built to show the shape of a delivery rule so that the
 shape cannot be argued away as impossible.
 
-The binding layer is now wider than one debtor and one refusal. It names the
-tiers, bodies, holders, jurisdictions, scopes, democratic results, courts,
-continuity rules, and failure defaults through which public power may be lawful.
-It also names where each conclusion stops. The supplied record does not
-authenticate itself. A current authority does not staff its holder. A budget
-continuity rule does not find money. A duty does not make anyone act.
+The binding layer is now wider. It names the tiers, bodies, holders,
+jurisdictions, scopes, democratic results, courts, continuity rules, and failure
+defaults through which public power may be lawful. It also names where each
+conclusion stops. The supplied record does not authenticate itself. A current
+authority does not staff its holder. A budget continuity rule does not find
+money. A duty does not make anyone act.
+
+The duties are no longer undifferentiated. Public responsibility is
+divided into respect, protection, fulfilment, continuity, and remedy, each
+assigned only to the function and place its current source names. A contractor
+carrying a public function carries that function's duties and gains no public
+authority from them. A private duty has to be stated: the subject matter alone
+cannot create one.
+
+Nor can a duty become the price of a right. Duties to a person, to a
+source-defined common, of an office or role, and voluntarily assumed
+commitments remain separate. Conflict needs a current priority rule and
+independent evidence. Excuse needs a positive, reviewable premise and an
+alternate that preserves the claim. Work, payment, identity, compliance,
+contribution, or approval can never buy access to the floor by threatening its
+loss.
 
 Everything on the operating side — bakeries, tax administration, rosters,
 ballots, tallies, publications, facilities, salaries, logistics, staffing,
-capacity, transition, and legitimacy — belongs to the second book about
-building. The objection that survives, whole, is legitimacy: no argument in
-this part makes anyone *adopt* these rules, constitutions are not adopted for
-technical merit, and the reviewer who said the bridging book is unwritten is
-right. I am one author; that book needs people I have not met.
+capacity, notification, enforcement, recurrence checking, transition, and
+legitimacy — belongs to the second book about building. The objection that
+survives, whole, is legitimacy: no argument in this part makes anyone *adopt*
+these rules, constitutions are not adopted for technical merit, and the
+reviewer who said the bridging book is unwritten is right. I am its author;
+that book needs people I have not met.
 
-**Survives, narrowed.** Two claims survive. Under these rules, the floor is owed
-without an earned condition, its absence cannot be made a reason for
-imprisonment, and the duty has a name. And the republic's constitutional powers
-now have named holders and positive, source-bound limits rather than an
+**Survives, narrowed.** Under these rules, the floor is owed without an earned
+condition, its absence cannot be made a reason for imprisonment, and no civic,
+role, private, or voluntary obligation can be used to purchase or cancel it.
+Public responsibility now has named forms, bearers, scopes, readers, failure
+consequences, continuity, and remedies. The republic's constitutional powers
+also have named holders and positive, source-bound limits rather than an
 unwritten state-shaped gap.
 
 The narrowing is everything those conclusions cannot prove: authentic records,
 honest elections, complete rosters, funding, staffing, independence in fact,
-operation, delivery, enforcement, feasibility, and legitimacy. The
-specification, as a property: the bearer's taking and spending resolve to
+action, operation, delivery, enforcement, repair, feasibility, and legitimacy.
+The specification, as a property: the bearer's taking and spending resolve to
 published entries an outsider can re-run — where the money came from, where it
 went, held to the same standard of retraceability as every other conclusion in
 the record. A duty-bearer whose books cannot be re-run is a discretion engine

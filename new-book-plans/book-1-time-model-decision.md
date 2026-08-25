@@ -289,8 +289,8 @@ The implementation was admitted only after these gates were made executable:
 6. [x] **Narrowness-impact note:** the reviewed ledger classifies the impact on
    Chapters 1, 4, 5, 7, 8, 9, 13, 14, and Part V. It records the fate of
    Chapter 4's unbounded reach-back, Chapter 13's title and no-duration
-   claim, Chapter 8's three-open-doors claim, and Chapter 14's unread-duty
-   endpoint. The generated
+   claim, Chapter 8's three-open-doors claim, and Chapter 14's former
+   unread-duty endpoint, now superseded by FS-CVF-016's typed legal route. The generated
    [`temporal-assurance-case.md`](temporal-assurance-case.md) is the bounded
    current-source assurance record; it preserves the outside-liveness boundary.
 7. [x] **Integrated floor-query execution:** release Nibli

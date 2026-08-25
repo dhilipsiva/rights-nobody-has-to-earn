@@ -790,14 +790,14 @@ redesign, recurrence monitoring, and non-repetition measures for the pattern. No
 remedy may take another person's standing, floor, core liberty, due process,
 political equality, or protected collective right.
 
-**The endpoint is stated rather than obscured.** The design's existing
-accountability chain marks a breach, produces a duty, and stops: nothing reads
-that duty, so what runs out is not links but anybody who has to act. Every claim
-in this section is written in that register. This ruling specifies who must be
-able to look, what they must be able to reach, and what must follow — it does
-not claim that abuse of force or of emergency power *is corrected* by a
-mechanism that is presently unread, and implementation may not upgrade a
-specification into an assurance.
+**Historical endpoint at ratification; superseded by FS-CVF-016.** When this
+decision was ratified, the accountability chain marked a breach, produced a
+duty, and stopped at an unread conclusion. The current obligations family now
+assigns exact readers, action duties, positive non-response, alternates,
+continuity, individual remedy, systemic correction, affected-case re-audit,
+and recurrence verification. This ruling still does not claim that abuse of
+force or emergency power *is corrected*: a legal route proves no receipt,
+action, completed remedy, recurrence control, or institutional liveness.
 
 ## 21. Evidence, records, and failure polarity
 
@@ -905,8 +905,9 @@ Every name below needs an explicit card before any protective rule family lands.
 - **`travel`** is the existing movement conclusion with a single blocker today.
   Every new movement restriction adds a blocker and must be pinned as such; the
   conclusion must remain read by no rule.
-- **`err` / `obliged`** remain the audit endpoint, unread. A protective duty
-  routed to them gains a marker, not an actor.
+- **`err` / `obliged`** were the unread audit endpoint when this decision was
+  ratified. FS-CVF-016 now routes every current finding kind through an exact
+  typed reader/action duty; that legal route still proves no actor acts.
 - **`prisoner`** is the existing confinement conclusion, read by several rules.
   It is not a template for a protective restriction and must not silently
   acquire non-punitive holding.
@@ -959,9 +960,9 @@ of that landing.
    rewritten in the same change; the reachability claim is preserved by section
    6's scoping of the force test to the public actor's own accountability, and
    that asymmetry is a priced choice, not an oversight.
-4. **The accountability endpoint** — nothing reads the duty the audit produces.
-   Section 20 is written in that register and every derived chapter touching
-   protective oversight must be too.
+4. **The historical accountability endpoint** — at ratification, nothing read
+   the duty the audit produced. Section 20 now records its supersession by
+   FS-CVF-016 while preserving the external action and remedy-liveness limit.
 
 Also recorded so it is not assumed: the counted-claim gate does not match small
 cardinals or "exactly *n*". Where a protective family introduces a second or
@@ -1107,8 +1108,9 @@ On 2026-08-08 the author ratified:
   against a unilateral exit, and recognition as an external assumption;
 - [x] the express federal competence addition with its no-unlimited-power
   disclaimer and preserved regional civil-protection competence;
-- [x] oversight and remedy written against the existing unread-duty endpoint
-  rather than claiming correction; and
+- [x] oversight and remedy written against the then-existing historical
+  unread-duty endpoint rather than claiming correction; FS-CVF-016 later
+  supplied the legal reader route without claiming operation; and
 - [x] the Book 1, Book 2, Nibli, temporal, predicate-census, firewall,
   prose-audit, acceptance, evidence, and non-enactment boundaries recorded in
   this decision.

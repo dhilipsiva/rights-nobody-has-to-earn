@@ -19,14 +19,14 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "ca475b13d5f68d5229f1b0a51e875bf39a818d77882915974e05b01e9979742a",
+  "rules_sha256": "69b67d4ec4c173ce192a3f8aacab4e2d4367af8a032e05d6d9d0c6f654e05376",
   "facts_sha256": "d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
     "authority": "cac307513023cdafcd40595d857d62b1237e5a3a1e87d5cbc8b92b5d2514e78e",
-    "authorized": "f956f41a629b1e6a52235dc0b28558806bc9ad4650e7c175780f4da554492329",
+    "authorized": "f122adbd3ec4681007686e240d438d45bdd2d2f55c4f20e1ec8d09d804b065a3",
     "become": "4267335bc5356d9b87bbaed0feeafc589728043818ecf5cb6757cbeec3ca05d4",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
@@ -39,7 +39,7 @@
     "cite": "aacb6724db7bb6106c5013cee27e0d91f1c222be0e209f13a1068f5cec5a77a3",
     "clean": "8c4fa6ea07e9fadc34004db14dc81b67de9b0c1a4c6aa7dc77a3f56a929066f7",
     "clear": "affd727ee37bc0305631a0e1a3b9b75b28927467957d9f35ec0ca3b7e0dd7978",
-    "collide": "57a7ae8591c8202522e5578fcf49e311c4bf3f2eebe7d5ca61174cc8dc1a888b",
+    "collide": "f1e95b68250f6aaf5df3511d1a74124bf5ec4dfefa6129df777e3c03845ebf52",
     "complete": "4de65175e6593aeefaddf5a169877cf4fd57dd805648dda5b46a4e1a614b9968",
     "concurrent": "239a163bccf7deec1f62e9cad53c1ba5f03af2d4c52c616a321c4bcf0726c6c7",
     "continue": "b7de0ce64ec41c5f77cfd3b9495e3d8a97ef957716b025740239421b809c3e48",
@@ -53,7 +53,7 @@
     "eats": "418f543b52f7f350af7508d00c93a7f3b45e26cf1a895b29a2ab183624bfcb8c",
     "endorses": "b5c9d36cb2d095065308d47d10cf24e98cca7b395c2f50acad58395fd52fcbab",
     "entitled": "a8644e00386dce18427fbd010817b70f0488fdfe07c47df9b8a442efdae6fe59",
-    "err": "93fbf4723dd77e76f3fb5a4a9000b59feda74dbf239a3515f5a6d79c62e6402f",
+    "err": "c66c26f024d248efc051a2007cb8d8d7cf65ff3a49cfb1b89ec215780661568b",
     "expresses": "50759c4c4277fd765565e0b0cf2f88dde2174d4647f96c6dfcaf63405b7a77b6",
     "false": "59f4f3f3e816b933faa43fad109827fd68d05e7422769c33e4e746859bb9dfc1",
     "family": "4c0ec69c70d097433d43850d445500ba4008506b43023e738d6998577aae9d22",
@@ -72,8 +72,8 @@
     "married": "7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6",
     "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
     "meets": "a9cca28717bb66c3f33f3ae83ed83caa3a7c6b75cd7bd226f41089f9c026c061",
-    "obliged": "635a864a87d4b8aff407346d2b14c079714d8c078c78e622babd1972b1d26f9b",
-    "observe": "8a69ec30efe5a811ea954fcc320bfea45373a6262e27ed39d14f6ebba8f04219",
+    "obliged": "c22edbca1b4076eec38605e8d0b9bd5cc408a5bbe4b7796a3c1f26adb04ea9a5",
+    "observe": "0f2ef435c64e6714f0d9e46f7582311d57dd284f80127bb4fa16e1a7332e3a47",
     "orderly": "59535e1c160c90a8cc609b4c73581a2b17a1bab4f31f46fecd54af05b69455ec",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
     "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
@@ -82,9 +82,9 @@
     "permits": "f8c03ccb6abd9b350f00fe93840157596fa6844f5ac5e9152b819413ab726bb0",
     "person": "ae9c7cf556c7eb769c3340477fb3c7458d5d5a5303f50375d4ca87605de91f4d",
     "precede": "d689eb759af959e0d33e23ebfe8fbbfce829a5da199061498343503aa0907351",
-    "prevents": "287e86cb2899c504717503648f15c524278a3780ffc9cd3e5ba5b47a62c39e09",
+    "prevents": "77733aac1a7c4f4915cce26cc90cd5cfdc7ce9a97e98591eb91068825143e7b0",
     "prisoner": "e8a5a69f4f5c2989cc4859ce485ec9cca1fa2b0d827323537fdc4f3b4e18a132",
-    "public": "6c4ddcc62e4e5693697d22284c3e07e861a648b656259f4e138944834f63cf60",
+    "public": "beff26c0fecfae700538e1a9abb9f2a52c4c4bef5d21f9737bf75935cf082e01",
     "put": "afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627",
     "ratifies": "f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed",
     "receives": "831a4f6828235da8359f1c1a63c78926ba874c1edda9dccff95c464c128df655",
@@ -367,13 +367,13 @@
       }
     },
     "obliged": {
-      "classification": "pending_interface",
-      "contract_id": "audit-duty-obliged-pending",
-      "decision_ref": "new-book-plans/book-1-closure-gaps-decision.md::Seed the third class with the eight floor actualities",
+      "classification": "derived_only",
+      "contract_id": "source-bound-obligation-derived-only",
+      "decision_ref": "new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 2. Source-bound origin and materialisation",
       "expected": {
         "rule_produced": true,
         "admitted": false,
-        "derived_only": false,
+        "derived_only": true,
         "ground_asserted": false
       }
     },
@@ -644,7 +644,7 @@
         "target": "correct",
         "evidence_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
       },
-      "current_challenge_route": "A challenge can break a lease and derive a temporal error and inert Appeals duty. It does not authenticate the authorisation, correct it, guarantee receipt, or make an institution act.",
+      "current_challenge_route": "A challenge can break a lease and derive a temporal error whose compatibility duty feeds the source-bound typed action route. It does not authenticate the authorisation, correct it, prove receipt, or make an institution act.",
       "required_challenge_route": "Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.",
       "risk_dispositions": [
         "patchable",
@@ -763,7 +763,7 @@
         "target": "match",
         "evidence_ref": "new-book-plans/constitution.nibli::# when both independent witnesses report the same predecessor-to-successor"
       },
-      "current_challenge_route": "Carry omission or forgery can be contested into an inert Appeals duty, but no rule authenticates witnesses, repairs the transition, restores a lost supporting record, or guarantees action.",
+      "current_challenge_route": "Carry omission or forgery can be contested into an Appeals compatibility duty and typed action route, but no rule authenticates witnesses, repairs the transition, restores a lost supporting record, or proves action.",
       "required_challenge_route": "Accessible subject or advocate challenge, independent fork and witness review, linked correction, safe continuity, recovery, escalation, and remedy.",
       "risk_dispositions": [
         "patchable",
@@ -789,7 +789,7 @@
         "operations": [
           "assert `challenge(Adam, Case_Adam, TemporalReview)`"
         ],
-        "effect": "One unauthenticated filing derives a typed suspension conflict for Adam's lease, removes custody, derives a temporal-dispute error, and adds an inert Appeals duty. The fail-safe is deliberate, but writer and receipt authenticity remain external.",
+        "effect": "One unauthenticated filing derives a typed suspension conflict for Adam's lease, removes custody, derives a temporal-dispute error, and feeds the source-bound Appeals action route. The fail-safe is deliberate, but writer and receipt authenticity remain external.",
         "target": "collide",
         "evidence_ref": "new-book-plans/constitution.nibli::challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope)"
       },
@@ -802,7 +802,7 @@
         "target": "collide",
         "evidence_ref": "new-book-plans/constitution.nibli::challenge($subject, $lease, TemporalReview) & authorized($lease, ActiveCustody, $case) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope)"
       },
-      "current_challenge_route": "The relation is the challenge input: a supplied lease challenge suspends that lease and derives a dispute error and inert Appeals duty; other named temporal defects also feed the duty. Nothing authenticates receipt, corrects the entry, reads `obliged`, or guarantees action.",
+      "current_challenge_route": "The relation is the challenge input: a supplied lease challenge suspends that lease, derives a dispute error, and feeds the exact source-bound Appeals reader/action route; other named temporal defects do the same. Nothing authenticates receipt, corrects the entry, or proves action.",
       "required_challenge_route": "Accessible subject or advocate filing, independent receipt, interim continuity, reasoned response, correction, appeal, escalation, and remedy for non-response.",
       "risk_dispositions": [
         "patchable",
@@ -964,7 +964,7 @@
         "target": "correct",
         "evidence_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
       },
-      "current_challenge_route": "A supplied subject challenge suspends the lease and creates an inert duty; no rule authenticates the renewal, decides a disputed renewal, corrects it, or makes Appeals act.",
+      "current_challenge_route": "A supplied subject challenge suspends the lease and feeds the source-bound Appeals reader/action route; no rule authenticates the renewal, decides a disputed renewal, corrects it, or proves that Appeals acts.",
       "required_challenge_route": "Notice, accessible subject or advocate contest, independent review, safe suspension, correction, escalation, and remedy with no renewal-by-silence.",
       "risk_dispositions": [
         "patchable",
@@ -1044,7 +1044,7 @@
         "target": "time",
         "evidence_ref": "new-book-plans/constitution.nibli::observe(TemporalReview, $window, $end, WindowEndScope) & precede($start, $end, EventPath) & precede($start, $end, RecordPath)"
       },
-      "current_challenge_route": "An affected person can challenge the lease, not authenticate or correct the outside window or force a new one to arrive; the resulting duty remains unread.",
+      "current_challenge_route": "An affected person can challenge the lease, not authenticate or correct the outside window or force a new one to arrive; the resulting compatibility duty feeds the typed Appeals route without proving action.",
       "required_challenge_route": "Window and clock-source contest, independent correction, alternate time evidence, outage continuity, safe power suspension, escalation, and remedy.",
       "risk_dispositions": [
         "patchable",
@@ -1121,7 +1121,7 @@
         "target": "correct",
         "evidence_ref": "new-book-plans/constitution.nibli::endorses(Electorate, $lease) & endorses(TemporalReview, $lease)"
       },
-      "current_challenge_route": "A supplied subject challenge can suspend a case-bound lease and add an inert Appeals duty, but it does not authenticate or correct an endorsement or make Appeals act.",
+      "current_challenge_route": "A supplied subject challenge can suspend a case-bound lease and feed the source-bound Appeals reader/action route, but it does not authenticate or correct an endorsement or prove that Appeals acts.",
       "required_challenge_route": "A public contest and independent review route tied to the exact renewal decision, with safe continuity for rights and no withholding-based extension of restrictive power.",
       "risk_dispositions": [
         "patchable",
@@ -1424,7 +1424,7 @@
         "target": "correct",
         "evidence_ref": "new-book-plans/constitution.nibli::# <T3-LEASE-RULE-BEGIN>"
       },
-      "current_challenge_route": "A supplied lease challenge suspends the lease and adds an inert duty; the source does not authenticate, correct, or replace a disputed limit.",
+      "current_challenge_route": "A supplied lease challenge suspends the lease and feeds the source-bound Appeals reader/action route; the source does not authenticate, correct, or replace a disputed limit, and proves no action.",
       "required_challenge_route": "Subject notice and challenge, independent review, correction, safe suspension, alternative continuity, escalation, and remedy.",
       "risk_dispositions": [
         "patchable",
@@ -1467,7 +1467,7 @@
         "target": "precede",
         "evidence_ref": "new-book-plans/constitution.nibli::~($before_event = $after_event) -> precede($claim, EventSequence)."
       },
-      "current_challenge_route": "Opposite supplied orders derive a conflict and a challenge can add an inert Appeals duty; no rule authenticates the list, chooses a true order, corrects it, or makes the reader act.",
+      "current_challenge_route": "Opposite supplied orders derive a conflict and a challenge feeds the source-bound Appeals reader/action route; no rule authenticates the list, chooses a true order, corrects it, or proves that the reader acts.",
       "required_challenge_route": "Order and manifest contest, independent artifact review, linked correction, fork/replay resolution, continuity, escalation, and remedy.",
       "risk_dispositions": [
         "patchable",
@@ -1545,7 +1545,7 @@
         "target": "complete",
         "evidence_ref": "new-book-plans/constitution.nibli::Matching observations from Chronicle and TemporalReview bind an item, its"
       },
-      "current_challenge_route": "Temporal defects can be challenged into an inert Appeals duty, but no rule authenticates either witness, resolves disagreement, proves that every required field was enumerated, corrects an attestation, or guarantees response.",
+      "current_challenge_route": "Temporal defects can be challenged into the source-bound Appeals reader/action route, but no rule authenticates either witness, resolves disagreement, proves every required field was enumerated, corrects an attestation, or proves response.",
       "required_challenge_route": "Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.",
       "risk_dispositions": [
         "patchable",
@@ -1704,7 +1704,7 @@
         "target": "entitled",
         "evidence_ref": "new-book-plans/constitution.nibli::entitled(every person, event { secure() })."
       },
-      "current_challenge_route": "An accepted predecessor standing entry preserves personhood and a successor omission derives an error; a supplied challenge adds an inert Appeals duty. Genesis omission, correction, receipt, action, and remedy remain unresolved.",
+      "current_challenge_route": "An accepted predecessor standing entry preserves personhood and a successor omission derives an error; a supplied challenge feeds the source-bound Appeals reader/action route. Genesis omission, correction, receipt, action, and completed remedy remain unresolved.",
       "required_challenge_route": "Immediate service and standing, followed by independent reconciliation, correction history, and deletion recovery.",
       "risk_dispositions": [
         "patchable",
@@ -1769,7 +1769,7 @@
         "operations": [
           "assert `put(State, Lalo, Homestay)`"
         ],
-        "effect": "A contradictory Homestay report produces a placement error and inert Review duty.",
+        "effect": "A contradictory Homestay report produces a placement error whose Review compatibility duty feeds the source-bound typed action route.",
         "target": "err",
         "evidence_ref": "new-book-plans/constitution.nibli::put($a, $x, Homestay) & ~fit($x, Homestay) -> err($x, Placement)"
       },
@@ -1782,7 +1782,7 @@
         "target": "err",
         "evidence_ref": "new-book-plans/constitution.nibli::put($a, $x, Homestay) & ~fit($x, Homestay) -> err($x, Placement)"
       },
-      "current_challenge_route": "The marker notices only one direction and no rule corrects placement or acts on the duty.",
+      "current_challenge_route": "The marker notices only one direction. Its exact Review duty now feeds a source-bound action, nonresponse, alternate, continuity, and remedy route, but no rule corrects placement or proves that a reader acts.",
       "required_challenge_route": "Immediate placement appeal, interim safe continuity, correction, remedy, and independent audit reader.",
       "risk_dispositions": [
         "patchable",
@@ -1903,7 +1903,7 @@
         "target": "false",
         "evidence_ref": "new-book-plans/constitution.nibli::match($x, CarriedVoid) & ~clean($x) -> false($x)"
       },
-      "current_challenge_route": "T1 can mark carry omission or forgery and a supplied challenge adds an inert Appeals duty. Forgiveness can derive `clean` and neutralise `false`, but neither route authenticates or corrects the raw carry, prior status, observations, or carry reports.",
+      "current_challenge_route": "T1 can mark carry omission or forgery and a supplied challenge feeds the source-bound Appeals reader/action route. Forgiveness can derive `clean` and neutralise `false`, but neither route authenticates or corrects the raw carry, prior status, observations, or carry reports, and neither proves action.",
       "required_challenge_route": "Cross-snapshot contest, independent reconciliation, correction history, and recovery from omitted or forged carry.",
       "risk_dispositions": [
         "patchable",
@@ -2100,7 +2100,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Specify obligations without making rights reciprocal bargains",
+      "owner_ref": "new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::No protected entitlement is consideration for duty performance.",
       "tags": [
         "recognition",
         "contribution"

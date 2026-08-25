@@ -65,7 +65,7 @@ These are load-bearing limitations, not implementation notes:
 | `RI-6` | Visible correction, retention, and deletion control | `book1_target_unimplemented` | `append_only_correction_history`, `retention`, `deletion_control` |
 | `RI-7` | Supplied snapshot lineage, order, and constitutional time | `current_verified` | `reconciliation`, `temporal_status` |
 | `RI-8` | Failure polarity, continuity, and recovery | `book1_target_unimplemented` | `failure_polarity`, `continuity_remedy`, `omission_or_deletion_recovery` |
-| `RI-9` | Independent reader, action duty, and remedy | `book1_target_unimplemented` | `independent_recipient`, `action_duty`, `continuity_remedy` |
+| `RI-9` | Independent reader, action duty, and remedy | `current_verified` | `independent_recipient`, `action_duty`, `continuity_remedy` |
 | `RI-10` | Operational assurance and liveness remain external | `book2_external_assumption` | `external_assurance` |
 | `RI-11` | In-snapshot deletion history is not inferable | `refused_or_unprovable` | `deletion_control`, `omission_or_deletion_recovery` |
 | `RI-12` | The constitutional source is itself a consequential record | `book1_target_unimplemented` | `rule_integrity`, `authorship`, `authority`, `append_only_correction_history` |
@@ -292,29 +292,28 @@ None.
 
 **Claim.** Every integrity finding reaches an independent recipient that must read it, preserve interim continuity, take or obtain a reviewable action, escalate non-response, remedy both the record and any resulting constitutional harm, investigate common cause, correct the responsible rule, process, or record channel, re-audit affected cases, and verify recurrence control without delaying individual continuity or remedy.
 
-**Argument.** A referral nobody must read repeats the current audit gap. Deriving a duty is a formal consequence, but the assurance path remains open until a separate recipient has an action obligation and a failure consequence that does not remove the affected person's rights.
+**Argument.** The current source now routes every enumerated err/2 finding kind through an exact independent recipient and typed action duty, then keeps positive nonresponse, alternate escalation, claimant continuity, individual remedy, common-cause investigation, responsible-control correction, affected-case re-audit, recurrence verification, and individual-relief non-delay separately source-bound. This is a verified legal route over supplied records, not evidence that an institution receives or performs it.
 
-- **Posture:** `book1_target_unimplemented`
-- **Current failure:** Articles 8b and 8c derive `obliged` from selected placement and temporal findings, but nothing reads the duty and no general reader, response, escalation, continuity, or systemic remedy follows.
+- **Posture:** `current_verified`
+- **Current failure:** The formal family does not prove receipt, notice, staffing, action, delivery, completed remedy, responsible-control correction, recurrence control, or institutional liveness. Withheld or unauthenticated intake can still prevent the supplied finding premise from reaching the legal route.
 - **Target contract:** Name the recipient, independence, receipt evidence, action duty, permitted actions, continuity, reasons, review, escalation, non-response finding, final remedy authority, effect on prior decisions, common-cause investigation, systemic correction owner, affected-case re-audit, and recurrence evidence; systemic work may not delay individual continuity or remedy.
 - **Residual assumption:** No constitutional rule can prove that a real institution eventually acts; operational response remains a liveness claim.
-- **Temporal status:** A reader can be represented at T0; deadlines, maximum delay, and assured response require T3 and external liveness evidence.
+- **Temporal status:** The T0 legal route is implemented and exact. Deadlines, maximum delay, assured receipt, and performed response require T3 and external liveness evidence.
 - **Book 2 handoff:** Operate notification, case assignment, escalation, response, continuity, and remedy workflows and publish evidence of receipt and action.
-- **Owner:** `TODO.md::Specify obligations without making rights reciprocal bargains`
+- **Owner:** `new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 9. Defect and dependency disposition`
 
 **Current evidence**
 
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
-| formal | `exposes_gap` | `RI-9` | ``CLAUDE.md::Nothing reads `obliged`, so it is a second inert obligation`` |
-| prose | `exposes_gap` | `RI-9` | `book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**` |
+| formal | `supports_current` | `RI-9` | `new-book-plans/constitution.nibli::# <OBLIGATIONS-RULES-BEGIN>` |
+| counterfactual | `supports_current` | `RI-9` | `new-book-plans/counterfactual/no-obligations-finding-reader.pins.nibli::# The Placement typed reader duty disappears under reader ablation.` |
+| formal | `supports_current` | `RI-9` | `new-book-plans/obligations.pins.nibli::# FS-CCE-222 omitting IndividualReliefNonDelayScope withholds the effect.` |
+| decision | `sets_boundary` | `RI-9` | `new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 7. Finding-to-action accountability` |
 
 **Acceptance evidence still required**
 
-- A formal reader and action-duty family with positive, negative, withholding, and wrong-recipient tests.
-- A continuity and remedy route that survives capture or inaction by the first recipient.
-- A systemic-correction route with common-cause evidence, responsible-control change, affected-case re-audit, and recurrence verification independent of individual relief.
-- Updated Chapter 14, Part V, method, pins, and counted-claim guards in the same change that retires the unread-duty endpoint.
+None.
 
 ### RI-10 — Operational assurance and liveness remain external
 
@@ -681,7 +680,7 @@ even if their own numbered chapter derivations do not change.
 | `book-1/05-voiding.md::They do not make the record self-authenticating.` | The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive. | revised | The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service. | Narrow, never erase, when scoped external assurance evidence exists; genesis, truth, exhaustive disclosure, storage integrity, and liveness limits remain. |
 | `book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds` | Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission. | preserved | The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics. | Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect. |
 | `book-1/12-changing-the-rules.md::integrity of the record those rules are written in.` | The declared-name guard rests on the integrity of its own rule, label register, and constitutional source; semantic entrenchment is not established. | preserved | The case treats the constitutional source as a record but does not harden amendment semantics. | Revise with the later semantic-amendment and source-transition rule family and its counterfactuals. |
-| `book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**` | The current audit chain ends at an unread `obliged` duty. | preserved | The case specifies the future reader/action contract and deliberately adds no reader rule. | Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands. |
+| `book-1/14-when-the-system-notices-it-broke.md::The chain no longer ends there.` | Every current formal finding kind reaches an exact source-bound typed reader/action route; the route proves no receipt, action, delivery, completed remedy, recurrence control, or institutional liveness. | revised | FS-CVF-016 retires the historical unread-duty endpoint with exact reader, nonresponse, alternate, continuity, individual-remedy, correction, re-audit, recurrence, and non-delay controls. | Re-review if the current err/2 inventory, typed reader bridge, wrong-recipient control, nonresponse route, or external liveness evidence changes. |
 | `book-1/method.md::Coverage outside the declared fixtures and generated` | Coverage outside declared fixtures and generated bounded suites remains accidental chapter-pin coverage, not a guarantee. | revised | The method can name the placement matrix and staged temporal harness as bounded exceptions while runtime authentication, exhaustive deletion detection, storage integrity, and external liveness remain absent. | Revise only to the exact scope of later generated suites and independently deployed assurance evidence. |
 | `book-1/15-the-five-joints.md::The constitutional source and the supplied record nevertheless remain` | Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented. | preserved | The staged T3 path adds bounded formal safety controls, but the supplied premises, witnesses, source deployment, storage, readers, and institutional action remain externally capturable. | Reassess the Part V capture verdict after authenticated operational controls, independent readers, and external assurance evidence land. |
 
@@ -697,7 +696,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 | `RA-2` | Every new record-dependent right, limit, institution, or power has a completed record contract and declared complete legally operative basis before its rule family is drafted. | Writer, authority, permitted and prohibited inputs, provenance, visibility/privacy, challenge, correction, retention, deletion, assurance, negative-premise admissibility, independent reader, action and systemic-correction duties, continuity/remedy, and temporal fields. | `new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows before drafting chapters` |
 | `RA-3` | Assertion and withholding or deletion harms are tested separately, including the opposite failure created by every added authorisation, witness, or closed-world gate and the settled difference between an absent accusation and an unperformed remedy. | Executable non-vacuous pins or harness cases with a positive control, declared route-specific risk posture, and authorised-disposition boundary. | `new-book-plans/9-record-integrity-red-team.py::def validate_source(` |
 | `RA-4` | No cross-snapshot, order, expiry, deadline, or liveness claim is promoted before its T1/T2/T3 gate and differential evidence exists. | Two-snapshot harness, ordering tests where applicable, T3 controls, and explicit external liveness evidence. | `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate` |
-| `RA-5` | Every integrity finding has an independent recipient, action duty, continuity, escalation, review, individual remedy, common-cause correction, affected-case re-audit, and recurrence-verification path; a referral alone does not pass and systemic work cannot delay individual relief. | Formal reader/action family, wrong-recipient and non-response controls, systemic-correction and recurrence evidence, and updated audit endpoint claims. | `TODO.md::Specify obligations without making rights reciprocal bargains` |
+| `RA-5` | Every integrity finding has an independent recipient, action duty, continuity, escalation, review, individual remedy, common-cause correction, affected-case re-audit, and recurrence-verification path; a referral alone does not pass and systemic work cannot delay individual relief. | Formal reader/action family, wrong-recipient and non-response controls, systemic-correction and recurrence evidence, and updated audit endpoint claims. | `new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 7. Finding-to-action accountability` |
 | `RA-6` | Every external assumption has a Book 2 evidence owner and a Book 1 failure consequence that protects the person and constrains unsupported power. | Operational assurance plans and reproducible evidence for identity, storage, witnesses, reconciliation, privacy, recovery, availability, clocks, action, released source, dependencies, toolchain provenance, and independent verification. | `book-2/TODO.md::The record-integrity operating layer` |
 | `RA-7` | Every rule family classifies its effect on the standing narrowness-dependent chapter, Part V, and method claims before landing. | Preserve/revise/retire classification, new test route, and same-change prose, registry, and counted-claim updates. | `new-book-plans/book-1-constitutional-coverage-map.md::Narrowness-dependent claim impact gate` |
 | `RA-8` | A domain is not called record-assured merely because the repository verifier is green, and the case never treats its own source, generator, or report as evidence of its authority or integrity. | Independent assurance review of the formal controls, source and toolchain release, operational assumptions, residual trust, and reader-facing claims. | `new-book-plans/book-1-constitutional-coverage-map.md::external assurance review` |
@@ -705,7 +704,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb`.
 - Regenerate after reviewing the JSON source; never hand-edit this report.
 - Run `python3 new-book-plans/8-record-integrity-assurance.py --check`.
 - The checker proves schema coverage, traceability, ledger coupling, and

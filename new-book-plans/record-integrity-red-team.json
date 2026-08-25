@@ -4,9 +4,9 @@
   "title": "Record-Integrity Red-Team: Flat-Snapshot Levers and Temporal Boundaries",
   "status": "bounded_flat_snapshot_red_team_not_assurance",
   "evidence_role": "exposes_gap_and_tests_boundary",
-  "constitution_sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
-  "assertion_surface_contracts_sha256": "6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4",
-  "record_integrity_assurance_case_sha256": "f845de70663549ede5663b000060d4fe6c424a67f2177d6863730ff4cb6f80dd",
+  "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
+  "assertion_surface_contracts_sha256": "dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb",
+  "record_integrity_assurance_case_sha256": "9e18d8d442b734cc7265959d6a2c2b0f6799619efed61680ede9aff2ffbc15e4",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",
@@ -179,7 +179,7 @@
       "safe_default": "Do not treat forgiveness as correction. Keep the adverse state contestable, preserve continuity and challenge, and require linked supersession plus reconsideration before a correction can be called complete.",
       "authorised_disposition_boundary": "Forgiveness may neutralise personal void and loss while retaining the mark and pen restriction; correction of a false mark requires an independently reviewable supersession that names every restored consequence.",
       "opposite_failure_test": "Every conjunctive remedy must pass neither, each-half-only, both, forged-both, each-half-deleted-after-valid-act, generic-companion-reuse, and pre-clear tests. Raising forgery cost without testing official veto power is insufficient.",
-      "residual_limit": "The harness exposes the current shape but does not select a correction authority, prove independence, perform remedy, or supply an audit reader.",
+      "residual_limit": "The harness exposes the current shape. The obligations family separately supplies exact legal readers and correction duties, but neither harness proves recipient independence in operation, actual action, or completed remedy.",
       "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
       "temporal_status": "T1/T2 are implemented, but the current forgiveness and relief predicates still lack purpose- and case-bound authority. This harness tests those same-snapshot gaps; script 12 owns temporal lineage and conflict behavior.",
       "scenario_refs": [

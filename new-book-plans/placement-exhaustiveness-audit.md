@@ -16,7 +16,7 @@ bounded fixture*, not classical negation or an independently established fact.
 ## Bound source manifest
 
 - Reviewed source: `new-book-plans/placement-exhaustiveness-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed`.
+- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace`.
 - Destination manifest: `HighSec`, `Homestay`.
 - Destination-manifest SHA-256: `72722479faa871b12184b5d32d5ee834a3d141318a1c653e3b3483cbb19416e0`.
 
@@ -134,11 +134,11 @@ every affected subject and requires it to remain silent.
 
 | mutation | kind | baseline flips | alarm-silence cases | candidate source SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `1165b205eb79eceaf9693e20b4c3bf0913294891a4fe71f3b54fabc1a16300ae` |
-| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `7fc6b98e1baa8f47b576c12dc017f7607bf4fa74be971958f83afeb9931d8c38` |
-| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `0cee52583e504b0d0857f2b2fc7cac562fbb28a8a88e76624b38cf49f5135640` |
-| `opposite-destination` | `opposite_destination` | 4 | 2 | `f5e09e873df7dca49c44e304d1a915fd0abcbe50296ff3014a40aed9f08e1f06` |
-| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `036e2708a6e598acccb8b7bcadb68ff89c7841358c0c7e6598099ee0aaf9edcb` |
+| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `58521b82feca3d5441e7b37944bed9212aa8cbd13110c5a64aec4dbc2de83d8a` |
+| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `cf9f8e37567bfdecd436512e23fdae79fcfcb38f50c734626bbd6428d5e33d91` |
+| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `1f530293c616d1d57a1a89c9c77fda08355a2b494d5936a72641bfe05dc08075` |
+| `opposite-destination` | `opposite_destination` | 4 | 2 | `e38b82c3d34a4e6903004ed1b5901ddd598a26086c2782c9646eefab3b9f19da` |
+| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `e721846e9d43a7ae61498b593684ee0a2befaf4d7327fc369d56fe5bff3e5a62` |
 
 ### duplicate-destination — An overlapping route adds LowSec beside Homestay
 
@@ -266,8 +266,8 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 - **Current Source:** The matrix binds the exact current constitution, every discovered fit/dwell/building producer, and every literal building destination. It is not a proof about a changed source until the reviewed manifest and expectations are updated.
 - **Future Delivery:** The non-confined mirrors are current narrowness tripwires, not a permanent prohibition. A future authorised and challengeable housing-delivery rule must intentionally revise this contract and every affected book claim.
 - **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. Every exact generated row also runs a fresh one-pin opaque shelter entitlement against the full current source plus that row's actual facts; standing must derive through the row's own route, with no standing overlay or extracted floor rules. This exposes the current delivery gap rather than closing it.
-- **Records And Remedy:** The audit constructs bounded facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family record, civil home, or placement-home availability; supplies no notice, appeal, correction, continuity, action duty, or remedy; and proves no institution reads its result.
-- **Runtime:** The repository rejects current-source outcomes that conflict with the reviewed matrix, but the constitution has no general exclusivity, completeness, or opposite-destination reader. A deployed harmful rule can therefore leave err(_, Placement) false.
+- **Records And Remedy:** The audit constructs bounded facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family record, civil home, or placement-home availability. The obligations family supplies legal reader, action, nonresponse, alternate, continuity, and remedy effects for an actual placement finding, but proves no notice, receipt, correction, performed continuity, completed remedy, or institutional action.
+- **Runtime:** The repository rejects current-source outcomes that conflict with the reviewed matrix, and an actual err(_, Placement) finding now feeds an exact source-bound Review action route. The constitution still has no general exclusivity, completeness, or opposite-destination detector, so a deployed harmful rule can leave the placement finding false; neither the marker nor its reader route proves institutional action.
 - **Scope:** The Cartesian product is exhaustive only for current confined, affirmatively free, and person-only states; severity derivability; inert family-record presence; placement-home availability; and discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row’s complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, civil residence, real facilities, or future constitutional axes.
 - **Temporal Fixture:** Every confined row receives one self-contained witnessed transition and ordered window shared inside that generated knowledge base, one shared TemporalLeaseFamily source record, and an exact subject-specific case identifier that is also its lease identifier. Non-confined rows receive none of those case facts. This proves only the supplied fixture can reach current formal custody; it does not authenticate the premises or prove outside time and publication advance.
 - **Trust Root:** The constitution, reviewed JSON, generator, release engine, verifier, and human review can be weakened together. A green run does not authenticate or authorise that shared repository trust root.
@@ -314,7 +314,7 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 - **Current claim:** The repaired marker reads reported Homestay placement against eligibility, not duplicate, missing, or reversed derived outcomes.
 - **Classification:** `preserved`.
 - **Reason:** Every harmful placement mutation supplies and positively pins a reviewed put report before querying err(_, Placement) as FALSE, preventing a missing alarm premise from making the blindness evidence vacuous.
-- **Future trigger:** If a general placement reader lands, revise the marker's scope, its obliged consequence, chapter pins, and every claim that says the alarm is silent.
+- **Future trigger:** The exact placement-finding reader has landed. Revise the marker, its typed route, chapter pins, and remaining liveness boundary if placement scope, general detection, receipt, action, or remedy evidence changes.
 
 ### `book-1/15-the-five-joints.md::outside the machinery of punishment, at only one deliberate point how`
 
@@ -339,4 +339,4 @@ python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 
 This does not establish runtime exclusivity or completeness, temporal or placement-report authorship or truth, appeal, remedy, real-world placement, free-person housing delivery, record integrity, institutional action, or liveness.
 
-**Remaining boundary:** The repository can reject a source whose tested consequences violate this reviewed matrix. The society described by the current source still has no general reader that notices those conflicts after deployment, and its shelter floor still does not deliver housing outside confinement.
+**Remaining boundary:** The repository can reject a source whose tested consequences violate this reviewed matrix. An actual placement finding has an exact source-bound legal reader/action route, but the current source still has no general deployed detector for every placement conflict and proves no reader acts; its shelter floor still does not deliver housing outside confinement.

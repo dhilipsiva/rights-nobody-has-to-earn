@@ -5,9 +5,9 @@
   "status": "bounded_source_mutation_audit_not_amendment_assurance",
   "evidence_role": "exposes_semantic_gap",
   "subprocess_timeout_seconds": 60,
-  "constitution_sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
-  "assertion_surface_contracts_sha256": "6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4",
-  "record_integrity_assurance_case_sha256": "f845de70663549ede5663b000060d4fe6c424a67f2177d6863730ff4cb6f80dd",
+  "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
+  "assertion_surface_contracts_sha256": "dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb",
+  "record_integrity_assurance_case_sha256": "9e18d8d442b734cc7265959d6a2c2b0f6799619efed61680ede9aff2ffbc15e4",
   "label_verdict_meanings": {
     "blocked_label": "The supplied snapshot derives `false(amendment)` and does not derive `become(amendment, Law)`; this says nothing about whether a source edit occurred.",
     "passing_label": "The supplied snapshot derives `become(amendment, Law)` and not `false(amendment)`; no current rule reads that conclusion or applies source text.",
@@ -49,7 +49,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
+      "expected_source_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
       "source_assertions": [],
       "steps": [
         {
@@ -90,7 +90,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
+      "expected_source_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
       "source_assertions": [],
       "steps": [
         {
@@ -146,7 +146,7 @@
         }
       ],
       "mutation_sha256": "e52d60131b46210ec636eee54512b4c0312de125bdb65633e73487069b65bc16",
-      "expected_source_sha256": "7f88ebe404da5ae10905f0ce9ecaabca0d76bee65df3249f7a10f0e51a911123",
+      "expected_source_sha256": "493fda4717f046f81651be646f798e6b01954631367aa3752ede2b080b8c9386",
       "source_assertions": [
         {
           "kind": "no_relation_first_argument_atom",
@@ -234,7 +234,7 @@
         }
       ],
       "mutation_sha256": "fe156cd24bae96eaf28a05f2d3804aa286fc7fd5838f45d6ff41d93ac2cd91f1",
-      "expected_source_sha256": "0b320b1c28d5f754119531ae2bc9470c52a2bbfcde94f60332ab47f05c5efdf9",
+      "expected_source_sha256": "53577ecc9c395d27696ff9d3c9fbd4e059d6fab23a42f76a82c18dd600301010",
       "source_assertions": [],
       "steps": [
         {
@@ -327,7 +327,7 @@
         }
       ],
       "mutation_sha256": "3736b232fff93fde2467bc640ed44c45a54f54d24a08a221fea9d8447eef3414",
-      "expected_source_sha256": "3ff42ba5b1affb0de978ce7a0b1588eeeb5373c6be89aa3a3417ad993e581761",
+      "expected_source_sha256": "474c1575c1d5953124e67f638e0256362e3519171cd059be2a5625cfc1cdca60",
       "source_assertions": [],
       "steps": [
         {
@@ -407,7 +407,7 @@
         }
       ],
       "mutation_sha256": "4d43b32e2109add1b433ba6b15376badd73853e3194290c33537cc50cc512082",
-      "expected_source_sha256": "e72303e71ec6ee429f685f489b7e6f3525fc573db816c2ed936f5221c6cb90a1",
+      "expected_source_sha256": "ba6986d71a8e0cb5910e705598b415de4991ada19b321752e49fbeb51f452254",
       "source_assertions": [],
       "steps": [
         {
@@ -460,7 +460,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed",
+      "expected_source_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
       "source_assertions": [],
       "steps": [
         {
@@ -505,7 +505,7 @@
         }
       ],
       "mutation_sha256": "c1a343199fe4452cd74ba091f30dccfc8379048a018f296540fc1aefb87c11f4",
-      "expected_source_sha256": "d8d91b914119a76ea5cac404abca696c40d19807cb927b937d100d119537aaa5",
+      "expected_source_sha256": "6c175c4492a538c48c611663f61932cd1c568f64448e4cfc763e91b883548537",
       "source_assertions": [],
       "steps": [
         {
@@ -548,7 +548,7 @@
         }
       ],
       "mutation_sha256": "c8ce9aea42be9cc95f1fce7551246b19c0a4781d50cddb505e19f9a582cf87ea",
-      "expected_source_sha256": "b9a957c68d3aa98e0d4b7310657216825ef8e6b2f54a6e8574c435f1dcc06c05",
+      "expected_source_sha256": "3dd915132a5da47196b5c81309f9ae7a055aa680c2804bad9f2a3d367b9c0973",
       "source_assertions": [],
       "steps": [
         {
@@ -636,8 +636,8 @@
       "future_trigger": "Reassess if vocabulary changes acquire a constitutional approval route, entrenchment, independently reviewed meaning, and complete consequence analysis."
     },
     {
-      "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md::The amendment machinery decides which",
-      "current_claim": "The amendment machinery decides which proposals receive an unread law label and applies no source change.",
+      "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md::amendment machinery can state a source-bound result and does not deploy a new",
+      "current_claim": "The amendment machinery can state a source-bound result, but `become` remains unread and no source transition is applied.",
       "classification": "revised_and_scoped",
       "reason": "The audit applies every candidate mutation manually and verifies that label verdict and source effect remain independent; it adds no `become` reader.",
       "future_trigger": "Revise the chapter, its pins, and this impact if any `become` reader or source-transition rule applies a labelled proposal."

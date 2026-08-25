@@ -220,14 +220,18 @@ this society can take against an official — could not do to Rebel what a quiet
 can.
 
 A witnessed transition can now report that deletion if the seat was separately
-declared among the protected entries in the earlier record. The report does not restore
-the seat, Boss's answerability, or Rebel's shield, and the Appeals duty it can produce
-after a challenge is still unread. Nor does “disappearance” prove an unlawful deletion:
-the record has no form for lawful retirement of a protected entry, so every missing
-required carry sounds the same alarm. A deletion before the first accepted record, or
-of an entry never placed in that protected set, remains indistinguishable from an entry
-never made. The strongest promises in this chapter are conclusions nobody can write.
-The entries they stand on, somebody still has to keep.
+declared among the protected entries in the earlier record. The report does not
+restore the seat, Boss's answerability, or Rebel's shield. After a challenge,
+the Appeals duty now reaches a named action route with a separately established
+non-response failure, alternate escalation, continuity, and individual remedy.
+None of that proves that the challenge arrived, Appeals acted, the seat returned,
+or Rebel was protected. Nor does “disappearance” prove an unlawful deletion:
+the record has no form for lawful retirement of a protected entry, so every
+missing required carry sounds the same alarm. A deletion before the first
+accepted record, or of an entry never placed in that protected set, remains
+indistinguishable from an entry never made. The strongest promises in this
+chapter are conclusions nobody can write. The entries they stand on, somebody
+still has to keep.
 
 And Boss's seat is not the sharpest instance. The duty-bearer's answerability — the
 exposability of the body that owes every person the floor — rests on one line of exactly

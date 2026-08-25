@@ -10,7 +10,7 @@
 The exact reviewed source implements cumulative T1 reconciliation, a witnessed canonical TerminalTransition, transitive ternary precede paths typed by EventPath and RecordPath, typed collision categories, and T3 positive case-bound Court-custody authority. Consequential consumers rejoin exact raw fields and matching observations. A supplied challenge suspends its exact lease; a paired fresh process proves that withheld intake does not. The ground cases establish these derivations and bounded full-source floor-query coexistence only for supplied records and supplied or independently derived standing.
 
 - Reviewed source: `new-book-plans/temporal-assurance-case.json`.
-- Constitution: `new-book-plans/constitution.nibli` at `4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed`.
+- Constitution: `new-book-plans/constitution.nibli` at `4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace`.
 - Every executable case uses a fresh engine process; paired labels describe a reviewed differential, not shared engine state.
 
 ## Cumulative formal stages
@@ -42,7 +42,7 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 - Case-bound rule SHA-256: `53262ab15af4f23b692ba86b577cb3971ddf5bc6b855b6cedb39090df2d99af8`.
 - Source-binding rule SHA-256: `dd23aab90fd994e4a23fb6e16637359548449b7c5cdd277e0476d3b3feeb3de0`.
 - Semantic effect: A restrictive custody conclusion requires a positive, independently reviewed renewal bound to the exact supplied case, subject, judgment basis, injury victim, symbolic window, canonical terminal transition, and collision-free source. Typed collisions reject enumerated ambiguous lineage, manifests, order, windows, cases, leases, and source bindings. A supplied challenge suspends its exact lease; withheld intake is not detectable. Raw inactive leases and sufficiently bound person-facing attempts produce distinct defects; none authorises custody, performs correction, or fabricates release.
-- Compatibility review: The staged fixtures preserve supplied or otherwise derived standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the unread-duty endpoint while revising raw carry effects. T1 does not establish universal standing when a predecessor witness is withheld. Correction, supersession, non-revival, intake durability, and duty performance remain explicit requirements or Book 2 boundaries.
+- Compatibility review: The staged fixtures preserve supplied or otherwise derived standing, liberty, the shield, appeal access, floor entitlements and debts, ordinary-query coexistence, and the source-bound finding/action route while revising raw carry effects. T1 does not establish universal standing when a predecessor witness is withheld. Correction, supersession, non-revival, intake durability, actual duty performance, and institutional liveness remain explicit requirements or Book 2 boundaries.
 - Article 9 boundary: The effective-version binding is reviewed against this exact source digest and executable effects. Article 9's proposer-written target label neither authenticates nor applies this version. Lawful deployment and source-transition authentication remain external.
 
 ## Fresh-process differential pairs
@@ -141,7 +141,7 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 | `personal_time_score` | `T3` | `preserved_by_narrowness_test` | `TA-22` | Recognition and severity remain outside every review-window and active-lease premise. The artifact proves current source separation, not that a future edit cannot introduce a personal duration score. |
 | `emergency_redeclaration` | `T3` | `rejected_by_current_source` | `TA-23` | Public or repeated emergency-shaped authorisations have no route around exact lease binding. A complete future emergency interface requires its own coverage contract and temporal lease family. |
 | `office_succession` | `T3` | `rejected_by_current_source` | `TA-24` | A successor office neither inherits a case lease nor erases historical authority. A complete office-term and succession interface remains future constitutional work. |
-| `unread_duty` | `T1` | `preserved_by_narrowness_test` | `TA-03`, `TA-15`, `TA-21` | Named temporal errors plus a challenge can derive obliged without deriving relief or action. No current rule reads obliged; action, deadline, recovery, and remedy remain unestablished. |
+| `finding_action_route` | `T1` | `preserved_by_narrowness_test` | `TA-03`, `TA-15`, `TA-21` | Named temporal errors plus a challenge can derive the legacy compatibility duty and its source-bound typed reader/action route without deriving performed relief or action. The current source reads the compatibility duty through one typed bridge. It establishes legal action, nonresponse, alternate, continuity, remedy, correction, re-audit, recurrence, and non-delay effects, but no deadline, receipt, performed recovery, completed remedy, or institutional liveness. |
 | `external_liveness` | `external` | `exposed_external_boundary` | — | The acceptance verdict is deliberately limited to supplied-record safety. Clock advance, successor arrival, review, publication, physical release, recovery, and remedy require external operational assurance. |
 | `standing_witness_withholding` | `T1` | `exposed_external_boundary` | `TA-10` | TA-10 pins both polarities: dual predecessor-standing witnesses preserve personhood, while withholding either witness leaves personhood and the StandingOmission marker non-derivable through T1. Universal standing is a separate root condition. This temporal path neither creates a registry-free serve-and-reconcile route nor permits standing or the floor to be claimed fail-safe when the predecessor evidence is withheld. |
 | `challenge_intake_withholding` | `T3` | `exposed_external_boundary` | `TA-41`, `TA-14` | TA-41 and TA-14 execute otherwise complete challenge-present and challenge-absent custody envelopes in fresh processes. A supplied challenge suspends the lease; withholding that fact can leave it active. The current source has no durable filing receipt, alternate intake witness, or advocate-created suspension record. Book 2 must operate intake and custody liveness; a future Book 1 durable-record route requires its own source contract. |
@@ -199,10 +199,10 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 
 ### `book-1/14-when-the-system-notices-it-broke.md`
 
-- **Standing claim:** Supplied temporal errors plus supplied challenge facts can derive Appeals duties, but withheld intake can suppress that route and obliged remains unread. The formal chain does not perform correction or remedy.
+- **Standing claim:** Supplied temporal errors plus supplied challenge facts derive Appeals compatibility duties that feed exact source-bound typed reader/action routes. Withheld intake can suppress the premise, and neither compatibility nor typed duty performs correction or remedy.
 - **Classification:** `revised_and_pinned`.
-- **Test route:** Challenge-present and challenge-absent fresh processes query lease suspension, named errors, and obliged while verifying that no filing receipt, relief, deadline, correction, or automatic action follows.
-- **Change trigger:** Any rule reading obliged or deriving remedy from a temporal error must revise this endpoint.
+- **Test route:** Challenge-present and challenge-absent fresh processes query lease suspension, named errors, and compatibility duties; the obligations suite separately pins every current finding kind, wrong recipients, the typed bridge, positive nonresponse, alternates, continuity, remedies, systemic work, and individual non-delay while proving no filing receipt or automatic action.
+- **Change trigger:** Any change to the err/2 inventory, typed obliged bridge, source-bound reader route, or external receipt and action evidence must revise this endpoint.
 
 ### `book-1/15-the-five-joints.md`
 
@@ -221,7 +221,7 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 ## Residual limits
 
 - **External Time:** Symbolic ordered boundary events are not dates, duration arithmetic, or a clock. Book 2 must assure advancement, availability, recovery, and service independence.
-- **Institutional Action:** An err or obliged conclusion does not prove receipt, intake, review, correction, remedy, or action. Withholding a genuine challenge fact can leave an otherwise valid lease unsuspended in the supplied envelope.
+- **Institutional Action:** Neither an err finding, the legacy obliged compatibility conclusion, nor the typed reader/action duty proves receipt, intake, review, correction, completed remedy, or action. Withholding a genuine challenge fact can leave an otherwise valid lease unsuspended in the supplied envelope.
 - **Physical Effect:** A non-derived prisoner conclusion or a derived free conclusion is a legal-model result, not proof that a person was physically released, housed, fed, or protected.
 - **Query Shape:** The temporal harness executes simple ground relation pins plus one exact ground event-entitlement shape. Typed status and collide conclusions use one identifier plus a constant tag; ternary precede carries exactly two endpoints plus the EventPath or RecordPath constant for transitive closure. TA-22 checks standing, opaque floor entitlement, authority, custody, recognition, and severity against the full T3 source.
 - **Record Truth:** Two named observations and a complete manifest do not by themselves prove writer identity, independence, truth, privacy, append-only storage, or honest membership commitment.

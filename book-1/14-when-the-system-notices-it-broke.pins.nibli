@@ -5,14 +5,10 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
-# "Nothing reads the duty" is an absence and cannot be queried. It used to sit
-# here as a grep in a comment that nobody ran; since nibli 80a87e9 it is a real
-# precondition, with its own positive control so an empty result cannot mean the
-# command broke. Needs `--allow-shell`, which both commands above pass — the older
-# per-file command in this header did not, and named the flag four lines under a
-# command that omitted it. Its failure also reported a pin-count mismatch, because
-# a skipped precondition is not counted; that reads as an edited file and is not
-# one.
+# The old unread-duty endpoint is retired. Existing two-place Review and Appeals
+# duties must feed the exact typed three-place consumer, and `obliged` remains a
+# derived conclusion rather than a writable verdict. Both are exact-one source
+# preconditions because a duplicate consumer or declaration is also a defect.
 #
 # DEFECT PINS — a large share of this file encodes defects rather than guarantees
 # (do not restate that as a fraction; the last one written here was wrong), and the
@@ -35,14 +31,11 @@
 
 :expect-pins 31
 
-# The chain must END: `err` feeds `obliged` (Article 8b) and nothing reads the
-# duty. If this fires, the design grew a third link and the chapter's closing
-# argument has to be rewritten around it.
-:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /obliged/ {print}' new-book-plans/constitution.nibli)"
-
-# POSITIVE CONTROL — the same command against a relation that IS read must find
-# lines, so an empty result above means "unread" and not "the awk is broken".
-:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
+# The source-bound finding/action contract consumes the older underfilled duty
+# only after the supplied initial-finding standard and its other typed evidence
+# have rejoined. The result is a formal duty, never proof that anybody acted.
+:require test "$(grep -F -c '& obliged($reader, $subject) -> obliged($reader, $reader_duty, $reader_standard).' new-book-plans/constitution.nibli)" -eq 1
+:require test "$(grep -F -c 'derived_only("obliged").' new-book-plans/constitution.nibli)" -eq 1
 
 # "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — every one, without exception."
 # ALL SEVEN are pinned deliberately. An earlier draft named four and said "every

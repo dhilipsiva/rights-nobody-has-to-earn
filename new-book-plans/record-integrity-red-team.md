@@ -107,7 +107,7 @@ assurance case, or prove that an institution acts on a finding.
 - **Authorised-disposition boundary:** Forgiveness may neutralise personal void and loss while retaining the mark and pen restriction; correction of a false mark requires an independently reviewable supersession that names every restored consequence.
 - **Opposite-failure test:** Every conjunctive remedy must pass neither, each-half-only, both, forged-both, each-half-deleted-after-valid-act, generic-companion-reuse, and pre-clear tests. Raising forgery cost without testing official veto power is insufficient.
 - **Temporal status:** T1/T2 are implemented, but the current forgiveness and relief predicates still lack purpose- and case-bound authority. This harness tests those same-snapshot gaps; script 12 owns temporal lineage and conflict behavior.
-- **Residual limit:** The harness exposes the current shape but does not select a correction authority, prove independence, perform remedy, or supply an audit reader.
+- **Residual limit:** The harness exposes the current shape. The obligations family separately supplies exact legal readers and correction duties, but neither harness proves recipient independence in operation, actual action, or completed remedy.
 - **Assurance or repair owner:** `TODO.md::Add the missing non-carceral justice interface`
 - **Executable scenarios:** `RS-07`, `RS-08`, `RS-16`
 
@@ -557,9 +557,9 @@ Remaining gap owner: `TODO.md::### Expansion phase 2 — Specify the comprehensi
 ## Maintenance
 
 - Reviewed source: `new-book-plans/record-integrity-red-team.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `4a24073ab5359f6725c563acc6e05b0f278bfc14636a5e19704941d5ce09e2ed`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `f845de70663549ede5663b000060d4fe6c424a67f2177d6863730ff4cb6f80dd`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `9e18d8d442b734cc7265959d6a2c2b0f6799619efed61680ede9aff2ffbc15e4`.
 - Regenerate only through `python3 new-book-plans/9-record-integrity-red-team.py`.
 - Fast freshness/schema check: `python3 new-book-plans/9-record-integrity-red-team.py --check`.
 - Executable check: `python3 new-book-plans/9-record-integrity-red-team.py --check --execute`.

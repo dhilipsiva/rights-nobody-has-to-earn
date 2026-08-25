@@ -487,3 +487,47 @@ This record canonicalizes Book 1 prose only. It changes no constitutional rule
 or fact, executable relation, fixture, pin, reviewed ledger row, power card,
 allocation, census result, or claim posture. The approved no-change audits are
 not manifest rows and did not produce canonical prose edits.
+
+### 15c. `OBL-B1-v1` approval and canonicalization record
+
+- **Identifier:** `OBL-B1-v1`.
+- **Approval:** explicit author approval on 2026-08-23 of the exact displayed
+  candidate.
+- **Supply provenance:** `session-drafted, author-approved`.
+- **Approved-candidate binding:** 25,237 UTF-8 bytes; SHA-256
+  `2975f698af4ea17c21b631dee8a42d4c9d69631b158db30dcf4177a178f40454`.
+- **Aggregate convention:** the exact payloads below, in identifier order,
+  joined by one empty line (`LF LF`), with LF line endings, no terminal newline,
+  and no identifier, path, anchor, table, or display scaffolding in the digest.
+- **Change bound:** only mechanical Markdown line wrapping or formatting is
+  permitted without renewed approval. Any substantive wording, meaning, or
+  voice change requires approval of a newly displayed exact version.
+- **Canonical state:** satisfied on 2026-08-23. Every installed payload matches
+  its approved byte count and digest, and the recomputed aggregate matches the
+  approved-candidate binding.
+
+| ID | Target and exact anchor | UTF-8 bytes | SHA-256 |
+| --- | --- | ---: | --- |
+| `OBL-B1-01` | `book-1/00-opening-note.md`: section `Destination and operation` | 1,143 | `33be8df380b9f1fc13c96d4b01b6fdba67edb2333f1b473824f5650272442a28` |
+| `OBL-B1-02` | `book-1/00-opening-note.md`: bullet `The review and appeals bodies` | 549 | `3b14a4be32862226caf8241ab4f196ad5ef3996ecc123957c07cbb12263f497c` |
+| `OBL-B1-03` | `book-1/00-opening-note.md`: bullet `The State and the constitutional bodies` | 651 | `c0820bfd382a08120066580a66972cf30ed28c733363e20096b486eb4fc49532` |
+| `OBL-B1-04` | `book-1/00-opening-note.md`: bullet `Civil, criminal, and administrative justice, safety, and repair` | 711 | `4704ab855b2b4a562d0a37450de1966aca4cbedbf0548049cb47e4c62aec197e` |
+| `OBL-B1-05` | `book-1/00-opening-note.md`: section `The floor, duty, delivery, and repair` | 1,264 | `eedf0fa0a4b2f0bd10be48f29132048e7b3b7922b76670db5a9a9408a315b6b2` |
+| `OBL-B1-06` | `book-1/02-public-answerability.md`: paragraph beginning `A witnessed transition can now report that deletion` | 956 | `8f5746aa21893ffe3b3f48431300c453b2bd054f8b34542ebf7438ddcc2a9cdf` |
+| `OBL-B1-07` | `book-1/08-what-you-are-owed.md`: paragraph beginning `That is the floor.` | 523 | `e69ccea1f8840f67e154e394c2c5f83d3c23cfd10d6efedff6cee9b514a87e79` |
+| `OBL-B1-08` | `book-1/08-what-you-are-owed.md`: paragraph beginning `The floor machinery that currently produces an actual arrival` | 512 | `c9e92c85171572c4de4c3a8178ad849e893f410712d08c121e1d5b448e818ba1` |
+| `OBL-B1-09` | `book-1/08-what-you-are-owed.md`: section `Owed by whom` through `Then the limits` | 4,365 | `4436ab741d4a7888651b47fafbe92f2aec195ccf434fc618d40bf1a734ab8edf` |
+| `OBL-B1-10` | `book-1/08-what-you-are-owed.md`: sentence `The debt says what it is about, and nothing checks it against arrival.` | 74 | `2911221a36b5c1ca35ce203772f22950ffa6d6c84603c3d2b98d46f3fd3923d4` |
+| `OBL-B1-11` | `book-1/08-what-you-are-owed.md`: closing block beginning `Some duties now have legal consequences` | 926 | `7dbe4671999795f38c1cd44a979e73aafc188008e739d3351789e3b3aaa8688b` |
+| `OBL-B1-12` | `book-1/14-when-the-system-notices-it-broke.md`: section `And then a duty, which no longer has to be the end` | 5,442 | `4a74e2b5df7d9efdb6fa86214c1c27c8a7a0dc8202ae509ddf5fbc90ff658f1a` |
+| `OBL-B1-13` | `book-1/14-when-the-system-notices-it-broke.md`: block beginning `An earlier version of this chapter said that being a pure observer was` | 1,130 | `a0706ad6a5005e4828b5dc8f5cf5142f51ad9bf155cece94b3cdc389f196390d` |
+| `OBL-B1-14` | `book-1/15-the-five-joints.md`: Capture paragraph beginning `What this design does against capture` | 659 | `debd5f0e222b7102162f58e824fbd6d8c457949bb8bb3efc307221b16a3e813e` |
+| `OBL-B1-15` | `book-1/15-the-five-joints.md`: State block beginning `The binding layer is now wider.` | 2,902 | `741a94d4d5224d2b3b9bdfabdbad9cf6bd2fae5570351dfa839adb51370514a8` |
+| `OBL-B1-16` | `book-1/method.md`: block beginning `The mechanism: every relation in the constitution sits in a layer.` | 1,537 | `2db17589f28d3de01df371766288e57ee8fbc4c23766395105d1221ca66e3df1` |
+| `OBL-B1-17` | `book-1/method.md`: block beginning `The non-reciprocal-obligations family is a completed cross-cutting family.` | 1,861 | `9d144831cbd3eec27d92269d9d93d173247e9fee2aa36996a6f0b1a3ebcbfe5f` |
+
+This record canonicalizes only the approved Book 1 prose. It supplies no
+constitutional rule, admitted fact, institutional act, operation, delivery,
+completed remedy, or Gate result. The adjacent formal family, pins, reviewed
+sources, generated reports, and tracker state keep their own evidence and
+verification contracts.

@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "6ff2f71a039216cf0eca904b6ee1cefcd4a4c388a36a28d10d9e119e6a54e8f4",
+  "assertion_surface_contracts_sha256": "dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -368,8 +368,8 @@
       "id": "RI-9",
       "title": "Independent reader, action duty, and remedy",
       "claim": "Every integrity finding reaches an independent recipient that must read it, preserve interim continuity, take or obtain a reviewable action, escalate non-response, remedy both the record and any resulting constitutional harm, investigate common cause, correct the responsible rule, process, or record channel, re-audit affected cases, and verify recurrence control without delaying individual continuity or remedy.",
-      "argument": "A referral nobody must read repeats the current audit gap. Deriving a duty is a formal consequence, but the assurance path remains open until a separate recipient has an action obligation and a failure consequence that does not remove the affected person's rights.",
-      "posture": "book1_target_unimplemented",
+      "argument": "The current source now routes every enumerated err/2 finding kind through an exact independent recipient and typed action duty, then keeps positive nonresponse, alternate escalation, claimant continuity, individual remedy, common-cause investigation, responsible-control correction, affected-case re-audit, recurrence verification, and individual-relief non-delay separately source-bound. This is a verified legal route over supplied records, not evidence that an institution receives or performs it.",
+      "posture": "current_verified",
       "dimensions": [
         "independent_recipient",
         "action_duty",
@@ -378,28 +378,35 @@
       "current_evidence": [
         {
           "kind": "formal",
-          "role": "exposes_gap",
+          "role": "supports_current",
           "supports": "RI-9",
-          "ref": "CLAUDE.md::Nothing reads `obliged`, so it is a second inert obligation"
+          "ref": "new-book-plans/constitution.nibli::# <OBLIGATIONS-RULES-BEGIN>"
         },
         {
-          "kind": "prose",
-          "role": "exposes_gap",
+          "kind": "counterfactual",
+          "role": "supports_current",
           "supports": "RI-9",
-          "ref": "book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**"
+          "ref": "new-book-plans/counterfactual/no-obligations-finding-reader.pins.nibli::# The Placement typed reader duty disappears under reader ablation."
+        },
+        {
+          "kind": "formal",
+          "role": "supports_current",
+          "supports": "RI-9",
+          "ref": "new-book-plans/obligations.pins.nibli::# FS-CCE-222 omitting IndividualReliefNonDelayScope withholds the effect."
+        },
+        {
+          "kind": "decision",
+          "role": "sets_boundary",
+          "supports": "RI-9",
+          "ref": "new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 7. Finding-to-action accountability"
         }
       ],
-      "known_failure": "Articles 8b and 8c derive `obliged` from selected placement and temporal findings, but nothing reads the duty and no general reader, response, escalation, continuity, or systemic remedy follows.",
+      "known_failure": "The formal family does not prove receipt, notice, staffing, action, delivery, completed remedy, responsible-control correction, recurrence control, or institutional liveness. Withheld or unauthenticated intake can still prevent the supplied finding premise from reaching the legal route.",
       "target_contract": "Name the recipient, independence, receipt evidence, action duty, permitted actions, continuity, reasons, review, escalation, non-response finding, final remedy authority, effect on prior decisions, common-cause investigation, systemic correction owner, affected-case re-audit, and recurrence evidence; systemic work may not delay individual continuity or remedy.",
-      "acceptance_evidence": [
-        "A formal reader and action-duty family with positive, negative, withholding, and wrong-recipient tests.",
-        "A continuity and remedy route that survives capture or inaction by the first recipient.",
-        "A systemic-correction route with common-cause evidence, responsible-control change, affected-case re-audit, and recurrence verification independent of individual relief.",
-        "Updated Chapter 14, Part V, method, pins, and counted-claim guards in the same change that retires the unread-duty endpoint."
-      ],
+      "acceptance_evidence": [],
       "residual_assumption": "No constitutional rule can prove that a real institution eventually acts; operational response remains a liveness claim.",
-      "owner_ref": "TODO.md::Specify obligations without making rights reciprocal bargains",
-      "temporal_status": "A reader can be represented at T0; deadlines, maximum delay, and assured response require T3 and external liveness evidence.",
+      "owner_ref": "new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 9. Defect and dependency disposition",
+      "temporal_status": "The T0 legal route is implemented and exact. Deadlines, maximum delay, assured receipt, and performed response require T3 and external liveness evidence.",
       "book2_handoff": "Operate notification, case assignment, escalation, response, continuity, and remedy workflows and publish evidence of receipt and action."
     },
     {
@@ -1001,11 +1008,11 @@
       "future_trigger": "Revise with the later semantic-amendment and source-transition rule family and its counterfactuals."
     },
     {
-      "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md::And then **nothing reads the duty.**",
-      "current_claim": "The current audit chain ends at an unread `obliged` duty.",
-      "classification": "preserved",
-      "reason": "The case specifies the future reader/action contract and deliberately adds no reader rule.",
-      "future_trigger": "Retire the prose, pins, registry entry, and counted-claim guard together when a verified reader and remedy family lands."
+      "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md::The chain no longer ends there.",
+      "current_claim": "Every current formal finding kind reaches an exact source-bound typed reader/action route; the route proves no receipt, action, delivery, completed remedy, recurrence control, or institutional liveness.",
+      "classification": "revised",
+      "reason": "FS-CVF-016 retires the historical unread-duty endpoint with exact reader, nonresponse, alternate, continuity, individual-remedy, correction, re-audit, recurrence, and non-delay controls.",
+      "future_trigger": "Re-review if the current err/2 inventory, typed reader bridge, wrong-recipient control, nonresponse route, or external liveness evidence changes."
     },
     {
       "artifact_ref": "book-1/method.md::Coverage outside the declared fixtures and generated",
@@ -1051,7 +1058,7 @@
       "id": "RA-5",
       "requirement": "Every integrity finding has an independent recipient, action duty, continuity, escalation, review, individual remedy, common-cause correction, affected-case re-audit, and recurrence-verification path; a referral alone does not pass and systemic work cannot delay individual relief.",
       "evidence_needed": "Formal reader/action family, wrong-recipient and non-response controls, systemic-correction and recurrence evidence, and updated audit endpoint claims.",
-      "owner_ref": "TODO.md::Specify obligations without making rights reciprocal bargains"
+      "owner_ref": "new-book-plans/book-1-obligations-and-nonreciprocity-decision.md::## 7. Finding-to-action accountability"
     },
     {
       "id": "RA-6",

@@ -131,7 +131,7 @@ REQUIRED_NARROWNESS_REFERENCES = {
     "book-1/15-the-five-joints.md::The consequential surfaces that remain are the constitutional source",
     "book-1/15-the-five-joints.md::That refusal does not deliver the floor",
     "book-1/15-the-five-joints.md::That review is not constitutional approval",
-    "book-1/14-when-the-system-notices-it-broke.md::The amendment machinery decides which",
+    "book-1/14-when-the-system-notices-it-broke.md::amendment machinery can state a source-bound result and does not deploy a new",
     "book-1/method.md::the candidate edits are applied manually by the audit, not",
 }
 SHA256 = re.compile(r"^[0-9a-f]{64}$")

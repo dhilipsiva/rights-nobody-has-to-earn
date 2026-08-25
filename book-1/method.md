@@ -212,24 +212,28 @@ The chapters of this book are in a computed order. I chose the words in them;
 I did not choose their sequence.
 
 The mechanism: every relation in the constitution sits in a layer. At the
-bottom are the record's plain words — the things the world may report, like
-an injury, a judgment, a marriage, a lesson heard. Above them sit the
-conclusions those words feed, and above those the conclusions *those* feed —
-personhood, imprisonment, everything owed — up to the marks the audit leaves,
-which feed a duty that nothing then reads: the chain ends one step later
-than it once did, which is chapter 14's whole story. A rule's conclusion
-never sits below something it reads. The engine computes those layers from the file, a script
-turns the layers into a chapter order, and the book follows it: the chapter
-about a relation cannot come before the chapters about what it rests on. The
-computed table — how many relations, how many derived, how many layers, and
-the full list of which sits where — lives in a planning file in the
-repository, inside a block marked *generated*, and a check fails the build
-the moment that block disagrees with the constitution.
+bottom are the record's plain words — the things the world may report, like an
+injury, a judgment, a marriage, a lesson heard. Above them sit the conclusions
+those words feed, and above those the conclusions *those* feed — personhood,
+imprisonment, everything owed — up to the marks the audit leaves. Those marks
+can now feed source-bound action, non-response, continuity, alternate, and
+remedy conclusions. The chain ends in legal effects rather than an unread duty;
+it still does not perform an act outside the reasoning system. A rule's
+conclusion never sits below something it reads. The engine computes those
+layers from the file, a script turns the layers into a chapter order, and the
+book follows it: the chapter about a relation cannot come before the chapters
+about what it rests on. The computed table — how many relations, how many
+derived, how many layers, and the full list of which sits where — lives in a
+planning file in the repository, inside a block marked *generated*, and a check
+fails the build the moment that block disagrees with the constitution.
 
 You have already felt this order, whether or not you noticed. The book opened
 on the record itself — what may be written, and by whom — because everything
-else rests on it. It ended, before Part V, on the audit — the layer where
-the chains run out — because nothing rests on it. Every chapter in
+else rests on it. It ended, before Part V, on the audit and the legal
+consequences that now sit above its findings. Chapter 14 ends there because the
+next missing link is not another conclusion. It is action in the world.
+
+Every chapter in
 between sits where its subject sits in the layering: the voiding chapter
 follows the chapter on the pens because the voiding rule reads the pens'
 conclusions. The order of the book is the direction the rules read, and the
@@ -620,6 +624,35 @@ reuse custody's T3 source, lease, case, or renewal. Every affected power, body,
 and claim therefore remains `Specified` and `ratified-unimplemented`: formal law
 is not staffing, independence in fact, operation, delivery, or institutional
 action.
+
+The non-reciprocal-obligations family is a completed cross-cutting family. It
+adds no power, body, claim, allocation, or status. It preserves the existing
+floor entitlements and debts, then keeps public duties, delegated public
+functions, express private duties, civic-duty limits, duties to a person, duties
+to a source-defined common, role duties, voluntary commitments, conflict,
+excuse, continuity, and remedy in separately tested effects.
+
+Public responsibility is separated into respect, protect, fulfil, continue, and
+remedy. Each conclusion rejoins the exact source, version, bearer, jurisdiction,
+function, scope, evidence authority, independent reader, failure polarity, and
+temporal record that permits it. A contractor inherits only the duties of the
+public function it performs; it derives neither public status nor authority. A
+private duty follows only from an express current source.
+
+Conflict and excuse are positive-record routes. Missing or conflicting evidence
+creates no duty, priority, discharge, alternate, or remedy. An excuse may move
+performance but cannot erase the protected claim. The non-reciprocity checks
+separately prove that work, payment, identity, compliance, contribution,
+approval, a role duty, a civic duty, or a voluntary commitment is not a premise
+of personhood, the floor, or the public debt.
+
+The existing Review and Appeals obligations now feed typed action routes.
+Their dedicated suite checks the named reader, wrong-recipient withholding,
+non-response, alternate continuity, individual remedy, systemic correction,
+affected-case re-examination, and recurrence-check duties, alongside
+source-removal counterfactuals. A green result proves those legal effects over
+supplied records. It does not prove notice, staffing, response, enforcement,
+delivery, completed repair, recurrence monitoring, or institutional life.
 
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on

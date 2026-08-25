@@ -19,7 +19,7 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **82** | **39** | **628** | **6** |
+| computed from the constitution | **82** | **39** | **692** | **6** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 4 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
@@ -29,8 +29,8 @@ The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `ex
 | **1** | `authority`, `collide`, `complete`, `defend`, `precede`, `severe` |
 | **2** | `correct`, `match`, `reference`, `succeed`, `time` |
 | **3** | `false`, `lose`, `permits` |
-| **4** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prevents`, `prisoner`, `reward`, **secure** |
-| **5** | `err`, `obliged`, `travel` |
+| **4** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
+| **5** | `err`, `obliged`, `prevents`, `travel` |
 
 Evidence predicates (42), the complete list of what the world may report: `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `parent`, `passport`, `permanent`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
 
@@ -74,14 +74,18 @@ rule over facts below it — that part was right. The pairing was not.
 Seating is never revoked — deliberately, so that recall cannot retroactively strip a
 whistleblower's protection.
 
-**`obliged` is at stratum 5 and does not add a chapter.** It derives from `err`
-and is read by nothing, so it sits beside `err` at the current top rather than above it.\nChapter 14 is the audit chapter and covers it: the marker and
-the duty it produces are one subject, and splitting them would give a chapter whose whole
-content is that a relation exists and does nothing. That is an editorial judgement rather
-than a computed one — the block above is generated, the chapter list below is not — so it
-is recorded here rather than left implicit. Article 8b is two rules with constants in
-slot 2 because the general form derived nothing when it was written; **nibli has since
-fixed that binding defect**, so the two rules are now history rather than necessity.
+**`obliged` is at stratum 5 and does not add a chapter.** It derives from `err`.
+One family-owned compatibility bridge reads the two-place conclusion and returns
+the typed three-place action duty through the same relation, so no new relation
+or chapter sits above it. Chapter 14 covers both the finding and its legal
+consequences; splitting them would separate one accountability route from its
+trigger. That is an editorial judgement rather than a computed one — the block
+above is generated, the chapter list below is not — so it is recorded here
+rather than left implicit. Article 8b is two rules with constants in slot 2
+because the general form derived nothing when it was written; **nibli has since
+fixed that binding defect**, so the two rules are now history rather than
+necessity. The typed route proves no receipt, action, delivery, completed
+remedy, recurrence control, or institutional liveness.
 
 ---
 

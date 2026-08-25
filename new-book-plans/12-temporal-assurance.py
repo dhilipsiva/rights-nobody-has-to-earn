@@ -364,7 +364,7 @@ REQUIRED_ATTACKS = {
     "personal_time_score",
     "emergency_redeclaration",
     "office_succession",
-    "unread_duty",
+    "finding_action_route",
     "external_liveness",
     "standing_witness_withholding",
     "challenge_intake_withholding",

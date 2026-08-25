@@ -10,11 +10,11 @@
 #
 #   ./verify.sh          full run: every declared chapter/floor pin; reviewed
 #                       record, temporal, amendment, placement, state-form,
-#                       reader, and counterfactual suites.
+#                       obligations, reader, and counterfactual suites.
 #   ./verify.sh --quick  everything except the executable suites
 #                       NOTE --quick cannot execute chapter/floor pins, record
 #                       snapshots, temporal transitions, amendment candidates,
-#                       placement cases, state-form pins, reader-evaluator
+#                       placement cases, state-form and obligations pins, reader-evaluator
 #                       fixtures, or stale counterfactual fixtures. Run the
 #                       FULL suite after any constitution edit — that is how a
 #                       stale fixture shipped once.
@@ -50,6 +50,7 @@ AMENDMENT_AUDIT=new-book-plans/10-amendment-semantics.py
 PLACEMENT_AUDIT=new-book-plans/11-placement-exhaustiveness.py
 TEMPORAL_AUDIT=new-book-plans/12-temporal-assurance.py
 STATE_FORM_AUDIT=new-book-plans/19-state-form.py
+OBLIGATIONS_AUDIT=new-book-plans/21-obligations.py
 LEDGER_AUDIT=new-book-plans/13-full-society-ledger.py
 CLOSURE_AUDIT=new-book-plans/16-constitutional-closure.py
 POWER_SOURCE_AUDIT=new-book-plans/17-full-society-power-source-manifest.py
@@ -269,7 +270,7 @@ if [ -n "$ONLY" ]; then
   # here would hide the one outcome the :defect markers exist to announce.
   printf '\n\033[33mpartial\033[0m one file against one knowledge base. NOT checked: the\n'
   printf '        cross-file :expect-pins reconciliation, the spine, assertion audit,\n'
-  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, state-form contract, reader-evidence contract, power-source manifest, full-society ledger, or constitutional-closure audit,\n'
+  printf '        record-integrity assurance case, bounded red-team contract, temporal assurance, amendment audit, placement audit, state-form contract, obligations contract, reader-evidence contract, power-source manifest, full-society ledger, or constitutional-closure audit,\n'
   printf '        the jargon sweep,\n'
   printf '        the counted-claims ratchet, the absence and arity guards, and whether\n'
   printf '        the counterfactual fixtures are stale. Run ./verify.sh before committing.\n'
@@ -347,6 +348,13 @@ step "state-form contract"
 out=$(python3 "$STATE_FORM_AUDIT" --check 2>&1) \
   && pass "$out" \
   || fail "state-form contract failed" "$out"
+
+# Structural in both quick and full modes. Its executable family pins and
+# single source/record-review mutation run only in the full path below.
+step "obligations contract"
+out=$(python3 "$OBLIGATIONS_AUDIT" --check 2>&1) \
+  && pass "$out" \
+  || fail "obligations contract failed" "$out"
 
 # ── 2f. chapter 1's headline number ──────────────────────────────────────────
 # Only the generated block is machine-owned. A new PREDICATE name (not a new
@@ -508,17 +516,18 @@ pass "positive control: /false/ appears in $ctl rule bodies"
 # protections would legitimately read `building` and this guard would fail. That
 # is intended. Removing it should be a deliberate act with the chapter rewritten
 # in the same commit, not a quiet consequence of some other edit.
-# `err` LEFT this list in v0.8 and `obliged` took its place. The audit now feeds
-# an obligation (Article 8b), so "nothing reads err" is false by design — chapter
-# 14 says so. What still has to hold is that the chain ENDS: nothing reads the
-# duty either. If `obliged` ever gains a reader the design has grown a third
-# link, and chapter 14's closing argument has to be rewritten around it rather
-# than quietly outgrown. That is what this line is guarding.
-for p in owe become travel obliged lose reward building; do
+# `err` left this list in v0.8. `obliged` left with FS-CVF-016: one exact
+# family-owned compatibility bridge now reads the legacy two-place conclusion
+# and emits the typed three-place duty. Script 21 owns that allowlist and proves
+# by mutation that any second consumer fails its structural check.
+for p in owe become travel lose reward building; do
   n=$(body "$p" | wc -l)
   [ "$n" = "0" ] && pass "nothing reads $p" \
     || fail "$p is now read by a rule" "$(body "$p") — the prose saying nothing follows from it is now false"
 done
+out=$(python3 "$OBLIGATIONS_AUDIT" --check-consumers 2>&1) \
+  && pass "$out" \
+  || fail "obliged consumer allowlist failed" "$out"
 # Recognition carries no numeric quantity anywhere. Digits inside a typed
 # identifier such as T3LifeCourseNonborrowing or Book2LifeCourseBoundary name a
 # source contract; they are not numeric literals and must not trip this guard.
@@ -662,7 +671,7 @@ Write these :accept-scoped, or allowlist the file above if the statement is a pr
 
 # ── 5. the pin suites ────────────────────────────────────────────────────────
 if [ "$QUICK" = "1" ]; then
-  printf '\n\033[33mskipped\033[0m chapter/floor and state-form pins, record snapshots, temporal, amendment, placement and reader-evaluator executions, and counterfactuals (--quick)\n'
+  printf '\n\033[33mskipped\033[0m chapter/floor, state-form, and obligations pins, record snapshots, temporal, amendment, placement and reader-evaluator executions, and counterfactuals (--quick)\n'
   exit 0
 fi
 
@@ -753,6 +762,15 @@ out=$("$PIN" --allow-shell --kb "$KB" new-book-plans/family-life-course.pins.nib
   && pass "$out" \
   || fail "family and life-course execution failed" "$out"
 
+# 5g. duties, non-reciprocity, and finding-to-action accountability.
+# These pins prove bounded legal conclusions only. They do not prove that any
+# duty bearer reads, acts, staffs a route, delivers a service, or supplies a
+# remedy.
+step "obligations executions"
+out=$(NIBLI_PIN="$PIN" python3 "$OBLIGATIONS_AUDIT" --execute 2>&1) \
+  && pass "$out" \
+  || fail "obligations execution failed" "$out"
+
 # State-form and political-membership power family. The contract checker runs
 # in both modes. The full-only path executes lossless checker-owned projections
 # of the canonical aggregate: 64 main shards here and 17 counterfactual shards
@@ -825,6 +843,9 @@ step "counterfactuals"
 #        decide nothing today. no-state-form-independent-current-review removes
 #        only the source-writer/temporal-reviewer disequality; its paired pins
 #        show every fused card gaining authority while separated controls hold.
+#        no-obligations-independent-source-review removes the repeated
+#        obligations source-writer/record-reviewer disequality from every
+#        source-bound conclusion; its paired pins show all 25 fused effects.
 #   0:1  a line added    — unguarded-pen is the credential route somebody might
 #        someday write; its pins show the kept conjuncts are the only thing
 #        standing between that line and a carried-void signature counting; and
@@ -838,6 +859,8 @@ step "counterfactuals"
 # NOTE these pins are OUTSIDE the :expect-pins reconciliation above, checked
 # per-file here. Do not "fix" the headline sum to include them.
 for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0             no-first-contact-standing:1:0 no-environmental-right:1:0             no-class9-climate-axis:1:0 no-direct-equality:1:0             no-equality-data-wall:1:0 no-positive-measure-end:1:0             no-automatic-adulthood:1:0 no-family-confinement-wall:1:0             no-missing-kinship-independence:1:0 no-pregnancy-authority:1:0             no-dead-conjuncts:1:1 no-delivery-independence:1:1             no-state-form-independent-current-review:1:1 \
+            no-obligations-independent-source-review:35:35 \
+            no-obligations-source:35:0 no-obligations-finding-reader:1:0 \
             unguarded-pen:0:1 undelivered-marker:0:1; do
   f=${spec%%:*}; want="${spec#*:}"
   removed=$(diff "$KB" "$CF/$f.nibli" | grep -c '^<')
@@ -861,6 +884,10 @@ for spec in no-person-line:1:0 no-public-court:1:0 no-choose-boss:1:0           
       else
         fail "$f" "$out — sharded counterfactual execution failed"
       fi
+      continue
+      ;;
+    no-obligations-independent-source-review|no-obligations-source|no-obligations-finding-reader)
+      pass "$f — executed by the obligations scheduler"
       continue
       ;;
     *) pins="$CF/$f.pins.nibli" ;;
