@@ -649,42 +649,65 @@ anti-assessment purity that is the book's distinctive contribution."
 Let them stand. They are, among them, correct about the size of the gap.
 
 The answer is the book's oldest honesty, sharpened. This is a destination book.
-It describes what a society *is* under these rules — never how to get there —
-and, outside the machinery of punishment, at only one deliberate point how
-anything arrives: teaching that was heard delivers learning, one route that
-runs through no prison, built to show the shape of a delivery rule so that the
-shape cannot be argued away as impossible.
+It describes what a society *is* under these rules — never how to get there. The
+rulebook now contains non-carceral arrival routes for food, shelter, care, material
+security, and company. Teaching that was heard retains its older learning route. No
+cast member exercises any of them, and none proves that a service exists outside the
+record.
 
-The binding layer is now wider. It names the tiers, bodies, holders,
+The newer routes make the receiving side indispensable. Something must be recorded as
+reaching a particular person from a particular source. An authorised witness for that
+person must independently attest the same item and scope. The witness cannot be the
+provider. A predeclared alternate may carry the same bounded role, and the person need
+not be on a roster before witnessed help counts. Missing evidence invites outreach
+and challenge; it never becomes a finding of non-delivery or an end to entitlement.
+
+The line around personal states remains deliberate. Care received does not certify
+health. Belief receives no route because the protection exists to keep public power
+out of the mind. The liberty of expression is not delivered, though a confined
+person's words can enter the record. The older learning rule remains a demonstration,
+not the template for the new family.
+
+The binding layer is wider still. It names the tiers, bodies, holders,
 jurisdictions, scopes, democratic results, courts, continuity rules, and failure
 defaults through which public power may be lawful. It also names where each
 conclusion stops. The supplied record does not authenticate itself. A current
-authority does not staff its holder. A budget continuity rule does not find
-money. A duty does not make anyone act.
+authority does not staff its holder. A budget continuity rule does not find money. A
+duty does not make anyone act, and an arrival rule does not make anything arrive.
 
-The duties are no longer undifferentiated. Public responsibility is
-divided into respect, protection, fulfilment, continuity, and remedy, each
-assigned only to the function and place its current source names. A contractor
-carrying a public function carries that function's duties and gains no public
-authority from them. A private duty has to be stated: the subject matter alone
-cannot create one.
+The duties are no longer undifferentiated. Public responsibility is divided into
+respect, protection, fulfilment, continuity, and remedy, each assigned only to the
+function and place its current source names. A contractor carrying a public function
+carries that function's duties and gains no public authority from them. A private duty
+has to be stated: the subject matter alone cannot create one.
 
-Nor can a duty become the price of a right. Duties to a person, to a
-source-defined common, of an office or role, and voluntarily assumed
-commitments remain separate. Conflict needs a current priority rule and
-independent evidence. Excuse needs a positive, reviewable premise and an
-alternate that preserves the claim. Work, payment, identity, compliance,
-contribution, or approval can never buy access to the floor by threatening its
-loss.
+Nor can a duty become the price of a right. Duties to a person, to a source-defined
+common, of an office or role, and voluntarily assumed commitments remain separate.
+Conflict needs a current priority rule and independent evidence. Excuse needs a
+positive, reviewable premise and an alternate that preserves the claim. Work, payment,
+identity, compliance, contribution, or approval can never buy access to the floor by
+threatening its loss.
 
-Everything on the operating side — bakeries, tax administration, rosters,
-ballots, tallies, publications, facilities, salaries, logistics, staffing,
-capacity, notification, enforcement, recurrence checking, transition, and
-legitimacy — belongs to the second book about building. The objection that
-survives, whole, is legitimacy: no argument in this part makes anyone *adopt*
-these rules, constitutions are not adopted for technical merit, and the
-reviewer who said the bridging book is unwritten is right. I am its author;
-that book needs people I have not met.
+Put the arrival and obligation families together and the constitutional lifecycle is
+visible: entitlement, offer, accessible use, authorised recipient-side evidence,
+dispute or established failure, interim continuity, individual remedy, common-cause
+correction, affected-case review, and recurrence checking over a declared horizon.
+Each arrow is a separate burden. No earlier conclusion silently supplies the next.
+
+That lifecycle is the standard for food and water, housing and utilities, care,
+learning and information, mobility, communication, and other essentials. The current
+formal arrival heads cover only food, shelter, care, material security, and company,
+with legacy learning beside them. They do not yet formalise every domain in that
+sentence, and the supplied record activates none of the non-carceral routes.
+
+Everything on the operating side — bakeries, water systems, clinics, transport,
+communications, tax administration, rosters, ballots, tallies, publications,
+facilities, salaries, logistics, staffing, maintenance, capacity, notification,
+enforcement, performed remedies, recurrence monitoring, transition, and legitimacy —
+belongs to the second book about building. The objection that survives, whole, is
+legitimacy: no argument in this part makes anyone *adopt* these rules, constitutions
+are not adopted for technical merit, and the reviewer who said the bridging book is
+unwritten is right. I am its author; that book needs people I have not met.
 
 **Survives, narrowed.** Under these rules, the floor is owed without an earned
 condition, its absence cannot be made a reason for imprisonment, and no civic,

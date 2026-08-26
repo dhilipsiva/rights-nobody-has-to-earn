@@ -1127,8 +1127,9 @@ detail traces to one of **three** permitted targets and says which — a
 constitutional rule or fact, a derived chapter's fixed gloss of a floor item, or
 a pinned fixture; **an arrival may appear only inside the hypothetical frame and
 only where the same sentence names the entitlement that grounds it**; and the
-disclosure that the design delivers nothing outside confinement travels with the
-passage. The slot sits inside the jargon sweep and the counted-claims hard gate.
+disclosure that the supplied record shows no floor arrival outside confinement
+travels with the passage. The slot sits inside the jargon sweep and the
+counted-claims hard gate.
 
 **The mood is claim-free; the predications are not.** "Imagine a household"
 asserts nothing, but a definitional clause about the designed society, a
@@ -1155,20 +1156,19 @@ identity without claiming to close `FS-DFT-19`, and places the record-bounded,
 outside-confinement delivery disclosure beside the scene. Section 7a of the
 narrative-register decision controls its current conformance disposition.
 
-**The deficit is measured and classified.** Five of the eight floor items have
-no producing rule; the two that arrive derive only from confinement; every
-`home` and `family` entry names a convicted person; the one non-carceral route
-to a floor actuality ships dormant; every non-carceral derived conclusion is
-inert; care is a pin-fixture and work is one fact; the franchise and movement
-derive broadly but nothing reads either. State these as rules, never as counts —
-the carceral-chapter count moves with the criterion, which is exactly why the
-counted-claims gate exists. The deficit is a **formalisation gap inside
-already-mapped scope**, not a scope or assurance omission, so it does **not**
-reopen Gate A. It carries severity, consequence, owners, closure condition and
-claim restriction, and the accusation-authorship gap joins it: no adverse ground
-relation has an authorship place. **Two owners in dependency order** — the
-delivery and receipt rule families are the precondition; the pinned-case
-rebalance is the consumer that can only run afterwards.
+**Delivery-interface supersession — 2026-08-26.** The narrative-register
+decision preserves the 2026-08-08 deficit as history and now records the
+current route-without-arrival boundary. `FS-CVF-015` is formalized and
+prose-landed. Recipient-side routes derive food, shelter,
+care, material security, and company from a matching receipt plus an authorised
+independent witness; the legacy teaching route remains separate. The new routes
+ship dormant, belief and the liberty of expression deliberately receive no
+delivery head, and the supplied record still derives floor actualities only
+through confinement. This repairs the formal-interface deficit without proving
+offer, accessibility, adequacy, operation, actual-world arrival, completed
+remedy, or future non-recurrence. The pinned-case portfolio rebalance's delivery
+precondition is satisfied; the rebalance remains open. The separate
+accusation-authorship gap also remains open.
 
 On the reader-balance gate, three statements in this order, because the shorter
 version is an overclaim: the deficit **does not by itself** make Gate C
@@ -2013,7 +2013,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   the alternative is longer confinement. The older stratifier tests that refuse
   `prisoner($x) & reward($x) -> free($x)` remain useful regression evidence, not
   a reason to invent a workaround.
-- **Confinement houses you**, decided 2026-07-31 (v0.8). The combination *not severe / no family / no home* derived no placement at all — eligible for home confinement with no home to be confined in — and Adam and Kel stood in it. The rule is `prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x)`, and it is **consistency, not new policy**: the design already held that the state houses whom it confines (`:460`, `:472`); this was the case those rules missed. **Do not restate it as "assume everybody has a home."** `home/1` is a fact the world reports, asserting it for everyone writes something that may be false, and closing the delivery gap by fiat is verified to *silence the isolation marker in the same edit* — the instrument that would have noticed goes quiet. **The framing that must survive**: this closes a *placement* gap and the *delivery* gap is exactly as wide, because the person was owed a home before the conviction and nothing delivered it. Chapters 11 and 13 say the criminal conviction is what housed Adam and Kel, for precisely as long as it punished them — neither is decoration; those lines stop this reading as a floor that works. Chapter 8's shelter sentence is now the rule — **"shelter derives for every confined person and for nobody else"** — which is this file's own canonical example of a good rule-statement and was false until this landed. Oversight of the duty-bearer (enablers, their checkers, a meta-study) was raised and **parked to book-2** under the former scope. **Superseded in scope 2026-08-03:** Book 1 now owns the constitutional mandate, independence, evidence, and remedy path for oversight; Book 2 retains inspection practice, staffing, and operating systems.
+- **Confinement houses you**, decided 2026-07-31 (v0.8). The combination *not severe / no family / no home* derived no placement at all — eligible for home confinement with no home to be confined in — and Adam and Kel stood in it. The rule is `prisoner($x) & fit($x, Homestay) & ~home($x) -> dwell($x)`, and it is **consistency, not new policy**: the design already held that the state houses whom it confines (`:460`, `:472`); this was the case those rules missed. **Do not restate it as "assume everybody has a home."** `home/1` is a fact the world reports, asserting it for everyone writes something that may be false, and closing the delivery gap by fiat is verified to *silence the isolation marker in the same edit* — the instrument that would have noticed goes quiet. **The framing that must survive after FS-CVF-015:** this closes a *placement* gap; the supplied record still contains no non-carceral shelter receipt, although the constitution now has an authorised independent recipient-side route that can derive `dwell` without custody. Chapters 11 and 13 distinguish the confinement-produced shelter conclusion from that dormant route. State the current rule rather than the retired absolute: shelter derives through the custody routes or through a matching recipient-side record independently attested by an authorised witness distinct from the source. Oversight of the duty-bearer (enablers, their checkers, a meta-study) was raised and **parked to book-2** under the former scope. **Superseded in scope 2026-08-03:** Book 1 now owns the constitutional mandate, independence, evidence, and remedy path for oversight; Book 2 retains inspection practice, staffing, and operating systems.
 - **The audit feeds an obligation**, decided 2026-07-31 (v0.8), Article 8b. Chapter 14 used to argue the audit's powerlessness was **structural** — a pure observer, therefore nothing can follow. That was false and it was the comfortable kind of false: it turned a decision into a law of nature. `err($x, Placement) -> obliged(Review, $x)` and the `Isolation` twin both load and derive. **Spell it `obliged`.** The accidental route closed upstream on 2026-07-31 (nibli `e70f22f` renamed the converse alias `obligated` to `obligated_by`), so writing `obligated(...)` is now a compile error rather than a silently inverted fact — that was the realistic typo and it can no longer be made. **The mechanism is narrowed, not closed, and this repo narrowed it further by accident.** After the rename `obligated_by(Warden, Ruk)` still compiles to `obliged(Ruk, Warden)` — but re-measured 2026-08-01 against *this* constitution that ground assertion is now **refused**, because Article 0a closed the base vocabulary and `obliged` is not admitted. `admits` is extensional, so the converse survives in a **rule head**: `err($x, Placement) -> obligated_by(Review, $x)` loads and derives the inverted fact. Two things follow — the realistic forgery route is gone here, and the chapter-14 discriminator still earns its keep against a slip in a rule head. So the discriminating pin pair in the chapter-14 suite — `obliged(Review, Ruk)` TRUE **and** `obliged(Ruk, Review)` FALSE — is no longer the *only* defence, but it is still the only thing catching an argument-order slip within `obliged` itself. Keep both halves. **One constraint this puts on the method part**: nibli has a filed defect — its tracker bullet **"`obliged`-spelled every-duty renders the wrong obligated party"** — where the deontic collapse picks the event variable as duty-holder when back-translating the **base** spelling, which is ours; the converted `obligated_by` spelling binds correctly. Cited by title deliberately, not by line: this is the same file whose line numbers rotted twice inside one exchange. It cannot reach readers today because this repo runs `nibli-pin` only and never renders prose, but the method part exists to show readers the machinery, so if it ever prints a rendered sentence or a proof trace, check that party before it ships. **Two rules, not one**: the general form `err($x, $k) -> obliged(Review, $x)` loads and derives **nothing**, because a body-only variable does not bind over a derived relation on this engine — the same limitation the Article 4 note records. **Historical endpoint, superseded 2026-08-24 by FS-CVF-016:** v0.8 then stopped at an unread two-place duty. The current family preserves that compatibility conclusion, reads it through one allowlisted typed bridge, and derives exact reader, action, non-response, alternate, continuity, remedy, correction, re-audit, and recurrence duties. `verify.sh` now rejects any outside `obliged` consumer. This is still not operational teeth: no rule proves receipt, action, delivery, completed remedy, recurrence control, or institutional liveness.
 - **The debt is itemised, and INVARIANT 1 was rewritten because it was broken**, both 2026-07-31 (v0.8). Article 1b now carries eight `owe(State, K, $x)` rules beside the surviving `Provision` token, which is kept because it is pinned in four other files. **Enumeration cost eight rules and no vocabulary** — the evidence list counts *predicates* and the generator never looks inside the parentheses, so a constant is free; the tracker had priced this as "eight new constants in the evidence vocabulary" and that was a category error. Verified: the firewall extends to each named debt (`~owe(State, Eats, $x) -> prisoner` is refused). **The constants are not joined to the predicates**: `Eats` and `eats` are unrelated and must never be "wired up" — the names match so the resemblance is visible, and chapter 8 turns on the gap. **INVARIANT 1 no longer says "no floor predicate in any rule body"** — that was false from v0.1, because Article 6's isolation marker reads `~meets`, and nothing checked it. It now reads: **a floor right may be read only into `err` — noticed, never acted on.** The stratifier does not enforce this; it refuses `~eats -> prisoner` as a negative cycle and accepts `~eats -> reward` or `~eats -> building` happily, so `verify.sh` guards it (negative-controlled). **Do not describe the delivery gap as something the design cannot detect** — verified, `owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered)` is accepted and derives, and the design already ships that shape for company and for none of the other seven. That asymmetry was discovered, then ruled: the markers are refused while the record holds no arrival facts — see the delivery-markers entry.
 - **A control puts the base back; a premise does not**, settled 2026-08-01 with nibli
@@ -2297,15 +2297,15 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   permit**: the stress-test framing may lead with the infant. Substance
   primacy is not allocatable — chapter order is computed, portfolio density
   follows the landed rules, and "hardest stress test" is a measured source
-  property (today the prisoner's) re-measured after the delivery/receipt
-  families land. **The through-line stays refused** (agency clause,
+  property (today the prisoner's) to be re-measured now that the
+  delivery/receipt families have landed. **The through-line stays refused** (agency clause,
   anti-monoculture guards, register ruling — an infant occupies only the
   *receives* and *is acted upon* postures, and it is the register's
   highest-risk subject because the reader supplies the affect unasked).
-  Implementation is sequenced: delivery/receipt families, then the portfolio
-  rebalance, then the reader ledger, then exact-version author-approved prose —
-  the ruling settles the frame now precisely so it cannot be settled by accident
-  later. A session may propose the thesis sentence under the 2026-08-20 protocol;
+  The delivery/receipt precondition is now satisfied. The remaining sequence is
+  the portfolio rebalance, then the reader ledger, then exact-version
+  author-approved prose — the ruling settles the frame now precisely so it
+  cannot be settled by accident later. A session may propose the thesis sentence under the 2026-08-20 protocol;
   approval of that exact displayed version makes it canonical. The controlling record is
   `new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`.
 
@@ -2488,6 +2488,15 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   authorised writer and challenge route; they may secure conditions but may not
   certify learning, health, belief, or another compelled personal state. This is
   a Phase-2 interface requirement, not a new current formal route.
+  **Implementation supersession — 2026-08-26:** that last sentence records the
+  state at the ruling. `FS-CVF-015` now supplies current formal recipient-side
+  routes for `eats`, non-carceral `dwell`, `healthy` as care received, `secure`,
+  and `meets`. Each requires a matching receipt, an authorised witness for the
+  recipient, matching scope, and separation between witness and source; a
+  predeclared alternate uses the same role, and roster membership is not a
+  premise. The shipped record activates none of them. `learn` remains legacy;
+  `believe` and the liberty of expression deliberately receive no delivery head.
+  No route proves operation or actual-world arrival.
 
 - **book-1 opens with one epigraph, and the poem's full text lives in git**, ruled
   2026-08-02. `book-1/epigraph.md` (unnumbered, so the chapter gates do not sweep it)

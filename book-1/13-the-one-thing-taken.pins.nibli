@@ -105,8 +105,9 @@ free(Hano).
 ? owe(State, Provision, Hano).
 # => TRUE
 
-# "Both of them arrive only for prisoners. So when a sentence is finished, both
-#  stop." — the chapter's sharpest claim, and the two pins that carry it.
+# In the supplied record both active actualities come through confinement. When
+# a sentence finishes they stop; dormant recipient-side routes do not fabricate
+# replacement evidence. These are the two pins that carry that narrower claim.
 ? expresses(Hano).
 # => FALSE
 

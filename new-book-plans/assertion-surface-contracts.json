@@ -1267,7 +1267,7 @@
         "operations": [
           "withhold or delete `hears(Cira, Bela)` after actual receipt"
         ],
-        "effect": "The only non-carceral floor-delivery conclusion does not derive.",
+        "effect": "The legacy learning actuality does not derive; the five newer recipient-side routes remain separate and unaffected.",
         "target": "learn",
         "evidence_ref": "new-book-plans/constitution.nibli::teaches($t, $s) & hears($s, $t) -> learn($s)"
       },
@@ -1277,7 +1277,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "tags": [
         "delivery",
         "accessibility"
@@ -2063,7 +2063,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "tags": [
         "delivery",
         "recognition"
@@ -2221,7 +2221,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "tags": [
         "delivery",
         "accessibility"

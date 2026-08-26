@@ -264,8 +264,8 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 
 - **Bounded Absence Meaning:** The negative axis states and FALSE query results mean not derivable from the supplied bounded fixture. They do not prove a classical negative fact, record completeness, or the truth of any asserted positive entry.
 - **Current Source:** The matrix binds the exact current constitution, every discovered fit/dwell/building producer, and every literal building destination. It is not a proof about a changed source until the reviewed manifest and expectations are updated.
-- **Future Delivery:** The non-confined mirrors are current narrowness tripwires, not a permanent prohibition. A future authorised and challengeable housing-delivery rule must intentionally revise this contract and every affected book claim.
-- **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent. Every exact generated row also runs a fresh one-pin opaque shelter entitlement against the full current source plus that row's actual facts; standing must derive through the row's own route, with no standing overlay or extracted floor rules. This exposes the current delivery gap rather than closing it.
+- **Future Delivery:** The current authorised independent receipt route is present but dormant in every non-confined mirror. A future supplied receipt, changed route, new arrival head, or operational assurance claim must intentionally revise this contract and every affected book claim; the current FALSE expectations are narrowness tripwires, not a permanent prohibition.
+- **Housing Delivery:** Confined rows derive dwell from punishment machinery. Affirmatively free and person-only rows retain standing and the itemised shelter debt while dwell remains absent because these fixtures supply no matching recipient-side receipt and attestation. Every exact generated row also runs a fresh one-pin opaque shelter entitlement against the full current source plus that row's actual facts; standing must derive through the row's own route, with no standing overlay or extracted floor rules. This exposes the absence of supplied arrival evidence and actual delivery, not the absence of a formal non-carceral route.
 - **Records And Remedy:** The audit constructs bounded facts and source edits. It authenticates no writer, temporal witness, placement report, adjudication, family record, civil home, or placement-home availability. The obligations family supplies legal reader, action, nonresponse, alternate, continuity, and remedy effects for an actual placement finding, but proves no notice, receipt, correction, performed continuity, completed remedy, or institutional action.
 - **Runtime:** The repository rejects current-source outcomes that conflict with the reviewed matrix, and an actual err(_, Placement) finding now feeds an exact source-bound Review action route. The constitution still has no general exclusivity, completeness, or opposite-destination detector, so a deployed harmful rule can leave the placement finding false; neither the marker nor its reader route proves institutional action.
 - **Scope:** The Cartesian product is exhaustive only for current confined, affirmatively free, and person-only states; severity derivability; inert family-record presence; placement-home availability; and discovered current destinations. The exact positive T3 custody prerequisites are held constant for confined rows, not varied as another axis. Direct composed entitlement probes bind the exact current constitution plus each row’s complete generated facts; they establish bounded event-query execution for this reviewed matrix, not arbitrary widened synthetic T3 records. The audit does not exhaust temporal failures, severity evidence patterns, sentence states, accessibility, capacity, civil residence, real facilities, or future constitutional axes.
@@ -283,17 +283,17 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 
 ### `book-1/07-a-prisoner-is-a-person.md::shelter and recorded speech arrive for prisoners and for`
 
-- **Current claim:** Shelter actuality currently arrives through confinement and not for either affirmatively free or person-only mirrors; the placement audit preserves rather than repairs that perverse boundary.
-- **Classification:** `preserved`.
-- **Reason:** The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and require dwell to remain absent in both states; fresh one-pin probes execute the exact opaque shelter entitlement against those same complete candidates without a standing overlay or extracted floor rules.
-- **Future trigger:** Any non-carceral dwell producer must revise this chapter's shelter claim even if its own pin file and the recorded-speech half do not change.
+- **Current claim:** In the shipped record and generated mirrors, shelter actuality derives through confinement and not for either affirmatively free or person-only subjects; the dormant recipient-side shelter route changes the interface but not those verdicts.
+- **Classification:** `revised_and_scoped`.
+- **Reason:** The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and supply no receipt evidence, so dwell remains absent in both states even though the current source contains a non-carceral route.
+- **Future trigger:** Any supplied non-carceral shelter receipt or changed dwell producer must revise this chapter's shipped-record claim even if its own pin file and the recorded-speech half do not change.
 
-### `book-1/08-what-you-are-owed.md::Shelter derives for every confined person and for nobody else.`
+### `book-1/08-what-you-are-owed.md::The supplied record therefore still has a stark shape.`
 
-- **Current claim:** The current source derives shelter for every confined person and no non-confined mirror, while itemised debt reaches all three subject states and each complete generated candidate directly executes the exact opaque entitlement for its subject.
-- **Classification:** `preserved`.
-- **Reason:** The generated matrix executes the claim over confined, affirmatively free, and person-only states for every declared axis tuple instead of relying on the current named cast.
-- **Future trigger:** Any valid non-carceral delivery family must revise this prose, its chapter pins, the matrix contract, and the counted-claim guard implications in the same change.
+- **Current claim:** The shipped record derives shelter through confinement while the five recipient-side routes and legacy learning remain dormant; the generated non-confined mirrors likewise supply no shelter receipt, while itemised debt reaches all three subject states.
+- **Classification:** `revised_and_scoped`.
+- **Reason:** The matrix establishes current verdicts over its complete facts and no longer treats the absence of a receipt in those facts as the absence of a formal route or as a non-delivery finding.
+- **Future trigger:** Any supplied receipt, changed delivery route, new arrival head, or operational assurance claim must revise the prose, affected pins, matrix contract, and counted-claim guard implications together.
 
 ### `book-1/11-where-people-are-put.md::The checks beside this book now make every combination`
 
@@ -302,12 +302,12 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 - **Reason:** The chapter can now name a repository check, but must retain that no general runtime placement constraint or remedy was added.
 - **Future trigger:** A new placement axis, destination, producer, runtime marker, or delivery route requires re-running the narrowness review even if the chapter's own original pins do not change.
 
-### `book-1/13-the-one-thing-taken.md::each arrives only for prisoners`
+### `book-1/13-the-one-thing-taken.md::The supplied record contains active floor actualities through punishment.`
 
-- **Current claim:** Shelter remains one of the current punishment-only actualities; a roster-to-dwell rule would falsify that claim without proving delivery.
-- **Classification:** `preserved`.
-- **Reason:** Both non-confined mirrors and the painted-delivery mutation keep the chapter's perverse shelter boundary executable without adding a new route.
-- **Future trigger:** Re-review the chapter's single-deprivation, placement, release, and delivery claims when any new route reads personhood or a non-carceral receipt into dwell.
+- **Current claim:** The shipped cast obtains its only shelter conclusion through custody; the source also contains a dormant recipient-side dwell route, so leaving custody removes the former conclusion without proving non-delivery in the world.
+- **Classification:** `revised_and_scoped`.
+- **Reason:** Both non-confined mirrors supply no receipt and the painted-delivery mutation remains prohibited, preserving the release boundary without erasing the formal route.
+- **Future trigger:** Re-review the chapter's single-deprivation, placement, release, and delivery claims when any supplied non-carceral receipt or changed route alters dwell.
 
 ### `book-1/14-when-the-system-notices-it-broke.md::The placement marker has since been repaired`
 
@@ -316,12 +316,12 @@ The mutation paints every non-confined mirror housed from personhood alone and r
 - **Reason:** Every harmful placement mutation supplies and positively pins a reviewed put report before querying err(_, Placement) as FALSE, preventing a missing alarm premise from making the blindness evidence vacuous.
 - **Future trigger:** The exact placement-finding reader has landed. Revise the marker, its typed route, chapter pins, and remaining liveness boundary if placement scope, general detection, receipt, action, or remedy evidence changes.
 
-### `book-1/15-the-five-joints.md::outside the machinery of punishment, at only one deliberate point how`
+### `book-1/15-the-five-joints.md::The answer is the book's oldest honesty, sharpened.`
 
-- **Current claim:** Outside punishment, the current source has no shelter-delivery route; the placement audit changes verification, not the State joint's delivery verdict.
-- **Classification:** `preserved`.
-- **Reason:** The audit supplies generated repository evidence and no social delivery interface, institution, budget, or action route.
-- **Future trigger:** Any non-carceral dwell delivery changes the State joint even if no numbered chapter pin that originally underwrote it changes.
+- **Current claim:** Outside punishment, the current source has a dormant recipient-side shelter route and the supplied record activates none of it; the placement audit proves neither service operation nor actual housing delivery.
+- **Classification:** `revised_and_scoped`.
+- **Reason:** The audit supplies generated repository evidence over facts with no receipt and no institution, budget, operation, performed remedy, or liveness evidence.
+- **Future trigger:** Any supplied non-carceral shelter receipt, changed route, or operational delivery evidence changes the State joint even if no numbered chapter pin that originally underwrote it changes.
 
 ### `book-1/method.md::Placement has its own audit because a walk through named people cannot prove`
 
@@ -339,4 +339,4 @@ python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 
 This does not establish runtime exclusivity or completeness, temporal or placement-report authorship or truth, appeal, remedy, real-world placement, free-person housing delivery, record integrity, institutional action, or liveness.
 
-**Remaining boundary:** The repository can reject a source whose tested consequences violate this reviewed matrix. An actual placement finding has an exact source-bound legal reader/action route, but the current source still has no general deployed detector for every placement conflict and proves no reader acts; its shelter floor still does not deliver housing outside confinement.
+**Remaining boundary:** The repository can reject a source whose tested consequences violate this reviewed matrix. An actual placement finding has an exact source-bound legal reader/action route, but the current source still has no general deployed detector for every placement conflict and proves no reader acts; its non-carceral shelter route remains dormant in these fixtures and establishes no actual housing delivery.

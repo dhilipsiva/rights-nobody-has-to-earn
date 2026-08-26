@@ -407,19 +407,21 @@ and the refusal to treat a public body as the contact subject.
 
 One of the sweeps deserves its own paragraph, because it polices me. The
 chapters you read are forbidden — mechanically, by the same script — from
-containing counted claims: no "the floor is eight rights", no headcount of
-the sheltered, not because numbers are vulgar but because every counted
-claim in this book that was ever checked turned out to be wrong, not stale —
-wrong. The floor has been six, then ten, then eight. The rule the sweep
-enforces is: state the rule that produces the count, never the count.
-"Shelter derives for every confined person and for nobody else" survives
-every cast change; the headcount it replaced was wrong on the day it was
-checked and would have gone stale again at the next ruling. This part sits
-outside the sweeps by its filename, deliberately — the error messages
-quoted here would trip the jargon sweep, and this very paragraph's examples
-would trip the counting one — so it holds itself to the doctrine the hard
-way, which is why the figures here point at the repository instead of
-standing on this page.
+containing counted claims: no fixed total for the floor, no hand-maintained
+headcount of who is sheltered, not because numbers are vulgar but because every
+counted claim in this book that was ever checked turned out to be wrong or soon
+became stale. The floor itself has changed more than once.
+
+The rule the sweep enforces is: state the rule that produces the result, never
+the count. “Shelter derives through current custody routes or through a matching
+recipient-side record independently attested by an authorised witness who is not
+the source” survives a cast change. A headcount of sheltered people does not.
+
+This part sits outside the sweeps by its filename, deliberately — the error
+messages quoted here would trip the jargon sweep, and this paragraph's examples
+would trip the counting one — so it holds itself to the doctrine the hard way,
+which is why the figures here point at the repository instead of standing on
+this page.
 
 Some pins are stranger, and they are this method's most honest invention.
 The book argues about flaws the design still has — chapters stand on them.
@@ -653,6 +655,47 @@ affected-case re-examination, and recurrence-check duties, alongside
 source-removal counterfactuals. A green result proves those legal effects over
 supplied records. It does not prove notice, staffing, response, enforcement,
 delivery, completed repair, recurrence monitoring, or institutional life.
+
+The delivery-and-receipt family adds one recipient-side evidence relation,
+`receives`, and five direct heads. Food, non-carceral shelter, care, material
+security, and company derive only when the same rule joins a recipient, item,
+source, authorised witness for that person, matching scope, and the witness's
+separation from the source. The legacy `teaches` plus `hears` route to `learn`
+remains unchanged.
+
+The family suite keeps the shipped record dormant, then exercises the routes
+with probe evidence. Correctly matched independent evidence derives the selected
+actuality. Missing attestation, missing receipt, wrong scope, wrong person,
+unauthorised witness, and provider self-certification do not. A predeclared
+alternate succeeds through the same authorised role. A recipient who is absent
+from the person roster can still derive the actuality, while remaining absent
+from that roster.
+
+The source deliberately adds no delivery head for `believe` or `expresses`.
+Belief is protected from certification. The liberty of expression remains a
+person-held limit, while the older confinement route can still put recorded
+speech into the supplied record. Care deriving `healthy` retains the book's
+fixed meaning of care received and does not establish that the person is well.
+
+The independence guard needs a source mutation because derivation is monotone.
+`no-delivery-independence` removes only the food rule's witness-source
+disequality. In that copy a kitchen can provide a meal, attest its own delivery,
+and derive `eats`; the independent control remains true and the untouched shelter
+rule still refuses provider self-certification. The fixture proves what the
+guard prevents without pretending that a probe can test a restriction by adding
+facts.
+
+A missing receipt derives no `Undelivered` finding. It supplies no arrival and
+leaves entitlement untouched. Outreach, challenge, continuity, remedy,
+corrective control, affected-case re-examination, and recurrence checking remain
+separate obligation effects with their own positive records. Recurrence checking
+is bounded to its declared supplied horizon and proves nothing about all future
+time.
+
+These checks establish a formal interface over supplied records. They do not
+authenticate a writer, prove an offer or accessibility, operate a service, make
+anything arrive, complete a remedy, implement a correction, monitor recurrence
+in the world, or establish future non-recurrence.
 
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on

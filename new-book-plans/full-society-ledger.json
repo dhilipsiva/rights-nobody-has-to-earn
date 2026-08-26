@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-24-obligations-formal-prose-v1",
+  "source_version": "fs-ledger-2026-08-26-delivery-lifecycle-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -791,10 +791,10 @@
       "applicability": "every person; communities hold separate cultural protections",
       "layer": "spans-all-layers",
       "status": "seeded-stage-1; routing complete at domain grain",
-      "severity": "serious if left open — the one non-carceral delivery route lives here",
-      "consequence": "learning stays the only floor actuality with a non-carceral route and nothing else joins it",
+      "severity": "serious if left open — legacy learning must stay distinct from the newer recipient-side family",
+      "consequence": "learning retains its audio-literal personal-outcome route while belief and expression remain deliberately unrouted and service operation remains external",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "contract cards complete for learning delivery, culture, and expression rule families",
+      "closure_condition": "the legacy learning route, the newer receipt family, and the deliberate belief and expression non-routes remain distinct while the wider domain cards land",
       "constitutional_invariants": {
         "answer": "The learning and expression floor items; teaching plus hearing derives learning without ranking the learner; recognition for teaching is unconditional and never ranked; minority culture, language, education, and media protections; internal cultural selection bounded by universal rights.",
         "refs": [
@@ -841,7 +841,7 @@
       "scenario_applicability": {
         "answer": "Learning, expression, culture, and collective-membership scenarios exercise this domain, including the speech-versus-private-harm collision and the never-graded learning journey; execution follows the equality and economic rulings' contract cards."
       },
-      "reader_destination": "The contribution and floor chapters today; culture and knowledge chapters arrive with their rule families.",
+      "reader_destination": "The contribution and floor chapters now state the legacy-learning and recipient-side-delivery boundary; culture and knowledge chapters arrive with their wider rule families.",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 3. Current coverage versus target scope"
       ]
@@ -852,10 +852,10 @@
       "applicability": "every person; the floor is non-contributory and unconditional",
       "layer": "spans-all-layers",
       "status": "seeded-stage-1; routing complete at domain grain",
-      "severity": "critical if left open — the material floor's delivery gap lives here",
-      "consequence": "shelter keeps deriving only through confinement and no free person's arrival is representable",
+      "severity": "critical if left open — selected receipt routes are formal while actual arrival and operation remain unestablished",
+      "consequence": "five material actualities have dormant recipient-side routes, but the shipped record still derives shelter only through confinement and proves no free-person arrival",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "delivery and receipt rule families land for the floor items with no producing rule",
+      "closure_condition": "the five receipt heads remain formal and prose-landed while operational assurance alone owns actual arrival",
       "constitutional_invariants": {
         "answer": "The food, dwelling, and security floor items; price and ability to pay cannot gate the floor; eviction threatening the housing floor requires legality, hearing, proportionality, review, and real public continuity; genuine physical scarcity preserves each person's minimum where supply allows and records every unmet portion as failure under forbidden priority keys.",
         "refs": [
@@ -902,7 +902,7 @@
       "scenario_applicability": {
         "answer": "Non-arrival, shortage, eviction, provider-failure, and shock scenarios exercise the material floor's delivery, failure, and restoration routes, with the property and scarcity collisions owned; execution follows the economic ruling's contract cards."
       },
-      "reader_destination": "The owed and placement chapters today; delivery chapters arrive with the receipt families.",
+      "reader_destination": "The owed, placement, release, failure, Part V, and method chapters now carry the receipt lifecycle and its no-arrival boundary.",
       "source_refs": [
         "new-book-plans/book-1-constitutional-coverage-map.md::## 3. Current coverage versus target scope"
       ]
@@ -1883,7 +1883,7 @@
     {
       "id": "FS-CLM-05",
       "title": "Floor delivery and receipt interfaces",
-      "claim": "Accessibility-neutral, recipient-side access and receipt evidence with a named authorised writer and challenge route, for every floor item.",
+      "claim": "The five named material actualities — eats, dwell, healthy, secure, and meets — derive from supplied recipient-side receives evidence plus a scope-correct attestation by an authorised independent DeliveryWitness.",
       "layer": "constitutional-invariant",
       "domain_refs": [
         "FS-DOM-04"
@@ -1892,21 +1892,23 @@
       "class_refs": [
         "class-02"
       ],
-      "posture": "Specified",
-      "unimplemented_marker": true,
+      "posture": "Derived",
+      "evidence_kind": "executable",
       "route_ref": "FS-RTE-01",
       "overlay": "none",
-      "scope_bound": "the ratified interface shape; five floor items have no producing rule",
+      "scope_bound": "the exact five current receipt heads over supplied records; no writer authentication, offer, accessibility, adequacy, operation, actual arrival, completed remedy, or future non-recurrence follows",
       "evidence_notes": [
-        "the delivery-markers refusal stands while the record holds no arrival facts"
+        "delivery-receipt pins exercise the matching receipt, scope, authorised witness, independence, alternate-writer, and off-roster routes",
+        "the no-delivery-independence counterfactual shows provider self-certification reappears when only the food disequality is removed",
+        "the shipped cast supplies none of the receipt evidence, and missing receipt derives no Undelivered finding"
       ],
-      "public_claim_restriction": "no public claim may describe the book as showing ordinary social life until the delivery families land",
-      "applicability": "every floor item",
-      "status": "ratified-unimplemented",
-      "severity": "critical while unimplemented — the measured ordinary-life deficit",
-      "consequence": "no derived case can show provision, care, or association",
-      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "delivery and receipt rule families land; then the pinned-case rebalance may run",
+      "public_claim_restriction": "no public claim of actual arrival, operation, completed lifecycle, or ordinary-life delivery; care receipt means care reached the person, not that the person is well",
+      "applicability": "the five named material receipt heads under the exact current source",
+      "status": "current",
+      "severity": "critical if broken — the bounded recipient-side interface would again disappear or permit provider self-certification",
+      "consequence": "the formal source would again lack a bounded way to represent the five selected receipts without importing operation or liveness",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
+      "closure_condition": "the five routes, 28 delivery pins, independence counterfactual, and prose boundary remain exact; operational lifecycle components stay separately unresolved",
       "envelope_id": "FS-ENV-00",
       "closure_requirement_refs": [
         "FS-CLR-01"
@@ -24896,13 +24898,13 @@
     {
       "id": "FS-ROL-13",
       "title": "Learner",
-      "applicability": "every person learning at any age; the learner is heard, never ranked, and being taught is not a contribution — while teaching that delivers learning is the design's one non-carceral route to a floor actuality",
+      "applicability": "every person learning at any age; the learner is heard, never ranked, and being taught is not a contribution — the legacy teaching-and-hearing route remains distinct from the five newer receipt heads",
       "layer": "constitutional-invariant",
       "status": "reviewed-routing",
       "severity": "critical",
-      "consequence": "learning delivery certified by the provider's own word",
+      "consequence": "the uncontrolled legacy teaching-and-hearing entries can still certify a learning conclusion and must not be mistaken for the newer independent receipt pattern",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "the accessibility-neutral delivery and receipt rule families land",
+      "closure_condition": "the legacy learning route remains unchanged and is never presented as the accessibility-neutral template for the newer receipt family",
       "role_kind": "learning-and-culture",
       "domain_refs": [
         "FS-DOM-03"
@@ -24916,7 +24918,7 @@
         {
           "body_ref": "FS-BOD-07",
           "position": "affected",
-          "note": "schooling and learning provision reach the learner as unconditional delivery, with accessibility-neutral receipt evidence still to land"
+          "note": "the source can derive legacy learning from teaching plus hearing; the wider learning-and-information lifecycle remains a constitutional demand whose operation is outside this route"
         }
       ],
       "formal_anchor": {
@@ -25086,7 +25088,7 @@
       "severity": "critical",
       "consequence": "workfare by another name",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "the delivery and receipt rule families land",
+      "closure_condition": "the prose-landed receipt interface remains unconditional and the still-open operational route never imports a work or contribution condition",
       "role_kind": "economic",
       "domain_refs": [
         "FS-DOM-05",
@@ -25099,7 +25101,7 @@
         {
           "body_ref": "FS-BOD-07",
           "position": "affected",
-          "note": "floor delivery reaches the person unconditionally; no contribution history is asked"
+          "note": "the five current receipt heads do not ask for contribution history or roster membership; actual service operation and arrival remain separately unestablished"
         },
         {
           "body_ref": "FS-BOD-02",
@@ -103980,7 +103982,7 @@
     {
       "id": "FS-CVF-015",
       "title": "Delivery and receipt interfaces for the material floor",
-      "state": "formalized",
+      "state": "prose-landed",
       "source_family_refs": [],
       "card_refs": [],
       "template_refs": [],
@@ -104000,9 +104002,21 @@
       "counterfactual_refs": [
         "new-book-plans/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route"
       ],
-      "prose_refs": [],
-      "part_v_refs": [],
-      "blocked_before_drafting": "Formal rules, pins, and the source-removal counterfactual pass, but claim-bearing chapter and Part V prose remain blocked until audited references land. The routes are dormant, no arrival derives, and belief and expression stay deliberately unrouted with recorded reasons.",
+      "prose_refs": [
+        "book-1/08-what-you-are-owed.md::Ask whether Bela eats in the record supplied with this book.",
+        "book-1/08-what-you-are-owed.md::The debt says what it is about, and arrival is a separate conclusion.",
+        "book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated.",
+        "book-1/13-the-one-thing-taken.md::Conviction takes movement and nothing else.",
+        "book-1/13-the-one-thing-taken.md::Leaving custody returns a person to a supplied record with no non-carceral receipt.",
+        "book-1/14-when-the-system-notices-it-broke.md::At first that looks like an alarm screaming. It is not, quite.",
+        "book-1/14-when-the-system-notices-it-broke.md::The delivery routes join that architecture at the arrival end without inventing the",
+        "book-1/method.md::One of the sweeps deserves its own paragraph, because it polices me.",
+        "book-1/method.md::The delivery-and-receipt family adds one recipient-side evidence relation,"
+      ],
+      "part_v_refs": [
+        "book-1/15-the-five-joints.md::The answer is the book's oldest honesty, sharpened."
+      ],
+      "blocked_before_drafting": "Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
       ],
@@ -104501,7 +104515,7 @@
       "severity": "critical",
       "consequence": "the floor loses its financier of last resort; every unmet portion is recorded failure with continuity and remedy owed.",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "the delivery and receipt rule families land",
+      "closure_condition": "floor financing remains a non-delegable duty distinct from the prose-landed receipt interface and from still-unproved operational arrival",
       "flow_kind": "money",
       "dependency_class": "constitutionally-guaranteed",
       "from_ref": "FS-BOD-07",
@@ -104943,7 +104957,7 @@
       "severity": "critical",
       "consequence": "inaccessibility, inadequacy, or failure activates immediate public continuity and is recorded as failure.",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "the delivery and receipt rule families land",
+      "closure_condition": "the constitutional lifecycle remains prose-landed while Book 2 supplies accessibility, continuity, restoration, correction, and recurrence operation",
       "flow_kind": "services",
       "dependency_class": "operationally-supplied",
       "from_ref": "FS-BOD-04",
@@ -105049,7 +105063,7 @@
       "severity": "critical",
       "consequence": "non-arrival is recorded failure with duty-bearer, continuity, remedy, and correction — never certified by the provider alone.",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
-      "closure_condition": "the accessibility-neutral delivery and receipt rule families land",
+      "closure_condition": "legacy learning remains distinct from the five prose-landed receipt heads while accessible learning operation, continuity, and restoration stay in Book 2",
       "flow_kind": "services",
       "dependency_class": "operationally-supplied",
       "from_ref": "FS-BOD-04",
@@ -109377,7 +109391,7 @@
     {
       "id": "FS-DFT-16",
       "defect_id": "FS-DFT-16",
-      "title": "Five floor items have no producing rule and two arrive only through confinement",
+      "title": "Five recipient-side floor routes were absent from the executable and prose lifecycle",
       "applicability": "the ordinary-life account of the whole book",
       "layer": "constitutional-invariant",
       "applicable_gate_refs": [
@@ -109386,32 +109400,36 @@
         "gate-d",
         "gate-e"
       ],
-      "status": "open",
-      "severity": "critical — the book's ordinary-life account rests on families that are stated and not formalised",
-      "consequence": "no derived case can show provision, care, or association until delivery families land",
-      "owner_ref": "new-book-plans/book-1-narrative-register-decision.md::## 9. Owners, in the order they can run",
-      "closure_condition": "accessibility-neutral, recipient-side delivery and receipt families land for the floor items with no producing rule",
-      "defect_disposition": "open-defect",
-      "response_stage": "interface-specified",
+      "status": "repaired-with-residuals",
+      "severity": "critical — removing the receipt routes or their prose boundary restores the false no-route ordinary-life account",
+      "consequence": "the five selected heads now have exact supplied-record routes, while actual arrival, institutional liveness, and the carceral pin concentration remain separate unresolved siblings",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
+      "closure_condition": "the five exact recipient-side routes, 28 delivery pins, provider-independence counterfactual, and DLV-B1-v1 prose remain aligned",
+      "defect_disposition": "eliminated-structurally",
+      "response_stage": "implemented-in-assigned-route",
       "affected_claim_ref": "FS-CLM-05",
       "consequence_id": "no-producing-rules",
       "scope_id": "ordinary-life",
       "envelope_id": "FS-ENV-00",
-      "source_version": "fs-ledger-2026-08-09-stage-2",
+      "source_version": "fs-ledger-2026-08-26-delivery-lifecycle-v1",
       "history": [],
       "evidence_notes": [
-        "the register decision measures the deficit as rules and a reproducible command, never counts",
-        "no public claim may describe the book as showing ordinary social life until then"
+        "the five direct heads derive only from a matching receipt, person, item, scope, authorised independent witness, and source separation",
+        "alternate-writer and off-roster probes derive; missing, unauthorised, wrong-person, wrong-scope, and provider-self-certified evidence withhold",
+        "the repair establishes a supplied-record interface only and leaves the shipped cast dormant"
       ],
       "residual_citations": [
-        "placement-exhaustiveness-audit#limits.housing_delivery"
+        "placement-exhaustiveness-audit#limits.housing_delivery",
+        "placement-exhaustiveness-audit#limits.future_delivery"
       ],
-      "controls": {}
+      "controls": {
+        "reintroduction_control_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-190 counterfactual: with the arrival record and an independent"
+      }
     },
     {
       "id": "FS-DFT-17",
       "defect_id": "FS-DFT-16",
-      "title": "No arrival of any floor item to a free person is representable",
+      "title": "No actual arrival or operational liveness is evidenced for a free-person floor item",
       "applicability": "every free person",
       "layer": "constitutional-invariant",
       "applicable_gate_refs": [
@@ -109419,20 +109437,21 @@
         "gate-e"
       ],
       "status": "open",
-      "severity": "critical — the delivery gap is exactly as wide as before the placement repair",
-      "consequence": "the person was owed a home before the conviction and nothing delivered it; the one non-carceral route ships dormant",
+      "severity": "critical — formal receipt routes cannot supply their own evidence or prove a service operates",
+      "consequence": "the five direct routes and legacy learning are dormant in the shipped record, and no actual-world arrival to a free person is established",
       "owner_ref": "new-book-plans/book-1-narrative-register-decision.md::## 9. Owners, in the order they can run",
-      "closure_condition": "arrival facts land and the delivery families produce them",
+      "closure_condition": "operational assurance authenticates actual arrival in a calibrated envelope without treating formal entailment as liveness",
       "defect_disposition": "open-defect",
       "response_stage": "interface-specified",
       "affected_claim_ref": "FS-CLM-06",
       "consequence_id": "no-arrival-facts",
       "scope_id": "ordinary-life",
       "envelope_id": "FS-ENV-00",
-      "source_version": "fs-ledger-2026-08-09-stage-2",
+      "source_version": "fs-ledger-2026-08-26-delivery-lifecycle-v1",
       "history": [],
       "evidence_notes": [
-        "the grandfathered Part V passage's dated non-conformance is a witness here: it conflates being owed with getting; its former author-only supply restriction was superseded on 2026-08-20 without changing this delivery-gap finding"
+        "DLV-B1-v1 now distinguishes entitlement, receipt, and operation; the distinction changes no cast fact and supplies no world evidence",
+        "FS-CLM-06 remains Unestablished with route-unbuilt as its only honest current disposition"
       ],
       "residual_citations": [
         "placement-exhaustiveness-audit#limits.future_delivery"
@@ -109453,18 +109472,19 @@
       ],
       "status": "open",
       "severity": "material — the society's sensors point at the cage",
-      "consequence": "the pinned-case rebalance is structurally blocked until delivery families land; the prisoner reads as the central inhabitant",
+      "consequence": "the delivery precondition is satisfied, but the rebalance has not run and the prisoner still reads as the central inhabitant of the pin portfolio",
       "owner_ref": "new-book-plans/book-1-narrative-register-decision.md::## 9. Owners, in the order they can run",
-      "closure_condition": "the delivery families land first; the rebalance is the consumer that can only run afterwards",
+      "closure_condition": "the now-unblocked portfolio rebalancing runs under its own acceptance and counted-claim constraints",
       "defect_disposition": "open-defect",
       "response_stage": "detected",
       "affected_claim_ref": "FS-CLM-05",
       "consequence_id": "carceral-pin-concentration",
       "scope_id": "pinned-case-portfolio",
       "envelope_id": "FS-ENV-00",
-      "source_version": "fs-ledger-2026-08-09-stage-2",
+      "source_version": "fs-ledger-2026-08-26-delivery-lifecycle-v1",
       "history": [],
       "evidence_notes": [
+        "the delivery precondition is now satisfied; this row remains open because no portfolio query has been replaced or rebalanced",
         "state the rule, not the count: the carceral-chapter count moves with the criterion"
       ],
       "residual_citations": [],
@@ -110420,6 +110440,38 @@
       "owner_ref": "TODO.md::Replace confession-as-ending",
       "eligible_gate": "gate-a",
       "reader_mapping_ref": "book-1/05-voiding.md::Koa recorded a finding about Esa"
+    },
+    {
+      "id": "FS-RCP-06",
+      "title": "The recipient-side delivery interface is executable without asserting arrival",
+      "defect_row_ref": "FS-DFT-16",
+      "defect_id": "FS-DFT-16",
+      "affected_claim_ref": "FS-CLM-05",
+      "consequence_id": "no-producing-rules",
+      "defect_disposition": "eliminated-structurally",
+      "response_stage": "implemented-in-assigned-route",
+      "claim_posture": "Derived",
+      "route_ref": "FS-RTE-01",
+      "admissible_evidence": "the unchanged delivery statements, 28 executable family pins, provider-independence counterfactual, and approved DLV-B1-v1 prose over the current source",
+      "assurance_ceiling": "Derived",
+      "what_failed": "Five selected floor actualities lacked recipient-side producing routes in the original source, and the book continued to describe the resulting no-route boundary after the formal family first landed.",
+      "hostile_witness": "The former no-route, two-exception, learning-only, and confinement-only passages made the formal recipient-side family disappear from the reader's account.",
+      "why_it_failed": "Executable coverage and claim-bearing prose landed in separate stages, leaving FS-CLM-05 Specified and the structural repair incomplete.",
+      "response_change": "Chapter 8 now leads the lifecycle account, chapters 13 and 14 follow its release and failure consequences, Part V and method state the boundary, and the ledger binds those references to the unchanged formal family.",
+      "now_follows": "Each of eats, dwell, healthy, secure, and meets derives only from the exact supplied receipt route with a scope-correct authorised independent witness; alternate-writer and off-roster probes also derive.",
+      "proof_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-190 counterfactual: with the arrival record and an independent",
+      "negative_control_ref": "new-book-plans/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route",
+      "still_does_not_follow": "No service offer, accessibility, adequacy, writer authentication, actual-world arrival, performed continuity, completed remedy, recurrence monitoring, future non-recurrence, or institutional liveness follows.",
+      "residuals": [
+        "FS-DFT-17",
+        "FS-DFT-18"
+      ],
+      "scope_id": "ordinary-life",
+      "source_version": "fs-ledger-2026-08-26-delivery-lifecycle-v1",
+      "envelope_id": "FS-ENV-00",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
+      "eligible_gate": "gate-a",
+      "reader_mapping_ref": "book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated."
     }
   ],
   "proposals": [],
@@ -110580,61 +110632,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "6ba22e5649c9ec2f3b6333bffcbb0a6ef72f78ad",
-    "source_version": "fs-ledger-2026-08-24-obligations-formal-prose-v1",
-    "scope_sha256": "82a4c68bc8850b3243bf3c84b6bf5fb2a7fec10f911a2bde9963d4e603552113",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-08-25T17:42:27Z",
-    "scope_audit_ref": "FS-SAU-38",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
-    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-fa2b552970c7e8bf7c2691395c325dbf4dcf4c0d834c5eb73d077797686ff74b.json"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -128580,6 +128582,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-fa2b552970c7e8bf7c2691395c325dbf4dcf4c0d834c5eb73d077797686ff74b.json"
+    },
+    {
+      "id": "FS-SAU-39-PENDING",
+      "title": "Delivery lifecycle prose and structural repair pending current-source repository audit",
+      "source_version": "fs-ledger-2026-08-26-delivery-lifecycle-v1",
+      "scope_sha256": "86177746af6daa188be2c670bf9a5d906df3bde34e79695dd2d493aec86c0584",
+      "protocol_sha256": "1bf0e0d00a980b10ca1d5fc7d4c2805df8eadd45e0cde20221288d8f73a8a3a8",
+      "executed_at_utc": "2026-08-26T05:36:24Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
+        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):"
+      ],
+      "commands": [
+        "python3 new-book-plans/13-full-society-ledger.py --refresh-and-check",
+        "python3 new-book-plans/16-constitutional-closure.py --refresh-and-check",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -172984,7 +173030,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without food delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-02",
@@ -173197,7 +173243,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-190 counterfactual: with the arrival record and an independent"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173212,7 +173258,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without shelter delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-02",
@@ -173425,7 +173471,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-191 counterfactual: shelter now has a route that does not run through"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173440,7 +173486,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without care delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-02",
@@ -173653,7 +173699,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-192 counterfactual: care reaching a person derives the floor item the"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173668,7 +173714,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without security delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-02",
@@ -173881,7 +173927,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-193 counterfactual: the security floor item derives on the same shape."
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -173896,7 +173942,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without company delivery receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-02",
@@ -174109,7 +174155,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-194 counterfactual: company is a floor item and reaches a person the"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -174124,7 +174170,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without provider may not certify receipt, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-07",
@@ -174337,7 +174383,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-195 counterfactual: the same evidence with a witness who is not the"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -174352,7 +174398,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without authorised independent delivery writer, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-07",
@@ -174565,7 +174611,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-196 counterfactual: authorisation is per person, so a role held for"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"
@@ -174580,7 +174626,7 @@
       "status": "current",
       "severity": "critical if this delivery and receipt effect is omitted or collapsed",
       "consequence": "Without arrival not roster conditioned, a provider's own assertion, a missing record, or a personal-state inference could stand in for the ratified direct effect.",
-      "owner_ref": "TODO.md::Specify delivery as a lifecycle",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "closure_condition": "FS-CVF-015 is formalized, prose-landed, and mechanically re-audited without establishing any arrival",
       "posture": "Specified",
       "primary_class_ref": "class-02",
@@ -174793,7 +174839,7 @@
         ],
         "executable_ref": "new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-197 counterfactual: serve first. A person never entered on the roster,"
       },
-      "part_v_status": "formalized-not-prose-landed",
+      "part_v_status": "prose-landed",
       "book2_handoff": "Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows.",
       "source_refs": [
         "new-book-plans/book-1-delivery-and-receipt-decision.md::## 1. Decision"

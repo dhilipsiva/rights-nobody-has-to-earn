@@ -29,9 +29,13 @@ the marker watching for isolation is watching Hano and not Jala. Four difference
 **three of them run the wrong way** — they are things the convicted man has and the free
 woman does not.
 
-Conviction takes movement and nothing else. Conviction is also the only route by
-which anything on the floor reaches anybody, which is a separate fact about this
-design and a much worse one. The chapter comes back to it at the end.
+Conviction takes movement and nothing else. In the record supplied with this book,
+confinement is also the only active route by which a floor actuality reaches anyone.
+That is no longer the whole rulebook. Recipient-side evidence can now derive food,
+shelter, care, material security, or company without confinement, and the older
+teaching route can derive learning. No cast member carries the required receipt, so
+every non-carceral route remains dormant. The chapter comes back to that distinction
+at the end.
 
 ## Why nothing follows from it
 
@@ -154,39 +158,44 @@ safety rule and somebody keeping time.
 And there is a sting in it that is worth following, because it is the sharpest thing
 this chapter has.
 
-The floor has only narrow delivery routes here. Recorded speech and shelter actually
-arrive, and **each arrives only for prisoners**. Teaching received through the legacy
-route can also deliver learning, but no matching receipt is in this record, so nothing
-arrives by that route here; the sting below is untouched.
+The supplied record contains active floor actualities through punishment. Recorded
+speech and shelter derive for confined people. The rulebook now also has
+recipient-side routes for food, shelter, care, material security, and company, and
+retains the older teaching-and-hearing route for learning. None is exercised by the
+cast. A route exists; no matching arrival is supplied.
 
 So when a sentence is finished, or current case authority is absent, recorded speech
-and shelter stop in the newly evaluated record. The person keeps every entitlement they had
-— they are owed exactly what they were always owed, and the body that owes it still
-owes it — but the two things that were genuinely being delivered were being delivered
-by the punishment machinery, and the punishment machinery has let go. Hano, released,
-is owed shelter and has none, in a way he was not an hour earlier.
+and confinement-produced shelter stop in the newly evaluated record. The person keeps
+every entitlement they had. The body that owes the floor still owes it. The
+recipient-side routes remain available without imprisonment. But no receipt appears
+merely because custody ended, and a formal route cannot supply its own evidence.
 
-Kel and Adam are the sharper version. Both were already homeless on the day they were
-convicted — that is the whole reason the placement rules ran out on them — and the
-conviction is what produced a roof. Not anybody noticing they were owed one. Not the
-body that owes it doing anything. The confinement machinery needed somewhere to put
-them, and a roof is what it takes to confine a person who has none. When the sentence
-ends the roof ends, and they are returned exactly to the position that made the rules
-run out in the first place. This design will have housed Adam and Kel for precisely as
-long as it was punishing them.
+Hano therefore leaves the only shelter conclusion his supplied record had. That is
+not a finding that no shelter reached him in the world. It is a finding that the
+custody route no longer derives and no independent recipient-side shelter record has
+taken its place.
 
-**Leaving custody returns a person to a population this design delivers nothing to.**
+Kel and Adam are the sharper version. Both lacked the placement-home fact when the
+custody rules reached them, and confinement produced shelter without inventing a
+destination. Not anybody noticing the debt and delivering a home. Not an authorised
+recipient-side receipt. The confinement machinery needed somewhere to hold them, and
+its own rule produced the shelter conclusion. When custody ends, that conclusion ends.
+
+**Leaving custody returns a person to a supplied record with no non-carceral receipt.**
 
 That is not an argument for keeping people in. It is the delivery gap of Chapter 8,
-arriving somewhere it can be felt rather than merely conceded. A society whose only
-working provision runs through its prisons has not built a floor; it has built a
-prison that happens to be furnished.
+arriving somewhere it can be felt rather than merely conceded. A society whose active
+provision appears only through punishment has not operated its floor merely because
+the constitution now specifies other routes.
 
-It also complicates the comparison made earlier in this chapter, and the complication
-should be said rather than smoothed. Elsewhere a sentence nominally ends and its
-consequences do not; the released person carries a cascade of losses that outlives the
-punishment by decades. Here the sentence genuinely ends, the cascade genuinely does not
-exist, and the person still walks out with less than they had inside. The two failures
-are not the same and this one is smaller, but a design does not get to call a thing
-solved because it broke in a new place. Everything above the floor here is exact. The
-floor itself is still a promise about what is owed rather than a record of what came.
+The distinction matters. Elsewhere a sentence nominally ends and its consequences do
+not; the released person carries a cascade of losses that outlives the punishment by
+decades. Here the sentence genuinely ends, the cascade genuinely does not exist, and
+the record still loses the floor actualities confinement supplied. The recipient-side
+interfaces prevent that from being a necessary feature of the design. They do not
+prove that anyone used them.
+
+Everything above the floor here remains exact. The floor itself is owed, selected
+arrival routes are specified, and the supplied record still contains no actual
+non-carceral arrival. Outside records, service operation, accessibility, continuity,
+and completed delivery remain things this book cannot establish.

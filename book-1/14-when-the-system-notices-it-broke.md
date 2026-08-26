@@ -21,9 +21,8 @@ make the same limits sharper rather than removing them.
 
 ## The one that fires on everybody
 
-Ask which prisoners are being held in isolation, and the answer is: all of them. Adam,
-Hano, Lalo, Nando, Don, Kel, Ruk — every one, without exception. Ask which free people
-are, and the answer is none.
+Ask which prisoners are marked for isolation, and the answer is: every prisoner in
+the supplied record. Ask which free people are marked, and the answer is none.
 
 That the prisoners are fewer than the people a court has judged is worth a moment.
 Several of the judged are not held: one was cleared on appeal, and the others are
@@ -31,21 +30,25 @@ protected for having exposed an authority. Being judged and being held are diffe
 things here, and the marker is asking about the second.
 
 At first that looks like an alarm screaming. It is not, quite. It is technically
-correct: the marker fires when a confined person has no company on record, and nobody
-anywhere in this society has company on record. Company is one of the things nothing in
-this design delivers. Shelter and recorded speech do arrive — Chapter 8 is exact about
-which, and about the fact that they arrive only for the confined — but company has no
-route to anybody at all. So every prisoner satisfies the condition, and the marker
-faithfully reports it.
+correct: the marker fires when a confined person has no company conclusion. Company
+now has a recipient-side route, but nobody in the cast carries its receipt. The route
+is dormant, so the supplied record still derives company for nobody and the marker
+fires on every confined person.
 
-Faithfully, and uselessly. A signal that fires on every member of a category
-distinguishes nothing within it. If some prisoners were held in isolation and others
-were not, this marker could not tell you which. It reports the state of the record,
-which is empty, and the emptiness of the record is what Chapter 8 was about.
+That does not establish that every prisoner is isolated in the world. It establishes
+that no company receipt reaches the route for any of them. The rule requires an
+authorised witness for the same person and delivery scope, independent of the source.
+A missing receipt is not itself a non-delivery finding, and the marker's older
+absence-based shape does not become one by acquiring a possible way to go quiet.
 
-This is the first failure mode of self-audit: **an alarm can be perfectly accurate
-about a system that knows nothing, and accurate reporting of nothing is
-indistinguishable from an accurate report that everything is broken.**
+With valid company evidence, the marker could distinguish a confined person for whom
+company derives from one for whom it does not. The shipped record supplies no such
+case, so the signal remains undiscriminating across the category it watches.
+
+This is the first failure mode of self-audit: **an alarm can accurately report an
+empty supplied record while saying nothing conclusive about the world the record is
+supposed to describe.** A route can be real, an alarm can be formally correct, and
+operation can still be entirely absent.
 
 ## The one that fired on the wrong people
 
@@ -134,35 +137,49 @@ the writer or omission that caused the defect.
 
 The chain no longer ends there. For the kinds named here, the duty reaches an
 independently named reader and becomes an action duty. A separately certified
-failure to respond can send the case to a predeclared alternate and preserve
-the person's protected position while it waits. The source can name an
-individual remedy. It keeps common-cause correction, re-examination of affected
-cases, and recurrence checking separate, so repairing a person cannot be
-passed off as repairing the system.
+failure to respond can send the case to a predeclared alternate and preserve the
+person's protected position while it waits. The source can name an individual
+remedy. It keeps common-cause correction, re-examination of affected cases, and
+recurrence checking separate, so repairing a person cannot be passed off as
+repairing the system.
+
+The delivery routes join that architecture at the arrival end without inventing the
+failure end. A valid receipt can establish that a named thing reached a named person.
+No receipt does not establish that it failed to arrive. The absence calls for outreach
+and a usable challenge, while entitlement and continuity remain. It never authorises
+termination of the claim.
+
+The legal lifecycle is therefore longer than either family alone. Entitlement comes
+before any test. An offer must remain distinct from accessible use. Arrival requires
+authorised recipient-side evidence. A dispute or established failure must reach an
+independent reader. Interim continuity protects the person while the case is heard. An
+individual remedy restores what the breach took; corrective control addresses the
+common cause; related cases are re-examined; and recurrence is checked over a declared
+supplied horizon.
 
 Each result needs its own positive, current, source-bound record. Missing or
 conflicting evidence supplies no duty, excuse, priority, discharge, alternate,
-or remedy. The bearer does not certify its own excuse. A wrong recipient gains
-no duty merely because a finding exists, and none of these rules discovers who
-caused the original wrong.
+arrival, or remedy. The bearer does not certify its own excuse, the provider does not
+certify its own delivery, and a wrong recipient gains no duty merely because a finding
+exists. None of these rules discovers who caused the original wrong.
 
 And then nobody has necessarily acted. A formal action duty is not a performed
-review. A non-response conclusion is not an escalation received. Continuity is
-not care delivered, and a remedy is not restoration completed. The chain is
-legally longer than it was. It still stops on this side of the world.
+review. A receipt conclusion does not authenticate its writer or prove the service
+system operated. A non-response conclusion is not an escalation received. Continuity
+is not care delivered, and a remedy is not restoration completed. Corrective control
+may be legally required without being implemented. Recurrence checking can inspect
+only the supplied records inside its declared horizon and cannot prove future
+non-recurrence.
 
-That is the same shape as the earlier gaps, with its remaining limit now made
-visible. The floor states what is owed and mostly does not deliver it. The
-amendment machinery can state a source-bound result and does not deploy a new
-constitution. The audit can now state what is broken, who must read it, what
-that reader must do, what follows from established silence, and which
-protections and remedies continue. It cannot state that any of those acts
-happened.
+That is the same shape as the earlier gaps, with its remaining limit now made visible.
+The floor states what is owed. The arrival family states what evidence can establish
+selected receipt. The obligations family states who must answer an exact finding and
+what legal consequences follow. None can state that the world performed the next act.
 
-The diagnosis has therefore narrowed. This design no longer runs out of someone
-who has to act. It runs out of the act. That is not wordplay. The constitutional
-omission is closed; the operating-world gap remains outside what these rules can
-make true.
+The diagnosis has therefore narrowed. This design no longer runs out of a legal
+lifecycle. It runs out of operation and evidence that the lifecycle happened. That is
+not wordplay. The constitutional interfaces are present; actual arrival, action,
+repair, and future non-recurrence remain outside what these rules can make true.
 
 ## What it does have
 

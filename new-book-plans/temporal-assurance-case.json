@@ -7,11 +7,11 @@
   "subprocess_timeout_seconds": 180,
   "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
   "bound_sources_sha256": {
-    "amendment_semantics": "3fc0196b08593e576d53fe9fc8caceaedc41906a845d874cbddf20fad1a9fbe9",
-    "assertion_surface": "dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb",
-    "placement_exhaustiveness": "ac32b3950084a5458704e2836239b9737bdfd8505344495b4ff89337d5914668",
-    "record_assurance": "9e18d8d442b734cc7265959d6a2c2b0f6799619efed61680ede9aff2ffbc15e4",
-    "record_red_team": "d1217d15e8faa6a309d3ddc6bfd2dc45901b98b33682f16025634584a8e8d88d",
+    "amendment_semantics": "df30d08f7d4798f17d0a9e42d526ca69edd45f061e0137b63e8e32a9d46e688c",
+    "assertion_surface": "bbce3486647a9ff90e2f302e4eb3059852df6acea12cb39d08291a81d59c4577",
+    "placement_exhaustiveness": "bab406817bf05ceebead27f693a48a8e5f174470fa4c607ad837641d9dc9291d",
+    "record_assurance": "d682d0ff45f264362af14625f6e8fe2cb208b7e17e6252796c4366244e69ceda",
+    "record_red_team": "20781ba365b9dad6500d63345e6b2e4f0252e78d1d495f4cc2bd1bf034026520",
     "time_model": "b164e60532a2179b12ff675050007ee88b8a17fe20a3d6b02e07fb74873d68f6"
   },
   "marker_sha256": {

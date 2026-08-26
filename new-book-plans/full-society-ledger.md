@@ -3,9 +3,9 @@
 
 # Full-Society Domain-and-Layer Ledger — Generated Report
 
-**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
+**REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
-Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-24-obligations-formal-prose-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
+Reviewed source: `new-book-plans/full-society-ledger.json` (source version `fs-ledger-2026-08-26-delivery-lifecycle-v1`; stage 4 machinery). This report is a projection of the canonical source. Classification is routing, not assurance: every row establishes at most its own posture, and no count here is an assurance figure.
 
 ## Declared axes and stopping rule
 
@@ -40,7 +40,7 @@ Per-condition status, generated from the source and echoing the closure conditio
 - **met-in-form** — every required projection regenerates from that source: the coverage, role, dependency, assurance-allocation, structural-reader, and Book 2 projections regenerate from the canonical source; projection freshness establishes no reader evidence or operational result
 - **met-mechanically** — no unresolved critical gap applicable to that gate's permitted claim remains: no critical unresolved defect row is applicable to Gate A's map-and-test-program claim; later-gate claim blockers remain visible and unresolved
 - **met-in-form** — every non-critical residual records severity, consequence, owner, closure condition, and the resulting public-claim limitation: severity, consequence, owner, closure condition, and public-claim limitation are validator-enforced on every unresolved object; substance is reviewed, not proven
-- **met-mechanically** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: a current-source repository adversarial audit covers the declared criteria, exact checker controls, command chain, and every Gate-A-applicable defect disposition
+- **unmet** — a current-source repository adversarial audit covers the exact declared criteria, checker controls, command chain, and Gate-A-applicable finding set: no current-source repository adversarial audit exists
 - **met-in-form** (precondition) — the reference envelope: versioned in structure and reviewable; this satisfies Gate A's envelope precondition. Calibration and values remain Book 2 Gate D work, and operational assurance and remedied resolution still require them
 
 ## The five layers
@@ -93,8 +93,8 @@ The five routing dispositions are the reader-facing five layers (author-ratified
 - External assumptions: Two-sided arrival evidence must be written by someone; record production is external (FS-EXA-03).
 - Bodies: FS-BOD-01; legacy rows: FS-LGR-02
 - Scenario applicability: Learning, expression, culture, and collective-membership scenarios exercise this domain, including the speech-versus-private-harm collision and the never-graded learning journey; execution follows the equality and economic rulings' contract cards.
-- Reader destination: The contribution and floor chapters today; culture and knowledge chapters arrive with their rule families.
-- Severity if left open: serious if left open — the one non-carceral delivery route lives here; consequence: learning stays the only floor actuality with a non-carceral route and nothing else joins it; closure: contract cards complete for learning delivery, culture, and expression rule families
+- Reader destination: The contribution and floor chapters now state the legacy-learning and recipient-side-delivery boundary; culture and knowledge chapters arrive with their wider rule families.
+- Severity if left open: serious if left open — legacy learning must stay distinct from the newer recipient-side family; consequence: learning retains its audio-literal personal-outcome route while belief and expression remain deliberately unrouted and service operation remains external; closure: the legacy learning route, the newer receipt family, and the deliberate belief and expression non-routes remain distinct while the wider domain cards land
 
 ### FS-DOM-04 — Food, housing, land, utilities, infrastructure, and public space
 
@@ -106,8 +106,8 @@ The five routing dispositions are the reader-facing five layers (author-ratified
 - External assumptions: Recipient-side arrival facts must be written and authenticated outside the engine (FS-EXA-03).
 - Bodies: FS-BOD-07; legacy rows: FS-LGR-02
 - Scenario applicability: Non-arrival, shortage, eviction, provider-failure, and shock scenarios exercise the material floor's delivery, failure, and restoration routes, with the property and scarcity collisions owned; execution follows the economic ruling's contract cards.
-- Reader destination: The owed and placement chapters today; delivery chapters arrive with the receipt families.
-- Severity if left open: critical if left open — the material floor's delivery gap lives here; consequence: shelter keeps deriving only through confinement and no free person's arrival is representable; closure: delivery and receipt rule families land for the floor items with no producing rule
+- Reader destination: The owed, placement, release, failure, Part V, and method chapters now carry the receipt lifecycle and its no-arrival boundary.
+- Severity if left open: critical if left open — selected receipt routes are formal while actual arrival and operation remain unestablished; consequence: five material actualities have dormant recipient-side routes, but the shipped record still derives shelter only through confinement and proves no free-person arrival; closure: the five receipt heads remain formal and prose-landed while operational assurance alone owns actual arrival
 
 ### FS-DOM-05 — Work, property, enterprise, exchange, money, credit, debt, and public finance
 
@@ -720,14 +720,14 @@ Constitutional non-power effects:
 | FS-CCE-187 Home concept separation | class-07; family-remedy | FS-CLM-09, FS-CLM-19; FS-DOM-02, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
 | FS-CCE-188 T3 life-course nonborrowing | class-07; family-remedy | FS-CLM-09, FS-CLM-19; FS-DOM-02, FS-DOM-08 | prose-landed; executable/executable | Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
 | FS-CCE-189 Book 2 life-course boundary | class-10; family-remedy | FS-CLM-09; FS-DOM-02 | prose-landed; executable/executable | Book 2 owns services, staffing, facilities, funding, workflows, implementation, monitoring, and empirical evaluation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-190 Food delivery on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-191 Shelter delivery on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-192 Care delivery on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-193 Material security on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-194 Company on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-195 Provider may not certify its own delivery | class-07; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-196 Authorised independent delivery writer | class-07; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
-| FS-CCE-197 Arrival is not conditioned on a roster entry | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | formalized-not-prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-190 Food delivery on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-191 Shelter delivery on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-192 Care delivery on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-193 Material security on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-194 Company on recipient-side receipt | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-195 Provider may not certify its own delivery | class-07; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-196 Authorised independent delivery writer | class-07; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
+| FS-CCE-197 Arrival is not conditioned on a roster entry | class-02; material-floor-access | FS-CLM-05; FS-DOM-04 | prose-landed; executable/executable | Book 2 owns logistics, staffing, procurement, budgets, routing, maintenance, capacity, and graceful degradation; no operation, delivery, liveness, feasibility, calibration, or external truth follows. |
 | FS-CCE-198 Public duty to respect | class-01; source-bound-obligation, liberty-power-limit-adapter | FS-CLM-08; FS-DOM-01 | prose-landed; executable/executable | Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows. |
 | FS-CCE-199 Public duty to protect | class-01; source-bound-obligation, liberty-power-limit-adapter, economic-private-power-limit-adapter | FS-CLM-08; FS-DOM-01 | prose-landed; executable/executable | Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows. |
 | FS-CCE-200 Public duty to fulfil | class-02; source-bound-obligation, material-floor-access | FS-CLM-04, FS-CLM-05; FS-DOM-02, FS-DOM-03, FS-DOM-04 | prose-landed; executable/executable | Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows. |
@@ -772,7 +772,7 @@ Coverage-family drafting gate:
 | FS-CVF-012 Material-floor boundary, liberty shell, environmental right, and Class 9 ceiling | prose-landed | 0 / 25 | 39 | Claim-bearing prose is landed for this family; later animal, operational, measurement, delivery, restoration, feasibility, liveness, and calibration work remains separately gated. |
 | FS-CVF-013 Substantive equality and anti-subordination constitutional effects | prose-landed | 0 / 54 | 54 | The equality family is prose-landed after audit of the opening note, every numbered chapter, Part V, and method; operation, population facts, data systems, programmes, institutional acts, completed remedies, and Book 2 delivery remain outside this coverage state. |
 | FS-CVF-014 Bodily autonomy, health, care, family, and life-course constitutional effects | prose-landed | 0 / 102 | 124 | The bodily-autonomy, health, care, family, and life-course family is prose-landed after audit of the opening note, affected numbered chapters, Part V, and method; operation, delivery, age calibration, service routes, institutions, completed remedies, and Book 2 implementation remain outside this coverage state. |
-| FS-CVF-015 Delivery and receipt interfaces for the material floor | formalized | 0 / 8 | 6 | Formal rules, pins, and the source-removal counterfactual pass, but claim-bearing chapter and Part V prose remain blocked until audited references land. The routes are dormant, no arrival derives, and belief and expression stay deliberately unrouted with recorded reasons. |
+| FS-CVF-015 Delivery and receipt interfaces for the material floor | prose-landed | 0 / 8 | 6 | Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows. |
 | FS-CVF-016 Source-bound obligations and non-reciprocal rights | prose-landed | 0 / 25 | 65 | Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved. |
 
 Contract templates:
@@ -1415,7 +1415,7 @@ Imported from the coverage map with wording frozen; each split claim carries exa
 | FS-CLM-02 Universal substantive equality interface | constitutional-invariant | Derived (executable) | FS-RTE-01 | none | the ratified equality forms, reach, proof, accessibility, diagnostic, positive-measure, repair, federal, and narrowed-distinction effects over supplied premises | — |
 | FS-CLM-03 Equality diagnostics and repair operations | book-2-operation | Unestablished/routed-book-2 | FS-RTE-05 | none | routing only; Book 2 remains collection-only until Gate C | — |
 | FS-CLM-04 Eight floor entitlements derive unconditionally | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source; the firewall reaches the confinement conclusion only | — |
-| FS-CLM-05 Floor delivery and receipt interfaces | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified interface shape; five floor items have no producing rule | FS-DFT-16 |
+| FS-CLM-05 Floor delivery and receipt interfaces | constitutional-invariant | Derived (executable) | FS-RTE-01 | none | the exact five current receipt heads over supplied records; no writer authentication, offer, accessibility, adequacy, operation, actual arrival, completed remedy, or future non-recurrence follows | — |
 | FS-CLM-06 Actual arrival of a floor item to a free person | constitutional-invariant | Unestablished/route-unbuilt | FS-RTE-05 | liveness | liveness is never Derived, Checked, or Reasoned; only operational assurance could evidence it | FS-DFT-17 |
 | FS-CLM-07 Expression and belief floor names with confinement-scoped limits | constitutional-invariant | Derived (executable) | FS-RTE-01 | safety | supplied records under the current source | — |
 | FS-CLM-08 General liberty and power-limit interface | constitutional-invariant | Specified | FS-RTE-01 | none | the ratified liberty contracts as stated | — |
@@ -3131,8 +3131,8 @@ The `:defect` markers in the pin files remain the complete list of book-declared
 | FS-DFT-13 | FS-DFT-13 | An unscoped control widened the base below it | FS-CLM-19 | eliminated-structurally | implemented-in-assigned-route | material | unresolved-for-claim | no |
 | FS-DFT-14 | FS-DFT-13 | The harness, generators, reviewed sources, and engine remain the trust root | FS-CLM-19 | externally-bounded-assumption | implemented-in-assigned-route | material | unresolved-for-claim | no |
 | FS-DFT-15 | FS-DFT-15 | The prose seated an examiner the record never seated | FS-CLM-19 | eliminated-structurally | implemented-in-assigned-route | minor | resolved-for-claim | no |
-| FS-DFT-16 | FS-DFT-16 | Five floor items have no producing rule and two arrive only through confinement | FS-CLM-05 | open-defect | interface-specified | critical | unresolved-for-claim | yes |
-| FS-DFT-17 | FS-DFT-16 | No arrival of any floor item to a free person is representable | FS-CLM-06 | open-defect | interface-specified | critical | unresolved-for-claim | yes |
+| FS-DFT-16 | FS-DFT-16 | Five recipient-side floor routes were absent from the executable and prose lifecycle | FS-CLM-05 | eliminated-structurally | implemented-in-assigned-route | critical | resolved-for-claim | no |
+| FS-DFT-17 | FS-DFT-16 | No actual arrival or operational liveness is evidenced for a free-person floor item | FS-CLM-06 | open-defect | interface-specified | critical | unresolved-for-claim | yes |
 | FS-DFT-18 | FS-DFT-16 | Nearly every chapter pins a confinement query | FS-CLM-05 | open-defect | detected | material | unresolved-for-claim | no |
 | FS-DFT-19 | FS-DFT-19 | No adverse ground relation carries an authorship place | FS-CLM-21 | open-defect | interface-specified | material | unresolved-for-claim | no |
 | FS-DFT-20 | FS-DFT-20 | A sympathetic reader concluded the book is a teardown | FS-CLM-37 | open-defect | detected | material | unresolved-for-claim | no |
@@ -3162,11 +3162,11 @@ Residual citations bind every sibling residual pool to these rows under the live
 
 ## Resolution receipts
 
-Every receipt records its eligible gate beside the ledger's standing gate status (passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
+Every receipt records its eligible gate beside the ledger's standing gate status (not-passed): a recorded gate is a binding, not a passage. A receipt exists only where the generated resolution permits one, and it never implies a narrower repair cured a wider defect.
 
 ### FS-RCP-01 — The student clawback is deleted, and the deletion is watched
 
-- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-03 (family FS-DFT-03); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A loss was recorded against a student for a teacher's adjudicated fraud — negative scoring of a person who did nothing.
 - Hostile witness: The old :defect pin held lose(Points, Cira) TRUE for as long as the rule stood.
 - Why it failed: The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.
@@ -3179,7 +3179,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-02 — The placement alarm is keyed on the placement act
 
-- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-05 (family FS-DFT-05); claim FS-CLM-11 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The alarm fired on eligibility rather than on any placement act, so it rang on a released man in his own house.
 - Hostile witness: The old marker's pins held the wrong-subject firing under a :defect directive.
 - Why it failed: err/2 read the eligibility combination instead of a reported placement.
@@ -3192,7 +3192,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-03 — The void now requires a docket entry naming the person
 
-- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-07 (family FS-DFT-07); claim FS-CLM-14 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: Anything recorded as touching a protected item was void — including a person who was never accused of anything.
 - Hostile witness: Jala, never accused and never examined, was voidable through the protected-item route.
 - Why it failed: The voiding rule read the protected-item touch without any docket precondition.
@@ -3205,7 +3205,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-04 — The third door closes on voiding, enacted not disclosed
 
-- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-09 (family FS-DFT-09); claim FS-CLM-36 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: A carried-void, penless person was paid for examinations the same voiding made incapable of counting toward anything.
 - Hostile witness: The pre-guard constitution minted recognition for the voided examiner, and exactly those reward pins flip against it.
 - Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
@@ -3218,7 +3218,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 
 ### FS-RCP-05 — The Esa passage tells the truth about Koa
 
-- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: passed)
+- Defect row: FS-DFT-15 (family FS-DFT-15); claim FS-CLM-19 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
 - What failed: The chapter claimed Koa examined Esa with the credential; the record holds a personhood entry and one documented fact — no judging, no seat, no pen.
 - Hostile witness: Both false clauses, quoted back by a hostile review as the design's own confession.
 - Why it failed: The prose asserted acts the record never held, and no pin guarded the mismatch.
@@ -3229,9 +3229,22 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Residuals: none beyond the affected claim's own scope bound — the family has no residual sibling row
 - Reader mapping: `book-1/05-voiding.md::Koa recorded a finding about Esa`; admissible evidence: executable pins over the current source
 
+### FS-RCP-06 — The recipient-side delivery interface is executable without asserting arrival
+
+- Defect row: FS-DFT-16 (family FS-DFT-16); claim FS-CLM-05 at posture Derived via FS-RTE-01; assurance ceiling Derived; eligible gate gate-a (gate status: not-passed)
+- What failed: Five selected floor actualities lacked recipient-side producing routes in the original source, and the book continued to describe the resulting no-route boundary after the formal family first landed.
+- Hostile witness: The former no-route, two-exception, learning-only, and confinement-only passages made the formal recipient-side family disappear from the reader's account.
+- Why it failed: Executable coverage and claim-bearing prose landed in separate stages, leaving FS-CLM-05 Specified and the structural repair incomplete.
+- The response: Chapter 8 now leads the lifecycle account, chapters 13 and 14 follow its release and failure consequences, Part V and method state the boundary, and the ledger binds those references to the unchanged formal family.
+- What now follows: Each of eats, dwell, healthy, secure, and meets derives only from the exact supplied receipt route with a scope-correct authorised independent witness; alternate-writer and off-roster probes also derive.
+- Proof: `new-book-plans/delivery-receipt.pins.nibli::# FS-CCE-190 counterfactual: with the arrival record and an independent`; negative control: `new-book-plans/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route`
+- What still does not follow: No service offer, accessibility, adequacy, writer authentication, actual-world arrival, performed continuity, completed remedy, recurrence monitoring, future non-recurrence, or institutional liveness follows.
+- Residuals: FS-DFT-17; FS-DFT-18
+- Reader mapping: `book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated.`; admissible evidence: the unchanged delivery statements, 28 executable family pins, provider-independence counterfactual, and approved DLV-B1-v1 prose over the current source
+
 ## Repository scope audit and optional external review
 
-Gate A uses the closed, source-derived repository audit. Scope audits: 42; current qualifying audits: 1. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
+Gate A uses the closed, source-derived repository audit. Scope audits: 43; current qualifying audits: 0. The audit binds the semantic scope, protocol, declared criteria, checker controls, command chain, and Gate-A-applicable finding set. Its evidence ceiling expressly supplies no independent-human, reader-response, external-truth, operational, feasibility, liveness, calibration, or timeless-completeness warrant.
 
 | Audit | Source | Scope digest | Executed | Result | Findings |
 | --- | --- | --- | --- | --- | --- |
@@ -3277,8 +3290,9 @@ Gate A uses the closed, source-derived repository audit. Scope audits: 42; curre
 | FS-SAU-37 | fs-ledger-2026-08-24-obligations-formal-prose-v1 | `9714439e64429eb95aa72aceab5728893e756e8cdfb363b850e273fb1a4b6050` | 2026-08-25T08:18:44Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-38-PENDING | fs-ledger-2026-08-24-obligations-formal-prose-v1 | `82a4c68bc8850b3243bf3c84b6bf5fb2a7fec10f911a2bde9963d4e603552113` | 2026-08-25T14:46:59Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 | FS-SAU-38 | fs-ledger-2026-08-24-obligations-formal-prose-v1 | `82a4c68bc8850b3243bf3c84b6bf5fb2a7fec10f911a2bde9963d4e603552113` | 2026-08-25T17:42:27Z | passed-with-recorded-limits | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
+| FS-SAU-39-PENDING | fs-ledger-2026-08-26-delivery-lifecycle-v1 | `86177746af6daa188be2c670bf9a5d906df3bde34e79695dd2d493aec86c0584` | 2026-08-26T05:36:24Z | pending | FS-DFT-13, FS-DFT-14, FS-DFT-27, FS-DFT-40 |
 
-The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `82a4c68bc8850b3243bf3c84b6bf5fb2a7fec10f911a2bde9963d4e603552113`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
+The protocol is bound at `new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol`, status repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5; mode `repository-adversarial-audit`; external review policy `optional-non-gating`; semantic scope digest `86177746af6daa188be2c670bf9a5d906df3bde34e79695dd2d493aec86c0584`. The historical Darshu/Dhanush/custodian designation is `retired-as-project-gate-dependency` as a project-gate dependency.
 
 External commissions, proposals, and terminal events remain append-only optional evidence. They do not control R7, Gate A, Gate C, Gate E, or publication. Their stricter chronology, conflicts, custody, controls, and public-disposition checks still apply if that optional route is used. Commissions: 0; proposals: 0; terminal events: 0; current-source qualifying optional events: 0.
 

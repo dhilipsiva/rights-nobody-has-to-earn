@@ -58,7 +58,7 @@ return later as ad hoc “new rights” or “new branches.”
 | Are life course, family, care, reproduction, ageing, and death extra classes? | No. Split their direct effects across Class 1 status and legal capacity; Class 2 public care and continuity; Class 3 bodily, reproductive, domestic, family, treatment, and association liberty; Class 4 child, parentage, supported-decision, protection, succession, and end-of-life proceedings; Class 6 public duties; and Class 7 consequential records. A family, caregiver, supporter, age, disability, diagnosis, or residence label cannot stand in for consent, care, capacity, best interests, parentage, adulthood, responsibility, or authority. | Separate cards for each status, liberty, private duty, public continuity route, proceeding, finding, record, and remedy; one common-tier-law age remains to be chosen, and operations remain Book 2. |
 | Are collective and plurality rights an extra class? | No. Split universal individual status and membership effects into Class 1; cultural, linguistic, religious, association, property, and anti-assimilation liberties into Class 3; internal-dissent, customary-law, consultation, consent, and remedy proceedings into Class 4; internal collective choice and the one-general-ballot boundary into Class 5; institutional mandates into Class 6; membership/title/decision records into Class 7; territorially grounded self-government into Class 8; and shared-resource non-destruction into Class 9. Neither `family` nor a new omnibus `collective` predicate may carry these effects. | Separate cards for each direct effect, including historical/territorial basis, individual-rights review, consent-versus-consultation boundary, nonmember services, title continuity, finite decision semantics, and Book 2 administration. |
 | Are ecology, future generations, commons, and non-human animals extra classes? | Ecology and future-condition effects split across Class 1 equality where environmental burdens subordinate people, Class 3 protection from harmful interference, Class 4 challenge and repair, Class 5 compatible democratic policy, Class 6 public and guardian duties, Class 7 scientific/decision records, Class 8 federal and cross-boundary competence, and Class 9 ecological non-destruction. The clean, healthy, and sustainable-environment right is not a material-floor predicate or a guaranteed personal outcome. Future generations and ecosystems are protected interests and conditions, not human `person` or Class-1 holders. Individual sentient-animal welfare has a distinct direct legal effect and is therefore new Class 10; species, populations, and habitat remain Class 9. Liability also splits by direct effect: prevention and cessation do not require fault; an inherently hazardous activity bears strict containment, restoration, and reasonable response-cost liability after causal connection is established; other liability requires adjudicated causal contribution or control; and personal punishment requires separately adjudicated individual culpability and due process. | Separate cards for each environmental-right effect, ecological condition and ceiling, quantitative-standard interface, precaution/non-regression decision, guardian power, participation route, prevention/cessation duty, strict-hazard and contribution/control liability tier, individualized-punishment route, restoration, animal category, welfare limit, permitted lethal/invasive/high-severity use, advocate, inspection, rescue, and remedy. Measurements, models, budgets, husbandry, veterinary operations, staffing, transition, and feasibility remain Book 2. |
-| What counts as delivery evidence? | **Ratified:** `teaches` + `hears` remains a narrow legacy demonstration only. Future delivery uses accessibility-neutral, recipient-side access or receipt evidence with a named authorised writer and challenge route; it must not infer learning, health, belief, or another compelled personal state. No current route is a qualifying general model. | The names, writer authority, challenge route, and evidence of each future delivery family. |
+| What counts as delivery evidence? | **Formalized and prose-landed:** `receives` records the recipient, item, and source. Food, non-carceral shelter, care, material security, and company derive only when an authorised witness for that recipient independently attests the matching item and scope and is distinct from the source. A predeclared alternate uses the same bounded role, and roster membership is not a premise. `teaches` + `hears` remains a narrow legacy demonstration; belief and the liberty of expression deliberately receive no delivery head. Missing receipt invites outreach and challenge, never a non-delivery finding or loss of entitlement. No route proves operation or actual-world arrival. | Preserve the exact writer authority, matching scopes, source separation, off-roster route, alternate, challenge polarity, and the Book 2 operating boundary. |
 | Are accessibility and time classes? | No. Accessibility is a cross-cutting equality condition. The staged T3 path is formal for witnessed record replacement, typed transitive event/record paths, and canonical-current case-bound Court custody. It does not supply metric duration, outside-clock liveness, or temporal limits for other powers. Missing or disputed time evidence may not create or extend restrictive public power or become a personal-time score. A continuity rule may preserve only claimant-supporting status that its independent evidence establishes; the current standing route cannot cure a missing predecessor witness. | Each class's temporal status and any additional power-specific T3 contract. |
 | What stays outside Book 1? | Operations—budgets, staffing, logistics, databases, devices, clocks, and service workflows—remain Book 2. | The evidence and costed operating case that Book 2 must supply. |
 
@@ -118,7 +118,7 @@ mistaken for proof that the current constitution provides the stated result.
 | Class | Question answered | Include / exclude test | Required Book 1 contract |
 | --- | --- | --- | --- |
 | 1. Standing and equal status | Who counts before any other rule applies? | Include personhood, equal protection, non-discrimination, unregistered access, and status correction. Exclude service delivery and office eligibility. | Holder; forbidden preconditions; immediate-access route; challenge/correction; independent check. |
-| 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; authorised recipient-side access/receipt evidence **(future target; legacy `hears` does not qualify)**; breach; interim continuity; remedy; appeal; audit. |
+| 2. Material floor | What minimum condition must be made actually usable without earning it? | Include food, water/sanitation, home/utilities, care, material security, learning/information, and accessible means to use them. Exclude a provider, wage, programme, logistics plan, or a compelled personal state. | Holder; duty-bearer; minimum; accessibility; authorised recipient-side access/receipt evidence; breach; interim continuity; remedy; appeal; audit. The current direct heads cover food, shelter, care, material security, and company; legacy `hears` remains separate, and the wider domain lifecycle is not yet formalized head by head. |
 | 3. Liberty and personal integrity | What interference must public power or another actor not impose? | Include bodily integrity, personal privacy, conscience, expression, association, movement, and family life. Exclude a claim to a particular service, record/data controls, or the procedure for deciding a case. | Protected person/act; prohibited interference; narrow necessity and least-restrictive exception; evidence; independent review; remedy. |
 | 4. Fair process, coercion, and repair | How must an adverse claim, dispute, or coercive act be handled? | Include notice, counsel/advocacy, hearing, evidence burden, impartiality, appeal, repair, and reintegration. Exclude creation of offices and operational case management. | Trigger; evidence; accessible notice; advocate; hearing; least coercion; appeal; repair; end or review condition; temporal status. |
 | 5. Democratic self-government and amendment | What may people decide together? | Include equal political voice, public reasons, ordinary law, constitutional amendment, recall, and rights-compatibility review. Exclude individual adjudication and administrative workflow. | Equal voice; one person, one vote; no earned, scored, or weighted political voice; accessible participation; decision scope; public reasons; authenticated, contestable decision/tally evidence and writer; exact proposal/source change; declared target; independent semantic-effect and compatibility review; redundant and escalating writer/reviewer routes; missing approval or review never counts as approval, while no one writer or reviewer can permanently withhold the route; authenticated effective-version binding; amendment limit; challenge/remedy; temporal status. |
@@ -140,7 +140,7 @@ proposal as non-temporal or T3-unimplemented
 for that power. No class may borrow the custody rule's temporal effect by
 implication.
 
-**Worked legacy pattern—not a general delivery model:**
+**Worked legacy pattern—not the current general delivery model:**
 `teaches($t, $s) & hears($s, $t) -> learn($s)` is the existing two-sided route.
 A provider-side `teaches` fact alone cannot derive `learn`; the rule also requires
 a `hears` fact about the recipient. It ranks neither person and leaves the
@@ -148,12 +148,15 @@ entitlement unconditional. But it is audio-literal, and `learn` names a personal
 outcome rather than neutral receipt. Current rules also do not control who writes
 or validates `hears`.
 
-The author has ruled it a narrow current-kernel example; do not reuse it as a
-template. Future delivery families need accessibility-neutral recipient-side
-evidence of access or receipt—visual, experiential, assisted, or otherwise—plus
-a named authorised writer and challenge controls. They may secure the conditions
-for learning; they may not certify that someone learned or achieved a compelled
-state.
+The author ruled it a narrow current-kernel example, and the later family does
+not reuse it as a template. Current recipient-side routes require `receives`, a
+named authorised witness for the recipient, a matching scope, and separation
+between witness and source. They may secure conditions and conclude receipt for
+their named floor heads; they may not certify belief, expression liberty, health
+as wellness, or another compelled personal state. The wider lifecycle across
+water, utilities, learning/information, mobility, communication, and other
+essentials remains a constitutional requirement whose direct formal heads must
+be stated rather than inferred.
 
 ## Classify the existing coverage map
 
@@ -202,10 +205,11 @@ structural refusal instead limits what *form of rule* may exist across subjects.
    friendship.
 4. **Evidence is not self-certification:** a provider’s assertion cannot alone
    prove that a floor arrived. A record must distinguish service offered,
-   accessible service, receipt, dispute, and correction. Authorised recipient-
-   side access/receipt evidence is a future target; the legacy `teaches` +
-   `hears` route does not meet it because neither the writer nor validation of
-   `hears` is controlled today.
+   accessible service, receipt, dispute, and correction. The current
+   recipient-side family controls the writer, recipient, item, source, scope,
+   and writer-source separation for food, shelter, care, material security, and
+   company. It ships dormant and proves no operation. The legacy `teaches` +
+   `hears` route remains uncontrolled and is not the general model.
 5. **No social score by another name:** recognition remains optional,
    arity-one, non-ranked, and unread by standing, the floor, authority,
    political weight, liberty, remedy, compensation, or allocation. Wages,

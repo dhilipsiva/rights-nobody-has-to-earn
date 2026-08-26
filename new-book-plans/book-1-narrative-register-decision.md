@@ -3,9 +3,10 @@
 # Book 1 Narrative Register Decision
 
 > **Status: author-ratified on 2026-08-08; prose supply amended on
-> 2026-08-20.** The register, trace, location, and evidence rules remain binding.
-> Section 15 supersedes only the author-as-drafter restriction; section 7a records
-> `OL-15-v1` as the current canonical, conforming ordinary-life passage. The dated
+> 2026-08-20 and 2026-08-26.** The register, trace, location, and evidence rules
+> remain binding. Section 15 supersedes only the author-as-drafter restriction;
+> section 7a records `OL-15-v1` as the current canonical, conforming ordinary-life
+> passage; and section 15d records the delivery-lifecycle prose. The dated
 > 2026-08-08 disposition and wording remain visible as history.
 
 ## 1. Decision
@@ -49,21 +50,26 @@ reading that the flatness is chosen rather than awaiting repair.
 ## 3. The deficit, measured
 
 Staying flat is defensible only if the constitution has ordinary life to derive.
-Measured against the shipped record, it mostly does not.
+Measured against the shipped record, it now has routes but no recipient-side
+arrival.
 
-- **Five of the eight floor items have no producing rule** — `eats`, `healthy`,
-  `secure`, `believe`, `meets`. No floor actuality is asserted anywhere in the
-  repository; every true one is derived.
-- **The two that arrive derive only from confinement.** The constitution states
-  the consequence in its own head note: `expresses` and `dwell` are the only two
-  floor rights the design ever actually delivers, both derive only for
-  prisoners, and release returns a person to a general population where the
-  design delivers nothing to anyone.
+- **Five direct recipient-side routes now produce material actualities** —
+  `eats`, `healthy`, `secure`, `meets`, and a non-carceral `dwell` — from a
+  scope-correct receipt written by an authorised witness independent of the
+  source. Teaching plus hearing remains the separate legacy learning route.
+  Every route ships dormant: the record supplies no qualifying receipt or
+  hearing for a cast member.
+- **The record's two actual floor conclusions still derive only from
+  confinement.** `expresses` and `dwell` are true for the supplied prisoners;
+  neither is evidence that a service operated or arrived in the world. Release
+  returns a person to a supplied record with no qualifying recipient-side
+  receipt.
 - **Every `home` and `family` entry in the record names a convicted person**, and
   no free person carries either.
-- **The one non-carceral route to a floor actuality ships dormant.** Teaching
-  plus hearing derives learning, but cast exercise was declined by standing
-  ruling, and the only hearing fact in the repository is a probe.
+- **All six non-carceral routes ship dormant.** The five direct material routes
+  have no supplied qualifying receipt. Teaching plus hearing derives learning,
+  but cast exercise was declined by standing ruling, and the only hearing fact
+  in the repository is a probe.
 - **Every non-carceral derived conclusion is inert.** Recognition is unread by
   decision; movement appears in no rule body; the itemised debt and the audit
   obligation are read by nothing.
@@ -81,10 +87,11 @@ Measured against the shipped record, it mostly does not.
   done
   ```
 
-So the book cannot show ordinary provision, care, or association today **by any
-route**. Fiction is refused here; derivation has almost nothing to show. This
-decision records that as the finding rather than letting the register choice
-appear to have answered it.
+So the book can show how recipient-side evidence would derive a bounded material
+actuality, but it cannot show ordinary provision, care, or association actually
+arriving today. Fiction is refused here; the supplied record exercises none of
+the six routes for a cast member. This decision records that as the finding
+rather than letting the register choice appear to have answered it.
 
 The tracker already pre-commits the right reading and this decision elevates it:
 if the generated spine remains carceral after the constitution broadens, that is
@@ -222,7 +229,7 @@ Markdown line wrapping changed.
 | An accusation, from somewhere, about someone in the house | Generic scene scaffolding under section 4a; it assigns no writer, finder, basis, or record effect | Conforms: the unsupported writer identity is removed, and no closure of `FS-DFT-19` is claimed |
 | An accusation by itself moves nothing, the examination that follows must name its examiners | The multi-signature rule, including its distinctness conjunct, and the absence of a sanction path from an accusation alone | Conforms as restatement |
 | Nothing — no verdict, no panic, no furious official — can reach the food, the warmth, or the mother's care | The anti-sanction firewall; `panic` and `furious official` are negatively named forces, not attributed interior states | Conforms as a bounded restatement |
-| Outside confinement, the supplied record shows no floor item reaching anyone | Chapter 13's “Leaving custody returns a person to a population this design delivers nothing to” and the current shipped delivery verdicts | Conforms: the disclosure is adjacent, says record rather than world, and preserves the confinement bound |
+| Outside confinement, the supplied record shows no floor item reaching anyone | Chapter 13's “Leaving custody returns a person to a supplied record with no non-carceral receipt” and the current dormant delivery verdicts | Conforms: the disclosure is adjacent, says record rather than world, and distinguishes a formal route from actual arrival |
 | The contrast with the society the reader lives in now | Section 4b's expressly permitted present-society contrast | Conforms as rhetorical contrast, not a claim about this design |
 
 **Current disposition:** `OL-15-v1` conforms on form, assertion, trace, arrival,
@@ -233,39 +240,30 @@ no pin or substantive ledger row.
 
 ## 8. Classifying the deficit
 
-The deficit in section 3 is a **formalisation gap inside already-mapped scope**.
-The ordinary-life domains are on the coverage map as ratified-but-unimplemented
-families carrying the Specified posture with its unimplemented marker. It is
-**not** a scope omission and **not** an assurance omission, so it does not
-reopen the scope-and-assurance gate.
+The formalisation gap in section 3 is structurally repaired. The coverage map
+and reviewed ledger now bind the five direct recipient-side routes and legacy
+learning route to prose, pins, and the independence counterfactual. This is
+**not** proof of offer, accessibility, adequacy, operation, actual arrival,
+completed remedy, or future non-recurrence.
 
-It carries the fields an unresolved item requires: its **severity** is that the
-book's ordinary-life account rests on families that are stated and not
-formalised; its **consequence** is that no derived case can show provision,
-care, or association until delivery families land; its **owners** are named in
-section 9; its **closure condition** is the landing of accessibility-neutral,
-recipient-side delivery and receipt families for the floor items that have no
-producing rule; and its **claim restriction** is that no public claim may
-describe the book as showing ordinary social life until then.
+The residual carries the fields an unresolved item requires: its **severity**
+is that the supplied record exercises no recipient-side route for a cast member;
+its **consequence** is that no derived case shows provision, care, or association
+actually arriving; its **owners** are named in section 9; its **closure
+condition** is operational assurance for arrival and liveness, which belongs to
+Book 2; and its **claim restriction** is that no public claim may describe the
+book as proving ordinary social life, completed remedy, or non-recurrence.
 
 The accusation-authorship gap from section 7 joins it: no adverse ground
 relation carries an authorship place.
 
 ## 9. Owners, in the order they can run
 
-Two owners, not one. Assigning the deficit only to the second would leave a live
-tracker item structurally unable to discharge it.
-
-1. **Precondition — the delivery and receipt rule families.** Until a floor item
-   has a producing rule, there is no ordinary case to pin. Their shape is
-   already constrained: accessibility-neutral, recipient-side access or receipt
-   evidence with a named authorised writer and a challenge route; they may
-   secure conditions and may not certify learning, health, belief, or another
-   compelled personal state.
-2. **Consumer — the pinned-case portfolio rebalance.** It can only run
-   afterwards, and its instruction is unchanged: preserve the prisoner as the
-   hardest stress test rather than the default inhabitant, without
-   fictionalising anything.
+The delivery-and-receipt precondition is satisfied. The remaining in-book owner
+is the **pinned-case portfolio rebalance**: preserve the prisoner as the hardest
+stress test rather than the default inhabitant, without fictionalising
+anything. Operational assurance for actual arrival and liveness remains the
+separate Book 2 owner.
 
 ## 10. The reader-balance gate
 
@@ -526,8 +524,58 @@ not manifest rows and did not produce canonical prose edits.
 | `OBL-B1-16` | `book-1/method.md`: block beginning `The mechanism: every relation in the constitution sits in a layer.` | 1,537 | `2db17589f28d3de01df371766288e57ee8fbc4c23766395105d1221ca66e3df1` |
 | `OBL-B1-17` | `book-1/method.md`: block beginning `The non-reciprocal-obligations family is a completed cross-cutting family.` | 1,861 | `9d144831cbd3eec27d92269d9d93d173247e9fee2aa36996a6f0b1a3ebcbfe5f` |
 
+**Current successor note — 2026-08-26:** `DLV-B1-v1` supersedes
+`OBL-B1-08`, `OBL-B1-10`, `OBL-B1-11`, `OBL-B1-12`, and `OBL-B1-15` in
+place. Their bindings above remain the historical approval record. The live
+obligations prose consumer checks the twelve retained `OBL-B1-v1` payloads and
+the complete ten-payload `DLV-B1-v1` successor, including both recomputed
+aggregate bindings. No obligation rule, fact, fixture, query, or verdict changes
+through that successor.
+
 This record canonicalizes only the approved Book 1 prose. It supplies no
 constitutional rule, admitted fact, institutional act, operation, delivery,
 completed remedy, or Gate result. The adjacent formal family, pins, reviewed
 sources, generated reports, and tracker state keep their own evidence and
 verification contracts.
+
+### 15d. `DLV-B1-v1` approval and canonicalization record
+
+- **Identifier:** `DLV-B1-v1`.
+- **Approval:** explicit author approval on 2026-08-26 of the exact displayed
+  candidate.
+- **Supply provenance:** `session-drafted, author-approved`.
+- **Approved-candidate binding:** 25,260 UTF-8 bytes; SHA-256
+  `bcb95d1e9b826fd426a0820a3b9b7c8df4dac9e1fd7e91d02a430da57f6886f3`.
+- **Aggregate convention:** the exact payloads below, in identifier order,
+  joined by one empty line (`LF LF`), with LF line endings, no terminal newline,
+  and no identifier, path, anchor, table, or display scaffolding in the digest.
+- **Change bound:** only mechanical Markdown line wrapping or formatting is
+  permitted without renewed approval. Any substantive wording, meaning, or
+  voice change requires approval of a newly displayed exact version.
+- **Canonical state:** satisfied on 2026-08-26. Every installed payload matches
+  its approved byte count and digest, and the recomputed aggregate matches the
+  approved-candidate binding.
+
+| ID | Target and exact anchor | UTF-8 bytes | SHA-256 |
+| --- | --- | ---: | --- |
+| `DLV-B1-01` | `book-1/08-what-you-are-owed.md`: section `Owed is not the same as delivered` | 5,379 | `2b7b5991c69e6ee6f5c8b2c57f6f328eab4885c8fb40660d6734c9c4eb540f27` |
+| `DLV-B1-02` | `book-1/08-what-you-are-owed.md`: block beginning `The debt says what it is about, and arrival is a separate conclusion.` | 2,925 | `1c36283a3949033d8dbed4100fc58379db46caf86cb5f073a284852ee262f4e7` |
+| `DLV-B1-03` | `book-1/08-what-you-are-owed.md`: closing block beginning `The lifecycle is specified, but it is not operated.` | 1,244 | `0eaa7c900e3945250dc357371537dc3eb085607192f1c0ee60f383c3c3cf1cfa` |
+| `DLV-B1-04` | `book-1/13-the-one-thing-taken.md`: paragraph beginning `Conviction takes movement and nothing else.` | 511 | `7975036c9d09c7ca9272915a34386071a08cf982e3f38376a79a2aba08c3c349` |
+| `DLV-B1-05` | `book-1/13-the-one-thing-taken.md`: section `What leaving costs` | 2,759 | `78f6634729415c4b4f43d6050cdaf6fc76400405d132cbb89d53c31582799688` |
+| `DLV-B1-06` | `book-1/14-when-the-system-notices-it-broke.md`: section `The one that fires on everybody` | 1,819 | `fff58727f9a2ff4b242262dc6d0a51b1cf5b27b9e543a46c2668423a6a14b2af` |
+| `DLV-B1-07` | `book-1/14-when-the-system-notices-it-broke.md`: block beginning `The chain no longer ends there.` | 2,970 | `65931cc892ed84196d4deff2d84a4b2900a56833575436a1b54136fd509a75ec` |
+| `DLV-B1-08` | `book-1/15-the-five-joints.md`: State answer block beginning `The answer is the book's oldest honesty, sharpened.` | 4,099 | `7b8d518161c828b22269fafd950d8ecfe4699cf36814a58292384fb46eaec8ac` |
+| `DLV-B1-09` | `book-1/method.md`: counted-claim block beginning `One of the sweeps deserves its own paragraph` | 1,097 | `0eb3513d83ca9a44b6a73ea539a6632032a78bec2834e104e582d4185cbfcd6e` |
+| `DLV-B1-10` | `book-1/method.md`: block beginning `The delivery-and-receipt family adds one recipient-side evidence relation` | 2,439 | `6c301a235d19332992cf2ad6643b8ae3f47c85488bd1be19cb5f9ac456d638cc` |
+
+This record canonicalizes only the approved Book 1 prose. The family remains a
+formal interface over supplied records: it supplies no offer, accessibility,
+operation, actual-world arrival, completed remedy, recurrence monitoring, future
+non-recurrence, or Gate result.
+
+The opening note and Chapter 11 were re-audited against this payload and receive
+no canonical edit. The opening note already keeps constitutional destination
+separate from service operation, and Chapter 11 already keeps placement-home
+availability, derived shelter, and real housing delivery distinct. Their
+existing boundaries remain accurate under the dormant receipt family.

@@ -12,8 +12,8 @@
 #
 # DEFECT PINS — a large share of this file encodes defects rather than guarantees
 # (do not restate that as a fraction; the last one written here was wrong), and the
-# repairs are tracked. `err(·, Isolation)` on the seven prisoners flips FALSE the
-# moment the isolation marker is repaired or any `meets` fact is ever recorded.
+# repairs are tracked. `err(·, Isolation)` on the prisoners flips FALSE when the
+# isolation marker is repaired or a matching company receipt derives `meets`.
 # The placement-marker defect RESOLVED 2026-08-02: err/2 is now keyed on a
 # placement report (put/3), the Ruk/Lalo pins hold the repair as plain FALSE,
 # and the chapter's middle section was rewritten against it — exactly the
@@ -37,11 +37,9 @@
 :require test "$(grep -F -c '& obliged($reader, $subject) -> obliged($reader, $reader_duty, $reader_standard).' new-book-plans/constitution.nibli)" -eq 1
 :require test "$(grep -F -c 'derived_only("obliged").' new-book-plans/constitution.nibli)" -eq 1
 
-# "Adam, Hano, Lalo, Nando, Don, Kel, Ruk — every one, without exception."
-# ALL SEVEN are pinned deliberately. An earlier draft named four and said "every
-# convicted person in the society, without exception"; Adam, Kel and Lalo were
-# missing and the marker fires on all three. A prose enumeration is only as good
-# as the pins under it, so the enumeration is pinned entry by entry.
+# The prose now states the rule: every prisoner in the supplied record is marked.
+# The full cast remains pinned individually so that statement cannot silently
+# narrow if a receipt or another company-producing route reaches only one case.
 :defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Adam, Isolation).
 # => TRUE
@@ -92,7 +90,7 @@
 ? err(Jala, Isolation).
 # => FALSE
 
-# "nobody anywhere in this society has company on record"
+# The shipped record supplies no matching company receipt for either case.
 ? meets(Hano).
 # => FALSE
 

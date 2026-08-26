@@ -461,11 +461,11 @@ channels. No exceptional channel exists in the current contract.
 - **Current provenance:** No medium, occasion, recipient confirmation, accessibility accommodation, or challenge record is attached.
 - **Required provenance:** Recipient-side access evidence bound to the offered service without inferring a personal outcome.
 - **Cheapest harmful assert:** 1 operation(s): assert `hears(Cira, Bela)`. Cira's learning actuality is certified from the existing teaching entry even though writer control is absent. Structural route: `hears` → `learn`. Evidence: `new-book-plans/constitution.nibli::teaches($t, $s) & hears($s, $t) -> learn($s)`.
-- **Withholding/deletion harm:** 1 operation(s): withhold or delete `hears(Cira, Bela)` after actual receipt. The only non-carceral floor-delivery conclusion does not derive. Structural route: `hears` → `learn`. Evidence: `new-book-plans/constitution.nibli::teaches($t, $s) & hears($s, $t) -> learn($s)`.
+- **Withholding/deletion harm:** 1 operation(s): withhold or delete `hears(Cira, Bela)` after actual receipt. The legacy learning actuality does not derive; the five newer recipient-side routes remain separate and unaffected. Structural route: `hears` → `learn`. Evidence: `new-book-plans/constitution.nibli::teaches($t, $s) & hears($s, $t) -> learn($s)`.
 - **Current challenge route:** No recipient correction or accessible alternative exists; the legacy audio-literal route is not a future template.
 - **Required challenge route:** Recipient contest, correction, outreach on missing receipt, and medium-neutral alternatives.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Specify delivery as a lifecycle`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.`.
 - **Reviewed route fingerprint:** `74985a06768cd9aba07d5edd0304784870ce67e19a0a58e6f1032c3fbfd960d8`.
 
 ### `home`
@@ -706,7 +706,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No recipient correction, outreach, or accessible alternative is attached; the entry is a bare report and the engine authenticates nothing about it.
 - **Required challenge route:** Recipient contest, correction, outreach on a missing receipt, and medium-neutral alternatives that do not require the recipient to act.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Specify delivery as a lifecycle`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.`.
 - **Reviewed route fingerprint:** `831a4f6828235da8359f1c1a63c78926ba874c1edda9dccff95c464c128df655`.
 
 ### `replace`
@@ -803,7 +803,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No teacher or recipient correction route exists.
 - **Required challenge route:** Both parties can contest or correct the activity record without turning it into a personal score.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Specify delivery as a lifecycle`.
+- **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.`.
 - **Reviewed route fingerprint:** `a139a1576872b087975f3a54be6c49c134b7f15d3cca9c4142a9574da75fea8c`.
 
 ### `work`

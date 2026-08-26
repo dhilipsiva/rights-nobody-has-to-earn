@@ -262,10 +262,11 @@ all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
 :refuse reasoning /'prisoner' -> 'owe'/
 all $x: person($x) & ~owe(State, Eats, $x) -> prisoner($x).
 
-# ── [v0.9 2026-08-02] THE FIRST DELIVERY ROUTE, DORMANT. Ground fact persists ─
-# The delivery ruling: teaching that was heard derives learning — the only
-# route to a floor actuality that does not run through a prison. The record
-# ships with no arrival in it, so the route is dormant; dormant is not blind,
+# ── [v0.9 2026-08-02] THE LEGACY LEARNING ROUTE, DORMANT. Ground fact persists ─
+# Teaching that was heard derives learning. It was the first non-carceral route;
+# the later delivery-receipt family adds separately pinned recipient-side routes
+# for other floor actualities without changing this legacy shape. The shipped
+# record holds no hearing, so this route remains dormant; dormant is not blind,
 # and this pair is the proof. The arrival is two-sided (the teaching is on the
 # record above; the hearing is written here) and it rates nobody: Cira learns,
 # and Cira still earns nothing for being taught — delivery is floor, not

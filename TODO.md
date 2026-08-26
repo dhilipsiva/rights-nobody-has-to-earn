@@ -1045,26 +1045,23 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 - [ ] **Rebalance the pinned case portfolio without fictionalising it.**
   - **This item is the consumer, not the fix.** The 2026-08-08 narrative-register
-    ruling measured the deficit and it is constitutional, not editorial: five of
-    the eight floor items have no producing rule; the two floor actualities that
-    arrive derive only from confinement; every `home` and `family` entry names a
-    convicted person; the one non-carceral route to a floor actuality ships
-    dormant; care is a pin-file fixture and work is a single fact; and the
-    franchise and movement derive broadly while nothing reads either. State those
-    as rules, never as counts — the carceral-chapter count moves with the
-    criterion, which is why the counted-claims gate exists:
+    ruling measured the then-current deficit, and the delivery family has now
+    repaired its formal-interface part. Recipient-side routes exist for food,
+    non-carceral shelter, care, material security, and company; legacy learning
+    remains separate; every route ships dormant. The supplied record still
+    derives floor actualities only through confinement, every `home` and `family`
+    entry names a convicted person, care and work remain thin, and the franchise
+    and movement derive broadly while nothing reads either. State the rules,
+    never cast or chapter counts — those move with the criterion, which is why
+    the counted-claims gate exists:
     `for f in book-1/*.pins.nibli; do grep -qE "prisoner|dwell|severe|fit\(|building\(|defend" "$f" || echo "no confinement query: $f"; done`
-  - **Dependency order.** The delivery and receipt rule families are the
-    precondition; this item can only run afterwards. Until a floor item has a
-    producing rule there is no ordinary case to pin, so scheduling this first
-    would leave a live item structurally unable to discharge the deficit.
-    Classified as a formalisation gap inside already-mapped scope — not a scope or
-    assurance omission, and it does not reopen Gate A. Its closure condition is
-    the landing of accessibility-neutral, recipient-side delivery and receipt
-    families for the floor items with no producing rule; until then no public
-    claim may describe the book as showing ordinary social life. The
-    accusation-authorship gap joins it: no adverse ground relation carries an
-    authorship place. See
+  - **Dependency order.** The delivery and receipt precondition is satisfied;
+    this portfolio rebalance is now runnable and remains open. The formal family
+    does not supply cast receipts, ordinary-life cases, operation, actual arrival,
+    or authority to fictionalise them. No public claim may describe the book as
+    showing ordinary social life until this item supplies its own reviewed case
+    coverage. The accusation-authorship gap also remains: no adverse ground
+    relation carries an authorship place. See
     [`new-book-plans/book-1-narrative-register-decision.md`](new-book-plans/book-1-narrative-register-decision.md).
   - Preserve the prisoner as the hardest stress test, not the default inhabitant.
     Cover ordinary provision and care; family/dependency; learning and knowledge;

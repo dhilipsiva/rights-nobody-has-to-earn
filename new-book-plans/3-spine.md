@@ -257,12 +257,16 @@ prove the proposal's effect. The chapter should say so.
 
 ## 5. Writing still blocked on constitution work
 
-- **The delivery gap.** The current source can derive the floor predicates and
-  opaque entitlements from `person`; those are legal conclusions about what is owed,
-  not evidence that food, health care, safety, learning, belief freedom, or any other
-  protected condition arrived. No recipient-side receipt or outcome relation sits
-  downstream. Chapters can describe entitlement and debt, never delivery actuality —
-  state the gap in the prose rather than painting it over.
+- **The delivery interface is formal and dormant.** The current source derives
+  entitlements from `person` and separately derives food, non-carceral shelter,
+  care, material security, or company only from a recipient-side record plus a
+  matching authorised independent witness distinct from the source. Roster
+  membership is not a premise; a predeclared alternate uses the same role. The
+  older teaching-and-hearing route remains separate. Belief and the liberty of
+  expression deliberately receive no delivery head. The supplied record activates
+  none of the non-carceral routes, and no rule proves service operation or
+  actual-world arrival. Chapters must preserve those distinctions rather than
+  painting either the interface or the liveness gap over.
 - **`err/2` fires on a correctly-placed prisoner** — REPAIRED 2026-08-02: the
   marker is keyed on placement reports (`put/3`) and the false positives are gone.
 - **The Article 4 clawback rules refute a published bright line** — RULED

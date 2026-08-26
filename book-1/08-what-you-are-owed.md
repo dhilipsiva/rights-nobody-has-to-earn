@@ -49,76 +49,88 @@ next section.
 
 Now the thing this book will not soften.
 
-Ask whether Bela eats. Not whether Bela is *entitled* to eat — whether Bela eats. The
-answer this design gives is **no**. Does Bela have shelter? No. Is Cira learning? No.
-Is anyone safe, fed, cared for, in company? No, no, no, no — and those four are no for
-every person in this society, convicted or free, without a single exception anywhere.
+Ask whether Bela eats in the record supplied with this book. Not whether Bela is
+*entitled* to eat — whether the record concludes that food reached her. The answer is
+**no**. Does Bela have shelter? No. Is Cira learning? No. Does the record show anyone
+safe, fed, cared for, or in company outside confinement? It does not.
 
-This is not a design in which people are starving. It is a design that **cannot tell
-you whether they are**. The floor is owed with total precision and there is
-no machinery anywhere connecting an obligation to the fact of anything reaching
-anybody. The floor is a complete account of what is due and a silent one about what
-arrives.
+That is not a finding that anybody is hungry, homeless, unsafe, uncared for, or alone.
+It is a statement about what the supplied record can establish. The floor is owed with
+total precision. No cast member carries the recipient-side evidence that would let the
+new arrival routes conclude that any of those things reached them. Nothing here proves
+an actual-world delivery either.
 
-That gap is the largest single thing missing from this society, and it is not hidden
-in an appendix because hiding it would be the end of the book's credibility. Every
-guarantee described in these chapters is a guarantee about *entitlement*. None is a
-guarantee about *provision*. A design can make it impossible to write a law taking
-your food away and still have no idea whether there is any food.
+The design now separates entitlement, arrival, and operation. Entitlement says what
+must be available without a prior test. Arrival requires evidence from the receiving
+side. Operation is everything needed to make the offer, remove barriers, carry the
+thing to the person, keep the route working, answer failure, and perform repair. A
+formal entitlement is not an offer. An offer is not accessible merely because it was
+made. Accessibility and adequacy are not arrival. A recorded arrival is not proof that
+the service system works.
 
-There are two exceptions. They have exactly the same width, and that width is the
-most uncomfortable fact in this chapter.
+For food, shelter, care, material security, and company, the rule now has the same
+narrow shape. A record says that something reached a particular person from a
+particular source. An authorised witness for that person independently attests the
+same thing and the same kind of delivery. The witness cannot be the source. An
+attestation about the wrong person, item, or kind of delivery establishes nothing.
+The provider's own paperwork cannot certify that the provider succeeded.
 
-**Shelter derives for every confined person and for nobody else.** That is the whole
-rule, and both halves of it are the uncomfortable part. Everyone this society has
-convicted is housed — the machinery that decides where convicted people go is a
-piece of the floor that was built out into something that actually runs. And of the
-people it has not convicted, the record can say this about none of them. Not that they
-are unhoused; that it does not know.
+The authorised witness need not be the recipient. If the ordinary writer cannot act,
+a predeclared alternate may carry the same bounded role. Nor does the person have to
+appear on the roster first: independently witnessed food can count as having reached
+someone whom the record has never entered as a person. Help comes first. Reconciliation
+of the record is a separate duty.
 
-**Recorded speech derives the same way: for every confined person and for nobody
-else.** A confined person's words go into the record — that guarantee exists so that
-nobody this society holds can be held silently, and it is the other piece of the
-floor that actually runs. But step outside the walls and it stops. Whether a free
-person's expression ever reaches anyone is a question the record cannot answer, about
-anybody, including the woman whose credibility it went to such lengths to void.
+Care keeps the meaning fixed earlier in this chapter. A valid receipt establishes that
+care reached the person. It does not establish that the person is well, that the care
+was adequate in the world, that consent was valid, or that a provider operated
+lawfully. The route concludes no inner or medical state.
 
-A third piece of machinery now stands beside those two, and it is a different kind
-of thing: not an arrival, a route. Teaching that was heard — both halves on the
-record, the giving and the receiving — delivers learning. No such arrival is recorded
-about anybody, so nothing has changed for Cira yet; the route stands the way the
-placement alarm stands, built and dormant, waiting on the record to say the thing it
-reads. The gap has not narrowed by a single lesson. What changed is that for
-learning — and in this book, for learning alone — the design can say exactly what
-closing the gap would look like, and the saying is a rule rather than a promise. The
-routes for the rest are the building of them, and the building belongs to the book
-about building. A last note about that route belongs with the rest of this chapter's
-honesty: both halves of it are entries somebody writes. The teaching and the hearing
-alike arrive the way everything here arrives, by a hand — so the route is exactly as
-honest as the record is, and what the rule adds is that no arrival is concluded from
-either entry by itself.
+Learning retains its older route: teaching that was heard can derive learning. That
+route remains audio-literal, leaves the writer uncontrolled, and names a personal
+outcome. It demonstrates that giving and receiving must both appear, but it is not the
+model for the newer routes.
 
-Read the shape of those two. The society is certain about the housing and the heard
-words of exactly the people it is punishing, and the two certainties have the same
-boundary: the walls.
+Belief and the liberty of expression deliberately receive no delivery route. Belief
+is on the floor to keep public power out of the mind; certifying it would build the
+instrument that protection refuses. Expression needs a distinction. A confined
+person's words can enter the record, and in the supplied record they do. The liberty
+to express oneself is a limit on power, not a service somebody delivers. Neither
+freedom is turned into a certified personal state.
 
-The floor machinery that currently produces an actual arrival overlaps with
-punishment. Everywhere the society does something *to* people, the detail
-exists. Where it owes something *to* people, the debt is now joined by exact
-public duties to respect, protect, fulfil, continue, and remedy. What remains
-missing is the event those duties cannot manufacture: the food, home, care,
-learning, safety, expression, belief, or company actually reaching a person.
-The asymmetry has narrowed in law and remains in life.
+The supplied record therefore still has a stark shape. Shelter and recorded speech
+derive through confinement. The recipient-side routes for food, shelter, care,
+material security, and company derive nothing because nobody in the cast carries
+their evidence. The learning route also remains dormant. The rulebook now knows how
+specified arrivals could count; the record reports no such arrival.
 
-It is also, now, a line drawn on purpose rather than an accident the book found. The
-same machinery that watches confinement could be pointed at the debts — a rule that
-marks every person whose food never arrived is easy to write. It was written, and
-tested, and refused, because of what the test showed: a record that never holds the
-arrival marks *everyone* — the punished, the free, the never-accused, all flagged
-alike, forever. An alarm that is always right about everybody tells you nothing about
-anybody. So the design watches what it does, and does not yet watch what it owes — not
-because the second is impossible, but because pretending to watch is worse than
-saying plainly that nobody is watching.
+A complete constitutional lifecycle continues beyond that point. What is owed must be
+offered without an earned condition. The offer must be usable and accessible. Arrival
+must be established through authorised recipient-side evidence. A disputed or failed
+route must open challenge without withdrawing the claim. Protection must continue
+while the dispute is heard. Remedy must restore the person, corrective control must
+address the common cause, affected cases must be reconsidered, and recurrence must be
+checked over a declared supplied horizon.
+
+That lifecycle applies as a constitutional demand across food and water, housing and
+utilities, care, learning and information, mobility, communication, and other
+essentials. The present formal arrival heads are narrower: food, shelter, care,
+material security, and company, with the older learning route beside them. Offer,
+accessibility, adequacy, operation, and actual arrival remain distinct, and this
+record proves none of them in the world.
+
+A missing receipt does not reverse any of that. It calls for outreach and a usable
+challenge. It never establishes non-delivery, never ends the entitlement, and never
+authorises punishment or exclusion. The record contains no general finding that a
+person was undelivered merely because an entry is absent.
+
+Nor can recurrence checking promise the future. It can examine only the records
+supplied for its declared horizon. A clean result inside that horizon does not prove
+that the failure never happened outside it or will never happen again.
+
+That is the boundary. The family makes receipt representable and testable. It makes
+nothing arrive, authenticates no writer, staffs no service, completes no remedy, and
+proves no future non-recurrence.
 
 ## Where the protection stops
 
@@ -270,79 +282,67 @@ supporting entry would do.
 
 Then the limits, and they have the shape everything in this chapter has.
 
-**The debt says what it is about, and nothing checks it against arrival.** The record
-names each of the things owed — food, shelter, care, learning, safety, speech, belief,
-company — and owes each of them to every person. That is worth more than a body owing
-*something*, which is what it used to say. It is also less than it sounds. The entry
-naming food and the question of whether anyone ate are separate things in this design,
-and nothing joins them. A body could discharge the obligation entirely and the record
-would read exactly as it reads now.
+**The debt says what it is about, and arrival is a separate conclusion.** The
+record names food, shelter, care, learning, safety, speech, belief, and company,
+and owes each to every person. The debt itself still does not establish that any
+item arrived. The newer receipt rules join selected arrival evidence to selected
+floor actualities; they do not turn the older debt entry into delivery.
 
-The part worth sitting with is that joining them is available. A rule saying *this person
-is owed food and has none* can be written. It is permitted, and what it produces is a
-mark — not a punishment. Absences are read into plenty of things here: a missing
-appeal into a conviction, a missing deceit finding into a shield. What no rule in this
-design does is read a missing *floor right* into anything but a mark, and that
-distinction turns out to be the whole of what protects you here. That rule is not
-written for food.
+That joining is exact. A recipient-side record, an authorised witness for the same
+person, a matching scope, and separation between witness and source must meet in the
+same route. Remove any one and the actuality does not follow. The alternate writer
+carries the same conditions. Roster membership is absent from the rule.
 
-For a single item on the floor it is written. Somebody confined with no company on
-record is marked, and a later chapter is largely about what that marker does and fails
-to do. The rest have nothing. The difference between the one and the rest is not a
-judgement anybody recorded — it is what happens when a rule gets written carefully in
-one place and the general case is never revisited.
+Absence is deliberately not the converse. If no receipt appears, the record does not
+derive that delivery failed. It derives no general *undelivered* finding and it
+withdraws no entitlement. Outreach and challenge must begin elsewhere, through
+positive records and duties that do not let an empty file decide the case.
 
-There is one more thing the non-joining permits, and it is the worst of them, so it
-goes here rather than in a footnote. The record never changes when food arrives — and
-it also never changes when somebody makes it *say* food arrived. Write a rule, plainly
-and in the open: every person eats. Every question this chapter opened with flips its
-answer — Bela eats, everyone eats, nothing anywhere is missing — and no entry about
-any person was falsified, because the lie is not in any entry. The lie is a rule. The
-marker just described, the one watching confined people for missing company, goes
-quiet in the same stroke, since company now arrives for everybody by the same
-penmanship. This was measured, not imagined, and the honest conclusion is the one this
-book keeps reaching about its record from other directions: the admission this chapter
-makes — that the design does not know whether anybody is fed — stays true only while
-the people who review new rules keep asking the question that cuts through. What
-arrival, recorded about which person, sits upstream of this sentence? When the answer
-is the roster of persons and nothing else, the sentence is not delivery. It is the gap
-being painted over.
+The older isolation marker is narrower and stranger. It reads confinement together
+with no company conclusion, so it still fires on every confined person in the
+supplied record. That is not a general delivery monitor and not proof that anybody
+was isolated in the world. It is a conclusion about a category for which the record
+contains no company receipt.
 
-And beneath the painted-over gap sits a stranger failure, worth telling because this
-book found it by looking rather than by being told. The fiat rule above at least adds
-something a reviewer can find. The edit below adds nothing: it rewrites the line that
-owes you food, threading each person's name into the thing they are owed — a change
-of a few characters, in a line that goes on looking exactly like a floor. What it
-does is not what this design's own notes predicted for months. It does not fake the
-delivery. It deletes the promise: the line stops owing anybody anything, silently,
-while sitting there wearing the shape of a guarantee. Measured on a copy the day this
-chapter was expanded, and the note that said otherwise had been wrong the whole time,
-in the direction that flattered the design, which is the direction to distrust.
+There is still a dangerous way to make the record flatter itself. Write a rule saying
+that every person has a selected floor actuality. The corresponding questions turn
+true without any recipient-side record or independent witness. Write that rule for
+company and the isolation marker goes quiet as well. No entry about a particular
+person need be falsified, because the lie is in the rule.
 
-What caught it was this book's habit of writing down what it is owed. The record of
-checks behind this chapter walks one person through every item on the floor and
-records, item by item, that she is still owed it — and the entry for whichever item
-the edit touched goes red at once. Be exact about the size of that: the edit reaches
-one item at a time, so only the promise it names collapses while the rest of the
-floor stands. That is the difference between an attack that empties the floor and one
-that empties a line of it, and only the second is available here. Be precise, too,
-about why the catching matters, because it is the opposite of the comfortable story.
-The guard is not the design's cleverness about its own grammar. The guard is that
-somebody wrote down, in a form re-checked every time, that these people are still
-owed something. A promise nobody records as a promise is a promise that can be
+This remains the review question that cuts through: what arrival, recorded about
+which person, item, source, and scope, sits upstream of this conclusion? When the
+answer is only the roster of persons, the sentence is not delivery. It is the gap
+being painted over. The receipt rules give that question a concrete answer for their
+named heads; they do not make the fiat-rule route impossible.
+
+Beneath the painted-over gap sits a different failure, worth retaining because this
+book found it by looking rather than by being told. An edit can rewrite one line that
+owes a floor item, threading each person's name into the thing they are owed. It does
+not fake delivery. It deletes that promise: the line stops owing anybody the selected
+item while keeping the outward shape of a floor.
+
+What catches it is this book's habit of asking, item by item, what a person is still
+owed. The entry for the altered item goes red while the remaining floor stands. The
+guard is not clever grammar. It is an executable statement that these people are
+still owed this thing. A promise nobody records as a promise is a promise that can be
 deleted quietly.
 
-**Some duties now have legal consequences, but the debt is still not
-collected.** For a finding on an exact named route, the design can identify an
-independent reader, impose an action duty, mark a separately established
-failure to respond, preserve the person's protected position, activate an
-alternate, and name individual and systemic repair. The general floor debt
-still has no machinery that checks performance against arrival. Nor does any
-action duty prove that the bearer acted.
+**The lifecycle is specified, but it is not operated.** The design can now keep
+entitlement, a named public duty, a recipient-side arrival, challenge, interim
+continuity, individual remedy, common-cause correction, affected-case
+re-examination, and recurrence checking in distinct places. The delivery routes
+establish selected actualities only from their exact supplied evidence. The
+obligations family identifies readers and legal consequences for exact findings.
 
-**And naming a debtor is not paying the debt.** Ask whether Bela eats and the
-answer is still no. Every delivery gap this chapter opened with is exactly as
-wide as it was. What changed is that responsibility no longer ends in every
-case at an unread word. That is a precondition for closing a gap and it is not
-closure, and a reader who takes a duty or remedy conclusion for provision has
-been handed something this design has not built.
+No link manufactures the next one. A duty does not prove an offer. An offer does not
+prove accessibility. A missing receipt does not prove failure. A finding does not
+prove that its reader received it. Continuity does not prove that care continued. A
+remedy conclusion does not prove restoration, and recurrence checking covers only
+the supplied records inside its declared horizon.
+
+**And naming the lifecycle is not delivering the floor.** Ask whether Bela actually
+ate, whether a service reached her, or whether a remedy was completed in the world,
+and this book has no evidence from which to answer. What changed is that selected
+arrivals and the legal duties around failure now have exact constitutional
+interfaces. Operation, liveness, and actual arrival remain unproved.

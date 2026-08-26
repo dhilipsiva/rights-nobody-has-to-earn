@@ -1394,19 +1394,19 @@ def negative_controls(source):
     add("unrelated critical defect cannot block loop hazard", lambda s:
         s["loop_hazard_controls"][0]["assessments"][0].update({
             "closure_status": "open-blocking",
-            "defect_refs": ["FS-DFT-16"],
+            "defect_refs": ["FS-DFT-28"],
         }), "claim-scoped component bindings")
     add("unrelated critical defect cannot block bottleneck", lambda s:
         s["bottleneck_dispositions"][0].update({
             "closure_status": "open-blocking",
-            "defect_refs": ["FS-DFT-16"],
+            "defect_refs": ["FS-DFT-28"],
         }), "claim-scoped component bindings")
     add("dependency blocker must bind the exact claim component", lambda s:
         next(d for d in s["dependencies"] if d["id"] == "FS-DEP-28")[
             "structural_satisfiability"
         ].update({
             "satisfiability_status": "unsatisfiable",
-            "defect_refs": ["FS-DFT-16"],
+            "defect_refs": ["FS-DFT-28"],
         }), "claim-scoped component bindings")
     add("bottleneck blocker must bind the exact claim component", lambda s:
         next(b for b in s["bottleneck_dispositions"]
@@ -1464,7 +1464,7 @@ def negative_controls(source):
             "structural_satisfiability"
         ].update({
             "satisfiability_status": "unsatisfiable",
-            "defect_refs": ["FS-DFT-16"],
+            "defect_refs": ["FS-DFT-28"],
         }), "claim-scoped component bindings")
     add("authored closure result", lambda s: s["claims"][0].update({"closure_result": "pass"}))
     add("known defect loses disposition", lambda s: s["defects"][0].pop("defect_disposition"))
@@ -1504,7 +1504,7 @@ def negative_controls(source):
     resolution = LEDGER.compute_resolution(source)
     contract = validate_contract(source, resolution)
     rows = copy.deepcopy(contract[4])
-    next(row for row in rows if row["id"] == "FS-CLM-05")["result"] = "pass"
+    next(row for row in rows if row["id"] == "FS-CLM-06")["result"] = "pass"
     try:
         validate_generated_results(source, rows, resolution)
     except ClosureAuditError:
@@ -1526,12 +1526,12 @@ def negative_controls(source):
         "structural_satisfiability"
     ].update({
         "satisfiability_status": "unsatisfiable",
-        "defect_refs": ["FS-DFT-16"],
+        "defect_refs": ["FS-DFT-17"],
     })
     scoped_contract = validate_contract(
         scoped_dependency, LEDGER.compute_resolution(scoped_dependency)
     )
-    scoped_claim = next(row for row in scoped_contract[4] if row["id"] == "FS-CLM-05")
+    scoped_claim = next(row for row in scoped_contract[4] if row["id"] == "FS-CLM-06")
     if not any("FS-DEP-25 is structurally unsatisfiable" in reason
                for reason in scoped_claim["reasons"]):
         raise ClosureAuditError("scoped unsatisfiable dependency did not block its claim")
@@ -1574,13 +1574,13 @@ def negative_controls(source):
     )
     loop_row["assessments"][0].update({
         "closure_status": "open-blocking",
-        "defect_refs": ["FS-DFT-16"],
+        "defect_refs": ["FS-DFT-17"],
     })
     loop_contract = validate_contract(
         scoped_loop, LEDGER.compute_resolution(scoped_loop)
     )
     loop = next(row for row in loop_contract[5] if row["id"] == "FS-LOP-03")
-    if loop["blocking_claim_refs"] != ["FS-CLM-05"]:
+    if loop["blocking_claim_refs"] != ["FS-CLM-06"]:
         raise ClosureAuditError("scoped loop widened its critical blocker")
     non_scoped_claim = next(
         row for row in loop_contract[4] if row["id"] == "FS-CLM-04"

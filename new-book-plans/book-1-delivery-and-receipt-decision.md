@@ -202,3 +202,14 @@ rules do over supplied records and nothing about the world.
 This ruling creates no predicate, rule, pin, fixture, chapter, defect resolution,
 posture change, receipt, or public claim. Every one of those is a separate act
 with its own gate.
+
+## 11. Historical-state note
+
+**Implementation supersession, 2026-08-26.** The author-ratified ruling above
+remains the historical source for the family and records the state at
+ratification. Its “unimplemented” and future-tense migration statements are not
+the current repository state. The unchanged formal family, executable pins,
+provider-independence counterfactual, and approved `DLV-B1-v1` Book 1 prose are
+now installed. That implementation changes no cast fact and supplies no offer,
+accessibility, adequacy, service operation, actual-world arrival, completed
+remedy, recurrence monitoring, future non-recurrence, or institutional liveness.

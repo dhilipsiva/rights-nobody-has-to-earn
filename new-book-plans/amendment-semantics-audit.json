@@ -6,8 +6,8 @@
   "evidence_role": "exposes_semantic_gap",
   "subprocess_timeout_seconds": 60,
   "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
-  "assertion_surface_contracts_sha256": "dbd3df4e25f3eb0abf8a582af6b9c9e8d8187356763db610ae2704abce7064cb",
-  "record_integrity_assurance_case_sha256": "9e18d8d442b734cc7265959d6a2c2b0f6799619efed61680ede9aff2ffbc15e4",
+  "assertion_surface_contracts_sha256": "bbce3486647a9ff90e2f302e4eb3059852df6acea12cb39d08291a81d59c4577",
+  "record_integrity_assurance_case_sha256": "d682d0ff45f264362af14625f6e8fe2cb208b7e17e6252796c4366244e69ceda",
   "label_verdict_meanings": {
     "blocked_label": "The supplied snapshot derives `false(amendment)` and does not derive `become(amendment, Law)`; this says nothing about whether a source edit occurred.",
     "passing_label": "The supplied snapshot derives `become(amendment, Law)` and not `false(amendment)`; no current rule reads that conclusion or applies source text.",
@@ -634,13 +634,6 @@
       "classification": "revised_and_scoped",
       "reason": "The admission-widening case is accepted by the engine and then rejected by the current assertion-surface pipeline at source/inventory reconciliation; this is repository exposure, not an Article 9 verdict.",
       "future_trigger": "Reassess if vocabulary changes acquire a constitutional approval route, entrenchment, independently reviewed meaning, and complete consequence analysis."
-    },
-    {
-      "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md::amendment machinery can state a source-bound result and does not deploy a new",
-      "current_claim": "The amendment machinery can state a source-bound result, but `become` remains unread and no source transition is applied.",
-      "classification": "revised_and_scoped",
-      "reason": "The audit applies every candidate mutation manually and verifies that label verdict and source effect remain independent; it adds no `become` reader.",
-      "future_trigger": "Revise the chapter, its pins, and this impact if any `become` reader or source-transition rule applies a labelled proposal."
     },
     {
       "artifact_ref": "book-1/method.md::the candidate edits are applied manually by the audit, not",
