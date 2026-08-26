@@ -26,3 +26,7 @@ Cargo.lock
 __pycache__/
 *.pyc
 output/
+combined.md
+combined.pins.nibli
+combined.pins.md
+combined.pins.nibli.md
