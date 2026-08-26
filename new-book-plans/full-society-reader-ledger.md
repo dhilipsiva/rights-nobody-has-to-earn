@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-26-delivery-lifecycle-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-26-delivery-lifecycle-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -28,7 +28,7 @@ Coverage-family drafting states:
 - FS-CVF-015 Delivery and receipt interfaces for the material floor: prose-landed — Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows.
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: prose-landed — Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved.
 
-Canonical source SHA-256: `c3c9a98f5e62b440fe678434d12a2daba2ad5d8503d8c18b3faf33990ccfc9d3`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `2c8a440c02ac4b800457a57e4035b1891494fbb5028c3ab6ae184d260b989851`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
