@@ -270,46 +270,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Specify delivery as a lifecycle.**
-  - Model: entitlement → service offered → accessible service → authorised,
-    recipient-side access/receipt evidence → disputed/failed → interim continuity
-    → remedy → corrective control implemented → recurrence monitored over a declared
-    horizon. No finite record can verify all future non-recurrence.
-  - Apply the lifecycle across food, water, housing, utilities, health/care,
-    learning/information, mobility, communication and other essential systems.
-  - A missing receipt must invite outreach and challenge, never terminate entitlement.
-  - **Book 2 handoff:** staffing, procurement, budgets, logistics, enforcement,
-    routing, maintenance, capacity planning and graceful degradation.
-  - **Ruled 2026-08-18** —
-    [`new-book-plans/book-1-delivery-and-receipt-decision.md`](new-book-plans/book-1-delivery-and-receipt-decision.md).
-    Routes for `eats`, `secure`, `meets`, `healthy` and a non-carceral `dwell`;
-    `learn` keeps its teaching route; `believe` and `expresses` get none. The
-    receipt writer is an authorised writer independent of the source, with a
-    predeclared alternate — an instantiation of the ratified rule that an
-    unavailable *writer* may not obtain a withholding veto, not a new principle.
-    The routes ship dormant. Two findings the ruling records: `healthy` is
-    already glossed as care rather than health, so a care route is consistent
-    with the book; and `believe`'s entitlement line exists to refuse a heresy
-    law, so a delivery route there would build the instrument it was written
-    against.
-  - **Landed: the coverage effects (`65e5da9`) and the formal rules (`55fe5be`).**
-    Eight effect cards and coverage family FS-CVF-015, now `formalized`. Five
-    rules, one new predicate (`receives`), 28 family pins, and the
-    `no-delivery-independence` fixture that executes what `~($w = $src)`
-    prevents — the guard cannot be tested by probe, because derivation is
-    monotone. Strata unchanged at six, chapter order unmoved, the 558-pin
-    chapter/floor baseline untouched, evidence vocabulary 41 → 42.
-  - **Remaining, in order.** Chapter prose — chapter 8 is the primary site and
-    needs reframing, because a design with five dormant routes is materially
-    different from one with none, and its "two exceptions" passage is written
-    for the latter. Then Part V, the ledger's `prose-landed` transition, an audit
-    candidate freeze, Gate A reclosure, and the tracker commit. Gate A is open
-    now with `FS-SAU-29` pending.
-  - **What it does not close.** FS-DFT-16 can resolve once FS-CLM-05 moves from
-    `Specified` to `Derived`. **FS-DFT-17 cannot**: its claim is actual arrival,
-    which is liveness, and liveness is never `Derived`. It stays open and
-    blocking until Book 2 supplies operational assurance in a calibrated
-    envelope. The family makes arrival representable and makes none happen.
 - [ ] **Write the economic, labour, property, and fiscal constitution.**
   - Implement the ratified settlement by direct legal effect; create no omnibus
     `economy` predicate. Cover public, cooperative, commons, mutual, nonprofit,
