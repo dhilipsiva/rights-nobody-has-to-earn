@@ -53,10 +53,15 @@ modes retain their meanings; quick and focused modes are not semantic gates.
 
 Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
-SECONDS` supplies an explicit bounded wait. Scripts 13 and 16 use atomic
-`--refresh-and-check` snapshots with final installed-byte rereads and rollback;
-state-form execution retains its 64 main and 17 counterfactual byte-balanced
-shards under a sliding four-worker, canonical-output, fail-fast scheduler.
+SECONDS` supplies an explicit bounded wait. `verify.sh` incrementally builds and
+executes one `rights-verify` Rust binary; it launches no Python verifier
+subprocesses. Native ledger and closure checks preserve the immutable-input and
+final-reread contract; scripts 13 and 16 remain standalone atomic generators.
+The embedded Nibli engine is compiled from the adjacent source checkout and its
+source revision plus exact verifier bytes are bound into new receipts.
+State-form execution retains its reviewed 64 main and 17 counterfactual
+byte-balanced shards under a bounded four-worker, canonical-output, fail-fast
+scheduler inside the native process.
 
 Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs live at `--check` — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. The same run generates and freshness-checks `full-society-ledger.md` and `full-society-reader-ledger.md`; the latter is structural navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier. `new-book-plans/4-strata.py` is retained wrong on purpose as a method-part exhibit — do not repair it; `18-coverage-contract-migration.py` is a reviewed-source migration helper only, outside the verify chain, and script 13 must validate everything it emits.
 

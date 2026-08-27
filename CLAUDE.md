@@ -1883,11 +1883,14 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   public-minimum pilot templates. They create no private runnable instrument,
   freeze, pilot evidence, threshold value, PDF accessibility attestation, or R6
   availability.
-- `verify.sh` — **the one check.** The full command rebuilds `nibli-pin`
-  unless `NIBLI_PIN` or `NIBLI_SRC` deliberately selects one, records its
-  source and binary identity, validates every generated contract including the
-  state-form source block, and executes the chapter/floor and state-form pins,
-  record, temporal, amendment, placement, reader, and counterfactual suites.
+- `verify.sh` — **the one check.** It incrementally builds and then replaces
+  itself with the single native `rights-verify` binary. That binary embeds the
+  Nibli engine crates from the adjacent source checkout, validates every
+  generated contract including the state-form source block, and executes the
+  chapter/floor and state-form pins, record, temporal, amendment, placement,
+  reader, and counterfactual suites without launching Python verifier
+  subprocesses. New receipts bind the Nibli source revision and exact native
+  verifier bytes.
   `./verify.sh --quick` checks the structural path but skips executable suites;
   `--only` runs one pin suite and `--table` prints the claim table. Those modes
   remain partial and are not semantic commit gates.
@@ -1905,11 +1908,12 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   iteration, but emits no reusable receipt and cannot gate a semantic commit
   under protocol v5. Heavyweight verifier entry points share one Git-common-
   directory kernel lock. Contention exits 75 with sanitised owner details
-  unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Scripts
-  13 and 16 atomically refresh, reread, and check their complete output sets
-  from one immutable-input snapshot; state-form execution uses its fixed
-  64-main/17-counterfactual byte-balanced shards through a sliding four-worker
-  pool with canonical output order and fail-fast worker reaping. The suite
+  unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Native
+ledger and closure checks preserve the immutable-input and final-reread
+contract; scripts 13 and 16 remain standalone atomic generators for their
+complete output sets. State-form execution retains the reviewed 64-main and
+17-counterfactual byte-balanced shards through a bounded four-worker,
+canonical-output, fail-fast native scheduler. The suite
   exits non-zero on the first failure and names the claim that stopped being
   true; do not copy runtimes or suite counts here because governed sources move.
   Its quick path runs the reader-evidence structural check; the full path also

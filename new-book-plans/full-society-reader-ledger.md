@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-26-delivery-lifecycle-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
+Canonical source version: `fs-ledger-2026-08-27-native-verifier-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -28,7 +28,7 @@ Coverage-family drafting states:
 - FS-CVF-015 Delivery and receipt interfaces for the material floor: prose-landed — Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows.
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: prose-landed — Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved.
 
-Canonical source SHA-256: `2c8a440c02ac4b800457a57e4035b1891494fbb5028c3ab6ae184d260b989851`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `8cc959414fd8deb8f0bfc55272eecaa23a0384d052135249b22e8f1768f6851c`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -65,7 +65,7 @@ Canonical source SHA-256: `2c8a440c02ac4b800457a57e4035b1891494fbb5028c3ab6ae184
 | `review_commissions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `scope_audits` | 44 | `327a237887a9bddff42cfa079986ea492f01679bf6a403d4c01b1008fc54a044` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22, FS-SAU-23, FS-SAU-24, FS-SAU-25, FS-SAU-26, FS-SAU-27, FS-SAU-28, FS-SAU-29, FS-SAU-30, FS-SAU-31, FS-SAU-32, FS-SAU-33, FS-SAU-34, FS-SAU-35-PENDING, FS-SAU-35, FS-SAU-36-PENDING, FS-SAU-36, FS-SAU-37-PENDING, FS-SAU-37, FS-SAU-38-PENDING, FS-SAU-38, FS-SAU-39-PENDING, FS-SAU-39 |
+| `scope_audits` | 45 | `602772caa2003860dd696085828e490e8ce4b8e5e337d2e4de03f9c7a2218ce7` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22, FS-SAU-23, FS-SAU-24, FS-SAU-25, FS-SAU-26, FS-SAU-27, FS-SAU-28, FS-SAU-29, FS-SAU-30, FS-SAU-31, FS-SAU-32, FS-SAU-33, FS-SAU-34, FS-SAU-35-PENDING, FS-SAU-35, FS-SAU-36-PENDING, FS-SAU-36, FS-SAU-37-PENDING, FS-SAU-37, FS-SAU-38-PENDING, FS-SAU-38, FS-SAU-39-PENDING, FS-SAU-39, FS-SAU-40-PENDING |
 | `deferred_populations` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `closure_requirement_profiles` | 8 | `af587e64a9f295c7c01909abee8d09f39bae8a5da141d10a280884606eb8d70a` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 40 | `fb7c307abf1cc12ac21c888b424a8aab4deca108522f3e1a9ebd7c8fe2fcc60c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37, FS-CCT-38, FS-CCT-39, FS-CCT-40 |

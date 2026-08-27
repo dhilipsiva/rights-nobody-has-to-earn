@@ -34,7 +34,7 @@ imprisonment and stops there.
 | `new-book-plans/full-society-ledger.md` | the generated full-society domain-and-layer routing report: declared axes, the five layers, domains, split coverage claims, bodies, routes, enum mapping and the stopping rule |
 | `new-book-plans/full-society-ledger.json` | the reviewed canonical full-society source owning stable domain, claim, body, route, external-assumption and envelope IDs; every coverage, assurance, reader and Book 2 view is a projection of it |
 | `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
-| `verify.sh` | the one check |
+| `verify.sh` | the one check: a tiny build shim for the single native `rights-verify` binary |
 
 ```bash
 ./verify.sh          # everything, including pins, executable audits and counterfactuals
@@ -48,6 +48,12 @@ python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
 python3 new-book-plans/12-temporal-assurance.py --check --execute
 ```
 
+`verify.sh` performs Cargo's incremental freshness check and then replaces
+itself with `target/release/rights-verify`. All schema checks, report freshness,
+negative controls, Nibli executions, locking, receipts, and commit gates run in
+that one Rust process; the numbered Python files remain maintenance generators
+and historical parity references, not verifier subprocesses.
+
 Since 2026-08-23, any semantic, executable, verifier, fixture, engine-binding,
 or generated-artifact change requires one fully staged authoritative receipt.
 A following audit, closure, or tracker-only commit uses `--commit-gate` only
@@ -59,14 +65,17 @@ silent full run.
 
 Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
-SECONDS` supplies an explicit bounded wait. Scripts 13 and 16 provide atomic
-`--refresh-and-check`; state-form pins retain 64 main and 17 counterfactual
-byte-balanced shards under a sliding four-worker, canonical-output, fail-fast
-scheduler.
+SECONDS` supplies an explicit bounded wait. The native ledger and closure
+checks preserve the immutable-input/final-reread contract of scripts 13 and 16;
+those scripts still provide standalone `--refresh-and-check` generation.
+State-form execution keeps its reviewed 64 main and 17 counterfactual shards
+under a bounded four-worker scheduler with canonical output and fail-fast
+cancellation between shards.
 
-Use release `nibli-pin` at or after engine commit
-`4cb02aade43b394374c40e661907ad66df3af3fe`; earlier builds may fail to complete
-opaque entitlement checks whose ground subject is itself derived.
+The binary links the Nibli engine crates from the adjacent source checkout, and
+receipt emission binds that source revision and the exact `rights-verify` bytes.
+For standalone manual queries, use release `nibli-pin` at or after engine commit
+`4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`.
 
 It exits non-zero on the first failure and names the claim that stopped being true.
 That includes a new or reclassified rule head, a changed admission or ground-fact

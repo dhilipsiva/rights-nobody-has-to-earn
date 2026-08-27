@@ -1721,10 +1721,12 @@ Prefer it to any check by hand. It exits non-zero on the first failure and names
 claim that stopped being true — including exit 3, the failure that is good news: a
 pinned `:defect` stopped reproducing, and the script names it a REPAIR, not a
 regression, because the response is to drop the marker and rewrite the prose that
-called it a flaw, never to debug the harness. Use the **release** `nibli-pin` at or
-after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. The script builds the adjacent engine unless
-`NIBLI_PIN` or `NIBLI_SRC` deliberately selects one; an explicit binary path is used
-as-is, so record its source commit separately. A stale binary can preserve logical
+called it a flaw, never to debug the harness. The script incrementally builds one
+native `rights-verify` executable whose embedded engine comes from the adjacent
+Nibli source checkout; receipt emission binds both that source revision and the
+exact verifier bytes. For standalone manual queries, use the **release**
+`nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never
+`nibli-host`. A stale binary can preserve logical
 verdicts while violating bounded completion: pre-`5cec800` builds failed ordinary
 full-source opaque queries, and `5cec800` restored those but could still time out when
 standing itself had to traverse the T3 custody chain. `4cb02aa` closes that composed
