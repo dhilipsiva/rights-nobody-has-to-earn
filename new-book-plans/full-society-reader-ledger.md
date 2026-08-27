@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-27-forward-closure-recovery-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-27-forward-closure-recovery-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -28,7 +28,7 @@ Coverage-family drafting states:
 - FS-CVF-015 Delivery and receipt interfaces for the material floor: prose-landed — Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows.
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: prose-landed — Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved.
 
-Canonical source SHA-256: `310fd948d5732f56d9eb4e34bea5d21a30ad9b06dfd2252e9b69cba7ed9c95d1`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `163cb6c802c4ce5255dc885242166caedd5336602add65fb05af5d9905a6b6c8`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 

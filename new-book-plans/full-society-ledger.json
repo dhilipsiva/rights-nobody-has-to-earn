@@ -110632,11 +110632,61 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": null,
+  "closure_record": {
+    "gate": "gate-a",
+    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
+    "candidate_commit_sha": "d020e2e4ea603daff8f10c7187491ba2f1cc2e61",
+    "source_version": "fs-ledger-2026-08-27-forward-closure-recovery-v1",
+    "scope_sha256": "a6447805e08f7d4a4e2682a9ce464a6983930ac0787027828d0fa5b06ab6c504",
+    "envelope_ref": "FS-ENV-01",
+    "audit_cutoff_at_utc": "2026-08-27T19:15:32Z",
+    "scope_audit_ref": "FS-SAU-42",
+    "assurance_record_refs": [
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
+      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
+      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
+      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
+    ],
+    "residual_refs": [
+      "FS-DFT-13",
+      "FS-DFT-14",
+      "FS-DFT-27",
+      "FS-DFT-40"
+    ],
+    "claim_limitations": [
+      {
+        "defect_ref": "FS-DFT-13",
+        "affected_claim_ref": "FS-CLM-19",
+        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
+      },
+      {
+        "defect_ref": "FS-DFT-14",
+        "affected_claim_ref": "FS-CLM-19",
+        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
+      },
+      {
+        "defect_ref": "FS-DFT-27",
+        "affected_claim_ref": "FS-CLM-36",
+        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
+      },
+      {
+        "defect_ref": "FS-DFT-40",
+        "affected_claim_ref": "FS-CLM-19",
+        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
+      }
+    ],
+    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-c9208b6db2b6eb865e6849267d511df1ed52a170d5eb840a5f4d34e71ee8d552.json"
+  },
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "not-passed"
+    "gate_a_status": "passed"
   },
   "closure_requirement_profiles": [
     {
