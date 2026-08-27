@@ -215,7 +215,7 @@ const REVIEW_CRITERIA: [&str; 15] = [
     "resource",
 ];
 const PROTOCOL_STATUS_CONFIRMED: &str =
-    "repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5";
+    "repository-enforced 2026-08-27 -- receipt-aware mechanical-closure protocol v6";
 const SCOPE_AUDIT_POLICY_BASIS: &str =
     "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure";
 const SCOPE_AUDIT_METHOD: &str = "repository-source-derived-adversarial-audit";
@@ -2463,7 +2463,7 @@ fn validate_domain_bucket_references(
     }
 }
 
-/// Dereference exactly the typed fields Script 13 treats as `path::needle`
+/// Dereference exactly the typed fields the ledger checker treats as `path::needle`
 /// evidence. Other strings containing `::` (coverage artifact identifiers,
 /// command text, and internal tokens) deliberately remain syntactic values.
 fn validate_typed_repository_references(
@@ -9177,10 +9177,10 @@ fn synthesize_control_closure(source: &mut LedgerDocument) -> LedgerResult<()> {
         return Ok(());
     }
 
-    // The governed Python checker builds an otherwise complete closure fixture
-    // before applying every closure mutation.  Semantic candidates correctly
-    // carry `closure_record: null`, so native controls must do the same instead
-    // of assuming that the production source is already closed.
+    // The governed checker builds an otherwise complete closure fixture before
+    // applying every closure mutation. Semantic candidates correctly carry
+    // `closure_record: null`, so native controls must do the same instead of
+    // assuming that the production source is already closed.
     let resolution = compute_resolution(source)?;
     let mut residual_refs = source
         .defects
@@ -15103,10 +15103,26 @@ mod tests {
     }
 
     #[test]
-    fn current_source_passes_core_validation_and_exposes_closure() {
-        let projection = closure_projection(&context()).expect("validated closure projection");
-        assert_eq!(projection.gate, "gate-a");
-        assert_eq!(projection.residual_refs.len(), 4);
+    fn current_source_passes_core_validation_and_has_consistent_gate_state() {
+        let ledger = load_and_validate(&context()).expect("validated ledger");
+        match ledger.closure() {
+            Some(projection) => {
+                assert_eq!(projection.gate, "gate-a");
+                assert_eq!(projection.residual_refs.len(), 4);
+                assert_eq!(ledger.document.acceptance_gate.gate_a_status, "passed");
+            }
+            None => {
+                assert_eq!(ledger.document.acceptance_gate.gate_a_status, "not-passed");
+                assert!(matches!(
+                    ledger
+                        .document
+                        .scope_audits
+                        .last()
+                        .map(|audit| audit.result.as_str()),
+                    Some("pending" | SCOPE_AUDIT_RESULT)
+                ));
+            }
+        }
     }
 
     #[test]
@@ -15119,10 +15135,16 @@ mod tests {
     }
 
     #[test]
-    fn closure_receipt_rejects_an_unrecorded_audit_successor() {
+    fn closure_receipt_rejects_an_unrecorded_audit_successor_when_closed() {
         let context = context();
         let mut loaded = load_source(&context).expect("typed ledger source");
         let inputs = load_static_inputs(&context).expect("static inputs");
+        if loaded.source.closure_record.0.is_none() {
+            assert_eq!(loaded.source.acceptance_gate.gate_a_status, "not-passed");
+            validate_current_audit_receipts(&context, &inputs, &loaded.source)
+                .expect("an open candidate has no recorded closure transition to replay");
+            return;
+        }
         let head = Command::new("git")
             .args(["rev-parse", "HEAD"])
             .current_dir(context.root())

@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-27-native-refresh-v1",
+  "source_version": "fs-ledger-2026-08-27-forward-closure-recovery-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -110478,8 +110478,8 @@
   "review_events": [],
   "review_protocol": {
     "protocol_ref": "new-book-plans/full-society-scope-review-protocol.md::# Full-Society Scope-Review Protocol",
-    "protocol_status": "repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5",
-    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5",
+    "protocol_status": "repository-enforced 2026-08-27 -- receipt-aware mechanical-closure protocol v6",
+    "status_line_ref": "new-book-plans/full-society-scope-review-protocol.md::Status: repository-enforced 2026-08-27 -- receipt-aware mechanical-closure protocol v6",
     "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
     "designation": {
       "severity_owner": "Darshu",
@@ -128852,6 +128852,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-2c4f5879c901ca7f5ef3f4852893e91f1dc87ea26f0694efeebc10f70bcbd8ce.json"
+    },
+    {
+      "id": "FS-SAU-42-PENDING",
+      "title": "Forward-only closure recovery pending current-source repository audit",
+      "source_version": "fs-ledger-2026-08-27-forward-closure-recovery-v1",
+      "scope_sha256": "a6447805e08f7d4a4e2682a9ce464a6983930ac0787027828d0fa5b06ab6c504",
+      "protocol_sha256": "2266ac8b2c05c053a622b542517f9a50b4b71a0627d5c04894dd5fa949a3bcbe",
+      "executed_at_utc": "2026-08-27T18:26:39Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [

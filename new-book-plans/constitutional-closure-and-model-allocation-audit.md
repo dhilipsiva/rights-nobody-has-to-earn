@@ -2,7 +2,7 @@
 
 # Constitutional-closure and model-allocation audit
 
-Canonical source: `fs-ledger-2026-08-27-native-refresh-v1`. This file is generated; edit `full-society-ledger.json`, never this report.
+Canonical source: `fs-ledger-2026-08-27-forward-closure-recovery-v1`. This file is generated; edit `full-society-ledger.json`, never this report.
 
 **Verdict boundary:** this is a structural, claim-relative audit. `pass` means only that the reviewed contract for that exact claim survives the declared checks at its existing posture and scope. `block` and `bounded-unresolved` remain visible. No result upgrades posture or establishes delivery, liveness, feasibility, operation, external truth, reader response, constitutional completeness, or Gate A.
 

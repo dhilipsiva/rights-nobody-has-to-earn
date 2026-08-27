@@ -2,8 +2,8 @@
 
 # Full-Society Scope-Review Protocol
 
-> **Status: repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5.**
-> Protocol v5 supersedes v4 for every new candidate. Gate A uses an append-only,
+> **Status: repository-enforced 2026-08-27 -- receipt-aware mechanical-closure protocol v6.**
+> Protocol v6 supersedes v5 for every new candidate. Gate A uses an append-only,
 > source-derived repository audit and a mechanically derived closure record
 > bound to one immutable, content-addressed full-verification receipt. Exact
 > audit, closure, and tracker successors may reuse that full result only while
@@ -12,13 +12,15 @@
 > evidence. It never blocks Gate A, Gate C, Gate E, a book release, or project
 > completion.
 
-Adopting protocol v5 administratively reopens Gate A while its receipt-bound
-audit and closure are pending. This changes no constitutional rule, Book 1
-prose, claim, allocation, census, or operational posture.
+Adopting protocol v6 keeps Gate A administratively open while its receipt-bound
+audit and closure are pending. It also supplies the single exact forward-only
+recovery in section 5 for two published protocol-v5 audits whose closure
+successors were omitted. This changes no constitutional rule, Book 1 prose,
+claim, allocation, census, or operational posture.
 
 This migration uses source version
-`fs-ledger-2026-08-23-verification-receipt-v2`; later schema-v2 candidates bind
-their own new source versions.
+`fs-ledger-2026-08-27-forward-closure-recovery-v1`; later schema-v2 candidates
+bind their own new source versions.
 
 ## 1. Warrant and evidence ceiling
 
@@ -62,7 +64,7 @@ Each `FS-SAU-*` row binds:
 - the checker-owned closure-policy basis; and
 - the byte-exact evidence ceiling.
 
-A protocol-v5 passing row also binds the exact tracked schema-v2 verification
+A protocol-v6 passing row also binds the exact tracked schema-v2 verification
 receipt whose local expanded evidence was present when the row was admitted.
 
 Historical audit rows retain their recorded basis verbatim. A current-source
@@ -135,7 +137,8 @@ Gate A condition five is met mechanically only when a current-source passing
 audit covers the exact criteria, controls, commands, and Gate-A-applicable
 finding set.
 
-Gate A v5 closes through a verified fully staged candidate followed by
+Ordinary Gate A v6 closure proceeds through a verified fully staged candidate
+whose parent already carries a closed Gate A record, followed by
 classified administrative successors. The fully staged candidate has a null
 closure record and
 `not-passed` gate state. Its staged tree, path/mode/blob manifest, verifier
@@ -156,6 +159,36 @@ diff validator, and rerun the structural verifier. The validator derives
 `passed` from the closure record and rejects semantic or audit drift. No
 author ratification, reviewer action, or other human act is required.
 
+Protocol v6 admits one forward-only recovery and no ancestor search. It applies
+only to a new `FS-SAU-42` receipt whose candidate parent is exactly
+`4612d080477efee5df33cc79e6cd953f035696b6`. Before admitting that receipt's
+closure successor, the validator must reconstruct this exact published chain
+from committed Git objects:
+
+- closed anchor `6de1ddc9af5b7265157edc419889aa48e5010503`;
+- candidate `fc22780d3e560c7bb0abd3aab56cfff401d18dc2`, audit successor
+  `52336cc72b65bc0f8e73f035f38c3c44cea1951a`, and receipt
+  `sha256-62edd4996c9928ce47a9f248f3ef19654996b8d655c99302e83f7eecffc4a297.json`;
+  and
+- candidate `7b7852df158ced0a9d67088134474c91daa9355b`, audit successor
+  `4612d080477efee5df33cc79e6cd953f035696b6`, and receipt
+  `sha256-2c4f5879c901ca7f5ef3f4852893e91f1dc87ea26f0694efeebc10f70bcbd8ce.json`.
+
+Each named candidate and audit successor must be a normal single-parent commit;
+the exact closed anchor retains its published merge topology. Both historical
+candidate and audit ledgers must remain open, with a null closure record and
+exact `not-passed` Gate A state. Their protocol-v5 receipts, self-digests,
+source and audit bindings, candidate trees, and exact candidate-to-audit
+transitions must validate from committed bytes; their digest-bound expanded
+evidence must also be present and valid in the shared local evidence cache. The
+anchor must remain closed and passed. The recovery inherits only that anchor's stable
+closure tuple; every audit-specific field comes from the new `FS-SAU-42`
+receipt and audit. A missing object, changed byte, alternate commit, unexpected
+candidate/audit merge, extra epoch, reordered audit prefix, absent local
+evidence, or any other mismatch fails closed. No earlier or later receipt can use this exception, so
+the successful closure consumes it and restores the ordinary rule requiring
+an immediately closed parent for every successor.
+
 ## 6. Going-forward project rule
 
 No project completion gate or publication gate may require recruiting,
@@ -173,8 +206,9 @@ evidence later supports them.
 
 ## 7. Receipt, lock, and reuse contract
 
-Schema v2 receipts are compact, canonical JSON files named by their SHA-256
-self-digest under `new-book-plans/verification-receipts/`. Expanded manifests
+Current protocol-v6 schema-v2 receipts are compact, canonical JSON files named
+by their SHA-256 self-digest under `new-book-plans/verification-receipts/`.
+Expanded manifests
 and transcripts live under the Git common directory so linked worktrees share
 the same evidence cache. Reuse fails closed when that local evidence is absent;
 it never claims the digest alone reproduces or independently authenticates the
@@ -228,6 +262,11 @@ byte-identical heavyweight inputs plus a narrowly revalidated administrative
 delta, not byte identity of the whole successor tree and not an exact or
 hermetic execution environment.
 
+Protocol-v5 receipts are historical inputs, not current receipts. They are
+accepted only at the two exact paths and commits named by the section-5
+forward-recovery validator. No version downgrade, general compatibility mode,
+or second recovery path follows.
+
 The only accepted schema-v1 receipt is the historical tuple:
 
 - candidate `e0e0ca1a09dc8bceaac95f29ab5f1afdc9795bb5`;
@@ -240,7 +279,16 @@ That exact allowlist preserves the earlier closure without upgrading its
 evidence. Every later candidate requires schema v2; omission of a schema cannot
 downgrade a new receipt.
 
-## 8. Superseded protocol-v4 record
+## 8. Superseded protocol records
+
+Protocol v5's status remains historical evidence, not a current instruction:
+
+> **Status: repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5.**
+> Gate A closed only through the exact audit, closure, and optional tracker
+> successors to one schema-v2 receipt-bound candidate. No intervening
+> unclassified commit was permitted.
+
+### Protocol v4
 
 The following text preserves the protocol-v4 status and closure rule as
 historical context, not current instructions:

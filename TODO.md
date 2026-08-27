@@ -262,7 +262,7 @@ power population landed through the staged family commits, with the final
 formal-transition batch at `7e5b5f6`. The repository adversarial audit landed at `a8d6fd5`; schema v6 and
 mechanical-closure candidate `2aeca61` remove the remaining human-act
 dependency, and Gate A closed mechanically under protocol v4 at `405e480`.
-Protocol v5's receipt migration records current Gate A state only in the
+Protocol v6's receipt migration records current Gate A state only in the
 canonical ledger; this historical foundation summary does not override it.
 
 ### Expansion phase 2 — Specify the comprehensive constitution
@@ -1704,9 +1704,9 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./verify.sh --table         # emit the claim-to-query table extracted from the pins
 ```
 
-**Current verifier rule, superseding the historical command notes above on
-2026-08-23.** Any semantic, executable, verifier, fixture, engine-binding, or
-generated-artifact candidate is fully staged and receives one `./verify.sh
+**Current verifier rule, protocol v6, superseding the historical command notes
+above on 2026-08-27.** Any semantic, executable, verifier, fixture,
+engine-binding, or generated-artifact candidate is fully staged and receives one `./verify.sh
 --emit-receipt new-book-plans/verification-receipts` run.
 Full already contains the quick path. Only its exact audit, closure, and tracker
 successors may reuse it through the named `--commit-gate` transition while the
@@ -1716,6 +1716,12 @@ silent full run. Heavyweight entry points share one Git-common-directory lock;
 contention exits 75 unless an explicit bounded `--wait-for-lock SECONDS` is
 supplied. The older timings, suite inventory, and v1 workflow remain
 historical measurements, not current commit instructions.
+
+The only exception is the exact `FS-SAU-42` forward recovery defined in section
+5 of `new-book-plans/full-society-scope-review-protocol.md`. It validates the
+two named historical v5 receipt/audit epochs and the named closed anchor from
+committed bytes, requires their digest-bound local evidence, performs no
+ancestor search, and is consumed by its successful closure.
 
 Prefer it to any check by hand. It exits non-zero on the first failure and names the
 claim that stopped being true — including exit 3, the failure that is good news: a
@@ -1733,8 +1739,8 @@ standing itself had to traverse the T3 custody chain. `4cb02aa` closes that comp
 boundary, so a green pin result alone does not establish engine freshness. **Gate on
 the verifier's exit status, never on its output**: piping to `tail` swallows the exit, and `echo $?`
 followed by `&&` gates on the echo — both shapes shipped a red commit on 2026-08-02.
-The pre-v5 safe chain was `./verify.sh > /dev/null 2>&1 && git commit …`.
-That shell-shape lesson still applies, but protocol v5 uses `--emit-receipt` for
+The pre-receipt safe chain was `./verify.sh > /dev/null 2>&1 && git commit …`.
+That shell-shape lesson still applies, but protocol v6 uses `--emit-receipt` for
 the semantic commit and the exact named `--commit-gate` for each permitted
 administrative successor.
 

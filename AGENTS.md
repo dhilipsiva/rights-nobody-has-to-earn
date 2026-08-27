@@ -36,8 +36,8 @@ Run from the repository root:
 ./verify.sh --refresh constitutional-closure
 ```
 
-**Superseding commit rule, 2026-08-23.** A semantic, executable, verifier,
-fixture, engine, or generated-artifact change requires one fully staged
+**Superseding commit rule, protocol v6 (2026-08-27).** A semantic, executable,
+verifier, fixture, engine, or generated-artifact change requires one fully staged
 `--emit-receipt` full run. Do not run quick immediately before that unchanged
 full run. Only the exact following audit, closure, and tracker administrative
 successors may use `--commit-gate`, and only while the receipt's heavyweight
@@ -45,6 +45,12 @@ dependency manifest is byte-identical and their transition-specific structural
 validators pass. Missing local evidence or any unexpected delta fails closed
 without silently launching a full run. Existing default, quick, only, and table
 modes retain their meanings; quick and focused modes are not semantic gates.
+The sole exception is the exact, source-bound `FS-SAU-42` forward recovery
+defined in section 5 of
+`new-book-plans/full-society-scope-review-protocol.md`; it validates the two
+named historical v5 receipt/audit epochs and closed anchor from committed
+bytes, requires their digest-bound local evidence, admits no search or alternate
+history, and is consumed by its successful closure.
 
 Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
@@ -79,13 +85,13 @@ predecessor. These are artifact checks over visible normal first-parent Git
 history only: they neither prove resistance to rewritten Git history nor attest
 to external truth.
 
-Run script 17 before script 13. It checks the source-digest-bound
+Run the native power-manifest check before the native ledger check. It checks the source-digest-bound
 full-society power census: 237 reviewed source entries, comprising 209
 card-required powers, 1 cross-power contract template, 19 explicit
 refusals or limits, and 8 narrow current-
 formal crosswalks. The census is an inventory prerequisite only. It creates no
 FS-POW contract card, lawful holder, operation, assurance, or Gate A result.
-Script 13 now checks the completed source-derived population: 210 actual
+The native ledger check covers the completed source-derived population: 210 actual
 legal-effect cards, 1 cross-power temporal template, 19 refusal or limit rows,
 8 formal dispositions, and 210 power-bound allocations. Completion removes
 only the powers deferral. Gate A condition five is met by the current-source repository adversarial
@@ -93,7 +99,7 @@ audit. Gate A closes through a checker-derived record bound to an immutable
 verified candidate; no human act is required. External human review is optional
 evidence and no project gate or publication depends on it.
 
-Run script 16 after script 13. It computes the claim-scoped constitutional-
+Run the native constitutional-closure check after the native ledger check. It computes the claim-scoped constitutional-
 closure and model-allocation projection from the reviewed canonical source and
 checks `constitutional-closure-and-model-allocation-audit.md` plus its watched-
 failing mutations. Its `pass`, `block`, and `bounded-unresolved` results are

@@ -475,7 +475,7 @@ pub(crate) struct Validation {
 
 /// One consequential enum value projected from the typed reader contract.
 ///
-/// Script 13 combines these entries with the corresponding projections from
+/// The ledger checker combines these entries with the corresponding projections from
 /// the other reviewed sources. Keeping the field name separate from the value
 /// preserves its exact `(source_file, field, value)` mapping contract without
 /// asking that consumer to walk JSON.
@@ -15120,7 +15120,7 @@ fn reader_enum_inventory(source: &ReaderEvidenceSource) -> BTreeSet<ReaderEnumEn
 }
 
 /// Load and validate reader evidence once, then return only the typed fields
-/// needed by script 13's native sibling-enum and alignment checks.
+/// needed by the ledger's native sibling-enum and alignment checks.
 pub(crate) fn load_validated_reader_evidence(
     context: &Context,
     snapshot: InputSnapshot<'_>,
@@ -15154,7 +15154,7 @@ pub(crate) fn load_validated_reader_evidence(
     })
 }
 
-/// Apply script 13's R6/FS-CLM-37 alignment rules without traversing the
+/// Apply the ledger's R6/FS-CLM-37 alignment rules without traversing the
 /// reader source as a generic JSON value.
 pub(crate) fn validate_reader_evidence_alignment(
     reader: &ReaderLedgerProjection,

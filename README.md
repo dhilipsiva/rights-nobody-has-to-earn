@@ -66,14 +66,20 @@ that one Rust process. Native fingerprint and governed refresh modes use the
 same binary; numbered Python verifier files remain historical parity references,
 not workflow subprocesses.
 
-Since 2026-08-23, any semantic, executable, verifier, fixture, engine-binding,
-or generated-artifact change requires one fully staged authoritative receipt.
+Under protocol v6 (2026-08-27), any semantic, executable, verifier, fixture,
+engine-binding, or generated-artifact change requires one fully staged authoritative receipt.
 A following audit, closure, or tracker-only commit uses `--commit-gate` only
 when the receipt's heavyweight dependency manifest is byte-identical and the
 transition-specific structural validator passes. Missing local evidence, a
 merge, an intervening unclassified commit, or any unexpected path, mode,
 engine, environment, or input change fails closed; the gate never launches a
 silent full run.
+
+One exact `FS-SAU-42` forward recovery is defined by the scope-review protocol
+for two already-published v5 audit epochs whose closure successors were
+omitted. It accepts only the named commits, receipts, closed anchor, committed
+bytes, and digest-bound local evidence; it neither searches history nor
+establishes a reusable compatibility path.
 
 Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock

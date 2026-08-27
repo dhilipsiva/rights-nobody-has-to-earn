@@ -1578,10 +1578,10 @@ provenance, privacy, and challenge gaps remain owned by the future justice
 interface rather than being closed by this audit.
 
 **The full-society domain-and-layer ledger is generated and verifier-enforced
-at stage 1, enacted 2026-08-09.** `new-book-plans/13-full-society-ledger.py`
-validates the reviewed canonical source `full-society-ledger.json` and renders
+at stage 1, enacted 2026-08-09.** The native ledger module validates the
+reviewed canonical source `full-society-ledger.json` and renders
 `full-society-ledger.md` plus the structural navigation projection
-`full-society-reader-ledger.md`; `verify.sh` runs its `--check` as a structural
+`full-society-reader-ledger.md`; `verify.sh` runs it as a structural
 step that also passes under `--quick`. The reader projection is not reader
 evidence: it supplies no R6 result, comprehension finding, accessibility
 validation, reader-suitability claim, Gate C evidence, or route availability. The source declares the named axes and the
@@ -1634,7 +1634,7 @@ projection remains refused.
 
 **The full-society public-power source census is landed
 (2026-08-13).** `new-book-plans/full-society-power-source-manifest.json`,
-checked by `17-full-society-power-source-manifest.py` before script 13 in both
+checked by the native power-manifest module before the native ledger module in both
 quick and full verification, binds the exact inspected source revision and
 eight source digests. Its 237 rows keep direct legal effects at source grain:
 209 require later power cards, 1 is a cross-power temporal-contract template, 19 are explicit refusals or limits, and 8
@@ -1750,8 +1750,8 @@ it beside its four named sites. No scenario record creates a predicate,
 rule, remedy, or claim.
 
 **The constitutional-closure and model-allocation audit is enacted
-(2026-08-13).** `new-book-plans/16-constitutional-closure.py` consumes the
-reviewed full-society source after script 13 validates it, generates
+(2026-08-13).** The native constitutional-closure module consumes the reviewed
+full-society source after the native ledger module validates it, generates
 `new-book-plans/constitutional-closure-and-model-allocation-audit.md`, and
 checks the projection and its watched-failing mutations in both quick and full
 `verify.sh`. It computes each claim's `pass`, `block`, or
@@ -1764,8 +1764,8 @@ and establishes no delivery, liveness, feasibility, operation, or Gate A
 closure. The audit may therefore be complete while claims remain blocked or
 bounded-unresolved and while Gate A remains not passed.
 
-**Supersession note, 2026-08-23.** The following Stage 4 paragraphs are the
-preserved protocol-v4 historical record. Protocol v5 supersedes their
+**Supersession note, 2026-08-27.** The following Stage 4 paragraphs are the
+preserved protocol-v4 historical record. Protocol v6 supersedes their
 current-audit and commit-sequencing statements for every new candidate;
 current Gate A state is derived from `full-society-ledger.json`, not from the
 historical prose below. The exact v1 closure remains accepted only by the
@@ -1872,14 +1872,15 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   lands; update it if partly done. Book 2 remains inactive until Book 1 — First
   Edition actually ships at Gate C.
 - `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and use the native verifier's generation path, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs during native verification — so refresh it when either bound decision changes, and expect its enum-mapping closure to fail when a sibling adds a reviewed enum value with no mapping row. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact through `./verify.sh --quick`; execute the complete semantic suites through `./verify.sh`. Script 19's native port checker-owns the exact state-form source block and runs structurally in both quick and full verification; its dedicated pin suite and watched source-review mutation execute only in the full path. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries. Two historical utilities are deliberately outside the native verify chain: `4-strata.py` is **retained wrong on purpose** as the method part's tooling-blindness exhibit — nothing consumes it, its parser disagrees with the engine by design, and it must not be repaired; every real figure comes from the embedded Nibli engine. `18-coverage-contract-migration.py` is a reviewed-source migration helper that rewrites one exact source-family prefix of `full-society-ledger.json` to the current ledger schema; it is not an assurance route, and the native ledger checker must validate everything it emits.
-- `new-book-plans/reader-evidence.json`, `14-reader-evidence.py`, and
-  `reader-evidence.md` — the reviewed source, validator/generator, and generated
-  report for the dormant reader-evidence contract. The JSON owns exact
+- `new-book-plans/reader-evidence.json` and `reader-evidence.md` — the reviewed
+  source and generated report for the native dormant reader-evidence contract.
+  The numbered Python file is retained only as a historical parity reference.
+  The JSON owns exact
   reader-study states and eventual rule values; prose references its stable
   records and never duplicates threshold values.
-- `new-book-plans/15-pilot-reader-artifacts.py` and
-  `new-book-plans/reader-evidence-pilot/` — the deterministic HTML/EPUB
-  snapshot builder and
+- `new-book-plans/reader-evidence-pilot/` — inputs for the native deterministic
+  HTML/EPUB snapshot builder. The numbered Python file is retained only as a
+  historical parity reference. These are the
   public-minimum pilot templates. They create no private runnable instrument,
   freeze, pilot evidence, threshold value, PDF accessibility attestation, or R6
   availability.
@@ -1894,8 +1895,8 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   `./verify.sh --quick` checks the structural path but skips executable suites;
   `--only` runs one pin suite and `--table` prints the claim table. Those modes
   remain partial and are not semantic commit gates.
-  **Superseding commit rule, 2026-08-23:** stage every semantic, executable,
-  verifier, fixture, engine-binding, or generated-artifact change and run one
+  **Superseding commit rule, protocol v6 (2026-08-27):** stage every semantic,
+  executable, verifier, fixture, engine-binding, or generated-artifact change and run one
   `./verify.sh --emit-receipt new-book-plans/verification-receipts`. Full
   already includes quick, so do not precede it with quick on unchanged bytes.
   Only the exact following audit, closure, and tracker successors may use
@@ -1906,7 +1907,11 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   environment, merge, or intervening commit fails closed without a silent full
   run. Ordinary `./verify.sh` retains its full validation semantics for
   iteration, but emits no reusable receipt and cannot gate a semantic commit
-  under protocol v5. Heavyweight verifier entry points share one Git-common-
+  under protocol v6. The sole exception is the exact source-bound `FS-SAU-42`
+  forward recovery in section 5 of the scope-review protocol. It validates the
+  two named historical v5 receipt/audit epochs and closed anchor from committed
+  bytes, requires their digest-bound local evidence, performs no ancestor
+  search, and is consumed by its successful closure. Heavyweight verifier entry points share one Git-common-
   directory kernel lock. Contention exits 75 with sanitised owner details
   unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Native
 ledger and closure checks preserve the immutable-input and final-reread

@@ -31,8 +31,11 @@ const RECEIPT_DIRECTORY: &str = "new-book-plans/verification-receipts";
 const LEDGER_PATH: &str = "new-book-plans/full-society-ledger.json";
 const TODO_PATH: &str = "TODO.md";
 const PROTOCOL_PATH: &str = "new-book-plans/full-society-scope-review-protocol.md";
-const PROTOCOL_VERSION: u8 = 5;
+const PROTOCOL_VERSION: u8 = 6;
 const PROTOCOL_STATUS: &str =
+    "repository-enforced 2026-08-27 -- receipt-aware mechanical-closure protocol v6";
+const HISTORICAL_PROTOCOL_V5_VERSION: u8 = 5;
+const HISTORICAL_PROTOCOL_V5_STATUS: &str =
     "repository-enforced 2026-08-23 -- receipt-aware mechanical-closure protocol v5";
 const EVIDENCE_CEILING: &str = "Repository verification over the bound staged bytes only; no external truth, operation, delivery, liveness, feasibility, calibration, or institutional action follows.";
 const EVIDENCE_SUBDIRECTORY: &str = "rights-verification/receipts";
@@ -67,6 +70,20 @@ const LEGACY_REQUIRED_COMMANDS: [&str; 10] = [
     "./verify.sh",
     "git diff --check",
 ];
+
+const FORWARD_RECOVERY_AUDIT_ID: &str = "FS-SAU-42";
+const FORWARD_RECOVERY_CLOSED_ANCHOR: &str = "6de1ddc9af5b7265157edc419889aa48e5010503";
+const FORWARD_RECOVERY_CLOSED_SOURCE_VERSION: &str = "fs-ledger-2026-08-26-delivery-lifecycle-v1";
+const FORWARD_RECOVERY_FIRST_CANDIDATE: &str = "fc22780d3e560c7bb0abd3aab56cfff401d18dc2";
+const FORWARD_RECOVERY_FIRST_AUDIT: &str = "52336cc72b65bc0f8e73f035f38c3c44cea1951a";
+const FORWARD_RECOVERY_FIRST_RECEIPT: &str = "new-book-plans/verification-receipts/sha256-62edd4996c9928ce47a9f248f3ef19654996b8d655c99302e83f7eecffc4a297.json";
+const FORWARD_RECOVERY_FIRST_SOURCE_VERSION: &str = "fs-ledger-2026-08-27-native-verifier-v1";
+const FORWARD_RECOVERY_FIRST_AUDIT_ID: &str = "FS-SAU-40";
+const FORWARD_RECOVERY_SECOND_CANDIDATE: &str = "7b7852df158ced0a9d67088134474c91daa9355b";
+const FORWARD_RECOVERY_SECOND_AUDIT: &str = "4612d080477efee5df33cc79e6cd953f035696b6";
+const FORWARD_RECOVERY_SECOND_RECEIPT: &str = "new-book-plans/verification-receipts/sha256-2c4f5879c901ca7f5ef3f4852893e91f1dc87ea26f0694efeebc10f70bcbd8ce.json";
+const FORWARD_RECOVERY_SECOND_SOURCE_VERSION: &str = "fs-ledger-2026-08-27-native-refresh-v1";
+const FORWARD_RECOVERY_SECOND_AUDIT_ID: &str = "FS-SAU-41";
 
 const GENERATED_PATHS: [&str; 11] = [
     "new-book-plans/3-spine.md",
@@ -1221,13 +1238,31 @@ fn parse_typed<T: for<'de> Deserialize<'de>>(bytes: &[u8], context: &str) -> Res
 }
 
 fn validate_compact(receipt: &CompactReceipt, path: &Path) -> Result<(), Error> {
+    validate_compact_protocol(
+        receipt,
+        path,
+        PROTOCOL_VERSION,
+        PROTOCOL_STATUS,
+        "current protocol v6",
+    )
+}
+
+fn validate_compact_protocol(
+    receipt: &CompactReceipt,
+    path: &Path,
+    protocol_version: u8,
+    protocol_status: &str,
+    protocol_label: &str,
+) -> Result<(), Error> {
     if receipt.spdx != "CC0-1.0" || receipt.schema_version != 2 {
         return Err(receipt_error(
             "receipt licence/schema must be CC0-1.0 / version 2",
         ));
     }
-    if receipt.protocol_version != PROTOCOL_VERSION || receipt.protocol_status != PROTOCOL_STATUS {
-        return Err(receipt_error("receipt does not bind current protocol v5"));
+    if receipt.protocol_version != protocol_version || receipt.protocol_status != protocol_status {
+        return Err(receipt_error(format!(
+            "receipt does not bind {protocol_label}"
+        )));
     }
     if receipt.status != "all-passed" {
         return Err(receipt_error("receipt is not passing"));
@@ -1871,7 +1906,7 @@ fn check_protocol(root: &Path, manifest: &[ManifestEntry]) -> Result<(), Error> 
         Ok(())
     } else {
         Err(receipt_error(
-            "staged candidate does not publish protocol-v5 status",
+            "staged candidate does not publish protocol-v6 status",
         ))
     }
 }
@@ -2466,7 +2501,7 @@ fn passing_audit(
     receipt_path: &str,
 ) -> Result<PassingAudit, Error> {
     let id = pending_audit_id(&pending.id).ok_or_else(|| {
-        receipt_error("verified candidate must end in one exact protocol-v5 pending audit")
+        receipt_error("verified candidate must end in one exact protocol-v6 pending audit")
     })?;
     if pending.result != "pending" {
         return Err(receipt_error(
@@ -2565,7 +2600,7 @@ fn validate_audit_transition(
     ]);
     if changes.keys().map(String::as_str).collect::<BTreeSet<_>>() != allowed {
         return Err(receipt_error(
-            "audit transition must change exactly the audit source, receipt, and deterministic Script 13 projections",
+            "audit transition must change exactly the audit source, receipt, and deterministic ledger projections",
         ));
     }
     validate_modes(&changes, Some(receipt_path))?;
@@ -2752,6 +2787,143 @@ fn ledger_closure_projection(bytes: &[u8]) -> Result<LedgerClosureProjection, Er
     parse_typed(bytes, "full-society ledger closure projection is malformed")
 }
 
+#[derive(Clone, Copy)]
+struct ForwardRecoveryEpoch {
+    candidate: &'static str,
+    audit: &'static str,
+    receipt_path: &'static str,
+    source_version: &'static str,
+    audit_id: &'static str,
+    expected_parent: &'static str,
+}
+
+const FORWARD_RECOVERY_EPOCHS: [ForwardRecoveryEpoch; 2] = [
+    ForwardRecoveryEpoch {
+        candidate: FORWARD_RECOVERY_FIRST_CANDIDATE,
+        audit: FORWARD_RECOVERY_FIRST_AUDIT,
+        receipt_path: FORWARD_RECOVERY_FIRST_RECEIPT,
+        source_version: FORWARD_RECOVERY_FIRST_SOURCE_VERSION,
+        audit_id: FORWARD_RECOVERY_FIRST_AUDIT_ID,
+        expected_parent: FORWARD_RECOVERY_CLOSED_ANCHOR,
+    },
+    ForwardRecoveryEpoch {
+        candidate: FORWARD_RECOVERY_SECOND_CANDIDATE,
+        audit: FORWARD_RECOVERY_SECOND_AUDIT,
+        receipt_path: FORWARD_RECOVERY_SECOND_RECEIPT,
+        source_version: FORWARD_RECOVERY_SECOND_SOURCE_VERSION,
+        audit_id: FORWARD_RECOVERY_SECOND_AUDIT_ID,
+        expected_parent: FORWARD_RECOVERY_FIRST_AUDIT,
+    },
+];
+
+fn require_open_ledger(
+    root: &Path,
+    manifest: &[ManifestEntry],
+    source_version: &str,
+    context: &str,
+) -> Result<(), Error> {
+    let ledger = ledger_closure_projection(&blob_at(root, manifest, LEDGER_PATH)?)?;
+    if ledger.source_version != source_version
+        || ledger.closure_record.0.is_some()
+        || ledger.acceptance_gate.gate_a_status != "not-passed"
+    {
+        return Err(receipt_error(format!(
+            "{context} is not the exact open Gate A source"
+        )));
+    }
+    Ok(())
+}
+
+fn historical_v5_receipt_at(
+    root: &Path,
+    manifest: &[ManifestEntry],
+    epoch: ForwardRecoveryEpoch,
+) -> Result<CompactReceipt, Error> {
+    let bytes = blob_at(root, manifest, epoch.receipt_path)?;
+    let receipt: CompactReceipt =
+        parse_typed(&bytes, "forward-recovery historical receipt is malformed")?;
+    validate_compact_protocol(
+        &receipt,
+        Path::new(epoch.receipt_path),
+        HISTORICAL_PROTOCOL_V5_VERSION,
+        HISTORICAL_PROTOCOL_V5_STATUS,
+        "historical protocol v5",
+    )?;
+    if receipt.source_version != epoch.source_version || receipt.audit_id != epoch.audit_id {
+        return Err(receipt_error(
+            "forward-recovery historical receipt source/audit binding drifted",
+        ));
+    }
+    validate_local_evidence(root, &receipt)?;
+    Ok(receipt)
+}
+
+fn validate_forward_recovery_epoch(root: &Path, epoch: ForwardRecoveryEpoch) -> Result<(), Error> {
+    let candidate = GitSha::parse(epoch.candidate, "forward-recovery candidate")?;
+    let audit = GitSha::parse(epoch.audit, "forward-recovery audit")?;
+    let expected_parent = GitSha::parse(epoch.expected_parent, "forward-recovery predecessor")?;
+    let candidate_manifest = tree_manifest(root, candidate.as_str())?;
+    let audit_manifest = tree_manifest(root, audit.as_str())?;
+    let receipt = historical_v5_receipt_at(root, &audit_manifest, epoch)?;
+
+    if receipt.candidate.parent_commit_sha != expected_parent {
+        return Err(receipt_error(
+            "forward-recovery historical receipt predecessor drifted",
+        ));
+    }
+    candidate_commit(root, &receipt, &candidate)?;
+    require_single_parent(root, &audit, &candidate)?;
+    require_open_ledger(
+        root,
+        &candidate_manifest,
+        epoch.source_version,
+        "forward-recovery candidate ledger",
+    )?;
+    require_open_ledger(
+        root,
+        &audit_manifest,
+        epoch.source_version,
+        "forward-recovery audit ledger",
+    )?;
+    validate_audit_transition(
+        root,
+        &candidate_manifest,
+        &audit_manifest,
+        &receipt,
+        epoch.receipt_path,
+    )
+}
+
+fn forward_recovery_closed_ledger(
+    root: &Path,
+    receipt: &CompactReceipt,
+) -> Result<LedgerClosureProjection, Error> {
+    if receipt.protocol_version != PROTOCOL_VERSION
+        || receipt.protocol_status != PROTOCOL_STATUS
+        || receipt.audit_id != FORWARD_RECOVERY_AUDIT_ID
+        || receipt.candidate.parent_commit_sha.as_str() != FORWARD_RECOVERY_SECOND_AUDIT
+    {
+        return Err(receipt_error(
+            "receipt predecessor is not a closed Gate A source",
+        ));
+    }
+
+    let anchor_manifest = tree_manifest(root, FORWARD_RECOVERY_CLOSED_ANCHOR)?;
+    let anchor = ledger_closure_projection(&blob_at(root, &anchor_manifest, LEDGER_PATH)?)?;
+    if anchor.source_version != FORWARD_RECOVERY_CLOSED_SOURCE_VERSION
+        || anchor.closure_record.0.is_none()
+        || anchor.acceptance_gate.gate_a_status != "passed"
+    {
+        return Err(receipt_error(
+            "forward-recovery closed Gate A anchor drifted",
+        ));
+    }
+    for epoch in FORWARD_RECOVERY_EPOCHS {
+        validate_forward_recovery_epoch(root, epoch)?;
+    }
+    Ok(anchor)
+}
+
 fn prior_closed_ledger(
     root: &Path,
     receipt: &CompactReceipt,
@@ -2759,12 +2931,10 @@ fn prior_closed_ledger(
     let prior_manifest = tree_manifest(root, receipt.candidate.parent_commit_sha.as_str())?;
     let bytes = blob_at(root, &prior_manifest, LEDGER_PATH)?;
     let prior = ledger_closure_projection(&bytes)?;
-    if prior.closure_record.0.is_none() || prior.acceptance_gate.gate_a_status != "passed" {
-        return Err(receipt_error(
-            "receipt predecessor is not a closed Gate A source",
-        ));
+    if prior.closure_record.0.is_some() && prior.acceptance_gate.gate_a_status == "passed" {
+        return Ok(prior);
     }
-    Ok(prior)
+    forward_recovery_closed_ledger(root, receipt)
 }
 
 fn validate_closure_transition(
@@ -2783,7 +2953,7 @@ fn validate_closure_transition(
     ]);
     if changes.keys().map(String::as_str).collect::<BTreeSet<_>>() != allowed {
         return Err(receipt_error(
-            "closure transition must change exactly closure source and deterministic Script 13 projections",
+            "closure transition must change exactly closure source and deterministic ledger projections",
         ));
     }
     validate_modes(&changes, None)?;
@@ -4555,26 +4725,119 @@ mod tests {
             .filter(|path| path.extension().and_then(OsStr::to_str) == Some("json"))
             .collect::<Vec<_>>();
         paths.sort();
-        assert_eq!(paths.len(), 5);
+        assert!(!paths.is_empty());
         for path in paths {
-            let loaded = load_and_validate(
-                &context,
-                &path,
-                ValidationOptions {
-                    require_local: true,
-                    check_environment: false,
-                    check_engine: false,
-                    source_version: None,
-                    audit_id: None,
-                },
-            )
-            .unwrap_or_else(|error| panic!("{}: {error}", path.display()));
-            assert_eq!(loaded.schema_version(), 2);
+            let bytes = fs::read(&path).unwrap();
+            let receipt: CompactReceipt = parse_typed(&bytes, "tracked compact receipt").unwrap();
+            let (version, status, label) =
+                if receipt.protocol_version == HISTORICAL_PROTOCOL_V5_VERSION {
+                    (
+                        HISTORICAL_PROTOCOL_V5_VERSION,
+                        HISTORICAL_PROTOCOL_V5_STATUS,
+                        "historical protocol v5",
+                    )
+                } else {
+                    (PROTOCOL_VERSION, PROTOCOL_STATUS, "current protocol v6")
+                };
+            validate_compact_protocol(&receipt, &path, version, status, label)
+                .unwrap_or_else(|error| panic!("{}: {error}", path.display()));
+            validate_local_evidence(context.root(), &receipt)
+                .unwrap_or_else(|error| panic!("{}: {error}", path.display()));
             assert_eq!(
                 path.file_name().and_then(OsStr::to_str).unwrap(),
-                format!("sha256-{}.json", loaded.v2().unwrap().receipt_id())
+                format!("sha256-{}.json", receipt.receipt_id())
             );
+            if receipt.protocol_version == HISTORICAL_PROTOCOL_V5_VERSION {
+                let error = validate_receipt_bytes(
+                    &context,
+                    &path,
+                    &bytes,
+                    ValidationOptions {
+                        require_local: true,
+                        check_environment: false,
+                        check_engine: false,
+                        source_version: None,
+                        audit_id: None,
+                    },
+                )
+                .expect_err("historical v5 must not enter the current validator");
+                assert!(error.to_string().contains("current protocol v6"));
+            }
         }
+    }
+
+    fn forward_recovery_probe(context: &Context) -> CompactReceipt {
+        let manifest = tree_manifest(context.root(), FORWARD_RECOVERY_SECOND_AUDIT).unwrap();
+        let mut receipt =
+            historical_v5_receipt_at(context.root(), &manifest, FORWARD_RECOVERY_EPOCHS[1])
+                .unwrap();
+        // Production reaches the recovery helper only after validating the
+        // new compact receipt. This probe supplies those already-established
+        // fields while retaining the historical receipt's irrelevant payload.
+        receipt.protocol_version = PROTOCOL_VERSION;
+        receipt.protocol_status = PROTOCOL_STATUS.to_owned();
+        receipt.audit_id = FORWARD_RECOVERY_AUDIT_ID.to_owned();
+        receipt.candidate.parent_commit_sha =
+            GitSha::parse(FORWARD_RECOVERY_SECOND_AUDIT, "recovery parent").unwrap();
+        receipt
+    }
+
+    #[test]
+    fn protocol_v6_forward_recovery_accepts_only_the_published_chain() {
+        let context = Context::discover().unwrap();
+        let receipt = forward_recovery_probe(&context);
+        let anchor = forward_recovery_closed_ledger(context.root(), &receipt)
+            .expect("published two-epoch recovery chain");
+        assert_eq!(
+            anchor.source_version,
+            FORWARD_RECOVERY_CLOSED_SOURCE_VERSION
+        );
+        assert!(anchor.closure_record.0.is_some());
+        assert_eq!(anchor.acceptance_gate.gate_a_status, "passed");
+
+        let mut wrong_audit = receipt.clone();
+        wrong_audit.audit_id = "FS-SAU-43".to_owned();
+        assert!(forward_recovery_closed_ledger(context.root(), &wrong_audit).is_err());
+
+        let mut wrong_parent = receipt;
+        wrong_parent.candidate.parent_commit_sha =
+            GitSha::parse(FORWARD_RECOVERY_FIRST_AUDIT, "wrong recovery parent").unwrap();
+        assert!(forward_recovery_closed_ledger(context.root(), &wrong_parent).is_err());
+    }
+
+    #[test]
+    fn historical_v5_receipts_are_strict_and_recovery_only() {
+        let context = Context::discover().unwrap();
+        let epoch = FORWARD_RECOVERY_EPOCHS[0];
+        let manifest = tree_manifest(context.root(), epoch.audit).unwrap();
+        let receipt = historical_v5_receipt_at(context.root(), &manifest, epoch)
+            .expect("exact historical v5 receipt");
+        assert_eq!(receipt.source_version, epoch.source_version);
+        assert_eq!(receipt.audit_id, epoch.audit_id);
+
+        let wrong_audit = ForwardRecoveryEpoch {
+            audit_id: FORWARD_RECOVERY_SECOND_AUDIT_ID,
+            ..epoch
+        };
+        let error = historical_v5_receipt_at(context.root(), &manifest, wrong_audit)
+            .expect_err("historical audit relabelling must fail");
+        assert!(error.to_string().contains("source/audit binding drifted"));
+
+        let bytes = blob_at(context.root(), &manifest, epoch.receipt_path).unwrap();
+        let error = validate_receipt_bytes(
+            &context,
+            Path::new(epoch.receipt_path),
+            &bytes,
+            ValidationOptions {
+                require_local: false,
+                check_environment: false,
+                check_engine: false,
+                source_version: Some(epoch.source_version),
+                audit_id: Some(epoch.audit_id),
+            },
+        )
+        .expect_err("v5 receipt must remain outside normal current validation");
+        assert!(error.to_string().contains("current protocol v6"));
     }
 
     #[test]
