@@ -1,0 +1,78 @@
+{
+  "audit_id": "FS-SAU-42",
+  "candidate": {
+    "class_manifests": {
+      "administrative": {
+        "count": 12,
+        "sha256": "a78381ab8e3bacb5659c30b163a978299fb9e839f159a2faccaf19fe0f480d35"
+      },
+      "fixture": {
+        "count": 64,
+        "sha256": "3f82eb349afc9f92ac6134b8e81f8793e67e7092152aa362f430b24782126785"
+      },
+      "generated-artifact": {
+        "count": 11,
+        "sha256": "beec1e4c90cdd22323a3eddc2ec1759497ccc7769c7c96f90099638f18ef3840"
+      },
+      "source": {
+        "count": 105,
+        "sha256": "6729f57818b8169ed810e392a4545f6e35fc2067267294543384e72205d78676"
+      },
+      "verifier-input": {
+        "count": 62,
+        "sha256": "65a0ec0b6997524362f337d05dd6b83c4fe5c3084a321b69d14b73f0c454f216"
+      }
+    },
+    "parent_commit_sha": "4612d080477efee5df33cc79e6cd953f035696b6",
+    "path_count": 254,
+    "path_manifest_sha256": "6060b4c16389e0816ae33380231eaa364303b7c3b6fbba6ede690a7e6031d700",
+    "tree_sha": "dc74588761db8a6739b33c4c0d5a45e95365120d"
+  },
+  "engine": {
+    "binary_basename": "rights-verify",
+    "binary_path_sha256": "4c43a5d5216b2d39e211116b5240ae4aa4e4802764158896d4d4962f567f7f6e",
+    "binary_sha256": "977f07bec7619bd59b68d2bcf10e2be4d21d984d5f9d27696a6ce8b8e68de9ab",
+    "binary_size": 14783520,
+    "source_available": true,
+    "source_commit_sha": "bc03c9a00b28f566c9efe0e7808d3c9160915781",
+    "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_dirty": true,
+    "source_override": false,
+    "source_status_sha256": "c339a2885afe9e409b1543aec773117a9f9626292da7d4c671d911b2b48723ab",
+    "source_untracked_count": 32,
+    "source_untracked_sha256": "8fe5a538e0b04302690876e3fa8106830438b5e18b08efa5c7942e006944406e"
+  },
+  "environment": {
+    "fields": [
+      "LANG",
+      "LC_ALL",
+      "LC_CTYPE",
+      "PATH"
+    ],
+    "sha256": "b09feef563b4ad9c1268e685fa2876a6abcc6bed42598f1b942bfe61b6f98be7"
+  },
+  "evidence_ceiling": "Repository verification over the bound staged bytes only; no external truth, operation, delivery, liveness, feasibility, calibration, or institutional action follows.",
+  "local_evidence": {
+    "expanded_manifest_sha256": "37b1d6ba577260ec7b463b4a98d9e63f8331e6b91f6ac20a8b2ee1b01b01a7f7",
+    "transcript_sha256": "e191a12b777a58b9a5aa81859ab8b70ed53596e0b4f6ad7705f826f817fd4eb9"
+  },
+  "protocol_status": "repository-enforced 2026-08-27 -- receipt-aware mechanical-closure protocol v6",
+  "protocol_version": 6,
+  "receipt_id": "c9208b6db2b6eb865e6849267d511df1ed52a170d5eb840a5f4d34e71ee8d552",
+  "schema_version": 2,
+  "source_version": "fs-ledger-2026-08-27-forward-closure-recovery-v1",
+  "spdx": "CC0-1.0",
+  "status": "all-passed",
+  "verification": {
+    "command_sha256": "a0a7c11fb18db95bfb48784021057a1c712284f61b34bd1466d24d79de441c69",
+    "finished_at_utc": "2026-08-27T19:15:32Z",
+    "results": [
+      {
+        "command": "./verify.sh",
+        "exit_code": 0
+      }
+    ],
+    "started_at_utc": "2026-08-27T18:49:28Z",
+    "transcript_sha256": "e191a12b777a58b9a5aa81859ab8b70ed53596e0b4f6ad7705f826f817fd4eb9"
+  }
+}
