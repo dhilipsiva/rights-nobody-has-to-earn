@@ -198,8 +198,8 @@ ancestry, start identity, and random token. Process exit, including a crash,
 releases the kernel lock; diagnostic metadata never authorises breaking a busy
 lock.
 
-Scripts 13 and 16 use `--refresh-and-check` to snapshot immutable inputs,
-execute each watched mutation independently once, render and byte-check
+The native `rights-verify` ledger and closure refresh modes snapshot immutable
+inputs, execute each watched mutation independently once, render and byte-check
 temporary outputs, replace the complete output set atomically with rollback,
 reread the installed bytes, and reject concurrent input drift. Caches may
 retain immutable source bytes, parsed forms, digests, counts, fingerprints, and

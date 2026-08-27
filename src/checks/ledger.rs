@@ -221,6 +221,17 @@ const SCOPE_AUDIT_POLICY_BASIS: &str =
 const SCOPE_AUDIT_METHOD: &str = "repository-source-derived-adversarial-audit";
 const SCOPE_AUDIT_RESULT: &str = "passed-with-recorded-limits";
 const SCOPE_AUDIT_EVIDENCE_CEILING: &str = "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.";
+const LEDGER_CURRENT_AUDIT_CONTROL_REF: &str =
+    concat!("src/checks/ledger.rs::fn negative_", "controls(");
+const LEDGER_REFRESH_COMMAND: &str = "./verify.sh --refresh full-society-ledger";
+const CLOSURE_REFRESH_COMMAND: &str = "./verify.sh --refresh constitutional-closure";
+const EMIT_RECEIPT_COMMAND: &str =
+    "./verify.sh --emit-receipt new-book-plans/verification-receipts";
+const CURRENT_AUDIT_COMMAND_PREFIX: [&str; 3] = [
+    LEDGER_REFRESH_COMMAND,
+    CLOSURE_REFRESH_COMMAND,
+    EMIT_RECEIPT_COMMAND,
+];
 const GATE_A_ASSURANCE_REFS: [&str; 9] = [
     "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
     "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
@@ -2037,6 +2048,12 @@ pub(crate) enum Mode {
 pub(crate) struct CheckResult {
     pub(crate) controls: usize,
     pub(crate) message: String,
+}
+
+#[derive(Debug, Eq, PartialEq, Serialize, Deserialize)]
+struct ScopeFingerprintOutput {
+    source_version: String,
+    scope_sha256: String,
 }
 
 impl std::fmt::Display for CheckResult {
@@ -6489,8 +6506,8 @@ fn validate_review_contract(
         .map(|defect| defect.id.as_str())
         .collect::<BTreeSet<_>>();
     let expected_controls = [
-        "new-book-plans/13-full-society-ledger.py::def negative_controls(src: dict) -> int:",
-        "new-book-plans/16-constitutional-closure.py::def negative_controls(source):",
+        LEDGER_CURRENT_AUDIT_CONTROL_REF,
+        closure::CURRENT_AUDIT_CONTROL_REF,
     ];
     for audit in current {
         if audit
@@ -6518,11 +6535,7 @@ fn validate_review_contract(
                 audit.id
             )));
         }
-        let pending_commands = [
-            "python3 new-book-plans/13-full-society-ledger.py --refresh-and-check",
-            "python3 new-book-plans/16-constitutional-closure.py --refresh-and-check",
-            "./verify.sh --emit-receipt new-book-plans/verification-receipts",
-        ];
+        let pending_commands = CURRENT_AUDIT_COMMAND_PREFIX;
         if audit.commands.len() < pending_commands.len()
             || audit.commands[..pending_commands.len()]
                 .iter()
@@ -9144,13 +9157,16 @@ fn transient_control_audit(source: &LedgerDocument, title: &str) -> LedgerResult
         .ok_or_else(|| LedgerError::new("control setup: source has no scope audit"))?;
     audit.id = "FS-SAU-99".into();
     audit.title = title.into();
+    audit.control_refs = vec![
+        LEDGER_CURRENT_AUDIT_CONTROL_REF.into(),
+        closure::CURRENT_AUDIT_CONTROL_REF.into(),
+    ];
+    audit.commands = CURRENT_AUDIT_COMMAND_PREFIX
+        .iter()
+        .map(|command| (*command).to_owned())
+        .collect();
     if audit.verification_receipt_ref.is_some() {
         audit.result = "pending".into();
-        audit.commands = vec![
-            "python3 new-book-plans/13-full-society-ledger.py --refresh-and-check".into(),
-            "python3 new-book-plans/16-constitutional-closure.py --refresh-and-check".into(),
-            "./verify.sh --emit-receipt new-book-plans/verification-receipts".into(),
-        ];
         audit.verification_receipt_ref = None;
     }
     Ok(audit)
@@ -12857,6 +12873,24 @@ fn review_scope_digest(source: &LedgerDocument) -> LedgerResult<String> {
     Ok(sha256(canonical_json(&value)))
 }
 
+/// Print the candidate semantic-scope digest without requiring the current
+/// audit row to have caught up with the reviewed source.
+///
+/// The source still crosses the duplicate-key preflight and exact typed ledger
+/// contract. Deliberately stop before sibling, history, and current-audit
+/// validation so this read-only mode remains usable while preparing a new
+/// source-version audit record.
+pub(crate) fn fingerprints(context: &Context) -> Result<String, Error> {
+    let loaded = load_source(context).map_err(|error| ledger_error(error.to_string()))?;
+    let output = ScopeFingerprintOutput {
+        source_version: loaded.source.source_version.clone(),
+        scope_sha256: review_scope_digest(&loaded.source)
+            .map_err(|error| ledger_error(error.to_string()))?,
+    };
+    serde_json::to_string_pretty(&output)
+        .map_err(|error| ledger_error(format!("cannot serialize scope fingerprint: {error}")))
+}
+
 fn protocol_digest(inputs: &BTreeMap<String, Vec<u8>>) -> LedgerResult<String> {
     Ok(sha256(input_bytes(inputs, PROTOCOL_DOC)?))
 }
@@ -13107,7 +13141,7 @@ fn render_report(
     }
 
     w!("<!-- SPDX-License-Identifier: CC-BY-4.0 -->");
-    w!("<!-- Generated by new-book-plans/13-full-society-ledger.py; do not edit. -->");
+    w!("<!-- Generated by the native rights-verify ledger refresh; do not edit. -->");
     w!();
     w!("# Full-Society Domain-and-Layer Ledger — Generated Report");
     w!();
@@ -14204,7 +14238,7 @@ fn render_report(
     w!("## Reproduce");
     w!();
     w!("```bash");
-    w!("python3 new-book-plans/13-full-society-ledger.py --check");
+    w!(LEDGER_REFRESH_COMMAND);
     w!("```");
     w!();
     Ok(output.join("\n"))
@@ -14455,7 +14489,7 @@ fn render_reader(
         .collect::<HashMap<_, _>>();
 
     line("<!-- SPDX-License-Identifier: CC-BY-4.0 -->".into());
-    line("<!-- Generated by new-book-plans/13-full-society-ledger.py; do not edit. -->".into());
+    line("<!-- Generated by the native rights-verify ledger refresh; do not edit. -->".into());
     line(String::new());
     line("# Full-Society Structural Reader Ledger — Generated Projection".into());
     line(String::new());
@@ -14688,7 +14722,7 @@ fn render_reader(
     line("## Reproduce".into());
     line(String::new());
     line("```bash".into());
-    line("python3 new-book-plans/13-full-society-ledger.py --check".into());
+    line(LEDGER_REFRESH_COMMAND.into());
     line("```".into());
     line(String::new());
     Ok(output.join("\n"))
@@ -14964,6 +14998,108 @@ mod tests {
         let loaded = load_source(&context).expect("typed ledger source");
         assert_eq!(loaded.source.schema_version, EXPECTED_SCHEMA_VERSION);
         assert_eq!(loaded.source.powers.len(), EXPECTED_POWER_COUNT);
+    }
+
+    #[test]
+    fn current_audit_contract_is_native_without_rewriting_historical_rows() {
+        assert_eq!(
+            [
+                LEDGER_CURRENT_AUDIT_CONTROL_REF,
+                closure::CURRENT_AUDIT_CONTROL_REF,
+            ],
+            [
+                concat!("src/checks/ledger.rs::fn negative_", "controls("),
+                concat!("src/checks/ledger/closure.rs::fn negative_", "controls("),
+            ]
+        );
+        assert_eq!(
+            CURRENT_AUDIT_COMMAND_PREFIX,
+            [
+                "./verify.sh --refresh full-society-ledger",
+                "./verify.sh --refresh constitutional-closure",
+                "./verify.sh --emit-receipt new-book-plans/verification-receipts",
+            ]
+        );
+
+        let context = context();
+        let mut candidate = load_source(&context).expect("typed ledger source").source;
+        assert!(candidate.scope_audits.iter().any(|audit| {
+            audit
+                .commands
+                .iter()
+                .any(|command| command.starts_with("python3 "))
+        }));
+        let mut inputs = load_static_inputs(&context).expect("static inputs");
+        for reference in [
+            LEDGER_CURRENT_AUDIT_CONTROL_REF,
+            closure::CURRENT_AUDIT_CONTROL_REF,
+        ] {
+            let path = reference.split_once("::").expect("path::needle").0;
+            inputs
+                .entry(path.to_owned())
+                .or_insert_with(|| fs::read(context.path(path)).expect("Rust control source"));
+            validate_repository_reference(&inputs, reference, "native current audit control")
+                .expect("unique Rust control symbol");
+        }
+        candidate.source_version = "native-current-audit-test-v1".to_owned();
+        let mut audit = transient_control_audit(&candidate, "Native current audit")
+            .expect("native current audit fixture");
+        audit.source_version.clone_from(&candidate.source_version);
+        audit.scope_sha256 = review_scope_digest(&candidate).expect("scope digest");
+        audit.protocol_sha256 = protocol_digest(&inputs).expect("protocol digest");
+        candidate.scope_audits.push(audit);
+
+        validate_review_contract(&inputs, &candidate)
+            .expect("native current audit with immutable Python-backed history");
+    }
+
+    #[test]
+    fn active_ledger_renderers_reproduce_through_the_native_refresh_mode() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let inputs = load_static_inputs(&context).expect("static inputs");
+        let resolution = compute_resolution(&loaded.source).expect("defect resolution");
+        let report =
+            render_report(&inputs, &loaded.source, &resolution).expect("main ledger report");
+        let reader = render_reader(&loaded.source, &resolution).expect("reader ledger report");
+
+        for rendered in [&report, &reader] {
+            assert!(rendered.contains(LEDGER_REFRESH_COMMAND));
+            assert!(!rendered.contains("python3 new-book-plans/13-full-society-ledger.py"));
+            assert!(!rendered.contains("Generated by new-book-plans/13-full-society-ledger.py"));
+        }
+    }
+
+    #[test]
+    fn fingerprints_compute_before_current_audit_validation() {
+        let loaded = load_source(&context()).expect("typed ledger source");
+        let mut candidate = loaded.source;
+        candidate.source_version.push_str("-candidate");
+        candidate
+            .scope_audits
+            .last_mut()
+            .expect("current scope audit")
+            .scope_sha256 = "0".repeat(64);
+        let expected = ScopeFingerprintOutput {
+            source_version: candidate.source_version.clone(),
+            scope_sha256: review_scope_digest(&candidate).expect("candidate scope digest"),
+        };
+
+        let temporary = tempfile::tempdir().expect("temporary fingerprint repository");
+        let source_path = temporary.path().join(SOURCE);
+        fs::create_dir_all(source_path.parent().expect("source parent"))
+            .expect("create source parent");
+        fs::write(
+            source_path,
+            serde_json::to_vec_pretty(&candidate).expect("serialize candidate source"),
+        )
+        .expect("write candidate source");
+        let candidate_context = Context::from_test_root(temporary.path().to_path_buf());
+        let actual: ScopeFingerprintOutput = serde_json::from_str(
+            &fingerprints(&candidate_context).expect("candidate fingerprints"),
+        )
+        .expect("typed fingerprint output");
+        assert_eq!(actual, expected);
     }
 
     #[test]

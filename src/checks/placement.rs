@@ -4,7 +4,9 @@
 
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::fmt;
-use std::path::{Component, Path};
+use std::fs::{File, OpenOptions};
+use std::io::{Read, Seek, Write};
+use std::path::{Component, Path, PathBuf};
 use std::time::{Duration, Instant};
 
 use regex::Regex;
@@ -198,9 +200,17 @@ struct Snapshot {
     source_relative: String,
     kb_relative: String,
     output_relative: String,
+    output_path: PathBuf,
+    input_identities: HashSet<FileIdentity>,
     kb_text: String,
     kb_digest: String,
     current_output: Option<Vec<u8>>,
+}
+
+#[derive(Clone, Copy, Debug, Eq, Hash, PartialEq)]
+struct FileIdentity {
+    device: u64,
+    inode: u64,
 }
 
 #[derive(Clone, Copy, Debug, Default, Eq, PartialEq)]
@@ -219,6 +229,22 @@ pub(crate) struct Report {
     pub(crate) output: String,
     pub(crate) structural_controls: usize,
     pub(crate) execution: Option<ExecutionReport>,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq)]
+pub(crate) struct GenerationReport {
+    pub(crate) output: String,
+    pub(crate) structural_controls: usize,
+}
+
+impl fmt::Display for GenerationReport {
+    fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(
+            formatter,
+            "{}: regenerated (structural generation; execution not requested); {} structural negative controls pass",
+            self.output, self.structural_controls
+        )
+    }
 }
 
 impl fmt::Display for Report {
@@ -278,6 +304,23 @@ pub(crate) fn check(context: &Context) -> Result<Report, Error> {
 
 pub(crate) fn check_execute(context: &Context) -> Result<Report, Error> {
     check_inner(context, true)
+}
+
+pub(crate) fn generate(context: &Context) -> Result<GenerationReport, Error> {
+    let snapshot = load_snapshot(context, false).map_err(placement_error)?;
+    let inventory = validate_source(context, &snapshot).map_err(placement_error)?;
+    let generated = render(&snapshot, &inventory);
+    let structural_controls = negative_controls(context, &snapshot).map_err(placement_error)?;
+    write_generated_output(
+        &snapshot.output_path,
+        generated.as_bytes(),
+        &snapshot.input_identities,
+    )
+    .map_err(placement_error)?;
+    Ok(GenerationReport {
+        output: snapshot.output_relative,
+        structural_controls,
+    })
 }
 
 fn check_inner(context: &Context, execute: bool) -> Result<Report, Error> {
@@ -361,13 +404,13 @@ fn load_snapshot(context: &Context, read_output: bool) -> AuditResult<Snapshot> 
     validate_repo_path(context.root(), &source_path)?;
     validate_repo_path(context.root(), &kb_path)?;
     validate_repo_path(context.root(), &output_path)?;
-    if output_path.is_symlink() {
-        return Err("generated output may not be a symlink".into());
-    }
-    let source_bytes = std::fs::read(&source_path)
-        .map_err(|error| format!("cannot read placement audit source: {error}"))?;
-    let kb_bytes =
-        std::fs::read(&kb_path).map_err(|error| format!("cannot read constitution: {error}"))?;
+    let (source_bytes, source_identity) = read_bound_file(&source_path, "placement audit source")?;
+    let (kb_bytes, kb_identity) = read_bound_file(&kb_path, "constitution")?;
+    let input_identities = require_distinct_identities(&[
+        ("placement audit source", source_identity),
+        ("constitution", kb_identity),
+    ])?;
+    validate_output_target(&output_path, &input_identities)?;
     if kb_bytes.contains(&b'\r') {
         return Err("constitution contains carriage-return bytes".into());
     }
@@ -378,10 +421,7 @@ fn load_snapshot(context: &Context, read_output: bool) -> AuditResult<Snapshot> 
     let reviewed = serde_json::from_slice(&source_bytes)
         .map_err(|error| format!("invalid placement audit source: {error}"))?;
     let current_output = if read_output {
-        Some(
-            std::fs::read(&output_path)
-                .map_err(|error| format!("cannot read generated placement report: {error}"))?,
-        )
+        Some(read_bound_file(&output_path, "generated placement report")?.0)
     } else {
         None
     };
@@ -390,10 +430,168 @@ fn load_snapshot(context: &Context, read_output: bool) -> AuditResult<Snapshot> 
         source_relative: DEFAULT_SOURCE.into(),
         kb_relative: DEFAULT_KB.into(),
         output_relative: DEFAULT_OUTPUT.into(),
+        output_path,
+        input_identities,
         kb_digest: sha256(&kb_bytes),
         kb_text,
         current_output,
     })
+}
+
+fn read_bound_file(path: &Path, label: &str) -> AuditResult<(Vec<u8>, FileIdentity)> {
+    let mut stream = File::open(path)
+        .map_err(|error| format!("cannot read {label} {}: {error}", path.display()))?;
+    let before = stream
+        .metadata()
+        .map_err(|error| format!("cannot read {label} {}: {error}", path.display()))?;
+    if !before.is_file() {
+        return Err(format!(
+            "{label} must be a regular file: {}",
+            path.display()
+        ));
+    }
+    let mut value = Vec::with_capacity(before.len() as usize);
+    stream
+        .read_to_end(&mut value)
+        .map_err(|error| format!("cannot read {label} {}: {error}", path.display()))?;
+    let after = stream
+        .metadata()
+        .map_err(|error| format!("cannot read {label} {}: {error}", path.display()))?;
+    if metadata_state(&before) != metadata_state(&after) || value.len() as u64 != after.len() {
+        return Err(format!("{label} changed while its bound bytes were read"));
+    }
+    Ok((value, file_identity(&after)))
+}
+
+#[cfg(unix)]
+fn metadata_state(metadata: &std::fs::Metadata) -> (u64, u64, u64, i64, i64, i64, i64) {
+    use std::os::unix::fs::MetadataExt;
+    (
+        metadata.dev(),
+        metadata.ino(),
+        metadata.size(),
+        metadata.mtime(),
+        metadata.mtime_nsec(),
+        metadata.ctime(),
+        metadata.ctime_nsec(),
+    )
+}
+
+#[cfg(unix)]
+fn file_identity(metadata: &std::fs::Metadata) -> FileIdentity {
+    use std::os::unix::fs::MetadataExt;
+    FileIdentity {
+        device: metadata.dev(),
+        inode: metadata.ino(),
+    }
+}
+
+#[cfg(not(unix))]
+fn metadata_state(metadata: &std::fs::Metadata) -> (u64, Option<std::time::SystemTime>) {
+    (metadata.len(), metadata.modified().ok())
+}
+
+#[cfg(not(unix))]
+fn file_identity(metadata: &std::fs::Metadata) -> FileIdentity {
+    FileIdentity {
+        device: 0,
+        inode: metadata.len(),
+    }
+}
+
+fn require_distinct_identities(
+    named: &[(&str, FileIdentity)],
+) -> AuditResult<HashSet<FileIdentity>> {
+    let mut seen = HashMap::new();
+    for (label, identity) in named {
+        if let Some(previous) = seen.insert(*identity, *label) {
+            return Err(format!(
+                "resolved input identity collision: {label} aliases {previous}"
+            ));
+        }
+    }
+    Ok(seen.into_keys().collect())
+}
+
+fn validate_output_target(path: &Path, inputs: &HashSet<FileIdentity>) -> AuditResult<()> {
+    if path.is_symlink() {
+        return Err("generated output may not be a symlink".into());
+    }
+    if !path.exists() {
+        return Ok(());
+    }
+    let metadata = path.metadata().map_err(|error| {
+        format!(
+            "cannot inspect generated output {}: {error}",
+            path.display()
+        )
+    })?;
+    validate_output_details(&metadata, inputs)
+}
+
+fn validate_output_details(
+    metadata: &std::fs::Metadata,
+    inputs: &HashSet<FileIdentity>,
+) -> AuditResult<()> {
+    #[cfg(unix)]
+    let links = {
+        use std::os::unix::fs::MetadataExt;
+        metadata.nlink()
+    };
+    #[cfg(not(unix))]
+    let links = 1;
+    validate_output_characteristics(metadata.is_file(), links, file_identity(metadata), inputs)
+}
+
+fn validate_output_characteristics(
+    regular: bool,
+    links: u64,
+    identity: FileIdentity,
+    inputs: &HashSet<FileIdentity>,
+) -> AuditResult<()> {
+    if !regular {
+        return Err("generated output must be a regular file".into());
+    }
+    if links != 1 {
+        return Err("generated output must have exactly one hard link".into());
+    }
+    if inputs.contains(&identity) {
+        return Err("generated output identity collides with an input".into());
+    }
+    Ok(())
+}
+
+fn write_generated_output(
+    path: &Path,
+    value: &[u8],
+    inputs: &HashSet<FileIdentity>,
+) -> AuditResult<()> {
+    validate_output_target(path, inputs)?;
+    let mut options = OpenOptions::new();
+    options.write(true).create(true);
+    #[cfg(unix)]
+    {
+        use std::os::unix::fs::OpenOptionsExt;
+        options.custom_flags(libc::O_NOFOLLOW);
+    }
+    let mut stream = options
+        .open(path)
+        .map_err(|error| format!("cannot open generated output {}: {error}", path.display()))?;
+    validate_output_details(
+        &stream.metadata().map_err(|error| {
+            format!(
+                "cannot inspect generated output {}: {error}",
+                path.display()
+            )
+        })?,
+        inputs,
+    )?;
+    stream
+        .seek(std::io::SeekFrom::Start(0))
+        .and_then(|_| stream.set_len(0))
+        .and_then(|_| stream.write_all(value))
+        .and_then(|_| stream.flush())
+        .map_err(|error| format!("cannot write generated output {}: {error}", path.display()))
 }
 
 fn validate_repo_path(root: &Path, path: &Path) -> AuditResult<()> {
@@ -1559,8 +1757,7 @@ fn render(snapshot: &Snapshot, inventory: &SourceInventory) -> String {
     });
     let mut lines = vec![
         format!("<!-- SPDX-License-Identifier: {} -->", source.spdx),
-        "<!-- Generated by new-book-plans/11-placement-exhaustiveness.py; do not edit. -->"
-            .into(),
+        "<!-- Generated by the native rights-verify placement refresh; do not edit. -->".into(),
         String::new(),
         format!("# {}", source.title),
         String::new(),
@@ -1782,8 +1979,9 @@ fn render(snapshot: &Snapshot, inventory: &SourceInventory) -> String {
         "## Reproduce".into(),
         String::new(),
         "```bash".into(),
-        "python3 new-book-plans/11-placement-exhaustiveness.py --check".into(),
-        "python3 new-book-plans/11-placement-exhaustiveness.py --check --execute".into(),
+        "./verify.sh --refresh placement-exhaustiveness".into(),
+        "./verify.sh --quick".into(),
+        "./verify.sh".into(),
         "```".into(),
         String::new(),
         markdown(&source.acceptance_result.does_not_establish),
@@ -2716,6 +2914,31 @@ mod tests {
         Context::discover().expect("discover repository")
     }
 
+    fn generation_fixture() -> (tempfile::TempDir, Context) {
+        let live = context();
+        let temporary = tempfile::tempdir().expect("temporary placement repository");
+        for relative in [DEFAULT_SOURCE, DEFAULT_KB] {
+            let target = temporary.path().join(relative);
+            std::fs::create_dir_all(target.parent().expect("fixture parent"))
+                .expect("create fixture parent");
+            std::fs::copy(live.path(relative), &target).expect("copy placement input");
+        }
+        let source = load_snapshot(&live, false).expect("live placement snapshot");
+        for impact in &source.reviewed.narrowness_impacts {
+            let relative = impact
+                .artifact_ref
+                .split_once("::")
+                .expect("narrowness path::needle")
+                .0;
+            let target = temporary.path().join(relative);
+            std::fs::create_dir_all(target.parent().expect("narrowness fixture parent"))
+                .expect("create narrowness fixture parent");
+            std::fs::copy(live.path(relative), target).expect("copy narrowness fixture");
+        }
+        let isolated = Context::from_test_root(temporary.path().to_path_buf());
+        (temporary, isolated)
+    }
+
     #[test]
     fn live_structural_check_and_report_are_exact() {
         let report = check(&context()).expect("live placement check");
@@ -2739,6 +2962,48 @@ mod tests {
         let report = fingerprints(&context()).expect("fingerprints");
         let parsed: Value = serde_json::from_str(&report.0).expect("fingerprint JSON");
         assert_eq!(parsed["mutations"].as_object().map(Map::len), Some(5));
+    }
+
+    #[test]
+    fn native_generation_installs_the_exact_typed_projection() {
+        let (_temporary, isolated) = generation_fixture();
+        let report = generate(&isolated).expect("native placement generation");
+        assert_eq!(report.structural_controls, 23);
+        assert_eq!(
+            report.to_string(),
+            "new-book-plans/placement-exhaustiveness-audit.md: regenerated (structural generation; execution not requested); 23 structural negative controls pass"
+        );
+        let generated = std::fs::read_to_string(isolated.path(DEFAULT_OUTPUT))
+            .expect("generated placement report");
+        assert!(generated.contains(
+            "<!-- Generated by the native rights-verify placement refresh; do not edit. -->"
+        ));
+        assert!(generated.contains(
+            "./verify.sh --refresh placement-exhaustiveness\n./verify.sh --quick\n./verify.sh"
+        ));
+        assert!(!generated.contains(concat!("11-placement-", "exhaustiveness.py")));
+        check(&isolated).expect("generated projection passes the typed check path");
+    }
+
+    #[cfg(unix)]
+    #[test]
+    fn native_generation_rejects_a_symlink_output_without_touching_its_target() {
+        use std::os::unix::fs::symlink;
+
+        let (_temporary, isolated) = generation_fixture();
+        let protected = isolated.path("protected.md");
+        std::fs::write(&protected, b"protected\n").expect("write protected target");
+        symlink(&protected, isolated.path(DEFAULT_OUTPUT)).expect("install output symlink");
+        let error = generate(&isolated).expect_err("symlink output must fail");
+        assert!(
+            error
+                .to_string()
+                .contains("generated output may not be a symlink")
+        );
+        assert_eq!(
+            std::fs::read(&protected).expect("read protected target"),
+            b"protected\n"
+        );
     }
 
     #[test]

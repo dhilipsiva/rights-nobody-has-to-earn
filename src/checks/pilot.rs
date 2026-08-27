@@ -1726,62 +1726,25 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "development-only legacy generator parity"]
-    fn live_artifact_content_matches_legacy_except_generator_identity() {
+    #[ignore = "live repository artifact generation"]
+    fn live_native_artifact_generation_is_deterministic() {
         let context = Context::discover().unwrap();
         let temporary = TempDir::new().unwrap();
-        let legacy = temporary.path().join("legacy");
-        let native = temporary.path().join("native");
-        let output = Command::new("python3")
-            .args([
-                "new-book-plans/15-pilot-reader-artifacts.py",
-                "--output-dir",
-                legacy.to_str().unwrap(),
-            ])
-            .current_dir(context.root())
-            .output()
-            .unwrap();
-        assert!(
-            output.status.success(),
-            "{}{}",
-            String::from_utf8_lossy(&output.stdout),
-            String::from_utf8_lossy(&output.stderr)
-        );
-        let native_manifest =
-            install_artifacts(&prepare_artifacts(&context, false).unwrap(), &native).unwrap();
-        let legacy_manifest: SnapshotManifest = serde_json::from_slice(
-            &fs::read(legacy.join(format!("{OUTPUT_BASENAME}-manifest.json"))).unwrap(),
-        )
-        .unwrap();
-        let legacy_id = legacy_manifest.snapshot_id.as_str();
-        let native_id = native_manifest.snapshot_id.as_str();
-
-        let normalize = |bytes: Vec<u8>| {
-            String::from_utf8(bytes)
-                .unwrap()
-                .replace(legacy_id, "SNAPSHOT")
-                .replace(native_id, "SNAPSHOT")
-        };
-        assert_eq!(
-            normalize(fs::read(legacy.join(format!("{OUTPUT_BASENAME}.html"))).unwrap()),
-            normalize(fs::read(native.join(format!("{OUTPUT_BASENAME}.html"))).unwrap())
-        );
-
-        let archive_content = |path: PathBuf| {
-            let mut archive = ZipArchive::new(Cursor::new(fs::read(path).unwrap())).unwrap();
-            let mut entries = Vec::new();
-            for index in 0..archive.len() {
-                let mut entry = archive.by_index(index).unwrap();
-                let name = entry.name().to_owned();
-                let mut value = Vec::new();
-                entry.read_to_end(&mut value).unwrap();
-                entries.push((name, normalize(value)));
-            }
-            entries
-        };
-        assert_eq!(
-            archive_content(legacy.join(format!("{OUTPUT_BASENAME}.epub"))),
-            archive_content(native.join(format!("{OUTPUT_BASENAME}.epub")))
-        );
+        let first = temporary.path().join("first");
+        let second = temporary.path().join("second");
+        let prepared = prepare_artifacts(&context, false).unwrap();
+        let first_manifest = install_artifacts(&prepared, &first).unwrap();
+        let second_manifest = install_artifacts(&prepared, &second).unwrap();
+        assert_eq!(first_manifest, second_manifest);
+        for name in [
+            format!("{OUTPUT_BASENAME}.html"),
+            format!("{OUTPUT_BASENAME}.epub"),
+            format!("{OUTPUT_BASENAME}-manifest.json"),
+        ] {
+            assert_eq!(
+                fs::read(first.join(&name)).unwrap(),
+                fs::read(second.join(name)).unwrap()
+            );
+        }
     }
 }

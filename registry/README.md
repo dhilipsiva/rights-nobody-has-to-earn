@@ -31,12 +31,13 @@ entry per figure. Two classes:
 ## Checks
 
 ```
-python3 registry/check.py
+../verify.sh --quick
 ```
 
 Schema plus the staleness gate: a fetchable entry whose `retrieved` date is
 older than the gate's window fails the build and names the script that
-refreshes it. `../verify.sh` runs this check when the registry is present.
+refreshes it. The repository-root verifier runs this check when the registry is
+present.
 
 ## Refreshing a fetchable entry
 

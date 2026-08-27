@@ -18,27 +18,22 @@ Run from the repository root:
 ./verify.sh --commit-gate <receipt> --transition audit|closure|tracker
 ./verify.sh --only book-1/<NN-chapter>.pins.nibli   # one pin suite in a fresh engine
 ./verify.sh --table   # print the claim table
-python3 new-book-plans/5-spine-gen.py new-book-plans/constitution.nibli new-book-plans/3-spine.md --check
-python3 new-book-plans/7-assertion-surface.py --check
-python3 new-book-plans/8-record-integrity-assurance.py --check
-python3 new-book-plans/9-record-integrity-red-team.py --check
-python3 new-book-plans/9-record-integrity-red-team.py --check --execute
-python3 new-book-plans/10-amendment-semantics.py --check
-python3 new-book-plans/10-amendment-semantics.py --check --execute
-python3 new-book-plans/11-placement-exhaustiveness.py --check
-python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
-python3 new-book-plans/12-temporal-assurance.py --check
-python3 new-book-plans/12-temporal-assurance.py --check --execute
-python3 new-book-plans/14-reader-evidence.py --check
-python3 new-book-plans/14-reader-evidence.py --check --execute
-python3 new-book-plans/reader-evidence-admission-gate.py --self-test
-python3 new-book-plans/15-pilot-reader-artifacts.py --check
-python3 new-book-plans/17-full-society-power-source-manifest.py --check
-python3 new-book-plans/13-full-society-ledger.py --check
-python3 new-book-plans/13-full-society-ledger.py --refresh-and-check
-python3 new-book-plans/16-constitutional-closure.py --check
-python3 new-book-plans/16-constitutional-closure.py --refresh-and-check
-python3 registry/check.py
+./verify.sh --fingerprints assertion-surface
+./verify.sh --fingerprints state-form
+./verify.sh --fingerprints obligations
+./verify.sh --fingerprints full-society-ledger
+./verify.sh --refresh spine
+./verify.sh --refresh assertion-surface
+./verify.sh --refresh record-integrity-assurance
+./verify.sh --refresh record-integrity-red-team
+./verify.sh --refresh amendment-semantics
+./verify.sh --refresh placement-exhaustiveness
+./verify.sh --refresh temporal-assurance
+./verify.sh --refresh reader-evidence
+./verify.sh --refresh state-form
+./verify.sh --refresh obligations
+./verify.sh --refresh full-society-ledger
+./verify.sh --refresh constitutional-closure
 ```
 
 **Superseding commit rule, 2026-08-23.** A semantic, executable, verifier,
@@ -55,15 +50,16 @@ Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
 SECONDS` supplies an explicit bounded wait. `verify.sh` incrementally builds and
 executes one `rights-verify` Rust binary; it launches no Python verifier
-subprocesses. Native ledger and closure checks preserve the immutable-input and
-final-reread contract; scripts 13 and 16 remain standalone atomic generators.
+subprocesses. Native ledger and closure refresh modes preserve the atomic
+immutable-input and final-reread contract; numbered Python verifier files are
+historical parity references, not normal workflow entry points.
 The embedded Nibli engine is compiled from the adjacent source checkout and its
 source revision plus exact verifier bytes are bound into new receipts.
 State-form execution retains its reviewed 64 main and 17 counterfactual
 byte-balanced shards under a bounded four-worker, canonical-output, fail-fast
 scheduler inside the native process.
 
-Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Omit `--check` only to regenerate. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `7-assertion-surface.py --fingerprints`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs live at `--check` — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. The same run generates and freshness-checks `full-society-ledger.md` and `full-society-reader-ledger.md`; the latter is structural navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier. `new-book-plans/4-strata.py` is retained wrong on purpose as a method-part exhibit — do not repair it; `18-coverage-contract-migration.py` is a reviewed-source migration helper only, outside the verify chain, and script 13 must validate everything it emits.
+Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Use native `--refresh` only to regenerate generated outputs. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `./verify.sh --fingerprints assertion-surface`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs during native verification — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. The same native refresh generates and freshness-checks `full-society-ledger.md` and `full-society-reader-ledger.md`; the latter is structural navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier. `new-book-plans/4-strata.py` is retained wrong on purpose as a method-part exhibit — do not repair it; `18-coverage-contract-migration.py` is a reviewed-source migration helper only, outside the verify chain, and the native ledger check must validate everything it emits.
 
 Validate and render reader evidence with script 14 before checking the
 full-society ledger when its reviewed source changes. `--check` validates the

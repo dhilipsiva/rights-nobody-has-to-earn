@@ -112,7 +112,7 @@ pathlib.Path(
     'new-book-plans/counterfactual/no-state-form-independent-current-review.nibli'
 ).write_text(s.replace(old, ""), encoding='utf-8')
 EOF
-python3 new-book-plans/21-obligations.py --write-artifacts
+./verify.sh --refresh obligations
 cp new-book-plans/constitution.nibli new-book-plans/counterfactual/unguarded-pen.nibli
 printf 'all $a: choose(Electorate, $a) -> permits(Review, $a).\n' \
   >> new-book-plans/counterfactual/unguarded-pen.nibli

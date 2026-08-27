@@ -42,17 +42,29 @@ imprisonment and stops there.
 ./verify.sh --emit-receipt new-book-plans/verification-receipts
 ./verify.sh --wait-for-lock 300 --emit-receipt new-book-plans/verification-receipts
 ./verify.sh --commit-gate <receipt> --transition audit|closure|tracker
-python3 new-book-plans/9-record-integrity-red-team.py --check --execute
-python3 new-book-plans/10-amendment-semantics.py --check --execute
-python3 new-book-plans/11-placement-exhaustiveness.py --check --execute
-python3 new-book-plans/12-temporal-assurance.py --check --execute
+./verify.sh --fingerprints assertion-surface
+./verify.sh --fingerprints state-form
+./verify.sh --fingerprints obligations
+./verify.sh --fingerprints full-society-ledger
+./verify.sh --refresh assertion-surface
+./verify.sh --refresh record-integrity-assurance
+./verify.sh --refresh record-integrity-red-team
+./verify.sh --refresh amendment-semantics
+./verify.sh --refresh placement-exhaustiveness
+./verify.sh --refresh temporal-assurance
+./verify.sh --refresh reader-evidence
+./verify.sh --refresh state-form
+./verify.sh --refresh obligations
+./verify.sh --refresh full-society-ledger
+./verify.sh --refresh constitutional-closure
 ```
 
 `verify.sh` performs Cargo's incremental freshness check and then replaces
 itself with `target/release/rights-verify`. All schema checks, report freshness,
 negative controls, Nibli executions, locking, receipts, and commit gates run in
-that one Rust process; the numbered Python files remain maintenance generators
-and historical parity references, not verifier subprocesses.
+that one Rust process. Native fingerprint and governed refresh modes use the
+same binary; numbered Python verifier files remain historical parity references,
+not workflow subprocesses.
 
 Since 2026-08-23, any semantic, executable, verifier, fixture, engine-binding,
 or generated-artifact change requires one fully staged authoritative receipt.
@@ -65,9 +77,8 @@ silent full run.
 
 Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
-SECONDS` supplies an explicit bounded wait. The native ledger and closure
-checks preserve the immutable-input/final-reread contract of scripts 13 and 16;
-those scripts still provide standalone `--refresh-and-check` generation.
+SECONDS` supplies an explicit bounded wait. Native ledger and closure checks
+and refreshes preserve the atomic immutable-input/final-reread contract.
 State-form execution keeps its reviewed 64 main and 17 counterfactual shards
 under a bounded four-worker scheduler with canonical output and fail-fast
 cancellation between shards.

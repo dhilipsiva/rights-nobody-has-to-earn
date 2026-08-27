@@ -24,6 +24,8 @@ pub(crate) const STEP_NAME: &str = "constitutional-closure and model-allocation 
 const OUTPUT: &str = "new-book-plans/constitutional-closure-and-model-allocation-audit.md";
 const STRUCTURAL_CONTROL_COUNT: usize = 74;
 const EXPECTED_POWER_COUNT: usize = 210;
+pub(super) const CURRENT_AUDIT_CONTROL_REF: &str =
+    concat!("src/checks/ledger/closure.rs::fn negative_", "controls(");
 
 const MODEL_NAMES: [(&str, &str); 7] = [
     ("FS-RTE-01", "Nibli formal entailment"),
@@ -2442,7 +2444,7 @@ fn render(
     line!("## Reproduce");
     line!();
     line!("```bash");
-    line!("python3 new-book-plans/16-constitutional-closure.py --check");
+    line!(super::CLOSURE_REFRESH_COMMAND);
     line!("```");
     line!();
     Ok(out.join("\n"))
@@ -2564,21 +2566,29 @@ fn append_control_audit_value(source: &mut Value, title: &str) -> ClosureResult<
     let audit_object = value_object_mut(&mut audit, "scope audit")?;
     audit_object.insert("id".to_owned(), Value::String("FS-SAU-98".to_owned()));
     audit_object.insert("title".to_owned(), Value::String(title.to_owned()));
-    if audit_object.contains_key("verification_receipt_ref") {
-        audit_object.insert("result".to_owned(), Value::String("pending".to_owned()));
-        audit_object.insert(
-            "commands".to_owned(),
-            Value::Array(
-                [
-                    "python3 new-book-plans/13-full-society-ledger.py --refresh-and-check",
-                    "python3 new-book-plans/16-constitutional-closure.py --refresh-and-check",
-                    "./verify.sh --emit-receipt new-book-plans/verification-receipts",
-                ]
+    audit_object.insert(
+        "control_refs".to_owned(),
+        Value::Array(
+            [
+                super::LEDGER_CURRENT_AUDIT_CONTROL_REF,
+                CURRENT_AUDIT_CONTROL_REF,
+            ]
+            .into_iter()
+            .map(|reference| Value::String(reference.to_owned()))
+            .collect(),
+        ),
+    );
+    audit_object.insert(
+        "commands".to_owned(),
+        Value::Array(
+            super::CURRENT_AUDIT_COMMAND_PREFIX
                 .into_iter()
                 .map(|command| Value::String(command.to_owned()))
                 .collect(),
-            ),
-        );
+        ),
+    );
+    if audit_object.contains_key("verification_receipt_ref") {
+        audit_object.insert("result".to_owned(), Value::String("pending".to_owned()));
         audit_object.remove("verification_receipt_ref");
     }
     audits.push(audit);
@@ -4178,6 +4188,45 @@ mod tests {
 
     fn context() -> Context {
         Context::from_test_root(PathBuf::from(env!("CARGO_MANIFEST_DIR")))
+    }
+
+    #[test]
+    fn control_audit_fixture_uses_the_native_current_audit_contract() {
+        let loaded = super::super::load_source(&context()).expect("typed ledger source");
+        let mut source = serde_json::to_value(&loaded.source).expect("ledger JSON value");
+        append_control_audit_value(&mut source, "Native current audit")
+            .expect("append control audit");
+        let audit = source["scope_audits"]
+            .as_array()
+            .and_then(|audits| audits.last())
+            .expect("appended scope audit");
+        assert_eq!(
+            audit["control_refs"],
+            serde_json::json!([
+                concat!("src/checks/ledger.rs::fn negative_", "controls("),
+                concat!("src/checks/ledger/closure.rs::fn negative_", "controls(")
+            ])
+        );
+        assert_eq!(
+            audit["commands"],
+            serde_json::json!([
+                "./verify.sh --refresh full-society-ledger",
+                "./verify.sh --refresh constitutional-closure",
+                "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+            ])
+        );
+    }
+
+    #[test]
+    fn active_closure_renderer_reproduces_through_the_native_refresh_mode() {
+        let loaded = super::super::load_source(&context()).expect("typed ledger source");
+        let resolution =
+            super::super::compute_resolution(&loaded.source).expect("defect resolution");
+        let contract =
+            validate_contract(&loaded.source, &resolution).expect("typed closure contract");
+        let rendered = render(&loaded.source, &contract, &resolution).expect("closure report");
+        assert!(rendered.contains(super::super::CLOSURE_REFRESH_COMMAND));
+        assert!(!rendered.contains("python3 new-book-plans/16-constitutional-closure.py"));
     }
 
     fn assert_exact(actual: &str, expected: &str) {
