@@ -5,8 +5,8 @@ itself, let you do anything to anybody. For that you need the pen: the credentia
 makes your findings count.
 
 Two people with a pen, examining the same person and each recording what they found,
-can void that person's credibility, and strip what they have earned along with it. That is the
-sharpest instrument in the society, and the question of who is allowed to pick it up is
+can void that person's credibility and record a loss against that person's
+recognition. That is the sharpest instrument, and who may pick it up is
 therefore the question this chapter is about.
 
 A pen, not the pen: there are two, and they are not interchangeable. One is issued to

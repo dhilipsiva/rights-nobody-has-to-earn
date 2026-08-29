@@ -59,6 +59,16 @@ you. There is no field for your wealth, your religion, your ancestry, your polit
 your health, your movements, or your associations. There is no field for what you are
 likely to do. There is no field for what someone suspects.
 
+The economic rules do not reopen that file. Raw income, wealth, tax,
+contribution, insurance, credit, and equality records remain outside the
+consequential record about a person. Where a rule needs a worker-status, title,
+liability, licence, tax, credit, insolvency, private-power, or scarcity decision,
+it may receive only the narrow, authenticated, challengeable result needed for
+that purpose. That result cannot be reused as a general description of the
+person or renamed to bypass a conclusion that must be worked out. There is still
+no general score for productivity, deservingness, employability, contribution,
+or economic risk.
+
 None of this is because those things were considered and rejected on principle,
 though they were. It is because no slot on the list holds a feeling about you. If you
 wanted to write down that someone seems untrustworthy, you would find you had no way to
@@ -152,8 +162,8 @@ each of them appearing by name.
 This is the same principle three times over, and it is the load-bearing one in the
 whole design:
 **the conclusions that matter are not writable. They are only derivable.** Every power
-in this society — the power to void someone's credibility, to place them somewhere, to
-strip what they have earned — is a conclusion at the end of a chain of ordinary
+in this society — the power to void someone's credibility, to place them somewhere, or
+to record a loss against recognition — is a conclusion at the end of a chain of ordinary
 facts. There is no back door where you write the conclusion directly and skip the
 chain, because the door was never built.
 

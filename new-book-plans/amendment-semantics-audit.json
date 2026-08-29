@@ -5,9 +5,9 @@
   "status": "bounded_source_mutation_audit_not_amendment_assurance",
   "evidence_role": "exposes_semantic_gap",
   "subprocess_timeout_seconds": 60,
-  "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
-  "assertion_surface_contracts_sha256": "bbce3486647a9ff90e2f302e4eb3059852df6acea12cb39d08291a81d59c4577",
-  "record_integrity_assurance_case_sha256": "d682d0ff45f264362af14625f6e8fe2cb208b7e17e6252796c4366244e69ceda",
+  "constitution_sha256": "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
+  "assertion_surface_contracts_sha256": "020d7d78b60fa1cb66ad33ef5d473c27a79777c545c50c14605960eded242cbc",
+  "record_integrity_assurance_case_sha256": "30b6e7737bc6f0d09bcd408b355128ad02bf55a4f49172dc0b20ba24e0db1975",
   "label_verdict_meanings": {
     "blocked_label": "The supplied snapshot derives `false(amendment)` and does not derive `become(amendment, Law)`; this says nothing about whether a source edit occurred.",
     "passing_label": "The supplied snapshot derives `become(amendment, Law)` and not `false(amendment)`; no current rule reads that conclusion or applies source text.",
@@ -49,7 +49,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
+      "expected_source_sha256": "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
       "source_assertions": [],
       "steps": [
         {
@@ -90,7 +90,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
+      "expected_source_sha256": "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
       "source_assertions": [],
       "steps": [
         {
@@ -146,7 +146,7 @@
         }
       ],
       "mutation_sha256": "e52d60131b46210ec636eee54512b4c0312de125bdb65633e73487069b65bc16",
-      "expected_source_sha256": "493fda4717f046f81651be646f798e6b01954631367aa3752ede2b080b8c9386",
+      "expected_source_sha256": "255637a9348c65221f211270912d9d1fcd1577223a8a178f82aac93ef3b7ada5",
       "source_assertions": [
         {
           "kind": "no_relation_first_argument_atom",
@@ -234,7 +234,7 @@
         }
       ],
       "mutation_sha256": "fe156cd24bae96eaf28a05f2d3804aa286fc7fd5838f45d6ff41d93ac2cd91f1",
-      "expected_source_sha256": "53577ecc9c395d27696ff9d3c9fbd4e059d6fab23a42f76a82c18dd600301010",
+      "expected_source_sha256": "1420cd7ffd520e4cfc79b1a5a5f443e31dbcefb23f6cd7a4655097b4d0ca06fe",
       "source_assertions": [],
       "steps": [
         {
@@ -327,7 +327,7 @@
         }
       ],
       "mutation_sha256": "3736b232fff93fde2467bc640ed44c45a54f54d24a08a221fea9d8447eef3414",
-      "expected_source_sha256": "474c1575c1d5953124e67f638e0256362e3519171cd059be2a5625cfc1cdca60",
+      "expected_source_sha256": "6651a810d91f7724d1dd2f4d33a0affa1103936f53c7d3d3e76c54e5d17c5717",
       "source_assertions": [],
       "steps": [
         {
@@ -407,7 +407,7 @@
         }
       ],
       "mutation_sha256": "4d43b32e2109add1b433ba6b15376badd73853e3194290c33537cc50cc512082",
-      "expected_source_sha256": "ba6986d71a8e0cb5910e705598b415de4991ada19b321752e49fbeb51f452254",
+      "expected_source_sha256": "d6366b22afda9c36b24bb03939370a505afd7f842eea4f777d26356f27cdda7a",
       "source_assertions": [],
       "steps": [
         {
@@ -460,7 +460,7 @@
       },
       "mutations": [],
       "mutation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "expected_source_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
+      "expected_source_sha256": "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
       "source_assertions": [],
       "steps": [
         {
@@ -505,7 +505,7 @@
         }
       ],
       "mutation_sha256": "c1a343199fe4452cd74ba091f30dccfc8379048a018f296540fc1aefb87c11f4",
-      "expected_source_sha256": "6c175c4492a538c48c611663f61932cd1c568f64448e4cfc763e91b883548537",
+      "expected_source_sha256": "2c935e2e704c2bb90c6d21ff797d67b676588970e65143414b9e373558a375d9",
       "source_assertions": [],
       "steps": [
         {
@@ -548,7 +548,7 @@
         }
       ],
       "mutation_sha256": "c8ce9aea42be9cc95f1fce7551246b19c0a4781d50cddb505e19f9a582cf87ea",
-      "expected_source_sha256": "3dd915132a5da47196b5c81309f9ae7a055aa680c2804bad9f2a3d367b9c0973",
+      "expected_source_sha256": "5047ffa72015cb308706d442a12bfe0c4eba7f680bb6719bcdb855d2ed488160",
       "source_assertions": [],
       "steps": [
         {
@@ -601,7 +601,7 @@
       "future_trigger": "Revise if a verified exact-diff binding, semantic review, vocabulary-entrenchment rule, or source-transition mechanism lands."
     },
     {
-      "artifact_ref": "book-1/08-what-you-are-owed.md::At the floor layer, three hostile routes remain syntactically reachable.",
+      "artifact_ref": "book-1/08-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable. That is no longer the",
       "current_claim": "The floor layer still permits the tested credibility, recognition, and compulsion routes, while a separate derived liberty shell now records person-held barriers against their lawful use; neither result proves institutional enforcement.",
       "classification": "revised_and_scoped",
       "reason": "The source mutation cases still test the floor's narrow anti-sanction property, while the new liberty family adds an independent normative layer and explicitly leaves operation and enforcement unestablished.",
@@ -622,7 +622,7 @@
       "future_trigger": "Reassess if source authorship, semantic authorization, deployment identity, rollback protection, or independently assured transition evidence lands."
     },
     {
-      "artifact_ref": "book-1/15-the-five-joints.md::That refusal does not deliver the floor",
+      "artifact_ref": "book-1/15-the-five-joints.md::narrow mechanism still blocks punishment for absence rather than the",
       "current_claim": "The current anti-sanction refusal is narrow: it does not deliver the floor, block every hostile rule, stop defunding, or preserve the source.",
       "classification": "revised_and_scoped",
       "reason": "The concealed-shape case removes the food promise while the anti-sanction refusal still fires, proving that the structural wall and delivered constitutional promise are different claims.",

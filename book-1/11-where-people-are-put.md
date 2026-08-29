@@ -12,6 +12,15 @@ typed fact at(person, PlacementHome). That fact means only that this placement-h
 option is available. It is not civil residence, ownership, household membership,
 protected family life, or proof that housing was delivered.
 
+The economic constitution keeps another boundary beside that one. A dwelling
+claim, a tenancy, a cooperative share, customary tenure, public housing,
+household residence, and private ownership are different legal relations.
+Informal or imperfect title does not erase the claim to an adequate secure
+dwelling, and the housing floor does not promise ownership or perpetual control
+of one asset. Eviction or foreclosure that threatens the floor requires law,
+notice, a hearing, proportionality, review, and a real continuity route. None of
+those rules turns this placement-home entry into title or proof of delivery.
+
 The old unary family entry remains in the cast, but it does no placement work. A person
 with family and a person without it receive the same result when every relevant fact is
 otherwise the same. That is now a constitutional wall: family form, kinship, caregiving,

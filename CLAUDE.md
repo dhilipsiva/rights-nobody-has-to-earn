@@ -448,6 +448,17 @@ authenticates an economy, proves scarcity or action, or receives a universal
 economic score. The controlling record is
 `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
 
+The preceding paragraph records the state at ratification. **Implementation
+supersession, 2026-08-28.** `FS-CVF-006`, the 28 economic power contracts, three
+carry contracts, `FS-CCE-223` through `FS-CCE-367`, the 24-case acceptance
+matrix and its pins and counterfactuals, reviewed references, and approved Book
+1 prose are now formalized and prose-landed. This structural landing remains
+source- and repository-bound: it proves no operating economy, authenticated
+external finding, institutional action, delivery, liveness, affordability,
+supply, capacity, stability, fiscal or monetary performance, scarcity, or
+empirical feasibility. The current source still awaits its receipt-bound
+repository audit.
+
 **The family, dependency, reproduction, and collective/plurality baselines are
 author-ratified (2026-08-08): independent personhood + supported agency + modular
 plural families + reproductive bodily authority + differentiated collective

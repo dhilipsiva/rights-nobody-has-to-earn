@@ -84,6 +84,16 @@ family's legal conclusions while leaving unrelated personhood intact.
 legacy two-place finding conclusion remains while all 14 typed reader duties
 disappear.
 
+`no-economic-independent-current-review-061` through
+`no-economic-independent-current-review-088` are the economic-power
+current-source guards on separate copies. Each removes only the two
+`~($source = $record_review)` joins in one card's current and reviewed-result
+rules. Its paired pin shows that card's fused writer and reviewer deriving the
+bounded result only after those separations are removed. The dependency
+observations in the private-power, spending, tax-collection,
+scarcity-allocation, and settlement routes keep each remedy or execution power
+joined to the exact reviewed result it consumes.
+
 Regenerate the changed-line and added-line fixtures with:
 
 ```
@@ -176,3 +186,32 @@ The family and life-course suite adds four one-line deletion fixtures:
 - `no-pregnancy-authority` removes only pregnancy continuation and termination authority while retaining the fetal-override refusal.
 
 They are regenerated from `constitution.nibli` after every constitutional edit exactly like the equality deletion fixtures.
+
+## Economic, labour, property, and fiscal fixtures
+
+The economic suite adds three one-line deletion fixtures, three family-wide
+deletion fixtures, and 28 card-specific changed-line fixtures:
+
+- `no-economic-floor-gate` removes only the rule that refuses price, wealth,
+  credit, contribution, insurance, or ability-to-pay gates on the floor;
+- `no-economic-data-wall` removes only the purpose limitation on contribution
+  records;
+- `no-economic-work-freedom` removes only the choose, refuse, leave, and change
+  work barrier; and
+- `no-economic-direct-effects` removes all 145 independently registered
+  person-held economic effects, proves each exact effect disappears, and keeps
+  personhood as a control;
+- `no-economic-power-duty-bridges` removes the 171 power-conditioned and
+  alternate-review duty conclusions while retaining a source-bound always-on
+  duty and the direct-effect family as controls; and
+- `no-economic-carry-results` removes the six non-power benefit, title, and
+  liability current/result rules, proves every exact carry conclusion
+  disappears, and keeps a person-held economic barrier as a control; and
+- `no-economic-independent-current-review-061` through `-088` each remove the
+  source-writer/current-reviewer separations from exactly one economic power
+  card.
+
+The single-line deletion fixtures retain adjacent effects as controls.
+Regenerate all 34 fixtures from `constitution.nibli` after every source edit;
+the native verifier checks their exact one-line, 171-line, 145-line, six-line,
+or two-removed/two-added diff shapes before executing their pins.

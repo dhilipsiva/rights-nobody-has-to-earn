@@ -30,6 +30,16 @@ independent bodies, and determine current lawful authority one power at a time.
 That authority depends on a positive, current, source-bound record and can end
 with its mandate or a certified successor. Public answerability does not.
 
+The economic rules add no third route into this chapter's permanent
+answerability. A landlord, platform, lender, insurer, utility, monopoly,
+cooperative, charity, or mutual-aid body does not become a public institution
+merely because it is large or important. A separate, contestable finding may
+nevertheless bind one exact public-facing or essential function to fair access,
+continuity, reasons, portability, audit, challenge, and remedy. Those duties
+confer no wider public authority and do not govern unrelated private or
+expressive life. This is responsibility for a function, not public status for
+the whole actor.
+
 The second is to be seated. The electorate seats people, and so does the
 convocation — a second seating body the next chapter introduces properly — and a seat
 from either carries public answerability on the same terms. Someone was chosen, and
@@ -74,8 +84,8 @@ this, did something the design permits: Rebel exposed Boss.
 Then the electorate recalled Boss.
 
 Ask what Boss has now. Not the power: Boss holds no credential, and nothing Boss
-examines or documents can count toward voiding anyone or earn Boss anything. The
-recall worked. Every operational capacity Boss had is gone.
+examines or documents can count toward voiding anyone or derive recognition for Boss.
+The recall worked. Every operational capacity Boss had is gone.
 
 But Boss is still answerable. Permanently. And that is what saves Rebel.
 

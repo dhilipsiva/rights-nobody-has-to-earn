@@ -2573,14 +2573,14 @@ mod tests {
         assert_eq!(inventory.derived.len(), 39);
         assert_eq!(inventory.writable().len(), 43);
         assert_eq!(inventory.route_fingerprints.len(), 81);
-        assert_eq!(inventory.statement_fingerprints.len(), 1_213);
+        assert_eq!(inventory.statement_fingerprints.len(), 1_419);
         let fingerprint_bytes = format!(
             "{}\n",
             fingerprint_output(&inventory).expect("live fingerprints render")
         );
         assert_eq!(
             sha256(fingerprint_bytes),
-            "77e617ab92fa078e26d0d83720bf2747f79ef392f910ffb839a0485f21401f8c",
+            "6694b910c38afe2797d9d3189e6d5f98e01a14f127b18a5e26adb15c499ee13b",
             "native --fingerprints bytes differ from Python"
         );
 

@@ -135,31 +135,36 @@ PROSE_PAYLOADS = (
     ("OBL-B1-05", "book-1/00-opening-note.md", 1264, "eedf0fa0a4b2f0bd10be48f29132048e7b3b7922b76670db5a9a9408a315b6b2"),
     ("OBL-B1-06", "book-1/02-public-answerability.md", 956, "8f5746aa21893ffe3b3f48431300c453b2bd054f8b34542ebf7438ddcc2a9cdf"),
     ("OBL-B1-07", "book-1/08-what-you-are-owed.md", 523, "e69ccea1f8840f67e154e394c2c5f83d3c23cfd10d6efedff6cee9b514a87e79"),
-    ("OBL-B1-09", "book-1/08-what-you-are-owed.md", 4365, "4436ab741d4a7888651b47fafbe92f2aec195ccf434fc618d40bf1a734ab8edf"),
     ("OBL-B1-13", "book-1/14-when-the-system-notices-it-broke.md", 1130, "a0706ad6a5005e4828b5dc8f5cf5142f51ad9bf155cece94b3cdc389f196390d"),
     ("OBL-B1-14", "book-1/15-the-five-joints.md", 659, "debd5f0e222b7102162f58e824fbd6d8c457949bb8bb3efc307221b16a3e813e"),
     ("OBL-B1-16", "book-1/method.md", 1537, "2db17589f28d3de01df371766288e57ee8fbc4c23766395105d1221ca66e3df1"),
     ("OBL-B1-17", "book-1/method.md", 1861, "9d144831cbd3eec27d92269d9d93d173247e9fee2aa36996a6f0b1a3ebcbfe5f"),
 )
-PROSE_AGGREGATE_SHA256 = "43fb9d9bbbaae83b9d5d542a0cb47278996bd42acc1d0c9bedffbefe1f195982"
+PROSE_AGGREGATE_SHA256 = "bfb4789b9c24b236d95c26f50448221000491c0d8e1161cd8089bbca7db1ec26"
 
 # DLV-B1-v1 supersedes OBL-B1-08, -10, -11, -12, and -15 in place. The
 # original OBL-B1-v1 bindings remain in the narrative register as historical
-# approval evidence; the live consumer binds the retained OBL payloads above
-# and the complete author-approved successor below.
+# approval evidence. ECON-B1-v1 later supersedes OBL-B1-09, DLV-B1-04, and
+# DLV-B1-07; the live consumer binds only the retained payloads in these first
+# two sets and the complete author-approved economic successor below.
 DELIVERY_PROSE_PAYLOADS = (
     ("DLV-B1-01", "book-1/08-what-you-are-owed.md", 5379, "2b7b5991c69e6ee6f5c8b2c57f6f328eab4885c8fb40660d6734c9c4eb540f27"),
     ("DLV-B1-02", "book-1/08-what-you-are-owed.md", 2925, "1c36283a3949033d8dbed4100fc58379db46caf86cb5f073a284852ee262f4e7"),
     ("DLV-B1-03", "book-1/08-what-you-are-owed.md", 1244, "0eaa7c900e3945250dc357371537dc3eb085607192f1c0ee60f383c3c3cf1cfa"),
-    ("DLV-B1-04", "book-1/13-the-one-thing-taken.md", 511, "7975036c9d09c7ca9272915a34386071a08cf982e3f38376a79a2aba08c3c349"),
     ("DLV-B1-05", "book-1/13-the-one-thing-taken.md", 2759, "78f6634729415c4b4f43d6050cdaf6fc76400405d132cbb89d53c31582799688"),
     ("DLV-B1-06", "book-1/14-when-the-system-notices-it-broke.md", 1819, "fff58727f9a2ff4b242262dc6d0a51b1cf5b27b9e543a46c2668423a6a14b2af"),
-    ("DLV-B1-07", "book-1/14-when-the-system-notices-it-broke.md", 2970, "65931cc892ed84196d4deff2d84a4b2900a56833575436a1b54136fd509a75ec"),
     ("DLV-B1-08", "book-1/15-the-five-joints.md", 4099, "7b8d518161c828b22269fafd950d8ecfe4699cf36814a58292384fb46eaec8ac"),
     ("DLV-B1-09", "book-1/method.md", 1097, "0eb3513d83ca9a44b6a73ea539a6632032a78bec2834e104e582d4185cbfcd6e"),
     ("DLV-B1-10", "book-1/method.md", 2439, "6c301a235d19332992cf2ad6643b8ae3f47c85488bd1be19cb5f9ac456d638cc"),
 )
-DELIVERY_PROSE_AGGREGATE_SHA256 = "bcb95d1e9b826fd426a0820a3b9b7c8df4dac9e1fd7e91d02a430da57f6886f3"
+DELIVERY_PROSE_AGGREGATE_SHA256 = "eeff5e40301bfaf85b9a1b5eb81de6821c790117aebe923f513d5bcabf0b34fd"
+
+ECONOMIC_PROSE_PAYLOADS = (
+    ("ECON-B1-01", "book-1/08-what-you-are-owed.md", 5054, "ea166a02e26f99691b151b730258aa65a8d763be6ce29f02a9a83f19b883b119"),
+    ("ECON-B1-02", "book-1/13-the-one-thing-taken.md", 541, "bee2c6504c7edd58c8ca2730bac7b4a18a1ac4d02b88cb2b6418f05bea6bfe3e"),
+    ("ECON-B1-03", "book-1/14-when-the-system-notices-it-broke.md", 4411, "115e59dbc15acfc05324bdd34478132cbfd9ed54df9fb4f1eef937adbdfd66d7"),
+)
+ECONOMIC_PROSE_AGGREGATE_SHA256 = "e642322b7a787afb6adc7606c906b56e321385c5808a1418927e9239c6c2597d"
 
 
 def _block(text: str, begin: str, end: str) -> str:
@@ -748,7 +753,13 @@ def validate_prose_payloads() -> None:
         for _, rel, length, digest in DELIVERY_PROSE_PAYLOADS
     ]
     if hashlib.sha256(b"\n\n".join(delivery_payloads)).hexdigest() != DELIVERY_PROSE_AGGREGATE_SHA256:
-        raise RuntimeError("DLV-B1-v1 aggregate prose digest changed")
+        raise RuntimeError("retained DLV-B1-v1 aggregate prose digest changed")
+    economic_payloads = [
+        _find_payload(ROOT / rel, length, digest)
+        for _, rel, length, digest in ECONOMIC_PROSE_PAYLOADS
+    ]
+    if hashlib.sha256(b"\n\n".join(economic_payloads)).hexdigest() != ECONOMIC_PROSE_AGGREGATE_SHA256:
+        raise RuntimeError("ECON-B1-v1 aggregate prose digest changed")
 
 
 def _protected_claim_refs() -> tuple[str, ...]:
@@ -1332,8 +1343,9 @@ def check() -> None:
     print(
         f"obligations: PASS - 25 effects, {len(formal_statements())} exact statements, "
         f"{main} main pins, {independence}/{source_count}/{reader} counterfactual pins, "
-        f"{len(PROSE_PAYLOADS)} retained OBL-B1-v1 and "
-        f"{len(DELIVERY_PROSE_PAYLOADS)} successor DLV-B1-v1 byte-exact prose payloads, "
+        f"{len(PROSE_PAYLOADS)} retained OBL-B1-v1, "
+        f"{len(DELIVERY_PROSE_PAYLOADS)} retained DLV-B1-v1, and "
+        f"{len(ECONOMIC_PROSE_PAYLOADS)} successor ECON-B1-v1 byte-exact prose payloads, "
         "12 watched mutation seams, "
         "and one exact obliged consumer"
     )

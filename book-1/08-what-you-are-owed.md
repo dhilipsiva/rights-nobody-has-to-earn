@@ -138,40 +138,28 @@ The last chapter established that no law can imprison you for lacking anything o
 the floor. That protection is real and it is narrower than it sounds, in three specific
 ways, each of which was tested rather than assumed.
 
-At the floor layer, three hostile routes remain syntactically reachable. That
-is no longer the whole constitutional answer.
+At the floor layer, old hostile rules remain loadable. That is no longer the
+whole constitutional answer.
 
-**Your credibility is still reachable through the old floor machinery.** A rule
-that voids the credibility of anyone who does not believe can still be written.
-It cannot imprison them, but it can mark them as someone whose word does not
-count  — and the previous chapter on clawback showed what follows: everything
-they earned goes too.
+A hostile rule can still make the absence of belief or company feed the older
+credibility or recognition machinery. That exposes the exact edge of the
+floor's own protection. It does not make poverty a lawful consequence.
+Recognition is not income, property, payment, credit, insurance, a pension,
+authority, or political weight. Losing it can change none of those things.
 
-**Your recognition is still reachable through that machinery.** A rule that
-claws back the earnings of anyone who keeps no company is writable in the same
-way. Not prison. Just poverty, indefinitely.
+Nor is private life left open to manufacture. Separate liberty and economic
+barriers protect belief, expression, friendship, intimacy, association,
+voluntary care, gifts, pooling, domestic production, mutual aid, and lawful
+exchange from public prescription, outcome certification, and social scoring.
+Privacy does not shelter violence, forced labour, captivity, document control,
+or obstructed exit.
 
-**The floor itself does not prevent compulsion.** It blocks punishment for
-*absence* and says nothing about manufacture. That limit is why the constitution
-now carries a separate liberty shell. For every person it records barriers
-against arbitrary interference with privacy, coerced bodily choice, unsupported
-movement restrictions, compelled association or conscience, prescribed
-expression or family form, unequal civic status, an unreviewed consequential
-decision, and prescription of private or civic life.
-
-Those barriers are rules, not delivery promises and not decorations on the
-floor. They also do not turn every incompatible sentence into a parser error.
-The old bad rules can still be loaded to test the floor's own edge; the separate
-liberty conclusions say that public power may not lawfully use them. Whether an
-institution notices that conclusion, stops an act, or supplies a remedy remains
-outside what this record can prove.
-
-The old tests therefore stay. They walk through the doors in the floor layer
-and show exactly where that layer ends. Then the liberty suite asks a different
-question: whether the person-held barrier derives without a service, score,
-custody record, or delivery result as its premise. Both results matter. One
-prevents the floor from being credited with a protection it does not provide;
-the other prevents liberty from being smuggled back into the floor.
+The old tests remain because they measure the floor mechanism's own boundary.
+The separate constitutional tests then ask whether a person's liberty and
+economic position remain protected without using delivery, contribution,
+recognition, or approved conduct as a premise. One result prevents the floor
+from receiving credit for work done elsewhere. The other prevents an old
+syntactic opening from being described as lawful public power.
 
 Equality is separate again. The floor says what nobody may be left without;
 equality asks whether a rule or practice marks some people for a worse route.
@@ -226,18 +214,30 @@ restore the person after a breach. Being public does not assign every task to
 every office. Each duty belongs only where a current lawful source names the
 bearer, function, jurisdiction, and scope.
 
-A public function cannot shed its duties by being contracted out. Whoever
-performs that function inherits its exact duties for that work. The contractor
-does not thereby become a public body, acquire public authority, or gain a
-wider mandate.
+A public function cannot shed its duties by being contracted out, insured,
+paid through a voucher, or assigned to a public, cooperative, mutual,
+nonprofit, charitable, household, or private provider. Whoever performs that
+function carries its exact duties for that work and gains no wider public
+status or authority.
 
-The reverse boundary matters just as much. A private duty must be stated
-expressly. The equality and economic duties already named for particular
-public-facing domains and forms of public-scale power remain because their
-sources name them. A constitutional subject, a relationship, care, dependency,
-ownership, or market activity by itself creates no direct private duty. Other
-private interference reaches the public duty to protect and the justice route;
-it is not turned into a general power over private life.
+The public responsibility to finance, secure, and maintain the floor remains
+throughout. Price, wealth, credit, contribution, insurance status, or ability
+to pay cannot decide access. Cash, a voucher, or an insurance approval is an
+instrument, not delivery; it counts only when independent evidence from the
+receiving side establishes timely, accessible, adequate real access.
+
+Voluntary household, charitable, mutual-aid, or private provision may prevent
+needless duplicate delivery when independent evidence shows that the protected
+condition currently holds. It never extinguishes the entitlement or the public
+responsibility. Withdrawal, dispute, inaccessibility, inadequacy, or failure
+requires public continuity.
+
+The reverse boundary matters just as much. No household, relationship,
+association, charity, or mutual-aid group is presumed to provide another
+person's floor. A private duty must be stated expressly for the function
+undertaken or the public-scale power independently found. Ordinary ownership,
+exchange, care, dependency, or intimate life creates no general public power
+over private life.
 
 Duties do not all run to the same place. A duty owed to a person, a duty owed
 to a source-defined common, a duty of an office or role, and a voluntary
@@ -275,7 +275,7 @@ the naming.
 doing so, on the same terms as anyone who exposes any other authority. It owes,
 and it is answerable, and it was never given the credential that makes an
 examination count — so it can write down what it likes about you and none of it
-will void your credibility or take what you earned. The debt and the pen are in
+will void your credibility or record a loss against your recognition. The debt and the pen are in
 different hands. That answerability rests on an entry, like everything else
 here, and the chapter on public answerability prices exactly what deleting its
 supporting entry would do.

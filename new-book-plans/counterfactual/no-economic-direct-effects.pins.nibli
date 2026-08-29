@@ -1,0 +1,587 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: all person-held economic direct effects are removed
+:expect-pins 146
+
+# FS-CCE-223 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicFormSuppression).
+# => FALSE
+
+# FS-CCE-224 disappears with its direct economic effect rule.
+? prevents(Adam, OwnershipFormImmunity).
+# => FALSE
+
+# FS-CCE-225 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicCorridorWaiver).
+# => FALSE
+
+# FS-CCE-226 disappears with its direct economic effect rule.
+? prevents(Adam, FloorProvisionResponsibilityDischarge).
+# => FALSE
+
+# FS-CCE-227 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicFactorFloorGate).
+# => FALSE
+
+# FS-CCE-228 disappears with its direct economic effect rule.
+? prevents(Adam, PaymentInstrumentAsDelivery).
+# => FALSE
+
+# FS-CCE-229 disappears with its direct economic effect rule.
+? prevents(Adam, VoluntaryProvisionPublicDischarge).
+# => FALSE
+
+# FS-CCE-230 disappears with its direct economic effect rule.
+? prevents(Adam, VoluntaryProvisionWithdrawalWithoutContinuity).
+# => FALSE
+
+# FS-CCE-231 disappears with its direct economic effect rule.
+? prevents(Adam, FloorContributionCondition).
+# => FALSE
+
+# FS-CCE-232 disappears with its direct economic effect rule.
+? prevents(Adam, RecognitionPropertyQualification).
+# => FALSE
+
+# FS-CCE-233 disappears with its direct economic effect rule.
+? prevents(Adam, SupplementWorthScore).
+# => FALSE
+
+# FS-CCE-234 disappears with its direct economic effect rule.
+? prevents(Adam, WorkChoiceRefusalExitDenial).
+# => FALSE
+
+# FS-CCE-235 disappears with its direct economic effect rule.
+? prevents(Adam, WorkConstitutionalGate).
+# => FALSE
+
+# FS-CCE-236 disappears with its direct economic effect rule.
+? prevents(Adam, CustodyForcedWork).
+# => FALSE
+
+# FS-CCE-237 disappears with its direct economic effect rule.
+? prevents(Adam, CustodyLabourProtectionDenial).
+# => FALSE
+
+# FS-CCE-238 disappears with its direct economic effect rule.
+? prevents(Adam, ParticularJobEntitlement).
+# => FALSE
+
+# FS-CCE-239 disappears with its direct economic effect rule.
+? prevents(Adam, OwnershipBasedLabourMinimumDenial).
+# => FALSE
+
+# FS-CCE-240 disappears with its direct economic effect rule.
+? prevents(Adam, CollectiveActionSuppression).
+# => FALSE
+
+# FS-CCE-241 disappears with its direct economic effect rule.
+? prevents(Adam, MinimumServiceIndividualCompulsion).
+# => FALSE
+
+# FS-CCE-242 disappears with its direct economic effect rule.
+? prevents(Adam, IndividualWorkConscription).
+# => FALSE
+
+# FS-CCE-243 disappears with its direct economic effect rule.
+? prevents(Adam, BlanketStrikeBan).
+# => FALSE
+
+# FS-CCE-244 disappears with its direct economic effect rule.
+? prevents(Adam, WorkerStatusLabelControl).
+# => FALSE
+
+# FS-CCE-245 disappears with its direct economic effect rule.
+? prevents(Adam, LabourLabelAsProof).
+# => FALSE
+
+# FS-CCE-246 disappears with its direct economic effect rule.
+? prevents(Adam, QualificationPersonStatusSpillover).
+# => FALSE
+
+# FS-CCE-247 disappears with its direct economic effect rule.
+? prevents(Adam, CompensationRecognitionCoupling).
+# => FALSE
+
+# FS-CCE-248 disappears with its direct economic effect rule.
+? prevents(Adam, PropertyArbitraryDeprivation).
+# => FALSE
+
+# FS-CCE-249 disappears with its direct economic effect rule.
+? prevents(Adam, HousingFloorOwnershipConflation).
+# => FALSE
+
+# FS-CCE-250 disappears with its direct economic effect rule.
+? prevents(Adam, TenureFormSuppression).
+# => FALSE
+
+# FS-CCE-251 disappears with its direct economic effect rule.
+? prevents(Adam, InformalTitleDwellingErasure).
+# => FALSE
+
+# FS-CCE-252 disappears with its direct economic effect rule.
+? prevents(Adam, EvictionForeclosureWithoutContinuity).
+# => FALSE
+
+# FS-CCE-253 disappears with its direct economic effect rule.
+? prevents(Adam, AcquisitionCompensationMiscalibration).
+# => FALSE
+
+# FS-CCE-254 disappears with its direct economic effect rule.
+? prevents(Adam, PublicWindfallCompensation).
+# => FALSE
+
+# FS-CCE-255 disappears with its direct economic effect rule.
+? prevents(Adam, EstateDebtBeyondInheritedValue).
+# => FALSE
+
+# FS-CCE-256 disappears with its direct economic effect rule.
+? prevents(Adam, PerpetualKnowledgeExclusivity).
+# => FALSE
+
+# FS-CCE-257 disappears with its direct economic effect rule.
+? prevents(Adam, KnowledgeExclusivityFloorCommonsBlock).
+# => FALSE
+
+# FS-CCE-258 disappears with its direct economic effect rule.
+? prevents(Adam, ContractWithoutMeaningfulConsent).
+# => FALSE
+
+# FS-CCE-259 disappears with its direct economic effect rule.
+? prevents(Adam, ContractCorridorWaiver).
+# => FALSE
+
+# FS-CCE-260 disappears with its direct economic effect rule.
+? prevents(Adam, ConsumerServiceAbuse).
+# => FALSE
+
+# FS-CCE-261 disappears with its direct economic effect rule.
+? prevents(Adam, EssentialConsumerDiscontinuity).
+# => FALSE
+
+# FS-CCE-262 disappears with its direct economic effect rule.
+? prevents(Adam, EnterpriseCapacityBeyondFunction).
+# => FALSE
+
+# FS-CCE-263 disappears with its direct economic effect rule.
+? prevents(Adam, EnterpriseHumanStanding).
+# => FALSE
+
+# FS-CCE-264 disappears with its direct economic effect rule.
+? prevents(Adam, UnconditionalLimitedLiability).
+# => FALSE
+
+# FS-CCE-265 disappears with its direct economic effect rule.
+? prevents(Adam, BeneficialControlConcealment).
+# => FALSE
+
+# FS-CCE-266 disappears with its direct economic effect rule.
+? prevents(Adam, EnterpriseTreasuryElectoralSpending).
+# => FALSE
+
+# FS-CCE-267 disappears with its direct economic effect rule.
+? prevents(Adam, UnattributedEnterprisePoliticalExpression).
+# => FALSE
+
+# FS-CCE-268 disappears with its direct economic effect rule.
+? prevents(Adam, CivicAssociationEnterpriseRelabeling).
+# => FALSE
+
+# FS-CCE-269 disappears with its direct economic effect rule.
+? prevents(Adam, CommercialConfidentialityOversightEvasion).
+# => FALSE
+
+# FS-CCE-270 disappears with its direct economic effect rule.
+? prevents(Adam, ExcessiveRequiredDisclosure).
+# => FALSE
+
+# FS-CCE-271 disappears with its direct economic effect rule.
+? prevents(Adam, ActorWidePublicScaleFinding).
+# => FALSE
+
+# FS-CCE-272 disappears with its direct economic effect rule.
+? prevents(Adam, PublicScaleLabelAsProof).
+# => FALSE
+
+# FS-CCE-273 disappears with its direct economic effect rule.
+? prevents(Adam, IntimateDependencyPublicServicePresumption).
+# => FALSE
+
+# FS-CCE-274 disappears with its direct economic effect rule.
+? prevents(Adam, PublicScaleDutyScopeSpillover).
+# => FALSE
+
+# FS-CCE-275 disappears with its direct economic effect rule.
+? prevents(Adam, PublicScaleRemedyDiscontinuity).
+# => FALSE
+
+# FS-CCE-276 disappears with its direct economic effect rule.
+? prevents(Adam, VoluntarySpherePrescription).
+# => FALSE
+
+# FS-CCE-277 disappears with its direct economic effect rule.
+? prevents(Adam, VoluntarySphereOutcomeCertification).
+# => FALSE
+
+# FS-CCE-278 disappears with its direct economic effect rule.
+? prevents(Adam, VoluntarySphereSocialScore).
+# => FALSE
+
+# FS-CCE-279 disappears with its direct economic effect rule.
+? prevents(Adam, ParticipantDependentStandingFloorCapacity).
+# => FALSE
+
+# FS-CCE-280 disappears with its direct economic effect rule.
+? prevents(Adam, ConfidentialHelpOrExitObstruction).
+# => FALSE
+
+# FS-CCE-281 disappears with its direct economic effect rule.
+? prevents(Adam, HouseholdPresumedFloorProvider).
+# => FALSE
+
+# FS-CCE-282 disappears with its direct economic effect rule.
+? prevents(Adam, CareSupplementEmploymentRewardConflation).
+# => FALSE
+
+# FS-CCE-283 disappears with its direct economic effect rule.
+? prevents(Adam, PrivateSphereViolenceCaptivityObstructionShield).
+# => FALSE
+
+# FS-CCE-284 disappears with its direct economic effect rule.
+? prevents(Adam, TaxCapacityPrincipleBreach).
+# => FALSE
+
+# FS-CCE-285 disappears with its direct economic effect rule.
+? prevents(Adam, TaxProcedureRightsDenial).
+# => FALSE
+
+# FS-CCE-286 disappears with its direct economic effect rule.
+? prevents(Adam, TaxCollectionFloorAssetDeprivation).
+# => FALSE
+
+# FS-CCE-287 disappears with its direct economic effect rule.
+? prevents(Adam, UnauthorizedFiscalAct).
+# => FALSE
+
+# FS-CCE-288 disappears with its direct economic effect rule.
+? prevents(Adam, FiscalReportingAuditRiskConcealment).
+# => FALSE
+
+# FS-CCE-289 disappears with its direct economic effect rule.
+? prevents(Adam, ConstitutionalBalancedBudgetDebtCeiling).
+# => FALSE
+
+# FS-CCE-290 disappears with its direct economic effect rule.
+? prevents(Adam, PublicDebtCorridorWaiver).
+# => FALSE
+
+# FS-CCE-291 disappears with its direct economic effect rule.
+? prevents(Adam, BudgetDeadlockEssentialDiscontinuity).
+# => FALSE
+
+# FS-CCE-292 disappears with its direct economic effect rule.
+? prevents(Adam, DigitalOnlyPaymentBackbone).
+# => FALSE
+
+# FS-CCE-293 disappears with its direct economic effect rule.
+? prevents(Adam, UnboundedMonetaryIndependence).
+# => FALSE
+
+# FS-CCE-294 disappears with its direct economic effect rule.
+? prevents(Adam, MonetaryReasonsDistributionAuditDenial).
+# => FALSE
+
+# FS-CCE-295 disappears with its direct economic effect rule.
+? prevents(Adam, ArbitraryMonetaryOfficerRemoval).
+# => FALSE
+
+# FS-CCE-296 disappears with its direct economic effect rule.
+? prevents(Adam, MonetaryFiscalVeto).
+# => FALSE
+
+# FS-CCE-297 disappears with its direct economic effect rule.
+? prevents(Adam, GeneralCreditEntitlement).
+# => FALSE
+
+# FS-CCE-298 disappears with its direct economic effect rule.
+? prevents(Adam, CreditInsuranceDecisionWithoutProcess).
+# => FALSE
+
+# FS-CCE-299 disappears with its direct economic effect rule.
+? prevents(Adam, PrivateInsuranceFloorGate).
+# => FALSE
+
+# FS-CCE-300 disappears with its direct economic effect rule.
+? prevents(Adam, ContributionSupplementNonportability).
+# => FALSE
+
+# FS-CCE-301 disappears with its direct economic effect rule.
+? prevents(Adam, ContributionRecordPurposeReuse).
+# => FALSE
+
+# FS-CCE-302 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicScoreReuse).
+# => FALSE
+
+# FS-CCE-303 disappears with its direct economic effect rule.
+? prevents(Adam, EarnedSupplementInsolvencyLoss).
+# => FALSE
+
+# FS-CCE-304 disappears with its direct economic effect rule.
+? prevents(Adam, PersonalInsolvencyFreshStartDenial).
+# => FALSE
+
+# FS-CCE-305 disappears with its direct economic effect rule.
+? prevents(Adam, InsolvencyFloorEssentialsToolsDeprivation).
+# => FALSE
+
+# FS-CCE-306 disappears with its direct economic effect rule.
+? prevents(Adam, DebtorImprisonment).
+# => FALSE
+
+# FS-CCE-307 disappears with its direct economic effect rule.
+? prevents(Adam, GeneralizedFraudException).
+# => FALSE
+
+# FS-CCE-308 disappears with its direct economic effect rule.
+? prevents(Adam, WagePensionFailureLoss).
+# => FALSE
+
+# FS-CCE-309 disappears with its direct economic effect rule.
+? prevents(Adam, ShareholderResidualRiskTransfer).
+# => FALSE
+
+# FS-CCE-310 disappears with its direct economic effect rule.
+? prevents(Adam, InsolvencyAssetEvasion).
+# => FALSE
+
+# FS-CCE-311 disappears with its direct economic effect rule.
+? prevents(Adam, EnterpriseFailureRemedyErasure).
+# => FALSE
+
+# FS-CCE-312 disappears with its direct economic effect rule.
+? prevents(Adam, EssentialServiceFailureDiscontinuity).
+# => FALSE
+
+# FS-CCE-313 disappears with its direct economic effect rule.
+? prevents(Adam, TemporaryEconomicPowerCustodyTemporalBorrowing).
+# => FALSE
+
+# FS-CCE-314 disappears with its direct economic effect rule.
+? prevents(Adam, ReviewSilenceAsApproval).
+# => FALSE
+
+# FS-CCE-315 disappears with its direct economic effect rule.
+? prevents(Adam, UnavailableReviewerNoAlternateRoute).
+# => FALSE
+
+# FS-CCE-316 disappears with its direct economic effect rule.
+? prevents(Adam, MissingEconomicPremiseAuthorityContinuation).
+# => FALSE
+
+# FS-CCE-317 disappears with its direct economic effect rule.
+? prevents(Adam, UnauthenticatedPhysicalScarcityFinding).
+# => FALSE
+
+# FS-CCE-318 disappears with its direct economic effect rule.
+? prevents(Adam, NonphysicalConditionAsScarcity).
+# => FALSE
+
+# FS-CCE-319 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityFloorRedefinition).
+# => FALSE
+
+# FS-CCE-320 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityEqualMinimumDisplacement).
+# => FALSE
+
+# FS-CCE-321 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityUnmetFloorSuccessLabel).
+# => FALSE
+
+# FS-CCE-322 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityIneffectiveDivisibleShare).
+# => FALSE
+
+# FS-CCE-323 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityUselessSplit).
+# => FALSE
+
+# FS-CCE-324 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityIrrelevantPriorityCriteria).
+# => FALSE
+
+# FS-CCE-325 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityGeneralWorthBenefitProxy).
+# => FALSE
+
+# FS-CCE-326 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityWorthProxy).
+# => FALSE
+
+# FS-CCE-327 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityArbitraryTieBreak).
+# => FALSE
+
+# FS-CCE-328 disappears with its direct economic effect rule.
+? prevents(Adam, ScarcityEcologicalBreachAuthorization).
+# => FALSE
+
+# FS-CCE-329 disappears with its direct economic effect rule.
+? prevents(Adam, StaleScarcityContinuation).
+# => FALSE
+
+# FS-CCE-330 disappears with its direct economic effect rule.
+? prevents(Adam, UnenumeratedCommonEconomicCompetence).
+# => FALSE
+
+# FS-CCE-331 disappears with its direct economic effect rule.
+? prevents(Adam, GeneralEconomicPreemption).
+# => FALSE
+
+# FS-CCE-332 disappears with its direct economic effect rule.
+? prevents(Adam, RegionalResidualCompetenceErasure).
+# => FALSE
+
+# FS-CCE-333 disappears with its direct economic effect rule.
+? prevents(Adam, StrongerRegionalProtectionDisplacement).
+# => FALSE
+
+# FS-CCE-334 disappears with its direct economic effect rule.
+? prevents(Adam, InternalEconomicPortabilityBarrier).
+# => FALSE
+
+# FS-CCE-335 disappears with its direct economic effect rule.
+? prevents(Adam, FiscalCompetitionEqualityEvasion).
+# => FALSE
+
+# FS-CCE-336 disappears with its direct economic effect rule.
+? prevents(Adam, CrossTierFiscalSourceBorrowing).
+# => FALSE
+
+# FS-CCE-337 disappears with its direct economic effect rule.
+? prevents(Adam, EqualisationFloorWithholding).
+# => FALSE
+
+# FS-CCE-338 disappears with its direct economic effect rule.
+? prevents(Adam, WrongTierPublicScaleFinding).
+# => FALSE
+
+# FS-CCE-339 disappears with its direct economic effect rule.
+? prevents(Adam, BroadEconomicConflictDisplacement).
+# => FALSE
+
+# FS-CCE-340 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicClaimInitiatorExclusion).
+# => FALSE
+
+# FS-CCE-341 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicFunctionFusion).
+# => FALSE
+
+# FS-CCE-342 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicRemedyTransitionDiscontinuity).
+# => FALSE
+
+# FS-CCE-343 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicEnforcementRightsRemoval).
+# => FALSE
+
+# FS-CCE-344 disappears with its direct economic effect rule.
+? prevents(Adam, EconomicEnforcementWithholdingGate).
+# => FALSE
+
+# FS-CCE-345 disappears with its direct economic effect rule.
+? prevents(Adam, OwnershipFormGuaranteedMarketShare).
+# => FALSE
+
+# FS-CCE-346 disappears with its direct economic effect rule.
+? prevents(Adam, OwnershipFormGuaranteedProfit).
+# => FALSE
+
+# FS-CCE-347 disappears with its direct economic effect rule.
+? prevents(Adam, OwnershipFormGuaranteedBailout).
+# => FALSE
+
+# FS-CCE-348 disappears with its direct economic effect rule.
+? prevents(Adam, OwnershipFormGuaranteedMonopoly).
+# => FALSE
+
+# FS-CCE-349 disappears with its direct economic effect rule.
+? prevents(Adam, RecipientSideProvenVoluntaryProvisionDuplicateCompulsion).
+# => FALSE
+
+# FS-CCE-350 disappears with its direct economic effect rule.
+? prevents(Adam, LawfulConditionalPossessionDenial).
+# => FALSE
+
+# FS-CCE-351 disappears with its direct economic effect rule.
+? prevents(Adam, LawfulConditionalUseDenial).
+# => FALSE
+
+# FS-CCE-352 disappears with its direct economic effect rule.
+? prevents(Adam, LawfulConditionalTransferDenial).
+# => FALSE
+
+# FS-CCE-353 disappears with its direct economic effect rule.
+? prevents(Adam, LawfulConditionalInheritanceDenial).
+# => FALSE
+
+# FS-CCE-354 disappears with its direct economic effect rule.
+? prevents(Adam, LawfulContractObstruction).
+# => FALSE
+
+# FS-CCE-355 disappears with its direct economic effect rule.
+? prevents(Adam, LawfulRefusalToContractObstruction).
+# => FALSE
+
+# FS-CCE-356 disappears with its direct economic effect rule.
+? prevents(Adam, FunctionBoundEnterpriseOwnershipCapacityDenial).
+# => FALSE
+
+# FS-CCE-357 disappears with its direct economic effect rule.
+? prevents(Adam, FunctionBoundEnterpriseContractCapacityDenial).
+# => FALSE
+
+# FS-CCE-358 disappears with its direct economic effect rule.
+? prevents(Adam, FunctionBoundEnterpriseAssociationCapacityDenial).
+# => FALSE
+
+# FS-CCE-359 disappears with its direct economic effect rule.
+? prevents(Adam, FunctionBoundEnterpriseLitigationCapacityDenial).
+# => FALSE
+
+# FS-CCE-360 disappears with its direct economic effect rule.
+? prevents(Adam, AttributedEnterprisePetitionSuppression).
+# => FALSE
+
+# FS-CCE-361 disappears with its direct economic effect rule.
+? prevents(Adam, AttributedEnterpriseTestimonySuppression).
+# => FALSE
+
+# FS-CCE-362 disappears with its direct economic effect rule.
+? prevents(Adam, AttributedEnterprisePublicationSuppression).
+# => FALSE
+
+# FS-CCE-363 disappears with its direct economic effect rule.
+? prevents(Adam, HarmlessVoluntaryResourcePoolingObstruction).
+# => FALSE
+
+# FS-CCE-364 disappears with its direct economic effect rule.
+? prevents(Adam, VoluntaryAssociationParticipationObstruction).
+# => FALSE
+
+# FS-CCE-365 disappears with its direct economic effect rule.
+? prevents(Adam, CompensationFalseVerdictCoupling).
+# => FALSE
+
+# FS-CCE-366 disappears with its direct economic effect rule.
+? prevents(Adam, CompensationLossVerdictCoupling).
+# => FALSE
+
+# FS-CCE-367 disappears with its direct economic effect rule.
+? prevents(Adam, CivicUnionPoliticalFinanceSeparateTreatmentDenial).
+# => FALSE
+
+# The fixture removes no standing root.
+? person(Adam).
+# => TRUE

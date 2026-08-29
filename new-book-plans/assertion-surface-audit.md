@@ -26,7 +26,7 @@ Regenerate this report with `./verify.sh --refresh assertion-surface`.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `69b67d4ec4c173ce192a3f8aacab4e2d4367af8a032e05d6d9d0c6f654e05376`.
+- Authored-rule fingerprint: `a850459e8f33cbd90918b7c2e025e22073154a6d9788c3eed0905e18cee5f9b3`.
 - Authored-fact fingerprint: `d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
@@ -35,45 +35,46 @@ Regenerate this report with `./verify.sh --refresh assertion-surface`.
 
 | relation | stratum | admitted | derived-only | ground facts | classification | contract | direct readers |
 | --- | ---: | --- | --- | --- | --- | --- | --- |
-| `authority` | 1 | no | yes | no | `derived_only` | `derived-only-authority` | positive `defend` |
-| `become` | 4 | no | yes | no | `derived_only` | `derived-only-become` | none |
-| `believe` | 4 | no | no | no | `pending_interface` | `floor-actuality-believe-pending` | none |
-| `building` | 4 | no | yes | no | `derived_only` | `derived-only-building` | none |
+| `authority` | 2 | no | yes | no | `derived_only` | `derived-only-authority` | positive `defend` |
+| `become` | 5 | no | yes | no | `derived_only` | `derived-only-become` | none |
+| `believe` | 5 | no | no | no | `pending_interface` | `floor-actuality-believe-pending` | none |
+| `building` | 5 | no | yes | no | `derived_only` | `derived-only-building` | none |
 | `clean` | 0 | no | yes | no | `derived_only` | `derived-only-clean` | negative `false` |
-| `collide` | 1 | no | yes | no | `derived_only` | `derived-only-collide` | negative `correct`, negative `match`, negative `obliged`, negative `prevents`, negative `reference`, negative `succeed`, negative `time`, positive `collide` |
-| `complete` | 1 | no | yes | no | `derived_only` | `derived-only-complete` | negative `succeed`, positive `authority`, positive `collide`, positive `complete`, positive `err`, positive `match`, positive `person`, positive `succeed` |
+| `collide` | 2 | no | yes | no | `derived_only` | `derived-only-collide` | negative `correct`, negative `match`, negative `obliged`, negative `prevents`, negative `reference`, negative `succeed`, negative `time`, positive `collide` |
+| `complete` | 2 | no | yes | no | `derived_only` | `derived-only-complete` | negative `succeed`, positive `authority`, positive `collide`, positive `complete`, positive `err`, positive `match`, positive `obliged`, positive `person`, positive `succeed` |
 | `concurrent` | 0 | no | yes | no | `derived_only` | `derived-only-concurrent` | positive `correct` |
-| `correct` | 2 | no | yes | no | `derived_only` | `derived-only-correct` | positive `match`, positive `prisoner` |
-| `decide` | 4 | no | yes | no | `derived_only` | `derived-only-decide` | none |
-| `defend` | 1 | no | yes | no | `derived_only` | `derived-only-defend` | negative `prisoner` |
-| `dwell` | 4 | no | no | no | `pending_interface` | `floor-actuality-dwell-pending` | none |
-| `eats` | 4 | no | no | no | `pending_interface` | `floor-actuality-eats-pending` | none |
-| `entitled` | 4 | no | yes | no | `derived_only` | `derived-only-entitled` | none |
-| `err` | 5 | no | yes | no | `derived_only` | `derived-only-err` | positive `obliged`, positive `prevents` |
-| `expresses` | 4 | no | no | no | `pending_interface` | `floor-actuality-expresses-pending` | none |
-| `false` | 3 | no | yes | no | `derived_only` | `derived-only-false` | negative `become`, negative `reward`, positive `lose` |
-| `fit` | 4 | no | yes | no | `derived_only` | `derived-only-fit` | negative `err`, positive `building`, positive `dwell` |
-| `healthy` | 4 | no | no | no | `pending_interface` | `floor-actuality-healthy-pending` | none |
-| `learn` | 4 | no | no | no | `pending_interface` | `floor-actuality-learn-pending` | none |
-| `lose` | 3 | no | yes | no | `derived_only` | `derived-only-lose` | none |
-| `match` | 2 | no | yes | no | `derived_only` | `derived-only-match` | negative `err`, negative `false`, negative `permits`, positive `err`, positive `false`, positive `permits`, positive `prisoner` |
-| `meets` | 4 | no | no | no | `pending_interface` | `floor-actuality-meets-pending` | negative `err` |
-| `obliged` | 5 | no | yes | no | `derived_only` | `source-bound-obligation-derived-only` | positive `obliged` |
+| `contradict` | 1 | no | yes | no | `derived_only` | `derived-only-contradict` | negative `authority`, negative `complete`, negative `obliged` |
+| `correct` | 3 | no | yes | no | `derived_only` | `derived-only-correct` | positive `match`, positive `prisoner` |
+| `decide` | 5 | no | yes | no | `derived_only` | `derived-only-decide` | none |
+| `defend` | 2 | no | yes | no | `derived_only` | `derived-only-defend` | negative `prisoner` |
+| `dwell` | 5 | no | no | no | `pending_interface` | `floor-actuality-dwell-pending` | none |
+| `eats` | 5 | no | no | no | `pending_interface` | `floor-actuality-eats-pending` | none |
+| `entitled` | 5 | no | yes | no | `derived_only` | `derived-only-entitled` | none |
+| `err` | 6 | no | yes | no | `derived_only` | `derived-only-err` | positive `obliged`, positive `prevents` |
+| `expresses` | 5 | no | no | no | `pending_interface` | `floor-actuality-expresses-pending` | none |
+| `false` | 4 | no | yes | no | `derived_only` | `derived-only-false` | negative `become`, negative `reward`, positive `lose` |
+| `fit` | 5 | no | yes | no | `derived_only` | `derived-only-fit` | negative `err`, positive `building`, positive `dwell` |
+| `healthy` | 5 | no | no | no | `pending_interface` | `floor-actuality-healthy-pending` | none |
+| `learn` | 5 | no | no | no | `pending_interface` | `floor-actuality-learn-pending` | none |
+| `lose` | 4 | no | yes | no | `derived_only` | `derived-only-lose` | none |
+| `match` | 3 | no | yes | no | `derived_only` | `derived-only-match` | negative `err`, negative `false`, negative `permits`, positive `err`, positive `false`, positive `permits`, positive `prisoner` |
+| `meets` | 5 | no | no | no | `pending_interface` | `floor-actuality-meets-pending` | negative `err` |
+| `obliged` | 6 | no | yes | no | `derived_only` | `source-bound-obligation-derived-only` | positive `obliged` |
 | `orderly` | 0 | no | yes | no | `derived_only` | `derived-only-orderly` | positive `correct` |
-| `owe` | 4 | no | yes | no | `derived_only` | `derived-only-owe` | none |
-| `permits` | 3 | no | yes | no | `derived_only` | `derived-only-permits` | negative `prisoner`, positive `false` |
-| `person` | 4 | yes | no | yes | `mixed_base_fact` | `person-roster-mixed` | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` |
+| `owe` | 5 | no | yes | no | `derived_only` | `derived-only-owe` | none |
+| `permits` | 4 | no | yes | no | `derived_only` | `derived-only-permits` | negative `prisoner`, positive `false` |
+| `person` | 5 | yes | no | yes | `mixed_base_fact` | `person-roster-mixed` | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` |
 | `precede` | 1 | no | yes | no | `derived_only` | `derived-only-precede` | positive `collide`, positive `correct`, positive `err`, positive `precede`, positive `time` |
-| `prevents` | 5 | no | yes | no | `derived_only` | `derived-only-prevents` | none |
-| `prisoner` | 4 | no | yes | no | `derived_only` | `derived-only-prisoner` | negative `travel`, positive `building`, positive `dwell`, positive `err`, positive `expresses`, positive `fit`, positive `person` |
-| `reference` | 2 | no | yes | no | `derived_only` | `derived-only-reference` | positive `correct` |
-| `related` | 0 | no | yes | no | `derived_only` | `derived-only-related` | positive `correct`, positive `err`, positive `match` |
-| `reward` | 4 | no | yes | no | `derived_only` | `derived-only-reward` | none |
-| `secure` | 4 | no | no | no | `pending_interface` | `floor-actuality-secure-pending` | none |
+| `prevents` | 6 | no | yes | no | `derived_only` | `derived-only-prevents` | none |
+| `prisoner` | 5 | no | yes | no | `derived_only` | `derived-only-prisoner` | negative `travel`, positive `building`, positive `dwell`, positive `err`, positive `expresses`, positive `fit`, positive `person` |
+| `reference` | 3 | no | yes | no | `derived_only` | `derived-only-reference` | positive `correct` |
+| `related` | 0 | no | yes | no | `derived_only` | `derived-only-related` | positive `contradict`, positive `correct`, positive `err`, positive `match`, positive `related` |
+| `reward` | 5 | no | yes | no | `derived_only` | `derived-only-reward` | none |
+| `secure` | 5 | no | no | no | `pending_interface` | `floor-actuality-secure-pending` | none |
 | `severe` | 1 | no | yes | no | `derived_only` | `derived-only-severe` | negative `fit`, positive `building`, positive `dwell` |
-| `succeed` | 2 | no | yes | no | `derived_only` | `derived-only-succeed` | positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` |
-| `time` | 2 | no | yes | no | `derived_only` | `derived-only-time` | positive `correct` |
-| `travel` | 5 | no | no | no | `pending_interface` | `liberty-travel-pending` | none |
+| `succeed` | 3 | no | yes | no | `derived_only` | `derived-only-succeed` | positive `correct`, positive `err`, positive `match`, positive `person`, positive `succeed` |
+| `time` | 3 | no | yes | no | `derived_only` | `derived-only-time` | positive `correct` |
+| `travel` | 6 | no | no | no | `pending_interface` | `liberty-travel-pending` | none |
 
 ## Writable-premise index
 
@@ -86,11 +87,11 @@ channels. No exceptional channel exists in the current contract.
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `at` | roster-person, standing, first-contact, adulthood, placement, record-integrity | `person` | patchable, external, deliberately_refused | negative `dwell`, positive `building`, positive `decide`, positive `dwell`, positive `person`, positive `prevents` | `4ed39fcb58fb931e` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `authority`, positive `collide`, positive `complete`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `healthy`, positive `match`, positive `meets`, positive `obliged`, positive `person`, positive `prevents`, positive `prisoner`, positive `secure`, positive `succeed` | `f122adbd3ec46810` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `authority`, positive `collide`, positive `complete`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `healthy`, positive `match`, positive `meets`, positive `obliged`, positive `person`, positive `prevents`, positive `prisoner`, positive `related`, positive `secure`, positive `succeed` | `f8f28f9f94e20a37` |
 | `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
 | `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `6fa58bc4be130c53` |
 | `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `9d000cd29a2bee16` |
-| `carries` | epoch-carry, record-integrity, time, witness | `err` | patchable, external | negative `err`, positive `err`, positive `match` | `19621bd13b05a5cd` |
+| `carries` | epoch-carry, record-integrity, time, witness | `err` | patchable, external | negative `err`, positive `complete`, positive `err`, positive `match` | `dcb3e21388d0f38e` |
 | `challenge` | challenge, record-integrity, time | `collide` | patchable, external | positive `collide`, positive `err`, positive `obliged` | `f698abded904ad1c` |
 | `choose` | seating, public-body, democracy | `permits` | patchable, external, deliberately_refused | positive `authority`, positive `permits` | `1a1477d3ac30c864` |
 | `cite` | audit, case-binding, provenance, public-power, time | `collide` | patchable, external | positive `collide`, positive `correct`, positive `err`, positive `match`, positive `prisoner`, positive `related`, positive `reward` | `aacb6724db7bb610` |
@@ -110,11 +111,11 @@ channels. No exceptional channel exists in the current contract.
 | `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `4e3f1f3437d1e8e3` |
 | `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
 | `married` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `7ef6097705ac2859` |
-| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `authority`, positive `collide`, positive `complete`, positive `concurrent`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `healthy`, positive `match`, positive `meets`, positive `obliged`, positive `orderly`, positive `person`, positive `precede`, positive `prevents`, positive `prisoner`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `0f2ef435c64e6714` |
+| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | positive `authority`, positive `collide`, positive `complete`, positive `concurrent`, positive `contradict`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `healthy`, positive `match`, positive `meets`, positive `obliged`, positive `orderly`, positive `person`, positive `precede`, positive `prevents`, positive `prisoner`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `8aa91dc325c149b4` |
 | `parent` | audit, privacy, conflict | `false` | patchable, external | positive `false` | `316cc4529059bf17` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `cd0ddf58592a42a0` |
 | `permanent` | amendment, record-integrity | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
-| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` | `ae9c7cf556c7eb76` |
+| `person` | roster-person, standing, record-integrity | `person` | patchable, external, deliberately_refused | positive `believe`, positive `decide`, positive `dwell`, positive `eats`, positive `entitled`, positive `expresses`, positive `healthy`, positive `learn`, positive `meets`, positive `owe`, positive `prevents`, positive `secure`, positive `travel` | `2035a2d54d9e66b4` |
 | `public` | public-body, seating, record-integrity | `authority` | patchable, external | negative `person`, positive `authority`, positive `obliged`, positive `prevents` | `beff26c0fecfae70` |
 | `put` | placement, public-body, audit | `err` | patchable, external | positive `err` | `afbb5b21a09cd3f3` |
 | `ratifies` | amendment, democracy, public-power | `become` | patchable, external | positive `become` | `f29f74a1c73f8eb0` |
@@ -192,7 +193,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `f122adbd3ec4681007686e240d438d45bdd2d2f55c4f20e1ec8d09d804b065a3`.
+- **Reviewed route fingerprint:** `f8f28f9f94e20a37d88aa10e378ff83433e991ce5b9516bf86d1dfeb25be7003`.
 
 ### `born`
 
@@ -257,7 +258,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Accessible subject or advocate challenge, independent fork and witness review, linked correction, safe continuity, recovery, escalation, and remedy.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `19621bd13b05a5cd99a3d77d86a5e269ab25f7d16c3890bb93c46ea8485941fe`.
+- **Reviewed route fingerprint:** `dcb3e21388d0f38e288cd0e6740cc3b801b16a0a0fb7b363c861f7440a933ddb`.
 
 ### `challenge`
 
@@ -579,7 +580,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `0f2ef435c64e6714f0d9e46f7582311d57dd284f80127bb4fa16e1a7332e3a47`.
+- **Reviewed route fingerprint:** `8aa91dc325c149b428d3be44b04935d161a35ab89d831a84f643821d68a00faa`.
 
 ### `parent`
 
@@ -644,7 +645,7 @@ channels. No exceptional channel exists in the current contract.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Do not make `person` conclusion-only or require registration before access; either move would turn the universal floor into a record-controlled gate.
 - **Owner:** `new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry`.
-- **Reviewed route fingerprint:** `ae9c7cf556c7eb769c3340477fb3c7458d5d5a5303f50375d4ca87605de91f4d`.
+- **Reviewed route fingerprint:** `2035a2d54d9e66b46b030c3198c0dedb6fd48309f9c9c404976c7d41e615ba5f`.
 
 ### `public`
 

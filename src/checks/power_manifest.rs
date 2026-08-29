@@ -15,7 +15,7 @@ pub(crate) const STEP_NAME: &str = "full-society power source manifest";
 
 const SOURCE_PATH: &str = "new-book-plans/full-society-power-source-manifest.json";
 const EXPECTED_MANIFEST_SHA256: &str =
-    "e8dfa12813ce1bafc970e2350598482cdf5c159f6305846bc01063b6399ff3e7";
+    "2a664fa968423e1ffeec6036422600cc249aa7972258482978b921417ec5f67a";
 const EXPECTED_SOURCE_COMMIT: &str = "36ed92c58877cffa5a11928ad200f0ca9a604820";
 const STATUS: &str = concat!(
     "reviewed-inventory-input-not-law-not-operation-",
@@ -69,7 +69,7 @@ const EXPECTED_SOURCE_SHA256: [(&str, &str); 8] = [
     ),
     (
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
-        "bd461df84e8aead78206c9c1653ac5b0f5fe9345c566a1beef1fa2fa8112f2be",
+        "07b7d79df6069d71293c824a12f85f67aa487c9428b2f5253da6eb50e61ffa51",
     ),
     (
         "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
@@ -93,7 +93,7 @@ const EXPECTED_SOURCE_SHA256: [(&str, &str); 8] = [
     ),
     (
         "new-book-plans/constitution.nibli",
-        "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
+        "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
     ),
 ];
 

@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: Economic factor floor gate deleted
+:expect-pins 2
+
+? prevents(Adam, EconomicFactorFloorGate).
+# => FALSE
+? prevents(Adam, PaymentInstrumentAsDelivery).
+# => TRUE

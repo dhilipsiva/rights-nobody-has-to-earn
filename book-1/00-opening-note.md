@@ -503,9 +503,20 @@ the domain.
   present; ordinary delivery remains the central gap.
 
 - **Work, property, enterprise, exchange, money, credit, debt, and public
-  finance:** Chapters [6](06-clawback.md), [10](10-contribution.md), and
-  [15](15-the-five-joints.md). Recognition is deliberately not an economy, and
-  these chapters do not supply the missing economic system.
+  finance:** Chapters [6](06-clawback.md), [8](08-what-you-are-owed.md),
+  [9](09-the-vote-conviction-does-not-take.md),
+  [10](10-contribution.md), [11](11-where-people-are-put.md),
+  [13](13-the-one-thing-taken.md),
+  [14](14-when-the-system-notices-it-broke.md), and
+  [15](15-the-five-joints.md). Recognition remains deliberately separate from
+  wages, property, credit, political weight, and the floor. The constitutional
+  source now protects freedom to choose and refuse work, common labour rights,
+  conditional property and contract, several lawful forms of enterprise and
+  provision, the voluntary private sphere, and public control of taxation,
+  spending, borrowing, money, credit, insolvency, private economic power, and
+  genuine physical scarcity. These are legal limits over supplied records. They
+  do not choose rates, prices, production, staffing, budgets, monetary
+  instruments, or an operating economy.
 
 - **Democracy, government, and administration:** Chapters
   [2](02-public-answerability.md), [3](03-who-holds-the-pen.md),
@@ -577,13 +588,15 @@ the domain.
   landed family.
 
 - **Friendship, leisure, mutual aid, associations, and the residual free social
-  field:** Chapter [8](08-what-you-are-owed.md) protects belief, expression,
-  and company, while Chapter [10](10-contribution.md) recognises care and
-  teaching through its contribution routes. A separate liberty shell now
-  protects voluntary association, private and intimate life, conscience,
-  expression, movement, bodily choice, due process, and equal civic standing
-  from unsupported power. It does not prescribe a good life or prove that an
-  institution will honour those limits.
+  field:** Chapters [8](08-what-you-are-owed.md),
+  [10](10-contribution.md), and [15](15-the-five-joints.md) protect voluntary
+  gifts, pooling, care, domestic production, mutual aid, lawful exchange,
+  belief, culture, worship, friendship, intimacy, and association from public
+  prescription and social scoring. No household, relationship, congregation,
+  association, charity, or mutual-aid group is presumed to provide another
+  person's floor. Each person keeps legal capacity, confidential access to help,
+  and free exit. Privacy protects voluntary life, not violence, forced labour,
+  document control, captivity, or obstructed exit.
 
 ## Accessible diagrams
 

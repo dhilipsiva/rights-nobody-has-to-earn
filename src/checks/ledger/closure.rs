@@ -4262,11 +4262,13 @@ mod tests {
         assert_exact(&actual, &expected);
         let checked = check_validated(&context, &ledger).expect("live closure check");
         assert_eq!(checked.controls, STRUCTURAL_CONTROL_COUNT);
+        let gate_suffix = format!("Gate A {}", ledger.document.acceptance_gate.gate_a_status);
         assert_eq!(
             checked.message,
-            concat!(
-                "new-book-plans/constitutional-closure-and-model-allocation-audit.md is current; ",
-                "74 watched-failing structural controls pass; claim results are contract-only; Gate A passed"
+            format!(
+                "new-book-plans/constitutional-closure-and-model-allocation-audit.md is current; \
+                 74 watched-failing structural controls pass; claim results are contract-only; \
+                 {gate_suffix}"
             )
         );
     }

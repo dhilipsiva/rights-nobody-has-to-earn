@@ -1,7 +1,7 @@
 # Voiding
 
-To void someone's credibility is to say: this person's word no longer counts. What they
-earned is clawed back. What they might have signed, they will not sign again — and
+To void someone's credibility is to say: this person's word no longer counts. A loss is
+recorded against their recognition. What they might have signed, they will not sign again — and
 *again* is doing quiet work in that sentence, which the section on time collects. It is
 the heaviest thing one person can do to another in this society short of imprisonment,
 and unlike imprisonment it can be done without a court.

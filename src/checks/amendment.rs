@@ -50,10 +50,10 @@ const SURFACE_EXPECTATIONS: [&str; 2] = ["not_run", "reject_unreconciled_invento
 const NARROWNESS_CLASSIFICATIONS: [&str; 2] = ["preserved_but_scoped", "revised_and_scoped"];
 const REQUIRED_NARROWNESS_REFERENCES: [&str; 7] = [
     "book-1/01-what-counts-as-evidence.md::That is a check on declared names, not protection of their meaning.",
-    "book-1/08-what-you-are-owed.md::At the floor layer, three hostile routes remain syntactically reachable.",
+    "book-1/08-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable. That is no longer the",
     "book-1/12-changing-the-rules.md::The recorded label verdict is real.",
     "book-1/15-the-five-joints.md::The consequential surfaces that remain are the constitutional source",
-    "book-1/15-the-five-joints.md::That refusal does not deliver the floor",
+    "book-1/15-the-five-joints.md::narrow mechanism still blocks punishment for absence rather than the",
     "book-1/15-the-five-joints.md::That review is not constitutional approval",
     "book-1/method.md::the candidate edits are applied manually by the audit, not",
 ];

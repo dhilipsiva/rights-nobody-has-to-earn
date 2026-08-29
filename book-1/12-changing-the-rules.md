@@ -34,6 +34,15 @@ The resulting conclusion is bounded current constitutional authority. It does
 not authenticate the submissions, identify the exact source bytes, publish or
 deploy them, or make one constitutional version become another.
 
+The economic constitution sits inside the same distinction. It entrenches no
+single ownership form, provider mix, market share, profit, bailout, immunity, or
+monopoly. Democratic law may change those choices and the instruments used
+above the floor. It may not use that freedom to evade universal standing,
+equality, the floor, core liberty, due process, or protected commons. Ordinary
+economic rules remain conditional on effective remedy.
+The economic rules are constitutional limits on ordinary choice, not a frozen
+economic system and not proof that a lawful amendment was adopted or applied.
+
 Three declared target names receive a different verdict.
 
 The name for the floor — what is owed to every person. The name for the rule that a

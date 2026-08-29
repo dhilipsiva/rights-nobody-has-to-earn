@@ -704,7 +704,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `bbce3486647a9ff90e2f302e4eb3059852df6acea12cb39d08291a81d59c4577`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `020d7d78b60fa1cb66ad33ef5d473c27a79777c545c50c14605960eded242cbc`.
 - Regenerate after reviewing the JSON source with `./verify.sh --refresh record-integrity-assurance`; never hand-edit this report.
 - Run `./verify.sh --quick` for the structural freshness check.
 - The checker proves schema coverage, traceability, ledger coupling, and

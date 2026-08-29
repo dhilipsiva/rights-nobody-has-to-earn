@@ -1,11 +1,14 @@
 # The One Thing Taken
 
-Everything this society does to a person it has convicted reduces to a single fact:
-they cannot move freely.
+The direct punishment this bounded source attaches to conviction reduces to one
+legal conclusion: the person cannot move freely.
 
-That is the whole of punishment here. Not the headline of it, not the most important
-part of it — the entirety. The claim has been made in pieces across the preceding
-chapters and this is where it can be checked in one place.
+That is the whole punitive consequence derived here, not a claim that
+confinement has no material effects in the world. Employment can be interrupted,
+a tenancy can be endangered, care can be disrupted, and possessions can be put
+at risk. The constitution refuses to turn those harms into automatic legal
+forfeitures and requires separate continuity and remedy. It does not prove that
+either occurs.
 
 Hano was convicted. Take the list.
 
@@ -29,7 +32,8 @@ the marker watching for isolation is watching Hano and not Jala. Four difference
 **three of them run the wrong way** — they are things the convicted man has and the free
 woman does not.
 
-Conviction takes movement and nothing else. In the record supplied with this book,
+As a direct legal punishment, conviction takes movement and nothing else. In
+the record supplied with this book,
 confinement is also the only active route by which a floor actuality reaches anyone.
 That is no longer the whole rulebook. Recipient-side evidence can now derive food,
 shelter, care, material security, or company without confinement, and the older
@@ -42,35 +46,24 @@ at the end.
 The structural reason this holds is worth seeing, because it is not a matter of
 anyone's restraint.
 
-Movement is at the top of this design. Nothing depends on it. There is no rule
-anywhere that reads *and because they can move*, no entitlement that requires it, no
-capacity gated behind it, no consequence that follows from having it or lacking it.
-Movement is the last thing derived and the first thing lost, and between those two
-facts there is nothing at all.
+No rule in this source converts custody into a second legal loss. Conviction
+does not by itself terminate worker status, wages already owed, pension claims,
+housing entitlement, lawful property, contractual capacity, credit rights,
+parentage, caregiving, household membership, support, political membership, or
+remedy. Each further restriction needs its own lawful source, evidence,
+process, review, and end.
 
-So taking it cascades into nothing. There is no second loss.
+That prevents a legal cascade. It does not prevent the practical cascade that
+confinement can cause when a person cannot attend work, protect a tenancy,
+maintain care, reach records, or use an ordinary service. The constitutional
+duties of continuity and remedy name what must be preserved or restored. They
+do not show that an employer, landlord, provider, court, or public body acted.
 
-Compare what happens elsewhere. In most systems conviction is not one deprivation but
-the first of a series, and the series is largely automatic. Movement goes, and with it
-employment, because you cannot attend. Employment going takes housing. Housing going
-takes custody of children. Somewhere in there the vote goes, and eligibility for
-support, and the ability to hold particular jobs afterwards — and that last one
-outlives the sentence by decades, so that a punishment described as three years is in
-practice a permanent reassignment to a lesser category of person.
-
-None of that is usually decided. Almost all of it follows, automatically, from earlier
-losses, and each link in the chain was installed for a defensible local reason by
-someone not looking at the chain.
-
-Here the chain does not exist, and it does not exist because movement was never
-attached to anything. Nobody had to remember to protect Hano's housing from his
-conviction. Parentage, caregiving, household membership, support, property, and
-decision authority are also separate legal relations: custody cannot terminate or
-transfer them by implication. Any restriction on contact or parenting needs its own
-individualized protective ground, authority, review, and end rule. The executable
-model does not implement those proceedings, but family status cannot be used as the
-missing bridge. The single-deprivation claim is about the shape of this source, not a
-promise about administration.
+Family status remains irrelevant to placement, and custody cannot terminate or
+transfer parentage, care, household, property, or decision authority by
+implication. The single-deprivation claim is therefore a claim about the direct
+punitive effects of this source, not a promise that administration or material
+life leaves the person with only one loss.
 
 ## What is not said
 

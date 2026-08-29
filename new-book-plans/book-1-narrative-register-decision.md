@@ -3,11 +3,12 @@
 # Book 1 Narrative Register Decision
 
 > **Status: author-ratified on 2026-08-08; prose supply amended on
-> 2026-08-20 and 2026-08-26.** The register, trace, location, and evidence rules
-> remain binding. Section 15 supersedes only the author-as-drafter restriction;
+> 2026-08-20, 2026-08-26, and 2026-08-28.** The register, trace, location, and
+> evidence rules remain binding. Section 15 supersedes only the author-as-drafter
+> restriction;
 > section 7a records `OL-15-v1` as the current canonical, conforming ordinary-life
-> passage; and section 15d records the delivery-lifecycle prose. The dated
-> 2026-08-08 disposition and wording remain visible as history.
+> passage; sections 15d and 15e record the delivery-lifecycle and economic
+> prose. The dated 2026-08-08 disposition and wording remain visible as history.
 
 ## 1. Decision
 
@@ -579,3 +580,40 @@ no canonical edit. The opening note already keeps constitutional destination
 separate from service operation, and Chapter 11 already keeps placement-home
 availability, derived shelter, and real housing delivery distinct. Their
 existing boundaries remain accurate under the dormant receipt family.
+
+### 15e. `ECON-B1-v1` approval and canonicalization record
+
+- **Identifier:** `ECON-B1-v1`.
+- **Approval:** explicit author approval on 2026-08-28 of the exact displayed
+  candidate and its exact displayed follow-up.
+- **Supply provenance:** `session-drafted, author-approved`.
+- **Approved candidate:** base commit
+  `81451b121a0106c2c738e90f2d574a104c54e882`; candidate-v2 patch SHA-256
+  `5fabdf7f56463b3ee415fff37692fbdea26523f6dc23277a4e569efba689b17d`;
+  follow-up-v3 patch SHA-256
+  `6e824b0131dcf75794b1f14ea96f5a78a535a171c1f462345204c4c600d95228`.
+- **Obligations-overlap binding:** 10,010 UTF-8 bytes; SHA-256
+  `e642322b7a787afb6adc7606c906b56e321385c5808a1418927e9239c6c2597d`.
+  This is the three exact payloads below, in identifier order, joined by one
+  empty line (`LF LF`), with LF line endings and no terminal newline.
+- **Change bound:** only mechanical Markdown line wrapping or formatting is
+  permitted without renewed approval. Any substantive wording, meaning, or
+  voice change requires approval of a newly displayed exact version.
+- **Canonical state:** satisfied on 2026-08-28. The two approved patches are
+  installed cumulatively. The three-row manifest records only their overlaps
+  with the existing obligations prose consumer; it is not the complete
+  economic-prose file manifest.
+
+| ID | Supersedes | Target and exact anchor | UTF-8 bytes | SHA-256 |
+| --- | --- | --- | ---: | --- |
+| `ECON-B1-01` | `OBL-B1-09` | `book-1/08-what-you-are-owed.md`: section `Owed by whom` through `Then the limits` | 5,054 | `ea166a02e26f99691b151b730258aa65a8d763be6ce29f02a9a83f19b883b119` |
+| `ECON-B1-02` | `DLV-B1-04` | `book-1/13-the-one-thing-taken.md`: block beginning `As a direct legal punishment` through `at the end.` | 541 | `bee2c6504c7edd58c8ca2730bac7b4a18a1ac4d02b88cb2b6418f05bea6bfe3e` |
+| `ECON-B1-03` | `DLV-B1-07` | `book-1/14-when-the-system-notices-it-broke.md`: block beginning `The chain no longer ends there.` through `make true.` | 4,411 | `115e59dbc15acfc05324bdd34478132cbfd9ed54df9fb4f1eef937adbdfd66d7` |
+
+The historical `OBL-B1-v1` and `DLV-B1-v1` tables above remain unchanged.
+The live obligations prose consumer now checks eleven retained OBL payloads,
+eight retained DLV payloads, and all three `ECON-B1-v1` successors, each with
+its recomputed aggregate. This approval record changes no formal rule, fact,
+fixture, query, verdict, claim posture, or evidence ceiling. The installed
+economic prose still establishes no operation, delivery, liveness,
+affordability, supply, capacity, stability, or empirical feasibility.

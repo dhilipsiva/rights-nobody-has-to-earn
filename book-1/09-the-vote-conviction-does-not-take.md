@@ -29,6 +29,15 @@ of membership; it does not create it. Every adult ordinary resident has one
 equal ballot in one chosen political home at each applicable tier, and
 candidacy begins from the same adult-resident baseline.
 
+An enterprise receives no ballot, candidacy, human standing, or extra political
+weight. It may petition, testify, and publish an attributed view, but assets
+held through enterprise law may not fund candidates or parties or purchase
+independent electoral advocacy. The refusal applies to public, private,
+cooperative, mutual, and nonprofit enterprise treasuries alike. The people
+associated with them keep their own speech, association, petition, and
+political rights. Separate rules for unions and genuinely voluntary civic
+associations are not supplied by calling either one an enterprise.
+
 Those are legal conditions on the supplied political record, not facts the
 checks discover for themselves. The checks do not determine where a person
 lives, whether the common adulthood threshold has been reached, which home was

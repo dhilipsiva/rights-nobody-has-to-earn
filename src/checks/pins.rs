@@ -14,7 +14,7 @@ use crate::scheduler::{ScheduleError, run_bounded};
 const KB_PATH: &str = "new-book-plans/constitution.nibli";
 const COUNTERFACTUAL_DIR: &str = "new-book-plans/counterfactual";
 
-const LIVE_FAMILIES: [(&str, &str); 5] = [
+const LIVE_FAMILIES: [(&str, &str); 34] = [
     (
         "universal-standing",
         "new-book-plans/universal-standing.pins.nibli",
@@ -28,6 +28,122 @@ const LIVE_FAMILIES: [(&str, &str); 5] = [
         "new-book-plans/substantive-equality.pins.nibli",
     ),
     (
+        "economic, labour, property, and fiscal",
+        "new-book-plans/economic-constitution.pins.nibli",
+    ),
+    (
+        "economic FS-POW-061",
+        "new-book-plans/economic-power-061.pins.nibli",
+    ),
+    (
+        "economic FS-POW-062",
+        "new-book-plans/economic-power-062.pins.nibli",
+    ),
+    (
+        "economic FS-POW-063",
+        "new-book-plans/economic-power-063.pins.nibli",
+    ),
+    (
+        "economic FS-POW-064",
+        "new-book-plans/economic-power-064.pins.nibli",
+    ),
+    (
+        "economic FS-POW-065",
+        "new-book-plans/economic-power-065.pins.nibli",
+    ),
+    (
+        "economic FS-POW-066",
+        "new-book-plans/economic-power-066.pins.nibli",
+    ),
+    (
+        "economic FS-POW-067",
+        "new-book-plans/economic-power-067.pins.nibli",
+    ),
+    (
+        "economic FS-POW-068",
+        "new-book-plans/economic-power-068.pins.nibli",
+    ),
+    (
+        "economic FS-POW-069",
+        "new-book-plans/economic-power-069.pins.nibli",
+    ),
+    (
+        "economic FS-POW-070",
+        "new-book-plans/economic-power-070.pins.nibli",
+    ),
+    (
+        "economic FS-POW-071",
+        "new-book-plans/economic-power-071.pins.nibli",
+    ),
+    (
+        "economic FS-POW-072",
+        "new-book-plans/economic-power-072.pins.nibli",
+    ),
+    (
+        "economic FS-POW-073",
+        "new-book-plans/economic-power-073.pins.nibli",
+    ),
+    (
+        "economic FS-POW-074",
+        "new-book-plans/economic-power-074.pins.nibli",
+    ),
+    (
+        "economic FS-POW-075",
+        "new-book-plans/economic-power-075.pins.nibli",
+    ),
+    (
+        "economic FS-POW-076",
+        "new-book-plans/economic-power-076.pins.nibli",
+    ),
+    (
+        "economic FS-POW-077",
+        "new-book-plans/economic-power-077.pins.nibli",
+    ),
+    (
+        "economic FS-POW-078",
+        "new-book-plans/economic-power-078.pins.nibli",
+    ),
+    (
+        "economic FS-POW-079",
+        "new-book-plans/economic-power-079.pins.nibli",
+    ),
+    (
+        "economic FS-POW-080",
+        "new-book-plans/economic-power-080.pins.nibli",
+    ),
+    (
+        "economic FS-POW-081",
+        "new-book-plans/economic-power-081.pins.nibli",
+    ),
+    (
+        "economic FS-POW-082",
+        "new-book-plans/economic-power-082.pins.nibli",
+    ),
+    (
+        "economic FS-POW-083",
+        "new-book-plans/economic-power-083.pins.nibli",
+    ),
+    (
+        "economic FS-POW-084",
+        "new-book-plans/economic-power-084.pins.nibli",
+    ),
+    (
+        "economic FS-POW-085",
+        "new-book-plans/economic-power-085.pins.nibli",
+    ),
+    (
+        "economic FS-POW-086",
+        "new-book-plans/economic-power-086.pins.nibli",
+    ),
+    (
+        "economic FS-POW-087",
+        "new-book-plans/economic-power-087.pins.nibli",
+    ),
+    (
+        "economic FS-POW-088",
+        "new-book-plans/economic-power-088.pins.nibli",
+    ),
+    (
         "delivery and receipt",
         "new-book-plans/delivery-receipt.pins.nibli",
     ),
@@ -37,7 +153,7 @@ const LIVE_FAMILIES: [(&str, &str); 5] = [
     ),
 ];
 
-const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 21] = [
+const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 55] = [
     ("no-person-line", 1, 0),
     ("no-public-court", 1, 0),
     ("no-choose-boss", 1, 0),
@@ -51,6 +167,40 @@ const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 21] = [
     ("no-family-confinement-wall", 1, 0),
     ("no-missing-kinship-independence", 1, 0),
     ("no-pregnancy-authority", 1, 0),
+    ("no-economic-floor-gate", 1, 0),
+    ("no-economic-data-wall", 1, 0),
+    ("no-economic-work-freedom", 1, 0),
+    ("no-economic-direct-effects", 145, 0),
+    ("no-economic-carry-results", 6, 0),
+    ("no-economic-power-duty-bridges", 171, 0),
+    ("no-economic-independent-current-review-061", 2, 2),
+    ("no-economic-independent-current-review-062", 2, 2),
+    ("no-economic-independent-current-review-063", 2, 2),
+    ("no-economic-independent-current-review-064", 2, 2),
+    ("no-economic-independent-current-review-065", 2, 2),
+    ("no-economic-independent-current-review-066", 2, 2),
+    ("no-economic-independent-current-review-067", 2, 2),
+    ("no-economic-independent-current-review-068", 2, 2),
+    ("no-economic-independent-current-review-069", 2, 2),
+    ("no-economic-independent-current-review-070", 2, 2),
+    ("no-economic-independent-current-review-071", 2, 2),
+    ("no-economic-independent-current-review-072", 2, 2),
+    ("no-economic-independent-current-review-073", 2, 2),
+    ("no-economic-independent-current-review-074", 2, 2),
+    ("no-economic-independent-current-review-075", 2, 2),
+    ("no-economic-independent-current-review-076", 2, 2),
+    ("no-economic-independent-current-review-077", 2, 2),
+    ("no-economic-independent-current-review-078", 2, 2),
+    ("no-economic-independent-current-review-079", 2, 2),
+    ("no-economic-independent-current-review-080", 2, 2),
+    ("no-economic-independent-current-review-081", 2, 2),
+    ("no-economic-independent-current-review-082", 2, 2),
+    ("no-economic-independent-current-review-083", 2, 2),
+    ("no-economic-independent-current-review-084", 2, 2),
+    ("no-economic-independent-current-review-085", 2, 2),
+    ("no-economic-independent-current-review-086", 2, 2),
+    ("no-economic-independent-current-review-087", 2, 2),
+    ("no-economic-independent-current-review-088", 2, 2),
     ("no-dead-conjuncts", 1, 1),
     ("no-delivery-independence", 1, 1),
     ("no-state-form-independent-current-review", 1, 1),

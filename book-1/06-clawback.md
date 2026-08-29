@@ -1,14 +1,15 @@
 # Clawback
 
-When someone's credibility is voided, what they earned goes with it.
+When someone's credibility is voided, their recognition stops following from
+the record.
 
-Bela was examined by two auditors and voided. Ask the record whether Bela is
-recognised and the answer is no — the teaching Bela gave is still written there, and
-it mints nothing, because every door recognition comes through is shut to a person
-whose word has been found worthless. Beside that refusal the record holds one more
-conclusion: a loss against Bela's name. This is the second half of voiding, and
-it is what makes voiding matter. Marking someone as unreliable while leaving them
-recognised would be a gesture.
+Bela was examined by two auditors and voided. Ask whether Bela is recognised
+and the answer is no. The teaching remains written, but the route to recognition
+refuses it while the void stands. Beside that refusal the record holds one more
+conclusion: a loss against Bela's name. This is the second half of voiding inside
+the recognition system. It is not a fine, a wage deduction, a debt, a loss of
+property or pension, an insurance decision, a withdrawal of authority, or a
+reduction of the floor.
 
 Be precise about the mechanism, because the natural word for it — taken — describes
 an event that never happens. Recognition is not a balance that can be debited; it is
@@ -45,8 +46,8 @@ has not pretended that every rule-produced word has now been swept.
 Before the difficulty, the boundary, because the boundary is the more important fact
 and it is easy to lose behind the difficulty.
 
-Bela has been voided, and everything Bela earned now produces nothing. Ask what Bela
-still has.
+Bela has been voided, and the acts recorded for Bela now produce no recognition.
+Ask what Bela still has.
 
 Bela is still a person. Bela still moves freely — is not confined, not placed
 anywhere, not restricted — and still holds the vote. And Bela is still owed everything
@@ -57,7 +58,7 @@ kind of thing that can be reduced by a finding about someone's conduct.
 
 Say plainly what that means, and say it exactly, because the loose version claims too
 much. A person can be found unreliable by the highest standard the society has,
-everything they earned producing nothing, marked in the record for as long as the
+their recorded acts producing no recognition, marked in the record for as long as the
 record lasts — and is owed food, shelter, learning, expression and company on the day after
 exactly as on the day before. The worst thing the accountability machinery can do to
 you does not subtract one item from what you are owed.
@@ -163,12 +164,12 @@ necessary. It is not yet case-bound or independent: the judgment relation has no
 purpose, case or writer slot, so an older generic Appeals judgment can sit ready
 before a mark exists. Then one later authorless `forgive` word is again enough to
 spring what took six guarded entries to conclude. With both in place the mark comes
-clean. The void stops re-deriving. The loss stops. The doors
-to earning reopen — backwards as well as forwards. The record's memory of work done
-while voided was never erased, only refused, so the moment the mark comes clean the
-examinations recorded through those years start paying: the answers recompute from
-what was always standing there. Forgiveness here is not a fresh start. It is the
-record resuming payment on everything it already knew.
+clean. The void stops re-deriving. The loss stops. The routes to recognition
+reopen — backwards as well as forwards. The record never erased the work
+performed while the void stood; it refused to let that work support recognition.
+Once forgiveness prevents the void from re-forming, those existing entries
+support recognition again. Forgiveness is not new work and does not pay an old
+balance. It changes which conclusions the existing record may support.
 
 What forgiveness does not restore is the pen. The mark itself stays on the record —
 forgiven, not erased — and everything that reads the mark directly still reads it. Do
@@ -207,7 +208,8 @@ reach instead: the voided person's own recognition and nothing else. Never a
 student. Never the floor, never liberty, never personhood. Used bluntly, even used
 wrongly, the worst it can now do is reach for what the guilty were given.
 
-The loss the record holds against Bela, and the absence it holds for Cira, are the
-whole architecture of this society compressed into one afternoon: what you earned
-answers for your own adjudicated fraud, and for nothing else, and nobody else's. The
-next part of the book is about the side of it that cannot be taken.
+The loss against Bela and its absence for Cira compress the design into one
+afternoon: recognition may answer only for the recognised person's own
+adjudicated fraud, never for another person's. Even there it remains a
+conclusion about recognition, not restitution or an economic penalty. The next
+part of the book concerns what no such conclusion can take.

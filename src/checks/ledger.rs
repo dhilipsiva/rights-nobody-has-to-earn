@@ -48,8 +48,10 @@ const PLACEMENT_SOURCE: &str = "new-book-plans/placement-exhaustiveness-audit.js
 const TEMPORAL_SOURCE: &str = "new-book-plans/temporal-assurance-case.json";
 const ASSURANCE_DECISION: &str = "new-book-plans/book-1-assurance-portfolio-decision.md";
 const BOUNDARY_DECISION: &str = "new-book-plans/full-society-boundary-decision.md";
+const ECONOMIC_DECISION: &str =
+    "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md";
 
-const STATIC_INPUTS: [&str; 14] = [
+const STATIC_INPUTS: [&str; 15] = [
     SOURCE,
     ASSURANCE_DECISION,
     BOUNDARY_DECISION,
@@ -64,18 +66,1136 @@ const STATIC_INPUTS: [&str; 14] = [
     READER_SOURCE,
     READER_PROTOCOL_DECISION,
     COVERAGE_MAP,
+    ECONOMIC_DECISION,
 ];
 
 const EXPECTED_SCHEMA_VERSION: u64 = 7;
 const EXPECTED_STATUS: &str = "stage_4_repository_audit_complete";
 const STAGE_LABEL: &str = "stage 4 machinery";
-const STRUCTURAL_CONTROL_COUNT: usize = 265;
+const STRUCTURAL_CONTROL_COUNT: usize = 274;
 const EXPECTED_POWER_COUNT: usize = 210;
-const EXPECTED_EFFECT_COUNT: usize = 222;
+const EXPECTED_EFFECT_COUNT: usize = 367;
 const EXPECTED_TEMPLATE_COUNT: usize = 1;
 const EXPECTED_REFUSAL_COUNT: usize = 19;
 const EXPECTED_CROSSWALK_COUNT: usize = 8;
 const EXPECTED_ALLOCATION_COUNT: usize = 210;
+
+const ECONOMIC_EFFECT_FIRST: usize = 223;
+const ECONOMIC_EFFECT_TERM_PLACEMENTS: usize = 3_268;
+const ECONOMIC_EFFECT_TERM_SCHEMA_KEYS: usize = 113;
+const ECONOMIC_EFFECT_TERM_SCHEMA_SHA256: &str =
+    "857219448f37f2e2862492a0c11b2d37397ba2b615c34fd41a05dc96ec959c39";
+const ECONOMIC_EFFECT_COMPLETION_CEILING: &str = "All 145 person-held effects, their separately typed always-on duties, the three non-power carry result interfaces, executable tests, counterfactuals, and approved Book 1 prose are complete. They establish only source-bound legal effects over supplied records; no operation, calculation, delivery, remedy, institutional act, liveness, calibration, external truth, or feasibility is proved.";
+
+const DEMOCRATIC_POLICY_BOUNDARY_TERM_KEYS: [&str; 11] = [
+    "democratic_source",
+    "policy_choice",
+    "competence",
+    "corridor",
+    "equality_boundary",
+    "floor_boundary",
+    "commons_boundary",
+    "public_reasons",
+    "review",
+    "temporal_status",
+    "failure_default",
+];
+
+const ECONOMIC_COMMON_POWER_FIELDS: [(&str, &str, &str); 12] = [
+    ("case", "$case", "EconomicCaseScope"),
+    ("subject", "$subject", "EconomicSubjectScope"),
+    ("function", "$function", "EconomicFunctionScope"),
+    ("affected", "$affected", "EconomicAffectedPeopleScope"),
+    (
+        "alternate_record_reviewer",
+        "$alternate_record_reviewer",
+        "EconomicAlternateRecordReviewActorScope",
+    ),
+    (
+        "alternate_temporal_reviewer",
+        "$alternate_temporal_reviewer",
+        "EconomicAlternateTemporalReviewActorScope",
+    ),
+    (
+        "alternate_independent_reviewer",
+        "$alternate_independent_reviewer",
+        "EconomicAlternateIndependentReviewActorScope",
+    ),
+    (
+        "alternate_audit_reviewer",
+        "$alternate_audit_reviewer",
+        "EconomicAlternateAuditActorScope",
+    ),
+    (
+        "alternate_final_reviewer",
+        "$alternate_final_reviewer",
+        "EconomicAlternateFinalReviewActorScope",
+    ),
+    (
+        "independent_reviewer",
+        "$review",
+        "EconomicIndependentReviewActorScope",
+    ),
+    ("audit_reviewer", "$auditor", "EconomicAuditActorScope"),
+    (
+        "final_reviewer",
+        "$final_review",
+        "EconomicFinalReviewActorScope",
+    ),
+];
+
+const ECONOMIC_COMMON_POWER_REQUIREMENTS: [(&str, &str); 12] = [
+    (
+        "EconomicCardEvidenceAuthenticatedContestableAndPurposeBound",
+        "EvidenceRuleScope",
+    ),
+    (
+        "EconomicEffectNecessaryAndProportionateToItsSource",
+        "NecessityAndProportionalityScope",
+    ),
+    (
+        "EconomicPublicReasonsConnectSourceFactsHolderAndEffect",
+        "PublicReasonsRequirementScope",
+    ),
+    (
+        "EconomicDelegationCannotEnlargeEffectOrEvadeWall",
+        "NonDelegableLimitScope",
+    ),
+    (
+        "EconomicConflictedHolderWithdrawsForSourceAuthorizedAlternate",
+        "ConflictRuleScope",
+    ),
+    (
+        "EconomicIndependentChallengeKeepsInterimProtection",
+        "ChallengeRequirementScope",
+    ),
+    (
+        "EconomicCorrectionReconcilesConsequentialRecordsWithoutReplay",
+        "CorrectionRequirementScope",
+    ),
+    (
+        "EconomicUnlawfulEffectStopsAndAttributableHarmRemainsRemediable",
+        "RemedyRequirementScope",
+    ),
+    (
+        "EconomicProtectedContinuitySurvivesMissingOrDisputedAuthority",
+        "ContinuityRequirementScope",
+    ),
+    (
+        "EconomicFailureWithholdsAuthorityAndCreatesNoOppositeFact",
+        "EconomicCardFailurePolarityScope",
+    ),
+    (
+        "EconomicUnavailableReviewerTransfersToPredeclaredAlternate",
+        "AlternateReviewContinuityScope",
+    ),
+    (
+        "EconomicAlternateReviewCannotApproveOrExtendBySilence",
+        "AlternateReviewLimitScope",
+    ),
+];
+
+const ECONOMIC_CURRENT_COLLISION_SCOPES: [&str; 17] = [
+    "SourceFamilyScope",
+    "SourceVersionScope",
+    "SourceEpochScope",
+    "PowerScope",
+    "TemporalContractKindScope",
+    "EffectiveSelectionScope",
+    "EconomicCaseScope",
+    "JurisdictionScope",
+    "JurisdictionKindScope",
+    "AuthorityScope",
+    "AuthorityScopeKindScope",
+    "EndConditionScope",
+    "ReconciliationRecordScope",
+    "TemporalRecordScope",
+    "TemporalAuthorityActorScope",
+    "TemporalReviewActorScope",
+    "ResultScope",
+];
+
+const ECONOMIC_RECONCILIATION_COLLISION_SCOPES: [&str; 13] = [
+    "ReconciliationStatusScope",
+    "EconomicRecordScope",
+    "ResultScope",
+    "PowerScope",
+    "SourceVersionScope",
+    "SourceEpochScope",
+    "TemporalRecordScope",
+    "EconomicCaseScope",
+    "JurisdictionScope",
+    "JurisdictionKindScope",
+    "AuthorityScope",
+    "AuthorityScopeKindScope",
+    "EndConditionScope",
+];
+
+const ECONOMIC_RESULT_COLLISION_SCOPES: [&str; 23] = [
+    "EconomicBranchScope",
+    "HolderScope",
+    "ChallengeScope",
+    "CorrectionScope",
+    "RemedyScope",
+    "EndConditionScope",
+    "SourceVersionScope",
+    "SourceEpochScope",
+    "TemporalRecordScope",
+    "EconomicCaseScope",
+    "JurisdictionScope",
+    "JurisdictionKindScope",
+    "AuthorityScope",
+    "AuthorityScopeKindScope",
+    "ReconciliationRecordScope",
+    "ReviewDispositionScope",
+    "FailurePolarityScope",
+    "EconomicSourceActorScope",
+    "EconomicEvidenceActorScope",
+    "EconomicIndependentReviewActorScope",
+    "EconomicAuditActorScope",
+    "EconomicFinalReviewActorScope",
+    "EconomicExecutionActorScope",
+];
+
+const ECONOMIC_CARRY_CURRENT_COLLISION_SCOPES: [&str; 28] = [
+    "SourceFamilyScope",
+    "SourceVersionScope",
+    "SourceEpochScope",
+    "PowerScope",
+    "TemporalContractKindScope",
+    "EffectiveSelectionScope",
+    "EconomicCaseScope",
+    "JurisdictionScope",
+    "JurisdictionKindScope",
+    "AuthorityScope",
+    "AuthorityScopeKindScope",
+    "EndConditionScope",
+    "ReconciliationRecordScope",
+    "TemporalRecordScope",
+    "TemporalAuthorityActorScope",
+    "TemporalReviewActorScope",
+    "ResultScope",
+    "PriorSourceEpochScope",
+    "EconomicCarryKindScope",
+    "EconomicCarryPredecessorRecordScope",
+    "EconomicCarryPredecessorResultScope",
+    "EconomicCarrySuccessorEventScope",
+    "EconomicCarryLegalScope",
+    "EconomicCarryLegalScopeKindScope",
+    "EconomicSubjectScope",
+    "EconomicBenefitScope",
+    "EconomicTitleScope",
+    "EconomicLiabilityScope",
+];
+
+const ECONOMIC_CARRY_RESULT_COLLISION_SCOPES: [&str; 37] = [
+    "EconomicBranchScope",
+    "HolderScope",
+    "ChallengeScope",
+    "CorrectionScope",
+    "RemedyScope",
+    "EndConditionScope",
+    "SourceVersionScope",
+    "SourceEpochScope",
+    "TemporalRecordScope",
+    "EconomicCaseScope",
+    "JurisdictionScope",
+    "JurisdictionKindScope",
+    "AuthorityScope",
+    "AuthorityScopeKindScope",
+    "ReconciliationRecordScope",
+    "ReviewDispositionScope",
+    "FailurePolarityScope",
+    "EconomicSourceActorScope",
+    "EconomicEvidenceActorScope",
+    "EconomicIndependentReviewActorScope",
+    "EconomicAuditActorScope",
+    "EconomicFinalReviewActorScope",
+    "EconomicExecutionActorScope",
+    "PriorSourceEpochScope",
+    "EconomicCarryKindScope",
+    "EconomicCarryPredecessorRecordScope",
+    "EconomicCarryPredecessorResultScope",
+    "EconomicCarrySuccessorEventScope",
+    "EconomicCarryFindingKindScope",
+    "EconomicCarryRequirementScope",
+    "EconomicCarryEffectLimitScope",
+    "EconomicCarryLegalScope",
+    "EconomicCarryLegalScopeKindScope",
+    "EconomicSubjectScope",
+    "EconomicBenefitScope",
+    "EconomicTitleScope",
+    "EconomicLiabilityScope",
+];
+
+const ECONOMIC_CARRY_RECONCILIATION_COLLISION_SCOPES: [&str; 21] = [
+    "ReconciliationStatusScope",
+    "EconomicRecordScope",
+    "ResultScope",
+    "EconomicCarryKindScope",
+    "EconomicCarryPredecessorRecordScope",
+    "EconomicCarryPredecessorResultScope",
+    "EconomicCarrySuccessorEventScope",
+    "SourceVersionScope",
+    "SourceEpochScope",
+    "PriorSourceEpochScope",
+    "TemporalRecordScope",
+    "EconomicCaseScope",
+    "JurisdictionScope",
+    "JurisdictionKindScope",
+    "EconomicCarryLegalScope",
+    "EconomicCarryLegalScopeKindScope",
+    "EndConditionScope",
+    "EconomicSubjectScope",
+    "EconomicBenefitScope",
+    "EconomicTitleScope",
+    "EconomicLiabilityScope",
+];
+
+const ECONOMIC_ALTERNATE_REVIEW_ROUTES: [(&str, &str, &str, &str); 5] = [
+    (
+        "record-review",
+        "$power_record_review",
+        "$power_alternate_record_reviewer",
+        "EconomicAlternateRecordReviewActorScope",
+    ),
+    (
+        "temporal-review",
+        "$power_temporal_review",
+        "$power_alternate_temporal_reviewer",
+        "EconomicAlternateTemporalReviewActorScope",
+    ),
+    (
+        "independent-review",
+        "$power_review",
+        "$power_alternate_independent_reviewer",
+        "EconomicAlternateIndependentReviewActorScope",
+    ),
+    (
+        "audit-review",
+        "$power_auditor",
+        "$power_alternate_audit_reviewer",
+        "EconomicAlternateAuditActorScope",
+    ),
+    (
+        "final-review",
+        "$power_final_review",
+        "$power_alternate_final_reviewer",
+        "EconomicAlternateFinalReviewActorScope",
+    ),
+];
+
+#[derive(Clone, Copy)]
+struct EconomicDutyBridgeSpec {
+    power: usize,
+    key: &'static str,
+    bearer: &'static str,
+    duty: &'static str,
+    standard: &'static str,
+    function: &'static str,
+    mode: &'static str,
+}
+
+const ECONOMIC_DUTY_BRIDGES: [EconomicDutyBridgeSpec; 31] = [
+    EconomicDutyBridgeSpec {
+        power: 63,
+        key: "knowledge-floor-access",
+        bearer: "FSBOD_09",
+        duty: "EstablishEffectiveKnowledgeAccessRouteDuty",
+        standard: "MaterialFloorProtectingCompatibleAccessRouteStandard",
+        function: "$protected_duty",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 63,
+        key: "knowledge-commons-access",
+        bearer: "FSBOD_09",
+        duty: "EstablishEffectiveKnowledgeCommonsAccessRouteDuty",
+        standard: "ProtectedCommonsCompatibleAccessRouteStandard",
+        function: "$protected_duty",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-fair-access",
+        bearer: "$subject",
+        duty: "ProvidePublicScaleFunctionFairAccessDuty",
+        standard: "AffectedFunctionFairAccessStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-continuity",
+        bearer: "$subject",
+        duty: "MaintainPublicScaleFunctionContinuityDuty",
+        standard: "AffectedFunctionContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-reasons-transparency",
+        bearer: "$subject",
+        duty: "ProvidePublicScaleFunctionReasonsTransparencyDuty",
+        standard: "AffectedFunctionPublicReasonsAndTransparencyStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-portability-interoperability",
+        bearer: "$subject",
+        duty: "ProvidePublicScaleFunctionPortabilityInteroperabilityDuty",
+        standard: "AffectedFunctionDataServicePortabilityInteroperabilityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-audit",
+        bearer: "$subject",
+        duty: "UndergoPublicScaleFunctionAuditDuty",
+        standard: "AffectedFunctionIndependentAuditStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-challenge-correction",
+        bearer: "$subject",
+        duty: "ProvidePublicScaleFunctionChallengeCorrectionDuty",
+        standard: "AffectedFunctionAccessibleChallengeCorrectionStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 64,
+        key: "public-scale-remedy",
+        bearer: "$subject",
+        duty: "ProvidePublicScaleFunctionRemedyDuty",
+        standard: "AffectedFunctionEffectiveRemedyStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 65,
+        key: "remedy-transition-065",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 66,
+        key: "remedy-transition-066",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 67,
+        key: "remedy-transition-067",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 68,
+        key: "remedy-transition-068",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 69,
+        key: "remedy-transition-069",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 70,
+        key: "remedy-transition-070",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 71,
+        key: "remedy-transition-071",
+        bearer: "FSBOD_09",
+        duty: "ProtectEconomicRemedyTransitionParticipantsDuty",
+        standard: "WorkersUsersFloorRecipientsAndEssentialServiceContinuityStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 72,
+        key: "tax-procedure-disclosure",
+        bearer: "FSBOD_02",
+        duty: "ProvideTaxReasonsPrivacyAuditChallengeDuty",
+        standard: "LawfulAuthorityPublicPurposeEqualityPrivacyReasonsAuditChallengeStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 73,
+        key: "appropriation-transparency",
+        bearer: "FSBOD_02",
+        duty: "PublishAppropriationReportAuditFiscalRiskDuty",
+        standard: "LegislativeAuthorizationCompleteReportingAuditFiscalRiskStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 74,
+        key: "spending-transparency",
+        bearer: "FSBOD_07",
+        duty: "PublishPublicSpendingReportAndAuditDuty",
+        standard: "ExactAppropriationCompleteReportingAuditAndNoDeliveryInferenceStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 75,
+        key: "guarantee-risk-disclosure",
+        bearer: "FSBOD_07",
+        duty: "DiscloseAuditPublicGuaranteeRiskDuty",
+        standard: "LegislativeAuthorizationCompleteRiskDisclosureAuditStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 76,
+        key: "borrowing-risk-disclosure",
+        bearer: "FSBOD_07",
+        duty: "DiscloseAuditPublicBorrowingRiskDuty",
+        standard: "LegislativeAuthorizationCompleteRiskDisclosureAuditCreditorLimitStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 77,
+        key: "monetary-reasons-review",
+        bearer: "FSBOD_08",
+        duty: "PublishMonetaryReasonsDistributionReviewAndAuditDuty",
+        standard: "MandateBoundReasonsDistributionalReviewAuditAndCauseRemovalStandard",
+        function: "$function",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 78,
+        key: "public-financial-decision-process",
+        bearer: "FSBOD_09",
+        duty: "ProvideFinancialDecisionReasonsCorrectionChallengeDuty",
+        standard: "LawfulCriteriaEqualityPurposeBoundDataCorrectionAndChallengeStandard",
+        function: "$function",
+        mode: "PublicObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 78,
+        key: "private-financial-decision-process",
+        bearer: "$subject",
+        duty: "ProvidePrivateFinancialDecisionReasonsCorrectionChallengeDuty",
+        standard: "ExpressPrivateFunctionLawfulCriteriaEqualityDataCorrectionChallengeStandard",
+        function: "$function",
+        mode: "PrivateObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 81,
+        key: "scarcity-reassessment",
+        bearer: "FSBOD_09",
+        duty: "ObtainRecordFreshScarcityReassessmentEvidenceDuty",
+        standard: "SourceBoundEndIndependentReviewAndNoClockAdvanceStandard",
+        function: "$resource",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 82,
+        key: "scarcity-unmet-floor-record",
+        bearer: "FSBOD_09",
+        duty: "RecordEveryUnmetFloorPortionAsFailureDuty",
+        standard: "NoRationOrMitigationCanRenameNonDeliveryAsSuccessStandard",
+        function: "$resource",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 82,
+        key: "scarcity-interim-repair",
+        bearer: "FSBOD_09",
+        duty: "ProvideInterimScarcityAlternativesAccessAndRepairDuty",
+        standard: "AlternativesAccessibilityCorrectionReplenishmentAndRepairStandard",
+        function: "$resource",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 83,
+        key: "public-minimum-service-arrangement",
+        bearer: "$provider_or_parties",
+        duty: "ArrangeNarrowMinimumServiceContinuityDuty",
+        standard: "ProviderOrPartiesNoNamedWorkerConscriptionAndBargainingSubstituteStandard",
+        function: "$minimum_service_order",
+        mode: "PublicObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 83,
+        key: "private-minimum-service-arrangement",
+        bearer: "$provider_or_parties",
+        duty: "ArrangeExpressPrivateMinimumServiceContinuityDuty",
+        standard: "ExpressPrivateProviderNoNamedWorkerConscriptionAndBargainingSubstituteStandard",
+        function: "$minimum_service_order",
+        mode: "PrivateObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 86,
+        key: "public-unit-maintenance",
+        bearer: "FSBOD_08",
+        duty: "MaintainPublicUnitOfAccountDuty",
+        standard: "CommonTierPublicUnitWithoutExclusiveInstrumentOrOperationClaimStandard",
+        function: "$unit",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+    EconomicDutyBridgeSpec {
+        power: 87,
+        key: "settlement-backbone-maintenance",
+        bearer: "FSBOD_08",
+        duty: "MaintainAccessibleNonDigitalSettlementBackboneDuty",
+        standard: "AccessibleNonDigitalFloorContinuousNoClearingOrLivenessClaimStandard",
+        function: "$settlement_route",
+        mode: "EconomicPowerBoundObligationBearerMode",
+    },
+];
+
+#[derive(Clone, Copy)]
+struct EconomicDependencySpec {
+    card: usize,
+    prerequisite: usize,
+    label: &'static str,
+    shared_fields: &'static [&'static str],
+}
+
+const ECONOMIC_DEPENDENCIES: [EconomicDependencySpec; 13] = [
+    EconomicDependencySpec {
+        card: 65,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 66,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 67,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 68,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 69,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 70,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 71,
+        prerequisite: 64,
+        label: "private_power",
+        shared_fields: &["case", "subject", "function", "affected"],
+    },
+    EconomicDependencySpec {
+        card: 71,
+        prerequisite: 62,
+        label: "acquisition",
+        shared_fields: &[
+            "case",
+            "authorizing_law",
+            "property",
+            "public_purpose",
+            "compensation",
+        ],
+    },
+    EconomicDependencySpec {
+        card: 74,
+        prerequisite: 73,
+        label: "appropriation",
+        shared_fields: &[
+            "case",
+            "subject",
+            "function",
+            "affected",
+            "appropriation",
+            "tier",
+            "fiscal_amount",
+        ],
+    },
+    EconomicDependencySpec {
+        card: 82,
+        prerequisite: 81,
+        label: "scarcity",
+        shared_fields: &[
+            "case",
+            "subject",
+            "function",
+            "affected",
+            "resource",
+            "population",
+        ],
+    },
+    EconomicDependencySpec {
+        card: 85,
+        prerequisite: 72,
+        label: "tax",
+        shared_fields: &["tax_instrument", "tier"],
+    },
+    EconomicDependencySpec {
+        card: 87,
+        prerequisite: 86,
+        label: "unit",
+        shared_fields: &["unit", "tier"],
+    },
+    EconomicDependencySpec {
+        card: 88,
+        prerequisite: 87,
+        label: "backbone",
+        shared_fields: &["unit", "tier", "settlement_route"],
+    },
+];
+
+#[derive(Clone, Copy)]
+struct StateDependencySpec {
+    card: usize,
+    prerequisite: usize,
+    label: &'static str,
+    economic_field: &'static str,
+    state_field_scope: &'static str,
+    branch: &'static str,
+}
+
+const STATE_DEPENDENCIES: [StateDependencySpec; 8] = [
+    StateDependencySpec {
+        card: 62,
+        prerequisite: 5,
+        label: "ordinary_law",
+        economic_field: "authorizing_law",
+        state_field_scope: "LawScope",
+        branch: "FSPOW_005UnusedCouncilReturnBranch",
+    },
+    StateDependencySpec {
+        card: 72,
+        prerequisite: 6,
+        label: "revenue",
+        economic_field: "tax_instrument",
+        state_field_scope: "RevenueMeasureScope",
+        branch: "FSPOW_006RevenueAuthorizationBranch",
+    },
+    StateDependencySpec {
+        card: 73,
+        prerequisite: 7,
+        label: "appropriation",
+        economic_field: "appropriation",
+        state_field_scope: "AppropriationMeasureScope",
+        branch: "FSPOW_007AppropriationAuthorizationBranch",
+    },
+    StateDependencySpec {
+        card: 75,
+        prerequisite: 5,
+        label: "ordinary_law",
+        economic_field: "authorizing_law",
+        state_field_scope: "LawScope",
+        branch: "FSPOW_005UnusedCouncilReturnBranch",
+    },
+    StateDependencySpec {
+        card: 76,
+        prerequisite: 5,
+        label: "ordinary_law",
+        economic_field: "authorizing_law",
+        state_field_scope: "LawScope",
+        branch: "FSPOW_005UnusedCouncilReturnBranch",
+    },
+    StateDependencySpec {
+        card: 77,
+        prerequisite: 5,
+        label: "ordinary_law",
+        economic_field: "mandate",
+        state_field_scope: "LawScope",
+        branch: "FSPOW_005UnusedCouncilReturnBranch",
+    },
+    StateDependencySpec {
+        card: 84,
+        prerequisite: 5,
+        label: "ordinary_law",
+        economic_field: "authorizing_law",
+        state_field_scope: "LawScope",
+        branch: "FSPOW_005UnusedCouncilReturnBranch",
+    },
+    StateDependencySpec {
+        card: 88,
+        prerequisite: 5,
+        label: "ordinary_law",
+        economic_field: "authorizing_law",
+        state_field_scope: "LawScope",
+        branch: "FSPOW_005UnusedCouncilReturnBranch",
+    },
+];
+
+const ECONOMIC_ALWAYS_DUTY_BINDINGS: [(&str, &str, &str); 25] = [
+    (
+        "material-floor-finance",
+        "FinanceSecureMaintainMaterialFloorDuty",
+        "NondelegableNoncontributoryRealAccessStandard",
+    ),
+    (
+        "material-floor-continuity",
+        "ActivateImmediatePublicFloorContinuityDuty",
+        "WithdrawalDisputeInaccessibilityInadequacyOrFailureStandard",
+    ),
+    (
+        "decent-work-opportunity",
+        "SupportDecentWorkTrainingOccupationalAccessDuty",
+        "GenuineOpportunityAntiExclusionNoNamedJobStandard",
+    ),
+    (
+        "labour-safety",
+        "ProvideSafeHealthyWorkConditionsDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-terms",
+        "ProvideFairRemunerationRecoveryRestPredictableTermsDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-equality",
+        "ProvideLabourEqualityAccommodationPrivacyInspectionDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-collective",
+        "ProtectAssociationBargainingCollectiveActionDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-participation",
+        "ProvideHighConsequenceWorkplaceInformationParticipationDuty",
+        "CompatibleLawStructureAndThresholdStandard",
+    ),
+    (
+        "housing-continuity",
+        "ProvideEvictionForeclosureHousingContinuityRouteDuty",
+        "LegalityNoticeHearingProportionalityReviewAndRealContinuityStandard",
+    ),
+    (
+        "public-facing-service-protection",
+        "ProvidePublicFacingServiceProtectionDuty",
+        "AccessibleTermsSafetyCorrectionCancellationAndCollectiveRedressStandard",
+    ),
+    (
+        "essential-public-facing-continuity",
+        "MaintainEssentialPublicFacingServiceContinuityDuty",
+        "EssentialServiceContinuityWithoutRightsWaiverStandard",
+    ),
+    (
+        "private-sphere-help-exit",
+        "MaintainConfidentialPrivateSphereHelpAndExitRouteDuty",
+        "IndependentStandingCapacityFloorClaimsConfidentialHelpAndFreeExitStandard",
+    ),
+    (
+        "personal-insolvency-fresh-start",
+        "ProvideAccessiblePersonalInsolvencyFreshStartDuty",
+        "FloorEssentialsOrdinaryToolsAndIndividualizedFraudProcessStandard",
+    ),
+    (
+        "failure-wage-pension-protection",
+        "ProtectWagesPensionsAndEarnedBenefitsOnFailureDuty",
+        "EffectivePriorityGuaranteeOrEquivalentEmptyEstateStandard",
+    ),
+    (
+        "insolvency-evasion-prevention",
+        "PreventInsolvencyEvasionAndLiabilityDumpingDuty",
+        "InsiderPreferenceFraudulentTransferAssetStrippingAndRemediationDutyStandard",
+    ),
+    (
+        "failure-essential-continuity",
+        "MaintainEssentialServiceContinuityThroughFailureDuty",
+        "PublicContinuityWithoutAuthorityExtensionStandard",
+    ),
+    (
+        "economic-individual-remedy",
+        "ProvideEconomicIndividualRemedyDuty",
+        "AuthenticatedBreachCessationProvisionRecoveryCorrectionRestitutionAndProtectionStandard",
+    ),
+    (
+        "economic-continuity-remedy",
+        "ProvideEconomicContinuityRemedyDuty",
+        "AuthenticatedBreachInterimContinuityAndNonRepetitionStandard",
+    ),
+    (
+        "labour-safety-public",
+        "ProvideSafeHealthyWorkConditionsDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-terms-public",
+        "ProvideFairRemunerationRecoveryRestPredictableTermsDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-equality-public",
+        "ProvideLabourEqualityAccommodationPrivacyInspectionDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-collective-public",
+        "ProtectAssociationBargainingCollectiveActionDuty",
+        "ActualControlDependencyIntegrationAndEconomicRealityStandard",
+    ),
+    (
+        "labour-participation-public",
+        "ProvideHighConsequenceWorkplaceInformationParticipationDuty",
+        "CompatibleLawStructureAndThresholdStandard",
+    ),
+    (
+        "public-facing-service-protection-public",
+        "ProvidePublicFacingServiceProtectionDuty",
+        "AccessibleTermsSafetyCorrectionCancellationAndCollectiveRedressStandard",
+    ),
+    (
+        "essential-public-facing-continuity-public",
+        "MaintainEssentialPublicFacingServiceContinuityDuty",
+        "EssentialServiceContinuityWithoutRightsWaiverStandard",
+    ),
+];
+
+fn economic_always_duty_effect(key: &str) -> Option<usize> {
+    Some(match key {
+        "material-floor-finance"
+        | "decent-work-opportunity"
+        | "private-sphere-help-exit"
+        | "personal-insolvency-fresh-start" => 200,
+        "material-floor-continuity" | "housing-continuity" | "failure-essential-continuity" => 201,
+        "economic-individual-remedy" | "economic-continuity-remedy" => 202,
+        "labour-safety"
+        | "labour-terms"
+        | "labour-equality"
+        | "labour-collective"
+        | "labour-participation"
+        | "public-facing-service-protection"
+        | "essential-public-facing-continuity" => 204,
+        "failure-wage-pension-protection"
+        | "insolvency-evasion-prevention"
+        | "labour-safety-public"
+        | "labour-terms-public"
+        | "labour-equality-public"
+        | "labour-collective-public"
+        | "labour-participation-public"
+        | "public-facing-service-protection-public"
+        | "essential-public-facing-continuity-public" => 199,
+        _ => return None,
+    })
+}
+
+const ECONOMIC_ASSERTION_WALL_IDS: [&str; 8] = [
+    "recognition-binary",
+    "recognition-arity-one",
+    "recognition-non-ranked",
+    "recognition-unread",
+    "derived-only-title",
+    "derived-only-liability",
+    "book2-model-not-derived",
+    "book2-statistic-not-derived",
+];
+
+const ECONOMIC_ASSERTION_WALL_EVIDENCE: [(&str, &str, &str); 8] = [
+    ("recognition-binary", "reward(Quin).", "TRUE"),
+    (
+        "recognition-arity-one",
+        "reward(Quin, EconomicRecognitionArityTwoProbe).",
+        "FALSE",
+    ),
+    (
+        "recognition-non-ranked",
+        "reward(EconomicRecognitionRankOne, Quin).",
+        "FALSE",
+    ),
+    (
+        "recognition-unread",
+        "prevents(Quin, CompensationRecognitionCoupling).",
+        "TRUE",
+    ),
+    (
+        "derived-only-title",
+        "complete(RawTitleCarryResult, EconomicTitleCarryResult, RawTitleCarryRecord).",
+        "FALSE",
+    ),
+    (
+        "derived-only-liability",
+        "complete(RawLiabilityCarryResult, EconomicLiabilityCarryResult, RawLiabilityCarryRecord).",
+        "FALSE",
+    ),
+    (
+        "book2-model-not-derived",
+        "complete(RawBook2ModelResult, Book2ModelDerivedConstitutionalFact, RawBook2ModelRecord).",
+        "FALSE",
+    ),
+    (
+        "book2-statistic-not-derived",
+        "complete(RawBook2StatisticResult, Book2StatisticDerivedConstitutionalFact, RawBook2StatisticRecord).",
+        "FALSE",
+    ),
+];
+
+const ECONOMIC_ACCEPTANCE_CASES: [(&str, &str, usize); 24] = [
+    (
+        "EAC-001",
+        "every lawful ownership form, including a cooperative or public enterprise",
+        7,
+    ),
+    (
+        "EAC-002",
+        "a person with zero contribution history and a prisoner refusing work without",
+        5,
+    ),
+    (
+        "EAC-003",
+        "lawful collective action, a narrow minimum-service order, and a refused",
+        5,
+    ),
+    (
+        "EAC-004",
+        "valid and pretextual licensing, accessible alternative proof, and credential-",
+        4,
+    ),
+    (
+        "EAC-005",
+        "compensation remaining independent of `reward`, `false`, and `lose`",
+        5,
+    ),
+    (
+        "EAC-006",
+        "lawful inheritance, estate-bounded debt, anti-concentration taxation",
+        7,
+    ),
+    (
+        "EAC-007",
+        "a particular luxury asset being reachable while adequate secure housing and",
+        3,
+    ),
+    (
+        "EAC-008",
+        "enforceable voluntary contracts, adhesion under dependency, invalid rights",
+        8,
+    ),
+    (
+        "EAC-009",
+        "harmless household pooling with an independent confidential exit route",
+        4,
+    ),
+    (
+        "EAC-010",
+        "a faith or cultural body selecting a genuinely expressive role but receiving",
+        5,
+    ),
+    (
+        "EAC-011",
+        "a platform, monopoly, mutual-aid provider, landlord, lender, insurer, and",
+        20,
+    ),
+    (
+        "EAC-012",
+        "an expired occupational licence or knowledge-exclusivity term whose",
+        8,
+    ),
+    (
+        "EAC-013",
+        "enterprise petitioning remaining lawful while enterprise-treasury electoral",
+        8,
+    ),
+    (
+        "EAC-014",
+        "capacity-based taxation, protected floor assets, transparent borrowing",
+        5,
+    ),
+    (
+        "EAC-015",
+        "public and complementary payment instruments, offline access, credit denial",
+        6,
+    ),
+    (
+        "EAC-016",
+        "personal fresh start, individualized proven fraud, employer insolvency with",
+        7,
+    ),
+    (
+        "EAC-017",
+        "genuine scarcity versus budgetary withholding, hoarding, monopoly, and",
+        12,
+    ),
+    (
+        "EAC-018",
+        "a resource-specific benefit finding remaining valid while generalized",
+        10,
+    ),
+    (
+        "EAC-019",
+        "a regional economic policy remaining valid, a stronger regional protection",
+        4,
+    ),
+    (
+        "EAC-020",
+        "a structural remedy preserving workers and essential users",
+        2,
+    ),
+    (
+        "EAC-021",
+        "every temporary economic power ending under its own temporal contract",
+        28,
+    ),
+    (
+        "EAC-022",
+        "recognition staying binary, arity-one, non-ranked, and unread",
+        4,
+    ),
+    (
+        "EAC-023",
+        "raw lawful-title or liability assertions being refused wherever",
+        2,
+    ),
+    (
+        "EAC-024",
+        "a Book 2 model or statistic being refused as a Nibli-derived constitutional",
+        2,
+    ),
+];
+
+const EXPECTED_ECONOMIC_ACCEPTANCE_CASES_SHA256: &str =
+    "7bf864de16f0a78667f3857cf8fa94d67d98e2ec7ca68557e8a2fd1ae444e11a";
 
 const SOURCE_FAMILIES: [&str; 8] = [
     "state-form-and-political-membership",
@@ -635,6 +1755,82 @@ struct Power {
     counterfactual: TestBinding,
     part_v_status: String,
     book2_handoff: String,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicPowerRuleField {
+    name: String,
+    value: String,
+    scope: String,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicPowerRuleRequirement {
+    value: String,
+    scope: String,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicPowerRuleContract {
+    power_ref: String,
+    temporal_contract: String,
+    jurisdiction_kind: String,
+    authority_scope_kind: String,
+    holder: String,
+    fields: Vec<EconomicPowerRuleField>,
+    requirements: Vec<EconomicPowerRuleRequirement>,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicCarryRuleContract {
+    carry_kind: String,
+    record_kind: String,
+    temporal_contract: String,
+    current_kind: String,
+    current_selection: String,
+    result_kind: String,
+    branch: String,
+    finding_kind: String,
+    jurisdiction_kind: String,
+    legal_scope_kind: String,
+    interest: EconomicPowerRuleField,
+    requirement: EconomicPowerRuleRequirement,
+    predecessor_record_scope: String,
+    predecessor_result_scope: String,
+    successor_event_scope: String,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicAcceptanceSupport {
+    owner_kind: String,
+    owner_id: String,
+    polarity: String,
+    formal_refs: Vec<String>,
+    pin_ref: String,
+    query: String,
+    expected_result: String,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicAcceptanceMapping {
+    variant_id: String,
+    mapping_id: String,
+    assertion: String,
+    supports: Vec<EconomicAcceptanceSupport>,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct EconomicAcceptanceCase {
+    case_id: String,
+    source_needle: String,
+    mappings: Vec<EconomicAcceptanceMapping>,
 }
 
 #[derive(Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
@@ -1998,6 +3194,9 @@ pub(crate) struct LedgerDocument {
     power_population: PowerPopulation,
     coverage_population: CoveragePopulation,
     powers: Vec<Power>,
+    economic_power_rule_contracts: Vec<EconomicPowerRuleContract>,
+    economic_carry_rule_contracts: Vec<EconomicCarryRuleContract>,
+    economic_acceptance_cases: Vec<EconomicAcceptanceCase>,
     power_contract_templates: Vec<PowerTemplate>,
     power_refusals: Vec<PowerRefusal>,
     power_crosswalk_dispositions: Vec<PowerCrosswalk>,
@@ -3118,6 +4317,9 @@ struct ReviewHistoryProjection {
     power_population: IgnoredAny,
     coverage_population: IgnoredAny,
     powers: IgnoredAny,
+    economic_power_rule_contracts: Option<IgnoredAny>,
+    economic_carry_rule_contracts: Option<IgnoredAny>,
+    economic_acceptance_cases: Option<IgnoredAny>,
     power_contract_templates: IgnoredAny,
     power_refusals: IgnoredAny,
     power_crosswalk_dispositions: IgnoredAny,
@@ -3892,7 +5094,7 @@ fn validate_power_binding(
     let binding = &source.power_source_inventory;
     if binding.artifact_ref != POWER_MANIFEST
         || binding.artifact_sha256
-            != "e8dfa12813ce1bafc970e2350598482cdf5c159f6305846bc01063b6399ff3e7"
+            != "2a664fa968423e1ffeec6036422600cc249aa7972258482978b921417ec5f67a"
         || binding.source_commit != "36ed92c58877cffa5a11928ad200f0ca9a604820"
         || binding.inventory_status != INVENTORY_STATUS
         || binding.row_count != 237
@@ -4203,13 +5405,3852 @@ struct StateFormPolicyProjection<'a> {
     part_v_status: &'a str,
 }
 
+#[derive(Serialize)]
+struct EconomicPowerPolicyProjection<'a> {
+    id: &'a str,
+    holder_body_refs: &'a [String],
+    holder_role_refs: &'a [String],
+    decisive_fact_writer_body_refs: &'a [String],
+    decisive_fact_writer_role_refs: &'a [String],
+    decider_body_refs: &'a [String],
+    decider_role_refs: &'a [String],
+    executor_body_refs: &'a [String],
+    executor_role_refs: &'a [String],
+    auditor_body_refs: &'a [String],
+    auditor_role_refs: &'a [String],
+    final_remedy_body_refs: &'a [String],
+    final_remedy_role_refs: &'a [String],
+    required_separation_pairs: &'a [Vec<String>],
+    prohibited_inputs: &'a [String],
+    negative_status: &'a str,
+    negative_executable_ref: &'a Option<String>,
+    counterfactual_status: &'a str,
+    counterfactual_executable_ref: &'a Option<String>,
+    part_v_status: &'a str,
+}
+
 fn typed_fingerprint<T: Serialize>(value: &T, context: &str) -> LedgerResult<String> {
     let bytes = serde_json::to_vec(value)
         .map_err(|error| LedgerError::new(format!("{context} cannot be fingerprinted: {error}")))?;
     Ok(sha256(&bytes))
 }
 
-fn validate_power_effect_coverage_policy(source: &LedgerDocument) -> LedgerResult<()> {
+#[derive(Debug)]
+struct EconomicRule<'a> {
+    body: HashSet<&'a str>,
+    head: &'a str,
+}
+
+fn economic_split_top_level<'a>(text: &'a str, separator: &str) -> LedgerResult<Vec<&'a str>> {
+    if separator.is_empty() || !text.is_ascii() {
+        return Err(LedgerError::new(
+            "economic rule parser requires a nonempty separator and ASCII source",
+        ));
+    }
+    let bytes = text.as_bytes();
+    let mut parts = Vec::new();
+    let mut start = 0_usize;
+    let mut depth = 0_usize;
+    let mut index = 0_usize;
+    while index < bytes.len() {
+        match bytes[index] {
+            b'(' => depth += 1,
+            b')' => {
+                if depth == 0 {
+                    return Err(LedgerError::new(format!(
+                        "economic rule has an unmatched closing parenthesis: {text:?}"
+                    )));
+                }
+                depth -= 1;
+            }
+            _ if depth == 0 && text[index..].starts_with(separator) => {
+                parts.push(&text[start..index]);
+                index += separator.len();
+                start = index;
+                continue;
+            }
+            _ => {}
+        }
+        index += 1;
+    }
+    if depth != 0 {
+        return Err(LedgerError::new(format!(
+            "economic rule has unbalanced parentheses: {text:?}"
+        )));
+    }
+    parts.push(&text[start..]);
+    Ok(parts)
+}
+
+fn economic_valid_identifier(value: &str) -> bool {
+    let mut chars = value.chars();
+    chars
+        .next()
+        .is_some_and(|first| first == '_' || first.is_ascii_alphabetic())
+        && chars.all(|character| character == '_' || character.is_ascii_alphanumeric())
+}
+
+fn economic_rule_remainder(statement: &str) -> LedgerResult<&str> {
+    let mut remainder = statement
+        .strip_suffix('.')
+        .ok_or_else(|| LedgerError::new("economic rule statement lacks its final period"))?;
+    while let Some(after_all) = remainder.strip_prefix("all $") {
+        let (name, rest) = after_all.split_once(": ").ok_or_else(|| {
+            LedgerError::new(format!(
+                "economic rule has a malformed universal quantifier: {statement:?}"
+            ))
+        })?;
+        if !economic_valid_identifier(name) {
+            return Err(LedgerError::new(format!(
+                "economic rule has an invalid quantified name: {name:?}"
+            )));
+        }
+        remainder = rest;
+    }
+    Ok(remainder)
+}
+
+fn economic_quantified_names(statement: &str) -> LedgerResult<Vec<&str>> {
+    let mut remainder = statement
+        .strip_suffix('.')
+        .ok_or_else(|| LedgerError::new("economic rule statement lacks its final period"))?;
+    let mut names = Vec::new();
+    while let Some(after_all) = remainder.strip_prefix("all $") {
+        let (name, rest) = after_all.split_once(": ").ok_or_else(|| {
+            LedgerError::new(format!(
+                "economic rule has a malformed universal quantifier: {statement:?}"
+            ))
+        })?;
+        if !economic_valid_identifier(name) || names.contains(&name) {
+            return Err(LedgerError::new(format!(
+                "economic rule has an invalid or duplicate quantified name: {name:?}"
+            )));
+        }
+        names.push(name);
+        remainder = rest;
+    }
+    Ok(names)
+}
+
+fn parse_economic_rule(statement: &str) -> LedgerResult<EconomicRule<'_>> {
+    let remainder = economic_rule_remainder(statement)?;
+    let implication = economic_split_top_level(remainder, " -> ")?;
+    let [body, head] = implication.as_slice() else {
+        return Err(LedgerError::new(format!(
+            "economic rule needs exactly one top-level implication: {statement:?}"
+        )));
+    };
+    let atoms = economic_split_top_level(body, " & ")?;
+    if atoms.iter().any(|atom| atom.is_empty()) {
+        return Err(LedgerError::new(
+            "economic rule contains an empty body atom",
+        ));
+    }
+    Ok(EconomicRule {
+        body: atoms.into_iter().collect(),
+        head,
+    })
+}
+
+fn economic_call<'a>(text: &'a str, expected_name: &str) -> LedgerResult<Vec<&'a str>> {
+    let open = text
+        .find('(')
+        .ok_or_else(|| LedgerError::new(format!("economic rule head is not a call: {text:?}")))?;
+    if !text.ends_with(')')
+        || &text[..open] != expected_name
+        || !economic_valid_identifier(&text[..open])
+    {
+        return Err(LedgerError::new(format!(
+            "economic rule head is not {expected_name}: {text:?}"
+        )));
+    }
+    let arguments = economic_split_top_level(&text[open + 1..text.len() - 1], ",")?
+        .into_iter()
+        .map(str::trim)
+        .collect::<Vec<_>>();
+    if arguments.iter().any(|argument| argument.is_empty()) {
+        return Err(LedgerError::new(format!(
+            "economic rule head has an empty argument: {text:?}"
+        )));
+    }
+    Ok(arguments)
+}
+
+fn economic_block(source: &str) -> LedgerResult<&str> {
+    const BEGIN: &str = "# <ECONOMIC-CONSTITUTION-RULES-BEGIN>";
+    const END: &str = "# <ECONOMIC-CONSTITUTION-RULES-END>";
+    if source.matches(BEGIN).count() != 1 || source.matches(END).count() != 1 {
+        return Err(LedgerError::new(
+            "constitution needs exactly one economic-rule marker pair",
+        ));
+    }
+    let start = source
+        .find(BEGIN)
+        .expect("the economic begin marker count was one");
+    let end = source
+        .find(END)
+        .expect("the economic end marker count was one");
+    if start >= end {
+        return Err(LedgerError::new(
+            "constitution economic-rule markers are reversed",
+        ));
+    }
+    let block = &source[start..end + END.len()];
+    if !block.is_ascii() {
+        return Err(LedgerError::new(
+            "constitution economic-rule block must remain ASCII Nibli source",
+        ));
+    }
+    Ok(block)
+}
+
+fn economic_power_number(power_ref: &str) -> LedgerResult<usize> {
+    power_ref
+        .strip_prefix("FS-POW-")
+        .and_then(|suffix| suffix.parse::<usize>().ok())
+        .filter(|number| (61..=88).contains(number))
+        .ok_or_else(|| {
+            LedgerError::new(format!(
+                "economic rule contract has an invalid power_ref: {power_ref}"
+            ))
+        })
+}
+
+fn require_economic_atom(rule: &EconomicRule<'_>, atom: &str, context: &str) -> LedgerResult<()> {
+    if !rule.body.contains(atom) {
+        return Err(LedgerError::new(format!(
+            "{context}: required rule-body atom is missing: {atom}"
+        )));
+    }
+    Ok(())
+}
+
+fn require_economic_observation(
+    rule: &EconomicRule<'_>,
+    actor: &str,
+    subject: &str,
+    value: &str,
+    scope: &str,
+    context: &str,
+) -> LedgerResult<()> {
+    require_economic_atom(
+        rule,
+        &format!("observe({actor}, {subject}, {value}, {scope})"),
+        context,
+    )
+}
+
+fn economic_field_pairs(contract: &EconomicPowerRuleContract) -> Vec<(&str, &str, &str)> {
+    ECONOMIC_COMMON_POWER_FIELDS
+        .into_iter()
+        .chain(contract.fields.iter().map(|field| {
+            (
+                field.name.as_str(),
+                field.value.as_str(),
+                field.scope.as_str(),
+            )
+        }))
+        .collect()
+}
+
+fn economic_requirement_pairs(contract: &EconomicPowerRuleContract) -> Vec<(&str, &str)> {
+    ECONOMIC_COMMON_POWER_REQUIREMENTS
+        .into_iter()
+        .chain(
+            contract
+                .requirements
+                .iter()
+                .map(|requirement| (requirement.value.as_str(), requirement.scope.as_str())),
+        )
+        .collect()
+}
+
+fn validate_economic_rule_contract_rows(
+    contracts: &[EconomicPowerRuleContract],
+    expected_power_refs: &[String],
+) -> LedgerResult<()> {
+    let actual_refs = contracts
+        .iter()
+        .map(|contract| contract.power_ref.as_str())
+        .collect::<Vec<_>>();
+    let expected_refs = expected_power_refs
+        .iter()
+        .map(String::as_str)
+        .collect::<Vec<_>>();
+    let sequential_refs = (61..=88)
+        .map(|number| format!("FS-POW-{number:03}"))
+        .collect::<Vec<_>>();
+    if actual_refs != expected_refs
+        || actual_refs
+            != sequential_refs
+                .iter()
+                .map(String::as_str)
+                .collect::<Vec<_>>()
+    {
+        return Err(LedgerError::new(
+            "economic rule contracts must follow the exact FS-CVF-006 FS-POW-061..088 order",
+        ));
+    }
+    let common_names = ECONOMIC_COMMON_POWER_FIELDS
+        .iter()
+        .map(|(name, _, _)| *name)
+        .collect::<HashSet<_>>();
+    let common_pairs = ECONOMIC_COMMON_POWER_FIELDS
+        .iter()
+        .map(|(_, value, scope)| (*value, *scope))
+        .collect::<HashSet<_>>();
+    let common_requirements = ECONOMIC_COMMON_POWER_REQUIREMENTS
+        .into_iter()
+        .collect::<HashSet<_>>();
+    for contract in contracts {
+        let _ = economic_power_number(&contract.power_ref)?;
+        for (name, value) in [
+            ("temporal_contract", contract.temporal_contract.as_str()),
+            ("jurisdiction_kind", contract.jurisdiction_kind.as_str()),
+            (
+                "authority_scope_kind",
+                contract.authority_scope_kind.as_str(),
+            ),
+            ("holder", contract.holder.as_str()),
+        ] {
+            if !economic_valid_identifier(value) {
+                return Err(LedgerError::new(format!(
+                    "{}.{} must be an exact Nibli identifier",
+                    contract.power_ref, name
+                )));
+            }
+        }
+        let mut field_names = HashSet::new();
+        let mut field_pairs = HashSet::new();
+        for field in &contract.fields {
+            if !economic_valid_identifier(&field.name)
+                || !(economic_valid_identifier(&field.value)
+                    || field
+                        .value
+                        .strip_prefix('$')
+                        .is_some_and(economic_valid_identifier))
+                || !economic_valid_identifier(&field.scope)
+                || common_names.contains(field.name.as_str())
+                || common_pairs.contains(&(field.value.as_str(), field.scope.as_str()))
+                || !field_names.insert(field.name.as_str())
+                || !field_pairs.insert((field.value.as_str(), field.scope.as_str()))
+            {
+                return Err(LedgerError::new(format!(
+                    "{}: card-specific economic fields must be unique, valid, and exclude common fields",
+                    contract.power_ref
+                )));
+            }
+        }
+        let mut requirements = HashSet::new();
+        for requirement in &contract.requirements {
+            if !economic_valid_identifier(&requirement.value)
+                || !economic_valid_identifier(&requirement.scope)
+                || common_requirements
+                    .contains(&(requirement.value.as_str(), requirement.scope.as_str()))
+                || !requirements.insert((requirement.value.as_str(), requirement.scope.as_str()))
+            {
+                return Err(LedgerError::new(format!(
+                    "{}: card-specific economic requirements must be unique, valid, and exclude common requirements",
+                    contract.power_ref
+                )));
+            }
+        }
+    }
+    Ok(())
+}
+
+fn validate_economic_carry_rule_contract_rows(
+    contracts: &[EconomicCarryRuleContract],
+) -> LedgerResult<()> {
+    let expected = [
+        (
+            (
+                "benefit",
+                "EconomicBenefitCarryRecord",
+                "EconomicBenefitCarryTemporalContract",
+                "EconomicBenefitCarryCurrent",
+                "EconomicBenefitCarryCurrentSelection",
+                "EconomicBenefitCarryResult",
+                "EconomicBenefitCarryBranch",
+                "EconomicAdjudicatedBenefitFinding",
+                "BenefitSourceCompetentJurisdiction",
+                "AdjudicatedBenefitCarryScope",
+            ),
+            ("benefit", "$benefit", "EconomicBenefitScope"),
+            (
+                "AdjudicatedBenefitCarryWithinExactLegalSource",
+                "EconomicCarryRequirementScope",
+            ),
+            (
+                "EconomicCarryPredecessorRecordScope",
+                "EconomicCarryPredecessorResultScope",
+                "EconomicCarrySuccessorEventScope",
+            ),
+        ),
+        (
+            (
+                "title",
+                "EconomicTitleCarryRecord",
+                "EconomicTitleCarryTemporalContract",
+                "EconomicTitleCarryCurrent",
+                "EconomicTitleCarryCurrentSelection",
+                "EconomicTitleCarryResult",
+                "EconomicTitleCarryBranch",
+                "EconomicLawfulTitleFinding",
+                "PropertySitusAndCompetentTierJurisdiction",
+                "LawfulTitleCarryScope",
+            ),
+            ("title", "$title", "EconomicTitleScope"),
+            (
+                "AdjudicatedTitleCarryWithinExactLegalSource",
+                "EconomicCarryRequirementScope",
+            ),
+            (
+                "EconomicCarryPredecessorRecordScope",
+                "EconomicCarryPredecessorResultScope",
+                "EconomicCarrySuccessorEventScope",
+            ),
+        ),
+        (
+            (
+                "liability",
+                "EconomicLiabilityCarryRecord",
+                "EconomicLiabilityCarryTemporalContract",
+                "EconomicLiabilityCarryCurrent",
+                "EconomicLiabilityCarryCurrentSelection",
+                "EconomicLiabilityCarryResult",
+                "EconomicLiabilityCarryBranch",
+                "EconomicAdjudicatedLiabilityFinding",
+                "LiabilityAdjudicationJurisdiction",
+                "AdjudicatedLiabilityCarryScope",
+            ),
+            ("liability", "$liability", "EconomicLiabilityScope"),
+            (
+                "AdjudicatedLiabilityCarryWithinExactLegalSource",
+                "EconomicCarryRequirementScope",
+            ),
+            (
+                "EconomicCarryPredecessorRecordScope",
+                "EconomicCarryPredecessorResultScope",
+                "EconomicCarrySuccessorEventScope",
+            ),
+        ),
+    ];
+    if contracts.len() != expected.len() {
+        return Err(LedgerError::new(format!(
+            "economic carry rule contracts must contain exactly benefit, title, and liability; found {} rows",
+            contracts.len()
+        )));
+    }
+    for (contract, expected) in contracts.iter().zip(expected) {
+        let actual = (
+            (
+                contract.carry_kind.as_str(),
+                contract.record_kind.as_str(),
+                contract.temporal_contract.as_str(),
+                contract.current_kind.as_str(),
+                contract.current_selection.as_str(),
+                contract.result_kind.as_str(),
+                contract.branch.as_str(),
+                contract.finding_kind.as_str(),
+                contract.jurisdiction_kind.as_str(),
+                contract.legal_scope_kind.as_str(),
+            ),
+            (
+                contract.interest.name.as_str(),
+                contract.interest.value.as_str(),
+                contract.interest.scope.as_str(),
+            ),
+            (
+                contract.requirement.value.as_str(),
+                contract.requirement.scope.as_str(),
+            ),
+            (
+                contract.predecessor_record_scope.as_str(),
+                contract.predecessor_result_scope.as_str(),
+                contract.successor_event_scope.as_str(),
+            ),
+        );
+        if actual != expected {
+            return Err(LedgerError::new(format!(
+                "economic {} carry rule contract differs from checker policy",
+                contract.carry_kind
+            )));
+        }
+    }
+    Ok(())
+}
+
+fn economic_reference_parts<'a>(
+    reference: &'a str,
+    context: &str,
+) -> LedgerResult<(&'a str, &'a str)> {
+    if reference.matches("::").count() != 1 {
+        return Err(LedgerError::new(format!(
+            "{context}: reference must be `path::needle`"
+        )));
+    }
+    reference
+        .split_once("::")
+        .ok_or_else(|| LedgerError::new(format!("{context}: malformed repository reference")))
+}
+
+fn economic_executable_pin_paths<'a>(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    negative: &'a TestBinding,
+    counterfactual: &'a TestBinding,
+    context: &str,
+) -> LedgerResult<BTreeSet<&'a str>> {
+    let mut paths = BTreeSet::new();
+    for (label, test) in [("negative", negative), ("counterfactual", counterfactual)] {
+        if test.status != "executable" {
+            continue;
+        }
+        let reference = test.executable_ref.0.as_deref().ok_or_else(|| {
+            LedgerError::new(format!(
+                "{context}.{label}: executable test has no executable_ref"
+            ))
+        })?;
+        validate_repository_reference(
+            inputs,
+            reference,
+            &format!("{context}.{label}.executable_ref"),
+        )?;
+        let (path, _) =
+            economic_reference_parts(reference, &format!("{context}.{label}.executable_ref"))?;
+        if !path.ends_with(".pins.nibli") {
+            return Err(LedgerError::new(format!(
+                "{context}.{label}: executable_ref is not a pin suite"
+            )));
+        }
+        paths.insert(path);
+    }
+    if paths.is_empty() {
+        return Err(LedgerError::new(format!(
+            "{context}: acceptance owner has no executable pin suite"
+        )));
+    }
+    Ok(paths)
+}
+
+fn economic_constitutional_effect_constant(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    owner: &ConstitutionalEffect,
+    context: &str,
+) -> LedgerResult<String> {
+    if owner.negative_test.status != "executable" {
+        return Err(LedgerError::new(format!(
+            "{context}: constitutional-effect owner has no executable negative test"
+        )));
+    }
+    let reference = owner
+        .negative_test
+        .executable_ref
+        .0
+        .as_deref()
+        .ok_or_else(|| {
+            LedgerError::new(format!(
+                "{context}: constitutional-effect owner negative test has no executable_ref"
+            ))
+        })?;
+    validate_repository_reference(inputs, reference, context)?;
+    let (path, needle) = economic_reference_parts(reference, context)?;
+    let text = std::str::from_utf8(input_bytes(inputs, path)?).map_err(|error| {
+        LedgerError::new(format!(
+            "{context}: constitutional-effect pin suite is not UTF-8: {error}"
+        ))
+    })?;
+    let lines = text.lines().collect::<Vec<_>>();
+    let marker_indexes = lines
+        .iter()
+        .enumerate()
+        .filter_map(|(index, line)| {
+            (*line == needle
+                || line
+                    .strip_prefix(needle)
+                    .is_some_and(|suffix| suffix.starts_with(' ')))
+            .then_some(index)
+        })
+        .collect::<Vec<_>>();
+    let [marker_index] = marker_indexes.as_slice() else {
+        return Err(LedgerError::new(format!(
+            "{context}: constitutional-effect negative executable_ref is not a unique exact marker"
+        )));
+    };
+    let query = lines
+        .get(marker_index + 1)
+        .and_then(|line| line.strip_prefix("? "))
+        .and_then(|line| line.strip_suffix('.'))
+        .ok_or_else(|| {
+            LedgerError::new(format!(
+                "{context}: constitutional-effect negative marker lacks its adjacent query"
+            ))
+        })?;
+    let arguments = economic_call(query, "prevents")?;
+    if arguments.len() != 2 {
+        return Err(LedgerError::new(format!(
+            "{context}: constitutional-effect negative query is not binary prevents"
+        )));
+    }
+    Ok(arguments[1].to_owned())
+}
+
+fn economic_effect_title_key(title: &str) -> LedgerResult<String> {
+    if !title.is_ascii() {
+        return Err(LedgerError::new(
+            "economic constitutional-effect title must be ASCII",
+        ));
+    }
+    let mut key = String::new();
+    let mut pending_separator = false;
+    for byte in title.bytes() {
+        if byte.is_ascii_alphanumeric() {
+            if pending_separator && !key.is_empty() {
+                key.push('-');
+            }
+            key.push((byte as char).to_ascii_lowercase());
+            pending_separator = false;
+        } else {
+            pending_separator = true;
+        }
+    }
+    if key.is_empty() {
+        return Err(LedgerError::new(
+            "economic constitutional-effect title has no key material",
+        ));
+    }
+    Ok(key)
+}
+
+fn strip_economic_effect_identity_tag(text: &str) -> &str {
+    let Some(rest) = text.strip_prefix("For FS-CCE-") else {
+        return text;
+    };
+    let Some((identity, suffix)) = rest.split_once("), ") else {
+        return text;
+    };
+    if identity.split_once(" (").is_some_and(|(number, constant)| {
+        number.len() == 3
+            && number.bytes().all(|byte| byte.is_ascii_digit())
+            && !constant.is_empty()
+            && constant
+                .bytes()
+                .all(|byte| byte.is_ascii_alphanumeric() || byte == b'_')
+    }) {
+        suffix
+    } else {
+        text
+    }
+}
+
+fn normalize_economic_effect_term(text: &str) -> String {
+    strip_economic_effect_identity_tag(text)
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+        .to_lowercase()
+}
+
+fn validate_economic_effect_formal_binding(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    effect: &ConstitutionalEffect,
+    formal_constant: &str,
+) -> LedgerResult<()> {
+    let context = format!("{}.formal_binding", effect.id);
+    let formal_rule = format!("all $x: person($x) -> prevents($x, {formal_constant}).");
+    let constitution =
+        std::str::from_utf8(input_bytes(inputs, "new-book-plans/constitution.nibli")?).map_err(
+            |error| LedgerError::new(format!("{context}: constitution is not UTF-8: {error}")),
+        )?;
+    if constitution
+        .lines()
+        .filter(|line| *line == formal_rule)
+        .count()
+        != 1
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: exact direct-effect rule is not unique"
+        )));
+    }
+
+    let reference = effect
+        .negative_test
+        .executable_ref
+        .0
+        .as_deref()
+        .ok_or_else(|| LedgerError::new(format!("{context}: negative pin reference is missing")))?;
+    let (path, negative_marker) = economic_reference_parts(reference, &context)?;
+    let pin_text = std::str::from_utf8(input_bytes(inputs, path)?)
+        .map_err(|error| LedgerError::new(format!("{context}: pin suite is not UTF-8: {error}")))?;
+    let lines = pin_text.lines().collect::<Vec<_>>();
+    let positive_marker = format!("# {} executable boundary: {formal_constant}", effect.id);
+    let positive_indexes = lines
+        .iter()
+        .enumerate()
+        .filter_map(|(index, line)| (*line == positive_marker).then_some(index))
+        .collect::<Vec<_>>();
+    let [positive_index] = positive_indexes.as_slice() else {
+        return Err(LedgerError::new(format!(
+            "{context}: exact positive executable marker is not unique"
+        )));
+    };
+    let positive_query = format!("? prevents(Adam, {formal_constant}).");
+    if lines.get(positive_index + 1).copied() != Some(positive_query.as_str())
+        || lines.get(positive_index + 2).copied() != Some("# => TRUE")
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: positive executable pin is not the exact formal effect"
+        )));
+    }
+
+    let negative_indexes = lines
+        .iter()
+        .enumerate()
+        .filter_map(|(index, line)| {
+            (*line == negative_marker
+                || line
+                    .strip_prefix(negative_marker)
+                    .is_some_and(|suffix| suffix.starts_with(' ')))
+            .then_some(index)
+        })
+        .collect::<Vec<_>>();
+    let [negative_index] = negative_indexes.as_slice() else {
+        return Err(LedgerError::new(format!(
+            "{context}: exact negative executable marker is not unique"
+        )));
+    };
+    let negative_query = format!("? prevents(EconomicUnregisteredHandle, {formal_constant}).");
+    if lines.get(negative_index + 1).copied() != Some(negative_query.as_str())
+        || lines.get(negative_index + 2).copied() != Some("# => FALSE")
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: negative executable pin is not the exact formal effect"
+        )));
+    }
+    Ok(())
+}
+
+fn validate_economic_effect_term_contracts(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    source: &LedgerDocument,
+    family: &CoverageFamily,
+) -> LedgerResult<()> {
+    let expected_refs = (ECONOMIC_EFFECT_FIRST..=EXPECTED_EFFECT_COUNT)
+        .map(|number| format!("FS-CCE-{number:03}"))
+        .collect::<Vec<_>>();
+    if family.effect_refs != expected_refs {
+        return Err(LedgerError::new(
+            "FS-CVF-017 must contain the exact ordered economic effect census",
+        ));
+    }
+    if family.blocked_before_drafting != ECONOMIC_EFFECT_COMPLETION_CEILING {
+        return Err(LedgerError::new(
+            "FS-CVF-017 supplied-record completion ceiling differs from checker policy",
+        ));
+    }
+
+    let effects = source
+        .constitutional_effects
+        .iter()
+        .map(|effect| (effect.id.as_str(), effect))
+        .collect::<HashMap<_, _>>();
+    let mut canonical_suffixes = BTreeMap::<String, String>::new();
+    let mut normalized_full_terms = HashSet::<String>::new();
+    let mut placements = 0_usize;
+    for effect_ref in &family.effect_refs {
+        let effect = effects.get(effect_ref.as_str()).ok_or_else(|| {
+            LedgerError::new(format!(
+                "{effect_ref}: economic constitutional effect is missing"
+            ))
+        })?;
+        let formal_constant = economic_constitutional_effect_constant(
+            inputs,
+            effect,
+            &format!("{effect_ref}.formal_constant"),
+        )?;
+        validate_economic_effect_formal_binding(inputs, effect, &formal_constant)?;
+        if economic_effect_title_key(&effect.title)? != effect.effect_key {
+            return Err(LedgerError::new(format!(
+                "{effect_ref}: title and effect key differ"
+            )));
+        }
+        let expected_applicability = format!(
+            "Every person is protected against {} as the bounded direct constitutional effect named by {formal_constant}.",
+            effect.title.to_ascii_lowercase()
+        );
+        if effect.applicability != expected_applicability
+            || effect.permitted_downstream_effects.len() != 1
+            || effect.permitted_downstream_effects.first() != Some(&effect.applicability)
+        {
+            return Err(LedgerError::new(format!(
+                "{effect_ref}: applicability, formal constant, or singleton downstream effect differs"
+            )));
+        }
+        let required_prefix = format!("{} ", effect.applicability);
+        for (schema_key, term) in effect
+            .contract_terms
+            .iter()
+            .map(|(name, term)| (format!("contract_terms.{name}"), term))
+            .chain(effect.profile_terms.iter().flat_map(|(profile, terms)| {
+                terms
+                    .iter()
+                    .map(move |(name, term)| (format!("profile_terms.{profile}.{name}"), term))
+            }))
+        {
+            let suffix = term.text.strip_prefix(&required_prefix).ok_or_else(|| {
+                LedgerError::new(format!(
+                    "{effect_ref}.{schema_key}: term must begin with the exact substantive applicability and one space"
+                ))
+            })?;
+            if suffix.is_empty() || suffix.trim() != suffix {
+                return Err(LedgerError::new(format!(
+                    "{effect_ref}.{schema_key}: canonical term suffix is empty or padded"
+                )));
+            }
+            let canonical_suffix = suffix
+                .replace(&formal_constant, "{constant}")
+                .replace(&effect.title.to_ascii_lowercase(), "{title}");
+            match canonical_suffixes.get(&schema_key) {
+                Some(expected) if expected != &canonical_suffix => {
+                    return Err(LedgerError::new(format!(
+                        "{effect_ref}.{schema_key}: term suffix differs from its checker-owned schema"
+                    )));
+                }
+                None => {
+                    canonical_suffixes.insert(schema_key.clone(), canonical_suffix);
+                }
+                _ => {}
+            }
+            let normalized = normalize_economic_effect_term(&term.text);
+            if !normalized_full_terms.insert(normalized) {
+                return Err(LedgerError::new(format!(
+                    "{effect_ref}.{schema_key}: normalized economic effect term is duplicated"
+                )));
+            }
+            placements += 1;
+        }
+    }
+    if placements != ECONOMIC_EFFECT_TERM_PLACEMENTS
+        || normalized_full_terms.len() != ECONOMIC_EFFECT_TERM_PLACEMENTS
+        || canonical_suffixes.len() != ECONOMIC_EFFECT_TERM_SCHEMA_KEYS
+    {
+        return Err(LedgerError::new(format!(
+            "economic effect term census differs: {placements} placements, {} unique full terms, {} schema keys",
+            normalized_full_terms.len(),
+            canonical_suffixes.len()
+        )));
+    }
+    let suffix_fingerprint =
+        typed_fingerprint(&canonical_suffixes, "economic effect term suffix schemas")?;
+    if suffix_fingerprint != ECONOMIC_EFFECT_TERM_SCHEMA_SHA256 {
+        return Err(LedgerError::new(format!(
+            "economic effect term suffix schemas differ from checker policy; candidate {suffix_fingerprint}"
+        )));
+    }
+    Ok(())
+}
+
+fn validate_economic_acceptance_pin<'a>(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    support: &'a EconomicAcceptanceSupport,
+    context: &str,
+) -> LedgerResult<&'a str> {
+    validate_repository_reference(inputs, &support.pin_ref, &format!("{context}.pin_ref"))?;
+    let (path, needle) = economic_reference_parts(&support.pin_ref, &format!("{context}.pin_ref"))?;
+    if !path.ends_with(".pins.nibli") || !needle.starts_with("# ") {
+        return Err(LedgerError::new(format!(
+            "{context}.pin_ref must name an exact pin comment in a .pins.nibli file"
+        )));
+    }
+    if support.query.trim() != support.query
+        || !support.query.is_ascii()
+        || support.query.contains(['\n', '\r'])
+        || support.query.starts_with('?')
+        || !support.query.ends_with('.')
+        || support.query.contains(" -> ")
+    {
+        return Err(LedgerError::new(format!(
+            "{context}.query must be one canonical ASCII Nibli query without its `?` prefix"
+        )));
+    }
+    let query_call = support
+        .query
+        .strip_suffix('.')
+        .expect("query period was checked");
+    let predicate = query_call
+        .split_once('(')
+        .map(|(name, _)| name)
+        .ok_or_else(|| LedgerError::new(format!("{context}.query is not a predicate call")))?;
+    let _ = economic_call(query_call, predicate)?;
+    if !matches!(support.expected_result.as_str(), "TRUE" | "FALSE")
+        || (support.polarity == "derive") != (support.expected_result == "TRUE")
+        || !matches!(support.polarity.as_str(), "derive" | "withhold")
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: derive must expect TRUE and withhold must expect FALSE"
+        )));
+    }
+    let text = std::str::from_utf8(input_bytes(inputs, path)?).map_err(|error| {
+        LedgerError::new(format!("{context}.pin_ref target is not UTF-8: {error}"))
+    })?;
+    let lines = text.lines().collect::<Vec<_>>();
+    let marker_indexes = lines
+        .iter()
+        .enumerate()
+        .filter_map(|(index, line)| (*line == needle).then_some(index))
+        .collect::<Vec<_>>();
+    let [marker_index] = marker_indexes.as_slice() else {
+        return Err(LedgerError::new(format!(
+            "{context}.pin_ref needle must be one exact full comment line"
+        )));
+    };
+    if lines.get(marker_index + 1).copied() != Some(&format!("? {}", support.query))
+        || lines.get(marker_index + 2).copied()
+            != Some(&format!("# => {}", support.expected_result))
+    {
+        return Err(LedgerError::new(format!(
+            "{context}.pin_ref is not immediately followed by its exact query and expected result"
+        )));
+    }
+    Ok(path)
+}
+
+fn economic_acceptance_fixture_facts(
+    text: &str,
+    number: usize,
+    fixture: &str,
+    selection: &str,
+) -> BTreeSet<String> {
+    let fixture_token = format!("{number:03}{fixture}");
+    let normalized_selection = format!("EconomicAcceptanceSelection_{number:03}");
+    text.lines()
+        .filter(|line| {
+            line.contains(&fixture_token)
+                && !line.starts_with('#')
+                && !line.starts_with('?')
+                && line.ends_with('.')
+        })
+        .map(|line| {
+            economic_normalize_acceptance_fixture(
+                &line.replace(selection, &normalized_selection),
+                fixture,
+            )
+        })
+        .collect()
+}
+
+fn economic_normalize_acceptance_fixture(line: &str, fixture: &str) -> String {
+    let mut normalized = String::with_capacity(line.len());
+    let mut start = 0_usize;
+    for (index, _) in line.match_indices(fixture) {
+        normalized.push_str(&line[start..index]);
+        if index >= 3
+            && line.as_bytes()[index - 3..index]
+                .iter()
+                .all(u8::is_ascii_digit)
+        {
+            normalized.push_str("AcceptanceFixture");
+        } else {
+            normalized.push_str(fixture);
+        }
+        start = index + fixture.len();
+    }
+    normalized.push_str(&line[start..]);
+    normalized
+}
+
+fn validate_economic_expired_selection_fixture(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    pin_path: &str,
+    number: usize,
+    context: &str,
+) -> LedgerResult<()> {
+    let text = std::str::from_utf8(input_bytes(inputs, pin_path)?).map_err(|error| {
+        LedgerError::new(format!("{context}: power pin suite is not UTF-8: {error}"))
+    })?;
+    let live_token = format!("{number:03}Live");
+    let expired_token = format!("{number:03}ExpiredSelection");
+    let current_selection = format!("EconomicCurrentSelection_{number:03}");
+    let expired_selection = format!("EconomicExpiredSelection_{number:03}");
+    let live_selection_count = text
+        .lines()
+        .filter(|line| line.contains(&live_token) && line.contains(&current_selection))
+        .count();
+    let expired_selection_count = text
+        .lines()
+        .filter(|line| line.contains(&expired_token) && line.contains(&expired_selection))
+        .count();
+    if live_selection_count == 0
+        || expired_selection_count != live_selection_count
+        || text
+            .lines()
+            .any(|line| line.contains(&expired_token) && line.contains(&current_selection))
+        || economic_acceptance_fixture_facts(text, number, "Live", &current_selection)
+            != economic_acceptance_fixture_facts(
+                text,
+                number,
+                "ExpiredSelection",
+                &expired_selection,
+            )
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: expired-selection evidence must reproduce the complete live fixture with every exact current selection replaced"
+        )));
+    }
+    Ok(())
+}
+
+fn validate_economic_missing_requirement_fixture(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    pin_path: &str,
+    number: usize,
+    requirement: &EconomicPowerRuleRequirement,
+    context: &str,
+) -> LedgerResult<()> {
+    let text = std::str::from_utf8(input_bytes(inputs, pin_path)?).map_err(|error| {
+        LedgerError::new(format!("{context}: power pin suite is not UTF-8: {error}"))
+    })?;
+    let current_selection = format!("EconomicCurrentSelection_{number:03}");
+    let live = economic_acceptance_fixture_facts(text, number, "Live", &current_selection);
+    let missing = economic_acceptance_fixture_facts(
+        text,
+        number,
+        "MissingCardSpecificRequirement",
+        &current_selection,
+    );
+    let expected_omissions = ["Source", "Evidence", "Review"]
+        .into_iter()
+        .map(|actor| {
+            format!(
+                "observe(Econ{actor}{number:03}AcceptanceFixture, EconResult{number:03}AcceptanceFixture, {}, {}).",
+                requirement.value, requirement.scope
+            )
+        })
+        .collect::<BTreeSet<_>>();
+    if missing.difference(&live).next().is_some()
+        || live.difference(&missing).cloned().collect::<BTreeSet<_>>() != expected_omissions
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: missing-premise evidence must reproduce the complete live fixture minus only the first checker-owned card requirement"
+        )));
+    }
+    Ok(())
+}
+
+fn validate_economic_classified_acceptance_fixture(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    pin_path: &str,
+    number: usize,
+    fixture: &str,
+    live_value_stem: &str,
+    classified_value: &str,
+    context: &str,
+) -> LedgerResult<()> {
+    let text = std::str::from_utf8(input_bytes(inputs, pin_path)?).map_err(|error| {
+        LedgerError::new(format!("{context}: power pin suite is not UTF-8: {error}"))
+    })?;
+    let live_token = format!("{number:03}Live");
+    let fixture_token = format!("{number:03}{fixture}");
+    let live_value = format!("{live_value_stem}{number:03}Live");
+    let normalized_live_value = format!("{live_value_stem}{number:03}AcceptanceFixture");
+    let normalized_value = format!("EconomicAcceptanceClassifiedValue_{number:03}");
+    let live_count = text
+        .lines()
+        .filter(|line| line.contains(&live_token) && line.contains(&live_value))
+        .count();
+    let classified_count = text
+        .lines()
+        .filter(|line| line.contains(&fixture_token) && line.contains(classified_value))
+        .count();
+    let current_selection = format!("EconomicCurrentSelection_{number:03}");
+    let live_facts = economic_acceptance_fixture_facts(text, number, "Live", &current_selection)
+        .into_iter()
+        .map(|line| line.replace(&normalized_live_value, &normalized_value))
+        .collect::<BTreeSet<_>>();
+    let classified_facts =
+        economic_acceptance_fixture_facts(text, number, fixture, &current_selection)
+            .into_iter()
+            .map(|line| line.replace(classified_value, &normalized_value))
+            .collect::<BTreeSet<_>>();
+    if live_count == 0
+        || classified_count != live_count
+        || text
+            .lines()
+            .any(|line| line.contains(&fixture_token) && line.contains(&live_value))
+        || live_facts != classified_facts
+    {
+        return Err(LedgerError::new(format!(
+            "{context}: classified acceptance evidence must reproduce the complete live fixture with only its exact supplied classification replaced"
+        )));
+    }
+    Ok(())
+}
+
+fn validate_economic_acceptance_owner(
+    source: &LedgerDocument,
+    inputs: &BTreeMap<String, Vec<u8>>,
+    economic_family: &CoverageFamily,
+    support: &EconomicAcceptanceSupport,
+    formal_needles: &[&str],
+    pin_path: &str,
+    context: &str,
+) -> LedgerResult<()> {
+    let (_, pin_needle) =
+        economic_reference_parts(&support.pin_ref, &format!("{context}.pin_ref"))?;
+    let query_call = support
+        .query
+        .strip_suffix('.')
+        .expect("acceptance query was already validated");
+    let predicate = query_call
+        .split_once('(')
+        .map(|(name, _)| name)
+        .expect("acceptance query call was already validated");
+    let arguments = economic_call(query_call, predicate)?;
+    let formal_owner_match = match support.owner_kind.as_str() {
+        "constitutional-effect" => {
+            let owner = source
+                .constitutional_effects
+                .iter()
+                .find(|row| row.id == support.owner_id)
+                .ok_or_else(|| {
+                    LedgerError::new(format!(
+                        "{context}: unknown constitutional-effect owner {}",
+                        support.owner_id
+                    ))
+                })?;
+            let paths = economic_executable_pin_paths(
+                inputs,
+                &owner.negative_test,
+                &owner.counterfactual,
+                &format!("{context}.owner"),
+            )?;
+            let effect_constant = economic_constitutional_effect_constant(
+                inputs,
+                owner,
+                &format!("{context}.owner.negative_test"),
+            )?;
+            let effect_number = owner
+                .id
+                .strip_prefix("FS-CCE-")
+                .and_then(|value| value.parse::<usize>().ok())
+                .ok_or_else(|| {
+                    LedgerError::new(format!(
+                        "{context}: constitutional-effect owner has a malformed ID"
+                    ))
+                })?;
+            let expected_header = if (223..=EXPECTED_EFFECT_COUNT).contains(&effect_number) {
+                format!("# {} executable boundary: {effect_constant}", owner.id)
+            } else {
+                format!("# {} executable boundary:", owner.id)
+            };
+            if !paths.contains(pin_path)
+                || pin_needle != expected_header
+                || predicate != "prevents"
+                || arguments.len() != 2
+                || arguments[1] != effect_constant
+                || support.polarity != "derive"
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: constitutional-effect support is not the exact positive owner boundary"
+                )));
+            }
+            let formal_rule = format!("all $x: person($x) -> prevents($x, {effect_constant}).");
+            formal_needles.iter().any(|needle| *needle == formal_rule)
+        }
+        "power" => {
+            if !economic_family.card_refs.contains(&support.owner_id) {
+                return Err(LedgerError::new(format!(
+                    "{context}: power owner is not an FS-CVF-006 card"
+                )));
+            }
+            let owner = source
+                .powers
+                .iter()
+                .find(|row| row.id == support.owner_id)
+                .ok_or_else(|| {
+                    LedgerError::new(format!(
+                        "{context}: unknown power owner {}",
+                        support.owner_id
+                    ))
+                })?;
+            let number = economic_power_number(&owner.id)?;
+            let power = format!("FSPOW_{number:03}");
+            let expected_path = format!("new-book-plans/economic-power-{number:03}.pins.nibli");
+            let paths = economic_executable_pin_paths(
+                inputs,
+                &owner.negative_test,
+                &owner.counterfactual,
+                &format!("{context}.owner"),
+            )?;
+            let live_header = format!(
+                "# FS-POW-{number:03} acceptance live result: the exact source-bound result derives."
+            );
+            let live_query =
+                format!("complete(EconResult{number:03}Live, {power}, EconRecord{number:03}Live).");
+            let contract = source
+                .economic_power_rule_contracts
+                .iter()
+                .find(|row| row.power_ref == owner.id)
+                .ok_or_else(|| {
+                    LedgerError::new(format!(
+                        "{context}: power owner has no reviewed economic rule contract"
+                    ))
+                })?;
+            let first_requirement = contract.requirements.first().ok_or_else(|| {
+                LedgerError::new(format!(
+                    "{context}: power owner has no card-specific acceptance requirement"
+                ))
+            })?;
+            let missing_header = format!(
+                "# FS-POW-{number:03} card-specific premise: omitting {}/{} withholds the result.",
+                first_requirement.value, first_requirement.scope
+            );
+            let missing_query = format!(
+                "complete(EconResult{number:03}MissingCardSpecificRequirement, {power}, EconRecord{number:03}MissingCardSpecificRequirement)."
+            );
+            let expired_header = format!(
+                "# FS-POW-{number:03} acceptance expired selection: an externally supplied non-current selection withholds the result."
+            );
+            let expired_query = format!(
+                "complete(EconResult{number:03}ExpiredSelection, {power}, EconRecord{number:03}ExpiredSelection)."
+            );
+            let anti_concentration_header = "# FS-POW-072 acceptance anti-concentration tax: the externally classified instrument remains a democratic calibration choice.";
+            let anti_concentration_query = "complete(EconResult072AcceptanceAntiConcentrationTax, FSPOW_072, EconRecord072AcceptanceAntiConcentrationTax).";
+            let luxury_collection_header = "# FS-POW-085 acceptance luxury collection: the externally classified above-floor collection remains bounded by floor-asset protections.";
+            let luxury_collection_query = "complete(EconResult085AcceptanceLuxuryCollection, FSPOW_085, EconRecord085AcceptanceLuxuryCollection).";
+            let evidence_kind = if pin_needle == live_header
+                && support.query == live_query
+                && support.polarity == "derive"
+            {
+                "live"
+            } else if pin_needle == missing_header
+                && support.query == missing_query
+                && support.polarity == "withhold"
+            {
+                "missing-card-specific-requirement"
+            } else if pin_needle == expired_header
+                && support.query == expired_query
+                && support.polarity == "withhold"
+            {
+                "expired-selection"
+            } else if number == 72
+                && pin_needle == anti_concentration_header
+                && support.query == anti_concentration_query
+                && support.polarity == "derive"
+            {
+                "anti-concentration-tax"
+            } else if number == 85
+                && pin_needle == luxury_collection_header
+                && support.query == luxury_collection_query
+                && support.polarity == "derive"
+            {
+                "luxury-collection"
+            } else {
+                return Err(LedgerError::new(format!(
+                    "{context}: power support is not a checker-owned live, card-specific-premise, expired-selection, or classified acceptance fixture"
+                )));
+            };
+            if pin_path != expected_path
+                || !paths.contains(pin_path)
+                || predicate != "complete"
+                || arguments.len() != 3
+                || !arguments.contains(&power.as_str())
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: power support is not an exact {} shard/header/query",
+                    owner.id
+                )));
+            }
+            if evidence_kind == "expired-selection" {
+                validate_economic_expired_selection_fixture(inputs, pin_path, number, context)?;
+            } else if evidence_kind == "missing-card-specific-requirement" {
+                validate_economic_missing_requirement_fixture(
+                    inputs,
+                    pin_path,
+                    number,
+                    first_requirement,
+                    context,
+                )?;
+            } else if evidence_kind == "anti-concentration-tax" {
+                validate_economic_classified_acceptance_fixture(
+                    inputs,
+                    pin_path,
+                    number,
+                    "AcceptanceAntiConcentrationTax",
+                    "EconTaxInstrument",
+                    "AntiConcentrationTaxInstrument",
+                    context,
+                )?;
+            } else if evidence_kind == "luxury-collection" {
+                validate_economic_classified_acceptance_fixture(
+                    inputs,
+                    pin_path,
+                    number,
+                    "AcceptanceLuxuryCollection",
+                    "EconCollection",
+                    "ParticularNonFloorLuxuryAssetCollection",
+                    context,
+                )?;
+            }
+            let formal_marker = format!("# {}: {}", owner.id, owner.title);
+            formal_needles.iter().any(|needle| *needle == formal_marker)
+        }
+        "power-refusal" => {
+            if !source
+                .power_refusals
+                .iter()
+                .any(|row| row.id == support.owner_id)
+                || !economic_family.refusal_refs.contains(&support.owner_id)
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: power-refusal owner is not an FS-CVF-006 refusal"
+                )));
+            }
+            let prefix = format!("# {} acceptance:", support.owner_id);
+            if !pin_needle.starts_with(&prefix)
+                || !matches!(predicate, "prevents" | "complete" | "authority")
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: power-refusal support lacks its dedicated owner evidence"
+                )));
+            }
+            formal_needles
+                .iter()
+                .any(|needle| needle.starts_with(&prefix))
+        }
+        "carry-contract" => {
+            let owner = source
+                .economic_carry_rule_contracts
+                .iter()
+                .find(|row| row.carry_kind == support.owner_id)
+                .ok_or_else(|| {
+                    LedgerError::new(format!(
+                        "{context}: unknown carry-contract owner {}",
+                        support.owner_id
+                    ))
+                })?;
+            let header_prefix = format!("# economic-carry-{} positive result:", owner.carry_kind);
+            if pin_path != "new-book-plans/economic-constitution.pins.nibli"
+                || !pin_needle.starts_with(&header_prefix)
+                || predicate != "complete"
+                || arguments.len() != 3
+                || arguments[1] != owner.result_kind
+                || support.polarity != "derive"
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: carry support is not an exact {} current/result query",
+                    owner.carry_kind
+                )));
+            }
+            let formal_marker = format!("# economic-carry-{}:", owner.carry_kind);
+            formal_needles
+                .iter()
+                .any(|needle| needle.starts_with(&formal_marker))
+        }
+        "economic-duty" => {
+            let always = ECONOMIC_ALWAYS_DUTY_BINDINGS
+                .iter()
+                .find(|(key, _, _)| *key == support.owner_id);
+            let power = ECONOMIC_DUTY_BRIDGES
+                .iter()
+                .find(|row| row.key == support.owner_id);
+            let (duty, standard, expected_path, formal_marker) = if let Some((
+                key,
+                duty,
+                standard,
+            )) = always
+            {
+                let effect = economic_always_duty_effect(key).ok_or_else(|| {
+                        LedgerError::new(format!(
+                            "{context}: checker-owned always duty {key} has no generic obligation effect"
+                        ))
+                    })?;
+                (
+                    *duty,
+                    *standard,
+                    "new-book-plans/economic-constitution.pins.nibli".to_owned(),
+                    format!("# economic-duty-{key}: {duty} / {standard} / FS-CCE-{effect:03}"),
+                )
+            } else if let Some(spec) = power {
+                (
+                    spec.duty,
+                    spec.standard,
+                    format!("new-book-plans/economic-power-{:03}.pins.nibli", spec.power),
+                    format!(
+                        "# economic-duty-{}: {} / {} / FS-POW-{:03}",
+                        spec.key, spec.duty, spec.standard, spec.power
+                    ),
+                )
+            } else {
+                return Err(LedgerError::new(format!(
+                    "{context}: unknown checker-owned economic duty {}",
+                    support.owner_id
+                )));
+            };
+            let polarity = if support.polarity == "derive" {
+                "positive"
+            } else {
+                "negative"
+            };
+            let header_prefix = format!("# {} {polarity}:", support.owner_id);
+            if pin_path != expected_path
+                || !pin_needle.starts_with(&header_prefix)
+                || predicate != "obliged"
+                || arguments.len() != 3
+                || arguments[1] != duty
+                || arguments[2] != standard
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: duty support is not the exact owner duty/standard query"
+                )));
+            }
+            formal_needles.iter().any(|needle| *needle == formal_marker)
+        }
+        "assertion-wall" => {
+            let (_, expected_query, expected_result) = ECONOMIC_ASSERTION_WALL_EVIDENCE
+                .iter()
+                .find(|(owner_id, _, _)| *owner_id == support.owner_id)
+                .ok_or_else(|| {
+                    LedgerError::new(format!(
+                        "{context}: unknown checker-owned assertion wall {}",
+                        support.owner_id
+                    ))
+                })?;
+            let prefix = format!("# assertion-wall-{}:", support.owner_id);
+            if pin_path != "new-book-plans/economic-constitution.pins.nibli"
+                || !pin_needle.starts_with(&prefix)
+                || support.query != *expected_query
+                || support.expected_result != *expected_result
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: assertion wall lacks its dedicated exact pin header"
+                )));
+            }
+            formal_needles
+                .iter()
+                .any(|needle| needle.starts_with(&prefix))
+        }
+        _ => {
+            return Err(LedgerError::new(format!(
+                "{context}: unapproved acceptance owner kind {}",
+                support.owner_kind
+            )));
+        }
+    };
+    if !formal_owner_match {
+        return Err(LedgerError::new(format!(
+            "{context}: no exact formal_ref belongs to declared owner {}",
+            support.owner_id
+        )));
+    }
+    Ok(())
+}
+
+fn validate_economic_assertion_wall_surface(constitution: &str) -> LedgerResult<()> {
+    if constitution.matches("derived_only(\"reward\").").count() != 1
+        || constitution.matches("derived_only(\"complete\").").count() != 1
+    {
+        return Err(LedgerError::new(
+            "economic assertion walls require exact derived-only reward and complete declarations",
+        ));
+    }
+    for owner_id in ECONOMIC_ASSERTION_WALL_IDS {
+        let marker = format!("# assertion-wall-{owner_id}:");
+        if constitution
+            .lines()
+            .filter(|line| line.starts_with(&marker))
+            .count()
+            != 1
+        {
+            return Err(LedgerError::new(format!(
+                "assertion wall {owner_id} needs one exact formal marker"
+            )));
+        }
+    }
+    let active_lines = constitution
+        .lines()
+        .filter(|line| !line.trim_start().starts_with('#'))
+        .collect::<Vec<_>>();
+    let reward_rules = active_lines
+        .iter()
+        .copied()
+        .filter(|line| line.contains("reward("))
+        .collect::<Vec<_>>();
+    if reward_rules.len() != 3 {
+        return Err(LedgerError::new(format!(
+            "recognition must remain exactly three derived leaf rules; found {} reward rules",
+            reward_rules.len()
+        )));
+    }
+    for statement in reward_rules {
+        let (_, head) = statement
+            .rsplit_once(" -> ")
+            .ok_or_else(|| LedgerError::new("recognition occurs outside a rule conclusion"))?;
+        let head = head
+            .strip_suffix('.')
+            .ok_or_else(|| LedgerError::new("recognition rule lacks its final period"))?;
+        let arguments = economic_call(head, "reward")?;
+        if arguments.len() != 1
+            || !arguments[0].starts_with('$')
+            || statement
+                .split_once(" -> ")
+                .is_some_and(|(body, _)| body.contains("reward("))
+        {
+            return Err(LedgerError::new(
+                "recognition must remain arity-one, non-ranked, and unread",
+            ));
+        }
+    }
+    for forbidden in [
+        "Book2ModelDerivedConstitutionalFact",
+        "Book2StatisticDerivedConstitutionalFact",
+    ] {
+        if active_lines.iter().any(|line| line.contains(forbidden)) {
+            return Err(LedgerError::new(format!(
+                "raw Book 2 assertion wall has a formal producer for {forbidden}"
+            )));
+        }
+    }
+    Ok(())
+}
+
+fn validate_grounded_economic_duty_pin_order(
+    inputs: &BTreeMap<String, Vec<u8>>,
+) -> LedgerResult<()> {
+    for spec in ECONOMIC_DUTY_BRIDGES
+        .iter()
+        .filter(|spec| !spec.bearer.starts_with('$'))
+    {
+        let path = format!("new-book-plans/economic-power-{:03}.pins.nibli", spec.power);
+        let pin = std::str::from_utf8(input_bytes(inputs, &path)?).map_err(|error| {
+            LedgerError::new(format!("{path}: economic live pin is not UTF-8: {error}"))
+        })?;
+        let lines = pin.lines().collect::<Vec<_>>();
+        let query = format!(
+            "? obliged({}, {}, {}).",
+            spec.bearer, spec.duty, spec.standard
+        );
+        let positive_marker = format!(
+            "# {} positive: the exact completed card and reviewed duty selection compose.",
+            spec.key
+        );
+        let negative_marker = format!("# {} negative:", spec.key);
+
+        let positive_markers = lines
+            .iter()
+            .enumerate()
+            .filter_map(|(index, line)| (*line == positive_marker).then_some(index))
+            .collect::<Vec<_>>();
+        if positive_markers.len() != 1 {
+            return Err(LedgerError::new(format!(
+                "{path}: {} must have exactly one canonical positive duty marker; found {}",
+                spec.key,
+                positive_markers.len()
+            )));
+        }
+        let positive_marker_index = positive_markers[0];
+        if lines.get(positive_marker_index + 1) != Some(&query.as_str())
+            || lines.get(positive_marker_index + 2) != Some(&"# => TRUE")
+        {
+            return Err(LedgerError::new(format!(
+                "{path}: {} positive duty marker at line {} must be followed by its exact query and TRUE verdict",
+                spec.key,
+                positive_marker_index + 1
+            )));
+        }
+        let positive_block_start = lines[..positive_marker_index]
+            .iter()
+            .rposition(|line| line.starts_with("# => "))
+            .map_or(0, |index| index + 1);
+        if !lines[positive_block_start..positive_marker_index]
+            .iter()
+            .any(|line| {
+                let line = line.trim();
+                !line.is_empty()
+                    && !line.starts_with('#')
+                    && !line.starts_with('?')
+                    && !line.starts_with(':')
+            })
+        {
+            return Err(LedgerError::new(format!(
+                "{path}: {} positive duty marker at line {} has no preceding assertion block",
+                spec.key,
+                positive_marker_index + 1
+            )));
+        }
+
+        let negative_markers = lines
+            .iter()
+            .enumerate()
+            .filter_map(|(index, line)| line.starts_with(&negative_marker).then_some(index))
+            .collect::<Vec<_>>();
+        if negative_markers.is_empty() {
+            return Err(LedgerError::new(format!(
+                "{path}: {} must have at least one grounded negative duty case",
+                spec.key
+            )));
+        }
+        let query_count = lines.iter().filter(|line| **line == query).count();
+        let expected_query_count = negative_markers.len() + 1;
+        if query_count != expected_query_count {
+            return Err(LedgerError::new(format!(
+                "{path}: {} has {query_count} exact grounded duty query occurrences but {expected_query_count} marked cases; duplicate or unmarked queries are forbidden",
+                spec.key
+            )));
+        }
+        for marker_index in &negative_markers {
+            if lines.get(marker_index + 1) != Some(&query.as_str())
+                || lines.get(marker_index + 2) != Some(&"# => FALSE")
+            {
+                return Err(LedgerError::new(format!(
+                    "{path}: {} negative duty marker at line {} must be followed by its exact query and FALSE verdict",
+                    spec.key,
+                    marker_index + 1
+                )));
+            }
+            if marker_index + 2 >= positive_block_start {
+                return Err(LedgerError::new(format!(
+                    "{path}: {} grounded negative duty case at line {} must precede the matching positive assertion block",
+                    spec.key,
+                    marker_index + 1
+                )));
+            }
+        }
+    }
+    Ok(())
+}
+
+fn validate_economic_power_088_dependency_links(
+    inputs: &BTreeMap<String, Vec<u8>>,
+) -> LedgerResult<()> {
+    const PATH: &str = "new-book-plans/economic-power-088.pins.nibli";
+    const SCENARIOS: [&str; 11] = [
+        "Live",
+        "FusedRecord",
+        "WrongTemporal",
+        "MissingFieldAuthorizingLaw",
+        "MissingCardSpecificRequirement",
+        "MismatchedEnd",
+        "ExpiredSelection",
+        "CrossDependencyEconomic087",
+        "CrossDependencyState005",
+        "AlternateIndependentReviewPositive",
+        "AlternateIndependentReviewMismatchedOriginBearer",
+    ];
+
+    let pin = std::str::from_utf8(input_bytes(inputs, PATH)?)
+        .map_err(|error| LedgerError::new(format!("{PATH}: live pin is not UTF-8: {error}")))?;
+    let lines = pin.lines().collect::<Vec<_>>();
+    let mut scenario_slots = BTreeMap::<String, BTreeSet<(String, String)>>::new();
+    let mut dependency_line_count = 0_usize;
+
+    for (index, line) in lines.iter().enumerate() {
+        if !line.contains("EconomicDependencyResultScope_087_086")
+            && !line.contains("EconomicDependencyRecordScope_087_086")
+        {
+            continue;
+        }
+        dependency_line_count += 1;
+        let statement = line.strip_suffix('.').ok_or_else(|| {
+            LedgerError::new(format!(
+                "{PATH}: P088 dependency link at line {} lacks its final period",
+                index + 1
+            ))
+        })?;
+        let arguments = economic_call(statement, "observe").map_err(|error| {
+            LedgerError::new(format!(
+                "{PATH}: malformed P088 dependency link at line {}: {error}",
+                index + 1
+            ))
+        })?;
+        let [actor, dependent_result, target, scope] = arguments.as_slice() else {
+            return Err(LedgerError::new(format!(
+                "{PATH}: P088 dependency link at line {} must have four observation arguments",
+                index + 1
+            )));
+        };
+        let scenario = dependent_result
+            .strip_prefix("EconResult087For088")
+            .filter(|suffix| !suffix.is_empty())
+            .ok_or_else(|| {
+                LedgerError::new(format!(
+                    "{PATH}: P088 dependency link at line {} has a non-P088 dependent result: {dependent_result}",
+                    index + 1
+                ))
+            })?;
+        let actor_kind = ["Source", "Evidence", "Review"]
+            .into_iter()
+            .find(|kind| *actor == format!("Econ{kind}087For088{scenario}"))
+            .ok_or_else(|| {
+                LedgerError::new(format!(
+                    "{PATH}: P088 dependency link at line {} has an actor outside its scenario: {actor}",
+                    index + 1
+                ))
+            })?;
+        let (target_kind, expected_target) = match *scope {
+            "EconomicDependencyResultScope_087_086" => {
+                ("result", format!("EconResult086For088{scenario}"))
+            }
+            "EconomicDependencyRecordScope_087_086" => {
+                ("record", format!("EconRecord086For088{scenario}"))
+            }
+            _ => {
+                return Err(LedgerError::new(format!(
+                    "{PATH}: P088 dependency link at line {} has an unexpected scope: {scope}",
+                    index + 1
+                )));
+            }
+        };
+        if *target != expected_target {
+            return Err(LedgerError::new(format!(
+                "{PATH}: P088 dependency link at line {} targets {target}; it must target its matching For088 prerequisite producer {expected_target}",
+                index + 1
+            )));
+        }
+        if !scenario_slots
+            .entry(scenario.to_owned())
+            .or_default()
+            .insert((actor_kind.to_owned(), target_kind.to_owned()))
+        {
+            return Err(LedgerError::new(format!(
+                "{PATH}: duplicate P088 {actor_kind}/{target_kind} dependency link for scenario {scenario}"
+            )));
+        }
+    }
+
+    if dependency_line_count != 66 {
+        return Err(LedgerError::new(format!(
+            "{PATH}: P088 must contain exactly 66 scoped 087-to-086 dependency observations; found {dependency_line_count}"
+        )));
+    }
+    let expected_scenarios = SCENARIOS.into_iter().collect::<BTreeSet<_>>();
+    let actual_scenarios = scenario_slots
+        .keys()
+        .map(String::as_str)
+        .collect::<BTreeSet<_>>();
+    if actual_scenarios != expected_scenarios {
+        return Err(LedgerError::new(format!(
+            "{PATH}: P088 dependency-link scenario census drifted: {actual_scenarios:?}"
+        )));
+    }
+    for scenario in SCENARIOS {
+        let slots = scenario_slots
+            .get(scenario)
+            .expect("the exact P088 scenario census was checked");
+        if slots.len() != 6 {
+            return Err(LedgerError::new(format!(
+                "{PATH}: P088 scenario {scenario} must have all six source/evidence/review result/record links; found {}",
+                slots.len()
+            )));
+        }
+        for producer in [
+            format!(
+                "observe(EconSource086For088{scenario}, EconRecord086For088{scenario}, FSPOW_086, PowerScope)."
+            ),
+            format!(
+                "observe(EconSource086For088{scenario}, EconRecord086For088{scenario}, EconResult086For088{scenario}, ResultScope)."
+            ),
+        ] {
+            let producer_count = lines.iter().filter(|line| **line == producer).count();
+            if producer_count != 1 {
+                return Err(LedgerError::new(format!(
+                    "{PATH}: P088 scenario {scenario} must identify its For088 prerequisite producer exactly once; found {producer_count} copies of {producer}"
+                )));
+            }
+        }
+    }
+
+    const COUNTERFACTUAL_PATH: &str =
+        "new-book-plans/counterfactual/no-economic-independent-current-review-088.pins.nibli";
+    const COUNTERFACTUAL_SCENARIO: &str = "Counterfactual";
+    let counterfactual =
+        std::str::from_utf8(input_bytes(inputs, COUNTERFACTUAL_PATH)?).map_err(|error| {
+            LedgerError::new(format!(
+                "{COUNTERFACTUAL_PATH}: counterfactual pin is not UTF-8: {error}"
+            ))
+        })?;
+    let counterfactual_lines = counterfactual.lines().collect::<Vec<_>>();
+    let counterfactual_dependency_count = counterfactual_lines
+        .iter()
+        .filter(|line| {
+            line.contains("EconomicDependencyResultScope_087_086")
+                || line.contains("EconomicDependencyRecordScope_087_086")
+        })
+        .count();
+    if counterfactual_dependency_count != 6 {
+        return Err(LedgerError::new(format!(
+            "{COUNTERFACTUAL_PATH}: P088 counterfactual must contain exactly six scoped 087-to-086 dependency observations; found {counterfactual_dependency_count}"
+        )));
+    }
+    for actor_kind in ["Source", "Evidence", "Review"] {
+        for (target_kind, scope) in [
+            ("Result", "EconomicDependencyResultScope_087_086"),
+            ("Record", "EconomicDependencyRecordScope_087_086"),
+        ] {
+            let expected = format!(
+                "observe(Econ{actor_kind}087For088{COUNTERFACTUAL_SCENARIO}, EconResult087For088{COUNTERFACTUAL_SCENARIO}, Econ{target_kind}086For088{COUNTERFACTUAL_SCENARIO}, {scope})."
+            );
+            let count = counterfactual_lines
+                .iter()
+                .filter(|line| **line == expected)
+                .count();
+            if count != 1 {
+                return Err(LedgerError::new(format!(
+                    "{COUNTERFACTUAL_PATH}: P088 counterfactual must contain its matching For088 prerequisite link exactly once; found {count} copies of {expected}"
+                )));
+            }
+        }
+    }
+    for producer in [
+        "observe(EconSource086For088Counterfactual, EconRecord086For088Counterfactual, FSPOW_086, PowerScope).",
+        "observe(EconSource086For088Counterfactual, EconRecord086For088Counterfactual, EconResult086For088Counterfactual, ResultScope).",
+    ] {
+        let producer_count = counterfactual_lines
+            .iter()
+            .filter(|line| **line == producer)
+            .count();
+        if producer_count != 1 {
+            return Err(LedgerError::new(format!(
+                "{COUNTERFACTUAL_PATH}: P088 counterfactual must identify its For088 prerequisite producer exactly once; found {producer_count} copies of {producer}"
+            )));
+        }
+    }
+
+    let expected_tier_observations = [
+        "observe(EconSource088Counterfactual, EconRecord088Counterfactual, CommonTier, GovernmentTierScope).",
+        "observe(EconTemporal088Counterfactual, EconTemporalRecord088Counterfactual, CommonTier, GovernmentTierScope).",
+        "observe(EconTemporalReview088Counterfactual, EconTemporalRecord088Counterfactual, CommonTier, GovernmentTierScope).",
+        "observe(EconSource088Counterfactual, EconResult088Counterfactual, CommonTier, GovernmentTierScope).",
+        "observe(EconEvidence088Counterfactual, EconResult088Counterfactual, CommonTier, GovernmentTierScope).",
+        "observe(EconReview088Counterfactual, EconResult088Counterfactual, CommonTier, GovernmentTierScope).",
+    ];
+    let p088_tier_prefixes = [
+        "observe(EconSource088Counterfactual, EconRecord088Counterfactual, ",
+        "observe(EconTemporal088Counterfactual, EconTemporalRecord088Counterfactual, ",
+        "observe(EconTemporalReview088Counterfactual, EconTemporalRecord088Counterfactual, ",
+        "observe(EconSource088Counterfactual, EconResult088Counterfactual, ",
+        "observe(EconEvidence088Counterfactual, EconResult088Counterfactual, ",
+        "observe(EconReview088Counterfactual, EconResult088Counterfactual, ",
+    ];
+    let p088_tier_count = counterfactual_lines
+        .iter()
+        .filter(|line| {
+            line.ends_with(", GovernmentTierScope).")
+                && p088_tier_prefixes
+                    .iter()
+                    .any(|prefix| line.starts_with(prefix))
+        })
+        .count();
+    if p088_tier_count != expected_tier_observations.len() {
+        return Err(LedgerError::new(format!(
+            "{COUNTERFACTUAL_PATH}: P088 counterfactual must contain exactly six shared-tier observations; found {p088_tier_count}"
+        )));
+    }
+    for expected in expected_tier_observations {
+        let count = counterfactual_lines
+            .iter()
+            .filter(|line| **line == expected)
+            .count();
+        if count != 1 {
+            return Err(LedgerError::new(format!(
+                "{COUNTERFACTUAL_PATH}: P088 counterfactual must bind its shared payment chain to CommonTier exactly once; found {count} copies of {expected}"
+            )));
+        }
+    }
+    Ok(())
+}
+
+fn validate_economic_acceptance_cases(
+    source: &LedgerDocument,
+    inputs: &BTreeMap<String, Vec<u8>>,
+) -> LedgerResult<()> {
+    if source.economic_acceptance_cases.len() != ECONOMIC_ACCEPTANCE_CASES.len() {
+        return Err(LedgerError::new(format!(
+            "economic acceptance matrix must contain exactly 24 ordered cases; found {}",
+            source.economic_acceptance_cases.len()
+        )));
+    }
+    let decision =
+        std::str::from_utf8(input_bytes(inputs, ECONOMIC_DECISION)?).map_err(|error| {
+            LedgerError::new(format!("economic decision source is not UTF-8: {error}"))
+        })?;
+    let constitution =
+        std::str::from_utf8(input_bytes(inputs, "new-book-plans/constitution.nibli")?)
+            .map_err(|error| LedgerError::new(format!("constitution is not UTF-8: {error}")))?;
+    validate_economic_assertion_wall_surface(constitution)?;
+    let economic_family = source
+        .coverage_families
+        .iter()
+        .find(|row| row.id == "FS-CVF-006")
+        .ok_or_else(|| LedgerError::new("FS-CVF-006 economic coverage family is missing"))?;
+    let mut variant_ids = HashSet::new();
+    let mut mapping_ids = HashSet::new();
+    let mut assertions = HashSet::new();
+    let mut source_needles = HashSet::new();
+    let mut mapping_count = 0_usize;
+    let mut support_count = 0_usize;
+
+    for (case, (expected_id, expected_needle, expected_count)) in source
+        .economic_acceptance_cases
+        .iter()
+        .zip(ECONOMIC_ACCEPTANCE_CASES)
+    {
+        if case.case_id != expected_id
+            || case.source_needle != expected_needle
+            || case.mappings.len() != expected_count
+            || decision.matches(&case.source_needle).count() != 1
+            || !source_needles.insert(case.source_needle.as_str())
+        {
+            return Err(LedgerError::new(format!(
+                "{}: acceptance case order, exact source needle, or variant count differs from checker policy",
+                case.case_id
+            )));
+        }
+        for (index, mapping) in case.mappings.iter().enumerate() {
+            let context = format!("{}.mappings[{index}]", case.case_id);
+            let expected_variant = format!("{}-V{:03}", case.case_id, index + 1);
+            let expected_mapping = format!("{}-M{:03}", case.case_id, index + 1);
+            if mapping.variant_id != expected_variant
+                || mapping.mapping_id != expected_mapping
+                || !variant_ids.insert(mapping.variant_id.as_str())
+                || !mapping_ids.insert(mapping.mapping_id.as_str())
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: variant and mapping IDs must be canonical and globally unique"
+                )));
+            }
+            nonempty(&mapping.assertion, &format!("{context}.assertion"))?;
+            if mapping.assertion.trim() != mapping.assertion
+                || mapping.assertion.contains(['\n', '\r'])
+                || !assertions.insert(mapping.assertion.as_str())
+                || mapping.supports.is_empty()
+            {
+                return Err(LedgerError::new(format!(
+                    "{context}: assertion must be one unique human-readable line with at least one support"
+                )));
+            }
+            let mut support_bindings = HashSet::new();
+            for (support_index, support) in mapping.supports.iter().enumerate() {
+                let support_context = format!("{context}.supports[{support_index}]");
+                let binding = typed_fingerprint(support, &format!("{support_context}.binding"))?;
+                if !support_bindings.insert(binding) {
+                    return Err(LedgerError::new(format!(
+                        "{context}: duplicate exact support within one atomic variant"
+                    )));
+                }
+                unique_strings(
+                    &support.formal_refs,
+                    &format!("{support_context}.formal_refs"),
+                    false,
+                )?;
+                let mut formal_needles = Vec::new();
+                for (formal_index, reference) in support.formal_refs.iter().enumerate() {
+                    let formal_context = format!("{support_context}.formal_refs[{formal_index}]");
+                    validate_repository_reference(inputs, reference, &formal_context)?;
+                    let (path, needle) = economic_reference_parts(reference, &formal_context)?;
+                    if path != "new-book-plans/constitution.nibli" {
+                        return Err(LedgerError::new(format!(
+                            "{formal_context}: formal acceptance supports must point to constitution.nibli"
+                        )));
+                    }
+                    let formal =
+                        std::str::from_utf8(input_bytes(inputs, path)?).map_err(|error| {
+                            LedgerError::new(format!(
+                                "{formal_context}: target is not UTF-8: {error}"
+                            ))
+                        })?;
+                    if formal.lines().filter(|line| *line == needle).count() != 1 {
+                        return Err(LedgerError::new(format!(
+                            "{formal_context}: needle must be one exact full formal-source line"
+                        )));
+                    }
+                    formal_needles.push(needle);
+                }
+                let pin_path = validate_economic_acceptance_pin(inputs, support, &support_context)?;
+                validate_economic_acceptance_owner(
+                    source,
+                    inputs,
+                    economic_family,
+                    support,
+                    &formal_needles,
+                    pin_path,
+                    &support_context,
+                )?;
+                support_count += 1;
+            }
+            mapping_count += 1;
+        }
+    }
+    let expected_count = ECONOMIC_ACCEPTANCE_CASES
+        .iter()
+        .map(|(_, _, count)| count)
+        .sum::<usize>();
+    if mapping_count != 171 || mapping_count != expected_count {
+        return Err(LedgerError::new(format!(
+            "economic acceptance matrix must contain exactly 171 atomic mappings; found {mapping_count}"
+        )));
+    }
+    if support_count < mapping_count {
+        return Err(LedgerError::new(
+            "economic acceptance matrix has fewer exact supports than atomic variants",
+        ));
+    }
+    if typed_fingerprint(
+        &source.economic_acceptance_cases,
+        "economic acceptance cases",
+    )? != EXPECTED_ECONOMIC_ACCEPTANCE_CASES_SHA256
+    {
+        return Err(LedgerError::new(
+            "economic acceptance variants, owners, polarities, formal refs, or executable pins differ from checker policy",
+        ));
+    }
+    Ok(())
+}
+
+fn economic_collision_kind(scope: &str) -> LedgerResult<String> {
+    let stem = scope.strip_suffix("Scope").ok_or_else(|| {
+        LedgerError::new(format!(
+            "economic collision scope lacks Scope suffix: {scope}"
+        ))
+    })?;
+    Ok(format!("Economic{stem}Binding"))
+}
+
+fn require_economic_collision_guards(
+    rule: &EconomicRule<'_>,
+    subject: &str,
+    scopes: impl IntoIterator<Item = String>,
+    context: &str,
+) -> LedgerResult<()> {
+    for scope in scopes.into_iter().collect::<BTreeSet<_>>() {
+        let kind = economic_collision_kind(&scope)?;
+        require_economic_atom(rule, &format!("~contradict({subject}, {kind})"), context)?;
+    }
+    Ok(())
+}
+
+fn economic_current_collision_scopes(fields: &[(&str, &str, &str)]) -> Vec<String> {
+    ECONOMIC_CURRENT_COLLISION_SCOPES
+        .into_iter()
+        .chain(fields.iter().map(|(_, _, scope)| *scope))
+        .map(str::to_owned)
+        .collect()
+}
+
+fn economic_result_collision_scopes(
+    fields: &[(&str, &str, &str)],
+    requirements: &[(&str, &str)],
+) -> Vec<String> {
+    ECONOMIC_RESULT_COLLISION_SCOPES
+        .into_iter()
+        .chain(fields.iter().map(|(_, _, scope)| *scope))
+        .chain(requirements.iter().map(|(_, scope)| *scope))
+        .map(str::to_owned)
+        .collect()
+}
+
+fn economic_reconciliation_collision_scopes() -> Vec<String> {
+    ECONOMIC_RECONCILIATION_COLLISION_SCOPES
+        .into_iter()
+        .map(str::to_owned)
+        .collect()
+}
+
+fn require_economic_pairwise_separation(
+    rule: &EconomicRule<'_>,
+    actors: &[&str],
+    context: &str,
+) -> LedgerResult<()> {
+    for (index, left) in actors.iter().enumerate() {
+        for right in &actors[index + 1..] {
+            require_economic_atom(rule, &format!("~({left} = {right})"), context)?;
+        }
+    }
+    Ok(())
+}
+
+fn economic_power_title(number: usize) -> LedgerResult<&'static str> {
+    match number {
+        61 => Ok("Mandatory occupational licence"),
+        62 => Ok("Compulsory acquisition"),
+        63 => Ok("Knowledge exclusivity and compulsory access licence"),
+        64 => Ok("Public-scale private-power finding"),
+        65 => Ok("Public-scale access mandate"),
+        66 => Ok("Public-option remedy"),
+        67 => Ok("Structural-separation remedy"),
+        68 => Ok("Breakup remedy"),
+        69 => Ok("Receivership"),
+        70 => Ok("Licence withdrawal"),
+        71 => Ok("Public acquisition remedy"),
+        72 => Ok("Taxation"),
+        73 => Ok("Legislative appropriation"),
+        74 => Ok("Public spending"),
+        75 => Ok("Public guarantee"),
+        76 => Ok("Public borrowing"),
+        77 => Ok("Monetary-policy authority"),
+        78 => Ok("Credit and insurance decision"),
+        79 => Ok("Insolvency restructuring"),
+        80 => Ok("Temporary licence control"),
+        81 => Ok("Physical-scarcity finding"),
+        82 => Ok("Physical-scarcity allocation"),
+        83 => Ok("Narrow compulsory service continuity"),
+        84 => Ok("Ordinary-law price control"),
+        85 => Ok("Tax collection"),
+        86 => Ok("Public unit-of-account authority"),
+        87 => Ok("Accessible settlement-backbone authority"),
+        88 => Ok("Complementary payment-instrument regulation"),
+        _ => Err(LedgerError::new(format!(
+            "economic power has no checker-owned title: FS-POW-{number:03}"
+        ))),
+    }
+}
+
+fn economic_power_branch(number: usize) -> LedgerResult<String> {
+    let title = economic_power_title(number)?;
+    let compact = title
+        .chars()
+        .filter(|character| character.is_ascii_alphanumeric())
+        .collect::<String>();
+    Ok(format!("FSPOW_{number:03}{compact}Branch"))
+}
+
+fn economic_alternate_review_duty(number: usize) -> LedgerResult<String> {
+    let title = economic_power_title(number)?;
+    let compact = title
+        .chars()
+        .filter(|character| character.is_ascii_alphanumeric())
+        .collect::<String>();
+    Ok(format!("Review{compact}Duty"))
+}
+
+fn economic_duty_branch(key: &str) -> String {
+    let mut suffix = String::new();
+    for part in key.split('-') {
+        let mut characters = part.chars();
+        if let Some(first) = characters.next() {
+            suffix.extend(first.to_uppercase());
+            suffix.extend(characters);
+        }
+    }
+    format!("EconomicDuty{suffix}Branch")
+}
+
+fn economic_contract_by_number(
+    contracts: &[EconomicPowerRuleContract],
+    number: usize,
+) -> LedgerResult<&EconomicPowerRuleContract> {
+    let power_ref = format!("FS-POW-{number:03}");
+    contracts
+        .iter()
+        .find(|contract| contract.power_ref == power_ref)
+        .ok_or_else(|| LedgerError::new(format!("economic contract missing {power_ref}")))
+}
+
+fn economic_named_field<'a>(
+    contract: &'a EconomicPowerRuleContract,
+    name: &str,
+) -> LedgerResult<(&'a str, &'a str)> {
+    if let Some((_, value, scope)) = ECONOMIC_COMMON_POWER_FIELDS
+        .iter()
+        .find(|(field_name, _, _)| *field_name == name)
+    {
+        return Ok((value, scope));
+    }
+    contract
+        .fields
+        .iter()
+        .find(|field| field.name == name)
+        .map(|field| (field.value.as_str(), field.scope.as_str()))
+        .ok_or_else(|| {
+            LedgerError::new(format!(
+                "{} has no checker-owned economic field named {name}",
+                contract.power_ref
+            ))
+        })
+}
+
+fn economic_push_tri(atoms: &mut Vec<String>, subject: &str, value: &str, scope: &str) {
+    for actor in ["$source", "$evidence", "$review"] {
+        atoms.push(format!("observe({actor}, {subject}, {value}, {scope})"));
+    }
+}
+
+fn economic_pairwise_atoms(actors: &[&str]) -> Vec<String> {
+    let mut atoms = Vec::new();
+    for (index, left) in actors.iter().enumerate() {
+        for right in &actors[index + 1..] {
+            atoms.push(format!("~({left} = {right})"));
+        }
+    }
+    atoms
+}
+
+fn economic_collision_guard_atoms(
+    subject: &str,
+    scopes: impl IntoIterator<Item = String>,
+) -> LedgerResult<Vec<String>> {
+    scopes
+        .into_iter()
+        .collect::<BTreeSet<_>>()
+        .into_iter()
+        .map(|scope| {
+            Ok(format!(
+                "~contradict({subject}, {})",
+                economic_collision_kind(&scope)?
+            ))
+        })
+        .collect()
+}
+
+fn validate_economic_exact_body(
+    rule: &EconomicRule<'_>,
+    expected: &[String],
+    context: &str,
+) -> LedgerResult<()> {
+    let expected_set = expected.iter().cloned().collect::<BTreeSet<_>>();
+    if expected_set.len() != expected.len() {
+        return Err(LedgerError::new(format!(
+            "{context}: checker-owned body contract contains duplicate atoms"
+        )));
+    }
+    let actual_set = rule
+        .body
+        .iter()
+        .map(|atom| (*atom).to_owned())
+        .collect::<BTreeSet<_>>();
+    if actual_set == expected_set {
+        return Ok(());
+    }
+    let missing = expected_set
+        .difference(&actual_set)
+        .take(3)
+        .cloned()
+        .collect::<Vec<_>>();
+    let unexpected = actual_set
+        .difference(&expected_set)
+        .take(3)
+        .cloned()
+        .collect::<Vec<_>>();
+    Err(LedgerError::new(format!(
+        "{context}: checker-owned rule body drifted ({} expected, {} actual; missing {missing:?}; unexpected {unexpected:?})",
+        expected_set.len(),
+        actual_set.len()
+    )))
+}
+
+fn economic_insert_observation(
+    atoms: &mut BTreeSet<String>,
+    actor: &str,
+    subject: &str,
+    value: &str,
+    scope: &str,
+) {
+    atoms.insert(format!("observe({actor}, {subject}, {value}, {scope})"));
+}
+
+fn economic_carry_current_atoms(contract: &EconomicCarryRuleContract) -> LedgerResult<Vec<String>> {
+    let mut atoms = [
+        "authorized($source, EconomicSourceAuthority, $record)",
+        "authorized($record_review, EconomicRecordReviewAuthority, $record)",
+        "authorized($temporal, EconomicTemporalAuthority, $temporal_record)",
+        "authorized($temporal_review, EconomicTemporalReviewAuthority, $temporal_record)",
+    ]
+    .into_iter()
+    .map(str::to_owned)
+    .collect::<BTreeSet<_>>();
+    for (actor, subject) in [
+        ("$source", "$record"),
+        ("$record_review", "$record"),
+        ("$temporal", "$temporal_record"),
+        ("$temporal_review", "$temporal_record"),
+    ] {
+        for (value, scope) in [
+            (
+                "Constitution_EconomicPluralismAndPrivateSphere",
+                "SourceFamilyScope",
+            ),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$prior_epoch", "PriorSourceEpochScope"),
+            (
+                "$predecessor_record",
+                contract.predecessor_record_scope.as_str(),
+            ),
+            (
+                "$predecessor_result",
+                contract.predecessor_result_scope.as_str(),
+            ),
+            ("$successor_event", contract.successor_event_scope.as_str()),
+            (contract.record_kind.as_str(), "EconomicCarryKindScope"),
+            (
+                contract.temporal_contract.as_str(),
+                "TemporalContractKindScope",
+            ),
+            (
+                contract.current_selection.as_str(),
+                "EffectiveSelectionScope",
+            ),
+            ("$case", "EconomicCaseScope"),
+            ("$subject", "EconomicSubjectScope"),
+            (
+                contract.interest.value.as_str(),
+                contract.interest.scope.as_str(),
+            ),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "EconomicCarryLegalScope"),
+            (
+                contract.legal_scope_kind.as_str(),
+                "EconomicCarryLegalScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+            ("$reconciliation", "ReconciliationRecordScope"),
+            ("$result", "ResultScope"),
+        ] {
+            economic_insert_observation(&mut atoms, actor, subject, value, scope);
+        }
+    }
+    atoms.extend(
+        [
+            "observe($source, $record, $temporal_record, TemporalRecordScope)".to_owned(),
+            "observe($record_review, $record, $temporal_record, TemporalRecordScope)".to_owned(),
+            "observe($source, $record, $temporal, TemporalAuthorityActorScope)".to_owned(),
+            "observe($record_review, $record, $temporal, TemporalAuthorityActorScope)".to_owned(),
+            "observe($source, $record, $temporal_review, TemporalReviewActorScope)".to_owned(),
+            "observe($record_review, $record, $temporal_review, TemporalReviewActorScope)"
+                .to_owned(),
+            "observe($temporal, $temporal_record, $record, EconomicRecordScope)".to_owned(),
+            "observe($temporal_review, $temporal_record, $record, EconomicRecordScope)"
+                .to_owned(),
+            format!(
+                "carries($temporal, $predecessor_result, $epoch, $prior_epoch, {})",
+                contract.temporal_contract
+            ),
+            format!(
+                "carries($temporal_review, $predecessor_result, $epoch, $prior_epoch, {})",
+                contract.temporal_contract
+            ),
+            format!(
+                "observe($source, $reconciliation, Economic{}CarryRecordReconciled, ReconciliationStatusScope)",
+                economic_title_case(&contract.carry_kind)
+            ),
+            format!(
+                "observe($record_review, $reconciliation, Economic{}CarryRecordReconciled, ReconciliationStatusScope)",
+                economic_title_case(&contract.carry_kind)
+            ),
+        ],
+    );
+    for actor in ["$source", "$record_review"] {
+        for (value, scope) in [
+            ("$record", "EconomicRecordScope"),
+            ("$result", "ResultScope"),
+            (contract.record_kind.as_str(), "EconomicCarryKindScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$prior_epoch", "PriorSourceEpochScope"),
+            (
+                "$predecessor_record",
+                contract.predecessor_record_scope.as_str(),
+            ),
+            (
+                "$predecessor_result",
+                contract.predecessor_result_scope.as_str(),
+            ),
+            ("$successor_event", contract.successor_event_scope.as_str()),
+            ("$temporal_record", "TemporalRecordScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$subject", "EconomicSubjectScope"),
+            (
+                contract.interest.value.as_str(),
+                contract.interest.scope.as_str(),
+            ),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "EconomicCarryLegalScope"),
+            (
+                contract.legal_scope_kind.as_str(),
+                "EconomicCarryLegalScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+        ] {
+            economic_insert_observation(&mut atoms, actor, "$reconciliation", value, scope);
+        }
+    }
+    atoms.extend(economic_pairwise_atoms(&[
+        "$source",
+        "$record_review",
+        "$temporal",
+        "$temporal_review",
+    ]));
+    atoms.extend(
+        [
+            "~($record = $predecessor_record)",
+            "~($result = $predecessor_result)",
+            "~($epoch = $prior_epoch)",
+        ]
+        .into_iter()
+        .map(str::to_owned),
+    );
+    for subject in ["$record", "$temporal_record"] {
+        atoms.extend(economic_collision_guard_atoms(
+            subject,
+            ECONOMIC_CARRY_CURRENT_COLLISION_SCOPES.map(str::to_owned),
+        )?);
+    }
+    atoms.extend(economic_collision_guard_atoms(
+        "$reconciliation",
+        ECONOMIC_CARRY_RECONCILIATION_COLLISION_SCOPES.map(str::to_owned),
+    )?);
+    Ok(atoms.into_iter().collect())
+}
+
+fn economic_carry_result_atoms(contract: &EconomicCarryRuleContract) -> LedgerResult<Vec<String>> {
+    let mut atoms = economic_carry_current_atoms(contract)?
+        .into_iter()
+        .collect::<BTreeSet<_>>();
+    atoms.extend([
+        format!(
+            "complete($record, {}, $temporal_record)",
+            contract.current_kind
+        ),
+        "authorized($evidence, EconomicEvidenceAuthority, $record)".to_owned(),
+        "authorized($review, EconomicIndependentReviewAuthority, $record)".to_owned(),
+    ]);
+    for actor in ["$source", "$evidence", "$review"] {
+        for (value, scope) in [
+            (
+                "Constitution_EconomicPluralismAndPrivateSphere",
+                "SourceFamilyScope",
+            ),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$prior_epoch", "PriorSourceEpochScope"),
+            (
+                "$predecessor_record",
+                contract.predecessor_record_scope.as_str(),
+            ),
+            (
+                "$predecessor_result",
+                contract.predecessor_result_scope.as_str(),
+            ),
+            ("$successor_event", contract.successor_event_scope.as_str()),
+            ("$temporal_record", "TemporalRecordScope"),
+            (contract.record_kind.as_str(), "EconomicCarryKindScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$subject", "EconomicSubjectScope"),
+            (
+                contract.interest.value.as_str(),
+                contract.interest.scope.as_str(),
+            ),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "EconomicCarryLegalScope"),
+            (
+                contract.legal_scope_kind.as_str(),
+                "EconomicCarryLegalScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+            ("$reconciliation", "ReconciliationRecordScope"),
+            ("$result", "ResultScope"),
+        ] {
+            economic_insert_observation(&mut atoms, actor, "$record", value, scope);
+        }
+        for (value, scope) in [
+            (contract.branch.as_str(), "EconomicBranchScope"),
+            (
+                contract.finding_kind.as_str(),
+                "EconomicCarryFindingKindScope",
+            ),
+            (
+                contract.requirement.value.as_str(),
+                contract.requirement.scope.as_str(),
+            ),
+            (contract.record_kind.as_str(), "EconomicCarryKindScope"),
+            ("$source", "EconomicSourceActorScope"),
+            ("$evidence", "EconomicEvidenceActorScope"),
+            ("$review", "EconomicIndependentReviewActorScope"),
+            ("$challenge_record", "ChallengeScope"),
+            ("$correction_record", "CorrectionScope"),
+            ("$remedy_record", "RemedyScope"),
+            ("$end", "EndConditionScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$prior_epoch", "PriorSourceEpochScope"),
+            (
+                "$predecessor_record",
+                contract.predecessor_record_scope.as_str(),
+            ),
+            (
+                "$predecessor_result",
+                contract.predecessor_result_scope.as_str(),
+            ),
+            ("$successor_event", contract.successor_event_scope.as_str()),
+            ("$temporal_record", "TemporalRecordScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$subject", "EconomicSubjectScope"),
+            (
+                contract.interest.value.as_str(),
+                contract.interest.scope.as_str(),
+            ),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "EconomicCarryLegalScope"),
+            (
+                contract.legal_scope_kind.as_str(),
+                "EconomicCarryLegalScopeKindScope",
+            ),
+            (
+                "EconomicCarryCreatesNoBenefitTitleLiabilityOrAuthority",
+                "EconomicCarryEffectLimitScope",
+            ),
+            ("IndependentReviewComplete", "ReviewDispositionScope"),
+            ("EconomicCarryFailureWithholdsOnly", "FailurePolarityScope"),
+        ] {
+            economic_insert_observation(&mut atoms, actor, "$result", value, scope);
+        }
+    }
+    atoms.extend(
+        [
+            "observe($source, $result, $result_reconciliation, ReconciliationRecordScope)"
+                .to_owned(),
+            "observe($review, $result, $result_reconciliation, ReconciliationRecordScope)"
+                .to_owned(),
+            format!(
+                "observe($source, $result_reconciliation, Economic{}CarryResultReconciled, ReconciliationStatusScope)",
+                economic_title_case(&contract.carry_kind)
+            ),
+            format!(
+                "observe($review, $result_reconciliation, Economic{}CarryResultReconciled, ReconciliationStatusScope)",
+                economic_title_case(&contract.carry_kind)
+            ),
+        ],
+    );
+    for actor in ["$source", "$review"] {
+        for (value, scope) in [
+            ("$record", "EconomicRecordScope"),
+            ("$result", "ResultScope"),
+            (contract.record_kind.as_str(), "EconomicCarryKindScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$prior_epoch", "PriorSourceEpochScope"),
+            (
+                "$predecessor_record",
+                contract.predecessor_record_scope.as_str(),
+            ),
+            (
+                "$predecessor_result",
+                contract.predecessor_result_scope.as_str(),
+            ),
+            ("$successor_event", contract.successor_event_scope.as_str()),
+            ("$temporal_record", "TemporalRecordScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$subject", "EconomicSubjectScope"),
+            (
+                contract.interest.value.as_str(),
+                contract.interest.scope.as_str(),
+            ),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "EconomicCarryLegalScope"),
+            (
+                contract.legal_scope_kind.as_str(),
+                "EconomicCarryLegalScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+        ] {
+            economic_insert_observation(&mut atoms, actor, "$result_reconciliation", value, scope);
+        }
+    }
+    atoms.extend(economic_pairwise_atoms(&[
+        "$source",
+        "$record_review",
+        "$temporal",
+        "$temporal_review",
+        "$evidence",
+        "$review",
+    ]));
+    atoms.extend(economic_collision_guard_atoms(
+        "$result",
+        ECONOMIC_CARRY_RESULT_COLLISION_SCOPES.map(str::to_owned),
+    )?);
+    atoms.extend(economic_collision_guard_atoms(
+        "$result_reconciliation",
+        ECONOMIC_CARRY_RECONCILIATION_COLLISION_SCOPES.map(str::to_owned),
+    )?);
+    Ok(atoms.into_iter().collect())
+}
+
+fn economic_title_case(value: &str) -> String {
+    let mut characters = value.chars();
+    let mut result = String::new();
+    if let Some(first) = characters.next() {
+        result.extend(first.to_uppercase());
+    }
+    result.extend(characters);
+    result
+}
+
+fn validate_economic_carry_rules(
+    lines: &[&str],
+    contracts: &[EconomicCarryRuleContract],
+) -> LedgerResult<BTreeMap<String, usize>> {
+    let mut heads = BTreeMap::new();
+    for contract in contracts {
+        let context = format!("economic-carry-{}", contract.carry_kind);
+        let marker = format!("# {context}: ");
+        let marker_index = economic_unique_marker_index(lines, &marker)?;
+        let statements = lines
+            .get(marker_index + 1..marker_index + 3)
+            .ok_or_else(|| {
+                LedgerError::new(format!(
+                    "{context} marker is not followed by two one-line rules"
+                ))
+            })?;
+        if statements
+            .iter()
+            .any(|line| line.is_empty() || line.starts_with('#'))
+            || lines
+                .get(marker_index + 3)
+                .is_some_and(|line| !line.is_empty() && !line.starts_with('#'))
+        {
+            return Err(LedgerError::new(format!(
+                "{context} must have exactly two adjacent one-line rules"
+            )));
+        }
+        if statements
+            .iter()
+            .any(|statement| statement.contains("FSPOW_") || statement.contains(" -> authority("))
+        {
+            return Err(LedgerError::new(format!(
+                "{context} cannot consume or conclude a power or authority"
+            )));
+        }
+        let current = parse_economic_rule(statements[0])?;
+        let result = parse_economic_rule(statements[1])?;
+        let current_head = format!(
+            "complete($record, {}, $temporal_record)",
+            contract.current_kind
+        );
+        let result_head = format!("complete($result, {}, $record)", contract.result_kind);
+        if current.head != current_head || result.head != result_head {
+            return Err(LedgerError::new(format!(
+                "{context}: carry current/result heads differ from checker policy"
+            )));
+        }
+        let interest_name =
+            contract.interest.value.strip_prefix('$').ok_or_else(|| {
+                LedgerError::new(format!("{context}: interest is not a variable"))
+            })?;
+        let mut current_names = [
+            "record",
+            "source",
+            "record_review",
+            "temporal",
+            "temporal_review",
+            "temporal_record",
+            "version",
+            "epoch",
+            "prior_epoch",
+            "case",
+            "subject",
+            "jurisdiction",
+            "legal_scope",
+            "end",
+            "reconciliation",
+            "result",
+            "predecessor_record",
+            "predecessor_result",
+            "successor_event",
+        ]
+        .to_vec();
+        current_names.push(interest_name);
+        let mut result_names = current_names.clone();
+        result_names.extend([
+            "evidence",
+            "review",
+            "challenge_record",
+            "correction_record",
+            "remedy_record",
+            "result_reconciliation",
+        ]);
+        if economic_quantified_names(statements[0])? != current_names
+            || economic_quantified_names(statements[1])? != result_names
+        {
+            return Err(LedgerError::new(format!(
+                "{context}: quantified current/result bindings differ from checker policy"
+            )));
+        }
+        validate_economic_exact_body(
+            &current,
+            &economic_carry_current_atoms(contract)?,
+            &format!("{context}-current"),
+        )?;
+        validate_economic_exact_body(
+            &result,
+            &economic_carry_result_atoms(contract)?,
+            &format!("{context}-result"),
+        )?;
+        if heads.insert(current_head, 0).is_some() || heads.insert(result_head, 0).is_some() {
+            return Err(LedgerError::new(
+                "economic carry contracts contain duplicate complete heads",
+            ));
+        }
+    }
+    if heads.len() != 6 {
+        return Err(LedgerError::new(format!(
+            "economic carry contracts must own exactly six complete heads; found {}",
+            heads.len()
+        )));
+    }
+    Ok(heads)
+}
+
+fn economic_duty_origin_atoms(spec: &EconomicDutyBridgeSpec) -> Vec<String> {
+    let mut atoms = [
+        "authorized($source, ObligationsSourceAuthority, $record)",
+        "authorized($temporal, ObligationsTemporalAuthority, $temporal_record)",
+        "authorized($temporal_review, ObligationsTemporalReviewAuthority, $temporal_record)",
+        "authorized($record_review, ObligationsRecordReviewAuthority, $record)",
+    ]
+    .into_iter()
+    .map(str::to_owned)
+    .collect::<Vec<_>>();
+    for (actor, subject) in [
+        ("$source", "$record"),
+        ("$record_review", "$record"),
+        ("$temporal", "$temporal_record"),
+        ("$temporal_review", "$temporal_record"),
+    ] {
+        for (value, scope) in [
+            ("Constitution_Obligations", "SourceFamilyScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$jurisdiction", "JurisdictionScope"),
+            ("$legal_scope", "AuthorityScope"),
+            ("$origin", "ObligationOriginScope"),
+            ("$start", "DutyStartScope"),
+            ("$end", "DutyEndScope"),
+            ("ObligationsCurrentSelection", "EffectiveSelectionScope"),
+            ("$reconciliation", "ReconciliationRecordScope"),
+        ] {
+            atoms.push(format!("observe({actor}, {subject}, {value}, {scope})"));
+        }
+    }
+    atoms.extend(
+        [
+            "observe($source, $record, $temporal_record, TemporalRecordScope)",
+            "observe($record_review, $record, $temporal_record, TemporalRecordScope)",
+            "observe($temporal, $temporal_record, $record, ObligationsRecordScope)",
+            "observe($temporal_review, $temporal_record, $record, ObligationsRecordScope)",
+            "observe($source, $reconciliation, ObligationsRecordReconciled, ReconciliationStatusScope)",
+            "observe($record_review, $reconciliation, ObligationsRecordReconciled, ReconciliationStatusScope)",
+            "observe($source, $reconciliation, $record, ObligationsRecordScope)",
+            "observe($record_review, $reconciliation, $record, ObligationsRecordScope)",
+            "observe($source, $reconciliation, $version, SourceVersionScope)",
+            "observe($record_review, $reconciliation, $version, SourceVersionScope)",
+            "~($source = $temporal)",
+            "~($source = $temporal_review)",
+            "~($source = $record_review)",
+            "~($temporal = $temporal_review)",
+            "~($temporal = $record_review)",
+            "~($temporal_review = $record_review)",
+            "~collide($record, ObligationOriginBinding)",
+            "~collide($record, ObligationVersionBinding)",
+            "~collide($record, ObligationJurisdictionBinding)",
+            "~collide($record, ObligationScopeBinding)",
+            "authorized($evidence, ObligationsEvidenceAuthority, $record)",
+            "authorized($review, IndependentObligationsReviewAuthority, $record)",
+            "~($source = $evidence)",
+            "~($source = $review)",
+            "~($evidence = $review)",
+        ]
+        .into_iter()
+        .map(str::to_owned),
+    );
+    for (value, scope) in [
+        ("$record", "ObligationsRecordScope"),
+        ("$version", "SourceVersionScope"),
+        ("$epoch", "SourceEpochScope"),
+        ("$jurisdiction", "JurisdictionScope"),
+        ("$legal_scope", "AuthorityScope"),
+        ("$temporal_record", "TemporalRecordScope"),
+        (spec.bearer, "DutyBearerScope"),
+        (spec.duty, "DutyScope"),
+        (spec.standard, "DutyStandardScope"),
+        ("$affected", "DutyBeneficiaryOrObjectScope"),
+        (spec.duty, "DutyKindScope"),
+        (spec.function, "DutyFunctionOrCommitmentScope"),
+        (spec.mode, "DutyBearerModeScope"),
+        ("RoleDutyClass", "DutyClassScope"),
+        ("$start", "DutyStartScope"),
+        ("$end", "DutyEndScope"),
+        ("$challenge_record", "ChallengeScope"),
+        ("$correction_record", "CorrectionScope"),
+        ("$remedy_record", "RemedyScope"),
+        ("$breach_effect", "DutyBreachScope"),
+        ("$continuity_effect", "DutyContinuityScope"),
+        ("$priority_effect", "DutyPriorityScope"),
+        ("$excuse_effect", "DutyExcuseScope"),
+        ("$principal_retention", "PublicPrincipalRetentionScope"),
+        ("$private_reach", "ExpressPrivateReachScope"),
+        ("$non_waiver", "DutyNonWaiverScope"),
+        ("EconomicDutyFailureWithholdsOnly", "FailurePolarityScope"),
+        ("$mode_certificate", "DutyBearerModeCertificateScope"),
+        ("$class_certificate", "DutyClassCertificateScope"),
+    ] {
+        economic_push_tri(&mut atoms, "$origin", value, scope);
+    }
+    atoms.push("~collide($origin, ObligationContractBinding)".to_owned());
+    economic_push_tri(
+        &mut atoms,
+        "$origin",
+        &economic_duty_branch(spec.key),
+        "EconomicDutyBranchScope",
+    );
+    economic_push_tri(
+        &mut atoms,
+        "$origin",
+        spec.standard,
+        "EconomicDutyStandardKindScope",
+    );
+    atoms.push("~contradict($origin, EconomicDutySelectionBinding)".to_owned());
+    atoms
+}
+
+fn economic_duty_power_binding_atoms() -> Vec<String> {
+    let mut atoms = Vec::new();
+    for (value, scope) in [
+        ("$power_record", "EconomicDutyPowerRecordScope"),
+        ("$case", "EconomicDutyPowerCaseScope"),
+        ("$function", "EconomicDutyPowerFunctionScope"),
+        ("$affected", "EconomicDutyPowerAffectedScope"),
+        ("$power_version", "EconomicDutyPowerVersionScope"),
+        ("$power_epoch", "EconomicDutyPowerEpochScope"),
+        (
+            "$power_temporal_record",
+            "EconomicDutyPowerTemporalRecordScope",
+        ),
+        ("$power_jurisdiction", "EconomicDutyPowerJurisdictionScope"),
+        ("$power_legal_scope", "EconomicDutyPowerAuthorityScope"),
+        ("$power_end", "EconomicDutyPowerEndScope"),
+        ("$power_result", "EconomicDutyPowerResultScope"),
+    ] {
+        economic_push_tri(&mut atoms, "$origin", value, scope);
+    }
+    atoms
+}
+
+fn economic_duty_power_join_atoms(
+    spec: &EconomicDutyBridgeSpec,
+    contract: &EconomicPowerRuleContract,
+) -> LedgerResult<Vec<String>> {
+    let power = format!("FSPOW_{:03}", spec.power);
+    let branch = economic_power_branch(spec.power)?;
+    let mut atoms = vec![
+        format!("complete($power_result, {power}, $power_record)"),
+        "authorized($power_source, EconomicSourceAuthority, $power_record)".to_owned(),
+        "authorized($power_evidence, EconomicEvidenceAuthority, $power_record)".to_owned(),
+        "authorized($power_review, EconomicIndependentReviewAuthority, $power_record)".to_owned(),
+    ];
+    let mut joined_fields = BTreeSet::from(["subject", "function", "affected"]);
+    for value in [spec.bearer, "$affected", spec.function] {
+        if let Some(field) = value.strip_prefix('$')
+            && economic_named_field(contract, field).is_ok()
+        {
+            joined_fields.insert(field);
+        }
+    }
+    for actor in ["$power_source", "$power_evidence", "$power_review"] {
+        for (value, scope, subject) in [
+            (power.as_str(), "PowerScope", "$power_record"),
+            ("$power_result", "ResultScope", "$power_record"),
+            (branch.as_str(), "EconomicBranchScope", "$power_result"),
+            (contract.holder.as_str(), "HolderScope", "$power_result"),
+            ("$power_source", "EconomicSourceActorScope", "$power_result"),
+            (
+                "$power_evidence",
+                "EconomicEvidenceActorScope",
+                "$power_result",
+            ),
+            (
+                "$power_review",
+                "EconomicIndependentReviewActorScope",
+                "$power_result",
+            ),
+            ("$power_version", "SourceVersionScope", "$power_result"),
+            ("$power_epoch", "SourceEpochScope", "$power_result"),
+            (
+                "$power_temporal_record",
+                "TemporalRecordScope",
+                "$power_result",
+            ),
+            ("$case", "EconomicCaseScope", "$power_result"),
+            ("$power_jurisdiction", "JurisdictionScope", "$power_result"),
+            ("$power_legal_scope", "AuthorityScope", "$power_result"),
+            ("$power_end", "EndConditionScope", "$power_result"),
+        ] {
+            atoms.push(format!("observe({actor}, {subject}, {value}, {scope})"));
+        }
+        for field in &joined_fields {
+            let (value, scope) = economic_named_field(contract, field)?;
+            atoms.push(format!("observe({actor}, $power_result, {value}, {scope})"));
+        }
+    }
+    atoms.extend(economic_pairwise_atoms(&[
+        "$power_source",
+        "$power_evidence",
+        "$power_review",
+    ]));
+    let fields = economic_field_pairs(contract);
+    let requirements = economic_requirement_pairs(contract);
+    atoms.extend(economic_collision_guard_atoms(
+        "$power_record",
+        economic_current_collision_scopes(&fields),
+    )?);
+    atoms.extend(economic_collision_guard_atoms(
+        "$power_result",
+        economic_result_collision_scopes(&fields, &requirements),
+    )?);
+    Ok(atoms)
+}
+
+fn economic_duty_expected_atoms(
+    spec: &EconomicDutyBridgeSpec,
+    contract: &EconomicPowerRuleContract,
+) -> LedgerResult<Vec<String>> {
+    let mut atoms = economic_duty_origin_atoms(spec);
+    atoms.extend(economic_duty_power_binding_atoms());
+    atoms.extend(economic_duty_power_join_atoms(spec, contract)?);
+    Ok(atoms)
+}
+
+fn validate_economic_duty_bridge_rule(
+    spec: &EconomicDutyBridgeSpec,
+    contract: &EconomicPowerRuleContract,
+    rule: &EconomicRule<'_>,
+) -> LedgerResult<usize> {
+    let expected_head = format!("obliged({}, {}, {})", spec.bearer, spec.duty, spec.standard);
+    if rule.head != expected_head {
+        return Err(LedgerError::new(format!(
+            "economic duty bridge {} head drifted: {}",
+            spec.key, rule.head
+        )));
+    }
+    let expected = economic_duty_expected_atoms(spec, contract)?;
+    validate_economic_exact_body(rule, &expected, spec.key)?;
+    Ok(expected.len())
+}
+
+fn validate_economic_duty_bridges(
+    lines: &[&str],
+    contracts: &[EconomicPowerRuleContract],
+) -> LedgerResult<usize> {
+    let mut atom_count = 0_usize;
+    let mut keys = HashSet::new();
+    for spec in ECONOMIC_DUTY_BRIDGES {
+        if !keys.insert(spec.key) {
+            return Err(LedgerError::new(format!(
+                "duplicate checker-owned economic duty bridge: {}",
+                spec.key
+            )));
+        }
+        let marker = format!(
+            "# economic-duty-{}: {} / {} / FS-POW-{:03}",
+            spec.key, spec.duty, spec.standard, spec.power
+        );
+        let index = economic_unique_marker_index(lines, &marker)?;
+        let statement = lines.get(index + 1).ok_or_else(|| {
+            LedgerError::new(format!("economic duty bridge {marker:?} has no rule"))
+        })?;
+        if statement.is_empty() || statement.starts_with('#') {
+            return Err(LedgerError::new(format!(
+                "economic duty bridge {} must be one adjacent rule",
+                spec.key
+            )));
+        }
+        let rule = parse_economic_rule(statement)?;
+        let contract = economic_contract_by_number(contracts, spec.power)?;
+        atom_count += validate_economic_duty_bridge_rule(&spec, contract, &rule)?;
+    }
+    if keys.len() != 31 {
+        return Err(LedgerError::new(format!(
+            "economic power-conditioned duty bridge census drifted: {}",
+            keys.len()
+        )));
+    }
+    let actual_power_conditioned = lines
+        .iter()
+        .filter(|line| {
+            !line.starts_with('#')
+                && line.contains("complete($power_result, FSPOW_")
+                && line.contains(" -> obliged(")
+        })
+        .count();
+    if actual_power_conditioned != ECONOMIC_DUTY_BRIDGES.len() {
+        return Err(LedgerError::new(format!(
+            "economic block must contain exactly {} non-alternate power-conditioned duty bridges; found {actual_power_conditioned}",
+            ECONOMIC_DUTY_BRIDGES.len()
+        )));
+    }
+    Ok(atom_count)
+}
+
+fn economic_dependency_expected_atoms(
+    contracts: &[EconomicPowerRuleContract],
+    contract: &EconomicPowerRuleContract,
+    spec: &EconomicDependencySpec,
+) -> LedgerResult<Vec<String>> {
+    let prerequisite = economic_contract_by_number(contracts, spec.prerequisite)?;
+    let result = format!("${}_result", spec.label);
+    let record = format!("${}_record", spec.label);
+    let source = format!("${}_source", spec.label);
+    let evidence = format!("${}_evidence", spec.label);
+    let review = format!("${}_review", spec.label);
+    let power = format!("FSPOW_{:03}", spec.prerequisite);
+    let branch = economic_power_branch(spec.prerequisite)?;
+    let mut atoms = vec![
+        format!("complete({result}, {power}, {record})"),
+        format!("authorized({source}, EconomicSourceAuthority, {record})"),
+        format!("authorized({evidence}, EconomicEvidenceAuthority, {record})"),
+        format!("authorized({review}, EconomicIndependentReviewAuthority, {record})"),
+    ];
+    for actor in [&source, &evidence, &review] {
+        atoms.extend([
+            format!("observe({actor}, {record}, {power}, PowerScope)"),
+            format!("observe({actor}, {record}, {result}, ResultScope)"),
+            format!("observe({actor}, {result}, {branch}, EconomicBranchScope)"),
+        ]);
+        for field in spec.shared_fields {
+            let (value, _) = economic_named_field(contract, field)?;
+            let (_, scope) = economic_named_field(prerequisite, field)?;
+            atoms.push(format!("observe({actor}, {result}, {value}, {scope})"));
+        }
+    }
+    atoms.extend(economic_pairwise_atoms(&[&source, &evidence, &review]));
+    for actor in ["$source", "$evidence", "$review"] {
+        atoms.extend([
+            format!(
+                "observe({actor}, $result, {result}, EconomicDependencyResultScope_{:03}_{:03})",
+                spec.card, spec.prerequisite
+            ),
+            format!(
+                "observe({actor}, $result, {record}, EconomicDependencyRecordScope_{:03}_{:03})",
+                spec.card, spec.prerequisite
+            ),
+        ]);
+    }
+    Ok(atoms)
+}
+
+fn state_dependency_expected_atoms(
+    contract: &EconomicPowerRuleContract,
+    spec: &StateDependencySpec,
+) -> LedgerResult<Vec<String>> {
+    let result = format!("$state_{}_result", spec.label);
+    let record = format!("$state_{}_record", spec.label);
+    let source = format!("$state_{}_source", spec.label);
+    let evidence = format!("$state_{}_evidence", spec.label);
+    let review = format!("$state_{}_review", spec.label);
+    let power = format!("FSPOW_{:03}", spec.prerequisite);
+    let (value, _) = economic_named_field(contract, spec.economic_field)?;
+    let mut atoms = vec![
+        format!("complete({result}, {power}, {record})"),
+        format!("authorized({source}, StateFormSourceAuthority, {record})"),
+        format!("authorized({evidence}, StateFormEvidenceAuthority, {record})"),
+        format!("authorized({review}, IndependentStateFormReviewAuthority, {record})"),
+    ];
+    for actor in [&source, &evidence, &review] {
+        atoms.extend([
+            format!("observe({actor}, {record}, {power}, PowerScope)"),
+            format!("observe({actor}, {record}, {result}, ResultScope)"),
+            format!(
+                "observe({actor}, {result}, {}, StateFormBranchScope)",
+                spec.branch
+            ),
+            format!(
+                "observe({actor}, {result}, {value}, {})",
+                spec.state_field_scope
+            ),
+        ]);
+    }
+    atoms.extend(economic_pairwise_atoms(&[&source, &evidence, &review]));
+    for actor in ["$source", "$evidence", "$review"] {
+        atoms.extend([
+            format!(
+                "observe({actor}, $result, {result}, EconomicStateDependencyResultScope_{:03}_{:03})",
+                spec.card, spec.prerequisite
+            ),
+            format!(
+                "observe({actor}, $result, {record}, EconomicStateDependencyRecordScope_{:03}_{:03})",
+                spec.card, spec.prerequisite
+            ),
+        ]);
+    }
+    Ok(atoms)
+}
+
+fn economic_expected_dependency_atoms(
+    contracts: &[EconomicPowerRuleContract],
+    contract: &EconomicPowerRuleContract,
+    number: usize,
+) -> LedgerResult<Vec<String>> {
+    let mut atoms = Vec::new();
+    for spec in ECONOMIC_DEPENDENCIES
+        .iter()
+        .filter(|spec| spec.card == number)
+    {
+        atoms.extend(economic_dependency_expected_atoms(
+            contracts, contract, spec,
+        )?);
+    }
+    for spec in STATE_DEPENDENCIES.iter().filter(|spec| spec.card == number) {
+        atoms.extend(state_dependency_expected_atoms(contract, spec)?);
+    }
+    Ok(atoms)
+}
+
+fn is_economic_dependency_atom(atom: &str) -> bool {
+    if atom.contains("EconomicDependencyResultScope_")
+        || atom.contains("EconomicDependencyRecordScope_")
+        || atom.contains("EconomicStateDependencyResultScope_")
+        || atom.contains("EconomicStateDependencyRecordScope_")
+    {
+        return true;
+    }
+    ECONOMIC_DEPENDENCIES.iter().any(|spec| {
+        ["result", "record", "source", "evidence", "review"]
+            .into_iter()
+            .any(|suffix| atom.contains(&format!("${}_{suffix}", spec.label)))
+    }) || STATE_DEPENDENCIES.iter().any(|spec| {
+        ["result", "record", "source", "evidence", "review"]
+            .into_iter()
+            .any(|suffix| atom.contains(&format!("$state_{}_{suffix}", spec.label)))
+    })
+}
+
+fn validate_economic_dependency_joins(
+    contracts: &[EconomicPowerRuleContract],
+    contract: &EconomicPowerRuleContract,
+    rule: &EconomicRule<'_>,
+    number: usize,
+) -> LedgerResult<usize> {
+    let context = format!("{} dependency joins", contract.power_ref);
+    let expected = economic_expected_dependency_atoms(contracts, contract, number)?;
+    let expected_set = expected.iter().cloned().collect::<BTreeSet<_>>();
+    if expected_set.len() != expected.len() {
+        return Err(LedgerError::new(format!(
+            "{context}: checker-owned dependency contract contains duplicate atoms"
+        )));
+    }
+    let actual = rule
+        .body
+        .iter()
+        .filter(|atom| is_economic_dependency_atom(atom))
+        .map(|atom| (*atom).to_owned())
+        .collect::<BTreeSet<_>>();
+    if actual != expected_set {
+        let missing = expected_set
+            .difference(&actual)
+            .take(3)
+            .cloned()
+            .collect::<Vec<_>>();
+        let unexpected = actual
+            .difference(&expected_set)
+            .take(3)
+            .cloned()
+            .collect::<Vec<_>>();
+        return Err(LedgerError::new(format!(
+            "{context}: checker-owned dependency joins drifted (missing {missing:?}; unexpected {unexpected:?})"
+        )));
+    }
+    Ok(expected.len())
+}
+
+fn validate_economic_current_rule(
+    contract: &EconomicPowerRuleContract,
+    rule: &EconomicRule<'_>,
+    number: usize,
+) -> LedgerResult<()> {
+    let context = format!("{} current rule", contract.power_ref);
+    let power = format!("FSPOW_{number:03}");
+    let current = format!("EconomicCurrent_{number:03}");
+    let current_selection = format!("EconomicCurrentSelection_{number:03}");
+    let expected_head = format!("complete($record, {current}, $temporal_record)");
+    if rule.head != expected_head {
+        return Err(LedgerError::new(format!(
+            "{context}: head drifted: {}",
+            rule.head
+        )));
+    }
+    for (actor, subject) in [
+        ("$source", "$record"),
+        ("$record_review", "$record"),
+        ("$temporal", "$temporal_record"),
+        ("$temporal_review", "$temporal_record"),
+    ] {
+        for (value, scope) in [
+            (
+                "Constitution_EconomicPluralismAndPrivateSphere",
+                "SourceFamilyScope",
+            ),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            (power.as_str(), "PowerScope"),
+            (
+                contract.temporal_contract.as_str(),
+                "TemporalContractKindScope",
+            ),
+            (current_selection.as_str(), "EffectiveSelectionScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "AuthorityScope"),
+            (
+                contract.authority_scope_kind.as_str(),
+                "AuthorityScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+            ("$reconciliation", "ReconciliationRecordScope"),
+        ] {
+            require_economic_observation(rule, actor, subject, value, scope, &context)?;
+        }
+        for (_, value, scope) in economic_field_pairs(contract) {
+            require_economic_observation(rule, actor, subject, value, scope, &context)?;
+        }
+    }
+    for atom in [
+        "authorized($source, EconomicSourceAuthority, $record)",
+        "authorized($record_review, EconomicRecordReviewAuthority, $record)",
+        "authorized($temporal, EconomicTemporalAuthority, $temporal_record)",
+        "authorized($temporal_review, EconomicTemporalReviewAuthority, $temporal_record)",
+    ] {
+        require_economic_atom(rule, atom, &context)?;
+    }
+    require_economic_pairwise_separation(
+        rule,
+        &[
+            "$source",
+            "$record_review",
+            "$temporal",
+            "$temporal_review",
+            "$review",
+            "$auditor",
+            "$final_review",
+            "$alternate_record_reviewer",
+            "$alternate_temporal_reviewer",
+            "$alternate_independent_reviewer",
+            "$alternate_audit_reviewer",
+            "$alternate_final_reviewer",
+        ],
+        &context,
+    )?;
+    let fields = economic_field_pairs(contract);
+    require_economic_collision_guards(
+        rule,
+        "$record",
+        economic_current_collision_scopes(&fields),
+        &context,
+    )?;
+    require_economic_collision_guards(
+        rule,
+        "$temporal_record",
+        economic_current_collision_scopes(&fields),
+        &context,
+    )?;
+    require_economic_collision_guards(
+        rule,
+        "$reconciliation",
+        economic_reconciliation_collision_scopes(),
+        &context,
+    )
+}
+
+fn validate_economic_result_rule(
+    contracts: &[EconomicPowerRuleContract],
+    contract: &EconomicPowerRuleContract,
+    rule: &EconomicRule<'_>,
+    number: usize,
+) -> LedgerResult<()> {
+    let context = format!("{} result rule", contract.power_ref);
+    let power = format!("FSPOW_{number:03}");
+    let current = format!("EconomicCurrent_{number:03}");
+    let expected_head = format!("complete($result, {power}, $record)");
+    if rule.head != expected_head {
+        return Err(LedgerError::new(format!(
+            "{context}: head drifted: {}",
+            rule.head
+        )));
+    }
+    require_economic_atom(
+        rule,
+        &format!("complete($record, {current}, $temporal_record)"),
+        &context,
+    )?;
+    for atom in [
+        "authorized($source, EconomicSourceAuthority, $record)",
+        "authorized($record_review, EconomicRecordReviewAuthority, $record)",
+        "authorized($temporal, EconomicTemporalAuthority, $temporal_record)",
+        "authorized($temporal_review, EconomicTemporalReviewAuthority, $temporal_record)",
+        "authorized($evidence, EconomicEvidenceAuthority, $record)",
+        "authorized($review, EconomicIndependentReviewAuthority, $record)",
+        "authorized($auditor, EconomicAuditAuthority, $record)",
+        "authorized($final_review, EconomicFinalReviewAuthority, $record)",
+        "authorized($executor, EconomicExecutionAuthority, $record)",
+    ] {
+        require_economic_atom(rule, atom, &context)?;
+    }
+    for (actor, subject) in [
+        ("$source", "$record"),
+        ("$record_review", "$record"),
+        ("$temporal", "$temporal_record"),
+        ("$temporal_review", "$temporal_record"),
+    ] {
+        for (value, scope) in [
+            (
+                "Constitution_EconomicPluralismAndPrivateSphere",
+                "SourceFamilyScope",
+            ),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            (power.as_str(), "PowerScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "AuthorityScope"),
+            (
+                contract.authority_scope_kind.as_str(),
+                "AuthorityScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+        ] {
+            require_economic_observation(rule, actor, subject, value, scope, &context)?;
+        }
+        for (_, value, scope) in economic_field_pairs(contract) {
+            require_economic_observation(rule, actor, subject, value, scope, &context)?;
+        }
+    }
+    for actor in ["$source", "$evidence", "$review"] {
+        for (value, scope) in [
+            (power.as_str(), "PowerScope"),
+            ("$result", "ResultScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$temporal_record", "TemporalRecordScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "AuthorityScope"),
+            (
+                contract.authority_scope_kind.as_str(),
+                "AuthorityScopeKindScope",
+            ),
+            ("$reconciliation", "ReconciliationRecordScope"),
+        ] {
+            require_economic_observation(rule, actor, "$record", value, scope, &context)?;
+        }
+        for (value, scope) in [
+            (contract.holder.as_str(), "HolderScope"),
+            ("$source", "EconomicSourceActorScope"),
+            ("$evidence", "EconomicEvidenceActorScope"),
+            ("$review", "EconomicIndependentReviewActorScope"),
+            ("$auditor", "EconomicAuditActorScope"),
+            ("$final_review", "EconomicFinalReviewActorScope"),
+            ("$executor", "EconomicExecutionActorScope"),
+            ("$challenge_record", "ChallengeScope"),
+            ("$correction_record", "CorrectionScope"),
+            ("$remedy_record", "RemedyScope"),
+            ("$end", "EndConditionScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$temporal_record", "TemporalRecordScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "AuthorityScope"),
+            (
+                contract.authority_scope_kind.as_str(),
+                "AuthorityScopeKindScope",
+            ),
+        ] {
+            require_economic_observation(rule, actor, "$result", value, scope, &context)?;
+        }
+        for (_, value, scope) in economic_field_pairs(contract) {
+            require_economic_observation(rule, actor, "$result", value, scope, &context)?;
+        }
+        for (value, scope) in economic_requirement_pairs(contract) {
+            require_economic_observation(rule, actor, "$result", value, scope, &context)?;
+        }
+    }
+    require_economic_pairwise_separation(
+        rule,
+        &[
+            "$source",
+            "$record_review",
+            "$temporal",
+            "$temporal_review",
+            "$evidence",
+            "$review",
+            "$auditor",
+            "$final_review",
+            "$executor",
+            "$alternate_record_reviewer",
+            "$alternate_temporal_reviewer",
+            "$alternate_independent_reviewer",
+            "$alternate_audit_reviewer",
+            "$alternate_final_reviewer",
+        ],
+        &context,
+    )?;
+    let fields = economic_field_pairs(contract);
+    let requirements = economic_requirement_pairs(contract);
+    for subject in ["$record", "$temporal_record"] {
+        require_economic_collision_guards(
+            rule,
+            subject,
+            economic_current_collision_scopes(&fields),
+            &context,
+        )?;
+    }
+    require_economic_collision_guards(
+        rule,
+        "$reconciliation",
+        economic_reconciliation_collision_scopes(),
+        &context,
+    )?;
+    require_economic_collision_guards(
+        rule,
+        "$result",
+        economic_result_collision_scopes(&fields, &requirements),
+        &context,
+    )?;
+    require_economic_collision_guards(
+        rule,
+        "$result_reconciliation",
+        economic_reconciliation_collision_scopes(),
+        &context,
+    )?;
+    validate_economic_dependency_joins(contracts, contract, rule, number)?;
+    Ok(())
+}
+
+fn validate_economic_authority_rule(
+    contract: &EconomicPowerRuleContract,
+    rule: &EconomicRule<'_>,
+    number: usize,
+) -> LedgerResult<()> {
+    let context = format!("{} authority rule", contract.power_ref);
+    let power = format!("FSPOW_{number:03}");
+    let expected_head = format!("authority({}, {power}, $record)", contract.holder);
+    if rule.head != expected_head {
+        return Err(LedgerError::new(format!(
+            "{context}: head drifted: {}",
+            rule.head
+        )));
+    }
+    require_economic_atom(
+        rule,
+        &format!("complete($result, {power}, $record)"),
+        &context,
+    )?;
+    for atom in [
+        "authorized($source, EconomicSourceAuthority, $record)",
+        "authorized($evidence, EconomicEvidenceAuthority, $record)",
+        "authorized($review, EconomicIndependentReviewAuthority, $record)",
+        "authorized($auditor, EconomicAuditAuthority, $record)",
+        "authorized($final_review, EconomicFinalReviewAuthority, $record)",
+        "authorized($executor, EconomicExecutionAuthority, $record)",
+    ] {
+        require_economic_atom(rule, atom, &context)?;
+    }
+    for actor in [
+        "$source",
+        "$evidence",
+        "$review",
+        "$auditor",
+        "$final_review",
+        "$executor",
+    ] {
+        require_economic_observation(rule, actor, "$record", &power, "PowerScope", &context)?;
+        require_economic_observation(rule, actor, "$record", "$result", "ResultScope", &context)?;
+        for (value, scope) in [
+            (contract.holder.as_str(), "HolderScope"),
+            ("$source", "EconomicSourceActorScope"),
+            ("$evidence", "EconomicEvidenceActorScope"),
+            ("$review", "EconomicIndependentReviewActorScope"),
+            ("$auditor", "EconomicAuditActorScope"),
+            ("$final_review", "EconomicFinalReviewActorScope"),
+            ("$executor", "EconomicExecutionActorScope"),
+            ("$version", "SourceVersionScope"),
+            ("$epoch", "SourceEpochScope"),
+            ("$temporal_record", "TemporalRecordScope"),
+            ("$case", "EconomicCaseScope"),
+            ("$jurisdiction", "JurisdictionScope"),
+            (contract.jurisdiction_kind.as_str(), "JurisdictionKindScope"),
+            ("$legal_scope", "AuthorityScope"),
+            (
+                contract.authority_scope_kind.as_str(),
+                "AuthorityScopeKindScope",
+            ),
+            ("$end", "EndConditionScope"),
+        ] {
+            require_economic_observation(rule, actor, "$result", value, scope, &context)?;
+        }
+    }
+    require_economic_pairwise_separation(
+        rule,
+        &[
+            "$source",
+            "$evidence",
+            "$review",
+            "$auditor",
+            "$final_review",
+            "$executor",
+        ],
+        &context,
+    )?;
+    let fields = economic_field_pairs(contract);
+    let requirements = economic_requirement_pairs(contract);
+    require_economic_collision_guards(
+        rule,
+        "$record",
+        economic_current_collision_scopes(&fields),
+        &context,
+    )?;
+    require_economic_collision_guards(
+        rule,
+        "$result",
+        economic_result_collision_scopes(&fields, &requirements),
+        &context,
+    )
+}
+
+fn economic_unique_marker_index(lines: &[&str], prefix: &str) -> LedgerResult<usize> {
+    let matches = lines
+        .iter()
+        .enumerate()
+        .filter_map(|(index, line)| line.starts_with(prefix).then_some(index))
+        .collect::<Vec<_>>();
+    match matches.as_slice() {
+        [index] => Ok(*index),
+        _ => Err(LedgerError::new(format!(
+            "economic rule block needs exactly one marker beginning {prefix:?}; found {}",
+            matches.len()
+        ))),
+    }
+}
+
+fn validate_economic_alternate_review_rule(
+    rule: &EconomicRule<'_>,
+    number: usize,
+    route: &str,
+    unavailable_reviewer: &str,
+    alternate_reviewer: &str,
+    alternate_scope: &str,
+) -> LedgerResult<()> {
+    let alternate_duty = economic_alternate_review_duty(number)?;
+    let alternate_standard = "CertifiedUnavailabilityNoSilenceNoExtensionAndSourceBoundEndStandard";
+    if rule.head != format!("obliged({alternate_reviewer}, {alternate_duty}, {alternate_standard})")
+    {
+        return Err(LedgerError::new(format!(
+            "alternate-review-{number:03}-{route} must derive only its typed obligation"
+        )));
+    }
+    let context = format!("alternate-review-{number:03}-{route}");
+    for actor in ["$source", "$evidence", "$review"] {
+        for (value, scope) in [
+            (alternate_reviewer, "DutyBearerScope"),
+            (alternate_duty.as_str(), "DutyScope"),
+            (alternate_standard, "DutyStandardScope"),
+        ] {
+            require_economic_observation(rule, actor, "$origin", value, scope, &context)?;
+            let prefix = format!("observe({actor}, $origin, ");
+            let suffix = format!(", {scope})");
+            let selected = format!("{prefix}{value}{suffix}");
+            if rule.body.iter().any(|atom| {
+                atom.starts_with(&prefix) && atom.ends_with(&suffix) && *atom != selected
+            }) {
+                return Err(LedgerError::new(format!(
+                    "{context}: {scope} must select only {value} for {actor}"
+                )));
+            }
+        }
+    }
+    require_economic_atom(
+        rule,
+        &format!("complete($power_record, EconomicCurrent_{number:03}, $power_temporal_record)"),
+        &context,
+    )?;
+    require_economic_atom(
+        rule,
+        "authorized($unavailability_source, EconomicReviewerUnavailabilityAuthority, $unavailability_record)",
+        &context,
+    )?;
+    for (actor, subject) in [
+        ("$power_source", "$power_record"),
+        ("$power_record_review", "$power_record"),
+        ("$power_temporal", "$power_temporal_record"),
+        ("$power_temporal_review", "$power_temporal_record"),
+    ] {
+        require_economic_observation(
+            rule,
+            actor,
+            subject,
+            alternate_reviewer,
+            alternate_scope,
+            &context,
+        )?;
+    }
+    for actor in [
+        "$unavailability_source",
+        "$unavailability_evidence",
+        "$unavailability_review",
+    ] {
+        require_economic_observation(
+            rule,
+            actor,
+            "$unavailability_record",
+            unavailable_reviewer,
+            "UnavailableReviewerScope",
+            &context,
+        )?;
+        require_economic_observation(
+            rule,
+            actor,
+            "$unavailability_record",
+            alternate_reviewer,
+            "PredeclaredAlternateScope",
+            &context,
+        )?;
+    }
+    require_economic_pairwise_separation(
+        rule,
+        &[
+            "$unavailability_source",
+            "$unavailability_evidence",
+            "$unavailability_review",
+            alternate_reviewer,
+            unavailable_reviewer,
+        ],
+        &context,
+    )
+}
+
+fn validate_economic_power_rule_surface(
+    constitution_bytes: &[u8],
+    contracts: &[EconomicPowerRuleContract],
+    carry_contracts: &[EconomicCarryRuleContract],
+) -> LedgerResult<()> {
+    let constitution = std::str::from_utf8(constitution_bytes)
+        .map_err(|error| LedgerError::new(format!("constitution is not UTF-8: {error}")))?;
+    let block = economic_block(constitution)?;
+    let lines = block.lines().collect::<Vec<_>>();
+    validate_economic_duty_bridges(&lines, contracts)?;
+    let mut expected_complete_heads = validate_economic_carry_rules(&lines, carry_contracts)?;
+    let mut alternate_count = 0_usize;
+    for contract in contracts {
+        let number = economic_power_number(&contract.power_ref)?;
+        let power = format!("FSPOW_{number:03}");
+        let current = format!("EconomicCurrent_{number:03}");
+        expected_complete_heads
+            .insert(format!("complete($record, {current}, $temporal_record)"), 0);
+        expected_complete_heads.insert(format!("complete($result, {power}, $record)"), 0);
+
+        let card_marker = format!("# {}: ", contract.power_ref);
+        let marker_index = economic_unique_marker_index(&lines, &card_marker)?;
+        let card_lines = lines
+            .get(marker_index + 1..marker_index + 4)
+            .ok_or_else(|| {
+                LedgerError::new(format!(
+                    "{} marker is not followed by its three one-line rules",
+                    contract.power_ref
+                ))
+            })?;
+        if card_lines
+            .iter()
+            .any(|line| line.is_empty() || line.starts_with('#'))
+        {
+            return Err(LedgerError::new(format!(
+                "{} must have exactly three adjacent one-line rules",
+                contract.power_ref
+            )));
+        }
+        let current_rule = parse_economic_rule(card_lines[0])?;
+        let result_rule = parse_economic_rule(card_lines[1])?;
+        let authority_rule = parse_economic_rule(card_lines[2])?;
+        validate_economic_current_rule(contract, &current_rule, number)?;
+        validate_economic_result_rule(contracts, contract, &result_rule, number)?;
+        validate_economic_authority_rule(contract, &authority_rule, number)?;
+
+        for (route, unavailable_reviewer, alternate_reviewer, alternate_scope) in
+            ECONOMIC_ALTERNATE_REVIEW_ROUTES
+        {
+            let marker = format!("# alternate-review-{number:03}-{route}: ");
+            let index = economic_unique_marker_index(&lines, &marker)?;
+            let statement = lines.get(index + 1).ok_or_else(|| {
+                LedgerError::new(format!("{marker} has no adjacent rule statement"))
+            })?;
+            let rule = parse_economic_rule(statement)?;
+            validate_economic_alternate_review_rule(
+                &rule,
+                number,
+                route,
+                unavailable_reviewer,
+                alternate_reviewer,
+                alternate_scope,
+            )?;
+            alternate_count += 1;
+        }
+    }
+    if expected_complete_heads.len() != 62 || alternate_count != 140 {
+        return Err(LedgerError::new(format!(
+            "economic rule contract census drifted: {} complete heads and {alternate_count} alternate branches",
+            expected_complete_heads.len()
+        )));
+    }
+
+    let mut actual_complete_count = 0_usize;
+    for statement in lines
+        .iter()
+        .copied()
+        .filter(|line| !line.starts_with('#') && line.contains(" -> "))
+    {
+        let rule = parse_economic_rule(statement)?;
+        if rule.head.starts_with("complete(") {
+            let arguments = economic_call(rule.head, "complete")?;
+            if arguments.len() != 3 {
+                return Err(LedgerError::new(format!(
+                    "economic complete head has arity {} instead of 3",
+                    arguments.len()
+                )));
+            }
+            let count = expected_complete_heads.get_mut(rule.head).ok_or_else(|| {
+                LedgerError::new(format!(
+                    "economic block contains an unapproved complete head: {}",
+                    rule.head
+                ))
+            })?;
+            *count += 1;
+            actual_complete_count += 1;
+        }
+    }
+    if actual_complete_count != 62 || expected_complete_heads.iter().any(|(_, count)| *count != 1) {
+        return Err(LedgerError::new(format!(
+            "economic block must contain exactly 56 power-card and six non-power carry complete heads; found {actual_complete_count}"
+        )));
+    }
+    let unavailability_authority = "authorized($unavailability_source, EconomicReviewerUnavailabilityAuthority, $unavailability_record)";
+    if block.matches(unavailability_authority).count() != 140 {
+        return Err(LedgerError::new(
+            "economic block must contain exactly five typed alternate-review branches per card",
+        ));
+    }
+    Ok(())
+}
+
+fn validate_coverage_state_semantics(source: &LedgerDocument) -> LedgerResult<()> {
+    let powers = source
+        .powers
+        .iter()
+        .map(|row| (row.id.as_str(), row))
+        .collect::<HashMap<_, _>>();
+    let effects = source
+        .constitutional_effects
+        .iter()
+        .map(|row| (row.id.as_str(), row))
+        .collect::<HashMap<_, _>>();
+    for family in &source.coverage_families {
+        if !matches!(family.state.as_str(), "formalized" | "prose-landed") {
+            continue;
+        }
+        if family.formal_statement_refs.is_empty()
+            || family.pin_group_refs.is_empty()
+            || family.counterfactual_refs.is_empty()
+        {
+            return Err(LedgerError::new(format!(
+                "{}: a formalized coverage family needs exact statements, pins, and counterfactuals",
+                family.id
+            )));
+        }
+        if family.state == "formalized"
+            && (!family.prose_refs.is_empty() || !family.part_v_refs.is_empty())
+        {
+            return Err(LedgerError::new(format!(
+                "{}: formalized-not-prose-landed coverage cannot carry prose anchors",
+                family.id
+            )));
+        }
+        if family.state == "prose-landed"
+            && (family.prose_refs.is_empty() || family.part_v_refs.is_empty())
+        {
+            return Err(LedgerError::new(format!(
+                "{}: prose-landed coverage needs numbered/method and Part V anchors",
+                family.id
+            )));
+        }
+        for power_ref in &family.card_refs {
+            let power = powers.get(power_ref.as_str()).ok_or_else(|| {
+                LedgerError::new(format!("{}: unknown power {power_ref}", family.id))
+            })?;
+            if power.negative_test.status != "executable"
+                || power.negative_test.executable_ref.0.is_none()
+                || power.counterfactual.status != "executable"
+                || power.counterfactual.executable_ref.0.is_none()
+            {
+                return Err(LedgerError::new(format!(
+                    "{}: {power_ref} test state does not follow its formalized coverage family",
+                    family.id
+                )));
+            }
+            let valid_part_v = if family.state == "formalized" {
+                power.part_v_status == "formalized-not-prose-landed"
+            } else {
+                matches!(
+                    power.part_v_status.as_str(),
+                    "prose-landed" | "implemented-current-formal"
+                )
+            };
+            if !valid_part_v {
+                return Err(LedgerError::new(format!(
+                    "{}: {power_ref} Part V state does not follow its coverage family",
+                    family.id
+                )));
+            }
+        }
+        for effect_ref in &family.effect_refs {
+            let effect = effects.get(effect_ref.as_str()).ok_or_else(|| {
+                LedgerError::new(format!("{}: unknown effect {effect_ref}", family.id))
+            })?;
+            if effect.negative_test.status != "executable"
+                || effect.negative_test.executable_ref.0.is_none()
+                || effect.counterfactual.status != "executable"
+                || effect.counterfactual.executable_ref.0.is_none()
+            {
+                return Err(LedgerError::new(format!(
+                    "{}: {effect_ref} test state does not follow its formalized coverage family",
+                    family.id
+                )));
+            }
+            let expected_part_v = if family.state == "formalized" {
+                "formalized-not-prose-landed"
+            } else {
+                "prose-landed"
+            };
+            if effect.part_v_status != expected_part_v {
+                return Err(LedgerError::new(format!(
+                    "{}: {effect_ref} Part V state does not follow its coverage family",
+                    family.id
+                )));
+            }
+        }
+    }
+    Ok(())
+}
+
+fn validate_power_effect_coverage_policy(
+    inputs: &BTreeMap<String, Vec<u8>>,
+    source: &LedgerDocument,
+) -> LedgerResult<()> {
+    validate_coverage_state_semantics(source)?;
     let power_policy = source
         .powers
         .iter()
@@ -4272,7 +9313,7 @@ fn validate_power_effect_coverage_policy(source: &LedgerDocument) -> LedgerResul
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&effect_policy, "constitutional-effect classification")?
-        != "e86ea7e90d331a01d5d063cb2630a932f742c39a173711bb4c82d7dd9feeb4db"
+        != "c6ff7408b058d9dc35b008b133aa7df42939a6a12ec7e822b1ea94735db48041"
     {
         return Err(LedgerError::new(
             "constitutional-effect taxonomy, profiles, claims, or domains differ from checker policy",
@@ -4298,7 +9339,7 @@ fn validate_power_effect_coverage_policy(source: &LedgerDocument) -> LedgerResul
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&coverage_policy, "coverage-family policy")?
-        != "9eb345e706f398838a89e60a924c9121d9f110cab7bac54acb11e6099b8a5b41"
+        != "8770cb9ffe4addf0aca00f193472c0f9a25703dbf1852db0e012ceb85079ce8e"
     {
         return Err(LedgerError::new(
             "coverage-family state, partitions, or formal surfaces differ from checker policy",
@@ -4356,6 +9397,117 @@ fn validate_power_effect_coverage_policy(source: &LedgerDocument) -> LedgerResul
         return Err(LedgerError::new(
             "state-form holder, function, test, or Part V mapping differs from checker policy",
         ));
+    }
+
+    let economic_family = source
+        .coverage_families
+        .iter()
+        .find(|row| row.id == "FS-CVF-006")
+        .ok_or_else(|| LedgerError::new("FS-CVF-006 economic coverage family is missing"))?;
+    validate_economic_rule_contract_rows(
+        &source.economic_power_rule_contracts,
+        &economic_family.card_refs,
+    )?;
+    if typed_fingerprint(
+        &source.economic_power_rule_contracts,
+        "economic power rule contracts",
+    )? != "7a8f4297c0ee6c64fe8580a3d61970f0ad4b280da41566eaf3f2ba020680d19a"
+    {
+        return Err(LedgerError::new(
+            "economic power fields, requirements, temporal contracts, jurisdictions, scopes, or holders differ from checker policy",
+        ));
+    }
+    validate_economic_carry_rule_contract_rows(&source.economic_carry_rule_contracts)?;
+    validate_grounded_economic_duty_pin_order(inputs)?;
+    validate_economic_power_088_dependency_links(inputs)?;
+    validate_economic_acceptance_cases(source, inputs)?;
+    validate_economic_power_rule_surface(
+        input_bytes(inputs, "new-book-plans/constitution.nibli")?,
+        &source.economic_power_rule_contracts,
+        &source.economic_carry_rule_contracts,
+    )?;
+    let mut economic_policy = Vec::new();
+    for power_ref in &economic_family.card_refs {
+        let power = source
+            .powers
+            .iter()
+            .find(|row| row.id == *power_ref)
+            .ok_or_else(|| LedgerError::new(format!("{power_ref}: economic power is missing")))?;
+        let allocation = allocations.get(power.id.as_str()).ok_or_else(|| {
+            LedgerError::new(format!(
+                "{}: economic function allocation missing",
+                power.id
+            ))
+        })?;
+        if !power
+            .prohibited_inputs
+            .iter()
+            .any(|value| value.contains("custody T3"))
+        {
+            return Err(LedgerError::new(format!(
+                "{}: economic power can borrow the custody T3 record",
+                power.id
+            )));
+        }
+        economic_policy.push(EconomicPowerPolicyProjection {
+            id: &power.id,
+            holder_body_refs: &power.holder_body_refs,
+            holder_role_refs: &power.holder_role_refs,
+            decisive_fact_writer_body_refs: &allocation.decisive_fact_writer_body_refs,
+            decisive_fact_writer_role_refs: &allocation.decisive_fact_writer_role_refs,
+            decider_body_refs: &allocation.decider_body_refs,
+            decider_role_refs: &allocation.decider_role_refs,
+            executor_body_refs: &allocation.executor_body_refs,
+            executor_role_refs: &allocation.executor_role_refs,
+            auditor_body_refs: &allocation.auditor_body_refs,
+            auditor_role_refs: &allocation.auditor_role_refs,
+            final_remedy_body_refs: &allocation.final_remedy_body_refs,
+            final_remedy_role_refs: &allocation.final_remedy_role_refs,
+            required_separation_pairs: &power.required_separation_pairs,
+            prohibited_inputs: &power.prohibited_inputs,
+            negative_status: &power.negative_test.status,
+            negative_executable_ref: &power.negative_test.executable_ref.0,
+            counterfactual_status: &power.counterfactual.status,
+            counterfactual_executable_ref: &power.counterfactual.executable_ref.0,
+            part_v_status: &power.part_v_status,
+        });
+    }
+    if typed_fingerprint(&economic_policy, "economic power semantic mapping")?
+        != "99be72da9b4006c8efb9f7ebe8a7b7b4c227ce9b1462cdca65c466ae1d31842e"
+    {
+        return Err(LedgerError::new(
+            "economic holder, function, temporal wall, test, or Part V mapping differs from checker policy",
+        ));
+    }
+
+    let economic_effect_family = source
+        .coverage_families
+        .iter()
+        .find(|row| row.id == "FS-CVF-017")
+        .ok_or_else(|| LedgerError::new("FS-CVF-017 economic effect family is missing"))?;
+    validate_economic_effect_term_contracts(inputs, source, economic_effect_family)?;
+    for effect_ref in &economic_effect_family.effect_refs {
+        let effect = source
+            .constitutional_effects
+            .iter()
+            .find(|row| row.id == *effect_ref)
+            .ok_or_else(|| LedgerError::new(format!("{effect_ref}: economic effect is missing")))?;
+        let prohibited = effect.prohibited_inputs.join(" ").to_ascii_lowercase();
+        for sealed in [
+            "raw work",
+            "reward",
+            "home",
+            "family",
+            "public label",
+            "custody t3",
+            "book 2 model",
+        ] {
+            if !prohibited.contains(sealed) {
+                return Err(LedgerError::new(format!(
+                    "{effect_ref}: economic effect no longer seals {sealed}"
+                )));
+            }
+        }
     }
     Ok(())
 }
@@ -8082,7 +13234,7 @@ fn validate_records(source: &LedgerDocument, ids: &BTreeSet<String>) -> LedgerRe
             &effect.contract_terms,
             &format!("{}.contract_terms", effect.id),
         )?;
-        validate_profile_terms(
+        validate_constitutional_effect_profile_terms(
             &effect.profile_terms,
             &format!("{}.profile_terms", effect.id),
         )?;
@@ -8579,6 +13731,27 @@ fn validate_profile_terms(terms: &ProfileTerms, context: &str) -> LedgerResult<(
     }
     for (profile, values) in terms {
         validate_term_set(values, &format!("{context}.{profile}"))?;
+    }
+    Ok(())
+}
+
+fn validate_constitutional_effect_profile_terms(
+    terms: &ProfileTerms,
+    context: &str,
+) -> LedgerResult<()> {
+    validate_profile_terms(terms, context)?;
+    let Some(boundary) = terms.get("democratic-policy-boundary") else {
+        return Ok(());
+    };
+    let actual = boundary.keys().map(String::as_str).collect::<BTreeSet<_>>();
+    let expected = DEMOCRATIC_POLICY_BOUNDARY_TERM_KEYS
+        .into_iter()
+        .collect::<BTreeSet<_>>();
+    if actual != expected {
+        return Err(LedgerError::new(format!(
+            "{context}.democratic-policy-boundary must contain exactly: {}",
+            DEMOCRATIC_POLICY_BOUNDARY_TERM_KEYS.join(", ")
+        )));
     }
     Ok(())
 }
@@ -9115,7 +14288,7 @@ fn validate_source_with_projections(
     validate_power_binding(inputs, source)?;
     let ids = register_ids(source)?;
     validate_records(source, &ids)?;
-    validate_power_effect_coverage_policy(source)?;
+    validate_power_effect_coverage_policy(inputs, source)?;
     validate_body_map_cells(inputs, source)?;
     validate_scenario_records(source, siblings)?;
     validate_sibling_closures(source, siblings, reader_projection)?;
@@ -11543,6 +16716,179 @@ fn negative_controls_power_and_effects(ledger: &ValidatedLedger) -> LedgerResult
             Ok(())
         }
     );
+    typed!(
+        "economic test status follows coverage-family state",
+        |source| {
+            let power_ref = source
+                .coverage_families
+                .iter()
+                .find(|row| row.id == "FS-CVF-006")
+                .and_then(|row| row.card_refs.first())
+                .cloned()
+                .ok_or_else(|| LedgerError::new("control setup: economic family empty"))?;
+            source
+                .powers
+                .iter_mut()
+                .find(|row| row.id == power_ref)
+                .ok_or_else(|| LedgerError::new("control setup: economic power missing"))?
+                .negative_test
+                .status = "planned".into();
+            Ok(())
+        }
+    );
+    typed!(
+        "economic holder and function semantics are checker-owned",
+        |source| {
+            let power = source
+                .powers
+                .iter_mut()
+                .find(|row| row.id == "FS-POW-061")
+                .ok_or_else(|| LedgerError::new("control setup: FS-POW-061 missing"))?;
+            power.holder_body_refs = vec!["FS-BOD-02".into()];
+            power.holder_role_refs = vec!["FS-ROL-26".into()];
+            Ok(())
+        }
+    );
+    typed!("economic effects seal legacy and Book 2 inputs", |source| {
+        source
+            .constitutional_effects
+            .iter_mut()
+            .find(|row| row.id == "FS-CCE-223")
+            .ok_or_else(|| LedgerError::new("control setup: FS-CCE-223 missing"))?
+            .prohibited_inputs[0] = "Other limits".into();
+        Ok(())
+    });
+    typed!(
+        "economic effect terms require their substantive applicability prefix",
+        |source| {
+            let effect = source
+                .constitutional_effects
+                .iter_mut()
+                .find(|row| row.id == "FS-CCE-223")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CCE-223 missing"))?;
+            let prefix = format!("{} ", effect.applicability);
+            let term = effect
+                .contract_terms
+                .get_mut("evidence_rule")
+                .ok_or_else(|| LedgerError::new("control setup: evidence_rule missing"))?;
+            term.text = term
+                .text
+                .strip_prefix(&prefix)
+                .ok_or_else(|| LedgerError::new("control setup: applicability prefix missing"))?
+                .to_owned();
+            Ok(())
+        }
+    );
+    typed!(
+        "economic effect applicability cannot be swapped across effects",
+        |source| {
+            let swapped = source
+                .constitutional_effects
+                .iter()
+                .find(|row| row.id == "FS-CCE-224")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CCE-224 missing"))?
+                .applicability
+                .clone();
+            let effect = source
+                .constitutional_effects
+                .iter_mut()
+                .find(|row| row.id == "FS-CCE-223")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CCE-223 missing"))?;
+            let prefix = format!("{} ", effect.applicability);
+            let term = effect
+                .contract_terms
+                .get_mut("evidence_rule")
+                .ok_or_else(|| LedgerError::new("control setup: evidence_rule missing"))?;
+            let suffix = term
+                .text
+                .strip_prefix(&prefix)
+                .ok_or_else(|| LedgerError::new("control setup: applicability prefix missing"))?;
+            term.text = format!("{swapped} {suffix}");
+            Ok(())
+        }
+    );
+    typed!(
+        "economic effect terms reject a bare identity tag",
+        |source| {
+            let effect = source
+                .constitutional_effects
+                .iter_mut()
+                .find(|row| row.id == "FS-CCE-223")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CCE-223 missing"))?;
+            let prefix = format!("{} ", effect.applicability);
+            let term = effect
+                .contract_terms
+                .get_mut("evidence_rule")
+                .ok_or_else(|| LedgerError::new("control setup: evidence_rule missing"))?;
+            let suffix = term
+                .text
+                .strip_prefix(&prefix)
+                .ok_or_else(|| LedgerError::new("control setup: applicability prefix missing"))?;
+            term.text = format!("For FS-CCE-223 (EconomicFormSuppression), {suffix}");
+            Ok(())
+        }
+    );
+    typed!(
+        "economic effect terms reject normalized duplicates",
+        |source| {
+            let effect = source
+                .constitutional_effects
+                .iter_mut()
+                .find(|row| row.id == "FS-CCE-223")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CCE-223 missing"))?;
+            let duplicate = effect
+                .contract_terms
+                .get("lawful_source")
+                .ok_or_else(|| LedgerError::new("control setup: lawful_source missing"))?
+                .text
+                .replacen("Only the", "Only  the", 1);
+            if duplicate
+                == effect
+                    .contract_terms
+                    .get("lawful_source")
+                    .expect("lawful_source checked above")
+                    .text
+            {
+                return Err(LedgerError::new(
+                    "control setup: lawful_source normalization token missing",
+                ));
+            }
+            effect
+                .contract_terms
+                .get_mut("trigger")
+                .ok_or_else(|| LedgerError::new("control setup: trigger missing"))?
+                .text = duplicate;
+            Ok(())
+        }
+    );
+    typed!(
+        "economic effect term suffixes cannot be invented",
+        |source| {
+            source
+                .constitutional_effects
+                .iter_mut()
+                .find(|row| row.id == "FS-CCE-224")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CCE-224 missing"))?
+                .contract_terms
+                .get_mut("evidence_rule")
+                .ok_or_else(|| LedgerError::new("control setup: evidence_rule missing"))?
+                .text
+                .push_str(" An invented extension follows.");
+            Ok(())
+        }
+    );
+    typed!(
+        "economic effect completion cannot weaken its evidence ceiling",
+        |source| {
+            source
+                .coverage_families
+                .iter_mut()
+                .find(|row| row.id == "FS-CVF-017")
+                .ok_or_else(|| LedgerError::new("control setup: FS-CVF-017 missing"))?
+                .blocked_before_drafting = "All economic effects are operationally assured.".into();
+            Ok(())
+        }
+    );
     typed!("formal statements are assigned exactly once", |source| {
         source.coverage_families[0].formal_statement_refs.pop();
         Ok(())
@@ -12771,6 +18117,9 @@ fn reader_population_lines(source: &LedgerDocument) -> LedgerResult<Vec<String>>
         keyed!(roles),
         unkeyed!(role_omissions),
         keyed!(powers),
+        unkeyed!(economic_power_rule_contracts),
+        unkeyed!(economic_carry_rule_contracts),
+        unkeyed!(economic_acceptance_cases),
         keyed!(power_contract_templates),
         keyed!(power_refusals),
         keyed!(power_crosswalk_dispositions),
@@ -12812,6 +18161,10 @@ fn bucket_cell(bucket: &DomainBucket) -> String {
             value.unresolved.public_claim_limitation
         ),
     }
+}
+
+fn markdown_table_cell(value: &str) -> String {
+    value.replace('|', "\\|").replace(['\n', '\r'], " ")
 }
 
 fn severity_class(defect: &Defect) -> LedgerResult<&str> {
@@ -13428,6 +18781,67 @@ fn render_report(
             row.counterfactual.status,
             row.book2_handoff
         );
+    }
+    w!();
+    w!("Economic non-power carry contracts:");
+    w!();
+    w!(
+        "| Carry | Current → result | Temporal / predecessor contract | Bounded interest / requirement |"
+    );
+    w!("| --- | --- | --- | --- |");
+    for row in &source.economic_carry_rule_contracts {
+        w!(
+            "| {} | `{}` → `{}` | `{}`; `{}` / `{}` / `{}` | `{}` @ `{}`; `{}` @ `{}` |",
+            row.carry_kind,
+            row.current_kind,
+            row.result_kind,
+            row.temporal_contract,
+            row.predecessor_record_scope,
+            row.predecessor_result_scope,
+            row.successor_event_scope,
+            row.interest.value,
+            row.interest.scope,
+            row.requirement.value,
+            row.requirement.scope
+        );
+    }
+    w!();
+    w!("### Reviewed §15 economic acceptance matrix");
+    w!();
+    w!(
+        "This is a digest-bound structural and executable mapping of the 24 reviewed acceptance cases. A TRUE or FALSE pin result establishes only the exact repository query under the current source and engine; it does not establish external truth, delivery, institutional operation, liveness, feasibility, reader comprehension, or any Book 2 model. Composite variants retain every separately owned support instead of treating one pin as proof of the whole assertion."
+    );
+    w!();
+    w!("| Case / reviewed source grain | Atomic variant | Exact owned executable supports |");
+    w!("| --- | --- | --- |");
+    for case in &source.economic_acceptance_cases {
+        for mapping in &case.mappings {
+            let supports = mapping
+                .supports
+                .iter()
+                .map(|support| {
+                    format!(
+                        "`{}:{}` {} — `{}` → `{}` = **{}**",
+                        support.owner_kind,
+                        support.owner_id,
+                        support.polarity,
+                        support.pin_ref,
+                        support.query,
+                        support.expected_result
+                    )
+                })
+                .collect::<Vec<_>>()
+                .join("<br>");
+            w!(
+                "| {} — {} | `{}` / `{}` — {} | {} |",
+                case.case_id,
+                markdown_table_cell(&case.source_needle),
+                mapping.variant_id,
+                mapping.mapping_id,
+                markdown_table_cell(&mapping.assertion),
+                markdown_table_cell(&supports)
+            );
+        }
     }
     w!();
     w!("Coverage-family drafting gate:");
@@ -14992,6 +20406,511 @@ mod tests {
         Context::from_test_root(PathBuf::from(env!("CARGO_MANIFEST_DIR")))
     }
 
+    fn reviewed_economic_carry_contracts() -> Vec<EconomicCarryRuleContract> {
+        let context = context();
+        let bytes = fs::read(context.path(SOURCE)).expect("reviewed ledger source");
+        let value = parse_json_no_duplicates(&bytes).expect("unique-key ledger JSON");
+        serde_json::from_value(
+            value
+                .get("economic_carry_rule_contracts")
+                .expect("economic carry contracts")
+                .clone(),
+        )
+        .expect("typed economic carry contracts")
+    }
+
+    fn reviewed_economic_acceptance_cases() -> Vec<EconomicAcceptanceCase> {
+        let context = context();
+        let bytes = fs::read(context.path(SOURCE)).expect("reviewed ledger source");
+        let value = parse_json_no_duplicates(&bytes).expect("unique-key ledger JSON");
+        serde_json::from_value(
+            value
+                .get("economic_acceptance_cases")
+                .expect("economic acceptance cases")
+                .clone(),
+        )
+        .expect("typed economic acceptance cases")
+    }
+
+    fn move_grounded_positive_block_before_first_negative(pin: &str, key: &str) -> String {
+        let mut lines = pin.lines().map(str::to_owned).collect::<Vec<_>>();
+        let positive_marker = format!(
+            "# {key} positive: the exact completed card and reviewed duty selection compose."
+        );
+        let positive_marker_index = lines
+            .iter()
+            .position(|line| line == &positive_marker)
+            .expect("positive duty marker");
+        let positive_block_start = lines[..positive_marker_index]
+            .iter()
+            .rposition(|line| line.starts_with("# => "))
+            .map_or(0, |index| index + 1);
+        let positive_block = lines
+            .drain(positive_block_start..positive_marker_index + 3)
+            .collect::<Vec<_>>();
+
+        let negative_marker = format!("# {key} negative:");
+        let negative_marker_index = lines
+            .iter()
+            .position(|line| line.starts_with(&negative_marker))
+            .expect("negative duty marker");
+        let negative_block_start = lines[..negative_marker_index]
+            .iter()
+            .rposition(|line| line.starts_with("# => "))
+            .map_or(0, |index| index + 1);
+        lines.splice(negative_block_start..negative_block_start, positive_block);
+
+        let mut mutant = lines.join("\n");
+        if pin.ends_with('\n') {
+            mutant.push('\n');
+        }
+        mutant
+    }
+
+    #[test]
+    fn grounded_economic_duty_pin_order_is_checker_owned() {
+        let grounded = ECONOMIC_DUTY_BRIDGES
+            .iter()
+            .filter(|spec| !spec.bearer.starts_with('$'))
+            .collect::<Vec<_>>();
+        assert_eq!(grounded.len(), 21);
+        assert_eq!(
+            grounded
+                .iter()
+                .map(|spec| spec.power)
+                .collect::<HashSet<_>>()
+                .len(),
+            19
+        );
+
+        let inputs = load_static_inputs(&context()).expect("static economic live pins");
+        validate_grounded_economic_duty_pin_order(&inputs)
+            .expect("grounded negative cases precede their positive assertion blocks");
+    }
+
+    #[test]
+    fn grounded_economic_duty_pin_order_rejects_a_reordered_positive_block() {
+        let path = "new-book-plans/economic-power-063.pins.nibli";
+        let mut inputs = load_static_inputs(&context()).expect("static economic live pins");
+        let pin = std::str::from_utf8(input_bytes(&inputs, path).expect("power 063 live pin"))
+            .expect("UTF-8 power 063 live pin")
+            .to_owned();
+        let mutant =
+            move_grounded_positive_block_before_first_negative(&pin, "knowledge-floor-access");
+        inputs.insert(path.to_owned(), mutant.into_bytes());
+
+        let error = validate_grounded_economic_duty_pin_order(&inputs)
+            .expect_err("a positive fixture before its matching negatives must fail");
+        let message = error.to_string();
+        assert!(message.contains(path));
+        assert!(message.contains("knowledge-floor-access"));
+        assert!(message.contains("must precede the matching positive assertion block"));
+    }
+
+    #[test]
+    fn grounded_economic_duty_pin_order_rejects_an_unmarked_duplicate_query() {
+        let path = "new-book-plans/economic-power-063.pins.nibli";
+        let mut inputs = load_static_inputs(&context()).expect("static economic live pins");
+        let pin = std::str::from_utf8(input_bytes(&inputs, path).expect("power 063 live pin"))
+            .expect("UTF-8 power 063 live pin")
+            .to_owned();
+        let spec = ECONOMIC_DUTY_BRIDGES
+            .iter()
+            .find(|spec| spec.key == "knowledge-floor-access")
+            .expect("knowledge floor duty bridge");
+        let query = format!(
+            "? obliged({}, {}, {}).",
+            spec.bearer, spec.duty, spec.standard
+        );
+        let mutant = pin.replacen(&query, &format!("{query}\n{query}"), 1);
+        assert_ne!(mutant, pin);
+        inputs.insert(path.to_owned(), mutant.into_bytes());
+
+        let error = validate_grounded_economic_duty_pin_order(&inputs)
+            .expect_err("an unmarked duplicate grounded query must fail");
+        let message = error.to_string();
+        assert!(message.contains(path));
+        assert!(message.contains("knowledge-floor-access"));
+        assert!(message.contains("duplicate or unmarked queries are forbidden"));
+    }
+
+    #[test]
+    fn economic_power_088_dependency_links_are_checker_owned() {
+        let inputs = load_static_inputs(&context()).expect("static economic live pins");
+        validate_economic_power_088_dependency_links(&inputs)
+            .expect("live and counterfactual P088 links target matching For088 producers");
+    }
+
+    #[test]
+    fn economic_power_088_dependency_links_reject_stale_nested_targets() {
+        let path = "new-book-plans/economic-power-088.pins.nibli";
+        let mut inputs = load_static_inputs(&context()).expect("static economic live pins");
+        let pin = std::str::from_utf8(input_bytes(&inputs, path).expect("power 088 live pin"))
+            .expect("UTF-8 power 088 live pin")
+            .to_owned();
+
+        for (current, stale) in [
+            (
+                "EconResult086For088Live, EconomicDependencyResultScope_087_086",
+                "EconResult086For087Live, EconomicDependencyResultScope_087_086",
+            ),
+            (
+                "EconRecord086For088Live, EconomicDependencyRecordScope_087_086",
+                "EconRecord086For087Live, EconomicDependencyRecordScope_087_086",
+            ),
+        ] {
+            let mutant = pin.replacen(current, stale, 1);
+            assert_ne!(mutant, pin, "watched dependency target must exist");
+            inputs.insert(path.to_owned(), mutant.into_bytes());
+
+            let error = validate_economic_power_088_dependency_links(&inputs)
+                .expect_err("a stale For087 prerequisite target must fail");
+            let message = error.to_string();
+            assert!(message.contains(path));
+            assert!(message.contains(stale.split(',').next().expect("stale target")));
+            assert!(message.contains("matching For088 prerequisite producer"));
+        }
+    }
+
+    #[test]
+    fn economic_power_088_counterfactual_rejects_stale_nested_targets() {
+        let path =
+            "new-book-plans/counterfactual/no-economic-independent-current-review-088.pins.nibli";
+        let mut inputs = load_static_inputs(&context()).expect("static economic pins");
+        let pin =
+            std::str::from_utf8(input_bytes(&inputs, path).expect("power 088 counterfactual"))
+                .expect("UTF-8 power 088 counterfactual")
+                .to_owned();
+        let mutant = pin.replacen(
+            "EconResult086For088Counterfactual, EconomicDependencyResultScope_087_086",
+            "EconResult086For087Counterfactual, EconomicDependencyResultScope_087_086",
+            1,
+        );
+        assert_ne!(mutant, pin, "watched counterfactual target must exist");
+        inputs.insert(path.to_owned(), mutant.into_bytes());
+
+        let error = validate_economic_power_088_dependency_links(&inputs)
+            .expect_err("a stale counterfactual For087 prerequisite target must fail");
+        let message = error.to_string();
+        assert!(message.contains(path));
+        assert!(message.contains("matching For088 prerequisite link"));
+    }
+
+    #[test]
+    fn economic_power_088_counterfactual_rejects_a_private_tier_token() {
+        let path =
+            "new-book-plans/counterfactual/no-economic-independent-current-review-088.pins.nibli";
+        let mut inputs = load_static_inputs(&context()).expect("static economic pins");
+        let pin =
+            std::str::from_utf8(input_bytes(&inputs, path).expect("power 088 counterfactual"))
+                .expect("UTF-8 power 088 counterfactual")
+                .to_owned();
+        let mutant = pin.replacen(
+            "EconSource088Counterfactual, EconRecord088Counterfactual, CommonTier, GovernmentTierScope",
+            "EconSource088Counterfactual, EconRecord088Counterfactual, EconTier088Counterfactual, GovernmentTierScope",
+            1,
+        );
+        assert_ne!(mutant, pin, "watched counterfactual tier must exist");
+        inputs.insert(path.to_owned(), mutant.into_bytes());
+
+        let error = validate_economic_power_088_dependency_links(&inputs)
+            .expect_err("a private counterfactual tier token must fail");
+        let message = error.to_string();
+        assert!(message.contains(path));
+        assert!(message.contains("shared payment chain to CommonTier"));
+    }
+
+    #[test]
+    fn economic_acceptance_cases_are_structurally_owner_bound() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let inputs = load_static_inputs(&context).expect("static acceptance inputs");
+        validate_economic_acceptance_cases(&loaded.source, &inputs)
+            .expect("reviewed acceptance cases and owner evidence");
+        assert_eq!(
+            typed_fingerprint(
+                &loaded.source.economic_acceptance_cases,
+                "economic acceptance cases"
+            )
+            .expect("acceptance fingerprint"),
+            EXPECTED_ECONOMIC_ACCEPTANCE_CASES_SHA256
+        );
+    }
+
+    #[test]
+    fn economic_acceptance_power_fixture_semantics_are_checker_owned() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let inputs = load_static_inputs(&context).expect("static acceptance inputs");
+        for number in 61..=88 {
+            let contract = loaded
+                .source
+                .economic_power_rule_contracts
+                .iter()
+                .find(|row| row.power_ref == format!("FS-POW-{number:03}"))
+                .expect("economic power contract");
+            validate_economic_missing_requirement_fixture(
+                &inputs,
+                &format!("new-book-plans/economic-power-{number:03}.pins.nibli"),
+                number,
+                contract
+                    .requirements
+                    .first()
+                    .expect("card-specific requirement"),
+                &format!("FS-POW-{number:03} missing requirement"),
+            )
+            .expect("missing requirement differs only by its exact required observations");
+            validate_economic_expired_selection_fixture(
+                &inputs,
+                &format!("new-book-plans/economic-power-{number:03}.pins.nibli"),
+                number,
+                &format!("FS-POW-{number:03} expired selection"),
+            )
+            .expect("expired selection differs only in its supplied currentness");
+        }
+        validate_economic_classified_acceptance_fixture(
+            &inputs,
+            "new-book-plans/economic-power-072.pins.nibli",
+            72,
+            "AcceptanceAntiConcentrationTax",
+            "EconTaxInstrument",
+            "AntiConcentrationTaxInstrument",
+            "FS-POW-072 acceptance classification",
+        )
+        .expect("anti-concentration tax differs only in its supplied instrument classification");
+        validate_economic_classified_acceptance_fixture(
+            &inputs,
+            "new-book-plans/economic-power-085.pins.nibli",
+            85,
+            "AcceptanceLuxuryCollection",
+            "EconCollection",
+            "ParticularNonFloorLuxuryAssetCollection",
+            "FS-POW-085 acceptance classification",
+        )
+        .expect("luxury collection differs only in its supplied collection classification");
+    }
+
+    fn assert_economic_acceptance_digest_changed(
+        mutant: &Vec<EconomicAcceptanceCase>,
+        context: &str,
+    ) {
+        assert_ne!(
+            typed_fingerprint(mutant, context).expect("mutant acceptance fingerprint"),
+            EXPECTED_ECONOMIC_ACCEPTANCE_CASES_SHA256,
+            "acceptance mutation escaped its typed digest: {context}"
+        );
+    }
+
+    #[test]
+    fn economic_acceptance_digest_watches_every_required_field_and_omission() {
+        let cases = reviewed_economic_acceptance_cases();
+        assert_eq!(
+            typed_fingerprint(&cases, "reviewed acceptance cases").expect("acceptance digest"),
+            EXPECTED_ECONOMIC_ACCEPTANCE_CASES_SHA256
+        );
+        let mut controls = 0_usize;
+        for case_index in 0..cases.len() {
+            let mut mutant = cases.clone();
+            mutant.remove(case_index);
+            assert_economic_acceptance_digest_changed(&mutant, "case omission");
+            controls += 1;
+
+            for field in 0..2 {
+                let mut mutant = cases.clone();
+                match field {
+                    0 => mutant[case_index].case_id.push_str("Mutation"),
+                    1 => mutant[case_index].source_needle.push_str(" mutation"),
+                    _ => unreachable!(),
+                }
+                assert_economic_acceptance_digest_changed(&mutant, "case field mutation");
+                controls += 1;
+            }
+
+            for mapping_index in 0..cases[case_index].mappings.len() {
+                let mut mutant = cases.clone();
+                mutant[case_index].mappings.remove(mapping_index);
+                assert_economic_acceptance_digest_changed(&mutant, "mapping omission");
+                controls += 1;
+
+                for field in 0..3 {
+                    let mut mutant = cases.clone();
+                    let mapping = &mut mutant[case_index].mappings[mapping_index];
+                    match field {
+                        0 => mapping.variant_id.push_str("Mutation"),
+                        1 => mapping.mapping_id.push_str("Mutation"),
+                        2 => mapping.assertion.push_str(" mutation"),
+                        _ => unreachable!(),
+                    }
+                    assert_economic_acceptance_digest_changed(&mutant, "mapping field mutation");
+                    controls += 1;
+                }
+
+                for support_index in 0..cases[case_index].mappings[mapping_index].supports.len() {
+                    let mut mutant = cases.clone();
+                    mutant[case_index].mappings[mapping_index]
+                        .supports
+                        .remove(support_index);
+                    assert_economic_acceptance_digest_changed(&mutant, "support omission");
+                    controls += 1;
+
+                    for field in 0..6 {
+                        let mut mutant = cases.clone();
+                        let support =
+                            &mut mutant[case_index].mappings[mapping_index].supports[support_index];
+                        match field {
+                            0 => support.owner_kind.push_str("Mutation"),
+                            1 => support.owner_id.push_str("Mutation"),
+                            2 => support.polarity.push_str("Mutation"),
+                            3 => support.pin_ref.push_str("Mutation"),
+                            4 => support.query.push_str("Mutation"),
+                            5 => support.expected_result.push_str("Mutation"),
+                            _ => unreachable!(),
+                        }
+                        assert_economic_acceptance_digest_changed(
+                            &mutant,
+                            "support field mutation",
+                        );
+                        controls += 1;
+                    }
+
+                    for formal_index in 0..cases[case_index].mappings[mapping_index].supports
+                        [support_index]
+                        .formal_refs
+                        .len()
+                    {
+                        let mut mutant = cases.clone();
+                        mutant[case_index].mappings[mapping_index].supports[support_index]
+                            .formal_refs
+                            .remove(formal_index);
+                        assert_economic_acceptance_digest_changed(
+                            &mutant,
+                            "formal reference omission",
+                        );
+                        controls += 1;
+
+                        let mut mutant = cases.clone();
+                        mutant[case_index].mappings[mapping_index].supports[support_index]
+                            .formal_refs[formal_index]
+                            .push_str("Mutation");
+                        assert_economic_acceptance_digest_changed(
+                            &mutant,
+                            "formal reference mutation",
+                        );
+                        controls += 1;
+                    }
+                }
+            }
+        }
+        assert_eq!(controls, 3_636);
+    }
+
+    #[test]
+    fn economic_acceptance_owner_evidence_rejects_every_cross_owner_substitution() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let inputs = load_static_inputs(&context).expect("static acceptance inputs");
+        let family = loaded
+            .source
+            .coverage_families
+            .iter()
+            .find(|row| row.id == "FS-CVF-006")
+            .expect("economic coverage family");
+        let supports = loaded
+            .source
+            .economic_acceptance_cases
+            .iter()
+            .flat_map(|case| &case.mappings)
+            .flat_map(|mapping| &mapping.supports)
+            .collect::<Vec<_>>();
+        assert_eq!(supports.len(), 320);
+        let mut controls = 0_usize;
+        for (index, support) in supports.iter().enumerate() {
+            let donor = supports
+                .iter()
+                .copied()
+                .find(|candidate| {
+                    candidate.owner_kind == support.owner_kind
+                        && candidate.owner_id != support.owner_id
+                })
+                .unwrap_or_else(|| {
+                    panic!(
+                        "{} needs a distinct same-kind substitution donor",
+                        support.owner_kind
+                    )
+                });
+            let formal_needles = support
+                .formal_refs
+                .iter()
+                .map(|reference| {
+                    economic_reference_parts(reference, "owner substitution formal ref")
+                        .expect("formal reference")
+                        .1
+                })
+                .collect::<Vec<_>>();
+            let pin_path =
+                economic_reference_parts(&support.pin_ref, "owner substitution pin reference")
+                    .expect("pin reference")
+                    .0;
+            let mut owner_substitution = (*support).clone();
+            owner_substitution.owner_id.clone_from(&donor.owner_id);
+            assert!(
+                validate_economic_acceptance_owner(
+                    &loaded.source,
+                    &inputs,
+                    family,
+                    &owner_substitution,
+                    &formal_needles,
+                    pin_path,
+                    &format!("owner substitution {index}"),
+                )
+                .is_err(),
+                "support {index} accepted another owner's ID"
+            );
+            controls += 1;
+
+            let mut evidence_substitution = (*support).clone();
+            evidence_substitution.polarity.clone_from(&donor.polarity);
+            evidence_substitution
+                .formal_refs
+                .clone_from(&donor.formal_refs);
+            evidence_substitution.pin_ref.clone_from(&donor.pin_ref);
+            evidence_substitution.query.clone_from(&donor.query);
+            evidence_substitution
+                .expected_result
+                .clone_from(&donor.expected_result);
+            let donor_pin_path = validate_economic_acceptance_pin(
+                &inputs,
+                &evidence_substitution,
+                &format!("evidence substitution {index}"),
+            )
+            .expect("donor evidence remains an exact pin tuple");
+            let donor_formal_needles = evidence_substitution
+                .formal_refs
+                .iter()
+                .map(|reference| {
+                    economic_reference_parts(reference, "evidence substitution formal ref")
+                        .expect("formal reference")
+                        .1
+                })
+                .collect::<Vec<_>>();
+            assert!(
+                validate_economic_acceptance_owner(
+                    &loaded.source,
+                    &inputs,
+                    family,
+                    &evidence_substitution,
+                    &donor_formal_needles,
+                    donor_pin_path,
+                    &format!("evidence substitution {index}"),
+                )
+                .is_err(),
+                "support {index} accepted another owner's formal/pin/query tuple"
+            );
+            controls += 1;
+        }
+        assert_eq!(controls, 640);
+    }
+
     #[test]
     fn current_source_deserializes_into_the_typed_contract() {
         let context = context();
@@ -15179,6 +21098,42 @@ mod tests {
     }
 
     #[test]
+    fn review_history_projection_knows_current_economic_roots() {
+        let context = context();
+        let bytes = fs::read(context.path(SOURCE)).expect("reviewed ledger source");
+        let current: ReviewHistoryProjection =
+            serde_json::from_slice(&bytes).expect("current review-history projection");
+        assert!(current.economic_power_rule_contracts.is_some());
+        assert!(current.economic_carry_rule_contracts.is_some());
+        assert!(current.economic_acceptance_cases.is_some());
+
+        for root in [
+            "economic_power_rule_contracts",
+            "economic_carry_rule_contracts",
+            "economic_acceptance_cases",
+        ] {
+            let mut historical: Value =
+                serde_json::from_slice(&bytes).expect("reviewed ledger JSON");
+            historical
+                .as_object_mut()
+                .expect("ledger object")
+                .remove(root);
+            serde_json::from_value::<ReviewHistoryProjection>(historical)
+                .expect("historical review projection may predate economic roots");
+        }
+
+        let mut unknown: Value = serde_json::from_slice(&bytes).expect("reviewed ledger JSON");
+        unknown
+            .as_object_mut()
+            .expect("ledger object")
+            .insert("unexpected_review_history_root".to_owned(), true.into());
+        let error = serde_json::from_value::<ReviewHistoryProjection>(unknown)
+            .err()
+            .expect("unknown review-history root must fail");
+        assert!(error.to_string().contains("unexpected_review_history_root"));
+    }
+
+    #[test]
     fn loaded_ledger_retains_every_consumed_input_for_a_final_rehash() {
         let ledger = load_and_validate(&context()).expect("validated ledger");
         ledger
@@ -15329,6 +21284,584 @@ mod tests {
     }
 
     #[test]
+    fn democratic_policy_boundary_requires_its_exact_term_key_set() {
+        let term = Term {
+            text: "Reviewed boundary term".into(),
+            basis: "constitutional-source".into(),
+            source_refs: vec!["new-book-plans/constitution.nibli::source".into()],
+            choice_owner: None,
+            bounds: None,
+            failure_default: None,
+        };
+        let boundary = DEMOCRATIC_POLICY_BOUNDARY_TERM_KEYS
+            .into_iter()
+            .map(|key| (key.to_owned(), term.clone()))
+            .collect();
+        let mut profiles = ProfileTerms::from([("democratic-policy-boundary".into(), boundary)]);
+
+        validate_constitutional_effect_profile_terms(&profiles, "FS-CCE-TEST.profile_terms")
+            .expect("the exact key set must pass");
+
+        profiles
+            .get_mut("democratic-policy-boundary")
+            .expect("boundary profile")
+            .remove("review");
+        let error =
+            validate_constitutional_effect_profile_terms(&profiles, "FS-CCE-TEST.profile_terms")
+                .expect_err("a missing key must fail");
+        assert!(error.to_string().contains("must contain exactly"));
+
+        profiles
+            .get_mut("democratic-policy-boundary")
+            .expect("boundary profile")
+            .insert("review".into(), term.clone());
+        profiles
+            .get_mut("democratic-policy-boundary")
+            .expect("boundary profile")
+            .insert("unexpected".into(), term);
+        let error =
+            validate_constitutional_effect_profile_terms(&profiles, "FS-CCE-TEST.profile_terms")
+                .expect_err("an extra key must fail");
+        assert!(error.to_string().contains("must contain exactly"));
+    }
+
+    #[test]
+    fn economic_carry_contract_fields_are_checker_owned() {
+        let contracts = reviewed_economic_carry_contracts();
+        validate_economic_carry_rule_contract_rows(&contracts)
+            .expect("reviewed economic carry contracts");
+        let mut controls = 0_usize;
+        for index in 0..contracts.len() {
+            for field in 0..18 {
+                let mut mutant = contracts.clone();
+                let row = &mut mutant[index];
+                match field {
+                    0 => row.carry_kind.push_str("Mutation"),
+                    1 => row.record_kind.push_str("Mutation"),
+                    2 => row.temporal_contract.push_str("Mutation"),
+                    3 => row.current_kind.push_str("Mutation"),
+                    4 => row.current_selection.push_str("Mutation"),
+                    5 => row.result_kind.push_str("Mutation"),
+                    6 => row.branch.push_str("Mutation"),
+                    7 => row.finding_kind.push_str("Mutation"),
+                    8 => row.jurisdiction_kind.push_str("Mutation"),
+                    9 => row.legal_scope_kind.push_str("Mutation"),
+                    10 => row.interest.name.push_str("Mutation"),
+                    11 => row.interest.value.push_str("Mutation"),
+                    12 => row.interest.scope.push_str("Mutation"),
+                    13 => row.requirement.value.push_str("Mutation"),
+                    14 => row.requirement.scope.push_str("Mutation"),
+                    15 => row.predecessor_record_scope.push_str("Mutation"),
+                    16 => row.predecessor_result_scope.push_str("Mutation"),
+                    17 => row.successor_event_scope.push_str("Mutation"),
+                    _ => unreachable!(),
+                }
+                assert!(
+                    validate_economic_carry_rule_contract_rows(&mutant).is_err(),
+                    "carry row {index} field {field} escaped checker policy"
+                );
+                controls += 1;
+            }
+        }
+        assert_eq!(controls, 54);
+    }
+
+    #[test]
+    fn economic_carry_rule_atoms_are_watched_exhaustively() {
+        let contracts = reviewed_economic_carry_contracts();
+        validate_economic_carry_rule_contract_rows(&contracts)
+            .expect("reviewed economic carry contracts");
+        let context = context();
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        let block = economic_block(&constitution).expect("economic block");
+        let lines = block.lines().collect::<Vec<_>>();
+        validate_economic_carry_rules(&lines, &contracts).expect("economic carry surface");
+        let mut controls = 0_usize;
+        for contract in &contracts {
+            let marker = format!("# economic-carry-{}: ", contract.carry_kind);
+            let marker_index = economic_unique_marker_index(&lines, &marker).expect("carry marker");
+            for (statement, expected) in [
+                (
+                    lines[marker_index + 1],
+                    economic_carry_current_atoms(contract).expect("current atoms"),
+                ),
+                (
+                    lines[marker_index + 2],
+                    economic_carry_result_atoms(contract).expect("result atoms"),
+                ),
+            ] {
+                let rule = parse_economic_rule(statement).expect("carry rule");
+                validate_economic_exact_body(&rule, &expected, "baseline carry rule")
+                    .expect("exact carry body");
+                for atom in &expected {
+                    let mut omission = EconomicRule {
+                        body: rule.body.clone(),
+                        head: rule.head,
+                    };
+                    assert!(omission.body.remove(atom.as_str()), "{atom}");
+                    assert!(
+                        validate_economic_exact_body(&omission, &expected, "carry omission")
+                            .is_err(),
+                        "carry omission escaped: {atom}"
+                    );
+                    controls += 1;
+
+                    let mut substitution = EconomicRule {
+                        body: rule.body.clone(),
+                        head: rule.head,
+                    };
+                    assert!(substitution.body.remove(atom.as_str()), "{atom}");
+                    substitution
+                        .body
+                        .insert("~contradict($mutation, EconomicMutationBinding)");
+                    assert!(
+                        validate_economic_exact_body(
+                            &substitution,
+                            &expected,
+                            "carry substitution",
+                        )
+                        .is_err(),
+                        "carry substitution escaped: {atom}"
+                    );
+                    controls += 1;
+                }
+            }
+        }
+        assert_eq!(controls, 4_008);
+    }
+
+    #[test]
+    fn economic_power_rule_surface_matches_reviewed_contracts() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let family = loaded
+            .source
+            .coverage_families
+            .iter()
+            .find(|row| row.id == "FS-CVF-006")
+            .expect("economic coverage family");
+        validate_economic_rule_contract_rows(
+            &loaded.source.economic_power_rule_contracts,
+            &family.card_refs,
+        )
+        .expect("reviewed economic rule contracts");
+        assert_eq!(
+            typed_fingerprint(
+                &loaded.source.economic_power_rule_contracts,
+                "economic power rule contracts",
+            )
+            .expect("economic contract fingerprint"),
+            "7a8f4297c0ee6c64fe8580a3d61970f0ad4b280da41566eaf3f2ba020680d19a"
+        );
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        validate_economic_power_rule_surface(
+            constitution.as_bytes(),
+            &loaded.source.economic_power_rule_contracts,
+            &loaded.source.economic_carry_rule_contracts,
+        )
+        .expect("economic rule surface");
+    }
+
+    #[test]
+    fn economic_power_duty_bridge_atom_mutations_are_watched() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        let block = economic_block(&constitution).expect("economic block");
+        let lines = block.lines().collect::<Vec<_>>();
+        let mut omissions = 0_usize;
+        let mut substitutions = 0_usize;
+        let mut head_controls = 0_usize;
+        for spec in &ECONOMIC_DUTY_BRIDGES {
+            let marker = format!(
+                "# economic-duty-{}: {} / {} / FS-POW-{:03}",
+                spec.key, spec.duty, spec.standard, spec.power
+            );
+            let index = economic_unique_marker_index(&lines, &marker).expect("duty marker");
+            let rule = parse_economic_rule(lines[index + 1]).expect("duty rule");
+            let contract = economic_contract_by_number(
+                &loaded.source.economic_power_rule_contracts,
+                spec.power,
+            )
+            .expect("duty power contract");
+            let expected = economic_duty_expected_atoms(spec, contract).expect("duty atoms");
+            validate_economic_duty_bridge_rule(spec, contract, &rule)
+                .expect("unmodified duty bridge");
+            for atom in expected {
+                let mut mutant = EconomicRule {
+                    body: rule.body.clone(),
+                    head: rule.head,
+                };
+                assert!(mutant.body.remove(atom.as_str()), "{}: {atom}", spec.key);
+                assert!(
+                    validate_economic_duty_bridge_rule(spec, contract, &mutant).is_err(),
+                    "{} did not watch {atom}",
+                    spec.key
+                );
+                omissions += 1;
+
+                let dollar = atom.find('$').expect("checker-owned duty atom variable");
+                let substitute = format!("{}$mutated_{}", &atom[..dollar], &atom[dollar + 1..]);
+                let mut mutant = EconomicRule {
+                    body: rule.body.clone(),
+                    head: rule.head,
+                };
+                assert!(mutant.body.remove(atom.as_str()), "{}: {atom}", spec.key);
+                assert!(mutant.body.insert(substitute.as_str()), "{substitute}");
+                assert!(
+                    validate_economic_duty_bridge_rule(spec, contract, &mutant).is_err(),
+                    "{} admitted substitution {substitute} for {atom}",
+                    spec.key
+                );
+                substitutions += 1;
+            }
+            let mutant = EconomicRule {
+                body: rule.body.clone(),
+                head: "obliged($bearer, $duty, $standard)",
+            };
+            assert!(
+                validate_economic_duty_bridge_rule(spec, contract, &mutant).is_err(),
+                "{} did not watch its exact head",
+                spec.key
+            );
+            head_controls += 1;
+        }
+        assert_eq!(omissions, 10_488);
+        assert_eq!(substitutions, 10_488);
+        assert_eq!(head_controls, 31);
+    }
+
+    #[test]
+    fn economic_dependency_join_atom_mutations_are_watched() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let contracts = &loaded.source.economic_power_rule_contracts;
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        let block = economic_block(&constitution).expect("economic block");
+        let lines = block.lines().collect::<Vec<_>>();
+        let mut omissions = 0_usize;
+        let mut substitutions = 0_usize;
+        for contract in contracts {
+            let number = economic_power_number(&contract.power_ref).expect("power number");
+            let marker = format!("# {}: ", contract.power_ref);
+            let index = economic_unique_marker_index(&lines, &marker).expect("card marker");
+            let rule = parse_economic_rule(lines[index + 2]).expect("result rule");
+            let expected = economic_expected_dependency_atoms(contracts, contract, number)
+                .expect("dependency atoms");
+            validate_economic_dependency_joins(contracts, contract, &rule, number)
+                .expect("unmodified dependency joins");
+            for atom in expected {
+                let mut mutant = EconomicRule {
+                    body: rule.body.clone(),
+                    head: rule.head,
+                };
+                assert!(
+                    mutant.body.remove(atom.as_str()),
+                    "{}: {atom}",
+                    contract.power_ref
+                );
+                assert!(
+                    validate_economic_dependency_joins(contracts, contract, &mutant, number)
+                        .is_err(),
+                    "{} did not watch {atom}",
+                    contract.power_ref
+                );
+                omissions += 1;
+
+                let dollar = atom
+                    .find('$')
+                    .expect("checker-owned dependency atom variable");
+                let substitute = format!("{}$mutated_{}", &atom[..dollar], &atom[dollar + 1..]);
+                let mut mutant = EconomicRule {
+                    body: rule.body.clone(),
+                    head: rule.head,
+                };
+                assert!(
+                    mutant.body.remove(atom.as_str()),
+                    "{}: {atom}",
+                    contract.power_ref
+                );
+                assert!(mutant.body.insert(substitute.as_str()), "{substitute}");
+                assert!(
+                    validate_economic_dependency_joins(contracts, contract, &mutant, number)
+                        .is_err(),
+                    "{} admitted substitution {substitute} for {atom}",
+                    contract.power_ref
+                );
+                substitutions += 1;
+            }
+        }
+        assert_eq!(
+            ECONOMIC_DEPENDENCIES
+                .iter()
+                .filter(|spec| spec.card == 71)
+                .count(),
+            2,
+            "FS-POW-071 must retain both independent economic dependencies"
+        );
+        assert_eq!(
+            ECONOMIC_DEPENDENCIES
+                .iter()
+                .filter(|spec| spec.card == 88)
+                .count(),
+            1,
+            "FS-POW-088 must retain its settlement-backbone dependency"
+        );
+        assert_eq!(
+            STATE_DEPENDENCIES
+                .iter()
+                .filter(|spec| spec.card == 88)
+                .count(),
+            1,
+            "FS-POW-088 must independently retain its ordinary-law dependency"
+        );
+        assert_eq!(omissions, 645);
+        assert_eq!(substitutions, 645);
+    }
+
+    #[test]
+    fn economic_alternate_origin_selection_mutations_are_watched() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        let block = economic_block(&constitution).expect("economic block");
+        let lines = block.lines().collect::<Vec<_>>();
+        let mut controls = 0_usize;
+        for contract in &loaded.source.economic_power_rule_contracts {
+            let number = economic_power_number(&contract.power_ref).expect("power number");
+            let alternate_duty =
+                economic_alternate_review_duty(number).expect("alternate duty constant");
+            let alternate_standard =
+                "CertifiedUnavailabilityNoSilenceNoExtensionAndSourceBoundEndStandard";
+            for (route, unavailable_reviewer, alternate_reviewer, alternate_scope) in
+                ECONOMIC_ALTERNATE_REVIEW_ROUTES
+            {
+                let marker = format!("# alternate-review-{number:03}-{route}: ");
+                let index =
+                    economic_unique_marker_index(&lines, &marker).expect("alternate marker");
+                let rule = parse_economic_rule(lines[index + 1]).expect("alternate rule");
+                validate_economic_alternate_review_rule(
+                    &rule,
+                    number,
+                    route,
+                    unavailable_reviewer,
+                    alternate_reviewer,
+                    alternate_scope,
+                )
+                .expect("unmodified alternate rule");
+                for actor in ["$source", "$evidence", "$review"] {
+                    for (value, scope) in [
+                        (alternate_reviewer, "DutyBearerScope"),
+                        (alternate_duty.as_str(), "DutyScope"),
+                        (alternate_standard, "DutyStandardScope"),
+                    ] {
+                        let atom = format!("observe({actor}, $origin, {value}, {scope})");
+                        let mut mutant = EconomicRule {
+                            body: rule.body.clone(),
+                            head: rule.head,
+                        };
+                        assert!(mutant.body.remove(atom.as_str()), "{marker}: {atom}");
+                        assert!(
+                            validate_economic_alternate_review_rule(
+                                &mutant,
+                                number,
+                                route,
+                                unavailable_reviewer,
+                                alternate_reviewer,
+                                alternate_scope,
+                            )
+                            .is_err(),
+                            "{marker} did not watch {atom}"
+                        );
+                        controls += 1;
+                    }
+                    for (value, scope) in [
+                        ("$alternate_reviewer", "DutyBearerScope"),
+                        ("$duty", "DutyScope"),
+                        ("$standard", "DutyStandardScope"),
+                    ] {
+                        let atom = format!("observe({actor}, $origin, {value}, {scope})");
+                        let mut mutant = EconomicRule {
+                            body: rule.body.clone(),
+                            head: rule.head,
+                        };
+                        assert!(mutant.body.insert(atom.as_str()), "{marker}: {atom}");
+                        assert!(
+                            validate_economic_alternate_review_rule(
+                                &mutant,
+                                number,
+                                route,
+                                unavailable_reviewer,
+                                alternate_reviewer,
+                                alternate_scope,
+                            )
+                            .is_err(),
+                            "{marker} admitted generic origin selection {atom}"
+                        );
+                        controls += 1;
+                    }
+                }
+                let mutant = EconomicRule {
+                    body: rule.body.clone(),
+                    head: "obliged($alternate_reviewer, $duty, $standard)",
+                };
+                assert!(
+                    validate_economic_alternate_review_rule(
+                        &mutant,
+                        number,
+                        route,
+                        unavailable_reviewer,
+                        alternate_reviewer,
+                        alternate_scope,
+                    )
+                    .is_err(),
+                    "{marker} did not watch its exact head"
+                );
+                controls += 1;
+            }
+        }
+        assert_eq!(controls, 2_660);
+    }
+
+    #[test]
+    fn economic_power_rule_field_and_requirement_omissions_are_watched() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        let block = economic_block(&constitution).expect("economic block");
+        let lines = block.lines().collect::<Vec<_>>();
+        let mut controls = 0_usize;
+        for contract in &loaded.source.economic_power_rule_contracts {
+            let number = economic_power_number(&contract.power_ref).expect("power number");
+            let marker = format!("# {}: ", contract.power_ref);
+            let index = economic_unique_marker_index(&lines, &marker).expect("card marker");
+            let current = parse_economic_rule(lines[index + 1]).expect("current rule");
+            let result = parse_economic_rule(lines[index + 2]).expect("result rule");
+            for (actor, subject) in [
+                ("$source", "$record"),
+                ("$record_review", "$record"),
+                ("$temporal", "$temporal_record"),
+                ("$temporal_review", "$temporal_record"),
+            ] {
+                for (_, value, scope) in economic_field_pairs(contract) {
+                    let atom = format!("observe({actor}, {subject}, {value}, {scope})");
+                    let mut mutant = EconomicRule {
+                        body: current.body.clone(),
+                        head: current.head,
+                    };
+                    assert!(mutant.body.remove(atom.as_str()), "{atom}");
+                    assert!(
+                        validate_economic_current_rule(contract, &mutant, number).is_err(),
+                        "{} current rule did not watch {atom}",
+                        contract.power_ref
+                    );
+                    controls += 1;
+
+                    let mut mutant = EconomicRule {
+                        body: result.body.clone(),
+                        head: result.head,
+                    };
+                    assert!(mutant.body.remove(atom.as_str()), "{atom}");
+                    assert!(
+                        validate_economic_result_rule(
+                            &loaded.source.economic_power_rule_contracts,
+                            contract,
+                            &mutant,
+                            number,
+                        )
+                        .is_err(),
+                        "{} result rule did not watch {atom}",
+                        contract.power_ref
+                    );
+                    controls += 1;
+                }
+            }
+            for actor in ["$source", "$evidence", "$review"] {
+                for (_, value, scope) in economic_field_pairs(contract) {
+                    let atom = format!("observe({actor}, $result, {value}, {scope})");
+                    let mut mutant = EconomicRule {
+                        body: result.body.clone(),
+                        head: result.head,
+                    };
+                    assert!(mutant.body.remove(atom.as_str()), "{atom}");
+                    assert!(
+                        validate_economic_result_rule(
+                            &loaded.source.economic_power_rule_contracts,
+                            contract,
+                            &mutant,
+                            number,
+                        )
+                        .is_err(),
+                        "{} result rule did not watch {atom}",
+                        contract.power_ref
+                    );
+                    controls += 1;
+                }
+                for (value, scope) in economic_requirement_pairs(contract) {
+                    let atom = format!("observe({actor}, $result, {value}, {scope})");
+                    let mut mutant = EconomicRule {
+                        body: result.body.clone(),
+                        head: result.head,
+                    };
+                    assert!(mutant.body.remove(atom.as_str()), "{atom}");
+                    assert!(
+                        validate_economic_result_rule(
+                            &loaded.source.economic_power_rule_contracts,
+                            contract,
+                            &mutant,
+                            number,
+                        )
+                        .is_err(),
+                        "{} result rule did not watch {atom}",
+                        contract.power_ref
+                    );
+                    controls += 1;
+                }
+            }
+        }
+        assert_eq!(controls, 6_036);
+    }
+
+    #[test]
+    fn economic_alternate_review_cannot_complete_a_power() {
+        let context = context();
+        let loaded = load_source(&context).expect("typed ledger source");
+        let constitution = context
+            .read("new-book-plans/constitution.nibli")
+            .expect("constitution");
+        let block = economic_block(&constitution).expect("economic block");
+        let lines = block.lines().collect::<Vec<_>>();
+        let marker = "# alternate-review-061-record-review: ";
+        let index = economic_unique_marker_index(&lines, marker).expect("alternate marker");
+        let statement = lines[index + 1];
+        let rule = parse_economic_rule(statement).expect("alternate rule");
+        let replacement = statement.replace(
+            &format!(" -> {}.", rule.head),
+            " -> complete($power_alternate_record_reviewer, FSPOW_061, $power_record).",
+        );
+        assert_ne!(statement, replacement);
+        let mutant = constitution.replacen(statement, &replacement, 1);
+        validate_economic_power_rule_surface(
+            mutant.as_bytes(),
+            &loaded.source.economic_power_rule_contracts,
+            &loaded.source.economic_carry_rule_contracts,
+        )
+        .expect_err("an alternate-review branch cannot complete a power");
+    }
+
+    #[test]
     fn scenario_applicability_rejects_a_nested_extra_field() {
         let error = serde_json::from_str::<ScenarioApplicability>(
             r#"{"answer":"all declared scenarios","unexpected":"not reviewed"}"#,
@@ -15381,7 +21914,7 @@ mod tests {
         let ledger = load_and_validate(&context()).expect("validated ledger");
         let count = negative_controls_power_and_effects(&ledger)
             .expect("power and constitutional-effect controls");
-        assert_eq!(count, 60);
+        assert_eq!(count, 69);
     }
 
     #[test]

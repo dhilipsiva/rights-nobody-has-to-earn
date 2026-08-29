@@ -2,10 +2,13 @@
 
 # Book 1 Economic Pluralism and Protected Private Sphere Decision
 
-> **Status: author-ratified on 2026-08-07; formal implementation pending.**
-> This decision selects Book 1's economic and protected-private-sphere
-> settlement. It adds no predicate, rule, fact, pin, institution in law,
-> chapter, release, or claim of present constitutional coverage.
+> **Status: author-ratified on 2026-08-07; formalized and prose-landed on
+> 2026-08-28; current-source repository audit pending.** This decision selects
+> Book 1's economic and protected-private-sphere settlement. Its formal
+> implementation is source- and repository-bound: it proves no operating
+> institution, authenticated external finding, institutional action, delivery,
+> liveness, affordability, supply, capacity, stability, fiscal or monetary
+> performance, scarcity, or empirical feasibility.
 
 ## 1. Decision
 
@@ -576,9 +579,42 @@ carry. A stated duration is outside evidence, not a clock Nibli advances.
 Preserve the recognition firewall, `admits`, `derived_only`, the floor anti-
 sanction firewall, and the no-score guards as distinct controls.
 
-Before any economic rule family lands, audit the opening note, every numbered
-chapter, Part V, `method.md`, every affected pin, counterfactual, registry claim,
-generated assertion, and narrowness guard. At minimum revisit:
+### 14.1 Implemented predicate census and disposition
+
+The formal family keeps the existing vocabulary narrow. This table records the
+implemented disposition; it is not a new economic policy and does not claim
+that an institution operates.
+
+| Existing predicate | Disposition for the economic family |
+| --- | --- |
+| `work` | **Split.** Keep the admitted legacy relation only inside its sealed recognition fixture. Worker status, wages, labour protection, and minimum service use source-bound economic results. Raw work never gates standing, the floor, property, payment, or remedy. |
+| `teaches` | **Retain.** Keep the learning and legacy recognition routes only. It supplies no employer, worker, wage, property, or contribution conclusion. |
+| `reward` | **Retain sealed.** Keep the derived-only arity-one leaf, with no reader, rank, count, or self-join. Compensation, wages, profits, pensions, and grants remain distinct effects. |
+| `lose` | **Retain sealed.** Keep the derived-only recognition-loss leaf with no reader. It supplies no sanction, clawback, property, benefit, or other economic consequence. |
+| `false` | **Split.** Preserve the existing derived-only verdict and its existing consumers. Fraud, title, liability, licence, insolvency, and other economic findings use their own authenticated result cards; no new economic rule reads `false`. |
+| `home` | **Split.** Keep the admitted unary fixture only for the existing home-status substitution barrier. It proves no title, tenancy, dwelling delivery, enterprise place, or collateral. |
+| `family` | **Split and retire as an economic proxy.** Keep the admitted unary fixture only for the existing family-status substitution barrier. It proves no household duty, provider status, debt, property, succession, or care-work relation. |
+| `dwell` | **Retain floor-only.** Keep the floor entitlement, recipient-side shelter receipt, and placement conclusions. Economic rules do not read it as title, tenure, eviction evidence, or property. |
+| `secure` | **Retain floor-only.** Keep the material-security entitlement and receipt conclusion. It proves no collateral, asset security, workplace safety, or creditworthiness. |
+| `owe` | **Retain sealed.** Keep the derived-only public floor-debt conclusion with no reader. Economic liability and public or express-private duties use source-bound records and typed `obliged/3`; they never read `owe`. |
+| `public` | **Split.** Preserve the existing institutional marker and its existing standing, ecological, obligation, and historical-authority uses. Public-scale private power requires its own function-specific finding and is never inferred from `public` or an organisation label. |
+| `authority` | **Split by arity.** Preserve historical `authority/1`. Economic authority uses only the source-bound holder, exact power, and current record relation at arity three. |
+| `person` | **Retain.** It remains the standing root for person-held barriers, never evidence of worker, owner, enterprise, title, credit, or insurance status. |
+| `building` | **Retain placement-only.** Keep the derived placement leaf with no reader. Land, facilities, and title use separate source-bound records. |
+| `obliged` | **Split by arity.** Preserve legacy arity two and the one reviewed compatibility bridge into typed arity three. The economic family adds no new reader or bare-duty shortcut. |
+| `become` | **Retain sealed.** Keep the amendment-result leaf with no reader. Transfers, licences, insolvency, and temporary authority use source-bound result cards. |
+| `travel` | **Retain sealed.** Keep the movement conclusion with no reader. Labour exit and licence portability are direct barriers, not inferences from `travel`. |
+
+Knowledge-exclusivity expiry, occupational licences, public-scale-power
+findings, monetary-office terms and succession, temporary management, and
+benefit, title, or liability carry each receive a distinct temporal-contract
+constant. A current result consumes supplied, independently reviewed temporal
+evidence; no rule advances time, borrows the custody T3 record, or treats review
+silence as continuation.
+
+The implementation audits the opening note, every numbered chapter, Part V,
+`method.md`, every affected pin, counterfactual, registry claim, generated
+assertion, and narrowness guard. Its reviewed migration covers:
 
 - private-power absence and official-status exclusivity claims;
 - Chapter 8's open-compulsion account;
@@ -595,9 +631,12 @@ A claim may become false because another rule family was added even where its
 own derivation did not change. Its prose, registry entry, generated assertion
 surface, pins, and counted-claim guard must move in the same content change.
 
-## 15. Acceptance cases for later implementation
+## 15. Executable acceptance cases
 
-Later rule-family cards and tests must cover at least:
+The reviewed economic acceptance matrix maps the following 24 source cases to
+171 typed variants and executable support queries. A TRUE or FALSE result
+establishes only the declared result for the exact repository fixture and owner
+binding; it proves no external fact, operation, liveness, or institutional act:
 
 - every lawful ownership form, including a cooperative or public enterprise
   that violates worker rights;
@@ -742,5 +781,14 @@ On 2026-08-07 the author ratified:
 - [x] enumerated common economic competences, protected subnational policy, and
   individual and structural remedies.
 
-The ruling changes planning and permitted future claims only. Formal status
-remains **ratified, unimplemented**.
+At ratification, the ruling changed planning and permitted future claims only.
+
+**Implementation supersession, 2026-08-28.** `FS-CVF-006`, the 28 economic
+power contracts, three carry contracts, `FS-CCE-223` through `FS-CCE-367`, the
+24-case acceptance matrix and its pins and counterfactuals, reviewed
+references, and approved Book 1 prose are now formalized and prose-landed. This
+structural landing remains source- and repository-bound: it proves no operating
+economy, authenticated external finding, institutional action, delivery,
+liveness, affordability, supply, capacity, stability, fiscal or monetary
+performance, scarcity, or empirical feasibility. The current source still
+awaits its receipt-bound repository audit.

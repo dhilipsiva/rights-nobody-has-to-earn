@@ -1868,6 +1868,7 @@ fn ledger_receipt_context(
 ) -> Result<(String, String), Error> {
     let bytes = blob_at(root, manifest, LEDGER_PATH)?;
     let projection = ledger_closure_projection(&bytes)?;
+    require_current_economic_roots(&projection, "staged full-society ledger")?;
     let fields = object_fields(&bytes)
         .map_err(|_| receipt_error("staged full-society ledger is not valid UTF-8 JSON"))?;
     let source_version = projection.source_version;
@@ -2692,8 +2693,10 @@ struct AcceptanceGate {
 /// importing its full `LedgerDocument` here would create a dependency cycle.
 /// Every legitimate root key is therefore listed explicitly. Unconsumed
 /// payloads use `IgnoredAny`, while the three values used by receipt transitions
-/// retain their concrete types. A new ledger root field fails closed here until
-/// it is reviewed and added to both strict schemas.
+/// retain their concrete types. The economic roots are optional only because
+/// fixed historical recovery ledgers predate them; the current receipt path
+/// requires all three. A new ledger root field fails closed here until it is
+/// reviewed and added to both strict schemas.
 #[allow(dead_code)]
 #[derive(Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -2751,6 +2754,9 @@ struct LedgerClosureProjection {
     power_population: IgnoredAny,
     coverage_population: IgnoredAny,
     powers: IgnoredAny,
+    economic_power_rule_contracts: Option<IgnoredAny>,
+    economic_carry_rule_contracts: Option<IgnoredAny>,
+    economic_acceptance_cases: Option<IgnoredAny>,
     power_contract_templates: IgnoredAny,
     power_refusals: IgnoredAny,
     power_crosswalk_dispositions: IgnoredAny,
@@ -2785,6 +2791,33 @@ struct LedgerClosureProjection {
 
 fn ledger_closure_projection(bytes: &[u8]) -> Result<LedgerClosureProjection, Error> {
     parse_typed(bytes, "full-society ledger closure projection is malformed")
+}
+
+fn require_current_economic_roots(
+    projection: &LedgerClosureProjection,
+    context: &str,
+) -> Result<(), Error> {
+    for (name, present) in [
+        (
+            "economic_power_rule_contracts",
+            projection.economic_power_rule_contracts.is_some(),
+        ),
+        (
+            "economic_carry_rule_contracts",
+            projection.economic_carry_rule_contracts.is_some(),
+        ),
+        (
+            "economic_acceptance_cases",
+            projection.economic_acceptance_cases.is_some(),
+        ),
+    ] {
+        if !present {
+            return Err(receipt_error(format!(
+                "{context} omits required current ledger root `{name}`"
+            )));
+        }
+    }
+    Ok(())
 }
 
 #[derive(Clone, Copy)]
@@ -3603,8 +3636,10 @@ const SELF_TEST_AUDIT_ID: &str = "FS-SAU-43";
 // The disposable repository exercises receipt transitions rather than the
 // ledger checker, but receipt validation now requires the ledger's exact root
 // shape. Keep its unconsumed fields explicit here so the fixture cannot mask a
-// production schema addition. Unit values are sufficient because the receipt
-// projection deliberately ignores these field payloads after key validation.
+// production schema addition. Non-null booleans are sufficient because the
+// receipt projection deliberately ignores these field payloads after key
+// validation, while still distinguishing present economic roots from their
+// absence in fixed historical ledgers.
 const SELF_TEST_IGNORED_LEDGER_ROOT_FIELDS: &[&str] = &[
     "spdx",
     "schema_version",
@@ -3658,6 +3693,9 @@ const SELF_TEST_IGNORED_LEDGER_ROOT_FIELDS: &[&str] = &[
     "power_population",
     "coverage_population",
     "powers",
+    "economic_power_rule_contracts",
+    "economic_carry_rule_contracts",
+    "economic_acceptance_cases",
     "power_contract_templates",
     "power_refusals",
     "power_crosswalk_dispositions",
@@ -3687,11 +3725,11 @@ const SELF_TEST_IGNORED_LEDGER_ROOT_FIELDS: &[&str] = &[
     "constitutional_effects",
 ];
 
-fn self_test_ignored_ledger_root_fields() -> BTreeMap<&'static str, ()> {
+fn self_test_ignored_ledger_root_fields() -> BTreeMap<&'static str, bool> {
     SELF_TEST_IGNORED_LEDGER_ROOT_FIELDS
         .iter()
         .copied()
-        .map(|name| (name, ()))
+        .map(|name| (name, true))
         .collect()
 }
 
@@ -3710,7 +3748,7 @@ struct SelfTestLedger {
     closure_record: RequiredNullable<ClosureRecord>,
     acceptance_gate: AcceptanceGate,
     #[serde(flatten)]
-    ignored_root_fields: BTreeMap<&'static str, ()>,
+    ignored_root_fields: BTreeMap<&'static str, bool>,
 }
 
 #[derive(Clone, Debug, Serialize)]
@@ -4697,7 +4735,7 @@ mod tests {
             .expect("test ledger root is an object");
         root.remove("owner_ref");
         for name in SELF_TEST_IGNORED_LEDGER_ROOT_FIELDS {
-            root.insert((*name).to_owned(), serde_json::Value::Null);
+            root.insert((*name).to_owned(), true.into());
         }
     }
 
@@ -4944,6 +4982,21 @@ mod tests {
         let bytes = fs::read(context.path(LEDGER_PATH)).unwrap();
         let projection = ledger_closure_projection(&bytes).unwrap();
         assert!(!projection.source_version.is_empty());
+        require_current_economic_roots(&projection, "current ledger").unwrap();
+
+        for root in [
+            "economic_power_rule_contracts",
+            "economic_carry_rule_contracts",
+            "economic_acceptance_cases",
+        ] {
+            let mut historical: serde_json::Value = serde_json::from_slice(&bytes).unwrap();
+            historical.as_object_mut().unwrap().remove(root);
+            let projection =
+                ledger_closure_projection(&serde_json::to_vec(&historical).unwrap()).unwrap();
+            let error = require_current_economic_roots(&projection, "current ledger")
+                .expect_err("current ledger must retain every economic root");
+            assert!(error.to_string().contains(root));
+        }
 
         let mut extra_root: serde_json::Value = serde_json::from_slice(&bytes).unwrap();
         extra_root

@@ -697,6 +697,42 @@ authenticate a writer, prove an offer or accessibility, operate a service, make
 anything arrive, complete a remedy, implement a correction, monitor recurrence
 in the world, or establish future non-recurrence.
 
+The economic, labour, property, and fiscal family follows the same discipline
+without adding one omnibus conclusion called an economy. Work freedom and
+labour protection, licensing, possession and acquisition, knowledge
+exclusivity, contract and consumer protection, enterprise capacity, private
+power, protected voluntary life, taxation, appropriation, spending, borrowing,
+money, credit, insolvency, scarcity, and remedy remain separately testable legal
+effects.
+
+A restrictive or managerial power requires its own current source, lawful
+holder, jurisdiction, scope, evidence, independent review, bounded result, and
+end. Occupational licences, knowledge exclusivity, private-power findings,
+monetary office, temporary management, and the carry of a benefit, title, or
+liability do not borrow custody's time record. Missing or conflicting current
+evidence supplies no restrictive authority, while the independent floor and
+essential-service continuity remain.
+
+Review silence supplies no approval or continuation. Record review, temporal
+review, independent review, audit, and final review each have a distinct
+predeclared alternate for certified unavailability. Each alternate is separate
+from the primary actors and the other alternates, and its branch produces only
+the matching duty. It cannot complete the power, enlarge the result, or keep
+expired authority alive.
+
+The negative checks keep recognition, voiding, loss, raw work, contribution,
+wealth, conviction, family status, and personal scores out of wages, property,
+credit, insurance, political weight, the floor, and scarcity priority. Raw
+financial and equality records remain outside the consequential person record;
+only a narrow, authenticated, purpose-bound result can enter the rule that needs
+it.
+
+A green result establishes only those bounded legal effects over the supplied
+records. It does not value property, calculate a tax, clear a market, measure
+dominance, forecast prices or inflation, prove scarcity, operate a payment,
+choose a budget, staff an institution, preserve a service in the world, or make
+any remedy happen.
+
 The last class of check exists because of a limit in the logic itself. The
 engine only ever adds conclusions as facts are added — it never retracts on
 its own — so no probe stacked *on top* of the constitution can test what the

@@ -134,12 +134,16 @@ arrived. A person whose decades of care read identically to a season of clerking
 has been told something untrue about their life. The design accepts that
 untruth to avoid a worse one.
 
-**Survives, narrowed.** And the specification that keeps it survivable, stated as
-a property of the finished society rather than a task: any scoring layer a
-community builds above recognition — for allocating the scarce and optional —
-publishes its weights where an outsider can read them, and no rule anywhere reads
-that layer back into the floor. The day a score gates bread, this joint has
-failed, whatever the scoreboard says.
+**Survives, narrowed.** Recognition remains one unranked, unread conclusion. It
+cannot qualify wages, property, credit, insurance, political weight, or the
+floor. Genuine physical scarcity receives a different and resource-specific
+rule: preserve the equal minimum where physically possible; record every
+shortfall; use urgency, accessibility, imminent irreversible harm, continuity
+harm, and likely benefit from that resource only where the minimum cannot be
+met; and use rotation or a lottery only among materially equal claims. Wealth,
+contribution, recognition, conviction, disability stereotype, productivity,
+social usefulness, general lifespan, and political favour never become priority
+keys. The day a score gates bread, this joint has failed.
 
 ## Rotation
 
@@ -178,23 +182,21 @@ advance outside time, hold an election, make an appointment, staff an alternate,
 or cause a successor to arrive. The custody time path is not reused as an
 office term.
 
-And none of that answers the joint history raised. Recognition still does not
-price the unpleasant against the pleasant — a recognised cleaner and a
-recognised surgeon stand identically, which removes the market's answer without
-supplying another. Because the floor never depends on work, nobody can be
-starved into the jobs nobody wants, which takes the historical worst answer —
-assignment by hunger — off the table permanently. But taking the worst answer
-away is not giving an answer.
+That still does not answer the joint history raised, but the constitutional
+position is no longer silent. Recognition does not set pay. Wages, incentives,
+savings, returns, grants, prizes, and subsidies may exist above the floor under
+ordinary democratic law and common labour rights. Every person remains free to
+refuse and leave work, and the floor cannot be used to force acceptance. A
+minimum-service rule binds the provider or bargaining parties to arrange
+continuity; it never conscripts a named worker.
 
-**Fails as stated.** The design no longer leaves rotation of public office
-wholly open. It still does not solve rotation of the work nobody chooses. The
-specification, as a property: in the finished society, that work is visibly
-done, and the record of who does it shows neither a caste nor a draft — no
-cluster of the unpleasant on any group the record can name, and no rule anywhere
-that made anyone do it. If that property cannot be exhibited, this design has
-no business scaling past the size where neighbours shame each other into
-fairness. The machinery that could exhibit it belongs to the operational book,
-and I have left that part of the joint open rather than paper it.
+**Fails as an operational claim.** The constitution permits lawful ways to
+reward difficult, skilled, unpleasant, or necessary work without ranking human
+worth or making survival contributory. It does not choose wage scales, organise
+shifts, recruit workers, empty bins, or prove that the work nobody chooses was
+done without caste or coercion. Those burdens remain with democratic law and
+the operating design. The floor removes assignment by hunger. It does not staff
+the society.
 
 ## Coercion
 
@@ -238,39 +240,30 @@ line, with no competing selection. Without that positive authority the custody
 conclusion does not derive when the supplied record is evaluated afresh. Nothing automatically writes *free*, and nothing here
 proves that the outside time service advances or that the next record arrives.
 
-What survives of their objection is therefore narrower and still serious. The
-design does not measure *how long*, count down a sentence, or secure physical
-release by its own operation. It evaluates the authority presented in each supplied
-record afresh; it cannot force the record to change. Adding a later
-record to an already-running evaluation would not retract conclusions already reached
-there. Gemini's objection survives differently: the
-compulsion door is open exactly as described — the floor blocks punishment for
-absence and says nothing about manufacture — and chapter 8 printed that before
-any reviewer found it. What the design refuses is the pretence that a rule could
-close it; what I concede here is that an open door, honestly labelled, is still
-open. There was one more intention in the earlier design, and I am withdrawing
-it rather than calling its failure a kindness: it would have let a convicted
-person earn a shorter sentence. That makes labour, compliance, or recognition a
-price of liberty; *choose* is strained when the alternative is longer
-confinement. The expanded constitutional target now refuses that trade. The
-temporal gate constrains the power holding someone through independent review and
-case-bound renewal; it does not let character, contribution, or recognition buy
-less confinement. Nothing here measures duration and nothing reads the recognition
-record. Prompt physical release remains an outside obligation that institutions must
-actually perform, rather than being hidden behind a reward.
+What survives of the first two objections is still serious. The design does not
+measure how long custody lasts, count a sentence down, secure physical release,
+or force the next record to arrive. It evaluates the current authority supplied
+for each case and cannot make the outside world advance.
 
-**Survives, narrowed.** The claim that punishment takes movement and only
-movement holds, was attacked from every side, and held — the vote stood, the
-floor stood, personhood stood; even a hostile graded read called the chapter
-carrying this trade excellent. What it flagged as sharpest — public power with
-no formal renewal — now has a case-bound gate. Physical release remains an
-outside obligation. The current narrowing is duration's silence, dependence on outside
-action, and the
-compulsion door, all kept in print. Custody now faces a case-bound reviewed renewal,
-and no person's character can buy or extend it. The time service and its boundary
-events are represented; their honest operation and eventual advancement are not
-proved here. The second half — no custody conclusion derives for a person whose case
-lacks current authority in the supplied record — is checkable today.
+The third objection no longer describes the whole constitution. The floor's own
+narrow mechanism still blocks punishment for absence rather than the
+manufacture of a claimed state. Separate liberty and economic rules now refuse
+public prescription of belief, expression, association, intimacy, care,
+domestic production, mutual aid, and other harmless voluntary life. The old
+hostile rule remains loadable to expose the floor mechanism's boundary; the
+person-held barrier says public power may not lawfully use it.
+
+The earlier proposal to let a convicted person earn a shorter sentence remains
+withdrawn. Labour, compliance, character, contribution, wealth, or recognition
+cannot buy or extend liberty. Current case-bound authority limits the power
+holding the person, while prompt physical release remains an act institutions
+must perform.
+
+**Survives, narrowed.** The direct punitive claim still takes movement and only
+movement. The constitution now also refuses automatic loss of work status,
+wages already owed, housing entitlement, property, family relations, political
+membership, and remedy. It cannot prevent the practical losses confinement may
+cause, operate continuity, measure duration, advance time, or open a cell.
 
 ## Capture
 
@@ -424,6 +417,62 @@ decisions. Each is a limit held by a person, not a service to be earned and not
 a score to be balanced away. The narrow record complements those limits; it
 does not substitute for them. Neither device proves that nobody judges a person
 elsewhere or that an institution will stop an unlawful intrusion.
+
+### Work, property, and private power
+
+This design no longer leaves "the economy" as an empty place beside
+recognition. It also refuses to fill that place with one system. Public,
+cooperative, commons, mutual, nonprofit, household, and private forms are
+lawful. None receives a guaranteed share, profit, bailout, immunity, or
+monopoly, and no ownership label excuses a violation.
+
+Work is voluntary and protected across those forms. Worker status follows
+actual control and dependency rather than paperwork. Safe conditions, fair and
+timely pay, rest, equality, privacy, association, unions, bargaining, collective
+action, inspection, and remedy remain common minima. Care can be work without
+becoming a family debt. Affection and mutual aid cannot disguise controlled
+commercial labour.
+
+Property is protected and conditional. Possession, use, transfer, inheritance,
+and lawful productive activity remain possible, while taxation, tenant
+protection, planning, access, remediation, and anti-concentration law remain
+possible too. Adequate secure housing is the floor; ownership of a particular
+asset is not. Compulsory acquisition needs law, public purpose, necessity,
+reasons, hearing, review, and compensation attentive to actual reliance and
+hardship rather than publicly created windfall. Statutory control of knowledge
+is temporary and must yield through an effective lawful route where it blocks
+the floor or protected commons.
+
+Contract is voluntary in more than signature. Deception, coercion, concealed
+terms, severe dependency, and the absence of meaningful exit matter. No
+agreement can waive the floor, equality, labour rights, core privacy, due
+process, commons duties, or remedy. An enterprise receives the capacities
+needed to own, contract, associate, and litigate, not a human floor, ballot,
+candidacy, or inherent political weight. Limited liability remains a
+conditional legal tool, not permission for fraud, asset stripping, deliberate
+underfunding, or abandoned liability.
+
+Private power is treated by function. A contestable finding of essentiality,
+dominance, gatekeeping, dependency, lock-in, network control, severe
+information imbalance, or no meaningful alternative can bring fair access,
+continuity, reasons, portability, audit, challenge, and remedy to that function.
+The finding does not nationalise the actor's whole life. Remedies may include an
+access order, public option, separation, breakup, receivership, licence
+withdrawal, or public acquisition, but they must preserve workers, users, and
+essential service.
+
+The reverse limit is as important. Gifts, pooling, care, domestic production,
+mutual aid, lawful exchange, belief, culture, worship, friendship, intimacy,
+and association are protected from prescription and scoring. No household or
+voluntary body is presumed to provide the floor. Each person keeps capacity,
+confidential help, lawful property claims, and free exit. Privacy ends where
+violence, forced labour, confiscation, document control, captivity, or
+obstructed exit begins.
+
+These are legal boundaries, not an economic plan. They choose no provider mix,
+wage scale, price, production target, inventory, staffing level, or transition.
+They make several arrangements lawful and several forms of domination unlawful.
+They do not make any arrangement work.
 
 ### Family and the life course
 
@@ -613,26 +662,62 @@ institution exists, that a roster is complete, that an election was honest,
 that an office is staffed, or that an order was obeyed.
 
 The older `State` that owes the floor remains named and answerable; it has not
-been stretched into the whole republic. And here is the concession I promised
-in the frame, in the plain words the reviewers noticed were missing: a state
-that supplies a floor at scale is funded by coercion. It takes resources
-compulsorily from people who did not individually agree. The state-form rules
-separate authority to raise revenue from authority to spend it. They do not
-choose a tax base or rate, borrowing rule, monetary system, labour settlement,
-property regime, operating budget, or delivery capacity.
+been stretched into the whole republic. And here is the concession promised in
+the frame: a state that supplies a floor at scale takes resources compulsorily.
+The economic constitution now says how far that fact may reach.
 
-The ends of this design are social-democratic; the provider is a fiscal agent;
-I have no interest in pretending otherwise. What is new here is not the absence
-of a provider — it is the constraint mechanism wrapped around one. Somebody
-once summarised an argument like this as social democracy with extra steps, and
-the answer is yes. The extra steps now include a formal federal architecture,
-but still do not bake bread. Under the rules as written, the absence of
-something owed on the floor cannot be made a reason to imprison a person.
-That refusal does not deliver the floor, block every hostile rule, stop defunding, or
-keep the constitutional source from changing. One of this book's early readers
-said that no politician could quietly defund a citizen's basic rights; “it
-makes the welfare state mathematically enforceable.” I accept that sentence as
-an ambition, not as a description of what this version has proved.
+Taxation across the system must reflect capacity to contribute. Democratic law
+chooses compatible rates, bases, exemptions, and mixtures. Every tax still
+needs lawful authority, public purpose, equality, privacy, reasons, audit, and
+challenge. Collection may reach above-floor income and assets. It may not use
+debt imprisonment or remove essential subsistence, an adequate secure dwelling,
+standing, or effective remedy.
+
+Appropriation, spending, guarantees, and borrowing need legislative authority,
+complete reporting, audit, and disclosure of fiscal risk. There is no
+constitutional balanced-budget rule or numerical debt ceiling. A creditor
+cannot acquire power the constitution did not grant, make the floor
+subordinate, erase a commons duty, or turn public debt into inherited personal
+liability. Budget deadlock continues prior essential authority and the floor;
+it creates no new permanent programme.
+
+The common tier maintains a public unit of account and an accessible settlement
+route, including a non-digital one. Other compatible payment instruments may
+exist under law. A monetary authority may operate independently only inside a
+democratic mandate, with published reasons, review, audit, cause-only removal,
+and no veto over lawful fiscal choice. Credit is not a constitutional
+entitlement, but a denial requires lawful criteria, reasons, equality,
+correctable data, and challenge.
+
+That common authority remains enumerated. It covers the payment backbone and
+necessary financial-stability safeguards; floor finance, equalisation, and
+portability; interregional commerce, competition, insolvency minima, and
+cross-regional private-power cases; and common labour and consumer minima.
+Land, ownership, enterprise, services, municipal enterprise, and local
+development remain regional or local. Each tier may tax, spend, and borrow only
+within its assigned authority. Coordination and equalisation create no general
+common power and cannot withhold the floor from a dissenting region. A common
+rule displaces regional law only as far as an enumerated common duty requires;
+compatible stronger protection survives.
+
+Personal insolvency must permit a fresh start while preserving floor essentials
+and ordinary tools. Unpaid wages and earned pensions require protection even
+when an employer's estate is empty. Shareholders bear residual risk. Enterprise
+failure cannot erase a remedy or interrupt an essential service without public
+continuity.
+
+Genuine physical scarcity is not a budget choice, a high price, a monopoly, a
+withheld stock, an administrative delay, or a provider failure. It needs
+contestable evidence about one resource and population after reasonable
+alternatives have been considered. Fair allocation can mitigate the resulting
+failure; it cannot rename an unmet floor claim as success.
+
+The ends remain social-democratic, and the provider remains a fiscal agent. The
+extra constitutional steps now govern work, property, contract, private power,
+taxation, spending, money, credit, insolvency, and scarcity. They still do not
+bake bread, calculate a rate, staff a service, forecast a price, or make a
+payment clear. The claim that no politician can quietly defund a person's rights
+remains an ambition, not an operational result.
 
 The objections, and this joint collects the heaviest. DeepSeek: "A society that
 can state its obligations but cannot fulfill them is not a society; it is a
@@ -709,22 +794,20 @@ legitimacy: no argument in this part makes anyone *adopt* these rules, constitut
 are not adopted for technical merit, and the reviewer who said the bridging book is
 unwritten is right. I am its author; that book needs people I have not met.
 
-**Survives, narrowed.** Under these rules, the floor is owed without an earned
-condition, its absence cannot be made a reason for imprisonment, and no civic,
-role, private, or voluntary obligation can be used to purchase or cancel it.
-Public responsibility now has named forms, bearers, scopes, readers, failure
-consequences, continuity, and remedies. The republic's constitutional powers
-also have named holders and positive, source-bound limits rather than an
-unwritten state-shaped gap.
+**Survives, narrowed.** The floor is owed without an earned condition, and
+public responsibility cannot be delegated away through ownership form,
+contract, payment, insurance, charity, or household support. Work remains
+voluntary; property and contract remain conditional; public-scale private power
+receives bounded duties and remedies; and taxation, spending, borrowing, money,
+credit, insolvency, and scarcity now have constitutional limits.
 
 The narrowing is everything those conclusions cannot prove: authentic records,
-honest elections, complete rosters, funding, staffing, independence in fact,
-action, operation, delivery, enforcement, repair, feasibility, and legitimacy.
-The specification, as a property: the bearer's taking and spending resolve to
-published entries an outsider can re-run — where the money came from, where it
-went, held to the same standard of retraceability as every other conclusion in
-the record. A duty-bearer whose books cannot be re-run is a discretion engine
-wearing this design's clothes.
+honest elections, complete rosters, funding, production, prices, staffing,
+independence in fact, action, operation, delivery, enforcement, repair,
+feasibility, and legitimacy. The bearer's taking and spending must resolve to
+published entries an outsider can retrace — where the money came from, where it
+went, and under whose authority. Retraceable books are not solvent books, and a
+lawful budget is not a funded service.
 
 ## What I will not add up
 

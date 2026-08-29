@@ -179,12 +179,14 @@ ratified but unimplemented. Its controlling contract is
 statistical thresholds, quota values, operational methods, and programme
 workflows remain delegated only inside its legal reach, proof, data, continuity,
 and remedy constraints.
-The economic-pluralism and protected-private-sphere settlement is likewise
-author-ratified but unimplemented. Its controlling contract is
+The economic-pluralism and protected-private-sphere settlement is
+author-ratified, formalized, and prose-landed. Its formal effects remain source-
+and repository-bound and create no operated economy, delivery, liveness,
+calibration, or external truth. Its controlling contract is
 `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`;
 rates, budgets, quantities, prices, production, inventories, actuarial methods,
 staffing, workflows, monetary instruments, capacity, and empirical feasibility
-remain Book 2 work. Implementation may choose only inside its plural-form,
+remain Book 2 work. Later implementation may choose only inside its plural-form,
 floor, labour, property, contract, private-power, scarcity, federal, temporal,
 data, and remedy limits.
 

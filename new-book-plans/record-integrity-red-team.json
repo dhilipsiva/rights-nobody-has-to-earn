@@ -4,9 +4,9 @@
   "title": "Record-Integrity Red-Team: Flat-Snapshot Levers and Temporal Boundaries",
   "status": "bounded_flat_snapshot_red_team_not_assurance",
   "evidence_role": "exposes_gap_and_tests_boundary",
-  "constitution_sha256": "4f09cdb7320c492eba55809df337eab4a4e3a464193b355781ddc9ea04115ace",
-  "assertion_surface_contracts_sha256": "bbce3486647a9ff90e2f302e4eb3059852df6acea12cb39d08291a81d59c4577",
-  "record_integrity_assurance_case_sha256": "d682d0ff45f264362af14625f6e8fe2cb208b7e17e6252796c4366244e69ceda",
+  "constitution_sha256": "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
+  "assertion_surface_contracts_sha256": "020d7d78b60fa1cb66ad33ef5d473c27a79777c545c50c14605960eded242cbc",
+  "record_integrity_assurance_case_sha256": "30b6e7737bc6f0d09bcd408b355128ad02bf55a4f49172dc0b20ba24e0db1975",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",
@@ -1593,14 +1593,14 @@
       "future_trigger": "Any outside-clock assurance, identity assurance, ballot continuity, or new franchise condition requires re-review."
     },
     {
-      "artifact_ref": "book-1/10-contribution.md::The pair authenticates neither writer nor purpose.",
+      "artifact_ref": "book-1/10-contribution.md::the pair still authenticates neither its writer nor",
       "current_claim": "Forgiveness reopens the current reward conclusions, including recorded earlier work, but the two facts do not authenticate a forgiving act.",
       "classification": "revised_and_scoped",
       "reason": "The reuse and writer-independence cases required the chapter to separate the derived consequence from who performed or authorised forgiveness.",
       "future_trigger": "Any authenticated forgiveness process, reward-rule change, purpose binding, or reconsideration scope requires re-review."
     },
     {
-      "artifact_ref": "book-1/13-the-one-thing-taken.md::Conviction takes movement and nothing else.",
+      "artifact_ref": "book-1/13-the-one-thing-taken.md::The direct punishment this bounded source attaches to conviction reduces to one",
       "current_claim": "The current narrow constitution removes movement through conviction and release remains a written act.",
       "classification": "preserved_but_scoped",
       "reason": "The release test changes the existing consequence but adds no new deprivation or rule family.",

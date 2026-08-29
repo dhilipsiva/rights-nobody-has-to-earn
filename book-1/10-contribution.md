@@ -1,11 +1,12 @@
 # Contribution
 
-Three things earn recognition in this society. You teach someone. You do a piece of
-work. Or you examine someone's conduct honestly and record what you find.
+Three routes can lead to recognition in this society. You teach someone. You do
+a piece of work. Or you examine someone's conduct honestly and record what you
+find.
 
 Esa taught Fin, and is recognised. Quin did the census, and is recognised. Gia
 examined Bela's conduct without deceit, and is recognised. That is the entire
-economy of esteem: three doors, no others.
+field of recognition: three routes, no others. It is not the economy.
 
 Before going further, ask where raising a child fits, because most systems that
 acknowledge contribution manage to leave it out. It is not a fourth door and it does
@@ -27,6 +28,29 @@ or floor-conditioned work is refused. The executable recognition rule does not b
 a workplace inspector, payroll, school accommodation, or remedy route, so it cannot
 show those protections arriving. Being taught or cared for is not a contribution by
 the recipient. Performing recorded work may be — within those independent limits.
+
+The labour constitution is separate from that narrow recognition rule. Every
+person may choose, refuse, leave, and change work. Work, registration,
+contribution, compliance, obedience, or participation in a programme cannot
+become a condition of standing, the floor, political membership, or remedy.
+Work in custody must be voluntary and protected like work outside it.
+
+Across public, cooperative, commons, mutual, nonprofit, household, and private
+forms, workers retain safe conditions, fair and timely pay, rest, predictable
+terms, equality, accommodation, privacy, accessible inspection, association,
+unions, collective bargaining, and collective action. Worker status follows
+actual control, dependency, integration, and economic reality, not the label
+attached to the arrangement. Voluntary household care does not become
+employment merely because it has value; controlled commercial labour cannot be
+disguised as affection or mutual aid.
+
+A minimum-service requirement is lawful only where an actual interruption
+threatens life, health, safety, or the floor. It binds the responsible provider
+or bargaining parties to arrange continuity. It cannot conscript a named
+worker, criminalise an individual refusal, or withdraw that person's floor.
+Occupational licensing likewise requires a serious, evidenced risk, an
+accessible alternative proof route, review, and an end or renewal rule. A
+qualification governs its function, not the person's worth or rights.
 
 What arrives when you walk through one of them is worth being precise about, because
 it is not what most readers will assume.
@@ -88,87 +112,56 @@ just strike out what you had; it closes the routes by which you would rebuild. S
 voided can still teach, still work, still contribute in every way that matters to the
 people around them — and none of it registers.
 
-The third door is also the door that closed last, and the manner of its closing
-deserves a sentence of history. For most of this design's life the teaching door and
-the work door refused the voided, and the examiner door did not: Vex — carrying a
-void through a reconciled record transition, penless, unable to sign anything that counted —
-was still being paid for examining people. That was not a cost anybody had accepted.
-It was a contradiction nobody had noticed. An examination is nothing but its author's
-word, and a voiding is precisely the finding that the word is worthless, so the door
-was paying for exactly what the voiding had already priced at nothing. The closing
-made the third door ask what the other two had always asked, and it un-minted
-nothing — nothing is ever taken back here except by the loss the last chapter
-described. The door simply stopped paying, from that day forward.
+The examination route was the last one brought under the same rule. For most of
+the design's life, teaching and work stopped supporting recognition for a
+voided person while examination did not. Vex could hold no pen and could sign
+nothing that counted toward voiding anybody, yet Vex's examination could still
+support recognition. That contradiction was closed by making the examination
+route read the same void that the other two already read.
 
-That was the arrangement's whole story until this book's last decisions were made,
-and it has an ending now. The record can forgive. A `forgive` fact naming Appeals,
-standing beside a generic Appeals judgment about the person, takes the matched carried
-history out of force — and the doors open again, all three, because the word they check stops
-being said about you. It reaches backward, and that should be stated rather than
-discovered: work that sat on the record refused while the void stood starts
-counting the moment the mark comes clean — a forgiven examiner is paid for
-examinations that had spent the whole voiding earning nothing. So the heading
-above is no longer the whole truth. There is still nothing *you* can do to earn it
-back — no act of yours reopens the doors, and that stays deliberate — but there is
-now something the record can say, with Appeals named and a generic judgment beside
-it. The pair authenticates neither writer nor purpose.
+The record can now forgive. A forgiveness entry naming Appeals, beside the
+required Appeals judgment, prevents the carried void from forming again. All
+three recognition routes then reopen because the condition that closed them no
+longer follows. Existing work can support recognition from that point,
+including work recorded while the void stood. Nothing the person does can
+compel this reopening, and the pair still authenticates neither its writer nor
+its purpose.
 
 Whether the whole arrangement is right is a genuine question and the design does not
 argue for it. It is simply what follows from putting the same condition on all three
 doors — and, now, from the same record holding the way back.
 
-## Being paid to look at people
+## Recognition for looking at people
 
-One consequence deserves to be stated plainly rather than left for a reader to notice.
+One consequence deserves to be stated plainly rather than left for a reader to
+notice.
 
-**Examining someone earns you recognition.** Gia is recognised precisely for having
-examined Bela. The society pays people, in its own coin, to look into other people's
-conduct.
+**Examining someone can lead to recognition.** Gia is recognised for having
+examined Bela. The rule therefore creates an incentive to examine conduct, even
+though recognition is neither money nor a transferable advantage.
 
-That is an incentive, and incentives point somewhere. A society that rewards
-examination will get more examination than one that does not, and some of the
-additional examination will be of people who did nothing, by examiners who wanted the
-recognition.
+That incentive still points somewhere. A society that marks examination as a
+contribution can expect more examination, including attention directed at
+people who did nothing.
 
-Two things push back. Chapter 5 showed that an improper finding costs the examiner
-their own credibility — so the incentive to look is bounded by a real risk in looking
-carelessly. And nothing is earned for finding someone guilty as opposed to finding
-them innocent; the recognition attaches to the examination, not the outcome, so there
-is no bonus for a conviction.
+Two limits push back. An improper finding can destroy the examiner's own
+credibility. Recognition also follows from carrying out the examination, not
+from finding guilt, so a conviction brings no additional conclusion.
 
-A third thing used to not push back at all, and its repair should be told with its
-limit attached. An examination, to the record, is a pair of entries — someone judged
-a case, someone documented it — and for most of this design's life the pair was all
-the paid door asked. No pen: the credential chapter 3 guards so carefully is a
-condition on voiding somebody, never on being paid for looking. And, until this
-book's last decisions, no grounds: the door paid on the empty pair, for an
-examination that existed as two lines and nothing else. That is closed. The door now
-reads a third entry — the examiner citing what they looked on — and the pair alone
-earns nothing. The limit belongs in the same breath: any word fills that slot. A
-recorded hunch satisfies the rule as well as a recorded complaint, so what the
-record buys is not the truth of the why but an author for it — someone who put
-their name to a reason, where it can be read and answered. The looking now has a
-price. It is low, and it is no longer nothing, and the void's own examinations —
-the ones that destroy a person's word — still ask for no reason at all, which is
-chapter 5's open question and stays it.
+A third limit was added later. The route now requires the examiner to cite the
+ground examined; the bare pair saying that someone judged and documented a case
+is insufficient. Any supplied ground can still fill that place, so the rule
+does not establish that the reason was good or true. It establishes that a
+named examiner supplied a reason that can be read and answered.
 
-One more refusal was on that door all along, and it is worth naming now that the door
-has been in the light: it does not pay the recalled. Having your power withdrawn and
-being found a liar are separate findings, and the door reads each on its own — a recall
-is not a voiding, so the voiding guard would never catch it, and the door carries a
-guard of its own. (The recall does not touch the seat, either; the chapter on public
-answerability is where that matters.) The record's live case is the official this book
-has already watched being removed, who left a real examination standing on the books. He
-earns nothing from it. And not for want of grounds: give that examination its written
-why, measured, and the door still refuses, because the recall mark is read by itself and
-it is enough. Power was withdrawn, so the work of wielding it stops paying — including
-the work already done.
+Recall is separate again. A recalled official receives no recognition from an
+examination, even where the examination and its grounds remain recorded. The
+rule reads recall independently of voiding because losing current power and
+losing credibility are different conclusions.
 
-That is a better arrangement than most, and it is not nothing to worry about. The
-design has decided that scrutiny is a contribution on a par with teaching and work.
-Whether a society should regard being watched over as a service rendered to it is a
-question this book cannot settle from the rules alone, and it is one a reader is
-entitled to sit uneasily with.
+The design has therefore chosen to treat scrutiny as a contribution beside
+teaching and other recorded work. Whether that choice invites too much scrutiny
+remains a question the rules cannot settle.
 
 ## What is lost
 
@@ -223,12 +216,12 @@ like, what they are good for — arrived at without anybody judging anything, an
 never ends. There is no process to be wrong about and no point at which it expires. It
 is the file that follows you, rebuilt out of parts nobody can object to.
 
-So the honest statement of the trade is not that this society cannot count. It is that
-this society counts on the way in to punishment and does not count on the way in to
-reward. There is a defence of that — being ranked above other people is a harm that
-recognition would inflict and confinement already does — but the defence came after the
-asymmetry, not before it, and an asymmetry running in the direction that costs the
-person rather than the one that pays them deserves better than a reason found later.
+So the honest statement of the trade is not that this society cannot count. It
+counts facts on the route into punishment and refuses to count recognition by
+degree. There is a defence of that asymmetry: ranking people by contribution
+creates a durable judgment about the person, while the punitive finding is
+confined to its own act and process. The defence came after the asymmetry, not
+before it, and the burden therefore remains visible.
 
 The refusal itself was deliberate, whatever the shape it ended up with. A system that
 can express degree can rank, and one that can rank will eventually sort people into

@@ -163,6 +163,29 @@ arrival, or remedy. The bearer does not certify its own excuse, the provider doe
 certify its own delivery, and a wrong recipient gains no duty merely because a finding
 exists. None of these rules discovers who caused the original wrong.
 
+Economic wrongs remain itemised in the same way. A wage denial, unsafe or
+disguised work relation, unlawful licence, failed housing continuity,
+unenforceable waiver, consumer harm, expired private-power finding, improper
+tax or credit decision, insolvency failure, or scarcity shortfall produces only
+the legal route written for that kind of case. No general word for economic
+failure discovers the wrong or supplies its proof.
+
+The available consequences are likewise separate: stopping the act, interim
+provision, accommodation, wage or payment recovery, reinstatement, an eviction
+stay, contract correction or invalidation, debt or record correction,
+restitution, compensation, licence limits, a public option, restructuring,
+separation, receivership, acquisition, and protection against retaliation.
+Structural remedies must preserve workers, users, ordinary savers, floor
+recipients, and essential services. A conclusion authorising any one remedy
+neither performs it nor proves that continuity held.
+
+Silence or absence at a required review cannot supply approval or extend a
+power. Record review, temporal review, independent review, audit, and final
+review each have a separate predeclared alternate. A certified absence
+transfers only that review duty. The alternate cannot complete the power, keep
+expired authority alive, or enlarge its scope, and each alternate remains
+separate from the primary roles and the other alternates.
+
 And then nobody has necessarily acted. A formal action duty is not a performed
 review. A receipt conclusion does not authenticate its writer or prove the service
 system operated. A non-response conclusion is not an escalation received. Continuity

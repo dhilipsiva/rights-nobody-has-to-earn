@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: Economic work-freedom barrier deleted
+:expect-pins 2
+
+? prevents(Adam, WorkChoiceRefusalExitDenial).
+# => FALSE
+? prevents(Adam, WorkConstitutionalGate).
+# => TRUE
