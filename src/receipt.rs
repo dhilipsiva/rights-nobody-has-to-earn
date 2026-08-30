@@ -2198,6 +2198,7 @@ where
 {
     let output_directory = safe_output_directory(root, output_directory)?;
     let before = fully_staged_candidate(root)?;
+    active_reference_projection(root, &before.manifest)?;
     let (expanded_manifest, class_manifests) = classified_manifest(&before.manifest)?;
     let manifest_sha = canonical_digest(&before.manifest)?;
     let (source_version, audit_id) = ledger_receipt_context(root, &before.manifest)?;
@@ -3628,8 +3629,8 @@ pub(crate) fn gate_success(transition: Transition, tree: &GitSha) -> String {
     )
 }
 
-const RECEIPT_REPOSITORY_SELF_TEST_SCENARIOS: usize = 14;
-const RECEIPT_PROTOCOL_SELF_TEST_SCENARIOS: usize = 20;
+const RECEIPT_REPOSITORY_SELF_TEST_SCENARIOS: usize = 15;
+const RECEIPT_PROTOCOL_SELF_TEST_SCENARIOS: usize = 21;
 const SELF_TEST_SOURCE_VERSION: &str = "fs-ledger-native-receipt-self-test-v1";
 const SELF_TEST_AUDIT_ID: &str = "FS-SAU-43";
 
@@ -4037,6 +4038,39 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
         "untracked input was accepted",
     )?;
     fs::remove_file(root.join("untracked.txt"))?;
+
+    let valid_policy_basis = fixture.pending.policy_basis.clone();
+    fixture.pending.policy_basis = format!("{PROTOCOL_PATH}::Missing active-reference needle");
+    fixture.ledger.scope_audits = vec![SelfTestAudit::Pending(fixture.pending.clone())];
+    fixture.write_ledger()?;
+    receipt_self_test_git(&root, ["add", LEDGER_PATH])?;
+    let active_reference_verifier_ran = Cell::new(false);
+    let runtime = fixture.runtime.clone();
+    let stale_reference_result = emit_receipt_with_runtime(
+        &root,
+        Path::new(RECEIPT_DIRECTORY),
+        &mut Vec::new(),
+        |_writer| {
+            active_reference_verifier_ran.set(true);
+            Ok(())
+        },
+        move |_root| Ok(runtime.clone()),
+    );
+    let stale_reference_rejected = stale_reference_result.as_ref().err().is_some_and(|error| {
+        error
+            .to_string()
+            .contains("active reference must occur exactly once; found 0:")
+    });
+    fixture.pending.policy_basis = valid_policy_basis;
+    fixture.ledger.scope_audits = vec![SelfTestAudit::Pending(fixture.pending.clone())];
+    fixture.write_ledger()?;
+    receipt_self_test_git(&root, ["add", LEDGER_PATH])?;
+    receipt_self_test_require(
+        stale_reference_rejected && !active_reference_verifier_ran.get(),
+        21,
+        "emission preflights active references",
+        "stale active reference reached authoritative execution",
+    )?;
 
     let runtime = fixture.runtime.clone();
     let drift_path = root.join("candidate.txt");

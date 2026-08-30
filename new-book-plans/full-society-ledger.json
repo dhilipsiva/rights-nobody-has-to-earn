@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-28-economic-constitution-v1",
+  "source_version": "fs-ledger-2026-08-29-economic-active-reference-repair-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "380cbf5a5e362c2be6f118ceb9a20cc0b09ab256061af8115422d3ca4a519e6d"
@@ -103029,8 +103029,8 @@
       "part_v_refs": [
         "book-1/15-the-five-joints.md::What does this design do about rotation? It now has a constitutional answer for",
         "book-1/15-the-five-joints.md::does not evade the state, it *specifies* one. It now specifies more than a",
-        "book-1/15-the-five-joints.md::The binding layer is now wider. It names the tiers, bodies, holders,",
-        "book-1/15-the-five-joints.md::**Survives, narrowed.** Under these rules, the floor is owed without an earned"
+        "book-1/15-the-five-joints.md::The binding layer is wider still. It names the tiers, bodies, holders,",
+        "book-1/15-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
       ],
       "blocked_before_drafting": "Coverage, formal rules, executable tests, counterfactuals, and approved SF-B1-v1 prose are complete; these remain supplied-record constitutional declarations and authority only, and establish no authentication, operation, staffing, election, delivery, feasibility, liveness, calibration, outside time, or institutional action.",
       "source_refs": [
@@ -104320,7 +104320,7 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::constitutional barriers over supplied records, not measurements",
-        "book-1/08-what-you-are-owed.md::At the floor layer, three hostile routes remain syntactically reachable.",
+        "book-1/08-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable.",
         "book-1/method.md::The liberty-and-ecology family is the first new family carried through that"
       ],
       "part_v_refs": [
@@ -104806,7 +104806,7 @@
         "book-1/08-what-you-are-owed.md::Ask whether Bela eats in the record supplied with this book.",
         "book-1/08-what-you-are-owed.md::The debt says what it is about, and arrival is a separate conclusion.",
         "book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated.",
-        "book-1/13-the-one-thing-taken.md::Conviction takes movement and nothing else.",
+        "book-1/13-the-one-thing-taken.md::As a direct legal punishment, conviction takes movement and nothing else.",
         "book-1/13-the-one-thing-taken.md::Leaving custody returns a person to a supplied record with no non-carceral receipt.",
         "book-1/14-when-the-system-notices-it-broke.md::At first that looks like an alarm screaming. It is not, quite.",
         "book-1/14-when-the-system-notices-it-broke.md::The delivery routes join that architecture at the arrival end without inventing the",
@@ -111800,61 +111800,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "b45feb4a446ad84b7e846c5cc5ce8dc625ea94b4",
-    "source_version": "fs-ledger-2026-08-28-economic-constitution-v1",
-    "scope_sha256": "abf6ec334ef80b31e9961e111ca0e7f91c68bb37212defa3352b12b837fd5e17",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-08-29T17:52:55Z",
-    "scope_audit_ref": "FS-SAU-43",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
-    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-b780c38fd3948f2eb3852f4fe4d2dbebc5674570a485f906dfd21c1c2871cb52.json"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -130250,6 +130200,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-b780c38fd3948f2eb3852f4fe4d2dbebc5674570a485f906dfd21c1c2871cb52.json"
+    },
+    {
+      "id": "FS-SAU-44-PENDING",
+      "title": "Economic active-reference repair pending current-source repository audit",
+      "source_version": "fs-ledger-2026-08-29-economic-active-reference-repair-v1",
+      "scope_sha256": "72cdb50e3b3519740ed783cf38a68a13c101737586820bccd23e16747b0ea895",
+      "protocol_sha256": "2266ac8b2c05c053a622b542517f9a50b4b71a0627d5c04894dd5fa949a3bcbe",
+      "executed_at_utc": "2026-08-29T19:53:42Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [

@@ -9339,7 +9339,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&coverage_policy, "coverage-family policy")?
-        != "8770cb9ffe4addf0aca00f193472c0f9a25703dbf1852db0e012ceb85079ce8e"
+        != "b5db92ef995c37481df622578884db4a9213f9842fde11ba362a98003b7458cf"
     {
         return Err(LedgerError::new(
             "coverage-family state, partitions, or formal surfaces differ from checker policy",
