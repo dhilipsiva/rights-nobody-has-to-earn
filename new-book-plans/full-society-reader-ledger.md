@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-29-economic-active-reference-repair-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-08-29-economic-active-reference-repair-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -29,7 +29,7 @@ Coverage-family drafting states:
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: prose-landed — Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved.
 - FS-CVF-017 Economic, labour, property, fiscal, scarcity, and voluntary-sphere effects: prose-landed — All 145 person-held effects, their separately typed always-on duties, the three non-power carry result interfaces, executable tests, counterfactuals, and approved Book 1 prose are complete. They establish only source-bound legal effects over supplied records; no operation, calculation, delivery, remedy, institutional act, liveness, calibration, external truth, or feasibility is proved.
 
-Canonical source SHA-256: `2a9b580c22484d1adb27f7bdec48e91bf95001466f72fc4d4ee1b73b7c96ea04`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `c4c1863afe6b7440454d0cb7158e25844cc8262a582d97dc5b167fa7360351ee`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
