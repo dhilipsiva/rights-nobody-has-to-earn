@@ -11,6 +11,12 @@
 > structural validators pass. External human review remains welcome optional
 > evidence. It never blocks Gate A, Gate C, Gate E, a book release, or project
 > completion.
+>
+> **Candidate-construction clarification, author-ratified 2026-08-30.** A
+> coherent candidate may be assembled through multiple bounded uncommitted
+> drafting slices with partial feedback. This changes neither the v6 evidence
+> ceiling nor its gate: only the final frozen fully staged tree receives a full
+> receipt, and only its one candidate commit and exact successors may use it.
 
 Adopting protocol v6 keeps Gate A administratively open while its receipt-bound
 audit and closure are pending. It also supplies the single exact forward-only
@@ -82,6 +88,15 @@ while still binding every semantic map and assurance-program field.
 
 ## 3. Execution and findings
 
+A semantic candidate may be composed through several bounded authoring and
+review slices before it is frozen. `--quick`, `--only`, fingerprint, and governed
+refresh/check modes may run while those bytes change. The workflow label
+`Drafted — not audited` carries no repository-audit warrant and permits no
+semantic commit or public completion claim. Slices may share the eventual full
+run only when they remain uncommitted and together form one coherent rule family
+or assurance concern; unrelated work may not be bundled merely to amortise the
+gate.
+
 For any semantic, executable, verifier, fixture, engine-binding, or
 generated-artifact change:
 
@@ -97,6 +112,12 @@ generated-artifact change:
 6. Correct any failure by producing a new full receipt. Never silently fall
    back from failed reuse to a full run.
 7. Preserve any failed committed audit as an append-only prefix.
+
+No intermediate semantic or WIP commit may share the later receipt. A receipt
+cannot be divided among several candidate commits or reused after any bound byte,
+path, mode, engine, or environment member changes. The exact audit, closure, and
+tracker commits remain immediate classified successors; drafting slices do not
+create a fourth transition class.
 
 A finding is resolved only by a source change, an exact classified-out
 disposition already permitted by the schema, or a retained defect row with its
@@ -223,6 +244,15 @@ environment, command results, and transcript digest. The receipt self-digest is
 computed over canonical JSON without the self-digest field; its filename must
 match. Changing any bound byte, path, mode, engine, or environment member
 requires a fresh full run.
+
+Partial drafting checks are intentionally outside that receipt contract. They
+may shorten the repair loop before freeze, but their results are neither cached
+semantic evidence nor inputs that authorise the candidate commit. The full run
+executes the complete governed suite afresh for the frozen tree. Compilation
+reuse, deterministic bounded scheduling, phase timing, and caches of immutable
+source bytes, parses, digests, counts, fingerprints, and Git objects may improve
+wall time only while watched controls preserve canonical verdicts, output order,
+failure selection, cancellation, and receipt binding.
 
 Heavyweight verifier entry points share a kernel `flock` under the Git common
 directory. Contention fails immediately with exit 75 and secret-free owner

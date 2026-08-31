@@ -2,7 +2,17 @@
 
 ## Authority, Scope & Structure
 
-`CLAUDE.md` is authoritative. Before work, read it, `TODO.md`, and `tmp.txt` (draft context only). `book-1/` contains numbered chapter/`.pins.nibli` pairs. Except for its labelled opening note, Part V, and method, prose must derive from `new-book-plans/constitution.nibli`; keep it jargon-free. Roadmaps, scaling, and implementation belong in book 2, which stays inactive. Preserve legacy `book.md`/`manifesto.md` until the TODO harvest.
+`CLAUDE.md` is authoritative. Before work, read it, `TODO.md`, and `tmp.txt`
+(draft context only). The principal product is the exact receipt-bound formally
+audited specification under `new-book-plans/`: constitution, reviewed decisions
+and contracts, executable pins/counterfactuals, projections, audit, and closure.
+`book-1/` is its jargon-free reader projection and contains numbered
+chapter/`.pins.nibli` pairs. Except for its labelled opening note, Part V, and
+method, prose must derive from `new-book-plans/constitution.nibli`. Book 2 later
+owns evidence-bound operation and transition within a declared, versioned
+reference envelope, including its local starting-state conditions, without
+silently changing the audited destination; it stays inactive until Gate C.
+Preserve legacy `book.md`/`manifesto.md` until the TODO harvest.
 
 `new-book-plans/` owns the constitution, generated spine/audits, reviewed JSON contracts, bounded record-snapshot red-team, and counterfactuals. `registry/` holds claims, snapshots, checks, and fetchers. Keep `book-1/epigraph.md` and `method.md` unnumbered.
 
@@ -52,6 +62,25 @@ named historical v5 receipt/audit epochs and closed anchor from committed
 bytes, requires their digest-bound local evidence, admits no search or alternate
 history, and is consumed by its successful closure.
 
+**Author-ratified batch workflow (2026-08-30).** One landable candidate is one
+coherent constitutional or assurance family, including every affected reviewed
+contract, formal rule, pin, counterfactual, generated projection, narrowness
+impact, derived Book 1 passage, and Book 2 handoff. Before editing, decompose it
+in `tmp.txt` into authoring/review slices targeting no more than four hours of
+active work. `Planned`, `Drafting`, and `Drafted — not audited` are workflow
+states only, not assurance postures or completion claims. Multiple slices may
+share one full run only while uncommitted. Use quick, focused, fingerprint, and
+refresh modes while bytes change; none authorises a semantic commit. Freeze and
+fully stage the complete batch only after moving durable decisions into governed
+files and removing untracked `tmp.txt`, then run one `--emit-receipt` full gate.
+A pass permits one candidate commit and its mandatory immediate audit and closure
+successors; an optional immediate tracker successor may delete a completed item.
+No intermediate semantic WIP commit, unrelated batching, changed-byte receipt
+reuse, or tracker deletion before closure is allowed. New verifier coverage
+requires a named material defect/evidence gap plus a watched failing control; new
+performance machinery requires a measured bottleneck and equivalence controls.
+Report drafting, full-gate, and administrative ETA separately.
+
 Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
 SECONDS` supplies an explicit bounded wait. `verify.sh` incrementally builds and
@@ -65,7 +94,7 @@ State-form execution retains its reviewed 64 main and 17 counterfactual
 byte-balanced shards under a bounded four-worker, canonical-output, fail-fast
 scheduler inside the native process.
 
-Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Use native `--refresh` only to regenerate generated outputs. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `./verify.sh --fingerprints assertion-surface`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs during native verification — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. The same native refresh generates and freshness-checks `full-society-ledger.md` and `full-society-reader-ledger.md`; the latter is structural navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and run the full verifier. `new-book-plans/4-strata.py` is retained wrong on purpose as a method-part exhibit — do not repair it; `18-coverage-contract-migration.py` is a reviewed-source migration helper only, outside the verify chain, and the native ledger check must validate everything it emits.
+Use release `nibli-pin --kb` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never `nibli-host`. Use native `--refresh` only to regenerate generated outputs. Edit reviewed JSON, never generated reports or spine blocks. After a rule/fact change, run `./verify.sh --fingerprints assertion-surface`, review, then copy candidate digests. Refresh reviewed digests in this order: assertion ledger (7), assurance source (8), red-team source (9), amendment and placement sources (10/11), then temporal source (12). The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs during native verification — so refresh it when either bound decision changes, and expect it to fail when a sibling adds a reviewed enum value with no mapping row. The same native refresh generates and freshness-checks `full-society-ledger.md` and `full-society-reader-ledger.md`; the latter is structural navigation only and supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability. Generate reports 9 and 12 before rendering report 8 because its reviewed references name those outputs; then generate/check reports 8, 10, and 11. Evidence roles may not relabel a gap as assurance. After every constitution edit, comments included, regenerate counterfactuals and use affected focused/quick checks while drafting; run the full verifier once on the frozen fully staged batch. `new-book-plans/4-strata.py` is retained wrong on purpose as a method-part exhibit — do not repair it; `18-coverage-contract-migration.py` is a reviewed-source migration helper only, outside the verify chain, and the native ledger check must validate everything it emits.
 
 Validate and render reader evidence with script 14 before checking the
 full-society ledger when its reviewed source changes. `--check` validates the
@@ -131,6 +160,11 @@ Match Markdown hierarchy and `NN-kebab-case.md`/`.pins.nibli` pairs. Write contr
 
 ## Commits, Pull Requests & Licensing
 
-Make one chapter or section change per content commit. Use `<area>: <outcome>` subjects and explain why in a ~72-column body. Close TODOs separately with `Tracker: <what landed> (<content SHA>)`. Pull requests summarize the claim, validation, regenerated artifacts, and tracker item; screenshots are only for rendered visual changes.
+Make one coherent assurance-batch candidate per content commit; include every
+required cross-chapter projection, but no unrelated domain. Use `<area>:
+<outcome>` subjects and explain why in a ~72-column body. After the candidate's
+audit and closure successors, close TODOs separately with `Tracker: <what landed>
+(<content SHA>)`. Pull requests summarize the claim, validation, regenerated
+artifacts, and tracker item; screenshots are only for rendered visual changes.
 
 Read `LICENSING.md` before adding files. New prose is CC-BY-4.0, code is MIT OR Apache-2.0, registry claims are CC0, and data snapshots can carry upstream terms. Legacy pre-decision material remains CC0 under the root `LICENSE`.

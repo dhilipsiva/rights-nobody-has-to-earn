@@ -1,28 +1,42 @@
 # TODO — book-2
 
-book-2 is **the operational and transition volume**: how the destination would be
-staffed, costed, resourced, implemented, operated, stressed, recovered, and
-reached. Book 1 owns the complete constitutional and social destination and is
-gated on derivation; Book 2 owns capacity, resources, technology, workflows,
-transition, deployment, empirical feasibility, and operation under ordinary and
-declared shock conditions. Its claims require **traceable evidence, costs,
-uncertainty and claim-appropriate validation**. Code, quantitative models and
-data regenerate where applicable; qualitative/lived evidence needs auditable
-provenance and methods; normative choices need their lawful decision source.
-Neither volume may claim the other's half or hide an omitted domain at the seam.
-book-1 references book-2 exactly once, at its very end.
+The principal project product is the exact versioned formally audited
+constitutional specification. Book 1 is its reader-facing derivation. Book 2 is
+**the later operational and transition volume**: how that audited destination
+would be staffed, costed, resourced, implemented, operated, stressed, recovered,
+and reached within a declared, versioned reference envelope, including its local
+starting-state conditions. It is agnostic to any one existing local society:
+alternative envelopes may produce different destination-compatible transition
+paths without silently amending the destination.
 
-> **Scope synchronisation — 2026-08-03.** Book 1's constitutional-interface mandate now
-> owns its constitutional vocabulary, delivery/breach/remedy interfaces, duty-bearer
-> oversight, and record-integrity requirements. Historical entries below that describe
-> those as Book-2-only are superseded for constitutional scope; retain here only their
-> operating machinery—budgets, staffing, procurement, service workflows, storage,
-> technology, transition, and implementation evidence. See
+The specification owns the audited constitutional destination. Book 1 renders
+it for readers and retains its three labelled non-derived elements. Book 2 owns
+capacity, resources, technology, workflows, transition, deployment, empirical
+feasibility, and operation under ordinary and declared shock conditions. Its
+claims require **traceable evidence, costs, uncertainty and claim-appropriate
+validation**. Code, quantitative models and data regenerate where applicable;
+qualitative/lived evidence needs auditable provenance and methods; normative
+choices need their lawful decision source. Neither volume may claim the other's
+half or hide an omitted domain at the seam. book-1 references book-2 exactly
+once, at its very end.
+
+> **Terminology supersession — 2026-08-30.** Retained handoff clauses below that
+> say “Book 1 owns” or “Book 1 defines” a constitutional surface are historical
+> shorthand: the formally audited specification owns or defines it, and Book 1
+> renders it. They do not make Book 1 prose a normative source.
+
+> **Scope synchronisation — 2026-08-03.** The specification's constitutional-
+> interface mandate owns its vocabulary, delivery/breach/remedy interfaces,
+> duty-bearer oversight, and record-integrity requirements; Book 1 renders them.
+> Historical entries below that describe those as Book-2-only are superseded for
+> constitutional scope; retain here only their operating machinery—budgets,
+> staffing, procurement, service workflows, storage, technology, transition, and
+> implementation evidence. See
 > `new-book-plans/book-1-constitutional-coverage-map.md` and `CLAUDE.md`.
 
 > **Full-society boundary — author-ratified 2026-08-07: two books + C then E +
 > versioned closure.** Book 2 owns the operational half of every domain assigned
-> by Book 1's canonical ledger: people, capacity, resources, finance, workflows,
+> by the specification's canonical ledger: people, capacity, resources, finance, workflows,
 > technology, transition, shocks, recovery, and claim-appropriate evidence. It
 > remains collection-only until Book 1 — First Edition actually ships at Gate C.
 > Gate D permits only immutable Book 2 — First Edition previews or release
@@ -186,6 +200,16 @@ book-2's first real act. Until Book 1 — First Edition actually ships at Gate C
 **collect here, do not work here.** Engine handoffs, when they come, follow
 book-1's channel protocol — dhilipsiva carries prompts
 between sessions, each written as one session addressing the other directly.
+
+When Book 2 activates, every operational candidate binds the exact audited
+constitutional source version and its declared, versioned reference envelope,
+including local starting-state conditions. An operational discovery that exposes
+a constitutional defect returns through a new formal-specification assurance
+batch, including every affected Book 1 projection, and the full receipt/audit/
+closure chain; Book 2 may not repair or reinterpret the destination silently.
+Its own large items should likewise be decomposed into bounded authoring/model/
+evidence slices, with `Drafted` kept distinct from whatever claim-appropriate
+validation the final operational batch requires.
 
 The seed has two sources: the hold list that lived in book-1's tracker, and the adoption
 review batch (`reviews/adoption_reviews.md`, 2026-08-02) — whose reviewers, asked what stops

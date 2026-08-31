@@ -1,13 +1,27 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-# TODO — book-1
+# TODO — audited specification and Book 1 projection
 
-**This tracker covers book-1 only.** It is strictly future-facing: a bullet is
-deleted the moment it fully lands. History belongs in git.
+**This tracker covers the principal formally audited constitutional
+specification and its Book 1 reader projection.** Book 2 has its own inactive
+tracker. This file is strictly future-facing: a bullet is deleted only after its
+frozen candidate receives a full receipt, its repository audit and closure land,
+and the tracker deletion passes the exact successor gate. Drafted work is not
+landed work. History belongs in git.
 
-The repo is heading for two new books plus a clean deletion:
+The repo is producing one formally audited specification, two controlled books,
+and a clean legacy deletion:
 
-- **book-1** — the active work, in two parts with a deliberate seam:
+- **The formally audited specification is the principal product.** Its exact
+  version includes `new-book-plans/constitution.nibli`, the reviewed decisions
+  and canonical contracts that define its scope, executable pins and
+  counterfactuals, generated projections, and the receipt-bound audit and closure
+  identifying one verified candidate. No individual report or partial green
+  check is the product by itself.
+
+- **book-1** — the active reader-facing derivation of the destination, in two
+  parts with a deliberate seam. It does not override or complete the formal
+  specification:
   - **Parts I–V — the constitutional and social destination.** What the society
     must guarantee, permit, organise and constrain, including normal, failure and
     recovery interfaces — never transition or costed operation. Derived from the
@@ -18,7 +32,11 @@ The repo is heading for two new books plus a clean deletion:
     derived spine, the compile-time firewall, the evidence/conclusion split, and
     what the logic refused. Labelled as a different kind of reading. The only
     place the formalism appears, and what answers "you built a machine and hid it".
-- **book-2** — **how the destination would be operated and reached.** It owns
+- **book-2** — **how the destination would be operated and reached within a
+  declared, versioned reference envelope, including its local starting-state
+  conditions.** It remains agnostic to any single existing local society and may
+  compare destination-compatible transition paths without silently changing the
+  audited destination. It owns
   staffing, costs, capacity, resources, technology, workflows, transition,
   deployment, empirical feasibility, and operation under ordinary and declared
   shock conditions. Its tracker is `book-2/TODO.md` — collect there, but do not
@@ -68,7 +86,7 @@ then a full-society expansion backlog and cross-cutting sections:
    versioned claim-assurance, defect-disposition, and response-stage map for
    declared social axes and envelope, a functional cross-domain model, and a
    reader-facing structural contract, ordered from scope mapping through the
-   repository adversarial audit and author closure.
+   repository adversarial audit and checker-derived closure.
 
 The remaining sections are cross-cutting: the book-1 work that remains around the
 finished text (the pre-expansion text was complete as of 2026-08-03 — epigraph, opening note,
@@ -84,6 +102,45 @@ needle census and migrate any live `owner_ref` or `source_ref` to its controllin
 decision record; several strings are also *prefixes* of longer needles. Read-only inventory, evidence gathering and neutral
 decision briefs may run in parallel; shared-tree edits, verification and commits land
 serially, one owned item at a time.
+
+**THE FORMAL-SPECIFICATION WORKING UNIT — author-ratified 2026-08-30.** A
+top-level constitutional implementation item is one coherent assurance batch,
+not a promise that every line is written in one sitting. Before shared-tree
+editing, expand the active item in `tmp.txt` into authoring/review slices
+targeting no more than four hours of active work. Every slice states its formal
+surface, positive and negative checks, counterfactual impact, governed sources
+and projections, Book 1 reader consequence, and Book 2 handoff.
+
+The workflow states are **Planned**, **Drafting**, **Drafted — not audited**,
+**Frozen candidate**, and **Audited/landed**. They describe work, not truth. They
+must never be confused with the claim postures Derived, Checked, Evidenced,
+Specified, Reasoned, or Unestablished. A drafted slice receives no audit warrant,
+may make no public completion claim, and remains part of its open parent item.
+
+Multiple slices may share one authoritative run only while uncommitted and only
+when they form one rule family or assurance concern. Use quick, focused,
+fingerprint, and governed refresh/check modes while the candidate changes. When
+all slices agree, freeze and fully stage the whole batch, run one full
+`--emit-receipt`, commit that exact candidate, and land its immediate audit and
+closure successors. Only the final tracker successor deletes the parent item.
+Never create semantic WIP commits for later receipt sharing, combine unrelated
+items merely to amortise the gate, or call a focused result an audit.
+
+Before freeze, move every durable decision from `tmp.txt` into its governed
+source and remove the scratch file. Receipt emission rejects a non-ignored
+untracked file; scratch memory cannot ride inside an audited candidate.
+
+Verification speed is a maintained property of the assurance system. Optimise
+it only through deterministic, watched, fail-closed mechanisms such as bounded
+parallel scheduling, compilation reuse, phase timing, and immutable parse/source
+caches. Do not skip semantic suites or retain semantic/mutant verdicts. Every
+status update and ETA separates active drafting/review, full-gate runtime, and
+audit/closure administration.
+
+New verifier coverage enters the authoritative gate only for a named material
+defect or evidence gap and with a watched failing control. Performance machinery
+likewise needs a measured bottleneck and equivalence controls; neither assurance
+growth nor optimisation proceeds by intuition alone.
 
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — they are collected in phase 1 rather than scattered.
@@ -244,9 +301,10 @@ categorical refusals, enhanced-use tests, or fresh temporal contracts.
   wealth, citizenship, documentation, score, compliance, contribution, a qualifying
   test, or official approval. Necessary, proportionate, contestable clinical or
   needs evidence may select a safe/accessibility-adjusted way to deliver what remains
-  owed; it may not terminate or reduce the minimum. Book 1 defines constitutional
-  interfaces; transition, operations, infrastructure and service logistics remain
-  Book 2 until the author rules otherwise.
+  owed; it may not terminate or reduce the minimum. The audited specification
+  defines constitutional interfaces and Book 1 renders them; transition,
+  operations, infrastructure and service logistics remain Book 2 until the
+  author rules otherwise.
 
 ### Expansion foundation — Map the whole society before adding rule families
 
@@ -267,6 +325,55 @@ dependency, and Gate A closed mechanically under protocol v4 at `405e480`.
 Protocol v6's receipt migration records current Gate A state only in the
 canonical ledger; this historical foundation summary does not override it.
 
+### Assurance throughput — reduce wall time without reducing the gate
+
+These are verifier-engineering batches, ordered before further large
+constitutional families because every later candidate pays their cost. They may
+improve execution, observability, and scheduling only; they may not narrow the
+receipt manifest, omit a suite, cache a semantic or mutant verdict, or alter an
+evidence ceiling.
+
+- [ ] **Expose measured phase timing, progress, and ETA without changing
+  verdicts.**
+  - Record per-run start/end/duration data for build, structural checks, each
+    executable family, counterfactuals, receipt finalisation, and the critical
+    path, canonically serialised as diagnostics. Keep ordinary output concise and
+    provide a machine-readable form whose values are not mistaken for platform-
+    independent assurance evidence unless explicitly receipt-bound.
+  - Exercise success, first-failure, cancellation, lock contention, and
+    interrupted-run controls. Prove that instrumentation changes neither command
+    ordering, exit status, canonical semantic output, receipt schema, nor evidence
+    ceiling. Each independently emitted receipt must remain valid and bind its
+    actual run times and transcript.
+  - **Done when:** one current full run identifies the measured critical path and
+    progress reports can distinguish active work from a stalled or queued gate.
+
+- [ ] **Extend bounded deterministic parallelism across independent verifier
+  families.**
+  - Derive the execution dependency graph before scheduling. Parallelise only
+    byte-independent suites, preserve canonical presentation order, stop launching
+    after the first canonical failure, terminate and reap outstanding workers, and
+    keep the Git-common-directory lock as the single heavyweight owner.
+  - Compare worker count one with each supported parallel count across passing,
+    watched-failing, timeout, crash, and cancellation cases. Canonical semantic
+    output, verdicts, and failure selection must be identical; each receipt must
+    validate with its own timing, transcript, environment, and worker metadata;
+    memory and process counts remain bounded.
+  - **Done when:** the same frozen candidate passes equivalence controls and a
+    measured full receipt run is materially faster without a coverage or evidence-
+    ceiling change.
+
+- [ ] **Measure WSL and native Windows verification before declaring a supported
+  faster runner.**
+  - Bind the exact repository tree, Nibli source revision, verifier bytes,
+    environment members, filesystem semantics, worker count, and hardware class.
+    Compare build, engine, I/O, and suite phases rather than one aggregate time.
+  - A native Windows path is supported only if path handling, locking, process
+    cancellation, canonical output, and receipt validation match the Linux/WSL
+    contract. A faster unbound run remains a diagnostic, not a semantic gate.
+  - **Done when:** the repository records a reproducible runner decision and the
+    normal command selects no platform merely from anecdotal elapsed time.
+
 ### Expansion phase 2 — Specify the comprehensive constitution
 
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
@@ -274,6 +381,14 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Define income security and social insurance without making survival
   contributory.**
+  - **Planned authoring slices:** freeze the noncontributory-floor and
+    above-floor boundary; define purpose-limited contribution history and its data
+    wall; specify event-specific eligibility and portable supplement effects;
+    specify correction, fraud, transfer, employer-insolvency continuity, and
+    remedy; build positive, refusal, stale-record, and counterfactual suites;
+    update reviewed projections, derived Book 1 prose, and the Book 2 handoff;
+    then freeze one candidate for the full receipt/audit/closure chain. Track the
+    active slice in `tmp.txt`; none is independently audited or committed.
   - Cover illness, disability, unemployment, caregiving, workplace injury,
     ageing, survivor support, and pensions with portable, accessible, contestable
     above-floor supplements. The unconditional floor remains noncontributory.
@@ -351,10 +466,10 @@ Gate B; it does not claim Book 2 operations or feasibility.
     political manipulation, stale data, method drift, suppression, identity reuse,
     and attempts to feed diagnostics into an individual consequence.
   - Book 2 owns collection, sampling, linkage, privacy technology, calibration,
-    thresholds, and empirical evaluation. Book 1 owns authority, purposes,
-    permitted consumers, non-use walls, burdens, contestability, and public
-    accountability. Nibli may consume an authenticated, contestable, bounded
-    finding; do not
+    thresholds, and empirical evaluation. The audited specification owns
+    authority, purposes, permitted consumers, non-use walls, burdens,
+    contestability, and public accountability; Book 1 renders those controls.
+    Nibli may consume an authenticated, contestable, bounded finding; do not
     open an engine handoff merely for statistics or claim it computes disparities,
     authenticates identity, or proves institutional action.
 
@@ -366,10 +481,11 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Distinguish that certified candidate from publication, uniquely effective
     deployment, and later rollback or supersession. The current amendment audit
     manually applies candidates and proves only named bounded consequences.
-  - Book 1 defines exact-source identity and the successor, conflict, replay, and
-    remedy contract. A host harness and Book 2 must authenticate digests/signatures,
-    store and publish versions, select/deploy the effective source, preserve rollback
-    evidence, and launch fresh reasoner sessions against that exact version.
+  - The audited specification defines exact-source identity and the successor,
+    conflict, replay, and remedy contract; Book 1 renders that contract. A host
+    harness and Book 2 must authenticate digests/signatures, store and publish
+    versions, select/deploy the effective source, preserve rollback evidence, and
+    launch fresh reasoner sessions against that exact version.
   - Test stale base, replay, divergent candidates, unauthorised vocabulary change,
     semantic mismatch, rollback, and query against the wrong source. Nibli may
     reason about supplied version facts but may not be credited with authenticating,
@@ -1647,10 +1763,10 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./verify.sh --quick         # 2.22 s with the same pinned binary (2026-08-05): skips
                             #   chapter/floor pins, executable record snapshots,
                             #   amendment and placement executions, and counterfactuals
-                            #   — never sufficient after a constitution edit
+                            #   — drafting feedback only, never a semantic gate
 ./verify.sh --only <file>   # one pin file, selected release engine, --allow-shell, and
                             #   the fixture's own KB chosen for counterfactual files;
-                            #   partial by design — full run before committing
+                            #   partial by design — use while the batch changes
 ./verify.sh --table         # emit the claim-to-query table extracted from the pins
 ```
 
@@ -1666,6 +1782,13 @@ silent full run. Heavyweight entry points share one Git-common-directory lock;
 contention exits 75 unless an explicit bounded `--wait-for-lock SECONDS` is
 supplied. The older timings, suite inventory, and v1 workflow remain
 historical measurements, not current commit instructions.
+
+The 2026-08-30 workflow clarification changes candidate construction, not that
+gate. A coherent batch may be built through several bounded **uncommitted**
+authoring slices, using quick and focused modes while bytes move. `Drafted — not
+audited` carries no receipt and authorises no semantic commit. Once frozen, the
+whole fully staged batch receives one receipt and one candidate commit; changed
+bytes, intermediate semantic commits, or a second candidate cannot share it.
 
 The only exception is the exact `FS-SAU-42` forward recovery defined in section
 5 of `new-book-plans/full-society-scope-review-protocol.md`. It validates the

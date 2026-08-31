@@ -2,7 +2,7 @@
 
 # Full-Society Volume, Edition, and Stopping Boundary Decision
 
-> **Status: author-ratified 2026-08-07; reference-envelope ownership clarified 2026-08-13; external-human gate dependencies removed and claims narrowed 2026-08-15.** This is a scope,
+> **Status: author-ratified 2026-08-07; reference-envelope ownership clarified 2026-08-13; external-human gate dependencies removed and claims narrowed 2026-08-15; product hierarchy clarified 2026-08-30.** This is a scope,
 > publication, and public-claim decision.
 > It does not enact a constitutional rule, activate Book 2, or create a tag,
 > preview, edition, print file, or release.
@@ -11,11 +11,26 @@
 
 The full-society mandate belongs to two complete but different volumes.
 
-- **Book 1 is the destination.** It owns constitutional invariants, democratic
-  steering, institutions, protected private and civic life, and the interfaces
-  for ordinary function, failure, challenge, remedy, restoration, and recovery.
-- **Book 2 is the road and operating model.** It owns staffing, costs, capacity,
-  resources, technology, workflows, transition, deployment, empirical
+**2026-08-30 product-hierarchy clarification.** The principal project product is
+the versioned, formally audited constitutional specification: the executable
+constitution together with its reviewed scope and assurance contracts,
+executable tests and counterfactuals, generated projections, and receipt-bound
+repository audit and closure. Book 1 is the reader-facing derivation of that
+destination, subject to its three labelled non-derived elements. Book 2 is the
+later operational and transition volume. This clarification changes no Gate
+A–E condition, public claim, constitutional rule, or substantive allocation
+between the volumes.
+
+- **The audited specification defines the destination; Book 1 renders it.** The
+  specification owns constitutional invariants, democratic steering,
+  institutions, protected private and civic life, and the interfaces for
+  ordinary function, failure, challenge, remedy, restoration, and recovery.
+- **Book 2 is the road and operating model.** It begins from a declared,
+  versioned reference envelope, including its local starting-state conditions,
+  rather than assuming one existing local society. It may compare destination-
+  compatible transition paths without changing the audited destination. It owns
+  staffing, costs, capacity, resources, technology,
+  workflows, transition, deployment, empirical
   feasibility, and operation under ordinary and declared shock conditions.
 - **Only the two books together may carry the full-society claim.** Neither
   volume may claim that its own assurance method proves the other volume's
@@ -166,7 +181,9 @@ The closure record binds the exact gate and permitted claim, canonical-source
 version, reference envelope, candidate or edition identities, audit cut-off,
 assurance records, residuals, and claim limitations. A semantic change after
 the cut-off requires a new audit and candidate. Closure is never inferred from
-a green check: the author ratifies it in a separate act.
+a green check. Under protocol v6 it exists only when the checker-derived closure
+record is admitted by the exact structural commit gate and committed as the
+candidate audit's immediate closure successor; no separate author act is required.
 
 A finding is material when accepting it could change a declared right, liberty,
 power, duty, protected private boundary, cross-domain dependency, ordinary-life

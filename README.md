@@ -1,23 +1,30 @@
 # The Rights Nobody Has to Earn
 
-*A design for a society worked out to the point where it catches its own failures.*
+*A formally audited design for a society, worked out to the point where it
+catches its own failures.*
 
 A worked design for a society in which a short list of basic things — safety, food,
 shelter, care, learning, speech, belief, company — is owed to every person with no
 qualifying condition. You do not have to work, contribute, belong, register or behave.
 
-The design is written as a formal constitution, and the book's chapter order is computed
-from it rather than chosen. Nothing goes into the book that the constitution does not
-derive. That is also how the book finds its own defects, and it reports them: most of
-what is owed never actually arrives, and the protection that does exist covers
-imprisonment and stops there.
+The principal product is the exact, versioned, formally audited constitutional
+specification: its executable constitution, reviewed scope and assurance
+contracts, tests and counterfactuals, generated projections, and receipt-bound
+audit and closure. Book 1 is its reader-facing derivation. Its chapter order is
+computed from the constitution rather than chosen, and—apart from three labelled
+exceptions—nothing goes into it that the constitution does not derive. Book 2
+will later describe evidence-bound operation and transition within a declared,
+versioned reference envelope, including its local starting-state conditions,
+without changing the audited destination.
 
 ## What is here
 
 | | |
 |---|---|
-| `book-1/` | the chapters, each with a sidecar of pinned queries against the constitution |
-| `new-book-plans/constitution.nibli` | the constitution, in [nibli](https://github.com/dhilipsiva/nibli) KR |
+| `new-book-plans/constitution.nibli` | the executable constitution, in [nibli](https://github.com/dhilipsiva/nibli) KR |
+| `new-book-plans/full-society-ledger.json` | the reviewed canonical cross-domain routing source owning stable domain, claim, body, route, external-assumption and envelope IDs; its coverage, allocation, reader-navigation and Book 2 routing reports are projections, while sibling assurance cases retain their own reviewed sources |
+| `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
+| `book-1/` | the reader-facing derived chapters, each with a sidecar of pinned queries against the constitution |
 | `new-book-plans/3-spine.md` | the computed chapter order — generated, not hand-written |
 | `new-book-plans/assertion-surface-audit.md` | the generated inventory of derived relations and writable-premise risks |
 | `new-book-plans/assertion-surface-contracts.json` | the reviewed authority, provenance, harm, challenge and risk contracts behind that audit |
@@ -32,8 +39,6 @@ imprisonment and stops there.
 | `new-book-plans/temporal-assurance-case.md` | the generated staged T1/T2/T3 transition, order, renewal and residual-liveness assurance record |
 | `new-book-plans/temporal-assurance-case.json` | the reviewed temporal inputs, source/effect bindings, attacks, fresh-process pairs and narrowness ledger |
 | `new-book-plans/full-society-ledger.md` | the generated full-society domain-and-layer routing report: declared axes, the five layers, domains, split coverage claims, bodies, routes, enum mapping and the stopping rule |
-| `new-book-plans/full-society-ledger.json` | the reviewed canonical full-society source owning stable domain, claim, body, route, external-assumption and envelope IDs; every coverage, assurance, reader and Book 2 view is a projection of it |
-| `new-book-plans/counterfactual/` | reviewed one-change constitution variants, so deletion, replacement and addition consequences are executed rather than argued |
 | `verify.sh` | the one check: a tiny build shim for the single native `rights-verify` binary |
 
 ```bash
@@ -75,6 +80,17 @@ merge, an intervening unclassified commit, or any unexpected path, mode,
 engine, environment, or input change fails closed; the gate never launches a
 silent full run.
 
+The author-ratified 2026-08-30 workflow uses two speeds without creating two
+standards. A coherent constitutional or assurance batch is decomposed into
+small, uncommitted authoring/review slices. Quick, focused, fingerprint, and
+governed refresh/check modes provide feedback while those bytes change.
+`Drafted — not audited` is only a workflow state and carries no claim warrant.
+Once the complete batch freezes, one fully staged full receipt gates its single
+candidate commit, followed immediately by the mandatory audit and closure
+successors. An optional immediate tracker successor may delete a completed item.
+Intermediate semantic commits cannot share that receipt, and unrelated work is
+never bundled merely to save a full run.
+
 One exact `FS-SAU-42` forward recovery is defined by the scope-review protocol
 for two already-published v5 audit epochs whose closure successors were
 omitted. It accepts only the named commits, receipts, closed anchor, committed
@@ -114,8 +130,9 @@ row's opaque shelter entitlement from that row's complete standing route, withou
 standing overlay. The audit adds no runtime placement alarm and does not prove that
 housing or a reported placement exists in the world.
 
-A second book — how you would actually build this, organisationally and technically — is
-planned and not started.
+A second book—how different current societies could reach and operate the audited
+destination within declared, versioned reference envelopes, organisationally and
+technically—is planned and not started.
 
 ## Licence
 

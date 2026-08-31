@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-08-29-economic-active-reference-repair-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
+Canonical source version: `fs-ledger-2026-08-30-formal-specification-workflow-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -29,7 +29,7 @@ Coverage-family drafting states:
 - FS-CVF-016 Source-bound obligations and non-reciprocal rights: prose-landed — Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved.
 - FS-CVF-017 Economic, labour, property, fiscal, scarcity, and voluntary-sphere effects: prose-landed — All 145 person-held effects, their separately typed always-on duties, the three non-power carry result interfaces, executable tests, counterfactuals, and approved Book 1 prose are complete. They establish only source-bound legal effects over supplied records; no operation, calculation, delivery, remedy, institutional act, liveness, calibration, external truth, or feasibility is proved.
 
-Canonical source SHA-256: `c4c1863afe6b7440454d0cb7158e25844cc8262a582d97dc5b167fa7360351ee`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `c9e954c5bd12cd648f5630ecf9bd14a06f84d5bfbaec7b6e80458b68c7fab1e7`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
@@ -69,7 +69,7 @@ Canonical source SHA-256: `c4c1863afe6b7440454d0cb7158e25844cc8262a582d97dc5b167
 | `review_commissions` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `proposals` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `review_events` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
-| `scope_audits` | 54 | `08ede3db120525bd8e5cd17a4050dae3827f517c35854741f5eeffbccdb56db7` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22, FS-SAU-23, FS-SAU-24, FS-SAU-25, FS-SAU-26, FS-SAU-27, FS-SAU-28, FS-SAU-29, FS-SAU-30, FS-SAU-31, FS-SAU-32, FS-SAU-33, FS-SAU-34, FS-SAU-35-PENDING, FS-SAU-35, FS-SAU-36-PENDING, FS-SAU-36, FS-SAU-37-PENDING, FS-SAU-37, FS-SAU-38-PENDING, FS-SAU-38, FS-SAU-39-PENDING, FS-SAU-39, FS-SAU-40-PENDING, FS-SAU-40, FS-SAU-41-PENDING, FS-SAU-41, FS-SAU-42-PENDING, FS-SAU-42, FS-SAU-43-PENDING, FS-SAU-43, FS-SAU-44-PENDING, FS-SAU-44 |
+| `scope_audits` | 55 | `4f2d8938e2507b0e4ba02bab8e90b88b01fed9b28897388361a5d305347a20f6` | FS-SAU-01, FS-SAU-02, FS-SAU-03, FS-SAU-04, FS-SAU-05, FS-SAU-06, FS-SAU-07, FS-SAU-08, FS-SAU-09, FS-SAU-10, FS-SAU-11, FS-SAU-12, FS-SAU-13, FS-SAU-14, FS-SAU-15, FS-SAU-16, FS-SAU-17, FS-SAU-18, FS-SAU-19, FS-SAU-20, FS-SAU-21, FS-SAU-22, FS-SAU-23, FS-SAU-24, FS-SAU-25, FS-SAU-26, FS-SAU-27, FS-SAU-28, FS-SAU-29, FS-SAU-30, FS-SAU-31, FS-SAU-32, FS-SAU-33, FS-SAU-34, FS-SAU-35-PENDING, FS-SAU-35, FS-SAU-36-PENDING, FS-SAU-36, FS-SAU-37-PENDING, FS-SAU-37, FS-SAU-38-PENDING, FS-SAU-38, FS-SAU-39-PENDING, FS-SAU-39, FS-SAU-40-PENDING, FS-SAU-40, FS-SAU-41-PENDING, FS-SAU-41, FS-SAU-42-PENDING, FS-SAU-42, FS-SAU-43-PENDING, FS-SAU-43, FS-SAU-44-PENDING, FS-SAU-44, FS-SAU-45-PENDING |
 | `deferred_populations` | 0 | `4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945` | empty |
 | `closure_requirement_profiles` | 8 | `af587e64a9f295c7c01909abee8d09f39bae8a5da141d10a280884606eb8d70a` | FS-CLR-01, FS-CLR-02, FS-CLR-03, FS-CLR-04, FS-CLR-05, FS-CLR-06, FS-CLR-07, FS-CLR-08 |
 | `closure_claim_contracts` | 40 | `fb7c307abf1cc12ac21c888b424a8aab4deca108522f3e1a9ebd7c8fe2fcc60c` | FS-CCT-01, FS-CCT-02, FS-CCT-03, FS-CCT-04, FS-CCT-05, FS-CCT-06, FS-CCT-07, FS-CCT-08, FS-CCT-09, FS-CCT-10, FS-CCT-11, FS-CCT-12, FS-CCT-13, FS-CCT-14, FS-CCT-15, FS-CCT-16, FS-CCT-17, FS-CCT-18, FS-CCT-19, FS-CCT-20, FS-CCT-21, FS-CCT-22, FS-CCT-23, FS-CCT-24, FS-CCT-25, FS-CCT-26, FS-CCT-27, FS-CCT-28, FS-CCT-29, FS-CCT-30, FS-CCT-31, FS-CCT-32, FS-CCT-33, FS-CCT-34, FS-CCT-35, FS-CCT-36, FS-CCT-37, FS-CCT-38, FS-CCT-39, FS-CCT-40 |

@@ -4,24 +4,110 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-A book-writing project heading for **two new books**, with the original two manuscripts slated for deletion:
+A formally audited constitutional-specification project with two books derived
+from and constrained by that work. The principal product is the exact,
+versioned specification: `new-book-plans/constitution.nibli`, the reviewed
+decisions and canonical contracts that give it scope and meaning, its executable
+pins and counterfactuals, its generated projections, and the receipt-bound audit
+and closure that identify one verified candidate. No generated report, book
+passage, or green partial check is the specification by itself.
 
-- **book-1** — the active work. Two parts to its scope, and the seam is deliberate:
+The two books have different downstream roles, and the original two manuscripts
+remain slated for deletion:
+
+- **book-1** — the active reader-facing derivation of the constitutional
+  destination. It does not override or complete the formal specification. Two
+  parts define its scope, and the seam is deliberate:
   - **Parts I–V — the constitutional and social destination.** They describe what an ideal society must guarantee, permit, organise, and constrain, including normal, failure, and recovery interfaces — **never transition or costed operation.** No roadmap, no MVS, no scaling story. The spine is *derived*: chapter order is computed from the dependency stratification of the formal constitution in `new-book-plans/constitution.nibli`, and content is **gated on that constitution** — if the KR does not derive it, it does not go in. **Jargon-free**: a general reader can finish Part V and stop, and the formalism is never mentioned here. Exactly three elements are exempt from the derivation gate and each is labelled in the text: a short non-derived **opening note**, **Part V** (argument and evidence), and the final method part. What they verify is the **data**.
   - **Final part — the method, explicitly optional.** Shows the machinery to whoever wants it: the constitution, the derived spine, the compile-time firewall, the evidence/conclusion split, and what the logic *refused*. Clearly labelled as a different kind of reading. This is the only place in book-1 where the formalism appears, and its existence is what answers the "you built a machine and hid it" objection.
-- **book-2** — **how the destination would be operated and reached.** It owns staffing, costs, capacity, resources, technology, workflows, transition, deployment, empirical feasibility, and operation under ordinary and declared shock conditions. Where book-1's claims are gated on derivation, book-2's require claim-appropriate evidence, costs, and uncertainty. Its unordered seed tracker is `book-2/TODO.md`; collect there, but do not execute Book 2 work until Book 1 — First Edition actually ships at Gate C. book-1 references it exactly once, at the very end.
+- **book-2** — **how the destination would be operated and reached within a
+  declared, versioned reference envelope, including its local starting-state
+  conditions.** It is agnostic to any one existing local society: it may model
+  different destination-compatible transition paths, but it may not silently
+  change the audited destination. It owns
+  staffing, costs, capacity, resources, technology, workflows, transition,
+  deployment, empirical feasibility, and operation under ordinary and declared
+  shock conditions. Where book-1's claims are gated on derivation, book-2's
+  require claim-appropriate evidence, costs, and uncertainty. Its unordered seed
+  tracker is `book-2/TODO.md`; collect there, but do not execute Book 2 work until
+  Book 1 — First Edition actually ships at Gate C. book-1 references it exactly
+  once, at the very end.
 - **`book.md` and `manifesto.md`** — legacy. To be deleted once both new books exist, but **not before** the legacy-harvest section of `TODO.md` is complete: `book.md`'s 55 sourced references, the nine historical cases, the Bharati poem, and the five bright lines all need porting first.
 
-So this is no longer only Markdown editing: there is a constitution to verify against the real engine, and a data pipeline to build. See `TODO.md`.
+So this is not a book project with an unusually large test suite. It is an
+audited specification project whose books are controlled projections. See
+`TODO.md`.
 
-## Author-Ratified Book 1 Mandate — 2026-08-03
+**Terminology supersession — 2026-08-30.** In retained historical rulings and
+handoffs, “Book 1 owns” or “Book 1 defines” a constitutional surface means that
+the formally audited specification owns or defines it and Book 1 renders it.
+Such wording never makes prose a normative source. Book-only ownership is
+limited to reader composition and the three labelled non-derived elements.
 
-**The author has chosen the expanded mandate.** Book 1 is to become a complete
-constitutional interface for a free society: universal standing; non-reciprocal
-material floors; liberties and due process; democratic authority; public duties;
-separation of public functions; records and accountability; locality; emergencies;
-and common-resource/intergenerational limits. This is a scope decision, **not** a
-claim that the present constitution or book already achieves that coverage.
+## Author-Ratified Formal-Specification Workflow — 2026-08-30
+
+The landable unit is one **coherent assurance batch**, not one paragraph, one
+chapter, or an unrelated bundle assembled to amortise verification. A batch
+contains one constitutional rule family or other single assurance concern and
+all of the dependencies needed to make it honest: reviewed contract changes,
+formal source, pins, counterfactuals, generated projections, narrowness impacts,
+derived Book 1 prose, and any Book 2 handoff affected by that family.
+
+Before shared-tree editing, decompose the batch in `tmp.txt` into authoring and
+review slices targeting no more than four hours of active work each. Every slice
+names its formal surface, affected positive and negative checks, source-derived
+artifacts, reader projection, and handoff. Slices move through **Planned**,
+**Drafting**, and **Drafted — not audited**. Those are workflow states only;
+they are orthogonal to the assurance postures Derived, Checked, Evidenced,
+Specified, Reasoned, and Unestablished. A drafted slice is not landed, verified,
+closed, or eligible for a public claim.
+
+Before candidate freeze, move every durable decision out of `tmp.txt` into its
+governed source and remove the scratch file. Receipt emission requires it to be
+absent unless the repository deliberately begins tracking it; an untracked
+scratch file blocks the candidate.
+
+Several slices may form one batch only while they remain uncommitted. Use
+`--quick`, `--only`, fingerprints, and the affected native refresh/check paths
+while bytes are still changing. These checks provide fast feedback and never
+authorise a semantic commit. Regenerate the counterfactual copies after every
+constitution edit, comments included, but defer the authoritative full run
+until the coherent batch is complete.
+
+Then freeze the candidate: finish every affected projection and source digest,
+review the complete diff and narrowness impact, stage the exact tree with no
+other change, and run one `--emit-receipt` full verification. Do not run quick
+immediately before that unchanged full candidate. A failure returns the batch to
+Drafting and requires a new receipt after repair. A pass permits exactly one
+candidate commit followed immediately by the mandatory classified audit and
+closure successors. When that closure completes a tracked item, one optional
+immediate tracker successor may delete it. No semantic WIP commit may share a
+later receipt, no receipt may be reused across changed bytes, and no tracker item
+is deleted before audited closure.
+
+Verification latency remains an engineering target, not a reason to weaken the
+gate. Deterministic bounded parallelism, compilation reuse, phase timing, and
+immutable parse/source caches are welcome when watched controls prove identical
+results and fail-closed behaviour. Skipping suites, retaining semantic or mutant
+verdicts, accepting nondeterministic output, or treating a partial check as a
+receipt is not. Progress and ETA reports separate active drafting/review time,
+authoritative gate time, and administrative audit/closure time.
+
+New verifier coverage requires a named material defect or evidence gap and a
+watched failing control before it joins the authoritative gate. New performance
+machinery requires a measured bottleneck and equivalence controls. Assurance
+accretion and optimisation by intuition are both refused.
+
+## Author-Ratified Specification and Book 1 Mandate — 2026-08-03
+
+**The author has chosen the expanded mandate.** The formally audited
+specification is to become a complete constitutional interface for a free
+society: universal standing; non-reciprocal material floors; liberties and due
+process; democratic authority; public duties; separation of public functions;
+records and accountability; locality; emergencies; and common-resource/
+intergenerational limits. Book 1 must render that interface accurately for
+readers. This is a scope decision, **not** a claim that the present specification
+or book already achieves that coverage.
 
 [`new-book-plans/book-1-constitutional-coverage-map.md`](new-book-plans/book-1-constitutional-coverage-map.md)
 is the controlling planning artifact. Before a new domain is drafted, its row must
@@ -33,18 +119,20 @@ derived prose.
 
 This supersedes as a **scope class** the previous Book-2-only governance-vocabulary
 ruling, learning-only delivery ruling, Book-2-only duty-bearer-oversight ruling,
-and roster-integrity-as-disclosure-only ruling. Book 1 may now add coherent
-constitutional rule families for public authority, democratic limits, delivery
-evidence, breach, continuity, remedy, review, and record integrity. It may not
-smuggle in operations: transition, tax rates, budgets, staffing, procurement,
-facilities, service workflows, clocks/calendars, record technology, cryptography,
-and case administration remain Book 2.
+and roster-integrity-as-disclosure-only ruling. The specification may now add
+coherent constitutional rule families for public authority, democratic limits,
+delivery evidence, breach, continuity, remedy, review, and record integrity;
+Book 1 must project each landed family. Neither may smuggle in operations:
+transition, tax rates, budgets, staffing, procurement, facilities, service
+workflows, clocks/calendars, record technology, cryptography, and case
+administration remain Book 2.
 
 **The full-society volume, edition, and stopping boundary is author-ratified
-(2026-08-07): two-book model + C then E + versioned closure.** Book 1 owns the
-complete constitutional and social destination: constitutional invariants,
-democratic steering, institutions, protected private/civic life, and normal,
-failure, challenge, remedy, restoration, and recovery interfaces. Book 2 owns
+(2026-08-07): two-book model + C then E + versioned closure.** The formally
+audited specification owns the complete constitutional and social destination:
+constitutional invariants, democratic steering, institutions, protected
+private/civic life, and normal, failure, challenge, remedy, restoration, and
+recovery interfaces. Book 1 is its controlled reader projection. Book 2 owns
 staffing, costs, capacity, resources, technology, workflows, transition,
 deployment, empirical feasibility, and operation under ordinary and declared
 shock conditions. Book 2 remains collection-only until Book 1 — First Edition
@@ -307,12 +395,13 @@ non-repetition. No remedy may take another person's standing, floor, core libert
 due process, or political equality, or assign guilt solely by group membership.
 
 The ruling is **ratified but unimplemented**. It creates no equality predicate,
-finding, duty, remedy, institution, chapter, or public coverage claim. Book 1 owns
-the legal definitions, reach, proof, review, continuity, remedy, and failure
-polarity. Book 2 owns collection and statistical methods, staffing, costs,
-accommodation operations, monitoring, enforcement workflows, and empirical
-evaluation. Nibli may consume an authenticated external finding; it is not a
-population-statistics, identity-authentication, or institutional-liveness system.
+finding, duty, remedy, institution, chapter, or public coverage claim. The
+specification owns the legal definitions, reach, proof, review, continuity,
+remedy, and failure polarity; Book 1 renders them. Book 2 owns collection and
+statistical methods, staffing, costs, accommodation operations, monitoring,
+enforcement workflows, and empirical evaluation. Nibli may consume an
+authenticated external finding; it is not a population-statistics,
+identity-authentication, or institutional-liveness system.
 The controlling record is
 `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
 
@@ -548,14 +637,15 @@ finding, duty, institution, chapter, age number, programme, or public claim.
 proxy; `home` split by legal effect; and absence-based `parent`, `married`, and
 `sibling` independence replaced by case-bound conflict findings. `work(Care)`,
 `healthy`, `free`, `public`, and `owe` cannot stand in for care, consent,
-emancipation, collective status, or responsibility. Book 1 owns statuses,
-rights, duties, intervention and consent limits, collective competences,
-evidence, challenge, continuity, remedy, and failure polarity. Book 2 owns
-service capacity, family and care proceedings, clinical and death-record
-operations, land/title administration, language services, consultation,
-staffing, costs, and workflows. Nibli may consume bounded authenticated findings;
-it does not decide best interests, capacity, consent, pregnancy, parentage,
-death, collective identity, membership, title, or institutional action. The
+emancipation, collective status, or responsibility. The specification owns
+statuses, rights, duties, intervention and consent limits, collective
+competences, evidence, challenge, continuity, remedy, and failure polarity;
+Book 1 renders them. Book 2 owns service capacity, family and care proceedings,
+clinical and death-record operations, land/title administration, language
+services, consultation, staffing, costs, and workflows. Nibli may consume
+bounded authenticated findings; it does not decide best interests, capacity,
+consent, pregnancy, parentage, death, collective identity, membership, title,
+or institutional action. The
 controlling record is
 `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
 
@@ -704,15 +794,16 @@ aggregation, and unsupported WIT raw-query parity are excluded. See
 `new-book-plans/nibli-versioned-ecological-and-animal-finding-capability-audit.md`.
 
 The ruling is **ratified but unimplemented**. It creates no predicate, rule,
-finding, ceiling, duty, remedy, institution, chapter, programme, or public claim.
-Book 1 owns rights and protected conditions, legal limits, evidence burdens,
-institutions, federal competence, challenge, continuity, liability, remedy, and
-failure polarity. Book 2 owns measurements, numerical ceilings and budgets,
-inventories, models, species standards, monitoring, restoration and veterinary
-capacity, food and research transition, staffing, costs, workflows, and
-feasibility. Nibli may consume bounded authenticated findings; it does not
-measure ecology, decide sentience or causation, choose a ceiling, authenticate
-science, invent future preferences, or perform institutional action. The
+finding, ceiling, duty, remedy, institution, chapter, programme, or public
+claim. The specification owns rights and protected conditions, legal limits,
+evidence burdens, institutions, federal competence, challenge, continuity,
+liability, remedy, and failure polarity; Book 1 renders them. Book 2 owns
+measurements, numerical ceilings and budgets, inventories, models, species
+standards, monitoring, restoration and veterinary capacity, food and research
+transition, staffing, costs, workflows, and feasibility. Nibli may consume
+bounded authenticated findings; it does not measure ecology, decide sentience
+or causation, choose a ceiling, authenticate science, invent future preferences,
+or perform institutional action. The
 controlling record is
 `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
 
@@ -1856,9 +1947,13 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `book.md` — the entire book in a single Markdown file (~2970 lines).
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
-- `TODO.md` — the **book-1** work tracker, arranged **in the order
-  dependencies permit**, refreshed 2026-08-07 for the ratified full-society
-  boundary. The substantive-equality, bounded-plural-economy, family/
+- `TODO.md` — the formal-specification and **book-1** projection work tracker,
+  arranged **in the order dependencies permit**, refreshed 2026-08-30 for the
+  formal-specification-first assurance-batch workflow. Its open top-level items
+  are coherent candidate batches; their bounded authoring slices are planning
+  and progress units, not independent audited deliverables. A task fully lands
+  only through the receipt-bound candidate, audit, closure, and tracker chain.
+  The substantive-equality, bounded-plural-economy, family/
   dependency/reproduction/collective-plurality, ecological/future-condition/
   commons/non-human-animal, and public-safety/defence/emergency/external-power
   baselines are settled, as are the assurance portfolio, the narrative
@@ -1882,7 +1977,46 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   institution, operation, or narrative current. Delete a bullet when it fully
   lands; update it if partly done. Book 2 remains inactive until Book 1 — First
   Edition actually ships at Gate C.
-- `new-book-plans/` — planning material for book-1, plus the constitution `constitution.nibli`. `3-spine.md`'s stratification table and chapter order are **generated** — don't edit the block by hand and don't transcribe its counts elsewhere; it went stale twice that way. The generated assertion-surface, record-integrity assurance, flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and staged temporal-assurance reports are governed by reviewed sources; edit those sources and use the native verifier's generation path, never hand-edit a report. The amendment audit applies exact bounded source mutations but does not enact them or establish source-transition assurance. The placement audit applies exact bounded source mutations but adds no runtime placement rule or delivery evidence. Refresh reviewed digests in source order: assertion ledger (7), assurance (8), red-team (9), amendment and placement (10/11), then temporal (12). Generate reports 9 and 12 before rendering report 8 because its reviewed references name both outputs; then generate/check reports 8, 10, and 11. The full-society ledger (13) sits off that chain — it digest-binds only the assurance-portfolio and full-society-boundary decisions and re-reads the sibling reviewed JSONs during native verification — so refresh it when either bound decision changes, and expect its enum-mapping closure to fail when a sibling adds a reviewed enum value with no mapping row. Propagate every upstream digest before regenerating downstream artifacts. Check every generated artifact through `./verify.sh --quick`; execute the complete semantic suites through `./verify.sh`. Script 19's native port checker-owns the exact state-form source block and runs structurally in both quick and full verification; its dedicated pin suite and watched source-review mutation execute only in the full path. Verify constitution claims with release `nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` — its wasm predates the `derived_only` and `entitled` corpus entries and silently drops the entire rights floor and every conclusion-only gate while still answering queries. Two historical utilities are deliberately outside the native verify chain: `4-strata.py` is **retained wrong on purpose** as the method part's tooling-blindness exhibit — nothing consumes it, its parser disagrees with the engine by design, and it must not be repaired; every real figure comes from the embedded Nibli engine. `18-coverage-contract-migration.py` is a reviewed-source migration helper that rewrites one exact source-family prefix of `full-society-ledger.json` to the current ledger schema; it is not an assurance route, and the native ledger checker must validate everything it emits.
+- `new-book-plans/` — the principal specification area: the executable
+  constitution `constitution.nibli`, reviewed decisions and canonical contracts,
+  pins, counterfactuals, generated projections, receipts, and closure evidence.
+  `3-spine.md`'s stratification table and chapter order are **generated** — don't
+  edit the block by hand and don't transcribe its counts elsewhere; it went stale
+  twice that way. The generated assertion-surface, record-integrity assurance,
+  flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and
+  staged temporal-assurance reports are governed by reviewed sources; edit those
+  sources and use the native verifier's generation path, never hand-edit a report.
+  The amendment audit applies exact bounded source mutations but does not enact
+  them or establish source-transition assurance. The placement audit applies
+  exact bounded source mutations but adds no runtime placement rule or delivery
+  evidence. Refresh reviewed digests in source order: assertion ledger (7),
+  assurance (8), red-team (9), amendment and placement (10/11), then temporal
+  (12). Generate reports 9 and 12 before rendering report 8 because its reviewed
+  references name both outputs; then generate/check reports 8, 10, and 11. The
+  full-society ledger (13) sits off that chain — it digest-binds only the
+  assurance-portfolio and full-society-boundary decisions and re-reads the
+  sibling reviewed JSONs during native verification — so refresh it when either
+  bound decision changes, and expect its enum-mapping closure to fail when a
+  sibling adds a reviewed enum value with no mapping row. Propagate every
+  upstream digest before regenerating downstream artifacts. During an unfinished
+  batch, check affected generated artifacts through `./verify.sh --quick` and use
+  focused modes for fast feedback. The frozen fully staged batch receives one
+  complete semantic `--emit-receipt` run; partial modes never gate its commit.
+  Script 19's native port checker-owns the exact state-form source block and runs
+  structurally in both quick and full verification; its dedicated pin suite and
+  watched source-review mutation execute only in the full path. Verify
+  constitution claims with release `nibli-pin` at or after
+  `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` —
+  its wasm predates the `derived_only` and `entitled` corpus entries and silently
+  drops the entire rights floor and every conclusion-only gate while still
+  answering queries. Two historical utilities are deliberately outside the
+  native verify chain: `4-strata.py` is **retained wrong on purpose** as the
+  method part's tooling-blindness exhibit — nothing consumes it, its parser
+  disagrees with the engine by design, and it must not be repaired; every real
+  figure comes from the embedded Nibli engine. `18-coverage-contract-migration.py`
+  is a reviewed-source migration helper that rewrites one exact source-family
+  prefix of `full-society-ledger.json` to the current ledger schema; it is not an
+  assurance route, and the native ledger checker must validate everything it emits.
 - `new-book-plans/reader-evidence.json` and `reader-evidence.md` — the reviewed
   source and generated report for the native dormant reader-evidence contract.
   The numbered Python file is retained only as a historical parity reference.
@@ -1905,7 +2039,8 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   verifier bytes.
   `./verify.sh --quick` checks the structural path but skips executable suites;
   `--only` runs one pin suite and `--table` prints the claim table. Those modes
-  remain partial and are not semantic commit gates.
+  are the intended feedback loop while an assurance batch is still changing.
+  They remain partial and are not semantic commit gates.
   **Superseding commit rule, protocol v6 (2026-08-27):** stage every semantic,
   executable, verifier, fixture, engine-binding, or generated-artifact change and run one
   `./verify.sh --emit-receipt new-book-plans/verification-receipts`. Full
@@ -2602,9 +2737,15 @@ This repo was renamed from `dhilipsiva/utopia-reimagined` on 2026-07-30 (v0.7). 
 
 ## Commits
 
-- One chapter or section per commit; the subject names the area (`Merit points: …`, `Tech backbone (3/n): …`). Avoid sweeping multi-part edits.
+- One coherent assurance batch per candidate content commit. A formal rule family
+  may change several derived chapters and governed artifacts together; keep those
+  required projections in the same candidate, but never add an unrelated domain
+  merely to amortise the full run. Intermediate semantic WIP commits are forbidden
+  because they cannot share the later receipt.
 - The body explains **why** — the contradiction, gap, or review finding the change resolves — wrapped at ~72 characters. Not a list of what changed.
-- A content commit is followed by a separate tracker commit updating `TODO.md`: `Tracker: <what landed> (<sha of the content commit>)`.
+- A candidate content commit is followed by its exact audit and closure
+  successors. Only then may the separate tracker successor delete the completed
+  item: `Tracker: <what landed> (<sha of the content commit>)`.
 
 ## 2026-08-15 no-external-reviewer dependency ruling
 

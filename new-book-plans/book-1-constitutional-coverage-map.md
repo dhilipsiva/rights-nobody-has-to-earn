@@ -2,34 +2,43 @@
 
 # Book 1 Constitutional Coverage Map
 
-> **Status: author-ratified scope and planning control (2026-08-03).** This is
+> **Status: author-ratified scope and planning control (2026-08-03), with the
+> formal-specification-first workflow clarified 2026-08-30.** This is
 > not constitutional prose, does not change `constitution.nibli`, and does not
-> claim that any ratified-scope requirement is derived or already complete. A row
-> counts as formalised coverage only after it is formalised, pinned,
-> counterfactually tested, and reflected accurately in derived prose. That
-> repository status does not itself prove lawful enactment or deployment.
+> claim that any ratified-scope requirement is derived or already complete. A
+> row counts as audited specification coverage only after it is formalised,
+> pinned, counterfactually tested, and admitted through receipt-bound audit and
+> closure. Book 1 projection status separately requires accurate derived prose;
+> prose cannot complete or upgrade the specification. Neither repository status
+> proves lawful enactment or deployment.
 
 ## 1. Ratified mandate
 
-The settled Book 1 has a narrow, verified kernel: equal standing, named floor
-entitlements, limited consequences, amendment, audit, and a staged temporal path
-for record carry, event order, and case-bound custody authority. It deliberately
-defers governance vocabulary, most **non-carceral** delivery routes, and most
-operational accountability to Book 2. It is therefore **not currently a
+The settled specification has a narrow, verified kernel: equal standing, named
+floor entitlements, limited consequences, amendment, audit, and a staged
+temporal path for record carry, event order, and case-bound custody authority.
+Book 1 renders that kernel. The project deliberately defers governance
+vocabulary, most **non-carceral** delivery routes, and most operational
+accountability to Book 2. The specification is therefore **not currently a
 comprehensive constitution**.
 
-The author has chosen to expand Book 1 into a formal constitutional interface
-for the domains below. The choice changes **scope**, not the current truth of
-any claim: the present constitution remains narrow until new rule families are
-formalised and verified. The expansion requires a new constitution, regenerated
-spine, pins, counterfactuals, and an explicit Book 1/Part V/Book 2 boundary. It
-is not an additive prose pass.
+The author has chosen to expand the principal formally audited specification
+into a constitutional interface for the domains below. Book 1 mirrors that
+destination for readers; it is not the authority that makes the interface
+current. The choice changes **scope**, not the current truth of any claim: the
+present constitution remains narrow until new rule families are formalised and
+verified. The expansion requires a new constitution, reviewed contracts,
+regenerated projections, pins, counterfactuals, and an explicit Book 1/Part
+V/Book 2 boundary. It is not an additive prose pass.
 
 ## 2. Boundary rule
 
-Book 1 specifies **who holds a claim or power; what must be protected,
-provided, prohibited, recorded, remedied, and reviewed**. Book 2 specifies
-**how it is staffed, funded, built, measured, transitioned, or operated**.
+The audited constitutional specification defines **who holds a claim or power;
+what must be protected, provided, prohibited, recorded, remedied, and
+reviewed**. Book 1 renders that destination accurately for readers. Book 2
+specifies **how it is staffed, funded, built, measured, transitioned, or
+operated** within a declared, versioned reference envelope, including its local
+starting-state conditions.
 
 | Keep in Book 1 | Keep in Book 2 |
 | --- | --- |
@@ -39,9 +48,10 @@ provided, prohibited, recorded, remedied, and reviewed**. Book 2 specifies
 | Non-derogable emergency limits and review | Incident command, stockpiles, disaster logistics |
 | Ecological/non-regression constraints | Models, allocations, land-use and emissions programmes |
 
-The boundary is epistemic, not evasive: Book 1 makes a claim testable as a
-constitutional invariant; Book 2 must support its real-world claims with
-evidence, costs, data, and reproducible analysis.
+The boundary is epistemic, not evasive: the audited specification makes a claim
+testable as a constitutional invariant; Book 1 renders that bounded result, and
+Book 2 must support its real-world claims with evidence, costs, data, and
+reproducible analysis.
 
 ## 3. Current coverage versus target scope
 
@@ -512,19 +522,31 @@ Work in this order:
    limit, permitted-use route, advocate, and remedy before adding
    constitutional interfaces to a new formal source. Keep operations
    in [`book-2/TODO.md`](../book-2/TODO.md).
-4. Add one bounded rule family at a time, including adversarial pins and a
-   counterfactual showing what it prevents.
+4. Define one coherent assurance batch, then decompose it in `tmp.txt` into
+   authoring/review slices targeting no more than four hours of active work.
+   Each slice names the formal surface, affected reviewed source, positive and
+   negative pins, counterfactual impact, narrowness claims, Book 1 projection,
+   and Book 2 handoff. Slices remain uncommitted and `Drafted — not audited`
+   until their shared batch freezes; workflow state is not claim posture.
+5. Add and check the bounded rule family slice by slice. Use focused, quick,
+   fingerprint, and governed refresh/check paths while bytes change; regenerate
+   counterfactuals after every constitution edit. These checks are feedback, not
+   a semantic gate.
    **Receipt-before-marker gate:** a floor's receipt/arrival evidence, including
    its writer, authority, and challenge controls, must land before or in the same
    change as its delivery/breach marker. Do not revive a marker against a record
    with no arrival facts: it fires on everyone and discriminates nobody.
-5. Apply the narrowness-dependent claim impact gate below before the family lands.
-6. Regenerate the spine; revise every chapter whose claim changes, even where its
-   own derivation did not; make a reader map, glossary, diagrams, and
-   non-specialist test pass.
-7. Run the full verification suite and an external assurance review before
-   calling the resulting book comprehensive for its declared source version and
-   scope.
+6. Apply the narrowness-dependent claim impact gate below before the family lands.
+7. Regenerate every governed projection, including the spine; revise every
+   Book 1 chapter whose claim changes, even where its
+   own derivation did not; make the reader map, glossary, diagrams, and
+   mechanical reader-facing contract pass. Optional human reader review may add
+   evidence but is not a project gate.
+8. Freeze and fully stage the complete batch. Run one full `--emit-receipt`,
+   commit that exact candidate, and land its immediate repository audit and
+   closure successors before deleting the tracker item. An external assurance review
+   remains optional evidence and is never a project gate. No intermediate semantic
+   commit, focused result, or reader projection can replace the protocol-v6 chain.
 
 ### Narrowness-dependent claim impact gate
 
@@ -588,13 +610,15 @@ boundary. It is not preserved merely because no numbered chapter pin changed.
 
 ## 9. Completion standard
 
-For its declared source version and scope, Book 1 may call itself a
-comprehensive constitutional interface only when every target domain has a
+For its declared source version and scope, the principal specification may call
+its constitutional interface comprehensive only when every target domain has a
 completed contract row; every public power has an
 independent check and remedy; every floor has a non-reciprocal access path; the
 majority corridor is explicit; the Book 2 handoffs are named; and the formal
-model, pins, counterfactuals, prose, and reader-facing explanation agree about
-what is proved, what is specified, and what remains operational.
+model, reviewed contracts, pins, counterfactuals, generated projections, and
+receipt-bound audit/closure agree. Book 1 may make the corresponding bounded
+reader claim only when its prose and explanation accurately project that exact
+audited version and state what is proved, specified, and still operational.
 
 ## 10. Stable completed-work reference labels
 
