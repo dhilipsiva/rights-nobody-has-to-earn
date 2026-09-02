@@ -333,21 +333,6 @@ improve execution, observability, and scheduling only; they may not narrow the
 receipt manifest, omit a suite, cache a semantic or mutant verdict, or alter an
 evidence ceiling.
 
-- [ ] **Expose measured phase timing, progress, and ETA without changing
-  verdicts.**
-  - Record per-run start/end/duration data for build, structural checks, each
-    executable family, counterfactuals, receipt finalisation, and the critical
-    path, canonically serialised as diagnostics. Keep ordinary output concise and
-    provide a machine-readable form whose values are not mistaken for platform-
-    independent assurance evidence unless explicitly receipt-bound.
-  - Exercise success, first-failure, cancellation, lock contention, and
-    interrupted-run controls. Prove that instrumentation changes neither command
-    ordering, exit status, canonical semantic output, receipt schema, nor evidence
-    ceiling. Each independently emitted receipt must remain valid and bind its
-    actual run times and transcript.
-  - **Done when:** one current full run identifies the measured critical path and
-    progress reports can distinguish active work from a stalled or queued gate.
-
 - [ ] **Extend bounded deterministic parallelism across independent verifier
   families.**
   - Derive the execution dependency graph before scheduling. Parallelise only
