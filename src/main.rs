@@ -8,6 +8,7 @@
 mod checks;
 mod cli;
 mod context;
+mod diagnostics;
 mod digest;
 mod lock;
 mod pin;

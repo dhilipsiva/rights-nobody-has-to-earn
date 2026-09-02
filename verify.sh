@@ -12,5 +12,10 @@
 set -euo pipefail
 cd -- "$(dirname -- "$0")"
 
+# The two build stamps feed the run-diagnostics module only. They are not in
+# the receipt's sanitized-environment allowlist, so no receipt binds them.
+RIGHTS_VERIFY_BUILD_STARTED="${EPOCHREALTIME:-}"
 cargo build --release --locked --quiet --bin rights-verify
+RIGHTS_VERIFY_BUILD_FINISHED="${EPOCHREALTIME:-}"
+export RIGHTS_VERIFY_BUILD_STARTED RIGHTS_VERIFY_BUILD_FINISHED
 exec target/release/rights-verify "$@"

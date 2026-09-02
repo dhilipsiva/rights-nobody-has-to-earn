@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-08-30-formal-specification-workflow-v1",
+  "source_version": "fs-ledger-2026-08-31-verifier-phase-timing-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "93cf05e9d2644a12e0d0a7a6c7677bb85b320f92280d6557917382f79fc1b542"
@@ -111800,61 +111800,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "5cfb166e3d9f157ed44b724af0823fcb06e8f1a2",
-    "source_version": "fs-ledger-2026-08-30-formal-specification-workflow-v1",
-    "scope_sha256": "795d707979d2bfb7d01b399c407f0e0467d9a2f4ffc5ea9063a8df3c3500fd47",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-08-31T09:23:01Z",
-    "scope_audit_ref": "FS-SAU-45",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
-    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-05c2974b93429ef7e68d851195a8c70529f109b54fad6346a67751f590750e30.json"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -130430,6 +130380,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-05c2974b93429ef7e68d851195a8c70529f109b54fad6346a67751f590750e30.json"
+    },
+    {
+      "id": "FS-SAU-46-PENDING",
+      "title": "Verifier phase-timing diagnostics pending current-source repository audit",
+      "source_version": "fs-ledger-2026-08-31-verifier-phase-timing-v1",
+      "scope_sha256": "8829018165491932caf3162add7d0f586ca57c6a78a9e6b740e5ee3f5853bc42",
+      "protocol_sha256": "7e067b566a7809ced57dff49d6ecf81d66294b9ffd41bf014d5e39de1478072a",
+      "executed_at_utc": "2026-08-31T10:57:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [

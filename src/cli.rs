@@ -325,18 +325,50 @@ pub(crate) fn run() -> Result<(), Error> {
         return Ok(());
     }
 
-    let _lock = VerificationLock::acquire(&context, "verify", args.wait_for_lock.unwrap_or(0.0))?;
+    // Instrument the four gate-relevant modes with the observational run
+    // recorder. Focused and refresh modes stay uninstrumented; observation
+    // points elsewhere are inert without this initialisation.
+    let run_label = if args.quick {
+        Some(crate::diagnostics::RunLabel::Quick)
+    } else if args.emit_receipt.is_some() {
+        Some(crate::diagnostics::RunLabel::EmitReceipt)
+    } else if args.commit_gate.is_some() {
+        Some(crate::diagnostics::RunLabel::CommitGate)
+    } else if args.only.is_none() && args.refresh.is_none() {
+        Some(crate::diagnostics::RunLabel::Full)
+    } else {
+        None
+    };
+    if let Some(label) = run_label {
+        crate::diagnostics::initialise(label, context.root());
+    }
 
+    // A lock-refused run deliberately records no diagnostics document: it ran
+    // no phases, and replacing the previous run's document with an empty one
+    // would destroy the estimate baseline. The refusal itself is already
+    // reported by the lock's queued note and its exit-75 owner details.
+    let lock_started = std::time::Instant::now();
+    let _lock = VerificationLock::acquire(&context, "verify", args.wait_for_lock.unwrap_or(0.0))?;
+    crate::diagnostics::note_lock_acquired(lock_started.elapsed());
+
+    let heartbeat = crate::diagnostics::start_heartbeat();
+    let result = run_selected_mode(&context, args);
+    drop(heartbeat);
+    crate::diagnostics::finish(result.is_err());
+    result
+}
+
+fn run_selected_mode(context: &Context, args: Args) -> Result<(), Error> {
     if let Some(artifact) = args.refresh {
-        let output = refresh_artifact(&context, artifact)?;
+        let output = refresh_artifact(context, artifact)?;
         write_output(std::io::stdout().lock(), &output)?;
         return Ok(());
     }
 
     if let Some(output_directory) = args.emit_receipt {
         let mut output = std::io::stdout().lock();
-        receipt::emit_receipt(&context, &output_directory, &mut output, |writer| {
-            crate::suite::run(&context, RunMode::Full, writer)
+        receipt::emit_receipt(context, &output_directory, &mut output, |writer| {
+            crate::suite::run(context, RunMode::Full, writer)
         })?;
         return Ok(());
     }
@@ -349,8 +381,8 @@ pub(crate) fn run() -> Result<(), Error> {
         )?;
         let mut output = std::io::stdout().lock();
         let tree =
-            receipt::run_commit_gate(&context, &receipt_path, transition, &mut output, |writer| {
-                crate::suite::run(&context, RunMode::Quick, writer)
+            receipt::run_commit_gate(context, &receipt_path, transition, &mut output, |writer| {
+                crate::suite::run(context, RunMode::Quick, writer)
             })?;
         drop(output);
         println!("{}", receipt::gate_success(transition, &tree));
@@ -358,11 +390,11 @@ pub(crate) fn run() -> Result<(), Error> {
     }
 
     if let Some(relative) = args.only {
-        return run_only(&context, &relative);
+        return run_only(context, &relative);
     }
 
     crate::suite::run(
-        &context,
+        context,
         if args.quick {
             RunMode::Quick
         } else {

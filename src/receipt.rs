@@ -2181,6 +2181,7 @@ where
         output,
         run_full,
         runtime_bindings,
+        crate::diagnostics::observe(),
     )
 }
 
@@ -2190,6 +2191,7 @@ fn emit_receipt_with_runtime<W, F, P>(
     output: &mut W,
     run_full: F,
     mut probe_runtime: P,
+    diagnostics: Option<crate::diagnostics::Recorder>,
 ) -> Result<EmittedReceipt, Error>
 where
     W: Write,
@@ -2197,6 +2199,13 @@ where
     P: FnMut(&Path) -> Result<RuntimeBindings, Error>,
 {
     let output_directory = safe_output_directory(root, output_directory)?;
+    // Observational phase markers only, threaded explicitly so the receipt
+    // self-test's scratch-repository runs inside a live suite never touch the
+    // live run's recorder. The suite's own step boundaries take over once the
+    // verification run starts.
+    if let Some(recorder) = &diagnostics {
+        recorder.begin_phase("receipt candidate preparation");
+    }
     let before = fully_staged_candidate(root)?;
     active_reference_projection(root, &before.manifest)?;
     let (expanded_manifest, class_manifests) = classified_manifest(&before.manifest)?;
@@ -2248,6 +2257,11 @@ where
         return Err(receipt_error(format!(
             "authoritative verification failed; diagnostic transcript retained under the Git common directory: {run_error}"
         )));
+    }
+    // The failed-run branch above keeps the failing suite phase active so the
+    // diagnostics name it; only a passing run enters receipt finalisation.
+    if let Some(recorder) = &diagnostics {
+        recorder.begin_phase("receipt finalisation");
     }
     let after = fully_staged_candidate(root)?;
     if after != before {
@@ -3568,6 +3582,7 @@ where
         output,
         run_quick,
         runtime_bindings,
+        crate::diagnostics::observe(),
     )
 }
 
@@ -3578,12 +3593,20 @@ fn run_commit_gate_with_runtime<W, F, P>(
     output: &mut W,
     run_quick: F,
     mut probe_runtime: P,
+    diagnostics: Option<crate::diagnostics::Recorder>,
 ) -> Result<GitSha, Error>
 where
     W: Write,
     F: FnOnce(&mut dyn Write) -> Result<(), Error>,
     P: FnMut(&Path) -> Result<RuntimeBindings, Error>,
 {
+    // Observational phase markers only, threaded explicitly so the receipt
+    // self-test's scratch-repository gates inside a live suite never touch the
+    // live run's recorder. The quick suite's own step boundaries take over
+    // once structural verification starts.
+    if let Some(recorder) = &diagnostics {
+        recorder.begin_phase("commit-gate receipt validation");
+    }
     let before = fully_staged_candidate(root)?;
     let initial_runtime = probe_runtime(root)?;
     let validated = load_and_validate_with_runtime(
@@ -3599,6 +3622,9 @@ where
         ))
     })?;
     output.flush()?;
+    if let Some(recorder) = &diagnostics {
+        recorder.begin_phase("commit-gate successor validation");
+    }
     if fully_staged_candidate(root)? != before {
         return Err(receipt_error(
             "staged repository inputs drifted during structural verification",
@@ -4055,6 +4081,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
             Ok(())
         },
         move |_root| Ok(runtime.clone()),
+        None,
     );
     let stale_reference_rejected = stale_reference_result.as_ref().err().is_some_and(|error| {
         error
@@ -4083,6 +4110,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
             Ok(())
         },
         move |_root| Ok(runtime.clone()),
+        None,
     );
     receipt_self_test_require(
         drift_result.is_err(),
@@ -4104,6 +4132,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
             Ok(())
         },
         move |_root| Ok(stale_runtime.clone()),
+        None,
     );
     receipt_self_test_require(
         stale_result.is_err() && !stale_verifier_ran.get(),
@@ -4126,6 +4155,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
                 "rights-verify executable is missing or empty",
             ))
         },
+        None,
     );
     receipt_self_test_require(
         missing_result.is_err() && !verifier_ran.get(),
@@ -4145,6 +4175,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
             Ok(())
         },
         move |_root| Ok(runtime.clone()),
+        None,
     )
     .map_err(|error| {
         receipt_self_test_error(
@@ -4507,6 +4538,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
             Ok(())
         },
         move |_root| Ok(runtime.clone()),
+        None,
     );
     receipt_self_test_require(
         quick_input_drift.is_err(),
@@ -4538,6 +4570,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
                 drifted_runtime.clone()
             })
         },
+        None,
     );
     receipt_self_test_require(
         quick_engine_drift.is_err() && probes.get() == 2,
@@ -4558,6 +4591,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
             Ok(())
         },
         move |_root| Ok(runtime.clone()),
+        None,
     )
     .map_err(|error| {
         receipt_self_test_error(
@@ -4637,6 +4671,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
         &mut Vec::new(),
         |_writer| Ok(()),
         move |_root| Ok(runtime.clone()),
+        None,
     )?;
     receipt_self_test_git(&root, ["commit", "--quiet", "-m", "closure"])?;
     let closure_commit = GitSha::parse(git_text(&root, ["rev-parse", "HEAD"])?, "closure")?;
@@ -4668,6 +4703,7 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
         &mut Vec::new(),
         |_writer| Ok(()),
         move |_root| Ok(runtime.clone()),
+        None,
     )?;
     receipt_self_test_require(
         gate_success(Transition::Tracker, &tracker_tree)
@@ -5256,6 +5292,7 @@ mod tests {
                 Ok(())
             },
             |_| Ok(runtime.clone()),
+            None,
         )
         .unwrap();
         assert!(emitted.path.is_file());
@@ -5326,6 +5363,7 @@ mod tests {
                 Ok(())
             },
             |_| Ok(runtime.clone()),
+            None,
         )
         .unwrap();
         assert_eq!(quick_output, b"native quick PASS\n");

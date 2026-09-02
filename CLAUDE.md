@@ -2059,7 +2059,16 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   bytes, requires their digest-bound local evidence, performs no ancestor
   search, and is consumed by its successful closure. Heavyweight verifier entry points share one Git-common-
   directory kernel lock. Contention exits 75 with sanitised owner details
-  unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Native
+  unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Quick,
+  full, receipt, and gate runs also report measured phase timing, progress,
+  ETA, a heartbeat for the active phase, and queued-lock state on stderr only,
+  and write one canonical diagnostics JSON per mode under the Git common
+  directory's `rights-verification/diagnostics/`. Those values are one
+  machine's wall-clock measurements: never assurance evidence, never
+  receipt-bound, and never a verdict input. The stdout transcript a receipt
+  binds is byte-identical with and without the instrumentation, which the
+  run-diagnostics self-test holds as watched controls in both quick and full
+  paths. Native
 ledger and closure checks preserve the immutable-input and final-reread
 contract. `./verify.sh --refresh full-society-ledger` and `./verify.sh
 --refresh constitutional-closure` atomically regenerate their complete output

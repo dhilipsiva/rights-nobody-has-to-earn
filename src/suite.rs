@@ -28,13 +28,14 @@ impl RunMode {
 /// Every checker is linked into this process. Reviewed JSON is decoded into
 /// each checker's strict serde model before semantic validation begins.
 pub(crate) fn run<W: Write>(context: &Context, mode: RunMode, output: W) -> Result<(), Error> {
-    let mut report = Reporter::new(output);
+    let mut report = Reporter::with_recorder(output, crate::diagnostics::observe());
     let execute = mode.executes();
 
     report.step("verification infrastructure")?;
     report.pass(crate::receipt::self_test()?)?;
     report.pass(crate::scheduler::self_test()?)?;
     report.pass(crate::refresh::self_test()?)?;
+    report.pass(crate::diagnostics::self_test()?)?;
 
     report.step("engine")?;
     let (constitution, engine) = pins::prepare_live_engine(context)?;
@@ -148,6 +149,7 @@ pub(crate) fn run<W: Write>(context: &Context, mode: RunMode, output: W) -> Resu
 
         report.step("chapter, floor, and family pins")?;
         let live = pins::execute_live_families(context, &engine, &live_plan)?;
+        crate::diagnostics::add_details(live.file_timings);
         report.pass(format!("{} chapter/floor pins pass", live.chapter_pins))?;
         for (family, count) in live.family_results {
             report.pass(format!("{family}: {count} pins pass"))?;
@@ -163,6 +165,7 @@ pub(crate) fn run<W: Write>(context: &Context, mode: RunMode, output: W) -> Resu
         report.step("state-form executions")?;
         let state_result =
             state_form::execute_validated(context, &state_snapshot, &validated_state_form)?;
+        crate::diagnostics::add_details(state_result.shard_timings);
         report.pass(format!(
             "state-form: PASS — {} main shards / {} pins and {} counterfactual shards / {} pins",
             state_result.main_shards,
@@ -189,6 +192,7 @@ pub(crate) fn run<W: Write>(context: &Context, mode: RunMode, output: W) -> Resu
 
         report.step("counterfactuals")?;
         let result = pins::execute_counterfactuals(context, counterfactual_plan)?;
+        crate::diagnostics::add_details(result.timings);
         report.pass(format!(
             "{} counterfactual suites execute; {} checker-owned suites delegated",
             result.executed.len(),

@@ -12,6 +12,7 @@ use std::collections::BTreeMap;
 use std::fmt::Write as _;
 use std::path::Path;
 use std::process::Command;
+use std::time::Instant;
 
 use nibli_engine::EngineError;
 use nibli_reason::KnowledgeBase;
@@ -67,6 +68,9 @@ pub(crate) struct FileOutput {
     pub(crate) findings: usize,
     pub(crate) resolved: usize,
     pub(crate) harness: usize,
+    /// Measured wall time for this file's execution. Diagnostics only: no
+    /// verdict, count, or comparison reads it.
+    pub(crate) elapsed_ms: u64,
 }
 
 /// A compiled knowledge-base snapshot reusable across independent pin suites.
@@ -157,6 +161,7 @@ struct Report {
     findings: Vec<String>,
     resolved: Vec<String>,
     harness: Vec<String>,
+    elapsed_ms: u64,
 }
 
 /// Run pin files in input order, with a fresh engine for each file.
@@ -192,6 +197,7 @@ fn finish_file_reports(pin_files: &[LoadedSource<'_>], reports: Vec<Report>) -> 
             findings: report.findings.len(),
             resolved: report.resolved.len(),
             harness: report.harness.len(),
+            elapsed_ms: report.elapsed_ms,
         });
         if report.defects == 0 && report.resolved.is_empty() {
             let _ = writeln!(
@@ -726,7 +732,8 @@ fn run_files_against_base(
     pin_files
         .iter()
         .map(|pin_file| {
-            if pin_file_can_assert(pin_file.source) {
+            let started = Instant::now();
+            let mut report = if pin_file_can_assert(pin_file.source) {
                 query_only_base
                     .with_assumptions(&[], |isolated| {
                         run_file_with_engine(pin_file, compiler, isolated, options)
@@ -741,7 +748,9 @@ fn run_files_against_base(
                     })
             } else {
                 run_file_with_engine(pin_file, compiler, query_only_base, options)
-            }
+            };
+            report.elapsed_ms = u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX);
+            report
         })
         .collect()
 }

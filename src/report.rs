@@ -6,14 +6,32 @@ use crate::cli::Error;
 
 pub(crate) struct Reporter<W> {
     output: W,
+    diagnostics: Option<crate::diagnostics::Recorder>,
 }
 
 impl<W: Write> Reporter<W> {
     pub(crate) fn new(output: W) -> Self {
-        Self { output }
+        Self::with_recorder(output, None)
+    }
+
+    /// Attach an optional run recorder so each step boundary is also a
+    /// measured phase boundary. The recorder only observes: the bytes this
+    /// reporter writes are identical with and without it, which the
+    /// run-diagnostics self-test holds as a watched control.
+    pub(crate) fn with_recorder(
+        output: W,
+        diagnostics: Option<crate::diagnostics::Recorder>,
+    ) -> Self {
+        Self {
+            output,
+            diagnostics,
+        }
     }
 
     pub(crate) fn step(&mut self, name: &str) -> Result<(), Error> {
+        if let Some(recorder) = &self.diagnostics {
+            recorder.begin_phase(name);
+        }
         self.write_line(format_args!("\n\x1b[1m{name}\x1b[0m"))
     }
 

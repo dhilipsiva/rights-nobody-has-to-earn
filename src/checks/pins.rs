@@ -215,12 +215,17 @@ const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 55] = [
 pub(crate) struct LiveReport {
     pub(crate) chapter_pins: usize,
     pub(crate) family_results: Vec<(String, usize)>,
+    /// Measured wall time per pin file, in execution order. Diagnostics only.
+    pub(crate) file_timings: Vec<(String, u64)>,
 }
 
 #[derive(Debug)]
 pub(crate) struct CounterfactualReport {
     pub(crate) executed: Vec<String>,
     pub(crate) delegated: Vec<String>,
+    /// Measured wall time per counterfactual suite, in canonical order.
+    /// Diagnostics only.
+    pub(crate) timings: Vec<(String, u64)>,
 }
 
 #[derive(Debug)]
@@ -322,9 +327,15 @@ pub(crate) fn execute_live_families(
         .zip(&output.files[plan.chapter_file_count..])
         .map(|((label, _), file)| ((*label).to_owned(), file.pins))
         .collect();
+    let file_timings = output
+        .files
+        .iter()
+        .map(|file| (file.display_name.clone(), file.elapsed_ms))
+        .collect();
     Ok(LiveReport {
         chapter_pins,
         family_results,
+        file_timings,
     })
 }
 
@@ -439,10 +450,11 @@ pub(crate) fn execute_counterfactuals(
         ));
     }
     let root = context.root().to_path_buf();
-    let executed = run_bounded(plan.tasks, workers, move |_, task, cancellation| {
+    let outcomes = run_bounded(plan.tasks, workers, move |_, task, cancellation| {
         if cancellation.is_cancelled() {
             return Err(Error::new("counterfactual execution cancelled"));
         }
+        let started = std::time::Instant::now();
         let engine = PreparedPinEngine::new(&[LoadedSource::new(&task.kb_path, &task.kb)]);
         let loaded = task
             .pins
@@ -457,15 +469,18 @@ pub(crate) fn execute_counterfactuals(
             },
         );
         require_clean_output(&task.name, &output)?;
-        Ok(task.name)
+        let elapsed_ms = u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX);
+        Ok((task.name, elapsed_ms))
     })
     .map_err(|error| match error {
         ScheduleError::JobFailed { source, .. } => source,
         other => Error::new(format!("counterfactual scheduler: {other}")),
     })?;
+    let executed = outcomes.iter().map(|(name, _)| name.clone()).collect();
     Ok(CounterfactualReport {
         executed,
         delegated: plan.delegated,
+        timings: outcomes,
     })
 }
 

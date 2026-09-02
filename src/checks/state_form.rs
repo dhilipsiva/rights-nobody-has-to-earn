@@ -4966,6 +4966,9 @@ pub(crate) struct ExecutionReport {
     pub(crate) main_pins: usize,
     pub(crate) counterfactual_pins: usize,
     pub(crate) lines: Vec<String>,
+    /// Measured wall time per shard, in canonical shard order, named
+    /// `family/shard`. Diagnostics only: nothing reads it into a verdict.
+    pub(crate) shard_timings: Vec<(String, u64)>,
 }
 
 impl fmt::Display for ExecutionReport {
@@ -5022,7 +5025,7 @@ fn execute_family(
     kb_name: &str,
     kb: &str,
     shards: &[RenderedPinShard],
-) -> StateFormResult<Vec<String>> {
+) -> StateFormResult<(Vec<String>, Vec<(String, u64)>)> {
     let workers = match std::env::var("STATE_FORM_MAX_PARALLEL") {
         Ok(value) => value
             .parse::<usize>()
@@ -5049,7 +5052,7 @@ fn execute_family(
     let results = Arc::new(Mutex::new(
         std::iter::repeat_with(|| None)
             .take(shards.len())
-            .collect::<Vec<Option<StateFormResult<String>>>>(),
+            .collect::<Vec<Option<StateFormResult<(String, u64)>>>>(),
     ));
 
     let scheduled = run_bounded(0..workers, workers, {
@@ -5073,6 +5076,7 @@ fn execute_family(
                 if cancellation.is_cancelled() {
                     return Ok(());
                 }
+                let shard_started = std::time::Instant::now();
                 let output = engine.run_files(
                     &[LoadedSource::new(&shard.name, &shard.text)],
                     PinOptions {
@@ -5080,6 +5084,8 @@ fn execute_family(
                         working_directory: Some(&root),
                     },
                 );
+                let shard_elapsed_ms =
+                    u64::try_from(shard_started.elapsed().as_millis()).unwrap_or(u64::MAX);
                 let checked =
                     require_execution_output(&family, std::slice::from_ref(shard), output)
                         .and_then(|mut lines| {
@@ -5089,7 +5095,8 @@ fn execute_family(
                                     shard.name
                                 ))
                             })
-                        });
+                        })
+                        .map(|line| (line, shard_elapsed_ms));
                 let failure = checked.as_ref().err().cloned();
                 results
                     .lock()
@@ -5128,18 +5135,19 @@ fn execute_family(
         });
     }
 
-    results
-        .iter_mut()
-        .enumerate()
-        .map(|(index, result)| {
-            result.take().ok_or_else(|| {
-                state_form_error(format!(
-                    "state-form {family} shard {} returned no result",
-                    shards[index].name
-                ))
-            })?
-        })
-        .collect()
+    let mut lines = Vec::with_capacity(shards.len());
+    let mut timings = Vec::with_capacity(shards.len());
+    for (index, result) in results.iter_mut().enumerate() {
+        let (line, elapsed_ms) = result.take().ok_or_else(|| {
+            state_form_error(format!(
+                "state-form {family} shard {} returned no result",
+                shards[index].name
+            ))
+        })??;
+        lines.push(line);
+        timings.push((format!("{family}/{}", shards[index].name), elapsed_ms));
+    }
+    Ok((lines, timings))
 }
 
 /// Execute one reviewed state-form aggregate through its typed native shards.
@@ -5177,7 +5185,7 @@ pub(crate) fn execute_focused_pin(
                 "not a state-form aggregate pin path: {pin_path}"
             )));
         };
-        let lines = execute_family(context, family, kb_path, kb_text, selected)?;
+        let (lines, _timings) = execute_family(context, family, kb_path, kb_text, selected)?;
         let mut stdout = lines.join("\n");
         if !stdout.is_empty() {
             stdout.push('\n');
@@ -5204,26 +5212,29 @@ fn execute_validated_inner(
     validated: &ValidatedStateForm,
 ) -> StateFormResult<ExecutionReport> {
     let (main, counterfactual) = validated.shards.split_at(MAIN_SHARD_COUNT);
-    let mut lines = execute_family(
+    let (mut lines, mut shard_timings) = execute_family(
         context,
         "main",
         CONSTITUTION_PATH,
         snapshot.constitution(),
         main,
     )?;
-    lines.extend(execute_family(
+    let (counterfactual_lines, counterfactual_timings) = execute_family(
         context,
         "counterfactual",
         COUNTERFACTUAL_PATH,
         snapshot.counterfactual(),
         counterfactual,
-    )?);
+    )?;
+    lines.extend(counterfactual_lines);
+    shard_timings.extend(counterfactual_timings);
     Ok(ExecutionReport {
         main_shards: main.len(),
         counterfactual_shards: counterfactual.len(),
         main_pins: main.iter().map(|shard| shard.query_count).sum(),
         counterfactual_pins: counterfactual.iter().map(|shard| shard.query_count).sum(),
         lines,
+        shard_timings,
     })
 }
 
@@ -5489,7 +5500,9 @@ mod tests {
             &shards[MAIN_SHARD_COUNT..MAIN_SHARD_COUNT + 1],
         )
         .expect("execute first counterfactual shard");
-        assert_eq!(main.len(), 1);
-        assert_eq!(counterfactual.len(), 1);
+        assert_eq!(main.0.len(), 1);
+        assert_eq!(main.1.len(), 1);
+        assert_eq!(counterfactual.0.len(), 1);
+        assert_eq!(counterfactual.1.len(), 1);
     }
 }

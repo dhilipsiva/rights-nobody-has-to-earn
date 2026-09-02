@@ -93,6 +93,15 @@ impl VerificationLock {
     }
 
     fn acquire_at(root: &Path, name: &str, wait_seconds: f64) -> Result<Self, Error> {
+        Self::acquire_at_inner(root, name, wait_seconds, true)
+    }
+
+    fn acquire_at_inner(
+        root: &Path,
+        name: &str,
+        wait_seconds: f64,
+        report_queued: bool,
+    ) -> Result<Self, Error> {
         validate_name(name)?;
         validate_wait(wait_seconds)?;
         let common = git_common_dir(root)?;
@@ -118,6 +127,7 @@ impl VerificationLock {
             .custom_flags(libc::O_CLOEXEC | libc::O_NOFOLLOW)
             .open(&lock_path)?;
         let deadline = Instant::now() + Duration::from_secs_f64(wait_seconds);
+        let mut queued_reported = false;
         loop {
             match flock(handle.as_raw_fd(), libc::LOCK_EX | libc::LOCK_NB) {
                 Ok(()) => break,
@@ -131,6 +141,23 @@ impl VerificationLock {
                             ),
                             EX_TEMPFAIL,
                         ));
+                    }
+                    if !queued_reported {
+                        queued_reported = true;
+                        // Observation only: the queued state becomes visible
+                        // on stderr and in the run diagnostics, while the
+                        // bounded wait, exit 75, and owner details above stay
+                        // exactly as they were. The lock self-test's scratch
+                        // contention runs with reporting off so a real run is
+                        // neither told about nor recorded as queued behind a
+                        // scratch repository's lock.
+                        if report_queued {
+                            crate::diagnostics::note_lock_contended();
+                            crate::diagnostics::stderr_note(&queued_note(
+                                &sanitized_owner_details(&owner_path),
+                                wait_seconds,
+                            ));
+                        }
                     }
                     thread::sleep(
                         deadline
@@ -245,6 +272,14 @@ fn validate_name(name: &str) -> Result<(), Error> {
     }
 }
 
+/// The one-line stderr report for a run queued behind the heavyweight lock.
+/// Reported once per wait; the run-diagnostics self-test pins its shape.
+pub(crate) fn queued_note(details: &str, wait_seconds: f64) -> String {
+    format!(
+        "queued: heavyweight verifier lock is busy; waiting up to {wait_seconds}s — {details}"
+    )
+}
+
 fn validate_wait(wait_seconds: f64) -> Result<(), Error> {
     if wait_seconds.is_finite() && wait_seconds >= 0.0 {
         Ok(())
@@ -253,7 +288,7 @@ fn validate_wait(wait_seconds: f64) -> Result<(), Error> {
     }
 }
 
-fn git_common_dir(root: &Path) -> Result<PathBuf, Error> {
+pub(crate) fn git_common_dir(root: &Path) -> Result<PathBuf, Error> {
     let output = process::checked_stdout(
         root,
         "git",
@@ -540,7 +575,7 @@ fn is_ancestor(ancestor: u32, descendant: u32) -> bool {
     current == ancestor
 }
 
-fn utc_now() -> Result<String, Error> {
+pub(crate) fn utc_now() -> Result<String, Error> {
     let seconds = SystemTime::now()
         .duration_since(UNIX_EPOCH)
         .map_err(|error| lock_usage(format!("system clock predates Unix epoch: {error}")))?
@@ -828,7 +863,7 @@ pub(crate) fn receipt_protocol_self_test() -> Result<usize, Error> {
         ));
     }
     let started = Instant::now();
-    let contention = VerificationLock::acquire_at(&repository, "contender", 0.02)
+    let contention = VerificationLock::acquire_at_inner(&repository, "contender", 0.02, false)
         .err()
         .ok_or_else(|| {
             lock_self_test_error(
