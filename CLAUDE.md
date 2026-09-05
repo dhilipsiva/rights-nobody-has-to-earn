@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+Its sections are ordered: what the repository is, how work lands, the
+author-ratified rulings, the files, and the long-settled design decisions.
+The rulings section is the largest and is grouped by kind, not by date; each
+ruling names its own controlling record in `new-book-plans/`, which is
+authoritative where this summary and that record ever diverge.
+
 ## What This Repository Is
 
 A formally audited constitutional-specification project with two books derived
@@ -127,7 +133,35 @@ watched failing control before it joins the authoritative gate. New performance
 machinery requires a measured bottleneck and equivalence controls. Assurance
 accretion and optimisation by intuition are both refused.
 
-## Author-Ratified Specification and Book 1 Mandate — 2026-08-03
+## Author-Ratified Rulings
+
+Grouped by kind. Dates in each heading are the ratification dates; a ruling
+that was later implemented or narrowed carries that supersession inline.
+
+### How these rulings are written
+
+**`Ratified but unimplemented` is a standing label with a fixed meaning.**
+Where a ruling below carries it, that ruling creates **no** predicate, rule,
+pin, finding, ceiling, duty, remedy, institution in law, chapter, programme,
+age number, or public coverage claim. The division of labour is also fixed:
+the formally audited specification owns the legal definitions, reach,
+evidence, challenge, continuity, remedy, and failure polarity, and Book 1
+renders them; Book 2 owns operation, capacity, staffing, costs, workflows,
+and empirical feasibility; Nibli may consume a bounded authenticated finding
+but performs no institutional act, authenticates nothing, proves no arrival,
+and advances no clock. Each ruling then states only what is **specific** to
+it — the predicates needing retain/replace/retire cards, the particular Book 2
+surface, the particular thing Nibli must not be mistaken for — and names its
+controlling record. Read the label as that whole paragraph every time.
+
+A ruling that has since been implemented says so in a dated supersession note
+in the same subsection. A structural landing is never an operational claim.
+
+The 2026-08-15 no-external-reviewer dependency ruling is kept as its own
+top-level section at the end of this file, because it cuts across every gate
+rather than sitting in one group.
+
+### Scope, mandate, and the two-book seam
 
 **The author has chosen the expanded mandate.** The formally audited
 specification is to become a complete constitutional interface for a free
@@ -194,28 +228,26 @@ and neutral decision briefs may precede an outstanding author ruling; each
 contested rule family, dependent prose and public claim remains gated until its
 own ruling lands.
 
-**T3 is author-ratified (2026-08-03) and implemented in stages for case-bound
-Court custody (2026-08-05).** T1 reconciles witnessed predecessor/successor
-records and selected carry. A witnessed passport selects one constitutional
-lineage, and only its collision-free terminal accepted successor can give
-carried adverse/clear status or public power current legal effect in a fresh
-evaluation. T2 builds independently witnessed, typed event and record paths;
-transitive cycles propagate conflict within their path type. T3 makes the exact
-current, source-bound review a positive premise of custody authority and rejoins
-the case subject, Court holder, Court judgment, injury victim, lease, window,
-renewal, source, and current-record witnesses. Competing witnessed source,
-window, case-subject, or lease bindings fail closed; the judgment and victim evidence
-are case-bound but have no general truth or uniqueness proof. Compact
-identifier-status conclusions are never sufficient alone: every
-consequential consumer rejoins the exact raw tuple and its matching witness
-fields. The current constitution still admits no duration arithmetic, sentence
-clock, filing deadline, or operational cadence, and it cannot make a successor
-arrive or prove that an outside clock advances. The reviewed contracts,
-two-snapshot harness, adversarial matrix, and residual Book 2 boundary live in
-`new-book-plans/book-1-time-model-decision.md` and
-`new-book-plans/temporal-assurance-case.json`. Another public power requires its
-own temporal contract; Book 2 continues to operate clocks, calendars, witnesses,
-publication, recovery, and time services.
+**Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
+D2, refined by the 2026-08-07 full-society boundary.** The pre-expansion
+baseline remains public source and git history but receives no promoted edition,
+canonical serialization, assembled release, or print identity. “Completed
+expansion” now means cumulative Gate C completion. Gate C publishes Book 1 —
+First Edition, its assembled digital artifacts, and its first Book 1 POD under
+one provenance contract; it makes no operational or integrated full-society
+claim. After Gate B and before Gate C, coherent milestones may appear only as
+immutable, tagged First-Edition previews with permanent URLs, exact book and
+nibli sources, full verification records, and visible supersession. They are design snapshots, not
+promises of final chapter order, and no public release candidate becomes an
+edition early. `main` is never an edition URL, and no public artifact may be
+silently replaced. `new-book-plans/book-1-edition-boundary-decision.md` controls
+Book 1 publication mechanics; `new-book-plans/full-society-boundary-decision.md`
+controls Gate A–E labels, the two-book seam, and versioned closure. Neither
+ruling creates a tag, release, site, preview, or print file by itself.
+
+### Constitutional baselines
+
+#### Taxonomy — 2026-08-03, extended by Class 10 on 2026-08-08
 
 **The constitutional taxonomy is author-ratified (2026-08-03) and extended by
 the author-ratified non-human-animal Class 10 (2026-08-08).**
@@ -247,6 +279,8 @@ Structural refusals remain cross-cutting walls, not ordinary subject-matter
 rules: Article 1's firewall, `admits`, `derived_only`, and verifier guards keep
 their own enforcement and test obligations. This ruling adds no predicate, duty,
 or present remedy.
+
+#### State form and political membership — 2026-08-07
 
 **The constitutional state form and political membership are author-ratified
 (2026-08-07): federal constitutional parliamentary republic + residence-first
@@ -312,46 +346,23 @@ ratified sources, limits, defaults, and prohibitions; they are not open author
 policy.
 Leaving those bounds requires a new author ruling.
 
-The finite collective-decision boundary was measured on 2026-08-07 and
-independently rechecked on 2026-08-08 against Nibli `a7d288a`, which contains
-the required `4cb02aa` baseline. For definitive finite positive queries, Nibli
-can observe exact facts in a supplied snapshot, find/count witnesses, aggregate
-supplied weights, and compose supplied result certificates. It cannot generically
-derive `ceil(2R/3)`, compare dynamic
-tallies or shares, group affected regions, authenticate completeness, choose one
-effective conflicting submission, or perform an institutional act. Exact-count
-and compute nodes are query-only; a hand-enumerated two-of-three rule is not a
-changing-roster majority rule. The external result pipeline keeps four roles
-separate: election administration authenticates and classifies submissions;
-independent assurance attests completeness; the result service computes and
-certifies; authorised institutions execute. Missing completeness can become a
-withholding veto, so every route needs alternate attestation and a failure
-default. "No turnout quorum" is an absent legal condition, not an engine
-primitive. No general empty-roster passage rule was supplied; each Book 1 result
-card must state that default before formalisation. Since Nibli `5580618`, final
-non-definitive witness enumeration fails closed rather than returning a partial
-collection. At `5777ced`, text compute registration routes only
-corpus-resolvable canonical relations; it declares no vocabulary or arity.
-Arbitrary compute remains a caller-built native raw-IR query and is query-only
-at assertion ingress. Neither repair supplies changing-roster computation or
-certification.
-`FALSE` does not affirmatively preserve current law or an incumbent.
-See `new-book-plans/nibli-finite-collective-decision-capability-audit.md`.
+The finite collective-decision boundary that limits how much of this the
+engine can carry is measured under *Measured Nibli capability boundaries*
+below.
 
-The ruling is **ratified but unimplemented**: it adds no predicate, rule, pin,
-body in law, chapter, or public coverage claim. `mature`, `decide`, `choose`, `broken`,
-`approves`, `authority`, and every current institutional constant and
-consumer route require explicit retain/replace/retire cards; custody T3 supplies
-no office term or election clock. The controlling record is
+**Ratified but unimplemented.** `mature`, `decide`, `choose`, `broken`,
+`approves`, `authority`, and every current institutional constant and consumer
+route require explicit retain/replace/retire cards; custody T3 supplies no
+office term or election clock. **Implementation supersession, 2026-08-22:**
+`FS-CVF-003`, all 51 state-form cards, their pins, counterfactuals, reviewed
+references, and approved Book 1 prose are now formalized and prose-landed.
+That structural landing leaves every power, body, and `FS-CLM-18` at
+`Specified`/`ratified-unimplemented`: it proves no staffing, independence,
+operation, delivery, institutional action, or changing-result authentication.
+Controlling record:
 `new-book-plans/book-1-state-form-and-political-membership-decision.md`.
 
-**Implementation supersession, 2026-08-22.** The preceding paragraph records
-the state at ratification. `FS-CVF-003`, all 51 state-form cards, their pins,
-counterfactuals, reviewed references, and approved Book 1 prose are now
-formalized and prose-landed. That structural landing leaves every power, body,
-and `FS-CLM-18` at `Specified`/`ratified-unimplemented`: it proves no staffing,
-independence, operation, delivery, institutional action, or changing-result
-authentication.
+#### Substantive equality and anti-subordination — 2026-08-07
 
 **The substantive-equality and anti-subordination baseline is author-ratified
 (2026-08-07): universal substantive equality + structural repair.** Every person
@@ -423,16 +434,14 @@ re-audit, redesign, recurrence monitoring, and measures directed at
 non-repetition. No remedy may take another person's standing, floor, core liberty,
 due process, or political equality, or assign guilt solely by group membership.
 
-The ruling is **ratified but unimplemented**. It creates no equality predicate,
-finding, duty, remedy, institution, chapter, or public coverage claim. The
-specification owns the legal definitions, reach, proof, review, continuity,
-remedy, and failure polarity; Book 1 renders them. Book 2 owns collection and
-statistical methods, staffing, costs, accommodation operations, monitoring,
-enforcement workflows, and empirical evaluation. Nibli may consume an
-authenticated external finding; it is not a population-statistics,
-identity-authentication, or institutional-liveness system.
-The controlling record is
+**Ratified but unimplemented.** Book 2 owns collection and statistical
+methods, accommodation operations, monitoring, enforcement workflows, and
+empirical evaluation. Nibli may consume an authenticated external finding; it
+is not a population-statistics, identity-authentication, or
+institutional-liveness system. Controlling record:
 `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
+
+#### Economic pluralism and the protected private sphere — 2026-08-07
 
 **The economic-pluralism and protected-private-sphere settlement is
 author-ratified (2026-08-07): bounded plural economy + protected voluntary
@@ -553,29 +562,25 @@ stronger subnational protection survives, while no region may lower common
 floors or safeguards or defeat portability. This is not a general commerce,
 spending, taxation, or pre-emption power.
 
-The ruling is **ratified but unimplemented**. It creates no economic predicate,
-finding, duty, remedy, institution, chapter, or public coverage claim. Book 1
-owns legal forms, limits, triggers, evidence, ordering, continuity, remedies,
-and federal competence. Book 2 owns rates, budgets, models, prices, production,
-inventories, staffing, workflows, monetary instruments, capacity, and empirical
-feasibility. Nibli may consume a minimal authenticated, adjudicated, purpose-
-bound projection through a distinct premise or result-record relation, never
-the raw economic record; a consequential predicate protected by
-`derived_only` must still be derived. Nibli neither calculates nor
-authenticates an economy, proves scarcity or action, or receives a universal
-economic score. The controlling record is
+**Ratified but unimplemented.** Book 2 owns rates, budgets, models, prices,
+production, inventories, monetary instruments, and empirical feasibility.
+Nibli may consume a minimal authenticated, adjudicated, purpose-bound
+projection through a distinct premise or result-record relation, never the raw
+economic record; a consequential predicate protected by `derived_only` must
+still be derived. Nibli neither calculates nor authenticates an economy,
+proves scarcity or action, nor receives a universal economic score.
+**Implementation supersession, 2026-08-28:** `FS-CVF-006`, the 28 economic
+power contracts, three carry contracts, `FS-CCE-223` through `FS-CCE-367`, the
+24-case acceptance matrix and its pins and counterfactuals, reviewed
+references, and approved Book 1 prose are now formalized and prose-landed.
+This structural landing remains source- and repository-bound: it proves no
+operating economy, authenticated external finding, institutional action,
+delivery, liveness, affordability, supply, capacity, stability, fiscal or
+monetary performance, scarcity, or empirical feasibility. The current source
+still awaits its receipt-bound repository audit. Controlling record:
 `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
 
-The preceding paragraph records the state at ratification. **Implementation
-supersession, 2026-08-28.** `FS-CVF-006`, the 28 economic power contracts, three
-carry contracts, `FS-CCE-223` through `FS-CCE-367`, the 24-case acceptance
-matrix and its pins and counterfactuals, reviewed references, and approved Book
-1 prose are now formalized and prose-landed. This structural landing remains
-source- and repository-bound: it proves no operating economy, authenticated
-external finding, institutional action, delivery, liveness, affordability,
-supply, capacity, stability, fiscal or monetary performance, scarcity, or
-empirical feasibility. The current source still awaits its receipt-bound
-repository audit.
+#### Family, dependency, reproduction, and collective plurality — 2026-08-08
 
 **The family, dependency, reproduction, and collective/plurality baselines are
 author-ratified (2026-08-08): independent personhood + supported agency + modular
@@ -660,23 +665,19 @@ accessible information, time, accommodation, reasons, and review, not a blanket
 veto. The equal general-government ballot, common services for nonmembers, and
 the negotiated-secession route remain unchanged.
 
-The ruling is **ratified but unimplemented**. It creates no predicate, rule,
-finding, duty, institution, chapter, age number, programme, or public claim.
-`mature` must be replaced; unary `family` retired as a placement or liberty
-proxy; `home` split by legal effect; and absence-based `parent`, `married`, and
-`sibling` independence replaced by case-bound conflict findings. `work(Care)`,
+**Ratified but unimplemented**, and it supplies no age number. `mature` must
+be replaced; unary `family` retired as a placement or liberty proxy; `home`
+split by legal effect; and absence-based `parent`, `married`, and `sibling`
+independence replaced by case-bound conflict findings. `work(Care)`,
 `healthy`, `free`, `public`, and `owe` cannot stand in for care, consent,
-emancipation, collective status, or responsibility. The specification owns
-statuses, rights, duties, intervention and consent limits, collective
-competences, evidence, challenge, continuity, remedy, and failure polarity;
-Book 1 renders them. Book 2 owns service capacity, family and care proceedings,
-clinical and death-record operations, land/title administration, language
-services, consultation, staffing, costs, and workflows. Nibli may consume
-bounded authenticated findings; it does not decide best interests, capacity,
-consent, pregnancy, parentage, death, collective identity, membership, title,
-or institutional action. The
-controlling record is
+emancipation, collective status, or responsibility. Book 2 owns service
+capacity, family and care proceedings, clinical and death-record operations,
+land/title administration, language services, and consultation. Nibli does not
+decide best interests, capacity, consent, pregnancy, parentage, death,
+collective identity, membership, or title. Controlling record:
 `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
+
+#### Ecological, future-generation, commons, and non-human-animal — 2026-08-08
 
 **The ecological, future-generation, commons, and non-human-animal baselines are
 author-ratified (2026-08-08): distinct environmental right + protected commons +
@@ -807,34 +808,15 @@ dispensable killing; detailed standards remain democratically revisable inside
 that core. Animal remedies cannot remove human standing, the material floor,
 core liberty, due process, or political equality.
 
-The versioned ecological and animal finding boundary was measured on 2026-08-11
-against clean Nibli `main == origin/main` at `07734c8f`, using release
-`nibli-pin` SHA-256 `87b5c7bf351e355352781905a7afedbf29f7c20b3e3d2fc69843921ba0a26f10`.
-The exact binary passed this repository's full verifier. The supported seam is
-narrow: Nibli may derive a bounded consequence from caller-admitted, finite,
-fully keyed, case-bound ordinary facts or result certificates through the
-ordinary KR/decomposed path. Authentication, scientific classification,
-completeness, freshness, conflict priority, time, notification, and execution
-remain external. Only a top-level definitive `TRUE` on that supported shape can
-support the consequence; `FALSE` is closed-world non-entailment, while
-`UNKNOWN`, `RESOURCE_EXCEEDED`, invalid input, and incomplete enumeration cannot
-authorize. Flat raw body-only-variable rules, non-finite exact-zero, mixed-row
-aggregation, and unsupported WIT raw-query parity are excluded. See
-`new-book-plans/nibli-versioned-ecological-and-animal-finding-capability-audit.md`.
-
-The ruling is **ratified but unimplemented**. It creates no predicate, rule,
-finding, ceiling, duty, remedy, institution, chapter, programme, or public
-claim. The specification owns rights and protected conditions, legal limits,
-evidence burdens, institutions, federal competence, challenge, continuity,
-liability, remedy, and failure polarity; Book 1 renders them. Book 2 owns
+**Ratified but unimplemented**, and it sets no ceiling. Book 2 owns
 measurements, numerical ceilings and budgets, inventories, models, species
-standards, monitoring, restoration and veterinary capacity, food and research
-transition, staffing, costs, workflows, and feasibility. Nibli may consume
-bounded authenticated findings; it does not measure ecology, decide sentience
-or causation, choose a ceiling, authenticate science, invent future preferences,
-or perform institutional action. The
-controlling record is
+standards, monitoring, restoration and veterinary capacity, and food and
+research transition. Nibli does not measure ecology, decide sentience or
+causation, choose a ceiling, authenticate science, or invent future
+preferences. Controlling record:
 `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
+
+#### Public safety, defence, emergency, and external power — 2026-08-08
 
 **The public-safety, defence, emergency, and external-power baselines are
 author-ratified (2026-08-08): separated protective functions + no derogation
@@ -999,69 +981,77 @@ arrest needs its own name. `severe` may not become a threat grading; `permits`,
 `authority`, `free`, `travel`, `prisoner`, `public`, `defend`, `show`, and
 `judge` each need explicit retain/replace/retire cards.
 
-The ruling is **ratified but unimplemented**: no predicate, rule, finding, duty,
-institution in law, chapter, programme, or public claim. Before any protective
-rule family lands, four prose sites must be re-audited — the single-deprivation
-claim and its Part V verdict **plus the same claim in `3-spine.md`'s
-hand-authored chapter list, which no generator and no prose gate covers**; the
-two confinement rule-statements, since shelter and recorded voice must extend to
-anyone the state physically holds by any instrument; the absent-justifications
-sentence, whose vocabulary half is false the moment justification vocabulary is
-admitted while its reachability half survives by scoping the force test to the
-public actor's own accountability; and the accountability endpoint. Note also
-that the counted-claim gate matches neither small cardinals nor "exactly *n*",
-so counting discipline here is human until it is extended — do not cite it as
+**Ratified but unimplemented.** Before any protective rule family lands, four
+prose sites must be re-audited — the single-deprivation claim and its Part V
+verdict **plus the same claim in `3-spine.md`'s hand-authored chapter list,
+which no generator and no prose gate covers**; the two confinement
+rule-statements, since shelter and recorded voice must extend to anyone the
+state physically holds by any instrument; the absent-justifications sentence,
+whose vocabulary half is false the moment justification vocabulary is admitted
+while its reachability half survives by scoping the force test to the public
+actor's own accountability; and the accountability endpoint. Note also that
+the counted-claim gate matches neither small cardinals nor "exactly *n*", so
+counting discipline here is human until it is extended — do not cite it as
 this domain's guard. Book 2 owns **operation under ordinary and declared shock
 conditions**: capability, doctrine, training, equipment, forensics, tradecraft,
 border and reception operations, incident command, stockpiles, restoration,
-procurement, treaty and sanctions administration, staffing, costs, and outside
-liveness. Other states' cooperation and recognition are named external
-assumptions. Nibli may consume a bounded authenticated authorisation,
-declaration, order, or review record; it does not detect a threat, decide
-necessity, proportionality, imminence or attribution, authenticate a warrant,
-prove an order was given or refused, advance a clock, end an emergency, or
-perform an institutional act. The controlling record is
+procurement, and treaty and sanctions administration. Other states'
+cooperation and recognition are named external assumptions. Nibli does not
+detect a threat, decide necessity, proportionality, imminence or attribution,
+authenticate a warrant, prove an order was given or refused, or end an
+emergency. Controlling record:
 `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
 
-The multi-power, multi-window protective-authority composition boundary was
-measured on 2026-08-12 against clean Nibli
-`main == origin/main == public main` at
-`07734c8f7af71075cb70e91c112ff75d16a962d9`. The composition findings came
-from separately digest-bound custom native probe sources and outputs recorded
-in the audit; the custom executable binaries were not digest-bound. Separately,
-release `nibli-pin` SHA-256
-`87b5c7bf351e355352781905a7afedbf29f7c20b3e3d2fc69843921ba0a26f10`
-ran the neutral text-boundary pin and passed this repository's full verifier;
-those runs do not establish the custom native-surface findings. The supported
-seam is narrow: exact case-bound ground queries over a raw rule shape that
-retains every positive witness in its head and rejoins the authorising act and
-version, measure, subject, scope, basis, authority, and window. On the dated
-probe, exact keyed ground queries scaled approximately linearly; sibling
-authority could not substitute, removing one measure's active authority left
-the others unchanged, removing the source closed every dependent conclusion,
-and a stale act version failed closed.
+#### Surviving guardrails and the democratic corridor
 
-This audit does not establish currentness, freshness, replay protection,
-conflict priority, publication, clock advancement, or institutional action.
-`FALSE` remains closed-world non-entailment rather than affirmative cessation;
-a duplicate or frozen renewal is indistinguishable from live evidence without
-external witnesses, and a `Closed` sibling does not override a retained `Open`
-record. Alternate and substitute routes derive only after their positive
-records and actions are supplied. The compiled no-reader graph is an
-observational current-program check, not a permanent seal. An unbound
-eight-variable `find` exhibited catastrophic candidate expansion and a
-process-level memory abort even with three expected rows, and an accepted flat
-raw rule whose positive witness variables appeared only in the antecedent
-silently under-derived. Formalisation must therefore use exact-ground queries
-over the measured fully head-carried raw shape and must not rely on the unsafe
-high-arity find/count/aggregate or antecedent-only-witness raw shapes. Any
-ordinary-KR implementation needs separate vocabulary-admission,
-compiler-lowering, compiled-shape, and behavioural validation against the
-selected source before it can claim this boundary. Aggregate callers must also
-validate that every projected binding is numeric because the current aggregate
-silently filters symbolic or missing values. No authority-specific engine
-feature is needed for the supported seam. See
-`new-book-plans/nibli-multi-power-multi-window-protective-authority-capability-audit.md`.
+The existing guardrails survive the expansion: no floor may depend on work,
+virtue, wealth, citizenship, documentation, score, compliance, or approval;
+recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
+incentives, and above-floor insurance use separate legal relations and never read
+`reward`; price, debt, property, employment, and insurance cannot condition the
+floor; no provider's assertion alone proves delivery; and Part V cannot create a
+right, power, or exception. The
+democratic corridor is a **ratified constitutional design rule, not yet a formal
+guarantee**: a majority chooses only among policies compatible with universal
+standing, core floors, equal protection/non-discrimination, due process, core
+liberties, commons constraints, direct non-human-animal protected-subject status,
+the prohibitions on severe avoidable animal suffering and dispensable
+killing, and — added 2026-08-08 — the categorical refusals on force, absolute
+non-refoulement and the ban on collective expulsion, prompt independent judicial
+review of detention, the right to an effective remedy, and the continued
+existence and capacity to sit of the People's Assembly and the Constitutional
+Court. The corridor governs **amendment**; the separate non-derogable list
+governs **emergency**, and because no derogation power exists every corridor
+member is also non-derogable while the converse does not hold.
+
+### Time and temporal contracts
+
+**T3 is author-ratified (2026-08-03) and implemented in stages for case-bound
+Court custody (2026-08-05).** T1 reconciles witnessed predecessor/successor
+records and selected carry. A witnessed passport selects one constitutional
+lineage, and only its collision-free terminal accepted successor can give
+carried adverse/clear status or public power current legal effect in a fresh
+evaluation. T2 builds independently witnessed, typed event and record paths;
+transitive cycles propagate conflict within their path type. T3 makes the exact
+current, source-bound review a positive premise of custody authority and rejoins
+the case subject, Court holder, Court judgment, injury victim, lease, window,
+renewal, source, and current-record witnesses. Competing witnessed source,
+window, case-subject, or lease bindings fail closed; the judgment and victim evidence
+are case-bound but have no general truth or uniqueness proof. Compact
+identifier-status conclusions are never sufficient alone: every
+consequential consumer rejoins the exact raw tuple and its matching witness
+fields. The current constitution still admits no duration arithmetic, sentence
+clock, filing deadline, or operational cadence, and it cannot make a successor
+arrive or prove that an outside clock advances. The reviewed contracts,
+two-snapshot harness, adversarial matrix, and residual Book 2 boundary live in
+`new-book-plans/book-1-time-model-decision.md` and
+`new-book-plans/temporal-assurance-case.json`. Another public power requires its
+own temporal contract; Book 2 continues to operate clocks, calendars, witnesses,
+publication, recovery, and time services.
+
+### Method and assurance rulings
+
+#### The assurance portfolio — 2026-08-08
 
 **The assurance portfolio is author-ratified (2026-08-08): seven
 non-substitutable routes + one posture set + a claim-language rule per posture.**
@@ -1210,6 +1200,8 @@ generator re-reads the sibling reviewed JSONs live, so a new reviewed enum
 value fails `verify.sh` until its mapping row lands in the same change. The
 controlling record is `new-book-plans/book-1-assurance-portfolio-decision.md`.
 
+#### The narrative register — 2026-08-08
+
 **The narrative register is author-ratified (2026-08-08): it stays flat, and the
 balance problem is a constitutional deficit rather than a prose one.** The four
 approved channels remain a **closed list** and this ruling disposes of all four,
@@ -1317,6 +1309,8 @@ derived chapters, inferring an inner life from a record entry, a passage
 introducing a claim that appears nowhere else, and the historical cases as a
 substitute for derived ordinary life. The controlling record is
 `new-book-plans/book-1-narrative-register-decision.md`.
+
+#### Reader-balance evidence protocol and threshold timing — 2026-08-09
 
 **The reader-balance evidence protocol and its threshold timing are
 author-ratified (2026-08-09): pre-registered pilot-and-fresh-holdout + the pass
@@ -1499,42 +1493,7 @@ is not a built or available R6 route; FS-CLM-37 remains
 Unestablished/route-unbuilt and Gate C is unchanged. The controlling record is
 `new-book-plans/book-1-reader-evidence-protocol-decision.md`.
 
-The existing guardrails survive the expansion: no floor may depend on work,
-virtue, wealth, citizenship, documentation, score, compliance, or approval;
-recognition remains arity-one, non-ranked, and non-operative; lawful compensation,
-incentives, and above-floor insurance use separate legal relations and never read
-`reward`; price, debt, property, employment, and insurance cannot condition the
-floor; no provider's assertion alone proves delivery; and Part V cannot create a
-right, power, or exception. The
-democratic corridor is a **ratified constitutional design rule, not yet a formal
-guarantee**: a majority chooses only among policies compatible with universal
-standing, core floors, equal protection/non-discrimination, due process, core
-liberties, commons constraints, direct non-human-animal protected-subject status,
-the prohibitions on severe avoidable animal suffering and dispensable
-killing, and — added 2026-08-08 — the categorical refusals on force, absolute
-non-refoulement and the ban on collective expulsion, prompt independent judicial
-review of detention, the right to an effective remedy, and the continued
-existence and capacity to sit of the People's Assembly and the Constitutional
-Court. The corridor governs **amendment**; the separate non-derogable list
-governs **emergency**, and because no derogation power exists every corridor
-member is also non-derogable while the converse does not hold.
-
-**Book 1's public-edition boundary is author-ratified (2026-08-04): E2 + P1 +
-D2, refined by the 2026-08-07 full-society boundary.** The pre-expansion
-baseline remains public source and git history but receives no promoted edition,
-canonical serialization, assembled release, or print identity. “Completed
-expansion” now means cumulative Gate C completion. Gate C publishes Book 1 —
-First Edition, its assembled digital artifacts, and its first Book 1 POD under
-one provenance contract; it makes no operational or integrated full-society
-claim. After Gate B and before Gate C, coherent milestones may appear only as
-immutable, tagged First-Edition previews with permanent URLs, exact book and
-nibli sources, full verification records, and visible supersession. They are design snapshots, not
-promises of final chapter order, and no public release candidate becomes an
-edition early. `main` is never an edition URL, and no public artifact may be
-silently replaced. `new-book-plans/book-1-edition-boundary-decision.md` controls
-Book 1 publication mechanics; `new-book-plans/full-society-boundary-decision.md`
-controls Gate A–E labels, the two-book seam, and versioned closure. Neither
-ruling creates a tag, release, site, preview, or print file by itself.
+### Enacted machinery — generated and verifier-enforced
 
 **`lose` and legacy `decide` are relation-wide conclusion-only — L1 + D1,
 author-ratified and enacted 2026-08-04.** Both had been closed only by omission:
@@ -1599,47 +1558,6 @@ attribute a runtime write or absence, authenticate a record, recover an entry,
 or make a successor arrive. It checks itemised `owe` debts and their opaque
 event-abstraction `entitled` projections together against the full constitution.
 No second registration, adulthood, release, or carry gate was added.
-
-**Full-source and composed opaque floor execution restored 2026-08-05:** release
-Nibli `5cec80080eea0334c87508e60813f8f70f487441` first removed the temporary
-extracted-floor isolation. It repaired two independent global costs: eager
-materialisation of every eligible relation and backward witness generation over
-the global typed domain and every Skolem family without first using relation
-anchors and bound siblings. The exact full-T3 food entitlement fell from a
-180.24 s timeout at 1,850,676 KiB RSS on `225bba4` to 0.13–0.15 s and about
-12,000 KiB on clean `5cec800` builds.
-
-Release Nibli `4cb02aade43b394374c40e661907ad66df3af3fe` closes the residual
-composition where the queried subject's only standing proof traverses the
-high-arity T3 custody chain. The remaining cause was general: rule firing built
-independent candidate vectors for unbound Neo-Davidsonian events before shared
-individual-role bindings could constrain them; partial dependent-Skolem
-candidates rebuilt already grounded dependencies; opaque-query candidate order
-did not favour the ground subject; and an exact eligible one-positive derived
-antecedent could not request its complete relation cone lazily. The repair uses
-deterministic left-deep event joins under accumulated bindings, grounded/index
-selectivity, guarded early role binding, query-ground dependency ordering,
-partial-Skolem specialisation, and fail-closed exact relation-scoped lookup. No
-book predicate or definitive logical verdict was special-cased or moved.
-
-On binary-bound 2026-08-05 measurements, `5cec800` timed out on both the composed
-Zed chapter query (180.13 s, 25,792 KiB RSS) and the generated placement query
-(180.11 s, 25,912 KiB). The supplied `4cb02aa` release returned Zed TRUE in a
-0.87 s median at no more than 13,364 KiB and the placement entitlement TRUE in a
-0.23 s median at no more than 12,868 KiB. These are dated fixtures, not a timeless
-performance guarantee. An independent clean build (SHA-256 `d5d0f86a494aedd943434c2fa0abd0acbe0d7df36142d983df5774bf2dd38999`)
-reproduced the two results at 0.87 s / 13,324 KiB and 0.22 s / 12,796 KiB. Its
-bytes differ from the supplied binary (`33ea9c9805b899fa054b75371c60eedc9b975d4be356a45b57de0d6323071fa7`),
-so this establishes source identity and behaviour, not byte-reproducible builds.
-Chapter 7 now pins the Zed composition directly. Each placement row also runs a
-fresh one-pin probe against its complete generated candidate: confined standing
-must traverse the actual T3 facts, with no direct `person` overlay and no
-extracted floor source.
-
-`EventPath` and `RecordPath` are third-place constants in ternary `precede/3`, not
-binary relation heads. The T3 chain amplified both engine failures but was not
-their complete cause; opaque abstraction exposed witness expansion but was not
-required for the separate eager-materialisation defect.
 
 **Staged temporal assurance enacted 2026-08-05:**
 `12-temporal-assurance.py` constructs cumulative T1, T2, and T3 sources and
@@ -1895,6 +1813,169 @@ and establishes no delivery, liveness, feasibility, operation, or Gate A
 closure. The audit may therefore be complete while claims remain blocked or
 bounded-unresolved and while Gate A remains not passed.
 
+**The reference envelope is versioned in structure, enacted 2026-08-09; values,
+calibration, and every feasibility claim stay outside Book 1.** The envelope
+array now carries the permanent `FS-ENV-00` pre-envelope identity — every Book
+1 claim, defect row, and receipt stays keyed to it unmigrated, because Book 1
+claims are not envelope-bound — beside `FS-ENV-01` (`envelope-v1-structure`),
+whose fields are versioned with definitions, dependents, and
+invariance statements and whose every value status names Book 2's Gate D
+calibration as owner. **`calibrated` is refused outright in this contract**:
+calibration becomes legal only through a deliberate future contract amendment,
+and the operationally-assured stage and remedied path still require a
+calibrated envelope through one shared helper, so a structure can route and be
+reviewed but never assure operation. Gate A instead requires a non-stub,
+versioned-structure envelope; it does not wait on Gate D calibration. The
+dependency closure is the
+design's thesis made mechanical: no established constitutional invariant may
+depend on an envelope field — norm content is envelope-invariant — while the
+envelope-relative claims (arrival, and live-record persistence under the
+infrastructure-failure shock) must appear as dependents with their relativity
+stated. The **functional criteria** are fixed as the seven-member union with
+provenance (adequacy; accessibility/equality; continuity; resilience;
+sustainability; resource; safety), each bound to the rulings' actual sentences
+by needle, the drift across the five ratified variants recorded, and the
+ledger's own materiality test aligned to the boundary decision's exact
+wording. **Thresholds are meanings, not measurements**: each binds a ratified
+sentence, classifies its lawful source (constitutional minimum or ceiling,
+democratic policy target, scientific safety boundary, or operational
+diagnostic — the source fixes the layer), separates its decision owner from
+its measurement owner, and carries no numeric value; values arrive with their
+classified lawful source, never here. The Gate A readiness row for the
+envelope computes met-in-form: versioned structure is sufficient for the scope
+and assurance-program gate. Values, calibration, operational assurance, and
+remedied resolution remain Book 2 Gate D work, and Book 2 stays inactive until
+Gate C.
+
+### Measured Nibli capability boundaries
+
+Each is a dated measurement against a named engine revision, not a timeless
+guarantee. Re-measure before relying on one.
+
+The finite collective-decision boundary was measured on 2026-08-07 and
+independently rechecked on 2026-08-08 against Nibli `a7d288a`, which contains
+the required `4cb02aa` baseline. For definitive finite positive queries, Nibli
+can observe exact facts in a supplied snapshot, find/count witnesses, aggregate
+supplied weights, and compose supplied result certificates. It cannot generically
+derive `ceil(2R/3)`, compare dynamic
+tallies or shares, group affected regions, authenticate completeness, choose one
+effective conflicting submission, or perform an institutional act. Exact-count
+and compute nodes are query-only; a hand-enumerated two-of-three rule is not a
+changing-roster majority rule. The external result pipeline keeps four roles
+separate: election administration authenticates and classifies submissions;
+independent assurance attests completeness; the result service computes and
+certifies; authorised institutions execute. Missing completeness can become a
+withholding veto, so every route needs alternate attestation and a failure
+default. "No turnout quorum" is an absent legal condition, not an engine
+primitive. No general empty-roster passage rule was supplied; each Book 1 result
+card must state that default before formalisation. Since Nibli `5580618`, final
+non-definitive witness enumeration fails closed rather than returning a partial
+collection. At `5777ced`, text compute registration routes only
+corpus-resolvable canonical relations; it declares no vocabulary or arity.
+Arbitrary compute remains a caller-built native raw-IR query and is query-only
+at assertion ingress. Neither repair supplies changing-roster computation or
+certification.
+`FALSE` does not affirmatively preserve current law or an incumbent.
+See `new-book-plans/nibli-finite-collective-decision-capability-audit.md`.
+
+The versioned ecological and animal finding boundary was measured on 2026-08-11
+against clean Nibli `main == origin/main` at `07734c8f`, using release
+`nibli-pin` SHA-256 `87b5c7bf351e355352781905a7afedbf29f7c20b3e3d2fc69843921ba0a26f10`.
+The exact binary passed this repository's full verifier. The supported seam is
+narrow: Nibli may derive a bounded consequence from caller-admitted, finite,
+fully keyed, case-bound ordinary facts or result certificates through the
+ordinary KR/decomposed path. Authentication, scientific classification,
+completeness, freshness, conflict priority, time, notification, and execution
+remain external. Only a top-level definitive `TRUE` on that supported shape can
+support the consequence; `FALSE` is closed-world non-entailment, while
+`UNKNOWN`, `RESOURCE_EXCEEDED`, invalid input, and incomplete enumeration cannot
+authorize. Flat raw body-only-variable rules, non-finite exact-zero, mixed-row
+aggregation, and unsupported WIT raw-query parity are excluded. See
+`new-book-plans/nibli-versioned-ecological-and-animal-finding-capability-audit.md`.
+
+The multi-power, multi-window protective-authority composition boundary was
+measured on 2026-08-12 against clean Nibli
+`main == origin/main == public main` at
+`07734c8f7af71075cb70e91c112ff75d16a962d9`. The composition findings came
+from separately digest-bound custom native probe sources and outputs recorded
+in the audit; the custom executable binaries were not digest-bound. Separately,
+release `nibli-pin` SHA-256
+`87b5c7bf351e355352781905a7afedbf29f7c20b3e3d2fc69843921ba0a26f10`
+ran the neutral text-boundary pin and passed this repository's full verifier;
+those runs do not establish the custom native-surface findings. The supported
+seam is narrow: exact case-bound ground queries over a raw rule shape that
+retains every positive witness in its head and rejoins the authorising act and
+version, measure, subject, scope, basis, authority, and window. On the dated
+probe, exact keyed ground queries scaled approximately linearly; sibling
+authority could not substitute, removing one measure's active authority left
+the others unchanged, removing the source closed every dependent conclusion,
+and a stale act version failed closed.
+
+This audit does not establish currentness, freshness, replay protection,
+conflict priority, publication, clock advancement, or institutional action.
+`FALSE` remains closed-world non-entailment rather than affirmative cessation;
+a duplicate or frozen renewal is indistinguishable from live evidence without
+external witnesses, and a `Closed` sibling does not override a retained `Open`
+record. Alternate and substitute routes derive only after their positive
+records and actions are supplied. The compiled no-reader graph is an
+observational current-program check, not a permanent seal. An unbound
+eight-variable `find` exhibited catastrophic candidate expansion and a
+process-level memory abort even with three expected rows, and an accepted flat
+raw rule whose positive witness variables appeared only in the antecedent
+silently under-derived. Formalisation must therefore use exact-ground queries
+over the measured fully head-carried raw shape and must not rely on the unsafe
+high-arity find/count/aggregate or antecedent-only-witness raw shapes. Any
+ordinary-KR implementation needs separate vocabulary-admission,
+compiler-lowering, compiled-shape, and behavioural validation against the
+selected source before it can claim this boundary. Aggregate callers must also
+validate that every projected binding is numeric because the current aggregate
+silently filters symbolic or missing values. No authority-specific engine
+feature is needed for the supported seam. See
+`new-book-plans/nibli-multi-power-multi-window-protective-authority-capability-audit.md`.
+
+**Full-source and composed opaque floor execution restored 2026-08-05:** release
+Nibli `5cec80080eea0334c87508e60813f8f70f487441` first removed the temporary
+extracted-floor isolation. It repaired two independent global costs: eager
+materialisation of every eligible relation and backward witness generation over
+the global typed domain and every Skolem family without first using relation
+anchors and bound siblings. The exact full-T3 food entitlement fell from a
+180.24 s timeout at 1,850,676 KiB RSS on `225bba4` to 0.13–0.15 s and about
+12,000 KiB on clean `5cec800` builds.
+
+Release Nibli `4cb02aade43b394374c40e661907ad66df3af3fe` closes the residual
+composition where the queried subject's only standing proof traverses the
+high-arity T3 custody chain. The remaining cause was general: rule firing built
+independent candidate vectors for unbound Neo-Davidsonian events before shared
+individual-role bindings could constrain them; partial dependent-Skolem
+candidates rebuilt already grounded dependencies; opaque-query candidate order
+did not favour the ground subject; and an exact eligible one-positive derived
+antecedent could not request its complete relation cone lazily. The repair uses
+deterministic left-deep event joins under accumulated bindings, grounded/index
+selectivity, guarded early role binding, query-ground dependency ordering,
+partial-Skolem specialisation, and fail-closed exact relation-scoped lookup. No
+book predicate or definitive logical verdict was special-cased or moved.
+
+On binary-bound 2026-08-05 measurements, `5cec800` timed out on both the composed
+Zed chapter query (180.13 s, 25,792 KiB RSS) and the generated placement query
+(180.11 s, 25,912 KiB). The supplied `4cb02aa` release returned Zed TRUE in a
+0.87 s median at no more than 13,364 KiB and the placement entitlement TRUE in a
+0.23 s median at no more than 12,868 KiB. These are dated fixtures, not a timeless
+performance guarantee. An independent clean build (SHA-256 `d5d0f86a494aedd943434c2fa0abd0acbe0d7df36142d983df5774bf2dd38999`)
+reproduced the two results at 0.87 s / 13,324 KiB and 0.22 s / 12,796 KiB. Its
+bytes differ from the supplied binary (`33ea9c9805b899fa054b75371c60eedc9b975d4be356a45b57de0d6323071fa7`),
+so this establishes source identity and behaviour, not byte-reproducible builds.
+Chapter 7 now pins the Zed composition directly. Each placement row also runs a
+fresh one-pin probe against its complete generated candidate: confined standing
+must traverse the actual T3 facts, with no direct `person` overlay and no
+extracted floor source.
+
+`EventPath` and `RecordPath` are third-place constants in ternary `precede/3`, not
+binary relation heads. The T3 chain amplified both engine failures but was not
+their complete cause; opaque abstraction exposed witness expansion but was not
+required for the separate eager-materialisation defect.
+
+### Historical — the protocol-v4 Stage 4 record
+
 **Supersession note, 2026-08-27.** The following Stage 4 paragraphs are the
 preserved protocol-v4 historical record. Protocol v6 supersedes their
 current-audit and commit-sequencing statements for every new candidate;
@@ -1935,39 +2016,7 @@ and transcript digest. The closure commit may differ from its candidate only in
 closure and acceptance metadata. The checker derives `passed` from a valid
 record; no author ratification or other human act is required.
 
-**The reference envelope is versioned in structure, enacted 2026-08-09; values,
-calibration, and every feasibility claim stay outside Book 1.** The envelope
-array now carries the permanent `FS-ENV-00` pre-envelope identity — every Book
-1 claim, defect row, and receipt stays keyed to it unmigrated, because Book 1
-claims are not envelope-bound — beside `FS-ENV-01` (`envelope-v1-structure`),
-whose fields are versioned with definitions, dependents, and
-invariance statements and whose every value status names Book 2's Gate D
-calibration as owner. **`calibrated` is refused outright in this contract**:
-calibration becomes legal only through a deliberate future contract amendment,
-and the operationally-assured stage and remedied path still require a
-calibrated envelope through one shared helper, so a structure can route and be
-reviewed but never assure operation. Gate A instead requires a non-stub,
-versioned-structure envelope; it does not wait on Gate D calibration. The
-dependency closure is the
-design's thesis made mechanical: no established constitutional invariant may
-depend on an envelope field — norm content is envelope-invariant — while the
-envelope-relative claims (arrival, and live-record persistence under the
-infrastructure-failure shock) must appear as dependents with their relativity
-stated. The **functional criteria** are fixed as the seven-member union with
-provenance (adequacy; accessibility/equality; continuity; resilience;
-sustainability; resource; safety), each bound to the rulings' actual sentences
-by needle, the drift across the five ratified variants recorded, and the
-ledger's own materiality test aligned to the boundary decision's exact
-wording. **Thresholds are meanings, not measurements**: each binds a ratified
-sentence, classifies its lawful source (constitutional minimum or ceiling,
-democratic policy target, scientific safety boundary, or operational
-diagnostic — the source fixes the layer), separates its decision owner from
-its measurement owner, and carries no numeric value; values arrive with their
-classified lawful source, never here. The Gate A readiness row for the
-envelope computes met-in-form: versioned structure is sufficient for the scope
-and assurance-program gate. Values, calibration, operational assurance, and
-remedied resolution remain Book 2 Gate D work, and Book 2 stays inactive until
-Gate C.
+## Licensing
 
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
 
@@ -1976,6 +2025,7 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `book.md` — the entire book in a single Markdown file (~2970 lines).
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
+
 - `TODO.md` — the formal-specification and **book-1** projection work tracker,
   arranged **in the order dependencies permit**, refreshed 2026-08-30 for the
   formal-specification-first assurance-batch workflow. Its open top-level items
@@ -2006,6 +2056,7 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   institution, operation, or narrative current. Delete a bullet when it fully
   lands; update it if partly done. Book 2 remains inactive until Book 1 — First
   Edition actually ships at Gate C.
+
 - `new-book-plans/` — the principal specification area: the executable
   constitution `constitution.nibli`, reviewed decisions and canonical contracts,
   pins, counterfactuals, generated projections, receipts, and closure evidence.
@@ -2046,18 +2097,21 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   is a reviewed-source migration helper that rewrites one exact source-family
   prefix of `full-society-ledger.json` to the current ledger schema; it is not an
   assurance route, and the native ledger checker must validate everything it emits.
+
 - `new-book-plans/reader-evidence.json` and `reader-evidence.md` — the reviewed
   source and generated report for the native dormant reader-evidence contract.
   The numbered Python file is retained only as a historical parity reference.
   The JSON owns exact
   reader-study states and eventual rule values; prose references its stable
   records and never duplicates threshold values.
+
 - `new-book-plans/reader-evidence-pilot/` — inputs for the native deterministic
   HTML/EPUB snapshot builder. The numbered Python file is retained only as a
   historical parity reference. These are the
   public-minimum pilot templates. They create no private runnable instrument,
   freeze, pilot evidence, threshold value, PDF accessibility attestation, or R6
   availability.
+
 - `verify.sh` — **the one check.** It incrementally builds and then replaces
   itself with the single native `rights-verify` binary. That binary embeds the
   Nibli engine crates from the adjacent source checkout, validates every
@@ -2071,53 +2125,58 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   are the intended feedback loop while an assurance batch is still changing.
   They remain partial and are not semantic commit gates.
   **Superseding commit rule, protocol v6 (2026-08-27):** stage every semantic,
-  executable, verifier, fixture, engine-binding, or generated-artifact change and run one
-  `./verify.sh --emit-receipt new-book-plans/verification-receipts`. Full
-  already includes quick, so do not precede it with quick on unchanged bytes.
+  executable, verifier, fixture, engine-binding, or generated-artifact change
+  and run one `./verify.sh --emit-receipt new-book-plans/verification-receipts`.
   Only the exact following audit, closure, and tracker successors may use
-  `./verify.sh --commit-gate <receipt> --transition
-  audit|closure|tracker`. Reuse requires a byte-identical heavyweight
-  dependency manifest plus the transition-specific structural validator.
-  Missing local evidence or any unexpected path, mode, input, engine,
-  environment, merge, or intervening commit fails closed without a silent full
-  run. Ordinary `./verify.sh` retains its full validation semantics for
-  iteration, but emits no reusable receipt and cannot gate a semantic commit
-  under protocol v6. The sole exception is the exact source-bound `FS-SAU-42`
-  forward recovery in section 5 of the scope-review protocol. It validates the
-  two named historical v5 receipt/audit epochs and closed anchor from committed
-  bytes, requires their digest-bound local evidence, performs no ancestor
-  search, and is consumed by its successful closure. Heavyweight verifier entry points share one Git-common-
-  directory kernel lock. Contention exits 75 with sanitised owner details
-  unless `--wait-for-lock SECONDS` supplies an explicit bounded wait. Quick,
-  full, receipt, and gate runs also report measured phase timing, progress,
-  ETA, a heartbeat for the active phase, and queued-lock state on stderr only,
-  and write one canonical diagnostics JSON per mode under the Git common
-  directory's `rights-verification/diagnostics/`. Those diagnostic values are
-  one machine's wall-clock measurements: never assurance evidence, never
-  receipt-bound, and never a verdict input. The stdout transcript a receipt
-  binds is byte-identical with and without the instrumentation, which the
-  run-diagnostics self-test holds as watched controls in both quick and full
-  paths. Native ledger and closure checks preserve the immutable-input and final-reread
-contract. `./verify.sh --refresh full-society-ledger` and `./verify.sh
---refresh constitutional-closure` atomically regenerate their complete output
-sets in the same Rust process. Full execution retains canonical presentation
-while a prevalidated weighted dependency graph overlaps only the preflight-
-captured live-pin, obligations, and state-form plans under the one
-`RIGHTS_VERIFY_JOBS` execution-lane capacity. Other executable families remain
-serial in canonical order. State-form retains the reviewed 64-main and 17-
-counterfactual byte-balanced shards; its full-graph plan receives one lane while
-focused state-form execution may use the configured capacity.
-The suite
-  exits non-zero on the first failure and names the claim that stopped being
-  true; do not copy runtimes or suite counts here because governed sources move.
-  Its quick path runs the reader-evidence structural check; the full path also
-  runs only the evaluator controls supportable at the recorded stage. Quick and
-  full modes both self-test the fixed admission-gate component. The structural
-  and evaluator controls are not that gate or R6's seeded misconception control;
-  the gate self-test proves its interface only. None makes R6 built or available.
-  Quick and full modes also run script 15's static HTML/EPUB check; that check
-  neither renders PDF nor supplies human accessibility evidence.
+  `./verify.sh --commit-gate <receipt> --transition audit|closure|tracker`.
+  Reuse requires a byte-identical heavyweight dependency manifest plus the
+  transition-specific structural validator. Missing local evidence or any
+  unexpected path, mode, input, engine, environment, merge, or intervening
+  commit fails closed without a silent full run. Ordinary `./verify.sh` retains
+  its full validation semantics for iteration, but emits no reusable receipt and
+  cannot gate a semantic commit under protocol v6. The sole exception is the
+  exact source-bound `FS-SAU-42` forward recovery in section 5 of the
+  scope-review protocol. It validates the two named historical v5 receipt/audit
+  epochs and closed anchor from committed bytes, requires their digest-bound
+  local evidence, performs no ancestor search, and is consumed by its successful
+  closure. The freeze-and-receipt policy those commands implement is stated once
+  under *Author-Ratified Formal-Specification Workflow* above; do not restate it
+  here.
+  Heavyweight verifier entry points share one Git-common-directory kernel lock.
+  Contention exits 75 with sanitised owner details unless
+  `--wait-for-lock SECONDS` supplies an explicit bounded wait. Quick, full,
+  receipt, and gate runs
+  also report measured phase timing, progress, ETA, a heartbeat for the active
+  phase, and queued-lock state on stderr only, and write one canonical
+  diagnostics JSON per mode under the Git common directory's
+  `rights-verification/diagnostics/`. Those diagnostic values are one machine's
+  wall-clock measurements: never assurance evidence, never receipt-bound, and
+  never a verdict input. The stdout transcript a receipt binds is byte-identical
+  with and without the instrumentation, which the run-diagnostics self-test holds
+  as watched controls in both quick and full paths.
+  Native ledger and closure checks preserve the immutable-input and final-reread
+  contract. `./verify.sh --refresh full-society-ledger` and
+  `./verify.sh --refresh constitutional-closure` atomically regenerate their
+  complete output sets in the same Rust process. Full execution overlaps only the preflight-captured live-pin,
+  obligations, and state-form plans under the single `RIGHTS_VERIFY_JOBS`
+  execution-lane capacity, whose complete contract is in the workflow section
+  above; other executable families remain serial in canonical order. State-form
+  retains the reviewed 64-main and 17-counterfactual byte-balanced shards; its
+  full-graph plan receives one lane while focused state-form execution may use
+  the configured capacity.
+  The suite exits non-zero on the first failure and names the claim that stopped
+  being true; do not copy runtimes or suite counts here because governed sources
+  move. Its quick path runs the reader-evidence structural check; the full path
+  also runs only the evaluator controls supportable at the recorded stage. Quick
+  and full modes both self-test the fixed admission-gate component. The
+  structural and evaluator controls are not that gate or R6's seeded
+  misconception control; the gate self-test proves its interface only. None makes
+  R6 built or available. Quick and full modes also run script 15's static
+  HTML/EPUB check; that check neither renders PDF nor supplies human
+  accessibility evidence.
+
 - `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (including `no-dead-conjuncts`, the delivery-independence guard, and `no-state-form-independent-current-review`, whose 1:1 mutation removes only the source-writer/temporal-reviewer disequality), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). The state-form fixture's paired pins show every fused card gaining authority while properly separated controls remain. These fixtures exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
+
 - `book-2/TODO.md` — book-2's deliberately unordered tracker, inactive until
   Book 1 — First Edition ships at Gate C. Its collection-only full-society
   contract generates an operational view from the canonical source, binds models
@@ -2126,6 +2185,7 @@ The suite
   Gate D permits only immutable Book 2 previews or release candidates; Gate E
   publishes Book 2 — First Edition and the integrated release. The Book 1 Phase 2
   channel protocol governs future engine asks.
+
 - `registry/` — the CC0 claim registry: `claims.json`, its staleness gate `check.py` (run inside `verify.sh` whenever `claims.json` exists), pinned data snapshots under `data/`, and their fetchers under `fetch/`.
 - `AGENTS.md` — the condensed repository-guidelines mirror read by non-Claude agents; it declares this file authoritative. It duplicates the command list and the digest-refresh order, so when a command, refresh order, or convention changes here, update it in the same change — it goes stale the way any hand-maintained copy does.
 - `LICENSING.md` — the mixed-licence map. Read before adding files.
@@ -2514,12 +2574,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   opening note, Part V, and the method part. **The seam is audible and deliberate** — a reader
   can hear the crossing from what the machine derived to where the author argues — so **do not
   warm the derived chapters and do not flatten the exempt three**; either direction erases a
-  boundary that is doing epistemic work. **Current supply protocol:** the
-  author-approved 2026-08-20 exact-version protocol above governs the first
-  person and every other in-scope Book 1 prose channel. Sessions may propose the
-  wording; explicit approval of the exact displayed version makes it canonical.
-  `tmp.txt` is optional noncanonical scratch space rather than a required channel
-  or approval record.
+  boundary that is doing epistemic work. Current supply follows the 2026-08-20 exact-version
+  prose-supply protocol stated under *The narrative register* above.
   **All three exempt elements were session-drafted by the author's explicit instruction,
   each a recorded exception (2026-08-03).** The opening note: "You draft it yourself",
   reviewed in `tmp.txt`, adopted with no changes ("I have no changes to suggest"). Part V:
