@@ -91,8 +91,32 @@ historical parity references, not normal workflow entry points.
 The embedded Nibli engine is compiled from the adjacent source checkout and its
 source revision plus exact verifier bytes are bound into new receipts.
 State-form execution retains its reviewed 64 main and 17 counterfactual
-byte-balanced shards under a bounded four-worker, canonical-output, fail-fast
-scheduler inside the native process.
+byte-balanced shards. Focused state-form runs may use the configured lane
+capacity; the full cross-family graph assigns state-form one lane so it can
+advance beside the live-pin allocation without exceeding the shared bound.
+
+`RIGHTS_VERIFY_JOBS` is the only heavyweight execution-lane setting and accepts
+1 through 4. The full suite validates its typed executable-family dependency
+graph before launch. Only the live-pin, obligations, and state-form families
+enter the cross-family graph, and their complete repository input bytes
+(including the live-pin shell-precondition tree) are captured before launch.
+Reader evidence runs first; red-team, temporal, amendment, placement, and ordinary
+counterfactual execution remain serial in their canonical positions. The graph
+buffers the existing canonical stdout order, stops new work at failure, selects
+the lowest canonical active failure, cancels higher work, and joins or reaps
+every started worker or child. The setting is not a total OS-thread limit: each
+active family has one joinable wrapper, while nested family workers consume the
+declared weighted lanes. Wrappers, heavyweight lane workers, memory-owning
+worker states, and managed child processes have separately watched bounds. One
+lane is the current per-file fail-fast semantic and failure-selection reference;
+passing stdout and the selected failure remain canonical across supported
+capacities. At capacities 3 and 4, live pins receive all but one lane while the
+captured obligations and state-form work advance in that remaining lane. Legacy
+family-specific worker variables fail closed. Receipts bind the effective
+total/live allocation, scheduler contract, full-suite execution start and
+finish, and
+the digest of local expanded evidence containing elapsed time; per-family and
+per-job timings remain unbound local diagnostics.
 
 Quick, full, receipt, and gate runs report measured phase timing, progress,
 ETA, an active-phase heartbeat, and queued-lock state on stderr only, and write

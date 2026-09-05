@@ -21,6 +21,7 @@ use crate::cli::Error;
 use crate::context::Context;
 use crate::digest::sha256;
 use crate::pin::{self, LoadedSource, PinOptions, PreparedPinEngine};
+use crate::scheduler::CancellationToken;
 
 const DEFAULT_SOURCE: &str = "new-book-plans/record-integrity-red-team.json";
 const DEFAULT_KB: &str = "new-book-plans/constitution.nibli";
@@ -494,6 +495,14 @@ type RedResult<T> = Result<T, RedTeamError>;
 type QueryMap = BTreeMap<(String, String), String>;
 type QueryVectors = BTreeMap<String, QueryMap>;
 
+fn ensure_execution_active(cancellation: Option<&CancellationToken>) -> RedResult<()> {
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        Err(RedTeamError::new("red-team execution cancelled"))
+    } else {
+        Ok(())
+    }
+}
+
 fn root_keys() -> BTreeSet<&'static str> {
     set(&ROOT_KEYS)
 }
@@ -848,16 +857,22 @@ struct ReferenceResolver<'a> {
     root: PathBuf,
     files: HashMap<PathBuf, String>,
     validated: HashSet<String>,
+    cancellation: Option<CancellationToken>,
 }
 
 impl<'a> ReferenceResolver<'a> {
     fn new(context: &'a Context) -> Self {
+        Self::with_cancellation(context, None)
+    }
+
+    fn with_cancellation(context: &'a Context, cancellation: Option<&CancellationToken>) -> Self {
         Self {
             context,
             root: std::fs::canonicalize(context.root())
                 .unwrap_or_else(|_| context.root().to_path_buf()),
             files: HashMap::new(),
             validated: HashSet::new(),
+            cancellation: cancellation.cloned(),
         }
     }
 
@@ -867,6 +882,7 @@ impl<'a> ReferenceResolver<'a> {
     }
 
     fn validate_str(&mut self, value: &str, path: &str) -> RedResult<String> {
+        ensure_execution_active(self.cancellation.as_ref())?;
         let reference = validate_text(value, path)?.to_owned();
         if reference.matches("::").count() != 1 {
             return Err(RedTeamError::new(format!(
@@ -894,6 +910,7 @@ impl<'a> ReferenceResolver<'a> {
         if self.validated.contains(&reference) {
             return Ok(reference);
         }
+        ensure_execution_active(self.cancellation.as_ref())?;
         let unresolved = self.context.path(candidate);
         if !unresolved.is_file() {
             return Err(RedTeamError::new(format!(
@@ -908,11 +925,13 @@ impl<'a> ReferenceResolver<'a> {
             )));
         }
         if !self.files.contains_key(&target) {
+            ensure_execution_active(self.cancellation.as_ref())?;
             let body = std::fs::read_to_string(&target).map_err(|error| {
                 RedTeamError::new(format!("{path}: cannot read {raw_file}: {error}"))
             })?;
             self.files.insert(target.clone(), body);
         }
+        ensure_execution_active(self.cancellation.as_ref())?;
         let count = self.files[&target].matches(needle).count();
         if count != 1 {
             return Err(RedTeamError::new(format!(
@@ -2927,7 +2946,11 @@ fn output_tail(output: &pin::RunOutput) -> String {
     lines[lines.len().saturating_sub(12)..].join("\n")
 }
 
-fn run_candidate_group(prepared: &PreparedPinEngine, group: CandidateGroup) -> RedResult<()> {
+fn run_candidate_group(
+    prepared: &PreparedPinEngine,
+    group: CandidateGroup,
+    cancellation: Option<&CancellationToken>,
+) -> RedResult<()> {
     let loaded: Vec<_> = group
         .pins
         .iter()
@@ -2935,7 +2958,15 @@ fn run_candidate_group(prepared: &PreparedPinEngine, group: CandidateGroup) -> R
         .collect();
     let deletions: Vec<_> = group.deletions.iter().map(String::as_str).collect();
     let additions: Vec<_> = group.additions.iter().map(String::as_str).collect();
-    let output = prepared.run_patched_files(&deletions, &additions, &loaded, PinOptions::default());
+    let output = prepared.run_patched_files(
+        &deletions,
+        &additions,
+        &loaded,
+        PinOptions {
+            cancellation,
+            ..PinOptions::default()
+        },
+    );
     if output.files.len() != group.pins.len() {
         return Err(RedTeamError::new(format!(
             "candidate {}: native pin runner returned {} file reports for {} pin files\n{}",
@@ -3028,30 +3059,9 @@ fn execute_scenarios(source: &Map<String, Value>, kb: &KbIndex<'_>) -> RedResult
         },
     );
 
-    let requested_workers = match std::env::var("RED_TEAM_JOBS") {
-        Ok(value) => value
-            .parse::<usize>()
-            .map_err(|_| RedTeamError::new("RED_TEAM_JOBS must be a positive integer"))?,
-        Err(std::env::VarError::NotPresent) => 4,
-        Err(error) => {
-            return Err(RedTeamError::new(format!(
-                "RED_TEAM_JOBS must be a positive integer: {error}"
-            )));
-        }
-    };
-    if requested_workers == 0 {
-        return Err(RedTeamError::new(
-            "RED_TEAM_JOBS must be a positive integer",
-        ));
-    }
-    // The prepared engine owns a non-Sync transactional knowledge base. A
-    // single parse followed by isolated patches is materially faster than
-    // reparsing one full constitution per worker, so RED_TEAM_JOBS remains an
-    // input validation contract but does not multiply native engine instances.
-    let _requested_workers = requested_workers.min(groups.len());
     let prepared = PreparedPinEngine::new(&[LoadedSource::new(DEFAULT_KB, kb.text)]);
     for group in groups {
-        run_candidate_group(&prepared, group)?;
+        run_candidate_group(&prepared, group, None)?;
     }
     Ok(ExecutionResult {
         snapshots: queries.len(),
@@ -3060,7 +3070,12 @@ fn execute_scenarios(source: &Map<String, Value>, kb: &KbIndex<'_>) -> RedResult
     })
 }
 
-fn execute_scenarios_typed(source: &RedTeamSource, kb: &KbIndex<'_>) -> RedResult<ExecutionResult> {
+fn execute_scenarios_typed(
+    source: &RedTeamSource,
+    kb: &KbIndex<'_>,
+    cancellation: Option<&CancellationToken>,
+) -> RedResult<ExecutionResult> {
+    ensure_execution_active(cancellation)?;
     let snapshots: BTreeMap<_, _> = source
         .snapshots
         .iter()
@@ -3070,6 +3085,7 @@ fn execute_scenarios_typed(source: &RedTeamSource, kb: &KbIndex<'_>) -> RedResul
     let pins_run = queries.values().map(BTreeMap::len).sum();
     let mut groups = Vec::new();
     for (state, state_queries) in &queries {
+        ensure_execution_active(cancellation)?;
         let snapshot = snapshots
             .get(state)
             .ok_or_else(|| RedTeamError::new(format!("missing executable snapshot {state}")))?;
@@ -3087,6 +3103,7 @@ fn execute_scenarios_typed(source: &RedTeamSource, kb: &KbIndex<'_>) -> RedResul
             },
         );
     }
+    ensure_execution_active(cancellation)?;
     let base = snapshots
         .get("base")
         .ok_or_else(|| RedTeamError::new("snapshots: base snapshot is required"))?;
@@ -3104,26 +3121,24 @@ fn execute_scenarios_typed(source: &RedTeamSource, kb: &KbIndex<'_>) -> RedResul
         },
     );
 
-    let requested_workers = match std::env::var("RED_TEAM_JOBS") {
-        Ok(value) => value
-            .parse::<usize>()
-            .map_err(|_| RedTeamError::new("RED_TEAM_JOBS must be a positive integer"))?,
-        Err(std::env::VarError::NotPresent) => 4,
-        Err(error) => {
-            return Err(RedTeamError::new(format!(
-                "RED_TEAM_JOBS must be a positive integer: {error}"
-            )));
-        }
-    };
-    if requested_workers == 0 {
-        return Err(RedTeamError::new(
-            "RED_TEAM_JOBS must be a positive integer",
-        ));
-    }
-    let _requested_workers = requested_workers.min(groups.len());
-    let prepared = PreparedPinEngine::new(&[LoadedSource::new(DEFAULT_KB, kb.text)]);
+    ensure_execution_active(cancellation)?;
+    let prepared = cancellation.map_or_else(
+        || PreparedPinEngine::new(&[LoadedSource::new(DEFAULT_KB, kb.text)]),
+        |cancellation| {
+            PreparedPinEngine::new_cancellable(
+                &[LoadedSource::new(DEFAULT_KB, kb.text)],
+                cancellation.flag(),
+            )
+        },
+    );
     for group in groups {
-        run_candidate_group(&prepared, group)?;
+        ensure_execution_active(cancellation)?;
+        if let Some(cancellation) = cancellation {
+            prepared.set_cancel_flag(cancellation.flag());
+        }
+        let result = run_candidate_group(&prepared, group, cancellation);
+        ensure_execution_active(cancellation)?;
+        result?;
     }
     Ok(ExecutionResult {
         snapshots: queries.len(),
@@ -4082,12 +4097,12 @@ fn render_typed(source: &RedTeamSource) -> String {
 }
 
 fn expect_failure<T>(label: &str, result: RedResult<T>) -> RedResult<()> {
-    if result.is_err() {
-        Ok(())
-    } else {
-        Err(RedTeamError::new(format!(
+    match result {
+        Err(error) if error.0 == "red-team execution cancelled" => Err(error),
+        Err(_) => Ok(()),
+        Ok(_) => Err(RedTeamError::new(format!(
             "negative control did not fail: {label}"
-        )))
+        ))),
     }
 }
 
@@ -4123,6 +4138,7 @@ fn validate_candidate(
     assurance_digest: &str,
     references: &mut ReferenceResolver<'_>,
 ) -> RedResult<()> {
+    ensure_execution_active(references.cancellation.as_ref())?;
     let candidate: RedTeamSource = serde_json::from_value(candidate.clone())
         .map_err(|error| RedTeamError::new(format!("candidate schema is invalid: {error}")))?;
     validate_source_typed(
@@ -4144,6 +4160,7 @@ fn negative_controls(
     assurance_digest: &str,
     references: &mut ReferenceResolver<'_>,
 ) -> RedResult<usize> {
+    ensure_execution_active(references.cancellation.as_ref())?;
     let mut controls = 0usize;
     for (key, label) in [
         ("constitution_sha256", "constitution digest drift"),
@@ -4710,6 +4727,7 @@ fn negative_controls(
     )?;
     controls += 1;
 
+    ensure_execution_active(references.cancellation.as_ref())?;
     expect_failure(
         "duplicate JSON object key",
         load_json(
@@ -4718,6 +4736,7 @@ fn negative_controls(
         ),
     )?;
     controls += 1;
+    ensure_execution_active(references.cancellation.as_ref())?;
     Ok(controls)
 }
 
@@ -4726,7 +4745,7 @@ pub(crate) fn run(
     mode: Mode,
     snapshot: InputSnapshot<'_>,
 ) -> Result<String, Error> {
-    run_inner(context, mode, snapshot)
+    run_inner(context, mode, snapshot, None)
         .map_err(|error| Error::new(format!("9-record-integrity-red-team: {error}")))
 }
 
@@ -4746,6 +4765,15 @@ pub(crate) fn check(
     )
 }
 
+pub(crate) fn check_execute_with_cancellation(
+    context: &Context,
+    snapshot: InputSnapshot<'_>,
+    cancellation: CancellationToken,
+) -> Result<String, Error> {
+    run_inner(context, Mode::CheckExecute, snapshot, Some(&cancellation))
+        .map_err(|error| Error::new(format!("9-record-integrity-red-team: {error}")))
+}
+
 pub(crate) fn generate(context: &Context, snapshot: InputSnapshot<'_>) -> Result<String, Error> {
     run(context, Mode::Generate, snapshot)
 }
@@ -4759,43 +4787,58 @@ fn read_context(context: &Context, path: &str, label: &str) -> RedResult<String>
     })
 }
 
-fn run_inner(context: &Context, mode: Mode, snapshot: InputSnapshot<'_>) -> RedResult<String> {
+fn run_inner(
+    context: &Context,
+    mode: Mode,
+    snapshot: InputSnapshot<'_>,
+    cancellation: Option<&CancellationToken>,
+) -> RedResult<String> {
+    ensure_execution_active(cancellation)?;
     let source_owned;
     let source_text = if let Some(value) = snapshot.source_json {
         value
     } else {
+        ensure_execution_active(cancellation)?;
         source_owned = read_context(context, DEFAULT_SOURCE, "red-team source")?;
         &source_owned
     };
+    ensure_execution_active(cancellation)?;
     let kb_owned;
     let kb_text = if let Some(value) = snapshot.constitution {
         value
     } else {
+        ensure_execution_active(cancellation)?;
         kb_owned = read_context(context, DEFAULT_KB, "constitution")?;
         &kb_owned
     };
+    ensure_execution_active(cancellation)?;
     let ledger_owned;
     let ledger_text = if let Some(value) = snapshot.assertion_ledger {
         value
     } else {
+        ensure_execution_active(cancellation)?;
         ledger_owned = read_context(context, DEFAULT_LEDGER, "assertion ledger")?;
         &ledger_owned
     };
+    ensure_execution_active(cancellation)?;
     let assurance_owned;
     let assurance_text = if let Some(value) = snapshot.assurance_source {
         value
     } else {
+        ensure_execution_active(cancellation)?;
         assurance_owned = read_context(context, DEFAULT_ASSURANCE, "assurance source")?;
         &assurance_owned
     };
 
+    ensure_execution_active(cancellation)?;
     let (source, source_control_value) =
         load_json(source_text, &format!("red-team source {DEFAULT_SOURCE}"))?;
     let kb_digest = sha256(kb_text.as_bytes());
     let ledger_digest = sha256(ledger_text.as_bytes());
     let assurance_digest = sha256(assurance_text.as_bytes());
     let kb = KbIndex::new(kb_text);
-    let mut references = ReferenceResolver::new(context);
+    ensure_execution_active(cancellation)?;
+    let mut references = ReferenceResolver::with_cancellation(context, cancellation);
     validate_source_typed(
         &source,
         &kb,
@@ -4804,7 +4847,9 @@ fn run_inner(context: &Context, mode: Mode, snapshot: InputSnapshot<'_>) -> RedR
         &assurance_digest,
         &mut references,
     )?;
+    ensure_execution_active(cancellation)?;
     let generated = render_typed(&source);
+    ensure_execution_active(cancellation)?;
     let controls = negative_controls(
         &source_control_value,
         &kb,
@@ -4813,10 +4858,11 @@ fn run_inner(context: &Context, mode: Mode, snapshot: InputSnapshot<'_>) -> RedR
         &assurance_digest,
         &mut references,
     )?;
+    ensure_execution_active(cancellation)?;
 
     let should_execute = mode != Mode::Check;
     let execution = if should_execute {
-        execute_scenarios_typed(&source, &kb)?
+        execute_scenarios_typed(&source, &kb, cancellation)?
     } else {
         ExecutionResult {
             snapshots: 0,
@@ -4824,6 +4870,7 @@ fn run_inner(context: &Context, mode: Mode, snapshot: InputSnapshot<'_>) -> RedR
             controls: 0,
         }
     };
+    ensure_execution_active(cancellation)?;
 
     match mode {
         Mode::Check | Mode::CheckExecute => {
@@ -4831,9 +4878,11 @@ fn run_inner(context: &Context, mode: Mode, snapshot: InputSnapshot<'_>) -> RedR
             let current = if let Some(value) = snapshot.generated_report {
                 value
             } else {
+                ensure_execution_active(cancellation)?;
                 report_owned = read_context(context, DEFAULT_OUTPUT, "generated report")?;
                 &report_owned
             };
+            ensure_execution_active(cancellation)?;
             if current != generated {
                 return Err(RedTeamError::new(format!(
                     "{DEFAULT_OUTPUT} is STALE — rerun without --check"
@@ -4876,6 +4925,22 @@ mod tests {
 
     fn context() -> Context {
         Context::discover().expect("discover repository")
+    }
+
+    #[test]
+    fn pre_cancelled_execution_returns_before_reading_empty_context() {
+        let temporary = tempfile::tempdir().expect("temporary empty context");
+        let context = Context::from_test_root(temporary.path().to_path_buf());
+        let cancellation = CancellationToken::new();
+        assert!(cancellation.cancel());
+
+        let error =
+            check_execute_with_cancellation(&context, InputSnapshot::default(), cancellation)
+                .expect_err("pre-cancelled execution must stop before any context read");
+        assert_eq!(
+            error.to_string(),
+            "9-record-integrity-red-team: red-team execution cancelled"
+        );
     }
 
     #[test]

@@ -1101,16 +1101,18 @@ fn sanitized_environment(root: &Path) -> Result<ExpandedEnvironment, Error> {
         "TZ",
         "PYTHONHASHSEED",
         "SOURCE_DATE_EPOCH",
-        "STATE_FORM_MAX_PARALLEL",
         "RIGHTS_VERIFY_JOBS",
-        "TEMPORAL_ASSURANCE_JOBS",
-        "AMENDMENT_AUDIT_JOBS",
-        "RED_TEAM_JOBS",
     ] {
         if let Ok(value) = std::env::var(key) {
             allowlisted_values.insert(key.to_owned(), value);
         }
     }
+    // Bind the resolved default as well as an explicit override. Absence used
+    // to make two runs with different effective parallelism indistinguishable
+    // in receipt metadata.
+    allowlisted_values.extend(execution_lane_metadata(
+        crate::scheduler::configured_workers()?,
+    ));
     let mut hashed_values = BTreeMap::new();
     for key in [
         "PATH",
@@ -1140,10 +1142,105 @@ fn sanitized_environment(root: &Path) -> Result<ExpandedEnvironment, Error> {
             ),
         ]),
     };
-    Ok(ExpandedEnvironment {
+    let environment = ExpandedEnvironment {
         sha256: canonical_digest(&details)?,
         details,
-    })
+    };
+    validate_expanded_environment(&environment)?;
+    Ok(environment)
+}
+
+const EXECUTION_LANE_METADATA_FIELDS: [&str; 4] = [
+    "RIGHTS_VERIFY_JOBS",
+    "RIGHTS_VERIFY_LIVE_JOBS",
+    "RIGHTS_VERIFY_MAX_JOBS",
+    "RIGHTS_VERIFY_SCHEDULER",
+];
+const SCHEDULER_METADATA_VERSION: &str = "canonical-weighted-dag-v1";
+
+fn execution_lane_metadata(workers: usize) -> BTreeMap<String, String> {
+    BTreeMap::from([
+        ("RIGHTS_VERIFY_JOBS".to_owned(), workers.to_string()),
+        (
+            "RIGHTS_VERIFY_LIVE_JOBS".to_owned(),
+            crate::scheduler::live_worker_allocation(workers).to_string(),
+        ),
+        (
+            "RIGHTS_VERIFY_MAX_JOBS".to_owned(),
+            crate::scheduler::MAX_WORKERS.to_string(),
+        ),
+        (
+            "RIGHTS_VERIFY_SCHEDULER".to_owned(),
+            SCHEDULER_METADATA_VERSION.to_owned(),
+        ),
+    ])
+}
+
+fn environment_fields(details: &EnvironmentDetails) -> Vec<String> {
+    let mut fields = details
+        .allowlisted_values
+        .keys()
+        .chain(details.hashed_values.keys())
+        .cloned()
+        .collect::<Vec<_>>();
+    fields.sort();
+    fields.dedup();
+    fields
+}
+
+/// Validate the expanded environment's self-digest and the all-or-none
+/// execution-lane metadata tuple. Historical receipts without this tuple
+/// remain valid; once any tuple member is present, all values must describe one
+/// supported global lane capacity and its deterministic live-family reservation.
+fn validate_expanded_environment(environment: &ExpandedEnvironment) -> Result<(), Error> {
+    if canonical_digest(&environment.details)? != environment.sha256 {
+        return Err(receipt_error(
+            "expanded environment details do not match their digest",
+        ));
+    }
+    if EXECUTION_LANE_METADATA_FIELDS
+        .iter()
+        .any(|field| environment.details.hashed_values.contains_key(*field))
+    {
+        return Err(receipt_error(
+            "worker metadata must be carried as allowlisted values",
+        ));
+    }
+    let present = EXECUTION_LANE_METADATA_FIELDS
+        .iter()
+        .filter(|field| environment.details.allowlisted_values.contains_key(**field))
+        .count();
+    let declares_current_contract = [
+        "RIGHTS_VERIFY_LIVE_JOBS",
+        "RIGHTS_VERIFY_MAX_JOBS",
+        "RIGHTS_VERIFY_SCHEDULER",
+    ]
+    .iter()
+    .any(|field| environment.details.allowlisted_values.contains_key(*field));
+    // Protocol-v6 receipts emitted before this scheduler contract could bind
+    // only RIGHTS_VERIFY_JOBS. Their exact environment digest remains valid;
+    // the all-or-none tuple applies once any new contract field is declared.
+    if !declares_current_contract {
+        return Ok(());
+    }
+    if present != EXECUTION_LANE_METADATA_FIELDS.len() {
+        return Err(receipt_error("worker metadata tuple is incomplete"));
+    }
+    let workers = environment.details.allowlisted_values["RIGHTS_VERIFY_JOBS"]
+        .parse::<usize>()
+        .ok()
+        .filter(|workers| (1..=crate::scheduler::MAX_WORKERS).contains(workers))
+        .ok_or_else(|| receipt_error("receipt worker count is outside the supported range"))?;
+    let expected = execution_lane_metadata(workers);
+    if expected
+        .iter()
+        .any(|(key, value)| environment.details.allowlisted_values.get(key) != Some(value))
+    {
+        return Err(receipt_error(
+            "worker scheduler or allocation metadata is inconsistent",
+        ));
+    }
+    Ok(())
 }
 
 struct DuplicateKeySeed;
@@ -1476,13 +1573,18 @@ fn validate_receipt_bytes_with_runtime(
             if options.require_local {
                 validate_local_evidence(root, &receipt)?;
             }
-            if options.check_environment
-                && environment
-                    .ok_or_else(|| receipt_error("environment probe is unavailable"))?
-                    .sha256
-                    != receipt.environment.sha256
-            {
-                return Err(receipt_error("sanitized environment drifted from receipt"));
+            if options.check_environment {
+                let environment =
+                    environment.ok_or_else(|| receipt_error("environment probe is unavailable"))?;
+                validate_expanded_environment(environment)?;
+                if environment.sha256 != receipt.environment.sha256 {
+                    return Err(receipt_error("sanitized environment drifted from receipt"));
+                }
+                if environment_fields(&environment.details) != receipt.environment.fields {
+                    return Err(receipt_error(
+                        "sanitized environment field names drifted from receipt",
+                    ));
+                }
             }
             if options.check_engine
                 && engine.ok_or_else(|| receipt_error("engine probe is unavailable"))?
@@ -1553,6 +1655,7 @@ fn validate_local_evidence(root: &Path, receipt: &CompactReceipt) -> Result<(), 
         return Err(receipt_error("transcript digest mismatch"));
     }
     let expanded: ExpandedReceipt = parse_typed(&expanded_bytes, "expanded manifest is invalid")?;
+    validate_expanded_environment(&expanded.environment)?;
     if expanded.schema_version != 2
         || expanded.protocol_version != receipt.protocol_version
         || expanded.protocol_status != receipt.protocol_status
@@ -1569,9 +1672,18 @@ fn validate_local_evidence(root: &Path, receipt: &CompactReceipt) -> Result<(), 
             "command-results evidence is not the exact manifest record",
         ));
     }
-    if expanded.verification.result != "all-passed"
-        || expanded.verification.commands.len() != 1
-        || expanded.verification.commands[0].argv_sha256 != receipt.verification.command_sha256
+    if expanded.verification.result != "all-passed" || expanded.verification.commands.len() != 1 {
+        return Err(receipt_error(
+            "expanded and compact command bindings disagree",
+        ));
+    }
+    let command = &expanded.verification.commands[0];
+    if command.display != FULL_COMMAND
+        || command.argv_sha256 != receipt.verification.command_sha256
+        || command.started_at_utc != receipt.verification.started_at_utc
+        || command.finished_at_utc != receipt.verification.finished_at_utc
+        || command.finished_at_utc < command.started_at_utc
+        || command.exit_code != 0
     {
         return Err(receipt_error(
             "expanded and compact command bindings disagree",
@@ -1619,6 +1731,11 @@ fn validate_local_evidence(root: &Path, receipt: &CompactReceipt) -> Result<(), 
     if expanded.environment.sha256 != receipt.environment.sha256 {
         return Err(receipt_error(
             "expanded and compact environment bindings disagree",
+        ));
+    }
+    if environment_fields(&expanded.environment.details) != receipt.environment.fields {
+        return Err(receipt_error(
+            "expanded and compact environment field names disagree",
         ));
     }
     Ok(())
@@ -2160,6 +2277,36 @@ pub(crate) struct EmittedReceipt {
     pub(crate) receipt_id: String,
 }
 
+trait ReceiptTimingSource {
+    fn start(&mut self) -> Result<UtcTimestamp, Error>;
+    fn finish(&mut self) -> Result<(UtcTimestamp, u128), Error>;
+}
+
+#[derive(Default)]
+struct SystemReceiptTiming {
+    monotonic_start: Option<Instant>,
+}
+
+impl ReceiptTimingSource for SystemReceiptTiming {
+    fn start(&mut self) -> Result<UtcTimestamp, Error> {
+        let started = UtcTimestamp::now()?;
+        if self.monotonic_start.replace(Instant::now()).is_some() {
+            return Err(receipt_error("receipt timing source was started twice"));
+        }
+        Ok(started)
+    }
+
+    fn finish(&mut self) -> Result<(UtcTimestamp, u128), Error> {
+        let elapsed_milliseconds = self
+            .monotonic_start
+            .take()
+            .ok_or_else(|| receipt_error("receipt timing source was not started"))?
+            .elapsed()
+            .as_millis();
+        Ok((UtcTimestamp::now()?, elapsed_milliseconds))
+    }
+}
+
 /// Run the native full verifier once and emit a schema-v2 receipt.
 ///
 /// The caller owns the heavyweight kernel lock. `run_full` must invoke the
@@ -2190,13 +2337,39 @@ fn emit_receipt_with_runtime<W, F, P>(
     output_directory: &Path,
     output: &mut W,
     run_full: F,
-    mut probe_runtime: P,
+    probe_runtime: P,
     diagnostics: Option<crate::diagnostics::Recorder>,
 ) -> Result<EmittedReceipt, Error>
 where
     W: Write,
     F: FnOnce(&mut dyn Write) -> Result<(), Error>,
     P: FnMut(&Path) -> Result<RuntimeBindings, Error>,
+{
+    emit_receipt_with_runtime_and_timing(
+        root,
+        output_directory,
+        output,
+        run_full,
+        probe_runtime,
+        diagnostics,
+        SystemReceiptTiming::default(),
+    )
+}
+
+fn emit_receipt_with_runtime_and_timing<W, F, P, T>(
+    root: &Path,
+    output_directory: &Path,
+    output: &mut W,
+    run_full: F,
+    mut probe_runtime: P,
+    diagnostics: Option<crate::diagnostics::Recorder>,
+    mut timing: T,
+) -> Result<EmittedReceipt, Error>
+where
+    W: Write,
+    F: FnOnce(&mut dyn Write) -> Result<(), Error>,
+    P: FnMut(&Path) -> Result<RuntimeBindings, Error>,
+    T: ReceiptTimingSource,
 {
     let output_directory = safe_output_directory(root, output_directory)?;
     // Observational phase markers only, threaded explicitly so the receipt
@@ -2232,8 +2405,7 @@ where
         ));
     }
 
-    let started = UtcTimestamp::now()?;
-    let monotonic = Instant::now();
+    let started = timing.start()?;
     let mut transcript = Vec::new();
     let run_result = {
         let mut tee = TeeWriter::new(&mut *output, &mut transcript);
@@ -2241,8 +2413,7 @@ where
         let flush = tee.flush().map_err(Error::from);
         result.and(flush)
     };
-    let elapsed_milliseconds = monotonic.elapsed().as_millis();
-    let finished = UtcTimestamp::now()?;
+    let (finished, elapsed_milliseconds) = timing.finish()?;
     if let Err(run_error) = run_result {
         let failed = git_common_directory(root)?
             .join(EVIDENCE_SUBDIRECTORY)
@@ -2314,15 +2485,7 @@ where
         evidence_ceiling: EVIDENCE_CEILING.to_owned(),
     };
     let expanded_bytes = pretty(&expanded)?;
-    let mut fields = environment
-        .details
-        .allowlisted_values
-        .keys()
-        .chain(environment.details.hashed_values.keys())
-        .cloned()
-        .collect::<Vec<_>>();
-    fields.sort();
-    fields.dedup();
+    let fields = environment_fields(&environment.details);
     let mut compact = CompactReceipt {
         spdx: "CC0-1.0".to_owned(),
         schema_version: 2,
@@ -3830,9 +3993,16 @@ fn receipt_self_test_write(path: &Path, body: impl AsRef<[u8]>) -> Result<(), Er
     Ok(())
 }
 
-fn receipt_self_test_runtime() -> Result<RuntimeBindings, Error> {
+fn receipt_self_test_runtime(workers: usize) -> Result<RuntimeBindings, Error> {
+    if !(1..=crate::scheduler::MAX_WORKERS).contains(&workers) {
+        return Err(receipt_error(
+            "self-test worker count is outside the supported range",
+        ));
+    }
+    let mut allowlisted_values = BTreeMap::from([("LANG".to_owned(), "C".to_owned())]);
+    allowlisted_values.extend(execution_lane_metadata(workers));
     let details = EnvironmentDetails {
-        allowlisted_values: BTreeMap::from([("LANG".to_owned(), "C".to_owned())]),
+        allowlisted_values,
         hashed_values: BTreeMap::new(),
         platform: PlatformIdentity {
             system: "Linux".to_owned(),
@@ -3869,6 +4039,283 @@ fn receipt_self_test_runtime() -> Result<RuntimeBindings, Error> {
         },
         compiled_verifier_inputs_sha256: Sha256("0".repeat(64)),
     })
+}
+
+struct FixedReceiptTiming {
+    started: Option<UtcTimestamp>,
+    finished: Option<UtcTimestamp>,
+    elapsed_milliseconds: u128,
+    active: bool,
+}
+
+impl FixedReceiptTiming {
+    fn for_workers(workers: usize) -> Self {
+        Self {
+            started: Some(UtcTimestamp(format!("2026-08-23T{workers:02}:00:00Z"))),
+            finished: Some(UtcTimestamp(format!("2026-08-23T{workers:02}:00:01Z"))),
+            elapsed_milliseconds: 1_000 + workers as u128,
+            active: false,
+        }
+    }
+}
+
+impl ReceiptTimingSource for FixedReceiptTiming {
+    fn start(&mut self) -> Result<UtcTimestamp, Error> {
+        if self.active {
+            return Err(receipt_error(
+                "fixed receipt timing source was started twice",
+            ));
+        }
+        self.active = true;
+        self.started
+            .take()
+            .ok_or_else(|| receipt_error("fixed receipt timing source has no start"))
+    }
+
+    fn finish(&mut self) -> Result<(UtcTimestamp, u128), Error> {
+        if !self.active {
+            return Err(receipt_error("fixed receipt timing source was not started"));
+        }
+        self.active = false;
+        Ok((
+            self.finished
+                .take()
+                .ok_or_else(|| receipt_error("fixed receipt timing source has no finish"))?,
+            self.elapsed_milliseconds,
+        ))
+    }
+}
+
+fn receipt_execution_lane_metadata_self_test() -> Result<(), Error> {
+    let mut environment_digests = BTreeSet::new();
+    let mut receipt_ids = BTreeSet::new();
+    let mut timing_records = BTreeSet::new();
+    let mut evidence_bindings = BTreeSet::new();
+    let mut canonical_transcript = None;
+    for workers in 1..=crate::scheduler::MAX_WORKERS {
+        let fixture = ReceiptSelfTestFixture::initialise()?;
+        let mut runtime = receipt_self_test_runtime(workers)?;
+        runtime.compiled_verifier_inputs_sha256 =
+            fixture.runtime.compiled_verifier_inputs_sha256.clone();
+        validate_expanded_environment(&runtime.environment)?;
+        let mut expected_values = BTreeMap::from([("LANG".to_owned(), "C".to_owned())]);
+        expected_values.extend(execution_lane_metadata(workers));
+        receipt_self_test_require(
+            runtime.environment.details.allowlisted_values == expected_values
+                && runtime.environment.details.hashed_values.is_empty(),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "self-test runtime did not carry only the reviewed lane metadata",
+        )?;
+        receipt_self_test_require(
+            environment_digests.insert(runtime.environment.sha256.clone()),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "supported lane capacities produced indistinguishable environments",
+        )?;
+
+        let runtime_for_probe = runtime.clone();
+        let mut output = Vec::new();
+        let emitted = emit_receipt_with_runtime_and_timing(
+            &fixture.root,
+            Path::new(RECEIPT_DIRECTORY),
+            &mut output,
+            |writer| {
+                writeln!(writer, "native verifier PASS")?;
+                Ok(())
+            },
+            move |_root| Ok(runtime_for_probe.clone()),
+            None,
+            FixedReceiptTiming::for_workers(workers),
+        )?;
+        let bytes = fs::read(&emitted.path)?;
+        let validated = validate_receipt_bytes_with_runtime(
+            &fixture.root,
+            &emitted.path,
+            &bytes,
+            ValidationOptions::default(),
+            Some(&runtime.environment),
+            Some(&runtime.engine),
+        )?;
+        let receipt = validated.v2()?.clone();
+        receipt_self_test_require(
+            output.starts_with(b"native verifier PASS\n")
+                && receipt.environment.sha256 == runtime.environment.sha256
+                && receipt.environment.fields == environment_fields(&runtime.environment.details),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "independently emitted receipt did not bind its own lane metadata",
+        )?;
+
+        let evidence = git_common_directory(&fixture.root)?
+            .join(EVIDENCE_SUBDIRECTORY)
+            .join(format!("sha256-{}", receipt.receipt_id()));
+        let expanded_bytes = fs::read(evidence.join("expanded-manifest.json"))?;
+        let transcript = fs::read(evidence.join("transcript.log"))?;
+        let command_results = fs::read(evidence.join("command-results.json"))?;
+        let expanded: ExpandedReceipt =
+            parse_typed(&expanded_bytes, "self-test expanded receipt is invalid")?;
+        let command = expanded
+            .verification
+            .commands
+            .first()
+            .ok_or_else(|| receipt_error("self-test expanded receipt has no command"))?;
+        receipt_self_test_require(
+            expanded.environment == runtime.environment
+                && expanded.verification.transcript_sha256
+                    == receipt.verification.transcript_sha256
+                && pretty(&expanded.verification)? == command_results
+                && Sha256::of(&expanded_bytes) == receipt.local_evidence.expanded_manifest_sha256
+                && Sha256::of(&transcript) == receipt.local_evidence.transcript_sha256
+                && command.started_at_utc == receipt.verification.started_at_utc
+                && command.finished_at_utc == receipt.verification.finished_at_utc
+                && command.elapsed_milliseconds == 1_000 + workers as u128,
+            9,
+            "execution-lane allocation is receipt-bound",
+            "receipt did not retain its own expanded evidence and timing record",
+        )?;
+
+        if let Some(reference) = &canonical_transcript {
+            receipt_self_test_require(
+                &transcript == reference,
+                9,
+                "execution-lane allocation is receipt-bound",
+                "canonical receipt transcript changed with worker count",
+            )?;
+        } else {
+            canonical_transcript = Some(transcript);
+        }
+        receipt_self_test_require(
+            receipt_ids.insert(receipt.receipt_id.clone())
+                && timing_records.insert((
+                    command.started_at_utc.clone(),
+                    command.finished_at_utc.clone(),
+                    command.elapsed_milliseconds,
+                ))
+                && evidence_bindings.insert((
+                    receipt.local_evidence.expanded_manifest_sha256.clone(),
+                    receipt.local_evidence.transcript_sha256.clone(),
+                )),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "supported lane receipts shared an identity, timing record, or evidence binding",
+        )?;
+
+        let other_workers = if workers == crate::scheduler::MAX_WORKERS {
+            1
+        } else {
+            workers + 1
+        };
+        let drifted_runtime = receipt_self_test_runtime(other_workers)?;
+        receipt_self_test_require(
+            validate_receipt_bytes_with_runtime(
+                &fixture.root,
+                &emitted.path,
+                &bytes,
+                ValidationOptions::default(),
+                Some(&drifted_runtime.environment),
+                Some(&runtime.engine),
+            )
+            .is_err(),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "receipt accepted another supported lane allocation",
+        )?;
+
+        let mut omitted_field = receipt.clone();
+        omitted_field
+            .environment
+            .fields
+            .retain(|field| field != "RIGHTS_VERIFY_LIVE_JOBS");
+        omitted_field.receipt_id = Sha256("0".repeat(64));
+        omitted_field.receipt_id = omitted_field.digest()?;
+        let omitted_path = fixture
+            .root
+            .join(RECEIPT_DIRECTORY)
+            .join(format!("sha256-{}.json", omitted_field.receipt_id.as_str()));
+        let omitted_error = validate_receipt_bytes_with_runtime(
+            &fixture.root,
+            &omitted_path,
+            &pretty(&omitted_field)?,
+            ValidationOptions {
+                require_local: false,
+                check_environment: true,
+                check_engine: true,
+                source_version: None,
+                audit_id: None,
+            },
+            Some(&runtime.environment),
+            Some(&runtime.engine),
+        );
+        receipt_self_test_require(
+            omitted_error.as_ref().err().is_some_and(|error| {
+                error
+                    .to_string()
+                    .contains("sanitized environment field names drifted from receipt")
+            }),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "compact receipt with omitted worker field validated without local evidence",
+        )?;
+    }
+
+    receipt_self_test_require(
+        receipt_ids.len() == crate::scheduler::MAX_WORKERS
+            && timing_records.len() == crate::scheduler::MAX_WORKERS
+            && evidence_bindings.len() == crate::scheduler::MAX_WORKERS,
+        9,
+        "execution-lane allocation is receipt-bound",
+        "worker-count receipts did not retain distinct identities and evidence",
+    )?;
+
+    let runtime = receipt_self_test_runtime(crate::scheduler::MAX_WORKERS)?;
+    for (field, value) in [
+        ("RIGHTS_VERIFY_JOBS", "0"),
+        ("RIGHTS_VERIFY_LIVE_JOBS", "1"),
+        ("RIGHTS_VERIFY_MAX_JOBS", "5"),
+        ("RIGHTS_VERIFY_SCHEDULER", "tampered-scheduler"),
+    ] {
+        let mut tampered = runtime.environment.clone();
+        tampered
+            .details
+            .allowlisted_values
+            .insert(field.to_owned(), value.to_owned());
+        tampered.sha256 = canonical_digest(&tampered.details)?;
+        receipt_self_test_require(
+            validate_expanded_environment(&tampered).is_err(),
+            9,
+            "execution-lane allocation is receipt-bound",
+            "internally inconsistent lane metadata was accepted",
+        )?;
+    }
+    let mut incomplete = runtime.environment.clone();
+    incomplete
+        .details
+        .allowlisted_values
+        .remove("RIGHTS_VERIFY_LIVE_JOBS");
+    incomplete.sha256 = canonical_digest(&incomplete.details)?;
+    receipt_self_test_require(
+        validate_expanded_environment(&incomplete).is_err(),
+        9,
+        "execution-lane allocation is receipt-bound",
+        "incomplete lane metadata was accepted",
+    )?;
+    let mut historical = runtime.environment.clone();
+    for field in [
+        "RIGHTS_VERIFY_LIVE_JOBS",
+        "RIGHTS_VERIFY_MAX_JOBS",
+        "RIGHTS_VERIFY_SCHEDULER",
+    ] {
+        historical.details.allowlisted_values.remove(field);
+    }
+    historical.sha256 = canonical_digest(&historical.details)?;
+    receipt_self_test_require(
+        validate_expanded_environment(&historical).is_ok(),
+        9,
+        "execution-lane allocation is receipt-bound",
+        "historical receipt carrying only RIGHTS_VERIFY_JOBS was rejected",
+    )?;
+    Ok(())
 }
 
 impl ReceiptSelfTestFixture {
@@ -3987,7 +4434,7 @@ impl ReceiptSelfTestFixture {
         let mut fixture = Self {
             _temporary: temporary,
             root,
-            runtime: receipt_self_test_runtime()?,
+            runtime: receipt_self_test_runtime(crate::scheduler::MAX_WORKERS)?,
             pending,
             ledger,
         };
@@ -4413,12 +4860,20 @@ fn run_receipt_repository_self_tests() -> Result<usize, Error> {
         "legacy receipt was accepted outside its exact source allowlist",
     )?;
 
+    receipt_execution_lane_metadata_self_test()?;
     receipt_self_test_require(
         strictly_sorted_unique(&compact.environment.fields)
-            && compact.environment.fields == ["LANG".to_owned()],
+            && compact.environment.fields
+                == [
+                    "LANG".to_owned(),
+                    "RIGHTS_VERIFY_JOBS".to_owned(),
+                    "RIGHTS_VERIFY_LIVE_JOBS".to_owned(),
+                    "RIGHTS_VERIFY_MAX_JOBS".to_owned(),
+                    "RIGHTS_VERIFY_SCHEDULER".to_owned(),
+                ],
         9,
-        "environment fields are globally sorted",
-        "compact environment field names are not sorted and unique",
+        "execution-lane allocation is receipt-bound",
+        "compact environment lane fields are not exact, sorted, and unique",
     )?;
     receipt_self_test_require(
         compact.engine == fixture.runtime.engine
@@ -5279,7 +5734,7 @@ mod tests {
         test_git(root, &["add", LEDGER_PATH]);
 
         let context = Context::from_test_root(root.to_path_buf());
-        let mut runtime = receipt_self_test_runtime().unwrap();
+        let mut runtime = receipt_self_test_runtime(crate::scheduler::MAX_WORKERS).unwrap();
         runtime.compiled_verifier_inputs_sha256 =
             verifier_build_input_digest(root, &index_manifest(root).unwrap()).unwrap();
         let mut output = Vec::new();

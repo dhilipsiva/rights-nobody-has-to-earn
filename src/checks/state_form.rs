@@ -11,8 +11,7 @@ use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::fmt;
 use std::fmt::Write as _;
 use std::path::Path;
-use std::sync::atomic::{AtomicUsize, Ordering};
-use std::sync::{Arc, Mutex, OnceLock};
+use std::sync::{Arc, OnceLock};
 
 use regex::Regex;
 use serde::{Deserialize, Serialize};
@@ -22,7 +21,9 @@ use crate::cli::Error;
 use crate::context::Context;
 use crate::digest::sha256;
 use crate::pin::{FileOutput, LoadedSource, PinOptions, PreparedPinEngine, RunOutput};
-use crate::scheduler::{ScheduleError, run_bounded};
+use crate::scheduler::{
+    CancellationToken, ScheduleError, ScheduleOptions, run_bounded_with_state_controlled,
+};
 
 pub(crate) const CONSTITUTION_PATH: &str = "new-book-plans/constitution.nibli";
 pub(crate) const MAIN_PINS_PATH: &str = "new-book-plans/state-form.pins.nibli";
@@ -5020,132 +5021,84 @@ fn require_execution_output(
 }
 
 fn execute_family(
-    context: &Context,
     family: &str,
     kb_name: &str,
     kb: &str,
     shards: &[RenderedPinShard],
+    workers: usize,
+    external_cancellation: Option<CancellationToken>,
 ) -> StateFormResult<(Vec<String>, Vec<(String, u64)>)> {
-    let workers = match std::env::var("STATE_FORM_MAX_PARALLEL") {
-        Ok(value) => value
-            .parse::<usize>()
-            .ok()
-            .filter(|value| *value > 0)
-            .ok_or_else(|| {
-                state_form_error("STATE_FORM_MAX_PARALLEL must be a positive integer")
-            })?,
-        Err(std::env::VarError::NotPresent) => 4,
-        Err(error) => {
-            return Err(state_form_error(format!(
-                "cannot read STATE_FORM_MAX_PARALLEL: {error}"
-            )));
-        }
-    }
-    .min(shards.len().max(1));
-
     let family = family.to_owned();
     let kb_name = kb_name.to_owned();
     let kb = Arc::<str>::from(kb);
-    let root = context.root().to_path_buf();
-    let shards = Arc::<[RenderedPinShard]>::from(shards.to_vec());
-    let next = Arc::new(AtomicUsize::new(0));
-    let results = Arc::new(Mutex::new(
-        std::iter::repeat_with(|| None)
-            .take(shards.len())
-            .collect::<Vec<Option<StateFormResult<(String, u64)>>>>(),
-    ));
-
-    let scheduled = run_bounded(0..workers, workers, {
-        let family = family.clone();
-        let kb_name = kb_name.clone();
-        let kb = Arc::clone(&kb);
-        let root = root.clone();
-        let shards = Arc::clone(&shards);
-        let next = Arc::clone(&next);
-        let results = Arc::clone(&results);
-        move |_, _, cancellation| {
-            let engine = PreparedPinEngine::new(&[LoadedSource::new(&kb_name, &kb)]);
-            loop {
-                if cancellation.is_cancelled() {
-                    return Ok(());
-                }
-                let index = next.fetch_add(1, Ordering::Relaxed);
-                let Some(shard) = shards.get(index) else {
-                    return Ok(());
-                };
-                if cancellation.is_cancelled() {
-                    return Ok(());
-                }
-                let shard_started = std::time::Instant::now();
-                let output = engine.run_files(
-                    &[LoadedSource::new(&shard.name, &shard.text)],
-                    PinOptions {
-                        allow_shell: true,
-                        working_directory: Some(&root),
-                    },
-                );
-                let shard_elapsed_ms =
-                    u64::try_from(shard_started.elapsed().as_millis()).unwrap_or(u64::MAX);
-                let checked =
-                    require_execution_output(&family, std::slice::from_ref(shard), output)
-                        .and_then(|mut lines| {
-                            lines.pop().ok_or_else(|| {
-                                state_form_error(format!(
-                                    "state-form {family} shard {} returned no summary",
-                                    shard.name
-                                ))
-                            })
-                        })
-                        .map(|line| (line, shard_elapsed_ms));
-                let failure = checked.as_ref().err().cloned();
-                results
-                    .lock()
-                    .unwrap_or_else(|poisoned| poisoned.into_inner())[index] = Some(checked);
-                if let Some(error) = failure {
-                    return Err(error);
-                }
+    let options = external_cancellation
+        .map(ScheduleOptions::cancelled_by)
+        .unwrap_or_default();
+    let scheduled = run_bounded_with_state_controlled(
+        shards.to_vec(),
+        workers.min(shards.len().max(1)),
+        options,
+        |_| None::<PreparedPinEngine>,
+        move |_, engine, shard, cancellation| {
+            if cancellation.is_cancelled() {
+                return Err(state_form_error("state-form execution cancelled"));
             }
-        }
-    });
-
-    let mut results = results
-        .lock()
-        .unwrap_or_else(|poisoned| poisoned.into_inner());
-    if let Err(schedule_error) = scheduled {
-        // Several already-running shards can finish together. Prefer the
-        // lowest reviewed shard index among concrete failures so diagnostics
-        // do not depend on worker completion order.
-        if let Some(error) = results.iter().find_map(|result| match result {
-            Some(Err(error)) => Some(error.clone()),
-            _ => None,
-        }) {
-            return Err(error);
-        }
-        return Err(match schedule_error {
-            ScheduleError::JobFailed { source, .. } => source,
-            ScheduleError::InvalidWorkerCount => {
-                state_form_error("state-form worker count must be positive")
+            let prepared = engine.get_or_insert_with(|| {
+                PreparedPinEngine::new_cancellable(
+                    &[LoadedSource::new(&kb_name, &kb)],
+                    cancellation.flag(),
+                )
+            });
+            prepared.set_cancel_flag(cancellation.flag());
+            let shard_started = std::time::Instant::now();
+            let output = prepared.run_files(
+                &[LoadedSource::new(&shard.name, &shard.text)],
+                PinOptions {
+                    allow_shell: false,
+                    working_directory: None,
+                    cancellation: Some(&cancellation),
+                },
+            );
+            if cancellation.is_cancelled() {
+                return Err(state_form_error("state-form execution cancelled"));
             }
-            ScheduleError::WorkerPanicked { index, message } => state_form_error(format!(
-                "state-form execution worker {index} panicked: {message}"
-            )),
-            ScheduleError::CoordinatorLostWorker { active_indices } => state_form_error(format!(
-                "state-form scheduler lost workers {active_indices:?}"
-            )),
-        });
-    }
-
-    let mut lines = Vec::with_capacity(shards.len());
-    let mut timings = Vec::with_capacity(shards.len());
-    for (index, result) in results.iter_mut().enumerate() {
-        let (line, elapsed_ms) = result.take().ok_or_else(|| {
-            state_form_error(format!(
-                "state-form {family} shard {} returned no result",
-                shards[index].name
-            ))
-        })??;
+            let shard_elapsed_ms =
+                u64::try_from(shard_started.elapsed().as_millis()).unwrap_or(u64::MAX);
+            let mut lines =
+                require_execution_output(&family, std::slice::from_ref(&shard), output)?;
+            let line = lines.pop().ok_or_else(|| {
+                state_form_error(format!(
+                    "state-form {family} shard {} returned no summary",
+                    shard.name
+                ))
+            })?;
+            Ok((line, format!("{family}/{}", shard.name), shard_elapsed_ms))
+        },
+    )
+    .map_err(|schedule_error| match schedule_error {
+        ScheduleError::JobFailed { source, .. } => source,
+        ScheduleError::JobTimedOut { index, timeout } => state_form_error(format!(
+            "state-form execution worker {index} exceeded its {timeout:?} timeout"
+        )),
+        ScheduleError::InvalidWorkerCount => {
+            state_form_error("state-form worker count must be positive")
+        }
+        ScheduleError::Cancelled => state_form_error("state-form execution cancelled"),
+        ScheduleError::WorkerPanicked { index, message } => state_form_error(format!(
+            "state-form execution worker {index} panicked: {message}"
+        )),
+        ScheduleError::WorkerTeardownPanicked { worker, message } => state_form_error(format!(
+            "state-form execution worker {worker} teardown panicked: {message}"
+        )),
+        ScheduleError::CoordinatorLostWorker { active_indices } => state_form_error(format!(
+            "state-form scheduler lost workers {active_indices:?}"
+        )),
+    })?;
+    let mut lines = Vec::with_capacity(scheduled.len());
+    let mut timings = Vec::with_capacity(scheduled.len());
+    for (line, name, elapsed_ms) in scheduled {
         lines.push(line);
-        timings.push((format!("{family}/{}", shards[index].name), elapsed_ms));
+        timings.push((name, elapsed_ms));
     }
     Ok((lines, timings))
 }
@@ -5154,7 +5107,7 @@ fn execute_family(
 /// This keeps focused verification faithful to the selected artifact while
 /// avoiding the multi-minute single-engine aggregate bottleneck.
 pub(crate) fn execute_focused_pin(
-    context: &Context,
+    _context: &Context,
     pin_path: &str,
     snapshot: &SourceSnapshot,
 ) -> Result<RunOutput, Error> {
@@ -5185,7 +5138,10 @@ pub(crate) fn execute_focused_pin(
                 "not a state-form aggregate pin path: {pin_path}"
             )));
         };
-        let (lines, _timings) = execute_family(context, family, kb_path, kb_text, selected)?;
+        let workers = crate::scheduler::configured_workers().map_err(|error| {
+            state_form_error(format!("cannot resolve state-form workers: {error}"))
+        })?;
+        let (lines, _timings) = execute_family(family, kb_path, kb_text, selected, workers, None)?;
         let mut stdout = lines.join("\n");
         if !stdout.is_empty() {
             stdout.push('\n');
@@ -5207,24 +5163,27 @@ pub(crate) fn execute_focused_pin(
 }
 
 fn execute_validated_inner(
-    context: &Context,
     snapshot: &SourceSnapshot,
     validated: &ValidatedStateForm,
+    workers: usize,
+    cancellation: Option<CancellationToken>,
 ) -> StateFormResult<ExecutionReport> {
     let (main, counterfactual) = validated.shards.split_at(MAIN_SHARD_COUNT);
     let (mut lines, mut shard_timings) = execute_family(
-        context,
         "main",
         CONSTITUTION_PATH,
         snapshot.constitution(),
         main,
+        workers,
+        cancellation.clone(),
     )?;
     let (counterfactual_lines, counterfactual_timings) = execute_family(
-        context,
         "counterfactual",
         COUNTERFACTUAL_PATH,
         snapshot.counterfactual(),
         counterfactual,
+        workers,
+        cancellation,
     )?;
     lines.extend(counterfactual_lines);
     shard_timings.extend(counterfactual_timings);
@@ -5239,11 +5198,21 @@ fn execute_validated_inner(
 }
 
 pub(crate) fn execute_validated(
-    context: &Context,
+    _context: &Context,
     snapshot: &SourceSnapshot,
     validated: &ValidatedStateForm,
 ) -> Result<ExecutionReport, Error> {
-    execute_validated_inner(context, snapshot, validated).map_err(public_error)
+    let workers = crate::scheduler::configured_workers()?;
+    execute_validated_inner(snapshot, validated, workers, None).map_err(public_error)
+}
+
+pub(crate) fn execute_validated_with_allocation(
+    snapshot: &SourceSnapshot,
+    validated: &ValidatedStateForm,
+    workers: usize,
+    cancellation: CancellationToken,
+) -> Result<ExecutionReport, Error> {
+    execute_validated_inner(snapshot, validated, workers, Some(cancellation)).map_err(public_error)
 }
 
 pub(crate) fn execute(
@@ -5252,6 +5221,38 @@ pub(crate) fn execute(
 ) -> Result<ExecutionReport, Error> {
     let validated = validate(snapshot)?;
     execute_validated(context, snapshot, &validated)
+}
+
+#[cfg(test)]
+pub(crate) fn synthetic_execution_fixture_for_suite() -> (SourceSnapshot, ValidatedStateForm) {
+    let source = "? person(Ara).\n# => TRUE\n:expect-pins 1\n";
+    let shards = (0..MAIN_SHARD_COUNT + COUNTERFACTUAL_SHARD_COUNT)
+        .map(|index| RenderedPinShard {
+            name: format!("captured-state-form-{index:03}.pins.nibli"),
+            text: source.to_owned(),
+            query_count: 1,
+            fixture_fact_count: 0,
+            relation_call_count: 0,
+            projection_utf8_bytes: source.len(),
+            utf8_bytes: source.len(),
+            fixture_facts_sha256: String::new(),
+            query_stream_sha256: String::new(),
+            projection_sha256: String::new(),
+            partition_strategy: ShardPartition::Bytes,
+        })
+        .collect();
+    (
+        SourceSnapshot::from_sources("person(Ara).\n", "", "person(Ara).\n", "", Vec::new()),
+        ValidatedStateForm {
+            report: CheckReport {
+                cards: 0,
+                statements: 0,
+                main_pins: MAIN_SHARD_COUNT,
+                counterfactual_pins: COUNTERFACTUAL_SHARD_COUNT,
+            },
+            shards,
+        },
+    )
 }
 
 #[cfg(test)]
@@ -5342,6 +5343,37 @@ mod tests {
             error.to_string().contains(COUNTERFACTUAL_PINS_PATH),
             "unexpected focused preflight error: {error}"
         );
+    }
+
+    #[test]
+    fn captured_shard_executes_without_a_working_directory() {
+        let shard = RenderedPinShard {
+            name: "captured-state-form.pins.nibli".to_owned(),
+            text: "? person(Ara).\n# => TRUE\n:expect-pins 1\n".to_owned(),
+            query_count: 1,
+            fixture_fact_count: 0,
+            relation_call_count: 0,
+            projection_utf8_bytes: 0,
+            utf8_bytes: 0,
+            fixture_facts_sha256: String::new(),
+            query_stream_sha256: String::new(),
+            projection_sha256: String::new(),
+            partition_strategy: ShardPartition::Bytes,
+        };
+        let (lines, timings) = execute_family(
+            "captured",
+            "captured-state-form.nibli",
+            "person(Ara).\n",
+            &[shard],
+            1,
+            None,
+        )
+        .expect("captured state-form shard");
+        assert_eq!(
+            lines,
+            ["captured-state-form.pins.nibli: nibli-pin: PASS — 1 pins"]
+        );
+        assert_eq!(timings.len(), 1);
     }
 
     #[test]
@@ -5485,19 +5517,21 @@ mod tests {
         check(&context, &snapshot).expect("check state-form family");
         let shards = render_shard_bundle_inner(ShardPartition::Bytes).expect("render shards");
         let main = execute_family(
-            &context,
             "main",
             CONSTITUTION_PATH,
             snapshot.constitution(),
             &shards[..1],
+            1,
+            None,
         )
         .expect("execute first main shard");
         let counterfactual = execute_family(
-            &context,
             "counterfactual",
             COUNTERFACTUAL_PATH,
             snapshot.counterfactual(),
             &shards[MAIN_SHARD_COUNT..MAIN_SHARD_COUNT + 1],
+            1,
+            None,
         )
         .expect("execute first counterfactual shard");
         assert_eq!(main.0.len(), 1);

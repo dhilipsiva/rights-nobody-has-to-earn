@@ -17923,11 +17923,12 @@ fn negative_controls(ledger: &ValidatedLedger) -> LedgerResult<usize> {
         ("optional-review", negative_controls_optional_review),
         ("semantic", semantic_controls),
     ];
-    const WORKERS: usize = 4;
+    let workers = crate::scheduler::configured_workers()
+        .map_err(|error| LedgerError::new(format!("cannot resolve ledger workers: {error}")))?;
     let next = AtomicUsize::new(0);
     let (sender, receiver) = mpsc::channel();
     thread::scope(|scope| {
-        for _ in 0..WORKERS.min(GROUPS.len()) {
+        for _ in 0..workers.min(GROUPS.len()) {
             let sender = sender.clone();
             let next = &next;
             scope.spawn(move || {

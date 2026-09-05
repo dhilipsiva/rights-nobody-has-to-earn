@@ -15,6 +15,7 @@
 
 use std::io::Write as _;
 use std::path::{Path, PathBuf};
+use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::{Arc, Condvar, Mutex, OnceLock};
 use std::thread::JoinHandle;
 use std::time::{Duration, Instant};
@@ -33,8 +34,8 @@ its own run's command times beside its transcript digest, never this file.";
 
 /// Best-effort stderr line. Write errors are deliberately ignored so that a
 /// closed, broken, or blocked stderr can never panic the observational layer
-/// or change an exit status — `eprintln!` would abort under this binary's
-/// `panic = "abort"` profile the moment stderr failed.
+/// or change an exit status. Avoiding `eprintln!` also keeps a broken stderr
+/// from unwinding through an otherwise successful verification run.
 pub(crate) fn stderr_note(line: &str) {
     let _ = writeln!(std::io::stderr().lock(), "{line}");
 }
@@ -182,8 +183,8 @@ fn share_percent(elapsed_ms: u64, total_ms: u64) -> u8 {
 /// previous-run loader uses it so a stale or foreign file degrades to "no
 /// prior measurement" instead of a wrong estimate.
 pub(crate) fn validate_document(bytes: &[u8]) -> Result<Document, String> {
-    let document: Document =
-        serde_json::from_slice(bytes).map_err(|error| format!("not a diagnostics document: {error}"))?;
+    let document: Document = serde_json::from_slice(bytes)
+        .map_err(|error| format!("not a diagnostics document: {error}"))?;
     if document.schema != SCHEMA {
         return Err(format!("unknown diagnostics schema: {}", document.schema));
     }
@@ -208,10 +209,7 @@ pub(crate) fn validate_document(bytes: &[u8]) -> Result<Document, String> {
             return Err("diagnostics phase has an empty name".to_owned());
         }
         if phase.started_offset_ms < previous_offset {
-            return Err(format!(
-                "phase offsets are not monotone at {}",
-                phase.name
-            ));
+            return Err(format!("phase offsets are not monotone at {}", phase.name));
         }
         previous_offset = phase.started_offset_ms;
         match phase.outcome.as_str() {
@@ -384,9 +382,10 @@ fn parse_epoch_micros(value: &str) -> Option<u128> {
         return None;
     }
     let seconds: u128 = whole.parse().ok()?;
-    let mut digits = fraction.bytes().take(6).fold(0_u128, |value, byte| {
-        value * 10 + u128::from(byte - b'0')
-    });
+    let mut digits = fraction
+        .bytes()
+        .take(6)
+        .fold(0_u128, |value, byte| value * 10 + u128::from(byte - b'0'));
     for _ in fraction.len()..6 {
         digits *= 10;
     }
@@ -447,13 +446,11 @@ impl Recorder {
     /// The previous same-mode document, when present and valid, supplies the
     /// per-phase estimates; a missing or invalid one only mutes them.
     fn start(mode: RunLabel, root: &Path) -> Self {
-        let target = crate::lock::git_common_dir(root)
-            .ok()
-            .map(|common| {
-                common
-                    .join("rights-verification/diagnostics")
-                    .join(mode.file_name())
-            });
+        let target = crate::lock::git_common_dir(root).ok().map(|common| {
+            common
+                .join("rights-verification/diagnostics")
+                .join(mode.file_name())
+        });
         let previous = target
             .as_deref()
             .and_then(|path| std::fs::read(path).ok())
@@ -527,12 +524,11 @@ impl Recorder {
     pub(crate) fn add_details(&self, details: impl IntoIterator<Item = (String, u64)>) {
         let mut inner = self.lock();
         if let Some(active) = inner.active.as_mut() {
-            active
-                .details
-                .extend(details.into_iter().map(|(name, elapsed_ms)| DetailRecord {
-                    name,
-                    elapsed_ms,
-                }));
+            active.details.extend(
+                details
+                    .into_iter()
+                    .map(|(name, elapsed_ms)| DetailRecord { name, elapsed_ms }),
+            );
         }
     }
 
@@ -633,8 +629,7 @@ fn write_document(target: &Path, document: &Document) -> Result<(), String> {
     std::fs::create_dir_all(parent).map_err(|error| error.to_string())?;
     std::fs::set_permissions(parent, std::fs::Permissions::from_mode(0o700))
         .map_err(|error| error.to_string())?;
-    let mut bytes =
-        serde_json::to_vec_pretty(document).map_err(|error| error.to_string())?;
+    let mut bytes = serde_json::to_vec_pretty(document).map_err(|error| error.to_string())?;
     bytes.push(b'\n');
     let mut temporary =
         tempfile::NamedTempFile::new_in(parent).map_err(|error| error.to_string())?;
@@ -869,8 +864,7 @@ pub(crate) fn self_test() -> Result<String, Error> {
     }
     let bytes = serde_json::to_vec_pretty(&document)
         .map_err(|error| self_test_error(1, "critical path", error.to_string()))?;
-    validate_document(&bytes)
-        .map_err(|error| self_test_error(1, "critical path", error))?;
+    validate_document(&bytes).map_err(|error| self_test_error(1, "critical path", error))?;
 
     // 2. Watched-failing validation controls: each doctored document must be
     // rejected.
@@ -923,10 +917,7 @@ pub(crate) fn self_test() -> Result<String, Error> {
     let recorder = Recorder::assemble(RunLabel::Full, None, None, None, true);
     let mut plain = Vec::new();
     let mut attached = Vec::new();
-    for (buffer, recorder) in [
-        (&mut plain, None),
-        (&mut attached, Some(recorder.clone())),
-    ] {
+    for (buffer, recorder) in [(&mut plain, None), (&mut attached, Some(recorder.clone()))] {
         let mut report = crate::report::Reporter::with_recorder(buffer, recorder);
         report
             .step("one")
@@ -975,8 +966,8 @@ pub(crate) fn self_test() -> Result<String, Error> {
         .map_err(|error| self_test_error(4, "first failure", error))?;
     let written = std::fs::read(&target)
         .map_err(|error| self_test_error(4, "first failure", error.to_string()))?;
-    let parsed = validate_document(&written)
-        .map_err(|error| self_test_error(4, "first failure", error))?;
+    let parsed =
+        validate_document(&written).map_err(|error| self_test_error(4, "first failure", error))?;
     if parsed.run.outcome != "failed"
         || parsed.run.failed_phase.as_deref() != Some("beta")
         || parsed.phases.last().map(|phase| phase.outcome.as_str()) != Some("failed")
@@ -1047,13 +1038,21 @@ pub(crate) fn self_test() -> Result<String, Error> {
     let concurrent = Recorder::assemble(RunLabel::Full, None, None, None, true);
     concurrent.begin_phase("scheduled");
     let observer = concurrent.clone();
-    let failure = crate::scheduler::run_bounded(0..4_usize, 2, move |_, job, cancellation| {
+    let observed_cancel = Arc::new(AtomicBool::new(false));
+    let observed_for_job = Arc::clone(&observed_cancel);
+    let start_gate = Arc::new(std::sync::Barrier::new(3));
+    let gate_for_job = Arc::clone(&start_gate);
+    let failure = crate::scheduler::run_bounded(0..3_usize, 3, move |_, job, cancellation| {
         observer.add_details([(format!("job-{job}"), job as u64)]);
+        gate_for_job.wait();
         if job == 1 {
             return Err("watched failure");
         }
-        while !cancellation.is_cancelled() {
-            std::thread::yield_now();
+        if job == 2 {
+            while !cancellation.is_cancelled() {
+                std::thread::yield_now();
+            }
+            observed_for_job.store(true, Ordering::SeqCst);
         }
         Ok(job)
     });
@@ -1063,7 +1062,8 @@ pub(crate) fn self_test() -> Result<String, Error> {
             source: "watched failure",
             ..
         })
-    ) {
+    ) || !observed_cancel.load(Ordering::SeqCst)
+    {
         return Err(self_test_error(
             7,
             "cancellation passthrough",
@@ -1146,8 +1146,7 @@ pub(crate) fn self_test() -> Result<String, Error> {
             "failure summary drifted",
         ));
     }
-    if build_record(Some("12.345678"), Some("13.345678"))
-        != Some(BuildRecord { elapsed_ms: 1_000 })
+    if build_record(Some("12.345678"), Some("13.345678")) != Some(BuildRecord { elapsed_ms: 1_000 })
         || build_record(Some("13.0"), Some("12.0")).is_some()
         || build_record(Some("not-a-stamp"), Some("13.0")).is_some()
         || build_record(None, Some("13.0")).is_some()

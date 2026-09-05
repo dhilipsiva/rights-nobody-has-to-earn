@@ -20,7 +20,8 @@ use crate::checks::ledger;
 use crate::cli::Error;
 use crate::context::Context;
 use crate::digest::sha256;
-use crate::pin::{self, LoadedSource, PinOptions};
+use crate::pin::{self, LoadedSource, PinOptions, PreparedPinEngine};
+use crate::scheduler::CancellationToken;
 
 const CONSTITUTION_PATH: &str = "new-book-plans/constitution.nibli";
 const LEDGER_PATH: &str = "new-book-plans/full-society-ledger.json";
@@ -517,6 +518,16 @@ pub(crate) struct ExecutionReport {
     pub(crate) lines: Vec<String>,
 }
 
+/// Every byte needed by the executable obligations family after preflight.
+///
+/// Construction validates the live artifacts and captures the rendered cases;
+/// execution therefore has no repository or working-directory dependency.
+pub(crate) struct ExecutionPlan {
+    tasks: Vec<ExecutionTask>,
+    cases: usize,
+    counterfactual_suites: usize,
+}
+
 impl fmt::Display for ExecutionReport {
     fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {
         formatter.write_str(&self.lines.join("\n"))
@@ -540,6 +551,14 @@ fn obligation_error(message: impl Into<String>) -> ObligationError {
 
 fn obligations_error(error: ObligationError) -> Error {
     Error::new(format!("obligations: {error}"))
+}
+
+fn ensure_execution_active(cancellation: Option<&CancellationToken>) -> ObligationResult<()> {
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        Err(obligation_error("obligations execution cancelled"))
+    } else {
+        Ok(())
+    }
 }
 
 pub(crate) fn load_snapshot(context: &Context) -> Result<SourceSnapshot, Error> {
@@ -2586,13 +2605,18 @@ fn aggregate_payload_digest(payloads: &[Vec<u8>]) -> String {
     sha256(aggregate)
 }
 
-fn validate_prose_payloads(context: &Context) -> ObligationResult<()> {
+fn validate_prose_payloads(
+    context: &Context,
+    cancellation: Option<&CancellationToken>,
+) -> ObligationResult<()> {
+    ensure_execution_active(cancellation)?;
     let mut files: BTreeMap<&str, Vec<u8>> = BTreeMap::new();
     for binding in PROSE_PAYLOADS
         .iter()
         .chain(DELIVERY_PROSE_PAYLOADS.iter())
         .chain(ECONOMIC_PROSE_PAYLOADS.iter())
     {
+        ensure_execution_active(cancellation)?;
         if !files.contains_key(binding.path) {
             let path = context.path(binding.path);
             let bytes = std::fs::read(&path).map_err(|error| {
@@ -2601,6 +2625,7 @@ fn validate_prose_payloads(context: &Context) -> ObligationResult<()> {
             files.insert(binding.path, bytes);
         }
     }
+    ensure_execution_active(cancellation)?;
     let retained: Vec<Vec<u8>> = PROSE_PAYLOADS
         .iter()
         .map(|binding| {
@@ -2613,6 +2638,7 @@ fn validate_prose_payloads(context: &Context) -> ObligationResult<()> {
             "retained OBL-B1-v1 aggregate prose digest changed",
         ));
     }
+    ensure_execution_active(cancellation)?;
     let delivery: Vec<Vec<u8>> = DELIVERY_PROSE_PAYLOADS
         .iter()
         .map(|binding| {
@@ -2625,6 +2651,7 @@ fn validate_prose_payloads(context: &Context) -> ObligationResult<()> {
             "retained DLV-B1-v1 aggregate prose digest changed",
         ));
     }
+    ensure_execution_active(cancellation)?;
     let economic: Vec<Vec<u8>> = ECONOMIC_PROSE_PAYLOADS
         .iter()
         .map(|binding| {
@@ -2643,12 +2670,18 @@ fn validate_prose_payloads(context: &Context) -> ObligationResult<()> {
 fn check_inner(
     context: &Context,
     snapshot: &SourceSnapshot,
+    cancellation: Option<&CancellationToken>,
 ) -> ObligationResult<(CheckReport, Vec<PinCase>, Vec<RenderedArtifact>)> {
+    ensure_execution_active(cancellation)?;
     let statements = validate_formal_surface(snapshot.constitution())?;
-    validate_prose_payloads(context)?;
+    ensure_execution_active(cancellation)?;
+    validate_prose_payloads(context, cancellation)?;
+    ensure_execution_active(cancellation)?;
     let cases = main_pin_cases(snapshot)?;
+    ensure_execution_active(cancellation)?;
     let artifacts = rendered_artifacts(snapshot, &cases)?;
     for artifact in &artifacts {
+        ensure_execution_active(cancellation)?;
         let path = context.path(artifact.path);
         let current = std::fs::read(&path).map_err(|_| {
             obligation_error(format!(
@@ -2679,9 +2712,26 @@ fn check_inner(
 }
 
 pub(crate) fn check(context: &Context, snapshot: &SourceSnapshot) -> Result<CheckReport, Error> {
-    check_inner(context, snapshot)
+    check_inner(context, snapshot, None)
         .map(|(report, _, _)| report)
         .map_err(obligations_error)
+}
+
+pub(crate) fn check_and_prepare_execution(
+    context: &Context,
+    snapshot: &SourceSnapshot,
+) -> Result<(CheckReport, ExecutionPlan), Error> {
+    let (report, cases, artifacts) =
+        check_inner(context, snapshot, None).map_err(obligations_error)?;
+    let tasks = execution_tasks(snapshot, &cases, &artifacts, None).map_err(obligations_error)?;
+    Ok((
+        report,
+        ExecutionPlan {
+            tasks,
+            cases: cases.len(),
+            counterfactual_suites: 3,
+        },
+    ))
 }
 
 pub(crate) fn check_consumers(
@@ -2772,9 +2822,12 @@ fn execution_tasks(
     snapshot: &SourceSnapshot,
     cases: &[PinCase],
     artifacts: &[RenderedArtifact],
+    cancellation: Option<&CancellationToken>,
 ) -> ObligationResult<Vec<ExecutionTask>> {
+    ensure_execution_active(cancellation)?;
     let mut main_pins = Vec::with_capacity(cases.len());
     for (index, case) in cases.iter().enumerate() {
+        ensure_execution_active(cancellation)?;
         let pin_name = format!("obligations-case-{:03}.pins.nibli", index + 1);
         main_pins.push(ExecutionPin {
             label: format!("fresh case {:03}: {}", index + 1, case.label),
@@ -2794,6 +2847,7 @@ fn execution_tasks(
         ("source-removal counterfactual", 3, 4),
         ("finding-reader counterfactual", 5, 6),
     ] {
+        ensure_execution_active(cancellation)?;
         tasks.push(ExecutionTask {
             suite_label: label.to_owned(),
             kb_name: artifacts[kb_index].path.to_owned(),
@@ -2809,20 +2863,34 @@ fn execution_tasks(
     Ok(tasks)
 }
 
-fn run_execution_task(task: &ExecutionTask, root: &Path) -> ObligationResult<Vec<String>> {
+fn run_execution_task(
+    task: &ExecutionTask,
+    cancellation: Option<&CancellationToken>,
+) -> ObligationResult<Vec<String>> {
+    ensure_execution_active(cancellation)?;
     let pin_files: Vec<_> = task
         .pin_files
         .iter()
         .map(|file| LoadedSource::new(&file.pin_name, &file.pins))
         .collect();
-    let output = pin::run_pin_files(
-        &[LoadedSource::new(&task.kb_name, &task.kb)],
-        &pin_files,
-        PinOptions {
-            allow_shell: true,
-            working_directory: Some(root),
+    let prepared = cancellation.map_or_else(
+        || PreparedPinEngine::new(&[LoadedSource::new(&task.kb_name, &task.kb)]),
+        |cancellation| {
+            PreparedPinEngine::new_cancellable(
+                &[LoadedSource::new(&task.kb_name, &task.kb)],
+                cancellation.flag(),
+            )
         },
     );
+    let output = prepared.run_files(
+        &pin_files,
+        PinOptions {
+            allow_shell: false,
+            working_directory: None,
+            cancellation,
+        },
+    );
+    ensure_execution_active(cancellation)?;
     let combined = format!("{}{}", output.stdout, output.stderr);
     if output.exit_code != pin::EXIT_OK {
         return Err(obligation_error(format!(
@@ -2868,17 +2936,69 @@ pub(crate) fn execute(
     context: &Context,
     snapshot: &SourceSnapshot,
 ) -> Result<ExecutionReport, Error> {
-    let (_, cases, artifacts) = check_inner(context, snapshot).map_err(obligations_error)?;
-    let tasks = execution_tasks(snapshot, &cases, &artifacts).map_err(obligations_error)?;
-    let mut results = Vec::with_capacity(cases.len() + 3);
-    for task in &tasks {
-        results.extend(run_execution_task(task, context.root()).map_err(obligations_error)?);
-    }
-    Ok(ExecutionReport {
+    let (_, plan) = check_and_prepare_execution(context, snapshot)?;
+    execute_plan_inner(&plan, None)
+}
+
+pub(crate) fn execute_with_cancellation(
+    context: &Context,
+    snapshot: &SourceSnapshot,
+    cancellation: CancellationToken,
+) -> Result<ExecutionReport, Error> {
+    ensure_execution_active(Some(&cancellation)).map_err(obligations_error)?;
+    let (_, cases, artifacts) =
+        check_inner(context, snapshot, Some(&cancellation)).map_err(obligations_error)?;
+    let tasks = execution_tasks(snapshot, &cases, &artifacts, Some(&cancellation))
+        .map_err(obligations_error)?;
+    let plan = ExecutionPlan {
+        tasks,
         cases: cases.len(),
         counterfactual_suites: 3,
+    };
+    execute_plan_inner(&plan, Some(&cancellation))
+}
+
+pub(crate) fn execute_plan_with_cancellation(
+    plan: &ExecutionPlan,
+    cancellation: CancellationToken,
+) -> Result<ExecutionReport, Error> {
+    execute_plan_inner(plan, Some(&cancellation))
+}
+
+fn execute_plan_inner(
+    plan: &ExecutionPlan,
+    cancellation: Option<&CancellationToken>,
+) -> Result<ExecutionReport, Error> {
+    ensure_execution_active(cancellation).map_err(obligations_error)?;
+    let mut results = Vec::with_capacity(plan.cases + plan.counterfactual_suites);
+    for task in &plan.tasks {
+        ensure_execution_active(cancellation).map_err(obligations_error)?;
+        results.extend(run_execution_task(task, cancellation).map_err(obligations_error)?);
+    }
+    Ok(ExecutionReport {
+        cases: plan.cases,
+        counterfactual_suites: plan.counterfactual_suites,
         lines: results,
     })
+}
+
+#[cfg(test)]
+pub(crate) fn synthetic_execution_plan_for_suite() -> ExecutionPlan {
+    ExecutionPlan {
+        tasks: vec![ExecutionTask {
+            suite_label: "captured obligations fixture".to_owned(),
+            kb_name: "captured-obligations.nibli".to_owned(),
+            kb: Arc::from("person(Ara).\n"),
+            pin_files: vec![ExecutionPin {
+                label: "captured case".to_owned(),
+                pin_name: "captured-obligations.pins.nibli".to_owned(),
+                pins: Arc::from("? person(Ara).\n# => TRUE\n:expect-pins 1\n"),
+                pin_count: 1,
+            }],
+        }],
+        cases: 1,
+        counterfactual_suites: 0,
+    }
 }
 
 #[cfg(test)]
@@ -2893,6 +3013,39 @@ mod tests {
 
     fn snapshot(context: &Context) -> SourceSnapshot {
         load_snapshot(context).expect("load obligations sources")
+    }
+
+    #[test]
+    fn pre_cancelled_execution_returns_before_reading_empty_context() {
+        let temporary = tempfile::tempdir().expect("temporary empty context");
+        let context = Context::from_test_root(temporary.path().to_path_buf());
+        let snapshot = SourceSnapshot {
+            constitution: Arc::from(""),
+            protected_claim_refs: Arc::from(Vec::<String>::new()),
+        };
+        let cancellation = CancellationToken::new();
+        assert!(cancellation.cancel());
+
+        let error = execute_with_cancellation(&context, &snapshot, cancellation)
+            .expect_err("pre-cancelled execution must stop before any context read");
+        assert_eq!(
+            error.to_string(),
+            "obligations: obligations execution cancelled"
+        );
+    }
+
+    #[test]
+    fn captured_execution_plan_runs_without_a_repository_context() {
+        let plan = synthetic_execution_plan_for_suite();
+
+        let report = execute_plan_with_cancellation(&plan, CancellationToken::new())
+            .expect("captured obligations plan");
+        assert_eq!(report.cases, 1);
+        assert_eq!(report.counterfactual_suites, 0);
+        assert_eq!(
+            report.lines,
+            ["obligations execute: captured case: nibli-pin: PASS — 1 pins"]
+        );
     }
 
     #[test]
@@ -2974,7 +3127,7 @@ mod tests {
         );
         let artifacts = rendered_artifacts(&snapshot, &cases).expect("render artifacts");
         assert_eq!(artifact_counts(&artifacts), (142, 25, 26, 28));
-        let tasks = execution_tasks(&snapshot, &cases, &artifacts).expect("execution tasks");
+        let tasks = execution_tasks(&snapshot, &cases, &artifacts, None).expect("execution tasks");
         assert_eq!(tasks.len(), 4);
         assert_eq!(tasks[0].pin_files.len(), 122);
         assert!(tasks[1..].iter().all(|task| task.pin_files.len() == 1));
@@ -3054,6 +3207,7 @@ mod tests {
             PinOptions {
                 allow_shell: true,
                 working_directory: Some(context.root()),
+                cancellation: None,
             },
         );
         eprintln!("live parity completed in {:.3?}", started.elapsed());
@@ -3084,6 +3238,7 @@ mod tests {
             PinOptions {
                 allow_shell: true,
                 working_directory: Some(context.root()),
+                cancellation: None,
             },
         );
         eprintln!("Rust-only live case completed in {:.3?}", started.elapsed());

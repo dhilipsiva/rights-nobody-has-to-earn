@@ -5,7 +5,8 @@
 use std::collections::{BTreeMap, BTreeSet, HashSet};
 use std::fmt;
 use std::path::{Component, Path, PathBuf};
-use std::sync::{Arc, LazyLock};
+use std::sync::{Arc, Condvar, LazyLock, Mutex};
+use std::thread::{self, JoinHandle};
 use std::time::{Duration, Instant};
 
 use regex::Regex;
@@ -17,7 +18,10 @@ use crate::cli::Error;
 use crate::context::Context;
 use crate::digest::sha256;
 use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine, run_pin_files};
-use crate::scheduler::{ScheduleError, run_bounded};
+use crate::scheduler::{
+    CancellationHookGuard, CancellationToken, ScheduleError, ScheduleOptions,
+    run_bounded_with_state_controlled,
+};
 
 pub(crate) const STEP_NAME: &str = "temporal assurance";
 
@@ -531,6 +535,14 @@ struct Validated {
     stage_sources: BTreeMap<String, String>,
 }
 
+fn ensure_execution_active(cancellation: Option<&CancellationToken>) -> Result<(), Error> {
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        Err(temporal_error("temporal execution cancelled"))
+    } else {
+        Ok(())
+    }
+}
+
 pub(crate) fn check(context: &Context) -> Result<Report, Error> {
     check_with_paths(context, &Paths::default(), false)
 }
@@ -539,24 +551,59 @@ pub(crate) fn check_execute(context: &Context) -> Result<Report, Error> {
     check_with_paths(context, &Paths::default(), true)
 }
 
+pub(crate) fn check_execute_with_allocation(
+    context: &Context,
+    workers: usize,
+    cancellation: CancellationToken,
+) -> Result<Report, Error> {
+    check_with_paths_and_allocation(context, &Paths::default(), Some((workers, cancellation)))
+}
+
 pub(crate) fn check_with_paths(
     context: &Context,
     paths: &Paths,
     execute: bool,
 ) -> Result<Report, Error> {
-    let snapshot = load_snapshot(context, paths, true)?;
-    let validated = validate_source(&snapshot)?;
+    let allocation = execute
+        .then(|| {
+            crate::scheduler::configured_workers()
+                .map(|workers| (workers, CancellationToken::new()))
+        })
+        .transpose()?;
+    check_with_paths_and_allocation(context, paths, allocation)
+}
+
+fn check_with_paths_and_allocation(
+    context: &Context,
+    paths: &Paths,
+    allocation: Option<(usize, CancellationToken)>,
+) -> Result<Report, Error> {
+    let cancellation = allocation.as_ref().map(|(_, token)| token.clone());
+    ensure_execution_active(cancellation.as_ref())?;
+    let snapshot = load_snapshot_with_cancellation(context, paths, true, cancellation.as_ref())?;
+    ensure_execution_active(cancellation.as_ref())?;
+    let validated = validate_source_with_cancellation(&snapshot, cancellation.as_ref())?;
+    ensure_execution_active(cancellation.as_ref())?;
     let generated = render(
         &snapshot.reviewed,
         &snapshot.source_relative,
         &snapshot.kb_relative,
     );
-    let structural_controls = negative_controls(&snapshot)?;
-    let execution = if execute {
-        Some(execute_cases(&snapshot.reviewed, &validated.stage_sources)?)
-    } else {
-        None
-    };
+    ensure_execution_active(cancellation.as_ref())?;
+    let structural_controls =
+        negative_controls_with_cancellation(&snapshot, cancellation.as_ref())?;
+    ensure_execution_active(cancellation.as_ref())?;
+    let execution = allocation
+        .map(|(workers, cancellation)| {
+            execute_cases_with_allocation(
+                &snapshot.reviewed,
+                &validated.stage_sources,
+                workers,
+                cancellation,
+            )
+        })
+        .transpose()?;
+    ensure_execution_active(cancellation.as_ref())?;
     if snapshot.current_output.as_deref() != Some(generated.as_str()) {
         return Err(temporal_error(format!(
             "{} is STALE — rerun without --check",
@@ -624,6 +671,16 @@ pub(crate) fn fingerprints_with_paths(
 }
 
 fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> Result<Snapshot, Error> {
+    load_snapshot_with_cancellation(context, paths, read_output, None)
+}
+
+fn load_snapshot_with_cancellation(
+    context: &Context,
+    paths: &Paths,
+    read_output: bool,
+    cancellation: Option<&CancellationToken>,
+) -> Result<Snapshot, Error> {
+    ensure_execution_active(cancellation)?;
     let source_path = resolve_path(context, &paths.source);
     let kb_path = resolve_path(context, &paths.kb);
     let output_path = resolve_path(context, &paths.output);
@@ -637,6 +694,7 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> Result<
     }
 
     let source_bytes = read_bytes(&source_path, "temporal assurance source")?;
+    ensure_execution_active(cancellation)?;
     parse_json_no_duplicates(&source_bytes).map_err(|error| {
         temporal_error(format!("cannot parse temporal assurance source: {error}"))
     })?;
@@ -644,15 +702,19 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> Result<
         temporal_error(format!("cannot parse temporal assurance source: {error}"))
     })?;
     let constitution = decode(&read_bytes(&kb_path, "constitution")?, "constitution")?;
+    ensure_execution_active(cancellation)?;
     let mut dependencies = BTreeMap::new();
     for (key, relative) in BOUND_SOURCES {
+        ensure_execution_active(cancellation)?;
         let path = context.path(relative);
         repo_relative(context.root(), &path)?;
         dependencies.insert(key.to_owned(), read_bytes(&path, key)?);
+        ensure_execution_active(cancellation)?;
     }
 
     let mut narrowness_files = BTreeSet::new();
     for impact in &reviewed.narrowness_impacts {
+        ensure_execution_active(cancellation)?;
         let candidate = resolve_path(context, Path::new(&impact.artifact_ref));
         if let Ok(relative) = repo_relative(context.root(), &candidate)
             && candidate.is_file()
@@ -661,6 +723,7 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> Result<
         }
     }
     let current_output = if read_output {
+        ensure_execution_active(cancellation)?;
         Some(decode(
             &read_bytes(&output_path, "generated temporal report")?,
             "generated temporal report",
@@ -668,6 +731,7 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> Result<
     } else {
         None
     };
+    ensure_execution_active(cancellation)?;
     Ok(Snapshot {
         reviewed,
         constitution,
@@ -868,11 +932,19 @@ fn core_fingerprints(
 }
 
 fn validate_source(snapshot: &Snapshot) -> Result<Validated, Error> {
-    validate_source_parts(
+    validate_source_with_cancellation(snapshot, None)
+}
+
+fn validate_source_with_cancellation(
+    snapshot: &Snapshot,
+    cancellation: Option<&CancellationToken>,
+) -> Result<Validated, Error> {
+    validate_source_parts_with_cancellation(
         &snapshot.reviewed,
         &snapshot.constitution,
         &snapshot.dependencies,
         &snapshot.narrowness_files,
+        cancellation,
     )
 }
 
@@ -882,6 +954,23 @@ fn validate_source_parts(
     dependencies: &BTreeMap<String, Vec<u8>>,
     narrowness_files: &BTreeSet<String>,
 ) -> Result<Validated, Error> {
+    validate_source_parts_with_cancellation(
+        reviewed,
+        constitution,
+        dependencies,
+        narrowness_files,
+        None,
+    )
+}
+
+fn validate_source_parts_with_cancellation(
+    reviewed: &TemporalSource,
+    constitution: &str,
+    dependencies: &BTreeMap<String, Vec<u8>>,
+    narrowness_files: &BTreeSet<String>,
+    cancellation: Option<&CancellationToken>,
+) -> Result<Validated, Error> {
+    ensure_execution_active(cancellation)?;
     if reviewed.spdx != "CC-BY-4.0" || reviewed.schema_version != 1 {
         return Err(temporal_error(
             "reviewed source must be CC-BY-4.0 schema version 1",
@@ -932,6 +1021,7 @@ fn validate_source_parts(
         )));
     }
     validate_rule_heads(constitution)?;
+    ensure_execution_active(cancellation)?;
     let succeed_closure = "derived_only(\"succeed\").";
     if marker_block(constitution, "T1-DERIVED")?
         .matches(succeed_closure)
@@ -956,6 +1046,7 @@ fn validate_source_parts(
     }
 
     let fingerprints = core_fingerprints(constitution, dependencies, pre_t3_rule)?;
+    ensure_execution_active(cancellation)?;
     checked_sha(
         &reviewed.constitution_sha256,
         "constitution_sha256",
@@ -999,14 +1090,23 @@ fn validate_source_parts(
     }
 
     validate_source_binding(&reviewed.source_effect_binding, constitution)?;
+    ensure_execution_active(cancellation)?;
     validate_inputs(&reviewed.temporal_input_contracts)?;
+    ensure_execution_active(cancellation)?;
     validate_stages(&reviewed.stages)?;
+    ensure_execution_active(cancellation)?;
     let stage_sources = build_stages(constitution, pre_t3_rule)?;
+    ensure_execution_active(cancellation)?;
     let case_ids = validate_cases(&reviewed.cases, &stage_sources)?;
+    ensure_execution_active(cancellation)?;
     validate_pairs(&reviewed.fresh_process_pairs, &reviewed.cases, &case_ids)?;
+    ensure_execution_active(cancellation)?;
     validate_attacks(&reviewed.attacks, &case_ids)?;
+    ensure_execution_active(cancellation)?;
     validate_narrowness(&reviewed.narrowness_impacts, narrowness_files)?;
+    ensure_execution_active(cancellation)?;
     validate_limits_and_acceptance(reviewed)?;
+    ensure_execution_active(cancellation)?;
     Ok(Validated { stage_sources })
 }
 
@@ -1569,26 +1669,376 @@ impl PreparedCase {
     }
 }
 
+struct PreparedTemporalStage {
+    stage: String,
+    engine: PreparedPinEngine,
+}
+
+#[derive(Default)]
+struct TemporalWorkerState {
+    prepared: Option<PreparedTemporalStage>,
+}
+
+impl TemporalWorkerState {
+    fn prepare_stage(&mut self, stage: &str, source: &str, cancellation: &CancellationToken) {
+        if self
+            .prepared
+            .as_ref()
+            .is_some_and(|prepared| prepared.stage == stage)
+        {
+            return;
+        }
+
+        // Drop the prior stage before constructing its replacement. Besides
+        // keeping the persistent cache to one entry, this avoids a transient
+        // two-engine memory peak on every T1/T2/T3 transition.
+        drop(self.prepared.take());
+        self.prepared = Some(PreparedTemporalStage {
+            stage: stage.to_owned(),
+            engine: PreparedPinEngine::new_cancellable(
+                &[LoadedSource::new("candidate.nibli", source)],
+                cancellation.flag(),
+            ),
+        });
+    }
+
+    fn engine(&self, stage: &str) -> &PreparedPinEngine {
+        let prepared = self
+            .prepared
+            .as_ref()
+            .expect("temporal worker stage was prepared");
+        debug_assert_eq!(prepared.stage, stage);
+        &prepared.engine
+    }
+
+    #[cfg(test)]
+    fn retained_engine_slots(&self) -> usize {
+        usize::from(self.prepared.is_some())
+    }
+}
+
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+enum CaseDeadlineOutcome {
+    Completed,
+    TimedOut,
+    ExternallyCancelled,
+}
+
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+enum CaseDeadlineState {
+    Pending,
+    Completed,
+    TimedOut,
+    ExternallyCancelled,
+    Stopped,
+}
+
+struct CaseDeadlineShared {
+    state: Mutex<CaseDeadlineState>,
+    changed: Condvar,
+}
+
+#[cfg(test)]
+#[derive(Clone, Default)]
+struct DeadlineThreadTracker {
+    active: Arc<std::sync::atomic::AtomicUsize>,
+    peak: Arc<std::sync::atomic::AtomicUsize>,
+    started: Arc<std::sync::atomic::AtomicUsize>,
+    finished: Arc<std::sync::atomic::AtomicUsize>,
+    joined: Arc<std::sync::atomic::AtomicUsize>,
+}
+
+#[cfg(test)]
+impl DeadlineThreadTracker {
+    fn thread_started(&self) {
+        use std::sync::atomic::Ordering;
+
+        let active = self.active.fetch_add(1, Ordering::SeqCst) + 1;
+        self.started.fetch_add(1, Ordering::SeqCst);
+        self.peak.fetch_max(active, Ordering::SeqCst);
+    }
+
+    fn thread_finished(&self) {
+        use std::sync::atomic::Ordering;
+
+        self.active.fetch_sub(1, Ordering::SeqCst);
+        self.finished.fetch_add(1, Ordering::SeqCst);
+    }
+
+    fn thread_joined(&self) {
+        self.joined
+            .fetch_add(1, std::sync::atomic::Ordering::SeqCst);
+    }
+
+    fn counts(&self) -> (usize, usize, usize, usize, usize) {
+        use std::sync::atomic::Ordering;
+
+        (
+            self.active.load(Ordering::SeqCst),
+            self.peak.load(Ordering::SeqCst),
+            self.started.load(Ordering::SeqCst),
+            self.finished.load(Ordering::SeqCst),
+            self.joined.load(Ordering::SeqCst),
+        )
+    }
+}
+
+#[cfg(test)]
+struct DeadlineThreadGuard(DeadlineThreadTracker);
+
+#[cfg(test)]
+impl DeadlineThreadGuard {
+    fn new(tracker: DeadlineThreadTracker) -> Self {
+        tracker.thread_started();
+        Self(tracker)
+    }
+}
+
+#[cfg(test)]
+impl Drop for DeadlineThreadGuard {
+    fn drop(&mut self) {
+        self.0.thread_finished();
+    }
+}
+
+/// One joined deadline controller for one actively executing temporal case.
+///
+/// The controller is created only after the worker's stage engine exists. A
+/// normal completion or external cancellation wakes it immediately. It owns a
+/// per-case child token, so deadline expiry cannot poison the scheduler's
+/// family/job token. `Drop` also wakes and joins it, so a panic cannot detach
+/// the timer.
+struct CaseDeadline {
+    started: Instant,
+    deadline: Instant,
+    cancellation: CancellationToken,
+    shared: Arc<CaseDeadlineShared>,
+    handle: Option<JoinHandle<()>>,
+    parent_link: Option<CancellationHookGuard>,
+    #[cfg(test)]
+    tracker: Option<DeadlineThreadTracker>,
+}
+
+impl CaseDeadline {
+    fn start(timeout: Duration, parent: &CancellationToken) -> Result<Self, Error> {
+        #[cfg(not(test))]
+        {
+            Self::start_inner(timeout, parent)
+        }
+        #[cfg(test)]
+        {
+            Self::start_inner(timeout, parent, None)
+        }
+    }
+
+    #[cfg(test)]
+    fn start_tracked(
+        timeout: Duration,
+        parent: &CancellationToken,
+        tracker: DeadlineThreadTracker,
+    ) -> Result<Self, Error> {
+        Self::start_inner(timeout, parent, Some(tracker))
+    }
+
+    fn start_inner(
+        timeout: Duration,
+        parent: &CancellationToken,
+        #[cfg(test)] tracker: Option<DeadlineThreadTracker>,
+    ) -> Result<Self, Error> {
+        // This is the sole clock origin for both the controller and the
+        // caller's elapsed-time classification. It is deliberately sampled
+        // after cold engine construction.
+        let started = Instant::now();
+        let deadline = started.checked_add(timeout).ok_or_else(|| {
+            temporal_error("temporal case timeout exceeds the monotonic clock range")
+        })?;
+        let cancellation = CancellationToken::new();
+        let shared = Arc::new(CaseDeadlineShared {
+            state: Mutex::new(CaseDeadlineState::Pending),
+            changed: Condvar::new(),
+        });
+        let parent_link = {
+            let child = cancellation.clone();
+            let shared = Arc::clone(&shared);
+            parent.on_cancel(move || {
+                let cancel_child = {
+                    let mut state = shared
+                        .state
+                        .lock()
+                        .unwrap_or_else(|poisoned| poisoned.into_inner());
+                    let cancel_child = *state == CaseDeadlineState::Pending;
+                    if cancel_child {
+                        *state = CaseDeadlineState::ExternallyCancelled;
+                    }
+                    shared.changed.notify_all();
+                    cancel_child
+                };
+                if cancel_child {
+                    child.cancel();
+                }
+            })
+        };
+        let shared_for_thread = Arc::clone(&shared);
+        let cancellation_for_thread = cancellation.clone();
+        #[cfg(test)]
+        let tracker_for_thread = tracker.clone();
+        let handle = thread::Builder::new()
+            .name("rights-temporal-case-deadline".to_owned())
+            .spawn(move || {
+                #[cfg(test)]
+                let _thread_guard = tracker_for_thread.map(DeadlineThreadGuard::new);
+                let mut state = shared_for_thread
+                    .state
+                    .lock()
+                    .unwrap_or_else(|poisoned| poisoned.into_inner());
+                loop {
+                    if *state != CaseDeadlineState::Pending {
+                        return;
+                    }
+                    let now = Instant::now();
+                    if now >= deadline {
+                        *state = CaseDeadlineState::TimedOut;
+                        shared_for_thread.changed.notify_all();
+                        drop(state);
+                        cancellation_for_thread.cancel();
+                        return;
+                    }
+
+                    let remaining = deadline.saturating_duration_since(now);
+                    (state, _) = shared_for_thread
+                        .changed
+                        .wait_timeout(state, remaining)
+                        .unwrap_or_else(|poisoned| poisoned.into_inner());
+                }
+            })
+            .map_err(|error| {
+                temporal_error(format!(
+                    "cannot start temporal case deadline controller: {error}"
+                ))
+            })?;
+        Ok(Self {
+            started,
+            deadline,
+            cancellation,
+            shared,
+            handle: Some(handle),
+            parent_link: Some(parent_link),
+            #[cfg(test)]
+            tracker,
+        })
+    }
+
+    fn cancellation(&self) -> &CancellationToken {
+        &self.cancellation
+    }
+
+    /// Record the engine's return before doing any teardown that may be
+    /// preempted. The supplied instant and the timer share `self.deadline`, so
+    /// a completion at the boundary wins over a later controller wake-up.
+    fn record_completion(&mut self, completed_at: Instant) -> Duration {
+        let elapsed = completed_at.saturating_duration_since(self.started);
+        let cancel_child = {
+            let mut state = self
+                .shared
+                .state
+                .lock()
+                .unwrap_or_else(|poisoned| poisoned.into_inner());
+            let cancel_child = if completed_at <= self.deadline {
+                if *state != CaseDeadlineState::ExternallyCancelled
+                    && *state != CaseDeadlineState::Stopped
+                {
+                    *state = CaseDeadlineState::Completed;
+                }
+                false
+            } else if *state == CaseDeadlineState::Pending {
+                *state = CaseDeadlineState::TimedOut;
+                true
+            } else {
+                false
+            };
+            self.shared.changed.notify_all();
+            cancel_child
+        };
+        // Unregister immediately after recording completion. If the parent is
+        // cancelled while controller teardown is preempted, it must not turn a
+        // completed case's child token into a lasting family cancellation.
+        drop(self.parent_link.take());
+        if cancel_child {
+            self.cancellation.cancel();
+        }
+        elapsed
+    }
+
+    fn stop_if_pending(&self) {
+        let mut state = self
+            .shared
+            .state
+            .lock()
+            .unwrap_or_else(|poisoned| poisoned.into_inner());
+        if *state == CaseDeadlineState::Pending {
+            *state = CaseDeadlineState::Stopped;
+        }
+        self.shared.changed.notify_all();
+    }
+
+    fn wake_and_join(&mut self) -> Result<(), Error> {
+        self.stop_if_pending();
+        drop(self.parent_link.take());
+        if let Some(handle) = self.handle.take() {
+            let joined = handle.join();
+            #[cfg(test)]
+            if let Some(tracker) = &self.tracker {
+                tracker.thread_joined();
+            }
+            if joined.is_err() {
+                return Err(temporal_error("temporal case deadline controller panicked"));
+            }
+        }
+        Ok(())
+    }
+
+    fn finish(mut self) -> Result<CaseDeadlineOutcome, Error> {
+        self.wake_and_join()?;
+        let state = *self
+            .shared
+            .state
+            .lock()
+            .unwrap_or_else(|poisoned| poisoned.into_inner());
+        match state {
+            CaseDeadlineState::Completed => Ok(CaseDeadlineOutcome::Completed),
+            CaseDeadlineState::TimedOut => Ok(CaseDeadlineOutcome::TimedOut),
+            CaseDeadlineState::ExternallyCancelled => Ok(CaseDeadlineOutcome::ExternallyCancelled),
+            CaseDeadlineState::Pending | CaseDeadlineState::Stopped => Err(temporal_error(
+                "temporal case deadline finished before execution completed",
+            )),
+        }
+    }
+}
+
+impl Drop for CaseDeadline {
+    fn drop(&mut self) {
+        let _ = self.wake_and_join();
+    }
+}
+
 fn execute_cases(
     reviewed: &TemporalSource,
     stage_sources: &BTreeMap<String, String>,
 ) -> Result<ExecutionReport, Error> {
-    let jobs = match std::env::var("TEMPORAL_ASSURANCE_JOBS") {
-        Ok(value) => value
-            .parse::<usize>()
-            .map_err(|_| temporal_error("TEMPORAL_ASSURANCE_JOBS must be a positive integer"))?,
-        Err(std::env::VarError::NotPresent) => 1,
-        Err(error) => {
-            return Err(temporal_error(format!(
-                "cannot read TEMPORAL_ASSURANCE_JOBS: {error}"
-            )));
-        }
-    };
-    if jobs == 0 {
-        return Err(temporal_error(
-            "TEMPORAL_ASSURANCE_JOBS must be a positive integer",
-        ));
-    }
+    execute_cases_with_allocation(
+        reviewed,
+        stage_sources,
+        crate::scheduler::configured_workers()?,
+        CancellationToken::new(),
+    )
+}
+
+fn execute_cases_with_allocation(
+    reviewed: &TemporalSource,
+    stage_sources: &BTreeMap<String, String>,
+    workers: usize,
+    cancellation: CancellationToken,
+) -> Result<ExecutionReport, Error> {
     let stages = stage_sources
         .iter()
         .map(|(stage, source)| (stage.clone(), Arc::<str>::from(source.as_str())))
@@ -1607,52 +2057,49 @@ fn execute_cases(
         })
         .collect::<Vec<_>>();
     let case_count = work.len();
-    let counts = if jobs == 1 {
-        execute_cases_reusing_stages(work)?
-    } else {
-        run_bounded(work, jobs.min(case_count.max(1)), |_, case, _| {
-            execute_case(case)
-        })
-        .map_err(map_schedule_error)?
-    };
+    let options = temporal_schedule_options(cancellation, timeout);
+    let counts = run_bounded_with_state_controlled(
+        work,
+        workers.min(case_count.max(1)),
+        options,
+        |_| TemporalWorkerState::default(),
+        |_, worker, case, cancellation| {
+            if cancellation.is_cancelled() {
+                return Err(temporal_error("temporal execution cancelled"));
+            }
+            let stage = case.case.stage.clone();
+            worker.prepare_stage(&stage, &case.stage_source, &cancellation);
+            ensure_execution_active(Some(&cancellation))?;
+            let prepared = worker.engine(&stage);
+            let count = execute_case_with_prepared(&case, prepared, &cancellation)?;
+            if cancellation.is_cancelled() {
+                return Err(temporal_error("temporal execution cancelled"));
+            }
+            Ok(count)
+        },
+    )
+    .map_err(map_schedule_error)?;
     Ok(ExecutionReport {
         cases: case_count,
         pins: counts.into_iter().sum(),
     })
 }
 
-/// Execute in canonical case order while compiling each cumulative stage once.
-///
-/// `PreparedPinEngine::run_patched_files` clones the prepared knowledge base,
-/// applies one case's typed deletion/addition overlay, runs its pins, and then
-/// discards that clone. This has the same fresh-candidate isolation as building
-/// a complete engine per case, without parsing T1/T2/T3 another 38 times. The
-/// single-worker path deliberately remains sequential so the first reported
-/// failure is still the first failing case in reviewed source order.
-fn execute_cases_reusing_stages(work: Vec<PreparedCase>) -> Result<Vec<usize>, Error> {
-    let mut stages = BTreeMap::<String, PreparedPinEngine>::new();
-    let mut counts = Vec::with_capacity(work.len());
-    for case in work {
-        let stage = case.case.stage.clone();
-        if !stages.contains_key(&stage) {
-            stages.insert(
-                stage.clone(),
-                PreparedPinEngine::new(&[LoadedSource::new("candidate.nibli", &case.stage_source)]),
-            );
-        }
-        counts.push(execute_case_with_prepared(
-            &case,
-            stages
-                .get(&stage)
-                .expect("prepared temporal stage was just installed"),
-        )?);
-    }
-    Ok(counts)
+fn temporal_schedule_options(
+    cancellation: CancellationToken,
+    _reviewed_case_timeout: Duration,
+) -> ScheduleOptions {
+    // The persistent scheduler's clock starts when it dispatches a job, which
+    // includes cold construction of that worker's stage engine. The reviewed
+    // timeout applies only to the case execution measured below, after that
+    // engine exists; the scheduler supplies external cancellation only.
+    ScheduleOptions::cancelled_by(cancellation)
 }
 
 fn execute_case_with_prepared(
     case: &PreparedCase,
     prepared: &PreparedPinEngine,
+    cancellation: &CancellationToken,
 ) -> Result<usize, Error> {
     let deletions = case
         .case
@@ -1666,14 +2113,29 @@ fn execute_case_with_prepared(
         .iter()
         .map(String::as_str)
         .collect::<Vec<_>>();
-    let started = Instant::now();
+    ensure_execution_active(Some(cancellation))?;
+    let mut deadline = CaseDeadline::start(case.timeout, cancellation)?;
+    prepared.set_cancel_flag(deadline.cancellation().flag());
     let output = prepared.run_patched_files(
         &deletions,
         &additions,
         &[LoadedSource::new("case.pins.nibli", &case.pin_source)],
-        PinOptions::default(),
+        PinOptions {
+            cancellation: Some(deadline.cancellation()),
+            ..PinOptions::default()
+        },
     );
-    validate_case_output(case, started.elapsed(), output)
+    let elapsed = deadline.record_completion(Instant::now());
+    match deadline.finish()? {
+        CaseDeadlineOutcome::Completed => {}
+        CaseDeadlineOutcome::TimedOut => return Err(case_timeout_error(case)),
+        CaseDeadlineOutcome::ExternallyCancelled => {
+            ensure_execution_active(Some(cancellation))?;
+            return Err(temporal_error("temporal execution cancelled"));
+        }
+    }
+    ensure_execution_active(Some(cancellation))?;
+    validate_case_output(case, elapsed, output)
 }
 
 fn execute_case(case: PreparedCase) -> Result<usize, Error> {
@@ -1693,11 +2155,7 @@ fn validate_case_output(
     output: crate::pin::RunOutput,
 ) -> Result<usize, Error> {
     if elapsed > case.timeout {
-        return Err(temporal_error(format!(
-            "case {}: timed out after {} seconds",
-            case.id,
-            case.timeout.as_secs()
-        )));
+        return Err(case_timeout_error(case));
     }
     if output.exit_code != 0 {
         let combined = format!("{}{}", output.stdout, output.stderr);
@@ -1717,14 +2175,29 @@ fn validate_case_output(
     Ok(output.pins)
 }
 
+fn case_timeout_error(case: &PreparedCase) -> Error {
+    temporal_error(format!(
+        "case {}: timed out after {} seconds",
+        case.id,
+        case.timeout.as_secs()
+    ))
+}
+
 fn map_schedule_error(error: ScheduleError<Error>) -> Error {
     match error {
         ScheduleError::JobFailed { source, .. } => source,
+        ScheduleError::JobTimedOut { index, timeout } => temporal_error(format!(
+            "temporal execution worker {index} exceeded its {timeout:?} timeout"
+        )),
         ScheduleError::InvalidWorkerCount => {
-            temporal_error("TEMPORAL_ASSURANCE_JOBS must be a positive integer")
+            temporal_error("RIGHTS_VERIFY_JOBS must be an integer from 1 through 4")
         }
+        ScheduleError::Cancelled => temporal_error("temporal execution cancelled"),
         ScheduleError::WorkerPanicked { index, message } => temporal_error(format!(
             "temporal execution worker {index} panicked: {message}"
+        )),
+        ScheduleError::WorkerTeardownPanicked { worker, message } => temporal_error(format!(
+            "temporal execution worker {worker} teardown panicked: {message}"
         )),
         ScheduleError::CoordinatorLostWorker { active_indices } => temporal_error(format!(
             "temporal execution coordinator lost workers {active_indices:?}"
@@ -1957,12 +2430,27 @@ fn render(reviewed: &TemporalSource, source_path: &str, kb_path: &str) -> String
 }
 
 fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
+    negative_controls_with_cancellation(snapshot, None)
+}
+
+fn negative_controls_with_cancellation(
+    snapshot: &Snapshot,
+    cancellation: Option<&CancellationToken>,
+) -> Result<usize, Error> {
+    ensure_execution_active(cancellation)?;
     let reviewed = &snapshot.reviewed;
     let constitution = &snapshot.constitution;
     let dependencies = &snapshot.dependencies;
     let files = &snapshot.narrowness_files;
     let validate = |candidate: &TemporalSource, source: &str| {
-        validate_source_parts(candidate, source, dependencies, files).map(|_| ())
+        validate_source_parts_with_cancellation(
+            candidate,
+            source,
+            dependencies,
+            files,
+            cancellation,
+        )
+        .map(|_| ())
     };
     let mut controls = 0;
 
@@ -2088,12 +2576,14 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
     expect_failure("liveness overclaim", validate(&changed, constitution))?;
     controls += 1;
 
+    ensure_execution_active(cancellation)?;
     let candidate = constitution.replacen(
         &reviewed.source_effect_binding.case_bound_rule_fragment,
         "",
         1,
     );
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "missing case-bound source fragment",
         validate(&changed, &candidate),
@@ -2106,6 +2596,7 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
         1,
     );
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "missing effective-source fragment",
         validate(&changed, &candidate),
@@ -2118,6 +2609,7 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
         1,
     );
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "missing status-conflict reader",
         validate(&changed, &candidate),
@@ -2127,6 +2619,7 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
     let visibility_fragment = "all $lease: all $case: all $subject: authorized($lease, ActiveCustody, $case) & related($case, CaseBound) & cite(Court, $case, $subject) & observe(Chronicle, $case, $subject, CaseScope) & observe(TemporalReview, $case, $subject, CaseScope) & observe(Chronicle, $case, Court, HolderScope) & observe(TemporalReview, $case, Court, HolderScope) & ~match($lease, ActivePower) -> err($subject, TemporalAuthority).";
     let candidate = constitution.replacen(visibility_fragment, "", 1);
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "missing inactive-authority reader",
         validate(&changed, &candidate),
@@ -2139,6 +2632,7 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
         1,
     );
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "recursive transition conclusion",
         validate(&changed, &candidate),
@@ -2151,6 +2645,7 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
         1,
     );
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure("unreviewed collide head", validate(&changed, &candidate))?;
     controls += 1;
 
@@ -2160,12 +2655,14 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
         1,
     );
     let changed = rebound_source(reviewed, &candidate, dependencies)?;
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "unreviewed multi-variable path head",
         validate(&changed, &candidate),
     )?;
     controls += 1;
 
+    ensure_execution_active(cancellation)?;
     expect_failure(
         "missing T2 marker",
         marker_block(
@@ -2174,6 +2671,7 @@ fn negative_controls(snapshot: &Snapshot) -> Result<usize, Error> {
         ),
     )?;
     controls += 1;
+    ensure_execution_active(cancellation)?;
     Ok(controls)
 }
 
@@ -2192,12 +2690,16 @@ fn rebound_source(
 }
 
 fn expect_failure<T>(label: &str, result: Result<T, Error>) -> Result<(), Error> {
-    if result.is_err() {
-        Ok(())
-    } else {
-        Err(temporal_error(format!(
+    match result {
+        Err(error)
+            if error.to_string() == "12-temporal-assurance: temporal execution cancelled" =>
+        {
+            Err(error)
+        }
+        Err(_) => Ok(()),
+        Ok(_) => Err(temporal_error(format!(
             "negative control did not fail: {label}"
-        )))
+        ))),
     }
 }
 
@@ -2626,6 +3128,233 @@ mod tests {
 
     fn snapshot() -> Snapshot {
         load_snapshot(&context(), &Paths::default(), true).expect("load temporal snapshot")
+    }
+
+    #[test]
+    fn pre_cancelled_execution_stops_before_reading_inputs() {
+        let temporary = tempfile::tempdir().expect("temporary temporal repository");
+        let isolated = Context::from_test_root(temporary.path().to_path_buf());
+        let cancellation = CancellationToken::new();
+        cancellation.cancel();
+
+        let error = check_execute_with_allocation(&isolated, 1, cancellation)
+            .expect_err("pre-cancelled execution must stop before loading inputs");
+        assert_eq!(
+            error.to_string(),
+            "12-temporal-assurance: temporal execution cancelled"
+        );
+    }
+
+    #[test]
+    fn cold_worker_state_construction_is_outside_the_reviewed_case_timeout() {
+        let timeout = Duration::from_millis(50);
+        let setup_started = Instant::now();
+        let result = run_bounded_with_state_controlled(
+            [()],
+            1,
+            temporal_schedule_options(CancellationToken::new(), timeout),
+            move |_| {
+                std::thread::sleep(Duration::from_millis(75));
+                setup_started.elapsed()
+            },
+            move |_, setup_elapsed, _, cancellation| {
+                if *setup_elapsed <= timeout {
+                    Err("cold worker-state construction did not exceed the test timeout")
+                } else {
+                    let mut deadline = CaseDeadline::start(timeout, &cancellation)
+                        .map_err(|_| "could not start case deadline")?;
+                    deadline.record_completion(Instant::now());
+                    if deadline
+                        .finish()
+                        .map_err(|_| "could not join case deadline")?
+                        == CaseDeadlineOutcome::Completed
+                        && !cancellation.is_cancelled()
+                    {
+                        Ok(())
+                    } else {
+                        Err("cold setup consumed the case deadline")
+                    }
+                }
+            },
+        )
+        .expect("cold worker-state construction must not consume case timeout");
+        assert_eq!(result, [()]);
+    }
+
+    #[test]
+    fn reviewed_case_deadline_actively_cancels_and_joins_cooperative_work() {
+        let parent = CancellationToken::new();
+        let deadline =
+            CaseDeadline::start(Duration::from_millis(15), &parent).expect("start case deadline");
+        let cancellation = deadline.cancellation().clone();
+        let started = Instant::now();
+        while !cancellation.is_cancelled() {
+            assert!(
+                started.elapsed() < Duration::from_secs(1),
+                "deadline did not actively cancel cooperative execution"
+            );
+            std::thread::sleep(Duration::from_millis(1));
+        }
+        assert_eq!(
+            deadline.finish().expect("join case deadline"),
+            CaseDeadlineOutcome::TimedOut
+        );
+        assert!(started.elapsed() < Duration::from_secs(1));
+        assert!(
+            !parent.is_cancelled(),
+            "case timeout must not cancel its parent family/job token"
+        );
+    }
+
+    #[test]
+    fn external_cancellation_wakes_long_deadline_and_stays_distinct() {
+        let parent = CancellationToken::new();
+        let deadline = CaseDeadline::start(Duration::from_secs(600), &parent)
+            .expect("start long case deadline");
+        let child = deadline.cancellation().clone();
+        let started = Instant::now();
+        assert!(parent.cancel());
+        assert_eq!(
+            deadline
+                .finish()
+                .expect("join externally cancelled deadline"),
+            CaseDeadlineOutcome::ExternallyCancelled
+        );
+        assert!(started.elapsed() < Duration::from_secs(1));
+        assert!(child.is_cancelled());
+        assert_eq!(
+            ensure_execution_active(Some(&parent))
+                .expect_err("external cancellation remains visible")
+                .to_string(),
+            "12-temporal-assurance: temporal execution cancelled"
+        );
+    }
+
+    #[test]
+    fn completion_before_deadline_wins_during_delayed_teardown() {
+        let timeout = Duration::from_millis(250);
+        let parent = CancellationToken::new();
+        let mut deadline = CaseDeadline::start(timeout, &parent).expect("start case deadline");
+        let child = deadline.cancellation().clone();
+
+        // Capture the instant at which the engine returned, then simulate
+        // preemption before that completion can acquire the controller state.
+        let completed_at = Instant::now();
+        let wait_started = Instant::now();
+        while !child.is_cancelled() {
+            assert!(
+                wait_started.elapsed() < Duration::from_secs(2),
+                "deadline controller did not cancel the case child"
+            );
+            std::thread::yield_now();
+        }
+        let elapsed = deadline.record_completion(completed_at);
+        assert!(elapsed <= timeout, "test completion missed its deadline");
+        assert_eq!(
+            deadline.finish().expect("join completed deadline"),
+            CaseDeadlineOutcome::Completed
+        );
+        assert!(
+            child.is_cancelled(),
+            "test did not reproduce the late timer race"
+        );
+        assert!(!parent.is_cancelled());
+    }
+
+    #[test]
+    fn deadline_controller_threads_are_bounded_and_joined_for_w1_through_w4() {
+        for workers in 1..=crate::scheduler::MAX_WORKERS {
+            let jobs = workers * 2;
+            let tracker = DeadlineThreadTracker::default();
+            let first_barrier = Arc::new(std::sync::Barrier::new(workers));
+            let second_barrier = Arc::new(std::sync::Barrier::new(workers));
+            let tracker_for_jobs = tracker.clone();
+            let first_barrier_for_jobs = Arc::clone(&first_barrier);
+            let second_barrier_for_jobs = Arc::clone(&second_barrier);
+
+            let results = run_bounded_with_state_controlled(
+                0..jobs,
+                workers,
+                ScheduleOptions::default(),
+                |_| (),
+                move |_, _, _, cancellation| {
+                    let mut deadline = CaseDeadline::start_tracked(
+                        Duration::from_secs(10),
+                        &cancellation,
+                        tracker_for_jobs.clone(),
+                    )
+                    .map_err(|_| "could not start tracked deadline")?;
+                    first_barrier_for_jobs.wait();
+                    let wait_started = Instant::now();
+                    while tracker_for_jobs.counts().0 < workers {
+                        if wait_started.elapsed() >= Duration::from_secs(1) {
+                            return Err("deadline controller threads did not all start");
+                        }
+                        std::thread::yield_now();
+                    }
+                    second_barrier_for_jobs.wait();
+                    deadline.record_completion(Instant::now());
+                    if deadline
+                        .finish()
+                        .map_err(|_| "could not join tracked deadline")?
+                        == CaseDeadlineOutcome::Completed
+                    {
+                        Ok(())
+                    } else {
+                        Err("tracked deadline did not complete")
+                    }
+                },
+            )
+            .expect("bounded deadline controller schedule");
+
+            assert_eq!(results.len(), jobs);
+            let (active, peak, started, finished, joined) = tracker.counts();
+            assert_eq!(active, 0, "W{workers} left a controller thread active");
+            assert_eq!(peak, workers, "W{workers} did not exercise its full bound");
+            assert_eq!(started, jobs, "W{workers} did not start every controller");
+            assert_eq!(finished, jobs, "W{workers} did not finish every controller");
+            assert_eq!(joined, jobs, "W{workers} did not join every controller");
+        }
+    }
+
+    #[test]
+    fn interleaved_stages_retain_at_most_one_engine_per_worker() {
+        let workers = crate::scheduler::MAX_WORKERS;
+        let mut states = (0..workers)
+            .map(|_| TemporalWorkerState::default())
+            .collect::<Vec<_>>();
+        let stages = [
+            ("T1", "person(Ara).\n"),
+            ("T2", "person(Ara).\nperson(Bea).\n"),
+            ("T3", "person(Ara).\nperson(Bea).\nperson(Cai).\n"),
+        ];
+
+        for index in 0..(workers * stages.len()) {
+            let worker = index % workers;
+            let (stage, source) = stages[index % stages.len()];
+            let cancellation = CancellationToken::new();
+            states[worker].prepare_stage(stage, source, &cancellation);
+            assert_eq!(states[worker].retained_engine_slots(), 1);
+            assert_eq!(
+                states[worker]
+                    .prepared
+                    .as_ref()
+                    .map(|prepared| prepared.stage.as_str()),
+                Some(stage)
+            );
+            assert!(
+                states
+                    .iter()
+                    .map(TemporalWorkerState::retained_engine_slots)
+                    .sum::<usize>()
+                    <= workers
+            );
+        }
+        assert!(
+            states
+                .iter()
+                .all(|state| state.retained_engine_slots() == 1)
+        );
     }
 
     #[test]

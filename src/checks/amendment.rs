@@ -20,6 +20,7 @@ use crate::cli::Error;
 use crate::context::Context;
 use crate::digest::sha256;
 use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine};
+use crate::scheduler::CancellationToken;
 
 pub(crate) const STEP_NAME: &str = "amendment semantics";
 
@@ -552,6 +553,14 @@ struct Validated {
 
 type AuditResult<T> = Result<T, String>;
 
+fn ensure_execution_active(cancellation: Option<&CancellationToken>) -> AuditResult<()> {
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        Err("amendment execution cancelled".to_owned())
+    } else {
+        Ok(())
+    }
+}
+
 pub(crate) fn check(context: &Context) -> Result<Report, Error> {
     check_with_paths(context, &Paths::default(), false)
 }
@@ -560,20 +569,43 @@ pub(crate) fn check_execute(context: &Context) -> Result<Report, Error> {
     check_with_paths(context, &Paths::default(), true)
 }
 
+pub(crate) fn check_execute_with_cancellation(
+    context: &Context,
+    cancellation: CancellationToken,
+) -> Result<Report, Error> {
+    check_with_paths_and_cancellation(context, &Paths::default(), Some(&cancellation))
+}
+
 pub(crate) fn check_with_paths(
     context: &Context,
     paths: &Paths,
     execute: bool,
 ) -> Result<Report, Error> {
-    let snapshot = load_snapshot(context, paths, true).map_err(amendment_error)?;
+    let cancellation = CancellationToken::new();
+    check_with_paths_and_cancellation(context, paths, execute.then_some(&cancellation))
+}
+
+fn check_with_paths_and_cancellation(
+    context: &Context,
+    paths: &Paths,
+    cancellation: Option<&CancellationToken>,
+) -> Result<Report, Error> {
+    ensure_execution_active(cancellation).map_err(amendment_error)?;
+    let snapshot = load_snapshot_with_cancellation(context, paths, true, cancellation)
+        .map_err(amendment_error)?;
+    ensure_execution_active(cancellation).map_err(amendment_error)?;
     let validated = validate_source(&snapshot).map_err(amendment_error)?;
+    ensure_execution_active(cancellation).map_err(amendment_error)?;
     let generated = render(&snapshot).map_err(amendment_error)?;
-    let structural_controls = negative_controls(&snapshot).map_err(amendment_error)?;
-    let execution = if execute {
-        Some(execute_cases(context, &snapshot, &validated).map_err(amendment_error)?)
-    } else {
-        None
-    };
+    ensure_execution_active(cancellation).map_err(amendment_error)?;
+    let structural_controls =
+        negative_controls_with_cancellation(&snapshot, cancellation).map_err(amendment_error)?;
+    ensure_execution_active(cancellation).map_err(amendment_error)?;
+    let execution = cancellation
+        .map(|cancellation| execute_cases(context, &snapshot, &validated, Some(cancellation)))
+        .transpose()
+        .map_err(amendment_error)?;
+    ensure_execution_active(cancellation).map_err(amendment_error)?;
     if snapshot.current_output.as_deref() != Some(generated.as_bytes()) {
         return Err(amendment_error(format!(
             "{} is STALE — rerun without --check",
@@ -605,7 +637,7 @@ pub(crate) fn generate_with_paths(
     let generated = render(&snapshot).map_err(amendment_error)?;
     let structural_controls = negative_controls(&snapshot).map_err(amendment_error)?;
     let execution = if execute {
-        Some(execute_cases(context, &snapshot, &validated).map_err(amendment_error)?)
+        Some(execute_cases(context, &snapshot, &validated, None).map_err(amendment_error)?)
     } else {
         None
     };
@@ -661,6 +693,16 @@ pub(crate) fn fingerprints_with_paths(
 }
 
 fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> AuditResult<Snapshot> {
+    load_snapshot_with_cancellation(context, paths, read_output, None)
+}
+
+fn load_snapshot_with_cancellation(
+    context: &Context,
+    paths: &Paths,
+    read_output: bool,
+    cancellation: Option<&CancellationToken>,
+) -> AuditResult<Snapshot> {
+    ensure_execution_active(cancellation)?;
     let source_path = resolve_path(context, &paths.source);
     let kb_path = resolve_path(context, &paths.kb);
     let ledger_path = resolve_path(context, &paths.ledger);
@@ -678,10 +720,14 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> AuditRe
 
     let (source_bytes, source_identity) =
         read_bound_file(&source_path, "amendment-semantics source")?;
+    ensure_execution_active(cancellation)?;
     let (kb_bytes, kb_identity) = read_bound_file(&kb_path, "constitution")?;
+    ensure_execution_active(cancellation)?;
     let (ledger_bytes, ledger_identity) = read_bound_file(&ledger_path, "assertion ledger")?;
+    ensure_execution_active(cancellation)?;
     let (assurance_bytes, assurance_identity) =
         read_bound_file(&assurance_path, "assurance source")?;
+    ensure_execution_active(cancellation)?;
     let input_identities = require_distinct_identities(&[
         ("amendment-semantics source", source_identity),
         ("constitution", kb_identity),
@@ -703,6 +749,7 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> AuditRe
 
     let mut references = BTreeMap::new();
     for impact in &reviewed.narrowness_impacts {
+        ensure_execution_active(cancellation)?;
         let reference = &impact.artifact_ref;
         if let Some((raw_file, _)) = reference.split_once("::") {
             if references.contains_key(raw_file) {
@@ -719,10 +766,12 @@ fn load_snapshot(context: &Context, paths: &Paths, read_output: bool) -> AuditRe
         }
     }
     let current_output = if read_output {
+        ensure_execution_active(cancellation)?;
         Some(read_bound_file(&output_path, "generated report")?.0)
     } else {
         None
     };
+    ensure_execution_active(cancellation)?;
     Ok(Snapshot {
         kb_digest: sha256(&kb_bytes),
         ledger_digest: sha256(&ledger_bytes),
@@ -2389,17 +2438,9 @@ fn execute_cases(
     context: &Context,
     snapshot: &Snapshot,
     validated: &Validated,
+    cancellation: Option<&CancellationToken>,
 ) -> AuditResult<ExecutionReport> {
     let cases = &snapshot.reviewed.cases;
-    let _requested_jobs = match std::env::var("AMENDMENT_AUDIT_JOBS") {
-        Ok(value) => value
-            .parse::<usize>()
-            .ok()
-            .filter(|value| *value > 0)
-            .ok_or_else(|| "AMENDMENT_AUDIT_JOBS must be a positive integer".to_owned())?,
-        Err(std::env::VarError::NotPresent) => 4,
-        Err(error) => return Err(format!("cannot read AMENDMENT_AUDIT_JOBS: {error}")),
-    };
     let mut grouped = BTreeMap::<String, ExecutionGroup>::new();
     let mut total_pins = 0;
     for case in cases {
@@ -2423,14 +2464,31 @@ fn execute_cases(
     // constitution parses; measured worker-local bases cost more CPU without a
     // material wall-time win. Every grouped pin file still runs against a fresh
     // clone of its patched candidate.
-    let prepared =
-        PreparedPinEngine::new(&[LoadedSource::new(&snapshot.kb_relative, &snapshot.kb_text)]);
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        return Err("amendment execution cancelled".to_owned());
+    }
+    let prepared = cancellation.map_or_else(
+        || PreparedPinEngine::new(&[LoadedSource::new(&snapshot.kb_relative, &snapshot.kb_text)]),
+        |cancellation| {
+            PreparedPinEngine::new_cancellable(
+                &[LoadedSource::new(&snapshot.kb_relative, &snapshot.kb_text)],
+                cancellation.flag(),
+            )
+        },
+    );
     let options = PinOptions {
         allow_shell: false,
         working_directory: Some(context.root()),
+        cancellation,
     };
     let mut pins = 0;
     for group in grouped.into_values() {
+        if cancellation.is_some_and(CancellationToken::is_cancelled) {
+            return Err("amendment execution cancelled".to_owned());
+        }
+        if let Some(cancellation) = cancellation {
+            prepared.set_cancel_flag(cancellation.flag());
+        }
         let started = Instant::now();
         let (deletions, additions) = line_patch(&snapshot.kb_text, &group.candidate);
         let deletion_refs = deletions.iter().map(String::as_str).collect::<Vec<_>>();
@@ -2442,6 +2500,7 @@ fn execute_cases(
             .collect::<Vec<_>>();
         let output =
             prepared.run_patched_files(&deletion_refs, &addition_refs, &pin_files, options);
+        ensure_execution_active(cancellation)?;
         if output.exit_code != 0 {
             return Err(format!(
                 "candidate group {} nibli-pin exited {}\n{}",
@@ -2482,11 +2541,15 @@ fn execute_cases(
     }
 
     let sabotage_started = Instant::now();
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        return Err("amendment execution cancelled".to_owned());
+    }
     let sabotage_text = ":expect-pins 1\n# Deliberately inverted: the ordinary label currently passes.\n\n? become(Amend_Mint, Law).\n# => FALSE\n";
     let sabotage_run = prepared.run_files(
         &[LoadedSource::new("inverted.pins.nibli", sabotage_text)],
         options,
     );
+    ensure_execution_active(cancellation)?;
     validate_sabotage_failure(
         sabotage_run.exit_code,
         &format!("{}{}", sabotage_run.stdout, sabotage_run.stderr),
@@ -2499,6 +2562,9 @@ fn execute_cases(
     let sabotage = 1;
 
     let seam_candidate = &validated.candidates["AS-08"];
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        return Err("amendment execution cancelled".to_owned());
+    }
     let seam_started = Instant::now();
     let (seam_deletions, seam_additions) = line_patch(&snapshot.kb_text, seam_candidate);
     let seam_deletion_refs = seam_deletions
@@ -2510,13 +2576,16 @@ fn execute_cases(
         .map(String::as_str)
         .collect::<Vec<_>>();
     let strata = prepared.dump_patched_strata(&seam_deletion_refs, &seam_addition_refs);
+    ensure_execution_active(cancellation)?;
     if strata.exit_code != 0 {
         return Err(format!(
             "AS-08 assertion-surface strata failed: {}{}",
             strata.stdout, strata.stderr
         ));
     }
+    ensure_execution_active(cancellation)?;
     let surface = assertion_surface::check(context, Some(&strata.stdout), Some(seam_candidate));
+    ensure_execution_active(cancellation)?;
     let surface_output = match surface {
         Ok(_) => {
             return Err("AS-08 assertion-surface seam exited 0, expected 1".into());
@@ -2703,13 +2772,23 @@ fn validate_elapsed(label: &str, elapsed: Duration, bound: Duration) -> AuditRes
 }
 
 fn negative_controls(snapshot: &Snapshot) -> AuditResult<usize> {
+    negative_controls_with_cancellation(snapshot, None)
+}
+
+fn negative_controls_with_cancellation(
+    snapshot: &Snapshot,
+    cancellation: Option<&CancellationToken>,
+) -> AuditResult<usize> {
+    ensure_execution_active(cancellation)?;
     let mut controls = 0;
     macro_rules! fails {
         ($label:expr, $result:expr) => {{
+            ensure_execution_active(cancellation)?;
             expect_failure($label, $result, None)?;
             controls += 1;
         }};
         ($label:expr, $result:expr, $contains:expr) => {{
+            ensure_execution_active(cancellation)?;
             expect_failure($label, $result, Some($contains))?;
             controls += 1;
         }};
@@ -2752,32 +2831,35 @@ fn negative_controls(snapshot: &Snapshot) -> AuditResult<usize> {
         "carriage-return bytes are forbidden"
     );
 
-    let hardlink_parent = snapshot
-        .output_path
-        .parent()
-        .ok_or_else(|| "generated output has no parent".to_owned())?;
-    let hardlink_temp = tempfile::Builder::new()
-        .prefix(".amendment-hardlink-control-")
-        .tempdir_in(hardlink_parent)
-        .map_err(|error| format!("cannot create hardlink control: {error}"))?;
-    let first = hardlink_temp.path().join("first.json");
-    let alias = hardlink_temp.path().join("alias.json");
-    std::fs::write(&first, b"{}\n")
-        .map_err(|error| format!("cannot write hardlink control: {error}"))?;
-    std::fs::hard_link(&first, &alias).map_err(|error| {
-        format!("hardlink negative control could not create its alias: {error}")
-    })?;
-    let (_, first_identity) = read_bound_file(&first, "hardlink control first")?;
-    let (_, alias_identity) = read_bound_file(&alias, "hardlink control alias")?;
-    fails!(
-        "hardlinked input identities collide",
-        require_distinct_identities(&[("first", first_identity), ("alias", alias_identity)])
-    );
-    fails!(
-        "hardlinked generated output rejected",
-        validate_output_target(&alias, &HashSet::new()),
-        "exactly one hard link"
-    );
+    let first_identity = {
+        let hardlink_parent = snapshot
+            .output_path
+            .parent()
+            .ok_or_else(|| "generated output has no parent".to_owned())?;
+        let hardlink_temp = tempfile::Builder::new()
+            .prefix(".amendment-hardlink-control-")
+            .tempdir_in(hardlink_parent)
+            .map_err(|error| format!("cannot create hardlink control: {error}"))?;
+        let first = hardlink_temp.path().join("first.json");
+        let alias = hardlink_temp.path().join("alias.json");
+        std::fs::write(&first, b"{}\n")
+            .map_err(|error| format!("cannot write hardlink control: {error}"))?;
+        std::fs::hard_link(&first, &alias).map_err(|error| {
+            format!("hardlink negative control could not create its alias: {error}")
+        })?;
+        let (_, first_identity) = read_bound_file(&first, "hardlink control first")?;
+        let (_, alias_identity) = read_bound_file(&alias, "hardlink control alias")?;
+        fails!(
+            "hardlinked input identities collide",
+            require_distinct_identities(&[("first", first_identity), ("alias", alias_identity)])
+        );
+        fails!(
+            "hardlinked generated output rejected",
+            validate_output_target(&alias, &HashSet::new()),
+            "exactly one hard link"
+        );
+        first_identity
+    };
     fails!(
         "generated output identity collides with input",
         validate_output_characteristics(true, 1, first_identity, &HashSet::from([first_identity])),
@@ -3413,6 +3495,21 @@ mod tests {
 
     fn context() -> Context {
         Context::discover().expect("discover repository")
+    }
+
+    #[test]
+    fn pre_cancelled_execution_stops_before_reading_inputs() {
+        let temporary = tempfile::tempdir().expect("temporary repository");
+        let context = Context::from_test_root(temporary.path().to_path_buf());
+        let cancellation = CancellationToken::new();
+        cancellation.cancel();
+
+        let error = check_execute_with_cancellation(&context, cancellation)
+            .expect_err("pre-cancelled amendment execution must stop");
+        assert_eq!(
+            error.to_string(),
+            "10-amendment-semantics: amendment execution cancelled"
+        );
     }
 
     #[test]

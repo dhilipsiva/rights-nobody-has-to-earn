@@ -35,6 +35,13 @@ impl<W: Write> Reporter<W> {
         self.write_line(format_args!("\n\x1b[1m{name}\x1b[0m"))
     }
 
+    /// Emit a canonical step that was already timed inside a concurrent
+    /// diagnostics phase. This writes exactly the same stdout bytes as
+    /// [`Self::step`] without replacing the active umbrella observation.
+    pub(crate) fn step_observed(&mut self, name: &str) -> Result<(), Error> {
+        self.write_line(format_args!("\n\x1b[1m{name}\x1b[0m"))
+    }
+
     pub(crate) fn pass(&mut self, message: impl AsRef<str>) -> Result<(), Error> {
         self.write_line(format_args!("  \x1b[32mok\x1b[0m   {}", message.as_ref()))
     }
@@ -136,5 +143,18 @@ mod tests {
             left.bytes,
             b"\n\x1b[1mone\x1b[0m\n  \x1b[32mok\x1b[0m   two\n"
         );
+    }
+
+    #[test]
+    fn observed_step_preserves_the_canonical_step_bytes() {
+        let mut canonical = Vec::new();
+        Reporter::new(&mut canonical).step("family").unwrap();
+
+        let mut observed = Vec::new();
+        Reporter::new(&mut observed)
+            .step_observed("family")
+            .unwrap();
+
+        assert_eq!(observed, canonical);
     }
 }

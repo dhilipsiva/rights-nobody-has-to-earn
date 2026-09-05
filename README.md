@@ -101,9 +101,26 @@ Heavyweight verifier entry points share one Git-common-directory kernel lock.
 Contention exits 75 with sanitised owner details unless `--wait-for-lock
 SECONDS` supplies an explicit bounded wait. Native ledger and closure checks
 and refreshes preserve the atomic immutable-input/final-reread contract.
-State-form execution keeps its reviewed 64 main and 17 counterfactual shards
-under a bounded four-worker scheduler with canonical output and fail-fast
-cancellation between shards.
+`RIGHTS_VERIFY_JOBS=1` through `4` selects the sole heavyweight execution-lane
+capacity; legacy per-family worker variables fail closed. Full execution first
+runs reader evidence in canonical position, then validates a typed dependency
+graph containing only the preflight-byte-captured live-pin, obligations, and
+state-form plans. Their complete repository input bytes include an isolated
+live-pin shell-precondition tree. Red-team, temporal, amendment, placement, and
+ordinary counterfactual execution remain serial afterward in canonical order. The graph
+buffers unchanged canonical output, stops new launches at failure, cancels
+higher canonical work, and joins or reaps all started work. This is not a total
+OS-thread limit: every active family has one joinable wrapper, and nested family
+workers consume the declared weighted lanes. Wrappers, heavyweight lane workers,
+memory-owning worker states, and managed child processes have separately watched
+bounds; one lane is the current per-file fail-fast semantic and failure-selection
+reference. At capacities three and four, live pins use all but one lane while
+captured obligations and state-form work advance in the remaining lane.
+Receipts bind the effective lane/allocation metadata, full-suite execution
+start and finish, and the digest of local expanded evidence containing elapsed
+time; per-family and per-job timings remain unbound local diagnostics. State-form
+keeps its reviewed 64 main and 17 counterfactual shards; its full-graph plan
+uses one lane while focused execution may use the configured capacity.
 
 The binary links the Nibli engine crates from the adjacent source checkout, and
 receipt emission binds that source revision and the exact `rights-verify` bytes.

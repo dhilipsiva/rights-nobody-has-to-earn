@@ -10,8 +10,14 @@
 
 use std::collections::BTreeMap;
 use std::fmt::Write as _;
+use std::io::Read;
 use std::path::Path;
-use std::process::Command;
+use std::process::{Command, Stdio};
+use std::sync::Arc;
+use std::sync::atomic::AtomicBool;
+use std::sync::atomic::Ordering;
+use std::thread;
+use std::time::Duration;
 use std::time::Instant;
 
 use nibli_engine::EngineError;
@@ -44,6 +50,7 @@ impl<'a> LoadedSource<'a> {
 pub(crate) struct PinOptions<'a> {
     pub(crate) allow_shell: bool,
     pub(crate) working_directory: Option<&'a Path>,
+    pub(crate) cancellation: Option<&'a crate::scheduler::CancellationToken>,
 }
 
 /// Captured CLI-compatible output and machine-readable aggregate counts.
@@ -87,6 +94,23 @@ impl PreparedPinEngine {
         Self {
             base: PreparedBase::new(knowledge_bases),
         }
+    }
+
+    /// Prepare an engine whose fixture load, snapshots, and queries all share
+    /// one cooperative cancellation flag.
+    pub(crate) fn new_cancellable(
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Arc<AtomicBool>,
+    ) -> Self {
+        Self {
+            base: PreparedBase::new_cancellable(knowledge_bases, cancellation),
+        }
+    }
+
+    /// Replace the cooperative flag before reusing this worker-local base for
+    /// another independent job. Every snapshot cloned for that job inherits it.
+    pub(crate) fn set_cancel_flag(&self, cancellation: Arc<AtomicBool>) {
+        self.base.engine.kb().set_cancel_flag(cancellation);
     }
 
     pub(crate) fn run_files(
@@ -448,6 +472,7 @@ fn load_fixtures(
     knowledge_bases: &[LoadedSource<'_>],
     harness: &mut Vec<String>,
     source_fact_ids: &mut BTreeMap<String, Vec<Vec<u64>>>,
+    cancellation: Option<&AtomicBool>,
 ) {
     // Reject pin-language material before compiling anything. The valid source
     // is loaded statement-by-statement: Nibli's grammar accepts a multi-root
@@ -456,6 +481,10 @@ fn load_fixtures(
     // once per distinct KB rather than once per file.
     for knowledge_base in knowledge_bases {
         for (index, raw) in knowledge_base.source.lines().enumerate() {
+            if cancellation.is_some_and(|flag| flag.load(Ordering::Relaxed)) {
+                harness.push("fixture loading cancelled".to_owned());
+                return;
+            }
             let line = raw.trim();
             if line.is_empty() || line.starts_with('#') {
                 continue;
@@ -474,7 +503,13 @@ fn load_fixtures(
         return;
     }
 
-    load_fixtures_linewise(engine, knowledge_bases, harness, source_fact_ids);
+    load_fixtures_linewise(
+        engine,
+        knowledge_bases,
+        harness,
+        source_fact_ids,
+        cancellation,
+    );
 }
 
 fn load_fixtures_linewise(
@@ -482,9 +517,14 @@ fn load_fixtures_linewise(
     knowledge_bases: &[LoadedSource<'_>],
     harness: &mut Vec<String>,
     source_fact_ids: &mut BTreeMap<String, Vec<Vec<u64>>>,
+    cancellation: Option<&AtomicBool>,
 ) {
     for knowledge_base in knowledge_bases {
         for (index, raw) in knowledge_base.source.lines().enumerate() {
+            if cancellation.is_some_and(|flag| flag.load(Ordering::Relaxed)) {
+                harness.push("fixture loading cancelled".to_owned());
+                return;
+            }
             let line = raw.trim();
             if line.is_empty() {
                 continue;
@@ -522,25 +562,89 @@ enum PreconditionOutcome {
     Broken(String),
 }
 
-fn run_precondition(command: &str, working_directory: Option<&Path>) -> PreconditionOutcome {
+fn collect_precondition_output(
+    reader: Option<thread::JoinHandle<std::io::Result<Vec<u8>>>>,
+) -> Vec<u8> {
+    match reader {
+        Some(reader) => reader.join().ok().and_then(Result::ok).unwrap_or_default(),
+        None => Vec::new(),
+    }
+}
+
+fn run_precondition(
+    command: &str,
+    working_directory: Option<&Path>,
+    cancellation: Option<&crate::scheduler::CancellationToken>,
+) -> PreconditionOutcome {
+    if cancellation.is_some_and(crate::scheduler::CancellationToken::is_cancelled) {
+        return PreconditionOutcome::Broken("cancelled before launch".to_owned());
+    }
     let mut child = Command::new("sh");
-    child.arg("-c").arg(command);
+    child
+        .arg("-c")
+        .arg(command)
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped());
+    #[cfg(unix)]
+    {
+        use std::os::unix::process::CommandExt as _;
+        child.process_group(0);
+    }
     if let Some(working_directory) = working_directory {
         child.current_dir(working_directory);
     }
-    match child.output() {
-        Err(error) => PreconditionOutcome::Broken(format!("could not run: {error}")),
-        Ok(output) if output.status.code() == Some(127) => PreconditionOutcome::Broken(
+    let mut child = match child.spawn() {
+        Ok(child) => child,
+        Err(error) => return PreconditionOutcome::Broken(format!("could not run: {error}")),
+    };
+    let stdout = child.stdout.take().map(|mut output| {
+        thread::spawn(move || {
+            let mut bytes = Vec::new();
+            output.read_to_end(&mut bytes).map(|_| bytes)
+        })
+    });
+    let stderr = child.stderr.take().map(|mut output| {
+        thread::spawn(move || {
+            let mut bytes = Vec::new();
+            output.read_to_end(&mut bytes).map(|_| bytes)
+        })
+    });
+    let waited = match cancellation {
+        Some(cancellation) => {
+            #[cfg(unix)]
+            let result = crate::scheduler::wait_for_child_group(
+                &mut child,
+                cancellation,
+                Duration::from_millis(10),
+            );
+            #[cfg(not(unix))]
+            let result = crate::scheduler::wait_for_child(
+                &mut child,
+                cancellation,
+                Duration::from_millis(10),
+            );
+            result
+        }
+        None => child.wait().map(crate::scheduler::ChildWait::Exited),
+    };
+    let stdout = collect_precondition_output(stdout);
+    let stderr = collect_precondition_output(stderr);
+    match waited {
+        Err(error) => PreconditionOutcome::Broken(format!("could not wait: {error}")),
+        Ok(waited) if waited.was_cancelled() => {
+            PreconditionOutcome::Broken("cancelled; child terminated and reaped".to_owned())
+        }
+        Ok(waited) if waited.status().code() == Some(127) => PreconditionOutcome::Broken(
             "exited 127 (command not found) — the check itself is broken".to_owned(),
         ),
-        Ok(output) if output.status.success() => PreconditionOutcome::Met,
-        Ok(output) => {
-            let code = output
-                .status
+        Ok(waited) if waited.status().success() => PreconditionOutcome::Met,
+        Ok(waited) => {
+            let code = waited
+                .status()
                 .code()
                 .map_or_else(|| "signal".to_owned(), |code| code.to_string());
-            let stdout = String::from_utf8_lossy(&output.stdout);
-            let stderr = String::from_utf8_lossy(&output.stderr);
+            let stdout = String::from_utf8_lossy(&stdout);
+            let stderr = String::from_utf8_lossy(&stderr);
             let tail = stdout
                 .lines()
                 .chain(stderr.lines())
@@ -565,9 +669,32 @@ struct PreparedBase {
 impl PreparedBase {
     fn new(knowledge_bases: &[LoadedSource<'_>]) -> Self {
         let engine = CoreSession::new();
+        Self::load(engine, knowledge_bases, None)
+    }
+
+    fn new_cancellable(
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Arc<AtomicBool>,
+    ) -> Self {
+        let engine = CoreSession::new();
+        engine.kb().set_cancel_flag(Arc::clone(&cancellation));
+        Self::load(engine, knowledge_bases, Some(&cancellation))
+    }
+
+    fn load(
+        engine: CoreSession,
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Option<&AtomicBool>,
+    ) -> Self {
         let mut harness = Vec::new();
         let mut source_fact_ids = BTreeMap::new();
-        load_fixtures(&engine, knowledge_bases, &mut harness, &mut source_fact_ids);
+        load_fixtures(
+            &engine,
+            knowledge_bases,
+            &mut harness,
+            &mut source_fact_ids,
+            cancellation,
+        );
         Self {
             engine,
             harness,
@@ -811,6 +938,13 @@ fn run_file_with_engine(
     let lines: Vec<&str> = source.lines().collect();
     let mut index = 0;
     while index < lines.len() {
+        if options
+            .cancellation
+            .is_some_and(crate::scheduler::CancellationToken::is_cancelled)
+        {
+            report.harness.push(format!("{name}: execution cancelled"));
+            break;
+        }
         let raw = lines[index];
         let line = raw.trim();
         index += 1;
@@ -903,7 +1037,7 @@ fn run_file_with_engine(
             }
             let marked = defect.take();
             report.pins += 1;
-            match run_precondition(&command, options.working_directory) {
+            match run_precondition(&command, options.working_directory, options.cancellation) {
                 PreconditionOutcome::Met => {
                     if marked.is_some() {
                         report.defects += 1;
@@ -968,6 +1102,13 @@ fn run_file_with_engine(
             report.pins += 1;
             let marked = defect.take();
             match engine.query_holds(query) {
+                Err(_)
+                    if options
+                        .cancellation
+                        .is_some_and(crate::scheduler::CancellationToken::is_cancelled) =>
+                {
+                    report.harness.push(format!("{name}: execution cancelled"));
+                }
                 Err(error) => report.harness.push(format!(
                     "{name}:{index}: query {query:?} failed to compile, so it has no verdict to \
                      compare with the pinned {pinned:?} — [{}] {error}",
@@ -1389,9 +1530,201 @@ mod tests {
             PinOptions {
                 allow_shell: true,
                 working_directory: Some(temporary.path()),
+                cancellation: None,
             },
         );
         assert_eq!(opened.exit_code, EXIT_OK, "{}", opened.stderr);
+    }
+
+    #[test]
+    fn pre_raised_cancellation_skips_fixture_and_pin_execution() {
+        let cancellation = crate::scheduler::CancellationToken::new();
+        assert!(cancellation.cancel());
+        let prepared = PreparedPinEngine::new_cancellable(
+            &[source(
+                "fixture.nibli",
+                "person(Ara).\nnot_a_corpus_word(Bet).\n",
+            )],
+            cancellation.flag(),
+        );
+
+        let output = prepared.run_files(
+            &[source(
+                "cancelled.pins.nibli",
+                "? person(Ara).\n# => FALSE\n:expect-pins 1\n",
+            )],
+            PinOptions {
+                cancellation: Some(&cancellation),
+                ..PinOptions::default()
+            },
+        );
+
+        assert_eq!(output.exit_code, EXIT_HARNESS);
+        assert_eq!(output.pins, 0);
+        assert!(output.findings.is_empty());
+        assert!(output.resolved.is_empty());
+        assert_eq!(output.harness, ["fixture loading cancelled"]);
+        assert!(!output.stderr.contains("fixture line failed to load"));
+    }
+
+    #[test]
+    fn fresh_cancel_flag_restores_reused_prepared_engine() {
+        let cancelled = crate::scheduler::CancellationToken::new();
+        let prepared = PreparedPinEngine::new_cancellable(
+            &[source("fixture.nibli", "person(Ara).\n")],
+            cancelled.flag(),
+        );
+        assert!(cancelled.cancel());
+
+        let skipped = prepared.run_files(
+            &[source(
+                "cancelled.pins.nibli",
+                "? person(Ara).\n# => TRUE\n:expect-pins 1\n",
+            )],
+            PinOptions {
+                cancellation: Some(&cancelled),
+                ..PinOptions::default()
+            },
+        );
+        assert_eq!(skipped.exit_code, EXIT_HARNESS);
+        assert_eq!(skipped.pins, 0);
+        assert!(skipped.findings.is_empty());
+        assert!(skipped.resolved.is_empty());
+        assert!(
+            skipped
+                .harness
+                .iter()
+                .any(|message| message == "cancelled.pins.nibli: execution cancelled")
+        );
+
+        let fresh = crate::scheduler::CancellationToken::new();
+        prepared.set_cancel_flag(fresh.flag());
+        let resumed = prepared.run_files(
+            &[source(
+                "resumed.pins.nibli",
+                "? person(Ara).\n# => TRUE\n:expect-pins 1\n",
+            )],
+            PinOptions {
+                cancellation: Some(&fresh),
+                ..PinOptions::default()
+            },
+        );
+        assert_eq!(resumed.exit_code, EXIT_OK, "{}", resumed.stderr);
+        assert_eq!(resumed.pins, 1);
+        assert!(resumed.harness.is_empty());
+        assert!(!fresh.is_cancelled());
+    }
+
+    #[cfg(unix)]
+    #[test]
+    fn cancelled_require_reaps_shell_and_terminates_its_process_group() {
+        fn process_exists(pid: i32) -> bool {
+            // SAFETY: signal zero performs no state change; the positive PID was
+            // written by the child started in this test.
+            if unsafe { libc::kill(pid, 0) } == 0 {
+                return true;
+            }
+            std::io::Error::last_os_error().raw_os_error() != Some(libc::ESRCH)
+        }
+
+        fn process_is_running(pid: i32) -> bool {
+            #[cfg(target_os = "linux")]
+            {
+                let Ok(stat) = std::fs::read_to_string(format!("/proc/{pid}/stat")) else {
+                    return false;
+                };
+                let Some((_, fields)) = stat.rsplit_once(") ") else {
+                    return process_exists(pid);
+                };
+                return !matches!(fields.as_bytes().first(), Some(b'Z' | b'X'));
+            }
+            #[cfg(not(target_os = "linux"))]
+            {
+                process_exists(pid)
+            }
+        }
+
+        fn wait_until(timeout: Duration, mut condition: impl FnMut() -> bool) -> bool {
+            let deadline = Instant::now() + timeout;
+            while Instant::now() < deadline {
+                if condition() {
+                    return true;
+                }
+                thread::sleep(Duration::from_millis(5));
+            }
+            condition()
+        }
+
+        let temporary = tempfile::tempdir().expect("temporary directory");
+        let working_directory = temporary.path().to_path_buf();
+        let ready = working_directory.join("ready");
+        let leader_pid = working_directory.join("leader.pid");
+        let grandchild_pid = working_directory.join("grandchild.pid");
+        let cancellation = crate::scheduler::CancellationToken::new();
+        let worker_cancellation = cancellation.clone();
+        let (sender, receiver) = std::sync::mpsc::sync_channel(1);
+        let worker = thread::spawn(move || {
+            let pin = ":require printf '%s\\n' \"$$\" > leader.pid; sleep 30 & \
+                       printf '%s\\n' \"$!\" > grandchild.pid; : > ready; wait\n\
+                       :expect-pins 1\n";
+            let output = run_pin_files(
+                &[],
+                &[source("require-cancel.pins.nibli", pin)],
+                PinOptions {
+                    allow_shell: true,
+                    working_directory: Some(&working_directory),
+                    cancellation: Some(&worker_cancellation),
+                },
+            );
+            let _ = sender.send(output);
+        });
+
+        assert!(
+            wait_until(Duration::from_secs(5), || ready.is_file()),
+            "shell precondition did not publish its ready marker"
+        );
+        let leader = std::fs::read_to_string(&leader_pid)
+            .expect("read shell pid")
+            .trim()
+            .parse::<i32>()
+            .expect("shell pid is numeric");
+        let grandchild = std::fs::read_to_string(&grandchild_pid)
+            .expect("read grandchild pid")
+            .trim()
+            .parse::<i32>()
+            .expect("grandchild pid is numeric");
+        assert!(leader > 0 && grandchild > 0 && leader != grandchild);
+        // SAFETY: both processes are known-live children of the fixed command.
+        assert_eq!(unsafe { libc::getpgid(leader) }, leader);
+        // SAFETY: the recorded grandchild is still blocked in `sleep` here.
+        assert_eq!(unsafe { libc::getpgid(grandchild) }, leader);
+
+        assert!(cancellation.cancel());
+        let output = receiver
+            .recv_timeout(Duration::from_secs(5))
+            .expect("cancelled shell precondition did not return");
+        worker.join().expect("pin worker joins");
+
+        assert_eq!(output.exit_code, EXIT_HARNESS);
+        assert_eq!(output.pins, 1);
+        assert!(output.findings.is_empty());
+        assert!(output.resolved.is_empty());
+        assert!(
+            output
+                .harness
+                .iter()
+                .any(|message| message.contains("cancelled; child terminated and reaped")),
+            "{}",
+            output.stderr
+        );
+        assert!(
+            wait_until(Duration::from_secs(5), || !process_exists(leader)),
+            "the direct shell child was not reaped"
+        );
+        assert!(
+            wait_until(Duration::from_secs(5), || !process_is_running(grandchild)),
+            "the shell grandchild survived process-group cancellation"
+        );
     }
 
     #[test]
@@ -1521,6 +1854,7 @@ mod tests {
             PinOptions {
                 allow_shell: true,
                 working_directory: Some(root),
+                cancellation: None,
             },
         );
         assert_eq!(

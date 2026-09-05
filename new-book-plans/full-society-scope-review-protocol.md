@@ -271,9 +271,14 @@ Git objects, never mutant-derived verdicts.
 
 State-form execution retains 64 main and 17 counterfactual shards. Shard-index
 schema v2 partitions the canonical query stream into contiguous blocks by
-exact rendered UTF-8 bytes including transitive fixture closure. A sliding
-four-worker pool preserves canonical output order, stops launching after
-failure, and terminates and reaps remaining workers.
+exact rendered UTF-8 bytes including transitive fixture closure. Focused
+state-form execution may use the configured one-to-four-lane pool. In the full
+suite, a prevalidated cross-family graph schedules only byte-captured live-pin,
+obligations, and state-form plans; state-form receives one lane while live pins
+receive all but one at capacities three and four. The graph preserves canonical
+output and failure selection, stops launching after failure, cooperatively
+cancels and joins active workers, and terminates and reaps their managed child
+processes. Other executable families remain serial in canonical order.
 
 `--commit-gate` validates only one named transition:
 

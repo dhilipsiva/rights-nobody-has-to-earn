@@ -93,6 +93,35 @@ verdicts, accepting nondeterministic output, or treating a partial check as a
 receipt is not. Progress and ETA reports separate active drafting/review time,
 authoritative gate time, and administrative audit/closure time.
 
+`RIGHTS_VERIFY_JOBS` is the sole heavyweight execution-lane capacity and
+accepts the equivalence-tested values 1 through 4. After serial structural
+checks pass on the frozen candidate, reader-evidence execution runs in its first
+canonical position. The native verifier then derives and validates a typed
+dependency graph containing only the byte-captured live-pin, obligations, and
+state-form execution plans. Their complete repository input bytes, including
+the live-pin shell-precondition tree, are owned before launch. Red-team,
+temporal, amendment, placement, and ordinary-counterfactual execution remain serial after
+the graph in their canonical positions. The graph schedules only a contiguous
+canonical prefix, buffers results for the unchanged presentation order, stops
+launching on the first observed failure, selects the lowest canonical active
+failure, cooperatively cancels higher active work, and joins or reaps everything
+it started. This capacity is not a total OS-thread limit: every active family
+has one joinable wrapper, and a nested family uses that wrapper to coordinate
+its assigned lane workers rather than adding another heavyweight lane. Active
+family wrappers, active heavyweight lane workers, memory-owning worker states,
+and managed child processes have separately watched bounds. One lane is the
+current per-file fail-fast semantic and failure-selection reference; passing
+canonical stdout and the selected failure are invariant across supported
+capacities, but the detailed live-pin failure text is not promised to reproduce
+the former all-files aggregate runner. At lane capacities 3 and 4, live pins
+receive all but one weighted lane while captured obligations and state-form
+work advance in the remaining lane. The legacy per-family worker variables are
+rejected. Receipt environment metadata binds the effective total and live-pin
+allocations plus the scheduler contract, full-suite execution start and
+finish, and
+the digest of local expanded evidence containing elapsed time; per-family and
+per-job timings remain unbound local diagnostics.
+
 New verifier coverage requires a named material defect or evidence gap and a
 watched failing control before it joins the authoritative gate. New performance
 machinery requires a measured bottleneck and equivalence controls. Assurance
@@ -2063,18 +2092,22 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   full, receipt, and gate runs also report measured phase timing, progress,
   ETA, a heartbeat for the active phase, and queued-lock state on stderr only,
   and write one canonical diagnostics JSON per mode under the Git common
-  directory's `rights-verification/diagnostics/`. Those values are one
-  machine's wall-clock measurements: never assurance evidence, never
+  directory's `rights-verification/diagnostics/`. Those diagnostic values are
+  one machine's wall-clock measurements: never assurance evidence, never
   receipt-bound, and never a verdict input. The stdout transcript a receipt
   binds is byte-identical with and without the instrumentation, which the
   run-diagnostics self-test holds as watched controls in both quick and full
-  paths. Native
-ledger and closure checks preserve the immutable-input and final-reread
+  paths. Native ledger and closure checks preserve the immutable-input and final-reread
 contract. `./verify.sh --refresh full-society-ledger` and `./verify.sh
 --refresh constitutional-closure` atomically regenerate their complete output
-sets in the same Rust process. State-form execution retains the reviewed 64-main and
-17-counterfactual byte-balanced shards through a bounded four-worker,
-canonical-output, fail-fast native scheduler. The suite
+sets in the same Rust process. Full execution retains canonical presentation
+while a prevalidated weighted dependency graph overlaps only the preflight-
+captured live-pin, obligations, and state-form plans under the one
+`RIGHTS_VERIFY_JOBS` execution-lane capacity. Other executable families remain
+serial in canonical order. State-form retains the reviewed 64-main and 17-
+counterfactual byte-balanced shards; its full-graph plan receives one lane while
+focused state-form execution may use the configured capacity.
+The suite
   exits non-zero on the first failure and names the claim that stopped being
   true; do not copy runtimes or suite counts here because governed sources move.
   Its quick path runs the reader-evidence structural check; the full path also

@@ -4,12 +4,16 @@
 
 use std::fs;
 use std::path::Path;
+use std::sync::Arc;
 
 use crate::checks::state_form;
 use crate::cli::Error;
 use crate::context::Context;
 use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine, RunOutput};
-use crate::scheduler::{ScheduleError, run_bounded};
+use crate::scheduler::{
+    CancellationToken, ScheduleError, ScheduleOptions, run_bounded_controlled,
+    run_bounded_with_state_controlled,
+};
 
 const KB_PATH: &str = "new-book-plans/constitution.nibli";
 const COUNTERFACTUAL_DIR: &str = "new-book-plans/counterfactual";
@@ -228,17 +232,82 @@ pub(crate) struct CounterfactualReport {
     pub(crate) timings: Vec<(String, u64)>,
 }
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 struct Artifact {
     path: String,
-    source: String,
+    source: Arc<str>,
 }
 
 #[derive(Debug)]
 pub(crate) struct LivePlan {
+    constitution: Arc<str>,
+    working_tree: CapturedWorkingTree,
     artifacts: Vec<Artifact>,
     chapter_file_count: usize,
     declared_chapter_pins: usize,
+}
+
+#[derive(Debug)]
+struct CapturedWorkingTree {
+    temporary: tempfile::TempDir,
+}
+
+impl CapturedWorkingTree {
+    fn new(constitution: &str) -> Result<Self, Error> {
+        let temporary = tempfile::Builder::new()
+            .prefix("rights-verify-live-pins-")
+            .tempdir()?;
+        let captured = Self { temporary };
+        let source_dir = captured.root().join("new-book-plans");
+        fs::create_dir_all(&source_dir)?;
+        let constitution_path = source_dir.join("constitution.nibli");
+        fs::write(&constitution_path, constitution.as_bytes())?;
+        make_snapshot_read_only(&constitution_path, false)?;
+        make_snapshot_read_only(&source_dir, true)?;
+        make_snapshot_read_only(captured.root(), true)?;
+        Ok(captured)
+    }
+
+    fn root(&self) -> &Path {
+        self.temporary.path()
+    }
+}
+
+impl Drop for CapturedWorkingTree {
+    fn drop(&mut self) {
+        let source_dir = self.temporary.path().join("new-book-plans");
+        let _ = make_snapshot_writable(self.temporary.path(), true);
+        let _ = make_snapshot_writable(&source_dir, true);
+        let _ = make_snapshot_writable(&source_dir.join("constitution.nibli"), false);
+    }
+}
+
+#[cfg(unix)]
+fn make_snapshot_read_only(path: &Path, directory: bool) -> std::io::Result<()> {
+    use std::os::unix::fs::PermissionsExt;
+    let mode = if directory { 0o500 } else { 0o400 };
+    fs::set_permissions(path, fs::Permissions::from_mode(mode))
+}
+
+#[cfg(not(unix))]
+fn make_snapshot_read_only(path: &Path, _directory: bool) -> std::io::Result<()> {
+    let mut permissions = fs::metadata(path)?.permissions();
+    permissions.set_readonly(true);
+    fs::set_permissions(path, permissions)
+}
+
+#[cfg(unix)]
+fn make_snapshot_writable(path: &Path, directory: bool) -> std::io::Result<()> {
+    use std::os::unix::fs::PermissionsExt;
+    let mode = if directory { 0o700 } else { 0o600 };
+    fs::set_permissions(path, fs::Permissions::from_mode(mode))
+}
+
+#[cfg(not(unix))]
+fn make_snapshot_writable(path: &Path, _directory: bool) -> std::io::Result<()> {
+    let mut permissions = fs::metadata(path)?.permissions();
+    permissions.set_readonly(false);
+    fs::set_permissions(path, permissions)
 }
 
 #[derive(Debug)]
@@ -262,7 +331,10 @@ pub(crate) fn prepare_live_engine(context: &Context) -> Result<(String, Prepared
     Ok((source, engine))
 }
 
-pub(crate) fn prepare_live_families(context: &Context) -> Result<LivePlan, Error> {
+pub(crate) fn prepare_live_families_with_constitution(
+    context: &Context,
+    constitution: Arc<str>,
+) -> Result<LivePlan, Error> {
     let mut artifacts = Vec::new();
     artifacts.push(load(context, "new-book-plans/rights-floor.pins.nibli")?);
     let mut chapters = fs::read_dir(context.path("book-1"))?
@@ -286,33 +358,76 @@ pub(crate) fn prepare_live_families(context: &Context) -> Result<LivePlan, Error
     for (_, path) in LIVE_FAMILIES {
         artifacts.push(load(context, path)?);
     }
+    let working_tree = CapturedWorkingTree::new(&constitution)?;
     Ok(LivePlan {
+        constitution,
+        working_tree,
         artifacts,
         chapter_file_count,
         declared_chapter_pins: declared,
     })
 }
 
-pub(crate) fn execute_live_families(
-    context: &Context,
-    engine: &PreparedPinEngine,
+pub(crate) fn execute_live_families_with_allocation(
     plan: &LivePlan,
+    workers: usize,
+    cancellation: CancellationToken,
 ) -> Result<LiveReport, Error> {
-    let artifacts = &plan.artifacts;
-    let loaded = artifacts
-        .iter()
-        .map(|artifact| LoadedSource::new(&artifact.path, &artifact.source))
-        .collect::<Vec<_>>();
-    let output = engine.run_files(
-        &loaded,
-        PinOptions {
-            allow_shell: true,
-            working_directory: Some(context.root()),
-        },
-    );
-    require_clean_output("live pin families", &output)?;
+    execute_live_families_inner(plan, workers, ScheduleOptions::cancelled_by(cancellation))
+}
 
-    let chapter_pins = output.files[..plan.chapter_file_count]
+fn execute_live_families_inner(
+    plan: &LivePlan,
+    workers: usize,
+    options: ScheduleOptions,
+) -> Result<LiveReport, Error> {
+    let root = plan.working_tree.root().to_path_buf();
+    let constitution = Arc::clone(&plan.constitution);
+    let outputs = run_bounded_with_state_controlled(
+        plan.artifacts.clone(),
+        workers,
+        options,
+        |_| None::<PreparedPinEngine>,
+        move |_, engine, artifact, cancellation| {
+            let prepared = engine.get_or_insert_with(|| {
+                PreparedPinEngine::new_cancellable(
+                    &[LoadedSource::new(KB_PATH, &constitution)],
+                    cancellation.flag(),
+                )
+            });
+            prepared.set_cancel_flag(cancellation.flag());
+            let output = prepared.run_files(
+                &[LoadedSource::new(&artifact.path, &artifact.source)],
+                PinOptions {
+                    allow_shell: true,
+                    working_directory: Some(&root),
+                    cancellation: Some(&cancellation),
+                },
+            );
+            if cancellation.is_cancelled() {
+                return Err(Error::new("live pin execution cancelled"));
+            }
+            require_clean_output("live pin families", &output)?;
+            if output.files.len() != 1 {
+                return Err(Error::new(format!(
+                    "live pin family {} returned {} file reports, expected one",
+                    artifact.path,
+                    output.files.len()
+                )));
+            }
+            Ok(output
+                .files
+                .into_iter()
+                .next()
+                .expect("one file was checked"))
+        },
+    )
+    .map_err(|error| match error {
+        ScheduleError::JobFailed { source, .. } => source,
+        other => Error::new(format!("live pin scheduler: {other}")),
+    })?;
+
+    let chapter_pins = outputs[..plan.chapter_file_count]
         .iter()
         .map(|file| file.pins)
         .sum::<usize>();
@@ -324,11 +439,10 @@ pub(crate) fn execute_live_families(
     }
     let family_results = LIVE_FAMILIES
         .iter()
-        .zip(&output.files[plan.chapter_file_count..])
+        .zip(&outputs[plan.chapter_file_count..])
         .map(|((label, _), file)| ((*label).to_owned(), file.pins))
         .collect();
-    let file_timings = output
-        .files
+    let file_timings = outputs
         .iter()
         .map(|file| (file.display_name.clone(), file.elapsed_ms))
         .collect();
@@ -337,14 +451,6 @@ pub(crate) fn execute_live_families(
         family_results,
         file_timings,
     })
-}
-
-pub(crate) fn run_live_families(
-    context: &Context,
-    engine: &PreparedPinEngine,
-) -> Result<LiveReport, Error> {
-    let plan = prepare_live_families(context)?;
-    execute_live_families(context, engine, &plan)
 }
 
 pub(crate) fn run_only(context: &Context, relative: &Path) -> Result<RunOutput, Error> {
@@ -377,6 +483,7 @@ pub(crate) fn run_only(context: &Context, relative: &Path) -> Result<RunOutput, 
         PinOptions {
             allow_shell: true,
             working_directory: Some(context.root()),
+            cancellation: None,
         },
     ))
 }
@@ -432,46 +539,61 @@ pub(crate) fn prepare_counterfactuals(context: &Context) -> Result<Counterfactua
 }
 
 pub(crate) fn execute_counterfactuals(
-    context: &Context,
+    _context: &Context,
     plan: CounterfactualPlan,
 ) -> Result<CounterfactualReport, Error> {
-    let workers = std::env::var("RIGHTS_VERIFY_JOBS")
-        .ok()
-        .map(|value| {
-            value
-                .parse::<usize>()
-                .map_err(|_| Error::usage("RIGHTS_VERIFY_JOBS must be a positive integer"))
-        })
-        .transpose()?
-        .unwrap_or(4);
-    if workers == 0 {
-        return Err(Error::usage(
-            "RIGHTS_VERIFY_JOBS must be a positive integer",
-        ));
-    }
-    let root = context.root().to_path_buf();
-    let outcomes = run_bounded(plan.tasks, workers, move |_, task, cancellation| {
-        if cancellation.is_cancelled() {
-            return Err(Error::new("counterfactual execution cancelled"));
-        }
-        let started = std::time::Instant::now();
-        let engine = PreparedPinEngine::new(&[LoadedSource::new(&task.kb_path, &task.kb)]);
-        let loaded = task
-            .pins
-            .iter()
-            .map(|pin| LoadedSource::new(&pin.path, &pin.source))
-            .collect::<Vec<_>>();
-        let output = engine.run_files(
-            &loaded,
-            PinOptions {
-                allow_shell: false,
-                working_directory: Some(&root),
-            },
-        );
-        require_clean_output(&task.name, &output)?;
-        let elapsed_ms = u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX);
-        Ok((task.name, elapsed_ms))
-    })
+    let workers = crate::scheduler::configured_workers()?;
+    execute_counterfactuals_inner(plan, workers, ScheduleOptions::default())
+}
+
+pub(crate) fn execute_counterfactuals_with_allocation(
+    _context: &Context,
+    plan: CounterfactualPlan,
+    workers: usize,
+    cancellation: CancellationToken,
+) -> Result<CounterfactualReport, Error> {
+    execute_counterfactuals_inner(plan, workers, ScheduleOptions::cancelled_by(cancellation))
+}
+
+fn execute_counterfactuals_inner(
+    plan: CounterfactualPlan,
+    workers: usize,
+    options: ScheduleOptions,
+) -> Result<CounterfactualReport, Error> {
+    let outcomes = run_bounded_controlled(
+        plan.tasks,
+        workers,
+        options,
+        move |_, task, cancellation| {
+            if cancellation.is_cancelled() {
+                return Err(Error::new("counterfactual execution cancelled"));
+            }
+            let started = std::time::Instant::now();
+            let engine = PreparedPinEngine::new_cancellable(
+                &[LoadedSource::new(&task.kb_path, &task.kb)],
+                cancellation.flag(),
+            );
+            let loaded = task
+                .pins
+                .iter()
+                .map(|pin| LoadedSource::new(&pin.path, &pin.source))
+                .collect::<Vec<_>>();
+            let output = engine.run_files(
+                &loaded,
+                PinOptions {
+                    allow_shell: false,
+                    working_directory: None,
+                    cancellation: Some(&cancellation),
+                },
+            );
+            if cancellation.is_cancelled() {
+                return Err(Error::new("counterfactual execution cancelled"));
+            }
+            require_clean_output(&task.name, &output)?;
+            let elapsed_ms = u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX);
+            Ok((task.name, elapsed_ms))
+        },
+    )
     .map_err(|error| match error {
         ScheduleError::JobFailed { source, .. } => source,
         other => Error::new(format!("counterfactual scheduler: {other}")),
@@ -502,7 +624,7 @@ fn load_absolute(context: &Context, path: &Path) -> Result<Artifact, Error> {
         .into_owned();
     Ok(Artifact {
         path: relative,
-        source: fs::read_to_string(path)?,
+        source: Arc::from(fs::read_to_string(path)?),
     })
 }
 
@@ -563,8 +685,66 @@ fn diff_shape(before: &str, after: &str) -> (usize, usize) {
 }
 
 #[cfg(test)]
+pub(crate) fn synthetic_live_plan_for_suite() -> LivePlan {
+    let constitution = Arc::<str>::from("person(Ara).\n");
+    let working_tree =
+        CapturedWorkingTree::new(&constitution).expect("captured synthetic working tree");
+    let source = Arc::<str>::from("? person(Ara).\n# => TRUE\n:expect-pins 1\n");
+    let artifacts = (0..=LIVE_FAMILIES.len())
+        .map(|index| Artifact {
+            path: format!("synthetic-{index}.pins.nibli"),
+            source: Arc::clone(&source),
+        })
+        .collect();
+    LivePlan {
+        constitution,
+        working_tree,
+        artifacts,
+        chapter_file_count: 1,
+        declared_chapter_pins: 1,
+    }
+}
+
+#[cfg(test)]
 mod tests {
     use super::*;
+
+    fn synthetic_live_plan(failing_index: Option<usize>) -> LivePlan {
+        let passing = Arc::<str>::from("? person(Ara).\n# => TRUE\n:expect-pins 1\n");
+        let failing = Arc::<str>::from("? person(Ara).\n# => FALSE\n:expect-pins 1\n");
+        let constitution = Arc::<str>::from("person(Ara).\n");
+        let working_tree =
+            CapturedWorkingTree::new(&constitution).expect("captured synthetic working tree");
+        let artifacts = (0..=LIVE_FAMILIES.len())
+            .map(|index| Artifact {
+                path: format!("synthetic-{index}.pins.nibli"),
+                source: if failing_index == Some(index) {
+                    Arc::clone(&failing)
+                } else {
+                    Arc::clone(&passing)
+                },
+            })
+            .collect();
+        LivePlan {
+            constitution,
+            working_tree,
+            artifacts,
+            chapter_file_count: 1,
+            declared_chapter_pins: 1,
+        }
+    }
+
+    fn semantic_live_report(report: LiveReport) -> (usize, Vec<(String, usize)>, Vec<String>) {
+        (
+            report.chapter_pins,
+            report.family_results,
+            report
+                .file_timings
+                .into_iter()
+                .map(|(name, _)| name)
+                .collect(),
+        )
+    }
 
     #[test]
     fn diff_shape_counts_deletions_additions_and_changes() {
@@ -594,6 +774,25 @@ mod tests {
     }
 
     #[test]
+    fn captured_counterfactual_executes_without_a_working_directory() {
+        let plan = CounterfactualPlan {
+            tasks: vec![CounterfactualTask {
+                name: "captured-counterfactual".to_owned(),
+                kb_path: "captured-counterfactual.nibli".to_owned(),
+                kb: "person(Ara).\n".to_owned(),
+                pins: vec![Artifact {
+                    path: "captured-counterfactual.pins.nibli".to_owned(),
+                    source: Arc::from("? person(Ara).\n# => TRUE\n:expect-pins 1\n"),
+                }],
+            }],
+            delegated: Vec::new(),
+        };
+        let report = execute_counterfactuals_inner(plan, 1, ScheduleOptions::default())
+            .expect("captured counterfactual plan");
+        assert_eq!(report.executed, ["captured-counterfactual"]);
+    }
+
+    #[test]
     fn live_inventory_has_one_floor_and_all_numbered_chapters() {
         let context = Context::discover().expect("repository");
         let floor = load(&context, "new-book-plans/rights-floor.pins.nibli").unwrap();
@@ -609,5 +808,79 @@ mod tests {
             })
             .count();
         assert_eq!(chapters, 14);
+    }
+
+    #[test]
+    fn live_family_semantics_match_for_every_supported_worker_count() {
+        let baseline = semantic_live_report(
+            execute_live_families_with_allocation(
+                &synthetic_live_plan(None),
+                1,
+                CancellationToken::new(),
+            )
+            .expect("single-worker live plan"),
+        );
+        for workers in 2..=crate::scheduler::MAX_WORKERS {
+            let parallel = semantic_live_report(
+                execute_live_families_with_allocation(
+                    &synthetic_live_plan(None),
+                    workers,
+                    CancellationToken::new(),
+                )
+                .expect("parallel live plan"),
+            );
+            assert_eq!(parallel, baseline, "worker count {workers}");
+        }
+    }
+
+    #[test]
+    fn live_require_uses_the_captured_constitution_tree() {
+        let mut plan = synthetic_live_plan(None);
+        plan.artifacts[0].source = Arc::from(
+            ":require grep -Fx 'person(Ara).' new-book-plans/constitution.nibli\n\
+             ? person(Ara).\n\
+             # => TRUE\n\
+             :expect-pins 2\n",
+        );
+        plan.declared_chapter_pins = 2;
+
+        let report = execute_live_families_with_allocation(&plan, 1, CancellationToken::new())
+            .expect("captured :require precondition");
+        assert_eq!(report.chapter_pins, 2);
+    }
+
+    #[test]
+    fn live_family_failure_and_cancellation_match_every_worker_count() {
+        let mut failures = Vec::new();
+        let mut cancellations = Vec::new();
+        for workers in 1..=crate::scheduler::MAX_WORKERS {
+            failures.push(
+                execute_live_families_with_allocation(
+                    &synthetic_live_plan(Some(2)),
+                    workers,
+                    CancellationToken::new(),
+                )
+                .expect_err("watched live finding must fail")
+                .to_string(),
+            );
+            let cancellation = CancellationToken::new();
+            cancellation.cancel();
+            cancellations.push(
+                execute_live_families_with_allocation(
+                    &synthetic_live_plan(None),
+                    workers,
+                    cancellation,
+                )
+                .expect_err("pre-raised cancellation must stop live work")
+                .to_string(),
+            );
+        }
+        assert!(failures.iter().all(|failure| failure == &failures[0]));
+        assert!(failures[0].contains("synthetic-2.pins.nibli"));
+        assert!(
+            cancellations
+                .iter()
+                .all(|cancellation| cancellation == &cancellations[0])
+        );
     }
 }

@@ -18,6 +18,7 @@ use crate::cli::Error;
 use crate::context::Context;
 use crate::digest::{canonical_json, sha256};
 use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine};
+use crate::scheduler::CancellationToken;
 
 pub(crate) const STEP_NAME: &str = "placement exhaustiveness";
 
@@ -58,6 +59,14 @@ const DUPLICATE_APPEND: &str = "\n# Placement-exhaustiveness duplicate-destinati
 const PAINTED_DELIVERY_APPEND: &str = "\n# Placement-exhaustiveness painted-delivery mutation (generated, not enacted).\nall $x: person($x) -> dwell($x).\n";
 
 type AuditResult<T> = Result<T, String>;
+
+fn ensure_execution_active(cancellation: Option<&CancellationToken>) -> AuditResult<()> {
+    if cancellation.is_some_and(CancellationToken::is_cancelled) {
+        Err("placement execution cancelled".to_owned())
+    } else {
+        Ok(())
+    }
+}
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]
@@ -299,11 +308,25 @@ struct FragmentFingerprint {
 }
 
 pub(crate) fn check(context: &Context) -> Result<Report, Error> {
-    check_inner(context, false)
+    check_inner(context, None)
 }
 
 pub(crate) fn check_execute(context: &Context) -> Result<Report, Error> {
-    check_inner(context, true)
+    check_inner(
+        context,
+        Some((
+            crate::scheduler::configured_workers()?,
+            CancellationToken::new(),
+        )),
+    )
+}
+
+pub(crate) fn check_execute_with_allocation(
+    context: &Context,
+    workers: usize,
+    cancellation: CancellationToken,
+) -> Result<Report, Error> {
+    check_inner(context, Some((workers, cancellation)))
 }
 
 pub(crate) fn generate(context: &Context) -> Result<GenerationReport, Error> {
@@ -323,21 +346,35 @@ pub(crate) fn generate(context: &Context) -> Result<GenerationReport, Error> {
     })
 }
 
-fn check_inner(context: &Context, execute: bool) -> Result<Report, Error> {
-    let snapshot = load_snapshot(context, true).map_err(placement_error)?;
-    let inventory = validate_source(context, &snapshot).map_err(placement_error)?;
+fn check_inner(
+    context: &Context,
+    allocation: Option<(usize, CancellationToken)>,
+) -> Result<Report, Error> {
+    let cancellation = allocation.as_ref().map(|(_, token)| token.clone());
+    ensure_execution_active(cancellation.as_ref()).map_err(placement_error)?;
+    let snapshot = load_snapshot_with_cancellation(context, true, cancellation.as_ref())
+        .map_err(placement_error)?;
+    ensure_execution_active(cancellation.as_ref()).map_err(placement_error)?;
+    let inventory = validate_source_with_cancellation(context, &snapshot, cancellation.as_ref())
+        .map_err(placement_error)?;
+    ensure_execution_active(cancellation.as_ref()).map_err(placement_error)?;
     let generated = render(&snapshot, &inventory);
+    ensure_execution_active(cancellation.as_ref()).map_err(placement_error)?;
     if snapshot.current_output.as_deref() != Some(generated.as_bytes()) {
         return Err(placement_error(format!(
             "{} is STALE — rerun without --check",
             snapshot.output_relative
         )));
     }
-    let structural_controls = negative_controls(context, &snapshot).map_err(placement_error)?;
-    let execution = execute
-        .then(|| execute_audit(&snapshot, &inventory))
+    let structural_controls =
+        negative_controls_with_cancellation(context, &snapshot, cancellation.as_ref())
+            .map_err(placement_error)?;
+    ensure_execution_active(cancellation.as_ref()).map_err(placement_error)?;
+    let execution = allocation
+        .map(|(workers, cancellation)| execute_audit(&snapshot, &inventory, workers, &cancellation))
         .transpose()
         .map_err(placement_error)?;
+    ensure_execution_active(cancellation.as_ref()).map_err(placement_error)?;
     Ok(Report {
         output: snapshot.output_relative,
         structural_controls,
@@ -398,6 +435,15 @@ fn placement_error(message: impl Into<String>) -> Error {
 }
 
 fn load_snapshot(context: &Context, read_output: bool) -> AuditResult<Snapshot> {
+    load_snapshot_with_cancellation(context, read_output, None)
+}
+
+fn load_snapshot_with_cancellation(
+    context: &Context,
+    read_output: bool,
+    cancellation: Option<&CancellationToken>,
+) -> AuditResult<Snapshot> {
+    ensure_execution_active(cancellation)?;
     let source_path = context.root().join(DEFAULT_SOURCE);
     let kb_path = context.root().join(DEFAULT_KB);
     let output_path = context.root().join(DEFAULT_OUTPUT);
@@ -405,7 +451,9 @@ fn load_snapshot(context: &Context, read_output: bool) -> AuditResult<Snapshot> 
     validate_repo_path(context.root(), &kb_path)?;
     validate_repo_path(context.root(), &output_path)?;
     let (source_bytes, source_identity) = read_bound_file(&source_path, "placement audit source")?;
+    ensure_execution_active(cancellation)?;
     let (kb_bytes, kb_identity) = read_bound_file(&kb_path, "constitution")?;
+    ensure_execution_active(cancellation)?;
     let input_identities = require_distinct_identities(&[
         ("placement audit source", source_identity),
         ("constitution", kb_identity),
@@ -421,10 +469,12 @@ fn load_snapshot(context: &Context, read_output: bool) -> AuditResult<Snapshot> 
     let reviewed = serde_json::from_slice(&source_bytes)
         .map_err(|error| format!("invalid placement audit source: {error}"))?;
     let current_output = if read_output {
+        ensure_execution_active(cancellation)?;
         Some(read_bound_file(&output_path, "generated placement report")?.0)
     } else {
         None
     };
+    ensure_execution_active(cancellation)?;
     Ok(Snapshot {
         reviewed,
         source_relative: DEFAULT_SOURCE.into(),
@@ -610,6 +660,15 @@ fn validate_repo_path(root: &Path, path: &Path) -> AuditResult<()> {
 }
 
 fn validate_source(context: &Context, snapshot: &Snapshot) -> AuditResult<SourceInventory> {
+    validate_source_with_cancellation(context, snapshot, None)
+}
+
+fn validate_source_with_cancellation(
+    context: &Context,
+    snapshot: &Snapshot,
+    cancellation: Option<&CancellationToken>,
+) -> AuditResult<SourceInventory> {
+    ensure_execution_active(cancellation)?;
     let source = &snapshot.reviewed;
     nonempty(&source.spdx, "spdx")?;
     if source.spdx != "CC-BY-4.0" {
@@ -660,12 +719,19 @@ fn validate_source(context: &Context, snapshot: &Snapshot) -> AuditResult<Source
         "destination_constants_sha256",
         Some(&inventory.destinations_sha256),
     )?;
+    ensure_execution_active(cancellation)?;
     validate_contracts(source)?;
+    ensure_execution_active(cancellation)?;
     validate_limits(source)?;
+    ensure_execution_active(cancellation)?;
     validate_matrix(source, &inventory)?;
+    ensure_execution_active(cancellation)?;
     validate_mutations(source, &snapshot.kb_text, &inventory)?;
-    validate_narrowness(context, source)?;
+    ensure_execution_active(cancellation)?;
+    validate_narrowness(context, source, cancellation)?;
+    ensure_execution_active(cancellation)?;
     validate_acceptance(source)?;
+    ensure_execution_active(cancellation)?;
     Ok(inventory)
 }
 
@@ -974,12 +1040,18 @@ fn validate_mutations(
     Ok(())
 }
 
-fn validate_narrowness(context: &Context, source: &ReviewedSource) -> AuditResult<()> {
+fn validate_narrowness(
+    context: &Context,
+    source: &ReviewedSource,
+    cancellation: Option<&CancellationToken>,
+) -> AuditResult<()> {
+    ensure_execution_active(cancellation)?;
     if source.narrowness_impacts.is_empty() {
         return Err("narrowness_impacts must not be empty".into());
     }
     let mut references = HashSet::new();
     for (index, entry) in source.narrowness_impacts.iter().enumerate() {
+        ensure_execution_active(cancellation)?;
         let path = format!("narrowness_impacts[{index}]");
         validate_reference(
             context,
@@ -999,6 +1071,7 @@ fn validate_narrowness(context: &Context, source: &ReviewedSource) -> AuditResul
         nonempty(&entry.reason, &format!("{path}.reason"))?;
         nonempty(&entry.future_trigger, &format!("{path}.future_trigger"))?;
     }
+    ensure_execution_active(cancellation)?;
     Ok(())
 }
 
@@ -2332,25 +2405,40 @@ fn run_with_bound<T>(label: &str, function: impl FnOnce() -> AuditResult<T>) -> 
     Ok(result)
 }
 
-fn execute_audit(snapshot: &Snapshot, inventory: &SourceInventory) -> AuditResult<ExecutionReport> {
-    let workers = std::thread::available_parallelism()
-        .map_or(1, usize::from)
-        .min(4)
-        .min(snapshot.reviewed.matrix.len())
-        .max(1);
-    let reports = std::thread::scope(|scope| {
-        let handles = (0..workers)
-            .map(|worker| scope.spawn(move || execute_worker(snapshot, inventory, worker, workers)))
-            .collect::<Vec<_>>();
-        handles
-            .into_iter()
-            .map(|handle| {
-                handle
-                    .join()
-                    .map_err(|_| "placement execution worker panicked".to_owned())?
-            })
-            .collect::<AuditResult<Vec<_>>>()
-    })?;
+fn execute_audit(
+    snapshot: &Snapshot,
+    inventory: &SourceInventory,
+    workers: usize,
+    cancellation: &CancellationToken,
+) -> AuditResult<ExecutionReport> {
+    ensure_execution_active(Some(cancellation))?;
+    if workers == 0 {
+        return Err("RIGHTS_VERIFY_JOBS must be an integer from 1 through 4".to_owned());
+    }
+    let workers = workers.min(snapshot.reviewed.matrix.len()).max(1);
+    let reports = if workers == 1 {
+        vec![execute_worker(snapshot, inventory, 0, 1, cancellation)?]
+    } else {
+        std::thread::scope(|scope| {
+            let handles = (0..workers)
+                .map(|worker| {
+                    let cancellation = cancellation.clone();
+                    scope.spawn(move || {
+                        execute_worker(snapshot, inventory, worker, workers, &cancellation)
+                    })
+                })
+                .collect::<Vec<_>>();
+            handles
+                .into_iter()
+                .map(|handle| {
+                    handle
+                        .join()
+                        .map_err(|_| "placement execution worker panicked".to_owned())?
+                })
+                .collect::<AuditResult<Vec<_>>>()
+        })?
+    };
+    ensure_execution_active(Some(cancellation))?;
     Ok(reports
         .into_iter()
         .fold(ExecutionReport::default(), |mut total, report| {
@@ -2370,15 +2458,22 @@ fn execute_worker(
     inventory: &SourceInventory,
     worker: usize,
     workers: usize,
+    cancellation: &CancellationToken,
 ) -> AuditResult<ExecutionReport> {
-    let prepared =
-        PreparedPinEngine::new(&[LoadedSource::new(&snapshot.kb_relative, &snapshot.kb_text)]);
+    if cancellation.is_cancelled() {
+        return Err("placement execution cancelled".to_owned());
+    }
+    let prepared = PreparedPinEngine::new_cancellable(
+        &[LoadedSource::new(&snapshot.kb_relative, &snapshot.kb_text)],
+        cancellation.flag(),
+    );
     let mut base_pins = 0usize;
     let mut floor_pins = 0usize;
     let mut base_runs = 0usize;
     if snapshot.kb_digest == COMBINED_MATRIX_CERTIFIED_KB_SHA256 {
         if worker == 0 {
-            (base_pins, floor_pins) = run_combined_matrix(&prepared, snapshot, inventory)?;
+            (base_pins, floor_pins) =
+                run_combined_matrix(&prepared, snapshot, inventory, cancellation)?;
             base_runs = snapshot.reviewed.matrix.len();
         }
     } else {
@@ -2390,6 +2485,9 @@ fn execute_worker(
             .filter(|(index, _)| index % workers == worker)
             .map(|(_, case)| case)
         {
+            if cancellation.is_cancelled() {
+                return Err("placement execution cancelled".to_owned());
+            }
             let facts = matrix_fact_lines(&[case]);
             let additions = facts.iter().map(String::as_str).collect::<Vec<_>>();
             let matrix_text = matrix_pin_lines(&[case], inventory).join("\n");
@@ -2404,9 +2502,13 @@ fn execute_worker(
                         LoadedSource::new("matrix.pins.nibli", &matrix_text),
                         LoadedSource::new("entitlement.pins.nibli", &floor_text),
                     ],
-                    PinOptions::default(),
+                    PinOptions {
+                        cancellation: Some(cancellation),
+                        ..PinOptions::default()
+                    },
                 ))
             })?;
+            ensure_execution_active(Some(cancellation))?;
             if result.exit_code != 0 || result.files.len() != 2 {
                 return Err(format!(
                     "base matrix {} failed\n{}{}",
@@ -2439,6 +2541,9 @@ fn execute_worker(
         .map(|case| (case.id.as_str(), case))
         .collect::<HashMap<_, _>>();
     if worker == 0 {
+        if cancellation.is_cancelled() {
+            return Err("placement execution cancelled".to_owned());
+        }
         let standing = cases["confined-notsevere-nofamily-home"];
         let subject = case_subject(&standing.subject_kind, &standing.axes);
         let omitted = format!("judge(Court, {subject}).");
@@ -2462,9 +2567,13 @@ fn execute_worker(
                 &[],
                 &standing_additions,
                 &[LoadedSource::new("entitlement.pins.nibli", &standing_pin)],
-                PinOptions::default(),
+                PinOptions {
+                    cancellation: Some(cancellation),
+                    ..PinOptions::default()
+                },
             ))
         })?;
+        ensure_execution_active(Some(cancellation))?;
         require_findings(&standing_result, 1, "composed-standing-removal sabotage")?;
     }
 
@@ -2478,6 +2587,9 @@ fn execute_worker(
         .filter(|(index, _)| index % workers == worker)
         .map(|(_, entry)| entry)
     {
+        if cancellation.is_cancelled() {
+            return Err("placement execution cancelled".to_owned());
+        }
         let selected = entry
             .err_absence_case_refs
             .iter()
@@ -2513,9 +2625,13 @@ fn execute_worker(
                     LoadedSource::new("observations.pins.nibli", &observation_text),
                     LoadedSource::new("baseline-acceptance.pins.nibli", &baseline_text),
                 ],
-                PinOptions::default(),
+                PinOptions {
+                    cancellation: Some(cancellation),
+                    ..PinOptions::default()
+                },
             ))
         })?;
+        ensure_execution_active(Some(cancellation))?;
         if result.files.len() != 2
             || result.files[0].pins != observation_count
             || result.files[0].findings != 0
@@ -2532,6 +2648,7 @@ fn execute_worker(
         candidate_pins += observation_count;
         candidate_runs += 1;
     }
+    ensure_execution_active(Some(cancellation))?;
     Ok(ExecutionReport {
         base_runs,
         base_pins,
@@ -2547,7 +2664,9 @@ fn run_combined_matrix(
     prepared: &PreparedPinEngine,
     snapshot: &Snapshot,
     inventory: &SourceInventory,
+    cancellation: &CancellationToken,
 ) -> AuditResult<(usize, usize)> {
+    ensure_execution_active(Some(cancellation))?;
     let cases = snapshot.reviewed.matrix.iter().collect::<Vec<_>>();
     let facts = matrix_fact_lines(&cases);
     let additions = facts.iter().map(String::as_str).collect::<Vec<_>>();
@@ -2569,8 +2688,17 @@ fn run_combined_matrix(
             .map(|(name, body)| LoadedSource::new(name, body)),
     );
     let result = run_with_bound("certified combined placement matrix", || {
-        Ok(prepared.run_patched_files(&[], &additions, &pin_files, PinOptions::default()))
+        Ok(prepared.run_patched_files(
+            &[],
+            &additions,
+            &pin_files,
+            PinOptions {
+                cancellation: Some(cancellation),
+                ..PinOptions::default()
+            },
+        ))
     })?;
+    ensure_execution_active(Some(cancellation))?;
     let expected_matrix = cases
         .iter()
         .map(|case| case_queries(case, inventory).len())
@@ -2611,14 +2739,24 @@ fn require_findings(
 }
 
 fn negative_controls(context: &Context, snapshot: &Snapshot) -> AuditResult<usize> {
+    negative_controls_with_cancellation(context, snapshot, None)
+}
+
+fn negative_controls_with_cancellation(
+    context: &Context,
+    snapshot: &Snapshot,
+    cancellation: Option<&CancellationToken>,
+) -> AuditResult<usize> {
+    ensure_execution_active(cancellation)?;
     let validate = |reviewed: ReviewedSource| -> AuditResult<()> {
         let mut changed = snapshot.clone();
         changed.reviewed = reviewed;
-        validate_source(context, &changed).map(|_| ())
+        validate_source_with_cancellation(context, &changed, cancellation).map(|_| ())
     };
     let mut controls = 0usize;
     macro_rules! fails {
         ($label:expr, $body:expr) => {{
+            ensure_execution_active(cancellation)?;
             expect_failure($label, $body)?;
             controls += 1;
         }};
@@ -2658,6 +2796,7 @@ fn negative_controls(context: &Context, snapshot: &Snapshot) -> AuditResult<usiz
         "{}\n# Ground-producer discovery controls (temporary, not enacted).\nfit(GroundPlacementProbe, Homestay).\ndwell(GroundPlacementProbe).\nbuilding(MedSec, GroundPlacementProbe).\n",
         snapshot.kb_text
     );
+    ensure_execution_active(cancellation)?;
     let fact_inventory = source_inventory(&fact_source)?;
     for relation in TARGET_RELATIONS {
         fails!(
@@ -2783,14 +2922,15 @@ fn negative_controls(context: &Context, snapshot: &Snapshot) -> AuditResult<usiz
             "internal control-count drift: {controls}, expected 23"
         ));
     }
+    ensure_execution_active(cancellation)?;
     Ok(controls)
 }
 
 fn expect_failure<T>(label: &str, result: AuditResult<T>) -> AuditResult<()> {
-    if result.is_err() {
-        Ok(())
-    } else {
-        Err(format!("structural negative control did not fail: {label}"))
+    match result {
+        Err(error) if error == "placement execution cancelled" => Err(error),
+        Err(_) => Ok(()),
+        Ok(_) => Err(format!("structural negative control did not fail: {label}")),
     }
 }
 
@@ -2937,6 +3077,21 @@ mod tests {
         }
         let isolated = Context::from_test_root(temporary.path().to_path_buf());
         (temporary, isolated)
+    }
+
+    #[test]
+    fn pre_cancelled_execution_stops_before_reading_inputs() {
+        let temporary = tempfile::tempdir().expect("temporary placement repository");
+        let isolated = Context::from_test_root(temporary.path().to_path_buf());
+        let cancellation = CancellationToken::new();
+        cancellation.cancel();
+
+        let error = check_execute_with_allocation(&isolated, 1, cancellation)
+            .expect_err("pre-cancelled execution must stop before loading inputs");
+        assert_eq!(
+            error.to_string(),
+            "11-placement-exhaustiveness: placement execution cancelled"
+        );
     }
 
     #[test]
