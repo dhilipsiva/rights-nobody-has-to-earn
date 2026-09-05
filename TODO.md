@@ -333,21 +333,6 @@ improve execution, observability, and scheduling only; they may not narrow the
 receipt manifest, omit a suite, cache a semantic or mutant verdict, or alter an
 evidence ceiling.
 
-- [ ] **Extend bounded deterministic parallelism across independent verifier
-  families.**
-  - Derive the execution dependency graph before scheduling. Parallelise only
-    byte-independent suites, preserve canonical presentation order, stop launching
-    after the first canonical failure, terminate and reap outstanding workers, and
-    keep the Git-common-directory lock as the single heavyweight owner.
-  - Compare worker count one with each supported parallel count across passing,
-    watched-failing, timeout, crash, and cancellation cases. Canonical semantic
-    output, verdicts, and failure selection must be identical; each receipt must
-    validate with its own timing, transcript, environment, and worker metadata;
-    memory and process counts remain bounded.
-  - **Done when:** the same frozen candidate passes equivalence controls and a
-    measured full receipt run is materially faster without a coverage or evidence-
-    ceiling change.
-
 - [ ] **Measure WSL and native Windows verification before declaring a supported
   faster runner.**
   - Bind the exact repository tree, Nibli source revision, verifier bytes,
