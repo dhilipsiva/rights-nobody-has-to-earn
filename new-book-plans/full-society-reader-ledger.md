@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-09-05-income-security-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-09-05-income-security-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -30,7 +30,7 @@ Coverage-family drafting states:
 - FS-CVF-017 Economic, labour, property, fiscal, scarcity, and voluntary-sphere effects: prose-landed — All 145 person-held effects, their separately typed always-on duties, the three non-power carry result interfaces, executable tests, counterfactuals, and approved Book 1 prose are complete. They establish only source-bound legal effects over supplied records; no operation, calculation, delivery, remedy, institutional act, liveness, calibration, external truth, or feasibility is proved.
 - FS-CVF-018 Income security and social insurance above the floor: prose-landed — Coverage, four formal statements, the executable pin suite, three counterfactuals, and the session-drafted, author-approved (2026-09-05) prose are complete. The family ships dormant in the supplied cast and establishes only bounded consequences from supplied records; no contribution, adjudication, solvency, funding, amount, payment, arrival, or operation follows.
 
-Canonical source SHA-256: `f81d4ff42d9d82cdaf185f5ccff209e022aabd542fba6f13036ca004933f39ac`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `4a126a2ae557fa44af19cc3b109db379d850f420c82745a01e19141eba44e601`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
