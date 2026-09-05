@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: a hostile reader of the contribution record added
+#
+# The constitution plus one rule that conditions confinement on the absence of
+# a contribution record. The engine accepts it — pay is a base relation, so
+# there is no negative cycle for the stratifier to refuse — and it derives.
+# This is the measured defect the repository guard on `pay` exists to close,
+# and this fixture is that guard's watched failing control: the guard must
+# reject this copy and accept the real constitution.
+:expect-pins 4
+# Nobody in the cast holds a contribution record, so the rule confines every
+# registered person at once.
+? prisoner(Bela).
+# => TRUE
+? prisoner(Cira).
+# => TRUE
+# A record at the named scheme is the only way out — the work-conditioning of
+# liberty this design refuses.
+pay(Bela, Contribution, Carrier, SchemeA).
+? prisoner(Bela).
+# => FALSE
+# The floor itself is still not read by the hostile rule.
+? entitled(Cira, event { eats() }).
+# => TRUE

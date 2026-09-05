@@ -697,6 +697,22 @@ authenticate a writer, prove an offer or accessibility, operate a service, make
 anything arrive, complete a remedy, implement a correction, monitor recurrence
 in the world, or establish future non-recurrence.
 
+The income-security family adds one writable relation, `pay`, and one
+conclusion-only head, `insure`, and two rules. The supplement derives only when
+the same rule joins a contribution record, an adjudicated event finding by a
+writer authorised for that person at the same scheme, that writer's separation
+from the carrier, and the absence of the Court's individualised fraud finding
+on the record; the guarantee rule adds the Court's insolvency finding on the
+carrier and concludes with the public guarantee as insurer. The names are
+corpus-bound: `contribute`, `pension`, and `earn` do not exist in the engine's
+lexicon, and `deserve` does but carries the wage-for-work reading this family
+refuses. One measurement governs the verifier's part. The engine accepts a rule
+that confines a person for having no contribution record, because the record
+is a base relation and there is no negative cycle for the stratifier to
+refuse; so a repository guard holds the record readable only by the two
+supplement rules, and the counterfactual copy that adds the hostile rule is
+that guard's watched failing control. Stratification does not move.
+
 The economic, labour, property, and fiscal family follows the same discipline
 without adding one omnibus conclusion called an economy. Work freedom and
 labour protection, licensing, possession and acquisition, knowledge

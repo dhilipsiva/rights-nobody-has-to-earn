@@ -36,6 +36,7 @@ pub(crate) struct Report {
 pub(crate) fn check(context: &Context) -> Result<Report, Error> {
     let mut messages = check_prose(context)?;
     messages.extend(check_constitution(&context.read(KB)?)?);
+    messages.extend(check_contribution_reader_control(context)?);
     messages.extend(check_control_scopes(context)?);
     Ok(Report { messages })
 }
@@ -230,7 +231,72 @@ fn check_constitution(source: &str) -> Result<Vec<String>, Error> {
         messages.push(format!("no rule counts {label} entries"));
     }
 
+    // Income security: the contribution record has exactly two readers by
+    // decision, and the engine cannot hold that line — `pay` is a base
+    // relation, so a rule conditioning confinement on ~pay loads with no
+    // negative cycle for the stratifier to refuse. Measured 2026-09-05; the
+    // unguarded-contribution-reader fixture is this guard's watched failing
+    // control. A floor right may be noticed and never acted on (INVARIANT 1);
+    // the contribution record may be read into the supplement and nowhere else.
+    let pay_readers = body_hits(&rules, "pay");
+    if pay_readers.is_empty() {
+        return Err(Error::new(
+            "the contribution-record guard is vacuous\nno rule reads pay at all, so the readers check below proves nothing — the supplement rules should be two",
+        ));
+    }
+    for rule in &rules {
+        if predicate_call_with_identifier_boundary(rule.head, "pay") {
+            return Err(Error::new(format!(
+                "pay is concluded by a rule — the contribution record is written, never derived\n{}: {}",
+                rule.line, rule.raw
+            )));
+        }
+        if !predicate_call_with_identifier_boundary(rule.body, "pay") {
+            continue;
+        }
+        if rule.body.contains("~pay(") {
+            return Err(Error::new(format!(
+                "pay is read under negation — absence of a contribution record has become a premise\n{}: {}\n\
+                 The record's absence withholds a supplement and may never condition anything else.",
+                rule.line, rule.raw
+            )));
+        }
+        if !rule.head.trim_start().starts_with("insure(") {
+            return Err(Error::new(format!(
+                "pay is read into something other than insure — the contribution record has two readers by decision\n{}: {}\n\
+                 Work-conditioning re-enters by administration through exactly this shape. See constitution's income-security block.",
+                rule.line, rule.raw
+            )));
+        }
+    }
+    messages.push(format!(
+        "the contribution record reaches only insure ({} such rules, none under negation, none concluding pay)",
+        pay_readers.len()
+    ));
+
     Ok(messages)
+}
+
+const CONTRIBUTION_READER_CONTROL: &str =
+    "new-book-plans/counterfactual/unguarded-contribution-reader.nibli";
+
+/// Watched failing control for the contribution-record guard: the fixture that
+/// adds one hostile `~pay` reader must trip exactly that guard, so a rewrite
+/// that stops the guard seeing the shape fails here rather than passing green.
+fn check_contribution_reader_control(context: &Context) -> Result<Vec<String>, Error> {
+    let source = context.read(CONTRIBUTION_READER_CONTROL)?;
+    match check_constitution(&source) {
+        Err(error) if error.to_string().starts_with("pay is read under negation") => Ok(vec![
+            "watched failing control: unguarded-contribution-reader trips the contribution-record guard"
+                .to_owned(),
+        ]),
+        Err(error) => Err(Error::new(format!(
+            "the contribution-record control failed for the wrong reason\n{error}"
+        ))),
+        Ok(_) => Err(Error::new(
+            "the contribution-record guard is broken\nthe unguarded-contribution-reader fixture adds a ~pay reader of prisoner and the guard accepted it",
+        )),
+    }
 }
 
 #[derive(Clone, Copy)]
@@ -460,7 +526,8 @@ mod tests {
         let source = "false(A) -> err(A, Missing).\n\
                       prisoner(A) & ~eats(A) -> err(A, Isolation).\n\
                       judge(A, B) & judge(C, B) -> signed(B).\n\
-                      taught(A) -> reward(A).\n";
+                      taught(A) -> reward(A).\n\
+                      pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n";
         let messages = check_constitution(source).unwrap();
         assert!(
             messages
@@ -477,6 +544,29 @@ mod tests {
                 .iter()
                 .any(|message| message == "no rule counts teaches entries")
         );
+    }
+
+    #[test]
+    fn contribution_guard_rejects_every_other_reader() {
+        let clean = "false(A) -> err(A, Missing).\n\
+                     prisoner(A) & ~eats(A) -> err(A, Isolation).\n\
+                     judge(A, B) & judge(C, B) -> signed(B).\n\
+                     taught(A) -> reward(A).\n\
+                     pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n";
+        assert!(check_constitution(clean).is_ok());
+        for hostile in [
+            "person(X) & ~pay(X, Contribution, C, S) -> prisoner(X).\n",
+            "pay(X, Contribution, C, S) -> reward(X).\n",
+            "work(X, Care) -> pay(X, Contribution, C, S).\n",
+        ] {
+            let source = format!("{clean}{hostile}");
+            assert!(check_constitution(&source).is_err(), "{hostile}");
+        }
+        let stripped = clean.replace(
+            "pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n",
+            "",
+        );
+        assert!(check_constitution(&stripped).is_err(), "vacuous guard must fail");
     }
 
     #[test]

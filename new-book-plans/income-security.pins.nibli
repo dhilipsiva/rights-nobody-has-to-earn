@@ -1,0 +1,195 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Income security and social insurance family - executable coverage pins
+#
+# Run just this suite:
+#   ./verify.sh --only new-book-plans/income-security.pins.nibli
+#
+# Two different things are proven here and the difference matters. The first
+# section proves the family is DORMANT: the shipped record holds no contribution
+# record, so no supplement derives for anybody. The rest prove it is not blind:
+# supply the record and an independent adjudicated event and the supplement
+# derives; strip any one conjunct and it stops; and through every state of the
+# family the floor, recognition, and liberty conclusions do not move.
+#
+# Nothing here establishes that a contribution was made, that an adjudicator
+# acted, that a carrier failed, or that a payment reached anyone. Every probe
+# fact below is written by this file, not by the world.
+:expect-pins 41
+
+# ── The family ships dormant ────────────────────────────────────────────────
+? insure(Carrier, Adam, Illness).
+# => FALSE
+? insure(Carrier, Bela, Ageing).
+# => FALSE
+? insure(PublicGuarantee, Cira, Survivorship).
+# => FALSE
+
+# ── The pair derives the supplement ─────────────────────────────────────────
+# A record alone derives nothing.
+pay(Oke, Contribution, Carrier, SchemeA).
+? insure(Carrier, Oke, Illness).
+# => FALSE
+# The record plus an independent adjudicated event at the same scheme derives.
+authorized(Assessor, InsuranceAdjudicator, Oke).
+observe(Assessor, Illness, Oke, SchemeA).
+? insure(Carrier, Oke, Illness).
+# => TRUE
+# Only the event found derives; another peril does not.
+? insure(Carrier, Oke, Unemployment).
+# => FALSE
+# Serve first: Oke is not on the roster and the supplement derived anyway.
+? person(Oke).
+# => FALSE
+# The guarantee route needs the carrier's insolvency; without it, nothing.
+? insure(PublicGuarantee, Oke, Illness).
+# => FALSE
+
+# ── Each conjunct is load-bearing ───────────────────────────────────────────
+# A finding with no record derives nothing.
+authorized(Assessor, InsuranceAdjudicator, Rae).
+observe(Assessor, Illness, Rae, SchemeA).
+? insure(Carrier, Rae, Illness).
+# => FALSE
+# A record with an observation by a writer not authorised for that person.
+pay(Ugo, Contribution, Carrier, SchemeA).
+observe(Assessor, Illness, Ugo, SchemeA).
+? insure(Carrier, Ugo, Illness).
+# => FALSE
+# Authorised for one person, observing another, derives nothing for either.
+authorized(Assessor, InsuranceAdjudicator, Vin).
+observe(Assessor, Disability, Ugo, SchemeA).
+? insure(Carrier, Ugo, Disability).
+# => FALSE
+? insure(Carrier, Vin, Disability).
+# => FALSE
+# Scheme mismatch: the record and the finding must name the same scheme.
+pay(Pim, Contribution, Carrier, SchemeA).
+authorized(Assessor, InsuranceAdjudicator, Pim).
+observe(Assessor, Illness, Pim, SchemeB).
+? insure(Carrier, Pim, Illness).
+# => FALSE
+# The carrier may not adjudicate the event it would have to pay for.
+pay(Nil, Contribution, Carrier, SchemeA).
+authorized(Carrier, InsuranceAdjudicator, Nil).
+observe(Carrier, Illness, Nil, SchemeA).
+? insure(Carrier, Nil, Illness).
+# => FALSE
+
+# ── The fraud guard is a Court finding, scheme-bound, fail-open ─────────────
+# An individualised Court finding on this record blocks this supplement.
+pay(Wen, Contribution, Carrier, SchemeA).
+authorized(Assessor, InsuranceAdjudicator, Wen).
+observe(Assessor, WorkplaceInjury, Wen, SchemeA).
+observe(Court, ContributionFraud, Wen, SchemeA).
+? insure(Carrier, Wen, WorkplaceInjury).
+# => FALSE
+# A Court finding on a different scheme does not reach this record.
+pay(Xan, Contribution, Carrier, SchemeA).
+authorized(Assessor, InsuranceAdjudicator, Xan).
+observe(Assessor, Caregiving, Xan, SchemeA).
+observe(Court, ContributionFraud, Xan, SchemeB).
+? insure(Carrier, Xan, Caregiving).
+# => TRUE
+# The carrier's own accusation is not a finding and blocks nothing.
+observe(Carrier, ContributionFraud, Xan, SchemeA).
+? insure(Carrier, Xan, Caregiving).
+# => TRUE
+# The blocked person keeps everything else: no loss, no recognition read.
+? lose(Points, Wen).
+# => FALSE
+? reward(Wen).
+# => FALSE
+
+# ── The supplement survives the carrier ─────────────────────────────────────
+pay(Yul, Contribution, Mutual, SchemeC).
+authorized(Assessor, InsuranceAdjudicator, Yul).
+observe(Assessor, Unemployment, Yul, SchemeC).
+? insure(Mutual, Yul, Unemployment).
+# => TRUE
+? insure(PublicGuarantee, Yul, Unemployment).
+# => FALSE
+# The Court finds the carrier insolvent at that scheme: the guarantee steps in
+# under the same record and the same finding, with an empty estate implied by
+# nothing else being supplied.
+observe(Court, CarrierInsolvency, Mutual, SchemeC).
+? insure(PublicGuarantee, Yul, Unemployment).
+# => TRUE
+# Insolvency found at another scheme does not move this one.
+pay(Zed2, Contribution, Mutual, SchemeD).
+authorized(Assessor, InsuranceAdjudicator, Zed2).
+observe(Assessor, Ageing, Zed2, SchemeD).
+? insure(PublicGuarantee, Zed2, Ageing).
+# => FALSE
+# The guarantee still refuses a carrier-adjudicated event and a Court fraud finding.
+pay(Ana, Contribution, Mutual, SchemeC).
+authorized(Mutual, InsuranceAdjudicator, Ana).
+observe(Mutual, Unemployment, Ana, SchemeC).
+? insure(PublicGuarantee, Ana, Unemployment).
+# => FALSE
+observe(Court, ContributionFraud, Yul, SchemeC).
+? insure(PublicGuarantee, Yul, Unemployment).
+# => FALSE
+
+# ── Portability and correction need no rule ─────────────────────────────────
+# No rule reads residence or jurisdiction: a record from elsewhere derives here.
+pay(Ibo, Contribution, Carrier, SchemeA).
+at(Ibo, Elsewhere).
+authorized(Assessor, InsuranceAdjudicator, Ibo).
+observe(Assessor, Survivorship, Ibo, SchemeA).
+? insure(Carrier, Ibo, Survivorship).
+# => TRUE
+# A corrected record is a replacement entry that derives on its own terms.
+pay(Jun, Contribution, Carrier, SchemeB).
+authorized(Assessor, InsuranceAdjudicator, Jun).
+observe(Assessor, Illness, Jun, SchemeA).
+? insure(Carrier, Jun, Illness).
+# => FALSE
+pay(Jun, Contribution, Carrier, SchemeA).
+? insure(Carrier, Jun, Illness).
+# => TRUE
+
+# ── The floor and every other conclusion never move ─────────────────────────
+# A registered person with a record and a finding: the supplement derives and
+# the floor is exactly what it was for every person.
+person(Zia).
+pay(Zia, Contribution, Carrier, SchemeA).
+authorized(Assessor, InsuranceAdjudicator, Zia).
+observe(Assessor, Disability, Zia, SchemeA).
+? insure(Carrier, Zia, Disability).
+# => TRUE
+? entitled(Zia, event { eats() }).
+# => TRUE
+? entitled(Zia, event { dwell() }).
+# => TRUE
+? prisoner(Zia).
+# => FALSE
+? reward(Zia).
+# => FALSE
+# A person with zero history keeps the whole floor and is confined by nothing.
+person(Kai).
+? entitled(Kai, event { eats() }).
+# => TRUE
+? insure(Carrier, Kai, Illness).
+# => FALSE
+? prisoner(Kai).
+# => FALSE
+# The cast is untouched by everything above.
+? entitled(Adam, event { eats() }).
+# => TRUE
+? insure(Carrier, Adam, Illness).
+# => FALSE
+
+# ── Refusals: the record is closed and the conclusion is conclusion-only ────
+:refuse reasoning /derived-only/
+insure(Carrier, Bela, Illness).
+:refuse reasoning /not admitted vocabulary/
+deserve(Bela, Wage, Work).
+
+# ── What the engine does NOT refuse, and why a repository guard exists ──────
+# A rule conditioning confinement on the absence of a contribution record LOADS:
+# pay is a base relation and there is no negative cycle for the stratifier to
+# refuse. This scoped control proves only that the engine accepts it. The
+# unguarded-contribution-reader fixture shows what it then derives, and the
+# repository guard is what refuses it in the enacted text.
+:accept-scoped
+all $x: person($x) & ~pay($x, Contribution, Carrier, SchemeA) -> prisoner($x).

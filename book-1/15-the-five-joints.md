@@ -706,6 +706,16 @@ when an employer's estate is empty. Shareholders bear residual risk. Enterprise
 failure cannot erase a remedy or interrupt an essential service without public
 continuity.
 
+The contribution-based supplement above the floor is now an executable interface
+rather than a promise. It is concluded only from a contribution record and an
+independent finding of the event under the same scheme, it survives the carrier
+through the public guarantee, only an individualised court finding of fraud can
+block it, and nothing can read the record back into the floor, standing, the
+vote, or liberty — the last of those held by a repository guard, because the
+logic itself would accept a rule that confined people for having no contribution
+history. What the supplement is worth, and whether it is paid, remain outside
+evidence and outside this book.
+
 Genuine physical scarcity is not a budget choice, a high price, a monopoly, a
 withheld stock, an administrative delay, or a provider failure. It needs
 contestable evidence about one resource and population after reasonable

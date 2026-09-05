@@ -833,7 +833,6 @@ all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, 
 # clock, or make a payment reach anyone. The family ships DORMANT: no cast
 # member holds a contribution record, so insure derives for nobody and every
 # "derives" sentence written before today stays true.
-all $p: all $carrier: all $scheme: all $a: all $peril: pay($p, Contribution, $carrier, $scheme) & authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme) & ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure($carrier, $p, $peril).
 all $p: all $carrier: all $scheme: all $a: all $peril: pay($p, Contribution, $carrier, $scheme) & authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme) & ~($a = $carrier) & observe(Court, CarrierInsolvency, $carrier, $scheme) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure(PublicGuarantee, $p, $peril).
 # <INCOME-SECURITY-RULES-END>
 
@@ -2557,7 +2556,7 @@ all $contributor: all $task: work($contributor, $task) & ~false($contributor) ->
 # ~($a = $b) is kept even though the bodies now differ. Nothing stops one
 # person holding both pens, and if that ever becomes possible this conjunct is
 # the only thing between it and self-cosigning.
-all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & authorized($a, IndependentReviewer, $audited) & authorized($b, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) -> false($audited).
+all $a: all $b: all $audited: permits(Review, $a) & permits(Tribunal, $b) & authorized($a, IndependentReviewer, $audited) & authorized($b, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) & judge($b, $audited) & capture($b, $audited) & ~deceive($b, $audited) & ~($a = $b) & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) -> false($audited).
 all $fraudster: false($fraudster) -> lose(Points, $fraudster).
 # [v0.9 2026-08-02] ~false($auditor) added: the THIRD DOOR closes on voiding.
 # Chapter 10 said all three recognition doors shut for a voided person; the

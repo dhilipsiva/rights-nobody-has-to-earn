@@ -423,12 +423,12 @@ fn evidence_vocabulary(context: &Context) -> Result<String, Error> {
     let count = spine[start..end]
         .parse::<usize>()
         .map_err(|_| Error::new("spine evidence-predicate count is not an integer"))?;
-    if count != 42 {
+    if count != 43 {
         return Err(Error::new(format!(
-            "evidence vocabulary is {count}, not 42; chapters 1, 3 and 5 must be re-read"
+            "evidence vocabulary is {count}, not 43; chapters 1, 3 and 5 must be re-read"
         )));
     }
-    Ok("evidence vocabulary is 42".to_owned())
+    Ok("evidence vocabulary is 43".to_owned())
 }
 
 #[cfg(test)]

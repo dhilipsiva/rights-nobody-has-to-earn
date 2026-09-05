@@ -587,6 +587,26 @@ monetary performance, scarcity, or empirical feasibility. The current source
 still awaits its receipt-bound repository audit. Controlling record:
 `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
 
+**Income-security supersession, 2026-09-05.** `FS-CVF-018` supplies the
+positive above-floor interface the economic barriers presupposed: `pay/4` is
+the purpose-limited contribution record (payer, `Contribution`, carrier,
+scheme), `insure/3` the derived-only supplement conclusion per named event,
+and the two rules join the record to an adjudicated event finding by a writer
+authorised for that person at the same scheme and distinct from the carrier,
+under the Court's absent individualised fraud finding; the guarantee rule
+concludes with `PublicGuarantee` on the Court's carrier-insolvency finding.
+Names are corpus-bound — `contribute`, `pension`, `earn`, `benefit`, and
+`guarantee` do not exist in the lexicon and `deserve` is refused for its
+wage-for-work places. **The engine accepts a rule that confines a person for
+lacking a contribution record** (measured 2026-09-05: `pay` is a base
+relation, no negative cycle), so `src/checks/repository.rs` holds `pay`
+readable only by the two supplement rules, never under negation, never
+concluded, with the `unguarded-contribution-reader` fixture as its watched
+failing control. The family ships dormant, `person` is not a premise
+(serve-first), stratification does not move, and no amount, adequacy,
+solvency, funding, payment, or arrival follows. Contract card:
+`new-book-plans/book-1-income-security-and-social-insurance-contract.md`.
+
 #### Family, dependency, reproduction, and collective plurality — 2026-08-08
 
 **The family, dependency, reproduction, and collective/plurality baselines are

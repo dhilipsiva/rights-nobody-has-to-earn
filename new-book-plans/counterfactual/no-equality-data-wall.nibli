@@ -118,6 +118,20 @@ admits("replace").
 # made the recipient-side fact true, which is the one thing this family forbids.
 admits("receives").
 # <DELIVERY-RECEIPT-ADMISSIONS-END>
+# <INCOME-SECURITY-ADMISSIONS-BEGIN>
+# [2026-09-05] `pay` (pleji: x1 pays x2 to x3 for x4) is the purpose-limited
+# contribution record: the person, the constant Contribution, the carrier, and
+# the scheme. The fourth place IS the purpose limit — a record under one scheme
+# derives nothing under another — and the relation is read by the two
+# supplement rules and by nothing else; a repository guard holds that line,
+# because the engine will not: a rule conditioning confinement on ~pay loads,
+# since pay is a base relation and there is no negative cycle to refuse.
+# `contribute`, `pension`, `earn`, `benefit` and `guarantee` are not corpus
+# names; `deserve` (jerna: wage, work) is, and is refused here for the reason
+# it was refused before — its places are the contribution-as-merit reading this
+# family exists to keep out. Nothing in this family reads reward or lose.
+admits("pay").
+# <INCOME-SECURITY-ADMISSIONS-END>
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -235,6 +249,14 @@ derived_only("related").
 # <ECONOMIC-DERIVED-BEGIN>
 derived_only("contradict").
 # <ECONOMIC-DERIVED-END>
+# <INCOME-SECURITY-DERIVED-BEGIN>
+# [2026-09-05] `insure` (binra: x1 insures x2 against peril x3) is the
+# above-floor supplement conclusion. Conclusion-only: it derives from a
+# contribution record plus an independent adjudicated event finding at the
+# same scheme, and is read by no floor, standing, franchise, liberty, reward,
+# lose, or allocation rule. It carries no amount; amounts are outside evidence.
+derived_only("insure").
+# <INCOME-SECURITY-DERIVED-END>
 # [v0.5] severe was the tenth and last open gate, and it was open in exactly
 # the way the v0.3 three were: a conclusion about an offence, written by
 # whoever held the pen, wearing the shape of a reported fact. Before this,
@@ -772,6 +794,47 @@ all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, 
 all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, SecurityScope) & ~($w = $src) -> secure($p).
 all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, DeliveryWitness, $p) & observe($w, $item, $p, CompanyScope) & ~($w = $src) -> meets($p).
 # <DELIVERY-RECEIPT-RULES-END>
+
+# <INCOME-SECURITY-RULES-BEGIN>
+# [2026-09-05] Income security above the floor. Two rules and no clock.
+#
+# THE FLOOR IS NOT HERE. Nothing below reads or writes entitled, owe, eats,
+# dwell, healthy, secure, meets, learn, person, decide, permits, or prisoner,
+# and person($p) is deliberately NOT a premise: a contributor never entered on
+# the roster still derives the supplement (serve first — the delivery routes'
+# shape). Zero contribution history therefore derives nothing here and changes
+# nothing anywhere else; that is the executable form of the barrier the
+# economic family already carries as FloorContributionCondition.
+#
+# THE PAIR. `pay($p, Contribution, $carrier, $scheme)` is the record.
+# `authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme)`
+# is the adjudicated event finding at the same scheme, and ~($a = $carrier) is
+# the load-bearing conjunct: the carrier may not adjudicate the event it would
+# have to pay for. Strip it on a copy and the carrier certifies its own peril;
+# derivation is monotone, so only a fixture can show what it prevents.
+#
+# THE FRAUD GUARD is a seat, not a writer variable: ~observe(Court,
+# ContributionFraud, $p, $scheme). Shield polarity — an accusation not yet
+# adjudicated protects the person; only the Court's individualised finding
+# blocks, and it blocks this person's supplement and nothing else. A writer
+# variable under negation would be unbound and is refused; the seat is the
+# kernel's own idiom for an adjudicated finding (forgive(Appeals, $x) -> clean).
+#
+# THE GUARANTEE. When the Court finds the carrier insolvent at that scheme, the
+# same record and the same finding derive the same supplement with
+# PublicGuarantee as insurer. The supplement survives the carrier, not merely
+# its record. PublicGuarantee is a carrier constant, not a person and not the
+# floor's financier.
+#
+# WHAT THIS DOES NOT DO. It makes the supplement REPRESENTABLE over supplied
+# records. It does not authenticate a record or a finding, compute an amount,
+# prove a carrier solvent or insolvent, fund the guarantee, advance a scheme
+# clock, or make a payment reach anyone. The family ships DORMANT: no cast
+# member holds a contribution record, so insure derives for nobody and every
+# "derives" sentence written before today stays true.
+all $p: all $carrier: all $scheme: all $a: all $peril: pay($p, Contribution, $carrier, $scheme) & authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme) & ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure($carrier, $p, $peril).
+all $p: all $carrier: all $scheme: all $a: all $peril: pay($p, Contribution, $carrier, $scheme) & authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme) & ~($a = $carrier) & observe(Court, CarrierInsolvency, $carrier, $scheme) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure(PublicGuarantee, $p, $peril).
+# <INCOME-SECURITY-RULES-END>
 
 # <ECONOMIC-CONSTITUTION-RULES-BEGIN>
 # [2026-08-28] Direct legal effects only. Person-held barriers use

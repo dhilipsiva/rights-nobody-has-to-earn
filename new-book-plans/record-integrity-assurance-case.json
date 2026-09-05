@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "020d7d78b60fa1cb66ad33ef5d473c27a79777c545c50c14605960eded242cbc",
+  "assertion_surface_contracts_sha256": "ad88041266bbd8cad738161b6a05902ec461c4d1220fdf317398f2533be05b47",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -647,8 +647,8 @@
     },
     {
       "id": "RC-5",
-      "title": "Delivery and contribution records",
-      "description": "Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source.",
+      "title": "Delivery, contribution, and social-insurance records",
+      "description": "Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source. `pay` is the purpose-limited contribution record the income-security family reads: its fourth place is the scheme, it is consequential only beside an independent adjudicated event finding at the same scheme, and it is read by the two supplement rules and by nothing else under a repository guard.",
       "assurance_claims": [
         "RI-1",
         "RI-2",
@@ -664,7 +664,7 @@
         "RI-12",
         "RI-13"
       ],
-      "failure_posture": "A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome."
+      "failure_posture": "A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome. A missing contribution record withholds a supplement and never touches the floor; only an individualised Court finding of contribution fraud blocks, and it blocks that person's supplement alone."
     },
     {
       "id": "RC-6",
@@ -719,6 +719,7 @@
     "observe": "RC-6",
     "parent": "RC-4",
     "passport": "RC-6",
+    "pay": "RC-5",
     "permanent": "RC-1",
     "person": "RC-2",
     "public": "RC-2",

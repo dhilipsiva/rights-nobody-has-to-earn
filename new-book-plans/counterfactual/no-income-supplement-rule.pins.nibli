@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: the income-security supplement rule deleted
+#
+# Remove the one rule that concludes the supplement from a contribution record
+# and an independent adjudicated event. The supplement disappears; the floor,
+# personhood, and the guarantee route's own conclusion are exactly what they
+# were, which is what makes the loss attributable to the one line.
+:expect-pins 4
+pay(Oke, Contribution, Carrier, SchemeA).
+authorized(Assessor, InsuranceAdjudicator, Oke).
+observe(Assessor, Illness, Oke, SchemeA).
+? insure(Carrier, Oke, Illness).
+# => FALSE
+# The guarantee rule is a separate line and still derives on insolvency.
+observe(Court, CarrierInsolvency, Carrier, SchemeA).
+? insure(PublicGuarantee, Oke, Illness).
+# => TRUE
+# The floor never depended on the deleted line.
+? entitled(Adam, event { eats() }).
+# => TRUE
+? person(Adam).
+# => TRUE

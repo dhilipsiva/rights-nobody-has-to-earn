@@ -282,6 +282,18 @@ supporting entry would do.
 
 Then the limits, and they have the shape everything in this chapter has.
 
+Above the floor, the record can hold a contribution history, and a supplement
+for illness, disability, unemployment, caregiving, injury at work, age, or the
+death of a provider can be concluded from it. The conclusion needs the
+contribution record and a separate finding that the event happened, made for
+that person under the same scheme by someone who is not the carrier that would
+owe the supplement. Either alone concludes nothing. Neither touches the floor
+in any direction: a person with no contribution history keeps everything the
+floor owes, and a person whose supplement is withheld loses nothing else. When
+the carrier fails, the same record and the same finding conclude the supplement
+against the public guarantee instead. What the supplement is worth, whether it
+is funded, and whether it is paid are not in this record at all.
+
 **The debt says what it is about, and arrival is a separate conclusion.** The
 record names food, shelter, care, learning, safety, speech, belief, and company,
 and owes each to every person. The debt itself still does not establish that any

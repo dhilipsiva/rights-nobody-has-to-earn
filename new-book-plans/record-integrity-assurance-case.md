@@ -457,12 +457,12 @@ Legacy family, protected-home, parent, marriage, and sibling records: family, ho
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
 - **Failure posture:** Private facts are purpose-limited and challengeable; absence cannot certify independence, duty, care, authority, or placement. Reviewer independence requires separate affirmative case-bound authorised records.
 
-### RC-5 — Delivery and contribution records
+### RC-5 — Delivery, contribution, and social-insurance records
 
-Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source.
+Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source. `pay` is the purpose-limited contribution record the income-security family reads: its fourth place is the scheme, it is consequential only beside an independent adjudicated event finding at the same scheme, and it is read by the two supplement rules and by nothing else under a repository guard.
 
 - **Assurance claims:** `RI-1`, `RI-2`, `RI-3`, `RI-4`, `RI-5`, `RI-6`, `RI-7`, `RI-8`, `RI-9`, `RI-10`, `RI-11`, `RI-12`, `RI-13`
-- **Failure posture:** A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome.
+- **Failure posture:** A provider cannot self-certify delivery, a missing receipt is not proof of delivery or refusal, and continuity does not wait for the record dispute; no record may compel a personal outcome. A missing contribution record withholds a supplement and never touches the floor; only an individualised Court finding of contribution fraud blocks, and it blocks that person's supplement alone.
 
 ### RC-6 — Temporal transition, order, and review records
 
@@ -493,7 +493,7 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | `family` | `RC-4` | Private relationship and location records |
 | `forgive` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `free` | `RC-2` | Standing, status, and public-power records |
-| `hears` | `RC-5` | Delivery and contribution records |
+| `hears` | `RC-5` | Delivery, contribution, and social-insurance records |
 | `home` | `RC-4` | Private relationship and location records |
 | `injure` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `judge` | `RC-3` | Case evidence, findings, filings, and remedy records |
@@ -503,19 +503,20 @@ Typed `authorized`, `carries`, `challenge`, `continue`, `date`, `limit`, `list`,
 | `observe` | `RC-6` | Temporal transition, order, and review records |
 | `parent` | `RC-4` | Private relationship and location records |
 | `passport` | `RC-6` | Temporal transition, order, and review records |
+| `pay` | `RC-5` | Delivery, contribution, and social-insurance records |
 | `permanent` | `RC-1` | Constitutional-change records |
 | `person` | `RC-2` | Standing, status, and public-power records |
 | `public` | `RC-2` | Standing, status, and public-power records |
 | `put` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `ratifies` | `RC-1` | Constitutional-change records |
-| `receives` | `RC-5` | Delivery and contribution records |
+| `receives` | `RC-5` | Delivery, contribution, and social-insurance records |
 | `replace` | `RC-6` | Temporal transition, order, and review records |
 | `rotten` | `RC-2` | Standing, status, and public-power records |
 | `show` | `RC-3` | Case evidence, findings, filings, and remedy records |
 | `sibling` | `RC-4` | Private relationship and location records |
 | `suggest` | `RC-1` | Constitutional-change records |
-| `teaches` | `RC-5` | Delivery and contribution records |
-| `work` | `RC-5` | Delivery and contribution records |
+| `teaches` | `RC-5` | Delivery, contribution, and social-insurance records |
+| `work` | `RC-5` | Delivery, contribution, and social-insurance records |
 
 ## Defeaters
 
@@ -704,7 +705,7 @@ refusal or moving a Book 2 assumption into the constitutional kernel.
 ## Maintenance and limits
 
 - Source: `new-book-plans/record-integrity-assurance-case.json`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `020d7d78b60fa1cb66ad33ef5d473c27a79777c545c50c14605960eded242cbc`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, exact SHA-256 `ad88041266bbd8cad738161b6a05902ec461c4d1220fdf317398f2533be05b47`.
 - Regenerate after reviewing the JSON source with `./verify.sh --refresh record-integrity-assurance`; never hand-edit this report.
 - Run `./verify.sh --quick` for the structural freshness check.
 - The checker proves schema coverage, traceability, ledger coupling, and

@@ -92,6 +92,18 @@ of no help to anybody.
 The refusal here is not a rule against those things. It is the absence of the
 material they would be made from.
 
+A contribution history is a different thing, and the design keeps it different.
+A record that someone paid into a scheme is written by the scheme, read for one
+purpose — a supplement above the floor when illness, unemployment, injury, care,
+age, or bereavement is found — and read for nothing else. It cannot be read into
+recognition, and recognition cannot be read into it. It cannot be read into
+standing, the floor, the vote, or liberty, and a rule that tried would be
+refused before it could load. The finding that the event happened is made by
+someone who is not the carrier that would pay, and only a court's finding about
+that person's own record can block that person's supplement; an accusation
+blocks nothing. There is still no number: the supplement is concluded here,
+never measured, and what it is worth is a question this record cannot hold.
+
 ## Nothing to earn it back with
 
 All three doors close for the same reason: a person whose credibility has been voided

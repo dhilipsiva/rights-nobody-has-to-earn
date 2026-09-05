@@ -379,6 +379,16 @@ but never replaces, this rule.
     criteria.
 
 - [ ] **Build equality, life-course, dependency, and social-insurance operations.**
+  - Operate the income-security supplement that Book 1 formalises as an
+    interface only (FS-CVF-018): actuarial assumptions and models; contribution
+    rates, bases, and reserves; guarantee funding and the empty-estate path;
+    take-up and outreach on a missing record; the adjudication service that
+    finds illness, disability, unemployment, caregiving, workplace injury,
+    ageing, and survivorship events independently of the carrier; scheme
+    administration, correction, and appeal workflows; employer-insolvency
+    operations; and shock testing under the declared reference envelope. Book 1
+    supplies no amount, adequacy, funding, payment, or arrival claim and Book 2
+    may not read one back into it.
   - Operate direct, indirect, systemic, multiple, intersectional, associative,
     accommodation, segregation, harassment, and retaliation routes across every
     public/delegated function and the named employment, housing, education,

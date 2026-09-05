@@ -10,7 +10,7 @@
 The exact reviewed source implements cumulative T1 reconciliation, a witnessed canonical TerminalTransition, transitive ternary precede paths typed by EventPath and RecordPath, typed collision categories, and T3 positive case-bound Court-custody authority. Consequential consumers rejoin exact raw fields and matching observations. A supplied challenge suspends its exact lease; a paired fresh process proves that withheld intake does not. The ground cases establish these derivations and bounded full-source floor-query coexistence only for supplied records and supplied or independently derived standing.
 
 - Reviewed source: `new-book-plans/temporal-assurance-case.json`.
-- Constitution: `new-book-plans/constitution.nibli` at `b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62`.
+- Constitution: `new-book-plans/constitution.nibli` at `235c4a5811f5da1ebd0aa75ecb6e7abb1e75065ba746b243a241c3a4b3e812df`.
 - Every executable case uses a fresh engine process; paired labels describe a reviewed differential, not shared engine state.
 
 ## Cumulative formal stages

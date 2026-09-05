@@ -19,14 +19,14 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "a850459e8f33cbd90918b7c2e025e22073154a6d9788c3eed0905e18cee5f9b3",
+  "rules_sha256": "f4ce4d03d7e6e3750e54b439381233734eb7b59fa8a71896528e618a7dd78d82",
   "facts_sha256": "d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
     "authority": "8b44f7142073580354e1ad72f6ac448cc0b2d83bba3a3e647fe7787d6ca8564b",
-    "authorized": "f8f28f9f94e20a37d88aa10e378ff83433e991ce5b9516bf86d1dfeb25be7003",
+    "authorized": "1d4fbdb1622c5dcdd6383a9f1b80b4741efa0ef4ae4d53ad2f317dfa5924136e",
     "become": "4267335bc5356d9b87bbaed0feeafc589728043818ecf5cb6757cbeec3ca05d4",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
@@ -65,6 +65,7 @@
     "hears": "74985a06768cd9aba07d5edd0304784870ce67e19a0a58e6f1032c3fbfd960d8",
     "home": "01c35f39cdc0b0672dab583823f4c65201f49de6c510836bdc3842d9806375e8",
     "injure": "260cd39a3f38a8757942ea8ad1e2da0909017a414a6a0660ce77ab4def76d46d",
+    "insure": "9a61a951b10793a5761cf040fae39f89bcf0f5ba40e7b78570c64195dbcf1908",
     "judge": "a63a90383a7ebcca4e1fd07625ea34af503d566062ecb0a9fd532bca1e84437a",
     "learn": "f31216c71fae34042d84cb7dbc79f4dc834876aa160d142d51b5cb5307dd2745",
     "limit": "4e3f1f3437d1e8e3107cca6920e9fef155fec49d740f4b86b5c65dc45dcb4503",
@@ -74,11 +75,12 @@
     "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
     "meets": "a9cca28717bb66c3f33f3ae83ed83caa3a7c6b75cd7bd226f41089f9c026c061",
     "obliged": "90d910e3b5bce523d68dac08d8833e57d9ef7db8e232c47275b42aea29bb2f02",
-    "observe": "8aa91dc325c149b428d3be44b04935d161a35ab89d831a84f643821d68a00faa",
+    "observe": "c2fa50d8099102784f415945fa444d39906595102d703fb2d8dfa2e965d06467",
     "orderly": "59535e1c160c90a8cc609b4c73581a2b17a1bab4f31f46fecd54af05b69455ec",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
     "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
     "passport": "cd0ddf58592a42a0437d2995c5ede1a245c80cf7cbc3feb031d5a3ae6c8136a2",
+    "pay": "6d8345167478ef581df1aed9e9ecb6eb9f59af6642ed7a02a7e26a32e8633ebb",
     "permanent": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "permits": "f8c03ccb6abd9b350f00fe93840157596fa6844f5ac5e9152b819413ab726bb0",
     "person": "2035a2d54d9e66b46b030c3198c0dedb6fd48309f9c9c404976c7d41e615ba5f",
@@ -334,6 +336,17 @@
         "ground_asserted": false
       }
     },
+    "insure": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-insure",
+      "decision_ref": "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 5. Formal migration contract",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
     "learn": {
       "classification": "pending_interface",
       "contract_id": "floor-actuality-learn-pending",
@@ -444,6 +457,17 @@
         "ground_asserted": false
       }
     },
+    "prevents": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-prevents",
+      "decision_ref": "new-book-plans/constitution.nibli::# <LIBERTY-ECOLOGY-DERIVED-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
     "prisoner": {
       "classification": "derived_only",
       "contract_id": "derived-only-prisoner",
@@ -542,17 +566,6 @@
         "derived_only": false,
         "ground_asserted": false
       }
-    },
-    "prevents": {
-      "classification": "derived_only",
-      "contract_id": "derived-only-prevents",
-      "decision_ref": "new-book-plans/constitution.nibli::# <LIBERTY-ECOLOGY-DERIVED-BEGIN>",
-      "expected": {
-        "rule_produced": true,
-        "admitted": false,
-        "derived_only": true,
-        "ground_asserted": false
-      }
     }
   },
   "premises": {
@@ -590,6 +603,49 @@
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::## 6. Democratic corridor",
       "tags": [
         "amendment"
+      ]
+    },
+    "at": {
+      "claimed_actor": "The tuple names a subject and a typed contact, control, statutory-age, or placement-availability condition; neither position authenticates the writer.",
+      "tuple_claim": "The subject is at a source-typed condition: a standing root, GeneralAdulthood evidence, or PlacementHome availability. Each constant has a separate consumer and cannot substitute for another.",
+      "current_writer_authority": "Any fact-store writer can assert, omit, or alter an at tuple. The formal rules keep each constant purpose-bound but authenticate neither the subject nor condition.",
+      "required_writer_authority": "Standing stays immediately self-assertable; adulthood evidence follows the non-discretionary statutory source and alternative-evidence route; placement availability requires affected-person participation and independent challenge.",
+      "current_provenance": "The tuple carries a typed constant but no civil identity, citizenship, capacity, family status, timestamp, source digest, writer identity, reconciliation history, safe address, consent, or delivery evidence.",
+      "required_provenance": "Purpose-specific provenance, time, source, correction, uncertainty, challenge, and independent review without turning any record into a prerequisite for standing or proof of delivery.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert at(FabricatedSubject, FirstContact)"
+        ],
+        "effect": "A fabricated non-public encounter subject derives personhood, the constitutional floor, and State debts without authenticating a human encounter.",
+        "target": "person",
+        "evidence_ref": "new-book-plans/constitution.nibli::at($subject, FirstContact) & ~public($subject) -> person($subject)"
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "withhold or delete at(UnregisteredContact, FirstContact)"
+        ],
+        "effect": "A real first-contact subject with no other root loses the formal person conclusion, floor, and State debts.",
+        "target": "person",
+        "evidence_ref": "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::? person(UnregisteredContact)."
+      },
+      "current_challenge_route": "The constitutional input supplies no authenticated writer or operating correction process. Direct petition remains available; the family/life-course effects require continuity and challenge without claiming implementation.",
+      "required_challenge_route": "Immediate self-assertion for standing, alternative age evidence and provisional continuity for adulthood, and private independent placement challenge for PlacementHome, all with provenance-preserving correction.",
+      "risk_dispositions": [
+        "patchable",
+        "external",
+        "deliberately_refused"
+      ],
+      "refused_alternative": "Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
+      "tags": [
+        "roster-person",
+        "standing",
+        "first-contact",
+        "adulthood",
+        "placement",
+        "record-integrity"
       ]
     },
     "attack": {
@@ -669,6 +725,47 @@
         "record-integrity",
         "source-binding",
         "time"
+      ]
+    },
+    "born": {
+      "claimed_actor": "The unary tuple names the alleged born subject; no parent, registrar, medical source, witness, date, or place is encoded.",
+      "tuple_claim": "The named subject has been born.",
+      "current_writer_authority": "Any fact-store writer can assert, omit, or delete the birth fact; the constitutional rule excludes a subject already marked public but authenticates no birth.",
+      "required_writer_authority": "Standing cannot wait for registration; a birth source can later be independently checked and corrected without controlling the immediate root.",
+      "current_provenance": "No birth event, date, place, witness, parent, record lineage, correction, or civil identity is attached.",
+      "required_provenance": "A separately sourced and challengeable birth finding with retained corrections and alias history, never a condition for immediate floor protection.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert born(FabricatedSubject)"
+        ],
+        "effect": "A fabricated non-public subject derives personhood, the constitutional floor, and State debts from one unauthenticated write.",
+        "target": "person",
+        "evidence_ref": "new-book-plans/constitution.nibli::born($child) & ~public($child) -> person($child)"
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "withhold or delete born(UnregisteredNewborn) before any contact record exists"
+        ],
+        "effect": "A real newborn with no other supplied root loses the formal person conclusion and its downstream floor in the snapshot.",
+        "target": "person",
+        "evidence_ref": "new-book-plans/universal-standing.pins.nibli::? person(Nia)."
+      },
+      "current_challenge_route": "No birth-source challenge, correction, alternate writer, omission alarm, or operational continuity mechanism is encoded.",
+      "required_challenge_route": "Immediate standing plus direct petition, accessible correction, independent checking, and an alternate source that cannot turn registration into a service gate.",
+      "risk_dispositions": [
+        "patchable",
+        "external",
+        "deliberately_refused"
+      ],
+      "refused_alternative": "Do not make a birth certificate, family relation, registry entry, or civil-identity match a premise of standing.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry",
+      "tags": [
+        "roster-person",
+        "standing",
+        "birth",
+        "record-integrity"
       ]
     },
     "broken": {
@@ -1654,6 +1751,43 @@
         "time"
       ]
     },
+    "pay": {
+      "claimed_actor": "The first argument names the contributor, the second the constant Contribution, the third the carrier, and the fourth the scheme; no position authenticates the writer, and the relation asserts a contribution was recorded, not that one was made.",
+      "tuple_claim": "A contribution by this person was recorded with this carrier under this scheme.",
+      "current_writer_authority": "Any fact-store writer can assert the contribution record.",
+      "required_writer_authority": "The carrier or employer side of the named scheme, with correction by replacement entry and no reader of the record outside the two supplement rules.",
+      "current_provenance": "No period, amount, correction, or challenge record is attached; the fourth place is the only purpose binding.",
+      "required_provenance": "Purpose-limited contribution evidence bound to one scheme, never reused as a standing, worth, risk, allocation, or political key.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert `pay(Oke, Contribution, Carrier, SchemeA)` beside an independent adjudicated event finding"
+        ],
+        "effect": "An above-floor supplement conclusion derives from a record the person never controlled; the floor, standing, and recognition are unchanged.",
+        "target": "insure",
+        "evidence_ref": "new-book-plans/constitution.nibli::observe($a, $peril, $p, $scheme) & ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure($carrier, $p, $peril)."
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "withhold or delete `pay(Oke, Contribution, Carrier, SchemeA)` after contributions were made"
+        ],
+        "effect": "The supplement stops deriving and nothing else moves; absence is a trigger for outreach and challenge, never a finding of non-entitlement and never a floor effect.",
+        "target": "insure",
+        "evidence_ref": "new-book-plans/constitution.nibli::observe($a, $peril, $p, $scheme) & ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure($carrier, $p, $peril)."
+      },
+      "current_challenge_route": "No contributor contest, correction, or outreach is attached; the entry is a bare report and the engine authenticates nothing about it.",
+      "required_challenge_route": "Contributor contest, correction by replacement entry, outreach on a missing record, and audit of the carrier, with an individualised Court fraud finding as the only block.",
+      "risk_dispositions": [
+        "patchable",
+        "external"
+      ],
+      "owner_ref": "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 3. Contract fields",
+      "tags": [
+        "income-security",
+        "contribution-record"
+      ]
+    },
     "permanent": {
       "claimed_actor": "No entrenching authority or writer is encoded; the fact names only a target.",
       "tuple_claim": "A constitutional target label appears in the register consulted by the amendment-label rule.",
@@ -1844,6 +1978,43 @@
         "amendment",
         "democracy",
         "public-power"
+      ]
+    },
+    "receives": {
+      "claimed_actor": "The first argument names the recipient, the second the thing, the third the source; no position authenticates the writer, and the relation is stative so it asserts no act by the recipient.",
+      "tuple_claim": "A thing reached this person from this source.",
+      "current_writer_authority": "Any fact-store writer can assert the recipient-side entry.",
+      "required_writer_authority": "An authorised delivery writer independent of the named source, with a predeclared alternate so an unavailable writer cannot withhold the route.",
+      "current_provenance": "No occasion, medium, accessibility accommodation, or challenge record is attached to the arrival entry.",
+      "required_provenance": "Recipient-side arrival evidence bound to the offered service and to the attesting witness, without inferring any personal outcome.",
+      "cheapest_harm": {
+        "operation": "assert",
+        "operations": [
+          "assert `receives(Oke, Meal, Canteen)` beside an authorised attestation"
+        ],
+        "effect": "A floor actuality is certified from entries the recipient never controlled, and the delivery gap reads as closed for that person.",
+        "target": "eats",
+        "evidence_ref": "new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+      },
+      "withholding_deletion_harm": {
+        "operation": "withhold_or_delete",
+        "operations": [
+          "withhold or delete `receives(Oke, Meal, Canteen)` after actual arrival"
+        ],
+        "effect": "The floor actuality stops deriving; absence is not a finding of non-delivery and must trigger outreach rather than terminate the entitlement.",
+        "target": "eats",
+        "evidence_ref": "new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+      },
+      "current_challenge_route": "No recipient correction, outreach, or accessible alternative is attached; the entry is a bare report and the engine authenticates nothing about it.",
+      "required_challenge_route": "Recipient contest, correction, outreach on a missing receipt, and medium-neutral alternatives that do not require the recipient to act.",
+      "risk_dispositions": [
+        "patchable",
+        "external"
+      ],
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
+      "tags": [
+        "delivery",
+        "accessibility"
       ]
     },
     "replace": {
@@ -2116,127 +2287,6 @@
       "tags": [
         "recognition",
         "contribution"
-      ]
-    },
-    "at": {
-      "claimed_actor": "The tuple names a subject and a typed contact, control, statutory-age, or placement-availability condition; neither position authenticates the writer.",
-      "tuple_claim": "The subject is at a source-typed condition: a standing root, GeneralAdulthood evidence, or PlacementHome availability. Each constant has a separate consumer and cannot substitute for another.",
-      "current_writer_authority": "Any fact-store writer can assert, omit, or alter an at tuple. The formal rules keep each constant purpose-bound but authenticate neither the subject nor condition.",
-      "required_writer_authority": "Standing stays immediately self-assertable; adulthood evidence follows the non-discretionary statutory source and alternative-evidence route; placement availability requires affected-person participation and independent challenge.",
-      "current_provenance": "The tuple carries a typed constant but no civil identity, citizenship, capacity, family status, timestamp, source digest, writer identity, reconciliation history, safe address, consent, or delivery evidence.",
-      "required_provenance": "Purpose-specific provenance, time, source, correction, uncertainty, challenge, and independent review without turning any record into a prerequisite for standing or proof of delivery.",
-      "cheapest_harm": {
-        "operation": "assert",
-        "operations": [
-          "assert at(FabricatedSubject, FirstContact)"
-        ],
-        "effect": "A fabricated non-public encounter subject derives personhood, the constitutional floor, and State debts without authenticating a human encounter.",
-        "target": "person",
-        "evidence_ref": "new-book-plans/constitution.nibli::at($subject, FirstContact) & ~public($subject) -> person($subject)"
-      },
-      "withholding_deletion_harm": {
-        "operation": "withhold_or_delete",
-        "operations": [
-          "withhold or delete at(UnregisteredContact, FirstContact)"
-        ],
-        "effect": "A real first-contact subject with no other root loses the formal person conclusion, floor, and State debts.",
-        "target": "person",
-        "evidence_ref": "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli::? person(UnregisteredContact)."
-      },
-      "current_challenge_route": "The constitutional input supplies no authenticated writer or operating correction process. Direct petition remains available; the family/life-course effects require continuity and challenge without claiming implementation.",
-      "required_challenge_route": "Immediate self-assertion for standing, alternative age evidence and provisional continuity for adulthood, and private independent placement challenge for PlacementHome, all with provenance-preserving correction.",
-      "risk_dispositions": [
-        "patchable",
-        "external",
-        "deliberately_refused"
-      ],
-      "refused_alternative": "Do not require a registry match, citizenship, document, capacity finding, supporter, advocate, or reconciled civil identity before standing.",
-      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Complete bodily autonomy, health, care, family, and life-course interfaces",
-      "tags": [
-        "roster-person",
-        "standing",
-        "first-contact",
-        "adulthood",
-        "placement",
-        "record-integrity"
-      ]
-    },
-    "born": {
-      "claimed_actor": "The unary tuple names the alleged born subject; no parent, registrar, medical source, witness, date, or place is encoded.",
-      "tuple_claim": "The named subject has been born.",
-      "current_writer_authority": "Any fact-store writer can assert, omit, or delete the birth fact; the constitutional rule excludes a subject already marked public but authenticates no birth.",
-      "required_writer_authority": "Standing cannot wait for registration; a birth source can later be independently checked and corrected without controlling the immediate root.",
-      "current_provenance": "No birth event, date, place, witness, parent, record lineage, correction, or civil identity is attached.",
-      "required_provenance": "A separately sourced and challengeable birth finding with retained corrections and alias history, never a condition for immediate floor protection.",
-      "cheapest_harm": {
-        "operation": "assert",
-        "operations": [
-          "assert born(FabricatedSubject)"
-        ],
-        "effect": "A fabricated non-public subject derives personhood, the constitutional floor, and State debts from one unauthenticated write.",
-        "target": "person",
-        "evidence_ref": "new-book-plans/constitution.nibli::born($child) & ~public($child) -> person($child)"
-      },
-      "withholding_deletion_harm": {
-        "operation": "withhold_or_delete",
-        "operations": [
-          "withhold or delete born(UnregisteredNewborn) before any contact record exists"
-        ],
-        "effect": "A real newborn with no other supplied root loses the formal person conclusion and its downstream floor in the snapshot.",
-        "target": "person",
-        "evidence_ref": "new-book-plans/universal-standing.pins.nibli::? person(Nia)."
-      },
-      "current_challenge_route": "No birth-source challenge, correction, alternate writer, omission alarm, or operational continuity mechanism is encoded.",
-      "required_challenge_route": "Immediate standing plus direct petition, accessible correction, independent checking, and an alternate source that cannot turn registration into a service gate.",
-      "risk_dispositions": [
-        "patchable",
-        "external",
-        "deliberately_refused"
-      ],
-      "refused_alternative": "Do not make a birth certificate, family relation, registry entry, or civil-identity match a premise of standing.",
-      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Make universal standing a root condition, not a service denied by a missing entry",
-      "tags": [
-        "roster-person",
-        "standing",
-        "birth",
-        "record-integrity"
-      ]
-    },
-    "receives": {
-      "claimed_actor": "The first argument names the recipient, the second the thing, the third the source; no position authenticates the writer, and the relation is stative so it asserts no act by the recipient.",
-      "tuple_claim": "A thing reached this person from this source.",
-      "current_writer_authority": "Any fact-store writer can assert the recipient-side entry.",
-      "required_writer_authority": "An authorised delivery writer independent of the named source, with a predeclared alternate so an unavailable writer cannot withhold the route.",
-      "current_provenance": "No occasion, medium, accessibility accommodation, or challenge record is attached to the arrival entry.",
-      "required_provenance": "Recipient-side arrival evidence bound to the offered service and to the attesting witness, without inferring any personal outcome.",
-      "cheapest_harm": {
-        "operation": "assert",
-        "operations": [
-          "assert `receives(Oke, Meal, Canteen)` beside an authorised attestation"
-        ],
-        "effect": "A floor actuality is certified from entries the recipient never controlled, and the delivery gap reads as closed for that person.",
-        "target": "eats",
-        "evidence_ref": "new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
-      },
-      "withholding_deletion_harm": {
-        "operation": "withhold_or_delete",
-        "operations": [
-          "withhold or delete `receives(Oke, Meal, Canteen)` after actual arrival"
-        ],
-        "effect": "The floor actuality stops deriving; absence is not a finding of non-delivery and must trigger outreach rather than terminate the entitlement.",
-        "target": "eats",
-        "evidence_ref": "new-book-plans/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
-      },
-      "current_challenge_route": "No recipient correction, outreach, or accessible alternative is attached; the entry is a bare report and the engine authenticates nothing about it.",
-      "required_challenge_route": "Recipient contest, correction, outreach on a missing receipt, and medium-neutral alternatives that do not require the recipient to act.",
-      "risk_dispositions": [
-        "patchable",
-        "external"
-      ],
-      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Specify delivery as a lifecycle.",
-      "tags": [
-        "delivery",
-        "accessibility"
       ]
     }
   }

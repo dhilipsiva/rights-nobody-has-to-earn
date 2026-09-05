@@ -314,6 +314,14 @@ below.
 - **Receipt:** evidence from the receiving side that delivery arrived in an
   accessible and adequate form.
 
+- **Contribution record:** an entry that someone paid into a named scheme. It
+  feeds a supplement above the floor and nothing else; no rule may read it into
+  standing, the floor, the vote, liberty, or recognition.
+
+- **Supplement:** the conclusion that a carrier, or the public guarantee, insures
+  a person against a found life event. It carries no amount and proves no
+  payment.
+
 - **Shield:** protection against imprisonment while an exposure of an authority
   stands, subject to the chapter's stated boundaries.
 

@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-09-03-verifier-family-parallelism-v1",
+  "source_version": "fs-ledger-2026-09-05-income-security-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "93cf05e9d2644a12e0d0a7a6c7677bb85b320f92280d6557917382f79fc1b542"
@@ -3048,6 +3048,71 @@
       "envelope_id": "FS-ENV-00",
       "closure_requirement_refs": [
         "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-CLM-41",
+      "title": "Income-security supplement interface",
+      "claim": "An above-floor supplement conclusion derives from a purpose-limited contribution record plus an independent adjudicated event finding at the same scheme, survives the carrier through the public guarantee, is blocked only by an individualised Court fraud finding, and leaves every floor, standing, recognition, and liberty conclusion unchanged in every state.",
+      "layer": "constitutional-invariant",
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "legacy_row_ref": "FS-LGR-09",
+      "class_refs": [
+        "class-05",
+        "class-07"
+      ],
+      "posture": "Derived",
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "scope_bound": "the two supplement rules over supplied records; no contribution, adjudication, solvency, funding, amount, adequacy, take-up, payment, arrival, correction workflow, or operation follows, and the enumerated non-extension is exactly that list",
+      "evidence_notes": [
+        "income-security pins exercise the pair, each stripped conjunct, scheme binding, carrier self-adjudication, fraud polarity, the guarantee route, portability by absence of premise, correction by replacement, and floor invariance",
+        "the supplement-rule deletion and adjudicator-independence counterfactuals show what each line prevents",
+        "the unguarded-contribution-reader counterfactual is the watched failing control of the repository guard that keeps the record readable only by the supplement rules"
+      ],
+      "public_claim_restriction": "no public claim that any supplement is paid, adequate, funded, or arrives; the interface is representable, not operated",
+      "applicability": "every person with a contribution record under a scheme, on or off the roster",
+      "status": "current",
+      "severity": "critical if the executable interface regresses or the record gains another reader",
+      "consequence": "contribution history would re-enter as a floor, standing, worth, or liberty key by administration, or the carrier could certify the peril it owes",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the two rules, the pin suite, the three counterfactuals, and the repository guard stay green under the full verifier",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [],
+      "evidence_kind": "executable"
+    },
+    {
+      "id": "FS-CLM-42",
+      "title": "Social-insurance operations and adequacy",
+      "claim": "Actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing.",
+      "layer": "book-2-operation",
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "legacy_row_ref": "FS-LGR-09",
+      "class_refs": [
+        "class-02"
+      ],
+      "posture": "Unestablished",
+      "unestablished_disposition": "routed-book-2",
+      "route_ref": "FS-RTE-02",
+      "overlay": "none",
+      "scope_bound": "routing only; a feasibility sentence with no route is a defect, not a gap",
+      "evidence_notes": [
+        "models and simulations plus operational assurance would be the routes, none available"
+      ],
+      "public_claim_restriction": "no adequacy, funding, take-up, or arrival claim may be written in Book 1 at all",
+      "applicability": "Book 2 scope",
+      "status": "routed",
+      "severity": "serious",
+      "consequence": "an adequacy or arrival sentence here would take a route that does not exist",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "Book 2's own gates",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [
+        "FS-CLR-06"
       ]
     }
   ],
@@ -27089,7 +27154,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "2a664fa968423e1ffeec6036422600cc249aa7972258482978b921417ec5f67a",
+    "artifact_sha256": "c657e4575191723a32c1c441efc180732851f3ea709597872f4a6a6e070a10f1",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -27243,7 +27308,7 @@
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
     "evidence_ceiling": "Coverage contracts and pre-drafting checks only; no operation, delivery, feasibility, liveness, reader response, external truth, or calibration follows.",
-    "expected_constitutional_effect_count": 367
+    "expected_constitutional_effect_count": 375
   },
   "powers": [
     {
@@ -105325,6 +105390,54 @@
         "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md::## 4. Versioned ecological ceilings",
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 15. Executable acceptance cases"
       ]
+    },
+    {
+      "id": "FS-CVF-018",
+      "title": "Income security and social insurance above the floor",
+      "state": "prose-landed",
+      "source_family_refs": [],
+      "card_refs": [],
+      "template_refs": [],
+      "refusal_refs": [],
+      "crosswalk_refs": [],
+      "formal_statement_refs": [
+        "9806caf4cbb7b852577dac7abad6502106834f2d104c034e82cda5f5e3ba9497",
+        "7990b144bb7adb658b386388696a9a193cb54365d0d7b505c3da71f2dccc8b1e",
+        "a9aec41929d426af9d055e8f2a9dcf8964cca2bcacdc65bdce09371c4b5d53fd",
+        "7dea6c18a7c948b2814af7bb3c61aab47925e853f26391aff2b75a7b7a0fffb2"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/income-security.pins.nibli::# Income security and social insurance family - executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-income-supplement-rule.pins.nibli::# Counterfactual: the income-security supplement rule deleted",
+        "new-book-plans/counterfactual/no-income-adjudicator-independence.pins.nibli::# Counterfactual: the adjudicator-independence conjunct stripped from the supplement rule",
+        "new-book-plans/counterfactual/unguarded-contribution-reader.pins.nibli::# Counterfactual: a hostile reader of the contribution record added"
+      ],
+      "prose_refs": [
+        "book-1/01-what-counts-as-evidence.md::A contribution record is the one purpose-bound entry,",
+        "book-1/08-what-you-are-owed.md::Above the floor, the record can hold a contribution history, and a supplement",
+        "book-1/10-contribution.md::A contribution history is a different thing, and the design keeps it different.",
+        "book-1/method.md::The income-security family adds one writable relation, `pay`, and one",
+        "book-1/00-opening-note.md::- **Contribution record:** an entry that someone paid into a named scheme. It"
+      ],
+      "part_v_refs": [
+        "book-1/15-the-five-joints.md::The contribution-based supplement above the floor is now an executable interface"
+      ],
+      "blocked_before_drafting": "Coverage, four formal statements, the executable pin suite, three counterfactuals, and the session-drafted, author-approved (2026-09-05) prose are complete. The family ships dormant in the supplied cast and establishes only bounded consequences from supplied records; no contribution, adjudication, solvency, funding, amount, payment, arrival, or operation follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision"
+      ],
+      "effect_refs": [
+        "FS-CCE-368",
+        "FS-CCE-369",
+        "FS-CCE-370",
+        "FS-CCE-371",
+        "FS-CCE-372",
+        "FS-CCE-373",
+        "FS-CCE-374",
+        "FS-CCE-375"
+      ]
     }
   ],
   "dependencies": [
@@ -111451,6 +111564,71 @@
         "assertion-surface-contracts#premises.born"
       ],
       "controls": {}
+    },
+    {
+      "id": "FS-DFT-42",
+      "defect_id": "FS-DFT-42",
+      "title": "The engine accepts a rule conditioning liberty on the absence of a contribution record",
+      "applicability": "the contribution record and every rule that could read it",
+      "layer": "constitutional-invariant",
+      "applicable_gate_refs": [
+        "gate-b",
+        "gate-c",
+        "gate-d",
+        "gate-e"
+      ],
+      "status": "contained",
+      "severity": "material — work-conditioning of liberty re-enters by administration through exactly this shape",
+      "consequence": "a hostile ~pay reader of prisoner loads and derives confinement for every registered person with no record; pay is a base relation and the stratifier has no negative cycle to refuse",
+      "owner_ref": "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 5. Formal migration contract",
+      "closure_condition": "the repository guard keeps pay readable only by the two supplement rules, and its watched failing control keeps failing",
+      "defect_disposition": "prevented",
+      "response_stage": "implemented-in-assigned-route",
+      "affected_claim_ref": "FS-CLM-41",
+      "consequence_id": "contribution-conditioned-liberty",
+      "scope_id": "income-security-record",
+      "envelope_id": "FS-ENV-00",
+      "source_version": "fs-ledger-2026-09-05-income-security-v1",
+      "history": [],
+      "evidence_notes": [
+        "measured 2026-09-05: the hostile rule loads and derives prisoner(Bela) against the real constitution plus one line",
+        "the guard lives in src/checks/repository.rs beside INVARIANT 1 and is negative-controlled at runtime by the fixture"
+      ],
+      "residual_citations": [],
+      "controls": {
+        "initiation_control_ref": "new-book-plans/counterfactual/unguarded-contribution-reader.pins.nibli::# Counterfactual: a hostile reader of the contribution record added"
+      }
+    },
+    {
+      "id": "FS-DFT-43",
+      "defect_id": "FS-DFT-43",
+      "title": "Supplement amount, adequacy, and funding are outside evidence",
+      "applicability": "the supplement conclusion",
+      "layer": "constitutional-invariant",
+      "applicable_gate_refs": [
+        "gate-b",
+        "gate-c",
+        "gate-d",
+        "gate-e"
+      ],
+      "status": "named-boundary",
+      "severity": "material — a supplement that derives says nothing about whether it is enough or whether it is paid",
+      "consequence": "the conclusion carries no amount, rate, reserve, or payment; adequacy and arrival are Book 2 liveness and feasibility claims",
+      "owner_ref": "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 7. What this does not establish",
+      "closure_condition": "Book 2 supplies models and operational assurance in a calibrated envelope; nothing in Book 1 may close it",
+      "defect_disposition": "irreducible-limitation",
+      "response_stage": "detected",
+      "affected_claim_ref": "FS-CLM-41",
+      "consequence_id": "supplement-amount-outside-evidence",
+      "scope_id": "income-security-supplement",
+      "envelope_id": "FS-ENV-00",
+      "source_version": "fs-ledger-2026-09-05-income-security-v1",
+      "history": [],
+      "evidence_notes": [
+        "no numeric literal may appear in an enacted line, and the family adds none"
+      ],
+      "residual_citations": [],
+      "controls": {}
     }
   ],
   "receipts": [
@@ -111800,61 +111978,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "54e7e79ad74bd72e4b9147bb9253920b0a071d0e",
-    "source_version": "fs-ledger-2026-09-03-verifier-family-parallelism-v1",
-    "scope_sha256": "33418febbb0793ab0dea8255e97ed878c7a3f7208f264ae70a04e9a679618ed7",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-09-05T08:31:36Z",
-    "scope_audit_ref": "FS-SAU-47",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
-    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-de0a932cff8e9e6147dcd529122119ad5d7b3272fab85f1a4854e5fa016deb25.json"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -112029,7 +112157,8 @@
       "requirement_kind": "book-seam",
       "applies_to_claim_refs": [
         "FS-CLM-03",
-        "FS-CLM-24"
+        "FS-CLM-24",
+        "FS-CLM-42"
       ],
       "components": [
         {
@@ -112358,6 +112487,18 @@
       "claim_ref": "FS-CLM-40",
       "required_profile_refs": [
         "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-CCT-41",
+      "claim_ref": "FS-CLM-41",
+      "required_profile_refs": []
+    },
+    {
+      "id": "FS-CCT-42",
+      "claim_ref": "FS-CLM-42",
+      "required_profile_refs": [
+        "FS-CLR-06"
       ]
     }
   ],
@@ -112787,6 +112928,28 @@
       ],
       "closure_profile_refs": [
         "FS-CLR-04"
+      ]
+    },
+    {
+      "id": "FS-MAL-41",
+      "claim_ref": "FS-CLM-41",
+      "primary_route_ref": "FS-RTE-01",
+      "required_route_refs": [
+        "FS-RTE-01"
+      ],
+      "closure_profile_refs": []
+    },
+    {
+      "id": "FS-MAL-42",
+      "claim_ref": "FS-CLM-42",
+      "primary_route_ref": "FS-RTE-02",
+      "required_route_refs": [
+        "FS-RTE-02",
+        "FS-RTE-03",
+        "FS-RTE-05"
+      ],
+      "closure_profile_refs": [
+        "FS-CLR-06"
       ]
     }
   ],
@@ -127043,7 +127206,9 @@
         "FS-CLM-37",
         "FS-CLM-38",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "assessments": [
         {
@@ -127177,7 +127342,9 @@
         "FS-CLM-36",
         "FS-CLM-38",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "assessments": [
         {
@@ -127510,7 +127677,9 @@
         "FS-CLM-22",
         "FS-CLM-23",
         "FS-CLM-24",
-        "FS-CLM-36"
+        "FS-CLM-36",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127540,7 +127709,9 @@
         "FS-CLM-37",
         "FS-CLM-38",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127559,7 +127730,9 @@
         "FS-CLM-23",
         "FS-CLM-24",
         "FS-CLM-36",
-        "FS-CLM-39"
+        "FS-CLM-39",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127583,7 +127756,9 @@
         "FS-CLM-32",
         "FS-CLM-36",
         "FS-CLM-38",
-        "FS-CLM-39"
+        "FS-CLM-39",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127609,7 +127784,9 @@
         "FS-CLM-31",
         "FS-CLM-36",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127636,7 +127813,9 @@
         "FS-CLM-36",
         "FS-CLM-38",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127690,7 +127869,9 @@
         "FS-CLM-37",
         "FS-CLM-38",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127816,7 +127997,9 @@
         "FS-CLM-37",
         "FS-CLM-38",
         "FS-CLM-39",
-        "FS-CLM-40"
+        "FS-CLM-40",
+        "FS-CLM-41",
+        "FS-CLM-42"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -130610,6 +130793,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-de0a932cff8e9e6147dcd529122119ad5d7b3272fab85f1a4854e5fa016deb25.json"
+    },
+    {
+      "id": "FS-SAU-48-PENDING",
+      "title": "Income security and social insurance pending current-source repository audit",
+      "source_version": "fs-ledger-2026-09-05-income-security-v1",
+      "scope_sha256": "e91a6b37b7b03ba7665c093d02dbec4c6bef39bc1fb184826127f72f0a333445",
+      "protocol_sha256": "caf310e545718de5728fdbe34491d2b34cf00900e69281de12c5e93aa643f44c",
+      "executed_at_utc": "2026-09-05T10:42:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -232614,6 +232841,2203 @@
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 14. Formal migration contract",
         "new-book-plans/book-1-constitutional-taxonomy.md::## Functional classes",
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 15. Executable acceptance cases"
+      ]
+    },
+    {
+      "id": "FS-CCE-368",
+      "title": "Supplement on adjudicated event",
+      "effect_key": "supplement-on-adjudicated-event",
+      "applicability": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without supplement on adjudicated event, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A contribution record naming the person, the constant Contribution, the carrier, and the scheme",
+        "An adjudicated event finding by a writer authorised as insurance adjudicator for that person at the same scheme, distinct from the carrier",
+        "The Court's absence of an individualised contribution-fraud finding on that record"
+      ],
+      "prohibited_inputs": [
+        "Carrier self-adjudication, or any route where the adjudicator is the named carrier",
+        "A roster entry used as a precondition of the supplement, or bare record absence used as a finding or a loss",
+        "Any amount, rate, duration, reserve, or day count, which are outside evidence"
+      ],
+      "permitted_downstream_effects": [
+        "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "An above-floor supplement derives only from a contribution record plus an independent adjudicated event finding at the same scheme, and from nothing else. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-368-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive the supplement from the carrier's own adjudication of the event; the rule must refuse.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# The carrier may not adjudicate the event it would have to pay for."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-368-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the supplement rule and show the conclusion disappears while the guarantee rule, personhood, and the floor remain.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-income-supplement-rule.pins.nibli::# Counterfactual: the income-security supplement rule deleted"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-369",
+      "title": "Contribution record purpose limit",
+      "effect_key": "contribution-record-purpose-limit",
+      "applicability": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without contribution record purpose limit, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A contribution record naming the person, the constant Contribution, the carrier, and the scheme",
+        "An adjudicated event finding by a writer authorised as insurance adjudicator for that person at the same scheme, distinct from the carrier"
+      ],
+      "prohibited_inputs": [
+        "Any reading of the contribution record into a floor, standing, franchise, liberty, recognition, loss, or allocation head",
+        "Reuse of the record as a standing, worth, risk, allocation, or political key",
+        "A record at another scheme"
+      ],
+      "permitted_downstream_effects": [
+        "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A contribution record is read by the two supplement rules and by nothing else; its scheme place is the purpose limit and a record under one scheme derives nothing under another. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-369-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive the supplement from a record and a finding at different schemes; the rule must refuse.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# Scheme mismatch: the record and the finding must name the same scheme."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-369-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Add a rule that conditions confinement on the absence of a contribution record; the engine accepts it and the repository guard is what refuses it, with this fixture as the guard's watched failing control.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/unguarded-contribution-reader.pins.nibli::# Counterfactual: a hostile reader of the contribution record added"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-370",
+      "title": "Zero history floor invariance",
+      "effect_key": "zero-history-floor-invariance",
+      "applicability": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without zero history floor invariance, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-04",
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-18",
+        "FS-ROL-01"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-18",
+        "FS-ROL-01",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Personhood in the supplied record for the floor entitlements",
+        "The absence of any contribution record"
+      ],
+      "prohibited_inputs": [
+        "Any reading of the contribution record into a floor, standing, franchise, liberty, recognition, loss, or allocation head",
+        "Work, willingness to work, or contribution history as a floor condition"
+      ],
+      "permitted_downstream_effects": [
+        "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "duty_bearer": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "minimum": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "accessibility": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "breach": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "interim_continuity": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "remedy": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "appeal": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "audit": {
+            "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A person with no contribution record derives no supplement and keeps every floor entitlement, personhood, and liberty conclusion unchanged. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-370-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to change any floor entitlement or liberty conclusion by the absence of a contribution record; nothing may move.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# A person with zero history keeps the whole floor and is confined by nothing."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-370-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the supplement rule and show every floor entitlement derives exactly as before.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-income-supplement-rule.pins.nibli::# The floor never depended on the deleted line."
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-371",
+      "title": "Stale record withholds not loses",
+      "effect_key": "stale-record-withholds-not-loses",
+      "applicability": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without stale record withholds not loses, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A contribution record naming the person, the constant Contribution, the carrier, and the scheme",
+        "An adjudicated event finding by a writer authorised as insurance adjudicator for that person at the same scheme, distinct from the carrier"
+      ],
+      "prohibited_inputs": [
+        "A roster entry used as a precondition of the supplement, or bare record absence used as a finding or a loss",
+        "Silence or absence treated as a finding of non-entitlement",
+        "Any reading of the withheld conclusion into lose, err, or a remedy head"
+      ],
+      "permitted_downstream_effects": [
+        "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A contribution record with no current adjudicated finding, or a finding with no record, withholds the supplement and derives no loss and no floor effect. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-371-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive a loss, a floor effect, or a supplement from an incomplete pair; only withholding follows.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# A finding with no record derives nothing."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-371-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the supplement rule and show that withholding, not loss, is the only state the family can produce.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-income-supplement-rule.pins.nibli::# The guarantee rule is a separate line and still derives on insolvency."
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-372",
+      "title": "Carrier insolvency guarantee continuity",
+      "effect_key": "carrier-insolvency-guarantee-continuity",
+      "applicability": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without carrier insolvency guarantee continuity, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [
+        "class-04"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-04",
+        "FS-ROL-24",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A contribution record naming the person, the constant Contribution, the carrier, and the scheme",
+        "An adjudicated event finding by a writer authorised as insurance adjudicator for that person at the same scheme, distinct from the carrier",
+        "The Court's finding that the carrier is insolvent at that scheme"
+      ],
+      "prohibited_inputs": [
+        "Carrier self-adjudication, or any route where the adjudicator is the named carrier",
+        "The floor's financier treated as the supplement's guarantor",
+        "Any funding, reserve, or payment fact",
+        "Any amount, rate, duration, reserve, or day count, which are outside evidence"
+      ],
+      "permitted_downstream_effects": [
+        "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "When the Court finds the carrier insolvent at that scheme, the same record and the same finding derive the supplement with the public guarantee as insurer; the supplement survives the carrier, not merely its record. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-372-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive the guarantee from an insolvency finding at another scheme, from a carrier-adjudicated event, or without the record; the rule must refuse.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# Insolvency found at another scheme does not move this one."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-372-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Strip the adjudicator-independence conjunct from the supplement rule and show the guarantee route still refuses a carrier-adjudicated event, so its independence is its own.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-income-adjudicator-independence.pins.nibli::# Only the supplement rule lost its guard. The guarantee route still refuses a"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-373",
+      "title": "Individualised fraud finding only",
+      "effect_key": "individualised-fraud-finding-only",
+      "applicability": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without individualised fraud finding only, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-04",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-07"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "The Court's individualised contribution-fraud finding on that record at that scheme"
+      ],
+      "prohibited_inputs": [
+        "Any accusation, pattern, group inference, or carrier assertion",
+        "Any fraud finding read into a floor, standing, franchise, liberty, loss, or remedy head",
+        "Any block reaching another person or another scheme"
+      ],
+      "permitted_downstream_effects": [
+        "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Only the Court's individualised finding of contribution fraud on that person's record blocks that person's supplement; an accusation, a carrier assertion, or a finding at another scheme blocks nothing, and the floor is untouched. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-373-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to block the supplement with a carrier accusation or a finding at another scheme; nothing follows. Attempt to reach the floor with a fraud finding; nothing follows.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# The carrier's own accusation is not a finding and blocks nothing."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-373-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "With a hostile reader added, show that even confinement conditioned on the record is a matter of the record alone and never of a fraud finding.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/unguarded-contribution-reader.pins.nibli::# A record at the named scheme is the only way out — the work-conditioning of"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-374",
+      "title": "Supplement portability positive",
+      "effect_key": "supplement-portability-positive",
+      "applicability": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without supplement portability positive, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [
+        "class-08"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-09"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A contribution record naming the person, the constant Contribution, the carrier, and the scheme",
+        "An adjudicated event finding by a writer authorised as insurance adjudicator for that person at the same scheme, distinct from the carrier"
+      ],
+      "prohibited_inputs": [
+        "Residence, jurisdiction, citizenship, documentation, manner of entry, or duration",
+        "A clock, calendar, or scheme period"
+      ],
+      "permitted_downstream_effects": [
+        "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "No supplement rule reads residence, jurisdiction, citizenship, documentation, or time, so the supplement derives wherever the record and the finding are supplied. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-374-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to make the supplement depend on a location fact; no rule reads one and the supplement derives with it present.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# No rule reads residence or jurisdiction: a record from elsewhere derives here."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-374-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Strip the independence conjunct and show the only thing that changes is who may adjudicate, never where the person is.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-income-adjudicator-independence.pins.nibli::# The carrier finds the peril itself. Against the real constitution this derives"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-375",
+      "title": "Correction by replacement entry",
+      "effect_key": "correction-by-replacement-entry",
+      "applicability": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this income-security effect is omitted or collapsed",
+      "consequence": "Without correction by replacement entry, contribution history could re-enter as a floor, standing, worth, or liberty key, or the supplement could be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-018 remains formalized and mechanically re-audited without establishing any payment, adequacy, solvency, or arrival",
+      "posture": "Derived",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-41"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-18",
+        "FS-ROL-07",
+        "FS-ROL-04",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A contribution record naming the person, the constant Contribution, the carrier, and the scheme",
+        "An adjudicated event finding by a writer authorised as insurance adjudicator for that person at the same scheme, distinct from the carrier",
+        "A replacement contribution record at the correct scheme"
+      ],
+      "prohibited_inputs": [
+        "Any penalty, repayment, loss, or floor effect attached to a correction",
+        "Retraction of a prior conclusion, which derivation cannot express"
+      ],
+      "permitted_downstream_effects": [
+        "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "trigger": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "immediate_access": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "record_boundary": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "independent_check": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "failure_default": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "challenge": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "correction": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "retention": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "deletion_control": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "external_assurance": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "action_duty": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          },
+          "temporal_status": {
+            "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A lawful correction of a contribution record is a replacement entry that derives on its own terms; no penalty, repayment, or floor effect attaches to the correction. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates a contribution, an adjudication, a solvency, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-375-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive a penalty, a loss, or a floor effect from a corrected record; only the corrected supplement follows.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/income-security.pins.nibli::# A corrected record is a replacement entry that derives on its own terms."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-375-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the supplement rule and show a corrected record derives nothing rather than something worse.",
+        "source_refs": [
+          "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-income-supplement-rule.pins.nibli::# Remove the one rule that concludes the supplement from a contribution record"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns actuarial assumptions, rates, reserves, take-up, scheme administration, adjudication services, employer-insolvency operations, guarantee funding, and shock testing; no payment, adequacy, solvency, operation, liveness, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
       ]
     }
   ],

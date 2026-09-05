@@ -4,9 +4,9 @@
   "title": "Record-Integrity Red-Team: Flat-Snapshot Levers and Temporal Boundaries",
   "status": "bounded_flat_snapshot_red_team_not_assurance",
   "evidence_role": "exposes_gap_and_tests_boundary",
-  "constitution_sha256": "b4c0b0b6778c8c5ed414f9771b8f3004b20601f821f6f15c12c8c0d40bb50f62",
-  "assertion_surface_contracts_sha256": "020d7d78b60fa1cb66ad33ef5d473c27a79777c545c50c14605960eded242cbc",
-  "record_integrity_assurance_case_sha256": "30b6e7737bc6f0d09bcd408b355128ad02bf55a4f49172dc0b20ba24e0db1975",
+  "constitution_sha256": "235c4a5811f5da1ebd0aa75ecb6e7abb1e75065ba746b243a241c3a4b3e812df",
+  "assertion_surface_contracts_sha256": "ad88041266bbd8cad738161b6a05902ec461c4d1220fdf317398f2533be05b47",
+  "record_integrity_assurance_case_sha256": "19cf5e9d087cb2de5d8177c5bc1c98d3700831ac2f0e9a4e9d7b7dc46181f8bd",
   "posture_meanings": {
     "current_harm_reproduced": "The release engine derives the reviewed harmful consequence from a constructed flat snapshot. This exposes a current lever; it does not authenticate the snapshot or attribute a write.",
     "flat_snapshot_boundary_confirmed": "Different outside histories supply one identical flat snapshot and therefore one legal result outside the currently witnessed temporal scopes. This is an indistinguishability boundary, not a claim that T1 or T3 is absent.",

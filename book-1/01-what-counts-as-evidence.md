@@ -9,7 +9,8 @@ There is nowhere to put it.
 
 Here is the whole list. Someone is a person. Someone was born. Someone is at
 first contact, within the society's jurisdiction, or under its effective control.
-Someone worked, or taught, or heard their teacher. Someone injured
+Someone worked, or taught, or heard their teacher. Someone paid a contribution to a
+carrier under a named scheme. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
 auditor documented what they found, and cited the grounds they looked on. A court
 tied a case to a person. Someone lied. Someone exposed something. A person
@@ -60,8 +61,11 @@ your health, your movements, or your associations. There is no field for what yo
 likely to do. There is no field for what someone suspects.
 
 The economic rules do not reopen that file. Raw income, wealth, tax,
-contribution, insurance, credit, and equality records remain outside the
-consequential record about a person. Where a rule needs a worker-status, title,
+insurance, credit, and equality records remain outside the consequential
+record about a person. A contribution record is the one purpose-bound entry,
+and it is walled: it may be written, it feeds a supplement above the floor and
+nothing else, and no rule may read it into standing, the floor, the vote,
+liberty, or recognition. Where a rule needs a worker-status, title,
 liability, licence, tax, credit, insolvency, private-power, or scarcity decision,
 it may receive only the narrow, authenticated, challengeable result needed for
 that purpose. That result cannot be reused as a general description of the

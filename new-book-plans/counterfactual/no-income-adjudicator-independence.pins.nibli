@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: the adjudicator-independence conjunct stripped from the supplement rule
+#
+# Derivation is monotone and probe facts load on top, so no probe against the
+# real constitution can show what `~($a = $carrier)` prevents. This copy is the
+# only way that claim is executed rather than argued: one conjunct removed, and
+# the carrier adjudicating the event it would have to pay for starts counting.
+:expect-pins 3
+# The carrier finds the peril itself. Against the real constitution this derives
+# nothing; here it derives the supplement.
+pay(Nil, Contribution, Carrier, SchemeA).
+authorized(Carrier, InsuranceAdjudicator, Nil).
+observe(Carrier, Illness, Nil, SchemeA).
+? insure(Carrier, Nil, Illness).
+# => TRUE
+# The independent route still works, so this fixture removes a guard rather
+# than the rule — the difference a stale or over-broad fixture would hide.
+pay(Oke, Contribution, Carrier, SchemeA).
+authorized(Assessor, InsuranceAdjudicator, Oke).
+observe(Assessor, Illness, Oke, SchemeA).
+? insure(Carrier, Oke, Illness).
+# => TRUE
+# Only the supplement rule lost its guard. The guarantee route still refuses a
+# carrier-adjudicated event, which is what makes the flip above attributable to
+# the one conjunct.
+observe(Court, CarrierInsolvency, Carrier, SchemeA).
+? insure(PublicGuarantee, Nil, Illness).
+# => FALSE

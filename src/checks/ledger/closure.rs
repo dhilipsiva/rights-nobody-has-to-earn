@@ -72,7 +72,7 @@ const READER_OWNER_REF: &str = concat!(
     "new-book-plans/book-1-reader-evidence-protocol-decision.md::",
     "## 2. The method, ratified as specified"
 );
-const COMPOSITE_MODEL_CLAIMS: [&str; 1] = ["FS-CLM-24"];
+const COMPOSITE_MODEL_CLAIMS: [&str; 2] = ["FS-CLM-24", "FS-CLM-42"];
 const CONSTITUTIONAL_FLOOR_CLAIMS: [&str; 2] = ["FS-CLM-38", "FS-CLM-39"];
 const LOOP_HAZARDS: [&str; 5] = [
     "unbounded",
@@ -310,7 +310,7 @@ fn intrinsic_claims(kind: &str) -> &'static [&'static str] {
             "FS-CLM-40",
         ],
         "democratic-floor-corridor" => &["FS-CLM-10", "FS-CLM-14", "FS-CLM-15", "FS-CLM-16"],
-        "book-seam" => &["FS-CLM-03", "FS-CLM-24"],
+        "book-seam" => &["FS-CLM-03", "FS-CLM-24", "FS-CLM-42"],
         "external-assumption-disclosure" => &["FS-CLM-13", "FS-CLM-16"],
         "reader-claim-ownership" => &["FS-CLM-37"],
         _ => &[],

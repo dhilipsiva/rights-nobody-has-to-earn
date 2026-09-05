@@ -215,3 +215,31 @@ The single-line deletion fixtures retain adjacent effects as controls.
 Regenerate all 34 fixtures from `constitution.nibli` after every source edit;
 the native verifier checks their exact one-line, 171-line, 145-line, six-line,
 or two-removed/two-added diff shapes before executing their pins.
+
+## Income security and social insurance fixtures
+
+The income-security suite adds one deletion fixture, one changed-line fixture,
+and one added-line fixture:
+
+- `no-income-supplement-rule` removes only the rule that concludes the
+  supplement from a contribution record and an independent adjudicated event;
+  the guarantee rule and the floor are retained as controls.
+- `no-income-adjudicator-independence` strips only the `~($a = $carrier)`
+  conjunct from that rule, so the carrier adjudicating the event it would have
+  to pay for starts counting; the independent route and the guarantee route's
+  own refusal are the controls.
+- `unguarded-contribution-reader` is the constitution *plus* a rule that
+  conditions confinement on the absence of a contribution record. The engine
+  accepts it — `pay` is a base relation, so there is no negative cycle for the
+  stratifier to refuse — and its pins show it confining the whole roster. It is
+  the watched failing control for the repository guard that holds `pay`
+  readable only by the two supplement rules. Regenerate like `unguarded-pen`:
+  copy, then append
+  `all $x: person($x) & ~pay($x, Contribution, Carrier, SchemeA) -> prisoner($x).`
+  with no leading blank line.
+
+The first two are regenerated from `constitution.nibli` after every
+constitutional edit like the delivery fixtures; the deletion uses `grep -vFx`
+on the exact supplement rule line and the changed-line fixture replaces the
+exact `& ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) ->
+insure($carrier, $p, $peril).` tail with the same tail minus the disequality.
