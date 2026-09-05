@@ -133,6 +133,13 @@ watched failing control before it joins the authoritative gate. New performance
 machinery requires a measured bottleneck and equivalence controls. Assurance
 accretion and optimisation by intuition are both refused.
 
+**No supported faster runner will be declared — author decision, 2026-09-05.**
+The WSL and native-Windows verification measurement was withdrawn rather than
+done. Linux/WSL remains the only receipt environment; a receipt binds its
+sanitized environment digest, so a run from another shell, platform, or login
+profile cannot gate a commit and must re-emit. Do not re-propose a platform
+comparison as throughput work.
+
 ## Author-Ratified Rulings
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling

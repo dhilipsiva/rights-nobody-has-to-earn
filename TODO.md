@@ -325,25 +325,6 @@ dependency, and Gate A closed mechanically under protocol v4 at `405e480`.
 Protocol v6's receipt migration records current Gate A state only in the
 canonical ledger; this historical foundation summary does not override it.
 
-### Assurance throughput — reduce wall time without reducing the gate
-
-These are verifier-engineering batches, ordered before further large
-constitutional families because every later candidate pays their cost. They may
-improve execution, observability, and scheduling only; they may not narrow the
-receipt manifest, omit a suite, cache a semantic or mutant verdict, or alter an
-evidence ceiling.
-
-- [ ] **Measure WSL and native Windows verification before declaring a supported
-  faster runner.**
-  - Bind the exact repository tree, Nibli source revision, verifier bytes,
-    environment members, filesystem semantics, worker count, and hardware class.
-    Compare build, engine, I/O, and suite phases rather than one aggregate time.
-  - A native Windows path is supported only if path handling, locking, process
-    cancellation, canonical output, and receipt validation match the Linux/WSL
-    contract. A faster unbound run remains a diagnostic, not a semantic gate.
-  - **Done when:** the repository records a reproducible runner decision and the
-    normal command selects no platform merely from anecdotal elapsed time.
-
 ### Expansion phase 2 — Specify the comprehensive constitution
 
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
