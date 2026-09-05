@@ -330,30 +330,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Define income security and social insurance without making survival
-  contributory.**
-  - **Planned authoring slices:** freeze the noncontributory-floor and
-    above-floor boundary; define purpose-limited contribution history and its data
-    wall; specify event-specific eligibility and portable supplement effects;
-    specify correction, fraud, transfer, employer-insolvency continuity, and
-    remedy; build positive, refusal, stale-record, and counterfactual suites;
-    update reviewed projections, derived Book 1 prose, and the Book 2 handoff;
-    then freeze one candidate for the full receipt/audit/closure chain. Track the
-    active slice in `tmp.txt`; none is independently audited or committed.
-  - Cover illness, disability, unemployment, caregiving, workplace injury,
-    ageing, survivor support, and pensions with portable, accessible, contestable
-    above-floor supplements. The unconditional floor remains noncontributory.
-  - Use contribution history only through a separately enacted purpose-limited
-    relation. It may calculate an above-floor supplement but cannot read
-    recognition, become a risk/worth score, alter standing or emergency help,
-    exceed its lawful purpose-specific retention, or be reused for another purpose.
-  - Preserve the earned supplement itself through employer insolvency, not merely
-    its record. Test zero history, missing/corrupt records, employer failure,
-    family/jurisdiction transfer, lawful correction, and separately adjudicated
-    fraud without lowering the floor.
-  - **Book 2 handoff:** actuarial assumptions, rates, reserves, take-up,
-    administration, employer-insolvency operations, and shock testing.
-
 - [ ] **Authorize qualifications, licensing, compensation, and positive incentives
   without ranking people.**
   - Permit mandatory licensing only for evidenced serious safety, fiduciary, or
