@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: the attester-independence conjunct stripped from the compensation rule
+#
+# Derivation is monotone and probe facts load on top, so no probe against the
+# real constitution can show what `~($a = $payer)` prevents. This copy is the
+# only way that claim is executed rather than argued: one conjunct removed, and
+# the payer attesting its own promise starts counting.
+:expect-pins 3
+# The payer attests its own wage. Against the real constitution this derives
+# nothing; here it derives the compensation.
+promise(Firm, Wage, Ugo).
+authorized(Firm, CompensationAttester, Ugo).
+observe(Firm, Wage, Ugo, LabourBasis).
+? provide(Firm, Wage, Ugo).
+# => TRUE
+# The independent route still works, so this fixture removes a guard rather
+# than the rule.
+promise(Firm, Wage, Tam).
+authorized(Arbiter, CompensationAttester, Tam).
+observe(Arbiter, Wage, Tam, LabourBasis).
+? provide(Firm, Wage, Tam).
+# => TRUE
+# Only the compensation rule lost its guard: the restitution rule still refuses
+# a payer-attested basis, which attributes the flip above to the one conjunct.
+observe(Court, CompensationFraud, Ugo, LabourBasis).
+? provide(Ugo, Restitution, Firm).
+# => FALSE

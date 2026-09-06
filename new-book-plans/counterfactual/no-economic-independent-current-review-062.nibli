@@ -132,6 +132,18 @@ admits("receives").
 # family exists to keep out. Nothing in this family reads reward or lose.
 admits("pay").
 # <INCOME-SECURITY-ADMISSIONS-END>
+# <QUALIFICATIONS-COMPENSATION-ADMISSIONS-BEGIN>
+# [2026-09-05] `promise` (nupre: x1 promises x2 to beneficiary x3) is the
+# compensation record: the payer, the instrument kind — Wage, Profit, Return,
+# Grant, Prize, Subsidy, Incentive — and the person. One relation, kinds as
+# constants; `pay` stays reserved to contributions and its guard is untouched.
+# It is read by the compensation and restitution rules and by nothing else,
+# under the same repository guard as `pay`, for the same measured reason: the
+# engine loads a rule that confines a person for lacking a promised wage.
+# `compensate`, `hire`, `employ`, `contract`, `award`, `prize`, and `certify`
+# are not corpus names; `deserve` is refused again for its wage-for-work places.
+admits("promise").
+# <QUALIFICATIONS-COMPENSATION-ADMISSIONS-END>
 
 # ─── Article 0 [v0.3 NEW]: Closed relations (EDB/IDB separation) ───
 # These relations may ONLY be reached by derivation. A direct assertion of
@@ -257,6 +269,15 @@ derived_only("contradict").
 # lose, or allocation rule. It carries no amount; amounts are outside evidence.
 derived_only("insure").
 # <INCOME-SECURITY-DERIVED-END>
+# <QUALIFICATIONS-COMPENSATION-DERIVED-BEGIN>
+# [2026-09-05] `provide` (sabji) is the compensation conclusion and, with the
+# Restitution constant, the restitution conclusion; `grant` (zzauth8: agent,
+# action, resource) is the certificate — a certifying body attests a function
+# for a person. Both are conclusion-only and read by nothing: a certificate
+# gates no work and no status, and a compensation carries no amount.
+derived_only("provide").
+derived_only("grant").
+# <QUALIFICATIONS-COMPENSATION-DERIVED-END>
 # [v0.5] severe was the tenth and last open gate, and it was open in exactly
 # the way the v0.3 three were: a conclusion about an offence, written by
 # whoever held the pen, wearing the shape of a reported fact. Before this,
@@ -836,6 +857,39 @@ all $p: all $item: all $src: all $w: receives($p, $item, $src) & authorized($w, 
 all $p: all $carrier: all $scheme: all $a: all $peril: pay($p, Contribution, $carrier, $scheme) & authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme) & ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure($carrier, $p, $peril).
 all $p: all $carrier: all $scheme: all $a: all $peril: pay($p, Contribution, $carrier, $scheme) & authorized($a, InsuranceAdjudicator, $p) & observe($a, $peril, $p, $scheme) & ~($a = $carrier) & observe(Court, CarrierInsolvency, $carrier, $scheme) & ~observe(Court, ContributionFraud, $p, $scheme) -> insure(PublicGuarantee, $p, $peril).
 # <INCOME-SECURITY-RULES-END>
+
+# <QUALIFICATIONS-COMPENSATION-RULES-BEGIN>
+# [2026-09-05] Certificates and compensation above the floor. Three rules.
+#
+# THE CERTIFICATE is function-only because nothing reads it. A body authorised
+# as Certifier for a person attests a function at CertificationScope and is not
+# the person; that is the whole of it. Mandatory licensing stays where the
+# economic family put it, as a separately justified public power; no rule here
+# gates any work on a certificate, and the no-reader guard holds that line.
+#
+# COMPENSATION derives from the payer's promise plus an independent attestation
+# of the same kind at a stated basis by a writer authorised for that person and
+# not the payer — the same disequality the delivery and income-security
+# families carry, and for the same reason: a payer may not certify what it owes.
+# Wage, Profit, Return, Grant, Prize, Subsidy, and Incentive are constants, so a
+# promise of one kind attested as another derives nothing; a metric attested
+# where an incentive was promised is inert, and no head reads a metric.
+#
+# NO RULE HERE READS reward, false, or lose. The economic barriers already
+# refuse coupling compensation to any of them; these rules simply do not
+# mention them, and the guard keeps the record's readers to these three lines.
+#
+# RESTITUTION is the Court's individualised finding of CompensationFraud on the
+# exact attested basis. It blocks that compensation (shield polarity: an
+# accusation not adjudicated protects) and concludes provide($p, Restitution,
+# $payer) for that basis and nothing wider. Nothing reaches the floor.
+#
+# WHAT THIS DOES NOT DO. Nothing here proves competence, adequacy, payment, or
+# repayment, and no amount exists. Dormant in the shipped cast.
+all $body: all $function: all $p: authorized($body, Certifier, $p) & observe($body, $function, $p, CertificationScope) & ~($body = $p) -> grant($body, $function, $p).
+all $payer: all $kind: all $p: all $basis: all $a: promise($payer, $kind, $p) & authorized($a, CompensationAttester, $p) & observe($a, $kind, $p, $basis) & ~($a = $payer) & ~observe(Court, CompensationFraud, $p, $basis) -> provide($payer, $kind, $p).
+all $payer: all $kind: all $p: all $basis: all $a: promise($payer, $kind, $p) & authorized($a, CompensationAttester, $p) & observe($a, $kind, $p, $basis) & ~($a = $payer) & observe(Court, CompensationFraud, $p, $basis) -> provide($p, Restitution, $payer).
+# <QUALIFICATIONS-COMPENSATION-RULES-END>
 
 # <ECONOMIC-CONSTITUTION-RULES-BEGIN>
 # [2026-08-28] Direct legal effects only. Person-held barriers use

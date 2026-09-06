@@ -713,6 +713,18 @@ refuse; so a repository guard holds the record readable only by the two
 supplement rules, and the counterfactual copy that adds the hostile rule is
 that guard's watched failing control. Stratification does not move.
 
+The qualifications-and-compensation family adds one writable relation,
+`promise`, two conclusion-only heads, `grant` for the certificate and `provide`
+for compensation and restitution, and three rules. The certificate derives from
+an authorised certifier's attestation at certification scope with the certifier
+distinct from the person; compensation derives from the promise plus an
+independent attestation of the same instrument constant at a basis, under the
+Court's absent fraud finding on that basis; restitution derives from the same
+premises with the finding present. The purpose-limited-record guard is now a
+table covering `pay` and `promise`, each with its own hostile-reader fixture as
+watched failing control, and the no-reader list gains `insure`, `provide`, and
+`grant`. Stratification does not move.
+
 The economic, labour, property, and fiscal family follows the same discipline
 without adding one omnibus conclusion called an economy. Work freedom and
 labour protection, licensing, possession and acquisition, knowledge

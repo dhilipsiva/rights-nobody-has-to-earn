@@ -104,6 +104,15 @@ that person's own record can block that person's supplement; an accusation
 blocks nothing. There is still no number: the supplement is concluded here,
 never measured, and what it is worth is a question this record cannot hold.
 
+A certificate is not recognition either, and neither is a wage. A body can
+attest that someone can do a named thing, and a payer can promise a wage, a
+prize, a grant, or an incentive that an independent attester confirms. Both are
+concluded and both are read by nothing else: not into recognition, not into the
+floor, not into standing, the vote, or liberty, and not into each other. A
+metric attested where an incentive was promised concludes nothing, because the
+kinds are not the same word, and a child inherits neither the certificate nor
+the wage. There is still no number anywhere in it.
+
 ## Nothing to earn it back with
 
 All three doors close for the same reason: a person whose credibility has been voided

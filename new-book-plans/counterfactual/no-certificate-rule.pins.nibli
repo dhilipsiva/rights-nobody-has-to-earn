@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: the certificate rule deleted
+#
+# Remove the one rule that concludes a certificate from an authorised
+# certifier's attestation. The certificate disappears; compensation, the floor,
+# and personhood are exactly what they were, which is what makes the loss
+# attributable to the one line.
+:expect-pins 4
+authorized(Guild, Certifier, Oke).
+observe(Guild, Welding, Oke, CertificationScope).
+? grant(Guild, Welding, Oke).
+# => FALSE
+promise(Firm, Wage, Oke).
+authorized(Arbiter, CompensationAttester, Oke).
+observe(Arbiter, Wage, Oke, LabourBasis).
+? provide(Firm, Wage, Oke).
+# => TRUE
+? entitled(Adam, event { eats() }).
+# => TRUE
+? person(Adam).
+# => TRUE

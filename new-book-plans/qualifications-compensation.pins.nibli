@@ -1,0 +1,180 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Qualifications and compensation family - executable coverage pins
+#
+# Run just this suite:
+#   ./verify.sh --only new-book-plans/qualifications-compensation.pins.nibli
+#
+# The first section proves the family is DORMANT: the shipped record holds no
+# certificate attestation and no promised compensation, so nothing derives for
+# anybody. The rest prove it is not blind: supply the records and a certificate
+# or a compensation derives; strip any one conjunct and it stops; and through
+# every state the floor, recognition, standing, and liberty conclusions do not
+# move. A certificate gates nothing and a compensation carries no amount.
+#
+# Nothing here establishes competence, adequacy, payment, or repayment. Every
+# probe fact below is written by this file, not by the world.
+:expect-pins 42
+
+# ── The family ships dormant ────────────────────────────────────────────────
+? grant(Guild, Welding, Adam).
+# => FALSE
+? provide(Firm, Wage, Adam).
+# => FALSE
+? provide(Bela, Restitution, Firm).
+# => FALSE
+
+# ── A certificate derives, and is function-only because nothing reads it ─────
+authorized(Guild, Certifier, Oke).
+observe(Guild, Welding, Oke, CertificationScope).
+? grant(Guild, Welding, Oke).
+# => TRUE
+# Serve first: Oke is not on the roster and the certificate derived anyway.
+? person(Oke).
+# => FALSE
+# A person may not certify themself.
+authorized(Pim, Certifier, Pim).
+observe(Pim, Welding, Pim, CertificationScope).
+? grant(Pim, Welding, Pim).
+# => FALSE
+# An attestation outside the certification scope is not a certificate.
+authorized(Guild, Certifier, Rae).
+observe(Guild, Welding, Rae, LabourBasis).
+? grant(Guild, Welding, Rae).
+# => FALSE
+# An unauthorised body's attestation derives nothing.
+observe(Club, Welding, Sol, CertificationScope).
+? grant(Club, Welding, Sol).
+# => FALSE
+
+# ── Compensation derives from a promise and an independent attestation ────────
+promise(Firm, Wage, Tam).
+? provide(Firm, Wage, Tam).
+# => FALSE
+authorized(Arbiter, CompensationAttester, Tam).
+observe(Arbiter, Wage, Tam, LabourBasis).
+? provide(Firm, Wage, Tam).
+# => TRUE
+# The kinds are distinct constants: a wage attested is not a prize promised.
+? provide(Firm, Prize, Tam).
+# => FALSE
+promise(Fund, Prize, Tam).
+? provide(Fund, Prize, Tam).
+# => FALSE
+observe(Arbiter, Prize, Tam, CompetitionBasis).
+? provide(Fund, Prize, Tam).
+# => TRUE
+# The payer may not attest its own promise.
+promise(Firm, Wage, Ugo).
+authorized(Firm, CompensationAttester, Ugo).
+observe(Firm, Wage, Ugo, LabourBasis).
+? provide(Firm, Wage, Ugo).
+# => FALSE
+# An attestation with no promise derives nothing.
+authorized(Arbiter, CompensationAttester, Vin).
+observe(Arbiter, Grant, Vin, ResearchBasis).
+? provide(Fund, Grant, Vin).
+# => FALSE
+# An attester authorised for one person cannot attest for another.
+promise(Fund, Grant, Wen).
+observe(Arbiter, Grant, Wen, ResearchBasis).
+? provide(Fund, Grant, Wen).
+# => FALSE
+
+# ── Metric gaming ────────────────────────────────────────────────────────────
+# An incentive was promised; a metric was attested. The kinds differ, so
+# nothing derives, and no rule anywhere reads a metric attestation.
+promise(Firm, Incentive, Xan).
+authorized(Assessor, CompensationAttester, Xan).
+observe(Assessor, Metric, Xan, PerformanceBasis).
+? provide(Firm, Incentive, Xan).
+# => FALSE
+observe(Assessor, Incentive, Xan, PerformanceBasis).
+? provide(Firm, Incentive, Xan).
+# => TRUE
+? reward(Xan).
+# => FALSE
+
+# ── Inherited advantage ──────────────────────────────────────────────────────
+person(Kid).
+parent(Oke, Kid).
+parent(Tam, Kid).
+? grant(Guild, Welding, Kid).
+# => FALSE
+? provide(Firm, Wage, Kid).
+# => FALSE
+? entitled(Kid, event { eats() }).
+# => TRUE
+
+# ── Recognition, the floor, and liberty never move ───────────────────────────
+person(Zia).
+authorized(Guild, Certifier, Zia).
+observe(Guild, Welding, Zia, CertificationScope).
+promise(Firm, Wage, Zia).
+authorized(Arbiter, CompensationAttester, Zia).
+observe(Arbiter, Wage, Zia, LabourBasis).
+? grant(Guild, Welding, Zia).
+# => TRUE
+? provide(Firm, Wage, Zia).
+# => TRUE
+? reward(Zia).
+# => FALSE
+? prisoner(Zia).
+# => FALSE
+? entitled(Zia, event { eats() }).
+# => TRUE
+# An uncertified, uncompensated person holds exactly the same floor.
+person(Nul).
+? entitled(Nul, event { eats() }).
+# => TRUE
+? entitled(Nul, event { dwell() }).
+# => TRUE
+? grant(Guild, Welding, Nul).
+# => FALSE
+? prisoner(Nul).
+# => FALSE
+
+# ── Proportionate fraud restitution ──────────────────────────────────────────
+# The Court's finding on the attested basis blocks the wage and concludes
+# restitution by the person to the payer, for that basis.
+promise(Firm, Wage, Yul).
+authorized(Arbiter, CompensationAttester, Yul).
+observe(Arbiter, Wage, Yul, LabourBasis).
+? provide(Yul, Restitution, Firm).
+# => FALSE
+observe(Court, CompensationFraud, Yul, LabourBasis).
+? provide(Firm, Wage, Yul).
+# => FALSE
+? provide(Yul, Restitution, Firm).
+# => TRUE
+# A finding on another basis neither blocks this wage nor concludes restitution.
+promise(Firm, Wage, Ada).
+authorized(Arbiter, CompensationAttester, Ada).
+observe(Arbiter, Wage, Ada, LabourBasis).
+observe(Court, CompensationFraud, Ada, OtherBasis).
+? provide(Firm, Wage, Ada).
+# => TRUE
+? provide(Ada, Restitution, Firm).
+# => FALSE
+# The payer's own accusation is not a finding.
+observe(Firm, CompensationFraud, Ada, LabourBasis).
+? provide(Firm, Wage, Ada).
+# => TRUE
+# Restitution touches no floor entitlement.
+person(Yul).
+? entitled(Yul, event { eats() }).
+# => TRUE
+
+# ── Refusals: conclusions are conclusion-only and the record is closed ───────
+:refuse reasoning /derived-only/
+provide(Firm, Wage, Bela).
+:refuse reasoning /derived-only/
+grant(Guild, Welding, Bela).
+:refuse reasoning /not admitted vocabulary/
+agree(Firm, Bela, Wage, LabourBasis).
+
+# ── What the engine does NOT refuse, and why a repository guard exists ──────
+# A rule conditioning confinement on the absence of a promised wage LOADS; the
+# unguarded-compensation-reader fixture shows what it derives, and the
+# repository guard is what refuses it in the enacted text.
+:accept-scoped
+all $x: person($x) & ~promise(Firm, Wage, $x) -> prisoner($x).

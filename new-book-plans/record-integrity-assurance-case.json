@@ -1,7 +1,7 @@
 {
   "spdx": "CC-BY-4.0",
   "schema_version": 1,
-  "assertion_surface_contracts_sha256": "ad88041266bbd8cad738161b6a05902ec461c4d1220fdf317398f2533be05b47",
+  "assertion_surface_contracts_sha256": "a9bb3abb39fa8c569e545dd70abd2f66e8b7e899c47ea147c79f5336ba75b30e",
   "title": "Book 1 Record-Integrity Assurance Case",
   "top_claim": {
     "id": "RI-0",
@@ -647,8 +647,8 @@
     },
     {
       "id": "RC-5",
-      "title": "Delivery, contribution, and social-insurance records",
-      "description": "Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source. `pay` is the purpose-limited contribution record the income-security family reads: its fourth place is the scheme, it is consequential only beside an independent adjudicated event finding at the same scheme, and it is read by the two supplement rules and by nothing else under a repository guard.",
+      "title": "Delivery, contribution, social-insurance, and compensation records",
+      "description": "Teaching, the legacy claimed-receipt premise `hears`, and work premises used to derive learning or non-operative recognition; `hears` is not a qualifying future receipt model. `receives` is the recipient-side arrival premise the delivery family reads, stative so it asserts no act by the recipient, and consequential only beside an attestation by an authorised writer distinct from the named source. `pay` is the purpose-limited contribution record the income-security family reads: its fourth place is the scheme, it is consequential only beside an independent adjudicated event finding at the same scheme, and it is read by the two supplement rules and by nothing else under a repository guard. `promise` is the compensation record the qualifications-and-compensation family reads: its second place is the instrument kind, it is consequential only beside an independent attestation of the same kind at a basis, and it is read by the compensation and restitution rules and by nothing else under the same repository guard.",
       "assurance_claims": [
         "RI-1",
         "RI-2",
@@ -722,6 +722,7 @@
     "pay": "RC-5",
     "permanent": "RC-1",
     "person": "RC-2",
+    "promise": "RC-5",
     "public": "RC-2",
     "put": "RC-3",
     "ratifies": "RC-1",

@@ -716,6 +716,16 @@ logic itself would accept a rule that confined people for having no contribution
 history. What the supplement is worth, and whether it is paid, remain outside
 evidence and outside this book.
 
+Certificates and compensation are now executable interfaces as well. A
+certificate is concluded from an authorised certifier who is not the person and
+is then read by nothing, which is what makes it function-only rather than a
+status; compensation of a named kind is concluded from a payer's promise and an
+independent attestation of that kind and reads no verdict; neither passes to a
+child; and a court's individualised finding of fraud on the attested basis
+blocks that payment and concludes restitution for that basis alone. The
+licensing power the economic settlement already carried is untouched by this.
+Competence, adequacy, and payment remain outside evidence.
+
 Genuine physical scarcity is not a budget choice, a high price, a monopoly, a
 withheld stock, an administrative delay, or a provider failure. It needs
 contestable evidence about one resource and population after reasonable

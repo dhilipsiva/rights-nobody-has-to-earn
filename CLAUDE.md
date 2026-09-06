@@ -607,6 +607,22 @@ failing control. The family ships dormant, `person` is not a premise
 solvency, funding, payment, or arrival follows. Contract card:
 `new-book-plans/book-1-income-security-and-social-insurance-contract.md`.
 
+**Qualifications-and-compensation supersession, 2026-09-05.** `FS-CVF-019`
+supplies the positive side of the licensing and compensation walls: `promise/3`
+is the compensation record (payer, instrument kind, person — Wage, Profit,
+Return, Grant, Prize, Subsidy, Incentive as constants), `provide/3` the
+derived-only compensation and, with `Restitution`, restitution conclusion, and
+`grant/3` the derived-only certificate (certifier, function, person). A
+certificate derives from an authorised certifier distinct from the person and
+is read by nothing; compensation derives from the promise plus an independent
+same-kind attestation at a basis under the Court's absent fraud finding;
+restitution is basis-bound. Mandatory licensing stays with `FS-POW-061`. The
+purpose-limited-record guard is now table-driven over `pay` and `promise`, and
+the no-reader list holds `insure`, `provide`, and `grant`. Inherited advantage,
+metric gaming, and proportionate restitution are pinned. `certify`, `license`,
+`award`, `compensate`, and `hire` are not corpus names. Contract card:
+`new-book-plans/book-1-qualifications-and-compensation-contract.md`.
+
 #### Family, dependency, reproduction, and collective plurality — 2026-08-08
 
 **The family, dependency, reproduction, and collective/plurality baselines are

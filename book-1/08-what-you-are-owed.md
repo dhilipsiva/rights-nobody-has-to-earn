@@ -294,6 +294,17 @@ the carrier fails, the same record and the same finding conclude the supplement
 against the public guarantee instead. What the supplement is worth, whether it
 is funded, and whether it is paid are not in this record at all.
 
+Compensation above the floor — a wage, a profit, a return, a grant, a prize, a
+subsidy, an incentive — is one kind of record with the kind named in it, and it
+is concluded only when someone authorised for that person, who is not the
+payer, attests the same kind on a stated basis. The payer's own word concludes
+nothing. A certificate that a body attested someone can do a named thing is
+concluded the same way and is then read by nothing: it opens no door the floor
+keeps shut and shuts none the floor keeps open. Neither passes to a child. Only
+a court's finding of fraud on the attested basis blocks that payment, and it
+concludes restitution for that basis alone; the floor is not in the sentence.
+How much any of this is worth, and whether it is paid, are not in this record.
+
 **The debt says what it is about, and arrival is a separate conclusion.** The
 record names food, shelter, care, learning, safety, speech, belief, and company,
 and owes each to every person. The debt itself still does not establish that any

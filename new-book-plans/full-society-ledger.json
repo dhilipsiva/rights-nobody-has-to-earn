@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger — canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-09-05-income-security-v1",
+  "source_version": "fs-ledger-2026-09-06-qualifications-compensation-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "93cf05e9d2644a12e0d0a7a6c7677bb85b320f92280d6557917382f79fc1b542"
@@ -3108,6 +3108,71 @@
       "status": "routed",
       "severity": "serious",
       "consequence": "an adequacy or arrival sentence here would take a route that does not exist",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "Book 2's own gates",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [
+        "FS-CLR-06"
+      ]
+    },
+    {
+      "id": "FS-CLM-43",
+      "title": "Qualifications and compensation interface",
+      "claim": "A certificate derives only from an authorised certifier distinct from the person and is read by nothing; compensation of a named kind derives only from the payer's promise plus an independent attestation of that kind at a basis, reads no verdict, passes to no heir, and is blocked and answered by restitution only on the Court's individualised fraud finding for that basis; every floor, standing, recognition, and liberty conclusion is unchanged in every state.",
+      "layer": "constitutional-invariant",
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "legacy_row_ref": "FS-LGR-09",
+      "class_refs": [
+        "class-05",
+        "class-07"
+      ],
+      "posture": "Derived",
+      "route_ref": "FS-RTE-01",
+      "overlay": "safety",
+      "scope_bound": "the three rules over supplied records; no competence, adequacy, payment, repayment, licensing decision, correction workflow, or operation follows, and the enumerated non-extension is exactly that list",
+      "evidence_notes": [
+        "qualifications-compensation pins exercise certificate derivation and self-certification refusal, each compensation kind, payer self-attestation, kind mismatch, metric gaming, inherited advantage, restitution scoping, and floor invariance",
+        "the certificate-rule deletion and attester-independence counterfactuals show what each line prevents",
+        "the unguarded-compensation-reader counterfactual is the watched failing control of the repository guard that keeps the record readable only by the compensation and restitution rules"
+      ],
+      "public_claim_restriction": "no public claim that any certificate proves competence or that any compensation is adequate or paid; the interface is representable, not operated",
+      "applicability": "every person for whom a certifier attests a function or to whom a payer promises compensation, on or off the roster",
+      "status": "current",
+      "severity": "critical if the executable interface regresses, a certificate gains a reader, or the record gains another reader",
+      "consequence": "a credential would become a gate or a status, or a payer could certify what it owes",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "the three rules, the pin suite, the three counterfactuals, and the repository guard stay green under the full verifier",
+      "envelope_id": "FS-ENV-00",
+      "closure_requirement_refs": [],
+      "evidence_kind": "executable"
+    },
+    {
+      "id": "FS-CLM-44",
+      "title": "Certification, licensing, and compensation operations",
+      "claim": "Certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement.",
+      "layer": "book-2-operation",
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "legacy_row_ref": "FS-LGR-09",
+      "class_refs": [
+        "class-02"
+      ],
+      "posture": "Unestablished",
+      "unestablished_disposition": "routed-book-2",
+      "route_ref": "FS-RTE-02",
+      "overlay": "none",
+      "scope_bound": "routing only; a feasibility sentence with no route is a defect, not a gap",
+      "evidence_notes": [
+        "models and simulations plus operational assurance would be the routes, none available"
+      ],
+      "public_claim_restriction": "no competence, adequacy, or payment claim may be written in Book 1 at all",
+      "applicability": "Book 2 scope",
+      "status": "routed",
+      "severity": "serious",
+      "consequence": "an adequacy or competence sentence here would take a route that does not exist",
       "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
       "closure_condition": "Book 2's own gates",
       "envelope_id": "FS-ENV-00",
@@ -27154,7 +27219,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "c657e4575191723a32c1c441efc180732851f3ea709597872f4a6a6e070a10f1",
+    "artifact_sha256": "97e486cc90b5e6f5f8bb0f4a1398eda6195172d89413350b73375ce4ab1c1a64",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -27308,7 +27373,7 @@
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
     "evidence_ceiling": "Coverage contracts and pre-drafting checks only; no operation, delivery, feasibility, liveness, reader response, external truth, or calibration follows.",
-    "expected_constitutional_effect_count": 375
+    "expected_constitutional_effect_count": 383
   },
   "powers": [
     {
@@ -105438,6 +105503,56 @@
         "FS-CCE-374",
         "FS-CCE-375"
       ]
+    },
+    {
+      "id": "FS-CVF-019",
+      "title": "Qualifications, licensing, compensation, and positive incentives",
+      "state": "prose-landed",
+      "source_family_refs": [],
+      "card_refs": [],
+      "template_refs": [],
+      "refusal_refs": [],
+      "crosswalk_refs": [],
+      "formal_statement_refs": [
+        "4d7cff703264f7963c8e952cb9481f7e9ae585cf0066c66a924faf3e8ab88a3c",
+        "a3ef5d01985bb9c73a84b14c8c73c5edf161133e4b3140507cb6be44d8b5505d",
+        "544b185b6242c44a0c2ca4b8f77b9933fdd2000fb679cdf2fbe2f44fc7aaeb7b",
+        "fd887e3e94b4870e4753ccff43a5c413eef0ffd0abeb23d5aca8c0e410c263b8",
+        "a094df139e860c278b9805ff7b685bb90f92ed299d9a4619f91ed3872f0706f4",
+        "a22e9c021da3a646ceaa63bcb8e47275897f94bd3450dddbf8538a7ab78c486d"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/qualifications-compensation.pins.nibli::# Qualifications and compensation family - executable coverage pins"
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-certificate-rule.pins.nibli::# Counterfactual: the certificate rule deleted",
+        "new-book-plans/counterfactual/no-compensation-attester-independence.pins.nibli::# Counterfactual: the attester-independence conjunct stripped from the compensation rule",
+        "new-book-plans/counterfactual/unguarded-compensation-reader.pins.nibli::# Counterfactual: a hostile reader of the compensation record added"
+      ],
+      "prose_refs": [
+        "book-1/01-what-counts-as-evidence.md::Someone promised a payment of a named kind to someone.",
+        "book-1/08-what-you-are-owed.md::Compensation above the floor — a wage, a profit, a return, a grant, a prize, a",
+        "book-1/10-contribution.md::A certificate is not recognition either, and neither is a wage.",
+        "book-1/method.md::The qualifications-and-compensation family adds one writable relation,",
+        "book-1/00-opening-note.md::- **Certificate:** the conclusion that an authorised body attested a function"
+      ],
+      "part_v_refs": [
+        "book-1/15-the-five-joints.md::Certificates and compensation are now executable interfaces as well."
+      ],
+      "blocked_before_drafting": "Coverage, six formal statements, the executable pin suite, three counterfactuals, and the session-drafted, author-approved (2026-09-05) prose are complete. The family ships dormant in the supplied cast and establishes only bounded consequences from supplied records; no competence, adequacy, payment, repayment, or operation follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision"
+      ],
+      "effect_refs": [
+        "FS-CCE-376",
+        "FS-CCE-377",
+        "FS-CCE-378",
+        "FS-CCE-379",
+        "FS-CCE-380",
+        "FS-CCE-381",
+        "FS-CCE-382",
+        "FS-CCE-383"
+      ]
     }
   ],
   "dependencies": [
@@ -111629,6 +111744,71 @@
       ],
       "residual_citations": [],
       "controls": {}
+    },
+    {
+      "id": "FS-DFT-44",
+      "defect_id": "FS-DFT-44",
+      "title": "The engine accepts a rule conditioning liberty on the absence of a compensation record",
+      "applicability": "the compensation record and every rule that could read it",
+      "layer": "constitutional-invariant",
+      "applicable_gate_refs": [
+        "gate-b",
+        "gate-c",
+        "gate-d",
+        "gate-e"
+      ],
+      "status": "contained",
+      "severity": "material — work-conditioning of liberty re-enters by administration through exactly this shape",
+      "consequence": "a hostile ~promise reader of prisoner loads and derives confinement for every registered person without a promised wage; promise is a base relation and the stratifier has no negative cycle to refuse",
+      "owner_ref": "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 5. Formal migration contract",
+      "closure_condition": "the purpose-limited-record guard keeps promise readable only by the compensation and restitution rules, and its watched failing control keeps failing",
+      "defect_disposition": "prevented",
+      "response_stage": "implemented-in-assigned-route",
+      "affected_claim_ref": "FS-CLM-43",
+      "consequence_id": "compensation-conditioned-liberty",
+      "scope_id": "compensation-record",
+      "envelope_id": "FS-ENV-00",
+      "source_version": "fs-ledger-2026-09-05-income-security-v1",
+      "history": [],
+      "evidence_notes": [
+        "measured 2026-09-05: the hostile rule loads and derives prisoner(Bela) against the real constitution plus one line",
+        "the guard is the table-driven purpose-limited-record check in src/checks/repository.rs, negative-controlled at runtime by the fixture"
+      ],
+      "residual_citations": [],
+      "controls": {
+        "initiation_control_ref": "new-book-plans/counterfactual/unguarded-compensation-reader.pins.nibli::# Counterfactual: a hostile reader of the compensation record added"
+      }
+    },
+    {
+      "id": "FS-DFT-45",
+      "defect_id": "FS-DFT-45",
+      "title": "Certificate competence and compensation amount are outside evidence",
+      "applicability": "the certificate and compensation conclusions",
+      "layer": "constitutional-invariant",
+      "applicable_gate_refs": [
+        "gate-b",
+        "gate-c",
+        "gate-d",
+        "gate-e"
+      ],
+      "status": "named-boundary",
+      "severity": "material — a certificate that derives says nothing about competence and a compensation that derives says nothing about adequacy or payment",
+      "consequence": "the conclusions carry no competence, amount, or payment; adequacy and payment are Book 2 liveness and feasibility claims",
+      "owner_ref": "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 7. What this does not establish",
+      "closure_condition": "Book 2 supplies models and operational assurance in a calibrated envelope; nothing in Book 1 may close it",
+      "defect_disposition": "irreducible-limitation",
+      "response_stage": "detected",
+      "affected_claim_ref": "FS-CLM-43",
+      "consequence_id": "competence-and-amount-outside-evidence",
+      "scope_id": "qualifications-compensation",
+      "envelope_id": "FS-ENV-00",
+      "source_version": "fs-ledger-2026-09-05-income-security-v1",
+      "history": [],
+      "evidence_notes": [
+        "no numeric literal may appear in an enacted line, and the family adds none"
+      ],
+      "residual_citations": [],
+      "controls": {}
     }
   ],
   "receipts": [
@@ -111978,61 +112158,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance — no criterion any ratified text names is dropped — and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "92e4ab31be719a75c860340fb6ce0e9a47018df5",
-    "source_version": "fs-ledger-2026-09-05-income-security-v1",
-    "scope_sha256": "e91a6b37b7b03ba7665c093d02dbec4c6bef39bc1fb184826127f72f0a333445",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-09-05T14:31:44Z",
-    "scope_audit_ref": "FS-SAU-48",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
-    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-0f69b681f3041102069ea08527472991a472555155fb27ec74763166cd189227.json"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -112208,7 +112338,8 @@
       "applies_to_claim_refs": [
         "FS-CLM-03",
         "FS-CLM-24",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-44"
       ],
       "components": [
         {
@@ -112547,6 +112678,18 @@
     {
       "id": "FS-CCT-42",
       "claim_ref": "FS-CLM-42",
+      "required_profile_refs": [
+        "FS-CLR-06"
+      ]
+    },
+    {
+      "id": "FS-CCT-43",
+      "claim_ref": "FS-CLM-43",
+      "required_profile_refs": []
+    },
+    {
+      "id": "FS-CCT-44",
+      "claim_ref": "FS-CLM-44",
       "required_profile_refs": [
         "FS-CLR-06"
       ]
@@ -112992,6 +113135,28 @@
     {
       "id": "FS-MAL-42",
       "claim_ref": "FS-CLM-42",
+      "primary_route_ref": "FS-RTE-02",
+      "required_route_refs": [
+        "FS-RTE-02",
+        "FS-RTE-03",
+        "FS-RTE-05"
+      ],
+      "closure_profile_refs": [
+        "FS-CLR-06"
+      ]
+    },
+    {
+      "id": "FS-MAL-43",
+      "claim_ref": "FS-CLM-43",
+      "primary_route_ref": "FS-RTE-01",
+      "required_route_refs": [
+        "FS-RTE-01"
+      ],
+      "closure_profile_refs": []
+    },
+    {
+      "id": "FS-MAL-44",
+      "claim_ref": "FS-CLM-44",
       "primary_route_ref": "FS-RTE-02",
       "required_route_refs": [
         "FS-RTE-02",
@@ -127258,7 +127423,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "assessments": [
         {
@@ -127394,7 +127561,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "assessments": [
         {
@@ -127729,7 +127898,9 @@
         "FS-CLM-24",
         "FS-CLM-36",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127761,7 +127932,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127782,7 +127955,9 @@
         "FS-CLM-36",
         "FS-CLM-39",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127808,7 +127983,9 @@
         "FS-CLM-38",
         "FS-CLM-39",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127836,7 +128013,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127865,7 +128044,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -127921,7 +128102,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -128049,7 +128232,9 @@
         "FS-CLM-39",
         "FS-CLM-40",
         "FS-CLM-41",
-        "FS-CLM-42"
+        "FS-CLM-42",
+        "FS-CLM-43",
+        "FS-CLM-44"
       ],
       "control_refs": [],
       "defect_refs": [],
@@ -130933,6 +131118,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-0f69b681f3041102069ea08527472991a472555155fb27ec74763166cd189227.json"
+    },
+    {
+      "id": "FS-SAU-49-PENDING",
+      "title": "Qualifications and compensation pending current-source repository audit",
+      "source_version": "fs-ledger-2026-09-06-qualifications-compensation-v1",
+      "scope_sha256": "2fefa0bf49e12ae527de744b323956417332629fff701a085588f2abd5d17233",
+      "protocol_sha256": "caf310e545718de5728fdbe34491d2b34cf00900e69281de12c5e93aa643f44c",
+      "executed_at_utc": "2026-09-06T05:25:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -235134,6 +235363,2182 @@
       "source_refs": [
         "new-book-plans/book-1-income-security-and-social-insurance-contract.md::## 1. Decision",
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 8. Taxation, public finance, money, and insurance"
+      ]
+    },
+    {
+      "id": "FS-CCE-376",
+      "title": "Certificate as function-only attestation",
+      "effect_key": "certificate-function-only-attestation",
+      "applicability": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without certificate as function-only attestation, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [
+        "class-03"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-03"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "An attestation of a function at certification scope by a body authorised as certifier for that person, distinct from the person"
+      ],
+      "prohibited_inputs": [
+        "Self-certification, or any route where the certifier is the person",
+        "A certificate read as a gate on work, the floor, standing, the vote, liberty, or recognition",
+        "Any amount, rate, ratio, tier, or ranking, which are outside evidence"
+      ],
+      "permitted_downstream_effects": [
+        "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A certificate derives only from an authorised certifier's attestation of a function for a person who is not the certifier, and is read by no other rule. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-376-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive a certificate from a person's own attestation or from an unauthorised body; the rule must refuse.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# A person may not certify themself."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-376-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the certificate rule and show the certificate disappears while compensation, personhood, and the floor remain.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-certificate-rule.pins.nibli::# Counterfactual: the certificate rule deleted"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-377",
+      "title": "Certificate gates nothing",
+      "effect_key": "certificate-gates-nothing",
+      "applicability": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without certificate gates nothing, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-02",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "material-floor-access"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-04",
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-18",
+        "FS-ROL-17"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-18",
+        "FS-ROL-17",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Personhood in the supplied record for the floor entitlements"
+      ],
+      "prohibited_inputs": [
+        "A certificate read as a gate on work, the floor, standing, the vote, liberty, or recognition",
+        "Mandatory licensing smuggled in as a certificate reader rather than through its own justified power"
+      ],
+      "permitted_downstream_effects": [
+        "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "material-floor-access": {
+          "holder": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's holder term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "duty_bearer": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's duty bearer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "minimum": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's minimum term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "accessibility": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's accessibility term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "breach": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's breach term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "interim_continuity": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's interim continuity term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "remedy": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "appeal": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's appeal term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "audit": {
+            "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. The material floor access profile's audit term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A certified person and an uncertified person hold identical floor, standing, liberty, and recognition conclusions; a certificate is a conclusion nothing reads. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-377-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to move any floor, standing, or liberty conclusion by the presence or absence of a certificate; nothing may move.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# An uncertified, uncompensated person holds exactly the same floor."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-377-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the certificate rule and show every floor entitlement derives exactly as before.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-certificate-rule.pins.nibli::# Remove the one rule that concludes a certificate from an authorised"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-378",
+      "title": "Compensation on independent attestation",
+      "effect_key": "compensation-on-independent-attestation",
+      "applicability": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without compensation on independent attestation, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A compensation record naming the payer, the instrument kind, and the person",
+        "An attestation of the same kind at a stated basis by a writer authorised as compensation attester for that person, distinct from the payer",
+        "The Court's absence of an individualised compensation-fraud finding on that basis"
+      ],
+      "prohibited_inputs": [
+        "Payer self-attestation, or any route where the attester is the named payer",
+        "Any amount, rate, ratio, tier, or ranking, which are outside evidence"
+      ],
+      "permitted_downstream_effects": [
+        "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Above-floor compensation of a named kind derives only from the payer's promise plus an attestation of the same kind at a basis by an authorised attester distinct from the payer, and from nothing else. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-378-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive compensation from the payer's own attestation of its promise; the rule must refuse.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# The payer may not attest its own promise."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-378-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Strip the attester-independence conjunct and show the payer certifying what it owes starts counting while the restitution rule still refuses it.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-compensation-attester-independence.pins.nibli::# Counterfactual: the attester-independence conjunct stripped from the compensation rule"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-379",
+      "title": "Compensation reads no verdict",
+      "effect_key": "compensation-reads-no-verdict",
+      "applicability": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without compensation reads no verdict, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [
+        "class-07"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A compensation record naming the payer, the instrument kind, and the person",
+        "An attestation of the same kind at a stated basis by a writer authorised as compensation attester for that person, distinct from the payer"
+      ],
+      "prohibited_inputs": [
+        "Any reading of reward, false, or lose into a compensation or certificate conclusion",
+        "Reuse of the compensation record as a standing, worth, risk, allocation, or political key"
+      ],
+      "permitted_downstream_effects": [
+        "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "No compensation or certificate rule reads recognition, the credibility verdict, or the loss leaf, and no rule reads the compensation record except the compensation and restitution rules. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-379-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive compensation from an attestation with no promise, or from any verdict; nothing follows.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# An attestation with no promise derives nothing."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-379-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Add a rule that conditions confinement on the absence of a promised wage; the engine accepts it and the repository guard is what refuses it, with this fixture as the guard's watched failing control.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/unguarded-compensation-reader.pins.nibli::# Counterfactual: a hostile reader of the compensation record added"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-380",
+      "title": "Instrument kind distinctness",
+      "effect_key": "instrument-kind-distinctness",
+      "applicability": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without instrument kind distinctness, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-05",
+      "secondary_class_refs": [],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A compensation record naming the payer, the instrument kind, and the person",
+        "An attestation of the same kind at a stated basis by a writer authorised as compensation attester for that person, distinct from the payer"
+      ],
+      "prohibited_inputs": [
+        "A kind-agnostic compensation conclusion",
+        "Conversion of one instrument into another by attestation"
+      ],
+      "permitted_downstream_effects": [
+        "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "Wage, profit, return, grant, prize, subsidy, and incentive are distinct constants on one record; a promise of one kind attested as another derives nothing. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-380-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive a prize from a wage attestation or a wage from a prize promise; the rule must refuse.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# The kinds are distinct constants: a wage attested is not a prize promised."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-380-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Strip the independence conjunct and show the kind binding is untouched: the only change is who may attest.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-compensation-attester-independence.pins.nibli::# The independent route still works, so this fixture removes a guard rather"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-381",
+      "title": "Inherited advantage refused",
+      "effect_key": "inherited-advantage-refused",
+      "applicability": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without inherited advantage refused, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-01",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-01",
+        "FS-DOM-05"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-09"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-02",
+        "FS-ROL-09",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "Personhood and parentage in the supplied record"
+      ],
+      "prohibited_inputs": [
+        "Parentage, marriage, household, or succession as a premise of any certificate or compensation conclusion"
+      ],
+      "permitted_downstream_effects": [
+        "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A parent's certificate or compensation derives nothing for a child; no rule passes either conclusion by parentage, marriage, or succession. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-381-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive a child's certificate or compensation from a parent's; nothing follows and the child's floor is intact.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# ── Inherited advantage"
+      },
+      "counterfactual": {
+        "id": "FS-CCE-381-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Delete the certificate rule and show that nothing else ever concluded a certificate, so there was never a route to inherit one.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-certificate-rule.pins.nibli::# and personhood are exactly what they were, which is what makes the loss"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-382",
+      "title": "Metric attestation inert",
+      "effect_key": "metric-attestation-inert",
+      "applicability": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without metric attestation inert, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "A compensation record naming the payer, the instrument kind, and the person",
+        "An attestation of the promised kind at a basis"
+      ],
+      "prohibited_inputs": [
+        "A metric, score, ranking, or productivity attestation read by any rule",
+        "A gamed metric ratcheting any conclusion"
+      ],
+      "permitted_downstream_effects": [
+        "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "A metric or performance attestation where an incentive was promised derives nothing, and no rule reads a metric attestation into recognition, standing, the floor, liberty, or allocation. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-382-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive an incentive from a metric attestation, or to move recognition by one; nothing follows.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# An incentive was promised; a metric was attested. The kinds differ, so"
+      },
+      "counterfactual": {
+        "id": "FS-CCE-382-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "With a hostile reader added, show that even confinement conditioned on the record is a matter of the promise alone and never of a metric.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/unguarded-compensation-reader.pins.nibli::# negative cycle for the stratifier to refuse — and it derives. This fixture is"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+      ]
+    },
+    {
+      "id": "FS-CCE-383",
+      "title": "Proportionate fraud restitution",
+      "effect_key": "proportionate-fraud-restitution",
+      "applicability": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "critical if this qualification or compensation effect is omitted or collapsed",
+      "consequence": "Without proportionate fraud restitution, a credential or a payment could re-enter as a gate, a rank, or a status, or be certified by the party that owes it.",
+      "owner_ref": "new-book-plans/book-1-constitutional-coverage-map.md::Maintain completed constitutional coverage rows",
+      "closure_condition": "FS-CVF-019 remains formalized and mechanically re-audited without establishing competence, adequacy, payment, or repayment",
+      "posture": "Derived",
+      "primary_class_ref": "class-04",
+      "secondary_class_refs": [
+        "class-05"
+      ],
+      "profiles": [
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-43"
+      ],
+      "domain_refs": [
+        "FS-DOM-05",
+        "FS-DOM-07"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-17",
+        "FS-ROL-14",
+        "FS-ROL-13",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34"
+      ],
+      "permitted_inputs": [
+        "The Court's individualised compensation-fraud finding on the attested basis",
+        "A compensation record naming the payer, the instrument kind, and the person",
+        "An attestation of the same kind at a stated basis by a writer authorised as compensation attester for that person, distinct from the payer"
+      ],
+      "prohibited_inputs": [
+        "Any accusation, pattern, or payer assertion",
+        "Restitution wider than the attested instrument and found basis",
+        "Any effect on a floor entitlement"
+      ],
+      "permitted_downstream_effects": [
+        "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The lawful source term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "trigger": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The trigger term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "evidence_rule": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The evidence rule term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "bounded_effect": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The bounded effect term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The forbidden preconditions term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "immediate_access": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The immediate access term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "record_boundary": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The record boundary term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "challenge_correction": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The challenge correction term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "independent_check": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The independent check term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "failure_default": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The failure default term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        },
+        "end_or_retention": {
+          "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The end or retention term binds this direct effect to its cited contract card and ratified economic source and to nothing else.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+            "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+          ]
+        }
+      },
+      "profile_terms": {
+        "consequential-record": {
+          "writer": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's writer term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "permitted_basis": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's permitted basis term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's visibility and privacy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "challenge": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's challenge term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "correction": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's correction term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "retention": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's retention term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "deletion_control": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's deletion control term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "external_assurance": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's external assurance term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "independent_recipient": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's independent recipient term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "action_duty": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's action duty term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's continuity and remedy term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          },
+          "temporal_status": {
+            "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. The consequential record profile's temporal status term keeps this direct effect bounded, contestable, and separate from operation.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+              "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "The Court's individualised finding of compensation fraud on the attested basis blocks that compensation and concludes restitution by the person to the payer for that basis and nothing wider; a finding on another basis does neither, and the floor is untouched. Only the cited contract card, the ratified economic source, and their bounded supplied inputs authorize this effect; no repository record authenticates competence, a payment, or any outside truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-383-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to conclude restitution from an accusation, a payer assertion, or a finding on another basis; nothing follows.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/qualifications-compensation.pins.nibli::# A finding on another basis neither blocks this wage nor concludes restitution."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-383-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Strip the independence conjunct from the compensation rule and show the restitution rule still requires an independent attested basis.",
+        "source_refs": [
+          "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+          "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-compensation-attester-independence.pins.nibli::# Only the compensation rule lost its guard: the restitution rule still refuses"
+      },
+      "part_v_status": "prose-landed",
+      "book2_handoff": "Book 2 owns certification and licensing administration, standards and examination bodies, wage-setting, incentive programme design and evaluation, and restitution enforcement; no competence, adequacy, payment, repayment, operation, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-qualifications-and-compensation-contract.md::## 1. Decision",
+        "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 3. Work, labour, qualifications, and incentives"
       ]
     }
   ],

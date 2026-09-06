@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: a hostile reader of the compensation record added
+#
+# The constitution plus one rule that conditions confinement on the absence of
+# a promised wage. The engine accepts it — promise is a base relation with no
+# negative cycle for the stratifier to refuse — and it derives. This fixture is
+# the watched failing control for the purpose-limited-record guard on `promise`:
+# the guard must reject this copy and accept the real constitution.
+:expect-pins 4
+? prisoner(Bela).
+# => TRUE
+? prisoner(Cira).
+# => TRUE
+promise(Firm, Wage, Bela).
+? prisoner(Bela).
+# => FALSE
+? entitled(Cira, event { eats() }).
+# => TRUE

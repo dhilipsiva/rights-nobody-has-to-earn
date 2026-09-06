@@ -10,7 +10,8 @@ There is nowhere to put it.
 Here is the whole list. Someone is a person. Someone was born. Someone is at
 first contact, within the society's jurisdiction, or under its effective control.
 Someone worked, or taught, or heard their teacher. Someone paid a contribution to a
-carrier under a named scheme. Someone injured
+carrier under a named scheme. Someone promised a payment of a named kind to someone.
+A body attested that someone can do a named thing. Someone injured
 someone. Someone attacked someone, or was cruel to them. A body passed judgment. An
 auditor documented what they found, and cited the grounds they looked on. A court
 tied a case to a person. Someone lied. Someone exposed something. A person

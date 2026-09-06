@@ -322,6 +322,13 @@ below.
   a person against a found life event. It carries no amount and proves no
   payment.
 
+- **Certificate:** the conclusion that an authorised body attested a function
+  for a person. It is read by nothing, gates nothing, and is not a licence.
+
+- **Compensation record:** an entry that a payer promised a wage, profit,
+  return, grant, prize, subsidy, or incentive to a person. It concludes a
+  payment only beside an independent attestation and carries no amount.
+
 - **Shield:** protection against imprisonment while an exposure of an authority
   stands, subject to the chapter's stated boundaries.
 

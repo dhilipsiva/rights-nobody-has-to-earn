@@ -389,6 +389,12 @@ but never replaces, this rule.
     operations; and shock testing under the declared reference envelope. Book 1
     supplies no amount, adequacy, funding, payment, or arrival claim and Book 2
     may not read one back into it.
+  - Operate the qualification and compensation interfaces Book 1 formalises
+    (FS-CVF-019): certification and licensing administration, standards and
+    examination bodies, accessible alternative-proof routes, anti-cartel
+    monitoring, wage-setting and wage-claim adjudication, incentive programme
+    design and evaluation with metric-gaming controls, and restitution
+    enforcement. Book 1 supplies no competence, adequacy, or payment claim.
   - Operate direct, indirect, systemic, multiple, intersectional, associative,
     accommodation, segregation, harassment, and retaliation routes across every
     public/delegated function and the named employment, housing, education,

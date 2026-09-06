@@ -74,7 +74,7 @@ const EXPECTED_STATUS: &str = "stage_4_repository_audit_complete";
 const STAGE_LABEL: &str = "stage 4 machinery";
 const STRUCTURAL_CONTROL_COUNT: usize = 274;
 const EXPECTED_POWER_COUNT: usize = 210;
-const EXPECTED_EFFECT_COUNT: usize = 375;
+const EXPECTED_EFFECT_COUNT: usize = 383;
 const EXPECTED_TEMPLATE_COUNT: usize = 1;
 const EXPECTED_REFUSAL_COUNT: usize = 19;
 const EXPECTED_CROSSWALK_COUNT: usize = 8;
@@ -5096,7 +5096,7 @@ fn validate_power_binding(
     let binding = &source.power_source_inventory;
     if binding.artifact_ref != POWER_MANIFEST
         || binding.artifact_sha256
-            != "c657e4575191723a32c1c441efc180732851f3ea709597872f4a6a6e070a10f1"
+            != "97e486cc90b5e6f5f8bb0f4a1398eda6195172d89413350b73375ce4ab1c1a64"
         || binding.source_commit != "36ed92c58877cffa5a11928ad200f0ca9a604820"
         || binding.inventory_status != INVENTORY_STATUS
         || binding.row_count != 237
@@ -9315,7 +9315,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&effect_policy, "constitutional-effect classification")?
-        != "c5251d3e997c7361cba923f81c6a542e7e9728de62da95cb2c09d12561ac12ce"
+        != "23873d4dc4d568c01daa05c88802e53d7c3625a2dd32a18444549140eb4c821b"
     {
         return Err(LedgerError::new(
             "constitutional-effect taxonomy, profiles, claims, or domains differ from checker policy",
@@ -9341,7 +9341,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&coverage_policy, "coverage-family policy")?
-        != "2fca2cf8956bcbc7e8235bea3ff6e5c91c58da31ca04e93144b003419ef7a51e"
+        != "183c8661710c3b2e22c86a5c91d77e3233e930ba38a3c7e222782b65a0ed9914"
     {
         return Err(LedgerError::new(
             "coverage-family state, partitions, or formal surfaces differ from checker policy",
@@ -9865,8 +9865,8 @@ fn expected_defect_gate_refs(id: &str) -> LedgerResult<&'static [&'static str]> 
             let number = id
                 .strip_prefix("FS-DFT-")
                 .and_then(|value| value.parse::<u8>().ok());
-            // FS-DFT-42/43 (income security, 2026-09-05) are Book-1-onward.
-            if number.is_some_and(|value| (1..=43).contains(&value)) {
+            // FS-DFT-42/43 (income security) and FS-DFT-44/45 (qualifications and compensation), 2026-09-05, are Book-1-onward.
+            if number.is_some_and(|value| (1..=45).contains(&value)) {
                 Ok(BOOK_ONE_ONWARD)
             } else {
                 Err(LedgerError::new(format!(

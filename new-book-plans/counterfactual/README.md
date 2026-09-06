@@ -243,3 +243,25 @@ constitutional edit like the delivery fixtures; the deletion uses `grep -vFx`
 on the exact supplement rule line and the changed-line fixture replaces the
 exact `& ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) ->
 insure($carrier, $p, $peril).` tail with the same tail minus the disequality.
+
+## Qualifications and compensation fixtures
+
+The qualifications-and-compensation suite adds one deletion fixture, one
+changed-line fixture, and one added-line fixture:
+
+- `no-certificate-rule` removes only the rule that concludes a certificate from
+  an authorised certifier's attestation; compensation and the floor are retained
+  as controls.
+- `no-compensation-attester-independence` strips only the `~($a = $payer)`
+  conjunct from the compensation rule, so a payer attesting its own promise
+  starts counting; the independent route and the restitution rule's own refusal
+  are the controls.
+- `unguarded-compensation-reader` is the constitution *plus* a rule that
+  conditions confinement on the absence of a promised wage. The engine accepts
+  it; it is the watched failing control for the purpose-limited-record guard on
+  `promise`. Regenerate like `unguarded-pen`: copy, then append
+  `all $x: person($x) & ~promise(Firm, Wage, $x) -> prisoner($x).`
+  with no leading blank line.
+
+The first two are regenerated from `constitution.nibli` after every
+constitutional edit like the income-security fixtures.
