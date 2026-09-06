@@ -330,21 +330,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Authorize qualifications, licensing, compensation, and positive incentives
-  without ranking people.**
-  - Permit mandatory licensing only for evidenced serious safety, fiduciary, or
-    core-public-function risk; otherwise prefer certification. Require relevant
-    standards, accessible alternative proof, portability, independent challenge,
-    expiry/renewal, anti-cartel safeguards, and a fresh temporal contract.
-  - Implement wages, profits, savings, returns, grants, prizes, subsidies, and
-    bounded incentives through distinct legal relations. No rule may read
-    `reward`, `false`, `lose`, or missing recognition to alter compensation,
-    property, benefits, pensions, insurance, authority, or political weight.
-  - Test valid and pretextual licensing, credential-cartel capture, accessible
-    alternative proof, inherited advantage, metric gaming, and proportionate
-    fraud restitution. Recognition remains binary, arity-one, non-ranked, and
-    unread.
-
 - [ ] **Constrain concentrated private and hybrid power.**
   - Preserve equality's named direct private reach without a dominance finding.
     Separately create an independent, contestable, function-specific public-scale
