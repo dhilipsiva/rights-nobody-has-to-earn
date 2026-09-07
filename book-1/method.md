@@ -725,6 +725,18 @@ table covering `pay` and `promise`, each with its own hostile-reader fixture as
 watched failing control, and the no-reader list gains `insure`, `provide`, and
 `grant`. Stratification does not move.
 
+The public-scale vocabulary family adds one conclusion-only head, `member`, and a
+ground rule for each named trigger kind, function class, and lawful pairing of
+reach to tier. The finding's own rule gains a membership condition on each of the
+three, so the token its attesters agree on has to be one the constitution names.
+Measured before the change: a finding whose only stated ground was a revenue
+threshold carried the result, the holder authority, and every duty. The heads are
+ground and the relation is conclusion-only, because admitting it would let a
+supplied record name a ground of its own. Since the audit of what may be
+concluded reconciles relations rather than heads, it would not see a further
+ground rule appear, so a separate repository check names the permitted heads and
+a fixture adding a revenue ground is its watched failing control.
+
 The economic, labour, property, and fiscal family follows the same discipline
 without adding one omnibus conclusion called an economy. Work freedom and
 labour protection, licensing, possession and acquisition, knowledge

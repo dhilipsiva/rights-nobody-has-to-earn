@@ -39,6 +39,7 @@ pub(crate) fn check(context: &Context) -> Result<Report, Error> {
     let mut messages = check_prose(context)?;
     messages.extend(check_constitution(&context.read(KB)?)?);
     messages.extend(check_contribution_reader_control(context)?);
+    messages.extend(check_vocabulary_widening_control(context)?);
     messages.extend(check_control_scopes(context)?);
     Ok(Report { messages })
 }
@@ -279,7 +280,138 @@ fn check_constitution(source: &str) -> Result<Vec<String>, Error> {
         ));
     }
 
+    // The public-scale vocabularies are closed by the source file rather than by
+    // a supplied disposition, and the assertion surface reconciles relations
+    // rather than heads — a sixteenth `member` rule naming a revenue threshold
+    // as a ratified ground would pass it silently. Widening a legal category
+    // must be as visible as widening a relation, which is Article 0a's argument
+    // applied one level up. The unnamed-public-scale-trigger fixture is this
+    // guard's watched failing control.
+    if body_hits(&rules, "member").is_empty() {
+        return Err(Error::new(
+            "the public-scale vocabulary guard is vacuous\nno rule reads member, so the finding no longer gates on a named ground",
+        ));
+    }
+    let mut produced: Vec<(&str, &str, usize, &str)> = Vec::new();
+    for rule in &rules {
+        let head = rule.head.trim();
+        let Some(rest) = head.strip_prefix("member(") else {
+            continue;
+        };
+        let Some(inner) = rest.strip_suffix(").") else {
+            return Err(Error::new(format!(
+                "a member conclusion is not a closed vocabulary head\n{}: {}",
+                rule.line, rule.raw
+            )));
+        };
+        let Some((token, vocabulary)) = inner.split_once(", ") else {
+            return Err(Error::new(format!(
+                "a member conclusion is not a two-place vocabulary head\n{}: {}",
+                rule.line, rule.raw
+            )));
+        };
+        if token.starts_with('$') || vocabulary.starts_with('$') {
+            return Err(Error::new(format!(
+                "a member conclusion carries a variable — the vocabulary must be ground\n{}: {}\n\
+                 A variable head lets a supplied record name its own ground.",
+                rule.line, rule.raw
+            )));
+        }
+        produced.push((token, vocabulary, rule.line, rule.raw));
+    }
+    for (token, vocabulary, line, raw) in &produced {
+        let Some((_, members)) = PUBLIC_SCALE_VOCABULARIES
+            .iter()
+            .find(|(name, _)| name == vocabulary)
+        else {
+            return Err(Error::new(format!(
+                "a public-scale vocabulary that this guard does not know has gained a member\n{line}: {raw}"
+            )));
+        };
+        if !members.contains(token) {
+            return Err(Error::new(format!(
+                "a public-scale vocabulary has grown a member\n{line}: {raw}\n\
+                 {vocabulary} is closed by the ratified list; widening it is an author ruling, not an edit.",
+            )));
+        }
+    }
+    for (vocabulary, members) in PUBLIC_SCALE_VOCABULARIES {
+        for member in members {
+            let count = produced
+                .iter()
+                .filter(|(token, name, _, _)| token == member && name == &vocabulary)
+                .count();
+            if count != 1 {
+                return Err(Error::new(format!(
+                    "{member} is concluded into {vocabulary} by {count} rules — the ratified list needs exactly one each\n\
+                     A missing rule silently narrows the grounds a finding may state."
+                )));
+            }
+        }
+        messages.push(format!(
+            "{vocabulary} is closed at its ratified members ({} rules, each ground)",
+            members.len()
+        ));
+    }
+
     Ok(messages)
+}
+
+/// The public-scale finding's named grounds. Each member has exactly one ground
+/// vocabulary rule in the constitution, and nothing else may conclude `member`.
+const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 3] = [
+    (
+        "PublicScaleTriggerVocabulary",
+        &[
+            "EssentialityTrigger",
+            "DominanceTrigger",
+            "GatekeepingTrigger",
+            "DependencyTrigger",
+            "LockInTrigger",
+            "NetworkEffectsTrigger",
+            "InformationAsymmetryTrigger",
+            "NoMeaningfulExitTrigger",
+        ],
+    ),
+    (
+        "PublicScaleFunctionClassVocabulary",
+        &[
+            "PublicFacingFunctionClass",
+            "DelegatedPublicFunctionClass",
+            "EssentialFunctionClass",
+            "GatekeepingFunctionClass",
+            "SystemicallyControllingFunctionClass",
+        ],
+    ),
+    (
+        "PublicScaleTierAllocationVocabulary",
+        &[
+            "SingleRegionReachUnderRegionalTier",
+            "CrossRegionalReachUnderCommonTier",
+        ],
+    ),
+];
+
+/// Watched failing control for the vocabulary guard: the fixture adds one
+/// sixteenth rule making a revenue threshold a named ground, and the guard must
+/// trip on that head rather than on anything else.
+fn check_vocabulary_widening_control(context: &Context) -> Result<Vec<String>, Error> {
+    const PATH: &str = "new-book-plans/counterfactual/unnamed-public-scale-trigger.nibli";
+    let source = context.read(PATH)?;
+    match check_constitution(&source) {
+        Err(error) if error.to_string().starts_with("a public-scale vocabulary has grown a member") => {
+            Ok(vec![
+                "watched failing control: unnamed-public-scale-trigger trips the vocabulary guard"
+                    .to_string(),
+            ])
+        }
+        Err(error) => Err(Error::new(format!(
+            "the vocabulary control failed for the wrong reason\n{error}"
+        ))),
+        Ok(_) => Err(Error::new(format!(
+            "the vocabulary guard is broken\n{PATH} names a revenue threshold as a ratified ground and the guard accepted it"
+        ))),
+    }
 }
 
 /// Purpose-limited records and the only heads that may read them.

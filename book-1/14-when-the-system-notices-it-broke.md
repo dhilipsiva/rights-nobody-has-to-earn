@@ -50,6 +50,17 @@ empty supplied record while saying nothing conclusive about the world the record
 supposed to describe.** A route can be real, an alarm can be formally correct, and
 operation can still be entirely absent.
 
+There is a second shape of the same limit, and the finding that binds concentrated
+private power is the clearest case of it. That finding must now state one of the
+grounds this design names — that a function is essential, that one actor dominates
+it, that people cannot leave it, and so on — and a finding that names none of them
+carries nothing. What the design checks is which reason was given. Whether the reason
+is true of the world is not something it can reach, and no amount of agreement among
+the people attesting it makes it so. Independent bodies concurring that a market is
+closed are making statements about it, not closing it. The gain is real and it is
+narrow: a claim of public-scale power can no longer be made in words of the claimant's
+own choosing, which is a different thing from being made truthfully.
+
 ## The one that fired on the wrong people
 
 The second marker, from Chapter 11, spent this design's whole life until now as the

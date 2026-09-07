@@ -305,6 +305,28 @@ a court's finding of fraud on the attested basis blocks that payment, and it
 concludes restitution for that basis alone; the floor is not in the sentence.
 How much any of this is worth, and whether it is paid, are not in this record.
 
+The power to bind concentrated private power is not open-ended either, and this
+is where it stopped being a form of words. A finding that a private function
+carries public duties has to state its ground, and the grounds are named in the
+constitution itself: that the function is essential, that one actor dominates
+it, that it is the gate others must pass, that people depend on it, that they
+are locked into it, that its worth to each user comes from all the others
+already being there, that one side knows what the other cannot, or that leaving
+is not really available. A finding that states some other ground states nothing
+this design can read. Being large is not on the list. Neither is being
+profitable, nor being organised one way rather than another — a private body may
+be enormous and bind nobody, and a small one standing in a doorway may bind a
+great deal.
+
+The same holds for what may be bound. A finding reaches a function that faces
+the public, or is carried on the public's behalf under delegation, or is
+essential, or is the gate, or steers a whole system — and reaches nothing else,
+so ordinary private life cannot be relabelled into range. And it holds for who
+may make it: a gatekeeper whose reach stops inside one region is that region's
+to find, and one whose reach crosses regions belongs to the common tier. Pair
+them the other way and the finding carries nothing at all. What none of this
+reaches is whether the ground is true of anybody.
+
 **The debt says what it is about, and arrival is a separate conclusion.** The
 record names food, shelter, care, learning, safety, speech, belief, and company,
 and owes each to every person. The debt itself still does not establish that any

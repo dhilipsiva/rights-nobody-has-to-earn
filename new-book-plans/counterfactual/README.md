@@ -265,3 +265,50 @@ changed-line fixture, and one added-line fixture:
 
 The first two are regenerated from `constitution.nibli` after every
 constitutional edit like the income-security fixtures.
+
+## Public-scale vocabulary fixtures
+
+The public-scale vocabulary suite adds three changed-line fixtures and one
+added-line fixture. All four use the same composed FS-POW-064 finding, whose
+record names a trigger, a function class and a tier allocation that the ratified
+vocabularies do not contain:
+
+- `no-public-scale-trigger-vocabulary` strips only
+  `member($trigger, PublicScaleTriggerVocabulary) & ` from the reviewed-result
+  rule;
+- `no-public-scale-function-class-vocabulary` strips only
+  `member($function_class, PublicScaleFunctionClassVocabulary) & `; and
+- `no-public-scale-tier-allocation-vocabulary` strips only
+  `member($allocation, PublicScaleTierAllocationVocabulary) & `.
+
+Each pairs the flipped verdict with the membership query that stays FALSE, so a
+green result cannot come from having also broken the vocabulary. Against the
+real constitution the same finding is refused; here it derives while the token it
+names is still not a member. That pair is what makes "the finding may state only
+a named ground" an executed claim rather than an attested one. Regenerate them
+from `constitution.nibli` after every constitutional edit, asserting the
+occurrence count first — each of the three conjuncts occurs exactly once in the
+whole file, and a replace that matches nothing writes a byte-identical copy.
+
+`unnamed-public-scale-trigger` is the constitution *plus* one more ground rule,
+for a token no ratified vocabulary contains. Regenerate like
+`unguarded-pen`: copy, then append
+
+```
+all $source: all $record: observe($source, $record, EconAnnualRevenueOver500M, PublicScaleTriggerScope) -> member(EconAnnualRevenueOver500M, PublicScaleTriggerVocabulary).
+```
+
+with no leading blank line. Its pins show the finding deriving and the token
+holding membership, which is the harm the enumeration exists to prevent: the
+vocabulary grows by one source edit and the finding stops noticing. It is the
+watched failing control for the producer-set check in `src/checks/repository.rs`,
+which rejects a `member` head that is not ground, names a set the checker does
+not know, names a token its set does not list, or produces a listed token more
+than once.
+
+Every fixture whose record composes an FS-POW-064 finding carries the function
+class and the tier allocation on the record and the temporal record as well as
+on the result, because both the current-selection rule and the reviewed-result
+rule read them there. A record that carries only the result-side attestation
+derives nothing, and every negative case above it would then pass for the wrong
+reason.

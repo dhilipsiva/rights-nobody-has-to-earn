@@ -74,7 +74,7 @@ const EXPECTED_STATUS: &str = "stage_4_repository_audit_complete";
 const STAGE_LABEL: &str = "stage 4 machinery";
 const STRUCTURAL_CONTROL_COUNT: usize = 274;
 const EXPECTED_POWER_COUNT: usize = 210;
-const EXPECTED_EFFECT_COUNT: usize = 383;
+const EXPECTED_EFFECT_COUNT: usize = 386;
 const EXPECTED_TEMPLATE_COUNT: usize = 1;
 const EXPECTED_REFUSAL_COUNT: usize = 19;
 const EXPECTED_CROSSWALK_COUNT: usize = 8;
@@ -5096,7 +5096,7 @@ fn validate_power_binding(
     let binding = &source.power_source_inventory;
     if binding.artifact_ref != POWER_MANIFEST
         || binding.artifact_sha256
-            != "97e486cc90b5e6f5f8bb0f4a1398eda6195172d89413350b73375ce4ab1c1a64"
+            != "ffc6b0a72e1adb76f82225a48f15164842ea561573e6b783b074eaa57f43e75b"
         || binding.source_commit != "36ed92c58877cffa5a11928ad200f0ca9a604820"
         || binding.inventory_status != INVENTORY_STATUS
         || binding.row_count != 237
@@ -9315,7 +9315,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&effect_policy, "constitutional-effect classification")?
-        != "23873d4dc4d568c01daa05c88802e53d7c3625a2dd32a18444549140eb4c821b"
+        != "fd5c4aed53edb4462cafb4ffb58f03a84ef100631ab768d89fd0fbaa196bdc7d"
     {
         return Err(LedgerError::new(
             "constitutional-effect taxonomy, profiles, claims, or domains differ from checker policy",
@@ -9341,7 +9341,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&coverage_policy, "coverage-family policy")?
-        != "183c8661710c3b2e22c86a5c91d77e3233e930ba38a3c7e222782b65a0ed9914"
+        != "8b29489ff0f0347040d1224804184241e25cf2b8a9c44a8bf432522241668f00"
     {
         return Err(LedgerError::new(
             "coverage-family state, partitions, or formal surfaces differ from checker policy",
@@ -9413,7 +9413,7 @@ fn validate_power_effect_coverage_policy(
     if typed_fingerprint(
         &source.economic_power_rule_contracts,
         "economic power rule contracts",
-    )? != "7a8f4297c0ee6c64fe8580a3d61970f0ad4b280da41566eaf3f2ba020680d19a"
+    )? != "438d6b59538c2693c8c6e57a754e7e16f263bbb2e8a424e05a4c21b9d1ea6d93"
     {
         return Err(LedgerError::new(
             "economic power fields, requirements, temporal contracts, jurisdictions, scopes, or holders differ from checker policy",
@@ -9865,8 +9865,8 @@ fn expected_defect_gate_refs(id: &str) -> LedgerResult<&'static [&'static str]> 
             let number = id
                 .strip_prefix("FS-DFT-")
                 .and_then(|value| value.parse::<u8>().ok());
-            // FS-DFT-42/43 (income security) and FS-DFT-44/45 (qualifications and compensation), 2026-09-05, are Book-1-onward.
-            if number.is_some_and(|value| (1..=45).contains(&value)) {
+            // FS-DFT-42/43 (income security) and FS-DFT-44/45 (qualifications and compensation), 2026-09-05, plus FS-DFT-46 (public-scale grounds, 2026-09-06), are Book-1-onward.
+            if number.is_some_and(|value| (1..=46).contains(&value)) {
                 Ok(BOOK_ONE_ONWARD)
             } else {
                 Err(LedgerError::new(format!(
@@ -21457,7 +21457,7 @@ mod tests {
                 "economic power rule contracts",
             )
             .expect("economic contract fingerprint"),
-            "7a8f4297c0ee6c64fe8580a3d61970f0ad4b280da41566eaf3f2ba020680d19a"
+            "438d6b59538c2693c8c6e57a754e7e16f263bbb2e8a424e05a4c21b9d1ea6d93"
         );
         let constitution = context
             .read("new-book-plans/constitution.nibli")

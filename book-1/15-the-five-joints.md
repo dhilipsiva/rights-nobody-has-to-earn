@@ -726,6 +726,14 @@ blocks that payment and concludes restitution for that basis alone. The
 licensing power the economic settlement already carried is untouched by this.
 Competence, adequacy, and payment remain outside evidence.
 
+The finding that binds concentrated private power now has to name its ground,
+its function class, and the pairing of reach to tier from lists the constitution
+carries, so a claim resting on size or revenue alone concludes nothing and a
+region cannot reach a gatekeeper whose reach crosses regions. What the source
+gained is the ability to say which legal test a finding claims to have applied.
+Whether the test holds of any actor in the world is not a question it can reach,
+and attesters agreeing among themselves does not make it one.
+
 Genuine physical scarcity is not a budget choice, a high price, a monopoly, a
 withheld stock, an administrative delay, or a provider failure. It needs
 contestable evidence about one resource and population after reasonable

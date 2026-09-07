@@ -329,6 +329,15 @@ below.
   return, grant, prize, subsidy, or incentive to a person. It concludes a
   payment only beside an independent attestation and carries no amount.
 
+- **Public-scale finding:** the conclusion that a named private function carries
+  public duties. It must state a ground the constitution names — essentiality,
+  dominance, gatekeeping, dependency, lock-in, network worth, information
+  asymmetry, or no real exit — and it binds that function alone.
+
+- **Named ground:** one of the grounds a public-scale finding may state. Size,
+  revenue, and organisational form are not among them, and a finding that names
+  none of them concludes nothing.
+
 - **Shield:** protection against imprisonment while an exposure of an authority
   stands, subject to the chapter's stated boundaries.
 

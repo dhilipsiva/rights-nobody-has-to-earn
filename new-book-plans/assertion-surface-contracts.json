@@ -19,14 +19,14 @@
     "seating"
   ],
   "additional_writable_channels": [],
-  "rules_sha256": "9e70949449a3e58615f6dac46323a769539b88537191173eb8a95f329a912d3e",
+  "rules_sha256": "20519616234055e0e96f198bda48696421f876f48fcb6b2a0250ced189fc7dfb",
   "facts_sha256": "d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a",
   "route_fingerprints": {
     "adjust": "b1319d26ed7acd9b524ed9f22d23bbc4a9a45dbad92e87e85697d45fc1a1a106",
     "at": "4ed39fcb58fb931e1138a28b1f5188c0dbec9a5de4ca585c03ebc9c3e910a23d",
     "attack": "47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9",
-    "authority": "8b44f7142073580354e1ad72f6ac448cc0b2d83bba3a3e647fe7787d6ca8564b",
-    "authorized": "14a0de81888f59ffd4f5e980c3a875e4708e8ec2d34eb34536259ce9b3df6c22",
+    "authority": "da2a4f45ca04b9f24ced32b5461bfca84e0593a1878a8e897d4c5ff41bce4e62",
+    "authorized": "0c3950947ca5054ce29792808c3674d06033c5f33aaf11741d55811238c03d6e",
     "become": "4267335bc5356d9b87bbaed0feeafc589728043818ecf5cb6757cbeec3ca05d4",
     "believe": "19cfab6b3525cb817dde51542cf79c379fc715fb156f1c04eb892cea662d9160",
     "born": "cb54f8d40786b943310d92adc366e107f462b083343c17a56711f95ac0c6252a",
@@ -39,11 +39,11 @@
     "cite": "aacb6724db7bb6106c5013cee27e0d91f1c222be0e209f13a1068f5cec5a77a3",
     "clean": "8c4fa6ea07e9fadc34004db14dc81b67de9b0c1a4c6aa7dc77a3f56a929066f7",
     "clear": "affd727ee37bc0305631a0e1a3b9b75b28927467957d9f35ec0ca3b7e0dd7978",
-    "collide": "7ec403c638b32dddfe10ec320f3818b4a50cb4185a8fc2de684ba336618bf24c",
-    "complete": "fff862ebfa791a71c90f44ad4cd80edc0d74664e59d412be0ef332689c88bb55",
+    "collide": "fae49926780d98e96610521d9de39793c16014aadaf78b1044634f9ad3a7c43b",
+    "complete": "20edcab243ec89070cbd66caaf1ecbc75d8cb2740e96a2a47d7171bc9b859bdf",
     "concurrent": "239a163bccf7deec1f62e9cad53c1ba5f03af2d4c52c616a321c4bcf0726c6c7",
     "continue": "b7de0ce64ec41c5f77cfd3b9495e3d8a97ef957716b025740239421b809c3e48",
-    "contradict": "800a53cfd0d79698a34c6c34e09ddc6aa16b67b016097d46ba9932f7c071a90f",
+    "contradict": "a4507ae559af6136cfc7b67ea261d473cec24ba92e34bd6704bfa2da7bb197aa",
     "correct": "e3001e25bfd9f28c2f552de2bb597b15526ea2c1f400cb4b5edb927a84277c3c",
     "cruel": "0093de374030369768dc6db9042a74890cb39f8f7025dde425d00888572ad50a",
     "date": "13214c509302763c55a39de65ce7bb531fe7c1a8355034b831dccb6e37caf27c",
@@ -75,8 +75,9 @@
     "married": "7ef6097705ac285991d03ae6b970e8795b349be4bc7040428fac78506b252fd6",
     "match": "80b30dcba6ff2626489ee3cb84eed5e504e78d6894f2c9fcc0be8da58f011606",
     "meets": "a9cca28717bb66c3f33f3ae83ed83caa3a7c6b75cd7bd226f41089f9c026c061",
-    "obliged": "90d910e3b5bce523d68dac08d8833e57d9ef7db8e232c47275b42aea29bb2f02",
-    "observe": "1d4dd86e482ccb0e24dfd5be54fc8121b45b4ea88b4506e3cbbcbea0e760a424",
+    "member": "a9dce4fa44f352bb14457b12aa16b4f116a1ecb5d4bbda4adc2deb3e710614bc",
+    "obliged": "77d55be5e566f7b5441845714555958d9e2eb9223dd9a16f3fa88328ae963dd1",
+    "observe": "3d5236cc3efe29e598baaaffc8715d9e961409c9a7628b80c9187724ae821bd6",
     "orderly": "59535e1c160c90a8cc609b4c73581a2b17a1bab4f31f46fecd54af05b69455ec",
     "owe": "35dd21f7bb3722390f27c580fd3dca672503a992e73b6f0e8515a709c3ab709e",
     "parent": "316cc4529059bf173cba9bbdff515856651250e22eebf50737227ca813eb70e0",
@@ -95,7 +96,7 @@
     "ratifies": "f29f74a1c73f8eb0a2a67a34cdb3f28cde1e0b0df28dda165e643398020ccaed",
     "receives": "831a4f6828235da8359f1c1a63c78926ba874c1edda9dccff95c464c128df655",
     "reference": "93a4c6011f6ba49f45404b057d5d48bede4fd4af01bd7db375be7889797e951b",
-    "related": "88c067e91a1a5ca497e2ed6519039fda43d7c0f21c28684c6ba40fcc9e35ef4c",
+    "related": "54c2889bb6473bddb40a546085da3c42067bdb20f47801b354b3279e0de4638f",
     "replace": "7c7b9e76b5f26c8f2ccacda3296897824209b86b4b03b939a8a78a319a7355e0",
     "reward": "381db14138f3712fdef796d739dc48d0cd5429bb61cc857be920c2611c6a95bd",
     "rotten": "ee4885e9421cf0307421540c855456259eb07c5cd5c2ff5dbd34656895ecb07e",
@@ -232,7 +233,7 @@
     "decide": {
       "classification": "derived_only",
       "contract_id": "derived-only-decide",
-      "decision_ref": "new-book-plans/book-1-closure-gaps-decision.md::D1 — legacy `decide` is relation-wide conclusion-only",
+      "decision_ref": "new-book-plans/book-1-closure-gaps-decision.md::D1 \u2014 legacy `decide` is relation-wide conclusion-only",
       "expected": {
         "rule_produced": true,
         "admitted": false,
@@ -375,7 +376,7 @@
     "lose": {
       "classification": "derived_only",
       "contract_id": "derived-only-lose",
-      "decision_ref": "new-book-plans/book-1-closure-gaps-decision.md::L1 — `lose` is relation-wide conclusion-only",
+      "decision_ref": "new-book-plans/book-1-closure-gaps-decision.md::L1 \u2014 `lose` is relation-wide conclusion-only",
       "expected": {
         "rule_produced": true,
         "admitted": false,
@@ -402,6 +403,17 @@
         "rule_produced": true,
         "admitted": false,
         "derived_only": false,
+        "ground_asserted": false
+      }
+    },
+    "member": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-member",
+      "decision_ref": "new-book-plans/book-1-concentrated-private-and-hybrid-power-contract.md::## 6. Formal migration contract",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
         "ground_asserted": false
       }
     },
@@ -864,7 +876,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-5 \u2014 Independent witnessing and separation of functions",
       "tags": [
         "audit",
         "justice",
@@ -1022,7 +1034,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-3 — Provenance, authenticity, and truth limits",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-3 \u2014 Provenance, authenticity, and truth limits",
       "tags": [
         "audit",
         "case-binding",
@@ -1438,7 +1450,7 @@
         "operations": [
           "delete `home(Hano)`"
         ],
-        "effect": "The private label disappears without changing Hano’s PlacementHome record or destination; provenance loss remains externally unassured.",
+        "effect": "The private label disappears without changing Hano\u2019s PlacementHome record or destination; provenance loss remains externally unassured.",
         "target": "prevents",
         "evidence_ref": "new-book-plans/family-life-course.pins.nibli::# Home and placement-home availability remain distinct."
       },
@@ -1627,7 +1639,7 @@
         "operations": [
           "assert `married(Gia, Hex)`"
         ],
-        "effect": "The record gains a private married label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
+        "effect": "The record gains a private married label, but Bela\u2019s decision is unchanged because independence requires affirmative case-bound authorised records.",
         "target": "prevents",
         "evidence_ref": "new-book-plans/constitution.nibli::person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
@@ -1705,7 +1717,7 @@
         "operations": [
           "assert `parent(Dev, Esa)`"
         ],
-        "effect": "A supplied parent relation beside Dev’s judgment derives the source-specific judge-child conflict verdict against Dev; it does not decide co-signer independence.",
+        "effect": "A supplied parent relation beside Dev\u2019s judgment derives the source-specific judge-child conflict verdict against Dev; it does not decide co-signer independence.",
         "target": "false",
         "evidence_ref": "new-book-plans/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)"
       },
@@ -2194,7 +2206,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Do not impose recency, lapse, or recertification on historical exposure or authority; erasing either would remove the shield through delay or record control.",
-      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions",
+      "owner_ref": "new-book-plans/record-integrity-assurance-case.md::### RI-5 \u2014 Independent witnessing and separation of functions",
       "tags": [
         "liberty",
         "public-body",
@@ -2213,7 +2225,7 @@
         "operations": [
           "assert `sibling(Gia, Hex)`"
         ],
-        "effect": "The record gains a private sibling label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
+        "effect": "The record gains a private sibling label, but Bela\u2019s decision is unchanged because independence requires affirmative case-bound authorised records.",
         "target": "prevents",
         "evidence_ref": "new-book-plans/constitution.nibli::person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },

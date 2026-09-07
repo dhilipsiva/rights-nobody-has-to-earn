@@ -18,7 +18,7 @@ use crate::scheduler::{
 const KB_PATH: &str = "new-book-plans/constitution.nibli";
 const COUNTERFACTUAL_DIR: &str = "new-book-plans/counterfactual";
 
-const LIVE_FAMILIES: [(&str, &str); 36] = [
+const LIVE_FAMILIES: [(&str, &str); 37] = [
     (
         "universal-standing",
         "new-book-plans/universal-standing.pins.nibli",
@@ -163,9 +163,13 @@ const LIVE_FAMILIES: [(&str, &str); 36] = [
         "qualifications and compensation",
         "new-book-plans/qualifications-compensation.pins.nibli",
     ),
+    (
+        "public-scale vocabulary",
+        "new-book-plans/public-scale-vocabulary.pins.nibli",
+    ),
 ];
 
-const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 61] = [
+const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 65] = [
     ("no-person-line", 1, 0),
     ("no-public-court", 1, 0),
     ("no-choose-boss", 1, 0),
@@ -227,6 +231,10 @@ const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 61] = [
     ("no-certificate-rule", 1, 0),
     ("no-compensation-attester-independence", 1, 1),
     ("unguarded-compensation-reader", 0, 1),
+    ("no-public-scale-trigger-vocabulary", 1, 1),
+    ("no-public-scale-function-class-vocabulary", 1, 1),
+    ("no-public-scale-tier-allocation-vocabulary", 1, 1),
+    ("unnamed-public-scale-trigger", 0, 1),
 ];
 
 #[derive(Debug)]
