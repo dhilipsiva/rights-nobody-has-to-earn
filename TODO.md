@@ -330,25 +330,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Constrain concentrated private and hybrid power.**
-  - Preserve equality's named direct private reach without a dominance finding.
-    Separately create an independent, contestable, function-specific public-scale
-    trigger for essential, dominant, delegated, gatekeeping, network, dependency,
-    lock-in, information-asymmetry, or no-meaningful-exit power.
-  - Bind only the affected public-facing, essential, delegated, gatekeeping, or
-    systemically controlling function. Intimate dependency alone does not create
-    public-like transparency duties; coercion, captivity, violence, and obstruction
-    of exit instead route through justice and public protection.
-  - Calibrate access, continuity, reasons, transparency, portability,
-    interoperability, audit, challenge, and remedy. Give findings a source, scope,
-    tier/jurisdiction, contestability, temporal status, expiry consequence, and
-    conflict rule; regional/local findings cover their jurisdiction and the common
-    tier owns cross-regional cases and minima.
-  - Test each named actor with and without the trigger, an equality-bound actor
-    without it, an expired finding, regional and cross-regional gatekeepers,
-    relabeling, confidentiality, capture, and structural remedies that preserve
-    workers, users, savers, and essential services.
-
 - [ ] **Protect democratic and administrative integrity.**
   - Cover parties and opposition, districting, campaign finance, political
     advertising, lobbying, gifts, procurement, conflicts of interest, revolving
