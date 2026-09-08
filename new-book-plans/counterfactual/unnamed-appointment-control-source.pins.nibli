@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: a sixth vocabulary rule admitting an unratified appointment-control source
+#
+# The ratified state-form sentence names five source kinds. One added line names
+# a sixth — an incumbent-coalition affiliate — and it holds membership the moment
+# anyone observes it. This is the shape the repository guard watches, because the
+# assertion surface reconciles relations rather than heads and would not see it.
+#
+# What this fixture deliberately does NOT show is a finding passing on the new
+# kind. The anti-capture rule names its five constants literally rather than
+# through a variable, so a sixth member changes nothing a query can reach; the
+# harm here is that a legal category widened by one source edit. Saying that
+# plainly is the point of the fixture, and `src/checks/repository.rs` is what
+# refuses it.
+:expect-pins 2
+
+observe(AppointmentWidenSource, AppointmentWidenRecord, IncumbentCoalitionAffiliateAppointmentSource, AppointmentControlSourceKindScope).
+
+# The vocabulary grew: an unratified kind now holds membership.
+? member(IncumbentCoalitionAffiliateAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => TRUE
+# The control that keeps the line above from being vacuous: membership still
+# requires its own ground rule, so an unobserved token holds nothing.
+? member(ProfessionAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => FALSE

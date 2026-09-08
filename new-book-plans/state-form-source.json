@@ -1,5 +1,5 @@
 {
-  "branch_ir_sha256": "3624348425931f9acef19a77a1bb7c840f321d9b892d68fcf6f756c26b1b1522",
+  "branch_ir_sha256": "c971bffabd279e59ddc21f9dbb072567f1b9ccdb270eb92390416790bafe2886",
   "branches": [
     {
       "authority_holders": [
@@ -2350,6 +2350,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2403,6 +2431,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2456,6 +2512,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2509,6 +2593,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2626,6 +2738,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2743,6 +2883,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2860,6 +3028,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2977,6 +3173,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -6122,6 +6346,34 @@
           "AntiCaptureScope"
         ],
         [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
           "ExactSeatConfiguration",
           "SeatAllocationScope"
         ]
@@ -6173,6 +6425,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ],
         [
           "ExactSeatConfiguration",
@@ -6228,6 +6508,34 @@
           "AntiCaptureScope"
         ],
         [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
           "ExactSeatConfiguration",
           "SeatAllocationScope"
         ]
@@ -6279,6 +6587,34 @@
         [
           "NoMajorityDirectOrDeFactoControl",
           "AntiCaptureScope"
+        ],
+        [
+          "CurrentGovernmentAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ChamberAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "PartyCoalitionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "ProfessionAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "SingleAppointingBodyAppointmentSource",
+          "AppointmentControlSourceKindScope"
+        ],
+        [
+          "DirectAppointmentControl",
+          "AppointmentControlModeScope"
+        ],
+        [
+          "DeFactoAppointmentControl",
+          "AppointmentControlModeScope"
         ],
         [
           "ExactSeatConfiguration",

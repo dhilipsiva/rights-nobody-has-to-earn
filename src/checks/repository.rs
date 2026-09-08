@@ -359,7 +359,7 @@ fn check_constitution(source: &str) -> Result<Vec<String>, Error> {
 
 /// The public-scale finding's named grounds. Each member has exactly one ground
 /// vocabulary rule in the constitution, and nothing else may conclude `member`.
-const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 3] = [
+const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 5] = [
     (
         "PublicScaleTriggerVocabulary",
         &[
@@ -390,28 +390,71 @@ const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 3] = [
             "CrossRegionalReachUnderCommonTier",
         ],
     ),
+    // The appointment anti-capture grounds. The ratified state-form sentence
+    // enumerates the five source kinds; none of them existed as a constant
+    // before this table, so the whole incompatibility rode on one attested
+    // token and an unexamined kind was indistinguishable from an absent one.
+    (
+        "AppointmentControlSourceKindVocabulary",
+        &[
+            "CurrentGovernmentAppointmentSource",
+            "ChamberAppointmentSource",
+            "PartyCoalitionAppointmentSource",
+            "ProfessionAppointmentSource",
+            "SingleAppointingBodyAppointmentSource",
+        ],
+    ),
+    (
+        "AppointmentControlModeVocabulary",
+        &["DirectAppointmentControl", "DeFactoAppointmentControl"],
+    ),
 ];
 
-/// Watched failing control for the vocabulary guard: the fixture adds one
-/// sixteenth rule making a revenue threshold a named ground, and the guard must
-/// trip on that head rather than on anything else.
+/// Watched failing controls for the vocabulary guard: each fixture adds one
+/// more ground rule naming an unratified member, and the guard must trip on
+/// that head rather than on anything else.
 fn check_vocabulary_widening_control(context: &Context) -> Result<Vec<String>, Error> {
-    const PATH: &str = "new-book-plans/counterfactual/unnamed-public-scale-trigger.nibli";
-    let source = context.read(PATH)?;
-    match check_constitution(&source) {
-        Err(error) if error.to_string().starts_with("a public-scale vocabulary has grown a member") => {
-            Ok(vec![
-                "watched failing control: unnamed-public-scale-trigger trips the vocabulary guard"
-                    .to_string(),
-            ])
+    const CONTROLS: [(&str, &str); 2] = [
+        (
+            "new-book-plans/counterfactual/unnamed-public-scale-trigger.nibli",
+            "names a revenue threshold as a ratified ground",
+        ),
+        (
+            "new-book-plans/counterfactual/unnamed-appointment-control-source.nibli",
+            "names an incumbent-coalition affiliate as a ratified appointment-control source",
+        ),
+    ];
+    let mut messages = Vec::new();
+    for (path, description) in CONTROLS {
+        let source = context.read(path)?;
+        let name = path
+            .rsplit('/')
+            .next()
+            .and_then(|file| file.strip_suffix(".nibli"))
+            .unwrap_or(path);
+        match check_constitution(&source) {
+            Err(error)
+                if error
+                    .to_string()
+                    .starts_with("a public-scale vocabulary has grown a member") =>
+            {
+                messages.push(format!(
+                    "watched failing control: {name} trips the vocabulary guard"
+                ));
+            }
+            Err(error) => {
+                return Err(Error::new(format!(
+                    "the vocabulary control failed for the wrong reason\n{error}"
+                )));
+            }
+            Ok(_) => {
+                return Err(Error::new(format!(
+                    "the vocabulary guard is broken\n{path} {description} and the guard accepted it"
+                )));
+            }
         }
-        Err(error) => Err(Error::new(format!(
-            "the vocabulary control failed for the wrong reason\n{error}"
-        ))),
-        Ok(_) => Err(Error::new(format!(
-            "the vocabulary guard is broken\n{PATH} names a revenue threshold as a ratified ground and the guard accepted it"
-        ))),
     }
+    Ok(messages)
 }
 
 /// Purpose-limited records and the only heads that may read them.
@@ -683,15 +726,40 @@ mod tests {
         assert_eq!(self_join_hits(&rules, "teaches")[0].0, 2);
     }
 
+    /// Build the vocabulary preamble every clean-source fixture needs.
+    ///
+    /// The guard requires exactly one ground rule per ratified member and at
+    /// least one rule reading `member`, so a synthetic constitution that omits
+    /// them is rejected as vacuous rather than accepted as clean. Deriving the
+    /// preamble from the table keeps these fixtures correct when a vocabulary
+    /// is added, which is what let them drift once already.
+    fn vocabulary_preamble() -> String {
+        let mut text = String::new();
+        for (vocabulary, members) in super::PUBLIC_SCALE_VOCABULARIES {
+            for member in members {
+                text.push_str(&format!(
+                    "observe(S, R, {member}, {vocabulary}Scope) -> member({member}, {vocabulary}).\n"
+                ));
+            }
+        }
+        text.push_str(
+            "member(T, PublicScaleTriggerVocabulary) & observe(S, R, T, X) -> signed(R).\n",
+        );
+        text
+    }
+
     #[test]
     fn representative_clean_constitution_reports_all_guard_groups() {
-        let source = "false(A) -> err(A, Missing).\n\
-                      prisoner(A) & ~eats(A) -> err(A, Isolation).\n\
-                      judge(A, B) & judge(C, B) -> signed(B).\n\
-                      taught(A) -> reward(A).\n\
-                      pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n\
-                      promise(F, Wage, P) & observe(A, Wage, P, B) -> provide(F, Wage, P).\n";
-        let messages = check_constitution(source).unwrap();
+        let source = format!(
+            "{}false(A) -> err(A, Missing).\n\
+             prisoner(A) & ~eats(A) -> err(A, Isolation).\n\
+             judge(A, B) & judge(C, B) -> signed(B).\n\
+             taught(A) -> reward(A).\n\
+             pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n\
+             promise(F, Wage, P) & observe(A, Wage, P, B) -> provide(F, Wage, P).\n",
+            vocabulary_preamble()
+        );
+        let messages = check_constitution(&source).unwrap();
         assert!(
             messages
                 .iter()
@@ -711,12 +779,16 @@ mod tests {
 
     #[test]
     fn contribution_guard_rejects_every_other_reader() {
-        let clean = "false(A) -> err(A, Missing).\n\
-                     prisoner(A) & ~eats(A) -> err(A, Isolation).\n\
-                     judge(A, B) & judge(C, B) -> signed(B).\n\
-                     taught(A) -> reward(A).\n\
-                     pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n\
-                     promise(F, Wage, P) & observe(A, Wage, P, B) -> provide(F, Wage, P).\n";
+        let clean = format!(
+            "{}false(A) -> err(A, Missing).\n\
+             prisoner(A) & ~eats(A) -> err(A, Isolation).\n\
+             judge(A, B) & judge(C, B) -> signed(B).\n\
+             taught(A) -> reward(A).\n\
+             pay(P, Contribution, C, S) & observe(A, Illness, P, S) -> insure(C, P, Illness).\n\
+             promise(F, Wage, P) & observe(A, Wage, P, B) -> provide(F, Wage, P).\n",
+            vocabulary_preamble()
+        );
+        let clean = clean.as_str();
         assert!(check_constitution(clean).is_ok());
         for hostile in [
             "person(X) & ~pay(X, Contribution, C, S) -> prisoner(X).\n",

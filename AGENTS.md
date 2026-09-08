@@ -40,7 +40,7 @@ Run from the repository root:
 ./verify.sh --refresh placement-exhaustiveness
 ./verify.sh --refresh temporal-assurance
 ./verify.sh --refresh reader-evidence
-./verify.sh --refresh state-form
+./verify.sh --refresh state-form   # also installs the constitution's STATE-FORM block
 ./verify.sh --refresh obligations
 ./verify.sh --refresh full-society-ledger
 ./verify.sh --refresh constitutional-closure

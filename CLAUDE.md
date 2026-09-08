@@ -2127,7 +2127,16 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   complete semantic `--emit-receipt` run; partial modes never gate its commit.
   Script 19's native port checker-owns the exact state-form source block and runs
   structurally in both quick and full verification; its dedicated pin suite and
-  watched source-review mutation execute only in the full path. Verify
+  watched source-review mutation execute only in the full path. Its reviewed
+  source is `state-form-source.json`, and everything else in the family is
+  generated from it — the constitution's `STATE-FORM-RULES` block, the main pin
+  suite, and both counterfactual files. Edit the JSON, never those four, and run
+  `./verify.sh --refresh state-form`, which since 2026-09-08 installs the
+  constitution block as well as the other three; then update the digests and
+  counts the module pins. Branch `fields` are result-side only — the record and
+  temporal record carry record identity, not finding content — so the economic
+  families' record-mirroring idiom does not transfer here; three mutually
+  distinct authorised attesters on the result are this family's wall. Verify
   constitution claims with release `nibli-pin` at or after
   `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` —
   its wasm predates the `derived_only` and `entitled` corpus entries and silently

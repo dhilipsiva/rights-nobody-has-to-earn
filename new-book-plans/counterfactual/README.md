@@ -312,3 +312,35 @@ on the result, because both the current-selection rule and the reviewed-result
 rule read them there. A record that carries only the result-side attestation
 derives nothing, and every negative case above it would then pass for the wrong
 reason.
+
+## Appointment anti-capture fixture
+
+`unnamed-appointment-control-source` is the constitution *plus* one more ground
+rule, for a source kind the ratified state-form sentence does not name.
+Regenerate like `unnamed-public-scale-trigger`: copy, then insert
+
+```
+all $source: all $record: observe($source, $record, IncumbentCoalitionAffiliateAppointmentSource, AppointmentControlSourceKindScope) -> member(IncumbentCoalitionAffiliateAppointmentSource, AppointmentControlSourceKindVocabulary).
+```
+
+immediately after the `DeFactoAppointmentControl` ground rule, with no leading
+blank line. It is the second watched failing control for the producer-set check
+in `src/checks/repository.rs`.
+
+The anti-capture family has no gate-removal fixture, and the reason is worth
+recording rather than leaving as an omission. Its five source kinds and two
+control modes are fixed constants in the rule, not variables, so stripping the
+`member` conjuncts changes nothing a probe could see — the observations are
+still required. What the conjuncts buy is that deleting a vocabulary ground rule
+stops the whole family deriving, and that is held by
+`validate_appointment_anti_capture_self_controls` in
+`src/checks/state_form.rs`, which drops each named kind and mode from each
+anchored branch in turn and requires the completeness rule to refuse it.
+
+The measurement the family exists to repair, taken 2026-09-08 against one
+generated FSPOW_028 positive case: with all 194 supplied facts the reviewed
+result and the holder authority both derive; with the three party-coalition
+attestations removed both stop; and with all seven named grounds removed but the
+blanket `NoMajorityDirectOrDeFactoControl` attestation still present — which is
+exactly the shape the source carried before this family — both stop as well. An
+unexamined kind is no longer indistinguishable from an absent one.

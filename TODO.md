@@ -331,13 +331,35 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Protect democratic and administrative integrity.**
-  - Cover parties and opposition, districting, campaign finance, political
-    advertising, lobbying, gifts, procurement, conflicts of interest, revolving
-    doors, corruption, and coordinated information manipulation.
-  - Define permitted writers and money/influence records; proportionate disclosure
-    and privacy; and campaign, procurement, ethics, and anti-corruption oversight,
-    challenge, correction, remedy, disqualification, and enforcement through the
-    landed appointment and anti-capture interfaces.
+  - **Partly landed 2026-09-08.** The appointment anti-capture slice is
+    formalized: the ratified state-form incompatibility named five source kinds
+    and both control modes that the source carried as one attested token, and
+    they are now closed constitutional vocabularies gating FS-POW-028 and
+    FS-POW-035. Measured, a record attesting only the old blanket token derives
+    neither the reviewed result nor the holder authority. Card:
+    `new-book-plans/book-1-appointment-anti-capture-contract.md`. This proves no
+    independence, no detection, no challenge heard, and no remedy completed.
+  - **The remainder is gated behind an author ruling and cannot be drafted.**
+    Measured at `83dd301`: campaign, lobbying, political advertising, gifts,
+    conflicts of interest, revolving doors, corruption, party finance and
+    gerrymandering appear zero times in every ratified decision record, and the
+    237-row source-derived power census contains no row for any of them. Money
+    in politics exists only as three barrier constants inherited from the
+    economic ruling (FS-CCE-266, FS-CCE-268, FS-CCE-367), each one rule of the
+    form `person($x) -> prevents($x, <Constant>)`, reading no treasury, payment,
+    candidate or party. The neutral inventory the tracker permits is
+    `new-book-plans/book-1-democratic-and-administrative-integrity-brief.md`;
+    its section 4 states the seven open questions in the form the ruling would
+    answer, including the two that collide hardest with settled walls —
+    districting needs a metric, and a manipulation finding about a person is
+    what the temporary-assessment exclusion keeps out of the record.
+  - Still to cover once ruled: parties and opposition, districting, campaign
+    finance, political advertising, lobbying, gifts, procurement, conflicts of
+    interest, revolving doors, corruption, and coordinated information
+    manipulation; permitted writers and money/influence records; proportionate
+    disclosure and privacy; and campaign, procurement, ethics, and
+    anti-corruption oversight, challenge, correction, remedy, disqualification,
+    and enforcement through the landed appointment and anti-capture interfaces.
   - Test shell actors, third parties, media/platform concentration, selective
     enforcement, audit starvation, and manufactured withholding against those
     controls.

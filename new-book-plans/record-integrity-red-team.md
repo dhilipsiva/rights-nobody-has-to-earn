@@ -557,9 +557,9 @@ Remaining gap owner: `TODO.md::### Expansion phase 2 — Specify the comprehensi
 ## Maintenance
 
 - Reviewed source: `new-book-plans/record-integrity-red-team.json`.
-- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `b246649942d336e4b57ff01d37b790e8f740e188068312fb3ded22a95c54e62a`.
-- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `061f28d4473e76cc8a0c565925c5c2d6bcdcc061a50bb86c8be65b6e64075fe4`.
-- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `db18a361306de4ec6a5f12fd93f50abac8e19a024ade34f2a695ca9f6ca13762`.
+- Constitution: `new-book-plans/constitution.nibli`, SHA-256 `c84ed53e76fb7dc3de8c0cc64bf3503e4c937bb2de8c41117a0fe31ccf43e438`.
+- Assertion ledger: `new-book-plans/assertion-surface-contracts.json`, SHA-256 `00b6f1a4b3066db5ee381f84dcab0d4ca8b852ab2042da9b06fe61970ed7e0a1`.
+- Assurance source: `new-book-plans/record-integrity-assurance-case.json`, SHA-256 `ae301d8ad7b156c20c84f09cea7f50f8f5561f63981b244065879dfd92aaaba3`.
 - Regenerate only through `./verify.sh --refresh record-integrity-red-team`.
 - Fast freshness/schema check: `./verify.sh --quick`.
 - Authoritative executable check: `./verify.sh`.

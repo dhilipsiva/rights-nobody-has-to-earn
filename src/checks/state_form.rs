@@ -49,26 +49,26 @@ const ACCEPTANCE_PIN_COUNT: usize = 56;
 const CARD_COUNT: usize = 51;
 const RESULT_COUNT: usize = 131;
 const AUTHORITY_COUNT: usize = 142;
-const STATEMENT_COUNT: usize = 274;
+const STATEMENT_COUNT: usize = 281;
 
 const EXPECTED_MAIN_PINS_SHA256: &str =
-    "41c36aa72b5330bd515363bade95ff118492e60d3e8ba76735c6c3aa2bebfbc2";
+    "2df0d2aebb7cea55aa6b1758e180ec6ebe098c0ac27e25322744f8861c95256a";
 const EXPECTED_COUNTERFACTUAL_SHA256: &str =
-    "66ce85a007a80cc900ab221d397950bb0b394777927b454505f2c72e49509a85";
+    "5875394dee557a35ed029bca5eadf17d358ce2632785e0a08fc3104928521bcb";
 const EXPECTED_COUNTERFACTUAL_PINS_SHA256: &str =
-    "4b4910d71aaa9baa8606900131b95606756bc56d7dd5fc69902bd1da1d351fd5";
+    "e9639f1b3869cb2769e88570fe9eb032534d1420a1bc6dd37e52b3b7b309d3c1";
 const EXPECTED_CONSTITUTION_SHA256: &str =
-    "b246649942d336e4b57ff01d37b790e8f740e188068312fb3ded22a95c54e62a";
+    "c84ed53e76fb7dc3de8c0cc64bf3503e4c937bb2de8c41117a0fe31ccf43e438";
 const EXPECTED_RULE_BLOCK_SHA256: &str =
-    "98ea81f52420e67d994ab32058280f3ae789855208750e2ae7ab1556005e4ab6";
+    "0ff5cb7b1300e805a9c83a8cc072d8f79f0843ac7955a6a1134d6bd175207ca8";
 const EXPECTED_RENDERED_BLOCK_SHA256: &str =
-    "6e91abf13097850b6d24c8c58eef7425723b9095bf0d2f3a71b1ca83f7b0d3d9";
+    "79cc9637d964ed9f14821b552cd536d9d496a8465e0be375fdbd12b3b33ae9c4";
 const EXPECTED_BRANCH_IR_SHA256: &str =
-    "3624348425931f9acef19a77a1bb7c840f321d9b892d68fcf6f756c26b1b1522";
+    "c971bffabd279e59ddc21f9dbb072567f1b9ccdb270eb92390416790bafe2886";
 const EXPECTED_BYTE_INDEX_SHA256: &str =
-    "4ac6bce6eeaf3a337eb7f21c854fa65f86e80577255d54b3c3a882f841338f6b";
+    "bb340b7108cbb5e8f2f88a9d0b2e77d87fb30e4cc7b3813359bc6fe3f20846a3";
 const EXPECTED_COUNT_INDEX_SHA256: &str =
-    "62bb24cf9134964fc79280e0d4452aaf4b19989dda9ac15217b2af8c2224e664";
+    "0a1dfa96d0c369a87cb078e5011239b9930eb7dce225477b0a8cf36e2a3d60ef";
 
 const REVIEWED_SEMANTIC_SOURCE: &str = include_str!("../../new-book-plans/state-form-source.json");
 
@@ -1097,6 +1097,89 @@ fn validate_branch_inventory(branches: &[Branch]) -> StateFormResult<()> {
     }
     validate_explicit_lineage_rule_seams(branches)?;
     validate_explicit_lineage_self_controls(branches)?;
+    validate_appointment_anti_capture(branches)?;
+    validate_appointment_anti_capture_self_controls(branches)?;
+    Ok(())
+}
+
+/// The anti-capture anchor is an absence attestation, and an absence is only as
+/// wide as the kinds it examined. The ratified sentence names five source kinds
+/// and requires both control modes to be observable, so a branch that carries
+/// the anchor must carry every one of them: a branch attesting four kinds has
+/// said nothing about the fifth, which is the case the ruling's own second
+/// sentence — divided sources alone prove nothing — was written against.
+fn appointment_anti_capture_fields() -> Vec<Field> {
+    let mut fields = Vec::new();
+    for (scope, _, members) in APPOINTMENT_CONTROL_VOCABULARIES {
+        for member in members {
+            fields.push([(*member).to_owned(), scope.to_owned()]);
+        }
+    }
+    fields
+}
+
+fn anti_capture_anchor() -> Field {
+    [
+        "NoMajorityDirectOrDeFactoControl".to_owned(),
+        "AntiCaptureScope".to_owned(),
+    ]
+}
+
+fn appointment_anti_capture_branches(branches: &[Branch]) -> Vec<&Branch> {
+    let anchor = anti_capture_anchor();
+    branches
+        .iter()
+        .filter(|branch| branch.fields.contains(&anchor))
+        .collect()
+}
+
+fn validate_appointment_anti_capture(branches: &[Branch]) -> StateFormResult<()> {
+    let anchored = appointment_anti_capture_branches(branches);
+    if anchored.is_empty() {
+        return Err(state_form_error(
+            "no branch carries the anti-capture anchor — the incompatibility lost its only carrier",
+        ));
+    }
+    for branch in anchored {
+        for field in appointment_anti_capture_fields() {
+            if !branch.fields.contains(&field) {
+                return Err(state_form_error(format!(
+                    "{} attests anti-capture without naming {} — an unexamined kind is not an absent one",
+                    branch.marker, field[0]
+                )));
+            }
+        }
+    }
+    Ok(())
+}
+
+/// Watched failing controls: dropping any one named kind or control mode from
+/// any anchored branch must be refused. Without these the completeness rule
+/// above could be silently narrowed one branch at a time.
+fn validate_appointment_anti_capture_self_controls(branches: &[Branch]) -> StateFormResult<()> {
+    let anchor = anti_capture_anchor();
+    for branch in appointment_anti_capture_branches(branches) {
+        for field in appointment_anti_capture_fields() {
+            let mut mutated = branch.clone();
+            mutated.fields.retain(|candidate| *candidate != field);
+            if validate_appointment_anti_capture(std::slice::from_ref(&mutated)).is_ok() {
+                return Err(state_form_error(format!(
+                    "watched anti-capture mutation survived: {} without {}",
+                    branch.marker, field[0]
+                )));
+            }
+        }
+        // Dropping the anchor itself must not silently exempt the branch from
+        // the completeness rule by removing what selects it.
+        let mut without_anchor = branch.clone();
+        without_anchor.fields.retain(|candidate| *candidate != anchor);
+        if !appointment_anti_capture_branches(std::slice::from_ref(&without_anchor)).is_empty() {
+            return Err(state_form_error(format!(
+                "anti-capture branch selection is not anchored: {}",
+                branch.marker
+            )));
+        }
+    }
     Ok(())
 }
 
@@ -1972,6 +2055,9 @@ fn result_raw_premises(branch: &Branch) -> StateFormResult<Vec<String>> {
     body.extend(distinct(&["source", "evidence", "review"]));
     for field in &branch.fields {
         body.extend(observed(&result_actors, "$result", &field[0], &field[1]));
+        if let Some(vocabulary) = appointment_vocabulary_for_scope(&field[1]) {
+            body.push(format!("member({}, {vocabulary})", field[0]));
+        }
     }
     for authorization in &branch.authorizations {
         body.push(format!(
@@ -2485,8 +2571,53 @@ fn v2_rules_for_branch(branch: &Branch) -> StateFormResult<Vec<String>> {
     Ok(rules)
 }
 
+/// The appointment anti-capture finding's named grounds. The ratified sentence
+/// enumerates five source kinds and requires both control modes to be
+/// observable; before this table the whole incompatibility was one attested
+/// token, so a finding that examined one appointing source and never looked at
+/// the coalition passed by attestation. Each member is concluded by exactly one
+/// ground rule and gates the reviewed-result rule through `member/2`.
+const APPOINTMENT_CONTROL_VOCABULARIES: [(&str, &str, &[&str]); 2] = [
+    (
+        "AppointmentControlSourceKindScope",
+        "AppointmentControlSourceKindVocabulary",
+        &[
+            "CurrentGovernmentAppointmentSource",
+            "ChamberAppointmentSource",
+            "PartyCoalitionAppointmentSource",
+            "ProfessionAppointmentSource",
+            "SingleAppointingBodyAppointmentSource",
+        ],
+    ),
+    (
+        "AppointmentControlModeScope",
+        "AppointmentControlModeVocabulary",
+        &["DirectAppointmentControl", "DeFactoAppointmentControl"],
+    ),
+];
+
+fn appointment_vocabulary_for_scope(scope: &str) -> Option<&'static str> {
+    APPOINTMENT_CONTROL_VOCABULARIES
+        .iter()
+        .find(|(field_scope, _, _)| *field_scope == scope)
+        .map(|(_, vocabulary, _)| *vocabulary)
+}
+
+fn render_appointment_vocabulary_rules() -> Vec<String> {
+    let mut rules = Vec::new();
+    for (scope, vocabulary, members) in APPOINTMENT_CONTROL_VOCABULARIES {
+        for member in members {
+            rules.push(format!(
+                "all $source: all $record: observe($source, $record, {member}, {scope}) -> member({member}, {vocabulary})."
+            ));
+        }
+    }
+    rules
+}
+
 fn draft_rule_block(source: &SemanticSource) -> StateFormResult<Vec<String>> {
     let mut rules = vec![render_current_rule()];
+    rules.extend(render_appointment_vocabulary_rules());
     for branch in &source.branches {
         rules.extend(v2_rules_for_branch(branch)?);
     }
@@ -3532,6 +3663,9 @@ fn validate_call(call: &ParsedCall, in_head: bool) -> StateFormResult<()> {
         "authorized" => 3,
         "observe" => 4,
         "complete" | "authority" => 3,
+        // The appointment anti-capture vocabularies. `member` is derived-only
+        // and ground-headed, so a supplied record cannot name its own ground.
+        "member" => 2,
         _ => {
             return Err(state_form_error(format!(
                 "unapproved relation signature {}/{}",
@@ -3668,6 +3802,7 @@ fn validate_rule_surface(statements: &[&str]) -> StateFormResult<Vec<ParsedRule>
         ("observe", 4),
         ("complete", 3),
         ("authority", 3),
+        ("member", 2),
     ]
     .into_iter()
     .collect();
@@ -3690,11 +3825,42 @@ fn validate_rule_surface(statements: &[&str]) -> StateFormResult<Vec<ParsedRule>
         ));
     }
 
+    // Statements 1..=7 are the appointment anti-capture vocabularies. They are
+    // ground-headed by construction; check that here rather than letting the
+    // head dispatch below reject them, so a variable head can never slip in.
+    let vocabulary_rules = render_appointment_vocabulary_rules();
+    let vocabulary_end = 1 + vocabulary_rules.len();
+    for (offset, rule) in parsed[1..vocabulary_end].iter().enumerate() {
+        if rule.head.name != "member" || rule.head.args.len() != 2 {
+            return Err(state_form_error(format!(
+                "statement {} is not an appointment vocabulary head",
+                offset + 1
+            )));
+        }
+        if rule.head.args.iter().any(|arg| arg.starts_with('$')) {
+            return Err(state_form_error(format!(
+                "appointment vocabulary head {} carries a variable — a supplied record must not name its own ground",
+                rule.head.args.join(", ")
+            )));
+        }
+        if !APPOINTMENT_CONTROL_VOCABULARIES
+            .iter()
+            .any(|(_, vocabulary, members)| {
+                *vocabulary == rule.head.args[1] && members.contains(&rule.head.args[0].as_str())
+            })
+        {
+            return Err(state_form_error(format!(
+                "an appointment vocabulary has grown a member: {}",
+                rule.head.args.join(", ")
+            )));
+        }
+    }
+
     let mut results = 0;
     let mut authorities = 0;
     let mut power_results = BTreeMap::<usize, usize>::new();
     let mut power_authorities = BTreeMap::<usize, usize>::new();
-    for rule in &parsed[1..] {
+    for rule in &parsed[vocabulary_end..] {
         let map = match rule.head.name.as_str() {
             "complete" => {
                 results += 1;
@@ -4839,17 +5005,47 @@ pub(crate) fn fingerprints(_context: &Context, snapshot: &SourceSnapshot) -> Res
     result.map_err(public_error)
 }
 
+/// Splice the checker-owned block back into the constitution.
+///
+/// `validate_formal_source` requires the constitution's state-form block to be
+/// byte-equal to `canonical_rendered_block`, but until now nothing wrote it, so
+/// a reviewed-source edit had to be transcribed into the constitution by hand
+/// against a digest that only said "differs". This is idempotent: a constitution
+/// already carrying the canonical block is left untouched.
+fn install_formal_block(context: &Context) -> StateFormResult<Option<String>> {
+    let path = context.path(CONSTITUTION_PATH);
+    let source = std::fs::read_to_string(&path).map_err(|error| state_form_error(error.to_string()))?;
+    let current = extract_block(&source)?;
+    let expected = canonical_rendered_block()?;
+    if current == expected {
+        return Ok(None);
+    }
+    let start = source
+        .find(current)
+        .expect("extract_block returned a slice of source");
+    let updated = format!("{}{}{}", &source[..start], expected, &source[start + current.len()..]);
+    std::fs::write(&path, updated.as_bytes()).map_err(|error| state_form_error(error.to_string()))?;
+    Ok(Some(format!("rewrote the state-form block in {CONSTITUTION_PATH}")))
+}
+
 pub(crate) fn write_artifacts(
     context: &Context,
     snapshot: &SourceSnapshot,
 ) -> Result<Vec<String>, Error> {
     let result = (|| -> StateFormResult<Vec<String>> {
+        // Install the block first, then read the constitution back: the
+        // counterfactual is rendered from constitution bytes, and the snapshot
+        // was captured before the rewrite.
+        let block_message = install_formal_block(context)?;
+        let constitution = if block_message.is_some() {
+            std::fs::read_to_string(context.path(CONSTITUTION_PATH))
+                .map_err(|error| state_form_error(error.to_string()))?
+        } else {
+            snapshot.constitution().to_owned()
+        };
         let rendered = [
             (MAIN_PINS_PATH, canonical_main_pins()?.to_owned()),
-            (
-                COUNTERFACTUAL_PATH,
-                render_counterfactual(snapshot.constitution())?,
-            ),
+            (COUNTERFACTUAL_PATH, render_counterfactual(&constitution)?),
             (
                 COUNTERFACTUAL_PINS_PATH,
                 canonical_counterfactual_pins()?.to_owned(),
@@ -4873,6 +5069,9 @@ pub(crate) fn write_artifacts(
                 )));
             }
             messages.push(format!("wrote {relative}"));
+        }
+        if let Some(message) = block_message {
+            messages.push(message);
         }
         Ok(messages)
     })();
@@ -5383,7 +5582,7 @@ mod tests {
         let report = check(&context, &snapshot).expect("check state-form family");
         assert_eq!(
             report.to_string(),
-            "state-form: PASS — 51 cards, 274 exact statements, 391 main pins, 51 counterfactual pins"
+            "state-form: PASS — 51 cards, 281 exact statements, 391 main pins, 51 counterfactual pins"
         );
         let output = fingerprints(&context, &snapshot).expect("render fingerprints");
         let decoded: Value = serde_json::from_str(&output).expect("parse fingerprints");
@@ -5469,9 +5668,27 @@ mod tests {
         let snapshot = snapshot(&live_context);
         let temporary = tempfile::tempdir().expect("temporary directory");
         let isolated = Context::from_test_root(temporary.path().to_path_buf());
+        // write_artifacts also installs the constitution's state-form block, so
+        // the isolated tree needs the constitution it is installing into. The
+        // live constitution already carries the canonical block, so the install
+        // is a no-op here and the message count stays at the three files.
+        let constitution_path = isolated.path(CONSTITUTION_PATH);
+        std::fs::create_dir_all(
+            constitution_path
+                .parent()
+                .expect("constitution path has a parent"),
+        )
+        .expect("create isolated plans directory");
+        std::fs::write(&constitution_path, snapshot.constitution().as_bytes())
+            .expect("seed isolated constitution");
 
         let messages = write_artifacts(&isolated, &snapshot).expect("write artifacts");
         assert_eq!(messages.len(), 3);
+        assert_eq!(
+            std::fs::read_to_string(&constitution_path).expect("read isolated constitution"),
+            snapshot.constitution(),
+            "an already-canonical constitution must be left byte-identical"
+        );
         assert_eq!(
             std::fs::read_to_string(isolated.path(MAIN_PINS_PATH)).expect("read main pins"),
             canonical_main_pins().expect("render main pins")
