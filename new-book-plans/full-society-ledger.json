@@ -131616,6 +131616,52 @@
       "result": "pending",
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
+    },
+    {
+      "id": "FS-SAU-53",
+      "title": "Money and influence named grounds passing current-source repository audit",
+      "source_version": "fs-ledger-2026-09-10-money-and-influence-v1",
+      "scope_sha256": "2618e386bc5ed503ebb8058f199663715c791a30962480ae7f583aa7c2db6660",
+      "protocol_sha256": "caf310e545718de5728fdbe34491d2b34cf00900e69281de12c5e93aa643f44c",
+      "executed_at_utc": "2026-09-10T11:05:44Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts",
+        "./verify.sh --commit-gate new-book-plans/verification-receipts/sha256-a0ddc29b4bfeb0db302ef54276026946ff9518d6341772ef8dcd954339bb4f7c.json --transition audit"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "passed-with-recorded-limits",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
+      "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-a0ddc29b4bfeb0db302ef54276026946ff9518d6341772ef8dcd954339bb4f7c.json"
     }
   ],
   "constitutional_effects": [
