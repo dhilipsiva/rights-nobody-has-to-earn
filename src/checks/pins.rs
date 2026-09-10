@@ -169,7 +169,7 @@ const LIVE_FAMILIES: [(&str, &str); 37] = [
     ),
 ];
 
-const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 66] = [
+const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 67] = [
     ("no-person-line", 1, 0),
     ("no-public-court", 1, 0),
     ("no-choose-boss", 1, 0),
@@ -236,6 +236,7 @@ const COUNTERFACTUAL_SPECS: [(&str, usize, usize); 66] = [
     ("no-public-scale-tier-allocation-vocabulary", 1, 1),
     ("unnamed-public-scale-trigger", 0, 1),
     ("unnamed-appointment-control-source", 0, 1),
+    ("unnamed-office-integrity-kind", 0, 1),
 ];
 
 #[derive(Debug)]

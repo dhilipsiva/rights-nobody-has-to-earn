@@ -2,6 +2,12 @@
 
 # Democratic and Administrative Integrity — Neutral Decision Brief
 
+> **Superseded 2026-09-09.** The seven questions in section 4 were put to the
+> author and ruled the same day; the controlling record is
+> `book-1-democratic-and-administrative-integrity-decision.md`. This brief is
+> retained as the dated measurement and inventory that preceded the ruling and
+> is not edited further.
+
 > **Status: brief only, 2026-09-08, measured at `83dd301`. This decides
 > nothing.** It is the neutral inventory the tracker permits ahead of an
 > outstanding author ruling. No predicate, rule, pin, fixture, constant,

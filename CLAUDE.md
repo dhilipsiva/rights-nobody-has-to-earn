@@ -1045,6 +1045,48 @@ authenticate a warrant, prove an order was given or refused, or end an
 emergency. Controlling record:
 `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
 
+#### Democratic and administrative integrity — 2026-09-09
+
+**The democratic-and-administrative-integrity rulings are author-ratified
+(2026-09-09): seven answers to the neutral brief's reserved questions.** A
+constitutional money-and-influence record exists and is fully consequential:
+a reviewed finding drawn from it — payer kind, instrument kind, recipient
+kind, with the controlling payer attested where the nominal one is controlled
+— may withhold public answerability for an office or candidacy, which is what
+makes the three inherited treasury barriers catchable and is the Class 5
+union/civic finance card the economic ruling promised. Disclosure is a
+constitutional duty through the typed `obliged` bridge, with the reader's
+non-response a positive duty on the alternate; its arrival half is a
+liveness claim and is never written. Conflicts of interest, gifts, and
+revolving doors are one family of attested incompatibilities whose bearer is
+always the office, never the private party, with every amount and period
+left to democratic law. A district plan drawn to entrench a named party,
+coalition, or incumbent, or to dilute a protected ground, is a legal
+incompatibility adjudicated on attested evidence with no metric, threshold,
+or compute-backend route. Procurement integrity stays Book 2. Coordinated
+information manipulation receives an actor-side finding only — coordination
+and control, never truth, and never any person-side head, premise, or
+vocabulary, which `src/checks/repository.rs` must guard with a watched
+failing fixture. Genuine opposition rights are formalised, attached to not
+supporting the government rather than to a party label, and any association
+that fields candidates owes internal democratic minima; no power to
+proscribe a party is created, and that refusal is recorded by name.
+
+Every family is built on the appointment anti-capture idiom because the
+corpus has no domain nouns: `observe/4`, closed `member/2` vocabularies,
+`complete/3`, three mutually distinct attesters, and `authority` withheld.
+Consequences reach public answerability only; the entrenched corridor is
+unchanged. Polarity is positive — an absent or withheld finding manufactures
+nothing.
+
+**Ratified but unimplemented.** Six contract cards land in the order C, A, B,
+D, G, F fixed by the record's section 10, each through its own receipt-bound
+chain; `promise/3` and `pay/4` are not reused for political money. Book 2
+owns registers, audit staffing, investigation, enforcement workflow, and
+publication. Nibli authenticates no payment, detects no coordination, proves
+no disclosure arrived, and advances no clock. Controlling record:
+`new-book-plans/book-1-democratic-and-administrative-integrity-decision.md`.
+
 #### Surviving guardrails and the democratic corridor
 
 The existing guardrails survive the expansion: no floor may depend on work,
@@ -2136,7 +2178,12 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   counts the module pins. Branch `fields` are result-side only — the record and
   temporal record carry record identity, not finding content — so the economic
   families' record-mirroring idiom does not transfer here; three mutually
-  distinct authorised attesters on the result are this family's wall. Verify
+  distinct authorised attesters on the result are this family's wall. The
+  examined-kind vocabularies — appointment anti-capture on its anchored
+  branches, office integrity on every branch — live in one
+  `EXAMINED_KIND_FAMILIES` table in the module; a new family joins the table,
+  its `PUBLIC_SCALE_VOCABULARIES` mirror in `src/checks/repository.rs`, and
+  that guard's widening-control list together. Verify
   constitution claims with release `nibli-pin` at or after
   `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` —
   its wasm predates the `derived_only` and `entitled` corpus entries and silently

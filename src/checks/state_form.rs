@@ -42,33 +42,33 @@ const SPDX_HEADER: &str = "# SPDX-License-Identifier: MIT OR Apache-2.0";
 
 pub(crate) const MAIN_SHARD_COUNT: usize = 64;
 pub(crate) const COUNTERFACTUAL_SHARD_COUNT: usize = 17;
-pub(crate) const MAIN_PIN_COUNT: usize = 391;
+pub(crate) const MAIN_PIN_COUNT: usize = 396;
 pub(crate) const COUNTERFACTUAL_PIN_COUNT: usize = 51;
 const GENERIC_MAIN_PIN_COUNT: usize = 335;
-const ACCEPTANCE_PIN_COUNT: usize = 56;
+const ACCEPTANCE_PIN_COUNT: usize = 61;
 const CARD_COUNT: usize = 51;
 const RESULT_COUNT: usize = 131;
 const AUTHORITY_COUNT: usize = 142;
-const STATEMENT_COUNT: usize = 281;
+const STATEMENT_COUNT: usize = 291;
 
 const EXPECTED_MAIN_PINS_SHA256: &str =
-    "2df0d2aebb7cea55aa6b1758e180ec6ebe098c0ac27e25322744f8861c95256a";
+    "9afc290841f401ce82977cc104215b0df7a9492f10c3eec830f69555f0b0541e";
 const EXPECTED_COUNTERFACTUAL_SHA256: &str =
-    "5875394dee557a35ed029bca5eadf17d358ce2632785e0a08fc3104928521bcb";
+    "1f2b11e9ef618bb2bb6121f0c02ba22103fa4680853b0aec2063a79683351230";
 const EXPECTED_COUNTERFACTUAL_PINS_SHA256: &str =
-    "e9639f1b3869cb2769e88570fe9eb032534d1420a1bc6dd37e52b3b7b309d3c1";
+    "3cb8ae936478590c8da767ad30d4fdfcade0c498e11bcde261b4ed06db5973c6";
 const EXPECTED_CONSTITUTION_SHA256: &str =
-    "c84ed53e76fb7dc3de8c0cc64bf3503e4c937bb2de8c41117a0fe31ccf43e438";
+    "62c3c7848f80cce73d8a3c9faeca5ac7427f3009bdfcc36c71e02f437b122b2d";
 const EXPECTED_RULE_BLOCK_SHA256: &str =
-    "0ff5cb7b1300e805a9c83a8cc072d8f79f0843ac7955a6a1134d6bd175207ca8";
+    "3b1f13ed17afc724c6e62add801a233b41f280b45b79238347a2035994ce2388";
 const EXPECTED_RENDERED_BLOCK_SHA256: &str =
-    "79cc9637d964ed9f14821b552cd536d9d496a8465e0be375fdbd12b3b33ae9c4";
+    "935b6e687bd679fa3e2b6b78eae507ebb3c249cab8d98e011ca5e86c060e9bd8";
 const EXPECTED_BRANCH_IR_SHA256: &str =
-    "c971bffabd279e59ddc21f9dbb072567f1b9ccdb270eb92390416790bafe2886";
+    "d0cb82debcc0221bb057f6253bbeeb272b6f9fc2a0ee707918874148bab8dcc9";
 const EXPECTED_BYTE_INDEX_SHA256: &str =
-    "bb340b7108cbb5e8f2f88a9d0b2e77d87fb30e4cc7b3813359bc6fe3f20846a3";
+    "1526ef2b8b576f4f08d70609466ae75d7dba75a330c320336019a5c536618bd3";
 const EXPECTED_COUNT_INDEX_SHA256: &str =
-    "0a1dfa96d0c369a87cb078e5011239b9930eb7dce225477b0a8cf36e2a3d60ef";
+    "5306d1311d5ae62312ce72b227a291e5fa8935e7d082655033c22eaffbdb5729";
 
 const REVIEWED_SEMANTIC_SOURCE: &str = include_str!("../../new-book-plans/state-form-source.json");
 
@@ -83,7 +83,7 @@ const DELEGATED_PIN_PATHS: [&str; 5] = [
     "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
     "book-1/12-changing-the-rules.pins.nibli",
 ];
-const ACCEPTANCE_CASE_IDS: [&str; 19] = [
+const ACCEPTANCE_CASE_IDS: [&str; 20] = [
     "FSACC-001-prisoner-franchise-candidacy",
     "FSACC-002-custody-home-continuity",
     "FSACC-003-nonconventional-residence",
@@ -103,6 +103,7 @@ const ACCEPTANCE_CASE_IDS: [&str; 19] = [
     "FSACC-017-negotiated-secession",
     "FSACC-018-duplicate-submission",
     "FSACC-019-missing-conflicting-certificate",
+    "FSACC-020-office-integrity",
 ];
 
 type Field = [String; 2];
@@ -1097,55 +1098,77 @@ fn validate_branch_inventory(branches: &[Branch]) -> StateFormResult<()> {
     }
     validate_explicit_lineage_rule_seams(branches)?;
     validate_explicit_lineage_self_controls(branches)?;
-    validate_appointment_anti_capture(branches)?;
-    validate_appointment_anti_capture_self_controls(branches)?;
+    for family in &EXAMINED_KIND_FAMILIES {
+        validate_examined_kind_family(branches, family)?;
+        validate_examined_kind_family_self_controls(branches, family)?;
+    }
     Ok(())
 }
 
-/// The anti-capture anchor is an absence attestation, and an absence is only as
-/// wide as the kinds it examined. The ratified sentence names five source kinds
-/// and requires both control modes to be observable, so a branch that carries
-/// the anchor must carry every one of them: a branch attesting four kinds has
-/// said nothing about the fifth, which is the case the ruling's own second
+/// An anchor is an absence attestation, and an absence is only as wide as the
+/// kinds it examined. The ratified anti-capture sentence names five source
+/// kinds and requires both control modes to be observable; the office-integrity
+/// ruling names three interest kinds, four counterparty relationships, and
+/// three incompatibility modes. A branch that carries a family's anchor must
+/// carry every one of its kinds: a branch attesting four kinds has said nothing
+/// about the fifth, which is the case the anti-capture ruling's own second
 /// sentence — divided sources alone prove nothing — was written against.
-fn appointment_anti_capture_fields() -> Vec<Field> {
+fn examined_kind_fields(family: &ExaminedKindFamily) -> Vec<Field> {
     let mut fields = Vec::new();
-    for (scope, _, members) in APPOINTMENT_CONTROL_VOCABULARIES {
-        for member in members {
-            fields.push([(*member).to_owned(), scope.to_owned()]);
+    for (scope, _, members) in family.vocabularies {
+        for member in *members {
+            fields.push([(*member).to_owned(), (*scope).to_owned()]);
         }
     }
     fields
 }
 
-fn anti_capture_anchor() -> Field {
-    [
-        "NoMajorityDirectOrDeFactoControl".to_owned(),
-        "AntiCaptureScope".to_owned(),
-    ]
+fn examined_kind_anchor(family: &ExaminedKindFamily) -> Field {
+    [family.anchor.0.to_owned(), family.anchor.1.to_owned()]
 }
 
-fn appointment_anti_capture_branches(branches: &[Branch]) -> Vec<&Branch> {
-    let anchor = anti_capture_anchor();
+fn examined_kind_branches<'a>(
+    branches: &'a [Branch],
+    family: &ExaminedKindFamily,
+) -> Vec<&'a Branch> {
+    let anchor = examined_kind_anchor(family);
     branches
         .iter()
         .filter(|branch| branch.fields.contains(&anchor))
         .collect()
 }
 
-fn validate_appointment_anti_capture(branches: &[Branch]) -> StateFormResult<()> {
-    let anchored = appointment_anti_capture_branches(branches);
+fn validate_examined_kind_family(
+    branches: &[Branch],
+    family: &ExaminedKindFamily,
+) -> StateFormResult<()> {
+    let anchored = examined_kind_branches(branches, family);
     if anchored.is_empty() {
-        return Err(state_form_error(
-            "no branch carries the anti-capture anchor — the incompatibility lost its only carrier",
-        ));
+        return Err(state_form_error(format!(
+            "no branch carries the {} anchor — the incompatibility lost its only carrier",
+            family.name
+        )));
+    }
+    // A universal family binds every office act. A branch without the anchor
+    // has not declined the family; it has exempted itself, and that is refused.
+    if family.universal && anchored.len() != branches.len() {
+        let anchor = examined_kind_anchor(family);
+        let missing = branches
+            .iter()
+            .find(|branch| !branch.fields.contains(&anchor))
+            .map(|branch| branch.marker.as_str())
+            .unwrap_or("?");
+        return Err(state_form_error(format!(
+            "{missing} exempts itself from {} — the family binds every office act",
+            family.name
+        )));
     }
     for branch in anchored {
-        for field in appointment_anti_capture_fields() {
+        for field in examined_kind_fields(family) {
             if !branch.fields.contains(&field) {
                 return Err(state_form_error(format!(
-                    "{} attests anti-capture without naming {} — an unexamined kind is not an absent one",
-                    branch.marker, field[0]
+                    "{} attests {} without naming {} — an unexamined kind is not an absent one",
+                    branch.marker, family.name, field[0]
                 )));
             }
         }
@@ -1153,19 +1176,23 @@ fn validate_appointment_anti_capture(branches: &[Branch]) -> StateFormResult<()>
     Ok(())
 }
 
-/// Watched failing controls: dropping any one named kind or control mode from
-/// any anchored branch must be refused. Without these the completeness rule
-/// above could be silently narrowed one branch at a time.
-fn validate_appointment_anti_capture_self_controls(branches: &[Branch]) -> StateFormResult<()> {
-    let anchor = anti_capture_anchor();
-    for branch in appointment_anti_capture_branches(branches) {
-        for field in appointment_anti_capture_fields() {
+/// Watched failing controls: dropping any one named kind from any anchored
+/// branch must be refused, and for a universal family dropping the anchor from
+/// any branch must be refused too. Without these the completeness rule above
+/// could be silently narrowed one branch at a time.
+fn validate_examined_kind_family_self_controls(
+    branches: &[Branch],
+    family: &ExaminedKindFamily,
+) -> StateFormResult<()> {
+    let anchor = examined_kind_anchor(family);
+    for branch in examined_kind_branches(branches, family) {
+        for field in examined_kind_fields(family) {
             let mut mutated = branch.clone();
             mutated.fields.retain(|candidate| *candidate != field);
-            if validate_appointment_anti_capture(std::slice::from_ref(&mutated)).is_ok() {
+            if validate_examined_kind_family(std::slice::from_ref(&mutated), family).is_ok() {
                 return Err(state_form_error(format!(
-                    "watched anti-capture mutation survived: {} without {}",
-                    branch.marker, field[0]
+                    "watched {} mutation survived: {} without {}",
+                    family.name, branch.marker, field[0]
                 )));
             }
         }
@@ -1173,11 +1200,23 @@ fn validate_appointment_anti_capture_self_controls(branches: &[Branch]) -> State
         // the completeness rule by removing what selects it.
         let mut without_anchor = branch.clone();
         without_anchor.fields.retain(|candidate| *candidate != anchor);
-        if !appointment_anti_capture_branches(std::slice::from_ref(&without_anchor)).is_empty() {
+        if !examined_kind_branches(std::slice::from_ref(&without_anchor), family).is_empty() {
             return Err(state_form_error(format!(
-                "anti-capture branch selection is not anchored: {}",
-                branch.marker
+                "{} branch selection is not anchored: {}",
+                family.name, branch.marker
             )));
+        }
+        if family.universal {
+            let mut population = branches.to_vec();
+            if let Some(slot) = population.iter_mut().find(|candidate| candidate.marker == branch.marker) {
+                *slot = without_anchor;
+            }
+            if validate_examined_kind_family(&population, family).is_ok() {
+                return Err(state_form_error(format!(
+                    "watched {} mutation survived: {} exempted itself",
+                    family.name, branch.marker
+                )));
+            }
         }
     }
     Ok(())
@@ -2055,7 +2094,7 @@ fn result_raw_premises(branch: &Branch) -> StateFormResult<Vec<String>> {
     body.extend(distinct(&["source", "evidence", "review"]));
     for field in &branch.fields {
         body.extend(observed(&result_actors, "$result", &field[0], &field[1]));
-        if let Some(vocabulary) = appointment_vocabulary_for_scope(&field[1]) {
+        if let Some(vocabulary) = vocabulary_for_scope(&field[1]) {
             body.push(format!("member({}, {vocabulary})", field[0]));
         }
     }
@@ -2596,20 +2635,95 @@ const APPOINTMENT_CONTROL_VOCABULARIES: [(&str, &str, &[&str]); 2] = [
     ),
 ];
 
-fn appointment_vocabulary_for_scope(scope: &str) -> Option<&'static str> {
-    APPOINTMENT_CONTROL_VOCABULARIES
+/// The office-integrity finding's named grounds, from the 2026-09-09 ruling on
+/// conflicts, gifts, and revolving doors. The bearer is always the office: the
+/// interest kinds are the holder's own, the household's, or a controlled
+/// entity's; the counterparty relationships are what make a benefit or a
+/// post-office move an incompatibility; the modes are the three ratified
+/// incompatibilities. Amounts and periods are democratic law and appear nowhere
+/// here. Every branch carries this family because every branch is an office act.
+const OFFICE_INTEGRITY_VOCABULARIES: [(&str, &str, &[&str]); 3] = [
+    (
+        "MaterialInterestKindScope",
+        "MaterialInterestKindVocabulary",
+        &[
+            "OwnMaterialInterest",
+            "HouseholdMaterialInterest",
+            "ControlledEntityMaterialInterest",
+        ],
+    ),
+    (
+        "CounterpartyRelationshipKindScope",
+        "CounterpartyRelationshipKindVocabulary",
+        &[
+            "RegulatedCounterparty",
+            "ContractingCounterparty",
+            "AdjudicatedCounterparty",
+            "AppointedCounterparty",
+        ],
+    ),
+    (
+        "OfficeIntegrityModeScope",
+        "OfficeIntegrityModeVocabulary",
+        &[
+            "ConflictedAct",
+            "CounterpartyBenefit",
+            "FormerHolderCounterpartyDealing",
+        ],
+    ),
+];
+
+/// A family of examined kinds behind one absence anchor. `universal` families
+/// bind every branch; the others bind the branches that carry the anchor.
+struct ExaminedKindFamily {
+    name: &'static str,
+    anchor: (&'static str, &'static str),
+    universal: bool,
+    vocabularies: &'static [(&'static str, &'static str, &'static [&'static str])],
+}
+
+const EXAMINED_KIND_FAMILIES: [ExaminedKindFamily; 2] = [
+    ExaminedKindFamily {
+        name: "appointment anti-capture",
+        anchor: ("NoMajorityDirectOrDeFactoControl", "AntiCaptureScope"),
+        universal: false,
+        vocabularies: &APPOINTMENT_CONTROL_VOCABULARIES,
+    },
+    ExaminedKindFamily {
+        name: "office integrity",
+        anchor: (
+            "NoConflictGiftOrRevolvingDoorIncompatibility",
+            "OfficeIntegrityScope",
+        ),
+        universal: true,
+        vocabularies: &OFFICE_INTEGRITY_VOCABULARIES,
+    },
+];
+
+fn vocabulary_for_scope(scope: &str) -> Option<&'static str> {
+    EXAMINED_KIND_FAMILIES
         .iter()
+        .flat_map(|family| family.vocabularies.iter())
         .find(|(field_scope, _, _)| *field_scope == scope)
         .map(|(_, vocabulary, _)| *vocabulary)
 }
 
-fn render_appointment_vocabulary_rules() -> Vec<String> {
+fn vocabulary_member_is_ratified(member: &str, vocabulary: &str) -> bool {
+    EXAMINED_KIND_FAMILIES
+        .iter()
+        .flat_map(|family| family.vocabularies.iter())
+        .any(|(_, candidate, members)| *candidate == vocabulary && members.contains(&member))
+}
+
+fn render_vocabulary_rules() -> Vec<String> {
     let mut rules = Vec::new();
-    for (scope, vocabulary, members) in APPOINTMENT_CONTROL_VOCABULARIES {
-        for member in members {
-            rules.push(format!(
-                "all $source: all $record: observe($source, $record, {member}, {scope}) -> member({member}, {vocabulary})."
-            ));
+    for family in &EXAMINED_KIND_FAMILIES {
+        for (scope, vocabulary, members) in family.vocabularies {
+            for member in *members {
+                rules.push(format!(
+                    "all $source: all $record: observe($source, $record, {member}, {scope}) -> member({member}, {vocabulary})."
+                ));
+            }
         }
     }
     rules
@@ -2617,7 +2731,7 @@ fn render_appointment_vocabulary_rules() -> Vec<String> {
 
 fn draft_rule_block(source: &SemanticSource) -> StateFormResult<Vec<String>> {
     let mut rules = vec![render_current_rule()];
-    rules.extend(render_appointment_vocabulary_rules());
+    rules.extend(render_vocabulary_rules());
     for branch in &source.branches {
         rules.extend(v2_rules_for_branch(branch)?);
     }
@@ -3286,6 +3400,37 @@ fn render_acceptance_cases(
         &[AtomSelector::all(&["CompleteUniqueCertificateSet"])],
     )?;
 
+    builder.header(ACCEPTANCE_CASE_IDS[19]);
+    builder.existing(7, "appropriation_authorization", "FSBOD_02")?;
+    builder.negative(
+        7,
+        "appropriation_authorization",
+        "FSBOD_02",
+        "SFAcc020NoOfficeIntegrity",
+        &[AtomSelector::all(&["OfficeIntegrityScope"])],
+    )?;
+    builder.negative(
+        7,
+        "appropriation_authorization",
+        "FSBOD_02",
+        "SFAcc020InterestUnexamined",
+        &[AtomSelector::all(&["MaterialInterestKindScope"])],
+    )?;
+    builder.negative(
+        7,
+        "appropriation_authorization",
+        "FSBOD_02",
+        "SFAcc020CounterpartyUnexamined",
+        &[AtomSelector::all(&["CounterpartyRelationshipKindScope"])],
+    )?;
+    builder.negative(
+        7,
+        "appropriation_authorization",
+        "FSBOD_02",
+        "SFAcc020ModeUnexamined",
+        &[AtomSelector::all(&["OfficeIntegrityModeScope"])],
+    )?;
+
     builder
         .lines
         .push("# <STATE-FORM-ACCEPTANCE-CASES-END>".to_owned());
@@ -3663,8 +3808,8 @@ fn validate_call(call: &ParsedCall, in_head: bool) -> StateFormResult<()> {
         "authorized" => 3,
         "observe" => 4,
         "complete" | "authority" => 3,
-        // The appointment anti-capture vocabularies. `member` is derived-only
-        // and ground-headed, so a supplied record cannot name its own ground.
+        // The examined-kind vocabularies. `member` is derived-only and
+        // ground-headed, so a supplied record cannot name its own ground.
         "member" => 2,
         _ => {
             return Err(state_form_error(format!(
@@ -3825,32 +3970,28 @@ fn validate_rule_surface(statements: &[&str]) -> StateFormResult<Vec<ParsedRule>
         ));
     }
 
-    // Statements 1..=7 are the appointment anti-capture vocabularies. They are
-    // ground-headed by construction; check that here rather than letting the
-    // head dispatch below reject them, so a variable head can never slip in.
-    let vocabulary_rules = render_appointment_vocabulary_rules();
+    // The leading statements are the examined-kind vocabularies — appointment
+    // anti-capture, then office integrity. They are ground-headed by
+    // construction; check that here rather than letting the head dispatch
+    // below reject them, so a variable head can never slip in.
+    let vocabulary_rules = render_vocabulary_rules();
     let vocabulary_end = 1 + vocabulary_rules.len();
     for (offset, rule) in parsed[1..vocabulary_end].iter().enumerate() {
         if rule.head.name != "member" || rule.head.args.len() != 2 {
             return Err(state_form_error(format!(
-                "statement {} is not an appointment vocabulary head",
+                "statement {} is not an examined-kind vocabulary head",
                 offset + 1
             )));
         }
         if rule.head.args.iter().any(|arg| arg.starts_with('$')) {
             return Err(state_form_error(format!(
-                "appointment vocabulary head {} carries a variable — a supplied record must not name its own ground",
+                "vocabulary head {} carries a variable — a supplied record must not name its own ground",
                 rule.head.args.join(", ")
             )));
         }
-        if !APPOINTMENT_CONTROL_VOCABULARIES
-            .iter()
-            .any(|(_, vocabulary, members)| {
-                *vocabulary == rule.head.args[1] && members.contains(&rule.head.args[0].as_str())
-            })
-        {
+        if !vocabulary_member_is_ratified(&rule.head.args[0], &rule.head.args[1]) {
             return Err(state_form_error(format!(
-                "an appointment vocabulary has grown a member: {}",
+                "an examined-kind vocabulary has grown a member: {}",
                 rule.head.args.join(", ")
             )));
         }
@@ -5582,7 +5723,7 @@ mod tests {
         let report = check(&context, &snapshot).expect("check state-form family");
         assert_eq!(
             report.to_string(),
-            "state-form: PASS — 51 cards, 281 exact statements, 391 main pins, 51 counterfactual pins"
+            "state-form: PASS — 51 cards, 291 exact statements, 396 main pins, 51 counterfactual pins"
         );
         let output = fingerprints(&context, &snapshot).expect("render fingerprints");
         let decoded: Value = serde_json::from_str(&output).expect("parse fingerprints");

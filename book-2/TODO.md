@@ -220,6 +220,16 @@ noticing.
 
 ## Full-society operational completion contract — collect now, execute only after Gate C
 
+- **Office-integrity operation (seed, 2026-09-09).** Book 1 now names the
+  interest kinds, counterparty relationships, and incompatibility modes a
+  reviewed office result must attest under
+  `new-book-plans/book-1-office-integrity-contract.md`. Book 2 owns what makes
+  those attestations possible: interest and gift registers, their filing and
+  correction workflow, the *de minimis* thresholds and cooling-off periods
+  democratic law sets, post-office employment notification, and the audit and
+  integrity function's staffing. None of it is Book 1, and none of it may be
+  read back into standing, the floor, the ballot, or a personal score.
+
 - [ ] **Generate Book 2's operational responsibility view from the canonical
   full-society source.**
   - Reuse stable domain, role, body/institution, power, dependency, scenario,

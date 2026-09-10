@@ -1,5 +1,5 @@
 {
-  "branch_ir_sha256": "c971bffabd279e59ddc21f9dbb072567f1b9ccdb270eb92390416790bafe2886",
+  "branch_ir_sha256": "d0cb82debcc0221bb057f6253bbeeb272b6f9fc2a0ee707918874148bab8dcc9",
   "branches": [
     {
       "authority_holders": [
@@ -26,6 +26,50 @@
         [
           "$enumerated_competence",
           "EnumeratedCompetenceScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_001CommonFederalJurisdictionKind",
@@ -67,6 +111,50 @@
         [
           "PositiveResidualClassification",
           "ResidualClassificationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_002SourceNamedRegionalJurisdictionKind",
@@ -112,6 +200,50 @@
         [
           "PublicReasonsComplete",
           "ReasonsScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_003CrossTierCompetenceBoundaryJurisdictionKind",
@@ -153,6 +285,50 @@
         [
           "$reviewable_order",
           "ReviewableOrderScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_004DisputedCompetenceCaseJurisdictionKind",
@@ -198,6 +374,50 @@
         [
           "NoCouncilReturnUsed",
           "CouncilStageScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_005CommonLawmakingJurisdictionKind",
@@ -243,6 +463,50 @@
         [
           "SameRuleRepassageComplete",
           "CouncilStageScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_005CommonLawmakingJurisdictionKind",
@@ -272,6 +536,50 @@
         [
           "$revenue_measure",
           "RevenueMeasureScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_006CommonRevenueJurisdictionKind",
@@ -301,6 +609,50 @@
         [
           "$appropriation",
           "AppropriationMeasureScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_007CommonAppropriationJurisdictionKind",
@@ -346,6 +698,50 @@
         [
           "PublicReasonsComplete",
           "ReasonsScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_008CommonOversightJurisdictionKind",
@@ -391,6 +787,50 @@
         [
           "$assembly_act",
           "AssemblyActScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_009CommonAmendmentInitiationJurisdictionKind",
@@ -524,6 +964,50 @@
         [
           "$recount",
           "RecountScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_010CommonAssemblyElectionJurisdictionKind",
@@ -633,6 +1117,50 @@
         [
           "$regional_result",
           "RegionalDelegationResultScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_011SourceNamedRegionalDelegationJurisdictionKind",
@@ -682,6 +1210,50 @@
         [
           "$public_reasons",
           "PublicReasonsScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_012CommonBillReturnJurisdictionKind",
@@ -775,6 +1347,50 @@
         [
           "NoGeneralOrdinaryLawVeto",
           "VetoScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -868,6 +1484,50 @@
         [
           "NoGeneralOrdinaryLawVeto",
           "VetoScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -961,6 +1621,50 @@
         [
           "NoGeneralOrdinaryLawVeto",
           "VetoScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -1054,6 +1758,50 @@
         [
           "NoGeneralOrdinaryLawVeto",
           "VetoScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -1095,6 +1843,50 @@
         [
           "FSPOW_015",
           "SourcePowerScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_014CommonExecutiveMandateJurisdictionKind",
@@ -1136,6 +1928,50 @@
         [
           "FSPOW_016",
           "SourcePowerScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_014CommonExecutiveMandateJurisdictionKind",
@@ -1233,6 +2069,50 @@
         [
           "$result_certificate",
           "ResultCertificateScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_015CommonConfidenceJurisdictionKind",
@@ -1330,6 +2210,50 @@
         [
           "SameUniqueDecisionRemovesAndCertifies",
           "UniqueDecisionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_016CommonConstructiveReplacementJurisdictionKind",
@@ -1466,6 +2390,50 @@
         [
           "BothChambersParticipate",
           "JointParticipationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_017CommonJointPresidentialSelectionJurisdictionKind",
@@ -1582,6 +2550,50 @@
         [
           "$appointment_result",
           "AppointmentResultScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_018CommonFormalAppointmentJurisdictionKind",
@@ -1619,6 +2631,50 @@
         [
           "$enactment",
           "ValidEnactmentScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_019CommonPromulgationJurisdictionKind",
@@ -1664,6 +2720,50 @@
         [
           "$certificate_lineage",
           "CertificateLineageScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_020CommonCertificateReceiptJurisdictionKind",
@@ -1709,6 +2809,50 @@
         [
           "PositiveRefusalTrigger",
           "TriggerKindScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -1754,6 +2898,50 @@
         [
           "PositiveVacancyTrigger",
           "TriggerKindScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -1799,6 +2987,50 @@
         [
           "PositiveSelectionFailureTrigger",
           "TriggerKindScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -1844,6 +3076,50 @@
         [
           "PositiveRemovalTrigger",
           "TriggerKindScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -1893,6 +3169,50 @@
         [
           "$reasoned_decision",
           "ReasonedDecisionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_022ExactCaseJurisdictionKind",
@@ -1946,6 +3266,50 @@
         [
           "$constitutional_case",
           "ConstitutionalCaseScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_023ExactConstitutionalCaseJurisdictionKind",
@@ -1987,6 +3351,50 @@
         [
           "$remedy",
           "RemedyScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_024ExactProcedureCaseJurisdictionKind",
@@ -2028,6 +3436,50 @@
         [
           "$remedy",
           "RemedyScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_024ExactProcedureCaseJurisdictionKind",
@@ -2069,6 +3521,50 @@
         [
           "$remedy",
           "RemedyScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_024ExactProcedureCaseJurisdictionKind",
@@ -2122,6 +3618,50 @@
         [
           "$reasoned_decision",
           "ReasonedDecisionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_025ExactCompositionCaseJurisdictionKind",
@@ -2191,6 +3731,50 @@
         [
           "AuditAcquiresNoQualificationFunction",
           "AuditBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_026CommonAppointmentQualificationFunctionJurisdictionKind",
@@ -2244,6 +3828,50 @@
         [
           "SilenceIsNoDisposition",
           "SilenceScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_027ExactAppointmentQualificationCaseJurisdictionKind",
@@ -2297,6 +3925,50 @@
         [
           "SilenceIsNoDisposition",
           "SilenceScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_027ExactAppointmentQualificationCaseJurisdictionKind",
@@ -2378,6 +4050,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2459,6 +4175,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2540,6 +4300,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2621,6 +4425,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2766,6 +4614,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -2911,6 +4803,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -3056,6 +4992,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -3201,6 +5181,50 @@
         [
           "DeFactoAppointmentControl",
           "AppointmentControlModeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -3314,6 +5338,50 @@
         [
           "DistinctCrossBodyConfirmation",
           "ConfirmationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_029ExactIndependentOfficeRemovalJurisdictionKind",
@@ -3427,6 +5495,50 @@
         [
           "DistinctCrossBodyConfirmation",
           "ConfirmationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_029ExactIndependentOfficeRemovalJurisdictionKind",
@@ -3540,6 +5652,50 @@
         [
           "DistinctCrossBodyConfirmation",
           "ConfirmationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_029ExactIndependentOfficeRemovalJurisdictionKind",
@@ -3661,6 +5817,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -3782,6 +5982,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -3903,6 +6147,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4024,6 +6312,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4145,6 +6477,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4266,6 +6642,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4387,6 +6807,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4508,6 +6972,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4629,6 +7137,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4750,6 +7302,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4871,6 +7467,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -4992,6 +7632,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -5113,6 +7797,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -5234,6 +7962,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -5355,6 +8127,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -5476,6 +8292,50 @@
         [
           "RestorationOrLawfulAppointmentEndsFallback",
           "RestorationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -5525,6 +8385,50 @@
         [
           "NoPolicyTransferByVacancy",
           "VacancyBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_031CommonAssemblyLifecycleJurisdictionKind",
@@ -5558,6 +8462,50 @@
         [
           "NoExecutiveDissolution",
           "ExecutiveBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_031CommonAssemblyLifecycleJurisdictionKind",
@@ -5599,6 +8547,50 @@
         [
           "NoExecutiveAppointment",
           "AppointmentBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -5636,6 +8628,50 @@
         [
           "EqualRegionalAggregateWeight",
           "RegionalWeightScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -5733,6 +8769,50 @@
         [
           "NoExecutiveAppointment",
           "AppointmentBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -5774,6 +8854,50 @@
         [
           "EqualRegionalAggregateWeight",
           "RegionalWeightScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -5870,6 +8994,50 @@
         [
           "NoDirectPresidentialMandate",
           "MandateBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -5966,6 +9134,50 @@
         [
           "NoReplacementWithoutSuccessor",
           "ReplacementBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -5999,6 +9211,50 @@
         [
           "NoBroaderPolicyTransfer",
           "CoordinatorBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -6028,6 +9284,50 @@
         [
           "NoDecreeDissolutionVetoOrEmergency",
           "CoordinatorBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -6156,6 +9456,50 @@
         [
           "BothChambersParticipate",
           "JointParticipationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_034CommonPresidentialLifecycleJurisdictionKind",
@@ -6197,6 +9541,50 @@
         [
           "$finite_end",
           "EndBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_034CommonPresidentialLifecycleJurisdictionKind",
@@ -6295,6 +9683,50 @@
         [
           "FactfinderAndConfirmationDistinct",
           "SeparationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_034CommonPresidentialLifecycleJurisdictionKind",
@@ -6376,6 +9808,50 @@
         [
           "ExactSeatConfiguration",
           "SeatAllocationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -6457,6 +9933,50 @@
         [
           "ExactSeatConfiguration",
           "SeatAllocationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -6538,6 +10058,50 @@
         [
           "ExactSeatConfiguration",
           "SeatAllocationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -6619,6 +10183,50 @@
         [
           "ExactSeatConfiguration",
           "SeatAllocationScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -6672,6 +10280,50 @@
         [
           "NoPropertyAddressCitizenshipStatusWealthWorkContributionOrWaitingGate",
           "MembershipBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -6721,6 +10373,50 @@
         [
           "NoConventionalAddressOrDocumentPerfectionGate",
           "MembershipBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -6779,6 +10475,50 @@
         [
           "NoPublicDistrictShopping",
           "HomeChoiceBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -6844,6 +10584,50 @@
         [
           "NoPublicDistrictShopping",
           "HomeChoiceBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -6900,6 +10684,50 @@
         [
           "NoPoliticalHomeChange",
           "HomeContinuityScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -6945,6 +10773,50 @@
         [
           "PositiveContinuitySource",
           "ContinuityDispositionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -6994,6 +10866,50 @@
         [
           "ProvisionalFirstHomeEffective",
           "HomeDispositionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7039,6 +10955,50 @@
         [
           "OneTransitionNoGapOrOverlap",
           "AtomicTransferBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7092,6 +11052,50 @@
         [
           "NoCitizenshipPropertyDurationOrHigherAgeGate",
           "FranchiseBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7145,6 +11149,50 @@
         [
           "NoCitizenshipPropertyDurationOrHigherAgeGate",
           "CandidacyBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7194,6 +11242,50 @@
         [
           "NoRetroactiveBallotInvalidation",
           "SubmissionContinuityScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7235,6 +11327,50 @@
         [
           "AdulthoodRecordEvidenceNotSource",
           "AdulthoodEvidenceScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7284,6 +11420,50 @@
         [
           "PositiveContraryDeterminationRequiredToEnd",
           "AdulthoodEndScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7321,6 +11501,50 @@
         [
           "UniversalStandingProtectionAndPetitionPreserved",
           "RightsContinuityScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7362,6 +11586,50 @@
         [
           "NoDiasporaBallot",
           "ReturnBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7419,6 +11687,50 @@
         [
           "LawfulSuccessorAndContinuityRequired",
           "OfficeContinuityScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -7559,6 +11871,50 @@
         [
           "TieOrMissingCertificationWithholdsOnly",
           "FailureBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_037CommonAndAffectedRegionalAmendmentJurisdictionKind",
@@ -7742,6 +12098,50 @@
         [
           "TieOrMissingCertificationWithholdsOnly",
           "FailureBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_037CommonAndAffectedRegionalAmendmentJurisdictionKind",
@@ -7976,6 +12376,50 @@
         [
           "TieOrMissingCertificationWithholdsOnly",
           "FailureBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_037CommonAndAffectedRegionalAmendmentJurisdictionKind",
@@ -8093,6 +12537,50 @@
         [
           "NoAmendmentApprovalByDocket",
           "ApprovalBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_038CommonConstitutionalInitiativeDocketJurisdictionKind",
@@ -8210,6 +12698,50 @@
         [
           "NoConstitutionalOrCompetenceChange",
           "InitiativeBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -8327,6 +12859,50 @@
         [
           "NoConstitutionalOrCompetenceChange",
           "InitiativeBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -8444,6 +13020,50 @@
         [
           "NoConstitutionalOrCompetenceChange",
           "InitiativeBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -8561,6 +13181,50 @@
         [
           "NoConstitutionalOrCompetenceChange",
           "InitiativeBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -8654,6 +13318,50 @@
         [
           "CurrentLawContinuityFromPositiveSource",
           "ContinuityDispositionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -8747,6 +13455,50 @@
         [
           "CurrentLawContinuityFromPositiveSource",
           "ContinuityDispositionScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -8868,6 +13620,50 @@
         [
           "AssembliesAndExecutiveCouncilExcluded",
           "RecallBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_040ExactDirectOfficeRecallJurisdictionKind",
@@ -8965,6 +13761,50 @@
         [
           "NoIncumbentExtension",
           "IncumbentBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_040ExactDirectOfficeRecallJurisdictionKind",
@@ -9083,6 +13923,50 @@
         [
           "NoAvoidableIrreversiblePolicy",
           "CaretakerBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_041CommonCaretakerJurisdictionKind",
@@ -9132,6 +14016,50 @@
         [
           "NoOrdinaryPolicy",
           "CaretakerBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_041CommonCaretakerJurisdictionKind",
@@ -9177,6 +14105,50 @@
         [
           "NoOutsideClockOrElectionOccurrence",
           "OperationBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_042CommonFreshElectionCallJurisdictionKind",
@@ -9226,6 +14198,50 @@
         [
           "NoDeliveryOrCapacityEffect",
           "DeliveryBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_043TierAssignedFiscalContinuityJurisdictionKind",
@@ -9259,6 +14275,50 @@
         [
           "NoAuthorityPersistenceBySilence",
           "ContinuityBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_043TierAssignedFiscalContinuityJurisdictionKind",
@@ -9292,6 +14352,50 @@
         [
           "NoAuthorityPersistenceByMissingTime",
           "ContinuityBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_043TierAssignedFiscalContinuityJurisdictionKind",
@@ -9362,6 +14466,50 @@
         [
           "OutgoingRefusalCannotExtendMandate",
           "IncumbentBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_044ExactOfficeTransferJurisdictionKind",
@@ -9432,6 +14580,50 @@
         [
           "OutgoingRefusalCannotExtendMandate",
           "IncumbentBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_044ExactOfficeTransferJurisdictionKind",
@@ -9545,6 +14737,50 @@
         [
           "NoMilitaryOrWithholdingRoute",
           "CoercionBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -9681,6 +14917,50 @@
         [
           "NoMilitaryOrWithholdingRoute",
           "CoercionBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -9871,6 +15151,50 @@
         [
           "NoMilitaryOrWithholdingRoute",
           "CoercionBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -10104,6 +15428,50 @@
         [
           "NoDeemedConsentOrWithholdingRoute",
           "CoercionBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -10153,6 +15521,50 @@
         [
           "EqualisationPortabilityAndSubsidiarityBoundaries",
           "LocalBudgetBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_046SourceNamedLocalBudgetJurisdictionKind",
@@ -10202,6 +15614,50 @@
         [
           "NoPleasureRetraction",
           "RetractionBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_047SourceNamedLocalAdministrationJurisdictionKind",
@@ -10243,6 +15699,50 @@
         [
           "StandingEqualityLibertiesFloorDueProcessAndCommons",
           "GuaranteeScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_048SourceNamedLocalPublicSpaceJurisdictionKind",
@@ -10284,6 +15784,50 @@
         [
           "NoOwnershipOperationCapacityOrDeliveryInference",
           "DeliveryBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_049SourceNamedLocalFacilityJurisdictionKind",
@@ -10325,6 +15869,50 @@
         [
           "NoDeliveryOrCapacityClaim",
           "DeliveryBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_050SourceNamedLocalAssignedServiceJurisdictionKind",
@@ -10366,6 +15954,50 @@
         [
           "NoDeliveryOrCapacityClaim",
           "DeliveryBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_050SourceNamedLocalAssignedServiceJurisdictionKind",
@@ -10423,6 +16055,50 @@
         [
           "ReferralAloneIsNoDecision",
           "ReferralBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_051ExactQualificationReferralJurisdictionKind",
@@ -10472,6 +16148,50 @@
         [
           "SilenceIsNoQualificationDisposition",
           "SilenceBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_051ExactQualificationReferralJurisdictionKind",
@@ -10517,6 +16237,50 @@
         [
           "SilenceIsNoApprovalOrRejection",
           "SilenceBoundaryScope"
+        ],
+        [
+          "NoConflictGiftOrRevolvingDoorIncompatibility",
+          "OfficeIntegrityScope"
+        ],
+        [
+          "OwnMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "HouseholdMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "ControlledEntityMaterialInterest",
+          "MaterialInterestKindScope"
+        ],
+        [
+          "RegulatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ContractingCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AdjudicatedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "AppointedCounterparty",
+          "CounterpartyRelationshipKindScope"
+        ],
+        [
+          "ConflictedAct",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "CounterpartyBenefit",
+          "OfficeIntegrityModeScope"
+        ],
+        [
+          "FormerHolderCounterpartyDealing",
+          "OfficeIntegrityModeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_051ExactQualificationReferralJurisdictionKind",

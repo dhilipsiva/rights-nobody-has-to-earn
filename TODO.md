@@ -339,27 +339,33 @@ Gate B; it does not claim Book 2 operations or feasibility.
     neither the reviewed result nor the holder authority. Card:
     `new-book-plans/book-1-appointment-anti-capture-contract.md`. This proves no
     independence, no detection, no challenge heard, and no remedy completed.
-  - **The remainder is gated behind an author ruling and cannot be drafted.**
-    Measured at `83dd301`: campaign, lobbying, political advertising, gifts,
-    conflicts of interest, revolving doors, corruption, party finance and
-    gerrymandering appear zero times in every ratified decision record, and the
-    237-row source-derived power census contains no row for any of them. Money
-    in politics exists only as three barrier constants inherited from the
-    economic ruling (FS-CCE-266, FS-CCE-268, FS-CCE-367), each one rule of the
-    form `person($x) -> prevents($x, <Constant>)`, reading no treasury, payment,
-    candidate or party. The neutral inventory the tracker permits is
-    `new-book-plans/book-1-democratic-and-administrative-integrity-brief.md`;
-    its section 4 states the seven open questions in the form the ruling would
-    answer, including the two that collide hardest with settled walls —
-    districting needs a metric, and a manipulation finding about a person is
-    what the temporary-assessment exclusion keeps out of the record.
-  - Still to cover once ruled: parties and opposition, districting, campaign
-    finance, political advertising, lobbying, gifts, procurement, conflicts of
-    interest, revolving doors, corruption, and coordinated information
-    manipulation; permitted writers and money/influence records; proportionate
-    disclosure and privacy; and campaign, procurement, ethics, and
+  - **Ruled 2026-09-09.** The seven questions the neutral brief reserved to the
+    author are answered in
+    `new-book-plans/book-1-democratic-and-administrative-integrity-decision.md`:
+    a fully consequential money-and-influence record; disclosure as a duty
+    through the `obliged` bridge; conflicts, gifts, and revolving doors as one
+    family; a qualitative anti-gerrymander prohibition with no metric;
+    procurement integrity staying Book 2; an actor-side manipulation finding,
+    never a person-side one; and opposition rights plus party internal
+    democracy with no proscription power. Each family lands as its own contract
+    card and receipt-bound chain in the order C, A, B, D, G, F fixed by the
+    record's section 10.
+  - **Office integrity (C) formalized 2026-09-09.** Every reviewed state-form
+    result now attests, by three distinct attesters, that the holder's own,
+    household, and controlled-entity interests, the four counterparty
+    relationships, and the three incompatibility modes were examined and
+    absent, or it derives nothing. Card:
+    `new-book-plans/book-1-office-integrity-contract.md`. Measured: the
+    blanket anchor alone derives neither the result nor the authority. No
+    amount or period is in the source; no register, recusal, or remedy is
+    proved. A, B, D, G, and F remain unimplemented.
+  - Still to cover, now ruled: parties and opposition, districting, campaign
+    finance, political advertising, lobbying, corruption, and coordinated
+    information manipulation; permitted writers and money/influence records;
+    proportionate disclosure and privacy; and campaign, ethics, and
     anti-corruption oversight, challenge, correction, remedy, disqualification,
-    and enforcement through the landed appointment and anti-capture interfaces.
+    and enforcement through the landed appointment, anti-capture, and office-
+    integrity interfaces. Procurement stays Book 2 by ruling E.
   - Test shell actors, third parties, media/platform concentration, selective
     enforcement, audit starvation, and manufactured withholding against those
     controls.

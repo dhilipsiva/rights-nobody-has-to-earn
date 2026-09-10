@@ -15,7 +15,7 @@ pub(crate) const STEP_NAME: &str = "full-society power source manifest";
 
 const SOURCE_PATH: &str = "new-book-plans/full-society-power-source-manifest.json";
 const EXPECTED_MANIFEST_SHA256: &str =
-    "9927ee577844251291f59a223b911eae70790da1fcf9c0749589e50bcc3a0c52";
+    "c6f935f867f97bbe999ebf3ca70eecbee0220c4a6d0bd34db0645aa9d7186ac8";
 const EXPECTED_SOURCE_COMMIT: &str = "36ed92c58877cffa5a11928ad200f0ca9a604820";
 const STATUS: &str = concat!(
     "reviewed-inventory-input-not-law-not-operation-",
@@ -93,7 +93,7 @@ const EXPECTED_SOURCE_SHA256: [(&str, &str); 8] = [
     ),
     (
         "new-book-plans/constitution.nibli",
-        "c84ed53e76fb7dc3de8c0cc64bf3503e4c937bb2de8c41117a0fe31ccf43e438",
+        "62c3c7848f80cce73d8a3c9faeca5ac7427f3009bdfcc36c71e02f437b122b2d",
     ),
 ];
 

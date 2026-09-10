@@ -359,7 +359,7 @@ fn check_constitution(source: &str) -> Result<Vec<String>, Error> {
 
 /// The public-scale finding's named grounds. Each member has exactly one ground
 /// vocabulary rule in the constitution, and nothing else may conclude `member`.
-const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 5] = [
+const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 8] = [
     (
         "PublicScaleTriggerVocabulary",
         &[
@@ -408,13 +408,38 @@ const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 5] = [
         "AppointmentControlModeVocabulary",
         &["DirectAppointmentControl", "DeFactoAppointmentControl"],
     ),
+    (
+        "MaterialInterestKindVocabulary",
+        &[
+            "OwnMaterialInterest",
+            "HouseholdMaterialInterest",
+            "ControlledEntityMaterialInterest",
+        ],
+    ),
+    (
+        "CounterpartyRelationshipKindVocabulary",
+        &[
+            "RegulatedCounterparty",
+            "ContractingCounterparty",
+            "AdjudicatedCounterparty",
+            "AppointedCounterparty",
+        ],
+    ),
+    (
+        "OfficeIntegrityModeVocabulary",
+        &[
+            "ConflictedAct",
+            "CounterpartyBenefit",
+            "FormerHolderCounterpartyDealing",
+        ],
+    ),
 ];
 
 /// Watched failing controls for the vocabulary guard: each fixture adds one
 /// more ground rule naming an unratified member, and the guard must trip on
 /// that head rather than on anything else.
 fn check_vocabulary_widening_control(context: &Context) -> Result<Vec<String>, Error> {
-    const CONTROLS: [(&str, &str); 2] = [
+    const CONTROLS: [(&str, &str); 3] = [
         (
             "new-book-plans/counterfactual/unnamed-public-scale-trigger.nibli",
             "names a revenue threshold as a ratified ground",
@@ -422,6 +447,10 @@ fn check_vocabulary_widening_control(context: &Context) -> Result<Vec<String>, E
         (
             "new-book-plans/counterfactual/unnamed-appointment-control-source.nibli",
             "names an incumbent-coalition affiliate as a ratified appointment-control source",
+        ),
+        (
+            "new-book-plans/counterfactual/unnamed-office-integrity-kind.nibli",
+            "names party membership as a ratified material-interest kind",
         ),
     ];
     let mut messages = Vec::new();

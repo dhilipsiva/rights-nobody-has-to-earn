@@ -344,3 +344,32 @@ attestations removed both stop; and with all seven named grounds removed but the
 blanket `NoMajorityDirectOrDeFactoControl` attestation still present — which is
 exactly the shape the source carried before this family — both stop as well. An
 unexamined kind is no longer indistinguishable from an absent one.
+
+## Office integrity fixture
+
+`unnamed-office-integrity-kind` is the constitution *plus* one more ground
+rule, for a material-interest kind the 2026-09-09 ruling does not name — party
+membership, which is the guilt-by-association widening the ruling refuses.
+Regenerate like `unnamed-appointment-control-source`: copy, then insert
+
+```
+all $source: all $record: observe($source, $record, PartyMembershipInterest, MaterialInterestKindScope) -> member(PartyMembershipInterest, MaterialInterestKindVocabulary).
+```
+
+immediately after the `FormerHolderCounterpartyDealing` ground rule, with no
+leading blank line. It is the third watched failing control for the producer-set
+check in `src/checks/repository.rs`.
+
+The family has no gate-removal fixture for the reason the anti-capture section
+above records; its kinds are literal constants, and what the `member` conjuncts
+buy is held by `validate_examined_kind_family_self_controls`, which for this
+universal family also exempts each branch in turn and requires the refusal.
+
+One consequence of a universal state-form field that is easy to miss: every
+hand-written pin file that supplies a state-form result as a *dependency*
+must carry the new attestations too, and that includes the eleven
+`no-economic-independent-current-review-0nn.pins.nibli` files here, not only
+the `economic-power-0nn.pins.nibli` suites beside the constitution. Sweep with
+`grep -rl StateFormBranchScope` over the whole tree, never a curated list; the
+first receipt run of this family failed on exactly the directory the sweep
+had excluded.
