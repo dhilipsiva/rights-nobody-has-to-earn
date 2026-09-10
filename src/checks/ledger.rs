@@ -5096,7 +5096,7 @@ fn validate_power_binding(
     let binding = &source.power_source_inventory;
     if binding.artifact_ref != POWER_MANIFEST
         || binding.artifact_sha256
-            != "c6f935f867f97bbe999ebf3ca70eecbee0220c4a6d0bd34db0645aa9d7186ac8"
+            != "be3634c25c5df13b869dc79ca47925aa0379929ab09ce5c266da486435c3591e"
         || binding.source_commit != "36ed92c58877cffa5a11928ad200f0ca9a604820"
         || binding.inventory_status != INVENTORY_STATUS
         || binding.row_count != 237

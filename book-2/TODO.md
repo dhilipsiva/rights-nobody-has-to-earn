@@ -220,6 +220,16 @@ noticing.
 
 ## Full-society operational completion contract — collect now, execute only after Gate C
 
+- **Political-finance operation (seed, 2026-09-10).** Book 1 now names the
+  payer, instrument, and recipient kinds a reviewed office or candidacy result
+  must attest under `new-book-plans/book-1-money-and-influence-contract.md`.
+  Book 2 owns everything that would make such an attestation possible: the
+  contribution and expenditure registers, filing and correction workflow, the
+  amounts and publication thresholds democratic law sets, beneficial-ownership
+  tracing for the shell-actor test, and the electoral administration's audit
+  staffing. None of it is Book 1, and none of it may read into standing, the
+  floor, the equal ballot, or a personal score.
+
 - **Office-integrity operation (seed, 2026-09-09).** Book 1 now names the
   interest kinds, counterparty relationships, and incompatibility modes a
   reviewed office result must attest under

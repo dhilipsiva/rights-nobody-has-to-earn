@@ -5,13 +5,13 @@
   "status": "staged_t3_repository_assurance",
   "evidence_role": "current_verified_narrowly",
   "subprocess_timeout_seconds": 180,
-  "constitution_sha256": "62c3c7848f80cce73d8a3c9faeca5ac7427f3009bdfcc36c71e02f437b122b2d",
+  "constitution_sha256": "f94dad275dbd290e325279b94fdb811d129cf90c8448fbdcd7adb2ae874d4c26",
   "bound_sources_sha256": {
-    "amendment_semantics": "bf84a540c59fc896d24d4a523104aa5a52d039c8ae8cd5cd6b1b8b00f4ded041",
-    "assertion_surface": "49e78547b789ff901d91b4afd747864f7e7cb8fa5e414abeed6d961b99561ce3",
-    "placement_exhaustiveness": "9a0b31b044699f6d2b9c978992b8e1fefb4971aa3c7702f240cccd2695791451",
-    "record_assurance": "45729c3b6c45d8806f35659fd036227a899a136435a9e5a0410646939a3af2f2",
-    "record_red_team": "6cc4254e643f4397e22e75a552fb9a5ea2412e5c54d257e5c6d97f4d0ae1d154",
+    "amendment_semantics": "5c5c2eaa60c82fd9f9314515bfd1b766b0c6f891fdb9e7f9915cd5d0cd0d3fd5",
+    "assertion_surface": "a35cba890998db87eed8cd3fa9f128318d2f8506206cc4bf345a41d84fc6287c",
+    "placement_exhaustiveness": "a3133338965ac8c86f6e1ee1454d38f10f1b5f32292ba12bfdf0e6dcd13e07f2",
+    "record_assurance": "6289a7ed93027841017cc19408f7ad9dbc106cb08da3ad38262f137876b7c284",
+    "record_red_team": "834dc974bde8672e2cebcc2bd27f48f566d64fe5873e0991a4ca5d3b4f69575f",
     "time_model": "b164e60532a2179b12ff675050007ee88b8a17fe20a3d6b02e07fb74873d68f6"
   },
   "marker_sha256": {
@@ -29,9 +29,9 @@
     "T3-RULES": "eb6d07d536ef886d2e5295f053ff5e6108b0bf8eb105bbd948015edff5eccc42"
   },
   "stage_source_sha256": {
-    "T1": "80afe071060f0d7f0367f662c1e5cedce7a979315d4b0e8d4ecee52e0d47b8fe",
-    "T2": "7236d4199b5eac1754e00d0471fa069179760b7f2f1c5073396cceae51cfa72f",
-    "T3": "62c3c7848f80cce73d8a3c9faeca5ac7427f3009bdfcc36c71e02f437b122b2d"
+    "T1": "7271c05b36a9a61965ccc9777675ebf411414a0c71519b46a4ce0894f9a69d2f",
+    "T2": "8c12322ea33a3f5e039f0fa2b2451caa487f44048f5e5755d50b218e17dd73ba",
+    "T3": "f94dad275dbd290e325279b94fdb811d129cf90c8448fbdcd7adb2ae874d4c26"
   },
   "source_effect_binding": {
     "effective_version": "Constitution_Temporal",

@@ -26,7 +26,7 @@ Regenerate this report with `./verify.sh --refresh assertion-surface`.
   - `patchable` — A constitutional interface can reduce this risk through authority, provenance, challenge, continuity, or correction rules.
 - `→` is a positive dependency; `─|` is a negative dependency, where
   asserting the premise can suppress the downstream conclusion.
-- Authored-rule fingerprint: `33832526aca5e76676b6b19b53fda06985090988cd9dde66adea5ce7fc7bed27`.
+- Authored-rule fingerprint: `31ae4fd3a0b9c4acabfe2aefbdb9ad2e0fdbfe9976a8352b7d1cc0203a4e462b`.
 - Authored-fact fingerprint: `d71d67c627674a5b49b38bd88bf20217bac78640ec6b226b18e167c70399a74a`.
 - Rule-head writability remains open for every derived relation;
   `derived_only` blocks ground assertions, not rules.
@@ -91,7 +91,7 @@ channels. No exceptional channel exists in the current contract.
 | `adjust` | amendment | `false` | patchable, external | positive `false` | `b1319d26ed7acd9b` |
 | `at` | roster-person, standing, first-contact, adulthood, placement, record-integrity | `person` | patchable, external, deliberately_refused | negative `dwell`, positive `building`, positive `decide`, positive `dwell`, positive `person`, positive `prevents` | `4ed39fcb58fb931e` |
 | `attack` | justice, placement | `severe` | patchable, external | positive `severe` | `47df49ad5f65b14b` |
-| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `authority`, positive `collide`, positive `complete`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `grant`, positive `healthy`, positive `insure`, positive `match`, positive `meets`, positive `obliged`, positive `person`, positive `prevents`, positive `prisoner`, positive `provide`, positive `related`, positive `secure`, positive `succeed` | `d43f380aa99def8f` |
+| `authorized` | case-binding, public-power, record-integrity, source-binding, time | `collide` | patchable, external | negative `err`, positive `authority`, positive `collide`, positive `complete`, positive `correct`, positive `decide`, positive `dwell`, positive `eats`, positive `err`, positive `false`, positive `grant`, positive `healthy`, positive `insure`, positive `match`, positive `meets`, positive `obliged`, positive `person`, positive `prevents`, positive `prisoner`, positive `provide`, positive `related`, positive `secure`, positive `succeed` | `0f5e9e5dbbc7685c` |
 | `born` | roster-person, standing, birth, record-integrity | `person` | patchable, external, deliberately_refused | positive `person` | `cb54f8d40786b943` |
 | `broken` | public-body, seating, record-integrity | `prisoner` | patchable, external | negative `false`, negative `permits`, negative `prisoner`, negative `reward` | `6fa58bc4be130c53` |
 | `capture` | audit, justice, record-integrity | `reward` | patchable, external | positive `false`, positive `reward` | `9d000cd29a2bee16` |
@@ -115,7 +115,7 @@ channels. No exceptional channel exists in the current contract.
 | `limit` | case-binding, public-power, time, window | `collide` | patchable, external | positive `collide`, positive `correct`, positive `orderly` | `4e3f1f3437d1e8e3` |
 | `list` | epoch-carry, order, record-integrity, time | `err` | patchable, external | positive `collide`, positive `err`, positive `precede`, positive `succeed` | `0e4f71dfe66512de` |
 | `married` | audit, privacy, conflict | `prevents` | patchable, external | positive `prevents` | `7ef6097705ac2859` |
-| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | negative `insure`, negative `provide`, positive `authority`, positive `collide`, positive `complete`, positive `concurrent`, positive `contradict`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `grant`, positive `healthy`, positive `insure`, positive `match`, positive `meets`, positive `member`, positive `obliged`, positive `orderly`, positive `person`, positive `precede`, positive `prevents`, positive `prisoner`, positive `provide`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `897297a532f113bc` |
+| `observe` | audit, record-integrity, time, witness | `complete` | patchable, external | negative `insure`, negative `provide`, positive `authority`, positive `collide`, positive `complete`, positive `concurrent`, positive `contradict`, positive `correct`, positive `dwell`, positive `eats`, positive `err`, positive `grant`, positive `healthy`, positive `insure`, positive `match`, positive `meets`, positive `member`, positive `obliged`, positive `orderly`, positive `person`, positive `precede`, positive `prevents`, positive `prisoner`, positive `provide`, positive `reference`, positive `related`, positive `secure`, positive `succeed`, positive `time` | `6c2ef8e9a4d7460b` |
 | `parent` | audit, privacy, conflict | `false` | patchable, external | positive `false` | `316cc4529059bf17` |
 | `passport` | public-power, source-binding, source-family, time | `reference` | patchable, external | positive `collide`, positive `correct`, positive `reference`, positive `succeed` | `cd0ddf58592a42a0` |
 | `pay` | income-security, contribution-record | `insure` | patchable, external | positive `insure` | `6d8345167478ef58` |
@@ -199,7 +199,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Subtype-specific notice, accessible contest, independent review, linked correction, continuity, escalation, and remedy without letting a missing status record erase standing or extend restrictive power.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `d43f380aa99def8fbcff8d7581480f1ca09723efd76ba5276847592882547022`.
+- **Reviewed route fingerprint:** `0f5e9e5dbbc7685ce3a6670d8791f0e527fd5801b060158372c765151724f13f`.
 
 ### `born`
 
@@ -586,7 +586,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Witness conflict, recusal, correction, replay/divergence review, alternate availability, subject challenge, continuity, and remedy without granting either witness a rights-withholding veto.
 - **Risk disposition:** patchable, external.
 - **Owner:** `new-book-plans/book-1-time-model-decision.md::## 7. Formal implementation and verification gate`.
-- **Reviewed route fingerprint:** `897297a532f113bc6a01d7a23709b1bbf1fe0c05723ab8d3252031c4ed7f667b`.
+- **Reviewed route fingerprint:** `6c2ef8e9a4d7460baf87a782f8f684cea7a765933bfea5e850d9932d047eea31`.
 
 ### `parent`
 

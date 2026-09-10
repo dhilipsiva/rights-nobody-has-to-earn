@@ -373,3 +373,28 @@ the `economic-power-0nn.pins.nibli` suites beside the constitution. Sweep with
 `grep -rl StateFormBranchScope` over the whole tree, never a curated list; the
 first receipt run of this family failed on exactly the directory the sweep
 had excluded.
+
+## Money and influence fixture
+
+`unnamed-political-finance-payer` is the constitution *plus* one more ground
+rule, for a payer kind the 2026-09-09 money-and-influence ruling does not name
+— an anonymous intermediary, which is precisely the category whose admission
+would hollow out the `ControllingPartyPayer` shell test. Regenerate like
+`unnamed-office-integrity-kind`: copy, then insert
+
+```
+all $source: all $record: observe($source, $record, AnonymousIntermediaryPayer, PoliticalFinancePayerKindScope) -> member(AnonymousIntermediaryPayer, PoliticalFinancePayerKindVocabulary).
+```
+
+immediately after the `PublicDecisionRecipient` ground rule, with no leading
+blank line. It is the fourth watched failing control for the producer-set check
+in `src/checks/repository.rs`.
+
+Three examined-kind families now share one generator table, and the sweep rule
+that the office-integrity section states applies to all of them: when a
+universal family lands, `grep -rl StateFormBranchScope` over the **whole tree**
+and diff the hit list against what was extended. Twenty-two pin files supply a
+state-form result as a dependency — eleven `economic-power-0nn` and eleven
+`counterfactual/no-economic-independent-current-review-0nn` — and filtering the
+sweep by where the hits were expected is what cost the office-integrity family
+its first receipt run.

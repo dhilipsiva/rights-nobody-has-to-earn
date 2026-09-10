@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: a seventeenth vocabulary rule admitting an unratified payer kind
+#
+# The 2026-09-09 money-and-influence ruling names six payer kinds, and the
+# sixth — ControllingPartyPayer — is the shell-actor test: where the nominal
+# payer is controlled by another, the controlling party is what the attesters
+# must name. One added line names an anonymous intermediary as a seventh kind,
+# and it holds membership the moment anyone observes it. That is the exact
+# widening that would hollow out the shell test, since a finding could then
+# satisfy the payer dimension by naming nobody. The assertion surface
+# reconciles relations rather than heads and would not see it;
+# `src/checks/repository.rs` is what refuses it.
+#
+# What this fixture deliberately does NOT show is a finding turning on the new
+# kind. The political-finance rule names its sixteen constants literally rather
+# than through a variable, so a seventeenth member changes nothing a query can
+# reach; the harm here is that a legal category widened by one line.
+:expect-pins 2
+
+observe(FinanceWidenSource, FinanceWidenRecord, AnonymousIntermediaryPayer, PoliticalFinancePayerKindScope).
+
+# The vocabulary grew: an unratified payer kind now holds membership.
+? member(AnonymousIntermediaryPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+# The control that keeps the line above from being vacuous: membership still
+# requires its own ground rule, so an unobserved token holds nothing.
+? member(ControllingPartyPayer, PoliticalFinancePayerKindVocabulary).
+# => FALSE

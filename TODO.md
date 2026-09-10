@@ -366,6 +366,17 @@ Gate B; it does not claim Book 2 operations or feasibility.
     anti-corruption oversight, challenge, correction, remedy, disqualification,
     and enforcement through the landed appointment, anti-capture, and office-
     integrity interfaces. Procurement stays Book 2 by ruling E.
+  - **Money and influence (A) formalized 2026-09-10.** Every reviewed
+    state-form result now attests, by three distinct attesters, that the six
+    payer kinds, five instrument kinds, and five recipient kinds were examined
+    and no prohibited combination found, or no authority derives — which is
+    what makes the three inherited treasury barriers catchable. Card:
+    `new-book-plans/book-1-money-and-influence-contract.md`; it is also the
+    Class 5 union and civic-association finance card the economic ruling
+    promised. Kinds only: the author ruled 2026-09-09 that binding a payer
+    *identity* (`$payer` as a variable field) lands as its own batch after its
+    free-variable cost is measured on a probe. No register, no amount, no
+    publication duty, and no payment shown to anyone.
   - Test shell actors, third parties, media/platform concentration, selective
     enforcement, audit starvation, and manufactured withholding against those
     controls.

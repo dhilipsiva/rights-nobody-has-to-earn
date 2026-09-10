@@ -359,7 +359,7 @@ fn check_constitution(source: &str) -> Result<Vec<String>, Error> {
 
 /// The public-scale finding's named grounds. Each member has exactly one ground
 /// vocabulary rule in the constitution, and nothing else may conclude `member`.
-const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 8] = [
+const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 11] = [
     (
         "PublicScaleTriggerVocabulary",
         &[
@@ -433,13 +433,44 @@ const PUBLIC_SCALE_VOCABULARIES: [(&str, &[&str]); 8] = [
             "FormerHolderCounterpartyDealing",
         ],
     ),
+    (
+        "PoliticalFinancePayerKindVocabulary",
+        &[
+            "PersonPayer",
+            "EnterpriseTreasuryPayer",
+            "UnionPayer",
+            "VoluntaryCivicAssociationPayer",
+            "OutsideJurisdictionPayer",
+            "ControllingPartyPayer",
+        ],
+    ),
+    (
+        "PoliticalFinanceInstrumentKindVocabulary",
+        &[
+            "ContributionInstrument",
+            "ExpenditureInstrument",
+            "InKindProvisionInstrument",
+            "LoanOrGuaranteeInstrument",
+            "PurchasedIndependentAdvocacyInstrument",
+        ],
+    ),
+    (
+        "PoliticalFinanceRecipientKindVocabulary",
+        &[
+            "CandidateRecipient",
+            "PartyOrCoalitionRecipient",
+            "BallotQuestionRecipient",
+            "OfficeHolderRecipient",
+            "PublicDecisionRecipient",
+        ],
+    ),
 ];
 
 /// Watched failing controls for the vocabulary guard: each fixture adds one
 /// more ground rule naming an unratified member, and the guard must trip on
 /// that head rather than on anything else.
 fn check_vocabulary_widening_control(context: &Context) -> Result<Vec<String>, Error> {
-    const CONTROLS: [(&str, &str); 3] = [
+    const CONTROLS: [(&str, &str); 4] = [
         (
             "new-book-plans/counterfactual/unnamed-public-scale-trigger.nibli",
             "names a revenue threshold as a ratified ground",
@@ -451,6 +482,10 @@ fn check_vocabulary_widening_control(context: &Context) -> Result<Vec<String>, E
         (
             "new-book-plans/counterfactual/unnamed-office-integrity-kind.nibli",
             "names party membership as a ratified material-interest kind",
+        ),
+        (
+            "new-book-plans/counterfactual/unnamed-political-finance-payer.nibli",
+            "names an anonymous intermediary as a ratified payer kind",
         ),
     ];
     let mut messages = Vec::new();

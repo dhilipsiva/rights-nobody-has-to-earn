@@ -16,7 +16,7 @@ bounded fixture*, not classical negation or an independently established fact.
 ## Bound source manifest
 
 - Reviewed source: `new-book-plans/placement-exhaustiveness-audit.json`.
-- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `62c3c7848f80cce73d8a3c9faeca5ac7427f3009bdfcc36c71e02f437b122b2d`.
+- Constitution: `new-book-plans/constitution.nibli` at SHA-256 `f94dad275dbd290e325279b94fdb811d129cf90c8448fbdcd7adb2ae874d4c26`.
 - Destination manifest: `HighSec`, `Homestay`.
 - Destination-manifest SHA-256: `72722479faa871b12184b5d32d5ee834a3d141318a1c653e3b3483cbb19416e0`.
 
@@ -134,11 +134,11 @@ every affected subject and requires it to remain silent.
 
 | mutation | kind | baseline flips | alarm-silence cases | candidate source SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `0b8988cf98603e84ae8d80b3794583ffddba3aaf9a106baa6047a28963da6d2e` |
-| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `eb27d4529649ed4c348d435d30e11b905980016965d3c98bcb2ab6a1ada019ba` |
-| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `6d9b752381a587d388e7f2f6f6582304ba53fe2526f112787519cc3c40713c3d` |
-| `opposite-destination` | `opposite_destination` | 4 | 2 | `9103441f322693bcc32182194ff99cb579f0caeb0a250dfaf545029481ed257d` |
-| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `ba70e53b06bb498d7d8bc4961015f6610fab77f0f3bc182a15a7cd7d098f94b7` |
+| `duplicate-destination` | `duplicate_destination` | 1 | 1 | `47da6c9f999d536711004dfb684754e1f8168aec77e797d7bd19a7b4bd6ff324` |
+| `historical-missing-dwell` | `historical_missing_dwell` | 1 | 1 | `b2e94b7bc22adb2028c795a917fd9efa6eb914f9284fa959127bcb20fd16e434` |
+| `missing-required-destination` | `missing_required_destination` | 2 | 2 | `99187822325c88a187c0521a34a7a388e1123783c6c3c77494203e0e5e10d3f0` |
+| `opposite-destination` | `opposite_destination` | 4 | 2 | `13db1abccd8f60f27c301d06d3a12fa9da2cd563ca49ebb705f65ffed34d962a` |
+| `painted-free-person-delivery` | `painted_free_person_delivery` | 16 | 16 | `b8703df0737f96611c4930dcfd293deebc5c5ff23f78e88616237dd60ee4a9bd` |
 
 ### duplicate-destination — An overlapping route adds LowSec beside Homestay
 

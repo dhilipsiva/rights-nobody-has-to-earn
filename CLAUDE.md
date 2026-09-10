@@ -1079,8 +1079,18 @@ Consequences reach public answerability only; the entrenched corridor is
 unchanged. Polarity is positive — an absent or withheld finding manufactures
 nothing.
 
-**Ratified but unimplemented.** Six contract cards land in the order C, A, B,
-D, G, F fixed by the record's section 10, each through its own receipt-bound
+**Implementation supersession, 2026-09-10.** Rulings C and A are formalized.
+Office integrity (C) and money and influence (A) are the second and third
+examined-kind families in the state-form generator's
+`EXAMINED_KIND_FAMILIES` table, both universal: every reviewed result attests
+that the family's kinds were examined and none found, or no authority derives.
+A's card is also the Class 5 union and civic-association finance card the
+economic ruling promised, and it carries kinds only — the author ruled that
+binding a payer identity lands as its own batch after its free-variable cost
+is measured. B, D, G, and F remain unimplemented.
+
+**Ratified but unimplemented.** The remaining contract cards land in the order
+B, D, G, F fixed by the record's section 10, each through its own receipt-bound
 chain; `promise/3` and `pay/4` are not reused for political money. Book 2
 owns registers, audit staffing, investigation, enforcement workflow, and
 publication. Nibli authenticates no payment, detects no coordination, proves

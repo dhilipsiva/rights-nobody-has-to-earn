@@ -42,33 +42,33 @@ const SPDX_HEADER: &str = "# SPDX-License-Identifier: MIT OR Apache-2.0";
 
 pub(crate) const MAIN_SHARD_COUNT: usize = 64;
 pub(crate) const COUNTERFACTUAL_SHARD_COUNT: usize = 17;
-pub(crate) const MAIN_PIN_COUNT: usize = 396;
+pub(crate) const MAIN_PIN_COUNT: usize = 401;
 pub(crate) const COUNTERFACTUAL_PIN_COUNT: usize = 51;
 const GENERIC_MAIN_PIN_COUNT: usize = 335;
-const ACCEPTANCE_PIN_COUNT: usize = 61;
+const ACCEPTANCE_PIN_COUNT: usize = 66;
 const CARD_COUNT: usize = 51;
 const RESULT_COUNT: usize = 131;
 const AUTHORITY_COUNT: usize = 142;
-const STATEMENT_COUNT: usize = 291;
+const STATEMENT_COUNT: usize = 307;
 
 const EXPECTED_MAIN_PINS_SHA256: &str =
-    "9afc290841f401ce82977cc104215b0df7a9492f10c3eec830f69555f0b0541e";
+    "e40fb1712ca94c36a6e339bdaa7297bd1a822e942a4691e9f092ae59eea6824c";
 const EXPECTED_COUNTERFACTUAL_SHA256: &str =
-    "1f2b11e9ef618bb2bb6121f0c02ba22103fa4680853b0aec2063a79683351230";
+    "716fa52945599357e2f3901d3ea136837a07c3b34ec23ee77587f65a9ff7c571";
 const EXPECTED_COUNTERFACTUAL_PINS_SHA256: &str =
-    "3cb8ae936478590c8da767ad30d4fdfcade0c498e11bcde261b4ed06db5973c6";
+    "efd75f40378ab796db4a1b4914321a915e65f321e52877067e4af546b22e76b4";
 const EXPECTED_CONSTITUTION_SHA256: &str =
-    "62c3c7848f80cce73d8a3c9faeca5ac7427f3009bdfcc36c71e02f437b122b2d";
+    "f94dad275dbd290e325279b94fdb811d129cf90c8448fbdcd7adb2ae874d4c26";
 const EXPECTED_RULE_BLOCK_SHA256: &str =
-    "3b1f13ed17afc724c6e62add801a233b41f280b45b79238347a2035994ce2388";
+    "8fe39859d143e43eca4e6eb494c3f6115df9fb54261ded8c531e3568827cfefd";
 const EXPECTED_RENDERED_BLOCK_SHA256: &str =
-    "935b6e687bd679fa3e2b6b78eae507ebb3c249cab8d98e011ca5e86c060e9bd8";
+    "b3ac4e64852ffbecd90fd3d58694e230f3d7ad00e41c9c96608a0f89f6eae23f";
 const EXPECTED_BRANCH_IR_SHA256: &str =
-    "d0cb82debcc0221bb057f6253bbeeb272b6f9fc2a0ee707918874148bab8dcc9";
+    "48e652200de1d44c5625ae65460de2c08647afeae1b5f3c8bdf043fa3dcdd6f0";
 const EXPECTED_BYTE_INDEX_SHA256: &str =
-    "1526ef2b8b576f4f08d70609466ae75d7dba75a330c320336019a5c536618bd3";
+    "c083f354da5213296bee6fa4a2de3a954e7461e004ad824c4be7eefc9b4cd360";
 const EXPECTED_COUNT_INDEX_SHA256: &str =
-    "5306d1311d5ae62312ce72b227a291e5fa8935e7d082655033c22eaffbdb5729";
+    "ed5df0d34fb183a078aade24cc9ace56465b2dd535179cdf5eda470dbd6a7708";
 
 const REVIEWED_SEMANTIC_SOURCE: &str = include_str!("../../new-book-plans/state-form-source.json");
 
@@ -83,7 +83,7 @@ const DELEGATED_PIN_PATHS: [&str; 5] = [
     "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
     "book-1/12-changing-the-rules.pins.nibli",
 ];
-const ACCEPTANCE_CASE_IDS: [&str; 20] = [
+const ACCEPTANCE_CASE_IDS: [&str; 21] = [
     "FSACC-001-prisoner-franchise-candidacy",
     "FSACC-002-custody-home-continuity",
     "FSACC-003-nonconventional-residence",
@@ -104,6 +104,7 @@ const ACCEPTANCE_CASE_IDS: [&str; 20] = [
     "FSACC-018-duplicate-submission",
     "FSACC-019-missing-conflicting-certificate",
     "FSACC-020-office-integrity",
+    "FSACC-021-political-finance",
 ];
 
 type Field = [String; 2];
@@ -2673,6 +2674,53 @@ const OFFICE_INTEGRITY_VOCABULARIES: [(&str, &str, &[&str]); 3] = [
     ),
 ];
 
+/// The political-finance finding's named grounds, from the 2026-09-09 ruling on
+/// the money-and-influence record. The ruling makes the record fully
+/// consequential: a finding that a recipient of a named kind took an instrument
+/// of a named kind from a payer of a named kind withholds the office's or
+/// candidacy's authority, which is what makes the three inherited treasury
+/// barriers catchable — each is otherwise one rule reading no treasury,
+/// payment, candidate, or party. `ControllingPartyPayer` is the shell-actor
+/// test: where the nominal payer is controlled by another, the controlling
+/// party is what the attesters must name. No amount, threshold, or publication
+/// floor appears here; those are democratic law.
+const POLITICAL_FINANCE_VOCABULARIES: [(&str, &str, &[&str]); 3] = [
+    (
+        "PoliticalFinancePayerKindScope",
+        "PoliticalFinancePayerKindVocabulary",
+        &[
+            "PersonPayer",
+            "EnterpriseTreasuryPayer",
+            "UnionPayer",
+            "VoluntaryCivicAssociationPayer",
+            "OutsideJurisdictionPayer",
+            "ControllingPartyPayer",
+        ],
+    ),
+    (
+        "PoliticalFinanceInstrumentKindScope",
+        "PoliticalFinanceInstrumentKindVocabulary",
+        &[
+            "ContributionInstrument",
+            "ExpenditureInstrument",
+            "InKindProvisionInstrument",
+            "LoanOrGuaranteeInstrument",
+            "PurchasedIndependentAdvocacyInstrument",
+        ],
+    ),
+    (
+        "PoliticalFinanceRecipientKindScope",
+        "PoliticalFinanceRecipientKindVocabulary",
+        &[
+            "CandidateRecipient",
+            "PartyOrCoalitionRecipient",
+            "BallotQuestionRecipient",
+            "OfficeHolderRecipient",
+            "PublicDecisionRecipient",
+        ],
+    ),
+];
+
 /// A family of examined kinds behind one absence anchor. `universal` families
 /// bind every branch; the others bind the branches that carry the anchor.
 struct ExaminedKindFamily {
@@ -2682,7 +2730,7 @@ struct ExaminedKindFamily {
     vocabularies: &'static [(&'static str, &'static str, &'static [&'static str])],
 }
 
-const EXAMINED_KIND_FAMILIES: [ExaminedKindFamily; 2] = [
+const EXAMINED_KIND_FAMILIES: [ExaminedKindFamily; 3] = [
     ExaminedKindFamily {
         name: "appointment anti-capture",
         anchor: ("NoMajorityDirectOrDeFactoControl", "AntiCaptureScope"),
@@ -2697,6 +2745,15 @@ const EXAMINED_KIND_FAMILIES: [ExaminedKindFamily; 2] = [
         ),
         universal: true,
         vocabularies: &OFFICE_INTEGRITY_VOCABULARIES,
+    },
+    ExaminedKindFamily {
+        name: "political finance",
+        anchor: (
+            "NoProhibitedPoliticalFinanceIncompatibility",
+            "PoliticalFinanceScope",
+        ),
+        universal: true,
+        vocabularies: &POLITICAL_FINANCE_VOCABULARIES,
     },
 ];
 
@@ -3429,6 +3486,37 @@ fn render_acceptance_cases(
         "FSBOD_02",
         "SFAcc020ModeUnexamined",
         &[AtomSelector::all(&["OfficeIntegrityModeScope"])],
+    )?;
+
+    builder.header(ACCEPTANCE_CASE_IDS[20]);
+    builder.existing(36, "adult_resident_candidacy", "FSBOD_06")?;
+    builder.negative(
+        36,
+        "adult_resident_candidacy",
+        "FSBOD_06",
+        "SFAcc021NoPoliticalFinance",
+        &[AtomSelector::all(&["PoliticalFinanceScope"])],
+    )?;
+    builder.negative(
+        36,
+        "adult_resident_candidacy",
+        "FSBOD_06",
+        "SFAcc021PayerUnexamined",
+        &[AtomSelector::all(&["PoliticalFinancePayerKindScope"])],
+    )?;
+    builder.negative(
+        36,
+        "adult_resident_candidacy",
+        "FSBOD_06",
+        "SFAcc021InstrumentUnexamined",
+        &[AtomSelector::all(&["PoliticalFinanceInstrumentKindScope"])],
+    )?;
+    builder.negative(
+        36,
+        "adult_resident_candidacy",
+        "FSBOD_06",
+        "SFAcc021RecipientUnexamined",
+        &[AtomSelector::all(&["PoliticalFinanceRecipientKindScope"])],
     )?;
 
     builder
@@ -5723,7 +5811,7 @@ mod tests {
         let report = check(&context, &snapshot).expect("check state-form family");
         assert_eq!(
             report.to_string(),
-            "state-form: PASS — 51 cards, 291 exact statements, 396 main pins, 51 counterfactual pins"
+            "state-form: PASS — 51 cards, 307 exact statements, 401 main pins, 51 counterfactual pins"
         );
         let output = fingerprints(&context, &snapshot).expect("render fingerprints");
         let decoded: Value = serde_json::from_str(&output).expect("parse fingerprints");
