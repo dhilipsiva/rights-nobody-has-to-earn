@@ -74,7 +74,7 @@ const EXPECTED_STATUS: &str = "stage_4_repository_audit_complete";
 const STAGE_LABEL: &str = "stage 4 machinery";
 const STRUCTURAL_CONTROL_COUNT: usize = 274;
 const EXPECTED_POWER_COUNT: usize = 210;
-const EXPECTED_EFFECT_COUNT: usize = 386;
+const EXPECTED_EFFECT_COUNT: usize = 390;
 const EXPECTED_TEMPLATE_COUNT: usize = 1;
 const EXPECTED_REFUSAL_COUNT: usize = 19;
 const EXPECTED_CROSSWALK_COUNT: usize = 8;
@@ -5096,7 +5096,7 @@ fn validate_power_binding(
     let binding = &source.power_source_inventory;
     if binding.artifact_ref != POWER_MANIFEST
         || binding.artifact_sha256
-            != "be3634c25c5df13b869dc79ca47925aa0379929ab09ce5c266da486435c3591e"
+            != "242070698d544a5a14197798b2930f690941451ca4c1de3915142b2205fcdfef"
         || binding.source_commit != "36ed92c58877cffa5a11928ad200f0ca9a604820"
         || binding.inventory_status != INVENTORY_STATUS
         || binding.row_count != 237
@@ -9315,7 +9315,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&effect_policy, "constitutional-effect classification")?
-        != "fd5c4aed53edb4462cafb4ffb58f03a84ef100631ab768d89fd0fbaa196bdc7d"
+        != "06b4c898e270c6a3f49aa2411025213f6e41f734322a751ff5e866bbe33878f0"
     {
         return Err(LedgerError::new(
             "constitutional-effect taxonomy, profiles, claims, or domains differ from checker policy",
@@ -9341,7 +9341,7 @@ fn validate_power_effect_coverage_policy(
         })
         .collect::<Vec<_>>();
     if typed_fingerprint(&coverage_policy, "coverage-family policy")?
-        != "8b29489ff0f0347040d1224804184241e25cf2b8a9c44a8bf432522241668f00"
+        != "f6c357731c41d792058898d13e5b992e03a151858b3dfb884173de93e95ad018"
     {
         return Err(LedgerError::new(
             "coverage-family state, partitions, or formal surfaces differ from checker policy",

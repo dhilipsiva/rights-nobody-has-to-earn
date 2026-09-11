@@ -74,7 +74,7 @@ const FINDING_KINDS: [&str; 14] = [
 ];
 
 const OBLIGATION_STATEMENT_SET_SHA256: &str =
-    "f7e745bb141be4aba91902d78ec469977d3f8a72de46462084cde99e83320acc";
+    "5cdd8624bcd682d77e1eb404364bf8dcda99560d110a6d49139a15bc132e6c09";
 const PROSE_AGGREGATE_SHA256: &str =
     "bfb4789b9c24b236d95c26f50448221000491c0d8e1161cd8089bbca7db1ec26";
 const DELIVERY_PROSE_AGGREGATE_SHA256: &str =
@@ -92,7 +92,7 @@ struct Effect {
     duty_kind: &'static str,
 }
 
-const EFFECTS: [Effect; 25] = [
+const EFFECTS: [Effect; 29] = [
     Effect {
         number: 198,
         key: "public-respect-duty",
@@ -292,6 +292,44 @@ const EFFECTS: [Effect; 25] = [
         mode: MODES[0],
         duty_class: CLASSES[2],
         duty_kind: "FindingIndividualReliefNonDelayKind",
+    },
+    // Ruling B of the 2026-09-09 democratic-and-administrative-integrity
+    // decision. The bearer is an office holder, candidate, party or coalition,
+    // or an actor the money-and-influence family names; the reader is the audit
+    // and integrity function and the alternate is the ombudsperson or rights
+    // advocate. The duty is what is owed and to whom; that anyone disclosed is
+    // an arrival, is a liveness claim, and is never written here.
+    Effect {
+        number: 387,
+        key: "disclosure-duty",
+        title: "Disclosure duty",
+        mode: MODES[0],
+        duty_class: CLASSES[2],
+        duty_kind: "DisclosureDutyKind",
+    },
+    Effect {
+        number: 388,
+        key: "disclosure-reader-action-duty",
+        title: "Disclosure reader and action duty",
+        mode: MODES[0],
+        duty_class: CLASSES[2],
+        duty_kind: "DisclosureReaderActionDutyKind",
+    },
+    Effect {
+        number: 389,
+        key: "certified-positive-disclosure-nonresponse",
+        title: "Certified positive disclosure nonresponse",
+        mode: MODES[0],
+        duty_class: CLASSES[2],
+        duty_kind: "DisclosureNonresponseKind",
+    },
+    Effect {
+        number: 390,
+        key: "disclosure-alternate-escalation",
+        title: "Disclosure alternate escalation",
+        mode: MODES[0],
+        duty_class: CLASSES[2],
+        duty_kind: "DisclosureAlternateEscalationKind",
     },
 ];
 
@@ -497,7 +535,7 @@ impl fmt::Display for CheckReport {
             "obligations: PASS - {} effects, {} exact statements, {} main pins, \
              {}/{}/{} counterfactual pins, {} retained OBL-B1-v1, {} retained \
              DLV-B1-v1, and {} successor ECON-B1-v1 byte-exact prose payloads, \
-             12 watched mutation seams, and one exact obliged consumer",
+             {} watched mutation seams, and one exact obliged consumer",
             self.effects,
             self.exact_statements,
             self.main_pins,
@@ -507,6 +545,7 @@ impl fmt::Display for CheckReport {
             PROSE_PAYLOADS.len(),
             DELIVERY_PROSE_PAYLOADS.len(),
             ECONOMIC_PROSE_PAYLOADS.len(),
+            WATCHED_MUTATION_CASES.len(),
         )
     }
 }
@@ -1055,6 +1094,46 @@ fn effect_extra_fields(effect: Effect, branch: &str) -> Vec<(&'static str, &'sta
                 "IndividualReliefNonDelayScope",
             ),
         ],
+        // Ruling B. Each disclosure effect names its own bearer, duty and
+        // standard, so the reader route cannot be satisfied by a finding-side
+        // atom and a disclosure duty cannot borrow a finding's reader.
+        387 => vec![
+            ("$disclosure_bearer", "DisclosureBearerScope"),
+            ("$disclosure_duty", "DisclosureDutyScope"),
+            ("$disclosure_standard", "DisclosureStandardScope"),
+            ("$disclosure_kind", "DisclosureKindScope"),
+        ],
+        388 => vec![
+            ("$disclosure_reader", "DisclosureReaderScope"),
+            ("$disclosure_reader_duty", "DisclosureReaderDutyScope"),
+            (
+                "$disclosure_reader_standard",
+                "DisclosureReaderStandardScope",
+            ),
+            ("$disclosure_receipt", "DisclosureReceiptEvidenceScope"),
+        ],
+        389 => vec![
+            ("$disclosure_nonresponse", "PositiveDisclosureNonresponseScope"),
+            (
+                "$disclosure_nonresponse_duty",
+                "DisclosureNonresponseDutyScope",
+            ),
+            (
+                "$disclosure_nonresponse_standard",
+                "DisclosureNonresponseStandardScope",
+            ),
+        ],
+        390 => vec![
+            ("$disclosure_alternate", "DisclosureAlternateScope"),
+            (
+                "$disclosure_alternate_duty",
+                "DisclosureEscalationDutyScope",
+            ),
+            (
+                "$disclosure_alternate_standard",
+                "DisclosureEscalationStandardScope",
+            ),
+        ],
         _ => unreachable!("known effect"),
     }
 }
@@ -1229,6 +1308,21 @@ fn effect_heads(effect: Effect) -> &'static [&'static str] {
             "obliged($individual_relief_bearer, $individual_relief_duty, $individual_relief_standard)",
             "prevents($subject, SystemicWorkDelaysIndividualRelief)",
         ],
+        // Ruling B. The duty is what is owed and to whom; nothing here asserts
+        // that a disclosure arrived. 389 mirrors 214's barrier so a starved
+        // reader's silence can never be read as the reader having acted, and
+        // 390 turns that certified silence into a second office's duty.
+        387 => &["obliged($disclosure_bearer, $disclosure_duty, $disclosure_standard)"],
+        388 => &[
+            "obliged($disclosure_reader, $disclosure_reader_duty, $disclosure_reader_standard)",
+        ],
+        389 => &[
+            "obliged($disclosure_nonresponse, $disclosure_nonresponse_duty, $disclosure_nonresponse_standard)",
+            "prevents($disclosure_nonresponse, SilenceAsDisclosureAction)",
+        ],
+        390 => &[
+            "obliged($disclosure_alternate, $disclosure_alternate_duty, $disclosure_alternate_standard)",
+        ],
         _ => unreachable!("known effect"),
     }
 }
@@ -1263,8 +1357,19 @@ fn effect_rule_sets() -> &'static [Vec<String>] {
     })
 }
 
+/// Index by position in `EFFECTS`, never by `number - 198`. The rule sets are
+/// built by iterating `EFFECTS` in order, so the two coincide only while the
+/// numbers stay contiguous from 198 — an undocumented invariant that the
+/// disclosure effects (387+) break. Position is what the data actually means.
+fn effect_index(number: u16) -> usize {
+    EFFECTS
+        .iter()
+        .position(|effect| effect.number == number)
+        .expect("effect number is declared in EFFECTS")
+}
+
 fn effect_conclusion_rules(effect: Effect) -> &'static [String] {
-    &effect_rule_sets()[(effect.number - 198) as usize]
+    &effect_rule_sets()[effect_index(effect.number)]
 }
 
 fn typed_reader_bridge() -> &'static str {
@@ -1300,7 +1405,7 @@ fn formal_statements() -> impl Iterator<Item = &'static str> {
 }
 
 fn effect_by_number(number: u16) -> Effect {
-    EFFECTS[(number - 198) as usize]
+    EFFECTS[effect_index(number)]
 }
 
 fn legacy_reader(kind: &str) -> &'static str {
@@ -1542,7 +1647,7 @@ impl PinCase {
     }
 }
 
-const WATCHED_MUTATION_CASES: [(&str, &[&str]); 12] = [
+const WATCHED_MUTATION_CASES: [(&str, &[&str]); 13] = [
     (
         "raw-currentness-rejoin",
         &["origin omission SourceVersionScope"],
@@ -1584,6 +1689,13 @@ const WATCHED_MUTATION_CASES: [(&str, &[&str]); 12] = [
     (
         "systemic-individual-separation",
         &["FS-CCE-222 omission IndividualReliefNonDelayScope"],
+    ),
+    (
+        "disclosure-nonresponse-alternate",
+        &[
+            "FS-CCE-389 omission PositiveDisclosureNonresponseScope",
+            "FS-CCE-390 omission DisclosureEscalationDutyScope",
+        ],
     ),
 ];
 
@@ -2085,6 +2197,11 @@ fn main_pin_cases(snapshot: &SourceSnapshot) -> ObligationResult<Vec<PinCase>> {
         (214, "PositiveFindingNonresponseScope"),
         (215, "FindingEscalationScope"),
         (222, "IndividualReliefNonDelayScope"),
+        // Ruling B's load-bearing pair: without the certified nonresponse the
+        // reader's silence derives nothing, and without the escalation duty a
+        // starved reader produces no second office's duty.
+        (389, "PositiveDisclosureNonresponseScope"),
+        (390, "DisclosureEscalationDutyScope"),
     ] {
         let effect = effect_by_number(effect_number);
         let fixture = effect_fixture(
@@ -2300,9 +2417,9 @@ fn main_pin_cases(snapshot: &SourceSnapshot) -> ObligationResult<Vec<PinCase>> {
 }
 
 fn validate_watched_mutation_cases(cases: &[PinCase]) -> ObligationResult<()> {
-    if WATCHED_MUTATION_CASES.len() != 12 {
+    if WATCHED_MUTATION_CASES.len() != 13 {
         return Err(obligation_error(
-            "obligations watched-mutation inventory must contain 12 seams",
+            "obligations watched-mutation inventory must contain 13 seams",
         ));
     }
     let mut labels: HashSet<&str> = cases.iter().map(|case| case.label.as_str()).collect();
@@ -3083,8 +3200,8 @@ mod tests {
         let statements = validate_formal_surface(snapshot.constitution())
             .expect("validate generated formal surface");
         assert_eq!(actual, expected);
-        assert_eq!(formal_rules().len(), 64);
-        assert_eq!(statements.len(), 65);
+        assert_eq!(formal_rules().len(), 69);
+        assert_eq!(statements.len(), 70);
         assert_eq!(statement_id(statements[0]), statement_id(DERIVED_STATEMENT));
         let replaced = replace_block(
             snapshot.constitution(),
@@ -3120,16 +3237,16 @@ mod tests {
         let snapshot = snapshot(&context);
         let cases = main_pin_cases(&snapshot).expect("build pin cases");
         validate_watched_mutation_cases(&cases).expect("watched cases");
-        assert_eq!(cases.len(), 122);
+        assert_eq!(cases.len(), 132);
         assert_eq!(
             cases.iter().map(|case| case.queries.len()).sum::<usize>(),
-            142
+            153
         );
         let artifacts = rendered_artifacts(&snapshot, &cases).expect("render artifacts");
-        assert_eq!(artifact_counts(&artifacts), (142, 25, 26, 28));
+        assert_eq!(artifact_counts(&artifacts), (153, 29, 30, 28));
         let tasks = execution_tasks(&snapshot, &cases, &artifacts, None).expect("execution tasks");
         assert_eq!(tasks.len(), 4);
-        assert_eq!(tasks[0].pin_files.len(), 122);
+        assert_eq!(tasks[0].pin_files.len(), 132);
         assert!(tasks[1..].iter().all(|task| task.pin_files.len() == 1));
         assert!(Arc::ptr_eq(&tasks[0].kb, &snapshot.constitution));
     }
@@ -3141,10 +3258,10 @@ mod tests {
         let report = check(&context, &snapshot).expect("check obligations");
         assert_eq!(
             report.to_string(),
-            "obligations: PASS - 25 effects, 65 exact statements, 142 main pins, \
-             25/26/28 counterfactual pins, 11 retained OBL-B1-v1, 8 retained \
+            "obligations: PASS - 29 effects, 70 exact statements, 153 main pins, \
+             29/30/28 counterfactual pins, 11 retained OBL-B1-v1, 8 retained \
              DLV-B1-v1, and 3 successor ECON-B1-v1 byte-exact prose payloads, \
-             12 watched mutation seams, and one exact obliged consumer"
+             13 watched mutation seams, and one exact obliged consumer"
         );
         assert_eq!(
             check_consumers(&context, &snapshot).expect("check consumers"),
@@ -3168,7 +3285,7 @@ mod tests {
         let context = context();
         let snapshot = snapshot(&context);
         let output = fingerprints(&context, &snapshot).expect("fingerprints");
-        assert_eq!(output.lines().count(), 65);
+        assert_eq!(output.lines().count(), 70);
         assert_eq!(
             sha256(output.trim_end().as_bytes()),
             OBLIGATION_STATEMENT_SET_SHA256

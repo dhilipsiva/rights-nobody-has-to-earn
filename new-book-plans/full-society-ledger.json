@@ -4,7 +4,7 @@
   "title": "Full-society domain-and-layer ledger \u2014 canonical source (stage 1)",
   "status": "stage_4_repository_audit_complete",
   "evidence_role": "reviewed_inventory_not_assurance",
-  "source_version": "fs-ledger-2026-09-10-money-and-influence-v1",
+  "source_version": "fs-ledger-2026-09-11-disclosure-duty-v1",
   "bound_sources_sha256": {
     "assurance_portfolio": "a5075d5d748d092cd15778939fad8dc2f6fd0ec90abbfe44a35cb6ab02f03e64",
     "full_society_boundary": "93cf05e9d2644a12e0d0a7a6c7677bb85b320f92280d6557917382f79fc1b542"
@@ -27219,7 +27219,7 @@
   ],
   "power_source_inventory": {
     "artifact_ref": "new-book-plans/full-society-power-source-manifest.json",
-    "artifact_sha256": "be3634c25c5df13b869dc79ca47925aa0379929ab09ce5c266da486435c3591e",
+    "artifact_sha256": "242070698d544a5a14197798b2930f690941451ca4c1de3915142b2205fcdfef",
     "source_commit": "36ed92c58877cffa5a11928ad200f0ca9a604820",
     "inventory_status": "reviewed-inventory-input-not-law-not-operation-not-completeness-beyond-bound-version",
     "row_count": 237,
@@ -27373,7 +27373,7 @@
     "expected_final_card_count": 210,
     "legacy_fields_permitted_until_complete": true,
     "evidence_ceiling": "Coverage contracts and pre-drafting checks only; no operation, delivery, feasibility, liveness, reader response, external truth, or calibration follows.",
-    "expected_constitutional_effect_count": 386
+    "expected_constitutional_effect_count": 390
   },
   "powers": [
     {
@@ -105616,6 +105616,41 @@
         "FS-CCE-385",
         "FS-CCE-386"
       ]
+    },
+    {
+      "id": "FS-CVF-021",
+      "title": "Democratic and administrative integrity duties",
+      "state": "formalized",
+      "source_family_refs": [],
+      "card_refs": [],
+      "template_refs": [],
+      "refusal_refs": [],
+      "crosswalk_refs": [],
+      "effect_refs": [
+        "FS-CCE-387",
+        "FS-CCE-388",
+        "FS-CCE-389",
+        "FS-CCE-390"
+      ],
+      "formal_statement_refs": [
+        "0d993896a3aec1dafd61ac9872e13c29b66829b91980131ff474bb728dcd460e",
+        "120dc54a8fd7f17ec29ceb128c3444be763bbd26707287e39dbcfcc66a9694b7",
+        "23a0d93809ca6f1e7e69b564aed688bdc09deb8c25243061527c2f41550d60cb",
+        "0d503257df2b95b1d7fa6db33dd8efe1ac31d7af4628bc0fe12a4984db4bfb7d",
+        "0fa036117eac8e40c3c79170a2db193b685d2c9f0467bef19d44c4deb62ce913"
+      ],
+      "pin_group_refs": [
+        "new-book-plans/obligations.pins.nibli::# FS-CCE-387 positive: Disclosure duty."
+      ],
+      "counterfactual_refs": [
+        "new-book-plans/counterfactual/no-obligations-source.pins.nibli::# FS-CCE-387 disappears with origin materialization."
+      ],
+      "prose_refs": [],
+      "part_v_refs": [],
+      "blocked_before_drafting": "The four disclosure duty effects, their generated rules, positive and omission pins, and the two watched failing nonresponse controls are complete. They establish only what is owed and to whom over supplied records; no disclosure, filing, receipt, reading, publication, action, or institutional liveness follows, and no Book 1 prose projects them yet.",
+      "source_refs": [
+        "new-book-plans/book-1-disclosure-duty-contract.md::## 1. Decision"
+      ]
     }
   ],
   "dependencies": [
@@ -112252,61 +112287,11 @@
     ],
     "drift_note": "The criteria list appears in five ratified variants: the mandate names adequacy, equality/accessibility, continuity, resilience, sustainability, and resource; the former Book 1 envelope tracker bullet names adequacy, continuity, equity, accessibility, resilience, and sustainability without resource; the boundary decision's materiality test adds safety; the book-2 mirror compounds them as accessibility/equity, continuity/reserve, recovery/resilience, ecological-sustainability, and fiscal/resource-feasibility; and the ledger's former threshold deferral named five, omitting sustainability. This canon is the union with provenance \u2014 no criterion any ratified text names is dropped \u2014 and the ledger's own materiality test is aligned in the same change to the boundary decision's exact wording."
   },
-  "closure_record": {
-    "gate": "gate-a",
-    "permitted_claim": "The project has a versioned, reviewable scope map and assurance program.",
-    "candidate_commit_sha": "979d97159151d3467ea7556eda8991575d721e5c",
-    "source_version": "fs-ledger-2026-09-10-money-and-influence-v1",
-    "scope_sha256": "2618e386bc5ed503ebb8058f199663715c791a30962480ae7f583aa7c2db6660",
-    "envelope_ref": "FS-ENV-01",
-    "audit_cutoff_at_utc": "2026-09-10T11:05:44Z",
-    "scope_audit_ref": "FS-SAU-53",
-    "assurance_record_refs": [
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-01\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-02\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-03\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-04\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-05\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-06\"",
-      "new-book-plans/full-society-ledger.json::\"id\": \"FS-RTE-07\"",
-      "new-book-plans/full-society-ledger.md::# Full-Society Domain-and-Layer Ledger — Generated Report",
-      "new-book-plans/constitutional-closure-and-model-allocation-audit.md::# Constitutional-closure and model-allocation audit"
-    ],
-    "residual_refs": [
-      "FS-DFT-13",
-      "FS-DFT-14",
-      "FS-DFT-27",
-      "FS-DFT-40"
-    ],
-    "claim_limitations": [
-      {
-        "defect_ref": "FS-DFT-13",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-14",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      },
-      {
-        "defect_ref": "FS-DFT-27",
-        "affected_claim_ref": "FS-CLM-36",
-        "public_claim_restriction": "no claim that recognition means anything operative — it stays unread by decision"
-      },
-      {
-        "defect_ref": "FS-DFT-40",
-        "affected_claim_ref": "FS-CLM-19",
-        "public_claim_restriction": "no claim of authorship, truth, genesis completeness, persistence, or recovery"
-      }
-    ],
-    "closure_policy_ref": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
-    "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-a0ddc29b4bfeb0db302ef54276026946ff9518d6341772ef8dcd954339bb4f7c.json"
-  },
+  "closure_record": null,
   "acceptance_gate": {
-    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED",
+    "verdict": "REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED",
     "rollup_rule": "Any non-refused row below an established posture yields the weaker overall verdict; rows below an established posture exist, so the overall verdict is the weaker one, and it stays non-numeric by rule.",
-    "gate_a_status": "passed"
+    "gate_a_status": "not-passed"
   },
   "closure_requirement_profiles": [
     {
@@ -131712,6 +131697,50 @@
       "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
       "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows.",
       "verification_receipt_ref": "new-book-plans/verification-receipts/sha256-a0ddc29b4bfeb0db302ef54276026946ff9518d6341772ef8dcd954339bb4f7c.json"
+    },
+    {
+      "id": "FS-SAU-54-PENDING",
+      "title": "Disclosure duty pending current-source repository audit",
+      "source_version": "fs-ledger-2026-09-11-disclosure-duty-v1",
+      "scope_sha256": "02db21573c573b40b50a9e0da6f166a53b72a322a14a0a1c69975b74a25ce640",
+      "protocol_sha256": "caf310e545718de5728fdbe34491d2b34cf00900e69281de12c5e93aa643f44c",
+      "executed_at_utc": "2026-09-11T00:00:00Z",
+      "method": "repository-source-derived-adversarial-audit",
+      "criterion_coverage": [
+        "declared-rights",
+        "declared-liberties",
+        "declared-powers",
+        "declared-duties",
+        "protected-private-boundaries",
+        "cross-domain-dependencies",
+        "ordinary-life-account",
+        "failure-and-recovery-paths",
+        "adequacy",
+        "accessibility-equality",
+        "continuity",
+        "resilience",
+        "sustainability",
+        "safety",
+        "resource"
+      ],
+      "control_refs": [
+        "src/checks/ledger.rs::fn negative_controls(",
+        "src/checks/ledger/closure.rs::fn negative_controls("
+      ],
+      "commands": [
+        "./verify.sh --refresh full-society-ledger",
+        "./verify.sh --refresh constitutional-closure",
+        "./verify.sh --emit-receipt new-book-plans/verification-receipts"
+      ],
+      "finding_refs": [
+        "FS-DFT-13",
+        "FS-DFT-14",
+        "FS-DFT-27",
+        "FS-DFT-40"
+      ],
+      "result": "pending",
+      "policy_basis": "new-book-plans/full-society-scope-review-protocol.md::## 5. Mechanical Gate A closure",
+      "evidence_ceiling": "Checked repository structure and watched-failing mutations over the declared axes only; no independent-human warrant, reader response, external truth, operation, delivery, feasibility, liveness, calibration, timeless completeness, or authentication of the audit's own trust root follows."
     }
   ],
   "constitutional_effects": [
@@ -238917,6 +238946,2050 @@
       "source_refs": [
         "new-book-plans/book-1-concentrated-private-and-hybrid-power-contract.md::## 1. Decision",
         "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md::## 11. Federal allocation"
+      ]
+    },
+    {
+      "id": "FS-CCE-387",
+      "title": "Disclosure duty",
+      "applicability": "Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "material if this source-bound obligation effect is omitted or collapsed",
+      "consequence": "Without disclosure duty, the obligation family can lose its exact source, boundary, continuity, accountability, or remedy effect.",
+      "owner_ref": "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty",
+      "closure_condition": "FS-CVF-016 is formalized, prose-landed, and mechanically re-audited without claiming that any institution reads, acts, delivers, remedies, or prevents recurrence",
+      "effect_key": "disclosure-duty",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-04",
+        "class-06"
+      ],
+      "profiles": [
+        "source-bound-obligation",
+        "finding-action-accountability",
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-12",
+        "FS-CLM-18",
+        "FS-CLM-21"
+      ],
+      "domain_refs": [
+        "FS-DOM-07",
+        "FS-DOM-06",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "permitted_inputs": [
+        "The exact current source, origin, scope, and independent review records for disclosure duty",
+        "A bearer-mode certificate and exactly one duty-class certificate rejoined to the same raw origin tuple",
+        "The source-specific conflict, excuse, breach, continuity, remedy, or finding record needed by this effect"
+      ],
+      "prohibited_inputs": [
+        "A wrong recipient, silent nonresponse treated as action, or systemic work delays individual relief",
+        "Bare obliged/2 or obliged/3 treated as origin provenance, or the implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "This direct effect for Disclosure duty binds its lawful source to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "trigger": {
+          "text": "This direct effect for Disclosure duty binds its trigger to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "evidence_rule": {
+          "text": "This direct effect for Disclosure duty binds its evidence rule to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "bounded_effect": {
+          "text": "This direct effect for Disclosure duty binds its bounded effect to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "This direct effect for Disclosure duty binds its forbidden preconditions to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "immediate_access": {
+          "text": "This direct effect for Disclosure duty binds its immediate access to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "record_boundary": {
+          "text": "This direct effect for Disclosure duty binds its record boundary to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "challenge_correction": {
+          "text": "This direct effect for Disclosure duty binds its challenge and correction to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "independent_check": {
+          "text": "This direct effect for Disclosure duty binds its independent check to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "failure_default": {
+          "text": "This direct effect for Disclosure duty binds its failure default to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "end_or_retention": {
+          "text": "This direct effect for Disclosure duty binds its end or retention to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        }
+      },
+      "profile_terms": {
+        "source-bound-obligation": {
+          "bearer": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation bearer only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "bearer_mode": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation bearer mode only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "beneficiary_or_object": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation beneficiary or object only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "duty_kind": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation duty kind only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "function_or_commitment": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation function or commitment only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "exact_origin": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation exact origin only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "source": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation source only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "version": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation version only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "jurisdiction": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation jurisdiction only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "legal_scope": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation legal scope only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "end": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation end only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "public_principal_retention": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation public principal retention only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "express_private_reach": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation express private reach only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "priority": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation priority only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "excuse": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation excuse only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "breach": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation breach only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation continuity only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "remedy": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation remedy only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "non_waiver": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation non waiver only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "failure_polarity": {
+            "text": "This direct effect for Disclosure duty applies the source bound obligation failure polarity only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "finding-action-accountability": {
+          "finding_kind": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability finding kind only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "subject_and_case": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability subject and case only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability independent recipient only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "receipt_evidence": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability receipt evidence only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_actions": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability permitted actions only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "reasons_and_review": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability reasons and review only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "positive_nonresponse": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability positive nonresponse only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "alternate_escalation": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability alternate escalation only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability continuity only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_remedy": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability individual remedy only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "prior_decision_review": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability prior decision review only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "common_cause": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability common cause only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "responsible_control_correction": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability responsible control correction only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "re_audit": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability re audit only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "recurrence": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability recurrence only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_relief_non_delay": {
+            "text": "This direct effect for Disclosure duty applies the finding action accountability individual relief non delay only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "consequential-record": {
+          "writer": {
+            "text": "This direct effect for Disclosure duty applies the consequential record writer only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_basis": {
+            "text": "This direct effect for Disclosure duty applies the consequential record permitted basis only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "This direct effect for Disclosure duty applies the consequential record visibility and privacy only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "challenge": {
+            "text": "This direct effect for Disclosure duty applies the consequential record challenge only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "correction": {
+            "text": "This direct effect for Disclosure duty applies the consequential record correction only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "retention": {
+            "text": "This direct effect for Disclosure duty applies the consequential record retention only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "deletion_control": {
+            "text": "This direct effect for Disclosure duty applies the consequential record deletion control only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "external_assurance": {
+            "text": "This direct effect for Disclosure duty applies the consequential record external assurance only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Disclosure duty applies the consequential record independent recipient only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "action_duty": {
+            "text": "This direct effect for Disclosure duty applies the consequential record action duty only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "This direct effect for Disclosure duty applies the consequential record continuity and remedy only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "temporal_status": {
+            "text": "This direct effect for Disclosure duty applies the consequential record temporal status only to this effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "This direct effect for Disclosure duty binds its evidence authority to this direct source-bound effect: Every office holder, candidate, party or coalition, and actor the money-and-influence family names owes disclosure of the named kind to an independent reader, with the proportionate publication floor left to democratic law. The term establishes no operation or external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-387-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive disclosure duty after removing or aliasing one required source-bound field; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/obligations.pins.nibli::# FS-CCE-387 withholds when source and record reviewer fuse."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-387-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Remove the direct rule for disclosure duty and show that exact legal effect disappears while unrelated obligation effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-obligations-source.pins.nibli::# FS-CCE-387 disappears with origin materialization."
+      },
+      "part_v_status": "formalized-not-prose-landed",
+      "book2_handoff": "Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+      ]
+    },
+    {
+      "id": "FS-CCE-388",
+      "title": "Disclosure reader and action duty",
+      "applicability": "Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "material if this source-bound obligation effect is omitted or collapsed",
+      "consequence": "Without disclosure reader and action duty, the obligation family can lose its exact source, boundary, continuity, accountability, or remedy effect.",
+      "owner_ref": "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty",
+      "closure_condition": "FS-CVF-016 is formalized, prose-landed, and mechanically re-audited without claiming that any institution reads, acts, delivers, remedies, or prevents recurrence",
+      "effect_key": "disclosure-reader-action-duty",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-04",
+        "class-06"
+      ],
+      "profiles": [
+        "source-bound-obligation",
+        "finding-action-accountability",
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-12",
+        "FS-CLM-18",
+        "FS-CLM-21"
+      ],
+      "domain_refs": [
+        "FS-DOM-07",
+        "FS-DOM-06",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "permitted_inputs": [
+        "The exact current source, origin, scope, and independent review records for disclosure reader and action duty",
+        "A bearer-mode certificate and exactly one duty-class certificate rejoined to the same raw origin tuple",
+        "The source-specific conflict, excuse, breach, continuity, remedy, or finding record needed by this effect"
+      ],
+      "prohibited_inputs": [
+        "A wrong recipient, silent nonresponse treated as action, or systemic work delays individual relief",
+        "Bare obliged/2 or obliged/3 treated as origin provenance, or the implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "This direct effect for Disclosure reader and action duty binds its lawful source to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "trigger": {
+          "text": "This direct effect for Disclosure reader and action duty binds its trigger to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "evidence_rule": {
+          "text": "This direct effect for Disclosure reader and action duty binds its evidence rule to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "bounded_effect": {
+          "text": "This direct effect for Disclosure reader and action duty binds its bounded effect to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "This direct effect for Disclosure reader and action duty binds its forbidden preconditions to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "immediate_access": {
+          "text": "This direct effect for Disclosure reader and action duty binds its immediate access to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "record_boundary": {
+          "text": "This direct effect for Disclosure reader and action duty binds its record boundary to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "challenge_correction": {
+          "text": "This direct effect for Disclosure reader and action duty binds its challenge and correction to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "independent_check": {
+          "text": "This direct effect for Disclosure reader and action duty binds its independent check to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "failure_default": {
+          "text": "This direct effect for Disclosure reader and action duty binds its failure default to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "end_or_retention": {
+          "text": "This direct effect for Disclosure reader and action duty binds its end or retention to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        }
+      },
+      "profile_terms": {
+        "source-bound-obligation": {
+          "bearer": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation bearer only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "bearer_mode": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation bearer mode only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "beneficiary_or_object": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation beneficiary or object only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "duty_kind": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation duty kind only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "function_or_commitment": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation function or commitment only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "exact_origin": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation exact origin only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "source": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation source only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "version": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation version only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "jurisdiction": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation jurisdiction only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "legal_scope": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation legal scope only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "end": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation end only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "public_principal_retention": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation public principal retention only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "express_private_reach": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation express private reach only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "priority": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation priority only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "excuse": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation excuse only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "breach": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation breach only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation continuity only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "remedy": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation remedy only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "non_waiver": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation non waiver only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "failure_polarity": {
+            "text": "This direct effect for Disclosure reader and action duty applies the source bound obligation failure polarity only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "finding-action-accountability": {
+          "finding_kind": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability finding kind only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "subject_and_case": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability subject and case only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability independent recipient only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "receipt_evidence": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability receipt evidence only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_actions": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability permitted actions only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "reasons_and_review": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability reasons and review only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "positive_nonresponse": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability positive nonresponse only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "alternate_escalation": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability alternate escalation only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability continuity only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_remedy": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability individual remedy only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "prior_decision_review": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability prior decision review only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "common_cause": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability common cause only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "responsible_control_correction": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability responsible control correction only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "re_audit": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability re audit only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "recurrence": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability recurrence only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_relief_non_delay": {
+            "text": "This direct effect for Disclosure reader and action duty applies the finding action accountability individual relief non delay only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "consequential-record": {
+          "writer": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record writer only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_basis": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record permitted basis only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record visibility and privacy only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "challenge": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record challenge only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "correction": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record correction only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "retention": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record retention only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "deletion_control": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record deletion control only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "external_assurance": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record external assurance only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record independent recipient only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "action_duty": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record action duty only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record continuity and remedy only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "temporal_status": {
+            "text": "This direct effect for Disclosure reader and action duty applies the consequential record temporal status only to this effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "This direct effect for Disclosure reader and action duty binds its evidence authority to this direct source-bound effect: Every disclosure duty routes with its bearer and kind to the independent audit and integrity function, which must record receipt, choose only permitted actions, give reasons, and expose review. The term establishes no operation or external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-388-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive disclosure reader and action duty after removing or aliasing one required source-bound field; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/obligations.pins.nibli::# FS-CCE-388 withholds when source and record reviewer fuse."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-388-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Remove the direct rule for disclosure reader and action duty and show that exact legal effect disappears while unrelated obligation effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-obligations-source.pins.nibli::# FS-CCE-388 disappears with origin materialization."
+      },
+      "part_v_status": "formalized-not-prose-landed",
+      "book2_handoff": "Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+      ]
+    },
+    {
+      "id": "FS-CCE-389",
+      "title": "Certified positive disclosure nonresponse",
+      "applicability": "A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "material if this source-bound obligation effect is omitted or collapsed",
+      "consequence": "Without certified positive disclosure nonresponse, the obligation family can lose its exact source, boundary, continuity, accountability, or remedy effect.",
+      "owner_ref": "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty",
+      "closure_condition": "FS-CVF-016 is formalized, prose-landed, and mechanically re-audited without claiming that any institution reads, acts, delivers, remedies, or prevents recurrence",
+      "effect_key": "certified-positive-disclosure-nonresponse",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-04",
+        "class-06"
+      ],
+      "profiles": [
+        "source-bound-obligation",
+        "finding-action-accountability",
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-12",
+        "FS-CLM-18",
+        "FS-CLM-21"
+      ],
+      "domain_refs": [
+        "FS-DOM-07",
+        "FS-DOM-06",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "permitted_inputs": [
+        "The exact current source, origin, scope, and independent review records for certified positive disclosure nonresponse",
+        "A bearer-mode certificate and exactly one duty-class certificate rejoined to the same raw origin tuple",
+        "The source-specific conflict, excuse, breach, continuity, remedy, or finding record needed by this effect"
+      ],
+      "prohibited_inputs": [
+        "A wrong recipient, silent nonresponse treated as action, or systemic work delays individual relief",
+        "Bare obliged/2 or obliged/3 treated as origin provenance, or the implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its lawful source to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "trigger": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its trigger to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "evidence_rule": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its evidence rule to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "bounded_effect": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its bounded effect to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its forbidden preconditions to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "immediate_access": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its immediate access to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "record_boundary": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its record boundary to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "challenge_correction": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its challenge and correction to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "independent_check": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its independent check to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "failure_default": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its failure default to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "end_or_retention": {
+          "text": "This direct effect for Certified positive disclosure nonresponse binds its end or retention to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        }
+      },
+      "profile_terms": {
+        "source-bound-obligation": {
+          "bearer": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation bearer only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "bearer_mode": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation bearer mode only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "beneficiary_or_object": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation beneficiary or object only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "duty_kind": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation duty kind only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "function_or_commitment": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation function or commitment only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "exact_origin": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation exact origin only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "source": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation source only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "version": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation version only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "jurisdiction": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation jurisdiction only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "legal_scope": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation legal scope only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "end": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation end only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "public_principal_retention": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation public principal retention only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "express_private_reach": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation express private reach only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "priority": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation priority only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "excuse": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation excuse only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "breach": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation breach only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation continuity only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "remedy": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation remedy only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "non_waiver": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation non waiver only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "failure_polarity": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the source bound obligation failure polarity only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "finding-action-accountability": {
+          "finding_kind": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability finding kind only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "subject_and_case": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability subject and case only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability independent recipient only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "receipt_evidence": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability receipt evidence only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_actions": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability permitted actions only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "reasons_and_review": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability reasons and review only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "positive_nonresponse": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability positive nonresponse only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "alternate_escalation": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability alternate escalation only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability continuity only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_remedy": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability individual remedy only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "prior_decision_review": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability prior decision review only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "common_cause": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability common cause only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "responsible_control_correction": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability responsible control correction only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "re_audit": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability re audit only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "recurrence": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability recurrence only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_relief_non_delay": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the finding action accountability individual relief non delay only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "consequential-record": {
+          "writer": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record writer only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_basis": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record permitted basis only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record visibility and privacy only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "challenge": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record challenge only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "correction": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record correction only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "retention": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record retention only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "deletion_control": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record deletion control only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "external_assurance": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record external assurance only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record independent recipient only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "action_duty": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record action duty only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record continuity and remedy only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "temporal_status": {
+            "text": "This direct effect for Certified positive disclosure nonresponse applies the consequential record temporal status only to this effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "This direct effect for Certified positive disclosure nonresponse binds its evidence authority to this direct source-bound effect: A disclosure reader's nonresponse is a certified positive record rather than silence, and it never becomes an adverse finding about the bearer. The term establishes no operation or external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-389-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive certified positive disclosure nonresponse after removing or aliasing one required source-bound field; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/obligations.pins.nibli::# FS-CCE-389 withholds when source and record reviewer fuse."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-389-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Remove the direct rule for certified positive disclosure nonresponse and show that exact legal effect disappears while unrelated obligation effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-obligations-source.pins.nibli::# FS-CCE-389 disappears with origin materialization."
+      },
+      "part_v_status": "formalized-not-prose-landed",
+      "book2_handoff": "Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+      ]
+    },
+    {
+      "id": "FS-CCE-390",
+      "title": "Disclosure alternate escalation",
+      "applicability": "A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing.",
+      "layer": "constitutional-invariant",
+      "status": "current",
+      "severity": "material if this source-bound obligation effect is omitted or collapsed",
+      "consequence": "Without disclosure alternate escalation, the obligation family can lose its exact source, boundary, continuity, accountability, or remedy effect.",
+      "owner_ref": "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty",
+      "closure_condition": "FS-CVF-016 is formalized, prose-landed, and mechanically re-audited without claiming that any institution reads, acts, delivers, remedies, or prevents recurrence",
+      "effect_key": "disclosure-alternate-escalation",
+      "posture": "Specified",
+      "primary_class_ref": "class-07",
+      "secondary_class_refs": [
+        "class-04",
+        "class-06"
+      ],
+      "profiles": [
+        "source-bound-obligation",
+        "finding-action-accountability",
+        "consequential-record"
+      ],
+      "affected_claim_refs": [
+        "FS-CLM-12",
+        "FS-CLM-18",
+        "FS-CLM-21"
+      ],
+      "domain_refs": [
+        "FS-DOM-07",
+        "FS-DOM-06",
+        "FS-DOM-08"
+      ],
+      "holder_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35"
+      ],
+      "affected_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-35",
+        "FS-ROL-40"
+      ],
+      "checking_role_refs": [
+        "FS-ROL-34",
+        "FS-ROL-40"
+      ],
+      "permitted_inputs": [
+        "The exact current source, origin, scope, and independent review records for disclosure alternate escalation",
+        "A bearer-mode certificate and exactly one duty-class certificate rejoined to the same raw origin tuple",
+        "The source-specific conflict, excuse, breach, continuity, remedy, or finding record needed by this effect"
+      ],
+      "prohibited_inputs": [
+        "A wrong recipient, silent nonresponse treated as action, or systemic work delays individual relief",
+        "Bare obliged/2 or obliged/3 treated as origin provenance, or the implemented custody T3 contract borrowed as this family's temporal authority"
+      ],
+      "permitted_downstream_effects": [
+        "A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing."
+      ],
+      "contract_terms": {
+        "lawful_source": {
+          "text": "This direct effect for Disclosure alternate escalation binds its lawful source to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "trigger": {
+          "text": "This direct effect for Disclosure alternate escalation binds its trigger to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "evidence_rule": {
+          "text": "This direct effect for Disclosure alternate escalation binds its evidence rule to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "bounded_effect": {
+          "text": "This direct effect for Disclosure alternate escalation binds its bounded effect to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "forbidden_preconditions": {
+          "text": "This direct effect for Disclosure alternate escalation binds its forbidden preconditions to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "immediate_access": {
+          "text": "This direct effect for Disclosure alternate escalation binds its immediate access to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "record_boundary": {
+          "text": "This direct effect for Disclosure alternate escalation binds its record boundary to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "challenge_correction": {
+          "text": "This direct effect for Disclosure alternate escalation binds its challenge and correction to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "independent_check": {
+          "text": "This direct effect for Disclosure alternate escalation binds its independent check to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "failure_default": {
+          "text": "This direct effect for Disclosure alternate escalation binds its failure default to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        },
+        "end_or_retention": {
+          "text": "This direct effect for Disclosure alternate escalation binds its end or retention to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+          "basis": "source-specified",
+          "source_refs": [
+            "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+          ]
+        }
+      },
+      "profile_terms": {
+        "source-bound-obligation": {
+          "bearer": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation bearer only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "bearer_mode": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation bearer mode only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "beneficiary_or_object": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation beneficiary or object only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "duty_kind": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation duty kind only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "function_or_commitment": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation function or commitment only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "exact_origin": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation exact origin only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "source": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation source only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "version": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation version only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "jurisdiction": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation jurisdiction only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "legal_scope": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation legal scope only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "end": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation end only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "public_principal_retention": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation public principal retention only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "express_private_reach": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation express private reach only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "priority": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation priority only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "excuse": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation excuse only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "breach": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation breach only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation continuity only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "remedy": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation remedy only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "non_waiver": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation non waiver only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "failure_polarity": {
+            "text": "This direct effect for Disclosure alternate escalation applies the source bound obligation failure polarity only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "finding-action-accountability": {
+          "finding_kind": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability finding kind only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "subject_and_case": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability subject and case only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability independent recipient only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "receipt_evidence": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability receipt evidence only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_actions": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability permitted actions only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "reasons_and_review": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability reasons and review only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "positive_nonresponse": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability positive nonresponse only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "alternate_escalation": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability alternate escalation only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability continuity only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_remedy": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability individual remedy only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "prior_decision_review": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability prior decision review only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "common_cause": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability common cause only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "responsible_control_correction": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability responsible control correction only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "re_audit": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability re audit only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "recurrence": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability recurrence only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "individual_relief_non_delay": {
+            "text": "This direct effect for Disclosure alternate escalation applies the finding action accountability individual relief non delay only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        },
+        "consequential-record": {
+          "writer": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record writer only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "permitted_basis": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record permitted basis only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "visibility_and_privacy": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record visibility and privacy only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "challenge": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record challenge only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "correction": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record correction only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "retention": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record retention only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "deletion_control": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record deletion control only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "external_assurance": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record external assurance only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "independent_recipient": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record independent recipient only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "action_duty": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record action duty only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "continuity_and_remedy": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record continuity and remedy only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          },
+          "temporal_status": {
+            "text": "This direct effect for Disclosure alternate escalation applies the consequential record temporal status only to this effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+            "basis": "source-specified",
+            "source_refs": [
+              "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+            ]
+          }
+        }
+      },
+      "evidence_authority": {
+        "text": "This direct effect for Disclosure alternate escalation binds its evidence authority to this direct source-bound effect: A certified disclosure nonresponse derives the predeclared alternate's duty, so a starved or captured reader produces a duty on a second office rather than nothing. The term establishes no operation or external truth.",
+        "basis": "source-specified",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ]
+      },
+      "negative_test": {
+        "id": "FS-CCE-390-NEGATIVE",
+        "status": "executable",
+        "assertion": "Attempt to derive disclosure alternate escalation after removing or aliasing one required source-bound field; formalization must supply an executable refusal.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/obligations.pins.nibli::# FS-CCE-390 withholds when source and record reviewer fuse."
+      },
+      "counterfactual": {
+        "id": "FS-CCE-390-COUNTERFACTUAL",
+        "status": "executable",
+        "assertion": "Remove the direct rule for disclosure alternate escalation and show that exact legal effect disappears while unrelated obligation effects remain.",
+        "source_refs": [
+          "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
+        ],
+        "executable_ref": "new-book-plans/counterfactual/no-obligations-source.pins.nibli::# FS-CCE-390 disappears with origin materialization."
+      },
+      "part_v_status": "formalized-not-prose-landed",
+      "book2_handoff": "Book 2 owns staffing, assignment, workflows, notification, publication, storage, clocks, enforcement, resources, and operational escalation; no operation, receipt, action, delivery, remedy, recurrence control, institutional liveness, feasibility, calibration, or external truth follows.",
+      "source_refs": [
+        "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md::## 4. Ruling B \u2014 disclosure as a constitutional duty"
       ]
     }
   ],
