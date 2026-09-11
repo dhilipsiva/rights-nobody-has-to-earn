@@ -5,7 +5,7 @@
 
 **STRUCTURAL READER NAVIGATION ONLY.** This projection supplies no R6 evidence, comprehension result, accessibility validation, reader-suitability claim, Gate C evidence, or route availability.
 
-Canonical source version: `fs-ledger-2026-09-11-disclosure-duty-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A NOT PASSED**
+Canonical source version: `fs-ledger-2026-09-11-disclosure-duty-v1`. Gate verdict: **REVIEWED ROUTING INVENTORY; NOTHING ESTABLISHED BEYOND EACH ROW'S OWN POSTURE; GATE A PASSED**
 
 Coverage contracts: **complete**. Coverage-ready means source-specific planning is complete; it does not mean formalized, prose-landed, implemented, or operational.
 
@@ -33,7 +33,7 @@ Coverage-family drafting states:
 - FS-CVF-020 Named grounds of the public-scale private-power finding: prose-landed — Coverage, the enacted vocabulary statements, the executable pin suite, four counterfactuals, the repository producer-set guard, and the session-drafted, author-approved (2026-09-06) prose are complete. The family establishes only which ratified ground a supplied finding claims; no ground, reach, operation, or external truth follows.
 - FS-CVF-021 Democratic and administrative integrity duties: formalized — The four disclosure duty effects, their generated rules, positive and omission pins, and the two watched failing nonresponse controls are complete. They establish only what is owed and to whom over supplied records; no disclosure, filing, receipt, reading, publication, action, or institutional liveness follows, and no Book 1 prose projects them yet.
 
-Canonical source SHA-256: `a01bf0c38530aa44b5b014e5b40bd31115bb0e8f48579e0c7bb1f9e838e0746b`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
+Canonical source SHA-256: `1e1672b9d63a3e2014f2a360857d535f73523631afb9d9551c4c9c25d6363d19`. Every canonical list population is bound below; this digest also binds the non-list contract fields.
 
 ## Projection population closure
 
