@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? authority(StatisticsUseOperator, IndividualEntitlement, StatisticsUseRecord).
+# => FALSE
+? obliged(StatisticsUseOperator, PublishStatisticsMethodsUncertaintyExclusionsAndUndercount, StatisticsUseRecord).
+# => FALSE
+? obliged(StatisticsUseOperator, ProtectStatisticsParticipantsAndSupportersFromRetaliation, StatisticsUseRecord).
+# => FALSE
+? complete(StatisticsUseRecord, ReviewedStatisticalUse, StatisticsUseDataset).
+# => FALSE

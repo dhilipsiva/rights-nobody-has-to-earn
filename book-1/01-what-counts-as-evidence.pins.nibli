@@ -2,11 +2,29 @@
 #
 # FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
 #
+# Statistical permissions and the no-person-score boundary are checked in:
+#   tests/pins/statistics/use/positive/expect.pins.nibli
+#   tests/pins/statistics/release/positive/expect.pins.nibli
+#   tests/pins/statistics/use/defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/statistics/release/authorization-withdrawal-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/reuse-constitutional_record/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-record-reuse/expect.pins.nibli
+#   tests/pins/statistics/data-wall/IndividualRisk/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-individual-risk/expect.pins.nibli
+#   tests/pins/statistics/pattern/defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/criminal-burden/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-criminal-burden/expect.pins.nibli
+#   tests/pins/statistics/access/positive/expect.pins.nibli
+#   tests/pins/statistics/challenge/nonresponse-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/nonparticipation-is-not-a-penalty/expect.pins.nibli
+# Full interface and evidence limits:
+#   new-book-plans/book-1-official-statistics-contract.md
+#
 # KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
 # inlined. Run:
 #   ./verify.sh --only book-1/01-what-counts-as-evidence.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and formal contradiction checks
+# Markdown consistency is reviewed separately; the pins do not certify prose.
 #
 # One entry per load-bearing sentence in the chapter. Private to the author; the
 # reader never sees this file. If a verdict flips, the sentence it guards has

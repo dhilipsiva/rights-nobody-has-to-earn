@@ -32,6 +32,26 @@ mapped in its paired pins. Its supply is `session-drafted, author-approved`;
 formal implementation and reader projection do not imply operational delivery.
 Procurement process integrity remains Book 2.
 
+## Statistics implementation update — 2026-09-12
+
+[Official statistics](book-1-official-statistics-contract.md) now supplies
+bounded census, sampling, administrative, planning and equality-diagnostic
+permissions. Its cases cover record separation, independent method/review,
+source and method mismatch, currentness, small-group protection, publication
+duties, unsupported uses, remedial-only presumptions and rebuttal, private
+access, and certified nonresponse escalation. These are executable legal
+interfaces, not an operating data system or a claim of statistical validity.
+
+The diagnostic portion supersedes the historical absence descriptions below;
+it does not complete the other equality families. Collection, sampling,
+linkage, privacy technology, calibration, thresholds and empirical evaluation
+remain Book 2. The exact reader section "Counting without ranking people"
+was separately approved on 2026-09-12 and inserted unchanged in Book 1
+chapter 1, with supporting cases mapped in its paired pins. Its supply is
+`session-drafted, author-approved`; `statistics-reader-draft.md` preserves
+the approved wording. Neither the formal interface nor the reader section
+establishes operational delivery.
+
 ## 1. Ratified mandate
 
 The settled specification has a narrow, verified kernel: equal standing, named

@@ -214,8 +214,10 @@ unimplemented. Their controlling contract is
 source-supplied office parameters and later operational mechanics remain
 delegated implementation choices only inside its hard constraints, not a
 reopened author gate.
-The substantive-equality and anti-subordination baseline is likewise author-
-ratified but unimplemented. Its controlling contract is
+The substantive-equality and anti-subordination baseline is author-ratified.
+Its person-held barriers and the statistical/diagnostic interface are
+formalized; this does not complete its other remedial or operational contracts.
+Its controlling contract is
 `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`;
 statistical thresholds, quota values, operational methods, and programme
 workflows remain delegated only inside its legal reach, proof, data, continuity,
@@ -313,30 +315,6 @@ canonical ledger; this historical foundation summary does not override it.
 
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
-
-- [ ] **Constitute official statistics and planning information without building a
-  population score.**
-  - Authorize censuses, representative sampling, administrative statistics and
-    public planning data only with necessity, purpose limits, minimization,
-    accessibility, privacy, correction, retention/deletion control, independent
-    methodology, uncertainty disclosure and publication.
-  - Put equality diagnostics under the ratified data wall: separate purpose-
-    limited person evidence from the canonical consequential record and from
-    eligibility/enforcement data; protect small groups and intersections from re-
-    identification; make non-response non-adverse; and provide access, correction,
-    challenge, independent governance, and anti-retaliation.
-  - Aggregate patterns may create a rebuttable equality presumption and systemic
-    audit, but never an individual standing, floor, sanction, risk, entitlement,
-    worth, guilt, or punishment result. Test undercount, classification harm,
-    political manipulation, stale data, method drift, suppression, identity reuse,
-    and attempts to feed diagnostics into an individual consequence.
-  - Book 2 owns collection, sampling, linkage, privacy technology, calibration,
-    thresholds, and empirical evaluation. The audited specification owns
-    authority, purposes, permitted consumers, non-use walls, burdens,
-    contestability, and public accountability; Book 1 renders those controls.
-    Nibli may consume an authenticated, contestable, bounded finding; do not
-    open an engine handoff merely for statistics or claim it computes disparities,
-    authenticates identity, or proves institutional action.
 
 - [ ] **Build amendment enactment and effective-version assurance outside the
   reasoning engine.**
@@ -1609,6 +1587,8 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./verify.sh --list          # execution inventory
 ./generate.sh state-form   # explicit authoring; installs rules and generated tests
 ./generate.sh obligations
+./generate.sh integrity
+./generate.sh statistics
 ./generate.sh spine
 ~~~
 

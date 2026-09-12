@@ -19,19 +19,20 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **89** | **43** | **1697** | **7** |
+| computed from the constitution | **89** | **43** | **1814** | **8** |
 
-The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 5 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
+The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 6 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
-| **0** | `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `member` *(monotone cone)*, `observe`, `orderly` *(monotone cone)*, `parent`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `related` *(monotone cone)*, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
-| **1** | `contradict`, `grant`, `insure`, `precede`, `provide`, `severe` |
-| **2** | `authority`, `collide`, `complete`, `defend` |
-| **3** | `correct`, `match`, `reference`, `succeed`, `time` |
-| **4** | `false`, `lose`, `permits` |
-| **5** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
-| **6** | `err`, `obliged`, `prevents`, `travel` |
+| **0** | `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `member` *(monotone cone)*, `observe`, `orderly` *(monotone cone)*, `parent`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
+| **1** | `grant`, `insure`, `precede`, `provide`, `related`, `severe` |
+| **2** | `contradict` |
+| **3** | `authority`, `collide`, `complete`, `defend` |
+| **4** | `correct`, `match`, `reference`, `succeed`, `time` |
+| **5** | `false`, `lose`, `permits` |
+| **6** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
+| **7** | `err`, `obliged`, `prevents`, `travel` |
 
 Evidence predicates (45), the complete list of what the world may report: `adjust`, `at`, `attack`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `parent`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
 

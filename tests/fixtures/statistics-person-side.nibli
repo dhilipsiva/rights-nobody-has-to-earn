@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Hostile consumers: the development guard must reject both. Not a live rule.
+all $record: all $proceeding: complete($record, RebuttableAggregateEqualityPresumption, $proceeding) -> false(Adam).
+all $record: all $kind: all $target: complete($record, $kind, $target) -> false(Adam).

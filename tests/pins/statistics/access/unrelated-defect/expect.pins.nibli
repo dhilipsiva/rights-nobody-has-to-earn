@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+
+? permits(StatisticsSequenceRequester, InspectOwnStatisticalEvidence, StatisticsSequenceRecord).
+# => TRUE
+? obliged(StatisticsSequenceOperator, ProvidePrivateStatisticsAccessCorrectionAndChallenge, StatisticsSequenceRecord).
+# => TRUE
+? obliged(StatisticsSequenceOperator, ProtectStatisticsParticipantsAndSupportersFromRetaliation, StatisticsSequenceRecord).
+# => TRUE
+? complete(StatisticsSequenceRecord, ReviewedStatisticalEvidenceAccess, StatisticsSequenceDataset).
+# => TRUE
+? contradict(DifferentStatisticsUse, StatisticsUseAuthorization).
+# => TRUE
+? obliged(StatisticsDefectReader, ReviewAndCorrectUnsupportedStatisticalUse, DifferentStatisticsUse).
+# => TRUE
+? obliged(StatisticsSequenceOperator, PublishPrivacySafeStatisticsCorrection, DifferentStatisticsUse).
+# => TRUE
+? complete(StatisticsDefectRecord, ReviewedStatisticalUseDefect, StatisticsSequenceDataset).
+# => TRUE

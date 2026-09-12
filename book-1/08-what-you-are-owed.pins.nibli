@@ -1,9 +1,18 @@
 # ── Chapter 8 fidelity pins: "What You Are Owed" ─────────────────────────────
 #
+# The existing equality paragraph's data wall and remedial-only burden are
+# additionally exercised by these actual-constitution statistical cases:
+#   tests/pins/statistics/pattern/positive/expect.pins.nibli
+#   tests/pins/statistics/pattern/defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/criminal-burden/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-criminal-burden/expect.pins.nibli
+#   tests/pins/statistics/data-wall/nonparticipation-is-not-a-penalty/expect.pins.nibli
+# They establish no population finding or operated equality programme.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/08-what-you-are-owed.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and formal contradiction checks
+# Markdown consistency is reviewed separately; the pins do not certify prose.
 #
 # NOTE — one absence this file cannot hold as a query, and it is load-bearing.
 # "The general floor debt still has no machinery that checks performance against

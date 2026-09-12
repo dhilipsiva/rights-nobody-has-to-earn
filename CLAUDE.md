@@ -56,7 +56,8 @@ run under five minutes with the release binary already built. Report actual
 measurements and any remaining bottleneck honestly.
 
 Useful authoring generators remain behind `./generate.sh state-form`,
-`./generate.sh obligations`, and `./generate.sh spine`. They write semantic
+`./generate.sh obligations`, `./generate.sh integrity`,
+`./generate.sh statistics`, and `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
 
@@ -376,6 +377,32 @@ empirical evaluation. Nibli may consume an authenticated external finding; it
 is not a population-statistics, identity-authentication, or
 institutional-liveness system. Controlling record:
 `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
+
+**Statistics and diagnostic-evidence implementation, 2026-09-12.** The
+official-statistics contract supplies scoped census, sampling, administrative,
+planning and diagnostic authorization under positive necessity, privacy,
+accessibility, retention, methodology and publication controls. Dataset,
+purpose, source/method version and evidence period are joined to every
+downstream use. Authorized conflicting values block a record; reviewed defects
+withhold only the affected use. Constitutional, eligibility and enforcement
+records remain separate, with no individual score or verdict consumer.
+
+An aggregate protected-ground pattern can create a rebuttable presumption and
+independent audit in a remedial equality proceeding, never a criminal burden.
+Requests create review duties without authorizing private access; reviewed,
+case-bound access and positively certified nonresponse have separate routes.
+An independent alternate's duty does not depend on the challenged use staying
+valid. No result establishes authentication, calculation, publication, deletion
+or institutional action. Other equality measures and operations are not made
+complete by this statistical interface.
+
+`new-book-plans/book-1-official-statistics-contract.md` owns this contract;
+`statistics-source.json` and `./generate.sh statistics` explicitly produce its
+ordinary rules and cases. Development tests guard the actual consumers against
+named and generic person-side readers. The exact reader section "Counting
+without ranking people" was separately approved on 2026-09-12 and inserted
+unchanged in Book 1 chapter 1. Its supply is `session-drafted, author-approved`;
+`new-book-plans/statistics-reader-draft.md` preserves the approved wording.
 
 #### Economic pluralism and the protected private sphere — 2026-08-07
 

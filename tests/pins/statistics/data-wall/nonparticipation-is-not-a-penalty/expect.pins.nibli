@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? person(Hano).
+# => TRUE
+? owe(State, Eats, Hano).
+# => TRUE
+? decide(Hano, Ballot).
+# => TRUE
+? prevents(Hano, DiagnosticNonparticipationPenalty).
+# => TRUE

@@ -20,7 +20,7 @@ fn main() -> std::process::ExitCode {
         context::Context::discover().and_then(|context| authoring::run(&context, &args[0]))
     } else {
         Err(cli::Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|statistics|spine",
         ))
     };
     match result {

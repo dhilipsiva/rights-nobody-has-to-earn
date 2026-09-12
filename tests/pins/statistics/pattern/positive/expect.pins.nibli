@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? complete(StatisticsCaseRecord, RebuttableAggregateEqualityPresumption, StatisticsCaseProceeding).
+# => TRUE
+? permits(StatisticsCaseReader, InitiateIndependentSystemicEqualityAudit, StatisticsCaseRecord).
+# => TRUE
+? obliged(StatisticsCaseRespondent, DiscloseMeasureBasisAndAnswerEqualityJustification, StatisticsCaseProceeding).
+# => TRUE
+? obliged(StatisticsCaseReader, HearRebuttalAndCorrectAggregatePresumption, StatisticsCaseProceeding).
+# => TRUE

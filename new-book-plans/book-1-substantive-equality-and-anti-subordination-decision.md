@@ -7,6 +7,18 @@
 > adds no predicate, rule, fact, pin, institution in law, chapter, release, or
 > claim of present constitutional coverage.
 
+**Statistical/diagnostic implementation note, 2026-09-12.** The separate
+`book-1-official-statistics-contract.md` now implements bounded statistical
+authority, the section 8 data wall, aggregate remedial presumptions and
+rebuttal, private access, and independent request/nonresponse routes. Its
+`statistics-source.json` and ordinary pins supplement the existing
+person-held barriers. This does not implement the remaining accommodation,
+positive-measure, historical-repair or equality-operation contracts. The
+2026-09-12 verification ruling replaces retired receipt/audit workflows.
+The chapter 1 section "Counting without ranking people" received separate
+exact-version author approval on 2026-09-12 and was inserted unchanged;
+its supply is `session-drafted, author-approved`.
+
 ## 1. Decision
 
 Book 1 adopts **universal substantive equality with an anti-subordination

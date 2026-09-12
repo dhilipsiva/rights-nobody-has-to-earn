@@ -1,0 +1,470 @@
+{
+  "common_fields": [
+    [
+      "$dataset",
+      "StatisticsDatasetScope"
+    ],
+    [
+      "$operator",
+      "StatisticsOperatorScope"
+    ],
+    [
+      "$purpose",
+      "StatisticsPurposeScope"
+    ],
+    [
+      "$version",
+      "StatisticsSourceVersionScope"
+    ],
+    [
+      "$method",
+      "StatisticsMethodVersionScope"
+    ],
+    [
+      "$period",
+      "StatisticsEvidencePeriodScope"
+    ],
+    [
+      "$jurisdiction",
+      "StatisticsJurisdictionScope"
+    ],
+    [
+      "$scope",
+      "StatisticsLegalScope"
+    ],
+    [
+      "$end",
+      "StatisticsSourceBoundEndScope"
+    ],
+    [
+      "CurrentReconciledStatisticsRecord",
+      "StatisticsCurrentDispositionScope"
+    ],
+    [
+      "$reader",
+      "StatisticsChallengeReaderScope"
+    ],
+    [
+      "$alternate",
+      "StatisticsIndependentAlternateScope"
+    ],
+    [
+      "$challenge",
+      "StatisticsChallengeScope"
+    ],
+    [
+      "$correction",
+      "StatisticsCorrectionScope"
+    ],
+    [
+      "$remedy",
+      "StatisticsRemedyScope"
+    ],
+    [
+      "ConstitutionalReviewOrIndependentSubstitute",
+      "StatisticsFinalReviewScope"
+    ],
+    [
+      "NoPersonalStatusFloorLibertyBallotSanctionOrScore",
+      "StatisticsCorridorScope"
+    ]
+  ],
+  "vocabularies": [
+    [
+      "StatisticsPurposeScope",
+      "StatisticsPurposeVocabulary",
+      [
+        "OfficialStatistics",
+        "PublicPlanning",
+        "EqualityDiagnostics"
+      ]
+    ],
+    [
+      "StatisticsDatasetKindScope",
+      "StatisticsDatasetKindVocabulary",
+      [
+        "Census",
+        "RepresentativeSampling",
+        "AdministrativeStatistics",
+        "PublicPlanningData",
+        "EqualityDiagnosticDataset"
+      ]
+    ],
+    [
+      "StatisticsProceedingKindScope",
+      "StatisticsRemedialProceedingVocabulary",
+      [
+        "CivilRemedialEquality",
+        "AdministrativeRemedialEquality",
+        "ConstitutionalRemedialEquality"
+      ]
+    ],
+    [
+      "StatisticsPatternKindScope",
+      "StatisticsPatternKindVocabulary",
+      [
+        "AggregateProtectedGroundPattern",
+        "IntersectionalProtectedGroundPattern"
+      ]
+    ],
+    [
+      "StatisticsDefectKindScope",
+      "StatisticsDefectKindVocabulary",
+      [
+        "UnsupportedUndercount",
+        "ClassificationHarm",
+        "PoliticalManipulation",
+        "StaleData",
+        "MethodDrift",
+        "Suppression",
+        "IdentityReuse",
+        "IndividualConsequenceReuse",
+        "ReidentificationRisk",
+        "BlockedAccessOrCorrection",
+        "Retaliation",
+        "UnlawfulRetention"
+      ]
+    ],
+    [
+      "StatisticsRequestKindScope",
+      "StatisticsRequestKindVocabulary",
+      [
+        "InspectOwnStatisticalEvidence",
+        "CorrectOwnStatisticalEvidence",
+        "RequestLawfulStatisticalDeletion",
+        "ChallengeStatisticalUse"
+      ]
+    ]
+  ],
+  "contracts": [
+    {
+      "id": "use",
+      "kind": "ReviewedStatisticalUse",
+      "fields": [
+        [
+          "$kind",
+          "StatisticsDatasetKindScope"
+        ],
+        [
+          "$constitutional_record",
+          "StatisticsConstitutionalRecordScope"
+        ],
+        [
+          "$eligibility_record",
+          "StatisticsEligibilityRecordScope"
+        ],
+        [
+          "$enforcement_record",
+          "StatisticsEnforcementRecordScope"
+        ],
+        [
+          "NecessaryForDeclaredPurpose",
+          "StatisticsNecessityScope"
+        ],
+        [
+          "MinimizedCollectionAndUse",
+          "StatisticsMinimizationScope"
+        ],
+        [
+          "AccessibleParticipationAndNonresponseWithoutPenalty",
+          "StatisticsAccessibilityScope"
+        ],
+        [
+          "PrivateSecurePurposeLimitedNonReusableLinkage",
+          "StatisticsPrivacyAndLinkageScope"
+        ],
+        [
+          "SmallGroupsAndIntersectionsProtected",
+          "StatisticsReidentificationControlScope"
+        ],
+        [
+          "SourceBoundRetentionAndLawfulDeletion",
+          "StatisticsRetentionDeletionScope"
+        ],
+        [
+          "IndependentMethodWithoutPoliticalResultDirection",
+          "StatisticsMethodIndependenceScope"
+        ],
+        [
+          "UncertaintyExclusionsAndKnownUndercountDeclared",
+          "StatisticsUncertaintyScope"
+        ],
+        [
+          "PublishMethodsLimitationsAndCorrectionsWithoutIdentities",
+          "StatisticsPublicationScope"
+        ],
+        [
+          "AccessCorrectionChallengeAndAntiRetaliation",
+          "StatisticsParticipantProtectionScope"
+        ]
+      ],
+      "heads": [
+        "authority($operator, $purpose, $record)",
+        "obliged($operator, PublishStatisticsMethodsUncertaintyExclusionsAndUndercount, $record)",
+        "obliged($operator, ProtectStatisticsParticipantsAndSupportersFromRetaliation, $record)"
+      ],
+      "extra": [
+        "~($dataset = $constitutional_record)",
+        "~($dataset = $eligibility_record)",
+        "~($dataset = $enforcement_record)"
+      ],
+      "use_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "release",
+      "kind": "ReviewedStatisticalRelease",
+      "fields": [
+        [
+          "$authorization",
+          "StatisticsUseAuthorizationScope"
+        ],
+        [
+          "PrivacySafeAggregateOnlyNoIndividualIdentifiersOrReusableLinkage",
+          "StatisticsReleaseContentScope"
+        ],
+        [
+          "SmallGroupsAndIntersectionsProtected",
+          "StatisticsReidentificationControlScope"
+        ],
+        [
+          "MethodsUncertaintyExclusionsUndercountAndCorrectionsIncluded",
+          "StatisticsReleaseDisclosureScope"
+        ]
+      ],
+      "heads": [
+        "permits($operator, PublishPrivacySafeStatistics, $record)"
+      ],
+      "extra": [],
+      "use_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "pattern",
+      "kind": "RebuttableAggregateEqualityPresumption",
+      "fields": [
+        [
+          "$authorization",
+          "StatisticsUseAuthorizationScope"
+        ],
+        [
+          "$proceeding",
+          "StatisticsRemedialProceedingScope"
+        ],
+        [
+          "$proceeding_kind",
+          "StatisticsProceedingKindScope"
+        ],
+        [
+          "$pattern_kind",
+          "StatisticsPatternKindScope"
+        ],
+        [
+          "$respondent",
+          "StatisticsRespondentScope"
+        ],
+        [
+          "CredibleProtectedGroundBarrierPatternNotIndividualFact",
+          "StatisticsPatternEvidenceScope"
+        ],
+        [
+          "SmallGroupsAndIntersectionsProtected",
+          "StatisticsReidentificationControlScope"
+        ],
+        [
+          "NoticeVoiceIndependentRebuttalAndCorrection",
+          "StatisticsRebuttalScope"
+        ],
+        [
+          "RemedialBurdenOnlyNeverCriminalOrIndividualVerdict",
+          "StatisticsBurdenLimitScope"
+        ]
+      ],
+      "heads": [
+        "complete($record, RebuttableAggregateEqualityPresumption, $proceeding)",
+        "permits($reader, InitiateIndependentSystemicEqualityAudit, $record)",
+        "obliged($respondent, DiscloseMeasureBasisAndAnswerEqualityJustification, $proceeding)",
+        "obliged($reader, HearRebuttalAndCorrectAggregatePresumption, $proceeding)"
+      ],
+      "extra": [
+        "$purpose = EqualityDiagnostics",
+        "~($respondent = $source)",
+        "~($respondent = $evidence)",
+        "~($respondent = $review)",
+        "~($respondent = $reader)",
+        "~($respondent = $alternate)"
+      ],
+      "use_dependency": true,
+      "bindings": {
+        "$purpose": "EqualityDiagnostics"
+      }
+    },
+    {
+      "id": "access",
+      "kind": "ReviewedStatisticalEvidenceAccess",
+      "fields": [
+        [
+          "$requester",
+          "StatisticsRequesterScope"
+        ],
+        [
+          "$request_kind",
+          "StatisticsRequestKindScope"
+        ],
+        [
+          "CaseBoundLawfulAccessToOwnEvidenceNotReusableIdentity",
+          "StatisticsOwnEvidenceAuthorityScope"
+        ],
+        [
+          "PrivateAccessibleCorrectionDeletionAndChallenge",
+          "StatisticsAccessLimitScope"
+        ],
+        [
+          "NoPublicationOfPrivateEvidenceOrIdentity",
+          "StatisticsPrivateAccessScope"
+        ]
+      ],
+      "heads": [
+        "permits($requester, $request_kind, $record)",
+        "obliged($operator, ProvidePrivateStatisticsAccessCorrectionAndChallenge, $record)",
+        "obliged($operator, ProtectStatisticsParticipantsAndSupportersFromRetaliation, $record)"
+      ],
+      "extra": [
+        "~($requester = $operator)",
+        "~($requester = $review)",
+        "~($requester = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "use_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "defect",
+      "kind": "ReviewedStatisticalUseDefect",
+      "fields": [
+        [
+          "$target",
+          "StatisticsAffectedUseScope"
+        ],
+        [
+          "$defect",
+          "StatisticsDefectKindScope"
+        ],
+        [
+          "IndependentlyEstablishedIssueMakesThisExactUseUnsupported",
+          "StatisticsDefectDispositionScope"
+        ],
+        [
+          "NoAdverseParticipantFactOrAutomaticIndividualRemedy",
+          "StatisticsDefectLimitScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, StatisticsUseAuthorization)",
+        "obliged($reader, ReviewAndCorrectUnsupportedStatisticalUse, $target)",
+        "obliged($operator, PublishPrivacySafeStatisticsCorrection, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, StatisticsSourceAuthority, $target)",
+        "observe($target_source, $target, $dataset, StatisticsDatasetScope)",
+        "observe($target_source, $target, $operator, StatisticsOperatorScope)",
+        "observe($target_source, $target, $purpose, StatisticsPurposeScope)",
+        "observe($target_source, $target, $version, StatisticsSourceVersionScope)",
+        "observe($target_source, $target, $method, StatisticsMethodVersionScope)",
+        "observe($target_source, $target, $period, StatisticsEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, StatisticsJurisdictionScope)",
+        "observe($target_source, $target, $scope, StatisticsLegalScope)",
+        "observe($target_source, $target, $end, StatisticsSourceBoundEndScope)"
+      ],
+      "use_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "nonresponse",
+      "kind": "CertifiedStatisticsReaderNonresponse",
+      "fields": [
+        [
+          "$target",
+          "StatisticsAffectedRequestScope"
+        ],
+        [
+          "$requester",
+          "StatisticsRequesterScope"
+        ],
+        [
+          "AuthenticatedNoticeAndRealOpportunityToAct",
+          "StatisticsNoticeOpportunityScope"
+        ],
+        [
+          "$deadline",
+          "StatisticsSourceBoundDeadlineScope"
+        ],
+        [
+          "IndependentPositiveReaderNonresponseFinding",
+          "StatisticsNonresponseDispositionScope"
+        ],
+        [
+          "NoSilenceAsApprovalOrAdverseParticipantFact",
+          "StatisticsNonresponseLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($alternate, ReviewStatisticsRequestAndSecureIndependentRemedy, $target)",
+        "obliged($operator, ProtectStatisticsParticipantsAndSupportersFromRetaliation, $target)"
+      ],
+      "extra": [
+        "~($source = $reader)",
+        "~($evidence = $reader)",
+        "~($review = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "use_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "rebuttal",
+      "kind": "ReviewedAggregatePresumptionRebuttal",
+      "fields": [
+        [
+          "$target",
+          "StatisticsAffectedPresumptionScope"
+        ],
+        [
+          "$proceeding",
+          "StatisticsRemedialProceedingScope"
+        ],
+        [
+          "ReviewedRebuttalDisplacesOnlyThisAggregatePresumption",
+          "StatisticsRebuttalDispositionScope"
+        ],
+        [
+          "NoticeVoiceIndependentReviewAndCorrection",
+          "StatisticsRebuttalReviewScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, StatisticsUseAuthorization)",
+        "obliged($reader, CorrectDisplacedAggregatePresumption, $proceeding)"
+      ],
+      "extra": [
+        "authorized($target_source, StatisticsSourceAuthority, $target)",
+        "observe($target_source, $target, $dataset, StatisticsDatasetScope)",
+        "observe($target_source, $target, $operator, StatisticsOperatorScope)",
+        "observe($target_source, $target, $purpose, StatisticsPurposeScope)",
+        "observe($target_source, $target, $version, StatisticsSourceVersionScope)",
+        "observe($target_source, $target, $method, StatisticsMethodVersionScope)",
+        "observe($target_source, $target, $period, StatisticsEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, StatisticsJurisdictionScope)",
+        "observe($target_source, $target, $scope, StatisticsLegalScope)",
+        "observe($target_source, $target, $end, StatisticsSourceBoundEndScope)",
+        "observe($target_source, $target, RebuttableAggregateEqualityPresumption, StatisticsRecordKindScope)",
+        "observe($target_source, $target, $proceeding, StatisticsRemedialProceedingScope)",
+        "$purpose = EqualityDiagnostics"
+      ],
+      "use_dependency": false,
+      "bindings": {
+        "$purpose": "EqualityDiagnostics"
+      }
+    }
+  ]
+}

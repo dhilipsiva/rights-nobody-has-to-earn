@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? permits(StatisticsCaseRequester, InspectOwnStatisticalEvidence, StatisticsCaseRecord).
+# => FALSE
+? obliged(StatisticsCaseOperator, ProvidePrivateStatisticsAccessCorrectionAndChallenge, StatisticsCaseRecord).
+# => FALSE
+? obliged(StatisticsCaseOperator, ProtectStatisticsParticipantsAndSupportersFromRetaliation, StatisticsCaseRecord).
+# => FALSE
+? complete(StatisticsCaseRecord, ReviewedStatisticalEvidenceAccess, StatisticsCaseDataset).
+# => FALSE

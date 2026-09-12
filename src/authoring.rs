@@ -18,6 +18,8 @@ mod obligations;
 mod spine;
 #[path = "authoring/state_form.rs"]
 mod state_form;
+#[path = "authoring/statistics.rs"]
+mod statistics;
 
 #[derive(Clone, Debug, Default, Deserialize, Serialize)]
 pub(crate) struct Edit {
@@ -208,9 +210,12 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         );
         return Ok(());
     }
-    if !matches!(family, "state-form" | "obligations" | "integrity") {
+    if !matches!(
+        family,
+        "state-form" | "obligations" | "integrity" | "statistics"
+    ) {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|statistics|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -220,6 +225,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         "state-form" => state_form::generate(context, &mut export)?,
         "obligations" => obligations::generate(context, &mut export)?,
         "integrity" => integrity::generate(context, &mut export)?,
+        "statistics" => statistics::generate(context, &mut export)?,
         _ => unreachable!(),
     }
     let count = export.cases.len();
@@ -376,6 +382,29 @@ mod tests {
         );
         let inventory = context.read("tests/pins/suites.json").unwrap();
         run(&context, "integrity").unwrap();
+        assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
+        assert_eq!(
+            context.read("new-book-plans/constitution.nibli").unwrap(),
+            after
+        );
+    }
+
+    #[test]
+    fn statistics_generation_is_isolated_and_repeatable() {
+        let (_directory, context, before) = isolated_authoring("statistics");
+        run(&context, "statistics").unwrap();
+        assert_fixture_statements_terminated(&context);
+        let after = context.read("new-book-plans/constitution.nibli").unwrap();
+        assert_outside_region_unchanged(
+            &before,
+            &after,
+            "# <OFFICIAL-STATISTICS-RULES-BEGIN>",
+            "# <OFFICIAL-STATISTICS-RULES-END>",
+        );
+        let inventory = context.read("tests/pins/suites.json").unwrap();
+        let value: serde_json::Value = serde_json::from_str(&inventory).unwrap();
+        assert_eq!(value["cases"][0]["allow_shell"], true);
+        run(&context, "statistics").unwrap();
         assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
         assert_eq!(
             context.read("new-book-plans/constitution.nibli").unwrap(),

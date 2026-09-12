@@ -23,6 +23,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ./generate.sh state-form    # explicit authoring, separate from verification
 ./generate.sh obligations
 ./generate.sh integrity
+./generate.sh statistics
 ./generate.sh spine
 ```
 

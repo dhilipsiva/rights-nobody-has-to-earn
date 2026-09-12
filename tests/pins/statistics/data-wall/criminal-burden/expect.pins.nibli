@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? complete(StatisticsCriminalRecord, RebuttableAggregateEqualityPresumption, StatisticsCriminalProceeding).
+# => FALSE
+? permits(StatisticsCriminalReader, InitiateIndependentSystemicEqualityAudit, StatisticsCriminalRecord).
+# => FALSE
+? obliged(StatisticsCriminalRespondent, DiscloseMeasureBasisAndAnswerEqualityJustification, StatisticsCriminalProceeding).
+# => FALSE
+? obliged(StatisticsCriminalReader, HearRebuttalAndCorrectAggregatePresumption, StatisticsCriminalProceeding).
+# => FALSE

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(StatisticsCaseTargetSource, StatisticsSourceAuthority, StatisticsCaseTarget).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseDataset, StatisticsDatasetScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseOperator, StatisticsOperatorScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, EqualityDiagnostics, StatisticsPurposeScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseVersion, StatisticsSourceVersionScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseMethod, StatisticsMethodVersionScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCasePeriod, StatisticsEvidencePeriodScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseJurisdiction, StatisticsJurisdictionScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseScope, StatisticsLegalScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseEnd, StatisticsSourceBoundEndScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, RebuttableAggregateEqualityPresumption, StatisticsRecordKindScope).
+observe(StatisticsCaseTargetSource, StatisticsCaseTarget, StatisticsCaseProceeding, StatisticsRemedialProceedingScope).

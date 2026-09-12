@@ -389,6 +389,12 @@ but never replaces, this rule.
   - Operate campaign finance, lobbying, procurement, appointments, conflicts,
     patronage/nepotism, corruption and information-manipulation controls; and
     independent census/sampling/planning data.
+    `new-book-plans/book-1-official-statistics-contract.md` now supplies the
+    statistical authority, data separation, bounded consumers, remedial burden,
+    correction, challenge and alternate-review limits. This Book 2 item owns
+    collection, sampling, linkage, privacy technology, calibration, thresholds,
+    authentication, publication/deletion, capacity and empirical evaluation;
+    a supplied certificate is not evidence that any of those operations ran.
   - Model staffing, costs, capacity, calendars/clocks, accessibility,
     authentication, publication, audit independence, privacy, correction,
     enforcement, recovery, and deployment. Produce evidence for direct and de facto
