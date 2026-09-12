@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(TA_Challenge_Subject).
+person(TA_Challenge_Victim).
+injure(TA_Challenge_Subject, TA_Challenge_Victim).
+judge(Court, TA_Challenge_Subject).
+cite(Court, TA_Challenge_Case, TA_Challenge_Subject).
+observe(Chronicle, TA_Challenge_Case, TA_Challenge_Subject, CaseScope).
+observe(TemporalReview, TA_Challenge_Case, TA_Challenge_Subject, CaseScope).
+observe(Chronicle, TA_Challenge_Case, Court, HolderScope).
+observe(TemporalReview, TA_Challenge_Case, Court, HolderScope).
+observe(Chronicle, TA_Challenge_Case, CourtJudgment, JudgmentScope).
+observe(TemporalReview, TA_Challenge_Case, CourtJudgment, JudgmentScope).
+observe(Chronicle, TA_Challenge_Case, TA_Challenge_Victim, InjuryVictimScope).
+observe(TemporalReview, TA_Challenge_Case, TA_Challenge_Victim, InjuryVictimScope).
+authorized(TA_Challenge_Case, ActiveCustody, TA_Challenge_Case).
+observe(Chronicle, TA_Challenge_Case, ActiveCustody, PowerScope).
+observe(TemporalReview, TA_Challenge_Case, ActiveCustody, PowerScope).
+observe(Chronicle, TA_Challenge_Case, TA_Challenge_Case, CaseBindingScope).
+observe(TemporalReview, TA_Challenge_Case, TA_Challenge_Case, CaseBindingScope).
+limit(TA_Challenge_Case, TA_Challenge_Case, Window_Custody).
+observe(Chronicle, TA_Challenge_Case, Window_Custody, LimitScope).
+observe(TemporalReview, TA_Challenge_Case, Window_Custody, LimitScope).
+continue(TA_Challenge_Case, Epoch_Current).
+observe(Chronicle, TA_Challenge_Case, Epoch_Current, RenewalScope).
+observe(TemporalReview, TA_Challenge_Case, Epoch_Current, RenewalScope).
+endorses(Electorate, TA_Challenge_Case).
+endorses(TemporalReview, TA_Challenge_Case).
+challenge(TA_Challenge_Subject, TA_Challenge_Case, TemporalReview).

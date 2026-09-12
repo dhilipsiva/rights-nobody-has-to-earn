@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-222 positive
+:expect-pins 2
+
+# FS-CCE-222 positive: Systemic work cannot delay individual relief.
+? obliged(OblPositive222IndividualReliefBearer, OblPositive222IndividualReliefDuty, OblPositive222IndividualReliefStandard).
+# => TRUE
+
+# FS-CCE-222 legal conclusion 2 remains source-bound.
+? prevents(PlacementAffected, SystemicWorkDelaysIndividualRelief).
+# => TRUE

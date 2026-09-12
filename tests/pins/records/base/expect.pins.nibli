@@ -1,0 +1,132 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 32
+# Generated red-team queries for snapshot base.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in base.
+? at(Cira, GeneralAdulthood).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? at(Hano, GeneralAdulthood).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? clean(Nia).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? clean(Vex).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? clear(Nia).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? decide(Adam, Ballot).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? decide(Bela, Ballot).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? decide(Cira, Ballot).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? decide(Hano, Ballot).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? dwell(Adam).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? entitled(Adam, event { dwell() }).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? entitled(Bela, event { eats() }).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? expresses(Adam).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? false(Bela).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? false(Vex).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? free(Adam).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? judge(Appeals, Nia).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? lose(Points, Bela).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? owe(State, Dwell, Adam).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? owe(State, Eats, Bela).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? permits(Appeals, Nia).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? permits(Review, Vex).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? person(Bela).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? person(Cira).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? person(Hano).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? person(Nia).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? prisoner(Adam).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? prisoner(Hano).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? prisoner(Nia).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? rotten(Vex).
+# => TRUE
+
+# Reviewed expected consequence in base.
+? travel(Adam).
+# => FALSE
+
+# Reviewed expected consequence in base.
+? travel(Cira).
+# => TRUE

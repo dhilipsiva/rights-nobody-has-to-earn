@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(Carry_Forge).
+choose(Electorate, Carry_Forge).
+work(Carry_Forge, RedTeam).

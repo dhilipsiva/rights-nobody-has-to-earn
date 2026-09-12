@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# OrderConflict finding route
+:expect-pins 2
+
+# The exact OrderConflict finding route reaches its typed reader duty.
+? obliged(Appeals, ReadOrderConflictFindingDuty, ReadOrderConflictFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no OrderConflict reader duty.
+? obliged(WrongOrderConflictReader, ReadOrderConflictFindingDuty, ReadOrderConflictFindingStandard).
+# => FALSE

@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+list(TA_T3_Order_Reverse, Epoch_Review, Epoch_Current, EventSequence).
+observe(Chronicle, TA_T3_Order_Reverse, Epoch_Review, EventStartScope).
+observe(TemporalReview, TA_T3_Order_Reverse, Epoch_Review, EventStartScope).
+observe(Chronicle, TA_T3_Order_Reverse, Epoch_Current, EventEndScope).
+observe(TemporalReview, TA_T3_Order_Reverse, Epoch_Current, EventEndScope).
+list(TA_T3_Log_Reverse, Epoch_Review, Epoch_Current, RecordSequence).
+observe(Chronicle, TA_T3_Log_Reverse, Epoch_Review, RecordStartScope).
+observe(TemporalReview, TA_T3_Log_Reverse, Epoch_Review, RecordStartScope).
+observe(Chronicle, TA_T3_Log_Reverse, Epoch_Current, RecordEndScope).
+observe(TemporalReview, TA_T3_Log_Reverse, Epoch_Current, RecordEndScope).

@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+# Fresh-process temporal case TA-32.
+
+# The supplied successor has complete witnessed endpoint manifests.
+? succeed(TA_Successor_Next, Transition).
+# => TRUE
+
+# The updated lineage passport selects the new terminal endpoint.
+? succeed(TA_Successor_Next, TerminalTransition).
+# => TRUE
+
+# The former endpoint is visibly non-terminal.
+? complete(Epoch_Current, HasSuccessor).
+# => TRUE
+
+# The prior endpoint cannot retain terminal legal effect in the fresh evaluation.
+? succeed(Epoch_Current, TerminalTransition).
+# => FALSE
+
+# No new carry lets the prior adverse status persist into the successor.
+? match(Vex, CarriedVoid).
+# => FALSE
+
+# The current model has no materialised successor-status premise from which to name a second-hop omission.
+? err(Vex, CarryOmission).
+# => FALSE
+
+# The old case renewal cannot survive the loss of its terminal-transition premise.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# Custody authority is suspended at the new canonical successor.
+? prisoner(Adam).
+# => FALSE
+
+# The existing liberty default applies without a new release gate.
+? travel(Adam).
+# => TRUE
+
+# A successor and authority lapse do not fabricate release.
+? free(Adam).
+# => FALSE
+
+# The stale raw lease remains visible on its lease identifier.
+? err(Case_Adam, TemporalRecord).
+# => TRUE
+
+# The person-facing attempted authority remains separately visible.
+? err(Adam, TemporalAuthority).
+# => TRUE

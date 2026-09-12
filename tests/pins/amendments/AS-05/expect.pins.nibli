@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Generated full-source amendment-semantics pins for AS-05.
+# Candidate source deltas are authored by the audit, never enacted by become.
+
+# Art_Syntax is not a registered target label.
+? false(Amend_Syntax).
+# => FALSE
+
+# The syntax-labelled proposal receives the passing label.
+? become(Amend_Syntax, Law).
+# => TRUE
+
+# The threaded-variable shape no longer derives Adam's food entitlement.
+? entitled(Adam, event { eats() }).
+# => FALSE
+
+# The same concealed replacement removes Bela's food entitlement.
+? entitled(Bela, event { eats() }).
+# => FALSE
+
+# The malformed floor does not fabricate a unary delivery actuality.
+? eats(Adam).
+# => FALSE
+
+# Cira remains unconfined before the refused-rule control.
+? prisoner(Cira).
+# => FALSE
+
+# The structural firewall still treats eats as protected despite the lost entitlement.
+:refuse reasoning /'prisoner' -> 'eats'/
+all $x: person($x) & ~eats($x) -> prisoner($x).
+
+# The refused rule leaves the prior conclusion unchanged.
+? prisoner(Cira).
+# => FALSE

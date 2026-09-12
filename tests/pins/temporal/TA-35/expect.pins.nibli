@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Fresh-process temporal case TA-35.
+
+# The two fully witnessed ends derive the typed window-definition conflict.
+? collide(Window_Custody, WindowDefinition).
+# => TRUE
+
+# The fixture isolates definition ambiguity rather than a reverse-path cycle.
+? collide(Window_Custody, WindowOrder).
+# => FALSE
+
+# A conflicted definition cannot retain reviewed-interval status.
+? time(Window_Custody, ReviewedInterval).
+# => FALSE
+
+# No lease can choose one convenient window definition.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# Window ambiguity suspends the restrictive result.
+? prisoner(Adam).
+# => FALSE
+
+# The inactive lease remains visible on its own identifier.
+? err(Case_Adam, TemporalRecord).
+# => TRUE

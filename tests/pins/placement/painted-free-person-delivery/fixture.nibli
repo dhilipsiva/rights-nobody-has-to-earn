@@ -1,0 +1,65 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+free(Free_NotSevere_NoFamily_NoHome).
+free(Free_NotSevere_NoFamily_Home).
+at(Free_NotSevere_NoFamily_Home, PlacementHome).
+free(Free_NotSevere_Family_NoHome).
+family(Free_NotSevere_Family_NoHome).
+free(Free_NotSevere_Family_Home).
+family(Free_NotSevere_Family_Home).
+at(Free_NotSevere_Family_Home, PlacementHome).
+free(Free_Severe_NoFamily_NoHome).
+attack(Free_Severe_NoFamily_NoHome, Victim_Free_Severe_NoFamily_NoHome).
+cruel(Free_Severe_NoFamily_NoHome, Victim_Free_Severe_NoFamily_NoHome).
+free(Free_Severe_NoFamily_Home).
+attack(Free_Severe_NoFamily_Home, Victim_Free_Severe_NoFamily_Home).
+cruel(Free_Severe_NoFamily_Home, Victim_Free_Severe_NoFamily_Home).
+at(Free_Severe_NoFamily_Home, PlacementHome).
+free(Free_Severe_Family_NoHome).
+attack(Free_Severe_Family_NoHome, Victim_Free_Severe_Family_NoHome).
+cruel(Free_Severe_Family_NoHome, Victim_Free_Severe_Family_NoHome).
+family(Free_Severe_Family_NoHome).
+free(Free_Severe_Family_Home).
+attack(Free_Severe_Family_Home, Victim_Free_Severe_Family_Home).
+cruel(Free_Severe_Family_Home, Victim_Free_Severe_Family_Home).
+family(Free_Severe_Family_Home).
+at(Free_Severe_Family_Home, PlacementHome).
+person(Registered_NotSevere_NoFamily_NoHome).
+person(Registered_NotSevere_NoFamily_Home).
+at(Registered_NotSevere_NoFamily_Home, PlacementHome).
+person(Registered_NotSevere_Family_NoHome).
+family(Registered_NotSevere_Family_NoHome).
+person(Registered_NotSevere_Family_Home).
+family(Registered_NotSevere_Family_Home).
+at(Registered_NotSevere_Family_Home, PlacementHome).
+person(Registered_Severe_NoFamily_NoHome).
+attack(Registered_Severe_NoFamily_NoHome, Victim_Registered_Severe_NoFamily_NoHome).
+cruel(Registered_Severe_NoFamily_NoHome, Victim_Registered_Severe_NoFamily_NoHome).
+person(Registered_Severe_NoFamily_Home).
+attack(Registered_Severe_NoFamily_Home, Victim_Registered_Severe_NoFamily_Home).
+cruel(Registered_Severe_NoFamily_Home, Victim_Registered_Severe_NoFamily_Home).
+at(Registered_Severe_NoFamily_Home, PlacementHome).
+person(Registered_Severe_Family_NoHome).
+attack(Registered_Severe_Family_NoHome, Victim_Registered_Severe_Family_NoHome).
+cruel(Registered_Severe_Family_NoHome, Victim_Registered_Severe_Family_NoHome).
+family(Registered_Severe_Family_NoHome).
+person(Registered_Severe_Family_Home).
+attack(Registered_Severe_Family_Home, Victim_Registered_Severe_Family_Home).
+cruel(Registered_Severe_Family_Home, Victim_Registered_Severe_Family_Home).
+family(Registered_Severe_Family_Home).
+at(Registered_Severe_Family_Home, PlacementHome).
+put(State, Free_NotSevere_NoFamily_NoHome, LowSec).
+put(State, Free_NotSevere_NoFamily_Home, LowSec).
+put(State, Free_NotSevere_Family_NoHome, LowSec).
+put(State, Free_NotSevere_Family_Home, LowSec).
+put(State, Free_Severe_NoFamily_NoHome, LowSec).
+put(State, Free_Severe_NoFamily_Home, LowSec).
+put(State, Free_Severe_Family_NoHome, LowSec).
+put(State, Free_Severe_Family_Home, LowSec).
+put(State, Registered_NotSevere_NoFamily_NoHome, LowSec).
+put(State, Registered_NotSevere_NoFamily_Home, LowSec).
+put(State, Registered_NotSevere_Family_NoHome, LowSec).
+put(State, Registered_NotSevere_Family_Home, LowSec).
+put(State, Registered_Severe_NoFamily_NoHome, LowSec).
+put(State, Registered_Severe_NoFamily_Home, LowSec).
+put(State, Registered_Severe_Family_NoHome, LowSec).
+put(State, Registered_Severe_Family_Home, LowSec).

@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# TemporalAuthority finding route
+:expect-pins 2
+
+# The exact TemporalAuthority finding route reaches its typed reader duty.
+? obliged(Appeals, ReadTemporalAuthorityFindingDuty, ReadTemporalAuthorityFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no TemporalAuthority reader duty.
+? obliged(WrongTemporalAuthorityReader, ReadTemporalAuthorityFindingDuty, ReadTemporalAuthorityFindingStandard).
+# => FALSE

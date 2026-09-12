@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# origin omission SourceVersionScope
+:expect-pins 1
+
+# Omitting SourceVersionScope withholds the duty origin.
+? obliged(OblOmit09Bearer, OblOmit09Duty, OblOmit09Standard).
+# => FALSE

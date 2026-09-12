@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fresh-process temporal case TA-03.
+
+# The missing successor member is a named defect.
+? err(TA_Omitted, CarryOmission).
+# => TRUE
+
+# Raw carry alone has no legal effect.
+? match(TA_Omitted, CarriedVoid).
+# => FALSE
+
+# The omission does not manufacture the adverse conclusion.
+? false(TA_Omitted).
+# => FALSE
+
+# The claimant's challenge reaches the Appeals duty.
+? obliged(Appeals, TA_Omitted).
+# => TRUE

@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# origin omission DutyNonWaiverScope
+:expect-pins 1
+
+# Omitting DutyNonWaiverScope withholds the duty origin.
+? obliged(OblOmit24Bearer, OblOmit24Duty, OblOmit24Standard).
+# => FALSE

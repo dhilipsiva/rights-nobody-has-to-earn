@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 13
+# Generated placement-exhaustiveness matrix pins.
+# These ephemeral pins are outside chapter pin-count reconciliation.
+
+# confined-severe-family-home
+# Every generated subject has standing.
+? person(Confined_Severe_Family_Home).
+# => TRUE
+
+# Confinement is the switch separating placement from the free mirror.
+? prisoner(Confined_Severe_Family_Home).
+# => TRUE
+
+# Only confined rows receive the exact current case-bound custody lease.
+? correct(Placement_Case_Confined_Severe_Family_Home, ActivePower).
+# => TRUE
+
+# Affirmative freedom is distinguished from both confinement and personhood alone.
+? free(Confined_Severe_Family_Home).
+# => FALSE
+
+# The generated severity setup reaches the declared axis state.
+? severe(Confined_Severe_Family_Home).
+# => TRUE
+
+# The family axis matches the generated fixture record.
+? family(Confined_Severe_Family_Home).
+# => TRUE
+
+# The placement-home availability axis matches the generated fixture record.
+? at(Confined_Severe_Family_Home, PlacementHome).
+# => TRUE
+
+# The itemised shelter debt survives in confined and free rows.
+? owe(State, Dwell, Confined_Severe_Family_Home).
+# => TRUE
+
+# Home-confinement eligibility matches the reviewed row.
+? fit(Confined_Severe_Family_Home, Homestay).
+# => FALSE
+
+# Housing actuality matches the reviewed row.
+? dwell(Confined_Severe_Family_Home).
+# => TRUE
+
+# Every discovered destination is queried, including every opposite outcome.
+? building(HighSec, Confined_Severe_Family_Home).
+# => TRUE
+
+# Every discovered destination is queried, including every opposite outcome.
+? building(Homestay, Confined_Severe_Family_Home).
+# => FALSE
+
+# The current placement alarm remains silent in the accepted matrix.
+? err(Confined_Severe_Family_Home, Placement).
+# => FALSE

@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-17.
+
+# Withholding one exact correct-version witness removes the shared source status.
+? reference(Binding_Temporal, SourceBound).
+# => FALSE
+
+# Dual observations of the wrong version cannot satisfy the literal effective-source rule.
+? reference(TA_Wrong_Source_Binding, SourceBound).
+# => FALSE
+
+# The wrong family-source constant cannot satisfy the effective-version rule.
+? correct(TA_Wrong_Source_Case, ActivePower).
+# => FALSE
+
+# A source-label mismatch cannot activate custody.
+? prisoner(TA_Wrong_Source_Subject).
+# => FALSE
+
+# The inactive reviewed power is visible as a temporal-authority defect.
+? err(TA_Wrong_Source_Subject, TemporalAuthority).
+# => TRUE

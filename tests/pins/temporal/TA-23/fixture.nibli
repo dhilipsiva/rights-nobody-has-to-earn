@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(TA_Emergency_Subject).
+person(TA_Emergency_Victim).
+injure(TA_Emergency_Subject, TA_Emergency_Victim).
+judge(Court, TA_Emergency_Subject).
+public(TA_Emergency_Office).
+authorized(TA_Emergency_One, CourtPower, TA_Emergency_Case).
+authorized(TA_Emergency_Two, CourtPower, TA_Emergency_Case).

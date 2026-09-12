@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# origin omission RemedyScope
+:expect-pins 1
+
+# Omitting RemedyScope withholds the duty origin.
+? obliged(OblOmit17Bearer, OblOmit17Duty, OblOmit17Standard).
+# => FALSE

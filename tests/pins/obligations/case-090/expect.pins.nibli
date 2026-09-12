@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-210 omission DutyPriorityBoundaryScope
+:expect-pins 1
+
+# FS-CCE-210 omitting DutyPriorityBoundaryScope withholds the effect.
+? obliged(OblSpecialOmit210Bearer, OblSpecialOmit210PreferredDuty, OblSpecialOmit210PreferredStandard).
+# => FALSE

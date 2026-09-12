@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-16.
+
+# A single fully witnessed renewal naming two case bases derives the typed lease collision.
+? collide(TA_Reused_Case, LeaseBinding).
+# => TRUE
+
+# The collided renewal cannot select the convenient case.
+? correct(TA_Reused_Case, ActivePower).
+# => FALSE
+
+# A generic or differently bound renewal cannot confine the second subject.
+? prisoner(TA_Reused_Subject).
+# => FALSE
+
+# The inactive lease is reported on the lease identifier.
+? err(TA_Reused_Case, TemporalRecord).
+# => TRUE
+
+# The person-facing attempted authority is separately reported on the subject.
+? err(TA_Reused_Subject, TemporalAuthority).
+# => TRUE

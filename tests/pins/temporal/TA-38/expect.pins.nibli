@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+# Fresh-process temporal case TA-38.
+
+# The active lease must rejoin the exact injury-victim witness.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# The compact case record does not currently certify the victim field.
+? match(Adam, CaseRecorded).
+# => TRUE
+
+# The substantive conviction record requires both InjuryVictimScope witnesses.
+? match(Adam, ConvictionRecorded).
+# => FALSE
+
+# The custody gate fails closed without the exact victim witness.
+? prisoner(Adam).
+# => FALSE
+
+# The missing victim evidence cannot become a withholding gate on liberty.
+? travel(Adam).
+# => TRUE
+
+# The raw inactive lease derives a lease-scoped record error.
+? err(Case_Adam, TemporalRecord).
+# => TRUE
+
+# The incomplete conviction basis separately derives a person-facing authority error.
+? err(Adam, TemporalAuthority).
+# => TRUE

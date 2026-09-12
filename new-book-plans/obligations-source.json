@@ -1,0 +1,18 @@
+{
+  "spdx": "CC0-1.0",
+  "protected_claim_refs": [
+    "FS-CLM-01",
+    "FS-CLM-02",
+    "FS-CLM-04",
+    "FS-CLM-05",
+    "FS-CLM-07",
+    "FS-CLM-08",
+    "FS-CLM-12",
+    "FS-CLM-14",
+    "FS-CLM-25",
+    "FS-CLM-35",
+    "FS-CLM-38",
+    "FS-CLM-39",
+    "FS-CLM-40"
+  ]
+}

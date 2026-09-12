@@ -10,135 +10,64 @@ authoritative where this summary and that record ever diverge.
 
 ## What This Repository Is
 
-A formally audited constitutional-specification project with two books derived
-from and constrained by that work. The principal product is the exact,
-versioned specification: `new-book-plans/constitution.nibli`, the reviewed
-decisions and canonical contracts that give it scope and meaning, its executable
-pins and counterfactuals, its generated projections, and the receipt-bound audit
-and closure that identify one verified candidate. No generated report, book
-passage, or green partial check is the specification by itself.
+A constitutional design expressed in Nibli, with Book 1 as its reader-facing
+projection. The formal source is `new-book-plans/constitution.nibli`; its
+substantive behavior is tested by Nibli pins and counterfactuals. Except for
+the labelled opening note, Part V's argument and evidence, and the optional
+method part, Book 1's claims derive from that constitution. The reader chapters
+remain jargon-free. Generated reports and prose do not override the formal source.
 
-The two books have different downstream roles, and the original two manuscripts
-remain slated for deletion:
+Book 2 owns operation and transition within a declared reference envelope:
+staffing, costs, resources, technology, workflows, capacity, and empirical
+feasibility. Its tracker is collection-only until Book 1 ships at Gate C.
+Preserve `book.md` and `manifesto.md` until their legacy harvest is complete.
 
-- **book-1** — the active reader-facing derivation of the constitutional
-  destination. It does not override or complete the formal specification. Two
-  parts define its scope, and the seam is deliberate:
-  - **Parts I–V — the constitutional and social destination.** They describe what an ideal society must guarantee, permit, organise, and constrain, including normal, failure, and recovery interfaces — **never transition or costed operation.** No roadmap, no MVS, no scaling story. The spine is *derived*: chapter order is computed from the dependency stratification of the formal constitution in `new-book-plans/constitution.nibli`, and content is **gated on that constitution** — if the KR does not derive it, it does not go in. **Jargon-free**: a general reader can finish Part V and stop, and the formalism is never mentioned here. Exactly three elements are exempt from the derivation gate and each is labelled in the text: a short non-derived **opening note**, **Part V** (argument and evidence), and the final method part. What they verify is the **data**.
-  - **Final part — the method, explicitly optional.** Shows the machinery to whoever wants it: the constitution, the derived spine, the compile-time firewall, the evidence/conclusion split, and what the logic *refused*. Clearly labelled as a different kind of reading. This is the only place in book-1 where the formalism appears, and its existence is what answers the "you built a machine and hid it" objection.
-- **book-2** — **how the destination would be operated and reached within a
-  declared, versioned reference envelope, including its local starting-state
-  conditions.** It is agnostic to any one existing local society: it may model
-  different destination-compatible transition paths, but it may not silently
-  change the audited destination. It owns
-  staffing, costs, capacity, resources, technology, workflows, transition,
-  deployment, empirical feasibility, and operation under ordinary and declared
-  shock conditions. Where book-1's claims are gated on derivation, book-2's
-  require claim-appropriate evidence, costs, and uncertainty. Its unordered seed
-  tracker is `book-2/TODO.md`; collect there, but do not execute Book 2 work until
-  Book 1 — First Edition actually ships at Gate C. book-1 references it exactly
-  once, at the very end.
-- **`book.md` and `manifesto.md`** — legacy. To be deleted once both new books exist, but **not before** the legacy-harvest section of `TODO.md` is complete: `book.md`'s 55 sourced references, the nine historical cases, the Bharati poem, and the five bright lines all need porting first.
+## Verification and authoring — author decision, 2026-09-12
 
-So this is not a book project with an unusually large test suite. It is an
-audited specification project whose books are controlled projections. See
-`TODO.md`.
+The author clarified that verification means **Nibli pins and contradiction
+checking**, with prose consistency reviewed separately. This decision replaces
+the receipt-bound verification and commit protocols, including all mandatory
+audit/closure successors, fingerprint chains, staged-candidate manifests,
+four-hour authoring-slice records, and generated-report freshness gates.
 
-**Terminology supersession — 2026-08-30.** In retained historical rulings and
-handoffs, “Book 1 owns” or “Book 1 defines” a constitutional surface means that
-the formally audited specification owns or defines it and Book 1 renders it.
-Such wording never makes prose a normative source. Book-only ownership is
-limited to reader composition and the three labelled non-derived elements.
+`./verify.sh` builds the native runner incrementally and executes all
+substantive tests. `--list` shows the inventory; `--only <pin-file>` is focused
+feedback and is labelled partial. The former quick/full distinction, receipts,
+commit gates, and fingerprint modes are retired. No old gate must approve its
+own removal, and no small change requires administrative audit commits.
 
-## Author-Ratified Formal-Specification Workflow — 2026-08-30
+Keep chapter/floor/domain pins, generated record/temporal/amendment/placement
+cases, state-form and obligations cases, and substantive counterfactuals.
+Preserve exact expected verdicts and stateful assertion order. Isolate unrelated
+scenarios; never make the test faster by testing a reduced constitution or
+discarding expectations. Counterfactuals apply explicit edits to the current
+source instead of maintaining whole constitution copies.
 
-The landable unit is one **coherent assurance batch**, not one paragraph, one
-chapter, or an unrelated bundle assembled to amortise verification. A batch
-contains one constitutional rule family or other single assurance concern and
-all of the dependencies needed to make it honest: reviewed contract changes,
-formal source, pins, counterfactuals, generated projections, narrowness impacts,
-derived Book 1 prose, and any Book 2 handoff affected by that family.
+The runner reports contradiction findings and incomplete checks separately.
+A clean result describes the loaded formal model and represented constraints,
+not a universal proof about prose or real-world feasibility. Ordinary
+constitutional `false` and `contradict` predicates are not scanner findings.
+Prose changes receive a separate consistency review.
 
-Before shared-tree editing, decompose the batch in `tmp.txt` into authoring and
-review slices targeting no more than four hours of active work each. Every slice
-names its formal surface, affected positive and negative checks, source-derived
-artifacts, reader projection, and handoff. Slices move through **Planned**,
-**Drafting**, and **Drafted — not audited**. Those are workflow states only;
-they are orthogonal to the assurance postures Derived, Checked, Evidenced,
-Specified, Reasoned, and Unestablished. A drafted slice is not landed, verified,
-closed, or eligible for a public claim.
+`RIGHTS_VERIFY_JOBS=1..4` controls the fixed worker pool. Reuse compiled bases
+and immutable rule plans within each process; do not persist verdicts, hash
+input trees, or skip tests based on earlier results. The target is a complete
+run under five minutes with the release binary already built. Report actual
+measurements and any remaining bottleneck honestly.
 
-Before candidate freeze, move every durable decision out of `tmp.txt` into its
-governed source and remove the scratch file. Receipt emission requires it to be
-absent unless the repository deliberately begins tracking it; an untracked
-scratch file blocks the candidate.
+Useful authoring generators remain behind `./generate.sh state-form`,
+`./generate.sh obligations`, and `./generate.sh spine`. They write semantic
+rules and tests explicitly; normal verification reads the resulting Nibli.
+Pending JSON authoring edits are not enacted automatically by verification.
 
-Several slices may form one batch only while they remain uncommitted. Use
-`--quick`, `--only`, fingerprints, and the affected native refresh/check paths
-while bytes are still changing. These checks provide fast feedback and never
-authorise a semantic commit. Regenerate the counterfactual copies after every
-constitution edit, comments included, but defer the authoritative full run
-until the coherent batch is complete.
+Make coherent edits and ordinary commits after relevant checks. Tracker items
+can close when the work is complete; there is no receipt, audit, or closure
+successor prerequisite. Preserve unrelated work already in the tree.
 
-Then freeze the candidate: finish every affected projection and source digest,
-review the complete diff and narrowness impact, stage the exact tree with no
-other change, and run one `--emit-receipt` full verification. Do not run quick
-immediately before that unchanged full candidate. A failure returns the batch to
-Drafting and requires a new receipt after repair. A pass permits exactly one
-candidate commit followed immediately by the mandatory classified audit and
-closure successors. When that closure completes a tracked item, one optional
-immediate tracker successor may delete it. No semantic WIP commit may share a
-later receipt, no receipt may be reused across changed bytes, and no tracker item
-is deleted before audited closure.
-
-Verification latency remains an engineering target, not a reason to weaken the
-gate. Deterministic bounded parallelism, compilation reuse, phase timing, and
-immutable parse/source caches are welcome when watched controls prove identical
-results and fail-closed behaviour. Skipping suites, retaining semantic or mutant
-verdicts, accepting nondeterministic output, or treating a partial check as a
-receipt is not. Progress and ETA reports separate active drafting/review time,
-authoritative gate time, and administrative audit/closure time.
-
-`RIGHTS_VERIFY_JOBS` is the sole heavyweight execution-lane capacity and
-accepts the equivalence-tested values 1 through 4. After serial structural
-checks pass on the frozen candidate, reader-evidence execution runs in its first
-canonical position. The native verifier then derives and validates a typed
-dependency graph containing only the byte-captured live-pin, obligations, and
-state-form execution plans. Their complete repository input bytes, including
-the live-pin shell-precondition tree, are owned before launch. Red-team,
-temporal, amendment, placement, and ordinary-counterfactual execution remain serial after
-the graph in their canonical positions. The graph schedules only a contiguous
-canonical prefix, buffers results for the unchanged presentation order, stops
-launching on the first observed failure, selects the lowest canonical active
-failure, cooperatively cancels higher active work, and joins or reaps everything
-it started. This capacity is not a total OS-thread limit: every active family
-has one joinable wrapper, and a nested family uses that wrapper to coordinate
-its assigned lane workers rather than adding another heavyweight lane. Active
-family wrappers, active heavyweight lane workers, memory-owning worker states,
-and managed child processes have separately watched bounds. One lane is the
-current per-file fail-fast semantic and failure-selection reference; passing
-canonical stdout and the selected failure are invariant across supported
-capacities, but the detailed live-pin failure text is not promised to reproduce
-the former all-files aggregate runner. At lane capacities 3 and 4, live pins
-receive all but one weighted lane while captured obligations and state-form
-work advance in the remaining lane. The legacy per-family worker variables are
-rejected. Receipt environment metadata binds the effective total and live-pin
-allocations plus the scheduler contract, full-suite execution start and
-finish, and
-the digest of local expanded evidence containing elapsed time; per-family and
-per-job timings remain unbound local diagnostics.
-
-New verifier coverage requires a named material defect or evidence gap and a
-watched failing control before it joins the authoritative gate. New performance
-machinery requires a measured bottleneck and equivalence controls. Assurance
-accretion and optimisation by intuition are both refused.
-
-**No supported faster runner will be declared — author decision, 2026-09-05.**
-The WSL and native-Windows verification measurement was withdrawn rather than
-done. Linux/WSL remains the only receipt environment; a receipt binds its
-sanitized environment digest, so a run from another shell, platform, or login
-profile cannot gate a commit and must re-emit. Do not re-propose a platform
-comparison as throughput work.
+The rulings below retain constitutional design history and substantive
+decisions. Descriptions of historical audit scripts, hashes, receipts, generated
+assurance reports, and their former gates are historical only and do not
+reinstate the retired tooling or workflow.
 
 ## Author-Ratified Rulings
 
@@ -2152,152 +2081,30 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   lands; update it if partly done. Book 2 remains inactive until Book 1 — First
   Edition actually ships at Gate C.
 
-- `new-book-plans/` — the principal specification area: the executable
-  constitution `constitution.nibli`, reviewed decisions and canonical contracts,
-  pins, counterfactuals, generated projections, receipts, and closure evidence.
-  `3-spine.md`'s stratification table and chapter order are **generated** — don't
-  edit the block by hand and don't transcribe its counts elsewhere; it went stale
-  twice that way. The generated assertion-surface, record-integrity assurance,
-  flat-snapshot red-team, amendment-semantics, placement-exhaustiveness, and
-  staged temporal-assurance reports are governed by reviewed sources; edit those
-  sources and use the native verifier's generation path, never hand-edit a report.
-  The amendment audit applies exact bounded source mutations but does not enact
-  them or establish source-transition assurance. The placement audit applies
-  exact bounded source mutations but adds no runtime placement rule or delivery
-  evidence. Refresh reviewed digests in source order: assertion ledger (7),
-  assurance (8), red-team (9), amendment and placement (10/11), then temporal
-  (12). Generate reports 9 and 12 before rendering report 8 because its reviewed
-  references name both outputs; then generate/check reports 8, 10, and 11. The
-  full-society ledger (13) sits off that chain — it digest-binds only the
-  assurance-portfolio and full-society-boundary decisions and re-reads the
-  sibling reviewed JSONs during native verification — so refresh it when either
-  bound decision changes, and expect its enum-mapping closure to fail when a
-  sibling adds a reviewed enum value with no mapping row. Propagate every
-  upstream digest before regenerating downstream artifacts. During an unfinished
-  batch, check affected generated artifacts through `./verify.sh --quick` and use
-  focused modes for fast feedback. The frozen fully staged batch receives one
-  complete semantic `--emit-receipt` run; partial modes never gate its commit.
-  Script 19's native port checker-owns the exact state-form source block and runs
-  structurally in both quick and full verification; its dedicated pin suite and
-  watched source-review mutation execute only in the full path. Its reviewed
-  source is `state-form-source.json`, and everything else in the family is
-  generated from it — the constitution's `STATE-FORM-RULES` block, the main pin
-  suite, and both counterfactual files. Edit the JSON, never those four, and run
-  `./verify.sh --refresh state-form`, which since 2026-09-08 installs the
-  constitution block as well as the other three; then update the digests and
-  counts the module pins. Branch `fields` are result-side only — the record and
-  temporal record carry record identity, not finding content — so the economic
-  families' record-mirroring idiom does not transfer here; three mutually
-  distinct authorised attesters on the result are this family's wall. The
-  examined-kind vocabularies — appointment anti-capture on its anchored
-  branches, office integrity on every branch — live in one
-  `EXAMINED_KIND_FAMILIES` table in the module; a new family joins the table,
-  its `PUBLIC_SCALE_VOCABULARIES` mirror in `src/checks/repository.rs`, and
-  that guard's widening-control list together. Verify
-  constitution claims with release `nibli-pin` at or after
-  `4cb02aade43b394374c40e661907ad66df3af3fe` using `--kb`, never `nibli-host` —
-  its wasm predates the `derived_only` and `entitled` corpus entries and silently
-  drops the entire rights floor and every conclusion-only gate while still
-  answering queries. Two historical utilities are deliberately outside the
-  native verify chain: `4-strata.py` is **retained wrong on purpose** as the
-  method part's tooling-blindness exhibit — nothing consumes it, its parser
-  disagrees with the engine by design, and it must not be repaired; every real
-  figure comes from the embedded Nibli engine. `18-coverage-contract-migration.py`
-  is a reviewed-source migration helper that rewrites one exact source-family
-  prefix of `full-society-ledger.json` to the current ledger schema; it is not an
-  assurance route, and the native ledger checker must validate everything it emits.
-
-- `new-book-plans/reader-evidence.json` and `reader-evidence.md` — the reviewed
-  source and generated report for the native dormant reader-evidence contract.
-  The numbered Python file is retained only as a historical parity reference.
-  The JSON owns exact
-  reader-study states and eventual rule values; prose references its stable
-  records and never duplicates threshold values.
-
-- `new-book-plans/reader-evidence-pilot/` — inputs for the native deterministic
-  HTML/EPUB snapshot builder. The numbered Python file is retained only as a
-  historical parity reference. These are the
-  public-minimum pilot templates. They create no private runnable instrument,
-  freeze, pilot evidence, threshold value, PDF accessibility attestation, or R6
-  availability.
-
-- `verify.sh` — **the one check.** It incrementally builds and then replaces
-  itself with the single native `rights-verify` binary. That binary embeds the
-  Nibli engine crates from the adjacent source checkout, validates every
-  generated contract including the state-form source block, and executes the
-  chapter/floor and state-form pins, record, temporal, amendment, placement,
-  reader, and counterfactual suites without launching Python verifier
-  subprocesses. New receipts bind the Nibli source revision and exact native
-  verifier bytes.
-  `./verify.sh --quick` checks the structural path but skips executable suites;
-  `--only` runs one pin suite and `--table` prints the claim table. Those modes
-  are the intended feedback loop while an assurance batch is still changing.
-  They remain partial and are not semantic commit gates.
-  **Superseding commit rule, protocol v6 (2026-08-27):** stage every semantic,
-  executable, verifier, fixture, engine-binding, or generated-artifact change
-  and run one `./verify.sh --emit-receipt new-book-plans/verification-receipts`.
-  Only the exact following audit, closure, and tracker successors may use
-  `./verify.sh --commit-gate <receipt> --transition audit|closure|tracker`.
-  Reuse requires a byte-identical heavyweight dependency manifest plus the
-  transition-specific structural validator. Missing local evidence or any
-  unexpected path, mode, input, engine, environment, merge, or intervening
-  commit fails closed without a silent full run. Ordinary `./verify.sh` retains
-  its full validation semantics for iteration, but emits no reusable receipt and
-  cannot gate a semantic commit under protocol v6. The sole exception is the
-  exact source-bound `FS-SAU-42` forward recovery in section 5 of the
-  scope-review protocol. It validates the two named historical v5 receipt/audit
-  epochs and closed anchor from committed bytes, requires their digest-bound
-  local evidence, performs no ancestor search, and is consumed by its successful
-  closure. The freeze-and-receipt policy those commands implement is stated once
-  under *Author-Ratified Formal-Specification Workflow* above; do not restate it
-  here.
-  Heavyweight verifier entry points share one Git-common-directory kernel lock.
-  Contention exits 75 with sanitised owner details unless
-  `--wait-for-lock SECONDS` supplies an explicit bounded wait. Quick, full,
-  receipt, and gate runs
-  also report measured phase timing, progress, ETA, a heartbeat for the active
-  phase, and queued-lock state on stderr only, and write one canonical
-  diagnostics JSON per mode under the Git common directory's
-  `rights-verification/diagnostics/`. Those diagnostic values are one machine's
-  wall-clock measurements: never assurance evidence, never receipt-bound, and
-  never a verdict input. The stdout transcript a receipt binds is byte-identical
-  with and without the instrumentation, which the run-diagnostics self-test holds
-  as watched controls in both quick and full paths.
-  Native ledger and closure checks preserve the immutable-input and final-reread
-  contract. `./verify.sh --refresh full-society-ledger` and
-  `./verify.sh --refresh constitutional-closure` atomically regenerate their
-  complete output sets in the same Rust process. Full execution overlaps only the preflight-captured live-pin,
-  obligations, and state-form plans under the single `RIGHTS_VERIFY_JOBS`
-  execution-lane capacity, whose complete contract is in the workflow section
-  above; other executable families remain serial in canonical order. State-form
-  retains the reviewed 64-main and 17-counterfactual byte-balanced shards; its
-  full-graph plan receives one lane while focused state-form execution may use
-  the configured capacity.
-  The suite exits non-zero on the first failure and names the claim that stopped
-  being true; do not copy runtimes or suite counts here because governed sources
-  move. Its quick path runs the reader-evidence structural check; the full path
-  also runs only the evaluator controls supportable at the recorded stage. Quick
-  and full modes both self-test the fixed admission-gate component. The
-  structural and evaluator controls are not that gate or R6's seeded
-  misconception control; the gate self-test proves its interface only. None makes
-  R6 built or available. Quick and full modes also run script 15's static
-  HTML/EPUB check; that check neither renders PDF nor supplies human
-  accessibility evidence.
-
-- `new-book-plans/counterfactual/` — copies of the constitution, each differing in exactly one deliberate way, in three classes checked by diff shape: a line **deleted** (what the world loses), a line **changed** (including `no-dead-conjuncts`, the delivery-independence guard, and `no-state-form-independent-current-review`, whose 1:1 mutation removes only the source-writer/temporal-reviewer disequality), and a line **added** (`unguarded-pen` — the credential route somebody might someday write, whose pins show those kept conjuncts are all that stands between it and a matched carried-void signature counting). The state-form fixture's paired pins show every fused card gaining authority while properly separated controls remain. These fixtures exist because derivation is monotone and probe facts load *on top*, so no probe can test a restriction; these are the only way an "if we removed X" claim is executed rather than argued. **Regenerate after every constitution edit, comments included** — a fixture is a byte copy, so even a comment-only edit breaks the shape check. See the README beside them.
-
-- `book-2/TODO.md` — book-2's deliberately unordered tracker, inactive until
-  Book 1 — First Edition ships at Gate C. Its collection-only full-society
-  contract generates an operational view from the canonical source, binds models
-  to a reference envelope and acceptance thresholds, covers every declared
-  operational domain, and blocks integrated claims on unresolved critical gaps.
-  Gate D permits only immutable Book 2 previews or release candidates; Gate E
-  publishes Book 2 — First Edition and the integrated release. The Book 1 Phase 2
-  channel protocol governs future engine asks.
-
-- `registry/` — the CC0 claim registry: `claims.json`, its staleness gate `check.py` (run inside `verify.sh` whenever `claims.json` exists), pinned data snapshots under `data/`, and their fetchers under `fetch/`.
-- `AGENTS.md` — the condensed repository-guidelines mirror read by non-Claude agents; it declares this file authoritative. It duplicates the command list and the digest-refresh order, so when a command, refresh order, or convention changes here, update it in the same change — it goes stale the way any hand-maintained copy does.
-- `LICENSING.md` — the mixed-licence map. Read before adding files.
+- `new-book-plans/` — constitution, substantive design decisions, legal
+  contracts, formal pins, and historical planning material. The decisions and
+  contracts retain their subject-matter meaning; old verifier/audit procedures
+  are retired under the 2026-09-12 author decision.
+- `tests/pins/suites.json` — explicit execution inventory, shared bases,
+  fixtures, and semantic counterfactual edits. Tests previously generated inside
+  audit checkers now live under `tests/pins/`. Keep them substantive and readable.
+- `verify.sh` — incrementally builds the native runner, then checks all pins and
+  contradictions. `--only <pin-file>` is partial; `--list` shows inventory.
+  There is no quick/full split, hash gate, receipt, commit gate, source revision
+  binding, or automatic report generation. Do not reintroduce these workflows.
+- `generate.sh` — explicit authoring for `state-form`, `obligations`, and
+  `spine`. Edit `state-form-source.json` or `obligations-source.json`, then
+  generate the relevant family when ready. State-form installs its constitution
+  block and tests. Branch fields and substantive independence requirements retain
+  their legal meaning. Unfinished source edits need not be enacted by verification.
+- `new-book-plans/counterfactual/` — pin expectations for semantic variants.
+  The execution inventory applies deliberate statement changes to the live
+  constitution in memory, not byte-copy freshness checks. No regeneration is
+  required for comments or unrelated source edits.
+- `new-book-plans/4-strata.py` — intentionally wrong historical method exhibit;
+  do not repair it.
+- `registry/` — CC0 claims, source snapshots, and fetchers. Source quality and
+  prose/statistical review remain editorial responsibilities, outside verification.
 
 ## book.md Structure
 
@@ -2944,15 +2751,10 @@ This repo was renamed from `dhilipsiva/utopia-reimagined` on 2026-07-30 (v0.7). 
 
 ## Commits
 
-- One coherent assurance batch per candidate content commit. A formal rule family
-  may change several derived chapters and governed artifacts together; keep those
-  required projections in the same candidate, but never add an unrelated domain
-  merely to amortise the full run. Intermediate semantic WIP commits are forbidden
-  because they cannot share the later receipt.
-- The body explains **why** — the contradiction, gap, or review finding the change resolves — wrapped at ~72 characters. Not a list of what changed.
-- A candidate content commit is followed by its exact audit and closure
-  successors. Only then may the separate tracker successor delete the completed
-  item: `Tracker: <what landed> (<sha of the content commit>)`.
+- Make coherent, reviewable commits with affected rules, tests, and prose.
+- Explain why the change is needed in the body, wrapped at about 72 columns.
+- Run focused checks during authoring and the complete verifier for completion.
+- No receipt, audit/closure successor, or separate tracker commit is required.
 
 ## 2026-08-15 no-external-reviewer dependency ruling
 

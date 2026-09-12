@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fresh-process temporal case TA-24.
+
+# The successor office is independently exposable when recorded public.
+? authority(TA_Court_Successor).
+# => TRUE
+
+# Succession does not erase the original office's historical answerability.
+? authority(Court).
+# => TRUE
+
+# The existing active case-renewal cannot be inherited through a different subject without the exact Court citation and injury record.
+? prisoner(TA_Succession_Subject).
+# => FALSE
+
+# Office change cannot erase or condition standing.
+? person(TA_Succession_Subject).
+# => TRUE

@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Generated observations for mutation missing-required-destination.
+# The source change is constructed by this audit and is never enacted.
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? building(Homestay, Confined_NotSevere_NoFamily_Home).
+# => FALSE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? building(Homestay, Confined_NotSevere_Family_Home).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Confined_NotSevere_NoFamily_Home, Homestay).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Confined_NotSevere_NoFamily_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Confined_NotSevere_Family_Home, Homestay).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Confined_NotSevere_Family_Home, Placement).
+# => FALSE

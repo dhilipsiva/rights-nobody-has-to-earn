@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+
+# The candidate changes the baseline TRUE consequence.
+? building(Homestay, Confined_NotSevere_NoFamily_Home).
+# => FALSE
+
+# The candidate changes the baseline TRUE consequence.
+? building(Homestay, Confined_NotSevere_Family_Home).
+# => FALSE

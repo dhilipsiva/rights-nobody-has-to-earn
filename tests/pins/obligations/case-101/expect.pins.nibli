@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-212 omission NonreciprocityScope
+:expect-pins 1
+
+# FS-CCE-212 omitting NonreciprocityScope withholds the watched effect.
+? prevents(OblWatchedOmit212Target, ObligationFailureEntitlementGate).
+# => FALSE

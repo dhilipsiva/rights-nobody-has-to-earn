@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+# Fresh-process temporal case TA-25.
+
+# Both carried statuses are evaluated only on the canonical terminal successor.
+? succeed(Epoch_Current, TerminalTransition).
+# => TRUE
+
+# The exact void lineage remains visible.
+? match(TA_Status_Conflict, CarriedVoid).
+# => TRUE
+
+# The exact clear lineage remains visible instead of overwriting the void lineage.
+? match(TA_Status_Conflict, CarriedClear).
+# => TRUE
+
+# Simultaneous adverse and supportive status is a named conflict.
+? err(TA_Status_Conflict, StatusConflict).
+# => TRUE
+
+# A conflict cannot silently select the authority-granting status.
+? permits(Review, TA_Status_Conflict).
+# => FALSE
+
+# A challenged status conflict reaches the Appeals duty reader.
+? obliged(Appeals, TA_Status_Conflict).
+# => TRUE
+
+# A carried-status conflict does not erase standing.
+? person(TA_Status_Conflict).
+# => TRUE

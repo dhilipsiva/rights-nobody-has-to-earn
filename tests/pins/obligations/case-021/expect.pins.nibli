@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-218 positive
+:expect-pins 1
+
+# FS-CCE-218 positive: Finding common-cause investigation.
+? obliged(OblPositive218InvestigationBearer, OblPositive218CommonCauseDuty, OblPositive218CommonCauseStandard).
+# => TRUE

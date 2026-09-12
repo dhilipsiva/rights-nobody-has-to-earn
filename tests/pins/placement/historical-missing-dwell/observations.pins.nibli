@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+# Generated observations for mutation historical-missing-dwell.
+# The source change is constructed by this audit and is never enacted.
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Confined_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Confined_NotSevere_NoFamily_NoHome, Homestay).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Confined_NotSevere_NoFamily_NoHome, Placement).
+# => FALSE

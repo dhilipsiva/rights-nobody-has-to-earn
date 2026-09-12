@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-215 omission FindingEscalationScope
+:expect-pins 1
+
+# FS-CCE-215 omitting FindingEscalationScope withholds the effect.
+? obliged(OblSpecialOmit215Alternate, OblSpecialOmit215AlternateDuty, OblSpecialOmit215AlternateStandard).
+# => FALSE

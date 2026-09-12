@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-211 omission FiniteExcuseEndScope
+:expect-pins 1
+
+# FS-CCE-211 omitting FiniteExcuseEndScope withholds the effect.
+? obliged(OblSpecialOmit211Bearer, OblSpecialOmit211Duty, OblSpecialOmit211Standard).
+# => FALSE

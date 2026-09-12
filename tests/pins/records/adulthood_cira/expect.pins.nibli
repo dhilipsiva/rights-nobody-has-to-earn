@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Generated red-team queries for snapshot adulthood_cira.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in adulthood_cira.
+? at(Cira, GeneralAdulthood).
+# => TRUE
+
+# Reviewed expected consequence in adulthood_cira.
+? decide(Cira, Ballot).
+# => TRUE
+
+# Reviewed expected consequence in adulthood_cira.
+? person(Cira).
+# => TRUE
+
+# Reviewed expected consequence in adulthood_cira.
+? travel(Cira).
+# => TRUE

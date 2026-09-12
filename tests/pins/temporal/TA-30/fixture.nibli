@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+list(Order_Court_A, Epoch_Review, Epoch_Current, EventSequence).
+list(Order_Log_Court_A, Epoch_Review, Epoch_Current, RecordSequence).
+date(Window_Custody, Epoch_Review, Epoch_Current, TimeService).

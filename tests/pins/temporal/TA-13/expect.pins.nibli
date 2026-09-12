@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Fresh-process temporal case TA-13.
+
+# The supplied opposite event-claim identifier remains visible rather than hidden.
+? precede(TA_Order_Opposite, EventSequence).
+# => TRUE
+
+# The supplied opposite record-claim identifier remains visible rather than hidden.
+? precede(TA_Log_Opposite, RecordSequence).
+# => TRUE
+
+# The exact reverse event path remains represented.
+? precede(Epoch_Review, Epoch_Current, EventPath).
+# => TRUE
+
+# The exact reverse record path remains represented.
+? precede(Epoch_Review, Epoch_Current, RecordPath).
+# => TRUE
+
+# The original event claim is named as participating in the cycle.
+? err(Order_Court_A, OrderConflict).
+# => TRUE
+
+# The opposite event claim is independently named as conflicted.
+? err(TA_Order_Opposite, OrderConflict).
+# => TRUE
+
+# The original record claim is named as participating in the cycle.
+? err(Order_Log_Court_A, OrderConflict).
+# => TRUE
+
+# The opposite record claim is independently named as conflicted.
+? err(TA_Log_Opposite, OrderConflict).
+# => TRUE

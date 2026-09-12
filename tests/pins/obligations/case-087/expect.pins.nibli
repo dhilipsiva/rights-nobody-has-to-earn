@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-207 omission CommonDutyRemedyScope
+:expect-pins 1
+
+# FS-CCE-207 omitting CommonDutyRemedyScope withholds the effect.
+? obliged(OblSpecialOmit207Bearer, OblSpecialOmit207Duty, OblSpecialOmit207Standard).
+# => FALSE

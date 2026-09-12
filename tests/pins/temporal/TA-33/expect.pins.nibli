@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fresh-process temporal case TA-33.
+
+# The first predecessor manifest is independently witnessed.
+? complete(TA_Ambiguous_Previous_A, ManifestScope).
+# => TRUE
+
+# The competing predecessor manifest is independently witnessed too.
+? complete(TA_Ambiguous_Previous_B, ManifestScope).
+# => TRUE
+
+# The predecessor epoch receives the typed manifest ambiguity.
+? collide(TA_Ambiguous_Previous, ManifestBinding).
+# => TRUE
+
+# Transition acceptance cannot select one convenient predecessor manifest.
+? succeed(TA_Ambiguous_Current, Transition).
+# => FALSE

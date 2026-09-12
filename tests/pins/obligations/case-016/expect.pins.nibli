@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-213 positive
+:expect-pins 1
+
+# FS-CCE-213 positive: Finding reader and action duty.
+? obliged(Review, OblPositive213ReaderDuty, OblPositive213ReaderStandard).
+# => TRUE

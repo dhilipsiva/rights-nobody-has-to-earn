@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Generated full-source amendment-semantics pins for AS-09.
+# Candidate source deltas are authored by the audit, never enacted by become.
+
+# The honest registered target still receives the blocked label.
+? false(Amend_Floor).
+# => TRUE
+
+# The honest floor proposal still lacks the passing label.
+? become(Amend_Floor, Law).
+# => FALSE
+
+# The separately applied source deletion removes the promise anyway.
+? entitled(Adam, event { eats() }).
+# => FALSE
+
+# Cira is not confined before the adverse-rule probe.
+? prisoner(Cira).
+# => FALSE
+
+# The independent deletion makes the adverse rule loadable despite the blocked label.
+:accept
+all $x: person($x) & ~eats($x) -> prisoner($x).
+
+# The accepted rule now confines a roster person lacking eats.
+? prisoner(Cira).
+# => TRUE

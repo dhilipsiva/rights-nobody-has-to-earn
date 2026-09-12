@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-219 positive
+:expect-pins 1
+
+# FS-CCE-219 positive: Responsible-control correction.
+? obliged(OblPositive219CorrectionBearer, OblPositive219ControlCorrectionDuty, OblPositive219ControlCorrectionStandard).
+# => TRUE

@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+date(Window_Custody, Epoch_Current, TA_Review_Alternate, TimeService).
+observe(Chronicle, Window_Custody, TA_Review_Alternate, WindowEndScope).
+observe(TemporalReview, Window_Custody, TA_Review_Alternate, WindowEndScope).

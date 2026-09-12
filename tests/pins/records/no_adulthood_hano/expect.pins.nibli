@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Generated red-team queries for snapshot no_adulthood_hano.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in no_adulthood_hano.
+? at(Hano, GeneralAdulthood).
+# => FALSE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? at(Jala, GeneralAdulthood).
+# => TRUE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? decide(Hano, Ballot).
+# => FALSE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? decide(Jala, Ballot).
+# => TRUE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? entitled(Hano, event { eats() }).
+# => TRUE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? owe(State, Eats, Hano).
+# => TRUE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? person(Hano).
+# => TRUE
+
+# Reviewed expected consequence in no_adulthood_hano.
+? prisoner(Hano).
+# => TRUE

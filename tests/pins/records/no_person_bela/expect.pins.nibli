@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 13
+# Generated red-team queries for snapshot no_person_bela.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in no_person_bela.
+? at(Bela, GeneralAdulthood).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? decide(Bela, Ballot).
+# => FALSE
+
+# Reviewed expected consequence in no_person_bela.
+? entitled(Bela, event { eats() }).
+# => FALSE
+
+# Reviewed expected consequence in no_person_bela.
+? entitled(Jala, event { eats() }).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? false(Bela).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? lose(Points, Bela).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? owe(State, Eats, Bela).
+# => FALSE
+
+# Reviewed expected consequence in no_person_bela.
+? owe(State, Eats, Jala).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? permits(Review, Gia).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? permits(Tribunal, Hex).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? person(Bela).
+# => FALSE
+
+# Reviewed expected consequence in no_person_bela.
+? person(Jala).
+# => TRUE
+
+# Reviewed expected consequence in no_person_bela.
+? travel(Bela).
+# => FALSE

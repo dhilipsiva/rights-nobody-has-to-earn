@@ -1,167 +1,103 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
+
 # Counterfactual fixtures
 
-Copies of `../constitution.nibli`, each differing from it in **exactly one deliberate way**.
-They exist because of a limitation the tracker records: derivation is monotone and probe
-facts load *on top* of the knowledge base, so **no probe can test a restriction**. Every
-"if we removed X" claim in the book and the tracker is an argument until it is run against
-a file where the change is actually made.
+These pins ask what changes when a constitutional statement is removed, replaced,
+or added. Extra facts do not remove a condition from an existing rule: a claim
+such as "without this line, the protection disappears" must run against an
+actually changed source.
 
-Three classes, and `verify.sh` checks each fixture's diff shape as its identity:
+The executable edits now live in
+[`tests/pins/suites.json`](../../tests/pins/suites.json). The runner applies them
+in memory to the current constitution. This directory retains the original pin
+files and these explanations, not complete copied constitutions. There is
+nothing to regenerate after a comment-only constitution edit, and no source hash
+or historical diff-shape check.
 
-- **A line deleted** (1 removed, 0 added) — `no-person-line`, `no-public-court`,
-  `no-choose-boss`, `no-first-contact-standing`. What the world loses without the line.
-- **A line changed** (1 removed, 1 added) — `no-dead-conjuncts` strips
-  Article 4's `~broken`/`~match(·, CarriedVoid)` signer checks. It has
-  **no paired pin file on purpose**: `verify.sh` runs chapters 4 and 5's own
-  pin files against it, and their passing unchanged is the standing proof those
-  conjuncts decide nothing today. `no-delivery-independence` strips the
-  food-delivery writer/source disequality. The state-form fixture
-  `no-state-form-independent-current-review` strips only the shared
-  source-writer/temporal-reviewer disequality and has its own pins. The
-  `no-obligations-independent-source-review` fixture strips that same
-  obligations source-writer/record-reviewer disequality from every repeated
-  source-bound conclusion and has its own pins.
-- **A line added** (0 removed, 1 added) — `unguarded-pen`: the constitution *plus* a
-  credential route that forgets the guards. A postulated future, not a deletion — its pins
-  show Article 4's kept conjuncts are the only thing standing between that one line and a
-  carried-void signature counting. See the v0.9 note in Article 4's header.
-  `undelivered-marker` is the same class: the constitution *plus* the floor-delivery marker
-  the 2026-08-02 ruling refused. Its pins show the marker firing on the voided, the
-  confined and the never-accused alike — the measured reason it stays unbuilt while the
-  record holds no arrival facts. Regenerate like unguarded-pen: copy, then append
-  `all $x: owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered).` with no leading
-  blank line.
+Run from the repository root:
 
-Regenerate any of them with:
-
-```
-K=new-book-plans/constitution.nibli
-CF=new-book-plans/counterfactual
-grep -vFx 'all $anyone: prisoner($anyone) -> person($anyone).' $K > $CF/no-person-line.nibli
-grep -vFx 'public(Court).'                                     $K > $CF/no-public-court.nibli
-grep -vFx 'choose(Electorate, Boss).'                          $K > $CF/no-choose-boss.nibli
-grep -vFx 'all $subject: at($subject, FirstContact) & ~public($subject) -> person($subject).' \
-  $K > $CF/no-first-contact-standing.nibli
+```bash
+./verify.sh
+./verify.sh --list
+./verify.sh --only new-book-plans/counterfactual/no-person-line.pins.nibli
 ```
 
-**The `$CF/` prefixes are load-bearing and were missing until 2026-07-30.** `$K` is
-written relative to the repo root, so the command has to be run from there — and without
-the prefix the three files landed in the repo root while the real fixtures sat untouched
-beside this README. Anyone following the procedure would have believed they had
-regenerated and would have left three stale fixtures in place, which is the exact failure
-the `-vFx` note below describes, reached by a different route. That makes twice this
-file's own command has been wrong; check it against a real run before trusting it.
+The last command is a focused, explicitly partial result. A counterfactual's pins
+are expected to pass in its changed world, not necessarily against the live
+constitution. Deliberate counterfactuals normally use `scan: false`: their pins
+test the intended consequences without claiming that every intentionally
+sabotaged world is contradiction-free. The live constitution and ordinary
+scenarios retain their contradiction scans.
 
-**Use `-vFx`, and do not "fix" it back to a regex.** The version of this command that
-stood here until v0.5 was `grep -v '^all \$anyone: …'`, and inside single quotes `\$` is a
-literal backslash-dollar, so it matched nothing and wrote out a byte-identical copy of the
-constitution. Anyone following the documented procedure destroyed the fixture, and the
-three pins still passed, because a fixture that is a copy of the real file answers every
-question the real file answers. `-F` (fixed string) and `-x` (whole line) cannot be
-misread that way.
+## Editing a counterfactual
 
-`no-delivery-independence` is the delivery family's guard on a copy. The food route
-carries `~($w = $src)`, which is the whole of what stops a provider certifying that its
-own delivery arrived, and derivation is monotone, so no probe against the real file can
-show what that conjunct prevents. Strip it here and the kitchen that supplied the meal can
-attest that it arrived. Its pins keep two controls beside the flipped verdict: the
-independent route still derives, and shelter still refuses a self-certifying provider, so
-a green result cannot come from having broken the family instead of the guard.
+Each named base derives from `live` or another named base and supplies ordered
+`{ "before": "...", "after": "..." }` edits. Deletion uses an empty `after`;
+addition uses an empty `before`. Replacement supplies both. A nonempty target
+must match exactly one contiguous block of statement lines. Blank lines,
+comment-only lines, and outer line whitespace are ignored; statement content
+remains exact. Review the relevant edit when changing an affected rule.
 
-`no-state-form-independent-current-review` is the state-form currentness guard
-on a copy. The shared rule carries `~($source = $temporal_review)`, which
-keeps the source writer from serving as its own temporal reviewer. Strip only
-that conjunct and every card's fused-role fixture gains current lawful authority.
-Its paired pins keep properly separated controls beside those flipped verdicts,
-so a green result cannot come from disabling currentness or the card family.
+The runner then loads the scenario fixtures and executes its pins in isolated
+state. Keep controls beside a changed verdict so a test cannot pass merely
+because the entire rule family stopped working. Detailed inventory and
+authoring instructions are in [the pin-suite guide](../../tests/pins/README.md).
 
-`no-obligations-independent-source-review` is the obligations current-source
-guard on a copy. Its checker removes only `~($source = $record_review)` from
-each of the repeated raw-current joins. The paired pins show all 25 fused
-effects deriving. `no-obligations-source` removes the 35 rules that expose the
-family's legal conclusions while leaving unrelated personhood intact.
-`no-obligations-finding-reader` removes only the typed reader bridge: every
-legacy two-place finding conclusion remains while all 14 typed reader duties
-disappear.
+State-form and obligations cases have explicit authoring commands:
+`./generate.sh state-form` and `./generate.sh obligations`. These update rules,
+aggregate pins, and extracted case assets. Ordinary verification never invokes
+them or enacts a pending authoring-source change.
 
-`no-economic-independent-current-review-061` through
-`no-economic-independent-current-review-088` are the economic-power
-current-source guards on separate copies. Each removes only the two
-`~($source = $record_review)` joins in one card's current and reviewed-result
-rules. Its paired pin shows that card's fused writer and reviewer deriving the
-bounded result only after those separations are removed. The dependency
-observations in the private-power, spending, tax-collection,
-scarcity-allocation, and settlement routes keep each remedy or execution power
-joined to the exact reviewed result it consumes.
+## Why these changes are tested
 
-Regenerate the changed-line and added-line fixtures with:
+- Deleting a statement shows what depends on it: personhood, a public body's
+  answerability, a credential route, or a first-contact standing root.
+- Replacing a rule isolates a restriction. `no-dead-conjuncts` removes
+  Article 4's broken/carried-void signer checks and deliberately reuses chapters
+  4 and 5's pin files: their unchanged answers show those conjuncts decide
+  nothing in the current examples.
+- Adding a statement explores a postulated future. `unguarded-pen` adds a
+  credential route that omits those checks; its pins show a carried-void
+  signature counting through that route.
 
-```
-python3 - <<'EOF'
-import pathlib
-s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
-old = " & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) -> false($audited)."
-assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
-pathlib.Path('new-book-plans/counterfactual/no-dead-conjuncts.nibli').write_text(
-    s.replace(old, " -> false($audited)."), encoding='utf-8')
-EOF
-python3 - <<'EOF'
-import pathlib
-s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
-old = "observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
-assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
-pathlib.Path('new-book-plans/counterfactual/no-delivery-independence.nibli').write_text(
-    s.replace(old, "observe($w, $item, $p, FoodScope) -> eats($p)."), encoding='utf-8')
-EOF
-python3 - <<'EOF'
-import pathlib
-s = pathlib.Path('new-book-plans/constitution.nibli').read_text(encoding='utf-8')
-old = " & ~($source = $temporal_review)"
-assert s.count(old) == 1, f"expected exactly one occurrence, found {s.count(old)}"
-pathlib.Path(
-    'new-book-plans/counterfactual/no-state-form-independent-current-review.nibli'
-).write_text(s.replace(old, ""), encoding='utf-8')
-EOF
-./verify.sh --refresh obligations
-cp new-book-plans/constitution.nibli new-book-plans/counterfactual/unguarded-pen.nibli
-printf 'all $a: choose(Electorate, $a) -> permits(Review, $a).\n' \
-  >> new-book-plans/counterfactual/unguarded-pen.nibli
-```
+`undelivered-marker` adds the rejected rule
+`all $x: owe(State, Eats, $x) & ~eats($x) -> err($x, Undelivered).`
+Its pins show the marker firing on the voided, confined, and never-accused alike.
+That is the reason missing arrival evidence must not itself become proof of
+non-delivery.
 
-The assert is not decoration: this file's commands have been wrong twice, both times by
-matching nothing and silently writing a byte-identical copy, and an assert on the
-occurrence count is what makes that loud. The `printf` must not lead with a blank line —
-that reads as a second added line and fails the shape check.
+`no-delivery-independence` removes only the food rule's witness/source
+disequality. A kitchen can then attest its own delivery; the independent food
+route and shelter's refusal of self-certification remain controls.
 
-`diff` each against the constitution and check the shape its class requires. **Regenerate
-after every constitution edit** — a stale fixture proves something about a file that no
-longer exists, which is the failure mode these were built to answer. `verify.sh` now
-enforces the one-line property before it runs the pins; it did not until v0.5, because the
-guard assigned its result to a variable it never read.
+`no-state-form-independent-current-review` removes only the shared
+source-writer/temporal-reviewer disequality. Each card's fused-role example gains
+the authority withheld by the live source, while properly separated controls
+remain true. Its executable examples are under `tests/pins/state-form/`.
 
-| Fixture | Line removed | What it proves |
+The obligations variants remove the source-writer/record-reviewer separation,
+the family's source-dependent conclusion rules, or only the typed finding-reader
+bridge. They distinguish fused-role effects, lost legal conclusions with
+personhood intact, and lost typed duties with legacy findings intact. Their
+executable examples are under `tests/pins/obligations/`.
+
+The card-specific economic variants remove only the source-writer/reviewer
+separations in one card's current and reviewed-result rules. Dependency records
+keep remedy and execution powers joined to the exact reviewed result consumed.
+
+| Variant | Deleted statement | Tested consequence |
 |---|---|---|
-| `no-person-line.nibli` | `prisoner -> person` | Chapter 7's headline result. With the line, a heresy law is refused; without it the same law **loads**, and the whole population becomes imprisonable for belief. The clause that keeps prisoners human and the clause that keeps everyone's rights unconditional are the same clause. |
-| `no-public-court.nibli` | `public(Court).` | The deletion axis of the fact-write trust base. One deleted line and `authority(Court)` goes FALSE, taking Sly's shield with it — `prisoner(Sly)` flips FALSE→TRUE. |
-| `no-choose-boss.nibli` | `choose(Electorate, Boss).` | The same harm by the other route into standing. `authority(Boss)` goes FALSE and **Rebel — the file's own honest whistleblower — is jailed**, which is the whole of chapter 2's argument, undone by deleting one fact. |
-| `no-first-contact-standing.nibli` | first-contact standing rule | An unregistered first-contact handle no longer acquires standing, the floor, or the State's debt; the other standing roots remain controls. |
-
-Each has a paired `*.pins.nibli` asserting the flipped verdicts. Those pin files are
-**expected to pass against their own fixture**, not against the constitution: they encode
-what the world looks like once the line is gone. Run one with
-
-```
-nibli-pin --kb new-book-plans/counterfactual/no-person-line.nibli \
-          new-book-plans/counterfactual/no-person-line.pins.nibli
-```
-
-`verify.sh` runs all three.
+| `no-person-line` | Prisoner-to-person standing rule | A heresy rule can load and make the population imprisonable for belief. |
+| `no-public-court` | `public(Court).` | Court answerability and Sly's shield disappear. |
+| `no-choose-boss` | `choose(Electorate, Boss).` | Boss's answerability disappears and the whistleblower Rebel is confined. |
+| `no-first-contact-standing` | First-contact standing rule | An unregistered contact loses that standing root, floor, and State debt; other roots remain controls. |
 
 ## Liberty and ecological fixtures
 
 The `no-environmental-right` fixture deletes the present-person environmental-conditions rule while retaining environmental information and the material floor.
 The `no-class9-climate-axis` fixture deletes only the climate-axis ceiling rule while retaining the clean-air axis and the material-floor boundary.
-Both are one-line deletion fixtures and are regenerated from `constitution.nibli` after every constitutional edit.
+Both are one-statement deletion variants applied to the current constitution by
+the suite inventory.
 
 ## Substantive-equality fixtures
 
@@ -169,8 +105,7 @@ The `no-direct-equality`, `no-equality-data-wall`, and
 `no-positive-measure-end` fixtures each delete exactly one independently
 registered equality effect. Their controls keep an adjacent equality effect and
 the common status baseline live, so a green result cannot come from losing the
-whole family. Regenerate them from `constitution.nibli` after every source edit
-by deleting, respectively:
+whole family. Their inventory edits delete, respectively:
 
 - `all $x: person($x) -> prevents($x, DirectDiscrimination).`
 - `all $x: person($x) -> prevents($x, EqualityDiagnosticRecordReuse).`
@@ -185,7 +120,7 @@ The family and life-course suite adds four one-line deletion fixtures:
 - `no-missing-kinship-independence` removes only the affirmative-independence boundary; and
 - `no-pregnancy-authority` removes only pregnancy continuation and termination authority while retaining the fetal-override refusal.
 
-They are regenerated from `constitution.nibli` after every constitutional edit exactly like the equality deletion fixtures.
+Their inventory entries apply those deletions to the current source at run time.
 
 ## Economic, labour, property, and fiscal fixtures
 
@@ -211,10 +146,10 @@ deletion fixtures, and 28 card-specific changed-line fixtures:
   source-writer/current-reviewer separations from exactly one economic power
   card.
 
-The single-line deletion fixtures retain adjacent effects as controls.
-Regenerate all 34 fixtures from `constitution.nibli` after every source edit;
-the native verifier checks their exact one-line, 171-line, 145-line, six-line,
-or two-removed/two-added diff shapes before executing their pins.
+The deletion variants retain adjacent effects as controls. The inventory names
+the actual statement edits; the runner rejects missing or ambiguous targets
+before executing the corresponding pins. No copied constitution or separate
+diff-shape report is maintained.
 
 ## Income security and social insurance fixtures
 
@@ -231,18 +166,15 @@ and one added-line fixture:
 - `unguarded-contribution-reader` is the constitution *plus* a rule that
   conditions confinement on the absence of a contribution record. The engine
   accepts it — `pay` is a base relation, so there is no negative cycle for the
-  stratifier to refuse — and its pins show it confining the whole roster. It is
-  the watched failing control for the repository guard that holds `pay`
-  readable only by the two supplement rules. Regenerate like `unguarded-pen`:
-  copy, then append
+  stratifier to refuse — and its pins show it confining the whole roster. The
+  inventory appends
   `all $x: person($x) & ~pay($x, Contribution, Carrier, SchemeA) -> prisoner($x).`
-  with no leading blank line.
+  This tests the consequence of that hostile reader; it does not automatically
+  prohibit every future reader.
 
-The first two are regenerated from `constitution.nibli` after every
-constitutional edit like the delivery fixtures; the deletion uses `grep -vFx`
-on the exact supplement rule line and the changed-line fixture replaces the
-exact `& ~($a = $carrier) & ~observe(Court, ContributionFraud, $p, $scheme) ->
-insure($carrier, $p, $peril).` tail with the same tail minus the disequality.
+The first two inventory edits delete the supplement rule or replace it with the
+same statement minus the adjudicator/carrier disequality. The guarantee rule
+remains unchanged.
 
 ## Qualifications and compensation fixtures
 
@@ -258,13 +190,13 @@ changed-line fixture, and one added-line fixture:
   are the controls.
 - `unguarded-compensation-reader` is the constitution *plus* a rule that
   conditions confinement on the absence of a promised wage. The engine accepts
-  it; it is the watched failing control for the purpose-limited-record guard on
-  `promise`. Regenerate like `unguarded-pen`: copy, then append
+  it. Its inventory entry appends
   `all $x: person($x) & ~promise(Firm, Wage, $x) -> prisoner($x).`
-  with no leading blank line.
+  The pins expose the consequence; reviewing new readers for the intended
+  purpose limit remains necessary.
 
-The first two are regenerated from `constitution.nibli` after every
-constitutional edit like the income-security fixtures.
+The first two are explicit statement edits against the current constitution,
+like the income-security variants.
 
 ## Public-scale vocabulary fixtures
 
@@ -285,26 +217,21 @@ Each pairs the flipped verdict with the membership query that stays FALSE, so a
 green result cannot come from having also broken the vocabulary. Against the
 real constitution the same finding is refused; here it derives while the token it
 names is still not a member. That pair is what makes "the finding may state only
-a named ground" an executed claim rather than an attested one. Regenerate them
-from `constitution.nibli` after every constitutional edit, asserting the
-occurrence count first — each of the three conjuncts occurs exactly once in the
-whole file, and a replace that matches nothing writes a byte-identical copy.
+a named ground" an executed claim rather than an attested one. Each inventory
+edit replaces the affected rule exactly once; a missing target fails instead of
+silently testing an unchanged copy.
 
 `unnamed-public-scale-trigger` is the constitution *plus* one more ground rule,
-for a token no ratified vocabulary contains. Regenerate like
-`unguarded-pen`: copy, then append
+for a token no ratified vocabulary contains. Its inventory entry appends
 
 ```
 all $source: all $record: observe($source, $record, EconAnnualRevenueOver500M, PublicScaleTriggerScope) -> member(EconAnnualRevenueOver500M, PublicScaleTriggerVocabulary).
 ```
 
-with no leading blank line. Its pins show the finding deriving and the token
-holding membership, which is the harm the enumeration exists to prevent: the
-vocabulary grows by one source edit and the finding stops noticing. It is the
-watched failing control for the producer-set check in `src/checks/repository.rs`,
-which rejects a `member` head that is not ground, names a set the checker does
-not know, names a token its set does not list, or produces a listed token more
-than once.
+Its pins show the finding deriving and the token holding membership, which is
+the harm the enumeration exists to prevent: the vocabulary grows by one source
+edit and the finding stops noticing. The former producer-set administrative
+check is retired; these pins test the source change itself.
 
 Every fixture whose record composes an FS-POW-064 finding carries the function
 class and the tier allocation on the record and the temporal record as well as
@@ -317,25 +244,21 @@ reason.
 
 `unnamed-appointment-control-source` is the constitution *plus* one more ground
 rule, for a source kind the ratified state-form sentence does not name.
-Regenerate like `unnamed-public-scale-trigger`: copy, then insert
+Its inventory entry adds
 
 ```
 all $source: all $record: observe($source, $record, IncumbentCoalitionAffiliateAppointmentSource, AppointmentControlSourceKindScope) -> member(IncumbentCoalitionAffiliateAppointmentSource, AppointmentControlSourceKindVocabulary).
 ```
 
-immediately after the `DeFactoAppointmentControl` ground rule, with no leading
-blank line. It is the second watched failing control for the producer-set check
-in `src/checks/repository.rs`.
+The pins record whether that added vocabulary entry affects the tested result.
 
 The anti-capture family has no gate-removal fixture, and the reason is worth
 recording rather than leaving as an omission. Its five source kinds and two
 control modes are fixed constants in the rule, not variables, so stripping the
 `member` conjuncts changes nothing a probe could see — the observations are
-still required. What the conjuncts buy is that deleting a vocabulary ground rule
-stops the whole family deriving, and that is held by
-`validate_appointment_anti_capture_self_controls` in
-`src/checks/state_form.rs`, which drops each named kind and mode from each
-anchored branch in turn and requires the completeness rule to refuse it.
+still required. What the conjuncts buy is that deleting a required vocabulary ground rule stops the affected
+family deriving. Review that dependency directly when changing the authored
+rules; the old source-schema self-controls are no longer verification gates.
 
 The measurement the family exists to repair, taken 2026-09-08 against one
 generated FSPOW_028 positive case: with all 194 supplied facts the reviewed
@@ -350,51 +273,36 @@ unexamined kind is no longer indistinguishable from an absent one.
 `unnamed-office-integrity-kind` is the constitution *plus* one more ground
 rule, for a material-interest kind the 2026-09-09 ruling does not name — party
 membership, which is the guilt-by-association widening the ruling refuses.
-Regenerate like `unnamed-appointment-control-source`: copy, then insert
+Its inventory entry adds
 
 ```
 all $source: all $record: observe($source, $record, PartyMembershipInterest, MaterialInterestKindScope) -> member(PartyMembershipInterest, MaterialInterestKindVocabulary).
 ```
 
-immediately after the `FormerHolderCounterpartyDealing` ground rule, with no
-leading blank line. It is the third watched failing control for the producer-set
-check in `src/checks/repository.rs`.
+The corresponding pins describe the consequence of that vocabulary addition.
 
 The family has no gate-removal fixture for the reason the anti-capture section
-above records; its kinds are literal constants, and what the `member` conjuncts
-buy is held by `validate_examined_kind_family_self_controls`, which for this
-universal family also exempts each branch in turn and requires the refusal.
+above records: its kinds are literal constants. The `member` conjuncts retain
+the dependency on the named vocabulary; the retired source-schema checker is
+not part of the pin suite.
 
 One consequence of a universal state-form field that is easy to miss: every
 hand-written pin file that supplies a state-form result as a *dependency*
-must carry the new attestations too, and that includes the eleven
-`no-economic-independent-current-review-0nn.pins.nibli` files here, not only
-the `economic-power-0nn.pins.nibli` suites beside the constitution. Sweep with
-`grep -rl StateFormBranchScope` over the whole tree, never a curated list; the
-first receipt run of this family failed on exactly the directory the sweep
-had excluded.
+must carry the new attestations too, including counterfactual economic cases,
+not only the positive economic-power suites. Review the actual inventory and
+all affected fixtures when changing that shared dependency.
 
 ## Money and influence fixture
 
 `unnamed-political-finance-payer` is the constitution *plus* one more ground
 rule, for a payer kind the 2026-09-09 money-and-influence ruling does not name
 — an anonymous intermediary, which is precisely the category whose admission
-would hollow out the `ControllingPartyPayer` shell test. Regenerate like
-`unnamed-office-integrity-kind`: copy, then insert
+would hollow out the `ControllingPartyPayer` shell test. Its inventory entry adds
 
 ```
 all $source: all $record: observe($source, $record, AnonymousIntermediaryPayer, PoliticalFinancePayerKindScope) -> member(AnonymousIntermediaryPayer, PoliticalFinancePayerKindVocabulary).
 ```
 
-immediately after the `PublicDecisionRecipient` ground rule, with no leading
-blank line. It is the fourth watched failing control for the producer-set check
-in `src/checks/repository.rs`.
-
-Three examined-kind families now share one generator table, and the sweep rule
-that the office-integrity section states applies to all of them: when a
-universal family lands, `grep -rl StateFormBranchScope` over the **whole tree**
-and diff the hit list against what was extended. Twenty-two pin files supply a
-state-form result as a dependency — eleven `economic-power-0nn` and eleven
-`counterfactual/no-economic-independent-current-review-0nn` — and filtering the
-sweep by where the hits were expected is what cost the office-integrity family
-its first receipt run.
+Its pins describe the changed vocabulary. The examined-kind families share an
+authoring table, so changing a universal field requires reviewing every case
+that supplies a state-form result, including the economic counterfactuals.

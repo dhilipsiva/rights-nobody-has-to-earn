@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Generated red-team queries for snapshot carry_forge_marked.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in carry_forge_marked.
+? false(Carry_Forge).
+# => FALSE
+
+# Reviewed expected consequence in carry_forge_marked.
+? lose(Points, Carry_Forge).
+# => FALSE
+
+# Reviewed expected consequence in carry_forge_marked.
+? match(Carry_Forge, CarriedVoid).
+# => FALSE
+
+# Reviewed expected consequence in carry_forge_marked.
+? person(Carry_Forge).
+# => TRUE
+
+# Reviewed expected consequence in carry_forge_marked.
+? reward(Carry_Forge).
+# => TRUE
+
+# Reviewed expected consequence in carry_forge_marked.
+? rotten(Carry_Forge).
+# => TRUE

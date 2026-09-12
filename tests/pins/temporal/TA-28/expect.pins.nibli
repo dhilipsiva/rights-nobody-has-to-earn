@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-28.
+
+# The independently witnessed alternate holder keeps the identifier-level case tag visible.
+? related(Case_Adam, CaseBound).
+# => TRUE
+
+# The alternate holder tag cannot authenticate the incompletely witnessed Court tuple.
+? match(Adam, CaseRecorded).
+# => FALSE
+
+# Active Court authority requires both witnesses on the exact Court holder field.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# A tag earned by another holder cannot preserve Court custody.
+? prisoner(Adam).
+# => FALSE
+
+# The Court judgment without an exact recorded Court case remains visible as unsupported authority.
+? err(Adam, TemporalAuthority).
+# => TRUE

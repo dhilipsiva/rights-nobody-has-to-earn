@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+replace(TA_Disappear_Current, TA_Disappear_Previous, Chronicle).
+list(TA_Disappear_Manifest_Previous, TA_Disappear_Previous, ManifestOrder, Chronicle).
+list(TA_Disappear_Manifest_Current, TA_Disappear_Current, ManifestOrder, Chronicle).
+observe(Chronicle, TA_Disappear_Manifest_Previous, TA_Disappear_Previous, ManifestScope).
+observe(TemporalReview, TA_Disappear_Manifest_Previous, TA_Disappear_Previous, ManifestScope).
+observe(Chronicle, TA_Disappear_Manifest_Current, TA_Disappear_Current, ManifestScope).
+observe(TemporalReview, TA_Disappear_Manifest_Current, TA_Disappear_Current, ManifestScope).
+authorized(TA_Preserved, PreservedStatus, TA_Disappear_Previous).
+observe(Chronicle, TA_Preserved, TA_Disappear_Previous, PreservedScope).
+observe(TemporalReview, TA_Preserved, TA_Disappear_Previous, PreservedScope).

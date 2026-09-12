@@ -8,6 +8,7 @@
 //! therefore never re-read or recompiled per file, and state asserted by one
 //! pin file cannot leak into the next.
 
+use std::cell::Cell;
 use std::collections::BTreeMap;
 use std::fmt::Write as _;
 use std::io::Read;
@@ -20,7 +21,7 @@ use std::thread;
 use std::time::Duration;
 use std::time::Instant;
 
-use nibli_engine::EngineError;
+use nibli_engine::{EngineError, EngineLogicBuffer};
 use nibli_reason::KnowledgeBase;
 use nibli_session::CoreSession;
 
@@ -34,6 +35,55 @@ pub(crate) const EXIT_DEFECT_RESOLVED: u8 = 3;
 pub(crate) struct LoadedSource<'a> {
     pub(crate) display_name: &'a str,
     pub(crate) source: &'a str,
+}
+
+/// Reusable compilation of exact statement text, scoped to this one process.
+/// Only the canonical source is retained; variant-only statements are compiled
+/// on demand rather than accumulating a cache of every counterfactual world.
+#[derive(Default)]
+pub(crate) struct CompiledSource(BTreeMap<String, EngineLogicBuffer>);
+
+impl CompiledSource {
+    pub(crate) fn new(source: &str) -> Self {
+        let compiler = CoreSession::new();
+        let mut compiled = BTreeMap::new();
+        for line in source.lines().map(str::trim) {
+            if !line.is_empty()
+                && !line.starts_with(['#', ':', '?'])
+                && !compiled.contains_key(line)
+            {
+                if let Ok(buffer) = compiler.compile_text(line) {
+                    compiled.insert(line.to_owned(), buffer);
+                }
+            }
+        }
+        Self(compiled)
+    }
+
+    fn prepare(
+        &self,
+        statements: &[&str],
+        cancellation: Arc<AtomicBool>,
+    ) -> Result<(CoreSession, Vec<Vec<u64>>), EngineError> {
+        let compiler = CoreSession::new();
+        let compiled = statements
+            .iter()
+            .map(|text| {
+                if cancellation.load(Ordering::Relaxed) {
+                    return Err(EngineError::Reasoning(
+                        "fixture construction cancelled".into(),
+                    ));
+                }
+                let buffer = match self.0.get(*text) {
+                    Some(buffer) => buffer.clone(),
+                    None => compiler.compile_text(text)?,
+                };
+                Ok((buffer, (*text).to_owned()))
+            })
+            .collect::<Result<Vec<_>, _>>()?;
+        let (kb, ids) = KnowledgeBase::from_compiled_batch_with_cancel(compiled, cancellation)?;
+        Ok((CoreSession::with_kb(kb), ids))
+    }
 }
 
 impl<'a> LoadedSource<'a> {
@@ -90,6 +140,16 @@ pub(crate) struct PreparedPinEngine {
 }
 
 impl PreparedPinEngine {
+    pub(crate) fn new_cached(
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Arc<AtomicBool>,
+        compiled: &CompiledSource,
+    ) -> Self {
+        Self {
+            base: PreparedBase::batch(knowledge_bases, Some(cancellation), Some(compiled)),
+        }
+    }
+
     pub(crate) fn new(knowledge_bases: &[LoadedSource<'_>]) -> Self {
         Self {
             base: PreparedBase::new(knowledge_bases),
@@ -119,6 +179,117 @@ impl PreparedPinEngine {
         options: PinOptions<'_>,
     ) -> RunOutput {
         run_prepared_pin_files(&self.base, pin_files, options)
+    }
+
+    /// Execute one independent scenario without accumulating unrelated cases.
+    /// Its fixture facts are asserted before its ordinary sequential pin steps.
+    pub(crate) fn run_case(
+        &self,
+        fixtures: &[LoadedSource<'_>],
+        pin_files: &[LoadedSource<'_>],
+        options: PinOptions<'_>,
+        scan: bool,
+    ) -> RunOutput {
+        if !self.base.harness.is_empty() {
+            return strata_harness_output(self.base.harness.clone());
+        }
+        if scan && !self.base.scanned.get() {
+            let mut report = Report::default();
+            scan_contradictions(self.base.engine.kb(), "knowledge base", &mut report);
+            if !report.findings.is_empty() || !report.harness.is_empty() {
+                return finish_run(report, String::new());
+            }
+            self.base.scanned.set(true);
+        }
+        if pin_files.is_empty() {
+            return harness_only("case has no pin files");
+        }
+        let reports = pin_files
+            .iter()
+            .map(|pin_file| {
+                let run = |kb: &KnowledgeBase| {
+                    let started = Instant::now();
+                    let view = EngineView {
+                        compiler: &self.base.engine,
+                        knowledge_base: kb,
+                    };
+                    let mut setup = Report::default();
+                    for fixture in fixtures {
+                        let statements: Vec<_> = fixture
+                            .source
+                            .lines()
+                            .map(str::trim)
+                            .filter(|line| !line.is_empty() && !line.starts_with('#'))
+                            .collect();
+                        if statements
+                            .iter()
+                            .all(|line| !line.starts_with(':') && !line.starts_with('?'))
+                            && view.assert_many(&statements).is_ok()
+                        {
+                            continue;
+                        }
+                        // A rejected batch leaves no changes. Replay on this
+                        // error path to retain the exact source-line diagnostic.
+                        for (line_index, raw) in fixture.source.lines().enumerate() {
+                            let line = raw.trim();
+                            if line.is_empty() || line.starts_with('#') {
+                                continue;
+                            }
+                            if options
+                                .cancellation
+                                .is_some_and(crate::scheduler::CancellationToken::is_cancelled)
+                            {
+                                setup.harness.push("fixture loading cancelled".into());
+                                return setup;
+                            }
+                            if line.starts_with(':') || line.starts_with('?') {
+                                setup.harness.push(format!(
+                                    "{}:{}: fixture contains a pin directive/query",
+                                    fixture.display_name,
+                                    line_index + 1
+                                ));
+                                return setup;
+                            }
+                            if let Err(error) = view.assert_text(line) {
+                                setup.harness.push(format!(
+                                    "{}:{}: [{}] {error}",
+                                    fixture.display_name,
+                                    line_index + 1,
+                                    Class::of(&error).name()
+                                ));
+                                return setup;
+                            }
+                        }
+                    }
+                    let mut report = run_file_with_engine(pin_file, &self.base.engine, kb, options);
+                    if scan
+                        && report.harness.is_empty()
+                        && (!fixtures.is_empty() || pin_file_can_assert(pin_file.source))
+                    {
+                        scan_contradictions(kb, pin_file.display_name, &mut report);
+                    }
+                    report.elapsed_ms =
+                        u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX);
+                    report
+                };
+                if fixtures.is_empty() && !pin_file_can_assert(pin_file.source) {
+                    run(self.base.engine.kb())
+                } else {
+                    self.base
+                        .engine
+                        .kb()
+                        .with_assumptions(&[], run)
+                        .unwrap_or_else(|error| Report {
+                            harness: vec![format!(
+                                "{}: cannot isolate case: {error}",
+                                pin_file.display_name
+                            )],
+                            ..Report::default()
+                        })
+                }
+            })
+            .collect();
+        finish_file_reports(pin_files, reports)
     }
 
     /// Run pins against a line-oriented derivative of the prepared source.
@@ -664,21 +835,87 @@ struct PreparedBase {
     engine: CoreSession,
     harness: Vec<String>,
     source_fact_ids: BTreeMap<String, Vec<Vec<u64>>>,
+    scanned: Cell<bool>,
 }
 
 impl PreparedBase {
     fn new(knowledge_bases: &[LoadedSource<'_>]) -> Self {
-        let engine = CoreSession::new();
-        Self::load(engine, knowledge_bases, None)
+        Self::batch(knowledge_bases, None, None)
     }
 
     fn new_cancellable(
         knowledge_bases: &[LoadedSource<'_>],
         cancellation: Arc<AtomicBool>,
     ) -> Self {
+        Self::batch(knowledge_bases, Some(cancellation), None)
+    }
+
+    fn batch(
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Option<Arc<AtomicBool>>,
+        compiled: Option<&CompiledSource>,
+    ) -> Self {
+        let statements: Vec<_> = knowledge_bases
+            .iter()
+            .flat_map(|source| source.source.lines())
+            .map(str::trim)
+            .filter(|line| !line.is_empty() && !line.starts_with('#'))
+            .collect();
+        let plain = statements
+            .iter()
+            .all(|line| !line.starts_with(':') && !line.starts_with('?'));
+        if plain {
+            let result = if let Some(compiled) = compiled {
+                compiled.prepare(&statements, cancellation.clone().unwrap_or_default())
+            } else {
+                match &cancellation {
+                    Some(flag) => {
+                        CoreSession::from_text_batch_with_cancel(&statements, Arc::clone(flag))
+                    }
+                    None => CoreSession::from_text_batch(&statements),
+                }
+            };
+            if let Ok((engine, groups)) = result {
+                let harness = engine
+                    .kb()
+                    .prepare_materialization_plan()
+                    .err()
+                    .map(|error| format!("cannot prepare rule plan: {error}"))
+                    .into_iter()
+                    .collect();
+                let mut source_fact_ids: BTreeMap<String, Vec<Vec<u64>>> = BTreeMap::new();
+                for (statement, ids) in statements.iter().zip(groups) {
+                    source_fact_ids
+                        .entry((*statement).into())
+                        .or_default()
+                        .push(ids);
+                }
+                for line in knowledge_bases
+                    .iter()
+                    .flat_map(|source| source.source.lines())
+                    .map(str::trim)
+                    .filter(|line| line.starts_with('#'))
+                {
+                    source_fact_ids
+                        .entry(line.into())
+                        .or_default()
+                        .push(Vec::new());
+                }
+                return Self {
+                    engine,
+                    harness,
+                    source_fact_ids,
+                    scanned: Cell::new(false),
+                };
+            }
+        }
+        // Failed batches publish no engine. Replay only on this error path to
+        // retain the established source-line and error-class diagnostics.
         let engine = CoreSession::new();
-        engine.kb().set_cancel_flag(Arc::clone(&cancellation));
-        Self::load(engine, knowledge_bases, Some(&cancellation))
+        if let Some(flag) = &cancellation {
+            engine.kb().set_cancel_flag(Arc::clone(flag));
+        }
+        Self::load(engine, knowledge_bases, cancellation.as_deref())
     }
 
     fn load(
@@ -695,10 +932,16 @@ impl PreparedBase {
             &mut source_fact_ids,
             cancellation,
         );
+        if harness.is_empty() {
+            if let Err(error) = engine.kb().prepare_materialization_plan() {
+                harness.push(format!("cannot prepare rule plan: {error}"));
+            }
+        }
         Self {
             engine,
             harness,
             source_fact_ids,
+            scanned: Cell::new(false),
         }
     }
 
@@ -898,14 +1141,23 @@ struct EngineView<'a> {
 }
 
 impl EngineView<'_> {
+    fn assert_many(&self, statements: &[&str]) -> Result<Vec<Vec<u64>>, EngineError> {
+        let compiled = statements
+            .iter()
+            .map(|text| {
+                self.compiler
+                    .compile_text(text)
+                    .map(|buffer| (buffer, (*text).to_owned()))
+            })
+            .collect::<Result<Vec<_>, _>>()?;
+        self.knowledge_base.assert_compiled_batch(compiled)
+    }
+
     fn assert_text(&self, text: &str) -> Result<Vec<u64>, EngineError> {
-        let buffer = self.compiler.compile_text(text)?;
-        self.knowledge_base.validate_assertion(&buffer)?;
-        let mut ids = Vec::new();
-        for root in buffer.split_roots() {
-            ids.push(self.knowledge_base.assert_fact(root, text.to_owned())?);
-        }
-        Ok(ids)
+        Ok(self
+            .assert_many(&[text])?
+            .pop()
+            .expect("one statement group"))
     }
 
     fn query_holds(&self, text: &str) -> Result<nibli_engine::EngineQueryResult, EngineError> {
@@ -1139,6 +1391,31 @@ fn run_file_with_engine(
             continue;
         }
 
+        // Consecutive ordinary assertions have no intervening observations.
+        // Publish them with one atomic batch; directives and queries remain
+        // sequence boundaries. On rejection, the untouched KB uses the
+        // original linewise path, preserving diagnostics and failure behavior.
+        if matches!(expect, Expect::Default) && defect.is_none() {
+            let mut end = index;
+            while end < lines.len() {
+                let next = lines[end].trim();
+                if next.starts_with([':', '?']) {
+                    break;
+                }
+                end += 1;
+            }
+            if end > index {
+                let statements: Vec<_> = lines[index - 1..end]
+                    .iter()
+                    .map(|line| line.trim())
+                    .filter(|line| !line.is_empty() && !line.starts_with('#'))
+                    .collect();
+                if engine.assert_many(&statements).is_ok() {
+                    index = end;
+                    continue;
+                }
+            }
+        }
         let outcome = engine.assert_text(line);
         let expectation = std::mem::replace(&mut expect, Expect::Default);
         let marked = defect.take();
@@ -1273,8 +1550,32 @@ fn run_file_with_engine(
     report
 }
 
+fn scan_contradictions(knowledge_base: &KnowledgeBase, name: &str, report: &mut Report) {
+    let scanned = knowledge_base.check_contradictions_report();
+    report.findings.extend(
+        scanned
+            .violations
+            .into_iter()
+            .map(|finding| format!("{name}: contradiction: {finding}")),
+    );
+    report.harness.extend(
+        scanned
+            .unresolved
+            .into_iter()
+            .map(|gap| format!("{name}: contradiction check incomplete: {gap:?}")),
+    );
+}
+
 fn strata_dump(knowledge_base: &KnowledgeBase) -> (String, Vec<String>) {
-    let rows = knowledge_base.stratification_report();
+    let rows = match knowledge_base.stratification_report() {
+        Ok(rows) => rows,
+        Err(error) => {
+            return (
+                String::new(),
+                vec![format!("cannot inspect strata: {error}")],
+            );
+        }
+    };
     let max_stratum = rows.iter().map(|row| row.stratum).max().unwrap_or(0);
     let base = rows.iter().filter(|row| row.base).count();
     let mut output = String::new();
@@ -1333,6 +1634,112 @@ mod tests {
 
     fn run(text: &str) -> RunOutput {
         run_pin_files(&[], &[source("t.pins.nibli", text)], PinOptions::default())
+    }
+
+    #[test]
+    fn case_scans_reject_contradictions_and_incomplete_scans() {
+        let pins = source(
+            "query.pins.nibli",
+            ":expect-pins 1\n? person(Ara).\n# => TRUE\n",
+        );
+        let prepared = PreparedPinEngine::new(&[source("base", "person(Ara).")]);
+        let contradiction = prepared.run_case(
+            &[source("fixture", "~person(Ara).")],
+            &[pins],
+            PinOptions::default(),
+            true,
+        );
+        assert_eq!(
+            contradiction.exit_code, EXIT_FINDING,
+            "{}",
+            contradiction.stderr
+        );
+        assert!(!contradiction.findings.is_empty());
+        let clean = prepared.run_case(&[], &[pins], PinOptions::default(), true);
+        assert_eq!(clean.exit_code, EXIT_OK, "{}", clean.stderr);
+
+        let poisoned = PreparedPinEngine::new(&[source("base", "person(Ara).")]);
+        poisoned
+            .base
+            .engine
+            .kb()
+            .require_recovery("test uncertain mutation".into());
+        let incomplete = poisoned.run_case(&[], &[pins], PinOptions::default(), true);
+        assert_eq!(incomplete.exit_code, EXIT_HARNESS, "{}", incomplete.stderr);
+        assert!(incomplete.stderr.contains("incomplete"));
+    }
+
+    #[test]
+    fn cases_keep_fixtures_and_asserting_pin_files_isolated() {
+        let prepared = PreparedPinEngine::new(&[source("base", "person(Ara).")]);
+        let first = source(
+            "first.pins.nibli",
+            "person(Cia).\n:expect-pins 1\n? person(Bel).\n# => TRUE\n",
+        );
+        let second = source(
+            "second.pins.nibli",
+            ":expect-pins 2\n? person(Cia).\n# => FALSE\n? person(Bel).\n# => TRUE\n",
+        );
+        let output = prepared.run_case(
+            &[source("fixture", "person(Bel).")],
+            &[first, second],
+            PinOptions::default(),
+            true,
+        );
+        assert_eq!(output.exit_code, EXIT_OK, "{}", output.stderr);
+        assert_eq!(output.pins, 3);
+        let next = source(
+            "next.pins.nibli",
+            ":expect-pins 1\n? person(Bel).\n# => FALSE\n",
+        );
+        assert_eq!(
+            prepared
+                .run_case(&[], &[next], PinOptions::default(), true)
+                .exit_code,
+            EXIT_OK
+        );
+    }
+
+    #[test]
+    fn compiled_source_reuse_preserves_changed_statements_and_refusals() {
+        let original = "person(Ara).\nall $x: person($x) -> fit($x).";
+        let cache = CompiledSource::new(original);
+        let variant = "person(Bel).\nall $x: person($x) -> fit($x).";
+        let prepared = PreparedPinEngine::new_cached(
+            &[source("variant", variant)],
+            Arc::new(AtomicBool::new(false)),
+            &cache,
+        );
+        let pins = source(
+            "variant.pins.nibli",
+            ":expect-pins 2\n? fit(Ara).\n# => FALSE\n? fit(Bel).\n# => TRUE\n",
+        );
+        let output = prepared.run_case(&[], &[pins], PinOptions::default(), true);
+        assert_eq!(output.exit_code, EXIT_OK, "{}", output.stderr);
+        let invalid = PreparedPinEngine::new_cached(
+            &[source("invalid", "derived_only(\"fit\").\nfit(Ara).")],
+            Arc::new(AtomicBool::new(false)),
+            &cache,
+        );
+        assert_eq!(
+            invalid
+                .run_case(&[], &[pins], PinOptions::default(), true)
+                .exit_code,
+            EXIT_HARNESS
+        );
+    }
+
+    #[test]
+    fn ordinary_assertion_batches_keep_query_and_directive_boundaries() {
+        let result = run(
+            "person(Ara).\n\n# separate fixture paragraph\nperson(Bel).\n? person(Cia).\n# => FALSE\n:accept-scoped\nperson(Cia).\n? person(Cia).\n# => FALSE\nperson(Cia).\n# still the same assertion batch\nperson(Dee).\n? person(Cia).\n# => TRUE\n:expect-pins 4\n",
+        );
+        assert_eq!(result.exit_code, EXIT_OK, "{}", result.stderr);
+        assert_eq!(result.pins, 4);
+        let rejected =
+            run("derived_only(\"fit\").\nfit(Ara).\n? fit(Ara).\n# => FALSE\n:expect-pins 1\n");
+        assert_eq!(rejected.exit_code, EXIT_FINDING);
+        assert_eq!(rejected.findings.len(), 1, "{}", rejected.stderr);
     }
 
     #[test]

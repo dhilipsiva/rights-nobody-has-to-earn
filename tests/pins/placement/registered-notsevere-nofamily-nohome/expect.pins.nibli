@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 13
+# Generated placement-exhaustiveness matrix pins.
+# These ephemeral pins are outside chapter pin-count reconciliation.
+
+# registered-notsevere-nofamily-nohome
+# Every generated subject has standing.
+? person(Registered_NotSevere_NoFamily_NoHome).
+# => TRUE
+
+# Confinement is the switch separating placement from the free mirror.
+? prisoner(Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# Only confined rows receive the exact current case-bound custody lease.
+? correct(Placement_Case_Registered_NotSevere_NoFamily_NoHome, ActivePower).
+# => FALSE
+
+# Affirmative freedom is distinguished from both confinement and personhood alone.
+? free(Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# The generated severity setup reaches the declared axis state.
+? severe(Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# The family axis matches the generated fixture record.
+? family(Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# The placement-home availability axis matches the generated fixture record.
+? at(Registered_NotSevere_NoFamily_NoHome, PlacementHome).
+# => FALSE
+
+# The itemised shelter debt survives in confined and free rows.
+? owe(State, Dwell, Registered_NotSevere_NoFamily_NoHome).
+# => TRUE
+
+# Home-confinement eligibility matches the reviewed row.
+? fit(Registered_NotSevere_NoFamily_NoHome, Homestay).
+# => FALSE
+
+# Housing actuality matches the reviewed row.
+? dwell(Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# Every discovered destination is queried, including every opposite outcome.
+? building(HighSec, Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# Every discovered destination is queried, including every opposite outcome.
+? building(Homestay, Registered_NotSevere_NoFamily_NoHome).
+# => FALSE
+
+# The current placement alarm remains silent in the accepted matrix.
+? err(Registered_NotSevere_NoFamily_NoHome, Placement).
+# => FALSE

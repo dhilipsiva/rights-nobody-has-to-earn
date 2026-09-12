@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fresh-process temporal case TA-23.
+
+# The public office remains historically exposable.
+? authority(TA_Emergency_Office).
+# => TRUE
+
+# Emergency-shaped declarations are not case-bound custody leases.
+? prisoner(TA_Emergency_Subject).
+# => FALSE
+
+# The unsupported Court judgment remains a named defect.
+? err(TA_Emergency_Subject, TemporalAuthority).
+# => TRUE
+
+# The emergency-shaped records cannot erase standing.
+? person(TA_Emergency_Subject).
+# => TRUE

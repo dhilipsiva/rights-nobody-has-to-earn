@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+list(TA_Order_Opposite, Epoch_Review, Epoch_Current, EventSequence).
+observe(Chronicle, TA_Order_Opposite, Epoch_Review, EventStartScope).
+observe(TemporalReview, TA_Order_Opposite, Epoch_Review, EventStartScope).
+observe(Chronicle, TA_Order_Opposite, Epoch_Current, EventEndScope).
+observe(TemporalReview, TA_Order_Opposite, Epoch_Current, EventEndScope).
+list(TA_Log_Opposite, Epoch_Review, Epoch_Current, RecordSequence).
+observe(Chronicle, TA_Log_Opposite, Epoch_Review, RecordStartScope).
+observe(TemporalReview, TA_Log_Opposite, Epoch_Review, RecordStartScope).
+observe(Chronicle, TA_Log_Opposite, Epoch_Current, RecordEndScope).
+observe(TemporalReview, TA_Log_Opposite, Epoch_Current, RecordEndScope).

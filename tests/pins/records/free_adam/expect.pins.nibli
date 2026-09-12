@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Generated red-team queries for snapshot free_adam.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in free_adam.
+? decide(Adam, Ballot).
+# => TRUE
+
+# Reviewed expected consequence in free_adam.
+? dwell(Adam).
+# => FALSE
+
+# Reviewed expected consequence in free_adam.
+? entitled(Adam, event { dwell() }).
+# => TRUE
+
+# Reviewed expected consequence in free_adam.
+? expresses(Adam).
+# => FALSE
+
+# Reviewed expected consequence in free_adam.
+? free(Adam).
+# => TRUE
+
+# Reviewed expected consequence in free_adam.
+? owe(State, Dwell, Adam).
+# => TRUE
+
+# Reviewed expected consequence in free_adam.
+? prisoner(Adam).
+# => FALSE
+
+# Reviewed expected consequence in free_adam.
+? travel(Adam).
+# => TRUE

@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+free(Free_Severe_NoFamily_NoHome).
+attack(Free_Severe_NoFamily_NoHome, Victim_Free_Severe_NoFamily_NoHome).
+cruel(Free_Severe_NoFamily_NoHome, Victim_Free_Severe_NoFamily_NoHome).

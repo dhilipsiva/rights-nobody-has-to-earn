@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Fresh-process temporal case TA-11.
+
+# The witnessed event-claim identifier derives event-order status; its raw list retains the boundaries.
+? precede(Order_Court_A, EventSequence).
+# => TRUE
+
+# The separately witnessed log identifier derives record-order status.
+? precede(Order_Log_Court_A, RecordSequence).
+# => TRUE
+
+# The witnessed event claim contributes its exact two-endpoint path.
+? precede(Epoch_Current, Epoch_Review, EventPath).
+# => TRUE
+
+# The independently witnessed record claim contributes its exact path.
+? precede(Epoch_Current, Epoch_Review, RecordPath).
+# => TRUE
+
+# The honest event claim is not conflicted.
+? err(Order_Court_A, OrderConflict).
+# => FALSE
+
+# The honest record claim is not conflicted.
+? err(Order_Log_Court_A, OrderConflict).
+# => FALSE

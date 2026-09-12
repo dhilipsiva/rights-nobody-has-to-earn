@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+passport(Binding_Chronicle, ChronicleLineage, Constitution_Temporal, TA_Epoch_Current).
+observe(Chronicle, Binding_Chronicle, TA_Epoch_Current, LineageEpochScope).
+observe(TemporalReview, Binding_Chronicle, TA_Epoch_Current, LineageEpochScope).
+replace(TA_Epoch_Current, TA_Epoch_Previous, Chronicle).
+list(TA_Manifest_Previous, TA_Epoch_Previous, ManifestOrder, Chronicle).
+list(TA_Manifest_Current, TA_Epoch_Current, ManifestOrder, Chronicle).
+observe(Chronicle, TA_Manifest_Previous, TA_Epoch_Previous, ManifestScope).
+observe(TemporalReview, TA_Manifest_Previous, TA_Epoch_Previous, ManifestScope).
+observe(Chronicle, TA_Manifest_Current, TA_Epoch_Current, ManifestScope).
+observe(TemporalReview, TA_Manifest_Current, TA_Epoch_Current, ManifestScope).
+authorized(TA_Subject, VoidStatus, TA_Epoch_Previous).
+observe(Chronicle, TA_Subject, TA_Epoch_Previous, VoidScope).
+observe(TemporalReview, TA_Subject, TA_Epoch_Previous, VoidScope).
+carries(Chronicle, TA_Subject, TA_Epoch_Current, TA_Epoch_Previous, VoidCarry).
+carries(TemporalReview, TA_Subject, TA_Epoch_Current, TA_Epoch_Previous, VoidCarry).
+rotten(TA_Subject).

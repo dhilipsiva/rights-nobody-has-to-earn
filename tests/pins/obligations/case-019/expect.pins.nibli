@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-216 positive
+:expect-pins 1
+
+# FS-CCE-216 positive: Finding claimant continuity.
+? obliged(OblPositive216ContinuityBearer, OblPositive216ContinuityDuty, OblPositive216ContinuityStandard).
+# => TRUE

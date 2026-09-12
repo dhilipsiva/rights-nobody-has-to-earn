@@ -1,0 +1,90 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+replace(Epoch_Current, Epoch_Previous, Chronicle).
+list(Manifest_Previous, Epoch_Previous, ManifestOrder, Chronicle).
+list(Manifest_Current, Epoch_Current, ManifestOrder, Chronicle).
+passport(Binding_Chronicle, ChronicleLineage, Constitution_Temporal, Epoch_Current).
+observe(Chronicle, Binding_Chronicle, ChronicleLineage, LineageFamilyScope).
+observe(TemporalReview, Binding_Chronicle, ChronicleLineage, LineageFamilyScope).
+observe(Chronicle, Binding_Chronicle, Constitution_Temporal, LineageVersionScope).
+observe(TemporalReview, Binding_Chronicle, Constitution_Temporal, LineageVersionScope).
+observe(Chronicle, Binding_Chronicle, Epoch_Current, LineageEpochScope).
+observe(TemporalReview, Binding_Chronicle, Epoch_Current, LineageEpochScope).
+observe(Chronicle, Manifest_Previous, Epoch_Previous, ManifestScope).
+observe(TemporalReview, Manifest_Previous, Epoch_Previous, ManifestScope).
+observe(Chronicle, Manifest_Current, Epoch_Current, ManifestScope).
+observe(TemporalReview, Manifest_Current, Epoch_Current, ManifestScope).
+list(Order_Court_A, Epoch_Current, Epoch_Review, EventSequence).
+observe(Chronicle, Order_Court_A, Epoch_Current, EventStartScope).
+observe(TemporalReview, Order_Court_A, Epoch_Current, EventStartScope).
+observe(Chronicle, Order_Court_A, Epoch_Review, EventEndScope).
+observe(TemporalReview, Order_Court_A, Epoch_Review, EventEndScope).
+list(Order_Log_Court_A, Epoch_Current, Epoch_Review, RecordSequence).
+observe(Chronicle, Order_Log_Court_A, Epoch_Current, RecordStartScope).
+observe(TemporalReview, Order_Log_Court_A, Epoch_Current, RecordStartScope).
+observe(Chronicle, Order_Log_Court_A, Epoch_Review, RecordEndScope).
+observe(TemporalReview, Order_Log_Court_A, Epoch_Review, RecordEndScope).
+date(Window_Custody, Epoch_Current, Epoch_Review, TimeService).
+observe(Chronicle, Window_Custody, Epoch_Current, WindowStartScope).
+observe(TemporalReview, Window_Custody, Epoch_Current, WindowStartScope).
+observe(Chronicle, Window_Custody, Epoch_Review, WindowEndScope).
+observe(TemporalReview, Window_Custody, Epoch_Review, WindowEndScope).
+passport(Binding_Temporal, TemporalLeaseFamily, Constitution_Temporal, Epoch_Current).
+observe(Chronicle, Binding_Temporal, TemporalLeaseFamily, SourceFamilyScope).
+observe(TemporalReview, Binding_Temporal, TemporalLeaseFamily, SourceFamilyScope).
+observe(Chronicle, Binding_Temporal, Constitution_Temporal, SourceVersionScope).
+observe(TemporalReview, Binding_Temporal, Constitution_Temporal, SourceVersionScope).
+observe(Chronicle, Binding_Temporal, Epoch_Current, SourceEpochScope).
+observe(TemporalReview, Binding_Temporal, Epoch_Current, SourceEpochScope).
+injure(Confined_NotSevere_NoFamily_Home, Victim_Confined_NotSevere_NoFamily_Home).
+judge(Court, Confined_NotSevere_NoFamily_Home).
+cite(Court, Placement_Case_Confined_NotSevere_NoFamily_Home, Confined_NotSevere_NoFamily_Home).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, Confined_NotSevere_NoFamily_Home, CaseScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, Confined_NotSevere_NoFamily_Home, CaseScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, Court, HolderScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, Court, HolderScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, CourtJudgment, JudgmentScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, Victim_Confined_NotSevere_NoFamily_Home, InjuryVictimScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, Victim_Confined_NotSevere_NoFamily_Home, InjuryVictimScope).
+authorized(Placement_Case_Confined_NotSevere_NoFamily_Home, ActiveCustody, Placement_Case_Confined_NotSevere_NoFamily_Home).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, ActiveCustody, PowerScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, ActiveCustody, PowerScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, Placement_Case_Confined_NotSevere_NoFamily_Home, CaseBindingScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, Placement_Case_Confined_NotSevere_NoFamily_Home, CaseBindingScope).
+limit(Placement_Case_Confined_NotSevere_NoFamily_Home, Placement_Case_Confined_NotSevere_NoFamily_Home, Window_Custody).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, Window_Custody, LimitScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, Window_Custody, LimitScope).
+continue(Placement_Case_Confined_NotSevere_NoFamily_Home, Epoch_Current).
+observe(Chronicle, Placement_Case_Confined_NotSevere_NoFamily_Home, Epoch_Current, RenewalScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home, Epoch_Current, RenewalScope).
+endorses(Electorate, Placement_Case_Confined_NotSevere_NoFamily_Home).
+endorses(TemporalReview, Placement_Case_Confined_NotSevere_NoFamily_Home).
+at(Confined_NotSevere_NoFamily_Home, PlacementHome).
+injure(Confined_NotSevere_Family_Home, Victim_Confined_NotSevere_Family_Home).
+judge(Court, Confined_NotSevere_Family_Home).
+cite(Court, Placement_Case_Confined_NotSevere_Family_Home, Confined_NotSevere_Family_Home).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, Confined_NotSevere_Family_Home, CaseScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, Confined_NotSevere_Family_Home, CaseScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, Court, HolderScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, Court, HolderScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, CourtJudgment, JudgmentScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, Victim_Confined_NotSevere_Family_Home, InjuryVictimScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, Victim_Confined_NotSevere_Family_Home, InjuryVictimScope).
+authorized(Placement_Case_Confined_NotSevere_Family_Home, ActiveCustody, Placement_Case_Confined_NotSevere_Family_Home).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, ActiveCustody, PowerScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, ActiveCustody, PowerScope).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, Placement_Case_Confined_NotSevere_Family_Home, CaseBindingScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, Placement_Case_Confined_NotSevere_Family_Home, CaseBindingScope).
+limit(Placement_Case_Confined_NotSevere_Family_Home, Placement_Case_Confined_NotSevere_Family_Home, Window_Custody).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, Window_Custody, LimitScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, Window_Custody, LimitScope).
+continue(Placement_Case_Confined_NotSevere_Family_Home, Epoch_Current).
+observe(Chronicle, Placement_Case_Confined_NotSevere_Family_Home, Epoch_Current, RenewalScope).
+observe(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home, Epoch_Current, RenewalScope).
+endorses(Electorate, Placement_Case_Confined_NotSevere_Family_Home).
+endorses(TemporalReview, Placement_Case_Confined_NotSevere_Family_Home).
+family(Confined_NotSevere_Family_Home).
+at(Confined_NotSevere_Family_Home, PlacementHome).
+put(State, Confined_NotSevere_NoFamily_Home, HighSec).
+put(State, Confined_NotSevere_Family_Home, HighSec).

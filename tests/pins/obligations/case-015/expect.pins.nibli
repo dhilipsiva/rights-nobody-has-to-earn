@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-212 positive
+:expect-pins 1
+
+# FS-CCE-212 positive: All-entitlement non-reciprocity.
+? prevents(OblPositive212Target, ObligationFailureEntitlementGate).
+# => TRUE

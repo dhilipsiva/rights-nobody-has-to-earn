@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-09.
+
+# Divergent predecessor claims are visible as a typed lineage collision.
+? collide(TA_Divergent_Current, TransitionLineage).
+# => TRUE
+
+# A collided successor cannot be accepted through one convenient predecessor.
+? succeed(TA_Divergent_Current, Transition).
+# => FALSE
+
+# Two successors claiming one predecessor expose a typed fork collision.
+? collide(TA_Fork_First, TransitionLineage).
+# => TRUE
+
+# One manifest name cannot be remapped to two epochs.
+? collide(TA_Remapped_Manifest, ManifestBinding).
+# => TRUE
+
+# One epoch cannot silently select between duplicate manifest names.
+? collide(TA_Duplicate_Epoch, ManifestBinding).
+# => TRUE

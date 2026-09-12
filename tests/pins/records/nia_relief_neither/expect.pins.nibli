@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Generated red-team queries for snapshot nia_relief_neither.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in nia_relief_neither.
+? clear(Nia).
+# => FALSE
+
+# Reviewed expected consequence in nia_relief_neither.
+? judge(Appeals, Nia).
+# => FALSE
+
+# Reviewed expected consequence in nia_relief_neither.
+? permits(Appeals, Nia).
+# => FALSE
+
+# Reviewed expected consequence in nia_relief_neither.
+? person(Nia).
+# => TRUE
+
+# Reviewed expected consequence in nia_relief_neither.
+? prisoner(Nia).
+# => TRUE

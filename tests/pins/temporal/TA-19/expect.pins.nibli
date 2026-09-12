@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Fresh-process temporal case TA-19.
+
+# The stale raw continuation can receive only a bounded renewal-status tag.
+? concurrent(TA_Stale_Case, RenewalBound).
+# => TRUE
+
+# The shared source remains correctly bound to the current epoch.
+? reference(Binding_Temporal, SourceBound).
+# => TRUE
+
+# The shared window remains reviewed for the current epoch.
+? time(Window_Custody, ReviewedInterval).
+# => TRUE
+
+# A predecessor-bound continuation cannot satisfy the current ordered window.
+? correct(TA_Stale_Case, ActivePower).
+# => FALSE
+
+# Stale evidence cannot extend custody.
+? prisoner(TA_Stale_Subject).
+# => FALSE
+
+# Expiry or staleness removes power without fabricating a release act.
+? free(TA_Stale_Subject).
+# => FALSE

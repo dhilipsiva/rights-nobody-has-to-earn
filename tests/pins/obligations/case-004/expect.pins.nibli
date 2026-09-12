@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-201 positive
+:expect-pins 1
+
+# FS-CCE-201 positive: Public continuity duty.
+? obliged(OblPositive201Bearer, OblPositive201Duty, OblPositive201Standard).
+# => TRUE

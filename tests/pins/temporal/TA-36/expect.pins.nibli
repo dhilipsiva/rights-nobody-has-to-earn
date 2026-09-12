@@ -1,0 +1,43 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+# Fresh-process temporal case TA-36.
+
+# Transitive event closure discovers the two-edge reverse route.
+? precede(Epoch_Review, Epoch_Current, EventPath).
+# => TRUE
+
+# Independent record closure discovers its two-edge reverse route.
+? precede(Epoch_Review, Epoch_Current, RecordPath).
+# => TRUE
+
+# The original event edge is named as part of the longer cycle.
+? err(Order_Court_A, OrderConflict).
+# => TRUE
+
+# The original record edge is named as part of the longer cycle.
+? err(Order_Log_Court_A, OrderConflict).
+# => TRUE
+
+# Event-cycle taint reaches the window start.
+? collide(Epoch_Current, EventOrder).
+# => TRUE
+
+# Record-cycle taint reaches the window end.
+? collide(Epoch_Review, RecordOrder).
+# => TRUE
+
+# Reverse reachability derives the typed dependent-window collision.
+? collide(Window_Custody, WindowOrder).
+# => TRUE
+
+# A longer cycle cannot support a reviewed interval.
+? time(Window_Custody, ReviewedInterval).
+# => FALSE
+
+# Custody cannot survive the tainted order path.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# The restrictive conclusion is suspended.
+? prisoner(Adam).
+# => FALSE

@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+passport(Binding_Chronicle, ChronicleLineage, Constitution_Lineage_Alternate, Epoch_Current).
+observe(Chronicle, Binding_Chronicle, Constitution_Lineage_Alternate, LineageVersionScope).
+observe(TemporalReview, Binding_Chronicle, Constitution_Lineage_Alternate, LineageVersionScope).

@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-31.
+
+# The local witnessed link remains auditable as an accepted transition.
+? succeed(TA_Disjoint_Current, Transition).
+# => TRUE
+
+# No witnessed constitutional-lineage passport selects the disjoint endpoint.
+? succeed(TA_Disjoint_Current, TerminalTransition).
+# => FALSE
+
+# The rejection of legal effect is caused by lineage selection, not a fabricated collision.
+? collide(TA_Disjoint_Current, TransitionLineage).
+# => FALSE
+
+# Adverse carry cannot gain effect on a disjoint transition.
+? match(TA_Disjoint_Subject, CarriedVoid).
+# => FALSE
+
+# The disjoint carried status cannot void the subject.
+? false(TA_Disjoint_Subject).
+# => FALSE

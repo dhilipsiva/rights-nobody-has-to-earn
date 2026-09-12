@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Fresh-process temporal case TA-26.
+
+# The reverse event-claim identifier remains visible.
+? precede(TA_T3_Order_Reverse, EventSequence).
+# => TRUE
+
+# The reverse record-claim identifier remains visible.
+? precede(TA_T3_Log_Reverse, RecordSequence).
+# => TRUE
+
+# The accepted reverse paths derive the typed window-order collision.
+? collide(Window_Custody, WindowOrder).
+# => TRUE
+
+# A collided window cannot retain reviewed-interval status.
+? time(Window_Custody, ReviewedInterval).
+# => FALSE
+
+# The baseline case-renewal cannot outlive its collided window.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# The missing active-power conclusion removes the restrictive result.
+? prisoner(Adam).
+# => FALSE
+
+# Liberty returns through the existing absence-of-custody rule, not a new release gate.
+? travel(Adam).
+# => TRUE
+
+# Temporal suspension does not fabricate a release fact.
+? free(Adam).
+# => FALSE

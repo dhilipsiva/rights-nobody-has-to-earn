@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+# Fresh-process temporal case TA-30.
+
+# The one-write reverse date attack is present but lacks exact start and end observations.
+? date(Window_Custody, Epoch_Review, Epoch_Current, TimeService).
+# => TRUE
+
+# The identifier tag remains earned by the original witnessed forward tuple.
+? precede(Order_Court_A, EventSequence).
+# => TRUE
+
+# The record-order identifier tag remains earned by its witnessed forward tuple.
+? precede(Order_Log_Court_A, RecordSequence).
+# => TRUE
+
+# The original witnessed event tuple retains its forward path.
+? precede(Epoch_Current, Epoch_Review, EventPath).
+# => TRUE
+
+# The unwitnessed raw reverse tuple cannot borrow the claim tag to create a reverse path.
+? precede(Epoch_Review, Epoch_Current, EventPath).
+# => FALSE
+
+# The original witnessed record tuple retains its forward path.
+? precede(Epoch_Current, Epoch_Review, RecordPath).
+# => TRUE
+
+# The unwitnessed raw record tuple cannot create a reverse path.
+? precede(Epoch_Review, Epoch_Current, RecordPath).
+# => FALSE
+
+# An unwitnessed reverse tuple is not promoted to an event-order conflict.
+? err(Order_Court_A, OrderConflict).
+# => FALSE
+
+# Raw record order cannot borrow the identifier tag either.
+? err(Order_Log_Court_A, OrderConflict).
+# => FALSE
+
+# Neither unwitnessed reverse order tuples nor an unwitnessed reverse date can disable a reviewed window.
+? collide(Window_Custody, WindowOrder).
+# => FALSE
+
+# The exact witnessed forward path remains current.
+? correct(Case_Adam, ActivePower).
+# => TRUE
+
+# An unauthenticated raw tuple cannot revoke otherwise complete Court authority.
+? prisoner(Adam).
+# => TRUE

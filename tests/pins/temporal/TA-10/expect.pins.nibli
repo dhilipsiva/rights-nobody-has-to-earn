@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fresh-process temporal case TA-10.
+
+# Once both predecessor-standing witnesses are supplied, continuity is supportive rather than a denial gate.
+? person(TA_Unregistered).
+# => TRUE
+
+# The successor omission remains visible.
+? err(TA_Unregistered, StandingOmission).
+# => TRUE
+
+# Withholding either predecessor-standing witness can still suppress this derived route; universal standing is not a T1 result.
+? person(TA_Unwitnessed_Standing).
+# => FALSE
+
+# Without the second witness, T1 cannot name an omission; the independent standing-root contract must prevent the record from becoming an eligibility gate.
+? err(TA_Unwitnessed_Standing, StandingOmission).
+# => FALSE

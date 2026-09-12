@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+# Fresh-process temporal case TA-07.
+
+# Unattested member injection receives no effective carry status.
+? match(TA_Injected, CarriedVoid).
+# => FALSE
+
+# The injected carry cannot void the subject.
+? false(TA_Injected).
+# => FALSE
+
+# Absence of an effective void is not positive proof of clean authority.
+? permits(Review, TA_Injected).
+# => FALSE

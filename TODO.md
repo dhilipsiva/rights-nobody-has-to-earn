@@ -5,8 +5,8 @@
 **This tracker covers the principal formally audited constitutional
 specification and its Book 1 reader projection.** Book 2 has its own inactive
 tracker. This file is strictly future-facing: a bullet is deleted only after its
-frozen candidate receives a full receipt, its repository audit and closure land,
-and the tracker deletion passes the exact successor gate. Drafted work is not
+implementation is complete and the relevant pins and full verifier pass.
+Drafted work is not
 landed work. History belongs in git.
 
 The repo is producing one formally audited specification, two controlled books,
@@ -15,8 +15,8 @@ and a clean legacy deletion:
 - **The formally audited specification is the principal product.** Its exact
   version includes `new-book-plans/constitution.nibli`, the reviewed decisions
   and canonical contracts that define its scope, executable pins and
-  counterfactuals, generated projections, and the receipt-bound audit and closure
-  identifying one verified candidate. No individual report or partial green
+  counterfactuals, generated projections, and executable tests of their formal
+  consequences. No individual report or partial green
   check is the product by itself.
 
 - **book-1** — the active reader-facing derivation of the destination, in two
@@ -117,30 +117,14 @@ must never be confused with the claim postures Derived, Checked, Evidenced,
 Specified, Reasoned, or Unestablished. A drafted slice receives no audit warrant,
 may make no public completion claim, and remains part of its open parent item.
 
-Multiple slices may share one authoritative run only while uncommitted and only
-when they form one rule family or assurance concern. Use quick, focused,
-fingerprint, and governed refresh/check modes while the candidate changes. When
-all slices agree, freeze and fully stage the whole batch, run one full
-`--emit-receipt`, commit that exact candidate, and land its immediate audit and
-closure successors. Only the final tracker successor deletes the parent item.
-Never create semantic WIP commits for later receipt sharing, combine unrelated
-items merely to amortise the gate, or call a focused result an audit.
+Use focused checks while editing and the complete `./verify.sh` before calling
+an implementation verified. Ordinary commits and tracker updates need no receipt,
+audit/closure successor, staged-byte manifest, or scratch-file removal. The
+2026-09-12 author decision supersedes the earlier administrative batch protocol.
 
-Before freeze, move every durable decision from `tmp.txt` into its governed
-source and remove the scratch file. Receipt emission rejects a non-ignored
-untracked file; scratch memory cannot ride inside an audited candidate.
-
-Verification speed is a maintained property of the assurance system. Optimise
-it only through deterministic, watched, fail-closed mechanisms such as bounded
-parallel scheduling, compilation reuse, phase timing, and immutable parse/source
-caches. Do not skip semantic suites or retain semantic/mutant verdicts. Every
-status update and ETA separates active drafting/review, full-gate runtime, and
-audit/closure administration.
-
-New verifier coverage enters the authoritative gate only for a named material
-defect or evidence gap and with a watched failing control. Performance machinery
-likewise needs a measured bottleneck and equivalence controls; neither assurance
-growth nor optimisation proceeds by intuition alone.
+Verification means substantive Nibli pins plus contradiction scans. Keep the
+complete run within a few minutes; do not add hashing, provenance, freshness,
+publication, or audit-ledger gates. Prose consistency is a separate review.
 
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — they are collected in phase 1 rather than scattered.
@@ -1670,95 +1654,25 @@ unstaffed, unmeasured or physically impossible promise.
 Landed work is not recorded here; that is what git is for. What survives is the small
 set of things a command cannot teach you and a rename cannot re-derive.
 
-```
-./verify.sh                 # 34.89 s measured 2026-08-05 with an independently
-                            #   built clean 4cb02aa release supplied through NIBLI_PIN:
-                            #   engine, spine, assertion surface, assurance case,
-                            #   bounded red-team, amendment-semantics and placement
-                            #   contracts,
-                            #   evidence count, jargon,
-                            #   counted-claims hard
-                            #   gate, claim-comment check,
-                            #   registry check, absences, INVARIANT 1, the arity and
-                            #   counting guards, control scope, the pin
-                            #   suite (555 pins) with cross-file :expect-pins
-                            #   reconciliation, 15 record snapshots / 108 pins,
-                            #   40 temporal processes / 236 pins, nine amendment
-                            #   candidates / 44 pins, 24 placement rows / 336 pins,
-                            #   24 cold composed floor probes / 24 pins, five
-                            #   placement mutations / 73 pins, five placement
-                            #   mutation-baseline sabotages, one composed-standing-
-                            #   removal sabotage, the other executable
-                            #   controls, one record failing-pin control, and source
-                            #   counterfactuals in three diff classes — line deleted,
-                            #   line changed, line added
-./verify.sh --quick         # 2.22 s with the same pinned binary (2026-08-05): skips
-                            #   chapter/floor pins, executable record snapshots,
-                            #   amendment and placement executions, and counterfactuals
-                            #   — drafting feedback only, never a semantic gate
-./verify.sh --only <file>   # one pin file, selected release engine, --allow-shell, and
-                            #   the fixture's own KB chosen for counterfactual files;
-                            #   partial by design — use while the batch changes
-./verify.sh --table         # emit the claim-to-query table extracted from the pins
-```
+~~~bash
+./verify.sh                 # all substantive pins and contradiction scans
+./verify.sh --only <file>   # selected pin file in its declared test contexts; partial
+./verify.sh --list          # execution inventory
+./generate.sh state-form   # explicit authoring; installs rules and generated tests
+./generate.sh obligations
+./generate.sh spine
+~~~
 
-**Current verifier rule, protocol v6, superseding the historical command notes
-above on 2026-08-27.** Any semantic, executable, verifier, fixture,
-engine-binding, or generated-artifact candidate is fully staged and receives one `./verify.sh
---emit-receipt new-book-plans/verification-receipts` run.
-Full already contains the quick path. Only its exact audit, closure, and tracker
-successors may reuse it through the named `--commit-gate` transition while the
-heavyweight manifest remains byte-identical and the narrow structural gate
-passes. Missing local evidence or any unclassified delta fails closed without a
-silent full run. Heavyweight entry points share one Git-common-directory lock;
-contention exits 75 unless an explicit bounded `--wait-for-lock SECONDS` is
-supplied. The older timings, suite inventory, and v1 workflow remain
-historical measurements, not current commit instructions.
+The native runner uses the adjacent Nibli source checkout. No hash, receipt,
+Git-history, generated-report freshness, registry, or administrative checks run
+inside verification. Counterfactuals apply explicit semantic edits from
+`tests/pins/suites.json`; comment-only changes do not require copying the book.
+Keep source and prose review separate from logical verification.
 
-The 2026-08-30 workflow clarification changes candidate construction, not that
-gate. A coherent batch may be built through several bounded **uncommitted**
-authoring slices, using quick and focused modes while bytes move. `Drafted — not
-audited` carries no receipt and authorises no semantic commit. Once frozen, the
-whole fully staged batch receives one receipt and one candidate commit; changed
-bytes, intermediate semantic commits, or a second candidate cannot share it.
-
-The only exception is the exact `FS-SAU-42` forward recovery defined in section
-5 of `new-book-plans/full-society-scope-review-protocol.md`. It validates the
-two named historical v5 receipt/audit epochs and the named closed anchor from
-committed bytes, requires their digest-bound local evidence, performs no
-ancestor search, and is consumed by its successful closure.
-
-Prefer it to any check by hand. It exits non-zero on the first failure and names the
-claim that stopped being true — including exit 3, the failure that is good news: a
-pinned `:defect` stopped reproducing, and the script names it a REPAIR, not a
-regression, because the response is to drop the marker and rewrite the prose that
-called it a flaw, never to debug the harness. The script incrementally builds one
-native `rights-verify` executable whose embedded engine comes from the adjacent
-Nibli source checkout; receipt emission binds both that source revision and the
-exact verifier bytes. For standalone manual queries, use the **release**
-`nibli-pin` at or after `4cb02aade43b394374c40e661907ad66df3af3fe`, never
-`nibli-host`. A stale binary can preserve logical
-verdicts while violating bounded completion: pre-`5cec800` builds failed ordinary
-full-source opaque queries, and `5cec800` restored those but could still time out when
-standing itself had to traverse the T3 custody chain. `4cb02aa` closes that composed
-boundary, so a green pin result alone does not establish engine freshness. **Gate on
-the verifier's exit status, never on its output**: piping to `tail` swallows the exit, and `echo $?`
-followed by `&&` gates on the echo — both shapes shipped a red commit on 2026-08-02.
-The pre-receipt safe chain was `./verify.sh > /dev/null 2>&1 && git commit …`.
-That shell-shape lesson still applies, but protocol v6 uses `--emit-receipt` for
-the semantic commit and the exact named `--commit-gate` for each permitted
-administrative successor.
-
-**Every check was negative-controlled before it was trusted, and one failed the
-control.** The jargon pattern this file used to specify (`stratum|strata`) does not
-match *stratifier* — the likeliest leak of all, since it is the word this tracker uses
-constantly — and a chapter containing it passed; `strat` alone is too greedy, it matches
-"demonstrate". The shipped pattern uses three explicit stems. For the same reason every
-structural check carries a positive control: a grep that also matches a predicate's own
-rule head can never fail, which is a trap this repo fell into twice in one day.
-
-**Extending it as the book grows is the standing job**, and a new check earns its place
-by failing against a sabotaged copy before it is trusted, never after.
+Check the exit status: 1 means a pin mismatch or contradiction, 2 means a
+harness/incomplete-scan error, and 3 means a known-defect pin stopped reproducing.
+A focused pass is not a whole-book pass. A clean scan covers the encoded model,
+not every sentence of prose or the truth of outside evidence.
 
 **Two facts about the floor that no command teaches.**
 

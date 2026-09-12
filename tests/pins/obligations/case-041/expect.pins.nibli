@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-209 source-review independence
+:expect-pins 1
+
+# FS-CCE-209 withholds when source and record reviewer fuse.
+? obliged(OblFused209Bearer, OblFused209Duty, OblFused209Standard).
+# => FALSE

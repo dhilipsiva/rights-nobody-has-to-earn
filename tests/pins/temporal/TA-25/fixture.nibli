@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(TA_Status_Conflict).
+choose(Electorate, TA_Status_Conflict).
+rotten(TA_Status_Conflict).
+authorized(TA_Status_Conflict, VoidStatus, Epoch_Previous).
+observe(Chronicle, TA_Status_Conflict, Epoch_Previous, VoidScope).
+observe(TemporalReview, TA_Status_Conflict, Epoch_Previous, VoidScope).
+carries(Chronicle, TA_Status_Conflict, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, TA_Status_Conflict, Epoch_Current, Epoch_Previous, VoidCarry).
+authorized(TA_Status_Conflict, ClearStatus, Epoch_Previous).
+observe(Chronicle, TA_Status_Conflict, Epoch_Previous, ClearScope).
+observe(TemporalReview, TA_Status_Conflict, Epoch_Previous, ClearScope).
+carries(Chronicle, TA_Status_Conflict, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, TA_Status_Conflict, Epoch_Current, Epoch_Previous, ClearCarry).
+challenge(TA_Status_Conflict, TA_Status_Record, TemporalReview).

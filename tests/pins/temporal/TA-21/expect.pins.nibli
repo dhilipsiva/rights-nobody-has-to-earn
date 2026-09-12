@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fresh-process temporal case TA-21.
+
+# The supplied-record ballot consequence remains absent while adulthood evidence is disputed.
+? decide(Hano, Ballot).
+# => FALSE
+
+# Missing maturity cannot erase personhood.
+? person(Hano).
+# => TRUE
+
+# The claimant can make the disputed status visible.
+? err(Hano, MaturityDispute).
+# => TRUE
+
+# The challenge derives a duty without pretending the ballot is restored.
+? obliged(Appeals, Hano).
+# => TRUE

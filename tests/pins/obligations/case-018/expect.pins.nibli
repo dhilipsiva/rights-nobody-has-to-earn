@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-215 positive
+:expect-pins 1
+
+# FS-CCE-215 positive: Finding alternate escalation.
+? obliged(OblPositive215Alternate, OblPositive215AlternateDuty, OblPositive215AlternateStandard).
+# => TRUE

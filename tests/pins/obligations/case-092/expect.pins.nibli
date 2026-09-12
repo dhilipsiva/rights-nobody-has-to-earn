@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-213 omission FindingReceiptEvidenceScope
+:expect-pins 1
+
+# FS-CCE-213 omitting FindingReceiptEvidenceScope withholds the effect.
+? obliged(Review, OblSpecialOmit213ReaderDuty, OblSpecialOmit213ReaderStandard).
+# => FALSE

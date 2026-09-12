@@ -15224,6 +15224,22 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "NoForbiddenDistrictingPurpose",
+          "DistrictingPurposeScope"
+        ],
+        [
+          "PartyOrCoalitionEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "IncumbentEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "ProtectedGroundDilution",
+          "ForbiddenDistrictingPurposeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -15417,6 +15433,22 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "NoForbiddenDistrictingPurpose",
+          "DistrictingPurposeScope"
+        ],
+        [
+          "PartyOrCoalitionEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "IncumbentEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "ProtectedGroundDilution",
+          "ForbiddenDistrictingPurposeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -15610,6 +15642,22 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "NoForbiddenDistrictingPurpose",
+          "DistrictingPurposeScope"
+        ],
+        [
+          "PartyOrCoalitionEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "IncumbentEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "ProtectedGroundDilution",
+          "ForbiddenDistrictingPurposeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -15803,6 +15851,22 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "NoForbiddenDistrictingPurpose",
+          "DistrictingPurposeScope"
+        ],
+        [
+          "PartyOrCoalitionEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "IncumbentEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "ProtectedGroundDilution",
+          "ForbiddenDistrictingPurposeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",

@@ -1,0 +1,43 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+# Fresh-process temporal case TA-14.
+
+# Exact raw power and case observations produce only an identifier-plus-status conclusion.
+? succeed(TA_Case, PowerBound).
+# => TRUE
+
+# Exact raw subject and holder observations produce the bounded case status.
+? related(TA_Case, CaseBound).
+# => TRUE
+
+# The raw limit is independently witnessed before window-bound status derives.
+? orderly(TA_Case, WindowBound).
+# => TRUE
+
+# The raw continuation is independently witnessed before renewal-bound status derives.
+? concurrent(TA_Case, RenewalBound).
+# => TRUE
+
+# The shared exact family, source-version, and epoch fields derive a bounded source status.
+? reference(Binding_Temporal, SourceBound).
+# => TRUE
+
+# The case-renewal has positive active-power status; raw case and citation fields retain the exact subject binding.
+? correct(TA_Case, ActivePower).
+# => TRUE
+
+# Only a valid exact case-renewal becomes active public power.
+? match(TA_Case, ActivePower).
+# => TRUE
+
+# The restrictive conclusion consumes the exact positive lease.
+? prisoner(TA_Custody_Subject).
+# => TRUE
+
+# Custody preserves personhood.
+? person(TA_Custody_Subject).
+# => TRUE
+
+# A current lease does not fabricate release.
+? free(TA_Custody_Subject).
+# => FALSE

@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-20.
+
+# The explicit release act remains a distinct writable fact.
+? free(Adam).
+# => TRUE
+
+# A valid release blocks custody even if a lease exists.
+? prisoner(Adam).
+# => FALSE
+
+# Release does not erase standing.
+? person(Adam).
+# => TRUE
+
+# Affirmative liberty returns when custody no longer derives.
+? travel(Adam).
+# => TRUE
+
+# Historical public answerability remains available after one case release.
+? authority(Court).
+# => TRUE

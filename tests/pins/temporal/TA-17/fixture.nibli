@@ -1,0 +1,34 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(TA_Wrong_Source_Subject).
+person(TA_Wrong_Source_Victim).
+injure(TA_Wrong_Source_Subject, TA_Wrong_Source_Victim).
+judge(Court, TA_Wrong_Source_Subject).
+cite(Court, TA_Wrong_Source_Case, TA_Wrong_Source_Subject).
+observe(Chronicle, TA_Wrong_Source_Case, TA_Wrong_Source_Subject, CaseScope).
+observe(TemporalReview, TA_Wrong_Source_Case, TA_Wrong_Source_Subject, CaseScope).
+observe(Chronicle, TA_Wrong_Source_Case, Court, HolderScope).
+observe(TemporalReview, TA_Wrong_Source_Case, Court, HolderScope).
+observe(Chronicle, TA_Wrong_Source_Case, CourtJudgment, JudgmentScope).
+observe(TemporalReview, TA_Wrong_Source_Case, CourtJudgment, JudgmentScope).
+observe(Chronicle, TA_Wrong_Source_Case, TA_Wrong_Source_Victim, InjuryVictimScope).
+observe(TemporalReview, TA_Wrong_Source_Case, TA_Wrong_Source_Victim, InjuryVictimScope).
+authorized(TA_Wrong_Source_Case, ActiveCustody, TA_Wrong_Source_Case).
+observe(Chronicle, TA_Wrong_Source_Case, ActiveCustody, PowerScope).
+observe(TemporalReview, TA_Wrong_Source_Case, ActiveCustody, PowerScope).
+observe(Chronicle, TA_Wrong_Source_Case, TA_Wrong_Source_Case, CaseBindingScope).
+observe(TemporalReview, TA_Wrong_Source_Case, TA_Wrong_Source_Case, CaseBindingScope).
+limit(TA_Wrong_Source_Case, TA_Wrong_Source_Case, Window_Custody).
+observe(Chronicle, TA_Wrong_Source_Case, Window_Custody, LimitScope).
+observe(TemporalReview, TA_Wrong_Source_Case, Window_Custody, LimitScope).
+continue(TA_Wrong_Source_Case, Epoch_Current).
+observe(Chronicle, TA_Wrong_Source_Case, Epoch_Current, RenewalScope).
+observe(TemporalReview, TA_Wrong_Source_Case, Epoch_Current, RenewalScope).
+passport(TA_Wrong_Source_Binding, TemporalLeaseFamily, Constitution_Other, Epoch_Current).
+observe(Chronicle, TA_Wrong_Source_Binding, TemporalLeaseFamily, SourceFamilyScope).
+observe(TemporalReview, TA_Wrong_Source_Binding, TemporalLeaseFamily, SourceFamilyScope).
+observe(Chronicle, TA_Wrong_Source_Binding, Constitution_Other, SourceVersionScope).
+observe(TemporalReview, TA_Wrong_Source_Binding, Constitution_Other, SourceVersionScope).
+observe(Chronicle, TA_Wrong_Source_Binding, Epoch_Current, SourceEpochScope).
+observe(TemporalReview, TA_Wrong_Source_Binding, Epoch_Current, SourceEpochScope).
+endorses(Electorate, TA_Wrong_Source_Case).
+endorses(TemporalReview, TA_Wrong_Source_Case).

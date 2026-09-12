@@ -1,0 +1,40 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+# Generated full-source amendment-semantics pins for AS-04.
+# Candidate source deltas are authored by the audit, never enacted by become.
+
+# The declared target is not registered.
+? permanent(Art_Mint).
+# => FALSE
+
+# The harmless self-declared target is present.
+? adjust(Amend_Misdirect, Art_Mint).
+# => TRUE
+
+# No Art_Floor target label discloses the direct source effect.
+? adjust(Amend_Misdirect, Art_Floor).
+# => FALSE
+
+# The falsely targeted proposal is not marked false.
+? false(Amend_Misdirect).
+# => FALSE
+
+# The falsely targeted proposal receives the passing label.
+? become(Amend_Misdirect, Law).
+# => TRUE
+
+# The independently authored source effect removes the promise.
+? entitled(Adam, event { eats() }).
+# => FALSE
+
+# Cira is not confined before the adverse-rule probe.
+? prisoner(Cira).
+# => FALSE
+
+# The direct deletion removes the floor relation from the structural wall.
+:accept
+all $x: person($x) & ~eats($x) -> prisoner($x).
+
+# The accepted rule confines a roster person lacking eats.
+? prisoner(Cira).
+# => TRUE

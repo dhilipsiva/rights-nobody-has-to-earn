@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+# Generated full-source amendment-semantics pins for AS-08.
+# Candidate source deltas are authored by the audit, never enacted by become.
+
+# The candidate directly puts the vocabulary label on the register without using a proposal.
+? permanent(Art_Evidence).
+# => TRUE
+
+# The exact admission edit makes the appended corpus fact writable.
+? rich(Adam).
+# => TRUE

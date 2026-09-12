@@ -1,0 +1,196 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 48
+# Generated observations for mutation painted-free-person-delivery.
+# The source change is constructed by this audit and is never enacted.
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_NotSevere_NoFamily_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_NotSevere_NoFamily_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_NotSevere_Family_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_NotSevere_Family_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_Severe_NoFamily_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_Severe_NoFamily_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_Severe_Family_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Free_Severe_Family_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_NotSevere_NoFamily_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_NotSevere_NoFamily_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_NotSevere_Family_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_NotSevere_Family_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_Severe_NoFamily_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_Severe_NoFamily_Home).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_Severe_Family_NoHome).
+# => TRUE
+
+# The deliberate source mutation flips this exact reviewed matrix result.
+? dwell(Registered_Severe_Family_Home).
+# => TRUE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_NotSevere_NoFamily_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_NotSevere_NoFamily_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_NotSevere_NoFamily_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_NotSevere_NoFamily_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_NotSevere_Family_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_NotSevere_Family_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_NotSevere_Family_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_NotSevere_Family_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_Severe_NoFamily_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_Severe_NoFamily_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_Severe_NoFamily_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_Severe_NoFamily_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_Severe_Family_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_Severe_Family_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Free_Severe_Family_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Free_Severe_Family_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_NotSevere_NoFamily_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_NotSevere_NoFamily_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_NotSevere_NoFamily_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_NotSevere_NoFamily_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_NotSevere_Family_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_NotSevere_Family_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_NotSevere_Family_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_NotSevere_Family_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_Severe_NoFamily_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_Severe_NoFamily_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_Severe_NoFamily_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_Severe_NoFamily_Home, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_Severe_Family_NoHome, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_Severe_Family_NoHome, Placement).
+# => FALSE
+
+# A positive reviewed placement report makes the alarm-silence probe non-vacuous.
+? put(State, Registered_Severe_Family_Home, LowSec).
+# => TRUE
+
+# The constitutional placement alarm remains silent in this harmful candidate.
+? err(Registered_Severe_Family_Home, Placement).
+# => FALSE

@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-209 positive
+:expect-pins 1
+
+# FS-CCE-209 positive: Bounded voluntary-duty cure.
+? obliged(OblPositive209Bearer, OblPositive209Duty, OblPositive209Standard).
+# => TRUE

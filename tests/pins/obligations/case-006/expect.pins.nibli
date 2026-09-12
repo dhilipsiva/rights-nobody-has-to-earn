@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-203 positive
+:expect-pins 2
+
+# FS-CCE-203 positive: Delegation without public discharge.
+? obliged(OblPositive203Bearer, OblPositive203Duty, OblPositive203Standard).
+# => TRUE
+
+# FS-CCE-203 legal conclusion 2 remains source-bound.
+? obliged(State, OblPositive203Duty, OblPositive203Standard).
+# => TRUE

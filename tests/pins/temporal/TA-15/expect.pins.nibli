@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+# Fresh-process temporal case TA-15.
+
+# The exact power and case fields are independently present.
+? succeed(TA_No_Renewal_Case, PowerBound).
+# => TRUE
+
+# The exact subject and holder fields are independently present.
+? related(TA_No_Renewal_Case, CaseBound).
+# => TRUE
+
+# No current continuation status is manufactured from the other typed inputs.
+? concurrent(TA_No_Renewal_Case, RenewalBound).
+# => FALSE
+
+# Case facts alone do not create active temporal authority.
+? correct(TA_No_Renewal_Case, ActivePower).
+# => FALSE
+
+# Missing renewal evidence removes the restrictive conclusion.
+? prisoner(TA_No_Renewal).
+# => FALSE
+
+# Liberty follows the absence of lawful custody without a second release gate.
+? travel(TA_No_Renewal).
+# => TRUE
+
+# The authority lapse does not invent a completed-release record.
+? free(TA_No_Renewal).
+# => FALSE
+
+# The unsupported attempted power is a named defect.
+? err(TA_No_Renewal, TemporalAuthority).
+# => TRUE
+
+# The challenge reaches a duty while remaining non-self-executing.
+? obliged(Appeals, TA_No_Renewal).
+# => TRUE

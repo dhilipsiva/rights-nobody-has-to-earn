@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-389 positive
+:expect-pins 2
+
+# FS-CCE-389 positive: Certified positive disclosure nonresponse.
+? obliged(OblPositive389DisclosureNonresponse, OblPositive389DisclosureNonresponseDuty, OblPositive389DisclosureNonresponseStandard).
+# => TRUE
+
+# FS-CCE-389 legal conclusion 2 remains source-bound.
+? prevents(OblPositive389DisclosureNonresponse, SilenceAsDisclosureAction).
+# => TRUE

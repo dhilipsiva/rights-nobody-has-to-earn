@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# origin omission DutyContinuityScope
+:expect-pins 1
+
+# Omitting DutyContinuityScope withholds the duty origin.
+? obliged(OblOmit19Bearer, OblOmit19Duty, OblOmit19Standard).
+# => FALSE

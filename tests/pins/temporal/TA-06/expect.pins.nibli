@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+# Fresh-process temporal case TA-06.
+
+# A two-way transition cycle marks the live successor with the typed lineage collision.
+? collide(Epoch_Current, TransitionLineage).
+# => TRUE
+
+# The replayed predecessor receives the same typed lineage collision.
+? collide(Epoch_Previous, TransitionLineage).
+# => TRUE
+
+# The reverse link cannot create a fresh accepted successor.
+? succeed(Epoch_Previous, Transition).
+# => FALSE

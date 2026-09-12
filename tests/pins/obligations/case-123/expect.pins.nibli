@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# CarryForgery finding route
+:expect-pins 2
+
+# The exact CarryForgery finding route reaches its typed reader duty.
+? obliged(Appeals, ReadCarryForgeryFindingDuty, ReadCarryForgeryFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no CarryForgery reader duty.
+? obliged(WrongCarryForgeryReader, ReadCarryForgeryFindingDuty, ReadCarryForgeryFindingStandard).
+# => FALSE

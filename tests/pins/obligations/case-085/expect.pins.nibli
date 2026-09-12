@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-204 omission PrivateDutySourceScope
+:expect-pins 1
+
+# FS-CCE-204 omitting PrivateDutySourceScope withholds the effect.
+? obliged(OblSpecialOmit204Bearer, OblSpecialOmit204Duty, OblSpecialOmit204Standard).
+# => FALSE

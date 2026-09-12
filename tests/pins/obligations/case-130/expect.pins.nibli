@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# TemporalRecord finding route
+:expect-pins 2
+
+# The exact TemporalRecord finding route reaches its typed reader duty.
+? obliged(Appeals, ReadTemporalRecordFindingDuty, ReadTemporalRecordFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no TemporalRecord reader duty.
+? obliged(WrongTemporalRecordReader, ReadTemporalRecordFindingDuty, ReadTemporalRecordFindingStandard).
+# => FALSE

@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-217 positive
+:expect-pins 2
+
+# FS-CCE-217 positive: Individual remedy and prior-decision review.
+? obliged(OblPositive217RemedyBearer, OblPositive217IndividualRemedyDuty, OblPositive217IndividualRemedyStandard).
+# => TRUE
+
+# FS-CCE-217 legal conclusion 2 remains source-bound.
+? obliged(OblPositive217PriorReviewBearer, OblPositive217PriorReviewDuty, OblPositive217PriorReviewStandard).
+# => TRUE

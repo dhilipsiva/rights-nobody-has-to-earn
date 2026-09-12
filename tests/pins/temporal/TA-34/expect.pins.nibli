@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Fresh-process temporal case TA-34.
+
+# Two fully witnessed versions on one binding derive the typed source conflict.
+? collide(Binding_Temporal, SourceBinding).
+# => TRUE
+
+# A conflicted binding cannot retain the compact effective-source status.
+? reference(Binding_Temporal, SourceBound).
+# => FALSE
+
+# Source ambiguity removes positive custody authority.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# The Court cannot choose the convenient source version.
+? prisoner(Adam).
+# => FALSE
+
+# The inactive lease is visible on the lease identifier.
+? err(Case_Adam, TemporalRecord).
+# => TRUE
+
+# The person-facing attempted authority remains separately visible.
+? err(Adam, TemporalAuthority).
+# => TRUE

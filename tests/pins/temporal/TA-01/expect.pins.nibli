@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+# Fresh-process temporal case TA-01.
+
+# A missing successor never becomes an accepted transition.
+? succeed(TA_Epoch_Current, Transition).
+# => FALSE
+
+# No carry effect is manufactured from the predecessor alone.
+? match(TA_Subject, CarriedVoid).
+# => FALSE

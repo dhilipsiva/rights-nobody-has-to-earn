@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(TA_No_Renewal).
+person(TA_No_Renewal_Victim).
+injure(TA_No_Renewal, TA_No_Renewal_Victim).
+judge(Court, TA_No_Renewal).
+cite(Court, TA_No_Renewal_Case, TA_No_Renewal).
+observe(Chronicle, TA_No_Renewal_Case, TA_No_Renewal, CaseScope).
+observe(TemporalReview, TA_No_Renewal_Case, TA_No_Renewal, CaseScope).
+observe(Chronicle, TA_No_Renewal_Case, Court, HolderScope).
+observe(TemporalReview, TA_No_Renewal_Case, Court, HolderScope).
+observe(Chronicle, TA_No_Renewal_Case, CourtJudgment, JudgmentScope).
+observe(TemporalReview, TA_No_Renewal_Case, CourtJudgment, JudgmentScope).
+observe(Chronicle, TA_No_Renewal_Case, TA_No_Renewal_Victim, InjuryVictimScope).
+observe(TemporalReview, TA_No_Renewal_Case, TA_No_Renewal_Victim, InjuryVictimScope).
+authorized(TA_No_Renewal_Case, ActiveCustody, TA_No_Renewal_Case).
+observe(Chronicle, TA_No_Renewal_Case, ActiveCustody, PowerScope).
+observe(TemporalReview, TA_No_Renewal_Case, ActiveCustody, PowerScope).
+observe(Chronicle, TA_No_Renewal_Case, TA_No_Renewal_Case, CaseBindingScope).
+observe(TemporalReview, TA_No_Renewal_Case, TA_No_Renewal_Case, CaseBindingScope).
+challenge(TA_No_Renewal, TA_No_Renewal_Case, TemporalReview).

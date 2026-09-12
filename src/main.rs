@@ -1,23 +1,15 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 
-// The binary retains regeneration, fingerprint, and historical-parity seams
-// beside the one production verification path. They are exercised directly by
-// focused tests and standalone maintenance tools rather than the CLI.
+// Shared pin machinery is also used by the explicit authoring executable.
 #![allow(dead_code)]
 
-mod checks;
+#[path = "verify_cli.rs"]
 mod cli;
 mod context;
-mod diagnostics;
-mod digest;
-mod lock;
+mod execution;
 mod pin;
-mod process;
-mod receipt;
-mod refresh;
-mod report;
+#[path = "runner_pool.rs"]
 mod scheduler;
-mod suite;
 
 use std::process::ExitCode;
 

@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-208 omission RoleDutyCorrectionScope
+:expect-pins 1
+
+# FS-CCE-208 omitting RoleDutyCorrectionScope withholds the effect.
+? obliged(OblSpecialOmit208Bearer, OblSpecialOmit208Duty, OblSpecialOmit208Standard).
+# => FALSE

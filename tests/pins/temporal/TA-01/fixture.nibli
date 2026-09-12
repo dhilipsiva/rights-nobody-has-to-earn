@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+list(TA_Manifest_Previous, TA_Epoch_Previous, ManifestOrder, Chronicle).
+observe(Chronicle, TA_Manifest_Previous, TA_Epoch_Previous, ManifestScope).
+observe(TemporalReview, TA_Manifest_Previous, TA_Epoch_Previous, ManifestScope).

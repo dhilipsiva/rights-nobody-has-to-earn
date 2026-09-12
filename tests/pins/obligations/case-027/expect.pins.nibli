@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-388 positive
+:expect-pins 1
+
+# FS-CCE-388 positive: Disclosure reader and action duty.
+? obliged(OblPositive388DisclosureReader, OblPositive388DisclosureReaderDuty, OblPositive388DisclosureReaderStandard).
+# => TRUE

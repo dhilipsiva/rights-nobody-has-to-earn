@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-206 positive
+:expect-pins 1
+
+# FS-CCE-206 positive: Person-duty continuity and restoration.
+? obliged(OblPositive206Bearer, OblPositive206Duty, OblPositive206Standard).
+# => TRUE

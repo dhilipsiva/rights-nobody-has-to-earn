@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# RecordDisappearance finding route
+:expect-pins 2
+
+# The exact RecordDisappearance finding route reaches its typed reader duty.
+? obliged(Appeals, ReadRecordDisappearanceFindingDuty, ReadRecordDisappearanceFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no RecordDisappearance reader duty.
+? obliged(WrongRecordDisappearanceReader, ReadRecordDisappearanceFindingDuty, ReadRecordDisappearanceFindingStandard).
+# => FALSE

@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# TemporalDispute finding route
+:expect-pins 2
+
+# The exact TemporalDispute finding route reaches its typed reader duty.
+? obliged(Appeals, ReadTemporalDisputeFindingDuty, ReadTemporalDisputeFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no TemporalDispute reader duty.
+? obliged(WrongTemporalDisputeReader, ReadTemporalDisputeFindingDuty, ReadTemporalDisputeFindingStandard).
+# => FALSE

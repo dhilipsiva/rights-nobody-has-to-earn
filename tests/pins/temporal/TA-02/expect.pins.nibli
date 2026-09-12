@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Fresh-process temporal case TA-02.
+
+# The distinct, non-divergent witnessed successor is accepted; the raw replace fact retains its predecessor.
+? succeed(TA_Epoch_Current, Transition).
+# => TRUE
+
+# The independently witnessed lineage passport selects this collision-free endpoint as the canonical terminal successor.
+? succeed(TA_Epoch_Current, TerminalTransition).
+# => TRUE
+
+# Exact predecessor and successor member attestations give the raw carry legal effect.
+? match(TA_Subject, CarriedVoid).
+# => TRUE
+
+# The reconciled mark, not the raw rotten entry alone, reaches the existing void consequence.
+? false(TA_Subject).
+# => TRUE
+
+# Honest carry is not misclassified as omission.
+? err(TA_Subject, CarryOmission).
+# => FALSE
+
+# Honest carry is not misclassified as forgery.
+? err(TA_Subject, CarryForgery).
+# => FALSE

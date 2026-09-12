@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Generated red-team queries for snapshot nia_precleared.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in nia_precleared.
+? clean(Nia).
+# => TRUE
+
+# Reviewed expected consequence in nia_precleared.
+? judge(Appeals, Nia).
+# => TRUE
+
+# Reviewed expected consequence in nia_precleared.
+? person(Nia).
+# => TRUE
+
+# Reviewed expected consequence in nia_precleared.
+? rotten(Nia).
+# => FALSE

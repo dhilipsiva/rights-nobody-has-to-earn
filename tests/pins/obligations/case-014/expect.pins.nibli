@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-211 positive
+:expect-pins 2
+
+# FS-CCE-211 positive: Bounded performance excuse.
+? obliged(OblPositive211Bearer, OblPositive211Duty, OblPositive211Standard).
+# => TRUE
+
+# FS-CCE-211 legal conclusion 2 remains source-bound.
+? obliged(OblPositive211Alternate, OblPositive211AlternateDuty, OblPositive211AlternateStandard).
+# => TRUE

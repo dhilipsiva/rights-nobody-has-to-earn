@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(Registered_Severe_Family_Home).
+attack(Registered_Severe_Family_Home, Victim_Registered_Severe_Family_Home).
+cruel(Registered_Severe_Family_Home, Victim_Registered_Severe_Family_Home).
+family(Registered_Severe_Family_Home).
+at(Registered_Severe_Family_Home, PlacementHome).

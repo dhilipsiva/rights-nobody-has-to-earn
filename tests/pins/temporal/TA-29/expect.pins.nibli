@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Fresh-process temporal case TA-29.
+
+# The compact source tag remains honestly earned for the predecessor passport.
+? reference(Binding_Temporal, SourceBound).
+# => TRUE
+
+# The predecessor tag cannot authenticate the incompletely witnessed current source tuple.
+? correct(Case_Adam, ActivePower).
+# => FALSE
+
+# Stale source evidence cannot extend custody authority.
+? prisoner(Adam).
+# => FALSE
+
+# Suspending authority still does not manufacture release.
+? free(Adam).
+# => FALSE
+
+# The attempted but inactive case authority remains a named defect.
+? err(Adam, TemporalAuthority).
+# => TRUE

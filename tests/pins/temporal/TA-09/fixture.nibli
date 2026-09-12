@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+replace(TA_Divergent_Current, TA_Divergent_Previous_A, Chronicle).
+replace(TA_Divergent_Current, TA_Divergent_Previous_B, Chronicle).
+list(TA_Divergent_Manifest_Previous, TA_Divergent_Previous_A, ManifestOrder, Chronicle).
+list(TA_Divergent_Manifest_Current, TA_Divergent_Current, ManifestOrder, Chronicle).
+observe(Chronicle, TA_Divergent_Manifest_Previous, TA_Divergent_Previous_A, ManifestScope).
+observe(TemporalReview, TA_Divergent_Manifest_Previous, TA_Divergent_Previous_A, ManifestScope).
+observe(Chronicle, TA_Divergent_Manifest_Current, TA_Divergent_Current, ManifestScope).
+observe(TemporalReview, TA_Divergent_Manifest_Current, TA_Divergent_Current, ManifestScope).
+replace(TA_Fork_First, TA_Fork_Previous, Chronicle).
+replace(TA_Fork_Second, TA_Fork_Previous, Chronicle).
+list(TA_Remapped_Manifest, TA_Remap_Epoch_A, ManifestOrder, Chronicle).
+list(TA_Remapped_Manifest, TA_Remap_Epoch_B, ManifestOrder, Chronicle).
+list(TA_Duplicate_Manifest_A, TA_Duplicate_Epoch, ManifestOrder, Chronicle).
+list(TA_Duplicate_Manifest_B, TA_Duplicate_Epoch, ManifestOrder, Chronicle).

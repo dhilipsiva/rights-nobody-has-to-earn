@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(TA_Reused_Subject).
+person(TA_Reused_Victim).
+injure(TA_Reused_Subject, TA_Reused_Victim).
+judge(Court, TA_Reused_Subject).
+cite(Court, TA_Reused_Case, TA_Reused_Subject).
+observe(Chronicle, TA_Reused_Case, TA_Reused_Subject, CaseScope).
+observe(TemporalReview, TA_Reused_Case, TA_Reused_Subject, CaseScope).
+observe(Chronicle, TA_Reused_Case, Court, HolderScope).
+observe(TemporalReview, TA_Reused_Case, Court, HolderScope).
+observe(Chronicle, TA_Reused_Case, CourtJudgment, JudgmentScope).
+observe(TemporalReview, TA_Reused_Case, CourtJudgment, JudgmentScope).
+observe(Chronicle, TA_Reused_Case, TA_Reused_Victim, InjuryVictimScope).
+observe(TemporalReview, TA_Reused_Case, TA_Reused_Victim, InjuryVictimScope).
+authorized(TA_Reused_Case, ActiveCustody, TA_Reused_Case).
+authorized(TA_Reused_Case, ActiveCustody, TA_Other_Case).
+observe(Chronicle, TA_Reused_Case, ActiveCustody, PowerScope).
+observe(TemporalReview, TA_Reused_Case, ActiveCustody, PowerScope).
+observe(Chronicle, TA_Reused_Case, TA_Reused_Case, CaseBindingScope).
+observe(TemporalReview, TA_Reused_Case, TA_Reused_Case, CaseBindingScope).
+observe(Chronicle, TA_Reused_Case, TA_Other_Case, CaseBindingScope).
+observe(TemporalReview, TA_Reused_Case, TA_Other_Case, CaseBindingScope).
+limit(TA_Reused_Case, TA_Reused_Case, Window_Custody).
+observe(Chronicle, TA_Reused_Case, Window_Custody, LimitScope).
+observe(TemporalReview, TA_Reused_Case, Window_Custody, LimitScope).
+continue(TA_Reused_Case, Epoch_Current).
+observe(Chronicle, TA_Reused_Case, Epoch_Current, RenewalScope).
+observe(TemporalReview, TA_Reused_Case, Epoch_Current, RenewalScope).
+endorses(Electorate, TA_Reused_Case).
+endorses(TemporalReview, TA_Reused_Case).

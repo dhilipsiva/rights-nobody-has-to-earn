@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-200 positive
+:expect-pins 1
+
+# FS-CCE-200 positive: Public fulfilment duty.
+? obliged(OblPositive200Bearer, OblPositive200Duty, OblPositive200Standard).
+# => TRUE

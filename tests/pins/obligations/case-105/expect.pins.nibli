@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-211 self-certified excuse refusal
+:expect-pins 1
+
+# A duty bearer cannot certify its own excuse.
+? obliged(OblSelfExcuseSource, OblSelfExcuseDuty, OblSelfExcuseStandard).
+# => FALSE

@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+# Fresh-process temporal case TA-18.
+
+# The exact power binding remains visible.
+? succeed(TA_Self_Review_Case, PowerBound).
+# => TRUE
+
+# The exact self-reviewing holder binding remains visible.
+? related(TA_Self_Review_Case, CaseBound).
+# => TRUE
+
+# Only an exact independently witnessed Court holder can activate this custody family; the reviewer cannot substitute itself.
+? correct(TA_Self_Review_Case, ActivePower).
+# => FALSE
+
+# Self-review never activates the lease.
+? match(TA_Self_Review_Case, ActivePower).
+# => FALSE
+
+# The failed lease cannot reach the Court custody gate.
+? prisoner(TA_Self_Review_Subject).
+# => FALSE
+
+# The inactive raw lease is visible on the lease identifier.
+? err(TA_Self_Review_Case, TemporalRecord).
+# => TRUE
+
+# The Court judgment without an exact Court case binding is separately visible on the person.
+? err(TA_Self_Review_Subject, TemporalAuthority).
+# => TRUE

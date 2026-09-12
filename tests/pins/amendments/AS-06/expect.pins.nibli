@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+# Generated full-source amendment-semantics pins for AS-06.
+# Candidate source deltas are authored by the audit, never enacted by become.
+
+# The original unregistered target label remains.
+? adjust(Amend_Mint, Art_Mint).
+# => TRUE
+
+# The added registered target label is present.
+? adjust(Amend_Mint, Art_Floor).
+# => TRUE
+
+# The added label alone marks the proposal false.
+? false(Amend_Mint).
+# => TRUE
+
+# The prior passing label flips to blocked.
+? become(Amend_Mint, Law).
+# => FALSE
+
+# No floor source effect accompanies the target-label change.
+? entitled(Adam, event { eats() }).
+# => TRUE

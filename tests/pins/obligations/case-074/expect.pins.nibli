@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# origin omission CorrectionScope
+:expect-pins 1
+
+# Omitting CorrectionScope withholds the duty origin.
+? obliged(OblOmit16Bearer, OblOmit16Duty, OblOmit16Standard).
+# => FALSE

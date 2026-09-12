@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# FS-CCE-208 positive
+:expect-pins 1
+
+# FS-CCE-208 positive: Role-duty correction and reassignment.
+? obliged(OblPositive208Bearer, OblPositive208Duty, OblPositive208Standard).
+# => TRUE

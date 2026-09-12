@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+# Fresh-process temporal case TA-12.
+
+# The independent event claim remains available.
+? precede(Order_Court_A, EventSequence).
+# => TRUE
+
+# One order dimension cannot impersonate the other.
+? precede(Order_Log_Court_A, RecordSequence).
+# => FALSE

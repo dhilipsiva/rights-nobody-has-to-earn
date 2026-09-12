@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 1
+# Full-source floor projection from the generated matrix subject's actual standing route.
+# No standing overlay or extracted floor source is supplied.
+? entitled(Registered_Severe_Family_Home, event { dwell() }).
+# => TRUE
