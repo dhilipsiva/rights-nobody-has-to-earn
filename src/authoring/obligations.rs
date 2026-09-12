@@ -795,6 +795,25 @@ fn effect_extra_fields(effect: Effect, branch: &str) -> Vec<(&'static str, &'sta
             ("$disclosure_duty", "DisclosureDutyScope"),
             ("$disclosure_standard", "DisclosureStandardScope"),
             ("$disclosure_kind", "DisclosureKindScope"),
+            ("$disclosure_reader", "DisclosureReaderScope"),
+            ("$disclosure_alternate", "DisclosureAlternateScope"),
+            (
+                "OfficeCandidatePartyCoalitionOrNamedPoliticalActor",
+                "DisclosureBearerQualificationScope",
+            ),
+            (
+                "PoliticalFinanceInterestsContactsOrActorCoordination",
+                "DisclosureSubjectLimitScope",
+            ),
+            ("AuditAndIntegrityFunction", "DisclosureReaderRoleScope"),
+            (
+                "OmbudspersonOrRightsAdvocate",
+                "DisclosureAlternateRoleScope",
+            ),
+            (
+                "ProportionatePurposeLimitedNoProtectedSmallPayerPublication",
+                "DisclosurePrivacyScope",
+            ),
         ],
         388 => vec![
             ("$disclosure_reader", "DisclosureReaderScope"),
@@ -806,6 +825,25 @@ fn effect_extra_fields(effect: Effect, branch: &str) -> Vec<(&'static str, &'sta
             ("$disclosure_receipt", "DisclosureReceiptEvidenceScope"),
         ],
         389 => vec![
+            ("$disclosure_reader", "DisclosureReaderScope"),
+            ("$disclosure_bearer", "DisclosureBearerScope"),
+            (
+                "CertifiedPositiveReaderNonresponseNotSilence",
+                "DisclosureNonresponseDispositionScope",
+            ),
+            ("$disclosure_alternate", "DisclosureAlternateScope"),
+            (
+                "$disclosure_alternate_duty",
+                "DisclosureEscalationDutyScope",
+            ),
+            (
+                "$disclosure_alternate_standard",
+                "DisclosureEscalationStandardScope",
+            ),
+            (
+                "OmbudspersonOrRightsAdvocate",
+                "DisclosureAlternateRoleScope",
+            ),
             (
                 "$disclosure_nonresponse",
                 "PositiveDisclosureNonresponseScope",
@@ -820,6 +858,19 @@ fn effect_extra_fields(effect: Effect, branch: &str) -> Vec<(&'static str, &'sta
             ),
         ],
         390 => vec![
+            ("$disclosure_reader", "DisclosureReaderScope"),
+            (
+                "$disclosure_nonresponse",
+                "PositiveDisclosureNonresponseScope",
+            ),
+            (
+                "CertifiedPositiveReaderNonresponseNotSilence",
+                "DisclosureNonresponseDispositionScope",
+            ),
+            (
+                "OmbudspersonOrRightsAdvocate",
+                "DisclosureAlternateRoleScope",
+            ),
             ("$disclosure_alternate", "DisclosureAlternateScope"),
             (
                 "$disclosure_alternate_duty",
@@ -856,11 +907,14 @@ fn route_contract_atoms() -> Vec<String> {
 
 fn effect_atoms(effect: Effect, branch: &str) -> Vec<String> {
     let mut atoms = origin_join_atoms(effect);
-    if effect.number >= 213 {
+    if (213..=222).contains(&effect.number) {
         atoms.extend(route_contract_atoms());
     }
     for (value, scope) in effect_extra_fields(effect, branch) {
         tri(&mut atoms, "$effect_result", value, scope);
+    }
+    if matches!(effect.number, 387 | 389 | 390) {
+        atoms.push("~($disclosure_reader = $disclosure_alternate)".into());
     }
     if effect.number == 203 {
         atoms.extend([
@@ -1004,13 +1058,17 @@ fn effect_heads(effect: Effect) -> &'static [&'static str] {
             "obliged($individual_relief_bearer, $individual_relief_duty, $individual_relief_standard)",
             "prevents($subject, SystemicWorkDelaysIndividualRelief)",
         ],
-        387 => &["obliged($disclosure_bearer, $disclosure_duty, $disclosure_standard)"],
+        387 => &[
+            "obliged($disclosure_bearer, $disclosure_duty, $disclosure_standard)",
+            "obliged($disclosure_reader, ReadAndActOnProportionateDisclosure, $disclosure_standard)",
+        ],
         388 => {
             &["obliged($disclosure_reader, $disclosure_reader_duty, $disclosure_reader_standard)"]
         }
         389 => &[
             "obliged($disclosure_nonresponse, $disclosure_nonresponse_duty, $disclosure_nonresponse_standard)",
             "prevents($disclosure_nonresponse, SilenceAsDisclosureAction)",
+            "obliged($disclosure_alternate, $disclosure_alternate_duty, $disclosure_alternate_standard)",
         ],
         390 => &[
             "obliged($disclosure_alternate, $disclosure_alternate_duty, $disclosure_alternate_standard)",
@@ -1395,7 +1453,7 @@ fn effect_fixture(
         ("$duty_class".to_owned(), effect.duty_class.to_owned()),
         ("$duty_kind".to_owned(), effect.duty_kind.to_owned()),
     ]);
-    if effect.number >= 213 {
+    if (213..=222).contains(&effect.number) {
         base.extend(finding_overrides("Placement"));
         base.insert("$reader_duty".to_owned(), constant(prefix, "$reader_duty"));
         base.insert(
@@ -1415,7 +1473,7 @@ fn effect_fixture(
         fused,
         omit_scopes,
     );
-    if effect.number >= 213 {
+    if (213..=222).contains(&effect.number) {
         let kind = base
             .get("$finding_kind")
             .expect("finding fixture has a kind");
@@ -1647,24 +1705,64 @@ fn main_pin_cases(snapshot: &SourceSnapshot) -> ObligationResult<Vec<PinCase>> {
         (222, "IndividualReliefNonDelayScope"),
         (389, "PositiveDisclosureNonresponseScope"),
         (390, "DisclosureEscalationDutyScope"),
+        (387, "DisclosurePrivacyScope"),
+        (387, "DisclosureBearerQualificationScope"),
+        (387, "DisclosureReaderScope"),
+        (389, "DisclosureNonresponseDispositionScope"),
+        (389, "DisclosureAlternateScope"),
+        (390, "PositiveDisclosureNonresponseScope"),
     ] {
         let effect = effect_by_number(effect_number);
         let fixture = effect_fixture(
             effect,
-            &format!("OblSpecialOmit{effect_number}"),
+            &format!("OblSpecialOmit{effect_number}{scope}"),
             "standard",
             None,
             &[scope],
             &BTreeMap::new(),
         )?;
-        let query = effect_query(effect, &fixture);
-        cases.push(PinCase::one(
-            format!("FS-CCE-{effect_number:03} omission {scope}"),
-            fixture.facts,
-            format!("FS-CCE-{effect_number:03} omitting {scope} withholds the effect."),
-            query,
-            false,
-        ));
+        let queries = if effect_number >= 387 {
+            conclusion_heads(effect).into_iter().map(|head| PinQuery {
+                claim: format!("Missing {scope} withholds every disclosure consequence, including alternate action."),
+                query: ground_text(&head, &fixture.mapping),
+                expected: false,
+            }).collect()
+        } else {
+            vec![PinQuery {
+                claim: format!("FS-CCE-{effect_number:03} omitting {scope} withholds the effect."),
+                query: effect_query(effect, &fixture),
+                expected: false,
+            }]
+        };
+        cases.push(PinCase {
+            label: format!("FS-CCE-{effect_number:03} omission {scope}"),
+            facts: fixture.facts,
+            queries,
+        });
+    }
+    for number in [387, 389, 390] {
+        let effect = effect_by_number(number);
+        let fixture = effect_fixture(
+            effect,
+            &format!("DisclosureFusedAlternate{number}"),
+            "standard",
+            Some(("$disclosure_reader", "$disclosure_alternate")),
+            &[],
+            &BTreeMap::new(),
+        )?;
+        let queries = conclusion_heads(effect)
+            .into_iter()
+            .map(|head| PinQuery {
+                claim: "A reader cannot be its own independent alternate.".into(),
+                query: ground_text(&head, &fixture.mapping),
+                expected: false,
+            })
+            .collect();
+        cases.push(PinCase {
+            label: format!("Disclosure {number} independent alternate"),
+            facts: fixture.facts,
+            queries,
+        });
     }
     let class_effect = effect_by_number(198);
     let mut class_collision = effect_fixture(

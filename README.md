@@ -23,6 +23,7 @@ destination.
 | `tests/pins/` | Record, amendment, placement, temporal, state-form, obligations, and other substantive examples. |
 | `new-book-plans/state-form-source.json` | State-form authoring input. |
 | `new-book-plans/obligations-source.json` | The protected claim names used by the obligations authoring tool. |
+| `new-book-plans/integrity-source.json` | Democratic and administrative integrity findings, kinds, and legal consequences. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
 | `verify.sh` | Run the pins and contradiction checks. |
 | `generate.sh` | Explicitly regenerate authored rule, fixture, pin, or spine outputs. |
@@ -60,10 +61,11 @@ and no cached verdict that lets a changed book skip its tests. The focused
 `--only` command is for feedback on one pin file, not a whole-book pass.
 
 Measured on 2026-09-12 with four workers and the release binary already built:
-all 3,680 pins across 427 cases passed, with clean formal contradiction scans,
-in 348.13 seconds (5m48s). The under-five-minute full-run target is not yet met;
-the remaining cost is primarily Nibli loading and inference. This is a timing
-observation, not a cached verification result or a gate on later edits.
+all 4,735 pins across 757 cases passed, with clean formal contradiction scans,
+in 431.44 seconds (7m11s), including the new integrity cases and approved
+chapter 9 reader integration. The under-five-minute full-run target is not yet
+met; the remaining cost is primarily Nibli loading and inference. This is a
+timing observation, not a cached verification result or a gate on later edits.
 
 ## Author
 
@@ -72,11 +74,13 @@ Generation is separate from verification and happens only when requested:
 ```bash
 ./generate.sh state-form
 ./generate.sh obligations
+./generate.sh integrity
 ./generate.sh spine
 ```
 
-The first two commands update their constitution rule blocks, companion pins,
-and executable fixtures from their authoring inputs. Review those changes before
+The state-form, obligations and integrity commands update their constitution
+rule blocks, companion pins, and executable fixtures from their authoring
+inputs. Review those changes before
 running verification. The spine command refreshes the chapter-order projection;
 chapter placement and prose remain review work. Ordinary chapter pins and test
 fixtures can be edited directly.

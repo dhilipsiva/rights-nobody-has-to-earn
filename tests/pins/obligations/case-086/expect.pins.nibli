@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-206 omitting PersonDutyRemedyScope withholds the effect.
-? obliged(OblSpecialOmit206Bearer, OblSpecialOmit206Duty, OblSpecialOmit206Standard).
+? obliged(OblSpecialOmit206PersonDutyRemedyScopeBearer, OblSpecialOmit206PersonDutyRemedyScopeDuty, OblSpecialOmit206PersonDutyRemedyScopeStandard).
 # => FALSE

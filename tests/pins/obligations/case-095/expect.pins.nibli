@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-222 omitting IndividualReliefNonDelayScope withholds the effect.
-? obliged(OblSpecialOmit222IndividualReliefBearer, OblSpecialOmit222IndividualReliefDuty, OblSpecialOmit222IndividualReliefStandard).
+? obliged(OblSpecialOmit222IndividualReliefNonDelayScopeIndividualReliefBearer, OblSpecialOmit222IndividualReliefNonDelayScopeIndividualReliefDuty, OblSpecialOmit222IndividualReliefNonDelayScopeIndividualReliefStandard).
 # => FALSE

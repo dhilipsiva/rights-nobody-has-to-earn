@@ -1,7 +1,15 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-212 omission NonreciprocityScope
-:expect-pins 1
+# FS-CCE-389 omission DisclosureNonresponseDispositionScope
+:expect-pins 3
 
-# FS-CCE-212 omitting NonreciprocityScope withholds the watched effect.
-? prevents(OblWatchedOmit212Target, ObligationFailureEntitlementGate).
+# Missing DisclosureNonresponseDispositionScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureNonresponse, OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureNonresponseDuty, OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureNonresponseStandard).
+# => FALSE
+
+# Missing DisclosureNonresponseDispositionScope withholds every disclosure consequence, including alternate action.
+? prevents(OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureNonresponse, SilenceAsDisclosureAction).
+# => FALSE
+
+# Missing DisclosureNonresponseDispositionScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureAlternate, OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureAlternateDuty, OblSpecialOmit389DisclosureNonresponseDispositionScopeDisclosureAlternateStandard).
 # => FALSE

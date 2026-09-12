@@ -1,7 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-210 class priority refusal
-:expect-pins 1
+# Disclosure 387 independent alternate
+:expect-pins 2
 
-# Duty class cannot become a conflict priority key.
-? obliged(OblClassPriorityBearer, OblClassPriorityPreferredDuty, OblClassPriorityPreferredStandard).
+# A reader cannot be its own independent alternate.
+? obliged(DisclosureFusedAlternate387DisclosureBearer, DisclosureFusedAlternate387DisclosureDuty, DisclosureFusedAlternate387DisclosureStandard).
+# => FALSE
+
+# A reader cannot be its own independent alternate.
+? obliged(DisclosureFusedAlternate387DisclosureReader, ReadAndActOnProportionateDisclosure, DisclosureFusedAlternate387DisclosureStandard).
 # => FALSE

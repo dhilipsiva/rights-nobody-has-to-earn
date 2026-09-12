@@ -1,7 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-198 conflicting duty class
-:expect-pins 1
+# FS-CCE-387 omission DisclosurePrivacyScope
+:expect-pins 2
 
-# A conflicting class certificate cannot compose with the duty origin.
-? obliged(OblClassCollisionBearer, OblClassCollisionDuty, OblClassCollisionStandard).
+# Missing DisclosurePrivacyScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit387DisclosurePrivacyScopeDisclosureBearer, OblSpecialOmit387DisclosurePrivacyScopeDisclosureDuty, OblSpecialOmit387DisclosurePrivacyScopeDisclosureStandard).
+# => FALSE
+
+# Missing DisclosurePrivacyScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit387DisclosurePrivacyScopeDisclosureReader, ReadAndActOnProportionateDisclosure, OblSpecialOmit387DisclosurePrivacyScopeDisclosureStandard).
 # => FALSE

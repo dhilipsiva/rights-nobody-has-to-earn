@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? contradict(OppositionOfficeHolderTarget, DemocraticIntegrityAuthorization).
+# => TRUE
+? obliged(OppositionOfficeHolder, RecuseAndReferToIndependentAlternate, OppositionOfficeHolderTarget).
+# => TRUE
+? obliged(OppositionOfficeHolderAlternate, ReviewOfficeIntegrityChallengeAndRemedy, OppositionOfficeHolderTarget).
+# => TRUE
+? complete(OppositionOfficeHolderRecord, OfficeIntegrityIncompatibilityFinding, OppositionOfficeHolderTarget).
+# => TRUE

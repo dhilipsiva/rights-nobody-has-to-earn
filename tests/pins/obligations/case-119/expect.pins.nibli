@@ -1,11 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# Placement finding route
-:expect-pins 2
+# FS-CCE-212 FS-CLM-07
+:expect-pins 1
 
-# The exact Placement finding route reaches its typed reader duty.
-? obliged(Review, ReadPlacementFindingDuty, ReadPlacementFindingStandard).
+# FS-CCE-212 protects the declared route for FS-CLM-07.
+? prevents(OblWall05Target, ObligationFailureEntitlementGate).
 # => TRUE
-
-# The wrong recipient gains no Placement reader duty.
-? obliged(WrongPlacementReader, ReadPlacementFindingDuty, ReadPlacementFindingStandard).
-# => FALSE

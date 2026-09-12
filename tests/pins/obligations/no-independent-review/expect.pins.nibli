@@ -4112,18 +4112,18 @@ observe(OblIndependence387Review, OblIndependence387Origin, OblIndependence387Le
 observe(OblIndependence387Source, OblIndependence387Origin, OblIndependence387TemporalRecord, TemporalRecordScope).
 observe(OblIndependence387Evidence, OblIndependence387Origin, OblIndependence387TemporalRecord, TemporalRecordScope).
 observe(OblIndependence387Review, OblIndependence387Origin, OblIndependence387TemporalRecord, TemporalRecordScope).
-observe(OblIndependence387Source, OblIndependence387Origin, State, DutyBearerScope).
-observe(OblIndependence387Evidence, OblIndependence387Origin, State, DutyBearerScope).
-observe(OblIndependence387Review, OblIndependence387Origin, State, DutyBearerScope).
+observe(OblIndependence387Source, OblIndependence387Origin, OblIndependence387Bearer, DutyBearerScope).
+observe(OblIndependence387Evidence, OblIndependence387Origin, OblIndependence387Bearer, DutyBearerScope).
+observe(OblIndependence387Review, OblIndependence387Origin, OblIndependence387Bearer, DutyBearerScope).
 observe(OblIndependence387Source, OblIndependence387Origin, OblIndependence387Duty, DutyScope).
 observe(OblIndependence387Evidence, OblIndependence387Origin, OblIndependence387Duty, DutyScope).
 observe(OblIndependence387Review, OblIndependence387Origin, OblIndependence387Duty, DutyScope).
 observe(OblIndependence387Source, OblIndependence387Origin, OblIndependence387Standard, DutyStandardScope).
 observe(OblIndependence387Evidence, OblIndependence387Origin, OblIndependence387Standard, DutyStandardScope).
 observe(OblIndependence387Review, OblIndependence387Origin, OblIndependence387Standard, DutyStandardScope).
-observe(OblIndependence387Source, OblIndependence387Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence387Evidence, OblIndependence387Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence387Review, OblIndependence387Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence387Source, OblIndependence387Origin, OblIndependence387Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence387Evidence, OblIndependence387Origin, OblIndependence387Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence387Review, OblIndependence387Origin, OblIndependence387Target, DutyBeneficiaryOrObjectScope).
 observe(OblIndependence387Source, OblIndependence387Origin, DisclosureDutyKind, DutyKindScope).
 observe(OblIndependence387Evidence, OblIndependence387Origin, DisclosureDutyKind, DutyKindScope).
 observe(OblIndependence387Review, OblIndependence387Origin, DisclosureDutyKind, DutyKindScope).
@@ -4190,25 +4190,7 @@ observe(OblIndependence387Review, OblIndependence387EffectResult, FSCCE_387Oblig
 observe(OblIndependence387Source, OblIndependence387EffectResult, FSCCE_387FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence387Evidence, OblIndependence387EffectResult, FSCCE_387FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence387Review, OblIndependence387EffectResult, FSCCE_387FailureWithholdsOnly, FailurePolarityScope).
-public(State).
-observe(OblIndependence387Source, OblIndependence387Route, Placement, FindingKindScope).
-observe(OblIndependence387Evidence, OblIndependence387Route, Placement, FindingKindScope).
-observe(OblIndependence387Review, OblIndependence387Route, Placement, FindingKindScope).
-observe(OblIndependence387Source, OblIndependence387Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence387Evidence, OblIndependence387Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence387Review, OblIndependence387Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence387Source, OblIndependence387Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence387Evidence, OblIndependence387Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence387Review, OblIndependence387Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence387Source, OblIndependence387Route, OblIndependence387Case, FindingCaseScope).
-observe(OblIndependence387Evidence, OblIndependence387Route, OblIndependence387Case, FindingCaseScope).
-observe(OblIndependence387Review, OblIndependence387Route, OblIndependence387Case, FindingCaseScope).
-observe(OblIndependence387Source, OblIndependence387Route, Review, FindingReaderScope).
-observe(OblIndependence387Evidence, OblIndependence387Route, Review, FindingReaderScope).
-observe(OblIndependence387Review, OblIndependence387Route, Review, FindingReaderScope).
-observe(OblIndependence387Source, OblIndependence387Route, OblIndependence387Route, FindingRouteScope).
-observe(OblIndependence387Evidence, OblIndependence387Route, OblIndependence387Route, FindingRouteScope).
-observe(OblIndependence387Review, OblIndependence387Route, OblIndependence387Route, FindingRouteScope).
+public(OblIndependence387Bearer).
 observe(OblIndependence387Source, OblIndependence387EffectResult, OblIndependence387DisclosureBearer, DisclosureBearerScope).
 observe(OblIndependence387Evidence, OblIndependence387EffectResult, OblIndependence387DisclosureBearer, DisclosureBearerScope).
 observe(OblIndependence387Review, OblIndependence387EffectResult, OblIndependence387DisclosureBearer, DisclosureBearerScope).
@@ -4221,7 +4203,27 @@ observe(OblIndependence387Review, OblIndependence387EffectResult, OblIndependenc
 observe(OblIndependence387Source, OblIndependence387EffectResult, OblIndependence387DisclosureKind, DisclosureKindScope).
 observe(OblIndependence387Evidence, OblIndependence387EffectResult, OblIndependence387DisclosureKind, DisclosureKindScope).
 observe(OblIndependence387Review, OblIndependence387EffectResult, OblIndependence387DisclosureKind, DisclosureKindScope).
-put(State, PlacementAffected, Homestay).
+observe(OblIndependence387Source, OblIndependence387EffectResult, OblIndependence387DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, OblIndependence387DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, OblIndependence387DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence387Source, OblIndependence387EffectResult, OblIndependence387DisclosureAlternate, DisclosureAlternateScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, OblIndependence387DisclosureAlternate, DisclosureAlternateScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, OblIndependence387DisclosureAlternate, DisclosureAlternateScope).
+observe(OblIndependence387Source, OblIndependence387EffectResult, OfficeCandidatePartyCoalitionOrNamedPoliticalActor, DisclosureBearerQualificationScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, OfficeCandidatePartyCoalitionOrNamedPoliticalActor, DisclosureBearerQualificationScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, OfficeCandidatePartyCoalitionOrNamedPoliticalActor, DisclosureBearerQualificationScope).
+observe(OblIndependence387Source, OblIndependence387EffectResult, PoliticalFinanceInterestsContactsOrActorCoordination, DisclosureSubjectLimitScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, PoliticalFinanceInterestsContactsOrActorCoordination, DisclosureSubjectLimitScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, PoliticalFinanceInterestsContactsOrActorCoordination, DisclosureSubjectLimitScope).
+observe(OblIndependence387Source, OblIndependence387EffectResult, AuditAndIntegrityFunction, DisclosureReaderRoleScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, AuditAndIntegrityFunction, DisclosureReaderRoleScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, AuditAndIntegrityFunction, DisclosureReaderRoleScope).
+observe(OblIndependence387Source, OblIndependence387EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence387Source, OblIndependence387EffectResult, ProportionatePurposeLimitedNoProtectedSmallPayerPublication, DisclosurePrivacyScope).
+observe(OblIndependence387Evidence, OblIndependence387EffectResult, ProportionatePurposeLimitedNoProtectedSmallPayerPublication, DisclosurePrivacyScope).
+observe(OblIndependence387Review, OblIndependence387EffectResult, ProportionatePurposeLimitedNoProtectedSmallPayerPublication, DisclosurePrivacyScope).
 # FS-CCE-387 widens under fused source/review.
 ? obliged(OblIndependence387DisclosureBearer, OblIndependence387DisclosureDuty, OblIndependence387DisclosureStandard).
 # => TRUE
@@ -4286,18 +4288,18 @@ observe(OblIndependence388Review, OblIndependence388Origin, OblIndependence388Le
 observe(OblIndependence388Source, OblIndependence388Origin, OblIndependence388TemporalRecord, TemporalRecordScope).
 observe(OblIndependence388Evidence, OblIndependence388Origin, OblIndependence388TemporalRecord, TemporalRecordScope).
 observe(OblIndependence388Review, OblIndependence388Origin, OblIndependence388TemporalRecord, TemporalRecordScope).
-observe(OblIndependence388Source, OblIndependence388Origin, State, DutyBearerScope).
-observe(OblIndependence388Evidence, OblIndependence388Origin, State, DutyBearerScope).
-observe(OblIndependence388Review, OblIndependence388Origin, State, DutyBearerScope).
+observe(OblIndependence388Source, OblIndependence388Origin, OblIndependence388Bearer, DutyBearerScope).
+observe(OblIndependence388Evidence, OblIndependence388Origin, OblIndependence388Bearer, DutyBearerScope).
+observe(OblIndependence388Review, OblIndependence388Origin, OblIndependence388Bearer, DutyBearerScope).
 observe(OblIndependence388Source, OblIndependence388Origin, OblIndependence388Duty, DutyScope).
 observe(OblIndependence388Evidence, OblIndependence388Origin, OblIndependence388Duty, DutyScope).
 observe(OblIndependence388Review, OblIndependence388Origin, OblIndependence388Duty, DutyScope).
 observe(OblIndependence388Source, OblIndependence388Origin, OblIndependence388Standard, DutyStandardScope).
 observe(OblIndependence388Evidence, OblIndependence388Origin, OblIndependence388Standard, DutyStandardScope).
 observe(OblIndependence388Review, OblIndependence388Origin, OblIndependence388Standard, DutyStandardScope).
-observe(OblIndependence388Source, OblIndependence388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence388Evidence, OblIndependence388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence388Review, OblIndependence388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence388Source, OblIndependence388Origin, OblIndependence388Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence388Evidence, OblIndependence388Origin, OblIndependence388Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence388Review, OblIndependence388Origin, OblIndependence388Target, DutyBeneficiaryOrObjectScope).
 observe(OblIndependence388Source, OblIndependence388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
 observe(OblIndependence388Evidence, OblIndependence388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
 observe(OblIndependence388Review, OblIndependence388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
@@ -4364,25 +4366,7 @@ observe(OblIndependence388Review, OblIndependence388EffectResult, FSCCE_388Oblig
 observe(OblIndependence388Source, OblIndependence388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence388Evidence, OblIndependence388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence388Review, OblIndependence388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
-public(State).
-observe(OblIndependence388Source, OblIndependence388Route, Placement, FindingKindScope).
-observe(OblIndependence388Evidence, OblIndependence388Route, Placement, FindingKindScope).
-observe(OblIndependence388Review, OblIndependence388Route, Placement, FindingKindScope).
-observe(OblIndependence388Source, OblIndependence388Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence388Evidence, OblIndependence388Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence388Review, OblIndependence388Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence388Source, OblIndependence388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence388Evidence, OblIndependence388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence388Review, OblIndependence388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence388Source, OblIndependence388Route, OblIndependence388Case, FindingCaseScope).
-observe(OblIndependence388Evidence, OblIndependence388Route, OblIndependence388Case, FindingCaseScope).
-observe(OblIndependence388Review, OblIndependence388Route, OblIndependence388Case, FindingCaseScope).
-observe(OblIndependence388Source, OblIndependence388Route, Review, FindingReaderScope).
-observe(OblIndependence388Evidence, OblIndependence388Route, Review, FindingReaderScope).
-observe(OblIndependence388Review, OblIndependence388Route, Review, FindingReaderScope).
-observe(OblIndependence388Source, OblIndependence388Route, OblIndependence388Route, FindingRouteScope).
-observe(OblIndependence388Evidence, OblIndependence388Route, OblIndependence388Route, FindingRouteScope).
-observe(OblIndependence388Review, OblIndependence388Route, OblIndependence388Route, FindingRouteScope).
+public(OblIndependence388Bearer).
 observe(OblIndependence388Source, OblIndependence388EffectResult, OblIndependence388DisclosureReader, DisclosureReaderScope).
 observe(OblIndependence388Evidence, OblIndependence388EffectResult, OblIndependence388DisclosureReader, DisclosureReaderScope).
 observe(OblIndependence388Review, OblIndependence388EffectResult, OblIndependence388DisclosureReader, DisclosureReaderScope).
@@ -4395,7 +4379,6 @@ observe(OblIndependence388Review, OblIndependence388EffectResult, OblIndependenc
 observe(OblIndependence388Source, OblIndependence388EffectResult, OblIndependence388DisclosureReceipt, DisclosureReceiptEvidenceScope).
 observe(OblIndependence388Evidence, OblIndependence388EffectResult, OblIndependence388DisclosureReceipt, DisclosureReceiptEvidenceScope).
 observe(OblIndependence388Review, OblIndependence388EffectResult, OblIndependence388DisclosureReceipt, DisclosureReceiptEvidenceScope).
-put(State, PlacementAffected, Homestay).
 # FS-CCE-388 widens under fused source/review.
 ? obliged(OblIndependence388DisclosureReader, OblIndependence388DisclosureReaderDuty, OblIndependence388DisclosureReaderStandard).
 # => TRUE
@@ -4460,18 +4443,18 @@ observe(OblIndependence389Review, OblIndependence389Origin, OblIndependence389Le
 observe(OblIndependence389Source, OblIndependence389Origin, OblIndependence389TemporalRecord, TemporalRecordScope).
 observe(OblIndependence389Evidence, OblIndependence389Origin, OblIndependence389TemporalRecord, TemporalRecordScope).
 observe(OblIndependence389Review, OblIndependence389Origin, OblIndependence389TemporalRecord, TemporalRecordScope).
-observe(OblIndependence389Source, OblIndependence389Origin, State, DutyBearerScope).
-observe(OblIndependence389Evidence, OblIndependence389Origin, State, DutyBearerScope).
-observe(OblIndependence389Review, OblIndependence389Origin, State, DutyBearerScope).
+observe(OblIndependence389Source, OblIndependence389Origin, OblIndependence389Bearer, DutyBearerScope).
+observe(OblIndependence389Evidence, OblIndependence389Origin, OblIndependence389Bearer, DutyBearerScope).
+observe(OblIndependence389Review, OblIndependence389Origin, OblIndependence389Bearer, DutyBearerScope).
 observe(OblIndependence389Source, OblIndependence389Origin, OblIndependence389Duty, DutyScope).
 observe(OblIndependence389Evidence, OblIndependence389Origin, OblIndependence389Duty, DutyScope).
 observe(OblIndependence389Review, OblIndependence389Origin, OblIndependence389Duty, DutyScope).
 observe(OblIndependence389Source, OblIndependence389Origin, OblIndependence389Standard, DutyStandardScope).
 observe(OblIndependence389Evidence, OblIndependence389Origin, OblIndependence389Standard, DutyStandardScope).
 observe(OblIndependence389Review, OblIndependence389Origin, OblIndependence389Standard, DutyStandardScope).
-observe(OblIndependence389Source, OblIndependence389Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence389Evidence, OblIndependence389Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence389Review, OblIndependence389Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence389Source, OblIndependence389Origin, OblIndependence389Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence389Evidence, OblIndependence389Origin, OblIndependence389Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence389Review, OblIndependence389Origin, OblIndependence389Target, DutyBeneficiaryOrObjectScope).
 observe(OblIndependence389Source, OblIndependence389Origin, DisclosureNonresponseKind, DutyKindScope).
 observe(OblIndependence389Evidence, OblIndependence389Origin, DisclosureNonresponseKind, DutyKindScope).
 observe(OblIndependence389Review, OblIndependence389Origin, DisclosureNonresponseKind, DutyKindScope).
@@ -4538,25 +4521,28 @@ observe(OblIndependence389Review, OblIndependence389EffectResult, FSCCE_389Oblig
 observe(OblIndependence389Source, OblIndependence389EffectResult, FSCCE_389FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence389Evidence, OblIndependence389EffectResult, FSCCE_389FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence389Review, OblIndependence389EffectResult, FSCCE_389FailureWithholdsOnly, FailurePolarityScope).
-public(State).
-observe(OblIndependence389Source, OblIndependence389Route, Placement, FindingKindScope).
-observe(OblIndependence389Evidence, OblIndependence389Route, Placement, FindingKindScope).
-observe(OblIndependence389Review, OblIndependence389Route, Placement, FindingKindScope).
-observe(OblIndependence389Source, OblIndependence389Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence389Evidence, OblIndependence389Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence389Review, OblIndependence389Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence389Source, OblIndependence389Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence389Evidence, OblIndependence389Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence389Review, OblIndependence389Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence389Source, OblIndependence389Route, OblIndependence389Case, FindingCaseScope).
-observe(OblIndependence389Evidence, OblIndependence389Route, OblIndependence389Case, FindingCaseScope).
-observe(OblIndependence389Review, OblIndependence389Route, OblIndependence389Case, FindingCaseScope).
-observe(OblIndependence389Source, OblIndependence389Route, Review, FindingReaderScope).
-observe(OblIndependence389Evidence, OblIndependence389Route, Review, FindingReaderScope).
-observe(OblIndependence389Review, OblIndependence389Route, Review, FindingReaderScope).
-observe(OblIndependence389Source, OblIndependence389Route, OblIndependence389Route, FindingRouteScope).
-observe(OblIndependence389Evidence, OblIndependence389Route, OblIndependence389Route, FindingRouteScope).
-observe(OblIndependence389Review, OblIndependence389Route, OblIndependence389Route, FindingRouteScope).
+public(OblIndependence389Bearer).
+observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureBearer, DisclosureBearerScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureBearer, DisclosureBearerScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureBearer, DisclosureBearerScope).
+observe(OblIndependence389Source, OblIndependence389EffectResult, CertifiedPositiveReaderNonresponseNotSilence, DisclosureNonresponseDispositionScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, CertifiedPositiveReaderNonresponseNotSilence, DisclosureNonresponseDispositionScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, CertifiedPositiveReaderNonresponseNotSilence, DisclosureNonresponseDispositionScope).
+observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureAlternate, DisclosureAlternateScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureAlternate, DisclosureAlternateScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureAlternate, DisclosureAlternateScope).
+observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureAlternateDuty, DisclosureEscalationDutyScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureAlternateDuty, DisclosureEscalationDutyScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureAlternateDuty, DisclosureEscalationDutyScope).
+observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureAlternateStandard, DisclosureEscalationStandardScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureAlternateStandard, DisclosureEscalationStandardScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureAlternateStandard, DisclosureEscalationStandardScope).
+observe(OblIndependence389Source, OblIndependence389EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence389Evidence, OblIndependence389EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence389Review, OblIndependence389EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
 observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureNonresponse, PositiveDisclosureNonresponseScope).
 observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureNonresponse, PositiveDisclosureNonresponseScope).
 observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureNonresponse, PositiveDisclosureNonresponseScope).
@@ -4566,7 +4552,6 @@ observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependenc
 observe(OblIndependence389Source, OblIndependence389EffectResult, OblIndependence389DisclosureNonresponseStandard, DisclosureNonresponseStandardScope).
 observe(OblIndependence389Evidence, OblIndependence389EffectResult, OblIndependence389DisclosureNonresponseStandard, DisclosureNonresponseStandardScope).
 observe(OblIndependence389Review, OblIndependence389EffectResult, OblIndependence389DisclosureNonresponseStandard, DisclosureNonresponseStandardScope).
-put(State, PlacementAffected, Homestay).
 # FS-CCE-389 widens under fused source/review.
 ? obliged(OblIndependence389DisclosureNonresponse, OblIndependence389DisclosureNonresponseDuty, OblIndependence389DisclosureNonresponseStandard).
 # => TRUE
@@ -4631,18 +4616,18 @@ observe(OblIndependence390Review, OblIndependence390Origin, OblIndependence390Le
 observe(OblIndependence390Source, OblIndependence390Origin, OblIndependence390TemporalRecord, TemporalRecordScope).
 observe(OblIndependence390Evidence, OblIndependence390Origin, OblIndependence390TemporalRecord, TemporalRecordScope).
 observe(OblIndependence390Review, OblIndependence390Origin, OblIndependence390TemporalRecord, TemporalRecordScope).
-observe(OblIndependence390Source, OblIndependence390Origin, State, DutyBearerScope).
-observe(OblIndependence390Evidence, OblIndependence390Origin, State, DutyBearerScope).
-observe(OblIndependence390Review, OblIndependence390Origin, State, DutyBearerScope).
+observe(OblIndependence390Source, OblIndependence390Origin, OblIndependence390Bearer, DutyBearerScope).
+observe(OblIndependence390Evidence, OblIndependence390Origin, OblIndependence390Bearer, DutyBearerScope).
+observe(OblIndependence390Review, OblIndependence390Origin, OblIndependence390Bearer, DutyBearerScope).
 observe(OblIndependence390Source, OblIndependence390Origin, OblIndependence390Duty, DutyScope).
 observe(OblIndependence390Evidence, OblIndependence390Origin, OblIndependence390Duty, DutyScope).
 observe(OblIndependence390Review, OblIndependence390Origin, OblIndependence390Duty, DutyScope).
 observe(OblIndependence390Source, OblIndependence390Origin, OblIndependence390Standard, DutyStandardScope).
 observe(OblIndependence390Evidence, OblIndependence390Origin, OblIndependence390Standard, DutyStandardScope).
 observe(OblIndependence390Review, OblIndependence390Origin, OblIndependence390Standard, DutyStandardScope).
-observe(OblIndependence390Source, OblIndependence390Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence390Evidence, OblIndependence390Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblIndependence390Review, OblIndependence390Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence390Source, OblIndependence390Origin, OblIndependence390Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence390Evidence, OblIndependence390Origin, OblIndependence390Target, DutyBeneficiaryOrObjectScope).
+observe(OblIndependence390Review, OblIndependence390Origin, OblIndependence390Target, DutyBeneficiaryOrObjectScope).
 observe(OblIndependence390Source, OblIndependence390Origin, DisclosureAlternateEscalationKind, DutyKindScope).
 observe(OblIndependence390Evidence, OblIndependence390Origin, DisclosureAlternateEscalationKind, DutyKindScope).
 observe(OblIndependence390Review, OblIndependence390Origin, DisclosureAlternateEscalationKind, DutyKindScope).
@@ -4709,25 +4694,19 @@ observe(OblIndependence390Review, OblIndependence390EffectResult, FSCCE_390Oblig
 observe(OblIndependence390Source, OblIndependence390EffectResult, FSCCE_390FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence390Evidence, OblIndependence390EffectResult, FSCCE_390FailureWithholdsOnly, FailurePolarityScope).
 observe(OblIndependence390Review, OblIndependence390EffectResult, FSCCE_390FailureWithholdsOnly, FailurePolarityScope).
-public(State).
-observe(OblIndependence390Source, OblIndependence390Route, Placement, FindingKindScope).
-observe(OblIndependence390Evidence, OblIndependence390Route, Placement, FindingKindScope).
-observe(OblIndependence390Review, OblIndependence390Route, Placement, FindingKindScope).
-observe(OblIndependence390Source, OblIndependence390Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence390Evidence, OblIndependence390Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence390Review, OblIndependence390Route, PlacementAffected, FindingSubjectScope).
-observe(OblIndependence390Source, OblIndependence390Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence390Evidence, OblIndependence390Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence390Review, OblIndependence390Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblIndependence390Source, OblIndependence390Route, OblIndependence390Case, FindingCaseScope).
-observe(OblIndependence390Evidence, OblIndependence390Route, OblIndependence390Case, FindingCaseScope).
-observe(OblIndependence390Review, OblIndependence390Route, OblIndependence390Case, FindingCaseScope).
-observe(OblIndependence390Source, OblIndependence390Route, Review, FindingReaderScope).
-observe(OblIndependence390Evidence, OblIndependence390Route, Review, FindingReaderScope).
-observe(OblIndependence390Review, OblIndependence390Route, Review, FindingReaderScope).
-observe(OblIndependence390Source, OblIndependence390Route, OblIndependence390Route, FindingRouteScope).
-observe(OblIndependence390Evidence, OblIndependence390Route, OblIndependence390Route, FindingRouteScope).
-observe(OblIndependence390Review, OblIndependence390Route, OblIndependence390Route, FindingRouteScope).
+public(OblIndependence390Bearer).
+observe(OblIndependence390Source, OblIndependence390EffectResult, OblIndependence390DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence390Evidence, OblIndependence390EffectResult, OblIndependence390DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence390Review, OblIndependence390EffectResult, OblIndependence390DisclosureReader, DisclosureReaderScope).
+observe(OblIndependence390Source, OblIndependence390EffectResult, OblIndependence390DisclosureNonresponse, PositiveDisclosureNonresponseScope).
+observe(OblIndependence390Evidence, OblIndependence390EffectResult, OblIndependence390DisclosureNonresponse, PositiveDisclosureNonresponseScope).
+observe(OblIndependence390Review, OblIndependence390EffectResult, OblIndependence390DisclosureNonresponse, PositiveDisclosureNonresponseScope).
+observe(OblIndependence390Source, OblIndependence390EffectResult, CertifiedPositiveReaderNonresponseNotSilence, DisclosureNonresponseDispositionScope).
+observe(OblIndependence390Evidence, OblIndependence390EffectResult, CertifiedPositiveReaderNonresponseNotSilence, DisclosureNonresponseDispositionScope).
+observe(OblIndependence390Review, OblIndependence390EffectResult, CertifiedPositiveReaderNonresponseNotSilence, DisclosureNonresponseDispositionScope).
+observe(OblIndependence390Source, OblIndependence390EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence390Evidence, OblIndependence390EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
+observe(OblIndependence390Review, OblIndependence390EffectResult, OmbudspersonOrRightsAdvocate, DisclosureAlternateRoleScope).
 observe(OblIndependence390Source, OblIndependence390EffectResult, OblIndependence390DisclosureAlternate, DisclosureAlternateScope).
 observe(OblIndependence390Evidence, OblIndependence390EffectResult, OblIndependence390DisclosureAlternate, DisclosureAlternateScope).
 observe(OblIndependence390Review, OblIndependence390EffectResult, OblIndependence390DisclosureAlternate, DisclosureAlternateScope).
@@ -4737,7 +4716,6 @@ observe(OblIndependence390Review, OblIndependence390EffectResult, OblIndependenc
 observe(OblIndependence390Source, OblIndependence390EffectResult, OblIndependence390DisclosureAlternateStandard, DisclosureEscalationStandardScope).
 observe(OblIndependence390Evidence, OblIndependence390EffectResult, OblIndependence390DisclosureAlternateStandard, DisclosureEscalationStandardScope).
 observe(OblIndependence390Review, OblIndependence390EffectResult, OblIndependence390DisclosureAlternateStandard, DisclosureEscalationStandardScope).
-put(State, PlacementAffected, Homestay).
 # FS-CCE-390 widens under fused source/review.
 ? obliged(OblIndependence390DisclosureAlternate, OblIndependence390DisclosureAlternateDuty, OblIndependence390DisclosureAlternateStandard).
 # => TRUE

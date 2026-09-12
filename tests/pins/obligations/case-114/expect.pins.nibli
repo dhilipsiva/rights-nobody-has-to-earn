@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-212 FS-CLM-25
+# FS-CCE-211 self-certified excuse refusal
 :expect-pins 1
 
-# FS-CCE-212 protects the ledger-derived route for FS-CLM-25.
-? prevents(OblWall09Target, ObligationFailureEntitlementGate).
-# => TRUE
+# A duty bearer cannot certify its own excuse.
+? obliged(OblSelfExcuseSource, OblSelfExcuseDuty, OblSelfExcuseStandard).
+# => FALSE

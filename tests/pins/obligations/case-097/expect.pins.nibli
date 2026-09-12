@@ -2,6 +2,6 @@
 # FS-CCE-390 omission DisclosureEscalationDutyScope
 :expect-pins 1
 
-# FS-CCE-390 omitting DisclosureEscalationDutyScope withholds the effect.
-? obliged(OblSpecialOmit390DisclosureAlternate, OblSpecialOmit390DisclosureAlternateDuty, OblSpecialOmit390DisclosureAlternateStandard).
+# Missing DisclosureEscalationDutyScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit390DisclosureEscalationDutyScopeDisclosureAlternate, OblSpecialOmit390DisclosureEscalationDutyScopeDisclosureAlternateDuty, OblSpecialOmit390DisclosureEscalationDutyScopeDisclosureAlternateStandard).
 # => FALSE

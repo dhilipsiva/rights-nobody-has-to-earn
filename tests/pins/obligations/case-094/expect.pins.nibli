@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-215 omitting FindingEscalationScope withholds the effect.
-? obliged(OblSpecialOmit215Alternate, OblSpecialOmit215AlternateDuty, OblSpecialOmit215AlternateStandard).
+? obliged(OblSpecialOmit215FindingEscalationScopeAlternate, OblSpecialOmit215FindingEscalationScopeAlternateDuty, OblSpecialOmit215FindingEscalationScopeAlternateStandard).
 # => FALSE

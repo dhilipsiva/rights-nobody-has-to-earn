@@ -260,6 +260,12 @@ observe(SFMainP130Review, SFMainP130Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP130Source, SFMainP130Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP130Evidence, SFMainP130Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP130Review, SFMainP130Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP130Source, SFMainP130Result, SFMainP130Payer, PoliticalFinancePayerScope).
+observe(SFMainP130Evidence, SFMainP130Result, SFMainP130Payer, PoliticalFinancePayerScope).
+observe(SFMainP130Review, SFMainP130Result, SFMainP130Payer, PoliticalFinancePayerScope).
+observe(SFMainP130Source, SFMainP130Result, SFMainP130ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP130Evidence, SFMainP130Result, SFMainP130ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP130Review, SFMainP130Result, SFMainP130ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP130Admin, DecisionAdministrationAuthority, SFMainP130Record).
 authorized(SFMainP130Assurer, IndependentCompletenessAssuranceAuthority, SFMainP130Record).
 authorized(SFMainP130Service, ResultServiceAuthority, SFMainP130Record).
@@ -669,6 +675,12 @@ observe(SFMainP131Review, SFMainP131Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP131Source, SFMainP131Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP131Evidence, SFMainP131Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP131Review, SFMainP131Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP131Source, SFMainP131Result, SFMainP131Payer, PoliticalFinancePayerScope).
+observe(SFMainP131Evidence, SFMainP131Result, SFMainP131Payer, PoliticalFinancePayerScope).
+observe(SFMainP131Review, SFMainP131Result, SFMainP131Payer, PoliticalFinancePayerScope).
+observe(SFMainP131Source, SFMainP131Result, SFMainP131ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP131Evidence, SFMainP131Result, SFMainP131ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP131Review, SFMainP131Result, SFMainP131ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP131Admin, DecisionAdministrationAuthority, SFMainP131Record).
 authorized(SFMainP131Assurer, IndependentCompletenessAssuranceAuthority, SFMainP131Record).
 authorized(SFMainP131Service, ResultServiceAuthority, SFMainP131Record).
@@ -1121,6 +1133,12 @@ observe(SFMainP132Review, SFMainP132Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP132Source, SFMainP132Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP132Evidence, SFMainP132Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP132Review, SFMainP132Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP132Source, SFMainP132Result, SFMainP132Payer, PoliticalFinancePayerScope).
+observe(SFMainP132Evidence, SFMainP132Result, SFMainP132Payer, PoliticalFinancePayerScope).
+observe(SFMainP132Review, SFMainP132Result, SFMainP132Payer, PoliticalFinancePayerScope).
+observe(SFMainP132Source, SFMainP132Result, SFMainP132ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP132Evidence, SFMainP132Result, SFMainP132ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP132Review, SFMainP132Result, SFMainP132ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP132Admin, DecisionAdministrationAuthority, SFMainP132Record).
 authorized(SFMainP132Assurer, IndependentCompletenessAssuranceAuthority, SFMainP132Record).
 authorized(SFMainP132Service, ResultServiceAuthority, SFMainP132Record).
@@ -1623,6 +1641,12 @@ observe(SFMainP133Review, SFMainP133Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP133Source, SFMainP133Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP133Evidence, SFMainP133Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP133Review, SFMainP133Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP133Source, SFMainP133Result, SFMainP133Payer, PoliticalFinancePayerScope).
+observe(SFMainP133Evidence, SFMainP133Result, SFMainP133Payer, PoliticalFinancePayerScope).
+observe(SFMainP133Review, SFMainP133Result, SFMainP133Payer, PoliticalFinancePayerScope).
+observe(SFMainP133Source, SFMainP133Result, SFMainP133ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP133Evidence, SFMainP133Result, SFMainP133ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP133Review, SFMainP133Result, SFMainP133ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP133Admin, DecisionAdministrationAuthority, SFMainP133Record).
 authorized(SFMainP133Assurer, IndependentCompletenessAssuranceAuthority, SFMainP133Record).
 authorized(SFMainP133Service, ResultServiceAuthority, SFMainP133Record).
@@ -2077,6 +2101,12 @@ observe(SFMainP134Review, SFMainP134Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP134Source, SFMainP134Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP134Evidence, SFMainP134Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP134Review, SFMainP134Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP134Source, SFMainP134Result, SFMainP134Payer, PoliticalFinancePayerScope).
+observe(SFMainP134Evidence, SFMainP134Result, SFMainP134Payer, PoliticalFinancePayerScope).
+observe(SFMainP134Review, SFMainP134Result, SFMainP134Payer, PoliticalFinancePayerScope).
+observe(SFMainP134Source, SFMainP134Result, SFMainP134ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP134Evidence, SFMainP134Result, SFMainP134ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP134Review, SFMainP134Result, SFMainP134ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP134Executor, InstitutionalExecutionAuthority, SFMainP134Record).
 observe(SFMainP134Executor, SFMainP134Record, Constitution_StateForm, SourceFamilyScope).
 observe(SFMainP134Executor, SFMainP134Record, SFMainP134Version, SourceVersionScope).

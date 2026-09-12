@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# MaturityDispute finding route
+:expect-pins 2
+
+# The exact MaturityDispute finding route reaches its typed reader duty.
+? obliged(Appeals, ReadMaturityDisputeFindingDuty, ReadMaturityDisputeFindingStandard).
+# => TRUE
+
+# The wrong recipient gains no MaturityDispute reader duty.
+? obliged(WrongMaturityDisputeReader, ReadMaturityDisputeFindingDuty, ReadMaturityDisputeFindingStandard).
+# => FALSE

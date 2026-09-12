@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-212 FS-CLM-02
+# FS-CCE-198 conflicting duty class
 :expect-pins 1
 
-# FS-CCE-212 protects the ledger-derived route for FS-CLM-02.
-? prevents(OblWall02Target, ObligationFailureEntitlementGate).
-# => TRUE
+# A conflicting class certificate cannot compose with the duty origin.
+? obliged(OblClassCollisionBearer, OblClassCollisionDuty, OblClassCollisionStandard).
+# => FALSE

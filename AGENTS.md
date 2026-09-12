@@ -22,6 +22,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ./verify.sh --only book-1/01-what-counts-as-evidence.pins.nibli
 ./generate.sh state-form    # explicit authoring, separate from verification
 ./generate.sh obligations
+./generate.sh integrity
 ./generate.sh spine
 ```
 

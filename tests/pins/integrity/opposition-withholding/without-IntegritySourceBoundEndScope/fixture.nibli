@@ -1,0 +1,64 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(IntegrityCaseSource, ElectoralOrIntegritySourceAuthority, IntegrityCaseRecord).
+authorized(IntegrityCaseEvidence, IndependentIntegrityEvidenceAuthority, IntegrityCaseRecord).
+authorized(IntegrityCaseReview, IndependentIntegrityReviewAuthority, IntegrityCaseRecord).
+authorized(IntegrityCaseReader, IntegrityFindingReaderAuthority, IntegrityCaseRecord).
+authorized(IntegrityCaseAlternate, IndependentIntegrityAlternateAuthority, IntegrityCaseRecord).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseTarget, IntegrityTargetScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseTarget, IntegrityTargetScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseTarget, IntegrityTargetScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseVersion, IntegritySourceVersionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseVersion, IntegritySourceVersionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseVersion, IntegritySourceVersionScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseJurisdiction, IntegrityJurisdictionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseJurisdiction, IntegrityJurisdictionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseJurisdiction, IntegrityJurisdictionScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseLegalScope, IntegrityLegalScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseLegalScope, IntegrityLegalScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseLegalScope, IntegrityLegalScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, CurrentReconciledIntegrityRecord, IntegrityCurrentDispositionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, CurrentReconciledIntegrityRecord, IntegrityCurrentDispositionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, CurrentReconciledIntegrityRecord, IntegrityCurrentDispositionScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IndependentlyReviewedEvidence, IntegrityEvidenceDispositionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IndependentlyReviewedEvidence, IntegrityEvidenceDispositionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IndependentlyReviewedEvidence, IntegrityEvidenceDispositionScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseReader, IntegrityReaderScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseReader, IntegrityReaderScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseReader, IntegrityReaderScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseAlternate, IntegrityIndependentAlternateScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseAlternate, IntegrityIndependentAlternateScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseAlternate, IntegrityIndependentAlternateScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseChallenge, IntegrityChallengeScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseChallenge, IntegrityChallengeScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseChallenge, IntegrityChallengeScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseCorrection, IntegrityCorrectionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseCorrection, IntegrityCorrectionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseCorrection, IntegrityCorrectionScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseRemedy, IntegrityRemedyScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseRemedy, IntegrityRemedyScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseRemedy, IntegrityRemedyScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, CourtOrIndependentSubstitutePanel, IntegrityFinalReviewScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, CourtOrIndependentSubstitutePanel, IntegrityFinalReviewScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, CourtOrIndependentSubstitutePanel, IntegrityFinalReviewScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, NoPersonalStatusFloorBallotOrLibertyConsequence, IntegrityCorridorScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, NoPersonalStatusFloorBallotOrLibertyConsequence, IntegrityCorridorScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, NoPersonalStatusFloorBallotOrLibertyConsequence, IntegrityCorridorScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, ProportionatePurposeLimitedPrivateRecord, IntegrityPrivacyScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, ProportionatePurposeLimitedPrivateRecord, IntegrityPrivacyScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, ProportionatePurposeLimitedPrivateRecord, IntegrityPrivacyScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, OppositionRightWithholdingFinding, IntegrityRecordKindScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, OppositionRightWithholdingFinding, IntegrityRecordKindScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, OppositionRightWithholdingFinding, IntegrityRecordKindScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, IntegrityCaseOpposition, IntegrityElectedMemberOrGroupScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, IntegrityCaseOpposition, IntegrityElectedMemberOrGroupScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, IntegrityCaseOpposition, IntegrityElectedMemberOrGroupScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, NotSupportingGovernment, IntegrityRecordedPositionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, NotSupportingGovernment, IntegrityRecordedPositionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, NotSupportingGovernment, IntegrityRecordedPositionScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, EqualAssemblyInformation, IntegrityOppositionRightScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, EqualAssemblyInformation, IntegrityOppositionRightScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, EqualAssemblyInformation, IntegrityOppositionRightScope).
+observe(IntegrityCaseSource, IntegrityCaseRecord, WithholdingEstablishedForThisAssemblyAct, IntegrityFindingDispositionScope).
+observe(IntegrityCaseEvidence, IntegrityCaseRecord, WithholdingEstablishedForThisAssemblyAct, IntegrityFindingDispositionScope).
+observe(IntegrityCaseReview, IntegrityCaseRecord, WithholdingEstablishedForThisAssemblyAct, IntegrityFindingDispositionScope).
+observe(IntegrityCaseOpposition, IntegrityCaseRecord, NotSupportingGovernment, IntegrityRecordedPositionScope).

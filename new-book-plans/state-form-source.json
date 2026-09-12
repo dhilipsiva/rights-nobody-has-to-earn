@@ -138,6 +138,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_001CommonFederalJurisdictionKind",
@@ -291,6 +299,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_002SourceNamedRegionalJurisdictionKind",
@@ -448,6 +464,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_003CrossTierCompetenceBoundaryJurisdictionKind",
@@ -601,6 +625,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_004DisputedCompetenceCaseJurisdictionKind",
@@ -758,6 +790,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_005CommonLawmakingJurisdictionKind",
@@ -915,6 +955,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_005CommonLawmakingJurisdictionKind",
@@ -1056,6 +1104,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_006CommonRevenueJurisdictionKind",
@@ -1197,6 +1253,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_007CommonAppropriationJurisdictionKind",
@@ -1354,6 +1418,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_008CommonOversightJurisdictionKind",
@@ -1511,6 +1583,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_009CommonAmendmentInitiationJurisdictionKind",
@@ -1756,6 +1836,34 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
+        ],
+        [
+          "$district_plan",
+          "DistrictPlanScope"
+        ],
+        [
+          "NoForbiddenDistrictingPurpose",
+          "DistrictingPurposeScope"
+        ],
+        [
+          "PartyOrCoalitionEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "IncumbentEntrenchment",
+          "ForbiddenDistrictingPurposeScope"
+        ],
+        [
+          "ProtectedGroundDilution",
+          "ForbiddenDistrictingPurposeScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_010CommonAssemblyElectionJurisdictionKind",
@@ -1977,6 +2085,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_011SourceNamedRegionalDelegationJurisdictionKind",
@@ -2138,6 +2254,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_012CommonBillReturnJurisdictionKind",
@@ -2343,6 +2467,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -2548,6 +2680,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -2753,6 +2893,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -2958,6 +3106,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_013CommonAndAffectedRegionalSettlementJurisdictionKind",
@@ -3111,6 +3267,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_014CommonExecutiveMandateJurisdictionKind",
@@ -3264,6 +3428,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_014CommonExecutiveMandateJurisdictionKind",
@@ -3473,6 +3645,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_015CommonConfidenceJurisdictionKind",
@@ -3682,6 +3862,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_016CommonConstructiveReplacementJurisdictionKind",
@@ -3930,6 +4118,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_017CommonJointPresidentialSelectionJurisdictionKind",
@@ -4158,6 +4354,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_018CommonFormalAppointmentJurisdictionKind",
@@ -4307,6 +4511,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_019CommonPromulgationJurisdictionKind",
@@ -4464,6 +4676,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_020CommonCertificateReceiptJurisdictionKind",
@@ -4621,6 +4841,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -4778,6 +5006,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -4935,6 +5171,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -5092,6 +5336,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_021CommonFormalContinuityJurisdictionKind",
@@ -5253,6 +5505,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_022ExactCaseJurisdictionKind",
@@ -5418,6 +5678,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_023ExactConstitutionalCaseJurisdictionKind",
@@ -5571,6 +5839,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_024ExactProcedureCaseJurisdictionKind",
@@ -5724,6 +6000,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_024ExactProcedureCaseJurisdictionKind",
@@ -5877,6 +6161,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_024ExactProcedureCaseJurisdictionKind",
@@ -6042,6 +6334,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_025ExactCompositionCaseJurisdictionKind",
@@ -6223,6 +6523,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_026CommonAppointmentQualificationFunctionJurisdictionKind",
@@ -6388,6 +6696,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_027ExactAppointmentQualificationCaseJurisdictionKind",
@@ -6553,6 +6869,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_027ExactAppointmentQualificationCaseJurisdictionKind",
@@ -6746,6 +7070,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -6939,6 +7271,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -7132,6 +7472,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -7325,6 +7673,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -7582,6 +7938,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -7839,6 +8203,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -8096,6 +8468,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -8353,6 +8733,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_028ExactIndependentAppointmentSeatJurisdictionKind",
@@ -8578,6 +8966,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_029ExactIndependentOfficeRemovalJurisdictionKind",
@@ -8803,6 +9199,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_029ExactIndependentOfficeRemovalJurisdictionKind",
@@ -9028,6 +9432,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_029ExactIndependentOfficeRemovalJurisdictionKind",
@@ -9261,6 +9673,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -9494,6 +9914,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -9727,6 +10155,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -9960,6 +10396,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -10193,6 +10637,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -10426,6 +10878,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -10659,6 +11119,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -10892,6 +11360,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -11125,6 +11601,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -11358,6 +11842,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -11591,6 +12083,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -11824,6 +12324,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -12057,6 +12565,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -12290,6 +12806,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -12523,6 +13047,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -12756,6 +13288,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_030ExactAppointmentFallbackJurisdictionKind",
@@ -12917,6 +13457,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_031CommonAssemblyLifecycleJurisdictionKind",
@@ -13062,6 +13610,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_031CommonAssemblyLifecycleJurisdictionKind",
@@ -13215,6 +13771,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -13364,6 +13928,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -13573,6 +14145,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -13726,6 +14306,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_032SourceNamedRegionalCouncilLifecycleJurisdictionKind",
@@ -13934,6 +14522,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -14142,6 +14738,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -14287,6 +14891,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -14428,6 +15040,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_033CommonExecutiveLifecycleJurisdictionKind",
@@ -14668,6 +15288,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_034CommonPresidentialLifecycleJurisdictionKind",
@@ -14821,6 +15449,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_034CommonPresidentialLifecycleJurisdictionKind",
@@ -15031,6 +15667,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_034CommonPresidentialLifecycleJurisdictionKind",
@@ -15226,20 +15870,12 @@
           "PoliticalFinanceRecipientKindScope"
         ],
         [
-          "NoForbiddenDistrictingPurpose",
-          "DistrictingPurposeScope"
+          "$payer",
+          "PoliticalFinancePayerScope"
         ],
         [
-          "PartyOrCoalitionEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "IncumbentEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "ProtectedGroundDilution",
-          "ForbiddenDistrictingPurposeScope"
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -15435,20 +16071,12 @@
           "PoliticalFinanceRecipientKindScope"
         ],
         [
-          "NoForbiddenDistrictingPurpose",
-          "DistrictingPurposeScope"
+          "$payer",
+          "PoliticalFinancePayerScope"
         ],
         [
-          "PartyOrCoalitionEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "IncumbentEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "ProtectedGroundDilution",
-          "ForbiddenDistrictingPurposeScope"
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -15644,20 +16272,12 @@
           "PoliticalFinanceRecipientKindScope"
         ],
         [
-          "NoForbiddenDistrictingPurpose",
-          "DistrictingPurposeScope"
+          "$payer",
+          "PoliticalFinancePayerScope"
         ],
         [
-          "PartyOrCoalitionEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "IncumbentEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "ProtectedGroundDilution",
-          "ForbiddenDistrictingPurposeScope"
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -15853,20 +16473,12 @@
           "PoliticalFinanceRecipientKindScope"
         ],
         [
-          "NoForbiddenDistrictingPurpose",
-          "DistrictingPurposeScope"
+          "$payer",
+          "PoliticalFinancePayerScope"
         ],
         [
-          "PartyOrCoalitionEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "IncumbentEntrenchment",
-          "ForbiddenDistrictingPurposeScope"
-        ],
-        [
-          "ProtectedGroundDilution",
-          "ForbiddenDistrictingPurposeScope"
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_035ExactCourtOrOversightSeatJurisdictionKind",
@@ -16032,6 +16644,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -16193,6 +16813,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -16363,6 +16991,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -16540,6 +17176,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -16708,6 +17352,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -16865,6 +17517,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17026,6 +17686,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17183,6 +17851,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17348,6 +18024,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17513,6 +18197,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17674,6 +18366,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17827,6 +18527,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -17988,6 +18696,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -18137,6 +18853,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -18290,6 +19014,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -18459,6 +19191,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_036PoliticalHomeMultiTierJurisdictionKind",
@@ -18711,6 +19451,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_037CommonAndAffectedRegionalAmendmentJurisdictionKind",
@@ -19006,6 +19754,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_037CommonAndAffectedRegionalAmendmentJurisdictionKind",
@@ -19352,6 +20108,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_037CommonAndAffectedRegionalAmendmentJurisdictionKind",
@@ -19581,6 +20345,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_038CommonConstitutionalInitiativeDocketJurisdictionKind",
@@ -19810,6 +20582,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -20039,6 +20819,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -20268,6 +21056,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -20497,6 +21293,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -20702,6 +21506,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -20907,6 +21719,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_039CommonOrdinaryLawInitiativeJurisdictionKind",
@@ -21140,6 +21960,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_040ExactDirectOfficeRecallJurisdictionKind",
@@ -21349,6 +22177,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_040ExactDirectOfficeRecallJurisdictionKind",
@@ -21579,6 +22415,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_041CommonCaretakerJurisdictionKind",
@@ -21740,6 +22584,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_041CommonCaretakerJurisdictionKind",
@@ -21897,6 +22749,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_042CommonFreshElectionCallJurisdictionKind",
@@ -22058,6 +22918,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_043TierAssignedFiscalContinuityJurisdictionKind",
@@ -22203,6 +23071,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_043TierAssignedFiscalContinuityJurisdictionKind",
@@ -22348,6 +23224,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_043TierAssignedFiscalContinuityJurisdictionKind",
@@ -22530,6 +23414,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_044ExactOfficeTransferJurisdictionKind",
@@ -22712,6 +23604,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_044ExactOfficeTransferJurisdictionKind",
@@ -22937,6 +23837,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -23185,6 +24093,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -23487,6 +24403,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -23832,6 +24756,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_045CommonAndAffectedRegionalSecessionJurisdictionKind",
@@ -23993,6 +24925,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_046SourceNamedLocalBudgetJurisdictionKind",
@@ -24154,6 +25094,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_047SourceNamedLocalAdministrationJurisdictionKind",
@@ -24307,6 +25255,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_048SourceNamedLocalPublicSpaceJurisdictionKind",
@@ -24460,6 +25416,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_049SourceNamedLocalFacilityJurisdictionKind",
@@ -24613,6 +25577,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_050SourceNamedLocalAssignedServiceJurisdictionKind",
@@ -24766,6 +25738,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_050SourceNamedLocalAssignedServiceJurisdictionKind",
@@ -24935,6 +25915,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_051ExactQualificationReferralJurisdictionKind",
@@ -25096,6 +26084,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_051ExactQualificationReferralJurisdictionKind",
@@ -25253,6 +26249,14 @@
         [
           "PublicDecisionRecipient",
           "PoliticalFinanceRecipientKindScope"
+        ],
+        [
+          "$payer",
+          "PoliticalFinancePayerScope"
+        ],
+        [
+          "$controlling_payer",
+          "PoliticalFinanceControllingPayerScope"
         ]
       ],
       "jurisdiction_kind": "FSPOW_051ExactQualificationReferralJurisdictionKind",

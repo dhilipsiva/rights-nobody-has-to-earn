@@ -11,6 +11,28 @@
 > about any person, no amount, no period, and no claim that any office is
 > clean.
 
+## Implementation follow-up — 2026-09-12
+
+The examined-kind clearance remains. The common
+`book-1-integrity-record-contract.md` additionally supplies an independently
+attested adverse finding keyed to the affected act. It names the office,
+counterparty, interest kind, relationship kind and incompatibility mode,
+within the supplied matter and legal period. It withholds act permission,
+derives recusal and independent-alternate review/remedy duties, and expressly
+refuses former-holder representation in the affected dealings. The private
+counterparty is not made the duty-bearer.
+
+`tests/pins/integrity/office-finding/` includes each named kind, self-review,
+missing/stale records, equal treatment of governing and opposition holders,
+an unrelated act, and former-holder representation. No personal standing,
+floor, ballot or employment status is taken. The old clearance counts and
+retired checker paths below remain history, not a verification workflow.
+
+The reader projection is now the exact, separately author-approved section
+"Keeping public decisions answerable" in Book 1 chapter 9 (2026-09-12).
+The earlier chapter 3 candidate below is retained as history, not pending work
+and not the wording approved for this implementation.
+
 ## 1. Decision
 
 Every reviewed state-form result now attests that the office-integrity kinds
@@ -230,7 +252,7 @@ a named defect and belongs to its own small batch.
    in section 10, rather than regenerated under a formula the checker does
    not bind.
 
-Draft prose held out of the tree pending approval (would follow "A positive
+Earlier candidate, superseded by the approved chapter 9 section (would follow "A positive
 result for that exact power then yields only the holder's current lawful
 authority."):
 

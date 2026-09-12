@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-203 omitting DelegatedDutyIdentityScope withholds the effect.
-? obliged(OblSpecialOmit203Bearer, OblSpecialOmit203Duty, OblSpecialOmit203Standard).
+? obliged(OblSpecialOmit203DelegatedDutyIdentityScopeBearer, OblSpecialOmit203DelegatedDutyIdentityScopeDuty, OblSpecialOmit203DelegatedDutyIdentityScopeStandard).
 # => FALSE

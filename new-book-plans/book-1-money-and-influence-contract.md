@@ -9,6 +9,30 @@
 > register, no publication duty, no amount, and no claim that any payment is
 > visible to anyone.
 
+## Implementation follow-up — 2026-09-12
+
+The deferred identity batch is implemented. State-form results bind
+`$payer` in `PoliticalFinancePayerScope` and `$controlling_payer` in
+`PoliticalFinanceControllingPayerScope`; the source, evidence writer and
+reviewer must agree on each. The release-mode `payer_identity_cost_probe`
+measured the original candidacy fixture at 24.70 ms and the identity-bound
+fixture at 21.70 ms. This is a single-case probe, not a whole-book timing claim.
+The probe is retained as an explicitly ignored development benchmark.
+
+The common `book-1-integrity-record-contract.md` also supplies a positive
+adverse-finance finding naming nominal and controlling identities, payer,
+instrument and recipient kinds, the affected recipient/act, and an established
+prohibited combination. Its incompatibility withholds **permission for that
+act**, not the permanent answerability described by one-place `authority`.
+Kinds do not adjudicate a payment by themselves, and no amount implies guilt.
+
+`tests/pins/integrity/payer-identity/` checks missing and mismatched identities.
+`money-finding/` covers the kinds, shell-control omission, independent review,
+an unrelated act, the stateful adverse consequence, and the protected ballot.
+The canonical semantic generators are now `src/authoring/state_form.rs` and
+`src/authoring/integrity.rs`. Counts, old paths and administrative procedures
+below describe the earlier kinds-only batch; they impose no current gate.
+
 ## 1. Decision
 
 Every reviewed state-form result now attests that the political-finance kinds
@@ -196,8 +220,9 @@ scope bound, with the enumerated non-extension clause in section 8.
    effect on the three-hour gate I have not measured, and a wrong guess costs
    a full run. **Ruled 2026-09-09: kinds now, identity as its own
    measured batch.** The follow-up must probe the free-variable cost against
-   one generated case before it freezes anything, and it is tracked in
-   `TODO.md` under this item rather than left to memory.
+   one generated case before it freezes anything. That follow-up was tracked
+   in `TODO.md` and completed on 2026-09-12; the implementation note above
+   records its measured result and both identity bindings.
 2. **Universal scope**, as for office integrity: every branch is an office or
    candidacy act, and the fiscal cards are exactly where the exclusion would
    hurt.

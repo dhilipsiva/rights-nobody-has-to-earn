@@ -59,18 +59,18 @@ observe(OblFused388Review, OblFused388Origin, OblFused388LegalScope, AuthoritySc
 observe(OblFused388Source, OblFused388Origin, OblFused388TemporalRecord, TemporalRecordScope).
 observe(OblFused388Evidence, OblFused388Origin, OblFused388TemporalRecord, TemporalRecordScope).
 observe(OblFused388Review, OblFused388Origin, OblFused388TemporalRecord, TemporalRecordScope).
-observe(OblFused388Source, OblFused388Origin, State, DutyBearerScope).
-observe(OblFused388Evidence, OblFused388Origin, State, DutyBearerScope).
-observe(OblFused388Review, OblFused388Origin, State, DutyBearerScope).
+observe(OblFused388Source, OblFused388Origin, OblFused388Bearer, DutyBearerScope).
+observe(OblFused388Evidence, OblFused388Origin, OblFused388Bearer, DutyBearerScope).
+observe(OblFused388Review, OblFused388Origin, OblFused388Bearer, DutyBearerScope).
 observe(OblFused388Source, OblFused388Origin, OblFused388Duty, DutyScope).
 observe(OblFused388Evidence, OblFused388Origin, OblFused388Duty, DutyScope).
 observe(OblFused388Review, OblFused388Origin, OblFused388Duty, DutyScope).
 observe(OblFused388Source, OblFused388Origin, OblFused388Standard, DutyStandardScope).
 observe(OblFused388Evidence, OblFused388Origin, OblFused388Standard, DutyStandardScope).
 observe(OblFused388Review, OblFused388Origin, OblFused388Standard, DutyStandardScope).
-observe(OblFused388Source, OblFused388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblFused388Evidence, OblFused388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblFused388Review, OblFused388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
+observe(OblFused388Source, OblFused388Origin, OblFused388Target, DutyBeneficiaryOrObjectScope).
+observe(OblFused388Evidence, OblFused388Origin, OblFused388Target, DutyBeneficiaryOrObjectScope).
+observe(OblFused388Review, OblFused388Origin, OblFused388Target, DutyBeneficiaryOrObjectScope).
 observe(OblFused388Source, OblFused388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
 observe(OblFused388Evidence, OblFused388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
 observe(OblFused388Review, OblFused388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
@@ -137,25 +137,7 @@ observe(OblFused388Review, OblFused388EffectResult, FSCCE_388ObligationBranch, O
 observe(OblFused388Source, OblFused388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
 observe(OblFused388Evidence, OblFused388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
 observe(OblFused388Review, OblFused388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
-public(State).
-observe(OblFused388Source, OblFused388Route, Placement, FindingKindScope).
-observe(OblFused388Evidence, OblFused388Route, Placement, FindingKindScope).
-observe(OblFused388Review, OblFused388Route, Placement, FindingKindScope).
-observe(OblFused388Source, OblFused388Route, PlacementAffected, FindingSubjectScope).
-observe(OblFused388Evidence, OblFused388Route, PlacementAffected, FindingSubjectScope).
-observe(OblFused388Review, OblFused388Route, PlacementAffected, FindingSubjectScope).
-observe(OblFused388Source, OblFused388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblFused388Evidence, OblFused388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblFused388Review, OblFused388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblFused388Source, OblFused388Route, OblFused388Case, FindingCaseScope).
-observe(OblFused388Evidence, OblFused388Route, OblFused388Case, FindingCaseScope).
-observe(OblFused388Review, OblFused388Route, OblFused388Case, FindingCaseScope).
-observe(OblFused388Source, OblFused388Route, Review, FindingReaderScope).
-observe(OblFused388Evidence, OblFused388Route, Review, FindingReaderScope).
-observe(OblFused388Review, OblFused388Route, Review, FindingReaderScope).
-observe(OblFused388Source, OblFused388Route, OblFused388Route, FindingRouteScope).
-observe(OblFused388Evidence, OblFused388Route, OblFused388Route, FindingRouteScope).
-observe(OblFused388Review, OblFused388Route, OblFused388Route, FindingRouteScope).
+public(OblFused388Bearer).
 observe(OblFused388Source, OblFused388EffectResult, OblFused388DisclosureReader, DisclosureReaderScope).
 observe(OblFused388Evidence, OblFused388EffectResult, OblFused388DisclosureReader, DisclosureReaderScope).
 observe(OblFused388Review, OblFused388EffectResult, OblFused388DisclosureReader, DisclosureReaderScope).
@@ -168,4 +150,3 @@ observe(OblFused388Review, OblFused388EffectResult, OblFused388DisclosureReaderS
 observe(OblFused388Source, OblFused388EffectResult, OblFused388DisclosureReceipt, DisclosureReceiptEvidenceScope).
 observe(OblFused388Evidence, OblFused388EffectResult, OblFused388DisclosureReceipt, DisclosureReceiptEvidenceScope).
 observe(OblFused388Review, OblFused388EffectResult, OblFused388DisclosureReceipt, DisclosureReceiptEvidenceScope).
-put(State, PlacementAffected, Homestay).

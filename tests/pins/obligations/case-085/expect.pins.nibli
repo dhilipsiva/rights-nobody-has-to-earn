@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-204 omitting PrivateDutySourceScope withholds the effect.
-? obliged(OblSpecialOmit204Bearer, OblSpecialOmit204Duty, OblSpecialOmit204Standard).
+? obliged(OblSpecialOmit204PrivateDutySourceScopeBearer, OblSpecialOmit204PrivateDutySourceScopeDuty, OblSpecialOmit204PrivateDutySourceScopeStandard).
 # => FALSE

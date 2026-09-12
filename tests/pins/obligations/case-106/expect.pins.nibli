@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-212 FS-CLM-01
+# Disclosure 390 independent alternate
 :expect-pins 1
 
-# FS-CCE-212 protects the ledger-derived route for FS-CLM-01.
-? prevents(OblWall01Target, ObligationFailureEntitlementGate).
-# => TRUE
+# A reader cannot be its own independent alternate.
+? obliged(DisclosureFusedAlternate390DisclosureReader, DisclosureFusedAlternate390DisclosureAlternateDuty, DisclosureFusedAlternate390DisclosureAlternateStandard).
+# => FALSE

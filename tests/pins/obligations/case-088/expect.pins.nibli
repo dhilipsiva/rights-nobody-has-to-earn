@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-208 omitting RoleDutyCorrectionScope withholds the effect.
-? obliged(OblSpecialOmit208Bearer, OblSpecialOmit208Duty, OblSpecialOmit208Standard).
+? obliged(OblSpecialOmit208RoleDutyCorrectionScopeBearer, OblSpecialOmit208RoleDutyCorrectionScopeDuty, OblSpecialOmit208RoleDutyCorrectionScopeStandard).
 # => FALSE

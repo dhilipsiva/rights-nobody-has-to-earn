@@ -73,18 +73,18 @@ observe(OblPositive388Review, OblPositive388Origin, OblPositive388LegalScope, Au
 observe(OblPositive388Source, OblPositive388Origin, OblPositive388TemporalRecord, TemporalRecordScope).
 observe(OblPositive388Evidence, OblPositive388Origin, OblPositive388TemporalRecord, TemporalRecordScope).
 observe(OblPositive388Review, OblPositive388Origin, OblPositive388TemporalRecord, TemporalRecordScope).
-observe(OblPositive388Source, OblPositive388Origin, State, DutyBearerScope).
-observe(OblPositive388Evidence, OblPositive388Origin, State, DutyBearerScope).
-observe(OblPositive388Review, OblPositive388Origin, State, DutyBearerScope).
+observe(OblPositive388Source, OblPositive388Origin, OblPositive388Bearer, DutyBearerScope).
+observe(OblPositive388Evidence, OblPositive388Origin, OblPositive388Bearer, DutyBearerScope).
+observe(OblPositive388Review, OblPositive388Origin, OblPositive388Bearer, DutyBearerScope).
 observe(OblPositive388Source, OblPositive388Origin, OblPositive388Duty, DutyScope).
 observe(OblPositive388Evidence, OblPositive388Origin, OblPositive388Duty, DutyScope).
 observe(OblPositive388Review, OblPositive388Origin, OblPositive388Duty, DutyScope).
 observe(OblPositive388Source, OblPositive388Origin, OblPositive388Standard, DutyStandardScope).
 observe(OblPositive388Evidence, OblPositive388Origin, OblPositive388Standard, DutyStandardScope).
 observe(OblPositive388Review, OblPositive388Origin, OblPositive388Standard, DutyStandardScope).
-observe(OblPositive388Source, OblPositive388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblPositive388Evidence, OblPositive388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
-observe(OblPositive388Review, OblPositive388Origin, PlacementAffected, DutyBeneficiaryOrObjectScope).
+observe(OblPositive388Source, OblPositive388Origin, OblPositive388Target, DutyBeneficiaryOrObjectScope).
+observe(OblPositive388Evidence, OblPositive388Origin, OblPositive388Target, DutyBeneficiaryOrObjectScope).
+observe(OblPositive388Review, OblPositive388Origin, OblPositive388Target, DutyBeneficiaryOrObjectScope).
 observe(OblPositive388Source, OblPositive388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
 observe(OblPositive388Evidence, OblPositive388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
 observe(OblPositive388Review, OblPositive388Origin, DisclosureReaderActionDutyKind, DutyKindScope).
@@ -151,25 +151,7 @@ observe(OblPositive388Review, OblPositive388EffectResult, FSCCE_388ObligationBra
 observe(OblPositive388Source, OblPositive388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
 observe(OblPositive388Evidence, OblPositive388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
 observe(OblPositive388Review, OblPositive388EffectResult, FSCCE_388FailureWithholdsOnly, FailurePolarityScope).
-public(State).
-observe(OblPositive388Source, OblPositive388Route, Placement, FindingKindScope).
-observe(OblPositive388Evidence, OblPositive388Route, Placement, FindingKindScope).
-observe(OblPositive388Review, OblPositive388Route, Placement, FindingKindScope).
-observe(OblPositive388Source, OblPositive388Route, PlacementAffected, FindingSubjectScope).
-observe(OblPositive388Evidence, OblPositive388Route, PlacementAffected, FindingSubjectScope).
-observe(OblPositive388Review, OblPositive388Route, PlacementAffected, FindingSubjectScope).
-observe(OblPositive388Source, OblPositive388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblPositive388Evidence, OblPositive388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblPositive388Review, OblPositive388Route, PlacementAffected, FindingAffectedSubjectScope).
-observe(OblPositive388Source, OblPositive388Route, OblPositive388Case, FindingCaseScope).
-observe(OblPositive388Evidence, OblPositive388Route, OblPositive388Case, FindingCaseScope).
-observe(OblPositive388Review, OblPositive388Route, OblPositive388Case, FindingCaseScope).
-observe(OblPositive388Source, OblPositive388Route, Review, FindingReaderScope).
-observe(OblPositive388Evidence, OblPositive388Route, Review, FindingReaderScope).
-observe(OblPositive388Review, OblPositive388Route, Review, FindingReaderScope).
-observe(OblPositive388Source, OblPositive388Route, OblPositive388Route, FindingRouteScope).
-observe(OblPositive388Evidence, OblPositive388Route, OblPositive388Route, FindingRouteScope).
-observe(OblPositive388Review, OblPositive388Route, OblPositive388Route, FindingRouteScope).
+public(OblPositive388Bearer).
 observe(OblPositive388Source, OblPositive388EffectResult, OblPositive388DisclosureReader, DisclosureReaderScope).
 observe(OblPositive388Evidence, OblPositive388EffectResult, OblPositive388DisclosureReader, DisclosureReaderScope).
 observe(OblPositive388Review, OblPositive388EffectResult, OblPositive388DisclosureReader, DisclosureReaderScope).
@@ -182,4 +164,3 @@ observe(OblPositive388Review, OblPositive388EffectResult, OblPositive388Disclosu
 observe(OblPositive388Source, OblPositive388EffectResult, OblPositive388DisclosureReceipt, DisclosureReceiptEvidenceScope).
 observe(OblPositive388Evidence, OblPositive388EffectResult, OblPositive388DisclosureReceipt, DisclosureReceiptEvidenceScope).
 observe(OblPositive388Review, OblPositive388EffectResult, OblPositive388DisclosureReceipt, DisclosureReceiptEvidenceScope).
-put(State, PlacementAffected, Homestay).

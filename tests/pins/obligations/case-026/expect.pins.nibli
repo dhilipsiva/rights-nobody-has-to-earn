@@ -1,7 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # FS-CCE-387 positive
-:expect-pins 1
+:expect-pins 2
 
 # FS-CCE-387 positive: Disclosure duty.
 ? obliged(OblPositive387DisclosureBearer, OblPositive387DisclosureDuty, OblPositive387DisclosureStandard).
+# => TRUE
+
+# FS-CCE-387 legal conclusion 2 remains source-bound.
+? obliged(OblPositive387DisclosureReader, ReadAndActOnProportionateDisclosure, OblPositive387DisclosureStandard).
 # => TRUE

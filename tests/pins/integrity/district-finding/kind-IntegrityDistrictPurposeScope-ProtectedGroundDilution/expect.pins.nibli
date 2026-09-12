@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+
+? contradict(IntegrityCaseTarget, DemocraticIntegrityAuthorization).
+# => TRUE
+? obliged(IntegrityCaseReader, ReviewAndCorrectElectoralDistrictPlan, IntegrityCaseTarget).
+# => TRUE
+? complete(IntegrityCaseRecord, ForbiddenDistrictingPurposeFinding, IntegrityCaseTarget).
+# => TRUE

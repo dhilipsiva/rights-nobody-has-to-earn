@@ -1,7 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-210 tie omission DutyPriorityDispositionScope
-:expect-pins 1
+# FS-CCE-387 omission DisclosureBearerQualificationScope
+:expect-pins 2
 
-# FS-CCE-210 omitting DutyPriorityDispositionScope withholds the watched effect.
-? obliged(OblWatchedOmit210Bearer, OblWatchedOmit210PreferredDuty, OblWatchedOmit210PreferredStandard).
+# Missing DisclosureBearerQualificationScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit387DisclosureBearerQualificationScopeDisclosureBearer, OblSpecialOmit387DisclosureBearerQualificationScopeDisclosureDuty, OblSpecialOmit387DisclosureBearerQualificationScopeDisclosureStandard).
+# => FALSE
+
+# Missing DisclosureBearerQualificationScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit387DisclosureBearerQualificationScopeDisclosureReader, ReadAndActOnProportionateDisclosure, OblSpecialOmit387DisclosureBearerQualificationScopeDisclosureStandard).
 # => FALSE

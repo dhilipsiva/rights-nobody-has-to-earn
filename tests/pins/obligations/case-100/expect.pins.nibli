@@ -1,7 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-211 omission ExcuseRetentionScope
-:expect-pins 1
+# FS-CCE-387 omission DisclosureReaderScope
+:expect-pins 2
 
-# FS-CCE-211 omitting ExcuseRetentionScope withholds the watched effect.
-? obliged(OblWatchedOmit211Bearer, OblWatchedOmit211Duty, OblWatchedOmit211Standard).
+# Missing DisclosureReaderScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit387DisclosureReaderScopeDisclosureBearer, OblSpecialOmit387DisclosureReaderScopeDisclosureDuty, OblSpecialOmit387DisclosureReaderScopeDisclosureStandard).
+# => FALSE
+
+# Missing DisclosureReaderScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit387DisclosureReaderScopeDisclosureReader, ReadAndActOnProportionateDisclosure, OblSpecialOmit387DisclosureReaderScopeDisclosureStandard).
 # => FALSE

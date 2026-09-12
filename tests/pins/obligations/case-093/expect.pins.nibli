@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-214 omitting PositiveFindingNonresponseScope withholds the effect.
-? prevents(OblSpecialOmit214Nonresponse, SilenceAsFindingAction).
+? prevents(OblSpecialOmit214PositiveFindingNonresponseScopeNonresponse, SilenceAsFindingAction).
 # => FALSE

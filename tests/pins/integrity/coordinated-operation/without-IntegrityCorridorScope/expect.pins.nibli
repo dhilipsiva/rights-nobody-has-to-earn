@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? complete(IntegrityCaseRecord, CoordinatedOperationFinding, IntegrityCaseTarget).
+# => FALSE
+? obliged(EconSubject064Live, DiscloseCoordinationAndFunding, EconFunction064Live).
+# => FALSE
+? obliged(EconSubject064Live, AttributeCoordinatedAdvocacy, EconFunction064Live).
+# => FALSE
+? obliged(EconSubject064Live, ProvideCalibratedAccessAuditChallengeAndRemedy, EconFunction064Live).
+# => FALSE

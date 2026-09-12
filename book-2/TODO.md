@@ -220,6 +220,17 @@ noticing.
 
 ## Full-society operational completion contract — collect now, execute only after Gate C
 
+- **Integrity interface operation (seed, 2026-09-12).** The districting,
+  opposition/internal-democracy and coordinated-operation cards beside
+  `new-book-plans/book-1-integrity-record-contract.md` define current bounded
+  findings, challenge, correction, alternate review and legal duties. Collect
+  their evidence/authentication, Assembly and association procedures,
+  district-drawing methods, actor-control investigation, proportionate
+  disclosure, reader/alternate staffing, funding and enforcement requirements
+  here. A legal duty is not proof of arrival or action. Procurement process
+  integrity remains exclusively Book 2. Do not execute this operational work
+  before Gate C or turn it into a personal score or truth regulator.
+
 - **Political-finance operation (seed, 2026-09-10).** Book 1 now names the
   payer, instrument, and recipient kinds a reviewed office or candidacy result
   must attest under `new-book-plans/book-1-money-and-influence-contract.md`.

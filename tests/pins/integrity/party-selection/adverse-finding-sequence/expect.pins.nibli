@@ -1,0 +1,89 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+
+? authority(IntegrityLawfulAssociation, InternalDemocraticCandidateSelection, IntegrityLawfulTarget).
+# => TRUE
+? complete(IntegrityLawfulRecord, ReviewedInternalDemocraticSelection, IntegrityLawfulTarget).
+# => TRUE
+authorized(IntegrityAdverseSource, ElectoralOrIntegritySourceAuthority, IntegrityAdverseRecord).
+authorized(IntegrityAdverseEvidence, IndependentIntegrityEvidenceAuthority, IntegrityAdverseRecord).
+authorized(IntegrityAdverseReview, IndependentIntegrityReviewAuthority, IntegrityAdverseRecord).
+authorized(IntegrityAdverseReader, IntegrityFindingReaderAuthority, IntegrityAdverseRecord).
+authorized(IntegrityAdverseAlternate, IndependentIntegrityAlternateAuthority, IntegrityAdverseRecord).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityLawfulTarget, IntegrityTargetScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityLawfulTarget, IntegrityTargetScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityLawfulTarget, IntegrityTargetScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseVersion, IntegritySourceVersionScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseVersion, IntegritySourceVersionScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseVersion, IntegritySourceVersionScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseJurisdiction, IntegrityJurisdictionScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseJurisdiction, IntegrityJurisdictionScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseJurisdiction, IntegrityJurisdictionScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseLegalScope, IntegrityLegalScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseLegalScope, IntegrityLegalScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseLegalScope, IntegrityLegalScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseEnd, IntegritySourceBoundEndScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseEnd, IntegritySourceBoundEndScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseEnd, IntegritySourceBoundEndScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, CurrentReconciledIntegrityRecord, IntegrityCurrentDispositionScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, CurrentReconciledIntegrityRecord, IntegrityCurrentDispositionScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, CurrentReconciledIntegrityRecord, IntegrityCurrentDispositionScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IndependentlyReviewedEvidence, IntegrityEvidenceDispositionScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IndependentlyReviewedEvidence, IntegrityEvidenceDispositionScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IndependentlyReviewedEvidence, IntegrityEvidenceDispositionScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseReader, IntegrityReaderScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseReader, IntegrityReaderScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseReader, IntegrityReaderScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseAlternate, IntegrityIndependentAlternateScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseAlternate, IntegrityIndependentAlternateScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseAlternate, IntegrityIndependentAlternateScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseChallenge, IntegrityChallengeScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseChallenge, IntegrityChallengeScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseChallenge, IntegrityChallengeScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseCorrection, IntegrityCorrectionScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseCorrection, IntegrityCorrectionScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseCorrection, IntegrityCorrectionScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityAdverseRemedy, IntegrityRemedyScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityAdverseRemedy, IntegrityRemedyScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityAdverseRemedy, IntegrityRemedyScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, CourtOrIndependentSubstitutePanel, IntegrityFinalReviewScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, CourtOrIndependentSubstitutePanel, IntegrityFinalReviewScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, CourtOrIndependentSubstitutePanel, IntegrityFinalReviewScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, NoPersonalStatusFloorBallotOrLibertyConsequence, IntegrityCorridorScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, NoPersonalStatusFloorBallotOrLibertyConsequence, IntegrityCorridorScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, NoPersonalStatusFloorBallotOrLibertyConsequence, IntegrityCorridorScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, ProportionatePurposeLimitedPrivateRecord, IntegrityPrivacyScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, ProportionatePurposeLimitedPrivateRecord, IntegrityPrivacyScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, ProportionatePurposeLimitedPrivateRecord, IntegrityPrivacyScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, InternalDemocraticMinimumFailureFinding, IntegrityRecordKindScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, InternalDemocraticMinimumFailureFinding, IntegrityRecordKindScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, InternalDemocraticMinimumFailureFinding, IntegrityRecordKindScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, IntegrityLawfulAssociation, IntegrityCandidateFieldingAssociationScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, IntegrityLawfulAssociation, IntegrityCandidateFieldingAssociationScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, IntegrityLawfulAssociation, IntegrityCandidateFieldingAssociationScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, FieldsCandidatesInThisSelection, IntegrityBallotActivityScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, FieldsCandidatesInThisSelection, IntegrityBallotActivityScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, FieldsCandidatesInThisSelection, IntegrityBallotActivityScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, MemberElectedLeadership, IntegrityPartyMinimumScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, MemberElectedLeadership, IntegrityPartyMinimumScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, MemberElectedLeadership, IntegrityPartyMinimumScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, MinimumFailureEstablishedForThisSelection, IntegrityFindingDispositionScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, MinimumFailureEstablishedForThisSelection, IntegrityFindingDispositionScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, MinimumFailureEstablishedForThisSelection, IntegrityFindingDispositionScope).
+observe(IntegrityAdverseSource, IntegrityAdverseRecord, SelectionOnlyNotMemberBallotOrOtherCandidacyRoute, IntegrityConsequenceLimitScope).
+observe(IntegrityAdverseEvidence, IntegrityAdverseRecord, SelectionOnlyNotMemberBallotOrOtherCandidacyRoute, IntegrityConsequenceLimitScope).
+observe(IntegrityAdverseReview, IntegrityAdverseRecord, SelectionOnlyNotMemberBallotOrOtherCandidacyRoute, IntegrityConsequenceLimitScope).
+? authority(IntegrityLawfulAssociation, InternalDemocraticCandidateSelection, IntegrityLawfulTarget).
+# => FALSE
+? complete(IntegrityLawfulRecord, ReviewedInternalDemocraticSelection, IntegrityLawfulTarget).
+# => FALSE
+? contradict(IntegrityLawfulTarget, DemocraticIntegrityAuthorization).
+# => TRUE
+? obliged(IntegrityLawfulAssociation, CorrectInternalCandidateSelection, IntegrityLawfulTarget).
+# => TRUE
+? prevents(IntegrityLawfulAssociation, PartyProscriptionAsIntegrityRemedy).
+# => TRUE
+? complete(IntegrityAdverseRecord, InternalDemocraticMinimumFailureFinding, IntegrityLawfulTarget).
+# => TRUE
+? authority(FSBOD_06, ProscribeParty, IntegrityLawfulTarget).
+# => FALSE

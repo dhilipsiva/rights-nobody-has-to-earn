@@ -19,7 +19,7 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **89** | **44** | **1621** | **7** |
+| computed from the constitution | **89** | **43** | **1697** | **7** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 5 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
@@ -33,7 +33,7 @@ The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `ex
 | **5** | `become`, **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `fit`, **healthy**, **learn**, **meets**, `owe`, `person`, `prisoner`, `reward`, **secure** |
 | **6** | `err`, `obliged`, `prevents`, `travel` |
 
-Evidence predicates (44), the complete list of what the world may report: `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `parent`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
+Evidence predicates (45), the complete list of what the world may report: `adjust`, `at`, `attack`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `family`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `parent`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`.
 
 Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is not evidence, since nobody writes it.
 <!-- END GENERATED: stratification -->

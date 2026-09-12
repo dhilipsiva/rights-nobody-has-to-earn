@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-210 omitting DutyPriorityBoundaryScope withholds the effect.
-? obliged(OblSpecialOmit210Bearer, OblSpecialOmit210PreferredDuty, OblSpecialOmit210PreferredStandard).
+? obliged(OblSpecialOmit210DutyPriorityBoundaryScopeBearer, OblSpecialOmit210DutyPriorityBoundaryScopePreferredDuty, OblSpecialOmit210DutyPriorityBoundaryScopePreferredStandard).
 # => FALSE

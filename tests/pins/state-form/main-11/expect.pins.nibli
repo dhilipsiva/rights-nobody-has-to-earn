@@ -257,6 +257,12 @@ observe(SFMainP063Review, SFMainP063Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP063Source, SFMainP063Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP063Evidence, SFMainP063Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP063Review, SFMainP063Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP063Source, SFMainP063Result, SFMainP063Payer, PoliticalFinancePayerScope).
+observe(SFMainP063Evidence, SFMainP063Result, SFMainP063Payer, PoliticalFinancePayerScope).
+observe(SFMainP063Review, SFMainP063Result, SFMainP063Payer, PoliticalFinancePayerScope).
+observe(SFMainP063Source, SFMainP063Result, SFMainP063ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP063Evidence, SFMainP063Result, SFMainP063ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP063Review, SFMainP063Result, SFMainP063ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP063Admin, DecisionAdministrationAuthority, SFMainP063Record).
 authorized(SFMainP063Assurer, IndependentCompletenessAssuranceAuthority, SFMainP063Record).
 authorized(SFMainP063Service, ResultServiceAuthority, SFMainP063Record).
@@ -635,6 +641,12 @@ observe(SFMainP064Review, SFMainP064Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP064Source, SFMainP064Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP064Evidence, SFMainP064Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP064Review, SFMainP064Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP064Source, SFMainP064Result, SFMainP064Payer, PoliticalFinancePayerScope).
+observe(SFMainP064Evidence, SFMainP064Result, SFMainP064Payer, PoliticalFinancePayerScope).
+observe(SFMainP064Review, SFMainP064Result, SFMainP064Payer, PoliticalFinancePayerScope).
+observe(SFMainP064Source, SFMainP064Result, SFMainP064ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP064Evidence, SFMainP064Result, SFMainP064ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP064Review, SFMainP064Result, SFMainP064ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP064Admin, DecisionAdministrationAuthority, SFMainP064Record).
 authorized(SFMainP064Assurer, IndependentCompletenessAssuranceAuthority, SFMainP064Record).
 authorized(SFMainP064Service, ResultServiceAuthority, SFMainP064Record).
@@ -1013,6 +1025,12 @@ observe(SFMainP065Review, SFMainP065Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP065Source, SFMainP065Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP065Evidence, SFMainP065Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP065Review, SFMainP065Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP065Source, SFMainP065Result, SFMainP065Payer, PoliticalFinancePayerScope).
+observe(SFMainP065Evidence, SFMainP065Result, SFMainP065Payer, PoliticalFinancePayerScope).
+observe(SFMainP065Review, SFMainP065Result, SFMainP065Payer, PoliticalFinancePayerScope).
+observe(SFMainP065Source, SFMainP065Result, SFMainP065ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP065Evidence, SFMainP065Result, SFMainP065ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP065Review, SFMainP065Result, SFMainP065ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP065Admin, DecisionAdministrationAuthority, SFMainP065Record).
 authorized(SFMainP065Assurer, IndependentCompletenessAssuranceAuthority, SFMainP065Record).
 authorized(SFMainP065Service, ResultServiceAuthority, SFMainP065Record).
@@ -1391,6 +1409,12 @@ observe(SFMainP066Review, SFMainP066Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP066Source, SFMainP066Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP066Evidence, SFMainP066Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP066Review, SFMainP066Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP066Source, SFMainP066Result, SFMainP066Payer, PoliticalFinancePayerScope).
+observe(SFMainP066Evidence, SFMainP066Result, SFMainP066Payer, PoliticalFinancePayerScope).
+observe(SFMainP066Review, SFMainP066Result, SFMainP066Payer, PoliticalFinancePayerScope).
+observe(SFMainP066Source, SFMainP066Result, SFMainP066ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP066Evidence, SFMainP066Result, SFMainP066ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP066Review, SFMainP066Result, SFMainP066ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP066Admin, DecisionAdministrationAuthority, SFMainP066Record).
 authorized(SFMainP066Assurer, IndependentCompletenessAssuranceAuthority, SFMainP066Record).
 authorized(SFMainP066Service, ResultServiceAuthority, SFMainP066Record).
@@ -1751,6 +1775,12 @@ observe(SFMainP067Review, SFMainP067Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP067Source, SFMainP067Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP067Evidence, SFMainP067Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP067Review, SFMainP067Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP067Source, SFMainP067Result, SFMainP067Payer, PoliticalFinancePayerScope).
+observe(SFMainP067Evidence, SFMainP067Result, SFMainP067Payer, PoliticalFinancePayerScope).
+observe(SFMainP067Review, SFMainP067Result, SFMainP067Payer, PoliticalFinancePayerScope).
+observe(SFMainP067Source, SFMainP067Result, SFMainP067ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP067Evidence, SFMainP067Result, SFMainP067ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP067Review, SFMainP067Result, SFMainP067ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP067Executor, InstitutionalExecutionAuthority, SFMainP067Record).
 observe(SFMainP067Executor, SFMainP067Record, Constitution_StateForm, SourceFamilyScope).
 observe(SFMainP067Executor, SFMainP067Record, SFMainP067Version, SourceVersionScope).
@@ -1996,6 +2026,12 @@ observe(SFMainP068Review, SFMainP068Result, OfficeHolderRecipient, PoliticalFina
 observe(SFMainP068Source, SFMainP068Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP068Evidence, SFMainP068Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
 observe(SFMainP068Review, SFMainP068Result, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+observe(SFMainP068Source, SFMainP068Result, SFMainP068Payer, PoliticalFinancePayerScope).
+observe(SFMainP068Evidence, SFMainP068Result, SFMainP068Payer, PoliticalFinancePayerScope).
+observe(SFMainP068Review, SFMainP068Result, SFMainP068Payer, PoliticalFinancePayerScope).
+observe(SFMainP068Source, SFMainP068Result, SFMainP068ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP068Evidence, SFMainP068Result, SFMainP068ControllingPayer, PoliticalFinanceControllingPayerScope).
+observe(SFMainP068Review, SFMainP068Result, SFMainP068ControllingPayer, PoliticalFinanceControllingPayerScope).
 authorized(SFMainP068Executor, InstitutionalExecutionAuthority, SFMainP068Record).
 observe(SFMainP068Executor, SFMainP068Record, Constitution_StateForm, SourceFamilyScope).
 observe(SFMainP068Executor, SFMainP068Record, SFMainP068Version, SourceVersionScope).

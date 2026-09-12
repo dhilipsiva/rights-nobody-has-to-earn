@@ -10,6 +10,8 @@ use serde::{Deserialize, Serialize};
 use crate::cli::Error;
 use crate::context::Context;
 
+#[path = "authoring/integrity.rs"]
+mod integrity;
 #[path = "authoring/obligations.rs"]
 mod obligations;
 #[path = "authoring/spine.rs"]
@@ -206,9 +208,9 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         );
         return Ok(());
     }
-    if !matches!(family, "state-form" | "obligations") {
+    if !matches!(family, "state-form" | "obligations" | "integrity") {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -217,6 +219,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
     match family {
         "state-form" => state_form::generate(context, &mut export)?,
         "obligations" => obligations::generate(context, &mut export)?,
+        "integrity" => integrity::generate(context, &mut export)?,
         _ => unreachable!(),
     }
     let count = export.cases.len();
@@ -345,6 +348,34 @@ mod tests {
         );
         let inventory = context.read("tests/pins/suites.json").unwrap();
         run(&context, "obligations").expect("repeat generation");
+        assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
+        assert_eq!(
+            context.read("new-book-plans/constitution.nibli").unwrap(),
+            after
+        );
+    }
+
+    #[test]
+    fn integrity_generation_is_repeatable_and_preserves_other_families() {
+        let (_directory, context, before) = isolated_authoring("integrity");
+        let live = Context::discover().unwrap();
+        for path in [
+            "new-book-plans/state-form-source.json",
+            "new-book-plans/economic-power-064.pins.nibli",
+        ] {
+            std::fs::copy(live.path(path), context.path(path)).unwrap();
+        }
+        run(&context, "integrity").unwrap();
+        assert_fixture_statements_terminated(&context);
+        let after = context.read("new-book-plans/constitution.nibli").unwrap();
+        assert_outside_region_unchanged(
+            &before,
+            &after,
+            "# <DEMOCRATIC-INTEGRITY-RULES-BEGIN>",
+            "# <DEMOCRATIC-INTEGRITY-RULES-END>",
+        );
+        let inventory = context.read("tests/pins/suites.json").unwrap();
+        run(&context, "integrity").unwrap();
         assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
         assert_eq!(
             context.read("new-book-plans/constitution.nibli").unwrap(),

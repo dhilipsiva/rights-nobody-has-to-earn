@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-212 FS-CLM-35
+# FS-CCE-212 FS-CLM-01
 :expect-pins 1
 
-# FS-CCE-212 protects the ledger-derived route for FS-CLM-35.
-? prevents(OblWall10Target, ObligationFailureEntitlementGate).
+# FS-CCE-212 protects the declared route for FS-CLM-01.
+? prevents(OblWall01Target, ObligationFailureEntitlementGate).
 # => TRUE

@@ -1,11 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# Isolation finding route
-:expect-pins 2
+# FS-CCE-212 FS-CLM-08
+:expect-pins 1
 
-# The exact Isolation finding route reaches its typed reader duty.
-? obliged(Review, ReadIsolationFindingDuty, ReadIsolationFindingStandard).
+# FS-CCE-212 protects the declared route for FS-CLM-08.
+? prevents(OblWall06Target, ObligationFailureEntitlementGate).
 # => TRUE
-
-# The wrong recipient gains no Isolation reader duty.
-? obliged(WrongIsolationReader, ReadIsolationFindingDuty, ReadIsolationFindingStandard).
-# => FALSE

@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-213 omitting FindingReceiptEvidenceScope withholds the effect.
-? obliged(Review, OblSpecialOmit213ReaderDuty, OblSpecialOmit213ReaderStandard).
+? obliged(Review, OblSpecialOmit213FindingReceiptEvidenceScopeReaderDuty, OblSpecialOmit213FindingReceiptEvidenceScopeReaderStandard).
 # => FALSE

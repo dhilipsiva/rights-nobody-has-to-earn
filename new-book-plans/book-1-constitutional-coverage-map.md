@@ -12,6 +12,26 @@
 > prose cannot complete or upgrade the specification. Neither repository status
 > proves lawful enactment or deployment.
 
+## Integrity implementation update — 2026-09-12
+
+The democratic/administrative integrity decision now has executable office,
+money, disclosure, districting, opposition/internal-democracy and coordinated-
+operation interfaces. Their controlling implementation contract is
+[Integrity records](book-1-integrity-record-contract.md), with the semantic
+inputs in `state-form-source.json` and `integrity-source.json` and the typed
+disclosure bridge in the obligations family. The family cards specify holders,
+readers, independent alternates, exact act/function scope, positive evidence,
+non-use walls, challenge, correction, remedy, end and Book 2 handoff.
+
+These current interfaces supersede the older democratic-integrity absence
+descriptions in the historical projection below. The 2026-09-12 verification
+ruling also supersedes its receipt/audit/closure workflow language. The exact
+reader section "Keeping public decisions answerable" was separately approved
+on 2026-09-12 and inserted unchanged in Book 1 chapter 9, with supporting cases
+mapped in its paired pins. Its supply is `session-drafted, author-approved`;
+formal implementation and reader projection do not imply operational delivery.
+Procurement process integrity remains Book 2.
+
 ## 1. Ratified mandate
 
 The settled specification has a narrow, verified kernel: equal standing, named

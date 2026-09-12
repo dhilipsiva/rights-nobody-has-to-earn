@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-209 omitting VoluntaryDutyBoundaryScope withholds the effect.
-? obliged(OblSpecialOmit209Bearer, OblSpecialOmit209Duty, OblSpecialOmit209Standard).
+? obliged(OblSpecialOmit209VoluntaryDutyBoundaryScopeBearer, OblSpecialOmit209VoluntaryDutyBoundaryScopeDuty, OblSpecialOmit209VoluntaryDutyBoundaryScopeStandard).
 # => FALSE

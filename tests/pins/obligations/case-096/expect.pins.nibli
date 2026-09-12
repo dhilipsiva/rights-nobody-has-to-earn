@@ -1,7 +1,15 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # FS-CCE-389 omission PositiveDisclosureNonresponseScope
-:expect-pins 1
+:expect-pins 3
 
-# FS-CCE-389 omitting PositiveDisclosureNonresponseScope withholds the effect.
-? obliged(OblSpecialOmit389DisclosureNonresponse, OblSpecialOmit389DisclosureNonresponseDuty, OblSpecialOmit389DisclosureNonresponseStandard).
+# Missing PositiveDisclosureNonresponseScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureNonresponse, OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureNonresponseDuty, OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureNonresponseStandard).
+# => FALSE
+
+# Missing PositiveDisclosureNonresponseScope withholds every disclosure consequence, including alternate action.
+? prevents(OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureNonresponse, SilenceAsDisclosureAction).
+# => FALSE
+
+# Missing PositiveDisclosureNonresponseScope withholds every disclosure consequence, including alternate action.
+? obliged(OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureAlternate, OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureAlternateDuty, OblSpecialOmit389PositiveDisclosureNonresponseScopeDisclosureAlternateStandard).
 # => FALSE

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? permits(IntegrityCaseOpposition, EqualAssemblyInformation, IntegrityCaseTarget).
+# => FALSE
+? permits(IntegrityCaseOpposition, ConstitutionalCourtChallenge, IntegrityCaseTarget).
+# => FALSE
+? permits(IntegrityCaseOpposition, ElectoralAdministrationChallenge, IntegrityCaseTarget).
+# => FALSE
+? prevents(IntegrityCaseOpposition, MajorityWithdrawalOfAssemblyProceedingsPlace).
+# => FALSE
+? complete(IntegrityCaseRecord, RecordedOppositionPosition, IntegrityCaseTarget).
+# => FALSE

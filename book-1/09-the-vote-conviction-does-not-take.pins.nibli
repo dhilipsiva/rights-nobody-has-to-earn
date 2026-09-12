@@ -2,10 +2,40 @@
 #
 # FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
 #
+# "Keeping public decisions answerable" uses these isolated executable cases:
+# Affected act, not permanent answerability, personal status or ballot:
+#   tests/pins/integrity/money-finding/act-not-person-sequence/expect.pins.nibli
+#   tests/pins/integrity/money-finding/franchise-does-not-consume-finding/expect.pins.nibli
+# Nominal and controlling payer identity, not a shell label:
+#   tests/pins/integrity/payer-identity/without-PoliticalFinancePayerScope/expect.pins.nibli
+#   tests/pins/integrity/payer-identity/without-PoliticalFinanceControllingPayerScope/expect.pins.nibli
+#   tests/pins/integrity/payer-identity/mismatched-controller/expect.pins.nibli
+# Office interests, recusal, gifts and former-holder dealings:
+#   tests/pins/integrity/office-finding/positive/expect.pins.nibli
+#   tests/pins/integrity/office-finding/former-holder-representation/expect.pins.nibli
+# Disclosure, reader action, certified nonresponse and the alternate's duty:
+#   tests/pins/obligations/case-026/expect.pins.nibli
+#   tests/pins/obligations/case-027/expect.pins.nibli
+#   tests/pins/obligations/case-028/expect.pins.nibli
+#   tests/pins/obligations/case-029/expect.pins.nibli
+# Forbidden districting purpose and independent electoral/equality review:
+#   tests/pins/integrity/district-plan/adverse-finding-sequence/expect.pins.nibli
+#   tests/pins/integrity/district-finding/electoral-result-sequence/expect.pins.nibli
+#   tests/pins/integrity/district-finding/equality-review-route/expect.pins.nibli
+# Recorded opposition and affected association selection, never party bans:
+#   tests/pins/integrity/opposition-rights/positive/expect.pins.nibli
+#   tests/pins/integrity/party-selection/adverse-finding-sequence/expect.pins.nibli
+# Actor-side coordination requires the operation's own public-scale finding:
+#   tests/pins/integrity/coordinated-operation/positive/expect.pins.nibli
+#   tests/pins/integrity/coordinated-operation/no-public-scale-finding/expect.pins.nibli
+#   tests/pins/integrity/coordinated-operation/different-public-scale-actor/expect.pins.nibli
+# Shared evidence limits and family cards:
+#   new-book-plans/book-1-integrity-record-contract.md
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/09-the-vote-conviction-does-not-take.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and formal contradiction checks
+# Markdown consistency is reviewed separately; these pins do not certify prose.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made

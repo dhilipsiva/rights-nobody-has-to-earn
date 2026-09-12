@@ -995,8 +995,8 @@ incompatibility adjudicated on attested evidence with no metric, threshold,
 or compute-backend route. Procurement integrity stays Book 2. Coordinated
 information manipulation receives an actor-side finding only — coordination
 and control, never truth, and never any person-side head, premise, or
-vocabulary, which `src/checks/repository.rs` must guard with a watched
-failing fixture. Genuine opposition rights are formalised, attached to not
+vocabulary, protected by a development source guard and a watched failing
+fixture. Genuine opposition rights are formalised, attached to not
 supporting the government rather than to a party label, and any association
 that fields candidates owes internal democratic minima; no power to
 proscribe a party is created, and that refusal is recorded by name.
@@ -1008,22 +1008,35 @@ Consequences reach public answerability only; the entrenched corridor is
 unchanged. Polarity is positive — an absent or withheld finding manufactures
 nothing.
 
-**Implementation supersession, 2026-09-10.** Rulings C and A are formalized.
-Office integrity (C) and money and influence (A) are the second and third
-examined-kind families in the state-form generator's
-`EXAMINED_KIND_FAMILIES` table, both universal: every reviewed result attests
-that the family's kinds were examined and none found, or no authority derives.
-A's card is also the Class 5 union and civic-association finance card the
-economic ruling promised, and it carries kinds only — the author ruled that
-binding a payer identity lands as its own batch after its free-variable cost
-is measured. B, D, G, and F remain unimplemented.
+**Formal implementation supersession, 2026-09-12.** C, A, B, D, G and F are
+implemented. A now binds nominal and controlling payer identities after the
+required single-case cost probe. C and A retain their examined-kind
+state-form clearances and gain positive, current, independently reviewed
+adverse findings. Disclosure no longer requires an unrelated prior finding;
+certified reader nonresponse directly creates the alternate's duty. District
+plans have their own permission and feed the electoral configuration, not
+court-seat appointments. Opposition rights attach to an elected member or
+group's own recorded non-support; internal democracy gates only the affected
+association selection. Actor-side coordination findings require the actual
+FS-POW-064 public-scale result and cannot classify people or adjudicate truth.
 
-**Ratified but unimplemented.** The remaining contract cards land in the order
-B, D, G, F fixed by the record's section 10, each through its own receipt-bound
-chain; `promise/3` and `pay/4` are not reused for political money. Book 2
-owns registers, audit staffing, investigation, enforcement workflow, and
-publication. Nibli authenticates no payment, detects no coordination, proves
-no disclosure arrived, and advances no clock. Controlling record:
+`new-book-plans/book-1-integrity-record-contract.md` owns the shared finding
+interface and links the family cards. `new-book-plans/integrity-source.json` and the explicit
+integrity generator produce rules and ordinary cases. The person-side source
+guard and watched failing fixture live in the development tests; the retired
+repository audit is not restored. Current incompatibilities withhold scoped
+act permission, not permanent answerability, personal standing, floors or the
+equal ballot. No `promise/3` or `pay/4` record is reused for political money.
+The exact reader section "Keeping public decisions answerable" was approved
+on 2026-09-12 and inserted unchanged in Book 1 chapter 9. Its supply is
+`session-drafted, author-approved`; `new-book-plans/integrity-reader-draft.md`
+retains that approved wording, and the chapter's paired pins identify the
+supporting integrity and disclosure cases.
+
+Procurement process integrity remains Book 2, as do registers, audit staffing,
+investigation, enforcement workflow and publication. Nibli authenticates no
+payment, detects no coordination, proves no disclosure arrived, and advances
+no clock. Controlling record:
 `new-book-plans/book-1-democratic-and-administrative-integrity-decision.md`.
 
 #### Surviving guardrails and the democratic corridor

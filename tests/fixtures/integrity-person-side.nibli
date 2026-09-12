@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Watched hostile consumer, used only by the development source-guard test.
+# A legal finding about an operation must never become a credibility finding.
+all $record: all $operation: complete($record, CoordinatedOperationFinding, $operation) -> false($operation).

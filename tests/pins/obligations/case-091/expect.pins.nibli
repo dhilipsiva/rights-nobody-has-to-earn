@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-211 omitting FiniteExcuseEndScope withholds the effect.
-? obliged(OblSpecialOmit211Bearer, OblSpecialOmit211Duty, OblSpecialOmit211Standard).
+? obliged(OblSpecialOmit211FiniteExcuseEndScopeBearer, OblSpecialOmit211FiniteExcuseEndScopeDuty, OblSpecialOmit211FiniteExcuseEndScopeStandard).
 # => FALSE

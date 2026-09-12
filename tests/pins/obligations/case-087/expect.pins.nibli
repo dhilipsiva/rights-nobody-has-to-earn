@@ -3,5 +3,5 @@
 :expect-pins 1
 
 # FS-CCE-207 omitting CommonDutyRemedyScope withholds the effect.
-? obliged(OblSpecialOmit207Bearer, OblSpecialOmit207Duty, OblSpecialOmit207Standard).
+? obliged(OblSpecialOmit207CommonDutyRemedyScopeBearer, OblSpecialOmit207CommonDutyRemedyScopeDuty, OblSpecialOmit207CommonDutyRemedyScopeStandard).
 # => FALSE

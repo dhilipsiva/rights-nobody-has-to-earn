@@ -1,11 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# TemporalDispute finding route
+# CarryForgery finding route
 :expect-pins 2
 
-# The exact TemporalDispute finding route reaches its typed reader duty.
-? obliged(Appeals, ReadTemporalDisputeFindingDuty, ReadTemporalDisputeFindingStandard).
+# The exact CarryForgery finding route reaches its typed reader duty.
+? obliged(Appeals, ReadCarryForgeryFindingDuty, ReadCarryForgeryFindingStandard).
 # => TRUE
 
-# The wrong recipient gains no TemporalDispute reader duty.
-? obliged(WrongTemporalDisputeReader, ReadTemporalDisputeFindingDuty, ReadTemporalDisputeFindingStandard).
+# The wrong recipient gains no CarryForgery reader duty.
+? obliged(WrongCarryForgeryReader, ReadCarryForgeryFindingDuty, ReadCarryForgeryFindingStandard).
 # => FALSE

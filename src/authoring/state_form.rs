@@ -887,6 +887,15 @@ fn result_raw_premises(branch: &Branch) -> StateFormResult<Vec<String>> {
     let power = branch.power();
     let result_actors = ["source", "evidence", "review"];
     let mut body = vec!["complete($record, StateFormCurrent, $temporal_record)".to_owned()];
+    // A positive, current, independently reviewed incompatibility concerns this
+    // act only. Residence, adulthood, home continuity and the equal ballot are
+    // not office permissions and never consume an integrity finding.
+    if branch.card != 36 || branch.key == "adult_resident_candidacy" {
+        body.push("~contradict($record, DemocraticIntegrityAuthorization)".to_owned());
+    }
+    if branch.card == 10 && branch.key == "assembly_election" {
+        body.push("~contradict($district_plan, DemocraticIntegrityAuthorization)".to_owned());
+    }
     body.extend(current_rejoin_premises(branch));
     body.extend([
         "authorized($evidence, StateFormEvidenceAuthority, $record)".to_owned(),
@@ -1224,7 +1233,8 @@ const POLITICAL_FINANCE_VOCABULARIES: [(&str, &str, &[&str]); 3] = [
 #[doc = " names only the purposes. `DistrictMagnitudeScope`, the electoral card's"]
 #[doc = " testability slot, is untouched. Unlike office integrity and political"]
 #[doc = " finance this family is **anchored**, not universal: a district plan is not"]
-#[doc = " every office act, so it binds card 35's four seat-allocation branches."]
+#[doc = " every office act. It binds card 10's electoral configuration, not card"]
+#[doc = " 35's court and oversight appointments. Plans also have their own card."]
 const DISTRICTING_PURPOSE_VOCABULARIES: [(&str, &str, &[&str]); 1] = [(
     "ForbiddenDistrictingPurposeScope",
     "ForbiddenDistrictingPurposeVocabulary",
@@ -1316,7 +1326,8 @@ fn render_formal_block(source: &SemanticSource) -> StateFormResult<String> {
         "# never authentication, computation, action, delivery, liveness,",
         "# feasibility, or outside time. A falsely supplied current or reconciled",
         "# attestation remains an external trust-root failure. No producer reads",
-        "# a negative predicate, diagnostic conflict, or legacy conclusion.",
+        "# a personal disqualification or legacy conclusion. Current reviewed",
+        "# integrity incompatibilities withhold only the affected office act.",
     ];
     let mut lines = comments.into_iter().map(str::to_owned).collect::<Vec<_>>();
     lines.extend(draft_rule_block(source)?);
@@ -2003,18 +2014,18 @@ fn render_acceptance_cases(
         &[AtomSelector::all(&["PoliticalFinanceRecipientKindScope"])],
     )?;
     builder.header(ACCEPTANCE_CASE_IDS[21]);
-    builder.existing(35, "people_seat_allocation", "FSBOD_01")?;
+    builder.existing(10, "assembly_election", "FSBOD_06")?;
     builder.negative(
-        35,
-        "people_seat_allocation",
-        "FSBOD_01",
+        10,
+        "assembly_election",
+        "FSBOD_06",
         "SFAcc022NoDistrictingPurpose",
         &[AtomSelector::all(&["DistrictingPurposeScope"])],
     )?;
     builder.negative(
-        35,
-        "people_seat_allocation",
-        "FSBOD_01",
+        10,
+        "assembly_election",
+        "FSBOD_06",
         "SFAcc022PurposeUnexamined",
         &[AtomSelector::all(&["ForbiddenDistrictingPurposeScope"])],
     )?;
@@ -2540,4 +2551,80 @@ pub(crate) fn export_cases(
         }
     }
     Ok(())
+}
+
+pub(crate) fn integrity_fixture(
+    context: &Context,
+    number: usize,
+    key: &str,
+    prefix: &str,
+) -> Result<(String, BTreeMap<String, String>, String), Error> {
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
+    let fixture = ground_fixture(branch, prefix, false, &[], &[]).map_err(public_error)?;
+    let query =
+        authority_query(branch, &branch.authority_holders[0], &fixture).map_err(public_error)?;
+    Ok((
+        fixture.facts.iter().map(|f| format!("{f}.\n")).collect(),
+        fixture.mapping,
+        query,
+    ))
+}
+
+#[cfg(test)]
+mod integrity_tests {
+    use super::*;
+    use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine};
+
+    #[test]
+    #[ignore = "manual release-mode payer identity cost probe"]
+    fn payer_identity_cost_probe() {
+        let context = Context::discover().unwrap();
+        let source: SemanticSource = serde_json::from_str(
+            &context
+                .read("new-book-plans/state-form-source.json")
+                .unwrap(),
+        )
+        .unwrap();
+        let original = branch_lookup(&source.branches, 36, "adult_resident_candidacy").unwrap();
+        for identities in [false, true] {
+            let mut branch = original.clone();
+            branch.fields.retain(|f| {
+                !matches!(
+                    f[1].as_str(),
+                    "PoliticalFinancePayerScope" | "PoliticalFinanceControllingPayerScope"
+                )
+            });
+            if identities {
+                branch.fields.extend([
+                    ["$payer".into(), "PoliticalFinancePayerScope".into()],
+                    [
+                        "$controlling_payer".into(),
+                        "PoliticalFinanceControllingPayerScope".into(),
+                    ],
+                ]);
+            }
+            let mut rules = vec![render_current_rule()];
+            rules.extend(render_vocabulary_rules());
+            rules.extend(v2_rules_for_branch(&branch).unwrap());
+            let rules = rules.join("\n");
+            let start = std::time::Instant::now();
+            let engine = PreparedPinEngine::new(&[LoadedSource::new("probe", &rules)]);
+            let fixture = ground_fixture(&branch, "PayerProbe", false, &[], &[]).unwrap();
+            let mut pins = vec![":expect-pins 1".into()];
+            append_fixture_query(&mut pins, &branch, "FSBOD_06", &fixture, true).unwrap();
+            let pins = pins.join("\n");
+            let result = engine.run_files(
+                &[LoadedSource::new("probe.pins.nibli", &pins)],
+                PinOptions::default(),
+            );
+            assert_eq!(result.exit_code, 0, "{result:?}");
+            eprintln!(
+                "payer identities={identities}: {:?}, {} facts",
+                start.elapsed(),
+                fixture.facts.len()
+            );
+        }
+    }
 }

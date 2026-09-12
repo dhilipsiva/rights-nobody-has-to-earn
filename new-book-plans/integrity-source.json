@@ -1,0 +1,199 @@
+{
+  "vocabularies": [
+    ["IntegrityPayerKindScope", "IntegrityPayerKindVocabulary", ["PersonPayer", "EnterpriseTreasuryPayer", "UnionPayer", "VoluntaryCivicAssociationPayer", "OutsideJurisdictionPayer", "ControllingPartyPayer"]],
+    ["IntegrityInstrumentKindScope", "IntegrityInstrumentKindVocabulary", ["ContributionInstrument", "ExpenditureInstrument", "InKindProvisionInstrument", "LoanOrGuaranteeInstrument", "PurchasedIndependentAdvocacyInstrument"]],
+    ["IntegrityRecipientKindScope", "IntegrityRecipientKindVocabulary", ["CandidateRecipient", "PartyOrCoalitionRecipient", "BallotQuestionRecipient", "OfficeHolderRecipient", "PublicDecisionRecipient"]],
+    ["IntegrityInterestKindScope", "IntegrityInterestKindVocabulary", ["OwnMaterialInterest", "HouseholdMaterialInterest", "ControlledEntityMaterialInterest"]],
+    ["IntegrityRelationshipKindScope", "IntegrityRelationshipKindVocabulary", ["RegulatedCounterparty", "ContractingCounterparty", "AdjudicatedCounterparty", "AppointedCounterparty"]],
+    ["IntegrityOfficeModeScope", "IntegrityOfficeModeVocabulary", ["ConflictedAct", "CounterpartyBenefit", "FormerHolderCounterpartyDealing"]],
+    ["IntegrityDistrictPurposeScope", "IntegrityDistrictPurposeVocabulary", ["PartyOrCoalitionEntrenchment", "IncumbentEntrenchment", "ProtectedGroundDilution"]],
+    ["IntegrityOppositionRightScope", "IntegrityOppositionRightVocabulary", ["EqualAssemblyInformation", "IndependentConstitutionalAndElectoralChallenge", "GuaranteedAssemblyProceedingsPlace"]],
+    ["IntegrityPartyMinimumScope", "IntegrityPartyMinimumVocabulary", ["MemberElectedLeadership", "MemberControlledCandidateSelection", "EqualMemberVoice", "FreeMemberExit"]],
+    ["IntegrityOperationKindScope", "IntegrityOperationKindVocabulary", ["FundedOperation", "CommonControlNetwork", "EnterpriseOperation", "OutsideJurisdictionControlledOperation"]]
+  ],
+  "contracts": [
+    {
+      "id": "money-finding",
+      "kind": "PoliticalFinanceIncompatibilityFinding",
+      "fields": [
+        ["$payer", "PoliticalFinancePayerScope"],
+        ["$controller", "PoliticalFinanceControllingPayerScope"],
+        ["$payer_kind", "IntegrityPayerKindScope"],
+        ["$instrument", "IntegrityInstrumentKindScope"],
+        ["$recipient_kind", "IntegrityRecipientKindScope"],
+        ["$recipient", "IntegrityRecipientScope"],
+        ["ProhibitedCombinationEstablishedUnderCorridor", "IntegrityFindingDispositionScope"],
+        ["NominalAndControllingPayerExamined", "IntegrityControlEvidenceScope"],
+        ["OfficeOrCandidacyActOnly", "IntegrityConsequenceLimitScope"]
+      ],
+      "extra": [],
+      "heads": ["contradict($target, DemocraticIntegrityAuthorization)"],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "office-finding",
+      "kind": "OfficeIntegrityIncompatibilityFinding",
+      "fields": [
+        ["$office", "IntegrityOfficeBearerScope"],
+        ["$counterparty", "IntegrityCounterpartyScope"],
+        ["$interest", "IntegrityInterestKindScope"],
+        ["$relationship", "IntegrityRelationshipKindScope"],
+        ["$mode", "IntegrityOfficeModeScope"],
+        ["IncompatibilityEstablishedForThisMatterAndLegalPeriod", "IntegrityFindingDispositionScope"],
+        ["OfficeActNotPrivateEmploymentOrKinship", "IntegrityConsequenceLimitScope"]
+      ],
+      "extra": [],
+      "heads": [
+        "contradict($target, DemocraticIntegrityAuthorization)",
+        "obliged($office, RecuseAndReferToIndependentAlternate, $target)",
+        "obliged($alternate, ReviewOfficeIntegrityChallengeAndRemedy, $target)"
+      ],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "district-plan",
+      "kind": "ReviewedElectoralDistrictPlan",
+      "fields": [
+        ["ElectoralDistrictPlan", "IntegrityTargetKindScope"],
+        ["PartyOrCoalitionEntrenchment", "IntegrityDistrictPurposeScope"],
+        ["IncumbentEntrenchment", "IntegrityDistrictPurposeScope"],
+        ["ProtectedGroundDilution", "IntegrityDistrictPurposeScope"],
+        ["NoForbiddenDistrictingPurpose", "IntegrityFindingDispositionScope"],
+        ["IndependentElectoralAdministrationAndConstitutionalReview", "IntegrityReviewRouteScope"]
+      ],
+      "extra": ["~contradict($target, DemocraticIntegrityAuthorization)"],
+      "heads": ["authority(FSBOD_06, ElectoralDistrictPlan, $target)"],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "district-finding",
+      "kind": "ForbiddenDistrictingPurposeFinding",
+      "fields": [
+        ["ElectoralDistrictPlan", "IntegrityTargetKindScope"],
+        ["$purpose", "IntegrityDistrictPurposeScope"],
+        ["$purpose_target", "IntegrityNamedPurposeTargetScope"],
+        ["PurposeEstablishedOnAttestedEvidenceNotOutcome", "IntegrityFindingDispositionScope"],
+        ["IndependentElectoralAdministrationAndConstitutionalReview", "IntegrityReviewRouteScope"]
+      ],
+      "extra": [],
+      "heads": [
+        "contradict($target, DemocraticIntegrityAuthorization)",
+        "obliged($reader, ReviewAndCorrectElectoralDistrictPlan, $target)"
+      ],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "opposition-rights",
+      "kind": "RecordedOppositionPosition",
+      "fields": [
+        ["$opposition", "IntegrityElectedMemberOrGroupScope"],
+        ["NotSupportingGovernment", "IntegrityRecordedPositionScope"],
+        ["InformationSuppliedToAssemblyByGovernment", "IntegrityInformationScope"],
+        ["ElectedMemberOrGroupNotPartyRegistration", "IntegrityQualificationScope"]
+      ],
+      "extra": ["observe($opposition, $record, NotSupportingGovernment, IntegrityRecordedPositionScope)"],
+      "heads": [
+        "permits($opposition, EqualAssemblyInformation, $target)",
+        "permits($opposition, ConstitutionalCourtChallenge, $target)",
+        "permits($opposition, ElectoralAdministrationChallenge, $target)",
+        "prevents($opposition, MajorityWithdrawalOfAssemblyProceedingsPlace)"
+      ],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "opposition-withholding",
+      "kind": "OppositionRightWithholdingFinding",
+      "fields": [
+        ["$opposition", "IntegrityElectedMemberOrGroupScope"],
+        ["NotSupportingGovernment", "IntegrityRecordedPositionScope"],
+        ["$right", "IntegrityOppositionRightScope"],
+        ["WithholdingEstablishedForThisAssemblyAct", "IntegrityFindingDispositionScope"]
+      ],
+      "extra": ["observe($opposition, $record, NotSupportingGovernment, IntegrityRecordedPositionScope)"],
+      "heads": [
+        "contradict($target, DemocraticIntegrityAuthorization)",
+        "obliged($reader, RestoreOppositionAccessAndProceedings, $target)"
+      ],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "party-selection",
+      "kind": "ReviewedInternalDemocraticSelection",
+      "fields": [
+        ["$association", "IntegrityCandidateFieldingAssociationScope"],
+        ["FieldsCandidatesInThisSelection", "IntegrityBallotActivityScope"],
+        ["MemberElectedLeadership", "IntegrityPartyMinimumScope"],
+        ["MemberControlledCandidateSelection", "IntegrityPartyMinimumScope"],
+        ["EqualMemberVoice", "IntegrityPartyMinimumScope"],
+        ["FreeMemberExit", "IntegrityPartyMinimumScope"],
+        ["CandidateListMeasuresComplyWithSubstantiveEquality", "IntegrityEqualityScope"],
+        ["NoProhibitedPoliticalFinanceIncompatibility", "IntegrityFinanceDispositionScope"],
+        ["$payer", "PoliticalFinancePayerScope"],
+        ["$controller", "PoliticalFinanceControllingPayerScope"],
+        ["NoPartyRegistrationGateOrProscription", "IntegrityConsequenceLimitScope"]
+      ],
+      "extra": ["~contradict($target, DemocraticIntegrityAuthorization)"],
+      "heads": ["authority($association, InternalDemocraticCandidateSelection, $target)"],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "party-finding",
+      "kind": "InternalDemocraticMinimumFailureFinding",
+      "fields": [
+        ["$association", "IntegrityCandidateFieldingAssociationScope"],
+        ["FieldsCandidatesInThisSelection", "IntegrityBallotActivityScope"],
+        ["$minimum", "IntegrityPartyMinimumScope"],
+        ["MinimumFailureEstablishedForThisSelection", "IntegrityFindingDispositionScope"],
+        ["SelectionOnlyNotMemberBallotOrOtherCandidacyRoute", "IntegrityConsequenceLimitScope"]
+      ],
+      "extra": [],
+      "heads": [
+        "contradict($target, DemocraticIntegrityAuthorization)",
+        "obliged($association, CorrectInternalCandidateSelection, $target)",
+        "prevents($association, PartyProscriptionAsIntegrityRemedy)"
+      ],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "coordinated-operation",
+      "kind": "CoordinatedOperationFinding",
+      "fields": [
+        ["$actor", "IntegrityOperationScope"],
+        ["$operation_kind", "IntegrityOperationKindScope"],
+        ["$controller", "IntegrityOperationControllerScope"],
+        ["$function", "IntegrityOperationFunctionScope"],
+        ["$economic_record", "IntegrityPublicScaleRecordScope"],
+        ["CoordinationAndControlEstablishedFromActorSideEvidence", "IntegrityFindingDispositionScope"],
+        ["NoTruthAssessmentOrPopulationCollection", "IntegrityEvidenceLimitScope"],
+        ["AffectedFunctionOnlyNoUnrelatedPrivateOrExpressiveLife", "IntegrityConsequenceLimitScope"]
+      ],
+      "extra": [
+        "authority(FSBOD_09, FSPOW_064, $economic_record)",
+        "authorized($economic_source, EconomicSourceAuthority, $economic_record)",
+        "observe($economic_source, $economic_record, $actor, EconomicSubjectScope)",
+        "observe($economic_source, $economic_record, $function, EconomicFunctionScope)"
+      ],
+      "heads": [
+        "complete($record, CoordinatedOperationFinding, $target)",
+        "obliged($actor, DiscloseCoordinationAndFunding, $function)",
+        "obliged($actor, AttributeCoordinatedAdvocacy, $function)",
+        "obliged($actor, ProvideCalibratedAccessAuditChallengeAndRemedy, $function)"
+      ],
+      "bindings": {
+        "$actor": "EconSubject064Live",
+        "$function": "EconFunction064Live",
+        "$economic_record": "EconRecord064Live",
+        "$economic_source": "EconSource064Live"
+      },
+      "dependency": "new-book-plans/economic-power-064.pins.nibli"
+    }
+  ]
+}

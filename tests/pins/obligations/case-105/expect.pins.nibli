@@ -1,7 +1,15 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# FS-CCE-211 self-certified excuse refusal
-:expect-pins 1
+# Disclosure 389 independent alternate
+:expect-pins 3
 
-# A duty bearer cannot certify its own excuse.
-? obliged(OblSelfExcuseSource, OblSelfExcuseDuty, OblSelfExcuseStandard).
+# A reader cannot be its own independent alternate.
+? obliged(DisclosureFusedAlternate389DisclosureNonresponse, DisclosureFusedAlternate389DisclosureNonresponseDuty, DisclosureFusedAlternate389DisclosureNonresponseStandard).
+# => FALSE
+
+# A reader cannot be its own independent alternate.
+? prevents(DisclosureFusedAlternate389DisclosureNonresponse, SilenceAsDisclosureAction).
+# => FALSE
+
+# A reader cannot be its own independent alternate.
+? obliged(DisclosureFusedAlternate389DisclosureReader, DisclosureFusedAlternate389DisclosureAlternateDuty, DisclosureFusedAlternate389DisclosureAlternateStandard).
 # => FALSE

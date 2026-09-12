@@ -10,6 +10,19 @@
 > unimplemented** in the standing sense fixed in `CLAUDE.md` until its own
 > contract card lands through the receipt-bound chain.
 
+**Implementation note, 2026-09-12.** C, A (including the deferred identity
+binding), B, D, G and F now have formal implementations and executable cases.
+Their current common interface is `book-1-integrity-record-contract.md`, with
+separate office, money, disclosure, districting, opposition/party and
+coordinated-operation cards. E remains a Book 2 handoff. The 2026-09-12
+verification decision retires the receipt-bound chains described below;
+substantive pins and contradiction scans, not administrative successors,
+validate implementation. The exact reader section "Keeping public decisions
+answerable" was separately author-approved on 2026-09-12 and inserted unchanged
+in Book 1 chapter 9, with its supporting cases mapped in the paired pins.
+`integrity-reader-draft.md` retains that `session-drafted, author-approved`
+wording under the separate prose-supply ruling.
+
 The neutral inventory that preceded this record is
 `book-1-democratic-and-administrative-integrity-brief.md`. Its measurement
 (section 1) was re-run at `0e553e6` before the rulings were put and holds:

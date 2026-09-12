@@ -8,6 +8,32 @@
 > This card formalises what disclosure is owed and to whom. It does not, and
 > cannot, establish that anyone disclosed anything.
 
+## Implementation follow-up — 2026-09-12
+
+Disclosure still uses the typed FS-CVF-016 origin and `obliged/3` bridge.
+The initial implementation accidentally inherited the unrelated finding-side
+`err(...)` prerequisite because it treated every effect number above 213 as a
+finding effect. Disclosure effects no longer read it. An office's duty to
+disclose does not wait for an unrelated placement or other finding.
+
+The disclosure origin now binds its political-role qualification, limited
+subject matter, audit/integrity reader, ombudsperson/rights-advocate alternate,
+and proportionate privacy boundary. It derives both the bearer's disclosure
+duty and the reader's action duty, without deriving receipt or publication.
+FS-CCE-389 binds the bearer, reader, positively certified nonresponse and
+alternate and **directly derives the alternate's duty**. FS-CCE-390 also
+requires that positive nonresponse. The reader cannot be its own alternate.
+
+Omission cases check every disclosure consequence, including the alternate
+duty: silence or manufactured withholding creates no adverse finding against
+the bearer. The source is `src/authoring/obligations.rs`, generated explicitly
+with `./generate.sh obligations`; cases are ordinary Nibli under
+`tests/pins/obligations/`. The counts, quick-mode command and audit seams below
+are historical, not current verification requirements. The exact reader
+section "Keeping public decisions answerable" was separately author-approved
+on 2026-09-12 and inserted unchanged in Book 1 chapter 9; its paired pins map
+the disclosure claims to the executable cases.
+
 ## 1. Decision
 
 Disclosure becomes a constitutional duty through the landed typed
