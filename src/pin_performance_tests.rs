@@ -4,12 +4,24 @@
 
 use super::*;
 
+thread_local! {
+    static TRACE_STEPS: Cell<bool> = const { Cell::new(false) };
+}
+
+pub(super) fn trace_step(kind: &str, text: &str, elapsed: Duration) {
+    if TRACE_STEPS.get() && elapsed >= Duration::from_millis(20) {
+        let text = text.chars().take(180).collect::<String>();
+        eprintln!("PROFILE {kind} {:.3}s {text}", elapsed.as_secs_f64());
+    }
+}
+
 #[test]
 #[ignore = "manual measurement of the current full constitution, not a verification gate"]
 fn profile_live_preparation_snapshots_and_cases() {
     std::thread::Builder::new()
         .stack_size(32 * 1024 * 1024)
         .spawn(|| {
+            TRACE_STEPS.set(true);
             let context = crate::context::Context::discover().unwrap();
             let source = context.read("new-book-plans/constitution.nibli").unwrap();
             let started = Instant::now();

@@ -1357,7 +1357,12 @@ fn run_file_with_engine(
 
             report.pins += 1;
             let marked = defect.take();
-            match engine.query_holds(query) {
+            #[cfg(test)]
+            let operation_started = Instant::now();
+            let outcome = engine.query_holds(query);
+            #[cfg(test)]
+            performance_tests::trace_step("query", query, operation_started.elapsed());
+            match outcome {
                 Err(_)
                     if options
                         .cancellation
@@ -1420,7 +1425,11 @@ fn run_file_with_engine(
                 }
             }
         }
+        #[cfg(test)]
+        let operation_started = Instant::now();
         let outcome = engine.assert_text(line);
+        #[cfg(test)]
+        performance_tests::trace_step("assert", line, operation_started.elapsed());
         let expectation = std::mem::replace(&mut expect, Expect::Default);
         let marked = defect.take();
         let pins_before = report.pins;
@@ -1451,7 +1460,12 @@ fn run_file_with_engine(
                     ));
                 }
                 for id in ids {
-                    if let Err(error) = engine.retract_fact(id) {
+                    #[cfg(test)]
+                    let operation_started = Instant::now();
+                    let outcome = engine.retract_fact(id);
+                    #[cfg(test)]
+                    performance_tests::trace_step("retract", line, operation_started.elapsed());
+                    if let Err(error) = outcome {
                         report.harness.push(format!(
                             "{name}:{index}: `:accept-scoped` could not discard {line:?} (fact #{id}): \
                              {error} — the knowledge base is no longer clean, so pins below it \
