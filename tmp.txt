@@ -3,62 +3,71 @@ SPDX-License-Identifier: CC-BY-4.0
 Active TODO: Meet the five-minute complete-verification target.
 Implementation remains unfinished; do not start another constitutional family.
 
-Scope: speed up the runner and its companion engine without changing the live
+Scope: speed up the runner and companion without changing the actual
 constitution, pins, refusals, scoped retractions, stateful sequences, trusted
 shell preconditions or complete contradiction checks. No persisted verdicts,
 input hashes, receipts, administrative gates or Book 2 operations.
 
-The companion changes are committed and pushed as fdd9de1 and 3f64f0b.
-The cumulative patch against fa91a5f is retained in
+The companion is committed and pushed through 8e72f6c, after fdd9de1 and
+3f64f0b. The cumulative patch against fa91a5f is retained in
 new-book-plans/nibli-performance-candidate.patch. It contains no temporary
-profiling hooks or unrelated companion changes; its reverse applicability
-was checked against the actual checkout.
+profiling hooks or unrelated companion changes.
 
-The first integration's normal verifier passed all 12,860 pins across 4,190
-cases in 526.66 seconds, with complete contradiction checks, no findings and
-nine existing defects reproduced. The completed-cone extension's scratch
-binary passed the same inventory in 457.07 seconds (7m37.07s). Both used four
-workers and prebuilt release binaries. This session started no other
-development build/test during either measurement; other machine work was
-not controlled. The original measured baseline was 1,552.00 seconds.
+Latest normal ./verify.sh: PASS in 416.94 seconds (6m56.94s), all 12,860 pins
+across 4,190 cases, complete contradiction checks, no findings and nine existing
+known-defect pins reproduced. Four workers, release already built, actual
+companion checkout and the book's dependency lockfile. This session started
+no other development build/test during measurement; other machine work was
+not controlled. The prior normal run was 448.90 seconds; the original measured
+baseline was 1,552.00 seconds. Do not close the TODO until a full run passes
+under five minutes.
 
-The rebuilt normal ./verify.sh passed against 3f64f0b in 448.90 seconds
-(7m28.90s): all 12,860 pins across 4,190 cases, complete contradiction checks,
-no findings and nine existing defects reproduced. Four workers and a prebuilt
-release binary; this session started no other development build/test during
-the measurement. Other machine work was not controlled. README and the
-performance notes record this result. Do not close the TODO unless a full
-run passes under five minutes.
+The external timing wrapper includes the incremental build wrapper and
+reported 418.41 seconds wall time, 1,553.90 seconds user CPU, 39.40 seconds
+system CPU, 380% CPU utilization, peak RSS 18,797,032 KiB, no major page
+faults and no swaps. The verifier's internal time is 416.94 seconds.
 
-Latest engine integration checks:
-- Native and WebAssembly CI passed through just ci-all, including all 12
-  oracle/differential tests (96.53 seconds).
-- All 637 reasoner tests pass, including completed-tuple reuse, outside
-  inserts, shape refusals, budget boundaries and invalid-prior safeguards.
-- The extension's broad mutation sweep had nine caught, two unbuildable and
-  two missed. A new defensive-helper regression caught both missed guards
-  by assertion failures in a focused rerun with the same test packages.
-  Combined: 11 caught, two unbuildable, none unresolved; no timeouts credited.
-- The normal runner's development suite passed 24 tests; two manual probes
-  are intentionally ignored.
+Latest change: collect_group_event_candidates and collect_entailment_candidates
+borrow the cached domain slice instead of copying every member. This is four
+changed lines in nibli-reason/src/kb.rs. The paired arrest query fell from
+0.152 to 0.073 seconds with the same 5,598 witness-activation checks and 264
+evidence entries. Construction did not improve (2.735 versus 2.740 seconds).
+
+Validation: all 637 reasoner tests, 24 normal runner tests (two manual probes
+ignored), and just ci-all passed, including all 12 oracle differentials
+(90.59 seconds). The targeted mutation sweep caught five and found two
+unbuildable mutants, none unresolved. The normal full run is recorded above.
 
 Nibli origin uses SSH without a usable key. Push/fetch via
 https://github.com/dhilipsiva/nibli.git without changing the user's remote.
-The companion origin/main tracking ref was refreshed after the push.
+Its origin/main tracking ref was refreshed after the push.
 
-Scratch workspace: /tmp/rights-nibli-perf.llSbQz. Its release book-runner binary
-is the measured completed-cone candidate. Scratch source also contains
-temporary test-only loading timers and an eager-unary-guard experiment, which
-are NOT integrated. Do not copy this source wholesale into the companion.
-The borrowed-join experiment passed its tests but showed no useful overall
-probe improvement; it was removed and saved as borrowed-joins.patch there.
+Next priority: measure KnowledgeBaseInner::clone costs. It still clones the
+predicate dependency graph, rule index, known-rule index and other collections
+for isolated cases and detached assertion candidates. Only the rule/assertion
+payloads are already Arc-shared. Consider copy-on-write for collections that
+fixture facts do not mutate, retaining every existing invalidation and rollback
+path. The domain-member caches are also copied although clones mark them dirty
+and reset QueryDomain. These are leads, not implemented or measured gains.
 
-Next performance lead, not an implemented or measured gain: both
-collect_group_event_candidates and collect_entailment_candidates in
-nibli-reason/src/kb.rs copy all_typed_domain_members() into a Vec, although
-the accessor already returns &[GroundTerm] and candidate selection only reads
-it. The granular loading profile spent about 0.10 seconds proving 264 witness
-activations in the arrest case. Try borrowing the cached slice, preserving all
-ordinary anchor selection, fallback candidates, binding and provenance checks.
-Remove the separate eager-unary experiment before comparing this change.
-Model construction and actual scoped-control retractions also remain costly.
+Other unimplemented leads:
+- register_clause_rule clones the entire pattern-var dictionary to overlay
+  one negative group's local event variable. Scratch instrumentation counted
+  24,268 map clones and 8,543,750 entry copies during live-model loading.
+  Timing overlapped integration work; it is not an isolated benchmark.
+  An immutable one-variable lookup overlay could preserve template resolution.
+- DomainPlan::new performs the same semantic-identity deduplication twice.
+- Inventory has 116 exact base/edit groups: 105 non-live singleton groups and
+  ten non-live multi-case groups (sizes 2x3, 7x2, 9, 12, 17, 18, 21), plus live.
+  There are 269 contiguous base/edit runs, but live is already separately
+  cached. Measure actual repeated preparations before claiming a scheduling
+  gain. The four shell-enabled cases are canonical Book 1 chapters 8, 12,
+  13 and 14; preserve their existing trusted preconditions.
+
+Scratch workspace: /tmp/rights-nibli-perf.llSbQz. Its probe-target release book
+binary is the earlier completed-cone candidate, not the domain-borrowing build.
+Scratch source contains domain borrowing plus temporary test-only loading
+timers, including negative-group map-copy counters. The eager-unary experiment
+was removed; the borrowed-join experiment was rejected and saved separately
+as borrowed-joins.patch. Do not copy scratch sources wholesale into the
+companion. No temporary profiling hooks are in the integrated engine.

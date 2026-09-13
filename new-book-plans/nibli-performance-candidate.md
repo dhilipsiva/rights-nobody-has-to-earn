@@ -2,16 +2,16 @@
 
 # Verification performance — integrated engine changes
 
-Status: integrated as Nibli `fdd9de1` and `3f64f0b`. Engine integration checks
-passed, and the rebuilt normal verifier passed the complete book in
-**448.90 seconds (7 minutes 28.90 seconds)**.
+Status: integrated through Nibli `8e72f6c`, following `fdd9de1` and `3f64f0b`.
+Engine integration checks passed, and the rebuilt normal verifier passed the
+complete book in **416.94 seconds (6 minutes 56.94 seconds)**.
 The five-minute TODO remains open. No constitutional source, pin expectation,
 case inventory or contradiction check is changed.
 
 The companion's previously pending work landed as `fa91a5f`. The adjacent
 patch applies directly to that commit and contains only this experiment's
-additional changes, now committed as `fdd9de1` and `3f64f0b`. The companion was
-clean before the patch was applied; no unrelated companion work was overwritten.
+additional changes, committed as `fdd9de1`, `3f64f0b` and `8e72f6c`. The
+companion was clean before each change; no unrelated work was overwritten.
 
 ## Integrated changes
 
@@ -60,6 +60,10 @@ clean before the patch was applied; no unrelated companion work was overwritten.
   shape checks and out-of-cone inserts are re-read; cumulative tuple-budget
   boundaries fall back to the ordinary full evaluation order. Debug builds
   compare the completed results with a fresh evaluation of the whole union.
+- Candidate narrowing borrows the knowledge base's existing immutable domain
+  slice instead of cloning the whole domain in both existential and grouped
+  event searches. Selected candidates still have owned output, and anchor
+  selection, fallback domains, bindings and proof construction are unchanged.
 
 Scoped-control retractions still execute the existing replay path. No pin
 verdict is cached between verification runs. These are engine-internal,
@@ -173,6 +177,33 @@ dependency lockfile, four workers and a prebuilt release binary. This session
 started no other development build or test during the measurement; other
 machine work was not controlled. The five-minute target is still not met.
 
+The domain-borrowing candidate passed all 637 reasoner tests and the normal
+runner's 24 development tests (two manual probes ignored). Native and
+WebAssembly checks passed through `just ci-all`, including all 12
+oracle/differential tests (90.59 seconds). Its targeted mutation sweep finished
+with five caught and two unbuildable mutations, none unresolved.
+
+In a fresh paired arrest-case diagnostic, the first query took 0.152 seconds
+before borrowing and 0.073 seconds afterwards. Both runs performed 5,598
+witness-activation checks and stored evidence for 264 activations; the change
+does not bypass those proofs. Construction times were 2.735 and 2.740 seconds,
+so no loading improvement is credited to this change. The single-query
+improvement is not a whole-book timing claim.
+
+The rebuilt normal `./verify.sh` against the domain-borrowing change, now Nibli
+`8e72f6c`, passed all **12,860 pins across 4,190 cases in 416.94 seconds
+(6 minutes 56.94 seconds)**. Contradiction checks completed with no findings,
+and all nine known-defect pins still reproduced. Four workers, the book's
+dependency lockfile and a prebuilt release binary were used. This session
+started no other development build or test during the measurement; other
+machine work was not controlled. The five-minute target remains open.
+
+The external timing wrapper reported 1,553.90 seconds of user CPU time,
+39.40 seconds of system CPU time, 380% CPU utilization and peak resident
+memory of 18,797,032 KiB, with no swaps or major page faults. Its 418.41-second
+wall time includes the incremental build wrapper; the verifier's own measured
+time is the 416.94 seconds above.
+
 The preceding candidate retained at book commit `9d8fb07` passed the same full
 inventory in **661.85 seconds (11 minutes 1.85 seconds)**, also with four
 workers, complete contradiction checks, no findings, nine reproduced defect
@@ -229,7 +260,7 @@ experiments; the adjacent patch is the retained, measured candidate.
 Run an experimental binary from the book repository to execute the unchanged
 live inventory. Normal `./verify.sh` still uses the companion checkout.
 
-The additional patch is committed in the companion checkout as `fdd9de1` and
-`3f64f0b`. Native, WebAssembly and mutation checks are complete. The normal book
-verifier passed the full inventory against `3f64f0b` in 448.90 seconds.
+The additional patch is committed in the companion checkout through `8e72f6c`.
+Native, WebAssembly and mutation checks are complete. The normal book verifier
+passed the full inventory against that change in 416.94 seconds.
 The performance TODO remains open until a complete run passes under five minutes.

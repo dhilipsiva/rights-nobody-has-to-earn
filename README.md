@@ -68,7 +68,7 @@ and no cached verdict that lets a changed book skip its tests. The focused
 
 Latest full run measured on 2026-09-13 with four workers and the release binary
 already built: all 12,860 pins across 4,190 cases passed, with complete formal
-contradiction scans and no findings, in 448.90 seconds (7m28.90s). This uses the
+contradiction scans and no findings, in 416.94 seconds (6m56.94s). This uses the
 integrated Nibli performance changes and the same inventory as the earlier
 1,552.00-second run; nine existing known-defect pins still reproduce. The
 under-five-minute full-run target is not met and remains the next implementation
