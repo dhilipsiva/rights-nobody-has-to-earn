@@ -2,6 +2,21 @@
 #
 # FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
 #
+# "Belonging without surrendering rights" uses the mobility family:
+#   tests/pins/mobility/membership/multiple-exit-reentry/expect.pins.nibli
+#   tests/pins/mobility/indigenous-government/positive/expect.pins.nibli
+#   tests/pins/mobility/minority-territory/positive/expect.pins.nibli
+#   tests/pins/mobility/internal-law/positive/expect.pins.nibli
+#   tests/pins/mobility/consent/positive/expect.pins.nibli
+#   tests/pins/mobility/consented-effect/positive/expect.pins.nibli
+#   tests/pins/mobility/consultation/positive/expect.pins.nibli
+#   tests/pins/mobility/evacuation/positive/expect.pins.nibli
+#   tests/pins/mobility/defect/downstream-withdrawal/expect.pins.nibli
+#   tests/pins/mobility/private-access/positive/expect.pins.nibli
+#   tests/pins/mobility/nonresponse/positive/expect.pins.nibli
+# Field omission, conflict, independence and counterfactual cases in that
+# family test each permission boundary; none authenticates real consent.
+#
 # "Keeping public decisions answerable" uses these isolated executable cases:
 # Affected act, not permanent answerability, personal status or ballot:
 #   tests/pins/integrity/money-finding/act-not-person-sequence/expect.pins.nibli

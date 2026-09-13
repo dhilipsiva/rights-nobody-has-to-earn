@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? complete(MPNoRelabel0Record, PluralityPriorConsultation, MPNoRelabel0Object).
+# => FALSE
+? complete(MPNoRelabel1Record, PluralityPriorConsultation, MPNoRelabel1Object).
+# => FALSE
+? complete(MPNoRelabel2Record, PluralityPriorConsultation, MPNoRelabel2Object).
+# => FALSE
+? complete(MPNoRelabel3Record, PluralityPriorConsultation, MPNoRelabel3Object).
+# => FALSE
+? complete(MPNoRelabel4Record, PluralityPriorConsultation, MPNoRelabel4Object).
+# => FALSE
+? complete(MPNoRelabel5Record, PluralityPriorConsultation, MPNoRelabel5Object).
+# => FALSE
+? complete(MPNoRelabel6Record, PluralityPriorConsultation, MPNoRelabel6Object).
+# => FALSE

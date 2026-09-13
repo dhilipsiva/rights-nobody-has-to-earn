@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+
+? complete(MPKind3Case0Record, MobilityPluralityReviewedDefect, MPKind3Case0Object).
+# => TRUE
+? contradict(MPKind3Case0Target, MPEffectPermission).
+# => TRUE
+? obliged(MPKind3Case0Reader, PreserveCorrectAndRemedyMobilityPluralityRecord, MPKind3Case0Target).
+# => TRUE
+? obliged(MPKind3Case0Auditor, AuditRelatedCasesAndNonRepetition, MPKind3Case0Target).
+# => TRUE
+? complete(MPKind3Case1Record, MobilityPluralityReviewedDefect, MPKind3Case1Object).
+# => TRUE
+? contradict(MPKind3Case1Target, MPEffectPermission).
+# => TRUE
+? obliged(MPKind3Case1Reader, PreserveCorrectAndRemedyMobilityPluralityRecord, MPKind3Case1Target).
+# => TRUE
+? obliged(MPKind3Case1Auditor, AuditRelatedCasesAndNonRepetition, MPKind3Case1Target).
+# => TRUE
+? complete(MPKind3Case2Record, MobilityPluralityReviewedDefect, MPKind3Case2Object).
+# => TRUE
+? contradict(MPKind3Case2Target, MPEffectPermission).
+# => TRUE
+? obliged(MPKind3Case2Reader, PreserveCorrectAndRemedyMobilityPluralityRecord, MPKind3Case2Target).
+# => TRUE
+? obliged(MPKind3Case2Auditor, AuditRelatedCasesAndNonRepetition, MPKind3Case2Target).
+# => TRUE

@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+
+? complete(MPCaseRecord, PluralityCulturalProtection, MPCaseObject).
+# => TRUE
+observe(MPCaseReview, MPCaseRecord, WrongVersion, MPSourceVersionScope).
+? complete(MPCaseRecord, PluralityCulturalProtection, MPCaseObject).
+# => FALSE

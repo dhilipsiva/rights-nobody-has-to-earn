@@ -45,6 +45,48 @@ clinic, home-care route, respite place, advocate, budget, staffed institution, o
 completed remedy. The difference between duty and arrival remains the subject of the
 next section.
 
+## Rights do not stop at arrival
+
+Newcomers, migrants, refugees and stateless people keep standing, the floor,
+liberty, fair process and remedy wherever the republic has jurisdiction or
+effective control. Citizenship, documents, manner of arrival and time spent
+there cannot become conditions of help. A person never entered in a record
+is not a missing row the record can discover. The public duty is to serve
+first and reconcile afterwards.
+
+Food, shelter, care, education, communication, courts and reporting violence
+cannot become immigration-enforcement checkpoints. A service may not enrol
+someone into an enforcement record as its price, collect status for that
+purpose, or transmit its records to enforcement. Scarcity does not change
+whose needs count: arrivals belong in the affected population, and status
+cannot set their priority.
+
+Asylum means a right to a fair determination, with accessible information,
+an advocate, an interpreter, a hearing, reasons and an appeal that suspends
+removal. Expulsion and extradition require individual decisions and review,
+including the person's connections, family and any child affected. Nobody
+may be sent into persecution, torture or another categorically forbidden
+abuse, directly or through onward transfers. A diplomatic assurance cannot
+make that prohibition disappear. Collective expulsion is prohibited.
+
+No child may be detained for immigration purposes. Adult detention requires
+individual necessity, judicial authorization, a maximum, independent review
+and a real non-custodial alternative shown insufficient. Nationality cannot
+be taken as punishment or in a way that leaves someone stateless. A child
+born in the republic who would otherwise be stateless must have nationality
+recognized. The former resident's return right remains, without a diaspora
+ballot.
+
+Nor may a public purchase, investment, trade arrangement or corporate form
+export labour exploitation, ecological damage or rights violations forbidden
+at home. The relevant control and supply chain must be examined; changing a
+contractor, affiliate, flag or forum does not remove the duty.
+
+These are rights, limits and duties over supplied evidence. A compatibility
+finding is not an order to detain, expel or move anyone. The checks establish
+no operating border, truthful foreign assurance, cooperation by another
+state, or completed remedy.
+
 ## Owed is not the same as delivered
 
 Now the thing this book will not soften.

@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? complete(MPUnauth0Record, PluralityMembershipOccurrence, MPUnauth0Object).
+# => FALSE
+? complete(MPUnauth1Record, PluralityMembershipOccurrence, MPUnauth1Object).
+# => FALSE
+? complete(MPUnauth2Record, PluralityMembershipOccurrence, MPUnauth2Object).
+# => FALSE
+? complete(MPUnauth3Record, PluralityMembershipOccurrence, MPUnauth3Object).
+# => FALSE
+? complete(MPUnauth4Record, PluralityMembershipOccurrence, MPUnauth4Object).
+# => FALSE
+? complete(MPUnauth5Record, PluralityMembershipOccurrence, MPUnauth5Object).
+# => FALSE

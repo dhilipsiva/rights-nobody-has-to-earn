@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+
+? complete(MPKind1Case0Record, ExternalArrangementCompatibility, MPKind1Case0Object).
+# => TRUE
+? permits(MPKind1Case0Operator, RelyOnExactExternalCompatibilityFinding, MPKind1Case0Record).
+# => TRUE
+? complete(MPKind1Case1Record, ExternalArrangementCompatibility, MPKind1Case1Object).
+# => TRUE
+? permits(MPKind1Case1Operator, RelyOnExactExternalCompatibilityFinding, MPKind1Case1Record).
+# => TRUE
+? complete(MPKind1Case2Record, ExternalArrangementCompatibility, MPKind1Case2Object).
+# => TRUE
+? permits(MPKind1Case2Operator, RelyOnExactExternalCompatibilityFinding, MPKind1Case2Record).
+# => TRUE
+? complete(MPKind1Case3Record, ExternalArrangementCompatibility, MPKind1Case3Object).
+# => TRUE
+? permits(MPKind1Case3Operator, RelyOnExactExternalCompatibilityFinding, MPKind1Case3Record).
+# => TRUE
+? complete(MPKind1Case4Record, ExternalArrangementCompatibility, MPKind1Case4Object).
+# => TRUE
+? permits(MPKind1Case4Operator, RelyOnExactExternalCompatibilityFinding, MPKind1Case4Record).
+# => TRUE

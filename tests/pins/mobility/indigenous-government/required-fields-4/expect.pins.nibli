@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+
+# Withhold CommunityKind; every other field remains.
+? complete(MPOmit4Row0Record, PluralityIndigenousSelfGovernment, MPOmit4Row0Object).
+# => FALSE
+# Withhold GovernmentScope; every other field remains.
+? complete(MPOmit4Row1Record, PluralityIndigenousSelfGovernment, MPOmit4Row1Object).
+# => FALSE
+# Withhold GovernmentBasis; every other field remains.
+? complete(MPOmit4Row2Record, PluralityIndigenousSelfGovernment, MPOmit4Row2Object).
+# => FALSE

@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold ExternalInstrument; every other field remains.
+? complete(MPOmit4Row0Record, ExternalArrangementCompatibility, MPOmit4Row0Object).
+# => FALSE
+# Withhold ExternalAttribution; every other field remains.
+? complete(MPOmit4Row1Record, ExternalArrangementCompatibility, MPOmit4Row1Object).
+# => FALSE
+# Withhold DomesticBaseline; every other field remains.
+? complete(MPOmit4Row2Record, ExternalArrangementCompatibility, MPOmit4Row2Object).
+# => FALSE
+# Withhold ExternalEvidence; every other field remains.
+? complete(MPOmit4Row3Record, ExternalArrangementCompatibility, MPOmit4Row3Object).
+# => FALSE
+# Withhold ExternalCompliance; every other field remains.
+? complete(MPOmit4Row4Record, ExternalArrangementCompatibility, MPOmit4Row4Object).
+# => FALSE
+# Withhold ExternalAssumptions; every other field remains.
+? complete(MPOmit4Row5Record, ExternalArrangementCompatibility, MPOmit4Row5Object).
+# => FALSE

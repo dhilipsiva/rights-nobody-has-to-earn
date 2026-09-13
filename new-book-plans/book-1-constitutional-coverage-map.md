@@ -71,6 +71,27 @@ Book 2; the host does not establish them. The author approved the exact reader
 edits on 2026-09-13 and they are inserted unchanged in chapters 1 and 12 and
 the method (`session-drafted, author-approved`).
 
+## Mobility and plurality formal implementation — 2026-09-13
+
+[Mobility and plurality](book-1-mobility-and-plurality-contract.md) supplies
+the direct-effect contracts for mobility protections and process, differentiated
+Indigenous/minority capacities, membership and exit, title, internal government,
+representation, exact collective consent, prior consultation, compatibility,
+remedy and external no-evasion. Source, evidence, privacy, independent readers,
+challenge, correction, currentness, end, alternate routes and continuity are
+specified before the reader additions. Rules and cases are authored explicitly
+by `./generate.sh mobility`; no historical audit workflow is reinstated.
+
+The historical absence descriptions below are superseded only for those bounded
+interfaces. Coercive border/evacuation instruments, emergency declarations,
+treaties, defence and other public-safety authorities remain with their own
+implementation item. No operation, staffing, consent authentication, land
+determination, tally, foreign cooperation or real remedy is established.
+The complete verifier passed 7,930 pins across 1,579 cases with complete
+contradiction scans and no findings. The exact Book 1 additions preserved in
+`mobility-reader-draft.md` are inserted in chapters 8 and 9, session-drafted
+and author-approved under delegated approval (2026-09-13).
+
 ## 1. Ratified mandate
 
 The settled specification has a narrow, verified kernel: equal standing, named

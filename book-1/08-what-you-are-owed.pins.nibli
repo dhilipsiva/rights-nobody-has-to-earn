@@ -1,5 +1,14 @@
 # ── Chapter 8 fidelity pins: "What You Are Owed" ─────────────────────────────
 #
+# "Rights do not stop at arrival" uses these actual-constitution cases:
+#   tests/pins/mobility/asylum/positive/expect.pins.nibli
+#   tests/pins/mobility/removal/positive/expect.pins.nibli
+#   tests/pins/mobility/nationality/positive/expect.pins.nibli
+#   tests/pins/mobility/external/positive/expect.pins.nibli
+#   tests/pins/mobility/boundaries/standing-rights-and-no-coercive-consequence/expect.pins.nibli
+# These establish rights, duties and bounded compatibility, not operating
+# borders, detention/removal authority, external truth or completed remedy.
+#
 # The existing equality paragraph's data wall and remedial-only burden are
 # additionally exercised by these actual-constitution statistical cases:
 #   tests/pins/statistics/pattern/positive/expect.pins.nibli

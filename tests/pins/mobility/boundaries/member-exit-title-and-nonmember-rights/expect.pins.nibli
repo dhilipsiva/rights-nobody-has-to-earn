@@ -1,0 +1,86 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 41
+
+? complete(MPPersonMembershipRecord, PluralityMembershipOccurrence, MPPersonMembershipObject).
+# => TRUE
+? complete(MPSeparateTitleRecord, PluralityProtectedTitle, MPSeparateTitleObject).
+# => TRUE
+? complete(MPAutonomyRecord, PluralityInternalDecision, MPAutonomyObject).
+# => TRUE
+? person(MPAdultMember).
+# => TRUE
+? owe(State, Eats, MPAdultMember).
+# => TRUE
+? travel(MPAdultMember).
+# => TRUE
+? decide(MPAdultMember, Ballot).
+# => TRUE
+? prevents(MPAdultMember, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+? false(MPAdultMember).
+# => FALSE
+? prisoner(MPAdultMember).
+# => FALSE
+? reward(MPAdultMember).
+# => FALSE
+? decide(MPAdultMember, AdditionalGeneralGovernmentBallot).
+# => FALSE
+? person(MPNonmemberResident).
+# => TRUE
+? owe(State, Eats, MPNonmemberResident).
+# => TRUE
+? travel(MPNonmemberResident).
+# => TRUE
+? decide(MPNonmemberResident, Ballot).
+# => TRUE
+? prevents(MPNonmemberResident, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+? false(MPNonmemberResident).
+# => FALSE
+? prisoner(MPNonmemberResident).
+# => FALSE
+? reward(MPNonmemberResident).
+# => FALSE
+? decide(MPNonmemberResident, AdditionalGeneralGovernmentBallot).
+# => FALSE
+observe(MPAdultMember, MPPersonMembershipRecord, FreeMembershipExit, MPSelfExitScope).
+? complete(MPPersonMembershipRecord, PluralityMembershipOccurrence, MPPersonMembershipObject).
+# => FALSE
+? complete(MPSeparateTitleRecord, PluralityProtectedTitle, MPSeparateTitleObject).
+# => TRUE
+? person(MPAdultMember).
+# => TRUE
+? owe(State, Eats, MPAdultMember).
+# => TRUE
+? travel(MPAdultMember).
+# => TRUE
+? decide(MPAdultMember, Ballot).
+# => TRUE
+? prevents(MPAdultMember, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+? false(MPAdultMember).
+# => FALSE
+? prisoner(MPAdultMember).
+# => FALSE
+? reward(MPAdultMember).
+# => FALSE
+? decide(MPAdultMember, AdditionalGeneralGovernmentBallot).
+# => FALSE
+? person(MPNonmemberResident).
+# => TRUE
+? owe(State, Eats, MPNonmemberResident).
+# => TRUE
+? travel(MPNonmemberResident).
+# => TRUE
+? decide(MPNonmemberResident, Ballot).
+# => TRUE
+? prevents(MPNonmemberResident, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+? false(MPNonmemberResident).
+# => FALSE
+? prisoner(MPNonmemberResident).
+# => FALSE
+? reward(MPNonmemberResident).
+# => FALSE
+? decide(MPNonmemberResident, AdditionalGeneralGovernmentBallot).
+# => FALSE

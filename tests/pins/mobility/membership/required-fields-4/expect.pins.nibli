@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+
+# Withhold SelfIdentificationRecord; every other field remains.
+? complete(MPOmit4Row0Record, PluralityMembershipOccurrence, MPOmit4Row0Object).
+# => FALSE
+# Withhold Acceptance; every other field remains.
+? complete(MPOmit4Row1Record, PluralityMembershipOccurrence, MPOmit4Row1Object).
+# => FALSE
+# Withhold MembershipLimits; every other field remains.
+? complete(MPOmit4Row2Record, PluralityMembershipOccurrence, MPOmit4Row2Object).
+# => FALSE

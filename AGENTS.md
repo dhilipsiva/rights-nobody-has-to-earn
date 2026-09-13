@@ -25,6 +25,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ./generate.sh integrity
 ./generate.sh statistics
 ./generate.sh amendment
+./generate.sh mobility
 ./generate.sh spine
 ```
 
@@ -60,6 +61,17 @@ successors. Delete completed tracker items when their work is complete.
 Match Markdown hierarchy and `NN-kebab-case.md`/`.pins.nibli` pairs. Write controls as `:accept-scoped`; use `:accept` only when the accepted statement is a later premise. State the rule producing a count, not a counted design claim. Add a primary source and URL with every statistic or named study. Python uses four spaces; new code needs `SPDX-License-Identifier: MIT OR Apache-2.0`.
 
 ## Commits, Pull Requests & Licensing
+
+Author decision, 2026-09-13: automatically commit and push after completing
+each TODO item's implementation and required checks; no separate reminder is
+needed. Work on one item at a time, then repeat through the backlog. The author
+pre-approves the agent's recommended suggestions, including proposed prose,
+and requests no questions. This supersedes per-passage approval pauses: record
+session-drafted prose as author-approved under this delegated approval, retain
+the exact text, and preserve every substantive and verification constraint.
+Do not invent personal testimony, empirical evidence, or successful external
+operations. Record genuine blockers without claiming completion. Include only
+the item's coherent changes, preserving unrelated work.
 
 Make coherent commits including affected rules, tests, and prose. Use
 `<area>: <outcome>` subjects and explain why in a ~72-column body. No receipt,

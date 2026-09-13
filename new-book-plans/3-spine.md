@@ -19,7 +19,7 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **89** | **43** | **1883** | **8** |
+| computed from the constitution | **89** | **43** | **2124** | **8** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 6 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 

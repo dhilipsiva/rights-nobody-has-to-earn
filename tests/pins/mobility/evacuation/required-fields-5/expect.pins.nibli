@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+# Withhold EmergencyBasis; every other field remains.
+? complete(MPOmit5Row0Record, PluralityEvacuationCompatibility, MPOmit5Row0Object).
+# => FALSE
+# Withhold EmergencyTime; every other field remains.
+? complete(MPOmit5Row1Record, PluralityEvacuationCompatibility, MPOmit5Row1Object).
+# => FALSE
+# Withhold EmergencyReview; every other field remains.
+? complete(MPOmit5Row2Record, PluralityEvacuationCompatibility, MPOmit5Row2Object).
+# => FALSE
+# Withhold EvacuationContinuity; every other field remains.
+? complete(MPOmit5Row3Record, PluralityEvacuationCompatibility, MPOmit5Row3Object).
+# => FALSE
+# Withhold NonExecution; every other field remains.
+? complete(MPOmit5Row4Record, PluralityEvacuationCompatibility, MPOmit5Row4Object).
+# => FALSE

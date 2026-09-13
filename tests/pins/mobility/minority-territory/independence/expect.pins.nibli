@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+
+? complete(MPFusion0Record, PluralityMinorityTerritorialGovernment, MPFusion0Object).
+# => FALSE
+? complete(MPFusion1Record, PluralityMinorityTerritorialGovernment, MPFusion1Object).
+# => FALSE
+? complete(MPFusion2Record, PluralityMinorityTerritorialGovernment, MPFusion2Object).
+# => FALSE
+? complete(MPFusion3Record, PluralityMinorityTerritorialGovernment, MPFusion3Object).
+# => FALSE
+? complete(MPFusion4Record, PluralityMinorityTerritorialGovernment, MPFusion4Object).
+# => FALSE
+? complete(MPFusion5Record, PluralityMinorityTerritorialGovernment, MPFusion5Object).
+# => FALSE
+? complete(MPFusion6Record, PluralityMinorityTerritorialGovernment, MPFusion6Object).
+# => FALSE
+? complete(MPFusion7Record, PluralityMinorityTerritorialGovernment, MPFusion7Object).
+# => FALSE
+? complete(MPFusion8Record, PluralityMinorityTerritorialGovernment, MPFusion8Object).
+# => FALSE

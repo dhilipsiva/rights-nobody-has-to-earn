@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? complete(MPUnauth0Record, MobilityFairDetermination, MPUnauth0Object).
+# => FALSE
+? complete(MPUnauth1Record, MobilityFairDetermination, MPUnauth1Object).
+# => FALSE
+? complete(MPUnauth2Record, MobilityFairDetermination, MPUnauth2Object).
+# => FALSE
+? complete(MPUnauth3Record, MobilityFairDetermination, MPUnauth3Object).
+# => FALSE
+? complete(MPUnauth4Record, MobilityFairDetermination, MPUnauth4Object).
+# => FALSE
+? complete(MPUnauth5Record, MobilityFairDetermination, MPUnauth5Object).
+# => FALSE

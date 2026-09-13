@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+
+? complete(MPKind2Case0Record, ExternalArrangementCompatibility, MPKind2Case0Object).
+# => TRUE
+? permits(MPKind2Case0Operator, RelyOnExactExternalCompatibilityFinding, MPKind2Case0Record).
+# => TRUE

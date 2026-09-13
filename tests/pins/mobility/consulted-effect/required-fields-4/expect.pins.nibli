@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+# Withhold Project; every other field remains.
+? complete(MPOmit4Row0Record, PluralityConsultedEffectCompatibility, MPOmit4Row0Object).
+# => FALSE
+# Withhold ProjectVersion; every other field remains.
+? complete(MPOmit4Row1Record, PluralityConsultedEffectCompatibility, MPOmit4Row1Object).
+# => FALSE
+# Withhold Effect; every other field remains.
+? complete(MPOmit4Row2Record, PluralityConsultedEffectCompatibility, MPOmit4Row2Object).
+# => FALSE
+# Withhold EffectLimits; every other field remains.
+? complete(MPOmit4Row3Record, PluralityConsultedEffectCompatibility, MPOmit4Row3Object).
+# => FALSE

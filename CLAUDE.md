@@ -57,7 +57,7 @@ measurements and any remaining bottleneck honestly.
 
 Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
-`./generate.sh statistics`, `./generate.sh amendment`, and
+`./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`, and
 `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
@@ -676,6 +676,23 @@ land/title administration, language services, and consultation. Nibli does not
 decide best interests, capacity, consent, pregnancy, parentage, death,
 collective identity, membership, or title. Controlling record:
 `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
+
+**Mobility/plurality implementation and reader projection, 2026-09-13.**
+`new-book-plans/book-1-mobility-and-plurality-contract.md` defines the separate
+mobility/access, membership, Indigenous/minority capacity, title, internal-law,
+representation, consent, consultation, remedy and external no-evasion effects.
+The explicit `mobility` generator owns their rules and substantive cases.
+Current source/evidence/review, exact prerequisite joins, authorized-conflict
+checks, free exit, positive defects, challenge and independent alternates have
+separate boundaries; no membership finding produces standing, punishment,
+political weight or a personal score. Removal and evacuation compatibility
+are not coercive authority. The remaining public-safety/treaty/defence work
+and all Book 2 operations remain separate. The exact Book 1 additions in
+`new-book-plans/mobility-reader-draft.md` are inserted in chapters 8 and 9,
+session-drafted and author-approved under delegated approval (2026-09-13).
+All 7,930 substantive pins
+passed with complete contradiction scans and no findings in 531.67 seconds;
+this does not meet the under-five-minute target.
 
 #### Ecological, future-generation, commons, and non-human-animal — 2026-08-08
 
@@ -1303,6 +1320,17 @@ binding. `tmp.txt` is optional noncanonical scratch space, never the approval
 record. This protocol supersedes only the older author-as-drafter and
 ghost-writing dispositions; it does not widen any narrative channel or bypass
 an approval or evidence gate.
+
+**Superseding delegated approval — author instruction, 2026-09-13.** The author
+pre-approves all recommended suggestions and asks the agent to implement,
+verify, commit and push one TODO item at a time, repeating through the backlog
+without asking questions. This includes the already displayed mobility prose
+and recommended future prose: retain the exact text and record it as
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+Separate per-passage approval pauses are no longer required. Derivation,
+licensing, register, sourcing, scope and verification requirements still apply;
+never invent author memories, external evidence, reviews or operational success.
+Record genuine blockers honestly while continuing other in-scope work.
 
 **The passage rule** is form plus assertion. *Form:* generic second person,
 never a name; **no interior state attributed to any person in the scene**,
@@ -2819,6 +2847,11 @@ This repo was renamed from `dhilipsiva/utopia-reimagined` on 2026-07-30 (v0.7). 
 
 ## Commits
 
+- Author decision, 2026-09-13: automatically commit and push after each TODO
+  item's implementation and required checks are complete, without waiting for
+  a separate reminder. Repeat one item at a time without questions, using the
+  author's delegated approval of recommended suggestions and prose above.
+  This does not authorize including unrelated work or claiming unproved results.
 - Make coherent, reviewable commits with affected rules, tests, and prose.
 - Explain why the change is needed in the body, wrapped at about 72 columns.
 - Run focused checks during authoring and the complete verifier for completion.

@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold Holder; every other field remains.
+? complete(MPOmit0Row0Record, PluralityCulturalProtection, MPOmit0Row0Object).
+# => FALSE
+# Withhold Object; every other field remains.
+? complete(MPOmit0Row1Record, PluralityCulturalProtection, MPOmit0Row1Object).
+# => FALSE
+# Withhold SourceVersion; every other field remains.
+? complete(MPOmit0Row2Record, PluralityCulturalProtection, MPOmit0Row2Object).
+# => FALSE
+# Withhold Epoch; every other field remains.
+? complete(MPOmit0Row3Record, PluralityCulturalProtection, MPOmit0Row3Object).
+# => FALSE
+# Withhold Jurisdiction; every other field remains.
+? complete(MPOmit0Row4Record, PluralityCulturalProtection, MPOmit0Row4Object).
+# => FALSE
+# Withhold LegalScope; every other field remains.
+? complete(MPOmit0Row5Record, PluralityCulturalProtection, MPOmit0Row5Object).
+# => FALSE

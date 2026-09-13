@@ -1,0 +1,106 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? complete(MPMemberRecord, PluralityMembershipOccurrence, MPMemberObject).
+# => TRUE
+? complete(MPSecondMembershipRecord, PluralityMembershipOccurrence, MPSecondMembershipObject).
+# => TRUE
+observe(MPMemberHolder, MPMemberRecord, FreeMembershipExit, MPSelfExitScope).
+? complete(MPMemberRecord, PluralityMembershipOccurrence, MPMemberObject).
+# => FALSE
+? complete(MPSecondMembershipRecord, PluralityMembershipOccurrence, MPSecondMembershipObject).
+# => TRUE
+? obliged(State, RecordExitWithoutRightsOrTitlePenalty, MPMemberRecord).
+# => TRUE
+authorized(MPReentryAlternate, MPAlternateReviewAuthority, MPReentryRecord).
+authorized(MPReentryAuditor, MPAuditAuthority, MPReentryRecord).
+authorized(MPReentryEvidence, MPEvidenceAuthority, MPReentryRecord).
+authorized(MPReentryReader, MPChallengeReaderAuthority, MPReentryRecord).
+authorized(MPReentryReview, MPIndependentReviewAuthority, MPReentryRecord).
+authorized(MPReentrySource, MPSourceAuthority, MPReentryRecord).
+observe(MPMemberHolder, MPReentrySelfRecord, MPMemberObject, MPSelfIdentifiedCommunityScope).
+observe(MPReentryEvidence, MPReentryRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPReentryEvidence, MPReentryRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPReentryEvidence, MPReentryRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPReentryEvidence, MPReentryRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPReentryEvidence, MPReentryRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPReentryEvidence, MPReentryRecord, KnowableLawfulAcceptanceWithContinuityAndNondiscrimination, MPAcceptanceScope).
+observe(MPReentryEvidence, MPReentryRecord, MPMemberHolder, MPHolderScope).
+observe(MPReentryEvidence, MPReentryRecord, MPMemberObject, MPObjectScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryAlternate, MPAlternateReaderScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryAuditor, MPAuditReaderScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryBasis, MPEvidenceRecordScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryChallenge, MPChallengeScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryCorrection, MPCorrectionScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryEnd, MPSourceBoundEndScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryEpoch, MPEpochScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryJurisdiction, MPJurisdictionScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryOperator, MPOperatorScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryReader, MPChallengeReaderScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryRemedy, MPRemedyScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryScope, MPLegalScopeScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentrySelfRecord, MPSelfIdentificationRecordScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryVersion, MPSourceVersionScope).
+observe(MPReentryEvidence, MPReentryRecord, MPReentryWindow, MPWindowScope).
+observe(MPReentryEvidence, MPReentryRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPReentryEvidence, MPReentryRecord, MultipleMembershipFreeExitPrivateProceduralChallenge, MPMembershipLimitsScope).
+observe(MPReentryEvidence, MPReentryRecord, PluralityMembershipOccurrence, MPRecordKindScope).
+observe(MPReentryEvidence, MPReentryRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPReentryReview, MPReentryRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPReentryReview, MPReentryRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPReentryReview, MPReentryRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPReentryReview, MPReentryRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPReentryReview, MPReentryRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPReentryReview, MPReentryRecord, KnowableLawfulAcceptanceWithContinuityAndNondiscrimination, MPAcceptanceScope).
+observe(MPReentryReview, MPReentryRecord, MPMemberHolder, MPHolderScope).
+observe(MPReentryReview, MPReentryRecord, MPMemberObject, MPObjectScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryAlternate, MPAlternateReaderScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryAuditor, MPAuditReaderScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryBasis, MPEvidenceRecordScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryChallenge, MPChallengeScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryCorrection, MPCorrectionScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryEnd, MPSourceBoundEndScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryEpoch, MPEpochScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryJurisdiction, MPJurisdictionScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryOperator, MPOperatorScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryReader, MPChallengeReaderScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryRemedy, MPRemedyScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryScope, MPLegalScopeScope).
+observe(MPReentryReview, MPReentryRecord, MPReentrySelfRecord, MPSelfIdentificationRecordScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryVersion, MPSourceVersionScope).
+observe(MPReentryReview, MPReentryRecord, MPReentryWindow, MPWindowScope).
+observe(MPReentryReview, MPReentryRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPReentryReview, MPReentryRecord, MultipleMembershipFreeExitPrivateProceduralChallenge, MPMembershipLimitsScope).
+observe(MPReentryReview, MPReentryRecord, PluralityMembershipOccurrence, MPRecordKindScope).
+observe(MPReentryReview, MPReentryRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPReentrySource, MPReentryRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPReentrySource, MPReentryRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPReentrySource, MPReentryRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPReentrySource, MPReentryRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPReentrySource, MPReentryRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPReentrySource, MPReentryRecord, KnowableLawfulAcceptanceWithContinuityAndNondiscrimination, MPAcceptanceScope).
+observe(MPReentrySource, MPReentryRecord, MPMemberHolder, MPHolderScope).
+observe(MPReentrySource, MPReentryRecord, MPMemberObject, MPObjectScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryAlternate, MPAlternateReaderScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryAuditor, MPAuditReaderScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryBasis, MPEvidenceRecordScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryChallenge, MPChallengeScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryCorrection, MPCorrectionScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryEnd, MPSourceBoundEndScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryEpoch, MPEpochScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryJurisdiction, MPJurisdictionScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryOperator, MPOperatorScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryReader, MPChallengeReaderScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryRemedy, MPRemedyScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryScope, MPLegalScopeScope).
+observe(MPReentrySource, MPReentryRecord, MPReentrySelfRecord, MPSelfIdentificationRecordScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryVersion, MPSourceVersionScope).
+observe(MPReentrySource, MPReentryRecord, MPReentryWindow, MPWindowScope).
+observe(MPReentrySource, MPReentryRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPReentrySource, MPReentryRecord, MultipleMembershipFreeExitPrivateProceduralChallenge, MPMembershipLimitsScope).
+observe(MPReentrySource, MPReentryRecord, PluralityMembershipOccurrence, MPRecordKindScope).
+observe(MPReentrySource, MPReentryRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+? complete(MPReentryRecord, PluralityMembershipOccurrence, MPMemberObject).
+# => TRUE
+? complete(MPMemberRecord, PluralityMembershipOccurrence, MPMemberObject).
+# => FALSE

@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+
+? complete(MPFusion0Record, PluralityLawfulRepresentation, MPFusion0Object).
+# => FALSE
+? complete(MPFusion1Record, PluralityLawfulRepresentation, MPFusion1Object).
+# => FALSE
+? complete(MPFusion2Record, PluralityLawfulRepresentation, MPFusion2Object).
+# => FALSE
+? complete(MPFusion3Record, PluralityLawfulRepresentation, MPFusion3Object).
+# => FALSE
+? complete(MPFusion4Record, PluralityLawfulRepresentation, MPFusion4Object).
+# => FALSE
+? complete(MPFusion5Record, PluralityLawfulRepresentation, MPFusion5Object).
+# => FALSE
+? complete(MPFusion6Record, PluralityLawfulRepresentation, MPFusion6Object).
+# => FALSE
+? complete(MPFusion7Record, PluralityLawfulRepresentation, MPFusion7Object).
+# => FALSE
+? complete(MPFusion8Record, PluralityLawfulRepresentation, MPFusion8Object).
+# => FALSE
+? complete(MPFusion9Record, PluralityLawfulRepresentation, MPFusion9Object).
+# => FALSE

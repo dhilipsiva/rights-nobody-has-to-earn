@@ -1,0 +1,106 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? obliged(MPNonresponseReader, ReviewMobilityPluralityRequest, MPNonresponseTarget).
+# => TRUE
+? obliged(MPNonresponseAlternate, ReviewMobilityPluralityRequestAndSecureRemedy, MPNonresponseTarget).
+# => FALSE
+authorized(MPNonresponseAlternate, MPAlternateReviewAuthority, MPNonresponseRecord).
+authorized(MPNonresponseAuditor, MPAuditAuthority, MPNonresponseRecord).
+authorized(MPNonresponseEvidence, MPEvidenceAuthority, MPNonresponseRecord).
+authorized(MPNonresponseReader, MPChallengeReaderAuthority, MPNonresponseRecord).
+authorized(MPNonresponseReader, MPChallengeReaderAuthority, MPNonresponseTarget).
+authorized(MPNonresponseReview, MPIndependentReviewAuthority, MPNonresponseRecord).
+authorized(MPNonresponseSource, MPSourceAuthority, MPNonresponseRecord).
+challenge(MPNonresponseRequester, MPNonresponseReader, MPNonresponseTarget).
+observe(MPNonresponseEvidence, MPNonresponseRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, IndependentAlternateForUnavailableConflictedOrNonrespondingReader, MPAlternateBasisScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseAlternate, MPAlternateReaderScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseAuditor, MPAuditReaderScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseBasis, MPEvidenceRecordScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseChallenge, MPChallengeScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseCorrection, MPCorrectionScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseDeadline, MPResponseDeadlineScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseEnd, MPSourceBoundEndScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseEpoch, MPEpochScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseHolder, MPHolderScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseJurisdiction, MPJurisdictionScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseObject, MPObjectScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseOperator, MPOperatorScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseReader, MPChallengeReaderScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseRemedy, MPRemedyScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseScope, MPLegalScopeScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseTarget, MPAffectedRequestScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseVersion, MPSourceVersionScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MPNonresponseWindow, MPWindowScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, MobilityPluralityNonresponse, MPRecordKindScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, PositiveNoticeRealOpportunityAndSourceBoundDeadlineElapsed, MPNonresponseBasisScope).
+observe(MPNonresponseEvidence, MPNonresponseRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPNonresponseRequester, MPNonresponseTarget, MPNonresponseObject, MPRequestedObjectScope).
+observe(MPNonresponseReview, MPNonresponseRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPNonresponseReview, MPNonresponseRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPNonresponseReview, MPNonresponseRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPNonresponseReview, MPNonresponseRecord, IndependentAlternateForUnavailableConflictedOrNonrespondingReader, MPAlternateBasisScope).
+observe(MPNonresponseReview, MPNonresponseRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPNonresponseReview, MPNonresponseRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseAlternate, MPAlternateReaderScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseAuditor, MPAuditReaderScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseBasis, MPEvidenceRecordScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseChallenge, MPChallengeScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseCorrection, MPCorrectionScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseDeadline, MPResponseDeadlineScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseEnd, MPSourceBoundEndScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseEpoch, MPEpochScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseHolder, MPHolderScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseJurisdiction, MPJurisdictionScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseObject, MPObjectScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseOperator, MPOperatorScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseReader, MPChallengeReaderScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseRemedy, MPRemedyScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseScope, MPLegalScopeScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseTarget, MPAffectedRequestScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseVersion, MPSourceVersionScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MPNonresponseWindow, MPWindowScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPNonresponseReview, MPNonresponseRecord, MobilityPluralityNonresponse, MPRecordKindScope).
+observe(MPNonresponseReview, MPNonresponseRecord, PositiveNoticeRealOpportunityAndSourceBoundDeadlineElapsed, MPNonresponseBasisScope).
+observe(MPNonresponseReview, MPNonresponseRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPNonresponseSource, MPNonresponseRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPNonresponseSource, MPNonresponseRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPNonresponseSource, MPNonresponseRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPNonresponseSource, MPNonresponseRecord, IndependentAlternateForUnavailableConflictedOrNonrespondingReader, MPAlternateBasisScope).
+observe(MPNonresponseSource, MPNonresponseRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPNonresponseSource, MPNonresponseRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseAlternate, MPAlternateReaderScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseAuditor, MPAuditReaderScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseBasis, MPEvidenceRecordScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseChallenge, MPChallengeScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseCorrection, MPCorrectionScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseDeadline, MPResponseDeadlineScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseEnd, MPSourceBoundEndScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseEpoch, MPEpochScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseHolder, MPHolderScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseJurisdiction, MPJurisdictionScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseObject, MPObjectScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseOperator, MPOperatorScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseReader, MPChallengeReaderScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseRemedy, MPRemedyScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseScope, MPLegalScopeScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseTarget, MPAffectedRequestScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseVersion, MPSourceVersionScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MPNonresponseWindow, MPWindowScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPNonresponseSource, MPNonresponseRecord, MobilityPluralityNonresponse, MPRecordKindScope).
+observe(MPNonresponseSource, MPNonresponseRecord, PositiveNoticeRealOpportunityAndSourceBoundDeadlineElapsed, MPNonresponseBasisScope).
+observe(MPNonresponseSource, MPNonresponseRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+? obliged(MPNonresponseAlternate, ReviewMobilityPluralityRequestAndSecureRemedy, MPNonresponseTarget).
+# => TRUE
+? false(MPNonresponseRequester).
+# => FALSE
+? permits(MPNonresponseRequester, InspectExactPrivatePluralityEvidence, MPNonresponseTarget).
+# => FALSE

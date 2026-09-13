@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold Window; every other field remains.
+? complete(MPOmit1Row0Record, PluralityPrivateEvidenceAccess, MPOmit1Row0Object).
+# => FALSE
+# Withhold SourceBoundEnd; every other field remains.
+? complete(MPOmit1Row1Record, PluralityPrivateEvidenceAccess, MPOmit1Row1Object).
+# => FALSE
+# Withhold EvidenceRecord; every other field remains.
+? complete(MPOmit1Row2Record, PluralityPrivateEvidenceAccess, MPOmit1Row2Object).
+# => FALSE
+# Withhold Operator; every other field remains.
+? complete(MPOmit1Row3Record, PluralityPrivateEvidenceAccess, MPOmit1Row3Object).
+# => FALSE
+# Withhold ChallengeReader; every other field remains.
+? complete(MPOmit1Row4Record, PluralityPrivateEvidenceAccess, MPOmit1Row4Object).
+# => FALSE
+# Withhold AlternateReader; every other field remains.
+? complete(MPOmit1Row5Record, PluralityPrivateEvidenceAccess, MPOmit1Row5Object).
+# => FALSE

@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+
+? complete(MPKind0Case0Record, PluralityRightsBoundedRemedy, MPKind0Case0Object).
+# => TRUE
+? obliged(MPKind0Case0Operator, CollectiveRestitution, MPKind0Case0Record).
+# => TRUE
+? complete(MPKind0Case1Record, PluralityRightsBoundedRemedy, MPKind0Case1Object).
+# => TRUE
+? obliged(MPKind0Case1Operator, TitleRestoration, MPKind0Case1Record).
+# => TRUE
+? complete(MPKind0Case2Record, PluralityRightsBoundedRemedy, MPKind0Case2Object).
+# => TRUE
+? obliged(MPKind0Case2Operator, IndividualRelief, MPKind0Case2Record).
+# => TRUE
+? complete(MPKind0Case3Record, PluralityRightsBoundedRemedy, MPKind0Case3Object).
+# => TRUE
+? obliged(MPKind0Case3Operator, CompensationAndReparation, MPKind0Case3Record).
+# => TRUE
+? complete(MPKind0Case4Record, PluralityRightsBoundedRemedy, MPKind0Case4Object).
+# => TRUE
+? obliged(MPKind0Case4Operator, BoundedStructuralNonRepetition, MPKind0Case4Record).
+# => TRUE

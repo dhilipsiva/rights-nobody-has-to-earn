@@ -1,0 +1,110 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? complete(MPExport1Record, ExternalArrangementCompatibility, MPExport1Object).
+# => TRUE
+authorized(MPExportDefect1Alternate, MPAlternateReviewAuthority, MPExportDefect1Record).
+authorized(MPExportDefect1Auditor, MPAuditAuthority, MPExportDefect1Record).
+authorized(MPExportDefect1Evidence, MPEvidenceAuthority, MPExportDefect1Record).
+authorized(MPExportDefect1Reader, MPChallengeReaderAuthority, MPExportDefect1Record).
+authorized(MPExportDefect1Review, MPIndependentReviewAuthority, MPExportDefect1Record).
+authorized(MPExportDefect1Source, MPSourceAuthority, MPExportDefect1Record).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, ExportedEcologicalDamage, MPDefectKindScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Epoch, MPEpochScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Holder, MPHolderScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Jurisdiction, MPJurisdictionScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Object, MPObjectScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Record, MPAffectedRecordScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Scope, MPLegalScopeScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Version, MPSourceVersionScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExport1Window, MPWindowScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Alternate, MPAlternateReaderScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Auditor, MPAuditReaderScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Basis, MPEvidenceRecordScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Challenge, MPChallengeScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Correction, MPCorrectionScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1End, MPSourceBoundEndScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Operator, MPOperatorScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Reader, MPChallengeReaderScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MPExportDefect1Remedy, MPRemedyScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, MobilityPluralityReviewedDefect, MPRecordKindScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, PositiveIndependentlyEstablishedScopedDefectNotMereAbsence, MPDefectBasisScope).
+observe(MPExportDefect1Evidence, MPExportDefect1Record, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, ExportedEcologicalDamage, MPDefectKindScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Epoch, MPEpochScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Holder, MPHolderScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Jurisdiction, MPJurisdictionScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Object, MPObjectScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Record, MPAffectedRecordScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Scope, MPLegalScopeScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Version, MPSourceVersionScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExport1Window, MPWindowScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Alternate, MPAlternateReaderScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Auditor, MPAuditReaderScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Basis, MPEvidenceRecordScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Challenge, MPChallengeScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Correction, MPCorrectionScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1End, MPSourceBoundEndScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Operator, MPOperatorScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Reader, MPChallengeReaderScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MPExportDefect1Remedy, MPRemedyScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, MobilityPluralityReviewedDefect, MPRecordKindScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, PositiveIndependentlyEstablishedScopedDefectNotMereAbsence, MPDefectBasisScope).
+observe(MPExportDefect1Review, MPExportDefect1Record, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, ExportedEcologicalDamage, MPDefectKindScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Epoch, MPEpochScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Holder, MPHolderScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Jurisdiction, MPJurisdictionScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Object, MPObjectScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Record, MPAffectedRecordScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Scope, MPLegalScopeScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Version, MPSourceVersionScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExport1Window, MPWindowScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Alternate, MPAlternateReaderScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Auditor, MPAuditReaderScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Basis, MPEvidenceRecordScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Challenge, MPChallengeScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Correction, MPCorrectionScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1End, MPSourceBoundEndScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Operator, MPOperatorScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Reader, MPChallengeReaderScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MPExportDefect1Remedy, MPRemedyScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, MobilityPluralityReviewedDefect, MPRecordKindScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, PositiveIndependentlyEstablishedScopedDefectNotMereAbsence, MPDefectBasisScope).
+observe(MPExportDefect1Source, MPExportDefect1Record, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+authorized(MPExport1Source, MPSourceAuthority, MPExport1Record).
+observe(MPExport1Source, MPExport1Record, MPExport1Holder, MPHolderScope).
+observe(MPExport1Source, MPExport1Record, MPExport1Object, MPObjectScope).
+observe(MPExport1Source, MPExport1Record, MPExport1Version, MPSourceVersionScope).
+observe(MPExport1Source, MPExport1Record, MPExport1Epoch, MPEpochScope).
+observe(MPExport1Source, MPExport1Record, MPExport1Jurisdiction, MPJurisdictionScope).
+observe(MPExport1Source, MPExport1Record, MPExport1Scope, MPLegalScopeScope).
+observe(MPExport1Source, MPExport1Record, MPExport1Window, MPWindowScope).
+? complete(MPExportDefect1Record, MobilityPluralityReviewedDefect, MPExport1Object).
+# => TRUE
+? contradict(MPExport1Record, MPEffectPermission).
+# => TRUE
+? obliged(MPExportDefect1Reader, PreserveCorrectAndRemedyMobilityPluralityRecord, MPExport1Record).
+# => TRUE
+? obliged(MPExportDefect1Auditor, AuditRelatedCasesAndNonRepetition, MPExport1Record).
+# => TRUE
+? complete(MPExport1Record, ExternalArrangementCompatibility, MPExport1Object).
+# => FALSE

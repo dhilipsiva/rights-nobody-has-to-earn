@@ -519,6 +519,11 @@ but never replaces, this rule.
 
 - [ ] **Build collective self-government, land, language, and consultation
   operations.**
+  - Consume the exact-source legal interfaces in
+    `new-book-plans/book-1-mobility-and-plurality-contract.md`. Their opaque
+    records prove no identity, title, consent, publication, clock or action.
+    Operate independent alternate completeness attestation under the same
+    scoped authority; a missing primary certificate never becomes consent.
   - Operate Indigenous self-government and other lawful collective bodies within
     their constitutional mandates without converting internal authority into a
     second general government or unilateral secession route.
@@ -546,6 +551,11 @@ but never replaces, this rule.
 
 - [ ] **Build civil/criminal justice, safety, defence, migration, and external-
   relations operations.**
+  - The mobility/plurality contract supplies service-enforcement firewalls,
+    fair determination, nationality-recognition duties and bounded removal
+    compatibility, not detention or removal orders. Preserve its no-evasion
+    conditions through procurement, investment, trade and supply-chain work;
+    foreign cooperation and evidence remain named external assumptions.
   - Operate civil, administrative, family, labour, consumer, constitutional and
     criminal routes; investigation/prosecution/defence/adjudication separation;
     release/reintegration; police/intelligence/military separation and civilian

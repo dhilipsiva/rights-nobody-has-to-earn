@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold InternalDecision; every other field remains.
+? complete(MPOmit4Row0Record, PluralityInternalDecision, MPOmit4Row0Object).
+# => FALSE
+# Withhold InternalScope; every other field remains.
+? complete(MPOmit4Row1Record, PluralityInternalDecision, MPOmit4Row1Object).
+# => FALSE
+# Withhold IndividualVoice; every other field remains.
+? complete(MPOmit4Row2Record, PluralityInternalDecision, MPOmit4Row2Object).
+# => FALSE
+# Withhold NonmemberRights; every other field remains.
+? complete(MPOmit4Row3Record, PluralityInternalDecision, MPOmit4Row3Object).
+# => FALSE
+# Withhold PoliticalLimits; every other field remains.
+? complete(MPOmit4Row4Record, PluralityInternalDecision, MPOmit4Row4Object).
+# => FALSE
+# Withhold InternalLiberty; every other field remains.
+? complete(MPOmit4Row5Record, PluralityInternalDecision, MPOmit4Row5Object).
+# => FALSE

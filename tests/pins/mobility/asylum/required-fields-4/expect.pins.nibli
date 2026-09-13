@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+# Withhold Process; every other field remains.
+? complete(MPOmit4Row0Record, MobilityFairDetermination, MPOmit4Row0Object).
+# => FALSE
+# Withhold Appeal; every other field remains.
+? complete(MPOmit4Row1Record, MobilityFairDetermination, MPOmit4Row1Object).
+# => FALSE
+# Withhold Access; every other field remains.
+? complete(MPOmit4Row2Record, MobilityFairDetermination, MPOmit4Row2Object).
+# => FALSE
+# Withhold Decision; every other field remains.
+? complete(MPOmit4Row3Record, MobilityFairDetermination, MPOmit4Row3Object).
+# => FALSE

@@ -1,0 +1,239 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 118
+
+? person(MPNewcomer).
+# => TRUE
+? owe(State, Eats, MPNewcomer).
+# => TRUE
+? travel(MPNewcomer).
+# => TRUE
+? decide(MPNewcomer, Ballot).
+# => FALSE
+? obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, MPNewcomer).
+# => TRUE
+? obliged(State, KeepStandingFloorLibertyLanguageProcessAndRemedyContinuous, MPNewcomer).
+# => TRUE
+? obliged(State, IncludeEveryoneUnderJurisdictionOrEffectiveControlInScarcity, MPNewcomer).
+# => TRUE
+? prevents(MPNewcomer, MobilityStatusConditionedStandingFloorOrRemedy).
+# => TRUE
+? prevents(MPNewcomer, MobilityMissingRecordAdverseInference).
+# => TRUE
+? prevents(MPNewcomer, MobilityEnforcementEnrolmentThroughServices).
+# => TRUE
+? prevents(MPNewcomer, MobilityEnforcementCollectionThroughServices).
+# => TRUE
+? prevents(MPNewcomer, MobilityEnforcementTransmissionThroughServices).
+# => TRUE
+? prevents(MPNewcomer, MobilityRefoulementIncludingOnwardTransfer).
+# => TRUE
+? prevents(MPNewcomer, MobilityCollectiveExpulsion).
+# => TRUE
+? prevents(MPNewcomer, MobilityChildImmigrationDetention).
+# => TRUE
+? prevents(MPNewcomer, MobilityUnnecessaryOrUnreviewedAdultDetention).
+# => TRUE
+? prevents(MPNewcomer, MobilityDetentionWithoutMaximumOrRealAlternative).
+# => TRUE
+? prevents(MPNewcomer, MobilityStatelessnessCreationOrPerpetuation).
+# => TRUE
+? prevents(MPNewcomer, MobilityPunitiveNationalityDeprivation).
+# => TRUE
+? prevents(MPNewcomer, MobilityPushbackOrExternalisedDutyEvasion).
+# => TRUE
+? prevents(MPNewcomer, MobilityExclusionFromScarcityPopulation).
+# => TRUE
+? prevents(MPNewcomer, MobilityStatusBasedScarcityPriority).
+# => TRUE
+? prevents(MPNewcomer, PluralityForcedAssimilationOrSegregation).
+# => TRUE
+? prevents(MPNewcomer, PluralityCompelledBeliefLabourMarriageOrConformity).
+# => TRUE
+? prevents(MPNewcomer, PluralityBlockedExitDissentOrConfidentialHelp).
+# => TRUE
+? prevents(MPNewcomer, PluralityMembershipWorthRiskOrEligibilityReuse).
+# => TRUE
+? prevents(MPNewcomer, PluralityMembershipPoliticalWeight).
+# => TRUE
+? prevents(MPNewcomer, PluralityInternalLawLoweringIndividualRights).
+# => TRUE
+? prevents(MPNewcomer, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+? prevents(MPNewcomer, PluralityCollectiveGuilt).
+# => TRUE
+? prevents(MPNewcomer, PluralityTitleLossByMembershipExit).
+# => TRUE
+? prevents(MPNewcomer, PluralityConservationAsDispossession).
+# => TRUE
+? prevents(MPNewcomer, ExternalExportOfDomesticProhibitedHarm).
+# => TRUE
+? person(MPUnaccompanied).
+# => TRUE
+? owe(State, Eats, MPUnaccompanied).
+# => TRUE
+? travel(MPUnaccompanied).
+# => TRUE
+? decide(MPUnaccompanied, Ballot).
+# => FALSE
+? obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, MPUnaccompanied).
+# => TRUE
+? obliged(State, KeepStandingFloorLibertyLanguageProcessAndRemedyContinuous, MPUnaccompanied).
+# => TRUE
+? obliged(State, IncludeEveryoneUnderJurisdictionOrEffectiveControlInScarcity, MPUnaccompanied).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityStatusConditionedStandingFloorOrRemedy).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityMissingRecordAdverseInference).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityEnforcementEnrolmentThroughServices).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityEnforcementCollectionThroughServices).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityEnforcementTransmissionThroughServices).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityRefoulementIncludingOnwardTransfer).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityCollectiveExpulsion).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityChildImmigrationDetention).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityUnnecessaryOrUnreviewedAdultDetention).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityDetentionWithoutMaximumOrRealAlternative).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityStatelessnessCreationOrPerpetuation).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityPunitiveNationalityDeprivation).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityPushbackOrExternalisedDutyEvasion).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityExclusionFromScarcityPopulation).
+# => TRUE
+? prevents(MPUnaccompanied, MobilityStatusBasedScarcityPriority).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityForcedAssimilationOrSegregation).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityCompelledBeliefLabourMarriageOrConformity).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityBlockedExitDissentOrConfidentialHelp).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityMembershipWorthRiskOrEligibilityReuse).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityMembershipPoliticalWeight).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityInternalLawLoweringIndividualRights).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityCollectiveGuilt).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityTitleLossByMembershipExit).
+# => TRUE
+? prevents(MPUnaccompanied, PluralityConservationAsDispossession).
+# => TRUE
+? prevents(MPUnaccompanied, ExternalExportOfDomesticProhibitedHarm).
+# => TRUE
+? complete(MPBoundary0Record, PluralityMembershipOccurrence, MPBoundary0Object).
+# => TRUE
+? person(MPBoundary0Holder).
+# => FALSE
+? decide(MPBoundary0Holder, Ballot).
+# => FALSE
+? prisoner(MPBoundary0Holder).
+# => FALSE
+? false(MPBoundary0Holder).
+# => FALSE
+? reward(MPBoundary0Holder).
+# => FALSE
+? lose(Points, MPBoundary0Holder).
+# => FALSE
+? free(MPBoundary0Holder).
+# => FALSE
+? complete(MPBoundary1Record, PluralityInternalDecision, MPBoundary1Object).
+# => TRUE
+? person(MPBoundary1Holder).
+# => FALSE
+? decide(MPBoundary1Holder, Ballot).
+# => FALSE
+? prisoner(MPBoundary1Holder).
+# => FALSE
+? false(MPBoundary1Holder).
+# => FALSE
+? reward(MPBoundary1Holder).
+# => FALSE
+? lose(Points, MPBoundary1Holder).
+# => FALSE
+? free(MPBoundary1Holder).
+# => FALSE
+? complete(MPBoundary2Record, PluralityProtectedTitle, MPBoundary2Object).
+# => TRUE
+? person(MPBoundary2Holder).
+# => FALSE
+? decide(MPBoundary2Holder, Ballot).
+# => FALSE
+? prisoner(MPBoundary2Holder).
+# => FALSE
+? false(MPBoundary2Holder).
+# => FALSE
+? reward(MPBoundary2Holder).
+# => FALSE
+? lose(Points, MPBoundary2Holder).
+# => FALSE
+? free(MPBoundary2Holder).
+# => FALSE
+? complete(MPBoundary3Record, PluralityIndigenousSelfGovernment, MPBoundary3Object).
+# => TRUE
+? person(MPBoundary3Holder).
+# => FALSE
+? decide(MPBoundary3Holder, Ballot).
+# => FALSE
+? prisoner(MPBoundary3Holder).
+# => FALSE
+? false(MPBoundary3Holder).
+# => FALSE
+? reward(MPBoundary3Holder).
+# => FALSE
+? lose(Points, MPBoundary3Holder).
+# => FALSE
+? free(MPBoundary3Holder).
+# => FALSE
+? complete(MPBoundary4Record, PluralityEvacuationCompatibility, MPBoundary4Object).
+# => TRUE
+? person(MPBoundary4Holder).
+# => FALSE
+? decide(MPBoundary4Holder, Ballot).
+# => FALSE
+? prisoner(MPBoundary4Holder).
+# => FALSE
+? false(MPBoundary4Holder).
+# => FALSE
+? reward(MPBoundary4Holder).
+# => FALSE
+? lose(Points, MPBoundary4Holder).
+# => FALSE
+? free(MPBoundary4Holder).
+# => FALSE
+? complete(MPBoundary5Record, MobilityRemovalCompatibility, MPBoundary5Object).
+# => TRUE
+? person(MPBoundary5Holder).
+# => FALSE
+? decide(MPBoundary5Holder, Ballot).
+# => FALSE
+? prisoner(MPBoundary5Holder).
+# => FALSE
+? false(MPBoundary5Holder).
+# => FALSE
+? reward(MPBoundary5Holder).
+# => FALSE
+? lose(Points, MPBoundary5Holder).
+# => FALSE
+? free(MPBoundary5Holder).
+# => FALSE
+:refuse reasoning /declared derived-only/
+complete(Forged, PluralityActualConsent, Land).
+:refuse reasoning /declared derived-only/
+authority(Forged, RightsBoundedInternalDecision, Record).
+:refuse reasoning /declared derived-only/
+permits(Forged, RelyOnConsentForExactCollectiveEffect, Record).
+:refuse reasoning /declared derived-only/
+obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, Nobody).

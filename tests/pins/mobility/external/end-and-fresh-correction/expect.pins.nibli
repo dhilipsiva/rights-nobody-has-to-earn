@@ -1,0 +1,108 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? complete(MPEndRecord, ExternalArrangementCompatibility, MPEndObject).
+# => TRUE
+observe(MPEndReview, MPEndRecord, EndedFinding, MPCurrentDispositionScope).
+? complete(MPEndRecord, ExternalArrangementCompatibility, MPEndObject).
+# => FALSE
+authorized(MPCorrectedAlternate, MPAlternateReviewAuthority, MPCorrectedRecord).
+authorized(MPCorrectedAuditor, MPAuditAuthority, MPCorrectedRecord).
+authorized(MPCorrectedEvidence, MPEvidenceAuthority, MPCorrectedRecord).
+authorized(MPCorrectedReader, MPChallengeReaderAuthority, MPCorrectedRecord).
+authorized(MPCorrectedReview, MPIndependentReviewAuthority, MPCorrectedRecord).
+authorized(MPCorrectedSource, MPSourceAuthority, MPCorrectedRecord).
+observe(MPCorrectedEvidence, MPCorrectedRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, ExactAttributablePublicPrivateDelegatedOrControlledArrangement, MPExternalAttributionScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, ExternalArrangementCompatibility, MPRecordKindScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, ForeignCooperationAndEvidenceRemainNamedExternalAssumptions, MPExternalAssumptionsScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, FreshCorrectedWindow, MPWindowScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, FullRelevantSupplyChainAndControlEvidenceNotCorporateLabel, MPExternalEvidenceScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, IndependentlyReviewedDomesticLabourEcologyAndRightsLimits, MPDomesticBaselineScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedAlternate, MPAlternateReaderScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedAuditor, MPAuditReaderScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedBasis, MPEvidenceRecordScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedChallenge, MPChallengeScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedCorrection, MPCorrectionScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedEnd, MPSourceBoundEndScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedOperator, MPOperatorScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedReader, MPChallengeReaderScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPCorrectedRemedy, MPRemedyScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPEndEpoch, MPEpochScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPEndHolder, MPHolderScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPEndJurisdiction, MPJurisdictionScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPEndObject, MPObjectScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPEndScope, MPLegalScopeScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MPEndVersion, MPSourceVersionScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, NoExportOfProhibitedHarmNoForumFlagOrJurisdictionEvasion, MPExternalComplianceScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPCorrectedEvidence, MPCorrectedRecord, PublicProcurement, MPExternalInstrumentScope).
+observe(MPCorrectedReview, MPCorrectedRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPCorrectedReview, MPCorrectedRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPCorrectedReview, MPCorrectedRecord, ExactAttributablePublicPrivateDelegatedOrControlledArrangement, MPExternalAttributionScope).
+observe(MPCorrectedReview, MPCorrectedRecord, ExternalArrangementCompatibility, MPRecordKindScope).
+observe(MPCorrectedReview, MPCorrectedRecord, ForeignCooperationAndEvidenceRemainNamedExternalAssumptions, MPExternalAssumptionsScope).
+observe(MPCorrectedReview, MPCorrectedRecord, FreshCorrectedWindow, MPWindowScope).
+observe(MPCorrectedReview, MPCorrectedRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPCorrectedReview, MPCorrectedRecord, FullRelevantSupplyChainAndControlEvidenceNotCorporateLabel, MPExternalEvidenceScope).
+observe(MPCorrectedReview, MPCorrectedRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPCorrectedReview, MPCorrectedRecord, IndependentlyReviewedDomesticLabourEcologyAndRightsLimits, MPDomesticBaselineScope).
+observe(MPCorrectedReview, MPCorrectedRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedAlternate, MPAlternateReaderScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedAuditor, MPAuditReaderScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedBasis, MPEvidenceRecordScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedChallenge, MPChallengeScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedCorrection, MPCorrectionScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedEnd, MPSourceBoundEndScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedOperator, MPOperatorScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedReader, MPChallengeReaderScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPCorrectedRemedy, MPRemedyScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPEndEpoch, MPEpochScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPEndHolder, MPHolderScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPEndJurisdiction, MPJurisdictionScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPEndObject, MPObjectScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPEndScope, MPLegalScopeScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MPEndVersion, MPSourceVersionScope).
+observe(MPCorrectedReview, MPCorrectedRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPCorrectedReview, MPCorrectedRecord, NoExportOfProhibitedHarmNoForumFlagOrJurisdictionEvasion, MPExternalComplianceScope).
+observe(MPCorrectedReview, MPCorrectedRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPCorrectedReview, MPCorrectedRecord, PublicProcurement, MPExternalInstrumentScope).
+observe(MPCorrectedSource, MPCorrectedRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPCorrectedSource, MPCorrectedRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPCorrectedSource, MPCorrectedRecord, ExactAttributablePublicPrivateDelegatedOrControlledArrangement, MPExternalAttributionScope).
+observe(MPCorrectedSource, MPCorrectedRecord, ExternalArrangementCompatibility, MPRecordKindScope).
+observe(MPCorrectedSource, MPCorrectedRecord, ForeignCooperationAndEvidenceRemainNamedExternalAssumptions, MPExternalAssumptionsScope).
+observe(MPCorrectedSource, MPCorrectedRecord, FreshCorrectedWindow, MPWindowScope).
+observe(MPCorrectedSource, MPCorrectedRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPCorrectedSource, MPCorrectedRecord, FullRelevantSupplyChainAndControlEvidenceNotCorporateLabel, MPExternalEvidenceScope).
+observe(MPCorrectedSource, MPCorrectedRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPCorrectedSource, MPCorrectedRecord, IndependentlyReviewedDomesticLabourEcologyAndRightsLimits, MPDomesticBaselineScope).
+observe(MPCorrectedSource, MPCorrectedRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedAlternate, MPAlternateReaderScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedAuditor, MPAuditReaderScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedBasis, MPEvidenceRecordScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedChallenge, MPChallengeScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedCorrection, MPCorrectionScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedEnd, MPSourceBoundEndScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedOperator, MPOperatorScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedReader, MPChallengeReaderScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPCorrectedRemedy, MPRemedyScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPEndEpoch, MPEpochScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPEndHolder, MPHolderScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPEndJurisdiction, MPJurisdictionScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPEndObject, MPObjectScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPEndScope, MPLegalScopeScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MPEndVersion, MPSourceVersionScope).
+observe(MPCorrectedSource, MPCorrectedRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPCorrectedSource, MPCorrectedRecord, NoExportOfProhibitedHarmNoForumFlagOrJurisdictionEvasion, MPExternalComplianceScope).
+observe(MPCorrectedSource, MPCorrectedRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPCorrectedSource, MPCorrectedRecord, PublicProcurement, MPExternalInstrumentScope).
+? complete(MPCorrectedRecord, ExternalArrangementCompatibility, MPEndObject).
+# => TRUE
+? complete(MPEndRecord, ExternalArrangementCompatibility, MPEndObject).
+# => FALSE

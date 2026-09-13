@@ -1,0 +1,116 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+
+? complete(MPWithdrawalRecord, PluralityConsentedEffectCompatibility, MPWithdrawalObject).
+# => TRUE
+? complete(MPWithdrawalConsentRecord, PluralityActualConsent, MPWithdrawalObject).
+# => TRUE
+authorized(MPDefectAlternate, MPAlternateReviewAuthority, MPDefectRecord).
+authorized(MPDefectAuditor, MPAuditAuthority, MPDefectRecord).
+authorized(MPDefectEvidence, MPEvidenceAuthority, MPDefectRecord).
+authorized(MPDefectReader, MPChallengeReaderAuthority, MPDefectRecord).
+authorized(MPDefectReview, MPIndependentReviewAuthority, MPDefectRecord).
+authorized(MPDefectSource, MPSourceAuthority, MPDefectRecord).
+observe(MPDefectEvidence, MPDefectRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPDefectEvidence, MPDefectRecord, ConsentCoercionOrBreach, MPDefectKindScope).
+observe(MPDefectEvidence, MPDefectRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPDefectEvidence, MPDefectRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPDefectEvidence, MPDefectRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPDefectEvidence, MPDefectRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectAlternate, MPAlternateReaderScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectAuditor, MPAuditReaderScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectBasis, MPEvidenceRecordScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectChallenge, MPChallengeScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectCorrection, MPCorrectionScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectEnd, MPSourceBoundEndScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectOperator, MPOperatorScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectReader, MPChallengeReaderScope).
+observe(MPDefectEvidence, MPDefectRecord, MPDefectRemedy, MPRemedyScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalConsentRecord, MPAffectedRecordScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalEpoch, MPEpochScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalHolder, MPHolderScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalJurisdiction, MPJurisdictionScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalObject, MPObjectScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalScope, MPLegalScopeScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalVersion, MPSourceVersionScope).
+observe(MPDefectEvidence, MPDefectRecord, MPWithdrawalWindow, MPWindowScope).
+observe(MPDefectEvidence, MPDefectRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPDefectEvidence, MPDefectRecord, MobilityPluralityReviewedDefect, MPRecordKindScope).
+observe(MPDefectEvidence, MPDefectRecord, PositiveIndependentlyEstablishedScopedDefectNotMereAbsence, MPDefectBasisScope).
+observe(MPDefectEvidence, MPDefectRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPDefectReview, MPDefectRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPDefectReview, MPDefectRecord, ConsentCoercionOrBreach, MPDefectKindScope).
+observe(MPDefectReview, MPDefectRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPDefectReview, MPDefectRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPDefectReview, MPDefectRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPDefectReview, MPDefectRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectAlternate, MPAlternateReaderScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectAuditor, MPAuditReaderScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectBasis, MPEvidenceRecordScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectChallenge, MPChallengeScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectCorrection, MPCorrectionScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectEnd, MPSourceBoundEndScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectOperator, MPOperatorScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectReader, MPChallengeReaderScope).
+observe(MPDefectReview, MPDefectRecord, MPDefectRemedy, MPRemedyScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalConsentRecord, MPAffectedRecordScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalEpoch, MPEpochScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalHolder, MPHolderScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalJurisdiction, MPJurisdictionScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalObject, MPObjectScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalScope, MPLegalScopeScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalVersion, MPSourceVersionScope).
+observe(MPDefectReview, MPDefectRecord, MPWithdrawalWindow, MPWindowScope).
+observe(MPDefectReview, MPDefectRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPDefectReview, MPDefectRecord, MobilityPluralityReviewedDefect, MPRecordKindScope).
+observe(MPDefectReview, MPDefectRecord, PositiveIndependentlyEstablishedScopedDefectNotMereAbsence, MPDefectBasisScope).
+observe(MPDefectReview, MPDefectRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+observe(MPDefectSource, MPDefectRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPDefectSource, MPDefectRecord, ConsentCoercionOrBreach, MPDefectKindScope).
+observe(MPDefectSource, MPDefectRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPDefectSource, MPDefectRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPDefectSource, MPDefectRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPDefectSource, MPDefectRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectAlternate, MPAlternateReaderScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectAuditor, MPAuditReaderScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectBasis, MPEvidenceRecordScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectChallenge, MPChallengeScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectCorrection, MPCorrectionScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectEnd, MPSourceBoundEndScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectOperator, MPOperatorScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectReader, MPChallengeReaderScope).
+observe(MPDefectSource, MPDefectRecord, MPDefectRemedy, MPRemedyScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalConsentRecord, MPAffectedRecordScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalEpoch, MPEpochScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalHolder, MPHolderScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalJurisdiction, MPJurisdictionScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalObject, MPObjectScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalScope, MPLegalScopeScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalVersion, MPSourceVersionScope).
+observe(MPDefectSource, MPDefectRecord, MPWithdrawalWindow, MPWindowScope).
+observe(MPDefectSource, MPDefectRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPDefectSource, MPDefectRecord, MobilityPluralityReviewedDefect, MPRecordKindScope).
+observe(MPDefectSource, MPDefectRecord, PositiveIndependentlyEstablishedScopedDefectNotMereAbsence, MPDefectBasisScope).
+observe(MPDefectSource, MPDefectRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).
+authorized(MPWithdrawalConsentSource, MPSourceAuthority, MPWithdrawalConsentRecord).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalHolder, MPHolderScope).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalObject, MPObjectScope).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalVersion, MPSourceVersionScope).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalEpoch, MPEpochScope).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalJurisdiction, MPJurisdictionScope).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalScope, MPLegalScopeScope).
+observe(MPWithdrawalConsentSource, MPWithdrawalConsentRecord, MPWithdrawalWindow, MPWindowScope).
+? complete(MPDefectRecord, MobilityPluralityReviewedDefect, MPWithdrawalObject).
+# => TRUE
+? contradict(MPWithdrawalConsentRecord, MPEffectPermission).
+# => TRUE
+? obliged(MPDefectReader, PreserveCorrectAndRemedyMobilityPluralityRecord, MPWithdrawalConsentRecord).
+# => TRUE
+? obliged(MPDefectAuditor, AuditRelatedCasesAndNonRepetition, MPWithdrawalConsentRecord).
+# => TRUE
+? complete(MPWithdrawalConsentRecord, PluralityActualConsent, MPWithdrawalObject).
+# => FALSE
+? complete(MPWithdrawalRecord, PluralityConsentedEffectCompatibility, MPWithdrawalObject).
+# => FALSE
+? complete(MPUnaffectedRecord, PluralityConsentedEffectCompatibility, MPUnaffectedObject).
+# => TRUE

@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+# Withhold ConsentResult; every other field remains.
+? complete(MPOmit6Row0Record, PluralityActualConsent, MPOmit6Row0Object).
+# => FALSE
+# Withhold ConsentQuality; every other field remains.
+? complete(MPOmit6Row1Record, PluralityActualConsent, MPOmit6Row1Object).
+# => FALSE
+# Withhold ConsentProcess; every other field remains.
+? complete(MPOmit6Row2Record, PluralityActualConsent, MPOmit6Row2Object).
+# => FALSE
+# Withhold EffectCompleteness; every other field remains.
+? complete(MPOmit6Row3Record, PluralityActualConsent, MPOmit6Row3Object).
+# => FALSE

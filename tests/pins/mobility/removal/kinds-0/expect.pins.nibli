@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+
+? complete(MPKind0Case0Record, MobilityRemovalCompatibility, MPKind0Case0Object).
+# => TRUE
+? obliged(MPKind0Case0Reader, PreserveSuspensiveRemovalReview, MPKind0Case0Record).
+# => TRUE
+? complete(MPKind0Case1Record, MobilityRemovalCompatibility, MPKind0Case1Object).
+# => TRUE
+? obliged(MPKind0Case1Reader, PreserveSuspensiveRemovalReview, MPKind0Case1Record).
+# => TRUE
+? complete(MPKind0Case2Record, MobilityRemovalCompatibility, MPKind0Case2Object).
+# => TRUE
+? obliged(MPKind0Case2Reader, PreserveSuspensiveRemovalReview, MPKind0Case2Record).
+# => TRUE
+? complete(MPKind0Case3Record, MobilityRemovalCompatibility, MPKind0Case3Object).
+# => TRUE
+? obliged(MPKind0Case3Reader, PreserveSuspensiveRemovalReview, MPKind0Case3Record).
+# => TRUE

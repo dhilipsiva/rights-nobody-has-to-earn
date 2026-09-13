@@ -126,6 +126,12 @@ Verification means substantive Nibli pins plus contradiction scans. Keep the
 complete run within a few minutes; do not add hashing, provenance, freshness,
 publication, or audit-ledger gates. Prose consistency is a separate review.
 
+Author instruction, 2026-09-13: implement one TODO item at a time, verify,
+commit, push and repeat through the backlog without questions. Recommended
+suggestions and prose have delegated author approval; separate per-passage
+approval pauses are superseded. Do not invent personal testimony or external
+evidence, and do not delete unfinished work merely to empty the tracker.
+
 Bullets prefixed **[AUTHOR-GATED]** need the author's own voice, personal memory,
 or a design decision — they are collected in phase 1 rather than scattered.
 
@@ -315,62 +321,6 @@ canonical ledger; this historical foundation summary does not override it.
 
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
-
-- [ ] **Complete mobility, collective/plurality rights, and external relations.**
-  - Cover newcomers, migrants, refugees, stateless people, borders, asylum,
-    expulsion, extradition, accessible language and process, and continuity of
-    standing, floors, liberty, and remedy.
-  - Implement differentiated collective rights. Protect Indigenous internal and
-    local self-government, institutions, language, culture, education, collective
-    land/resource title, participation, restitution, and remedy. Protect linguistic,
-    religious, ethnic, and other minorities in culture, language, education, media,
-    association, accessibility, anti-assimilation, and participation; require an
-    independently established historical or territorial basis before giving a
-    minority territorial authority.
-  - Define membership through self-identification plus the collective's lawful
-    acceptance process. Permit multiple memberships and free exit; protect privacy
-    and provide an independent procedural challenge without making membership a
-    reusable worth, risk, floor, or political-weight score.
-  - Permit internal selection and customary law to differ from general-government
-    rules only inside universal standing, equality, liberty, due process, individual
-    voice, appeal, and Constitutional Court review. Preserve one equal
-    general-government ballot and common services for members and nonmembers.
-  - Require actual collective consent before permanent forced relocation,
-    extinguishment or irreversible impairment of collective title, transfer of
-    sovereignty over collective lands, sacred-site destruction, hazardous-material
-    placement, or a comparable existential harm. Temporary lifesaving evacuation
-    needs its own emergency contract and cannot extinguish title. For other material
-    effects require good-faith consultation, accessible information, adequate time,
-    accommodation, public reasons, and review rather than a blanket veto.
-  - Split formal work by direct legal effect across the existing taxonomy; create
-    no new class or omnibus `collective` predicate. Give collective membership,
-    authority, title, consultation, and consent findings complete source, writer,
-    evidence, privacy, reader, challenge, correction, carry, end, alternate-route,
-    continuity, remedy, failure-polarity, and temporal contracts.
-  - Nibli may consume an authenticated, bounded membership, title, consultation, or
-    consent finding but may not decide collective identity, membership, territory,
-    title, consent, or institutional action. Apply the completed finite
-    collective-decision audit to any supplied result certificate; do not invent
-    generic tally, roster-completeness, signature, or enactment semantics.
-  - Preserve a former resident's return right without creating a nonresident ballot.
-    The ratified public-safety and external-power work owns accessible evidence and
-    border operation, not the right's existence. Book 2 owns land/title administration,
-    language and consultation services, records, staffing, costs, capacity, and
-    workflows.
-  - Acceptance must cover disputed and multiple membership, exit and privacy,
-    internal dissent, customary-law conflict, nonmember residents, language access,
-    title and restitution, each consent-required harm, consultation-only projects,
-    temporary evacuation, and forced assimilation or relocation. Prove that
-    collective autonomy never lowers individual rights, common services, or
-    political equality and never creates a second general-government ballot.
-  - Treaty, diplomacy, external trade, war/peace and humanitarian authority is now
-    ratified and owned by the public-safety and external-power implementation bullet
-    below; do not duplicate it here. This item retains mobility,
-    collective/plurality rights, and the external no-evasion rule: public
-    procurement, investment, trade or corporate form may not export labour
-    exploitation, ecological damage or rights violations that would be unlawful at
-    home. Other states' cooperation and supply-chain facts remain external
-    assumptions, not derived facts.
 
 - [ ] **Add the missing non-carceral justice interface.**
   - Use the landed court-holder and independent-review contracts; specify notice,
@@ -1572,6 +1522,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh integrity
 ./generate.sh statistics
 ./generate.sh amendment
+./generate.sh mobility
 ./generate.sh spine
 ~~~
 
