@@ -716,7 +716,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
         "placement"
@@ -1077,7 +1077,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Neither default relief nor an asserted exhaustion gate is acceptable: the first defeats every conviction, while the second lets whoever withholds the exhaustion entry veto an otherwise supported conviction.",
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
         "release"
@@ -1155,7 +1155,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
         "placement"
@@ -1235,7 +1235,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
         "liberty"
@@ -1348,7 +1348,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
         "epoch-carry"
@@ -1385,7 +1385,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "release",
         "time",
@@ -1498,7 +1498,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
         "placement"
@@ -2008,7 +2008,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "placement",
         "public-body",

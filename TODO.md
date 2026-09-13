@@ -322,19 +322,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Add the missing non-carceral justice interface.**
-  - Use the landed court-holder and independent-review contracts; specify notice,
-    counsel/advocacy, hearing, challenge, reparation, remedy, and enforcement across
-    civil, administrative, family, labour, consumer, constitutional, and criminal
-    justice.
-  - Specify investigation/policing, prosecution, defence, adjudication, execution,
-    and review procedures without reconstituting their holders. Add victim/survivor
-    protection, restitution, reparation, restorative options, and least-coercive
-    response without compelling forgiveness.
-  - Add explicit carceral limits: bodily integrity, communication, conditions,
-    proportionality, release review, post-release continuity, and reintegration.
-    Prison remains the hardest stress test, not the default social case.
-
 - [ ] **Implement the ratified public-safety, defence, emergency, and
   external-power baselines.**
   - Follow the author-ratified 2026-08-08 contract in
@@ -676,6 +663,11 @@ Gate B; it does not claim Book 2 operations or feasibility.
     evidenced rights or commons harm justifies a least-restrictive, reviewable rule.
 
 - [ ] **Constrain records, surveillance, and automated power across every domain.**
+  - Preserve the legacy assertion/withholding cases and distinguish them from
+    the new justice interfaces; see the justice contract's "Legacy assertion
+    boundary". Court consumers must reject conflicting single-valued identity
+    bindings without treating the old multi-valued remedy/classification slots
+    as exclusive. Authentication and observed execution remain external.
   - Extend the record contract to identity/status, health, care, education,
     workplace, housing, finance, policing and public-decision records.
   - Cover surveillance, biometrics, profiling and automated/AI-assisted decisions:

@@ -182,7 +182,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No relation challenges or corrects an attack fact.
 - **Required challenge route:** Case appeal and correction history that can supersede a disputed finding.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `47df49ad5f65b14b45d7bbf3c912c76eaeecde4c5b8321c993895f89a67494b9`.
 
 ### `authorized`
@@ -329,7 +329,7 @@ channels. No exceptional channel exists in the current contract.
 - **Required challenge route:** Notice, contest, correction history, and continuity while appellate status is disputed.
 - **Risk disposition:** patchable, external, deliberately_refused.
 - **Refused alternative:** Neither default relief nor an asserted exhaustion gate is acceptable: the first defeats every conviction, while the second lets whoever withholds the exhaustion entry veto an otherwise supported conviction.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `affd727ee37bc0305631a0e1a3b9b75b28927467957d9f35ec0ca3b7e0dd7978`.
 
 ### `continue`
@@ -361,7 +361,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No rule corrects or appeals a cruel fact.
 - **Required challenge route:** Independent appeal and append-only correction of the finding.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `0093de374030369768dc6db9042a74890cb39f8f7025dde425d00888572ad50a`.
 
 ### `date`
@@ -393,7 +393,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** A Review judgment can void the deceiver but cannot correct the underlying deceive entry.
 - **Required challenge route:** Prompt contest, independent review, correction history, and interim shield continuity.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `a4f72b9ecee3e1f46453b72b2d4264a676dc1ea5718688617c1aae8de824e268`.
 
 ### `endorses`
@@ -441,7 +441,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The two-entry Appeals shape is the only guard; no appeal of forgiveness or refusal is represented.
 - **Required challenge route:** Notice, appeal, correction history, and a clear account of which consequences are restored.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `4aec77f843480e1174a490affe517a76d4622a9bedb7e93a10ce451f9d0c9e7c`.
 
 ### `free`
@@ -457,7 +457,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No release appeal, correction, or continuity mechanism exists.
 - **Required challenge route:** Immediate challenge, independent review, and continuity that never makes release depend on a withheld official write.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `90761d03f8b013b42c210728c2191f5016a9a7f06db6e7d3fbeca09343a1110f`.
 
 ### `hears`
@@ -505,7 +505,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** No rule contests or corrects an injury fact.
 - **Required challenge route:** Notice, hearing, appeal, and append-only correction of the factual finding.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `260cd39a3f38a8757942ea8ad1e2da0909017a414a6a0660ce77ab4def76d46d`.
 
 ### `judge`
@@ -714,7 +714,7 @@ channels. No exceptional channel exists in the current contract.
 - **Current challenge route:** The marker notices only one direction. Its exact Review duty now feeds a source-bound action, nonresponse, alternate, continuity, and remedy route, but no rule corrects placement or proves that a reader acts.
 - **Required challenge route:** Immediate placement appeal, interim safe continuity, correction, remedy, and independent audit reader.
 - **Risk disposition:** patchable, external.
-- **Owner:** `TODO.md::Add the missing non-carceral justice interface`.
+- **Owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`.
 - **Reviewed route fingerprint:** `afbb5b21a09cd3f3e3d7c4f2a43f2030cea4fde1423ee220a0a85b8f0d719627`.
 
 ### `ratifies`

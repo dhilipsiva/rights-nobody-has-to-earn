@@ -1,0 +1,111 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 53
+
+? obliged(State, PreserveBodilyIntegrityHumaneConditionsAndConfidentialCommunication, Hano).
+# => TRUE
+? obliged(State, EnsureIndependentCustodialComplaintInspectionAndConfidentialCounsel, Hano).
+# => TRUE
+? obliged(State, ArrangeIndependentReleaseReviewAndDoNotDelayLawfulRelease, Hano).
+# => TRUE
+? obliged(State, PreserveCareHousingVoiceAndReintegrationAcrossRelease, Hano).
+# => TRUE
+? obliged(State, ProvideAccessibleNoticeCounselHearingChallengeAndEffectiveRemedy, JUnrecordedPerson).
+# => TRUE
+? obliged(State, ProvideIndependentSurvivorSupportWithoutVerdictOrCooperationCondition, JUnrecordedPerson).
+# => TRUE
+? obliged(State, PreserveRightsAndNonRetaliationDuringJusticeProceedings, JUnrecordedPerson).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeWealthDocumentationOrStatusConditionedAccess).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeSupportConditionedOnReportingTestimonyReconciliationOrForgiveness).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeSupportAsProofOfGuilt).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeAggregateEvidenceReversingCriminalBurden).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeRestorationRefusalAsAdversePersonFinding).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticePrivateEvidenceAsWorthRiskOrEligibilityScore).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeCaseReliefAsGeneralInvalidation).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeEnforcementTakingStandingFloorOrPoliticalVoice).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeProcessRecordAsConvictionCustodyOrCoerciveAuthority).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeCustodyAsBodilyAbuseIsolationOrLossOfCounsel).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeReleaseConditionalOnDebtLabourOrForgiveness).
+# => TRUE
+? prevents(JUnrecordedPerson, JusticeInstitutionalDelayExtendingCustody).
+# => TRUE
+? complete(JBoundaryaccessRecord, JusticeAccessibleProcess, JBoundaryaccessCase).
+# => TRUE
+? complete(JBoundaryassistanceRecord, JusticeIndependentAssistance, JBoundaryassistanceCase).
+# => TRUE
+? complete(JBoundaryinvestigationRecord, JusticeInvestigationProcedure, JBoundaryinvestigationCase).
+# => TRUE
+? complete(JBoundaryprosecutionRecord, JusticeChargingProcedure, JBoundaryprosecutionCase).
+# => TRUE
+? complete(JBoundarydefenceRecord, JusticeConfidentialDefence, JBoundarydefenceCase).
+# => TRUE
+? complete(JBoundaryhearingRecord, JusticeFairHearing, JBoundaryhearingCase).
+# => TRUE
+? complete(JBoundarysurvivorRecord, JusticeSurvivorProtection, JBoundarysurvivorCase).
+# => TRUE
+? complete(JBoundaryrestorationRecord, JusticeVoluntaryRestoration, JBoundaryrestorationCase).
+# => TRUE
+? complete(JBoundarycasereliefRecord, JusticeCaseSpecificRelief, JBoundarycasereliefCase).
+# => TRUE
+? complete(JBoundarygeneralinvalidationRecord, JusticeConstitutionalInvalidation, JBoundarygeneralinvalidationCase).
+# => TRUE
+? complete(JBoundarycompositionreviewRecord, JusticeUninvolvedCompositionReview, JBoundarycompositionreviewCase).
+# => TRUE
+? complete(JBoundaryenforcementRecord, JusticeNoncoerciveEnforcement, JBoundaryenforcementCase).
+# => TRUE
+? complete(JBoundaryappealRecord, JusticeIndependentAppeal, JBoundaryappealCase).
+# => TRUE
+? complete(JBoundaryconditionsRecord, JusticeCustodialSafeguards, JBoundaryconditionsCase).
+# => TRUE
+? complete(JBoundaryreleasereviewRecord, JusticeReleaseReview, JBoundaryreleasereviewCase).
+# => TRUE
+? complete(JBoundarycontinuityRecord, JusticeReleaseContinuity, JBoundarycontinuityCase).
+# => TRUE
+? complete(JBoundarydefectRecord, JusticeReviewedDefect, JBoundarydefectCase).
+# => TRUE
+? complete(JBoundarynonresponseRecord, JusticeEstablishedNonresponse, JBoundarynonresponseCase).
+# => TRUE
+? prisoner(JUnrecordedPerson).
+# => FALSE
+? free(JUnrecordedPerson).
+# => FALSE
+? authority(JUnrecordedPerson).
+# => FALSE
+? reward(JUnrecordedPerson, Trust).
+# => FALSE
+? decide(JUnrecordedPerson, Ballot).
+# => FALSE
+? false(JUnrecordedPerson).
+# => FALSE
+? eats(JUnrecordedPerson).
+# => FALSE
+? dwell(JUnrecordedPerson).
+# => FALSE
+? healthy(JUnrecordedPerson).
+# => FALSE
+? secure(JUnrecordedPerson).
+# => FALSE
+? learn(JUnrecordedPerson).
+# => FALSE
+? believe(JUnrecordedPerson).
+# => FALSE
+? expresses(JUnrecordedPerson).
+# => FALSE
+? meets(JUnrecordedPerson).
+# => FALSE
+
+:refuse reasoning /declared derived-only/
+complete(ForgedRecord, JusticeCaseSpecificRelief, ForgedCase).
+
+:refuse reasoning /declared derived-only/
+permits(ForgedOperator, ImplementSpecifiedNoncoerciveRemedy, ForgedRecord).

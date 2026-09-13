@@ -197,6 +197,15 @@ transfers only that review duty. The alternate cannot complete the power, keep
 expired authority alive, or enlarge its scope, and each alternate remains
 separate from the primary roles and the other alternates.
 
+Justice has its own response route. Anyone may request review without the
+original operator's permission. An independently established defect can
+withdraw reliance on the affected process or remedy while requiring evidence
+preservation, correction, relief and measures against recurrence. A positively
+established failure to respond places the unfulfilled duty on an independent
+alternate. A wrong case or source version cannot withdraw somebody else's
+remedy. These record-dependent consequences do not condition the prior public
+duty to provide access, survivor support and protection against retaliation.
+
 And then nobody has necessarily acted. A formal action duty is not a performed
 review. A receipt conclusion does not authenticate its writer or prove the service
 system operated. A non-response conclusion is not an escalation received. Continuity

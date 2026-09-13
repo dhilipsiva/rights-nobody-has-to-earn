@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+# Withhold RecordKind, preserving every other premise.
+? complete(JOmit4Row0Record, JusticeUninvolvedCompositionReview, JOmit4Row0Case).
+# => FALSE
+# Withhold CompositionChallenge, preserving every other premise.
+? complete(JOmit4Row1Record, JusticeUninvolvedCompositionReview, JOmit4Row1Case).
+# => FALSE
+# Withhold Panel, preserving every other premise.
+? complete(JOmit4Row2Record, JusticeUninvolvedCompositionReview, JOmit4Row2Case).
+# => FALSE
+# Withhold Review, preserving every other premise.
+? complete(JOmit4Row3Record, JusticeUninvolvedCompositionReview, JOmit4Row3Case).
+# => FALSE
+# Withhold CourtRecord, preserving every other premise.
+? complete(JOmit4Row4Record, JusticeUninvolvedCompositionReview, JOmit4Row4Case).
+# => FALSE

@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold ChallengeReader, preserving every other premise.
+? complete(JOmit2Row0Record, JusticeReviewedDefect, JOmit2Row0Case).
+# => FALSE
+# Withhold AlternateReader, preserving every other premise.
+? complete(JOmit2Row1Record, JusticeReviewedDefect, JOmit2Row1Case).
+# => FALSE
+# Withhold AuditReader, preserving every other premise.
+? complete(JOmit2Row2Record, JusticeReviewedDefect, JOmit2Row2Case).
+# => FALSE
+# Withhold Challenge, preserving every other premise.
+? complete(JOmit2Row3Record, JusticeReviewedDefect, JOmit2Row3Case).
+# => FALSE
+# Withhold Correction, preserving every other premise.
+? complete(JOmit2Row4Record, JusticeReviewedDefect, JOmit2Row4Case).
+# => FALSE
+# Withhold Remedy, preserving every other premise.
+? complete(JOmit2Row5Record, JusticeReviewedDefect, JOmit2Row5Case).
+# => FALSE

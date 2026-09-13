@@ -87,6 +87,47 @@ finding is not an order to detain, expel or move anyone. The checks establish
 no operating border, truthful foreign assurance, cooperation by another
 state, or completed remedy.
 
+## A way to be heard
+
+A right needs a way to be heard when somebody denies it. Civil,
+administrative, family, labour, consumer, constitutional and criminal cases
+all require accessible notice, information, interpretation, accommodation,
+independent assistance, a hearing, reasons, challenge and an effective remedy.
+Money, documentation and immigration status cannot be the price of entry.
+Neither can winning the case. A child needs an independent voice and separate
+assistance where the adults' interests conflict; a representative does not
+create the child's standing.
+
+The people who investigate, decide whether to charge, defend, judge, execute
+and finally review cannot take over one another's functions in the same case.
+Investigators must preserve evidence that helps the accused as well as evidence
+against them. A charging decision needs independent judgment and reasons.
+Defence needs usable evidence, preparation, confidential advice and a real
+opportunity to answer. Privacy and survivor protection require arrangements
+that preserve a meaningful defence, not a hidden case nobody can contest.
+
+A survivor can receive support, confidential advice and safety planning
+without a conviction, compulsory reporting, testimony, reconciliation or
+forgiveness. That help does not decide another person's guilt. A restorative
+route is optional and requires free, informed, revocable consent and a lawful
+specific agreement. Refusal and withdrawal cannot become punishment or loss
+of help. Neither an agreement nor a convenient participant can surrender
+someone else's rights or erase public accountability.
+
+Ordinary courts give relief for a particular case: restitution, reparation,
+compensation, cessation, specified performance or a rights-respecting
+protective arrangement. General constitutional invalidation belongs to the
+Constitutional Court. A challenge to that court's own composition goes to the
+uninvolved alternate panel. Each route needs its actual current authority;
+calling a document a judgment supplies none.
+
+Enforcement must stay within the exact remedy, affected case, lawful actor,
+scope and end. It requires notice, an opportunity to comply and contest,
+independent review and proportionate means that preserve essentials and
+third parties' rights. This non-coercive route creates no arrest warrant,
+search power, seizure power or authority to imprison. None of these findings
+proves that a hearing occurred, compensation arrived or an institution acted.
+
 ## Owed is not the same as delivered
 
 Now the thing this book will not soften.

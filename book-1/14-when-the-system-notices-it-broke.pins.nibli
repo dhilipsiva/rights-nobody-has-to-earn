@@ -1,5 +1,12 @@
 # ── Chapter 14 fidelity pins: "When the System Notices It Broke" ─────────────
 #
+# The justice-specific continuation is also exercised by:
+#   tests/pins/justice/defect/downstream-withdrawal-and-fresh-correction/expect.pins.nibli
+#   tests/pins/justice/defect/wrong-version-cannot-withdraw-real-relief/expect.pins.nibli
+#   tests/pins/justice/nonresponse/positive/expect.pins.nibli
+#   tests/pins/justice/nonresponse/silence-without-positive-elapsed-evidence/expect.pins.nibli
+#   tests/pins/justice/appeal/request-without-operator-or-previous-permission/expect.pins.nibli
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/14-when-the-system-notices-it-broke.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see

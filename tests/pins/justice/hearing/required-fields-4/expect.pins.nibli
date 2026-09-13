@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold RecordKind, preserving every other premise.
+? complete(JOmit4Row0Record, JusticeFairHearing, JOmit4Row0Case).
+# => FALSE
+# Withhold Adjudicator, preserving every other premise.
+? complete(JOmit4Row1Record, JusticeFairHearing, JOmit4Row1Case).
+# => FALSE
+# Withhold Hearing, preserving every other premise.
+? complete(JOmit4Row2Record, JusticeFairHearing, JOmit4Row2Case).
+# => FALSE
+# Withhold DecisionMaker, preserving every other premise.
+? complete(JOmit4Row3Record, JusticeFairHearing, JOmit4Row3Case).
+# => FALSE
+# Withhold Proof, preserving every other premise.
+? complete(JOmit4Row4Record, JusticeFairHearing, JOmit4Row4Case).
+# => FALSE
+# Withhold Disclosure, preserving every other premise.
+? complete(JOmit4Row5Record, JusticeFairHearing, JOmit4Row5Case).
+# => FALSE

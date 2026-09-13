@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? complete(JRestorationRecord, JusticeVoluntaryRestoration, JRestorationCase).
+# => TRUE
+observe(JRestorationSubject, JRestorationRecord, Refusal, JParticipantChoiceScope).
+? complete(JRestorationRecord, JusticeVoluntaryRestoration, JRestorationCase).
+# => FALSE
+? prisoner(JRestorationSubject).
+# => FALSE
+? forgive(JRestorationSubject, JRestorationOtherParty).
+# => FALSE

@@ -76,16 +76,18 @@ parentage, a family-status penalty, or authority over medical choices. They do n
 supply a clinic, contact process, advocate, inspection, accessible complaint route, or
 performed remedy.
 
-Confinement in the executable model therefore still has almost no texture. A person is
-confined. The model may name Homestay or HighSec, or derive housing without a named
-destination, and no rule describes the conditions inside. The constitutional walls
-make harms unlawful; this record does not show that anyone observes or stops them.
+The record still does not describe an operating home or prison. It now places
+explicit duties on custody: bodily integrity, humane conditions, confidential
+communication, counsel, independent complaint and inspection, and continuing
+care, education and voice. These duties do not wait for a favourable report
+about the institution. A separately reviewed conditions finding identifies
+what the named operator must preserve; it does not show that the conditions
+were provided.
 
-The silence is more complete than "there is no rule about conditions" makes it sound,
-and it can be checked rather than taken on trust. The placement does nothing. Sending
-somebody to high security produces a single sentence — that this person is in high
-security — and no rule anywhere reads it. The facilities are named in the rules that
-send people to them and nowhere else in the design at all.
+The placement itself remains silent. Sending somebody to high security
+produces the conclusion that this person is in high security, and no rule
+reads that destination to provide its conditions. The safeguards bind custody
+without making a building name evidence of compliance.
 
 Watch it in the place you would most expect the building to matter. The shelter
 routes read custody, severity, Homestay eligibility, and the typed PlacementHome fact.
@@ -98,8 +100,8 @@ Homestay availability is therefore a placement input, not evidence of civil resi
 or delivered care. HighSec is only a destination name. The design has decided where
 some people are placed while saying almost nothing about what either place does.
 
-That is not a small omission. It is the difference between a design that has thought
-about imprisonment and one that has thought about the decision to imprison.
+That is not a small omission. Constitutional safeguards name what an
+institution owes; they are not evidence of what happens inside it.
 
 ## And the authority must be current
 
@@ -147,6 +149,15 @@ physical release will happen promptly. The difference is the difference between 
 safety rule and somebody keeping time.
 
 ## What leaving costs
+
+Release review must examine the current lawful ground and end, continuing
+necessity, proportionality and alternatives. It requires independent review,
+counsel, accessible challenge and reasons. It cannot renew custody by itself,
+make administrative delay extend a lawful end, or demand debt payment, work
+or forgiveness as the price of leaving. Housing, care, documents, education,
+work access and community participation must continue across release, with
+private support rather than a new general supervision or risk status. Those
+duties do not physically release anyone or produce a service receipt.
 
 And there is a sting in it that is worth following, because it is the sharpest thing
 this chapter has.

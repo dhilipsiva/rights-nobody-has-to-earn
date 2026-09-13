@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold CurrentDisposition, preserving every other premise.
+? complete(JOmit3Row0Record, JusticeAccessibleProcess, JOmit3Row0Case).
+# => FALSE
+# Withhold Carry, preserving every other premise.
+? complete(JOmit3Row1Record, JusticeAccessibleProcess, JOmit3Row1Case).
+# => FALSE
+# Withhold Independence, preserving every other premise.
+? complete(JOmit3Row2Record, JusticeAccessibleProcess, JOmit3Row2Case).
+# => FALSE
+# Withhold Privacy, preserving every other premise.
+? complete(JOmit3Row3Record, JusticeAccessibleProcess, JOmit3Row3Case).
+# => FALSE
+# Withhold Corridor, preserving every other premise.
+? complete(JOmit3Row4Record, JusticeAccessibleProcess, JOmit3Row4Case).
+# => FALSE
+# Withhold Continuity, preserving every other premise.
+? complete(JOmit3Row5Record, JusticeAccessibleProcess, JOmit3Row5Case).
+# => FALSE

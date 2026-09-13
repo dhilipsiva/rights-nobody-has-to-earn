@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? complete(JNoAuthority0Record, JusticeReleaseContinuity, JNoAuthority0Case).
+# => FALSE
+? complete(JNoAuthority1Record, JusticeReleaseContinuity, JNoAuthority1Case).
+# => FALSE
+? complete(JNoAuthority2Record, JusticeReleaseContinuity, JNoAuthority2Case).
+# => FALSE
+? complete(JNoAuthority3Record, JusticeReleaseContinuity, JNoAuthority3Case).
+# => FALSE
+? complete(JNoAuthority4Record, JusticeReleaseContinuity, JNoAuthority4Case).
+# => FALSE
+? complete(JNoAuthority5Record, JusticeReleaseContinuity, JNoAuthority5Case).
+# => FALSE

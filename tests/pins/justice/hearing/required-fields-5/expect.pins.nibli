@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+
+# Withhold Appeal, preserving every other premise.
+? complete(JOmit5Row0Record, JusticeFairHearing, JOmit5Row0Case).
+# => FALSE
+# Withhold FunctionScope, preserving every other premise.
+? complete(JOmit5Row1Record, JusticeFairHearing, JOmit5Row1Case).
+# => FALSE

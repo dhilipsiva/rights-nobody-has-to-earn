@@ -1,5 +1,18 @@
 # ── Chapter 8 fidelity pins: "What You Are Owed" ─────────────────────────────
 #
+# "A way to be heard" is exercised across the seven named justice domains:
+#   tests/pins/justice/access/positive/expect.pins.nibli
+#   tests/pins/justice/assistance/positive/expect.pins.nibli
+#   tests/pins/justice/hearing/positive/expect.pins.nibli
+#   tests/pins/justice/survivor/positive/expect.pins.nibli
+#   tests/pins/justice/restoration/claimant-Withdrawal/expect.pins.nibli
+#   tests/pins/justice/case-relief/without-actual-court-authority/expect.pins.nibli
+#   tests/pins/justice/general-invalidation/positive/expect.pins.nibli
+#   tests/pins/justice/composition-review/positive/expect.pins.nibli
+#   tests/pins/justice/enforcement/no-general-invalidation/expect.pins.nibli
+#   tests/pins/justice/enforcement/no-custodial-remedy-kind/expect.pins.nibli
+# Field omission, domain, independence and counterfactual cases remain separate.
+#
 # "Rights do not stop at arrival" uses these actual-constitution cases:
 #   tests/pins/mobility/asylum/positive/expect.pins.nibli
 #   tests/pins/mobility/removal/positive/expect.pins.nibli

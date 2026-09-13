@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+
+# Withhold Separation, preserving every other premise.
+? complete(JOmit5Row0Record, JusticeInvestigationProcedure, JOmit5Row0Case).
+# => FALSE
+# Withhold Disclosure, preserving every other premise.
+? complete(JOmit5Row1Record, JusticeInvestigationProcedure, JOmit5Row1Case).
+# => FALSE

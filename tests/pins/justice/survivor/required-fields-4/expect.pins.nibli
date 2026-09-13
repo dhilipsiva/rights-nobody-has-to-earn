@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+# Withhold RecordKind, preserving every other premise.
+? complete(JOmit4Row0Record, JusticeSurvivorProtection, JOmit4Row0Case).
+# => FALSE
+# Withhold Support, preserving every other premise.
+? complete(JOmit4Row1Record, JusticeSurvivorProtection, JOmit4Row1Case).
+# => FALSE
+# Withhold Access, preserving every other premise.
+? complete(JOmit4Row2Record, JusticeSurvivorProtection, JOmit4Row2Case).
+# => FALSE
+# Withhold Protection, preserving every other premise.
+? complete(JOmit4Row3Record, JusticeSurvivorProtection, JOmit4Row3Case).
+# => FALSE
+# Withhold Limits, preserving every other premise.
+? complete(JOmit4Row4Record, JusticeSurvivorProtection, JOmit4Row4Case).
+# => FALSE

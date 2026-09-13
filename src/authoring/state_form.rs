@@ -2601,6 +2601,47 @@ pub(crate) fn integrity_fixture(
     ))
 }
 
+/// Consume an existing court power with every raw witness still joined.
+/// Authoring only: this does not create a holder or bypass its currentness.
+pub(crate) fn court_consumer(
+    context: &Context,
+    number: usize,
+    key: &str,
+) -> Result<Vec<String>, Error> {
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
+    if !matches!(number, 22 | 23 | 25) {
+        return Err(Error::new("not a declared justice court interface"));
+    }
+    let mut atoms = authority_raw_premises(branch).map_err(public_error)?;
+    atoms.push(format!("complete($result, {}, $record)", branch.power()));
+    atoms.push(format!(
+        "authority({}, {}, $record)",
+        branch.authority_holders[0],
+        branch.power()
+    ));
+    Ok(atoms)
+}
+
+/// Actual upstream facts for a justice case, never asserted conclusions.
+pub(crate) fn court_example(
+    context: &Context,
+    number: usize,
+    key: &str,
+    prefix: &str,
+    bindings: &[(&str, &str)],
+) -> Result<(String, BTreeMap<String, String>), Error> {
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
+    let fixture = ground_fixture(branch, prefix, false, &[], bindings).map_err(public_error)?;
+    Ok((
+        fixture.facts.iter().map(|f| format!("{f}.\n")).collect(),
+        fixture.mapping,
+    ))
+}
+
 #[cfg(test)]
 mod integrity_tests {
     use super::*;

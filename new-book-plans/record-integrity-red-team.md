@@ -44,7 +44,7 @@ assurance case, or prove that an institution acts on a finding.
 - **Opposite-failure test:** A proposed companion authorisation must be tested with the release act present and the companion absent; if that state keeps a completed or authorised release from taking effect, the companion is a withholding veto and is refused.
 - **Temporal status:** The same-snapshot release lever remains reproducible. T3 case-bound custody and explicit-release tests are implemented; physical release and clock liveness remain external.
 - **Residual limit:** These tests concern legal conclusions in the model, not physical release, sentence truth, institutional action, or clock progress.
-- **Assurance or repair owner:** `TODO.md::Add the missing non-carceral justice interface`
+- **Assurance or repair owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`
 - **Executable scenarios:** `RS-01`
 
 ### RT-2 — Adulthood
@@ -108,7 +108,7 @@ assurance case, or prove that an institution acts on a finding.
 - **Opposite-failure test:** Every conjunctive remedy must pass neither, each-half-only, both, forged-both, each-half-deleted-after-valid-act, generic-companion-reuse, and pre-clear tests. Raising forgery cost without testing official veto power is insufficient.
 - **Temporal status:** T1/T2 are implemented, but the current forgiveness and relief predicates still lack purpose- and case-bound authority. This harness tests those same-snapshot gaps; script 12 owns temporal lineage and conflict behavior.
 - **Residual limit:** The harness exposes the current shape. The obligations family separately supplies exact legal readers and correction duties, but neither harness proves recipient independence in operation, actual action, or completed remedy.
-- **Assurance or repair owner:** `TODO.md::Add the missing non-carceral justice interface`
+- **Assurance or repair owner:** `new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary`
 - **Executable scenarios:** `RS-07`, `RS-08`, `RS-16`
 
 ## Executed snapshot manifest

@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+
+? complete(JFused0Record, JusticeEstablishedNonresponse, JFused0Case).
+# => FALSE
+? complete(JFused1Record, JusticeEstablishedNonresponse, JFused1Case).
+# => FALSE
+? complete(JFused2Record, JusticeEstablishedNonresponse, JFused2Case).
+# => FALSE
+? complete(JFused3Record, JusticeEstablishedNonresponse, JFused3Case).
+# => FALSE
+? complete(JFused4Record, JusticeEstablishedNonresponse, JFused4Case).
+# => FALSE
+? complete(JFused5Record, JusticeEstablishedNonresponse, JFused5Case).
+# => FALSE
+? complete(JFused6Record, JusticeEstablishedNonresponse, JFused6Case).
+# => FALSE
+? complete(JFused7Record, JusticeEstablishedNonresponse, JFused7Case).
+# => FALSE
+? complete(JFused8Record, JusticeEstablishedNonresponse, JFused8Case).
+# => FALSE
+? complete(JFused9Record, JusticeEstablishedNonresponse, JFused9Case).
+# => FALSE

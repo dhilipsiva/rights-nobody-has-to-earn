@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold Subject, preserving every other premise.
+? complete(JOmit0Row0Record, JusticeReleaseContinuity, JOmit0Row0Case).
+# => FALSE
+# Withhold OtherParty, preserving every other premise.
+? complete(JOmit0Row1Record, JusticeReleaseContinuity, JOmit0Row1Case).
+# => FALSE
+# Withhold Case, preserving every other premise.
+? complete(JOmit0Row2Record, JusticeReleaseContinuity, JOmit0Row2Case).
+# => FALSE
+# Withhold Domain, preserving every other premise.
+? complete(JOmit0Row3Record, JusticeReleaseContinuity, JOmit0Row3Case).
+# => FALSE
+# Withhold SourceVersion, preserving every other premise.
+? complete(JOmit0Row4Record, JusticeReleaseContinuity, JOmit0Row4Case).
+# => FALSE
+# Withhold Epoch, preserving every other premise.
+? complete(JOmit0Row5Record, JusticeReleaseContinuity, JOmit0Row5Case).
+# => FALSE

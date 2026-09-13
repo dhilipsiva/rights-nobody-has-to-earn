@@ -556,10 +556,14 @@ the domain.
 
 - **Civil, criminal, and administrative justice, safety, and repair:** Chapters
   [4](04-the-shield.md), [5](05-voiding.md),
-  [7](07-a-prisoner-is-a-person.md), [11](11-where-people-are-put.md),
+  [7](07-a-prisoner-is-a-person.md), [8](08-what-you-are-owed.md),
+  [11](11-where-people-are-put.md),
   [13](13-the-one-thing-taken.md), and
-  [14](14-when-the-system-notices-it-broke.md). This is the most deeply
-  formalised current domain. Named findings now have independent recipients,
+  [14](14-when-the-system-notices-it-broke.md). These chapters cover evidence,
+  custody, accessible justice procedures and repair. The justice interface
+  includes independent assistance, survivor support, voluntary restoration,
+  court-bound remedies, non-coercive enforcement and release continuity.
+  Named findings have independent recipients,
   action duties, non-response consequences, claimant continuity, individual
   remedies, and separately tracked duties of common-cause correction,
   affected-case re-examination, and recurrence checking. Those are legal

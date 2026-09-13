@@ -1,5 +1,12 @@
 # ── Chapter 13 fidelity pins: "The One Thing Taken" ──────────────────────────
 #
+# Custodial safeguards and release duties do not create a second deprivation:
+#   tests/pins/justice/conditions/positive/expect.pins.nibli
+#   tests/pins/justice/release-review/positive/expect.pins.nibli
+#   tests/pins/justice/continuity/positive/expect.pins.nibli
+#   tests/pins/justice/boundaries/no-person-consequences-or-forged-orders/expect.pins.nibli
+# None supplies physical release, observed conditions or an arrival receipt.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/13-the-one-thing-taken.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see

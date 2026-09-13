@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+# Withhold Jurisdiction, preserving every other premise.
+? complete(JOmit1Row0Record, JusticeCustodialSafeguards, JOmit1Row0Case).
+# => FALSE
+# Withhold LegalScope, preserving every other premise.
+? complete(JOmit1Row1Record, JusticeCustodialSafeguards, JOmit1Row1Case).
+# => FALSE
+# Withhold Window, preserving every other premise.
+? complete(JOmit1Row2Record, JusticeCustodialSafeguards, JOmit1Row2Case).
+# => FALSE
+# Withhold SourceBoundEnd, preserving every other premise.
+? complete(JOmit1Row3Record, JusticeCustodialSafeguards, JOmit1Row3Case).
+# => FALSE
+# Withhold EvidenceRecord, preserving every other premise.
+? complete(JOmit1Row4Record, JusticeCustodialSafeguards, JOmit1Row4Case).
+# => FALSE
+# Withhold Operator, preserving every other premise.
+? complete(JOmit1Row5Record, JusticeCustodialSafeguards, JOmit1Row5Case).
+# => FALSE

@@ -69,7 +69,7 @@
       "authorised_disposition_boundary": "A removed or absent release record is harmless only when an independently reviewable disposition shows that no release occurred or that a prior entry was lawfully corrected without continuing unsupported custody.",
       "opposite_failure_test": "A proposed companion authorisation must be tested with the release act present and the companion absent; if that state keeps a completed or authorised release from taking effect, the companion is a withholding veto and is refused.",
       "residual_limit": "These tests concern legal conclusions in the model, not physical release, sentence truth, institutional action, or clock progress.",
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "temporal_status": "The same-snapshot release lever remains reproducible. T3 case-bound custody and explicit-release tests are implemented; physical release and clock liveness remain external.",
       "scenario_refs": [
         "RS-01"
@@ -180,7 +180,7 @@
       "authorised_disposition_boundary": "Forgiveness may neutralise personal void and loss while retaining the mark and pen restriction; correction of a false mark requires an independently reviewable supersession that names every restored consequence.",
       "opposite_failure_test": "Every conjunctive remedy must pass neither, each-half-only, both, forged-both, each-half-deleted-after-valid-act, generic-companion-reuse, and pre-clear tests. Raising forgery cost without testing official veto power is insufficient.",
       "residual_limit": "The harness exposes the current shape. The obligations family separately supplies exact legal readers and correction duties, but neither harness proves recipient independence in operation, actual action, or completed remedy.",
-      "owner_ref": "TODO.md::Add the missing non-carceral justice interface",
+      "owner_ref": "new-book-plans/book-1-non-carceral-justice-contract.md::Legacy assertion boundary",
       "temporal_status": "T1/T2 are implemented, but the current forgiveness and relief predicates still lack purpose- and case-bound authority. This harness tests those same-snapshot gaps; script 12 owns temporal lineage and conflict behavior.",
       "scenario_refs": [
         "RS-07",

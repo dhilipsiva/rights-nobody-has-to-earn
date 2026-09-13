@@ -557,6 +557,11 @@ but never replaces, this rule.
     conditions through procurement, investment, trade and supply-chain work;
     foreign cooperation and evidence remain named external assumptions.
   - Operate civil, administrative, family, labour, consumer, constitutional and
+    criminal justice under `new-book-plans/book-1-non-carceral-justice-contract.md`.
+    Its independently reviewed process and court-bound remedy findings are not
+    proof of a hearing, authenticated legacy assertion, effective enforcement,
+    physical release, humane conditions or completed remedy.
+  - Operate civil, administrative, family, labour, consumer, constitutional and
     criminal routes; investigation/prosecution/defence/adjudication separation;
     release/reintegration; police/intelligence/military separation and civilian
     control; borders/asylum; treaties, trade and humanitarian coordination.

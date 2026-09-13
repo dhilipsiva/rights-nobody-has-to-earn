@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+# Withhold RecordKind, preserving every other premise.
+? complete(JOmit4Row0Record, JusticeEstablishedNonresponse, JOmit4Row0Case).
+# => FALSE
+# Withhold Requester, preserving every other premise.
+? complete(JOmit4Row1Record, JusticeEstablishedNonresponse, JOmit4Row1Case).
+# => FALSE
+# Withhold ReviewRequest, preserving every other premise.
+? complete(JOmit4Row2Record, JusticeEstablishedNonresponse, JOmit4Row2Case).
+# => FALSE
+# Withhold Nonresponse, preserving every other premise.
+? complete(JOmit4Row3Record, JusticeEstablishedNonresponse, JOmit4Row3Case).
+# => FALSE
+# Withhold AlternateDuty, preserving every other premise.
+? complete(JOmit4Row4Record, JusticeEstablishedNonresponse, JOmit4Row4Case).
+# => FALSE

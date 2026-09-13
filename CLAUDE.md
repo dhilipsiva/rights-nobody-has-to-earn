@@ -57,7 +57,8 @@ measurements and any remaining bottleneck honestly.
 
 Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
-`./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`, and
+`./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
+`./generate.sh justice`, and
 `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
@@ -834,6 +835,20 @@ preferences. Controlling record:
 `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
 
 #### Public safety, defence, emergency, and external power — 2026-08-08
+
+**Non-carceral justice interface — 2026-09-13.** The separate implementation
+contract is `new-book-plans/book-1-non-carceral-justice-contract.md`; explicit
+`justice` authoring supplies accessible procedures, assistance, survivor
+protection, voluntary restoration, actual court-bound relief, non-coercive
+enforcement, appeal, conditions and release continuity. Court consumers retain
+the FSPOW_022/023/025 authority and full raw witnesses and add a justice-local
+identity-conflict guard. A hearing record creates no court, conviction or
+coercive power; restoration does not manufacture forgiveness. The legacy raw
+assertion/withholding findings remain documented, not authenticated or silently
+repaired. `justice-reader-draft.md` retains the chapter 8, 13 and 14 wording,
+session-drafted and author-approved under delegated approval (2026-09-13).
+Operational justice and the separate protective mandates remain outside this
+bounded interface; formal verification results are recorded in its contract.
 
 **The public-safety, defence, emergency, and external-power baselines are
 author-ratified (2026-08-08): separated protective functions + no derogation

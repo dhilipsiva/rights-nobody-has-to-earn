@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+
+# Withhold Mandate, preserving every other premise.
+? complete(JOmit5Row0Record, JusticeChargingProcedure, JOmit5Row0Case).
+# => FALSE
+# Withhold Proof, preserving every other premise.
+? complete(JOmit5Row1Record, JusticeChargingProcedure, JOmit5Row1Case).
+# => FALSE
+# Withhold Separation, preserving every other premise.
+? complete(JOmit5Row2Record, JusticeChargingProcedure, JOmit5Row2Case).
+# => FALSE

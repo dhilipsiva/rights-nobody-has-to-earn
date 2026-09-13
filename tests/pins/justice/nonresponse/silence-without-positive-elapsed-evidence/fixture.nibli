@@ -1,0 +1,93 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(JSilenceAlternate, JAlternateReviewAuthority, JSilenceRecord).
+authorized(JSilenceAuditor, JAuditAuthority, JSilenceRecord).
+authorized(JSilenceEvidence, JEvidenceAuthority, JSilenceRecord).
+authorized(JSilenceReader, JChallengeReaderAuthority, JSilenceRecord).
+authorized(JSilenceReader, JChallengeReaderAuthority, JSilenceTarget).
+authorized(JSilenceReview, JIndependentReviewAuthority, JSilenceRecord).
+authorized(JSilenceSource, JSourceAuthority, JSilenceRecord).
+challenge(JSilenceRequester, JSilenceReader, JSilenceTarget).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceAlternate, JAlternateReaderScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceAuditor, JAuditReaderScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceBasis, JEvidenceRecordScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceCase, JCaseScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceChallenge, JChallengeScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceCorrection, JCorrectionScope).
+observe(JSilenceEvidence, JSilenceRecord, CivilJustice, JDomainScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceEnd, JSourceBoundEndScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceEpoch, JEpochScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceJurisdiction, JJurisdictionScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceOperator, JOperatorScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceOtherParty, JOtherPartyScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceReader, JChallengeReaderScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceRemedy, JRemedyScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceRequester, JRequesterScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceScope, JLegalScopeScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceSubject, JSubjectScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceTarget, JReviewRequestScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceVersion, JSourceVersionScope).
+observe(JSilenceEvidence, JSilenceRecord, JSilenceWindow, JWindowScope).
+observe(JSilenceEvidence, JSilenceRecord, AffirmativeCaseBoundIndependenceRecusalAndConflictReview, JIndependenceScope).
+observe(JSilenceEvidence, JSilenceRecord, CurrentReconciledFinding, JCurrentDispositionScope).
+observe(JSilenceEvidence, JSilenceRecord, FreshExactCaseSourceAndWindowNoAutomaticCarry, JCarryScope).
+observe(JSilenceEvidence, JSilenceRecord, IndependentAlternateUnderSameLimitsNoSilenceAsApproval, JAlternateDutyScope).
+observe(JSilenceEvidence, JSilenceRecord, JusticeEstablishedNonresponse, JRecordKindScope).
+observe(JSilenceEvidence, JSilenceRecord, PreserveRightsEvidenceAndInterimProtectionDuringChallengeCorrectionOrEnd, JContinuityScope).
+observe(JSilenceEvidence, JSilenceRecord, PublicAccessibleReasonsPrivatePurposeBoundEvidenceRetentionAndCorrection, JPrivacyScope).
+observe(JSilenceEvidence, JSilenceRecord, StandingFloorLibertyVoiceEqualityAndEffectiveRemedyPreserved, JCorridorScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceAlternate, JAlternateReaderScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceAuditor, JAuditReaderScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceBasis, JEvidenceRecordScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceCase, JCaseScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceChallenge, JChallengeScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceCorrection, JCorrectionScope).
+observe(JSilenceReview, JSilenceRecord, CivilJustice, JDomainScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceEnd, JSourceBoundEndScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceEpoch, JEpochScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceJurisdiction, JJurisdictionScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceOperator, JOperatorScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceOtherParty, JOtherPartyScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceReader, JChallengeReaderScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceRemedy, JRemedyScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceRequester, JRequesterScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceScope, JLegalScopeScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceSubject, JSubjectScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceTarget, JReviewRequestScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceVersion, JSourceVersionScope).
+observe(JSilenceReview, JSilenceRecord, JSilenceWindow, JWindowScope).
+observe(JSilenceReview, JSilenceRecord, AffirmativeCaseBoundIndependenceRecusalAndConflictReview, JIndependenceScope).
+observe(JSilenceReview, JSilenceRecord, CurrentReconciledFinding, JCurrentDispositionScope).
+observe(JSilenceReview, JSilenceRecord, FreshExactCaseSourceAndWindowNoAutomaticCarry, JCarryScope).
+observe(JSilenceReview, JSilenceRecord, IndependentAlternateUnderSameLimitsNoSilenceAsApproval, JAlternateDutyScope).
+observe(JSilenceReview, JSilenceRecord, JusticeEstablishedNonresponse, JRecordKindScope).
+observe(JSilenceReview, JSilenceRecord, PreserveRightsEvidenceAndInterimProtectionDuringChallengeCorrectionOrEnd, JContinuityScope).
+observe(JSilenceReview, JSilenceRecord, PublicAccessibleReasonsPrivatePurposeBoundEvidenceRetentionAndCorrection, JPrivacyScope).
+observe(JSilenceReview, JSilenceRecord, StandingFloorLibertyVoiceEqualityAndEffectiveRemedyPreserved, JCorridorScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceAlternate, JAlternateReaderScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceAuditor, JAuditReaderScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceBasis, JEvidenceRecordScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceCase, JCaseScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceChallenge, JChallengeScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceCorrection, JCorrectionScope).
+observe(JSilenceSource, JSilenceRecord, CivilJustice, JDomainScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceEnd, JSourceBoundEndScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceEpoch, JEpochScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceJurisdiction, JJurisdictionScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceOperator, JOperatorScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceOtherParty, JOtherPartyScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceReader, JChallengeReaderScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceRemedy, JRemedyScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceRequester, JRequesterScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceScope, JLegalScopeScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceSubject, JSubjectScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceTarget, JReviewRequestScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceVersion, JSourceVersionScope).
+observe(JSilenceSource, JSilenceRecord, JSilenceWindow, JWindowScope).
+observe(JSilenceSource, JSilenceRecord, AffirmativeCaseBoundIndependenceRecusalAndConflictReview, JIndependenceScope).
+observe(JSilenceSource, JSilenceRecord, CurrentReconciledFinding, JCurrentDispositionScope).
+observe(JSilenceSource, JSilenceRecord, FreshExactCaseSourceAndWindowNoAutomaticCarry, JCarryScope).
+observe(JSilenceSource, JSilenceRecord, IndependentAlternateUnderSameLimitsNoSilenceAsApproval, JAlternateDutyScope).
+observe(JSilenceSource, JSilenceRecord, JusticeEstablishedNonresponse, JRecordKindScope).
+observe(JSilenceSource, JSilenceRecord, PreserveRightsEvidenceAndInterimProtectionDuringChallengeCorrectionOrEnd, JContinuityScope).
+observe(JSilenceSource, JSilenceRecord, PublicAccessibleReasonsPrivatePurposeBoundEvidenceRetentionAndCorrection, JPrivacyScope).
+observe(JSilenceSource, JSilenceRecord, StandingFloorLibertyVoiceEqualityAndEffectiveRemedyPreserved, JCorridorScope).

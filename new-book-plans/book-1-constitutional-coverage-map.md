@@ -92,6 +92,24 @@ contradiction scans and no findings. The exact Book 1 additions preserved in
 `mobility-reader-draft.md` are inserted in chapters 8 and 9, session-drafted
 and author-approved under delegated approval (2026-09-13).
 
+## Non-carceral justice implementation — 2026-09-13
+
+[Justice beyond custody](book-1-non-carceral-justice-contract.md) adds accessible
+case procedures across civil, administrative, family, labour, consumer,
+constitutional and criminal justice. Assistance, survivor protection,
+voluntary restoration, actual ordinary/constitutional/alternate court powers,
+non-coercive enforcement, appeal, correction, conditions and release continuity
+have separate effects. The chapter 8, 13 and 14 projections use delegated
+author approval; `justice-reader-draft.md` preserves the wording.
+
+These rules neither create holders nor supply arrest, search, seizure,
+detention, force or public-safety mandates. They do not authenticate legacy
+`free`, `forgive`, `judge`, `clear`, injury or placement assertions, determine
+external truth, deliver counsel, operate courts or complete remedies. The
+contract keeps those legacy findings visible and records focused and full
+verification separately. The historical rows below are superseded only for
+this bounded legal interface, not for operation or the remaining safety work.
+
 ## 1. Ratified mandate
 
 The settled specification has a narrow, verified kernel: equal standing, named
