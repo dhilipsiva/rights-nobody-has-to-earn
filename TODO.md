@@ -316,24 +316,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Build amendment enactment and effective-version assurance outside the
-  reasoning engine.**
-  - Bind exact base/candidate byte identity and bounded semantic effects to a
-    supplied result admitted through the landed bounded result-certificate
-    interface. Keep corridor compatibility separate from political consent.
-  - Distinguish that certified candidate from publication, uniquely effective
-    deployment, and later rollback or supersession. The current amendment audit
-    manually applies candidates and proves only named bounded consequences.
-  - The audited specification defines exact-source identity and the successor,
-    conflict, replay, and remedy contract; Book 1 renders that contract. A host
-    harness and Book 2 must authenticate digests/signatures, store and publish
-    versions, select/deploy the effective source, preserve rollback evidence, and
-    launch fresh reasoner sessions against that exact version.
-  - Test stale base, replay, divergent candidates, unauthorised vocabulary change,
-    semantic mismatch, rollback, and query against the wrong source. Nibli may
-    reason about supplied version facts but may not be credited with authenticating,
-    publishing, selecting, or deploying them.
-
 - [ ] **Complete mobility, collective/plurality rights, and external relations.**
   - Cover newcomers, migrants, refugees, stateless people, borders, asylum,
     expulsion, extradition, accessible language and process, and continuity of
@@ -1589,6 +1571,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh obligations
 ./generate.sh integrity
 ./generate.sh statistics
+./generate.sh amendment
 ./generate.sh spine
 ~~~
 

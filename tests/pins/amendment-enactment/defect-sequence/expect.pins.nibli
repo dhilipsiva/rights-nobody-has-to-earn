@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? complete(EnactRecord, AmendmentEffectiveVersion, EnactCandidate).
+# => TRUE
+authorized(EnactBinder, AmendmentSourceBindingAuthority, EnactRecord).
+authorized(EnactReview, IndependentAmendmentEffectReviewAuthority, EnactRecord).
+authorized(EnactReader, AmendmentChallengeReaderAuthority, EnactRecord).
+observe(EnactBinder, EnactRecord, EnactCandidate, AmendmentCandidateScope).
+observe(EnactReview, EnactRecord, EnactCandidate, AmendmentCandidateScope).
+observe(EnactBinder, EnactRecord, EnactOperator, AmendmentOperatorScope).
+observe(EnactReview, EnactRecord, EnactOperator, AmendmentOperatorScope).
+observe(EnactBinder, EnactRecord, EnactReader, AmendmentChallengeReaderScope).
+observe(EnactReview, EnactRecord, EnactReader, AmendmentChallengeReaderScope).
+observe(EnactBinder, EnactRecord, EnactEnd, AmendmentReviewEndScope).
+observe(EnactReview, EnactRecord, EnactEnd, AmendmentReviewEndScope).
+observe(EnactBinder, EnactRecord, CurrentIndependentSourceDefect, AmendmentDefectDispositionScope).
+observe(EnactReview, EnactRecord, CurrentIndependentSourceDefect, AmendmentDefectDispositionScope).
+observe(EnactBinder, EnactRecord, PreserveEvidenceCorrectUseAndPermitFinalReview, AmendmentDefectRemedyScope).
+observe(EnactReview, EnactRecord, PreserveEvidenceCorrectUseAndPermitFinalReview, AmendmentDefectRemedyScope).
+? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
+# => FALSE
+? complete(EnactRecord, AmendmentPublishedCandidate, EnactCandidate).
+# => FALSE
+? complete(EnactRecord, AmendmentEffectiveVersion, EnactCandidate).
+# => FALSE
+? contradict(EnactRecord, AmendmentSourceAuthorization).
+# => TRUE
+? obliged(EnactOperator, PreserveAmendmentHistoryAndCorrectAffectedUse, EnactRecord).
+# => TRUE
+? entitled(Adam, event { eats() }).
+# => TRUE
+? false(Jala).
+# => FALSE

@@ -19229,6 +19229,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19259,6 +19267,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19490,6 +19506,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19520,6 +19544,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19550,6 +19582,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19794,6 +19834,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19824,6 +19872,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19854,6 +19910,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [
@@ -19884,6 +19948,14 @@
               [
                 "$amendment_configuration",
                 "AmendmentConfigurationScope"
+              ],
+              [
+                "$amendment_base",
+                "AmendmentBaseScope"
+              ],
+              [
+                "$amendment_candidate",
+                "AmendmentCandidateScope"
               ]
             ],
             "identity": [

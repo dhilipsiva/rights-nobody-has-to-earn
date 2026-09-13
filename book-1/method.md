@@ -483,6 +483,15 @@ label verdict and the candidate mutation meet only because the test author
 placed them beside each other. The suite exposes that boundary. It does not
 close it or add a new withholding gate.
 
+The separate amendment-enactment cases join the current state-form result
+certificate to supplied exact-change, effect-review, publication and selection
+records. The external host model compares source bytes directly, tests bounded
+effects in fresh sessions, and exercises stale-base, replay, conflict, rollback
+and wrong-source failures. Those host checks are separate development tests,
+not additional gates in routine book verification. The model acts only on
+trusted local input and in-memory state; it authenticates no signature and
+performs no real publication or deployment.
+
 Placement has its own cases because a walk through named people cannot prove
 that every combination in the declared routing matrix was visited. The fixtures
 in `tests/pins/placement/` cover the product of subject state, severity, legacy

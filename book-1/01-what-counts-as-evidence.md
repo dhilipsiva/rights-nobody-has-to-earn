@@ -308,7 +308,7 @@ paragraph is about what would.
 So the list is the most sensitive thing in the design. Which raises the question of
 what protects it.
 
-**Nothing inside this record protects the list's meaning.** Three names sit on an amendment register. A docketed proposal that
+**The record does not interpret the list's meaning for itself.** Three names sit on an amendment register. A docketed proposal that
 declares one of those names as its target is marked dead regardless of how many people
 vote for it: the name for the floor, the name for the rule that a prisoner is still a
 person, and the name for the register itself.
@@ -341,6 +341,12 @@ An unapproved or unowned widening remains the softest place to push. Reviewed
 ownership proves that this repository expected a sentence and knows what
 decision it came from. It does not prove that a society approved the sentence,
 that its premises are true, or that a future source cannot change it.
+
+The exact-change rules add a further condition: a proposed vocabulary change
+must be explicitly reviewed as part of the same text that received political
+consent and independent compatibility review. That is a condition on the
+supplied evidence, not a discovery of what every new word will do. It does
+not make an unapproved source impossible to install.
 
 ## The other way in
 

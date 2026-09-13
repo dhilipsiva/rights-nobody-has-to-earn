@@ -7,6 +7,17 @@
 > membership rules. It adds no predicate, rule, fact, pin, institution in law,
 > chapter, release, or claim of present constitutional coverage.
 
+**Amendment enactment implementation update, 2026-09-13.** The original ruling
+and the completed state-form implementation retain their thresholds and limits.
+FSPOW_037's result-certificate configurations now bind the exact base and
+candidate identities. The subsequent source, publication, effective-version,
+conflict, replay and remedy contract is
+[`book-1-amendment-enactment-contract.md`](book-1-amendment-enactment-contract.md).
+It supersedes this document's historical handoff to the amendment-assurance
+TODO. Real authentication and operation remain Book 2; the local host is a
+trusted-input, in-memory reference model. The exact chapter 1/chapter 12/method
+updates were separately author-approved on 2026-09-13.
+
 ## 1. Decision
 
 Book 1's destination is a **federal constitutional parliamentary republic**.

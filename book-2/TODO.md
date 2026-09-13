@@ -386,6 +386,16 @@ but never replaces, this rule.
     record/office transfer, budget continuity, federal coordination, equalisation,
     portability, and peaceful transfer. A modelled clock or workflow is operational
     evidence, not a Book 1 derivation.
+    `new-book-plans/book-1-amendment-enactment-contract.md` now defines the
+    exact-base/candidate, successor, conflict, replay, challenge and remedy
+    boundary. The separate host harness exercises trusted local input and
+    in-memory transitions only. This item owns digest/signature authentication
+    and key custody, durable atomic version storage, public availability,
+    unique effective deployment and acknowledgement, rollback evidence,
+    cross-process conflict/crash recovery, clock evidence and fresh reasoner
+    sessions against the exact effective source. A failed candidate cannot
+    authorize itself or silently activate old bytes; a version change does not
+    automatically undo individual judgments or obligations.
   - Operate campaign finance, lobbying, procurement, appointments, conflicts,
     patronage/nepotism, corruption and information-manipulation controls; and
     independent census/sampling/planning data.

@@ -52,6 +52,25 @@ chapter 1, with supporting cases mapped in its paired pins. Its supply is
 the approved wording. Neither the formal interface nor the reader section
 establishes operational delivery.
 
+## Amendment enactment implementation update — 2026-09-13
+
+[Amendment enactment](book-1-amendment-enactment-contract.md) supplies the
+exact-base/candidate, political-result, independent-effect/corridor,
+publication, effective-selection, conflict, challenge, correction and alternate
+review contract. Its holders remain the state-form amendment holders; the
+new bounded functions act only on the named source transition. FSPOW_037's
+result pipeline now carries the exact base and candidate through its
+configuration and certificate records. Missing evidence withholds the affected
+permission, not personal rights. The host preserves its existing pointer on a
+rejected change; FALSE does not itself derive constitutional continuity.
+
+The formal cases and separate in-memory host tests supersede historical
+source-transition absence descriptions below only to that bounded extent.
+Real authentication, publication, deployment, clocks and recovery remain
+Book 2; the host does not establish them. The author approved the exact reader
+edits on 2026-09-13 and they are inserted unchanged in chapters 1 and 12 and
+the method (`session-drafted, author-approved`).
+
 ## 1. Ratified mandate
 
 The settled specification has a narrow, verified kernel: equal standing, named

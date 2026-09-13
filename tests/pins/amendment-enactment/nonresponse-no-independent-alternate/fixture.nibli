@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(EnactWitness, AmendmentNonresponseEvidenceAuthority, EnactRequest).
+authorized(EnactReview, IndependentAmendmentNonresponseReviewAuthority, EnactRequest).
+authorized(EnactReader, AmendmentChallengeReaderAuthority, EnactRequest).
+authorized(EnactReader, AmendmentAlternateReaderAuthority, EnactRequest).
+challenge(EnactRequester, EnactReader, EnactRequest).
+observe(EnactWitness, EnactRequest, EnactReader, AmendmentNonrespondingReaderScope).
+observe(EnactReview, EnactRequest, EnactReader, AmendmentNonrespondingReaderScope).
+observe(EnactWitness, EnactRequest, EnactReader, AmendmentAlternateReaderScope).
+observe(EnactReview, EnactRequest, EnactReader, AmendmentAlternateReaderScope).
+observe(EnactWitness, EnactRequest, EnactTarget, AmendmentChallengeTargetScope).
+observe(EnactReview, EnactRequest, EnactTarget, AmendmentChallengeTargetScope).
+observe(EnactWitness, EnactRequest, EnactDeadline, AmendmentNonresponseDeadlineScope).
+observe(EnactReview, EnactRequest, EnactDeadline, AmendmentNonresponseDeadlineScope).
+observe(EnactWitness, EnactRequest, NoticeOpportunityAndDeadlineFailureEstablished, AmendmentNonresponseDispositionScope).
+observe(EnactReview, EnactRequest, NoticeOpportunityAndDeadlineFailureEstablished, AmendmentNonresponseDispositionScope).
+observe(EnactWitness, EnactRequest, CurrentIndependentNonresponseFinding, AmendmentNonresponseCurrentScope).
+observe(EnactReview, EnactRequest, CurrentIndependentNonresponseFinding, AmendmentNonresponseCurrentScope).

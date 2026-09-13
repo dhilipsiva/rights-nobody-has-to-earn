@@ -1,5 +1,41 @@
 {
   "bases": {
+    "amendment-candidate-splice": {
+      "base": "live",
+      "edits": [
+        {
+          "after": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate).",
+          "before": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate)."
+        }
+      ]
+    },
+    "amendment-counterfactual-no-consent": {
+      "base": "live",
+      "edits": [
+        {
+          "after": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate).",
+          "before": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate)."
+        }
+      ]
+    },
+    "amendment-counterfactual-no-effect-match": {
+      "base": "live",
+      "edits": [
+        {
+          "after": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate).",
+          "before": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate)."
+        }
+      ]
+    },
+    "amendment-self-review": {
+      "base": "live",
+      "edits": [
+        {
+          "after": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate).",
+          "before": "all $alternate: all $base: all $binder: all $candidate: all $certificate: all $challenge: all $consent_record: all $consent_result: all $consent_source: all $correction: all $effects: all $end: all $jurisdiction: all $legal_scope: all $operator: all $proposal: all $reader: all $record: all $remedy: all $review: all $transition: all $vocabulary: authorized($binder, AmendmentSourceBindingAuthority, $record) & authorized($review, IndependentAmendmentEffectReviewAuthority, $record) & authorized($reader, AmendmentChallengeReaderAuthority, $record) & authorized($alternate, AmendmentAlternateReaderAuthority, $record) & ~($binder = $review) & ~related($record, AmendmentRecordAmbiguity) & ~contradict($record, AmendmentSourceAuthorization) & ~($base = $candidate) & member($vocabulary, AmendmentVocabularyDisposition) & ~($binder = $operator) & ~($binder = $reader) & ~($binder = $alternate) & ~($review = $operator) & ~($review = $reader) & ~($review = $alternate) & ~($operator = $reader) & ~($operator = $alternate) & ~($reader = $alternate) & observe($binder, $record, $base, AmendmentBaseScope) & observe($review, $record, $base, AmendmentBaseScope) & observe($binder, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($review, $record, $base, AmendmentObservedEffectiveBaseScope) & observe($binder, $record, $candidate, AmendmentCandidateScope) & observe($review, $record, $candidate, AmendmentCandidateScope) & observe($binder, $record, $transition, AmendmentTransitionScope) & observe($review, $record, $transition, AmendmentTransitionScope) & observe($binder, $record, $proposal, AmendmentProposalScope) & observe($review, $record, $proposal, AmendmentProposalScope) & observe($binder, $record, $consent_record, AmendmentConsentRecordScope) & observe($review, $record, $consent_record, AmendmentConsentRecordScope) & observe($binder, $record, $consent_result, AmendmentConsentResultScope) & observe($review, $record, $consent_result, AmendmentConsentResultScope) & observe($binder, $record, $certificate, AmendmentConsentCertificateScope) & observe($review, $record, $certificate, AmendmentConsentCertificateScope) & observe($binder, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($review, $record, $jurisdiction, AmendmentJurisdictionScope) & observe($binder, $record, $legal_scope, AmendmentLegalScope) & observe($review, $record, $legal_scope, AmendmentLegalScope) & observe($binder, $record, $effects, AmendmentEffectReviewScope) & observe($review, $record, $effects, AmendmentEffectReviewScope) & observe($binder, $record, $operator, AmendmentOperatorScope) & observe($review, $record, $operator, AmendmentOperatorScope) & observe($binder, $record, $reader, AmendmentChallengeReaderScope) & observe($review, $record, $reader, AmendmentChallengeReaderScope) & observe($binder, $record, $alternate, AmendmentAlternateReaderScope) & observe($review, $record, $alternate, AmendmentAlternateReaderScope) & observe($binder, $record, $challenge, AmendmentChallengeScope) & observe($review, $record, $challenge, AmendmentChallengeScope) & observe($binder, $record, $correction, AmendmentCorrectionScope) & observe($review, $record, $correction, AmendmentCorrectionScope) & observe($binder, $record, $remedy, AmendmentRemedyScope) & observe($review, $record, $remedy, AmendmentRemedyScope) & observe($binder, $record, $end, AmendmentReviewEndScope) & observe($review, $record, $end, AmendmentReviewEndScope) & observe($binder, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($review, $record, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope) & observe($binder, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($review, $record, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope) & observe($binder, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope) & observe($binder, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($review, $record, $vocabulary, AmendmentVocabularyDispositionScope) & observe($binder, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($review, $record, CurrentReconciledReview, AmendmentCurrentReviewScope) & observe($binder, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($review, $record, FreshUnconsumedTransition, AmendmentReplayDispositionScope) & observe($binder, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($review, $record, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope) & observe($binder, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & observe($review, $record, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope) & complete($consent_result, FSPOW_037, $consent_record) & authority(FSBOD_02, FSPOW_037, $consent_record) & authorized($consent_source, StateFormSourceAuthority, $consent_record) & observe($consent_source, $consent_record, $base, SourceVersionScope) & observe($consent_source, $consent_record, $consent_result, ResultScope) & observe($consent_source, $consent_record, $jurisdiction, JurisdictionScope) & observe($consent_source, $consent_record, $legal_scope, AuthorityScope) & observe($consent_source, $consent_result, $proposal, AmendmentProposalScope) & observe($consent_source, $consent_result, $certificate, ResultCertificateScope) & observe($consent_source, $consent_result, $base, AmendmentBaseScope) & observe($consent_source, $consent_result, $candidate, AmendmentCandidateScope) & ~related($review, $consent_record, AmendmentConsentOperator) & ~($review = FSBOD_01) & ~($review = FSBOD_02) & ~($review = FSBOD_03) -> complete($record, AmendmentCertifiedCandidate, $candidate)."
+        }
+      ]
+    },
     "counterfactual/no-automatic-adulthood": {
       "base": "live",
       "edits": [
@@ -15129,6 +15165,702 @@
       "id": "statistics/data-wall/forged-conclusions",
       "pins": [
         "tests/pins/statistics/data-wall/forged-conclusions/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/certified/fixture.nibli"
+      ],
+      "id": "amendment-enactment/certified",
+      "pins": [
+        "tests/pins/amendment-enactment/certified/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/published/fixture.nibli"
+      ],
+      "id": "amendment-enactment/published",
+      "pins": [
+        "tests/pins/amendment-enactment/published/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/effective/fixture.nibli"
+      ],
+      "id": "amendment-enactment/effective",
+      "pins": [
+        "tests/pins/amendment-enactment/effective/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentBaseScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentBaseScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentBaseScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentObservedEffectiveBaseScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentObservedEffectiveBaseScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentObservedEffectiveBaseScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentCandidateScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentCandidateScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentCandidateScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentConsentCertificateScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentConsentCertificateScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentConsentCertificateScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentEffectReviewScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentEffectReviewScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentEffectReviewScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentByteIdentityScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentByteIdentityScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentByteIdentityScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentEffectDispositionScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentEffectDispositionScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentEffectDispositionScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentCompatibilityScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentCompatibilityScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentCompatibilityScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentVocabularyDispositionScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentVocabularyDispositionScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentVocabularyDispositionScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentCurrentReviewScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentCurrentReviewScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentCurrentReviewScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentReplayDispositionScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentReplayDispositionScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentReplayDispositionScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentFinalReviewScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentFinalReviewScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentFinalReviewScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/without-AmendmentConsequenceLimitScope/fixture.nibli"
+      ],
+      "id": "amendment-enactment/without-AmendmentConsequenceLimitScope",
+      "pins": [
+        "tests/pins/amendment-enactment/without-AmendmentConsequenceLimitScope/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/stale-base/fixture.nibli"
+      ],
+      "id": "amendment-enactment/stale-base",
+      "pins": [
+        "tests/pins/amendment-enactment/stale-base/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/replay/fixture.nibli"
+      ],
+      "id": "amendment-enactment/replay",
+      "pins": [
+        "tests/pins/amendment-enactment/replay/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/semantic-mismatch/fixture.nibli"
+      ],
+      "id": "amendment-enactment/semantic-mismatch",
+      "pins": [
+        "tests/pins/amendment-enactment/semantic-mismatch/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/incompatible/fixture.nibli"
+      ],
+      "id": "amendment-enactment/incompatible",
+      "pins": [
+        "tests/pins/amendment-enactment/incompatible/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/unauthorized-vocabulary/fixture.nibli"
+      ],
+      "id": "amendment-enactment/unauthorized-vocabulary",
+      "pins": [
+        "tests/pins/amendment-enactment/unauthorized-vocabulary/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/wrong-proposal/fixture.nibli"
+      ],
+      "id": "amendment-enactment/wrong-proposal",
+      "pins": [
+        "tests/pins/amendment-enactment/wrong-proposal/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/wrong-certificate/fixture.nibli"
+      ],
+      "id": "amendment-enactment/wrong-certificate",
+      "pins": [
+        "tests/pins/amendment-enactment/wrong-certificate/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/self-review/fixture.nibli"
+      ],
+      "id": "amendment-enactment/self-review",
+      "pins": [
+        "tests/pins/amendment-enactment/self-review/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/reviewed-vocabulary/fixture.nibli"
+      ],
+      "id": "amendment-enactment/reviewed-vocabulary",
+      "pins": [
+        "tests/pins/amendment-enactment/reviewed-vocabulary/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/candidate-not-consented/fixture.nibli"
+      ],
+      "id": "amendment-enactment/candidate-not-consented",
+      "pins": [
+        "tests/pins/amendment-enactment/candidate-not-consented/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/result-service-as-effect-reviewer/fixture.nibli"
+      ],
+      "id": "amendment-enactment/result-service-as-effect-reviewer",
+      "pins": [
+        "tests/pins/amendment-enactment/result-service-as-effect-reviewer/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/assembly-as-effect-reviewer/fixture.nibli"
+      ],
+      "id": "amendment-enactment/assembly-as-effect-reviewer",
+      "pins": [
+        "tests/pins/amendment-enactment/assembly-as-effect-reviewer/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/political-result-not-source-bound/fixture.nibli"
+      ],
+      "id": "amendment-enactment/political-result-not-source-bound",
+      "pins": [
+        "tests/pins/amendment-enactment/political-result-not-source-bound/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/no-political-consent/fixture.nibli"
+      ],
+      "id": "amendment-enactment/no-political-consent",
+      "pins": [
+        "tests/pins/amendment-enactment/no-political-consent/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/upstream-proposal-splice/fixture.nibli"
+      ],
+      "id": "amendment-enactment/upstream-proposal-splice",
+      "pins": [
+        "tests/pins/amendment-enactment/upstream-proposal-splice/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/upstream-certificate-splice/fixture.nibli"
+      ],
+      "id": "amendment-enactment/upstream-certificate-splice",
+      "pins": [
+        "tests/pins/amendment-enactment/upstream-certificate-splice/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/upstream-candidate-splice/fixture.nibli"
+      ],
+      "id": "amendment-enactment/upstream-candidate-splice",
+      "pins": [
+        "tests/pins/amendment-enactment/upstream-candidate-splice/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/incomplete-political-certificate/fixture.nibli"
+      ],
+      "id": "amendment-enactment/incomplete-political-certificate",
+      "pins": [
+        "tests/pins/amendment-enactment/incomplete-political-certificate/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/directly_regional_settlement_amendment/fixture.nibli"
+      ],
+      "id": "amendment-enactment/directly_regional_settlement_amendment",
+      "pins": [
+        "tests/pins/amendment-enactment/directly_regional_settlement_amendment/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/competence_boundary_amendment/fixture.nibli"
+      ],
+      "id": "amendment-enactment/competence_boundary_amendment",
+      "pins": [
+        "tests/pins/amendment-enactment/competence_boundary_amendment/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/divergent-candidate-record/fixture.nibli"
+      ],
+      "id": "amendment-enactment/divergent-candidate-record",
+      "pins": [
+        "tests/pins/amendment-enactment/divergent-candidate-record/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/duplicate-transition-record/fixture.nibli"
+      ],
+      "id": "amendment-enactment/duplicate-transition-record",
+      "pins": [
+        "tests/pins/amendment-enactment/duplicate-transition-record/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/unauthorized-AmendmentSourceBindingAuthority/fixture.nibli"
+      ],
+      "id": "amendment-enactment/unauthorized-AmendmentSourceBindingAuthority",
+      "pins": [
+        "tests/pins/amendment-enactment/unauthorized-AmendmentSourceBindingAuthority/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/unauthorized-IndependentAmendmentEffectReviewAuthority/fixture.nibli"
+      ],
+      "id": "amendment-enactment/unauthorized-IndependentAmendmentEffectReviewAuthority",
+      "pins": [
+        "tests/pins/amendment-enactment/unauthorized-IndependentAmendmentEffectReviewAuthority/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/unauthorized-AmendmentChallengeReaderAuthority/fixture.nibli"
+      ],
+      "id": "amendment-enactment/unauthorized-AmendmentChallengeReaderAuthority",
+      "pins": [
+        "tests/pins/amendment-enactment/unauthorized-AmendmentChallengeReaderAuthority/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/unauthorized-AmendmentAlternateReaderAuthority/fixture.nibli"
+      ],
+      "id": "amendment-enactment/unauthorized-AmendmentAlternateReaderAuthority",
+      "pins": [
+        "tests/pins/amendment-enactment/unauthorized-AmendmentAlternateReaderAuthority/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/wrong-publication/fixture.nibli"
+      ],
+      "id": "amendment-enactment/wrong-publication",
+      "pins": [
+        "tests/pins/amendment-enactment/wrong-publication/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/wrong-selected-base/fixture.nibli"
+      ],
+      "id": "amendment-enactment/wrong-selected-base",
+      "pins": [
+        "tests/pins/amendment-enactment/wrong-selected-base/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/superseded/fixture.nibli"
+      ],
+      "id": "amendment-enactment/superseded",
+      "pins": [
+        "tests/pins/amendment-enactment/superseded/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/competing-selection/fixture.nibli"
+      ],
+      "id": "amendment-enactment/competing-selection",
+      "pins": [
+        "tests/pins/amendment-enactment/competing-selection/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/defect-sequence/fixture.nibli"
+      ],
+      "id": "amendment-enactment/defect-sequence",
+      "pins": [
+        "tests/pins/amendment-enactment/defect-sequence/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/nonresponse-sequence/fixture.nibli"
+      ],
+      "id": "amendment-enactment/nonresponse-sequence",
+      "pins": [
+        "tests/pins/amendment-enactment/nonresponse-sequence/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/nonresponse-positive/fixture.nibli"
+      ],
+      "id": "amendment-enactment/nonresponse-positive",
+      "pins": [
+        "tests/pins/amendment-enactment/nonresponse-positive/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/nonresponse-not-current/fixture.nibli"
+      ],
+      "id": "amendment-enactment/nonresponse-not-current",
+      "pins": [
+        "tests/pins/amendment-enactment/nonresponse-not-current/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/nonresponse-no-deadline/fixture.nibli"
+      ],
+      "id": "amendment-enactment/nonresponse-no-deadline",
+      "pins": [
+        "tests/pins/amendment-enactment/nonresponse-no-deadline/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/nonresponse-self-review/fixture.nibli"
+      ],
+      "id": "amendment-enactment/nonresponse-self-review",
+      "pins": [
+        "tests/pins/amendment-enactment/nonresponse-self-review/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/nonresponse-no-independent-alternate/fixture.nibli"
+      ],
+      "id": "amendment-enactment/nonresponse-no-independent-alternate",
+      "pins": [
+        "tests/pins/amendment-enactment/nonresponse-no-independent-alternate/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "amendment-self-review",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/counterfactual-self-review/fixture.nibli"
+      ],
+      "id": "amendment-enactment/counterfactual-self-review",
+      "pins": [
+        "tests/pins/amendment-enactment/counterfactual-self-review/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "amendment-counterfactual-no-consent",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/counterfactual-no-consent/fixture.nibli"
+      ],
+      "id": "amendment-enactment/counterfactual-no-consent",
+      "pins": [
+        "tests/pins/amendment-enactment/counterfactual-no-consent/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "live",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/effect-review-missing/fixture.nibli"
+      ],
+      "id": "amendment-enactment/effect-review-missing",
+      "pins": [
+        "tests/pins/amendment-enactment/effect-review-missing/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "amendment-counterfactual-no-effect-match",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/counterfactual-no-effect-match/fixture.nibli"
+      ],
+      "id": "amendment-enactment/counterfactual-no-effect-match",
+      "pins": [
+        "tests/pins/amendment-enactment/counterfactual-no-effect-match/expect.pins.nibli"
+      ],
+      "scan": true
+    },
+    {
+      "base": "amendment-candidate-splice",
+      "edits": [],
+      "fixtures": [
+        "tests/pins/amendment-enactment/counterfactual-candidate-splice/fixture.nibli"
+      ],
+      "id": "amendment-enactment/counterfactual-candidate-splice",
+      "pins": [
+        "tests/pins/amendment-enactment/counterfactual-candidate-splice/expect.pins.nibli"
       ],
       "scan": true
     }

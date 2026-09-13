@@ -2451,6 +2451,35 @@ fn byte_balanced_pin_slices(
     Ok(slices)
 }
 
+/// Author a real FSPOW_037 fixture for the downstream exact-source contract.
+/// Only admitted observations/authorizations are exported, never conclusions.
+pub(crate) fn amendment_example(
+    context: &Context,
+    key: &str,
+) -> Result<(String, BTreeMap<String, String>), Error> {
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let branch = branch_lookup(&source.branches, 37, key).map_err(public_error)?;
+    let fixture = ground_fixture(
+        branch,
+        "EnactConsent",
+        false,
+        &[],
+        &[
+            ("$version", "EnactBase"),
+            ("$amendment_base", "EnactBase"),
+            ("$amendment_candidate", "EnactCandidate"),
+            ("$jurisdiction", "EnactJurisdiction"),
+            ("$legal_scope", "EnactLegalScope"),
+        ],
+    )
+    .map_err(public_error)?;
+    Ok((
+        fixture.facts.iter().map(|s| format!("{s}.\n")).collect(),
+        fixture.mapping,
+    ))
+}
+
 pub(crate) fn generate(
     context: &Context,
     export: &mut crate::authoring::Export,

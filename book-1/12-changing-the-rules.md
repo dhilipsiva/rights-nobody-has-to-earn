@@ -1,8 +1,8 @@
 # Changing the Rules
 
 A society that cannot change its rules is not stable, it is brittle. This record
-contains two different change interfaces, and confusing them would make both
-look stronger than they are.
+contains distinct change interfaces, and confusing them would make them look
+stronger than they are.
 
 The older route can decide which proposals receive the words *becomes law*. An
 assembly proposes a change, the electorate approves it, and — unless another
@@ -30,9 +30,10 @@ not prove the count, prove that the roster was complete, discover an omitted
 submission or competing certificate, or decide for themselves that the record
 is stale.
 
-The resulting conclusion is bounded current constitutional authority. It does
-not authenticate the submissions, identify the exact source bytes, publish or
-deploy them, or make one constitutional version become another.
+The resulting conclusion is bounded current constitutional authority. That
+conclusion alone does not authenticate the submissions, identify the exact
+source text, publish or deploy it, or make one constitutional version become
+another. Those connections require a separate exact-change record.
 
 The economic constitution sits inside the same distinction. It entrenches no
 single ownership form, provider mix, market share, profit, bailout, immunity, or
@@ -208,8 +209,10 @@ self-authenticating or self-applying.
 
 The recorded label verdict is real. The separate state-form amendment authority
 is also a real bounded conclusion when every positive current premise is
-supplied. Protection of the exact bytes, and proof that a lawful source change
-actually took effect, are not established.
+supplied. The exact-change rules now connect that authority to a reviewed
+candidate and distinguish it from publication and the version in effect.
+These conclusions remain conditional on supplied evidence; they do not make
+the source authenticate or apply itself.
 
 **The check is self-declared.** An amendment is caught because it says what it
 intends to adjust. Propose one that declares no target at all, and there is nothing
@@ -225,27 +228,44 @@ token: the entitlement disappears while the separate protection against imprison
 for lacking food still holds. A structural wall can survive while the promise behind
 it is gone.
 
-Those tests manually apply candidate source changes. They do not show that the law
-label caused the changes; they show that this record has no fact connecting a declared
-target, the exact proposed text, its effects, and the version that takes effect. Even a
-proposal honestly declaring a protected name can be marked dead while somebody hands
-the machinery a source in which the protected line is already missing.
+Those tests manually apply candidate source changes. They do not show that the
+law label caused the changes. They expose the older route's missing connection
+between the declared target and what the changed source does. Even a proposal
+honestly declaring a protected name can be marked dead while somebody hands
+the machinery a source in which the protected line is already missing. The
+new exact-change route does not turn that older label into authority.
 
 **Nothing happens when something receives the older law label.** The machinery
 determines which proposals receive it. That determination then sits there. No
 other rule consults it, changes behaviour because of it, or treats it as the
 state-form amendment certificate.
 
-The new amendment route does not read the old label. It derives bounded current
-authority from its own exact positive record. That closes neither side by
-borrowing the other: the label still applies no text, while the current
-authority still proves no byte identity, publication, deployment, or source
-transition.
+The exact-change route requires the political result and an independent
+compatibility finding to concern the same proposal, existing text and proposed
+replacement. Consent cannot substitute for compatibility, and compatibility
+cannot substitute for consent. The bounded review of effects must match that
+replacement. A vocabulary change needs explicit review of the change, not
+merely a harmless name on the proposal.
 
-The distinction matters because issuing a law label, certifying a lawful
-political result, and changing the source are three different acts. This design
-now formalises the middle one. It does not pretend that the first caused it or
-that the third occurred.
+A certified candidate is not yet published, and a published candidate is not
+yet the version in effect. Each step needs its own exact evidence. Conflicting
+records grant neither candidate priority. A transition cannot be reused to
+replace a later version, and returning to earlier wording requires fresh
+authority, a new transition and preservation of the intervening record.
+
+Anyone may seek independent review without the operator's permission or a
+valid candidate certificate. A current reviewed source defect withholds the
+affected permission and requires evidence preservation and correction. A
+separately established failure to respond sends the duty to an independent
+alternate. Silence supplies neither consent nor a finding against the person
+who asked. Challenge and final constitutional review remain available.
+
+These conditions do not discover every concealed effect, authenticate a vote
+or a reviewer, publish a document, replace the source, or make an institution
+answer. An earlier version is not made lawful merely by being available, and
+a source correction does not by itself undo a person's judgment or take any
+right. The exact-change record states what must be connected; people and
+institutions remain responsible for making the connection true.
 
 **And the constitution is another record that people keep.** Nothing derives which
 target labels are registered; somebody wrote them down. The rules cannot prevent

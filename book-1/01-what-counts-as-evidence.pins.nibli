@@ -1,6 +1,11 @@
 # ── Chapter 1 fidelity pins: "What Counts as Evidence" ───────────────────────
 #
 # FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+# Exact-change and vocabulary review also use:
+#   tests/pins/amendment-enactment/unauthorized-vocabulary/expect.pins.nibli
+#   tests/pins/amendment-enactment/reviewed-vocabulary/expect.pins.nibli
+#   tests/pins/amendment-enactment/candidate-not-consented/expect.pins.nibli
+# The host's actual byte/admission checks are separate development tests.
 #
 # Statistical permissions and the no-person-score boundary are checked in:
 #   tests/pins/statistics/use/positive/expect.pins.nibli

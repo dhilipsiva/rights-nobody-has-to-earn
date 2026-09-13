@@ -57,7 +57,8 @@ measurements and any remaining bottleneck honestly.
 
 Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
-`./generate.sh statistics`, and `./generate.sh spine`. They write semantic
+`./generate.sh statistics`, `./generate.sh amendment`, and
+`./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
 
@@ -1640,6 +1641,33 @@ attested record, advance a clock, publish a successor, cause physical release,
 or make Appeals act. A later operational claim can satisfy the record case only as scoped
 `external_verified` evidence; it may not be relabelled as the repository-only
 `current_verified` posture.
+
+**Amendment enactment implementation supersession, 2026-09-13.**
+`new-book-plans/book-1-amendment-enactment-contract.md` now controls exact-source
+binding and certified/published/effective-version separation. FSPOW_037's
+existing collective-result interfaces carry base and candidate identities
+through the supplied configuration, submission/result and certificate chain.
+The amendment-enactment family consumes that actual result and authority,
+independent byte/effect/corridor review, explicit vocabulary disposition,
+publication and selection evidence, with conflict, defect and nonresponse
+routes. It does not read `become` or change amendment thresholds.
+
+`src/amendment_host.rs` and the separate `amendment-assurance` executable model
+exact byte comparison, bounded effect tests, publication checks, one effective
+pointer, stale-base/replay refusal, preserved rollback history and fresh-source
+queries in memory. Their input is deliberately trusted; they authenticate no
+signature and perform no real publication or deployment. They add no hash,
+receipt, freshness or history gate to `verify.sh`. Host checks are separate
+development tests. Book 2 owns real authentication, durable atomic storage,
+publication, deployment, recovery, clocks and operational evidence.
+
+The author approved the exact edits preserved in
+`new-book-plans/amendment-reader-draft.md` on 2026-09-13. They are inserted
+unchanged in Book 1 chapters 1 and 12 and the method; their supply is
+`session-drafted, author-approved`. The historical AS-01–AS-09 cases and old
+Article 9 defects below remain valid. Their former absence descriptions and
+RI-12's historical status do not describe the new bounded interface; no
+operational-authentication or semantic-completeness claim is upgraded.
 
 **Amendment semantics are now tested separately from amendment labels, enacted
 2026-08-04.** Article 9 reads a proposer-supplied `adjust(amendment, label)` and

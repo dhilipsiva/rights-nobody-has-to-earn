@@ -10,6 +10,8 @@ use serde::{Deserialize, Serialize};
 use crate::cli::Error;
 use crate::context::Context;
 
+#[path = "authoring/amendment.rs"]
+mod amendment;
 #[path = "authoring/integrity.rs"]
 mod integrity;
 #[path = "authoring/obligations.rs"]
@@ -212,10 +214,10 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
     }
     if !matches!(
         family,
-        "state-form" | "obligations" | "integrity" | "statistics"
+        "state-form" | "obligations" | "integrity" | "statistics" | "amendment"
     ) {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|statistics|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -226,10 +228,19 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         "obligations" => obligations::generate(context, &mut export)?,
         "integrity" => integrity::generate(context, &mut export)?,
         "statistics" => statistics::generate(context, &mut export)?,
+        "amendment" => amendment::generate(context, &mut export)?,
         _ => unreachable!(),
     }
     let count = export.cases.len();
-    merge_family(&mut inventory, family, export)?;
+    merge_family(
+        &mut inventory,
+        if family == "amendment" {
+            "amendment-enactment"
+        } else {
+            family
+        },
+        export,
+    )?;
     let text = format!("{}\n", serde_json::to_string_pretty(&inventory)?);
     std::fs::write(context.path("tests/pins/suites.json"), text)?;
     println!("generated {family} rules, pins, and {count} executable cases");

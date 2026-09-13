@@ -25,6 +25,8 @@ destination.
 | `new-book-plans/obligations-source.json` | The protected claim names used by the obligations authoring tool. |
 | `new-book-plans/integrity-source.json` | Democratic and administrative integrity findings, kinds, and legal consequences. |
 | `new-book-plans/statistics-source.json` | Bounded statistical uses, privacy, aggregate equality evidence, challenge and correction. |
+| `new-book-plans/book-1-amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
+| `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
 | `verify.sh` | Run the pins and contradiction checks. |
 | `generate.sh` | Explicitly regenerate authored rule, fixture, pin, or spine outputs. |
@@ -61,14 +63,12 @@ or validate administrative reports. There is no separate quick assurance mode
 and no cached verdict that lets a changed book skip its tests. The focused
 `--only` command is for feedback on one pin file, not a whole-book pass.
 
-Latest full run measured on 2026-09-12 with four workers and the release binary
-already built:
-all 6,305 pins across 1,160 cases passed, with clean formal contradiction scans,
-in 746.17 seconds (12m26s), including the integrity and statistics cases.
-An earlier same-day run of the same formal inputs took 458.52 seconds (7m39s).
-The under-five-minute full-run target is not yet met; the remaining cost is
-primarily Nibli loading and inference. These are timing observations, not cached
-verification results or gates on later edits.
+Latest full run measured on 2026-09-13 with four workers and the release binary
+already built: all 6,400 pins across 1,218 cases passed, with complete formal
+contradiction scans and no findings, in 518.28 seconds (8m38s). This includes
+the new amendment-enactment cases; nine existing known-defect pins still
+reproduce. The under-five-minute full-run target is not yet met. This is a
+timing observation, not a cached verification result or a gate on later edits.
 
 ## Author
 
@@ -79,15 +79,33 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh obligations
 ./generate.sh integrity
 ./generate.sh statistics
+./generate.sh amendment
 ./generate.sh spine
 ```
 
-The state-form, obligations and integrity commands update their constitution
-rule blocks, companion pins, and executable fixtures from their authoring
-inputs. Review those changes before
-running verification. The spine command refreshes the chapter-order projection;
+The state-form, obligations, integrity, statistics and amendment commands
+update their constitution rule blocks, companion pins, and executable fixtures
+from their authoring inputs. Review those changes before running verification.
+The spine command refreshes the chapter-order projection;
 chapter placement and prose remain review work. Ordinary chapter pins and test
 fixtures can be edited directly.
+
+The amendment host has separate development tests:
+
+```bash
+cargo test --bin amendment-assurance
+cargo test --release --bin amendment-assurance
+```
+
+The first runs the fast host controls. The release run also executes the full
+constitution-to-certified-candidate-to-effective-query integration case; debug
+inference makes that case unusually slow. Both use the same checks. These tests
+are not added to `verify.sh`. For an explicit trusted local replay, run
+`cargo run --release --bin amendment-assurance -- <scenario.json>`; its typed
+input is defined by `Scenario`, `Event` and `Review` in `src/amendment_host.rs`.
+It reads the input once and changes only in-memory state. It compares full
+source bytes, never source hashes, and cannot authenticate the supplied evidence
+or perform real publication/deployment. Book 2 owns those operations.
 
 A passing suite establishes the tested consequences of supplied rules and records.
 It does not authenticate outside records, prove institutional action or delivery,

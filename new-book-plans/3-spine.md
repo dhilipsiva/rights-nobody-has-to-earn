@@ -8,7 +8,7 @@ The dependency strata are **computed from the constitution's graph, not chosen**
 Method: parse every rule, build the predicate dependency graph, and assign strata by
 the standard fixpoint (positive edge ⇒ `stratum(head) ≥ stratum(body)`; negative edge ⇒
 `stratum(head) > stratum(body)`). The generated block is authoritative for the current
-six-stratum graph. The chapter sequence below began from an older computed graph and is
+dependency graph. The chapter sequence below began from an older computed graph and is
 now an editorial reading order; T1/T2/T3 added intermediate predicates and moved several
 old conclusions without mechanically reordering the drafted book.
 
@@ -19,7 +19,7 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **89** | **43** | **1814** | **8** |
+| computed from the constitution | **89** | **43** | **1883** | **8** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 6 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 

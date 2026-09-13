@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+? complete(EnactRecord, AmendmentEffectiveVersion, EnactCandidate).
+# => FALSE
+? related(EnactRecord, AmendmentSelectionConflict).
+# => TRUE
+? related(CompetingRecord, AmendmentSelectionConflict).
+# => TRUE

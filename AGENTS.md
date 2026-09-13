@@ -24,6 +24,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ./generate.sh obligations
 ./generate.sh integrity
 ./generate.sh statistics
+./generate.sh amendment
 ./generate.sh spine
 ```
 
@@ -45,6 +46,10 @@ Do not add hashes, provenance receipts, schema/freshness audits, Git-history
 validators, or report gates. Tests of the runner belong in its development test
 suite. The retained historical plans and decisions describe previous tooling;
 they impose no retired verification workflow.
+
+The amendment host is a separate, trusted-input, in-memory reference model.
+Its byte comparisons and transition tests are development checks, not hashes,
+authentication, publication, deployment, or extra routine-verification gates.
 
 Make coherent, reviewable changes, run relevant focused checks while editing,
 then the complete verifier. Ordinary commits need no receipt or administrative

@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(EnactBinder, AmendmentSourceBindingAuthority, EnactRecord).
+authorized(EnactReview, IndependentAmendmentEffectReviewAuthority, EnactRecord).
+authorized(EnactReader, AmendmentChallengeReaderAuthority, EnactRecord).
+authorized(EnactAlternate, AmendmentAlternateReaderAuthority, EnactRecord).
+observe(EnactBinder, EnactRecord, EnactBase, AmendmentBaseScope).
+observe(EnactReview, EnactRecord, EnactBase, AmendmentBaseScope).
+observe(EnactBinder, EnactRecord, EnactBase, AmendmentObservedEffectiveBaseScope).
+observe(EnactReview, EnactRecord, EnactBase, AmendmentObservedEffectiveBaseScope).
+observe(EnactBinder, EnactRecord, EnactCandidate, AmendmentCandidateScope).
+observe(EnactReview, EnactRecord, EnactCandidate, AmendmentCandidateScope).
+observe(EnactBinder, EnactRecord, EnactTransition, AmendmentTransitionScope).
+observe(EnactReview, EnactRecord, EnactTransition, AmendmentTransitionScope).
+observe(EnactBinder, EnactRecord, EnactConsentProposal, AmendmentProposalScope).
+observe(EnactReview, EnactRecord, EnactConsentProposal, AmendmentProposalScope).
+observe(EnactBinder, EnactRecord, EnactConsentRecord, AmendmentConsentRecordScope).
+observe(EnactReview, EnactRecord, EnactConsentRecord, AmendmentConsentRecordScope).
+observe(EnactBinder, EnactRecord, EnactConsentResult, AmendmentConsentResultScope).
+observe(EnactReview, EnactRecord, EnactConsentResult, AmendmentConsentResultScope).
+observe(EnactBinder, EnactRecord, EnactConsentAmendmentCertificate, AmendmentConsentCertificateScope).
+observe(EnactReview, EnactRecord, EnactConsentAmendmentCertificate, AmendmentConsentCertificateScope).
+observe(EnactBinder, EnactRecord, EnactJurisdiction, AmendmentJurisdictionScope).
+observe(EnactReview, EnactRecord, EnactJurisdiction, AmendmentJurisdictionScope).
+observe(EnactBinder, EnactRecord, EnactLegalScope, AmendmentLegalScope).
+observe(EnactReview, EnactRecord, EnactLegalScope, AmendmentLegalScope).
+observe(EnactBinder, EnactRecord, EnactEffects, AmendmentEffectReviewScope).
+observe(EnactReview, EnactRecord, EnactEffects, AmendmentEffectReviewScope).
+observe(EnactBinder, EnactRecord, EnactOperator, AmendmentOperatorScope).
+observe(EnactReview, EnactRecord, EnactOperator, AmendmentOperatorScope).
+observe(EnactBinder, EnactRecord, EnactReader, AmendmentChallengeReaderScope).
+observe(EnactReview, EnactRecord, EnactReader, AmendmentChallengeReaderScope).
+observe(EnactBinder, EnactRecord, EnactAlternate, AmendmentAlternateReaderScope).
+observe(EnactReview, EnactRecord, EnactAlternate, AmendmentAlternateReaderScope).
+observe(EnactBinder, EnactRecord, EnactChallenge, AmendmentChallengeScope).
+observe(EnactReview, EnactRecord, EnactChallenge, AmendmentChallengeScope).
+observe(EnactBinder, EnactRecord, EnactCorrection, AmendmentCorrectionScope).
+observe(EnactReview, EnactRecord, EnactCorrection, AmendmentCorrectionScope).
+observe(EnactBinder, EnactRecord, EnactRemedy, AmendmentRemedyScope).
+observe(EnactReview, EnactRecord, EnactRemedy, AmendmentRemedyScope).
+observe(EnactBinder, EnactRecord, EnactEnd, AmendmentReviewEndScope).
+observe(EnactReview, EnactRecord, EnactEnd, AmendmentReviewEndScope).
+observe(EnactBinder, EnactRecord, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope).
+observe(EnactReview, EnactRecord, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope).
+observe(EnactBinder, EnactRecord, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope).
+observe(EnactReview, EnactRecord, BoundedEffectsMatchReviewedCandidate, AmendmentEffectDispositionScope).
+observe(EnactBinder, EnactRecord, PositiveCorridorCompatibility, AmendmentCompatibilityScope).
+observe(EnactReview, EnactRecord, PositiveCorridorCompatibility, AmendmentCompatibilityScope).
+observe(EnactBinder, EnactRecord, UnchangedEvidenceVocabulary, AmendmentVocabularyDispositionScope).
+observe(EnactReview, EnactRecord, UnchangedEvidenceVocabulary, AmendmentVocabularyDispositionScope).
+observe(EnactBinder, EnactRecord, CurrentReconciledReview, AmendmentCurrentReviewScope).
+observe(EnactReview, EnactRecord, CurrentReconciledReview, AmendmentCurrentReviewScope).
+observe(EnactBinder, EnactRecord, FreshUnconsumedTransition, AmendmentReplayDispositionScope).
+observe(EnactReview, EnactRecord, FreshUnconsumedTransition, AmendmentReplayDispositionScope).
+observe(EnactBinder, EnactRecord, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope).
+observe(EnactReview, EnactRecord, IndependentChallengeAndFinalCourtReview, AmendmentFinalReviewScope).
+observe(EnactBinder, EnactRecord, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope).
+observe(EnactReview, EnactRecord, NoPersonalConsequenceFromSourceStatus, AmendmentConsequenceLimitScope).

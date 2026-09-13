@@ -1,11 +1,26 @@
 # ── Chapter 12 fidelity pins: "Changing the Rules" ───────────────────────────
 #
 # FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+# Exact-change contract and reader passage:
+#   new-book-plans/book-1-amendment-enactment-contract.md
+#   tests/pins/amendment-enactment/certified/expect.pins.nibli
+#   tests/pins/amendment-enactment/published/expect.pins.nibli
+#   tests/pins/amendment-enactment/effective/expect.pins.nibli
+#   tests/pins/amendment-enactment/candidate-not-consented/expect.pins.nibli
+#   tests/pins/amendment-enactment/upstream-candidate-splice/expect.pins.nibli
+#   tests/pins/amendment-enactment/competing-selection/expect.pins.nibli
+#   tests/pins/amendment-enactment/defect-sequence/expect.pins.nibli
+#   tests/pins/amendment-enactment/nonresponse-sequence/expect.pins.nibli
+#   tests/pins/amendment-enactment/counterfactual-self-review/expect.pins.nibli
+#   tests/pins/amendment-enactment/counterfactual-no-consent/expect.pins.nibli
+#   tests/pins/amendment-enactment/counterfactual-no-effect-match/expect.pins.nibli
+# Byte identity, host replay/rollback and wrong-source query checks are separate
+# amendment-assurance development tests; pins alone do not perform host actions.
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/12-changing-the-rules.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and formal contradiction checks
+# Markdown consistency is reviewed separately; the pins do not certify prose.
 #
 # The "three ways this is thinner" section is held two ways: the self-declared
 # target (Amend_Sneak) is a DECLARED defect below — repairing it exits 3 and
