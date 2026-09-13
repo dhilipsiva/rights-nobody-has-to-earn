@@ -70,6 +70,8 @@ impl CompiledSource {
         cancellation: Arc<AtomicBool>,
     ) -> Result<(CoreSession, Vec<Vec<u64>>), EngineError> {
         let compiler = CoreSession::new();
+        #[cfg(test)]
+        let started = Instant::now();
         let compiled = statements
             .iter()
             .map(|text| {
@@ -85,7 +87,13 @@ impl CompiledSource {
                 Ok((buffer, (*text).to_owned()))
             })
             .collect::<Result<Vec<_>, _>>()?;
+        #[cfg(test)]
+        performance_tests::trace_step("prepare", "compiled statement copies", started.elapsed());
+        #[cfg(test)]
+        let started = Instant::now();
         let (kb, ids) = KnowledgeBase::from_compiled_batch_with_cancel(compiled, cancellation)?;
+        #[cfg(test)]
+        performance_tests::trace_step("prepare", "ordered model construction", started.elapsed());
         Ok((CoreSession::with_kb(kb), ids))
     }
 }
@@ -880,6 +888,8 @@ impl PreparedBase {
                 }
             };
             if let Ok((engine, groups)) = result {
+                #[cfg(test)]
+                let started = Instant::now();
                 let harness = engine
                     .kb()
                     .prepare_materialization_plan()
@@ -887,6 +897,8 @@ impl PreparedBase {
                     .map(|error| format!("cannot prepare rule plan: {error}"))
                     .into_iter()
                     .collect();
+                #[cfg(test)]
+                performance_tests::trace_step("prepare", "materialization plan", started.elapsed());
                 let mut source_fact_ids: BTreeMap<String, Vec<Vec<u64>>> = BTreeMap::new();
                 for (statement, ids) in statements.iter().zip(groups) {
                     source_fact_ids

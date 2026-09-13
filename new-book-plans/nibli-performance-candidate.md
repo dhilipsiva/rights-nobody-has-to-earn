@@ -6,10 +6,9 @@ Status: experimental, not integrated into the companion checkout or the
 production verifier. The five-minute TODO remains open. No constitutional
 source, pin expectation, case inventory or contradiction check is changed.
 
-The companion checkout already has pending work. The adjacent patch contains
-only this experiment's additional changes against that working tree, not those
-pre-existing edits. It is not a standalone patch against the companion's HEAD.
-The existing checkout and its index have been left untouched.
+The companion's previously pending work landed as `fa91a5f`. The adjacent
+patch now applies directly to that commit and contains only this experiment's
+additional changes. The companion checkout and its index remain untouched.
 
 ## Changes under test
 
@@ -27,6 +26,20 @@ The existing checkout and its index have been left untouched.
 - Constant positions can index the first positive join. The existing
   round-local indexes are shared across rules; the ordinary tuple binder still
   checks every surviving candidate.
+- Singleton batches move their owned buffer into assertion ingress and run
+  structural preflight once, before allocating an ID. Multi-root statements
+  retain whole-buffer preflight before any root is installed; replay retains
+  its own validation.
+- Domain planning compares a shared rule identity once instead of once per
+  conclusion-index reference. Distinct allocations still receive full-value
+  equality checking, with the same first-seen selection as before.
+- A missing positive relation or constant-only match in any positive atom
+  rejects a rule before building earlier joins. The indexes remain round-local
+  and distinguish full from delta extensions; all survivors use the ordinary
+  tuple binder.
+- The immutable rule plan owns distinct dependency lists and negative-read
+  membership. Reachability, completion checks and delta invalidation reuse
+  those lists; no executable condition is removed or weakened.
 
 Scoped-control retractions still execute the existing replay path. No pin
 verdict is cached between verification runs. These are engine-internal,
@@ -45,14 +58,29 @@ refusals. It executes their pins and complete contradiction reports.
 - Detached-candidate discard and completed-root reuse: 44.70 seconds.
 - Adding complete-witness reuse: 34.76 seconds. The eight-refusal instrument
   case took 0.018 seconds, compared with 28.574 seconds before the changes.
-- The final constant-index candidate passed all 622 reasoner unit tests,
+- The earlier constant-index candidate passed all 622 reasoner unit tests,
   including new work-count, atomicity, mutation, cancellation, mode and
   cache-versus-fresh regressions.
 - The preceding discard-and-cache candidate passed all 12 differential tests
   in 98.85 seconds. These exercise Vampire, clingo, stratification rejection,
-  retraction and materialization. Rerun this suite for the final index change.
+  retraction and materialization.
+- Adding singleton/preflight changes passed 623 reasoner tests and all 12
+  differential tests (90.82 seconds).
+- Adding shared-identity filtering measured 31.96 seconds for the probe;
+  constant prechecks reduced that to 28.68 seconds; planned dependency lists
+  reduced it to **26.64 seconds**. The current candidate passes 626 reasoner
+  tests and five session fixture-batch tests. All 12 oracle/differential tests
+  also passed (98.54 seconds).
 
-A complete four-worker run of this experimental release binary passed all
+The **current** candidate passed all **12,860 pins across 4,190 cases in
+661.85 seconds (11 minutes 1.85 seconds)** with four workers. Contradiction
+checks completed with no findings, and all nine existing defect pins still
+reproduced. The release binary was built before the run; no other development
+build or test was started during this measurement. This remains above the
+five-minute target.
+
+A complete four-worker run of the **earlier** candidate retained at book commit
+`f5924d5` passed all
 12,860 pins across 4,190 cases in **1,099.00 seconds (18 minutes 19 seconds)**.
 Contradiction checks completed with no findings, and all nine existing defect
 pins still reproduced. The release binary was built before the run. Brief
@@ -64,10 +92,15 @@ speedup does not describe the whole inventory, and the production verifier is
 unchanged. The runner's development suite separately passed 24 tests, with its
 two manual tests ignored; formatting and diff checks passed.
 
-A follow-on scratch experiment removes duplicate assertion preflight and
-singleton-buffer copies during loading. Its 623 reasoner unit tests pass, but
-it is not part of this retained patch or the full-run binary above. It still
-needs its own performance measurement and integration checks.
+A separate strict reasoner Clippy check did not pass: existing front-end and
+reasoner warnings remain outside this patch's scope. Two warnings in new
+candidate expressions were corrected. This is not a claim that the companion's
+complete release checks have passed.
+
+The latest preparation probe measured 0.445 seconds copying compiled
+statements, 3.594 seconds constructing the ordered model, and 1.552 seconds
+preparing the rule plan. Three scoped-control retractions still took about
+four seconds each. These remaining costs are not hidden by the query gains.
 
 ## Reproduction and integration boundary
 
@@ -77,14 +110,14 @@ The runner's ignored development probe is
 its five named cases; an unknown selection fails rather than measuring zero
 cases. It is never part of ordinary verification.
 
-The current experiment lives at `/tmp/rights-nibli-perf.llSbQz`. The binary for
-this retained patch is `rights-verify-c622` in that directory. Its probe
-manifest uses the live book runner with copied companion crates. Run its
-release binary from the book repository to execute the unchanged live
-inventory. The normal `./verify.sh` still uses the unmodified companion
-checkout.
+The current experiment lives at `/tmp/rights-nibli-perf.llSbQz`. Its probe
+manifest uses the live book runner with copied companion crates; its latest
+release binary is `probe-target/release/rights-verify`. The separately retained
+`rights-verify-c622` is the earlier full-run candidate, not the current patch.
+Run an experimental binary from the book repository to execute the unchanged
+live inventory. Normal `./verify.sh` still uses the companion checkout.
 
-Before integration, reconcile the companion's pending changes without
-overwriting them, apply only the additional patch, run its relevant development
+Before integration, recheck the companion for new unrelated changes, apply
+only the additional patch, run its relevant development
 checks, and rebuild and run the book's complete verifier. Do not delete the
 performance TODO without a passing complete run under five minutes.
