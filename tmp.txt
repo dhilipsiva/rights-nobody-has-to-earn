@@ -48,17 +48,29 @@ now clean and the retained additional patch still applies without conflicts.
 The inventory contains 116 distinct base/edit combinations, including 105
 singleton groups, so regrouping cases cannot remove most model construction.
 
-The current retained patch adds shared-identity filtering, necessary
+The candidate retained at 9d8fb07 adds shared-identity filtering, necessary
 constant-match prechecks and precomputed distinct rule dependency lists.
 Its 626 reasoner tests, five session batch tests and all 12 oracle/differential
-tests pass. The five-case probe now takes 26.64 seconds. The current complete
+tests pass. Its five-case probe took 26.64 seconds. Its complete
 run passed all 12,860 pins across 4,190 cases in 661.85 seconds (11 minutes
 1.85 seconds), with complete contradiction checks, no findings and all nine
 known defects reproduced. Four workers, release binary already built, and no
 overlapping development build/test. The five-minute TODO remains open; this
 candidate is not yet integrated into the companion or production verifier.
 
-Next loading hypothesis: register_rule currently calls sort_rule_bucket after
-every append, including already ordered zero-priority rules. Measure stable
-ordered insertion while preserving priority overrides and equal-priority order.
-This is not yet implemented or credited with a performance improvement.
+The ordered-rule-insertion hypothesis was tested and discarded: repeated
+measurements showed no reproducible improvement. The current retained patch
+instead avoids copying discarded condition-variable dependency lists and
+checks fixed-value discriminators before scanning every positive relation.
+It passes 628 reasoner tests, all 12 oracle/differential tests, five session
+fixture-batch tests and 24 runner tests. The five-case probe took 23.46 seconds.
+The complete run passed all 12,860 pins across 4,190 cases in 558.35 seconds
+(9 minutes 18.35 seconds), with complete contradiction checks, no findings
+and all nine existing defect pins reproduced. Four workers, release binary
+already built, no overlapping development build/test. The target remains open.
+
+Next scratch experiment: specialize already range-restricted materialized
+rules using explicit positive scalar equalities, retaining every builtin and
+all original eligibility checks. Four regressions have been drafted but not
+run. These source edits are not in the retained patch or measured binary;
+test and measure them before claiming correctness or a speedup.

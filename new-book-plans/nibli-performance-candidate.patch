@@ -596,7 +596,36 @@
      }
  }
 
-@@ -1125,8 +1173,8 @@
+@@ -819,6 +867,8 @@
+ pub(super) struct MaterializationWork {
+     #[cfg(test)]
+     tuple_bind_attempts: HashMap<String, usize>,
++    #[cfg(test)]
++    positive_presence_checks: usize,
+     /// How many times this saturation was folded forward incrementally rather
+     /// than recomputed. Resets with the `Materialized` it lives in, so a value
+     /// of zero after a mutation means the fixpoint was rebuilt from scratch.
+@@ -831,6 +881,19 @@
+
+ impl MaterializationWork {
+     #[inline]
++    fn note_positive_presence_check(&mut self) {
++        #[cfg(test)]
++        {
++            self.positive_presence_checks += 1;
++        }
++    }
++
++    #[cfg(test)]
++    pub(super) fn positive_presence_checks(&self) -> usize {
++        self.positive_presence_checks
++    }
++
++    #[inline]
+     fn note_tuple_bind_attempt(&mut self, _rule: &ProjectedRule) {
+         #[cfg(test)]
+         for head in &_rule.head {
+@@ -1125,8 +1188,8 @@
  /// one) — soundness never depends on the bound-position analysis, only the
  /// speedup does, and an unexpectedly unbound "bound" variable falls open to the
  /// full scan. Maps are shared across levels and rules in one immutable round;
@@ -607,7 +636,7 @@
  struct LevelIndex<'e> {
      bound_positions: Vec<usize>,
      map: Option<std::sync::Arc<TupleIndex<'e>>>,
-@@ -1135,6 +1183,30 @@
+@@ -1135,6 +1198,30 @@
  type TupleIndex<'e> = HashMap<Vec<GroundTerm>, Vec<&'e Vec<GroundTerm>>>;
  type RoundIndexes<'e> = HashMap<(String, Vec<usize>, bool), std::sync::Arc<TupleIndex<'e>>>;
 
@@ -638,7 +667,7 @@
  /// The positions of `positive[i]`'s template bound when the walk reaches level
  /// `i`: constants always, and pattern variables that occur in an earlier
  /// positive atom. (A variable repeated within atom `i` itself binds DURING
-@@ -1142,10 +1214,8 @@
+@@ -1142,10 +1229,8 @@
  fn bound_positions(positive: &[Atom]) -> Vec<Vec<usize>> {
      let mut earlier_vars: HashSet<&str> = HashSet::new();
      let mut result = Vec::with_capacity(positive.len());
@@ -651,7 +680,7 @@
              atom.values
                  .iter()
                  .enumerate()
-@@ -1154,8 +1224,8 @@
+@@ -1154,8 +1239,8 @@
                      _ => true,
                  })
                  .map(|(position, _)| position)
@@ -662,7 +691,7 @@
          for v in &atom.values {
              if let GroundTerm::PatternVar(n) = v {
                  earlier_vars.insert(n.as_str());
-@@ -1172,7 +1242,7 @@
+@@ -1172,7 +1257,7 @@
  /// extension, so a round only re-derives what the previous round could have enabled.
  /// When `None` the rule is evaluated against the full extensions (the seeding round).
  ///
@@ -671,7 +700,7 @@
  /// (see [`LevelIndex`]): a transitive-closure shape that scanned O(|R|²) tuples
  /// per round now touches O(|R| · fanout).
  fn eval_rule<'e>(
-@@ -1184,6 +1254,32 @@
+@@ -1184,6 +1269,41 @@
      work: &mut MaterializationWork,
      shared_indexes: &mut RoundIndexes<'e>,
  ) {
@@ -679,17 +708,19 @@
 +    // discriminator can reject the rule before any earlier cartesian join.
 +    // These are necessary conditions only: the unchanged binder still checks
 +    // arity, repeated variables and all cross-atom bindings for every survivor.
-+    for (i, atom) in pr.positive.iter().enumerate() {
-+        let source = if delta_pos == Some(i) { delta } else { ext };
-+        if source.get(&atom.relation).is_none_or(HashSet::is_empty) {
-+            return;
-+        }
-+    }
++    // Try fixed-value discriminators first: one miss can exclude a wide rule
++    // without visiting every remaining relation in its positive body.
 +    for (i, positions, key) in &pr.constant_probes {
 +        let atom = &pr.positive[*i];
 +        let from_delta = delta_pos == Some(*i);
 +        let source = if from_delta { delta } else { ext };
-+        let tuples = &source[&atom.relation];
++        work.note_positive_presence_check();
++        let Some(tuples) = source
++            .get(&atom.relation)
++            .filter(|tuples| !tuples.is_empty())
++        else {
++            return;
++        };
 +        let index = shared_tuple_index(
 +            tuples,
 +            &atom.relation,
@@ -701,10 +732,17 @@
 +            return;
 +        }
 +    }
++    for (i, atom) in pr.positive.iter().enumerate() {
++        let source = if delta_pos == Some(i) { delta } else { ext };
++        work.note_positive_presence_check();
++        if source.get(&atom.relation).is_none_or(HashSet::is_empty) {
++            return;
++        }
++    }
      // ONE binding map for the whole walk, extended and unwound in place.
      //
      // It used to be an owned `HashMap` cloned per candidate tuple per join level, which
-@@ -1245,7 +1341,7 @@
+@@ -1245,7 +1365,7 @@
          let Some(tuples) = source.get(&atom.relation) else {
              return;
          };
@@ -713,7 +751,7 @@
          // bound positions visits only the bucket matching the current
          // bindings' key values. `take()`/restore instead of borrowing the map
          // across the recursion — levels strictly increase, so this level's map
-@@ -1261,27 +1357,13 @@
+@@ -1261,27 +1381,13 @@
                  .collect();
              if let Some(key) = key {
                  if indexes[i].map.is_none() {
@@ -747,7 +785,7 @@
                  }
                  let map = indexes[i].map.take().expect("index map was just built");
                  if let Some(bucket) = map.get(&key) {
-@@ -1595,14 +1677,9 @@
+@@ -1595,14 +1701,9 @@
      // reading `~` of it must then LOSE a conclusion the fold would keep.
      if !m.negatively_read.is_empty() {
          let mut readers: HashMap<&str, Vec<&str>> = HashMap::new();
@@ -765,7 +803,7 @@
              }
          }
          let mut seen: HashSet<&str> = HashSet::new();
-@@ -1757,10 +1834,8 @@
+@@ -1757,10 +1858,8 @@
          if unseedable.contains_key(&rel) || !wanted.insert(rel.clone()) {
              continue;
          }
@@ -778,7 +816,7 @@
          }
      }
      // Only relations we are actually allowed to saturate.
-@@ -1826,16 +1901,12 @@
+@@ -1826,16 +1925,12 @@
          loop {
              let mut drop_idx: Option<(usize, String)> = None;
              'scan: for (i, rel) in derived_here.iter().enumerate() {
@@ -800,7 +838,7 @@
                  }
              }
              match drop_idx {
-@@ -1930,14 +2001,7 @@
+@@ -1930,14 +2025,7 @@
 
      // Every relation any eligible rule reads under `~`. An insert into one of
      // these is NOT monotone growth, so `resume_with_delta` must refuse it.
@@ -816,7 +854,7 @@
 
      Materialized {
          ext,
-@@ -2157,8 +2221,17 @@
+@@ -2157,8 +2245,17 @@
          .as_ref()
          .map(|materialized| materialized.requested.clone())
          .unwrap_or_default();
@@ -838,11 +876,44 @@
      let mut cumulative = targets.clone();
 --- a/nibli-reason/src/tests/assertions.rs
 +++ b/nibli-reason/src/tests/assertions.rs
-@@ -1,5 +1,124 @@
+@@ -1,5 +1,157 @@
 +// SPDX-License-Identifier: MIT OR Apache-2.0
 +
  use super::*;
 
++#[test]
++fn condition_events_do_not_copy_unused_conclusion_dependencies() {
++    let kb = new_kb();
++    assert_buf(&kb, compile_surface("dog(Rex)."));
++    let mut conditions = vec!["dog($x)".to_string()];
++    let mut first_fact = None;
++    for index in 0..30 {
++        let fact = assert_id(
++            &kb,
++            compile_surface(&format!("authorized(Rex, Wanted, Record{index}).")),
++            "required condition",
++        );
++        first_fact.get_or_insert(fact);
++        conditions.push(format!("authorized($x, Wanted, Record{index})"));
++    }
++    TEST_DEPENDENCY_NAME_COPIES.set(0);
++    assert_buf(
++        &kb,
++        compile_surface(&format!(
++            "all $x: {} -> animal($x).",
++            conditions.join(" & ")
++        )),
++    );
++    assert_eq!(
++        TEST_DEPENDENCY_NAME_COPIES.get(),
++        1,
++        "only the head event needs a copy of the universal dependency list"
++    );
++    assert!(query(&kb, compile_surface("animal(Rex).")));
++    kb.retract_fact(first_fact.unwrap()).unwrap();
++    assert!(query_false(&kb, compile_surface("animal(Rex).")));
++}
++
 +#[test]
 +fn batches_preflight_single_roots_once_and_multi_roots_before_allocation() {
 +    TEST_ASSERTION_PREFLIGHT_COUNT.set(0);
@@ -965,7 +1036,7 @@
  #[test]
 --- a/nibli-reason/src/tests/materialization.rs
 +++ b/nibli-reason/src/tests/materialization.rs
-@@ -9,9 +9,209 @@
+@@ -9,9 +9,240 @@
  //! verdict, only how fast one is reached. Everything else here pins a way that could
  //! stop being true.
 
@@ -974,6 +1045,37 @@
  use super::*;
 
  #[test]
++fn a_first_constant_miss_skips_later_positive_presence_checks() {
++    let kb = new_kb();
++    assert_buf(&kb, compile_surface("authorized(Rex, Other, Record)."));
++    let mut conditions = vec!["authorized($x, Wanted, Record)".to_string()];
++    for index in 0..30 {
++        conditions.push(format!("authorized($x, Requirement{index}, Record)"));
++    }
++    assert_buf(
++        &kb,
++        compile_surface(&format!(
++            "all $x: {} -> permits($x, Record).",
++            conditions.join(" & ")
++        )),
++    );
++    kb.ensure_materialized(&compile_surface("permits(Rex, Record)."), true);
++    assert_eq!(
++        kb.inner
++            .borrow()
++            .materialized
++            .borrow()
++            .as_ref()
++            .unwrap()
++            .work
++            .positive_presence_checks(),
++        1,
++        "a missing first discriminator needs no walk over the remaining body"
++    );
++    assert!(query_false(&kb, compile_surface("permits(Rex, Record).")));
++}
++
++#[test]
 +fn rule_plan_deduplicates_reads_without_losing_negative_dependencies() {
 +    let kb = new_kb();
 +    for text in [
@@ -1175,7 +1277,7 @@
  fn warming_rule_plan_performs_no_query_and_shares_only_immutable_planning() {
      let run = |warm: bool| {
          let kb = new_kb();
-@@ -1924,9 +2124,9 @@
+@@ -1924,9 +2155,9 @@
      kb
  }
 
@@ -1188,7 +1290,7 @@
  #[test]
  fn a_refused_assertion_preserves_the_saturation() {
      let kb = kb_with_live_saturation();
-@@ -1994,13 +2194,10 @@
+@@ -1994,13 +2225,10 @@
      );
  }
 
@@ -1205,7 +1307,7 @@
      let kb = kb_with_live_saturation();
      {
          // Warm the cache the way a query does, so the clear has something to do.
-@@ -2008,22 +2205,27 @@
+@@ -2008,22 +2236,27 @@
          clear_and_enable_pred_cache(&inner);
      }
      assert!(query(&kb, compile_surface("animal(Rex).")));
@@ -1415,3 +1517,105 @@
  fn complete_unary_witness_filter_tracks_growth_and_proof_mode() {
      let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
      kb.set_materialization(true);
+--- a/nibli-reason/src/rules.rs
++++ b/nibli-reason/src/rules.rs
+@@ -1,5 +1,10 @@
+ use super::*;
+
++#[cfg(test)]
++thread_local! {
++    pub(super) static TEST_DEPENDENCY_NAME_COPIES: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
++}
++
+ /// Check if a GroundTerm represents a dependent Skolem placeholder.
+ pub(super) fn is_skdep(gt: &GroundTerm) -> bool {
+     matches!(gt, GroundTerm::SkolemPlaceholder(_))
+@@ -1738,6 +1743,28 @@
+         format!("∀{}", universals.join(","))
+     };
+
++    // Classify condition existentials before allocating conclusion dependency
++    // lists. Those binders become pattern variables, not dependent Skolems;
++    // creating a full list for each one only to remove it wastes large amounts
++    // of copying on wide antecedents. Keep the same capped DNF and binder walk.
++    let clauses = if pf_conditions.is_empty() {
++        None
++    } else {
++        Some(dnf_condition_clauses(
++            buffer,
++            &pf_conditions,
++            MAX_DNF_CLAUSES,
++        )?)
++    };
++    let mut all_condition_exists: HashSet<String> = HashSet::new();
++    if let Some(clauses) = &clauses {
++        for clause in clauses {
++            for &lid in clause {
++                collect_condition_exists(buffer, lid, &mut all_condition_exists);
++            }
++        }
++    }
++
+     let mut pattern_vars: HashMap<String, String> = universals
+         .iter()
+         .enumerate()
+@@ -1758,45 +1785,32 @@
+
+     let pattern_var_names: Vec<String> =
+         universals.iter().map(|v| pattern_vars[v].clone()).collect();
++    for var in &all_condition_exists {
++        ground_skolems.remove(var);
++        pattern_vars.insert(var.clone(), format!("ev__{}", var));
++    }
+     let mut dependent_skolems: HashMap<String, (SkolemSymbol, Vec<String>)> = skolem_subs
+         .iter()
++        .filter(|(name, _)| !all_condition_exists.contains(name.as_str()))
+         .filter_map(|(k, gt)| {
+-            skdep_symbol(gt).map(|symbol| (k.clone(), (symbol, pattern_var_names.clone())))
++            skdep_symbol(gt).map(|symbol| {
++                #[cfg(test)]
++                TEST_DEPENDENCY_NAME_COPIES
++                    .set(TEST_DEPENDENCY_NAME_COPIES.get() + pattern_var_names.len());
++                (k.clone(), (symbol, pattern_var_names.clone()))
++            })
+         })
+         .collect();
+
+-    let implication = if pf_conditions.is_empty() {
+-        None
+-    } else {
+-        Some((pf_conditions, pf_consequent))
+-    };
+-    match implication {
+-        Some((condition_ids, consequent_id)) => {
++    match clauses {
++        Some(clauses) => {
++            let consequent_id = pf_consequent;
+             // DNF-split the antecedent into conjunctive clauses and register ONE
+             // backward-chaining rule per clause: `∀x.(P(x)∨Q(x))→R(x)` is the
+             // conjunction of `∀x.P(x)→R(x)` and `∀x.Q(x)→R(x)`. A pure conjunction
+             // yields a single clause (byte-identical to the pre-split path); a
+             // disjunctive antecedent (`ro lo X poi P ja Q cu R`, `ganai ga P gi Q gi R`)
+             // yields one clause per disjunct.
+-            let clauses = dnf_condition_clauses(buffer, &condition_ids, MAX_DNF_CLAUSES)?;
+-
+-            // The condition event ∃ vars across ALL clauses become pattern vars (not
+-            // skolems); what remains in `dependent_skolems` are the CONCLUSION
+-            // existentials, shared by every clause. (collect_condition_exists does not
+-            // descend `Or`, so this union mirrors the pre-split single-condition set.)
+-            let mut all_condition_exists: HashSet<String> = HashSet::new();
+-            for clause in &clauses {
+-                for &lid in clause {
+-                    collect_condition_exists(buffer, lid, &mut all_condition_exists);
+-                }
+-            }
+-            for var in &all_condition_exists {
+-                dependent_skolems.remove(var);
+-                ground_skolems.remove(var);
+-                let pvar = format!("ev__{}", var);
+-                pattern_vars.insert(var.clone(), pvar);
+-            }
+-
+             let mut consequent_atoms = flatten_consequent(buffer, consequent_id, skolem_subs, None);
+             // Quoted bodies retain dependency edges for the stratification firewall,
+             // but only their opaque marker can execute in the surrounding KB.

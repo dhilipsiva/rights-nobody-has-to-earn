@@ -40,6 +40,12 @@ additional changes. The companion checkout and its index remain untouched.
 - The immutable rule plan owns distinct dependency lists and negative-read
   membership. Reachability, completion checks and delta invalidation reuse
   those lists; no executable condition is removed or weakened.
+- Rule compilation identifies condition-bound variables before building
+  dependent-witness lists. It uses the same capped disjunction expansion and
+  binder walk, without copying lists that the old path immediately discarded.
+- Fixed-value positive checks run before the whole-body presence scan. A
+  failed discriminator excludes a rule early; surviving candidates still
+  receive every ordinary presence, arity and binding check.
 
 Scoped-control retractions still execute the existing replay path. No pin
 verdict is cached between verification runs. These are engine-internal,
@@ -68,16 +74,23 @@ refusals. It executes their pins and complete contradiction reports.
   differential tests (90.82 seconds).
 - Adding shared-identity filtering measured 31.96 seconds for the probe;
   constant prechecks reduced that to 28.68 seconds; planned dependency lists
-  reduced it to **26.64 seconds**. The current candidate passes 626 reasoner
+  reduced it to **26.64 seconds**. That candidate passed 626 reasoner
   tests and five session fixture-batch tests. All 12 oracle/differential tests
   also passed (98.54 seconds).
 
 The **current** candidate passed all **12,860 pins across 4,190 cases in
-661.85 seconds (11 minutes 1.85 seconds)** with four workers. Contradiction
+558.35 seconds (9 minutes 18.35 seconds)** with four workers. Contradiction
 checks completed with no findings, and all nine existing defect pins still
 reproduced. The release binary was built before the run; no other development
 build or test was started during this measurement. This remains above the
-five-minute target.
+five-minute target. The same candidate passes 628 reasoner tests, all 12 oracle tests
+(98.49 seconds), five session fixture-batch tests and 24 runner tests. Its
+five-case probe took 23.46 seconds.
+
+The preceding candidate retained at book commit `9d8fb07` passed the same full
+inventory in **661.85 seconds (11 minutes 1.85 seconds)**, also with four
+workers, complete contradiction checks, no findings, nine reproduced defect
+pins and no overlapping development build or test.
 
 A complete four-worker run of the **earlier** candidate retained at book commit
 `f5924d5` passed all
@@ -97,10 +110,19 @@ reasoner warnings remain outside this patch's scope. Two warnings in new
 candidate expressions were corrected. This is not a claim that the companion's
 complete release checks have passed.
 
-The latest preparation probe measured 0.445 seconds copying compiled
-statements, 3.594 seconds constructing the ordered model, and 1.552 seconds
-preparing the rule plan. Three scoped-control retractions still took about
-four seconds each. These remaining costs are not hidden by the query gains.
+The latest preparation probe measured 0.428 seconds copying compiled
+statements, 2.910 seconds constructing the ordered model, and 1.218 seconds
+preparing the rule plan. Three scoped-control retractions still took
+2.95–4.34 seconds each. These costs are not hidden by the query gains.
+
+A temporary internal loading profile measured 25,641,517 variable-name copies
+before the condition-variable change, versus 1,209,036 afterwards. The same
+diagnostic measured model construction at 3.622 and 2.885 seconds respectively.
+Those temporary timing hooks are not in the retained patch or the verifier.
+
+An ordered-rule-insertion experiment was tested and discarded: its repeated
+construction measurement (3.640 seconds) did not improve on the paired prior
+candidate (3.589 seconds). No speedup is credited to it.
 
 ## Reproduction and integration boundary
 
@@ -110,10 +132,12 @@ The runner's ignored development probe is
 its five named cases; an unknown selection fails rather than measuring zero
 cases. It is never part of ordinary verification.
 
-The current experiment lives at `/tmp/rights-nibli-perf.llSbQz`. Its probe
-manifest uses the live book runner with copied companion crates; its latest
-release binary is `probe-target/release/rights-verify`. The separately retained
-`rights-verify-c622` is the earlier full-run candidate, not the current patch.
+The scratch workspace is `/tmp/rights-nibli-perf.llSbQz`. Its probe manifest
+uses the live book runner with copied companion crates. The measured release
+binary is `probe-target/release/rights-verify`. The separately retained
+`rights-verify-c622` and `rights-verify-c626` are earlier full-run candidates,
+not the current patch. Scratch source can contain subsequent untested
+experiments; the adjacent patch is the retained, measured candidate.
 Run an experimental binary from the book repository to execute the unchanged
 live inventory. Normal `./verify.sh` still uses the companion checkout.
 
