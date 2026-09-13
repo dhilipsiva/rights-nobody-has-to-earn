@@ -37,6 +37,10 @@ pub(crate) struct LoadedSource<'a> {
     pub(crate) source: &'a str,
 }
 
+#[cfg(test)]
+#[path = "pin_performance_tests.rs"]
+mod performance_tests;
+
 /// Reusable compilation of exact statement text, scoped to this one process.
 /// Only the canonical source is retained; variant-only statements are compiled
 /// on demand rather than accumulating a cache of every counterfactual world.
