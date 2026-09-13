@@ -40,6 +40,7 @@ fn profile_live_preparation_snapshots_and_cases() {
             assert!(scan.is_clean(), "{scan:?}");
             eprintln!("PROFILE base-scan {:.3}s", started.elapsed().as_secs_f64());
 
+            let mut measured_cases = 0;
             for (name, fixture, pins) in [
                 ("arrest", Some("tests/pins/public-safety/core/arrest/positive/fixture.nibli"), "tests/pins/public-safety/core/arrest/positive/expect.pins.nibli"),
                 ("force-abroad", Some("tests/pins/public-safety/core/force-abroad/positive/fixture.nibli"), "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli"),
@@ -47,6 +48,12 @@ fn profile_live_preparation_snapshots_and_cases() {
                 ("floor-controls", None, "new-book-plans/rights-floor.pins.nibli"),
                 ("instrument-firewall", None, "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli"),
             ] {
+                if std::env::var("RIGHTS_PROFILE_CASE")
+                    .is_ok_and(|selected| selected != name)
+                {
+                    continue;
+                }
+                measured_cases += 1;
                 let fixture = fixture.map(|path| context.read(path).unwrap()).unwrap_or_default();
                 let pins = context.read(pins).unwrap();
                 let started = Instant::now();
@@ -74,6 +81,7 @@ fn profile_live_preparation_snapshots_and_cases() {
                     eprintln!("PROFILE {name}: snapshot={snapshot:.3}s compile-fixture={compile:.3}s assert-fixture={assert:.3}s pins={query:.3}s scan={:.3}s", started.elapsed().as_secs_f64());
                 }).unwrap();
             }
+            assert!(measured_cases > 0, "RIGHTS_PROFILE_CASE matched no measurement case");
         })
         .unwrap()
         .join()

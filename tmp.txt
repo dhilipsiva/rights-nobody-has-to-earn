@@ -1,0 +1,41 @@
+SPDX-License-Identifier: CC-BY-4.0
+
+Active TODO: Meet the five-minute complete-verification target.
+
+Drafting — performance unfinished. One performance item, no new rule family.
+
+Slice 1: identify and remove repeated work (under four hours).
+Formal surface: unchanged live constitution, isolated cases and explicit
+counterfactuals. No pin, expectation, refusal, scoped retraction, stateful
+sequence, shell precondition or complete contradiction check is removed.
+Positive/negative checks: release runner regression suite, manual live timing
+probe, engine transaction/materialization/withdrawal differentials for any
+dependency optimization, then the complete live verifier with 1–4 workers.
+Governed sources/projections: runner only; no Book 1 prose or Book 2 operation.
+Counterfactual impact: timing only; source transformations remain unchanged.
+Reader consequence: a faster authoring loop, not a stronger formal claim.
+Book 2 handoff: none; its implementation remains inactive until Gate C.
+
+Baseline: full run 12,860 pins / 4,190 cases / nine existing defect pins,
+1,552.00 seconds. Manual probe identifies ~3.6 seconds per refusal or scoped
+retraction, negligible snapshot and complete contradiction-scan costs, and
+repeated query preparation. Profiling alone does not complete this TODO.
+
+Experiment: use a scratch copy of the companion engine; do not overwrite or
+stage its existing pending changes. Test detached-candidate discard and reuse
+of already-completed dependency roots before considering any engine handoff.
+No experiment result is a persisted verification verdict or routine gate.
+
+The first candidate is retained as new-book-plans/nibli-performance-candidate.patch
+and /tmp/rights-nibli-perf.llSbQz/rights-verify-c622. Its 622 reasoner tests passed;
+the preceding discard/cache candidate also passed all 12 oracle/differential
+tests. The full candidate passed all 12,860 pins across 4,190 cases in 1,099.00
+seconds, with complete contradiction checks, no findings and all nine known
+defects still reproduced. Brief development-test builds overlapped after the
+five-minute target had already been exceeded. This does not complete the TODO.
+
+A follow-on scratch experiment targets model loading: move owned singleton
+buffers instead of cloning them to split one root, and avoid duplicate pure
+preflight while preserving pre-ID checking and replay validation. Its 623
+reasoner unit tests pass. It is not covered by the full-run earlier binary or
+the retained candidate patch; its performance has not yet been measured.

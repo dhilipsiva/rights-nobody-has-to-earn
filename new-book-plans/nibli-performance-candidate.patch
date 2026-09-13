@@ -1,0 +1,790 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Development candidate for the companion Nibli checkout; not a verification gate.
+--- a/nibli-reason/src/lib.rs
++++ b/nibli-reason/src/lib.rs
+@@ -36,6 +36,11 @@
+ use std::cell::RefCell;
+ use std::collections::{HashMap, HashSet};
+ use std::sync::Arc;
++
++#[cfg(test)]
++thread_local! {
++    static TEST_REBUILD_COUNT: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
++}
+ mod compute;
+ mod contradictions;
+ mod domain;
+@@ -351,7 +356,18 @@
+     /// Stores the buffer in the fact registry and returns a unique fact ID.
+     /// CountNodes and executable ComputeNodes in asserted position (outside
+     /// opaque quoted content) are query-only and fail before id allocation.
+-    fn assert_fact_inner(&self, mut logic: LogicBuffer, label: String) -> Result<u64, String> {
++    #[cfg(test)]
++    fn assert_fact_inner(&self, logic: LogicBuffer, label: String) -> Result<u64, String> {
++        self.assert_fact(logic, label).map_err(reasoning_message)
++    }
++
++    /// Only called on a detached transaction candidate or a fresh unpublished KB.
++    /// An error must propagate to its owner, which discards the whole candidate.
++    fn assert_unpublished_fact(
++        &self,
++        mut logic: LogicBuffer,
++        label: String,
++    ) -> Result<u64, String> {
+         // Validate before minting an id or borrowing/mutating the KB. The same
+         // guard also lives in process_assertion so rebuild replay cannot bypass it.
+         preflight_assertion_buffer(&mut logic)?;
+@@ -363,22 +379,7 @@
+         // rules (register_rule reads current_assertion_id for the rule-source
+         // citations proof traces carry).
+         inner.current_assertion_id = None;
+-        if let Err(e) = result {
+-            // Atomic rollback. A multi-root assertion that fails on a later root
+-            // leaves earlier roots' facts/rules in the live store, but the
+-            // FactRecord is only inserted on success — so those facts would be
+-            // orphaned (un-listable, un-retractable). The failed assertion has no
+-            // FactRecord, so rebuilding from the durable registry reproduces the
+-            // exact pre-assertion state, discarding the partial mutation.
+-            // ROLLBACK, not an ordinary rebuild: the saturated extensions survive
+-            // when nothing was mutated (see `rollback_inner`).
+-            let rb = Self::rollback_inner(&mut inner);
+-            invalidate_pred_cache_keeping_saturation(&inner);
+-            return match rb {
+-                Ok(()) => Err(e),
+-                Err(re) => Err(format!("{e} (additionally, rollback failed: {re})")),
+-            };
+-        }
++        result?;
+         inner.fact_registry.insert(
+             id,
+             Arc::new(FactRecord {
+@@ -428,16 +429,7 @@
+         inner.current_assertion_id = Some(id);
+         let result = process_assertion(&mut inner, &mut logic);
+         inner.current_assertion_id = None;
+-        if let Err(e) = result {
+-            // ROLLBACK, not an ordinary rebuild: the saturated extensions survive
+-            // when nothing was mutated (see `rollback_inner`).
+-            let rb = Self::rollback_inner(&mut inner);
+-            invalidate_pred_cache_keeping_saturation(&inner);
+-            return match rb {
+-                Ok(()) => Err(e),
+-                Err(re) => Err(format!("{e} (additionally, rollback failed: {re})")),
+-            };
+-        }
++        result?;
+         inner.fact_registry.insert(
+             id,
+             Arc::new(FactRecord {
+@@ -498,40 +490,8 @@
+     /// Rebuild the KB from all non-retracted facts.
+     /// Preserves fact_registry and fact_counter; resets all derived state.
+     fn rebuild_inner(inner: &mut KnowledgeBaseInner) -> Result<(), String> {
+-        Self::rebuild_inner_impl(inner, false)
+-    }
+-
+-    /// The ROLLBACK rebuild: identical replay, but the saturated extensions
+-    /// SURVIVE it (C3's strictly-sound subset, 2026-08-16).
+-    ///
+-    /// Why this is sound, and why it is self-limiting: `invalidate_materialization`
+-    /// is called AT EVERY MUTATION POINT by structural invariant (the store insert,
+-    /// the store removal, and rule registration each carry their own call —
+-    /// deliberately not left to caller discipline). So a saturation that is still
+-    /// `Some` when a failed assertion rolls back is proof that the attempt mutated
+-    /// NOTHING: the state the replay reproduces is the state the saturation was
+-    /// built from. An attempt that did mutate — a strict-mode insert-then-eject,
+-    /// say — has already dropped the saturation at that mutation, so there is
+-    /// nothing to preserve and this behaves exactly as before. The gating is done
+-    /// by the existing invalidation calls, not by a new bookkeeping flag that
+-    /// could drift out of step with them.
+-    ///
+-    /// (The replay also drops eagerly forward-derived facts, which it never
+-    /// re-fires. That cannot invalidate a preserved saturation: such a fact is
+-    /// derivable by the very rules that produced it, so seeding with or without it
+-    /// reaches the same fixpoint, and fewer seeds can only make `seed_edb` refuse
+-    /// FEWER relations — never wrongly claim completeness for one.)
+-    ///
+-    /// A replay that ERRORS discards the saturation: the state it leaves is not
+-    /// the state anything was computed from.
+-    fn rollback_inner(inner: &mut KnowledgeBaseInner) -> Result<(), String> {
+-        Self::rebuild_inner_impl(inner, true)
+-    }
+-
+-    fn rebuild_inner_impl(
+-        inner: &mut KnowledgeBaseInner,
+-        preserve_saturation: bool,
+-    ) -> Result<(), String> {
++        #[cfg(test)]
++        TEST_REBUILD_COUNT.set(TEST_REBUILD_COUNT.get() + 1);
+         // Preserve user-declared arg sorts (set via `set_predicate_sorts`): replay
+         // only re-infers arity+source per predicate, never the sorts, so clearing
+         // `predicate_registry` below would silently drop them.
+@@ -581,17 +541,7 @@
+         // `invalidate_pred_cache`, because `KnowledgeBase::rebuild` is the one rebuild
+         // entry point that does NOT invalidate — a stale extension surviving it would
+         // answer `~p(x)` from the pre-rebuild knowledge base.
+-        //
+-        // TAKEN rather than dropped: `rollback_inner` restores it after a successful
+-        // replay (see its doc for why a surviving saturation proves the attempt
+-        // mutated nothing). Held OUTSIDE the KB for the duration, so the replay's own
+-        // per-insert invalidations cannot interact with it.
+-        let stashed_saturation = inner.materialized.borrow_mut().take();
+-        let stashed_saturation = if preserve_saturation {
+-            stashed_saturation
+-        } else {
+-            None
+-        };
++        *inner.materialized.borrow_mut() = None;
+
+         // Collect non-retracted buffers + their ids ordered by ID (owned, to avoid
+         // a borrow conflict with the mutable replay below).
+@@ -651,10 +601,6 @@
+         }
+
+         if replay_errors.is_empty() {
+-            // The replay reproduced the state the saturation was built from.
+-            if let Some(saturation) = stashed_saturation {
+-                *inner.materialized.borrow_mut() = Some(saturation);
+-            }
+             Ok(())
+         } else {
+             let detail = replay_errors
+@@ -1478,7 +1424,7 @@
+     pub fn set_materialization(&self, on: bool) {
+         let mut inner = self.inner.borrow_mut();
+         inner.materialization = on;
+-        *inner.materialized.borrow_mut() = None;
++        reasoning::invalidate_materialization(&inner);
+     }
+
+     /// Whether stratum-ordered materialisation is enabled — the read twin of
+@@ -1781,7 +1727,7 @@
+         // The layer contract is Syntax=nibli-kr / Semantic=nibli-semantics / Reasoning=nibli-reason.
+         self.transaction(|candidate| {
+             candidate
+-                .assert_fact_inner(logic, label)
++                .assert_unpublished_fact(logic, label)
+                 .map_err(NibliError::Reasoning)
+         })
+     }
+@@ -1812,7 +1758,7 @@
+                 for root in buffer.split_roots() {
+                     ids.push(
+                         candidate
+-                            .assert_fact_inner(root, label.clone())
++                            .assert_unpublished_fact(root, label.clone())
+                             .map_err(NibliError::Reasoning)?,
+                     );
+                 }
+@@ -1859,7 +1805,7 @@
+                 // This KB is unpublished: a batch error discards it wholesale.
+                 // Avoid cloning its growing state for every individual root.
+                 statement_ids.push(
+-                    kb.assert_fact_inner(root, label.clone())
++                    kb.assert_unpublished_fact(root, label.clone())
+                         .map_err(NibliError::Reasoning)?,
+                 );
+             }
+@@ -2136,6 +2082,7 @@
+     /// by `reset()`.
+     pub fn set_rule_forward(&self, conclusion_predicate: &str, forward: bool) {
+         let mut inner = self.inner.borrow_mut();
++        inner.query_domain.completed_at.set(None);
+         *inner.materialization_plan.borrow_mut() = None;
+         inner
+             .rule_exec_overrides
+@@ -2182,6 +2129,7 @@
+     /// Cleared by `reset()`.
+     pub fn set_rule_priority(&self, conclusion_predicate: &str, priority: u32) {
+         let mut inner = self.inner.borrow_mut();
++        inner.query_domain.completed_at.set(None);
+         *inner.materialization_plan.borrow_mut() = None;
+         inner
+             .rule_exec_overrides
+@@ -2228,6 +2176,7 @@
+     /// e.g., `declare_entity_sort("adam", "person")` means adam is a person.
+     pub fn declare_entity_sort(&self, entity: &str, sort: &str) {
+         let mut inner = self.inner.borrow_mut();
++        inner.query_domain.completed_at.set(None);
+         inner
+             .entity_sorts
+             .insert(entity.to_string(), sort.to_string());
+@@ -2238,6 +2187,7 @@
+     /// Transitive: if person ⊂ animal and animal ⊂ entity, then person is compatible with entity.
+     pub fn declare_subsort(&self, child: &str, parent: &str) {
+         let mut inner = self.inner.borrow_mut();
++        inner.query_domain.completed_at.set(None);
+         inner
+             .sort_hierarchy
+             .entry(child.to_string())
+@@ -2251,6 +2201,7 @@
+     /// Empty string = no constraint for that position.
+     pub fn set_predicate_sorts(&self, predicate: &str, arg_sorts: Vec<String>) {
+         let mut inner = self.inner.borrow_mut();
++        inner.query_domain.completed_at.set(None);
+         if let Some(sig) = inner.predicate_registry.get_mut(predicate) {
+             sig.arg_sorts = arg_sorts;
+         } else {
+--- a/nibli-reason/src/domain.rs
++++ b/nibli-reason/src/domain.rs
+@@ -7,6 +7,7 @@
+ #[cfg(test)]
+ thread_local! {
+     pub(super) static TEST_CLOSURE_LIMIT: std::cell::Cell<Option<usize>> = const { std::cell::Cell::new(None) };
++    pub(super) static TEST_CLOSURE_RUNS: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
+ }
+
+ fn closure_limit() -> usize {
+@@ -20,6 +21,9 @@
+ #[derive(Default)]
+ pub(super) struct QueryDomain {
+     pub(super) incomplete: Option<QueryResult>,
++    /// Reuse only a fully closed domain, at no smaller reasoning budget and in
++    /// the same proof/lookup mode. Every logical mutation clears this stamp.
++    pub(super) completed_at: std::cell::Cell<Option<(usize, bool, usize)>>,
+     /// The actual rule/bindings licensing each member. Kept query-local, never
+     /// inserted into the asserted fact store or its provenance sidecar.
+     activations: HashMap<GroundTerm, (Arc<UniversalRuleRecord>, HashMap<String, GroundTerm>)>,
+@@ -279,9 +283,20 @@
+     }
+ }
+
+-/// Recompute witness activations at each reasoning depth, while sharing only
+-/// the immutable rule plan. Cached absence never stands in for a fresh closure.
++/// A complete fixed point can be reused while facts, rules and profile remain
++/// unchanged. Incomplete or shallower-budget closures are always recomputed.
+ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(), String> {
++    check_cancelled(inner)?;
++    if let Some((depth, lookup, limit)) = inner.query_domain.completed_at.get() {
++        if depth <= inner.max_chain_depth
++            && lookup == inner.positive_lookup.get()
++            && limit == closure_limit()
++        {
++            return Ok(());
++        }
++    }
++    #[cfg(test)]
++    TEST_CLOSURE_RUNS.set(TEST_CLOSURE_RUNS.get() + 1);
+     inner.query_domain = QueryDomain::default();
+     inner.domain_members_dirty = true;
+     inner.ensure_domain_members_cached();
+@@ -299,6 +314,11 @@
+     }
+     let rules = &plan.rules;
+     if rules.is_empty() {
++        inner.query_domain.completed_at.set(Some((
++            inner.max_chain_depth,
++            inner.positive_lookup.get(),
++            closure_limit(),
++        )));
+         return Ok(());
+     }
+     clear_and_enable_pred_cache(inner);
+@@ -452,6 +472,11 @@
+             clear_and_enable_pred_cache(inner);
+         }
+     }
++    inner.query_domain.completed_at.set(Some((
++        inner.max_chain_depth,
++        inner.positive_lookup.get(),
++        closure_limit(),
++    )));
+     Ok(())
+ }
+
+--- a/nibli-reason/src/kb.rs
++++ b/nibli-reason/src/kb.rs
+@@ -1682,7 +1682,7 @@
+     pub(super) known_numbers: HashSet<u64>,
+     pub(super) known_rules: RuleIdentityIndex,
+     pub(super) skolem_fn_registry: Vec<SkolemFnEntry>,
+-    /// Derived individual membership and its completeness, rebuilt per query pass.
++    /// Derived individual membership; completed closure survives read-only queries.
+     pub(super) query_domain: QueryDomain,
+     /// Pluggable fact store (in-memory or persistent).
+     pub(super) fact_store: Box<dyn crate::fact_store::FactStore>,
+--- a/nibli-reason/src/reasoning.rs
++++ b/nibli-reason/src/reasoning.rs
+@@ -2093,6 +2093,9 @@
+ /// registration, retraction, reset, profile switch), keeps the unconditional
+ /// drop via [`invalidate_materialization`].
+ pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner, fact: &StoredFact) {
++    // Domain membership is global, even when this fact is outside the currently
++    // saturated query cone. Never reuse witness closure across any insertion.
++    inner.query_domain.completed_at.set(None);
+     let surface = crate::materialize::surface_relation(fact.relation()).to_string();
+     // DECIDE under a shared borrow, ACT after releasing it: the two mutating
+     // arms below each re-borrow, and a `RefMut` held across them panics.
+@@ -2123,6 +2126,7 @@
+ }
+
+ pub(super) fn invalidate_materialization(inner: &KnowledgeBaseInner) {
++    inner.query_domain.completed_at.set(None);
+     *inner.materialized.borrow_mut() = None;
+ }
+
+--- a/nibli-reason/src/materialize.rs
++++ b/nibli-reason/src/materialize.rs
+@@ -1125,8 +1125,8 @@
+ /// one) — soundness never depends on the bound-position analysis, only the
+ /// speedup does, and an unexpectedly unbound "bound" variable falls open to the
+ /// full scan. Maps are shared across levels and rules in one immutable round;
+-/// full and delta extensions have separate keys. Level 0 is never
+-/// indexed (it is visited exactly once, so a build costs what one scan costs).
++/// full and delta extensions have separate keys. Constants can index level 0
++/// too: its map is shared by other rules with the same relation/key positions.
+ struct LevelIndex<'e> {
+     bound_positions: Vec<usize>,
+     map: Option<std::sync::Arc<TupleIndex<'e>>>,
+@@ -1142,10 +1142,8 @@
+ fn bound_positions(positive: &[Atom]) -> Vec<Vec<usize>> {
+     let mut earlier_vars: HashSet<&str> = HashSet::new();
+     let mut result = Vec::with_capacity(positive.len());
+-    for (i, atom) in positive.iter().enumerate() {
+-        result.push(if i == 0 {
+-            Vec::new()
+-        } else {
++    for atom in positive {
++        result.push(
+             atom.values
+                 .iter()
+                 .enumerate()
+@@ -1154,8 +1152,8 @@
+                     _ => true,
+                 })
+                 .map(|(position, _)| position)
+-                .collect()
+-        });
++                .collect(),
++        );
+         for v in &atom.values {
+             if let GroundTerm::PatternVar(n) = v {
+                 earlier_vars.insert(n.as_str());
+@@ -1172,7 +1170,7 @@
+ /// extension, so a round only re-derives what the previous round could have enabled.
+ /// When `None` the rule is evaluated against the full extensions (the seeding round).
+ ///
+-/// Join levels beyond the first are INDEXED on their statically bound positions
++/// Join levels are INDEXED on their statically bound positions
+ /// (see [`LevelIndex`]): a transitive-closure shape that scanned O(|R|²) tuples
+ /// per round now touches O(|R| · fanout).
+ fn eval_rule<'e>(
+@@ -1245,7 +1243,7 @@
+         let Some(tuples) = source.get(&atom.relation) else {
+             return;
+         };
+-        // Indexed path: a level past the first whose template has statically
++        // Indexed path: a level whose template has statically
+         // bound positions visits only the bucket matching the current
+         // bindings' key values. `take()`/restore instead of borrowing the map
+         // across the recursion — levels strictly increase, so this level's map
+@@ -2157,8 +2155,17 @@
+         .as_ref()
+         .map(|materialized| materialized.requested.clone())
+         .unwrap_or_default();
+-    if inner.materialized.borrow().is_some() && targets.is_subset(&previous_targets) {
+-        return false;
++    if let Some(materialized) = inner.materialized.borrow_mut().as_mut() {
++        if targets.is_subset(&previous_targets) {
++            return false;
++        }
++        // A root already completed as a dependency needs no second saturation.
++        // Retain it in the requested union for later mutation/recompute paths.
++        // Refused or unfinished dependencies never satisfy this shortcut.
++        if targets.is_subset(&materialized.complete) {
++            materialized.requested.extend(targets.iter().cloned());
++            return false;
++        }
+     }
+
+     let mut cumulative = targets.clone();
+--- a/nibli-reason/src/tests/assertions.rs
++++ b/nibli-reason/src/tests/assertions.rs
+@@ -1,5 +1,78 @@
++// SPDX-License-Identifier: MIT OR Apache-2.0
++
+ use super::*;
+
++#[test]
++fn refused_candidates_are_discarded_without_registry_replay() {
++    for ingress in ["single", "preassigned", "batch", "fresh"] {
++        let kb = new_kb();
++        let setup = ["derived_only(\"fit\").", "dog(Rex)."];
++        for text in setup {
++            assert_buf(&kb, compile_surface(text));
++        }
++        let next_id = kb.next_fact_id().unwrap();
++        let before = kb.active_typed_facts().unwrap();
++        let records = kb.list_assertion_records().unwrap();
++        TEST_REBUILD_COUNT.set(0);
++        let bad = compile_surface("dog(Phantom). fit(Phantom).");
++        assert!(bad.roots.len() > 1, "exercise a late-root failure");
++        match ingress {
++            "single" => {
++                kb.assert_fact(bad, "refused".into()).unwrap_err();
++            }
++            "preassigned" => {
++                kb.assert_fact_with_id(bad, "refused".into(), next_id)
++                    .unwrap_err();
++            }
++            "batch" => {
++                kb.assert_compiled_batch(vec![(bad, "refused".into())])
++                    .unwrap_err();
++            }
++            "fresh" => {
++                let mut statements = setup
++                    .into_iter()
++                    .map(|text| (compile_surface(text), text.into()))
++                    .collect::<Vec<_>>();
++                statements.push((bad, "refused".into()));
++                assert!(KnowledgeBase::from_compiled_batch(statements).is_err());
++            }
++            _ => unreachable!(),
++        }
++        assert_eq!(
++            TEST_REBUILD_COUNT.get(),
++            0,
++            "{ingress} replayed a doomed candidate"
++        );
++        assert_eq!(
++            kb.next_fact_id().unwrap(),
++            next_id,
++            "{ingress} consumed a live ID"
++        );
++        assert_eq!(
++            kb.active_typed_facts().unwrap(),
++            before,
++            "{ingress} leaked facts"
++        );
++        assert_eq!(
++            kb.list_assertion_records().unwrap(),
++            records,
++            "{ingress} leaked records"
++        );
++        assert!(query_false(&kb, compile_surface("dog(Phantom).")));
++        assert!(query(&kb, compile_surface("dog(Rex).")));
++        let id = kb
++            .assert_fact(compile_surface("cat(Bel)."), "accepted".into())
++            .unwrap();
++        assert_eq!(id, next_id);
++        kb.retract_fact(id).unwrap();
++        assert_eq!(
++            TEST_REBUILD_COUNT.get(),
++            1,
++            "ordinary withdrawal still replays"
++        );
++    }
++}
++
+ // ─── Multiple roots test ─────────────────────────────────────
+
+ #[test]
+--- a/nibli-reason/src/tests/materialization.rs
++++ b/nibli-reason/src/tests/materialization.rs
+@@ -9,9 +9,125 @@
+ //! verdict, only how fast one is reached. Everything else here pins a way that could
+ //! stop being true.
+
++// SPDX-License-Identifier: MIT OR Apache-2.0
++
+ use super::*;
+
+ #[test]
++fn first_join_constants_are_indexed_across_unrelated_input_records() {
++    let kb = new_kb();
++    for i in 0..50 {
++        assert_buf(
++            &kb,
++            compile_surface(&format!("authorized(Source{i}, Other, Record{i}).")),
++        );
++    }
++    assert_buf(&kb, compile_surface("authorized(Ara, Wanted, RecordHit)."));
++    assert_buf(
++        &kb,
++        compile_surface(
++            "all $source: all $record: authorized($source, Wanted, $record) -> permits($source, $record).",
++        ),
++    );
++    kb.ensure_materialized(&compile_surface("permits(Ara, RecordHit)."), true);
++    assert!(query(&kb, compile_surface("permits(Ara, RecordHit).")));
++    assert!(query_false(
++        &kb,
++        compile_surface("permits(Source0, Record0).")
++    ));
++    assert!(
++        kb.materialization_tuple_bind_attempts("permits") <= 2,
++        "constant discriminator must exclude unrelated first-level tuples"
++    );
++    let added = assert_id(
++        &kb,
++        compile_surface("authorized(Bel, Wanted, RecordTwo)."),
++        "growth",
++    );
++    assert!(query(&kb, compile_surface("permits(Bel, RecordTwo).")));
++    kb.retract_fact(added).unwrap();
++    assert!(query_false(
++        &kb,
++        compile_surface("permits(Bel, RecordTwo).")
++    ));
++}
++
++#[test]
++fn completed_dependency_roots_reuse_the_existing_saturation() {
++    let kb = new_kb();
++    for text in [
++        "dog(Rex).",
++        "all $x: dog($x) & ~cat($x) -> animal($x).",
++        "all $x: animal($x) -> fit($x).",
++    ] {
++        assert_buf(&kb, compile_surface(text));
++    }
++    let inner = kb.inner.borrow();
++    assert!(materialize::ensure_materialized_targets(
++        &inner,
++        &HashSet::from(["fit".into()])
++    ));
++    assert!(
++        inner
++            .materialized
++            .borrow()
++            .as_ref()
++            .unwrap()
++            .complete
++            .contains("animal")
++    );
++    assert!(!materialize::ensure_materialized_targets(
++        &inner,
++        &HashSet::from(["animal".into()])
++    ));
++    assert!(
++        inner
++            .materialized
++            .borrow()
++            .as_ref()
++            .unwrap()
++            .requested
++            .contains("animal")
++    );
++    drop(inner);
++    assert!(query(&kb, compile_surface("animal(Rex).")));
++    let blocker = assert_id(&kb, compile_surface("cat(Rex)."), "withdrawable blocker");
++    assert!(query_false(&kb, compile_surface("animal(Rex).")));
++    assert!(query_false(&kb, compile_surface("fit(Rex).")));
++    kb.retract_fact(blocker).unwrap();
++    assert!(query(&kb, compile_surface("animal(Rex).")));
++    assert!(query(&kb, compile_surface("fit(Rex).")));
++}
++
++#[test]
++fn a_missing_dependency_root_still_requires_saturation() {
++    let kb = new_kb();
++    for text in ["dog(Rex).", "cat(Bel).", "all $x: dog($x) -> animal($x)."] {
++        assert_buf(&kb, compile_surface(text));
++    }
++    let inner = kb.inner.borrow();
++    assert!(materialize::ensure_materialized_targets(
++        &inner,
++        &HashSet::from(["animal".into()])
++    ));
++    assert!(
++        !inner
++            .materialized
++            .borrow()
++            .as_ref()
++            .unwrap()
++            .complete
++            .contains("cat")
++    );
++    assert!(materialize::ensure_materialized_targets(
++        &inner,
++        &HashSet::from(["cat".into()])
++    ));
++    drop(inner);
++    assert!(query(&kb, compile_surface("cat(Bel).")));
++}
++
++#[test]
+ fn warming_rule_plan_performs_no_query_and_shares_only_immutable_planning() {
+     let run = |warm: bool| {
+         let kb = new_kb();
+@@ -1994,13 +2110,10 @@
+     );
+ }
+
+-/// The rollback's cache hygiene is NOT relaxed along with the saturation: the
+-/// derived predicate cache and its depth-cut table are still cleared and the
+-/// cache still disabled, so nothing the failed attempt derived can outlive it.
+-/// (Pins `invalidate_pred_cache_keeping_saturation` doing its two jobs — a
+-/// gutted version leaves the saturation intact and is otherwise invisible.)
++/// A refused detached candidate cannot alter the live query cache. Its own
++/// transient derivations die with it, alongside any partially asserted roots.
+ #[test]
+-fn a_refused_assertion_still_clears_and_disables_the_predicate_cache() {
++fn a_refused_assertion_leaves_the_live_predicate_cache_untouched() {
+     let kb = kb_with_live_saturation();
+     {
+         // Warm the cache the way a query does, so the clear has something to do.
+@@ -2008,22 +2121,27 @@
+         clear_and_enable_pred_cache(&inner);
+     }
+     assert!(query(&kb, compile_surface("animal(Rex).")));
++    let before = {
++        let inner = kb.inner.borrow();
++        (
++            inner.pred_cache_enabled.get(),
++            inner.pred_cache.borrow().len(),
++            inner.depth_cut_table.borrow().len(),
++        )
++    };
+
+     kb.assert_fact_inner(compile_surface("fit(Rex)."), String::new())
+         .expect_err("refused");
+
+     let inner = kb.inner.borrow();
+-    assert!(
+-        !inner.pred_cache_enabled.get(),
+-        "the rollback must leave the predicate cache DISABLED"
+-    );
+-    assert!(
+-        inner.pred_cache.borrow().is_empty(),
+-        "the rollback must leave the predicate cache EMPTY"
+-    );
+-    assert!(
+-        inner.depth_cut_table.borrow().is_empty(),
+-        "the depth-cut table shares the cache lifecycle and must be cleared too"
++    assert_eq!(
++        (
++            inner.pred_cache_enabled.get(),
++            inner.pred_cache.borrow().len(),
++            inner.depth_cut_table.borrow().len()
++        ),
++        before,
++        "a refused candidate must not publish its transient cache"
+     );
+     drop(inner);
+     assert!(
+--- a/nibli-reason/src/tests/witness_closure.rs
++++ b/nibli-reason/src/tests/witness_closure.rs
+@@ -1,6 +1,122 @@
++// SPDX-License-Identifier: MIT OR Apache-2.0
++
+ use super::*;
+
+ #[test]
++fn completed_witness_closure_reuses_only_unchanged_state_and_mode() {
++    let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
++    kb.ensure_materialized(&compile_surface("person(Adam)."), true);
++    TEST_CLOSURE_RUNS.set(0);
++    assert_eq!(verdict(&kb, "likes(Adam, some cat)."), QueryResult::True);
++    let first = TEST_CLOSURE_RUNS.get();
++    assert!(first > 0);
++    assert_eq!(verdict(&kb, "cat(exactly 1 cat)."), QueryResult::True);
++    assert_eq!(
++        TEST_CLOSURE_RUNS.get(),
++        first,
++        "unchanged closure should be reused"
++    );
++
++    let cancel = Arc::new(std::sync::atomic::AtomicBool::new(true));
++    kb.set_cancel_flag(Arc::clone(&cancel));
++    assert!(
++        kb.query_entailment(compile_surface("person(Adam)."))
++            .is_err()
++    );
++    cancel.store(false, std::sync::atomic::Ordering::Relaxed);
++
++    let new_person = assert_id(&kb, compile_surface("person(Bob)."), "new person");
++    assert_eq!(verdict(&kb, "cat(exactly 2 cat)."), QueryResult::True);
++    assert!(
++        TEST_CLOSURE_RUNS.get() > first,
++        "new facts invalidate domain closure"
++    );
++    kb.retract_fact(new_person).unwrap();
++    assert_eq!(verdict(&kb, "cat(exactly 1 cat)."), QueryResult::True);
++    assert_eq!(verdict(&kb, "likes(Bob, some cat)."), QueryResult::False);
++
++    let before_proof = TEST_CLOSURE_RUNS.get();
++    let (result, proof) = kb
++        .query_entailment_with_proof_inner(compile_surface("likes(Adam, some cat)."))
++        .unwrap();
++    assert_eq!(result, QueryResult::True);
++    assert!(!proof.steps.is_empty());
++    assert!(
++        TEST_CLOSURE_RUNS.get() > before_proof,
++        "proof mode rebuilds activation evidence"
++    );
++
++    kb.set_max_chain_depth(1).unwrap();
++    let before_depth = TEST_CLOSURE_RUNS.get();
++    assert_eq!(verdict(&kb, "person(Adam)."), QueryResult::True);
++    assert!(
++        TEST_CLOSURE_RUNS.get() > before_depth,
++        "depth/profile changes invalidate closure"
++    );
++}
++
++#[test]
++fn incomplete_witness_closure_is_never_reused_as_complete() {
++    let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
++    kb.ensure_materialized(&compile_surface("person(Adam)."), true);
++    assert_eq!(verdict(&kb, "cat(exactly 1 cat)."), QueryResult::True);
++    TEST_CLOSURE_LIMIT.set(Some(1));
++    let result = verdict(&kb, "cat(exactly 1 cat).");
++    TEST_CLOSURE_LIMIT.set(None);
++    assert!(matches!(result, QueryResult::ResourceExceeded(_)));
++    assert!(kb.inner.borrow().query_domain.completed_at.get().is_none());
++    assert_eq!(verdict(&kb, "cat(exactly 1 cat)."), QueryResult::True);
++}
++
++#[test]
++fn cached_witness_closure_matches_fresh_across_mutations_and_profiles() {
++    fn run(reuse: bool) -> Vec<QueryResult> {
++        let kb = surface_kb(&[
++            "person(Adam).",
++            "likes(every person, some cat).",
++            "all $x: cat($x) & ~dog($x) -> animal($x).",
++        ]);
++        let mut results = Vec::new();
++        let mut sample = || {
++            for text in [
++                "likes(Adam, some cat).",
++                "cat(exactly 1 cat).",
++                "cat(exactly 2 cat).",
++                "animal(some cat).",
++                "likes(Bob, some cat).",
++                "person(Bob).",
++            ] {
++                if !reuse {
++                    kb.inner.borrow().query_domain.completed_at.set(None);
++                }
++                results.push(verdict(&kb, text));
++            }
++        };
++        sample();
++        let bob = assert_id(&kb, compile_surface("person(Bob)."), "second person");
++        sample();
++        kb.retract_fact(bob).unwrap();
++        sample();
++        kb.set_materialization(false);
++        sample();
++        kb.set_materialization(true);
++        sample();
++        kb.set_rule_priority("likes", 10);
++        sample();
++        kb.set_rule_forward("likes", false);
++        sample();
++        kb.set_max_chain_depth(1).unwrap();
++        sample();
++        kb.set_max_chain_depth(10).unwrap();
++        sample();
++        kb.reset().unwrap();
++        sample();
++        results
++    }
++    assert_eq!(run(true), run(false));
++}
++
++#[test]
+ fn complete_unary_witness_filter_tracks_growth_and_proof_mode() {
+     let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
+     kb.set_materialization(true);
