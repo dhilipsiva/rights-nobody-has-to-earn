@@ -1,76 +1,49 @@
 SPDX-License-Identifier: CC-BY-4.0
 
 Active TODO: Meet the five-minute complete-verification target.
+Implementation remains unfinished; do not start another constitutional family.
 
-Drafting — performance unfinished. One performance item, no new rule family.
+Scope: speed up the runner and its companion engine without changing the live
+constitution, pins, refusals, scoped retractions, stateful sequences, trusted
+shell preconditions or complete contradiction checks. No persisted verdicts,
+input hashes, receipts, administrative gates or Book 2 operations.
 
-Slice 1: identify and remove repeated work (under four hours).
-Formal surface: unchanged live constitution, isolated cases and explicit
-counterfactuals. No pin, expectation, refusal, scoped retraction, stateful
-sequence, shell precondition or complete contradiction check is removed.
-Positive/negative checks: release runner regression suite, manual live timing
-probe, engine transaction/materialization/withdrawal differentials for any
-dependency optimization, then the complete live verifier with 1–4 workers.
-Governed sources/projections: runner only; no Book 1 prose or Book 2 operation.
-Counterfactual impact: timing only; source transformations remain unchanged.
-Reader consequence: a faster authoring loop, not a stronger formal claim.
-Book 2 handoff: none; its implementation remains inactive until Gate C.
+The measured additional engine patch is retained in
+new-book-plans/nibli-performance-candidate.patch, against Nibli fa91a5f.
+It is now applied to the previously clean companion after filesystem approval.
+No unrelated companion work was overwritten. The engine is committed as fdd9de1.
 
-Baseline: full run 12,860 pins / 4,190 cases / nine existing defect pins,
-1,552.00 seconds. Manual probe identifies ~3.6 seconds per refusal or scoped
-retraction, negligible snapshot and complete contradiction-scan costs, and
-repeated query preparation. Profiling alone does not complete this TODO.
+The rebuilt normal verifier passed all 12,860 pins across 4,190 cases
+in 526.66 seconds (8m46.66s), with complete contradiction checks, no findings
+and nine existing defects reproduced. Four workers, release already built;
+this session started no other development build/test during the measurement.
+Other machine work was not controlled. The scratch candidate passed in 525.93
+seconds; the baseline was 1,552.00 seconds. Intermediate experiments are in
+new-book-plans/nibli-performance-candidate.md. The five-minute target is open.
 
-Experiment: use a scratch copy of the companion engine; do not overwrite or
-stage its existing pending changes. Test detached-candidate discard and reuse
-of already-completed dependency roots before considering any engine handoff.
-No experiment result is a persisted verification verdict or routine gate.
+Engine integration checks:
+- Native and WebAssembly CI passed through just ci-all.
+- The final 633 reasoner tests pass, including the added negative-only
+  equality and full-versus-delta index regressions.
+- The corrected 43-mutation sweep had 34 caught, six unbuildable, one missed
+  and two timeouts. Focused follow-ups caught all three by assertion failures:
+  full/delta indexes, condition binders and the resumption mechanism.
+  Combined: 37 caught, six unbuildable, none unresolved. The broad sweep alone
+  did not pass. Earlier short-timeout and costly-closure attempts were stopped;
+  they are not credited as caught mutations.
 
-The first candidate is retained at book commit f5924d5 and as
-/tmp/rights-nibli-perf.llSbQz/rights-verify-c622. Its 622 reasoner tests passed;
-the preceding discard/cache candidate also passed all 12 oracle/differential
-tests. The full candidate passed all 12,860 pins across 4,190 cases in 1,099.00
-seconds, with complete contradiction checks, no findings and all nine known
-defects still reproduced. Brief development-test builds overlapped after the
-five-minute target had already been exceeded. This does not complete the TODO.
+The normal evidence chapter also passes all 40 pins. README and the performance
+notes record the full integrated run. Do not close the TODO unless normal
+complete verification passes under five minutes. No book source, pin expectation
+or case inventory was changed by these optimizations.
 
-A follow-on scratch experiment targets model loading: move owned singleton
-buffers instead of cloning them to split one root, and avoid duplicate pure
-preflight while preserving pre-ID checking and replay validation. Its 623
-reasoner unit tests and all 12 oracle/differential tests pass. It is not covered
-by the full-run earlier binary. The focused preparation probe measured 6.000
-seconds for base preparation, versus about seven seconds for the earlier
-candidate; this alone is insufficient. Split preparation timing into compiled
-buffer copies, ordered model construction and rule-plan preparation next.
+Nibli origin uses SSH without a usable key. HTTPS fetch succeeded and confirms
+remote main was fa91a5f before this integration. Use HTTPS without changing the
+user's remote configuration. The book's normal origin push works.
 
-The companion's existing changes landed upstream as fa91a5f; its worktree is
-now clean and the retained additional patch still applies without conflicts.
-The inventory contains 116 distinct base/edit combinations, including 105
-singleton groups, so regrouping cases cannot remove most model construction.
-
-The candidate retained at 9d8fb07 adds shared-identity filtering, necessary
-constant-match prechecks and precomputed distinct rule dependency lists.
-Its 626 reasoner tests, five session batch tests and all 12 oracle/differential
-tests pass. Its five-case probe took 26.64 seconds. Its complete
-run passed all 12,860 pins across 4,190 cases in 661.85 seconds (11 minutes
-1.85 seconds), with complete contradiction checks, no findings and all nine
-known defects reproduced. Four workers, release binary already built, and no
-overlapping development build/test. The five-minute TODO remains open; this
-candidate is not yet integrated into the companion or production verifier.
-
-The ordered-rule-insertion hypothesis was tested and discarded: repeated
-measurements showed no reproducible improvement. The current retained patch
-instead avoids copying discarded condition-variable dependency lists and
-checks fixed-value discriminators before scanning every positive relation.
-It passes 628 reasoner tests, all 12 oracle/differential tests, five session
-fixture-batch tests and 24 runner tests. The five-case probe took 23.46 seconds.
-The complete run passed all 12,860 pins across 4,190 cases in 558.35 seconds
-(9 minutes 18.35 seconds), with complete contradiction checks, no findings
-and all nine existing defect pins reproduced. Four workers, release binary
-already built, no overlapping development build/test. The target remains open.
-
-Next scratch experiment: specialize already range-restricted materialized
-rules using explicit positive scalar equalities, retaining every builtin and
-all original eligibility checks. Four regressions have been drafted but not
-run. These source edits are not in the retained patch or measured binary;
-test and measure them before claiming correctness or a speedup.
+Next scratch-only experiment: borrowed join names/values and immutable index
+position lists in /tmp/rights-nibli-perf.llSbQz. Its earlier 633-test reasoner
+suite passed, including pointer-identity and partial-mismatch unwind checks.
+The integration regressions were subsequently added to that source; rerun its
+tests before measuring it. It is not in the retained patch or companion, and
+has no oracle or timing result. Keep its evidence distinct from the integration.

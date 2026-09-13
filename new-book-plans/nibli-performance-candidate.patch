@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-# Development candidate against Nibli fa91a5f; not a verification gate.
+# Nibli changes from fa91a5f to fdd9de1; not a verification gate.
 --- a/nibli-reason/src/lib.rs
 +++ b/nibli-reason/src/lib.rs
-@@ -36,6 +36,11 @@
+@@ -36,6 +36,11 @@ use std::borrow::Cow;
  use std::cell::RefCell;
  use std::collections::{HashMap, HashSet};
  use std::sync::Arc;
@@ -14,7 +14,7 @@
  mod compute;
  mod contradictions;
  mod domain;
-@@ -351,34 +356,30 @@
+@@ -351,34 +356,30 @@ impl KnowledgeBase {
      /// Stores the buffer in the fact registry and returns a unique fact ID.
      /// CountNodes and executable ComputeNodes in asserted position (outside
      /// opaque quoted content) are query-only and fail before id allocation.
@@ -63,7 +63,7 @@
          inner.fact_registry.insert(
              id,
              Arc::new(FactRecord {
-@@ -426,18 +427,9 @@
+@@ -426,18 +427,9 @@ impl KnowledgeBase {
          // Attribute any rule compiled during this replay to THIS fact — the
          // rule-source citations proof traces carry read current_assertion_id.
          inner.current_assertion_id = Some(id);
@@ -84,7 +84,7 @@
          inner.fact_registry.insert(
              id,
              Arc::new(FactRecord {
-@@ -498,40 +490,8 @@
+@@ -498,40 +490,8 @@ impl KnowledgeBase {
      /// Rebuild the KB from all non-retracted facts.
      /// Preserves fact_registry and fact_counter; resets all derived state.
      fn rebuild_inner(inner: &mut KnowledgeBaseInner) -> Result<(), String> {
@@ -127,7 +127,7 @@
          // Preserve user-declared arg sorts (set via `set_predicate_sorts`): replay
          // only re-infers arity+source per predicate, never the sorts, so clearing
          // `predicate_registry` below would silently drop them.
-@@ -581,17 +541,7 @@
+@@ -581,17 +541,7 @@ impl KnowledgeBase {
          // `invalidate_pred_cache`, because `KnowledgeBase::rebuild` is the one rebuild
          // entry point that does NOT invalidate — a stale extension surviving it would
          // answer `~p(x)` from the pre-rebuild knowledge base.
@@ -146,7 +146,7 @@
 
          // Collect non-retracted buffers + their ids ordered by ID (owned, to avoid
          // a borrow conflict with the mutable replay below).
-@@ -651,10 +601,6 @@
+@@ -651,10 +601,6 @@ impl KnowledgeBase {
          }
 
          if replay_errors.is_empty() {
@@ -157,7 +157,7 @@
              Ok(())
          } else {
              let detail = replay_errors
-@@ -1478,7 +1424,7 @@
+@@ -1478,7 +1424,7 @@ impl KnowledgeBase {
      pub fn set_materialization(&self, on: bool) {
          let mut inner = self.inner.borrow_mut();
          inner.materialization = on;
@@ -166,7 +166,7 @@
      }
 
      /// Whether stratum-ordered materialisation is enabled — the read twin of
-@@ -1770,6 +1716,17 @@
+@@ -1770,6 +1716,17 @@ impl KnowledgeBase {
          preflight_assertion_buffer(&mut logic).map_err(NibliError::Reasoning)
      }
 
@@ -184,7 +184,7 @@
      /// Assert a compiled FOL formula into the knowledge base. Returns the fact ID.
      /// Exact-count and executable compute formulas in asserted position are
      /// query-only and cannot be installed as constraints/facts; opaque
-@@ -1781,7 +1738,7 @@
+@@ -1781,7 +1738,7 @@ impl KnowledgeBase {
          // The layer contract is Syntax=nibli-kr / Semantic=nibli-semantics / Reasoning=nibli-reason.
          self.transaction(|candidate| {
              candidate
@@ -193,7 +193,7 @@
                  .map_err(NibliError::Reasoning)
          })
      }
-@@ -1807,12 +1764,11 @@
+@@ -1807,12 +1764,11 @@ impl KnowledgeBase {
                          "fixture assertion cancelled".to_owned(),
                      ));
                  }
@@ -208,7 +208,7 @@
                              .map_err(NibliError::Reasoning)?,
                      );
                  }
-@@ -1853,13 +1809,12 @@
+@@ -1853,13 +1809,12 @@ impl KnowledgeBase {
                      "fixture construction cancelled".to_owned(),
                  ));
              }
@@ -224,7 +224,7 @@
                          .map_err(NibliError::Reasoning)?,
                  );
              }
-@@ -2136,6 +2091,7 @@
+@@ -2136,6 +2091,7 @@ impl KnowledgeBase {
      /// by `reset()`.
      pub fn set_rule_forward(&self, conclusion_predicate: &str, forward: bool) {
          let mut inner = self.inner.borrow_mut();
@@ -232,7 +232,7 @@
          *inner.materialization_plan.borrow_mut() = None;
          inner
              .rule_exec_overrides
-@@ -2182,6 +2138,7 @@
+@@ -2182,6 +2138,7 @@ impl KnowledgeBase {
      /// Cleared by `reset()`.
      pub fn set_rule_priority(&self, conclusion_predicate: &str, priority: u32) {
          let mut inner = self.inner.borrow_mut();
@@ -240,7 +240,7 @@
          *inner.materialization_plan.borrow_mut() = None;
          inner
              .rule_exec_overrides
-@@ -2228,6 +2185,7 @@
+@@ -2228,6 +2185,7 @@ impl KnowledgeBase {
      /// e.g., `declare_entity_sort("adam", "person")` means adam is a person.
      pub fn declare_entity_sort(&self, entity: &str, sort: &str) {
          let mut inner = self.inner.borrow_mut();
@@ -248,7 +248,7 @@
          inner
              .entity_sorts
              .insert(entity.to_string(), sort.to_string());
-@@ -2238,6 +2196,7 @@
+@@ -2238,6 +2196,7 @@ impl KnowledgeBase {
      /// Transitive: if person ⊂ animal and animal ⊂ entity, then person is compatible with entity.
      pub fn declare_subsort(&self, child: &str, parent: &str) {
          let mut inner = self.inner.borrow_mut();
@@ -256,7 +256,7 @@
          inner
              .sort_hierarchy
              .entry(child.to_string())
-@@ -2251,6 +2210,7 @@
+@@ -2251,6 +2210,7 @@ impl KnowledgeBase {
      /// Empty string = no constraint for that position.
      pub fn set_predicate_sorts(&self, predicate: &str, arg_sorts: Vec<String>) {
          let mut inner = self.inner.borrow_mut();
@@ -266,7 +266,7 @@
          } else {
 --- a/nibli-reason/src/domain.rs
 +++ b/nibli-reason/src/domain.rs
-@@ -7,6 +7,8 @@
+@@ -7,6 +7,8 @@ pub(super) const MAX_INFERENCE_RECORDS: usize = 2_000_000;
  #[cfg(test)]
  thread_local! {
      pub(super) static TEST_CLOSURE_LIMIT: std::cell::Cell<Option<usize>> = const { std::cell::Cell::new(None) };
@@ -275,7 +275,7 @@
  }
 
  fn closure_limit() -> usize {
-@@ -20,6 +22,9 @@
+@@ -20,6 +22,9 @@ fn closure_limit() -> usize {
  #[derive(Default)]
  pub(super) struct QueryDomain {
      pub(super) incomplete: Option<QueryResult>,
@@ -285,7 +285,7 @@
      /// The actual rule/bindings licensing each member. Kept query-local, never
      /// inserted into the asserted fact store or its provenance sidecar.
      activations: HashMap<GroundTerm, (Arc<UniversalRuleRecord>, HashMap<String, GroundTerm>)>,
-@@ -119,6 +124,28 @@
+@@ -119,6 +124,28 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
      }
  }
 
@@ -314,7 +314,7 @@
  /// Predicate stratification alone omits the implicit domain read of an
  /// unguarded universal. Generating a new member can then invalidate the very
  /// absence that generated it. Include that dependency before accepting any
-@@ -126,11 +153,7 @@
+@@ -126,11 +153,7 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
  fn domain_dependency_graph(inner: &KnowledgeBaseInner) -> HashMap<String, Vec<(String, bool)>> {
      const DOMAIN: &str = "__nibli_activated_individual_domain";
      let mut graph = inner.pred_dep_graph.clone();
@@ -327,7 +327,7 @@
          // Collect guarded names once. Re-scanning every condition separately
          // for every variable is quadratic in large compiled constitutional rules.
          let mut guarded = HashSet::new();
-@@ -224,12 +247,8 @@
+@@ -224,12 +247,8 @@ impl DomainPlan {
              };
          }
          let strata = materialize::compute_strata(&graph);
@@ -341,7 +341,7 @@
              let mut terms = Vec::new();
              for fact in &rule.typed_conclusions {
                  for term in &fact.inner().args {
-@@ -279,9 +298,19 @@
+@@ -279,9 +298,19 @@ impl DomainPlan {
      }
  }
 
@@ -363,7 +363,7 @@
      inner.query_domain = QueryDomain::default();
      inner.domain_members_dirty = true;
      inner.ensure_domain_members_cached();
-@@ -299,6 +328,11 @@
+@@ -299,6 +328,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
      }
      let rules = &plan.rules;
      if rules.is_empty() {
@@ -375,7 +375,7 @@
          return Ok(());
      }
      clear_and_enable_pred_cache(inner);
-@@ -452,6 +486,11 @@
+@@ -452,6 +486,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
              clear_and_enable_pred_cache(inner);
          }
      }
@@ -389,7 +389,7 @@
 
 --- a/nibli-reason/src/kb.rs
 +++ b/nibli-reason/src/kb.rs
-@@ -553,12 +553,19 @@
+@@ -553,12 +553,19 @@ fn operational_comparison_atom(relation: &str, args: &[LogicalTerm]) -> Option<S
 
  /// Canonicalize/validate internal abstraction markers before using them as
  /// opacity boundaries, then apply every structural assertion guard. Callers run
@@ -410,7 +410,7 @@
  /// The constraint-ingress twin of the assertion guards above, for the
  /// `StoredFact`-vector path (`register_constraint`) that never sees a
  /// `LogicBuffer`. A constraint conjunct only ever matches STORED facts, so a
-@@ -1682,7 +1689,7 @@
+@@ -1682,7 +1689,7 @@ pub(super) struct KnowledgeBaseInner {
      pub(super) known_numbers: HashSet<u64>,
      pub(super) known_rules: RuleIdentityIndex,
      pub(super) skolem_fn_registry: Vec<SkolemFnEntry>,
@@ -419,7 +419,7 @@
      pub(super) query_domain: QueryDomain,
      /// Pluggable fact store (in-memory or persistent).
      pub(super) fact_store: Box<dyn crate::fact_store::FactStore>,
-@@ -2723,11 +2730,10 @@
+@@ -2723,11 +2730,10 @@ pub(super) fn enable_pred_cache(inner: &KnowledgeBaseInner) {
 
  /// Invalidate the predicate result cache WITHOUT touching the saturation.
  ///
@@ -435,7 +435,7 @@
  pub(super) fn invalidate_pred_cache_keeping_saturation(inner: &KnowledgeBaseInner) {
      clear_typed_pred_cache(inner);
      inner.pred_cache_enabled.set(false);
-@@ -3386,6 +3392,15 @@
+@@ -3386,6 +3392,15 @@ pub(super) fn process_assertion(
      logic: &mut LogicBuffer,
  ) -> Result<(), String> {
      preflight_assertion_buffer(logic)?;
@@ -451,7 +451,7 @@
      inner.begin_skolem_scope();
      // Strict-mode violations from PREVIOUS internal forward chaining (which
      // has no user error channel) must not bleed into THIS assertion's verdict.
-@@ -3501,8 +3516,8 @@
+@@ -3501,8 +3516,8 @@ pub(super) fn process_assertion(
 
              // FAIL CLOSED: EDB/IDB separation. A relation declared derived-only
              // may become true ONLY by derivation, so a direct ground assertion of
@@ -464,7 +464,7 @@
              // Only the event TYPE leaf is tested (`permits(ev)`), never the role
 --- a/nibli-reason/src/reasoning.rs
 +++ b/nibli-reason/src/reasoning.rs
-@@ -2093,6 +2093,9 @@
+@@ -2093,6 +2093,9 @@ pub(super) fn clear_typed_pred_cache(inner: &KnowledgeBaseInner) {
  /// registration, retraction, reset, profile switch), keeps the unconditional
  /// drop via [`invalidate_materialization`].
  pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner, fact: &StoredFact) {
@@ -474,7 +474,7 @@
      let surface = crate::materialize::surface_relation(fact.relation()).to_string();
      // DECIDE under a shared borrow, ACT after releasing it: the two mutating
      // arms below each re-borrow, and a `RefMut` held across them panics.
-@@ -2123,6 +2126,7 @@
+@@ -2123,6 +2126,7 @@ pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner,
  }
 
  pub(super) fn invalidate_materialization(inner: &KnowledgeBaseInner) {
@@ -484,7 +484,7 @@
 
 --- a/nibli-reason/src/materialize.rs
 +++ b/nibli-reason/src/materialize.rs
-@@ -501,6 +501,8 @@
+@@ -501,6 +501,8 @@ pub(super) struct ProjectedRule {
      pub(super) positive: Vec<Atom>,
      /// Constant/previously-bound positions, computed once with the rule plan.
      bound_positions: Vec<Vec<usize>>,
@@ -493,35 +493,144 @@
      /// Negated body atoms, checked by lookup once the positives have bound everything.
      pub(super) negative: Vec<Atom>,
      /// Flat built-in conditions we know how to decide, with their negation flag.
-@@ -632,6 +634,27 @@
+@@ -529,6 +531,79 @@ fn is_builtin(rel: &str) -> bool {
+     BUILTIN_RELATIONS.contains(&rel)
+ }
+
++/// Specialize an already-admitted projection using positive scalar equalities.
++/// Keep every equality as an executable condition, including conflicts, and
++/// rewrite all its variable uses together. Range/shape checks must run FIRST:
++/// a constant equality does not make an otherwise unbound rule admissible.
++fn specialize_fixed_values(
++    positive: &mut [Atom],
++    negative: &mut [Atom],
++    head: &mut [Atom],
++    builtins: &mut [(StoredFact, bool)],
++) -> Vec<bool> {
++    let mut fixed = HashMap::new();
++    for (fact, negated) in builtins.iter() {
++        if *negated || fact.relation() != nibli_types::relations::IDENTITY {
++            continue;
++        }
++        let (name, value) = match fact.inner().args.as_slice() {
++            [GroundTerm::PatternVar(name), value] | [value, GroundTerm::PatternVar(name)] => {
++                (name, value)
++            }
++            _ => continue,
++        };
++        if matches!(
++            value,
++            GroundTerm::Constant(_)
++                | GroundTerm::Description(_)
++                | GroundTerm::Number(_)
++                | GroundTerm::Unspecified
++        ) {
++            fixed.entry(name.clone()).or_insert_with(|| value.clone());
++        }
++    }
++    if fixed.is_empty() {
++        return Vec::new();
++    }
++    let replace = |value: &mut GroundTerm| {
++        if let GroundTerm::PatternVar(name) = value
++            && let Some(constant) = fixed.get(name)
++        {
++            *value = constant.clone();
++            true
++        } else {
++            false
++        }
++    };
++    let mut promoted = vec![false; positive.len()];
++    for (index, atom) in positive.iter_mut().enumerate() {
++        for value in &mut atom.values {
++            promoted[index] |= replace(value);
++        }
++    }
++    for atom in negative.iter_mut().chain(head.iter_mut()) {
++        for value in &mut atom.values {
++            replace(value);
++        }
++    }
++    for (fact, _) in builtins {
++        if !fact
++            .inner()
++            .args
++            .iter()
++            .any(|value| matches!(value, GroundTerm::PatternVar(name) if fixed.contains_key(name)))
++        {
++            continue;
++        }
++        let mut grounded = fact.inner().clone();
++        for value in &mut grounded.args {
++            replace(value);
++        }
++        *fact = StoredFact::with_tense_from(grounded, fact);
++    }
++    promoted
++}
++
+ /// Rewrite one compiled rule as function-free surface Datalog.
+ pub(super) fn project_rule(rule: &UniversalRuleRecord) -> Result<ProjectedRule, Ineligible> {
+     let label = rule.label.clone();
+@@ -553,7 +628,7 @@ pub(super) fn project_rule(rule: &UniversalRuleRecord) -> Result<ProjectedRule,
+         }
+     }
+
+-    let (positive, pos_flat) = project_atoms(&pos_conds).map_err(&flav)?;
++    let (mut positive, pos_flat) = project_atoms(&pos_conds).map_err(&flav)?;
+     let (neg_flat_atoms, neg_flat) = project_atoms(&neg_conds).map_err(&flav)?;
+
+     let mut builtins: Vec<(StoredFact, bool)> = Vec::new();
+@@ -592,7 +667,7 @@ pub(super) fn project_rule(rule: &UniversalRuleRecord) -> Result<ProjectedRule,
+     // The head. `project_atoms` rejects a `SkolemFn` in a VALUE position but not in the
+     // event slot, which is exactly right: the dependent Skolem that every `∀`-rule head
+     // carries lives in the event slot and is what the projection eliminates.
+-    let (head, head_flat, suppressed) =
++    let (mut head, head_flat, suppressed) =
+         project_atoms_inner(&rule.typed_conclusions).map_err(&flav)?;
+     if !head_flat.is_empty() || head.is_empty() {
+         return Err(Ineligible::NotProjectable(label));
+@@ -629,9 +704,38 @@ pub(super) fn project_rule(rule: &UniversalRuleRecord) -> Result<ProjectedRule,
+         return Err(Ineligible::NotRangeRestricted(label));
+     }
+
++    let promoted = specialize_fixed_values(&mut positive, &mut negative, &mut head, &mut builtins);
++    let mut constant_probes: Vec<_> = positive
++        .iter()
++        .enumerate()
++        .filter_map(|(index, atom)| {
++            let positions: Vec<_> = atom
++                .values
++                .iter()
++                .enumerate()
++                .filter(|(_, value)| !matches!(value, GroundTerm::PatternVar(_)))
++                .map(|(position, _)| position)
++                .collect();
++            if positions.is_empty() {
++                return None;
++            }
++            let key = positions
++                .iter()
++                .map(|&position| atom.values[position].clone())
++                .collect();
++            Some((index, positions, key))
++        })
++        .collect();
++    if !promoted.is_empty() {
++        // A record-kind or mode equality is usually more selective than the
++        // shared authority/field prefixes. Reorder only necessary prechecks,
++        // never the executable joins or their binding order.
++        constant_probes.sort_by_key(|(index, _, _)| !promoted[*index]);
++    }
      Ok(ProjectedRule {
          label,
          bound_positions: bound_positions(&positive),
-+        constant_probes: positive
-+            .iter()
-+            .enumerate()
-+            .filter_map(|(index, atom)| {
-+                let positions: Vec<_> = atom
-+                    .values
-+                    .iter()
-+                    .enumerate()
-+                    .filter(|(_, value)| !matches!(value, GroundTerm::PatternVar(_)))
-+                    .map(|(position, _)| position)
-+                    .collect();
-+                if positions.is_empty() {
-+                    return None;
-+                }
-+                let key = positions
-+                    .iter()
-+                    .map(|&position| atom.values[position].clone())
-+                    .collect();
-+                Some((index, positions, key))
-+            })
-+            .collect(),
++        constant_probes,
          positive,
          negative,
          builtins,
-@@ -667,6 +690,10 @@
+@@ -667,6 +771,10 @@ pub(super) struct Eligibility {
      pub(super) refused: HashMap<String, Ineligible>,
      /// The projected form of every rule that survived, keyed by head relation.
      pub(super) rules: HashMap<String, Vec<std::sync::Arc<ProjectedRule>>>,
@@ -532,7 +641,7 @@
  }
 
  /// Rule-only planning survives ordinary fact insertions and can be shared by
-@@ -716,6 +743,8 @@
+@@ -716,6 +824,8 @@ pub(super) fn eligible_relations(inner: &KnowledgeBaseInner) -> Eligibility {
              eligible: HashSet::new(),
              refused,
              rules,
@@ -541,7 +650,7 @@
          };
      }
 
-@@ -756,6 +785,25 @@
+@@ -756,6 +866,25 @@ pub(super) fn eligible_relations(inner: &KnowledgeBaseInner) -> Eligibility {
          }
      }
 
@@ -567,7 +676,7 @@
      // Candidate set: every relation with at least one surviving rule, minus the refused.
      let mut eligible: HashSet<String> = rules
          .keys()
-@@ -781,14 +829,12 @@
+@@ -781,14 +910,12 @@ pub(super) fn eligible_relations(inner: &KnowledgeBaseInner) -> Eligibility {
      loop {
          let mut drop_rel: Option<(String, String)> = None;
          'outer: for rel in &eligible {
@@ -587,7 +696,7 @@
              }
          }
          match drop_rel {
-@@ -804,6 +850,8 @@
+@@ -804,6 +931,8 @@ pub(super) fn eligible_relations(inner: &KnowledgeBaseInner) -> Eligibility {
          eligible,
          refused,
          rules,
@@ -596,7 +705,7 @@
      }
  }
 
-@@ -819,6 +867,8 @@
+@@ -819,6 +948,8 @@ pub(super) type Extensions = HashMap<String, HashSet<Vec<GroundTerm>>>;
  pub(super) struct MaterializationWork {
      #[cfg(test)]
      tuple_bind_attempts: HashMap<String, usize>,
@@ -605,10 +714,11 @@
      /// How many times this saturation was folded forward incrementally rather
      /// than recomputed. Resets with the `Materialized` it lives in, so a value
      /// of zero after a mutation means the fixpoint was rebuilt from scratch.
-@@ -831,6 +881,19 @@
+@@ -830,6 +961,19 @@ pub(super) struct MaterializationWork {
+ }
 
  impl MaterializationWork {
-     #[inline]
++    #[inline]
 +    fn note_positive_presence_check(&mut self) {
 +        #[cfg(test)]
 +        {
@@ -621,11 +731,10 @@
 +        self.positive_presence_checks
 +    }
 +
-+    #[inline]
+     #[inline]
      fn note_tuple_bind_attempt(&mut self, _rule: &ProjectedRule) {
          #[cfg(test)]
-         for head in &_rule.head {
-@@ -1125,8 +1188,8 @@
+@@ -1125,8 +1269,8 @@ fn builtin_holds(fact: &StoredFact, bindings: &HashMap<String, GroundTerm>) -> O
  /// one) — soundness never depends on the bound-position analysis, only the
  /// speedup does, and an unexpectedly unbound "bound" variable falls open to the
  /// full scan. Maps are shared across levels and rules in one immutable round;
@@ -636,7 +745,7 @@
  struct LevelIndex<'e> {
      bound_positions: Vec<usize>,
      map: Option<std::sync::Arc<TupleIndex<'e>>>,
-@@ -1135,6 +1198,30 @@
+@@ -1135,6 +1279,30 @@ struct LevelIndex<'e> {
  type TupleIndex<'e> = HashMap<Vec<GroundTerm>, Vec<&'e Vec<GroundTerm>>>;
  type RoundIndexes<'e> = HashMap<(String, Vec<usize>, bool), std::sync::Arc<TupleIndex<'e>>>;
 
@@ -667,7 +776,7 @@
  /// The positions of `positive[i]`'s template bound when the walk reaches level
  /// `i`: constants always, and pattern variables that occur in an earlier
  /// positive atom. (A variable repeated within atom `i` itself binds DURING
-@@ -1142,10 +1229,8 @@
+@@ -1142,10 +1310,8 @@ type RoundIndexes<'e> = HashMap<(String, Vec<usize>, bool), std::sync::Arc<Tuple
  fn bound_positions(positive: &[Atom]) -> Vec<Vec<usize>> {
      let mut earlier_vars: HashSet<&str> = HashSet::new();
      let mut result = Vec::with_capacity(positive.len());
@@ -680,7 +789,7 @@
              atom.values
                  .iter()
                  .enumerate()
-@@ -1154,8 +1239,8 @@
+@@ -1154,8 +1320,8 @@ fn bound_positions(positive: &[Atom]) -> Vec<Vec<usize>> {
                      _ => true,
                  })
                  .map(|(position, _)| position)
@@ -691,7 +800,7 @@
          for v in &atom.values {
              if let GroundTerm::PatternVar(n) = v {
                  earlier_vars.insert(n.as_str());
-@@ -1172,7 +1257,7 @@
+@@ -1172,7 +1338,7 @@ fn bound_positions(positive: &[Atom]) -> Vec<Vec<usize>> {
  /// extension, so a round only re-derives what the previous round could have enabled.
  /// When `None` the rule is evaluated against the full extensions (the seeding round).
  ///
@@ -700,7 +809,7 @@
  /// (see [`LevelIndex`]): a transitive-closure shape that scanned O(|R|²) tuples
  /// per round now touches O(|R| · fanout).
  fn eval_rule<'e>(
-@@ -1184,6 +1269,41 @@
+@@ -1184,6 +1350,41 @@ fn eval_rule<'e>(
      work: &mut MaterializationWork,
      shared_indexes: &mut RoundIndexes<'e>,
  ) {
@@ -742,7 +851,7 @@
      // ONE binding map for the whole walk, extended and unwound in place.
      //
      // It used to be an owned `HashMap` cloned per candidate tuple per join level, which
-@@ -1245,7 +1365,7 @@
+@@ -1245,7 +1446,7 @@ fn eval_rule<'e>(
          let Some(tuples) = source.get(&atom.relation) else {
              return;
          };
@@ -751,7 +860,7 @@
          // bound positions visits only the bucket matching the current
          // bindings' key values. `take()`/restore instead of borrowing the map
          // across the recursion — levels strictly increase, so this level's map
-@@ -1261,27 +1381,13 @@
+@@ -1261,27 +1462,13 @@ fn eval_rule<'e>(
                  .collect();
              if let Some(key) = key {
                  if indexes[i].map.is_none() {
@@ -785,7 +894,7 @@
                  }
                  let map = indexes[i].map.take().expect("index map was just built");
                  if let Some(bucket) = map.get(&key) {
-@@ -1595,14 +1701,9 @@
+@@ -1595,14 +1782,9 @@ fn resume_with_delta(
      // reading `~` of it must then LOSE a conclusion the fold would keep.
      if !m.negatively_read.is_empty() {
          let mut readers: HashMap<&str, Vec<&str>> = HashMap::new();
@@ -803,7 +912,7 @@
              }
          }
          let mut seen: HashSet<&str> = HashSet::new();
-@@ -1757,10 +1858,8 @@
+@@ -1757,10 +1939,8 @@ pub(super) fn saturate(
          if unseedable.contains_key(&rel) || !wanted.insert(rel.clone()) {
              continue;
          }
@@ -816,7 +925,7 @@
          }
      }
      // Only relations we are actually allowed to saturate.
-@@ -1826,16 +1925,12 @@
+@@ -1826,16 +2006,12 @@ pub(super) fn saturate(
          loop {
              let mut drop_idx: Option<(usize, String)> = None;
              'scan: for (i, rel) in derived_here.iter().enumerate() {
@@ -838,7 +947,7 @@
                  }
              }
              match drop_idx {
-@@ -1930,14 +2025,7 @@
+@@ -1930,14 +2106,7 @@ pub(super) fn saturate(
 
      // Every relation any eligible rule reads under `~`. An insert into one of
      // these is NOT monotone growth, so `resume_with_delta` must refuse it.
@@ -854,7 +963,7 @@
 
      Materialized {
          ext,
-@@ -2157,8 +2245,17 @@
+@@ -2157,8 +2326,17 @@ pub(super) fn ensure_materialized_targets(
          .as_ref()
          .map(|materialized| materialized.requested.clone())
          .unwrap_or_default();
@@ -1036,7 +1145,7 @@
  #[test]
 --- a/nibli-reason/src/tests/materialization.rs
 +++ b/nibli-reason/src/tests/materialization.rs
-@@ -9,9 +9,240 @@
+@@ -9,8 +9,361 @@
  //! verdict, only how fast one is reached. Everything else here pins a way that could
  //! stop being true.
 
@@ -1044,7 +1153,129 @@
 +
  use super::*;
 
- #[test]
++#[test]
++fn scalar_equality_specialization_agrees_with_backward_reasoning() {
++    for (guard, expected) in [
++        ("$kind = Wanted", true),
++        ("Wanted = $kind", true),
++        ("$kind = Other", false),
++        ("$kind = Wanted & $kind = Other", false),
++        ("~($kind = Other)", true),
++        ("~($kind = Wanted)", false),
++        ("$kind = Wanted & ~($kind = Other)", true),
++        ("$kind = Wanted & ~($kind = Wanted)", false),
++    ] {
++        for on in [false, true] {
++            let kb = new_kb();
++            kb.set_materialization(on);
++            assert_buf(&kb, compile_surface("authorized(Rex, Wanted, Record)."));
++            assert_buf(
++                &kb,
++                compile_surface(&format!(
++                    "all $x: all $kind: authorized($x, $kind, Record) & {guard} -> permits($x, $kind)."
++                )),
++            );
++            let goal = compile_surface("permits(Rex, Wanted).");
++            kb.ensure_materialized(&goal, true);
++            let result = query_result(&kb, goal);
++            assert_eq!(
++                result,
++                if expected {
++                    QueryResult::True
++                } else {
++                    QueryResult::False
++                },
++                "{guard}; materialization={on}"
++            );
++        }
++    }
++}
++
++#[test]
++fn specialized_record_kind_is_checked_before_shared_authority_prefixes() {
++    let kb = new_kb();
++    for text in [
++        "authorized(Rex, SharedRole, Record).",
++        "observe(Rex, Record, Other, KindScope).",
++        "all $x: all $record: all $kind: authorized($x, SharedRole, $record) & observe($x, $record, $kind, KindScope) & $kind = Wanted -> permits($x, $record).",
++    ] {
++        assert_buf(&kb, compile_surface(text));
++    }
++    kb.ensure_materialized(&compile_surface("permits(Rex, Record)."), true);
++    assert_eq!(
++        kb.inner
++            .borrow()
++            .materialized
++            .borrow()
++            .as_ref()
++            .unwrap()
++            .work
++            .positive_presence_checks(),
++        1
++    );
++    assert!(query_false(&kb, compile_surface("permits(Rex, Record).")));
++    assert_buf(
++        &kb,
++        compile_surface("observe(Rex, Record, Wanted, KindScope)."),
++    );
++    assert!(query(&kb, compile_surface("permits(Rex, Record).")));
++}
++
++#[test]
++fn scalar_specialization_rewrites_negative_atoms_and_preserves_withdrawal() {
++    let kb = new_kb();
++    for text in [
++        "authorized(Rex, Wanted, Record).",
++        "related(Rex, Other).",
++        "all $x: all $kind: authorized($x, $kind, Record) & $kind = Wanted & ~related($x, $kind) -> permits($x, $kind).",
++    ] {
++        assert_buf(&kb, compile_surface(text));
++    }
++    let goal = compile_surface("permits(Rex, Wanted).");
++    kb.ensure_materialized(&goal, true);
++    assert!(query(&kb, goal.clone()));
++    let blocked = assert_id(&kb, compile_surface("related(Rex, Wanted)."), "blocker");
++    assert!(query_false(&kb, goal.clone()));
++    kb.retract_fact(blocked).unwrap();
++    assert!(query(&kb, goal));
++}
++
++#[test]
++fn scalar_equality_does_not_admit_a_range_unbound_projection() {
++    let kb = new_kb();
++    assert_buf(&kb, compile_surface("all $x: $x = Rex -> animal($x)."));
++    let inner = kb.inner.borrow();
++    let rule = &inner.universal_rules["animal"][0];
++    assert!(matches!(
++        materialize::project_rule(rule),
++        Err(materialize::Ineligible::NotRangeRestricted(_))
++    ));
++}
++
++#[test]
++fn full_and_delta_constant_indexes_never_alias() {
++    for on in [false, true] {
++        let kb = new_kb();
++        kb.set_materialization(on);
++        for text in [
++            "person(Rex).",
++            "authorized(Rex, Left, Record).",
++            "all $x: person($x) -> authorized($x, Right, Record).",
++            "all $x: authorized($x, Left, Record) & authorized($x, Right, Record) -> permits($x, Record).",
++        ] {
++            assert_buf(&kb, compile_surface(text));
++        }
++        let goal = compile_surface("permits(Rex, Record).");
++        kb.ensure_materialized(&goal, true);
++        assert_eq!(
++            query_result(&kb, goal),
++            QueryResult::True,
++            "materialization={on}"
++        );
++    }
++}
++
++#[test]
 +fn a_first_constant_miss_skips_later_positive_presence_checks() {
 +    let kb = new_kb();
 +    assert_buf(&kb, compile_surface("authorized(Rex, Other, Record)."));
@@ -1273,11 +1504,10 @@
 +    assert!(query(&kb, compile_surface("cat(Bel).")));
 +}
 +
-+#[test]
+ #[test]
  fn warming_rule_plan_performs_no_query_and_shares_only_immutable_planning() {
      let run = |warm: bool| {
-         let kb = new_kb();
-@@ -1924,9 +2155,9 @@
+@@ -1924,9 +2277,9 @@ fn kb_with_live_saturation() -> KnowledgeBase {
      kb
  }
 
@@ -1290,7 +1520,7 @@
  #[test]
  fn a_refused_assertion_preserves_the_saturation() {
      let kb = kb_with_live_saturation();
-@@ -1994,13 +2225,10 @@
+@@ -1994,13 +2347,10 @@ fn preserved_saturation_answers_exactly_as_a_rebuilt_one() {
      );
  }
 
@@ -1307,7 +1537,7 @@
      let kb = kb_with_live_saturation();
      {
          // Warm the cache the way a query does, so the clear has something to do.
-@@ -2008,22 +2236,27 @@
+@@ -2008,22 +2358,27 @@ fn a_refused_assertion_still_clears_and_disables_the_predicate_cache() {
          clear_and_enable_pred_cache(&inner);
      }
      assert!(query(&kb, compile_surface("animal(Rex).")));
@@ -1348,12 +1578,12 @@
      assert!(
 --- a/nibli-reason/src/tests/witness_closure.rs
 +++ b/nibli-reason/src/tests/witness_closure.rs
-@@ -1,6 +1,168 @@
+@@ -1,5 +1,167 @@
 +// SPDX-License-Identifier: MIT OR Apache-2.0
 +
  use super::*;
 
- #[test]
++#[test]
 +fn domain_planning_compares_shared_identities_once_and_keeps_value_deduplication() {
 +    let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
 +    let mut inner = kb.inner.borrow_mut();
@@ -1513,10 +1743,9 @@
 +    assert_eq!(run(true), run(false));
 +}
 +
-+#[test]
+ #[test]
  fn complete_unary_witness_filter_tracks_growth_and_proof_mode() {
      let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
-     kb.set_materialization(true);
 --- a/nibli-reason/src/rules.rs
 +++ b/nibli-reason/src/rules.rs
 @@ -1,5 +1,10 @@
@@ -1530,7 +1759,7 @@
  /// Check if a GroundTerm represents a dependent Skolem placeholder.
  pub(super) fn is_skdep(gt: &GroundTerm) -> bool {
      matches!(gt, GroundTerm::SkolemPlaceholder(_))
-@@ -1738,6 +1743,28 @@
+@@ -1738,6 +1743,28 @@ pub(super) fn compile_forall_to_rule(
          format!("∀{}", universals.join(","))
      };
 
@@ -1559,7 +1788,7 @@
      let mut pattern_vars: HashMap<String, String> = universals
          .iter()
          .enumerate()
-@@ -1758,45 +1785,32 @@
+@@ -1758,45 +1785,32 @@ pub(super) fn compile_forall_to_rule(
 
      let pattern_var_names: Vec<String> =
          universals.iter().map(|v| pattern_vars[v].clone()).collect();

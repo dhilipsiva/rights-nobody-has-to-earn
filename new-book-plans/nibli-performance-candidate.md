@@ -1,16 +1,18 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-# Verification performance — engine candidate
+# Verification performance — integrated engine changes
 
-Status: experimental, not integrated into the companion checkout or the
-production verifier. The five-minute TODO remains open. No constitutional
-source, pin expectation, case inventory or contradiction check is changed.
+Status: integrated as Nibli `fdd9de1`. Engine integration checks passed, and
+the rebuilt normal verifier passed the complete book in **526.66 seconds**.
+The five-minute TODO remains open. No constitutional source, pin expectation,
+case inventory or contradiction check is changed.
 
 The companion's previously pending work landed as `fa91a5f`. The adjacent
-patch now applies directly to that commit and contains only this experiment's
-additional changes. The companion checkout and its index remain untouched.
+patch applies directly to that commit and contains only this experiment's
+additional changes, now committed as `fdd9de1`. The companion was clean before
+the patch was applied; no unrelated companion work was overwritten.
 
-## Changes under test
+## Integrated changes
 
 - Failed assertions run all ordinary guards on a detached candidate, then
   discard that candidate on error. Replaying its entire assertion registry
@@ -46,6 +48,11 @@ additional changes. The companion checkout and its index remain untouched.
 - Fixed-value positive checks run before the whole-body presence scan. A
   failed discriminator excludes a rule early; surviving candidates still
   receive every ordinary presence, arity and binding check.
+- Already range-restricted projections specialize positive scalar equalities
+  across positive atoms, negative atoms, heads and builtins. Every equality
+  remains executable, including conflicting or negated equalities. Necessary
+  prechecks prioritize the specialized fields; executable join order and the
+  global equality-class refusal are unchanged.
 
 Scoped-control retractions still execute the existing replay path. No pin
 verdict is cached between verification runs. These are engine-internal,
@@ -78,14 +85,52 @@ refusals. It executes their pins and complete contradiction reports.
   tests and five session fixture-batch tests. All 12 oracle/differential tests
   also passed (98.54 seconds).
 
-The **current** candidate passed all **12,860 pins across 4,190 cases in
+The candidate retained at book commit `461f846` passed all **12,860 pins across
+4,190 cases in
 558.35 seconds (9 minutes 18.35 seconds)** with four workers. Contradiction
 checks completed with no findings, and all nine existing defect pins still
 reproduced. The release binary was built before the run; no other development
 build or test was started during this measurement. This remains above the
-five-minute target. The same candidate passes 628 reasoner tests, all 12 oracle tests
+five-minute target. That candidate passed 628 reasoner tests, all 12 oracle tests
 (98.49 seconds), five session fixture-batch tests and 24 runner tests. Its
 five-case probe took 23.46 seconds.
+
+The scratch equality-specialization candidate passed 632 reasoner tests,
+all 12 oracle/differential tests (94.27 seconds), five session fixture-batch
+tests and 24 runner tests. Its five-case probe took 20.75 seconds. Its complete
+run passed all **12,860 pins across 4,190 cases in 525.93 seconds (8 minutes
+45.93 seconds)** with four workers, complete contradiction checks, no findings
+and all nine existing defect pins reproduced. The release binary was built
+before the run. This session started no other development build or test during
+the measurement; other machine work was not controlled.
+
+Integration mutation testing exposed a missing negative-only equality case,
+not a failure of the unmutated implementation. The regression now checks
+`~($kind = Other)` without a positive equality, and its denying counterpart.
+The focused test passes. The first mutation run was stopped because its
+reasoner-only baseline gave the wider per-mutation test set an inadequate
+60-second floor; those timeouts are not credited as caught mutations. The
+corrected run uses a 180-second floor and has caught the negative-only mutation.
+The corrected broad sweep finished with 34 caught, six unbuildable, one missed
+and two timed-out mutations. A new old-premise/new-delta regression catches
+the missed full-versus-delta index mutation. Focused reruns also caught the
+condition-binder mutation and the resumption-disabled mutation with explicit
+assertion failures. The latter uses the existing in-cone/out-of-cone mechanism
+test; the longer transitive-closure cost probe was interrupted rather than
+credited as a catch. Combined, the broad sweep and focused follow-ups account
+for all 43 mutations: 37 caught and six unbuildable, none unresolved. This is
+not a claim that the broad sweep alone passed.
+
+The final reasoner suite passes all 633 tests. Native and WebAssembly
+integration checks passed through `just ci-all`; the evidence chapter also
+passed all 40 pins through normal `./verify.sh --only`.
+
+The rebuilt normal `./verify.sh` then passed all **12,860 pins across 4,190
+cases in 526.66 seconds (8 minutes 46.66 seconds)**, with complete contradiction
+checks, no findings and all nine existing defect pins reproduced. This run
+used the actual companion checkout and the book's dependency lockfile, four
+workers and a prebuilt release binary. This session started no other development
+build or test during the measurement; other machine work was not controlled.
 
 The preceding candidate retained at book commit `9d8fb07` passed the same full
 inventory in **661.85 seconds (11 minutes 1.85 seconds)**, also with four
@@ -101,19 +146,21 @@ development-test builds also ran after the five-minute target had already been
 exceeded; this is the observed run time, not an isolated benchmark.
 
 The complete-verification target has **not** been achieved. The probe's larger
-speedup does not describe the whole inventory, and the production verifier is
-unchanged. The runner's development suite separately passed 24 tests, with its
+speedup does not describe the whole inventory. Both the scratch and normal
+release verifier completed the unchanged full inventory, but neither run met
+five minutes. The runner's development suite separately passed 24 tests, with its
 two manual tests ignored; formatting and diff checks passed.
 
 A separate strict reasoner Clippy check did not pass: existing front-end and
 reasoner warnings remain outside this patch's scope. Two warnings in new
-candidate expressions were corrected. This is not a claim that the companion's
-complete release checks have passed.
+candidate expressions were corrected. The required runtime Clippy check and
+`just ci-all` subsequently passed; that does not erase this separate diagnostic
+failure.
 
-The latest preparation probe measured 0.428 seconds copying compiled
-statements, 2.910 seconds constructing the ordered model, and 1.218 seconds
+The latest preparation probe measured 0.449 seconds copying compiled
+statements, 2.711 seconds constructing the ordered model, and 1.243 seconds
 preparing the rule plan. Three scoped-control retractions still took
-2.95–4.34 seconds each. These costs are not hidden by the query gains.
+2.79–3.56 seconds each. These costs are not hidden by the query gains.
 
 A temporary internal loading profile measured 25,641,517 variable-name copies
 before the condition-variable change, versus 1,209,036 afterwards. The same
@@ -135,13 +182,13 @@ cases. It is never part of ordinary verification.
 The scratch workspace is `/tmp/rights-nibli-perf.llSbQz`. Its probe manifest
 uses the live book runner with copied companion crates. The measured release
 binary is `probe-target/release/rights-verify`. The separately retained
-`rights-verify-c622` and `rights-verify-c626` are earlier full-run candidates,
+`rights-verify-c622`, `rights-verify-c626` and `rights-verify-c628` are earlier full-run candidates,
 not the current patch. Scratch source can contain subsequent untested
 experiments; the adjacent patch is the retained, measured candidate.
 Run an experimental binary from the book repository to execute the unchanged
 live inventory. Normal `./verify.sh` still uses the companion checkout.
 
-Before integration, recheck the companion for new unrelated changes, apply
-only the additional patch, run its relevant development
-checks, and rebuild and run the book's complete verifier. Do not delete the
-performance TODO without a passing complete run under five minutes.
+The additional patch is committed in the companion checkout as `fdd9de1`.
+Its native, WebAssembly and mutation checks are complete, and the normal book
+verifier has passed the full inventory against it. The performance TODO remains
+open until a complete run passes under five minutes.
