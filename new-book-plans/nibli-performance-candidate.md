@@ -2,15 +2,16 @@
 
 # Verification performance — integrated engine changes
 
-Status: integrated as Nibli `fdd9de1`. Engine integration checks passed, and
-the rebuilt normal verifier passed the complete book in **526.66 seconds**.
+Status: integrated as Nibli `fdd9de1` and `3f64f0b`. Engine integration checks
+passed, and the rebuilt normal verifier passed the complete book in
+**448.90 seconds (7 minutes 28.90 seconds)**.
 The five-minute TODO remains open. No constitutional source, pin expectation,
 case inventory or contradiction check is changed.
 
 The companion's previously pending work landed as `fa91a5f`. The adjacent
 patch applies directly to that commit and contains only this experiment's
-additional changes, now committed as `fdd9de1`. The companion was clean before
-the patch was applied; no unrelated companion work was overwritten.
+additional changes, now committed as `fdd9de1` and `3f64f0b`. The companion was
+clean before the patch was applied; no unrelated companion work was overwritten.
 
 ## Integrated changes
 
@@ -53,6 +54,12 @@ the patch was applied; no unrelated companion work was overwritten.
   remains executable, including conflicting or negated equalities. Necessary
   prechecks prioritize the specialized fields; executable join order and the
   global equality-class refusal are unchanged.
+- Extending the set of requested query roots moves already completed
+  extensions into the freshly seeded model without repeating their joins.
+  Dirty, incomplete or newly unseedable prior cones are not reused. Stored
+  shape checks and out-of-cone inserts are re-read; cumulative tuple-budget
+  boundaries fall back to the ordinary full evaluation order. Debug builds
+  compare the completed results with a fresh evaluation of the whole union.
 
 Scoped-control retractions still execute the existing replay path. No pin
 verdict is cached between verification runs. These are engine-internal,
@@ -121,9 +128,9 @@ credited as a catch. Combined, the broad sweep and focused follow-ups account
 for all 43 mutations: 37 caught and six unbuildable, none unresolved. This is
 not a claim that the broad sweep alone passed.
 
-The final reasoner suite passes all 633 tests. Native and WebAssembly
-integration checks passed through `just ci-all`; the evidence chapter also
-passed all 40 pins through normal `./verify.sh --only`.
+The first integration's reasoner suite passes all 633 tests. Native and
+WebAssembly integration checks passed through `just ci-all`; the evidence
+chapter also passed all 40 pins through normal `./verify.sh --only`.
 
 The rebuilt normal `./verify.sh` then passed all **12,860 pins across 4,190
 cases in 526.66 seconds (8 minutes 46.66 seconds)**, with complete contradiction
@@ -131,6 +138,40 @@ checks, no findings and all nine existing defect pins reproduced. This run
 used the actual companion checkout and the book's dependency lockfile, four
 workers and a prebuilt release binary. This session started no other development
 build or test during the measurement; other machine work was not controlled.
+
+The completed-cone extension candidate passed the unchanged **12,860 pins
+across 4,190 cases in 457.07 seconds (7 minutes 37.07 seconds)** with four
+workers and a prebuilt release binary. Contradiction checks completed with no
+findings, and all nine existing defect pins still reproduced. This was a
+scratch-binary run; it is not the normal-checkout measurement above. This
+session started no other development build or test during the measurement;
+other machine work was not controlled.
+
+The extension candidate passed 636 reasoner tests and all 12 oracle/differential
+tests (94.13 seconds). Its five-case probe took 20.64 seconds; arrest pins took
+0.132 seconds, force-abroad pins 0.154 seconds, and withdrawal pins 0.321 seconds.
+Model loading and the three actual scoped retractions still dominate that probe.
+The final companion suite passes 637 reasoner tests after a defensive-helper
+regression was added. The normal runner passes 24 development tests, with its
+two manual probes ignored. Native and WebAssembly integration checks passed
+through `just ci-all`, including another complete oracle/differential pass
+(96.53 seconds).
+
+The extension's broad mutation sweep finished with nine caught, two unbuildable
+and two missed mutations. The new regression directly supplies dirty,
+incomplete and newly unseedable prior results to the extension helper. Both
+previously missed guard mutations are caught by assertion failures in a focused
+rerun using the same configured test packages. Combined: 11 caught, two
+unbuildable, none unresolved. The broad sweep alone did not pass; no timeout
+is credited as a catch.
+
+The rebuilt normal `./verify.sh` against Nibli `3f64f0b` then passed all
+**12,860 pins across 4,190 cases in 448.90 seconds (7 minutes 28.90 seconds)**.
+Contradiction checks completed with no findings, and all nine existing defect
+pins still reproduced. This used the actual companion checkout and the book's
+dependency lockfile, four workers and a prebuilt release binary. This session
+started no other development build or test during the measurement; other
+machine work was not controlled. The five-minute target is still not met.
 
 The preceding candidate retained at book commit `9d8fb07` passed the same full
 inventory in **661.85 seconds (11 minutes 1.85 seconds)**, also with four
@@ -188,7 +229,7 @@ experiments; the adjacent patch is the retained, measured candidate.
 Run an experimental binary from the book repository to execute the unchanged
 live inventory. Normal `./verify.sh` still uses the companion checkout.
 
-The additional patch is committed in the companion checkout as `fdd9de1`.
-Its native, WebAssembly and mutation checks are complete, and the normal book
-verifier has passed the full inventory against it. The performance TODO remains
-open until a complete run passes under five minutes.
+The additional patch is committed in the companion checkout as `fdd9de1` and
+`3f64f0b`. Native, WebAssembly and mutation checks are complete. The normal book
+verifier passed the full inventory against `3f64f0b` in 448.90 seconds.
+The performance TODO remains open until a complete run passes under five minutes.

@@ -1,5 +1,207 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
-# Nibli changes from fa91a5f to fdd9de1; not a verification gate.
+diff --git a/nibli-reason/src/domain.rs b/nibli-reason/src/domain.rs
+index 4238ed5..964927e 100644
+--- a/nibli-reason/src/domain.rs
++++ b/nibli-reason/src/domain.rs
+@@ -7,6 +7,8 @@ pub(super) const MAX_INFERENCE_RECORDS: usize = 2_000_000;
+ #[cfg(test)]
+ thread_local! {
+     pub(super) static TEST_CLOSURE_LIMIT: std::cell::Cell<Option<usize>> = const { std::cell::Cell::new(None) };
++    pub(super) static TEST_CLOSURE_RUNS: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
++    pub(super) static TEST_DOMAIN_IDENTITY_CHECKS: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
+ }
+
+ fn closure_limit() -> usize {
+@@ -20,6 +22,9 @@ fn closure_limit() -> usize {
+ #[derive(Default)]
+ pub(super) struct QueryDomain {
+     pub(super) incomplete: Option<QueryResult>,
++    /// Reuse only a fully closed domain, at no smaller reasoning budget and in
++    /// the same proof/lookup mode. Every logical mutation clears this stamp.
++    pub(super) completed_at: std::cell::Cell<Option<(usize, bool, usize)>>,
+     /// The actual rule/bindings licensing each member. Kept query-local, never
+     /// inserted into the asserted fact store or its provenance sidecar.
+     activations: HashMap<GroundTerm, (Arc<UniversalRuleRecord>, HashMap<String, GroundTerm>)>,
+@@ -119,6 +124,28 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
+     }
+ }
+
++/// Preserve first-seen semantic identity order without repeatedly comparing a
++/// shared identity's entire body through every conclusion-index reference.
++/// Distinct allocations still receive the ordinary full-value equality check.
++pub(super) fn distinct_domain_rules(
++    inner: &KnowledgeBaseInner,
++) -> impl Iterator<Item = &Arc<UniversalRuleRecord>> {
++    let mut pointers = HashSet::new();
++    let mut identities = HashSet::new();
++    inner
++        .universal_rules
++        .values()
++        .flatten()
++        .filter(move |rule| {
++            if !pointers.insert(Arc::as_ptr(&rule.identity)) {
++                return false;
++            }
++            #[cfg(test)]
++            TEST_DOMAIN_IDENTITY_CHECKS.set(TEST_DOMAIN_IDENTITY_CHECKS.get() + 1);
++            identities.insert(rule.identity.as_ref())
++        })
++}
++
+ /// Predicate stratification alone omits the implicit domain read of an
+ /// unguarded universal. Generating a new member can then invalidate the very
+ /// absence that generated it. Include that dependency before accepting any
+@@ -126,11 +153,7 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
+ fn domain_dependency_graph(inner: &KnowledgeBaseInner) -> HashMap<String, Vec<(String, bool)>> {
+     const DOMAIN: &str = "__nibli_activated_individual_domain";
+     let mut graph = inner.pred_dep_graph.clone();
+-    let mut seen = HashSet::new();
+-    for rule in inner.universal_rules.values().flatten() {
+-        if !seen.insert(rule.identity.clone()) {
+-            continue;
+-        }
++    for rule in distinct_domain_rules(inner) {
+         // Collect guarded names once. Re-scanning every condition separately
+         // for every variable is quadratic in large compiled constitutional rules.
+         let mut guarded = HashSet::new();
+@@ -224,12 +247,8 @@ impl DomainPlan {
+             };
+         }
+         let strata = materialize::compute_strata(&graph);
+-        let mut seen = HashSet::new();
+         let mut rules = Vec::new();
+-        for rule in inner.universal_rules.values().flatten() {
+-            if !seen.insert(rule.identity.clone()) {
+-                continue;
+-            }
++        for rule in distinct_domain_rules(inner) {
+             let mut terms = Vec::new();
+             for fact in &rule.typed_conclusions {
+                 for term in &fact.inner().args {
+@@ -279,9 +298,19 @@ impl DomainPlan {
+     }
+ }
+
+-/// Recompute witness activations at each reasoning depth, while sharing only
+-/// the immutable rule plan. Cached absence never stands in for a fresh closure.
++/// A complete fixed point can be reused while facts, rules and profile remain
++/// unchanged. Incomplete or shallower-budget closures are always recomputed.
+ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(), String> {
++    check_cancelled(inner)?;
++    if let Some((depth, lookup, limit)) = inner.query_domain.completed_at.get()
++        && depth <= inner.max_chain_depth
++        && lookup == inner.positive_lookup.get()
++        && limit == closure_limit()
++    {
++        return Ok(());
++    }
++    #[cfg(test)]
++    TEST_CLOSURE_RUNS.set(TEST_CLOSURE_RUNS.get() + 1);
+     inner.query_domain = QueryDomain::default();
+     inner.domain_members_dirty = true;
+     inner.ensure_domain_members_cached();
+@@ -299,6 +328,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
+     }
+     let rules = &plan.rules;
+     if rules.is_empty() {
++        inner.query_domain.completed_at.set(Some((
++            inner.max_chain_depth,
++            inner.positive_lookup.get(),
++            closure_limit(),
++        )));
+         return Ok(());
+     }
+     clear_and_enable_pred_cache(inner);
+@@ -452,6 +486,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
+             clear_and_enable_pred_cache(inner);
+         }
+     }
++    inner.query_domain.completed_at.set(Some((
++        inner.max_chain_depth,
++        inner.positive_lookup.get(),
++        closure_limit(),
++    )));
+     Ok(())
+ }
+
+diff --git a/nibli-reason/src/kb.rs b/nibli-reason/src/kb.rs
+index 80987a9..e3d377a 100644
+--- a/nibli-reason/src/kb.rs
++++ b/nibli-reason/src/kb.rs
+@@ -553,12 +553,19 @@ fn operational_comparison_atom(relation: &str, args: &[LogicalTerm]) -> Option<S
+
+ /// Canonicalize/validate internal abstraction markers before using them as
+ /// opacity boundaries, then apply every structural assertion guard. Callers run
+-/// this before id allocation; `process_assertion` repeats it for replay defense.
++/// this before id allocation; registry replay enters through `process_assertion`.
+ pub(super) fn preflight_assertion_buffer(buffer: &mut LogicBuffer) -> Result<(), String> {
++    #[cfg(test)]
++    TEST_ASSERTION_PREFLIGHT_COUNT.set(TEST_ASSERTION_PREFLIGHT_COUNT.get() + 1);
+     canonicalize_abstraction_markers(buffer)?;
+     validate_assertion_buffer(buffer)
+ }
+
++#[cfg(test)]
++thread_local! {
++    pub(super) static TEST_ASSERTION_PREFLIGHT_COUNT: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
++}
++
+ /// The constraint-ingress twin of the assertion guards above, for the
+ /// `StoredFact`-vector path (`register_constraint`) that never sees a
+ /// `LogicBuffer`. A constraint conjunct only ever matches STORED facts, so a
+@@ -1682,7 +1689,7 @@ pub(super) struct KnowledgeBaseInner {
+     pub(super) known_numbers: HashSet<u64>,
+     pub(super) known_rules: RuleIdentityIndex,
+     pub(super) skolem_fn_registry: Vec<SkolemFnEntry>,
+-    /// Derived individual membership and its completeness, rebuilt per query pass.
++    /// Derived individual membership; completed closure survives read-only queries.
+     pub(super) query_domain: QueryDomain,
+     /// Pluggable fact store (in-memory or persistent).
+     pub(super) fact_store: Box<dyn crate::fact_store::FactStore>,
+@@ -2723,11 +2730,10 @@ pub(super) fn enable_pred_cache(inner: &KnowledgeBaseInner) {
+
+ /// Invalidate the predicate result cache WITHOUT touching the saturation.
+ ///
+-/// For the ROLLBACK path only (`KnowledgeBase::rollback_inner`): a refused
+-/// assertion leaves the logical state exactly as it was, so the derived
+-/// predicate cache is cleared out of caution while the saturated extensions —
+-/// which the rollback provably did not invalidate — survive. Every other
+-/// mutation path must use [`invalidate_pred_cache`], which drops both.
++/// Successful assertion ingress uses this after each individual mutation has
++/// already invalidated, dirtied or preserved the saturation at its own site.
++/// Other callers without that mutation-site guarantee use [`invalidate_pred_cache`].
++/// A refused detached candidate is discarded without touching the live caches.
+ pub(super) fn invalidate_pred_cache_keeping_saturation(inner: &KnowledgeBaseInner) {
+     clear_typed_pred_cache(inner);
+     inner.pred_cache_enabled.set(false);
+@@ -3386,6 +3392,15 @@ pub(super) fn process_assertion(
+     logic: &mut LogicBuffer,
+ ) -> Result<(), String> {
+     preflight_assertion_buffer(logic)?;
++    process_preflighted_assertion(inner, logic)
++}
++
++/// Internal assertion ingress after successful structural preflight, with no
++/// intervening buffer mutation. Replay must use `process_assertion` instead.
++pub(super) fn process_preflighted_assertion(
++    inner: &mut KnowledgeBaseInner,
++    logic: &mut LogicBuffer,
++) -> Result<(), String> {
+     inner.begin_skolem_scope();
+     // Strict-mode violations from PREVIOUS internal forward chaining (which
+     // has no user error channel) must not bleed into THIS assertion's verdict.
+@@ -3501,8 +3516,8 @@ pub(super) fn process_assertion(
+
+             // FAIL CLOSED: EDB/IDB separation. A relation declared derived-only
+             // may become true ONLY by derivation, so a direct ground assertion of
+-            // it is refused and the whole assertion unwinds (the caller's
+-            // `rebuild_inner` rollback). Checked BEFORE any leaf is stored, so a
++            // it is refused and the detached assertion candidate is discarded.
++            // Checked BEFORE any leaf is stored, so a
+             // multi-leaf conjunction cannot half-land.
+             //
+             // Only the event TYPE leaf is tested (`permits(ev)`), never the role
+diff --git a/nibli-reason/src/lib.rs b/nibli-reason/src/lib.rs
+index 5633349..65da308 100644
 --- a/nibli-reason/src/lib.rs
 +++ b/nibli-reason/src/lib.rs
 @@ -36,6 +36,11 @@ use std::borrow::Cow;
@@ -264,224 +466,8 @@
          if let Some(sig) = inner.predicate_registry.get_mut(predicate) {
              sig.arg_sorts = arg_sorts;
          } else {
---- a/nibli-reason/src/domain.rs
-+++ b/nibli-reason/src/domain.rs
-@@ -7,6 +7,8 @@ pub(super) const MAX_INFERENCE_RECORDS: usize = 2_000_000;
- #[cfg(test)]
- thread_local! {
-     pub(super) static TEST_CLOSURE_LIMIT: std::cell::Cell<Option<usize>> = const { std::cell::Cell::new(None) };
-+    pub(super) static TEST_CLOSURE_RUNS: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
-+    pub(super) static TEST_DOMAIN_IDENTITY_CHECKS: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
- }
-
- fn closure_limit() -> usize {
-@@ -20,6 +22,9 @@ fn closure_limit() -> usize {
- #[derive(Default)]
- pub(super) struct QueryDomain {
-     pub(super) incomplete: Option<QueryResult>,
-+    /// Reuse only a fully closed domain, at no smaller reasoning budget and in
-+    /// the same proof/lookup mode. Every logical mutation clears this stamp.
-+    pub(super) completed_at: std::cell::Cell<Option<(usize, bool, usize)>>,
-     /// The actual rule/bindings licensing each member. Kept query-local, never
-     /// inserted into the asserted fact store or its provenance sidecar.
-     activations: HashMap<GroundTerm, (Arc<UniversalRuleRecord>, HashMap<String, GroundTerm>)>,
-@@ -119,6 +124,28 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
-     }
- }
-
-+/// Preserve first-seen semantic identity order without repeatedly comparing a
-+/// shared identity's entire body through every conclusion-index reference.
-+/// Distinct allocations still receive the ordinary full-value equality check.
-+pub(super) fn distinct_domain_rules(
-+    inner: &KnowledgeBaseInner,
-+) -> impl Iterator<Item = &Arc<UniversalRuleRecord>> {
-+    let mut pointers = HashSet::new();
-+    let mut identities = HashSet::new();
-+    inner
-+        .universal_rules
-+        .values()
-+        .flatten()
-+        .filter(move |rule| {
-+            if !pointers.insert(Arc::as_ptr(&rule.identity)) {
-+                return false;
-+            }
-+            #[cfg(test)]
-+            TEST_DOMAIN_IDENTITY_CHECKS.set(TEST_DOMAIN_IDENTITY_CHECKS.get() + 1);
-+            identities.insert(rule.identity.as_ref())
-+        })
-+}
-+
- /// Predicate stratification alone omits the implicit domain read of an
- /// unguarded universal. Generating a new member can then invalidate the very
- /// absence that generated it. Include that dependency before accepting any
-@@ -126,11 +153,7 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
- fn domain_dependency_graph(inner: &KnowledgeBaseInner) -> HashMap<String, Vec<(String, bool)>> {
-     const DOMAIN: &str = "__nibli_activated_individual_domain";
-     let mut graph = inner.pred_dep_graph.clone();
--    let mut seen = HashSet::new();
--    for rule in inner.universal_rules.values().flatten() {
--        if !seen.insert(rule.identity.clone()) {
--            continue;
--        }
-+    for rule in distinct_domain_rules(inner) {
-         // Collect guarded names once. Re-scanning every condition separately
-         // for every variable is quadratic in large compiled constitutional rules.
-         let mut guarded = HashSet::new();
-@@ -224,12 +247,8 @@ impl DomainPlan {
-             };
-         }
-         let strata = materialize::compute_strata(&graph);
--        let mut seen = HashSet::new();
-         let mut rules = Vec::new();
--        for rule in inner.universal_rules.values().flatten() {
--            if !seen.insert(rule.identity.clone()) {
--                continue;
--            }
-+        for rule in distinct_domain_rules(inner) {
-             let mut terms = Vec::new();
-             for fact in &rule.typed_conclusions {
-                 for term in &fact.inner().args {
-@@ -279,9 +298,19 @@ impl DomainPlan {
-     }
- }
-
--/// Recompute witness activations at each reasoning depth, while sharing only
--/// the immutable rule plan. Cached absence never stands in for a fresh closure.
-+/// A complete fixed point can be reused while facts, rules and profile remain
-+/// unchanged. Incomplete or shallower-budget closures are always recomputed.
- pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(), String> {
-+    check_cancelled(inner)?;
-+    if let Some((depth, lookup, limit)) = inner.query_domain.completed_at.get()
-+        && depth <= inner.max_chain_depth
-+        && lookup == inner.positive_lookup.get()
-+        && limit == closure_limit()
-+    {
-+        return Ok(());
-+    }
-+    #[cfg(test)]
-+    TEST_CLOSURE_RUNS.set(TEST_CLOSURE_RUNS.get() + 1);
-     inner.query_domain = QueryDomain::default();
-     inner.domain_members_dirty = true;
-     inner.ensure_domain_members_cached();
-@@ -299,6 +328,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
-     }
-     let rules = &plan.rules;
-     if rules.is_empty() {
-+        inner.query_domain.completed_at.set(Some((
-+            inner.max_chain_depth,
-+            inner.positive_lookup.get(),
-+            closure_limit(),
-+        )));
-         return Ok(());
-     }
-     clear_and_enable_pred_cache(inner);
-@@ -452,6 +486,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
-             clear_and_enable_pred_cache(inner);
-         }
-     }
-+    inner.query_domain.completed_at.set(Some((
-+        inner.max_chain_depth,
-+        inner.positive_lookup.get(),
-+        closure_limit(),
-+    )));
-     Ok(())
- }
-
---- a/nibli-reason/src/kb.rs
-+++ b/nibli-reason/src/kb.rs
-@@ -553,12 +553,19 @@ fn operational_comparison_atom(relation: &str, args: &[LogicalTerm]) -> Option<S
-
- /// Canonicalize/validate internal abstraction markers before using them as
- /// opacity boundaries, then apply every structural assertion guard. Callers run
--/// this before id allocation; `process_assertion` repeats it for replay defense.
-+/// this before id allocation; registry replay enters through `process_assertion`.
- pub(super) fn preflight_assertion_buffer(buffer: &mut LogicBuffer) -> Result<(), String> {
-+    #[cfg(test)]
-+    TEST_ASSERTION_PREFLIGHT_COUNT.set(TEST_ASSERTION_PREFLIGHT_COUNT.get() + 1);
-     canonicalize_abstraction_markers(buffer)?;
-     validate_assertion_buffer(buffer)
- }
-
-+#[cfg(test)]
-+thread_local! {
-+    pub(super) static TEST_ASSERTION_PREFLIGHT_COUNT: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
-+}
-+
- /// The constraint-ingress twin of the assertion guards above, for the
- /// `StoredFact`-vector path (`register_constraint`) that never sees a
- /// `LogicBuffer`. A constraint conjunct only ever matches STORED facts, so a
-@@ -1682,7 +1689,7 @@ pub(super) struct KnowledgeBaseInner {
-     pub(super) known_numbers: HashSet<u64>,
-     pub(super) known_rules: RuleIdentityIndex,
-     pub(super) skolem_fn_registry: Vec<SkolemFnEntry>,
--    /// Derived individual membership and its completeness, rebuilt per query pass.
-+    /// Derived individual membership; completed closure survives read-only queries.
-     pub(super) query_domain: QueryDomain,
-     /// Pluggable fact store (in-memory or persistent).
-     pub(super) fact_store: Box<dyn crate::fact_store::FactStore>,
-@@ -2723,11 +2730,10 @@ pub(super) fn enable_pred_cache(inner: &KnowledgeBaseInner) {
-
- /// Invalidate the predicate result cache WITHOUT touching the saturation.
- ///
--/// For the ROLLBACK path only (`KnowledgeBase::rollback_inner`): a refused
--/// assertion leaves the logical state exactly as it was, so the derived
--/// predicate cache is cleared out of caution while the saturated extensions —
--/// which the rollback provably did not invalidate — survive. Every other
--/// mutation path must use [`invalidate_pred_cache`], which drops both.
-+/// Successful assertion ingress uses this after each individual mutation has
-+/// already invalidated, dirtied or preserved the saturation at its own site.
-+/// Other callers without that mutation-site guarantee use [`invalidate_pred_cache`].
-+/// A refused detached candidate is discarded without touching the live caches.
- pub(super) fn invalidate_pred_cache_keeping_saturation(inner: &KnowledgeBaseInner) {
-     clear_typed_pred_cache(inner);
-     inner.pred_cache_enabled.set(false);
-@@ -3386,6 +3392,15 @@ pub(super) fn process_assertion(
-     logic: &mut LogicBuffer,
- ) -> Result<(), String> {
-     preflight_assertion_buffer(logic)?;
-+    process_preflighted_assertion(inner, logic)
-+}
-+
-+/// Internal assertion ingress after successful structural preflight, with no
-+/// intervening buffer mutation. Replay must use `process_assertion` instead.
-+pub(super) fn process_preflighted_assertion(
-+    inner: &mut KnowledgeBaseInner,
-+    logic: &mut LogicBuffer,
-+) -> Result<(), String> {
-     inner.begin_skolem_scope();
-     // Strict-mode violations from PREVIOUS internal forward chaining (which
-     // has no user error channel) must not bleed into THIS assertion's verdict.
-@@ -3501,8 +3516,8 @@ pub(super) fn process_assertion(
-
-             // FAIL CLOSED: EDB/IDB separation. A relation declared derived-only
-             // may become true ONLY by derivation, so a direct ground assertion of
--            // it is refused and the whole assertion unwinds (the caller's
--            // `rebuild_inner` rollback). Checked BEFORE any leaf is stored, so a
-+            // it is refused and the detached assertion candidate is discarded.
-+            // Checked BEFORE any leaf is stored, so a
-             // multi-leaf conjunction cannot half-land.
-             //
-             // Only the event TYPE leaf is tested (`permits(ev)`), never the role
---- a/nibli-reason/src/reasoning.rs
-+++ b/nibli-reason/src/reasoning.rs
-@@ -2093,6 +2093,9 @@ pub(super) fn clear_typed_pred_cache(inner: &KnowledgeBaseInner) {
- /// registration, retraction, reset, profile switch), keeps the unconditional
- /// drop via [`invalidate_materialization`].
- pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner, fact: &StoredFact) {
-+    // Domain membership is global, even when this fact is outside the currently
-+    // saturated query cone. Never reuse witness closure across any insertion.
-+    inner.query_domain.completed_at.set(None);
-     let surface = crate::materialize::surface_relation(fact.relation()).to_string();
-     // DECIDE under a shared borrow, ACT after releasing it: the two mutating
-     // arms below each re-borrow, and a `RefMut` held across them panics.
-@@ -2123,6 +2126,7 @@ pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner,
- }
-
- pub(super) fn invalidate_materialization(inner: &KnowledgeBaseInner) {
-+    inner.query_domain.completed_at.set(None);
-     *inner.materialized.borrow_mut() = None;
- }
-
+diff --git a/nibli-reason/src/materialize.rs b/nibli-reason/src/materialize.rs
+index a4052f6..4ed04a0 100644
 --- a/nibli-reason/src/materialize.rs
 +++ b/nibli-reason/src/materialize.rs
 @@ -501,6 +501,8 @@ pub(super) struct ProjectedRule {
@@ -912,7 +898,65 @@
              }
          }
          let mut seen: HashSet<&str> = HashSet::new();
-@@ -1757,10 +1939,8 @@ pub(super) fn saturate(
+@@ -1708,6 +1890,21 @@ pub(super) fn saturate(
+     elig: &Eligibility,
+     strata: &Strata,
+     targets: &HashSet<String>,
++) -> Materialized {
++    saturate_extending(inner, elig, strata, targets, None, MAX_MATERIALIZED_TUPLES)
++}
++
++/// Extend a completed dependency cone without evaluating its rules again.
++/// The caller has already dealt with pending insertions and every other mutation
++/// invalidates the old saturation. Fresh seeding still checks every stored shape
++/// and incorporates inserts that were outside the previously requested cone.
++pub(super) fn saturate_extending(
++    inner: &KnowledgeBaseInner,
++    elig: &Eligibility,
++    strata: &Strata,
++    targets: &HashSet<String>,
++    previous: Option<Materialized>,
++    limit: usize,
+ ) -> Materialized {
+     // EQUALITY GUARD — repeated here, not only in `eligible_relations`.
+     //
+@@ -1748,6 +1945,35 @@ pub(super) fn saturate(
+         refused.entry(rel.clone()).or_insert_with(|| why.clone());
+     }
+
++    let mut complete = HashSet::new();
++    let mut budget = limit;
++    let mut work = MaterializationWork::default();
++    let previous = previous.filter(|m| {
++        m.grew.is_empty()
++            && m.cone.is_subset(&m.complete)
++            && m.complete.iter().all(|rel| !unseedable.contains_key(rel))
++    });
++    let extending = previous.is_some();
++    if let Some(previous) = previous {
++        // Charge already derived tuples against the same cumulative-union
++        // budget as a fresh saturation. Newly stored duplicates cost nothing.
++        // Carry all heads, including side heads outside the previous cone, just
++        // as the ordinary fixpoint does; only completed relations skip work.
++        for (rel, tuples) in previous.ext {
++            let seeded = ext.entry(rel).or_default();
++            for tuple in tuples {
++                if seeded.insert(tuple) {
++                    let Some(remaining) = budget.checked_sub(1) else {
++                        return saturate_extending(inner, elig, strata, targets, None, limit);
++                    };
++                    budget = remaining;
++                }
++            }
++        }
++        complete = previous.complete;
++        work = previous.work;
++    }
++
+     // Dependency closure of the targets over eligible relations. A target that is not
+     // eligible simply never enters, and its NAF keeps today's behaviour.
+     let mut wanted: HashSet<String> = HashSet::new();
+@@ -1757,10 +1983,8 @@ pub(super) fn saturate(
          if unseedable.contains_key(&rel) || !wanted.insert(rel.clone()) {
              continue;
          }
@@ -925,7 +969,30 @@
          }
      }
      // Only relations we are actually allowed to saturate.
-@@ -1826,16 +2006,12 @@ pub(super) fn saturate(
+@@ -1777,9 +2001,6 @@ pub(super) fn saturate(
+         .collect();
+     by_stratum.sort();
+
+-    let mut complete: HashSet<String> = HashSet::new();
+-    let mut budget = MAX_MATERIALIZED_TUPLES;
+-    let mut work = MaterializationWork::default();
+     let mut idx = 0usize;
+     while idx < by_stratum.len() {
+         let level = by_stratum[idx].0;
+@@ -1805,7 +2026,11 @@ pub(super) fn saturate(
+         // Pass 2 — the derived relations of this stratum.
+         let mut derived_here: Vec<&String> = rels
+             .iter()
+-            .filter(|rel| !unseedable.contains_key(**rel) && saturable.contains(**rel))
++            .filter(|rel| {
++                !complete.contains(**rel)
++                    && !unseedable.contains_key(**rel)
++                    && saturable.contains(**rel)
++            })
+             .copied()
+             .collect();
+
+@@ -1826,16 +2051,12 @@ pub(super) fn saturate(
          loop {
              let mut drop_idx: Option<(usize, String)> = None;
              'scan: for (i, rel) in derived_here.iter().enumerate() {
@@ -947,7 +1014,33 @@
                  }
              }
              match drop_idx {
-@@ -1930,14 +2106,7 @@ pub(super) fn saturate(
+@@ -1874,6 +2095,12 @@ pub(super) fn saturate(
+         let overflowed = derived.is_none();
+
+         if overflowed {
++            if extending {
++                // New roots can occupy earlier strata than the old roots.
++                // On a budget boundary, replay the ordinary order so neither
++                // old nor new relations gain a different completeness claim.
++                return saturate_extending(inner, elig, strata, targets, None, limit);
++            }
+             // Stop-loss. Leave this stratum's relations INCOMPLETE — and every later
+             // stratum too, since their negated lookups would read a partial extension.
+             for rel in derived_here {
+@@ -1888,6 +2115,12 @@ pub(super) fn saturate(
+         }
+     }
+
++    if extending && budget == 0 {
++        // Conservatively preserve the full evaluator's exact-boundary behavior,
++        // including duplicate candidates in a not-yet-published delta round.
++        return saturate_extending(inner, elig, strata, targets, None, limit);
++    }
++
+     // Anything wanted but never completed is reported, so `materialization_report` can
+     // say why a query is still paying for a proof search.
+     for rel in &wanted {
+@@ -1930,14 +2163,7 @@ pub(super) fn saturate(
 
      // Every relation any eligible rule reads under `~`. An insert into one of
      // these is NOT monotone growth, so `resume_with_delta` must refuse it.
@@ -963,7 +1056,18 @@
 
      Materialized {
          ext,
-@@ -2157,8 +2326,17 @@ pub(super) fn ensure_materialized_targets(
+@@ -2110,8 +2336,8 @@ pub(super) fn query_cone_has_negative_dependency(
+ ///
+ /// This is shared by top-level query planning and the backward-chainer's lazy
+ /// positive-subgoal fallback. The cache represents the union of every requested
+-/// root until KB mutation; adding one root recomputes that union rather than
+-/// replacing earlier completed extensions.
++/// root until KB mutation. A fully completed old cone is reused when extending
++/// the union; incomplete cones keep the ordinary full recomputation path.
+ pub(super) fn ensure_materialized_targets(
+     inner: &KnowledgeBaseInner,
+     targets: &HashSet<String>,
+@@ -2157,14 +2383,46 @@ pub(super) fn ensure_materialized_targets(
          .as_ref()
          .map(|materialized| materialized.requested.clone())
          .unwrap_or_default();
@@ -983,6 +1087,164 @@
      }
 
      let mut cumulative = targets.clone();
+     cumulative.extend(previous_targets);
+     let plan = materialization_plan(inner);
+-    let materialized = saturate(inner, &plan.eligibility, &plan.strata, &cumulative);
++    let previous = inner.materialized.borrow_mut().take();
++    let materialized = saturate_extending(
++        inner,
++        &plan.eligibility,
++        &plan.strata,
++        &cumulative,
++        previous,
++        MAX_MATERIALIZED_TUPLES,
++    );
++    #[cfg(debug_assertions)]
++    {
++        let fresh = saturate(inner, &plan.eligibility, &plan.strata, &cumulative);
++        debug_assert_eq!(
++            materialized.complete, fresh.complete,
++            "extended completeness disagrees with a full recompute"
++        );
++        for rel in &fresh.complete {
++            debug_assert_eq!(
++                materialized.ext.get(rel),
++                fresh.ext.get(rel),
++                "extended tuples for '{rel}' disagree with a full recompute"
++            );
++        }
++    }
+     *inner.materialized.borrow_mut() = Some(materialized);
+     true
+ }
+diff --git a/nibli-reason/src/reasoning.rs b/nibli-reason/src/reasoning.rs
+index b97324a..65d2c43 100644
+--- a/nibli-reason/src/reasoning.rs
++++ b/nibli-reason/src/reasoning.rs
+@@ -2093,6 +2093,9 @@ pub(super) fn clear_typed_pred_cache(inner: &KnowledgeBaseInner) {
+ /// registration, retraction, reset, profile switch), keeps the unconditional
+ /// drop via [`invalidate_materialization`].
+ pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner, fact: &StoredFact) {
++    // Domain membership is global, even when this fact is outside the currently
++    // saturated query cone. Never reuse witness closure across any insertion.
++    inner.query_domain.completed_at.set(None);
+     let surface = crate::materialize::surface_relation(fact.relation()).to_string();
+     // DECIDE under a shared borrow, ACT after releasing it: the two mutating
+     // arms below each re-borrow, and a `RefMut` held across them panics.
+@@ -2123,6 +2126,7 @@ pub(super) fn invalidate_materialization_for_insert(inner: &KnowledgeBaseInner,
+ }
+
+ pub(super) fn invalidate_materialization(inner: &KnowledgeBaseInner) {
++    inner.query_domain.completed_at.set(None);
+     *inner.materialized.borrow_mut() = None;
+ }
+
+diff --git a/nibli-reason/src/rules.rs b/nibli-reason/src/rules.rs
+index e9330dd..4574fc8 100644
+--- a/nibli-reason/src/rules.rs
++++ b/nibli-reason/src/rules.rs
+@@ -1,5 +1,10 @@
+ use super::*;
+
++#[cfg(test)]
++thread_local! {
++    pub(super) static TEST_DEPENDENCY_NAME_COPIES: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
++}
++
+ /// Check if a GroundTerm represents a dependent Skolem placeholder.
+ pub(super) fn is_skdep(gt: &GroundTerm) -> bool {
+     matches!(gt, GroundTerm::SkolemPlaceholder(_))
+@@ -1738,6 +1743,28 @@ pub(super) fn compile_forall_to_rule(
+         format!("∀{}", universals.join(","))
+     };
+
++    // Classify condition existentials before allocating conclusion dependency
++    // lists. Those binders become pattern variables, not dependent Skolems;
++    // creating a full list for each one only to remove it wastes large amounts
++    // of copying on wide antecedents. Keep the same capped DNF and binder walk.
++    let clauses = if pf_conditions.is_empty() {
++        None
++    } else {
++        Some(dnf_condition_clauses(
++            buffer,
++            &pf_conditions,
++            MAX_DNF_CLAUSES,
++        )?)
++    };
++    let mut all_condition_exists: HashSet<String> = HashSet::new();
++    if let Some(clauses) = &clauses {
++        for clause in clauses {
++            for &lid in clause {
++                collect_condition_exists(buffer, lid, &mut all_condition_exists);
++            }
++        }
++    }
++
+     let mut pattern_vars: HashMap<String, String> = universals
+         .iter()
+         .enumerate()
+@@ -1758,45 +1785,32 @@ pub(super) fn compile_forall_to_rule(
+
+     let pattern_var_names: Vec<String> =
+         universals.iter().map(|v| pattern_vars[v].clone()).collect();
++    for var in &all_condition_exists {
++        ground_skolems.remove(var);
++        pattern_vars.insert(var.clone(), format!("ev__{}", var));
++    }
+     let mut dependent_skolems: HashMap<String, (SkolemSymbol, Vec<String>)> = skolem_subs
+         .iter()
++        .filter(|(name, _)| !all_condition_exists.contains(name.as_str()))
+         .filter_map(|(k, gt)| {
+-            skdep_symbol(gt).map(|symbol| (k.clone(), (symbol, pattern_var_names.clone())))
++            skdep_symbol(gt).map(|symbol| {
++                #[cfg(test)]
++                TEST_DEPENDENCY_NAME_COPIES
++                    .set(TEST_DEPENDENCY_NAME_COPIES.get() + pattern_var_names.len());
++                (k.clone(), (symbol, pattern_var_names.clone()))
++            })
+         })
+         .collect();
+
+-    let implication = if pf_conditions.is_empty() {
+-        None
+-    } else {
+-        Some((pf_conditions, pf_consequent))
+-    };
+-    match implication {
+-        Some((condition_ids, consequent_id)) => {
++    match clauses {
++        Some(clauses) => {
++            let consequent_id = pf_consequent;
+             // DNF-split the antecedent into conjunctive clauses and register ONE
+             // backward-chaining rule per clause: `∀x.(P(x)∨Q(x))→R(x)` is the
+             // conjunction of `∀x.P(x)→R(x)` and `∀x.Q(x)→R(x)`. A pure conjunction
+             // yields a single clause (byte-identical to the pre-split path); a
+             // disjunctive antecedent (`ro lo X poi P ja Q cu R`, `ganai ga P gi Q gi R`)
+             // yields one clause per disjunct.
+-            let clauses = dnf_condition_clauses(buffer, &condition_ids, MAX_DNF_CLAUSES)?;
+-
+-            // The condition event ∃ vars across ALL clauses become pattern vars (not
+-            // skolems); what remains in `dependent_skolems` are the CONCLUSION
+-            // existentials, shared by every clause. (collect_condition_exists does not
+-            // descend `Or`, so this union mirrors the pre-split single-condition set.)
+-            let mut all_condition_exists: HashSet<String> = HashSet::new();
+-            for clause in &clauses {
+-                for &lid in clause {
+-                    collect_condition_exists(buffer, lid, &mut all_condition_exists);
+-                }
+-            }
+-            for var in &all_condition_exists {
+-                dependent_skolems.remove(var);
+-                ground_skolems.remove(var);
+-                let pvar = format!("ev__{}", var);
+-                pattern_vars.insert(var.clone(), pvar);
+-            }
+-
+             let mut consequent_atoms = flatten_consequent(buffer, consequent_id, skolem_subs, None);
+             // Quoted bodies retain dependency edges for the stratification firewall,
+             // but only their opaque marker can execute in the surrounding KB.
+diff --git a/nibli-reason/src/tests/assertions.rs b/nibli-reason/src/tests/assertions.rs
+index 963caee..f558757 100644
 --- a/nibli-reason/src/tests/assertions.rs
 +++ b/nibli-reason/src/tests/assertions.rs
 @@ -1,5 +1,157 @@
@@ -1143,9 +1405,11 @@
  // ─── Multiple roots test ─────────────────────────────────────
 
  #[test]
+diff --git a/nibli-reason/src/tests/materialization.rs b/nibli-reason/src/tests/materialization.rs
+index 6dcd49c..d74927b 100644
 --- a/nibli-reason/src/tests/materialization.rs
 +++ b/nibli-reason/src/tests/materialization.rs
-@@ -9,8 +9,361 @@
+@@ -9,8 +9,552 @@
  //! verdict, only how fast one is reached. Everything else here pins a way that could
  //! stop being true.
 
@@ -1504,10 +1768,201 @@
 +    assert!(query(&kb, compile_surface("cat(Bel).")));
 +}
 +
++#[test]
++fn a_new_root_extends_completed_cones_without_repeating_their_joins() {
++    let kb = new_kb();
++    for text in [
++        "dog(Rex).",
++        "all $x: dog($x) & ~cat($x) -> animal($x).",
++        "all $x: animal($x) -> fit($x) & healthy($x).",
++        "all $x: fit($x) & ~rotten($x) -> happy($x).",
++    ] {
++        assert_buf(&kb, compile_surface(text));
++    }
++    kb.ensure_materialized(&compile_surface("animal(Rex)."), true);
++    let original_work = kb.materialization_tuple_bind_attempts("animal");
++    assert!(original_work > 0);
++    let animal_tuple_storage = || {
++        let inner = kb.inner.borrow();
++        let materialized = inner.materialized.borrow();
++        materialized.as_ref().unwrap().ext["animal"]
++            .iter()
++            .next()
++            .unwrap()
++            .as_ptr()
++    };
++    let original_storage = animal_tuple_storage();
++    for text in ["fit(Rex).", "happy(Rex).", "healthy(Rex)."] {
++        kb.ensure_materialized(&compile_surface(text), true);
++        assert!(query(&kb, compile_surface(text)));
++        assert_eq!(
++            kb.materialization_tuple_bind_attempts("animal"),
++            original_work,
++            "extending a root must not repeat the completed animal joins"
++        );
++        assert_eq!(
++            animal_tuple_storage(),
++            original_storage,
++            "the completed derived tuple must be moved, not rebuilt or copied"
++        );
++    }
++    let blocker = assert_id(&kb, compile_surface("cat(Rex)."), "block old cone");
++    for text in ["animal(Rex).", "fit(Rex).", "happy(Rex).", "healthy(Rex)."] {
++        assert!(query_false(&kb, compile_surface(text)));
++    }
++    kb.retract_fact(blocker).unwrap();
++    assert!(query(&kb, compile_surface("happy(Rex).")));
++}
++
++#[test]
++fn extended_cones_refresh_outside_facts_and_refuse_new_shape_gaps() {
++    for materialization in [false, true] {
++        let kb = new_kb();
++        kb.set_materialization(materialization);
++        for text in [
++            "dog(Rex).",
++            "all $x: dog($x) -> animal($x).",
++            "all $x: cat($x) & ~rotten($x) -> healthy($x).",
++        ] {
++            assert_buf(&kb, compile_surface(text));
++        }
++        kb.ensure_materialized(&compile_surface("animal(Rex)."), true);
++        assert_buf(&kb, compile_surface("cat(Bel)."));
++        assert_buf(&kb, compile_surface("past rotten(Bel)."));
++        kb.ensure_materialized(&compile_surface("healthy(Bel)."), true);
++        assert!(query(&kb, compile_surface("animal(Rex).")));
++        assert!(query(&kb, compile_surface("cat(Bel).")));
++        assert!(query(&kb, compile_surface("healthy(Bel).")));
++        if materialization {
++            let (complete, _) = kb.materialization_report().unwrap();
++            assert!(!complete.iter().any(|rel| rel == "healthy"));
++            assert!(!complete.iter().any(|rel| rel == "rotten"));
++        }
++    }
++}
++
++#[test]
++fn extended_cone_budget_boundaries_match_a_fresh_union() {
++    let kb = new_kb();
++    for text in [
++        "dog(Rex).",
++        "cat(Bel).",
++        "all $x: dog($x) & ~rotten($x) -> animal($x).",
++        "all $x: animal($x) -> fit($x) & healthy($x).",
++        "all $x: cat($x) -> happy($x).",
++    ] {
++        assert_buf(&kb, compile_surface(text));
++    }
++    let inner = kb.inner.borrow();
++    let eligibility = materialize::eligible_relations(&inner);
++    let strata = materialize::compute_strata(&inner.pred_dep_graph);
++    for first in ["fit", "happy", "healthy", "rotten"] {
++        for limit in 0..=8 {
++            let original = materialize::saturate_extending(
++                &inner,
++                &eligibility,
++                &strata,
++                &HashSet::from([first.into()]),
++                None,
++                limit,
++            );
++            let targets = HashSet::from([first.into(), "fit".into(), "happy".into()]);
++            let extended = materialize::saturate_extending(
++                &inner,
++                &eligibility,
++                &strata,
++                &targets,
++                Some(original),
++                limit,
++            );
++            let fresh = materialize::saturate_extending(
++                &inner,
++                &eligibility,
++                &strata,
++                &targets,
++                None,
++                limit,
++            );
++            assert_eq!(extended.complete, fresh.complete, "{first}, limit {limit}");
++            for rel in &fresh.complete {
++                assert_eq!(
++                    extended.ext.get(rel),
++                    fresh.ext.get(rel),
++                    "{rel}, limit {limit}"
++                );
++            }
++        }
++    }
++}
++
++#[test]
++fn extended_cones_reject_dirty_incomplete_or_newly_unseedable_inputs() {
++    for boundary in ["dirty", "incomplete", "unseedable"] {
++        let kb = new_kb();
++        for text in [
++            "dog(Rex).",
++            "all $x: dog($x) -> animal($x).",
++            "all $x: animal($x) -> fit($x).",
++        ] {
++            assert_buf(&kb, compile_surface(text));
++        }
++        let mut previous = {
++            let inner = kb.inner.borrow();
++            materialize::saturate_extending(
++                &inner,
++                &materialize::eligible_relations(&inner),
++                &materialize::compute_strata(&inner.pred_dep_graph),
++                &HashSet::from(["animal".into()]),
++                None,
++                100,
++            )
++        };
++        assert!(previous.cone.is_subset(&previous.complete));
++        // Exercise the extension helper's defensive contract directly. Ordinary
++        // query planning normally resumes or invalidates these inputs first.
++        match boundary {
++            "dirty" => {
++                assert_buf(&kb, compile_surface("dog(Bel)."));
++                previous.grew.insert("dog".into());
++            }
++            "incomplete" => {
++                assert_buf(&kb, compile_surface("dog(Bel)."));
++                assert!(previous.complete.remove("dog"));
++            }
++            "unseedable" => {
++                assert_buf(&kb, compile_surface("past dog(Bel)."));
++            }
++            _ => unreachable!(),
++        }
++        let inner = kb.inner.borrow();
++        let eligibility = materialize::eligible_relations(&inner);
++        let strata = materialize::compute_strata(&inner.pred_dep_graph);
++        let targets = HashSet::from(["animal".into(), "fit".into()]);
++        let extended = materialize::saturate_extending(
++            &inner,
++            &eligibility,
++            &strata,
++            &targets,
++            Some(previous),
++            100,
++        );
++        let fresh =
++            materialize::saturate_extending(&inner, &eligibility, &strata, &targets, None, 100);
++        assert_eq!(extended.complete, fresh.complete, "{boundary}");
++        for rel in &fresh.complete {
++            assert_eq!(
++                extended.ext.get(rel),
++                fresh.ext.get(rel),
++                "{boundary}: {rel}"
++            );
++        }
++    }
++}
++
  #[test]
  fn warming_rule_plan_performs_no_query_and_shares_only_immutable_planning() {
      let run = |warm: bool| {
-@@ -1924,9 +2277,9 @@ fn kb_with_live_saturation() -> KnowledgeBase {
+@@ -1924,9 +2468,9 @@ fn kb_with_live_saturation() -> KnowledgeBase {
      kb
  }
 
@@ -1520,7 +1975,7 @@
  #[test]
  fn a_refused_assertion_preserves_the_saturation() {
      let kb = kb_with_live_saturation();
-@@ -1994,13 +2347,10 @@ fn preserved_saturation_answers_exactly_as_a_rebuilt_one() {
+@@ -1994,13 +2538,10 @@ fn preserved_saturation_answers_exactly_as_a_rebuilt_one() {
      );
  }
 
@@ -1537,7 +1992,7 @@
      let kb = kb_with_live_saturation();
      {
          // Warm the cache the way a query does, so the clear has something to do.
-@@ -2008,22 +2358,27 @@ fn a_refused_assertion_still_clears_and_disables_the_predicate_cache() {
+@@ -2008,22 +2549,27 @@ fn a_refused_assertion_still_clears_and_disables_the_predicate_cache() {
          clear_and_enable_pred_cache(&inner);
      }
      assert!(query(&kb, compile_surface("animal(Rex).")));
@@ -1576,6 +2031,8 @@
      );
      drop(inner);
      assert!(
+diff --git a/nibli-reason/src/tests/witness_closure.rs b/nibli-reason/src/tests/witness_closure.rs
+index 1338c73..46cdac7 100644
 --- a/nibli-reason/src/tests/witness_closure.rs
 +++ b/nibli-reason/src/tests/witness_closure.rs
 @@ -1,5 +1,167 @@
@@ -1746,105 +2203,3 @@
  #[test]
  fn complete_unary_witness_filter_tracks_growth_and_proof_mode() {
      let kb = surface_kb(&["person(Adam).", "likes(every person, some cat)."]);
---- a/nibli-reason/src/rules.rs
-+++ b/nibli-reason/src/rules.rs
-@@ -1,5 +1,10 @@
- use super::*;
-
-+#[cfg(test)]
-+thread_local! {
-+    pub(super) static TEST_DEPENDENCY_NAME_COPIES: std::cell::Cell<usize> = const { std::cell::Cell::new(0) };
-+}
-+
- /// Check if a GroundTerm represents a dependent Skolem placeholder.
- pub(super) fn is_skdep(gt: &GroundTerm) -> bool {
-     matches!(gt, GroundTerm::SkolemPlaceholder(_))
-@@ -1738,6 +1743,28 @@ pub(super) fn compile_forall_to_rule(
-         format!("∀{}", universals.join(","))
-     };
-
-+    // Classify condition existentials before allocating conclusion dependency
-+    // lists. Those binders become pattern variables, not dependent Skolems;
-+    // creating a full list for each one only to remove it wastes large amounts
-+    // of copying on wide antecedents. Keep the same capped DNF and binder walk.
-+    let clauses = if pf_conditions.is_empty() {
-+        None
-+    } else {
-+        Some(dnf_condition_clauses(
-+            buffer,
-+            &pf_conditions,
-+            MAX_DNF_CLAUSES,
-+        )?)
-+    };
-+    let mut all_condition_exists: HashSet<String> = HashSet::new();
-+    if let Some(clauses) = &clauses {
-+        for clause in clauses {
-+            for &lid in clause {
-+                collect_condition_exists(buffer, lid, &mut all_condition_exists);
-+            }
-+        }
-+    }
-+
-     let mut pattern_vars: HashMap<String, String> = universals
-         .iter()
-         .enumerate()
-@@ -1758,45 +1785,32 @@ pub(super) fn compile_forall_to_rule(
-
-     let pattern_var_names: Vec<String> =
-         universals.iter().map(|v| pattern_vars[v].clone()).collect();
-+    for var in &all_condition_exists {
-+        ground_skolems.remove(var);
-+        pattern_vars.insert(var.clone(), format!("ev__{}", var));
-+    }
-     let mut dependent_skolems: HashMap<String, (SkolemSymbol, Vec<String>)> = skolem_subs
-         .iter()
-+        .filter(|(name, _)| !all_condition_exists.contains(name.as_str()))
-         .filter_map(|(k, gt)| {
--            skdep_symbol(gt).map(|symbol| (k.clone(), (symbol, pattern_var_names.clone())))
-+            skdep_symbol(gt).map(|symbol| {
-+                #[cfg(test)]
-+                TEST_DEPENDENCY_NAME_COPIES
-+                    .set(TEST_DEPENDENCY_NAME_COPIES.get() + pattern_var_names.len());
-+                (k.clone(), (symbol, pattern_var_names.clone()))
-+            })
-         })
-         .collect();
-
--    let implication = if pf_conditions.is_empty() {
--        None
--    } else {
--        Some((pf_conditions, pf_consequent))
--    };
--    match implication {
--        Some((condition_ids, consequent_id)) => {
-+    match clauses {
-+        Some(clauses) => {
-+            let consequent_id = pf_consequent;
-             // DNF-split the antecedent into conjunctive clauses and register ONE
-             // backward-chaining rule per clause: `∀x.(P(x)∨Q(x))→R(x)` is the
-             // conjunction of `∀x.P(x)→R(x)` and `∀x.Q(x)→R(x)`. A pure conjunction
-             // yields a single clause (byte-identical to the pre-split path); a
-             // disjunctive antecedent (`ro lo X poi P ja Q cu R`, `ganai ga P gi Q gi R`)
-             // yields one clause per disjunct.
--            let clauses = dnf_condition_clauses(buffer, &condition_ids, MAX_DNF_CLAUSES)?;
--
--            // The condition event ∃ vars across ALL clauses become pattern vars (not
--            // skolems); what remains in `dependent_skolems` are the CONCLUSION
--            // existentials, shared by every clause. (collect_condition_exists does not
--            // descend `Or`, so this union mirrors the pre-split single-condition set.)
--            let mut all_condition_exists: HashSet<String> = HashSet::new();
--            for clause in &clauses {
--                for &lid in clause {
--                    collect_condition_exists(buffer, lid, &mut all_condition_exists);
--                }
--            }
--            for var in &all_condition_exists {
--                dependent_skolems.remove(var);
--                ground_skolems.remove(var);
--                let pvar = format!("ev__{}", var);
--                pattern_vars.insert(var.clone(), pvar);
--            }
--
-             let mut consequent_atoms = flatten_consequent(buffer, consequent_id, skolem_subs, None);
-             // Quoted bodies retain dependency edges for the stratification firewall,
-             // but only their opaque marker can execute in the surrounding KB.

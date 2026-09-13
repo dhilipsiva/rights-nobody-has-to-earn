@@ -8,42 +8,57 @@ constitution, pins, refusals, scoped retractions, stateful sequences, trusted
 shell preconditions or complete contradiction checks. No persisted verdicts,
 input hashes, receipts, administrative gates or Book 2 operations.
 
-The measured additional engine patch is retained in
-new-book-plans/nibli-performance-candidate.patch, against Nibli fa91a5f.
-It is now applied to the previously clean companion after filesystem approval.
-No unrelated companion work was overwritten. The engine is committed as fdd9de1.
+The companion changes are committed and pushed as fdd9de1 and 3f64f0b.
+The cumulative patch against fa91a5f is retained in
+new-book-plans/nibli-performance-candidate.patch. It contains no temporary
+profiling hooks or unrelated companion changes; its reverse applicability
+was checked against the actual checkout.
 
-The rebuilt normal verifier passed all 12,860 pins across 4,190 cases
-in 526.66 seconds (8m46.66s), with complete contradiction checks, no findings
-and nine existing defects reproduced. Four workers, release already built;
-this session started no other development build/test during the measurement.
-Other machine work was not controlled. The scratch candidate passed in 525.93
-seconds; the baseline was 1,552.00 seconds. Intermediate experiments are in
-new-book-plans/nibli-performance-candidate.md. The five-minute target is open.
+The first integration's normal verifier passed all 12,860 pins across 4,190
+cases in 526.66 seconds, with complete contradiction checks, no findings and
+nine existing defects reproduced. The completed-cone extension's scratch
+binary passed the same inventory in 457.07 seconds (7m37.07s). Both used four
+workers and prebuilt release binaries. This session started no other
+development build/test during either measurement; other machine work was
+not controlled. The original measured baseline was 1,552.00 seconds.
 
-Engine integration checks:
-- Native and WebAssembly CI passed through just ci-all.
-- The final 633 reasoner tests pass, including the added negative-only
-  equality and full-versus-delta index regressions.
-- The corrected 43-mutation sweep had 34 caught, six unbuildable, one missed
-  and two timeouts. Focused follow-ups caught all three by assertion failures:
-  full/delta indexes, condition binders and the resumption mechanism.
-  Combined: 37 caught, six unbuildable, none unresolved. The broad sweep alone
-  did not pass. Earlier short-timeout and costly-closure attempts were stopped;
-  they are not credited as caught mutations.
+The rebuilt normal ./verify.sh passed against 3f64f0b in 448.90 seconds
+(7m28.90s): all 12,860 pins across 4,190 cases, complete contradiction checks,
+no findings and nine existing defects reproduced. Four workers and a prebuilt
+release binary; this session started no other development build/test during
+the measurement. Other machine work was not controlled. README and the
+performance notes record this result. Do not close the TODO unless a full
+run passes under five minutes.
 
-The normal evidence chapter also passes all 40 pins. README and the performance
-notes record the full integrated run. Do not close the TODO unless normal
-complete verification passes under five minutes. No book source, pin expectation
-or case inventory was changed by these optimizations.
+Latest engine integration checks:
+- Native and WebAssembly CI passed through just ci-all, including all 12
+  oracle/differential tests (96.53 seconds).
+- All 637 reasoner tests pass, including completed-tuple reuse, outside
+  inserts, shape refusals, budget boundaries and invalid-prior safeguards.
+- The extension's broad mutation sweep had nine caught, two unbuildable and
+  two missed. A new defensive-helper regression caught both missed guards
+  by assertion failures in a focused rerun with the same test packages.
+  Combined: 11 caught, two unbuildable, none unresolved; no timeouts credited.
+- The normal runner's development suite passed 24 tests; two manual probes
+  are intentionally ignored.
 
-Nibli origin uses SSH without a usable key. HTTPS fetch succeeded and confirms
-remote main was fa91a5f before this integration. Use HTTPS without changing the
-user's remote configuration. The book's normal origin push works.
+Nibli origin uses SSH without a usable key. Push/fetch via
+https://github.com/dhilipsiva/nibli.git without changing the user's remote.
+The companion origin/main tracking ref was refreshed after the push.
 
-Next scratch-only experiment: borrowed join names/values and immutable index
-position lists in /tmp/rights-nibli-perf.llSbQz. Its earlier 633-test reasoner
-suite passed, including pointer-identity and partial-mismatch unwind checks.
-The integration regressions were subsequently added to that source; rerun its
-tests before measuring it. It is not in the retained patch or companion, and
-has no oracle or timing result. Keep its evidence distinct from the integration.
+Scratch workspace: /tmp/rights-nibli-perf.llSbQz. Its release book-runner binary
+is the measured completed-cone candidate. Scratch source also contains
+temporary test-only loading timers and an eager-unary-guard experiment, which
+are NOT integrated. Do not copy this source wholesale into the companion.
+The borrowed-join experiment passed its tests but showed no useful overall
+probe improvement; it was removed and saved as borrowed-joins.patch there.
+
+Next performance lead, not an implemented or measured gain: both
+collect_group_event_candidates and collect_entailment_candidates in
+nibli-reason/src/kb.rs copy all_typed_domain_members() into a Vec, although
+the accessor already returns &[GroundTerm] and candidate selection only reads
+it. The granular loading profile spent about 0.10 seconds proving 264 witness
+activations in the arrest case. Try borrowing the cached slice, preserving all
+ordinary anchor selection, fallback candidates, binding and provenance checks.
+Remove the separate eager-unary experiment before comparing this change.
+Model construction and actual scoped-control retractions also remain costly.
