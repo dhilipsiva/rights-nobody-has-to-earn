@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~secure($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~eats($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~dwell($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~healthy($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~learn($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~expresses($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~believe($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~meets($subject) -> prisoner($subject).

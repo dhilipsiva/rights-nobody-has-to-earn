@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedpretrialdetentionRecord, PSPretrialDetentionOrder, PSLinkedpretrialdetentionSubject).
+# => TRUE
+? complete(PSUnrelatedpretrialdetentionRecord, PSPretrialDetentionOrder, PSUnrelatedpretrialdetentionSubject).
+# => TRUE
+observe(PSLinkedpretrialdetentionExternalHearingSource, PSLinkedpretrialdetentionExternalHearingRecord, OtherExternalVersion, JSourceVersionScope).
+? complete(PSLinkedpretrialdetentionRecord, PSPretrialDetentionOrder, PSLinkedpretrialdetentionSubject).
+# => FALSE
+? complete(PSUnrelatedpretrialdetentionRecord, PSPretrialDetentionOrder, PSUnrelatedpretrialdetentionSubject).
+# => TRUE

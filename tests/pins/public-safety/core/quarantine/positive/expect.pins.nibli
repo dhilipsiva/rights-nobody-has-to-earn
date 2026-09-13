@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+? complete(PSCorequarantineRecord, PSIndividualQuarantineOrder, PSCorequarantineSubject).
+# => TRUE
+? restrain(PSCorequarantineSubject, PSCorequarantineRecord, FreeMovement).
+# => TRUE
+? lose(FreeMovement, PSCorequarantineSubject, PSCorequarantineRecord).
+# => TRUE
+? person(PSCorequarantineSubject).
+# => TRUE
+? travel(PSCorequarantineSubject).
+# => FALSE
+? prisoner(PSCorequarantineSubject).
+# => FALSE
+? severe(PSCorequarantineSubject).
+# => FALSE
+? capture(PSCorequarantineSubject).
+# => FALSE
+? reward(PSCorequarantineSubject).
+# => FALSE
+? free(PSCorequarantineSubject).
+# => FALSE
+? dwell(PSCorequarantineSubject).
+# => FALSE
+? expresses(PSCorequarantineSubject).
+# => FALSE

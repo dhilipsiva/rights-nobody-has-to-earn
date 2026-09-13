@@ -280,6 +280,19 @@ opposite — too much recorded, by the wrong author.
 
 ## 5. Open gap: the firewall does not reach a status the design has already named
 
+**Verified implementation update — 2026-09-13.** The
+[protective-power family](book-1-public-safety-contract.md) adds positively
+witnessed family and parent relations with their personhood dependencies.
+Live refusal pins now reject both absence-to-confinement rules below; the
+original acceptances remain in an explicit counterfactual removing those two
+projections. The conviction rule is unchanged. The existing parent-judgment
+conflict rule also makes the former credibility-absence confinement control
+unstratifiable; its live refusal and original counterfactual acceptance are
+both retained. The measurements below remain the historical pre-repair result,
+not a claim about the new source. The complete verifier passed 12,860 pins
+across 4,190 cases with complete contradiction checks and no findings; the
+implementation contract records the measured timing and remaining limitations.
+
 Measured in the same probe run, against the current source:
 
 | candidate rule | stratifier |

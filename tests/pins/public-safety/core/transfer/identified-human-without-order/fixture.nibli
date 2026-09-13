@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSCoretransferSource, PSSourceAuthority, PSCoretransferRecord).
+authorized(PSCoretransferEvidence, PSEvidenceAuthority, PSCoretransferRecord).
+observe(PSCoretransferSource, PSCoretransferRecord, PSCoretransferSubject, PSCoreSubjectScope).
+observe(PSCoretransferEvidence, PSCoretransferRecord, PSCoretransferSubject, PSCoreSubjectScope).
+observe(PSCoretransferSource, PSCoretransferRecord, PSIndividualInternationalTransferOrder, PSRecordKindScope).
+observe(PSCoretransferEvidence, PSCoretransferRecord, PSIndividualInternationalTransferOrder, PSRecordKindScope).
+observe(PSCoretransferSource, PSCoretransferRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+observe(PSCoretransferEvidence, PSCoretransferRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).

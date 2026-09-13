@@ -508,6 +508,40 @@ fn query(atom: &str, expected: bool) -> String {
     )
 }
 
+/// Authoring seam for an exact protective-power consumer. Retains the actual
+/// mobility/plurality premises; no compatibility tag is asserted as evidence.
+pub(crate) fn protective_consumer(id: &str) -> Result<Vec<String>, Error> {
+    if !matches!(
+        id,
+        "asylum" | "removal" | "consented-effect" | "evacuation" | "external" | "defect"
+    ) {
+        return Err(Error::new("undeclared protective mobility interface"));
+    }
+    let cards = contracts::cards();
+    let card = self::card(&cards, id);
+    let mut atoms = premises(&cards, card);
+    atoms.push(format!("complete($record, {}, $object)", card.kind));
+    Ok(atoms)
+}
+
+pub(crate) fn protective_example(
+    id: &str,
+    prefix: &str,
+    bindings: &[(&str, &str)],
+) -> Result<(String, Values), Error> {
+    protective_consumer(id)?;
+    let cards = contracts::cards();
+    let card = self::card(&cards, id);
+    let mut values = self::values(&cards, card, prefix);
+    for (variable, value) in bindings {
+        if !values.contains_key(*variable) {
+            return Err(Error::new(format!("unknown mobility binding {variable}")));
+        }
+        values.insert((*variable).into(), (*value).into());
+    }
+    Ok((fixture(&cards, card, &values), values))
+}
+
 fn queries(card: &Card, values: &Values, expected: bool) -> String {
     heads(card)
         .iter()

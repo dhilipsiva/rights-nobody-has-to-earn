@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSCorelethalforceSource, PSSourceAuthority, PSCorelethalforceRecord).
+authorized(PSCorelethalforceEvidence, PSEvidenceAuthority, PSCorelethalforceRecord).
+observe(PSCorelethalforceSource, PSCorelethalforceRecord, PSCorelethalforceSubject, PSCoreSubjectScope).
+observe(PSCorelethalforceEvidence, PSCorelethalforceRecord, PSCorelethalforceSubject, PSCoreSubjectScope).
+observe(PSCorelethalforceSource, PSCorelethalforceRecord, PSLifeProtectingLethalForceOrder, PSRecordKindScope).
+observe(PSCorelethalforceEvidence, PSCorelethalforceRecord, PSLifeProtectingLethalForceOrder, PSRecordKindScope).
+observe(PSCorelethalforceSource, PSCorelethalforceRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+observe(PSCorelethalforceEvidence, PSCorelethalforceRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).

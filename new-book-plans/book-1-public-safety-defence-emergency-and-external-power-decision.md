@@ -2,7 +2,13 @@
 
 # Book 1 Public-Safety, Defence, Emergency, and External-Power Decision
 
-> **Status: author-ratified on 2026-08-08; formal implementation pending.**
+> **Status: author-ratified on 2026-08-08; formally implemented and verified
+> on 2026-09-13.** The current implementation is specified in
+> [Protective power without a security exception](book-1-public-safety-contract.md).
+> The historical absence statements below describe the source at ratification;
+> the implementation contract records the later rules, reader revisions and
+> verification boundary. Operational delivery remains unimplemented.
+>
 > This decision selects Book 1's public-safety, defence, emergency, and
 > external-power baseline. It adds no predicate, rule, fact, pin, institution
 > in law, chapter, release, or claim of present constitutional coverage. It

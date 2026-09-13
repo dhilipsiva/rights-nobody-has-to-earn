@@ -109,8 +109,18 @@ record without a competing binding or conflicted order path. Then this final
 gate rejoins the case and lease evidence again. No standing appellate relief. A
 court not itself marked broken. No derived defence. Not already free. Then, and
 only then: prisoner. There is no second route, discretion, or “unless
-circumstances warrant.” When chapter 13 called imprisonment the one thing this
-society takes, this rule is the whole of what it was describing.
+circumstances warrant.” Chapter 13's one direct punitive deprivation describes
+this conviction route. Separate protective instruments now use `restrain`,
+never `prisoner` or `capture`, with their own grounds, temporal contracts and
+floor firewalls. Their capability-loss projections remain unread leaves.
+
+The positive parentage repair has one further measured graph consequence.
+The existing `judge & parent -> false` rule now places `false` downstream of
+`person`. A proposed `person & ~false -> prisoner` rule therefore closes a
+negative cycle and is refused. The earlier acceptance remains pinned under
+the explicit counterfactual removing the two new relationship projections;
+the live rights-floor suite pins refusal. Neither the conviction rule nor
+the conflict-of-interest rule was changed to obtain that result.
 
 And here is the rule the voiding chapters orbit — the one that can declare a
 person's word worthless:

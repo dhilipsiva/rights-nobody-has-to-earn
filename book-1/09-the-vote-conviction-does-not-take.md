@@ -97,6 +97,75 @@ function: disclosure, attribution, access, audit, challenge and remedy. An
 uncoordinated speaker is outside this route. No finding proves that an
 institution acted or that the promised remedy arrived.
 
+## A crisis does not suspend the republic
+
+An emergency declaration can do four things: accelerate specified procedures,
+redirect public resources, requisition necessary property with return or
+compensation, and authorize a narrowly justified restriction against its
+named hazard. It cannot suspend a right or institution, delay an election,
+extend a mandate, create government by decree, or leave a standing power
+behind. Rationing remains within the ordinary physical-scarcity rules;
+redirecting capacity cannot conscript a named worker. Price control needs no
+emergency declaration.
+
+The declaration, each renewal and each measure have separate current windows.
+A measure must identify the exact declaration revision and, when applicable,
+its fresh renewal. No general status label lends authority to another case.
+A predeclared alternate authorizer or independent substitute reviewer keeps
+the same limits and requires ratification at the ordinary body's first
+opportunity. Before then, the record needs positive evidence that the
+opportunity has not yet arrived. Silence is not approval, and an unratified
+alternate cannot keep acting after that opportunity passes.
+
+Missing authority withholds the conclusion; it does not write a cessation act
+or release a person. A positively recorded end requires restoration,
+evidence preservation, review and remedy. Identical frozen evidence can still
+produce the same answer when replayed. The rules neither keep time nor force
+the next record to arrive.
+
+## Power does not grow at the border
+
+Defence stays under civilian command, Assembly limits on size and armament,
+ordinary appropriation and full independent audit. No private force or outside
+funding route can acquire a public coercive power. Force abroad needs actual
+Assembly authorization, except the immediate response strictly necessary
+against an actual attack before the Assembly can act. That response must be
+submitted for ratification at its first opportunity. A predeclared alternate
+or substitute reviewer carries the same limits while that opportunity is
+still ahead. Once it passes, continuing force needs actual Assembly
+authorization; the immediate-response exception cannot renew itself.
+Cyber attribution and equivalence to an armed attack need independently
+assessable evidence; they
+create no separate response power. Credible evidence of prohibited arms use
+requires suspension. Children may not be recruited or used in hostilities.
+Civilian protection, humanitarian care and access apply in every condition.
+
+Treaty negotiation belongs to the executive; ratification belongs to the
+Assembly, with the Regions Council and each directly affected region's
+consent where a protected competence or boundary is touched. Withdrawal takes
+the same route. Provisional application cannot pre-empt it. Ratifiers,
+reviewers and courts must examine actual effects against the constitutional
+limits. Nothing in this constitutional record independently establishes what
+a treaty will do. That judgment remains the ratifiers', reviewers' and courts'
+responsibility. Trade, sanctions, investment, procurement, contractors,
+affiliates, flags and arbitration forums cannot export a harm that public power could not
+lawfully impose at home.
+
+These are enumerated common competences, not a residual power over anything
+called security or foreign affairs. Regional and local functions, residual
+competences and stronger compatible protections remain.
+
+Lawful exit still requires the actual internal route: federal agreement,
+rights and minority review, a complete settlement and final ratification by
+the affected population. Borders, assets, debts, commons, floors and minority
+protections must be settled together with nationality, statelessness,
+nonmoving residents, families, records, defence and treaty succession. A
+consent-required collective effect needs actual prior informed consent for
+the same holder, title, settlement revision and effect; an ordinary
+consultation is not a substitute. Neither military power nor manipulated
+trade, border access or services may be used against lawful exit. Foreign
+recognition, cooperation and readmission remain external assumptions.
+
 ## The theorem this completes
 
 The design claims that punishment, reduced to its logic, takes movement and nothing

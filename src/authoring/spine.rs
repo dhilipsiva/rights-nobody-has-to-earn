@@ -201,7 +201,16 @@ fn render(source: &str, graph: &Strata) -> Result<String, Error> {
             .join(", ");
         output.push(format!("| **{level}** | {marked} |"));
     }
-    output . extend ([String :: new () , format ! ("Evidence predicates ({}), the complete list of what the world may report: `{}`." , evidence . len () , evidence . join ("`, `")) , String :: new () , "Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is not evidence, since nobody writes it." . to_owned () ,]) ;
+    output.extend([
+        String::new(),
+        format!(
+            "Engine base predicates excluding builtins ({}): `{}`. This is a dependency classification, not the writable vocabulary; mixed asserted/derived relations require the separate `admits` and `derived_only` rosters.",
+            evidence.len(),
+            evidence.join("`, `")
+        ),
+        String::new(),
+        "Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is excluded from the base list as a builtin.".to_owned(),
+    ]);
     Ok(output.join("\n"))
 }
 
@@ -232,4 +241,21 @@ fn replace_region(source: &str, body: &str) -> Option<String> {
         body,
         &source[end..]
     ))
+}
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn mixed_relationships_are_not_mistaken_for_unwritable_names() {
+        let graph = super::parse_strata(
+            "person\t0\tderived\t+restrain\nfamily\t0\tderived\t+person\neats\t0\tderived\t+person\nobserve\t0\tbase\t\nequals\t0\tbase\t\n",
+        )
+        .unwrap();
+        let source =
+            "owe(every person, event { eats(person) }).\nall $x: person($x) -> family($x).\n";
+        let rendered = super::render(source, &graph).unwrap();
+        assert!(rendered.contains("Engine base predicates excluding builtins (1): `observe`."));
+        assert!(rendered.contains("not the writable vocabulary"));
+        assert!(!rendered.contains("complete list of what the world may report"));
+    }
 }

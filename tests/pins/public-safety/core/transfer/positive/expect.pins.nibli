@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+? complete(PSCoretransferRecord, PSIndividualInternationalTransferOrder, PSCoretransferSubject).
+# => TRUE
+? restrain(PSCoretransferSubject, PSCoretransferRecord, FreeMovement).
+# => TRUE
+? lose(FreeMovement, PSCoretransferSubject, PSCoretransferRecord).
+# => TRUE
+? person(PSCoretransferSubject).
+# => TRUE
+? travel(PSCoretransferSubject).
+# => FALSE
+? prisoner(PSCoretransferSubject).
+# => FALSE
+? severe(PSCoretransferSubject).
+# => FALSE
+? capture(PSCoretransferSubject).
+# => FALSE
+? reward(PSCoretransferSubject).
+# => FALSE
+? free(PSCoretransferSubject).
+# => FALSE
+? dwell(PSCoretransferSubject).
+# => FALSE
+? expresses(PSCoretransferSubject).
+# => FALSE

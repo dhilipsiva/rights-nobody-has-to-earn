@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSCoreseizureSource, PSSourceAuthority, PSCoreseizureRecord).
+authorized(PSCoreseizureEvidence, PSEvidenceAuthority, PSCoreseizureRecord).
+observe(PSCoreseizureSource, PSCoreseizureRecord, PSCoreseizureSubject, PSCoreSubjectScope).
+observe(PSCoreseizureEvidence, PSCoreseizureRecord, PSCoreseizureSubject, PSCoreSubjectScope).
+observe(PSCoreseizureSource, PSCoreseizureRecord, PSIndividualSeizureOrder, PSRecordKindScope).
+observe(PSCoreseizureEvidence, PSCoreseizureRecord, PSIndividualSeizureOrder, PSRecordKindScope).
+observe(PSCoreseizureSource, PSCoreseizureRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+observe(PSCoreseizureEvidence, PSCoreseizureRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).

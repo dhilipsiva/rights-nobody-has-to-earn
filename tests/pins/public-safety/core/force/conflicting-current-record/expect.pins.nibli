@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(PSCoreforceRecord, PSNonLethalForceOrder, PSCoreforceSubject).
+# => TRUE
+observe(PSCoreforceSource, PSCoreforceRecord, WrongRevision, PSRecordRevisionScope).
+? complete(PSCoreforceRecord, PSNonLethalForceOrder, PSCoreforceSubject).
+# => FALSE

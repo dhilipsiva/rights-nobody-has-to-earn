@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(PSCoresurveillanceRecord, PSIndividualSurveillanceOrder, PSCoresurveillanceSubject).
+# => TRUE
+observe(PSCoresurveillanceSource, PSCoresurveillanceRecord, WrongRevision, PSRecordRevisionScope).
+? complete(PSCoresurveillanceRecord, PSIndividualSurveillanceOrder, PSCoresurveillanceSubject).
+# => FALSE

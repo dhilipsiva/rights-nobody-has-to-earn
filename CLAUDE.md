@@ -58,7 +58,7 @@ measurements and any remaining bottleneck honestly.
 Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
-`./generate.sh justice`, and
+`./generate.sh justice`, `./generate.sh public-safety`, and
 `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
@@ -835,6 +835,27 @@ preferences. Controlling record:
 `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
 
 #### Public safety, defence, emergency, and external power — 2026-08-08
+
+**Protective-power implementation — 2026-09-13.**
+`new-book-plans/book-1-public-safety-contract.md` owns the formal implementation
+of the baseline below. Its explicit `public-safety` generator supplies separated
+mandates, individual instruments, independent human identification and humane
+holding, non-derogating emergency windows, actual justice/mobility/consent/exit
+consumers, exact defect withdrawal and independent reader duties. Each instrument
+has all eight floor-refusal tests; capability loss remains unread. Positive
+relationship findings close the family/parent-absence confinement gap without
+changing the conviction rule. Their induced credibility-cycle refusal retains
+the original acceptance in an explicit counterfactual.
+
+The delegated-approved reader revisions cover chapters 4, 7, 8, 9, 13 and 14,
+the opening guide, Part V, method and hand-authored spine claims. This supersedes
+the historical absence and migration descriptions below only for the implemented
+formal interface. The complete verifier passed 12,860 pins across 4,190 cases
+with complete contradiction scans and no findings in 1,552.00 seconds; nine
+existing known-defect pins still reproduce. The five-minute target remains
+unmet and is the next implementation priority.
+No rule authenticates evidence, assesses actual necessity, advances a clock,
+operates a force, delivers care or proves review, release or remedy.
 
 **Non-carceral justice interface — 2026-09-13.** The separate implementation
 contract is `new-book-plans/book-1-non-carceral-justice-contract.md`; explicit

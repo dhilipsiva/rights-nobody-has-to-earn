@@ -348,9 +348,9 @@ free(Hano).
 # => FALSE
 
 
-# ── COMPLEMENT CONTROLS: the protected set is EXACTLY the floor ──────────────
+# ── COMPLEMENT CONTROLS: the named non-floor boundaries ────────────────────
 # ORDERING USED TO PROTECT EVERY PIN BELOW THIS BLOCK, AND WHY IT HAD TO IS
-# STILL THE POINT. These now load under `:accept-scoped`: the statement is
+# STILL THE POINT. The first three controls load under `:accept-scoped`: each is
 # compiled, its loadability is the verdict, and it is retracted before the next
 # pin runs, so nothing below inherits it — measured, a `? prisoner(Quin).`
 # probe dropped in among these controls comes out FALSE. Under plain
@@ -361,8 +361,7 @@ free(Hano).
 # dragged back in. `? prisoner(Adam).` used to sit below these and was a
 # vacuous green: it would have passed with Article 6 deleted outright. Scoping
 # retired the instruction to keep controls last, not the reason for it, and it
-# is not verify.sh that puts the base back: section 4d checks only that every
-# control is written `:accept-scoped`, and the retraction is the engine's — one
+# is not verify.sh that puts the base back: the retraction is the engine's — one
 # that fails is a harness error, not a pin that goes quietly green.
 :accept-scoped
 all $x: person($x) & ~home($x) -> prisoner($x).
@@ -373,7 +372,12 @@ all $x: person($x) & ~choose($x) -> prisoner($x).
 :accept-scoped
 all $x: person($x) & ~permits($x) -> prisoner($x).
 
-:accept-scoped
+# The positive parentage repair also makes this control a negative cycle:
+# prisoner -> person -> parent -> false, through the existing conflict-of-
+# interest rule. This is not another floor predicate. Preserve its earlier
+# acceptance in the explicit without-positive-relationships counterfactual;
+# the current, stronger model must refuse it.
+:refuse reasoning /Unstratifiable/
 all $x: person($x) & ~false($x) -> prisoner($x).
 
 # NOT a control, deliberately: ~travel is refused too, but for a reason unrelated

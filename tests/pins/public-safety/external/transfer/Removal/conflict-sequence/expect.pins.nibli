@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedtransferRecord, PSIndividualInternationalTransferOrder, PSLinkedtransferSubject).
+# => TRUE
+? complete(PSUnrelatedtransferRecord, PSIndividualInternationalTransferOrder, PSUnrelatedtransferSubject).
+# => TRUE
+observe(PSLinkedtransferExternalRemovalSource, PSLinkedtransferExternalRemovalRecord, OtherExternalVersion, MPSourceVersionScope).
+? complete(PSLinkedtransferRecord, PSIndividualInternationalTransferOrder, PSLinkedtransferSubject).
+# => FALSE
+? complete(PSUnrelatedtransferRecord, PSIndividualInternationalTransferOrder, PSUnrelatedtransferSubject).
+# => TRUE

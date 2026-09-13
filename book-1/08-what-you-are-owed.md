@@ -174,18 +174,44 @@ route remains audio-literal, leaves the writer uncontrolled, and names a persona
 outcome. It demonstrates that giving and receiving must both appear, but it is not the
 model for the newer routes.
 
-Belief and the liberty of expression deliberately receive no delivery route. Belief
-is on the floor to keep public power out of the mind; certifying it would build the
-instrument that protection refuses. Expression needs a distinction. A confined
-person's words can enter the record, and in the supplied record they do. The liberty
-to express oneself is a limit on power, not a service somebody delivers. Neither
-freedom is turned into a certified personal state.
+Belief and the liberty of expression deliberately receive no delivery route.
+Belief is on the floor to keep public power out of the mind; certifying it
+would build the instrument that protection refuses. Expression needs a
+distinction. Someone physically held by public power is owed a recorded voice,
+whether held after conviction, under a protective order, or unlawfully. The
+constitutional record assigns shelter and recorded speech when that physical
+holding is positively established. Permission to hold someone does not
+establish that anyone acted. Nor do these required conditions prove that a
+building, care or a usable means of communication actually arrived. The
+liberty to express oneself remains a limit on power, not a certified personal
+state.
 
 The supplied record therefore still has a stark shape. Shelter and recorded speech
 derive through confinement. The recipient-side routes for food, shelter, care,
 material security, and company derive nothing because nobody in the cast carries
 their evidence. The learning route also remains dormant. The rulebook now knows how
 specified arrivals could count; the record reports no such arrival.
+
+An officer's missing or disputed paperwork cannot make humane treatment wait.
+A credible independent report of holding creates an immediate duty to secure
+care, voice and independent review, even before a complete record exists.
+The holding body cannot supply its own final review, and the person need not
+first ask for a judge to examine detention. Confidential counsel,
+interpretation, accommodation, notification to someone the person chooses,
+independent access and a known or independently sought place of holding are
+required. None depends on a conviction or makes an unlawful hold lawful.
+
+A disputed or ended order cannot erase the person it named. The file's
+independent identification of a human subject remains a separate route to
+standing, without claiming a verified civil identity or guilt. That positive
+evidence does not need the order to remain lawful or current.
+
+An absent family or parent entry is not a reason to confine someone either.
+The relationship rules recognise only positively witnessed relationships,
+with private, purpose-limited evidence and independent correction. They do
+not invent a family for everyone. The rules that would turn the absence of
+family or parentage into confinement are refused, without changing the
+conviction rule or making family status a placement input.
 
 A complete constitutional lifecycle continues beyond that point. What is owed must be
 offered without an earned condition. The offer must be usable and accessible. Arrival

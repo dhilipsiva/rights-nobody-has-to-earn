@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? person(PSCoreforceabroadSubject).
+# => TRUE
+? owe(State, Eats, PSCoreforceabroadSubject).
+# => TRUE
+? complete(PSCoreforceabroadRecord, PSAssemblyAuthorisedForceAbroad, PSCoreforceabroadSubject).
+# => FALSE
+? prisoner(PSCoreforceabroadSubject).
+# => FALSE
+? capture(PSCoreforceabroadSubject).
+# => FALSE

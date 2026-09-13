@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedexpulsionRecord, PSIndividualExpulsionOrder, PSLinkedexpulsionSubject).
+# => TRUE
+? complete(PSUnrelatedexpulsionRecord, PSIndividualExpulsionOrder, PSUnrelatedexpulsionSubject).
+# => TRUE
+observe(PSLinkedexpulsionExternalAsylumSource, PSLinkedexpulsionExternalAsylumRecord, OtherExternalVersion, MPSourceVersionScope).
+? complete(PSLinkedexpulsionRecord, PSIndividualExpulsionOrder, PSLinkedexpulsionSubject).
+# => FALSE
+? complete(PSUnrelatedexpulsionRecord, PSIndividualExpulsionOrder, PSUnrelatedexpulsionSubject).
+# => TRUE

@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? family(Bela).
+# => FALSE
+? parent(Bela, Jala).
+# => FALSE
+? family(Lalo).
+# => TRUE
+? parent(Dev, Esa).
+# => TRUE

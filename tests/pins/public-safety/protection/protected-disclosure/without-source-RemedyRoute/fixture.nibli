@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSProtectedalternate, PSProtectedFactAlternateReaderAuthority, PSProtectedrecord).
+authorized(PSProtectedreader, PSProtectedFactChallengeReaderAuthority, PSProtectedrecord).
+authorized(PSProtectedrecipient, PSIndependentDisclosureRecipientAuthority, PSProtectedrecord).
+authorized(PSProtectedreview, PSIndependentProtectedFactReviewAuthority, PSProtectedrecord).
+authorized(PSProtectedsource, PSProtectedFactSourceAuthority, PSProtectedrecord).
+observe(PSProtectedreview, PSProtectedrecord, IndependentRecipientWithEvidenceAccessAndProportionatePublicationDuty, PSFactRecipientMandateScope).
+observe(PSProtectedreview, PSProtectedrecord, NoPriorInternalChannelWhereImplicatedNoRetaliationOrSecretPrivilege, PSFactDisclosureAccessScope).
+observe(PSProtectedreview, PSProtectedrecord, NoUnrelatedPersonScoreOrEligibilityUseAndNoAdverseInferenceFromAbsence, PSFactRecordBoundaryScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedPublicInterestDisclosureFinding, PSFactKindScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedalternate, PSFactIndependentAlternateReaderScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedbasis, PSFactPositiveEvidenceScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedcase, PSFactCaseScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedcorrection, PSFactCorrectionRouteScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtecteddisclosure, PSFactDisclosureRecordScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedepoch, PSFactEpochScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedimplicated, PSFactImplicatedPowerScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedjurisdiction, PSFactJurisdictionScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedreader, PSFactIndependentChallengeReaderScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedrecipient, PSFactDisclosureRecipientScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedremedy, PSFactRemedyRouteScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedrevision, PSFactCurrentSelectedRevisionScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedrevision, PSFactRecordRevisionScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedscope, PSFactScopeScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedsubject, PSFactSubjectScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedversion, PSFactConstitutionVersionScope).
+observe(PSProtectedreview, PSProtectedrecord, PSProtectedwindow, PSFactWindowScope).
+observe(PSProtectedreview, PSProtectedrecord, PositiveExternallyEstablishedCurrentFactNotAnInstitutionalAct, PSFactCurrentDispositionScope).
+observe(PSProtectedreview, PSProtectedrecord, ProtectDiscloserPreserveEvidenceAndIndependentlyAssessActualWrong, PSFactPurposeScope).
+observe(PSProtectedreview, PSProtectedrecord, PurposeBoundMinimalPrivateEvidenceAccessibleChallengeCorrectionRetentionAndErasure, PSFactPrivacyScope).
+observe(PSProtectedreview, PSProtectedrecord, ScopedPublicInterestDisclosureNotProofOfAllegedWrong, PSFactFindingScope).
+observe(PSProtectedreview, PSProtectedrecord, ServeAndProtectFirstWhileIdentityOrRecordIsReconciled, PSFactContinuityScope).
+observe(PSProtectedsource, PSProtectedrecord, IndependentRecipientWithEvidenceAccessAndProportionatePublicationDuty, PSFactRecipientMandateScope).
+observe(PSProtectedsource, PSProtectedrecord, NoPriorInternalChannelWhereImplicatedNoRetaliationOrSecretPrivilege, PSFactDisclosureAccessScope).
+observe(PSProtectedsource, PSProtectedrecord, NoUnrelatedPersonScoreOrEligibilityUseAndNoAdverseInferenceFromAbsence, PSFactRecordBoundaryScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedPublicInterestDisclosureFinding, PSFactKindScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedalternate, PSFactIndependentAlternateReaderScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedbasis, PSFactPositiveEvidenceScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedcase, PSFactCaseScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedcorrection, PSFactCorrectionRouteScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtecteddisclosure, PSFactDisclosureRecordScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedepoch, PSFactEpochScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedimplicated, PSFactImplicatedPowerScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedjurisdiction, PSFactJurisdictionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedreader, PSFactIndependentChallengeReaderScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedrecipient, PSFactDisclosureRecipientScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedrevision, PSFactCurrentSelectedRevisionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedrevision, PSFactRecordRevisionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedscope, PSFactScopeScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedsubject, PSFactSubjectScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedversion, PSFactConstitutionVersionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedwindow, PSFactWindowScope).
+observe(PSProtectedsource, PSProtectedrecord, PositiveExternallyEstablishedCurrentFactNotAnInstitutionalAct, PSFactCurrentDispositionScope).
+observe(PSProtectedsource, PSProtectedrecord, ProtectDiscloserPreserveEvidenceAndIndependentlyAssessActualWrong, PSFactPurposeScope).
+observe(PSProtectedsource, PSProtectedrecord, PurposeBoundMinimalPrivateEvidenceAccessibleChallengeCorrectionRetentionAndErasure, PSFactPrivacyScope).
+observe(PSProtectedsource, PSProtectedrecord, ScopedPublicInterestDisclosureNotProofOfAllegedWrong, PSFactFindingScope).
+observe(PSProtectedsource, PSProtectedrecord, ServeAndProtectFirstWhileIdentityOrRecordIsReconciled, PSFactContinuityScope).

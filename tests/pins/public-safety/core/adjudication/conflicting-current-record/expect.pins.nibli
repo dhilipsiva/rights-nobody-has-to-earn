@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(PSCoreadjudicationRecord, PSAdjudicationMandate, PSCoreadjudicationSubject).
+# => TRUE
+observe(PSCoreadjudicationSource, PSCoreadjudicationRecord, WrongRevision, PSRecordRevisionScope).
+? complete(PSCoreadjudicationRecord, PSAdjudicationMandate, PSCoreadjudicationSubject).
+# => FALSE

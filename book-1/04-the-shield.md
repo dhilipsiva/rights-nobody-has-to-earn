@@ -1,7 +1,7 @@
 # The Shield
 
-If you expose someone who holds power, you cannot be imprisoned while that exposure
-stands.
+If you expose someone who holds power, you cannot be held as a convicted prisoner
+while that exposure stands.
 
 That is the shield, and the reason it exists is the oldest problem in accountability.
 The people best placed to expose wrongdoing by the powerful are the people close
@@ -99,20 +99,24 @@ window is worse: a system where the wrong choice costs a guilty man some months 
 freedom is recoverable, and one where the wrong choice puts the honest whistleblower
 in a cell before anyone reads their evidence is not.
 
-There is something worth saying plainly about what this shield is, structurally,
-because the chapter has been treating it as a protection among others and it is not.
-Conviction here reads an injury and a court's judgment, and it reads the absence of
-every escape this design provides: granted relief, a court found broken, this shield,
-a sentence already ended. Most of those are somebody else's act. The shield is the
-route a defendant reaches by their own doing. And notice what is missing from the list
-altogether — self-defence, justification, provocation. No such words exist in this
-record, so no such defence can be raised in it. Intention is the sharp exception, and
-it cuts one way only: the record does hold a word for a deliberate attack, and it
-feeds nothing but severity — which is to say it can make your placement worse and can
-never make your case better. That is not a narrow shield sitting beside a wide law of
-excuses. It is a shield standing nearly alone, beside a word for intent that only ever
-points at you, which is worth knowing before deciding whether the shield's window is
-priced too generously.
+There is something worth saying plainly about this shield. Conviction reads
+an injury and a court's judgment, and the absence of the escapes this design
+provides: granted relief, a court found broken, this shield, a sentence already
+ended. Most are somebody else's act. The shield is the route a defendant
+reaches by their own doing. The record now also asks whether a public actor's
+use of force was strictly necessary and whether less harmful means were
+available. Those are questions about that actor's authority and accountability;
+they do not add self-defence, justification or provocation as a defence in
+the existing conviction rule. Intention remains asymmetric there: a deliberate
+attack can worsen placement and cannot improve the defendant's case. The
+public actor's force test does not repair that narrow law of excuses. It
+makes the difference between them explicit.
+
+The shield blocks the conviction described here. It is not a general exemption
+from every protective restriction. An arrest, search or hazard restriction
+needs its own individual ground, current authority, evidence, independent
+review and remedy. Calling retaliation protection supplies none of them.
+The cases in this chapter contain no such protective orders.
 
 ## Kel
 

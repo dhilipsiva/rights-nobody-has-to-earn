@@ -338,8 +338,8 @@ below.
   revenue, and organisational form are not among them, and a finding that names
   none of them concludes nothing.
 
-- **Shield:** protection against imprisonment while an exposure of an authority
-  stands, subject to the chapter's stated boundaries.
+- **Shield:** protection against conviction-based imprisonment while an exposure
+  of an authority stands, subject to the chapter's stated boundaries.
 
 - **Voiding:** the conclusion that a person's credibility no longer counts.
 
@@ -563,6 +563,10 @@ the domain.
   custody, accessible justice procedures and repair. The justice interface
   includes independent assistance, survivor support, voluntary restoration,
   court-bound remedies, non-coercive enforcement and release continuity.
+  Separate protective mandates, individual coercive instruments, humane
+  holding, force limits, intelligence exclusions and objection are described
+  in Chapter 13; Chapter 9 adds non-derogating emergencies and bounded external
+  powers. Each keeps its own grounds, current evidence, review and remedy.
   Named findings have independent recipients,
   action duties, non-response consequences, claimant continuity, individual
   remedies, and separately tracked duties of common-cause correction,
@@ -575,19 +579,27 @@ the domain.
   [5](05-voiding.md), [12](12-changing-the-rules.md), and
   [14](14-when-the-system-notices-it-broke.md). The closed record is central;
   truth, authorship, storage, surveillance, and live operation remain bounded.
+  Chapter [13](13-the-one-thing-taken.md) adds individual surveillance
+  authorization, later notification and protected disclosure; none proves
+  that an intelligence service follows those limits.
 
 - **Locality, membership, mobility, migration, and external relations:**
   Chapters [9](09-the-vote-conviction-does-not-take.md) and
   [13](13-the-one-thing-taken.md) now supply residence-first political
   membership, one nested political home, atomic transfer, nonresident limits
   and return, protected local authority, and the republic's internal
-  negotiated-secession route. Wider mobility, border administration,
-  migration, collective title, external recognition, defence, treaty
-  succession, and cross-border operation remain separate or incomplete.
+  negotiated-secession route. Chapters 8 and 9 also set mobility, asylum,
+  collective title and consent, external no-evasion and exit-settlement limits.
+  Border administration, migration services and cross-border operation remain
+  outside the formal coverage; foreign recognition is an external assumption.
 
-- **Emergencies, security, and defence:** no current derived chapter supplies the
-  domain. Custody time and record continuity in Chapter
-  [13](13-the-one-thing-taken.md) are not an emergency or defence system.
+- **Emergencies, security, and defence:** Chapters
+  [9](09-the-vote-conviction-does-not-take.md) and
+  [13](13-the-one-thing-taken.md) set separate protective mandates, individual
+  coercive instruments, force limits, non-derogating emergencies, intelligence
+  controls, objection and external-power limits. Each power has its own
+  currentness contract; none borrows custody time. This is no operated
+  emergency, intelligence or defence system.
 
 - **Substantive equality and anti-subordination:** every person now holds a
   separate constitutional barrier against direct, indirect, systemic, multiple,

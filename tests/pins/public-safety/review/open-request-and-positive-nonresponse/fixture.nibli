@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+challenge(PSNonresponsenonresponseRequester, PSNonresponsenonresponseReader, PSNonresponsenonresponseTarget).
+authorized(PSNonresponsenonresponseReader, PSChallengeReaderAuthority, PSNonresponsenonresponseTarget).
+observe(PSNonresponsenonresponseRequester, PSNonresponsenonresponseTarget, PSNonresponsenonresponseCase, PSRequestedCaseScope).
+observe(PSNonresponsenonresponseRequester, PSNonresponsenonresponseTarget, PSNonresponsenonresponseRequest, PSActualRequestScope).

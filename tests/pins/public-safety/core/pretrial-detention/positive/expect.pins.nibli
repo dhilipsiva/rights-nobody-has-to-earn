@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 14
+? complete(PSCorepretrialdetentionRecord, PSPretrialDetentionOrder, PSCorepretrialdetentionSubject).
+# => TRUE
+? obliged(PSCorepretrialdetentionOperator, ArrangeAutomaticIndependentJudicialDetentionReview, PSCorepretrialdetentionRecord).
+# => TRUE
+? obliged(PSCorepretrialdetentionOperator, PreserveEveryRightNotIncidentToTheExactHoldingGround, PSCorepretrialdetentionRecord).
+# => TRUE
+? restrain(PSCorepretrialdetentionSubject, PSCorepretrialdetentionRecord, FreeMovement).
+# => TRUE
+? lose(FreeMovement, PSCorepretrialdetentionSubject, PSCorepretrialdetentionRecord).
+# => TRUE
+? person(PSCorepretrialdetentionSubject).
+# => TRUE
+? travel(PSCorepretrialdetentionSubject).
+# => FALSE
+? prisoner(PSCorepretrialdetentionSubject).
+# => FALSE
+? severe(PSCorepretrialdetentionSubject).
+# => FALSE
+? capture(PSCorepretrialdetentionSubject).
+# => FALSE
+? reward(PSCorepretrialdetentionSubject).
+# => FALSE
+? free(PSCorepretrialdetentionSubject).
+# => FALSE
+? dwell(PSCorepretrialdetentionSubject).
+# => FALSE
+? expresses(PSCorepretrialdetentionSubject).
+# => FALSE

@@ -216,8 +216,8 @@ whatever its paperwork says — and the paperwork will not even be true.
 What this design does about what may be done to a person, four chapters spelled
 out: conviction takes movement and nothing else — not the vote, not personhood,
 not the floor; the placement machinery derives from recorded facts a person can
-dispute rather than from anyone's assessment; a sentence can end; and the worst
-thing short of confinement, the voiding of a person's word, was given its guards,
+dispute rather than from anyone's assessment; a sentence can end; and the
+voiding of a person's word was given its guards,
 its clawback ceiling, and — late in the day — its way back.
 
 The objections, and this joint drew the corpus's angriest. Meta: "Readers will
@@ -259,11 +259,15 @@ cannot buy or extend liberty. Current case-bound authority limits the power
 holding the person, while prompt physical release remains an act institutions
 must perform.
 
-**Survives, narrowed.** The direct punitive claim still takes movement and only
-movement. The constitution now also refuses automatic loss of work status,
-wages already owed, housing entitlement, property, family relations, political
-membership, and remedy. It cannot prevent the practical losses confinement may
-cause, operate continuity, measure duration, advance time, or open a cell.
+**Survives, narrowed.** Conviction's direct punishment still takes movement
+and only movement. That is not a count of every protective restriction:
+arrest, search, quarantine and the other named instruments have separate
+grounds, safeguards, current authority and review. Each has its own floor
+wall, and its capability loss cannot feed another consequence. The
+constitution also refuses automatic loss of work status, wages already owed,
+housing entitlement, property, family relations, political membership and
+remedy. It cannot prevent practical harm, operate continuity, measure
+duration, advance time or open a cell.
 
 ## Capture
 

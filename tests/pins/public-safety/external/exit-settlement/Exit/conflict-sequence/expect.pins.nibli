@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedexitsettlementRecord, PSRightsContinuousExternalExitSettlement, PSLinkedexitsettlementSubject).
+# => TRUE
+? complete(PSUnrelatedexitsettlementRecord, PSRightsContinuousExternalExitSettlement, PSUnrelatedexitsettlementSubject).
+# => TRUE
+observe(PSLinkedexitsettlementExternalExitSource, PSLinkedexitsettlementExternalExitRecord, OtherExternalVersion, SourceVersionScope).
+? complete(PSLinkedexitsettlementRecord, PSRightsContinuousExternalExitSettlement, PSLinkedexitsettlementSubject).
+# => FALSE
+? complete(PSUnrelatedexitsettlementRecord, PSRightsContinuousExternalExitSettlement, PSUnrelatedexitsettlementSubject).
+# => TRUE

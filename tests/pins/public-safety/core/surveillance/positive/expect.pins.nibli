@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 10
+? complete(PSCoresurveillanceRecord, PSIndividualSurveillanceOrder, PSCoresurveillanceSubject).
+# => TRUE
+? restrain(PSCoresurveillanceSubject, PSCoresurveillanceRecord, SpecifiedCommunicationPrivacy).
+# => TRUE
+? lose(SpecifiedCommunicationPrivacy, PSCoresurveillanceSubject, PSCoresurveillanceRecord).
+# => TRUE
+? person(PSCoresurveillanceSubject).
+# => TRUE
+? travel(PSCoresurveillanceSubject).
+# => TRUE
+? prisoner(PSCoresurveillanceSubject).
+# => FALSE
+? severe(PSCoresurveillanceSubject).
+# => FALSE
+? capture(PSCoresurveillanceSubject).
+# => FALSE
+? reward(PSCoresurveillanceSubject).
+# => FALSE
+? free(PSCoresurveillanceSubject).
+# => FALSE

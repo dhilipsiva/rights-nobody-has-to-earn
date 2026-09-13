@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? complete(PSProtectedrecord, PSPositiveProtectiveIncidentFinding, PSProtectedsubject).
+# => TRUE
+? obliged(PSProtectedinvestigator, IndependentlyInvestigateProtectiveIncidentAndCommandResponsibility, PSProtectedrecord).
+# => TRUE
+? obliged(PSProtecteddeployingbody, PreserveEvidenceAndEnableIndependentAccessNoOrdersDefence, PSProtectedrecord).
+# => TRUE
+? obliged(State, SecureFamilyParticipationPrivacyPublicFindingsAndEffectiveRemedy, PSProtectedrecord).
+# => TRUE
+observe(PSProtectedsource, PSProtectedrecord, SupersededOrCorrectedFinding, PSFactCurrentDispositionScope).
+? complete(PSProtectedrecord, PSPositiveProtectiveIncidentFinding, PSProtectedsubject).
+# => FALSE
+? obliged(PSProtectedinvestigator, IndependentlyInvestigateProtectiveIncidentAndCommandResponsibility, PSProtectedrecord).
+# => FALSE
+? obliged(PSProtecteddeployingbody, PreserveEvidenceAndEnableIndependentAccessNoOrdersDefence, PSProtectedrecord).
+# => FALSE
+? obliged(State, SecureFamilyParticipationPrivacyPublicFindingsAndEffectiveRemedy, PSProtectedrecord).
+# => FALSE

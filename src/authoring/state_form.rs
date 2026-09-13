@@ -2642,6 +2642,49 @@ pub(crate) fn court_example(
     ))
 }
 
+/// Final internal exit authority, not an opening referendum or negotiation.
+/// Public-safety settlement rules consume this actual source without changing it.
+pub(crate) fn protective_exit_consumer(
+    context: &Context,
+    collective: bool,
+) -> Result<Vec<String>, Error> {
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let key = if collective {
+        "final_exit_with_collective_consent"
+    } else {
+        "final_exit_no_collective_impact"
+    };
+    let branch = branch_lookup(&source.branches, 45, key).map_err(public_error)?;
+    let mut atoms = authority_raw_premises(branch).map_err(public_error)?;
+    atoms.push(format!("complete($result, {}, $record)", branch.power()));
+    for holder in &branch.authority_holders {
+        atoms.push(format!("authority({holder}, {}, $record)", branch.power()));
+    }
+    Ok(atoms)
+}
+
+pub(crate) fn protective_exit_example(
+    context: &Context,
+    collective: bool,
+    prefix: &str,
+    bindings: &[(&str, &str)],
+) -> Result<(String, BTreeMap<String, String>), Error> {
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let key = if collective {
+        "final_exit_with_collective_consent"
+    } else {
+        "final_exit_no_collective_impact"
+    };
+    let branch = branch_lookup(&source.branches, 45, key).map_err(public_error)?;
+    let fixture = ground_fixture(branch, prefix, false, &[], bindings).map_err(public_error)?;
+    Ok((
+        fixture.facts.iter().map(|f| format!("{f}.\n")).collect(),
+        fixture.mapping,
+    ))
+}
+
 #[cfg(test)]
 mod integrity_tests {
     use super::*;

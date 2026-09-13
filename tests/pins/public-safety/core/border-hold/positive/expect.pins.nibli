@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+? complete(PSCoreborderholdRecord, PSIndividualAdultBorderHold, PSCoreborderholdSubject).
+# => TRUE
+? restrain(PSCoreborderholdSubject, PSCoreborderholdRecord, FreeMovement).
+# => TRUE
+? lose(FreeMovement, PSCoreborderholdSubject, PSCoreborderholdRecord).
+# => TRUE
+? person(PSCoreborderholdSubject).
+# => TRUE
+? travel(PSCoreborderholdSubject).
+# => FALSE
+? prisoner(PSCoreborderholdSubject).
+# => FALSE
+? severe(PSCoreborderholdSubject).
+# => FALSE
+? capture(PSCoreborderholdSubject).
+# => FALSE
+? reward(PSCoreborderholdSubject).
+# => FALSE
+? free(PSCoreborderholdSubject).
+# => FALSE
+? dwell(PSCoreborderholdSubject).
+# => FALSE
+? expresses(PSCoreborderholdSubject).
+# => FALSE

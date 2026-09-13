@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSCorequarantineSource, PSSourceAuthority, PSCorequarantineRecord).
+authorized(PSCorequarantineEvidence, PSEvidenceAuthority, PSCorequarantineRecord).
+observe(PSCorequarantineSource, PSCorequarantineRecord, PSCorequarantineSubject, PSCoreSubjectScope).
+observe(PSCorequarantineEvidence, PSCorequarantineRecord, PSCorequarantineSubject, PSCoreSubjectScope).
+observe(PSCorequarantineSource, PSCorequarantineRecord, PSIndividualQuarantineOrder, PSRecordKindScope).
+observe(PSCorequarantineEvidence, PSCorequarantineRecord, PSIndividualQuarantineOrder, PSRecordKindScope).
+observe(PSCorequarantineSource, PSCorequarantineRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+observe(PSCorequarantineEvidence, PSCorequarantineRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).

@@ -206,6 +206,26 @@ alternate. A wrong case or source version cannot withdraw somebody else's
 remedy. These record-dependent consequences do not condition the prior public
 duty to provide access, survivor support and protection against retaliation.
 
+Protective power now has another exact route. A person, supporter, association
+or rights advocate can reach an independent reader without the original
+actor's permission or a complete official record. An independently reviewed
+finding of unlawful force, a prohibited practice, missing records,
+destruction, falsification or another named defect creates evidence-preservation,
+care, correction and remedy duties. Where the affected order is represented,
+withdrawal rejoins its exact source, person, case, revision, scope and window.
+A finding about one order cannot disable another person's unrelated remedy.
+An unrecorded abuse is still a wrong requiring action. An absent person-entry
+is not evidence against the person or proof that the abuse was discovered.
+
+The finding reaches a named independent reader. Positive evidence of a missed
+response deadline sends the unfulfilled review duty to an uninvolved
+alternate; silence creates neither approval nor an indefinite hold. Case
+relief, general constitutional invalidation and composition review still
+need their actual, distinct court authorities. An ordinary court remedy must
+identify the affected protective act in that case. Care, access, evidence
+preservation and protection against retaliation do not wait for those formal
+conclusions, and none of them proves that an institution acted.
+
 And then nobody has necessarily acted. A formal action duty is not a performed
 review. A receipt conclusion does not authenticate its writer or prove the service
 system operated. A non-response conclusion is not an escalation received. Continuity

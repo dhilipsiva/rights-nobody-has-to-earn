@@ -41,6 +41,101 @@ teaching route can derive learning. No cast member carries the required receipt,
 every non-carceral route remains dormant. The chapter comes back to that distinction
 at the end.
 
+## Protection is not punishment
+
+One direct punishment does not mean one permissible restriction of liberty.
+Arrest, pre-trial detention, search and seizure now have separate contracts.
+Each needs an individual recorded ground, an identified actor, reasons,
+accessible assistance, independent authorization and review. Search normally
+requires prior independent authority. Its immediate-danger exception is narrow,
+must be reported, and keeps the same accountability. Detention receives prompt
+automatic judicial review; nobody has to earn that review by managing to ask.
+
+Quarantine, exclusion, border holding and pre-expulsion detention are not
+convictions. They cannot feed punishment, severity, placement or recognition,
+and they cannot rely on a risk or dangerousness score. A child may not be
+detained for immigration purposes. An adult's immigration detention needs
+individual necessity, judicial authority, a maximum, independent review and a
+real alternative shown insufficient. Expulsion and international transfer
+must also satisfy the actual asylum, individual-decision, suspensive-appeal
+and non-refoulement safeguards described in Chapter 8. A favourable label
+cannot stand in for those records.
+
+Every coercive instrument has its own floor wall. None may be produced because
+someone lacks safety, food, shelter, care, learning, speech, belief or company.
+The capability it restricts is an endpoint: no rule may read that loss back
+into another consequence. The order itself may be read for review and
+protection. The distinction matters. A movement restriction must affect the
+movement conclusion, but losing movement must not become the next reason to
+take something else.
+
+## The actor who uses force must answer
+
+Policing, prosecution, adjudication, custodial execution, external defence
+and security intelligence are separate public functions, not interchangeable
+parts of one security authority. Defence and intelligence personnel cannot
+hold political, judicial or oversight seats while serving. Secondment,
+shared command or a reserve label cannot recreate a fused force. Civilians
+do not come under military jurisdiction. Individually authorized unarmed
+civil assistance carries no arrest, search, detention, interrogation,
+crowd-control or surveillance power. Defence, counsel and survivor protection
+remain independent parts of the justice interface.
+
+Ordinary policing is assistance, information, mediation and protection against
+harm, not a general power to enforce order as such. It cannot make someone's
+immigration, floor, care, learning or collective status a condition of help.
+There is no secret law, court or detention site, and no rule of engagement
+hidden from a court. A narrowly classified budget annex must remain fully
+open to independent oversight.
+
+Force requires strict necessity, no reasonably available less harmful means,
+the minimum sufficient intervention, proportionate means, warning where
+feasible, cessation when necessity ends, and aid afterwards. The public actor
+bears the burden of lawfulness. Lethal force is permitted only where strictly
+unavoidable to protect life. A death, serious injury, torture or disappearance
+requires investigation by a body other than the deploying one, with independent
+access, evidence preservation, family participation and public findings that
+respect privacy. Orders from above are no defence; command responsibility
+does not disappear into an organization chart.
+
+Some acts have no lawful version: torture and cruel treatment, disappearance
+and secret detention, arbitrary killing, collective punishment, indefinite
+detention without charge or review, coerced confession, human shields, attacks
+on people not taking part in hostilities, starvation or floor denial as a
+weapon, experimentation without consent, indiscriminate or superfluously
+injurious weapons, autonomous human targeting without meaningful human
+control, and aggressive war. Neither emergency nor foreign cooperation creates
+an exception. Immunity, amnesty, lapse of time or a pardon cannot erase the
+core abuse or its remedy.
+
+Intelligence requires individualized prior judicial authority, the least
+intrusive effective means, a defined scope and duration, fresh authorization
+on renewal, minimized retention and notification once it no longer defeats
+the lawful purpose. Data about people never individually suspected cannot be
+retained. Purchase, partnership or foreign exchange cannot supply material
+the republic could not lawfully collect itself. Bulk or suspicionless
+collection is prohibited; an authorization cannot be permanently undisclosable.
+Secret evidence can never be sole or decisive, and a consequence cannot
+rest on material that cannot be disclosed as required. Risk, threat, loyalty,
+dangerousness, clearance and watchlist products stay out of the consequential
+person record and cannot condition standing, the floor, the ballot, candidacy,
+liberty, remedy or allocation. Employment vetting needs a specified necessary
+function, reasons, disclosure so far as possible, independent challenge and
+remedy; it can never gate the floor.
+
+Someone disclosing unlawful surveillance can reach an independent recipient
+without first using an implicated internal channel. That recipient must
+protect the discloser, preserve and examine evidence, and publish
+proportionately within the privacy boundary. Receiving the disclosure does
+not establish that its allegation is true.
+
+Objection to an armed or lethal role is unconditional, including for a serving
+member and for a particular operation, weapon or order. There is no sincerity
+tribunal. Any civilian alternative must be genuinely equivalent and
+non-punitive, without loss of employment, education or other civil rights,
+and without repeated punishment for the continuing objection. A protective
+member must refuse a manifestly unlawful order, and that refusal is protected.
+
 ## Why nothing follows from it
 
 The structural reason this holds is worth seeing, because it is not a matter of
@@ -107,10 +202,12 @@ institution owes; they are not evidence of what happens inside it.
 
 There is one more thing, and the design now speaks to it in two different ways.
 
-**A sentence can be finished.** Somebody records that it is over, and the machinery
-that was holding that person stops holding them. Movement returns. Placement stops.
-The marker watching for isolation goes quiet. This is not relief: relief says the
-conviction should never have held; a finished sentence says it held and is done.
+**A sentence can be finished.** Somebody records that it is over, and its custody
+conclusion stops. In the cases supplied here, movement returns, placement stops,
+and the marker watching for isolation goes quiet. A separate protective restriction
+would need its own current grounds; ending the sentence cannot authorize it.
+This is not relief: relief says the conviction should never have held; a finished
+sentence says it held and is done.
 
 Custody now has another limit. A court judgment is no longer enough by itself. The
 record must also tie the same case to the person, the court, the court's judgment, and
@@ -167,6 +264,13 @@ speech and shelter derive for confined people. The rulebook now also has
 recipient-side routes for food, shelter, care, material security, and company, and
 retains the older teaching-and-hearing route for learning. None is exercised by the
 cast. A route exists; no matching arrival is supplied.
+
+The new physical-holding route changes the rulebook, not these people's
+supplied facts. No cast member has a separate report of protective holding.
+If such a report establishes that a person remains physically held after
+sentence authority ends, the shelter and voice protections still attach to
+that holding. They do not renew the sentence, authorize continued holding or
+replace the duty to secure lawful release.
 
 So when a sentence is finished, or current case authority is absent, recorded speech
 and confinement-produced shelter stop in the newly evaluated record. The person keeps

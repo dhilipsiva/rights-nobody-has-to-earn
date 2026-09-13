@@ -97,8 +97,9 @@ recorded promises turn red in several places at once. One of the red lines is th
 belief entitlement itself, simply gone. The others are stranger, and worth sitting
 with: people who were not prisoners are suddenly recorded as housed, and as having
 been heard. Nothing kind has happened to them. They have been jailed for what they
-believe, and in this design shelter and recorded speech arrive for prisoners and for
-nobody else — so the tidied floor looks, on paper, like it is delivering more. That
+believe, and in this supplied counterfactual shelter and recorded speech arrive
+through imprisonment; no other holding or arrival evidence is supplied. So the
+tidied floor looks, on paper, like it is delivering more. That
 is what a floor with the wrong grammar buys: a society that jails people for their
 beliefs and can show you improving numbers.
 
@@ -146,8 +147,11 @@ instead will keep running — so the places where a rule cannot be tightened hav
 known, priced, and watched, not discovered by whoever tries first.
 
 And one more limit, the sharpest in the chapter. The refusal you have been watching
-guards one consequence: imprisonment. A rule that reads the lack of a floor right
-into anything else — into a worse placement, into a person's recognition — has a
+originally guarded one consequence: imprisonment. Every new protective instrument
+now has its own connection to standing and its own refusal of each floor-based
+coercive rule. None borrows that protection merely by calling itself protective.
+A rule that reads the lack of a floor right into a worse placement or a person's
+recognition still has a
 different shape, no loop, and the machinery accepts it without comment. What refuses
 those rules is not a wall. It is a promise this design wrote down — a floor right may
 be noticed, and may never be acted on — together with a check that enforces the
@@ -156,6 +160,14 @@ because walls and promises fail differently. A wall fails loudly, when somebody
 breaches it. A promise fails quietly, when somebody stops keeping it. The design's
 protection against the worst rule is a wall; its protection against the merely bad
 ones is a kept promise, and the keeping is work somebody has to keep doing.
+
+The new parentage protection shows why every extension needs to be checked
+with the old rules still present. A witnessed parent relation can expose a
+conflict when a parent judges their own child. Connecting parentage to standing
+therefore also closes a previously loadable rule that would confine someone
+because their credibility had not been voided. That extra refusal is a
+consequence of these particular connections, not evidence that credibility
+has become another floor right.
 
 And of the wall itself, one last thing, said here because this is where refusals
 live: nobody built it. The refusal is a property of how the machinery happens to read
@@ -196,6 +208,10 @@ contact, physical presence, or effective control establishes personhood immediat
 the encounter name may be temporary, and proves no civil identity, citizenship,
 family relationship, liability, or guilt. Missing or disputed records therefore do
 not postpone the floor, process, or remedy while reconciliation happens.
+
+The new protective-order and independently witnessed physical-holding routes
+also preserve standing. Zed's counterfactual supplies neither. Their existence
+does not mean every person is observed or every holding is entered.
 
 The custody and release rules remain valid independent routes. That redundancy is
 deliberate. If an encounter fact is absent from the supplied record, a lawful custody

@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 11
+? complete(PSCoreseizureRecord, PSIndividualSeizureOrder, PSCoreseizureSubject).
+# => TRUE
+? obliged(PSCoreseizureOperator, InventoryPreserveAccountForAndReturnSeizedProperty, PSCoreseizureRecord).
+# => TRUE
+? restrain(PSCoreseizureSubject, PSCoreseizureRecord, SpecifiedPropertyUse).
+# => TRUE
+? lose(SpecifiedPropertyUse, PSCoreseizureSubject, PSCoreseizureRecord).
+# => TRUE
+? person(PSCoreseizureSubject).
+# => TRUE
+? travel(PSCoreseizureSubject).
+# => TRUE
+? prisoner(PSCoreseizureSubject).
+# => FALSE
+? severe(PSCoreseizureSubject).
+# => FALSE
+? capture(PSCoreseizureSubject).
+# => FALSE
+? reward(PSCoreseizureSubject).
+# => FALSE
+? free(PSCoreseizureSubject).
+# => FALSE

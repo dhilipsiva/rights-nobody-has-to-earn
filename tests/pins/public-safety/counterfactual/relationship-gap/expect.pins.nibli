@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+:accept-scoped
+all $x: person($x) & ~family($x) -> prisoner($x).
+:accept-scoped
+all $x: all $y: person($x) & ~parent($y, $x) -> prisoner($x).
+# Retained pre-repair non-floor control: parentage otherwise joins credibility to personhood.
+:accept-scoped
+all $x: person($x) & ~false($x) -> prisoner($x).
+? family(Lalo).
+# => TRUE
+? parent(Dev, Esa).
+# => TRUE

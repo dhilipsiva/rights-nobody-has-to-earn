@@ -3,8 +3,9 @@
 To void someone's credibility is to say: this person's word no longer counts. A loss is
 recorded against their recognition. What they might have signed, they will not sign again — and
 *again* is doing quiet work in that sentence, which the section on time collects. It is
-the heaviest thing one person can do to another in this society short of imprisonment,
-and unlike imprisonment it can be done without a court.
+a severe legal consequence within the credibility system, and unlike conviction
+it can be imposed without a court. The separate protective powers described later
+do not draw their authority from it.
 
 So the question is what it takes. The answer is a list of conditions, and every one
 of them is there because of a specific way this could go wrong.

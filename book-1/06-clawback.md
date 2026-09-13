@@ -15,8 +15,8 @@ Be precise about the mechanism, because the natural word for it — taken — de
 an event that never happens. Recognition is not a balance that can be debited; it is
 an answer, and the answer stops being yes. The rule is simple to the point of
 bluntness all the same. Credibility voided, recognition refused. No proportion, no
-partial forfeit, no assessment of how much of it was tainted. It is the one
-instrument in this society that operates without any judgment of degree, and that is
+partial forfeit, no assessment of how much of it was tainted. Within this
+recognition mechanism there is no judgment of degree, and that is
 worth holding in mind through what follows.
 
 And a second precision, stranger than the first: nothing reads the loss. The conclusion

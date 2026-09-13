@@ -28,6 +28,7 @@ destination.
 | `new-book-plans/book-1-amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
 | `new-book-plans/book-1-mobility-and-plurality-contract.md` | Mobility protections, differentiated collective rights, exact consent/consultation and external no-evasion. |
 | `new-book-plans/book-1-non-carceral-justice-contract.md` | Accessible justice, actual court-bound remedies, voluntary restoration and release continuity. |
+| `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
 | `verify.sh` | Run the pins and contradiction checks. |
@@ -66,10 +67,11 @@ and no cached verdict that lets a changed book skip its tests. The focused
 `--only` command is for feedback on one pin file, not a whole-book pass.
 
 Latest full run measured on 2026-09-13 with four workers and the release binary
-already built: all 9,130 pins across 1,892 cases passed, with complete formal
-contradiction scans and no findings, in 633.39 seconds (10m33s). This includes
-the new justice cases; nine existing known-defect pins still
-reproduce. The under-five-minute full-run target is not yet met. This is a
+already built: all 12,860 pins across 4,190 cases passed, with complete formal
+contradiction scans and no findings, in 1,552.00 seconds (25m52s). This includes
+the new public-safety cases; nine existing known-defect pins still
+reproduce. The under-five-minute full-run target is not met, and the measured
+regression is the next implementation priority. This is a
 timing observation, not a cached verification result or a gate on later edits.
 
 ## Author
@@ -84,10 +86,12 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh amendment
 ./generate.sh mobility
 ./generate.sh justice
+./generate.sh public-safety
 ./generate.sh spine
 ```
 
-The state-form, obligations, integrity, statistics, amendment, mobility and justice commands
+The state-form, obligations, integrity, statistics, amendment, mobility,
+justice and public-safety commands
 update their constitution rule blocks, companion pins, and executable fixtures
 from their authoring inputs. Review those changes before running verification.
 Mobility's direct-effect cards live in `src/authoring/mobility_contracts.rs`;
@@ -96,6 +100,10 @@ border, emergency, treaty, identity or population-scoring system.
 Justice's direct-effect cards live in `src/authoring/justice_contracts.rs`.
 Its court-dependent effects consume the actual state-form power and raw
 witnesses; they create neither new court holders nor coercive instruments.
+Public safety's cards and composition helpers live in
+`src/authoring/public_safety*.rs`. They consume the actual justice, mobility,
+consent and exit interfaces and keep legal permission separate from an
+independently reported act. No command operates a force or authenticates evidence.
 The spine command refreshes the chapter-order projection;
 chapter placement and prose remain review work. Ordinary chapter pins and test
 fixtures can be edited directly.

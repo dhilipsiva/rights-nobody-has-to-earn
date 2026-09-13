@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+? complete(PSCoreforceRecord, PSNonLethalForceOrder, PSCoreforceSubject).
+# => TRUE
+? obliged(PSCoreforceOperator, CeaseUnneededForceAndProvideImmediateMedicalAid, PSCoreforceRecord).
+# => TRUE
+? obliged(PSCoreforceOperator, PreserveForceRecordAndSubmitToIndependentReview, PSCoreforceRecord).
+# => TRUE
+? restrain(PSCoreforceSubject, PSCoreforceRecord, SpecifiedPhysicalAutonomy).
+# => TRUE
+? lose(SpecifiedPhysicalAutonomy, PSCoreforceSubject, PSCoreforceRecord).
+# => TRUE
+? person(PSCoreforceSubject).
+# => TRUE
+? travel(PSCoreforceSubject).
+# => TRUE
+? prisoner(PSCoreforceSubject).
+# => FALSE
+? severe(PSCoreforceSubject).
+# => FALSE
+? capture(PSCoreforceSubject).
+# => FALSE
+? reward(PSCoreforceSubject).
+# => FALSE
+? free(PSCoreforceSubject).
+# => FALSE

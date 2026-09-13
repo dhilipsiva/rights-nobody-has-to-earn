@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedpreexpulsiondetentionRecord, PSIndividualAdultPreExpulsionDetention, PSLinkedpreexpulsiondetentionSubject).
+# => TRUE
+? complete(PSUnrelatedpreexpulsiondetentionRecord, PSIndividualAdultPreExpulsionDetention, PSUnrelatedpreexpulsiondetentionSubject).
+# => TRUE
+observe(PSLinkedpreexpulsiondetentionExternalAsylumSource, PSLinkedpreexpulsiondetentionExternalAsylumRecord, OtherExternalVersion, MPSourceVersionScope).
+? complete(PSLinkedpreexpulsiondetentionRecord, PSIndividualAdultPreExpulsionDetention, PSLinkedpreexpulsiondetentionSubject).
+# => FALSE
+? complete(PSUnrelatedpreexpulsiondetentionRecord, PSIndividualAdultPreExpulsionDetention, PSUnrelatedpreexpulsiondetentionSubject).
+# => TRUE

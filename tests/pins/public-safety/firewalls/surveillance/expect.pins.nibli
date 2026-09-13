@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~secure($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~eats($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~dwell($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~healthy($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~learn($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~expresses($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~believe($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~meets($subject) -> restrain($subject, PSIndividualSurveillanceOrderForbiddenOrder, SpecifiedCommunicationPrivacy).

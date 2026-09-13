@@ -669,6 +669,13 @@ but never replaces, this rule.
 
 - [ ] **Operate public safety, defence, and declared shock conditions without
   acquiring a power Book 1 refused.**
+  - The Book 1 implementation is collected in
+    `new-book-plans/book-1-public-safety-contract.md` and authored explicitly
+    by `./generate.sh public-safety`. Its supplied-record conclusions do not
+    perform any of this work. Keep this item inactive until Gate C. In
+    particular, distinguish authorization from witnessed actual holding,
+    ordinary cessation from abuse, and a repeated frozen record from live
+    outside evidence; no formal test establishes those institutional acts.
   - Follow the author-ratified 2026-08-08 contract in
     `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
     Book 2 supplies capability and never a legal authority: no derogation power,

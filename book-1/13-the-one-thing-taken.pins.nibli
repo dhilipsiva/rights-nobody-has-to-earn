@@ -10,17 +10,16 @@
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/13-the-one-thing-taken.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#                        # the other substantive cases and contradiction scans
 #
 # TRIGGER FIRED. This file used to record "there is no release" as an absence and
 # said: "If a release rule is ever added, the closing section must be rewritten."
 # It was, and it has been. Release is now Article 6's `~free` guard plus Article
 # 1's `free -> person`, and the closing two sections are pinned below.
 #
-# One claim here is still an ABSENCE and cannot be queried: "there is no duration
-# in it anywhere, no term, no length, nothing that counts". `verify.sh` holds
-# that one — a standalone numeric literal in an enacted line fails the build;
-# digits inside typed source identifiers such as T3 are not quantities.
+# Duration remains an external supplied boundary, not a counted sentence.
+# The existing time-vocabulary refusals below remain substantive checks;
+# retired numeric/source-report audits are not verification gates.
 #
 # The other: "Nothing depends on it" — travel appears in the constitution only as
 # a rule head. Test the rule BODIES, since a bare grep matches the head too:
@@ -37,7 +36,13 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 35
+:expect-pins 37
+
+# The order may be read; the loss and free-movement capability may not.
+# This checks the enacted source with a live positive control. The authoring
+# development test separately inspects the compiled dependency graph.
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])(travel|lose)[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])restrain[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
 
 # "Hano was convicted ... and cannot move freely."
 ? prisoner(Hano).

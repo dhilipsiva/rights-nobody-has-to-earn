@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(PSCoreborderholdRecord, PSIndividualAdultBorderHold, PSCoreborderholdSubject).
+# => TRUE
+observe(PSCoreborderholdSource, PSCoreborderholdRecord, WrongRevision, PSRecordRevisionScope).
+? complete(PSCoreborderholdRecord, PSIndividualAdultBorderHold, PSCoreborderholdSubject).
+# => FALSE

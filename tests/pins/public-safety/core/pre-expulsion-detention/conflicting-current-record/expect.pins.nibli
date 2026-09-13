@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(PSCorepreexpulsiondetentionRecord, PSIndividualAdultPreExpulsionDetention, PSCorepreexpulsiondetentionSubject).
+# => TRUE
+observe(PSCorepreexpulsiondetentionSource, PSCorepreexpulsiondetentionRecord, WrongRevision, PSRecordRevisionScope).
+? complete(PSCorepreexpulsiondetentionRecord, PSIndividualAdultPreExpulsionDetention, PSCorepreexpulsiondetentionSubject).
+# => FALSE

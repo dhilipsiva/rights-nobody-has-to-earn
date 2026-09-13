@@ -110,6 +110,36 @@ contract keeps those legacy findings visible and records focused and full
 verification separately. The historical rows below are superseded only for
 this bounded legal interface, not for operation or the remaining safety work.
 
+## Protective-power implementation — 2026-09-13
+
+[Protective power without a security exception](book-1-public-safety-contract.md)
+specifies the implemented and verified ratified public-safety baseline.
+Separated mandates and individually bounded coercive
+instruments consume actual justice, mobility, collective-consent and exit
+contracts. Declarations, renewals, measures and alternate routes have exact
+source/window joins; frozen evidence still cannot establish a fresh evaluation.
+Independent human identification survives a disputed or ended order. Actual
+holding has separate humane-care and voice protections, including a duty to
+respond before a complete official record exists.
+
+Every instrument has all eight floor-refusal tests; capability losses remain
+unread. Positive relationship findings also close the family/parent-absence
+confinement gap. Exact independent defect review withdraws only the affected
+authority, preserves rights and reaches named readers without claiming they
+acted. Normal cessation is not a defect. The reader revisions cover the shield,
+standing and floor, crisis and external power, single-punishment scope and
+accountability, including Part V and the hand-authored spine.
+
+This supersedes historical coverage absences below only for the implemented
+formal interface. It creates no new taxonomy class, omnibus security power,
+actual institution, authenticated evidence, service delivery, clock, physical
+release or completed remedy. Book 2 remains collection-only, and other states'
+recognition, cooperation and readmission remain external assumptions. The
+complete verifier passed 12,860 pins across 4,190 cases, including every new
+public-safety case, with complete contradiction scans and no findings. Nine
+existing known-defect pins still reproduce. The measured 25m52s runtime misses
+the five-minute performance target; that work remains open.
+
 ## 1. Ratified mandate
 
 The settled specification has a narrow, verified kernel: equal standing, named

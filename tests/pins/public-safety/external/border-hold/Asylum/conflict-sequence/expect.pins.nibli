@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedborderholdRecord, PSIndividualAdultBorderHold, PSLinkedborderholdSubject).
+# => TRUE
+? complete(PSUnrelatedborderholdRecord, PSIndividualAdultBorderHold, PSUnrelatedborderholdSubject).
+# => TRUE
+observe(PSLinkedborderholdExternalAsylumSource, PSLinkedborderholdExternalAsylumRecord, OtherExternalVersion, MPSourceVersionScope).
+? complete(PSLinkedborderholdRecord, PSIndividualAdultBorderHold, PSLinkedborderholdSubject).
+# => FALSE
+? complete(PSUnrelatedborderholdRecord, PSIndividualAdultBorderHold, PSUnrelatedborderholdSubject).
+# => TRUE

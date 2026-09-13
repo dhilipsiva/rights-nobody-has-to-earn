@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(PSLinkedgeneralremedyRecord, PSActualConstitutionalCourtGeneralRemedy, PSLinkedgeneralremedySubject).
+# => TRUE
+? complete(PSUnrelatedgeneralremedyRecord, PSActualConstitutionalCourtGeneralRemedy, PSUnrelatedgeneralremedySubject).
+# => TRUE
+observe(PSLinkedgeneralremedyExternalJusticeSource, PSLinkedgeneralremedyExternalJusticeRecord, OtherExternalVersion, JSourceVersionScope).
+? complete(PSLinkedgeneralremedyRecord, PSActualConstitutionalCourtGeneralRemedy, PSLinkedgeneralremedySubject).
+# => FALSE
+? complete(PSUnrelatedgeneralremedyRecord, PSActualConstitutionalCourtGeneralRemedy, PSUnrelatedgeneralremedySubject).
+# => TRUE

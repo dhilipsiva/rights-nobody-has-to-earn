@@ -456,6 +456,46 @@ fn ground(text: &str, values: &Values) -> String {
         .into_owned()
 }
 
+/// Preserve the existing procedure/court contract when protective powers
+/// consume it. A hearing or remedy never becomes a new coercive mandate.
+pub(crate) fn protective_consumer(context: &Context, id: &str) -> Result<Vec<String>, Error> {
+    if !matches!(
+        id,
+        "hearing"
+            | "assistance"
+            | "survivor"
+            | "case-relief"
+            | "general-invalidation"
+            | "composition-review"
+    ) {
+        return Err(Error::new("undeclared protective justice interface"));
+    }
+    let cards = cards(context)?;
+    let card = self::card(&cards, id);
+    let mut atoms = premises(&cards, card);
+    atoms.push(format!("complete($record, {}, $case)", card.kind));
+    Ok(atoms)
+}
+
+pub(crate) fn protective_example(
+    context: &Context,
+    id: &str,
+    prefix: &str,
+    bindings: &[(&str, &str)],
+) -> Result<(String, Values), Error> {
+    protective_consumer(context, id)?;
+    let cards = cards(context)?;
+    let card = self::card(&cards, id);
+    let mut values = self::values(&cards, card, prefix);
+    for (variable, value) in bindings {
+        if !values.contains_key(*variable) {
+            return Err(Error::new(format!("unknown justice binding {variable}")));
+        }
+        values.insert((*variable).into(), (*value).into());
+    }
+    Ok((fixture(context, &cards, card, &values)?, values))
+}
+
 fn values(cards: &[Card], card: &Card, prefix: &str) -> Values {
     let text = format!(
         "{} {}",

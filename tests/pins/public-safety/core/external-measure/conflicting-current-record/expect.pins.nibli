@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(PSCoreexternalmeasureRecord, PSBoundedExternalTradeOrSanctionsMeasure, PSCoreexternalmeasureSubject).
+# => TRUE
+observe(PSCoreexternalmeasureSource, PSCoreexternalmeasureRecord, WrongRevision, PSRecordRevisionScope).
+? complete(PSCoreexternalmeasureRecord, PSBoundedExternalTradeOrSanctionsMeasure, PSCoreexternalmeasureSubject).
+# => FALSE

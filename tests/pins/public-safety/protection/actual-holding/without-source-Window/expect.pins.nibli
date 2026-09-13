@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+? complete(PSProtectedrecord, PSPositiveActualPublicHoldingFinding, PSProtectedsubject).
+# => FALSE
+? person(PSProtectedsubject).
+# => FALSE
+? dwell(PSProtectedsubject).
+# => FALSE
+? expresses(PSProtectedsubject).
+# => FALSE
+? obliged(PSProtectedholdingactor, SecureShelterRecordedVoiceCareConfidentialCounselAndChosenNotification, PSProtectedrecord).
+# => FALSE
+? obliged(State, SecureAutomaticIndependentJudicialHoldingReviewAndKnownPlace, PSProtectedrecord).
+# => FALSE
+? obliged(State, PreserveIndependentAccessEvidenceReleaseRemedyAndContinuity, PSProtectedrecord).
+# => FALSE

@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSCoreexpulsionSource, PSSourceAuthority, PSCoreexpulsionRecord).
+authorized(PSCoreexpulsionEvidence, PSEvidenceAuthority, PSCoreexpulsionRecord).
+observe(PSCoreexpulsionSource, PSCoreexpulsionRecord, PSCoreexpulsionSubject, PSCoreSubjectScope).
+observe(PSCoreexpulsionEvidence, PSCoreexpulsionRecord, PSCoreexpulsionSubject, PSCoreSubjectScope).
+observe(PSCoreexpulsionSource, PSCoreexpulsionRecord, PSIndividualExpulsionOrder, PSRecordKindScope).
+observe(PSCoreexpulsionEvidence, PSCoreexpulsionRecord, PSIndividualExpulsionOrder, PSRecordKindScope).
+observe(PSCoreexpulsionSource, PSCoreexpulsionRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+observe(PSCoreexpulsionEvidence, PSCoreexpulsionRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).

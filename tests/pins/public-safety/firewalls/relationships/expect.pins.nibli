@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+:refuse reasoning /Unstratifiable/
+all $subject: person($subject) & ~family($subject) -> prisoner($subject).
+:refuse reasoning /Unstratifiable/
+all $subject: all $parent: person($subject) & ~parent($parent, $subject) -> prisoner($subject).
