@@ -322,23 +322,6 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Meet the five-minute complete-verification target.**
-  - Restore the author's few-minute feedback loop before adding another large
-    rule family. The 2026-09-13 public-safety full run passed 12,860 pins across
-    4,190 cases in 1,552.00 seconds with four workers and the release binary
-    built; see README.md and the public-safety implementation contract.
-  - Measure preparation, independent snapshots, fixture loading, pin execution
-    and complete contradiction checks. Optimize repeated work within a run
-    while preserving exact semantics, source isolation and cancellation.
-  - Keep every substantive case, refusal, scoped control, stateful sequence,
-    known-defect expectation and trusted shell precondition. Ordinary cases
-    must still load the actual constitution; only declared counterfactuals may
-    modify it. Incomplete checks must still fail.
-  - No persisted verdicts, hashing, receipts, freshness or administrative gates.
-    Runner regression tests remain in its development suite.
-  - Done when the complete suite passes in under five minutes with the release
-    binary already built and one to four workers; report measured timing.
-
 - [ ] **Implement the ratified environmental right, Class 9 commons, and
   Class 10 non-human-animal protections.**
   - Follow the author-ratified 2026-08-08 contract in

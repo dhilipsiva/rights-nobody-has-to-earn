@@ -15,7 +15,7 @@ use crate::scheduler::{self, CancellationToken};
 
 const INVENTORY: &str = "tests/pins/suites.json";
 
-#[derive(Clone, Debug, Default, Deserialize, Serialize, PartialEq, Eq)]
+#[derive(Clone, Debug, Default, Deserialize, Serialize, PartialEq, Eq, PartialOrd, Ord)]
 #[serde(deny_unknown_fields)]
 pub(crate) struct Edit {
     pub(crate) before: String,
@@ -47,6 +47,15 @@ pub(crate) struct Case {
     pub(crate) scan: bool,
     #[serde(default, skip_serializing_if = "std::ops::Not::not")]
     pub(crate) allow_shell: bool,
+}
+
+impl Case {
+    fn preparation_key(&self) -> Option<(&str, &[Edit])> {
+        // The live model is already retained separately on every worker. Only
+        // variants need affinity; fixtures and pin files still run in isolation.
+        (self.base != "live" || !self.edits.is_empty())
+            .then_some((self.base.as_str(), self.edits.as_slice()))
+    }
 }
 
 fn yes() -> bool {
@@ -362,27 +371,43 @@ pub(crate) fn run(args: Args) -> Result<(), Error> {
         total: cases.len(),
         started,
     };
-    let outcomes = scheduler::run(cases, workers, Worker::default, |worker, case, cancel| {
-        let engine = worker.engine(&inputs, case, cancel, &compiled)?;
-        let result = engine.run_case(
-            &inputs.sources(&case.fixtures),
-            &inputs.sources(&case.pins),
-            PinOptions {
-                allow_shell: case.allow_shell,
-                working_directory: Some(context.root()),
-                cancellation: Some(cancel),
-            },
-            case.scan,
-        );
-        progress.completed(&case.id);
-        if result.exit_code != 0 {
-            return Err(Error::with_exit_code(
-                format!("{}\n{}{}", case.id, result.stdout, result.stderr),
-                result.exit_code,
-            ));
-        }
-        Ok(result)
-    })?;
+    let outcomes = scheduler::run_grouped(
+        cases,
+        workers,
+        Worker::default,
+        Case::preparation_key,
+        |worker, case, cancel| {
+            #[cfg(test)]
+            crate::pin::profile_case_started(&case.id);
+            #[cfg(test)]
+            let prepare_started = Instant::now();
+            let engine = worker.engine(&inputs, case, cancel, &compiled)?;
+            #[cfg(test)]
+            let preparation = prepare_started.elapsed();
+            #[cfg(test)]
+            let run_started = Instant::now();
+            let result = engine.run_case(
+                &inputs.sources(&case.fixtures),
+                &inputs.sources(&case.pins),
+                PinOptions {
+                    allow_shell: case.allow_shell,
+                    working_directory: Some(context.root()),
+                    cancellation: Some(cancel),
+                },
+                case.scan,
+            );
+            #[cfg(test)]
+            crate::pin::profile_case_finished(&case.id, preparation, run_started.elapsed());
+            progress.completed(&case.id);
+            if result.exit_code != 0 {
+                return Err(Error::with_exit_code(
+                    format!("{}\n{}{}", case.id, result.stdout, result.stderr),
+                    result.exit_code,
+                ));
+            }
+            Ok(result)
+        },
+    )?;
     let pins: usize = outcomes.iter().map(|result: &RunOutput| result.pins).sum();
     let defects: usize = outcomes.iter().map(|result| result.defects).sum();
     if args.only.is_some() {
@@ -407,6 +432,46 @@ pub(crate) fn run(args: Args) -> Result<(), Error> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn preparation_affinity_uses_exact_base_and_ordered_edits_only() {
+        let mut case = Case {
+            id: "case".into(),
+            base: "live".into(),
+            fixtures: Vec::new(),
+            pins: vec!["expect.pins.nibli".into()],
+            edits: Vec::new(),
+            scan: true,
+            allow_shell: false,
+        };
+        assert!(case.preparation_key().is_none());
+        case.base = "variant".into();
+        let mut sibling = case.clone();
+        sibling.id = "sibling".into();
+        sibling.fixtures.push("another-fixture.nibli".into());
+        sibling.pins = vec!["another.pins.nibli".into()];
+        assert_eq!(case.preparation_key(), sibling.preparation_key());
+        sibling.base = "another-base".into();
+        assert_ne!(case.preparation_key(), sibling.preparation_key());
+        case.base = "live".into();
+        case.edits = vec![
+            Edit {
+                before: "person(A).".into(),
+                after: "person(B).".into(),
+            },
+            Edit {
+                before: "person(B).".into(),
+                after: "person(C).".into(),
+            },
+        ];
+        assert!(case.preparation_key().is_some());
+        sibling = case.clone();
+        sibling.edits.reverse();
+        assert_ne!(case.preparation_key(), sibling.preparation_key());
+        sibling = case.clone();
+        sibling.edits[0].after = "person(D).".into();
+        assert_ne!(case.preparation_key(), sibling.preparation_key());
+    }
 
     #[test]
     fn edits_never_match_comments_or_partial_statements() {

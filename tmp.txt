@@ -1,73 +1,65 @@
 SPDX-License-Identifier: CC-BY-4.0
 
-Active TODO: Meet the five-minute complete-verification target.
-Implementation remains unfinished; do not start another constitutional family.
+Resumed at the author's explicit request on 2026-09-14.
 
-Scope: speed up the runner and companion without changing the actual
-constitution, pins, refusals, scoped retractions, stateful sequences, trusted
-shell preconditions or complete contradiction checks. No persisted verdicts,
-input hashes, receipts, administrative gates or Book 2 operations.
+COMPLETED: FIVE-MINUTE COMPLETE VERIFICATION
 
-The companion is committed and pushed through 8e72f6c, after fdd9de1 and
-3f64f0b. The cumulative patch against fa91a5f is retained in
-new-book-plans/nibli-performance-candidate.patch. It contains no temporary
-profiling hooks or unrelated companion changes.
+Normal ./verify.sh passed all 12,860 pins across 4,190 cases in 275.04 seconds
+(4m35.04s), with complete contradiction checks and no findings.
+All nine known-defect expectations still reproduce. The performance TODO is
+complete and its tracker item was removed.
 
-Latest normal ./verify.sh: PASS in 416.94 seconds (6m56.94s), all 12,860 pins
-across 4,190 cases, complete contradiction checks, no findings and nine existing
-known-defect pins reproduced. Four workers, release already built, actual
-companion checkout and the book's dependency lockfile. This session started
-no other development build/test during measurement; other machine work was
-not controlled. The prior normal run was 448.90 seconds; the original measured
-baseline was 1,552.00 seconds. Do not close the TODO until a full run passes
-under five minutes.
+Four workers, release binary prebuilt, LD_PRELOAD / MALLOC_CONF /
+_RJEM_MALLOC_CONF unset. No other session-owned build/test overlapped.
+External wall 275.29s, user CPU 1004.99s, system CPU 42.17s, utilization 380%,
+peak RSS 13,447,508 KiB, one major page fault, no swaps.
+Other machine activity was not controlled; this is a measured result, not a
+runtime guarantee or a persisted verdict. Earlier normal timing was 310.79s;
+the 283.31s system-preload experiment is not substituted for the normal result.
 
-The external timing wrapper includes the incremental build wrapper and
-reported 418.41 seconds wall time, 1,553.90 seconds user CPU, 39.40 seconds
-system CPU, 380% CPU utilization, peak RSS 18,797,032 KiB, no major page
-faults and no swaps. The verifier's internal time is 416.94 seconds.
+Nibli commit 158e3b0cdeeb09d26ae9e87dd3d5487ab945c2ca is pushed:
+  reason: reuse clause bindings and domain rule inventories
+The rights commit accompanying this note integrates worker affinity, the
+Linux GNU bundled allocator, development-only profiling and measured docs.
+The cumulative engine patch against fa91a5f matches the committed companion.
 
-Latest change: collect_group_event_candidates and collect_entailment_candidates
-borrow the cached domain slice instead of copying every member. This is four
-changed lines in nibli-reason/src/kb.rs. The paired arrest query fell from
-0.152 to 0.073 seconds with the same 5,598 witness-activation checks and 264
-evidence entries. Construction did not improve (2.735 versus 2.740 seconds).
+Validation: 642 reasoner tests and 29 runner tests pass (three manual probes
+ignored); current just ci-all passes, including native, 12 oracle cases, Lean,
+WASI and browser-class V8. All 16 supplemental domain-graph mutants caught.
+The earlier local-binding broad mutation sweep had 8 caught / 3 unviable /
+3 timeout; focused replay of all five overlay mutations completed with
+4 caught / 1 unviable. Do not call the original broad sweep timeout-free.
+Formatting, diff and cumulative-patch reverse-apply checks passed.
+No canonical prose, rule, pin, inventory or contradiction expectation changed.
+Full details: new-book-plans/nibli-performance-candidate.md.
 
-Validation: all 637 reasoner tests, 24 normal runner tests (two manual probes
-ignored), and just ci-all passed, including all 12 oracle differentials
-(90.59 seconds). The targeted mutation sweep caught five and found two
-unbuildable mutants, none unresolved. The normal full run is recorded above.
+NEXT TODO
 
-Nibli origin uses SSH without a usable key. Push/fetch via
-https://github.com/dhilipsiva/nibli.git without changing the user's remote.
-Its origin/main tracking ref was refreshed after the push.
+Implement the ratified environmental right, Class 9 commons, and Class 10
+non-human-animal protections (TODO.md, expansion phase 2).
+No implementation of this item has begun in this performance commit.
+Read its full author-ratified decision:
+  new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md
+Then implement one coherent item, relevant focused checks and the complete
+verifier; commit/push and repeat through the backlog. Suggestions and exact
+prose are preapproved under delegated approval. Do not ask questions.
+Do not invent testimony, empirical evidence or successful external operations.
 
-Next priority: measure KnowledgeBaseInner::clone costs. It still clones the
-predicate dependency graph, rule index, known-rule index and other collections
-for isolated cases and detached assertion candidates. Only the rule/assertion
-payloads are already Arc-shared. Consider copy-on-write for collections that
-fixture facts do not mutate, retaining every existing invalidation and rollback
-path. The domain-member caches are also copied although clones mark them dirty
-and reset QueryDomain. These are leads, not implemented or measured gains.
+Retain every substantive pin, actual-constitution ordinary case, declared
+counterfactual edit, statement order/ID, real scoped retraction, stateful
+sequence, trusted shell precondition and complete contradiction report.
+No hashes, verdict persistence, receipts, freshness or administrative gates.
+Book 2 remains inactive until Gate C.
 
-Other unimplemented leads:
-- register_clause_rule clones the entire pattern-var dictionary to overlay
-  one negative group's local event variable. Scratch instrumentation counted
-  24,268 map clones and 8,543,750 entry copies during live-model loading.
-  Timing overlapped integration work; it is not an isolated benchmark.
-  An immutable one-variable lookup overlay could preserve template resolution.
-- DomainPlan::new performs the same semantic-identity deduplication twice.
-- Inventory has 116 exact base/edit groups: 105 non-live singleton groups and
-  ten non-live multi-case groups (sizes 2x3, 7x2, 9, 12, 17, 18, 21), plus live.
-  There are 269 contiguous base/edit runs, but live is already separately
-  cached. Measure actual repeated preparations before claiming a scheduling
-  gain. The four shell-enabled cases are canonical Book 1 chapters 8, 12,
-  13 and 14; preserve their existing trusted preconditions.
+Use the companion Nix environment for builds/tests. Respect its AGENTS.md /
+CLAUDE.md and excluded private/generated paths. Companion edits need normal
+escalation. SSH origin has no usable key; keep the configured remote unchanged:
+  git push https://github.com/dhilipsiva/nibli.git main
+  git fetch https://github.com/dhilipsiva/nibli.git main:refs/remotes/origin/main
+Rights uses git push origin main.
 
-Scratch workspace: /tmp/rights-nibli-perf.llSbQz. Its probe-target release book
-binary is the earlier completed-cone candidate, not the domain-borrowing build.
-Scratch source contains domain borrowing plus temporary test-only loading
-timers, including negative-group map-copy counters. The eager-unary experiment
-was removed; the borrowed-join experiment was rejected and saved separately
-as borrowed-joins.patch. Do not copy scratch sources wholesale into the
-companion. No temporary profiling hooks are in the integrated engine.
+The earlier empty-template fast-path experiment was removed: no demonstrated
+benefit. The retained optimization shares semantic domain rules only; the
+physical materialization-template iterator remains separate.
+Temporary supplemental mutation logs: /tmp/rights-domain-plan.XYpPqE.
+The old /tmp/rights-nibli-perf.llSbQz scratch checkout is gone.

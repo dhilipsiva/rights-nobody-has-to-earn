@@ -3,6 +3,7 @@
 //! A fixed worker pool. Every started job is joined; later jobs are cancelled
 //! when an earlier case fails. No persisted results or Git state are involved.
 
+use std::collections::BTreeMap;
 use std::io;
 use std::process::{Child, ExitStatus};
 use std::sync::Arc;
@@ -55,30 +56,73 @@ where
     R: Send,
     E: Send,
 {
+    run_grouped(jobs, workers, init, |_| None::<()>, execute)
+}
+
+/// Keep jobs with the same key on one worker, in their original relative order.
+/// Unkeyed jobs remain independently scheduled. Results, failure priority and
+/// cancellation use original job indices, never group indices: a late failure
+/// in an early group must not suppress an earlier case in a different group.
+pub(crate) fn run_grouped<'a, T, S, R, E, K>(
+    jobs: &'a [T],
+    workers: usize,
+    init: impl Fn() -> S + Sync,
+    key: impl Fn(&'a T) -> Option<K>,
+    execute: impl Fn(&mut S, &T, &CancellationToken) -> Result<R, E> + Sync,
+) -> Result<Vec<R>, E>
+where
+    T: Sync,
+    R: Send,
+    E: Send,
+    K: Ord,
+{
+    // Groups and their members are both ordered by first occurrence. Building
+    // the partition here guarantees that every input belongs to exactly one.
+    let mut groups: Vec<Vec<usize>> = Vec::new();
+    let mut keyed = BTreeMap::new();
+    for (index, job) in jobs.iter().enumerate() {
+        if let Some(key) = key(job) {
+            let group = *keyed.entry(key).or_insert_with(|| {
+                groups.push(Vec::new());
+                groups.len() - 1
+            });
+            groups[group].push(index);
+        } else {
+            groups.push(vec![index]);
+        }
+    }
     let next = AtomicUsize::new(0);
     let first_failure = AtomicUsize::new(jobs.len());
     let tokens: Vec<_> = jobs.iter().map(|_| CancellationToken::new()).collect();
     let mut completed = thread::scope(|scope| {
-        let handles: Vec<_> = (0..workers.min(jobs.len()))
+        let handles: Vec<_> = (0..workers.min(groups.len()))
             .map(|_| {
-                let (next, first_failure, tokens, init, execute) =
-                    (&next, &first_failure, &tokens, &init, &execute);
+                let (next, first_failure, tokens, init, execute, groups) =
+                    (&next, &first_failure, &tokens, &init, &execute, &groups);
                 scope.spawn(move || {
                     let mut state = init();
                     let mut results = Vec::new();
                     loop {
-                        let index = next.fetch_add(1, Ordering::Relaxed);
-                        if index >= jobs.len() || index > first_failure.load(Ordering::Relaxed) {
+                        let group = next.fetch_add(1, Ordering::Relaxed);
+                        let Some(indices) = groups.get(group) else {
+                            break;
+                        };
+                        if indices[0] > first_failure.load(Ordering::Relaxed) {
                             break;
                         }
-                        let result = execute(&mut state, &jobs[index], &tokens[index]);
-                        if result.is_err() {
-                            first_failure.fetch_min(index, Ordering::Relaxed);
-                            for token in &tokens[index + 1..] {
-                                token.cancel();
+                        for &index in indices {
+                            if index > first_failure.load(Ordering::Relaxed) {
+                                break;
                             }
+                            let result = execute(&mut state, &jobs[index], &tokens[index]);
+                            if result.is_err() {
+                                first_failure.fetch_min(index, Ordering::Relaxed);
+                                for token in &tokens[index + 1..] {
+                                    token.cancel();
+                                }
+                            }
+                            results.push((index, result));
                         }
-                        results.push((index, result));
                     }
                     results
                 })
@@ -176,6 +220,95 @@ fn terminate_group(_: u32) -> io::Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn grouped_jobs_reuse_worker_state_and_return_every_result_in_input_order() {
+        let jobs: Vec<_> = [Some(0), None, Some(1), Some(0), None, Some(1), Some(0)]
+            .into_iter()
+            .enumerate()
+            .collect();
+        for workers in 1..=4 {
+            let preparations = AtomicUsize::new(0);
+            let results = run_grouped(
+                &jobs,
+                workers,
+                || None,
+                |(_, key)| *key,
+                |retained, (index, key), _| {
+                    if key.is_some() && retained != key {
+                        preparations.fetch_add(1, Ordering::Relaxed);
+                        *retained = *key;
+                    }
+                    Ok::<_, ()>(*index)
+                },
+            )
+            .unwrap();
+            assert_eq!(results, (0..jobs.len()).collect::<Vec<_>>());
+            assert_eq!(preparations.load(Ordering::Relaxed), 2);
+        }
+    }
+
+    #[test]
+    fn a_late_failure_in_an_early_group_does_not_suppress_earlier_cases() {
+        for workers in 1..=4 {
+            let result = run_grouped(
+                &(0..8).collect::<Vec<_>>(),
+                workers,
+                || (),
+                |index| (*index == 0 || *index == 5).then_some(()),
+                |_, index, cancel| {
+                    if *index <= 2 {
+                        assert!(!cancel.is_cancelled());
+                    }
+                    if *index == 2 || *index == 5 {
+                        Err(*index)
+                    } else {
+                        Ok(*index)
+                    }
+                },
+            );
+            assert_eq!(result, Err(2));
+        }
+    }
+
+    #[test]
+    fn grouped_cancellation_reaches_later_source_indices_in_earlier_groups() {
+        for workers in 2..=4 {
+            let (started, receive) = std::sync::mpsc::sync_channel(1);
+            let receive = std::sync::Mutex::new(receive);
+            let result = run_grouped(
+                &(0..6).collect::<Vec<_>>(),
+                workers,
+                || (),
+                |index| Some(*index == 0 || *index == 5),
+                |_, index, cancel| match *index {
+                    0 => Ok(0),
+                    1 => {
+                        receive
+                            .lock()
+                            .unwrap()
+                            .recv_timeout(Duration::from_secs(3))
+                            .unwrap();
+                        Err(1)
+                    }
+                    5 => {
+                        started.send(()).unwrap();
+                        let deadline = std::time::Instant::now() + Duration::from_secs(3);
+                        while !cancel.is_cancelled() {
+                            assert!(
+                                std::time::Instant::now() < deadline,
+                                "later case was not cancelled"
+                            );
+                            thread::sleep(Duration::from_millis(1));
+                        }
+                        Err(5)
+                    }
+                    _ => panic!("case after the first failure was started"),
+                },
+            );
+            assert_eq!(result, Err(1));
+        }
+    }
 
     #[test]
     fn results_and_failure_are_in_input_order() {

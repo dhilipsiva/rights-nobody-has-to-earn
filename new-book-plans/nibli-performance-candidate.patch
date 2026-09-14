@@ -1,5 +1,5 @@
 diff --git a/nibli-reason/src/domain.rs b/nibli-reason/src/domain.rs
-index 4238ed5..964927e 100644
+index 4238ed5..517e36f 100644
 --- a/nibli-reason/src/domain.rs
 +++ b/nibli-reason/src/domain.rs
 @@ -7,6 +7,8 @@ pub(super) const MAX_INFERENCE_RECORDS: usize = 2_000_000;
@@ -21,7 +21,7 @@ index 4238ed5..964927e 100644
      /// The actual rule/bindings licensing each member. Kept query-local, never
      /// inserted into the asserted fact store or its provenance sidecar.
      activations: HashMap<GroundTerm, (Arc<UniversalRuleRecord>, HashMap<String, GroundTerm>)>,
-@@ -119,6 +124,28 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
+@@ -119,18 +124,39 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
      }
  }
 
@@ -50,8 +50,12 @@ index 4238ed5..964927e 100644
  /// Predicate stratification alone omits the implicit domain read of an
  /// unguarded universal. Generating a new member can then invalidate the very
  /// absence that generated it. Include that dependency before accepting any
-@@ -126,11 +153,7 @@ fn collect_pattern_variables<'a>(term: &'a GroundTerm, names: &mut HashSet<&'a s
- fn domain_dependency_graph(inner: &KnowledgeBaseInner) -> HashMap<String, Vec<(String, bool)>> {
+ /// activation; a negative cycle is incomplete, never a growing approximation.
+-fn domain_dependency_graph(inner: &KnowledgeBaseInner) -> HashMap<String, Vec<(String, bool)>> {
++fn domain_dependency_graph(
++    inner: &KnowledgeBaseInner,
++    rules: &[&Arc<UniversalRuleRecord>],
++) -> HashMap<String, Vec<(String, bool)>> {
      const DOMAIN: &str = "__nibli_activated_individual_domain";
      let mut graph = inner.pred_dep_graph.clone();
 -    let mut seen = HashSet::new();
@@ -59,11 +63,23 @@ index 4238ed5..964927e 100644
 -        if !seen.insert(rule.identity.clone()) {
 -            continue;
 -        }
-+    for rule in distinct_domain_rules(inner) {
++    for rule in rules {
          // Collect guarded names once. Re-scanning every condition separately
          // for every variable is quadratic in large compiled constitutional rules.
          let mut guarded = HashSet::new();
-@@ -224,12 +247,8 @@ impl DomainPlan {
+@@ -215,7 +241,10 @@ impl DomainPlan {
+                 (term, known)
+             })
+             .collect();
+-        let graph = domain_dependency_graph(inner);
++        // Both consumers need the same first-seen semantic identities. Keep the
++        // separate materialization iterator above: its template scope differs.
++        let domain_rules: Vec<_> = distinct_domain_rules(inner).collect();
++        let graph = domain_dependency_graph(inner, &domain_rules);
+         if check_stratification(&graph).is_err() {
+             return Self {
+                 known_individuals,
+@@ -224,12 +253,8 @@ impl DomainPlan {
              };
          }
          let strata = materialize::compute_strata(&graph);
@@ -73,11 +89,11 @@ index 4238ed5..964927e 100644
 -            if !seen.insert(rule.identity.clone()) {
 -                continue;
 -            }
-+        for rule in distinct_domain_rules(inner) {
++        for rule in domain_rules {
              let mut terms = Vec::new();
              for fact in &rule.typed_conclusions {
                  for term in &fact.inner().args {
-@@ -279,9 +298,19 @@ impl DomainPlan {
+@@ -279,9 +304,19 @@ impl DomainPlan {
      }
  }
 
@@ -99,7 +115,7 @@ index 4238ed5..964927e 100644
      inner.query_domain = QueryDomain::default();
      inner.domain_members_dirty = true;
      inner.ensure_domain_members_cached();
-@@ -299,6 +328,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
+@@ -299,6 +334,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
      }
      let rules = &plan.rules;
      if rules.is_empty() {
@@ -111,7 +127,7 @@ index 4238ed5..964927e 100644
          return Ok(());
      }
      clear_and_enable_pred_cache(inner);
-@@ -452,6 +486,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
+@@ -452,6 +492,11 @@ pub(super) fn prepare_query_domain(inner: &mut KnowledgeBaseInner) -> Result<(),
              clear_and_enable_pred_cache(inner);
          }
      }
@@ -1168,8 +1184,149 @@ index b97324a..65d2c43 100644
      *inner.materialized.borrow_mut() = None;
  }
 
+diff --git a/nibli-reason/src/rule_pattern_tests.rs b/nibli-reason/src/rule_pattern_tests.rs
+new file mode 100644
+index 0000000..f1cd3f0
+--- /dev/null
++++ b/nibli-reason/src/rule_pattern_tests.rs
+@@ -0,0 +1,135 @@
++// SPDX-License-Identifier: MIT OR Apache-2.0
++
++use super::*;
++
++#[test]
++fn local_pattern_binding_matches_clone_and_insert_without_leaking() {
++    for base in [
++        HashMap::new(),
++        HashMap::from([
++            ("x".into(), "outer".into()),
++            ("ev".into(), "original".into()),
++        ]),
++    ] {
++        let original = base.clone();
++        for local in [None, Some(("ev", "first")), Some(("fresh", "second"))] {
++            let variables = PatternVariables { base: &base, local };
++            let mut copied = base.clone();
++            if let Some((name, value)) = local {
++                copied.insert(name.into(), value.into());
++            }
++            for name in ["x", "ev", "fresh", "missing"] {
++                assert_eq!(variables.get(name), copied.get(name).map(String::as_str));
++            }
++        }
++        assert_eq!(base, original);
++    }
++}
++
++#[test]
++fn local_pattern_templates_preserve_shadowing_skolems_recursion_and_refusal() {
++    // Direct tests of the internal template builder, not a hand-built substitute
++    // for surface event decomposition. Surface behavior has a separate test.
++    let base = HashMap::from([
++        ("x".into(), "outer".into()),
++        ("ev".into(), "original".into()),
++    ]);
++    let ground_symbol = SkolemSymbol::for_test(1);
++    let dependent_symbol = SkolemSymbol::for_test(2);
++    let ground = HashMap::from([
++        ("ev".into(), ground_symbol),
++        ("ground".into(), ground_symbol),
++        ("both".into(), ground_symbol),
++    ]);
++    let dependent = HashMap::from([
++        ("ev".into(), (dependent_symbol, vec!["outer".into()])),
++        ("dependent".into(), (dependent_symbol, vec!["outer".into()])),
++        ("both".into(), (dependent_symbol, vec!["outer".into()])),
++    ]);
++    let mut args: Vec<_> = ["x", "ev", "ground", "dependent", "both", "missing"]
++        .into_iter()
++        .map(|name| LogicalTerm::Variable(name.into()))
++        .collect();
++    args.extend([
++        LogicalTerm::Constant("Constant".into()),
++        LogicalTerm::Description("description".into()),
++        LogicalTerm::Number(7.0),
++        LogicalTerm::Unspecified,
++    ]);
++    let buffer = LogicBuffer {
++        nodes: vec![
++            LogicNode::Predicate(("template".into(), args.clone())),
++            LogicNode::ExistsNode(("ev".into(), 0)),
++            LogicNode::ObligatoryNode(1),
++            LogicNode::PermittedNode(1),
++            LogicNode::ExistsNode(("missing".into(), 0)),
++            LogicNode::NotNode(0),
++            LogicNode::AndNode((0, 0)),
++            LogicNode::ComputeNode(("template".into(), args)),
++            LogicNode::ExistsNode(("fresh".into(), 0)),
++        ],
++        roots: vec![0],
++    };
++    for local in [None, Some(("ev", "local")), Some(("fresh", "new"))] {
++        let variables = PatternVariables { base: &base, local };
++        let mut copied = base.clone();
++        if let Some((name, value)) = local {
++            copied.insert(name.into(), value.into());
++        }
++        for tense in [
++            None,
++            Some("Past"),
++            Some("Present"),
++            Some("Future"),
++            Some("Obligatory"),
++            Some("Permitted"),
++        ] {
++            for node in (0..buffer.nodes.len() as u32).chain([u32::MAX]) {
++                let actual = build_rule_template_fact_with_variables(
++                    &buffer, node, variables, &ground, &dependent, tense,
++                );
++                let copied_result =
++                    build_rule_template_fact(&buffer, node, &copied, &ground, &dependent, tense);
++                assert_eq!(
++                    actual, copied_result,
++                    "node={node}, local={local:?}, tense={tense:?}"
++                );
++                if [4, 5, 6, u32::MAX].contains(&node)
++                    || (node == 8 && local != Some(("fresh", "new")))
++                {
++                    assert!(actual.is_none());
++                } else {
++                    let expected = vec![
++                        GroundTerm::PatternVar("outer".into()),
++                        GroundTerm::PatternVar(
++                            if local == Some(("ev", "local")) {
++                                "local"
++                            } else {
++                                "original"
++                            }
++                            .into(),
++                        ),
++                        GroundTerm::Skolem(ground_symbol),
++                        GroundTerm::SkolemFn(
++                            dependent_symbol,
++                            Box::new(GroundTerm::PatternVar("outer".into())),
++                        ),
++                        GroundTerm::Skolem(ground_symbol),
++                        GroundTerm::PatternVar("missing".into()),
++                        GroundTerm::Constant("Constant".into()),
++                        GroundTerm::Description("description".into()),
++                        GroundTerm::from_f64(7.0),
++                        GroundTerm::Unspecified,
++                    ];
++                    assert_eq!(
++                        actual,
++                        Some(StoredFact::with_tense(
++                            GroundFact::new("template", expected),
++                            tense
++                        ))
++                    );
++                }
++            }
++        }
++    }
++}
 diff --git a/nibli-reason/src/rules.rs b/nibli-reason/src/rules.rs
-index e9330dd..4574fc8 100644
+index e9330dd..763b472 100644
 --- a/nibli-reason/src/rules.rs
 +++ b/nibli-reason/src/rules.rs
 @@ -1,5 +1,10 @@
@@ -1183,7 +1340,28 @@ index e9330dd..4574fc8 100644
  /// Check if a GroundTerm represents a dependent Skolem placeholder.
  pub(super) fn is_skdep(gt: &GroundTerm) -> bool {
      matches!(gt, GroundTerm::SkolemPlaceholder(_))
-@@ -1738,6 +1743,28 @@ pub(super) fn compile_forall_to_rule(
+@@ -1489,14 +1494,16 @@ fn register_clause_rule(
+         // witnesses, exactly like a bare positive condition.
+         if let Some((ev_var, leaf_ids)) = detect_negated_exists_group(buffer, cid) {
+             let ev_pvar = format!("ev__{}", ev_var);
+-            let mut group_pattern_vars: HashMap<String, String> = pattern_vars.clone();
+-            group_pattern_vars.insert(ev_var.clone(), ev_pvar.clone());
++            let group_pattern_vars = PatternVariables {
++                base: pattern_vars,
++                local: Some((&ev_var, &ev_pvar)),
++            };
+             let mut group_conditions = Vec::new();
+             for &lid in &leaf_ids {
+-                match build_rule_template_fact(
++                match build_rule_template_fact_with_variables(
+                     buffer,
+                     lid,
+-                    &group_pattern_vars,
++                    group_pattern_vars,
+                     ground_skolems,
+                     dependent_skolems,
+                     tense,
+@@ -1738,6 +1745,28 @@ pub(super) fn compile_forall_to_rule(
          format!("∀{}", universals.join(","))
      };
 
@@ -1212,7 +1390,7 @@ index e9330dd..4574fc8 100644
      let mut pattern_vars: HashMap<String, String> = universals
          .iter()
          .enumerate()
-@@ -1758,45 +1785,32 @@ pub(super) fn compile_forall_to_rule(
+@@ -1758,45 +1787,32 @@ pub(super) fn compile_forall_to_rule(
 
      let pattern_var_names: Vec<String> =
          universals.iter().map(|v| pattern_vars[v].clone()).collect();
@@ -1272,6 +1450,104 @@ index e9330dd..4574fc8 100644
              let mut consequent_atoms = flatten_consequent(buffer, consequent_id, skolem_subs, None);
              // Quoted bodies retain dependency edges for the stratification firewall,
              // but only their opaque marker can execute in the surrounding KB.
+@@ -2266,6 +2282,26 @@ pub(super) fn build_rule_template_fact_with_negation(
+     }
+ }
+
++/// A negated event group binds one local variable without copying the clause's
++/// entire map. The local entry shadows the base exactly like clone + insert;
++/// neither it nor another group's binding can mutate the caller's map.
++#[derive(Clone, Copy)]
++struct PatternVariables<'a> {
++    base: &'a HashMap<String, String>,
++    local: Option<(&'a str, &'a str)>,
++}
++
++impl<'a> PatternVariables<'a> {
++    fn get(self, name: &str) -> Option<&'a str> {
++        if let Some((local_name, value)) = self.local
++            && local_name == name
++        {
++            return Some(value);
++        }
++        self.base.get(name).map(String::as_str)
++    }
++}
++
+ pub(super) fn build_rule_template_fact(
+     buffer: &LogicBuffer,
+     node_id: u32,
+@@ -2273,6 +2309,27 @@ pub(super) fn build_rule_template_fact(
+     ground_skolems: &HashMap<String, SkolemSymbol>,
+     dependent_skolems: &HashMap<String, (SkolemSymbol, Vec<String>)>,
+     tense: Option<&str>,
++) -> Option<StoredFact> {
++    build_rule_template_fact_with_variables(
++        buffer,
++        node_id,
++        PatternVariables {
++            base: pattern_vars,
++            local: None,
++        },
++        ground_skolems,
++        dependent_skolems,
++        tense,
++    )
++}
++
++fn build_rule_template_fact_with_variables(
++    buffer: &LogicBuffer,
++    node_id: u32,
++    pattern_vars: PatternVariables<'_>,
++    ground_skolems: &HashMap<String, SkolemSymbol>,
++    dependent_skolems: &HashMap<String, (SkolemSymbol, Vec<String>)>,
++    tense: Option<&str>,
+ ) -> Option<StoredFact> {
+     let Ok(node) = get_node(buffer, node_id) else {
+         return None;
+@@ -2284,7 +2341,7 @@ pub(super) fn build_rule_template_fact(
+                 .map(|arg| match arg {
+                     LogicalTerm::Variable(v) => {
+                         if let Some(pvar) = pattern_vars.get(v.as_str()) {
+-                            GroundTerm::PatternVar(pvar.clone())
++                            GroundTerm::PatternVar(pvar.to_owned())
+                         } else if let Some(sk) = ground_skolems.get(v.as_str()) {
+                             GroundTerm::Skolem(*sk)
+                         } else if let Some((base, pvars)) = dependent_skolems.get(v.as_str()) {
+@@ -2313,11 +2370,11 @@ pub(super) fn build_rule_template_fact(
+         }
+         LogicNode::ExistsNode((v, body)) => {
+             // Skip Exists wrapper if variable is Skolemized or a pattern var
+-            if pattern_vars.contains_key(v.as_str())
++            if pattern_vars.get(v.as_str()).is_some()
+                 || ground_skolems.contains_key(v.as_str())
+                 || dependent_skolems.contains_key(v.as_str())
+             {
+-                build_rule_template_fact(
++                build_rule_template_fact_with_variables(
+                     buffer,
+                     *body,
+                     pattern_vars,
+@@ -2334,7 +2391,7 @@ pub(super) fn build_rule_template_fact(
+         // deontic antecedent atom; the And/∃ case is pre-stripped by
+         // `flatten_conjuncts_through_exists`.
+         LogicNode::ObligatoryNode(inner) | LogicNode::PermittedNode(inner) => {
+-            build_rule_template_fact(
++            build_rule_template_fact_with_variables(
+                 buffer,
+                 *inner,
+                 pattern_vars,
+@@ -2364,6 +2421,10 @@ pub(super) fn build_skolem_fn_term(symbol: SkolemSymbol, deps: &[GroundTerm]) ->
+     GroundTerm::SkolemFn(symbol, Box::new(dep_term))
+ }
+
++#[cfg(test)]
++#[path = "rule_pattern_tests.rs"]
++mod pattern_variable_tests;
++
+ #[cfg(test)]
+ mod stratification_conformance {
+     //! Bridge from the mechanized criterion proof (`proofs/Stratification.lean`) to the real
 diff --git a/nibli-reason/src/tests/assertions.rs b/nibli-reason/src/tests/assertions.rs
 index 963caee..f558757 100644
 --- a/nibli-reason/src/tests/assertions.rs
@@ -2060,11 +2336,56 @@ index 6dcd49c..d74927b 100644
      );
      drop(inner);
      assert!(
+diff --git a/nibli-reason/src/tests/retraction_negation.rs b/nibli-reason/src/tests/retraction_negation.rs
+index b6528f0..68f5b32 100644
+--- a/nibli-reason/src/tests/retraction_negation.rs
++++ b/nibli-reason/src/tests/retraction_negation.rs
+@@ -1,5 +1,40 @@
+ use super::*;
+
++#[test]
++fn negated_event_groups_keep_independent_bindings_and_flavors() {
++    for materialization in [false, true] {
++        let kb = new_kb();
++        kb.set_materialization(materialization);
++        for text in [
++            "all $x: person($x) & ~eats($x) & ~drinks($x) -> healthy($x).",
++            "person(Ada).",
++            "person(Bea).",
++            "person(Cira).",
++            "person(Dina).",
++            "eats(Bea).",
++            "drinks(Cira).",
++            "past eats(Dina).",
++        ] {
++            assert_buf(&kb, compile_surface(text));
++        }
++        for (name, expected) in [
++            ("Ada", true),
++            ("Bea", false),
++            ("Cira", false),
++            ("Dina", true),
++        ] {
++            assert_eq!(
++                query(&kb, compile_surface(&format!("healthy({name})."))),
++                expected
++            );
++        }
++        let id = assert_id(&kb, compile_surface("drinks(Ada)."), "new group witness");
++        assert!(query_false(&kb, compile_surface("healthy(Ada).")));
++        kb.retract_fact(id).unwrap();
++        assert!(query(&kb, compile_surface("healthy(Ada).")));
++    }
++}
++
+ #[test]
+ fn retracting_a_flat_number_fact_removes_it_from_the_domain() {
+     // Adversarial-review finding (2026-08-01, numbers-join-the-domain): the
 diff --git a/nibli-reason/src/tests/witness_closure.rs b/nibli-reason/src/tests/witness_closure.rs
-index 1338c73..46cdac7 100644
+index 1338c73..fce39c0 100644
 --- a/nibli-reason/src/tests/witness_closure.rs
 +++ b/nibli-reason/src/tests/witness_closure.rs
-@@ -1,5 +1,167 @@
+@@ -1,5 +1,222 @@
 +// SPDX-License-Identifier: MIT OR Apache-2.0
 +
  use super::*;
@@ -2113,6 +2434,61 @@ index 1338c73..46cdac7 100644
 +    assert_eq!(actual, expected);
 +    assert_eq!(actual.len(), 1);
 +    assert_eq!(TEST_DOMAIN_IDENTITY_CHECKS.get(), 2);
++
++    TEST_DOMAIN_IDENTITY_CHECKS.set(0);
++    let _plan = DomainPlan::new(&inner);
++    assert_eq!(
++        TEST_DOMAIN_IDENTITY_CHECKS.get(),
++        2,
++        "the dependency graph and activation schedule must share one identity pass"
++    );
++}
++
++#[test]
++fn domain_plan_tracks_generating_rules_without_unquoting_bodies() {
++    let kb = surface_kb(&[
++        "person(Adam).",
++        "all $x: person($x) -> healthy($x).",
++        "entitled(every person, event { cat() }).",
++    ]);
++    assert_eq!(verdict(&kb, "healthy(Adam)."), QueryResult::True);
++    assert_eq!(verdict(&kb, "cat(some cat)."), QueryResult::False);
++
++    let rule = assert_id(
++        &kb,
++        compile_surface("likes(every person, some cat)."),
++        "new individual-generating rule",
++    );
++    assert_eq!(verdict(&kb, "cat(exactly 1 cat)."), QueryResult::True);
++    kb.retract_fact(rule).unwrap();
++    assert_eq!(verdict(&kb, "cat(some cat)."), QueryResult::False);
++}
++
++#[test]
++fn empty_witness_plan_preserves_synthetic_name_collisions_and_invalid_graphs() {
++    for synthetic_collision in [false, true] {
++        let kb = surface_kb(&["person(Adam).", "all $x: ~cat($x) -> healthy($x)."]);
++        let mut inner = kb.inner.borrow_mut();
++        // Direct graph injection checks the native internal boundary: the KR
++        // vocabulary cannot spell this synthetic domain predicate.
++        let source = if synthetic_collision {
++            "__nibli_activated_individual_domain"
++        } else {
++            "healthy"
++        };
++        inner
++            .pred_dep_graph
++            .insert(source.into(), vec![("healthy".into(), true)]);
++        assert_eq!(
++            check_stratification(&inner.pred_dep_graph).is_ok(),
++            synthetic_collision,
++        );
++        prepare_query_domain(&mut inner).unwrap();
++        assert!(matches!(
++            inner.query_domain.incomplete,
++            Some(QueryResult::Unknown(UnknownReason::NafDependent))
++        ));
++    }
 +}
 +
 +#[test]

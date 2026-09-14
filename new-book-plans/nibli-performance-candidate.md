@@ -2,16 +2,17 @@
 
 # Verification performance — integrated engine changes
 
-Status: integrated through Nibli `8e72f6c`, following `fdd9de1` and `3f64f0b`.
-Engine integration checks passed, and the rebuilt normal verifier passed the
-complete book in **416.94 seconds (6 minutes 56.94 seconds)**.
-The five-minute TODO remains open. No constitutional source, pin expectation,
-case inventory or contradiction check is changed.
+Status: the complete normal verifier passed in **275.04 seconds
+(4 minutes 35.04 seconds)**, meeting the five-minute TODO. The latest
+local-binding and shared domain-rule changes are committed in Nibli `158e3b0`;
+the runner-affinity and bundled-allocator changes accompany this note.
+No constitutional source, pin expectation, case inventory or contradiction
+check is changed.
 
 The companion's previously pending work landed as `fa91a5f`. The adjacent
 patch applies directly to that commit and contains only this experiment's
-additional changes, committed as `fdd9de1`, `3f64f0b` and `8e72f6c`. The
-companion was clean before each change; no unrelated work was overwritten.
+additional changes through `158e3b0`, including the local-binding and shared
+domain-rule changes. No unrelated companion work was overwritten.
 
 ## Integrated changes
 
@@ -217,11 +218,11 @@ pins still reproduced. The release binary was built before the run. Brief
 development-test builds also ran after the five-minute target had already been
 exceeded; this is the observed run time, not an isolated benchmark.
 
-The complete-verification target has **not** been achieved. The probe's larger
-speedup does not describe the whole inventory. Both the scratch and normal
-release verifier completed the unchanged full inventory, but neither run met
-five minutes. The runner's development suite separately passed 24 tests, with its
-two manual tests ignored; formatting and diff checks passed.
+At that stage the complete-verification target had **not** been achieved. The
+probe's larger speedup did not describe the whole inventory. Both the scratch
+and normal release verifier completed the unchanged full inventory, but neither
+run met five minutes. The runner's development suite separately passed 24
+tests, with its two manual tests ignored; formatting and diff checks passed.
 
 A separate strict reasoner Clippy check did not pass: existing front-end and
 reasoner warnings remain outside this patch's scope. Two warnings in new
@@ -243,6 +244,167 @@ An ordered-rule-insertion experiment was tested and discarded: its repeated
 construction measurement (3.640 seconds) did not improve on the paired prior
 candidate (3.589 seconds). No speedup is credited to it.
 
+## Full-inventory profiling
+
+An opt-in development profile on 2026-09-13 ran the normal execution path
+against companion `8e72f6c`: all 12,860 pins across 4,190 cases passed, all
+contradiction checks completed with no findings, and the nine known defects
+reproduced. Its instrumented time was 407.57 seconds, not a replacement for
+the normal release measurement of 416.94 seconds.
+
+The profile measured 635.299 cumulative worker-seconds preparing case bases
+and 929.568 executing cases. Parallel worker durations are not wall-clock
+contributions. Within those totals:
+
+| Phase | Cumulative worker-seconds |
+| --- | ---: |
+| Ordered model construction, 145 builds | 380.749 |
+| Materialization planning, 145 builds | 164.702 |
+| Compiled statement copies | 22.486 |
+| Fixture loading | 237.857 |
+| Queries | 514.506 |
+| Real scoped retractions | 48.827 |
+| Independent snapshots | 17.917 |
+| Complete contradiction scans | 2.252 |
+
+Preparation accounted for about 41% of the measured case work, queries 33%,
+and fixtures 15%; contradiction scans were below 1%. Separately, a temporary
+field-by-field loading probe measured a warmed live snapshot at 0.006 seconds,
+so a broad copy-on-write rewrite is not justified by that measurement.
+Neither diagnostic changes what normal verification executes or accepts.
+
+## Local bindings, worker affinity and allocator (2026-09-14)
+
+Negated event groups now borrow their clause's variable map with one local
+shadowing binding. The resulting templates preserve lookup precedence,
+Skolems, recursive descent, flavor and refusal behavior. A paired loading
+probe measured ordered construction at 3.179 seconds before this change and
+2.659 seconds afterwards. This is a loading measurement, not a whole-book
+speedup claim.
+
+The runner also groups cases with exactly the same noncanonical base and
+ordered edits on one worker. Canonical cases remain independently scheduled;
+fixtures and pin files still receive their original isolation. Grouped
+execution preserves original-index failure priority, cancellation and output
+order, including a late failure in an early group. Every case still runs.
+
+Together these changes passed normal `./verify.sh` in **348.17 seconds
+(5 minutes 48.17 seconds)**: all 12,860 pins across 4,190 cases, complete
+contradiction checks with no findings, and nine reproduced known defects.
+Four workers and a prebuilt release binary were used, with no other session
+build or test overlapping. External wall time was 349.64 seconds, user CPU
+1,303.22 seconds, system CPU 23.46 seconds, utilization 379%, and peak RSS
+18,028,924 KiB; there were three major page faults and no swaps.
+
+The reasoner passed 640 tests and `just ci-all`, including the native, oracle,
+Lean, WASI and browser/V8 checks. The configured changed-code mutation sweep
+finished with eight caught, three unviable and three timed-out mutations
+(exit 3). Those timeout logs had failed assertions before later tests hung.
+A supplemental focused replay of all five `PatternVariables` mutations
+finished with four caught and one unviable (exit 0), resolving the timeout
+cases. This does not turn the original broad run into a timeout-free pass or
+change the companion's mutation baseline.
+
+The runner passed 29 development tests; three manual probes were ignored.
+An optional strict rights Clippy check failed on existing warnings in unchanged
+pin/child-process code and implicit generator targets. No unrelated warning
+cleanup or suppression was added, and a baseline Clippy rerun was not made.
+
+A separate allocator experiment ran the same prebuilt binary with system
+jemalloc 5.3.0 preloaded. It passed the unchanged full inventory in **283.31
+seconds (4 minutes 43.31 seconds)**, with complete contradiction checks, no
+findings and all nine known defects reproduced. External wall time was
+283.49 seconds, user CPU 1,027.29 seconds, system CPU 57.69 seconds, utilization
+382%, peak RSS 12,714,692 KiB, and no major page faults or swaps. No other
+session build or test overlapped; other machine work was not controlled.
+The initial preload attempt failed before any pin because its C++ runtime
+library was not found; the measured run used an explicit library search path.
+This experiment alone does not establish normal-workflow performance.
+
+The verifier now selects `tikv-jemallocator` on Linux GNU targets; other targets
+and the separate authoring executable retain their default allocator. The
+bundled library removes the experimental system-library/preload setup. The
+[upstream integration instructions](https://github.com/tikv/jemallocator)
+describe the `GlobalAlloc` wrapper. Cargo resolves wrapper 0.7.0 to published
+sys crate 0.7.1, bundling jemalloc 5.3.1; the dependency lock records the actual
+packages used. The published source was inspected, rather than assuming its
+repository tag represents the package; upstream separately records the
+[sys release/repository mismatch](https://github.com/tikv/jemallocator/issues/169).
+
+The first debug build failed because Nix's fortified C headers reject `-O0`
+under the allocator's `-Werror` configuration probe. Optimizing only
+`tikv-jemalloc-sys` in the development profile preserves that hardening and
+lets the normal debug test command build. All 29 allocator-backed runner
+tests then passed. The Rust test profile inherits this
+[package-specific development setting](https://doc.rust-lang.org/cargo/reference/profiles.html#overrides).
+
+Normal `./verify.sh` with the bundled allocator then passed all **12,860 pins
+across 4,190 cases in 310.79 seconds (5 minutes 10.79 seconds)**. Contradiction
+checks completed with no findings, and all nine known defects reproduced.
+The release binary was prebuilt, four workers were used, and `LD_PRELOAD`,
+`MALLOC_CONF` and `_RJEM_MALLOC_CONF` were unset. No other session build or test
+overlapped. External wall time was 311.05 seconds, user CPU 1,144.34 seconds,
+system CPU 47.77 seconds, utilization 383%, peak RSS 13,587,420 KiB, with no
+major page faults or swaps. The runtime dependency list contains libc and
+libgcc, not a system jemalloc or C++ runtime. The normal run improved, but
+remained 10.79 seconds above target; the experimental preload timing is not
+substituted for it.
+
+## Sharing domain-planning inputs (2026-09-14)
+
+The dependency graph and activation schedule now consume the same borrowed
+list of semantically distinct domain rules. Previously each independently
+performed the same identity comparisons. The earlier materialization-rule
+iterator remains separate: it has a different template scope and ordering.
+Graph edges, stratification, activation guards and mutation invalidation are
+unchanged; the list exists only while preparing that model.
+
+A regression first observed four identity comparisons, then passed with the
+required two after the change. New semantic regressions exercise quoted-body
+opacity, adding and retracting a generating rule, invalid graphs and synthetic
+domain-node collisions. All 642 reasoner tests and all 29 runner tests passed.
+The paired release probe measured domain planning at 0.788 seconds before
+and 0.717 seconds after the change. Other preparation phases also varied;
+this isolated observation is not a claimed full-book improvement.
+
+A supplemental mutation run explicitly included `domain.rs`, which the
+companion's usual mutation configuration excludes. All 16 mutations of
+`domain_dependency_graph` were caught, with no missed or timed-out cases
+(exit 0). This includes whole-graph replacements and guard mutations; the
+tool did not generate a mutation of the new list-construction expression.
+
+The current engine also passed `just ci-all`, including native tests, all
+12 oracle/differential cases (110.36 seconds), Lean proofs, WASI host checks
+and the browser-class V8 determinism and lifecycle tests. These development
+checks are not added to routine book verification.
+
+An additional empty-template fast path was tried and removed. It did not
+show a clear further benefit; a quoted-body fixture also disproved the
+assumption that absence of surface `some` syntax means no individual
+templates. The current candidate retains complete domain-graph preparation.
+
+The rebuilt normal `./verify.sh` then passed all **12,860 pins across 4,190
+cases in 275.04 seconds (4 minutes 35.04 seconds)**. Complete contradiction
+checks found no contradictions and all nine known-defect expectations still
+reproduced (exit 0). Four workers and a prebuilt release binary were used,
+with `LD_PRELOAD`, `MALLOC_CONF` and `_RJEM_MALLOC_CONF` unset. No other build
+or test from this session overlapped; other machine activity was not controlled.
+External wall time was 275.29 seconds, user CPU 1,004.99 seconds, system CPU
+42.17 seconds, utilization 380%, peak RSS 13,447,508 KiB, one major page fault
+and no swaps. This measured normal-workflow run meets the five-minute target;
+the difference from earlier runs is not attributed solely to one optimization
+or offered as a runtime guarantee on every machine.
+
+The timed command, from the rights repository, was:
+
+```bash
+nix develop /home/dhilipsiva/projects/dhilipsiva/nibli \
+  --extra-experimental-features nix-command \
+  --extra-experimental-features flakes --command env \
+  -u LD_PRELOAD -u MALLOC_CONF -u _RJEM_MALLOC_CONF \
+  RIGHTS_VERIFY_JOBS=4 /usr/bin/time -v ./verify.sh
+```
+
 ## Reproduction and integration boundary
 
 The runner's ignored development probe is
@@ -251,16 +413,25 @@ The runner's ignored development probe is
 its five named cases; an unknown selection fails rather than measuring zero
 cases. It is never part of ordinary verification.
 
-The scratch workspace is `/tmp/rights-nibli-perf.llSbQz`. Its probe manifest
-uses the live book runner with copied companion crates. The measured release
-binary is `probe-target/release/rights-verify`. The separately retained
-`rights-verify-c622`, `rights-verify-c626` and `rights-verify-c628` are earlier full-run candidates,
-not the current patch. Scratch source can contain subsequent untested
-experiments; the adjacent patch is the retained, measured candidate.
-Run an experimental binary from the book repository to execute the unchanged
-live inventory. Normal `./verify.sh` still uses the companion checkout.
+The additional ignored test `profile_complete_verification` runs the actual
+full-inventory execution path and aggregates preparation, fixture, snapshot,
+query, retraction and scan timings. Run it alone, with `--ignored --exact
+--nocapture --test-threads=1`, as
+`pin::performance_tests::profile_complete_verification` in the release
+`rights-verify` test binary. All profiling hooks are compiled only for tests;
+there is no production profiling flag, persisted verdict or extra gate.
 
-The additional patch is committed in the companion checkout through `8e72f6c`.
-Native, WebAssembly and mutation checks are complete. The normal book verifier
-passed the full inventory against that change in 416.94 seconds.
-The performance TODO remains open until a complete run passes under five minutes.
+Earlier experiments used `/tmp/rights-nibli-perf.llSbQz`; that temporary
+workspace was cleared before the September 14 resumption. It is not a current
+reproduction path. The adjacent cumulative patch retains the engine changes
+against `fa91a5f`; normal `./verify.sh` builds against the actual adjacent
+companion checkout and executes the live book inventory. Build the release
+verifier before timing it, and run no other development build or test during
+the measurement. No allocator preload is needed for the integrated binary.
+
+The additional patch is committed in the companion checkout through `158e3b0`.
+Native, WebAssembly and mutation checks are recorded above. The normal book
+verifier passed the full
+inventory with the grouped runner and bundled allocator in 275.04 seconds.
+The completed performance tracker item was removed; no subsequent pin is
+skipped because of this result.

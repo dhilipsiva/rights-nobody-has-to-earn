@@ -41,6 +41,9 @@ pub(crate) struct LoadedSource<'a> {
 #[path = "pin_performance_tests.rs"]
 mod performance_tests;
 
+#[cfg(test)]
+pub(crate) use performance_tests::{profile_case_finished, profile_case_started};
+
 /// Reusable compilation of exact statement text, scoped to this one process.
 /// Only the canonical source is retained; variant-only statements are compiled
 /// on demand rather than accumulating a cache of every counterfactual world.
@@ -226,6 +229,9 @@ impl PreparedPinEngine {
                         knowledge_base: kb,
                     };
                     let mut setup = Report::default();
+                    #[cfg(test)]
+                    let fixture_timer =
+                        performance_tests::PhaseTimer::start("fixtures", "case fixtures");
                     for fixture in fixtures {
                         let statements: Vec<_> = fixture
                             .source
@@ -273,6 +279,8 @@ impl PreparedPinEngine {
                             }
                         }
                     }
+                    #[cfg(test)]
+                    drop(fixture_timer);
                     let mut report = run_file_with_engine(pin_file, &self.base.engine, kb, options);
                     if scan
                         && report.harness.is_empty()
@@ -287,6 +295,17 @@ impl PreparedPinEngine {
                 if fixtures.is_empty() && !pin_file_can_assert(pin_file.source) {
                     run(self.base.engine.kb())
                 } else {
+                    #[cfg(test)]
+                    let snapshot_started = Instant::now();
+                    #[cfg(test)]
+                    let run = |kb: &KnowledgeBase| {
+                        performance_tests::trace_step(
+                            "snapshot",
+                            "case isolation",
+                            snapshot_started.elapsed(),
+                        );
+                        run(kb)
+                    };
                     self.base
                         .engine
                         .kb()
@@ -1581,6 +1600,8 @@ fn run_file_with_engine(
 }
 
 fn scan_contradictions(knowledge_base: &KnowledgeBase, name: &str, report: &mut Report) {
+    #[cfg(test)]
+    let _timer = performance_tests::PhaseTimer::start("scan", "contradiction report");
     let scanned = knowledge_base.check_contradictions_report();
     report.findings.extend(
         scanned

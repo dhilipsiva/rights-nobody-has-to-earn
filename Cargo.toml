@@ -19,8 +19,15 @@ nibli-engine = { path = "../nibli/nibli-engine" }
 nibli-reason = { path = "../nibli/nibli-reason" }
 nibli-session = { path = "../nibli/nibli-session" }
 
+[target.'cfg(all(target_os = "linux", target_env = "gnu"))'.dependencies]
+tikv-jemallocator = "0.7.0"
+
 [dev-dependencies]
 tempfile = "3.26.0"
+
+# Nix's fortified C headers require optimization, including in Rust test builds.
+[profile.dev.package.tikv-jemalloc-sys]
+opt-level = 2
 
 [profile.release]
 codegen-units = 1

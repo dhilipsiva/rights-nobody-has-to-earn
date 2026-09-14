@@ -13,6 +13,12 @@ mod scheduler;
 
 use std::process::ExitCode;
 
+// The native Linux worker pool allocates many short-lived model/query values.
+// Bundle the allocator; normal verification needs no preload or host library.
+#[cfg(all(target_os = "linux", target_env = "gnu"))]
+#[global_allocator]
+static ALLOCATOR: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+
 fn main() -> ExitCode {
     match cli::run() {
         Ok(()) => ExitCode::SUCCESS,

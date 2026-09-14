@@ -66,13 +66,19 @@ or validate administrative reports. There is no separate quick assurance mode
 and no cached verdict that lets a changed book skip its tests. The focused
 `--only` command is for feedback on one pin file, not a whole-book pass.
 
-Latest full run measured on 2026-09-13 with four workers and the release binary
+On Linux GNU targets the verifier bundles jemalloc for its allocation-heavy
+worker pool. It needs no system jemalloc installation or `LD_PRELOAD` setting;
+the first build compiles the bundled C library using a C compiler and Make
+(available in the Nibli development shell). Other targets retain Rust's default
+allocator. The explicit authoring executable is unchanged.
+
+Latest full run measured on 2026-09-14 with four workers and the release binary
 already built: all 12,860 pins across 4,190 cases passed, with complete formal
-contradiction scans and no findings, in 416.94 seconds (6m56.94s). This uses the
-integrated Nibli performance changes and the same inventory as the earlier
-1,552.00-second run; nine existing known-defect pins still reproduce. The
-under-five-minute full-run target is not met and remains the next implementation
-priority. See the [performance notes](new-book-plans/nibli-performance-candidate.md)
+contradiction scans and no findings, in 275.04 seconds (4m35.04s). This uses the
+Nibli performance changes, exact-base worker grouping and bundled allocator,
+with the same inventory as the earlier 1,552.00-second run; nine existing
+known-defect pins still reproduce. This measured run meets the
+under-five-minute target. See the [performance notes](new-book-plans/nibli-performance-candidate.md)
 for the changes and development checks. This is a timing observation, not a
 cached verification result or a gate on later edits.
 
