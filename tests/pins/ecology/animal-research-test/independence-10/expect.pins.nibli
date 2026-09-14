@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 1
+# Fuse $subject with $controller.
+? complete(ECFusedR0V66, ECStrictAllAnimalResearchTest, ECFusedR0V49).
+# => FALSE

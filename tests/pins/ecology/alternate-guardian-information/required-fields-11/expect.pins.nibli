@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_evidence_version, ECDependencyGuardianAlternateFunctionEvidenceVersionScope).
+? complete(ECOmitF0Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_method, ECDependencyGuardianAlternateFunctionMethodVersionScope).
+? complete(ECOmitF1Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_operator, ECDependencyGuardianAlternateFunctionActorScope).
+? complete(ECOmitF2Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_record, ECDependencyGuardianAlternateFunctionRecordScope).
+? complete(ECOmitF3Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_review, ECDependencyGuardianAlternateFunctionReviewerScope).
+? complete(ECOmitF4Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_revision, ECDependencyGuardianAlternateFunctionRevisionScope).
+? complete(ECOmitF5Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_source, ECDependencyGuardianAlternateFunctionWriterScope).
+? complete(ECOmitF6Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_start, ECDependencyGuardianAlternateFunctionStartScope).
+? complete(ECOmitF7Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE

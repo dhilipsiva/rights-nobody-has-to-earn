@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $external_scarcity_source, ECExternalScarcitySourceScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_scarcity_temporal_record, ECExternalScarcityTemporalRecordScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECDependencyDualContinuityJurisdictionScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECExternalScarcityJurisdictionScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECJurisdictionScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $method, ECMethodVersionScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $operator, ECResponsibleActorScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $place, ECDependencyDualContinuityPlaceScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF7Record).
+# => FALSE

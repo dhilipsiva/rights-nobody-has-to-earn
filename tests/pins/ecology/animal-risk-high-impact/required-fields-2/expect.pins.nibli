@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_evidence_record, ECDependencyAnimalGraveRiskTestEvidenceRecordScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_evidence_version, ECDependencyAnimalGraveRiskTestEvidenceVersionScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_method, ECDependencyAnimalGraveRiskTestMethodVersionScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_operator, ECDependencyAnimalGraveRiskTestActorScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_record, ECDependencyAnimalGraveRiskTestRecordScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_review, ECDependencyAnimalGraveRiskTestReviewerScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_revision, ECDependencyAnimalGraveRiskTestRevisionScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_source, ECDependencyAnimalGraveRiskTestWriterScope).
+? permits(ECOmitSharedV117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECOmitF7Record).
+# => FALSE

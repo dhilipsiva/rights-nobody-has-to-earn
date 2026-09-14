@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $evaluation, ECFreshEvaluationScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_record, ECEvidenceRecordScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_version, ECEvidenceVersionScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECJurisdictionScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $method, ECMethodVersionScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $operation, ECReversibleContinuityOperationScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $operator, ECResponsibleActorScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $place, ECPlaceScope).
+? permits(ECOmitSharedV14, ECOnlyReviewedReversibleEssentialContinuity, ECOmitF7Record).
+# => FALSE

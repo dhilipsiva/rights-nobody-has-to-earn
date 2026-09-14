@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECNoHumanPunishmentSearchEntrySeizureOrCustodyAuthorityWithoutSeparateLawfulJusticeGate, ECAnimalRemedyHumanCoercionBoundaryScope).
+? complete(ECOmitF0Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoPerformedRescueTreatmentTransferRestorationOrDeliveryInferred, ECAnimalRemedyNoExecutionInferenceScope).
+? complete(ECOmitF1Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPaymentDoesNotDischargeRescueCareRestorationOrNonRepetition, ECAnimalRemedyNonSubstitutionScope).
+? complete(ECOmitF2Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF3Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF4Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF5Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF6Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF7Record, ECAnimalNonRepetitionOrder, ECOmitSharedV46).
+# => FALSE

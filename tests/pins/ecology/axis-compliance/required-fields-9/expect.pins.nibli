@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $axis, ECAxisScope).
+? complete(ECOmitF0Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF1Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECDependencyCeilingCaseScope).
+? complete(ECOmitF2Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_end, ECDependencyCeilingEndScope).
+? complete(ECOmitF3Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_evaluation, ECDependencyCeilingEvaluationScope).
+? complete(ECOmitF4Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_evidence_record, ECDependencyCeilingEvidenceRecordScope).
+? complete(ECOmitF5Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_evidence_version, ECDependencyCeilingEvidenceVersionScope).
+? complete(ECOmitF6Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_method, ECDependencyCeilingMethodVersionScope).
+? complete(ECOmitF7Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE

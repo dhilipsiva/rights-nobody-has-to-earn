@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? interrupt(FSBOD_17, ECOmitF0Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECAffectedPopulationScope).
+? interrupt(FSBOD_17, ECOmitF1Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECDependencyGuardianMeritsAffectedPopulationScope).
+? interrupt(FSBOD_17, ECOmitF2Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $project, ECChallengedActivityScope).
+? interrupt(FSBOD_17, ECOmitF3Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reader, ECChallengeReaderScope).
+? interrupt(FSBOD_17, ECOmitF4Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reason, ECPublicReasonsScope).
+? interrupt(FSBOD_17, ECOmitF5Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $remedy, ECRemedyRouteScope).
+? interrupt(FSBOD_17, ECOmitF6Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $responsible_controller, ECAdjudicatedResponsibleControllerScope).
+? interrupt(FSBOD_17, ECOmitF7Record, ECFinalJudicialProtection).
+# => FALSE

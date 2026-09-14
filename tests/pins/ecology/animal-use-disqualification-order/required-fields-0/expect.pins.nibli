@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF0Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF1Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECCaseScope).
+? complete(ECOmitF2Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECExternalAnimalCourtCaseScope).
+? complete(ECOmitF3Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF4Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $controller, ECAnimalRemedyAffectedControllerScope).
+? complete(ECOmitF5Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF6Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $direction, ECExactAnimalRemedyDirectionScope).
+? complete(ECOmitF7Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE

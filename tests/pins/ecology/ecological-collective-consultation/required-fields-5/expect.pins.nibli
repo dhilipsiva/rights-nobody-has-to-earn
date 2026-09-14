@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF0Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECExternalCollectiveVersionScope).
+? complete(ECOmitF1Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF2Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class8SeparateCollectiveRightsDuringEcologicalProtection, ECDirectEffectClassScope).
+? complete(ECOmitF3Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF4Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECActualPriorCollectiveEcologicalConsultation, ECKindScope).
+? complete(ECOmitF5Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECActualPriorCollectiveEcologicalConsultationTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF6Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF7Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE

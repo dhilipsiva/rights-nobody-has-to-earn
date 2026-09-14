@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECCrossBoundaryAndSupplyChainEffectsExamined, ECCrossBoundaryEffectsScope).
+? complete(ECOmitF0Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECCumulativeAndCompoundEffectsExamined, ECCumulativeEffectsScope).
+? complete(ECOmitF1Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECDistributionalAndExposedPopulationEffectsExamined, ECDistributionalEffectsScope).
+? complete(ECOmitF2Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentScientificFinding, ECKindScope).
+? complete(ECOmitF3Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentScientificFindingTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF4Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF5Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyReviewedScientificEvidence, ECScientificReviewScope).
+? complete(ECOmitF6Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECLocalScientificAndIndigenousKnowledgeIndependentlyAssessed, ECKnowledgeSourcesScope).
+? complete(ECOmitF7Record, ECIndependentScientificFinding, ECOmitSharedV26).
+# => FALSE

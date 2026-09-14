@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? permits(ECUnauthSharedV714, ECExactHighConsequenceActivity, ECUnauth0Record).
+# => FALSE
+? permits(ECUnauthSharedV714, ECExactHighConsequenceActivity, ECUnauth1Record).
+# => FALSE
+? permits(ECUnauthSharedV714, ECExactHighConsequenceActivity, ECUnauth2Record).
+# => FALSE
+? permits(ECUnauthSharedV714, ECExactHighConsequenceActivity, ECUnauth3Record).
+# => FALSE
+? permits(ECUnauthSharedV714, ECExactHighConsequenceActivity, ECUnauth4Record).
+# => FALSE
+? permits(ECUnauthSharedV714, ECExactHighConsequenceActivity, ECUnauth5Record).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, Class6LeastHarmDualContinuity, ECDirectEffectClassScope).
+? complete(ECOmitF0Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF1Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualFeasibleAlternativesAndProcurementEffortExamined, ECDualAlternativesScope).
+? complete(ECOmitF2Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECDualFloorAndCeilingContinuity, ECKindScope).
+? complete(ECOmitF3Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECDualFloorAndCeilingContinuityTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF4Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECExistingPhysicalScarcityInterfaceAloneGovernsAllocation, ECScarcityAllocationBoundaryScope).
+? complete(ECOmitF5Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECImmediateHumanContinuityByLeastHarmRoute, ECImmediateFloorContinuityScope).
+? complete(ECOmitF6Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF7Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE

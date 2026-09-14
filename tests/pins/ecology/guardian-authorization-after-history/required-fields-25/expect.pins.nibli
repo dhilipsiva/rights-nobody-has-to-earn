@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? interrupt(FSBOD_22, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? interrupt(FSBOD_22, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE

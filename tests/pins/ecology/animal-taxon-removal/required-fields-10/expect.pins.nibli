@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECRemovalDoesNotEraseLawfulHistoryOrProveAbsenceOfSuffering, ECTaxonRemovalBoundaryScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECTransparentContestableNonRegressionReviewProtectsDirectCoreAndUrgentCare, ECTaxonRemovalNonRegressionScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE

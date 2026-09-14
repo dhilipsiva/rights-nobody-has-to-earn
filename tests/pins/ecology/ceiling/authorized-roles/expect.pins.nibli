@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? complete(ECUnauth0Record, ECCurrentLegalCeiling, ECUnauthSharedV68).
+# => FALSE
+? complete(ECUnauth1Record, ECCurrentLegalCeiling, ECUnauthSharedV68).
+# => FALSE
+? complete(ECUnauth2Record, ECCurrentLegalCeiling, ECUnauthSharedV68).
+# => FALSE
+? complete(ECUnauth3Record, ECCurrentLegalCeiling, ECUnauthSharedV68).
+# => FALSE
+? complete(ECUnauth4Record, ECCurrentLegalCeiling, ECUnauthSharedV68).
+# => FALSE
+? complete(ECUnauth5Record, ECCurrentLegalCeiling, ECUnauthSharedV68).
+# => FALSE

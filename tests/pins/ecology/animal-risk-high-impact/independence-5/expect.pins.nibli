@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $source with $auditor.
+? permits(ECFusedR0V117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECFusedR0V131).
+# => FALSE
+# Fuse $source with $controller.
+? permits(ECFusedR1V117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECFusedR1V131).
+# => FALSE
+# Fuse $source with $operator.
+? permits(ECFusedR2V117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECFusedR2V131).
+# => FALSE
+# Fuse $source with $reader.
+? permits(ECFusedR3V117, ECOnlyEnhancedNonlethalAnimalRiskResponse, ECFusedR3V131).
+# => FALSE

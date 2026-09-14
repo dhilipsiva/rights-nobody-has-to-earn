@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $external_collective_reader with $collective_holder.
+? complete(ECFusedR0V38, ECActualCollectiveConsentForEcologicalEffect, ECFusedR0V45).
+# => FALSE
+# Fuse $external_collective_reader with $external_collective_alternate.
+? complete(ECFusedR1V38, ECActualCollectiveConsentForEcologicalEffect, ECFusedR1V45).
+# => FALSE
+# Fuse $external_collective_reader with $external_collective_auditor.
+? complete(ECFusedR2V38, ECActualCollectiveConsentForEcologicalEffect, ECFusedR2V45).
+# => FALSE
+# Fuse $external_collective_review with $collective_holder.
+? complete(ECFusedR3V38, ECActualCollectiveConsentForEcologicalEffect, ECFusedR3V45).
+# => FALSE

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $reader with $external_court_source.
+? complete(ECFusedR0V42, ECSubstituteFinalGuardianMerits, ECFusedR0V50).
+# => FALSE
+# Fuse $reader with $operator.
+? complete(ECFusedR1V42, ECSubstituteFinalGuardianMerits, ECFusedR1V50).
+# => FALSE
+# Fuse $reader with $subject.
+? complete(ECFusedR2V42, ECSubstituteFinalGuardianMerits, ECFusedR2V50).
+# => FALSE
+# Fuse $review with $alternate.
+? complete(ECFusedR3V42, ECSubstituteFinalGuardianMerits, ECFusedR3V50).
+# => FALSE

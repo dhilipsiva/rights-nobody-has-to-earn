@@ -19,20 +19,21 @@ old conclusions without mechanically reordering the drafted book.
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **90** | **46** | **3936** | **8** |
+| computed from the constitution | **95** | **51** | **6435** | **9** |
 
-The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 6 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
+The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 7 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
 | **0** | `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `member` *(monotone cone)*, `observe`, `orderly` *(monotone cone)*, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
 | **1** | `grant`, `insure`, `precede`, `provide`, `related`, `severe` |
 | **2** | `contradict` |
-| **3** | `authority`, `collide`, `complete`, `defend`, `restrain` |
-| **4** | `correct`, `match`, `reference`, `succeed`, `time` |
-| **5** | `permits` |
-| **6** | **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `false`, `family`, `fit`, **healthy**, **learn**, `lose`, **meets**, `owe`, `parent`, `person`, `prisoner`, **secure** |
-| **7** | `become`, `err`, `obliged`, `prevents`, `reward`, `travel` |
+| **3** | `narrow` |
+| **4** | `authority`, `class`, `collide`, `complete`, `defend`, `end`, `restrain` |
+| **5** | `correct`, `interrupt`, `match`, `oppose`, `reference`, `succeed`, `time` |
+| **6** | `permits` |
+| **7** | **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `false`, `family`, `fit`, **healthy**, **learn**, `lose`, **meets**, `owe`, `parent`, `person`, `prisoner`, **secure** |
+| **8** | `become`, `err`, `obliged`, `prevents`, `reward`, `travel` |
 
 Engine base predicates excluding builtins (43): `adjust`, `at`, `attack`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`. This is a dependency classification, not the writable vocabulary; mixed asserted/derived relations require the separate `admits` and `derived_only` rosters.
 

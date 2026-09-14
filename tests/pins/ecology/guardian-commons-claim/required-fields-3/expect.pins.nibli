@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECJurisdictionScope).
+? complete(ECOmitF0Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $method, ECMethodVersionScope).
+? complete(ECOmitF1Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $operator, ECResponsibleActorScope).
+? complete(ECOmitF2Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $place, ECDependencyGuardianResultPlaceScope).
+? complete(ECOmitF3Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $place, ECPlaceScope).
+? complete(ECOmitF4Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECAffectedPopulationScope).
+? complete(ECOmitF5Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyGuardianResultAffectedPopulationScope).
+? complete(ECOmitF6Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $project, ECChallengedActivityScope).
+? complete(ECOmitF7Record, ECGuardianCommonsClaim, ECOmitSharedV168).
+# => FALSE

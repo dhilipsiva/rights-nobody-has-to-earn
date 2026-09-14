@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? permits(ECUnauthSharedV14, ECReplaceableResidualMeasure, ECUnauth0Record).
+# => FALSE
+? permits(ECUnauthSharedV14, ECReplaceableResidualMeasure, ECUnauth1Record).
+# => FALSE
+? permits(ECUnauthSharedV14, ECReplaceableResidualMeasure, ECUnauth2Record).
+# => FALSE
+? permits(ECUnauthSharedV14, ECReplaceableResidualMeasure, ECUnauth3Record).
+# => FALSE
+? permits(ECUnauthSharedV14, ECReplaceableResidualMeasure, ECUnauth4Record).
+# => FALSE
+? permits(ECUnauthSharedV14, ECReplaceableResidualMeasure, ECUnauth5Record).
+# => FALSE

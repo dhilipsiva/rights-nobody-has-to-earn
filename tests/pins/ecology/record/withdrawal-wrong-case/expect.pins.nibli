@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+? complete(ECLifecycleDefectV17, ECIndependentEcologicalAnimalRecordDefect, ECLifecycleTargetV69).
+# => TRUE
+? obliged(ECLifecycleDefectV15, ECReadExactFindingStopAffectedRelianceAndObtainIndependentRemedy, ECLifecycleDefectV17).
+# => TRUE
+? obliged(ECLifecycleDefectV0, ECPreserveUrgentHumanAndAnimalCareAndIndependentChallengeDuringRecordFailure, ECLifecycleDefectV17).
+# => TRUE
+? obliged(ECLifecycleDefectV1, ECAuditAffectedRelianceLawfulHistoryAndNonRepetitionWithoutAssumingExecution, ECLifecycleDefectV17).
+# => TRUE
+? err(ECLifecycleDefectV17, ECReviewedEcologicalAnimalRecordDefect).
+# => TRUE
+? contradict(ECLifecycleTargetV62, ECLifecycleTargetV65, ECRecordReliance).
+# => FALSE
+? permits(ECLifecycleTargetV49, ECOnlyOrdinaryLowHarmAnimalUse, ECLifecycleTargetV62).
+# => TRUE

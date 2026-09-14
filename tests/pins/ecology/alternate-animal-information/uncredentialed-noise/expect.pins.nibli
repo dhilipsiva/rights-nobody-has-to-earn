@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECNoiseV187, ECAlternateAnimalInformationFunction, ECNoiseV196).
+# => TRUE
+? permits(FSBOD_33, ECOnlyExactLawfulInformationAndReviewedEvidenceDemand, ECNoiseV187).
+# => TRUE
+? obliged(ECNoiseV190, ECPublishLawfulAssessmentEvidenceUncertaintyAlternativesAndReasons, ECNoiseV187).
+# => TRUE
+? obliged(FSBOD_33, ECFacilitateParticipationPublishSupportedAdviceAndIndependentlyExamineResponseFailure, ECNoiseV187).
+# => TRUE
+? related(ECNoiseV187, ECRecordAmbiguity).
+# => FALSE

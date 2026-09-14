@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? interrupt(FSBOD_31, ECUnauth0Record, ECGuardianAutomaticStay).
+# => FALSE
+? interrupt(FSBOD_31, ECUnauth1Record, ECGuardianAutomaticStay).
+# => FALSE
+? interrupt(FSBOD_31, ECUnauth2Record, ECGuardianAutomaticStay).
+# => FALSE
+? interrupt(FSBOD_31, ECUnauth3Record, ECGuardianAutomaticStay).
+# => FALSE
+? interrupt(FSBOD_31, ECUnauth4Record, ECGuardianAutomaticStay).
+# => FALSE
+? interrupt(FSBOD_31, ECUnauth5Record, ECGuardianAutomaticStay).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, Class2ExistingScarcityInterfaceWithEcologicalFailure, ECDirectEffectClassScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualPhysicalScarcitySourceRequiredEcologicalCollisionIsNotPhysicalScarcity, ECDistinctScarcityKindsScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAllAffectedPeopleWithoutMigrationStatusWorthProductivityOrOwnershipPriority, ECScarcityPopulationEqualityScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECExistingScarcityAllocationDuringDualFailure, ECKindScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECExistingScarcityAllocationDuringDualFailureTemporalContract, ECTemporalContractKindScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECFloorShortfallAndEcologicalBreachRemainSeparateFailuresWithContinuityRepairAndReassessment, ECScarcityDualFailurePolarityScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECOmitF7Record).
+# => FALSE

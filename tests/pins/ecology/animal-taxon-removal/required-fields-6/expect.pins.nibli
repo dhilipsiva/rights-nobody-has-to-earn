@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $end, ECEndScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evaluation, ECFreshEvaluationScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_record, ECEvidenceRecordScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_version, ECEvidenceVersionScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECJurisdictionScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE

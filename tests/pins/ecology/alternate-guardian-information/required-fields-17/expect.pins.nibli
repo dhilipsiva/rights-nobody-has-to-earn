@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECNoPolicyVetoPermitOperationProsecutionOrFinalMeritsAuthority, ECInstitutionalSeparationScope).
+? complete(ECOmitF0Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoSearchEntrySeizureCompelledTestPersonalPenaltyOrTaxPower, ECInformationPowerLimitScope).
+? complete(ECOmitF1Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF2Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF3Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPrivateEvidenceProtectedWithAccessibleReasonsAndLawfulSealedReview, ECInformationPrivacyScope).
+? complete(ECOmitF4Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF5Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECResponsibleBodyMustPublishAssessmentUncertaintyAlternativesAndReasons, ECAssessmentPublicationScope).
+? complete(ECOmitF6Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF7Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE

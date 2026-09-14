@@ -481,6 +481,12 @@ observe(EnactBinder, EnactRecord, ExactBaseAndCandidateBytesBound, AmendmentByte
 observe(EnactReview, EnactRecord, ExactBaseAndCandidateBytesBound, AmendmentByteIdentityScope).
 observe(EnactBinder, EnactRecord, PositiveCorridorCompatibility, AmendmentCompatibilityScope).
 observe(EnactReview, EnactRecord, PositiveCorridorCompatibility, AmendmentCompatibilityScope).
+observe(EnactBinder, EnactRecord, PreservesDirectCrediblySentientAnimalProtectedSubjectStatus, AmendmentAnimalSubjectCoreScope).
+observe(EnactReview, EnactRecord, PreservesDirectCrediblySentientAnimalProtectedSubjectStatus, AmendmentAnimalSubjectCoreScope).
+observe(EnactBinder, EnactRecord, PreservesNonWaivableSevereAvoidableAnimalSufferingProhibition, AmendmentAnimalSufferingCoreScope).
+observe(EnactReview, EnactRecord, PreservesNonWaivableSevereAvoidableAnimalSufferingProhibition, AmendmentAnimalSufferingCoreScope).
+observe(EnactBinder, EnactRecord, PreservesNonWaivableDispensableAnimalKillingProhibition, AmendmentAnimalKillingCoreScope).
+observe(EnactReview, EnactRecord, PreservesNonWaivableDispensableAnimalKillingProhibition, AmendmentAnimalKillingCoreScope).
 observe(EnactBinder, EnactRecord, UnchangedEvidenceVocabulary, AmendmentVocabularyDispositionScope).
 observe(EnactReview, EnactRecord, UnchangedEvidenceVocabulary, AmendmentVocabularyDispositionScope).
 observe(EnactBinder, EnactRecord, CurrentReconciledReview, AmendmentCurrentReviewScope).

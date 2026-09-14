@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+? complete(ECPositiveV19, ECEnvironmentalRightClaim, ECPositiveV26).
+# => TRUE
+? obliged(ECPositiveV13, ECProtectIndependentEnvironmentalClaim, ECPositiveV19).
+# => TRUE
+? obliged(ECPositiveV17, ECReviewEnvironmentalInformationParticipationProtectionAndRemedy, ECPositiveV19).
+# => TRUE

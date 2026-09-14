@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $scope, ECDependencyAnimalFoodTestLegalScopeScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECLegalScopeScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $start, ECStartScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyAnimalEnhancedTestSubjectScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyAnimalFoodTestSubjectScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECDependencyAnimalEnhancedTestTerritoryScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECDependencyAnimalFoodTestTerritoryScope).
+? permits(ECOmitSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECOmitF7Record).
+# => FALSE

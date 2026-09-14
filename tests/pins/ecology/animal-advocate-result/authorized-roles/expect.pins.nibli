@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+? complete(ECUnauth0Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth1Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth2Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth3Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth4Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth5Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth6Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth7Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE
+? complete(ECUnauth8Record, ECAnimalAdvocateCollegialResult, ECUnauthSharedV146).
+# => FALSE

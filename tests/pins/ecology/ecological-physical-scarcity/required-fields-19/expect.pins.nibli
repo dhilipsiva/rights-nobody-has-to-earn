@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECNoBudgetDelayMonopolyWithholdingProcurementRefusalOrEcologicalLabelAsScarcityProof, ECScarcityFalseGroundsScope).
+? complete(ECOmitF0Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF1Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoPermissionForNewIrreversibleActivityOrAnimalCoreWaiverFromScarcity, ECScarcityNoEcologicalWaiverScope).
+? complete(ECOmitF2Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF3Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF4Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF5Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF6Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF7Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE

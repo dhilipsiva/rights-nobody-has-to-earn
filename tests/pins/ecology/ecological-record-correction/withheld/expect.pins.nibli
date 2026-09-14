@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECPositiveV17, ECIndependentEcologicalAnimalCorrection, ECPositiveV26).
+# => FALSE
+? obliged(ECPositiveV15, ECReadExactFindingStopAffectedRelianceAndObtainIndependentRemedy, ECPositiveV17).
+# => FALSE
+? obliged(ECPositiveV0, ECPreserveUrgentHumanAndAnimalCareAndIndependentChallengeDuringRecordFailure, ECPositiveV17).
+# => FALSE
+? obliged(ECPositiveV1, ECAuditAffectedRelianceLawfulHistoryAndNonRepetitionWithoutAssumingExecution, ECPositiveV17).
+# => FALSE
+? prevents(ECPositiveV19, ECCorrectionAsAutomaticRenewedAuthority).
+# => FALSE

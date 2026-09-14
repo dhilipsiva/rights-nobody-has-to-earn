@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $waste_method, ECDependencyWasteMethodVersionScope).
+? complete(ECOmitF0Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_operator, ECDependencyWasteActorScope).
+? complete(ECOmitF1Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_record, ECDependencyWasteRecordScope).
+? complete(ECOmitF2Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_review, ECDependencyWasteReviewerScope).
+? complete(ECOmitF3Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_revision, ECDependencyWasteRevisionScope).
+? complete(ECOmitF4Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_source, ECDependencyWasteWriterScope).
+? complete(ECOmitF5Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_start, ECDependencyWasteStartScope).
+? complete(ECOmitF6Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $waste_window, ECDependencyWasteWindowScope).
+? complete(ECOmitF7Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE

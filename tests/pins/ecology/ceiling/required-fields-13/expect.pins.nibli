@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $external_enactment_executor, ECExternalEnactmentExecutorScope).
+? complete(ECOmitF0Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_record, ECExternalEnactmentRecordScope).
+? complete(ECOmitF1Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_result, ECExternalEnactmentResultScope).
+? complete(ECOmitF2Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_review, ECExternalEnactmentReviewScope).
+? complete(ECOmitF3Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_source, ECExternalEnactmentSourceScope).
+? complete(ECOmitF4Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_temporal, ECExternalEnactmentTemporalScope).
+? complete(ECOmitF5Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_temporal_record, ECExternalEnactmentTemporalRecordScope).
+? complete(ECOmitF6Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_enactment_temporal_review, ECExternalEnactmentTemporalReviewScope).
+? complete(ECOmitF7Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $water_condition, ECWaterProtectedConditionScope).
+? complete(ECOmitF0Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_end, ECDependencyWaterEndScope).
+? complete(ECOmitF1Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_evaluation, ECDependencyWaterEvaluationScope).
+? complete(ECOmitF2Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_evidence_record, ECDependencyWaterEvidenceRecordScope).
+? complete(ECOmitF3Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_evidence_version, ECDependencyWaterEvidenceVersionScope).
+? complete(ECOmitF4Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_method, ECDependencyWaterMethodVersionScope).
+? complete(ECOmitF5Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_operator, ECDependencyWaterActorScope).
+? complete(ECOmitF6Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $water_record, ECDependencyWaterRecordScope).
+? complete(ECOmitF7Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE

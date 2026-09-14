@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF0Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class10BoundedWildSufferingResponse, ECDirectEffectClassScope).
+? complete(ECOmitF1Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF2Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECBoundedLeastHarmMethodCurrentQualifiedReviewCareAndReassessment, ECWildInterventionMethodScope).
+? complete(ECOmitF3Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECBoundedWildAnimalInterventionTest, ECKindScope).
+? complete(ECOmitF4Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECBoundedWildAnimalInterventionTestTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF6Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF7Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE

@@ -1,0 +1,49 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 23
+:accept
+authorized(ECExactStayV170, ECIndependentReviewAuthority, ECExactStayV164).
+:accept
+authorized(ECExactStayV166, ECReplayReviewAuthority, ECExactStayV165).
+? interrupt(FSBOD_22, ECExactStayV164, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECExactExecutionV3, ECExactExecutionV4, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECExactStayV164).
+# => TRUE
+? permits(ECExactExecutionV714, ECExactHighConsequenceActivity, ECExactExecutionV717).
+# => FALSE
+? permits(ECOtherExecutionV714, ECExactHighConsequenceActivity, ECOtherExecutionV717).
+# => TRUE
+? obliged(ECOtherExecutionV710, ECWithholdIrreversibleExecutionWhileExactCurrentStayApplies, ECOtherExecutionV717).
+# => TRUE
+:accept
+authorized(ECExactMeritsV45, ECIndependentReviewAuthority, ECExactMeritsV42).
+? complete(ECExactMeritsV42, ECSubstituteFinalGuardianMerits, ECExactExecutionV724).
+# => TRUE
+? end(ECExactMeritsV42, ECFinalGuardianStayDisposition).
+# => TRUE
+? obliged(FSBOD_32, ECPublishFinalDispositionAndSharedReplayClosureWithoutClaimingExecution, ECExactMeritsV42).
+# => TRUE
+? interrupt(FSBOD_22, ECExactStayV164, ECGuardianAutomaticStay).
+# => FALSE
+? oppose(ECExactExecutionV3, ECExactExecutionV4, ECFinalJudicialProtection).
+# => TRUE
+observe(ECExactStayV170, ECExactStayV164, ECEndedGuardianWindow, ECCurrentDispositionScope).
+? permits(ECExactExecutionV714, ECExactHighConsequenceActivity, ECExactExecutionV717).
+# => FALSE
+? permits(ECOtherExecutionV714, ECExactHighConsequenceActivity, ECOtherExecutionV717).
+# => TRUE
+? obliged(ECOtherExecutionV710, ECWithholdIrreversibleExecutionWhileExactCurrentStayApplies, ECOtherExecutionV717).
+# => TRUE
+:accept
+authorized(ECNextguardianstayV170, ECIndependentReviewAuthority, ECNextguardianstayV164).
+:accept
+authorized(ECNextguardianstayV166, ECReplayReviewAuthority, ECNextguardianstayV165).
+? interrupt(FSBOD_22, ECNextguardianstayV164, ECGuardianAutomaticStay).
+# => FALSE
+:accept
+authorized(ECNextalternateguardianstayV194, ECIndependentReviewAuthority, ECNextalternateguardianstayV188).
+:accept
+authorized(ECNextalternateguardianstayV190, ECReplayReviewAuthority, ECNextalternateguardianstayV189).
+? interrupt(FSBOD_31, ECNextalternateguardianstayV188, ECGuardianAutomaticStay).
+# => FALSE

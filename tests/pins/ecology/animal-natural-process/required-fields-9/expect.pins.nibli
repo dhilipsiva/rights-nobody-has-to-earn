@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECNoAnimalOffenderCriminalConvictionInferiorityOrPunishment, ECNaturalNoOffenderScope).
+? complete(ECOmitF0Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF1Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoUniversalDutyToSuppressEcologicalProcessesOrRescueEveryWildIndividual, ECNaturalNoUniversalRescueScope).
+? complete(ECOmitF2Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECOrdinaryNaturalProcessBoundary, ECKindScope).
+? complete(ECOmitF3Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECOrdinaryNaturalProcessBoundaryTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF4Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF5Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF6Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF7Record, ECOrdinaryNaturalProcessBoundary, ECOmitSharedV24).
+# => FALSE

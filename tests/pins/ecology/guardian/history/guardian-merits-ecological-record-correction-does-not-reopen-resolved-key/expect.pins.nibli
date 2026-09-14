@@ -1,0 +1,106 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 52
+? complete(ECHistoricalCourtV41, ECFinalGuardianMerits, ECHistoricalCourtV49).
+# => TRUE
+? end(ECHistoricalCourtV41, ECFinalGuardianStayDisposition).
+# => TRUE
+? obliged(FSBOD_17, ECPublishFinalDispositionAndSharedReplayClosureWithoutClaimingExecution, ECHistoricalCourtV41).
+# => TRUE
+? oppose(ECHistoricalCourtV2, ECHistoricalCourtV3, ECFinalJudicialProtection).
+# => TRUE
+? complete(ECArchivedFinalityV38, ECHistoricalGuardianFinalDisposition, ECHistoricalCourtV49).
+# => FALSE
+:accept
+authorized(ECArchivedFinalityV40, ECIndependentReviewAuthority, ECArchivedFinalityV38).
+? complete(ECArchivedFinalityV38, ECHistoricalGuardianFinalDisposition, ECHistoricalCourtV49).
+# => TRUE
+? end(ECArchivedFinalityV38, ECHistoricalGuardianFinalDisposition).
+# => TRUE
+? obliged(ECArchivedFinalityV30, ECRetainExactAuthenticatedFinalReplayHistoryWithoutContinuingExpiredAuthority, ECArchivedFinalityV38).
+# => TRUE
+:accept
+authorized(ECEndedCurrentCourtV21, ECIndependentReviewAuthority, ECEndedCurrentCourtV17).
+? complete(ECEndedCurrentCourtV17, ECIndependentEcologicalAnimalCorrection, ECHistoricalCourtV49).
+# => TRUE
+? obliged(ECEndedCurrentCourtV15, ECReadExactFindingStopAffectedRelianceAndObtainIndependentRemedy, ECEndedCurrentCourtV17).
+# => TRUE
+? obliged(ECEndedCurrentCourtV0, ECPreserveUrgentHumanAndAnimalCareAndIndependentChallengeDuringRecordFailure, ECEndedCurrentCourtV17).
+# => TRUE
+? obliged(ECEndedCurrentCourtV1, ECAuditAffectedRelianceLawfulHistoryAndNonRepetitionWithoutAssumingExecution, ECEndedCurrentCourtV17).
+# => TRUE
+? prevents(ECEndedCurrentCourtV19, ECCorrectionAsAutomaticRenewedAuthority).
+# => TRUE
+? complete(ECHistoricalCourtV41, ECFinalGuardianMerits, ECHistoricalCourtV49).
+# => FALSE
+? complete(ECArchivedFinalityV38, ECHistoricalGuardianFinalDisposition, ECHistoricalCourtV49).
+# => TRUE
+? end(ECArchivedFinalityV38, ECHistoricalGuardianFinalDisposition).
+# => TRUE
+? obliged(ECArchivedFinalityV30, ECRetainExactAuthenticatedFinalReplayHistoryWithoutContinuingExpiredAuthority, ECArchivedFinalityV38).
+# => TRUE
+? oppose(ECHistoricalCourtV2, ECHistoricalCourtV3, ECFinalJudicialProtection).
+# => FALSE
+:accept
+authorized(ECPastReplayguardianstayV170, ECIndependentReviewAuthority, ECPastReplayguardianstayV164).
+:accept
+authorized(ECPastReplayguardianstayV166, ECReplayReviewAuthority, ECPastReplayguardianstayV165).
+? interrupt(FSBOD_22, ECPastReplayguardianstayV164, ECGuardianAutomaticStay).
+# => FALSE
+? end(ECPastReplayguardianstayV164, ECFinalGuardianStayReplay).
+# => TRUE
+:accept
+authorized(ECPastReplayalternateguardianstayV194, ECIndependentReviewAuthority, ECPastReplayalternateguardianstayV188).
+:accept
+authorized(ECPastReplayalternateguardianstayV190, ECReplayReviewAuthority, ECPastReplayalternateguardianstayV189).
+? interrupt(FSBOD_31, ECPastReplayalternateguardianstayV188, ECGuardianAutomaticStay).
+# => FALSE
+? end(ECPastReplayalternateguardianstayV188, ECFinalGuardianStayReplay).
+# => TRUE
+:accept
+authorized(ECFreshHistoricalRenewal0V211, ECIndependentReviewAuthority, ECFreshHistoricalRenewal0V205).
+:accept
+authorized(ECFreshHistoricalRenewal0V207, ECReplayReviewAuthority, ECFreshHistoricalRenewal0V206).
+? interrupt(FSBOD_22, ECFreshHistoricalRenewal0V205, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECMateriallyNewAuthorization0, ECMateriallyNewAuthorizationVersion0, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECFreshHistoricalRenewal0V205).
+# => TRUE
+? complete(ECHistoricalCourtV41, ECFinalGuardianMerits, ECHistoricalCourtV49).
+# => FALSE
+:accept
+authorized(ECFreshHistoricalRenewal1V211, ECIndependentReviewAuthority, ECFreshHistoricalRenewal1V205).
+:accept
+authorized(ECFreshHistoricalRenewal1V207, ECReplayReviewAuthority, ECFreshHistoricalRenewal1V206).
+? interrupt(FSBOD_22, ECFreshHistoricalRenewal1V205, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECHistoricalCourtV2, ECHistoricalCourtV3, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECFreshHistoricalRenewal1V205).
+# => TRUE
+? complete(ECHistoricalCourtV41, ECFinalGuardianMerits, ECHistoricalCourtV49).
+# => FALSE
+:accept
+authorized(ECFreshHistoricalRenewal2V235, ECIndependentReviewAuthority, ECFreshHistoricalRenewal2V229).
+:accept
+authorized(ECFreshHistoricalRenewal2V231, ECReplayReviewAuthority, ECFreshHistoricalRenewal2V230).
+? interrupt(FSBOD_31, ECFreshHistoricalRenewal2V229, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECMateriallyNewAuthorization2, ECMateriallyNewAuthorizationVersion2, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_31, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECFreshHistoricalRenewal2V229).
+# => TRUE
+? complete(ECHistoricalCourtV41, ECFinalGuardianMerits, ECHistoricalCourtV49).
+# => FALSE
+:accept
+authorized(ECFreshHistoricalRenewal3V235, ECIndependentReviewAuthority, ECFreshHistoricalRenewal3V229).
+:accept
+authorized(ECFreshHistoricalRenewal3V231, ECReplayReviewAuthority, ECFreshHistoricalRenewal3V230).
+? interrupt(FSBOD_31, ECFreshHistoricalRenewal3V229, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECHistoricalCourtV2, ECHistoricalCourtV3, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_31, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECFreshHistoricalRenewal3V229).
+# => TRUE
+? complete(ECHistoricalCourtV41, ECFinalGuardianMerits, ECHistoricalCourtV49).
+# => FALSE

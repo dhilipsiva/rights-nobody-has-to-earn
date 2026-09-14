@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECFoodPurposeNeverAuthorizesAvoidableSuffering, ECFoodCoreBoundaryScope).
+? complete(ECOmitF0Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF1Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF2Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoSafeAccessibleNutritionallyAdequateMateriallyLessHarmfulAlternativeReasonablyAvailable, ECStrictAnimalFoodAlternativeFindingScope).
+? complete(ECOmitF3Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF4Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF5Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF6Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF7Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE

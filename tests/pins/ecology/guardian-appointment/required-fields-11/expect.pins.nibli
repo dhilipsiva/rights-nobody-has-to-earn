@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $version, ECExternalQualificationVersionScope).
+? complete(ECOmitF0Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECExternalSeatVersionScope).
+? complete(ECOmitF1Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECExternalSelectionVersionScope).
+? complete(ECOmitF2Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF3Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class6IndependentAdvocateAppointment, ECDirectEffectClassScope).
+? complete(ECOmitF4Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF5Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECCauseOnlyRemovalWithNoticeReasonsIndependentReviewAndContinuity, ECCauseRemovalScope).
+? complete(ECOmitF6Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECGuardianAppointment, ECKindScope).
+? complete(ECOmitF7Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE

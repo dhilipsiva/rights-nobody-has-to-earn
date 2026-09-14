@@ -1,0 +1,44 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 21
+? permits(ECAnimalProhibitedUseV49, ECOnlyOrdinaryLowHarmAnimalUse, ECAnimalProhibitedUseV62).
+# => TRUE
+:accept
+authorized(ECAnimalHardBarV44, ECIndependentReviewAuthority, ECAnimalHardBarV42).
+? complete(ECAnimalHardBarV42, ECAnimalCategoricalRefusal, ECAnimalProhibitedUseV69).
+# => TRUE
+? oppose(ECAnimalProhibitedUseV69, ECAnimalProhibitedUseV0, ECAnimalUse).
+# => TRUE
+? prevents(ECAnimalHardBarV42, ECAuthorizationOfCategoricallyProhibitedAnimalConduct).
+# => TRUE
+? obliged(ECAnimalHardBarV37, ECStopAndRemedyTheExactCategoricallyProhibitedAnimalConduct, ECAnimalHardBarV42).
+# => TRUE
+? permits(ECAnimalProhibitedUseV49, ECOnlyOrdinaryLowHarmAnimalUse, ECAnimalProhibitedUseV62).
+# => FALSE
+? person(ECAnimalProhibitedUseV69).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { secure() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { eats() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { dwell() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { healthy() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { learn() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { expresses() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { believe() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV69, event { meets() }).
+# => FALSE
+? authority(ECAnimalProhibitedUseV69).
+# => FALSE
+? prisoner(ECAnimalProhibitedUseV69).
+# => FALSE
+? punish(Court, ECAnimalProhibitedUseV69).
+# => FALSE
+? capture(ECAnimalProhibitedUseV69).
+# => FALSE
+? restrain(ECAnimalProhibitedUseV69).
+# => FALSE

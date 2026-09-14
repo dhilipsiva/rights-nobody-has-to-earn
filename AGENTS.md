@@ -28,6 +28,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ./generate.sh mobility
 ./generate.sh justice
 ./generate.sh public-safety
+./generate.sh ecology
 ./generate.sh spine
 ```
 

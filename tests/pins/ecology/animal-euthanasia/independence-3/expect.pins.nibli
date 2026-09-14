@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $reader with $subject.
+? permits(ECFusedR0V72, ECOnlyQualifiedLeastDistressingEuthanasia, ECFusedR0V86).
+# => FALSE
+# Fuse $review with $alternate.
+? permits(ECFusedR1V72, ECOnlyQualifiedLeastDistressingEuthanasia, ECFusedR1V86).
+# => FALSE
+# Fuse $review with $auditor.
+? permits(ECFusedR2V72, ECOnlyQualifiedLeastDistressingEuthanasia, ECFusedR2V86).
+# => FALSE
+# Fuse $review with $controller.
+? permits(ECFusedR3V72, ECOnlyQualifiedLeastDistressingEuthanasia, ECFusedR3V86).
+# => FALSE

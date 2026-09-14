@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStrictLowImpactAnimalResearchUse, ECKindScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStrictLowImpactAnimalResearchUseTemporalContract, ECTemporalContractKindScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF5Record).
+# => FALSE

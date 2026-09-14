@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $external_seat_end, ECExternalSeatEndScope).
+? complete(ECOmitF0Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_epoch, ECExternalSeatEpochScope).
+? complete(ECOmitF1Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_evidence, ECExternalSeatEvidenceScope).
+? complete(ECOmitF2Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_executor, ECExternalSeatExecutorScope).
+? complete(ECOmitF3Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_record, ECExternalSeatRecordScope).
+? complete(ECOmitF4Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_result, ECExternalSeatResultScope).
+? complete(ECOmitF5Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_review, ECExternalSeatReviewScope).
+? complete(ECOmitF6Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_seat_source, ECExternalSeatSourceScope).
+? complete(ECOmitF7Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE

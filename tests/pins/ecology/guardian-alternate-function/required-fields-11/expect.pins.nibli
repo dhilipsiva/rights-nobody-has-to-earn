@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $guardian_alternate_result_review, ECDependencyGuardianAlternateResultReviewerScope).
+? complete(ECOmitF0Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_result_revision, ECDependencyGuardianAlternateResultRevisionScope).
+? complete(ECOmitF1Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_result_source, ECDependencyGuardianAlternateResultWriterScope).
+? complete(ECOmitF2Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_result_start, ECDependencyGuardianAlternateResultStartScope).
+? complete(ECOmitF3Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_result_window, ECDependencyGuardianAlternateResultWindowScope).
+? complete(ECOmitF4Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECDependencyGuardianAlternateResultJurisdictionScope).
+? complete(ECOmitF5Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECJurisdictionScope).
+? complete(ECOmitF6Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? complete(ECOmitF7Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE

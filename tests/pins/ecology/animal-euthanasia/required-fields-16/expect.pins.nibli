@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? permits(ECOmitSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? permits(ECOmitSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECQualifiedAnimalEuthanasia, ECKindScope).
+? permits(ECOmitSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECQualifiedAnimalEuthanasiaTemporalContract, ECTemporalContractKindScope).
+? permits(ECOmitSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? permits(ECOmitSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? permits(ECOmitSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECOmitF5Record).
+# => FALSE

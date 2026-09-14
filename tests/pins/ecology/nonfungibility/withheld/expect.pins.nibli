@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECPositiveV20, ECNonfungibleProtectionFinding, ECPositiveV27).
+# => FALSE
+? oppose(ECPositiveV5, ECPositiveV17, ECHabitatAxis).
+# => FALSE
+? prevents(ECPositiveV17, ECOffsetAsPermissionForNonfungibleHarm).
+# => FALSE
+? obliged(ECPositiveV14, ECAvoidStopAndRepairNonfungibleHarm, ECPositiveV20).
+# => FALSE

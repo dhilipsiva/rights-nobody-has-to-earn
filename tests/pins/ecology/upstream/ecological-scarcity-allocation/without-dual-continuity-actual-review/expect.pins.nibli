@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 1
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECActualUpstreamProofV86).
+# => FALSE

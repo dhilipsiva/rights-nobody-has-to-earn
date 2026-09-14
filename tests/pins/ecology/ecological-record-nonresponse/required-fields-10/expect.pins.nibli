@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECNoSilenceApprovalAutomaticStayNewAuthorityIndefiniteHoldOrCareSuspension, ECNonresponseLimitsScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveIndependentFindingDeadlinePassedWithoutRequiredResponse, ECNonresponseFindingScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPredeclaredUninvolvedAlternateAccessActionAndCourtEscalation, ECNonresponseAlternateRouteScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE

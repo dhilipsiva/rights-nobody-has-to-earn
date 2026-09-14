@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalDirectSubjectCorridorBreach, ECKindScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalDirectSubjectCorridorBreachTemporalContract, ECTemporalContractKindScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentExactBaseCandidateEffectsComparisonNotTextLabelOrUnreviewedAllegation, ECAnimalCoreComparisonScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoMajorityEmergencyProfitCustomNecessityOrGenericCompatibilityWaiver, ECAnimalCoreNonWaiverScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE

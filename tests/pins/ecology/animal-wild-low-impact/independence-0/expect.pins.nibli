@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $auditor.
+? permits(ECFusedR0V49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECFusedR0V62).
+# => FALSE
+# Fuse $alternate with $controller.
+? permits(ECFusedR1V49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECFusedR1V62).
+# => FALSE
+# Fuse $alternate with $operator.
+? permits(ECFusedR2V49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECFusedR2V62).
+# => FALSE
+# Fuse $alternate with $subject.
+? permits(ECFusedR3V49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECFusedR3V62).
+# => FALSE

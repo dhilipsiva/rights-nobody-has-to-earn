@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? interrupt(FSBOD_17, ECConflictF0Record, ECJudicialInterimStay).
+# => FALSE
+? related(ECConflictF0Record, ECRecordAmbiguity).
+# => TRUE
+? interrupt(FSBOD_17, ECConflictF1Record, ECJudicialInterimStay).
+# => FALSE
+? related(ECConflictF1Record, ECRecordAmbiguity).
+# => TRUE
+? interrupt(FSBOD_17, ECConflictF2Record, ECJudicialInterimStay).
+# => FALSE
+? related(ECConflictF2Record, ECRecordAmbiguity).
+# => TRUE
+? interrupt(FSBOD_17, ECConflictF3Record, ECJudicialInterimStay).
+# => FALSE
+? related(ECConflictF3Record, ECRecordAmbiguity).
+# => TRUE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF0Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF1Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF2Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF3Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSeparateAlreadyLawfulCoerciveMandateRequiredNoNewPowerFromAnimalFinding, ECAnimalViolationMandateBoundaryScope).
+? complete(ECOmitF4Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSeparateHumanJusticeForAnimalViolation, ECKindScope).
+? complete(ECOmitF5Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSeparateHumanJusticeForAnimalViolationTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF6Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF7Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE

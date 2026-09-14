@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPublishedApplicableTerritoryPopulationAndPeriod, ECApplicabilityScope).
+? complete(ECOmitF0Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPublishedDemocraticallyEnactedVersionNotScientificProposalAlone, ECEnactmentFindingScope).
+? complete(ECOmitF1Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF2Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECQualitativeNonDestructionSurvivesMissingQuantification, ECNonDestructionScope).
+? complete(ECOmitF3Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF4Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF5Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE

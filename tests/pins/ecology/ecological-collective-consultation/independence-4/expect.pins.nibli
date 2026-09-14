@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $auditor with $subject.
+? complete(ECFusedR0V39, ECActualPriorCollectiveEcologicalConsultation, ECFusedR0V46).
+# => FALSE
+# Fuse $external_collective_alternate with $collective_holder.
+? complete(ECFusedR1V39, ECActualPriorCollectiveEcologicalConsultation, ECFusedR1V46).
+# => FALSE
+# Fuse $external_collective_alternate with $external_collective_auditor.
+? complete(ECFusedR2V39, ECActualPriorCollectiveEcologicalConsultation, ECFusedR2V46).
+# => FALSE
+# Fuse $external_collective_auditor with $collective_holder.
+? complete(ECFusedR3V39, ECActualPriorCollectiveEcologicalConsultation, ECFusedR3V46).
+# => FALSE

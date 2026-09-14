@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $rights_advocate_commons_claim_window, ECDependencyRightsAdvocateCommonsClaimWindowScope).
+? interrupt(FSBOD_17, ECOmitF0Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECDependencyRightsAdvocateCommonsClaimLegalScopeScope).
+? interrupt(FSBOD_17, ECOmitF1Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECExternalCourtLegalScopeScope).
+? interrupt(FSBOD_17, ECOmitF2Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECLegalScopeScope).
+? interrupt(FSBOD_17, ECOmitF3Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $start, ECStartScope).
+? interrupt(FSBOD_17, ECOmitF4Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyRightsAdvocateCommonsClaimSubjectScope).
+? interrupt(FSBOD_17, ECOmitF5Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECExternalCourtSubjectScope).
+? interrupt(FSBOD_17, ECOmitF6Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? interrupt(FSBOD_17, ECOmitF7Record, ECJudicialInterimStay).
+# => FALSE

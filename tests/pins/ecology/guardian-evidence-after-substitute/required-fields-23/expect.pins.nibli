@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECGuardianNewEvidenceAfterSubstitute, ECKindScope).
+? interrupt(FSBOD_22, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianNewEvidenceAfterSubstituteTemporalContract, ECTemporalContractKindScope).
+? interrupt(FSBOD_22, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianOwnFreshT3NotCustodyT3OrSilentExtension, ECGuardianT3Scope).
+? interrupt(FSBOD_22, ECOmitF2Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentOldAndNewSubstantiveComparisonNotRelabeling, ECMaterialComparisonScope).
+? interrupt(FSBOD_22, ECOmitF3Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? interrupt(FSBOD_22, ECOmitF4Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedMaterialEvidenceChange, ECMaterialNoveltyFindingScope).
+? interrupt(FSBOD_22, ECOmitF5Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? interrupt(FSBOD_22, ECOmitF6Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoNoveltyFromOfficeGroundWindowReviewerOrVersionLabelAlone, ECNoveltyLimitScope).
+? interrupt(FSBOD_22, ECOmitF7Record, ECGuardianAutomaticStay).
+# => FALSE

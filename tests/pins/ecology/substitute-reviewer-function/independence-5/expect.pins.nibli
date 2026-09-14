@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $source with $review.
+? complete(ECFusedR0V22, ECSubstituteReviewerFunction, ECFusedR0V29).
+# => FALSE
+# Fuse $source with $subject.
+? complete(ECFusedR1V22, ECSubstituteReviewerFunction, ECFusedR1V29).
+# => FALSE
+# Fuse $substitute_reviewer with $initiating_advocate.
+? complete(ECFusedR2V22, ECSubstituteReviewerFunction, ECFusedR2V29).
+# => FALSE
+# Fuse $substitute_reviewer with $unavailable_actor.
+? complete(ECFusedR3V22, ECSubstituteReviewerFunction, ECFusedR3V29).
+# => FALSE

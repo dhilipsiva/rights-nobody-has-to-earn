@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($assurer, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF0Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $roster, ECExactFiniteRosterScope).
+? complete(ECOmitF1Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF2Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $service, ECIndependentResultServiceScope).
+? complete(ECOmitF3Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $start, ECStartScope).
+? complete(ECOmitF4Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $subject, ECSubjectScope).
+? complete(ECOmitF5Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $submissions, ECUniqueCompleteSubmissionSetScope).
+? complete(ECOmitF6Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF7Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

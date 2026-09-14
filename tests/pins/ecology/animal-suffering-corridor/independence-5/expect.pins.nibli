@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $review with $effect_reviewer.
+? contradict(ECFusedR0V1, AmendmentSourceAuthorization).
+# => FALSE
+# Fuse $review with $operator.
+? contradict(ECFusedR1V1, AmendmentSourceAuthorization).
+# => FALSE
+# Fuse $review with $reader.
+? contradict(ECFusedR2V1, AmendmentSourceAuthorization).
+# => FALSE
+# Fuse $review with $subject.
+? contradict(ECFusedR3V1, AmendmentSourceAuthorization).
+# => FALSE

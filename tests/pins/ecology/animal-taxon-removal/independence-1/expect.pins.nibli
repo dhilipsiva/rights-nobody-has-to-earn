@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $auditor with $subject.
+? narrow(ECFusedR0V26, ECFusedR0V28, ECAnimalTaxonPresumption).
+# => FALSE
+# Fuse $reader with $alternate.
+? narrow(ECFusedR1V26, ECFusedR1V28, ECAnimalTaxonPresumption).
+# => FALSE
+# Fuse $reader with $auditor.
+? narrow(ECFusedR2V26, ECFusedR2V28, ECAnimalTaxonPresumption).
+# => FALSE
+# Fuse $reader with $operator.
+? narrow(ECFusedR3V26, ECFusedR3V28, ECAnimalTaxonPresumption).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? complete(ECOmitF0Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? complete(ECOmitF1Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECAffectedPopulationScope).
+? complete(ECOmitF2Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $project, ECExactEcologicalProjectScope).
+? complete(ECOmitF3Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $project, ECExternalCollectiveProjectScope).
+? complete(ECOmitF4Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reader, ECChallengeReaderScope).
+? complete(ECOmitF5Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF6Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF7Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE

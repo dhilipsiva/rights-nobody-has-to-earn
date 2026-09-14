@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $version, ECExternalEnactmentVersionScope).
+? complete(ECOmitF0Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? complete(ECOmitF1Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class9EcologicalCeiling, ECDirectEffectClassScope).
+? complete(ECOmitF2Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF3Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCeilingMinimumOrBudgetWithSeparateAxisAndUnit, ECStandardFormScope).
+? complete(ECOmitF4Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCurrentLegalCeiling, ECKindScope).
+? complete(ECOmitF5Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCurrentLegalCeilingTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF6Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECEqualOrStrongerProtectionThanReviewedScientificMinimum, ECScientificMinimumScope).
+? complete(ECOmitF7Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE

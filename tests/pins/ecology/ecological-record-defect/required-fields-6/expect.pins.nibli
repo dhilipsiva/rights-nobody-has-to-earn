@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveLawfulHistoryPrivateEvidenceReasonsChallengeAndIndependentRemedy, ECRecordHistoryProtectionScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE

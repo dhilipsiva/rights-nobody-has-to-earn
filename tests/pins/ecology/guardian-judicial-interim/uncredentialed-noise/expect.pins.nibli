@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? interrupt(FSBOD_17, ECNoiseV204, ECJudicialInterimStay).
+# => TRUE
+? oppose(ECNoiseV2, ECNoiseV3, ECJudicialInterimStay).
+# => TRUE
+? obliged(FSBOD_17, ECApplyOnlyTheActualCurrentIndependentInterimDirection, ECNoiseV204).
+# => TRUE
+? related(ECNoiseV204, ECRecordAmbiguity).
+# => FALSE

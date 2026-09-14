@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $auditor.
+? complete(ECFusedR0V16, ECAnimalTaxonExtension, ECFusedR0V24).
+# => FALSE
+# Fuse $alternate with $operator.
+? complete(ECFusedR1V16, ECAnimalTaxonExtension, ECFusedR1V24).
+# => FALSE
+# Fuse $alternate with $subject.
+? complete(ECFusedR2V16, ECAnimalTaxonExtension, ECFusedR2V24).
+# => FALSE
+# Fuse $auditor with $operator.
+? complete(ECFusedR3V16, ECAnimalTaxonExtension, ECFusedR3V24).
+# => FALSE

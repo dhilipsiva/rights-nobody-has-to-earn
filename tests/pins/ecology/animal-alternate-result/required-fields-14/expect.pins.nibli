@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_evaluation, ECDependencyAnimalAlternateAppointmentEvaluationScope).
+? complete(ECOmitF0Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_evidence_record, ECDependencyAnimalAlternateAppointmentEvidenceRecordScope).
+? complete(ECOmitF1Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_evidence_version, ECDependencyAnimalAlternateAppointmentEvidenceVersionScope).
+? complete(ECOmitF2Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_method, ECDependencyAnimalAlternateAppointmentMethodVersionScope).
+? complete(ECOmitF3Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_operator, ECDependencyAnimalAlternateAppointmentActorScope).
+? complete(ECOmitF4Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_place, ECDependencyAnimalAlternateAppointmentPlaceScope).
+? complete(ECOmitF5Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_population, ECDependencyAnimalAlternateAppointmentAffectedPopulationScope).
+? complete(ECOmitF6Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_alternate_appointment_record, ECDependencyAnimalAlternateAppointmentRecordScope).
+? complete(ECOmitF7Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentProfessionDeFactoControlScope).
+? complete(ECOmitF0Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentProfessionDirectControlScope).
+? complete(ECOmitF1Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECMixedRelevantExpertiseLivedKnowledgeAndNoExclusiveProfession, ECMixedCompositionScope).
+? complete(ECOmitF2Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoBudgetTaxPermitProgrammeProsecutionOrFinalVetoPower, ECAdvocatePowerBoundaryScope).
+? complete(ECOmitF3Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF4Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoRegulatorScientistCourtAuditorOperatorOrOwnerFunctionFusion, ECAdvocateSeparationScope).
+? complete(ECOmitF5Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECOpenAccessibleNominationsAndPublishedCriteria, ECOpenNominationsScope).
+? complete(ECOmitF6Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF7Record, ECAnimalAdvocateAppointment, ECOmitSharedV111).
+# => FALSE

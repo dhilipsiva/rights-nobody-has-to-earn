@@ -44,6 +44,18 @@ const FIELDS: &[(&str, &str)] = &[
         "PositiveCorridorCompatibility",
         "AmendmentCompatibilityScope",
     ),
+    (
+        "PreservesDirectCrediblySentientAnimalProtectedSubjectStatus",
+        "AmendmentAnimalSubjectCoreScope",
+    ),
+    (
+        "PreservesNonWaivableSevereAvoidableAnimalSufferingProhibition",
+        "AmendmentAnimalSufferingCoreScope",
+    ),
+    (
+        "PreservesNonWaivableDispensableAnimalKillingProhibition",
+        "AmendmentAnimalKillingCoreScope",
+    ),
     ("$vocabulary", "AmendmentVocabularyDispositionScope"),
     ("CurrentReconciledReview", "AmendmentCurrentReviewScope"),
     (
@@ -393,6 +405,47 @@ fn pins(queries: &[(&str, &str)], values: &BTreeMap<String, String>) -> String {
         text += &format!("? {}.\n# => {expected}\n", ground(q, values));
     }
     text
+}
+
+pub(crate) fn ecological_example(
+    context: &Context,
+) -> Result<(String, BTreeMap<String, String>), Error> {
+    let (consent, mapping) = state_form::amendment_example(context, "ordinary_amendment")?;
+    let mut v = values();
+    for (name, upstream) in [
+        ("$consent_record", "$record"),
+        ("$consent_result", "$result"),
+        ("$proposal", "$proposal"),
+        ("$certificate", "$amendment_certificate"),
+        ("$legal_scope", "$legal_scope"),
+    ] {
+        v.insert(name.into(), mapping[upstream].clone());
+    }
+    Ok((format!("{consent}{}", facts(&candidate_body(), &v)), v))
+}
+
+pub(crate) fn ecological_corridor_counterfactual() -> Edit {
+    let body = candidate_body();
+    let head = "complete($record, AmendmentCertifiedCandidate, $candidate)";
+    let weakened = body
+        .iter()
+        .filter(|atom| atom.as_str() != "~contradict($record, AmendmentSourceAuthorization)")
+        .cloned()
+        .collect::<Vec<_>>();
+    Edit {
+        before: rule(&body, head),
+        after: rule(&weakened, head),
+    }
+}
+
+pub(crate) fn ecological_effective_example(
+    context: &Context,
+) -> Result<(String, BTreeMap<String, String>), Error> {
+    let (fixture, values) = ecological_example(context)?;
+    Ok((
+        fixture + &facts(&publication_body(), &values) + &facts(&selection_body(), &values),
+        values,
+    ))
 }
 
 pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Error> {

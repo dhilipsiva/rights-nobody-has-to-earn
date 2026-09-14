@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, Class9ExactAxisCompliance, ECDirectEffectClassScope).
+? complete(ECOmitF0Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF1Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCrossBoundarySupplyChainLongLatencyAndFullDurationAssessed, ECExtendedEffectsScope).
+? complete(ECOmitF2Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECDirectIndirectCumulativeCompoundAndDistributionalEffectsAssessed, ECEffectsAssessmentScope).
+? complete(ECOmitF3Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF4Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF5Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoExternalizationJurisdictionShoppingOrCorporateFormEscape, ECNonEvasionScope).
+? complete(ECOmitF6Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF7Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE

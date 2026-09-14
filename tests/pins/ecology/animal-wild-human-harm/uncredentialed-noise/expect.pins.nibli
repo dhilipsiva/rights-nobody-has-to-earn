@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECNoiseV42, ECWildHumanCausedAnimalHarm, ECNoiseV49).
+# => TRUE
+? obliged(ECNoiseV37, ECPrioritizePreventionRescueAndRepairOfHumanCausedWildAnimalHarm, ECNoiseV42).
+# => TRUE
+? obliged(ECNoiseV28, ECPreventAndRemedyEvidencedHumanCausedAnimalHarm, ECNoiseV42).
+# => TRUE
+? related(ECNoiseV42, ECRecordAmbiguity).
+# => FALSE

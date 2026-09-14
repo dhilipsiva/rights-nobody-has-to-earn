@@ -2624,7 +2624,28 @@ pub(crate) fn court_consumer(
     Ok(atoms)
 }
 
-/// Actual upstream facts for a justice case, never asserted conclusions.
+/// Exact existing legislative, court and divided-appointment contracts used by
+/// the ecological authoring family. No new source authority is created here.
+pub(crate) fn ecological_consumer(
+    context: &Context,
+    number: usize,
+    key: &str,
+) -> Result<Vec<String>, Error> {
+    if !matches!(number, 5 | 22 | 23 | 25 | 27 | 28 | 30 | 35) {
+        return Err(Error::new("undeclared ecological state-form interface"));
+    }
+    let source: SemanticSource =
+        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+    let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
+    let mut atoms = authority_raw_premises(branch).map_err(public_error)?;
+    atoms.push(format!("complete($result, {}, $record)", branch.power()));
+    for holder in &branch.authority_holders {
+        atoms.push(format!("authority({holder}, {}, $record)", branch.power()));
+    }
+    Ok(atoms)
+}
+
+/// Actual upstream facts, never asserted conclusions.
 pub(crate) fn court_example(
     context: &Context,
     number: usize,

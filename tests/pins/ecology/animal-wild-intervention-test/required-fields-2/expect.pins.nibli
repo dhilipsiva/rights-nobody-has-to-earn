@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $case, ECDependencyAnimalCoverageCaseScope).
+? complete(ECOmitF0Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF1Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $controller, ECAnimalControllerScope).
+? complete(ECOmitF2Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF3Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ecological_effect, ECWildInterventionEcologicalEffectEvidenceScope).
+? complete(ECOmitF4Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $end, ECEndScope).
+? complete(ECOmitF5Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evaluation, ECFreshEvaluationScope).
+? complete(ECOmitF6Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_record, ECEvidenceRecordScope).
+? complete(ECOmitF7Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE

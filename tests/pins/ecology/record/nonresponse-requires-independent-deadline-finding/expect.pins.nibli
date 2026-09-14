@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+? complete(ECUnansweredRecordV17, ECIndependentEcologicalAnimalNonresponse, ECUnansweredRecordV27).
+# => FALSE
+? err(ECUnansweredRecordV17, ECEcologicalAnimalRecordNonresponse).
+# => FALSE
+? obliged(ECUnansweredRecordV0, ECIndependentlyActOnUnansweredRequestSecureCareAndEscalateCourtRemedy, ECUnansweredRecordV28).
+# => FALSE
+:accept
+authorized(ECUnansweredRecordV22, ECIndependentReviewAuthority, ECUnansweredRecordV17).
+? complete(ECUnansweredRecordV17, ECIndependentEcologicalAnimalNonresponse, ECUnansweredRecordV27).
+# => TRUE
+? err(ECUnansweredRecordV17, ECEcologicalAnimalRecordNonresponse).
+# => TRUE
+? obliged(ECUnansweredRecordV0, ECIndependentlyActOnUnansweredRequestSecureCareAndEscalateCourtRemedy, ECUnansweredRecordV28).
+# => TRUE
+? interrupt(ECUnansweredRecordV12, ECUnansweredRecordV17, ECGuardianAutomaticStay).
+# => FALSE
+? permits(ECUnansweredRecordV12, ECExactHighConsequenceActivity, ECUnansweredRecordV17).
+# => FALSE

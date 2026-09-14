@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $evidence_record, ECEvidenceRecordScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_version, ECEvidenceVersionScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECDependencyAnimalWelfareJurisdictionScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECJurisdictionScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECDependencyAnimalWelfarePlaceScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? permits(ECOmitSharedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECOmitF7Record).
+# => FALSE

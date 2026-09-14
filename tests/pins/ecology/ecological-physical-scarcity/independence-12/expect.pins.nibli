@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+# Fuse $source with $reader.
+? complete(ECFusedR0V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR0V76).
+# => FALSE
+# Fuse $source with $review.
+? complete(ECFusedR1V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR1V76).
+# => FALSE
+# Fuse $source with $subject.
+? complete(ECFusedR2V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR2V76).
+# => FALSE

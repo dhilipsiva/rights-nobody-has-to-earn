@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $scientific_reviewer with $funder.
+? complete(ECFusedR0V66, ECStrictAllAnimalResearchTest, ECFusedR0V77).
+# => FALSE
+# Fuse $scientific_reviewer with $investigator.
+? complete(ECFusedR1V66, ECStrictAllAnimalResearchTest, ECFusedR1V77).
+# => FALSE
+# Fuse $scientific_reviewer with $operator.
+? complete(ECFusedR2V66, ECStrictAllAnimalResearchTest, ECFusedR2V77).
+# => FALSE
+# Fuse $scientific_reviewer with $review.
+? complete(ECFusedR3V66, ECStrictAllAnimalResearchTest, ECFusedR3V77).
+# => FALSE

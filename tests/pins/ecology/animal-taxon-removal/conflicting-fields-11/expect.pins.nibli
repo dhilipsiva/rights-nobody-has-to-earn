@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? narrow(ECConflictSharedV26, ECConflictSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+? related(ECConflictF0Record, ECRecordAmbiguity).
+# => TRUE
+? narrow(ECConflictSharedV26, ECConflictSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+? related(ECConflictF1Record, ECRecordAmbiguity).
+# => TRUE
+? narrow(ECConflictSharedV26, ECConflictSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+? related(ECConflictF2Record, ECRecordAmbiguity).
+# => TRUE
+? narrow(ECConflictSharedV26, ECConflictSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+? related(ECConflictF3Record, ECRecordAmbiguity).
+# => TRUE

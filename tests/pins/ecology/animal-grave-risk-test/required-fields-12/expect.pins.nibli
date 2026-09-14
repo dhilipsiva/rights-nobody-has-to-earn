@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? complete(ECOmitF0Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $nonlethal_options, ECFeasibleNonlethalAnimalControlEvidenceScope).
+? complete(ECOmitF1Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? complete(ECOmitF2Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECDependencyAnimalCoveragePlaceScope).
+? complete(ECOmitF3Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? complete(ECOmitF4Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECAffectedPopulationScope).
+? complete(ECOmitF5Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECDependencyAnimalCoverageAffectedPopulationScope).
+? complete(ECOmitF6Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reader, ECChallengeReaderScope).
+? complete(ECOmitF7Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE

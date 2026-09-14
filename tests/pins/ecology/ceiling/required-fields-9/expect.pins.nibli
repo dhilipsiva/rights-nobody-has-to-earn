@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECEqualOrStrongerProtectionThanReviewedScientificMinimum, ECScientificMinimumScope).
+? complete(ECOmitF0Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF1Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECMonitoringDisclosureCorrectionChallengeAndRepair, ECMonitoringAndRepairScope).
+? complete(ECOmitF2Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoBudgetEmergencyCorporateOrJurisdictionalDerogation, ECNoDerogationScope).
+? complete(ECOmitF3Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF4Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCompensatingOneAxisWithAnother, ECAxisSeparationScope).
+? complete(ECOmitF5Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF6Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF7Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE

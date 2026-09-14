@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $measure, ECResidualMeasureScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECAffectedPopulationScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $project, ECProposedActivityScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reader, ECChallengeReaderScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $reason, ECPublicReasonsScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF7Record).
+# => FALSE

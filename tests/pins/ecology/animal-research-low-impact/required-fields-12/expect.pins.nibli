@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $reason, ECPublicReasonsScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $remedy, ECRemedyRouteScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $revision, ECRevisionScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $revision, ECSelectedRevisionScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECDependencyAnimalResearchTestLegalScopeScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECLegalScopeScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $start, ECStartScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyAnimalResearchTestSubjectScope).
+? permits(ECOmitSharedV76, ECOnlyStrictLowImpactAnimalResearchTestingOrEducation, ECOmitF7Record).
+# => FALSE

@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECNoiseV17, ECIndependentEcologicalAnimalEndFinding, ECNoiseV24).
+# => TRUE
+? obliged(ECNoiseV15, ECReadExactFindingStopAffectedRelianceAndObtainIndependentRemedy, ECNoiseV17).
+# => TRUE
+? obliged(ECNoiseV0, ECPreserveUrgentHumanAndAnimalCareAndIndependentChallengeDuringRecordFailure, ECNoiseV17).
+# => TRUE
+? obliged(ECNoiseV1, ECAuditAffectedRelianceLawfulHistoryAndNonRepetitionWithoutAssumingExecution, ECNoiseV17).
+# => TRUE
+? related(ECNoiseV17, ECRecordAmbiguity).
+# => FALSE

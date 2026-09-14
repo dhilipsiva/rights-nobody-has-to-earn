@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $ceiling_operator, ECDependencyCeilingActorScope).
+? complete(ECOmitF0Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_record, ECDependencyCeilingRecordScope).
+? complete(ECOmitF1Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_review, ECDependencyCeilingReviewerScope).
+? complete(ECOmitF2Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_revision, ECDependencyCeilingRevisionScope).
+? complete(ECOmitF3Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_source, ECDependencyCeilingWriterScope).
+? complete(ECOmitF4Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_start, ECDependencyCeilingStartScope).
+? complete(ECOmitF5Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_window, ECDependencyCeilingWindowScope).
+? complete(ECOmitF6Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF7Record, ECReviewedAxisCompliance, ECOmitSharedV90).
+# => FALSE

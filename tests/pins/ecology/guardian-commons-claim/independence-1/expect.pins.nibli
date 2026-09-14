@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $auditor with $subject.
+? complete(ECFusedR0V161, ECGuardianCommonsClaim, ECFusedR0V168).
+# => FALSE
+# Fuse $reader with $alternate.
+? complete(ECFusedR1V161, ECGuardianCommonsClaim, ECFusedR1V168).
+# => FALSE
+# Fuse $reader with $auditor.
+? complete(ECFusedR2V161, ECGuardianCommonsClaim, ECFusedR2V168).
+# => FALSE
+# Fuse $reader with $operator.
+? complete(ECFusedR3V161, ECGuardianCommonsClaim, ECFusedR3V168).
+# => FALSE

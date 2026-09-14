@@ -66,6 +66,15 @@ only when later pins intentionally depend on the accepted statement. Keep
 a known flaw. Do not replace an unexpected verdict with `UNKNOWN` merely to
 make a test pass.
 
+Several cases may list the same fixture file first, followed by their own
+remaining evidence. Consecutive cases with the same exact base, edits and scan
+policy can share that prefix's in-process preparation. Each still gets an
+isolated snapshot, executes every pin with its own shell permissions and scans
+its resulting model. Shared fixtures add supplied facts to the actual source;
+they neither weaken constitutional rules nor cache test results. The ecological
+generator factors identical evidence this way and uses short, case-scoped
+fixture identities; semantic field names and every expectation remain explicit.
+
 `allow_shell: true` explicitly permits that case's `:require` commands. These
 execute real shell commands with the verifier user's permissions; reserve them
 for reviewed repository preconditions, and do not enable them for untrusted

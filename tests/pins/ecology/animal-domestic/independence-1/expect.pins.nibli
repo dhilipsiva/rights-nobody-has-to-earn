@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $auditor with $controller.
+? complete(ECFusedR0V63, ECDomesticAnimalProtection, ECFusedR0V70).
+# => FALSE
+# Fuse $auditor with $operator.
+? complete(ECFusedR1V63, ECDomesticAnimalProtection, ECFusedR1V70).
+# => FALSE
+# Fuse $auditor with $subject.
+? complete(ECFusedR2V63, ECDomesticAnimalProtection, ECFusedR2V70).
+# => FALSE
+# Fuse $reader with $alternate.
+? complete(ECFusedR3V63, ECDomesticAnimalProtection, ECFusedR3V70).
+# => FALSE

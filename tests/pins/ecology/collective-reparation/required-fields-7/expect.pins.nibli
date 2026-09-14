@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF0Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF1Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSeparateCollectiveEnvironmentalReparation, ECKindScope).
+? complete(ECOmitF2Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSeparateCollectiveEnvironmentalReparationTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF3Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF4Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF5Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF6Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF7Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE

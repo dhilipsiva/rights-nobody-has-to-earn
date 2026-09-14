@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_record, ECDependencyAnimalGraveRiskTestRecordScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_review, ECDependencyAnimalGraveRiskTestReviewerScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_revision, ECDependencyAnimalGraveRiskTestRevisionScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_source, ECDependencyAnimalGraveRiskTestWriterScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_start, ECDependencyAnimalGraveRiskTestStartScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_grave_risk_test_window, ECDependencyAnimalGraveRiskTestWindowScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $auditor, ECAuditReaderScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECCaseScope).
+? permits(ECOmitSharedV50, ECOnlyLowImpactNonlethalAnimalRiskResponse, ECOmitF7Record).
+# => FALSE

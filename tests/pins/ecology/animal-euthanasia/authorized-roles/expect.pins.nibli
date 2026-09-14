@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? permits(ECUnauthSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECUnauth0Record).
+# => FALSE
+? permits(ECUnauthSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECUnauth1Record).
+# => FALSE
+? permits(ECUnauthSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECUnauth2Record).
+# => FALSE
+? permits(ECUnauthSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECUnauth3Record).
+# => FALSE
+? permits(ECUnauthSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECUnauth4Record).
+# => FALSE
+? permits(ECUnauthSharedV72, ECOnlyQualifiedLeastDistressingEuthanasia, ECUnauth5Record).
+# => FALSE

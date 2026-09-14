@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_end, ECDependencySubstituteReviewerAppointmentEndScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_evaluation, ECDependencySubstituteReviewerAppointmentEvaluationScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_evidence_record, ECDependencySubstituteReviewerAppointmentEvidenceRecordScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_evidence_version, ECDependencySubstituteReviewerAppointmentEvidenceVersionScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_method, ECDependencySubstituteReviewerAppointmentMethodVersionScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_operator, ECDependencySubstituteReviewerAppointmentActorScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_place, ECDependencySubstituteReviewerAppointmentPlaceScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_population, ECDependencySubstituteReviewerAppointmentAffectedPopulationScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE

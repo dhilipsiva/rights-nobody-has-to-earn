@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF0Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF1Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF2Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF3Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $end, ECEndScope).
+? complete(ECOmitF4Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evaluation, ECFreshEvaluationScope).
+? complete(ECOmitF5Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_record, ECEvidenceRecordScope).
+? complete(ECOmitF6Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_version, ECEvidenceVersionScope).
+? complete(ECOmitF7Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE

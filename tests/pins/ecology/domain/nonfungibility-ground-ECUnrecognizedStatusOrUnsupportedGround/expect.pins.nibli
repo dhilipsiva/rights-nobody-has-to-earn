@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECDomainChoiceV20, ECNonfungibleProtectionFinding, ECDomainChoiceV27).
+# => FALSE
+? oppose(ECDomainChoiceV5, ECDomainChoiceV17, ECHabitatAxis).
+# => FALSE
+? prevents(ECDomainChoiceV17, ECOffsetAsPermissionForNonfungibleHarm).
+# => FALSE
+? obliged(ECDomainChoiceV14, ECAvoidStopAndRepairNonfungibleHarm, ECDomainChoiceV20).
+# => FALSE

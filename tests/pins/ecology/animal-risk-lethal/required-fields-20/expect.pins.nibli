@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECNoOwnershipSectorLicenceContractTraditionReligionOrCultureExemption, ECNoAnimalCoreExemptionScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF5Record).
+# => FALSE

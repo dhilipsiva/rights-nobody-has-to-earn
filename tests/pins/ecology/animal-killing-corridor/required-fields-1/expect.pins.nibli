@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $effect_reviewer, ECExactAmendmentEffectReviewerScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $effects, ECExactAmendmentEffectReviewScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $end, ECEndScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evaluation, ECFreshEvaluationScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_record, ECEvidenceRecordScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_version, ECEvidenceVersionScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECJurisdictionScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $method, ECMethodVersionScope).
+? contradict(ECOmitSharedV1, AmendmentSourceAuthorization).
+# => FALSE

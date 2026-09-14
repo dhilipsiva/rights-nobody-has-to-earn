@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $auditor.
+? complete(ECFusedR0V62, ECWorkingAnimalCareAndExit, ECFusedR0V69).
+# => FALSE
+# Fuse $alternate with $controller.
+? complete(ECFusedR1V62, ECWorkingAnimalCareAndExit, ECFusedR1V69).
+# => FALSE
+# Fuse $alternate with $operator.
+? complete(ECFusedR2V62, ECWorkingAnimalCareAndExit, ECFusedR2V69).
+# => FALSE
+# Fuse $alternate with $subject.
+? complete(ECFusedR3V62, ECWorkingAnimalCareAndExit, ECFusedR3V69).
+# => FALSE

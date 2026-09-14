@@ -36,7 +36,19 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 31
+# Ecological lifecycle, history, corridor and animal-remedy cases separately
+# check exact withdrawal, independently evidenced nonresponse, ended-window
+# reuse, past truth without current authority and actual court dependencies.
+# This direct urgent-care request deliberately has no owner, taxon or official
+# record. It creates a duty, not personhood or proof that a rescue occurred.
+:expect-pins 33
+
+challenge(ECReaderHelper, ECReaderAnimal, ECReaderUrgentRequest).
+observe(ECReaderHelper, ECReaderUrgentRequest, ECUrgentPlausibleAnimalProtectionRequest, ECRequestKindScope).
+? obliged(State, ECProvidePromptSafeAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECReaderUrgentRequest).
+# => TRUE
+? person(ECReaderAnimal).
+# => FALSE
 
 # The source-bound finding/action contract consumes the older underfilled duty
 # only after the supplied initial-finding standard and its other typed evidence

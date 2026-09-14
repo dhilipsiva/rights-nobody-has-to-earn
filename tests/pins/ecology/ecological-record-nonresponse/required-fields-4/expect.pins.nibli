@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECIndependentEcologicalAnimalNonresponse, ECKindScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentEcologicalAnimalNonresponseTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoSilenceApprovalAutomaticStayNewAuthorityIndefiniteHoldOrCareSuspension, ECNonresponseLimitsScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveIndependentFindingDeadlinePassedWithoutRequiredResponse, ECNonresponseFindingScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPredeclaredUninvolvedAlternateAccessActionAndCourtEscalation, ECNonresponseAlternateRouteScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE

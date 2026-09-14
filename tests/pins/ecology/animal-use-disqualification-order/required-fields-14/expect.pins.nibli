@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAnimalUseDisqualificationOrder, ECKindScope).
+? complete(ECOmitF0Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalUseDisqualificationOrderTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF1Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECApplyExactReviewableAnimalUseDisqualification, ECAnimalRemedyActionScope).
+? complete(ECOmitF2Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentAdjudicatedAnimalInterestInjuryOrUrgentPlausibleProtectionBasis, ECAnimalRemedyBasisScope).
+? complete(ECOmitF3Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF4Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndividualizedAnimalUseRestrictionNotHumanStandingFloorVoteOrUnrelatedPrivateLifeLoss, ECAnimalRemedySpecificBoundaryScope).
+? complete(ECOmitF5Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNecessaryProportionateParticularOrderWithHumanRightsNoticeReviewAndAppeal, ECAnimalRemedyProcedureScope).
+? complete(ECOmitF6Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF7Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE

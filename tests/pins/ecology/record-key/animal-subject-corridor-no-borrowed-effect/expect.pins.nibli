@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? contradict(ECExactEffectV1, AmendmentSourceAuthorization).
+# => TRUE
+? obliged(ECExactEffectV20, ECRefuseAnimalCoreCandidateAndSecureIndependentCourtChallenge, ECExactEffectV1).
+# => TRUE
+? obliged(ECExactEffectV16, ECPreserveDirectAnimalProtectionExistingHumanRightsCareAndLawfulAmendmentHistory, ECExactEffectV22).
+# => TRUE
+? obliged(ECExactEffectV16, ECPreserveDirectAnimalProtectionExistingHumanRightsCareAndLawfulAmendmentHistory, ECUnqualifiedEffectRecord).
+# => FALSE

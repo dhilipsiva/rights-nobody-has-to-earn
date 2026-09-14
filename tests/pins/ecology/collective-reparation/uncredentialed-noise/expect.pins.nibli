@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECNoiseV38, ECSeparateCollectiveEnvironmentalReparation, ECNoiseV46).
+# => TRUE
+? obliged(ECNoiseV31, ECProvideSeparatelyAdjudicatedCollectiveReparation, ECNoiseV38).
+# => TRUE
+? prevents(ECNoiseV38, ECReparationAsConsentTitleTransferOrEcologicalRepairSubstitute).
+# => TRUE
+? related(ECNoiseV38, ECRecordAmbiguity).
+# => FALSE

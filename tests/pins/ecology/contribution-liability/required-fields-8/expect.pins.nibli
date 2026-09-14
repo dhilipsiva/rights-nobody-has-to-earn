@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF0Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $basis, ECContributionOrControlGroundScope).
+? complete(ECOmitF1Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF2Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECExternalCourtCaseScope).
+? complete(ECOmitF3Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF4Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF5Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $costs, ECReasonableResponseCostsScope).
+? complete(ECOmitF6Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $end, ECEndScope).
+? complete(ECOmitF7Record, ECContributionOrControlLiability, ECOmitSharedV47).
+# => FALSE

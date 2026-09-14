@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECAnimalCustodyByProtectedInterestsHumanDueProcessAndCareContinuityNotHumanDetention, ECAnimalRemedySpecificBoundaryScope).
+? complete(ECOmitF0Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAnimalCustodyOrder, ECKindScope).
+? complete(ECOmitF1Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAnimalCustodyOrderTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF2Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECArrangeExactRightsBoundedAnimalCustody, ECAnimalRemedyActionScope).
+? complete(ECOmitF3Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentAdjudicatedAnimalInterestInjuryOrUrgentPlausibleProtectionBasis, ECAnimalRemedyBasisScope).
+? complete(ECOmitF4Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF5Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNecessaryProportionateParticularOrderWithHumanRightsNoticeReviewAndAppeal, ECAnimalRemedyProcedureScope).
+? complete(ECOmitF6Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF7Record, ECAnimalCustodyOrder, ECOmitSharedV46).
+# => FALSE

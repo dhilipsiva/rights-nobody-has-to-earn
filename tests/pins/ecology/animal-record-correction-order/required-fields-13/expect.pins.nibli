@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? complete(ECOmitF0Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF1Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF2Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECExternalAnimalCourtVersionScope).
+? complete(ECOmitF3Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? complete(ECOmitF4Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class4ExactAnimalRemedyOrder, ECDirectEffectClassScope).
+? complete(ECOmitF5Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF6Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalCareAndAffectedHumanStandingFloorLibertyEqualVoiceAndCollectiveRightsPreserved, ECAnimalRemedyContinuityScope).
+? complete(ECOmitF7Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE

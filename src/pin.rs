@@ -145,57 +145,15 @@ pub(crate) struct FileOutput {
     pub(crate) elapsed_ms: u64,
 }
 
-/// A compiled knowledge-base snapshot reusable across independent pin suites.
-///
-/// The verifier owns one of these for the live constitution. Structural
-/// checkers can therefore share the same parsed and materialised base instead
-/// of paying the dominant fixture-load cost at every call boundary.
-pub(crate) struct PreparedPinEngine {
-    base: PreparedBase,
+/// A borrowed immutable prefix. Child cases use their own fresh snapshots.
+pub(crate) struct PinCaseGroup<'a> {
+    engine: &'a CoreSession,
+    knowledge_base: &'a KnowledgeBase,
+    harness: &'a [String],
+    scanned: &'a Cell<bool>,
 }
 
-impl PreparedPinEngine {
-    pub(crate) fn new_cached(
-        knowledge_bases: &[LoadedSource<'_>],
-        cancellation: Arc<AtomicBool>,
-        compiled: &CompiledSource,
-    ) -> Self {
-        Self {
-            base: PreparedBase::batch(knowledge_bases, Some(cancellation), Some(compiled)),
-        }
-    }
-
-    pub(crate) fn new(knowledge_bases: &[LoadedSource<'_>]) -> Self {
-        Self {
-            base: PreparedBase::new(knowledge_bases),
-        }
-    }
-
-    /// Prepare an engine whose fixture load, snapshots, and queries all share
-    /// one cooperative cancellation flag.
-    pub(crate) fn new_cancellable(
-        knowledge_bases: &[LoadedSource<'_>],
-        cancellation: Arc<AtomicBool>,
-    ) -> Self {
-        Self {
-            base: PreparedBase::new_cancellable(knowledge_bases, cancellation),
-        }
-    }
-
-    /// Replace the cooperative flag before reusing this worker-local base for
-    /// another independent job. Every snapshot cloned for that job inherits it.
-    pub(crate) fn set_cancel_flag(&self, cancellation: Arc<AtomicBool>) {
-        self.base.engine.kb().set_cancel_flag(cancellation);
-    }
-
-    pub(crate) fn run_files(
-        &self,
-        pin_files: &[LoadedSource<'_>],
-        options: PinOptions<'_>,
-    ) -> RunOutput {
-        run_prepared_pin_files(&self.base, pin_files, options)
-    }
-
+impl PinCaseGroup<'_> {
     /// Execute one independent scenario without accumulating unrelated cases.
     /// Its fixture facts are asserted before its ordinary sequential pin steps.
     pub(crate) fn run_case(
@@ -205,16 +163,16 @@ impl PreparedPinEngine {
         options: PinOptions<'_>,
         scan: bool,
     ) -> RunOutput {
-        if !self.base.harness.is_empty() {
-            return strata_harness_output(self.base.harness.clone());
+        if !self.harness.is_empty() {
+            return strata_harness_output(self.harness.to_vec());
         }
-        if scan && !self.base.scanned.get() {
+        if scan && !self.scanned.get() {
             let mut report = Report::default();
-            scan_contradictions(self.base.engine.kb(), "knowledge base", &mut report);
+            scan_contradictions(self.knowledge_base, "knowledge base", &mut report);
             if !report.findings.is_empty() || !report.harness.is_empty() {
                 return finish_run(report, String::new());
             }
-            self.base.scanned.set(true);
+            self.scanned.set(true);
         }
         if pin_files.is_empty() {
             return harness_only("case has no pin files");
@@ -225,7 +183,7 @@ impl PreparedPinEngine {
                 let run = |kb: &KnowledgeBase| {
                     let started = Instant::now();
                     let view = EngineView {
-                        compiler: &self.base.engine,
+                        compiler: self.engine,
                         knowledge_base: kb,
                     };
                     let mut setup = Report::default();
@@ -281,7 +239,7 @@ impl PreparedPinEngine {
                     }
                     #[cfg(test)]
                     drop(fixture_timer);
-                    let mut report = run_file_with_engine(pin_file, &self.base.engine, kb, options);
+                    let mut report = run_file_with_engine(pin_file, self.engine, kb, options);
                     if scan
                         && report.harness.is_empty()
                         && (!fixtures.is_empty() || pin_file_can_assert(pin_file.source))
@@ -293,7 +251,7 @@ impl PreparedPinEngine {
                     report
                 };
                 if fixtures.is_empty() && !pin_file_can_assert(pin_file.source) {
-                    run(self.base.engine.kb())
+                    run(self.knowledge_base)
                 } else {
                     #[cfg(test)]
                     let snapshot_started = Instant::now();
@@ -306,9 +264,7 @@ impl PreparedPinEngine {
                         );
                         run(kb)
                     };
-                    self.base
-                        .engine
-                        .kb()
+                    self.knowledge_base
                         .with_assumptions(&[], run)
                         .unwrap_or_else(|error| Report {
                             harness: vec![format!(
@@ -321,6 +277,137 @@ impl PreparedPinEngine {
             })
             .collect();
         finish_file_reports(pin_files, reports)
+    }
+}
+
+/// A compiled knowledge-base snapshot reusable across independent pin suites.
+///
+/// The verifier owns one of these for the live constitution. Structural
+/// checkers can therefore share the same parsed and materialised base instead
+/// of paying the dominant fixture-load cost at every call boundary.
+pub(crate) struct PreparedPinEngine {
+    base: PreparedBase,
+}
+
+impl PreparedPinEngine {
+    pub(crate) fn new_cached(
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Arc<AtomicBool>,
+        compiled: &CompiledSource,
+    ) -> Self {
+        Self {
+            base: PreparedBase::batch(knowledge_bases, Some(cancellation), Some(compiled)),
+        }
+    }
+
+    pub(crate) fn new(knowledge_bases: &[LoadedSource<'_>]) -> Self {
+        Self {
+            base: PreparedBase::new(knowledge_bases),
+        }
+    }
+
+    /// Prepare an engine whose fixture load, snapshots, and queries all share
+    /// one cooperative cancellation flag.
+    pub(crate) fn new_cancellable(
+        knowledge_bases: &[LoadedSource<'_>],
+        cancellation: Arc<AtomicBool>,
+    ) -> Self {
+        Self {
+            base: PreparedBase::new_cancellable(knowledge_bases, cancellation),
+        }
+    }
+
+    /// Replace the cooperative flag before reusing this worker-local base for
+    /// another independent job. Every snapshot cloned for that job inherits it.
+    pub(crate) fn set_cancel_flag(&self, cancellation: Arc<AtomicBool>) {
+        self.base.engine.kb().set_cancel_flag(cancellation);
+    }
+
+    pub(crate) fn run_files(
+        &self,
+        pin_files: &[LoadedSource<'_>],
+        options: PinOptions<'_>,
+    ) -> RunOutput {
+        run_prepared_pin_files(&self.base, pin_files, options)
+    }
+
+    /// Execute a case without reusing any other case's mutable state.
+    pub(crate) fn run_case(
+        &self,
+        fixtures: &[LoadedSource<'_>],
+        pin_files: &[LoadedSource<'_>],
+        options: PinOptions<'_>,
+        scan: bool,
+    ) -> RunOutput {
+        PinCaseGroup {
+            engine: &self.base.engine,
+            knowledge_base: self.base.engine.kb(),
+            harness: &self.base.harness,
+            scanned: &self.base.scanned,
+        }
+        .run_case(fixtures, pin_files, options, scan)
+    }
+
+    /// Load an exact shared fixture prefix once. Each child keeps an isolated
+    /// snapshot, executes every pin and receives its requested final-state scan.
+    pub(crate) fn with_fixture_prefix<R>(
+        &self,
+        fixtures: &[LoadedSource<'_>],
+        scan: bool,
+        run: impl FnOnce(&PinCaseGroup<'_>) -> R,
+    ) -> Result<R, String> {
+        if !self.base.harness.is_empty() {
+            return Err(self.base.harness.join("\n"));
+        }
+        if scan && !self.base.scanned.get() {
+            let mut report = Report::default();
+            scan_contradictions(self.base.engine.kb(), "knowledge base", &mut report);
+            if !report.findings.is_empty() || !report.harness.is_empty() {
+                let failed = finish_run(report, String::new());
+                return Err(failed.stdout + &failed.stderr);
+            }
+            self.base.scanned.set(true);
+        }
+        self.base
+            .engine
+            .kb()
+            .with_assumptions(&[], |kb| {
+                let view = EngineView {
+                    compiler: &self.base.engine,
+                    knowledge_base: kb,
+                };
+                for fixture in fixtures {
+                    let statements: Vec<_> = fixture
+                        .source
+                        .lines()
+                        .map(str::trim)
+                        .filter(|line| !line.is_empty() && !line.starts_with('#'))
+                        .collect();
+                    if statements
+                        .iter()
+                        .any(|line| line.starts_with(':') || line.starts_with('?'))
+                    {
+                        return Err(format!(
+                            "{}: fixture contains a pin directive/query",
+                            fixture.display_name
+                        ));
+                    }
+                    view.assert_many(&statements).map_err(|error| {
+                        format!(
+                            "{}: shared fixture load failed: {error}",
+                            fixture.display_name
+                        )
+                    })?;
+                }
+                let scanned = Cell::new(false);
+                Ok(run(&PinCaseGroup {
+                    engine: &self.base.engine,
+                    knowledge_base: kb,
+                    harness: &[],
+                    scanned: &scanned,
+                }))
+            })
+            .map_err(|error| format!("cannot isolate shared fixture prefix: {error}"))?
     }
 
     /// Run pins against a line-oriented derivative of the prepared source.
@@ -1685,6 +1772,65 @@ mod tests {
 
     fn run(text: &str) -> RunOutput {
         run_pin_files(&[], &[source("t.pins.nibli", text)], PinOptions::default())
+    }
+
+    #[test]
+    fn shared_fixture_prefix_keeps_cases_files_scopes_and_parent_isolated() {
+        let prepared = PreparedPinEngine::new(&[source("base", "person(Ara).")]);
+        prepared.with_fixture_prefix(&[source("shared", "person(Bet).")], true, |group| {
+            let first = source("first", ":expect-pins 4\n? person(Bet).\n# => TRUE\n? person(Cia).\n# => TRUE\n:accept\nperson(Dee).\n? person(Dee).\n# => TRUE\n");
+            let second = source("second", ":expect-pins 2\n? person(Cia).\n# => TRUE\n? person(Dee).\n# => FALSE\n");
+            let result = group.run_case(&[source("delta", "person(Cia).")], &[first, second], PinOptions::default(), true);
+            assert_eq!(result.exit_code, EXIT_OK, "{}{}", result.stdout, result.stderr);
+            assert_eq!(result.pins, 6);
+            let next = source("next", ":expect-pins 5\n? person(Bet).\n# => TRUE\n? person(Cia).\n# => FALSE\n? person(Dee).\n# => FALSE\n:accept-scoped\nperson(Cia).\n? person(Cia).\n# => FALSE\n");
+            let result = group.run_case(&[], &[next], PinOptions::default(), true);
+            assert_eq!(result.exit_code, EXIT_OK, "{}{}", result.stdout, result.stderr);
+            let result = group.run_case(&[source("bad-delta", "~person(Bet).")], &[source("bad", ":expect-pins 1\n? person(Ara).\n# => TRUE\n")], PinOptions::default(), true);
+            assert_eq!(result.exit_code, EXIT_FINDING);
+            let result = group.run_case(&[], &[source("permission", ":expect-pins 1\n:require false\n")], PinOptions::default(), true);
+            assert_ne!(result.exit_code, EXIT_OK);
+        }).unwrap();
+        let result = prepared.run_case(&[], &[source("parent", ":expect-pins 3\n? person(Ara).\n# => TRUE\n? person(Bet).\n# => FALSE\n? person(Cia).\n# => FALSE\n")], PinOptions::default(), true);
+        assert_eq!(
+            result.exit_code, EXIT_OK,
+            "{}{}",
+            result.stdout, result.stderr
+        );
+    }
+
+    #[test]
+    fn shared_fixture_prefix_fails_on_bad_inputs_and_incomplete_scans() {
+        let prepared = PreparedPinEngine::new(&[source("base", "person(Ara).")]);
+        for text in [
+            "? person(Ara).",
+            ":require false",
+            "not a valid statement >>>",
+        ] {
+            assert!(
+                prepared
+                    .with_fixture_prefix(&[source("bad", text)], true, |_| ())
+                    .is_err()
+            );
+        }
+        prepared
+            .with_fixture_prefix(&[source("contradictory", "~person(Ara).")], true, |group| {
+                let result = group.run_case(
+                    &[],
+                    &[source("pin", ":expect-pins 1\n? person(Ara).\n# => TRUE\n")],
+                    PinOptions::default(),
+                    true,
+                );
+                assert_eq!(result.exit_code, EXIT_FINDING);
+            })
+            .unwrap();
+        let poisoned = PreparedPinEngine::new(&[source("base", "person(Ara).")]);
+        poisoned
+            .base
+            .engine
+            .kb()
+            .require_recovery("test incomplete source".into());
+        assert!(poisoned.with_fixture_prefix(&[], true, |_| ()).is_err());
     }
 
     #[test]

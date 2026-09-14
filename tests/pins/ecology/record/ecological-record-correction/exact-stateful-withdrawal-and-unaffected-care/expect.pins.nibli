@@ -1,0 +1,46 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 22
+? permits(ECLifecycleTargetV49, ECOnlyOrdinaryLowHarmAnimalUse, ECLifecycleTargetV62).
+# => TRUE
+? complete(ECLifecycleFindingV17, ECIndependentEcologicalAnimalCorrection, ECLifecycleTargetV69).
+# => FALSE
+? contradict(ECLifecycleTargetV62, ECLifecycleTargetV65, ECRecordReliance).
+# => FALSE
+:accept
+authorized(ECLifecycleFindingV21, ECIndependentReviewAuthority, ECLifecycleFindingV17).
+? complete(ECLifecycleFindingV17, ECIndependentEcologicalAnimalCorrection, ECLifecycleTargetV69).
+# => TRUE
+? obliged(ECLifecycleFindingV15, ECReadExactFindingStopAffectedRelianceAndObtainIndependentRemedy, ECLifecycleFindingV17).
+# => TRUE
+? obliged(ECLifecycleFindingV0, ECPreserveUrgentHumanAndAnimalCareAndIndependentChallengeDuringRecordFailure, ECLifecycleFindingV17).
+# => TRUE
+? obliged(ECLifecycleFindingV1, ECAuditAffectedRelianceLawfulHistoryAndNonRepetitionWithoutAssumingExecution, ECLifecycleFindingV17).
+# => TRUE
+? prevents(ECLifecycleFindingV19, ECCorrectionAsAutomaticRenewedAuthority).
+# => TRUE
+? contradict(ECLifecycleTargetV62, ECLifecycleTargetV65, ECRecordReliance).
+# => TRUE
+? permits(ECLifecycleTargetV49, ECOnlyOrdinaryLowHarmAnimalUse, ECLifecycleTargetV62).
+# => FALSE
+? permits(ECLifecycleUnaffectedV49, ECOnlyOrdinaryLowHarmAnimalUse, ECLifecycleUnaffectedV62).
+# => TRUE
+? obliged(State, ECProvidePromptSafeAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECUrgentPlausibleAnimalProtectionRequestExample).
+# => TRUE
+? permits(ECUrgentRequester, ECSearchOrSeizure, ECUrgentPlausibleAnimalProtectionRequestExample).
+# => FALSE
+? capture(ECUrgentUnidentifiedSubject).
+# => FALSE
+? prisoner(ECUrgentUnidentifiedSubject).
+# => FALSE
+? person(ECUrgentUnidentifiedSubject).
+# => FALSE
+? obliged(State, ECProvidePromptNoFaultEnvironmentalProtectionAndHumanAnimalContinuityBeforeRecordReconciliation, ECUrgentEnvironmentalProtectionRequestExample).
+# => TRUE
+? permits(ECUrgentRequester, ECSearchOrSeizure, ECUrgentEnvironmentalProtectionRequestExample).
+# => FALSE
+? capture(ECUrgentUnidentifiedSubject).
+# => FALSE
+? prisoner(ECUrgentUnidentifiedSubject).
+# => FALSE
+? person(ECUrgentUnidentifiedSubject).
+# => FALSE

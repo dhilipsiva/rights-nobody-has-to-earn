@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: CC0-1.0
+authorized(ECFusedR0V12, ECCaseScopedActor, ECFusedR0V17).
+authorized(ECFusedR1V1, ECAuditReaderAuthority, ECFusedR1V17).
+authorized(ECFusedR1V12, ECCaseScopedActor, ECFusedR1V17).
+authorized(ECFusedR2V1, ECAuditReaderAuthority, ECFusedR2V17).
+authorized(ECFusedR2V12, ECCaseScopedActor, ECFusedR2V17).
+authorized(ECFusedR3V0, ECAlternateReaderAuthority, ECFusedR3V17).
+authorized(ECFusedR3V12, ECCaseScopedActor, ECFusedR3V17).
+challenge(ECFusedR0V21, ECFusedR0V28, ECFusedR0V19).
+challenge(ECFusedR3V21, ECFusedR3V28, ECFusedR3V19).
+observe(ECFusedR0V21, ECFusedR0V19, ECFusedR0V2, ECCaseScope).
+observe(ECFusedR0V21, ECFusedR0V19, ECFusedR0V28, ECAffectedRecordScope).
+observe(ECFusedR3V21, ECFusedR3V19, ECFusedR3V2, ECCaseScope).
+observe(ECFusedR3V21, ECFusedR3V19, ECFusedR3V28, ECAffectedRecordScope).

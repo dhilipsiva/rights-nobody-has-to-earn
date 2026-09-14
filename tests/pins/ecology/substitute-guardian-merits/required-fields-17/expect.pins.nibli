@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $subject, ECExternalCourtSubjectScope).
+? complete(ECOmitF0Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? complete(ECOmitF1Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer, ECAssignedIndependentReviewerScope).
+? complete(ECOmitF2Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_function_end, ECDependencySubstituteReviewerFunctionEndScope).
+? complete(ECOmitF3Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_function_evaluation, ECDependencySubstituteReviewerFunctionEvaluationScope).
+? complete(ECOmitF4Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_function_evidence_record, ECDependencySubstituteReviewerFunctionEvidenceRecordScope).
+? complete(ECOmitF5Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_function_evidence_version, ECDependencySubstituteReviewerFunctionEvidenceVersionScope).
+? complete(ECOmitF6Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_function_method, ECDependencySubstituteReviewerFunctionMethodVersionScope).
+? complete(ECOmitF7Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE

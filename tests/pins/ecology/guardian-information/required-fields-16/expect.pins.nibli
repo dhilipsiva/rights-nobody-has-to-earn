@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECExamineWhetherDecisionsWereReceivedAndActedOnWithoutAssumingSuccess, ECExecutionEvidenceBoundaryScope).
+? complete(ECOmitF0Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianInformationFunction, ECKindScope).
+? complete(ECOmitF1Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianInformationFunctionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF2Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF3Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyReviewableCommissionedEvidenceNotScientificOracle, ECCommissionedEvidenceScope).
+? complete(ECOmitF4Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECMissingUnconfirmedOrFailedOperationRemainsUnestablishedOrFailure, ECNoInventedOperationScope).
+? complete(ECOmitF5Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNecessaryProportionateMinimizedLawfulDisclosureAndIndependentAccess, ECInformationNecessityScope).
+? complete(ECOmitF6Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF7Record, ECGuardianInformationFunction, ECOmitSharedV172).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $population, ECDependencyAirAffectedPopulationScope).
+? complete(ECOmitF0Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyBiodiversityAffectedPopulationScope).
+? complete(ECOmitF1Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyClimateAffectedPopulationScope).
+? complete(ECOmitF2Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyExtractionAffectedPopulationScope).
+? complete(ECOmitF3Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyHabitatAffectedPopulationScope).
+? complete(ECOmitF4Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencySoilAffectedPopulationScope).
+? complete(ECOmitF5Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyWasteAffectedPopulationScope).
+? complete(ECOmitF6Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyWaterAffectedPopulationScope).
+? complete(ECOmitF7Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE

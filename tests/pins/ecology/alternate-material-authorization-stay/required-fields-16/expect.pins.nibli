@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $guardian_merits_evaluation, ECDependencyGuardianMeritsEvaluationScope).
+? interrupt(FSBOD_31, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_evidence_record, ECDependencyGuardianMeritsEvidenceRecordScope).
+? interrupt(FSBOD_31, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_method, ECDependencyGuardianMeritsMethodVersionScope).
+? interrupt(FSBOD_31, ECOmitF2Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_operator, ECDependencyGuardianMeritsActorScope).
+? interrupt(FSBOD_31, ECOmitF3Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_review, ECDependencyGuardianMeritsReviewerScope).
+? interrupt(FSBOD_31, ECOmitF4Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_revision, ECDependencyGuardianMeritsRevisionScope).
+? interrupt(FSBOD_31, ECOmitF5Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_source, ECDependencyGuardianMeritsWriterScope).
+? interrupt(FSBOD_31, ECOmitF6Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_merits_start, ECDependencyGuardianMeritsStartScope).
+? interrupt(FSBOD_31, ECOmitF7Record, ECGuardianAutomaticStay).
+# => FALSE

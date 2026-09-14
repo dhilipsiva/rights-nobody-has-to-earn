@@ -2,6 +2,15 @@
 
 # Book 1 Constitutional Taxonomy
 
+The verified case-level implementation (2026-09-14) is recorded in
+[Environmental rights, commons and direct animal protection](book-1-ecological-and-animal-protection-contract.md).
+It supplies separate Class 3 human environmental, Class 9 commons and Class 10
+animal-interest contracts, with their process, duty, record and jurisdiction
+companions. No new floor item, human animal-status category or omnibus
+environmental verdict is introduced. The historical ratification/absence
+descriptions below remain historical. The contract records the complete
+77,902-pin run, its bounded meaning and the unmet five-minute target.
+
 > **Status: author-ratified (2026-08-03); broader implementation remains Phase
 > 2.** This classifies the constitutional work the ratified mandate requires. It
 > does not itself add a right, power, predicate, or delivery route; it records

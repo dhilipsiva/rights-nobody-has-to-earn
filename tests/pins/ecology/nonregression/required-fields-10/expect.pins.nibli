@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $ceiling_revision, ECDependencyCeilingRevisionScope).
+? complete(ECOmitF0Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_source, ECDependencyCeilingWriterScope).
+? complete(ECOmitF1Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_start, ECDependencyCeilingStartScope).
+? complete(ECOmitF2Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_window, ECDependencyCeilingWindowScope).
+? complete(ECOmitF3Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF4Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $comparison, ECOutcomeComparisonEvidenceScope).
+? complete(ECOmitF5Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $condition, ECProtectedConditionScope).
+? complete(ECOmitF6Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF7Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE

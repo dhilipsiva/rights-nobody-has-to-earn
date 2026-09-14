@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $external_court_source, ECExternalCourtSourceScope).
+? interrupt(FSBOD_17, ECOmitF0Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_court_temporal, ECExternalCourtTemporalScope).
+? interrupt(FSBOD_17, ECOmitF1Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_court_temporal_record, ECExternalCourtTemporalRecordScope).
+? interrupt(FSBOD_17, ECOmitF2Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_court_temporal_review, ECExternalCourtTemporalReviewScope).
+? interrupt(FSBOD_17, ECOmitF3Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $irreversible_part, ECIrreversiblePartScope).
+? interrupt(FSBOD_17, ECOmitF4Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $judicial_direction, ECExactJudicialInterimDirectionScope).
+? interrupt(FSBOD_17, ECOmitF5Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECDependencyAssociationCommonsClaimJurisdictionScope).
+? interrupt(FSBOD_17, ECOmitF6Record, ECJudicialInterimStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECExternalCourtJurisdictionScope).
+? interrupt(FSBOD_17, ECOmitF7Record, ECJudicialInterimStay).
+# => FALSE

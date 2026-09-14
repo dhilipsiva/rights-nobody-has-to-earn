@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECNoiseV40, ECUnequalEnvironmentalExposure, ECNoiseV47).
+# => TRUE
+? obliged(ECNoiseV38, ECUseExistingSubstantiveEqualityProtectionAndRemedy, ECNoiseV40).
+# => TRUE
+? prevents(ECNoiseV40, ECDiagnosticExposureAsIndividualWorthOrEligibility).
+# => TRUE
+? related(ECNoiseV40, ECRecordAmbiguity).
+# => FALSE

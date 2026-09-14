@@ -226,6 +226,30 @@ identify the affected protective act in that case. Care, access, evidence
 preservation and protection against retaliation do not wait for those formal
 conclusions, and none of them proves that an institution acted.
 
+Environmental and animal findings keep their own version, place, jurisdiction,
+scope, writer, independent review, reasons, privacy, challenge, correction,
+alternate, audit, continuity, remedy and end. Conflicting decisive values
+withhold reliance; uncredentialed noise does not veto a sound record.
+An independently established defect reaches a named reader even when the
+original actor withholds its record. Missing papers cannot suspend urgent
+human protection or animal care.
+
+An ended window cannot be reused by renaming a permit. A correction does not
+renew harmful authority: the replacement needs its own complete current
+basis. Preserving a past court disposition for replay control is different
+from continuing that court order's legal force. Positive evidence of a missed
+response deadline transfers the unanswered duty to an independent alternate;
+silence supplies no approval.
+
+Animal remedies remain particular: licence review, rescue, custody, rehoming,
+cessation, veterinary care, rehabilitation, sanctuary, proportionate use
+restrictions, record correction, care-cost restitution, structural correction,
+monitoring, habitat repair and prevention of repetition each need their own
+lawful basis and scope. An advocacy claim is not one of those orders. An
+inspection permission is not a general power to enter, search or seize.
+Human responsibility still requires its actual court, assistance, defence
+and appeal safeguards, without turning an animal into an offender.
+
 And then nobody has necessarily acted. A formal action duty is not a performed
 review. A receipt conclusion does not authenticate its writer or prove the service
 system operated. A non-response conclusion is not an escalation received. Continuity

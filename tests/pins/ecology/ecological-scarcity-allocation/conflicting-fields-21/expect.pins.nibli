@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECConflictF0Record).
+# => FALSE
+? related(ECConflictF0Record, ECRecordAmbiguity).
+# => TRUE
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECConflictF1Record).
+# => FALSE
+? related(ECConflictF1Record, ECRecordAmbiguity).
+# => TRUE
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECConflictF2Record).
+# => FALSE
+? related(ECConflictF2Record, ECRecordAmbiguity).
+# => TRUE
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECConflictF3Record).
+# => FALSE
+? related(ECConflictF3Record, ECRecordAmbiguity).
+# => TRUE

@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+# Fuse $source with $subject.
+? complete(ECFusedR0V67, ECEnhancedAnimalUseTest, ECFusedR0V74).
+# => FALSE
+# Fuse $subject with $controller.
+? complete(ECFusedR1V67, ECEnhancedAnimalUseTest, ECFusedR1V50).
+# => FALSE

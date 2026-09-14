@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_record, ECDependencyAnimalAdvocateResultRecordScope).
+? complete(ECOmitF0Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_review, ECDependencyAnimalAdvocateResultReviewerScope).
+? complete(ECOmitF1Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_revision, ECDependencyAnimalAdvocateResultRevisionScope).
+? complete(ECOmitF2Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_source, ECDependencyAnimalAdvocateResultWriterScope).
+? complete(ECOmitF3Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_start, ECDependencyAnimalAdvocateResultStartScope).
+? complete(ECOmitF4Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_window, ECDependencyAnimalAdvocateResultWindowScope).
+? complete(ECOmitF5Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_interests, ECConflictClass10InterestsAxisScope).
+? complete(ECOmitF6Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_position, ECActualAnimalAdvocatePositionScope).
+? complete(ECOmitF7Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE

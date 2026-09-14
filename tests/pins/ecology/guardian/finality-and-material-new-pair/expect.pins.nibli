@@ -1,0 +1,77 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 35
+:accept
+authorized(ECStayGuardianV170, ECIndependentReviewAuthority, ECStayGuardianV164).
+:accept
+authorized(ECStayGuardianV166, ECReplayReviewAuthority, ECStayGuardianV165).
+? interrupt(FSBOD_22, ECStayGuardianV164, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECStayExecutionV3, ECStayExecutionV4, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECStayGuardianV164).
+# => TRUE
+:accept
+authorized(ECStayMeritsV44, ECIndependentReviewAuthority, ECStayMeritsV41).
+? complete(ECStayMeritsV41, ECFinalGuardianMerits, ECStayExecutionV724).
+# => TRUE
+? end(ECStayMeritsV41, ECFinalGuardianStayDisposition).
+# => TRUE
+? obliged(FSBOD_17, ECPublishFinalDispositionAndSharedReplayClosureWithoutClaimingExecution, ECStayMeritsV41).
+# => TRUE
+? interrupt(FSBOD_22, ECStayGuardianV164, ECGuardianAutomaticStay).
+# => FALSE
+# same-key: no office-local replay identity.
+:accept
+authorized(ECReplay0V170, ECIndependentReviewAuthority, ECReplay0V164).
+:accept
+authorized(ECReplay0V166, ECReplayReviewAuthority, ECReplay0V165).
+? interrupt(FSBOD_22, ECReplay0V164, ECGuardianAutomaticStay).
+# => FALSE
+# changed-ground: no office-local replay identity.
+:accept
+authorized(ECReplay1V170, ECIndependentReviewAuthority, ECReplay1V164).
+:accept
+authorized(ECReplay1V166, ECReplayReviewAuthority, ECReplay1V165).
+? interrupt(FSBOD_22, ECReplay1V164, ECGuardianAutomaticStay).
+# => FALSE
+# changed-window: no office-local replay identity.
+:accept
+authorized(ECReplay2V170, ECIndependentReviewAuthority, ECReplay2V164).
+:accept
+authorized(ECReplay2V166, ECReplayReviewAuthority, ECReplay2V165).
+? interrupt(FSBOD_22, ECReplay2V164, ECGuardianAutomaticStay).
+# => FALSE
+# new-authorization: no office-local replay identity.
+:accept
+authorized(ECReplay3V170, ECIndependentReviewAuthority, ECReplay3V164).
+:accept
+authorized(ECReplay3V166, ECReplayReviewAuthority, ECReplay3V165).
+? interrupt(FSBOD_22, ECReplay3V164, ECGuardianAutomaticStay).
+# => FALSE
+# new-evidence: no office-local replay identity.
+:accept
+authorized(ECReplay4V170, ECIndependentReviewAuthority, ECReplay4V164).
+:accept
+authorized(ECReplay4V166, ECReplayReviewAuthority, ECReplay4V165).
+? interrupt(FSBOD_22, ECReplay4V164, ECGuardianAutomaticStay).
+# => FALSE
+:accept
+authorized(ECMaterialRenewal0V215, ECIndependentReviewAuthority, ECMaterialRenewal0V209).
+:accept
+authorized(ECMaterialRenewal0V211, ECReplayReviewAuthority, ECMaterialRenewal0V210).
+? interrupt(FSBOD_22, ECMaterialRenewal0V209, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECSubstantivelyNewAuthorizationRecord, ECSubstantivelyNewVersion0, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECMaterialRenewal0V209).
+# => TRUE
+:accept
+authorized(ECMaterialRenewal1V215, ECIndependentReviewAuthority, ECMaterialRenewal1V209).
+:accept
+authorized(ECMaterialRenewal1V211, ECReplayReviewAuthority, ECMaterialRenewal1V210).
+? interrupt(FSBOD_22, ECMaterialRenewal1V209, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECStayExecutionV3, ECStayExecutionV4, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECMaterialRenewal1V209).
+# => TRUE

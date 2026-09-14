@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($assurer, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF0Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, $window, ECWindowScope).
+? complete(ECOmitF1Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, Class5BoundedCollegialResult, ECDirectEffectClassScope).
+? complete(ECOmitF2Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF3Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, ECAnimalAlternateCollegialResult, ECKindScope).
+? complete(ECOmitF4Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, ECAnimalAlternateCollegialResultTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, ECApprovedNonTiedCurrentConflictFreeResultUnderDeclaredRule, ECCollectiveResultScope).
+? complete(ECOmitF6Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($assurer, $record, ECConflictedMembersExcludedAndQuorumPositivelyEstablished, ECRecusalAndQuorumScope).
+? complete(ECOmitF7Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

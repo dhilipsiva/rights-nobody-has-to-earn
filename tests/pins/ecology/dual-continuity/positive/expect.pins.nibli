@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECPositiveV19, ECDualFloorAndCeilingContinuity, ECPositiveV27).
+# => TRUE
+? obliged(ECPositiveV14, ECPreserveImmediateFloorWhileObtainingAlternativesAndRepairingBreach, ECPositiveV19).
+# => TRUE
+? prevents(ECPositiveV19, ECUnmetFloorRenamedSuccess).
+# => TRUE
+? prevents(ECPositiveV19, ECCeilingBreachRenamedCompliance).
+# => TRUE

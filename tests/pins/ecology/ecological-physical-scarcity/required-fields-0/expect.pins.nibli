@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF0Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $alternatives_or_allocation, ECActualScarcityAlternativesOrAllocationRecordScope).
+? complete(ECOmitF1Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $alternatives_or_allocation, ECExternalScarcityAlternativesOrAllocationScope).
+? complete(ECOmitF2Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF3Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECCaseScope).
+? complete(ECOmitF4Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECDependencyDualContinuityCaseScope).
+? complete(ECOmitF5Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECExternalScarcityCaseScope).
+? complete(ECOmitF6Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF7Record, ECActualPhysicalScarcityDuringDualFailure, ECOmitSharedV76).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $claim, ECAnimalProtectionClaimScope).
+? complete(ECOmitF0Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF1Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $end, ECEndScope).
+? complete(ECOmitF2Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evaluation, ECFreshEvaluationScope).
+? complete(ECOmitF3Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_record, ECEvidenceRecordScope).
+? complete(ECOmitF4Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_version, ECEvidenceVersionScope).
+? complete(ECOmitF5Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $initiator, ECAnimalProtectionInitiatorScope).
+? complete(ECOmitF6Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECJurisdictionScope).
+? complete(ECOmitF7Record, ECAffectedHumanAnimalProtectionClaim, ECOmitSharedV25).
+# => FALSE

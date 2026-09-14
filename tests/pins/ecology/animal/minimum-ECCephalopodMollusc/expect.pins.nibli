@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 17
+? complete(ECMinimumAnimalV16, ECCrediblySentientAnimalCoverage, ECMinimumAnimalV23).
+# => TRUE
+? class(ECMinimumAnimalV23, ECCrediblySentientProtectedAnimal, ECMinimumAnimalV16).
+# => TRUE
+? prevents(ECMinimumAnimalV23, ECAnimalInterestWaiverByOwnerOrContract).
+# => TRUE
+? person(ECMinimumAnimalV23).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { secure() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { eats() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { dwell() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { healthy() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { learn() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { expresses() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { believe() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { meets() }).
+# => FALSE
+? authority(ECMinimumAnimalV23).
+# => FALSE
+? prisoner(ECMinimumAnimalV23).
+# => FALSE
+? punish(Court, ECMinimumAnimalV23).
+# => FALSE
+? capture(ECMinimumAnimalV23).
+# => FALSE
+? restrain(ECMinimumAnimalV23).
+# => FALSE

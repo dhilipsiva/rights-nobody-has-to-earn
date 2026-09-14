@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF0Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF1Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $end, ECEndScope).
+? complete(ECOmitF2Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evaluation, ECFreshEvaluationScope).
+? complete(ECOmitF3Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_record, ECEvidenceRecordScope).
+? complete(ECOmitF4Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_version, ECEvidenceVersionScope).
+? complete(ECOmitF5Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $failure, ECUnavailabilityGroundScope).
+? complete(ECOmitF6Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $failure_evidence, ECIndependentUnavailabilityEvidenceScope).
+? complete(ECOmitF7Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $external_qualification_source.
+? complete(ECFusedR0V101, ECGuardianAlternateAppointment, ECFusedR0V111).
+# => FALSE
+# Fuse $alternate with $operator.
+? complete(ECFusedR1V101, ECGuardianAlternateAppointment, ECFusedR1V111).
+# => FALSE
+# Fuse $alternate with $subject.
+? complete(ECFusedR2V101, ECGuardianAlternateAppointment, ECFusedR2V111).
+# => FALSE
+# Fuse $auditor with $external_qualification_evidence.
+? complete(ECFusedR3V101, ECGuardianAlternateAppointment, ECFusedR3V111).
+# => FALSE

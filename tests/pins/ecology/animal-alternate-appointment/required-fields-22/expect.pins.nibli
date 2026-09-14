@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? complete(ECOmitF0Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECAppointedInstitutionScope).
+? complete(ECOmitF1Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalQualificationOfficeScope).
+? complete(ECOmitF2Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalSeatInstitutionScope).
+? complete(ECOmitF3Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalSelectionInstitutionScope).
+? complete(ECOmitF4Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalSelectionOfficeScope).
+? complete(ECOmitF5Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? complete(ECOmitF6Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? complete(ECOmitF7Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE

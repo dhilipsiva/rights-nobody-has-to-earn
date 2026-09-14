@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF0Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPublishedReasonsMinorityPositionsAndCorrection, ECCollegialReasonsScope).
+? complete(ECOmitF1Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF2Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF3Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF4Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECUniqueCompleteAuthenticSubmissionsForThisExactDecision, ECSubmissionFindingScope).
+? complete(ECOmitF5Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class7ExactCorrectionWithoutRenewal, ECDirectEffectClassScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentEcologicalAnimalCorrection, ECKindScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentEcologicalAnimalCorrectionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentPositiveEvidenceNotMereAbsenceOrAnUnreviewedAllegation, ECRecordFindingBasisScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE

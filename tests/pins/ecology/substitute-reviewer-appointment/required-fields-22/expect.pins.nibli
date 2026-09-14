@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $office, ECExternalQualificationOfficeScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalSeatInstitutionScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalSelectionInstitutionScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $office, ECExternalSelectionOfficeScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECPlaceScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $population, ECAffectedPopulationScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $qualification_authority, ECExternalSeatQualificationAuthorityScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE

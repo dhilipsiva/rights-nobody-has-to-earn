@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF0Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $axis, ECAxisScope).
+? complete(ECOmitF1Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF2Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECDependencyCeilingCaseScope).
+? complete(ECOmitF3Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECExternalCourtCaseScope).
+? complete(ECOmitF4Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_end, ECDependencyCeilingEndScope).
+? complete(ECOmitF5Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_evaluation, ECDependencyCeilingEvaluationScope).
+? complete(ECOmitF6Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $ceiling_evidence_record, ECDependencyCeilingEvidenceRecordScope).
+? complete(ECOmitF7Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE

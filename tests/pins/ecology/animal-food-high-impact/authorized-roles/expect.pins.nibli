@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? permits(ECUnauthSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECUnauth0Record).
+# => FALSE
+? permits(ECUnauthSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECUnauth1Record).
+# => FALSE
+? permits(ECUnauthSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECUnauth2Record).
+# => FALSE
+? permits(ECUnauthSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECUnauth3Record).
+# => FALSE
+? permits(ECUnauthSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECUnauth4Record).
+# => FALSE
+? permits(ECUnauthSharedV137, ECOnlyStrictEnhancedAnimalFoodProduction, ECUnauth5Record).
+# => FALSE

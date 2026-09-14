@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECBreedingHousingHandlingTransportAndKillingRemainSubjectToCareStandardsIndependentInspectionAndRemedy, ECFoodWelfareConditionsScope).
+? complete(ECOmitF0Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCostAndGeographyOnlyBearOnRealAccessibilityWithoutWithholdingHumanFoodFloor, ECFoodAccessibilityBoundaryScope).
+? complete(ECOmitF1Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECEffectiveStunningOrIndependentlyEstablishedLeastSufferingMethodWhereDeathOccurs, ECFoodDeathMethodScope).
+? complete(ECOmitF2Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF3Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECFoodPurposeNeverAuthorizesAvoidableSuffering, ECFoodCoreBoundaryScope).
+? complete(ECOmitF4Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF5Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF6Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoSafeAccessibleNutritionallyAdequateMateriallyLessHarmfulAlternativeReasonablyAvailable, ECStrictAnimalFoodAlternativeFindingScope).
+? complete(ECOmitF7Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE

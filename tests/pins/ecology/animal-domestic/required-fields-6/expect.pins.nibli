@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, Class10EqualDirectCoreAcrossAnimalContexts, ECDirectEffectClassScope).
+? complete(ECOmitF0Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF1Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECDomesticAnimalProtection, ECKindScope).
+? complete(ECOmitF2Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECDomesticAnimalProtectionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF3Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECDomesticOrCompanionAnimal, ECAnimalLivingContextScope).
+? complete(ECOmitF4Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF5Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF6Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF7Record, ECDomesticAnimalProtection, ECOmitSharedV70).
+# => FALSE

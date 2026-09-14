@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? permits(ECOmitSharedV143, ECOnlyStrictEnhancedAnimalResearchTestingOrEducation, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? permits(ECOmitSharedV143, ECOnlyStrictEnhancedAnimalResearchTestingOrEducation, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStrictEnhancedAnimalResearchUse, ECKindScope).
+? permits(ECOmitSharedV143, ECOnlyStrictEnhancedAnimalResearchTestingOrEducation, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStrictEnhancedAnimalResearchUseTemporalContract, ECTemporalContractKindScope).
+? permits(ECOmitSharedV143, ECOnlyStrictEnhancedAnimalResearchTestingOrEducation, ECOmitF3Record).
+# => FALSE

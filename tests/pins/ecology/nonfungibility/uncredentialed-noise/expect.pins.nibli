@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECNoiseV20, ECNonfungibleProtectionFinding, ECNoiseV27).
+# => TRUE
+? oppose(ECNoiseV5, ECNoiseV17, ECHabitatAxis).
+# => TRUE
+? prevents(ECNoiseV17, ECOffsetAsPermissionForNonfungibleHarm).
+# => TRUE
+? obliged(ECNoiseV14, ECAvoidStopAndRepairNonfungibleHarm, ECNoiseV20).
+# => TRUE
+? related(ECNoiseV20, ECRecordAmbiguity).
+# => FALSE

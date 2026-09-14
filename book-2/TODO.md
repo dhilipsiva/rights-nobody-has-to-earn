@@ -1,5 +1,25 @@
 # TODO — book-2
 
+## Collected ecological and animal implementation handoff — 2026-09-14
+
+Collection only; Gate C has not activated this volume. Follow the exact legal
+interfaces in
+[`book-1-ecological-and-animal-protection-contract.md`](../new-book-plans/book-1-ecological-and-animal-protection-contract.md).
+Operational work must supply measurements, numerical ceilings and resource
+budgets, independent scientific review and uncertainty methods; authentic
+appointments and finite collegial decisions; a shared case/version/evidence/
+ground replay history across primary and alternate offices; reliable clocks,
+current-window admission and correction; and lawful private/public records.
+
+Restoration, pollution control, veterinary care, rescue, inspection, shelter,
+rehabilitation and habitat work need actual capacity, staffing, costs,
+workflows and outcome evidence. Food and research replacement, husbandry,
+worker/community transition, nonlethal risk-control alternatives and
+cross-border coordination require their own feasible provision. No prototype,
+record agreement or formal permission proves those operations. Do not weaken
+the floor, ecological axes, animal core, collective rights or independent
+review to cover a capacity gap.
+
 The principal project product is the exact versioned formally audited
 constitutional specification. Book 1 is its reader-facing derivation. Book 2 is
 **the later operational and transition volume**: how that audited destination

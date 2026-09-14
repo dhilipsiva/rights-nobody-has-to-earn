@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $end, ECEndScope).
+? interrupt(FSBOD_17, ECOmitF0Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evaluation, ECFreshEvaluationScope).
+? interrupt(FSBOD_17, ECOmitF1Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_record, ECEvidenceRecordScope).
+? interrupt(FSBOD_17, ECOmitF2Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $evidence_version, ECEvidenceVersionScope).
+? interrupt(FSBOD_17, ECOmitF3Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $guardian_merits_end, ECDependencyGuardianMeritsEndScope).
+? interrupt(FSBOD_17, ECOmitF4Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $guardian_merits_evaluation, ECDependencyGuardianMeritsEvaluationScope).
+? interrupt(FSBOD_17, ECOmitF5Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $guardian_merits_evidence_record, ECDependencyGuardianMeritsEvidenceRecordScope).
+? interrupt(FSBOD_17, ECOmitF6Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $guardian_merits_evidence_version, ECDependencyGuardianMeritsEvidenceVersionScope).
+? interrupt(FSBOD_17, ECOmitF7Record, ECFinalJudicialProtection).
+# => FALSE

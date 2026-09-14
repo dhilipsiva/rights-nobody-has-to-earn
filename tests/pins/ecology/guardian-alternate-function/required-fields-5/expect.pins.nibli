@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF0Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF1Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECDependencyGuardianAlternateResultSubjectScope).
+? complete(ECOmitF2Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? complete(ECOmitF3Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECDependencyGuardianAlternateResultTerritoryScope).
+? complete(ECOmitF4Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF5Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $unavailable_actor, ECUnavailableActorScope).
+? complete(ECOmitF6Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF7Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE

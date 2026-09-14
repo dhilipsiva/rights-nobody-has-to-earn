@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF0Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class10EveryControlledFoodProductionTest, ECDirectEffectClassScope).
+? complete(ECOmitF1Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF2Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAllControlledFoodProductionIncludingNonlethalAndNonSevereUses, ECAllFoodScopeScope).
+? complete(ECOmitF3Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECBreedingHousingHandlingTransportAndKillingRemainSubjectToCareStandardsIndependentInspectionAndRemedy, ECFoodWelfareConditionsScope).
+? complete(ECOmitF4Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECCostAndGeographyOnlyBearOnRealAccessibilityWithoutWithholdingHumanFoodFloor, ECFoodAccessibilityBoundaryScope).
+? complete(ECOmitF5Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECEffectiveStunningOrIndependentlyEstablishedLeastSufferingMethodWhereDeathOccurs, ECFoodDeathMethodScope).
+? complete(ECOmitF6Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF7Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE

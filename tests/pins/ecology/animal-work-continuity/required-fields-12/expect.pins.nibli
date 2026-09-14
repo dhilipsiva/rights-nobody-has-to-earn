@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF0Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $revision, ECRevisionScope).
+? complete(ECOmitF1Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF2Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECDependencyAnimalWelfareLegalScopeScope).
+? complete(ECOmitF3Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF4Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $start, ECStartScope).
+? complete(ECOmitF5Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyAnimalWelfareSubjectScope).
+? complete(ECOmitF6Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? complete(ECOmitF7Record, ECWorkingAnimalCareAndExit, ECOmitSharedV69).
+# => FALSE

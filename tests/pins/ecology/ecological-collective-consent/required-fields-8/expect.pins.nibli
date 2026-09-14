@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $authorization_version, ECExternalCollectiveProjectVersionScope).
+? complete(ECOmitF0Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF1Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF2Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_holder, ECAffectedCollectiveHolderScope).
+? complete(ECOmitF3Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_holder, ECExternalCollectiveHolderScope).
+? complete(ECOmitF4Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_title, ECExistingCollectiveTitleScope).
+? complete(ECOmitF5Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_title, ECExternalCollectiveObjectScope).
+? complete(ECOmitF6Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF7Record, ECActualCollectiveConsentForEcologicalEffect, ECOmitSharedV45).
+# => FALSE

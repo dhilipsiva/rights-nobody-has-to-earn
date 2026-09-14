@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_start, ECDependencyGuardianAlternateFunctionStartScope).
+? interrupt(FSBOD_31, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_function_window, ECDependencyGuardianAlternateFunctionWindowScope).
+? interrupt(FSBOD_31, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $irreversible_part, ECIrreversiblePartScope).
+? interrupt(FSBOD_31, ECOmitF2Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECDependencyGuardianAlternateFunctionJurisdictionScope).
+? interrupt(FSBOD_31, ECOmitF3Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECJurisdictionScope).
+? interrupt(FSBOD_31, ECOmitF4Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $method, ECMethodVersionScope).
+? interrupt(FSBOD_31, ECOmitF5Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $operator, ECResponsibleActorScope).
+? interrupt(FSBOD_31, ECOmitF6Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $place, ECDependencyGuardianAlternateFunctionPlaceScope).
+? interrupt(FSBOD_31, ECOmitF7Record, ECGuardianAutomaticStay).
+# => FALSE

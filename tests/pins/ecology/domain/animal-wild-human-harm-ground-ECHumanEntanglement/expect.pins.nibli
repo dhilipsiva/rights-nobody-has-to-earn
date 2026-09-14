@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+? complete(ECDomainChoiceV42, ECWildHumanCausedAnimalHarm, ECDomainChoiceV49).
+# => TRUE
+? obliged(ECDomainChoiceV37, ECPrioritizePreventionRescueAndRepairOfHumanCausedWildAnimalHarm, ECDomainChoiceV42).
+# => TRUE
+? obliged(ECDomainChoiceV28, ECPreventAndRemedyEvidencedHumanCausedAnimalHarm, ECDomainChoiceV42).
+# => TRUE

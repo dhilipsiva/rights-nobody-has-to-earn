@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? complete(ECOmitF0Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECDependencyAnimalAdvocateResultTerritoryScope).
+? complete(ECOmitF1Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF2Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF3Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyAnimalAdvocateResultConstitutionVersionScope).
+? complete(ECOmitF4Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? complete(ECOmitF5Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class4IndependentAnimalProtectionInitiation, ECDirectEffectClassScope).
+? complete(ECOmitF6Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF7Record, ECAnimalAdvocateProtectionClaim, ECOmitSharedV168).
+# => FALSE

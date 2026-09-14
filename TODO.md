@@ -322,152 +322,22 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Implement the ratified environmental right, Class 9 commons, and
-  Class 10 non-human-animal protections.**
-  - Follow the author-ratified 2026-08-08 contract in
-    [`new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`](new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md).
-    Keep the existing material-floor inventory unchanged and create no omnibus
-    `environment`, `ecology`, `sustainable`, `animal`, `sentient`,
-    `balance`, or `worth` conclusion.
-  - Preserve three non-collapsed holders and effects: every person's independently
-    enforceable environmental right; Class 9 protected commons and future
-    ecological capability; and credibly sentient animals as direct Class 10
-    protected subjects without `person`, floor, ballot, property, contract, or
-    human-equality status.
-  - Implement the environmental right's public and material-control private reach;
-    clean air, safe water, healthy soil/food systems and hazardous-exposure
-    protection; information and uncertainty disclosure; prior cumulative,
-    distributional, cross-boundary and long-latency assessment; accessible
-    participation; reasons; retaliation protection; review, interim protection,
-    correction, continuity and remedy. Route unequal exposure through substantive
-    equality without creating a vulnerability or ecological-worth score.
-  - Give each Class 9 common a versioned, multidimensional ceiling, minimum
-    condition or resource budget bound to source/method version, protected
-    condition, place, territory, jurisdiction, population and temporal scope.
-    Preserve climate, water, air, soil, biodiversity, habitat, extraction and waste
-    as non-substitutable axes; no offset, payment or scalar pass may excuse a breach
-    or replace an irreplaceable, unique, sacred or functionally non-substitutable
-    system.
-  - Keep science and law distinct: independently reviewed science proposes or
-    authenticates evidence; democratic law enacts the operative ceiling and may
-    choose stronger protection; the Guardian advocates and challenges; an
-    independent court reviews legality. Implement proportionate precaution,
-    outcome-based non-regression, cumulative/supply-chain/no-jurisdiction-shopping
-    controls, public reasons, correction and challenge.
-  - Give independent commons/future-condition initiation routes to every present
-    person, a qualified association, the ordinary rights advocate, and the
-    collegial Future Conditions Guardian. No route claims an unborn person's
-    preferences or depends on proprietary injury. A present person, qualified
-    association or rights advocate may request judicial interim relief but does
-    not trigger the automatic stay.
-  - Formalise avoid → minimise at source → restore in place → tightly bounded
-    replaceable residual compensation, followed separately by human/collective
-    reparation. Record additionality, durability, functional/place relevance,
-    no double counting, monitoring, correction and repair where ecological
-    equivalence is claimed.
-  - Implement dual floor-and-ceiling continuity: neither floor denial nor ceiling
-    breach is success. If no present route satisfies both, preserve immediate
-    human continuity through the least-harm route, record both shortfalls, obtain
-    alternatives, repair harm, and use a source-bound transition. Budget choice,
-    delay, monopoly, artificial withholding or refusal to procure proves neither
-    physical nor ecological scarcity.
-  - Implement tiered ecological liability without making urgent protection wait:
-    immediate no-fault prevention, cessation, containment, animal/human continuity
-    and public restoration; strict restoration and reasonable-response-cost
-    liability for causally connected inherently hazardous activity; adjudicated
-    contribution/control otherwise; public continuity where a responsible actor
-    is unknown, insolvent or absent; and separate proof of culpability before any
-    punitive or criminal consequence.
-  - Create the collegial Future Conditions Guardian under the ratified divided,
-    anti-capture appointment contract, separate from regulator, scientist, court,
-    auditor and operator. Only its evidence-supported objection, or that of its
-    predeclared alternate advocate acting in its place, automatically pauses the
-    irreversible part through a fresh T3 window pending expedited independent
-    review, with essential-floor continuity.
-  - Bind one shared replay key across the Guardian, alternate, successor, primary
-    reviewer and substitute reviewer to the case, challenged authorization
-    version, evidence version and ground. A final resolution prevents restart on
-    that key; only materially new authenticated evidence or a materially changed
-    authorization may open another. Silence, vacancy, conflict or capture is never
-    approval: use the predeclared alternate advocate for the Guardian function and
-    a separate substitute reviewer for review. The Guardian has no policy veto,
-    final merits power, budget, programme or scientific-oracle status.
-  - Implement Class 10's sentience presumption and evidence-responsive extension,
-    direct bodily/life/species-appropriate interests, dependency-created welfare,
-    rescue, care, habitat, movement/social opportunity, humane handling and death,
-    and protection from abandonment, exploitative overwork, extreme confinement,
-    harmful breeding and avoidable invasive intervention. Never rank an animal by
-    owner, price, affection, recognition, productivity, rarity alone or a total
-    animal-worth score.
-  - Apply the non-waivable evidence-based welfare baseline to **every** controlled
-    use. Ordinary non-food/non-lethal/non-invasive/non-high-severity use needs no
-    enhanced serious-purpose test merely because it is a use. Apply the enhanced
-    purpose, necessity, feasible-alternatives, least-harm, care, prior-review and
-    source-bound-end test only to lethal, invasive or high-severity use. Food-
-    producing use receives the welfare baseline plus the separate strict rule
-    below.
-  - Apply the strict food rule to **every controlled use of a credibly sentient
-    animal to produce food**, not only slaughter or an already classified
-    high-severity use. It is lawful only where no safe, accessible, nutritionally
-    adequate, materially less-harmful alternative is reasonably available to the
-    affected people. Taste, habit, prestige, profit, advertising or price alone
-    is insufficient; transition may never withhold the human food floor.
-  - Apply the strict research/testing/education rule: serious health, safety or
-    ecological purpose; replacement, reduction and refinement with replacement
-    first; no scientifically valid non-animal/materially less-harmful alternative;
-    independent project review; minimum animals/least-harm design; pain relief,
-    humane endpoints, aftercare and public registration/results. Categorically
-    refuse every unrelieved severe or prolonged procedure; no claimed purpose,
-    prestige, curiosity or commercial benefit may override that ban.
-  - Formalise the remaining categorical refusals, including fighting, sexual use,
-    deliberate cruelty, punitive treatment, dispensable killing/severe suffering,
-    abandonment, extreme confinement, seriously harmful breeding, painful
-    purposeless mutilation, and cosmetic/marketing use. Put direct protected-
-    subject status and the severe-avoidable-suffering and dispensable-killing core
-    inside the unamendable democratic corridor.
-  - Cover companion/domestic, farmed/working, captive and wild animals without
-    ownership-form exceptions. Natural predation creates no offender and no
-    universal rescue duty. Prioritise human-caused or controlled pollution,
-    infrastructure, entanglement, habitat, capture, trade and killing harms.
-    Permit grave disease/danger/introduced-population control only after
-    authenticated risk, human-cause prevention and feasible nonlethal exclusion,
-    treatment, vaccination, relocation, fertility or habitat routes fail or would
-    cause greater grave harm; require the least-painful reliable method, review,
-    reassessment, repair and fresh T3.
-  - Create the separate Animal Protection Advocate with initiation, evidence,
-    inspection, rescue/cessation and remedy powers but no ownership, custody,
-    prosecution, permit, budget, programme, adjudication or veto. When Guardian
-    and Advocate positions conflict, require an independent adjudicated result
-    keeping human right/floor, Class 9, Class 10, collective rights, alternatives,
-    uncertainty, reversibility and continuity separate and applying categorical
-    refusals first.
-  - Give each ecological and animal finding an authorised source/writer, exact
-    version/place/jurisdiction/time scope, independent reader, privacy boundary,
-    reasons, challenge, correction, carry, end, alternate route, audit, continuity,
-    remedy and failure polarity. A missing record cannot block urgent protection,
-    but FALSE remains non-derivability rather than proof of safety; Nibli consumes
-    only authenticated bounded findings and never measures, authenticates,
-    classifies, advances a clock or operates an institution.
-  - Give every permit, ceiling, Guardian/alternate automatic stay, judicial
-    interim-relief order, restoration order, research approval, disease-control
-    action and lethal/high-severity authority its own source-bound temporal
-    contract. Custody T3 cannot be reused, reviewer silence cannot approve, and
-    correction cannot silently extend expired harmful authority.
-  - **Book 2 handoff:** numerical ceilings, budgets, measurements, models,
-    inventories, uncertainty methods, monitoring, laboratories, restoration,
-    husbandry, veterinary/rescue/shelter/inspection capacity, food/research/
-    worker/community transition, cross-border coordination, staffing, costs and
-    empirical feasibility. Book 1 must derive the legal interface without claiming
-    those operations exist.
-  - **Done when:** contract cards, pins, counterfactuals and reader prose cover
-    ordinary compliance and breach; independent environmental-right and commons
-    claims; non-substitutable ceilings; precaution/non-regression; floor/ceiling
-    collision; Guardian/alternate automatic stay, ordinary-route judicial interim
-    relief, shared replay, substitute review and no veto; tiered liability;
-    ordinary controlled use; enhanced lethal/invasive/high-severity use; strict
-    food and research routes; categorical refusals; domestic/farmed/captive/
-    wild cases; Guardian/Advocate conflict; rescue/restoration/remedy; corridor
-    refusal; record mismatch/withholding/correction; and fresh temporal expiry.
+- [ ] **Bring the expanded complete verifier back below five minutes.**
+  - The environmental/Class 9/Class 10 implementation passed all 77,902 pins
+    across 13,566 cases with complete contradiction checks and no findings,
+    but took 1,119.23 seconds (18m39.23s) on 2026-09-14. The earlier 275.04-second
+    result covered only the pre-expansion 4,190-case inventory.
+  - Profile the current complete source and expanded cases; preserve every
+    substantive expectation, actual-source ordinary case, explicit
+    counterfactual, scoped/stateful sequence, shell precondition and complete
+    contradiction check. Keep the fixed one-to-four-worker pool.
+  - Reuse immutable preparation within the process, not earlier verdicts.
+    Do not add hashes, receipts, freshness/report gates, reduced constitutions
+    or skipped checks.
+  - **Done when:** the complete current inventory passes in under five minutes
+    with the release binary prebuilt, with measured timing and remaining
+    resource limits reported honestly. This follow-up is not started in the
+    stopped ecological-item run.
 
 - [ ] **Protect knowledge, communication, culture, and the free social field.**
   - Cover learning and information access; expression, conscience, religion and

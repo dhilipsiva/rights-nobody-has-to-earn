@@ -38,7 +38,17 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 26
+# Animal-core certification, publication and effective-selection withdrawal use
+# tests/pins/ecology/corridor/*-actual-enactment-sequence/expect.pins.nibli.
+# Each actual amendment consumer has a paired explicit source counterfactual;
+# amendment-enactment/without-AmendmentAnimal*CoreScope tests positive review.
+# An absent breach record is not evidence of compatibility or source authority.
+:expect-pins 28
+
+? contradict(ECAbsentAmendmentRecord, AmendmentSourceAuthorization).
+# => FALSE
+? complete(ECAbsentAmendmentRecord, AmendmentCertifiedCandidate, ECAbsentCandidate).
+# => FALSE
 
 # "Nothing happens when something receives the law label." — no rule body reads `become`;
 # the second :require is the positive control proving the command still works

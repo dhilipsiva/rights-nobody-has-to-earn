@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF0Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualGraveThreatEstablishedNotSpeciesPopulationPredatorOrMoralStatusLabel, ECAnimalGraveRiskFindingScope).
+? complete(ECOmitF1Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF2Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECFeasiblePreventionExclusionTreatmentVaccinationRelocationFertilityAndHabitatMeasuresEvaluatedBeforeKilling, ECAnimalRiskNonlethalPriorityScope).
+? complete(ECOmitF3Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGraveAnimalRiskResponseTest, ECKindScope).
+? complete(ECOmitF4Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGraveAnimalRiskResponseTestTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECHumanCausesAndPreventionAddressedFirst, ECAnimalRiskHumanCausePriorityScope).
+? complete(ECOmitF6Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF7Record, ECGraveAnimalRiskResponseTest, ECOmitSharedV51).
+# => FALSE

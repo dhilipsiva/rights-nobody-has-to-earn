@@ -58,8 +58,8 @@ measurements and any remaining bottleneck honestly.
 Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
-`./generate.sh justice`, `./generate.sh public-safety`, and
-`./generate.sh spine`. They write semantic
+`./generate.sh justice`, `./generate.sh public-safety`,
+`./generate.sh ecology`, and `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
 
@@ -697,6 +697,28 @@ this does not meet the under-five-minute target.
 
 #### Ecological, future-generation, commons, and non-human-animal — 2026-08-08
 
+**Implementation and reader projection — 2026-09-14.**
+`new-book-plans/book-1-ecological-and-animal-protection-contract.md` owns the
+case-level implementation. The explicit ecology generator supplies distinct
+human environmental claims, non-substitutable commons axes, scientific and
+actual democratic/court dependencies, liability and dual continuity, divided
+Guardian/Animal Advocate functions, shared replay and historical finality,
+direct animal interests, use-specific tests, particular remedies, record
+withdrawal and separate source-bound windows. The actual amendment gate now
+requires animal-core preservation and consumes independently reviewed exact
+core-breach findings. No source label, generic compatibility or missing record
+proves a lawful source transition.
+
+The delegated-approved reader additions are retained in
+`new-book-plans/ecology-reader-draft.md`. The 130 cards and 9,373 ecological
+cases are exported. All 77,902 pins across the complete 13,566-case inventory
+passed with complete contradiction checks and no findings in 1,119.23 seconds
+(18m39.23s); nine existing known-defect expectations still reproduce. The
+under-five-minute target is not met and remains separate performance work.
+This verifies the repository-bound legal interface, not institutional operation
+or real-world protection. The author's latest instruction is to commit/push
+this completed item and stop the goal, not start the next item.
+
 **The ecological, future-generation, commons, and non-human-animal baselines are
 author-ratified (2026-08-08): distinct environmental right + protected commons +
 science-constrained democratic ceilings + directly protected sentient animals.**
@@ -826,7 +848,8 @@ dispensable killing; detailed standards remain democratically revisable inside
 that core. Animal remedies cannot remove human standing, the material floor,
 core liberty, due process, or political equality.
 
-**Ratified but unimplemented**, and it sets no ceiling. Book 2 owns
+The ruling itself sets no numerical ceiling. Its case-level implementation is
+tracked by the current-status paragraph above. Book 2 owns
 measurements, numerical ceilings and budgets, inventories, models, species
 standards, monitoring, restoration and veterinary capacity, and food and
 research transition. Nibli does not measure ecology, decide sentience or

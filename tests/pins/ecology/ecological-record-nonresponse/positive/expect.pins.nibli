@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+? complete(ECPositiveV17, ECIndependentEcologicalAnimalNonresponse, ECPositiveV27).
+# => TRUE
+? err(ECPositiveV17, ECEcologicalAnimalRecordNonresponse).
+# => TRUE
+? obliged(ECPositiveV0, ECIndependentlyActOnUnansweredRequestSecureCareAndEscalateCourtRemedy, ECPositiveV28).
+# => TRUE

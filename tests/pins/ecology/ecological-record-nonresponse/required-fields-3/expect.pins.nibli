@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $target, ECUnansweredRecordOrUnrecordedActScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class7PositiveNonresponseAndAlternateDuty, ECDirectEffectClassScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalNonresponse, ECOmitSharedV27).
+# => FALSE

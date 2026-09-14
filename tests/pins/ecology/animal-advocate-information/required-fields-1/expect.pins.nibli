@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_review, ECDependencyAnimalAdvocateResultReviewerScope).
+? complete(ECOmitF0Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_revision, ECDependencyAnimalAdvocateResultRevisionScope).
+? complete(ECOmitF1Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_source, ECDependencyAnimalAdvocateResultWriterScope).
+? complete(ECOmitF2Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_start, ECDependencyAnimalAdvocateResultStartScope).
+? complete(ECOmitF3Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_advocate_result_window, ECDependencyAnimalAdvocateResultWindowScope).
+? complete(ECOmitF4Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $assessment, ECRequestedAssessmentEvidenceUncertaintyAndAlternativesScope).
+? complete(ECOmitF5Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF6Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECCaseScope).
+? complete(ECOmitF7Record, ECAnimalAdvocateInformationFunction, ECOmitSharedV172).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $evidence_record, ECEvidenceRecordScope).
+? complete(ECOmitF0Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_version, ECEvidenceVersionScope).
+? complete(ECOmitF1Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_appointment_case, ECDependencyGuardianAppointmentCaseScope).
+? complete(ECOmitF2Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_appointment_end, ECDependencyGuardianAppointmentEndScope).
+? complete(ECOmitF3Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_appointment_evaluation, ECDependencyGuardianAppointmentEvaluationScope).
+? complete(ECOmitF4Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_appointment_evidence_record, ECDependencyGuardianAppointmentEvidenceRecordScope).
+? complete(ECOmitF5Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_appointment_evidence_version, ECDependencyGuardianAppointmentEvidenceVersionScope).
+? complete(ECOmitF6Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_appointment_method, ECDependencyGuardianAppointmentMethodVersionScope).
+? complete(ECOmitF7Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE

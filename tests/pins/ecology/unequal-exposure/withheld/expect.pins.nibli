@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+? complete(ECPositiveV40, ECUnequalEnvironmentalExposure, ECPositiveV47).
+# => FALSE
+? obliged(ECPositiveV38, ECUseExistingSubstantiveEqualityProtectionAndRemedy, ECPositiveV40).
+# => FALSE
+? prevents(ECPositiveV40, ECDiagnosticExposureAsIndividualWorthOrEligibility).
+# => FALSE

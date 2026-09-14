@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Withhold one required observation: observe($source, $record, ECReasonableRestorationAndResponseCostsEstablished, ECRestorationCostsScope).
+? complete(ECOmitF0Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF1Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECSeparateCulpabilityAndDueProcessBeforePunitiveConsequence, ECPunitiveSeparationScope).
+? complete(ECOmitF2Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF3Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE

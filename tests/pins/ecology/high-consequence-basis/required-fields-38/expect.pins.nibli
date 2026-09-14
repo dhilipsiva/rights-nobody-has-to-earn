@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $extraction_evaluation, ECDependencyExtractionEvaluationScope).
+? complete(ECOmitF0Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_evidence_record, ECDependencyExtractionEvidenceRecordScope).
+? complete(ECOmitF1Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_evidence_version, ECDependencyExtractionEvidenceVersionScope).
+? complete(ECOmitF2Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_method, ECDependencyExtractionMethodVersionScope).
+? complete(ECOmitF3Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_operator, ECDependencyExtractionActorScope).
+? complete(ECOmitF4Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_record, ECDependencyExtractionRecordScope).
+? complete(ECOmitF5Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_review, ECDependencyExtractionReviewerScope).
+? complete(ECOmitF6Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $extraction_revision, ECDependencyExtractionRevisionScope).
+? complete(ECOmitF7Record, ECHighConsequenceAuthorizationBasis, ECOmitSharedV541).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $population, ECDependencyCeilingAffectedPopulationScope).
+? complete(ECOmitF0Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $prior_standard, ECPriorStandardScope).
+? complete(ECOmitF1Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $prior_version, ECPriorStandardVersionScope).
+? complete(ECOmitF2Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reader, ECChallengeReaderScope).
+? complete(ECOmitF3Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF4Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF5Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECRevisionScope).
+? complete(ECOmitF6Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF7Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE

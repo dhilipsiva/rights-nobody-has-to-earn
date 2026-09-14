@@ -601,13 +601,25 @@ wetlands, living soil, habitats and biodiversity, ecological systems,
 regenerative capacity, and land and inherited resources remain separate. A gain
 on one axis cannot quietly buy destruction on another. Science supplies bounded
 evidence; democratic law enacts a versioned ceiling; review checks both.
-Uncertainty is not safety, regression needs public justification, irreplaceable
-loss is not replaceable by an offset, and insolvency does not extinguish a
-restoration duty. If immediate human continuity and a ceiling collide, the rule
+Uncertainty is not safety, replacement needs equal or stronger protected
+outcomes, and irreplaceable loss is not replaceable by an offset. Insolvency
+does not extinguish a restoration duty. If immediate human continuity and a ceiling collide, the rule
 requires the least-harm continuity route and keeps the shortfall and repair due
 visible. These are constitutional limits over supplied records. They do not
 measure the world, set the ceiling numbers, restore an ecosystem, or prove that
 any institution can do so.
+
+Individual animals add a different boundary. Their credible sentience gives
+their bodily, life and care interests direct protection without making them
+human persons. A secure species is no answer to an individual animal's
+avoidable suffering; caring for one animal is no answer to destruction of its
+habitat. Controlled use faces welfare, purpose and alternatives requirements
+appropriate to its kind, with strict food and research rules and categorical
+prohibitions that no usefulness score can outweigh. The Guardian and Animal
+Advocate must take a conflict to independent judgment, keeping those interests
+and human rights separate. The record can require that judgment, refuse an
+unsupported authority and preserve urgent care. It cannot provide the care,
+measure sentience or authenticate the evidence by agreeing with itself.
 
 **Survives, narrowed.** The guards hold against the exact attacks they refuse.
 Universal standing removes a missing identity entry as a constitutional eligibility

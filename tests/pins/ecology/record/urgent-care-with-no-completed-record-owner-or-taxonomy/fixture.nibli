@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+challenge(ECUrgentRequester, ECUrgentUnidentifiedSubject, ECUrgentPlausibleAnimalProtectionRequestExample).
+observe(ECUrgentRequester, ECUrgentPlausibleAnimalProtectionRequestExample, ECUrgentPlausibleAnimalProtectionRequest, ECRequestKindScope).
+challenge(ECUrgentRequester, ECUrgentUnidentifiedSubject, ECUrgentEnvironmentalProtectionRequestExample).
+observe(ECUrgentRequester, ECUrgentEnvironmentalProtectionRequestExample, ECUrgentEnvironmentalProtectionRequest, ECRequestKindScope).

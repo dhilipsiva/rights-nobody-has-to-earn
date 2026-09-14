@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECEnhancedAnimalUseTestTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF0Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF1Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentReviewPrecedesHighConsequenceUseWithReasonsChallengeReassessmentRemedyAndOwnEnd, ECEnhancedAnimalPriorReviewFindingScope).
+? complete(ECOmitF2Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF3Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF4Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoSafeAccessibleEffectiveMateriallyLessHarmfulAlternativeReasonablyAvailable, ECEnhancedAnimalAlternativesFindingScope).
+? complete(ECOmitF5Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNumberDurationPainDistressConfinementInjuryAndRiskAvoidedOrMinimizedByLeastHarmMethod, ECEnhancedAnimalLeastHarmScope).
+? complete(ECOmitF6Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF7Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE

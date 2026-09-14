@@ -8,6 +8,15 @@
 > programme, institution in law, chapter, release, or claim of present
 > constitutional coverage.
 
+**Implementation supersession — 2026-09-14.** The case-level legal interface,
+actual-source pins and counterfactuals, and exact approved reader projection
+are now implemented and verified. See
+[Environmental rights, commons and direct animal protection](book-1-ecological-and-animal-protection-contract.md)
+for the contracts, complete measured result and outstanding performance target.
+The original decision status above records its ratification-time boundary;
+neither the decision nor the implementation establishes operational capacity,
+authenticated external truth or successful protection.
+
 ## 1. Decision
 
 Book 1 adopts three related but non-collapsed protections:

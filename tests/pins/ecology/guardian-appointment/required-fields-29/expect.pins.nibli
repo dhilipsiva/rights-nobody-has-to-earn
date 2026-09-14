@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentPartyCoalitionDeFactoControlScope).
+? complete(ECOmitF0Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentPartyCoalitionDirectControlScope).
+? complete(ECOmitF1Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentProfessionDeFactoControlScope).
+? complete(ECOmitF2Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentProfessionDirectControlScope).
+? complete(ECOmitF3Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECMixedRelevantExpertiseLivedKnowledgeAndNoExclusiveProfession, ECMixedCompositionScope).
+? complete(ECOmitF4Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoBudgetTaxPermitProgrammeProsecutionOrFinalVetoPower, ECAdvocatePowerBoundaryScope).
+? complete(ECOmitF5Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF6Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoRegulatorScientistCourtAuditorOperatorOrOwnerFunctionFusion, ECAdvocateSeparationScope).
+? complete(ECOmitF7Record, ECGuardianAppointment, ECOmitSharedV111).
+# => FALSE

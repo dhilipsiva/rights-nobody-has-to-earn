@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $reader with $subject.
+? interrupt(FSBOD_22, ECFusedR0V170, ECGuardianAutomaticStay).
+# => FALSE
+# Fuse $registry_review with $operator.
+? interrupt(FSBOD_22, ECFusedR1V170, ECGuardianAutomaticStay).
+# => FALSE
+# Fuse $registry_review with $review.
+? interrupt(FSBOD_22, ECFusedR2V170, ECGuardianAutomaticStay).
+# => FALSE
+# Fuse $registry_review with $source.
+? interrupt(FSBOD_22, ECFusedR3V170, ECGuardianAutomaticStay).
+# => FALSE

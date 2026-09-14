@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF0Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyAnimalCoverageConstitutionVersionScope).
+? complete(ECOmitF1Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? complete(ECOmitF2Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class10EveryControllerCareDuties, ECDirectEffectClassScope).
+? complete(ECOmitF3Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF4Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCareDutiesNotProofAnimalIsHappyHealthyFulfilledTameUsefulOrBehavingNormally, ECNoWelfareOutcomeInferenceScope).
+? complete(ECOmitF5Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECContinuousPublicRescueVeterinaryShelterRehabilitationAndPlacementRoute, ECControllerFailureRouteScope).
+? complete(ECOmitF6Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECControlledAnimalWelfareDuties, ECKindScope).
+? complete(ECOmitF7Record, ECControlledAnimalWelfareDuties, ECOmitSharedV50).
+# => FALSE

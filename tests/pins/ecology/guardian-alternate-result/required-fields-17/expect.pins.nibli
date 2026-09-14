@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $guardian_alternate_appointment_start, ECDependencyGuardianAlternateAppointmentStartScope).
+? complete(ECOmitF0Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $guardian_alternate_appointment_territory, ECDependencyGuardianAlternateAppointmentTerritoryScope).
+? complete(ECOmitF1Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $guardian_alternate_appointment_window, ECDependencyGuardianAlternateAppointmentWindowScope).
+? complete(ECOmitF2Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECDependencyGuardianAlternateAppointmentJurisdictionScope).
+? complete(ECOmitF3Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECJurisdictionScope).
+? complete(ECOmitF4Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $mandate_set, ECCompleteCurrentMemberMandateSetScope).
+? complete(ECOmitF5Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $method, ECMethodVersionScope).
+? complete(ECOmitF6Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $office, ECDecisionInstitutionScope).
+? complete(ECOmitF7Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

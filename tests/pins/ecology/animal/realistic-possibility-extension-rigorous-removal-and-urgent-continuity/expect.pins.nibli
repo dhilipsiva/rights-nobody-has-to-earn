@@ -1,0 +1,54 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 26
+? complete(ECExtendedTaxonV16, ECAnimalTaxonExtension, ECExtendedTaxonV24).
+# => TRUE
+? obliged(FSBOD_28, ECExtendThePresumptionOnCredibleRealisticPossibilityNotCertainty, ECExtendedTaxonV16).
+# => TRUE
+? complete(ECExtendedAnimalV16, ECCrediblySentientAnimalCoverage, ECExtendedAnimalV23).
+# => TRUE
+? class(ECExtendedAnimalV23, ECCrediblySentientProtectedAnimal, ECExtendedAnimalV16).
+# => TRUE
+? prevents(ECExtendedAnimalV23, ECAnimalInterestWaiverByOwnerOrContract).
+# => TRUE
+:accept
+authorized(ECRemovedTaxonV20, ECIndependentReviewAuthority, ECRemovedTaxonV18).
+? narrow(ECExtendedTaxonV24, ECExtendedTaxonV26, ECAnimalTaxonPresumption).
+# => TRUE
+? obliged(FSBOD_28, ECApplyOnlyTheIndependentlyReviewedNonRegressiveTaxonRevision, ECRemovedTaxonV18).
+# => TRUE
+? complete(ECExtendedAnimalV16, ECCrediblySentientAnimalCoverage, ECExtendedAnimalV23).
+# => FALSE
+? complete(ECUnregisteredAnimalRescueV16, ECUrgentPlausibleAnimalProtection, ECExtendedAnimalV23).
+# => TRUE
+? obliged(ECUnregisteredAnimalRescueV11, ECProvideUrgentAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECUnregisteredAnimalRescueV16).
+# => TRUE
+? obliged(ECUnregisteredAnimalRescueV0, ECMaintainUrgentAnimalCareWhenOriginalRouteFails, ECUnregisteredAnimalRescueV16).
+# => TRUE
+? person(ECExtendedAnimalV23).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { secure() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { eats() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { dwell() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { healthy() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { learn() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { expresses() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { believe() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { meets() }).
+# => FALSE
+? authority(ECExtendedAnimalV23).
+# => FALSE
+? prisoner(ECExtendedAnimalV23).
+# => FALSE
+? punish(Court, ECExtendedAnimalV23).
+# => FALSE
+? capture(ECExtendedAnimalV23).
+# => FALSE
+? restrain(ECExtendedAnimalV23).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? interrupt(FSBOD_31, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? interrupt(FSBOD_31, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyGuardianAlternateFunctionConstitutionVersionScope).
+? interrupt(FSBOD_31, ECOmitF2Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencySubstituteGuardianMeritsConstitutionVersionScope).
+? interrupt(FSBOD_31, ECOmitF3Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? interrupt(FSBOD_31, ECOmitF4Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class4TemporaryIrreversiblePartPause, ECDirectEffectClassScope).
+? interrupt(FSBOD_31, ECOmitF5Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? interrupt(FSBOD_31, ECOmitF6Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAlternateNewAuthorizationAfterSubstitute, ECKindScope).
+? interrupt(FSBOD_31, ECOmitF7Record, ECGuardianAutomaticStay).
+# => FALSE

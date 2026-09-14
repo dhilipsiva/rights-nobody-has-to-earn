@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECPositiveV163, ECGuardianInformationFunction, ECPositiveV172).
+# => FALSE
+? permits(FSBOD_22, ECOnlyExactLawfulInformationAndReviewedEvidenceDemand, ECPositiveV163).
+# => FALSE
+? obliged(ECPositiveV166, ECPublishLawfulAssessmentEvidenceUncertaintyAlternativesAndReasons, ECPositiveV163).
+# => FALSE
+? obliged(FSBOD_22, ECFacilitateParticipationPublishSupportedAdviceAndIndependentlyExamineResponseFailure, ECPositiveV163).
+# => FALSE

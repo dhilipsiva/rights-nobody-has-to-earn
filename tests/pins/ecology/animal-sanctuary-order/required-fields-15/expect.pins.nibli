@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECPaymentDoesNotDischargeRescueCareRestorationOrNonRepetition, ECAnimalRemedyNonSubstitutionScope).
+? complete(ECOmitF0Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF1Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF2Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECProvideExactSuitableAnimalSanctuary, ECAnimalRemedyActionScope).
+? complete(ECOmitF3Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF4Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF5Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECSpeciesAppropriateLongTermCareAndIndependentReviewNotIndefiniteWarehousing, ECAnimalRemedySpecificBoundaryScope).
+? complete(ECOmitF6Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF7Record, ECAnimalSanctuaryOrder, ECOmitSharedV46).
+# => FALSE

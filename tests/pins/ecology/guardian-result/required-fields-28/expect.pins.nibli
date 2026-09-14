@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($service, $record, ECGuardianCollegialResultTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF0Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF1Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF2Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECNoCountProvesCompletenessNoGenericThresholdComputedHere, ECFiniteBoundaryScope).
+? complete(ECOmitF3Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECNonemptyFiniteAuthenticRosterWithEveryCurrentMandateIndependentlyReviewed, ECRosterFindingScope).
+? complete(ECOmitF4Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF5Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF6Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECPublishedReasonsMinorityPositionsAndCorrection, ECCollegialReasonsScope).
+? complete(ECOmitF7Record, ECGuardianCollegialResult, ECOmitSharedV146).
+# => FALSE

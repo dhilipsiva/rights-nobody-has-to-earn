@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentAppointingSourceDeFactoControlScope).
+? complete(ECOmitF0Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentAppointingSourceDirectControlScope).
+? complete(ECOmitF1Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentCurrentGovernmentDeFactoControlScope).
+? complete(ECOmitF2Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentCurrentGovernmentDirectControlScope).
+? complete(ECOmitF3Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentEitherChamberDeFactoControlScope).
+? complete(ECOmitF4Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentEitherChamberDirectControlScope).
+? complete(ECOmitF5Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentIndustryDeFactoControlScope).
+? complete(ECOmitF6Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyExaminedNoMajorityControl, ECAppointmentIndustryDirectControlScope).
+? complete(ECOmitF7Record, ECGuardianAlternateAppointment, ECOmitSharedV111).
+# => FALSE

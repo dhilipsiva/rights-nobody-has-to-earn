@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECFinalIndependentMeritsNotInitiatorAdviceOrInterimOrder, ECFinalDispositionScope).
+? complete(ECOmitF0Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF1Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF2Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoGuardianAlternateAdvocacyOrRegulatoryFunctionInFinalMerits, ECSubstituteMeritsSeparationScope).
+? complete(ECOmitF3Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoRestartByGroundOfficeLabelReviewerOrWindowChange, ECNoReplayEvasionScope).
+? complete(ECOmitF4Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECOnlyMateriallyNewAuthorizationOrEvidenceMayOpenAnotherPair, ECMaterialNoveltyScope).
+? complete(ECOmitF5Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECOutcomeDistinguishesProtectionDutiesFromRestrictionOfTheExactChallengedAct, ECFinalOutcomeScopeScope).
+? complete(ECOmitF6Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF7Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE

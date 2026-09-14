@@ -513,7 +513,13 @@ fn query(atom: &str, expected: bool) -> String {
 pub(crate) fn protective_consumer(id: &str) -> Result<Vec<String>, Error> {
     if !matches!(
         id,
-        "asylum" | "removal" | "consented-effect" | "evacuation" | "external" | "defect"
+        "asylum"
+            | "removal"
+            | "consented-effect"
+            | "consultation"
+            | "evacuation"
+            | "external"
+            | "defect"
     ) {
         return Err(Error::new("undeclared protective mobility interface"));
     }

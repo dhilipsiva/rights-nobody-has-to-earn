@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $external_selection_temporal, ECExternalSelectionTemporalScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_temporal_record, ECExternalSelectionTemporalRecordScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_temporal_review, ECExternalSelectionTemporalReviewScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $fallback_configuration, ECExternalSeatFallbackConfigurationScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $fallback_configuration, ECExternalSelectionFallbackConfigurationScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $fallback_configuration, ECFallbackConfigurationScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECExternalQualificationJurisdictionScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $jurisdiction, ECExternalSeatJurisdictionScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerAppointment, ECOmitSharedV111).
+# => FALSE

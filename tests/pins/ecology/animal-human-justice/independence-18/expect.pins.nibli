@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $external_humanappeal_evidence with $external_humanappeal_operator.
+? complete(ECFusedR0V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR0V120).
+# => FALSE
+# Fuse $external_humanappeal_evidence with $external_humanappeal_reader.
+? complete(ECFusedR1V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR1V120).
+# => FALSE
+# Fuse $external_humanappeal_evidence with $external_humanappeal_review.
+? complete(ECFusedR2V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR2V120).
+# => FALSE
+# Fuse $external_humanappeal_operator with $external_humanappeal_alternate.
+? complete(ECFusedR3V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR3V120).
+# => FALSE

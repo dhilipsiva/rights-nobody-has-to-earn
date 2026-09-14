@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentReviewEstablishesCareHandlingContinuityAndWelfareConditionsSecuredForThisUse, ECAnimalUseWelfareFindingScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECLowImpactWildAnimalIntervention, ECKindScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECLowImpactWildAnimalInterventionTemporalContract, ECTemporalContractKindScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoOwnershipSectorLicenceContractTraditionReligionOrCultureExemption, ECNoAnimalCoreExemptionScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF7Record).
+# => FALSE

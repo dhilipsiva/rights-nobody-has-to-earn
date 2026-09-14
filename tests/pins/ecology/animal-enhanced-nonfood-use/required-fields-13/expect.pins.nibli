@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $start, ECStartScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyAnimalEnhancedTestSubjectScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECDependencyAnimalEnhancedTestTerritoryScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyAnimalEnhancedTestConstitutionVersionScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $welfare_arrangement, ECCurrentSpeciesAppropriateWelfareArrangementEvidenceScope).
+? permits(ECOmitSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECOmitF7Record).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF0Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF1Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class10EvidenceResponsiveProtectedTaxon, ECDirectEffectClassScope).
+? complete(ECOmitF2Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF3Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAnimalTaxonExtension, ECKindScope).
+? complete(ECOmitF4Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAnimalTaxonExtensionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECConclusiveProofNotRequiredAndUncertaintyRemainsVisible, ECSentienceThresholdScope).
+? complete(ECOmitF6Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentPublicEvidenceEstablishesRealisticPossibilityOfSentience, ECSentiencePossibilityFindingScope).
+? complete(ECOmitF7Record, ECAnimalTaxonExtension, ECOmitSharedV24).
+# => FALSE

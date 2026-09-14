@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? permits(ECConflictSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECConflictF0Record).
+# => FALSE
+? related(ECConflictF0Record, ECRecordAmbiguity).
+# => TRUE
+? permits(ECConflictSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECConflictF1Record).
+# => FALSE
+? related(ECConflictF1Record, ECRecordAmbiguity).
+# => TRUE
+? permits(ECConflictSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECConflictF2Record).
+# => FALSE
+? related(ECConflictF2Record, ECRecordAmbiguity).
+# => TRUE
+? permits(ECConflictSharedV72, ECOnlyEnhancedNonFoodNonResearchAnimalUse, ECConflictF3Record).
+# => FALSE
+? related(ECConflictF3Record, ECRecordAmbiguity).
+# => TRUE

@@ -2,6 +2,15 @@
 
 # Amendment enactment and effective-version contract
 
+The ecological implementation (2026-09-14) adds separate positive certification findings
+for direct animal protected-subject status and the severe-avoidable-suffering
+and dispensable-killing core. Independently reviewed, exact-source core-breach
+records feed the existing `AmendmentSourceAuthorization` refusal, including
+its actual host consumer. See
+[Environmental rights, commons and direct animal protection](book-1-ecological-and-animal-protection-contract.md).
+This extends the represented corridor; it does not make the host an exhaustive
+semantic reviewer or an authentication, publication or deployment service.
+
 Status: implemented and verified, 2026-09-13; measured validation is below.
 The author approved the exact reader edits on 2026-09-13; they are inserted
 unchanged in chapters 1 and 12 and the method, with supply

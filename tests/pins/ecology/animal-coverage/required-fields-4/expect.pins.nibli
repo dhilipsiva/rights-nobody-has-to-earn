@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECCrediblySentientAnimalCoverage, ECKindScope).
+? complete(ECOmitF0Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECCrediblySentientAnimalCoverageTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF1Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECDirectBodilyIntegrityAvoidablePainFearDistressInjuryDiseaseAndDeprivationProtection, ECAnimalBodilyInterestScope).
+? complete(ECOmitF2Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentSpeciesAndIndividualClassificationEvidence, ECAnimalClassificationScope).
+? complete(ECOmitF3Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF4Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF5Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoOwnerWealthPriceAffectionProductivityRarityOrGlobalAnimalWorthScore, ECAnimalNoWorthRankingScope).
+? complete(ECOmitF6Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoPersonFloorBallotCandidacyOfficePropertyTitleContractCapacityOrPoliticalWeight, ECAnimalNotHumanStatusScope).
+? complete(ECOmitF7Record, ECCrediblySentientAnimalCoverage, ECOmitSharedV23).
+# => FALSE

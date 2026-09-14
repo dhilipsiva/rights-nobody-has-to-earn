@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF0Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF1Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_holder, ECAffectedCollectiveHolderScope).
+? complete(ECOmitF2Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_holder, ECExternalCollectiveHolderScope).
+? complete(ECOmitF3Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_title, ECExistingCollectiveTitleScope).
+? complete(ECOmitF4Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $collective_title, ECExternalCollectiveObjectScope).
+? complete(ECOmitF5Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF6Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $end, ECEndScope).
+? complete(ECOmitF7Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE

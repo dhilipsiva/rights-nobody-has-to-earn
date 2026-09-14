@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $external_humanappeal_evidence, ECExternalHumanAppealEvidenceScope).
+? complete(ECOmitF0Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanappeal_record, ECExternalHumanAppealRecordScope).
+? complete(ECOmitF1Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanappeal_review, ECExternalHumanAppealReviewScope).
+? complete(ECOmitF2Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanappeal_source, ECExternalHumanAppealSourceScope).
+? complete(ECOmitF3Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanappeal_window, ECExternalHumanAppealWindowScope).
+? complete(ECOmitF4Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanassistance_end, ECExternalHumanAssistanceEndScope).
+? complete(ECOmitF5Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanassistance_evidence, ECExternalHumanAssistanceEvidenceScope).
+? complete(ECOmitF6Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_humanassistance_record, ECExternalHumanAssistanceRecordScope).
+? complete(ECOmitF7Record, ECSeparateHumanJusticeForAnimalViolation, ECOmitSharedV120).
+# => FALSE

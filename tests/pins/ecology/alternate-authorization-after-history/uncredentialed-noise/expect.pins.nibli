@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? interrupt(FSBOD_31, ECNoiseV229, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECNoiseV2, ECNoiseV3, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_31, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECNoiseV229).
+# => TRUE
+? related(ECNoiseV229, ECRecordAmbiguity).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECIndependentlyAdjudicatedCausalConnectionToHarm, ECRestorationCausationScope).
+? complete(ECOmitF0Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyAdjudicatedInherentlyHazardousActivity, ECInherentHazardScope).
+? complete(ECOmitF1Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF2Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF3Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPermitCompetentCareAndNoIntentDoNotDefeatRestorationTier, ECStrictTierScope).
+? complete(ECOmitF4Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF5Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF6Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF7Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE

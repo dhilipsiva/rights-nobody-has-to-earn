@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_evidence_record, ECDependencyHighConsequenceBasisEvidenceRecordScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_evidence_version, ECDependencyHighConsequenceBasisEvidenceVersionScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_method, ECDependencyHighConsequenceBasisMethodVersionScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_operator, ECDependencyHighConsequenceBasisActorScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_review, ECDependencyHighConsequenceBasisReviewerScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_source, ECDependencyHighConsequenceBasisWriterScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_start, ECDependencyHighConsequenceBasisStartScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $high_consequence_basis_window, ECDependencyHighConsequenceBasisWindowScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF7Record).
+# => FALSE

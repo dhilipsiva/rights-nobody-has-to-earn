@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $place, ECPlaceScope).
+? complete(ECOmitF0Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECAffectedPopulationScope).
+? complete(ECOmitF1Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyAnimalWelfareAffectedPopulationScope).
+? complete(ECOmitF2Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $prior_review, ECEnhancedAnimalIndependentPriorReviewScope).
+? complete(ECOmitF3Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $purpose, ECEnhancedAnimalPurposeScope).
+? complete(ECOmitF4Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reader, ECChallengeReaderScope).
+? complete(ECOmitF5Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF6Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF7Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE

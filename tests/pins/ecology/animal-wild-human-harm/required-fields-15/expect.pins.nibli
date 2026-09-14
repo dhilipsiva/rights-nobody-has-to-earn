@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPrioritizeHumanCausePreventionRescueAndRepairWithSeparateHabitatAndEcosystemEffects, ECWildHumanResponseScope).
+? complete(ECOmitF0Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF1Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF2Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF3Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECWildHumanCausedAnimalHarm, ECKindScope).
+? complete(ECOmitF4Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECWildHumanCausedAnimalHarmTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE

@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReasonedExactCorrectionWithIndependentAccessAndPublishedRelianceConsequences, ECCorrectionFindingScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReplacementHasNoForceUntilItsOwnCompleteFreshSubstantiveContractDerives, ECReplacementNonEnactmentScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE

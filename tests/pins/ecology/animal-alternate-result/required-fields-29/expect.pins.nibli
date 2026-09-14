@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($service, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF0Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF1Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF2Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($service, $record, ECUniqueCompleteAuthenticSubmissionsForThisExactDecision, ECSubmissionFindingScope).
+? complete(ECOmitF3Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $admin, ECDecisionAdministratorScope).
+? complete(ECOmitF4Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF5Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_alternate_appointment_case, ECDependencyAnimalAlternateAppointmentCaseScope).
+? complete(ECOmitF6Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_alternate_appointment_end, ECDependencyAnimalAlternateAppointmentEndScope).
+? complete(ECOmitF7Record, ECAnimalAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

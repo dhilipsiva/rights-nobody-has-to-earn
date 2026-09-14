@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 11
+? obliged(State, ECProvidePromptSafeAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECUrgentPlausibleAnimalProtectionRequestExample).
+# => TRUE
+? permits(ECUrgentRequester, ECSearchOrSeizure, ECUrgentPlausibleAnimalProtectionRequestExample).
+# => FALSE
+? capture(ECUrgentUnidentifiedSubject).
+# => FALSE
+? prisoner(ECUrgentUnidentifiedSubject).
+# => FALSE
+? person(ECUrgentUnidentifiedSubject).
+# => FALSE
+? obliged(State, ECProvidePromptNoFaultEnvironmentalProtectionAndHumanAnimalContinuityBeforeRecordReconciliation, ECUrgentEnvironmentalProtectionRequestExample).
+# => TRUE
+? permits(ECUrgentRequester, ECSearchOrSeizure, ECUrgentEnvironmentalProtectionRequestExample).
+# => FALSE
+? capture(ECUrgentUnidentifiedSubject).
+# => FALSE
+? prisoner(ECUrgentUnidentifiedSubject).
+# => FALSE
+? person(ECUrgentUnidentifiedSubject).
+# => FALSE
+? permits(ECLifecycleTargetV49, ECOnlyOrdinaryLowHarmAnimalUse, ECLifecycleTargetV62).
+# => FALSE

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $auditor.
+? interrupt(FSBOD_32, ECFusedR0V20, ECFinalJudicialProtection).
+# => FALSE
+# Fuse $alternate with $operator.
+? interrupt(FSBOD_32, ECFusedR1V20, ECFinalJudicialProtection).
+# => FALSE
+# Fuse $alternate with $subject.
+? interrupt(FSBOD_32, ECFusedR2V20, ECFinalJudicialProtection).
+# => FALSE
+# Fuse $auditor with $operator.
+? interrupt(FSBOD_32, ECFusedR3V20, ECFinalJudicialProtection).
+# => FALSE

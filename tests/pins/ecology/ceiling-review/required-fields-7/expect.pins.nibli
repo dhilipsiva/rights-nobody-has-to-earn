@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $subject, ECDependencyCeilingSubjectScope).
+? complete(ECOmitF0Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECExternalCourtSubjectScope).
+? complete(ECOmitF1Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? complete(ECOmitF2Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECDependencyCeilingTerritoryScope).
+? complete(ECOmitF3Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF4Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF5Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECDependencyCeilingConstitutionVersionScope).
+? complete(ECOmitF6Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECExternalCourtVersionScope).
+? complete(ECOmitF7Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE

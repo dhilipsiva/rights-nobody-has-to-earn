@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAnimalFoodFloorAndCareContinuity, ECKindScope).
+? complete(ECOmitF0Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalFoodFloorAndCareContinuityTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF1Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECDelayAndUnderinvestmentRemainPublicFailureNotPermanentAvoidableHarmPermission, ECFoodDelayFailureScope).
+? complete(ECOmitF2Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF3Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF4Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoHumanFoodLossWhileSupplyWorkersCommunitiesOrLocalCapacityAreNotReady, ECFoodFloorContinuityScope).
+? complete(ECOmitF5Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoSupplyArrivalOperationalFeasibilityOrTransitionSuccessInferred, ECFoodNoOperationInferenceScope).
+? complete(ECOmitF6Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF7Record, ECAnimalFoodFloorAndCareContinuity, ECOmitSharedV24).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $revision, ECRevisionScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer, ECAssignedIndependentReviewerScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer, ECDependencySubstituteReviewerAppointmentSubjectScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_appointment_case, ECDependencySubstituteReviewerAppointmentCaseScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE

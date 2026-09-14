@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalTaxonPresumptionRemoval, ECKindScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalTaxonPresumptionRemovalTemporalContract, ECTemporalContractKindScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECComparablyRigorousIndependentPublicEvidenceNotResidualUncertainty, ECTaxonRemovalEvidenceScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentComparisonOfPriorPresumptionAndCurrentTaxonSpecificEvidence, ECTaxonRemovalComparisonScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? narrow(ECOmitSharedV26, ECOmitSharedV28, ECAnimalTaxonPresumption).
+# => FALSE

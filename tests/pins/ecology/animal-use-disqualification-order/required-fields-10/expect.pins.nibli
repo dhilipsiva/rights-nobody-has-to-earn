@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $external_animalcourt_executor, ECExternalAnimalCourtExecutorScope).
+? complete(ECOmitF0Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_animalcourt_result, ECExternalAnimalCourtResultScope).
+? complete(ECOmitF1Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_animalcourt_review, ECExternalAnimalCourtReviewScope).
+? complete(ECOmitF2Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_animalcourt_source, ECExternalAnimalCourtSourceScope).
+? complete(ECOmitF3Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_animalcourt_temporal, ECExternalAnimalCourtTemporalScope).
+? complete(ECOmitF4Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_animalcourt_temporal_record, ECExternalAnimalCourtTemporalRecordScope).
+? complete(ECOmitF5Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_animalcourt_temporal_review, ECExternalAnimalCourtTemporalReviewScope).
+? complete(ECOmitF6Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $jurisdiction, ECExternalAnimalCourtJurisdictionScope).
+? complete(ECOmitF7Record, ECAnimalUseDisqualificationOrder, ECOmitSharedV46).
+# => FALSE

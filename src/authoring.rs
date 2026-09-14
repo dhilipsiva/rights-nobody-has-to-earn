@@ -12,6 +12,8 @@ use crate::context::Context;
 
 #[path = "authoring/amendment.rs"]
 mod amendment;
+#[path = "authoring/ecology.rs"]
+mod ecology;
 #[path = "authoring/integrity.rs"]
 mod integrity;
 #[path = "authoring/justice.rs"]
@@ -228,9 +230,10 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             | "mobility"
             | "justice"
             | "public-safety"
+            | "ecology"
     ) {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|public-safety|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|public-safety|ecology|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -245,6 +248,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         "mobility" => mobility::generate(context, &mut export)?,
         "justice" => justice::generate(context, &mut export)?,
         "public-safety" => public_safety::generate(context, &mut export)?,
+        "ecology" => ecology::generate(context, &mut export)?,
         _ => unreachable!(),
     }
     let count = export.cases.len();

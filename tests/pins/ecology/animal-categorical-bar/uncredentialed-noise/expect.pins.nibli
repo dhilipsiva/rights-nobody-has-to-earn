@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECNoiseV42, ECAnimalCategoricalRefusal, ECNoiseV49).
+# => TRUE
+? oppose(ECNoiseV49, ECNoiseV0, ECAnimalUse).
+# => TRUE
+? prevents(ECNoiseV42, ECAuthorizationOfCategoricallyProhibitedAnimalConduct).
+# => TRUE
+? obliged(ECNoiseV37, ECStopAndRemedyTheExactCategoricallyProhibitedAnimalConduct, ECNoiseV42).
+# => TRUE
+? related(ECNoiseV42, ECRecordAmbiguity).
+# => FALSE

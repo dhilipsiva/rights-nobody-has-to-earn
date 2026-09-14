@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $animal_coverage_record, ECDependencyAnimalCoverageRecordScope).
+? complete(ECOmitF0Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_coverage_review, ECDependencyAnimalCoverageReviewerScope).
+? complete(ECOmitF1Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_coverage_revision, ECDependencyAnimalCoverageRevisionScope).
+? complete(ECOmitF2Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_coverage_source, ECDependencyAnimalCoverageWriterScope).
+? complete(ECOmitF3Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_coverage_start, ECDependencyAnimalCoverageStartScope).
+? complete(ECOmitF4Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_coverage_window, ECDependencyAnimalCoverageWindowScope).
+? complete(ECOmitF5Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF6Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF7Record, ECBoundedWildAnimalInterventionTest, ECOmitSharedV49).
+# => FALSE

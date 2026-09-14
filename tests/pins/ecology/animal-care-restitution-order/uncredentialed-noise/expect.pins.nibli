@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+? complete(ECNoiseV40, ECAnimalCareRestitutionOrder, ECNoiseV47).
+# => TRUE
+? obliged(FSBOD_34, ECPayExactAdjudicatedNecessaryAnimalCareCosts, ECNoiseV40).
+# => TRUE
+? related(ECNoiseV40, ECRecordAmbiguity).
+# => FALSE

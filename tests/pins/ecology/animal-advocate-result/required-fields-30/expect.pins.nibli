@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_evaluation, ECDependencyAnimalAdvocateAppointmentEvaluationScope).
+? complete(ECOmitF0Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_evidence_record, ECDependencyAnimalAdvocateAppointmentEvidenceRecordScope).
+? complete(ECOmitF1Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_evidence_version, ECDependencyAnimalAdvocateAppointmentEvidenceVersionScope).
+? complete(ECOmitF2Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_method, ECDependencyAnimalAdvocateAppointmentMethodVersionScope).
+? complete(ECOmitF3Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_operator, ECDependencyAnimalAdvocateAppointmentActorScope).
+? complete(ECOmitF4Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_place, ECDependencyAnimalAdvocateAppointmentPlaceScope).
+? complete(ECOmitF5Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_population, ECDependencyAnimalAdvocateAppointmentAffectedPopulationScope).
+? complete(ECOmitF6Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_appointment_record, ECDependencyAnimalAdvocateAppointmentRecordScope).
+? complete(ECOmitF7Record, ECAnimalAdvocateCollegialResult, ECOmitSharedV146).
+# => FALSE

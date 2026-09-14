@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_operator, ECDependencySubstituteReviewerFunctionActorScope).
+? complete(ECOmitF0Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_record, ECDependencySubstituteReviewerFunctionRecordScope).
+? complete(ECOmitF1Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_review, ECDependencySubstituteReviewerFunctionReviewerScope).
+? complete(ECOmitF2Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_revision, ECDependencySubstituteReviewerFunctionRevisionScope).
+? complete(ECOmitF3Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_source, ECDependencySubstituteReviewerFunctionWriterScope).
+? complete(ECOmitF4Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_start, ECDependencySubstituteReviewerFunctionStartScope).
+? complete(ECOmitF5Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $substitute_reviewer_function_window, ECDependencySubstituteReviewerFunctionWindowScope).
+? complete(ECOmitF6Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECDependencySubstituteReviewerFunctionTerritoryScope).
+? complete(ECOmitF7Record, ECSubstituteFinalGuardianMerits, ECOmitSharedV50).
+# => FALSE

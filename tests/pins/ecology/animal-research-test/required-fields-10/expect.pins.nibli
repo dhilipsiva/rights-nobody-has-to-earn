@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF0Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_end, ECDependencyAnimalWelfareEndScope).
+? complete(ECOmitF1Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_evaluation, ECDependencyAnimalWelfareEvaluationScope).
+? complete(ECOmitF2Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_evidence_record, ECDependencyAnimalWelfareEvidenceRecordScope).
+? complete(ECOmitF3Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_evidence_version, ECDependencyAnimalWelfareEvidenceVersionScope).
+? complete(ECOmitF4Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_method, ECDependencyAnimalWelfareMethodVersionScope).
+? complete(ECOmitF5Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_operator, ECDependencyAnimalWelfareActorScope).
+? complete(ECOmitF6Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_record, ECDependencyAnimalWelfareRecordScope).
+? complete(ECOmitF7Record, ECStrictAllAnimalResearchTest, ECOmitSharedV77).
+# => FALSE

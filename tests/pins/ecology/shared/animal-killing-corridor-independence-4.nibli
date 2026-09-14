@@ -1,0 +1,60 @@
+# SPDX-License-Identifier: CC0-1.0
+authorized(ECFusedR0V3, AmendmentSourceBindingAuthority, ECFusedR0V1).
+authorized(ECFusedR0V8, IndependentAmendmentEffectReviewAuthority, ECFusedR0V1).
+authorized(ECFusedR1V16, ECCaseScopedActor, ECFusedR1V22).
+authorized(ECFusedR1V8, IndependentAmendmentEffectReviewAuthority, ECFusedR1V1).
+authorized(ECFusedR2V16, ECCaseScopedActor, ECFusedR2V22).
+authorized(ECFusedR2V3, AmendmentSourceBindingAuthority, ECFusedR2V1).
+authorized(ECFusedR2V8, IndependentAmendmentEffectReviewAuthority, ECFusedR2V1).
+authorized(ECFusedR3V16, ECCaseScopedActor, ECFusedR3V22).
+authorized(ECFusedR3V3, AmendmentSourceBindingAuthority, ECFusedR3V1).
+authorized(ECFusedR3V8, IndependentAmendmentEffectReviewAuthority, ECFusedR3V1).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V14, AmendmentJurisdictionScope).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V19, AmendmentProposalScope).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V26, AmendmentLegalScope).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V31, AmendmentTransitionScope).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V32, AmendmentBaseScope).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V4, AmendmentCandidateScope).
+observe(ECFusedR0V3, ECFusedR0V1, ECFusedR0V9, AmendmentEffectReviewScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V14, AmendmentJurisdictionScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V19, AmendmentProposalScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V26, AmendmentLegalScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V31, AmendmentTransitionScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V32, AmendmentBaseScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V4, AmendmentCandidateScope).
+observe(ECFusedR0V8, ECFusedR0V1, ECFusedR0V9, AmendmentEffectReviewScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V14, AmendmentJurisdictionScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V19, AmendmentProposalScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V26, AmendmentLegalScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V31, AmendmentTransitionScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V32, AmendmentBaseScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V4, AmendmentCandidateScope).
+observe(ECFusedR1V8, ECFusedR1V1, ECFusedR1V9, AmendmentEffectReviewScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V14, AmendmentJurisdictionScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V19, AmendmentProposalScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V26, AmendmentLegalScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V31, AmendmentTransitionScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V32, AmendmentBaseScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V4, AmendmentCandidateScope).
+observe(ECFusedR2V3, ECFusedR2V1, ECFusedR2V9, AmendmentEffectReviewScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V14, AmendmentJurisdictionScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V19, AmendmentProposalScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V26, AmendmentLegalScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V31, AmendmentTransitionScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V32, AmendmentBaseScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V4, AmendmentCandidateScope).
+observe(ECFusedR2V8, ECFusedR2V1, ECFusedR2V9, AmendmentEffectReviewScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V14, AmendmentJurisdictionScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V19, AmendmentProposalScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V26, AmendmentLegalScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V31, AmendmentTransitionScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V32, AmendmentBaseScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V4, AmendmentCandidateScope).
+observe(ECFusedR3V3, ECFusedR3V1, ECFusedR3V9, AmendmentEffectReviewScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V14, AmendmentJurisdictionScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V19, AmendmentProposalScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V26, AmendmentLegalScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V31, AmendmentTransitionScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V32, AmendmentBaseScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V4, AmendmentCandidateScope).
+observe(ECFusedR3V8, ECFusedR3V1, ECFusedR3V9, AmendmentEffectReviewScope).

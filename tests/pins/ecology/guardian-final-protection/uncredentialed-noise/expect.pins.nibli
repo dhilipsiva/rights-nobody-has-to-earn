@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? interrupt(FSBOD_17, ECNoiseV59, ECFinalJudicialProtection).
+# => TRUE
+? oppose(ECNoiseV2, ECNoiseV3, ECFinalJudicialProtection).
+# => TRUE
+? obliged(ECNoiseV61, ECComplyWithExactFinalProtectiveDirection, ECNoiseV59).
+# => TRUE
+? obliged(FSBOD_17, ECSecureCaseSpecificProtectionContinuityAndEffectiveReviewWithoutClaimingExecution, ECNoiseV59).
+# => TRUE
+? related(ECNoiseV59, ECRecordAmbiguity).
+# => FALSE

@@ -463,6 +463,8 @@ pub(crate) fn protective_consumer(context: &Context, id: &str) -> Result<Vec<Str
         id,
         "hearing"
             | "assistance"
+            | "defence"
+            | "appeal"
             | "survivor"
             | "case-relief"
             | "general-invalidation"

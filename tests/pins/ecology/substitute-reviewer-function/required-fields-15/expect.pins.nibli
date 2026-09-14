@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_appointment_source, ECDependencySubstituteReviewerAppointmentWriterScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_appointment_start, ECDependencySubstituteReviewerAppointmentStartScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_appointment_territory, ECDependencySubstituteReviewerAppointmentTerritoryScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $substitute_reviewer_appointment_window, ECDependencySubstituteReviewerAppointmentWindowScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $unavailable_actor, ECUnavailableActorScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencySubstituteReviewerAppointmentConstitutionVersionScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE

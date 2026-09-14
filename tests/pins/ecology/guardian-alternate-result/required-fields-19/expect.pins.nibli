@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $revision, ECRevisionScope).
+? complete(ECOmitF0Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF1Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $roster, ECExactFiniteRosterScope).
+? complete(ECOmitF2Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF3Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $service, ECIndependentResultServiceScope).
+? complete(ECOmitF4Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF5Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? complete(ECOmitF6Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $submissions, ECUniqueCompleteSubmissionSetScope).
+? complete(ECOmitF7Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

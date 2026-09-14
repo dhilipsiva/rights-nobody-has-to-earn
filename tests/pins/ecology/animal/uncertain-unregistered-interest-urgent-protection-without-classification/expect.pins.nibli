@@ -1,0 +1,38 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 18
+? complete(ECUncertainAnimalV16, ECCrediblySentientAnimalCoverage, ECUncertainAnimalV23).
+# => FALSE
+? complete(ECUnregisteredAnimalRescueV16, ECUrgentPlausibleAnimalProtection, ECUncertainAnimalV23).
+# => TRUE
+? obliged(ECUnregisteredAnimalRescueV11, ECProvideUrgentAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECUnregisteredAnimalRescueV16).
+# => TRUE
+? obliged(ECUnregisteredAnimalRescueV0, ECMaintainUrgentAnimalCareWhenOriginalRouteFails, ECUnregisteredAnimalRescueV16).
+# => TRUE
+? person(ECUncertainAnimalV23).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { secure() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { eats() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { dwell() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { healthy() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { learn() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { expresses() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { believe() }).
+# => FALSE
+? entitled(ECUncertainAnimalV23, event { meets() }).
+# => FALSE
+? authority(ECUncertainAnimalV23).
+# => FALSE
+? prisoner(ECUncertainAnimalV23).
+# => FALSE
+? punish(Court, ECUncertainAnimalV23).
+# => FALSE
+? capture(ECUncertainAnimalV23).
+# => FALSE
+? restrain(ECUncertainAnimalV23).
+# => FALSE

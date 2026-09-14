@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECCredibleUrgentThreatWhereCoveredAnimalInterestPlausiblyExists, ECPlausibleProtectedInterestScope).
+? complete(ECOmitF0Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF1Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNecessaryLeastHarmRescueVeterinaryCareShelterAndContinuityRoute, ECUrgentAnimalResponseScope).
+? complete(ECOmitF2Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNeitherOwnerConsentNorFinalFaultDeterminationPrerequisite, ECUrgentNoOwnerVetoScope).
+? complete(ECOmitF3Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF4Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoSearchEntrySeizureHumanCustodyOrPunishmentPowerFromThisFinding, ECUrgentNoCoerciveShortcutScope).
+? complete(ECOmitF5Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF6Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF7Record, ECUrgentPlausibleAnimalProtection, ECOmitSharedV23).
+# => FALSE

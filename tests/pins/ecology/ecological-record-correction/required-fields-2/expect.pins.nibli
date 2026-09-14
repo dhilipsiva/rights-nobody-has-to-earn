@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $replacement, ECProposedReplacementRecordScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $replacement_revision, ECProposedReplacementRevisionScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECRevisionScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalCorrection, ECOmitSharedV26).
+# => FALSE

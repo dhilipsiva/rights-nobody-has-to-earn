@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: CC0-1.0
+authorized(ECFusedR1V1, ECAuditReaderAuthority, ECFusedR1V19).
+authorized(ECFusedR2V1, ECAuditReaderAuthority, ECFusedR2V19).
+authorized(ECFusedR3V0, ECAlternateReaderAuthority, ECFusedR3V19).
+authorized(FSBOD_28, ECCaseScopedActor, ECFusedR0V19).
+authorized(FSBOD_28, ECCaseScopedActor, ECFusedR1V19).
+authorized(FSBOD_28, ECCaseScopedActor, ECFusedR2V19).
+authorized(FSBOD_28, ECCaseScopedActor, ECFusedR3V19).

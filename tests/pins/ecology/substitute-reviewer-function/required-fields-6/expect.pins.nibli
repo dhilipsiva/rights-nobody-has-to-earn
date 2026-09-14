@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $unavailable_actor, ECUnavailableActorScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECDependencySubstituteReviewerAppointmentConstitutionVersionScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class6PredeclaredIndependentFunctionalContinuity, ECDirectEffectClassScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECActualCurrentMandateCoversThisCaseTerritoryAndFunction, ECSubstituteMandateCoverageScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF0Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECFarmedAnimal, ECAnimalLivingContextScope).
+? complete(ECOmitF1Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECFarmedAnimalProtection, ECKindScope).
+? complete(ECOmitF2Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECFarmedAnimalProtectionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF3Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF4Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF5Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF6Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF7Record, ECFarmedAnimalProtection, ECOmitSharedV70).
+# => FALSE

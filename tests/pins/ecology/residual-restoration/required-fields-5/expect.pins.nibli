@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECMonitorVerifyCorrectAndRepairFailedMeasure, ECResidualFailureRepairScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNecessaryInPlaceRestorationBeforeResidualCompensation, ECInPlaceRestorationScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCeilingBreachIrreplaceableUniqueSacredOrLocalRightsLoss, ECHardLimitsScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoDoubleCountingOrDuplicateCredit, ECDoubleCountingScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? permits(ECOmitSharedV14, ECReplaceableResidualMeasure, ECOmitF7Record).
+# => FALSE

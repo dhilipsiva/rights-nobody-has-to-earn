@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_evidence_version, ECDependencyAnimalAdvocateResultEvidenceVersionScope).
+? complete(ECOmitF0Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_method, ECDependencyAnimalAdvocateResultMethodVersionScope).
+? complete(ECOmitF1Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_operator, ECDependencyAnimalAdvocateResultActorScope).
+? complete(ECOmitF2Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_record, ECDependencyAnimalAdvocateResultRecordScope).
+? complete(ECOmitF3Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_review, ECDependencyAnimalAdvocateResultReviewerScope).
+? complete(ECOmitF4Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_revision, ECDependencyAnimalAdvocateResultRevisionScope).
+? complete(ECOmitF5Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_source, ECDependencyAnimalAdvocateResultWriterScope).
+? complete(ECOmitF6Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_advocate_result_start, ECDependencyAnimalAdvocateResultStartScope).
+? complete(ECOmitF7Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE

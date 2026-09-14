@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF0Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualPriorCollectiveEcologicalConsultation, ECKindScope).
+? complete(ECOmitF1Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualPriorCollectiveEcologicalConsultationTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF2Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF3Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndividualBodilyHousingChildAndPoliticalRightsRemainIndependentOfCollectiveDecision, ECCollectiveIndividualRightsWallScope).
+? complete(ECOmitF4Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECMeaningfulIndigenousSubsistenceReligiousAndConscienceAccommodationWithoutSevereAvoidableSufferingWaiver, ECCollectiveAccommodationBoundaryScope).
+? complete(ECOmitF5Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNecessaryProcessNotSufficientActivityPermissionEnactmentOrPerformedOperation, ECCollectiveNoExecutionInferenceScope).
+? complete(ECOmitF6Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNeitherConsentNorConsultationAuthorizesCeilingBreachAnimalCoreViolationOrUnrelatedCoercion, ECCollectiveNoCoreWaiverScope).
+? complete(ECOmitF7Record, ECActualPriorCollectiveEcologicalConsultation, ECOmitSharedV46).
+# => FALSE

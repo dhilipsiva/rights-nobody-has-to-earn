@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF0Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF1Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECSeriousCompatiblePurposeEstablishedNotALabel, ECEnhancedAnimalPurposeFindingScope).
+? complete(ECOmitF2Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECSpeciesAppropriateCareMonitoringHumaneEndpointsAftercareAndContinuitySecured, ECEnhancedAnimalCareScope).
+? complete(ECOmitF3Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF4Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECThisTestDoesNotAuthorizeFoodResearchOrAnyActivityByItself, ECEnhancedTestBoundaryScope).
+? complete(ECOmitF5Record, ECEnhancedAnimalUseTest, ECOmitSharedV74).
+# => FALSE

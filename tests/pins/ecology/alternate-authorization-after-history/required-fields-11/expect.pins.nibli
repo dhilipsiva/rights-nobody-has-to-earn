@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECIndependentOldAndNewSubstantiveComparisonNotRelabeling, ECMaterialComparisonScope).
+? interrupt(FSBOD_31, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? interrupt(FSBOD_31, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedMaterialAuthorizationChange, ECMaterialNoveltyFindingScope).
+? interrupt(FSBOD_31, ECOmitF2Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? interrupt(FSBOD_31, ECOmitF3Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoNoveltyFromOfficeGroundWindowReviewerOrVersionLabelAlone, ECNoveltyLimitScope).
+? interrupt(FSBOD_31, ECOmitF4Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoPolicyVetoFinalMeritsBudgetProgrammeOrScientificOracle, ECGuardianPowerLimitScope).
+? interrupt(FSBOD_31, ECOmitF5Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECOnlyIrreversiblePartPausedWithEssentialFloorAndAnimalCareContinuity, ECPauseScopeScope).
+? interrupt(FSBOD_31, ECOmitF6Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? interrupt(FSBOD_31, ECOmitF7Record, ECGuardianAutomaticStay).
+# => FALSE

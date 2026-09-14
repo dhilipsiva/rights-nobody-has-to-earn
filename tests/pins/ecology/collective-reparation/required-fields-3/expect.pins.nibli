@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $liable_actor, ECLiableActorScope).
+? complete(ECOmitF0Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $method, ECMethodVersionScope).
+? complete(ECOmitF1Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $operator, ECResponsibleActorScope).
+? complete(ECOmitF2Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $place, ECPlaceScope).
+? complete(ECOmitF3Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECAffectedPopulationScope).
+? complete(ECOmitF4Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reader, ECChallengeReaderScope).
+? complete(ECOmitF5Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF6Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF7Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE

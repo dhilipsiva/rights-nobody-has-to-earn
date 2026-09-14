@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECOrdinaryRequestV161, ECGuardianCommonsClaim, ECOrdinaryRequestExecutionV724).
+# => TRUE
+? obliged(ECOrdinaryRequestV159, ECReceiveAndIndependentlyReviewCommonsClaim, ECOrdinaryRequestV161).
+# => TRUE
+? permits(ECOrdinaryRequestExecutionV714, ECExactHighConsequenceActivity, ECOrdinaryRequestExecutionV717).
+# => TRUE
+? obliged(ECOrdinaryRequestExecutionV710, ECWithholdIrreversibleExecutionWhileExactCurrentStayApplies, ECOrdinaryRequestExecutionV717).
+# => TRUE
+? oppose(ECOrdinaryRequestExecutionV3, ECOrdinaryRequestExecutionV4, ECGuardianAutomaticStay).
+# => FALSE

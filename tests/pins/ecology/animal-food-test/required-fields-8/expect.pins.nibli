@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF0Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStrictAllAnimalFoodTest, ECKindScope).
+? complete(ECOmitF1Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStrictAllAnimalFoodTestTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF2Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECTasteHabitPrestigeProfitAdvertisingOrPriceAloneInsufficient, ECFoodInsufficientGroundsScope).
+? complete(ECOmitF3Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $activity, ECAnimalActivityScope).
+? complete(ECOmitF4Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $affected_people, ECAffectedFoodRecipientsScope).
+? complete(ECOmitF5Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF6Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_welfare_end, ECDependencyAnimalWelfareEndScope).
+? complete(ECOmitF7Record, ECStrictAllAnimalFoodTest, ECOmitSharedV71).
+# => FALSE

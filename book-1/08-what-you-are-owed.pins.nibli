@@ -59,7 +59,19 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 51
+# The environmental and direct-animal reader additions are exercised in
+# tests/pins/ecology/: environmental-claim, domain, ceiling, high-consequence,
+# residual-restoration, dual-continuity, hazard-liability, contribution-liability,
+# animal-coverage, animal-ordinary-use, animal-food-*, animal-research-*,
+# animal-risk-*, animal/categorical-*, upstream and counterfactual cases.
+# These no-record controls become TRUE only with the respective full findings;
+# the ordinary positive and withholding cases test that contrast separately.
+:expect-pins 53
+
+? complete(ECReaderClaim, ECEnvironmentalRightClaim, Bela).
+# => FALSE
+? class(ECReaderAnimal, ECCrediblySentientProtectedAnimal, ECReaderCoverage).
+# => FALSE
 
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])owe[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"

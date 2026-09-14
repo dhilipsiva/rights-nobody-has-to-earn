@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $scope, ECLegalScopeScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $start, ECStartScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECDependencyHighConsequenceBasisSubjectScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECDependencyHighConsequenceBasisTerritoryScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyHighConsequenceBasisConstitutionVersionScope).
+? permits(ECOmitSharedV714, ECExactHighConsequenceActivity, ECOmitF7Record).
+# => FALSE

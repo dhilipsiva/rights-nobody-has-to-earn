@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECAccessibleFinalReasonsCorrectionRemedyAndLawfulHistory, ECFinalRemedyScope).
+? complete(ECOmitF0Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF1Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECFinalGuardianMerits, ECKindScope).
+? complete(ECOmitF2Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECFinalGuardianMeritsTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF3Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECFinalIndependentMeritsNotInitiatorAdviceOrInterimOrder, ECFinalDispositionScope).
+? complete(ECOmitF4Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF5Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF6Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoRestartByGroundOfficeLabelReviewerOrWindowChange, ECNoReplayEvasionScope).
+? complete(ECOmitF7Record, ECFinalGuardianMerits, ECOmitSharedV49).
+# => FALSE

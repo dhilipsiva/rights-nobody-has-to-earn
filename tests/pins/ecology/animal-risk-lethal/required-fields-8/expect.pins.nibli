@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $version, ECDependencyAnimalEnhancedTestConstitutionVersionScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECDependencyAnimalGraveRiskTestConstitutionVersionScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $welfare_arrangement, ECCurrentSpeciesAppropriateWelfareArrangementEvidenceScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class10ExactBoundedAnimalIntervention, ECDirectEffectClassScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECFeasibleNonlethalRoutesUnavailableIneffectiveOrWouldCauseGreaterGraveHarm, ECAnimalLethalLastResortFindingScope).
+? permits(ECOmitSharedV117, ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse, ECOmitF7Record).
+# => FALSE

@@ -624,8 +624,18 @@ the domain.
   and the refusal to excuse irreplaceable loss with an offset. They are
   constitutional barriers over supplied records, not measurements, working
   institutions, delivery, restoration, or proof that any ceiling is being met.
-  Non-human-animal protection and its separate machinery remain outside this
-  landed family.
+  The record also supplies distinct animal protection: direct bodily, life and
+  care interests without human personhood or a ballot; welfare for every
+  controlled use; enhanced conditions for lethal, invasive or high-severity
+  use; strict food and research alternatives; categorical prohibitions; and
+  particular rescue and remedy routes. The Future Conditions Guardian and
+  Animal Protection Advocate remain separate from each other and from courts,
+  science and operators. Guardian stays, independent review, shared replay
+  limits and exact ends do not amount to a policy veto or an operating office.
+  Chapters [8](08-what-you-are-owed.md),
+  [9](09-the-vote-conviction-does-not-take.md),
+  [12](12-changing-the-rules.md) and
+  [14](14-when-the-system-notices-it-broke.md) keep those limits visible.
 
 - **Friendship, leisure, mutual aid, associations, and the residual free social
   field:** Chapters [8](08-what-you-are-owed.md),

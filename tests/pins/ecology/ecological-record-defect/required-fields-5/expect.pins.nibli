@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECIndependentEcologicalAnimalRecordDefectTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentPositiveEvidenceNotMereAbsenceOrAnUnreviewedAllegation, ECRecordFindingBasisScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryOrAutomaticHarmfulAuthorityFromCorrectionOrRenamedWindow, ECRecordCorrectionLimitScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoLostHumanStandingFloorBallotLibertyCollectiveRightOrAnimalCare, ECRecordFailureRightsWallScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECOnlyExactAffectedRelianceWithdrawnNoSafetyGuiltExecutionOrRepairedOutcomeInference, ECWithdrawalPolarityScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECOriginalWriterOrControllerAcknowledgementNotRequiredForFindingOrUrgentRemedy, ECNoOriginalActorVetoScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalRecordDefect, ECOmitSharedV24).
+# => FALSE

@@ -10,7 +10,9 @@ use serde::{Deserialize, Serialize};
 
 use crate::cli::{Args, Error};
 use crate::context::Context;
-use crate::pin::{CompiledSource, LoadedSource, PinOptions, PreparedPinEngine, RunOutput};
+use crate::pin::{
+    CompiledSource, LoadedSource, PinCaseGroup, PinOptions, PreparedPinEngine, RunOutput,
+};
 use crate::scheduler::{self, CancellationToken};
 
 const INVENTORY: &str = "tests/pins/suites.json";
@@ -56,6 +58,35 @@ impl Case {
         (self.base != "live" || !self.edits.is_empty())
             .then_some((self.base.as_str(), self.edits.as_slice()))
     }
+}
+
+// Only consecutive cases are combined: original case order and first-failure
+// priority remain unchanged. A prefix is data from the captured input set,
+// not an alternative constitution or a persisted verification result.
+fn fixture_batches(cases: &[Case]) -> Vec<&[Case]> {
+    let mut result = Vec::new();
+    let mut start = 0;
+    while start < cases.len() {
+        let first = &cases[start];
+        let mut stop = start + 1;
+        if first.fixtures.len() > 1 {
+            while stop < cases.len() {
+                let next = &cases[stop];
+                if next.base != first.base
+                    || next.edits != first.edits
+                    || next.scan != first.scan
+                    || next.fixtures.len() < 2
+                    || next.fixtures[0] != first.fixtures[0]
+                {
+                    break;
+                }
+                stop += 1;
+            }
+        }
+        result.push(&cases[start..stop]);
+        start = stop;
+    }
+    result
 }
 
 fn yes() -> bool {
@@ -371,43 +402,75 @@ pub(crate) fn run(args: Args) -> Result<(), Error> {
         total: cases.len(),
         started,
     };
+    let batches = fixture_batches(cases);
     let outcomes = scheduler::run_grouped(
-        cases,
+        &batches,
         workers,
         Worker::default,
-        Case::preparation_key,
-        |worker, case, cancel| {
+        |batch| batch[0].preparation_key(),
+        |worker, batch, cancel| {
+            let first = &batch[0];
             #[cfg(test)]
-            crate::pin::profile_case_started(&case.id);
+            crate::pin::profile_case_started(&first.id);
             #[cfg(test)]
             let prepare_started = Instant::now();
-            let engine = worker.engine(&inputs, case, cancel, &compiled)?;
+            let engine = worker.engine(&inputs, first, cancel, &compiled)?;
             #[cfg(test)]
             let preparation = prepare_started.elapsed();
-            #[cfg(test)]
-            let run_started = Instant::now();
-            let result = engine.run_case(
-                &inputs.sources(&case.fixtures),
-                &inputs.sources(&case.pins),
-                PinOptions {
-                    allow_shell: case.allow_shell,
-                    working_directory: Some(context.root()),
-                    cancellation: Some(cancel),
-                },
-                case.scan,
-            );
-            #[cfg(test)]
-            crate::pin::profile_case_finished(&case.id, preparation, run_started.elapsed());
-            progress.completed(&case.id);
-            if result.exit_code != 0 {
-                return Err(Error::with_exit_code(
-                    format!("{}\n{}{}", case.id, result.stdout, result.stderr),
-                    result.exit_code,
-                ));
+            let run =
+                |group: Option<&PinCaseGroup<'_>>, skip: usize| -> Result<Vec<RunOutput>, Error> {
+                    let mut outcomes = Vec::new();
+                    for case in batch.iter() {
+                        #[cfg(test)]
+                        crate::pin::profile_case_started(&case.id);
+                        #[cfg(test)]
+                        let run_started = Instant::now();
+                        let fixtures = inputs.sources(&case.fixtures[skip..]);
+                        let pins = inputs.sources(&case.pins);
+                        let options = PinOptions {
+                            allow_shell: case.allow_shell,
+                            working_directory: Some(context.root()),
+                            cancellation: Some(cancel),
+                        };
+                        let result = match group {
+                            Some(group) => group.run_case(&fixtures, &pins, options, case.scan),
+                            None => engine.run_case(&fixtures, &pins, options, case.scan),
+                        };
+                        #[cfg(test)]
+                        crate::pin::profile_case_finished(
+                            &case.id,
+                            if outcomes.is_empty() {
+                                preparation
+                            } else {
+                                Duration::ZERO
+                            },
+                            run_started.elapsed(),
+                        );
+                        progress.completed(&case.id);
+                        if result.exit_code != 0 {
+                            return Err(Error::with_exit_code(
+                                format!("{}\n{}{}", case.id, result.stdout, result.stderr),
+                                result.exit_code,
+                            ));
+                        }
+                        outcomes.push(result);
+                    }
+                    Ok(outcomes)
+                };
+            if batch.len() > 1 {
+                engine
+                    .with_fixture_prefix(
+                        &inputs.sources(&first.fixtures[..1]),
+                        batch.iter().any(|case| case.scan),
+                        |group| run(Some(group), 1),
+                    )
+                    .map_err(|error| Error::new(format!("{} shared prefix: {error}", first.id)))?
+            } else {
+                run(None, 0)
             }
-            Ok(result)
         },
     )?;
+    let outcomes: Vec<_> = outcomes.into_iter().flatten().collect();
     let pins: usize = outcomes.iter().map(|result: &RunOutput| result.pins).sum();
     let defects: usize = outcomes.iter().map(|result| result.defects).sum();
     if args.only.is_some() {
@@ -432,6 +495,55 @@ pub(crate) fn run(args: Args) -> Result<(), Error> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn fixture_batches_preserve_case_order_boundaries_and_per_case_options() {
+        let case = Case {
+            id: "a".into(),
+            base: "live".into(),
+            fixtures: vec!["shared.nibli".into(), "a.nibli".into()],
+            pins: vec!["a.pins.nibli".into()],
+            edits: vec![],
+            scan: true,
+            allow_shell: false,
+        };
+        let mut second = case.clone();
+        second.id = "b".into();
+        second.allow_shell = true;
+        second.fixtures[1] = "b.nibli".into();
+        let mut third = case.clone();
+        third.id = "c".into();
+        third.scan = false;
+        let mut fourth = case.clone();
+        fourth.id = "d".into();
+        let all = [case, second, third, fourth];
+        let groups = fixture_batches(&all);
+        assert_eq!(
+            groups.iter().map(|group| group.len()).collect::<Vec<_>>(),
+            [2, 1, 1]
+        );
+        assert_eq!(
+            groups
+                .iter()
+                .flat_map(|group| group.iter().map(|case| case.id.as_str()))
+                .collect::<Vec<_>>(),
+            ["a", "b", "c", "d"]
+        );
+        assert!(!groups[0][0].allow_shell);
+        assert!(groups[0][1].allow_shell);
+        let mut changed = all[1].clone();
+        changed.edits.push(Edit {
+            before: "person(A).".into(),
+            after: "person(B).".into(),
+        });
+        assert_eq!(fixture_batches(&[all[0].clone(), changed]).len(), 2);
+        let mut changed = all[1].clone();
+        changed.base = "variant".into();
+        assert_eq!(fixture_batches(&[all[0].clone(), changed]).len(), 2);
+        let mut changed = all[1].clone();
+        changed.fixtures[0] = "different.nibli".into();
+        assert_eq!(fixture_batches(&[all[0].clone(), changed]).len(), 2);
+    }
 
     #[test]
     fn preparation_affinity_uses_exact_base_and_ordered_edits_only() {

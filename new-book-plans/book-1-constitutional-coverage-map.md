@@ -12,6 +12,27 @@
 > prose cannot complete or upgrade the specification. Neither repository status
 > proves lawful enactment or deployment.
 
+## Environmental and animal implementation update — 2026-09-14
+
+[Environmental rights, commons and direct animal protection](book-1-ecological-and-animal-protection-contract.md)
+specifies distinct present-human claims, Class 9 axes and Class 10 direct
+interests. Its cards carry the affected holder or condition, duty-bearer,
+limit, actual-source evidence, failure polarity, independent review,
+challenge, alternate, continuity, remedy, audit and end. Science, democratic
+enactment, Guardian advocacy, animal advocacy and adjudication stay separate.
+Actual scarcity, collective-rights, justice and amendment consumers keep their
+own legal conditions. The numerical, operational and empirical handoff remains
+collection-only in Book 2.
+
+The 130 cards and their ordinary and counterfactual cases are implemented.
+The complete verifier passed all 77,902 pins with complete contradiction checks
+and no findings in 1,119.23 seconds; the five-minute target remains unmet.
+The exact delegated-approved reader text is retained in
+`ecology-reader-draft.md` and inserted in chapters 8, 9, 12 and 14, with the
+opening note, Part V and method aligned. These verified case-level
+interfaces supersede the historical absence descriptions below to their
+bounded extent, not as evidence of an operating institution or real protection.
+
 ## Integrity implementation update — 2026-09-12
 
 The democratic/administrative integrity decision now has executable office,

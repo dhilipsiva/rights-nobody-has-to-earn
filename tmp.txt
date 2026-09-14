@@ -1,65 +1,81 @@
 SPDX-License-Identifier: CC-BY-4.0
 
-Resumed at the author's explicit request on 2026-09-14.
+AUTHOR STOP CONDITION — 2026-09-14
 
-COMPLETED: FIVE-MINUTE COMPLETE VERIFICATION
+Finish only the current environmental/Class 9/Class 10 TODO, complete its
+required checks, commit and push, then stop the goal. Do not select another
+TODO. This supersedes the earlier repeat-through-the-backlog instruction
+for this run. Suggestions and exact prose have delegated author approval;
+do not ask questions or invent personal testimony or external operations.
 
-Normal ./verify.sh passed all 12,860 pins across 4,190 cases in 275.04 seconds
-(4m35.04s), with complete contradiction checks and no findings.
-All nine known-defect expectations still reproduce. The performance TODO is
-complete and its tracker item was removed.
-
-Four workers, release binary prebuilt, LD_PRELOAD / MALLOC_CONF /
-_RJEM_MALLOC_CONF unset. No other session-owned build/test overlapped.
-External wall 275.29s, user CPU 1004.99s, system CPU 42.17s, utilization 380%,
-peak RSS 13,447,508 KiB, one major page fault, no swaps.
-Other machine activity was not controlled; this is a measured result, not a
-runtime guarantee or a persisted verdict. Earlier normal timing was 310.79s;
-the 283.31s system-preload experiment is not substituted for the normal result.
-
-Nibli commit 158e3b0cdeeb09d26ae9e87dd3d5487ab945c2ca is pushed:
-  reason: reuse clause bindings and domain rule inventories
-The rights commit accompanying this note integrates worker affinity, the
-Linux GNU bundled allocator, development-only profiling and measured docs.
-The cumulative engine patch against fa91a5f matches the committed companion.
-
-Validation: 642 reasoner tests and 29 runner tests pass (three manual probes
-ignored); current just ci-all passes, including native, 12 oracle cases, Lean,
-WASI and browser-class V8. All 16 supplemental domain-graph mutants caught.
-The earlier local-binding broad mutation sweep had 8 caught / 3 unviable /
-3 timeout; focused replay of all five overlay mutations completed with
-4 caught / 1 unviable. Do not call the original broad sweep timeout-free.
-Formatting, diff and cumulative-patch reverse-apply checks passed.
-No canonical prose, rule, pin, inventory or contradiction expectation changed.
-Full details: new-book-plans/nibli-performance-candidate.md.
-
-NEXT TODO
+COMPLETED ITEM
 
 Implement the ratified environmental right, Class 9 commons, and Class 10
-non-human-animal protections (TODO.md, expansion phase 2).
-No implementation of this item has begun in this performance commit.
-Read its full author-ratified decision:
-  new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md
-Then implement one coherent item, relevant focused checks and the complete
-verifier; commit/push and repeat through the backlog. Suggestions and exact
-prose are preapproved under delegated approval. Do not ask questions.
-Do not invent testimony, empirical evidence or successful external operations.
+non-human-animal protections. The 130 explicit cards now supply the distinct
+holders, actual democratic/court/scarcity/collective dependencies, Guardian
+and Animal Advocate functions, shared replay and historical finality, use-
+specific animal limits, tiered liability and separate remedies, precise
+record withdrawal/correction/end, and the actual animal-core amendment gate.
 
-Retain every substantive pin, actual-constitution ordinary case, declared
-counterfactual edit, statement order/ID, real scoped retraction, stateful
-sequence, trusted shell precondition and complete contradiction report.
-No hashes, verdict persistence, receipts, freshness or administrative gates.
-Book 2 remains inactive until Gate C.
+Rules and 9,373 ecology cases are exported. The complete inventory is 13,566
+cases and declares 77,902 pins. All 4,190 pre-item case IDs, pin paths, scan
+settings and shell permissions were retained. No hashes, receipts, schema/
+freshness checks, Git-history gates, persisted verdicts or skipped pins
+were added. Ordinary cases still load the actual complete constitution.
 
-Use the companion Nix environment for builds/tests. Respect its AGENTS.md /
-CLAUDE.md and excluded private/generated paths. Companion edits need normal
-escalation. SSH origin has no usable key; keep the configured remote unchanged:
-  git push https://github.com/dhilipsiva/nibli.git main
-  git fetch https://github.com/dhilipsiva/nibli.git main:refs/remotes/origin/main
-Rights uses git push origin main.
+The exact reader text in ecology-reader-draft.md matches chapters 8, 9, 12,
+14, the opening note, Part V and method. The spine is explicitly regenerated:
+95 predicates, 51 derived, 6,435 rules and 9 strata, with the same 8 floor
+rights. Coverage, taxonomy and the Book 2 collection-only handoff are updated.
+Book 2 remains inactive until Gate C; no institutional operation is claimed.
 
-The earlier empty-template fast-path experiment was removed: no demonstrated
-benefit. The retained optimization shares semantic domain rules only; the
-physical materialization-template iterator remains separate.
-Temporary supplemental mutation logs: /tmp/rights-domain-plan.XYpPqE.
-The old /tmp/rights-nibli-perf.llSbQz scratch checkout is gone.
+VALIDATION
+
+- Ecology development: 19 passed, one manual full-common-case duplicate
+  audit ignored (the ordinary verifier executes those exported cases).
+  Includes all 130 positive compositions, named alternatives, actual upstream
+  withdrawals, Guardian/animal/history/lifecycle sequences, amendment stages,
+  14 explicit counterfactual pairs and four cross-record effect regressions.
+- Runner development: 32 passed, three manual performance probes ignored.
+  Shared fixture prefixes retain isolated snapshots, sequential/scoped pins,
+  per-case shell permissions and full contradiction checks.
+- Amendment host: all 14 passed, including actual-source animal-core refusal
+  and the valid certification/publication/selection/fresh-query transition.
+- Exact retained reader text, formatting and git diff --check pass.
+
+The first full ecology run FAILED after 14m45.33s on a counterfactual edit
+anchored to a comment marker. It was not a pass. Edits now use actual
+statements, and the development suite also exercises the runner's exact
+normalization/edit logic. A separate regression reproduced a taxon finding
+lending duties to an unqualified record; effects of globally keyed findings
+now require their own full raw proof. All four affected-card tests pass.
+These were authoring defects; no Nibli engine defect was confirmed.
+
+Shared fixture evidence was reduced from 911 MiB to 403 MiB while retaining
+the expectations. The 555 obsolete, unreferenced draft files (79.84 MiB)
+were removed from the worktree and remain recoverable under:
+  /tmp/rights-ecology-obsolete.q5P9wO
+No pre-existing tracked fixture was deleted.
+
+COMPLETE VERIFIER PASSED
+
+All 77,902 pins across 13,566 cases passed with complete contradiction checks
+and no findings in 1,119.23 seconds (18m39.23s). Nine existing known-defect
+expectations still reproduce. Four workers, release binary prebuilt,
+LD_PRELOAD / MALLOC_CONF / _RJEM_MALLOC_CONF unset, no other session-owned
+build or test overlapping. External wall 18m39.62s, user CPU 4,018.59s,
+system CPU 190.34s, utilization 375%, peak RSS 21,580,352 KiB, zero major
+faults and zero swaps. Other machine activity was not controlled.
+
+This misses the five-minute target. The previous 4m35.04s result at rights
+7bcdc60 excludes ecology and is not the current timing. The completed
+ecological item was removed from TODO.md; the expanded-run performance
+follow-up remains open and was not started. The companion remains at the
+previously integrated engine; its unrelated research/benchmark work is untouched.
+
+STOP AFTER COMMIT AND PUSH
+
+The implementation, reader review and required checks are complete. This
+completion change is to be committed and pushed to origin/main, then the
+goal stopped as requested. Confirm the push before stopping. No later TODO
+has been selected or implemented; do not enter the performance follow-up.

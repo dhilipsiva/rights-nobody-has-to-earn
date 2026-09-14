@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECActualOrdinaryJudicialSafeguardsRemainRequiredForEachDisposition, ECJudicialContractBoundaryScope).
+? complete(ECOmitF0Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAuthenticDeclarationPredatesFailureAndNamesApplicableSubstitute, ECPredeclarationFindingScope).
+? complete(ECOmitF1Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentGuardianMeritsReviewOnly, ECSubstitutedFunctionScope).
+? complete(ECOmitF2Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentReviewConfirmsUnavailableActorHeldThisExactJudicialAssignment, ECOriginalAssignmentAndFailureFindingScope).
+? complete(ECOmitF3Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF4Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoApprovalByUnavailableOriginalReviewerRequired, ECNoUnavailableReviewerVetoScope).
+? complete(ECOmitF5Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoApprovalVetoIndefiniteHoldOrUnrelatedPowerFromInstitutionalFailure, ECNoFailureExpansionScope).
+? complete(ECOmitF6Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF7Record, ECSubstituteReviewerFunction, ECOmitSharedV29).
+# => FALSE

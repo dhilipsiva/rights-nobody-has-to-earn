@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $subject, ECSubjectScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECDependencyAnimalWildInterventionTestTerritoryScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyAnimalWildInterventionTestConstitutionVersionScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $welfare_arrangement, ECCurrentSpeciesAppropriateWelfareArrangementEvidenceScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class10ExactBoundedAnimalIntervention, ECDirectEffectClassScope).
+? permits(ECOmitSharedV49, ECOnlyBoundedLowImpactWildAnimalIntervention, ECOmitF7Record).
+# => FALSE

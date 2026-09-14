@@ -465,6 +465,26 @@ fn actual_constitution_transition() {
             after: true,
         },
     ];
+    for core in [
+        "animal-subject-corridor",
+        "animal-suffering-corridor",
+        "animal-killing-corridor",
+    ] {
+        let mut refused = r.clone();
+        // An authenticated exact core-breach finding must defeat the generic
+        // positive compatibility evidence at the host's actual source gate.
+        // This tests the trusted-input seam, not external truth or completeness.
+        refused.evidence += &read(&format!(
+            "tests/pins/ecology/counterfactual/{core}-actual-amendment-consumer/live-refusal/fixture.nibli"
+        ));
+        rejected(
+            host.certify(refused.clone(), refused.candidate.clone()),
+            "bounded check",
+        );
+        assert_eq!(host.effective.id, "EnactBase");
+        assert!(host.history.is_empty());
+        assert!(host.candidates.is_empty());
+    }
     host.certify(r.clone(), r.candidate.clone()).unwrap();
     host.publish(&r.transition, &r.candidate.source, &pub_evidence)
         .unwrap();

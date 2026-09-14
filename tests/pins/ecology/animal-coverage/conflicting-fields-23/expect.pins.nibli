@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECConflictF0Record, ECCrediblySentientAnimalCoverage, ECConflictSharedV23).
+# => FALSE
+? related(ECConflictF0Record, ECRecordAmbiguity).
+# => TRUE
+? complete(ECConflictF1Record, ECCrediblySentientAnimalCoverage, ECConflictSharedV23).
+# => FALSE
+? related(ECConflictF1Record, ECRecordAmbiguity).
+# => TRUE

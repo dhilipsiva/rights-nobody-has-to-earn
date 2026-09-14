@@ -551,6 +551,25 @@ different power. Its green result is therefore a formal coverage result over
 supplied records, not proof of environmental liveness, liberty enforcement, or
 restoration.
 
+The later environmental and animal implementation adds exact case-level
+contracts through explicit ecological authoring. Ordinary cases load the
+actual constitution, including its existing democratic, court, scarcity,
+collective-rights and amendment producers. Required-field omissions, conflicts,
+independence tests, actual upstream withdrawals, named alternatives and
+stateful sequences retain distinct expectations. Source counterfactuals change
+explicitly identified rules; they are not alternative whole constitutions.
+The inventory contains their exact execution paths.
+
+Sentience, science, causation, material novelty, institutional completeness and
+current time remain authenticated bounded inputs, not discoveries made by the
+engine. Every authority has its own window. End findings prevent reuse of that
+window; correction is not renewal. An authenticated past merits disposition
+can bar replay without continuing an expired restriction. The amendment host
+must read the actual core-preserving certification gate; it remains a
+trusted-input, in-memory reference model, not a deployment or authentication
+system. No check establishes that an advocate, court, rescue or restoration
+service operated.
+
 The substantive-equality family does not compress its content into one omnibus
 equality fact. Distinct `prevents` rules and pinned expectations keep the
 non-power effects separately testable. Three

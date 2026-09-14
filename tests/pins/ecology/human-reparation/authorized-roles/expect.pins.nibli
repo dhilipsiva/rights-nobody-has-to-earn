@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? complete(ECUnauth0Record, ECSeparateHumanEnvironmentalReparation, ECUnauthSharedV46).
+# => FALSE
+? complete(ECUnauth1Record, ECSeparateHumanEnvironmentalReparation, ECUnauthSharedV46).
+# => FALSE
+? complete(ECUnauth2Record, ECSeparateHumanEnvironmentalReparation, ECUnauthSharedV46).
+# => FALSE
+? complete(ECUnauth3Record, ECSeparateHumanEnvironmentalReparation, ECUnauthSharedV46).
+# => FALSE
+? complete(ECUnauth4Record, ECSeparateHumanEnvironmentalReparation, ECUnauthSharedV46).
+# => FALSE
+? complete(ECUnauth5Record, ECSeparateHumanEnvironmentalReparation, ECUnauthSharedV46).
+# => FALSE

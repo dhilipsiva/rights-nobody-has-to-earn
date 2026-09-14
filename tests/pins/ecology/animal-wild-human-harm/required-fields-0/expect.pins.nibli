@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $activity, ECAnimalActivityScope).
+? complete(ECOmitF0Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF1Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_coverage_end, ECDependencyAnimalCoverageEndScope).
+? complete(ECOmitF2Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_coverage_evaluation, ECDependencyAnimalCoverageEvaluationScope).
+? complete(ECOmitF3Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_coverage_evidence_record, ECDependencyAnimalCoverageEvidenceRecordScope).
+? complete(ECOmitF4Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_coverage_evidence_version, ECDependencyAnimalCoverageEvidenceVersionScope).
+? complete(ECOmitF5Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_coverage_method, ECDependencyAnimalCoverageMethodVersionScope).
+? complete(ECOmitF6Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $animal_coverage_operator, ECDependencyAnimalCoverageActorScope).
+? complete(ECOmitF7Record, ECWildHumanCausedAnimalHarm, ECOmitSharedV49).
+# => FALSE

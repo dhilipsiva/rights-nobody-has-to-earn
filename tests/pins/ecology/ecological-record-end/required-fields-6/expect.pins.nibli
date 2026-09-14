@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECOrdinaryEndIsNotItselfMisconductOrProofTheActivityActuallyStopped, ECRecordEndPolarityScope).
+? complete(ECOmitF0Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECOriginalWriterOrControllerAcknowledgementNotRequiredForFindingOrUrgentRemedy, ECNoOriginalActorVetoScope).
+? complete(ECOmitF1Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF2Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveLawfulHistoryPrivateEvidenceReasonsChallengeAndIndependentRemedy, ECRecordHistoryProtectionScope).
+? complete(ECOmitF3Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF4Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF5Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECRetainOnlyExactHistoricalReplayIdentityNoCarryOfCurrentLegalForce, ECCarryScope).
+? complete(ECOmitF6Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF7Record, ECIndependentEcologicalAnimalEndFinding, ECOmitSharedV24).
+# => FALSE

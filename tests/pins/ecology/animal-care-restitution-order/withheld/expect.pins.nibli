@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(ECPositiveV40, ECAnimalCareRestitutionOrder, ECPositiveV47).
+# => FALSE
+? obliged(FSBOD_34, ECPayExactAdjudicatedNecessaryAnimalCareCosts, ECPositiveV40).
+# => FALSE

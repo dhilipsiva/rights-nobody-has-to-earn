@@ -128,6 +128,137 @@ third parties' rights. This non-coercive route creates no arrest warrant,
 search power, seizure power or authority to imprison. None of these findings
 proves that a hearing occurred, compensation arrived or an institution acted.
 
+## A place in which life remains possible
+
+You need not wait until polluted air has made you ill, or unsafe water has
+deprived you of a meal, to have a claim. Every person has an independently
+enforceable environmental right: clean air, safe water, healthy soil and food
+systems, and protection from hazardous exposure. Public bodies owe it, and so
+do private actors who create, authorise, conceal or materially control the
+harm. Owning the damaged land is not the price of being heard.
+
+That claim includes usable information, uncertainty disclosed honestly,
+assessment before a consequential decision, participation, reasons,
+protection against retaliation, independent review and remedy. Assessment
+must follow cumulative effects, exposed populations, supply chains, borders
+and harms that arrive much later. Unequal exposure requires equality
+protection, not a score assigning some people greater environmental worth.
+
+The common world has a separate protection. Climate, water, air, soil,
+biodiversity, habitat, extraction and waste have distinct limits. Each limit
+must identify the protected condition, place, population, jurisdiction,
+period, and the scientific and legal versions on which it depends. Science
+supplies independently reviewed evidence; democratic law enacts the ceiling,
+minimum condition or resource budget and may choose stronger protection.
+A scientist does not enact a law by publishing a finding.
+
+A gain elsewhere cannot buy permission to cross a ceiling here. Nor can a
+payment replace a unique, sacred or functionally irreplaceable system.
+Avoid the harm first, minimise it at source, and restore in place. Only a
+positively replaceable residual may receive bounded compensation, with
+additionality, durability, relevant function and place, no double counting,
+monitoring and repair if the measure fails. Reparation owed to harmed people
+or a collective remains a separate debt.
+
+Credible serious or irreversible danger requires proportionate precaution;
+uncertainty is not a finding of safety. Replacing a standard requires
+independently established equal or stronger protected outcomes. Corrected
+science can justify recalibration, but cost or convenience cannot excuse
+regression. Changing a contractor, corporate form, supply chain or border
+cannot export a harm forbidden at home, and conservation cannot become a
+pretext for dispossession.
+
+Immediate prevention, containment, care and necessary public restoration do
+not wait for a final finding of fault. Causally connected inherently hazardous
+activity carries restoration and reasonable response-cost liability even
+without intent or carelessness. Other restorative liability requires
+adjudicated causal contribution or control; being a worker, investor or
+relative is insufficient. An unknown, absent or insolvent responsible actor
+does not make urgent public repair wait. Punishment needs its separate proof
+of culpability and fair process.
+
+The human floor and the ecological ceiling are not alternatives. Where no
+present route meets both, immediate human continuity must follow the least
+harmful available route while the shortfalls, alternatives, repair and
+source-bound transition remain explicit. Neither denial nor breach is
+renamed success. Budget choice, delay, monopoly or refusal to procure is not
+proof of physical scarcity. The existing scarcity safeguards still apply.
+
+None of this adds a ninth item to the floor, measures an outside condition,
+chooses a numerical ceiling, or reports that protection or restoration happened.
+
+## Protection does not require being human
+
+A credibly sentient animal is protected in its own interests, not merely as
+somebody's property or as a useful member of a species. Bodily integrity,
+continued life and species-appropriate conditions matter directly. That does
+not confer human personhood, the human floor, a ballot, property ownership or
+contract-making capacity. Protecting a habitat cannot substitute for caring
+for an individual animal, or the reverse.
+
+Vertebrates, cephalopods and decapod crustaceans begin with a presumption of
+sentience. Independently reviewed evidence of a realistic possibility extends
+protection; removing a presumption requires rigorous contrary evidence and
+review. The checks do not decide sentience themselves. Uncertain
+classification or missing ownership papers cannot make necessary urgent
+protection wait.
+
+Every controlled use owes a non-waivable welfare baseline: suitable food,
+water, shelter, care, movement and social opportunity; humane handling;
+protection from abandonment, exploitative overwork, extreme confinement,
+harmful breeding and avoidable invasive intervention. Public, private,
+cooperative, customary, household and nonprofit control all face it. Price,
+affection, productivity, recognition and usefulness establish no animal's
+worth or permission to harm it.
+
+Ordinary non-food, non-research use that is nonlethal, non-invasive and not
+high-severity does not need an enhanced serious-purpose test merely because
+it is a use. Lethal, invasive or high-severity use does: a serious compatible
+purpose, necessity, no reasonably available materially less-harmful
+alternative, least harm, care, prior independent review and its own end.
+Passing that test alone authorises no activity.
+
+Every controlled use to produce food faces a further rule, including
+nonlethal production. No safe, accessible, nutritionally adequate, materially
+less-harmful alternative may be reasonably available to the affected people.
+Taste, habit, prestige, profit, advertising or price alone is insufficient.
+Making less-harmful nutrition available is a public duty; transition must
+protect the human food floor, workers, communities and animal care. Delay
+and underinvestment are not permanent permission for avoidable harm.
+
+Research, testing and education require a serious health, safety or ecological
+purpose. Replacement comes before reduction and refinement. A scientifically
+valid non-animal or materially less-harmful alternative defeats permission.
+Independent scientific and ethical review, the least-harm valid design, pain
+relief, humane endpoints, aftercare, registration and reporting of negative
+and inconclusive results are required. An unrelieved severe or prolonged
+procedure is prohibited whatever its claimed purpose.
+
+Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment,
+extreme confinement, seriously harmful breeding and painful purposeless
+mutilation are forbidden. Convenience, profit, cosmetics or marketing cannot
+justify dispensable killing or severe suffering. Necessary humane euthanasia
+has its own qualified, least-distressing and independently reviewed route;
+owner inconvenience or ordinary cost does not supply it.
+
+Domestic, farmed, working, captive and wild animals keep the same direct
+core. Working animals need rest, care, safe limits and protected exit or
+retirement. Natural predation creates no offender and no duty to suppress
+every natural death. Human-caused pollution, infrastructure, entanglement,
+habitat destruction, capture, trade and killing require prevention and repair.
+
+Grave disease, danger or introduced-population harm needs authenticated,
+contestable evidence. Human causes and feasible prevention, exclusion,
+treatment, vaccination, relocation, fertility and habitat measures come
+first. Lethal control requires those routes to be unavailable, ineffective
+or more gravely harmful, then the least-painful reliable method, independent
+review, reassessment, repair and a fresh, bounded period of authority.
+An animal is never convicted for being dangerous or introduced.
+
+These are legal protections and conditions on supplied findings. They do not
+establish welfare, perform a rescue, operate a shelter or prove that a safer
+alternative is available in the world.
+
 ## Owed is not the same as delivered
 
 Now the thing this book will not soften.

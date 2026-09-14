@@ -44,6 +44,20 @@ economic rules remain conditional on effective remedy.
 The economic rules are constitutional limits on ordinary choice, not a frozen
 economic system and not proof that a lawful amendment was adopted or applied.
 
+The direct protected status of credibly sentient animals, and the prohibitions
+on severe avoidable suffering and dispensable killing, belong inside that
+unamendable corridor. Exact-change certification requires separate positive
+review of each core. A generic compatibility label cannot override an
+independently established breach bound to the actual base, candidate, proposal
+and transition: the affected candidate cannot be certified, published as
+authorised, or selected as the effective version through that route.
+
+That refusal neither bans discussing the proposal nor takes anyone's human
+rights or stops necessary animal care. It depends on authenticated,
+independently reviewed evidence of the candidate's effects. The checks do not
+discover every concealed change, authenticate the evidence, or prevent someone
+outside the authorised process from editing a source file.
+
 Three declared target names receive a different verdict.
 
 The name for the floor — what is owed to every person. The name for the rule that a

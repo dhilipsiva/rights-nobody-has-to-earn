@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $external_selection_epoch, ECExternalSelectionEpochScope).
+? complete(ECOmitF0Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_evidence, ECExternalSelectionEvidenceScope).
+? complete(ECOmitF1Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_executor, ECExternalSelectionExecutorScope).
+? complete(ECOmitF2Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_record, ECExternalSelectionRecordScope).
+? complete(ECOmitF3Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_result, ECExternalSelectionResultScope).
+? complete(ECOmitF4Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_review, ECExternalSelectionReviewScope).
+? complete(ECOmitF5Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_selection_certificate, ECExternalSelectionSelectionCertificateScope).
+? complete(ECOmitF6Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $external_selection_source, ECExternalSelectionSourceScope).
+? complete(ECOmitF7Record, ECAnimalAlternateAppointment, ECOmitSharedV111).
+# => FALSE

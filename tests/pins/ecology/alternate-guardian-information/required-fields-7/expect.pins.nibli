@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECCorrectionIndependentChallengeContinuityAndOrdinaryCourtRemedy, ECInformationRemedyScope).
+? complete(ECOmitF0Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExamineWhetherDecisionsWereReceivedAndActedOnWithoutAssumingSuccess, ECExecutionEvidenceBoundaryScope).
+? complete(ECOmitF1Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF2Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyReviewableCommissionedEvidenceNotScientificOracle, ECCommissionedEvidenceScope).
+? complete(ECOmitF3Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECMissingUnconfirmedOrFailedOperationRemainsUnestablishedOrFailure, ECNoInventedOperationScope).
+? complete(ECOmitF4Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNecessaryProportionateMinimizedLawfulDisclosureAndIndependentAccess, ECInformationNecessityScope).
+? complete(ECOmitF5Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF6Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoPolicyVetoPermitOperationProsecutionOrFinalMeritsAuthority, ECInstitutionalSeparationScope).
+? complete(ECOmitF7Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE

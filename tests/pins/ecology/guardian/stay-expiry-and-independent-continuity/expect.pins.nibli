@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 17
+? permits(ECStayExecutionV714, ECExactHighConsequenceActivity, ECStayExecutionV717).
+# => TRUE
+? obliged(ECStayExecutionV710, ECWithholdIrreversibleExecutionWhileExactCurrentStayApplies, ECStayExecutionV717).
+# => TRUE
+:accept-scoped
+observe(ECStayGuardianV170, ECStayGuardianV164, ECEndedGuardianWindow, ECCurrentDispositionScope).
+:accept
+authorized(ECStayGuardianV170, ECIndependentReviewAuthority, ECStayGuardianV164).
+:accept
+authorized(ECStayGuardianV166, ECReplayReviewAuthority, ECStayGuardianV165).
+? interrupt(FSBOD_22, ECStayGuardianV164, ECGuardianAutomaticStay).
+# => TRUE
+? oppose(ECStayExecutionV3, ECStayExecutionV4, ECGuardianAutomaticStay).
+# => TRUE
+? obliged(FSBOD_22, ECPauseOnlyIrreversiblePartForExactSharedInitialWindow, ECStayGuardianV164).
+# => TRUE
+? permits(ECStayExecutionV714, ECExactHighConsequenceActivity, ECStayExecutionV717).
+# => FALSE
+? complete(ECStayExecutionV3, ECHighConsequenceAuthorizationBasis, ECStayExecutionV724).
+# => TRUE
+:accept
+authorized(ECStayContinuityV22, ECIndependentReviewAuthority, ECStayContinuityV20).
+? permits(ECStayContinuityV14, ECOnlyReviewedReversibleEssentialContinuity, ECStayContinuityV20).
+# => TRUE
+? obliged(ECStayContinuityV14, ECPreserveOnlyReviewedReversibleEssentialContinuityDuringStay, ECStayContinuityV20).
+# => TRUE
+observe(ECStayGuardianV170, ECStayGuardianV164, ECEndedGuardianWindow, ECCurrentDispositionScope).
+? interrupt(FSBOD_22, ECStayGuardianV164, ECGuardianAutomaticStay).
+# => FALSE
+? permits(ECStayExecutionV714, ECExactHighConsequenceActivity, ECStayExecutionV717).
+# => TRUE
+? obliged(ECStayExecutionV710, ECWithholdIrreversibleExecutionWhileExactCurrentStayApplies, ECStayExecutionV717).
+# => TRUE
+? permits(ECUnapprovedActor, ECExactHighConsequenceActivity, ECUnapprovedActivity).
+# => FALSE

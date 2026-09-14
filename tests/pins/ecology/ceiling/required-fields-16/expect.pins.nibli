@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $science_evaluation, ECDependencyScienceEvaluationScope).
+? complete(ECOmitF0Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_evidence_record, ECDependencyScienceEvidenceRecordScope).
+? complete(ECOmitF1Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_evidence_version, ECDependencyScienceEvidenceVersionScope).
+? complete(ECOmitF2Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_method, ECDependencyScienceMethodVersionScope).
+? complete(ECOmitF3Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_operator, ECDependencyScienceActorScope).
+? complete(ECOmitF4Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_record, ECDependencyScienceRecordScope).
+? complete(ECOmitF5Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_review, ECDependencyScienceReviewerScope).
+? complete(ECOmitF6Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $science_revision, ECDependencyScienceRevisionScope).
+? complete(ECOmitF7Record, ECCurrentLegalCeiling, ECOmitSharedV68).
+# => FALSE

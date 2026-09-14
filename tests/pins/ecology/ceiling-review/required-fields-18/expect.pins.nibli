@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, Class4IndependentLegalityReview, ECDirectEffectClassScope).
+? complete(ECOmitF0Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF1Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCeilingLegalityReview, ECKindScope).
+? complete(ECOmitF2Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCeilingLegalityReviewTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF3Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCourtDoesNotChoosePolicyEnactLawOrClaimScientificTruth, ECReviewSeparationScope).
+? complete(ECOmitF4Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentLegalityReviewOfExactCeilingAndRecord, ECCeilingLegalityScope).
+? complete(ECOmitF5Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF6Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF7Record, ECCeilingLegalityReview, ECOmitSharedV107).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $activity, ECHazardousActivityScope).
+? complete(ECOmitF0Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF1Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF2Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECCaseScope).
+? complete(ECOmitF3Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $case, ECExternalCourtCaseScope).
+? complete(ECOmitF4Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $challenge, ECChallengeRouteScope).
+? complete(ECOmitF5Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $correction, ECCorrectionRouteScope).
+? complete(ECOmitF6Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $costs, ECReasonableResponseCostsScope).
+? complete(ECOmitF7Record, ECHazardousRestorationLiability, ECOmitSharedV46).
+# => FALSE

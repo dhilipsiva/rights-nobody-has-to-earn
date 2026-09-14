@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_operator, ECDependencyGuardianAlternateAppointmentActorScope).
+? complete(ECOmitF0Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_place, ECDependencyGuardianAlternateAppointmentPlaceScope).
+? complete(ECOmitF1Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_population, ECDependencyGuardianAlternateAppointmentAffectedPopulationScope).
+? complete(ECOmitF2Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_record, ECDependencyGuardianAlternateAppointmentRecordScope).
+? complete(ECOmitF3Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_review, ECDependencyGuardianAlternateAppointmentReviewerScope).
+? complete(ECOmitF4Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_revision, ECDependencyGuardianAlternateAppointmentRevisionScope).
+? complete(ECOmitF5Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_scope, ECDependencyGuardianAlternateAppointmentLegalScopeScope).
+? complete(ECOmitF6Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $guardian_alternate_appointment_source, ECDependencyGuardianAlternateAppointmentWriterScope).
+? complete(ECOmitF7Record, ECGuardianAlternateCollegialResult, ECOmitSharedV146).
+# => FALSE

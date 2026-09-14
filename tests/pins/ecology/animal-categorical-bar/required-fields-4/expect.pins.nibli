@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $population, ECDependencyAnimalCoverageAffectedPopulationScope).
+? complete(ECOmitF0Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reader, ECChallengeReaderScope).
+? complete(ECOmitF1Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF2Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF3Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECRevisionScope).
+? complete(ECOmitF4Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF5Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECDependencyAnimalCoverageLegalScopeScope).
+? complete(ECOmitF6Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF7Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE

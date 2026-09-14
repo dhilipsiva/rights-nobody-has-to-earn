@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECNoiseV39, ECHazardousRestorationLiability, ECNoiseV46).
+# => TRUE
+? obliged(ECNoiseV46, ECPayAdjudicatedReasonableRestorationAndResponseCosts, ECNoiseV39).
+# => TRUE
+? obliged(FSBOD_17, ECEnforceRestorativeLiabilityWithoutInventingCulpability, ECNoiseV39).
+# => TRUE
+? related(ECNoiseV39, ECRecordAmbiguity).
+# => FALSE

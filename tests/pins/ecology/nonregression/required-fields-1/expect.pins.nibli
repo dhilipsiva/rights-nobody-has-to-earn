@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $ceiling_evidence_version, ECDependencyCeilingEvidenceVersionScope).
+? complete(ECOmitF0Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_method, ECDependencyCeilingMethodVersionScope).
+? complete(ECOmitF1Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_operator, ECDependencyCeilingActorScope).
+? complete(ECOmitF2Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_record, ECDependencyCeilingRecordScope).
+? complete(ECOmitF3Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_review, ECDependencyCeilingReviewerScope).
+? complete(ECOmitF4Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_revision, ECDependencyCeilingRevisionScope).
+? complete(ECOmitF5Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_source, ECDependencyCeilingWriterScope).
+? complete(ECOmitF6Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $ceiling_start, ECDependencyCeilingStartScope).
+? complete(ECOmitF7Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE

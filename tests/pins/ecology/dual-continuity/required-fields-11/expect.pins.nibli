@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECNoBudgetDelayMonopolyWithholdingOrProcurementRefusalAsImpossibility, ECFalseScarcityScope).
+? complete(ECOmitF0Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF1Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoReproductiveFamilyMigrationCustodyOrWorthCoercion, ECDualRightsWallScope).
+? complete(ECOmitF2Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECObtainAlternativesRepairHarmReassessAndPreventRepetition, ECDualRepairScope).
+? complete(ECOmitF3Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF4Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPositiveEvidenceNoPresentRouteMeetsBothFloorAndCeiling, ECDualIncompatibilityEvidenceScope).
+? complete(ECOmitF5Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF6Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF7Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE

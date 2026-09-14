@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $external_court_evidence, ECExternalCourtEvidenceScope).
+? complete(ECOmitF0Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_executor, ECExternalCourtExecutorScope).
+? complete(ECOmitF1Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_record, ECExternalCourtRecordScope).
+? complete(ECOmitF2Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_result, ECExternalCourtResultScope).
+? complete(ECOmitF3Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_review, ECExternalCourtReviewScope).
+? complete(ECOmitF4Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_source, ECExternalCourtSourceScope).
+? complete(ECOmitF5Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_temporal, ECExternalCourtTemporalScope).
+? complete(ECOmitF6Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $external_court_temporal_record, ECExternalCourtTemporalRecordScope).
+? complete(ECOmitF7Record, ECSeparateHumanEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE

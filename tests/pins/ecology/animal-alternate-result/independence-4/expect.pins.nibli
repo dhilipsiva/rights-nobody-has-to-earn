@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $assurer with $representative.
+? complete(ECFusedR0V136, ECAnimalAlternateCollegialResult, ECFusedR0V146).
+# => FALSE
+# Fuse $assurer with $review.
+? complete(ECFusedR1V136, ECAnimalAlternateCollegialResult, ECFusedR1V146).
+# => FALSE
+# Fuse $assurer with $service.
+? complete(ECFusedR2V136, ECAnimalAlternateCollegialResult, ECFusedR2V146).
+# => FALSE
+# Fuse $assurer with $source.
+? complete(ECFusedR3V136, ECAnimalAlternateCollegialResult, ECFusedR3V146).
+# => FALSE

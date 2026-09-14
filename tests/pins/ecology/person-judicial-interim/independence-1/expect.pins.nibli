@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $external_court_source.
+? interrupt(FSBOD_17, ECFusedR0V61, ECJudicialInterimStay).
+# => FALSE
+# Fuse $alternate with $operator.
+? interrupt(FSBOD_17, ECFusedR1V61, ECJudicialInterimStay).
+# => FALSE
+# Fuse $alternate with $subject.
+? interrupt(FSBOD_17, ECFusedR2V61, ECJudicialInterimStay).
+# => FALSE
+# Fuse $auditor with $external_court_evidence.
+? interrupt(FSBOD_17, ECFusedR3V61, ECJudicialInterimStay).
+# => FALSE

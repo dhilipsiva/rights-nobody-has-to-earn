@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $court_proof, ECAuthenticatedFullAtDecisionJudicialProofScope).
+? complete(ECOmitF0Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $court_record, ECOriginalActualJudicialMandateRecordScope).
+? complete(ECOmitF1Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $court_review, ECOriginalActualJudicialMandateReviewScope).
+? complete(ECOmitF2Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $court_source, ECOriginalActualJudicialMandateSourceScope).
+? complete(ECOmitF3Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $end, ECEndScope).
+? complete(ECOmitF4Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evaluation, ECFreshEvaluationScope).
+? complete(ECOmitF5Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_record, ECEvidenceRecordScope).
+? complete(ECOmitF6Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $evidence_version, ECEvidenceVersionScope).
+? complete(ECOmitF7Record, ECHistoricalGuardianFinalDisposition, ECOmitSharedV45).
+# => FALSE

@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECNoiseV16, ECUrgentPlausibleAnimalProtection, ECNoiseV23).
+# => TRUE
+? obliged(ECNoiseV11, ECProvideUrgentAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECNoiseV16).
+# => TRUE
+? obliged(ECNoiseV0, ECMaintainUrgentAnimalCareWhenOriginalRouteFails, ECNoiseV16).
+# => TRUE
+? related(ECNoiseV16, ECRecordAmbiguity).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, Class10NonWaivableAnimalConductLimit, ECDirectEffectClassScope).
+? complete(ECOmitF0Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF1Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAnimalCategoricalRefusal, ECKindScope).
+? complete(ECOmitF2Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAnimalCategoricalRefusalTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF3Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECExactAnimalInterestNotOwnerPreferenceOrMarketValue, ECDirectInterestBoundaryScope).
+? complete(ECOmitF4Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentExactConductEvidenceEstablishesThisCategoricalGround, ECCategoricalAnimalFindingScope).
+? complete(ECOmitF5Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF6Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECMeaningfulConsultationEqualityAccommodationAndHumanRightsRemainWithoutCoreWaiver, ECAnimalBarHumanRightsScope).
+? complete(ECOmitF7Record, ECAnimalCategoricalRefusal, ECOmitSharedV49).
+# => FALSE

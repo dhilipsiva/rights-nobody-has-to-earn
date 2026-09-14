@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECTerritoryScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class6BoundedAnimalWelfareInspection, ECDirectEffectClassScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentAnimalInspection, ECKindScope).
+? permits(ECOmitSharedV11, ECOnlyExactLawfullyAccessibleAnimalInspection, ECOmitF7Record).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $population, ECAffectedPopulationScope).
+? interrupt(FSBOD_22, ECOmitF0Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $population, ECDependencyGuardianResultAffectedPopulationScope).
+? interrupt(FSBOD_22, ECOmitF1Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $project, ECChallengedActivityScope).
+? interrupt(FSBOD_22, ECOmitF2Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reader, ECChallengeReaderScope).
+? interrupt(FSBOD_22, ECOmitF3Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? interrupt(FSBOD_22, ECOmitF4Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $registry, ECSharedReplayRegistryScope).
+? interrupt(FSBOD_22, ECOmitF5Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $registry_review, ECRegistryReviewerScope).
+? interrupt(FSBOD_22, ECOmitF6Record, ECGuardianAutomaticStay).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $registry_revision, ECRegistryRevisionScope).
+? interrupt(FSBOD_22, ECOmitF7Record, ECGuardianAutomaticStay).
+# => FALSE

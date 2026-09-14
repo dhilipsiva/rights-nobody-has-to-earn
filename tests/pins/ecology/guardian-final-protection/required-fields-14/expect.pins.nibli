@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? interrupt(FSBOD_17, ECOmitF0Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? interrupt(FSBOD_17, ECOmitF1Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyGuardianMeritsConstitutionVersionScope).
+? interrupt(FSBOD_17, ECOmitF2Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? interrupt(FSBOD_17, ECOmitF3Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class4CaseSpecificFinalProtectiveDirection, ECDirectEffectClassScope).
+? interrupt(FSBOD_17, ECOmitF4Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? interrupt(FSBOD_17, ECOmitF5Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualFinalDecisionRequiresThisCaseSpecificProtection, ECFinalProtectionFindingScope).
+? interrupt(FSBOD_17, ECOmitF6Record, ECFinalJudicialProtection).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCurrentLegalForceCorrectionAppealAndSourceBoundCessationSeparatelyReviewed, ECFinalOrderCurrentnessScope).
+? interrupt(FSBOD_17, ECOmitF7Record, ECFinalJudicialProtection).
+# => FALSE

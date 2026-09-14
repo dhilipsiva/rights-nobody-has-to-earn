@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF0Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECDependencyAnimalAdvocateResultConstitutionVersionScope).
+? complete(ECOmitF1Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECDependencyGuardianResultConstitutionVersionScope).
+? complete(ECOmitF2Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECExternalCourtVersionScope).
+? complete(ECOmitF3Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF4Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class4IndependentNonAggregatedProtectionDecision, ECDirectEffectClassScope).
+? complete(ECOmitF5Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF6Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECApplyEveryHardProhibitionFirstThenGivePublicReasonsForLeastHarmCompatibleRoute, ECConflictDecisionRuleScope).
+? complete(ECOmitF7Record, ECIndependentGuardianAnimalConflictDecision, ECOmitSharedV340).
+# => FALSE

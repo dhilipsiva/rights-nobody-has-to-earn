@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF0Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentCollectiveHarmAndRepresentativeMandateEvidence, ECCollectiveReparationEvidenceScope).
+? complete(ECOmitF1Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF2Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF3Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECNoMoneyWaivesConsentTransfersTitleOrErasesEcologicalRestoration, ECCollectiveNonSubstitutionScope).
+? complete(ECOmitF4Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+? complete(ECOmitF5Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? complete(ECOmitF6Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECProtectedTitleGovernmentCultureKnowledgeAndActualConsentBoundary, ECCollectiveRightsBoundaryScope).
+? complete(ECOmitF7Record, ECSeparateCollectiveEnvironmentalReparation, ECOmitSharedV46).
+# => FALSE

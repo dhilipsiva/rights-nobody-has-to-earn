@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_end, ECDependencyAnimalWildInterventionTestEndScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_evaluation, ECDependencyAnimalWildInterventionTestEvaluationScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_evidence_record, ECDependencyAnimalWildInterventionTestEvidenceRecordScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_evidence_version, ECDependencyAnimalWildInterventionTestEvidenceVersionScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_method, ECDependencyAnimalWildInterventionTestMethodVersionScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_operator, ECDependencyAnimalWildInterventionTestActorScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF5Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_record, ECDependencyAnimalWildInterventionTestRecordScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF6Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_wild_intervention_test_review, ECDependencyAnimalWildInterventionTestReviewerScope).
+? permits(ECOmitSharedV117, ECOnlyBoundedEnhancedWildAnimalIntervention, ECOmitF7Record).
+# => FALSE

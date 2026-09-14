@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAlternateAnimalAdvocateProtectionClaim, ECKindScope).
+? complete(ECOmitF0Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAlternateAnimalAdvocateProtectionClaimTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF1Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAnimalDirectInterestAndAffectedHumanCollectiveRightsRemainDistinct, ECAnimalRepresentationBoundaryScope).
+? complete(ECOmitF2Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECCurrentPredeclaredIndependentAnimalAlternateFunction, ECAnimalInitiatorQualificationScope).
+? complete(ECOmitF3Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF4Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECLawfulInformationInspectionEvidenceReviewInterimRescueCessationAndRemedyRequests, ECAnimalClaimRoutesScope).
+? complete(ECOmitF5Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+? complete(ECOmitF6Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoExclusiveOwnerStandingWaiverSettlementOfAnimalInterestsOrOwnerVeto, ECAnimalClaimNoOwnerControlScope).
+? complete(ECOmitF7Record, ECAlternateAnimalAdvocateProtectionClaim, ECOmitSharedV192).
+# => FALSE

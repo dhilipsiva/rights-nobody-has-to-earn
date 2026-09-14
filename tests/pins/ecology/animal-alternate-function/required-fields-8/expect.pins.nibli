@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF0Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF1Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSeparateOwnCurrentFindingNotAnInheritedClockOrAutomaticRenewal, ECSubstituteTemporalBoundaryScope).
+? complete(ECOmitF2Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECSharedCaseAuthorizationEvidenceGroundAndFinalityNotAnOfficeLocalReset, ECSharedReplayBoundaryScope).
+? complete(ECOmitF3Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF4Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF5Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_alternate_result_end, ECDependencyAnimalAlternateResultEndScope).
+? complete(ECOmitF6Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $animal_alternate_result_evaluation, ECDependencyAnimalAlternateResultEvaluationScope).
+? complete(ECOmitF7Record, ECAnimalAlternateFunction, ECOmitSharedV170).
+# => FALSE

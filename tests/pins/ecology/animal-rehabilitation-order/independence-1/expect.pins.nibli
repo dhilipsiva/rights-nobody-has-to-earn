@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $external_animalcourt_source.
+? complete(ECFusedR0V39, ECAnimalRehabilitationOrder, ECFusedR0V46).
+# => FALSE
+# Fuse $alternate with $operator.
+? complete(ECFusedR1V39, ECAnimalRehabilitationOrder, ECFusedR1V46).
+# => FALSE
+# Fuse $alternate with $subject.
+? complete(ECFusedR2V39, ECAnimalRehabilitationOrder, ECFusedR2V46).
+# => FALSE
+# Fuse $auditor with $external_animalcourt_evidence.
+? complete(ECFusedR3V39, ECAnimalRehabilitationOrder, ECFusedR3V46).
+# => FALSE

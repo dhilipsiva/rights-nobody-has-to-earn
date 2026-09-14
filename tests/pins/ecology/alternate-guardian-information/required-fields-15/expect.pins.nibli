@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF0Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF1Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $version, ECDependencyGuardianAlternateFunctionConstitutionVersionScope).
+? complete(ECOmitF2Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $window, ECWindowScope).
+? complete(ECOmitF3Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, Class6BoundedLawfulInstitutionalInformation, ECDirectEffectClassScope).
+? complete(ECOmitF4Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF5Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAlternateGuardianInformationFunction, ECKindScope).
+? complete(ECOmitF6Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAlternateGuardianInformationFunctionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF7Record, ECAlternateGuardianInformationFunction, ECOmitSharedV196).
+# => FALSE

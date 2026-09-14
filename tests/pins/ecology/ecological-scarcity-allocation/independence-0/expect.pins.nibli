@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $auditor.
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECFusedR0V86).
+# => FALSE
+# Fuse $alternate with $external_scarcity_evidence.
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECFusedR1V86).
+# => FALSE
+# Fuse $alternate with $external_scarcity_executor.
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECFusedR2V86).
+# => FALSE
+# Fuse $alternate with $external_scarcity_review.
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, ECFusedR3V86).
+# => FALSE

@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF0Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECSubjectScope).
+? complete(ECOmitF1Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $territory, ECTerritoryScope).
+? complete(ECOmitF2Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $transition, ECSourceBoundTransitionScope).
+? complete(ECOmitF3Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $version, ECConstitutionVersionScope).
+? complete(ECOmitF4Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $window, ECWindowScope).
+? complete(ECOmitF5Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, Class6LeastHarmDualContinuity, ECDirectEffectClassScope).
+? complete(ECOmitF6Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF7Record, ECDualFloorAndCeilingContinuity, ECOmitSharedV27).
+# => FALSE

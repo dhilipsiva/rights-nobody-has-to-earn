@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $auditor with $subject.
+? complete(ECFusedR0V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR0V76).
+# => FALSE
+# Fuse $external_scarcity_auditor with $external_scarcity_executor.
+? complete(ECFusedR1V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR1V76).
+# => FALSE
+# Fuse $external_scarcity_auditor with $external_scarcity_final_review.
+? complete(ECFusedR2V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR2V76).
+# => FALSE
+# Fuse $external_scarcity_evidence with $external_scarcity_auditor.
+? complete(ECFusedR3V68, ECActualPhysicalScarcityDuringDualFailure, ECFusedR3V76).
+# => FALSE

@@ -62,7 +62,17 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 24
+# "Speaking for conditions nobody may spend away" is grounded by the ecology
+# guardian/ stateful cases, historical-finality cases, independent appointment
+# and alternate-function cases, and animal-guardian-conflict/positive.
+# No stay or inspection power arises just from an office's name. Actual positive
+# records and each required-field/upstream omission are separate ordinary cases.
+:expect-pins 26
+
+? interrupt(FSBOD_22, ECReaderStay, ECGuardianAutomaticStay).
+# => FALSE
+? permits(FSBOD_23, ECOnlyExactLawfullyAccessibleAnimalInspection, ECReaderInspection).
+# => FALSE
 
 # "Hano is in custody. Hano still has the right to vote."
 ? prisoner(Hano).

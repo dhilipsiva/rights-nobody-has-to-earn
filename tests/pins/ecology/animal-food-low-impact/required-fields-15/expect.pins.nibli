@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+# Withhold one required observation: observe($source, $record, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+? permits(ECOmitSharedV70, ECOnlyStrictLowImpactAnimalFoodProduction, ECOmitF0Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? permits(ECOmitSharedV70, ECOnlyStrictLowImpactAnimalFoodProduction, ECOmitF1Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? permits(ECOmitSharedV70, ECOnlyStrictLowImpactAnimalFoodProduction, ECOmitF2Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? permits(ECOmitSharedV70, ECOnlyStrictLowImpactAnimalFoodProduction, ECOmitF3Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStrictLowImpactAnimalFoodUse, ECKindScope).
+? permits(ECOmitSharedV70, ECOnlyStrictLowImpactAnimalFoodProduction, ECOmitF4Record).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECStrictLowImpactAnimalFoodUseTemporalContract, ECTemporalContractKindScope).
+? permits(ECOmitSharedV70, ECOnlyStrictLowImpactAnimalFoodProduction, ECOmitF5Record).
+# => FALSE

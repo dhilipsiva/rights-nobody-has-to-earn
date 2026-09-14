@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(ECPositiveV68, ECActualPhysicalScarcityDuringDualFailure, ECPositiveV76).
+# => TRUE
+? obliged(FSBOD_09, ECPreserveActualScarcitySafeguardsFloorContinuityAndSeparateEcologicalFailure, ECPositiveV68).
+# => TRUE

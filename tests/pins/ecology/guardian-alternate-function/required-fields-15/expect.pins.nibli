@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($source, $record, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+? complete(ECOmitF0Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECActualCurrentMandateCoversThisCaseTerritoryAndFunction, ECSubstituteMandateCoverageScope).
+? complete(ECOmitF1Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECAuthenticDeclarationPredatesFailureAndNamesApplicableSubstitute, ECPredeclarationFindingScope).
+? complete(ECOmitF2Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianAdvocacyOnly, ECSubstitutedFunctionScope).
+? complete(ECOmitF3Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianAlternateFunction, ECKindScope).
+? complete(ECOmitF4Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECGuardianAlternateFunctionTemporalContract, ECTemporalContractKindScope).
+? complete(ECOmitF5Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+? complete(ECOmitF6Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE
+# Withhold one required observation: observe($source, $record, ECNoApprovalVetoIndefiniteHoldOrUnrelatedPowerFromInstitutionalFailure, ECNoFailureExpansionScope).
+? complete(ECOmitF7Record, ECGuardianAlternateFunction, ECOmitSharedV170).
+# => FALSE

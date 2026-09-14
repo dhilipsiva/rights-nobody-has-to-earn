@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+? complete(ECConflictF0Record, ECAnimalHabitatRestorationOrder, ECConflictSharedV46).
+# => FALSE
+? related(ECConflictF0Record, ECRecordAmbiguity).
+# => TRUE
+? complete(ECConflictF1Record, ECAnimalHabitatRestorationOrder, ECConflictSharedV46).
+# => FALSE
+? related(ECConflictF1Record, ECRecordAmbiguity).
+# => TRUE
+? complete(ECConflictF2Record, ECAnimalHabitatRestorationOrder, ECConflictSharedV46).
+# => FALSE
+? related(ECConflictF2Record, ECRecordAmbiguity).
+# => TRUE
+? complete(ECConflictF3Record, ECAnimalHabitatRestorationOrder, ECConflictSharedV46).
+# => FALSE
+? related(ECConflictF3Record, ECRecordAmbiguity).
+# => TRUE

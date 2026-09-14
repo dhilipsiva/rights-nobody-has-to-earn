@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Fuse $alternate with $external_humanassistance_defender.
+? complete(ECFusedR0V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR0V120).
+# => FALSE
+# Fuse $alternate with $external_humanassistance_evidence.
+? complete(ECFusedR1V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR1V120).
+# => FALSE
+# Fuse $alternate with $external_humanassistance_operator.
+? complete(ECFusedR2V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR2V120).
+# => FALSE
+# Fuse $alternate with $external_humanassistance_reader.
+? complete(ECFusedR3V113, ECSeparateHumanJusticeForAnimalViolation, ECFusedR3V120).
+# => FALSE

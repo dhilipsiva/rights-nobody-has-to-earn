@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, $reason, ECPublicReasonsScope).
+? complete(ECOmitF0Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $remedy, ECRemedyRouteScope).
+? complete(ECOmitF1Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECRevisionScope).
+? complete(ECOmitF2Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $revision, ECSelectedRevisionScope).
+? complete(ECOmitF3Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECExternalAnimalCourtLegalScopeScope).
+? complete(ECOmitF4Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $scope, ECLegalScopeScope).
+? complete(ECOmitF5Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $start, ECStartScope).
+? complete(ECOmitF6Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE
+# Withhold one required observation: observe($review, $record, $subject, ECExternalAnimalCourtSubjectScope).
+? complete(ECOmitF7Record, ECAnimalRecordCorrectionOrder, ECOmitSharedV46).
+# => FALSE

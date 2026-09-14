@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? complete(ECNoiseV40, ECCurrentLegalCeiling, ECNoiseV68).
+# => TRUE
+? obliged(FSBOD_02, ECApplyOnlyExactEnactedEcologicalLimit, ECNoiseV40).
+# => TRUE
+? prevents(ECNoiseV65, ECOffsetBudgetEmergencyOrOtherAxisWaiver).
+# => TRUE
+? related(ECNoiseV40, ECRecordAmbiguity).
+# => FALSE

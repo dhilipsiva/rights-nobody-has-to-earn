@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+# Withhold one required observation: observe($review, $record, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+? complete(ECOmitF0Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+? complete(ECOmitF1Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($review, $record, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+? complete(ECOmitF2Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $alternate, ECAlternateReaderScope).
+? complete(ECOmitF3Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $auditor, ECAuditReaderScope).
+? complete(ECOmitF4Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $axis, ECAxisScope).
+? complete(ECOmitF5Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECCaseScope).
+? complete(ECOmitF6Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE
+# Withhold one required observation: observe($source, $record, $case, ECDependencyCeilingCaseScope).
+? complete(ECOmitF7Record, ECOutcomePreservingReplacement, ECOmitSharedV90).
+# => FALSE

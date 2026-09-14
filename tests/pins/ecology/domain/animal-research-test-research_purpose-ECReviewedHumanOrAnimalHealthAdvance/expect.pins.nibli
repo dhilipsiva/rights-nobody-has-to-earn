@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? complete(ECDomainChoiceV66, ECStrictAllAnimalResearchTest, ECDomainChoiceV77).
+# => TRUE
+? obliged(ECDomainChoiceV61, ECPursueFullReplacementAsSoonAsScientificallyValidAlternativesPerformThePurpose, ECDomainChoiceV66).
+# => TRUE
