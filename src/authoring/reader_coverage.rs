@@ -65,6 +65,21 @@ pub(crate) struct Record {
     pub(crate) basis: String,
 }
 
+/// Every posture the portfolio standard names. A posture nobody occupies is a
+/// kind of person the book never shows doing that thing.
+pub(crate) const POSTURES: [&str; 10] = [
+    "chooses",
+    "creates",
+    "cares",
+    "works",
+    "associates",
+    "requests",
+    "receives",
+    "challenges",
+    "governs",
+    "is acted upon",
+];
+
 /// The four chapter patterns the ruling names, plus the two this book's own
 /// shape adds: the record chapters, which are about what may be written at all,
 /// and Part V's argument, which is exempt from derivation.
@@ -152,6 +167,12 @@ fn validate(context: &Context, records: &[Record]) -> Result<(), Error> {
                 record.id, record.trajectory
             )));
         }
+        if !POSTURES.contains(&record.posture.as_str()) {
+            return Err(Error::new(format!(
+                "{}: unknown posture {}",
+                record.id, record.posture
+            )));
+        }
         if !PATTERNS.contains(&record.pattern.as_str()) {
             return Err(Error::new(format!(
                 "{}: unknown pattern {}",
@@ -230,6 +251,19 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
         if *trouble == 0 && *bound > 0 {
             let _ = writeln!(out, "| {domain} | {works} | {trouble} | {bound} |");
         }
+    }
+    out.push_str(
+        "\n## Postures\n\n\
+         A posture nobody occupies is a kind of person the book never shows\n\
+         doing that thing. Zero is a finding, not a formatting artefact.\n\n\
+         | Posture | Passages |\n| --- | ---: |\n",
+    );
+    for posture in POSTURES {
+        let count = records
+            .iter()
+            .filter(|record| record.posture == posture)
+            .count();
+        let _ = writeln!(out, "| {posture} | {count} |");
     }
     out.push_str(
         "\n## Chapter patterns\n\n\

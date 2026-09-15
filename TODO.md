@@ -323,13 +323,13 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
-  - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,311
-    pins across 14,889 cases pass with complete contradiction checks and no
-    findings in **865.74 seconds (14m25.74s)**, four workers, release binary
-    prebuilt, peak RSS 21,905,256 KiB, 380% utilisation. Three new families and
-    four composed cases added 1,323 cases; the total moves within its noise
-    band, which is what the profile below predicts: the cost is per-case fixed
-    work and a heavy tail, not case count. The earlier 275.04-second
+  - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,335
+    pins across 14,892 cases pass with complete contradiction checks and no
+    findings in **869.18 seconds (14m29.18s)**, four workers, release binary
+    prebuilt, peak RSS 21,909,480 KiB, 393% utilisation. Three new families and
+    ten composed cases added 1,326 cases; the total moves within its noise band,
+    which is what the profile below predicts: the cost is per-case fixed work
+    and a heavy tail, not case count. The earlier 275.04-second
     result covered only the pre-expansion 4,190-case inventory and is not a
     current timing.
   - **The profiling bullet is done.** `new-book-plans/nibli-performance-candidate.md`
@@ -399,54 +399,30 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     ordinary-life illustration remains non-evidentiary under the author-ruled
     narrative register.
 
-- [ ] **Rebalance the pinned case portfolio without fictionalising it.**
-  - **This item is the consumer, not the fix.** The 2026-08-08 narrative-register
-    ruling measured the then-current deficit, and the delivery family has now
-    repaired its formal-interface part. Recipient-side routes exist for food,
-    non-carceral shelter, care, material security, and company; legacy learning
-    remains separate; every route ships dormant. The supplied record still
-    derives floor actualities only through confinement, every `home` and `family`
-    entry names a convicted person, care and work remain thin, and the franchise
-    and movement derive broadly while nothing reads either. State the rules,
-    never cast or chapter counts — those move with the criterion, which is why
-    the counted-claims gate exists:
-    `for f in book-1/*.pins.nibli; do grep -qE "prisoner|dwell|severe|fit\(|building\(|defend" "$f" || echo "no confinement query: $f"; done`
-  - **Dependency order.** The delivery and receipt precondition is satisfied;
-    this portfolio rebalance is now runnable and remains open. The formal family
-    does not supply cast receipts, ordinary-life cases, operation, actual arrival,
-    or authority to fictionalise them. No public claim may describe the book as
-    showing ordinary social life until this item supplies its own reviewed case
-    coverage. The accusation-authorship gap also remains: no adverse ground
-    relation carries an authorship place. See
-    [`new-book-plans/book-1-narrative-register-decision.md`](new-book-plans/book-1-narrative-register-decision.md).
-  - Preserve the prisoner as the hardest stress test, not the default inhabitant.
-    Cover ordinary provision and care; family/dependency; learning and knowledge;
-    work/property/exchange/commons; association, conscience and creation;
-    voting/deliberation/local government; mobility/newcomer portability; civil
-    dispute/repair; emergency continuity; and institutional correction.
-  - For every public body show one lawful ordinary function and one accountability
-    path. For every materially operative role/status, pin equal standing/floor or
-    the exact lawful distinction.
-  - No role may appear only as an object of intervention when the constitution gives
-    it agency. Do not add decorative demographic labels or pretend a full Cartesian
-    product is meaningful; use reviewed pairwise/high-consequence coverage.
-  - **The agency clause is what decides any proposed second lead case, and it bites
-    hardest on the most sympathetic one.** A candidate whose only available postures
-    are *receives* and *is acted upon* cannot carry a protected private/civic domain,
-    however sharp it is as a delivery test. An infant without a caregiver is the
-    worked example: it is the strongest available stress case for delivery, receipt,
-    and the standing root, and it fails the agency clause as a through-line, because
-    the constitution gives the child voice, weight and decision-specific early
-    authority that an infant cannot exercise. Pair a second case with the prisoner
-    rather than substituting one lens for another — a book explaining every domain
-    through one subject fails the same way whether the subject is a prisoner or an
-    infant. See
-    [`new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md).
-    The framing ruling has since landed: the infant is ratified as the paired
-    second stress case with framing primacy in the exempt elements where the
-    landed rulings permit, the through-line stays refused, and this item
-    consumes the pairing, the primacy re-measurement, and the standing-root
-    liveness case when it runs — see
+- [ ] **Fill the two empty postures, and give an accusation an author.**
+  - **The delivery routes are exercised, so the floor no longer arrives only
+    through a cell.** `tests/pins/delivery/received-outside-custody` derives all
+    five recipient-side actualities for a person nobody convicted;
+    `provider-cannot-witness-itself` pins that a provider's own word is not
+    delivery; `no-receipt-no-arrival` makes chapter 8's "owed is not delivered"
+    executable across every floor item. The routes still ship dormant in the
+    shipped cast, and none of this establishes that anybody was fed or housed.
+  - **Two of the ten postures are occupied by nobody: `creates` and `cares`.**
+    The constitution lets somebody do both — the care doors are open and
+    creation has its own liberty since the knowledge family landed — and no
+    passage shows anybody doing either. The set is asserted by membership, so
+    filling one is visible and losing another fails. `is acted upon` carries 39
+    of 86 passages; that is the weighting the rebalance exists to move.
+  - **The accusation-authorship gap is confirmed open.** `attack(Hano, Ivo)`,
+    `injure`, `cruel`, `deceive`, `capture` and `rotten` name the alleged
+    offender and the victim, never the writer. Chapter 1 concedes the
+    finding-with-no-finder class; nothing has closed it.
+  - Preserve the prisoner as the hardest stress test, not the default
+    inhabitant, and the infant as the paired second stress case with framing
+    primacy in the exempt elements. For every public body show one lawful
+    ordinary function and one accountability path. No role may appear only as an
+    object of intervention when the constitution gives it agency. Do not add
+    decorative demographic labels, invent biographies, or warm the cast. See
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
 
 - [ ] **Finish machine-checkable accessible navigation and visual validation.**

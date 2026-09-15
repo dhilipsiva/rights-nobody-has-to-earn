@@ -146,3 +146,29 @@ fn the_book_is_not_one_failure_first_formula() {
          prisoner a stress test rather than the default inhabitant"
     );
 }
+
+/// Postures no passage occupies. Each is a thing the constitution lets somebody
+/// do that the book never shows anybody doing, so the list shrinking is
+/// progress and the list growing is a passage that lost its subject.
+const UNOCCUPIED_POSTURES: [&str; 2] = ["creates", "cares"];
+
+#[test]
+fn the_postures_nobody_occupies_are_the_ones_recorded() {
+    let context = Context::discover().expect("repository");
+    let records = records(&context).expect("ledger source");
+    let empty: BTreeSet<String> = POSTURES
+        .iter()
+        .filter(|posture| records.iter().all(|record| record.posture != **posture))
+        .map(|posture| (*posture).to_owned())
+        .collect();
+    assert_eq!(
+        empty,
+        UNOCCUPIED_POSTURES
+            .iter()
+            .map(ToString::to_string)
+            .collect(),
+        "the set of postures no passage occupies changed. Filling one is what \
+         the portfolio rebalance is for; a new one appearing means a passage \
+         stopped showing somebody doing something."
+    );
+}

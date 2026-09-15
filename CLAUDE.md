@@ -1921,6 +1921,17 @@ defence, ecology, emergency, knowledge and culture, and non-human animals are
 **carried by a boundary alone**, with no passage in which anything goes wrong.
 That set is asserted by membership.
 
+**The portfolio's postures are censused on the same source, and two are
+empty.** No passage shows anybody in the `creates` or `cares` posture, though
+the constitution permits both — the care doors have been open since 2026-08-02
+and creation has its own liberty since the knowledge family landed. `is acted
+upon` carries 39 of the 86 passages. Both facts are asserted by membership.
+Separately, the delivery routes are now exercised rather than only described:
+`tests/pins/delivery/received-outside-custody` derives all five recipient-side
+floor actualities for a person nobody convicted, so the pinned portfolio no
+longer reaches the floor only through a cell. The routes still ship dormant in
+the shipped cast, and nothing establishes that anybody was fed or housed.
+
 **The four chapter patterns are measured on the same source.** Every passage
 declares which it follows — constructive provision, protected private/civic
 agency, democratic agency, coercive rule, plus the two this book's own shape

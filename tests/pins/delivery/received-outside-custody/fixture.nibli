@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# A person the record has never convicted of anything, receiving what the
+# floor owes through the recipient-side routes rather than through a cell.
+person(Yenna).
+at(Yenna, GeneralAdulthood).
+authorized(DeliveryInspector, DeliveryWitness, Yenna).
+receives(Yenna, FoodForMira, FoodProvider).
+observe(DeliveryInspector, FoodForMira, Yenna, FoodScope).
+receives(Yenna, ShelterForMira, ShelterProvider).
+observe(DeliveryInspector, ShelterForMira, Yenna, ShelterScope).
+receives(Yenna, CareForMira, CareProvider).
+observe(DeliveryInspector, CareForMira, Yenna, CareScope).
+receives(Yenna, SecurityForMira, SecurityProvider).
+observe(DeliveryInspector, SecurityForMira, Yenna, SecurityScope).
+receives(Yenna, CompanyForMira, CompanyProvider).
+observe(DeliveryInspector, CompanyForMira, Yenna, CompanyScope).

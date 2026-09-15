@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Somebody the floor is owed to, with no receipt of any kind.
+person(Oren).
+at(Oren, GeneralAdulthood).

@@ -40,6 +40,24 @@ forms, and it is where the portfolio rebalance has most to do.
 | Knowledge, communication and culture | 1 | 0 | 1 |
 | Non-human animals | 1 | 0 | 1 |
 
+## Postures
+
+A posture nobody occupies is a kind of person the book never shows
+doing that thing. Zero is a finding, not a formatting artefact.
+
+| Posture | Passages |
+| --- | ---: |
+| chooses | 3 |
+| creates | 0 |
+| cares | 0 |
+| works | 5 |
+| associates | 1 |
+| requests | 3 |
+| receives | 7 |
+| challenges | 8 |
+| governs | 20 |
+| is acted upon | 39 |
+
 ## Chapter patterns
 
 The refusal here is one failure-first formula for everything. A

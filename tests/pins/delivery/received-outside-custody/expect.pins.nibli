@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# The delivery family's routes are dormant in the shipped cast, which is why
+# the book says the supplied record derives floor actualities only through
+# confinement. They are not dead: supply a matching receipt and an authorised
+# witness who is not the provider, and the floor arrives without a conviction.
+#
+# This establishes what FOLLOWS from a supplied receipt. It does not establish
+# that anybody was fed, housed, treated, protected or visited.
+:expect-pins 9
+
+? eats(Yenna).
+# => TRUE
+? dwell(Yenna).
+# => TRUE
+? healthy(Yenna).
+# => TRUE
+? secure(Yenna).
+# => TRUE
+? meets(Yenna).
+# => TRUE
+
+# And none of it convicted her, confined her, or touched her word.
+? prisoner(Yenna).
+# => FALSE
+? false(Yenna).
+# => FALSE
+? lose(Points, Yenna).
+# => FALSE
+? decide(Yenna, Ballot).
+# => TRUE
