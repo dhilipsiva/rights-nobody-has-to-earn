@@ -10,6 +10,7 @@
 
 use super::Export;
 use crate::{cli::Error, context::Context};
+use regex::Regex;
 use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
 use std::fmt::Write as _;
@@ -19,6 +20,34 @@ const REPORT: &str = "new-book-plans/reader-coverage.md";
 
 /// Trajectories that show the design under strain rather than working.
 const TROUBLE: [&str; 4] = ["contested", "fails", "continuity-remedy", "unresolved"];
+
+/// A passage states a boundary when it says what it does NOT establish. This is
+/// read out of the prose rather than declared in the source, so a record cannot
+/// claim a disclosure the section does not make. Measured 2026-09-15: 55 of the
+/// 86 passages match, which is why it discriminates rather than passing
+/// everything.
+fn boundary() -> Regex {
+    Regex::new(
+        r"(?i)\b(?:establish(?:es)? no|prove[sd]? no|do(?:es)? not (?:establish|prove|claim|show|mean|make|create|authorize|authorise|say|tell|reach|decide)|none of (?:this|these|it)|nothing (?:here|in this)|is not (?:evidence|proof|a claim)|remains? (?:an )?external assumption|neither [a-z ]{1,40} nor |no rule (?:in this|reads|converts)|cannot (?:prove|establish|show|tell))",
+    )
+    .expect("boundary pattern")
+}
+
+/// The text of one passage, from its heading to the next.
+pub(crate) fn passage(context: &Context, chapter: &str, section: &str) -> Result<String, Error> {
+    let source = context.read(chapter)?;
+    let start = source
+        .find(&format!("## {section}"))
+        .ok_or_else(|| Error::new(format!("{chapter}: no passage {section:?}")))?;
+    let rest = &source[start..];
+    let end = rest[1..].find("\n## ").map_or(rest.len(), |at| at + 1);
+    Ok(rest[..end].split_whitespace().collect::<Vec<_>>().join(" "))
+}
+
+/// Ordinary operation, strain, and whether a boundary is stated.
+pub(crate) fn states_boundary(context: &Context, record: &Record) -> Result<bool, Error> {
+    Ok(boundary().is_match(&passage(context, &record.chapter, &record.section)?))
+}
 
 #[derive(Clone, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -114,8 +143,13 @@ fn validate(context: &Context, records: &[Record]) -> Result<(), Error> {
     Ok(())
 }
 
-pub(crate) fn coverage(records: &[Record]) -> BTreeMap<String, (usize, usize)> {
-    let mut rows: BTreeMap<String, (usize, usize)> = BTreeMap::new();
+/// Per domain: passages showing ordinary operation, passages showing strain,
+/// and passages stating a boundary.
+pub(crate) fn coverage(
+    context: &Context,
+    records: &[Record],
+) -> Result<BTreeMap<String, (usize, usize, usize)>, Error> {
+    let mut rows: BTreeMap<String, (usize, usize, usize)> = BTreeMap::new();
     for record in records {
         let entry = rows.entry(record.domain.clone()).or_default();
         if record.trajectory == "works" {
@@ -123,11 +157,14 @@ pub(crate) fn coverage(records: &[Record]) -> BTreeMap<String, (usize, usize)> {
         } else {
             entry.1 += 1;
         }
+        if states_boundary(context, record)? {
+            entry.2 += 1;
+        }
     }
-    rows
+    Ok(rows)
 }
 
-fn render(records: &[Record]) -> String {
+fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
     let mut out = String::from(
         "<!-- SPDX-License-Identifier: CC-BY-4.0 -->\n\n\
          # Reader-experience coverage\n\n\
@@ -135,36 +172,55 @@ fn render(records: &[Record]) -> String {
          `reader-coverage-source.json`. One row per derived-chapter section and\n\
          per Part V passage. The opening note is an exempt element and is not\n\
          classified here.\n\n\
+         A domain needs ordinary operation **and** a credible failure, abuse or\n\
+         boundary. Whether a passage states a boundary is read out of its own\n\
+         prose — what it says it does not establish — rather than declared here,\n\
+         so no row can claim a disclosure its section does not make.\n\n\
          This is a map of what a reader meets, not a claim about whether they\n\
          understand it. No reader has been asked anything; R6 is unbuilt, and\n\
          nothing here is reader evidence.\n\n\
          ## Where a domain is thin\n\n\
-         A domain needs ordinary operation **and** a credible failure, abuse or\n\
-         boundary. The rows below have one and not the other, and naming them is\n\
-         what this ledger is for — the portfolio rebalance and the chapter-pattern\n\
-         items consume this table.\n\n\
-         | Domain | Ordinary | Under strain | Missing |\n| --- | ---: | ---: | --- |\n",
+         These have ordinary operation or strain, and not the other.\n\n\
+         | Domain | Ordinary | Strain | Boundary | Missing |\n| --- | ---: | ---: | ---: | --- |\n",
     );
-    let rows = coverage(records);
-    for (domain, (works, trouble)) in &rows {
-        let missing = match (works, trouble) {
-            (0, _) => "ordinary operation",
-            (_, 0) => "a failure, abuse or boundary",
+    let rows = coverage(context, records)?;
+    let mut thin = 0;
+    for (domain, (works, trouble, bound)) in &rows {
+        let missing = match (works, trouble, bound) {
+            (0, _, _) => "ordinary operation",
+            (_, 0, 0) => "a failure, abuse or boundary",
             _ => continue,
         };
-        let _ = writeln!(out, "| {domain} | {works} | {trouble} | {missing} |");
+        thin += 1;
+        let _ = writeln!(
+            out,
+            "| {domain} | {works} | {trouble} | {bound} | {missing} |"
+        );
+    }
+    if thin == 0 {
+        out.push_str("| — | | | | none |\n");
     }
     out.push_str(
-        "\n## Every domain\n\n| Domain | Ordinary | Under strain |\n| --- | ---: | ---: |\n",
+        "\n## Shown working, bounded, but never failing\n\n\
+         These meet the standard through a stated boundary rather than through a\n\
+         passage in which something goes wrong. That is the weaker of the two\n\
+         forms, and it is where the portfolio rebalance has most to do.\n\n\
+         | Domain | Ordinary | Strain | Boundary |\n| --- | ---: | ---: | ---: |\n",
     );
-    for (domain, (works, trouble)) in &rows {
-        let _ = writeln!(out, "| {domain} | {works} | {trouble} |");
+    for (domain, (works, trouble, bound)) in &rows {
+        if *trouble == 0 && *bound > 0 {
+            let _ = writeln!(out, "| {domain} | {works} | {trouble} | {bound} |");
+        }
     }
-    out.push_str("\n## Every passage\n\n| ID | Chapter | Section | Domain | Family | Function | Setting | Posture | Trajectory | Basis |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n");
+    out.push_str("\n## Every domain\n\n| Domain | Ordinary | Strain | Boundary |\n| --- | ---: | ---: | ---: |\n");
+    for (domain, (works, trouble, bound)) in &rows {
+        let _ = writeln!(out, "| {domain} | {works} | {trouble} | {bound} |");
+    }
+    out.push_str("\n## Every passage\n\n| ID | Chapter | Section | Domain | Family | Function | Setting | Posture | Trajectory | Boundary | Basis |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n");
     for record in records {
         let _ = writeln!(
             out,
-            "| {} | {} | {} | {} | {} | {} | {} | {} | {} | `{}` |",
+            "| {} | {} | {} | {} | {} | {} | {} | {} | {} | {} | `{}` |",
             record.id,
             record.chapter.trim_start_matches("book-1/"),
             record.section,
@@ -174,16 +230,21 @@ fn render(records: &[Record]) -> String {
             record.setting,
             record.posture,
             record.trajectory,
+            if states_boundary(context, record)? {
+                "yes"
+            } else {
+                "no"
+            },
             record.basis
         );
     }
-    out
+    Ok(out)
 }
 
 pub(crate) fn generate(context: &Context, _export: &mut Export) -> Result<(), Error> {
     let records = records(context)?;
     validate(context, &records)?;
-    std::fs::write(context.path(REPORT), render(&records))?;
+    std::fs::write(context.path(REPORT), render(context, &records)?)?;
     println!("reader coverage: {} passages classified", records.len());
     Ok(())
 }

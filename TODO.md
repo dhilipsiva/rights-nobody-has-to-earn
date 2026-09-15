@@ -371,29 +371,33 @@ this program without reporting reader evidence or a reader-result pass. Machine
 accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
 remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Close the coverage gaps the reader ledger now names.**
-  - **The ledger is built.** `reader-coverage-source.json` classifies all 86
-    derived-chapter and Part V passages by domain, rule family, ordinary or
-    protective function, setting, person posture, trajectory and basis;
-    `./generate.sh reader-coverage` projects `reader-coverage.md`. An
-    unclassified passage, a record with no passage, a basis that does not exist
-    or an unknown trajectory fails the check, and all four failures are
-    sabotage-tested. No domain is explained only through custody.
-  - **What it found, which is the remaining work.** Seven domains show ordinary
-    operation and no credible failure, abuse or boundary — borders and asylum,
-    collective and plurality rights, defence, ecology, emergency, knowledge and
-    culture, non-human animals. One shows the reverse: life course, family, care
-    and reproduction appears only under strain. The sets are asserted by
-    membership, so a gap cannot close or open unnoticed.
+- [ ] **Give seven domains a passage where something goes wrong, and implement
+  the family baseline's ordinary half.**
+  - **The ledger is built and its first reading was wrong.** Forcing one
+    trajectory per section made eight domains look uncovered. Reading the
+    boundary out of each passage's own prose — what it says it does not
+    establish, matched in 55 of the 86 — corrects that: seven of the eight meet
+    the standard through a stated boundary, which is the weaker of the two
+    accepted forms and is now counted separately.
+  - **Seven are carried by a boundary alone** — borders and asylum, collective
+    and plurality rights, defence, ecology, emergency, knowledge and culture,
+    non-human animals. Each states what it does not establish; none has a
+    passage in which something goes wrong. That is the portfolio rebalance's
+    remaining work, and the set is asserted by membership so it cannot grow
+    unnoticed.
+  - **One is a constitutional gap, not a prose gap.** Life course, family, care
+    and reproduction appears only under strain because the baseline landed 106
+    person-held barriers and no ordinary-operation interface. There is nothing
+    derivable for a passage to show working, and writing one anyway would
+    fictionalise coverage. Implement the ordinary half first; the reader passage
+    follows it, never the reverse.
   - **Done when:** every completed governed/provided domain has traceable
-    ordinary-operation, credible failure/abuse or boundary, and — where claimed —
-    end-to-end continuity/remedy coverage in its assigned assurance route. Use
-    Nibli pins for formalized legal claims; use reviewed specifications,
-    quantitative/dynamic models, operational evidence or lived-experience
-    methods for their assigned claims. A protected private/civic domain needs
-    traceable non-interference and non-recording/non-compulsion limits plus
-    recourse; ordinary-life illustration remains non-evidentiary under the
-    author-ruled narrative register.
+    ordinary-operation, a credible failure or abuse passage rather than only a
+    boundary, and — where claimed — end-to-end continuity/remedy coverage in its
+    assigned assurance route. A protected private/civic domain needs traceable
+    non-interference and non-recording/non-compulsion limits plus recourse;
+    ordinary-life illustration remains non-evidentiary under the author-ruled
+    narrative register.
 
 - [ ] **Replace confession-as-ending with claim-scoped resolution receipts.**
   - Whenever the book identifies a design, model, argument, evidence, or reader

@@ -1891,13 +1891,23 @@ posture, trajectory, basis — and `./generate.sh reader-coverage` projects
 path that does not exist and an unknown trajectory each fail, all four
 sabotage-tested. No non-justice domain is explained only through custody.
 
-**Its value is the gaps, so the report prints them first.** Seven domains show
-ordinary operation and no credible failure, abuse or boundary — borders and
-asylum, collective and plurality rights, defence, ecology, emergency, knowledge
-and culture, non-human animals — and one, life course and family, appears only
-under strain. Both sets are asserted by membership, so neither can change
-quietly. The portfolio-rebalance and chapter-pattern items consume this table;
-the ledger does not close the gaps and does not claim to.
+**Its value is the gaps, and its first reading of them was wrong.** Forcing one
+trajectory per section made eight domains look uncovered. Whether a passage
+states a boundary is now read out of its own prose — what it says it does not
+establish, matched in 55 of the 86 — and seven of the eight turn out to meet the
+standard that way. A stated boundary is the weaker of the two accepted forms, so
+it is counted separately: borders and asylum, collective and plurality rights,
+defence, ecology, emergency, knowledge and culture, and non-human animals are
+**carried by a boundary alone**, with no passage in which anything goes wrong.
+That set is asserted by membership.
+
+**The one real gap is constitutional, not editorial.** Life course, family, care
+and reproduction appears only under strain because that baseline landed 106
+person-held barriers and no ordinary-operation interface — there is nothing
+derivable for a passage to show working, and writing one would fictionalise
+coverage. The ordinary half has to be implemented before the passage exists, not
+after. The portfolio-rebalance and chapter-pattern items consume this table; the
+ledger closes nothing and does not claim to.
 
 It is a map of what a reader meets, never of what a reader understood. No reader
 has been asked anything, R6 remains unbuilt, and nothing in it is reader
