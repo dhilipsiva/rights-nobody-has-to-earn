@@ -1864,6 +1864,25 @@ it, and no formal proof or service record may be read as evidence of any of it.
 That is the second requirement, and it is a claim discipline rather than a
 check.
 
+**Claim-type discipline is checked where it is mechanical, and its limit is
+measured — 2026-09-15.** Every historical case Part V argues from is bound to
+its registry entry and to a phrase that must still appear in the prose, so a
+figure cannot lose its source and a source cannot be dropped while the book
+still leans on it. **Ruled the same day under delegated approval: Part V's
+figures stay hand-written.** Inline registry ids would put machinery into an
+exempt element whose point is that it reads as argument, and the handful of
+figures does not justify a rendering step with no other consumer.
+
+**The counted-claims rule is guarded on its digit half only, and the test says
+so.** No derived chapter carries a digit — exact, currently zero, and
+sabotage-tested. The spelled-out half is **not** guarded and must not be read as
+guarded: measured on 2026-09-15, the derived chapters contain 60 uses of a
+cardinal beside an inventory noun — "two witnesses", "three routes", "one
+person's word" — and every one states a rule rather than counting the record's
+contents. The banned shape is "four people have shelter"; the difference from
+"it takes two auditors" is semantic, and an allowlist of 60 sentences would rot
+faster than the prose it guarded. That half is prose review.
+
 **The reader-experience coverage ledger is landed — 2026-09-15.**
 `reader-coverage-source.json` classifies all 86 derived-chapter and Part V
 passages — domain, rule family, ordinary or protective function, setting, person

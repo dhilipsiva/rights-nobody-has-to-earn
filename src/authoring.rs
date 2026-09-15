@@ -284,6 +284,10 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
 }
 
 #[cfg(test)]
+#[path = "authoring/claim_discipline_tests.rs"]
+mod claim_discipline_tests;
+
+#[cfg(test)]
 #[path = "authoring/floor_vector_tests.rs"]
 mod floor_vector_tests;
 

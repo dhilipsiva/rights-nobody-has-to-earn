@@ -515,25 +515,6 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 
-- [ ] **Apply claim-type-specific scientific, statistical, formal, and normative
-  discipline to every expansion.**
-  - Empirical/descriptive claims need traceable data or primary sources, measurement
-    definitions, representativeness limits and uncertainty. Causal claims also need
-    an identification strategy, plausible alternatives and sensitivity analysis.
-  - Predictive/feasibility claims need calibration, baselines, held-out or robustness
-    tests, sensitivity to the reference envelope and explicit falsifiers. Formal
-    claims need definitions, executable proof or derivation where applicable,
-    countermodels/adversarial cases and a precise scope boundary.
-  - Normative claims need stated values, alternatives, trade-offs, dissent and the
-    lawful author/democratic decision owner; citation can inform but cannot prove a
-    value choice. Psychological/lived-experience claims need ethical methods and may
-    not be inferred from a formal or administrative record. If optional admissible
-    evidence is unavailable, omit the positive claim or keep it explicitly
-    Unestablished; no project gate waits for participants.
-  - Pre-register acceptance criteria where feasible; publish code, data, provenance,
-    sensitivity tests and null/negative results subject to privacy and licence. Use
-    group-level outcomes for institutional repair, never individual worth.
-
 - [ ] **Run the source-derived multidisciplinary adversarial audit before completion.**
   - Encode the declared lenses for constitutional law, public administration,
     disability/accessibility, public health, care/life course, labour/economy,
@@ -963,18 +944,16 @@ may not become the sole custodian of the book or of its future development.
 The registry (`registry/claims.json`, CC0), its staleness gate and the first fetcher
 exist and run inside `verify.sh`; see `registry/README.md`. What remains:
 
-- **The rendering and Part V traceability step — build it beside the first prose that
-  cites a registry id.**
-  Nothing in book-1's derived chapters may carry a number (the counted-claims gate), so
-  value-injection waited for the empirical writing it serves — and Part V now exists:
-  its frame and capture joint carry registry-backed numbers as hand-written prose,
-  checked against the registry by the landing verification. Build the step beside
-  those figures, or rule that Part V's handful stays hand-checked. Do not build past
-  its consumers. More fetchers (WHO GHO, OWID, FAOSTAT…) land the
-  same way — as entries need them.
-  - This task owns point-of-claim traceability: every empirical statement needs its
-    registry ID and source; causal language must match the evidence, uncertainty, and
-    instrument sensitivity the record supports.
+- **Part V's figures stay hand-written — ruled 2026-09-15.** The option the old
+  bullet offered is taken: no value-injection or rendering step is built, because
+  inline registry ids would put machinery into an exempt element whose point is
+  that it reads as argument, and a handful of figures does not justify a renderer
+  with no other consumer. Traceability is a name binding instead:
+  `claim_discipline_tests::every_part_v_figure_rests_on_a_registry_entry` ties
+  each historical case Part V argues from to its registry entry and to a phrase
+  that must still be in the prose, so neither side can drift alone. More fetchers
+  (WHO GHO, OWID, FAOSTAT…) still land as entries need them. Build the rendering
+  step only when a consumer appears.
 
 - **Re-cite the ported registry entries against published versions.** The port
   (`dd25b49`) honestly stamped `retrieved: 2026-07` — book.md's own last verification —
