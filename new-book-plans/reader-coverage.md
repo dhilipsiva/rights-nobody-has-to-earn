@@ -37,7 +37,6 @@ forms, and it is where the portfolio rebalance has most to do.
 | Defence and armed force | 1 | 0 | 1 |
 | Ecology, future generations and commons | 2 | 0 | 2 |
 | Emergency and resilience | 1 | 0 | 1 |
-| Knowledge, communication and culture | 1 | 0 | 1 |
 | Non-human animals | 1 | 0 | 1 |
 
 ## Postures
@@ -56,9 +55,9 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 2 |
 | requests | 3 |
 | receives | 8 |
-| challenges | 9 |
+| challenges | 10 |
 | governs | 23 |
-| is acted upon | 47 |
+| is acted upon | 48 |
 
 ## Chapter patterns
 
@@ -69,7 +68,7 @@ what matters is the book's shape, not the chapter's.
 | Pattern | Passages |
 | --- | ---: |
 | constructive | 18 |
-| private-civic | 13 |
+| private-civic | 14 |
 | democratic | 23 |
 | coercive | 21 |
 | records | 19 |
@@ -91,7 +90,7 @@ checked here.
 | Economy, property, work and commons | 6 | 6 | 7 |
 | Emergency and resilience | 1 | 0 | 1 |
 | Justice and coercion | 6 | 7 | 4 |
-| Knowledge, communication and culture | 1 | 0 | 1 |
+| Knowledge, communication and culture | 1 | 1 | 1 |
 | Life course, family, care and reproduction | 0 | 1 | 1 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
 | Material floor | 2 | 5 | 6 |
@@ -198,7 +197,8 @@ checked here.
 | 14-01 | 14-when-the-system-notices-it-broke.md | The one that fires on everybody | Records and accountability | ARTICLES | protective | an alarm that fires on everybody | is acted upon | fails | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 14-02 | 14-when-the-system-notices-it-broke.md | The one that fired on the wrong people | Records and accountability | PLACEMENT | continuity | an alarm that fired on the wrong people | is acted upon | continuity-remedy | no | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 14-03 | 14-when-the-system-notices-it-broke.md | And then a duty, which no longer has to be the end | Records and accountability | OBLIGATIONS | continuity | a breach that now creates a duty | requests | continuity-remedy | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
-| 14-04 | 14-when-the-system-notices-it-broke.md | What it does have | Records and accountability | OBLIGATIONS | protective | vocabulary for its own violation | requests | unresolved | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
+| 14-04 | 14-when-the-system-notices-it-broke.md | When the finding itself turns out to be wrong | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | continuity | a reviewed restriction found defective | is acted upon, challenges | continuity-remedy | no | private-civic | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
+| 14-05 | 14-when-the-system-notices-it-broke.md | What it does have | Records and accountability | OBLIGATIONS | protective | vocabulary for its own violation | requests | unresolved | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 15-00 | 15-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the author speaking, unchecked by the machine | chooses | unresolved | yes | argument | `exempt-element` |
 | 15-01 | 15-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | Owen's New Harmony and the valuation joint | chooses | contested | yes | argument | `exempt-element` |
 | 15-02 | 15-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | the kibbutzim and the rotation joint | works | contested | no | argument | `exempt-element` |

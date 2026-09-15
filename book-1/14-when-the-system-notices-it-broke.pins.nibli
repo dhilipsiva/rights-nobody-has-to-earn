@@ -7,6 +7,21 @@
 #   tests/pins/justice/nonresponse/silence-without-positive-elapsed-evidence/expect.pins.nibli
 #   tests/pins/justice/appeal/request-without-operator-or-previous-permission/expect.pins.nibli
 #
+# "When the finding itself turns out to be wrong" rests on these
+# actual-constitution withdrawal sequences:
+#   tests/pins/knowledge/free-field/restriction-defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/knowledge/free-field/unrelated-defect/expect.pins.nibli
+#   tests/pins/record-power/power/holding-defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/record-power/power/unrelated-defect/expect.pins.nibli
+#   tests/pins/scarcity/priority/false-scarcity-stops-the-allocation/expect.pins.nibli
+#   tests/pins/scarcity/priority/not-a-shortage-BudgetChoice/expect.pins.nibli
+#   tests/pins/knowledge/free-field/restriction-does-not-travel-between-fields/expect.pins.nibli
+#   tests/pins/record-power/power/holding-does-not-cover-another-subject/expect.pins.nibli
+# Each derives its family's heads, asserts a reviewed defect, and derives them
+# FALSE afterwards while the person standing beside the record keeps personhood,
+# the floor debt and the ballot. They establish what stops following; they do not
+# establish that any correction was made or published.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/14-when-the-system-notices-it-broke.pins.nibli
 #   ./verify.sh          # the real check — the line above cannot see

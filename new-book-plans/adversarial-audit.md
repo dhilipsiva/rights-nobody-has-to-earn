@@ -22,7 +22,6 @@ welcome optional evidence; none is required for completion.
 | Care and the life course | omitted-domain | The family, dependency, reproduction and care baseline landed 106 person-held barriers and no ordinary-operation interface, so the domain appears only under strain. |
 | Care and the life course | narrative-distortion | `cares` is the posture of one passage in the whole book. |
 | Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. |
-| Media, science, culture and pluralism | narrative-distortion | Knowledge and culture is carried by a stated boundary and no passage in which anything goes wrong. |
 | Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. |
 | Defence and external affairs | narrative-distortion | Defence is carried by a stated boundary and no passage in which anything goes wrong. |
 | Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. |
@@ -35,7 +34,7 @@ welcome optional evidence; none is required for completion.
 | --- | ---: | ---: |
 | hidden-liveness-assumption | 4 | 4 |
 | impossible-operation-overclaim | 6 | 0 |
-| narrative-distortion | 5 | 5 |
+| narrative-distortion | 5 | 4 |
 | omitted-domain | 2 | 1 |
 | private-power-blind-spot | 4 | 0 |
 | totalising-rule | 7 | 0 |
@@ -132,7 +131,7 @@ Encoded by:
 - `tests/pins/knowledge/autonomy/positive/expect.pins.nibli`
 
 - **held** (totalising-rule) — A concentration finding is structural and actor-side; it adjudicates no truth, no editorial choice, and classifies no audience.
-- **open** (narrative-distortion) — Knowledge and culture is carried by a stated boundary and no passage in which anything goes wrong.
+- **held** (narrative-distortion) — Knowledge and culture was carried by a stated boundary alone until chapter 14 gained a passage in which a reviewed restriction is found defective and stops.
 
 ### Local, migration and collective governance
 

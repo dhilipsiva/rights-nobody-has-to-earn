@@ -325,8 +325,8 @@ Gate B; it does not claim Book 2 operations or feasibility.
 - [ ] **Bring the expanded complete verifier back below five minutes.**
   - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,335
     pins across 14,892 cases pass with complete contradiction checks and no
-    findings in **869.18 seconds (14m29.18s)**, four workers, release binary
-    prebuilt, peak RSS 21,909,480 KiB, 393% utilisation. Three new families and
+    findings in **872.65 seconds (14m32.65s)**, four workers, release binary
+    prebuilt, peak RSS 21,924,220 KiB, 395% utilisation. Three new families and
     ten composed cases added 1,326 cases; the total moves within its noise band,
     which is what the profile below predicts: the cost is per-case fixed work
     and a heavy tail, not case count. The earlier 275.04-second
@@ -379,12 +379,14 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     establish, matched in 55 of the 86 — corrects that: seven of the eight meet
     the standard through a stated boundary, which is the weaker of the two
     accepted forms and is now counted separately.
-  - **Seven are carried by a boundary alone** — borders and asylum, collective
-    and plurality rights, defence, ecology, emergency, knowledge and culture,
-    non-human animals. Each states what it does not establish; none has a
-    passage in which something goes wrong. That is the portfolio rebalance's
-    remaining work, and the set is asserted by membership so it cannot grow
-    unnoticed.
+  - **Six are carried by a boundary alone** — borders and asylum, collective and
+    plurality rights, defence, ecology, emergency, non-human animals. Each
+    states what it does not establish; none has a passage in which something
+    goes wrong. Knowledge and culture left that list when chapter 14 gained
+    "When the finding itself turns out to be wrong", which is the shape the
+    other six need: a reviewed finding established as defective, what stops
+    following, and what the collapse does not do to the person. The set is
+    asserted by membership so it cannot grow unnoticed.
   - **One is a constitutional gap, not a prose gap.** Life course, family, care
     and reproduction appears only under strain because the baseline landed 106
     person-held barriers and no ordinary-operation interface. There is nothing

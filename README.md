@@ -107,10 +107,10 @@ allocator. The explicit authoring executable is unchanged.
 Latest full run measured on 2026-09-15 with four workers and the release binary
 already built against the pinned engine `979fe8b`: all 82,335 pins across 14,892
 cases passed, with complete formal
-contradiction scans and no findings, in 869.18 seconds (14m29.18s); nine
-existing known-defect pins still reproduce. User CPU was 3,338.52 seconds,
-system CPU 86.10 seconds, utilisation 393%, and peak resident memory
-21,909,480 KiB, with no major page faults and no swaps. Other machine activity
+contradiction scans and no findings, in 872.65 seconds (14m32.65s); nine
+existing known-defect pins still reproduce. User CPU was 3,371.05 seconds,
+system CPU 81.71 seconds, utilisation 395%, and peak resident memory
+21,924,220 KiB, with no major page faults and no swaps. Other machine activity
 was not controlled.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second

@@ -1402,6 +1402,22 @@
     {
       "id": "14-04",
       "chapter": "book-1/14-when-the-system-notices-it-broke.md",
+      "section": "When the finding itself turns out to be wrong",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "continuity",
+      "setting": "a reviewed restriction found defective",
+      "postures": [
+        "is acted upon",
+        "challenges"
+      ],
+      "trajectory": "continuity-remedy",
+      "pattern": "private-civic",
+      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli"
+    },
+    {
+      "id": "14-05",
+      "chapter": "book-1/14-when-the-system-notices-it-broke.md",
       "section": "What it does have",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
