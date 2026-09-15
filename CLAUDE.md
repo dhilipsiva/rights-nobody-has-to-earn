@@ -1840,6 +1840,29 @@ formal**, and neither should be read as checked: the first is a resource claim
 this repository cannot make, and the second is the floor's unconditionality
 above `person`, which the firewall protects but no test states as an asymmetry.
 
+**Psychological claims are grounded by refusing to name a psychological state —
+2026-09-15.** The item's third requirement is formal and now checked: no duty
+among the 313 named duty constants compels or certifies believing, eating,
+learning, accepting treatment, a relationship, fulfilment, satisfaction,
+happiness, trust or loyalty, and no second compliance duty exists. The one duty
+naming compliance is an institution carrying out a court's final protective
+direction and is allowlisted by name.
+
+**Where the guard is, and where it is not, is stated rather than implied.**
+`happy` and `deserve` are corpus names, so keeping them out of the rules is this
+test's doing. `trust`, `wellbeing`, `satisfaction`, `compliance`, `motivation`,
+`attitude` and `loyalty` are **not** corpus names — the closure refuses them a
+step earlier, and the test asserts that too, so it fails rather than passing
+silently if the corpus ever admits one.
+
+The item's first requirement — testing for autonomy, voice, non-humiliation,
+relatedness, meaningful control, retaliation, status competition, coercive
+incentives, learned helplessness, trust, care burden and the effects of being
+watched — is **empirical and its route is unbuilt**. Nothing here tests any of
+it, and no formal proof or service record may be read as evidence of any of it.
+That is the second requirement, and it is a claim discipline rather than a
+check.
+
 **The red-team index is landed — 2026-09-15.**
 `new-book-plans/book-1-red-team-index.md` has one entry per named strategic
 behaviour, each stating who gains, what they must know and coordinate, who bears

@@ -215,3 +215,24 @@ only written down. The design's answer is price, not prevention.
 Four behaviours are recorded as outside what Nibli can test: adverse selection,
 moral hazard, free-riding and black markets. Free-riding is unobservable here by
 construction, because the design demands nothing of the recipient.
+
+PSYCHOLOGICAL CLAIMS, GROUNDED BY NOT NAMING A STATE
+
+None of the 313 duty constants compels or certifies believing, eating,
+learning, accepting treatment, a relationship, fulfilment, satisfaction,
+happiness, trust or loyalty, and there is no second compliance duty. The one
+that names compliance is an institution carrying out a court's final protective
+direction, allowlisted by name.
+
+The interesting half is where the guard is not. Probing the corpus showed that
+`happy` and `deserve` compile while `trust`, `wellbeing`, `satisfaction`,
+`compliance`, `motivation`, `attitude` and `loyalty` do not. So this test is
+what keeps the first two out, and the closure is what keeps the rest out. The
+test now asserts BOTH, so it fails rather than passing silently if the corpus
+ever admits one of them. Writing the check before probing would have produced a
+test that looked strong and guarded almost nothing.
+
+The empirical half — autonomy, voice, non-humiliation, relatedness, retaliation,
+status competition, learned helplessness, care burden, the effects of being
+watched — is route-unbuilt. Nothing here tests it and no service record may be
+read as evidence of it.

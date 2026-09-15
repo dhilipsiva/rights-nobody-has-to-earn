@@ -534,17 +534,6 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     sensitivity tests and null/negative results subject to privacy and licence. Use
     group-level outcomes for institutional repair, never individual worth.
 
-- [ ] **Ground psychological claims without turning people into variables.**
-  - Test for autonomy, voice, non-humiliation, relatedness, meaningful control,
-    retaliation, status competition, coercive incentives, learned helplessness,
-    trust, care burden and the effects of being watched or scored.
-  - Where optional lived-experience evidence exists, separate ordinary and
-    coercive institutions. Otherwise do not claim psychology, wellbeing, or
-    compliance from a formal proof or service record.
-  - Protect refusal and exit where compatible with others' rights; conditions may be
-    secured, but belief, eating, learning, treatment, relationship and fulfilment
-    may not be compelled or certified.
-
 - [ ] **Run the source-derived multidisciplinary adversarial audit before completion.**
   - Encode the declared lenses for constitutional law, public administration,
     disability/accessibility, public health, care/life course, labour/economy,

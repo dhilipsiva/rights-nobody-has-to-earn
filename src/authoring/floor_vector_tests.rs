@@ -581,3 +581,96 @@ fn no_family_claims_a_rival_final_authority() {
         );
     }
 }
+
+/// Duty names that would compel or certify a personal state. Conditions may be
+/// secured; belief, eating, learning, treatment, a relationship and fulfilment
+/// may not be demanded of anybody or certified about them.
+const COMPELLED_STATE: [&str; 12] = [
+    "Believe",
+    "Eat",
+    "Learn",
+    "Accept",
+    "Feel",
+    "Trust",
+    "Happy",
+    "Wellbeing",
+    "Fulfil",
+    "Satisf",
+    "Love",
+    "Loyal",
+];
+
+/// The one duty naming compliance, and what it actually is: an institution
+/// carrying out a court's final protective direction, not a person made to
+/// comply with anything.
+const INSTITUTIONAL_COMPLIANCE: &str = "ECComplyWithExactFinalProtectiveDirection";
+
+#[test]
+fn no_duty_compels_or_certifies_a_personal_state() {
+    let duty = Regex::new(r"->\s*obliged\([^,]+,\s*(\w+),").unwrap();
+    let mut names = BTreeSet::new();
+    for statement in statements() {
+        if let Some(caught) = duty.captures(&statement) {
+            names.insert(caught[1].to_owned());
+        }
+    }
+    assert!(
+        names.len() > 250,
+        "only {} duty names found, which is too few to be the population",
+        names.len()
+    );
+    for name in &names {
+        if name == INSTITUTIONAL_COMPLIANCE {
+            continue;
+        }
+        for state in COMPELLED_STATE {
+            assert!(
+                !name.contains(state),
+                "the duty '{name}' names a personal state. Conditions may be \
+                 secured; believing, eating, learning, accepting treatment, a \
+                 relationship and fulfilment may not be demanded or certified."
+            );
+        }
+        assert!(
+            !name.contains("Comply"),
+            "'{name}' is a second compliance duty. The one that exists is an \
+             institution carrying out a court's final direction; a duty to \
+             comply is otherwise how a personal state gets demanded sideways."
+        );
+    }
+    // Nothing is named for a psychological state either, so no service record
+    // can be read as evidence of one. Only two such names are expressible at
+    // all — the rest are refused a step earlier, by the corpus.
+    for relation in ["happy", "deserve"] {
+        let used = Regex::new(&format!(r"(?:^|[^A-Za-z0-9_]){relation}\(")).unwrap();
+        assert!(
+            !statements().iter().any(|line| used.is_match(line)),
+            "'{relation}' is used as a relation, which is how a formal proof or \
+             a service record comes to look like evidence about how somebody feels"
+        );
+    }
+    // Where the guard is, and where it is not. `happy` and `deserve` are corpus
+    // names, so the checks above are what keeps them out. `trust`, `wellbeing`,
+    // `satisfaction`, `compliance`, `motivation`, `attitude` and `loyalty` are
+    // not corpus names: the closure refuses them before any rule here sees
+    // them, and this test would pass over a design that had no such guard.
+    let session = nibli_session::CoreSession::new();
+    for expressible in [
+        "all $x: person($x) -> obliged($x, BelieveTheOfficialAccount, Record).",
+        "all $x: person($x) -> happy($x).",
+    ] {
+        session
+            .compile_text(expressible)
+            .expect("the refused shape is expressible, so refusing it is a choice");
+    }
+    for refused_upstream in [
+        "all $x: person($x) -> trust($x, State).",
+        "all $x: person($x) -> compliance($x).",
+    ] {
+        assert!(
+            session.compile_text(refused_upstream).is_err(),
+            "{refused_upstream} now compiles, so the corpus no longer refuses \
+             it and this test has to carry the name itself"
+        );
+    }
+}
