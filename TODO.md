@@ -323,13 +323,13 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
-  - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,279
-    pins across 14,885 cases pass with complete contradiction checks and no
-    findings in **821.68 seconds (13m41.68s)**, four workers, release binary
-    prebuilt, peak RSS 21,911,748 KiB, 390% utilisation. Three new families
-    added 1,319 cases without moving the total out of its noise band, which is
-    what the profile below predicts: the cost is per-case fixed work and a heavy
-    tail, not case count. The earlier 275.04-second
+  - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,311
+    pins across 14,889 cases pass with complete contradiction checks and no
+    findings in **865.74 seconds (14m25.74s)**, four workers, release binary
+    prebuilt, peak RSS 21,905,256 KiB, 380% utilisation. Three new families and
+    four composed cases added 1,323 cases; the total moves within its noise
+    band, which is what the profile below predicts: the cost is per-case fixed
+    work and a heavy tail, not case count. The earlier 275.04-second
     result covered only the pre-expansion 4,190-case inventory and is not a
     current timing.
   - **The profiling bullet is done.** `new-book-plans/nibli-performance-candidate.md`
@@ -361,19 +361,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
     resource limits reported honestly.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
-
-- [ ] **Red-team incentives, capture, and strategic behavior across the composed
-  society.**
-  - Test capture, collusion, rent-seeking, bribery, patronage, regulatory arbitrage,
-    strategic withholding/misreporting, Goodhart effects, adverse selection, moral
-    hazard, free-riding, black markets and burden-shifting into another domain or
-    jurisdiction.
-  - For every mechanism state who benefits from gaming it, the information and
-    coordination required, who bears the hidden cost, how it is detected/challenged,
-    and whether the response creates a new veto, surveillance system or score.
-  - Nibli may test legal walls; quantitative models, games/simulations, empirical
-    evidence and Book 2 operations test behavior and scale. Do not assume either
-    universal selfishness or universal altruism.
 
 ### Expansion phase 4 — Build a structurally navigable reader experience
 

@@ -34,6 +34,7 @@ destination.
 | `new-book-plans/book-1-knowledge-and-free-field-contract.md` | Restriction conditions, residual freedom, public information, accessibility, inquiry autonomy and communication plurality. |
 | `new-book-plans/book-1-record-power-contract.md` | Record holding, surveillance, biometrics, profiling, automated support, access, retention and non-use walls. |
 | `new-book-plans/book-1-scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
+| `new-book-plans/book-1-red-team-index.md` | One entry per strategic behaviour: who gains, who pays, what stops it, and where nothing does. |
 | `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
@@ -101,12 +102,12 @@ the first build compiles the bundled C library using a C compiler and Make
 allocator. The explicit authoring executable is unchanged.
 
 Latest full run measured on 2026-09-15 with four workers and the release binary
-already built against the pinned engine `979fe8b`: all 82,279 pins across 14,885
+already built against the pinned engine `979fe8b`: all 82,311 pins across 14,889
 cases passed, with complete formal
-contradiction scans and no findings, in 821.68 seconds (13m41.68s); nine
-existing known-defect pins still reproduce. User CPU was 3,134.27 seconds,
-system CPU 78.77 seconds, utilisation 390%, and peak resident memory
-21,911,748 KiB, with no major page faults and no swaps. Other machine activity
+contradiction scans and no findings, in 865.74 seconds (14m25.74s); nine
+existing known-defect pins still reproduce. User CPU was 3,208.29 seconds,
+system CPU 79.42 seconds, utilisation 380%, and peak resident memory
+21,905,256 KiB, with no major page faults and no swaps. Other machine activity
 was not controlled.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second

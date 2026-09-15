@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# COLLUSION, and the design loses this one. These are the SAME facts as the
+# ordinary positive case, because collusion and honest agreement are the same
+# shape: three distinct attesters, agreeing. Nothing here authenticates a
+# witness or checks that the harm evidence is true, so a restriction founded
+# on three matching lies completes exactly as one founded on three matching
+# truths. Pinned TRUE deliberately, so the boundary is executable rather than
+# only written down. What the design does instead is make the arrangement
+# expensive: three distinct named writers, a reader, an alternate, published
+# reasons and a challenge route, all attributable. Detection is external.
+
+:expect-pins 2
+
+? complete(KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeCaseMatter).
+# => TRUE
+? authority(KnowledgeCaseActor, ReviewedConductRestriction, KnowledgeCaseRecord).
+# => TRUE

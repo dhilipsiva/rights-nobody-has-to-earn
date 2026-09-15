@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(CaptureBoss, IndependentKnowledgeEvidenceAuthority, KnowledgeCaseRecord).
+authorized(CaptureBoss, IndependentKnowledgeReviewAuthority, KnowledgeCaseRecord).
+authorized(CaptureBoss, KnowledgeAlternateReviewAuthority, KnowledgeCaseRecord).
+authorized(CaptureBoss, KnowledgeChallengeReaderAuthority, KnowledgeCaseRecord).
+authorized(CaptureBoss, KnowledgeSourceAuthority, KnowledgeCaseRecord).
+observe(CaptureBoss, KnowledgeCaseRecord, CaptureBoss, KnowledgeActorScope).
+observe(CaptureBoss, KnowledgeCaseRecord, CaptureBoss, KnowledgeChallengeReaderScope).
+observe(CaptureBoss, KnowledgeCaseRecord, CaptureBoss, KnowledgeIndependentAlternateScope).
+observe(CaptureBoss, KnowledgeCaseRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(CaptureBoss, KnowledgeCaseRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(CaptureBoss, KnowledgeCaseRecord, DefinedActivityReachAndAffectedPeople, KnowledgeRestrictionReachScope).
+observe(CaptureBoss, KnowledgeCaseRecord, EvidencedHarmNotOffenceDisagreementOrOfficialTruth, KnowledgeHarmEvidenceScope).
+observe(CaptureBoss, KnowledgeCaseRecord, EvidencedRightsHarm, KnowledgeHarmKindScope).
+observe(CaptureBoss, KnowledgeCaseRecord, IndependentReviewAndSuspensiveChallenge, KnowledgeReviewRouteScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseChallenge, KnowledgeChallengeScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseCorrection, KnowledgeCorrectionScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseEnd, KnowledgeSourceBoundEndScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseJurisdiction, KnowledgeJurisdictionScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseMatter, KnowledgeMatterScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCasePeriod, KnowledgeEvidencePeriodScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseRemedy, KnowledgeRemedyScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseScope, KnowledgeLegalScope).
+observe(CaptureBoss, KnowledgeCaseRecord, KnowledgeCaseVersion, KnowledgeSourceVersionScope).
+observe(CaptureBoss, KnowledgeCaseRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(CaptureBoss, KnowledgeCaseRecord, LeastRestrictiveEffectiveMeansConsidered, KnowledgeNecessityScope).
+observe(CaptureBoss, KnowledgeCaseRecord, NoCertificationOfTruthTasteOrCreativeMerit, KnowledgeNonCertificationScope).
+observe(CaptureBoss, KnowledgeCaseRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(CaptureBoss, KnowledgeCaseRecord, NoPriorPermissionForUnrestrictedActivity, KnowledgeResidualFreedomScope).
+observe(CaptureBoss, KnowledgeCaseRecord, NoViewpointBeliefOrIdentityTargeting, KnowledgeNeutralityScope).
+observe(CaptureBoss, KnowledgeCaseRecord, PublicReasonsAndAccessibleNotice, KnowledgeReasonsScope).
+observe(CaptureBoss, KnowledgeCaseRecord, ReviewedConductRestriction, KnowledgeRestrictionKindScope).
+observe(CaptureBoss, KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeRecordKindScope).

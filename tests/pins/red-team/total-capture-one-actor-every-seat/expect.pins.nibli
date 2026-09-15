@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# CAPTURE, taken to the limit: one actor writes the source, supplies the
+# evidence, reviews it, hears the challenge, stands as the independent
+# alternate, and is the body doing the restricting. Every seat, one person.
+# Nothing completes. The separation requirements are conditions on the
+# supplied credentials, so this establishes that the record refuses the
+# arrangement — not that any real body is independent.
+
+:expect-pins 4
+
+? complete(KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeCaseMatter).
+# => FALSE
+? authority(CaptureBoss, ReviewedConductRestriction, KnowledgeCaseRecord).
+# => FALSE
+? obliged(CaptureBoss, PublishKnowledgeRestrictionReasonsAndEvidence, KnowledgeCaseRecord).
+# => FALSE
+? obliged(CaptureBoss, HearKnowledgeRestrictionChallengeAndCorrect, KnowledgeCaseRecord).
+# => FALSE

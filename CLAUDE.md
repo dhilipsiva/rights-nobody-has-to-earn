@@ -1840,6 +1840,33 @@ formal**, and neither should be read as checked: the first is a resource claim
 this repository cannot make, and the second is the floor's unconditionality
 above `person`, which the firewall protects but no test states as an asymmetry.
 
+**The red-team index is landed — 2026-09-15.**
+`new-book-plans/book-1-red-team-index.md` has one entry per named strategic
+behaviour, each stating who gains, what they must know and coordinate, who bears
+the cost that does not appear on the ledger, how it is detected or challenged,
+and whether the design's answer creates a new veto, surveillance system or
+score. Ten entries name an executable case for the wall they claim.
+
+**One entry says the wall is not there, and pins it.** Collusion and honest
+agreement are the same shape: nothing authenticates a witness or checks that
+attested evidence is true, so a record founded on three matching lies completes
+exactly as one founded on three matching truths.
+`tests/pins/red-team/collusion-three-attesters-who-agree` pins that TRUE
+deliberately, so the boundary is executable rather than only written down. What
+the design does instead is raise the price — three distinct named writers, a
+reader, an alternate, published reasons and a challenge route, all attributable —
+which is a cost and not a barrier. Every contract card's "conditions on supplied
+credentials, not proof of independence in practice" is saying this.
+
+**Four behaviours are recorded as outside what Nibli can test**: adverse
+selection, moral hazard, free-riding and black markets. Free-riding is
+unobservable here *by construction* — the design demands nothing of the
+recipient, and that is the thesis, so the cost of the choice is that this
+particular gaming route leaves no trace. Their assigned routes are quantitative
+models, games and simulations, empirical evidence and operational assurance,
+none of which is built, and no claim about any of them follows from a green
+verifier.
+
 **Compositional closure is censused, and what is not censused is named —
 2026-09-15.** The item's list of composition failures is answered one at a time
 rather than in bulk. **Duty cycles** are impossible, not merely absent: nothing

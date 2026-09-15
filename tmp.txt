@@ -193,3 +193,25 @@ acted.
 
 Adding the scarcity family made the challenge-skeleton membership assertion fail
 until the family was recorded in it. That is the assertion working.
+
+THE RED-TEAM INDEX
+
+book-1-red-team-index.md has one entry per named strategic behaviour: who gains,
+what they must know and coordinate, who bears the cost that never reaches the
+ledger, how it is detected or challenged, and whether the answer creates a new
+veto, surveillance system or score. Ten entries name an executable case.
+
+Three new composed cases under tests/pins/red-team/. One actor in all six seats
+completes nothing. A restriction reviewed for a knowledge matter will not license
+surveillance, and a record holding will not license a restriction, while each
+family's own record is unaffected.
+
+The third is the one worth reading. Collusion and honest agreement are the same
+shape, so a record founded on three matching lies completes exactly as one
+founded on three matching truths. It is pinned TRUE on purpose, with the same
+facts as the ordinary positive case, so the boundary is executable rather than
+only written down. The design's answer is price, not prevention.
+
+Four behaviours are recorded as outside what Nibli can test: adverse selection,
+moral hazard, free-riding and black markets. Free-riding is unobservable here by
+construction, because the design demands nothing of the recipient.
