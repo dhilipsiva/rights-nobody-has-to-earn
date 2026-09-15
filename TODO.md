@@ -380,16 +380,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
     - children, dependants and people needing support retain rights without symmetric
       capacity or contribution duties.
 
-- [ ] **State the determination/action boundary accurately.**
-  - Book 1 must identify who owes what, what counts as ordinary lawful function,
-    delivery, failure, continuity, remedy, public accountability, and protected
-    freedom from direction.
-  - Book 2 must specify how people, institutions, funding, resources, technology and
-    real-world operations make those duties happen and how the system degrades under
-    scarcity or shock.
-  - Do not describe an infinite chain of duties as action, an interface as capacity,
-    a simulation as deployment, or an external premise as a constitutional fact.
-
 - [ ] **Define cross-domain priority, conflict, and physical-scarcity rules.**
   - Admit scarcity only from authenticated, contestable, resource/population-
     specific evidence after alternatives, reserves, substitution, coordination,

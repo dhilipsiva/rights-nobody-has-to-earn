@@ -1771,7 +1771,17 @@ compensates for another; and recognition minted by its three doors, never read,
 never joined with itself, and still arity one. Each control was executed against
 the actual source, not a scratch copy.
 
-These replace the pattern guards the 2026-09-12 decision retired with the old
+The same file carries the **no-reader census**, which is where the
+determination/action boundary is formal rather than editorial. `owe`, `become`,
+`lose`, `insure`, `provide`, `grant`, `reward` and `prevents` are read by no
+rule; the typed three-place `obliged` is read by no rule; and the legacy
+two-place `obliged` has exactly one reader, the allowlisted bridge that concludes
+the typed duty. That census is how this design says a duty is not an action and
+an interface is not a capacity: not by asserting it in prose, but by leaving
+nothing that could read a determination as evidence something happened. It
+replaces the retired `verify.sh` rejection of an outside `obliged` consumer.
+
+These replace pattern guards the 2026-09-12 decision retired with the old
 `verify.sh` sections, and they are development tests: verification stays pins and
 contradiction scans, and no gate is added to it. They establish properties of the
 current rule text, not a semantic impossibility — a new relation name routes

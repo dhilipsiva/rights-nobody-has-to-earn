@@ -105,3 +105,22 @@ script on 2026-09-12. Four sentences were corrected to name what checks them now
 
 `./verify.sh` is unchanged — these are development tests, and the 2026-09-12
 decision keeps verification to pins and contradiction scans.
+
+THE DETERMINATION/ACTION BOUNDARY, WHERE IT IS FORMAL
+
+The item's editorial half — who owes what, what counts as lawful function,
+delivery, failure, continuity, remedy, accountability and freedom from direction
+— is carried by the landed families' contract cards, one per domain, twenty rule
+blocks now. Its Book 2 half is Book 2's tracker, collection-only until Gate C.
+
+Its formal half is the no-reader census, now guarded. `owe`, `become`, `lose`,
+`insure`, `provide`, `grant`, `reward` and `prevents` are read by no rule; the
+typed three-place `obliged` is read by no rule; the legacy two-place `obliged`
+has exactly one reader, the allowlisted bridge. That is how the design says a
+duty is not an action and an interface is not a capacity — by leaving nothing
+that could read a determination as evidence that something happened. Five
+hostile readers were run against the actual source and each was caught,
+including a second `obliged/2` consumer.
+
+`verify.sh` used to reject an outside `obliged` consumer; that section retired
+with the old script, and the census now lives in the development tests.

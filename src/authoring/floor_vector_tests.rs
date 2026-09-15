@@ -242,3 +242,94 @@ fn recognition_is_minted_never_read_and_never_counted() {
             .expect("the refused shape is expressible");
     }
 }
+
+/// The determination/action boundary, where it is formal rather than editorial:
+/// a duty is not an action and an interface is not a capacity, and the way this
+/// design says so is that nothing reads them. `verify.sh` used to reject an
+/// outside `obliged` consumer; that section retired on 2026-09-12, so the census
+/// lives here with its controls.
+const NO_READER: [&str; 8] = [
+    "owe", "become", "lose", "insure", "provide", "grant", "reward", "prevents",
+];
+
+fn atom_arity(atom: &str) -> usize {
+    atom.split_once('(')
+        .map_or(0, |(_, args)| args.trim_end_matches(')').split(',').count())
+}
+
+#[test]
+fn a_duty_is_not_an_action_because_nothing_reads_one() {
+    let statements = statements();
+    for relation in NO_READER {
+        let read = Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])~?{relation}\(")).unwrap();
+        for statement in &statements {
+            let Some((body, _)) = split(statement) else {
+                continue;
+            };
+            assert!(
+                !read.is_match(body),
+                "'{relation}' is now READ by a rule. It is a leaf on purpose: \
+                 reading it is what turns a recorded determination into evidence \
+                 that something happened: {statement}"
+            );
+        }
+    }
+
+    // `obliged` is the exception, and it is exactly one: the typed bridge that
+    // reads the legacy two-place compatibility conclusion and concludes the
+    // three-place duty. The three-place duty itself is read by nothing, which is
+    // what keeps a duty from proving its own performance.
+    let mut two_place_readers = Vec::new();
+    let mut three_place_readers = Vec::new();
+    for statement in &statements {
+        let Some((body, head)) = split(statement) else {
+            continue;
+        };
+        for found in Regex::new(r"obliged\([^)]*\)").unwrap().find_iter(body) {
+            match atom_arity(found.as_str()) {
+                2 => two_place_readers.push(head),
+                _ => three_place_readers.push(head),
+            }
+        }
+    }
+    assert!(
+        three_place_readers.is_empty(),
+        "a typed duty is read by {three_place_readers:?}, so a duty can now \
+         stand as evidence that its reader acted"
+    );
+    assert_eq!(
+        two_place_readers.len(),
+        1,
+        "the legacy two-place duty has {} readers; exactly one allowlisted \
+         bridge is the ruled design: {two_place_readers:?}",
+        two_place_readers.len()
+    );
+    assert!(
+        two_place_readers[0].starts_with("obliged("),
+        "the one bridge must conclude a typed duty, not something else: {:?}",
+        two_place_readers[0]
+    );
+
+    // Controls: every refused reader shape is expressible, so each absence is a
+    // decision and not a limit of the language.
+    for hostile in [
+        "all $x: owe(State, Eats, $x) -> eats($x).",
+        "all $r: all $x: obliged($r, ReviewPlacement, $x) -> free($x).",
+        "all $x: lose(Points, $x) -> err($x, Recognition).",
+        "all $x: prevents($x, CompelledConscience) -> reward($x).",
+    ] {
+        let session = nibli_session::CoreSession::new();
+        session
+            .compile_text(hostile)
+            .expect("the refused reader shape is expressible");
+        let (body, _) = split(hostile).expect("a rule");
+        assert!(
+            NO_READER.iter().any(|relation| {
+                Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])~?{relation}\("))
+                    .unwrap()
+                    .is_match(body)
+            }) || Regex::new(r"obliged\([^)]*\)").unwrap().is_match(body),
+            "control {hostile} does not exercise the census it is meant to trip"
+        );
+    }
+}
