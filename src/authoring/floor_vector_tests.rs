@@ -10,7 +10,7 @@
 
 use super::*;
 use regex::Regex;
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 
 /// The eight floor actualities, spelled as the constitution spells them.
 const FLOOR: [&str; 8] = [
@@ -338,7 +338,7 @@ fn a_duty_is_not_an_action_because_nothing_reads_one() {
 /// Families whose every record completion carries the challenge reader and the
 /// independent alternate. The two older families predate that convention and are
 /// named below rather than quietly excused.
-const CHALLENGE_SKELETON: [&str; 8] = [
+const CHALLENGE_SKELETON: [&str; 9] = [
     "DEMOCRATIC-INTEGRITY",
     "ECOLOGICAL-ANIMAL",
     "KNOWLEDGE-AND-FREE-FIELD",
@@ -347,6 +347,7 @@ const CHALLENGE_SKELETON: [&str; 8] = [
     "OFFICIAL-STATISTICS",
     "PUBLIC-SAFETY",
     "RECORD-POWER",
+    "SCARCITY-AND-CONFLICT",
 ];
 const PREDATES_CHALLENGE_SKELETON: [&str; 2] = ["ECONOMIC-CONSTITUTION", "STATE-FORM"];
 
@@ -470,4 +471,113 @@ fn the_challenge_and_alternate_skeleton_holds_where_it_was_adopted() {
         "the partially adopted set moved; amendment enactment is the one family \
          where some completions carry the skeleton and some do not"
     );
+}
+
+/// Record kinds that deliberately carry no end condition, because what they
+/// record has none: a current selection, a published version, an effective
+/// version, an escalation, and three positive findings that something already
+/// happened. A power that can be exercised is not on this list, and a new
+/// entry here is a design decision that belongs in a contract card.
+const ENDLESS_BY_DESIGN: [&str; 7] = [
+    "StateFormCurrent",
+    "AmendmentPublishedCandidate",
+    "AmendmentEffectiveVersion",
+    "AmendmentNonresponseEscalation",
+    "PSProtectedPublicInterestDisclosureFinding",
+    "PSPositiveActualPublicHoldingFinding",
+    "PSPositiveProtectiveIncidentFinding",
+];
+
+fn completed_kind(head: &str) -> String {
+    head.trim_end_matches('.')
+        .trim_end_matches(')')
+        .split_once('(')
+        .map(|(_, args)| args.split(',').nth(1).unwrap_or_default().trim().to_owned())
+        .unwrap_or_default()
+}
+
+#[test]
+fn no_family_can_be_vetoed_by_withholding_evidence() {
+    let reader = Regex::new(r"authorized\(\$\w+, \w*Challenge\w*, ").unwrap();
+    let alternate = Regex::new(r"authorized\(\$\w+, \w*Alternate\w*, ").unwrap();
+    let mut with_reader = 0;
+    for (family, body, statement) in record_completions() {
+        if !reader.is_match(&body) {
+            continue;
+        }
+        with_reader += 1;
+        assert!(
+            alternate.is_match(&body),
+            "a {family} record admits a challenge reader with no independent \
+             alternate behind them, so whoever declines to read it holds a \
+             veto: {statement}"
+        );
+    }
+    assert!(
+        with_reader > 300,
+        "only {with_reader} completions carry a challenge reader, which is too \
+         few to be the population this test is about"
+    );
+}
+
+#[test]
+fn every_exercisable_power_record_carries_a_source_bound_end() {
+    let ends = Regex::new(r", \w*End\w*Scope\)").unwrap();
+    let mut endless = BTreeSet::new();
+    for (family, body, statement) in record_completions() {
+        let (_, head) = split(&statement).expect("a rule");
+        if ends.is_match(&body) {
+            continue;
+        }
+        endless.insert(completed_kind(head));
+        assert!(
+            ENDLESS_BY_DESIGN.contains(&completed_kind(head).as_str()),
+            "a {family} record confers something with no source-bound end, which \
+             is unbounded delegation unless it is one of the kinds that has \
+             nothing to end: {statement}"
+        );
+    }
+    assert_eq!(
+        endless,
+        ENDLESS_BY_DESIGN.iter().map(ToString::to_string).collect(),
+        "the set of record kinds without an end moved; adding one is a design \
+         decision that belongs in a contract card, and removing one means this \
+         list is now stale"
+    );
+}
+
+#[test]
+fn no_family_claims_a_rival_final_authority() {
+    let observed = Regex::new(r"observe\([^,]+, [^,]+, (\w+), (\w*Final\w*Scope)\)").unwrap();
+    let mut routes: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
+    for (_, statement) in families() {
+        for caught in observed.captures_iter(&statement) {
+            routes
+                .entry(caught[2].to_owned())
+                .or_default()
+                .insert(caught[1].to_owned());
+        }
+    }
+    assert!(
+        routes.len() > 10,
+        "only {} final-route scopes found, which is too few to be the population",
+        routes.len()
+    );
+    for (scope, values) in &routes {
+        assert!(
+            values.len() == 1 || scope == "FinalityScope" || scope.starts_with("ECFinal"),
+            "'{scope}' admits more than one final route — {values:?} — which is \
+             how two bodies come to hold the last word over the same thing"
+        );
+    }
+    // `FinalityScope` and the economic merits scopes are outcome vocabularies
+    // rather than routes: they say what a final decision may be, not who makes
+    // it. Naming them here is the difference between an exception and a hole.
+    for scope in ["FinalityScope"] {
+        assert!(
+            routes[scope].len() > 1,
+            "'{scope}' is exempted as an outcome vocabulary, but it now carries \
+             a single value and may be a route after all"
+        );
+    }
 }

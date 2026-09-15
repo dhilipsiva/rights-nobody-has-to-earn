@@ -1840,6 +1840,37 @@ formal**, and neither should be read as checked: the first is a resource claim
 this repository cannot make, and the second is the floor's unconditionality
 above `person`, which the firewall protects but no test states as an asymmetry.
 
+**Compositional closure is censused, and what is not censused is named —
+2026-09-15.** The item's list of composition failures is answered one at a time
+rather than in bulk. **Duty cycles** are impossible, not merely absent: nothing
+reads a duty, so no chain of them can close. **Remedy loops** likewise — no
+remedy conclusion is read. **Veto by withheld evidence** is checked: every record
+completion that admits a challenge reader also carries an independent alternate
+behind them, so whoever declines to read holds no veto. **Unbounded delegation**
+is checked: every completion carries a source-bound end except seven kinds that
+have nothing to end — a current selection, a published candidate, an effective
+version, an escalation, and three positive findings that something already
+happened — and that list is asserted by membership. **Rival final authority** is
+checked: every family's final-route scope carries exactly one value, and the
+outcome vocabularies that legitimately carry several are named rather than
+skipped. **Contradictory writers** are handled per family by the record-ambiguity
+machinery, which completes nothing when two attesters disagree about a
+single-valued scope. **Cross-domain routes recreating a score or status gate**
+are covered by the floor-vector guards and the forbidden-key list.
+
+**That individually safe domains stay safe when joined is executable, not
+argued.** `tests/pins/composition/three-families-joined` puts the knowledge,
+record-power and scarcity families' own positive records side by side in one
+knowledge base, asks each family's heads, and asks after a person standing
+beside them. Each family completes exactly what it completes alone, none reaches
+the person, and the shipped cast does not move.
+
+The compound-shock half of the item — what continues, what narrows, who may
+decide, who is protected first, what cannot be suspended — is the FS-SCN
+scenario catalogue, which is a reviewed inventory with a declared ceiling of
+kind I and maximum posture Checked. It is not upgraded by this census. Nor is
+the liveness discipline: a bounded safety result still claims that nobody acted.
+
 **The vector of protected conditions is guarded by development tests, enacted
 2026-09-15.** `src/authoring/floor_vector_tests.rs` measures five properties of
 the enacted lines and pairs each with a control that must fail: no standalone

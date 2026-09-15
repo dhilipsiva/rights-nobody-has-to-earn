@@ -362,20 +362,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
 
-- [ ] **Test compositional closure and graceful degradation.**
-  - For formal interfaces, prove within the declared model that individually safe
-    domains remain safe when joined; test quantitative, dynamic, empirical,
-    operational and lived compositions through their assigned assurance routes.
-    Search for duty cycles, contradictory writers, duplicated final authority, veto
-    by withheld evidence, remedy loops, unbounded delegation and cross-domain routes
-    that recreate a forbidden score or status gate.
-  - For normal operation and each compound shock, state what continues, what narrows,
-    who may decide, who is protected first, what cannot be suspended, how review
-    arrives, and how ordinary authority is restored.
-  - A bounded safety proof may not claim that people, clocks, supplies, institutions
-    or other states actually act. Assign every liveness premise to Book 2 or an
-    external assurance owner.
-
 - [ ] **Red-team incentives, capture, and strategic behavior across the composed
   society.**
   - Test capture, collusion, rent-seeking, bribery, patronage, regulatory arbitrage,

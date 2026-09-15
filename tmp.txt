@@ -168,3 +168,28 @@ All 82,279 pins across 14,885 cases pass with complete contradiction checks and
 no findings in 821.68 seconds, nine known defects still reproducing. The three
 families added 1,319 cases without moving the total out of its noise band, which
 is what the profile predicts.
+
+COMPOSITIONAL CLOSURE, ONE FAILURE MODE AT A TIME
+
+The item lists seven composition failures; each is answered separately rather
+than in bulk. Duty cycles and remedy loops are impossible because nothing reads
+a duty or a remedy — that falls out of the no-reader census. Veto by withheld
+evidence, unbounded delegation and rival final authority are new guards: every
+completion admitting a challenge reader carries an alternate behind them; every
+completion carries a source-bound end except seven named kinds that have nothing
+to end; every family's final-route scope carries exactly one value. Contradictory
+writers are the per-family ambiguity machinery. Score and status-gate recreation
+is the floor-vector work.
+
+That individually safe domains stay safe when joined is now executable rather
+than argued: tests/pins/composition/three-families-joined puts the knowledge,
+record-power and scarcity positives in one knowledge base and asks all three
+families' heads plus a person standing beside them. Twenty pins.
+
+Two halves are NOT discharged and are named as such: the compound-shock
+narrative is the FS-SCN catalogue at its declared ceiling, and the liveness
+discipline is unchanged — a bounded safety result still claims that nobody
+acted.
+
+Adding the scarcity family made the challenge-skeleton membership assertion fail
+until the family was recorded in it. That is the assertion working.

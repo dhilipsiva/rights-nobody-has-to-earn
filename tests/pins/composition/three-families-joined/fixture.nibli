@@ -1,0 +1,257 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Three families' own positive records, side by side in one knowledge base.
+# Each was generated independently; nothing here joins them.
+person(CompositionClaimant).
+at(CompositionClaimant, GeneralAdulthood).
+
+# --- knowledge
+authorized(KnowledgeCaseSource, KnowledgeSourceAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseEvidence, IndependentKnowledgeEvidenceAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseReview, IndependentKnowledgeReviewAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseReader, KnowledgeChallengeReaderAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseAlternate, KnowledgeAlternateReviewAuthority, KnowledgeCaseRecord).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseMatter, KnowledgeMatterScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseMatter, KnowledgeMatterScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseMatter, KnowledgeMatterScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseActor, KnowledgeActorScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseActor, KnowledgeActorScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseActor, KnowledgeActorScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCasePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCasePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCasePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseScope, KnowledgeLegalScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseScope, KnowledgeLegalScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseScope, KnowledgeLegalScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseChallenge, KnowledgeChallengeScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseChallenge, KnowledgeChallengeScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseChallenge, KnowledgeChallengeScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseRemedy, KnowledgeRemedyScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, KnowledgeCaseRemedy, KnowledgeRemedyScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, KnowledgeCaseRemedy, KnowledgeRemedyScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeRecordKindScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeRecordKindScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeRecordKindScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, EvidencedRightsHarm, KnowledgeHarmKindScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, EvidencedRightsHarm, KnowledgeHarmKindScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, EvidencedRightsHarm, KnowledgeHarmKindScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, ReviewedConductRestriction, KnowledgeRestrictionKindScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, ReviewedConductRestriction, KnowledgeRestrictionKindScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, ReviewedConductRestriction, KnowledgeRestrictionKindScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, EvidencedHarmNotOffenceDisagreementOrOfficialTruth, KnowledgeHarmEvidenceScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, EvidencedHarmNotOffenceDisagreementOrOfficialTruth, KnowledgeHarmEvidenceScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, EvidencedHarmNotOffenceDisagreementOrOfficialTruth, KnowledgeHarmEvidenceScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, LeastRestrictiveEffectiveMeansConsidered, KnowledgeNecessityScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, LeastRestrictiveEffectiveMeansConsidered, KnowledgeNecessityScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, LeastRestrictiveEffectiveMeansConsidered, KnowledgeNecessityScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, DefinedActivityReachAndAffectedPeople, KnowledgeRestrictionReachScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, DefinedActivityReachAndAffectedPeople, KnowledgeRestrictionReachScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, DefinedActivityReachAndAffectedPeople, KnowledgeRestrictionReachScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, PublicReasonsAndAccessibleNotice, KnowledgeReasonsScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, PublicReasonsAndAccessibleNotice, KnowledgeReasonsScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, PublicReasonsAndAccessibleNotice, KnowledgeReasonsScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, IndependentReviewAndSuspensiveChallenge, KnowledgeReviewRouteScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, IndependentReviewAndSuspensiveChallenge, KnowledgeReviewRouteScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, IndependentReviewAndSuspensiveChallenge, KnowledgeReviewRouteScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoViewpointBeliefOrIdentityTargeting, KnowledgeNeutralityScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, NoViewpointBeliefOrIdentityTargeting, KnowledgeNeutralityScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, NoViewpointBeliefOrIdentityTargeting, KnowledgeNeutralityScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoPriorPermissionForUnrestrictedActivity, KnowledgeResidualFreedomScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, NoPriorPermissionForUnrestrictedActivity, KnowledgeResidualFreedomScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, NoPriorPermissionForUnrestrictedActivity, KnowledgeResidualFreedomScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoCertificationOfTruthTasteOrCreativeMerit, KnowledgeNonCertificationScope).
+observe(KnowledgeCaseEvidence, KnowledgeCaseRecord, NoCertificationOfTruthTasteOrCreativeMerit, KnowledgeNonCertificationScope).
+observe(KnowledgeCaseReview, KnowledgeCaseRecord, NoCertificationOfTruthTasteOrCreativeMerit, KnowledgeNonCertificationScope).
+
+# --- record-power
+authorized(RecordCaseSource, RecordSourceAuthority, RecordCaseRecord).
+authorized(RecordCaseEvidence, IndependentRecordEvidenceAuthority, RecordCaseRecord).
+authorized(RecordCaseReview, IndependentRecordReviewAuthority, RecordCaseRecord).
+authorized(RecordCaseReader, RecordChallengeReaderAuthority, RecordCaseRecord).
+authorized(RecordCaseAlternate, RecordAlternateReviewAuthority, RecordCaseRecord).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseSubject, RecordSubjectScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseSubject, RecordSubjectScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseSubject, RecordSubjectScope).
+observe(RecordCaseSource, RecordCaseRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordCaseEvidence, RecordCaseRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordCaseReview, RecordCaseRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseHolder, RecordHolderScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseHolder, RecordHolderScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseHolder, RecordHolderScope).
+observe(RecordCaseSource, RecordCaseRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordCaseEvidence, RecordCaseRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordCaseReview, RecordCaseRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseVersion, RecordSourceVersionScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseVersion, RecordSourceVersionScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseVersion, RecordSourceVersionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCasePeriod, RecordEvidencePeriodScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCasePeriod, RecordEvidencePeriodScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCasePeriod, RecordEvidencePeriodScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseJurisdiction, RecordJurisdictionScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseJurisdiction, RecordJurisdictionScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseJurisdiction, RecordJurisdictionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseScope, RecordLegalScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseScope, RecordLegalScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseScope, RecordLegalScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseEnd, RecordSourceBoundEndScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseEnd, RecordSourceBoundEndScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseEnd, RecordSourceBoundEndScope).
+observe(RecordCaseSource, RecordCaseRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordCaseEvidence, RecordCaseRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordCaseReview, RecordCaseRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseReader, RecordChallengeReaderScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseReader, RecordChallengeReaderScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseReader, RecordChallengeReaderScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseAlternate, RecordIndependentAlternateScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseAlternate, RecordIndependentAlternateScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseAlternate, RecordIndependentAlternateScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseChallenge, RecordChallengeScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseChallenge, RecordChallengeScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseChallenge, RecordChallengeScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseCorrection, RecordCorrectionScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseCorrection, RecordCorrectionScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseCorrection, RecordCorrectionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseRemedy, RecordRemedyScope).
+observe(RecordCaseEvidence, RecordCaseRecord, RecordCaseRemedy, RecordRemedyScope).
+observe(RecordCaseReview, RecordCaseRecord, RecordCaseRemedy, RecordRemedyScope).
+observe(RecordCaseSource, RecordCaseRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordCaseEvidence, RecordCaseRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordCaseReview, RecordCaseRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordCaseSource, RecordCaseRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordCaseEvidence, RecordCaseRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordCaseReview, RecordCaseRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordCaseSource, RecordCaseRecord, ReviewedRecordHolding, RecordEntryKindScope).
+observe(RecordCaseEvidence, RecordCaseRecord, ReviewedRecordHolding, RecordEntryKindScope).
+observe(RecordCaseReview, RecordCaseRecord, ReviewedRecordHolding, RecordEntryKindScope).
+observe(RecordCaseSource, RecordCaseRecord, AuthorizedInputsOnlyFromNamedLawfulSources, RecordInputAuthorityScope).
+observe(RecordCaseEvidence, RecordCaseRecord, AuthorizedInputsOnlyFromNamedLawfulSources, RecordInputAuthorityScope).
+observe(RecordCaseReview, RecordCaseRecord, AuthorizedInputsOnlyFromNamedLawfulSources, RecordInputAuthorityScope).
+observe(RecordCaseSource, RecordCaseRecord, NecessaryAndMinimizedForTheDeclaredPurpose, RecordNecessityScope).
+observe(RecordCaseEvidence, RecordCaseRecord, NecessaryAndMinimizedForTheDeclaredPurpose, RecordNecessityScope).
+observe(RecordCaseReview, RecordCaseRecord, NecessaryAndMinimizedForTheDeclaredPurpose, RecordNecessityScope).
+observe(RecordCaseSource, RecordCaseRecord, PrivateSecureAndAccessControlled, RecordSecurityScope).
+observe(RecordCaseEvidence, RecordCaseRecord, PrivateSecureAndAccessControlled, RecordSecurityScope).
+observe(RecordCaseReview, RecordCaseRecord, PrivateSecureAndAccessControlled, RecordSecurityScope).
+observe(RecordCaseSource, RecordCaseRecord, AccurateWithCorrectionOnRequest, RecordAccuracyScope).
+observe(RecordCaseEvidence, RecordCaseRecord, AccurateWithCorrectionOnRequest, RecordAccuracyScope).
+observe(RecordCaseReview, RecordCaseRecord, AccurateWithCorrectionOnRequest, RecordAccuracyScope).
+observe(RecordCaseSource, RecordCaseRecord, SourceBoundRetentionAndLawfulDeletion, RecordRetentionScope).
+observe(RecordCaseEvidence, RecordCaseRecord, SourceBoundRetentionAndLawfulDeletion, RecordRetentionScope).
+observe(RecordCaseReview, RecordCaseRecord, SourceBoundRetentionAndLawfulDeletion, RecordRetentionScope).
+observe(RecordCaseSource, RecordCaseRecord, SubjectAccessChallengeAndAntiRetaliation, RecordSubjectProtectionScope).
+observe(RecordCaseEvidence, RecordCaseRecord, SubjectAccessChallengeAndAntiRetaliation, RecordSubjectProtectionScope).
+observe(RecordCaseReview, RecordCaseRecord, SubjectAccessChallengeAndAntiRetaliation, RecordSubjectProtectionScope).
+observe(RecordCaseSource, RecordCaseRecord, NoTransferSaleOrLinkageOutsideTheDeclaredPurpose, RecordTransferLimitScope).
+observe(RecordCaseEvidence, RecordCaseRecord, NoTransferSaleOrLinkageOutsideTheDeclaredPurpose, RecordTransferLimitScope).
+observe(RecordCaseReview, RecordCaseRecord, NoTransferSaleOrLinkageOutsideTheDeclaredPurpose, RecordTransferLimitScope).
+observe(RecordCaseSource, RecordCaseRecord, NoEnrolmentThroughFloorAccessCareSchoolingOrCourts, RecordEnforcementFirewallScope).
+observe(RecordCaseEvidence, RecordCaseRecord, NoEnrolmentThroughFloorAccessCareSchoolingOrCourts, RecordEnforcementFirewallScope).
+observe(RecordCaseReview, RecordCaseRecord, NoEnrolmentThroughFloorAccessCareSchoolingOrCourts, RecordEnforcementFirewallScope).
+
+# --- scarcity
+authorized(ScarcityCaseSource, ScarcitySourceAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseEvidence, IndependentScarcityEvidenceAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseReview, IndependentScarcityReviewAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseReader, ScarcityChallengeReaderAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseAlternate, ScarcityAlternateReviewAuthority, ScarcityCaseRecord).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseResource, ScarcityResourceScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseResource, ScarcityResourceScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseResource, ScarcityResourceScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCasePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCasePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCasePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseManager, ScarcityManagerScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseManager, ScarcityManagerScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseManager, ScarcityManagerScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseVersion, ScarcitySourceVersionScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseVersion, ScarcitySourceVersionScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseVersion, ScarcitySourceVersionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCasePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCasePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCasePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseScope, ScarcityLegalScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseScope, ScarcityLegalScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseScope, ScarcityLegalScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseReader, ScarcityChallengeReaderScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseReader, ScarcityChallengeReaderScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseReader, ScarcityChallengeReaderScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseChallenge, ScarcityChallengeScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseChallenge, ScarcityChallengeScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseChallenge, ScarcityChallengeScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseCorrection, ScarcityCorrectionScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseCorrection, ScarcityCorrectionScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseCorrection, ScarcityCorrectionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseRemedy, ScarcityRemedyScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseRemedy, ScarcityRemedyScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseRemedy, ScarcityRemedyScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ReviewedPhysicalScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ReviewedPhysicalScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ReviewedPhysicalScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, AuthenticatedResourceAndPopulationSpecificPhysicalShortage, ScarcityGroundScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, AuthenticatedResourceAndPopulationSpecificPhysicalShortage, ScarcityGroundScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, AuthenticatedResourceAndPopulationSpecificPhysicalShortage, ScarcityGroundScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, AlternativesReservesSubstitutionCoordinationReplenishmentAndAssistanceConsidered, ScarcityAlternativesScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, AlternativesReservesSubstitutionCoordinationReplenishmentAndAssistanceConsidered, ScarcityAlternativesScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, AlternativesReservesSubstitutionCoordinationReplenishmentAndAssistanceConsidered, ScarcityAlternativesScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, AuthenticatedContestableResourceAndPopulationSpecificEvidence, ScarcityEvidenceScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, AuthenticatedContestableResourceAndPopulationSpecificEvidence, ScarcityEvidenceScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, AuthenticatedContestableResourceAndPopulationSpecificEvidence, ScarcityEvidenceScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, NotBudgetPriceDelayWithholdingMonopolyProviderFailureOrRefusalToProcure, ScarcityNotAFailureScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, NotBudgetPriceDelayWithholdingMonopolyProviderFailureOrRefusalToProcure, ScarcityNotAFailureScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, NotBudgetPriceDelayWithholdingMonopolyProviderFailureOrRefusalToProcure, ScarcityNotAFailureScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, PublicReasonsAccessibleNoticeAndIndependentReview, ScarcityReasonsScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, PublicReasonsAccessibleNoticeAndIndependentReview, ScarcityReasonsScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, PublicReasonsAccessibleNoticeAndIndependentReview, ScarcityReasonsScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, FreshReassessmentEvidenceAndSourceBoundEnd, ScarcityReassessmentScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, FreshReassessmentEvidenceAndSourceBoundEnd, ScarcityReassessmentScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, FreshReassessmentEvidenceAndSourceBoundEnd, ScarcityReassessmentScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, NoStandingEmergencyPowerFollows, ScarcityNoStandingPowerScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, NoStandingEmergencyPowerFollows, ScarcityNoStandingPowerScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, NoStandingEmergencyPowerFollows, ScarcityNoStandingPowerScope).

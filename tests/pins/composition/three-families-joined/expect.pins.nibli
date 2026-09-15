@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Individually safe domains, joined. Each family still completes exactly what
+# it completes alone, none of them reaches the person, and the floor, the
+# ballot and public answerability are where they were.
+
+:expect-pins 20
+
+? authority(KnowledgeCaseActor, ReviewedConductRestriction, KnowledgeCaseRecord).
+# => TRUE
+? obliged(KnowledgeCaseActor, PublishKnowledgeRestrictionReasonsAndEvidence, KnowledgeCaseRecord).
+# => TRUE
+? obliged(KnowledgeCaseReader, HearKnowledgeRestrictionChallengeAndCorrect, KnowledgeCaseRecord).
+# => TRUE
+? complete(KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeCaseMatter).
+# => TRUE
+? authority(RecordCaseHolder, DeliverTheServiceRecorded, RecordCaseRecord).
+# => TRUE
+? obliged(RecordCaseHolder, KeepRecordAccurateCorrectableAndSecure, RecordCaseRecord).
+# => TRUE
+? obliged(RecordCaseHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordCaseRecord).
+# => TRUE
+? complete(RecordCaseRecord, ReviewedRecordHolding, RecordCaseSubject).
+# => TRUE
+? authority(ScarcityCaseManager, AdministerPhysicalScarcity, ScarcityCaseRecord).
+# => TRUE
+? obliged(ScarcityCaseManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcityCaseRecord).
+# => TRUE
+? obliged(ScarcityCaseReader, HearScarcityChallengeAndCorrect, ScarcityCaseRecord).
+# => TRUE
+? complete(ScarcityCaseRecord, ReviewedPhysicalScarcityFinding, ScarcityCaseResource).
+# => TRUE
+
+# Nothing any of the three concluded touched the person standing beside them.
+? person(CompositionClaimant).
+# => TRUE
+? owe(State, Eats, CompositionClaimant).
+# => TRUE
+? decide(CompositionClaimant, Ballot).
+# => TRUE
+? false(CompositionClaimant).
+# => FALSE
+? prisoner(CompositionClaimant).
+# => FALSE
+? lose(Points, CompositionClaimant).
+# => FALSE
+
+# And the shipped cast is untouched by all three.
+? person(Hano).
+# => TRUE
+? authority(Boss).
+# => TRUE
