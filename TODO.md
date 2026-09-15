@@ -360,19 +360,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
     with the release binary prebuilt, with measured timing and remaining
     resource limits reported honestly.
 
-- [ ] **Repair the mobility/plurality consumer guard, which has been red since
-  later families landed.** `authoring::mobility::tests::actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequences`
-  fails at `3e199dc1` and before, independently of any current work. Its
-  person-consequence branch is sound and its three hostile mutations are still
-  caught; what fails is its allow-list branch, which requires every line in the
-  whole constitution mentioning an `MP*`, `Mobility*` or `Plurality*` token to
-  belong to the mobility rule set. The public-safety and ecological families now
-  reference mobility scopes — 24 and 37 lines respectively — so the guard is
-  reporting a real, unreviewed cross-family consumption rather than a spurious
-  match. Review those lines, then either allow-list them deliberately or narrow
-  the branch to the mobility block; do not simply relax the regex. `./verify.sh`
-  is unaffected: this is a development test, not a pin.
-
 ### Expansion phase 3 — Make the architecture elegant without making it false
 
 - [ ] **Name the real symmetries and necessary asymmetries.**

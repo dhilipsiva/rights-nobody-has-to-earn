@@ -153,27 +153,51 @@ fn actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequen
         r"->\s*(person|false|prisoner|severe|free|travel|owe|entitled|decide|lose|reward)\(",
     )
     .unwrap();
+    // A line naming a mobility or plurality constant is accepted when it is one
+    // of this family's own rules, and otherwise only while it concludes nothing
+    // about a person. Requiring rule IDENTITY was the older test, and it stopped
+    // describing the property once other families began rejoining these scopes:
+    // the public-safety border-hold rules read `MP*` record scopes and conclude a
+    // record completion, and the ecological single-value machinery registers
+    // `MP*` scopes it reuses. Both were reviewed, neither concludes a person
+    // head, and neither is this test's subject. Its subject is the head.
     let accepts = |text: &str| {
         text.lines()
             .map(str::trim)
             .filter(|l| !l.is_empty() && !l.starts_with('#'))
             .all(|line| {
                 if named.is_match(line) {
-                    allowed.contains(line)
+                    allowed.contains(line) || !person_head.is_match(line)
                 } else {
                     !(generic.is_match(line) && person_head.is_match(line))
                 }
             })
     };
+    // The allow-list half is an escape hatch for a mobility rule that
+    // deliberately concludes about a person. No rule in this family does, so it
+    // never fires — assert that rather than leave it inert, because a disjunct
+    // nobody checks is how a guard goes quietly vacuous.
+    assert!(
+        !allowed.iter().any(|rule| person_head.is_match(rule)),
+        "a mobility rule now concludes a person head; review it, because this \
+         hatch is then the only thing admitting it"
+    );
     let source = Context::discover()
         .unwrap()
         .read("new-book-plans/constitution.nibli")
         .unwrap();
     assert!(accepts(&source), "unreviewed mobility/plurality consumer");
     for hostile in [
+        // Named finding constants, which the generic shape cannot see.
         "all $record: all $holder: complete($record, PluralityMembershipOccurrence, $holder) -> false($holder).",
         "all $record: all $holder: complete($record, PluralityActualConsent, $holder) -> prisoner($holder).",
+        // No mobility token at all: caught by the generic all-variable shape.
         "all $record: all $kind: all $holder: complete($record, $kind, $holder) -> decide($holder, Ballot).",
+        // The shape the narrowing must still bite on: another family rejoining a
+        // mobility record scope and concluding about the person rather than the
+        // record. This is exactly what the reviewed cross-family lines do not do.
+        "all $writer: all $record: all $holder: observe($writer, $record, $holder, MPAccessScope) -> prisoner($holder).",
+        "all $writer: all $record: all $holder: observe($writer, $record, $holder, MPAccommodationScope) -> lose(Points, $holder).",
     ] {
         nibli_session::CoreSession::new()
             .compile_text(hostile)

@@ -63,12 +63,27 @@ chapter 8 between "Protection does not require being human" and "Owed is not the
 same as delivered"; `knowledge-reader-draft.md` retains the wording and the
 chapter's pin file lists its supporting cases.
 
-ONE PRE-EXISTING RED DEVELOPMENT TEST, REPORTED NOT REPAIRED
+THE MOBILITY/PLURALITY CONSUMER GUARD IS REPAIRED
 
 `authoring::mobility::tests::actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequences`
-fails at `3e199dc1` and before — verified in a clean worktree at that commit,
-so it is not caused by this work. Its allow-list branch requires every line in
-the constitution mentioning a mobility or plurality token to belong to the
-mobility rule set, and the public-safety and ecological families now reference
-mobility scopes. The knowledge block trips neither of its branches. A tracker
-bullet now carries it; `./verify.sh` is unaffected.
+had been red since the public-safety and ecological families landed — verified
+in a clean worktree at `3e199dc1`, so it predated this run's work.
+
+The 61 cross-family lines were reviewed rather than waved through. Public-safety
+rejoins mobility record scopes in its border-hold and pre-expulsion rules and
+concludes a record completion; ecology registers mobility scopes in its
+single-value machinery and concludes a `member` fact. None of the 61 concludes a
+person head, and neither is this test's subject.
+
+So the allow-list branch was narrowed from rule IDENTITY to the property the
+test is named after: a line naming a mobility or plurality constant passes when
+it is one of the family's own rules, or when it concludes nothing about a
+person. Two hostile controls were added in the shape the narrowing must still
+bite on — another family rejoining `MPAccessScope` or `MPAccommodationScope` and
+concluding `prisoner` or `lose` — and all five mutations are caught. The
+allow-list half is now an escape hatch that never fires, so a new assertion
+fails if a mobility rule ever starts concluding a person head, rather than
+leaving an inert disjunct nobody checks.
+
+All 85 authoring development tests pass. No constitution, pin, case or
+expectation changed.
