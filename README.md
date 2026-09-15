@@ -72,15 +72,20 @@ the first build compiles the bundled C library using a C compiler and Make
 (available in the Nibli development shell). Other targets retain Rust's default
 allocator. The explicit authoring executable is unchanged.
 
-Latest full run measured on 2026-09-14 with four workers and the release binary
-already built: all 12,860 pins across 4,190 cases passed, with complete formal
-contradiction scans and no findings, in 275.04 seconds (4m35.04s). This uses the
-Nibli performance changes, exact-base worker grouping and bundled allocator,
-with the same inventory as the earlier 1,552.00-second run; nine existing
-known-defect pins still reproduce. This measured run meets the
-under-five-minute target. See the [performance notes](new-book-plans/nibli-performance-candidate.md)
-for the changes and development checks. This is a timing observation, not a
-cached verification result or a gate on later edits.
+Latest full run measured on 2026-09-15 with four workers and the release binary
+already built: all 77,902 pins across 13,566 cases passed, with complete formal
+contradiction scans and no findings, in 824.25 seconds (13m44.25s); nine
+existing known-defect pins still reproduce. User CPU was 3,174.52 seconds,
+system CPU 77.29 seconds, utilisation 394%, and peak resident memory
+21,626,012 KiB, with no major page faults and no swaps. Other machine activity
+was not controlled.
+
+This **does not** meet the under-five-minute target. The earlier 275.04-second
+(4m35.04s) result was measured on the 4,190-case inventory that preceded the
+ecological family and is not a current timing. The
+[performance notes](new-book-plans/nibli-performance-candidate.md) record where
+the current run spends its time and which leads remain. Every timing here is an
+observation, not a cached verification result or a gate on later edits.
 
 ## Author
 

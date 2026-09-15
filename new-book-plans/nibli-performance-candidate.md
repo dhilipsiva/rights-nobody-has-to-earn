@@ -435,3 +435,151 @@ verifier passed the full
 inventory with the grouped runner and bundled allocator in 275.04 seconds.
 The completed performance tracker item was removed; no subsequent pin is
 skipped because of this result.
+
+## The expanded inventory — measured 2026-09-15
+
+The ecological family took the inventory from 4,190 cases to 13,566 and from
+12,860 pins to 77,902. The 275.04-second result above describes the smaller
+inventory and is **not** a current timing. Measured at book `3e199dc1` against
+companion `979fe8b`, four workers, release binary prebuilt, no other session
+build or test overlapping and other machine activity uncontrolled:
+
+> All **77,902 pins across 13,566 cases** passed with complete contradiction
+> checks and no findings in **824.25 seconds (13 minutes 44.25 seconds)**. Nine
+> existing known-defect expectations still reproduce. External wall time
+> 13:44.57, user CPU 3,174.52 s, system CPU 77.29 s, 394% utilisation, peak
+> resident memory 21,626,012 KiB, zero major page faults and zero swaps.
+
+The five-minute target needs about 1,200 cumulative worker-seconds; the run
+spends about 3,143. What follows is where they go and what each lead is worth,
+so the next attempt starts from measurements instead of guesses.
+
+### Where the time goes
+
+`profile_complete_verification` ran the ordinary execution path over the same
+inventory (instrumented time 810.18 seconds, not a substitute for the release
+measurement above). Parallel worker durations are not wall-clock contributions.
+
+| Phase | Calls | Cumulative worker-seconds |
+| --- | ---: | ---: |
+| Queries | 77,517 | 1,652.473 |
+| Fixture loading | 13,596 | 624.157 |
+| Ordered model construction | 131 | 356.649 |
+| Materialization planning | 131 | 139.377 |
+| Independent snapshots | 13,382 | 68.449 |
+| Real scoped retractions | 15 | 55.746 |
+| Compiled statement copies | 131 | 22.687 |
+| Pin-file assertions | 554 | 17.472 |
+| Complete contradiction scans | 13,693 | 4.977 |
+
+Preparation accounted for 591.211 seconds and case execution for 2,551.456.
+Contradiction scans remain below one per cent and are not a lead.
+
+### Preparation is already minimal
+
+The inventory declares 127 distinct non-canonical preparation keys — a base
+name plus its ordered edits — and the four workers each build the canonical
+live base once. That is exactly the 131 observed builds, so no base is built
+twice and no scheduling change can remove one. The uncomfortable part is the
+ratio: those 127 variant models serve **216 cases**, 1.6% of the inventory, for
+496 of the 591 preparation seconds. A cheaper way to obtain a one-statement
+variant of an already-built model is a preparation-side lead in its own right;
+rule retraction is not it, at 3.1–4.2 seconds per retracted rule.
+
+### The fixed per-snapshot cost, and why warming does not remove it
+
+The first query inside a fresh snapshot costs 37–48 ms **whatever it asks**.
+Measured with `RIGHTS_PROFILE_CONE=1` on the live base:
+
+| Query | Cold | Same query again |
+| --- | ---: | ---: |
+| `person(Adam).` | 0.0475 s | 0.0001 s |
+| `prisoner(Adam).` | 0.0435 s | 0.0001 s |
+| `complete(ECOmitF0Record, ECEnvironmentalRightClaim, ECOmitSharedV26).` | 0.0400 s | 0.0001 s |
+| `complete(PSCorearrestRecord, PSIndividualArrestOrder, PSCorearrestSubject).` | 0.0377 s | 0.0000 s |
+| `interrupt(FSBOD_22, ECStayGuardianV164, ECGuardianAutomaticStay).` | 0.0384 s | 0.0000 s |
+| `false(Bela).` | 0.0374 s | 0.0000 s |
+| `reward(Esa).` | 0.0358 s | 0.0001 s |
+
+Temporary engine instrumentation (since reverted; the companion checkout is
+unchanged) split that cost. `prepare_query_domain` took 28–39 ms, the
+stratum-ordered saturation 10–15 ms, and `seed_edb` 0.3–1.2 ms over the base's
+534 seeded tuples. Inside the domain closure the work is one round that derives
+**256 witness activations** from 8 domain rules over 32 guard-restricted
+candidates, and a second round that adds nothing; the candidate set comes from a
+completed unary guard that no case fixture touches, so every case derives the
+same 256 activations. Hoisting the closure's per-round rebuild of the 8,245-member
+sweep list changed nothing measurable, which is how the 256 activations were
+identified as the actual cost.
+
+Two resets make that work per-snapshot rather than per-run. `Clone for
+KnowledgeBaseInner` sets `materialized` to `None` and `query_domain` to its
+default, so warming the base does not carry into a snapshot — measured directly:
+after running ecology, public-safety and arrest pins against the base itself, a
+no-fixture ecology case inside a snapshot still cost 0.042 s. And
+`invalidate_materialization_for_insert` clears the closure stamp on every
+insert, while `observe` is read under negation 124 times in the constitution, so
+an ecology fixture also drops the saturation outright through `Fate::Drop`
+rather than growing it.
+
+**Lead, sized.** Carrying the saturation and the witness closure across a
+snapshot, with a domain dependency cone so an insert outside it keeps the
+stamp, is worth roughly 35 ms × 13,566 ≈ **475 worker-seconds, about 15%**. It
+is an engine change in `nibli-reason`, not a runner change, and it needs
+`ensure_domain_members_cached` to re-derive the closure's own members so a
+cloned member cache and cloned activations cannot disagree.
+
+### Case shapes
+
+`profile_live_preparation_snapshots_and_cases` now measures two ecology cases
+and two deliberately degenerate ones beside the original five. `pins-again` is
+the same pin file re-run inside the same snapshot: whatever it costs is what the
+first pass had to build.
+
+| Case | snapshot | compile-fixture | assert-fixture | pins | pins-again |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| arrest | 0.001 s | 0.005 s | 0.046 s | 0.066 s | 0.000 s |
+| force-abroad | 0.002 s | 0.016 s | 0.132 s | 0.080 s | 0.000 s |
+| withdrawal | 0.002 s | 0.012 s | 0.079 s | 0.179 s | 0.111 s |
+| floor-controls | 0.002 s | 0.000 s | 0.002 s | 10.739 s | 9.989 s |
+| instrument-firewall | 0.003 s | 0.000 s | 0.003 s | 0.014 s | 0.025 s |
+| ecology-required-fields | 0.001 s | 0.007 s | 0.055 s | 0.053 s | 0.000 s |
+| ecology-conflicting-fields | 0.002 s | 0.067 s | 0.494 s | 0.247 s | 0.001 s |
+| ecology-no-facts | 0.002 s | 0.000 s | 0.003 s | 0.042 s | 0.000 s |
+| ecology-shared-only | 0.002 s | 0.007 s | 0.049 s | 0.052 s | 0.000 s |
+
+`ecology-no-facts` runs the required-fields pins with no fixture at all. Every
+pin there is `FALSE` with or without the fixture, so the case still passes, and
+its 0.042 s is the fixed cost with the case's own evidence removed: about 80% of
+what the fully loaded case pays.
+
+### Leads that were measured and are worth less than they look
+
+**Caching compiled fixture statements.** The run asserts 6,965,211 fixture
+statements, of which 1,256,800 are textually distinct, so a text-keyed cache
+would remove about four fifths of the compilations. But compilation is only
+about a tenth of fixture time — 0.007 s of 0.062 s for an 841-statement ecology
+case — so the whole lead is worth roughly 60 worker-seconds against a
+six-figure buffer cache.
+
+**Hoisting statements common to a batch.** Consecutive cases sharing their first
+fixture are already grouped: 8,085 of the 13,566 cases sit in 389 such batches,
+which is why 6.97 M statements are asserted rather than the 21.39 M a naive run
+would. Hoisting what every member of a batch shares is worth **nothing**: the
+intersection over each of the 389 batches is empty, by construction, because
+each member withholds a different required field. Pairwise overlap inside a
+batch is high (80 of 88 statements for two required-fields siblings) and the
+whole-batch intersection is zero.
+
+**The heavy tail.** 116 `new-book-plans/economic-power-*` cases carry 10,000 to
+21,000 assertions inside the pin file itself and run 6–12 seconds each; the
+`:accept-scoped` controls in `rights-floor` and chapter 8 spend 3.1–4.2 seconds
+per retracted rule, 55.7 seconds over 15 retractions. Neither is reachable from
+the runner: the assertions and the retractions are what those cases test.
+
+### What this does not establish
+
+These are timings of one machine on one day, not a guarantee. No verdict is
+cached, no pin is skipped, no expectation was weakened and the case inventory is
+unchanged. The companion checkout was restored to `979fe8b` after the temporary
+instrumentation; none of it is retained in either repository.

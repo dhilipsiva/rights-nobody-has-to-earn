@@ -181,13 +181,50 @@ fn profile_live_preparation_snapshots_and_cases() {
             assert!(scan.is_clean(), "{scan:?}");
             eprintln!("PROFILE base-scan {:.3}s", started.elapsed().as_secs_f64());
 
+            if std::env::var("RIGHTS_PROFILE_CONE").is_ok() {
+                for query in [
+                    "person(Adam).",
+                    "prisoner(Adam).",
+                    "complete(ECOmitF0Record, ECEnvironmentalRightClaim, ECOmitSharedV26).",
+                    "complete(PSCorearrestRecord, PSIndividualArrestOrder, PSCorearrestSubject).",
+                    "interrupt(FSBOD_22, ECStayGuardianV164, ECGuardianAutomaticStay).",
+                    "false(Bela).",
+                    "reward(Esa).",
+                ] {
+                    prepared
+                        .base
+                        .engine
+                        .kb()
+                        .with_assumptions(&[], |kb| {
+                            let view = EngineView {
+                                compiler: &prepared.base.engine,
+                                knowledge_base: kb,
+                            };
+                            let started = Instant::now();
+                            let first = view.query_holds(query).unwrap();
+                            let cold = started.elapsed().as_secs_f64();
+                            let started = Instant::now();
+                            let _ = view.query_holds(query).unwrap();
+                            eprintln!(
+                                "PROFILE cone {query} cold={cold:.4}s warm={:.4}s verdict={first:?}",
+                                started.elapsed().as_secs_f64()
+                            );
+                        })
+                        .unwrap();
+                }
+            }
+
             let mut measured_cases = 0;
-            for (name, fixture, pins) in [
-                ("arrest", Some("tests/pins/public-safety/core/arrest/positive/fixture.nibli"), "tests/pins/public-safety/core/arrest/positive/expect.pins.nibli"),
-                ("force-abroad", Some("tests/pins/public-safety/core/force-abroad/positive/fixture.nibli"), "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli"),
-                ("withdrawal", Some("tests/pins/public-safety/review/reviewed-defect/standing-without-separate-entry/fixture.nibli"), "tests/pins/public-safety/review/reviewed-defect/standing-without-separate-entry/expect.pins.nibli"),
-                ("floor-controls", None, "new-book-plans/rights-floor.pins.nibli"),
-                ("instrument-firewall", None, "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli"),
+            for (name, fixtures, pins) in [
+                ("arrest", &["tests/pins/public-safety/core/arrest/positive/fixture.nibli"][..], "tests/pins/public-safety/core/arrest/positive/expect.pins.nibli"),
+                ("force-abroad", &["tests/pins/public-safety/core/force-abroad/positive/fixture.nibli"][..], "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli"),
+                ("withdrawal", &["tests/pins/public-safety/review/reviewed-defect/standing-without-separate-entry/fixture.nibli"][..], "tests/pins/public-safety/review/reviewed-defect/standing-without-separate-entry/expect.pins.nibli"),
+                ("floor-controls", &[][..], "new-book-plans/rights-floor.pins.nibli"),
+                ("instrument-firewall", &[][..], "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli"),
+                ("ecology-required-fields", &["tests/pins/ecology/shared/environmental-claim-required-fields-8.nibli", "tests/pins/ecology/environmental-claim/required-fields-0/fixture.nibli"][..], "tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli"),
+                ("ecology-conflicting-fields", &["tests/pins/ecology/shared/high-consequence-basis-conflicting-fields-8.nibli", "tests/pins/ecology/high-consequence-basis/conflicting-fields-0/fixture.nibli"][..], "tests/pins/ecology/high-consequence-basis/conflicting-fields-0/expect.pins.nibli"),
+                ("ecology-no-facts", &[][..], "tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli"),
+                ("ecology-shared-only", &["tests/pins/ecology/shared/environmental-claim-required-fields-8.nibli"][..], "tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli"),
             ] {
                 if std::env::var("RIGHTS_PROFILE_CASE")
                     .is_ok_and(|selected| selected != name)
@@ -195,7 +232,11 @@ fn profile_live_preparation_snapshots_and_cases() {
                     continue;
                 }
                 measured_cases += 1;
-                let fixture = fixture.map(|path| context.read(path).unwrap()).unwrap_or_default();
+                let fixture = fixtures
+                    .iter()
+                    .map(|path| context.read(path).unwrap())
+                    .collect::<Vec<_>>()
+                    .join("\n");
                 let pins = context.read(pins).unwrap();
                 let started = Instant::now();
                 prepared.base.engine.kb().with_assumptions(&[], |kb| {
@@ -215,11 +256,19 @@ fn profile_live_preparation_snapshots_and_cases() {
                         PinOptions::default(),
                     );
                     let query = started.elapsed().as_secs_f64();
+                    // The same pins again in the same snapshot: whatever this
+                    // second pass costs is what the first pass had to build.
+                    let started = Instant::now();
+                    let _ = run_file_with_engine(
+                        &LoadedSource::new(name, &pins), &prepared.base.engine, kb,
+                        PinOptions::default(),
+                    );
+                    let repeat = started.elapsed().as_secs_f64();
                     assert!(report.harness.is_empty() && report.findings.is_empty() && report.resolved.is_empty(), "{}", finish_file_reports(&[LoadedSource::new(name, &pins)], vec![report]).stdout);
                     let started = Instant::now();
                     let scan = kb.check_contradictions_report();
                     assert!(scan.is_clean(), "{scan:?}");
-                    eprintln!("PROFILE {name}: snapshot={snapshot:.3}s compile-fixture={compile:.3}s assert-fixture={assert:.3}s pins={query:.3}s scan={:.3}s", started.elapsed().as_secs_f64());
+                    eprintln!("PROFILE {name}: snapshot={snapshot:.3}s compile-fixture={compile:.3}s assert-fixture={assert:.3}s pins={query:.3}s pins-again={repeat:.3}s scan={:.3}s", started.elapsed().as_secs_f64());
                 }).unwrap();
             }
             assert!(measured_cases > 0, "RIGHTS_PROFILE_CASE matched no measurement case");

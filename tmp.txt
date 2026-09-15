@@ -1,81 +1,43 @@
 SPDX-License-Identifier: CC-BY-4.0
 
-AUTHOR STOP CONDITION — 2026-09-14
+IN FLIGHT — 2026-09-15
 
-Finish only the current environmental/Class 9/Class 10 TODO, complete its
-required checks, commit and push, then stop the goal. Do not select another
-TODO. This supersedes the earlier repeat-through-the-backlog instruction
-for this run. Suggestions and exact prose have delegated author approval;
-do not ask questions or invent personal testimony or external operations.
+Author instruction for this run: work the TODO backlog one item at a time —
+implement, verify, commit, push, then take the next item — without asking
+questions. This supersedes the 2026-09-14 stop condition that was recorded here
+for the ecological item.
 
-COMPLETED ITEM
+VERIFIER PERFORMANCE ITEM — PROFILED, NOT CLOSED
 
-Implement the ratified environmental right, Class 9 commons, and Class 10
-non-human-animal protections. The 130 explicit cards now supply the distinct
-holders, actual democratic/court/scarcity/collective dependencies, Guardian
-and Animal Advocate functions, shared replay and historical finality, use-
-specific animal limits, tiered liability and separate remedies, precise
-record withdrawal/correction/end, and the actual animal-core amendment gate.
+The complete inventory passes: all 77,902 pins across 13,566 cases with complete
+contradiction checks and no findings in 824.25 seconds (13m44.25s), four workers,
+release binary prebuilt, nine known-defect expectations still reproducing. Peak
+RSS 21,626,012 KiB, user CPU 3,174.52 s, 394% utilisation, no swaps. That misses
+the five-minute target and the tracker bullet stays open.
 
-Rules and 9,373 ecology cases are exported. The complete inventory is 13,566
-cases and declares 77,902 pins. All 4,190 pre-item case IDs, pin paths, scan
-settings and shell permissions were retained. No hashes, receipts, schema/
-freshness checks, Git-history gates, persisted verdicts or skipped pins
-were added. Ordinary cases still load the actual complete constitution.
+What this run added is the measurement the bullet asked for, not a speedup. The
+phase table, the case shapes and each lead's measured size are in
+new-book-plans/nibli-performance-candidate.md. In short: about 3,143 cumulative
+worker-seconds against the roughly 1,200 the target needs; queries 1,652 and
+fixture loading 624 of them; contradiction scans below one per cent.
 
-The exact reader text in ecology-reader-draft.md matches chapters 8, 9, 12,
-14, the opening note, Part V and method. The spine is explicitly regenerated:
-95 predicates, 51 derived, 6,435 rules and 9 strata, with the same 8 floor
-rights. Coverage, taxonomy and the Book 2 collection-only handoff are updated.
-Book 2 remains inactive until Gate C; no institutional operation is claimed.
+Three leads were measured and priced down rather than pursued: preparation
+already builds each of the 127 variant bases exactly once, batch-wide fixture
+hoisting is worth nothing because the intersection over each of the 389 batches
+is empty by construction, and caching compiled fixture statements is worth about
+60 worker-seconds because compilation is only a tenth of fixture time.
 
-VALIDATION
+The largest sized lead is about 15% and is engine-internal: the first query in a
+fresh snapshot costs 37-48 ms whatever it asks, because the knowledge base's
+Clone drops both the saturation and the witness closure, so every case re-derives
+the same 256 witness activations. Carrying them across a snapshot needs a domain
+dependency cone in nibli-reason and the companion's own soundness checks.
 
-- Ecology development: 19 passed, one manual full-common-case duplicate
-  audit ignored (the ordinary verifier executes those exported cases).
-  Includes all 130 positive compositions, named alternatives, actual upstream
-  withdrawals, Guardian/animal/history/lifecycle sequences, amendment stages,
-  14 explicit counterfactual pairs and four cross-record effect regressions.
-- Runner development: 32 passed, three manual performance probes ignored.
-  Shared fixture prefixes retain isolated snapshots, sequential/scoped pins,
-  per-case shell permissions and full contradiction checks.
-- Amendment host: all 14 passed, including actual-source animal-core refusal
-  and the valid certification/publication/selection/fresh-query transition.
-- Exact retained reader text, formatting and git diff --check pass.
+The temporary engine instrumentation used to find that was reverted; the
+companion checkout is back at 979fe8b with a clean tree. The runner's manual
+probe keeps the two ecology cases, the two degenerate cases and the
+RIGHTS_PROFILE_CONE query measurement, so the finding reproduces.
 
-The first full ecology run FAILED after 14m45.33s on a counterfactual edit
-anchored to a comment marker. It was not a pass. Edits now use actual
-statements, and the development suite also exercises the runner's exact
-normalization/edit logic. A separate regression reproduced a taxon finding
-lending duties to an unqualified record; effects of globally keyed findings
-now require their own full raw proof. All four affected-card tests pass.
-These were authoring defects; no Nibli engine defect was confirmed.
-
-Shared fixture evidence was reduced from 911 MiB to 403 MiB while retaining
-the expectations. The 555 obsolete, unreferenced draft files (79.84 MiB)
-were removed from the worktree and remain recoverable under:
-  /tmp/rights-ecology-obsolete.q5P9wO
-No pre-existing tracked fixture was deleted.
-
-COMPLETE VERIFIER PASSED
-
-All 77,902 pins across 13,566 cases passed with complete contradiction checks
-and no findings in 1,119.23 seconds (18m39.23s). Nine existing known-defect
-expectations still reproduce. Four workers, release binary prebuilt,
-LD_PRELOAD / MALLOC_CONF / _RJEM_MALLOC_CONF unset, no other session-owned
-build or test overlapping. External wall 18m39.62s, user CPU 4,018.59s,
-system CPU 190.34s, utilization 375%, peak RSS 21,580,352 KiB, zero major
-faults and zero swaps. Other machine activity was not controlled.
-
-This misses the five-minute target. The previous 4m35.04s result at rights
-7bcdc60 excludes ecology and is not the current timing. The completed
-ecological item was removed from TODO.md; the expanded-run performance
-follow-up remains open and was not started. The companion remains at the
-previously integrated engine; its unrelated research/benchmark work is untouched.
-
-STOP AFTER COMMIT AND PUSH
-
-The implementation, reader review and required checks are complete. This
-completion change is to be committed and pushed to origin/main, then the
-goal stopped as requested. Confirm the push before stopping. No later TODO
-has been selected or implemented; do not enter the performance follow-up.
+The stale README claim that the verifier meets the five-minute target — measured
+on the 4,190-case inventory that preceded the ecological family — is corrected in
+the same change.

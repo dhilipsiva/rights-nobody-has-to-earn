@@ -323,21 +323,39 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
-  - The environmental/Class 9/Class 10 implementation passed all 77,902 pins
-    across 13,566 cases with complete contradiction checks and no findings,
-    but took 1,119.23 seconds (18m39.23s) on 2026-09-14. The earlier 275.04-second
-    result covered only the pre-expansion 4,190-case inventory.
-  - Profile the current complete source and expanded cases; preserve every
-    substantive expectation, actual-source ordinary case, explicit
-    counterfactual, scoped/stateful sequence, shell precondition and complete
-    contradiction check. Keep the fixed one-to-four-worker pool.
+  - Current measurement, 2026-09-15 at `3e199dc1` against companion `979fe8b`:
+    all 77,902 pins across 13,566 cases pass with complete contradiction checks
+    and no findings in **824.25 seconds (13m44.25s)**, four workers, release
+    binary prebuilt, peak RSS 21,626,012 KiB, 394% utilisation. The earlier
+    275.04-second result covered only the pre-expansion 4,190-case inventory
+    and is not a current timing.
+  - **The profiling bullet is done.** `new-book-plans/nibli-performance-candidate.md`
+    records the phase table, the case shapes, and each lead's measured size.
+    Headline: queries 1,652 and fixtures 624 of about 3,143 cumulative
+    worker-seconds; the target needs roughly 1,200.
+  - **The remaining cost is engine-internal, not scheduling.** Preparation
+    already builds each of the 127 variant bases exactly once. Batching already
+    removes two thirds of the naive fixture volume, and hoisting what a batch's
+    members share is worth nothing because that intersection is empty by
+    construction. Caching compiled fixture statements is worth about 60
+    worker-seconds.
+  - **The largest sized lead is about 15%:** a first query in a fresh snapshot
+    costs 37-48 ms whatever it asks, because `Clone for KnowledgeBaseInner`
+    drops both the saturation and the witness closure, and every case then
+    re-derives the same 256 witness activations. Carrying them across a
+    snapshot, with a domain dependency cone so an insert outside it keeps the
+    stamp, is a `nibli-reason` change with its own soundness burden — the
+    companion's reasoner, oracle/differential and mutation checks, then a full
+    book run.
+  - Preserve every substantive expectation, actual-source ordinary case,
+    explicit counterfactual, scoped/stateful sequence, shell precondition and
+    complete contradiction check. Keep the fixed one-to-four-worker pool.
   - Reuse immutable preparation within the process, not earlier verdicts.
     Do not add hashes, receipts, freshness/report gates, reduced constitutions
     or skipped checks.
   - **Done when:** the complete current inventory passes in under five minutes
     with the release binary prebuilt, with measured timing and remaining
-    resource limits reported honestly. This follow-up is not started in the
-    stopped ecological-item run.
+    resource limits reported honestly.
 
 - [ ] **Protect knowledge, communication, culture, and the free social field.**
   - Cover learning and information access; expression, conscience, religion and
