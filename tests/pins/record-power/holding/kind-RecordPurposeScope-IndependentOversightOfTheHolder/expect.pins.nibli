@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? authority(RecordCaseHolder, IndependentOversightOfTheHolder, RecordCaseRecord).
+# => TRUE
+? obliged(RecordCaseHolder, KeepRecordAccurateCorrectableAndSecure, RecordCaseRecord).
+# => TRUE
+? obliged(RecordCaseHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordCaseRecord).
+# => TRUE
+? complete(RecordCaseRecord, ReviewedRecordHolding, RecordCaseSubject).
+# => TRUE

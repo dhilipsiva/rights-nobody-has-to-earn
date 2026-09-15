@@ -323,14 +323,15 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
-  - Current measurement, 2026-09-15 against companion `979fe8b`: all 79,511
-    pins across 14,078 cases pass with complete contradiction checks and no
-    findings in **816.98 seconds (13m36.98s)**, four workers, release binary
-    prebuilt, peak RSS 21,738,352 KiB, 394% utilisation. The knowledge family
-    added 512 cases without moving the total, which is consistent with the
-    profile below: the cost is per-case fixed work and a heavy tail, not case
-    count. The earlier 275.04-second result covered only the pre-expansion
-    4,190-case inventory and is not a current timing.
+  - Current measurement, 2026-09-15 against companion `979fe8b`: all 81,028
+    pins across 14,523 cases pass with complete contradiction checks and no
+    findings in **831.18 seconds (13m51.18s)**, four workers, release binary
+    prebuilt, peak RSS 21,844,384 KiB, 395% utilisation. The knowledge and
+    record-power families added 957 cases and moved the total by about seven
+    seconds, which is consistent with the profile below: the cost is per-case
+    fixed work and a heavy tail, not case count. The earlier 275.04-second
+    result covered only the pre-expansion 4,190-case inventory and is not a
+    current timing.
   - **The profiling bullet is done.** `new-book-plans/nibli-performance-candidate.md`
     records the phase table, the case shapes, and each lead's measured size.
     Headline: queries 1,652 and fixtures 624 of about 3,143 cumulative
@@ -371,21 +372,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
   match. Review those lines, then either allow-list them deliberately or narrow
   the branch to the mobility block; do not simply relax the regex. `./verify.sh`
   is unaffected: this is a development test, not a pin.
-
-- [ ] **Constrain records, surveillance, and automated power across every domain.**
-  - Preserve the legacy assertion/withholding cases and distinguish them from
-    the new justice interfaces; see the justice contract's "Legacy assertion
-    boundary". Court consumers must reject conflicting single-valued identity
-    bindings without treating the old multi-valued remedy/classification slots
-    as exclusive. Authentication and observed execution remain external.
-  - Extend the record contract to identity/status, health, care, education,
-    workplace, housing, finance, policing and public-decision records.
-  - Cover surveillance, biometrics, profiling and automated/AI-assisted decisions:
-    authorised inputs, purpose limits, privacy, explanation, contestability,
-    correction, human/independent review, non-use walls, retention/deletion and
-    remedy.
-  - Technology, storage and algorithms remain Book 2 operations or external
-    evidence. A computed output is never a constitutional oracle.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
 
@@ -1212,6 +1198,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh amendment
 ./generate.sh mobility
 ./generate.sh knowledge
+./generate.sh record-power
 ./generate.sh spine
 ~~~
 

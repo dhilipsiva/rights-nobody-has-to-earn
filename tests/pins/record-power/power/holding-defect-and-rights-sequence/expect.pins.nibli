@@ -1,0 +1,142 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 34
+
+? authority(RecordSequenceHolder, DeliverTheServiceRecorded, RecordSequenceAuthorization).
+# => TRUE
+? obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).
+# => TRUE
+? obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).
+# => TRUE
+? complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).
+# => TRUE
+? permits(RecordSequenceHolder, OrdinaryRecordKeeping, RecordSequenceRecord).
+# => TRUE
+? obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).
+# => TRUE
+? complete(RecordSequenceRecord, ReviewedRecordProcessing, RecordSequenceSubject).
+# => TRUE
+? obliged(RecordSequenceHolder, ExplainAutomatedSupportAndAllowContest, RecordSupportRecord).
+# => TRUE
+? obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).
+# => TRUE
+? permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).
+# => TRUE
+? complete(RecordSupportRecord, ReviewedAutomatedDecisionSupport, RecordSequenceSubject).
+# => TRUE
+authorized(RecordHoldingDefectSource, RecordSourceAuthority, RecordHoldingDefectRecord).
+authorized(RecordHoldingDefectEvidence, IndependentRecordEvidenceAuthority, RecordHoldingDefectRecord).
+authorized(RecordHoldingDefectReview, IndependentRecordReviewAuthority, RecordHoldingDefectRecord).
+authorized(RecordHoldingDefectReader, RecordChallengeReaderAuthority, RecordHoldingDefectRecord).
+authorized(RecordHoldingDefectAlternate, RecordAlternateReviewAuthority, RecordHoldingDefectRecord).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceSubject, RecordSubjectScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceSubject, RecordSubjectScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceSubject, RecordSubjectScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceHolder, RecordHolderScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceHolder, RecordHolderScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceHolder, RecordHolderScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceVersion, RecordSourceVersionScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceVersion, RecordSourceVersionScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceVersion, RecordSourceVersionScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequencePeriod, RecordEvidencePeriodScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequencePeriod, RecordEvidencePeriodScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequencePeriod, RecordEvidencePeriodScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceJurisdiction, RecordJurisdictionScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceJurisdiction, RecordJurisdictionScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceJurisdiction, RecordJurisdictionScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceScope, RecordLegalScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceScope, RecordLegalScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceScope, RecordLegalScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceEnd, RecordSourceBoundEndScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceEnd, RecordSourceBoundEndScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceEnd, RecordSourceBoundEndScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordHoldingDefectReader, RecordChallengeReaderScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordHoldingDefectReader, RecordChallengeReaderScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordHoldingDefectReader, RecordChallengeReaderScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordHoldingDefectAlternate, RecordIndependentAlternateScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordHoldingDefectAlternate, RecordIndependentAlternateScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordHoldingDefectAlternate, RecordIndependentAlternateScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordHoldingDefectChallenge, RecordChallengeScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordHoldingDefectChallenge, RecordChallengeScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordHoldingDefectChallenge, RecordChallengeScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordHoldingDefectCorrection, RecordCorrectionScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordHoldingDefectCorrection, RecordCorrectionScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordHoldingDefectCorrection, RecordCorrectionScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordHoldingDefectRemedy, RecordRemedyScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordHoldingDefectRemedy, RecordRemedyScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordHoldingDefectRemedy, RecordRemedyScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, ReviewedRecordUseDefect, RecordEntryKindScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, ReviewedRecordUseDefect, RecordEntryKindScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, ReviewedRecordUseDefect, RecordEntryKindScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, RecordSequenceAuthorization, RecordAffectedUseScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, RecordSequenceAuthorization, RecordAffectedUseScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, RecordSequenceAuthorization, RecordAffectedUseScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, UnauthorizedInput, RecordDefectKindScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, UnauthorizedInput, RecordDefectKindScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, UnauthorizedInput, RecordDefectKindScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, IndependentlyEstablishedIssueMakesThisExactUseUnsupported, RecordDefectDispositionScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, IndependentlyEstablishedIssueMakesThisExactUseUnsupported, RecordDefectDispositionScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, IndependentlyEstablishedIssueMakesThisExactUseUnsupported, RecordDefectDispositionScope).
+observe(RecordHoldingDefectSource, RecordHoldingDefectRecord, NoAdverseSubjectFactOrAutomaticIndividualRemedy, RecordDefectLimitScope).
+observe(RecordHoldingDefectEvidence, RecordHoldingDefectRecord, NoAdverseSubjectFactOrAutomaticIndividualRemedy, RecordDefectLimitScope).
+observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, NoAdverseSubjectFactOrAutomaticIndividualRemedy, RecordDefectLimitScope).
+? contradict(RecordSequenceAuthorization, RecordUseAuthorization).
+# => TRUE
+? obliged(RecordHoldingDefectReader, ReviewAndCorrectUnsupportedRecordUse, RecordSequenceAuthorization).
+# => TRUE
+? obliged(RecordSequenceHolder, PublishRecordUseCorrection, RecordSequenceAuthorization).
+# => TRUE
+? complete(RecordHoldingDefectRecord, ReviewedRecordUseDefect, RecordSequenceSubject).
+# => TRUE
+? authority(RecordSequenceHolder, DeliverTheServiceRecorded, RecordSequenceAuthorization).
+# => FALSE
+? obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).
+# => FALSE
+? obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).
+# => FALSE
+? complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).
+# => FALSE
+? permits(RecordSequenceHolder, OrdinaryRecordKeeping, RecordSequenceRecord).
+# => FALSE
+? obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).
+# => FALSE
+? complete(RecordSequenceRecord, ReviewedRecordProcessing, RecordSequenceSubject).
+# => FALSE
+? obliged(RecordSequenceHolder, ExplainAutomatedSupportAndAllowContest, RecordSupportRecord).
+# => FALSE
+? obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).
+# => FALSE
+? permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).
+# => FALSE
+? complete(RecordSupportRecord, ReviewedAutomatedDecisionSupport, RecordSequenceSubject).
+# => FALSE
+? person(RecordSequenceSubject).
+# => FALSE
+? false(RecordSequenceSubject).
+# => FALSE
+? prisoner(RecordSequenceSubject).
+# => FALSE
+? lose(Points, RecordSequenceSubject).
+# => FALSE
+? person(Hano).
+# => TRUE
+? owe(State, Eats, Hano).
+# => TRUE
+? decide(Hano, Ballot).
+# => TRUE
+? authority(Boss).
+# => TRUE

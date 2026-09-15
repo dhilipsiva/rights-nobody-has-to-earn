@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+:refuse reasoning /declared derived-only/
+authority(RecordHolder, DeliverTheServiceRecorded, RecordForgedEntry).
+:refuse reasoning /declared derived-only/
+complete(RecordForgedEntry, ReviewedRecordHolding, RecordSubject).
+:refuse reasoning /declared derived-only/
+permits(RecordHolder, TargetedSurveillance, RecordForgedEntry).
+:refuse reasoning /declared derived-only/
+related(RecordForgedEntry, RecordEntryAmbiguity).
+:refuse reasoning /declared derived-only/
+contradict(RecordForgedEntry, RecordUseAuthorization).

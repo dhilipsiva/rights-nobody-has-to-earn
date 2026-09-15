@@ -33,6 +33,35 @@ opening note, Part V and method aligned. These verified case-level
 interfaces supersede the historical absence descriptions below to their
 bounded extent, not as evidence of an operating institution or real protection.
 
+## Record-power implementation — 2026-09-15
+
+[Records, surveillance and automated power](book-1-record-power-contract.md)
+extends the record contract to identity and status, health, care, education,
+workplace, housing, finance, policing and public-decision records, and adds the
+surveillance, biometric, profiling and automated-decision interfaces the item
+required. The semantic input is `record-power-source.json` and the explicit
+`record-power` generator produces its rules and cases.
+
+A reviewed holding needs authorized inputs, necessity, minimisation, privacy,
+accuracy, source-bound retention, subject access and anti-retaliation, no
+transfer or linkage outside the declared purpose, and no enrolment through floor
+access, care, schooling or the courts. Watching and automating rejoin the actual
+holding, so nothing travels between subjects, domains or purposes. Automated
+support requires explanation, contest before effect and human and independent
+review by someone other than the holder; a sole automated consequential decision
+is refused and the temporary-assessment exclusion is carried by name. No rule
+reads a computed value.
+
+The legacy assertion and withholding cases and the justice contract's legacy
+boundary are untouched: this family authenticates none of that surface and
+reinterprets none of it. Its subject is an opaque handle, and a pinned case
+shows an entry naming somebody — beside a raw `rotten` report — concluding
+nothing about them. The exact reader section "Keeping, watching, and letting a
+machine help" is inserted in Book 1 chapter 1; its supply is
+`session-drafted, author-approved under delegated approval (2026-09-13)`, and
+`record-power-reader-draft.md` retains the wording. Book 2 keeps storage,
+cryptography, identity technology, model evaluation and audit tooling.
+
 ## Knowledge and free-field implementation — 2026-09-15
 
 [Knowledge, communication, culture and the free social field](book-1-knowledge-and-free-field-contract.md)

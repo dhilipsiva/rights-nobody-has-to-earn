@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(RecordCaseTargetSource, RecordSourceAuthority, RecordCaseTarget).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCaseSubject, RecordSubjectScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCaseHolder, RecordHolderScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCaseVersion, RecordSourceVersionScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCasePeriod, RecordEvidencePeriodScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCaseJurisdiction, RecordJurisdictionScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCaseScope, RecordLegalScope).
+observe(RecordCaseTargetSource, RecordCaseTarget, RecordCaseEnd, RecordSourceBoundEndScope).

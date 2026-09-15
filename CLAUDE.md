@@ -59,8 +59,8 @@ Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
 `./generate.sh justice`, `./generate.sh knowledge`,
-`./generate.sh public-safety`, `./generate.sh ecology`, and
-`./generate.sh spine`. They write semantic
+`./generate.sh record-power`, `./generate.sh public-safety`,
+`./generate.sh ecology`, and `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
 
@@ -1190,6 +1190,54 @@ section "What nobody has to ask permission for" is inserted in Book 1 chapter
 8, `session-drafted, author-approved under delegated approval (2026-09-13)`;
 `new-book-plans/knowledge-reader-draft.md` retains the wording. Controlling
 record: `new-book-plans/book-1-knowledge-and-free-field-contract.md`.
+
+#### Records, surveillance, and automated power — 2026-09-15
+
+**Implemented under the expanded mandate; no separate author ruling was
+reserved for it.** Nine record domains are closed as a vocabulary — identity and
+status, health, care, education, workplace, housing, finance, policing and
+public decisions — and so are the lawful purposes. A reviewed holding requires
+authorized inputs from named lawful sources, necessity and minimisation,
+privacy, security and access control, accuracy with correction, source-bound
+retention and lawful deletion, subject access, challenge and anti-retaliation,
+no transfer, sale or linkage outside the declared purpose, and **no enrolment
+through floor access, care, schooling or the courts** — the existing enforcement
+firewall restated where a record family could trip over it.
+
+Watching and automating are separate dependent records that rejoin the actual
+holding by subject, domain, holder, purpose, version, period, jurisdiction,
+scope and end, so a holding reviewed for one person, domain or purpose licenses
+nothing about another. Covert or biometric use needs prior individualised
+authorization, least intrusive means, defined scope and duration, fresh
+authorization per renewal and later notification; bulk, suspicionless and
+population-scale collection is refused, as is buying what could not be
+collected.
+
+**Automated support is support.** It requires an accessible explanation of
+inputs and reasoning, contest before effect, and human and independent review
+deciding the outcome, with the reviewer distinct from the holder and from every
+attester. A sole automated consequential decision is refused, and the
+2026-08-02 temporary-assessment exclusion is carried by name: no risk, threat,
+loyalty or dangerousness product enters the consequential person record.
+Nothing in the family reads a computed value or concludes from one.
+
+Access, correction, deletion and objection are bound to the subject's own record
+and hand back no reusable classification. Retention concludes a deletion or
+narrowing duty at the source-bound end, with no silent extension and no
+recreation from copies. A reviewed defect withholds the exact use it names; a
+certified reader nonresponse moves the review duty to the independent alternate.
+The subject is an opaque handle and the family concludes nothing about a person:
+an entry naming somebody, even beside a raw `rotten` report, takes no standing,
+floor, ballot or credibility. The legacy writable surface the justice contract
+records is untouched — nothing here authenticates or reinterprets it.
+
+Book 2 owns storage, cryptography, identity technology, retention engineering,
+deletion in practice, model development and evaluation, audit tooling and case
+administration. The exact reader section "Keeping, watching, and letting a
+machine help" is inserted in Book 1 chapter 1, `session-drafted,
+author-approved under delegated approval (2026-09-13)`;
+`new-book-plans/record-power-reader-draft.md` retains the wording. Controlling
+record: `new-book-plans/book-1-record-power-contract.md`.
 
 #### Surviving guardrails and the democratic corridor
 

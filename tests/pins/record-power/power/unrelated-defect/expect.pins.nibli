@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? permits(RecordSequenceHolder, OrdinaryRecordKeeping, RecordSequenceRecord).
+# => TRUE
+? obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).
+# => TRUE
+? complete(RecordSequenceRecord, ReviewedRecordProcessing, RecordSequenceSubject).
+# => TRUE
+? contradict(DifferentRecordHolding, RecordUseAuthorization).
+# => TRUE
+? obliged(RecordHoldingDefectReader, ReviewAndCorrectUnsupportedRecordUse, DifferentRecordHolding).
+# => TRUE
+? obliged(RecordSequenceHolder, PublishRecordUseCorrection, DifferentRecordHolding).
+# => TRUE
+? complete(RecordHoldingDefectRecord, ReviewedRecordUseDefect, RecordSequenceSubject).
+# => TRUE

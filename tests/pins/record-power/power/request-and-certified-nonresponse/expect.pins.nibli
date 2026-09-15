@@ -1,0 +1,94 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? obliged(RecordRequestReader, ReviewRecordAccessCorrectionOrObjection, RecordRequestEntry).
+# => TRUE
+? permits(RecordRequestRequester, InspectOwnRecord, RecordRequestEntry).
+# => FALSE
+? obliged(RecordRequestAlternate, ReviewRecordRequestAndSecureIndependentRemedy, RecordRequestEntry).
+# => FALSE
+? complete(RecordRequestRecord, CertifiedRecordReaderNonresponse, RecordRequestSubject).
+# => FALSE
+authorized(RecordRequestSource, RecordSourceAuthority, RecordRequestRecord).
+authorized(RecordRequestEvidence, IndependentRecordEvidenceAuthority, RecordRequestRecord).
+authorized(RecordRequestReview, IndependentRecordReviewAuthority, RecordRequestRecord).
+authorized(RecordRequestReader, RecordChallengeReaderAuthority, RecordRequestRecord).
+authorized(RecordRequestAlternate, RecordAlternateReviewAuthority, RecordRequestRecord).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestSubject, RecordSubjectScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestSubject, RecordSubjectScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestSubject, RecordSubjectScope).
+observe(RecordRequestSource, RecordRequestRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordRequestEvidence, RecordRequestRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordRequestReview, RecordRequestRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestHolder, RecordHolderScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestHolder, RecordHolderScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestHolder, RecordHolderScope).
+observe(RecordRequestSource, RecordRequestRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordRequestEvidence, RecordRequestRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordRequestReview, RecordRequestRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestVersion, RecordSourceVersionScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestVersion, RecordSourceVersionScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestVersion, RecordSourceVersionScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestPeriod, RecordEvidencePeriodScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestPeriod, RecordEvidencePeriodScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestPeriod, RecordEvidencePeriodScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestJurisdiction, RecordJurisdictionScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestJurisdiction, RecordJurisdictionScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestJurisdiction, RecordJurisdictionScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestScope, RecordLegalScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestScope, RecordLegalScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestScope, RecordLegalScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestEnd, RecordSourceBoundEndScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestEnd, RecordSourceBoundEndScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestEnd, RecordSourceBoundEndScope).
+observe(RecordRequestSource, RecordRequestRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordRequestEvidence, RecordRequestRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordRequestReview, RecordRequestRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestReader, RecordChallengeReaderScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestReader, RecordChallengeReaderScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestReader, RecordChallengeReaderScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestAlternate, RecordIndependentAlternateScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestAlternate, RecordIndependentAlternateScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestAlternate, RecordIndependentAlternateScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestChallenge, RecordChallengeScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestChallenge, RecordChallengeScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestChallenge, RecordChallengeScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestCorrection, RecordCorrectionScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestCorrection, RecordCorrectionScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestCorrection, RecordCorrectionScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestRemedy, RecordRemedyScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestRemedy, RecordRemedyScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestRemedy, RecordRemedyScope).
+observe(RecordRequestSource, RecordRequestRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordRequestEvidence, RecordRequestRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordRequestReview, RecordRequestRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordRequestSource, RecordRequestRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordRequestEvidence, RecordRequestRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordRequestReview, RecordRequestRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordRequestSource, RecordRequestRecord, CertifiedRecordReaderNonresponse, RecordEntryKindScope).
+observe(RecordRequestEvidence, RecordRequestRecord, CertifiedRecordReaderNonresponse, RecordEntryKindScope).
+observe(RecordRequestReview, RecordRequestRecord, CertifiedRecordReaderNonresponse, RecordEntryKindScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestEntry, RecordAffectedRequestScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestEntry, RecordAffectedRequestScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestEntry, RecordAffectedRequestScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestRequester, RecordRequesterScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestRequester, RecordRequesterScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestRequester, RecordRequesterScope).
+observe(RecordRequestSource, RecordRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, RecordNoticeOpportunityScope).
+observe(RecordRequestEvidence, RecordRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, RecordNoticeOpportunityScope).
+observe(RecordRequestReview, RecordRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, RecordNoticeOpportunityScope).
+observe(RecordRequestSource, RecordRequestRecord, RecordRequestDeadline, RecordSourceBoundDeadlineScope).
+observe(RecordRequestEvidence, RecordRequestRecord, RecordRequestDeadline, RecordSourceBoundDeadlineScope).
+observe(RecordRequestReview, RecordRequestRecord, RecordRequestDeadline, RecordSourceBoundDeadlineScope).
+observe(RecordRequestSource, RecordRequestRecord, IndependentPositiveReaderNonresponseFinding, RecordNonresponseDispositionScope).
+observe(RecordRequestEvidence, RecordRequestRecord, IndependentPositiveReaderNonresponseFinding, RecordNonresponseDispositionScope).
+observe(RecordRequestReview, RecordRequestRecord, IndependentPositiveReaderNonresponseFinding, RecordNonresponseDispositionScope).
+observe(RecordRequestSource, RecordRequestRecord, NoSilenceAsApprovalOrAdverseSubjectFact, RecordNonresponseLimitScope).
+observe(RecordRequestEvidence, RecordRequestRecord, NoSilenceAsApprovalOrAdverseSubjectFact, RecordNonresponseLimitScope).
+observe(RecordRequestReview, RecordRequestRecord, NoSilenceAsApprovalOrAdverseSubjectFact, RecordNonresponseLimitScope).
+? obliged(RecordRequestAlternate, ReviewRecordRequestAndSecureIndependentRemedy, RecordRequestEntry).
+# => TRUE
+? complete(RecordRequestRecord, CertifiedRecordReaderNonresponse, RecordRequestSubject).
+# => TRUE
+? obliged(RecordRequestReader, ReviewRecordAccessCorrectionOrObjection, RecordRequestEntry).
+# => TRUE

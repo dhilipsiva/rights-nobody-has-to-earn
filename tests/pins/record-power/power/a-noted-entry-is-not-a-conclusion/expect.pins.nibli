@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+
+? person(RecordNoted).
+# => TRUE
+? owe(State, Eats, RecordNoted).
+# => TRUE
+? decide(RecordNoted, Ballot).
+# => TRUE
+? false(RecordNoted).
+# => FALSE
+? prisoner(RecordNoted).
+# => FALSE
+? lose(Points, RecordNoted).
+# => FALSE
+? severe(RecordNoted).
+# => FALSE
+? prevents(RecordNoted, CompelledConscience).
+# => TRUE

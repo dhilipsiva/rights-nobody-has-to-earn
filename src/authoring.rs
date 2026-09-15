@@ -26,6 +26,8 @@ mod mobility;
 mod obligations;
 #[path = "authoring/public_safety.rs"]
 mod public_safety;
+#[path = "authoring/record_power.rs"]
+mod record_power;
 #[path = "authoring/spine.rs"]
 mod spine;
 #[path = "authoring/state_form.rs"]
@@ -232,11 +234,12 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             | "mobility"
             | "justice"
             | "knowledge"
+            | "record-power"
             | "public-safety"
             | "ecology"
     ) {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|public-safety|ecology|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|record-power|public-safety|ecology|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -251,6 +254,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         "mobility" => mobility::generate(context, &mut export)?,
         "justice" => justice::generate(context, &mut export)?,
         "knowledge" => knowledge::generate(context, &mut export)?,
+        "record-power" => record_power::generate(context, &mut export)?,
         "public-safety" => public_safety::generate(context, &mut export)?,
         "ecology" => ecology::generate(context, &mut export)?,
         _ => unreachable!(),

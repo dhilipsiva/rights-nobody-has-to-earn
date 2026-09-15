@@ -1,0 +1,441 @@
+{
+  "common_fields": [
+    [
+      "$subject",
+      "RecordSubjectScope"
+    ],
+    [
+      "$domain",
+      "RecordDomainScope"
+    ],
+    [
+      "$holder",
+      "RecordHolderScope"
+    ],
+    [
+      "$purpose",
+      "RecordPurposeScope"
+    ],
+    [
+      "$version",
+      "RecordSourceVersionScope"
+    ],
+    [
+      "$period",
+      "RecordEvidencePeriodScope"
+    ],
+    [
+      "$jurisdiction",
+      "RecordJurisdictionScope"
+    ],
+    [
+      "$scope",
+      "RecordLegalScope"
+    ],
+    [
+      "$end",
+      "RecordSourceBoundEndScope"
+    ],
+    [
+      "CurrentReconciledRecordEntry",
+      "RecordCurrentDispositionScope"
+    ],
+    [
+      "$reader",
+      "RecordChallengeReaderScope"
+    ],
+    [
+      "$alternate",
+      "RecordIndependentAlternateScope"
+    ],
+    [
+      "$challenge",
+      "RecordChallengeScope"
+    ],
+    [
+      "$correction",
+      "RecordCorrectionScope"
+    ],
+    [
+      "$remedy",
+      "RecordRemedyScope"
+    ],
+    [
+      "ConstitutionalReviewOrIndependentSubstitute",
+      "RecordFinalReviewScope"
+    ],
+    [
+      "NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence",
+      "RecordCorridorScope"
+    ]
+  ],
+  "vocabularies": [
+    [
+      "RecordDomainScope",
+      "RecordDomainVocabulary",
+      [
+        "IdentityAndStatusRecord",
+        "HealthRecord",
+        "CareRecord",
+        "EducationRecord",
+        "WorkplaceRecord",
+        "HousingRecord",
+        "FinanceRecord",
+        "PolicingRecord",
+        "PublicDecisionRecord"
+      ]
+    ],
+    [
+      "RecordPurposeScope",
+      "RecordPurposeVocabulary",
+      [
+        "DeliverTheServiceRecorded",
+        "AdministerTheLawfulDecision",
+        "ProtectTheSubjectsOwnRights",
+        "IndependentOversightOfTheHolder"
+      ]
+    ],
+    [
+      "RecordProcessingKindScope",
+      "RecordProcessingKindVocabulary",
+      [
+        "OrdinaryRecordKeeping",
+        "TargetedSurveillance",
+        "BiometricProcessing",
+        "Profiling",
+        "AutomatedOrAssistedDecision"
+      ]
+    ],
+    [
+      "RecordRequestKindScope",
+      "RecordRequestKindVocabulary",
+      [
+        "InspectOwnRecord",
+        "CorrectOwnRecord",
+        "DeleteOwnRecord",
+        "ObjectToProcessing"
+      ]
+    ],
+    [
+      "RecordDefectKindScope",
+      "RecordDefectKindVocabulary",
+      [
+        "UnauthorizedInput",
+        "PurposeCreep",
+        "BulkOrSuspicionlessCollection",
+        "PurchasedUnlawfulData",
+        "UnexplainedAutomatedEffect",
+        "SoleAutomatedConsequentialDecision",
+        "UncorrectedInaccuracy",
+        "UnlawfulRetention",
+        "BlockedAccessOrCorrection",
+        "RetaliationForObjecting",
+        "NonUseWallBreach"
+      ]
+    ]
+  ],
+  "contracts": [
+    {
+      "id": "holding",
+      "kind": "ReviewedRecordHolding",
+      "fields": [
+        [
+          "AuthorizedInputsOnlyFromNamedLawfulSources",
+          "RecordInputAuthorityScope"
+        ],
+        [
+          "NecessaryAndMinimizedForTheDeclaredPurpose",
+          "RecordNecessityScope"
+        ],
+        [
+          "PrivateSecureAndAccessControlled",
+          "RecordSecurityScope"
+        ],
+        [
+          "AccurateWithCorrectionOnRequest",
+          "RecordAccuracyScope"
+        ],
+        [
+          "SourceBoundRetentionAndLawfulDeletion",
+          "RecordRetentionScope"
+        ],
+        [
+          "SubjectAccessChallengeAndAntiRetaliation",
+          "RecordSubjectProtectionScope"
+        ],
+        [
+          "NoTransferSaleOrLinkageOutsideTheDeclaredPurpose",
+          "RecordTransferLimitScope"
+        ],
+        [
+          "NoEnrolmentThroughFloorAccessCareSchoolingOrCourts",
+          "RecordEnforcementFirewallScope"
+        ]
+      ],
+      "heads": [
+        "authority($holder, $purpose, $record)",
+        "obliged($holder, KeepRecordAccurateCorrectableAndSecure, $record)",
+        "obliged($holder, ProtectRecordSubjectsAndObjectorsFromRetaliation, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "processing",
+      "kind": "ReviewedRecordProcessing",
+      "fields": [
+        [
+          "$authorization",
+          "RecordHoldingAuthorizationScope"
+        ],
+        [
+          "$processing_kind",
+          "RecordProcessingKindScope"
+        ],
+        [
+          "PriorIndividualisedAuthorizationForCovertOrBiometricUse",
+          "RecordPriorAuthorizationScope"
+        ],
+        [
+          "LeastIntrusiveMeansWithDefinedScopeAndDuration",
+          "RecordIntrusionLimitScope"
+        ],
+        [
+          "FreshAuthorizationForEachRenewal",
+          "RecordRenewalScope"
+        ],
+        [
+          "LaterNotificationToTheSubject",
+          "RecordNotificationScope"
+        ],
+        [
+          "NoBulkSuspicionlessOrPopulationScaleCollection",
+          "RecordBulkRefusalScope"
+        ],
+        [
+          "NoPurchaseOrExchangeOfWhatCouldNotBeCollected",
+          "RecordAcquisitionRefusalScope"
+        ]
+      ],
+      "heads": [
+        "permits($holder, $processing_kind, $record)",
+        "obliged($holder, NotifyTheSubjectAfterCovertProcessing, $record)"
+      ],
+      "extra": [],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "automated",
+      "kind": "ReviewedAutomatedDecisionSupport",
+      "fields": [
+        [
+          "$authorization",
+          "RecordHoldingAuthorizationScope"
+        ],
+        [
+          "$decision",
+          "RecordDecisionScope"
+        ],
+        [
+          "$reviewer",
+          "RecordHumanReviewerScope"
+        ],
+        [
+          "AccessibleExplanationOfInputsAndReasoning",
+          "RecordExplanationScope"
+        ],
+        [
+          "ContestBeforeEffectWithRealOpportunity",
+          "RecordContestScope"
+        ],
+        [
+          "HumanAndIndependentReviewDecidesTheOutcome",
+          "RecordHumanReviewScope"
+        ],
+        [
+          "NoSoleAutomatedConsequentialDecision",
+          "RecordSoleAutomationRefusalScope"
+        ],
+        [
+          "NoRiskThreatLoyaltyOrDangerousnessProductInTheConsequentialRecord",
+          "RecordAssessmentExclusionScope"
+        ]
+      ],
+      "heads": [
+        "obliged($holder, ExplainAutomatedSupportAndAllowContest, $record)",
+        "obliged($reviewer, DecideWithHumanAndIndependentReview, $record)",
+        "permits($subject, ContestAutomatedSupport, $record)"
+      ],
+      "extra": [
+        "~($reviewer = $holder)",
+        "~($reviewer = $source)",
+        "~($reviewer = $evidence)",
+        "~($reviewer = $review)"
+      ],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "access",
+      "kind": "ReviewedSubjectAccessAndCorrection",
+      "fields": [
+        [
+          "$requester",
+          "RecordRequesterScope"
+        ],
+        [
+          "$request_kind",
+          "RecordRequestKindScope"
+        ],
+        [
+          "CaseBoundAccessToOwnRecordNotAReusableIdentity",
+          "RecordOwnAccessAuthorityScope"
+        ],
+        [
+          "PrivateAccessibleCorrectionDeletionAndObjection",
+          "RecordAccessLimitScope"
+        ],
+        [
+          "NoPublicationOfPrivateRecordOrIdentity",
+          "RecordPrivateAccessScope"
+        ]
+      ],
+      "heads": [
+        "permits($requester, $request_kind, $record)",
+        "obliged($holder, AnswerSubjectAccessCorrectionAndObjection, $record)"
+      ],
+      "extra": [
+        "~($requester = $holder)",
+        "~($requester = $review)",
+        "~($requester = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "retention",
+      "kind": "ReviewedRetentionAndDeletion",
+      "fields": [
+        [
+          "$target",
+          "RecordAffectedHoldingScope"
+        ],
+        [
+          "SourceBoundEndReachedOrPurposeExhausted",
+          "RecordEndReachedScope"
+        ],
+        [
+          "DeletionOrNarrowingWithARecordOfWhatWasDone",
+          "RecordDeletionDispositionScope"
+        ],
+        [
+          "NoSilentExtensionAndNoRecreationFromCopies",
+          "RecordDeletionLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($holder, DeleteOrNarrowAtTheSourceBoundEnd, $target)",
+        "obliged($reader, VerifyDeletionOrNarrowingHappened, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, RecordSourceAuthority, $target)",
+        "observe($target_source, $target, $subject, RecordSubjectScope)",
+        "observe($target_source, $target, $domain, RecordDomainScope)",
+        "observe($target_source, $target, $holder, RecordHolderScope)",
+        "observe($target_source, $target, $purpose, RecordPurposeScope)",
+        "observe($target_source, $target, $version, RecordSourceVersionScope)",
+        "observe($target_source, $target, $period, RecordEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, RecordJurisdictionScope)",
+        "observe($target_source, $target, $scope, RecordLegalScope)",
+        "observe($target_source, $target, $end, RecordSourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "defect",
+      "kind": "ReviewedRecordUseDefect",
+      "fields": [
+        [
+          "$target",
+          "RecordAffectedUseScope"
+        ],
+        [
+          "$defect",
+          "RecordDefectKindScope"
+        ],
+        [
+          "IndependentlyEstablishedIssueMakesThisExactUseUnsupported",
+          "RecordDefectDispositionScope"
+        ],
+        [
+          "NoAdverseSubjectFactOrAutomaticIndividualRemedy",
+          "RecordDefectLimitScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, RecordUseAuthorization)",
+        "obliged($reader, ReviewAndCorrectUnsupportedRecordUse, $target)",
+        "obliged($holder, PublishRecordUseCorrection, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, RecordSourceAuthority, $target)",
+        "observe($target_source, $target, $subject, RecordSubjectScope)",
+        "observe($target_source, $target, $domain, RecordDomainScope)",
+        "observe($target_source, $target, $holder, RecordHolderScope)",
+        "observe($target_source, $target, $purpose, RecordPurposeScope)",
+        "observe($target_source, $target, $version, RecordSourceVersionScope)",
+        "observe($target_source, $target, $period, RecordEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, RecordJurisdictionScope)",
+        "observe($target_source, $target, $scope, RecordLegalScope)",
+        "observe($target_source, $target, $end, RecordSourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "nonresponse",
+      "kind": "CertifiedRecordReaderNonresponse",
+      "fields": [
+        [
+          "$target",
+          "RecordAffectedRequestScope"
+        ],
+        [
+          "$requester",
+          "RecordRequesterScope"
+        ],
+        [
+          "AuthenticatedNoticeAndRealOpportunityToAct",
+          "RecordNoticeOpportunityScope"
+        ],
+        [
+          "$deadline",
+          "RecordSourceBoundDeadlineScope"
+        ],
+        [
+          "IndependentPositiveReaderNonresponseFinding",
+          "RecordNonresponseDispositionScope"
+        ],
+        [
+          "NoSilenceAsApprovalOrAdverseSubjectFact",
+          "RecordNonresponseLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($alternate, ReviewRecordRequestAndSecureIndependentRemedy, $target)"
+      ],
+      "extra": [
+        "~($source = $reader)",
+        "~($evidence = $reader)",
+        "~($review = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    }
+  ]
+}

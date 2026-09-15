@@ -25,6 +25,34 @@
 # Full interface and evidence limits:
 #   new-book-plans/book-1-official-statistics-contract.md
 #
+# "Keeping, watching, and letting a machine help" rests on these
+# actual-constitution record-power cases:
+#   tests/pins/record-power/holding/positive/expect.pins.nibli
+#   tests/pins/record-power/holding/without-RecordEnforcementFirewallScope/expect.pins.nibli
+#   tests/pins/record-power/holding/kind-RecordPurposeScope-UnapprovedRecordKind/expect.pins.nibli
+#   tests/pins/record-power/processing/positive/expect.pins.nibli
+#   tests/pins/record-power/processing/without-RecordBulkRefusalScope/expect.pins.nibli
+#   tests/pins/record-power/processing/without-authorization/expect.pins.nibli
+#   tests/pins/record-power/automated/positive/expect.pins.nibli
+#   tests/pins/record-power/automated/without-RecordAssessmentExclusionScope/expect.pins.nibli
+#   tests/pins/record-power/automated/without-RecordSoleAutomationRefusalScope/expect.pins.nibli
+#   tests/pins/record-power/access/positive/expect.pins.nibli
+#   tests/pins/record-power/retention/positive/expect.pins.nibli
+#   tests/pins/record-power/power/holding-defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/record-power/power/holding-does-not-cover-another-subject/expect.pins.nibli
+#   tests/pins/record-power/power/holding-does-not-cover-another-domain/expect.pins.nibli
+#   tests/pins/record-power/power/automated-reviewer-cannot-be-the-holder/expect.pins.nibli
+#   tests/pins/record-power/power/counterfactual-automated-reviewer-is-the-holder/expect.pins.nibli
+#   tests/pins/record-power/power/request-and-certified-nonresponse/expect.pins.nibli
+#   tests/pins/record-power/power/a-noted-entry-is-not-a-conclusion/expect.pins.nibli
+#   tests/pins/record-power/power/forged-conclusions/expect.pins.nibli
+# The per-scope omission, unauthorized-attester, stale, conflicting-value and
+# remaining counterfactual cases stay separate. They establish what must be
+# shown before a record is kept, watched or automated over, and what is owed
+# while it has not been; they authenticate no record and observe no execution.
+# Full interface and evidence limits:
+#   new-book-plans/book-1-record-power-contract.md
+#
 # KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
 # inlined. Run:
 #   ./verify.sh --only book-1/01-what-counts-as-evidence.pins.nibli

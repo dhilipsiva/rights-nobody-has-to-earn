@@ -22,6 +22,7 @@ LANDED THIS RUN
 - Run-it-yourself: `engine.pin` publishes the exact engine revision and
   `./bootstrap.sh` puts it beside a fresh clone. Exercised from clean inputs.
 - Knowledge, communication, culture and the free social field: implemented.
+- Records, surveillance and automated power: implemented.
 
 THE KNOWLEDGE FAMILY
 
@@ -33,10 +34,29 @@ reviewed defect and certified nonresponse. Ten closed fields, two harm grounds,
 and no new relation name — the spine's predicate, derived and stratum counts
 and the eight floor rights are unchanged; only the rule count moves.
 
-The complete verifier passed all 79,511 pins across 14,078 cases with complete
-contradiction checks and no findings in 816.98 seconds, nine known defects still
-reproducing. Adding 512 cases did not move the total, which matches the profile:
-the cost is per-case fixed work and a heavy tail, not case count.
+THE RECORD-POWER FAMILY
+
+`record-power-source.json` plus `./generate.sh record-power` write 120 rules and
+445 isolated cases. Seven contracts: reviewed holding, its dependent processing
+and automated support, subject access, retention and deletion, reviewed defect
+and certified nonresponse. Nine closed record domains, four closed purposes, and
+again no new relation name. Watching and automating rejoin the actual holding,
+so nothing travels between subjects, domains or purposes; automated support
+needs explanation, contest before effect and human and independent review by
+somebody other than the holder, and the temporary-assessment exclusion is
+carried by name.
+
+The reader section "Keeping, watching, and letting a machine help" is inserted
+in chapter 1 between "Counting without ranking people" and "Facts and
+conclusions are kept apart".
+
+MEASUREMENT AFTER BOTH FAMILIES
+
+The complete verifier passed all 81,028 pins across 14,523 cases with complete
+contradiction checks and no findings in 831.18 seconds, nine known defects still
+reproducing. The two families added 957 cases and about seven seconds, which
+matches the profile: the cost is per-case fixed work and a heavy tail, not case
+count.
 
 The reader section "What nobody has to ask permission for" is inserted in
 chapter 8 between "Protection does not require being human" and "Owed is not the

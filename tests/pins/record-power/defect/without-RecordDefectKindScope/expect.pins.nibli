@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? contradict(RecordCaseTarget, RecordUseAuthorization).
+# => FALSE
+? obliged(RecordCaseReader, ReviewAndCorrectUnsupportedRecordUse, RecordCaseTarget).
+# => FALSE
+? obliged(RecordCaseHolder, PublishRecordUseCorrection, RecordCaseTarget).
+# => FALSE
+? complete(RecordCaseRecord, ReviewedRecordUseDefect, RecordCaseSubject).
+# => FALSE

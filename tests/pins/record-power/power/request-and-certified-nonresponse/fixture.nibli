@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+challenge(RecordRequestRequester, RecordRequestReader, RecordRequestEntry).
+authorized(RecordRequestReader, RecordChallengeReaderAuthority, RecordRequestEntry).
+observe(RecordRequestRequester, RecordRequestEntry, RecordRequestSubject, RecordChallengeSubjectScope).
