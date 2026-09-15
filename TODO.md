@@ -448,24 +448,25 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 
-- [ ] **Run the source-derived multidisciplinary adversarial audit before completion.**
-  - Encode the declared lenses for constitutional law, public administration,
-    disability/accessibility, public health, care/life course, labour/economy,
-    consumer/civil justice, policing/prison, media/science/culture/pluralism,
-    local/migration/collective governance, defence/external affairs,
-    infrastructure, ecology, data/AI governance, and quantitative modelling as
-    source-bound criteria and watched-failing mutations.
-  - The repository audit must identify omitted domains, unowned dependencies,
-    hidden liveness assumptions, private-power blind spots, impossible-operation
-    overclaims, totalising rules, and narrative distortions. Every material
-    finding creates or joins a stable defect ID with severity, consequence,
-    owner, closure condition, affected claims, applicable gates, and a public
-    claim limitation. Critical unresolved findings block only gates whose exact
-    permitted claim they affect; disclosure is not closure.
+- [ ] **Keep the adversarial audit's eleven open findings moving.**
+  - **The audit is encoded.** `adversarial-audit-source.json` binds all fifteen
+    declared lenses to the checks and cases that encode them and to what each
+    finds; `./generate.sh adversarial-audit` projects the report. A lens naming
+    nothing executable fails, a lens finding nothing fails, a declared finding
+    kind nobody raises fails, and a table with nothing open fails. All four are
+    sabotage-tested.
+  - **Thirty findings across seven kinds, eleven of them open**, and the report
+    prints those first: the family baseline's missing ordinary half, four
+    domains carried by a boundary alone, the spelled half of the counted-claims
+    rule, `cares` as the posture of one passage, and the liveness assumptions
+    that no duty, delivery, procurement or accessibility check can discharge.
+  - **Done when:** every open finding is closed, narrowed to a claim it does not
+    affect, or carries a public-claim limitation and a gate consequence. Critical
+    unresolved findings block only the gates whose permitted claim they touch,
+    and disclosure is not closure.
   - External multidisciplinary or lived-experience submissions remain welcome
-    optional evidence. If received, give them traceable public dispositions, but
-    no recruitment, panel, submission, or response is required for completion.
-
+    optional evidence. If received, give them traceable public dispositions; no
+    recruitment, panel, submission or response is required for completion.
 
 ### Explicitly rejected expansion proposals
 

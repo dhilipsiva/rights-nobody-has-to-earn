@@ -1,0 +1,304 @@
+{
+  "lenses": [
+    {
+      "id": "constitutional-law",
+      "lens": "Constitutional law",
+      "encoded_by": [
+        "src/authoring/floor_vector_tests.rs",
+        "tests/pins/knowledge/restriction/positive/expect.pins.nibli",
+        "new-book-plans/counterfactual/no-person-line.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "The corridor limits amendment and non-derogability limits emergency, and every corridor member is non-derogable while the converse does not hold. Nothing checks the converse.",
+          "category": "totalising-rule",
+          "open": false
+        },
+        {
+          "finding": "Every three-place record completion carries a distinctness constraint and an independent review authority; the challenge-reader skeleton is a later convention two families predate.",
+          "category": "omitted-domain",
+          "open": false
+        }
+      ]
+    },
+    {
+      "id": "public-administration",
+      "lens": "Public administration",
+      "encoded_by": [
+        "tests/pins/knowledge/free-field/request-and-certified-nonresponse/expect.pins.nibli",
+        "tests/pins/record-power/power/request-and-certified-nonresponse/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Every family with a challenge reader carries an independent alternate, so declining to read confers no veto.",
+          "category": "unowned-dependency",
+          "open": false
+        },
+        {
+          "finding": "No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf.",
+          "category": "hidden-liveness-assumption",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "disability-accessibility",
+      "lens": "Disability and accessibility",
+      "encoded_by": [
+        "tests/pins/knowledge/accessibility/positive/expect.pins.nibli",
+        "new-book-plans/15-pilot-reader-artifacts.py"
+      ],
+      "findings": [
+        {
+          "finding": "Accessible format and language on request, proactive design, adjustment without a fee, and no meaning carried only by one sense — as conditions on a supplied record.",
+          "category": "impossible-operation-overclaim",
+          "open": false
+        },
+        {
+          "finding": "Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows.",
+          "category": "hidden-liveness-assumption",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "public-health",
+      "lens": "Public health",
+      "encoded_by": [
+        "tests/pins/delivery/received-outside-custody/expect.pins.nibli",
+        "tests/pins/statistics/use/positive/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Care derives from a matching receipt and an authorised independent witness, never from a provider's own word.",
+          "category": "impossible-operation-overclaim",
+          "open": false
+        },
+        {
+          "finding": "No aggregate health measure exists and none may become an individual label.",
+          "category": "totalising-rule",
+          "open": false
+        }
+      ]
+    },
+    {
+      "id": "care-life-course",
+      "lens": "Care and the life course",
+      "encoded_by": [
+        "new-book-plans/reader-coverage.md",
+        "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "The family, dependency, reproduction and care baseline landed 106 person-held barriers and no ordinary-operation interface, so the domain appears only under strain.",
+          "category": "omitted-domain",
+          "open": true
+        },
+        {
+          "finding": "`cares` is the posture of one passage in the whole book.",
+          "category": "narrative-distortion",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "labour-economy",
+      "lens": "Labour and economy",
+      "encoded_by": [
+        "book-1/10-contribution.pins.nibli",
+        "src/authoring/floor_vector_tests.rs"
+      ],
+      "findings": [
+        {
+          "finding": "Recognition is arity one, minted by three doors, read by nothing and never joined with itself.",
+          "category": "totalising-rule",
+          "open": false
+        },
+        {
+          "finding": "Contribution, wealth and expected productivity are refused as scarcity priority keys, each by name.",
+          "category": "private-power-blind-spot",
+          "open": false
+        }
+      ]
+    },
+    {
+      "id": "consumer-civil-justice",
+      "lens": "Consumer and civil justice",
+      "encoded_by": [
+        "tests/pins/justice/access/positive/expect.pins.nibli",
+        "tests/pins/justice/enforcement/no-custodial-remedy-kind/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Accessible notice, interpretation, assistance, hearing, reasons, challenge and remedy are conditions on a supplied record; money and status cannot be the price of entry.",
+          "category": "impossible-operation-overclaim",
+          "open": false
+        },
+        {
+          "finding": "No finding proves a hearing occurred or that compensation arrived.",
+          "category": "hidden-liveness-assumption",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "policing-prison",
+      "lens": "Policing and prison",
+      "encoded_by": [
+        "book-1/13-the-one-thing-taken.pins.nibli",
+        "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Each coercive instrument carries a refusal pin against every floor predicate; the firewall reaches the confinement conclusion only.",
+          "category": "private-power-blind-spot",
+          "open": false
+        },
+        {
+          "finding": "The design has no rule reading a building back into a condition, service or remedy, so a facility name is never evidence of compliance.",
+          "category": "impossible-operation-overclaim",
+          "open": false
+        }
+      ]
+    },
+    {
+      "id": "media-science-culture",
+      "lens": "Media, science, culture and pluralism",
+      "encoded_by": [
+        "tests/pins/knowledge/plurality/positive/expect.pins.nibli",
+        "tests/pins/knowledge/autonomy/positive/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "A concentration finding is structural and actor-side; it adjudicates no truth, no editorial choice, and classifies no audience.",
+          "category": "totalising-rule",
+          "open": false
+        },
+        {
+          "finding": "Knowledge and culture is carried by a stated boundary and no passage in which anything goes wrong.",
+          "category": "narrative-distortion",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "local-migration-collective",
+      "lens": "Local, migration and collective governance",
+      "encoded_by": [
+        "tests/pins/mobility/asylum/positive/expect.pins.nibli",
+        "tests/pins/mobility/boundaries/standing-rights-and-no-coercive-consequence/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Membership findings produce no standing, punishment, political weight or personal score, and free exit survives.",
+          "category": "private-power-blind-spot",
+          "open": false
+        },
+        {
+          "finding": "Foreign recognition, cooperation and readmission are named external assumptions.",
+          "category": "unowned-dependency",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "defence-external",
+      "lens": "Defence and external affairs",
+      "encoded_by": [
+        "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Force abroad needs prior authorisation naming objective, basis, scope, geography, means and reporting, and an immediate response ends absent ratification.",
+          "category": "impossible-operation-overclaim",
+          "open": false
+        },
+        {
+          "finding": "Defence is carried by a stated boundary and no passage in which anything goes wrong.",
+          "category": "narrative-distortion",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "lens": "Infrastructure and continuity",
+      "encoded_by": [
+        "tests/pins/scarcity/finding/positive/expect.pins.nibli",
+        "tests/pins/scarcity/priority/not-a-shortage-RefusalToProcure/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Budget choice, price exclusion, delay, withholding, monopoly, provider failure and refusal to procure are failures and not shortages, each named.",
+          "category": "impossible-operation-overclaim",
+          "open": false
+        },
+        {
+          "finding": "Nothing counts stock, forecasts supply or proves procurement.",
+          "category": "hidden-liveness-assumption",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "ecology",
+      "lens": "Ecology and future conditions",
+      "encoded_by": [
+        "tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli",
+        "new-book-plans/counterfactual/no-class9-climate-axis.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Commons axes are non-substitutable: no sustainability score can hide one failed condition.",
+          "category": "totalising-rule",
+          "open": false
+        },
+        {
+          "finding": "Ecology is carried by stated boundaries and no passage in which anything goes wrong.",
+          "category": "narrative-distortion",
+          "open": true
+        }
+      ]
+    },
+    {
+      "id": "data-ai-governance",
+      "lens": "Data and AI governance",
+      "encoded_by": [
+        "tests/pins/record-power/automated/positive/expect.pins.nibli",
+        "tests/pins/record-power/power/automated-reviewer-cannot-be-the-holder/expect.pins.nibli"
+      ],
+      "findings": [
+        {
+          "finding": "Automated output is support: explanation, contest before effect, and human and independent review by somebody who is not the holder. A sole automated consequential decision is refused.",
+          "category": "totalising-rule",
+          "open": false
+        },
+        {
+          "finding": "No rule reads a computed value, and the temporary-assessment exclusion keeps risk, threat, loyalty and dangerousness products out of the consequential record.",
+          "category": "private-power-blind-spot",
+          "open": false
+        }
+      ]
+    },
+    {
+      "id": "quantitative-modelling",
+      "lens": "Quantitative modelling",
+      "encoded_by": [
+        "src/authoring/claim_discipline_tests.rs",
+        "src/authoring/floor_vector_tests.rs"
+      ],
+      "findings": [
+        {
+          "finding": "No enacted line carries a numeric literal and no relation aggregates, scores or ranks.",
+          "category": "totalising-rule",
+          "open": false
+        },
+        {
+          "finding": "The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses.",
+          "category": "narrative-distortion",
+          "open": true
+        }
+      ]
+    }
+  ]
+}

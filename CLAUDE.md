@@ -55,7 +55,8 @@ input trees, or skip tests based on earlier results. The target is a complete
 run under five minutes with the release binary already built. Report actual
 measurements and any remaining bottleneck honestly.
 
-Useful authoring generators remain behind `./generate.sh state-form`,
+Useful authoring generators remain behind `./generate.sh adversarial-audit`,
+`./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
 `./generate.sh justice`, `./generate.sh knowledge`,
@@ -1972,6 +1973,23 @@ ledger closes nothing and does not claim to.
 It is a map of what a reader meets, never of what a reader understood. No reader
 has been asked anything, R6 remains unbuilt, and nothing in it is reader
 evidence.
+
+**The multidisciplinary adversarial audit is encoded — 2026-09-15.**
+`adversarial-audit-source.json` binds all fifteen declared lenses —
+constitutional law, public administration, disability and accessibility, public
+health, care and the life course, labour and economy, consumer and civil
+justice, policing and prison, media/science/culture/pluralism, local, migration
+and collective governance, defence and external affairs, infrastructure,
+ecology, data and AI governance, and quantitative modelling — to the checks and
+cases that encode them and to what each finds. Four ways to weaken it fail and
+are sabotage-tested: a lens naming a path that does not exist, a lens finding
+nothing, a declared finding kind nobody raises, and a table with nothing open.
+
+**Thirty findings across the seven declared kinds, eleven open**, printed first
+in the report. It is a repository audit over the source: it warrants no
+independent human review, no reader response, no external truth and no
+operation, and external submissions remain welcome optional evidence that no
+gate waits for.
 
 **The red-team index is landed — 2026-09-15.**
 `new-book-plans/book-1-red-team-index.md` has one entry per named strategic

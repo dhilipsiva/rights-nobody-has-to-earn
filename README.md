@@ -35,6 +35,7 @@ destination.
 | `new-book-plans/book-1-record-power-contract.md` | Record holding, surveillance, biometrics, profiling, automated support, access, retention and non-use walls. |
 | `new-book-plans/book-1-scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
 | `new-book-plans/book-1-red-team-index.md` | One entry per strategic behaviour: who gains, who pays, what stops it, and where nothing does. |
+| `new-book-plans/adversarial-audit-source.json` | Fifteen review lenses bound to the checks that encode them and to what each finds. |
 | `new-book-plans/reader-coverage-source.json` | Every derived-chapter and Part V passage classified by domain, function, posture and trajectory. |
 | `new-book-plans/resolution-receipts-source.json` | Every repair thread's ending: what failed, what changed, how the attack is rerun, what still does not follow. |
 | `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
@@ -124,6 +125,7 @@ observation, not a cached verification result or a gate on later edits.
 Generation is separate from verification and happens only when requested:
 
 ```bash
+./generate.sh adversarial-audit
 ./generate.sh state-form
 ./generate.sh obligations
 ./generate.sh integrity

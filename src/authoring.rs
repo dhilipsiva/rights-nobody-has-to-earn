@@ -10,6 +10,8 @@ use serde::{Deserialize, Serialize};
 use crate::cli::Error;
 use crate::context::Context;
 
+#[path = "authoring/adversarial_audit.rs"]
+mod adversarial_audit;
 #[path = "authoring/amendment.rs"]
 mod amendment;
 #[path = "authoring/ecology.rs"]
@@ -232,7 +234,8 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
     }
     if !matches!(
         family,
-        "state-form"
+        "adversarial-audit"
+            | "state-form"
             | "obligations"
             | "integrity"
             | "statistics"
@@ -248,13 +251,14 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             | "ecology"
     ) {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
+            "usage: ./generate.sh adversarial-audit|state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
         ));
     }
     let mut inventory: serde_json::Value =
         serde_json::from_str(&context.read("tests/pins/suites.json")?)?;
     let mut export = Export::new();
     match family {
+        "adversarial-audit" => adversarial_audit::generate(context, &mut export)?,
         "state-form" => state_form::generate(context, &mut export)?,
         "obligations" => obligations::generate(context, &mut export)?,
         "integrity" => integrity::generate(context, &mut export)?,
