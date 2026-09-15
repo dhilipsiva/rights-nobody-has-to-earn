@@ -427,23 +427,24 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     decorative demographic labels, invent biographies, or warm the cast. See
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
 
-- [ ] **Finish machine-checkable accessible navigation and visual validation.**
-  - The annotated contents, concise glossary, role/body and case indexes,
-    domain-to-chapter map, and selected text-equivalent diagrams landed with
-    the Reader's Map at `67a520e`.
-  - Script 15 checks semantic source headings, local link targets, and
-    deterministic HTML/EPUB generation. Bind the exact future preview
-    snapshot's HTML, EPUB, and PDF artifacts and complete every mechanically
-    testable heading, reading-order, extraction, keyboard, navigation, link,
-    and text-alternative check required by its snapshot-specific gate.
-  - Human screen-reader validation was withdrawn from the current program at
-    `907ddd0` and is optional evidence, not a gate. Automated checks may
-    warrant only properties of the artifacts and may not support an
-    accessibility-for-users claim.
+- [ ] **Bind the preview snapshot's artifacts, once a preview exists.**
+  - **The mechanically testable checks are done.** Script 15 validates the
+    generated HTML's document language, its skip link against a target that has
+    to exist, text alternatives on every image, non-empty accessible names, a
+    name on every focusable region, and reading order — every ordered input
+    contributing exactly one top-level heading, in manifest order. Six
+    accessibility mutations are watched failing beside the four missing-link and
+    four stale-PDF ones. The annotated contents, glossary, role/body and case
+    indexes, domain map and text-equivalent diagrams landed at `67a520e`.
+  - **What is left is gated on an artifact that does not exist yet.** Binding the
+    exact HTML, EPUB and PDF identities of a preview snapshot waits for Gate B
+    and that snapshot's own gate. Nothing here can be done earlier, and no
+    accessibility-for-users claim follows from any of it: human screen-reader
+    validation was withdrawn at `907ddd0` and is optional evidence, not a gate.
   - No meaning may depend only on colour, layout, vision, hearing, fine motor
-    control, or specialist notation.
-  - Readability formulas are diagnostic flags, not truth or pass/fail targets.
-    Each visual must earn its cognitive and accessibility cost.
+    control, or specialist notation — a prose rule, not a check. Readability
+    formulas stay diagnostic flags. Each visual must earn its cognitive and
+    accessibility cost.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 

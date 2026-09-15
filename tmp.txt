@@ -379,3 +379,18 @@ absent, which was a wrong one. Both the empty set and the thin set are asserted.
 
 Twice now the ledger's first reading has overstated a gap, and both times the fix
 was to make the model match the book rather than to write prose at the model.
+
+THE ACCESSIBILITY CHECKS THAT CAN BE WRITTEN NOW
+
+Script 15 validates six more properties of the generated HTML: the document
+language, a skip link whose target must exist, a text alternative on every
+image, non-empty accessible names, an accessible name on every focusable region,
+and reading order — every ordered input contributing exactly one top-level
+heading, in manifest order. Six mutations are watched failing beside the four
+missing-link and four stale-PDF controls.
+
+Every one is a property of the artifact. Human screen-reader validation was
+withdrawn at 907ddd0 and stays optional evidence; nothing here supports an
+accessibility-for-users claim. The rest of the item — binding a preview
+snapshot's exact HTML, EPUB and PDF identities — waits on Gate B and cannot be
+done before the artifact exists, so the bullet is narrowed rather than closed.

@@ -707,6 +707,95 @@ def prior_pdf_output(
     }
 
 
+def validate_accessible_html(value: bytes, documents: list["SourceDocument"]) -> None:
+    """Mechanically testable accessibility properties of the generated HTML.
+
+    These are properties of the artifact, never of anybody's experience reading
+    it.  A human screen-reader pass was withdrawn from the programme and none of
+    this substitutes for one.
+    """
+    text = value.decode("utf-8")
+    if not re.search(r'<html[^>]*\slang="[a-zA-Z-]+"', text):
+        raise ArtifactError("generated HTML has no document language")
+    for match in re.finditer(r'<a class="skip-link" href="#([^"]+)"', text):
+        target = match.group(1)
+        if f'id="{target}"' not in text:
+            raise ArtifactError(f"skip link points at a missing target: #{target}")
+    if '<a class="skip-link"' not in text:
+        raise ArtifactError("generated HTML has no skip link")
+    if re.search(r"<img(?![^>]*\balt=)", text):
+        raise ArtifactError("generated HTML has an image with no text alternative")
+    for match in re.finditer(r'aria-label="([^"]*)"', text):
+        if not match.group(1).strip():
+            raise ArtifactError("generated HTML has an empty aria-label")
+    for match in re.finditer(r"<[a-z]+[^>]*\brole=\"region\"[^>]*>", text):
+        if "aria-label" not in match.group(0):
+            raise ArtifactError("a focusable region carries no accessible name")
+    # Reading order: every ordered input contributes exactly one top-level
+    # heading, and they appear in the order the manifest binds them.
+    headings = re.findall(r"<h1[^>]*>(.*?)</h1>", text, re.S)
+    titles = [document.title for document in documents if document.title]
+    stripped = [re.sub(r"<[^>]+>", "", heading).strip() for heading in headings]
+    for title in titles:
+        if title not in stripped:
+            raise ArtifactError(f"reading order lost a top-level heading: {title}")
+    positions = [stripped.index(title) for title in titles]
+    if positions != sorted(positions):
+        raise ArtifactError("generated HTML headings are not in ordered-input order")
+
+
+def watched_accessibility_controls(value: bytes, documents: list["SourceDocument"]) -> int:
+    """Each refused property, broken on purpose, must be refused."""
+    text = value.decode("utf-8")
+    controls = (
+        ("no document language", lambda body: body.replace('<html lang="en">', "<html>", 1),
+         "no document language"),
+        ("skip link to nowhere",
+         lambda body: body.replace('id="main-content"', 'id="moved-away"', 1),
+         "missing target"),
+        ("image without a text alternative",
+         lambda body: body.replace("<main", '<img src="x.png"><main', 1),
+         "no text alternative"),
+        ("empty accessible name",
+         lambda body: body.replace('aria-label="Book contents"', 'aria-label=""', 1),
+         "empty aria-label"),
+        ("unnamed focusable region",
+         lambda body: body.replace("<main", '<div role="region" tabindex="0"></div><main', 1),
+         "no accessible name"),
+        ("reading order reversed",
+         lambda body: _reverse_first_two_headings(body),
+         "ordered-input order"),
+    )
+    watched = 0
+    for label, mutate, expected in controls:
+        mutated = mutate(text).encode("utf-8")
+        try:
+            validate_accessible_html(mutated, documents)
+        except ArtifactError as exc:
+            if expected not in str(exc):
+                raise ArtifactError(
+                    f"{label} failed for the wrong reason: {exc}"
+                ) from exc
+            watched += 1
+            continue
+        raise ArtifactError(f"{label} was not refused")
+    return watched
+
+
+def _reverse_first_two_headings(text: str) -> str:
+    matches = list(re.finditer(r"<h1[^>]*>.*?</h1>", text, re.S))
+    if len(matches) < 2:
+        return text
+    first, second = matches[0], matches[1]
+    return (
+        text[: first.start()]
+        + second.group(0)
+        + text[first.end() : second.start()]
+        + first.group(0)
+        + text[second.end() :]
+    )
+
+
 def build(output_dir: Path, *, require_committed: bool = True) -> dict[str, object]:
     documents = read_documents()
     validate_sources(documents)
@@ -716,6 +805,7 @@ def build(output_dir: Path, *, require_committed: bool = True) -> dict[str, obje
     identity = snapshot_identity(inputs, generator)
     snapshot_id = snapshot_identifier(identity)
     html_bytes = html_document(documents, snapshot_id)
+    validate_accessible_html(html_bytes, documents)
     epub_bytes = epub_document(documents, snapshot_id)
     validate_epub(epub_bytes, len(documents))
     source_revision = git_source_revision(
@@ -882,13 +972,18 @@ def check() -> None:
         revision = first.get("source_revision")
         if not isinstance(revision, dict) or not revision.get("commit"):
             raise ArtifactError("manifest lacks Git source-revision provenance")
-        link_controls = watched_link_controls(read_documents())
+        documents = read_documents()
+        link_controls = watched_link_controls(documents)
         pdf_controls = watched_pdf_controls(root / "pdf-controls")
+        access_controls = watched_accessibility_controls(
+            (root / "first" / f"{OUTPUT_BASENAME}.html").read_bytes(), documents
+        )
         print(
             "15-pilot-reader-artifacts: ordered inputs and accessible HTML/EPUB "
-            f"are structurally valid and deterministic; {link_controls} missing-link "
-            f"and {pdf_controls} stale/invalid-PDF mutations watched failing; PDF "
-            "rendering and human screen-reader attestation remain external"
+            f"are structurally valid and deterministic; {link_controls} missing-link, "
+            f"{access_controls} accessibility and {pdf_controls} stale/invalid-PDF "
+            "mutations watched failing; PDF rendering and human screen-reader "
+            "attestation remain external"
         )
 
 

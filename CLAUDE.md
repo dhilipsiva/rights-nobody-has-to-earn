@@ -1903,6 +1903,20 @@ Five of the twelve are `resolved-for-claim`; the rest are not, and the report
 gives disclosure no credit for closure. The generator refuses a table in which
 everything is resolved, because this design has never been in that state.
 
+**The mechanically testable accessibility checks are complete — 2026-09-15.**
+Script 15 now validates the generated HTML's document language, its skip link
+against a target that must exist, a text alternative on every image, non-empty
+accessible names, an accessible name on every focusable region, and reading
+order: every ordered input contributes exactly one top-level heading and they
+appear in manifest order. Six accessibility mutations are watched failing beside
+the four missing-link and four stale-PDF controls.
+
+These are **properties of the artifact and of nothing else**. Human
+screen-reader validation was withdrawn at `907ddd0`, remains optional evidence
+rather than a gate, and no accessibility-for-users claim follows from a green
+check. Binding a preview snapshot's exact HTML, EPUB and PDF identities waits
+for Gate B and that snapshot's own gate.
+
 **The reader-experience coverage ledger is landed — 2026-09-15.**
 `reader-coverage-source.json` classifies all 86 derived-chapter and Part V
 passages — domain, rule family, ordinary or protective function, setting, person
