@@ -875,6 +875,18 @@
       "fetch": "vdem_happiness.py --snapshot registry/data",
       "book": "book-1",
       "notes": "Part V's worked example, third act: not a clean refutation but instrument-dependence — 'we would have loved this claim, and we cannot have it, and here is exactly why.' Crude heteroskedasticity test kept deliberately (mirrors the original); no HC errors."
+    },
+    {
+      "id": "demo-happy-prior-analysis",
+      "claim": "The prior democracy/happiness analysis behind Part V's worked example, independently re-derived on openly licensed instruments (source reference only).",
+      "value": null,
+      "units": null,
+      "source": "demo-happy.txt (repository root), computed over democracy_vs_happiness_144.csv: WHR 2025 life evaluations (2022–2024 average) merged with EIU Democracy Index 2025, 144 countries matched from EIU's 166 and WHR's 147",
+      "retrieved": "2026-09-15",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "PRIOR ANALYSIS, RECORDED FOR PROVENANCE, NOT AS EVIDENCE. Every figure Part V uses comes from the V-Dem re-derivation (vdem-2026-*), and no EIU-derived value enters this CC0 registry, per the 2026-08-02 licensing ruling. The re-derivation reproduced the income narrowing and the step pattern and did NOT reproduce this analysis's headline dispersion finding — see vdem-2026-floor-claim-instrument-fragile. The merged CSV sits in the repository root under the root LICENSE, committed before that ruling, and carries EIU index values; whether the repository may grant CC0 over a non-redistributable index is an open question for the author, recorded in TODO.md."
     }
   ]
 }

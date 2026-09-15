@@ -31,13 +31,15 @@ entry per figure. Two classes:
 ## Checks
 
 ```
-../verify.sh --quick
+python3 registry/check.py
 ```
 
 Schema plus the staleness gate: a fetchable entry whose `retrieved` date is
-older than the gate's window fails the build and names the script that
-refreshes it. The repository-root verifier runs this check when the registry is
-present.
+older than the gate's window fails, naming the script that refreshes it. Run it
+when you edit an entry. It is **not** part of `../verify.sh`: the 2026-09-12
+author decision took registry, hash, history and report-freshness gates out of
+verification, which now runs pins and contradiction scans only. Source quality
+and the re-cite pass remain editorial, not mechanical.
 
 ## Refreshing a fetchable entry
 
@@ -47,7 +49,10 @@ python3 registry/fetch/worldbank.py EG.ELC.ACCS.ZS WLD --write registry/claims.j
 
 ## What does not belong here
 
-The EIU-based democracy/happiness derivation stays out until its licensing
-question is ruled (EIU is non-redistributable; V-Dem re-derivation is the
-open alternative — see `../TODO.md`, Data section). Nothing in this registry
-may depend on that ruling.
+EIU-derived values, ruled 2026-08-02: the index is non-redistributable and this
+registry is CC0, so cite-and-link was refused and the democracy/happiness
+analysis was re-derived on openly licensed OWID series instead
+(`vdem-2026-*`). Two entries keep the paper trail without carrying a value —
+`eiu-2026-democracy-index` as the comparator reference book-2 may cite-and-link,
+and `demo-happy-prior-analysis` as the provenance of the superseded prior
+analysis. Nothing in this registry depends on either.

@@ -1124,9 +1124,14 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   worked example's third act becomes "a verdict that tracks the instrument is not
   citable", which is a stronger methods lesson than the refutation it replaces. Part V's
   frame now runs this arc (landed 2026-08-03); the EIU-era sub-bullets below remain
-  the historical working reference. FLAG for the author: `democracy_vs_happiness_144.csv`
-  in the repo root (CC0 under the root LICENSE, committed pre-ruling) carries EIU
-  index values — same grounds as the registry ruling, worth a look.
+  the historical working reference. **[AUTHOR-GATED] The one open question is whether
+  `democracy_vs_happiness_144.csv` stays.** It sits in the repo root carrying EIU index
+  values, committed before the ruling and therefore irrevocably CC0 under the root
+  LICENSE — so the question is not internal policy but whether the repository may grant
+  CC0 over a non-redistributable index at all. Deleting it now would not withdraw the
+  grant, and git history keeps the file, so this is the author's legal call rather than
+  a cleanup. The registry records the provenance either way
+  (`demo-happy-prior-analysis`), and nothing in Part V depends on the file.
   - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
     floor on subjective wellbeing", from regressing |residual| on democracy score,
     p = 0.0004, which is exactly how convincing it looks — is the one claim it never
@@ -1145,9 +1150,6 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   - **Use the step sizes.** Authoritarian → Hybrid buys **+0.16** — nothing. Hybrid →
     Flawed +0.73. Flawed → Full +1.01. Partial democratisation does approximately
     nothing; the gain is concentrated at the top of the scale.
-  - Still to do from the ruling: record `demo-happy.txt` in the registry as "prior
-    analysis, independently re-derived", with the CSV's provenance pinned: WHR 2025 (2022–2024
-    average) merged with EIU 2025, 144 countries matched from EIU's 166 and WHR's 147.
 
 - **Publish the registry with the book, not just in the repo.** The formalism stays
   invisible, so what the reader verifies is the data — which only works if the registry is
