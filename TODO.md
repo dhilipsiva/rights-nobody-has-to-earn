@@ -371,29 +371,29 @@ this program without reporting reader evidence or a reader-result pass. Machine
 accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
 remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Build a source-bound reader-experience coverage ledger before rewriting.**
-  - For every derived chapter and substantive Part V passage record: social domain
-    and rule family; normal function and protective/corrective function; setting;
-    person posture (chooses, creates, cares, works, associates, requests, receives,
-    challenges, governs, or is acted upon); trajectory (works, contested, fails,
-    continuity/remedy, unresolved); roles/life stages/access conditions; and exact
-    rule/fact/pin or exempt-source basis. For any passage about a design, model,
-    argument, evidence, or reader defect, also project its stable defect/claim/
-    consequence IDs, defect disposition, response stage, assurance ceiling, and
-    receipt or unresolved claim restriction.
-  - Generate the report as a projection of the canonical full-society source and
-    fail verification on an unclassified passage or a completed constitutional row
-    with no reader-facing mapping. Counts may appear in the generated audit, never
-    as hand-maintained prose claims.
-  - **Done when:** every completed governed/provided domain has traceable ordinary-
-    operation, credible failure/abuse or boundary, and—where claimed—end-to-end
-    continuity/remedy cases in its assigned assurance route. Use Nibli pins for
-    formalized legal claims; use reviewed specifications, quantitative/dynamic
-    models, operational evidence or lived-experience methods for their assigned
-    claims. A protected private/civic domain needs traceable non-interference and
-    non-recording/non-compulsion limits plus recourse; ordinary-life illustration
-    remains non-evidentiary under the author-ruled narrative register. A non-justice
-    domain represented only through prison or custody fails.
+- [ ] **Close the coverage gaps the reader ledger now names.**
+  - **The ledger is built.** `reader-coverage-source.json` classifies all 86
+    derived-chapter and Part V passages by domain, rule family, ordinary or
+    protective function, setting, person posture, trajectory and basis;
+    `./generate.sh reader-coverage` projects `reader-coverage.md`. An
+    unclassified passage, a record with no passage, a basis that does not exist
+    or an unknown trajectory fails the check, and all four failures are
+    sabotage-tested. No domain is explained only through custody.
+  - **What it found, which is the remaining work.** Seven domains show ordinary
+    operation and no credible failure, abuse or boundary — borders and asylum,
+    collective and plurality rights, defence, ecology, emergency, knowledge and
+    culture, non-human animals. One shows the reverse: life course, family, care
+    and reproduction appears only under strain. The sets are asserted by
+    membership, so a gap cannot close or open unnoticed.
+  - **Done when:** every completed governed/provided domain has traceable
+    ordinary-operation, credible failure/abuse or boundary, and — where claimed —
+    end-to-end continuity/remedy coverage in its assigned assurance route. Use
+    Nibli pins for formalized legal claims; use reviewed specifications,
+    quantitative/dynamic models, operational evidence or lived-experience
+    methods for their assigned claims. A protected private/civic domain needs
+    traceable non-interference and non-recording/non-compulsion limits plus
+    recourse; ordinary-life illustration remains non-evidentiary under the
+    author-ruled narrative register.
 
 - [ ] **Replace confession-as-ending with claim-scoped resolution receipts.**
   - Whenever the book identifies a design, model, argument, evidence, or reader
@@ -1082,6 +1082,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh amendment
 ./generate.sh mobility
 ./generate.sh knowledge
+./generate.sh reader-coverage
 ./generate.sh record-power
 ./generate.sh scarcity
 ./generate.sh spine

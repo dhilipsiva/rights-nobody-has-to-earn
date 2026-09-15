@@ -59,7 +59,8 @@ Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
 `./generate.sh justice`, `./generate.sh knowledge`,
-`./generate.sh record-power`, `./generate.sh scarcity`,
+`./generate.sh reader-coverage`, `./generate.sh record-power`,
+`./generate.sh scarcity`,
 `./generate.sh public-safety`, `./generate.sh ecology`, and
 `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
@@ -1862,6 +1863,26 @@ watched — is **empirical and its route is unbuilt**. Nothing here tests any of
 it, and no formal proof or service record may be read as evidence of any of it.
 That is the second requirement, and it is a claim discipline rather than a
 check.
+
+**The reader-experience coverage ledger is landed — 2026-09-15.**
+`reader-coverage-source.json` classifies all 86 derived-chapter and Part V
+passages — domain, rule family, ordinary or protective function, setting, person
+posture, trajectory, basis — and `./generate.sh reader-coverage` projects
+`reader-coverage.md`. An unclassified passage, a record with no passage, a basis
+path that does not exist and an unknown trajectory each fail, all four
+sabotage-tested. No non-justice domain is explained only through custody.
+
+**Its value is the gaps, so the report prints them first.** Seven domains show
+ordinary operation and no credible failure, abuse or boundary — borders and
+asylum, collective and plurality rights, defence, ecology, emergency, knowledge
+and culture, non-human animals — and one, life course and family, appears only
+under strain. Both sets are asserted by membership, so neither can change
+quietly. The portfolio-rebalance and chapter-pattern items consume this table;
+the ledger does not close the gaps and does not claim to.
+
+It is a map of what a reader meets, never of what a reader understood. No reader
+has been asked anything, R6 remains unbuilt, and nothing in it is reader
+evidence.
 
 **The red-team index is landed — 2026-09-15.**
 `new-book-plans/book-1-red-team-index.md` has one entry per named strategic

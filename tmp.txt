@@ -236,3 +236,24 @@ The empirical half — autonomy, voice, non-humiliation, relatedness, retaliatio
 status competition, learned helplessness, care burden, the effects of being
 watched — is route-unbuilt. Nothing here tests it and no service record may be
 read as evidence of it.
+
+THE READER-EXPERIENCE COVERAGE LEDGER
+
+All 86 derived-chapter and Part V passages are classified by domain, rule
+family, ordinary or protective function, setting, person posture, trajectory and
+basis. `./generate.sh reader-coverage` projects reader-coverage.md. Four failure
+modes are sabotage-tested: an unclassified passage, a record with no passage, a
+basis path that does not exist, an unknown trajectory. No non-justice domain is
+explained only through custody.
+
+The point of it is the gaps, and it found eight. Seven domains show ordinary
+operation and no credible failure, abuse or boundary — borders and asylum,
+collective and plurality rights, defence, ecology, emergency, knowledge and
+culture, non-human animals. One is the reverse: life course, family, care and
+reproduction appears only under strain, never working. Both sets are asserted by
+membership so neither drifts.
+
+The tracker bullet is NOT deleted. Its done-when is the coverage outcome, not the
+ledger, and the ledger has just demonstrated that eight domains do not meet it.
+The bullet is rewritten to say the ledger is built and to name the eight; closing
+them is the portfolio-rebalance and chapter-pattern work.
