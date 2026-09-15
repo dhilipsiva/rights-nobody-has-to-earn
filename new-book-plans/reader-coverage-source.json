@@ -10,7 +10,8 @@
       "setting": "the closed evidence list",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "01-02",
@@ -22,7 +23,8 @@
       "setting": "official statistics and planning",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "01-03",
@@ -34,7 +36,8 @@
       "setting": "records, surveillance and automated support",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "01-04",
@@ -46,7 +49,8 @@
       "setting": "the evidence/conclusion split",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "01-05",
@@ -58,7 +62,8 @@
       "setting": "one auditor's report",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "01-06",
@@ -70,7 +75,8 @@
       "setting": "widening the record",
       "posture": "is acted upon",
       "trajectory": "contested",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "01-07",
@@ -82,7 +88,8 @@
       "setting": "a fabricated direct entry",
       "posture": "is acted upon",
       "trajectory": "unresolved",
-      "basis": "book-1/01-what-counts-as-evidence.pins.nibli"
+      "basis": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "02-01",
@@ -94,7 +101,8 @@
       "setting": "permanent answerability",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/02-public-answerability.pins.nibli"
+      "basis": "book-1/02-public-answerability.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "02-02",
@@ -106,7 +114,8 @@
       "setting": "a recalled official and the person who exposed them",
       "posture": "challenges",
       "trajectory": "works",
-      "basis": "book-1/02-public-answerability.pins.nibli"
+      "basis": "book-1/02-public-answerability.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "02-03",
@@ -118,7 +127,8 @@
       "setting": "answerability against capacity to act",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/02-public-answerability.pins.nibli"
+      "basis": "book-1/02-public-answerability.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "02-04",
@@ -130,7 +140,8 @@
       "setting": "answerability, capacity and credibility held apart",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/02-public-answerability.pins.nibli"
+      "basis": "book-1/02-public-answerability.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "02-05",
@@ -142,7 +153,8 @@
       "setting": "the growing pool of answerable people",
       "posture": "governs",
       "trajectory": "unresolved",
-      "basis": "book-1/02-public-answerability.pins.nibli"
+      "basis": "book-1/02-public-answerability.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "03-01",
@@ -154,7 +166,8 @@
       "setting": "the credential that used to be writable",
       "posture": "governs",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/03-who-holds-the-pen.pins.nibli"
+      "basis": "book-1/03-who-holds-the-pen.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "03-02",
@@ -166,7 +179,8 @@
       "setting": "recall and carried history",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/03-who-holds-the-pen.pins.nibli"
+      "basis": "book-1/03-who-holds-the-pen.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "03-03",
@@ -178,7 +192,8 @@
       "setting": "the cheaper of two doors",
       "posture": "governs",
       "trajectory": "contested",
-      "basis": "book-1/03-who-holds-the-pen.pins.nibli"
+      "basis": "book-1/03-who-holds-the-pen.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "03-04",
@@ -190,7 +205,8 @@
       "setting": "the examiner's standing pen",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/03-who-holds-the-pen.pins.nibli"
+      "basis": "book-1/03-who-holds-the-pen.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "03-05",
@@ -202,7 +218,8 @@
       "setting": "the seating fact the design is told",
       "posture": "governs",
       "trajectory": "unresolved",
-      "basis": "book-1/03-who-holds-the-pen.pins.nibli"
+      "basis": "book-1/03-who-holds-the-pen.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "04-01",
@@ -214,7 +231,8 @@
       "setting": "exposure by one's own victim",
       "posture": "challenges",
       "trajectory": "works",
-      "basis": "book-1/04-the-shield.pins.nibli"
+      "basis": "book-1/04-the-shield.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "04-02",
@@ -226,7 +244,8 @@
       "setting": "a guilty person inside the window",
       "posture": "challenges",
       "trajectory": "contested",
-      "basis": "book-1/04-the-shield.pins.nibli"
+      "basis": "book-1/04-the-shield.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "04-03",
@@ -238,7 +257,8 @@
       "setting": "a deceitful exposure found out",
       "posture": "challenges",
       "trajectory": "works",
-      "basis": "book-1/04-the-shield.pins.nibli"
+      "basis": "book-1/04-the-shield.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "04-04",
@@ -250,7 +270,8 @@
       "setting": "the window reopened by a second name",
       "posture": "challenges",
       "trajectory": "contested",
-      "basis": "book-1/04-the-shield.pins.nibli"
+      "basis": "book-1/04-the-shield.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "04-05",
@@ -262,7 +283,8 @@
       "setting": "the unbounded exposure surface",
       "posture": "challenges",
       "trajectory": "unresolved",
-      "basis": "book-1/04-the-shield.pins.nibli"
+      "basis": "book-1/04-the-shield.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "05-01",
@@ -274,7 +296,8 @@
       "setting": "two examiners from two bodies",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/05-voiding.pins.nibli"
+      "basis": "book-1/05-voiding.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "05-02",
@@ -286,7 +309,8 @@
       "setting": "guards pointing back at the examiner",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/05-voiding.pins.nibli"
+      "basis": "book-1/05-voiding.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "05-03",
@@ -298,7 +322,8 @@
       "setting": "a void carried across the record",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/05-voiding.pins.nibli"
+      "basis": "book-1/05-voiding.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "05-04",
@@ -310,7 +335,8 @@
       "setting": "independence found, not guessed from silence",
       "posture": "is acted upon",
       "trajectory": "unresolved",
-      "basis": "book-1/05-voiding.pins.nibli"
+      "basis": "book-1/05-voiding.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "06-01",
@@ -322,7 +348,8 @@
       "setting": "what clawback cannot reach",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/06-clawback.pins.nibli"
+      "basis": "book-1/06-clawback.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "06-02",
@@ -334,7 +361,8 @@
       "setting": "the student rule that was deleted",
       "posture": "is acted upon",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/06-clawback.pins.nibli"
+      "basis": "book-1/06-clawback.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "06-03",
@@ -346,7 +374,8 @@
       "setting": "a mark that crosses a period",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/06-clawback.pins.nibli"
+      "basis": "book-1/06-clawback.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "06-04",
@@ -358,7 +387,8 @@
       "setting": "a blunt instrument, deliberately",
       "posture": "is acted upon",
       "trajectory": "contested",
-      "basis": "book-1/06-clawback.pins.nibli"
+      "basis": "book-1/06-clawback.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "07-01",
@@ -370,7 +400,8 @@
       "setting": "a convicted person's standing",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli"
+      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "07-02",
@@ -382,7 +413,8 @@
       "setting": "the compile-time refusal of a belief prison",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli"
+      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "07-03",
@@ -394,7 +426,8 @@
       "setting": "the refusal is structural, not judgement",
       "posture": "is acted upon",
       "trajectory": "contested",
-      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli"
+      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "07-04",
@@ -406,7 +439,8 @@
       "setting": "rights that do not thin out",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli"
+      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "07-05",
@@ -418,7 +452,8 @@
       "setting": "standing without a roster",
       "posture": "receives",
       "trajectory": "works",
-      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli"
+      "basis": "book-1/07-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-01",
@@ -430,7 +465,8 @@
       "setting": "arrival and jurisdiction",
       "posture": "receives",
       "trajectory": "works",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-02",
@@ -442,7 +478,8 @@
       "setting": "a hearing for a denied right",
       "posture": "requests",
       "trajectory": "works",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "08-03",
@@ -454,7 +491,8 @@
       "setting": "air, water, soil and food",
       "posture": "receives",
       "trajectory": "works",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-04",
@@ -466,7 +504,8 @@
       "setting": "a credibly sentient animal",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-05",
@@ -478,7 +517,8 @@
       "setting": "learning, speech, belief, association and culture",
       "posture": "chooses",
       "trajectory": "works",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "08-06",
@@ -490,7 +530,8 @@
       "setting": "whether food reached anybody",
       "posture": "receives",
       "trajectory": "fails",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-07",
@@ -502,7 +543,8 @@
       "setting": "a genuine shortage",
       "posture": "receives",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-08",
@@ -514,7 +556,8 @@
       "setting": "where the anti-punishment firewall stops",
       "posture": "is acted upon",
       "trajectory": "contested",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "08-09",
@@ -526,7 +569,8 @@
       "setting": "the duty-bearer",
       "posture": "receives",
       "trajectory": "works",
-      "basis": "book-1/08-what-you-are-owed.pins.nibli"
+      "basis": "book-1/08-what-you-are-owed.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "09-01",
@@ -538,7 +582,8 @@
       "setting": "office integrity and political money",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "09-02",
@@ -550,7 +595,8 @@
       "setting": "an emergency declaration",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "09-03",
@@ -562,7 +608,8 @@
       "setting": "defence under civilian command",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "09-04",
@@ -574,7 +621,8 @@
       "setting": "a commons or future-conditions claim",
       "posture": "challenges",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "09-05",
@@ -586,7 +634,8 @@
       "setting": "the ballot a conviction does not take",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "09-06",
@@ -598,7 +647,8 @@
       "setting": "voiding as the harsher loss",
       "posture": "is acted upon",
       "trajectory": "contested",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "09-07",
@@ -610,7 +660,8 @@
       "setting": "collective membership and internal law",
       "posture": "associates",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "09-08",
@@ -622,7 +673,8 @@
       "setting": "the political home",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "09-09",
@@ -634,7 +686,8 @@
       "setting": "a child and the adulthood threshold",
       "posture": "is acted upon",
       "trajectory": "unresolved",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "09-10",
@@ -646,7 +699,8 @@
       "setting": "the franchise against the floor",
       "posture": "is acted upon",
       "trajectory": "fails",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "09-11",
@@ -658,7 +712,8 @@
       "setting": "what a supplied result can show",
       "posture": "is acted upon",
       "trajectory": "unresolved",
-      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "10-01",
@@ -670,7 +725,8 @@
       "setting": "recognition without a quantity",
       "posture": "works",
       "trajectory": "works",
-      "basis": "book-1/10-contribution.pins.nibli"
+      "basis": "book-1/10-contribution.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "10-02",
@@ -682,7 +738,8 @@
       "setting": "three doors closed by a voiding",
       "posture": "works",
       "trajectory": "contested",
-      "basis": "book-1/10-contribution.pins.nibli"
+      "basis": "book-1/10-contribution.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "10-03",
@@ -694,7 +751,8 @@
       "setting": "recognition for examining people",
       "posture": "works",
       "trajectory": "works",
-      "basis": "book-1/10-contribution.pins.nibli"
+      "basis": "book-1/10-contribution.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "10-04",
@@ -706,7 +764,8 @@
       "setting": "what the absence of arithmetic costs",
       "posture": "works",
       "trajectory": "unresolved",
-      "basis": "book-1/10-contribution.pins.nibli"
+      "basis": "book-1/10-contribution.pins.nibli",
+      "pattern": "private-civic"
     },
     {
       "id": "11-01",
@@ -718,7 +777,8 @@
       "setting": "severity and the domestic case",
       "posture": "is acted upon",
       "trajectory": "contested",
-      "basis": "book-1/11-where-people-are-put.pins.nibli"
+      "basis": "book-1/11-where-people-are-put.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "11-02",
@@ -730,7 +790,8 @@
       "setting": "a marker added to catch a reopened hole",
       "posture": "is acted upon",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/11-where-people-are-put.pins.nibli"
+      "basis": "book-1/11-where-people-are-put.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "11-03",
@@ -742,7 +803,8 @@
       "setting": "placement derived, never chosen",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/11-where-people-are-put.pins.nibli"
+      "basis": "book-1/11-where-people-are-put.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "11-04",
@@ -754,7 +816,8 @@
       "setting": "the combination with no destination",
       "posture": "is acted upon",
       "trajectory": "fails",
-      "basis": "book-1/11-where-people-are-put.pins.nibli"
+      "basis": "book-1/11-where-people-are-put.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "11-05",
@@ -766,7 +829,8 @@
       "setting": "confinement that houses",
       "posture": "is acted upon",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/11-where-people-are-put.pins.nibli"
+      "basis": "book-1/11-where-people-are-put.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "11-06",
@@ -778,7 +842,8 @@
       "setting": "shelter that arrives only through conviction",
       "posture": "receives",
       "trajectory": "fails",
-      "basis": "book-1/11-where-people-are-put.pins.nibli"
+      "basis": "book-1/11-where-people-are-put.pins.nibli",
+      "pattern": "constructive"
     },
     {
       "id": "12-01",
@@ -790,7 +855,8 @@
       "setting": "an approved amendment marked dead",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/12-changing-the-rules.pins.nibli"
+      "basis": "book-1/12-changing-the-rules.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "12-02",
@@ -802,7 +868,8 @@
       "setting": "the register that guards itself",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/12-changing-the-rules.pins.nibli"
+      "basis": "book-1/12-changing-the-rules.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "12-03",
@@ -814,7 +881,8 @@
       "setting": "one word shared by two machineries",
       "posture": "governs",
       "trajectory": "contested",
-      "basis": "book-1/12-changing-the-rules.pins.nibli"
+      "basis": "book-1/12-changing-the-rules.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "12-04",
@@ -826,7 +894,8 @@
       "setting": "a deliberately anti-democratic limit",
       "posture": "governs",
       "trajectory": "contested",
-      "basis": "book-1/12-changing-the-rules.pins.nibli"
+      "basis": "book-1/12-changing-the-rules.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "12-05",
@@ -838,7 +907,8 @@
       "setting": "the label against the exact change",
       "posture": "governs",
       "trajectory": "unresolved",
-      "basis": "book-1/12-changing-the-rules.pins.nibli"
+      "basis": "book-1/12-changing-the-rules.pins.nibli",
+      "pattern": "democratic"
     },
     {
       "id": "13-01",
@@ -850,7 +920,8 @@
       "setting": "arrest, detention, search and seizure",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/13-the-one-thing-taken.pins.nibli"
+      "basis": "book-1/13-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "13-02",
@@ -862,7 +933,8 @@
       "setting": "separated protective functions",
       "posture": "governs",
       "trajectory": "works",
-      "basis": "book-1/13-the-one-thing-taken.pins.nibli"
+      "basis": "book-1/13-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "13-03",
@@ -874,7 +946,8 @@
       "setting": "custody as a single deprivation",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/13-the-one-thing-taken.pins.nibli"
+      "basis": "book-1/13-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "13-04",
@@ -886,7 +959,8 @@
       "setting": "what custody does not describe",
       "posture": "is acted upon",
       "trajectory": "unresolved",
-      "basis": "book-1/13-the-one-thing-taken.pins.nibli"
+      "basis": "book-1/13-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "13-05",
@@ -898,7 +972,8 @@
       "setting": "current, case-bound custody authority",
       "posture": "is acted upon",
       "trajectory": "works",
-      "basis": "book-1/13-the-one-thing-taken.pins.nibli"
+      "basis": "book-1/13-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "13-06",
@@ -910,7 +985,8 @@
       "setting": "release review",
       "posture": "challenges",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/13-the-one-thing-taken.pins.nibli"
+      "basis": "book-1/13-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive"
     },
     {
       "id": "14-01",
@@ -922,7 +998,8 @@
       "setting": "an alarm that fires on everybody",
       "posture": "is acted upon",
       "trajectory": "fails",
-      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli"
+      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "14-02",
@@ -934,7 +1011,8 @@
       "setting": "an alarm that fired on the wrong people",
       "posture": "is acted upon",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli"
+      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "14-03",
@@ -946,7 +1024,8 @@
       "setting": "a breach that now creates a duty",
       "posture": "requests",
       "trajectory": "continuity-remedy",
-      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli"
+      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "14-04",
@@ -958,7 +1037,8 @@
       "setting": "vocabulary for its own violation",
       "posture": "requests",
       "trajectory": "unresolved",
-      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli"
+      "basis": "book-1/14-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records"
     },
     {
       "id": "15-01",
@@ -970,7 +1050,8 @@
       "setting": "Owen's New Harmony and the valuation joint",
       "posture": "chooses",
       "trajectory": "contested",
-      "basis": "exempt-element"
+      "basis": "exempt-element",
+      "pattern": "argument"
     },
     {
       "id": "15-02",
@@ -982,7 +1063,8 @@
       "setting": "the kibbutzim and the rotation joint",
       "posture": "works",
       "trajectory": "contested",
-      "basis": "exempt-element"
+      "basis": "exempt-element",
+      "pattern": "argument"
     },
     {
       "id": "15-03",
@@ -994,7 +1076,8 @@
       "setting": "ujamaa and the coercion joint",
       "posture": "is acted upon",
       "trajectory": "fails",
-      "basis": "exempt-element"
+      "basis": "exempt-element",
+      "pattern": "argument"
     },
     {
       "id": "15-04",
@@ -1006,7 +1089,8 @@
       "setting": "Mondragon and the capture joint",
       "posture": "governs",
       "trajectory": "contested",
-      "basis": "exempt-element"
+      "basis": "exempt-element",
+      "pattern": "argument"
     },
     {
       "id": "15-05",
@@ -1018,7 +1102,8 @@
       "setting": "Cybersyn, and four fates at the hands of a state",
       "posture": "governs",
       "trajectory": "contested",
-      "basis": "exempt-element"
+      "basis": "exempt-element",
+      "pattern": "argument"
     },
     {
       "id": "15-06",
@@ -1030,7 +1115,8 @@
       "setting": "why there is no score at the end",
       "posture": "chooses",
       "trajectory": "unresolved",
-      "basis": "exempt-element"
+      "basis": "exempt-element",
+      "pattern": "argument"
     }
   ]
 }

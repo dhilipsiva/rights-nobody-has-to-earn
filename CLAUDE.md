@@ -1921,6 +1921,18 @@ defence, ecology, emergency, knowledge and culture, and non-human animals are
 **carried by a boundary alone**, with no passage in which anything goes wrong.
 That set is asserted by membership.
 
+**The four chapter patterns are measured on the same source.** Every passage
+declares which it follows — constructive provision, protected private/civic
+agency, democratic agency, coercive rule, plus the two this book's own shape
+adds: the record chapters and Part V's argument. All six are exercised. Coercive
+passages are 18 of 86, and provision, private life and democratic agency
+together outnumber them more than two to one, which is what keeps the prisoner a
+stress test rather than the default inhabitant. A chapter being of one pattern is
+the design — each has a subject — so the assertions are about the book's shape,
+not the chapter's. **Whether a passage follows its pattern's own arc — seeks,
+responds, receipt, challenge, continuity, boundary — is prose review and is not
+checked.**
+
 **The one real gap is constitutional, not editorial.** Life course, family, care
 and reproduction appears only under strain because that baseline landed 106
 person-held barriers and no ordinary-operation interface — there is nothing

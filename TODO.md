@@ -449,24 +449,6 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     liveness case when it runs — see
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
 
-- [ ] **Use constructive, private/civic, democratic, and coercive chapter patterns,
-  not one failure-first formula.**
-  - Constructive provision: person seeks a floor → body/duty responds → accessible
-    receipt/effect → challenge if needed → continuity/remedy → boundary.
-  - Protected private/civic agency: person chooses, creates, associates, cares or
-    cooperates without permission → non-interference and enabling conditions →
-    narrow evidenced-harm rule if applicable → recourse against interference.
-  - Democratic/co-operative agency: people deliberate and organise → authenticated,
-    bounded collective choice → implementation → feedback, challenge and peaceful
-    correction/replacement.
-  - Coercive/protective rule: power is proposed → lawful trigger/evidence → limit
-    → independent review/appeal → correction/end → boundary.
-  - Show the rule working before or beside its strongest credible failure. Do not
-    force an attack section where the rule family supports no such claim.
-  - Prefer chapter-local reminders to long backward cross-references. Preserve the
-    record-people's deliberately flat inner lives; do not invent biographies,
-    emotions or composite citizens as evidence.
-
 - [ ] **Finish machine-checkable accessible navigation and visual validation.**
   - The annotated contents, concise glossary, role/body and case indexes,
     domain-to-chapter map, and selected text-equivalent diagrams landed with

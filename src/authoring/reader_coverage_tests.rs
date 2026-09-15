@@ -113,3 +113,36 @@ fn no_domain_is_explained_only_through_custody() {
         );
     }
 }
+
+#[test]
+fn the_book_is_not_one_failure_first_formula() {
+    let context = Context::discover().expect("repository");
+    let records = records(&context).expect("ledger source");
+    let counted = |pattern: &str| {
+        records
+            .iter()
+            .filter(|record| record.pattern == pattern)
+            .count()
+    };
+    for pattern in PATTERNS {
+        assert!(
+            counted(pattern) > 0,
+            "no passage follows the '{pattern}' pattern, so the book has \
+             collapsed onto fewer shapes than the ruling names"
+        );
+    }
+    let coercive = counted("coercive");
+    let agency = counted("constructive") + counted("private-civic") + counted("democratic");
+    assert!(
+        coercive * 3 < records.len(),
+        "{coercive} of {} passages are coercive. The refusal is one \
+         failure-first formula for everything.",
+        records.len()
+    );
+    assert!(
+        agency > coercive * 2,
+        "passages of provision, private life and democratic agency ({agency}) no \
+         longer outweigh coercive ones ({coercive}) by the margin that keeps the \
+         prisoner a stress test rather than the default inhabitant"
+    );
+}

@@ -61,8 +61,21 @@ pub(crate) struct Record {
     pub(crate) setting: String,
     pub(crate) posture: String,
     pub(crate) trajectory: String,
+    pub(crate) pattern: String,
     pub(crate) basis: String,
 }
+
+/// The four chapter patterns the ruling names, plus the two this book's own
+/// shape adds: the record chapters, which are about what may be written at all,
+/// and Part V's argument, which is exempt from derivation.
+pub(crate) const PATTERNS: [&str; 6] = [
+    "constructive",
+    "private-civic",
+    "democratic",
+    "coercive",
+    "records",
+    "argument",
+];
 
 #[derive(Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -139,6 +152,12 @@ fn validate(context: &Context, records: &[Record]) -> Result<(), Error> {
                 record.id, record.trajectory
             )));
         }
+        if !PATTERNS.contains(&record.pattern.as_str()) {
+            return Err(Error::new(format!(
+                "{}: unknown pattern {}",
+                record.id, record.pattern
+            )));
+        }
     }
     Ok(())
 }
@@ -212,15 +231,34 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
             let _ = writeln!(out, "| {domain} | {works} | {trouble} | {bound} |");
         }
     }
+    out.push_str(
+        "\n## Chapter patterns\n\n\
+         The refusal here is one failure-first formula for everything. A\n\
+         chapter being of one pattern is the design — each has a subject — so\n\
+         what matters is the book's shape, not the chapter's.\n\n\
+         | Pattern | Passages |\n| --- | ---: |\n",
+    );
+    for pattern in PATTERNS {
+        let count = records
+            .iter()
+            .filter(|record| record.pattern == pattern)
+            .count();
+        let _ = writeln!(out, "| {pattern} | {count} |");
+    }
+    out.push_str(
+        "\nWhether a passage follows its pattern's own arc — seeks, responds,\n\
+         receipt, challenge, continuity, boundary — is prose review and is not\n\
+         checked here.\n",
+    );
     out.push_str("\n## Every domain\n\n| Domain | Ordinary | Strain | Boundary |\n| --- | ---: | ---: | ---: |\n");
     for (domain, (works, trouble, bound)) in &rows {
         let _ = writeln!(out, "| {domain} | {works} | {trouble} | {bound} |");
     }
-    out.push_str("\n## Every passage\n\n| ID | Chapter | Section | Domain | Family | Function | Setting | Posture | Trajectory | Boundary | Basis |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n");
+    out.push_str("\n## Every passage\n\n| ID | Chapter | Section | Domain | Family | Function | Setting | Posture | Trajectory | Boundary | Pattern | Basis |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n");
     for record in records {
         let _ = writeln!(
             out,
-            "| {} | {} | {} | {} | {} | {} | {} | {} | {} | {} | `{}` |",
+            "| {} | {} | {} | {} | {} | {} | {} | {} | {} | {} | {} | `{}` |",
             record.id,
             record.chapter.trim_start_matches("book-1/"),
             record.section,
@@ -235,6 +273,7 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
             } else {
                 "no"
             },
+            record.pattern,
             record.basis
         );
     }

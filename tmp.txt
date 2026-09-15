@@ -323,3 +323,19 @@ one-sided closure of the record — and they are now receipted.
 
 Five of twelve are resolved-for-claim. The generator refuses a table in which
 everything is resolved, because this design has never been in that state.
+
+CHAPTER PATTERNS, MEASURED ON THE SAME SOURCE
+
+Every passage now declares which of the four ruled patterns it follows, plus the
+two this book's own shape adds: the record chapters, and Part V's argument. All
+six are exercised. Coercive passages are 18 of 86, and provision, private life
+and democratic agency together outnumber them more than two to one — which is
+what keeps the prisoner a stress test rather than the default inhabitant.
+
+A chapter being of one pattern is the design rather than a defect: each chapter
+has a subject, and chapters 4 and 13 are the coercive ones on purpose. So the
+assertions are about the book's shape, not the chapter's.
+
+What is NOT checked, and the report says so: whether a passage follows its
+pattern's own arc — seeks, responds, receipt, challenge, continuity, boundary.
+That is prose review.
