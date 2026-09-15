@@ -1065,11 +1065,14 @@ may not become the sole custodian of the book or of its future development.
   the pin suite, the counterfactual classes, the defect markers — the methodology made
   citable. Coordinate with the method part rather than duplicating it; the paper cites
   the book, the book does not depend on the paper.
-- **Make run-it-yourself true as a launch claim.** `verify.sh` and its `--only`
-  mode are the core artifact, but the script currently defaults to an adjacent,
-  mutable nibli checkout. Supply and test a pinned two-checkout or bootstrap path
-  from clean inputs, and publish the exact engine commit; only then say “clone,
-  one command, the pins pass.”
+- **Say run-it-yourself only in the shape the path actually supports.** The
+  reproducible path exists: `engine.pin` publishes the exact engine revision and
+  `./bootstrap.sh` puts it beside a fresh clone, tested from clean inputs. It is
+  deliberately two commands rather than one, because a bootstrap that silently
+  reset an engine checkout somebody was working in would be worse than a
+  mismatch, so it reports and stops instead. The launch sentence has to match
+  that: “clone, bootstrap, verify”, never “clone, one command”. Revisit only if
+  the engine ever stops being developed alongside the book.
 - **Print-on-demand for the Gate C-complete expansion only (D2).** A priced,
   well-made
   physical edition of a free text. Quality is the lever and revenue a side

@@ -1,0 +1,11 @@
+# The exact Nibli engine revision this repository verifies against.
+#
+# `./bootstrap.sh` puts that revision next to this checkout; `./verify.sh`
+# builds the native runner from whatever sits at ../nibli and adds no gate of
+# its own. Verification checks pins and contradictions, nothing else, so this
+# file is a published input rather than a hash anything enforces.
+#
+# Change it in the same commit that records a measurement against the new
+# engine, so the number in README.md and the revision here never disagree.
+repository https://github.com/dhilipsiva/nibli.git
+revision   979fe8b038cb681851285e01481419a0fc1251a4

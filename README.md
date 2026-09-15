@@ -33,11 +33,27 @@ destination.
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
 | `verify.sh` | Run the pins and contradiction checks. |
 | `generate.sh` | Explicitly regenerate authored rule, fixture, pin, or spine outputs. |
+| `bootstrap.sh` | Put the pinned Nibli engine beside this checkout. |
+| `engine.pin` | The exact engine revision this repository verifies against. |
 
 ## Verify
 
-Clone the Nibli source repository beside this checkout, as required by the Cargo
-path dependencies. From this repository's root:
+The verifier builds against a Nibli source checkout beside this one, as the Cargo
+path dependencies require. From clean inputs:
+
+```bash
+git clone https://github.com/dhilipsiva/rights-nobody-has-to-earn.git
+cd rights-nobody-has-to-earn
+./bootstrap.sh
+./verify.sh
+```
+
+`bootstrap.sh` clones the engine at the revision named in `engine.pin` and
+checks it out detached. It never edits an engine checkout that is already there:
+the engine is developed alongside this book, so it reports what revision sits
+beside you and whether it matches the pin, and leaves the decision to you. The
+pinned revision is a published input, not a gate — `verify.sh` builds whatever
+is at `../nibli` and checks pins and contradictions, nothing else.
 
 ```bash
 ./verify.sh
@@ -73,7 +89,8 @@ the first build compiles the bundled C library using a C compiler and Make
 allocator. The explicit authoring executable is unchanged.
 
 Latest full run measured on 2026-09-15 with four workers and the release binary
-already built: all 77,902 pins across 13,566 cases passed, with complete formal
+already built against the pinned engine `979fe8b`: all 77,902 pins across 13,566
+cases passed, with complete formal
 contradiction scans and no findings, in 824.25 seconds (13m44.25s); nine
 existing known-defect pins still reproduce. User CPU was 3,174.52 seconds,
 system CPU 77.29 seconds, utilisation 394%, and peak resident memory
