@@ -918,13 +918,6 @@ private life, or control of every external condition.
     in this wave at a fortieth of the cost; the counted-claims gate stopped "one thing"
     twice more, which is now four times across two waves.
 
-- **Add `LICENSE-MIT` + `LICENSE-APACHE` — now unblocked.** The condition ("when the
-  harness and fetchers are written") is met: `registry/check.py`,
-  `registry/fetch/worldbank.py` and `new-book-plans/6-claim-table.py` exist, the first
-  two already carrying `SPDX-License-Identifier: MIT OR Apache-2.0` headers. Fetch both
-  canonical texts (per `LICENSING.md`), mirror nibli's layout, and add the SPDX header
-  to `6-claim-table.py` and `verify.sh` in the same commit.
-
 ---
 
 ## Reach — delivery and edition boundary ruled 2026-08-04
