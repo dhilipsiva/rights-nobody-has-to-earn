@@ -54,6 +54,31 @@
 # a restriction stands and what is owed while it has not been shown; they
 # establish no publication, translation, answer or reader.
 #
+# "When there is genuinely not enough" rests on these actual-constitution
+# scarcity cases:
+#   tests/pins/scarcity/finding/positive/expect.pins.nibli
+#   tests/pins/scarcity/finding/without-ScarcityAlternativesScope/expect.pins.nibli
+#   tests/pins/scarcity/finding/without-ScarcityNotAFailureScope/expect.pins.nibli
+#   tests/pins/scarcity/finding/manager-review/expect.pins.nibli
+#   tests/pins/scarcity/allocation/positive/expect.pins.nibli
+#   tests/pins/scarcity/allocation/without-ScarcityEqualShareScope/expect.pins.nibli
+#   tests/pins/scarcity/allocation/without-ScarcityUselessDivisionRefusalScope/expect.pins.nibli
+#   tests/pins/scarcity/allocation/without-authorization/expect.pins.nibli
+#   tests/pins/scarcity/shortfall/positive/expect.pins.nibli
+#   tests/pins/scarcity/priority/forbidden-Wealth/expect.pins.nibli
+#   tests/pins/scarcity/priority/counterfactual-forbidden-wealth/expect.pins.nibli
+#   tests/pins/scarcity/priority/false-scarcity-stops-the-allocation/expect.pins.nibli
+#   tests/pins/scarcity/priority/finding-does-not-cover-another-resource/expect.pins.nibli
+#   tests/pins/scarcity/priority/request-and-certified-nonresponse/expect.pins.nibli
+#   tests/pins/scarcity/priority/forged-conclusions/expect.pins.nibli
+# Every forbidden priority key and every refused ground has its own named case
+# beside these; the per-scope omission, unauthorized-attester, stale and
+# conflicting-value cases stay separate. They establish what must be true before
+# scarcity may be acted on and what stays owed afterwards; they hold no stock,
+# forecast no supply and prove no procurement, delivery or repair.
+# Full interface and evidence limits:
+#   new-book-plans/book-1-scarcity-and-conflict-contract.md
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/08-what-you-are-owed.pins.nibli
 #   ./verify.sh          # all substantive pins and formal contradiction checks

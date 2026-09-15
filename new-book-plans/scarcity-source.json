@@ -1,0 +1,424 @@
+{
+  "common_fields": [
+    [
+      "$resource",
+      "ScarcityResourceScope"
+    ],
+    [
+      "$population",
+      "ScarcityAffectedPopulationScope"
+    ],
+    [
+      "$manager",
+      "ScarcityManagerScope"
+    ],
+    [
+      "$version",
+      "ScarcitySourceVersionScope"
+    ],
+    [
+      "$period",
+      "ScarcityEvidencePeriodScope"
+    ],
+    [
+      "$jurisdiction",
+      "ScarcityJurisdictionScope"
+    ],
+    [
+      "$scope",
+      "ScarcityLegalScope"
+    ],
+    [
+      "$end",
+      "ScarcitySourceBoundEndScope"
+    ],
+    [
+      "CurrentReconciledScarcityRecord",
+      "ScarcityCurrentDispositionScope"
+    ],
+    [
+      "$reader",
+      "ScarcityChallengeReaderScope"
+    ],
+    [
+      "$alternate",
+      "ScarcityIndependentAlternateScope"
+    ],
+    [
+      "$challenge",
+      "ScarcityChallengeScope"
+    ],
+    [
+      "$correction",
+      "ScarcityCorrectionScope"
+    ],
+    [
+      "$remedy",
+      "ScarcityRemedyScope"
+    ],
+    [
+      "ConstitutionalReviewOrIndependentSubstitute",
+      "ScarcityFinalReviewScope"
+    ],
+    [
+      "NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum",
+      "ScarcityCorridorScope"
+    ]
+  ],
+  "vocabularies": [
+    [
+      "ScarcityGroundScope",
+      "ScarcityGroundVocabulary",
+      [
+        "AuthenticatedResourceAndPopulationSpecificPhysicalShortage"
+      ]
+    ],
+    [
+      "ScarcityMitigationKeyScope",
+      "ScarcityMitigationKeyVocabulary",
+      [
+        "Urgency",
+        "Accessibility",
+        "ImminentIrreversibleHarm",
+        "ContinuityHarm",
+        "IndividualizedResourceSpecificBenefitAfterAccommodation"
+      ]
+    ],
+    [
+      "ForbiddenPriorityKeyScope",
+      "ForbiddenPriorityKeyVocabulary",
+      [
+        "Wealth",
+        "Contribution",
+        "Recognition",
+        "Conviction",
+        "FamilyStatus",
+        "DisabilityStereotype",
+        "ExpectedProductivity",
+        "SocialUsefulness",
+        "GeneralizedLifespan",
+        "PoliticalFavour",
+        "Nationality",
+        "Citizenship",
+        "ImmigrationStatus",
+        "Documentation",
+        "MannerOfEntry"
+      ]
+    ],
+    [
+      "FalseScarcityKindScope",
+      "FalseScarcityKindVocabulary",
+      [
+        "BudgetChoice",
+        "PriceExclusion",
+        "AdministrativeDelay",
+        "ArtificialWithholding",
+        "Monopoly",
+        "ProviderFailure",
+        "RefusalToProcure"
+      ]
+    ],
+    [
+      "ScarcityConflictKindScope",
+      "ScarcityConflictKindVocabulary",
+      [
+        "PropertyVersusFloorOrCommons",
+        "ExpressionVersusEvidencedHarm",
+        "PrivacyVersusPublicAccountability",
+        "LocalChoiceVersusPortability",
+        "PresentClaimVersusFutureConditions",
+        "EmergencyActionVersusNonDerogableProtection"
+      ]
+    ],
+    [
+      "ScarcityDefectKindScope",
+      "ScarcityDefectKindVocabulary",
+      [
+        "RenamedReducedRationAsMinimum",
+        "ForbiddenPriorityKeyUsed",
+        "UselessEqualDivision",
+        "UnrecordedShortfall",
+        "MissingAlternativesEvidence",
+        "StaleFinding",
+        "NoSourceBoundEnd",
+        "BlockedChallengeOrReview"
+      ]
+    ]
+  ],
+  "contracts": [
+    {
+      "id": "finding",
+      "kind": "ReviewedPhysicalScarcityFinding",
+      "fields": [
+        [
+          "$ground",
+          "ScarcityGroundScope"
+        ],
+        [
+          "AlternativesReservesSubstitutionCoordinationReplenishmentAndAssistanceConsidered",
+          "ScarcityAlternativesScope"
+        ],
+        [
+          "AuthenticatedContestableResourceAndPopulationSpecificEvidence",
+          "ScarcityEvidenceScope"
+        ],
+        [
+          "NotBudgetPriceDelayWithholdingMonopolyProviderFailureOrRefusalToProcure",
+          "ScarcityNotAFailureScope"
+        ],
+        [
+          "PublicReasonsAccessibleNoticeAndIndependentReview",
+          "ScarcityReasonsScope"
+        ],
+        [
+          "FreshReassessmentEvidenceAndSourceBoundEnd",
+          "ScarcityReassessmentScope"
+        ],
+        [
+          "NoStandingEmergencyPowerFollows",
+          "ScarcityNoStandingPowerScope"
+        ]
+      ],
+      "heads": [
+        "authority($manager, AdministerPhysicalScarcity, $record)",
+        "obliged($manager, PublishScarcityEvidenceReasonsAndReassessment, $record)",
+        "obliged($reader, HearScarcityChallengeAndCorrect, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "allocation",
+      "kind": "ReviewedScarcityAllocation",
+      "fields": [
+        [
+          "$authorization",
+          "ScarcityFindingAuthorizationScope"
+        ],
+        [
+          "$mitigation_key",
+          "ScarcityMitigationKeyScope"
+        ],
+        [
+          "EveryConstitutionalMinimumPreservedWhereverUsableSupplyPermits",
+          "ScarcityPreservationScope"
+        ],
+        [
+          "EffectiveUsableEqualShareWhereOneExists",
+          "ScarcityEqualShareScope"
+        ],
+        [
+          "NeverDivideAThresholdResourceIntoEquallyUselessPieces",
+          "ScarcityUselessDivisionRefusalScope"
+        ],
+        [
+          "NoForbiddenPriorityKeyAndNoPersonalWorthRanking",
+          "ScarcityForbiddenKeyRefusalScope"
+        ],
+        [
+          "RotationOrLotteryOnlyAmongMateriallyEqualClaims",
+          "ScarcityTieBreakScope"
+        ],
+        [
+          "InterimAlternativesAndContinuityRouteSurvive",
+          "ScarcityContinuityScope"
+        ]
+      ],
+      "heads": [
+        "permits($manager, AllocateUnderPhysicalScarcity, $record)",
+        "obliged($manager, RecordEveryUnmetPortionAsFailure, $record)"
+      ],
+      "extra": [],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "shortfall",
+      "kind": "ReviewedScarcityShortfall",
+      "fields": [
+        [
+          "$authorization",
+          "ScarcityFindingAuthorizationScope"
+        ],
+        [
+          "$unmet",
+          "ScarcityUnmetPortionScope"
+        ],
+        [
+          "RecordedAsFailureNeverAsARedefinedMinimum",
+          "ScarcityShortfallDispositionScope"
+        ],
+        [
+          "ContinuityRepairAndReassessmentOwed",
+          "ScarcityRepairScope"
+        ],
+        [
+          "NoAdverseFactAboutThePersonWhoWentWithout",
+          "ScarcityShortfallLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($manager, RepairAndReassessTheRecordedShortfall, $record)",
+        "obliged($reader, VerifyTheShortfallWasRecordedAsFailure, $record)"
+      ],
+      "extra": [],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "false-scarcity",
+      "kind": "ReviewedFalseScarcityFinding",
+      "fields": [
+        [
+          "$target",
+          "ScarcityAffectedFindingScope"
+        ],
+        [
+          "$false_kind",
+          "FalseScarcityKindScope"
+        ],
+        [
+          "IndependentlyEstablishedAsAChoiceRatherThanAShortage",
+          "ScarcityFalseDispositionScope"
+        ],
+        [
+          "FloorAndContinuityRoutesSurviveTheFinding",
+          "ScarcityFalseLimitScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, ScarcityFindingAuthorization)",
+        "obliged($reader, TreatFalseScarcityAsFailureNotShortage, $target)",
+        "obliged($manager, RestoreOrProcureWhatWasWithheld, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, ScarcitySourceAuthority, $target)",
+        "observe($target_source, $target, $resource, ScarcityResourceScope)",
+        "observe($target_source, $target, $population, ScarcityAffectedPopulationScope)",
+        "observe($target_source, $target, $manager, ScarcityManagerScope)",
+        "observe($target_source, $target, $version, ScarcitySourceVersionScope)",
+        "observe($target_source, $target, $period, ScarcityEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, ScarcityJurisdictionScope)",
+        "observe($target_source, $target, $scope, ScarcityLegalScope)",
+        "observe($target_source, $target, $end, ScarcitySourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "conflict",
+      "kind": "ReviewedCrossDomainConflict",
+      "fields": [
+        [
+          "$conflict_kind",
+          "ScarcityConflictKindScope"
+        ],
+        [
+          "$resolution",
+          "ScarcityResolutionScope"
+        ],
+        [
+          "TypedRuleStatedInAdvanceNotAHiddenPriority",
+          "ScarcityTypedRuleScope"
+        ],
+        [
+          "NonDerogableProtectionsAndTheCorridorSurvive",
+          "ScarcityCorridorSurvivalScope"
+        ],
+        [
+          "PublicReasonsChallengeAndIndependentReview",
+          "ScarcityReasonsScope"
+        ]
+      ],
+      "heads": [
+        "obliged($reader, ResolveTheNamedConflictOnItsStatedTypedRule, $record)",
+        "obliged($manager, PublishTheConflictResolutionAndItsBasis, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "defect",
+      "kind": "ReviewedScarcityDefect",
+      "fields": [
+        [
+          "$target",
+          "ScarcityAffectedUseScope"
+        ],
+        [
+          "$defect",
+          "ScarcityDefectKindScope"
+        ],
+        [
+          "IndependentlyEstablishedIssueMakesThisExactUseUnsupported",
+          "ScarcityDefectDispositionScope"
+        ],
+        [
+          "NoAdverseClaimantFactOrAutomaticIndividualRemedy",
+          "ScarcityDefectLimitScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, ScarcityFindingAuthorization)",
+        "obliged($reader, ReviewAndCorrectUnsupportedScarcityUse, $target)",
+        "obliged($manager, PublishScarcityCorrection, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, ScarcitySourceAuthority, $target)",
+        "observe($target_source, $target, $resource, ScarcityResourceScope)",
+        "observe($target_source, $target, $population, ScarcityAffectedPopulationScope)",
+        "observe($target_source, $target, $manager, ScarcityManagerScope)",
+        "observe($target_source, $target, $version, ScarcitySourceVersionScope)",
+        "observe($target_source, $target, $period, ScarcityEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, ScarcityJurisdictionScope)",
+        "observe($target_source, $target, $scope, ScarcityLegalScope)",
+        "observe($target_source, $target, $end, ScarcitySourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "nonresponse",
+      "kind": "CertifiedScarcityReaderNonresponse",
+      "fields": [
+        [
+          "$target",
+          "ScarcityAffectedRequestScope"
+        ],
+        [
+          "$requester",
+          "ScarcityRequesterScope"
+        ],
+        [
+          "AuthenticatedNoticeAndRealOpportunityToAct",
+          "ScarcityNoticeOpportunityScope"
+        ],
+        [
+          "$deadline",
+          "ScarcitySourceBoundDeadlineScope"
+        ],
+        [
+          "IndependentPositiveReaderNonresponseFinding",
+          "ScarcityNonresponseDispositionScope"
+        ],
+        [
+          "NoSilenceAsApprovalOrAdverseClaimantFact",
+          "ScarcityNonresponseLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($alternate, ReviewScarcityRequestAndSecureIndependentRemedy, $target)"
+      ],
+      "extra": [
+        "~($source = $reader)",
+        "~($evidence = $reader)",
+        "~($review = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    }
+  ]
+}

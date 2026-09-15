@@ -59,8 +59,9 @@ Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
 `./generate.sh justice`, `./generate.sh knowledge`,
-`./generate.sh record-power`, `./generate.sh public-safety`,
-`./generate.sh ecology`, and `./generate.sh spine`. They write semantic
+`./generate.sh record-power`, `./generate.sh scarcity`,
+`./generate.sh public-safety`, `./generate.sh ecology`, and
+`./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
 
@@ -1238,6 +1239,49 @@ machine help" is inserted in Book 1 chapter 1, `session-drafted,
 author-approved under delegated approval (2026-09-13)`;
 `new-book-plans/record-power-reader-draft.md` retains the wording. Controlling
 record: `new-book-plans/book-1-record-power-contract.md`.
+
+#### Physical scarcity, priority, and cross-domain conflict — 2026-09-15
+
+**Implemented under the ratified scarcity ordering; no new author ruling was
+taken, and none may be taken silently.** `FSPOW_081` and `FSPOW_082` already
+carried a finding and an allocation with their review and temporal machinery.
+What the rulings say most insistently and the formal source did not carry is now
+there: the refused grounds by name — budget choice, price exclusion,
+administrative delay, artificial withholding, monopoly, provider failure,
+refusal to procure, each with its own case and each withholding the finding it
+targets; the single admissible ground of authenticated, contestable,
+resource-and-population-specific evidence after alternatives, reserves,
+substitution, coordination, replenishment and assistance; and the express
+statement that no standing emergency power follows.
+
+**Allocation rejoins the actual finding**, so a shortage found for one resource
+or population licenses nothing about another. It requires every minimum
+preserved wherever usable supply permits, an effective usable equal share where
+one exists, never dividing a threshold resource into equally useless pieces, and
+rotation or lottery only among materially equal claims. The permitted mitigation
+keys are closed — urgency, accessibility, imminent irreversible harm, continuity
+harm, individualized resource-specific benefit after accommodation — and the
+**fifteen forbidden keys are declared and each has its own case**: wealth,
+contribution, recognition, conviction, family status, disability stereotype,
+expected productivity, social usefulness, generalized lifespan, political
+favour, nationality, citizenship, immigration status, documentation and manner
+of entry. A recorded shortfall is recorded as failure, never as a redefined
+minimum, and is no adverse fact about the person who went without.
+
+The six named cross-domain conflicts — property against floor or commons,
+expression against evidenced harm, privacy against public accountability, local
+choice against portability, present claims against future conditions, emergency
+action against non-derogable protection — each resolve on a rule stated in
+advance, with the corridor's survival on the record. Each has its own case.
+
+The exact reader section "When there is genuinely not enough" is inserted in
+Book 1 chapter 8, `session-drafted, author-approved under delegated approval
+(2026-09-13)`; `new-book-plans/scarcity-reader-draft.md` retains the wording.
+Book 2 owns evidence collection and assurance, inventories, forecasts,
+quantities, reserves, production, capacity, queues and workflows. Nibli counts
+no stock, forecasts no supply, measures no shortage and proves no procurement,
+delivery, restoration or repair. Controlling record:
+`new-book-plans/book-1-scarcity-and-conflict-contract.md`.
 
 #### Surviving guardrails and the democratic corridor
 

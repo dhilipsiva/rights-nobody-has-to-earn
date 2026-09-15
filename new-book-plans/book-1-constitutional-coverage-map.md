@@ -33,6 +33,26 @@ opening note, Part V and method aligned. These verified case-level
 interfaces supersede the historical absence descriptions below to their
 bounded extent, not as evidence of an operating institution or real protection.
 
+## Scarcity and cross-domain conflict implementation — 2026-09-15
+
+[Physical scarcity, priority, and cross-domain conflict](book-1-scarcity-and-conflict-contract.md)
+adds what the ratified scarcity ordering states and the formal source did not
+carry: the refused grounds by name, the single admissible ground, the equal-share
+and useless-division rules, the fifteen forbidden priority keys each with its own
+case, the shortfall recorded as failure rather than as a redefined minimum, and
+the six named cross-domain conflicts resolving on rules stated in advance. The
+semantic input is `scarcity-source.json` and the explicit `scarcity` generator
+produces its rules and cases.
+
+It does not replace `FSPOW_081` and `FSPOW_082`, which already carried a finding
+and an allocation with their review, alternatives and temporal machinery, nor the
+public-safety binding of rationing to an unchanged finding. The exact reader
+section "When there is genuinely not enough" is inserted in Book 1 chapter 8;
+its supply is `session-drafted, author-approved under delegated approval
+(2026-09-13)`, and `scarcity-reader-draft.md` retains the wording. Book 2 keeps
+evidence assurance, inventories, forecasts, quantities, reserves, production,
+capacity, queues and workflows.
+
 ## Record-power implementation — 2026-09-15
 
 [Records, surveillance and automated power](book-1-record-power-contract.md)

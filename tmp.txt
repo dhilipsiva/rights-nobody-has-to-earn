@@ -142,3 +142,29 @@ AMENDMENT-ENACTMENT is partial. Membership of those three sets is asserted, so
 retrofitting an older family is a ruled change rather than a silent drift.
 
 An unguarded completion injected into a family block trips both tests.
+
+THE SCARCITY AND CONFLICT FAMILY
+
+`scarcity-source.json` plus `./generate.sh scarcity` write 124 rules and 362
+isolated cases. Seven contracts: reviewed physical-scarcity finding, its
+dependent allocation and recorded shortfall, the false-scarcity finding, the
+typed cross-domain conflict, the reviewed defect and the certified nonresponse.
+
+The point of the family is the naming. FSPOW_081 and FSPOW_082 already carried a
+finding and an allocation with their review machinery; what the rulings say most
+insistently and the source did not carry was the list. Seven refused grounds,
+each with its own case and each withholding the finding it targets. Fifteen
+forbidden priority keys, each with its own case proving it allocates nothing.
+Six named cross-domain conflicts, each resolving on a rule stated in advance.
+The equal-share rule and its refusal to divide a threshold resource into useless
+pieces. The shortfall recorded as failure rather than as a redefined minimum.
+
+The reader section "When there is genuinely not enough" is inserted in chapter 8
+between "Owed is not the same as delivered" and "Where the protection stops".
+
+MEASUREMENT AFTER THREE FAMILIES
+
+All 82,279 pins across 14,885 cases pass with complete contradiction checks and
+no findings in 821.68 seconds, nine known defects still reproducing. The three
+families added 1,319 cases without moving the total out of its noise band, which
+is what the profile predicts.

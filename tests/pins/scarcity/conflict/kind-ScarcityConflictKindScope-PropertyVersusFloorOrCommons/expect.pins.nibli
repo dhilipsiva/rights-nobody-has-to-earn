@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+
+? obliged(ScarcityCaseReader, ResolveTheNamedConflictOnItsStatedTypedRule, ScarcityCaseRecord).
+# => TRUE
+? obliged(ScarcityCaseManager, PublishTheConflictResolutionAndItsBasis, ScarcityCaseRecord).
+# => TRUE
+? complete(ScarcityCaseRecord, ReviewedCrossDomainConflict, ScarcityCaseResource).
+# => TRUE

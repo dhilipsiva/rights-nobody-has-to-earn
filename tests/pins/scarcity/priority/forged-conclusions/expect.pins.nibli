@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+:refuse reasoning /declared derived-only/
+authority(ScarcityManager, AdministerPhysicalScarcity, ScarcityForgedRecord).
+:refuse reasoning /declared derived-only/
+complete(ScarcityForgedRecord, ReviewedPhysicalScarcityFinding, ScarcityResource).
+:refuse reasoning /declared derived-only/
+permits(ScarcityManager, AllocateUnderPhysicalScarcity, ScarcityForgedRecord).
+:refuse reasoning /declared derived-only/
+contradict(ScarcityForgedRecord, ScarcityFindingAuthorization).

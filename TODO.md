@@ -323,13 +323,13 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
-  - Current measurement, 2026-09-15 against companion `979fe8b`: all 81,028
-    pins across 14,523 cases pass with complete contradiction checks and no
-    findings in **831.18 seconds (13m51.18s)**, four workers, release binary
-    prebuilt, peak RSS 21,844,384 KiB, 395% utilisation. The knowledge and
-    record-power families added 957 cases and moved the total by about seven
-    seconds, which is consistent with the profile below: the cost is per-case
-    fixed work and a heavy tail, not case count. The earlier 275.04-second
+  - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,279
+    pins across 14,885 cases pass with complete contradiction checks and no
+    findings in **821.68 seconds (13m41.68s)**, four workers, release binary
+    prebuilt, peak RSS 21,911,748 KiB, 390% utilisation. Three new families
+    added 1,319 cases without moving the total out of its noise band, which is
+    what the profile below predicts: the cost is per-case fixed work and a heavy
+    tail, not case count. The earlier 275.04-second
     result covered only the pre-expansion 4,190-case inventory and is not a
     current timing.
   - **The profiling bullet is done.** `new-book-plans/nibli-performance-candidate.md`
@@ -361,35 +361,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
     resource limits reported honestly.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
-
-- [ ] **Define cross-domain priority, conflict, and physical-scarcity rules.**
-  - Admit scarcity only from authenticated, contestable, resource/population-
-    specific evidence after alternatives, reserves, substitution, coordination,
-    replenishment, and mutual assistance. Budget choice, price exclusion,
-    administrative delay, artificial withholding, monopoly, provider failure, and
-    refusal to procure remain constitutional failures, not physical scarcity.
-  - Preserve each constitutional minimum wherever usable supply permits. Never
-    redefine a reduced ration as the minimum; record every shortfall as failure.
-    Use an effective usable equal share where one exists; never divide a threshold
-    resource into equally useless pieces. Otherwise mitigate through urgency,
-    accessibility, imminent irreversible harm, continuity harm, and individualized
-    resource-specific benefit after accommodation.
-  - Forbid wealth, contribution, recognition, conviction, family status,
-    disability stereotype, expected productivity, social usefulness, generalized
-    lifespan, and political favour as priority keys. Use disclosed rotation or
-    lottery only among materially equal claims.
-  - Require public reasons, challenge, independent review, interim alternatives,
-    replenishment, fresh reassessment evidence, a source-bound end, and repair.
-    Scarcity creates no standing emergency power; missing authority ends the
-    restrictive manager while the independent floor/continuity route survives.
-  - Resolve other conflicts through typed rules rather than hidden priority:
-    property versus floor/commons, expression versus evidenced harm, privacy versus
-    public accountability, local choice versus portability, current claims versus
-    future conditions, and emergency action versus non-derogable protections.
-  - Any departure from the ratified scarcity ordering needs a new author ruling;
-    implementation code may not choose it silently. **Book 2 handoff:** evidence
-    collection/assurance, inventories, forecasts, quantities, reserves, production,
-    capacity, queues, workflows, and empirical evaluation.
 
 - [ ] **Test compositional closure and graceful degradation.**
   - For formal interfaces, prove within the declared model that individually safe
@@ -1150,6 +1121,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh mobility
 ./generate.sh knowledge
 ./generate.sh record-power
+./generate.sh scarcity
 ./generate.sh spine
 ~~~
 

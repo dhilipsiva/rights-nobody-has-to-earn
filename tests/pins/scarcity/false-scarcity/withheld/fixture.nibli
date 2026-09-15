@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(ScarcityCaseTargetSource, ScarcitySourceAuthority, ScarcityCaseTarget).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCaseResource, ScarcityResourceScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCasePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCaseManager, ScarcityManagerScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCaseVersion, ScarcitySourceVersionScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCasePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCaseJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCaseScope, ScarcityLegalScope).
+observe(ScarcityCaseTargetSource, ScarcityCaseTarget, ScarcityCaseEnd, ScarcitySourceBoundEndScope).

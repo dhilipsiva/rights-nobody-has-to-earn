@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+challenge(ScarcityRequestRequester, ScarcityRequestReader, ScarcityRequestRecord).
+authorized(ScarcityRequestReader, ScarcityChallengeReaderAuthority, ScarcityRequestRecord).
+observe(ScarcityRequestRequester, ScarcityRequestRecord, ScarcityRequestResource, ScarcityChallengeResourceScope).

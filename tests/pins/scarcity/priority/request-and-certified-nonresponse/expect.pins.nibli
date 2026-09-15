@@ -1,0 +1,87 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? obliged(ScarcityRequestReader, ReviewScarcityFindingAllocationOrShortfall, ScarcityRequestRecord).
+# => TRUE
+? obliged(ScarcityRequestAlternate, ReviewScarcityRequestAndSecureIndependentRemedy, ScarcityRequestRecord).
+# => FALSE
+? complete(ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRequestResource).
+# => FALSE
+authorized(ScarcityRequestSource, ScarcitySourceAuthority, ScarcityRequestRecord).
+authorized(ScarcityRequestEvidence, IndependentScarcityEvidenceAuthority, ScarcityRequestRecord).
+authorized(ScarcityRequestReview, IndependentScarcityReviewAuthority, ScarcityRequestRecord).
+authorized(ScarcityRequestReader, ScarcityChallengeReaderAuthority, ScarcityRequestRecord).
+authorized(ScarcityRequestAlternate, ScarcityAlternateReviewAuthority, ScarcityRequestRecord).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestResource, ScarcityResourceScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestResource, ScarcityResourceScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestResource, ScarcityResourceScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestPopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestPopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestPopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestManager, ScarcityManagerScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestManager, ScarcityManagerScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestManager, ScarcityManagerScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestVersion, ScarcitySourceVersionScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestVersion, ScarcitySourceVersionScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestVersion, ScarcitySourceVersionScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestPeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestPeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestPeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestScope, ScarcityLegalScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestScope, ScarcityLegalScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestScope, ScarcityLegalScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestReader, ScarcityChallengeReaderScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestReader, ScarcityChallengeReaderScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestReader, ScarcityChallengeReaderScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestChallenge, ScarcityChallengeScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestChallenge, ScarcityChallengeScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestChallenge, ScarcityChallengeScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestCorrection, ScarcityCorrectionScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestCorrection, ScarcityCorrectionScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestCorrection, ScarcityCorrectionScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestRemedy, ScarcityRemedyScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestRemedy, ScarcityRemedyScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestRemedy, ScarcityRemedyScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRecordKindScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRecordKindScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRecordKindScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestRecord, ScarcityAffectedRequestScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestRecord, ScarcityAffectedRequestScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestRecord, ScarcityAffectedRequestScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestRequester, ScarcityRequesterScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestRequester, ScarcityRequesterScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestRequester, ScarcityRequesterScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, ScarcityNoticeOpportunityScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, ScarcityNoticeOpportunityScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, ScarcityNoticeOpportunityScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, ScarcityRequestDeadline, ScarcitySourceBoundDeadlineScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, ScarcityRequestDeadline, ScarcitySourceBoundDeadlineScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, ScarcityRequestDeadline, ScarcitySourceBoundDeadlineScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, IndependentPositiveReaderNonresponseFinding, ScarcityNonresponseDispositionScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, IndependentPositiveReaderNonresponseFinding, ScarcityNonresponseDispositionScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, IndependentPositiveReaderNonresponseFinding, ScarcityNonresponseDispositionScope).
+observe(ScarcityRequestSource, ScarcityRequestRecord, NoSilenceAsApprovalOrAdverseClaimantFact, ScarcityNonresponseLimitScope).
+observe(ScarcityRequestEvidence, ScarcityRequestRecord, NoSilenceAsApprovalOrAdverseClaimantFact, ScarcityNonresponseLimitScope).
+observe(ScarcityRequestReview, ScarcityRequestRecord, NoSilenceAsApprovalOrAdverseClaimantFact, ScarcityNonresponseLimitScope).
+? obliged(ScarcityRequestAlternate, ReviewScarcityRequestAndSecureIndependentRemedy, ScarcityRequestRecord).
+# => TRUE
+? complete(ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRequestResource).
+# => TRUE

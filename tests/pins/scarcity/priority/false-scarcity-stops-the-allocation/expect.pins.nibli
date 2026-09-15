@@ -1,0 +1,135 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 32
+
+? authority(ScarcitySequenceManager, AdministerPhysicalScarcity, ScarcitySequenceAuthorization).
+# => TRUE
+? obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).
+# => TRUE
+? obliged(ScarcityAuthorizationReader, HearScarcityChallengeAndCorrect, ScarcitySequenceAuthorization).
+# => TRUE
+? complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).
+# => TRUE
+? permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).
+# => TRUE
+? obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).
+# => TRUE
+? complete(ScarcitySequenceRecord, ReviewedScarcityAllocation, ScarcitySequenceResource).
+# => TRUE
+? obliged(ScarcitySequenceManager, RepairAndReassessTheRecordedShortfall, ScarcityUnmetRecord).
+# => TRUE
+? obliged(ScarcityUnmetReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityUnmetRecord).
+# => TRUE
+? complete(ScarcityUnmetRecord, ReviewedScarcityShortfall, ScarcitySequenceResource).
+# => TRUE
+authorized(ScarcityChoiceSource, ScarcitySourceAuthority, ScarcityChoiceRecord).
+authorized(ScarcityChoiceEvidence, IndependentScarcityEvidenceAuthority, ScarcityChoiceRecord).
+authorized(ScarcityChoiceReview, IndependentScarcityReviewAuthority, ScarcityChoiceRecord).
+authorized(ScarcityChoiceReader, ScarcityChallengeReaderAuthority, ScarcityChoiceRecord).
+authorized(ScarcityChoiceAlternate, ScarcityAlternateReviewAuthority, ScarcityChoiceRecord).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceResource, ScarcityResourceScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceResource, ScarcityResourceScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceResource, ScarcityResourceScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequencePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequencePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequencePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceManager, ScarcityManagerScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceManager, ScarcityManagerScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceManager, ScarcityManagerScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceVersion, ScarcitySourceVersionScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceVersion, ScarcitySourceVersionScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceVersion, ScarcitySourceVersionScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequencePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequencePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequencePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceScope, ScarcityLegalScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceScope, ScarcityLegalScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceScope, ScarcityLegalScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcityChoiceReader, ScarcityChallengeReaderScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcityChoiceReader, ScarcityChallengeReaderScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcityChoiceReader, ScarcityChallengeReaderScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcityChoiceAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcityChoiceAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcityChoiceAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcityChoiceChallenge, ScarcityChallengeScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcityChoiceChallenge, ScarcityChallengeScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcityChoiceChallenge, ScarcityChallengeScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcityChoiceCorrection, ScarcityCorrectionScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcityChoiceCorrection, ScarcityCorrectionScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcityChoiceCorrection, ScarcityCorrectionScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcityChoiceRemedy, ScarcityRemedyScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcityChoiceRemedy, ScarcityRemedyScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcityChoiceRemedy, ScarcityRemedyScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ReviewedFalseScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ReviewedFalseScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ReviewedFalseScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, ScarcitySequenceAuthorization, ScarcityAffectedFindingScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, ScarcitySequenceAuthorization, ScarcityAffectedFindingScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, ScarcitySequenceAuthorization, ScarcityAffectedFindingScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, BudgetChoice, FalseScarcityKindScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, BudgetChoice, FalseScarcityKindScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, BudgetChoice, FalseScarcityKindScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, IndependentlyEstablishedAsAChoiceRatherThanAShortage, ScarcityFalseDispositionScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, IndependentlyEstablishedAsAChoiceRatherThanAShortage, ScarcityFalseDispositionScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, IndependentlyEstablishedAsAChoiceRatherThanAShortage, ScarcityFalseDispositionScope).
+observe(ScarcityChoiceSource, ScarcityChoiceRecord, FloorAndContinuityRoutesSurviveTheFinding, ScarcityFalseLimitScope).
+observe(ScarcityChoiceEvidence, ScarcityChoiceRecord, FloorAndContinuityRoutesSurviveTheFinding, ScarcityFalseLimitScope).
+observe(ScarcityChoiceReview, ScarcityChoiceRecord, FloorAndContinuityRoutesSurviveTheFinding, ScarcityFalseLimitScope).
+? contradict(ScarcitySequenceAuthorization, ScarcityFindingAuthorization).
+# => TRUE
+? obliged(ScarcityChoiceReader, TreatFalseScarcityAsFailureNotShortage, ScarcitySequenceAuthorization).
+# => TRUE
+? obliged(ScarcitySequenceManager, RestoreOrProcureWhatWasWithheld, ScarcitySequenceAuthorization).
+# => TRUE
+? complete(ScarcityChoiceRecord, ReviewedFalseScarcityFinding, ScarcitySequenceResource).
+# => TRUE
+? authority(ScarcitySequenceManager, AdministerPhysicalScarcity, ScarcitySequenceAuthorization).
+# => FALSE
+? obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).
+# => FALSE
+? obliged(ScarcityAuthorizationReader, HearScarcityChallengeAndCorrect, ScarcitySequenceAuthorization).
+# => FALSE
+? complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).
+# => FALSE
+? permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).
+# => FALSE
+? obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).
+# => FALSE
+? complete(ScarcitySequenceRecord, ReviewedScarcityAllocation, ScarcitySequenceResource).
+# => FALSE
+? obliged(ScarcitySequenceManager, RepairAndReassessTheRecordedShortfall, ScarcityUnmetRecord).
+# => FALSE
+? obliged(ScarcityUnmetReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityUnmetRecord).
+# => FALSE
+? complete(ScarcityUnmetRecord, ReviewedScarcityShortfall, ScarcitySequenceResource).
+# => FALSE
+? person(ScarcityClaimant).
+# => TRUE
+? owe(State, Eats, ScarcityClaimant).
+# => TRUE
+? decide(ScarcityClaimant, Ballot).
+# => TRUE
+? false(ScarcityClaimant).
+# => FALSE
+? prisoner(ScarcityClaimant).
+# => FALSE
+? lose(Points, ScarcityClaimant).
+# => FALSE
+? person(Hano).
+# => TRUE
+? owe(State, Eats, Hano).
+# => TRUE

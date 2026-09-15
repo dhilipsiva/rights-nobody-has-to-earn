@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+
+? contradict(ScarcitySequenceAuthorization, ScarcityFindingAuthorization).
+# => TRUE
+? obliged(ScarcityChoiceReader, TreatFalseScarcityAsFailureNotShortage, ScarcitySequenceAuthorization).
+# => TRUE
+? obliged(ScarcitySequenceManager, RestoreOrProcureWhatWasWithheld, ScarcitySequenceAuthorization).
+# => TRUE
+? complete(ScarcityChoiceRecord, ReviewedFalseScarcityFinding, ScarcitySequenceResource).
+# => TRUE
+? authority(ScarcitySequenceManager, AdministerPhysicalScarcity, ScarcitySequenceAuthorization).
+# => FALSE
+? obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).
+# => FALSE
+? obliged(ScarcityAuthorizationReader, HearScarcityChallengeAndCorrect, ScarcitySequenceAuthorization).
+# => FALSE
+? complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).
+# => FALSE

@@ -27,11 +27,13 @@ destination.
 | `new-book-plans/statistics-source.json` | Bounded statistical uses, privacy, aggregate equality evidence, challenge and correction. |
 | `new-book-plans/knowledge-source.json` | What must be established before a public actor narrows learning, expression, belief, association, inquiry or culture. |
 | `new-book-plans/record-power-source.json` | What must be established before a holder keeps, watches, profiles or automates over somebody's record. |
+| `new-book-plans/scarcity-source.json` | What must be established before a shortage counts as physical, and what may never decide who goes without. |
 | `new-book-plans/book-1-amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
 | `new-book-plans/book-1-mobility-and-plurality-contract.md` | Mobility protections, differentiated collective rights, exact consent/consultation and external no-evasion. |
 | `new-book-plans/book-1-non-carceral-justice-contract.md` | Accessible justice, actual court-bound remedies, voluntary restoration and release continuity. |
 | `new-book-plans/book-1-knowledge-and-free-field-contract.md` | Restriction conditions, residual freedom, public information, accessibility, inquiry autonomy and communication plurality. |
 | `new-book-plans/book-1-record-power-contract.md` | Record holding, surveillance, biometrics, profiling, automated support, access, retention and non-use walls. |
+| `new-book-plans/book-1-scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
 | `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
@@ -99,12 +101,12 @@ the first build compiles the bundled C library using a C compiler and Make
 allocator. The explicit authoring executable is unchanged.
 
 Latest full run measured on 2026-09-15 with four workers and the release binary
-already built against the pinned engine `979fe8b`: all 81,028 pins across 14,523
+already built against the pinned engine `979fe8b`: all 82,279 pins across 14,885
 cases passed, with complete formal
-contradiction scans and no findings, in 831.18 seconds (13m51.18s); nine
-existing known-defect pins still reproduce. User CPU was 3,206.03 seconds,
-system CPU 81.50 seconds, utilisation 395%, and peak resident memory
-21,844,384 KiB, with no major page faults and no swaps. Other machine activity
+contradiction scans and no findings, in 821.68 seconds (13m41.68s); nine
+existing known-defect pins still reproduce. User CPU was 3,134.27 seconds,
+system CPU 78.77 seconds, utilisation 390%, and peak resident memory
+21,911,748 KiB, with no major page faults and no swaps. Other machine activity
 was not controlled.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second
@@ -128,6 +130,7 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh justice
 ./generate.sh knowledge
 ./generate.sh record-power
+./generate.sh scarcity
 ./generate.sh public-safety
 ./generate.sh ecology
 ./generate.sh spine
