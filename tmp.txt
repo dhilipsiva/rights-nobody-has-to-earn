@@ -87,3 +87,21 @@ leaving an inert disjunct nobody checks.
 
 All 85 authoring development tests pass. No constitution, pin, case or
 expectation changed.
+
+THE VECTOR OF PROTECTED CONDITIONS IS GUARDED AGAIN
+
+`src/authoring/floor_vector_tests.rs` measures five properties of the enacted
+lines, each with a control executed against the actual source: no standalone
+numeric literal; no aggregating, scoring or ranking relation; every floor read
+negative and landing in `err`, with Article 6's isolation marker the only one;
+no floor actuality derived from a different one; and recognition minted by its
+three doors, never read, never self-joined, still arity one.
+
+Measuring first mattered. All five already held, so the tests record the
+constitution as it is rather than asking it to change. What had stopped holding
+were the claims ABOUT them: CLAUDE.md and TODO.md said `verify.sh`'s digit ban
+and sections 4, 4a and 4b enforced these, and those sections went with the old
+script on 2026-09-12. Four sentences were corrected to name what checks them now.
+
+`./verify.sh` is unchanged — these are development tests, and the 2026-09-12
+decision keeps verification to pins and contradiction scans.

@@ -390,14 +390,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Do not describe an infinite chain of duties as action, an interface as capacity,
     a simulation as deployment, or an external premise as a constitutional fact.
 
-- [ ] **Use a vector of protected conditions, never a total social score.**
-  - No abundance in one domain compensates for torture, homelessness, exclusion,
-    disenfranchisement, ecological destruction or loss of standing.
-  - Use aggregate, privacy-preserving disparity, capacity and outcome measures for
-    public learning; never convert them into individual worth or risk labels.
-  - Record trade-offs and Pareto/conflict boundaries openly; do not collapse
-    heterogeneous floors, liberties, commons and democratic choices into one number.
-
 - [ ] **Define cross-domain priority, conflict, and physical-scarcity rules.**
   - Admit scarcity only from authenticated, contestable, resource/population-
     specific evidence after alternatives, reserves, substitution, coordination,
@@ -1301,8 +1293,9 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
   "no subtraction except by due process for one's own adjudicated fraud" — which the
   surviving wrongdoer rule satisfies.
   **BL3** ("merit never weights votes") survives vacuously: there is no arithmetic
-  anywhere in the enacted lines and `verify.sh`'s digit ban keeps it that way, so
-  weighting cannot be written. **BL4** and **BL5** are pod-and-tech-stack material and
+  anywhere in the enacted lines, and the `floor_vector_tests` development guards
+  keep it that way — no numeric literal, no aggregating relation — so weighting
+  cannot be written. **BL4** and **BL5** are pod-and-tech-stack material and
   belong to book-2. **BL1** ported in narrowed form and is in chapter 1's closing
   section: the floor is unconditional *above* `person($x)`, and `person` is a roster of
   written facts with two producing rules, so personhood **is** an enrolment. Do not
