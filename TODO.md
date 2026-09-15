@@ -948,18 +948,6 @@ edition remains immutable, permanently citable, reproducible, and linked to its
 superseding versions. An external publisher may steward a particular edition but
 may not become the sole custodian of the book or of its future development.
 
-- **Align the current time account before any public expansion snapshot.**
-  - Chapter 13's ordinary-language/admitted-fact distinction has landed. Remove
-    or narrow the remaining permanent-refusal wording in Chapters 4 and 13 that
-    contradicts T3 as a ratified future target.
-  - Cross-read Chapters 4, 5, and 13 against one current model: flat snapshots
-    have no internal order; epoch carry is an external/manual cross-snapshot
-    convention; no current duration or automatic expiry exists.
-  - Keep this prose-only correction separate from the ratified T3 implementation
-    gate.
-    Re-run the relevant prose, claim, and pin checks before publishing a
-    snapshot that contains the affected chapters.
-
 - **Implement the ratified E2 + P1 + D2 edition contract.**
   - Do not create a promoted artifact from the current-T0 baseline. Before the
     first expansion preview, audit the root README and opening note for
