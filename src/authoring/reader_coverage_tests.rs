@@ -150,15 +150,26 @@ fn the_book_is_not_one_failure_first_formula() {
 /// Postures no passage occupies. Each is a thing the constitution lets somebody
 /// do that the book never shows anybody doing, so the list shrinking is
 /// progress and the list growing is a passage that lost its subject.
-const UNOCCUPIED_POSTURES: [&str; 2] = ["creates", "cares"];
+const UNOCCUPIED_POSTURES: [&str; 0] = [];
+
+/// Postures held by two passages or fewer. Thin is not absent, and the two
+/// thinnest are the ones the portfolio standard cares most about: somebody
+/// making something, and somebody caring for somebody.
+const THIN_POSTURES: [&str; 3] = ["associates", "cares", "creates"];
 
 #[test]
 fn the_postures_nobody_occupies_are_the_ones_recorded() {
     let context = Context::discover().expect("repository");
     let records = records(&context).expect("ledger source");
+    let held = |posture: &str| {
+        records
+            .iter()
+            .filter(|record| record.postures.iter().any(|entry| entry == posture))
+            .count()
+    };
     let empty: BTreeSet<String> = POSTURES
         .iter()
-        .filter(|posture| records.iter().all(|record| record.posture != **posture))
+        .filter(|posture| held(posture) == 0)
         .map(|posture| (*posture).to_owned())
         .collect();
     assert_eq!(

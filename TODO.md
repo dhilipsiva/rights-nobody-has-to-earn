@@ -407,12 +407,14 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     delivery; `no-receipt-no-arrival` makes chapter 8's "owed is not delivered"
     executable across every floor item. The routes still ship dormant in the
     shipped cast, and none of this establishes that anybody was fed or housed.
-  - **Two of the ten postures are occupied by nobody: `creates` and `cares`.**
-    The constitution lets somebody do both — the care doors are open and
-    creation has its own liberty since the knowledge family landed — and no
-    passage shows anybody doing either. The set is asserted by membership, so
-    filling one is visible and losing another fails. `is acted upon` carries 39
-    of 86 passages; that is the weighting the rebalance exists to move.
+  - **Every posture is occupied, and two are carried in single figures.** The
+    first reading said `creates` and `cares` were empty; it was wrong twice over
+    — one posture per section, and the chapter preambles unclassified, which is
+    where chapter 10 does its care work. The ledger now classifies all 101
+    passages including preambles and lets a passage hold several postures.
+    `cares` is carried by one passage and `creates` by two, against 47 for `is
+    acted upon`. Both the empty set and the thin set are asserted by
+    membership.
   - **The accusation-authorship gap is confirmed open.** `attack(Hano, Ivo)`,
     `injure`, `cruel`, `deceive`, `capture` and `rotten` name the alleged
     offender and the victim, never the writer. Chapter 1 concedes the

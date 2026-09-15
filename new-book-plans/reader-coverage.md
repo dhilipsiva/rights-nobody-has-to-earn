@@ -43,20 +43,22 @@ forms, and it is where the portfolio rebalance has most to do.
 ## Postures
 
 A posture nobody occupies is a kind of person the book never shows
-doing that thing. Zero is a finding, not a formatting artefact.
+doing that thing, and a posture carried by one or two passages is
+nearly that. Every posture is occupied; `cares` and `creates` are
+carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 3 |
-| creates | 0 |
-| cares | 0 |
-| works | 5 |
-| associates | 1 |
+| chooses | 4 |
+| creates | 2 |
+| cares | 1 |
+| works | 6 |
+| associates | 2 |
 | requests | 3 |
-| receives | 7 |
-| challenges | 8 |
-| governs | 20 |
-| is acted upon | 39 |
+| receives | 8 |
+| challenges | 9 |
+| governs | 23 |
+| is acted upon | 47 |
 
 ## Chapter patterns
 
@@ -66,12 +68,12 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 16 |
-| private-civic | 11 |
-| democratic | 19 |
-| coercive | 18 |
-| records | 16 |
-| argument | 6 |
+| constructive | 18 |
+| private-civic | 13 |
+| democratic | 23 |
+| coercive | 21 |
+| records | 19 |
+| argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
 receipt, challenge, continuity, boundary — is prose review and is not
@@ -84,25 +86,26 @@ checked here.
 | Borders, migration, asylum and expulsion | 1 | 0 | 1 |
 | Collective and plurality rights | 1 | 0 | 1 |
 | Defence and armed force | 1 | 0 | 1 |
-| Democracy and amendment | 4 | 5 | 4 |
+| Democracy and amendment | 6 | 5 | 6 |
 | Ecology, future generations and commons | 2 | 0 | 2 |
-| Economy, property, work and commons | 4 | 6 | 6 |
+| Economy, property, work and commons | 6 | 6 | 7 |
 | Emergency and resilience | 1 | 0 | 1 |
-| Justice and coercion | 4 | 7 | 3 |
+| Justice and coercion | 6 | 7 | 4 |
 | Knowledge, communication and culture | 1 | 0 | 1 |
 | Life course, family, care and reproduction | 0 | 1 | 1 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
-| Material floor | 1 | 5 | 5 |
+| Material floor | 2 | 5 | 6 |
 | Non-human animals | 1 | 0 | 1 |
-| Personhood and equality | 4 | 2 | 2 |
-| Public institutions | 6 | 5 | 7 |
-| Public safety, policing and use of force | 4 | 2 | 6 |
-| Records and accountability | 8 | 8 | 11 |
+| Personhood and equality | 5 | 3 | 3 |
+| Public institutions | 8 | 5 | 8 |
+| Public safety, policing and use of force | 5 | 2 | 7 |
+| Records and accountability | 10 | 9 | 12 |
 
 ## Every passage
 
 | ID | Chapter | Section | Domain | Family | Function | Setting | Posture | Trajectory | Boundary | Pattern | Basis |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 01-00 | 01-what-counts-as-evidence.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | yes | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
 | 01-01 | 01-what-counts-as-evidence.md | What is missing | Records and accountability | ARTICLES | protective | the closed evidence list | is acted upon | works | yes | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
 | 01-02 | 01-what-counts-as-evidence.md | Counting without ranking people | Records and accountability | OFFICIAL-STATISTICS | both | official statistics and planning | is acted upon | works | yes | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
 | 01-03 | 01-what-counts-as-evidence.md | Keeping, watching, and letting a machine help | Records and accountability | RECORD-POWER | both | records, surveillance and automated support | is acted upon | works | yes | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
@@ -110,43 +113,51 @@ checked here.
 | 01-05 | 01-what-counts-as-evidence.md | One person's word does not move anything | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | no | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
 | 01-06 | 01-what-counts-as-evidence.md | The way this gets taken apart | Records and accountability | ARTICLES | protective | widening the record | is acted upon | contested | yes | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
 | 01-07 | 01-what-counts-as-evidence.md | The other way in | Records and accountability | ARTICLES | protective | a fabricated direct entry | is acted upon | unresolved | yes | records | `book-1/01-what-counts-as-evidence.pins.nibli` |
+| 02-00 | 02-public-answerability.md | (preamble) | Public institutions | ARTICLES | ordinary | who can be held to account | governs | works | yes | democratic | `book-1/02-public-answerability.pins.nibli` |
 | 02-01 | 02-public-answerability.md | The part that looks like a mistake | Public institutions | STATE-FORM | protective | permanent answerability | governs | works | no | democratic | `book-1/02-public-answerability.pins.nibli` |
 | 02-02 | 02-public-answerability.md | Boss | Public institutions | ARTICLES | protective | a recalled official and the person who exposed them | challenges | works | no | democratic | `book-1/02-public-answerability.pins.nibli` |
 | 02-03 | 02-public-answerability.md | What is actually being separated | Public institutions | ARTICLES | ordinary | answerability against capacity to act | governs | works | no | democratic | `book-1/02-public-answerability.pins.nibli` |
 | 02-04 | 02-public-answerability.md | The separation runs deeper than power | Public institutions | ARTICLES | protective | answerability, capacity and credibility held apart | governs | works | yes | democratic | `book-1/02-public-answerability.pins.nibli` |
 | 02-05 | 02-public-answerability.md | What it costs | Public institutions | ARTICLES | protective | the growing pool of answerable people | governs | unresolved | yes | democratic | `book-1/02-public-answerability.pins.nibli` |
+| 03-00 | 03-who-holds-the-pen.md | (preamble) | Public institutions | ARTICLES | ordinary | the credential that makes a finding count | governs | works | no | democratic | `book-1/03-who-holds-the-pen.pins.nibli` |
 | 03-01 | 03-who-holds-the-pen.md | The gap that used to be here | Public institutions | ARTICLES | protective | the credential that used to be writable | governs | continuity-remedy | yes | democratic | `book-1/03-who-holds-the-pen.pins.nibli` |
 | 03-02 | 03-who-holds-the-pen.md | Recall and carried history | Public institutions | ARTICLES | protective | recall and carried history | governs | works | yes | democratic | `book-1/03-who-holds-the-pen.pins.nibli` |
 | 03-03 | 03-who-holds-the-pen.md | The hurried door | Public institutions | ARTICLES | protective | the cheaper of two doors | governs | contested | yes | democratic | `book-1/03-who-holds-the-pen.pins.nibli` |
 | 03-04 | 03-who-holds-the-pen.md | The other pen | Public institutions | ARTICLES | ordinary | the examiner's standing pen | governs | works | yes | democratic | `book-1/03-who-holds-the-pen.pins.nibli` |
 | 03-05 | 03-who-holds-the-pen.md | What this rests on | Public institutions | ARTICLES | protective | the seating fact the design is told | governs | unresolved | no | democratic | `book-1/03-who-holds-the-pen.pins.nibli` |
+| 04-00 | 04-the-shield.md | (preamble) | Justice and coercion | ARTICLES | protective | exposing power while facing prosecution | challenges | works | no | coercive | `book-1/04-the-shield.pins.nibli` |
 | 04-01 | 04-the-shield.md | Don | Justice and coercion | ARTICLES | protective | exposure by one's own victim | challenges | works | no | coercive | `book-1/04-the-shield.pins.nibli` |
 | 04-02 | 04-the-shield.md | Sly | Justice and coercion | ARTICLES | protective | a guilty person inside the window | challenges | contested | no | coercive | `book-1/04-the-shield.pins.nibli` |
 | 04-03 | 04-the-shield.md | Kel | Justice and coercion | ARTICLES | protective | a deceitful exposure found out | challenges | works | no | coercive | `book-1/04-the-shield.pins.nibli` |
 | 04-04 | 04-the-shield.md | Rex | Justice and coercion | ARTICLES | protective | the window reopened by a second name | challenges | contested | no | coercive | `book-1/04-the-shield.pins.nibli` |
 | 04-05 | 04-the-shield.md | What it costs | Justice and coercion | ARTICLES | protective | the unbounded exposure surface | challenges | unresolved | yes | coercive | `book-1/04-the-shield.pins.nibli` |
+| 05-00 | 05-voiding.md | (preamble) | Records and accountability | ARTICLES | protective | what voiding a person's word means | is acted upon | contested | no | records | `book-1/05-voiding.pins.nibli` |
 | 05-01 | 05-voiding.md | It takes two, from two places | Records and accountability | ARTICLES | protective | two examiners from two bodies | is acted upon | works | yes | records | `book-1/05-voiding.pins.nibli` |
 | 05-02 | 05-voiding.md | The guards that turn around | Records and accountability | ARTICLES | protective | guards pointing back at the examiner | is acted upon | works | no | records | `book-1/05-voiding.pins.nibli` |
 | 05-03 | 05-voiding.md | What has to cross the record | Records and accountability | ARTICLES | protective | a void carried across the record | is acted upon | works | yes | records | `book-1/05-voiding.pins.nibli` |
 | 05-04 | 05-voiding.md | What it costs | Records and accountability | ARTICLES | protective | independence found, not guessed from silence | is acted upon | unresolved | yes | records | `book-1/05-voiding.pins.nibli` |
+| 06-00 | 06-clawback.md | (preamble) | Economy, property, work and commons | ARTICLES | protective | recognition stopping when credibility goes | is acted upon | works | no | private-civic | `book-1/06-clawback.pins.nibli` |
 | 06-01 | 06-clawback.md | What it cannot reach | Economy, property, work and commons | ARTICLES | protective | what clawback cannot reach | is acted upon | works | yes | private-civic | `book-1/06-clawback.pins.nibli` |
 | 06-02 | 06-clawback.md | Cira, and the rule that is no longer here | Economy, property, work and commons | ARTICLES | continuity | the student rule that was deleted | is acted upon | continuity-remedy | no | private-civic | `book-1/06-clawback.pins.nibli` |
 | 06-03 | 06-clawback.md | The mark that crosses the record | Economy, property, work and commons | ARTICLES | protective | a mark that crosses a period | is acted upon | works | no | private-civic | `book-1/06-clawback.pins.nibli` |
 | 06-04 | 06-clawback.md | The shape of the instrument | Economy, property, work and commons | ARTICLES | protective | a blunt instrument, deliberately | is acted upon | contested | no | private-civic | `book-1/06-clawback.pins.nibli` |
+| 07-00 | 07-a-prisoner-is-a-person.md | (preamble) | Personhood and equality | ARTICLES | protective | one line that reads like sentiment | is acted upon | works | no | constructive | `book-1/07-a-prisoner-is-a-person.pins.nibli` |
 | 07-01 | 07-a-prisoner-is-a-person.md | Zed | Personhood and equality | ARTICLES | ordinary | a convicted person's standing | is acted upon | works | yes | constructive | `book-1/07-a-prisoner-is-a-person.pins.nibli` |
 | 07-02 | 07-a-prisoner-is-a-person.md | The part nobody predicts | Personhood and equality | ARTICLES | protective | the compile-time refusal of a belief prison | is acted upon | works | no | constructive | `book-1/07-a-prisoner-is-a-person.pins.nibli` |
 | 07-03 | 07-a-prisoner-is-a-person.md | The loop does not take sides | Personhood and equality | ARTICLES | protective | the refusal is structural, not judgement | is acted upon | contested | no | constructive | `book-1/07-a-prisoner-is-a-person.pins.nibli` |
 | 07-04 | 07-a-prisoner-is-a-person.md | What that means | Personhood and equality | ARTICLES | protective | rights that do not thin out | is acted upon | works | no | constructive | `book-1/07-a-prisoner-is-a-person.pins.nibli` |
 | 07-05 | 07-a-prisoner-is-a-person.md | The standing roots do not replace this line | Personhood and equality | UNIVERSAL-STANDING | ordinary | standing without a roster | receives | works | yes | constructive | `book-1/07-a-prisoner-is-a-person.pins.nibli` |
+| 08-00 | 08-what-you-are-owed.md | (preamble) | Material floor | ARTICLES | ordinary | the floor in one breath | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-01 | 08-what-you-are-owed.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-02 | 08-what-you-are-owed.md | A way to be heard | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | yes | coercive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-03 | 08-what-you-are-owed.md | A place in which life remains possible | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | ordinary | air, water, soil and food | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-04 | 08-what-you-are-owed.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-05 | 08-what-you-are-owed.md | What nobody has to ask permission for | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | learning, speech, belief, association and culture | chooses | works | yes | private-civic | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-05 | 08-what-you-are-owed.md | What nobody has to ask permission for | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | learning, speech, belief, association and culture | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-06 | 08-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-07 | 08-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-08 | 08-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-09 | 08-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 09-00 | 09-the-vote-conviction-does-not-take.md | (preamble) | Democracy and amendment | ARTICLES | ordinary | a person in custody who still votes | is acted upon | works | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-01 | 09-the-vote-conviction-does-not-take.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-02 | 09-the-vote-conviction-does-not-take.md | A crisis does not suspend the republic | Emergency and resilience | PUBLIC-SAFETY | protective | an emergency declaration | governs | works | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-03 | 09-the-vote-conviction-does-not-take.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | defence under civilian command | governs | works | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
@@ -158,31 +169,37 @@ checked here.
 | 09-09 | 09-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-10 | 09-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-11 | 09-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 10-00 | 10-contribution.md | (preamble) | Economy, property, work and commons | ARTICLES | ordinary | three routes to recognition, and care walking through two of them | works, cares, creates | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-01 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-02 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-03 | 10-contribution.md | Recognition for looking at people | Economy, property, work and commons | ARTICLES | ordinary | recognition for examining people | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-04 | 10-contribution.md | What is lost | Economy, property, work and commons | ARTICLES | protective | what the absence of arithmetic costs | works | unresolved | yes | private-civic | `book-1/10-contribution.pins.nibli` |
+| 11-00 | 11-where-people-are-put.md | (preamble) | Justice and coercion | PLACEMENT | ordinary | placement without discretion | is acted upon | works | yes | coercive | `book-1/11-where-people-are-put.pins.nibli` |
 | 11-01 | 11-where-people-are-put.md | The farmhouse | Justice and coercion | PLACEMENT | protective | severity and the domestic case | is acted upon | contested | no | coercive | `book-1/11-where-people-are-put.pins.nibli` |
 | 11-02 | 11-where-people-are-put.md | The alarm that did not work | Justice and coercion | PLACEMENT | continuity | a marker added to catch a reopened hole | is acted upon | continuity-remedy | no | coercive | `book-1/11-where-people-are-put.pins.nibli` |
 | 11-03 | 11-where-people-are-put.md | What survives | Justice and coercion | PLACEMENT | ordinary | placement derived, never chosen | is acted upon | works | no | coercive | `book-1/11-where-people-are-put.pins.nibli` |
 | 11-04 | 11-where-people-are-put.md | The case nobody wrote a rule for | Justice and coercion | PLACEMENT | protective | the combination with no destination | is acted upon | fails | no | coercive | `book-1/11-where-people-are-put.pins.nibli` |
 | 11-05 | 11-where-people-are-put.md | What was actually missing | Material floor | PLACEMENT | continuity | confinement that houses | is acted upon | continuity-remedy | yes | constructive | `book-1/11-where-people-are-put.pins.nibli` |
 | 11-06 | 11-where-people-are-put.md | What that does not fix | Material floor | DELIVERY-RECEIPT | ordinary | shelter that arrives only through conviction | receives | fails | no | constructive | `book-1/11-where-people-are-put.pins.nibli` |
+| 12-00 | 12-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | yes | democratic | `book-1/12-changing-the-rules.pins.nibli` |
 | 12-01 | 12-changing-the-rules.md | Approved and marked dead | Democracy and amendment | AMENDMENT-ENACTMENT | protective | an approved amendment marked dead | governs | works | no | democratic | `book-1/12-changing-the-rules.pins.nibli` |
 | 12-02 | 12-changing-the-rules.md | Why the list guards itself | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the register that guards itself | governs | works | no | democratic | `book-1/12-changing-the-rules.pins.nibli` |
 | 12-03 | 12-changing-the-rules.md | The word the machinery borrows, and the person it nearly cost | Democracy and amendment | ARTICLES | protective | one word shared by two machineries | governs | contested | no | democratic | `book-1/12-changing-the-rules.pins.nibli` |
 | 12-04 | 12-changing-the-rules.md | What this actually costs | Democracy and amendment | AMENDMENT-ENACTMENT | protective | a deliberately anti-democratic limit | governs | contested | no | democratic | `book-1/12-changing-the-rules.pins.nibli` |
 | 12-05 | 12-changing-the-rules.md | Why this is thinner than it looks | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the label against the exact change | governs | unresolved | yes | democratic | `book-1/12-changing-the-rules.pins.nibli` |
+| 13-00 | 13-the-one-thing-taken.md | (preamble) | Public safety, policing and use of force | ARTICLES | protective | the one legal conclusion conviction attaches | is acted upon | works | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
 | 13-01 | 13-the-one-thing-taken.md | Protection is not punishment | Public safety, policing and use of force | PUBLIC-SAFETY | protective | arrest, detention, search and seizure | is acted upon | works | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
 | 13-02 | 13-the-one-thing-taken.md | The actor who uses force must answer | Public safety, policing and use of force | PUBLIC-SAFETY | protective | separated protective functions | governs | works | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
 | 13-03 | 13-the-one-thing-taken.md | Why nothing follows from it | Public safety, policing and use of force | ARTICLES | protective | custody as a single deprivation | is acted upon | works | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
 | 13-04 | 13-the-one-thing-taken.md | What is not said | Public safety, policing and use of force | PUBLIC-SAFETY | ordinary | what custody does not describe | is acted upon | unresolved | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
 | 13-05 | 13-the-one-thing-taken.md | And the authority must be current | Public safety, policing and use of force | ARTICLES | protective | current, case-bound custody authority | is acted upon | works | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
 | 13-06 | 13-the-one-thing-taken.md | What leaving costs | Public safety, policing and use of force | NON-CARCERAL-JUSTICE | continuity | release review | challenges | continuity-remedy | yes | coercive | `book-1/13-the-one-thing-taken.pins.nibli` |
+| 14-00 | 14-when-the-system-notices-it-broke.md | (preamble) | Records and accountability | ARTICLES | protective | a design that can state its own violations | is acted upon | works | no | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 14-01 | 14-when-the-system-notices-it-broke.md | The one that fires on everybody | Records and accountability | ARTICLES | protective | an alarm that fires on everybody | is acted upon | fails | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 14-02 | 14-when-the-system-notices-it-broke.md | The one that fired on the wrong people | Records and accountability | PLACEMENT | continuity | an alarm that fired on the wrong people | is acted upon | continuity-remedy | no | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 14-03 | 14-when-the-system-notices-it-broke.md | And then a duty, which no longer has to be the end | Records and accountability | OBLIGATIONS | continuity | a breach that now creates a duty | requests | continuity-remedy | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
 | 14-04 | 14-when-the-system-notices-it-broke.md | What it does have | Records and accountability | OBLIGATIONS | protective | vocabulary for its own violation | requests | unresolved | yes | records | `book-1/14-when-the-system-notices-it-broke.pins.nibli` |
+| 15-00 | 15-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the author speaking, unchecked by the machine | chooses | unresolved | yes | argument | `exempt-element` |
 | 15-01 | 15-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | Owen's New Harmony and the valuation joint | chooses | contested | yes | argument | `exempt-element` |
 | 15-02 | 15-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | the kibbutzim and the rotation joint | works | contested | no | argument | `exempt-element` |
 | 15-03 | 15-the-five-joints.md | Coercion | Justice and coercion | exempt | argument | ujamaa and the coercion joint | is acted upon | fails | yes | argument | `exempt-element` |

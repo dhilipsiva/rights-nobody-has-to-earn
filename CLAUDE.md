@@ -1922,10 +1922,13 @@ defence, ecology, emergency, knowledge and culture, and non-human animals are
 That set is asserted by membership.
 
 **The portfolio's postures are censused on the same source, and two are
-empty.** No passage shows anybody in the `creates` or `cares` posture, though
-the constitution permits both — the care doors have been open since 2026-08-02
-and creation has its own liberty since the knowledge family landed. `is acted
-upon` carries 39 of the 86 passages. Both facts are asserted by membership.
+thin.** The first reading said `creates` and `cares` were empty and was wrong
+twice over: one posture per section, and the chapter preambles unclassified —
+which is exactly where chapter 10 does its care work. The ledger now covers all
+101 passages, preambles included, and a passage may hold several postures.
+Every posture is occupied; `cares` is carried by one passage and `creates` by
+two, against 47 for `is acted upon`. The empty set and the thin set are both
+asserted by membership.
 Separately, the delivery routes are now exercised rather than only described:
 `tests/pins/delivery/received-outside-custody` derives all five recipient-side
 floor actualities for a person nobody convicted, so the pinned portfolio no

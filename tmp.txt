@@ -363,3 +363,19 @@ upon` carries 39 of 86. Both are asserted by membership.
 The accusation-authorship gap is confirmed still open: attack, injure, cruel,
 deceive, capture and rotten name the alleged offender and the victim, never the
 writer.
+
+THE LEDGER WAS MISSING FIFTEEN PASSAGES
+
+Chapter preambles — everything before the first heading — were unclassified, and
+they run from 94 to 1,006 words each, about 6,700 words in all. Chapter 10 does
+its care work there. So "no passage shows anybody caring" was an artefact of the
+ledger, not a fact about the book, and the same was true of creation: chapter 8's
+knowledge section covers making art and I had recorded only one posture for it.
+
+The ledger now classifies all 101 passages and lets a passage hold several
+postures. Every posture is occupied. `cares` is carried by one and `creates` by
+two, against 47 for `is acted upon` — thin, which is a real finding, rather than
+absent, which was a wrong one. Both the empty set and the thin set are asserted.
+
+Twice now the ledger's first reading has overstated a gap, and both times the fix
+was to make the model match the book rather than to write prose at the model.

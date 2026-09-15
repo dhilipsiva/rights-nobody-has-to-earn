@@ -18,6 +18,9 @@ use std::fmt::Write as _;
 const SOURCE: &str = "new-book-plans/reader-coverage-source.json";
 const REPORT: &str = "new-book-plans/reader-coverage.md";
 
+/// A chapter's text before its first heading.
+pub(crate) const PREAMBLE: &str = "(preamble)";
+
 /// Trajectories that show the design under strain rather than working.
 const TROUBLE: [&str; 4] = ["contested", "fails", "continuity-remedy", "unresolved"];
 
@@ -36,6 +39,13 @@ fn boundary() -> Regex {
 /// The text of one passage, from its heading to the next.
 pub(crate) fn passage(context: &Context, chapter: &str, section: &str) -> Result<String, Error> {
     let source = context.read(chapter)?;
+    if section == PREAMBLE {
+        let end = source.find("\n## ").unwrap_or(source.len());
+        return Ok(source[..end]
+            .split_whitespace()
+            .collect::<Vec<_>>()
+            .join(" "));
+    }
     let start = source
         .find(&format!("## {section}"))
         .ok_or_else(|| Error::new(format!("{chapter}: no passage {section:?}")))?;
@@ -59,7 +69,7 @@ pub(crate) struct Record {
     pub(crate) family: String,
     pub(crate) function: String,
     pub(crate) setting: String,
-    pub(crate) posture: String,
+    pub(crate) postures: Vec<String>,
     pub(crate) trajectory: String,
     pub(crate) pattern: String,
     pub(crate) basis: String,
@@ -119,6 +129,9 @@ pub(crate) fn headings(context: &Context) -> Result<Vec<(String, String)>, Error
     files.sort();
     for name in files {
         let path = format!("book-1/{name}");
+        // Everything before the first heading is a passage too, and it is where
+        // several chapters do their most substantive work.
+        rows.push((path.clone(), PREAMBLE.to_owned()));
         for line in context.read(&path)?.lines() {
             if let Some(heading) = line.strip_prefix("## ") {
                 rows.push((path.clone(), heading.trim().to_owned()));
@@ -167,11 +180,16 @@ fn validate(context: &Context, records: &[Record]) -> Result<(), Error> {
                 record.id, record.trajectory
             )));
         }
-        if !POSTURES.contains(&record.posture.as_str()) {
-            return Err(Error::new(format!(
-                "{}: unknown posture {}",
-                record.id, record.posture
-            )));
+        if record.postures.is_empty() {
+            return Err(Error::new(format!("{}: no posture", record.id)));
+        }
+        for posture in &record.postures {
+            if !POSTURES.contains(&posture.as_str()) {
+                return Err(Error::new(format!(
+                    "{}: unknown posture {posture}",
+                    record.id
+                )));
+            }
         }
         if !PATTERNS.contains(&record.pattern.as_str()) {
             return Err(Error::new(format!(
@@ -255,13 +273,15 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
     out.push_str(
         "\n## Postures\n\n\
          A posture nobody occupies is a kind of person the book never shows\n\
-         doing that thing. Zero is a finding, not a formatting artefact.\n\n\
+         doing that thing, and a posture carried by one or two passages is\n\
+         nearly that. Every posture is occupied; `cares` and `creates` are\n\
+         carried in single figures, which is where the rebalance has most to do.\n\n\
          | Posture | Passages |\n| --- | ---: |\n",
     );
     for posture in POSTURES {
         let count = records
             .iter()
-            .filter(|record| record.posture == posture)
+            .filter(|record| record.postures.iter().any(|held| held == posture))
             .count();
         let _ = writeln!(out, "| {posture} | {count} |");
     }
@@ -300,7 +320,7 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
             record.family,
             record.function,
             record.setting,
-            record.posture,
+            record.postures.join(", "),
             record.trajectory,
             if states_boundary(context, record)? {
                 "yes"
