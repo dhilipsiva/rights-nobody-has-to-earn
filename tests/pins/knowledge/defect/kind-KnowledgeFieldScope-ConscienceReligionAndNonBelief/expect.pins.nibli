@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? contradict(KnowledgeCaseTarget, KnowledgeRecordAuthorization).
+# => TRUE
+? obliged(KnowledgeCaseReader, ReviewAndCorrectUnsupportedKnowledgeRecord, KnowledgeCaseTarget).
+# => TRUE
+? obliged(KnowledgeCaseActor, PublishKnowledgeRecordCorrection, KnowledgeCaseTarget).
+# => TRUE
+? complete(KnowledgeCaseRecord, ReviewedKnowledgeRecordDefect, KnowledgeCaseMatter).
+# => TRUE

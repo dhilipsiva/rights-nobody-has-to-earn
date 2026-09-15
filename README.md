@@ -25,9 +25,11 @@ destination.
 | `new-book-plans/obligations-source.json` | The protected claim names used by the obligations authoring tool. |
 | `new-book-plans/integrity-source.json` | Democratic and administrative integrity findings, kinds, and legal consequences. |
 | `new-book-plans/statistics-source.json` | Bounded statistical uses, privacy, aggregate equality evidence, challenge and correction. |
+| `new-book-plans/knowledge-source.json` | What must be established before a public actor narrows learning, expression, belief, association, inquiry or culture. |
 | `new-book-plans/book-1-amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
 | `new-book-plans/book-1-mobility-and-plurality-contract.md` | Mobility protections, differentiated collective rights, exact consent/consultation and external no-evasion. |
 | `new-book-plans/book-1-non-carceral-justice-contract.md` | Accessible justice, actual court-bound remedies, voluntary restoration and release continuity. |
+| `new-book-plans/book-1-knowledge-and-free-field-contract.md` | Restriction conditions, residual freedom, public information, accessibility, inquiry autonomy and communication plurality. |
 | `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
@@ -56,8 +58,8 @@ pinned revision is a published input, not a gate — `verify.sh` builds whatever
 is at `../nibli` and checks pins and contradictions, nothing else.
 
 That path was exercised from clean inputs on 2026-09-15: a fresh clone of this
-repository, `./bootstrap.sh`, then `./verify.sh` — all 77,902 pins across 13,566
-cases passed with complete contradiction scans and no findings in 802.45
+repository, `./bootstrap.sh`, then `./verify.sh` — all pins in the inventory of
+the day passed with complete contradiction scans and no findings in 802.45
 seconds, with the same nine known-defect pins reproducing as in the working
 tree.
 
@@ -95,12 +97,12 @@ the first build compiles the bundled C library using a C compiler and Make
 allocator. The explicit authoring executable is unchanged.
 
 Latest full run measured on 2026-09-15 with four workers and the release binary
-already built against the pinned engine `979fe8b`: all 77,902 pins across 13,566
+already built against the pinned engine `979fe8b`: all 79,511 pins across 14,078
 cases passed, with complete formal
-contradiction scans and no findings, in 824.25 seconds (13m44.25s); nine
-existing known-defect pins still reproduce. User CPU was 3,174.52 seconds,
-system CPU 77.29 seconds, utilisation 394%, and peak resident memory
-21,626,012 KiB, with no major page faults and no swaps. Other machine activity
+contradiction scans and no findings, in 816.98 seconds (13m36.98s); nine
+existing known-defect pins still reproduce. User CPU was 3,137.33 seconds,
+system CPU 83.56 seconds, utilisation 394%, and peak resident memory
+21,738,352 KiB, with no major page faults and no swaps. Other machine activity
 was not controlled.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second
@@ -122,7 +124,9 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh amendment
 ./generate.sh mobility
 ./generate.sh justice
+./generate.sh knowledge
 ./generate.sh public-safety
+./generate.sh ecology
 ./generate.sh spine
 ```
 

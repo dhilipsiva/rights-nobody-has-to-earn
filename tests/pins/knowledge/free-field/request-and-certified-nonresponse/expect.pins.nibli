@@ -1,0 +1,89 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? obliged(KnowledgeRequestReader, ReviewKnowledgeRestrictionAccessOrCorrection, KnowledgeRequestRecord).
+# => TRUE
+? obliged(KnowledgeRequestAlternate, ReviewKnowledgeRequestAndSecureIndependentRemedy, KnowledgeRequestRecord).
+# => FALSE
+? complete(KnowledgeRequestRecord, CertifiedKnowledgeReaderNonresponse, KnowledgeRequestMatter).
+# => FALSE
+authorized(KnowledgeRequestSource, KnowledgeSourceAuthority, KnowledgeRequestRecord).
+authorized(KnowledgeRequestEvidence, IndependentKnowledgeEvidenceAuthority, KnowledgeRequestRecord).
+authorized(KnowledgeRequestReview, IndependentKnowledgeReviewAuthority, KnowledgeRequestRecord).
+authorized(KnowledgeRequestReader, KnowledgeChallengeReaderAuthority, KnowledgeRequestRecord).
+authorized(KnowledgeRequestAlternate, KnowledgeAlternateReviewAuthority, KnowledgeRequestRecord).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestMatter, KnowledgeMatterScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestMatter, KnowledgeMatterScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestMatter, KnowledgeMatterScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestActor, KnowledgeActorScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestActor, KnowledgeActorScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestActor, KnowledgeActorScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestPeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestPeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestPeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestScope, KnowledgeLegalScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestScope, KnowledgeLegalScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestScope, KnowledgeLegalScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestChallenge, KnowledgeChallengeScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestChallenge, KnowledgeChallengeScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestChallenge, KnowledgeChallengeScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestRemedy, KnowledgeRemedyScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestRemedy, KnowledgeRemedyScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestRemedy, KnowledgeRemedyScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, CertifiedKnowledgeReaderNonresponse, KnowledgeRecordKindScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, CertifiedKnowledgeReaderNonresponse, KnowledgeRecordKindScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, CertifiedKnowledgeReaderNonresponse, KnowledgeRecordKindScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestRecord, KnowledgeAffectedRequestScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestRecord, KnowledgeAffectedRequestScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestRecord, KnowledgeAffectedRequestScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestRequester, KnowledgeRequesterScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestRequester, KnowledgeRequesterScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestRequester, KnowledgeRequesterScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, KnowledgeNoticeOpportunityScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, KnowledgeNoticeOpportunityScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, KnowledgeNoticeOpportunityScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, KnowledgeRequestDeadline, KnowledgeSourceBoundDeadlineScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, KnowledgeRequestDeadline, KnowledgeSourceBoundDeadlineScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, KnowledgeRequestDeadline, KnowledgeSourceBoundDeadlineScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, IndependentPositiveReaderNonresponseFinding, KnowledgeNonresponseDispositionScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, IndependentPositiveReaderNonresponseFinding, KnowledgeNonresponseDispositionScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, IndependentPositiveReaderNonresponseFinding, KnowledgeNonresponseDispositionScope).
+observe(KnowledgeRequestSource, KnowledgeRequestRecord, NoSilenceAsApprovalOrAdverseHolderFact, KnowledgeNonresponseLimitScope).
+observe(KnowledgeRequestEvidence, KnowledgeRequestRecord, NoSilenceAsApprovalOrAdverseHolderFact, KnowledgeNonresponseLimitScope).
+observe(KnowledgeRequestReview, KnowledgeRequestRecord, NoSilenceAsApprovalOrAdverseHolderFact, KnowledgeNonresponseLimitScope).
+? obliged(KnowledgeRequestAlternate, ReviewKnowledgeRequestAndSecureIndependentRemedy, KnowledgeRequestRecord).
+# => TRUE
+? complete(KnowledgeRequestRecord, CertifiedKnowledgeReaderNonresponse, KnowledgeRequestMatter).
+# => TRUE
+? obliged(KnowledgeRequestReader, ReviewKnowledgeRestrictionAccessOrCorrection, KnowledgeRequestRecord).
+# => TRUE

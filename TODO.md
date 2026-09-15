@@ -323,12 +323,14 @@ canonical ledger; this historical foundation summary does not override it.
 Gate B; it does not claim Book 2 operations or feasibility.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
-  - Current measurement, 2026-09-15 at `3e199dc1` against companion `979fe8b`:
-    all 77,902 pins across 13,566 cases pass with complete contradiction checks
-    and no findings in **824.25 seconds (13m44.25s)**, four workers, release
-    binary prebuilt, peak RSS 21,626,012 KiB, 394% utilisation. The earlier
-    275.04-second result covered only the pre-expansion 4,190-case inventory
-    and is not a current timing.
+  - Current measurement, 2026-09-15 against companion `979fe8b`: all 79,511
+    pins across 14,078 cases pass with complete contradiction checks and no
+    findings in **816.98 seconds (13m36.98s)**, four workers, release binary
+    prebuilt, peak RSS 21,738,352 KiB, 394% utilisation. The knowledge family
+    added 512 cases without moving the total, which is consistent with the
+    profile below: the cost is per-case fixed work and a heavy tail, not case
+    count. The earlier 275.04-second result covered only the pre-expansion
+    4,190-case inventory and is not a current timing.
   - **The profiling bullet is done.** `new-book-plans/nibli-performance-candidate.md`
     records the phase table, the case shapes, and each lead's measured size.
     Headline: queries 1,652 and fixtures 624 of about 3,143 cumulative
@@ -357,15 +359,18 @@ Gate B; it does not claim Book 2 operations or feasibility.
     with the release binary prebuilt, with measured timing and remaining
     resource limits reported honestly.
 
-- [ ] **Protect knowledge, communication, culture, and the free social field.**
-  - Cover learning and information access; expression, conscience, religion and
-    non-belief; association; media/press plurality; academic, scientific and
-    artistic freedom; language/accessibility; public information; sport, leisure,
-    friendship, love, mutual aid, clubs and voluntary creation.
-  - Secure the conditions and liberties for these activities without certifying
-    official truth, taste, belief, creativity, relationship or personal fulfilment.
-  - State residual freedom expressly: private/civic life remains free unless an
-    evidenced rights or commons harm justifies a least-restrictive, reviewable rule.
+- [ ] **Repair the mobility/plurality consumer guard, which has been red since
+  later families landed.** `authoring::mobility::tests::actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequences`
+  fails at `3e199dc1` and before, independently of any current work. Its
+  person-consequence branch is sound and its three hostile mutations are still
+  caught; what fails is its allow-list branch, which requires every line in the
+  whole constitution mentioning an `MP*`, `Mobility*` or `Plurality*` token to
+  belong to the mobility rule set. The public-safety and ecological families now
+  reference mobility scopes — 24 and 37 lines respectively — so the guard is
+  reporting a real, unreviewed cross-family consumption rather than a spurious
+  match. Review those lines, then either allow-list them deliberately or narrow
+  the branch to the mobility block; do not simply relax the regex. `./verify.sh`
+  is unaffected: this is a development test, not a pin.
 
 - [ ] **Constrain records, surveillance, and automated power across every domain.**
   - Preserve the legacy assertion/withholding cases and distinguish them from
@@ -1206,6 +1211,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh statistics
 ./generate.sh amendment
 ./generate.sh mobility
+./generate.sh knowledge
 ./generate.sh spine
 ~~~
 

@@ -31,6 +31,29 @@
 #   tests/pins/statistics/data-wall/nonparticipation-is-not-a-penalty/expect.pins.nibli
 # They establish no population finding or operated equality programme.
 #
+# "What nobody has to ask permission for" rests on these actual-constitution
+# knowledge cases:
+#   tests/pins/knowledge/restriction/positive/expect.pins.nibli
+#   tests/pins/knowledge/restriction/without-KnowledgeHarmEvidenceScope/expect.pins.nibli
+#   tests/pins/knowledge/restriction/without-KnowledgeNeutralityScope/expect.pins.nibli
+#   tests/pins/knowledge/restriction/kind-KnowledgeHarmKindScope-UnapprovedKnowledgeKind/expect.pins.nibli
+#   tests/pins/knowledge/restriction/actor-review/expect.pins.nibli
+#   tests/pins/knowledge/enforcement/without-authorization/expect.pins.nibli
+#   tests/pins/knowledge/enforcement/wrong-matter/expect.pins.nibli
+#   tests/pins/knowledge/free-field/restriction-does-not-travel-between-fields/expect.pins.nibli
+#   tests/pins/knowledge/free-field/restriction-defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/knowledge/free-field/residual-freedom-licenses-no-restriction/expect.pins.nibli
+#   tests/pins/knowledge/free-field/a-noted-belief-is-not-a-conclusion/expect.pins.nibli
+#   tests/pins/knowledge/free-field/concentration-finding-judges-no-content/expect.pins.nibli
+#   tests/pins/knowledge/free-field/request-and-certified-nonresponse/expect.pins.nibli
+#   tests/pins/knowledge/information/positive/expect.pins.nibli
+#   tests/pins/knowledge/accessibility/positive/expect.pins.nibli
+#   tests/pins/knowledge/autonomy/positive/expect.pins.nibli
+# The per-scope omission, unauthorized-attester, stale, conflicting-value and
+# counterfactual cases remain separate. They establish what must be shown before
+# a restriction stands and what is owed while it has not been shown; they
+# establish no publication, translation, answer or reader.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/08-what-you-are-owed.pins.nibli
 #   ./verify.sh          # all substantive pins and formal contradiction checks

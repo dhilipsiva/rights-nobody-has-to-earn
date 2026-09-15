@@ -1,0 +1,510 @@
+{
+  "common_fields": [
+    [
+      "$matter",
+      "KnowledgeMatterScope"
+    ],
+    [
+      "$field",
+      "KnowledgeFieldScope"
+    ],
+    [
+      "$actor",
+      "KnowledgeActorScope"
+    ],
+    [
+      "$version",
+      "KnowledgeSourceVersionScope"
+    ],
+    [
+      "$period",
+      "KnowledgeEvidencePeriodScope"
+    ],
+    [
+      "$jurisdiction",
+      "KnowledgeJurisdictionScope"
+    ],
+    [
+      "$scope",
+      "KnowledgeLegalScope"
+    ],
+    [
+      "$end",
+      "KnowledgeSourceBoundEndScope"
+    ],
+    [
+      "CurrentReconciledKnowledgeRecord",
+      "KnowledgeCurrentDispositionScope"
+    ],
+    [
+      "$reader",
+      "KnowledgeChallengeReaderScope"
+    ],
+    [
+      "$alternate",
+      "KnowledgeIndependentAlternateScope"
+    ],
+    [
+      "$challenge",
+      "KnowledgeChallengeScope"
+    ],
+    [
+      "$correction",
+      "KnowledgeCorrectionScope"
+    ],
+    [
+      "$remedy",
+      "KnowledgeRemedyScope"
+    ],
+    [
+      "ConstitutionalReviewOrIndependentSubstitute",
+      "KnowledgeFinalReviewScope"
+    ],
+    [
+      "NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified",
+      "KnowledgeCorridorScope"
+    ]
+  ],
+  "vocabularies": [
+    [
+      "KnowledgeFieldScope",
+      "KnowledgeFieldVocabulary",
+      [
+        "LearningAndInformationAccess",
+        "ExpressionAndPublication",
+        "ConscienceReligionAndNonBelief",
+        "AssociationAndAssembly",
+        "MediaAndPressPlurality",
+        "AcademicAndScientificInquiry",
+        "ArtisticAndCulturalCreation",
+        "LanguageAndAccessibleCommunication",
+        "PublicInformationAccess",
+        "SportLeisureFriendshipAndMutualAid"
+      ]
+    ],
+    [
+      "KnowledgeHarmKindScope",
+      "KnowledgeHarmKindVocabulary",
+      [
+        "EvidencedRightsHarm",
+        "EvidencedCommonsHarm"
+      ]
+    ],
+    [
+      "KnowledgeRestrictionKindScope",
+      "KnowledgeRestrictionKindVocabulary",
+      [
+        "ReviewedConductRestriction",
+        "ReviewedAccessCondition"
+      ]
+    ],
+    [
+      "KnowledgeRequestKindScope",
+      "KnowledgeRequestKindVocabulary",
+      [
+        "AccessPublicInformation",
+        "CorrectPublicInformation",
+        "ReceivePublicInformationInAccessibleForm"
+      ]
+    ],
+    [
+      "KnowledgeConcentrationKindScope",
+      "KnowledgeConcentrationKindVocabulary",
+      [
+        "OwnershipConcentration",
+        "DistributionGatekeeping",
+        "RankingOrAttentionControl"
+      ]
+    ],
+    [
+      "KnowledgeDefectKindScope",
+      "KnowledgeDefectKindVocabulary",
+      [
+        "UnevidencedHarmGround",
+        "OverbroadRestrictionReach",
+        "MissingEndCondition",
+        "ViewpointOrBeliefTargeting",
+        "OfficialTruthOrTasteCertification",
+        "InquiryOrCreationDirection",
+        "PublicInformationSuppression",
+        "AccessibilityExclusion",
+        "ConcentrationWithoutReview",
+        "RetaliationForExpressionOrAssociation"
+      ]
+    ]
+  ],
+  "contracts": [
+    {
+      "id": "restriction",
+      "kind": "ReviewedKnowledgeRestriction",
+      "fields": [
+        [
+          "$harm",
+          "KnowledgeHarmKindScope"
+        ],
+        [
+          "$restriction_kind",
+          "KnowledgeRestrictionKindScope"
+        ],
+        [
+          "EvidencedHarmNotOffenceDisagreementOrOfficialTruth",
+          "KnowledgeHarmEvidenceScope"
+        ],
+        [
+          "LeastRestrictiveEffectiveMeansConsidered",
+          "KnowledgeNecessityScope"
+        ],
+        [
+          "DefinedActivityReachAndAffectedPeople",
+          "KnowledgeRestrictionReachScope"
+        ],
+        [
+          "PublicReasonsAndAccessibleNotice",
+          "KnowledgeReasonsScope"
+        ],
+        [
+          "IndependentReviewAndSuspensiveChallenge",
+          "KnowledgeReviewRouteScope"
+        ],
+        [
+          "NoViewpointBeliefOrIdentityTargeting",
+          "KnowledgeNeutralityScope"
+        ],
+        [
+          "NoPriorPermissionForUnrestrictedActivity",
+          "KnowledgeResidualFreedomScope"
+        ],
+        [
+          "NoCertificationOfTruthTasteOrCreativeMerit",
+          "KnowledgeNonCertificationScope"
+        ]
+      ],
+      "heads": [
+        "authority($actor, $restriction_kind, $record)",
+        "obliged($actor, PublishKnowledgeRestrictionReasonsAndEvidence, $record)",
+        "obliged($reader, HearKnowledgeRestrictionChallengeAndCorrect, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "enforcement",
+      "kind": "ReviewedKnowledgeRestrictionEnforcement",
+      "fields": [
+        [
+          "$authorization",
+          "KnowledgeRestrictionAuthorizationScope"
+        ],
+        [
+          "$restriction_kind",
+          "KnowledgeRestrictionKindScope"
+        ],
+        [
+          "$affected",
+          "KnowledgeAffectedPersonScope"
+        ],
+        [
+          "ProportionateToTheReviewedHarmOnly",
+          "KnowledgeProportionScope"
+        ],
+        [
+          "NoticeReasonsAndAccessibleChallengeBeforeEffect",
+          "KnowledgeEnforcementNoticeScope"
+        ],
+        [
+          "NoFloorStandingBallotOrRecognitionConsequence",
+          "KnowledgeEnforcementLimitScope"
+        ]
+      ],
+      "heads": [
+        "permits($actor, EnforceReviewedKnowledgeRestriction, $record)",
+        "obliged($actor, GiveKnowledgeEnforcementNoticeReasonsAndChallenge, $record)"
+      ],
+      "extra": [
+        "~($affected = $actor)",
+        "~($affected = $review)",
+        "~($affected = $reader)",
+        "~($affected = $alternate)"
+      ],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "residual",
+      "kind": "UnrestrictedKnowledgeActivity",
+      "fields": [
+        [
+          "$activity",
+          "KnowledgeActivityScope"
+        ],
+        [
+          "$holder",
+          "KnowledgeHolderScope"
+        ],
+        [
+          "NoReviewedRestrictionAppliesToThisActivity",
+          "KnowledgeNoRestrictionScope"
+        ],
+        [
+          "NoRegistrationLicenceOrApprovalCondition",
+          "KnowledgeNoPermissionScope"
+        ],
+        [
+          "NoRegisterOfBeliefOpinionOrAssociationMembership",
+          "KnowledgeNoRegisterScope"
+        ],
+        [
+          "NoCertificationOfTruthTasteOrCreativeMerit",
+          "KnowledgeNonCertificationScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, NotRequirePermissionForUnrestrictedKnowledgeActivity, $record)",
+        "obliged($actor, NotRegisterBeliefOpinionOrAssociationMembership, $record)"
+      ],
+      "extra": [
+        "~($holder = $actor)",
+        "~($holder = $review)",
+        "~($holder = $reader)",
+        "~($holder = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "information",
+      "kind": "ReviewedPublicInformationDuty",
+      "fields": [
+        [
+          "$information",
+          "KnowledgeInformationScope"
+        ],
+        [
+          "$requester",
+          "KnowledgeRequesterScope"
+        ],
+        [
+          "$request_kind",
+          "KnowledgeRequestKindScope"
+        ],
+        [
+          "HeldByOrForAPublicFunction",
+          "KnowledgeInformationHoldingScope"
+        ],
+        [
+          "RefusalNeedsReviewedGroundReasonsAndPartialRelease",
+          "KnowledgeRefusalLimitScope"
+        ],
+        [
+          "NoPurposeTestAndNoFeeThatExcludes",
+          "KnowledgeAccessConditionScope"
+        ],
+        [
+          "AccessibleFormatAndLanguageOnRequest",
+          "KnowledgeAccessibleSupplyScope"
+        ]
+      ],
+      "heads": [
+        "permits($requester, $request_kind, $record)",
+        "obliged($actor, ProvideAccessiblePublicInformation, $record)"
+      ],
+      "extra": [
+        "~($requester = $actor)",
+        "~($requester = $review)",
+        "~($requester = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "accessibility",
+      "kind": "ReviewedAccessibleCommunicationDuty",
+      "fields": [
+        [
+          "$audience",
+          "KnowledgeAudienceScope"
+        ],
+        [
+          "$language",
+          "KnowledgeLanguageScope"
+        ],
+        [
+          "ProactiveAccessibleFormatsAndPlainLanguage",
+          "KnowledgeAccessibilityDesignScope"
+        ],
+        [
+          "IndividualAdjustmentOnRequestWithoutFee",
+          "KnowledgeAdjustmentScope"
+        ],
+        [
+          "NoMeaningCarriedOnlyByOneSenseOrNotation",
+          "KnowledgeSensoryNeutralityScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, SupplyKnowledgeInAccessibleFormAndLanguage, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "autonomy",
+      "kind": "ReviewedInquiryAndCreationAutonomy",
+      "fields": [
+        [
+          "$holder",
+          "KnowledgeHolderScope"
+        ],
+        [
+          "$work",
+          "KnowledgeWorkScope"
+        ],
+        [
+          "NoDirectionOfQuestionMethodResultOrContent",
+          "KnowledgeNonDirectionScope"
+        ],
+        [
+          "NoPriorApprovalOfPublicationOrPerformance",
+          "KnowledgeNoPriorApprovalScope"
+        ],
+        [
+          "FundingConditionsMayNotDictateFindings",
+          "KnowledgeFundingLimitScope"
+        ],
+        [
+          "NoCertificationOfTruthTasteOrCreativeMerit",
+          "KnowledgeNonCertificationScope"
+        ]
+      ],
+      "heads": [
+        "permits($holder, PublishInquiryOrCreationWithoutApproval, $record)",
+        "obliged($actor, NotDirectInquiryOrCreationContent, $record)"
+      ],
+      "extra": [
+        "~($holder = $actor)",
+        "~($holder = $review)",
+        "~($holder = $reader)",
+        "~($holder = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "plurality",
+      "kind": "ReviewedCommunicationConcentrationFinding",
+      "fields": [
+        [
+          "$concentration",
+          "KnowledgeConcentrationKindScope"
+        ],
+        [
+          "$service",
+          "KnowledgeServiceScope"
+        ],
+        [
+          "StructuralReachFindingNotContentJudgement",
+          "KnowledgeConcentrationEvidenceScope"
+        ],
+        [
+          "NoAdjudicationOfTruthOrEditorialChoice",
+          "KnowledgeContentNeutralityScope"
+        ],
+        [
+          "NoPersonSideClassificationOfAudienceOrBelief",
+          "KnowledgeAudienceLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, DiscloseCommunicationReachAndRankingBasis, $record)",
+        "permits($reader, InitiateIndependentPluralityReview, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "defect",
+      "kind": "ReviewedKnowledgeRecordDefect",
+      "fields": [
+        [
+          "$target",
+          "KnowledgeAffectedRecordScope"
+        ],
+        [
+          "$defect",
+          "KnowledgeDefectKindScope"
+        ],
+        [
+          "IndependentlyEstablishedIssueMakesThisExactRecordUnsupported",
+          "KnowledgeDefectDispositionScope"
+        ],
+        [
+          "NoAdverseHolderFactOrAutomaticIndividualRemedy",
+          "KnowledgeDefectLimitScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, KnowledgeRecordAuthorization)",
+        "obliged($reader, ReviewAndCorrectUnsupportedKnowledgeRecord, $target)",
+        "obliged($actor, PublishKnowledgeRecordCorrection, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, KnowledgeSourceAuthority, $target)",
+        "observe($target_source, $target, $matter, KnowledgeMatterScope)",
+        "observe($target_source, $target, $field, KnowledgeFieldScope)",
+        "observe($target_source, $target, $actor, KnowledgeActorScope)",
+        "observe($target_source, $target, $version, KnowledgeSourceVersionScope)",
+        "observe($target_source, $target, $period, KnowledgeEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, KnowledgeJurisdictionScope)",
+        "observe($target_source, $target, $scope, KnowledgeLegalScope)",
+        "observe($target_source, $target, $end, KnowledgeSourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "nonresponse",
+      "kind": "CertifiedKnowledgeReaderNonresponse",
+      "fields": [
+        [
+          "$target",
+          "KnowledgeAffectedRequestScope"
+        ],
+        [
+          "$requester",
+          "KnowledgeRequesterScope"
+        ],
+        [
+          "AuthenticatedNoticeAndRealOpportunityToAct",
+          "KnowledgeNoticeOpportunityScope"
+        ],
+        [
+          "$deadline",
+          "KnowledgeSourceBoundDeadlineScope"
+        ],
+        [
+          "IndependentPositiveReaderNonresponseFinding",
+          "KnowledgeNonresponseDispositionScope"
+        ],
+        [
+          "NoSilenceAsApprovalOrAdverseHolderFact",
+          "KnowledgeNonresponseLimitScope"
+        ]
+      ],
+      "heads": [
+        "obliged($alternate, ReviewKnowledgeRequestAndSecureIndependentRemedy, $target)"
+      ],
+      "extra": [
+        "~($source = $reader)",
+        "~($evidence = $reader)",
+        "~($review = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+person(KnowledgeNoted).
+at(KnowledgeNoted, GeneralAdulthood).
+observe(KnowledgeNoteWriter, KnowledgeNoteRecord, KnowledgeNoted, KnowledgeObservedBeliefScope).
+observe(KnowledgeNoteWriter, KnowledgeNoteRecord, KnowledgeNoted, KnowledgeObservedAssociationScope).

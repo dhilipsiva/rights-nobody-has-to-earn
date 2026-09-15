@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+
+? person(KnowledgeNoted).
+# => TRUE
+? owe(State, Eats, KnowledgeNoted).
+# => TRUE
+? decide(KnowledgeNoted, Ballot).
+# => TRUE
+? expresses(KnowledgeNoted).
+# => FALSE
+? false(KnowledgeNoted).
+# => FALSE
+? prisoner(KnowledgeNoted).
+# => FALSE
+? lose(Points, KnowledgeNoted).
+# => FALSE
+? prevents(KnowledgeNoted, CompelledConscience).
+# => TRUE
+? prevents(KnowledgeNoted, CoercedAssociation).
+# => TRUE
+? prevents(KnowledgeNoted, InvoluntaryAssociation).
+# => TRUE
+? person(Hano).
+# => TRUE
+? decide(Hano, Ballot).
+# => TRUE

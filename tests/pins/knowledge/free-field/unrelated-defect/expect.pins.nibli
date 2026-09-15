@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? permits(KnowledgeSequenceActor, EnforceReviewedKnowledgeRestriction, KnowledgeSequenceRecord).
+# => TRUE
+? obliged(KnowledgeSequenceActor, GiveKnowledgeEnforcementNoticeReasonsAndChallenge, KnowledgeSequenceRecord).
+# => TRUE
+? complete(KnowledgeSequenceRecord, ReviewedKnowledgeRestrictionEnforcement, KnowledgeSequenceMatter).
+# => TRUE
+? contradict(DifferentKnowledgeRecord, KnowledgeRecordAuthorization).
+# => TRUE
+? obliged(KnowledgeRestrictionDefectReader, ReviewAndCorrectUnsupportedKnowledgeRecord, DifferentKnowledgeRecord).
+# => TRUE
+? obliged(KnowledgeSequenceActor, PublishKnowledgeRecordCorrection, DifferentKnowledgeRecord).
+# => TRUE
+? complete(KnowledgeRestrictionDefectRecord, ReviewedKnowledgeRecordDefect, KnowledgeSequenceMatter).
+# => TRUE

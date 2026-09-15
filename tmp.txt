@@ -4,40 +4,51 @@ IN FLIGHT — 2026-09-15
 
 Author instruction for this run: work the TODO backlog one item at a time —
 implement, verify, commit, push, then take the next item — without asking
-questions. This supersedes the 2026-09-14 stop condition that was recorded here
-for the ecological item.
+questions. This supersedes the 2026-09-14 stop condition recorded here for the
+ecological item.
 
-VERIFIER PERFORMANCE ITEM — PROFILED, NOT CLOSED
+LANDED THIS RUN
 
-The complete inventory passes: all 77,902 pins across 13,566 cases with complete
-contradiction checks and no findings in 824.25 seconds (13m44.25s), four workers,
-release binary prebuilt, nine known-defect expectations still reproducing. Peak
-RSS 21,626,012 KiB, user CPU 3,174.52 s, 394% utilisation, no swaps. That misses
-the five-minute target and the tracker bullet stays open.
+- Verifier performance: profiled, not closed. 824.25 s for the pre-knowledge
+  inventory; phase table and priced leads in nibli-performance-candidate.md.
+  The tracker bullet stays open with the measurement and the leads.
+- Licensing: the code-licence bullet was already satisfied; `combine.sh` was
+  the one post-decision file with no SPDX header and now has one.
+- Time account: chapters 4, 5 and 13 were re-read against the current model and
+  already align; the bullet was stale and is deleted.
+- Registry: `demo-happy-prior-analysis` records the superseded EIU-era analysis
+  and its dataset provenance. What remains open is narrower and is the author's:
+  whether the repository may grant CC0 over EIU index values in the root CSV.
+- Run-it-yourself: `engine.pin` publishes the exact engine revision and
+  `./bootstrap.sh` puts it beside a fresh clone. Exercised from clean inputs.
+- Knowledge, communication, culture and the free social field: implemented.
 
-What this run added is the measurement the bullet asked for, not a speedup. The
-phase table, the case shapes and each lead's measured size are in
-new-book-plans/nibli-performance-candidate.md. In short: about 3,143 cumulative
-worker-seconds against the roughly 1,200 the target needs; queries 1,652 and
-fixture loading 624 of them; contradiction scans below one per cent.
+THE KNOWLEDGE FAMILY
 
-Three leads were measured and priced down rather than pursued: preparation
-already builds each of the 127 variant bases exactly once, batch-wide fixture
-hoisting is worth nothing because the intersection over each of the 389 batches
-is empty by construction, and caching compiled fixture statements is worth about
-60 worker-seconds because compilation is only a tenth of fixture time.
+`knowledge-source.json` plus `./generate.sh knowledge` write 129 rules into the
+constitution and 512 isolated cases. Nine contracts: reviewed restriction and
+its dependent enforcement, residual freedom, public information, accessible
+communication, inquiry and creation autonomy, communication concentration,
+reviewed defect and certified nonresponse. Ten closed fields, two harm grounds,
+and no new relation name — the spine's predicate, derived and stratum counts
+and the eight floor rights are unchanged; only the rule count moves.
 
-The largest sized lead is about 15% and is engine-internal: the first query in a
-fresh snapshot costs 37-48 ms whatever it asks, because the knowledge base's
-Clone drops both the saturation and the witness closure, so every case re-derives
-the same 256 witness activations. Carrying them across a snapshot needs a domain
-dependency cone in nibli-reason and the companion's own soundness checks.
+The complete verifier passed all 79,511 pins across 14,078 cases with complete
+contradiction checks and no findings in 816.98 seconds, nine known defects still
+reproducing. Adding 512 cases did not move the total, which matches the profile:
+the cost is per-case fixed work and a heavy tail, not case count.
 
-The temporary engine instrumentation used to find that was reverted; the
-companion checkout is back at 979fe8b with a clean tree. The runner's manual
-probe keeps the two ecology cases, the two degenerate cases and the
-RIGHTS_PROFILE_CONE query measurement, so the finding reproduces.
+The reader section "What nobody has to ask permission for" is inserted in
+chapter 8 between "Protection does not require being human" and "Owed is not the
+same as delivered"; `knowledge-reader-draft.md` retains the wording and the
+chapter's pin file lists its supporting cases.
 
-The stale README claim that the verifier meets the five-minute target — measured
-on the 4,190-case inventory that preceded the ecological family — is corrected in
-the same change.
+ONE PRE-EXISTING RED DEVELOPMENT TEST, REPORTED NOT REPAIRED
+
+`authoring::mobility::tests::actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequences`
+fails at `3e199dc1` and before — verified in a clean worktree at that commit,
+so it is not caused by this work. Its allow-list branch requires every line in
+the constitution mentioning a mobility or plurality token to belong to the
+mobility rule set, and the public-safety and ecological families now reference
+mobility scopes. The knowledge block trips neither of its branches. A tracker
+bullet now carries it; `./verify.sh` is unaffected.

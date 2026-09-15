@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 3
+
+? permits(KnowledgeCaseHolder, PublishInquiryOrCreationWithoutApproval, KnowledgeCaseRecord).
+# => FALSE
+? obliged(KnowledgeCaseActor, NotDirectInquiryOrCreationContent, KnowledgeCaseRecord).
+# => FALSE
+? complete(KnowledgeCaseRecord, ReviewedInquiryAndCreationAutonomy, KnowledgeCaseMatter).
+# => FALSE

@@ -1,0 +1,133 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 31
+
+? authority(KnowledgeSequenceActor, ReviewedConductRestriction, KnowledgeSequenceAuthorization).
+# => TRUE
+? obliged(KnowledgeSequenceActor, PublishKnowledgeRestrictionReasonsAndEvidence, KnowledgeSequenceAuthorization).
+# => TRUE
+? obliged(KnowledgeAuthorizationReader, HearKnowledgeRestrictionChallengeAndCorrect, KnowledgeSequenceAuthorization).
+# => TRUE
+? complete(KnowledgeSequenceAuthorization, ReviewedKnowledgeRestriction, KnowledgeSequenceMatter).
+# => TRUE
+? permits(KnowledgeSequenceActor, EnforceReviewedKnowledgeRestriction, KnowledgeSequenceRecord).
+# => TRUE
+? obliged(KnowledgeSequenceActor, GiveKnowledgeEnforcementNoticeReasonsAndChallenge, KnowledgeSequenceRecord).
+# => TRUE
+? complete(KnowledgeSequenceRecord, ReviewedKnowledgeRestrictionEnforcement, KnowledgeSequenceMatter).
+# => TRUE
+authorized(KnowledgeRestrictionDefectSource, KnowledgeSourceAuthority, KnowledgeRestrictionDefectRecord).
+authorized(KnowledgeRestrictionDefectEvidence, IndependentKnowledgeEvidenceAuthority, KnowledgeRestrictionDefectRecord).
+authorized(KnowledgeRestrictionDefectReview, IndependentKnowledgeReviewAuthority, KnowledgeRestrictionDefectRecord).
+authorized(KnowledgeRestrictionDefectReader, KnowledgeChallengeReaderAuthority, KnowledgeRestrictionDefectRecord).
+authorized(KnowledgeRestrictionDefectAlternate, KnowledgeAlternateReviewAuthority, KnowledgeRestrictionDefectRecord).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceMatter, KnowledgeMatterScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceMatter, KnowledgeMatterScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceMatter, KnowledgeMatterScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceActor, KnowledgeActorScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceActor, KnowledgeActorScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceActor, KnowledgeActorScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequencePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequencePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequencePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceScope, KnowledgeLegalScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceScope, KnowledgeLegalScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceScope, KnowledgeLegalScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectChallenge, KnowledgeChallengeScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectChallenge, KnowledgeChallengeScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectChallenge, KnowledgeChallengeScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectRemedy, KnowledgeRemedyScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectRemedy, KnowledgeRemedyScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeRestrictionDefectRemedy, KnowledgeRemedyScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, ReviewedKnowledgeRecordDefect, KnowledgeRecordKindScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, ReviewedKnowledgeRecordDefect, KnowledgeRecordKindScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, ReviewedKnowledgeRecordDefect, KnowledgeRecordKindScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, KnowledgeSequenceAuthorization, KnowledgeAffectedRecordScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, KnowledgeSequenceAuthorization, KnowledgeAffectedRecordScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, KnowledgeSequenceAuthorization, KnowledgeAffectedRecordScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, UnevidencedHarmGround, KnowledgeDefectKindScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, UnevidencedHarmGround, KnowledgeDefectKindScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, UnevidencedHarmGround, KnowledgeDefectKindScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, IndependentlyEstablishedIssueMakesThisExactRecordUnsupported, KnowledgeDefectDispositionScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, IndependentlyEstablishedIssueMakesThisExactRecordUnsupported, KnowledgeDefectDispositionScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, IndependentlyEstablishedIssueMakesThisExactRecordUnsupported, KnowledgeDefectDispositionScope).
+observe(KnowledgeRestrictionDefectSource, KnowledgeRestrictionDefectRecord, NoAdverseHolderFactOrAutomaticIndividualRemedy, KnowledgeDefectLimitScope).
+observe(KnowledgeRestrictionDefectEvidence, KnowledgeRestrictionDefectRecord, NoAdverseHolderFactOrAutomaticIndividualRemedy, KnowledgeDefectLimitScope).
+observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, NoAdverseHolderFactOrAutomaticIndividualRemedy, KnowledgeDefectLimitScope).
+? contradict(KnowledgeSequenceAuthorization, KnowledgeRecordAuthorization).
+# => TRUE
+? obliged(KnowledgeRestrictionDefectReader, ReviewAndCorrectUnsupportedKnowledgeRecord, KnowledgeSequenceAuthorization).
+# => TRUE
+? obliged(KnowledgeSequenceActor, PublishKnowledgeRecordCorrection, KnowledgeSequenceAuthorization).
+# => TRUE
+? complete(KnowledgeRestrictionDefectRecord, ReviewedKnowledgeRecordDefect, KnowledgeSequenceMatter).
+# => TRUE
+? authority(KnowledgeSequenceActor, ReviewedConductRestriction, KnowledgeSequenceAuthorization).
+# => FALSE
+? obliged(KnowledgeSequenceActor, PublishKnowledgeRestrictionReasonsAndEvidence, KnowledgeSequenceAuthorization).
+# => FALSE
+? obliged(KnowledgeAuthorizationReader, HearKnowledgeRestrictionChallengeAndCorrect, KnowledgeSequenceAuthorization).
+# => FALSE
+? complete(KnowledgeSequenceAuthorization, ReviewedKnowledgeRestriction, KnowledgeSequenceMatter).
+# => FALSE
+? permits(KnowledgeSequenceActor, EnforceReviewedKnowledgeRestriction, KnowledgeSequenceRecord).
+# => FALSE
+? obliged(KnowledgeSequenceActor, GiveKnowledgeEnforcementNoticeReasonsAndChallenge, KnowledgeSequenceRecord).
+# => FALSE
+? complete(KnowledgeSequenceRecord, ReviewedKnowledgeRestrictionEnforcement, KnowledgeSequenceMatter).
+# => FALSE
+? person(KnowledgeSequenceAffected).
+# => TRUE
+? owe(State, Eats, KnowledgeSequenceAffected).
+# => TRUE
+? decide(KnowledgeSequenceAffected, Ballot).
+# => TRUE
+? expresses(KnowledgeSequenceAffected).
+# => FALSE
+? false(KnowledgeSequenceAffected).
+# => FALSE
+? prisoner(KnowledgeSequenceAffected).
+# => FALSE
+? lose(Points, KnowledgeSequenceAffected).
+# => FALSE
+? prevents(KnowledgeSequenceAffected, CompelledConscience).
+# => TRUE
+? prevents(KnowledgeSequenceAffected, CoercedAssociation).
+# => TRUE
+? person(Hano).
+# => TRUE
+? owe(State, Eats, Hano).
+# => TRUE
+? decide(Hano, Ballot).
+# => TRUE
+? authority(Boss).
+# => TRUE

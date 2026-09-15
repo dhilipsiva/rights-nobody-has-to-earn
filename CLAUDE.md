@@ -58,8 +58,9 @@ measurements and any remaining bottleneck honestly.
 Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
-`./generate.sh justice`, `./generate.sh public-safety`,
-`./generate.sh ecology`, and `./generate.sh spine`. They write semantic
+`./generate.sh justice`, `./generate.sh knowledge`,
+`./generate.sh public-safety`, `./generate.sh ecology`, and
+`./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
 Pending JSON authoring edits are not enacted automatically by verification.
 
@@ -1142,6 +1143,53 @@ investigation, enforcement workflow and publication. Nibli authenticates no
 payment, detects no coordination, proves no disclosure arrived, and advances
 no clock. Controlling record:
 `new-book-plans/book-1-democratic-and-administrative-integrity-decision.md`.
+
+#### Knowledge, communication, culture, and the free social field — 2026-09-15
+
+**Implemented under the expanded mandate; no separate author ruling was
+reserved for it.** The family settles what a public actor must establish before
+it narrows learning and information access, expression and publication,
+conscience, religion and non-belief, association and assembly, media and press
+plurality, academic and scientific inquiry, artistic and cultural creation,
+language and accessible communication, public information access, or sport,
+leisure, friendship and mutual aid. Those fields are a closed vocabulary; a
+record outside it completes nothing.
+
+A reviewed restriction requires an evidenced rights or commons harm — those two
+grounds only, and the evidence field names offence, disagreement and official
+truth as what the ground is not — with least-restrictive effective means, a
+defined reach and affected population, public reasons and accessible notice,
+independent review with a suspensive challenge, no viewpoint, belief or
+identity targeting, and an end. Enforcement is a separate dependent record that
+rejoins the exact reviewed restriction, so one reviewed for a matter or a field
+cannot be borrowed for another, and it reaches no floor, standing, ballot or
+recognition.
+
+**Residual freedom is written as a positive record, never inferred from
+silence,** and its conclusions are duties on the public actor: not to require
+permission, and not to register belief, opinion or association membership.
+Public information carries access, correction and accessible-form permissions
+with refusal confined to a reviewed ground; accessible communication and
+inquiry/creation autonomy carry their own duties; a communication-concentration
+finding is structural and actor-side, adjudicating no truth and no editorial
+choice and classifying no audience or belief.
+
+Three mutually distinct attesters plus a separate challenge reader and
+independent alternate are required, none of them the acting body; disagreeing
+attesters raise a record ambiguity that completes nothing. Every head is
+`derived_only` upstream, so a forged entry is refused at assertion. The family
+introduces no new relation name, so the spine's predicate, derived-predicate
+and stratum counts and the eight floor rights are unchanged.
+
+Book 2 owns schools, libraries, archives, broadcasters, platforms, translation
+and interpretation, format production, publication workflow, funding
+administration and media-market measurement. Nibli authenticates no
+publication, measures no audience, detects no concentration, decides no
+accessibility need and proves that no information arrived. The exact reader
+section "What nobody has to ask permission for" is inserted in Book 1 chapter
+8, `session-drafted, author-approved under delegated approval (2026-09-13)`;
+`new-book-plans/knowledge-reader-draft.md` retains the wording. Controlling
+record: `new-book-plans/book-1-knowledge-and-free-field-contract.md`.
 
 #### Surviving guardrails and the democratic corridor
 

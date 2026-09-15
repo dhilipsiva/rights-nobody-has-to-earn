@@ -33,6 +33,39 @@ opening note, Part V and method aligned. These verified case-level
 interfaces supersede the historical absence descriptions below to their
 bounded extent, not as evidence of an operating institution or real protection.
 
+## Knowledge and free-field implementation — 2026-09-15
+
+[Knowledge, communication, culture and the free social field](book-1-knowledge-and-free-field-contract.md)
+now supplies the conditions a public actor must establish before it narrows
+learning and information access, expression and publication, conscience,
+religion and non-belief, association and assembly, media and press plurality,
+academic and scientific inquiry, artistic and cultural creation, language and
+accessible communication, public information access, or sport, leisure,
+friendship and mutual aid. The semantic input is `knowledge-source.json` and
+the explicit `knowledge` generator produces its rules and cases.
+
+A restriction needs an evidenced rights or commons harm, least-restrictive
+means, a defined reach, public reasons, independent review with a suspensive
+challenge, viewpoint and belief neutrality, and an end; enforcement rejoins the
+exact reviewed restriction. Where nothing is restricted the duty runs the other
+way, against demanding permission and against registering belief, opinion or
+membership. Public information, accessible communication and inquiry and
+creation autonomy carry their own duties, and a communication-concentration
+finding is structural and adjudicates no content.
+
+These interfaces supersede the historical liberty-row absence descriptions in
+the projection below to their bounded extent. The exact reader section "What
+nobody has to ask permission for" is inserted in Book 1 chapter 8; its supply
+is `session-drafted, author-approved under delegated approval (2026-09-13)`,
+and `knowledge-reader-draft.md` retains the wording. Nothing here operates a
+school, library, archive, broadcaster, platform or club, and nothing certifies
+truth, taste, belief, creativity, a relationship or fulfilment.
+
+**The generated projection below predates this family.** Its generator was
+retired by the 2026-09-12 verification decision, so the section-3 table is a
+frozen historical artifact rather than a current view; read the implementation
+updates above it for what has since landed.
+
 ## Integrity implementation update — 2026-09-12
 
 The democratic/administrative integrity decision now has executable office,

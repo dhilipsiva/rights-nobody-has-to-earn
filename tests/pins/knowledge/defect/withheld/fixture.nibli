@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(KnowledgeCaseTargetSource, KnowledgeSourceAuthority, KnowledgeCaseTarget).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCaseMatter, KnowledgeMatterScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCaseActor, KnowledgeActorScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCaseVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCasePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCaseJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCaseScope, KnowledgeLegalScope).
+observe(KnowledgeCaseTargetSource, KnowledgeCaseTarget, KnowledgeCaseEnd, KnowledgeSourceBoundEndScope).
