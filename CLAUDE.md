@@ -60,7 +60,7 @@ Useful authoring generators remain behind `./generate.sh state-form`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
 `./generate.sh justice`, `./generate.sh knowledge`,
 `./generate.sh reader-coverage`, `./generate.sh record-power`,
-`./generate.sh scarcity`,
+`./generate.sh resolution-receipts`, `./generate.sh scarcity`,
 `./generate.sh public-safety`, `./generate.sh ecology`, and
 `./generate.sh spine`. They write semantic
 rules and tests explicitly; normal verification reads the resulting Nibli.
@@ -1882,6 +1882,26 @@ person's word" — and every one states a rule rather than counting the record's
 contents. The banned shape is "four people have shelter"; the difference from
 "it takes two auditors" is semantic, and an allowlist of 60 sentences would rot
 faster than the prose it guarded. That half is prose review.
+
+**Claim-scoped resolution receipts replace confession-as-ending — 2026-09-15.**
+Twelve threads where the book identifies a defect, claims a repair or uses a
+failure as a witness each end in exactly one of five states:
+`resolved-for-claim`, `operationally-unresolved`, `externally-bounded`,
+`irreducible-limitation`, `open-defect`. Naming a limitation and moving on is
+not among them. Every receipt states what failed, what changed, how the former
+attack is rerun, what still does not follow and what remains external or open,
+and `./generate.sh resolution-receipts` projects the report.
+
+**Three checks make it hard to cheat.** A `rerun` path that does not exist fails
+— a repair with nothing to rerun is a claim, not a receipt. A `phrase` the book
+no longer contains fails, so a receipt cannot outlive the thread it describes.
+And **a chapter that narrates a repair with no receipt fails**, using the book's
+own idiom for telling one, so a repair cannot be claimed in prose and left
+without an ending. All three are sabotage-tested.
+
+Five of the twelve are `resolved-for-claim`; the rest are not, and the report
+gives disclosure no credit for closure. The generator refuses a table in which
+everything is resolved, because this design has never been in that state.
 
 **The reader-experience coverage ledger is landed — 2026-09-15.**
 `reader-coverage-source.json` classifies all 86 derived-chapter and Part V

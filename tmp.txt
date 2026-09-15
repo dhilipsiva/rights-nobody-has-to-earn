@@ -304,3 +304,22 @@ for a passage to show working, and writing one would be fictionalising coverage
 first.
 
 That is the difference between filling a table and reading one.
+
+RESOLUTION RECEIPTS
+
+Twelve threads where the book identifies a defect, claims a repair or uses a
+failure as a witness now end in exactly one of five states. Each receipt says
+what failed, what changed, how the former attack is rerun, what still does not
+follow, and what remains external or open.
+
+Three checks make it hard to cheat, all sabotage-tested. A rerun path that does
+not exist fails — a repair with nothing to rerun is a claim, not a receipt. A
+phrase the book no longer contains fails, so a receipt cannot outlive its
+thread. And a chapter that narrates a repair with no receipt fails, detected by
+the book's own idiom for telling one: "used to", "no longer", "the repair", "it
+is resolved". That third check found three threads I had missed — the shield
+that did not ask whom you exposed, the voiding word one entry wide, and the
+one-sided closure of the record — and they are now receipted.
+
+Five of twelve are resolved-for-claim. The generator refuses a table in which
+everything is resolved, because this design has never been in that state.

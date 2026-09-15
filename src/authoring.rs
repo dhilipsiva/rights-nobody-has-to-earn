@@ -30,6 +30,8 @@ mod public_safety;
 mod reader_coverage;
 #[path = "authoring/record_power.rs"]
 mod record_power;
+#[path = "authoring/resolution_receipts.rs"]
+mod resolution_receipts;
 #[path = "authoring/scarcity.rs"]
 mod scarcity;
 #[path = "authoring/spine.rs"]
@@ -240,12 +242,13 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             | "knowledge"
             | "reader-coverage"
             | "record-power"
+            | "resolution-receipts"
             | "scarcity"
             | "public-safety"
             | "ecology"
     ) {
         return Err(Error::usage(
-            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|reader-coverage|record-power|scarcity|public-safety|ecology|spine",
+            "usage: ./generate.sh state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -262,6 +265,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         "knowledge" => knowledge::generate(context, &mut export)?,
         "reader-coverage" => reader_coverage::generate(context, &mut export)?,
         "record-power" => record_power::generate(context, &mut export)?,
+        "resolution-receipts" => resolution_receipts::generate(context, &mut export)?,
         "scarcity" => scarcity::generate(context, &mut export)?,
         "public-safety" => public_safety::generate(context, &mut export)?,
         "ecology" => ecology::generate(context, &mut export)?,

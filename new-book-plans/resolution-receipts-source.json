@@ -1,0 +1,148 @@
+{
+  "receipts": [
+    {
+      "id": "writable-credential",
+      "chapter": "book-1/03-who-holds-the-pen.md",
+      "section": "The gap that used to be here",
+      "what_failed": "An examiner's pen could be written down directly, so the credential a voiding needs was a fact somebody typed rather than a conclusion anything derived.",
+      "what_changed": "The credential became derivable only, and the two doors that reach it carry word-for-word the same conditions.",
+      "state": "resolved-for-claim",
+      "rerun": "new-book-plans/counterfactual/unguarded-pen.pins.nibli",
+      "phrase": "That hole is now closed in two places",
+      "still_not_established": "That any seating body exists, sits, or is honest. The rule is only as good as the fact underneath it.",
+      "external_or_open": "The seating fact is supplied from outside and is not produced here."
+    },
+    {
+      "id": "student-clawback",
+      "chapter": "book-1/06-clawback.md",
+      "section": "Cira, and the rule that is no longer here",
+      "what_failed": "A student's recognition was docked for a teacher's adjudicated fraud — negative scoring of somebody who did nothing.",
+      "what_changed": "The rule was deleted outright rather than narrowed, because students never mint and narrowing would have been repeal.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/06-clawback.pins.nibli",
+      "phrase": "the resolution was a deletion",
+      "still_not_established": "That anything is ever un-minted. Loss stays a leaf and derivation stays monotone; the surviving guards never-mint rather than subtract.",
+      "external_or_open": "None. The rule is gone from the source."
+    },
+    {
+      "id": "placement-marker",
+      "chapter": "book-1/11-where-people-are-put.md",
+      "section": "The alarm that did not work",
+      "what_failed": "The marker meant to report bad placements fired on correctly placed people and on nobody who was misplaced — wrong every time it spoke.",
+      "what_changed": "The marker was repaired, and the audit now constructs every placement combination from writable premises rather than asserting the ones it expects.",
+      "state": "resolved-for-claim",
+      "rerun": "tests/pins/placement/opposite-destination/observations.pins.nibli",
+      "phrase": "a marker that flags a bad placement",
+      "still_not_established": "That anyone reads the marker, acts on it, or moves anybody. It is an alarm, not a remedy.",
+      "external_or_open": "The placement-input authority, provenance and challenge gaps stay with the justice interface."
+    },
+    {
+      "id": "unread-duty",
+      "chapter": "book-1/14-when-the-system-notices-it-broke.md",
+      "section": "And then a duty, which no longer has to be the end",
+      "what_failed": "A recorded breach concluded a two-place duty that nothing read, so the audit ended in a determination and stopped.",
+      "what_changed": "One allowlisted bridge reads that compatibility conclusion and concludes typed reader, action, non-response, alternate, continuity, remedy, correction, re-audit and recurrence duties.",
+      "state": "operationally-unresolved",
+      "rerun": "tests/pins/obligations/case-001/expect.pins.nibli",
+      "phrase": "now something does follow",
+      "still_not_established": "That a reader received anything, acted, corrected an abuse, completed a remedy or prevented recurrence. No rule proves receipt or action.",
+      "external_or_open": "Every liveness premise here belongs to Book 2 or to operational assurance, which is unbuilt."
+    },
+    {
+      "id": "kinship-silence",
+      "chapter": "book-1/05-voiding.md",
+      "section": "What it costs",
+      "what_failed": "Independence was manufactured from missing parent, marriage and sibling entries, so a missing record looked exactly like no relationship.",
+      "what_changed": "Both signers now need affirmative, case-bound independent-reviewer findings that are challengeable and cannot be borrowed across cases.",
+      "state": "externally-bounded",
+      "rerun": "new-book-plans/counterfactual/no-missing-kinship-independence.pins.nibli",
+      "phrase": "Independence must be found, not guessed from silence",
+      "still_not_established": "That the finding is true, that the checking body exists, or that capture is eliminated. Two compromised writers can still supply matching false findings.",
+      "external_or_open": "Authentication of the reviewers is external; the price moved from pretending silence is evidence to requiring an attributable decision."
+    },
+    {
+      "id": "roster-standing",
+      "chapter": "book-1/07-a-prisoner-is-a-person.md",
+      "section": "The standing roots do not replace this line",
+      "what_failed": "Personhood waited on somebody maintaining a roster, so a person never entered was indistinguishable from a person who does not exist.",
+      "what_changed": "An externally supplied birth fact, first contact, physical presence or effective control establishes personhood immediately.",
+      "state": "externally-bounded",
+      "rerun": "new-book-plans/counterfactual/no-first-contact-standing.pins.nibli",
+      "phrase": "Standing no longer waits for someone to maintain a roster",
+      "still_not_established": "That anybody supplies the fact. The transition rule cannot discover someone never entered or detect deletion before the first attested record.",
+      "external_or_open": "The first-record boundary is external and is disclosed rather than closed."
+    },
+    {
+      "id": "floor-delivery-markers",
+      "chapter": "book-1/08-what-you-are-owed.md",
+      "section": "Owed is not the same as delivered",
+      "what_failed": "Nothing watches the floor debt against arrival: the design audits what it does and not what it owes.",
+      "what_changed": "Nothing. A marker was measured and refused while the record holds no arrival facts, because one that fires on everybody discriminates nobody.",
+      "state": "open-defect",
+      "rerun": "new-book-plans/counterfactual/undelivered-marker.pins.nibli",
+      "phrase": "Owed is not the same as delivered",
+      "still_not_established": "Any claim that the floor arrives. The supplied record derives floor actualities only through confinement.",
+      "external_or_open": "The refusal expires with its premise: Book 2's delivery layer generating arrival facts is what reopens it."
+    },
+    {
+      "id": "attester-collusion",
+      "chapter": "book-1/05-voiding.md",
+      "section": "It takes two, from two places",
+      "what_failed": "Nothing authenticates a witness or checks that attested evidence is true.",
+      "what_changed": "Nothing, and nothing can here. The design raises the price instead — distinct named writers from different bodies, a reader, an alternate, published reasons, all attributable.",
+      "state": "irreducible-limitation",
+      "rerun": "tests/pins/red-team/collusion-three-attesters-who-agree/expect.pins.nibli",
+      "phrase": "it counts signers",
+      "still_not_established": "That agreement means truth. A record founded on matching lies completes exactly as one founded on matching truths.",
+      "external_or_open": "Detection is external and belongs to operational assurance, which is unbuilt."
+    },
+    {
+      "id": "family-ordinary-half",
+      "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
+      "section": "Children, the difference between not yet and taken — and a third thing",
+      "what_failed": "The family, dependency, reproduction and care baseline landed its person-held barriers and no ordinary-operation interface, so the domain appears only under strain.",
+      "what_changed": "Nothing yet. The reader ledger found it; writing a passage showing family life working would fictionalise coverage the source does not derive.",
+      "state": "open-defect",
+      "rerun": "new-book-plans/reader-coverage.md",
+      "phrase": "not yet",
+      "still_not_established": "Any claim that this book shows ordinary family, care or life-course operation.",
+      "external_or_open": "The ordinary half has to be implemented before the passage exists; the tracker carries it."
+    },
+    {
+      "id": "shield-without-a-target",
+      "chapter": "book-1/04-the-shield.md",
+      "section": "Don",
+      "what_failed": "The shield asked what you exposed and not whom: any defendant could name their own accuser or victim and become unjailable.",
+      "what_changed": "The rule now asks who was exposed, so exposing the person you injured earns nothing.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/04-the-shield.pins.nibli",
+      "phrase": "Under an earlier version of this design it worked",
+      "still_not_established": "That the exposure was true or made in good faith. Absence of a deceit finding protects, and that default is priced rather than removed.",
+      "external_or_open": "The exposure surface stays unbounded by design; every proposed bound trades one of three protections."
+    },
+    {
+      "id": "borrowed-void-word",
+      "chapter": "book-1/12-changing-the-rules.md",
+      "section": "The word the machinery borrows, and the person it nearly cost",
+      "what_failed": "The voiding rule read anything recorded as touching a protected item, so one entry written by anyone about anyone could void a person.",
+      "what_changed": "The rule was narrowed to the amendment machinery it was written for, and the reuse of one word across two machineries is disclosed rather than tidied away.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/12-changing-the-rules.pins.nibli",
+      "phrase": "the day the frugality nearly became a catastrophe",
+      "still_not_established": "That reusing a word is safe in general. It was frugal, it nearly cost somebody their credibility, and the saving is still taken.",
+      "external_or_open": "Nothing external. The cost of every future reuse is the argument this section exists to make."
+    },
+    {
+      "id": "one-sided-closure",
+      "chapter": "book-1/01-what-counts-as-evidence.md",
+      "section": "The way this gets taken apart",
+      "what_failed": "The closed record is extensional and one-sided: a word never used can be declared and used in the same breath, and a direct vocabulary widening bypasses the amendment machinery entirely.",
+      "what_changed": "Nothing, deliberately. A list that could never grow would be a design that could never learn, so the closure makes widening source-visible rather than impossible.",
+      "state": "irreducible-limitation",
+      "rerun": "tests/pins/amendments/AS-09/expect.pins.nibli",
+      "phrase": "a list that could never grow would be a design that could never learn",
+      "still_not_established": "That widening is approved, authenticated or entrenched. Article 9 marks a label, not a change; nothing reads the law label at all.",
+      "external_or_open": "Whoever reviews the source is the control. A future entrenchment design would have to bind an exact change, an independent effect review and an effective version."
+    }
+  ]
+}

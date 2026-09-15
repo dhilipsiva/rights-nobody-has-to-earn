@@ -36,6 +36,7 @@ destination.
 | `new-book-plans/book-1-scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
 | `new-book-plans/book-1-red-team-index.md` | One entry per strategic behaviour: who gains, who pays, what stops it, and where nothing does. |
 | `new-book-plans/reader-coverage-source.json` | Every derived-chapter and Part V passage classified by domain, function, posture and trajectory. |
+| `new-book-plans/resolution-receipts-source.json` | Every repair thread's ending: what failed, what changed, how the attack is rerun, what still does not follow. |
 | `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
@@ -133,6 +134,7 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh knowledge
 ./generate.sh reader-coverage
 ./generate.sh record-power
+./generate.sh resolution-receipts
 ./generate.sh scarcity
 ./generate.sh public-safety
 ./generate.sh ecology

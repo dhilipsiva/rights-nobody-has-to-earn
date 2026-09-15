@@ -399,38 +399,6 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     ordinary-life illustration remains non-evidentiary under the author-ruled
     narrative register.
 
-- [ ] **Replace confession-as-ending with claim-scoped resolution receipts.**
-  - Whenever the book identifies a design, model, argument, evidence, or reader
-    defect; claims a former contradiction was repaired; or uses a narrated harm/
-    hostile case as a witness of such a defect, end that thread in exactly one
-    honest state: a verifiable claim-scoped resolution; an interface that remains
-    operationally unresolved;
-    an externally bounded or irreducible limitation with the public claim narrowed;
-    or an open defect that blocks the affected claim. Naming the limitation and
-    moving on is not a resolution.
-  - The jargon-free reader receipt states what failed, why it failed, what changed
-    or responded, what now follows, how the former attack was rerun, what still
-    does not follow, and which dependency remains external or open. Use
-    `eliminated-structurally`, `prevented`,
-    `protected-consequence-contained`, and `remedied` language only for the
-    narrower claim whose defect disposition, response stage, and assurance close it.
-  - Link each reader receipt to the generated technical receipt with exact claim
-    and defect IDs, source change, hostile witness/mutation, relevant pin/model/
-    evidence or operational test, negative control, scope, residual, and gate.
-    Parts I-V remain ordinary language; the public ledger supplies the derivable
-    and reproducible detail. Do not widen sealed `method.md` merely to duplicate
-    the ledger.
-  - Fail the reader audit when prose says `resolved`, `fixed`, `prevents`,
-    `contains`, `restores`, `ensures`, or an equivalent without an eligible
-    defect disposition, response stage, assurance record, and receipt; when a
-    receipt proves only detection or specification; when a repaired passage omits
-    its residual boundary; or when a confessed limit
-    has no defect record, owner, claim restriction, and gate consequence.
-  - **Done when:** every claimed repair has a version-bound receipt and the
-    generated navigation exposes its assigned verification route, exact resolution,
-    and surviving boundary without giving disclosure any credit as closure. No
-    external reader event is required.
-
 - [ ] **Rebalance the pinned case portfolio without fictionalising it.**
   - **This item is the consumer, not the fix.** The 2026-08-08 narrative-register
     ruling measured the then-current deficit, and the delivery family has now
@@ -1067,6 +1035,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh knowledge
 ./generate.sh reader-coverage
 ./generate.sh record-power
+./generate.sh resolution-receipts
 ./generate.sh scarcity
 ./generate.sh spine
 ~~~
