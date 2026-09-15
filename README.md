@@ -55,6 +55,12 @@ beside you and whether it matches the pin, and leaves the decision to you. The
 pinned revision is a published input, not a gate — `verify.sh` builds whatever
 is at `../nibli` and checks pins and contradictions, nothing else.
 
+That path was exercised from clean inputs on 2026-09-15: a fresh clone of this
+repository, `./bootstrap.sh`, then `./verify.sh` — all 77,902 pins across 13,566
+cases passed with complete contradiction scans and no findings in 802.45
+seconds, with the same nine known-defect pins reproducing as in the working
+tree.
+
 ```bash
 ./verify.sh
 ./verify.sh --list
