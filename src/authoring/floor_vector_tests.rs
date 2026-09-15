@@ -10,6 +10,7 @@
 
 use super::*;
 use regex::Regex;
+use std::collections::BTreeSet;
 
 /// The eight floor actualities, spelled as the constitution spells them.
 const FLOOR: [&str; 8] = [
@@ -332,4 +333,141 @@ fn a_duty_is_not_an_action_because_nothing_reads_one() {
             "control {hostile} does not exercise the census it is meant to trip"
         );
     }
+}
+
+/// Families whose every record completion carries the challenge reader and the
+/// independent alternate. The two older families predate that convention and are
+/// named below rather than quietly excused.
+const CHALLENGE_SKELETON: [&str; 8] = [
+    "DEMOCRATIC-INTEGRITY",
+    "ECOLOGICAL-ANIMAL",
+    "KNOWLEDGE-AND-FREE-FIELD",
+    "MOBILITY-PLURALITY",
+    "NON-CARCERAL-JUSTICE",
+    "OFFICIAL-STATISTICS",
+    "PUBLIC-SAFETY",
+    "RECORD-POWER",
+];
+const PREDATES_CHALLENGE_SKELETON: [&str; 2] = ["ECONOMIC-CONSTITUTION", "STATE-FORM"];
+
+/// The generated block a statement sits in, or `ARTICLES` for the hand-written
+/// spine. Blocks do not nest, so a single open marker is enough to track.
+fn families() -> Vec<(String, String)> {
+    let source = Context::discover()
+        .expect("repository")
+        .read("new-book-plans/constitution.nibli")
+        .expect("constitution");
+    let begin = Regex::new(r"^#\s*<([A-Z-]+)-RULES-BEGIN>$").unwrap();
+    let end = Regex::new(r"^#\s*<([A-Z-]+)-RULES-END>$").unwrap();
+    let mut open = String::from("ARTICLES");
+    let mut rows = Vec::new();
+    for line in source.lines().map(str::trim) {
+        if let Some(caught) = begin.captures(line) {
+            open = caught[1].to_owned();
+            continue;
+        }
+        if end.is_match(line) {
+            open = String::from("ARTICLES");
+            continue;
+        }
+        if !line.is_empty() && !line.starts_with('#') {
+            rows.push((open.clone(), line.to_owned()));
+        }
+    }
+    rows
+}
+
+/// A three-place record completion — the shape every family uses for "this
+/// record is complete for this kind about this subject". The two-place
+/// `complete` of the legacy transition articles is a different relation.
+fn record_completions() -> Vec<(String, String, String)> {
+    families()
+        .into_iter()
+        .filter_map(|(family, statement)| {
+            let (body, head) = split(&statement)?;
+            (head.starts_with("complete(") && atom_arity(head.trim_end_matches('.')) == 3)
+                .then(|| (family, body.to_owned(), statement.clone()))
+        })
+        .collect()
+}
+
+#[test]
+fn every_power_record_is_independently_reviewed() {
+    let completions = record_completions();
+    assert!(
+        completions.len() > 500,
+        "the census found {} record completions, which is too few to be the \
+         whole population — check the block and arity filters",
+        completions.len()
+    );
+    let distinct = Regex::new(r"~\(\$\w+ = \$\w+\)").unwrap();
+    let reviewer = Regex::new(r"authorized\(\$\w+, \w*Review\w*Authority, ").unwrap();
+    for (family, body, statement) in &completions {
+        assert!(
+            distinct.is_match(body),
+            "a {family} record completes with nobody held apart from anybody: {statement}"
+        );
+        assert!(
+            reviewer.is_match(body),
+            "a {family} record completes without an independent review \
+             authority: {statement}"
+        );
+    }
+    // The control is the shape, not a name: a completion whose body carries
+    // neither guard compiles, so their presence everywhere is a decision.
+    let hostile = "all $r: all $k: all $s: observe($r, $k, $s, SomeScope) -> complete($r, $k, $s).";
+    nibli_session::CoreSession::new()
+        .compile_text(hostile)
+        .expect("an unguarded completion is expressible");
+    let (body, head) = split(hostile).expect("a rule");
+    assert_eq!(atom_arity(head.trim_end_matches('.')), 3);
+    assert!(!distinct.is_match(body) && !reviewer.is_match(body));
+}
+
+#[test]
+fn the_challenge_and_alternate_skeleton_holds_where_it_was_adopted() {
+    let challenge = Regex::new(r"authorized\(\$\w+, \w*(?:Challenge|Alternate)\w*, ").unwrap();
+    let mut all = BTreeSet::new();
+    let mut none = BTreeSet::new();
+    let mut partial = BTreeSet::new();
+    for family in record_completions()
+        .iter()
+        .map(|(family, _, _)| family.clone())
+        .collect::<BTreeSet<_>>()
+    {
+        let rows: Vec<_> = record_completions()
+            .into_iter()
+            .filter(|(owner, _, _)| *owner == family)
+            .collect();
+        let with = rows
+            .iter()
+            .filter(|(_, body, _)| challenge.is_match(body))
+            .count();
+        match with {
+            0 => none.insert(family),
+            count if count == rows.len() => all.insert(family),
+            _ => partial.insert(family),
+        };
+    }
+    assert_eq!(
+        all,
+        CHALLENGE_SKELETON.iter().map(ToString::to_string).collect(),
+        "a family gained or lost the challenge-reader and independent-alternate \
+         skeleton; that is a design change, not a regeneration artifact"
+    );
+    assert_eq!(
+        none,
+        PREDATES_CHALLENGE_SKELETON
+            .iter()
+            .map(ToString::to_string)
+            .collect(),
+        "the families predating the challenge skeleton changed; retrofitting one \
+         is welcome, but it is a ruled change and belongs in its contract card"
+    );
+    assert_eq!(
+        partial,
+        ["AMENDMENT-ENACTMENT".to_owned()].into_iter().collect(),
+        "the partially adopted set moved; amendment enactment is the one family \
+         where some completions carry the skeleton and some do not"
+    );
 }

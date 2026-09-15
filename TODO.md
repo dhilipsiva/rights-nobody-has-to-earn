@@ -362,24 +362,6 @@ Gate B; it does not claim Book 2 operations or feasibility.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
 
-- [ ] **Name the real symmetries and necessary asymmetries.**
-  - Real recursive interfaces:
-    - right → duty → accessible delivery → breach → continuity → remedy → review
-      → corrective control → monitored recurrence over a declared horizon;
-    - power → lawful source/trigger → evidence → limit → public reason → independent
-      review → appeal → correction/end;
-    - harm → notice/voice → due process → least-coercive response → repair/release;
-    - democratic choice → authenticated mandate → bounded implementation → public
-      feedback → challenge → correction or peaceful replacement.
-  - Necessary asymmetries:
-    - recognition is optional, binary, non-ranked, and non-operative;
-    - punishment is coercive and requires a higher proof threshold;
-    - public power is presumptively reason-giving and auditable subject to
-      narrow lawful confidentiality, while private life is presumptively private;
-    - accessibility may require unequal resources to secure equal standing;
-    - children, dependants and people needing support retain rights without symmetric
-      capacity or contribution duties.
-
 - [ ] **Define cross-domain priority, conflict, and physical-scarcity rules.**
   - Admit scarcity only from authenticated, contestable, resource/population-
     specific evidence after alternatives, reserves, substitution, coordination,

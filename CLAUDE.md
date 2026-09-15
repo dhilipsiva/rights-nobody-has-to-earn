@@ -1759,6 +1759,43 @@ unadmitted and not conclusion-only pending their delivery, duty, and liberty
 contracts under the generated assertion-surface audit. The controlling record is
 `new-book-plans/book-1-closure-gaps-decision.md`.
 
+**The real symmetries and the necessary asymmetries are named, and the one that
+is mechanical is checked — 2026-09-15.** Four recursive interfaces run through
+every landed family, and naming them is what stops each new family reinventing a
+weaker shape: right → duty → accessible delivery → breach → continuity → remedy
+→ review → corrective control → monitored recurrence; power → lawful
+source/trigger → evidence → limit → public reason → independent review → appeal
+→ correction/end; harm → notice/voice → due process → least-coercive response →
+repair/release; and democratic choice → authenticated mandate → bounded
+implementation → public feedback → challenge → correction or peaceful
+replacement. Each landed family's contract card states which of the four it
+instantiates and where it stops.
+
+**One of them is measurable across families and now is.** Every three-place
+record completion in the constitution — 598 of them, across eleven families —
+carries at least one distinctness constraint holding two roles apart and at
+least one independent review authority. There are no exceptions, and
+`floor_vector_tests::every_power_record_is_independently_reviewed` fails if one
+appears. The challenge-reader and independent-alternate half is a **later
+convention**, and the test says so rather than pretending otherwise: eight
+families carry it on every completion, `ECONOMIC-CONSTITUTION` and `STATE-FORM`
+predate it and carry it on none, and `AMENDMENT-ENACTMENT` is partial. Those
+three sets are asserted by membership, so retrofitting an older family is
+welcome but is a ruled change that has to move its contract card too.
+
+**The asymmetries, and which are formal.** Recognition is optional, binary,
+non-ranked and non-operative — checked, by arity, by no reader, by no self-join.
+Punishment is coercive and carries a higher threshold — carried by the
+conviction rule's own structure and its chapter pins. Public power is
+presumptively reason-giving and auditable while private life is presumptively
+private — the reasons, review and challenge fields on every power record, against
+the knowledge family's residual-freedom duty running the other way. Accessibility
+may require unequal resources to secure equal standing, and children, dependants
+and people needing support hold rights without symmetric duties — **neither is
+formal**, and neither should be read as checked: the first is a resource claim
+this repository cannot make, and the second is the floor's unconditionality
+above `person`, which the firewall protects but no test states as an asymmetry.
+
 **The vector of protected conditions is guarded by development tests, enacted
 2026-09-15.** `src/authoring/floor_vector_tests.rs` measures five properties of
 the enacted lines and pairs each with a control that must fail: no standalone

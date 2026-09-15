@@ -124,3 +124,21 @@ including a second `obliged/2` consumer.
 
 `verify.sh` used to reject an outside `obliged` consumer; that section retired
 with the old script, and the census now lives in the development tests.
+
+THE SYMMETRIES ARE NAMED AND THE MECHANICAL ONE IS CHECKED
+
+The four recursive interfaces and the five asymmetries are named in CLAUDE.md,
+each with what checks it or why it is not checkable. Two of the asymmetries are
+explicitly NOT formal — the accessibility resource claim and the
+rights-without-symmetric-duties claim — and are recorded as unchecked rather
+than folded in.
+
+The measurable symmetry is the review skeleton. All 598 three-place record
+completions across eleven families carry a distinctness constraint and an
+independent review authority, with no exceptions. The challenge-reader and
+alternate half is a later convention: eight families carry it everywhere,
+ECONOMIC-CONSTITUTION and STATE-FORM predate it and carry it nowhere, and
+AMENDMENT-ENACTMENT is partial. Membership of those three sets is asserted, so
+retrofitting an older family is a ruled change rather than a silent drift.
+
+An unguarded completion injected into a family block trips both tests.
