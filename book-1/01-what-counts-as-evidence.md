@@ -514,6 +514,14 @@ stops them being recognised for anything, however carefully they did it. And two
 one victim raise the severity that decides where a convicted person is held. None of
 those asks who wrote the entry, on what ground, or whether anybody reviewed it.
 
+The comparison that makes this uncomfortable is inside the design rather than outside
+it. An injury entry is also read by the rule that convicts, and there it is surrounded:
+a court's judgment, a cited case, a recorded conviction, a dozen separately witnessed
+entries, a current custody authorisation, and four things that must be absent. So this
+design plainly knows how to put an accusation behind a wall before acting on it. It does
+that for taking somebody's liberty and not for deciding, once their liberty is taken,
+where they are held.
+
 That is the roster gap again in a smaller form. A finding still has to be written, still
 sits in the open, and still names the person it is about, which is more than a file of
 impressions ever gives you. But this chapter opened by saying the record holds what

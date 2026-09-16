@@ -124,18 +124,29 @@ credentials, not proof of independence in practice" is saying this.
 and for the severity route two. *Hidden cost:* the person it names, who has no
 author to challenge. *Detected:* **not detected.** The harm relations name the
 alleged offender and the person harmed, never the writer, so there is nobody to
-put a question to. Measured 2026-09-16, three of the four consequential routes
-ask for nothing else at all: an unsigned deceit entry takes the shield that
-exposing a particular office holder earned, an unsigned deceit entry stops the
-accused being recognised for anything, and two unsigned harm entries about one
-offender and one victim raise the severity that decides where a convicted person
-is held. The shield route is per claim rather than per person — a second,
-unaccused exposure protects again, which the case pins beside the first.
-The fourth is the exception and is stated as one: voiding credibility does read a
-review body's judgment beside the lie, and without it the entry voids nobody.
-*Case:* `tests/pins/red-team/an-accusation-nobody-signed` pins all four in
+put a question to. Thirteen rules read one of these relations, censused by
+`floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set` and
+asserted by membership so the set cannot grow unnoticed. Three of them need
+nothing but the entry: an unsigned deceit entry takes the shield that exposing a
+particular office holder earned, an unsigned deceit entry stops the accused being
+recognised for anything, and two unsigned harm entries about one offender and one
+victim raise the severity that decides where a convicted person is held. The
+shield route is per claim rather than per person — a second, unaccused exposure
+protects again, which the case pins beside the first. Voiding credibility is the
+one that asks for more, and it asks for exactly one thing: a review body's
+judgment beside the lie.
+*Case:* `tests/pins/red-team/an-accusation-nobody-signed` pins those four in
 sequence, including the person keeping personhood, the floor debt and liberty
 throughout.
+
+**The same relation sits at both extremes, which is the sharpest thing the
+census found.** `prisoner` reads an injury entry too — inside the conviction
+rule, where it is surrounded by a Court judgment, a cited case, a recorded
+conviction, twelve independently witnessed observations, an active custody
+authorisation and four negative guards. So the design already knows how to
+surround an accusation before it acts on one. It does that for confinement and
+not for severity, which is the same record deciding where the confined person is
+then held.
 
 What the design does instead is far less than in the collusion entry, and it
 should not be dressed up. The entry is visible, it names the person it is about,

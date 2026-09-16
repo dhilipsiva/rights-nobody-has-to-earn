@@ -17,7 +17,7 @@
 # Nothing here is repaired by this case. It exists so the boundary is
 # executable rather than only described, in the same way the collusion case
 # pins a wall that is not there.
-:expect-pins 15
+:expect-pins 19
 
 # ─── 1. The shield, which an unsigned entry takes ────────────────────────────
 # Torvi exposed an office holder and holds the shield for it.
@@ -65,6 +65,32 @@ cruel(Quilo, Sepp).
 ? severe(Sepp).
 # => FALSE
 
+# And the contrast that makes this the sharpest row in the census. The same
+# kind of entry is read by the conviction rule, where it is surrounded by a
+# Court judgment, a cited case, a recorded conviction, twelve independently
+# witnessed observations, an active custody authorisation and four negative
+# guards. None of that is here, so nobody is convicted — while the severity
+# that decides where a convicted person is held has already moved.
+? prisoner(Quilo).
+# => FALSE
+
+# ─── 3a. The same thing, in the shipped cast ────────────────────────────────
+# These are not fixture people. Three members of the record this book ships
+# carry a severity finding, and every one of them got it from unsigned entries.
+? severe(Lalo).
+# => TRUE
+? severe(Don).
+# => TRUE
+? severe(Ruk).
+# => TRUE
+
+# And the one guard the severity rules do carry, which is not authorship. Hano
+# has an attack entry and an injury entry, and they name the same person, so the
+# distinctness conjunct is the whole of what stands between Hano and a severity
+# finding. Not who wrote them. Not whether anybody reviewed them.
+? severe(Hano).
+# => FALSE
+
 # ─── 4. Credibility, the one route that does ask for a judgment ──────────────
 # Torvi has carried an unsigned deceit entry since the first section. It has
 # not voided anybody, because the voiding rule reads a review body's judgment
@@ -85,6 +111,4 @@ judge(Review, Torvi).
 ? owe(State, Eats, Torvi).
 # => TRUE
 ? prisoner(Torvi).
-# => FALSE
-? prisoner(Quilo).
 # => FALSE

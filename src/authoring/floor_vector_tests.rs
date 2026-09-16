@@ -258,6 +258,109 @@ fn atom_arity(atom: &str) -> usize {
         .map_or(0, |(_, args)| args.trim_end_matches(')').split(',').count())
 }
 
+/// The relations that record an alleged harm. Every one of them names the
+/// alleged offender and the person harmed, and none of them names the writer,
+/// so an entry here is a finding with no finder.
+const ACCUSATION: [&str; 6] = ["attack", "cruel", "injure", "deceive", "capture", "rotten"];
+
+/// Exactly what an unsigned accusation may reach, as `head` and the polarity it
+/// is read at. Measured 2026-09-16 and asserted by membership, because the point
+/// of the census is that this set cannot grow without somebody deciding to grow
+/// it. `+` is a positive premise, `~` a negation.
+///
+/// **The same kind of entry sits at both extremes, and that is the finding.**
+/// `prisoner` reads an injury entry inside the conviction rule, where it is
+/// surrounded by a Court judgment, a cited case, a recorded conviction, twelve
+/// independently witnessed observations, an active custody authorisation and
+/// four negative guards — an unsigned entry moves nothing there on its own. The
+/// three `severe` rules read the same relations with nothing else at all, and
+/// conclude something adverse that decides where a convicted person is held.
+///
+/// `defend` and `reward` read a deceit claim under negation, so an unsigned
+/// entry withdraws a protection and a recognition rather than concluding
+/// anything — the same effect on the person, arrived at the other way round.
+/// Only the first `false` rule asks for anything besides the entry: the review
+/// body's judgment beside the lie.
+///
+/// This test was written against a hand census that missed `prisoner`, which is
+/// the argument for having it: a census done by reading is a census that can
+/// drop a row.
+const ACCUSATION_READERS: [(&str, &str); 13] = [
+    ("correct", "+injure"),
+    ("defend", "~deceive"),
+    ("err", "+injure"),
+    ("err", "~rotten"),
+    ("false", "+deceive"),
+    ("false", "~deceive,+capture"),
+    ("match", "+injure"),
+    ("match", "+rotten"),
+    ("prisoner", "+injure"),
+    ("reward", "~deceive,+capture"),
+    ("severe", "+attack,+cruel"),
+    ("severe", "+attack,+injure"),
+    ("severe", "+cruel,+injure"),
+];
+
+/// The accusation-authorship gap, held at its measured size.
+///
+/// This does NOT check that an accusation has an author — none of them does, and
+/// the repair flips conclusions two chapters exhibit, so it is an author
+/// decision recorded in the tracker rather than a change made here. What it
+/// checks is that the set of things an authorless entry reaches is exactly the
+/// set somebody has looked at. A new rule reading one of these relations fails
+/// here, which is the difference between a disclosed gap and a growing one.
+///
+/// `tests/pins/red-team/an-accusation-nobody-signed` is the executable half: it
+/// runs the shield, recognition, severity and voiding routes in sequence against
+/// the live constitution.
+#[test]
+fn an_unsigned_accusation_reaches_exactly_the_measured_set() {
+    let mut found: Vec<(String, String)> = Vec::new();
+    for statement in statements() {
+        let Some((body, head)) = split(&statement) else {
+            continue;
+        };
+        let mut used = Vec::new();
+        for relation in ACCUSATION {
+            let read = Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])~?{relation}\(")).unwrap();
+            if read.is_match(body) {
+                let negated = Regex::new(&format!(r"~\s*{relation}\(")).unwrap().is_match(body);
+                used.push(format!("{}{relation}", if negated { "~" } else { "+" }));
+            }
+        }
+        if !used.is_empty() {
+            found.push((head_relation(head).to_owned(), used.join(",")));
+        }
+    }
+    found.sort();
+    let declared: Vec<(String, String)> = ACCUSATION_READERS
+        .iter()
+        .map(|(head, polarity)| ((*head).to_owned(), (*polarity).to_owned()))
+        .collect();
+    assert_eq!(
+        found, declared,
+        "the set of conclusions an accusation with no author can reach has \
+         changed. Adding one is a design decision about a finding with no \
+         finder, and it belongs in a ruling and in the red-team index before it \
+         belongs in a rule"
+    );
+
+    // Sabotage: a new consequential reader must not pass quietly. This is the
+    // shape that would — one line, one existing relation, a conclusion about a
+    // person — and the census has to notice it.
+    let hostile = "all $x: all $v: cruel($x, $v) -> lose(Points, $x).";
+    nibli_session::CoreSession::new()
+        .compile_text(hostile)
+        .expect("the hostile rule is well-formed, which is why the census matters");
+    let mut with_hostile = found.clone();
+    with_hostile.push(("lose".to_owned(), "+cruel".to_owned()));
+    with_hostile.sort();
+    assert_ne!(
+        with_hostile, declared,
+        "the census would accept a new adverse reader of an unsigned accusation"
+    );
+}
+
 #[test]
 fn a_duty_is_not_an_action_because_nothing_reads_one() {
     let statements = statements();

@@ -48,6 +48,13 @@
 ? building(Homestay, Hano).
 # => TRUE
 
+# The severity entries that put Ruk here name the offender and the people
+# harmed and not the writer. What that reaches, across this whole design, is
+# censused by floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set
+# and run in tests/pins/red-team/an-accusation-nobody-signed, which pins
+# severe(Lalo), severe(Don) and severe(Ruk) TRUE and severe(Hano) FALSE — the
+# distinctness conjunct being the only condition beyond the two entries.
+#
 # Ruk — severe, non-domestic: severity blocks eligibility, high security.
 # Severity here is intent plus a second person harmed, and the second person is
 # an ordinary injury entry, not a count of anything.

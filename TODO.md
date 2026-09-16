@@ -423,22 +423,48 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
   - **The accusation-authorship gap is confirmed open, and measuring it made it
     sharper than the places.** `attack`, `injure`, `cruel`, `deceive`, `capture`
     and `rotten` name the alleged offender and the victim, never the writer —
-    and measured 2026-09-16, three of the four consequential routes need nothing
-    else. An unsigned deceit entry takes the shield that exposing a particular
-    office holder earned — per claim rather than per person, so a second
-    unaccused exposure protects again; an unsigned deceit entry stops the
-    accused being recognised; two unsigned harm entries raise the severity that
-    decides placement. The
-    fourth is the exception: voiding credibility does read a review body's
-    judgment beside the lie. `tests/pins/red-team/an-accusation-nobody-signed`
-    pins all four in sequence and chapter 1 now states them per route, because
-    the sentence that stated it in general was wrong in both directions.
-  - **What a repair costs is known and is an author decision, not a session
-    one.** Requiring an authored record before those routes fire would flip
-    `false(Lupo)`, which chapter 5 and chapter 10 both exhibit, and the cast
-    carries no authored accusation to put in its place. Adding an author place
-    to the harm relations is the `reward`-provenance question again and dies on
-    the same ground unless the corpus entry carries one. Neither is done here.
+    and measured 2026-09-16, three routes need nothing else. An unsigned deceit
+    entry takes the shield that exposing a particular office holder earned — per
+    claim rather than per person, so a second unaccused exposure protects again;
+    an unsigned deceit entry stops the accused being recognised; two unsigned
+    harm entries raise the severity that decides placement. Voiding credibility
+    is the one that asks for more, and asks for exactly one thing: a review
+    body's judgment beside the lie.
+    `tests/pins/red-team/an-accusation-nobody-signed` pins those four in
+    sequence, and chapter 1 now states them per route, because the sentence that
+    stated it in general was wrong in both directions.
+  - **The reader set is censused and asserted by membership.** Thirteen rules
+    read one of these relations, held by
+    `floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set`
+    with a sabotage control, so a new adverse reader fails rather than lands
+    quietly. That is the enforceable half of this item: it gives no accusation
+    an author, it stops the set of things an authorless one reaches from growing
+    without somebody deciding to grow it.
+  - **The census found the row a hand reading had missed, and it is the sharp
+    one.** `prisoner` reads an injury entry too — inside the conviction rule,
+    behind a Court judgment, a cited case, a recorded conviction, twelve
+    independently witnessed observations, an active custody authorisation and
+    four negative guards. The design knows how to surround an accusation before
+    acting on one. It does that for taking liberty and not for deciding where
+    the person whose liberty was taken is then held.
+  - **What a repair costs is measured, and it is an author decision rather than
+    a session one.** Gating the deceit routes flips `false(Lupo)`, which chapters
+    5 and 10 both exhibit. Gating the severity rules moves three people in the
+    shipped cast — Lalo, Don and Ruk, all pinned — and Ruk is chapter 11's
+    high-security exhibit, so that chapter's worked example moves with him. The
+    cast carries no authored accusation to put in their place, and writing one
+    would be inventing testimony for the record the book is about. Adding an
+    author place to the harm relations is the `reward`-provenance question again
+    and dies on the same ground unless the corpus entry carries one.
+  - **A parallel authored-accusation family was considered and refused.** It
+    would be additive and safe, and it would let the book say the design can hold
+    an accusation with an author — while the operative routes stayed unsigned.
+    A record with an author that nothing reads, beside unsigned records that
+    reach three protections, invites exactly the misreading this item exists to
+    prevent. What landed instead is disclosure where it bites: chapter 1 states
+    the routes, chapter 11 states that the entries putting Ruk in high security
+    name no writer and that distinctness is the only other condition, and the
+    census keeps the set from growing.
   - Preserve the prisoner as the hardest stress test, not the default
     inhabitant, and the infant as the paired second stress case with framing
     primacy in the exempt elements. For every public body show one lawful

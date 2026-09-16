@@ -193,6 +193,22 @@ where the leverage lived, because severity was written down: one word, no workin
 shown, and whoever held the pen decided where a person spent their sentence. It is now
 the end of a short chain, and every link is a thing that either happened or did not.
 
+Hold that sentence to exactly what it says, because there is a nearby version of it
+that is false. What changed is where the conclusion comes from: severity is derived
+from entries about events instead of being written down as a word. What did not change
+is who supplies the entries. The record names Ruk and it names the people harmed, and
+it does not name whoever wrote that the harm was meant. So the dispute this chapter
+recommends runs one way only — Ruk can contradict the claim, and there is nobody
+recorded on the other side of it to answer for having made it.
+
+The rule's only condition beyond the two entries is that they name different people.
+That distinctness is the whole of what stands between Hano — who has an attack entry
+and an injury entry naming the same person — and a severity finding of his own. Not
+authorship, not review, not a ground. And the comparison is inside this design rather
+than outside it: the rule that took Ruk's liberty asked for a court's judgment, a cited
+case, a recorded conviction and a dozen separately witnessed entries. The rule that
+decides where he is held for the length of it asks for two lines that nobody signed.
+
 ## The case nobody wrote a rule for
 
 The combination this chapter did not walk is the plainest one: not severe and no

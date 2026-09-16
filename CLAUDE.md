@@ -2104,6 +2104,19 @@ throughout. What a repair would cost is recorded in the tracker rather than
 taken: requiring an authored record would flip `false(Lupo)`, which two chapters
 exhibit.
 
+**The reader set is censused and asserted by membership**, by
+`floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set`
+with a sabotage control — thirteen rules, each with the polarity it reads at. It
+gives no accusation an author; it stops the set of things an authorless one
+reaches from growing unnoticed. **It also found the row a hand census had
+missed, which is the argument for having it**: `prisoner` reads an injury entry
+inside the conviction rule, behind a Court judgment, a cited case, a recorded
+conviction, twelve independently witnessed observations, an active custody
+authorisation and four negative guards. **The same relation sits at both
+extremes** — surrounded where liberty is taken, unguarded where the severity
+that decides the confined person's destination is set — and chapter 1 and the
+red-team index both say so.
+
 **One entry says the wall is not there, and pins it.** Collusion and honest
 agreement are the same shape: nothing authenticates a witness or checks that
 attested evidence is true, so a record founded on three matching lies completes
