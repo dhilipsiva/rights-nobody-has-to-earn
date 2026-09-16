@@ -2089,20 +2089,36 @@ the cost that does not appear on the ledger, how it is detected or challenged,
 and whether the design's answer creates a new veto, surveillance system or
 score. Ten entries name an executable case for the wall they claim.
 
-**A second entry says a different wall is not there, and measuring it moved the
-claim.** An accusation nobody signed is not inert: measured 2026-09-16, an
-unsigned deceit entry takes the whistleblower shield for that exposure — per
-claim rather than per person, so a second unaccused exposure protects again —
-and stops the accused being recognised, and two unsigned harm entries raise the
-severity that decides placement — none of them asking who wrote the entry, on what ground, or whether
-anybody reviewed it. **Only the voiding rule requires a review body's judgment
-beside the lie**, which is why chapter 1 now states this per route: the sentence
-that stated it in general was wrong about the void and understated the other
-three. `tests/pins/red-team/an-accusation-nobody-signed` pins all four in
-sequence, with the person keeping personhood, the floor debt and liberty
-throughout. What a repair would cost is recorded in the tracker rather than
-taken: requiring an authored record would flip `false(Lupo)`, which two chapters
-exhibit.
+**A second entry said a different wall was not there; measuring it moved the
+claim, and then one route was repaired — 2026-09-16.** An accusation nobody
+signed is not inert. Two routes still take something on their own: an unsigned
+deceit entry takes the whistleblower shield for that exposure — per claim rather
+than per person, so a second unaccused exposure protects again — and stops the
+accused being recognised. Both **withdraw by absence** rather than concluding
+anything, which is why they are described rather than repaired: an accusation
+not yet adjudicated is what the shield was built to ignore. The voiding rule
+asks for a review body's judgment beside the lie.
+
+**Severity is now court-bound**, and this is the ruled change. Two unsigned harm
+entries used to derive `severe` outright, and severity decides where a confined
+person spends the sentence. It now also reads `judge(Court, ·)` and
+`cite(Court, ·, ·)` — **the two facts the confinement it decides had already
+required**, since every consumer of `severe` requires `prisoner` and `prisoner`
+requires both through the T3 gate. The repair therefore cost nothing on any path
+where severity has an effect: Lalo, Don and Ruk keep it and are pinned
+unchanged, while an entry about somebody no court has judged now concludes
+nothing. The spine did not move, because conjuncts on existing rules add no
+rule. `tests/pins/red-team/counterfactual-severity-without-the-court` is the
+watched control, and `tests/pins/red-team/an-accusation-nobody-signed` runs the
+routes in sequence with the person keeping personhood, the floor debt and
+liberty throughout.
+
+**It gives no accusation an author, and every statement of it says so.** The
+harm relations still name the offender and the person harmed and never the
+writer. The court is a condition on acting, not an author for the claim, and the
+finding-with-no-finder class chapter 1 concedes is still open. Chapters 1 and 11
+both carry the change; the deceit-route repair remains unspent because it would
+flip `false(Lupo)`, which two chapters exhibit.
 
 **The reader set is censused and asserted by membership**, by
 `floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set`
@@ -2112,10 +2128,10 @@ reaches from growing unnoticed. **It also found the row a hand census had
 missed, which is the argument for having it**: `prisoner` reads an injury entry
 inside the conviction rule, behind a Court judgment, a cited case, a recorded
 conviction, twelve independently witnessed observations, an active custody
-authorisation and four negative guards. **The same relation sits at both
-extremes** — surrounded where liberty is taken, unguarded where the severity
-that decides the confined person's destination is set — and chapter 1 and the
-red-team index both say so.
+authorisation and four negative guards. **That row is what produced the severity
+repair** — the same relation sat at both extremes, surrounded where liberty is
+taken and unguarded where the severity deciding the confined person's
+destination was set, and the first two of those conjuncts turned out to be free.
 
 **One entry says the wall is not there, and pins it.** Collusion and honest
 agreement are the same shape: nothing authenticates a witness or checks that
@@ -2559,6 +2575,55 @@ envelope computes met-in-form: versioned structure is sufficient for the scope
 and assurance-program gate. Values, calibration, operational assurance, and
 remedied resolution remain Book 2 Gate D work, and Book 2 stays inactive until
 Gate C.
+
+### Four closing rulings — 2026-09-16
+
+The tracker's last four open items were ruled together under the author's
+instruction to finish them with sensible defaults. Each is a decision with its
+evidence, not a task marked done.
+
+**The five-minute verifier target is retired and replaced by a per-case
+standard.** Five minutes was set against a 4,190-case inventory; that inventory
+is now 15,481 cases, the profile says the cost is per-case fixed work rather
+than case count, and the only sized lead left is a `nibli-reason` change worth
+about 15% in a companion pinned at `979fe8b`. Fifteen percent of fourteen
+minutes is not five, so the number had stopped describing anything a session
+could act on, and an unreachable standard makes every honest report read as a
+failure. **The standard is now per case**: 15,481 cases in 825.00–1,041.06
+seconds across three runs of the same inventory on 2026-09-16 — **53–67 ms per
+case**, the middle run 884.91 seconds for 84,314 pins across 15,481 cases — four
+workers, release binary prebuilt. That spread is machine variance, and it is
+itself why wall-clock was the wrong instrument. A run reports its per-case cost; an unexplained regression of more
+than half against that band is the failure condition.
+
+**The formal source's size is accepted, with a named trigger.**
+`constitution.nibli` is 55 MB against GitHub's 100 MB hard limit. The one clean
+lever — variables are 44.7% of the generated bulk — **was attempted and
+reverted**. Wrapping the ten rule emitters compacted eight blocks, public safety
+falling 17.6 to 10.2 MB, and then every generator failed: the counterfactual
+machinery matches exact atom text, so `~($source = $review)` stops being found,
+and ecology's and public safety's structural searches key on `$record`,
+`$subject` and `$source` in rule heads. A working version needs a per-generator
+keep-set threaded through the helper, because base field names like `$role_kind`
+are underscored exactly like the prefixed ones. **Revisit when a family of
+ecology's scale is planned or the file passes 75 MB**, and start from the
+keep-set design rather than the emitter wrapper.
+
+**The preview-snapshot binding stops being tracked as work.** Every mechanically
+testable accessibility check exists; binding exact HTML, EPUB and PDF identities
+waits on a Gate B snapshot that does not exist, so it is a condition on that
+gate rather than a task. No accessibility-for-users claim follows from any of it.
+
+**The adversarial audit's open findings now carry dispositions, checked.** Four
+declared values — `route-unbuilt`, `public-claim-limited`,
+`author-ruling-pending`, `blocks-gate` — plus a consequence saying what each
+costs in what the project may claim. The generator refuses an open finding
+without both and a closed one carrying either;
+`every_open_finding_says_what_it_costs` sabotage-tests the refusal. **Disclosure
+is deliberately not a disposition** — naming a limitation and moving on is what
+the resolution receipts refuse and what this table used to permit. Nine open:
+four public-claim-limited, three route-unbuilt, two author-ruling-pending, none
+blocking a gate.
 
 ### Measured Nibli capability boundaries
 

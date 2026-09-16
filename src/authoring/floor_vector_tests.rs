@@ -268,19 +268,25 @@ const ACCUSATION: [&str; 6] = ["attack", "cruel", "injure", "deceive", "capture"
 /// of the census is that this set cannot grow without somebody deciding to grow
 /// it. `+` is a positive premise, `~` a negation.
 ///
-/// **The same kind of entry sits at both extremes, and that is the finding.**
-/// `prisoner` reads an injury entry inside the conviction rule, where it is
-/// surrounded by a Court judgment, a cited case, a recorded conviction, twelve
-/// independently witnessed observations, an active custody authorisation and
-/// four negative guards — an unsigned entry moves nothing there on its own. The
-/// three `severe` rules read the same relations with nothing else at all, and
-/// conclude something adverse that decides where a convicted person is held.
+/// **The same kind of entry sat at both extremes, and the gap between them is
+/// what the 2026-09-16 severity repair closed.** `prisoner` reads an injury
+/// entry inside the conviction rule, where it is surrounded by a Court
+/// judgment, a cited case, a recorded conviction, twelve independently
+/// witnessed observations, an active custody authorisation and four negative
+/// guards. The three `severe` rules used to read the same relations with
+/// nothing else at all while concluding something adverse; they now read the
+/// Court's judgment and its cited case too, which every person severity can
+/// reach already had, so the repair moved nobody and closed the route.
+/// `tests/pins/red-team/counterfactual-severity-without-the-court` is the
+/// watched control: strip those conjuncts and two unsigned entries derive
+/// severity again.
 ///
-/// `defend` and `reward` read a deceit claim under negation, so an unsigned
-/// entry withdraws a protection and a recognition rather than concluding
-/// anything — the same effect on the person, arrived at the other way round.
-/// Only the first `false` rule asks for anything besides the entry: the review
-/// body's judgment beside the lie.
+/// `defend` and `reward` are what remains. They read a deceit claim under
+/// negation, so an unsigned entry withdraws a protection and a recognition
+/// rather than concluding anything — the same effect on the person, arrived at
+/// the other way round, and left in place because what they withdraw, they
+/// withdraw by absence. The first `false` rule asks for the review body's
+/// judgment beside the lie.
 ///
 /// This test was written against a hand census that missed `prisoner`, which is
 /// the argument for having it: a census done by reading is a census that can

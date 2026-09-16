@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# The watched control for the 2026-09-16 severity repair. Against a copy of the
+# constitution with the court conjuncts removed from the three severity rules,
+# two entries nobody signed derive severity again. If this stops flipping, the
+# repair has been undone somewhere and the live case above would pass anyway.
+person(Quilo).
+person(Sepp).
+attack(Quilo, Sepp).
+cruel(Quilo, Sepp).

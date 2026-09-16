@@ -30,12 +30,34 @@ pub(crate) const CATEGORIES: [&str; 7] = [
     "narrative-distortion",
 ];
 
+/// What an open finding does to the claims that depend on it. Disclosure is not
+/// one of the values: naming a limitation and moving on is what the resolution
+/// receipts refuse, and the same refusal belongs here.
+pub(crate) const DISPOSITIONS: [&str; 4] = [
+    // The route that would establish it is not built, so no claim may take an
+    // established posture through it. Carries the claim restriction with it.
+    "route-unbuilt",
+    // Real, scoped, and it limits what may be said rather than blocking a gate.
+    "public-claim-limited",
+    // Waits on a decision that is not a session's to make.
+    "author-ruling-pending",
+    // Blocks the gate whose permitted claim it touches.
+    "blocks-gate",
+];
+
 #[derive(Clone, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub(crate) struct Finding {
     pub(crate) finding: String,
     pub(crate) category: String,
     pub(crate) open: bool,
+    /// Required on an open finding, refused on a closed one.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub(crate) disposition: Option<String>,
+    /// What this costs in what the project may claim or do. Required with a
+    /// disposition.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub(crate) consequence: Option<String>,
 }
 
 #[derive(Clone, Deserialize)]
@@ -97,6 +119,33 @@ pub(crate) fn validate(context: &Context, lenses: &[Lens]) -> Result<(), Error> 
                     lens.id
                 )));
             }
+            // An open finding has to say what it does to the project. This is
+            // the tracker's done-when made mechanical: closed, narrowed, or
+            // carrying a limitation and a consequence.
+            match (finding.open, &finding.disposition, &finding.consequence) {
+                (true, None, _) | (true, _, None) => {
+                    return Err(Error::new(format!(
+                        "{}: an open finding needs a disposition and a \
+                         consequence. Leaving it open with neither is the \
+                         disclosure-as-ending move: '{}'",
+                        lens.id, finding.finding
+                    )));
+                }
+                (true, Some(disposition), _) if !DISPOSITIONS.contains(&disposition.as_str()) => {
+                    return Err(Error::new(format!(
+                        "{}: {disposition} is not a declared disposition",
+                        lens.id
+                    )));
+                }
+                (false, Some(_), _) | (false, _, Some(_)) => {
+                    return Err(Error::new(format!(
+                        "{}: a closed finding carries no disposition; if it \
+                         still costs something it is not closed",
+                        lens.id
+                    )));
+                }
+                _ => {}
+            }
         }
     }
     // Every declared finding kind has to be exercised, or the audit is looking
@@ -146,13 +195,24 @@ fn render(lenses: &[Lens]) -> String {
          human review, no reader response, no external truth and no operation.\n\
          External multidisciplinary and lived-experience submissions remain\n\
          welcome optional evidence; none is required for completion.\n\n\
-         ## Open findings\n\n| Lens | Kind | Finding |\n| --- | --- | --- |\n",
+         ## Open findings\n\n\
+         Every one carries a disposition and what it costs. `route-unbuilt` means\n\
+         the route that would establish the affected claim is neither built nor\n\
+         available; `public-claim-limited` means the finding bounds what may be\n\
+         said rather than blocking a gate; `author-ruling-pending` means the\n\
+         decision is not a session's to make; `blocks-gate` means what it says.\n\
+         Disclosure is not a disposition.\n\n\
+         | Lens | Kind | Finding | Disposition | Consequence |\n| --- | --- | --- | --- | --- |\n",
     );
     for (lens, finding) in &open {
         let _ = writeln!(
             out,
-            "| {} | {} | {} |",
-            lens.lens, finding.category, finding.finding
+            "| {} | {} | {} | {} | {} |",
+            lens.lens,
+            finding.category,
+            finding.finding,
+            finding.disposition.as_deref().unwrap_or(""),
+            finding.consequence.as_deref().unwrap_or("")
         );
     }
     out.push_str("\n## Findings by kind\n\n| Kind | Total | Open |\n| --- | ---: | ---: |\n");

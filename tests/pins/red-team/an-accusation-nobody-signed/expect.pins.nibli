@@ -17,7 +17,7 @@
 # Nothing here is repaired by this case. It exists so the boundary is
 # executable rather than only described, in the same way the collusion case
 # pins a wall that is not there.
-:expect-pins 19
+:expect-pins 21
 
 # ─── 1. The shield, which an unsigned entry takes ────────────────────────────
 # Torvi exposed an office holder and holds the shield for it.
@@ -54,29 +54,43 @@ deceive(Marn, Vasha).
 ? reward(Marn).
 # => FALSE
 
-# ─── 3. Severity, which decides where a convicted person is held ─────────────
-# Two unsigned accusations about one offender and one victim.
+# ─── 3. Severity, which was the third route and is now the repaired one ──────
+# Two unsigned accusations about one offender and one victim. Until 2026-09-16
+# this derived severity outright, which decides where a confined person spends
+# the sentence. Severity is now court-bound: it reads the Court's judgment and
+# its cited case, which is what the confinement it decides already required.
 attack(Quilo, Sepp).
 cruel(Quilo, Sepp).
 
+# Nobody has judged Quilo, so the entries conclude nothing.
 ? severe(Quilo).
-# => TRUE
-# It reaches the accused, not the person named as harmed.
+# => FALSE
 ? severe(Sepp).
 # => FALSE
 
-# And the contrast that makes this the sharpest row in the census. The same
-# kind of entry is read by the conviction rule, where it is surrounded by a
-# Court judgment, a cited case, a recorded conviction, twelve independently
-# witnessed observations, an active custody authorisation and four negative
-# guards. None of that is here, so nobody is convicted — while the severity
-# that decides where a convicted person is held has already moved.
+# The same two entries, about somebody the Court has judged and cited, do
+# derive it. The repair asks for the court, not for an author: the entries
+# still name the offender and the victim and never the writer.
+judge(Court, Marn).
+cite(Court, MarnCase, Marn).
+attack(Marn, Sepp).
+cruel(Marn, Sepp).
+? severe(Marn).
+# => TRUE
+
+# And nobody is convicted by any of it. The conviction rule wants a recorded
+# conviction, twelve independently witnessed observations, an active custody
+# authorisation and four negative guards besides.
 ? prisoner(Quilo).
+# => FALSE
+? prisoner(Marn).
 # => FALSE
 
 # ─── 3a. The same thing, in the shipped cast ────────────────────────────────
 # These are not fixture people. Three members of the record this book ships
-# carry a severity finding, and every one of them got it from unsigned entries.
+# carry a severity finding. Every one of them also carries the Court's judgment
+# and its cited case, which is why the repair moved none of them — it asks for
+# facts that everybody severity can reach already had.
 ? severe(Lalo).
 # => TRUE
 ? severe(Don).

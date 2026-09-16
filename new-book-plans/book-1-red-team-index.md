@@ -126,27 +126,36 @@ author to challenge. *Detected:* **not detected.** The harm relations name the
 alleged offender and the person harmed, never the writer, so there is nobody to
 put a question to. Thirteen rules read one of these relations, censused by
 `floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set` and
-asserted by membership so the set cannot grow unnoticed. Three of them need
-nothing but the entry: an unsigned deceit entry takes the shield that exposing a
-particular office holder earned, an unsigned deceit entry stops the accused being
-recognised for anything, and two unsigned harm entries about one offender and one
-victim raise the severity that decides where a convicted person is held. The
-shield route is per claim rather than per person — a second, unaccused exposure
-protects again, which the case pins beside the first. Voiding credibility is the
-one that asks for more, and it asks for exactly one thing: a review body's
-judgment beside the lie.
-*Case:* `tests/pins/red-team/an-accusation-nobody-signed` pins those four in
+asserted by membership so the set cannot grow unnoticed. **Two still need
+nothing but the entry**: an unsigned deceit entry takes the shield that exposing
+a particular office holder earned, and an unsigned deceit entry stops the accused
+being recognised for anything. The shield route is per claim rather than per
+person — a second, unaccused exposure protects again, which the case pins beside
+the first. Both withdraw something by absence rather than concluding anything,
+which is why they are described rather than repaired: an accusation not yet
+adjudicated is what the shield was built to ignore.
+*Case:* `tests/pins/red-team/an-accusation-nobody-signed` pins the routes in
 sequence, including the person keeping personhood, the floor debt and liberty
 throughout.
 
-**The same relation sits at both extremes, which is the sharpest thing the
-census found.** `prisoner` reads an injury entry too — inside the conviction
-rule, where it is surrounded by a Court judgment, a cited case, a recorded
-conviction, twelve independently witnessed observations, an active custody
-authorisation and four negative guards. So the design already knows how to
-surround an accusation before it acts on one. It does that for confinement and
-not for severity, which is the same record deciding where the confined person is
-then held.
+**The third route was repaired on 2026-09-16, and the census is what found it.**
+`prisoner` reads an injury entry too — inside the conviction rule, surrounded by
+a Court judgment, a cited case, a recorded conviction, twelve independently
+witnessed observations, an active custody authorisation and four negative guards.
+The same relations were raising severity, which decides where the confined person
+is then held, with nothing at all. Severity now reads the Court's judgment and
+its cited case: the two facts the confinement it decides had already required, so
+every person severity can reach already had them and the repair moved nobody —
+Lalo, Don and Ruk are pinned unchanged. *Control:*
+`tests/pins/red-team/counterfactual-severity-without-the-court` strips the
+conjuncts and watches two unsigned entries derive severity again.
+
+**It gives no accusation an author, and the entry says so.** The harm relations
+still name the offender and the person harmed and never the writer. What changed
+is that an entry nobody signed can no longer conclude something adverse on its
+own; it now needs a court that judged the person and cited a case. The remaining
+two routes take by absence, and the finding-with-no-finder class chapter 1
+concedes is still open.
 
 What the design does instead is far less than in the collusion entry, and it
 should not be dressed up. The entry is visible, it names the person it is about,

@@ -15,17 +15,24 @@ welcome optional evidence; none is required for completion.
 
 ## Open findings
 
-| Lens | Kind | Finding |
-| --- | --- | --- |
-| Public administration | hidden-liveness-assumption | No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf. |
-| Public administration | unowned-dependency | A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives. |
-| Disability and accessibility | hidden-liveness-assumption | Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows. |
-| Care and the life course | narrative-distortion | `cares` is the posture of two passages in the whole book. |
-| Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. |
-| Policing and prison | private-power-blind-spot | An accusation nobody signed reaches three protections on its own: it takes the whistleblower shield, it stops the accused being recognised, and two of them raise the severity that decides placement. Only the voiding rule asks for a review body's judgment beside the lie. |
-| Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. |
-| Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. |
-| Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses. |
+Every one carries a disposition and what it costs. `route-unbuilt` means
+the route that would establish the affected claim is neither built nor
+available; `public-claim-limited` means the finding bounds what may be
+said rather than blocking a gate; `author-ruling-pending` means the
+decision is not a session's to make; `blocks-gate` means what it says.
+Disclosure is not a disposition.
+
+| Lens | Kind | Finding | Disposition | Consequence |
+| --- | --- | --- | --- | --- |
+| Public administration | hidden-liveness-assumption | No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf. | route-unbuilt | No Book 1 claim of receipt, action or completed remedy may take an established posture; operational assurance is neither built nor available. |
+| Public administration | unowned-dependency | A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives. | author-ruling-pending | Restitution after a withdrawn requisition depends on the judicial remedy the finding attests remains open; whether to derive it here is a ruling, and until then no restitution claim is made. |
+| Disability and accessibility | hidden-liveness-assumption | Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows. | public-claim-limited | Gate C may claim mechanical accessibility of the artifact only; no accessibility-for-users or reader claim follows from a green check. |
+| Care and the life course | narrative-distortion | `cares` is the posture of two passages in the whole book. | public-claim-limited | No balance claim may rest on posture coverage; raising it needs another interface rather than another passage, which is how it went from one to two. |
+| Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. | route-unbuilt | No hearing, compensation or remedy arrival may be claimed; the justice contract states the same boundary. |
+| Policing and prison | private-power-blind-spot | An accusation nobody signed still takes two protections on its own — the whistleblower shield for that exposure, and recognition — because both withdraw by absence. The severity route was repaired on 2026-09-16 to read the Court's judgment and cited case, which cost nothing since every person severity can reach already had them. The harm relations still name no writer. | author-ruling-pending | The two remaining routes withdraw by absence and gating them would change the shield's ruled default; no claim that an accusation has an author is made anywhere. |
+| Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. | public-claim-limited | Recognition, cooperation and readmission are named external assumptions and may not be asserted as established in any Book 1 claim. |
+| Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. | route-unbuilt | No supply, stock, procurement or delivery claim may take an established posture; quantitative models and operational assurance are unbuilt. |
+| Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses. | public-claim-limited | The counted-claims rule may be cited as guarded on its digit half only; the spelled-out half is prose review and must not be described as checked. |
 
 ## Findings by kind
 
@@ -122,10 +129,11 @@ Encoded by:
 - `book-1/13-the-one-thing-taken.pins.nibli`
 - `tests/pins/public-safety/firewalls/arrest/expect.pins.nibli`
 - `tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli`
+- `tests/pins/red-team/counterfactual-severity-without-the-court/expect.pins.nibli`
 
 - **held** (private-power-blind-spot) — Each coercive instrument carries a refusal pin against every floor predicate; the firewall reaches the confinement conclusion only.
 - **held** (impossible-operation-overclaim) — The design has no rule reading a building back into a condition, service or remedy, so a facility name is never evidence of compliance.
-- **open** (private-power-blind-spot) — An accusation nobody signed reaches three protections on its own: it takes the whistleblower shield, it stops the accused being recognised, and two of them raise the severity that decides placement. Only the voiding rule asks for a review body's judgment beside the lie.
+- **open** (private-power-blind-spot) — An accusation nobody signed still takes two protections on its own — the whistleblower shield for that exposure, and recognition — because both withdraw by absence. The severity route was repaired on 2026-09-16 to read the Court's judgment and cited case, which cost nothing since every person severity can reach already had them. The harm relations still name no writer.
 
 ### Media, science, culture and pluralism
 

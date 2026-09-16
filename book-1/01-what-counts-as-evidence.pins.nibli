@@ -73,7 +73,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 40
+:expect-pins 42
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -211,6 +211,19 @@ family(Hano).
 # effects disjoint from everything below — severe feeds placement only through
 # prisoner, and Probe is nobody's prisoner. Unscoped for the file's usual
 # reason: each accept is the premise of the query under it.
+#
+# The court facts below were added on 2026-09-16, when severity became
+# court-bound: it reads the Court's judgment and its cited case besides the
+# pairing. They are here so this exhibit keeps demonstrating what it is about —
+# the PAIRING — rather than silently becoming a demonstration of the new
+# conjuncts. That severity is now court-bound has its own case, in
+# tests/pins/red-team/an-accusation-nobody-signed.
+:accept
+judge(Court, Probe).
+
+:accept
+cite(Court, ProbeCase, Probe).
+
 :accept
 attack(Probe, Vic1).
 

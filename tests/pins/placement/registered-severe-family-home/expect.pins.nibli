@@ -22,7 +22,7 @@
 
 # The generated severity setup reaches the declared axis state.
 ? severe(Registered_Severe_Family_Home).
-# => TRUE
+# => FALSE
 
 # The family axis matches the generated fixture record.
 ? family(Registered_Severe_Family_Home).

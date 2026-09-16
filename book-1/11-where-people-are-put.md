@@ -201,13 +201,22 @@ it does not name whoever wrote that the harm was meant. So the dispute this chap
 recommends runs one way only — Ruk can contradict the claim, and there is nobody
 recorded on the other side of it to answer for having made it.
 
-The rule's only condition beyond the two entries is that they name different people.
-That distinctness is the whole of what stands between Hano — who has an attack entry
-and an injury entry naming the same person — and a severity finding of his own. Not
-authorship, not review, not a ground. And the comparison is inside this design rather
-than outside it: the rule that took Ruk's liberty asked for a court's judgment, a cited
-case, a recorded conviction and a dozen separately witnessed entries. The rule that
-decides where he is held for the length of it asks for two lines that nobody signed.
+That much was true of this rule from the beginning, and one half of it has been
+repaired since. The rule used to ask nothing beyond the two entries except that they
+name different people — the distinctness that stands between Hano, who has an attack
+entry and an injury entry naming the same person, and a severity finding of his own. The
+comparison was inside this design rather than outside it: the rule that took Ruk's
+liberty asked for a court's judgment, a cited case, a recorded conviction and a dozen
+separately witnessed entries, while the rule deciding where he is held for the length of
+it asked for two lines that nobody signed.
+
+It now asks for the first two of those as well. Severity reads the court's judgment and
+its cited case, which every person severity can reach already had — severity does
+nothing except for the confined, and nobody is confined without them. So Ruk, Lalo and
+Don are exactly where they were, and an entry about somebody no court has judged now
+concludes nothing. What did not change is the thing this section is about: the entries
+still name the offender and the people harmed and not the writer. The court is a
+condition on acting, not an author for the claim.
 
 ## The case nobody wrote a rule for
 

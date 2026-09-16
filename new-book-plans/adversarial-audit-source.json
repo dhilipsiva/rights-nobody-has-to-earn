@@ -38,12 +38,16 @@
         {
           "finding": "No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf.",
           "category": "hidden-liveness-assumption",
-          "open": true
+          "open": true,
+          "disposition": "route-unbuilt",
+          "consequence": "No Book 1 claim of receipt, action or completed remedy may take an established posture; operational assurance is neither built nor available."
         },
         {
           "finding": "A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives.",
           "category": "unowned-dependency",
-          "open": true
+          "open": true,
+          "disposition": "author-ruling-pending",
+          "consequence": "Restitution after a withdrawn requisition depends on the judicial remedy the finding attests remains open; whether to derive it here is a ruling, and until then no restitution claim is made."
         }
       ]
     },
@@ -63,7 +67,9 @@
         {
           "finding": "Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows.",
           "category": "hidden-liveness-assumption",
-          "open": true
+          "open": true,
+          "disposition": "public-claim-limited",
+          "consequence": "Gate C may claim mechanical accessibility of the artifact only; no accessibility-for-users or reader claim follows from a green check."
         }
       ]
     },
@@ -104,7 +110,9 @@
         {
           "finding": "`cares` is the posture of two passages in the whole book.",
           "category": "narrative-distortion",
-          "open": true
+          "open": true,
+          "disposition": "public-claim-limited",
+          "consequence": "No balance claim may rest on posture coverage; raising it needs another interface rather than another passage, which is how it went from one to two."
         }
       ]
     },
@@ -144,7 +152,9 @@
         {
           "finding": "No finding proves a hearing occurred or that compensation arrived.",
           "category": "hidden-liveness-assumption",
-          "open": true
+          "open": true,
+          "disposition": "route-unbuilt",
+          "consequence": "No hearing, compensation or remedy arrival may be claimed; the justice contract states the same boundary."
         }
       ]
     },
@@ -154,7 +164,8 @@
       "encoded_by": [
         "book-1/13-the-one-thing-taken.pins.nibli",
         "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli",
-        "tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli"
+        "tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli",
+        "tests/pins/red-team/counterfactual-severity-without-the-court/expect.pins.nibli"
       ],
       "findings": [
         {
@@ -168,9 +179,11 @@
           "open": false
         },
         {
-          "finding": "An accusation nobody signed reaches three protections on its own: it takes the whistleblower shield, it stops the accused being recognised, and two of them raise the severity that decides placement. Only the voiding rule asks for a review body's judgment beside the lie.",
+          "finding": "An accusation nobody signed still takes two protections on its own — the whistleblower shield for that exposure, and recognition — because both withdraw by absence. The severity route was repaired on 2026-09-16 to read the Court's judgment and cited case, which cost nothing since every person severity can reach already had them. The harm relations still name no writer.",
           "category": "private-power-blind-spot",
-          "open": true
+          "open": true,
+          "disposition": "author-ruling-pending",
+          "consequence": "The two remaining routes withdraw by absence and gating them would change the shield's ruled default; no claim that an accusation has an author is made anywhere."
         }
       ]
     },
@@ -210,7 +223,9 @@
         {
           "finding": "Foreign recognition, cooperation and readmission are named external assumptions.",
           "category": "unowned-dependency",
-          "open": true
+          "open": true,
+          "disposition": "public-claim-limited",
+          "consequence": "Recognition, cooperation and readmission are named external assumptions and may not be asserted as established in any Book 1 claim."
         }
       ]
     },
@@ -250,7 +265,9 @@
         {
           "finding": "Nothing counts stock, forecasts supply or proves procurement.",
           "category": "hidden-liveness-assumption",
-          "open": true
+          "open": true,
+          "disposition": "route-unbuilt",
+          "consequence": "No supply, stock, procurement or delivery claim may take an established posture; quantitative models and operational assurance are unbuilt."
         }
       ]
     },
@@ -311,7 +328,9 @@
         {
           "finding": "The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses.",
           "category": "narrative-distortion",
-          "open": true
+          "open": true,
+          "disposition": "public-claim-limited",
+          "consequence": "The counted-claims rule may be cited as guarded on its digit half only; the spelled-out half is prose review and must not be described as checked."
         }
       ]
     }

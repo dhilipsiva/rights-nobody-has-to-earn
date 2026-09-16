@@ -252,7 +252,9 @@ than one person, which nobody records at all: each person it reached is written 
 separately, one entry each, and *more than one* is what the rules see when they look at
 those entries together. An offence is severe when two of those stand together in the
 record: an attack and a cruelty landing on the same person, or either of them landing
-on one person while an injury lands on another.
+on one person while an injury lands on another — and when a court has judged that
+person and cited the case, which is the condition discussed later in this chapter and
+which everybody severity can reach already satisfies.
 
 The consequence worth noticing is that nobody writes the number of victims. If
 somebody harmed a great many people, that is a great many separate entries, each one
@@ -504,23 +506,30 @@ people who wrote this design's own worked examples were careful, and put a revie
 judgment beside every recorded lie — but that is mostly a habit of the people doing the
 writing, and the exception is worth stating exactly rather than in general.
 
-One rule does ask for the judgment: the one that voids credibility reads a review body's
-judgment beside the lie, and without it the entry voids nobody. Everything else a
-recorded lie does, it does alone. An entry naming somebody as having deceived the office
+Two rules ask for something besides the entry. The one that voids credibility reads a
+review body's judgment beside the lie, and without it the entry voids nobody. The one
+that sets severity — which decides where a confined person spends the sentence — reads
+the court's judgment and its cited case, so an entry about somebody no court has judged
+concludes nothing.
+
+Two rules ask for nothing at all. An entry naming somebody as having deceived the office
 holder they exposed takes the shield that exposure earned — that exposure's protection,
 on one line nobody signed, though not the person's protection in general, which a later
-chapter is careful about for its own reasons. An entry naming somebody as a deceiver
-stops them being recognised for anything, however carefully they did it. And two harm entries about one offender and
-one victim raise the severity that decides where a convicted person is held. None of
-those asks who wrote the entry, on what ground, or whether anybody reviewed it.
+chapter is careful about for its own reasons. And an entry naming somebody as a deceiver
+stops them being recognised for anything, however carefully they did it. Neither asks
+who wrote the entry, on what ground, or whether anybody reviewed it.
 
-The comparison that makes this uncomfortable is inside the design rather than outside
-it. An injury entry is also read by the rule that convicts, and there it is surrounded:
-a court's judgment, a cited case, a recorded conviction, a dozen separately witnessed
-entries, a current custody authorisation, and four things that must be absent. So this
-design plainly knows how to put an accusation behind a wall before acting on it. It does
-that for taking somebody's liberty and not for deciding, once their liberty is taken,
-where they are held.
+The comparison that made severity worth changing is inside the design rather than
+outside it. An injury entry is also read by the rule that convicts, and there it is
+surrounded: a court's judgment, a cited case, a recorded conviction, a dozen separately
+witnessed entries, a current custody authorisation, and four things that must be absent.
+This design plainly knows how to put an accusation behind a wall before acting on it, so
+the question about severity was never whether that could be done. Severity now asks for
+the first two of those, which the confinement it decides had already required, and
+nobody it can reach was moved by the change. The two routes that remain are the ones
+where an unsigned entry takes something away rather than concluding something, and they
+are described here rather than repaired: what they take, they take by absence, and an
+accusation not yet adjudicated is exactly what the shield was built to ignore.
 
 That is the roster gap again in a smaller form. A finding still has to be written, still
 sits in the open, and still names the person it is about, which is more than a file of

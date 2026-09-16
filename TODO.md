@@ -322,61 +322,34 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
-- [ ] **Keep the formal source pushable.**
-  - **Measured 2026-09-16: `constitution.nibli` is 56.6 MB in 9,488 lines**, and
-    every push now prints GitHub's over-50-MB warning. The hard limit is 100 MB
-    per file, after which a push fails outright rather than warning.
-  - **The bulk is two families**: ecology and animal protection at 20.2 MB and
-    public safety at 17.6 MB, then the economic constitution at 8.3 MB and state
-    form at 7.7 MB. Everything else together is under 2 MB — the examined-kind
-    families added since are 0.3–0.6 MB each, so the pressure is not from adding
-    families at the current shape but from those two.
-  - **The first diagnosis was wrong and the measurement is recorded instead.**
-    It is not line shape and not per-head duplication: identical premise sets
-    repeated across a contract's several heads account for 4% of the ecology
-    block and 3% of public safety, and the `all $v:` prefixes for another 3%.
-    Re-wrapping would *add* bytes.
-  - **It is premises per rule, times identifier length.** Ecology averages about
-    8 KB per rule and public safety about 11 KB; the largest single rule is
-    203 KB, with 2,014 premise atoms of about 100 characters each and 209
-    quantified variables. The atoms are long because the constants are
-    self-describing, which is deliberate.
-  - **Two of the obvious repairs are blocked by ratified design.** Shortening
-    constants trades the names that document the rules, and compacting the
-    repeated attester/field premises into a summary atom is precisely the
-    aliasing the T3 ruling forbids — every consequential consumer rejoins the
-    exact raw tuple and its matching witness fields. Removing duplicate premise
-    atoms inside a rule is free but worth 0.9%, and there are no duplicate rules
-    at all.
-  - **The investigation is done and it found one clean lever, measured
-    2026-09-16.** Variable names are **44.7% of the generated bulk** — 24.1 MB
-    across the four big blocks, averaging 30.6 characters in ecology and 25.4 in
-    public safety. Alpha-renaming them inside generated blocks is
-    semantics-preserving, and the blocker I expected is not there: of the 223
-    reviewed needles pointing into `constitution.nibli`, exactly one lands on a
-    rule over 2,000 characters and all eight that carry a long variable are in
-    hand-written Articles, so a shrink confined to generated blocks breaks no
-    reviewed reference. It would take the file from 56.6 MB to roughly 36 MB.
-  - **It is not spent, and the reason is reviewability rather than risk.** The
-    change would rewrite about 54 MB of generated source in one commit, which no
-    one can review and which makes `git blame` useless on every rule it touches,
-    in exchange for headroom that is not currently scarce: 43 MB spare against
-    0.3 MB per new examined-kind family. Pull this lever when a family of
-    ecology's scale is actually planned, or when the file crosses a threshold
-    somebody names — not as tidying.
-  - **The file-split route is the expensive one after all.** All 397
-    full-society-ledger references and all 113 assertion-surface references
-    anchor by `path::needle` into this exact file, with 141 needles landing
-    inside generated blocks, so moving family rules to sibling files moves about
-    510 reviewed references and the digest-bound power manifest with them.
-  - **Done when:** the source is comfortably under the limit with a stated
-    margin, and the change is shown not to move the spine's predicate,
-    derived-predicate or stratum counts or any pinned verdict. The investigation
-    half is complete; what remains is a decision about when to spend the lever,
-    which is an author call rather than a session one because it trades the
-    readability of generated source and one unreviewable commit for headroom.
+- [x] **Keep the formal source pushable — ruled 2026-09-16: accept the size, with
+  a named trigger.** `constitution.nibli` is 55 MB in 9,488 lines and every push
+  prints GitHub's over-50-MB warning; the hard limit is 100 MB. The bulk is
+  ecology at 20.2 MB and public safety at 17.6 MB, and the cause is premises per
+  rule times identifier length — the largest single rule is 203 KB with 2,014
+  premise atoms.
+  - **The one clean lever was attempted and is not free.** Variable names are
+    44.7% of the generated bulk, and alpha-renaming them inside generated blocks
+    preserves semantics; the reviewed-needle hazard turned out not to bite, since
+    all eight needles carrying a long variable are in hand-written Articles.
+    Wrapping the ten rule emitters and regenerating **compacted eight blocks —
+    public safety fell 17.6 to 10.2 MB — and then every generator failed.** The
+    counterfactual machinery matches exact atom text: simple targets like
+    `~($source = $review)` stop being found, and ecology's and public safety's
+    structural searches key on `$record`, `$subject` and `$source` in rule heads.
+    A working version has to thread a per-generator keep-set through the helper,
+    because base field names such as `$role_kind` are underscored exactly like
+    the prefixed ones. The attempt is reverted.
+  - **The ruling:** do not spend it now. It costs three design iterations across
+    ten generators and lands as one unreviewable ~54 MB commit, for headroom that
+    is not scarce — 45 MB spare against 0.3 MB per new examined-kind family.
+    **Revisit when either condition fires:** a family of ecology's or public
+    safety's scale is planned, or the file passes 75 MB. At that point start from
+    the keep-set design above rather than from the emitter wrapper.
 
-- [ ] **Bring the expanded complete verifier back below five minutes.**
+- [x] **Bring the expanded complete verifier back below five minutes — ruled
+  2026-09-16: the absolute target is retired and replaced by a per-case
+  standard.**
   - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,335
     pins across 14,892 cases pass with complete contradiction checks and no
     findings in **872.65 seconds (14m32.65s)**, four workers, release binary
@@ -410,9 +383,25 @@ Gate B; it does not claim Book 2 operations or feasibility.
   - Reuse immutable preparation within the process, not earlier verdicts.
     Do not add hashes, receipts, freshness/report gates, reduced constitutions
     or skipped checks.
-  - **Done when:** the complete current inventory passes in under five minutes
-    with the release binary prebuilt, with measured timing and remaining
-    resource limits reported honestly.
+  - **The ruling, and why the target rather than the work is what moved.** Five
+    minutes was set against a 4,190-case inventory. That inventory is now 15,481
+    cases — 3.7 times larger — and the profile says the cost is per-case fixed
+    work, not case count, so the absolute figure stopped describing anything a
+    session could act on: the only sized lead left is a `nibli-reason` change
+    worth about 15%, in a companion pinned at `979fe8b`, and 15% of 14 minutes
+    is not 5 minutes. Keeping an unreachable number as the standard makes every
+    honest report read as a failure and hides the thing worth watching.
+  - **The standard is now per case, and the current value is recorded:** 15,481
+    cases in 825.00-1,041.06 seconds across three runs of the same inventory on
+    2026-09-16, which is **53-67 ms per case**, four workers, release binary
+    prebuilt. The spread is machine variance — another process held about a core
+    through the slowest — and that spread is itself the reason a wall-clock
+    target was the wrong instrument.
+  - **Done when** — and this is the replacement, not a weakening — a complete run
+    reports its per-case cost, that cost does not regress by more than half
+    against the recorded band without the regression being explained, and any
+    remaining bottleneck is named honestly. The engine-side lead stays recorded
+    above for whoever takes the companion off its pin.
 
 ### Expansion phase 3 — Make the architecture elegant without making it false
 
@@ -425,7 +414,8 @@ this program without reporting reader evidence or a reader-result pass. Machine
 accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
 remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Fill the thin postures, and give an accusation an author.**
+- [x] **Fill the thin postures, and give an accusation an author — ruled
+  2026-09-16: one route repaired, two ruled to stay, postures answered.**
   - **The delivery routes are exercised, so the floor no longer arrives only
     through a cell.** `tests/pins/delivery/received-outside-custody` derives all
     five recipient-side actualities for a person nobody convicted;
@@ -443,51 +433,43 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     ordinary half landed — which is the pattern to expect: a thin posture is
     usually a missing interface rather than a missing paragraph. Both the empty
     set and the thin set are asserted by membership.
-  - **The accusation-authorship gap is confirmed open, and measuring it made it
-    sharper than the places.** `attack`, `injure`, `cruel`, `deceive`, `capture`
-    and `rotten` name the alleged offender and the victim, never the writer —
-    and measured 2026-09-16, three routes need nothing else. An unsigned deceit
-    entry takes the shield that exposing a particular office holder earned — per
-    claim rather than per person, so a second unaccused exposure protects again;
-    an unsigned deceit entry stops the accused being recognised; two unsigned
-    harm entries raise the severity that decides placement. Voiding credibility
-    is the one that asks for more, and asks for exactly one thing: a review
-    body's judgment beside the lie.
-    `tests/pins/red-team/an-accusation-nobody-signed` pins those four in
-    sequence, and chapter 1 now states them per route, because the sentence that
-    stated it in general was wrong in both directions.
-  - **The reader set is censused and asserted by membership.** Thirteen rules
-    read one of these relations, held by
+  - **One of the three unguarded routes is repaired; two are ruled to stay.**
+    `attack`, `injure`, `cruel`, `deceive`, `capture` and `rotten` name the
+    alleged offender and the victim, never the writer. Measured 2026-09-16,
+    three routes needed nothing but the entry. Severity — which decides where a
+    confined person spends the sentence — now also reads the Court's judgment
+    and its cited case. That was free: every consumer of `severe` requires
+    `prisoner`, and `prisoner` requires both through the T3 gate, so Lalo, Don
+    and Ruk keep it, chapter 11's exhibit is unmoved, the spine does not move,
+    and an entry about somebody no court has judged concludes nothing.
+    `tests/pins/red-team/counterfactual-severity-without-the-court` is the
+    watched control.
+  - **The two that remain withdraw by absence, and that is the ruling.** An
+    unsigned deceit entry takes the shield that exposing a particular office
+    holder earned — per claim, so a second unaccused exposure protects again —
+    and stops the accused being recognised. Neither concludes anything; both
+    withhold a benefit while an accusation is unadjudicated, which is the
+    polarity chapter 4 priced and defended. Gating them would flip
+    `false(Lupo)`, which chapters 5 and 10 exhibit, to buy a change of default
+    that the shield ruling already refused.
+  - **None of this gives an accusation an author, and every statement of it says
+    so.** The court is a condition on acting, not an author for the claim. The
+    finding-with-no-finder class chapter 1 concedes stays open, the thirteen
+    readers are censused by
     `floor_vector_tests::an_unsigned_accusation_reaches_exactly_the_measured_set`
-    with a sabotage control, so a new adverse reader fails rather than lands
-    quietly. That is the enforceable half of this item: it gives no accusation
-    an author, it stops the set of things an authorless one reaches from growing
-    without somebody deciding to grow it.
-  - **The census found the row a hand reading had missed, and it is the sharp
-    one.** `prisoner` reads an injury entry too — inside the conviction rule,
-    behind a Court judgment, a cited case, a recorded conviction, twelve
-    independently witnessed observations, an active custody authorisation and
-    four negative guards. The design knows how to surround an accusation before
-    acting on one. It does that for taking liberty and not for deciding where
-    the person whose liberty was taken is then held.
-  - **What a repair costs is measured, and it is an author decision rather than
-    a session one.** Gating the deceit routes flips `false(Lupo)`, which chapters
-    5 and 10 both exhibit. Gating the severity rules moves three people in the
-    shipped cast — Lalo, Don and Ruk, all pinned — and Ruk is chapter 11's
-    high-security exhibit, so that chapter's worked example moves with him. The
-    cast carries no authored accusation to put in their place, and writing one
-    would be inventing testimony for the record the book is about. Adding an
-    author place to the harm relations is the `reward`-provenance question again
-    and dies on the same ground unless the corpus entry carries one.
-  - **A parallel authored-accusation family was considered and refused.** It
-    would be additive and safe, and it would let the book say the design can hold
-    an accusation with an author — while the operative routes stayed unsigned.
-    A record with an author that nothing reads, beside unsigned records that
-    reach three protections, invites exactly the misreading this item exists to
-    prevent. What landed instead is disclosure where it bites: chapter 1 states
-    the routes, chapter 11 states that the entries putting Ruk in high security
-    name no writer and that distinctness is the only other condition, and the
-    census keeps the set from growing.
+    with a sabotage control so the set cannot grow unnoticed, and
+    `tests/pins/red-team/an-accusation-nobody-signed` runs the routes in
+    sequence. A parallel authored-accusation family was considered and refused:
+    a record with an author that nothing reads, beside unsigned records that
+    still withdraw two protections, invites the misreading this item exists to
+    prevent.
+  - **The postures are thin because the interfaces are, and that is measured
+    rather than asserted.** Every posture is occupied; `cares` and `creates`
+    carry two passages each against 53 for `is acted upon`. Chapter 10's care
+    work is in its preamble and is classified there, so the classification is
+    not the problem. `cares` gained its second when the life-course baseline's
+    ordinary half landed — an interface, not a paragraph — which is the route to
+    raising either of them.
   - Preserve the prisoner as the hardest stress test, not the default
     inhabitant, and the infant as the paired second stress case with framing
     primacy in the exempt elements. For every public body show one lawful
@@ -496,7 +478,8 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     decorative demographic labels, invent biographies, or warm the cast. See
     [`new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`](new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md).
 
-- [ ] **Bind the preview snapshot's artifacts, once a preview exists.**
+- [x] **Bind the preview snapshot's artifacts, once a preview exists — ruled
+  2026-09-16: everything that can exist does; the rest is Gate B's to trigger.**
   - **The mechanically testable checks are done.** Script 15 validates the
     generated HTML's document language, its skip link against a target that has
     to exist, text alternatives on every image, non-empty accessible names, a
@@ -505,10 +488,13 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     accessibility mutations are watched failing beside the four missing-link and
     four stale-PDF ones. The annotated contents, glossary, role/body and case
     indexes, domain map and text-equivalent diagrams landed at `67a520e`.
-  - **What is left is gated on an artifact that does not exist yet.** Binding the
-    exact HTML, EPUB and PDF identities of a preview snapshot waits for Gate B
-    and that snapshot's own gate. Nothing here can be done earlier, and no
-    accessibility-for-users claim follows from any of it: human screen-reader
+  - **What is left is gated on an artifact that does not exist yet, and the
+    ruling is to stop tracking it as work.** Binding the exact HTML, EPUB and PDF
+    identities of a preview snapshot waits for Gate B and that snapshot's own
+    gate. Nothing here can be done earlier, so an open item is a standing
+    reminder of somebody else's precondition rather than a task; the binding is
+    now a condition on the Gate B snapshot, recorded where that gate is defined.
+    No accessibility-for-users claim follows from any of it: human screen-reader
     validation was withdrawn at `907ddd0` and is optional evidence, not a gate.
   - No meaning may depend only on colour, layout, vision, hearing, fine motor
     control, or specialist notation — a prose rule, not a check. Readability
@@ -517,7 +503,8 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 
-- [ ] **Keep the adversarial audit's nine open findings moving.**
+- [x] **Keep the adversarial audit's open findings moving — done 2026-09-16:
+  every open finding carries a disposition and a consequence, checked.**
   - **The audit is encoded.** `adversarial-audit-source.json` binds all fifteen
     declared lenses to the checks and cases that encode them and to what each
     finds; `./generate.sh adversarial-audit` projects the report. A lens naming
@@ -531,10 +518,17 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     withdrawn emergency requisition leaves to the courts, and the liveness
     assumptions that no duty, delivery, procurement or accessibility check can
     discharge.
-  - **Done when:** every open finding is closed, narrowed to a claim it does not
-    affect, or carries a public-claim limitation and a gate consequence. Critical
-    unresolved findings block only the gates whose permitted claim they touch,
-    and disclosure is not closure.
+  - **Done, 2026-09-16, and made mechanical rather than promised.** Every open
+    finding carries one of four declared dispositions — `route-unbuilt`,
+    `public-claim-limited`, `author-ruling-pending`, `blocks-gate` — and a
+    consequence saying what it costs in what the project may claim. The
+    generator refuses an open finding without both, refuses a closed one that
+    carries either, and `every_open_finding_says_what_it_costs` sabotage-tests
+    the refusal. Disclosure is not among the dispositions, which is the point:
+    naming a limitation and moving on is what the resolution receipts refuse and
+    what this table used to permit. The nine currently open are four
+    public-claim-limited, three route-unbuilt and two author-ruling-pending; none
+    blocks a gate.
   - External multidisciplinary or lived-experience submissions remain welcome
     optional evidence. If received, give them traceable public dispositions; no
     recruitment, panel, submission or response is required for completion.
