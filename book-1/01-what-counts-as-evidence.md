@@ -501,9 +501,18 @@ examiner — this body judged that person, this auditor documented that finding.
 holds a verdict, it names nobody. The entry saying someone lied does not say who found
 that they lied. The entry ending a sentence does not say who decided it was over. The
 people who wrote this design's own worked examples were careful, and put a review body's
-judgment beside every recorded lie — but that is a habit of the people doing the writing.
-No rule requires it and nothing checks it, and the write that jails the whistleblower
-above has no judgment anywhere near it and works exactly as well.
+judgment beside every recorded lie — but that is mostly a habit of the people doing the
+writing, and the exception is worth stating exactly rather than in general.
+
+One rule does ask for the judgment: the one that voids credibility reads a review body's
+judgment beside the lie, and without it the entry voids nobody. Everything else a
+recorded lie does, it does alone. An entry naming somebody as having deceived the office
+holder they exposed takes the shield that exposure earned — that exposure's protection,
+on one line nobody signed, though not the person's protection in general, which a later
+chapter is careful about for its own reasons. An entry naming somebody as a deceiver
+stops them being recognised for anything, however carefully they did it. And two harm entries about one offender and
+one victim raise the severity that decides where a convicted person is held. None of
+those asks who wrote the entry, on what ground, or whether anybody reviewed it.
 
 That is the roster gap again in a smaller form. A finding still has to be written, still
 sits in the open, and still names the person it is about, which is more than a file of

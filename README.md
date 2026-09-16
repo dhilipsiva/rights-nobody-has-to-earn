@@ -106,9 +106,9 @@ the first build compiles the bundled C library using a C compiler and Make
 allocator. The explicit authoring executable is unchanged.
 
 Latest full run measured on 2026-09-16 with four workers and the release binary
-already built against the pinned engine `979fe8b`: all 84,289 pins across 15,479
+already built against the pinned engine `979fe8b`: all 84,304 pins across 15,480
 cases passed, with complete formal contradiction scans and no findings, in
-836.96 seconds (13m56.96s); nine existing known-defect pins still reproduce.
+825.00 seconds (13m45.00s); nine existing known-defect pins still reproduce.
 Peak resident memory was observed at about 19,300,000 KiB during the run; the
 user and system CPU totals were not captured this time and the previous run's
 figures (3,371.05 s user, 81.71 s system, 395% utilisation, 21,924,220 KiB peak,

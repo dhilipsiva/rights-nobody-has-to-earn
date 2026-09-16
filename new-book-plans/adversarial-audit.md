@@ -22,6 +22,7 @@ welcome optional evidence; none is required for completion.
 | Disability and accessibility | hidden-liveness-assumption | Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows. |
 | Care and the life course | narrative-distortion | `cares` is the posture of two passages in the whole book. |
 | Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. |
+| Policing and prison | private-power-blind-spot | An accusation nobody signed reaches three protections on its own: it takes the whistleblower shield, it stops the accused being recognised, and two of them raise the severity that decides placement. Only the voiding rule asks for a review body's judgment beside the lie. |
 | Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. |
 | Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. |
 | Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses. |
@@ -34,7 +35,7 @@ welcome optional evidence; none is required for completion.
 | impossible-operation-overclaim | 6 | 0 |
 | narrative-distortion | 5 | 2 |
 | omitted-domain | 2 | 0 |
-| private-power-blind-spot | 4 | 0 |
+| private-power-blind-spot | 5 | 1 |
 | totalising-rule | 7 | 0 |
 | unowned-dependency | 3 | 2 |
 
@@ -120,9 +121,11 @@ Encoded by:
 
 - `book-1/13-the-one-thing-taken.pins.nibli`
 - `tests/pins/public-safety/firewalls/arrest/expect.pins.nibli`
+- `tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli`
 
 - **held** (private-power-blind-spot) — Each coercive instrument carries a refusal pin against every floor predicate; the firewall reaches the confinement conclusion only.
 - **held** (impossible-operation-overclaim) — The design has no rule reading a building back into a condition, service or remedy, so a facility name is never evidence of compliance.
+- **open** (private-power-blind-spot) — An accusation nobody signed reaches three protections on its own: it takes the whistleblower shield, it stops the accused being recognised, and two of them raise the severity that decides placement. Only the voiding rule asks for a review body's judgment beside the lie.
 
 ### Media, science, culture and pluralism
 

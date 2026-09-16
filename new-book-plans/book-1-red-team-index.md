@@ -120,6 +120,30 @@ attributable to somebody. That is a cost, not a barrier, and detection is
 external. Every contract card that says "these are conditions on supplied
 credentials, not proof of independence in practice" is saying this.
 
+**An accusation nobody signed.** *Gains:* whoever writes it. *Needs:* one line,
+and for the severity route two. *Hidden cost:* the person it names, who has no
+author to challenge. *Detected:* **not detected.** The harm relations name the
+alleged offender and the person harmed, never the writer, so there is nobody to
+put a question to. Measured 2026-09-16, three of the four consequential routes
+ask for nothing else at all: an unsigned deceit entry takes the shield that
+exposing a particular office holder earned, an unsigned deceit entry stops the
+accused being recognised for anything, and two unsigned harm entries about one
+offender and one victim raise the severity that decides where a convicted person
+is held. The shield route is per claim rather than per person — a second,
+unaccused exposure protects again, which the case pins beside the first.
+The fourth is the exception and is stated as one: voiding credibility does read a
+review body's judgment beside the lie, and without it the entry voids nobody.
+*Case:* `tests/pins/red-team/an-accusation-nobody-signed` pins all four in
+sequence, including the person keeping personhood, the floor debt and liberty
+throughout.
+
+What the design does instead is far less than in the collusion entry, and it
+should not be dressed up. The entry is visible, it names the person it is about,
+and it sits where it can be disputed by whoever notices — which is more than a
+file of impressions gives anybody, and is the whole of it. Chapter 1 states this
+per route rather than in general, because stating it in general got it wrong in
+both directions at once.
+
 ## Outside what Nibli can test
 
 These are behaviours at scale, and no rule over supplied records reaches them.

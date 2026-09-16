@@ -720,7 +720,8 @@ holding a role in somebody's life actually is" is inserted in Book 1 chapter 9,
 Nothing here proves a child was heard, a supporter arrived, care continued or a
 correction was published. With the family in place the complete inventory passed
 on 2026-09-16: all 84,289 pins across 15,479 cases with complete contradiction
-checks and no findings, in 836.96 seconds; the nine known-defect pins still
+checks and no findings, in 836.96 seconds, and again at 84,304 across 15,480
+after the accusation case landed; the nine known-defect pins still
 reproduce, and the under-five-minute target is still not met.
 
 **Mobility/plurality implementation and reader projection, 2026-09-13.**
@@ -2075,7 +2076,7 @@ cases that encode them and to what each finds. Four ways to weaken it fail and
 are sabotage-tested: a lens naming a path that does not exist, a lens finding
 nothing, a declared finding kind nobody raises, and a table with nothing open.
 
-**Thirty-one findings across the seven declared kinds, eight open**, printed
+**Thirty-two findings across the seven declared kinds, nine open**, printed
 first in the report. It is a repository audit over the source: it warrants no
 independent human review, no reader response, no external truth and no
 operation, and external submissions remain welcome optional evidence that no
@@ -2087,6 +2088,21 @@ behaviour, each stating who gains, what they must know and coordinate, who bears
 the cost that does not appear on the ledger, how it is detected or challenged,
 and whether the design's answer creates a new veto, surveillance system or
 score. Ten entries name an executable case for the wall they claim.
+
+**A second entry says a different wall is not there, and measuring it moved the
+claim.** An accusation nobody signed is not inert: measured 2026-09-16, an
+unsigned deceit entry takes the whistleblower shield for that exposure — per
+claim rather than per person, so a second unaccused exposure protects again —
+and stops the accused being recognised, and two unsigned harm entries raise the
+severity that decides placement — none of them asking who wrote the entry, on what ground, or whether
+anybody reviewed it. **Only the voiding rule requires a review body's judgment
+beside the lie**, which is why chapter 1 now states this per route: the sentence
+that stated it in general was wrong about the void and understated the other
+three. `tests/pins/red-team/an-accusation-nobody-signed` pins all four in
+sequence, with the person keeping personhood, the floor debt and liberty
+throughout. What a repair would cost is recorded in the tracker rather than
+taken: requiring an authored record would flip `false(Lupo)`, which two chapters
+exhibit.
 
 **One entry says the wall is not there, and pins it.** Collusion and honest
 agreement are the same shape: nothing authenticates a witness or checks that

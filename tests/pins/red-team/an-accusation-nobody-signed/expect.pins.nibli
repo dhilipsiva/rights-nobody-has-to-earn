@@ -1,0 +1,90 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# THE ACCUSATION-AUTHORSHIP GAP, MADE EXECUTABLE.
+#
+# The narrative-register decision records that "the record can hold an
+# accusation only as an entry with an author" traced to nothing, because the
+# harm relations name the alleged offender and the victim and never the writer.
+# That is true of their PLACES. This case pins what follows from it, which is
+# about their CONSEQUENCES: an accusation nobody signed is not inert, and the
+# design's own protections are what it reaches.
+#
+# Measured 2026-09-16 against the current source. Three of the four routes
+# below need no judgment, no grounds, no author and no review. The fourth — the
+# voiding rule — does require a review body's judgment beside the lie, which is
+# why chapter 1's account of this is stated per route rather than in general.
+#
+# Nothing here is repaired by this case. It exists so the boundary is
+# executable rather than only described, in the same way the collusion case
+# pins a wall that is not there.
+:expect-pins 15
+
+# ─── 1. The shield, which an unsigned entry takes ────────────────────────────
+# Torvi exposed an office holder and holds the shield for it.
+? authority(Boss).
+# => TRUE
+? defend(Torvi).
+# => TRUE
+
+# One entry, written by nobody in particular, naming Torvi as having deceived
+# the person they exposed. No author, no ground, no date, no review.
+deceive(Torvi, Boss).
+
+# The shield is gone — for that exposure. The rule is per pair, which is what
+# chapter 4 means by closing against a claim rather than against a claimant.
+? defend(Torvi).
+# => FALSE
+
+# So a second exposure, of a different office holder, with no accusation
+# against it, protects again. The unsigned entry took one claim's protection,
+# not the person's.
+show(Torvi, Review).
+? authority(Review).
+# => TRUE
+? defend(Torvi).
+# => TRUE
+
+# ─── 2. Recognition, which an unsigned entry also takes ──────────────────────
+# Marn judged, documented and cited a ground, so the examiner door opens.
+? reward(Marn).
+# => TRUE
+
+deceive(Marn, Vasha).
+
+? reward(Marn).
+# => FALSE
+
+# ─── 3. Severity, which decides where a convicted person is held ─────────────
+# Two unsigned accusations about one offender and one victim.
+attack(Quilo, Sepp).
+cruel(Quilo, Sepp).
+
+? severe(Quilo).
+# => TRUE
+# It reaches the accused, not the person named as harmed.
+? severe(Sepp).
+# => FALSE
+
+# ─── 4. Credibility, the one route that does ask for a judgment ──────────────
+# Torvi has carried an unsigned deceit entry since the first section. It has
+# not voided anybody, because the voiding rule reads a review body's judgment
+# beside the lie.
+? false(Torvi).
+# => FALSE
+
+judge(Review, Torvi).
+
+# Now it voids. The judgment is a real condition and it is the exception, not
+# the rule: the three routes above asked for nothing of the kind.
+? false(Torvi).
+# => TRUE
+
+# ─── What an unsigned accusation still does not do ───────────────────────────
+? person(Torvi).
+# => TRUE
+? owe(State, Eats, Torvi).
+# => TRUE
+? prisoner(Torvi).
+# => FALSE
+? prisoner(Quilo).
+# => FALSE

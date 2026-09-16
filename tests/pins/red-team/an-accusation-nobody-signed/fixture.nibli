@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# Fresh names, checked against the shipped cast and the whole pin suite before
+# use: Torvi, Marn, Vasha, Quilo, Sepp. The cast-collision hazard is real — an
+# earlier delivery fixture reused an existing deceit victim's name and passed,
+# which is the dangerous way for it to fail.
+person(Torvi).
+person(Marn).
+person(Vasha).
+person(Quilo).
+person(Sepp).
+
+# Torvi exposes something about a public office holder. That is the whistle,
+# and chapter 4's shield is what it earns.
+show(Torvi, Boss).
+
+# Marn does every act the paid examiner door asks for, about Vasha.
+judge(Marn, Vasha).
+capture(Marn, Vasha).
+cite(Marn, MarnGround, Vasha).

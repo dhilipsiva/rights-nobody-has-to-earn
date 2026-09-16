@@ -153,7 +153,8 @@
       "lens": "Policing and prison",
       "encoded_by": [
         "book-1/13-the-one-thing-taken.pins.nibli",
-        "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli"
+        "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli",
+        "tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli"
       ],
       "findings": [
         {
@@ -165,6 +166,11 @@
           "finding": "The design has no rule reading a building back into a condition, service or remedy, so a facility name is never evidence of compliance.",
           "category": "impossible-operation-overclaim",
           "open": false
+        },
+        {
+          "finding": "An accusation nobody signed reaches three protections on its own: it takes the whistleblower shield, it stops the accused being recognised, and two of them raise the severity that decides placement. Only the voiding rule asks for a review body's judgment beside the lie.",
+          "category": "private-power-blind-spot",
+          "open": true
         }
       ]
     },

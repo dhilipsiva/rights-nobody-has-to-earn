@@ -420,10 +420,25 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     ordinary half landed — which is the pattern to expect: a thin posture is
     usually a missing interface rather than a missing paragraph. Both the empty
     set and the thin set are asserted by membership.
-  - **The accusation-authorship gap is confirmed open.** `attack(Hano, Ivo)`,
-    `injure`, `cruel`, `deceive`, `capture` and `rotten` name the alleged
-    offender and the victim, never the writer. Chapter 1 concedes the
-    finding-with-no-finder class; nothing has closed it.
+  - **The accusation-authorship gap is confirmed open, and measuring it made it
+    sharper than the places.** `attack`, `injure`, `cruel`, `deceive`, `capture`
+    and `rotten` name the alleged offender and the victim, never the writer —
+    and measured 2026-09-16, three of the four consequential routes need nothing
+    else. An unsigned deceit entry takes the shield that exposing a particular
+    office holder earned — per claim rather than per person, so a second
+    unaccused exposure protects again; an unsigned deceit entry stops the
+    accused being recognised; two unsigned harm entries raise the severity that
+    decides placement. The
+    fourth is the exception: voiding credibility does read a review body's
+    judgment beside the lie. `tests/pins/red-team/an-accusation-nobody-signed`
+    pins all four in sequence and chapter 1 now states them per route, because
+    the sentence that stated it in general was wrong in both directions.
+  - **What a repair costs is known and is an author decision, not a session
+    one.** Requiring an authored record before those routes fire would flip
+    `false(Lupo)`, which chapter 5 and chapter 10 both exhibit, and the cast
+    carries no authored accusation to put in its place. Adding an author place
+    to the harm relations is the `reward`-provenance question again and dies on
+    the same ground unless the corpus entry carries one. Neither is done here.
   - Preserve the prisoner as the hardest stress test, not the default
     inhabitant, and the infant as the paired second stress case with framing
     primacy in the exempt elements. For every public body show one lawful
@@ -453,15 +468,16 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 
-- [ ] **Keep the adversarial audit's eight open findings moving.**
+- [ ] **Keep the adversarial audit's nine open findings moving.**
   - **The audit is encoded.** `adversarial-audit-source.json` binds all fifteen
     declared lenses to the checks and cases that encode them and to what each
     finds; `./generate.sh adversarial-audit` projects the report. A lens naming
     nothing executable fails, a lens finding nothing fails, a declared finding
     kind nobody raises fails, and a table with nothing open fails. All four are
     sabotage-tested.
-  - **Thirty-one findings across seven kinds, eight of them open**, and the
-    report prints those first: the spelled half of the counted-claims
+  - **Thirty-two findings across seven kinds, nine of them open**, and the
+    report prints those first: the accusation nobody signed, the spelled half of
+    the counted-claims
     rule, `cares` as the posture of one passage, the restitution route a
     withdrawn emergency requisition leaves to the courts, and the liveness
     assumptions that no duty, delivery, procurement or accessibility check can
