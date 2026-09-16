@@ -341,17 +341,40 @@ Gate B; it does not claim Book 2 operations or feasibility.
     203 KB, with 2,014 premise atoms of about 100 characters each and 209
     quantified variables. The atoms are long because the constants are
     self-describing, which is deliberate.
-  - **Two of the three obvious repairs are blocked by ratified design.**
-    Shortening constants trades the names that document the rules, and
-    compacting the repeated attester/field premises into a summary atom is
-    precisely the aliasing the T3 ruling forbids — every consequential consumer
-    rejoins the exact raw tuple and its matching witness fields. The route that
-    does not touch semantics is **splitting the source across files**, if the
-    harness and the spine can be taught to load several; `Base` already carries
-    a `path`. That has not been investigated.
+  - **Two of the obvious repairs are blocked by ratified design.** Shortening
+    constants trades the names that document the rules, and compacting the
+    repeated attester/field premises into a summary atom is precisely the
+    aliasing the T3 ruling forbids — every consequential consumer rejoins the
+    exact raw tuple and its matching witness fields. Removing duplicate premise
+    atoms inside a rule is free but worth 0.9%, and there are no duplicate rules
+    at all.
+  - **The investigation is done and it found one clean lever, measured
+    2026-09-16.** Variable names are **44.7% of the generated bulk** — 24.1 MB
+    across the four big blocks, averaging 30.6 characters in ecology and 25.4 in
+    public safety. Alpha-renaming them inside generated blocks is
+    semantics-preserving, and the blocker I expected is not there: of the 223
+    reviewed needles pointing into `constitution.nibli`, exactly one lands on a
+    rule over 2,000 characters and all eight that carry a long variable are in
+    hand-written Articles, so a shrink confined to generated blocks breaks no
+    reviewed reference. It would take the file from 56.6 MB to roughly 36 MB.
+  - **It is not spent, and the reason is reviewability rather than risk.** The
+    change would rewrite about 54 MB of generated source in one commit, which no
+    one can review and which makes `git blame` useless on every rule it touches,
+    in exchange for headroom that is not currently scarce: 43 MB spare against
+    0.3 MB per new examined-kind family. Pull this lever when a family of
+    ecology's scale is actually planned, or when the file crosses a threshold
+    somebody names — not as tidying.
+  - **The file-split route is the expensive one after all.** All 397
+    full-society-ledger references and all 113 assertion-surface references
+    anchor by `path::needle` into this exact file, with 141 needles landing
+    inside generated blocks, so moving family rules to sibling files moves about
+    510 reviewed references and the digest-bound power manifest with them.
   - **Done when:** the source is comfortably under the limit with a stated
     margin, and the change is shown not to move the spine's predicate,
-    derived-predicate or stratum counts or any pinned verdict.
+    derived-predicate or stratum counts or any pinned verdict. The investigation
+    half is complete; what remains is a decision about when to spend the lever,
+    which is an author call rather than a session one because it trades the
+    readability of generated source and one unreviewable commit for headroom.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
   - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,335
