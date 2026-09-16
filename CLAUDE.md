@@ -2794,6 +2794,299 @@ and transcript digest. The closure commit may differ from its candidate only in
 closure and acceptance metadata. The checker derives `passed` from a valid
 record; no author ratification or other human act is required.
 
+## Pending obligations that outlived the tracker — 2026-09-16
+
+Two pieces of live work were in the root `TODO.md` when it was retired. Neither
+is a `- [ ]` item and neither is closed, so they are recorded here rather than
+lost with the file.
+
+## Legacy harvest — before `book.md` and `manifesto.md` are deleted
+
+- **Delete both files, in one commit, with the harvest manifest in the body.** The
+  harvest gate is fully discharged as of 2026-08-03: the 55 references
+  (`registry/claims.json`); the five bright lines (swept; result under Standing
+  facts); the poem (stanza 4 and the author's translation are `book-1/epigraph.md`,
+  the full two-stanza text consciously kept in git history and recorded so in the
+  manifest); the nine historical cases (Part V, re-pointed as failure-mode evidence);
+  the domestic vignette register (Part V's kitchen); and the privacy argument (Part
+  V's capture joint). What remains is the deletion commit itself, and its timing is
+  the author's: CLAUDE.md ties deletion to both new books existing, so the files
+  stand until that is true or the author rules sooner. The commit message is the
+  record of what was taken and what was consciously dropped.
+
+---
+
+## Data
+
+The registry (`registry/claims.json`, CC0), its staleness gate and the first fetcher
+exist and run inside `verify.sh`; see `registry/README.md`. What remains:
+
+- **Part V's figures stay hand-written — ruled 2026-09-15.** The option the old
+  bullet offered is taken: no value-injection or rendering step is built, because
+  inline registry ids would put machinery into an exempt element whose point is
+  that it reads as argument, and a handful of figures does not justify a renderer
+  with no other consumer. Traceability is a name binding instead:
+  `claim_discipline_tests::every_part_v_figure_rests_on_a_registry_entry` ties
+  each historical case Part V argues from to its registry entry and to a phrase
+  that must still be in the prose, so neither side can drift alone. More fetchers
+  (WHO GHO, OWID, FAOSTAT…) still land as entries need them. Build the rendering
+  step only when a consumer appears.
+
+- **Re-cite the ported registry entries against published versions.** The port
+  (`dd25b49`) honestly stamped `retrieved: 2026-07` — book.md's own last verification —
+  on the legacy entries without re-verifying them, and most of the registry still
+  carries that stamp. The sweep the old plan deferred to "as each reference is ported"
+  is now due, since the porting is done: work through the pinned entries, check each
+  against its source's current published version (the Muralidharan REStat move is the
+  model — a working paper that became a journal article), update the entry and its
+  `retrieved` date. The Kenya UBI entry carries its own warning: it must not reach
+  Part V as a working paper.
+
+- **Add Bregman's 15-hour workweek figure to the registry** when Part V or book-2 first
+  cites his proposal — the one claim the research-brief corrections found no error in but
+  no registry entry for either.
+
+- **The V-Dem re-derivation is DONE (2026-08-03) — Part V's worked example has its
+  numbers and a better third act.** `registry/fetch/vdem_happiness.py` derives
+  everything from OWID's CC BY series (V-Dem polyarchy + RoW, WHR ladder, WB GDP);
+  three registry entries + snapshot landed; working record at
+  `new-book-plans/vdem-rederivation.md`. Robust across instruments: the income-control
+  narrowing (partial r ≈ 0.20, was 0.195) and the step pattern (+0.02/+0.59/+1.09 —
+  bottom step buys nothing). Changed: the floor claim is **instrument-fragile**, not
+  cleanly refuted — it survives the income control narrowed on polyarchy (p = 0.032)
+  and dies-or-marginal on the alternative index over the identical sample — so the
+  worked example's third act becomes "a verdict that tracks the instrument is not
+  citable", which is a stronger methods lesson than the refutation it replaces. Part V's
+  frame now runs this arc (landed 2026-08-03); the EIU-era sub-bullets below remain
+  the historical working reference. **[AUTHOR-GATED] The one open question is whether
+  `democracy_vs_happiness_144.csv` stays.** It sits in the repo root carrying EIU index
+  values, committed before the ruling and therefore irrevocably CC0 under the root
+  LICENSE — so the question is not internal policy but whether the repository may grant
+  CC0 over a non-redistributable index at all. Deleting it now would not withdraw the
+  grant, and git history keeps the file, so this is the author's legal call rather than
+  a cleanup. The registry records the provenance either way
+  (`demo-happy-prior-analysis`), and nothing in Part V depends on the file.
+  - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
+    floor on subjective wellbeing", from regressing |residual| on democracy score,
+    p = 0.0004, which is exactly how convincing it looks — is the one claim it never
+    controls for income, and
+    **it does not survive**: adding log GDP gives democracy b = −0.0196, t = −0.91,
+    **p = 0.37**, while log GDP itself is b = −0.336, t = −2.53, p = 0.011. Within
+    income tertiles the dispersion goes the *wrong* way for the democracy story. The
+    compression is income, misattributed. This is precisely the claim book-1 would most
+    want to be true — a floor effect, in a book about floors — which is exactly why it
+    must not be used. An economist kills it in one regression.
+  - **Use the income result instead: it supports the book's real thesis better.** What
+    compresses the dispersion of human wellbeing across countries is material provision,
+    not the franchise. A book whose floor is material-and-personal guarantees, and which
+    deliberately demoted the vote *off* the floor to a rule, just got empirical support
+    for exactly that ordering.
+  - **Use the step sizes.** Authoritarian → Hybrid buys **+0.16** — nothing. Hybrid →
+    Flawed +0.73. Flawed → Full +1.01. Partial democratisation does approximately
+    nothing; the gain is concentrated at the top of the scale.
+
+- **Publish the registry with the book, not just in the repo.** The formalism stays
+  invisible, so what the reader verifies is the data — which only works if the registry is
+  reachable from the page they are reading. Front matter names it and gives the URL, every
+  figure in the prose resolves to a registry id, and the registry ships CC0. This is the
+  thing that earns the trust and the honest substitute for showing the constitution.
+
+---
+
+## Standing facts and methods — not tasks, and not history
+
+*Moved here on 2026-09-16 from the root `TODO.md`, which was retired. It is
+the part of that file a command cannot teach and a rename cannot re-derive,
+so it belongs with the settled decisions rather than in a work tracker. The
+generator list below is the tracker's; `./generate.sh` with no argument
+prints the current one, which is authoritative.*
+
+Landed work is not recorded here; that is what git is for. What survives is the small
+set of things a command cannot teach you and a rename cannot re-derive.
+
+~~~bash
+./verify.sh                 # all substantive pins and contradiction scans
+./verify.sh --only <file>   # selected pin file in its declared test contexts; partial
+./verify.sh --list          # execution inventory
+./generate.sh state-form   # explicit authoring; installs rules and generated tests
+./generate.sh obligations
+./generate.sh integrity
+./generate.sh statistics
+./generate.sh amendment
+./generate.sh mobility
+./generate.sh knowledge
+./generate.sh reader-coverage
+./generate.sh record-power
+./generate.sh resolution-receipts
+./generate.sh scarcity
+./generate.sh spine
+~~~
+
+The native runner uses the adjacent Nibli source checkout. No hash, receipt,
+Git-history, generated-report freshness, registry, or administrative checks run
+inside verification. Counterfactuals apply explicit semantic edits from
+`tests/pins/suites.json`; comment-only changes do not require copying the book.
+Keep source and prose review separate from logical verification.
+
+Check the exit status: 1 means a pin mismatch or contradiction, 2 means a
+harness/incomplete-scan error, and 3 means a known-defect pin stopped reproducing.
+A focused pass is not a whole-book pass. A clean scan covers the encoded model,
+not every sentence of prose or the truth of outside evidence.
+
+**Two facts about the floor that no command teaches.**
+
+- **A floor line is a compile-time prohibition, not a declaration**, and since Article 1b
+  it covers the duty as well as the eight rights. `entitled(every person, event { P() })`
+  compiles to a rule with `person` in the body, so `P` sits downstream of `prisoner`; any
+  later rule taking `~P` into that cone is an unstratifiable negative cycle and is
+  refused. The floor is protected **because** it is reachable — at stratum 0 there would
+  be no cycle to close and no protection at all. Where it stops is pinned in
+  `08-what-you-are-owed.pins.nibli`: `~P -> false`, `~P -> lose(Points, ·)` and positive
+  compulsion `prisoner -> P` all still load — each under `:accept-scoped`, so the control
+  proves loadability without leaving the forbidden shape resident. It blocks punishment for
+  ABSENCE, never manufacture, and it reaches `prisoner` only. Upstream the asymmetry is
+  pinned by the `rights_floor_*` tests in `nibli-engine/tests/integration.rs` together with
+  their negative control `punishment_rule_alone_is_stratifiable` — **cite them by test
+  name, never by line.** That citation has already rotted once and a line range is exactly
+  what a rebase in another repo breaks silently.
+- **The widening hazard is rule-head position** — not place index, not the predicate.
+  `every`/`all` forms widen the protected set; ground facts and `some` are inert. It
+  cannot be banned, because the widening *is* the firewall, so the guarantee is the
+  complement pins rather than a compile-time rule.
+
+The graph counts live in exactly one generated place, `3-spine.md`'s stratification
+block. `4-strata.py` disagrees with it and is blind to the floor by construction.
+
+**Four disciplines, each learned by being burned.**
+
+- **Re-derive a site list by census before executing any rename.** A list written in this
+  file is a snapshot and every commit since is an invalidation. The v0.6 rename list
+  missed one site outright, omitted two from its leave-alone list so a mechanical pass
+  would have renamed them, and predated four occurrences a later pass introduced. Line
+  numbers in it had rotted by 38.
+- **Citation remaps must cover every file a commit touched**, not just the one being
+  edited — a careful remap still rotted three citations because it was scoped to one
+  file while another was edited in the same pass. Content-match against
+  `git show HEAD~1:<path>`:
+  ```
+  python3 - <<'PY'
+  import re, subprocess
+  F='new-book-plans/3-spine.md'
+  old=subprocess.run(['git','show',f'HEAD~1:{F}'],capture_output=True,text=True).stdout.split('\n')
+  new=open(F).read().split('\n'); todo=open('TODO.md').read()
+  for m in re.finditer(re.escape(F.split('/')[-1])+r':(\d{1,4})', todo):
+      a=int(m.group(1))
+      if a>len(old) or not old[a-1].strip(): continue
+      hits=[i+1 for i,l in enumerate(new) if l==old[a-1]]
+      if a not in hits: print(m.group(0), '->', hits or 'GONE', '|', old[a-1][:50])
+  PY
+  ```
+  Bare `:NNN` citations inheriting a filename from earlier in the sentence are **not**
+  caught by this and still need reading by eye.
+- **A rule that gets stricter can make an existing pin vacuous without flipping it**, and
+  nothing in the harness can see that happen. When v0.7 required two bodies, a pin that
+  had tested the epoch-carry guard began failing on body-difference *first* — still
+  green, testing nothing. Check what a pin proves after tightening the rule it sits under.
+- **Check whether a quantifier has anything to range over before blaming the quantifier.**
+  "Different bodies" was parked as an engine limitation when the real problem was that
+  `permits/2` had exactly one audit-pen issuer, so the quantifier had nothing to range
+  over.
+
+- **A `fit/2` pin for any placement other than Homestay is a vacuous green.** `fit`
+  has one producing rule and only ever carries `Homestay`, so `? fit(Ruk, HighSec).
+  => FALSE` passes forever regardless of the design — kind three of the three FALSEs.
+
+- **The rule that decides whether expansion is cheap — re-verified 2026-08-01 against the
+engine-driven generator.** *Ground facts over predicates that already occur in the
+constitution are structurally free. Anything that introduces a predicate name, or a rule
+head, is not.* Since `5-spine-gen.py` takes its strata from `nibli-pin --strata` rather than
+from a regex, "free" means the engine reports the same graph: appending `person(Nova).
+work(Nova, Census). clear(Nova).` to a copy of the constitution leaves `5-spine-gen.py
+--check` reporting the spine current — predicate count, derived count, rule count, strata,
+the floor list, the evidence list and therefore chapter order all unmoved. A body conjunct
+is free too; the rule count counts arrows, not literals.
+
+**A new predicate name costs more than a number now, and in one case costs nothing at all.**
+Article 0a closed the record, so an unadmitted name does not load — `studies(Cira, Hano).`
+is refused with *"`studies` is not admitted vocabulary"* until `admits("studies")` is written
+above it, which is the visible, reviewable edit the closure exists to force. Admit it and
+write it **only as a ground fact** and the evidence figure does not move at all: measured,
+`nibli-pin --strata` never reports a predicate that appears in no rule, so the generated
+block comes back byte-identical and `verify.sh`'s evidence gate sees nothing. The cost
+lands when the name enters a **rule** — measured live when `put` joined (evidence 23 → 24,
+the gate moving in the same commit). A **new rule** may also add a stratum, which would
+add a chapter, which the computed order forbids.
+
+**Structural freedom is not verdict freedom, and this is what will actually bite.**
+Article 4's multi-sig quantifies over two auditor variables, so a new person naming
+*existing* constants can complete a rule no existing pair could satisfy: four facts
+(`person(Ann). choose(Electorate, Ann). judge(Ann, Tyr). capture(Ann, Tyr).`) flip
+`false(Tyr)` FALSE→TRUE and destroy chapter 5's headline case — re-executed 2026-08-01,
+still true. **Every argument position in every new fact must be a new constant**, except the
+four institution constants — and even those need care, since `judge(Review, ·)` is the
+deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a heuristic;
+`verify.sh` is the proof.
+
+- **The five legacy bright lines were swept against the enacted rules; only BL1 ported.**
+  **BL2** ("no negative scoring of persons") stood refuted by the constitution until the
+  clawback ruling (2026-08-02): the student rule that docked Cira for a teacher's fraud
+  is deleted, `lose(Points, Cira)` no longer derives, and BL2 stands **narrowed** —
+  "no subtraction except by due process for one's own adjudicated fraud" — which the
+  surviving wrongdoer rule satisfies.
+  **BL3** ("merit never weights votes") survives vacuously: there is no arithmetic
+  anywhere in the enacted lines, and the `floor_vector_tests` development guards
+  keep it that way — no numeric literal, no aggregating relation — so weighting
+  cannot be written. **BL4** and **BL5** are pod-and-tech-stack material and
+  belong to book-2. **BL1** ported in narrowed form and is in chapter 1's closing
+  section: the floor is unconditional *above* `person($x)`, and `person` is a roster of
+  written facts with two producing rules, so personhood **is** an enrolment. Do not
+  restate the unnarrowed BL1 in book-1; it would be false the way BL2 is false in
+  `book.md`.
+
+- **Article 9 does not semantically entrench the evidence vocabulary.**
+  The source audit applies `permanent(Art_Evidence).` and still executes a direct
+  vocabulary widening: `rich(Adam)` becomes writable. Article 9's general rule marks
+  dead a docketed proposal that DECLARES a registered target and does nothing to the
+  source itself. `adjust` is self-declared, so a targetless proposal and one naming a
+  harmless target both receive the otherwise-derived law label.
+  In the reverse direction, `false(Amend_Floor)` remains true and `become` remains false
+  while an independently constructed source deletion removes the food entitlement and
+  makes the adverse rule loadable.
+  The executable source audit goes further: a concealed grammar change can remove the
+  food entitlement while the separate anti-imprisonment firewall survives, and direct
+  `admits("rich")` widening bypasses Article 9 entirely. Article 0a therefore makes
+  widening *source-visible*, not approved, authenticated, or semantically entrenched.
+  Nothing reads `become`, and the audit manually applies its candidates; it proves no
+  proposal-to-source transition. A future entrenchment design must bind an exact change,
+  independent effect review, compatibility verdict, and effective version.
+
+- **`--allow-shell` stays opt-in, and do not ask upstream to make it unconditional.**
+  nibli's pin language is closed by design — nothing under their `pins/` may reach outside
+  the repo, and their own gate never passes the flag. We control our own invocation, so the
+  gate costs us one flag in `verify.sh` and protects a guarantee that is theirs to keep.
+
+- **An extra argument on a derived relation costs about 22x, and the cost lands in one file.**
+  Measured 2026-08-01 on the release engine: rewriting all three `reward` heads from arity 1 to
+  arity 2 takes `rights-floor.pins.nibli` from **15.07 s to 337.50 s**. A single probe is
+  unaffected — it answers in about a tenth of a second either way — so the cost is not in the
+  query, it is in re-saturating per pin, which is nibli's own open item *"Materialisation:
+  incremental re-saturation (C3)"*. Two older figures for this are dead and should not be
+  quoted: a claimed non-termination past fifteen minutes never reproduced, and a 38.9 s-against-
+  2.1 s pair predates the `event { }` projection. This is the answer to "how expensive is one
+  more argument here", which is the question anybody proposing one will ask first. It is not an
+  argument against a second place on `reward`; that is refused on other grounds, and they are
+  in `CLAUDE.md`.
+
+- **"The Furnished Prison" — a rejected title that is a good part title.** Scored highest
+  of the twenty title candidates on pick-up and lowest on legibility, so it lost the cover
+  and is wasted sitting in git. It is the sentence that closes chapter 13's delivery-gap
+  passage (`13-the-one-thing-taken.md`) — *"A society whose only working provision runs
+  through its prisons has not built a floor; it has built a prison that happens to be
+  furnished."* Primary candidate since the reach ruling
+  (2026-08-02): the launch-essay headline; the Part-title and back-cover uses stay
+  listed behind it. The title work is done; this is the one asset from it
+  that outlived the decision.
+
 ## Licensing
 
 The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding files. In short: new prose is CC-BY-4.0, code is MIT OR Apache-2.0, the data registry is CC0, and everything committed before that decision (including `book.md` and `manifesto.md`) remains irrevocably CC0 under the root `LICENSE`.
@@ -2804,37 +3097,19 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
 
-- `TODO.md` — the formal-specification and **book-1** projection work tracker,
-  arranged **in the order dependencies permit**, refreshed 2026-08-30 for the
-  formal-specification-first assurance-batch workflow. Its open top-level items
-  are coherent candidate batches; their bounded authoring slices are planning
-  and progress units, not independent audited deliverables. A task fully lands
-  only through the receipt-bound candidate, audit, closure, and tracker chain.
-  The substantive-equality, bounded-plural-economy, family/
-  dependency/reproduction/collective-plurality, ecological/future-condition/
-  commons/non-human-animal, and public-safety/defence/emergency/external-power
-  baselines are settled, as are the assurance portfolio, the narrative
-  register, and the reader-evidence protocol with its threshold timing. Phase 1
-  retains one reserved, sequenced author ruling — the release threshold, after
-  the pilot and before the holdout's pre-registration freeze. The prose-supply
-  protocol no longer leaves an author-as-drafter obligation; ordinary-life
-  passage conformance follows the tracker. Neutral inventory and decision briefs
-  may proceed. Phase
-  2 records the completed finite collective-decision, versioned ecological/
-  animal finding-boundary, and multi-power/multi-window protective-authority
-  composition audits, and the landed fail-closed witness-enumeration
-  (engine 5580618) and corpus-scoped text-compute registration
-  (engine 5777ced) repairs.
-  No bounded engine handoff prompt remains. Neither repair supplies
-  changing-roster computation or certification. The expansion backlog uses
-  one canonical social model, a versioned
-  reference envelope and disposition map, explicit constitutional domain packs,
-  role/dependency/stress/gameability/assurance tests, separate completion gates,
-  and a generated reader contract. None makes an unimplemented right,
-  institution, operation, or narrative current. Delete a bullet when it fully
-  lands; update it if partly done. Book 2 remains inactive until Book 1 — First
-  Edition actually ships at Gate C.
-
+- `TODO.md` — **retired 2026-09-16 and deleted; git retains it.** Its open items
+  were all closed or ruled that day, and its durable content moved to where each
+  piece belongs rather than staying in a work tracker: the gate ladder with each
+  gate's conditions and permitted claim to
+  `new-book-plans/full-society-boundary-decision.md`, which controls it; the
+  Book 2 seam discipline and the legacy-volume inheritance to `book-2/TODO.md`;
+  the standing facts and methods, and the two live obligations that outlived it,
+  to the sections of this file above. **Do not recreate a root tracker as a
+  side-effect of planning** — the work items are closed, and a second place that
+  states a gate or a discipline is the duplication the canonical-source mandate
+  refuses.
+- `book-2/TODO.md` — Book 2's own tracker, collection-only until Book 1 — First
+  Edition actually ships at Gate C. Collect there; rule in this file.
 - `new-book-plans/` — constitution, substantive design decisions, legal
   contracts, formal pins, and historical planning material. The decisions and
   contracts retain their subject-matter meaning; old verifier/audit procedures

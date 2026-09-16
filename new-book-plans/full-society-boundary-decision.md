@@ -295,3 +295,184 @@ checker-derived closure record bound to an immutable verified candidate, with
 narrower public claims wherever human-response evidence is absent. No project
 gate requires a later human act. Constitutional institutional-independence
 rules are not amended.
+
+---
+
+## The gate ladder — conditions and permitted claims
+
+These gates are cumulative but not interchangeable. The author-ratified
+2026-08-07 boundary fixes the two-book seam, C-then-E publication sequence, and
+versioned closure; `new-book-plans/full-society-boundary-decision.md` controls.
+Gates D and E are project-level reference gates whose executable work lives only
+in `book-2/TODO.md` after Book 1 — First Edition ships at Gate C. A later formal,
+operational, or reader test cannot substitute for an earlier missing condition.
+
+#### Gate A — Scope and assurance foundation
+
+- the canonical source covers every material domain, role, power, dependency,
+  scenario and claim, or visibly classifies it out with reasons;
+- all projections regenerate from that source; unresolved items carry severity,
+  consequence, owner and closure condition, and critical gaps block the affected
+  claim;
+- the versioned reference envelope, assurance allocation, stopping rule and
+  decision briefs are reviewable; and
+- a current-source repository adversarial audit covers the declared criteria,
+  exact checker controls, command chain, and every Gate-A-applicable defect;
+- every material known defect has a stable ID and claim/consequence/scope row
+  with one current defect disposition and response stage, the required evidence
+  state or an explicit evidence gap and closure condition, and a generated
+  resolution status bounded by its claim-assurance ceiling; history remains
+  versioned; and
+- no critical unresolved defect affecting the Gate A permitted claim is hidden
+  by classification, assignment, disclosure, or a stopping-rule decision.
+
+**Artifact and permitted claim:** the map and test program may be public, but no
+book preview, release candidate, or edition may publish. The project has a
+versioned, reviewable map and test program; it has not yet described or operated
+a complete society.
+
+#### Gate B — Expanded Book 1 constitutional/social destination
+
+- every applicable right, liberty, public function/power, expressly bound private
+  power, record and commons condition has a complete contract card, owner,
+  adversarial case, counterfactual and accurate reader account;
+- every floor has unconditional accessible delivery, recipient-side access/receipt
+  evidence, continuity, remedy and corrective-control interfaces without pretending
+  Book 1 supplies capacity;
+- every public body performs an ordinary function and is independently checked; the
+  democratic corridor and residual private/civic free field are explicit; and
+- domain journeys, collisions and shocks establish the claimed constitutional
+  invariants, lawful narrowing, challenge, restoration and model boundaries, with no
+  critical constitutional, equality, safety or hidden-power gap.
+- every claim that a constitutional failure is resolved joins to a receipt whose
+  defect disposition, response stage, posture, route, and evidence can close that
+  claim. `detected` and `interface-specified` never count as resolution;
+  `externally-bounded-assumption` may remain only where the permitted claim is
+  explicitly conditioned on the named premise. `irreducible-limitation` and
+  `open-defect` may remain only where the permitted claim is narrowed so it does
+  not assert the unresolved consequence; any critical defect still applicable to
+  the conditioned or narrowed claim blocks. Book 1 may not count
+  `operationally-assured-in-envelope` or remedy liveness as its own achievement.
+
+**Artifact and permitted claim:** immutable Book 1 — First Edition previews may
+publish under P1 after Gate B and their snapshot-specific gates pass. A preview
+may say that it describes a comprehensive, versioned constitutional and social
+destination for its declared scope. It may not claim reader suitability,
+staffing, resources, feasibility, deployment, outside liveness, or an operational
+society.
+
+#### Gate C — Book 1 public-edition readiness
+
+- the full verifier, generated closure/reader projections, adversarial cases,
+  deterministic artifact checks, and mechanically testable accessibility checks
+  pass for the exact release candidate;
+- source, ordered inputs, artifact hashes, navigation, internal links, reading
+  order, text alternatives, licence/provenance, and the Gate C closure record
+  bind the exact HTML, EPUB, PDF, and print identities;
+- each governed/provided domain has applicable ordinary-success, failure, and
+  recovery coverage; each protected private/civic domain has agency,
+  non-interference, evidenced-harm and recourse coverage; and no non-carceral
+  domain is explained only through prison, punishment, or institutional failure;
+- every claimed repair is traceable to a version-bound technical and reader-facing
+  resolution receipt, with structural elimination, prevention, containment,
+  remedy, external bounds, irreducible limits, and open defects kept distinct; and
+- no reader-comprehension, reader-suitability, lived-effect, or actual-user
+  accessibility claim is made without optional claim-appropriate evidence.
+
+**Artifact and permitted claim:** publish Book 1 — First Edition, its assembled
+digital artifacts, and its first POD atomically under one provenance and Gate C
+closure record. The edition may claim exact source binding, artifact integrity,
+navigation, internal consistency, and mechanical accessibility. It may not claim
+suitability for a tested audience, accessibility for actual users, staffing,
+resources, feasibility, deployment, outside liveness, or an operational society.
+If any matching source, artifact, POD identity, provenance, or Gate C record
+fails, the public object remains a preview and Book 2 does not activate. No
+external reviewer or reader event is required.
+
+#### Gate D — Book 2 operational model
+
+- every Book 1 interface has a costed, staffed and accountable operator/model, a
+  visible external assumption, or “Book 2 operation not applicable” where the
+  protected condition is non-operation/non-interference; any recourse operation is
+  mapped separately, and the reference envelope is calibrated and versioned;
+- all applicable operational domains in the canonical generated set—including
+  material/care, economy, equality/life course, democracy/integrity/statistics,
+  justice/safety/defence/external relations, ecology, knowledge/free life, records/
+  technology, transition, gameability and reader experience—meet their
+  pre-registered adequacy, accessibility/equity, continuity, resilience,
+  sustainability and fiscal/resource-feasibility thresholds in ordinary and
+  declared shock cases;
+- the Book 2 reader-facing structural view covers ordinary agency,
+  maintenance, failure/degradation, and recovery and passes its deterministic
+  source-binding, navigation, consistency, and artifact checks; any comprehension
+  or lived-operation claim remains optional and separately evidenced;
+- models publish code/data, uncertainty, sensitivity, negative results, capacity
+  and failure boundaries; simulations and pilots state external-validity limits; and
+- any unresolved critical floor, equality, safety, capacity, feasibility,
+  hidden-power or cross-domain dependency gap blocks the affected operational claim.
+  A non-critical residual needs severity, consequence, owner, closure condition and
+  an explicit public-claim limitation.
+- neither `interface-specified` nor `implemented-in-assigned-route` is
+  operational closure. `operationally-assured-in-envelope` requires an Evidenced
+  claim through operational assurance: a staffed, costed, accountable end-to-end
+  route exercised in ordinary, failure, continuity and recovery cases in the
+  named test/pilot envelope. It supports only Gate D's reproducible operational-
+  design claim, never deployment or generalisation; any narrower exercise
+  generates only the narrower resolution status.
+
+**Artifact and permitted claim:** only immutable Book 2 — First Edition previews
+or release candidates may publish. Book 2 may say that it supplies a reproducible
+operational design within the named envelope. It may not publish Book 2 — First
+Edition or claim deployment, generalisation beyond the envelope, or an integrated
+functional society.
+
+#### Gate E — Integrated two-book full-society claim
+
+- every guarantee and democratic choice crosswalks to its operational path and
+  back; each private-freedom boundary crosswalks either to enabling/recourse
+  operations or to an explicit non-operation/non-interference disposition;
+  constitutional rules survive operational scarcity and operations respect floors,
+  liberties, equality, democracy, privacy and commons;
+- cross-domain journeys and compound shocks pass their declared safety, continuity,
+  recovery and feasibility gates with no hidden critical assumption;
+- the generated cross-book reader-facing projection exposes ordinary life,
+  agency, maintenance, constraints, failure, and recovery across both books
+  without reducing Book 2 to a crisis/cost manual; and
+- reproducible structural, model, provenance, assurance, and negative-control
+  checks pass for the exact pair, followed by a checker-derived closure record
+  bound to an immutable verified candidate. No human act is required. Optional
+  external evidence retains its own provenance and limits but is not a Gate E
+  dependency.
+- the paired releases generate one compatible cross-book defect projection:
+  every Book 1 interface row has generated `resolved-for-claim` supported by an
+  eligible defect disposition, claim posture, route, evidence, and, where liveness
+  is involved, `operationally-assured-in-envelope`; is explicitly non-applicable
+  under `scope_disposition`; or remains under a named non-resolution defect
+  disposition with an exact public-claim condition or narrowing. Any
+  critical residual still applicable to that conditioned or narrowed claim blocks.
+  No defect disappears at the seam, and every integrated resolution receipt names
+  the exact compatible editions, envelope, assurance route, and evidence versions.
+
+**Artifact and permitted claim:** atomically publish Book 2 — First Edition and
+an immutable integrated release manifest pairing the exact compatible Book 1 and
+Book 2 editions, artifact hashes, canonical-source version, reference-envelope
+version, assurance and audit records, external assumptions, and residual limits.
+If the pairing, integrated checks, or manifest fails, Book 2 remains a preview or
+release candidate. Only Gate E permits the bounded claim that the exact paired
+editions provide a reproducible integrated constitutional and operational design
+for the declared
+reference envelope. The claim remains versioned, falsifiable and open to the
+stopping rule; it never means human-reviewed correctness, successful deployment,
+real-world functioning, timeless completeness, prescription of every harmless
+private life, or control of every external condition.
+
+---
+
+**Provenance, 2026-09-16.** The ladder above was the root `TODO.md`'s
+"Expansion completion standard" and was the only statement of each gate's
+conditions and permitted claim anywhere in the repository. It moved here when
+that tracker was retired, because this decision is its controlling record and a
+condition living only in a work tracker is a condition nothing points at. The
+text is unchanged apart from the heading; Gates D and E are Book 2's and
+`book-2/TODO.md` points at them here rather than repeating them, so there is one
+statement of each gate and not two.

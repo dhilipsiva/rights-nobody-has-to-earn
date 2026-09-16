@@ -886,7 +886,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "PRIOR ANALYSIS, RECORDED FOR PROVENANCE, NOT AS EVIDENCE. Every figure Part V uses comes from the V-Dem re-derivation (vdem-2026-*), and no EIU-derived value enters this CC0 registry, per the 2026-08-02 licensing ruling. The re-derivation reproduced the income narrowing and the step pattern and did NOT reproduce this analysis's headline dispersion finding — see vdem-2026-floor-claim-instrument-fragile. The merged CSV sits in the repository root under the root LICENSE, committed before that ruling, and carries EIU index values; whether the repository may grant CC0 over a non-redistributable index is an open question for the author, recorded in TODO.md."
+      "notes": "PRIOR ANALYSIS, RECORDED FOR PROVENANCE, NOT AS EVIDENCE. Every figure Part V uses comes from the V-Dem re-derivation (vdem-2026-*), and no EIU-derived value enters this CC0 registry, per the 2026-08-02 licensing ruling. The re-derivation reproduced the income narrowing and the step pattern and did NOT reproduce this analysis's headline dispersion finding — see vdem-2026-floor-claim-instrument-fragile. The merged CSV sits in the repository root under the root LICENSE, committed before that ruling, and carries EIU index values; whether the repository may grant CC0 over a non-redistributable index is an open question for the author, recorded in CLAUDE.md under the pending obligations that outlived the retired root tracker."
     }
   ]
 }

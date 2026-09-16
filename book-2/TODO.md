@@ -1060,3 +1060,49 @@ but never replaces, this rule.
   argumentation/proportionality layers; event-calculus time; multi-lingual corpus;
   sandbox/impact-assessment tooling. Do not hand these off now — they are book-2 requirements,
   not book-1 blockers, and several may dissolve when book-2's actual chapters are ruled.
+
+---
+
+## What moved here when the root tracker was retired — 2026-09-16
+
+The repository's root `TODO.md` was the formal-specification and Book 1
+projection tracker. Its open items were all closed or ruled on 2026-09-16 and
+the file was deleted; git retains it. Three things in it were Book 2's and are
+restated here so this tracker is self-contained.
+
+### The seam discipline, unchanged
+
+book-2 has its own tracker: `book-2/TODO.md` — unordered until its chapters are
+decided, seeded from the hold list, adoption reviews, and the 2026-08-05
+full-society operational completion contract. The discipline is unchanged:
+**do not work book-2 items until Book 1 — First Edition actually ships at Gate
+C**; collect there, rule here.
+Every Book 1 domain card must nevertheless name its Book 2 operator/evidence owner
+or an explicit external assumption so the seam cannot hide an unfunded,
+unstaffed, unmeasured or physically impossible promise.
+
+---
+
+### Gates D and E are this volume's, and they live in the boundary decision
+
+Gate D is the Book 2 operational model; Gate E is the integrated two-book
+release. Their conditions and permitted claims are stated in
+[`full-society-boundary-decision.md`](../new-book-plans/full-society-boundary-decision.md),
+under "The gate ladder", which is their controlling record. **They are not
+copied here on purpose** — a second hand-maintained statement of a gate is the
+thing the canonical-source mandate refuses, and a gate whose conditions live in
+two places is a gate that will eventually say two things.
+
+What matters for this tracker is the order: Gate D may produce only immutable
+Book 2 previews or release candidates, Gate E publishes Book 2 — First Edition
+and the integrated release, and neither activates before Book 1 — First Edition
+actually ships at Gate C. Collect here until then.
+
+### The legacy volumes still exist
+
+`book.md` and `manifesto.md` are undeleted. Their harvest gate is discharged and
+what remains is the deletion commit itself, whose timing is the author's; the
+operational material in them — staffing, costs, technology, workflows, pods and
+the transition roadmap — is this volume's inheritance rather than Book 1's, and
+the deletion commit's message is the record of what was taken and what was
+consciously dropped.
