@@ -3097,17 +3097,21 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
 
-- `TODO.md` — **retired 2026-09-16 and deleted; git retains it.** Its open items
-  were all closed or ruled that day, and its durable content moved to where each
-  piece belongs rather than staying in a work tracker: the gate ladder with each
-  gate's conditions and permitted claim to
-  `new-book-plans/full-society-boundary-decision.md`, which controls it; the
-  Book 2 seam discipline and the legacy-volume inheritance to `book-2/TODO.md`;
-  the standing facts and methods, and the two live obligations that outlived it,
-  to the sections of this file above. **Do not recreate a root tracker as a
-  side-effect of planning** — the work items are closed, and a second place that
-  states a gate or a discipline is the duplication the canonical-source mandate
-  refuses.
+- `TODO.md` — **the ordered tracker for the 2026-09-16 rebuild of Book 1**:
+  the child with nobody at the heart, engines before breaks, every family
+  rendered, both books named, and `new-book-plans/` merged under `book-1/`.
+  Work it one item at a time, in order; delete an item when it lands. It is a
+  work list, not a second statement of any gate or discipline — the rulings
+  here control, and its item 1 moves the design it carries into the two
+  controlling decision records and cuts it from the tracker. History: the
+  previous root tracker was retired and deleted earlier the same day (git
+  retains it), its open items all closed or ruled, and its durable content
+  moved to where each piece belongs — the gate ladder to
+  `new-book-plans/full-society-boundary-decision.md`, the Book 2 seam
+  discipline and legacy-volume inheritance to `book-2/TODO.md`, the standing
+  facts, methods and two live obligations to the sections of this file above.
+  The new tracker exists on the author's explicit instruction of that evening
+  and restates none of that content.
 - `book-2/TODO.md` — Book 2's own tracker, collection-only until Book 1 — First
   Edition actually ships at Gate C. Collect there; rule in this file.
 - `new-book-plans/` — constitution, substantive design decisions, legal
