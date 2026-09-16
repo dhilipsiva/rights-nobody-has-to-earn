@@ -47,6 +47,22 @@
 # Shared evidence limits and family cards:
 #   new-book-plans/book-1-integrity-record-contract.md
 #
+# "When the emergency broke the rule it was under" and "When a public power
+# was handed to a private force" rest on these actual-constitution withdrawal
+# sequences:
+#   tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli
+#   tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli
+# Each derives the parent record and the measure built on it, asserts an
+# independently reviewed defect against the parent, and derives both FALSE
+# afterwards while the person named in the measure keeps personhood and the
+# floor debt and is not a prisoner. Measured with the same fixtures on
+# 2026-09-16: before the defect the requisition carries its restraint, its
+# recorded loss and the operator's duty to inventory, return or compensate,
+# and the defence structure carries its duty to stay inside the Assembly's
+# ceilings, appropriations and audit; after it, each of those is FALSE too.
+# They establish what stops following. They do not establish that property was
+# returned, that a deployment ended, or that any remedy was performed.
+#
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/09-the-vote-conviction-does-not-take.pins.nibli
 #   ./verify.sh          # all substantive pins and formal contradiction checks

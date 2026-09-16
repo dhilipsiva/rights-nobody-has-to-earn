@@ -18,12 +18,12 @@ welcome optional evidence; none is required for completion.
 | Lens | Kind | Finding |
 | --- | --- | --- |
 | Public administration | hidden-liveness-assumption | No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf. |
+| Public administration | unowned-dependency | A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives. |
 | Disability and accessibility | hidden-liveness-assumption | Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows. |
 | Care and the life course | omitted-domain | The family, dependency, reproduction and care baseline landed 106 person-held barriers and no ordinary-operation interface, so the domain appears only under strain. |
 | Care and the life course | narrative-distortion | `cares` is the posture of one passage in the whole book. |
 | Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. |
 | Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. |
-| Defence and external affairs | narrative-distortion | Defence is carried by a stated boundary and no passage in which anything goes wrong. |
 | Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. |
 | Ecology and future conditions | narrative-distortion | Ecology is carried by stated boundaries and no passage in which anything goes wrong. |
 | Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses. |
@@ -34,11 +34,11 @@ welcome optional evidence; none is required for completion.
 | --- | ---: | ---: |
 | hidden-liveness-assumption | 4 | 4 |
 | impossible-operation-overclaim | 6 | 0 |
-| narrative-distortion | 5 | 4 |
+| narrative-distortion | 5 | 3 |
 | omitted-domain | 2 | 1 |
 | private-power-blind-spot | 4 | 0 |
 | totalising-rule | 7 | 0 |
-| unowned-dependency | 2 | 1 |
+| unowned-dependency | 3 | 2 |
 
 ## Every lens
 
@@ -59,9 +59,11 @@ Encoded by:
 
 - `tests/pins/knowledge/free-field/request-and-certified-nonresponse/expect.pins.nibli`
 - `tests/pins/record-power/power/request-and-certified-nonresponse/expect.pins.nibli`
+- `tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli`
 
 - **held** (unowned-dependency) — Every family with a challenge reader carries an independent alternate, so declining to read confers no veto.
 - **open** (hidden-liveness-assumption) — No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf.
+- **open** (unowned-dependency) — A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives.
 
 ### Disability and accessibility
 
@@ -148,9 +150,10 @@ Encoded by:
 Encoded by:
 
 - `tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli`
+- `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli`
 
 - **held** (impossible-operation-overclaim) — Force abroad needs prior authorisation naming objective, basis, scope, geography, means and reporting, and an immediate response ends absent ratification.
-- **open** (narrative-distortion) — Defence is carried by a stated boundary and no passage in which anything goes wrong.
+- **held** (narrative-distortion) — Defence was carried by a stated boundary alone until chapter 9 gained a passage in which a defence structure is found to have delegated public coercion to a private actor, and the authorisation for force abroad stops with it.
 
 ### Infrastructure and continuity
 

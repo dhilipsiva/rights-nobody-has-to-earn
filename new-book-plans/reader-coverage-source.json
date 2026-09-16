@@ -830,6 +830,21 @@
     {
       "id": "09-03",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
+      "section": "When the emergency broke the rule it was under",
+      "domain": "Emergency and resilience",
+      "family": "PUBLIC-SAFETY",
+      "function": "continuity",
+      "setting": "an emergency declaration found defective",
+      "trajectory": "fails",
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "09-04",
+      "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "Power does not grow at the border",
       "domain": "Defence and armed force",
       "family": "PUBLIC-SAFETY",
@@ -843,7 +858,22 @@
       ]
     },
     {
-      "id": "09-04",
+      "id": "09-05",
+      "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
+      "section": "When a public power was handed to a private force",
+      "domain": "Defence and armed force",
+      "family": "PUBLIC-SAFETY",
+      "function": "continuity",
+      "setting": "a defence structure found defective",
+      "trajectory": "fails",
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "09-06",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "Speaking for conditions nobody may spend away",
       "domain": "Ecology, future generations and commons",
@@ -858,7 +888,7 @@
       ]
     },
     {
-      "id": "09-05",
+      "id": "09-07",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "The theorem this completes",
       "domain": "Democracy and amendment",
@@ -873,7 +903,7 @@
       ]
     },
     {
-      "id": "09-06",
+      "id": "09-08",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "The harsher test",
       "domain": "Records and accountability",
@@ -888,7 +918,7 @@
       ]
     },
     {
-      "id": "09-07",
+      "id": "09-09",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "Belonging without surrendering rights",
       "domain": "Collective and plurality rights",
@@ -903,7 +933,7 @@
       ]
     },
     {
-      "id": "09-08",
+      "id": "09-10",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "The home custody does not move",
       "domain": "Locality, mobility and external relations",
@@ -918,7 +948,7 @@
       ]
     },
     {
-      "id": "09-09",
+      "id": "09-11",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "Children, the difference between not yet and taken — and a third thing",
       "domain": "Life course, family, care and reproduction",
@@ -933,7 +963,7 @@
       ]
     },
     {
-      "id": "09-10",
+      "id": "09-12",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "The part that is weaker than it looks",
       "domain": "Democracy and amendment",
@@ -948,7 +978,7 @@
       ]
     },
     {
-      "id": "09-11",
+      "id": "09-13",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "And the same silence as before",
       "domain": "Democracy and amendment",

@@ -1932,17 +1932,28 @@ states a boundary is now read out of its own prose — what it says it does not
 establish, matched in 55 of the 86 — and seven of the eight turn out to meet the
 standard that way. A stated boundary is the weaker of the two accepted forms, so
 it is counted separately: borders and asylum, collective and plurality rights,
-defence, ecology, emergency, knowledge and culture, and non-human animals are
-**carried by a boundary alone**, with no passage in which anything goes wrong.
-That set is asserted by membership.
+ecology and non-human animals are **carried by a boundary alone**, with no
+passage in which anything goes wrong. That set is asserted by membership, and
+three domains have left it. Knowledge and culture left when chapter 14 gained
+"When the finding itself turns out to be wrong". Emergency and defence left
+together when chapter 9 gained "When the emergency broke the rule it was under"
+and "When a public power was handed to a private force": a declaration found to
+have derogated or governed by decree takes its requisition with it, and with the
+requisition the restraint, the recorded loss and the operator's duty to
+inventory, return or compensate; a defence structure found to have delegated
+public coercion to a private actor takes the authorisation for force abroad and
+its own ceiling-and-audit duty. Each is measured on the family's own withdrawal
+cases, and **the accounting duty falling with the measure is printed rather than
+smoothed** — the design can say a taking had no authority and cannot, from that
+alone, establish that anything came back.
 
 **The portfolio's postures are censused on the same source, and two are
 thin.** The first reading said `creates` and `cares` were empty and was wrong
 twice over: one posture per section, and the chapter preambles unclassified —
 which is exactly where chapter 10 does its care work. The ledger now covers all
-101 passages, preambles included, and a passage may hold several postures.
+104 passages, preambles included, and a passage may hold several postures.
 Every posture is occupied; `cares` is carried by one passage and `creates` by
-two, against 47 for `is acted upon`. The empty set and the thin set are both
+two, against 50 for `is acted upon`. The empty set and the thin set are both
 asserted by membership.
 Separately, the delivery routes are now exercised rather than only described:
 `tests/pins/delivery/received-outside-custody` derives all five recipient-side
@@ -1985,7 +1996,7 @@ cases that encode them and to what each finds. Four ways to weaken it fail and
 are sabotage-tested: a lens naming a path that does not exist, a lens finding
 nothing, a declared finding kind nobody raises, and a table with nothing open.
 
-**Thirty findings across the seven declared kinds, eleven open**, printed first
+**Thirty-one findings across the seven declared kinds, ten open**, printed first
 in the report. It is a repository audit over the source: it warrants no
 independent human review, no reader response, no external truth and no
 operation, and external submissions remain welcome optional evidence that no

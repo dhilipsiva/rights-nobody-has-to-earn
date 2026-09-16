@@ -34,9 +34,7 @@ forms, and it is where the portfolio rebalance has most to do.
 | --- | ---: | ---: | ---: |
 | Borders, migration, asylum and expulsion | 1 | 0 | 1 |
 | Collective and plurality rights | 1 | 0 | 1 |
-| Defence and armed force | 1 | 0 | 1 |
 | Ecology, future generations and commons | 2 | 0 | 2 |
-| Emergency and resilience | 1 | 0 | 1 |
 | Non-human animals | 1 | 0 | 1 |
 
 ## Postures
@@ -57,7 +55,7 @@ carried in single figures, which is where the rebalance has most to do.
 | receives | 8 |
 | challenges | 10 |
 | governs | 23 |
-| is acted upon | 48 |
+| is acted upon | 50 |
 
 ## Chapter patterns
 
@@ -70,7 +68,7 @@ what matters is the book's shape, not the chapter's.
 | constructive | 18 |
 | private-civic | 14 |
 | democratic | 23 |
-| coercive | 21 |
+| coercive | 23 |
 | records | 19 |
 | argument | 7 |
 
@@ -84,11 +82,11 @@ checked here.
 | --- | ---: | ---: | ---: |
 | Borders, migration, asylum and expulsion | 1 | 0 | 1 |
 | Collective and plurality rights | 1 | 0 | 1 |
-| Defence and armed force | 1 | 0 | 1 |
+| Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 5 | 6 |
 | Ecology, future generations and commons | 2 | 0 | 2 |
 | Economy, property, work and commons | 6 | 6 | 7 |
-| Emergency and resilience | 1 | 0 | 1 |
+| Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
 | Knowledge, communication and culture | 1 | 1 | 1 |
 | Life course, family, care and reproduction | 0 | 1 | 1 |
@@ -159,15 +157,17 @@ checked here.
 | 09-00 | 09-the-vote-conviction-does-not-take.md | (preamble) | Democracy and amendment | ARTICLES | ordinary | a person in custody who still votes | is acted upon | works | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-01 | 09-the-vote-conviction-does-not-take.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-02 | 09-the-vote-conviction-does-not-take.md | A crisis does not suspend the republic | Emergency and resilience | PUBLIC-SAFETY | protective | an emergency declaration | governs | works | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-03 | 09-the-vote-conviction-does-not-take.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | defence under civilian command | governs | works | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-04 | 09-the-vote-conviction-does-not-take.md | Speaking for conditions nobody may spend away | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | a commons or future-conditions claim | challenges | works | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-05 | 09-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-06 | 09-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-07 | 09-the-vote-conviction-does-not-take.md | Belonging without surrendering rights | Collective and plurality rights | MOBILITY-PLURALITY | ordinary | collective membership and internal law | associates | works | yes | private-civic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-08 | 09-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-09 | 09-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-10 | 09-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-11 | 09-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-03 | 09-the-vote-conviction-does-not-take.md | When the emergency broke the rule it was under | Emergency and resilience | PUBLIC-SAFETY | continuity | an emergency declaration found defective | is acted upon | fails | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-04 | 09-the-vote-conviction-does-not-take.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | defence under civilian command | governs | works | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-05 | 09-the-vote-conviction-does-not-take.md | When a public power was handed to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defence structure found defective | is acted upon | fails | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-06 | 09-the-vote-conviction-does-not-take.md | Speaking for conditions nobody may spend away | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | a commons or future-conditions claim | challenges | works | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-07 | 09-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-08 | 09-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-09 | 09-the-vote-conviction-does-not-take.md | Belonging without surrendering rights | Collective and plurality rights | MOBILITY-PLURALITY | ordinary | collective membership and internal law | associates | works | yes | private-civic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-10 | 09-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-11 | 09-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-12 | 09-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-13 | 09-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 10-00 | 10-contribution.md | (preamble) | Economy, property, work and commons | ARTICLES | ordinary | three routes to recognition, and care walking through two of them | works, cares, creates | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-01 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-02 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |

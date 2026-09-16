@@ -26,7 +26,8 @@
       "lens": "Public administration",
       "encoded_by": [
         "tests/pins/knowledge/free-field/request-and-certified-nonresponse/expect.pins.nibli",
-        "tests/pins/record-power/power/request-and-certified-nonresponse/expect.pins.nibli"
+        "tests/pins/record-power/power/request-and-certified-nonresponse/expect.pins.nibli",
+        "tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli"
       ],
       "findings": [
         {
@@ -37,6 +38,11 @@
         {
           "finding": "No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf.",
           "category": "hidden-liveness-assumption",
+          "open": true
+        },
+        {
+          "finding": "A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives.",
+          "category": "unowned-dependency",
           "open": true
         }
       ]
@@ -205,7 +211,8 @@
       "id": "defence-external",
       "lens": "Defence and external affairs",
       "encoded_by": [
-        "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli"
+        "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli",
+        "tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli"
       ],
       "findings": [
         {
@@ -214,9 +221,9 @@
           "open": false
         },
         {
-          "finding": "Defence is carried by a stated boundary and no passage in which anything goes wrong.",
+          "finding": "Defence was carried by a stated boundary alone until chapter 9 gained a passage in which a defence structure is found to have delegated public coercion to a private actor, and the authorisation for force abroad stops with it.",
           "category": "narrative-distortion",
-          "open": true
+          "open": false
         }
       ]
     },
