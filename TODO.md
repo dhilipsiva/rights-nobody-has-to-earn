@@ -322,6 +322,25 @@ canonical ledger; this historical foundation summary does not override it.
 “Comprehensive” here is bounded to Book 1's declared source version and scope at
 Gate B; it does not claim Book 2 operations or feasibility.
 
+- [ ] **Keep the formal source pushable.**
+  - **Measured 2026-09-16: `constitution.nibli` is 56.6 MB in 9,488 lines**, and
+    every push now prints GitHub's over-50-MB warning. The hard limit is 100 MB
+    per file, after which a push fails outright rather than warning.
+  - **The bulk is two families**: ecology and animal protection at 20.2 MB and
+    public safety at 17.6 MB, then the economic constitution at 8.3 MB and state
+    form at 7.7 MB. Everything else together is under 2 MB — the examined-kind
+    families added since are 0.3–0.6 MB each, so the pressure is not from adding
+    families at the current shape but from those two.
+  - The cause is line shape rather than rule count: a generated rule carries its
+    whole premise set on one line, and 1,479 lines exceed 2,000 characters. A
+    rule that reads the same to the engine can be written across lines, and a
+    family's shared premises could be factored, but **neither is a free change**
+    — the spine, the stratification and every pin read the generated text, so
+    any reshaping has to be proved to leave the model identical.
+  - **Done when:** the source is comfortably under the limit with a stated
+    margin, and the reshaping is shown not to move the spine's predicate,
+    derived-predicate or stratum counts or any pinned verdict.
+
 - [ ] **Bring the expanded complete verifier back below five minutes.**
   - Current measurement, 2026-09-15 against companion `979fe8b`: all 82,335
     pins across 14,892 cases pass with complete contradiction checks and no
