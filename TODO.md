@@ -331,14 +331,26 @@ Gate B; it does not claim Book 2 operations or feasibility.
     form at 7.7 MB. Everything else together is under 2 MB — the examined-kind
     families added since are 0.3–0.6 MB each, so the pressure is not from adding
     families at the current shape but from those two.
-  - The cause is line shape rather than rule count: a generated rule carries its
-    whole premise set on one line, and 1,479 lines exceed 2,000 characters. A
-    rule that reads the same to the engine can be written across lines, and a
-    family's shared premises could be factored, but **neither is a free change**
-    — the spine, the stratification and every pin read the generated text, so
-    any reshaping has to be proved to leave the model identical.
+  - **The first diagnosis was wrong and the measurement is recorded instead.**
+    It is not line shape and not per-head duplication: identical premise sets
+    repeated across a contract's several heads account for 4% of the ecology
+    block and 3% of public safety, and the `all $v:` prefixes for another 3%.
+    Re-wrapping would *add* bytes.
+  - **It is premises per rule, times identifier length.** Ecology averages about
+    8 KB per rule and public safety about 11 KB; the largest single rule is
+    203 KB, with 2,014 premise atoms of about 100 characters each and 209
+    quantified variables. The atoms are long because the constants are
+    self-describing, which is deliberate.
+  - **Two of the three obvious repairs are blocked by ratified design.**
+    Shortening constants trades the names that document the rules, and
+    compacting the repeated attester/field premises into a summary atom is
+    precisely the aliasing the T3 ruling forbids — every consequential consumer
+    rejoins the exact raw tuple and its matching witness fields. The route that
+    does not touch semantics is **splitting the source across files**, if the
+    harness and the spine can be taught to load several; `Base` already carries
+    a `path`. That has not been investigated.
   - **Done when:** the source is comfortably under the limit with a stated
-    margin, and the reshaping is shown not to move the spine's predicate,
+    margin, and the change is shown not to move the spine's predicate,
     derived-predicate or stratum counts or any pinned verdict.
 
 - [ ] **Bring the expanded complete verifier back below five minutes.**
