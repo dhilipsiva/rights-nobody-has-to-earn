@@ -28,12 +28,12 @@ These have ordinary operation or strain, and not the other.
 
 These meet the standard through a stated boundary rather than through a
 passage in which something goes wrong. That is the weaker of the two
-forms, and it is where the portfolio rebalance has most to do.
+forms.
 
-| Domain | Ordinary | Strain | Boundary |
-| --- | ---: | ---: | ---: |
-| Ecology, future generations and commons | 2 | 0 | 2 |
-| Non-human animals | 1 | 0 | 1 |
+None. Every domain the ledger classifies now carries at least one
+passage in which something goes wrong, which is the stronger of the
+two forms. That is a statement about what a reader meets, not about
+whether the design would actually fail that way.
 
 ## Postures
 
@@ -51,9 +51,9 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 3 |
 | requests | 3 |
 | receives | 8 |
-| challenges | 11 |
+| challenges | 12 |
 | governs | 23 |
-| is acted upon | 51 |
+| is acted upon | 53 |
 
 ## Chapter patterns
 
@@ -66,8 +66,8 @@ what matters is the book's shape, not the chapter's.
 | constructive | 18 |
 | private-civic | 15 |
 | democratic | 23 |
-| coercive | 24 |
-| records | 19 |
+| coercive | 25 |
+| records | 20 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -82,7 +82,7 @@ checked here.
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 5 | 6 |
-| Ecology, future generations and commons | 2 | 0 | 2 |
+| Ecology, future generations and commons | 2 | 1 | 3 |
 | Economy, property, work and commons | 6 | 6 | 7 |
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
@@ -90,7 +90,7 @@ checked here.
 | Life course, family, care and reproduction | 0 | 1 | 1 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
 | Material floor | 2 | 5 | 6 |
-| Non-human animals | 1 | 0 | 1 |
+| Non-human animals | 1 | 1 | 2 |
 | Personhood and equality | 5 | 3 | 3 |
 | Public institutions | 8 | 5 | 8 |
 | Public safety, policing and use of force | 5 | 2 | 7 |
@@ -147,12 +147,14 @@ checked here.
 | 08-02 | 08-what-you-are-owed.md | When the record cannot say what it says | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | continuity | an asylum determination whose record contradicts itself | is acted upon | fails | yes | coercive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-03 | 08-what-you-are-owed.md | A way to be heard | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | yes | coercive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 08-04 | 08-what-you-are-owed.md | A place in which life remains possible | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | ordinary | air, water, soil and food | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-05 | 08-what-you-are-owed.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-06 | 08-what-you-are-owed.md | What nobody has to ask permission for | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | learning, speech, belief, association and culture | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-07 | 08-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-08 | 08-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-09 | 08-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
-| 08-10 | 08-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-05 | 08-what-you-are-owed.md | When the record the protection rested on was defective | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | an ecological record found defective | is acted upon, challenges | continuity-remedy | yes | records | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-06 | 08-what-you-are-owed.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-07 | 08-what-you-are-owed.md | When a use has to be stopped | Non-human animals | ECOLOGICAL-ANIMAL | continuity | remedy orders after an adjudicated animal harm | is acted upon | fails | yes | coercive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-08 | 08-what-you-are-owed.md | What nobody has to ask permission for | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | learning, speech, belief, association and culture | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-09 | 08-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-10 | 08-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-11 | 08-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
+| 08-12 | 08-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/08-what-you-are-owed.pins.nibli` |
 | 09-00 | 09-the-vote-conviction-does-not-take.md | (preamble) | Democracy and amendment | ARTICLES | ordinary | a person in custody who still votes | is acted upon | works | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-01 | 09-the-vote-conviction-does-not-take.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-02 | 09-the-vote-conviction-does-not-take.md | A crisis does not suspend the republic | Emergency and resilience | PUBLIC-SAFETY | protective | an emergency declaration | governs | works | yes | coercive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |

@@ -252,7 +252,8 @@
       "lens": "Ecology and future conditions",
       "encoded_by": [
         "tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli",
-        "new-book-plans/counterfactual/no-class9-climate-axis.pins.nibli"
+        "new-book-plans/counterfactual/no-class9-climate-axis.pins.nibli",
+        "tests/pins/ecology/ecological-record-defect/positive/expect.pins.nibli"
       ],
       "findings": [
         {
@@ -261,9 +262,9 @@
           "open": false
         },
         {
-          "finding": "Ecology is carried by stated boundaries and no passage in which anything goes wrong.",
+          "finding": "Ecology and non-human animals were carried by stated boundaries alone until chapter 8 gained a reviewed record defect that withdraws only the exact affected reliance, and the animal remedy orders that follow an adjudicated harm.",
           "category": "narrative-distortion",
-          "open": true
+          "open": false
         }
       ]
     },

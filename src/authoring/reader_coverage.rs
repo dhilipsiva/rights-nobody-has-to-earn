@@ -262,11 +262,22 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
         "\n## Shown working, bounded, but never failing\n\n\
          These meet the standard through a stated boundary rather than through a\n\
          passage in which something goes wrong. That is the weaker of the two\n\
-         forms, and it is where the portfolio rebalance has most to do.\n\n\
-         | Domain | Ordinary | Strain | Boundary |\n| --- | ---: | ---: | ---: |\n",
+         forms.\n\n",
     );
-    for (domain, (works, trouble, bound)) in &rows {
-        if *trouble == 0 && *bound > 0 {
+    let bounded: Vec<_> = rows
+        .iter()
+        .filter(|(_, (_, trouble, bound))| *trouble == 0 && *bound > 0)
+        .collect();
+    if bounded.is_empty() {
+        out.push_str(
+            "None. Every domain the ledger classifies now carries at least one\n\
+             passage in which something goes wrong, which is the stronger of the\n\
+             two forms. That is a statement about what a reader meets, not about\n\
+             whether the design would actually fail that way.\n",
+        );
+    } else {
+        out.push_str("| Domain | Ordinary | Strain | Boundary |\n| --- | ---: | ---: | ---: |\n");
+        for (domain, (works, trouble, bound)) in bounded {
             let _ = writeln!(out, "| {domain} | {works} | {trouble} | {bound} |");
         }
     }

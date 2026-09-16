@@ -1931,12 +1931,13 @@ trajectory per section made eight domains look uncovered. Whether a passage
 states a boundary is now read out of its own prose — what it says it does not
 establish, matched in 55 of the 86 — and seven of the eight turn out to meet the
 standard that way. A stated boundary is the weaker of the two accepted forms, so
-it is counted separately: ecology and non-human animals are **carried by a
-boundary alone**, with no passage in which anything goes wrong. That set is
-asserted by membership, and five domains have left it.
+it is counted separately, and **that set is now empty**: every domain the ledger
+classifies carries at least one passage in which something goes wrong. The
+assertion stays as an empty expectation, so a domain landing without one fails
+the check rather than passing quietly.
 
-**The passages take the shapes their own families support, which is why none of
-them is a template.** Knowledge and culture left when chapter 14 gained "When
+**The seven passages take the shapes their own families support, which is why
+none of them is a template.** Knowledge and culture left when chapter 14 gained "When
 the finding itself turns out to be wrong". Emergency and defence left together
 when chapter 9 gained "When the emergency broke the rule it was under" and "When
 a public power was handed to a private force": a declaration found to have
@@ -1962,13 +1963,29 @@ the passage says so** — the claimant waits, the writers who created the
 ambiguity do not. Measured on both families' own fixtures: `false`, `prisoner`
 and `lose` derive for the person at no point in either sequence.
 
+Ecology and non-human animals left last. The ecological record defect withdraws
+**only the exact affected reliance** — no safety, guilt, execution or repaired
+outcome is inferred, the lawful history and the private evidence stay, and no
+human standing, floor, ballot, liberty or collective right, and no animal's care,
+is lost. It needs positive independent evidence of the exact defect and no
+acknowledgement from whoever wrote the record, so an original writer cannot veto
+a finding about their own record. And **a correction is not renewed authority**:
+the replacement has no force until its own complete fresh contract derives. The
+animal passage is the other half — the particular orders after an adjudicated
+harm, each carrying its own boundary (cessation names the activity and not an
+occupation; rescue and care are not conditioned on the owner's consent or papers;
+custody is of an animal, never detention of a person; disqualification touches no
+standing, floor, vote or unrelated private life) — and every order carries the
+clause that no performed rescue, treatment, transfer, restoration or delivery is
+inferred from it.
+
 **The portfolio's postures are censused on the same source, and two are
 thin.** The first reading said `creates` and `cares` were empty and was wrong
 twice over: one posture per section, and the chapter preambles unclassified —
 which is exactly where chapter 10 does its care work. The ledger now covers all
-106 passages, preambles included, and a passage may hold several postures.
+108 passages, preambles included, and a passage may hold several postures.
 Every posture is occupied; `cares` is carried by one passage and `creates` by
-two, against 51 for `is acted upon`. The empty set and the thin set are both
+two, against 53 for `is acted upon`. The empty set and the thin set are both
 asserted by membership.
 Separately, the delivery routes are now exercised rather than only described:
 `tests/pins/delivery/received-outside-custody` derives all five recipient-side
@@ -2011,8 +2028,8 @@ cases that encode them and to what each finds. Four ways to weaken it fail and
 are sabotage-tested: a lens naming a path that does not exist, a lens finding
 nothing, a declared finding kind nobody raises, and a table with nothing open.
 
-**Thirty-one findings across the seven declared kinds, ten open**, printed first
-in the report. It is a repository audit over the source: it warrants no
+**Thirty-one findings across the seven declared kinds, nine open**, printed
+first in the report. It is a repository audit over the source: it warrants no
 independent human review, no reader response, no external truth and no
 operation, and external submissions remain welcome optional evidence that no
 gate waits for.

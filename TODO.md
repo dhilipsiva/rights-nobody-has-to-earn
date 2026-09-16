@@ -371,28 +371,20 @@ this program without reporting reader evidence or a reader-result pass. Machine
 accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
 remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Give three domains a passage where something goes wrong, and implement
-  the family baseline's ordinary half.**
-  - **The ledger is built and its first reading was wrong.** Forcing one
-    trajectory per section made eight domains look uncovered. Reading the
-    boundary out of each passage's own prose — what it says it does not
-    establish, matched in 55 of the 86 — corrects that: seven of the eight meet
-    the standard through a stated boundary, which is the weaker of the two
-    accepted forms and is now counted separately.
-  - **Two are carried by a boundary alone** — ecology, non-human animals. Each
-    states what it does not establish; neither has a passage in which something
-    goes wrong. Five domains have left that list, and the passages take the
-    shapes their own families support. A reviewed finding established as
-    defective, with what stops following it: knowledge and culture in chapter
-    14, emergency and defence in chapter 9 (a declaration that derogated or
-    governed by decree takes its requisition and, with it, the duty to account
-    for the property; a defence structure that delegated public coercion takes
-    the authorisation for force abroad), and collective consent in chapter 9,
-    where the defect withdraws the consent and the effect built on it while an
-    unaffected record of the same kind stands. And a record that carries two
-    values where one is allowed: chapter 8's asylum determination, which stops
-    completing because nothing chooses between two authorised writers. The set
-    is asserted by membership so it cannot grow unnoticed.
+- [ ] **Implement the family baseline's ordinary half, which is the last domain
+  without one.**
+  - **No domain is carried by a boundary alone any more.** The ledger's set of
+    domains that show ordinary operation and a stated boundary but no passage in
+    which anything goes wrong is empty, and the assertion stays as an empty
+    expectation so a domain landing without one fails rather than passes
+    quietly. The seven passages take the shapes their own families support
+    rather than one template: a reviewed finding established as defective and
+    what stops following it (knowledge and culture in chapter 14; emergency and
+    defence in chapter 9; collective consent in chapter 9; the ecological record
+    in chapter 8); a record that carries two values where one is allowed, so
+    nothing completes and nobody chooses (chapter 8's asylum determination); and
+    the particular orders that follow an adjudicated harm, each with its own
+    boundary (chapter 8's animal remedies).
   - **One is a constitutional gap, not a prose gap.** Life course, family, care
     and reproduction appears only under strain because the baseline landed 106
     person-held barriers and no ordinary-operation interface. There is nothing
@@ -456,16 +448,16 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 
-- [ ] **Keep the adversarial audit's ten open findings moving.**
+- [ ] **Keep the adversarial audit's nine open findings moving.**
   - **The audit is encoded.** `adversarial-audit-source.json` binds all fifteen
     declared lenses to the checks and cases that encode them and to what each
     finds; `./generate.sh adversarial-audit` projects the report. A lens naming
     nothing executable fails, a lens finding nothing fails, a declared finding
     kind nobody raises fails, and a table with nothing open fails. All four are
     sabotage-tested.
-  - **Thirty-one findings across seven kinds, ten of them open**, and the report
-    prints those first: the family baseline's missing ordinary half, ecology
-    still carried by a boundary alone, the spelled half of the counted-claims
+  - **Thirty-one findings across seven kinds, nine of them open**, and the report
+    prints those first: the family baseline's missing ordinary half, the spelled
+    half of the counted-claims
     rule, `cares` as the posture of one passage, the restitution route a
     withdrawn emergency requisition leaves to the courts, and the liveness
     assumptions that no duty, delivery, procurement or accessibility check can

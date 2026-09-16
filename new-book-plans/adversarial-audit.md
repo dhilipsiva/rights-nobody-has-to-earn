@@ -25,7 +25,6 @@ welcome optional evidence; none is required for completion.
 | Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. |
 | Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. |
 | Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. |
-| Ecology and future conditions | narrative-distortion | Ecology is carried by stated boundaries and no passage in which anything goes wrong. |
 | Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses. |
 
 ## Findings by kind
@@ -34,7 +33,7 @@ welcome optional evidence; none is required for completion.
 | --- | ---: | ---: |
 | hidden-liveness-assumption | 4 | 4 |
 | impossible-operation-overclaim | 6 | 0 |
-| narrative-distortion | 5 | 3 |
+| narrative-distortion | 5 | 2 |
 | omitted-domain | 2 | 1 |
 | private-power-blind-spot | 4 | 0 |
 | totalising-rule | 7 | 0 |
@@ -171,9 +170,10 @@ Encoded by:
 
 - `tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli`
 - `new-book-plans/counterfactual/no-class9-climate-axis.pins.nibli`
+- `tests/pins/ecology/ecological-record-defect/positive/expect.pins.nibli`
 
 - **held** (totalising-rule) — Commons axes are non-substitutable: no sustainability score can hide one failed condition.
-- **open** (narrative-distortion) — Ecology is carried by stated boundaries and no passage in which anything goes wrong.
+- **held** (narrative-distortion) — Ecology and non-human animals were carried by stated boundaries alone until chapter 8 gained a reviewed record defect that withdraws only the exact affected reliance, and the animal remedy orders that follow an adjudicated harm.
 
 ### Data and AI governance
 

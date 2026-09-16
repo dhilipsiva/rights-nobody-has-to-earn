@@ -125,6 +125,31 @@
 # animal-risk-*, animal/categorical-*, upstream and counterfactual cases.
 # These no-record controls become TRUE only with the respective full findings;
 # the ordinary positive and withholding cases test that contrast separately.
+#
+# "When the record the protection rested on was defective" rests on the
+# family's own record-lifecycle cases:
+#   tests/pins/ecology/ecological-record-defect/positive/expect.pins.nibli
+#   tests/pins/ecology/ecological-record-defect/withheld/expect.pins.nibli
+#   tests/pins/ecology/ecological-record-correction/positive/expect.pins.nibli
+# The defect finding derives the read/stop-reliance duty, the urgent human and
+# animal care duty on the independent alternate, and the audit duty, and marks
+# `err(record, ECReviewedEcologicalAnimalRecordDefect)`; withheld derives all of
+# them FALSE; the correction derives
+# `prevents(replacement, ECCorrectionAsAutomaticRenewedAuthority)`. No stopped
+# activity, continued care or restored condition follows.
+#
+# "When a use has to be stopped" rests on the animal remedy orders:
+#   tests/pins/ecology/animal-cessation-order/positive/expect.pins.nibli
+#   tests/pins/ecology/animal-rescue-order/positive/expect.pins.nibli
+#   tests/pins/ecology/animal-custody-order/positive/expect.pins.nibli
+#   tests/pins/ecology/animal-care-restitution-order/positive/expect.pins.nibli
+#   tests/pins/ecology/animal-use-disqualification-order/positive/expect.pins.nibli
+#   tests/pins/ecology/animal-nonrepetition-order/positive/expect.pins.nibli
+#   tests/pins/ecology/animal-human-justice/positive/expect.pins.nibli
+# Each derives its own duty on the named executor. The rehoming, veterinary,
+# rehabilitation, sanctuary, habitat, monitoring, structural, licence and
+# record-correction orders are the same shape and have their own cases. None
+# infers a performed rescue, treatment, transfer, restoration or delivery.
 :expect-pins 53
 
 ? complete(ECReaderClaim, ECEnvironmentalRightClaim, Bela).
