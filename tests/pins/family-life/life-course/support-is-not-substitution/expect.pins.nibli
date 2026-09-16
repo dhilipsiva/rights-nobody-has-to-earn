@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? authority(LifeCourseSupportSupporter, ChosenSupporter, LifeCourseSupportRecord).
+# => TRUE
+? obliged(LifeCourseSupportSupporter, AssistWithoutReplacingTheSupportedPersonsOwnDecision, LifeCourseSupportRecord).
+# => TRUE
+? complete(LifeCourseSupportRecord, ReviewedDecisionSupportArrangement, LifeCourseSupportDecision).
+# => TRUE
+? complete(LifeCourseSupportRecord, ReviewedLifeCourseRole, LifeCourseSupportDecision).
+# => FALSE
+? permits(LifeCourseSupportSupporter, ActOnTheBoundedBestInterpretation, LifeCourseSupportRecord).
+# => FALSE
+? person(LifeCourseSupportSupporter).
+# => FALSE

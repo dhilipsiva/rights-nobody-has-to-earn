@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+challenge(LifeCourseRequestRequester, LifeCourseRequestReader, LifeCourseRequestRecord).
+authorized(LifeCourseRequestReader, LifeCourseChallengeReaderAuthority, LifeCourseRequestRecord).
+observe(LifeCourseRequestRequester, LifeCourseRequestRecord, LifeCourseRequestDecision, LifeCourseChallengeDecisionScope).

@@ -338,9 +338,10 @@ fn a_duty_is_not_an_action_because_nothing_reads_one() {
 /// Families whose every record completion carries the challenge reader and the
 /// independent alternate. The two older families predate that convention and are
 /// named below rather than quietly excused.
-const CHALLENGE_SKELETON: [&str; 9] = [
+const CHALLENGE_SKELETON: [&str; 10] = [
     "DEMOCRATIC-INTEGRITY",
     "ECOLOGICAL-ANIMAL",
+    "FAMILY-LIFE-ORDINARY",
     "KNOWLEDGE-AND-FREE-FIELD",
     "MOBILITY-PLURALITY",
     "NON-CARCERAL-JUSTICE",

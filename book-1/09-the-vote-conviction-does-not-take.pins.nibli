@@ -17,6 +17,28 @@
 # Field omission, conflict, independence and counterfactual cases in that
 # family test each permission boundary; none authenticates real consent.
 #
+# "What holding a role in somebody's life actually is" rests on the ordinary
+# half of the life-course baseline, which is its own constitution block beside
+# the barriers rather than a rewrite of them:
+#   tests/pins/family-life/role/positive/expect.pins.nibli
+#   tests/pins/family-life/participation/positive/expect.pins.nibli
+#   tests/pins/family-life/support/positive/expect.pins.nibli
+#   tests/pins/family-life/interpretation/positive/expect.pins.nibli
+#   tests/pins/family-life/continuity/positive/expect.pins.nibli
+#   tests/pins/family-life/reproductive/positive/expect.pins.nibli
+#   tests/pins/family-life/directive/positive/expect.pins.nibli
+#   tests/pins/family-life/origin/positive/expect.pins.nibli
+# and on these sequences, which are the claims the section actually makes:
+#   tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli
+#   tests/pins/family-life/life-course/support-is-not-substitution/expect.pins.nibli
+#   tests/pins/family-life/life-course/interpretation-without-support-first/expect.pins.nibli
+#   tests/pins/family-life/life-course/role-does-not-travel-between-domains/expect.pins.nibli
+#   tests/pins/family-life/life-course/own-record-access-confers-no-relationship/expect.pins.nibli
+#   tests/pins/family-life/life-course/role-defect-and-rights-sequence/expect.pins.nibli
+# Nothing there decides best interests, capacity, consent, pregnancy, parentage
+# or death, and no age is supplied. The withheld, omission, unauthorized,
+# conflicting-writer and forged-head cases are separate.
+#
 # "When the consent turns out not to have been consent" rests on that
 # family's own withdrawal sequence:
 #   tests/pins/mobility/defect/downstream-withdrawal/expect.pins.nibli

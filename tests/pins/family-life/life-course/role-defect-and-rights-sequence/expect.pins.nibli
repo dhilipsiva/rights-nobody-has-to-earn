@@ -1,0 +1,140 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 30
+
+? authority(LifeCourseSequenceActor, Parentage, LifeCourseSequenceAuthorization).
+# => TRUE
+? obliged(LifeCourseSequenceActor, ExerciseTheLifeCourseRoleWithinItsScopedFiduciaryLimits, LifeCourseSequenceAuthorization).
+# => TRUE
+? obliged(LifeCourseAuthorizationReader, HearTheLifeCourseRoleChallengeAndCorrectTheRecord, LifeCourseSequenceAuthorization).
+# => TRUE
+? complete(LifeCourseSequenceAuthorization, ReviewedLifeCourseRole, LifeCourseSequenceDecision).
+# => TRUE
+? obliged(LifeCourseSequenceActor, HearTheAffectedPersonAndRecordTheirOwnAccount, LifeCourseSequenceRecord).
+# => TRUE
+? permits(LifeCourseSequenceParticipant, ParticipateInTheAffectedLifeCourseDecision, LifeCourseSequenceRecord).
+# => TRUE
+? complete(LifeCourseSequenceRecord, ReviewedParticipationOfTheAffectedPerson, LifeCourseSequenceDecision).
+# => TRUE
+authorized(LifeCourseRoleDefectSource, LifeCourseSourceAuthority, LifeCourseRoleDefectRecord).
+authorized(LifeCourseRoleDefectEvidence, IndependentLifeCourseEvidenceAuthority, LifeCourseRoleDefectRecord).
+authorized(LifeCourseRoleDefectReview, IndependentLifeCourseReviewAuthority, LifeCourseRoleDefectRecord).
+authorized(LifeCourseRoleDefectReader, LifeCourseChallengeReaderAuthority, LifeCourseRoleDefectRecord).
+authorized(LifeCourseRoleDefectAlternate, LifeCourseAlternateReviewAuthority, LifeCourseRoleDefectRecord).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceDecision, LifeCourseDecisionScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceDecision, LifeCourseDecisionScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceDecision, LifeCourseDecisionScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, ParentageAndCaregiving, LifeCourseDomainScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, ParentageAndCaregiving, LifeCourseDomainScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, ParentageAndCaregiving, LifeCourseDomainScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceActor, LifeCourseActorScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceActor, LifeCourseActorScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceActor, LifeCourseActorScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceVersion, LifeCourseSourceVersionScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceVersion, LifeCourseSourceVersionScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceVersion, LifeCourseSourceVersionScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequencePeriod, LifeCourseEvidencePeriodScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequencePeriod, LifeCourseEvidencePeriodScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequencePeriod, LifeCourseEvidencePeriodScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceJurisdiction, LifeCourseJurisdictionScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceJurisdiction, LifeCourseJurisdictionScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceJurisdiction, LifeCourseJurisdictionScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceScope, LifeCourseLegalScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceScope, LifeCourseLegalScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceScope, LifeCourseLegalScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceEnd, LifeCourseSourceBoundEndScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceEnd, LifeCourseSourceBoundEndScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceEnd, LifeCourseSourceBoundEndScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, CurrentReconciledLifeCourseRecord, LifeCourseCurrentDispositionScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, CurrentReconciledLifeCourseRecord, LifeCourseCurrentDispositionScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, CurrentReconciledLifeCourseRecord, LifeCourseCurrentDispositionScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseRoleDefectReader, LifeCourseChallengeReaderScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseRoleDefectReader, LifeCourseChallengeReaderScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseRoleDefectReader, LifeCourseChallengeReaderScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseRoleDefectAlternate, LifeCourseIndependentAlternateScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseRoleDefectAlternate, LifeCourseIndependentAlternateScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseRoleDefectAlternate, LifeCourseIndependentAlternateScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseRoleDefectChallenge, LifeCourseChallengeScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseRoleDefectChallenge, LifeCourseChallengeScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseRoleDefectChallenge, LifeCourseChallengeScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseRoleDefectCorrection, LifeCourseCorrectionScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseRoleDefectCorrection, LifeCourseCorrectionScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseRoleDefectCorrection, LifeCourseCorrectionScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseRoleDefectRemedy, LifeCourseRemedyScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseRoleDefectRemedy, LifeCourseRemedyScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseRoleDefectRemedy, LifeCourseRemedyScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, ConstitutionalReviewOrIndependentSubstitute, LifeCourseFinalReviewScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, ConstitutionalReviewOrIndependentSubstitute, LifeCourseFinalReviewScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, ConstitutionalReviewOrIndependentSubstitute, LifeCourseFinalReviewScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, NoCapacityScoreGuardianshipCompelledCareOrCertifiedRelationship, LifeCourseCorridorScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, NoCapacityScoreGuardianshipCompelledCareOrCertifiedRelationship, LifeCourseCorridorScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, NoCapacityScoreGuardianshipCompelledCareOrCertifiedRelationship, LifeCourseCorridorScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, IndependentLifeCourseRecordDefect, LifeCourseRecordKindScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, IndependentLifeCourseRecordDefect, LifeCourseRecordKindScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, IndependentLifeCourseRecordDefect, LifeCourseRecordKindScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, LifeCourseSequenceAuthorization, LifeCourseAffectedRecordScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, LifeCourseSequenceAuthorization, LifeCourseAffectedRecordScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, LifeCourseSequenceAuthorization, LifeCourseAffectedRecordScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, UnevidencedSeparationGround, LifeCourseDefectKindScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, UnevidencedSeparationGround, LifeCourseDefectKindScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, UnevidencedSeparationGround, LifeCourseDefectKindScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, PositiveIndependentEvidenceOfTheExactDefectNotAbsenceOrAllegation, LifeCourseDefectEvidenceScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, PositiveIndependentEvidenceOfTheExactDefectNotAbsenceOrAllegation, LifeCourseDefectEvidenceScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, PositiveIndependentEvidenceOfTheExactDefectNotAbsenceOrAllegation, LifeCourseDefectEvidenceScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, NoOriginalWriterAcknowledgementRequiredForTheFindingOrUrgentCare, LifeCourseNoWriterVetoScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, NoOriginalWriterAcknowledgementRequiredForTheFindingOrUrgentCare, LifeCourseNoWriterVetoScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, NoOriginalWriterAcknowledgementRequiredForTheFindingOrUrgentCare, LifeCourseNoWriterVetoScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, OnlyTheExactAffectedRelianceWithdrawnNoGuiltOrRepairedOutcomeInferred, LifeCourseWithdrawalPolarityScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, OnlyTheExactAffectedRelianceWithdrawnNoGuiltOrRepairedOutcomeInferred, LifeCourseWithdrawalPolarityScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, OnlyTheExactAffectedRelianceWithdrawnNoGuiltOrRepairedOutcomeInferred, LifeCourseWithdrawalPolarityScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, NoLostStandingFloorBallotLibertyOrCareFromTheRecordFailure, LifeCourseRightsWallScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, NoLostStandingFloorBallotLibertyOrCareFromTheRecordFailure, LifeCourseRightsWallScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, NoLostStandingFloorBallotLibertyOrCareFromTheRecordFailure, LifeCourseRightsWallScope).
+observe(LifeCourseRoleDefectSource, LifeCourseRoleDefectRecord, NoAdverseFactAboutTheSubjectAndNoAutomaticIndividualRemedy, LifeCourseDefectLimitScope).
+observe(LifeCourseRoleDefectEvidence, LifeCourseRoleDefectRecord, NoAdverseFactAboutTheSubjectAndNoAutomaticIndividualRemedy, LifeCourseDefectLimitScope).
+observe(LifeCourseRoleDefectReview, LifeCourseRoleDefectRecord, NoAdverseFactAboutTheSubjectAndNoAutomaticIndividualRemedy, LifeCourseDefectLimitScope).
+? contradict(LifeCourseSequenceAuthorization, LifeCourseRecordAuthorization).
+# => TRUE
+? err(LifeCourseRoleDefectRecord, ReviewedLifeCourseRecordDefect).
+# => TRUE
+? obliged(LifeCourseRoleDefectReader, ReadTheExactLifeCourseDefectAndStopTheAffectedReliance, LifeCourseRoleDefectRecord).
+# => TRUE
+? obliged(LifeCourseRoleDefectAlternate, PreserveUrgentCareAndTheChallengeRouteDuringTheRecordFailure, LifeCourseRoleDefectRecord).
+# => TRUE
+? obliged(LifeCourseSequenceActor, PublishTheLifeCourseRecordCorrection, LifeCourseSequenceAuthorization).
+# => TRUE
+? complete(LifeCourseRoleDefectRecord, IndependentLifeCourseRecordDefect, LifeCourseSequenceDecision).
+# => TRUE
+? authority(LifeCourseSequenceActor, Parentage, LifeCourseSequenceAuthorization).
+# => FALSE
+? obliged(LifeCourseSequenceActor, ExerciseTheLifeCourseRoleWithinItsScopedFiduciaryLimits, LifeCourseSequenceAuthorization).
+# => FALSE
+? obliged(LifeCourseAuthorizationReader, HearTheLifeCourseRoleChallengeAndCorrectTheRecord, LifeCourseSequenceAuthorization).
+# => FALSE
+? complete(LifeCourseSequenceAuthorization, ReviewedLifeCourseRole, LifeCourseSequenceDecision).
+# => FALSE
+? obliged(LifeCourseSequenceActor, HearTheAffectedPersonAndRecordTheirOwnAccount, LifeCourseSequenceRecord).
+# => FALSE
+? permits(LifeCourseSequenceParticipant, ParticipateInTheAffectedLifeCourseDecision, LifeCourseSequenceRecord).
+# => FALSE
+? complete(LifeCourseSequenceRecord, ReviewedParticipationOfTheAffectedPerson, LifeCourseSequenceDecision).
+# => FALSE
+? person(LifeCourseSequenceParticipant).
+# => TRUE
+? owe(State, Eats, LifeCourseSequenceParticipant).
+# => TRUE
+? decide(LifeCourseSequenceParticipant, Ballot).
+# => TRUE
+? false(LifeCourseSequenceParticipant).
+# => FALSE
+? prisoner(LifeCourseSequenceParticipant).
+# => FALSE
+? lose(Points, LifeCourseSequenceParticipant).
+# => FALSE
+? mature(LifeCourseSequenceParticipant).
+# => FALSE
+? person(Cira).
+# => TRUE
+? owe(State, Eats, Cira).
+# => TRUE
+? prisoner(Cira).
+# => FALSE

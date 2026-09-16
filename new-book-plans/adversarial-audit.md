@@ -20,8 +20,7 @@ welcome optional evidence; none is required for completion.
 | Public administration | hidden-liveness-assumption | No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf. |
 | Public administration | unowned-dependency | A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives. |
 | Disability and accessibility | hidden-liveness-assumption | Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows. |
-| Care and the life course | omitted-domain | The family, dependency, reproduction and care baseline landed 106 person-held barriers and no ordinary-operation interface, so the domain appears only under strain. |
-| Care and the life course | narrative-distortion | `cares` is the posture of one passage in the whole book. |
+| Care and the life course | narrative-distortion | `cares` is the posture of two passages in the whole book. |
 | Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. |
 | Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. |
 | Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. |
@@ -34,7 +33,7 @@ welcome optional evidence; none is required for completion.
 | hidden-liveness-assumption | 4 | 4 |
 | impossible-operation-overclaim | 6 | 0 |
 | narrative-distortion | 5 | 2 |
-| omitted-domain | 2 | 1 |
+| omitted-domain | 2 | 0 |
 | private-power-blind-spot | 4 | 0 |
 | totalising-rule | 7 | 0 |
 | unowned-dependency | 3 | 2 |
@@ -90,9 +89,10 @@ Encoded by:
 
 - `new-book-plans/reader-coverage.md`
 - `book-1/09-the-vote-conviction-does-not-take.pins.nibli`
+- `tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli`
 
-- **open** (omitted-domain) — The family, dependency, reproduction and care baseline landed 106 person-held barriers and no ordinary-operation interface, so the domain appears only under strain.
-- **open** (narrative-distortion) — `cares` is the posture of one passage in the whole book.
+- **held** (omitted-domain) — The family, dependency, reproduction and care baseline landed 106 person-held barriers before it had an ordinary-operation interface; the roles, support, participation, continuity, bodily care, treatment order and own-record access that they presupposed landed afterwards, in their own block beside them.
+- **open** (narrative-distortion) — `cares` is the posture of two passages in the whole book.
 
 ### Labour and economy
 

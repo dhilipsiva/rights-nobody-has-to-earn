@@ -92,16 +92,17 @@
       "lens": "Care and the life course",
       "encoded_by": [
         "new-book-plans/reader-coverage.md",
-        "book-1/09-the-vote-conviction-does-not-take.pins.nibli"
+        "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+        "tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli"
       ],
       "findings": [
         {
-          "finding": "The family, dependency, reproduction and care baseline landed 106 person-held barriers and no ordinary-operation interface, so the domain appears only under strain.",
+          "finding": "The family, dependency, reproduction and care baseline landed 106 person-held barriers before it had an ordinary-operation interface; the roles, support, participation, continuity, bodily care, treatment order and own-record access that they presupposed landed afterwards, in their own block beside them.",
           "category": "omitted-domain",
-          "open": true
+          "open": false
         },
         {
-          "finding": "`cares` is the posture of one passage in the whole book.",
+          "finding": "`cares` is the posture of two passages in the whole book.",
           "category": "narrative-distortion",
           "open": true
         }

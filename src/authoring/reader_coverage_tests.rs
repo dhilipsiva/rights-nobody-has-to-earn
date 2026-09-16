@@ -2,13 +2,14 @@
 
 use super::*;
 
-/// The one domain the ledger shows without ordinary operation, and why it is a
-/// constitutional gap rather than a prose one: the family, dependency,
-/// reproduction and care baseline landed 106 person-held barriers and no
-/// ordinary-operation interface, so there is nothing derivable for a passage to
-/// show working. Writing one anyway would be fictionalising coverage, which the
-/// portfolio standard refuses by name.
-const NO_ORDINARY_SHOWN: [&str; 1] = ["Life course, family, care and reproduction"];
+/// Domains the ledger shows without ordinary operation. The set is empty as of
+/// 2026-09-16: life course, family, care and reproduction was the last member,
+/// and it left when the ordinary half of that baseline was implemented rather
+/// than when a passage was written about it. The assertion stays as an empty
+/// expectation, because that ordering is the rule — a domain shown only under
+/// strain is a constitutional gap, and writing the passage first would
+/// fictionalise the coverage.
+const NO_ORDINARY_SHOWN: [&str; 0] = [];
 
 /// Domains that meet the standard through a stated boundary rather than through
 /// a passage in which something goes wrong. That is the weaker of the two

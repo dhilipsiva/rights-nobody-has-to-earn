@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? authority(LifeCourseCaseActor, DecisionAgent, LifeCourseCaseRecord).
+# => TRUE
+? obliged(LifeCourseCaseActor, ExerciseTheLifeCourseRoleWithinItsScopedFiduciaryLimits, LifeCourseCaseRecord).
+# => TRUE
+? obliged(LifeCourseCaseReader, HearTheLifeCourseRoleChallengeAndCorrectTheRecord, LifeCourseCaseRecord).
+# => TRUE
+? complete(LifeCourseCaseRecord, ReviewedLifeCourseRole, LifeCourseCaseDecision).
+# => TRUE

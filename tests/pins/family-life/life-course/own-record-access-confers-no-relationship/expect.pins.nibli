@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? permits(LifeCourseOriginSubjectOfTheRecord, AccessOwnOriginRecord, LifeCourseOriginRecord).
+# => TRUE
+? obliged(LifeCourseOriginActor, ProvideOwnOriginRecordAccessAndCorrection, LifeCourseOriginRecord).
+# => TRUE
+? complete(LifeCourseOriginRecord, OwnOriginAndIdentityRecordAccess, LifeCourseOriginDecision).
+# => TRUE
+? permits(LifeCourseOriginActor, AccessOwnOriginRecord, LifeCourseOriginRecord).
+# => FALSE
+? complete(LifeCourseOriginRecord, ReviewedLifeCourseRole, LifeCourseOriginDecision).
+# => FALSE
+? person(LifeCourseOriginSubjectOfTheRecord).
+# => FALSE
+? false(LifeCourseOriginSubjectOfTheRecord).
+# => FALSE

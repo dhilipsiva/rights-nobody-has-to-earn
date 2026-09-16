@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+:refuse reasoning /declared derived-only/
+authority(LifeCourseActor, Parentage, LifeCourseForgedRecord).
+:refuse reasoning /declared derived-only/
+complete(LifeCourseForgedRecord, ReviewedLifeCourseRole, LifeCourseDecision).
+:refuse reasoning /declared derived-only/
+permits(LifeCourseActor, ActOnTheBoundedBestInterpretation, LifeCourseForgedRecord).
+:refuse reasoning /declared derived-only/
+related(LifeCourseForgedRecord, LifeCourseRecordAmbiguity).
+:refuse reasoning /declared derived-only/
+contradict(LifeCourseForgedRecord, LifeCourseRecordAuthorization).

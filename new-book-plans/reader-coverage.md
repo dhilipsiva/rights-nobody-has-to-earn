@@ -20,9 +20,11 @@ nothing here is reader evidence.
 
 These have ordinary operation or strain, and not the other.
 
-| Domain | Ordinary | Strain | Boundary | Missing |
-| --- | ---: | ---: | ---: | --- |
-| Life course, family, care and reproduction | 0 | 1 | 1 | ordinary operation |
+None. Every domain the ledger classifies shows ordinary operation
+and at least one of a failure, an abuse or a stated boundary. A
+domain shown only under strain is a constitutional gap rather than
+an editorial one, so it leaves this table when the interface lands,
+never when a passage is written about it.
 
 ## Shown working, bounded, but never failing
 
@@ -44,16 +46,16 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 4 |
+| chooses | 5 |
 | creates | 2 |
-| cares | 1 |
+| cares | 2 |
 | works | 6 |
 | associates | 3 |
 | requests | 3 |
 | receives | 8 |
 | challenges | 12 |
 | governs | 23 |
-| is acted upon | 53 |
+| is acted upon | 54 |
 
 ## Chapter patterns
 
@@ -63,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 18 |
+| constructive | 19 |
 | private-civic | 15 |
 | democratic | 23 |
 | coercive | 25 |
@@ -87,7 +89,7 @@ checked here.
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
 | Knowledge, communication and culture | 1 | 1 | 1 |
-| Life course, family, care and reproduction | 0 | 1 | 1 |
+| Life course, family, care and reproduction | 1 | 1 | 2 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
 | Material floor | 2 | 5 | 6 |
 | Non-human animals | 1 | 1 | 2 |
@@ -168,8 +170,9 @@ checked here.
 | 09-10 | 09-the-vote-conviction-does-not-take.md | When the consent turns out not to have been consent | Collective and plurality rights | MOBILITY-PLURALITY | continuity | a collective consent record found defective | associates, challenges | continuity-remedy | yes | private-civic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-11 | 09-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 09-12 | 09-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-13 | 09-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
-| 09-14 | 09-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-13 | 09-the-vote-conviction-does-not-take.md | What holding a role in somebody's life actually is | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a scoped family role, support and care continuity | cares, chooses, is acted upon | works | yes | constructive | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-14 | 09-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
+| 09-15 | 09-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/09-the-vote-conviction-does-not-take.pins.nibli` |
 | 10-00 | 10-contribution.md | (preamble) | Economy, property, work and commons | ARTICLES | ordinary | three routes to recognition, and care walking through two of them | works, cares, creates | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-01 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-02 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |

@@ -28,6 +28,7 @@ destination.
 | `new-book-plans/knowledge-source.json` | What must be established before a public actor narrows learning, expression, belief, association, inquiry or culture. |
 | `new-book-plans/record-power-source.json` | What must be established before a holder keeps, watches, profiles or automates over somebody's record. |
 | `new-book-plans/scarcity-source.json` | What must be established before a shortage counts as physical, and what may never decide who goes without. |
+| `new-book-plans/family-life-source.json` | What must be established before somebody holds a role in another person's life, and the care continuity that needs no role at all. |
 | `new-book-plans/book-1-amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
 | `new-book-plans/book-1-mobility-and-plurality-contract.md` | Mobility protections, differentiated collective rights, exact consent/consultation and external no-evasion. |
 | `new-book-plans/book-1-non-carceral-justice-contract.md` | Accessible justice, actual court-bound remedies, voluntary restoration and release continuity. |
@@ -104,14 +105,15 @@ the first build compiles the bundled C library using a C compiler and Make
 (available in the Nibli development shell). Other targets retain Rust's default
 allocator. The explicit authoring executable is unchanged.
 
-Latest full run measured on 2026-09-15 with four workers and the release binary
-already built against the pinned engine `979fe8b`: all 82,335 pins across 14,892
-cases passed, with complete formal
-contradiction scans and no findings, in 872.65 seconds (14m32.65s); nine
-existing known-defect pins still reproduce. User CPU was 3,371.05 seconds,
-system CPU 81.71 seconds, utilisation 395%, and peak resident memory
-21,924,220 KiB, with no major page faults and no swaps. Other machine activity
-was not controlled.
+Latest full run measured on 2026-09-16 with four workers and the release binary
+already built against the pinned engine `979fe8b`: all 84,289 pins across 15,479
+cases passed, with complete formal contradiction scans and no findings, in
+836.96 seconds (13m56.96s); nine existing known-defect pins still reproduce.
+Peak resident memory was observed at about 19,300,000 KiB during the run; the
+user and system CPU totals were not captured this time and the previous run's
+figures (3,371.05 s user, 81.71 s system, 395% utilisation, 21,924,220 KiB peak,
+2026-09-15, 14,892 cases) are the last recorded ones. Other machine activity was
+not controlled, and one unrelated process held roughly one core throughout.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second
 (4m35.04s) result was measured on the 4,190-case inventory that preceded the
@@ -134,6 +136,7 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh mobility
 ./generate.sh justice
 ./generate.sh knowledge
+./generate.sh family-life
 ./generate.sh reader-coverage
 ./generate.sh record-power
 ./generate.sh resolution-receipts

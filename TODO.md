@@ -371,35 +371,7 @@ this program without reporting reader evidence or a reader-result pass. Machine
 accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
 remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Implement the family baseline's ordinary half, which is the last domain
-  without one.**
-  - **No domain is carried by a boundary alone any more.** The ledger's set of
-    domains that show ordinary operation and a stated boundary but no passage in
-    which anything goes wrong is empty, and the assertion stays as an empty
-    expectation so a domain landing without one fails rather than passes
-    quietly. The seven passages take the shapes their own families support
-    rather than one template: a reviewed finding established as defective and
-    what stops following it (knowledge and culture in chapter 14; emergency and
-    defence in chapter 9; collective consent in chapter 9; the ecological record
-    in chapter 8); a record that carries two values where one is allowed, so
-    nothing completes and nobody chooses (chapter 8's asylum determination); and
-    the particular orders that follow an adjudicated harm, each with its own
-    boundary (chapter 8's animal remedies).
-  - **One is a constitutional gap, not a prose gap.** Life course, family, care
-    and reproduction appears only under strain because the baseline landed 106
-    person-held barriers and no ordinary-operation interface. There is nothing
-    derivable for a passage to show working, and writing one anyway would
-    fictionalise coverage. Implement the ordinary half first; the reader passage
-    follows it, never the reverse.
-  - **Done when:** every completed governed/provided domain has traceable
-    ordinary-operation, a credible failure or abuse passage rather than only a
-    boundary, and — where claimed — end-to-end continuity/remedy coverage in its
-    assigned assurance route. A protected private/civic domain needs traceable
-    non-interference and non-recording/non-compulsion limits plus recourse;
-    ordinary-life illustration remains non-evidentiary under the author-ruled
-    narrative register.
-
-- [ ] **Fill the two empty postures, and give an accusation an author.**
+- [ ] **Fill the thin postures, and give an accusation an author.**
   - **The delivery routes are exercised, so the floor no longer arrives only
     through a cell.** `tests/pins/delivery/received-outside-custody` derives all
     five recipient-side actualities for a person nobody convicted;
@@ -410,11 +382,13 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
   - **Every posture is occupied, and two are carried in single figures.** The
     first reading said `creates` and `cares` were empty; it was wrong twice over
     — one posture per section, and the chapter preambles unclassified, which is
-    where chapter 10 does its care work. The ledger now classifies all 101
+    where chapter 10 does its care work. The ledger now classifies all 109
     passages including preambles and lets a passage hold several postures.
-    `cares` is carried by one passage and `creates` by two, against 47 for `is
-    acted upon`. Both the empty set and the thin set are asserted by
-    membership.
+    `cares` and `creates` are carried by two passages each, against 53 for `is
+    acted upon`. `cares` gained its second when the life-course baseline's
+    ordinary half landed — which is the pattern to expect: a thin posture is
+    usually a missing interface rather than a missing paragraph. Both the empty
+    set and the thin set are asserted by membership.
   - **The accusation-authorship gap is confirmed open.** `attack(Hano, Ivo)`,
     `injure`, `cruel`, `deceive`, `capture` and `rotten` name the alleged
     offender and the victim, never the writer. Chapter 1 concedes the
@@ -448,16 +422,15 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
 ### Expansion phase 5 — Evidence, psychology, and repository red-team
 
-- [ ] **Keep the adversarial audit's nine open findings moving.**
+- [ ] **Keep the adversarial audit's eight open findings moving.**
   - **The audit is encoded.** `adversarial-audit-source.json` binds all fifteen
     declared lenses to the checks and cases that encode them and to what each
     finds; `./generate.sh adversarial-audit` projects the report. A lens naming
     nothing executable fails, a lens finding nothing fails, a declared finding
     kind nobody raises fails, and a table with nothing open fails. All four are
     sabotage-tested.
-  - **Thirty-one findings across seven kinds, nine of them open**, and the report
-    prints those first: the family baseline's missing ordinary half, the spelled
-    half of the counted-claims
+  - **Thirty-one findings across seven kinds, eight of them open**, and the
+    report prints those first: the spelled half of the counted-claims
     rule, `cares` as the posture of one passage, the restitution route a
     withdrawn emergency requisition leaves to the courts, and the liveness
     assumptions that no duty, delivery, procurement or accessibility check can

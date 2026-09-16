@@ -1,0 +1,562 @@
+{
+  "common_fields": [
+    [
+      "$decision",
+      "LifeCourseDecisionScope"
+    ],
+    [
+      "$domain",
+      "LifeCourseDomainScope"
+    ],
+    [
+      "$actor",
+      "LifeCourseActorScope"
+    ],
+    [
+      "$version",
+      "LifeCourseSourceVersionScope"
+    ],
+    [
+      "$period",
+      "LifeCourseEvidencePeriodScope"
+    ],
+    [
+      "$jurisdiction",
+      "LifeCourseJurisdictionScope"
+    ],
+    [
+      "$scope",
+      "LifeCourseLegalScope"
+    ],
+    [
+      "$end",
+      "LifeCourseSourceBoundEndScope"
+    ],
+    [
+      "CurrentReconciledLifeCourseRecord",
+      "LifeCourseCurrentDispositionScope"
+    ],
+    [
+      "$reader",
+      "LifeCourseChallengeReaderScope"
+    ],
+    [
+      "$alternate",
+      "LifeCourseIndependentAlternateScope"
+    ],
+    [
+      "$challenge",
+      "LifeCourseChallengeScope"
+    ],
+    [
+      "$correction",
+      "LifeCourseCorrectionScope"
+    ],
+    [
+      "$remedy",
+      "LifeCourseRemedyScope"
+    ],
+    [
+      "ConstitutionalReviewOrIndependentSubstitute",
+      "LifeCourseFinalReviewScope"
+    ],
+    [
+      "NoCapacityScoreGuardianshipCompelledCareOrCertifiedRelationship",
+      "LifeCourseCorridorScope"
+    ]
+  ],
+  "vocabularies": [
+    [
+      "LifeCourseDomainScope",
+      "LifeCourseDomainVocabulary",
+      [
+        "ParentageAndCaregiving",
+        "HouseholdAndMaterialSupport",
+        "DecisionSupport",
+        "ParticipationOfTheAffectedPerson",
+        "CareContinuityAndRespite",
+        "ReproductiveAndBodilyCare",
+        "TreatmentChoiceAndDirectives",
+        "OriginAndIdentityRecords",
+        "SuccessionAndDependantClaims",
+        "AdulthoodStatusEvidence"
+      ]
+    ],
+    [
+      "LifeCourseRoleKindScope",
+      "LifeCourseRoleKindVocabulary",
+      [
+        "Parentage",
+        "Caregiving",
+        "Household",
+        "MaterialSupport",
+        "PropertyAndSuccession",
+        "DecisionAgent"
+      ]
+    ],
+    [
+      "LifeCourseSupportKindScope",
+      "LifeCourseSupportKindVocabulary",
+      [
+        "ChosenSupporter",
+        "AccessibleCommunicationSupport",
+        "IndependentAdvocate"
+      ]
+    ],
+    [
+      "LifeCourseContinuityKindScope",
+      "LifeCourseContinuityKindVocabulary",
+      [
+        "ImmediateCareContinuity",
+        "RespiteContinuity",
+        "ExitAndRelocationContinuity"
+      ]
+    ],
+    [
+      "LifeCourseRequestKindScope",
+      "LifeCourseRequestKindVocabulary",
+      [
+        "AccessOwnOriginRecord",
+        "CorrectOwnLifeCourseRecord",
+        "ReceiveInAccessibleForm"
+      ]
+    ],
+    [
+      "LifeCourseDefectKindScope",
+      "LifeCourseDefectKindVocabulary",
+      [
+        "UnevidencedSeparationGround",
+        "PovertyDisabilityOrFamilyFormAsGround",
+        "SubstitutedWillWithoutSupport",
+        "PlenaryOrStatusBasedIncapacity",
+        "ThirdPartyReproductiveAuthorization",
+        "CompelledPersonalCareDuty",
+        "OriginRecordSuppression",
+        "ParticipationExclusion",
+        "ContinuityOrRespiteWithdrawal",
+        "RetaliationForSeekingHelp"
+      ]
+    ]
+  ],
+  "contracts": [
+    {
+      "id": "role",
+      "kind": "ReviewedLifeCourseRole",
+      "fields": [
+        [
+          "$role_kind",
+          "LifeCourseRoleKindScope"
+        ],
+        [
+          "ScopedChallengeableFiduciaryPowerNotOwnership",
+          "LifeCourseRolePowerScope"
+        ],
+        [
+          "ParentageCaregivingHouseholdSupportPropertyAndDecisionRolesStaySeparable",
+          "LifeCourseModularityScope"
+        ],
+        [
+          "EveryDependantAndCaregiverKeepsSeparateStandingVoicePrivacyHelpAndExit",
+          "LifeCourseSeparateStandingScope"
+        ],
+        [
+          "NoCompelledPersonalCareDutyOrInheritedSupportDebtFromKinshipAlone",
+          "LifeCourseNoKinshipDutyScope"
+        ],
+        [
+          "NoMarriageOrHouseholdLabelConfersTheRoleByItself",
+          "LifeCourseNoStatusShortcutScope"
+        ]
+      ],
+      "heads": [
+        "authority($actor, $role_kind, $record)",
+        "obliged($actor, ExerciseTheLifeCourseRoleWithinItsScopedFiduciaryLimits, $record)",
+        "obliged($reader, HearTheLifeCourseRoleChallengeAndCorrectTheRecord, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "participation",
+      "kind": "ReviewedParticipationOfTheAffectedPerson",
+      "fields": [
+        [
+          "$role_kind",
+          "LifeCourseRoleKindScope"
+        ],
+        [
+          "$participant",
+          "LifeCourseParticipantScope"
+        ],
+        [
+          "AccessibleParticipationWithNoMinimumSpeakingAge",
+          "LifeCourseParticipationAccessScope"
+        ],
+        [
+          "OwnAccountRecordedWithoutCertifyingPreferenceOrRelationship",
+          "LifeCourseOwnAccountScope"
+        ],
+        [
+          "IndependentAssistanceWhereTheAdultsInterestsConflict",
+          "LifeCourseIndependentAssistanceScope"
+        ],
+        [
+          "DecisionSpecificIncreasingAuthorityNotAGlobalCapabilityScore",
+          "LifeCourseIncreasingAuthorityScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, HearTheAffectedPersonAndRecordTheirOwnAccount, $record)",
+        "permits($participant, ParticipateInTheAffectedLifeCourseDecision, $record)"
+      ],
+      "extra": [
+        "~($participant = $actor)",
+        "~($participant = $review)",
+        "~($participant = $reader)",
+        "~($participant = $alternate)"
+      ],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "support",
+      "kind": "ReviewedDecisionSupportArrangement",
+      "fields": [
+        [
+          "$support_kind",
+          "LifeCourseSupportKindScope"
+        ],
+        [
+          "$supporter",
+          "LifeCourseSupporterScope"
+        ],
+        [
+          "ChosenChangeableAndRefusableSupporterNotAnAppointedGuardian",
+          "LifeCourseChosenSupporterScope"
+        ],
+        [
+          "NoSubstitutedDecisionWhileSupportCanStillBeGiven",
+          "LifeCourseNoSubstitutionScope"
+        ],
+        [
+          "NoPlenaryGuardianshipStatusBasedIncapacityOrGlobalCapabilityScore",
+          "LifeCourseNoIncapacityScope"
+        ],
+        [
+          "AccessibleFormatsTimeAndCommunicationProvided",
+          "LifeCourseSupportAccessScope"
+        ]
+      ],
+      "heads": [
+        "authority($supporter, $support_kind, $record)",
+        "obliged($supporter, AssistWithoutReplacingTheSupportedPersonsOwnDecision, $record)"
+      ],
+      "extra": [
+        "~($supporter = $actor)",
+        "~($supporter = $review)",
+        "~($supporter = $reader)",
+        "~($supporter = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "interpretation",
+      "kind": "BoundedBestInterpretationRoute",
+      "fields": [
+        [
+          "$role_kind",
+          "LifeCourseRoleKindScope"
+        ],
+        [
+          "$representative",
+          "LifeCourseRepresentativeScope"
+        ],
+        [
+          "PositiveEvidenceThatSupportWasActuallyProvidedFirst",
+          "LifeCourseSupportFirstScope"
+        ],
+        [
+          "WillAndPreferencesRemainUnascertainableAfterThatSupport",
+          "LifeCourseUnascertainableScope"
+        ],
+        [
+          "ConflictFreeDecisionSpecificLeastRestrictiveAndTimeBounded",
+          "LifeCourseInterpretationLimitScope"
+        ],
+        [
+          "IndependentReviewBeforeAndDuringTheRoute",
+          "LifeCourseInterpretationReviewScope"
+        ],
+        [
+          "EndsWhenWillAndPreferencesBecomeAscertainable",
+          "LifeCourseInterpretationEndScope"
+        ]
+      ],
+      "heads": [
+        "permits($representative, ActOnTheBoundedBestInterpretation, $record)",
+        "obliged($reader, ReviewTheBestInterpretationAndEndItWhenPreferencesAreKnown, $record)"
+      ],
+      "extra": [
+        "~($representative = $review)",
+        "~($representative = $reader)",
+        "~($representative = $alternate)"
+      ],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "continuity",
+      "kind": "LifeCourseCareContinuity",
+      "fields": [
+        [
+          "$continuity_kind",
+          "LifeCourseContinuityKindScope"
+        ],
+        [
+          "ImmediateNonDelegablePublicContinuityNotContingentOnAnyRole",
+          "LifeCourseImmediateContinuityScope"
+        ],
+        [
+          "NoFamilyHouseholdAssociationOrCharityPresumedToSupplyTheFloor",
+          "LifeCourseNoPresumedSupplyScope"
+        ],
+        [
+          "SeparateFloorAccessConfidentialHelpRespiteExitAndRemedyForEachPerson",
+          "LifeCourseSeparateAccessScope"
+        ],
+        [
+          "NotConditionedOnARelationshipASupporterOrARecordEntry",
+          "LifeCourseNoConditionScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, ProvideTheImmediateNonDelegableCareContinuity, $record)",
+        "obliged($reader, HearTheContinuityChallengeAndCorrectTheRecord, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "reproductive",
+      "kind": "ReviewedReproductiveAndBodilyCareAutonomy",
+      "fields": [
+        [
+          "NoThirdPartyAuthorizationRequiredForTheCare",
+          "LifeCourseNoThirdPartyScope"
+        ],
+        [
+          "CurrentInformedChoiceControlsIncludingRefusal",
+          "LifeCourseCurrentChoiceScope"
+        ],
+        [
+          "NoCoercionDiscriminationOrPunishmentRouteFromTheChoice",
+          "LifeCourseNoPunishmentScope"
+        ],
+        [
+          "NoPregnancyOutcomeOrBodilyDecisionRecordedAsAnAdverseFact",
+          "LifeCourseNoAdverseFactScope"
+        ],
+        [
+          "AccessibleInformationAndInterpretationProvided",
+          "LifeCourseCareAccessScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, RequireNoThirdPartyAuthorizationForReproductiveAndBodilyCare, $record)",
+        "obliged($actor, RecordNoBodilyDecisionAsAnAdverseFactAboutThePerson, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "directive",
+      "kind": "ReviewedTreatmentChoiceOrder",
+      "fields": [
+        [
+          "$representative",
+          "LifeCourseRepresentativeScope"
+        ],
+        [
+          "CurrentInformedChoiceFirstIncludingRefusalOfLifeSustainingCare",
+          "LifeCourseChoiceOrderScope"
+        ],
+        [
+          "ThenTheValidAdvanceDirectiveOnItsOwnTerms",
+          "LifeCourseDirectiveScope"
+        ],
+        [
+          "ThenTheChosenRepresentativeImplementingKnownWillAndPreferences",
+          "LifeCourseRepresentativeOrderScope"
+        ],
+        [
+          "OnlyThenTheBoundedInterpretationRouteWithIndependentReview",
+          "LifeCourseLastResortScope"
+        ],
+        [
+          "NoAgeDiagnosisOrResidenceSettingRemovesTheChoiceByItself",
+          "LifeCourseNoStatusRemovalScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, FollowTheCurrentChoiceThenTheDirectiveThenTheChosenRepresentative, $record)"
+      ],
+      "extra": [
+        "~($representative = $actor)",
+        "~($representative = $review)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "origin",
+      "kind": "OwnOriginAndIdentityRecordAccess",
+      "fields": [
+        [
+          "$request_kind",
+          "LifeCourseRequestKindScope"
+        ],
+        [
+          "$subject_of_the_record",
+          "LifeCourseRecordSubjectScope"
+        ],
+        [
+          "AccuratePreservedBirthAdoptionDonorAndGestationalOrigin",
+          "LifeCourseOriginAccuracyScope"
+        ],
+        [
+          "AccessAndCorrectionByThePersonTheRecordIsAbout",
+          "LifeCourseOwnAccessScope"
+        ],
+        [
+          "NoAutomaticContactOrRelationshipRightFollows",
+          "LifeCourseNoContactRightScope"
+        ],
+        [
+          "CorrectionWithoutErasingLawfulHistoryOrOfficialProvenance",
+          "LifeCourseHistoryScope"
+        ]
+      ],
+      "heads": [
+        "permits($subject_of_the_record, $request_kind, $record)",
+        "obliged($actor, ProvideOwnOriginRecordAccessAndCorrection, $record)"
+      ],
+      "extra": [
+        "~($subject_of_the_record = $actor)",
+        "~($subject_of_the_record = $review)",
+        "~($subject_of_the_record = $reader)",
+        "~($subject_of_the_record = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "defect",
+      "kind": "IndependentLifeCourseRecordDefect",
+      "fields": [
+        [
+          "$target",
+          "LifeCourseAffectedRecordScope"
+        ],
+        [
+          "$defect",
+          "LifeCourseDefectKindScope"
+        ],
+        [
+          "PositiveIndependentEvidenceOfTheExactDefectNotAbsenceOrAllegation",
+          "LifeCourseDefectEvidenceScope"
+        ],
+        [
+          "NoOriginalWriterAcknowledgementRequiredForTheFindingOrUrgentCare",
+          "LifeCourseNoWriterVetoScope"
+        ],
+        [
+          "OnlyTheExactAffectedRelianceWithdrawnNoGuiltOrRepairedOutcomeInferred",
+          "LifeCourseWithdrawalPolarityScope"
+        ],
+        [
+          "NoLostStandingFloorBallotLibertyOrCareFromTheRecordFailure",
+          "LifeCourseRightsWallScope"
+        ],
+        [
+          "NoAdverseFactAboutTheSubjectAndNoAutomaticIndividualRemedy",
+          "LifeCourseDefectLimitScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, LifeCourseRecordAuthorization)",
+        "err($record, ReviewedLifeCourseRecordDefect)",
+        "obliged($reader, ReadTheExactLifeCourseDefectAndStopTheAffectedReliance, $record)",
+        "obliged($alternate, PreserveUrgentCareAndTheChallengeRouteDuringTheRecordFailure, $record)",
+        "obliged($actor, PublishTheLifeCourseRecordCorrection, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, LifeCourseSourceAuthority, $target)",
+        "observe($target_source, $target, $decision, LifeCourseDecisionScope)",
+        "observe($target_source, $target, $domain, LifeCourseDomainScope)",
+        "observe($target_source, $target, $actor, LifeCourseActorScope)",
+        "observe($target_source, $target, $version, LifeCourseSourceVersionScope)",
+        "observe($target_source, $target, $period, LifeCourseEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, LifeCourseJurisdictionScope)",
+        "observe($target_source, $target, $scope, LifeCourseLegalScope)",
+        "observe($target_source, $target, $end, LifeCourseSourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "nonresponse",
+      "kind": "IndependentlyEvidencedLifeCourseNonresponse",
+      "fields": [
+        [
+          "$target",
+          "LifeCourseAffectedRequestScope"
+        ],
+        [
+          "$requester",
+          "LifeCourseRequestInitiatorScope"
+        ],
+        [
+          "$request",
+          "LifeCourseActualRequestScope"
+        ],
+        [
+          "PositiveIndependentFindingThatTheDeadlinePassedWithoutTheRequiredAction",
+          "LifeCourseNonresponseFindingScope"
+        ],
+        [
+          "NoSilenceApprovalNoNewAuthorityAndNoCareSuspension",
+          "LifeCourseNonresponseLimitScope"
+        ],
+        [
+          "PredeclaredUninvolvedAlternateActionAndCourtEscalation",
+          "LifeCourseAlternateRouteScope"
+        ],
+        [
+          "$deadline",
+          "LifeCourseSourceBoundDeadlineScope"
+        ],
+        [
+          "AuthenticatedNoticeAndRealOpportunityToAct",
+          "LifeCourseNoticeOpportunityScope"
+        ]
+      ],
+      "heads": [
+        "obliged($alternate, ActOnTheUnansweredLifeCourseRequestAndEscalateToTheCourt, $target)"
+      ],
+      "extra": [
+        "~($requester = $reader)",
+        "~($requester = $alternate)",
+        "~($requester = $actor)",
+        "~($source = $reader)",
+        "~($evidence = $reader)",
+        "~($review = $reader)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    }
+  ]
+}

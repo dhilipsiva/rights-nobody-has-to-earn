@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? contradict(LifeCourseCaseTarget, LifeCourseRecordAuthorization).
+# => FALSE
+? err(LifeCourseCaseRecord, ReviewedLifeCourseRecordDefect).
+# => FALSE
+? obliged(LifeCourseCaseReader, ReadTheExactLifeCourseDefectAndStopTheAffectedReliance, LifeCourseCaseRecord).
+# => FALSE
+? obliged(LifeCourseCaseReader, PreserveUrgentCareAndTheChallengeRouteDuringTheRecordFailure, LifeCourseCaseRecord).
+# => FALSE
+? obliged(LifeCourseCaseActor, PublishTheLifeCourseRecordCorrection, LifeCourseCaseTarget).
+# => FALSE
+? complete(LifeCourseCaseRecord, IndependentLifeCourseRecordDefect, LifeCourseCaseDecision).
+# => FALSE

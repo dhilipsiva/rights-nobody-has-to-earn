@@ -238,25 +238,43 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
          understand it. No reader has been asked anything; R6 is unbuilt, and\n\
          nothing here is reader evidence.\n\n\
          ## Where a domain is thin\n\n\
-         These have ordinary operation or strain, and not the other.\n\n\
-         | Domain | Ordinary | Strain | Boundary | Missing |\n| --- | ---: | ---: | ---: | --- |\n",
+         These have ordinary operation or strain, and not the other.\n\n",
     );
     let rows = coverage(context, records)?;
-    let mut thin = 0;
-    for (domain, (works, trouble, bound)) in &rows {
-        let missing = match (works, trouble, bound) {
-            (0, _, _) => "ordinary operation",
-            (_, 0, 0) => "a failure, abuse or boundary",
-            _ => continue,
-        };
-        thin += 1;
-        let _ = writeln!(
-            out,
-            "| {domain} | {works} | {trouble} | {bound} | {missing} |"
+    let thin: Vec<_> = rows
+        .iter()
+        .filter_map(|(domain, (works, trouble, bound))| {
+            match (works, trouble, bound) {
+                (0, _, _) => Some((domain, works, trouble, bound, "ordinary operation")),
+                (_, 0, 0) => Some((
+                    domain,
+                    works,
+                    trouble,
+                    bound,
+                    "a failure, abuse or boundary",
+                )),
+                _ => None,
+            }
+        })
+        .collect();
+    if thin.is_empty() {
+        out.push_str(
+            "None. Every domain the ledger classifies shows ordinary operation\n\
+             and at least one of a failure, an abuse or a stated boundary. A\n\
+             domain shown only under strain is a constitutional gap rather than\n\
+             an editorial one, so it leaves this table when the interface lands,\n\
+             never when a passage is written about it.\n",
         );
-    }
-    if thin == 0 {
-        out.push_str("| — | | | | none |\n");
+    } else {
+        out.push_str(
+            "| Domain | Ordinary | Strain | Boundary | Missing |\n| --- | ---: | ---: | ---: | --- |\n",
+        );
+        for (domain, works, trouble, bound, missing) in thin {
+            let _ = writeln!(
+                out,
+                "| {domain} | {works} | {trouble} | {bound} | {missing} |"
+            );
+        }
     }
     out.push_str(
         "\n## Shown working, bounded, but never failing\n\n\

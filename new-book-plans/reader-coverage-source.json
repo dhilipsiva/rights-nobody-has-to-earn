@@ -1027,6 +1027,23 @@
     {
       "id": "09-13",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
+      "section": "What holding a role in somebody's life actually is",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "a scoped family role, support and care continuity",
+      "trajectory": "works",
+      "basis": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "cares",
+        "chooses",
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "09-14",
+      "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "The part that is weaker than it looks",
       "domain": "Democracy and amendment",
       "family": "ARTICLES",
@@ -1040,7 +1057,7 @@
       ]
     },
     {
-      "id": "09-14",
+      "id": "09-15",
       "chapter": "book-1/09-the-vote-conviction-does-not-take.md",
       "section": "And the same silence as before",
       "domain": "Democracy and amendment",

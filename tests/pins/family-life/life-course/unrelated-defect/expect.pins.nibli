@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+
+? obliged(LifeCourseSequenceActor, HearTheAffectedPersonAndRecordTheirOwnAccount, LifeCourseSequenceRecord).
+# => TRUE
+? permits(LifeCourseSequenceParticipant, ParticipateInTheAffectedLifeCourseDecision, LifeCourseSequenceRecord).
+# => TRUE
+? complete(LifeCourseSequenceRecord, ReviewedParticipationOfTheAffectedPerson, LifeCourseSequenceDecision).
+# => TRUE
+? contradict(DifferentLifeCourseRecord, LifeCourseRecordAuthorization).
+# => TRUE
+? err(LifeCourseRoleDefectRecord, ReviewedLifeCourseRecordDefect).
+# => TRUE
+? obliged(LifeCourseRoleDefectReader, ReadTheExactLifeCourseDefectAndStopTheAffectedReliance, LifeCourseRoleDefectRecord).
+# => TRUE
+? obliged(LifeCourseRoleDefectAlternate, PreserveUrgentCareAndTheChallengeRouteDuringTheRecordFailure, LifeCourseRoleDefectRecord).
+# => TRUE
+? obliged(LifeCourseSequenceActor, PublishTheLifeCourseRecordCorrection, DifferentLifeCourseRecord).
+# => TRUE
+? complete(LifeCourseRoleDefectRecord, IndependentLifeCourseRecordDefect, LifeCourseSequenceDecision).
+# => TRUE

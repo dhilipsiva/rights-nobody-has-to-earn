@@ -682,6 +682,47 @@ decide best interests, capacity, consent, pregnancy, parentage, death,
 collective identity, membership, or title. Controlling record:
 `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
 
+**Ordinary-half implementation, 2026-09-16.** The baseline landed 106
+person-held barriers and no interface underneath them, so the domain could only
+ever appear under strain. `new-book-plans/book-1-family-life-ordinary-contract.md`
+owns the ordinary half: scoped separable roles (parentage, caregiving,
+household, material support, property/succession, decision agent) as
+challengeable fiduciary powers over a named decision; the affected person's
+participation with no minimum speaking age and no global capability score;
+chosen, changeable, refusable support that may not substitute a decision while
+support can still be given; the bounded best-interpretation route gated on
+positive evidence that support was provided first; immediate non-delegable care
+continuity; reproductive and bodily care without third-party authorization; the
+fixed treatment order (current choice, directive, chosen representative, then
+the bounded route); own origin-record access and correction; and the family's
+defect and nonresponse routes. `family-life-source.json` and
+`./generate.sh family-life` produce the rules and cases.
+
+**It is a separate block beside the barriers, and the reason is a near-miss
+worth keeping.** The generator was first given the barriers' own
+`FAMILY-LIFE-COURSE` markers, and generating **silently replaced all 106 of
+them**. The suite stayed green — the constitution loaded, the new family's cases
+passed — and the deletion surfaced only because the spine's predicate count fell
+from 95 to 92, `home`, `married` and `sibling` having lost their last reader.
+The ordinary half now writes `FAMILY-LIFE-ORDINARY`. **A generated family whose
+block name collides with an existing block deletes that block's contents, and
+the same hazard exists for a family name colliding with an existing
+`tests/pins/<dir>`.**
+
+The family introduces no new relation name: predicates stay at 95, derived at
+51, strata at 9, the floor at its eight rights, and only the rule count moves.
+Nothing concludes about a person, `mature` is not read and no age is supplied;
+Article 4's legacy absence-based `parent`, `married` and `sibling` checks are
+untouched and still await their replacement. The exact reader section "What
+holding a role in somebody's life actually is" is inserted in Book 1 chapter 9,
+`session-drafted, author-approved under delegated approval (2026-09-13)`;
+`new-book-plans/family-life-ordinary-reader-draft.md` retains the wording.
+Nothing here proves a child was heard, a supporter arrived, care continued or a
+correction was published. With the family in place the complete inventory passed
+on 2026-09-16: all 84,289 pins across 15,479 cases with complete contradiction
+checks and no findings, in 836.96 seconds; the nine known-defect pins still
+reproduce, and the under-five-minute target is still not met.
+
 **Mobility/plurality implementation and reader projection, 2026-09-13.**
 `new-book-plans/book-1-mobility-and-plurality-contract.md` defines the separate
 mobility/access, membership, Indigenous/minority capacity, title, internal-law,
@@ -1983,9 +2024,11 @@ inferred from it.
 thin.** The first reading said `creates` and `cares` were empty and was wrong
 twice over: one posture per section, and the chapter preambles unclassified —
 which is exactly where chapter 10 does its care work. The ledger now covers all
-108 passages, preambles included, and a passage may hold several postures.
-Every posture is occupied; `cares` is carried by one passage and `creates` by
-two, against 53 for `is acted upon`. The empty set and the thin set are both
+109 passages, preambles included, and a passage may hold several postures.
+Every posture is occupied; `cares` and `creates` are carried by two passages
+each, against 53 for `is acted upon`. `cares` gained its second when the
+life-course baseline's ordinary half landed, which is the pattern to expect: a
+thin posture is usually a missing interface rather than a missing paragraph. The empty set and the thin set are both
 asserted by membership.
 Separately, the delivery routes are now exercised rather than only described:
 `tests/pins/delivery/received-outside-custody` derives all five recipient-side
@@ -2005,13 +2048,17 @@ not the chapter's. **Whether a passage follows its pattern's own arc — seeks,
 responds, receipt, challenge, continuity, boundary — is prose review and is not
 checked.**
 
-**The one real gap is constitutional, not editorial.** Life course, family, care
-and reproduction appears only under strain because that baseline landed 106
-person-held barriers and no ordinary-operation interface — there is nothing
-derivable for a passage to show working, and writing one would fictionalise
-coverage. The ordinary half has to be implemented before the passage exists, not
-after. The portfolio-rebalance and chapter-pattern items consume this table; the
-ledger closes nothing and does not claim to.
+**The one real gap was constitutional rather than editorial, and it closed the
+right way round.** Life course, family, care and reproduction appeared only under
+strain because that baseline landed 106 person-held barriers and no
+ordinary-operation interface — nothing derivable for a passage to show working,
+and writing one would have fictionalised the coverage. The interface landed
+first (`FAMILY-LIFE-ORDINARY`, 2026-09-16) and the passage followed it. **Keep
+that ordering when the ledger next shows a domain only under strain**: the empty
+expectation in `reader_coverage_tests` exists so the next such arrival fails the
+check rather than being written around. The portfolio-rebalance and
+chapter-pattern items consume this table; the ledger closes nothing and does not
+claim to.
 
 It is a map of what a reader meets, never of what a reader understood. No reader
 has been asked anything, R6 remains unbuilt, and nothing in it is reader
@@ -2028,7 +2075,7 @@ cases that encode them and to what each finds. Four ways to weaken it fail and
 are sabotage-tested: a lens naming a path that does not exist, a lens finding
 nothing, a declared finding kind nobody raises, and a table with nothing open.
 
-**Thirty-one findings across the seven declared kinds, nine open**, printed
+**Thirty-one findings across the seven declared kinds, eight open**, printed
 first in the report. It is a repository audit over the source: it warrants no
 independent human review, no reader response, no external truth and no
 operation, and external submissions remain welcome optional evidence that no
