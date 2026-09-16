@@ -371,7 +371,7 @@ this program without reporting reader evidence or a reader-result pass. Machine
 accessibility work remains open; R6 remains optional and unbuilt, and FS-CLM-37
 remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
 
-- [ ] **Give five domains a passage where something goes wrong, and implement
+- [ ] **Give three domains a passage where something goes wrong, and implement
   the family baseline's ordinary half.**
   - **The ledger is built and its first reading was wrong.** Forcing one
     trajectory per section made eight domains look uncovered. Reading the
@@ -379,20 +379,20 @@ remains Unestablished/route-unbuilt. Gate C no longer depends on R6.
     establish, matched in 55 of the 86 — corrects that: seven of the eight meet
     the standard through a stated boundary, which is the weaker of the two
     accepted forms and is now counted separately.
-  - **Four are carried by a boundary alone** — borders and asylum, collective
-    and plurality rights, ecology, non-human animals. Each states what it does
-    not establish; none has a passage in which something goes wrong. The shape
-    the remaining four need is the one the three that have left the list use: a
-    reviewed finding established as defective, what stops following with it, and
-    what the collapse does not do to the person named in the record. Knowledge
-    and culture left when chapter 14 gained "When the finding itself turns out
-    to be wrong"; emergency and defence left together when chapter 9 gained
-    "When the emergency broke the rule it was under" — a declaration that
-    derogated or governed by decree, taking its requisition and, with it, the
-    duty to account for the requisitioned property — and "When a public power
-    was handed to a private force", where a defence structure that delegated
-    public coercion takes the authorisation for force abroad with it. The set is
-    asserted by membership so it cannot grow unnoticed.
+  - **Two are carried by a boundary alone** — ecology, non-human animals. Each
+    states what it does not establish; neither has a passage in which something
+    goes wrong. Five domains have left that list, and the passages take the
+    shapes their own families support. A reviewed finding established as
+    defective, with what stops following it: knowledge and culture in chapter
+    14, emergency and defence in chapter 9 (a declaration that derogated or
+    governed by decree takes its requisition and, with it, the duty to account
+    for the property; a defence structure that delegated public coercion takes
+    the authorisation for force abroad), and collective consent in chapter 9,
+    where the defect withdraws the consent and the effect built on it while an
+    unaffected record of the same kind stands. And a record that carries two
+    values where one is allowed: chapter 8's asylum determination, which stops
+    completing because nothing chooses between two authorised writers. The set
+    is asserted by membership so it cannot grow unnoticed.
   - **One is a constitutional gap, not a prose gap.** Life course, family, care
     and reproduction appears only under strain because the baseline landed 106
     person-held barriers and no ordinary-operation interface. There is nothing

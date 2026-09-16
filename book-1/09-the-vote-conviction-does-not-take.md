@@ -365,6 +365,35 @@ to respond places a duty on an independent alternate. None of these findings
 decides collective identity for itself, authenticates consent, advances a
 clock or proves that an institution acted.
 
+## When the consent turns out not to have been consent
+
+The consent above is a record, and records can be wrong. This is what happens
+when one is.
+
+A collective consent record completes: the same people, the same land, the same
+proposed act, the same version, the same harm, with lawful representatives, an
+independent review and a challenge route. On it a consented-effect record
+completes — the effect that consent was given for, rejoining the exact consent
+it rests on.
+
+Then an independent review establishes a defect in the consent record. The
+record is contradicted where it mattered: the permission the effect ran on no
+longer holds. A duty to preserve, correct and remedy the record lands on its
+reader, and a duty to audit the related cases and non-repetition lands on the
+auditor. The consent stops completing and the effect built on it stops with it.
+
+Two things about that collapse are worth saying plainly.
+
+It does not spread. Another collective's record of the same kind, untouched by
+the finding, completes exactly as it did before. A defect names the record it is
+about, and no rule reads one defective consent as evidence about consent in
+general or about the people who gave it.
+
+And it does not undo the effect. What the design produces is a record that no
+longer authorises, a correction owed and an audit owed. Whether the land was
+returned, the site left alone or the material moved is not something these rules
+can establish, and the duty to repair is not the repair.
+
 ## The home custody does not move
 
 Political home does work that personhood and adulthood do not. The

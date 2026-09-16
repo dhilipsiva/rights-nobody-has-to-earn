@@ -17,6 +17,17 @@
 # Field omission, conflict, independence and counterfactual cases in that
 # family test each permission boundary; none authenticates real consent.
 #
+# "When the consent turns out not to have been consent" rests on that
+# family's own withdrawal sequence:
+#   tests/pins/mobility/defect/downstream-withdrawal/expect.pins.nibli
+# The consent and the consented effect complete, an independently reviewed
+# defect completes against the consent, the effect permission is contradicted,
+# duties to preserve/correct/remedy and to audit related cases land on the
+# reader and the auditor, both records derive FALSE, and an unaffected record
+# of the same kind stays TRUE. Measured with that fixture on 2026-09-16:
+# `false`, `prisoner` and `lose` derive for the subject at no point. No
+# correction, restitution or repair is established.
+#
 # "Keeping public decisions answerable" uses these isolated executable cases:
 # Affected act, not permanent answerability, personal status or ballot:
 #   tests/pins/integrity/money-finding/act-not-person-sequence/expect.pins.nibli

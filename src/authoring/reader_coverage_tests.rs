@@ -13,9 +13,7 @@ const NO_ORDINARY_SHOWN: [&str; 1] = ["Life course, family, care and reproductio
 /// Domains that meet the standard through a stated boundary rather than through
 /// a passage in which something goes wrong. That is the weaker of the two
 /// accepted forms, and where the portfolio rebalance has most to do.
-const BOUNDED_BUT_NEVER_FAILING: [&str; 4] = [
-    "Borders, migration, asylum and expulsion",
-    "Collective and plurality rights",
+const BOUNDED_BUT_NEVER_FAILING: [&str; 2] = [
     "Ecology, future generations and commons",
     "Non-human animals",
 ];

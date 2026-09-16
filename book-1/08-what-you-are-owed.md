@@ -87,6 +87,37 @@ finding is not an order to detain, expel or move anyone. The checks establish
 no operating border, truthful foreign assurance, cooperation by another
 state, or completed remedy.
 
+## When the record cannot say what it says
+
+A determination of asylum is not an announcement somebody makes. It is a record
+that has to hold together: whose case it is, which version of the constitution
+it runs under, the window it is current in, the evidence, the independent
+review, the challenge route and the alternate behind that reviewer. When the
+fields agree, the determination is a completed finding and the body running it
+owes a fair determination.
+
+Now an authorised writer records a different constitutional version for the same
+determination, in a field that holds one value. The record says two things.
+Nothing here chooses between them — not the later entry, not the more senior
+writer, not the more plausible value — and the determination stops being
+complete.
+
+That is a design refusing to pick a winner, and the cost has a direction, which
+is why it belongs in this chapter rather than in a footnote. The person waiting
+for a determination waits longer. The ambiguity was created by the writers and
+is paid for by the claimant, and no rule here moves that cost back.
+
+What the design does instead is leave the record visibly unusable, so that
+correcting it is the only way forward and nobody can act on an entry that
+disagrees with itself. The alternative — a rule that silently prefers one
+writer — would make the record decidable at the price of making it forgeable by
+whoever writes last or ranks highest.
+
+Nothing in that collapse is a finding against the person. The claim is not
+weaker, the floor is not touched, the enforcement firewall still holds, and the
+family concludes about records rather than about people. What stops is a
+determination that could not be read.
+
 ## A way to be heard
 
 A right needs a way to be heard when somebody denies it. Civil,
