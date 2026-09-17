@@ -74,7 +74,7 @@
     },
     {
       "id": "floor-delivery-markers",
-      "chapter": "book-1/04-what-you-are-owed.md",
+      "chapter": "book-1/05-whether-it-arrived.md",
       "section": "Owed is not the same as delivered",
       "what_failed": "Nothing watches the floor debt against arrival: the design audits what it does and not what it owes.",
       "what_changed": "Nothing. A marker was measured and refused while the record holds no arrival facts, because one that fires on everybody discriminates nobody.",

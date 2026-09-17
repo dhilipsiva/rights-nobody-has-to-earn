@@ -163,7 +163,7 @@ gives disclosure no credit for closure.
 
 ### floor-delivery-markers — open-defect
 
-*Told in* `04-what-you-are-owed.md`, "Owed is not the same as delivered".
+*Told in* `05-whether-it-arrived.md`, "Owed is not the same as delivered".
 
 **What failed.** Nothing watches the floor debt against arrival: the design audits what it does and not what it owes.
 

@@ -288,21 +288,6 @@
     {
       "id": "04-04",
       "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "Owed is not the same as delivered",
-      "domain": "Material floor",
-      "family": "DELIVERY-RECEIPT",
-      "function": "ordinary",
-      "setting": "whether food reached anybody",
-      "trajectory": "fails",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "04-05",
-      "chapter": "book-1/04-what-you-are-owed.md",
       "section": "When there is genuinely not enough",
       "domain": "Material floor",
       "family": "SCARCITY-AND-CONFLICT",
@@ -316,7 +301,7 @@
       ]
     },
     {
-      "id": "04-06",
+      "id": "04-05",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Where the protection stops",
       "domain": "Material floor",
@@ -331,7 +316,7 @@
       ]
     },
     {
-      "id": "04-07",
+      "id": "04-06",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Owed by whom",
       "domain": "Material floor",
@@ -340,6 +325,81 @@
       "setting": "the duty-bearer",
       "trajectory": "works",
       "basis": "book-1/04-what-you-are-owed.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "05-00",
+      "chapter": "book-1/05-whether-it-arrived.md",
+      "section": "(preamble)",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "ordinary",
+      "setting": "the debt, and the next thing the debt does not contain",
+      "trajectory": "works",
+      "basis": "book-1/05-whether-it-arrived.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "05-01",
+      "chapter": "book-1/05-whether-it-arrived.md",
+      "section": "Owed is not the same as delivered",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "ordinary",
+      "setting": "whether food reached anybody",
+      "trajectory": "fails",
+      "basis": "book-1/05-whether-it-arrived.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "05-02",
+      "chapter": "book-1/05-whether-it-arrived.md",
+      "section": "What that does not fix",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "ordinary",
+      "setting": "shelter that arrives only through conviction",
+      "trajectory": "fails",
+      "basis": "book-1/05-whether-it-arrived.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "05-03",
+      "chapter": "book-1/05-whether-it-arrived.md",
+      "section": "The child with nobody",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/05-whether-it-arrived.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "05-04",
+      "chapter": "book-1/05-whether-it-arrived.md",
+      "section": "What none of this proves",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "protective",
+      "setting": "the boundary of a record that proves no arrival",
+      "trajectory": "unresolved",
+      "basis": "book-1/05-whether-it-arrived.pins.nibli",
       "pattern": "constructive",
       "postures": [
         "receives"
@@ -1991,21 +2051,6 @@
       "pattern": "constructive",
       "postures": [
         "is acted upon"
-      ]
-    },
-    {
-      "id": "28-06",
-      "chapter": "book-1/28-where-people-are-put.md",
-      "section": "What that does not fix",
-      "domain": "Material floor",
-      "family": "DELIVERY-RECEIPT",
-      "function": "ordinary",
-      "setting": "shelter that arrives only through conviction",
-      "trajectory": "fails",
-      "basis": "book-1/28-where-people-are-put.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
       ]
     },
     {

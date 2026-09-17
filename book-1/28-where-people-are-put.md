@@ -264,23 +264,3 @@ confined row in the reviewed matrix derives shelter, while no non-confined mirro
 The result closes the placement table without pretending that the unconditional
 housing debt was delivered.
 
-## What that does not fix
-
-Read the last sentence of that section again, because it is not the good news it sounds
-like.
-
-Shelter arrives for Kel and Adam **because they were convicted**. It did not arrive
-when they were owed it, which was always. The thing that finally produced a roof over
-Kel and Adam was a criminal conviction, and if either sentence ends, the roof
-goes with it.
-
-That is not a repair anybody should be pleased with. The hole in the placement rules is
-closed and the reason the hole existed is not: this society still has no machinery that
-notices somebody is owed a home and does not have one. It has machinery that notices
-somebody is being confined and has nowhere to be confined, which is a much smaller
-question that happens to have the same answer.
-
-The alarm works now, and what it watches is this design's own conduct. The hole beside
-it in the floor has been filled, from the wrong side. What the people in this chapter
-were owed — before the conviction, before any placement, before this machinery had a
-reason to look at them at all — still has nothing watching it.

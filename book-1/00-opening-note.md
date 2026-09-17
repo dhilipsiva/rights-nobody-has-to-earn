@@ -268,6 +268,11 @@ below.
 - [Chapter 4: What You Are Owed](04-what-you-are-owed.md) — states the floor,
   then keeps entitlement, delivery, and knowledge of delivery apart.
 
+- [Chapter 5: Whether It Arrived](05-whether-it-arrived.md) — keeps entitlement,
+  arrival, and operation apart: what evidence the design accepts before it
+  concludes that something reached a person, why an absence is not a failure,
+  and what a housing repair did not fix.
+
 ### Part II — The life the design leaves alone
 
 - [Chapter 8: What Nobody Has to Ask Permission For](08-what-nobody-has-to-ask-permission-for.md)
@@ -635,6 +640,7 @@ the domain.
   domain does not yet have complete derived coverage.
 
 - **Food, housing, land, utilities, infrastructure, and public space:** Chapters
+  [5](05-whether-it-arrived.md),
   [4](04-what-you-are-owed.md), [28](28-where-people-are-put.md), and
   [29](29-the-one-thing-taken.md). The entitlement and confinement cases are
   present; ordinary delivery remains the central gap.

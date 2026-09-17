@@ -156,7 +156,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 02 | Who Counts | — | derived | engine | planned |
 | 03 | What Counts as Evidence | `03-what-counts-as-evidence.md` | derived | engine | landed |
 | 04 | What You Are Owed | `04-what-you-are-owed.md` | derived | engine | landed |
-| 05 | Whether It Arrived | — | derived | engine | planned |
+| 05 | Whether It Arrived | `05-whether-it-arrived.md` | derived | engine | landed |
 | 06 | When There Is Genuinely Not Enough | — | derived | engine | planned |
 | 07 | Who Owes, and What Follows | — | derived | engine | planned |
 | **Part II — The life the design leaves alone** | | | | | |
