@@ -4,7 +4,7 @@
 
 The author approved this exact section on 2026-09-12. Its supply is
 `session-drafted, author-approved`. It is inserted unchanged in
-`book-1/02-what-counts-as-evidence.md`, before "Facts and conclusions are kept
+`book-1/03-what-counts-as-evidence.md`, before "Facts and conclusions are kept
 apart". The section below preserves the approved wording.
 
 ## Counting without ranking people

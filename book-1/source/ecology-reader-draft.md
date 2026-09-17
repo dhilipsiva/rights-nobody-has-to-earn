@@ -240,10 +240,10 @@ and appeal safeguards, without turning an animal into an offender.
   Animal Protection Advocate remain separate from each other and from courts,
   science and operators. Guardian stays, independent review, shared replay
   limits and exact ends do not amount to a policy veto or an operating office.
-  Chapters [9](09-what-you-are-owed.md),
-  [10](10-the-vote-conviction-does-not-take.md),
-  [13](13-changing-the-rules.md) and
-  [15](15-when-the-system-notices-it-broke.md) keep those limits visible.
+  Chapters [4](04-what-you-are-owed.md),
+  [18](18-the-vote-conviction-does-not-take.md),
+  [22](22-changing-the-rules.md) and
+  [30](30-when-the-system-notices-it-broke.md) keep those limits visible.
 
 ## Part V — revised commons paragraph and animal continuation
 

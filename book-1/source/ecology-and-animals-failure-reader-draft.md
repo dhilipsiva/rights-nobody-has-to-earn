@@ -3,7 +3,7 @@
 # When an ecological record is defective, and when an animal use has to be stopped — the exact Book 1 additions
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The two
-sections below are inserted unchanged in `book-1/09-what-you-are-owed.md`: the
+sections below are inserted unchanged in `book-1/04-what-you-are-owed.md`: the
 first between "A place in which life remains possible" and "Protection does not
 require being human", the second between "Protection does not require being
 human" and "What nobody has to ask permission for". Their supporting cases are

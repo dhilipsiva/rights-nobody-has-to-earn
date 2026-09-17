@@ -68,7 +68,7 @@ const KNOWN_MISSING: [&str; 32] = [
 /// Files whose reviewed needles no longer occur in them, with how many such
 /// needles each carries, measured 2026-09-16.
 const KNOWN_UNMATCHED: [(&str, usize); 5] = [
-    ("book-1/08-a-prisoner-is-a-person.md", 1),
+    ("book-1/27-a-prisoner-is-a-person.md", 1),
     ("book-1/method.md", 5),
     ("book-1/source/constitution.nibli", 2),
     ("book-1/source/counterfactual/README.md", 1),
@@ -360,6 +360,36 @@ fn opening_note_navigation_matches_the_manifest() {
             part.title
         );
     }
+}
+
+/// The ruled order, once the tree follows it: every break comes after every
+/// engine, and the exempt chapter comes last. Added with the reorder of
+/// 2026-09-17, when the manifest first carried the rule.
+#[test]
+fn derived_chapters_run_engines_before_breaks() {
+    let context = Context::discover().expect("repository");
+    let contents = Contents::load(&context).expect("manifest");
+    assert!(
+        contents.rule.is_some(),
+        "the manifest carries no ordering rule; the reorder is ruled and the rule is recorded there"
+    );
+    let mut seen_break = false;
+    let mut seen_exempt = false;
+    for chapter in contents.chapters() {
+        match (chapter.role, chapter.group) {
+            (Role::Derived, Some(super::contents::Group::Engine)) => {
+                assert!(!seen_break, "chapter {} is an engine after a break", chapter.number);
+                assert!(!seen_exempt, "chapter {} follows the exempt chapter", chapter.number);
+            }
+            (Role::Derived, Some(super::contents::Group::Break)) => {
+                assert!(!seen_exempt, "chapter {} follows the exempt chapter", chapter.number);
+                seen_break = true;
+            }
+            (Role::Exempt, _) => seen_exempt = true,
+            (Role::Derived, None) => unreachable!("validated at load"),
+        }
+    }
+    assert!(seen_break && seen_exempt, "the manifest has no breaks or no exempt chapter");
 }
 
 #[test]

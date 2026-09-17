@@ -246,7 +246,7 @@ a named defect and belongs to its own small batch.
    precedent: the family narrows what an existing, already-projected family
    will accept, and its reader-facing sentence belongs with the disclosure
    family (ruling B), which is what a reader would see. A paragraph for
-   `book-1/04-who-holds-the-pen.md` is drafted below for approval; if
+   `book-1/23-who-holds-the-pen.md` is drafted below for approval; if
    approved it lands in the disclosure batch with its prose reference.
 7. **FS-CVF-003's statement digests are left as found**, with the gap named
    in section 10, rather than regenerated under a formula the checker does

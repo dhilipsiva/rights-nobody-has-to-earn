@@ -82,8 +82,13 @@ exists as an actual set of rules, and the rules were checked — by a machine th
 does not care what I hoped they would do, only what they do. When a rule
 contradicted the design's own promises, the machine refused it, and some of
 those refusals changed my mind about what I was building. The order of the
-chapters is not mine either: each chapter rests only on what came before it,
-because that is the order the rules themselves stand in. If you want to see this
+chapters is mine, and it is stated rather than left to be inferred: the book
+runs in the order a person meets the design — who counts and what may be
+written about them, then what is owed and how it is meant to arrive, then the
+life the design leaves alone, then the public power that serves it, and only at
+the end what the design does to a person and what it does when it catches
+itself failing. The rules stand in a different order, the order they read one
+another in, and the last part of the book shows that one. If you want to see this
 machinery, the last part of the book shows all of it. If you never want to see
 it, you will never need to — every chapter in between is written to be read, not
 decoded.
@@ -248,82 +253,82 @@ below.
 - **Opening note and Reader's Map** — the author's reading contract, followed by
   this navigation layer.
 
-### Part I — What the world is allowed to say
+### Part I — Who counts, and what they are owed
 
 - [Chapter 1: The Child With Nobody](01-the-child-with-nobody.md) — runs the
   whole design against a record that holds nothing about a person except a
   birth: everything owed, nobody presumed to provide, nothing shown to arrive,
   and the one line whose removal is silent.
 
-- [Chapter 2: What Counts as Evidence](02-what-counts-as-evidence.md) — closes
+- [Chapter 3: What Counts as Evidence](03-what-counts-as-evidence.md) — closes
   the record's vocabulary, separates supplied entries from conclusions, and
   shows how birth or encounter can start standing without making a temporary
   handle into civil identity.
 
-- [Chapter 3: Public Answerability, and Why It Is Never Revoked](03-public-answerability.md) —
+- [Chapter 4: What You Are Owed](04-what-you-are-owed.md) — states the floor,
+  then keeps entitlement, delivery, and knowledge of delivery apart.
+
+### Part II — The life the design leaves alone
+
+- [Chapter 10: Contribution](10-contribution.md) — recognises teaching, work,
+  and honest examination without turning recognition into a number, price, or
+  claim on the floor.
+
+### Part III — The public power that serves it
+
+- [Chapter 16: Public Answerability, and Why It Is Never Revoked](16-public-answerability.md) —
   separates permanent public answerability from current office and current
   lawful power, keeps the older public-body and seating routes visible, and
   explains why removing an official must not erase protection for the person
   who exposed them.
 
-### Part II — Accountability
-
-- [Chapter 4: Who Holds the Pen](04-who-holds-the-pen.md) — asks whose findings
-  count, how two older credentials are produced, how those pens differ from
-  source-bound public authority, and where forged or stale authority can enter.
-
-- [Chapter 5: The Shield](05-the-shield.md) — tests protection for exposing
-  authority against false, premature, and repeated claims.
-
-- [Chapter 6: Voiding](06-voiding.md) — follows the two-body route that can
-  destroy credibility and names what its record does and does not preserve.
-
-- [Chapter 7: Clawback](07-clawback.md) — follows voiding into its downstream
-  consequence: voiding destroys credibility, while clawback removes recognition
-  and preserves the floor. It records a harmful rule removed rather than repaired
-  by another condition.
-
-### Part III — Status and consequence
-
-- [Chapter 8: A Prisoner Is a Person](08-a-prisoner-is-a-person.md) — keeps the
-  custody route as an independent backstop, then shows that the same floor also
-  begins at birth, presence, effective control, or first contact.
-
-- [Chapter 9: What You Are Owed](09-what-you-are-owed.md) — states the floor,
-  then keeps entitlement, delivery, and knowledge of delivery apart.
-
-- [Chapter 10: The Vote Conviction Does Not Take](10-the-vote-conviction-does-not-take.md)
+- [Chapter 18: The Vote Conviction Does Not Take](18-the-vote-conviction-does-not-take.md)
   — shows why conviction and custody remove neither franchise nor candidacy,
   separates automatic legal adulthood from its evidence, adds residence-first
   political home and atomic transfer, and keeps the supplied-record result
   distinct from a delivered ballot or operated election.
 
-- [Chapter 11: Contribution](11-contribution.md) — recognises teaching, work,
-  and honest examination without turning recognition into a number, price, or
-  claim on the floor.
-
-- [Chapter 12: Where People Are Put](12-where-people-are-put.md) — derives
-  placement from recorded facts, repairs a misplacement alarm, and finds a
-  housing failure inside what first looked like a placement gap.
-
-- [Chapter 13: Changing the Rules](13-changing-the-rules.md) — keeps the older
+- [Chapter 22: Changing the Rules](22-changing-the-rules.md) — keeps the older
   declared-target law label separate from a source-bound constitutional result,
   then separates both from exact source identity, publication, deployment, and
   an actual transition from one constitutional version to another.
 
-### Part IV — The top of the graph
+- [Chapter 23: Who Holds the Pen](23-who-holds-the-pen.md) — asks whose findings
+  count, how two older credentials are produced, how those pens differ from
+  source-bound public authority, and where forged or stale authority can enter.
 
-- [Chapter 14](14-the-one-thing-taken.md) —
+### Part IV — What the design does to a person, and how it catches itself
+
+- [Chapter 24: The Shield](24-the-shield.md) — tests protection for exposing
+  authority against false, premature, and repeated claims.
+
+- [Chapter 25: Voiding](25-voiding.md) — follows the two-body route that can
+  destroy credibility and names what its record does and does not preserve.
+
+- [Chapter 26: Clawback](26-clawback.md) — follows voiding into its downstream
+  consequence: voiding destroys credibility, while clawback removes recognition
+  and preserves the floor. It records a harmful rule removed rather than repaired
+  by another condition.
+
+- [Chapter 27: A Prisoner Is a Person](27-a-prisoner-is-a-person.md) — keeps the
+  custody route as an independent backstop, then shows that the same floor also
+  begins at birth, presence, effective control, or first contact.
+
+- [Chapter 28: Where People Are Put](28-where-people-are-put.md) — derives
+  placement from recorded facts, repairs a misplacement alarm, and finds a
+  housing failure inside what first looked like a placement gap.
+
+- [Chapter 29](29-the-one-thing-taken.md) —
   tests the claim that conviction removes movement and nothing else, then states
   what current authority and actual release still require.
 
-- [Chapter 15: When the System Notices It Broke](15-when-the-system-notices-it-broke.md)
+- [Chapter 30: When the System Notices It Broke](30-when-the-system-notices-it-broke.md)
   — examines breach markers, the duties they produce, and the point where
   detection still fails to become action or repair.
 
 ### Part V — Outside the graph
 
-- [Chapter 16: The Five Joints](16-the-five-joints.md) — the author, no longer
+- [Chapter 31: The Five Joints](31-the-five-joints.md) — the author, no longer
   speaking through derived chapters, tests the design against valuation,
   rotation, coercion, capture, and the state. The verdicts are arguments, not
   machine results.
@@ -442,14 +447,14 @@ below.
   contact, presence within the jurisdiction, or effective control. None of
   those entries authenticates civil identity, and a missing registry match
   cannot postpone the floor. Begin with Chapters
-  [1](01-the-child-with-nobody.md), [2](02-what-counts-as-evidence.md), [8](08-a-prisoner-is-a-person.md),
-  [9](09-what-you-are-owed.md), and
-  [10](10-the-vote-conviction-does-not-take.md).
+  [1](01-the-child-with-nobody.md), [3](03-what-counts-as-evidence.md), [27](27-a-prisoner-is-a-person.md),
+  [4](04-what-you-are-owed.md), and
+  [18](18-the-vote-conviction-does-not-take.md).
 
 - **The electorate and the convocation:** separate seating sources for public
   answerability and the two credentials used by accountability. See Chapters
-  [3](03-public-answerability.md), [4](04-who-holds-the-pen.md),
-  [6](06-voiding.md), and [13](13-changing-the-rules.md).
+  [16](16-public-answerability.md), [23](23-who-holds-the-pen.md),
+  [25](25-voiding.md), and [22](22-changing-the-rules.md).
 
 - **The federal constitutional bodies:** the People's Assembly, Regions
   Council, Executive Council, Civic President, ordinary courts,
@@ -462,37 +467,37 @@ below.
 
 - **An examiner or auditor:** records findings, may earn recognition for honest
   examination, and may lose credibility for deceit or prohibited closeness. See
-  Chapters [4](04-who-holds-the-pen.md), [6](06-voiding.md), and
-  [11](11-contribution.md).
+  Chapters [23](23-who-holds-the-pen.md), [25](25-voiding.md), and
+  [10](10-contribution.md).
 
 - **The court:** supplies a judgment but not, by itself, a complete or current
-  authority to confine. See Chapters [3](03-public-answerability.md),
-  [5](05-the-shield.md), [8](08-a-prisoner-is-a-person.md), and
-  [14](14-the-one-thing-taken.md).
+  authority to confine. See Chapters [16](16-public-answerability.md),
+  [24](24-the-shield.md), [27](27-a-prisoner-is-a-person.md), and
+  [29](29-the-one-thing-taken.md).
 
 - **The review and appeals bodies:** examine conduct, receive challenges, and
   hold source-bound duties to read the findings routed to them and act within
   each named path. A separately established failure to respond can activate an
   alternate, continuity, and remedy conclusion. None of those conclusions proves
   that a filing arrived, a body acted, or a remedy was completed. See Chapters
-  [3](03-public-answerability.md), [6](06-voiding.md),
-  [10](10-the-vote-conviction-does-not-take.md), and
-  [15](15-when-the-system-notices-it-broke.md).
+  [16](16-public-answerability.md), [25](25-voiding.md),
+  [18](18-the-vote-conviction-does-not-take.md), and
+  [30](30-when-the-system-notices-it-broke.md).
 
 - **The older assembly and approving-public entries:** produce a proposal and
   recorded outcome for the older law-label route. They are not the People's
   Assembly or the certified-result machinery of the federal architecture, and
   neither entry proves that text was authenticated, enacted, published, or
-  applied. See Chapter [13](13-changing-the-rules.md).
+  applied. See Chapter [22](22-changing-the-rules.md).
 
 - **TimeService, Chronicle, TemporalReview, and the Electorate:** TimeService
   supplies review-window boundaries. Chronicle and TemporalReview supply the
   separately witnessed case, source, and ordering evidence the rules consume.
   The Electorate and TemporalReview supply the separate custody approvals. These
   entries remain inputs, not proof of their own honesty or continued operation.
-  See Chapters [2](02-what-counts-as-evidence.md),
-  [4](04-who-holds-the-pen.md), [8](08-a-prisoner-is-a-person.md), and
-  [14](14-the-one-thing-taken.md).
+  See Chapters [3](03-what-counts-as-evidence.md),
+  [23](23-who-holds-the-pen.md), [27](27-a-prisoner-is-a-person.md), and
+  [29](29-the-one-thing-taken.md).
 
 - **The State and the constitutional bodies:** the older `State` entry owes the
   floor and is answerable as a public body; it has not been silently renamed as
@@ -500,67 +505,67 @@ below.
   holders and limits of constitutional powers. The obligations rules separately
   assign public duties by lawful function, jurisdiction, scope, and current
   source. No route proves operation, action, or delivery. See Chapters
-  [3](03-public-answerability.md), [9](09-what-you-are-owed.md),
-  [13](13-changing-the-rules.md), [15](15-when-the-system-notices-it-broke.md),
-  and [16](16-the-five-joints.md#the-state).
+  [16](16-public-answerability.md), [4](04-what-you-are-owed.md),
+  [22](22-changing-the-rules.md), [30](30-when-the-system-notices-it-broke.md),
+  and [31](31-the-five-joints.md#the-state).
 
 ### Principal named cases
 
 - **Adam and Kel:** the no-home placement gap, shelter produced through
   confinement, and the cost when confinement ends. See Chapters
-  [12](12-where-people-are-put.md) and [14](14-the-one-thing-taken.md).
+  [28](28-where-people-are-put.md) and [29](29-the-one-thing-taken.md).
 
 - **Bela and Cira:** voiding, clawback, undelivered floor items, adulthood, and
-  contribution recur across Chapters [6](06-voiding.md),
-  [7](07-clawback.md), [9](09-what-you-are-owed.md),
-  [10](10-the-vote-conviction-does-not-take.md), and
-  [11](11-contribution.md).
+  contribution recur across Chapters [25](25-voiding.md),
+  [26](26-clawback.md), [4](04-what-you-are-owed.md),
+  [18](18-the-vote-conviction-does-not-take.md), and
+  [10](10-contribution.md).
 
 - **Nell and Ori:** the child with one entry and the child with none. Nell is
   owed everything and shown to receive nothing; Ori is unknown to the rules
   until a line is written. See Chapter [1](01-the-child-with-nobody.md).
 
 - **Boss and Rebel:** why recalled power and permanent answerability must remain
-  separate. See Chapter [3](03-public-answerability.md).
+  separate. See Chapter [16](16-public-answerability.md).
 
 - **Don, Pax, Sly, Kel, and Rex:** the shield's false-target, review-window,
-  deceit, and repeat-claim tests. See Chapter [5](05-the-shield.md).
+  deceit, and repeat-claim tests. See Chapter [24](24-the-shield.md).
 
 - **Esa:** a person whose teaching can count and whose missing typed
   adulthood evidence exposes the difference between legal status and the
-  executable ballot record. See Chapters [6](06-voiding.md),
-  [10](10-the-vote-conviction-does-not-take.md), and
-  [11](11-contribution.md).
+  executable ballot record. See Chapters [25](25-voiding.md),
+  [18](18-the-vote-conviction-does-not-take.md), and
+  [10](10-contribution.md).
 
 - **Hano:** custody, home placement, the retained vote, and movement as the
   claimed boundary of punishment. See Chapters
-  [10](10-the-vote-conviction-does-not-take.md),
-  [12](12-where-people-are-put.md), and
-  [14](14-the-one-thing-taken.md).
+  [18](18-the-vote-conviction-does-not-take.md),
+  [28](28-where-people-are-put.md), and
+  [29](29-the-one-thing-taken.md).
 
 - **Jala:** a person nearly voided through vocabulary meant for amendments, and
   later the free comparator to Hano. See Chapters
-  [13](13-changing-the-rules.md) and [14](14-the-one-thing-taken.md).
+  [22](22-changing-the-rules.md) and [29](29-the-one-thing-taken.md).
 
 - **Ruk, Lalo, and Nando:** the placement routes and the alarm that first watched
-  the wrong fact. See Chapters [12](12-where-people-are-put.md) and
-  [15](15-when-the-system-notices-it-broke.md).
+  the wrong fact. See Chapters [28](28-where-people-are-put.md) and
+  [30](30-when-the-system-notices-it-broke.md).
 
 - **Sock, Puppet, Koa, and Vex:** forged, absent, or stale authority and the
   difference between a recorded finding and a credential that counts. See
-  Chapters [4](04-who-holds-the-pen.md) and [6](06-voiding.md).
+  Chapters [23](23-who-holds-the-pen.md) and [25](25-voiding.md).
 
 - **Zed and Ivo:** an unlisted defendant whose conviction tests whether a
   prisoner remains a person. See Chapter
-  [8](08-a-prisoner-is-a-person.md).
+  [27](27-a-prisoner-is-a-person.md).
 
 - **Historical cases:** the documented examples are organised by failure joint,
   not by the fictional record names. Enter through
-  [Valuation](16-the-five-joints.md#valuation),
-  [Rotation](16-the-five-joints.md#rotation),
-  [Coercion](16-the-five-joints.md#coercion),
-  [Capture](16-the-five-joints.md#capture), or
-  [The State](16-the-five-joints.md#the-state).
+  [Valuation](31-the-five-joints.md#valuation),
+  [Rotation](31-the-five-joints.md#rotation),
+  [Coercion](31-the-five-joints.md#coercion),
+  [Capture](31-the-five-joints.md#capture), or
+  [The State](31-the-five-joints.md#the-state).
 
 ## Domains and chapters
 
@@ -569,9 +574,9 @@ also a gap map: a chapter touching one edge of a domain is not full coverage of
 the domain.
 
 - **Personhood and life course:** Chapters
-  [1](01-the-child-with-nobody.md), [2](02-what-counts-as-evidence.md), [3](03-public-answerability.md),
-  [8](08-a-prisoner-is-a-person.md), and
-  [10](10-the-vote-conviction-does-not-take.md). The constitutional source now
+  [1](01-the-child-with-nobody.md), [3](03-what-counts-as-evidence.md), [16](16-public-answerability.md),
+  [27](27-a-prisoner-is-a-person.md), and
+  [18](18-the-vote-conviction-does-not-take.md). The constitutional source now
   gives children independent standing and voice; makes general adulthood
   automatic under the later common-tier age while treating records as evidence
   only; confines earlier authority to a named decision; preserves adult status
@@ -581,10 +586,10 @@ the domain.
   proof of an age, a clock, a working registry, a proceeding, or delivery.
 
 - **Body, health, care, family, and intimacy:** Chapters
-  [1](01-the-child-with-nobody.md), [6](06-voiding.md), [7](07-clawback.md),
-  [9](09-what-you-are-owed.md), [11](11-contribution.md),
-  [12](12-where-people-are-put.md), and
-  [16](16-the-five-joints.md). The constitutional source now separates family,
+  [1](01-the-child-with-nobody.md), [25](25-voiding.md), [26](26-clawback.md),
+  [4](04-what-you-are-owed.md), [10](10-contribution.md),
+  [28](28-where-people-are-put.md), and
+  [31](31-the-five-joints.md). The constitutional source now separates family,
   parentage, caregiving, household, support, property, and decision-agent roles;
   protects consent, exit, child continuity, supported agency, bodily and
   reproductive authority, origin records, community living, treatment refusal,
@@ -595,22 +600,22 @@ the domain.
   completed remedy, feasibility, or liveness follows from those rules.
 
 - **Learning, knowledge, media, science, religion, and culture:** Chapters
-  [8](08-a-prisoner-is-a-person.md), [9](09-what-you-are-owed.md), and
-  [11](11-contribution.md). Learning has a narrow two-sided route; the wider
+  [27](27-a-prisoner-is-a-person.md), [4](04-what-you-are-owed.md), and
+  [10](10-contribution.md). Learning has a narrow two-sided route; the wider
   domain does not yet have complete derived coverage.
 
 - **Food, housing, land, utilities, infrastructure, and public space:** Chapters
-  [9](09-what-you-are-owed.md), [12](12-where-people-are-put.md), and
-  [14](14-the-one-thing-taken.md). The entitlement and confinement cases are
+  [4](04-what-you-are-owed.md), [28](28-where-people-are-put.md), and
+  [29](29-the-one-thing-taken.md). The entitlement and confinement cases are
   present; ordinary delivery remains the central gap.
 
 - **Work, property, enterprise, exchange, money, credit, debt, and public
-  finance:** Chapters [7](07-clawback.md), [9](09-what-you-are-owed.md),
-  [10](10-the-vote-conviction-does-not-take.md),
-  [11](11-contribution.md), [12](12-where-people-are-put.md),
-  [14](14-the-one-thing-taken.md),
-  [15](15-when-the-system-notices-it-broke.md), and
-  [16](16-the-five-joints.md). Recognition remains deliberately separate from
+  finance:** Chapters [26](26-clawback.md), [4](04-what-you-are-owed.md),
+  [18](18-the-vote-conviction-does-not-take.md),
+  [10](10-contribution.md), [28](28-where-people-are-put.md),
+  [29](29-the-one-thing-taken.md),
+  [30](30-when-the-system-notices-it-broke.md), and
+  [31](31-the-five-joints.md). Recognition remains deliberately separate from
   wages, property, credit, political weight, and the floor. The constitutional
   source now protects freedom to choose and refuse work, common labour rights,
   conditional property and contract, several lawful forms of enterprise and
@@ -621,9 +626,9 @@ the domain.
   instruments, or an operating economy.
 
 - **Democracy, government, and administration:** Chapters
-  [3](03-public-answerability.md), [4](04-who-holds-the-pen.md),
-  [10](10-the-vote-conviction-does-not-take.md), and
-  [13](13-changing-the-rules.md). The constitutional source now formalises the
+  [16](16-public-answerability.md), [23](23-who-holds-the-pen.md),
+  [18](18-the-vote-conviction-does-not-take.md), and
+  [22](22-changing-the-rules.md). The constitutional source now formalises the
   legal interfaces of a federal parliamentary republic across common,
   regional, and protected local tiers: competence, lawmaking, revenue,
   spending, oversight, collective executive confidence and continuity,
@@ -633,17 +638,17 @@ the domain.
   staffing, funding, publication, operation, or delivery.
 
 - **Civil, criminal, and administrative justice, safety, and repair:** Chapters
-  [5](05-the-shield.md), [6](06-voiding.md),
-  [8](08-a-prisoner-is-a-person.md), [9](09-what-you-are-owed.md),
-  [12](12-where-people-are-put.md),
-  [14](14-the-one-thing-taken.md), and
-  [15](15-when-the-system-notices-it-broke.md). These chapters cover evidence,
+  [24](24-the-shield.md), [25](25-voiding.md),
+  [27](27-a-prisoner-is-a-person.md), [4](04-what-you-are-owed.md),
+  [28](28-where-people-are-put.md),
+  [29](29-the-one-thing-taken.md), and
+  [30](30-when-the-system-notices-it-broke.md). These chapters cover evidence,
   custody, accessible justice procedures and repair. The justice interface
   includes independent assistance, survivor support, voluntary restoration,
   court-bound remedies, non-coercive enforcement and release continuity.
   Separate protective mandates, individual coercive instruments, humane
   holding, force limits, intelligence exclusions and objection are described
-  in Chapter 14; Chapter 10 adds non-derogating emergencies and bounded external
+  in Chapter 29; Chapter 18 adds non-derogating emergencies and bounded external
   powers. Each keeps its own grounds, current evidence, review and remedy.
   Named findings have independent recipients,
   action duties, non-response consequences, claimant continuity, individual
@@ -653,27 +658,27 @@ the domain.
   or institutional operation.
 
 - **Records, surveillance, and automated power:** Chapters
-  [2](02-what-counts-as-evidence.md), [4](04-who-holds-the-pen.md),
-  [6](06-voiding.md), [13](13-changing-the-rules.md), and
-  [15](15-when-the-system-notices-it-broke.md). The closed record is central;
+  [3](03-what-counts-as-evidence.md), [23](23-who-holds-the-pen.md),
+  [25](25-voiding.md), [22](22-changing-the-rules.md), and
+  [30](30-when-the-system-notices-it-broke.md). The closed record is central;
   truth, authorship, storage, surveillance, and live operation remain bounded.
-  Chapter [14](14-the-one-thing-taken.md) adds individual surveillance
+  Chapter [29](29-the-one-thing-taken.md) adds individual surveillance
   authorization, later notification and protected disclosure; none proves
   that an intelligence service follows those limits.
 
 - **Locality, membership, mobility, migration, and external relations:**
-  Chapters [10](10-the-vote-conviction-does-not-take.md) and
-  [14](14-the-one-thing-taken.md) now supply residence-first political
+  Chapters [18](18-the-vote-conviction-does-not-take.md) and
+  [29](29-the-one-thing-taken.md) now supply residence-first political
   membership, one nested political home, atomic transfer, nonresident limits
   and return, protected local authority, and the republic's internal
-  negotiated-secession route. Chapters 9 and 10 also set mobility, asylum,
+  negotiated-secession route. Chapters 4 and 18 also set mobility, asylum,
   collective title and consent, external no-evasion and exit-settlement limits.
   Border administration, migration services and cross-border operation remain
   outside the formal coverage; foreign recognition is an external assumption.
 
 - **Emergencies, security, and defence:** Chapters
-  [10](10-the-vote-conviction-does-not-take.md) and
-  [14](14-the-one-thing-taken.md) set separate protective mandates, individual
+  [18](18-the-vote-conviction-does-not-take.md) and
+  [29](29-the-one-thing-taken.md) set separate protective mandates, individual
   coercive instruments, force limits, non-derogating emergencies, intelligence
   controls, objection and external-power limits. Each power has its own
   currentness contract; none borrows custody time. This is no operated
@@ -710,14 +715,14 @@ the domain.
   Animal Protection Advocate remain separate from each other and from courts,
   science and operators. Guardian stays, independent review, shared replay
   limits and exact ends do not amount to a policy veto or an operating office.
-  Chapters [9](09-what-you-are-owed.md),
-  [10](10-the-vote-conviction-does-not-take.md),
-  [13](13-changing-the-rules.md) and
-  [15](15-when-the-system-notices-it-broke.md) keep those limits visible.
+  Chapters [4](04-what-you-are-owed.md),
+  [18](18-the-vote-conviction-does-not-take.md),
+  [22](22-changing-the-rules.md) and
+  [30](30-when-the-system-notices-it-broke.md) keep those limits visible.
 
 - **Friendship, leisure, mutual aid, associations, and the residual free social
-  field:** Chapters [9](09-what-you-are-owed.md),
-  [11](11-contribution.md), and [16](16-the-five-joints.md) protect voluntary
+  field:** Chapters [4](04-what-you-are-owed.md),
+  [10](10-contribution.md), and [31](31-the-five-joints.md) protect voluntary
   gifts, pooling, care, domestic production, mutual aid, lawful exchange,
   belief, culture, worship, friendship, intimacy, and association from public
   prescription and social scoring. No household, relationship, congregation,
@@ -806,13 +811,18 @@ correction route is complete or operational.
 
 ### Why the chapters have this order
 
-**Text diagram:** permitted evidence → public answerability → credentials →
-shield and voiding → clawback → prisoner/person → floor and vote → contribution,
-placement, and rule change → movement → breach markers.
+**Text diagram:** the child with nobody → who counts and what may be written →
+what is owed, and whether it arrived → the life the design leaves alone → the
+public power that serves it → what the design does to a person → what it does
+when it notices it broke.
 
-**Prose equivalent:** Later conclusions depend on earlier ones. The record comes
-first because every later rule reads it. Public answerability precedes credentials;
-credentials feed the accountability instruments; voiding feeds clawback;
-custody feeds personhood, the floor, placement, and movement; the final breach
-markers depend on results produced below them. This dependency order explains
-the carceral arc. It is not a ranking of what matters most in a human life.
+**Prose equivalent:** the chapters run in the order a person meets the design,
+not the order its rules depend on one another. The engines come first — who
+counts, what is owed, the ordinary life and the public power that serve it —
+and the breaks come last: the shield, voiding, clawback, custody, placement, and
+the alarms. The child appears first because the record knows least about the
+child; the prisoner appears late because the record knows most. The dependency
+order the rules actually stand in is a different thing, recorded in the method
+part and in the repository, and a later chapter may rest on a rule an earlier
+one has not yet shown. That is a reading choice, and it is not a ranking of
+what matters most in a human life.

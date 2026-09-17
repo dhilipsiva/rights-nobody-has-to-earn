@@ -1,0 +1,207 @@
+# ── Chapter 26 fidelity pins: "Clawback" ──────────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/26-clawback.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# [v0.9 2026-08-02] THE CIRA DEFECT IS RESOLVED — the student clawback rule is
+# deleted from Article 4, exactly the repair the old :defect directive here
+# named. lose(Points, Cira) now pins FALSE as a plain verdict, and the chapter's
+# middle section is rewritten to tell the rule's deletion as history. The
+# reasoning that forced deletion rather than narrowing stays on record: students
+# never mint (the grades ruling), so "claw back only recognition derived from
+# the fraudulent teaching" had an empty target — narrowing was always repeal.
+# The reward(Cira) and person(Fin) pins remain the chapter's sharpest facts: a
+# student who never earned anything, and a student who is not on the personhood
+# roster at all.
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 39
+
+# "Ask the record whether Bela is recognised and the answer is no ... Beside
+# that refusal the record holds one more conclusion: a loss." Both halves of the
+# corrected register, on one person: the mint refuses, and the loss is recorded.
+? false(Bela).
+# => TRUE
+
+? reward(Bela).
+# => FALSE
+
+? lose(Points, Bela).
+# => TRUE
+
+# "Bela is still a person. Bela still moves freely."
+? person(Bela).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+# "...still holds the vote. And Bela is still owed everything on the floor."
+? decide(Bela, Ballot).
+# => TRUE
+
+? entitled(Bela, event { eats() }).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+# THE PINS THAT WOULD HAVE CAUGHT THE OLD SENTENCE. The chapter used to say a
+# voided person "still eats. Still has somewhere to live." The record says
+# neither, about Bela or about anybody — being owed is not having, and the
+# chapter that owns that gap is chapter 4. Jala is the control: never accused,
+# never voided, and the same FALSE — which is what proves the verdict is the
+# delivery gap and not the voiding. If eats(Bela) ever turns TRUE while
+# eats(Jala) stays FALSE, something made the floor conditional on the finding,
+# and both chapters are wrong.
+? eats(Bela).
+# => FALSE
+
+? dwell(Bela).
+# => FALSE
+
+? eats(Jala).
+# => FALSE
+
+# "Bela taught Cira. Bela was voided. The rule reached Cira too" — history now;
+# the teaching entry is still real and still on the record.
+? teaches(Bela, Cira).
+# => TRUE
+
+# [v0.9] The repair, held as a plain verdict. The rule that recorded a loss
+# against Cira for Bela's fraud is deleted; no loss reaches her. This pin was
+# TRUE under a :defect directive for as long as the rule stood — if it ever
+# reads TRUE again, somebody rebuilt the student clawback.
+? lose(Points, Cira).
+# => FALSE
+
+# "Cira earned nothing. Being taught is not a way to earn recognition here."
+? reward(Cira).
+# => FALSE
+
+# Nothing reaches Cira now — not a loss (pinned above), and not her
+# credibility either, which was never touched even while the student rule
+# stood. If this ever flips TRUE, something taught the instrument to reach a
+# student's word, and the closing section is wrong about what it can touch.
+? false(Cira).
+# => FALSE
+
+# "the difference between Fin and Cira — which was never anything either of
+#  them did, only a fact about their teachers — is now no difference at all."
+# Fin's side of the exhibit: never reached while the rule stood, identical now.
+? teaches(Esa, Fin).
+# => TRUE
+
+# and Fin, the student held up as the lucky one, is not even a person here
+? person(Fin).
+# => FALSE
+
+? false(Esa).
+# => FALSE
+
+? lose(Points, Fin).
+# => FALSE
+
+# the same clawback reaches the other voided auditor
+? false(Lupo).
+# => TRUE
+
+? lose(Points, Lupo).
+# => TRUE
+
+# and Mira, accused by a liar, keeps everything
+? lose(Points, Mira).
+# => FALSE
+
+# ── The epoch carry, in the chapter whose subject it serves ──────────────────
+# Vex is the one person in the cast who is voided, stripped of the pen, still
+# possessed of standing, and clawed back — and this file, the clawback
+# chapter's own, never touched him. The carry is why: rotten is the mark
+# written forward from a prior period, it re-derives the void THIS period, and
+# that is the only reason the clawback keeps firing on a person whose voiding
+# nobody in this epoch performed. Five verdicts, and between them they hold
+# apart three things this book keeps having to hold apart: voided is not
+# de-personed, losing the pen is not losing standing, and a prior period's
+# judgment costs you here and now.
+? rotten(Vex).
+# => TRUE
+
+? false(Vex).
+# => TRUE
+
+# the cost — pinned in no other file
+? lose(Points, Vex).
+# => TRUE
+
+# the pen goes; the standing that makes you accountable does not
+? permits(Review, Vex).
+# => FALSE
+
+? authority(Vex).
+# => TRUE
+
+# ── [v0.9 2026-08-02] FORGIVENESS, MEASURED. Ground facts persist ────────────
+# The expungement ruling: forgive names its body, and alone it does nothing —
+# the one-write spring the clear guard closed is closed here from birth. With
+# the body's judgment beside it, the mark comes clean: the void stops
+# re-deriving, the loss stops, the doors reopen — and the pen stays lost,
+# because the credential rules read the mark itself, which remains on the
+# record. Forgiven, not erased. The retroactive consequence is pinned rather
+# than discovered: Vex's recorded examination of Tyr starts paying.
+forgive(Appeals, Vex).
+
+? false(Vex).
+# => TRUE
+
+judge(Appeals, Vex).
+
+? clean(Vex).
+# => TRUE
+
+? false(Vex).
+# => FALSE
+
+? lose(Points, Vex).
+# => FALSE
+
+? permits(Review, Vex).
+# => FALSE
+
+? reward(Vex).
+# => TRUE
+
+? rotten(Vex).
+# => TRUE
+
+# [v0.9 2026-08-04] L1: exercise the exact-name route the prose says is now
+# closed. This block is last because the admission remains resident. That makes
+# the refusal prove more than omission without widening the context of unrelated
+# pins above. The mixed assertion also proves atomic rollback: the otherwise
+# legal person fact must not survive the refused loss. The final probe holds the
+# corpus's three-place shape beside the live two-place Bela derivation above.
+# `derived_only` closes the relation, not an arity.
+:accept
+admits("lose").
+
+:refuse reasoning /`lose` is declared derived-only/
+person(Loss_Probe) & lose(Points, Loss_Probe).
+
+? person(Loss_Probe).
+# => FALSE
+
+:refuse reasoning /`lose` is declared derived-only/
+lose(Points, Ghost, Case).

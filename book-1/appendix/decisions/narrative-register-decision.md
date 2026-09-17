@@ -400,7 +400,7 @@ remains unchanged.
 ### 15a. `OL-15-v1` approval record
 
 - **Identifier:** `OL-15-v1`.
-- **Target:** `book-1/16-the-five-joints.md`, paragraph anchored by “Now the
+- **Target:** `book-1/31-the-five-joints.md`, paragraph anchored by “Now the
   stakes, because a design like this is not for reviewers.”
 - **Supply provenance:** `session-drafted, author-approved`.
 - **Approval:** explicit approval on 2026-08-20 of the exact displayed version
@@ -474,21 +474,21 @@ over the exact approved UTF-8 payload before any mechanical Markdown wrapping.
 | 06 | `book-1/00-opening-note.md`: older-term entry “State” | 482 | `7f8133d965406b6331914ae6f35772f53deea081d028626b136bbd70088bb423` |
 | 07 | `book-1/00-opening-note.md`: democracy crosswalk beginning “When the numbered chapters say” | 743 | `a7b98cccfb6f56678b72f481e9bd73a228e9177a8db7d830e65e2b7dfd0d88da` |
 | 08 | `book-1/00-opening-note.md`: locality crosswalk beginning “When they say” | 559 | `ec4b18357a00227521d214a33917155f0b9186ac3073604688e575ce62a23c0d` |
-| 09 | `book-1/02-what-counts-as-evidence.md`: paragraph beginning “This is a real gap” | 1,026 | `1cd457ad2668dae35f23a41b54b9f267da6c2925f043298db855b61c0ef6920c` |
-| 10 | `book-1/03-public-answerability.md`: block after “public bodies are answerable” | 544 | `fbe2568e9bb0fb2c48d657794a02ffaf70673f98e5823c866fae067cbc04143e` |
-| 11 | `book-1/04-who-holds-the-pen.md`: block before “That is not a flaw” | 1,142 | `15ad32e1793fae97598b653db7d319d0d79617aa95a5b3d5088c4298f71a63de` |
-| 12 | `book-1/10-the-vote-conviction-does-not-take.md`: opening block beginning “Here, nothing takes the vote” | 1,942 | `7e75e881a3832fd07db2f4ff86028902a5665e3661c7351e15a88c053dab3456` |
-| 13 | `book-1/10-the-vote-conviction-does-not-take.md`: block after “and neither one arrives” | 1,832 | `455120a54ed6ccde6d11bb053199fb8abf13c61043e96e87b45f7e3934cabf9b` |
-| 14 | `book-1/10-the-vote-conviction-does-not-take.md`: block beginning “Esa can challenge” | 1,777 | `6fab52d11ad6fd3d6c3e0a6b09ab7fa54b04f1c71a665d3eb26cb0f2a289f4a1` |
-| 15 | `book-1/10-the-vote-conviction-does-not-take.md`: section “And the same silence as before” | 1,234 | `e283d6955fbcafe7eb3917a63dd1c9c8d79a69608657c51f10a6843613b67146` |
-| 16 | `book-1/13-changing-the-rules.md`: opening block | 1,933 | `2440a6ddf9cca65d35ebd356c8a15404bda06289bbe2281b268d6a7cf15659b6` |
-| 17 | `book-1/13-changing-the-rules.md`: block beginning “What it proposes is a trade” | 1,004 | `56ef267f7c41de622155562717bb92acb573768a91d2417957ab17379cb65615` |
-| 18 | `book-1/13-changing-the-rules.md`: thinness introduction | 274 | `b0dd7d93ed26433db71b232175d6e59b75807226fcc30a4e39ec341c11c59490` |
-| 19 | `book-1/13-changing-the-rules.md`: block beginning “Nothing happens when something receives the law label” | 840 | `2c3e5d8d15acab18ff4ef6204cb31e02c6e8f867280a49cf5ab796a1db14e999` |
-| 20 | `book-1/16-the-five-joints.md`: “Rotation” section | 2,152 | `3ae8f079662e63db5dad89d33f2b993d77c77e7298f628c0e254c32c8b89349d` |
-| 21 | `book-1/16-the-five-joints.md`: State architecture block | 2,918 | `c02ae383e27f035b63ef09e980c3b0051296c5ebefb1eeb0baa749d496c9589a` |
-| 22 | `book-1/16-the-five-joints.md`: State answer block | 1,407 | `81be9d8745b00a7ce8a0a7488c03e475311b2a6a41831a2a60e0666f6b9edaaa` |
-| 23 | `book-1/16-the-five-joints.md`: State verdict block | 896 | `5c065764f21626ac58460e917ab236c127b7b97cbb87bf84b8c28573faeab958` |
+| 09 | `book-1/03-what-counts-as-evidence.md`: paragraph beginning “This is a real gap” | 1,026 | `1cd457ad2668dae35f23a41b54b9f267da6c2925f043298db855b61c0ef6920c` |
+| 10 | `book-1/16-public-answerability.md`: block after “public bodies are answerable” | 544 | `fbe2568e9bb0fb2c48d657794a02ffaf70673f98e5823c866fae067cbc04143e` |
+| 11 | `book-1/23-who-holds-the-pen.md`: block before “That is not a flaw” | 1,142 | `15ad32e1793fae97598b653db7d319d0d79617aa95a5b3d5088c4298f71a63de` |
+| 12 | `book-1/18-the-vote-conviction-does-not-take.md`: opening block beginning “Here, nothing takes the vote” | 1,942 | `7e75e881a3832fd07db2f4ff86028902a5665e3661c7351e15a88c053dab3456` |
+| 13 | `book-1/18-the-vote-conviction-does-not-take.md`: block after “and neither one arrives” | 1,832 | `455120a54ed6ccde6d11bb053199fb8abf13c61043e96e87b45f7e3934cabf9b` |
+| 14 | `book-1/18-the-vote-conviction-does-not-take.md`: block beginning “Esa can challenge” | 1,777 | `6fab52d11ad6fd3d6c3e0a6b09ab7fa54b04f1c71a665d3eb26cb0f2a289f4a1` |
+| 15 | `book-1/18-the-vote-conviction-does-not-take.md`: section “And the same silence as before” | 1,234 | `e283d6955fbcafe7eb3917a63dd1c9c8d79a69608657c51f10a6843613b67146` |
+| 16 | `book-1/22-changing-the-rules.md`: opening block | 1,933 | `2440a6ddf9cca65d35ebd356c8a15404bda06289bbe2281b268d6a7cf15659b6` |
+| 17 | `book-1/22-changing-the-rules.md`: block beginning “What it proposes is a trade” | 1,004 | `56ef267f7c41de622155562717bb92acb573768a91d2417957ab17379cb65615` |
+| 18 | `book-1/22-changing-the-rules.md`: thinness introduction | 274 | `b0dd7d93ed26433db71b232175d6e59b75807226fcc30a4e39ec341c11c59490` |
+| 19 | `book-1/22-changing-the-rules.md`: block beginning “Nothing happens when something receives the law label” | 840 | `2c3e5d8d15acab18ff4ef6204cb31e02c6e8f867280a49cf5ab796a1db14e999` |
+| 20 | `book-1/31-the-five-joints.md`: “Rotation” section | 2,152 | `3ae8f079662e63db5dad89d33f2b993d77c77e7298f628c0e254c32c8b89349d` |
+| 21 | `book-1/31-the-five-joints.md`: State architecture block | 2,918 | `c02ae383e27f035b63ef09e980c3b0051296c5ebefb1eeb0baa749d496c9589a` |
+| 22 | `book-1/31-the-five-joints.md`: State answer block | 1,407 | `81be9d8745b00a7ce8a0a7488c03e475311b2a6a41831a2a60e0666f6b9edaaa` |
+| 23 | `book-1/31-the-five-joints.md`: State verdict block | 896 | `5c065764f21626ac58460e917ab236c127b7b97cbb87bf84b8c28573faeab958` |
 | 24 | `book-1/method.md`: state-form method block after the family paragraph ending “completed remedy” | 3,255 | `ee7c3cd97c7049f801c9ec93989343821fe2b21d973545ced1d4332d46aaa517` |
 
 This record canonicalizes Book 1 prose only. It changes no constitutional rule
@@ -521,16 +521,16 @@ not manifest rows and did not produce canonical prose edits.
 | `OBL-B1-03` | `book-1/00-opening-note.md`: bullet `The State and the constitutional bodies` | 651 | `c0820bfd382a08120066580a66972cf30ed28c733363e20096b486eb4fc49532` |
 | `OBL-B1-04` | `book-1/00-opening-note.md`: bullet `Civil, criminal, and administrative justice, safety, and repair` | 711 | `4704ab855b2b4a562d0a37450de1966aca4cbedbf0548049cb47e4c62aec197e` |
 | `OBL-B1-05` | `book-1/00-opening-note.md`: section `The floor, duty, delivery, and repair` | 1,264 | `eedf0fa0a4b2f0bd10be48f29132048e7b3b7922b76670db5a9a9408a315b6b2` |
-| `OBL-B1-06` | `book-1/03-public-answerability.md`: paragraph beginning `A witnessed transition can now report that deletion` | 956 | `8f5746aa21893ffe3b3f48431300c453b2bd054f8b34542ebf7438ddcc2a9cdf` |
-| `OBL-B1-07` | `book-1/09-what-you-are-owed.md`: paragraph beginning `That is the floor.` | 523 | `e69ccea1f8840f67e154e394c2c5f83d3c23cfd10d6efedff6cee9b514a87e79` |
-| `OBL-B1-08` | `book-1/09-what-you-are-owed.md`: paragraph beginning `The floor machinery that currently produces an actual arrival` | 512 | `c9e92c85171572c4de4c3a8178ad849e893f410712d08c121e1d5b448e818ba1` |
-| `OBL-B1-09` | `book-1/09-what-you-are-owed.md`: section `Owed by whom` through `Then the limits` | 4,365 | `4436ab741d4a7888651b47fafbe92f2aec195ccf434fc618d40bf1a734ab8edf` |
-| `OBL-B1-10` | `book-1/09-what-you-are-owed.md`: sentence `The debt says what it is about, and nothing checks it against arrival.` | 74 | `2911221a36b5c1ca35ce203772f22950ffa6d6c84603c3d2b98d46f3fd3923d4` |
-| `OBL-B1-11` | `book-1/09-what-you-are-owed.md`: closing block beginning `Some duties now have legal consequences` | 926 | `7dbe4671999795f38c1cd44a979e73aafc188008e739d3351789e3b3aaa8688b` |
-| `OBL-B1-12` | `book-1/15-when-the-system-notices-it-broke.md`: section `And then a duty, which no longer has to be the end` | 5,442 | `4a74e2b5df7d9efdb6fa86214c1c27c8a7a0dc8202ae509ddf5fbc90ff658f1a` |
-| `OBL-B1-13` | `book-1/15-when-the-system-notices-it-broke.md`: block beginning `An earlier version of this chapter said that being a pure observer was` | 1,130 | `a0706ad6a5005e4828b5dc8f5cf5142f51ad9bf155cece94b3cdc389f196390d` |
-| `OBL-B1-14` | `book-1/16-the-five-joints.md`: Capture paragraph beginning `What this design does against capture` | 659 | `debd5f0e222b7102162f58e824fbd6d8c457949bb8bb3efc307221b16a3e813e` |
-| `OBL-B1-15` | `book-1/16-the-five-joints.md`: State block beginning `The binding layer is now wider.` | 2,902 | `741a94d4d5224d2b3b9bdfabdbad9cf6bd2fae5570351dfa839adb51370514a8` |
+| `OBL-B1-06` | `book-1/16-public-answerability.md`: paragraph beginning `A witnessed transition can now report that deletion` | 956 | `8f5746aa21893ffe3b3f48431300c453b2bd054f8b34542ebf7438ddcc2a9cdf` |
+| `OBL-B1-07` | `book-1/04-what-you-are-owed.md`: paragraph beginning `That is the floor.` | 523 | `e69ccea1f8840f67e154e394c2c5f83d3c23cfd10d6efedff6cee9b514a87e79` |
+| `OBL-B1-08` | `book-1/04-what-you-are-owed.md`: paragraph beginning `The floor machinery that currently produces an actual arrival` | 512 | `c9e92c85171572c4de4c3a8178ad849e893f410712d08c121e1d5b448e818ba1` |
+| `OBL-B1-09` | `book-1/04-what-you-are-owed.md`: section `Owed by whom` through `Then the limits` | 4,365 | `4436ab741d4a7888651b47fafbe92f2aec195ccf434fc618d40bf1a734ab8edf` |
+| `OBL-B1-10` | `book-1/04-what-you-are-owed.md`: sentence `The debt says what it is about, and nothing checks it against arrival.` | 74 | `2911221a36b5c1ca35ce203772f22950ffa6d6c84603c3d2b98d46f3fd3923d4` |
+| `OBL-B1-11` | `book-1/04-what-you-are-owed.md`: closing block beginning `Some duties now have legal consequences` | 926 | `7dbe4671999795f38c1cd44a979e73aafc188008e739d3351789e3b3aaa8688b` |
+| `OBL-B1-12` | `book-1/30-when-the-system-notices-it-broke.md`: section `And then a duty, which no longer has to be the end` | 5,442 | `4a74e2b5df7d9efdb6fa86214c1c27c8a7a0dc8202ae509ddf5fbc90ff658f1a` |
+| `OBL-B1-13` | `book-1/30-when-the-system-notices-it-broke.md`: block beginning `An earlier version of this chapter said that being a pure observer was` | 1,130 | `a0706ad6a5005e4828b5dc8f5cf5142f51ad9bf155cece94b3cdc389f196390d` |
+| `OBL-B1-14` | `book-1/31-the-five-joints.md`: Capture paragraph beginning `What this design does against capture` | 659 | `debd5f0e222b7102162f58e824fbd6d8c457949bb8bb3efc307221b16a3e813e` |
+| `OBL-B1-15` | `book-1/31-the-five-joints.md`: State block beginning `The binding layer is now wider.` | 2,902 | `741a94d4d5224d2b3b9bdfabdbad9cf6bd2fae5570351dfa839adb51370514a8` |
 | `OBL-B1-16` | `book-1/method.md`: block beginning `The mechanism: every relation in the constitution sits in a layer.` | 1,537 | `2db17589f28d3de01df371766288e57ee8fbc4c23766395105d1221ca66e3df1` |
 | `OBL-B1-17` | `book-1/method.md`: block beginning `The non-reciprocal-obligations family is a completed cross-cutting family.` | 1,861 | `9d144831cbd3eec27d92269d9d93d173247e9fee2aa36996a6f0b1a3ebcbfe5f` |
 
@@ -568,14 +568,14 @@ verification contracts.
 
 | ID | Target and exact anchor | UTF-8 bytes | SHA-256 |
 | --- | --- | ---: | --- |
-| `DLV-B1-01` | `book-1/09-what-you-are-owed.md`: section `Owed is not the same as delivered` | 5,379 | `2b7b5991c69e6ee6f5c8b2c57f6f328eab4885c8fb40660d6734c9c4eb540f27` |
-| `DLV-B1-02` | `book-1/09-what-you-are-owed.md`: block beginning `The debt says what it is about, and arrival is a separate conclusion.` | 2,925 | `1c36283a3949033d8dbed4100fc58379db46caf86cb5f073a284852ee262f4e7` |
-| `DLV-B1-03` | `book-1/09-what-you-are-owed.md`: closing block beginning `The lifecycle is specified, but it is not operated.` | 1,244 | `0eaa7c900e3945250dc357371537dc3eb085607192f1c0ee60f383c3c3cf1cfa` |
-| `DLV-B1-04` | `book-1/14-the-one-thing-taken.md`: paragraph beginning `Conviction takes movement and nothing else.` | 511 | `7975036c9d09c7ca9272915a34386071a08cf982e3f38376a79a2aba08c3c349` |
-| `DLV-B1-05` | `book-1/14-the-one-thing-taken.md`: section `What leaving costs` | 2,759 | `78f6634729415c4b4f43d6050cdaf6fc76400405d132cbb89d53c31582799688` |
-| `DLV-B1-06` | `book-1/15-when-the-system-notices-it-broke.md`: section `The one that fires on everybody` | 1,819 | `fff58727f9a2ff4b242262dc6d0a51b1cf5b27b9e543a46c2668423a6a14b2af` |
-| `DLV-B1-07` | `book-1/15-when-the-system-notices-it-broke.md`: block beginning `The chain no longer ends there.` | 2,970 | `65931cc892ed84196d4deff2d84a4b2900a56833575436a1b54136fd509a75ec` |
-| `DLV-B1-08` | `book-1/16-the-five-joints.md`: State answer block beginning `The answer is the book's oldest honesty, sharpened.` | 4,099 | `7b8d518161c828b22269fafd950d8ecfe4699cf36814a58292384fb46eaec8ac` |
+| `DLV-B1-01` | `book-1/04-what-you-are-owed.md`: section `Owed is not the same as delivered` | 5,379 | `2b7b5991c69e6ee6f5c8b2c57f6f328eab4885c8fb40660d6734c9c4eb540f27` |
+| `DLV-B1-02` | `book-1/04-what-you-are-owed.md`: block beginning `The debt says what it is about, and arrival is a separate conclusion.` | 2,925 | `1c36283a3949033d8dbed4100fc58379db46caf86cb5f073a284852ee262f4e7` |
+| `DLV-B1-03` | `book-1/04-what-you-are-owed.md`: closing block beginning `The lifecycle is specified, but it is not operated.` | 1,244 | `0eaa7c900e3945250dc357371537dc3eb085607192f1c0ee60f383c3c3cf1cfa` |
+| `DLV-B1-04` | `book-1/29-the-one-thing-taken.md`: paragraph beginning `Conviction takes movement and nothing else.` | 511 | `7975036c9d09c7ca9272915a34386071a08cf982e3f38376a79a2aba08c3c349` |
+| `DLV-B1-05` | `book-1/29-the-one-thing-taken.md`: section `What leaving costs` | 2,759 | `78f6634729415c4b4f43d6050cdaf6fc76400405d132cbb89d53c31582799688` |
+| `DLV-B1-06` | `book-1/30-when-the-system-notices-it-broke.md`: section `The one that fires on everybody` | 1,819 | `fff58727f9a2ff4b242262dc6d0a51b1cf5b27b9e543a46c2668423a6a14b2af` |
+| `DLV-B1-07` | `book-1/30-when-the-system-notices-it-broke.md`: block beginning `The chain no longer ends there.` | 2,970 | `65931cc892ed84196d4deff2d84a4b2900a56833575436a1b54136fd509a75ec` |
+| `DLV-B1-08` | `book-1/31-the-five-joints.md`: State answer block beginning `The answer is the book's oldest honesty, sharpened.` | 4,099 | `7b8d518161c828b22269fafd950d8ecfe4699cf36814a58292384fb46eaec8ac` |
 | `DLV-B1-09` | `book-1/method.md`: counted-claim block beginning `One of the sweeps deserves its own paragraph` | 1,097 | `0eb3513d83ca9a44b6a73ea539a6632032a78bec2834e104e582d4185cbfcd6e` |
 | `DLV-B1-10` | `book-1/method.md`: block beginning `The delivery-and-receipt family adds one recipient-side evidence relation` | 2,439 | `6c301a235d19332992cf2ad6643b8ae3f47c85488bd1be19cb5f9ac456d638cc` |
 
@@ -615,9 +615,9 @@ existing boundaries remain accurate under the dormant receipt family.
 
 | ID | Supersedes | Target and exact anchor | UTF-8 bytes | SHA-256 |
 | --- | --- | --- | ---: | --- |
-| `ECON-B1-01` | `OBL-B1-09` | `book-1/09-what-you-are-owed.md`: section `Owed by whom` through `Then the limits` | 5,054 | `ea166a02e26f99691b151b730258aa65a8d763be6ce29f02a9a83f19b883b119` |
-| `ECON-B1-02` | `DLV-B1-04` | `book-1/14-the-one-thing-taken.md`: block beginning `As a direct legal punishment` through `at the end.` | 541 | `bee2c6504c7edd58c8ca2730bac7b4a18a1ac4d02b88cb2b6418f05bea6bfe3e` |
-| `ECON-B1-03` | `DLV-B1-07` | `book-1/15-when-the-system-notices-it-broke.md`: block beginning `The chain no longer ends there.` through `make true.` | 4,411 | `115e59dbc15acfc05324bdd34478132cbfd9ed54df9fb4f1eef937adbdfd66d7` |
+| `ECON-B1-01` | `OBL-B1-09` | `book-1/04-what-you-are-owed.md`: section `Owed by whom` through `Then the limits` | 5,054 | `ea166a02e26f99691b151b730258aa65a8d763be6ce29f02a9a83f19b883b119` |
+| `ECON-B1-02` | `DLV-B1-04` | `book-1/29-the-one-thing-taken.md`: block beginning `As a direct legal punishment` through `at the end.` | 541 | `bee2c6504c7edd58c8ca2730bac7b4a18a1ac4d02b88cb2b6418f05bea6bfe3e` |
+| `ECON-B1-03` | `DLV-B1-07` | `book-1/30-when-the-system-notices-it-broke.md`: block beginning `The chain no longer ends there.` through `make true.` | 4,411 | `115e59dbc15acfc05324bdd34478132cbfd9ed54df9fb4f1eef937adbdfd66d7` |
 
 The historical `OBL-B1-v1` and `DLV-B1-v1` tables above remain unchanged.
 The live obligations prose consumer now checks eleven retained OBL payloads,

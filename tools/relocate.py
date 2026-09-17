@@ -9,7 +9,7 @@
 A map is JSON:
 
     {"name": "...", "date": "YYYY-MM-DD", "notes": "...",
-     "moves":    [{"from": "book-1/09-what-you-are-owed.md", "to": "book-1/01-what-you-are-owed.md"}, ...],
+     "moves":    [{"from": "book-1/04-what-you-are-owed.md", "to": "book-1/01-what-you-are-owed.md"}, ...],
      "rewrites": [{"from": "book-1/source/", "to": "book-1/source/"}, ...],
      "labels":   {"8": "1", ...}}
 
@@ -187,7 +187,7 @@ NUMBERED_LINK = re.compile(r"\[(\d{1,2})\]\((?:[^)]*/)?(\d{2})-[^)#]*\.md(?:#[^)
 
 def fix_numbered_links(text: str) -> tuple[str, int]:
     """A link whose text is a bare chapter number must carry its target's prefix:
-    `[12](12-where-people-are-put.md)`. The path pass retargets the file; this
+    `[28](28-where-people-are-put.md)`. The path pass retargets the file; this
     pass makes the visible number follow it."""
     count = 0
 

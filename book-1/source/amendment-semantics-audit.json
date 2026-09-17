@@ -594,42 +594,42 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/02-what-counts-as-evidence.md::That is a check on declared names, not protection of their meaning.",
+      "artifact_ref": "book-1/03-what-counts-as-evidence.md::That is a check on declared names, not protection of their meaning.",
       "current_claim": "The register checks declared names, not semantic effects; vocabulary widening is visible but neither constitutionally approved nor entrenched.",
       "classification": "revised_and_scoped",
       "reason": "The bounded cases separate Article 9 label verdicts from manually supplied source effects and reproduce a direct vocabulary widening outside Article 9.",
       "future_trigger": "Revise if a verified exact-diff binding, semantic review, vocabulary-entrenchment rule, or source-transition mechanism lands."
     },
     {
-      "artifact_ref": "book-1/09-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable. That is no longer the",
+      "artifact_ref": "book-1/04-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable. That is no longer the",
       "current_claim": "The floor layer still permits the tested credibility, recognition, and compulsion routes, while a separate derived liberty shell now records person-held barriers against their lawful use; neither result proves institutional enforcement.",
       "classification": "revised_and_scoped",
       "reason": "The source mutation cases still test the floor's narrow anti-sanction property, while the new liberty family adds an independent normative layer and explicitly leaves operation and enforcement unestablished.",
       "future_trigger": "Revise the prose, liberty pins, counterfactuals, and this audit if either the floor refusal or the separate liberty barrier changes."
     },
     {
-      "artifact_ref": "book-1/13-changing-the-rules.md::The recorded label verdict is real.",
+      "artifact_ref": "book-1/22-changing-the-rules.md::The recorded label verdict is real.",
       "current_claim": "The present mechanism produces label verdicts but has not established protection against what a source change actually does.",
       "classification": "revised_and_scoped",
       "reason": "Targetless, falsely labelled, concealed-shape, label-poisoning, and honest blocked-label-plus-harm cases execute the distinction without claiming enactment or prevention.",
       "future_trigger": "Revise when proposal text, exact effects, approval, and effective source transition become one verified constitutional contract."
     },
     {
-      "artifact_ref": "book-1/16-the-five-joints.md::The consequential surfaces that remain are the constitutional source",
+      "artifact_ref": "book-1/31-the-five-joints.md::The consequential surfaces that remain are the constitutional source",
       "current_claim": "The constitutional source and supplied record remain separate consequential capture surfaces, and neither authenticates itself.",
       "classification": "revised_and_scoped",
       "reason": "The audit changes temporary source copies directly and therefore exposes source capture rather than collapsing it into fact-record capture.",
       "future_trigger": "Reassess if source authorship, semantic authorization, deployment identity, rollback protection, or independently assured transition evidence lands."
     },
     {
-      "artifact_ref": "book-1/16-the-five-joints.md::narrow mechanism still blocks punishment for absence rather than the",
+      "artifact_ref": "book-1/31-the-five-joints.md::narrow mechanism still blocks punishment for absence rather than the",
       "current_claim": "The current anti-sanction refusal is narrow: it does not deliver the floor, block every hostile rule, stop defunding, or preserve the source.",
       "classification": "revised_and_scoped",
       "reason": "The concealed-shape case removes the food promise while the anti-sanction refusal still fires, proving that the structural wall and delivered constitutional promise are different claims.",
       "future_trigger": "Reassess when delivery, funding, comprehensive hostile-rule coverage, or authenticated source preservation becomes current and executable."
     },
     {
-      "artifact_ref": "book-1/16-the-five-joints.md::That review is not constitutional approval",
+      "artifact_ref": "book-1/31-the-five-joints.md::That review is not constitutional approval",
       "current_claim": "Repository review can reject an unreviewed vocabulary widening but is not constitutional approval, entrenchment, or complete semantic certification.",
       "classification": "revised_and_scoped",
       "reason": "The admission-widening case is accepted by the engine and then rejected by the current assertion-surface pipeline at source/inventory reconciliation; this is repository exposure, not an Article 9 verdict.",

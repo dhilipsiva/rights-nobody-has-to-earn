@@ -267,7 +267,7 @@ building(HighSec, Ghost).
 # NAMING A DEBTOR IS NOT PAYING THE DEBT. This is the pin that stops the article
 # being read as provision: the floor actualities are exactly as FALSE as they
 # were before it existed. If this ever flips, a delivery layer arrived and
-# chapter 9 must be rewritten — which would be good news.
+# chapter 4 must be rewritten — which would be good news.
 ? eats(Bela).
 # => FALSE
 
@@ -275,7 +275,7 @@ building(HighSec, Ghost).
 # `entitled` is queried across the suite and until now was never controlled, so
 # every TRUE proved reach rather than derivation. Three directions at once: the
 # floor reaches a person; it does not carry what is not on it — home is a fact
-# the world reports, never a floor item, and chapter 9 turns on the difference;
+# the world reports, never a floor item, and chapter 4 turns on the difference;
 # and it does not reach a non-person.
 ? entitled(Adam, event { eats() }).
 # => TRUE
@@ -312,7 +312,7 @@ free(Hano).
 
 # Personhood survives — for Hano because it is asserted, and for someone
 # convicted into the roster because of Article 1's `free -> person` line. The
-# derived case is pinned on Zed in 08-a-prisoner-is-a-person.pins.nibli.
+# derived case is pinned on Zed in 27-a-prisoner-is-a-person.pins.nibli.
 ? person(Hano).
 # => TRUE
 

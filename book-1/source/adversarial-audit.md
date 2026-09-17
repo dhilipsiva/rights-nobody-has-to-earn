@@ -96,7 +96,7 @@ Encoded by:
 Encoded by:
 
 - `book-1/source/reader-coverage.md`
-- `book-1/10-the-vote-conviction-does-not-take.pins.nibli`
+- `book-1/18-the-vote-conviction-does-not-take.pins.nibli`
 - `tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli`
 
 - **held** (omitted-domain) — The family, dependency, reproduction and care baseline landed 106 person-held barriers before it had an ordinary-operation interface; the roles, support, participation, continuity, bodily care, treatment order and own-record access that they presupposed landed afterwards, in their own block beside them.
@@ -106,7 +106,7 @@ Encoded by:
 
 Encoded by:
 
-- `book-1/11-contribution.pins.nibli`
+- `book-1/10-contribution.pins.nibli`
 - `src/authoring/floor_vector_tests.rs`
 
 - **held** (totalising-rule) — Recognition is arity one, minted by three doors, read by nothing and never joined with itself.
@@ -126,7 +126,7 @@ Encoded by:
 
 Encoded by:
 
-- `book-1/14-the-one-thing-taken.pins.nibli`
+- `book-1/29-the-one-thing-taken.pins.nibli`
 - `tests/pins/public-safety/firewalls/arrest/expect.pins.nibli`
 - `tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli`
 - `tests/pins/red-team/counterfactual-severity-without-the-court/expect.pins.nibli`

@@ -53,20 +53,6 @@ needed.
 
 ### Phase A — the heart and the order
 
-7. **Rule the reading order and renumber once to the final table.** Manifest
-   gets `rule` and the D1 table with `planned` entries; `plan` → map
-   `2026-09-16-reorder.json` → `apply` → `check` (then reorder the opening
-   note's per-part contents bullets by hand until the navigation test passes);
-   `derived_chapters_run_engines_before_breaks` added; `3-spine.md` header
-   corrected, generated contents block, old hand list re-headed "superseded
-   2026-09-16 — pre-reorder numbers"; opening note 22-24 and 729-741 rewritten
-   to the rule; `method.md:221-253` rewritten (the stratification is the
-   derivation record; the reading order is ruled); `book-1/README.md:8-11`,
-   `README.md:44`; the three forward cross-references the validator reports
-   are reworded; regenerated reports. *Done when:* `check`; `cargo test` (incl.
-   `spine_contents_block_is_current`); `./verify.sh`; `bash combine.sh` yields
-   the landed chapters in manifest order.
-
 ### Phase B — the engines (one chapter per item; unrendered mass first, then a receiving chapter before its host is cut)
 
 Each Phase B item: chapter + pins + suites + ledger rows + child slot +

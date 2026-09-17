@@ -12,7 +12,7 @@
 # Measured 2026-09-16 against the current source. Three of the four routes
 # below need no judgment, no grounds, no author and no review. The fourth — the
 # voiding rule — does require a review body's judgment beside the lie, which is
-# why chapter 2's account of this is stated per route rather than in general.
+# why chapter 3's account of this is stated per route rather than in general.
 #
 # Nothing here is repaired by this case. It exists so the boundary is
 # executable rather than only described, in the same way the collusion case
@@ -31,7 +31,7 @@
 deceive(Torvi, Boss).
 
 # The shield is gone — for that exposure. The rule is per pair, which is what
-# chapter 5 means by closing against a claim rather than against a claimant.
+# chapter 24 means by closing against a claim rather than against a claimant.
 ? defend(Torvi).
 # => FALSE
 

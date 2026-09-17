@@ -4,7 +4,7 @@
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The
 section below is inserted unchanged in
-`book-1/10-the-vote-conviction-does-not-take.md`, between "Children, the
+`book-1/18-the-vote-conviction-does-not-take.md`, between "Children, the
 difference between not yet and taken — and a third thing" and "The part that is
 weaker than it looks". Its supporting cases are listed in the chapter's pin
 file, and the contract is

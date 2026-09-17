@@ -4,7 +4,7 @@
 
 Session-drafted, author-approved: the author approved the exact section below
 on 2026-09-12. It is inserted unchanged in
-[Book 1 chapter 9](../book-1/10-the-vote-conviction-does-not-take.md#keeping-public-decisions-answerable).
+[Book 1 chapter 9](../book-1/18-the-vote-conviction-does-not-take.md#keeping-public-decisions-answerable).
 The chapter's paired pins identify the supporting integrity and disclosure
 cases. This file retains the approved wording, not a separate verification gate.
 

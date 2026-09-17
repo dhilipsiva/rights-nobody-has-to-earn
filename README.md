@@ -76,7 +76,7 @@ tree.
 ```bash
 ./verify.sh
 ./verify.sh --list
-./verify.sh --only book-1/09-what-you-are-owed.pins.nibli
+./verify.sh --only book-1/04-what-you-are-owed.pins.nibli
 ```
 
 The default command runs all substantive pins, including counterfactuals, and

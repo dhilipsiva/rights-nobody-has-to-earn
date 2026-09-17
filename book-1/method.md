@@ -111,7 +111,7 @@ record without a competing binding or conflicted order path. Then this final
 gate rejoins the case and lease evidence again. No standing appellate relief. A
 court not itself marked broken. No derived defence. Not already free. Then, and
 only then: prisoner. There is no second route, discretion, or “unless
-circumstances warrant.” Chapter 14's one direct punitive deprivation describes
+circumstances warrant.” Chapter 29's one direct punitive deprivation describes
 this conviction route. Separate protective instruments now use `restrain`,
 never `prisoner` or `capture`, with their own grounds, temporal contracts and
 floor firewalls. Their capability-loss projections remain unread leaves.
@@ -188,7 +188,7 @@ has producing rules *and* direct ground entries, and birth, encounter, custody,
 release and carried status provide independent producing routes. It is therefore
 a conclusion the machinery can reach that the record must nonetheless admit.
 *What counts as evidence* and *what may be written* are different sets:
-`person` is the clearest difference between them, and chapter 2 put personhood
+`person` is the clearest difference between them, and chapter 3 put personhood
 on its evidence list for precisely that reason. A failed lookup does not reverse
 a root already supplied, and correction or a death mark does not retract
 personhood.
@@ -205,7 +205,7 @@ reviewable edit, which is the point.
 ```
 
 I did not write that error message, and its last clause is the engine
-agreeing with chapter 2 in its own words: widening the record is a loud,
+agreeing with chapter 3 in its own words: widening the record is a loud,
 reviewable act, never a fact somebody quietly types.
 
 One honest note on why you are seeing excerpts and not the whole file. It is
@@ -220,76 +220,42 @@ engine's repository beside it, which the check will name if it is missing —
 then run the one command, `./verify.sh`. The pins pass, or this book has a
 defect its author did not know about.
 
-## The order of the chapters, and the tools that got it wrong
+## The order of the chapters, and the order of the rules
 
-The chapters of this book are in a computed order. I chose the words in them;
-I did not choose their sequence.
+The chapters of this book are in an order I chose, and I want to say exactly
+what that order is and what it is not, because an earlier version of this part
+claimed the sequence was computed and it never was.
 
-The mechanism: every relation in the constitution sits in a layer. At the
-bottom are the record's plain words — the things the world may report, like an
-injury, a judgment, a marriage, a lesson heard. Above them sit the conclusions
-those words feed, and above those the conclusions *those* feed — personhood,
-imprisonment, everything owed — up to the marks the audit leaves. Those marks
-can now feed source-bound action, non-response, continuity, alternate, and
-remedy conclusions. The chain ends in legal effects rather than an unread duty;
-it still does not perform an act outside the reasoning system. A rule's
-conclusion never sits below something it reads. The engine computes those
-layers from the file, a script turns the layers into a chapter order, and the
-book follows it: the chapter about a relation cannot come before the chapters
-about what it rests on. The computed table — how many relations, how many
-derived, how many layers, and the full list of which sits where — lives in a
-planning file in the repository, inside a block marked *generated*. The
-authoring command `./generate.sh spine` refreshes that block from the engine;
-reviewing the chapter order is separate from running the pins.
+The rules do stand in a computed order. Every relation in the constitution sits
+in a layer. At the bottom are the record's plain words — the things the world
+may report, like an injury, a judgment, a marriage, a birth, a lesson heard.
+Above them sit the conclusions those words feed, and above those the
+conclusions *those* feed — personhood, imprisonment, everything owed — up to
+the marks the audit leaves and the source-bound duties those marks now feed. A
+rule's conclusion never sits below something it reads. The engine computes
+those layers from the file, and the computed table — how many relations, how
+many derived, how many layers, and the full list of which sits where — lives
+in a planning file in the repository, inside a block marked *generated*, which
+the authoring command `./generate.sh spine` refreshes from the engine.
 
-You have already felt this order, whether or not you noticed. The book opened
-on the record itself — what may be written, and by whom — because everything
-else rests on it. It ended, before Part V, on the audit and the legal
-consequences that now sit above its findings. Chapter 15 ends there because the
-next missing link is not another conclusion. It is action in the world.
+The chapters do not follow that table, and a check now makes sure nobody claims
+they do. The reading order is a rule of its own, recorded beside the computed
+table and enforced by the repository's tests: the book runs in the order a
+person meets the design — who counts and what may be written about them, then
+what is owed and how it is meant to arrive, then the ordinary life the design
+leaves alone, then the public power that serves it, and only at the end what
+the design does to a person and what it does when it catches itself failing.
+Engines before breaks. Within that rule the sequence is editorial, stated in
+one manifest, and the file names carry its numbers as a checked projection.
 
-Every chapter in
-between sits where its subject sits in the layering: the voiding chapter
-follows the chapter on the pens because the voiding rule reads the pens'
-conclusions. The intended order of the book is the direction the rules read.
-After changing those dependencies, I regenerate the spine and review the order.
-
-That generator exists because of a failure worth telling. The first version of
-the spine was computed correctly — and then the constitution changed
-underneath it, and nothing in the repository noticed. The numbers were not
-wrong when written; they were wrong when read, which is worse, because every
-reader after the change was being shown a careful, precise, stale answer.
-The repair was not "be more careful". It was: stop letting a hand-maintained
-copy exist at all.
-
-The repository keeps one tool that got this wrong, on purpose, as a
-standing exhibit: a small script that tried to compute the layers itself,
-by hand-rolled parsing. It cannot see inside the `event { … }` wrapper you
-met a page ago — so it never sees the floor at all. It looked sound, it
-agreed with itself perfectly, and it disagreed with the engine on every
-figure it printed. It is still in the repository, labelled wrong, kept as
-the standing argument for taking every figure from the engine that actually
-runs the rules. The spine generator carries the history of a second: its
-own first form rebuilt the dependency graph out of text-matching rules — a
-second implementation of the engine's layering, maintained by someone who
-could not see it — and it disagreed with the engine in three places, two of
-its numbers right only because two of its errors cancelled. The corrected
-generator records that history in its own header, where the next person
-tempted to reimplement will find it. Even the fixture-regeneration
-instructions in the repository — the commands that rebuild the sabotaged
-constitution copies the checks section describes — have been wrong twice,
-including once in a way that matched nothing and silently wrote a
-byte-identical copy: a fixture that tested nothing while looking freshly
-made.
-
-I am telling you this in the part that is supposed to earn your confidence
-because it is the shape of the whole method. Every tool written to check the
-machine became a thing the machine had to check. The response each time was
-not resolve; it was structure — regenerate instead of transcribe, point
-instead of copy, and make every checker prove it can fail before trusting a
-word it says. That is also why this part quotes so few numbers: a figure
-copied onto this page joins the class of things that rot, and the repository
-is where the living figures are.
+You have already felt this order. The book opened on the person the record
+knows least about, because the rules that protect that person read nothing but
+personhood, and a chapter that rests on one entry can honestly stand first. It
+ends, before the fifth part, on the audit and the legal consequences that sit
+above its findings, because the next missing link after those is not another
+conclusion. It is action in the world. In between, a chapter may rest on a rule
+a later chapter shows; where it does, the chapter says so, and the pins beside
+it check the rule regardless of where the reader meets it.
 
 ## What the logic refused
 
@@ -352,7 +318,7 @@ does not decide whether earned-time credit is just. The ratified temporal contra
 answers that question separately, and the enacted path contains no route from
 character, contribution, or recognition to a shorter sentence. Release remains an
 entry someone writes,
-never an output the machinery computes, and it carries the concession chapter 2
+never an output the machinery computes, and it carries the concession chapter 3
 already made: the entry does not say whose decision it records. The temporal rule
 instead constrains the authority holding the exact person in the exact case. If
 the current reviewed authority is absent, custody does not derive; `free` is not
@@ -449,7 +415,7 @@ current expectations.
 Some pins are stranger, and they are this method's most honest invention.
 The book argues about flaws the design still has — chapters stand on them.
 Those flaws are pinned too, marked as defects, with the marker recording
-what would flip them. From chapter 13's file, exactly as written:
+what would flip them. From chapter 22's file, exactly as written:
 
 ```
 :defect "a totality guard: a targetless proposal receives no law label"
@@ -458,7 +424,7 @@ what would flip them. From chapter 13's file, exactly as written:
 ```
 
 A targetless proposal still receives the law label here — a real defect in the
-label guard, not proof that any change took effect — and chapter 13's argument
+label guard, not proof that any change took effect — and chapter 22's argument
 depends on it being real. If a future edit quietly fixed it, the suite would not
 celebrate; it stops the build and says, in its own words, that this is a repair,
 not a regression — find the chapter that calls this a flaw and rewrite it, then

@@ -26,7 +26,7 @@ Family contracts:
 - [Opposition and party democracy](opposition-and-party-democracy-contract.md).
 - [Coordinated operations](coordinated-operation-contract.md).
 
-The reader projection is [Keeping public decisions answerable](../../10-the-vote-conviction-does-not-take.md#keeping-public-decisions-answerable)
+The reader projection is [Keeping public decisions answerable](../../18-the-vote-conviction-does-not-take.md#keeping-public-decisions-answerable)
 in Book 1 chapter 9: `session-drafted, author-approved` on 2026-09-12, with
 the exact approved wording retained in `integrity-reader-draft.md`. The
 chapter's paired pins map its claims to the isolated executable cases.

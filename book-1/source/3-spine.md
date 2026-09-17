@@ -8,9 +8,9 @@ The dependency strata are **computed from the constitution's graph, not chosen**
 Method: parse every rule, build the predicate dependency graph, and assign strata by
 the standard fixpoint (positive edge ⇒ `stratum(head) ≥ stratum(body)`; negative edge ⇒
 `stratum(head) > stratum(body)`). The generated block is authoritative for the current
-dependency graph. The chapter sequence below began from an older computed graph and is
-now an editorial reading order; T1/T2/T3 added intermediate predicates and moved several
-old conclusions without mechanically reordering the drafted book.
+dependency graph. The chapter sequence is editorial — ruled 2026-09-16, *engines before
+breaks* — and its one statement is `book-1/contents.json`, rendered in section 3 by
+`./generate.sh spine`; the strata never implied a sequence.
 
 ---
 
@@ -143,38 +143,60 @@ older narrative of the order and is kept as history rather than as a second
 source of it.
 
 <!-- BEGIN GENERATED: contents -->
-Reading order, from `book-1/contents.json`. No ordering rule is recorded yet; the sequence is the one the filename prefixes carry.
+Reading order, from `book-1/contents.json`. The rule:
+
+> The chapters run in the order a person meets the design, not the order its rules depend on one another: first who counts and what may be written about them, then what every person is owed and how it is meant to reach them, then the ordinary life the design leaves alone, then the public power that serves that life, and only at the end what the design does to a person and what it does when it catches itself failing.
 
 Front matter: `epigraph.md`, `00-opening-note.md`.
 
 | # | Chapter | File | Role | Group | Status |
 |---|---|---|---|---|---|
-| **Part I — What the world is allowed to say** | | | | | |
+| **Part I — Who counts, and what they are owed** | | | | | |
 | 01 | The Child With Nobody | `01-the-child-with-nobody.md` | derived | engine | landed |
-| 02 | What Counts as Evidence | `02-what-counts-as-evidence.md` | derived | engine | landed |
-| 03 | Public Answerability, and Why It Is Never Revoked | `03-public-answerability.md` | derived | engine | landed |
-| **Part II — Accountability** | | | | | |
-| 04 | Who Holds the Pen | `04-who-holds-the-pen.md` | derived | engine | landed |
-| 05 | The Shield | `05-the-shield.md` | derived | break | landed |
-| 06 | Voiding | `06-voiding.md` | derived | break | landed |
-| 07 | Clawback | `07-clawback.md` | derived | break | landed |
-| **Part III — Status and consequence** | | | | | |
-| 08 | A Prisoner Is a Person | `08-a-prisoner-is-a-person.md` | derived | break | landed |
-| 09 | What You Are Owed | `09-what-you-are-owed.md` | derived | engine | landed |
-| 10 | The Vote Conviction Does Not Take | `10-the-vote-conviction-does-not-take.md` | derived | engine | landed |
-| 11 | Contribution | `11-contribution.md` | derived | engine | landed |
-| 12 | Where People Are Put | `12-where-people-are-put.md` | derived | break | landed |
-| 13 | Changing the Rules | `13-changing-the-rules.md` | derived | engine | landed |
-| **Part IV — The top of the graph** | | | | | |
-| 14 | The One Thing Taken | `14-the-one-thing-taken.md` | derived | break | landed |
-| 15 | When the System Notices It Broke | `15-when-the-system-notices-it-broke.md` | derived | break | landed |
+| 02 | Who Counts | — | derived | engine | planned |
+| 03 | What Counts as Evidence | `03-what-counts-as-evidence.md` | derived | engine | landed |
+| 04 | What You Are Owed | `04-what-you-are-owed.md` | derived | engine | landed |
+| 05 | Whether It Arrived | — | derived | engine | planned |
+| 06 | When There Is Genuinely Not Enough | — | derived | engine | planned |
+| 07 | Who Owes, and What Follows | — | derived | engine | planned |
+| **Part II — The life the design leaves alone** | | | | | |
+| 08 | What Nobody Has to Ask Permission For | — | derived | engine | planned |
+| 09 | Earning Above the Floor | — | derived | engine | planned |
+| 10 | Contribution | `10-contribution.md` | derived | engine | landed |
+| 11 | What Money Cannot Buy | — | derived | engine | planned |
+| 12 | The Same Route for Everyone | — | derived | engine | planned |
+| 13 | A Place in Which Life Remains Possible | — | derived | engine | planned |
+| 14 | Holding a Role in Somebody's Life | — | derived | engine | planned |
+| 15 | Arriving and Belonging | — | derived | engine | planned |
+| **Part III — The public power that serves it** | | | | | |
+| 16 | Public Answerability, and Why It Is Never Revoked | `16-public-answerability.md` | derived | engine | landed |
+| 17 | How Public Power Is Built | — | derived | engine | planned |
+| 18 | The Vote Conviction Does Not Take | `18-the-vote-conviction-does-not-take.md` | derived | engine | landed |
+| 19 | What May Be Kept About You | — | derived | engine | planned |
+| 20 | A Crisis Does Not Suspend the Republic | — | derived | engine | planned |
+| 21 | A Way to Be Heard | — | derived | engine | planned |
+| 22 | Changing the Rules | `22-changing-the-rules.md` | derived | engine | landed |
+| 23 | Who Holds the Pen | `23-who-holds-the-pen.md` | derived | engine | landed |
+| **Part IV — What the design does to a person, and how it catches itself** | | | | | |
+| 24 | The Shield | `24-the-shield.md` | derived | break | landed |
+| 25 | Voiding | `25-voiding.md` | derived | break | landed |
+| 26 | Clawback | `26-clawback.md` | derived | break | landed |
+| 27 | A Prisoner Is a Person | `27-a-prisoner-is-a-person.md` | derived | break | landed |
+| 28 | Where People Are Put | `28-where-people-are-put.md` | derived | break | landed |
+| 29 | The One Thing Taken | `29-the-one-thing-taken.md` | derived | break | landed |
+| 30 | When the System Notices It Broke | `30-when-the-system-notices-it-broke.md` | derived | break | landed |
 | **Part V — Outside the graph** | | | | | |
-| 16 | The Five Joints | `16-the-five-joints.md` | exempt | — | landed |
+| 31 | The Five Joints | `31-the-five-joints.md` | exempt | — | landed |
 
 Back matter: `method.md`.
 <!-- END GENERATED: contents -->
 
-### The hand list
+### The hand list — superseded 2026-09-17, pre-reorder numbers
+
+The narrative below dates from before the reorder and keeps the chapter numbers of
+that time; it is history, not a second statement of the order. The key between old
+and new numbers is `tools/maps/2026-09-17-heart.json` followed by
+`tools/maps/2026-09-17-reorder.json`.
 
 **Opening note** — *explicitly not derived*, ~800 words. What the book is and how to
 read it. Labelled the same way Part V is labelled, so the reader can feel the seam.

@@ -1588,12 +1588,12 @@ Open and bounded defect consequences:
 
 These are receipt-to-reader mapping references for eligible repairs. They do not establish that a reader understood or could access them.
 
-- `FS-RCP-01` → `FS-CLM-36` (`book-1/07-clawback.md::It is resolved — the resolution was a deletion`); ceiling: `Derived`; still does not follow: Nothing reads a loss, nothing restores one, and no lifecycle exists for it — the leaf stays a leaf.
-- `FS-RCP-02` → `FS-CLM-11` (`book-1/12-where-people-are-put.md::The repair is to give the record that entry`); ceiling: `Derived`; still does not follow: The alarm watches half the space, the conclusion drops the author, and the delivery gap is exactly as wide as before.
-- `FS-RCP-03` → `FS-CLM-14` (`book-1/13-changing-the-rules.md::The repair is small, which is the lesson`); ceiling: `Derived`; still does not follow: The deciding check is an absence whose completeness is external, and if an assembly ever dockets a person the void arrives through the front door.
-- `FS-RCP-04` → `FS-CLM-36` (`book-1/06-voiding.md::Those are real repairs to the attacks this chapter used to disclose`); ceiling: `Derived`; still does not follow: A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.
-- `FS-RCP-05` → `FS-CLM-19` (`book-1/06-voiding.md::Koa recorded a finding about Esa`); ceiling: `Derived`; still does not follow: The record still buys an author for the why and not its truth, and the void's own grounds stay deliberately unasked.
-- `FS-RCP-06` → `FS-CLM-05` (`book-1/09-what-you-are-owed.md::The lifecycle is specified, but it is not operated.`); ceiling: `Derived`; still does not follow: No service offer, accessibility, adequacy, writer authentication, actual-world arrival, performed continuity, completed remedy, recurrence monitoring, future non-recurrence, or institutional liveness follows.
+- `FS-RCP-01` → `FS-CLM-36` (`book-1/26-clawback.md::It is resolved — the resolution was a deletion`); ceiling: `Derived`; still does not follow: Nothing reads a loss, nothing restores one, and no lifecycle exists for it — the leaf stays a leaf.
+- `FS-RCP-02` → `FS-CLM-11` (`book-1/28-where-people-are-put.md::The repair is to give the record that entry`); ceiling: `Derived`; still does not follow: The alarm watches half the space, the conclusion drops the author, and the delivery gap is exactly as wide as before.
+- `FS-RCP-03` → `FS-CLM-14` (`book-1/22-changing-the-rules.md::The repair is small, which is the lesson`); ceiling: `Derived`; still does not follow: The deciding check is an absence whose completeness is external, and if an assembly ever dockets a person the void arrives through the front door.
+- `FS-RCP-04` → `FS-CLM-36` (`book-1/25-voiding.md::Those are real repairs to the attacks this chapter used to disclose`); ceiling: `Derived`; still does not follow: A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.
+- `FS-RCP-05` → `FS-CLM-19` (`book-1/25-voiding.md::Koa recorded a finding about Esa`); ceiling: `Derived`; still does not follow: The record still buys an author for the why and not its truth, and the void's own grounds stay deliberately unasked.
+- `FS-RCP-06` → `FS-CLM-05` (`book-1/04-what-you-are-owed.md::The lifecycle is specified, but it is not operated.`); ceiling: `Derived`; still does not follow: No service offer, accessibility, adequacy, writer authentication, actual-world arrival, performed continuity, completed remedy, recurrence monitoring, future non-recurrence, or institutional liveness follows.
 
 ## Reproduce
 

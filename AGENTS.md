@@ -22,7 +22,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ```bash
 ./verify.sh                 # all substantive pins and contradiction checks
 ./verify.sh --list          # show the execution inventory
-./verify.sh --only book-1/02-what-counts-as-evidence.pins.nibli
+./verify.sh --only book-1/03-what-counts-as-evidence.pins.nibli
 ./generate.sh state-form    # explicit authoring, separate from verification
 ./generate.sh obligations
 ./generate.sh integrity

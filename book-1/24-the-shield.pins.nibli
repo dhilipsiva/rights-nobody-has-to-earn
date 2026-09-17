@@ -1,0 +1,205 @@
+# ── Chapter 24 fidelity pins: "The Shield" ────────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/24-the-shield.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 34
+
+# DON — "Don injured Pax. Then Don exposed Pax."
+? injure(Don, Pax).
+# => TRUE
+
+? show(Don, Pax).
+# => TRUE
+
+# "Pax has none." — the condition that fails
+? authority(Pax).
+# => FALSE
+
+# "Don has no shield and Don is a prisoner."
+? defend(Don).
+# => FALSE
+
+? prisoner(Don).
+# => TRUE
+
+# SLY — "Sly injured Pax too. Then Sly exposed the court."
+? injure(Sly, Pax).
+# => TRUE
+
+? show(Sly, Court).
+# => TRUE
+
+? authority(Court).
+# => TRUE
+
+# THE CONJUNCT THE SLY SECTION TURNS ON, and it was tested only through its
+# result until now. Sly and Kel are name-swapped duplicates in the cast except
+# for two facts, and this absence is one of them. `defend(Sly)` below would
+# break if a deceit finding were written, so the protection existed — but the
+# claim the chapter actually makes is about the ABSENCE, and an absence tested
+# only downstream is an absence nobody has named.
+? deceive(Sly, Court).
+# => FALSE
+
+# "So Sly's shield holds, and Sly ... walks free."
+? defend(Sly).
+# => TRUE
+
+? prisoner(Sly).
+# => FALSE
+
+# KEL — "Then the review body examined the exposure and found it deceitful."
+? show(Kel, Court).
+# => TRUE
+
+? deceive(Kel, Court).
+# => TRUE
+
+# "Kel's shield falls ... Kel is a prisoner ... Kel's own credibility is voided."
+# KEL RESOLVES ONLY BECAUSE KEL EXPOSED ONCE. These three are per-subject and a
+# per-subject pin cannot see a per-PAIR defect — the shield rule is satisfied by
+# ANY qualifying pair, so a second exposure reopens it. That is what the Rex
+# block below exists to hold, and why it is not enough to pin Kel.
+? defend(Kel).
+# => FALSE
+
+? prisoner(Kel).
+# => TRUE
+
+? false(Kel).
+# => TRUE
+
+# REX — "Rex did what Kel did, and then did one more thing."
+# The disclosed cost of scoping the shield to the exposure. If any of these six
+# flip, chapter 24's "Rex" section and the second item in "What it costs" are
+# both wrong, and so is the constitution's E1d commentary.
+? show(Rex, Court).
+# => TRUE
+
+? deceive(Rex, Court).
+# => TRUE
+
+# "Rex's credibility was destroyed by the same counter-audit."
+? false(Rex).
+# => TRUE
+
+# "Then Rex exposed the review body. Nobody has examined that one."
+? show(Rex, Review).
+# => TRUE
+
+# ...and the body Rex exposed has standing, which is the other half of "a fresh
+# claim against an authority". `authority(Court)` is pinned five ways across the
+# suite; its twin was pinned nowhere in the repo until now, so the second
+# exposure's premise rested on nothing.
+? authority(Review).
+# => TRUE
+
+# THE PAIR THAT MATTERS. Voided and shielded at once — the finding against the
+# first exposure has nothing to say about the second.
+? defend(Rex).
+# => TRUE
+
+? prisoner(Rex).
+# => FALSE
+
+# ── THE TIGHTENING THAT CANNOT BE MADE ───────────────────────────────────────
+# The natural repair — shield persons only — closes a negative cycle through
+# the shield's own head (person <- prisoner, prisoner reads ~defend) and the
+# stratifier refuses it by name. The three queries after it are the hazard the
+# constitution's v0.9 note records: a refused tightening leaves the permissive
+# rule in force with every verdict intact, so it protects nobody it meant to
+# stop protecting. If the refusal ever stops firing, the engine's cycle
+# detection changed and Article 7's note is stale.
+:refuse reasoning /Unstratifiable/
+all $w: all $o: show($w, $o) & authority($o) & person($w) & ~deceive($w, $o) -> defend($w).
+
+? defend(Sly).
+# => TRUE
+
+? prisoner(Sly).
+# => FALSE
+
+? defend(Rebel).
+# => TRUE
+
+# ── THE FRAME-UP COMPLETED FROM OUTSIDE ──────────────────────────────────────
+# Don's frame-up fails on an absence: Pax holds no standing, pinned FALSE at the
+# top of this file beside defend(Don) FALSE and prisoner(Don) TRUE. Those three
+# are the negative control for what follows. Standing by the public route is a
+# single admitted entry that nobody adjudicates — so write it about the victim
+# and the absence is gone. The shield attaches to the exposure Don manufactured
+# and the conviction stops deriving. Ground fact, so it persists; the reach-back
+# block below does not read Pax.
+public(Pax).
+
+? authority(Pax).
+# => TRUE
+
+? defend(Don).
+# => TRUE
+
+? prisoner(Don).
+# => FALSE
+
+# ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
+# "A defendant a century from now can reach back, expose someone nobody
+# remembers, and open the window." Executed, minus the century: T2 can represent
+# separately witnessed order, but the shield deliberately consumes no such
+# claim, and nothing below says whether Zeno's exposure came before or after
+# Boss's recall. Boss is
+# deliberately an existing name — reaching back to him is the exhibit — and
+# everything else is fresh. One write blocks a conviction.
+person(Zeno).
+injure(Zeno, Yara).
+judge(Court, Zeno).
+cite(Court, Case_Zeno, Zeno).
+observe(Chronicle, Case_Zeno, Zeno, CaseScope).
+observe(TemporalReview, Case_Zeno, Zeno, CaseScope).
+observe(Chronicle, Case_Zeno, Court, HolderScope).
+observe(TemporalReview, Case_Zeno, Court, HolderScope).
+observe(Chronicle, Case_Zeno, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Zeno, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Zeno, Yara, InjuryVictimScope).
+observe(TemporalReview, Case_Zeno, Yara, InjuryVictimScope).
+authorized(Case_Zeno, ActiveCustody, Case_Zeno).
+observe(Chronicle, Case_Zeno, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Zeno, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Zeno, Case_Zeno, CaseBindingScope).
+observe(TemporalReview, Case_Zeno, Case_Zeno, CaseBindingScope).
+limit(Case_Zeno, Case_Zeno, Window_Custody).
+observe(Chronicle, Case_Zeno, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Zeno, Window_Custody, LimitScope).
+continue(Case_Zeno, Epoch_Current).
+observe(Chronicle, Case_Zeno, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Zeno, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_Zeno).
+endorses(TemporalReview, Case_Zeno).
+
+? prisoner(Zeno).
+# => TRUE
+
+show(Zeno, Boss).
+
+? prisoner(Zeno).
+# => FALSE
+
+? defend(Zeno).
+# => TRUE
+
+# ...and the man he reached back to was recalled long since. The shield does
+# not ask.
+? broken(Boss).
+# => TRUE

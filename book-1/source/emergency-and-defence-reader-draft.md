@@ -4,7 +4,7 @@
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The two
 sections below are inserted unchanged in
-`book-1/10-the-vote-conviction-does-not-take.md`: the first between "A crisis
+`book-1/18-the-vote-conviction-does-not-take.md`: the first between "A crisis
 does not suspend the republic" and "Power does not grow at the border", the
 second between "Power does not grow at the border" and "Speaking for conditions
 nobody may spend away". Their supporting cases are listed in the chapter's pin
