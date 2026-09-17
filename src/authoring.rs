@@ -14,6 +14,8 @@ use crate::context::Context;
 mod adversarial_audit;
 #[path = "authoring/amendment.rs"]
 mod amendment;
+#[path = "authoring/contents.rs"]
+pub(crate) mod contents;
 #[path = "authoring/ecology.rs"]
 mod ecology;
 #[path = "authoring/integrity.rs"]
@@ -298,6 +300,9 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
 #[cfg(test)]
 #[path = "authoring/claim_discipline_tests.rs"]
 mod claim_discipline_tests;
+#[cfg(test)]
+#[path = "authoring/reference_integrity_tests.rs"]
+mod reference_integrity_tests;
 
 #[cfg(test)]
 #[path = "authoring/floor_vector_tests.rs"]

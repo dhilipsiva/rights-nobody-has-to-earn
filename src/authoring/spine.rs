@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 
+use super::contents::{self, Contents};
 use crate::cli::Error;
 use crate::context::Context;
 use crate::pin::{self, LoadedSource};
@@ -44,12 +45,23 @@ pub(crate) fn run(
     let strata = parse_strata(&strata.stdout)?;
     let body = render(&source, &strata)?;
     let old = std::fs::read_to_string(&document)?;
-    let new = replace_region(&old, &body).ok_or_else(|| {
+    let new = contents::replace_region(&old, BEGIN, END, &body).ok_or_else(|| {
         Error::new(format!(
             "{}: no generated region — add the BEGIN/END markers first",
             document.display()
         ))
     })?;
+    // The reading order is the second generated region: editorial, from the
+    // manifest, and rendered here so the hand-authored list below it can never
+    // again be the only statement of it.
+    let order = Contents::load(context)?.render();
+    let new = contents::replace_region(&new, contents::BEGIN, contents::END, &order)
+        .ok_or_else(|| {
+            Error::new(format!(
+                "{}: no generated contents region — add the markers first",
+                document.display()
+            ))
+        })?;
     if new == old {
         return Ok(format!("{}: already current", document_relative.display()));
     }
@@ -227,20 +239,6 @@ fn cone_monotone(predicate: &str, graph: &Strata, seen: &mut HashSet<String>) ->
 
 fn is_artifact(name: &str) -> bool {
     name == "event" || name.starts_with("__abs_")
-}
-
-fn replace_region(source: &str, body: &str) -> Option<String> {
-    let begin = source.find(BEGIN)?;
-    let content_start = begin + BEGIN.len();
-    let end_offset = source[content_start..].find(END)?;
-    let end = content_start + end_offset;
-    Some(format!(
-        "{}{}\n{}\n{}",
-        &source[..begin],
-        BEGIN,
-        body,
-        &source[end..]
-    ))
 }
 
 #[cfg(test)]

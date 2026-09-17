@@ -8,9 +8,9 @@ cannot override, complete, or upgrade it. It contains the epigraph, opening note
 derived chapters in the ruled reading order, Part V, and method part. The
 numbered chapters between the opening note and Part V are the derived
 spine—their order is editorial, *engines before breaks*, ruled on 2026-09-16 and
-recorded in `contents.json` once the rebuild's tracker lands it (the filename
-prefix until then); their claims derive from the constitution and are pinned
-by the `*.pins.nibli` files beside them. Its companion volume is Book 2, *What
+recorded in `contents.json`, of which the filename prefix is a checked
+projection; their claims derive from the constitution and are pinned by the
+`*.pins.nibli` files beside them. Its companion volume is Book 2, *What
 It Would Take*: this book is the destination, that one is the road. Exactly three elements are exempt from the
 derivation gate and labelled so in their own text: the opening note, Part V, and
 the method part.

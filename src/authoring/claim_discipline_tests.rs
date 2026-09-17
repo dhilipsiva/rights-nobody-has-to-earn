@@ -19,7 +19,13 @@ use regex::Regex;
 use serde_json::Value;
 use std::collections::BTreeSet;
 
-const PART_V: &str = "book-1/15-the-five-joints.md";
+/// Part V, read from the manifest: the one landed exempt chapter.
+fn part_v(context: &Context) -> String {
+    contents::Contents::load(context)
+        .expect("manifest")
+        .part_v()
+        .expect("Part V")
+}
 
 /// Each historical case Part V argues from, the registry entry it rests on, and
 /// a figure or name that must still be in the prose. Both directions matter:
@@ -59,7 +65,7 @@ fn every_part_v_figure_rests_on_a_registry_entry() {
     // Match against whitespace-normalised prose: these phrases sit across line
     // wraps, and a binding that broke on rewrapping would be noise, not a check.
     let prose = context
-        .read(PART_V)
+        .read(part_v(&context))
         .expect("Part V")
         .split_whitespace()
         .collect::<Vec<_>>()
@@ -109,21 +115,12 @@ fn the_derived_chapters_still_carry_no_figures() {
     // shape is "four people have shelter", and the difference from "it takes two
     // auditors" is semantic. An allowlist of 60 sentences would rot faster than
     // the prose. The spelled-out half is prose review.
-    let mut files: Vec<_> = std::fs::read_dir(context.path("book-1"))
-        .expect("book-1")
-        .filter_map(Result::ok)
-        .map(|entry| entry.file_name().to_string_lossy().into_owned())
-        .filter(|name| {
-            name.ends_with(".md")
-                && name.starts_with(|c: char| c.is_ascii_digit())
-                && name != "00-opening-note.md"
-                && name != "15-the-five-joints.md"
-        })
-        .collect();
-    files.sort();
-    assert_eq!(files.len(), 14, "the derived chapter set changed");
-    for name in files {
-        let path = format!("book-1/{name}");
+    // The derived set is the manifest's, not a count: `reference_integrity_tests`
+    // proves the manifest and the directory agree, so a chapter on disk that the
+    // manifest does not know fails there rather than here.
+    let files = contents::Contents::load(&context).expect("manifest").derived();
+    assert!(!files.is_empty(), "the manifest lists no derived chapters");
+    for path in files {
         for (index, line) in context.read(&path).expect("chapter").lines().enumerate() {
             if line.starts_with("# ") || line.starts_with("{") {
                 continue;

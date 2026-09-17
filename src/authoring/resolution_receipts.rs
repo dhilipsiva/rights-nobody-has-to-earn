@@ -111,17 +111,7 @@ pub(crate) fn validate(context: &Context, receipts: &[Receipt]) -> Result<(), Er
         .iter()
         .map(|receipt| receipt.chapter.as_str())
         .collect();
-    let mut chapters: Vec<String> = std::fs::read_dir(context.path("book-1"))?
-        .filter_map(Result::ok)
-        .map(|entry| format!("book-1/{}", entry.file_name().to_string_lossy()))
-        .filter(|name| {
-            name.ends_with(".md")
-                && name["book-1/".len()..].starts_with(|c: char| c.is_ascii_digit())
-                && !name.ends_with("00-opening-note.md")
-        })
-        .collect();
-    chapters.sort();
-    for chapter in chapters {
+    for chapter in super::contents::Contents::load(context)?.numbered() {
         let prose = context.read(&chapter)?;
         let flat = prose.split_whitespace().collect::<Vec<_>>().join(" ");
         if narrates.is_match(&flat) && !receipted.contains(chapter.as_str()) {

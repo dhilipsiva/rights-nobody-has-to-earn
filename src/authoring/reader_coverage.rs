@@ -8,6 +8,7 @@
 //! the person in it is doing, and how it ends. Its value is the gaps it
 //! exposes, so the report prints those first and does not average them away.
 
+use super::contents::Contents;
 use super::Export;
 use crate::{cli::Error, context::Context};
 use regex::Regex;
@@ -113,22 +114,12 @@ pub(crate) fn records(context: &Context) -> Result<Vec<Record>, Error> {
     Ok(source.records)
 }
 
-/// Every `## ` heading of a derived chapter and of Part V, in file order. The
-/// opening note is one of the three exempt elements and is deliberately absent.
+/// Every `## ` heading of a derived chapter and of Part V, in reading order —
+/// the manifest's order, which the filename prefixes project. The opening note
+/// is one of the three exempt elements and is deliberately absent.
 pub(crate) fn headings(context: &Context) -> Result<Vec<(String, String)>, Error> {
     let mut rows = Vec::new();
-    let mut files: Vec<_> = std::fs::read_dir(context.path("book-1"))?
-        .filter_map(Result::ok)
-        .map(|entry| entry.file_name().to_string_lossy().into_owned())
-        .filter(|name| {
-            name.ends_with(".md")
-                && name.starts_with(|c: char| c.is_ascii_digit())
-                && name != "00-opening-note.md"
-        })
-        .collect();
-    files.sort();
-    for name in files {
-        let path = format!("book-1/{name}");
+    for path in Contents::load(context)?.numbered() {
         // Everything before the first heading is a passage too, and it is where
         // several chapters do their most substantive work.
         rows.push((path.clone(), PREAMBLE.to_owned()));

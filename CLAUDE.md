@@ -3214,10 +3214,25 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   files are the two 2026-09-16 controlling records; the other forty-five arrive
   with the tracker's move item. Non-derived, outside the reading order and the
   length measurement, never the sole support for a chapter's claim.
-- `book-1/source/`, `book-1/contents.json`, `tools/` — created by the tracker's
-  items: the formal source and everything else from `new-book-plans/` by flat
-  rename; the chapter manifest (rule, parts, landed and planned entries); the
-  relocation tool and its applied maps.
+- `book-1/contents.json` — the chapter manifest: front matter, parts, every
+  chapter with its number, file, title, role (derived/exempt), group
+  (engine/break) and status (landed/planned), and — once the tree follows it —
+  the ordering rule. `src/authoring/contents.rs` reads it; the digit gate, the
+  coverage ledger, the receipts and the spine's generated reading-order block
+  all take the chapter list from it, and `reference_integrity_tests` prove it
+  matches the directory (prefix == position, pins paired, one live case per
+  derived chapter), that the opening note's contents follow it, that every
+  relative link resolves, and that every reviewed `path::needle` reference
+  resolves exactly once against a dated baseline.
+- `tools/relocate.py` — `plan`, `apply`, `check`: derives a rename map from the
+  manifest against the directory, git-moves the files, rewrites every reference
+  (path stems longest-first, guarded basenames, chapter labels in one
+  simultaneous pass, reader-coverage ids and order), and proves afterwards that
+  no old reference survives and that the never-touched set is byte-identical.
+  Applied maps live in `tools/maps/` and are the key between pre- and
+  post-reorder chapter numbers.
+- `book-1/source/` — created by the tracker's move item: the formal source and
+  everything else from `new-book-plans/` by flat rename.
 - `new-book-plans/` — constitution, substantive design decisions, legal
   contracts, formal pins, and historical planning material. **Moves under
   `book-1/` by the tracker's move item (R5)**: decisions, contracts, briefs and

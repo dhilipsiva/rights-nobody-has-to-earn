@@ -53,15 +53,6 @@ needed.
 
 ### Phase A — the heart and the order
 
-2. **Give the book a contents manifest, a relocation tool, and
-   reference-integrity tests.** `book-1/contents.json` in the *current* order
-   with roles/groups and no `rule` field; `src/authoring/contents.rs`; the three
-   Rust sites, `combine.sh`, the pilot line switched to the manifest;
-   `tools/relocate.py`; `reference_integrity_tests.rs` with the needle baseline
-   measured **before** anything moves. Nothing moves. *Done when:* `cargo test`
-   green with the fixed 14 and the two literal filenames gone; `./verify.sh`
-   green; `bash combine.sh` and a pilot build produce the same ordered inputs
-   as before.
 3. **Move `new-book-plans/` under `book-1/`: the planning record to
    `book-1/appendix/`, everything else to `book-1/source/`.** One map
    (`tools/maps/2026-09-16-fold.json`: the 45 appendix moves with their
@@ -90,7 +81,10 @@ needed.
    when:* `./verify.sh --only` each, then full; `:expect-pins` floors set.
 5. **Write the heart chapter — *The Child With Nobody* — as chapter 1.**
    Insert at 01 (manifest edit → `plan` → `apply` shifts the fourteen by one;
-   map `2026-09-16-heart.json`); chapter prose (D3 shape) + paired pins file +
+   map `2026-09-16-heart.json`; the tool moves files and rewrites references,
+   and the opening note's per-part contents bullets are then reordered by hand —
+   `opening_note_navigation_matches_the_manifest` reports until they are);
+   chapter prose (D3 shape) + paired pins file +
    suites case listing the fixture + ledger rows + opening-note contents/
    glossary/index/domain entries; `claim_discipline` and coverage green. *Done
    when:* `check`; `cargo test`; `./verify.sh`; `reader-coverage.md`
@@ -104,7 +98,8 @@ needed.
    verb, no guarantee-of-growth claim (register audit before commit).
 7. **Rule the reading order and renumber once to the final table.** Manifest
    gets `rule` and the D1 table with `planned` entries; `plan` → map
-   `2026-09-16-reorder.json` → `apply` → `check`;
+   `2026-09-16-reorder.json` → `apply` → `check` (then reorder the opening
+   note's per-part contents bullets by hand until the navigation test passes);
    `derived_chapters_run_engines_before_breaks` added; `3-spine.md` header
    corrected, generated contents block, old hand list re-headed "superseded
    2026-09-16 — pre-reorder numbers"; opening note 22-24 and 729-741 rewritten

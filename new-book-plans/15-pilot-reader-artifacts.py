@@ -864,11 +864,14 @@ def watched_link_controls(documents: list[SourceDocument]) -> int:
         if document.path.name == "00-opening-note.md"
     )
     source = documents[source_index]
+    # The last numbered input is Part V today; read it rather than naming it, so a
+    # renumber cannot leave this control pointing at a file that no longer exists.
+    last_numbered = [d for d in documents if d.path.name[:2].isdigit()][-1]
     controls = (
         ("missing local file", "does-not-exist.md", "not an ordered input"),
         (
             "missing local fragment",
-            "15-the-five-joints.md#does-not-exist",
+            f"{last_numbered.path.name}#does-not-exist",
             "fragment does not exist",
         ),
     )

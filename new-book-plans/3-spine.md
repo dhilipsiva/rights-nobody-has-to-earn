@@ -136,6 +136,45 @@ Two consequences for the book:
 
 ## 3. The spine
 
+The chapter sequence is editorial — ruled 2026-09-16, *engines before breaks* —
+and its one statement is `book-1/contents.json`. The block below is generated
+from that manifest by `./generate.sh spine`; the hand list after it is the
+older narrative of the order and is kept as history rather than as a second
+source of it.
+
+<!-- BEGIN GENERATED: contents -->
+Reading order, from `book-1/contents.json`. No ordering rule is recorded yet; the sequence is the one the filename prefixes carry.
+
+Front matter: `epigraph.md`, `00-opening-note.md`.
+
+| # | Chapter | File | Role | Group | Status |
+|---|---|---|---|---|---|
+| **Part I — What the world is allowed to say** | | | | | |
+| 01 | What Counts as Evidence | `01-what-counts-as-evidence.md` | derived | engine | landed |
+| 02 | Public Answerability, and Why It Is Never Revoked | `02-public-answerability.md` | derived | engine | landed |
+| **Part II — Accountability** | | | | | |
+| 03 | Who Holds the Pen | `03-who-holds-the-pen.md` | derived | engine | landed |
+| 04 | The Shield | `04-the-shield.md` | derived | break | landed |
+| 05 | Voiding | `05-voiding.md` | derived | break | landed |
+| 06 | Clawback | `06-clawback.md` | derived | break | landed |
+| **Part III — Status and consequence** | | | | | |
+| 07 | A Prisoner Is a Person | `07-a-prisoner-is-a-person.md` | derived | break | landed |
+| 08 | What You Are Owed | `08-what-you-are-owed.md` | derived | engine | landed |
+| 09 | The Vote Conviction Does Not Take | `09-the-vote-conviction-does-not-take.md` | derived | engine | landed |
+| 10 | Contribution | `10-contribution.md` | derived | engine | landed |
+| 11 | Where People Are Put | `11-where-people-are-put.md` | derived | break | landed |
+| 12 | Changing the Rules | `12-changing-the-rules.md` | derived | engine | landed |
+| **Part IV — The top of the graph** | | | | | |
+| 13 | The One Thing Taken | `13-the-one-thing-taken.md` | derived | break | landed |
+| 14 | When the System Notices It Broke | `14-when-the-system-notices-it-broke.md` | derived | break | landed |
+| **Part V — Outside the graph** | | | | | |
+| 15 | The Five Joints | `15-the-five-joints.md` | exempt | — | landed |
+
+Back matter: `method.md`.
+<!-- END GENERATED: contents -->
+
+### The hand list
+
 **Opening note** — *explicitly not derived*, ~800 words. What the book is and how to
 read it. Labelled the same way Part V is labelled, so the reader can feel the seam.
 It exists so the book does not open cold on vocabulary. It claims no derivation and
