@@ -53,13 +53,6 @@ needed.
 
 ### Phase A — the heart and the order
 
-6. **Open the book on the argument.** Opening note: the argument block (D4),
-   `### The child and the prisoner` replacing "Why the prisoner appears so
-   early", line 18 back-reference, `:172`; Book 2 named on the first page;
-   Part V `:556`/`:836` and `method.md:942` seam sentences; recorded as
-   `session-drafted, author-approved under delegated approval (2026-09-16)`.
-   *Done when:* navigation test green; `cargo test`; `./verify.sh`; no arrival
-   verb, no guarantee-of-growth claim (register audit before commit).
 7. **Rule the reading order and renumber once to the final table.** Manifest
    gets `rule` and the D1 table with `planned` entries; `plan` → map
    `2026-09-16-reorder.json` → `apply` → `check` (then reorder the opening

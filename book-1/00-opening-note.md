@@ -5,17 +5,79 @@ at its end. Everything between them was made differently, and the difference is
 the reason this book exists.
 
 Here is what you are holding. It is a design for a society — not a case for one,
-not a story about one, and not a plan for getting to one from here. It describes
-a place where certain things are owed to every person from the day they exist,
-where nothing has to happen first — no work, no papers, no belonging, no good
-behaviour — and where the machinery that could take those things away has been
-worked on until most of the taking became impossible to even write down. The
-rules now say how that beginning enters the design: birth, being within its
-jurisdiction or effective control, or first contact is enough. A temporary name
-for that encounter is enough to start what is owed. It is not proof of civil
-identity, and help may not wait for the proof.
+not a story about one, and not a plan for getting to one from here — that plan
+is the second book, *What It Would Take*. It describes a place where certain
+things are owed to every person from the day they exist, where nothing has to
+happen first — no work, no papers, no belonging, no good behaviour — and where
+the machinery that could take those things away has been worked on until most of
+the taking became impossible to even write down. The rules now say how that
+beginning enters the design: birth, being within its jurisdiction or effective
+control, or first contact is enough. A temporary name for that encounter is
+enough to start what is owed. It is not proof of civil identity, and help may
+not wait for the proof.
 
-I say "worked on" because that is the honest verb. The society in these pages
+I should say what I mean by the most vulnerable person, because the phrase
+usually hides a judgement and I want it to hide nothing. I mean a test on the
+record, not a description of anyone. First, every private route to what a
+person needs is absent: no parent, no relative, no household, no association
+or charity that the rules could presume is feeding or housing or watching over
+them. Second, they cannot get help, make a challenge, or be heard on their
+own, and nobody has been chosen to do it for them. Third, public power has not
+acted on them — nobody has arrested, placed, assessed or registered them — so
+nothing guarantees that they appear in the record at all. A newborn with
+nobody meets every part of that test at once, which is why this book opens on
+that child and keeps returning to that child. But so does an unconscious adult
+nobody has come for, a person whose only supporter is the one accused of
+failing them, and a stranger under this society's control whose language
+nobody present speaks. The test names which entries are missing. It never
+names what somebody is.
+
+The design's answer to the test is the shortest sentence in the book: the
+public duty does not read any of those entries. What is owed follows from
+being a person, and being a person follows from a birth, a first contact,
+being within the society's reach, or being under its control — nothing more.
+There is no field in the record for *vulnerable*. It is not even a word the
+record can hold, and the first chapter shows it being refused before it can
+load. That is deliberate. A society that first has to decide who is
+vulnerable has built the instrument for deciding who is not.
+
+Now the argument, and I mark it as argument because no machine checked it. If
+the person the record knows least about is protected by rules that read
+nothing but personhood, then everyone about whom the record knows more is
+protected by the same rules, because the extra entries are not conditions. I
+believe that building against this case surfaces defects that would otherwise
+reach people who are easier to overlook. The one instance I can point to is
+executable: the standing rules were built for the person who cannot produce a
+record, and the same rules turned out to cover the undocumented adult, the
+person present without papers, and the person under this society's control.
+The general claim is mine. The instance is the machine's.
+
+The prisoner is this book's other test, and the two fail in opposite
+directions. Public power has acted on the prisoner, so the record is full — a
+case, a judgment, witnesses, a custody authority with a window. It has not
+acted on the child, so the record is nearly empty. In the record supplied with
+this book, the person public power holds is the only kind of person for whom
+shelter and a recorded voice actually derive, and they derive through the
+holding. For the child, nothing arrives at all. If you want to know whether a
+rule protects people or merely describes them, run it against both. Read
+every chapter that follows that way.
+
+You will notice that this book never tells you what the child feels. That is
+not coldness and it is not an oversight. The record holds one line about the
+child, and a book that added fear or comfort to it would be writing exactly
+the kind of entry the record refuses to hold. If you find yourself supplying
+the feeling, notice that it is you supplying it — and then ask, of every rule
+in the book, the only question the book can answer: what does this do for a
+person about whom it knows nothing except that they exist?
+
+That is why the book is called *The Rights Nobody Has to Earn*. The word doing
+the work is *nobody*: the child has earned nothing, can earn nothing, and is
+owed everything the rules owe anyone. The rest of the title — worked out to
+the point where it catches its own failures — is the other half of the same
+page: the design can say with total precision what the child is owed, and
+cannot say that any of it arrived.
+
+I said "worked on" because that is the honest verb. The society in these pages
 exists as an actual set of rules, and the rules were checked — by a machine that
 does not care what I hoped they would do, only what they do. When a rule
 contradicted the design's own promises, the machine refused it, and some of
@@ -153,23 +215,25 @@ make a certified failure to respond consequential, and name continuity and
 remedy. It still does not prove that the reader received the case, acted, or
 repaired anything. Naming either gap is not the same as closing it.
 
-### Why the prisoner appears so early
+### The child and the prisoner
 
-The prisoner is the design's hardest stress test, not its model citizen and not
-the ordinary inhabitant of the society. A person in custody is where public
-power is most concentrated, where exit is least available, and where a promise
-of equal personhood and floor is easiest to qualify away. The rules also make
-that case structurally central: personhood, the floor, the vote, placement,
-movement, and the breach markers depend on one another in an order the chapter
-sequence must follow.
+The book carries two test cases, and they fail in opposite directions. The
+child with nobody is the person public power has not acted upon: one entry, a
+birth, and nothing else. The prisoner is the person it has: a case, a
+judgment, witnesses, a custody authority. Everything the child is owed derives
+from personhood alone and nothing is shown to arrive; the prisoner is owed the
+same floor and is the one person in the supplied record for whom shelter and a
+recorded voice actually derive, through the holding itself. Neither is the
+society's model inhabitant. Ordinary care, work, learning, association,
+democratic choice, and free life remain the standard against which both tests
+matter.
 
-The resulting spine spends many chapters near conviction and confinement. Read
+The spine still spends many chapters near conviction and confinement. Read
 that as a finding about what the present rules formalise most deeply, not as a
-claim that social life is mostly prison. Ordinary care, work, learning,
-association, democratic choice, and free life remain the standard against which
-the stress test matters.
+claim that social life is mostly prison.
 
-First-pass readers should read the short map through the prisoner framing above,
+First-pass readers should read the short map through the child and the prisoner
+above,
 then may continue directly to [Chapter 1](01-the-child-with-nobody.md). The
 contents, glossary, indexes, and diagrams below are reference sections to return
 to later.

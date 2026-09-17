@@ -553,7 +553,7 @@ no common adulthood age, clinic, care route, confidential intake, support
 network, placement, inspector, reproductive service, palliative capacity,
 death-registration system, probate administration, staff, budget, or completed
 remedy. They do not borrow T3's custody record for another power. Operations,
-service design, and delivery remain a Book 2 handoff.
+service design, and delivery remain a handoff to Book 2, *What It Would Take*.
 
 India, because this is not hypothetical and not every reader carries the
 context. India's welfare system feeds hundreds of millions through ration
@@ -833,7 +833,7 @@ Everything on the operating side — bakeries, water systems, clinics, transport
 communications, tax administration, rosters, ballots, tallies, publications,
 facilities, salaries, logistics, staffing, maintenance, capacity, notification,
 enforcement, performed remedies, recurrence monitoring, transition, and legitimacy —
-belongs to the second book about building. The objection that survives, whole, is
+belongs to *What It Would Take*, the second book, about building. The objection that survives, whole, is
 legitimacy: no argument in this part makes anyone *adopt* these rules, constitutions
 are not adopted for technical merit, and the reviewer who said the bridging book is
 unwritten is right. I am its author; that book needs people I have not met.

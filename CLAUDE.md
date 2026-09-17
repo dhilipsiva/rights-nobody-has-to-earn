@@ -2639,8 +2639,9 @@ lands; the supersession notes that follow implementation are added here as
 each item lands. The controlling records are the first two files under
 `book-1/appendix/decisions/`, the directory the fold (R5) populates.
 
-**R1 — The child is the heart.** *(The chapter and its pins landed 2026-09-17;
-the argument, the slots and the reorder follow.)* The caregiverless child is the opening
+**R1 — The child is the heart.** *(The chapter, its pins and the opening
+argument landed 2026-09-17, `session-drafted, author-approved under delegated
+approval (2026-09-17)`; the slots and the reorder follow.)* The caregiverless child is the opening
 argument (exempt), the first derived chapter (*The Child With Nobody* — a
 record of one line, `born(Nell).`, introduced by fixture and never added to
 the cast), and the closing test section `## The child with nobody` of every

@@ -941,7 +941,8 @@ bread to housing to the people who show up when the alarm sounds. Those
 questions are real, they are answerable, and they deserved better than a
 final chapter's gesture at them.
 
-They are the next book. This one was the destination; that one is the road.
+They are the next book, *What It Would Take*. This one, *The Rights Nobody
+Has to Earn*, was the destination; that one is the road.
 If you have read this far — past the rules, past the failures, past the
 paragraph where I told you exactly who has not yet checked this work — then
 you are the reader that book will be written for.
