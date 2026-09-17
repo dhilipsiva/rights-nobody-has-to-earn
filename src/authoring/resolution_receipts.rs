@@ -13,8 +13,8 @@ use serde::Deserialize;
 use std::collections::BTreeSet;
 use std::fmt::Write as _;
 
-const SOURCE: &str = "new-book-plans/resolution-receipts-source.json";
-const REPORT: &str = "new-book-plans/resolution-receipts.md";
+const SOURCE: &str = "book-1/source/resolution-receipts-source.json";
+const REPORT: &str = "book-1/source/resolution-receipts.md";
 
 /// The only honest endings. `resolved-for-claim` closes the narrower claim its
 /// rerun establishes and nothing wider; the other four do not close anything.

@@ -78,17 +78,17 @@ fn generation_is_explicit_idempotent_and_preserves_other_families() {
     let live = Context::discover().unwrap();
     let dir = tempfile::tempdir().unwrap();
     let context = Context::from_test_root(dir.path().to_owned());
-    std::fs::create_dir_all(context.path("new-book-plans")).unwrap();
-    let original = live.read("new-book-plans/constitution.nibli").unwrap();
-    std::fs::write(context.path("new-book-plans/constitution.nibli"), &original).unwrap();
+    std::fs::create_dir_all(context.path("book-1/source")).unwrap();
+    let original = live.read("book-1/source/constitution.nibli").unwrap();
+    std::fs::write(context.path("book-1/source/constitution.nibli"), &original).unwrap();
     let mut first = Export::new();
     generate(&context, &mut first).unwrap();
-    let generated = context.read("new-book-plans/constitution.nibli").unwrap();
+    let generated = context.read("book-1/source/constitution.nibli").unwrap();
     let mut second = Export::new();
     generate(&context, &mut second).unwrap();
     assert_eq!(
         generated,
-        context.read("new-book-plans/constitution.nibli").unwrap()
+        context.read("book-1/source/constitution.nibli").unwrap()
     );
     assert_eq!(
         serde_json::to_value(&first).unwrap(),
@@ -184,7 +184,7 @@ fn actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequen
     );
     let source = Context::discover()
         .unwrap()
-        .read("new-book-plans/constitution.nibli")
+        .read("book-1/source/constitution.nibli")
         .unwrap();
     assert!(accepts(&source), "unreviewed mobility/plurality consumer");
     for hostile in [

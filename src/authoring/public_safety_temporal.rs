@@ -366,7 +366,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = super::super::cards(&context).unwrap();
                 let candidate = super::super::render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();

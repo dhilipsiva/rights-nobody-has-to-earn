@@ -17,7 +17,7 @@ fn actual_cases_preserve_judicial_and_person_boundaries() {
 fn run_actual_cases() {
     use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine};
     let context = Context::discover().unwrap();
-    let source = context.read("new-book-plans/constitution.nibli").unwrap();
+    let source = context.read("book-1/source/constitution.nibli").unwrap();
     let inventory: Export =
         serde_json::from_str(&context.read("tests/pins/suites.json").unwrap()).unwrap();
     let mut engines = BTreeMap::new();
@@ -123,22 +123,22 @@ fn generation_is_idempotent_and_preserves_other_families() {
     let live = Context::discover().unwrap();
     let directory = tempfile::tempdir().unwrap();
     let context = Context::from_test_root(directory.path().to_owned());
-    std::fs::create_dir_all(context.path("new-book-plans")).unwrap();
+    std::fs::create_dir_all(context.path("book-1/source")).unwrap();
     for path in [
-        "new-book-plans/constitution.nibli",
-        "new-book-plans/state-form-source.json",
+        "book-1/source/constitution.nibli",
+        "book-1/source/state-form-source.json",
     ] {
         std::fs::copy(live.path(path), context.path(path)).unwrap();
     }
-    let before = context.read("new-book-plans/constitution.nibli").unwrap();
+    let before = context.read("book-1/source/constitution.nibli").unwrap();
     let mut first = Export::new();
     generate(&context, &mut first).unwrap();
-    let generated = context.read("new-book-plans/constitution.nibli").unwrap();
+    let generated = context.read("book-1/source/constitution.nibli").unwrap();
     let mut second = Export::new();
     generate(&context, &mut second).unwrap();
     assert_eq!(
         generated,
-        context.read("new-book-plans/constitution.nibli").unwrap()
+        context.read("book-1/source/constitution.nibli").unwrap()
     );
     assert_eq!(
         serde_json::to_value(&first).unwrap(),

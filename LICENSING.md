@@ -9,11 +9,12 @@ licensed for what it is.
 | Book prose (the new derived book) | Creative Commons Attribution 4.0 International | `CC-BY-4.0` |
 | Code — scripts, harness, data fetchers | MIT **or** Apache-2.0, at your option | `MIT OR Apache-2.0` |
 | Data — the claim registry and fetched figures | CC0 1.0 Universal (public domain) | `CC0-1.0` |
-| The constitution (`new-book-plans/constitution.nibli`) | CC0 1.0 Universal, as a pre-decision file under the root `LICENSE` | `CC0-1.0` |
+| The constitution (`book-1/source/constitution.nibli`) | CC0 1.0 Universal, as a pre-decision file under the root `LICENSE` | `CC0-1.0` |
 
 ## Already dedicated, and not reversible
 
-`book.md`, `manifesto.md`, and everything committed under `new-book-plans/` were
+`book.md`, `manifesto.md`, and everything committed under the former
+`new-book-plans/` — now `book-1/source/` and `book-1/appendix/` — were
 published under the repository's root `LICENSE` — **CC0 1.0**, an *irrevocable*
 dedication to the public domain. That stands. Those files are in the public domain
 and no later decision can withdraw them. The root `LICENSE` therefore stays in
@@ -81,3 +82,11 @@ strictly true of them.
 
 *None of the above is legal advice. If a commercial deal is ever on the table, get
 this reviewed by a lawyer before signing anything.*
+
+## A file's licence travels with it
+
+The SPDX header at the top of a file governs it wherever it lives. Moving a file —
+as the planning record moved from `new-book-plans/` to `book-1/appendix/` and
+the formal source to `book-1/source/` on 2026-09-17 — changes nothing about its
+licence, and a file without a header keeps the dedication the section above
+records.

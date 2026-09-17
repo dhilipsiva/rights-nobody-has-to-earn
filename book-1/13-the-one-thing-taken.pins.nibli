@@ -23,7 +23,7 @@
 #
 # The other: "Nothing depends on it" — travel appears in the constitution only as
 # a rule head. Test the rule BODIES, since a bare grep matches the head too:
-#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' new-book-plans/constitution.nibli
+#   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' book-1/source/constitution.nibli
 # must stay EMPTY. `verify.sh` runs it with a positive control.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
@@ -41,8 +41,8 @@
 # The order may be read; the loss and free-movement capability may not.
 # This checks the enacted source with a live positive control. The authoring
 # development test separately inspects the compiled dependency graph.
-:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])(travel|lose)[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
-:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])restrain[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])(travel|lose)[[:space:]]*\(/ {print}' book-1/source/constitution.nibli)"
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])restrain[[:space:]]*\(/ {print}' book-1/source/constitution.nibli)"
 
 # "Hano was convicted ... and cannot move freely."
 ? prisoner(Hano).

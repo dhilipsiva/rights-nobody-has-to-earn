@@ -272,7 +272,7 @@ pub(super) fn economic_boundary(
     for power in ["081", "082"] {
         // Reuse the actual economic family's first positive witnesses. No
         // declaration substitutes for that family's independent currentness.
-        let source = context.read(&format!("new-book-plans/economic-power-{power}.pins.nibli"))?;
+        let source = context.read(&format!("book-1/source/economic-power-{power}.pins.nibli"))?;
         let mut facts = String::new();
         for line in source.lines().take_while(|line| !line.starts_with("? ")) {
             if line.starts_with("authorized(") || line.starts_with("observe(") {
@@ -447,7 +447,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = super::super::cards(&context).unwrap();
                 let candidate = super::super::render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -478,7 +478,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = super::super::cards(&context).unwrap();
                 let candidate = super::super::render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -509,7 +509,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = super::super::cards(&context).unwrap();
                 let candidate = super::super::render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -542,7 +542,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = super::super::cards(&context).unwrap();
                 let candidate = super::super::render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -576,7 +576,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = super::super::cards(&context).unwrap();
                 let candidate = super::super::render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -606,7 +606,7 @@ mod tests {
         std::thread::Builder::new().stack_size(32 * 1024 * 1024).spawn(|| {
             let context = Context::discover().unwrap();
             let cards = super::super::cards(&context).unwrap();
-            let candidate = super::super::render(&context.read("new-book-plans/constitution.nibli").unwrap(), &cards).unwrap();
+            let candidate = super::super::render(&context.read("book-1/source/constitution.nibli").unwrap(), &cards).unwrap();
             let engine = PreparedPinEngine::new(&[LoadedSource::new("protective candidate", &candidate)]);
             for case in super::firewalls(&cards) {
                 let out = engine.run_case(&[], &[LoadedSource::new(&case.id, &case.pins)], PinOptions::default(), true);

@@ -15,19 +15,21 @@ It Would Take*: this book is the destination, that one is the road. Exactly thre
 derivation gate and labelled so in their own text: the opening note, Part V, and
 the method part.
 
-Book prose may be drafted as one slice of a coherent assurance batch, but it is
-not landed or audited on its own. The same frozen candidate must include the
-formal source, governed contracts, tests, counterfactuals, projections, and every
-other affected passage; it then receives the repository's full receipt, audit,
-and closure chain.
+A chapter lands with the rules it renders: its paired pins file, its case in
+`../tests/pins/suites.json`, its rows in the coverage ledger and its entry in
+the opening note's contents, verified by `../verify.sh` and the development
+tests. The receipt, audit and closure chain that once gated this was retired
+on 2026-09-12.
 
 Two files are deliberately unnumbered — `epigraph.md` and `method.md` —
 because the prose sweeps in `../verify.sh` glob the numbered files only: the
 epigraph is a poem, and the method part must quote the machinery the sweeps
 forbid everywhere else. Do not renumber either; the naming is load-bearing. Two subdirectories are
-not chapters: `appendix/` carries the planning record (decisions, contracts,
-briefs, maps), and `source/` will carry the formal source and everything else
-from `../new-book-plans/` once the rebuild's move item lands.
+not chapters and are outside the reading order and the length measurement:
+`appendix/` carries the planning record (decisions, contracts, briefs, maps —
+the former `new-book-plans/book-1-*` files with that prefix dropped), and
+`source/` carries the formal source and everything beside it (the rest of the
+former `new-book-plans/`, moved by flat rename on 2026-09-17).
 Run `../verify.sh` to check every pinned claim against the constitution.
 
 ## Licence

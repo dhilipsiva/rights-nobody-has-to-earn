@@ -23,7 +23,9 @@ the pins and the checks — and one command re-checks the pinned claims the
 chapters stand on. It incrementally builds the verifier with the engine source
 from the adjacent public-repository checkout before running the pins.
 This part is the guide to that machinery, not a substitute for it. The
-repository is the appendix.
+repository is the appendix: the formal source and its pins sit beside the
+chapters in the book's `source` directory, and the design's own paper trail —
+every decision and contract behind a rule — in its `appendix` directory.
 
 Why does this part exist at all? Because a book that says "a machine checked
 these promises" and then keeps the machine out of sight has asked for exactly

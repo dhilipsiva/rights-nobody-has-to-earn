@@ -6,7 +6,7 @@
 the ordered tracker for the 2026-09-16 rebuild of Book 1 — work it one item at
 a time, in order; `book-2/TODO.md` is Book 2's tracker and is collection-only
 until Book 1 ships at Gate C.
-The constitution and substantive Nibli pins live under `new-book-plans/`;
+The constitution and substantive Nibli pins live under `book-1/source/`;
 `book-1/` is their reader projection, with chapter/pin pairs. Its labelled
 opening note, Part V, and method are the non-derived exceptions. Book 2 remains
 inactive until Gate C and owns operation and transition. Preserve the legacy

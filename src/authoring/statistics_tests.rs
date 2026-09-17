@@ -110,7 +110,7 @@ fn consumers_reject_named_and_generic_person_side_readers() {
                 }
             })
     };
-    let constitution = context.read("new-book-plans/constitution.nibli").unwrap();
+    let constitution = context.read("book-1/source/constitution.nibli").unwrap();
     assert!(
         check(&constitution),
         "unreviewed statistical consumer in live constitution"

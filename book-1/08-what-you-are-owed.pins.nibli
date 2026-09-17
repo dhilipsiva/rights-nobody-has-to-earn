@@ -88,7 +88,7 @@
 # scarcity may be acted on and what stays owed afterwards; they hold no stock,
 # forecast no supply and prove no procurement, delivery or repair.
 # Full interface and evidence limits:
-#   new-book-plans/book-1-scarcity-and-conflict-contract.md
+#   book-1/appendix/contracts/scarcity-and-conflict-contract.md
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/08-what-you-are-owed.pins.nibli
@@ -157,8 +157,8 @@
 ? class(ECReaderAnimal, ECCrediblySentientProtectedAnimal, ECReaderCoverage).
 # => FALSE
 
-:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])owe[[:space:]]*\(/ {print}' new-book-plans/constitution.nibli)"
-:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' new-book-plans/constitution.nibli)"
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])owe[[:space:]]*\(/ {print}' book-1/source/constitution.nibli)"
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /false/ {print}' book-1/source/constitution.nibli)"
 
 # "the answer this design gives is no ... for every one of the eight"
 ? eats(Adam).

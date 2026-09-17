@@ -73,7 +73,7 @@ pub(crate) fn generate(
     export: &mut super::Export,
 ) -> Result<(), crate::cli::Error> {
     let cards = cards(context)?;
-    let path = "new-book-plans/constitution.nibli";
+    let path = "book-1/source/constitution.nibli";
     let rendered = render(&context.read(path)?, &cards)?;
     let mut scenarios = cases::core(&cards);
     scenarios.extend(external::scenarios(&cards)?);
@@ -137,7 +137,7 @@ mod tests {
     fn source_generation_is_idempotent_and_rejects_ambiguous_movement() {
         let context = Context::discover().unwrap();
         let cards = super::cards(&context).unwrap();
-        let source = context.read("new-book-plans/constitution.nibli").unwrap();
+        let source = context.read("book-1/source/constitution.nibli").unwrap();
         let first = super::render(&source, &cards).unwrap();
         let second = super::render(&first, &cards).unwrap();
         assert!(first == second);
@@ -151,21 +151,21 @@ mod tests {
         let live = Context::discover().unwrap();
         let directory = tempfile::tempdir().unwrap();
         let context = Context::from_test_root(directory.path().to_owned());
-        std::fs::create_dir_all(context.path("new-book-plans")).unwrap();
+        std::fs::create_dir_all(context.path("book-1/source")).unwrap();
         for path in [
-            "new-book-plans/constitution.nibli",
-            "new-book-plans/state-form-source.json",
-            "new-book-plans/economic-power-081.pins.nibli",
-            "new-book-plans/economic-power-082.pins.nibli",
+            "book-1/source/constitution.nibli",
+            "book-1/source/state-form-source.json",
+            "book-1/source/economic-power-081.pins.nibli",
+            "book-1/source/economic-power-082.pins.nibli",
         ] {
             std::fs::copy(live.path(path), context.path(path)).unwrap();
         }
         let mut first = super::super::Export::new();
         super::generate(&context, &mut first).unwrap();
-        let source = context.read("new-book-plans/constitution.nibli").unwrap();
+        let source = context.read("book-1/source/constitution.nibli").unwrap();
         let mut second = super::super::Export::new();
         super::generate(&context, &mut second).unwrap();
-        assert!(context.read("new-book-plans/constitution.nibli").unwrap() == source);
+        assert!(context.read("book-1/source/constitution.nibli").unwrap() == source);
         assert!(serde_json::to_value(&first).unwrap() == serde_json::to_value(&second).unwrap());
         assert!(first.cases.iter().all(|case| case.scan));
         assert!(

@@ -16,8 +16,8 @@ use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
 use std::fmt::Write as _;
 
-const SOURCE: &str = "new-book-plans/reader-coverage-source.json";
-const REPORT: &str = "new-book-plans/reader-coverage.md";
+const SOURCE: &str = "book-1/source/reader-coverage-source.json";
+const REPORT: &str = "book-1/source/reader-coverage.md";
 
 /// A chapter's text before its first heading.
 pub(crate) const PREAMBLE: &str = "(preamble)";

@@ -164,7 +164,7 @@ fn profile_live_preparation_snapshots_and_cases() {
         .spawn(|| {
             TRACE_STEPS.set(true);
             let context = crate::context::Context::discover().unwrap();
-            let source = context.read("new-book-plans/constitution.nibli").unwrap();
+            let source = context.read("book-1/source/constitution.nibli").unwrap();
             let started = Instant::now();
             let compiled = CompiledSource::new(&source);
             eprintln!("PROFILE compile-source {:.3}s", started.elapsed().as_secs_f64());
@@ -219,7 +219,7 @@ fn profile_live_preparation_snapshots_and_cases() {
                 ("arrest", &["tests/pins/public-safety/core/arrest/positive/fixture.nibli"][..], "tests/pins/public-safety/core/arrest/positive/expect.pins.nibli"),
                 ("force-abroad", &["tests/pins/public-safety/core/force-abroad/positive/fixture.nibli"][..], "tests/pins/public-safety/core/force-abroad/positive/expect.pins.nibli"),
                 ("withdrawal", &["tests/pins/public-safety/review/reviewed-defect/standing-without-separate-entry/fixture.nibli"][..], "tests/pins/public-safety/review/reviewed-defect/standing-without-separate-entry/expect.pins.nibli"),
-                ("floor-controls", &[][..], "new-book-plans/rights-floor.pins.nibli"),
+                ("floor-controls", &[][..], "book-1/source/rights-floor.pins.nibli"),
                 ("instrument-firewall", &[][..], "tests/pins/public-safety/firewalls/arrest/expect.pins.nibli"),
                 ("ecology-required-fields", &["tests/pins/ecology/shared/environmental-claim-required-fields-8.nibli", "tests/pins/ecology/environmental-claim/required-fields-0/fixture.nibli"][..], "tests/pins/ecology/environmental-claim/required-fields-0/expect.pins.nibli"),
                 ("ecology-conflicting-fields", &["tests/pins/ecology/shared/high-consequence-basis-conflicting-fields-8.nibli", "tests/pins/ecology/high-consequence-basis/conflicting-fields-0/fixture.nibli"][..], "tests/pins/ecology/high-consequence-basis/conflicting-fields-0/expect.pins.nibli"),

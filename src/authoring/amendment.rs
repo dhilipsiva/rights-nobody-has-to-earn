@@ -10,7 +10,7 @@ use std::collections::{BTreeMap, BTreeSet};
 
 const BEGIN: &str = "# <AMENDMENT-ENACTMENT-RULES-BEGIN>";
 const END: &str = "# <AMENDMENT-ENACTMENT-RULES-END>";
-const PATH: &str = "new-book-plans/constitution.nibli";
+const PATH: &str = "book-1/source/constitution.nibli";
 const INDEPENDENT: &str = "~($binder = $review)";
 
 const FIELDS: &[(&str, &str)] = &[
@@ -1053,12 +1053,12 @@ mod tests {
         let live = Context::discover().unwrap();
         let directory = tempfile::tempdir().unwrap();
         let context = Context::from_test_root(directory.path().to_owned());
-        std::fs::create_dir_all(context.path("new-book-plans")).unwrap();
+        std::fs::create_dir_all(context.path("book-1/source")).unwrap();
         std::fs::create_dir_all(context.path("tests/pins")).unwrap();
-        for path in [PATH, "new-book-plans/state-form-source.json"] {
+        for path in [PATH, "book-1/source/state-form-source.json"] {
             std::fs::copy(live.path(path), context.path(path)).unwrap();
         }
-        std::fs::write(context.path("tests/pins/suites.json"), r#"{"bases":{"live":{"path":"new-book-plans/constitution.nibli"}},"cases":[{"id":"unrelated/control","base":"live","pins":["control.pins.nibli"],"allow_shell":true}]}"#).unwrap();
+        std::fs::write(context.path("tests/pins/suites.json"), r#"{"bases":{"live":{"path":"book-1/source/constitution.nibli"}},"cases":[{"id":"unrelated/control","base":"live","pins":["control.pins.nibli"],"allow_shell":true}]}"#).unwrap();
         let before = context.read(PATH).unwrap();
         super::super::run(&context, "amendment").unwrap();
         let after = context.read(PATH).unwrap();

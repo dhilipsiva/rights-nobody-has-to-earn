@@ -655,7 +655,7 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         "{BEGIN}\n# Case-process findings and duties; no court holder, coercive power, verdict or actual remedy is created.\n{}\n{END}",
         authored.join("\n")
     );
-    let path = "new-book-plans/constitution.nibli";
+    let path = "book-1/source/constitution.nibli";
     let old = context.read(path)?;
     let updated = match (old.matches(BEGIN).count(), old.matches(END).count()) {
         (0, 0) => format!("{}\n\n{block}\n", old.trim_end()),

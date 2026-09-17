@@ -352,7 +352,7 @@ fn pin_count(pins: &str) -> usize {
 
 pub(crate) fn generate(context: &Context, export: &mut super::Export) -> Result<(), Error> {
     let cards = cards(context)?;
-    let path = "new-book-plans/constitution.nibli";
+    let path = "book-1/source/constitution.nibli";
     let output = render(&context.read(path)?, &cards)?;
     for card in &cards {
         let mut common = cases::common_for(&cards, card);
@@ -633,7 +633,7 @@ mod tests {
             .spawn(|| {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
-                let canonical = context.read("new-book-plans/constitution.nibli").unwrap();
+                let canonical = context.read("book-1/source/constitution.nibli").unwrap();
                 let compiler = nibli_session::CoreSession::new();
                 // Fail immediately on a malformed or unstratified candidate,
                 // before the pin harness's per-statement diagnostic fallback.
@@ -687,7 +687,7 @@ mod tests {
         validate(&cards).unwrap();
         let source = Context::discover()
             .unwrap()
-            .read("new-book-plans/constitution.nibli")
+            .read("book-1/source/constitution.nibli")
             .unwrap();
         let first = render(&source, &cards).unwrap();
         let floor =
@@ -805,7 +805,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -836,7 +836,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -867,7 +867,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -899,7 +899,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -930,7 +930,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -961,7 +961,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -1027,7 +1027,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -1077,7 +1077,7 @@ mod tests {
         std::thread::Builder::new().stack_size(32 * 1024 * 1024).spawn(|| {
             let context = Context::discover().unwrap();
             let cards = cards(&context).unwrap();
-            let source = render(&context.read("new-book-plans/constitution.nibli").unwrap(), &cards).unwrap();
+            let source = render(&context.read("book-1/source/constitution.nibli").unwrap(), &cards).unwrap();
             let engine = PreparedPinEngine::new(&[LoadedSource::new("live-plus-candidate", &source)]);
             let execution = card(&cards, "high-consequence");
             let stay = card(&cards, "guardian-stay");
@@ -1105,7 +1105,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -1135,7 +1135,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -1166,7 +1166,7 @@ mod tests {
                 let context = Context::discover().unwrap();
                 let cards = cards(&context).unwrap();
                 let source = render(
-                    &context.read("new-book-plans/constitution.nibli").unwrap(),
+                    &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
                 )
                 .unwrap();
@@ -1195,7 +1195,7 @@ mod tests {
         let cards = cards(&context).unwrap();
         eprintln!("ecological composition: rendering {} cards", cards.len());
         let source = render(
-            &context.read("new-book-plans/constitution.nibli").unwrap(),
+            &context.read("book-1/source/constitution.nibli").unwrap(),
             &cards,
         )
         .unwrap();

@@ -85,7 +85,7 @@ impl Export {
         value.bases.insert(
             "live".into(),
             Base {
-                path: Some("new-book-plans/constitution.nibli".into()),
+                path: Some("book-1/source/constitution.nibli".into()),
                 ..Base::default()
             },
         );
@@ -230,8 +230,8 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             "{}",
             spine::run(
                 context,
-                Path::new("new-book-plans/constitution.nibli"),
-                Path::new("new-book-plans/3-spine.md"),
+                Path::new("book-1/source/constitution.nibli"),
+                Path::new("book-1/source/3-spine.md"),
             )?
         );
         return Ok(());
@@ -316,16 +316,16 @@ mod tests {
         let live = Context::discover().expect("repository");
         let directory = tempfile::tempdir().expect("temporary authoring root");
         let context = Context::from_test_root(directory.path().to_owned());
-        std::fs::create_dir_all(context.path("new-book-plans/counterfactual")).unwrap();
+        std::fs::create_dir_all(context.path("book-1/source/counterfactual")).unwrap();
         std::fs::create_dir_all(context.path("tests/pins")).unwrap();
         for path in [
-            "new-book-plans/constitution.nibli",
-            &format!("new-book-plans/{family}-source.json"),
+            "book-1/source/constitution.nibli",
+            &format!("book-1/source/{family}-source.json"),
         ] {
             std::fs::copy(live.path(path), context.path(path)).unwrap();
         }
         let inventory = serde_json::json!({
-            "bases": {"live": {"path": "new-book-plans/constitution.nibli"}},
+            "bases": {"live": {"path": "book-1/source/constitution.nibli"}},
             "cases": [{"id":"unrelated/example", "base":"live", "pins":["unrelated.pins.nibli"], "allow_shell":true}]
         });
         std::fs::write(
@@ -333,7 +333,7 @@ mod tests {
             inventory.to_string(),
         )
         .unwrap();
-        let before = context.read("new-book-plans/constitution.nibli").unwrap();
+        let before = context.read("book-1/source/constitution.nibli").unwrap();
         (directory, context, before)
     }
 
@@ -374,7 +374,7 @@ mod tests {
         run(&context, "state-form")
             .expect("generate the live authoring input without digest prerequisites");
         assert_fixture_statements_terminated(&context);
-        let after = context.read("new-book-plans/constitution.nibli").unwrap();
+        let after = context.read("book-1/source/constitution.nibli").unwrap();
         assert_outside_region_unchanged(
             &before,
             &after,
@@ -392,17 +392,17 @@ mod tests {
                 .any(|case| case["id"] == "state-form/main-01")
         );
         let first = context
-            .read("new-book-plans/state-form.pins.nibli")
+            .read("book-1/source/state-form.pins.nibli")
             .unwrap();
         run(&context, "state-form").expect("repeat generation");
         assert_eq!(
             context
-                .read("new-book-plans/state-form.pins.nibli")
+                .read("book-1/source/state-form.pins.nibli")
                 .unwrap(),
             first
         );
         assert_eq!(
-            context.read("new-book-plans/constitution.nibli").unwrap(),
+            context.read("book-1/source/constitution.nibli").unwrap(),
             after
         );
     }
@@ -412,12 +412,12 @@ mod tests {
         let (_directory, context, before) = isolated_authoring("obligations");
         assert!(
             !context
-                .path("new-book-plans/full-society-ledger.json")
+                .path("book-1/source/full-society-ledger.json")
                 .exists()
         );
         run(&context, "obligations").expect("generate from the small semantic input");
         assert_fixture_statements_terminated(&context);
-        let after = context.read("new-book-plans/constitution.nibli").unwrap();
+        let after = context.read("book-1/source/constitution.nibli").unwrap();
         assert_outside_region_unchanged(
             &before,
             &after,
@@ -428,7 +428,7 @@ mod tests {
         run(&context, "obligations").expect("repeat generation");
         assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
         assert_eq!(
-            context.read("new-book-plans/constitution.nibli").unwrap(),
+            context.read("book-1/source/constitution.nibli").unwrap(),
             after
         );
     }
@@ -438,14 +438,14 @@ mod tests {
         let (_directory, context, before) = isolated_authoring("integrity");
         let live = Context::discover().unwrap();
         for path in [
-            "new-book-plans/state-form-source.json",
-            "new-book-plans/economic-power-064.pins.nibli",
+            "book-1/source/state-form-source.json",
+            "book-1/source/economic-power-064.pins.nibli",
         ] {
             std::fs::copy(live.path(path), context.path(path)).unwrap();
         }
         run(&context, "integrity").unwrap();
         assert_fixture_statements_terminated(&context);
-        let after = context.read("new-book-plans/constitution.nibli").unwrap();
+        let after = context.read("book-1/source/constitution.nibli").unwrap();
         assert_outside_region_unchanged(
             &before,
             &after,
@@ -456,7 +456,7 @@ mod tests {
         run(&context, "integrity").unwrap();
         assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
         assert_eq!(
-            context.read("new-book-plans/constitution.nibli").unwrap(),
+            context.read("book-1/source/constitution.nibli").unwrap(),
             after
         );
     }
@@ -466,7 +466,7 @@ mod tests {
         let (_directory, context, before) = isolated_authoring("statistics");
         run(&context, "statistics").unwrap();
         assert_fixture_statements_terminated(&context);
-        let after = context.read("new-book-plans/constitution.nibli").unwrap();
+        let after = context.read("book-1/source/constitution.nibli").unwrap();
         assert_outside_region_unchanged(
             &before,
             &after,
@@ -479,7 +479,7 @@ mod tests {
         run(&context, "statistics").unwrap();
         assert_eq!(context.read("tests/pins/suites.json").unwrap(), inventory);
         assert_eq!(
-            context.read("new-book-plans/constitution.nibli").unwrap(),
+            context.read("book-1/source/constitution.nibli").unwrap(),
             after
         );
     }

@@ -68,8 +68,8 @@ observe(ECReaderHelper, ECReaderUrgentRequest, ECUrgentPlausibleAnimalProtection
 # The source-bound finding/action contract consumes the older underfilled duty
 # only after the supplied initial-finding standard and its other typed evidence
 # have rejoined. The result is a formal duty, never proof that anybody acted.
-:require test "$(grep -F -c '& obliged($reader, $subject) -> obliged($reader, $reader_duty, $reader_standard).' new-book-plans/constitution.nibli)" -eq 1
-:require test "$(grep -F -c 'derived_only("obliged").' new-book-plans/constitution.nibli)" -eq 1
+:require test "$(grep -F -c '& obliged($reader, $subject) -> obliged($reader, $reader_duty, $reader_standard).' book-1/source/constitution.nibli)" -eq 1
+:require test "$(grep -F -c 'derived_only("obliged").' book-1/source/constitution.nibli)" -eq 1
 
 # The prose now states the rule: every prisoner in the supplied record is marked.
 # The full cast remains pinned individually so that statement cannot silently

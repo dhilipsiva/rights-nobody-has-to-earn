@@ -9,12 +9,12 @@ use std::fmt;
 use std::fmt::Write as _;
 use std::sync::OnceLock;
 
-pub(crate) const CONSTITUTION_PATH: &str = "new-book-plans/constitution.nibli";
+pub(crate) const CONSTITUTION_PATH: &str = "book-1/source/constitution.nibli";
 
-pub(crate) const MAIN_PINS_PATH: &str = "new-book-plans/state-form.pins.nibli";
+pub(crate) const MAIN_PINS_PATH: &str = "book-1/source/state-form.pins.nibli";
 
 pub(crate) const COUNTERFACTUAL_PINS_PATH: &str =
-    "new-book-plans/counterfactual/no-state-form-independent-current-review.pins.nibli";
+    "book-1/source/counterfactual/no-state-form-independent-current-review.pins.nibli";
 
 const MAIN_HEADER: &str = "# State-form and political-membership family - executable coverage pins";
 
@@ -2458,7 +2458,7 @@ pub(crate) fn amendment_example(
     key: &str,
 ) -> Result<(String, BTreeMap<String, String>), Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let branch = branch_lookup(&source.branches, 37, key).map_err(public_error)?;
     let fixture = ground_fixture(
         branch,
@@ -2485,7 +2485,7 @@ pub(crate) fn generate(
     export: &mut crate::authoring::Export,
 ) -> Result<(), Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let rules = render_formal_block(&source).map_err(public_error)?;
     let main = render_main_pins(&source).map_err(public_error)?;
     let counterfactual = render_counterfactual_pins(&source).map_err(public_error)?;
@@ -2589,7 +2589,7 @@ pub(crate) fn integrity_fixture(
     prefix: &str,
 ) -> Result<(String, BTreeMap<String, String>, String), Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
     let fixture = ground_fixture(branch, prefix, false, &[], &[]).map_err(public_error)?;
     let query =
@@ -2609,7 +2609,7 @@ pub(crate) fn court_consumer(
     key: &str,
 ) -> Result<Vec<String>, Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
     if !matches!(number, 22 | 23 | 25) {
         return Err(Error::new("not a declared justice court interface"));
@@ -2635,7 +2635,7 @@ pub(crate) fn ecological_consumer(
         return Err(Error::new("undeclared ecological state-form interface"));
     }
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
     let mut atoms = authority_raw_premises(branch).map_err(public_error)?;
     atoms.push(format!("complete($result, {}, $record)", branch.power()));
@@ -2654,7 +2654,7 @@ pub(crate) fn court_example(
     bindings: &[(&str, &str)],
 ) -> Result<(String, BTreeMap<String, String>), Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let branch = branch_lookup(&source.branches, number, key).map_err(public_error)?;
     let fixture = ground_fixture(branch, prefix, false, &[], bindings).map_err(public_error)?;
     Ok((
@@ -2670,7 +2670,7 @@ pub(crate) fn protective_exit_consumer(
     collective: bool,
 ) -> Result<Vec<String>, Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let key = if collective {
         "final_exit_with_collective_consent"
     } else {
@@ -2692,7 +2692,7 @@ pub(crate) fn protective_exit_example(
     bindings: &[(&str, &str)],
 ) -> Result<(String, BTreeMap<String, String>), Error> {
     let source: SemanticSource =
-        serde_json::from_str(&context.read("new-book-plans/state-form-source.json")?)?;
+        serde_json::from_str(&context.read("book-1/source/state-form-source.json")?)?;
     let key = if collective {
         "final_exit_with_collective_consent"
     } else {
@@ -2717,7 +2717,7 @@ mod integrity_tests {
         let context = Context::discover().unwrap();
         let source: SemanticSource = serde_json::from_str(
             &context
-                .read("new-book-plans/state-form-source.json")
+                .read("book-1/source/state-form-source.json")
                 .unwrap(),
         )
         .unwrap();

@@ -18,31 +18,31 @@ Earn*, is the destination.
 
 | Path | Purpose |
 |---|---|
-| `new-book-plans/constitution.nibli` | The executable constitution, in [Nibli](https://github.com/dhilipsiva/nibli). |
+| `book-1/source/constitution.nibli` | The executable constitution, in [Nibli](https://github.com/dhilipsiva/nibli). |
 | `book-1/` | Reader-facing chapters and their companion `.pins.nibli` tests. |
 | `tests/pins/suites.json` | The executable case inventory: live rules, fixture inputs, pin files, and explicit counterfactual edits. |
 | `tests/pins/` | Record, amendment, placement, temporal, state-form, obligations, and other substantive examples. |
-| `new-book-plans/state-form-source.json` | State-form authoring input. |
-| `new-book-plans/obligations-source.json` | The protected claim names used by the obligations authoring tool. |
-| `new-book-plans/integrity-source.json` | Democratic and administrative integrity findings, kinds, and legal consequences. |
-| `new-book-plans/statistics-source.json` | Bounded statistical uses, privacy, aggregate equality evidence, challenge and correction. |
-| `new-book-plans/knowledge-source.json` | What must be established before a public actor narrows learning, expression, belief, association, inquiry or culture. |
-| `new-book-plans/record-power-source.json` | What must be established before a holder keeps, watches, profiles or automates over somebody's record. |
-| `new-book-plans/scarcity-source.json` | What must be established before a shortage counts as physical, and what may never decide who goes without. |
-| `new-book-plans/family-life-source.json` | What must be established before somebody holds a role in another person's life, and the care continuity that needs no role at all. |
-| `new-book-plans/book-1-amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
-| `new-book-plans/book-1-mobility-and-plurality-contract.md` | Mobility protections, differentiated collective rights, exact consent/consultation and external no-evasion. |
-| `new-book-plans/book-1-non-carceral-justice-contract.md` | Accessible justice, actual court-bound remedies, voluntary restoration and release continuity. |
-| `new-book-plans/book-1-knowledge-and-free-field-contract.md` | Restriction conditions, residual freedom, public information, accessibility, inquiry autonomy and communication plurality. |
-| `new-book-plans/book-1-record-power-contract.md` | Record holding, surveillance, biometrics, profiling, automated support, access, retention and non-use walls. |
-| `new-book-plans/book-1-scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
-| `new-book-plans/book-1-red-team-index.md` | One entry per strategic behaviour: who gains, who pays, what stops it, and where nothing does. |
-| `new-book-plans/adversarial-audit-source.json` | Fifteen review lenses bound to the checks that encode them and to what each finds. |
-| `new-book-plans/reader-coverage-source.json` | Every derived-chapter and Part V passage classified by domain, function, posture and trajectory. |
-| `new-book-plans/resolution-receipts-source.json` | Every repair thread's ending: what failed, what changed, how the attack is rerun, what still does not follow. |
-| `new-book-plans/book-1-public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
+| `book-1/source/state-form-source.json` | State-form authoring input. |
+| `book-1/source/obligations-source.json` | The protected claim names used by the obligations authoring tool. |
+| `book-1/source/integrity-source.json` | Democratic and administrative integrity findings, kinds, and legal consequences. |
+| `book-1/source/statistics-source.json` | Bounded statistical uses, privacy, aggregate equality evidence, challenge and correction. |
+| `book-1/source/knowledge-source.json` | What must be established before a public actor narrows learning, expression, belief, association, inquiry or culture. |
+| `book-1/source/record-power-source.json` | What must be established before a holder keeps, watches, profiles or automates over somebody's record. |
+| `book-1/source/scarcity-source.json` | What must be established before a shortage counts as physical, and what may never decide who goes without. |
+| `book-1/source/family-life-source.json` | What must be established before somebody holds a role in another person's life, and the care continuity that needs no role at all. |
+| `book-1/appendix/contracts/amendment-enactment-contract.md` | Exact-change authority, publication, effective-version, conflict, replay and remedy boundaries. |
+| `book-1/appendix/contracts/mobility-and-plurality-contract.md` | Mobility protections, differentiated collective rights, exact consent/consultation and external no-evasion. |
+| `book-1/appendix/contracts/non-carceral-justice-contract.md` | Accessible justice, actual court-bound remedies, voluntary restoration and release continuity. |
+| `book-1/appendix/contracts/knowledge-and-free-field-contract.md` | Restriction conditions, residual freedom, public information, accessibility, inquiry autonomy and communication plurality. |
+| `book-1/appendix/contracts/record-power-contract.md` | Record holding, surveillance, biometrics, profiling, automated support, access, retention and non-use walls. |
+| `book-1/appendix/contracts/scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
+| `book-1/appendix/maps/red-team-index.md` | One entry per strategic behaviour: who gains, who pays, what stops it, and where nothing does. |
+| `book-1/source/adversarial-audit-source.json` | Fifteen review lenses bound to the checks that encode them and to what each finds. |
+| `book-1/source/reader-coverage-source.json` | Every derived-chapter and Part V passage classified by domain, function, posture and trajectory. |
+| `book-1/source/resolution-receipts-source.json` | Every repair thread's ending: what failed, what changed, how the attack is rerun, what still does not follow. |
+| `book-1/appendix/contracts/public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
-| `new-book-plans/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
+| `book-1/source/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
 | `verify.sh` | Run the pins and contradiction checks. |
 | `generate.sh` | Explicitly regenerate authored rule, fixture, pin, or spine outputs. |
 | `bootstrap.sh` | Put the pinned Nibli engine beside this checkout. |
@@ -123,7 +123,7 @@ not controlled, and one unrelated process held roughly one core throughout.
 This **does not** meet the under-five-minute target. The earlier 275.04-second
 (4m35.04s) result was measured on the 4,190-case inventory that preceded the
 ecological family and is not a current timing. The
-[performance notes](new-book-plans/nibli-performance-candidate.md) record where
+[performance notes](book-1/source/nibli-performance-candidate.md) record where
 the current run spends its time and which leads remain. Every timing here is an
 observation, not a cached verification result or a gate on later edits.
 

@@ -1,6 +1,6 @@
 # ── Chapter 1 fidelity pins: "What Counts as Evidence" ───────────────────────
 #
-# FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
 # Exact-change and vocabulary review also use:
 #   tests/pins/amendment-enactment/unauthorized-vocabulary/expect.pins.nibli
 #   tests/pins/amendment-enactment/reviewed-vocabulary/expect.pins.nibli
@@ -23,7 +23,7 @@
 #   tests/pins/statistics/challenge/nonresponse-sequence/expect.pins.nibli
 #   tests/pins/statistics/data-wall/nonparticipation-is-not-a-penalty/expect.pins.nibli
 # Full interface and evidence limits:
-#   new-book-plans/book-1-official-statistics-contract.md
+#   book-1/appendix/contracts/official-statistics-contract.md
 #
 # "Keeping, watching, and letting a machine help" rests on these
 # actual-constitution record-power cases:
@@ -51,7 +51,7 @@
 # shown before a record is kept, watched or automated over, and what is owed
 # while it has not been; they authenticate no record and observe no execution.
 # Full interface and evidence limits:
-#   new-book-plans/book-1-record-power-contract.md
+#   book-1/appendix/contracts/record-power-contract.md
 #
 # KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
 # inlined. Run:

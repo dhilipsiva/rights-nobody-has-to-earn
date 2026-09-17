@@ -37,7 +37,7 @@ controls the fixed worker pool.
 
 All file paths are repository-relative. A base has exactly one of `path` (a
 Nibli source file) or `base` (another named base), plus optional `edits`.
-The `live` base is `new-book-plans/constitution.nibli`; use the full live source
+The `live` base is `book-1/source/constitution.nibli`; use the full live source
 unless a case deliberately tests a named source variant.
 
 A case looks like this existing record example:
@@ -124,7 +124,7 @@ It preserves unrelated inventory entries and their settings. Review the result
 before verifying. Pending authoring-source edits are not enacted by `verify.sh`.
 Spine generation updates the chapter-order projection only.
 
-Some original aggregate pin files remain under `new-book-plans/` for authoring
+Some original aggregate pin files remain under `book-1/source/` for authoring
 and inspection. Their executable examples are split into isolated case assets
 here, including state-form, obligations, and economic direct-effect cases.
 The inventory, not a filename suffix or directory scan, determines what runs.

@@ -8,9 +8,9 @@ use std::fmt;
 use std::fmt::Write as _;
 use std::sync::{Arc, OnceLock};
 
-const CONSTITUTION_PATH: &str = "new-book-plans/constitution.nibli";
+const CONSTITUTION_PATH: &str = "book-1/source/constitution.nibli";
 
-const SOURCE_PATH: &str = "new-book-plans/obligations-source.json";
+const SOURCE_PATH: &str = "book-1/source/obligations-source.json";
 
 const RULES_BEGIN: &str = "# <OBLIGATIONS-RULES-BEGIN>";
 
@@ -2144,17 +2144,17 @@ pub(crate) fn generate(
     .map_err(obligations_error)?;
     std::fs::write(context.path(CONSTITUTION_PATH), updated)?;
     for (path, content) in [
-        ("new-book-plans/obligations.pins.nibli", pins),
+        ("book-1/source/obligations.pins.nibli", pins),
         (
-            "new-book-plans/counterfactual/no-obligations-independent-source-review.pins.nibli",
+            "book-1/source/counterfactual/no-obligations-independent-source-review.pins.nibli",
             independence,
         ),
         (
-            "new-book-plans/counterfactual/no-obligations-source.pins.nibli",
+            "book-1/source/counterfactual/no-obligations-source.pins.nibli",
             source,
         ),
         (
-            "new-book-plans/counterfactual/no-obligations-finding-reader.pins.nibli",
+            "book-1/source/counterfactual/no-obligations-finding-reader.pins.nibli",
             reader,
         ),
     ] {

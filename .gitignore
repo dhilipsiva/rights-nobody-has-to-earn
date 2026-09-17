@@ -20,7 +20,7 @@ target/
 # Windows alternate-data-stream artifacts
 *:Zone.Identifier
 
-# Python bytecode from new-book-plans/*.py
+# Python bytecode from book-1/source/*.py
 __pycache__/
 *.pyc
 output/

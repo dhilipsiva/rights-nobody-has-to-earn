@@ -53,25 +53,6 @@ needed.
 
 ### Phase A — the heart and the order
 
-3. **Move `new-book-plans/` under `book-1/`: the planning record to
-   `book-1/appendix/`, everything else to `book-1/source/`.** One map
-   (`tools/maps/2026-09-16-fold.json`: the 45 appendix moves with their
-   renamed basenames, plus the flat `new-book-plans/` → `book-1/source/`
-   prefix for the rest) → `apply` → `check`; `appendix/README.md` (R4 and the
-   map); LICENSING clause; CLAUDE.md Files section rewritten (`new-book-plans/`
-   entry retired; `book-1/source/` and `book-1/appendix/` described), the
-   "no fourth exempt element" and `bound_sources_sha256` annotations;
-   `book-1/README.md` gains the two subdirectories in its conventions;
-   `book-2/TODO.md` cites repointed; the method part's pointer sentence names
-   `book-1/appendix/` and `book-1/source/` (a pointer, within sealed rule (d)).
-   *Done when:* `check` passes (every `new-book-plans/` string gone outside
-   `reviews/` and git history; constitution, rule-family sources, pins
-   non-comment lines and `4-strata.py` byte-identical; `git status` exactly the
-   planned renames; `new-book-plans/` absent); `cargo test` (needle set
-   unchanged modulo rewrite); `./verify.sh` (the runner's constitution path and
-   every suites base/fixture/pin path resolve); `./generate.sh spine` and the
-   three report generators byte-stable on a second run; `bash combine.sh` and a
-   pilot build unchanged.
 4. **Run the constitution against a person with one entry.**
    `tests/pins/records/child_with_nobody/{fixture,expect}.nibli`
    (`born(Nell).`; person TRUE, eight owe, eight entitled, every barrier,

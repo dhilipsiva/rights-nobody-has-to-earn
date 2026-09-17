@@ -1,0 +1,386 @@
+# ── Constitution pins: constitution.nibli ───────────────────────────────────────
+#
+# KIND: CONTENT pin. The fixture is the SUBJECT of these pins, so it is loaded
+# rather than inlined — inlining it would make this file certify a copy, and the
+# copy drifts. Contrast nibli's own pins/*.nibli, which are MECHANISM pins and
+# inline their fixtures precisely because the fixture is not the subject.
+#
+# Run:
+#   ./verify.sh --only book-1/source/rights-floor.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# Every verdict below was produced by the engine, never by hand.
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 100
+# --- v0.1 regression pins ---
+? false(Bela).
+# => TRUE
+? false(Esa).
+# => FALSE
+? reward(Dev).
+# => FALSE
+? false(Mira).
+# => FALSE
+? false(Lupo).
+# => TRUE
+? prisoner(Ivo).
+# => FALSE
+? prisoner(Hano).
+# => TRUE
+? prisoner(Nia).
+# => FALSE
+? prisoner(Jala).
+# => FALSE
+? travel(Jala).
+# => TRUE
+? expresses(Adam).
+# => TRUE
+? defend(Rebel).
+# => TRUE
+? prisoner(Rebel).
+# => FALSE
+? false(Rebel).
+# => FALSE
+? building(HighSec, Lalo).
+# => TRUE
+? building(LowSec, Nando).
+# => FALSE
+? dwell(Hano).
+# => TRUE
+# --- E1/E2/E3 closures ---
+? defend(Don).
+# => FALSE
+? prisoner(Don).
+# => TRUE
+? defend(Sly).
+# => TRUE
+? defend(Kel).
+# => FALSE
+? false(Kel).
+# => TRUE
+? permits(Review, Vex).
+# => FALSE
+? permits(Tribunal, Wren).
+# => TRUE
+? false(Vex).
+# => TRUE
+? false(Tyr).
+# => FALSE
+? authority(Boss).
+# => TRUE
+? permits(Review, Boss).
+# => FALSE
+? prisoner(Ruk).
+# => TRUE
+? building(HighSec, Ruk).
+# => TRUE
+? fit(Ruk, Homestay).
+# => FALSE
+# [v0.9] The placement marker is repaired: it reads a placement REPORT
+# (put/3, on the evidence list) against derived eligibility, and the record
+# holds no reports — so it no longer fires on Ruk, whom it used to flag for
+# the ordinary condition of a severe offender with a house.
+? err(Ruk, Placement).
+# => FALSE
+? err(Hano, Placement).
+# => FALSE
+? dwell(Ruk).
+# => TRUE
+# --- Article 9 ---
+? false(Amend_Floor).
+# => TRUE
+? become(Amend_Floor, Law).
+# => FALSE
+? become(Amend_Mint, Law).
+# => TRUE
+? false(Amend_Meta).
+# => TRUE
+? become(Amend_Meta, Law).
+# => FALSE
+# --- fidelity table ---
+? person(Hano).
+# => TRUE
+? expresses(Hano).
+# => TRUE
+? travel(Hano).
+# => FALSE
+? travel(Adam).
+# => FALSE
+? eats(Adam).
+# => FALSE
+? healthy(Bela).
+# => FALSE
+? secure(Bela).
+# => FALSE
+? learn(Cira).
+# => FALSE
+? believe(Bela).
+# => FALSE
+# --- v0.3 additions ---
+? decide(Hano, Ballot).
+# => TRUE
+? decide(Jala, Ballot).
+# => TRUE
+? err(Hano, Isolation).
+# => TRUE
+
+# ── FIREWALL: no rule may punish the absence of a floor right ────────────────
+:refuse reasoning /'prisoner' -> 'believe'/
+all $x: person($x) & ~believe($x) -> prisoner($x).
+
+:refuse reasoning /'prisoner' -> 'meets'/
+all $x: person($x) & ~meets($x) -> prisoner($x).
+
+:refuse reasoning /'prisoner' -> 'eats'/
+all $x: person($x) & ~eats($x) -> prisoner($x).
+
+:refuse reasoning /'prisoner' -> 'secure'/
+all $x: person($x) & ~secure($x) -> prisoner($x).
+
+# ── ARTICLE 0: closed relations refuse direct assertion ──────────────────────
+:refuse reasoning /declared derived-only/
+fit(Ruk, Homestay).
+
+:refuse reasoning /declared derived-only/
+err(Hano, Placement).
+
+:refuse reasoning /declared derived-only/
+false(Ara).
+
+# The two worst exploits, dead. Each was one asserted fact from bypassing the
+# article that exists to prevent it; each is now refused at assert time.
+:refuse reasoning /declared derived-only/
+authority(Pax).
+
+:refuse reasoning /declared derived-only/
+permits(Review, Sock).
+
+:refuse reasoning /declared derived-only/
+prisoner(Zed).
+
+# [v0.5] Severity is the tenth closure and the one with the shortest path to
+# harm: an asserted severe(·) routed a person to high security with nothing
+# behind it, and no rule could tell that apart from a severity that had been
+# earned. This pin is the whole of that guarantee — without it the claim that
+# nobody writes severity down is argued rather than executed.
+:refuse reasoning /declared derived-only/
+severe(Ghost).
+
+# [v0.9] The last three closures, unpinned until now — and they are the heads of
+# Articles 7, 3 and 9: the shield, the mint, and the law-label gate. Article 0's
+# own named failure mode is a derived_only line moved below the facts it guards,
+# which "is inert and looks identical"; without these pins that failure takes
+# three of the ten gates with it in silence. An asserted shield is an
+# unjailable name, an asserted reward is minted esteem, an asserted law label
+# is a verdict no proposal produced.
+:refuse reasoning /declared derived-only/
+defend(Ghost).
+
+:refuse reasoning /declared derived-only/
+reward(Ghost).
+
+:refuse reasoning /declared derived-only/
+become(Amend_Sneak, Law).
+
+# [v0.9] And the three declared rather than omitted: the floor's own relations
+# and the placement head were shut only by not being admitted, so one unrelated
+# admits edit would have reopened them in silence. Now the refusal names the
+# closure. Forging the record of what is owed, or of where somebody is held,
+# is refused by declaration — and each still derives from its real sources,
+# pinned throughout this file.
+:refuse reasoning /declared derived-only/
+entitled(Sokk, event { eats() }).
+
+:refuse reasoning /declared derived-only/
+owe(State, Provision, Sokk).
+
+:refuse reasoning /declared derived-only/
+building(HighSec, Ghost).
+
+# The complement half: closing a relation must not break its derivation, or the
+# guarantee is just a ban. Each of these still derives from its new asserted
+# source — public(Court); clear(Nia) beside the appeals judgment [v0.9]; and
+# Article 6's conviction rule.
+? authority(Court).
+# => TRUE
+
+? permits(Appeals, Nia).
+# => TRUE
+
+? prisoner(Adam).
+# => TRUE
+
+# [v0.5] Severity's complement, and it needs all three routes, because the
+# threshold is what makes the closure worth having. Lalo reaches it through
+# intent and kind on one act; Ruk through intent and a second victim recorded
+# separately; Don through kind and a second victim. Hano is the control that
+# can actually fail: one dimension, and severity does not follow.
+? severe(Lalo).
+# => TRUE
+
+? severe(Ruk).
+# => TRUE
+
+? severe(Don).
+# => TRUE
+
+? attack(Hano, Ivo).
+# => TRUE
+
+? severe(Hano).
+# => FALSE
+
+# ── ARTICLE 1b: the duty-bearer ──────────────────────────────────────────────
+# Article 1 says what is owed; Article 1b says by whom. These pin the three
+# things that article claims and the one thing it must NOT be read as claiming.
+
+# The obligation reaches every person on the roster, convicted included, and
+# reaches nobody who is not on it.
+? owe(State, Provision, Adam).
+# => TRUE
+
+? owe(State, Provision, Hano).
+# => TRUE
+
+? owe(State, Provision, Sokk).
+# => FALSE
+
+# The bearer is an exposable institution — answerable, and a valid target of the
+# Article 7 shield — but holds no Review pen. Duty and audit power stay apart.
+? authority(State).
+# => TRUE
+
+? permits(Review, State).
+# => FALSE
+
+# NAMING A DEBTOR IS NOT PAYING THE DEBT. This is the pin that stops the article
+# being read as provision: the floor actualities are exactly as FALSE as they
+# were before it existed. If this ever flips, a delivery layer arrived and
+# chapter 8 must be rewritten — which would be good news.
+? eats(Bela).
+# => FALSE
+
+# ── THE FLOOR'S RELATION, CONTROLLED THREE WAYS ──────────────────────────────
+# `entitled` is queried across the suite and until now was never controlled, so
+# every TRUE proved reach rather than derivation. Three directions at once: the
+# floor reaches a person; it does not carry what is not on it — home is a fact
+# the world reports, never a floor item, and chapter 8 turns on the difference;
+# and it does not reach a non-person.
+? entitled(Adam, event { eats() }).
+# => TRUE
+
+? entitled(Adam, event { home() }).
+# => FALSE
+
+? entitled(Court, event { eats() }).
+# => FALSE
+
+# The firewall extends to the obligation: no rule may punish a person for not
+# being owed. The `~home` control at the end of this file is what proves this is
+# the obligation doing it and not the rule shape.
+:refuse reasoning /'prisoner' -> 'owe'/
+all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
+
+# ── ARTICLE 6: release ───────────────────────────────────────────────────────
+# Nobody in the shipped cast is released, so the guard is inert by default and
+# every verdict above is unaffected. This block asserts a release fact, and with
+# the controls below scoped it is the last thing in the file the knowledge base
+# keeps — it changes Hano for everything after it.
+? free(Hano).
+# => FALSE
+
+free(Hano).
+
+# The deprivation ends. The record of the conviction does not: `prisoner` is
+# blocked, but nothing pretends the injury and the judgment were not written.
+? prisoner(Hano).
+# => FALSE
+
+? travel(Hano).
+# => TRUE
+
+# Personhood survives — for Hano because it is asserted, and for someone
+# convicted into the roster because of Article 1's `free -> person` line. The
+# derived case is pinned on Zed in 07-a-prisoner-is-a-person.pins.nibli.
+? person(Hano).
+# => TRUE
+
+? entitled(Hano, event { eats() }).
+# => TRUE
+
+? owe(State, Provision, Hano).
+# => TRUE
+
+# WHAT RELEASE COSTS, and it is the delivery gap arriving where it can be felt:
+# `expresses` and `dwell` are the only two floor rights this design ever actually
+# delivers, and both derive ONLY for prisoners. Leaving custody returns a person
+# to the general population, where nothing is delivered to anyone. Being OWED is
+# undisturbed above; the only thing that ever ARRIVED stops.
+? expresses(Hano).
+# => FALSE
+
+? dwell(Hano).
+# => FALSE
+
+# The isolation marker stops, correctly.
+? err(Hano, Isolation).
+# => FALSE
+
+# [v0.9] RESOLVED DEFECT, kept as the exhibit it was. The old marker fired on
+# a released man in his own house — release took `fit` away while `home(Hano).`
+# stayed asserted, and the rule keyed on having a home. The repaired marker
+# reads a placement report instead, the record holds none for Hano, and a free
+# man living at home no longer trips a confinement alarm. This pin held the
+# defect under :defect until the repair landed 2026-08-02; it now holds the
+# repair.
+? err(Hano, Placement).
+# => FALSE
+
+
+# ── COMPLEMENT CONTROLS: the named non-floor boundaries ────────────────────
+# ORDERING USED TO PROTECT EVERY PIN BELOW THIS BLOCK, AND WHY IT HAD TO IS
+# STILL THE POINT. The first three controls load under `:accept-scoped`: each is
+# compiled, its loadability is the verdict, and it is retracted before the next
+# pin runs, so nothing below inherits it — measured, a `? prisoner(Quin).`
+# probe dropped in among these controls comes out FALSE. Under plain
+# `:accept`, which leaves the rule in the KB, every one of these adds a route
+# to `prisoner` that Article 6 does not gate: measured on this file before the
+# conversion, `prisoner(Quin)` was TRUE with no conviction anywhere behind it,
+# and `prisoner(Hano)` TRUE with `free(Hano)` asserted — a released person
+# dragged back in. `? prisoner(Adam).` used to sit below these and was a
+# vacuous green: it would have passed with Article 6 deleted outright. Scoping
+# retired the instruction to keep controls last, not the reason for it, and it
+# is not verify.sh that puts the base back: the retraction is the engine's — one
+# that fails is a harness error, not a pin that goes quietly green.
+:accept-scoped
+all $x: person($x) & ~home($x) -> prisoner($x).
+
+:accept-scoped
+all $x: person($x) & ~choose($x) -> prisoner($x).
+
+:accept-scoped
+all $x: person($x) & ~permits($x) -> prisoner($x).
+
+# The positive parentage repair also makes this control a negative cycle:
+# prisoner -> person -> parent -> false, through the existing conflict-of-
+# interest rule. This is not another floor predicate. Preserve its earlier
+# acceptance in the explicit without-positive-relationships counterfactual;
+# the current, stronger model must refuse it.
+:refuse reasoning /Unstratifiable/
+all $x: person($x) & ~false($x) -> prisoner($x).
+
+# NOT a control, deliberately: ~travel is refused too, but for a reason unrelated
+# to the floor — Article 2 derives travel behind ~prisoner, so it closes its own
+# negative cycle. Listing it would pass for the wrong reason and keep passing
+# after the firewall broke.

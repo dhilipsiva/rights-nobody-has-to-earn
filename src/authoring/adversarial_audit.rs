@@ -16,8 +16,8 @@ use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
 use std::fmt::Write as _;
 
-const SOURCE: &str = "new-book-plans/adversarial-audit-source.json";
-const REPORT: &str = "new-book-plans/adversarial-audit.md";
+const SOURCE: &str = "book-1/source/adversarial-audit-source.json";
+const REPORT: &str = "book-1/source/adversarial-audit.md";
 
 /// The finding kinds the audit is required to look for.
 pub(crate) const CATEGORIES: [&str; 7] = [

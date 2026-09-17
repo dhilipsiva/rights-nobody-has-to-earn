@@ -1,8 +1,8 @@
 # ── Chapter 12 fidelity pins: "Changing the Rules" ───────────────────────────
 #
-# FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
 # Exact-change contract and reader passage:
-#   new-book-plans/book-1-amendment-enactment-contract.md
+#   book-1/appendix/contracts/amendment-enactment-contract.md
 #   tests/pins/amendment-enactment/certified/expect.pins.nibli
 #   tests/pins/amendment-enactment/published/expect.pins.nibli
 #   tests/pins/amendment-enactment/effective/expect.pins.nibli
@@ -53,8 +53,8 @@
 # "Nothing happens when something receives the law label." — no rule body reads `become`;
 # the second :require is the positive control proving the command still works
 # (the same body-test on `prisoner` returns rules).
-:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /become/ {print}' new-book-plans/constitution.nibli)"
-:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /prisoner/ {print}' new-book-plans/constitution.nibli)"
+:require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /become/ {print}' book-1/source/constitution.nibli)"
+:require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /prisoner/ {print}' book-1/source/constitution.nibli)"
 
 # "an ordinary reform ... receives the law label without incident"
 ? suggest(Assembly, Amend_Mint).

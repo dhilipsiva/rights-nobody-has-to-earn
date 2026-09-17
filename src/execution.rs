@@ -308,7 +308,7 @@ impl Worker {
                 let source = inputs.base_source("live")?;
                 self.canonical = Some(PreparedPinEngine::new_cached(
                     &[LoadedSource::new(
-                        "new-book-plans/constitution.nibli",
+                        "book-1/source/constitution.nibli",
                         &source,
                     )],
                     cancel.flag(),
@@ -389,7 +389,7 @@ pub(crate) fn run(args: Args) -> Result<(), Error> {
     let workers = scheduler::configured_workers()?;
     let compiled = inputs
         .files
-        .get("new-book-plans/constitution.nibli")
+        .get("book-1/source/constitution.nibli")
         .map(|source| CompiledSource::new(source))
         .unwrap_or_default();
     eprintln!(

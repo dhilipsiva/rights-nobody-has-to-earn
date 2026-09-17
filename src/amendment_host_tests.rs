@@ -432,7 +432,7 @@ fn actual_constitution_result_to_exact_source_to_fresh_query() {
 fn actual_constitution_transition() {
     let root = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
     let read = |p: &str| std::fs::read_to_string(root.join(p)).unwrap();
-    let source = read("new-book-plans/constitution.nibli");
+    let source = read("book-1/source/constitution.nibli");
     let evidence = read("tests/pins/amendment-enactment/certified/fixture.nibli");
     let pub_evidence = read("tests/pins/amendment-enactment/published/fixture.nibli");
     let selected = read("tests/pins/amendment-enactment/effective/fixture.nibli")

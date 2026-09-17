@@ -11,7 +11,8 @@
 //! relative link in the book and its appendix — actually resolves.
 //!
 //! The reference test is **asserted by membership against a dated baseline**:
-//! measured on the unchanged tree at `9d0a4381`, thirty-two references named
+//! measured on the unchanged tree at `9d0a4381` (paths as they stand after the
+//! 2026-09-17 move), thirty-two references named
 //! files that no longer exist (retired scripts, pre-suites counterfactual
 //! names, verification receipts) and eleven needles no longer occurred in
 //! their file. Those are recorded, not repaired, so the invariant a move must
@@ -25,43 +26,43 @@ use serde_json::Value;
 use std::collections::{BTreeMap, BTreeSet};
 
 /// Where the reviewed JSON lives. Rewritten by the relocation tool when it moves.
-const REVIEWED: &str = "new-book-plans";
+const REVIEWED: &str = "book-1/source";
 
 /// Files that reviewed references name and that the tree no longer carries,
 /// measured 2026-09-16. Each is a historical pointer inside a frozen audit.
 const KNOWN_MISSING: [&str; 32] = [
-    "new-book-plans/12-temporal-assurance.py",
-    "new-book-plans/13-full-society-ledger.py",
-    "new-book-plans/14-reader-evidence.py",
-    "new-book-plans/16-constitutional-closure.py",
-    "new-book-plans/7-assertion-surface.py",
-    "new-book-plans/9-record-integrity-red-team.py",
-    "new-book-plans/counterfactual/no-choose-boss.nibli",
-    "new-book-plans/counterfactual/no-dead-conjuncts.nibli",
-    "new-book-plans/counterfactual/no-person-line.nibli",
-    "new-book-plans/counterfactual/no-public-court.nibli",
-    "new-book-plans/counterfactual/undelivered-marker.nibli",
-    "new-book-plans/counterfactual/unguarded-pen.nibli",
-    "new-book-plans/verification-receipts/sha256-035ed0488cf074414f69f7255551323a43e8c0ec3926c53e9f49622b238f818d.json",
-    "new-book-plans/verification-receipts/sha256-05c2974b93429ef7e68d851195a8c70529f109b54fad6346a67751f590750e30.json",
-    "new-book-plans/verification-receipts/sha256-0f69b681f3041102069ea08527472991a472555155fb27ec74763166cd189227.json",
-    "new-book-plans/verification-receipts/sha256-1261ece1fe278e199ce9fb3567f7fc306875a656ba2bec5f3a521cc4cf08347a.json",
-    "new-book-plans/verification-receipts/sha256-2063c52ee41b6cc3cad30034e72c6029374b018ec7316cb474f64721df6af315.json",
-    "new-book-plans/verification-receipts/sha256-2c4f5879c901ca7f5ef3f4852893e91f1dc87ea26f0694efeebc10f70bcbd8ce.json",
-    "new-book-plans/verification-receipts/sha256-3849096fff1216c1cbd0914cd99ce01488501f126509b060438ec1139199a7b1.json",
-    "new-book-plans/verification-receipts/sha256-62edd4996c9928ce47a9f248f3ef19654996b8d655c99302e83f7eecffc4a297.json",
-    "new-book-plans/verification-receipts/sha256-99cba105a59e01b5335406904f72ac336d87f139b0e9acdf574075b95b23a0d0.json",
-    "new-book-plans/verification-receipts/sha256-a0ddc29b4bfeb0db302ef54276026946ff9518d6341772ef8dcd954339bb4f7c.json",
-    "new-book-plans/verification-receipts/sha256-a15e5a435c2b825622f4dd60ceaf21a9df4d11e3b3b27a4f7b04d0659b7473b8.json",
-    "new-book-plans/verification-receipts/sha256-aa0e91787c113de3bebcccd95a4083403d8caac86ae92b16a91631dcdf1d60db.json",
-    "new-book-plans/verification-receipts/sha256-b780c38fd3948f2eb3852f4fe4d2dbebc5674570a485f906dfd21c1c2871cb52.json",
-    "new-book-plans/verification-receipts/sha256-c9208b6db2b6eb865e6849267d511df1ed52a170d5eb840a5f4d34e71ee8d552.json",
-    "new-book-plans/verification-receipts/sha256-de0a932cff8e9e6147dcd529122119ad5d7b3272fab85f1a4854e5fa016deb25.json",
-    "new-book-plans/verification-receipts/sha256-e1184c495c3fb4628901e672e65b2d523b595c0b2e1230092f2cd06587c26e02.json",
-    "new-book-plans/verification-receipts/sha256-ea7a73c7741f1c318709ad06b0308cad122c103b64869fdc3bbc24696a6a4c75.json",
-    "new-book-plans/verification-receipts/sha256-f1f781ce58025d6226bf5dd8e7242924f1447f9bd75c9039030f649d9d97a334.json",
-    "new-book-plans/verification-receipts/sha256-fa2b552970c7e8bf7c2691395c325dbf4dcf4c0d834c5eb73d077797686ff74b.json",
-    "new-book-plans/verification-receipts/sha256-fd1b4841518380649b50080c1de34172d225a31c9f1e106bd2733495cd4dbbd1.json",
+    "book-1/source/12-temporal-assurance.py",
+    "book-1/source/13-full-society-ledger.py",
+    "book-1/source/14-reader-evidence.py",
+    "book-1/source/16-constitutional-closure.py",
+    "book-1/source/7-assertion-surface.py",
+    "book-1/source/9-record-integrity-red-team.py",
+    "book-1/source/counterfactual/no-choose-boss.nibli",
+    "book-1/source/counterfactual/no-dead-conjuncts.nibli",
+    "book-1/source/counterfactual/no-person-line.nibli",
+    "book-1/source/counterfactual/no-public-court.nibli",
+    "book-1/source/counterfactual/undelivered-marker.nibli",
+    "book-1/source/counterfactual/unguarded-pen.nibli",
+    "book-1/source/verification-receipts/sha256-035ed0488cf074414f69f7255551323a43e8c0ec3926c53e9f49622b238f818d.json",
+    "book-1/source/verification-receipts/sha256-05c2974b93429ef7e68d851195a8c70529f109b54fad6346a67751f590750e30.json",
+    "book-1/source/verification-receipts/sha256-0f69b681f3041102069ea08527472991a472555155fb27ec74763166cd189227.json",
+    "book-1/source/verification-receipts/sha256-1261ece1fe278e199ce9fb3567f7fc306875a656ba2bec5f3a521cc4cf08347a.json",
+    "book-1/source/verification-receipts/sha256-2063c52ee41b6cc3cad30034e72c6029374b018ec7316cb474f64721df6af315.json",
+    "book-1/source/verification-receipts/sha256-2c4f5879c901ca7f5ef3f4852893e91f1dc87ea26f0694efeebc10f70bcbd8ce.json",
+    "book-1/source/verification-receipts/sha256-3849096fff1216c1cbd0914cd99ce01488501f126509b060438ec1139199a7b1.json",
+    "book-1/source/verification-receipts/sha256-62edd4996c9928ce47a9f248f3ef19654996b8d655c99302e83f7eecffc4a297.json",
+    "book-1/source/verification-receipts/sha256-99cba105a59e01b5335406904f72ac336d87f139b0e9acdf574075b95b23a0d0.json",
+    "book-1/source/verification-receipts/sha256-a0ddc29b4bfeb0db302ef54276026946ff9518d6341772ef8dcd954339bb4f7c.json",
+    "book-1/source/verification-receipts/sha256-a15e5a435c2b825622f4dd60ceaf21a9df4d11e3b3b27a4f7b04d0659b7473b8.json",
+    "book-1/source/verification-receipts/sha256-aa0e91787c113de3bebcccd95a4083403d8caac86ae92b16a91631dcdf1d60db.json",
+    "book-1/source/verification-receipts/sha256-b780c38fd3948f2eb3852f4fe4d2dbebc5674570a485f906dfd21c1c2871cb52.json",
+    "book-1/source/verification-receipts/sha256-c9208b6db2b6eb865e6849267d511df1ed52a170d5eb840a5f4d34e71ee8d552.json",
+    "book-1/source/verification-receipts/sha256-de0a932cff8e9e6147dcd529122119ad5d7b3272fab85f1a4854e5fa016deb25.json",
+    "book-1/source/verification-receipts/sha256-e1184c495c3fb4628901e672e65b2d523b595c0b2e1230092f2cd06587c26e02.json",
+    "book-1/source/verification-receipts/sha256-ea7a73c7741f1c318709ad06b0308cad122c103b64869fdc3bbc24696a6a4c75.json",
+    "book-1/source/verification-receipts/sha256-f1f781ce58025d6226bf5dd8e7242924f1447f9bd75c9039030f649d9d97a334.json",
+    "book-1/source/verification-receipts/sha256-fa2b552970c7e8bf7c2691395c325dbf4dcf4c0d834c5eb73d077797686ff74b.json",
+    "book-1/source/verification-receipts/sha256-fd1b4841518380649b50080c1de34172d225a31c9f1e106bd2733495cd4dbbd1.json",
 ];
 
 /// Files whose reviewed needles no longer occur in them, with how many such
@@ -69,13 +70,13 @@ const KNOWN_MISSING: [&str; 32] = [
 const KNOWN_UNMATCHED: [(&str, usize); 5] = [
     ("book-1/07-a-prisoner-is-a-person.md", 1),
     ("book-1/method.md", 5),
-    ("new-book-plans/constitution.nibli", 2),
-    ("new-book-plans/counterfactual/README.md", 1),
-    ("new-book-plans/full-society-scope-review-protocol.md", 2),
+    ("book-1/source/constitution.nibli", 2),
+    ("book-1/source/counterfactual/README.md", 1),
+    ("book-1/source/full-society-scope-review-protocol.md", 2),
 ];
 
 fn reference() -> Regex {
-    Regex::new(r"^(?:book-1|new-book-plans|tests|registry)/[^:\s]+(?:::.+)?$").unwrap()
+    Regex::new(r"^(?:book-1|tests|registry)/[^:\s]+(?:::.+)?$").unwrap()
 }
 
 fn collect(value: &Value, pattern: &Regex, into: &mut BTreeSet<(String, String)>) {
@@ -365,7 +366,7 @@ fn opening_note_navigation_matches_the_manifest() {
 fn spine_contents_block_is_current() {
     let context = Context::discover().expect("repository");
     let contents = Contents::load(&context).expect("manifest");
-    let spine = context.read("new-book-plans/3-spine.md").unwrap();
+    let spine = context.read("book-1/source/3-spine.md").unwrap();
     let begin = spine
         .find(super::contents::BEGIN)
         .expect("3-spine.md has the contents markers");

@@ -1,6 +1,6 @@
 # ── Chapter 9 fidelity pins: "The Vote Conviction Does Not Take" ─────────────
 #
-# FS-CVF-003 executable coverage is delegated to new-book-plans/state-form.pins.nibli.
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
 #
 # "Belonging without surrendering rights" uses the mobility family:
 #   tests/pins/mobility/membership/multiple-exit-reentry/expect.pins.nibli
@@ -78,7 +78,7 @@
 #   tests/pins/integrity/coordinated-operation/no-public-scale-finding/expect.pins.nibli
 #   tests/pins/integrity/coordinated-operation/different-public-scale-actor/expect.pins.nibli
 # Shared evidence limits and family cards:
-#   new-book-plans/book-1-integrity-record-contract.md
+#   book-1/appendix/contracts/integrity-record-contract.md
 #
 # "When the emergency broke the rule it was under" and "When a public power
 # was handed to a private force" rest on these actual-constitution withdrawal

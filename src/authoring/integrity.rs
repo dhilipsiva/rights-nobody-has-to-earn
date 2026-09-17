@@ -9,7 +9,7 @@ use regex::Regex;
 use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
 
-const SOURCE: &str = "new-book-plans/integrity-source.json";
+const SOURCE: &str = "book-1/source/integrity-source.json";
 const BEGIN: &str = "# <DEMOCRATIC-INTEGRITY-RULES-BEGIN>";
 const END: &str = "# <DEMOCRATIC-INTEGRITY-RULES-END>";
 const INDEPENDENT: &str = "~($source = $review)";
@@ -283,7 +283,7 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         "{BEGIN}\n# Supplied, current, independent records only; no authentication, clock, or arrival.\n{}\n{END}",
         rules.join("\n")
     );
-    let path = "new-book-plans/constitution.nibli";
+    let path = "book-1/source/constitution.nibli";
     let constitution = context.read(path)?;
     let updated = if let Some((before, rest)) = constitution.split_once(BEGIN) {
         let (_, after) = rest
@@ -758,7 +758,7 @@ mod tests {
                 .filter(|line| !line.starts_with('#') && watched.is_match(line))
                 .all(|line| allowed.contains(line))
         };
-        let constitution = context.read("new-book-plans/constitution.nibli").unwrap();
+        let constitution = context.read("book-1/source/constitution.nibli").unwrap();
         assert!(
             check(&constitution),
             "an unreviewed operation consumer entered the constitution"

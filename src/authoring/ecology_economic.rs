@@ -14,7 +14,7 @@ fn head(number: usize) -> Result<String, Error> {
 
 pub(super) fn consumer(context: &Context, number: usize) -> Result<Vec<String>, Error> {
     let head = head(number)?;
-    let source = context.read("new-book-plans/constitution.nibli")?;
+    let source = context.read("book-1/source/constitution.nibli")?;
     let suffix = format!(" -> {head}.");
     let rules: Vec<_> = source
         .lines()
@@ -57,7 +57,7 @@ pub(super) fn consumer(context: &Context, number: usize) -> Result<Vec<String>, 
 fn positive(context: &Context, number: usize) -> Result<(String, Values), Error> {
     head(number)?;
     let source = context.read(&format!(
-        "new-book-plans/economic-power-{number:03}.pins.nibli"
+        "book-1/source/economic-power-{number:03}.pins.nibli"
     ))?;
     let mut lines = Vec::new();
     let mut reached_query = false;

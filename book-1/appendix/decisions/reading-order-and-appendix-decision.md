@@ -5,8 +5,8 @@
 > **Status: author-ratified 2026-09-16, ratified but unimplemented.** Four
 > rulings and the design that executes them: the reading order is editorial
 > and runs engines before breaks; both books are named; the planning record
-> becomes Book 1's appendix under a narrow override; and `new-book-plans/`
-> ceases to exist. Nothing here creates a chapter, a rule or a claim by
+> becomes Book 1's appendix under a narrow override; and `book-1/source/`
+> ceases to exist (done 2026-09-17). Nothing here creates a chapter, a rule or a claim by
 > itself; the tracker items in §7 implement it. Where this record and
 > `CLAUDE.md` diverge, this record controls. The companion record is
 > [`child-with-nobody-decision.md`](child-with-nobody-decision.md).
@@ -297,7 +297,7 @@ The author's instruction of 2026-09-16 asked for the merge, the recomputation
 with more chapters and new titles and priority, the correction of the breaks-
 before-engines imbalance, names used throughout, and the child at the heart.
 Four questions were put and answered the same day: Book 2's title; the fate of
-`new-book-plans/` (moved under `book-1/source/`); where the names are spoken
+`book-1/source/` (moved under `book-1/source/`); where the names are spoken
 (never in a derived chapter); and the appendix's relation to the book (a
 carried archive outside the reading order and the length rule). The planning
 session's measurements are recorded in §1, §3 and §4 with the revision they

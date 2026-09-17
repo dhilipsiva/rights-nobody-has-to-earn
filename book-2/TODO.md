@@ -9,7 +9,7 @@ of "The rebuild of Book 1" in `CLAUDE.md`; the controlling record is
 
 Collection only; Gate C has not activated this volume. Follow the exact legal
 interfaces in
-[`book-1-ecological-and-animal-protection-contract.md`](../new-book-plans/book-1-ecological-and-animal-protection-contract.md).
+[`ecological-and-animal-protection-contract.md`](../book-1/appendix/contracts/ecological-and-animal-protection-contract.md).
 Operational work must supply measurements, numerical ceilings and resource
 budgets, independent scientific review and uncertainty methods; authentic
 appointments and finite collegial decisions; a shared case/version/evidence/
@@ -59,7 +59,7 @@ derived chapter (R2, 2026-09-16).
 > constitutional scope; retain here only their operating machinery—budgets,
 > staffing, procurement, service workflows, storage, technology, transition, and
 > implementation evidence. See
-> `new-book-plans/book-1-constitutional-coverage-map.md` and `CLAUDE.md`.
+> `book-1/appendix/maps/constitutional-coverage-map.md` and `CLAUDE.md`.
 
 > **Full-society boundary — author-ratified 2026-08-07: two books + C then E +
 > versioned closure.** Book 2 owns the operational half of every domain assigned
@@ -70,7 +70,7 @@ derived chapter (R2, 2026-09-16).
 > candidates. Gate E atomically publishes Book 2 — First Edition and the
 > integrated manifest, and alone permits the bounded claim that the exact paired
 > editions model a fully functional society for the declared reference envelope.
-> See `new-book-plans/full-society-boundary-decision.md`.
+> See `book-1/appendix/decisions/full-society-boundary-decision.md`.
 
 > **State-form handoff - author-ratified 2026-08-07.** Book 1 owns the federal
 > parliamentary institutions, residence-first political membership, lawful
@@ -80,7 +80,7 @@ derived chapter (R2, 2026-09-16).
 > costs, clocks, workflows, capacity, publication, deployment, and external
 > assurance. It may not invent membership, thresholds, powers, or a different
 > secession route. See
-> `new-book-plans/book-1-state-form-and-political-membership-decision.md`.
+> `book-1/appendix/decisions/state-form-and-political-membership-decision.md`.
 
 > **Equality handoff - author-ratified 2026-08-07.** Book 1 owns the legal
 > equality definitions, protected reach, distinction and burden tests, data wall,
@@ -94,7 +94,7 @@ derived chapter (R2, 2026-09-16).
 > may consume an authenticated, contestable, bounded finding but is not the
 > population,
 > identity, or institutional-liveness system. See
-> `new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md`.
+> `book-1/appendix/decisions/substantive-equality-and-anti-subordination-decision.md`.
 
 > **Economic handoff - author-ratified 2026-08-07.** Book 1 owns lawful
 > institutional forms, rights and limits, floor non-delegation, labour/property/
@@ -108,7 +108,7 @@ derived chapter (R2, 2026-09-16).
 > minimal authenticated, adjudicated, purpose-bound premise/result records and is
 > not a market, valuation, scarcity, identity, payment, or institutional-liveness
 > system. See
-> `new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md`.
+> `book-1/appendix/decisions/economic-pluralism-and-protected-private-sphere-decision.md`.
 
 > **Family, dependency, reproduction, and collective-plurality handoff - author-
 > ratified 2026-08-08.** Book 1 owns the constitutional contract for children,
@@ -124,7 +124,7 @@ derived chapter (R2, 2026-09-16).
 > collective-membership rule, general-ballot exception, secession path, or
 > consultation/consent threshold.
 > See
-> `new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md`.
+> `book-1/appendix/decisions/family-dependency-reproduction-and-collective-plurality-decision.md`.
 
 > **Ecological, future-generation, commons, and non-human-animal handoff -
 > author-ratified 2026-08-08.** Book 1 owns the distinct individual environmental
@@ -150,7 +150,7 @@ derived chapter (R2, 2026-09-16).
 > Nibli may consume authenticated bounded findings; it is not a measurement,
 > sentience, causation, threshold, restoration, or institutional-liveness system.
 > See
-> `new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md`.
+> `book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md`.
 
 > **Public-safety, defence, emergency, and external-power handoff —
 > author-ratified 2026-08-08.** Book 1 owns six separated protective mandates
@@ -189,7 +189,7 @@ derived chapter (R2, 2026-09-16).
 > deliverables. Nibli may consume authenticated bounded authorisation,
 > declaration, order or review records; it is not a threat-detection,
 > attribution, warrant-authentication, or institutional-liveness system. See
-> `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
+> `book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md`.
 
 > **Assurance-portfolio handoff — author-ratified 2026-08-08.** Book 1 owns the
 > route list, the posture set, the claim-language rules, the safety/liveness/
@@ -220,7 +220,7 @@ derived chapter (R2, 2026-09-16).
 > reasoning engine through the compute backend, an external predicate, or built-in
 > arithmetic; it arrives only as an authenticated, adjudicated, purpose-bound
 > premise through a distinct relation. See
-> `new-book-plans/book-1-assurance-portfolio-decision.md`.
+> `book-1/appendix/decisions/assurance-portfolio-decision.md`.
 
 **This tracker is unordered, because book-2's chapters are not decided.** Ordering it is
 book-2's first real act. Until Book 1 — First Edition actually ships at Gate C:
@@ -249,7 +249,7 @@ noticing.
 
 - **Integrity interface operation (seed, 2026-09-12).** The districting,
   opposition/internal-democracy and coordinated-operation cards beside
-  `new-book-plans/book-1-integrity-record-contract.md` define current bounded
+  `book-1/appendix/contracts/integrity-record-contract.md` define current bounded
   findings, challenge, correction, alternate review and legal duties. Collect
   their evidence/authentication, Assembly and association procedures,
   district-drawing methods, actor-control investigation, proportionate
@@ -260,7 +260,7 @@ noticing.
 
 - **Political-finance operation (seed, 2026-09-10).** Book 1 now names the
   payer, instrument, and recipient kinds a reviewed office or candidacy result
-  must attest under `new-book-plans/book-1-money-and-influence-contract.md`.
+  must attest under `book-1/appendix/contracts/money-and-influence-contract.md`.
   Book 2 owns everything that would make such an attestation possible: the
   contribution and expenditure registers, filing and correction workflow, the
   amounts and publication thresholds democratic law sets, beneficial-ownership
@@ -271,7 +271,7 @@ noticing.
 - **Office-integrity operation (seed, 2026-09-09).** Book 1 now names the
   interest kinds, counterparty relationships, and incompatibility modes a
   reviewed office result must attest under
-  `new-book-plans/book-1-office-integrity-contract.md`. Book 2 owns what makes
+  `book-1/appendix/contracts/office-integrity-contract.md`. Book 2 owns what makes
   those attestations possible: interest and gift registers, their filing and
   correction workflow, the *de minimis* thresholds and cooling-off periods
   democratic law sets, post-office employment notification, and the audit and
@@ -413,7 +413,7 @@ but never replaces, this rule.
     record/office transfer, budget continuity, federal coordination, equalisation,
     portability, and peaceful transfer. A modelled clock or workflow is operational
     evidence, not a Book 1 derivation.
-    `new-book-plans/book-1-amendment-enactment-contract.md` now defines the
+    `book-1/appendix/contracts/amendment-enactment-contract.md` now defines the
     exact-base/candidate, successor, conflict, replay, challenge and remedy
     boundary. The separate host harness exercises trusted local input and
     in-memory transitions only. This item owns digest/signature authentication
@@ -426,7 +426,7 @@ but never replaces, this rule.
   - Operate campaign finance, lobbying, procurement, appointments, conflicts,
     patronage/nepotism, corruption and information-manipulation controls; and
     independent census/sampling/planning data.
-    `new-book-plans/book-1-official-statistics-contract.md` now supplies the
+    `book-1/appendix/contracts/official-statistics-contract.md` now supplies the
     statistical authority, data separation, bounded consumers, remedial burden,
     correction, challenge and alternate-review limits. This Book 2 item owns
     collection, sampling, linkage, privacy technology, calibration, thresholds,
@@ -547,7 +547,7 @@ but never replaces, this rule.
 - [ ] **Build collective self-government, land, language, and consultation
   operations.**
   - Consume the exact-source legal interfaces in
-    `new-book-plans/book-1-mobility-and-plurality-contract.md`. Their opaque
+    `book-1/appendix/contracts/mobility-and-plurality-contract.md`. Their opaque
     records prove no identity, title, consent, publication, clock or action.
     Operate independent alternate completeness attestation under the same
     scoped authority; a missing primary certificate never becomes consent.
@@ -584,7 +584,7 @@ but never replaces, this rule.
     conditions through procurement, investment, trade and supply-chain work;
     foreign cooperation and evidence remain named external assumptions.
   - Operate civil, administrative, family, labour, consumer, constitutional and
-    criminal justice under `new-book-plans/book-1-non-carceral-justice-contract.md`.
+    criminal justice under `book-1/appendix/contracts/non-carceral-justice-contract.md`.
     Its independently reviewed process and court-bound remedy findings are not
     proof of a hearing, authenticated legacy assertion, effective enforcement,
     physical release, humane conditions or completed remedy.
@@ -697,14 +697,14 @@ but never replaces, this rule.
 - [ ] **Operate public safety, defence, and declared shock conditions without
   acquiring a power Book 1 refused.**
   - The Book 1 implementation is collected in
-    `new-book-plans/book-1-public-safety-contract.md` and authored explicitly
+    `book-1/appendix/contracts/public-safety-contract.md` and authored explicitly
     by `./generate.sh public-safety`. Its supplied-record conclusions do not
     perform any of this work. Keep this item inactive until Gate C. In
     particular, distinguish authorization from witnessed actual holding,
     ordinary cessation from abuse, and a repeated frozen record from live
     outside evidence; no formal test establishes those institutional acts.
   - Follow the author-ratified 2026-08-08 contract in
-    `new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md`.
+    `book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md`.
     Book 2 supplies capability and never a legal authority: no derogation power,
     no standing emergency authority, no domestic military mandate, no risk or
     threat score, no status that gates the floor, and no exception to a
@@ -1094,7 +1094,7 @@ unstaffed, unmeasured or physically impossible promise.
 
 Gate D is the Book 2 operational model; Gate E is the integrated two-book
 release. Their conditions and permitted claims are stated in
-[`full-society-boundary-decision.md`](../new-book-plans/full-society-boundary-decision.md),
+[`full-society-boundary-decision.md`](../book-1/appendix/decisions/full-society-boundary-decision.md),
 under "The gate ladder", which is their controlling record. **They are not
 copied here on purpose** — a second hand-maintained statement of a gate is the
 thing the canonical-source mandate refuses, and a gate whose conditions live in

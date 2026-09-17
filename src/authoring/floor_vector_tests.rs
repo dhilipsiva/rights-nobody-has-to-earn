@@ -29,7 +29,7 @@ const FLOOR: [&str; 8] = [
 fn statements() -> Vec<String> {
     Context::discover()
         .expect("repository")
-        .read("new-book-plans/constitution.nibli")
+        .read("book-1/source/constitution.nibli")
         .expect("constitution")
         .lines()
         .map(str::trim)
@@ -466,7 +466,7 @@ const PREDATES_CHALLENGE_SKELETON: [&str; 2] = ["ECONOMIC-CONSTITUTION", "STATE-
 fn families() -> Vec<(String, String)> {
     let source = Context::discover()
         .expect("repository")
-        .read("new-book-plans/constitution.nibli")
+        .read("book-1/source/constitution.nibli")
         .expect("constitution");
     let begin = Regex::new(r"^#\s*<([A-Z-]+)-RULES-BEGIN>$").unwrap();
     let end = Regex::new(r"^#\s*<([A-Z-]+)-RULES-END>$").unwrap();

@@ -15,7 +15,7 @@ impl Context {
         let mut current = std::env::current_dir()?;
         loop {
             if current.join("verify.sh").is_file()
-                && current.join("new-book-plans/constitution.nibli").is_file()
+                && current.join("book-1/source/constitution.nibli").is_file()
             {
                 return Ok(Self {
                     root: Arc::new(current),

@@ -10,7 +10,7 @@ A map is JSON:
 
     {"name": "...", "date": "YYYY-MM-DD", "notes": "...",
      "moves":    [{"from": "book-1/08-what-you-are-owed.md", "to": "book-1/01-what-you-are-owed.md"}, ...],
-     "rewrites": [{"from": "new-book-plans/", "to": "book-1/source/"}, ...],
+     "rewrites": [{"from": "book-1/source/", "to": "book-1/source/"}, ...],
      "labels":   {"8": "1", ...}}
 
 `moves` are files or directories, applied with `git mv`. Text rewrites are derived
@@ -24,8 +24,9 @@ into manifest order.
 
 Content this tool never changes, and `check` asserts byte-identical against HEAD
 (through the rename): the constitution, the eight rule-family sources, every
-non-comment line of every pins file, 4-strata.py, registry/, the legacy
-manuscripts, tmp.txt, reviews/ and new-reviwes/.
+pin statement of every pins file (comment and `:require` lines carry paths and
+are rewritten), 4-strata.py, registry/, the legacy manuscripts, tmp.txt,
+reviews/ and new-reviwes/.
 """
 from __future__ import annotations
 
@@ -57,8 +58,8 @@ TEXT_GLOBS = [
     "book-1/source/counterfactual/README.md", "book-1/source/reader-evidence-pilot/*.md",
     "book-2/*.md",
     "tests/pins/suites.json",
-    "new-book-plans/*.md", "new-book-plans/*.json", "new-book-plans/*.py",
-    "new-book-plans/counterfactual/README.md", "new-book-plans/reader-evidence-pilot/*.md",
+    "book-1/source/*.md", "book-1/source/*.json", "book-1/source/*.py",
+    "book-1/source/counterfactual/README.md", "book-1/source/reader-evidence-pilot/*.md",
     "src/*.rs", "src/*/*.rs", "src/bin/*.rs",
     "tools/*.py",
 ]
@@ -187,7 +188,7 @@ def manifest_order() -> list[str]:
 
 
 def resort_reader_coverage(labels: dict[str, str], dry_run: bool) -> int:
-    candidates = [p for p in ("book-1/source/reader-coverage-source.json", "new-book-plans/reader-coverage-source.json") if (ROOT / p).is_file()]
+    candidates = [p for p in ("book-1/source/reader-coverage-source.json", "book-1/source/reader-coverage-source.json") if (ROOT / p).is_file()]
     if not candidates or not labels:
         return 0
     path = ROOT / candidates[0]
@@ -266,13 +267,17 @@ def cmd_apply(args: argparse.Namespace) -> int:
     if args.dry_run:
         print(f"would apply {len(mapping['moves'])} moves and {len(pairs)} rewrite pairs")
     else:
-        # Two phases, so chained renames never collide: everything to a
-        # temporary name first, then to its destination.
-        for move in mapping["moves"]:
+        # Chained renames (a destination that is another move's source) go
+        # through a temporary name so they never collide; everything else moves
+        # directly, in the listed order, so files can leave a directory before
+        # the directory itself moves.
+        chained = [m for m in mapping["moves"] if m["to"].rstrip("/") in sources]
+        for move in chained:
             git("mv", move["from"], move["from"] + ".relocating")
         for move in mapping["moves"]:
             (ROOT / move["to"]).parent.mkdir(parents=True, exist_ok=True)
-            git("mv", move["from"] + ".relocating", move["to"])
+            source = move["from"] + ".relocating" if move in chained else move["from"]
+            git("mv", source, move["to"])
 
     def after(path: str) -> str:
         for move in mapping["moves"]:
@@ -305,7 +310,8 @@ def cmd_apply(args: argparse.Namespace) -> int:
         n = m = 0
         out = []
         for line in lines:
-            if line.lstrip().startswith("#"):
+            # Comments and `:require` shell lines carry paths; pin statements do not.
+            if line.lstrip().startswith(("#", ":require")):
                 line, a = rewrite_text(line, pairs)
                 b = 0
                 if labels:
@@ -365,7 +371,7 @@ def cmd_check(args: argparse.Namespace) -> int:
     for path in pins_files():
         text = (ROOT / path).read_text(encoding="utf-8")
         for line in text.split("\n"):
-            if line.lstrip().startswith("#"):
+            if line.lstrip().startswith(("#", ":require")):
                 for src, _dst, guarded in pairs:
                     if not guarded and src in line:
                         problems.append(f"{path} comment still mentions {src!r}")
@@ -384,7 +390,7 @@ def cmd_check(args: argparse.Namespace) -> int:
         if old is None:
             problems.append(f"{path}: pins file has no HEAD counterpart at {before(path)}")
             continue
-        strip = lambda b: [l for l in b.decode("utf-8").split("\n") if not l.lstrip().startswith("#")]
+        strip = lambda b: [l for l in b.decode("utf-8").split("\n") if not l.lstrip().startswith(("#", ":require"))]
         if strip(old) != strip((ROOT / path).read_bytes()):
             problems.append(f"{path}: a non-comment pins line changed")
     # git status: deletions are moves, additions are moves, modifications are in scope.

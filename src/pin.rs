@@ -2443,9 +2443,9 @@ mod tests {
     fn prepared_live_constitution_is_reused_across_pin_files() {
         let root = Path::new(env!("CARGO_MANIFEST_DIR"));
         let constitution =
-            std::fs::read_to_string(root.join("new-book-plans/constitution.nibli")).unwrap();
+            std::fs::read_to_string(root.join("book-1/source/constitution.nibli")).unwrap();
         let floor =
-            std::fs::read_to_string(root.join("new-book-plans/rights-floor.pins.nibli")).unwrap();
+            std::fs::read_to_string(root.join("book-1/source/rights-floor.pins.nibli")).unwrap();
         let chapter =
             std::fs::read_to_string(root.join("book-1/01-what-counts-as-evidence.pins.nibli"))
                 .unwrap();

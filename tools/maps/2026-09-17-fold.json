@@ -1,0 +1,193 @@
+{
+  "name": "fold",
+  "date": "2026-09-17",
+  "notes": "R5 of the 2026-09-16 rebuild: the forty-five human-facing planning documents to book-1/appendix/ with the book-1- prefix dropped, everything else to book-1/source/ by flat rename. new-book-plans/ ceases to exist. Hand-finished after apply: eight `:require` shell lines in the chapter pins and one dependency path in integrity-source.json name the constitution or a pins file by path and were repointed (the tool now treats `:require` lines like comments); two registry notes pointing at vdem-rederivation.md were repointed; forty-one relative links inside the appendix that crossed subdirectories were re-resolved; four historical sentences naming the old directory as history were restored.",
+  "moves": [
+    {
+      "from": "new-book-plans/book-1-amendment-enactment-contract.md",
+      "to": "book-1/appendix/contracts/amendment-enactment-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-appointment-anti-capture-contract.md",
+      "to": "book-1/appendix/contracts/appointment-anti-capture-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-assurance-portfolio-decision.md",
+      "to": "book-1/appendix/decisions/assurance-portfolio-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-closure-gaps-decision.md",
+      "to": "book-1/appendix/decisions/closure-gaps-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-concentrated-private-and-hybrid-power-contract.md",
+      "to": "book-1/appendix/contracts/concentrated-private-and-hybrid-power-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-constitutional-coverage-map.md",
+      "to": "book-1/appendix/maps/constitutional-coverage-map.md"
+    },
+    {
+      "from": "new-book-plans/book-1-constitutional-taxonomy.md",
+      "to": "book-1/appendix/maps/constitutional-taxonomy.md"
+    },
+    {
+      "from": "new-book-plans/book-1-coordinated-operation-contract.md",
+      "to": "book-1/appendix/contracts/coordinated-operation-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-delivery-and-receipt-brief.md",
+      "to": "book-1/appendix/briefs/delivery-and-receipt-brief.md"
+    },
+    {
+      "from": "new-book-plans/book-1-delivery-and-receipt-decision.md",
+      "to": "book-1/appendix/decisions/delivery-and-receipt-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-democratic-and-administrative-integrity-brief.md",
+      "to": "book-1/appendix/briefs/democratic-and-administrative-integrity-brief.md"
+    },
+    {
+      "from": "new-book-plans/book-1-democratic-and-administrative-integrity-decision.md",
+      "to": "book-1/appendix/decisions/democratic-and-administrative-integrity-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-disclosure-duty-contract.md",
+      "to": "book-1/appendix/contracts/disclosure-duty-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-districting-integrity-contract.md",
+      "to": "book-1/appendix/contracts/districting-integrity-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-ecological-and-animal-protection-contract.md",
+      "to": "book-1/appendix/contracts/ecological-and-animal-protection-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-ecological-future-generation-commons-and-non-human-animal-decision.md",
+      "to": "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-economic-pluralism-and-protected-private-sphere-decision.md",
+      "to": "book-1/appendix/decisions/economic-pluralism-and-protected-private-sphere-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-edition-boundary-decision.md",
+      "to": "book-1/appendix/decisions/edition-boundary-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-family-dependency-reproduction-and-collective-plurality-decision.md",
+      "to": "book-1/appendix/decisions/family-dependency-reproduction-and-collective-plurality-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-family-life-ordinary-contract.md",
+      "to": "book-1/appendix/contracts/family-life-ordinary-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-income-security-and-social-insurance-contract.md",
+      "to": "book-1/appendix/contracts/income-security-and-social-insurance-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-integrity-record-contract.md",
+      "to": "book-1/appendix/contracts/integrity-record-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-knowledge-and-free-field-contract.md",
+      "to": "book-1/appendix/contracts/knowledge-and-free-field-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-mobility-and-plurality-contract.md",
+      "to": "book-1/appendix/contracts/mobility-and-plurality-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-money-and-influence-contract.md",
+      "to": "book-1/appendix/contracts/money-and-influence-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-narrative-register-decision.md",
+      "to": "book-1/appendix/decisions/narrative-register-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-non-carceral-justice-contract.md",
+      "to": "book-1/appendix/contracts/non-carceral-justice-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-obligations-and-nonreciprocity-decision.md",
+      "to": "book-1/appendix/decisions/obligations-and-nonreciprocity-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-office-integrity-contract.md",
+      "to": "book-1/appendix/contracts/office-integrity-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-official-statistics-contract.md",
+      "to": "book-1/appendix/contracts/official-statistics-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-opposition-and-party-democracy-contract.md",
+      "to": "book-1/appendix/contracts/opposition-and-party-democracy-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-public-safety-contract.md",
+      "to": "book-1/appendix/contracts/public-safety-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-public-safety-defence-emergency-and-external-power-decision.md",
+      "to": "book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-qualifications-and-compensation-contract.md",
+      "to": "book-1/appendix/contracts/qualifications-and-compensation-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-reader-evidence-execution-withdrawal-decision.md",
+      "to": "book-1/appendix/decisions/reader-evidence-execution-withdrawal-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-reader-evidence-protocol-decision.md",
+      "to": "book-1/appendix/decisions/reader-evidence-protocol-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-record-power-contract.md",
+      "to": "book-1/appendix/contracts/record-power-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-red-team-index.md",
+      "to": "book-1/appendix/maps/red-team-index.md"
+    },
+    {
+      "from": "new-book-plans/book-1-scarcity-and-conflict-contract.md",
+      "to": "book-1/appendix/contracts/scarcity-and-conflict-contract.md"
+    },
+    {
+      "from": "new-book-plans/book-1-state-form-and-political-membership-decision.md",
+      "to": "book-1/appendix/decisions/state-form-and-political-membership-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-substantive-equality-and-anti-subordination-decision.md",
+      "to": "book-1/appendix/decisions/substantive-equality-and-anti-subordination-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-thesis-framing-and-second-stress-case-brief.md",
+      "to": "book-1/appendix/briefs/thesis-framing-and-second-stress-case-brief.md"
+    },
+    {
+      "from": "new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md",
+      "to": "book-1/appendix/decisions/thesis-framing-and-second-stress-case-decision.md"
+    },
+    {
+      "from": "new-book-plans/book-1-time-model-decision.md",
+      "to": "book-1/appendix/decisions/time-model-decision.md"
+    },
+    {
+      "from": "new-book-plans/full-society-boundary-decision.md",
+      "to": "book-1/appendix/decisions/full-society-boundary-decision.md"
+    },
+    {
+      "from": "new-book-plans",
+      "to": "book-1/source"
+    }
+  ],
+  "rewrites": [],
+  "labels": {}
+}

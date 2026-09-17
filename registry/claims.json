@@ -817,7 +817,7 @@
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --snapshot registry/data",
       "book": "book-1",
-      "notes": "Reproduces the EIU-era narrowing almost exactly (0.195 there) on an openly licensed instrument — the robust half of Part V's worked example. Working record: new-book-plans/vdem-rederivation.md."
+      "notes": "Reproduces the EIU-era narrowing almost exactly (0.195 there) on an openly licensed instrument — the robust half of Part V's worked example. Working record: book-1/source/vdem-rederivation.md."
     },
     {
       "id": "vdem-2026-regime-ladder-steps",
@@ -869,7 +869,7 @@
         "n": 141
       },
       "units": "OLS on |residuals| of ladder~polyarchy",
-      "source": "Same derivation; isolation test against the alternative index recorded qualitatively in new-book-plans/vdem-rederivation.md (its coefficients stay out of this CC0 registry per the 2026-08-02 licensing ruling)",
+      "source": "Same derivation; isolation test against the alternative index recorded qualitatively in book-1/source/vdem-rederivation.md (its coefficients stay out of this CC0 registry per the 2026-08-02 licensing ruling)",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --snapshot registry/data",

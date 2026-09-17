@@ -10,7 +10,7 @@ use regex::Regex;
 use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
 
-const SOURCE: &str = "new-book-plans/scarcity-source.json";
+const SOURCE: &str = "book-1/source/scarcity-source.json";
 const BEGIN: &str = "# <SCARCITY-AND-CONFLICT-RULES-BEGIN>";
 const END: &str = "# <SCARCITY-AND-CONFLICT-RULES-END>";
 const INDEPENDENT: &str = "~($source = $review)";
@@ -311,7 +311,7 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         "{BEGIN}\n# Supplied findings, allocations and recorded shortfalls. A reduced ration is\n# never the minimum, and no priority key ranks a person.\n{}\n{END}",
         authored.join("\n")
     );
-    let path = "new-book-plans/constitution.nibli";
+    let path = "book-1/source/constitution.nibli";
     let old = context.read(path)?;
     let updated = if let Some((before, rest)) = old.split_once(BEGIN) {
         if old.matches(BEGIN).count() != 1 || old.matches(END).count() != 1 {
