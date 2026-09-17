@@ -18,6 +18,8 @@ mod amendment;
 pub(crate) mod contents;
 #[path = "authoring/ecology.rs"]
 mod ecology;
+#[path = "authoring/equality.rs"]
+mod equality;
 #[path = "authoring/integrity.rs"]
 mod integrity;
 #[path = "authoring/justice.rs"]
@@ -247,6 +249,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             | "mobility"
             | "justice"
             | "family-life"
+            | "equality"
             | "knowledge"
             | "reader-coverage"
             | "record-power"
@@ -256,7 +259,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
             | "ecology"
     ) {
         return Err(Error::usage(
-            "usage: ./generate.sh adversarial-audit|state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|family-life|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
+            "usage: ./generate.sh adversarial-audit|state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|family-life|equality|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
         ));
     }
     let mut inventory: serde_json::Value =
@@ -272,6 +275,7 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
         "mobility" => mobility::generate(context, &mut export)?,
         "justice" => justice::generate(context, &mut export)?,
         "family-life" => family_life::generate(context, &mut export)?,
+        "equality" => equality::generate(context, &mut export)?,
         "knowledge" => knowledge::generate(context, &mut export)?,
         "reader-coverage" => reader_coverage::generate(context, &mut export)?,
         "record-power" => record_power::generate(context, &mut export)?,

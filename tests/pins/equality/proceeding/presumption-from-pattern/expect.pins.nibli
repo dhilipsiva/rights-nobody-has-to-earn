@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+
+? permits(EqualityProceedingClaimant, PursueTheRemedialEqualityProceeding, EqualityProceedingRecord).
+# => TRUE
+? obliged(EqualityProceedingReader, HearTheEqualityClaimAndGiveCaseSpecificRelief, EqualityProceedingRecord).
+# => TRUE
+? complete(EqualityProceedingRecord, ReviewedRemedialEqualityProceeding, EqualityProceedingDecision).
+# => TRUE
+? prisoner(EqualityProceedingClaimant).
+# => FALSE
+? false(EqualityProceedingClaimant).
+# => FALSE
+? lose(Points, EqualityProceedingClaimant).
+# => FALSE
+? prisoner(Cira).
+# => FALSE
+? false(Cira).
+# => FALSE

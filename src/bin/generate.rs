@@ -20,7 +20,7 @@ fn main() -> std::process::ExitCode {
         context::Context::discover().and_then(|context| authoring::run(&context, &args[0]))
     } else {
         Err(cli::Error::usage(
-            "usage: ./generate.sh adversarial-audit|state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
+            "usage: ./generate.sh adversarial-audit|state-form|obligations|integrity|statistics|amendment|mobility|justice|knowledge|family-life|equality|reader-coverage|record-power|resolution-receipts|scarcity|public-safety|ecology|spine",
         ))
     };
     match result {

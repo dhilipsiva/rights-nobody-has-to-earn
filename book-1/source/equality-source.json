@@ -1,0 +1,418 @@
+{
+  "common_fields": [
+    [
+      "$decision",
+      "EqualityDecisionScope"
+    ],
+    [
+      "$domain",
+      "EqualityDomainScope"
+    ],
+    [
+      "$actor",
+      "EqualityActorScope"
+    ],
+    [
+      "$version",
+      "EqualitySourceVersionScope"
+    ],
+    [
+      "$period",
+      "EqualityEvidencePeriodScope"
+    ],
+    [
+      "$jurisdiction",
+      "EqualityJurisdictionScope"
+    ],
+    [
+      "$scope",
+      "EqualityLegalScope"
+    ],
+    [
+      "$end",
+      "EqualitySourceBoundEndScope"
+    ],
+    [
+      "CurrentReconciledEqualityRecord",
+      "EqualityCurrentDispositionScope"
+    ],
+    [
+      "$reader",
+      "EqualityChallengeReaderScope"
+    ],
+    [
+      "$alternate",
+      "EqualityIndependentAlternateScope"
+    ],
+    [
+      "$challenge",
+      "EqualityChallengeScope"
+    ],
+    [
+      "$correction",
+      "EqualityCorrectionScope"
+    ],
+    [
+      "$remedy",
+      "EqualityRemedyScope"
+    ],
+    [
+      "ConstitutionalCourtFinalGeneralInvalidationOnly",
+      "EqualityFinalReviewScope"
+    ],
+    [
+      "NoStandingFloorCoreLibertyDueProcessOrEqualBallotBalancedAway",
+      "EqualityCorridorScope"
+    ]
+  ],
+  "vocabularies": [
+    [
+      "EqualityDomainScope",
+      "EqualityDomainVocabulary",
+      [
+        "PublicFunction",
+        "Employment",
+        "Housing",
+        "Education",
+        "HealthAndCare",
+        "FinanceAndInsurance",
+        "Utilities",
+        "Transport",
+        "PublicCommerce",
+        "DominantCommunicationOrPlatform"
+      ]
+    ],
+    [
+      "EqualityMeasureKindScope",
+      "EqualityMeasureKindVocabulary",
+      [
+        "BarrierRemoval",
+        "TargetedOutreach",
+        "Investment",
+        "Support",
+        "Restitution",
+        "Training",
+        "PlacementTarget",
+        "BoundedQuota"
+      ]
+    ],
+    [
+      "EqualityBarrierKindScope",
+      "EqualityBarrierKindVocabulary",
+      [
+        "PhysicalBarrier",
+        "SensoryBarrier",
+        "CognitiveBarrier",
+        "LinguisticBarrier",
+        "DigitalBarrier",
+        "GeographicBarrier",
+        "FinancialBarrier",
+        "ProceduralBarrier"
+      ]
+    ],
+    [
+      "EqualityFormScope",
+      "EqualityFormVocabulary",
+      [
+        "DirectDiscriminationForm",
+        "IndirectDiscriminationForm",
+        "SystemicDiscriminationForm",
+        "MultipleDiscriminationForm",
+        "IntersectionalDiscriminationForm",
+        "AssociativeDiscriminationForm",
+        "AccommodationDenialForm",
+        "ImposedSegregationForm",
+        "HarassmentForm",
+        "RetaliationForm"
+      ]
+    ],
+    [
+      "EqualityDefectKindScope",
+      "EqualityDefectKindVocabulary",
+      [
+        "UnevidencedDisadvantageGround",
+        "MeasureContinuedWithoutACurrentFinding",
+        "EligibilityEvidenceReusedAsAStatus",
+        "AccommodationRefusedOnALocalBudgetLine",
+        "AlternativeRouteInferiorOrRequiringRestart",
+        "PatternTreatedAsAnIndividualVerdict",
+        "RetaliationForTheClaim"
+      ]
+    ]
+  ],
+  "contracts": [
+    {
+      "id": "measure",
+      "kind": "ReviewedPositiveMeasure",
+      "fields": [
+        [
+          "$measure_kind",
+          "EqualityMeasureKindScope"
+        ],
+        [
+          "EvidencedContinuingStructuralDisadvantageNotRewardGuiltOrRank",
+          "EqualityMeasureGroundScope"
+        ],
+        [
+          "OrdinaryEqualityAccessibilityAndAccommodationShownInsufficient",
+          "EqualityMeasureNecessityScope"
+        ],
+        [
+          "EligibleClassWithMinimallyNecessaryContestableEvidenceOutsideThePersonRecord",
+          "EqualityMeasureEligibilityScope"
+        ],
+        [
+          "ExpectedEqualityEffectAndEffectOnOtherRightsStated",
+          "EqualityMeasureEffectScope"
+        ],
+        [
+          "OneEqualBallotProportionalityAndAntiCaptureControlsPreserved",
+          "EqualityMeasurePoliticalScope"
+        ],
+        [
+          "EndsWhenTheObjectiveIsSustainablyAchievedNotByCalendar",
+          "EqualityMeasureEndScope"
+        ]
+      ],
+      "heads": [
+        "authority($actor, $measure_kind, $record)",
+        "permits($actor, ApplyTheBoundedPositiveMeasure, $record)",
+        "obliged($reader, ReviewTheMeasureAndEndItWhenTheObjectiveIsSustainablyAchieved, $record)"
+      ],
+      "extra": [],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "continuation",
+      "kind": "ReviewedMeasureContinuationFinding",
+      "fields": [
+        [
+          "$measure_kind",
+          "EqualityMeasureKindScope"
+        ],
+        [
+          "CurrentIndependentlyReviewableEvidenceThatTheObjectiveRemainsUnmet",
+          "EqualityContinuationEvidenceScope"
+        ],
+        [
+          "MeasureRemainsNecessaryAndProportionate",
+          "EqualityContinuationNecessityScope"
+        ],
+        [
+          "NoNewPreferenceOrEnlargedScopeWithoutAFreshFinding",
+          "EqualityContinuationScopeLimitScope"
+        ],
+        [
+          "ReviewSilenceCertifiesNothingAndACalendarRenewsNothing",
+          "EqualityContinuationSilenceScope"
+        ]
+      ],
+      "heads": [
+        "permits($actor, ContinueTheBoundedPositiveMeasure, $record)",
+        "obliged($reader, HearTheContinuationChallengeAndEndTheMeasureIfTheObjectiveIsMet, $record)"
+      ],
+      "extra": [],
+      "record_dependency": true,
+      "bindings": {}
+    },
+    {
+      "id": "accommodation",
+      "kind": "ReviewedReasonableAccommodation",
+      "fields": [
+        [
+          "$barrier_kind",
+          "EqualityBarrierKindScope"
+        ],
+        [
+          "$requester",
+          "EqualityRequesterScope"
+        ],
+        [
+          "ConsultationOfTheAffectedPersonAndTheirStatedRequirements",
+          "EqualityAccommodationConsultationScope"
+        ],
+        [
+          "EffectiveAdjustmentOfferedWithReasonsAndAPromptChallengeRoute",
+          "EqualityAccommodationOfferScope"
+        ],
+        [
+          "NoCostToThePersonAndNoInferiorStatus",
+          "EqualityAccommodationCostScope"
+        ],
+        [
+          "UndueBurdenReadAcrossTheInstitutionAsAWholeNotALocalBudgetLine",
+          "EqualityAccommodationBurdenScope"
+        ],
+        [
+          "EquivalentAlternativeThroughPublicContinuityWhereTheProviderGenuinelyCannot",
+          "EqualityAccommodationAlternativeScope"
+        ]
+      ],
+      "heads": [
+        "obliged($actor, ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, $record)",
+        "permits($requester, UseTheRightServiceRoleOrProcedureWithTheAdjustment, $record)",
+        "obliged($alternate, SecureTheEquivalentAlternativeRouteWithoutRestartWhereTheProviderCannot, $record)"
+      ],
+      "extra": [
+        "~($requester = $actor)",
+        "~($requester = $review)",
+        "~($requester = $reader)",
+        "~($requester = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "proceeding",
+      "kind": "ReviewedRemedialEqualityProceeding",
+      "fields": [
+        [
+          "$form",
+          "EqualityFormScope"
+        ],
+        [
+          "$claimant",
+          "EqualityClaimantScope"
+        ],
+        [
+          "PurposeOrEffectSufficesNoIntentOrSingleComparatorRequired",
+          "EqualityProceedingTestScope"
+        ],
+        [
+          "AggregatePatternCreatesOnlyARebuttablePresumptionAndAnAudit",
+          "EqualityProceedingPatternScope"
+        ],
+        [
+          "NoCriminalBurdenReversalGuiltOrPunishmentFromThePattern",
+          "EqualityProceedingBurdenScope"
+        ],
+        [
+          "IndividualReliefAndRelatedCaseReauditKeptSeparate",
+          "EqualityProceedingReliefScope"
+        ],
+        [
+          "NoRemedyTakesAnotherPersonsStandingFloorLibertyProcessOrBallot",
+          "EqualityProceedingRemedyLimitScope"
+        ]
+      ],
+      "heads": [
+        "permits($claimant, PursueTheRemedialEqualityProceeding, $record)",
+        "obliged($reader, HearTheEqualityClaimAndGiveCaseSpecificRelief, $record)"
+      ],
+      "extra": [
+        "~($claimant = $actor)",
+        "~($claimant = $review)",
+        "~($claimant = $reader)",
+        "~($claimant = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "defect",
+      "kind": "IndependentEqualityRecordDefect",
+      "fields": [
+        [
+          "$target",
+          "EqualityDefectTargetScope"
+        ],
+        [
+          "$defect",
+          "EqualityDefectKindScope"
+        ],
+        [
+          "PositiveIndependentEvidenceOfTheExactDefectNotAbsenceOrAllegation",
+          "EqualityDefectEvidenceScope"
+        ],
+        [
+          "NoOriginalWriterAcknowledgementRequiredForTheFinding",
+          "EqualityDefectAcknowledgementScope"
+        ],
+        [
+          "OnlyTheExactAffectedRelianceWithdrawnNoGuiltOrRepairedOutcomeInferred",
+          "EqualityDefectRelianceScope"
+        ],
+        [
+          "NoLostStandingFloorBallotLibertyOrAccommodationFromTheRecordFailure",
+          "EqualityDefectRightsScope"
+        ],
+        [
+          "NoAdverseFactAboutTheSubjectAndNoAutomaticIndividualRemedy",
+          "EqualityDefectSubjectScope"
+        ]
+      ],
+      "heads": [
+        "contradict($target, EqualityRecordAuthorization)",
+        "err($record, ReviewedEqualityRecordDefect)",
+        "obliged($reader, ReadTheExactEqualityDefectAndStopTheAffectedReliance, $record)",
+        "obliged($alternate, PreserveAccommodationAndTheChallengeRouteDuringTheRecordFailure, $record)",
+        "obliged($actor, PublishTheEqualityRecordCorrection, $target)"
+      ],
+      "extra": [
+        "authorized($target_source, EqualitySourceAuthority, $target)",
+        "observe($target_source, $target, $decision, EqualityDecisionScope)",
+        "observe($target_source, $target, $domain, EqualityDomainScope)",
+        "observe($target_source, $target, $actor, EqualityActorScope)",
+        "observe($target_source, $target, $version, EqualitySourceVersionScope)",
+        "observe($target_source, $target, $period, EqualityEvidencePeriodScope)",
+        "observe($target_source, $target, $jurisdiction, EqualityJurisdictionScope)",
+        "observe($target_source, $target, $scope, EqualityLegalScope)",
+        "observe($target_source, $target, $end, EqualitySourceBoundEndScope)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "nonresponse",
+      "kind": "IndependentlyEvidencedEqualityNonresponse",
+      "fields": [
+        [
+          "$target",
+          "EqualityNonresponseTargetScope"
+        ],
+        [
+          "$requester",
+          "EqualityRequesterScope"
+        ],
+        [
+          "$request",
+          "EqualityRequestScope"
+        ],
+        [
+          "PositiveIndependentFindingThatTheDeadlinePassedWithoutTheRequiredAction",
+          "EqualityNonresponseFindingScope"
+        ],
+        [
+          "NoSilenceApprovalNoNewAuthorityAndNoAccommodationSuspension",
+          "EqualityNonresponseSilenceScope"
+        ],
+        [
+          "PredeclaredUninvolvedAlternateActionAndCourtEscalation",
+          "EqualityNonresponseAlternateScope"
+        ],
+        [
+          "$deadline",
+          "EqualityDeadlineScope"
+        ],
+        [
+          "AuthenticatedNoticeAndRealOpportunityToAct",
+          "EqualityNoticeOpportunityScope"
+        ]
+      ],
+      "heads": [
+        "obliged($alternate, ActOnTheUnansweredEqualityRequestAndEscalateToTheCourt, $target)"
+      ],
+      "extra": [
+        "~($requester = $reader)",
+        "~($requester = $alternate)",
+        "~($requester = $actor)",
+        "~($source = $reader)",
+        "~($evidence = $reader)",
+        "~($review = $reader)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    }
+  ]
+}

@@ -187,7 +187,11 @@ fn the_postures_nobody_occupies_are_the_ones_recorded() {
 /// chapter removes its family, and
 /// the empty expectation then stays so the next family that lands without a
 /// passage fails here instead of passing quietly.
-const UNRENDERED_FAMILIES: [&str; 2] = ["LIBERTY-ECOLOGY", "SUBSTANTIVE-EQUALITY"];
+const UNRENDERED_FAMILIES: [&str; 3] = [
+    "LIBERTY-ECOLOGY",
+    "SUBSTANTIVE-EQUALITY",
+    "SUBSTANTIVE-EQUALITY-ORDINARY",
+];
 
 /// Ledger family tags that name no block: the kernel articles, the placement
 /// rules, and the exempt Part V.

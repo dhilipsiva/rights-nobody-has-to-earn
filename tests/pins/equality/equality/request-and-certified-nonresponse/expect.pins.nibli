@@ -1,0 +1,95 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? obliged(EqualityRequestReader, ReviewTheEqualityRequestAccessOrCorrection, EqualityRequestRecord).
+# => TRUE
+? obliged(EqualityRequestAlternate, ActOnTheUnansweredEqualityRequestAndEscalateToTheCourt, EqualityRequestRecord).
+# => FALSE
+? complete(EqualityRequestRecord, IndependentlyEvidencedEqualityNonresponse, EqualityRequestDecision).
+# => FALSE
+authorized(EqualityRequestSource, EqualitySourceAuthority, EqualityRequestRecord).
+authorized(EqualityRequestEvidence, IndependentEqualityEvidenceAuthority, EqualityRequestRecord).
+authorized(EqualityRequestReview, IndependentEqualityReviewAuthority, EqualityRequestRecord).
+authorized(EqualityRequestReader, EqualityChallengeReaderAuthority, EqualityRequestRecord).
+authorized(EqualityRequestAlternate, EqualityAlternateReviewAuthority, EqualityRequestRecord).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestDecision, EqualityDecisionScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestDecision, EqualityDecisionScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestDecision, EqualityDecisionScope).
+observe(EqualityRequestSource, EqualityRequestRecord, PublicFunction, EqualityDomainScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, PublicFunction, EqualityDomainScope).
+observe(EqualityRequestReview, EqualityRequestRecord, PublicFunction, EqualityDomainScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestActor, EqualityActorScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestActor, EqualityActorScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestActor, EqualityActorScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestVersion, EqualitySourceVersionScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestVersion, EqualitySourceVersionScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestVersion, EqualitySourceVersionScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestPeriod, EqualityEvidencePeriodScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestPeriod, EqualityEvidencePeriodScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestPeriod, EqualityEvidencePeriodScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestJurisdiction, EqualityJurisdictionScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestJurisdiction, EqualityJurisdictionScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestJurisdiction, EqualityJurisdictionScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestScope, EqualityLegalScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestScope, EqualityLegalScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestScope, EqualityLegalScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestEnd, EqualitySourceBoundEndScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestEnd, EqualitySourceBoundEndScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestEnd, EqualitySourceBoundEndScope).
+observe(EqualityRequestSource, EqualityRequestRecord, CurrentReconciledEqualityRecord, EqualityCurrentDispositionScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, CurrentReconciledEqualityRecord, EqualityCurrentDispositionScope).
+observe(EqualityRequestReview, EqualityRequestRecord, CurrentReconciledEqualityRecord, EqualityCurrentDispositionScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestReader, EqualityChallengeReaderScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestReader, EqualityChallengeReaderScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestReader, EqualityChallengeReaderScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestAlternate, EqualityIndependentAlternateScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestAlternate, EqualityIndependentAlternateScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestAlternate, EqualityIndependentAlternateScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestChallenge, EqualityChallengeScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestChallenge, EqualityChallengeScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestChallenge, EqualityChallengeScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestCorrection, EqualityCorrectionScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestCorrection, EqualityCorrectionScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestCorrection, EqualityCorrectionScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestRemedy, EqualityRemedyScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestRemedy, EqualityRemedyScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestRemedy, EqualityRemedyScope).
+observe(EqualityRequestSource, EqualityRequestRecord, ConstitutionalCourtFinalGeneralInvalidationOnly, EqualityFinalReviewScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, ConstitutionalCourtFinalGeneralInvalidationOnly, EqualityFinalReviewScope).
+observe(EqualityRequestReview, EqualityRequestRecord, ConstitutionalCourtFinalGeneralInvalidationOnly, EqualityFinalReviewScope).
+observe(EqualityRequestSource, EqualityRequestRecord, NoStandingFloorCoreLibertyDueProcessOrEqualBallotBalancedAway, EqualityCorridorScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, NoStandingFloorCoreLibertyDueProcessOrEqualBallotBalancedAway, EqualityCorridorScope).
+observe(EqualityRequestReview, EqualityRequestRecord, NoStandingFloorCoreLibertyDueProcessOrEqualBallotBalancedAway, EqualityCorridorScope).
+observe(EqualityRequestSource, EqualityRequestRecord, IndependentlyEvidencedEqualityNonresponse, EqualityRecordKindScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, IndependentlyEvidencedEqualityNonresponse, EqualityRecordKindScope).
+observe(EqualityRequestReview, EqualityRequestRecord, IndependentlyEvidencedEqualityNonresponse, EqualityRecordKindScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestRecord, EqualityNonresponseTargetScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestRecord, EqualityNonresponseTargetScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestRecord, EqualityNonresponseTargetScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestRequester, EqualityRequesterScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestRequester, EqualityRequesterScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestRequester, EqualityRequesterScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestRequest, EqualityRequestScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestRequest, EqualityRequestScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestRequest, EqualityRequestScope).
+observe(EqualityRequestSource, EqualityRequestRecord, PositiveIndependentFindingThatTheDeadlinePassedWithoutTheRequiredAction, EqualityNonresponseFindingScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, PositiveIndependentFindingThatTheDeadlinePassedWithoutTheRequiredAction, EqualityNonresponseFindingScope).
+observe(EqualityRequestReview, EqualityRequestRecord, PositiveIndependentFindingThatTheDeadlinePassedWithoutTheRequiredAction, EqualityNonresponseFindingScope).
+observe(EqualityRequestSource, EqualityRequestRecord, NoSilenceApprovalNoNewAuthorityAndNoAccommodationSuspension, EqualityNonresponseSilenceScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, NoSilenceApprovalNoNewAuthorityAndNoAccommodationSuspension, EqualityNonresponseSilenceScope).
+observe(EqualityRequestReview, EqualityRequestRecord, NoSilenceApprovalNoNewAuthorityAndNoAccommodationSuspension, EqualityNonresponseSilenceScope).
+observe(EqualityRequestSource, EqualityRequestRecord, PredeclaredUninvolvedAlternateActionAndCourtEscalation, EqualityNonresponseAlternateScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, PredeclaredUninvolvedAlternateActionAndCourtEscalation, EqualityNonresponseAlternateScope).
+observe(EqualityRequestReview, EqualityRequestRecord, PredeclaredUninvolvedAlternateActionAndCourtEscalation, EqualityNonresponseAlternateScope).
+observe(EqualityRequestSource, EqualityRequestRecord, EqualityRequestDeadline, EqualityDeadlineScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, EqualityRequestDeadline, EqualityDeadlineScope).
+observe(EqualityRequestReview, EqualityRequestRecord, EqualityRequestDeadline, EqualityDeadlineScope).
+observe(EqualityRequestSource, EqualityRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, EqualityNoticeOpportunityScope).
+observe(EqualityRequestEvidence, EqualityRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, EqualityNoticeOpportunityScope).
+observe(EqualityRequestReview, EqualityRequestRecord, AuthenticatedNoticeAndRealOpportunityToAct, EqualityNoticeOpportunityScope).
+? obliged(EqualityRequestAlternate, ActOnTheUnansweredEqualityRequestAndEscalateToTheCourt, EqualityRequestRecord).
+# => TRUE
+? complete(EqualityRequestRecord, IndependentlyEvidencedEqualityNonresponse, EqualityRequestDecision).
+# => TRUE
+? obliged(EqualityRequestReader, ReviewTheEqualityRequestAccessOrCorrection, EqualityRequestRecord).
+# => TRUE

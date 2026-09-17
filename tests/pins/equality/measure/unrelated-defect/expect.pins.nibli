@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+
+? permits(EqualitySequenceActor, ContinueTheBoundedPositiveMeasure, EqualitySequenceRecord).
+# => TRUE
+? obliged(EqualitySequenceReader, HearTheContinuationChallengeAndEndTheMeasureIfTheObjectiveIsMet, EqualitySequenceRecord).
+# => TRUE
+? complete(EqualitySequenceRecord, ReviewedMeasureContinuationFinding, EqualitySequenceDecision).
+# => TRUE
+? contradict(DifferentEqualityRecord, EqualityRecordAuthorization).
+# => TRUE
+? err(EqualityMeasureDefectRecord, ReviewedEqualityRecordDefect).
+# => TRUE
+? obliged(EqualityMeasureDefectReader, ReadTheExactEqualityDefectAndStopTheAffectedReliance, EqualityMeasureDefectRecord).
+# => TRUE
+? obliged(EqualityMeasureDefectAlternate, PreserveAccommodationAndTheChallengeRouteDuringTheRecordFailure, EqualityMeasureDefectRecord).
+# => TRUE
+? obliged(EqualitySequenceActor, PublishTheEqualityRecordCorrection, DifferentEqualityRecord).
+# => TRUE
+? complete(EqualityMeasureDefectRecord, IndependentEqualityRecordDefect, EqualitySequenceDecision).
+# => TRUE

@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 8
+
+? obliged(EqualityAccommodationActor, ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, EqualityAccommodationRecord).
+# => TRUE
+? permits(EqualityAccommodationRequester, UseTheRightServiceRoleOrProcedureWithTheAdjustment, EqualityAccommodationRecord).
+# => TRUE
+? obliged(EqualityAccommodationAlternate, SecureTheEquivalentAlternativeRouteWithoutRestartWhereTheProviderCannot, EqualityAccommodationRecord).
+# => TRUE
+? complete(EqualityAccommodationRecord, ReviewedReasonableAccommodation, EqualityAccommodationDecision).
+# => TRUE
+? person(EqualityAccommodationRequester).
+# => FALSE
+? false(EqualityAccommodationRequester).
+# => FALSE
+? prisoner(EqualityAccommodationRequester).
+# => FALSE
+? complete(EqualityAccommodationRecord, ReviewedPositiveMeasure, EqualityAccommodationDecision).
+# => FALSE

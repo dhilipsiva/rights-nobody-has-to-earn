@@ -43,7 +43,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = "book-1/contents.json"
 
 FAMILY_SOURCES = {
-    "family-life-source.json", "integrity-source.json", "knowledge-source.json",
+    "equality-source.json", "family-life-source.json", "integrity-source.json", "knowledge-source.json",
     "obligations-source.json", "record-power-source.json", "scarcity-source.json",
     "state-form-source.json", "statistics-source.json",
 }

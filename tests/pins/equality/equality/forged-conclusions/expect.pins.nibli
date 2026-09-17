@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+:refuse reasoning /declared derived-only/
+permits(EqualityActor, ApplyTheBoundedPositiveMeasure, EqualityForgedRecord).
+:refuse reasoning /declared derived-only/
+complete(EqualityForgedRecord, ReviewedPositiveMeasure, EqualityDecision).
+:refuse reasoning /declared derived-only/
+permits(EqualityActor, ContinueTheBoundedPositiveMeasure, EqualityForgedRecord).
+:refuse reasoning /declared derived-only/
+related(EqualityForgedRecord, EqualityRecordAmbiguity).
+:refuse reasoning /declared derived-only/
+contradict(EqualityForgedRecord, EqualityRecordAuthorization).

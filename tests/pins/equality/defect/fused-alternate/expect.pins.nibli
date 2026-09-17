@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+
+? contradict(EqualityCaseTarget, EqualityRecordAuthorization).
+# => FALSE
+? err(EqualityCaseRecord, ReviewedEqualityRecordDefect).
+# => FALSE
+? obliged(EqualityCaseReader, ReadTheExactEqualityDefectAndStopTheAffectedReliance, EqualityCaseRecord).
+# => FALSE
+? obliged(EqualityCaseReader, PreserveAccommodationAndTheChallengeRouteDuringTheRecordFailure, EqualityCaseRecord).
+# => FALSE
+? obliged(EqualityCaseActor, PublishTheEqualityRecordCorrection, EqualityCaseTarget).
+# => FALSE
+? complete(EqualityCaseRecord, IndependentEqualityRecordDefect, EqualityCaseDecision).
+# => FALSE

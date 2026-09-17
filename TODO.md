@@ -59,10 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-10. **Implement the substantive-equality ordinary half** (`equality-source.json`,
-    `src/authoring/equality.rs` from `family_life.rs` by substitution, block
-    `SUBSTANTIVE-EQUALITY-ORDINARY`, contract card, the cases in D5;
-    `CHALLENGE_SKELETON` gains the family). Interface first, passage second.
 11. **12 — The Same Route for Everyone** (NEW; cuts 08:637-661; closes
     SUBSTANTIVE-EQUALITY).
 12. **08 — What Nobody Has to Ask Permission For** (PROMOTED + liberties

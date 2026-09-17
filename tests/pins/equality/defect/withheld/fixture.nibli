@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(EqualityCaseTargetSource, EqualitySourceAuthority, EqualityCaseTarget).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCaseDecision, EqualityDecisionScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, PublicFunction, EqualityDomainScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCaseActor, EqualityActorScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCaseVersion, EqualitySourceVersionScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCasePeriod, EqualityEvidencePeriodScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCaseJurisdiction, EqualityJurisdictionScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCaseScope, EqualityLegalScope).
+observe(EqualityCaseTargetSource, EqualityCaseTarget, EqualityCaseEnd, EqualitySourceBoundEndScope).
