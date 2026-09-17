@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-11. **12 — The Same Route for Everyone** (NEW; cuts 08:637-661; closes
-    SUBSTANTIVE-EQUALITY).
 12. **08 — What Nobody Has to Ask Permission For** (PROMOTED + liberties
     section; half of LIBERTY-ECOLOGY).
 13. **13 — A Place in Which Life Remains Possible** (PROMOTED + Class 9

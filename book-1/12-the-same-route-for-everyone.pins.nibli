@@ -1,0 +1,257 @@
+# ── Chapter 12 fidelity pins: "The Same Route for Everyone" ─────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/12-the-same-route-for-everyone.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+# Quillon, the one probe witness below, is fresh.
+#
+# The families this chapter renders carry their own executable coverage:
+#   book-1/source/substantive-equality.pins.nibli   every barrier, FS-CCE-34..
+#   tests/pins/equality/                             the ordinary half: measure,
+#       continuation, accommodation, proceeding, defect and nonresponse, with
+#       the sequences measure/defect-and-rights-sequence,
+#       measure/expired-continuation-stops, accommodation/confers-no-status and
+#       proceeding/presumption-from-pattern
+#   tests/pins/statistics/pattern, tests/pins/statistics/rebuttal,
+#   tests/pins/statistics/data-wall                  the diagnostics half
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 71
+
+# "every person receives equal and effective protection" — the baseline, the grounds and the forms
+? prevents(Adam, SubstantiveEqualityStatus).
+# => TRUE
+
+? prevents(Adam, AntiSubordination).
+# => TRUE
+
+? prevents(Adam, OpenProtectedGrounds).
+# => TRUE
+
+? prevents(Adam, DirectDiscrimination).
+# => TRUE
+
+? prevents(Adam, IndirectDiscrimination).
+# => TRUE
+
+? prevents(Adam, SystemicDiscrimination).
+# => TRUE
+
+? prevents(Adam, MultipleDiscrimination).
+# => TRUE
+
+? prevents(Adam, IntersectionalDiscrimination).
+# => TRUE
+
+? prevents(Adam, AssociativeDiscrimination).
+# => TRUE
+
+? prevents(Adam, AccommodationDenial).
+# => TRUE
+
+? prevents(Adam, ImposedSegregation).
+# => TRUE
+
+? prevents(Adam, EqualityHarassment).
+# => TRUE
+
+? prevents(Adam, EqualityRetaliation).
+# => TRUE
+
+# "Who is bound, and where private life stays private"
+? prevents(Adam, PublicDelegatedEqualityEvasion).
+# => TRUE
+
+? prevents(Adam, NamedPrivateEqualityEvasion).
+# => TRUE
+
+? prevents(Adam, PublicEqualityProtectionFailure).
+# => TRUE
+
+? prevents(Adam, InvoluntaryAssociation).
+# => TRUE
+
+? prevents(Adam, NonExpressiveMissionExclusion).
+# => TRUE
+
+# "What a distinction has to prove"
+? prevents(Adam, UnjustifiedDirectDistinction).
+# => TRUE
+
+? prevents(Adam, UnjustifiedIndirectDistinction).
+# => TRUE
+
+? prevents(Adam, EqualityCoreTradeoff).
+# => TRUE
+
+? prevents(Adam, EqualityRemedialBurdenRefusal).
+# => TRUE
+
+# "Accessibility is not a ninth floor item"
+? prevents(Adam, BareAbsenceWithholding).
+# => TRUE
+
+? prevents(Adam, InaccessibleEqualityRoute).
+# => TRUE
+
+? prevents(Adam, AccommodationRefusal).
+# => TRUE
+
+? prevents(Adam, LocalDeskUndueBurden).
+# => TRUE
+
+? prevents(Adam, InferiorAlternateRoute).
+# => TRUE
+
+# "Patterns without verdicts"
+? prevents(Adam, EqualityDiagnosticRecordReuse).
+# => TRUE
+
+? prevents(Adam, DiagnosticIndividualVerdict).
+# => TRUE
+
+? prevents(Adam, DiagnosticNonparticipationPenalty).
+# => TRUE
+
+# "A measure with an end"
+? prevents(Adam, UnnecessaryPositiveMeasure).
+# => TRUE
+
+? prevents(Adam, UnboundedPositiveMeasure).
+# => TRUE
+
+? prevents(Adam, PoliticalEqualityMeasureEvasion).
+# => TRUE
+
+? prevents(Adam, ReusableEligibilityIdentity).
+# => TRUE
+
+? prevents(Adam, ExpiredPositiveMeasureContinuation).
+# => TRUE
+
+# "Repair, and who may ask"
+? prevents(Adam, UnrepairedHistoricalBarrier).
+# => TRUE
+
+? prevents(Adam, HistoricalAccountabilityErasure).
+# => TRUE
+
+? prevents(Adam, EqualityInitiationBlock).
+# => TRUE
+
+? prevents(Adam, EqualityFunctionFusion).
+# => TRUE
+
+? prevents(Adam, IndividualEqualityRemedyDenial).
+# => TRUE
+
+? prevents(Adam, SystemicEqualityRemedyDenial).
+# => TRUE
+
+? prevents(Adam, CourtAdministrationTakeover).
+# => TRUE
+
+? prevents(Adam, FederalEqualityDiscontinuity).
+# => TRUE
+
+? prevents(Adam, CrossBoundaryEqualityEvasion).
+# => TRUE
+
+# "The old distinctions under the new test"
+? prevents(Adam, FamilyStatusSubstitution).
+# => TRUE
+
+? prevents(Adam, HomeStatusSubstitution).
+# => TRUE
+
+? prevents(Adam, GlobalMaturityScore).
+# => TRUE
+
+? prevents(Adam, ConvictionStatusSubstitution).
+# => TRUE
+
+? prevents(Adam, CustodyEqualityErasure).
+# => TRUE
+
+? prevents(Adam, OfficialStatusImmunity).
+# => TRUE
+
+? prevents(Adam, PlacementBaselineReduction).
+# => TRUE
+
+? prevents(Adam, StatusOnlyVoiding).
+# => TRUE
+
+? prevents(Adam, RecognitionOperation).
+# => TRUE
+
+? prevents(Adam, QualificationStatusBarrier).
+# => TRUE
+
+# "a proceeding opened under a form the vocabulary does not carry completes
+# nothing" — the closed vocabularies, attested by a fresh witness.
+observe(Quillon, QuillonRecordForm, RetaliationForm, EqualityFormScope).
+? member(RetaliationForm, EqualityFormVocabulary).
+# => TRUE
+
+observe(Quillon, QuillonRecordOtherForm, QuillonInventedForm, EqualityFormScope).
+? member(QuillonInventedForm, EqualityFormVocabulary).
+# => FALSE
+
+observe(Quillon, QuillonRecordBarrier, ProceduralBarrier, EqualityBarrierKindScope).
+# "a barrier kind the vocabulary does not carry completes nothing"
+? member(ProceduralBarrier, EqualityBarrierKindVocabulary).
+# => TRUE
+
+observe(Quillon, QuillonRecordInvented, QuillonInventedBarrier, EqualityBarrierKindScope).
+? member(QuillonInventedBarrier, EqualityBarrierKindVocabulary).
+# => FALSE
+
+observe(Quillon, QuillonRecordMeasure, BoundedQuota, EqualityMeasureKindScope).
+? member(BoundedQuota, EqualityMeasureKindVocabulary).
+# => TRUE
+
+# Every head the ordinary half concludes is derived-only: a forged measure,
+# continuation or accommodation is refused at assertion.
+:refuse reasoning /declared derived-only/
+permits(QuillonActor, ApplyTheBoundedPositiveMeasure, QuillonForgedRecord).
+
+:refuse reasoning /declared derived-only/
+permits(QuillonActor, ContinueTheBoundedPositiveMeasure, QuillonForgedRecord).
+
+:refuse reasoning /declared derived-only/
+permits(QuillonRequester, UseTheRightServiceRoleOrProcedureWithTheAdjustment, QuillonForgedRecord).
+
+:refuse reasoning /declared derived-only/
+complete(QuillonForgedRecord, ReviewedReasonableAccommodation, QuillonDecision).
+
+# "For the child with nobody, this chapter holds every barrier and reaches no
+# verdict"
+? prevents(Nell, SubstantiveEqualityStatus).
+# => TRUE
+
+? prevents(Nell, OpenProtectedGrounds).
+# => TRUE
+
+? prevents(Nell, FamilyStatusSubstitution).
+# => TRUE
+
+? prevents(Nell, HomeStatusSubstitution).
+# => TRUE
+
+? prevents(Nell, GlobalMaturityScore).
+# => TRUE
+
+? prevents(Nell, BareAbsenceWithholding).
+# => TRUE
+
+? false(Nell).
+# => FALSE
+
+? owe(State, Learn, Nell).
+# => TRUE

@@ -50,12 +50,12 @@ carried in single figures, which is where the rebalance has most to do.
 | creates | 2 |
 | cares | 2 |
 | works | 10 |
-| associates | 5 |
-| requests | 3 |
-| receives | 22 |
-| challenges | 12 |
+| associates | 6 |
+| requests | 5 |
+| receives | 27 |
+| challenges | 13 |
 | governs | 25 |
-| is acted upon | 56 |
+| is acted upon | 60 |
 
 ## Chapter patterns
 
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 45 |
+| constructive | 56 |
 | private-civic | 15 |
 | democratic | 23 |
 | coercive | 25 |
@@ -93,7 +93,7 @@ checked here.
 | Locality, mobility and external relations | 1 | 1 | 2 |
 | Material floor | 3 | 6 | 7 |
 | Non-human animals | 1 | 1 | 2 |
-| Personhood and equality | 6 | 5 | 5 |
+| Personhood and equality | 14 | 8 | 7 |
 | Public institutions | 8 | 5 | 8 |
 | Public safety, policing and use of force | 5 | 2 | 7 |
 | Records and accountability | 10 | 9 | 12 |
@@ -154,6 +154,17 @@ checked here.
 | 11-07 | 11-what-money-cannot-buy.md | When an economic power ends, and what does not | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | a power losing its current review; the floor and the service surviving it | is acted upon | fails | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
 | 11-08 | 11-what-money-cannot-buy.md | The child with nobody | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the child with nobody: one birth entry and nothing else | receives | works | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
 | 11-09 | 11-what-money-cannot-buy.md | What none of this counts | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that values nothing | receives | unresolved | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 12-00 | 12-the-same-route-for-everyone.md | (preamble) | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | equal and effective protection; purpose or effect suffices | receives | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-01 | 12-the-same-route-for-everyone.md | The forms it takes | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the named shapes of discrimination | is acted upon | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-02 | 12-the-same-route-for-everyone.md | Who is bound, and where private life stays private | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | public reach, named private domains, the protected association | associates | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-03 | 12-the-same-route-for-everyone.md | What a distinction has to prove | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | necessity, proportionality, and a pattern that convicts nobody | is acted upon | contested | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-04 | 12-the-same-route-for-everyone.md | Accessibility is not a ninth floor item | Personhood and equality | SUBSTANTIVE-EQUALITY-ORDINARY | ordinary | a reviewed accommodation completing for a person the roster never entered | receives, requests | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-05 | 12-the-same-route-for-everyone.md | Patterns without verdicts | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | an aggregate that opens a proceeding and convicts nobody | is acted upon | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-06 | 12-the-same-route-for-everyone.md | A measure with an end | Personhood and equality | SUBSTANTIVE-EQUALITY-ORDINARY | ordinary | a reviewed measure, its continuation, and its end | receives | continuity-remedy | yes | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-07 | 12-the-same-route-for-everyone.md | Repair, and who may ask | Personhood and equality | SUBSTANTIVE-EQUALITY | continuity | initiation, separated functions, and the request that creates a duty | challenges, requests | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-08 | 12-the-same-route-for-everyone.md | The old distinctions under the new test | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | status substitutions the equality rules refuse | is acted upon | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-09 | 12-the-same-route-for-everyone.md | The child with nobody | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 12-10 | 12-the-same-route-for-everyone.md | What this does not show | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the boundary of a record that finds no pattern | receives | unresolved | yes | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
 | 16-00 | 16-public-answerability.md | (preamble) | Public institutions | ARTICLES | ordinary | who can be held to account | governs | works | yes | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-01 | 16-public-answerability.md | The part that looks like a mistake | Public institutions | STATE-FORM | protective | permanent answerability | governs | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-02 | 16-public-answerability.md | Boss | Public institutions | ARTICLES | protective | a recalled official and the person who exposed them | challenges | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |

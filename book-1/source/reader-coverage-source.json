@@ -789,6 +789,173 @@
       ]
     },
     {
+      "id": "12-00",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "(preamble)",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "equal and effective protection; purpose or effect suffices",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "12-01",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "The forms it takes",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "the named shapes of discrimination",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "12-02",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "Who is bound, and where private life stays private",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "public reach, named private domains, the protected association",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "associates"
+      ]
+    },
+    {
+      "id": "12-03",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "What a distinction has to prove",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "necessity, proportionality, and a pattern that convicts nobody",
+      "trajectory": "contested",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "12-04",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "Accessibility is not a ninth floor item",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "function": "ordinary",
+      "setting": "a reviewed accommodation completing for a person the roster never entered",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives",
+        "requests"
+      ]
+    },
+    {
+      "id": "12-05",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "Patterns without verdicts",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "an aggregate that opens a proceeding and convicts nobody",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "12-06",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "A measure with an end",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "function": "ordinary",
+      "setting": "a reviewed measure, its continuation, and its end",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "12-07",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "Repair, and who may ask",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "continuity",
+      "setting": "initiation, separated functions, and the request that creates a duty",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "challenges",
+        "requests"
+      ]
+    },
+    {
+      "id": "12-08",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "The old distinctions under the new test",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "status substitutions the equality rules refuse",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "12-09",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "The child with nobody",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "12-10",
+      "chapter": "book-1/12-the-same-route-for-everyone.md",
+      "section": "What this does not show",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY",
+      "function": "protective",
+      "setting": "the boundary of a record that finds no pattern",
+      "trajectory": "unresolved",
+      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "16-00",
       "chapter": "book-1/16-public-answerability.md",
       "section": "(preamble)",

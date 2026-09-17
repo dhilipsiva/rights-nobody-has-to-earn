@@ -285,6 +285,12 @@ below.
   and public money, credit and the monetary office each under a source with an
   end.
 
+- [Chapter 12: The Same Route for Everyone](12-the-same-route-for-everyone.md)
+  — asks whether any rule marks some people for a worse route to the same
+  thing: the forms discrimination takes, who is bound, what a distinction has
+  to prove, an accommodation and a positive measure as records with an end, and
+  a pattern that opens a proceeding and convicts nobody.
+
 ### Part III — The public power that serves it
 
 - [Chapter 16: Public Answerability, and Why It Is Never Revoked](16-public-answerability.md) —
@@ -696,7 +702,8 @@ the domain.
   currentness contract; none borrows custody time. This is no operated
   emergency, intelligence or defence system.
 
-- **Substantive equality and anti-subordination:** every person now holds a
+- **Substantive equality and anti-subordination:** Chapter
+  [12](12-the-same-route-for-everyone.md). Every person now holds a
   separate constitutional barrier against direct, indirect, systemic, multiple,
   intersectional, and associative discrimination; denied accommodation; imposed
   segregation; harassment; and retaliation. The barrier binds public and
