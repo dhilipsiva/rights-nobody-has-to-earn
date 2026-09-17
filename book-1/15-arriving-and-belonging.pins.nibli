@@ -1,0 +1,140 @@
+# ── Chapter 15 fidelity pins: "Arriving and Belonging" ─────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/15-arriving-and-belonging.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists three fixtures:
+#   tests/pins/records/child_with_nobody/fixture.nibli
+#   tests/pins/mobility/boundaries/standing-rights-and-no-coercive-consequence
+#   tests/pins/mobility/asylum/positive
+# The first two share no record or subject constant — only the family's role
+# and scope names, which are not single-valued record fields.
+#
+# The positive completions this chapter describes have their own cases, cited
+# rather than duplicated:
+#   tests/pins/mobility/membership/multiple-exit-reentry   membership, free
+#                                       exit, and the second membership that
+#                                       exit does not touch
+#   tests/pins/mobility/indigenous-government/positive
+#   tests/pins/mobility/minority-territory/positive
+#   tests/pins/mobility/internal-law/positive
+#   tests/pins/mobility/consent/positive
+#   tests/pins/mobility/consented-effect/positive
+#   tests/pins/mobility/consultation/positive
+#   tests/pins/mobility/evacuation/positive
+#   tests/pins/mobility/defect/downstream-withdrawal   the withdrawal sequence
+#                                       "When the consent turns out not to have
+#                                       been consent" is written from
+#   tests/pins/mobility/removal/positive
+#   tests/pins/mobility/nationality/positive
+#   tests/pins/mobility/external/positive
+#   tests/pins/mobility/private-access/positive
+#   tests/pins/mobility/nonresponse/positive
+# The consent fixture and the asylum fixture share record constants, so they
+# are never loaded together; each is exercised in its own case.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 24
+
+# ── "Newcomers, migrants, refugees and stateless people keep standing, the
+# floor, liberty, fair process and remedy" ─────────────────────────────────
+? person(MPNewcomer).
+# => TRUE
+
+? owe(State, Eats, MPNewcomer).
+# => TRUE
+
+? travel(MPNewcomer).
+# => TRUE
+
+# "The former resident's return right remains, without a diaspora ballot."
+# The floor does not carry a vote, and this chapter is where that is said out
+# loud rather than blurred.
+? decide(MPNewcomer, Ballot).
+# => FALSE
+
+# "The public duty is to serve first and reconcile afterwards."
+? obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, MPNewcomer).
+# => TRUE
+
+? obliged(State, KeepStandingFloorLibertyLanguageProcessAndRemedyContinuous, MPNewcomer).
+# => TRUE
+
+# "arrivals belong in the affected population, and status cannot set their
+# priority"
+? obliged(State, IncludeEveryoneUnderJurisdictionOrEffectiveControlInScarcity, MPNewcomer).
+# => TRUE
+
+? prevents(MPNewcomer, MobilityExclusionFromScarcityPopulation).
+# => TRUE
+
+? prevents(MPNewcomer, MobilityStatusBasedScarcityPriority).
+# => TRUE
+
+# "A person never entered in a record is not a missing row the record can
+# discover."
+? prevents(MPNewcomer, MobilityMissingRecordAdverseInference).
+# => TRUE
+
+? prevents(MPNewcomer, MobilityStatusConditionedStandingFloorOrRemedy).
+# => TRUE
+
+# "A service may not enrol someone into an enforcement record as its price,
+# collect status for that purpose, or transmit its records to enforcement."
+? prevents(MPNewcomer, MobilityEnforcementEnrolmentThroughServices).
+# => TRUE
+
+? prevents(MPNewcomer, MobilityEnforcementCollectionThroughServices).
+# => TRUE
+
+? prevents(MPNewcomer, MobilityEnforcementTransmissionThroughServices).
+# => TRUE
+
+# "Nobody may be sent into persecution ... Collective expulsion is prohibited."
+? prevents(MPNewcomer, MobilityRefoulementIncludingOnwardTransfer).
+# => TRUE
+
+? prevents(MPNewcomer, MobilityCollectiveExpulsion).
+# => TRUE
+
+# "No child may be detained for immigration purposes."
+? prevents(MPNewcomer, MobilityChildImmigrationDetention).
+# => TRUE
+
+# "Nationality cannot be taken as punishment or in a way that leaves someone
+# stateless."
+? prevents(MPNewcomer, MobilityStatelessnessCreationOrPerpetuation).
+# => TRUE
+
+# "changing a contractor, affiliate, flag or forum does not remove the duty"
+? prevents(MPNewcomer, MobilityPushbackOrExternalisedDutyEvasion).
+# => TRUE
+
+# ── The belonging half, on the same person ─────────────────────────────────
+# "it does not turn membership into a measure of worth, risk or political
+# weight" — and "Nonmember residents retain common services".
+? prevents(MPNewcomer, PluralityMembershipPoliticalWeight).
+# => TRUE
+
+? prevents(MPNewcomer, PluralityNonmemberCommonServiceDenial).
+# => TRUE
+
+# "They cannot remove individual voice, dissent, confidential help ..."
+? prevents(MPNewcomer, PluralityInternalLawLoweringIndividualRights).
+# => TRUE
+
+# ── "Asylum means a right to a fair determination" ─────────────────────────
+# A determination that holds together is a completed finding, and the body
+# running it owes a fair determination. It is not a decision anybody made.
+? complete(MPCaseRecord, MobilityFairDetermination, MPCaseObject).
+# => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "the same rules still reach it: personhood, the floor, the absence of any
+# coercive consequence" — and no ballot, which this chapter says plainly.
+? decide(Nell, Ballot).
+# => FALSE

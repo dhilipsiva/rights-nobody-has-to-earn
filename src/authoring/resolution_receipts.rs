@@ -99,14 +99,6 @@ pub(crate) fn validate(context: &Context, receipts: &[Receipt]) -> Result<(), Er
             }
         }
     }
-    // Every chapter that NARRATES a repair must carry a receipt. The detector is
-    // the book's own idiom for telling one — "used to", "no longer", "the
-    // repair", "it is resolved" — so a chapter cannot claim a repair in prose
-    // and leave it without an ending.
-    let narrates = regex::Regex::new(
-        r"(?i)(used to (?:be|get|have|say|look)|no longer (?:has|have|is|does|destroys)|the repair|now closed|it is resolved|was wrong for|this design used to|earlier version of this design|the resolution was)",
-    )
-    .expect("repair pattern");
     let receipted: BTreeSet<&str> = receipts
         .iter()
         .map(|receipt| receipt.chapter.as_str())
@@ -114,7 +106,7 @@ pub(crate) fn validate(context: &Context, receipts: &[Receipt]) -> Result<(), Er
     for chapter in super::contents::Contents::load(context)?.numbered() {
         let prose = context.read(&chapter)?;
         let flat = prose.split_whitespace().collect::<Vec<_>>().join(" ");
-        if narrates.is_match(&flat) && !receipted.contains(chapter.as_str()) {
+        if narrates_a_repair(&flat) && !receipted.contains(chapter.as_str()) {
             return Err(Error::new(format!(
                 "{chapter} narrates a repair and has no receipt. A thread the                  book tells has to end somewhere."
             )));
@@ -131,6 +123,25 @@ pub(crate) fn validate(context: &Context, receipts: &[Receipt]) -> Result<(), Er
         ));
     }
     Ok(())
+}
+
+/// Every chapter that NARRATES a repair must carry a receipt. The detector is
+/// the book's own idiom for telling one — "used to", "no longer", "the repair",
+/// "it is resolved" — so a chapter cannot claim a repair in prose and leave it
+/// without an ending.
+///
+/// A sentence DENYING a repair is not narrating one. "the duty to repair is not
+/// the repair" is a boundary statement, and counting it would force a receipt
+/// for a thread that has no repair to report, which is the opposite of what this
+/// check exists to do. The denial is stripped before matching rather than
+/// excused per chapter, so it cannot grow into an allowlist.
+pub(crate) fn narrates_a_repair(flat: &str) -> bool {
+    let denies = regex::Regex::new(r"(?i)\bis not the repair\b").expect("denial pattern");
+    let narrates = regex::Regex::new(
+        r"(?i)(used to (?:be|get|have|say|look)|no longer (?:has|have|is|does|destroys)|the repair|now closed|it is resolved|was wrong for|this design used to|earlier version of this design|the resolution was)",
+    )
+    .expect("repair pattern");
+    narrates.is_match(&denies.replace_all(flat, "is not one"))
 }
 
 fn render(receipts: &[Receipt]) -> String {

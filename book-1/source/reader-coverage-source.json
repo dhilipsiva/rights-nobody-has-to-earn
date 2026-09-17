@@ -243,36 +243,6 @@
     {
       "id": "04-01",
       "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "Rights do not stop at arrival",
-      "domain": "Borders, migration, asylum and expulsion",
-      "family": "MOBILITY-PLURALITY",
-      "function": "ordinary",
-      "setting": "arrival and jurisdiction",
-      "trajectory": "works",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "04-02",
-      "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "When the record cannot say what it says",
-      "domain": "Borders, migration, asylum and expulsion",
-      "family": "MOBILITY-PLURALITY",
-      "function": "continuity",
-      "setting": "an asylum determination whose record contradicts itself",
-      "trajectory": "fails",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "04-03",
-      "chapter": "book-1/04-what-you-are-owed.md",
       "section": "A way to be heard",
       "domain": "Justice and coercion",
       "family": "NON-CARCERAL-JUSTICE",
@@ -286,7 +256,7 @@
       ]
     },
     {
-      "id": "04-04",
+      "id": "04-02",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Where the protection stops",
       "domain": "Material floor",
@@ -301,7 +271,7 @@
       ]
     },
     {
-      "id": "04-05",
+      "id": "04-03",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Owed by whom",
       "domain": "Material floor",
@@ -1511,6 +1481,112 @@
       ]
     },
     {
+      "id": "15-00",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "(preamble)",
+      "domain": "Borders, migration, asylum and expulsion",
+      "family": "MOBILITY-PLURALITY",
+      "function": "ordinary",
+      "setting": "two questions usually answered by asking for papers",
+      "trajectory": "works",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "15-01",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "Rights do not stop at arrival",
+      "domain": "Borders, migration, asylum and expulsion",
+      "family": "MOBILITY-PLURALITY",
+      "function": "ordinary",
+      "setting": "arrival and jurisdiction",
+      "trajectory": "works",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "15-02",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "When the record cannot say what it says",
+      "domain": "Borders, migration, asylum and expulsion",
+      "family": "MOBILITY-PLURALITY",
+      "function": "continuity",
+      "setting": "an asylum determination whose record contradicts itself",
+      "trajectory": "fails",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "15-03",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "Belonging without surrendering rights",
+      "domain": "Collective and plurality rights",
+      "family": "MOBILITY-PLURALITY",
+      "function": "ordinary",
+      "setting": "collective membership and internal law",
+      "trajectory": "works",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "associates"
+      ]
+    },
+    {
+      "id": "15-04",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "When the consent turns out not to have been consent",
+      "domain": "Collective and plurality rights",
+      "family": "MOBILITY-PLURALITY",
+      "function": "continuity",
+      "setting": "a collective consent record found defective",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "associates",
+        "challenges"
+      ]
+    },
+    {
+      "id": "15-05",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "The child with nobody",
+      "domain": "Borders, migration, asylum and expulsion",
+      "family": "MOBILITY-PLURALITY",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "15-06",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "What none of this admits",
+      "domain": "Borders, migration, asylum and expulsion",
+      "family": "MOBILITY-PLURALITY",
+      "function": "protective",
+      "setting": "the boundary of a record that operates no border",
+      "trajectory": "unresolved",
+      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "16-00",
       "chapter": "book-1/16-public-answerability.md",
       "section": "(preamble)",
@@ -1723,37 +1799,6 @@
     {
       "id": "18-08",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "Belonging without surrendering rights",
-      "domain": "Collective and plurality rights",
-      "family": "MOBILITY-PLURALITY",
-      "function": "ordinary",
-      "setting": "collective membership and internal law",
-      "trajectory": "works",
-      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "associates"
-      ]
-    },
-    {
-      "id": "18-09",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "When the consent turns out not to have been consent",
-      "domain": "Collective and plurality rights",
-      "family": "MOBILITY-PLURALITY",
-      "function": "continuity",
-      "setting": "a collective consent record found defective",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "associates",
-        "challenges"
-      ]
-    },
-    {
-      "id": "18-10",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The home custody does not move",
       "domain": "Locality, mobility and external relations",
       "family": "STATE-FORM",
@@ -1767,7 +1812,7 @@
       ]
     },
     {
-      "id": "18-11",
+      "id": "18-09",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "Children, the difference between not yet and taken — and a third thing",
       "domain": "Life course, family, care and reproduction",
@@ -1782,7 +1827,7 @@
       ]
     },
     {
-      "id": "18-12",
+      "id": "18-10",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "What holding a role in somebody's life actually is",
       "domain": "Life course, family, care and reproduction",
@@ -1799,7 +1844,7 @@
       ]
     },
     {
-      "id": "18-13",
+      "id": "18-11",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The part that is weaker than it looks",
       "domain": "Democracy and amendment",
@@ -1814,7 +1859,7 @@
       ]
     },
     {
-      "id": "18-14",
+      "id": "18-12",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "And the same silence as before",
       "domain": "Democracy and amendment",

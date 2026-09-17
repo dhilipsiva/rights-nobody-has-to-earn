@@ -318,6 +318,10 @@ below.
   affected reliance, the Guardian who speaks for conditions nobody may spend
   away, and the animals whose interests are their own.
 
+- [Chapter 15: Arriving and Belonging](15-arriving-and-belonging.md) — what a
+  person who has just arrived is owed before anybody checks anything, and what
+  belonging to a people, a language or a faith may never cost them.
+
 ### Part III — The public power that serves it
 
 - [Chapter 16: Public Answerability, and Why It Is Never Revoked](16-public-answerability.md) —
@@ -722,8 +726,9 @@ the domain.
   [29](29-the-one-thing-taken.md) now supply residence-first political
   membership, one nested political home, atomic transfer, nonresident limits
   and return, protected local authority, and the republic's internal
-  negotiated-secession route. Chapters 4 and 18 also set mobility, asylum,
-  collective title and consent, external no-evasion and exit-settlement limits.
+  negotiated-secession route. Chapter
+  [15](15-arriving-and-belonging.md) sets mobility, asylum, collective title
+  and consent, external no-evasion and exit-settlement limits.
   Border administration, migration services and cross-border operation remain
   outside the formal coverage; foreign recognition is an external assumption.
 
