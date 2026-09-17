@@ -297,6 +297,12 @@ below.
   to prove, an accommodation and a positive measure as records with an end, and
   a pattern that opens a proceeding and convicts nobody.
 
+- [Chapter 13: A Place in Which Life Remains Possible](13-a-place-in-which-life-remains-possible.md)
+  — the environmental right on its separate axes, the ceilings democratic law
+  sets inside a science envelope, the record defect that withdraws only the
+  affected reliance, the Guardian who speaks for conditions nobody may spend
+  away, and the animals whose interests are their own.
+
 ### Part III — The public power that serves it
 
 - [Chapter 16: Public Answerability, and Why It Is Never Revoked](16-public-answerability.md) —
@@ -724,7 +730,8 @@ the domain.
   that an institution, accessible route, diagnostic system, programme, or remedy
   exists or works.
 
-- **Environment, ecological commons, and future conditions:** the current
+- **Environment, ecological commons, and future conditions:** Chapter
+  [13](13-a-place-in-which-life-remains-possible.md). The current
   source now keeps the material floor unchanged while deriving a separate
   environmental right for every person and separate protections for ecological
   commons and future capability. Those protections cover information,

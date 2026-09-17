@@ -237,48 +237,6 @@ brings anyone home, or stops a private contractor being paid. The record says
 the authority is not there. Whether anything in the world stopped is a different
 kind of claim, and this design does not make it.
 
-## Speaking for conditions nobody may spend away
-
-Any present person, qualified association or ordinary rights advocate can
-initiate a commons or future-conditions claim independently. They need no
-proprietary injury and do not speak an unborn person's preferences. Each can
-ask a court for interim protection, but the request itself does not stop an act.
-
-The collegial Future Conditions Guardian has a narrower special instrument.
-Its evidence-supported objection pauses the irreversible part of the exact
-challenged activity through a fresh, bounded window pending expedited
-independent review. Essential continuity remains. A predeclared alternate
-advocate can act in its place when independently established failure prevents
-it from functioning. A separate substitute reviewer replaces a failed or
-conflicted reviewer; advocacy and judgment never become one function.
-
-The Guardian, alternate, successors and reviewers share one replay identity:
-the case, challenged authorisation and its version, evidence version and
-ground. A final resolution cannot be restarted by changing the office, record
-name or clock. Another window needs materially new authenticated evidence or
-a materially changed authorisation, independently compared with what was
-resolved. An authenticated past disposition can preserve that finality after
-its current authority ends; it does not preserve an expired restriction.
-Silence is neither approval nor an indefinite stay.
-
-The Animal Protection Advocate is a separate office. It can initiate claims,
-seek evidence and lawful inspection, and request rescue, cessation and remedy.
-It does not own animals, decide custody, prosecute, issue permits, run a
-programme or veto policy. Divided appointments, open nominations, mixed
-knowledge, staggered nonrenewable terms, cause-only removal, protected public
-funding, disclosure, recusals and independent challenge constrain both
-offices. No government, chamber, party coalition, industry, profession,
-advocacy tendency or appointing source may control a majority, directly or
-in practice; the animal-use sector cannot control the Animal Advocate either.
-
-When the offices disagree, an independent court must keep the human right,
-human floor, commons condition, animal interests, collective rights,
-alternatives, uncertainty, reversibility and continuity separate. Categorical
-prohibitions come first. Neither office's preference nor a single usefulness
-score decides the conflict, and choosing a route does not supply its missing
-permissions. These interfaces establish no operating office, authentic
-decision, working replay registry or performed review.
-
 ## The theorem this completes
 
 The design claims that punishment, reduced to its logic, takes movement and nothing

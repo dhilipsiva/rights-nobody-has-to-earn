@@ -52,7 +52,7 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 10 |
 | associates | 6 |
 | requests | 5 |
-| receives | 29 |
+| receives | 33 |
 | challenges | 13 |
 | governs | 25 |
 | is acted upon | 60 |
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 56 |
+| constructive | 60 |
 | private-civic | 18 |
 | democratic | 23 |
 | coercive | 25 |
@@ -84,7 +84,7 @@ checked here.
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 5 | 6 |
-| Ecology, future generations and commons | 2 | 1 | 3 |
+| Ecology, future generations and commons | 5 | 2 | 6 |
 | Economy, property, work and commons | 19 | 12 | 15 |
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
@@ -121,14 +121,10 @@ checked here.
 | 04-01 | 04-what-you-are-owed.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-02 | 04-what-you-are-owed.md | When the record cannot say what it says | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | continuity | an asylum determination whose record contradicts itself | is acted upon | fails | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-03 | 04-what-you-are-owed.md | A way to be heard | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-04 | 04-what-you-are-owed.md | A place in which life remains possible | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | ordinary | air, water, soil and food | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-05 | 04-what-you-are-owed.md | When the record the protection rested on was defective | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | an ecological record found defective | is acted upon, challenges | continuity-remedy | yes | records | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-06 | 04-what-you-are-owed.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-07 | 04-what-you-are-owed.md | When a use has to be stopped | Non-human animals | ECOLOGICAL-ANIMAL | continuity | remedy orders after an adjudicated animal harm | is acted upon | fails | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-08 | 04-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-09 | 04-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-10 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-11 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-04 | 04-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-05 | 04-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-06 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-07 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-02 | 08-what-nobody-has-to-ask-permission-for.md | The child with nobody | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the child with nobody: one birth entry and nothing else | receives | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
@@ -168,6 +164,15 @@ checked here.
 | 12-08 | 12-the-same-route-for-everyone.md | The old distinctions under the new test | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | status substitutions the equality rules refuse | is acted upon | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
 | 12-09 | 12-the-same-route-for-everyone.md | The child with nobody | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
 | 12-10 | 12-the-same-route-for-everyone.md | What this does not show | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the boundary of a record that finds no pattern | receives | unresolved | yes | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
+| 13-00 | 13-a-place-in-which-life-remains-possible.md | (preamble) | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the conditions of the place a person lives, and their limits | receives | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-01 | 13-a-place-in-which-life-remains-possible.md | A place in which life remains possible | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | ordinary | air, water, soil and food | receives | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-02 | 13-a-place-in-which-life-remains-possible.md | Axes that do not trade | Ecology, future generations and commons | LIBERTY-ECOLOGY | protective | the separate axes, the science envelope, and the order of repair | receives | works | no | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-03 | 13-a-place-in-which-life-remains-possible.md | When the record the protection rested on was defective | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | an ecological record found defective | is acted upon, challenges | continuity-remedy | yes | records | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-04 | 13-a-place-in-which-life-remains-possible.md | Speaking for conditions nobody may spend away | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | a commons or future-conditions claim | challenges | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-05 | 13-a-place-in-which-life-remains-possible.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-06 | 13-a-place-in-which-life-remains-possible.md | When a use has to be stopped | Non-human animals | ECOLOGICAL-ANIMAL | continuity | remedy orders after an adjudicated animal harm | is acted upon | fails | yes | coercive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-07 | 13-a-place-in-which-life-remains-possible.md | The child with nobody | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the child with nobody: one birth entry and nothing else | receives | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-08 | 13-a-place-in-which-life-remains-possible.md | What none of this measures | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the boundary of a record that measures no ecology | receives | unresolved | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 16-00 | 16-public-answerability.md | (preamble) | Public institutions | ARTICLES | ordinary | who can be held to account | governs | works | yes | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-01 | 16-public-answerability.md | The part that looks like a mistake | Public institutions | STATE-FORM | protective | permanent answerability | governs | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-02 | 16-public-answerability.md | Boss | Public institutions | ARTICLES | protective | a recalled official and the person who exposed them | challenges | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |
@@ -180,16 +185,15 @@ checked here.
 | 18-03 | 18-the-vote-conviction-does-not-take.md | When the emergency broke the rule it was under | Emergency and resilience | PUBLIC-SAFETY | continuity | an emergency declaration found defective | is acted upon | fails | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-04 | 18-the-vote-conviction-does-not-take.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | defence under civilian command | governs | works | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-05 | 18-the-vote-conviction-does-not-take.md | When a public power was handed to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defence structure found defective | is acted upon | fails | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-06 | 18-the-vote-conviction-does-not-take.md | Speaking for conditions nobody may spend away | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | a commons or future-conditions claim | challenges | works | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-07 | 18-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-08 | 18-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-09 | 18-the-vote-conviction-does-not-take.md | Belonging without surrendering rights | Collective and plurality rights | MOBILITY-PLURALITY | ordinary | collective membership and internal law | associates | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-10 | 18-the-vote-conviction-does-not-take.md | When the consent turns out not to have been consent | Collective and plurality rights | MOBILITY-PLURALITY | continuity | a collective consent record found defective | associates, challenges | continuity-remedy | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-11 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-12 | 18-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-13 | 18-the-vote-conviction-does-not-take.md | What holding a role in somebody's life actually is | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a scoped family role, support and care continuity | cares, chooses, is acted upon | works | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-14 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-15 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-06 | 18-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-07 | 18-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-08 | 18-the-vote-conviction-does-not-take.md | Belonging without surrendering rights | Collective and plurality rights | MOBILITY-PLURALITY | ordinary | collective membership and internal law | associates | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-09 | 18-the-vote-conviction-does-not-take.md | When the consent turns out not to have been consent | Collective and plurality rights | MOBILITY-PLURALITY | continuity | a collective consent record found defective | associates, challenges | continuity-remedy | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-10 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-11 | 18-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-12 | 18-the-vote-conviction-does-not-take.md | What holding a role in somebody's life actually is | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a scoped family role, support and care continuity | cares, chooses, is acted upon | works | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-13 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-14 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Approved and marked dead | Democracy and amendment | AMENDMENT-ENACTMENT | protective | an approved amendment marked dead | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-02 | 22-changing-the-rules.md | Why the list guards itself | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the register that guards itself | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |

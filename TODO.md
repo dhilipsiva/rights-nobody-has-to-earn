@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-13. **13 — A Place in Which Life Remains Possible** (PROMOTED + Class 9
-    section; closes LIBERTY-ECOLOGY).
 14. **05 — Whether It Arrived** (PROMOTED from 08 and 11).
 15. **06 — When There Is Genuinely Not Enough** (PROMOTED).
 16. **07 — Who Owes, and What Follows** (PROMOTED from 08 and 14; receipt

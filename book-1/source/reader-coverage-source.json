@@ -288,67 +288,6 @@
     {
       "id": "04-04",
       "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "A place in which life remains possible",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "ordinary",
-      "setting": "air, water, soil and food",
-      "trajectory": "works",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "04-05",
-      "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "When the record the protection rested on was defective",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "continuity",
-      "setting": "an ecological record found defective",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon",
-        "challenges"
-      ]
-    },
-    {
-      "id": "04-06",
-      "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "Protection does not require being human",
-      "domain": "Non-human animals",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "protective",
-      "setting": "a credibly sentient animal",
-      "trajectory": "works",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "04-07",
-      "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "When a use has to be stopped",
-      "domain": "Non-human animals",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "continuity",
-      "setting": "remedy orders after an adjudicated animal harm",
-      "trajectory": "fails",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "04-08",
-      "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Owed is not the same as delivered",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
@@ -362,7 +301,7 @@
       ]
     },
     {
-      "id": "04-09",
+      "id": "04-05",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "When there is genuinely not enough",
       "domain": "Material floor",
@@ -377,7 +316,7 @@
       ]
     },
     {
-      "id": "04-10",
+      "id": "04-06",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Where the protection stops",
       "domain": "Material floor",
@@ -392,7 +331,7 @@
       ]
     },
     {
-      "id": "04-11",
+      "id": "04-07",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Owed by whom",
       "domain": "Material floor",
@@ -1001,6 +940,142 @@
       ]
     },
     {
+      "id": "13-00",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "(preamble)",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "protective",
+      "setting": "the conditions of the place a person lives, and their limits",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "13-01",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "A place in which life remains possible",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "ordinary",
+      "setting": "air, water, soil and food",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "13-02",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "Axes that do not trade",
+      "domain": "Ecology, future generations and commons",
+      "family": "LIBERTY-ECOLOGY",
+      "function": "protective",
+      "setting": "the separate axes, the science envelope, and the order of repair",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "13-03",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "When the record the protection rested on was defective",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "continuity",
+      "setting": "an ecological record found defective",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon",
+        "challenges"
+      ]
+    },
+    {
+      "id": "13-04",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "Speaking for conditions nobody may spend away",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "both",
+      "setting": "a commons or future-conditions claim",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "13-05",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "Protection does not require being human",
+      "domain": "Non-human animals",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "protective",
+      "setting": "a credibly sentient animal",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "13-06",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "When a use has to be stopped",
+      "domain": "Non-human animals",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "continuity",
+      "setting": "remedy orders after an adjudicated animal harm",
+      "trajectory": "fails",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "13-07",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "The child with nobody",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "13-08",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "What none of this measures",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "protective",
+      "setting": "the boundary of a record that measures no ecology",
+      "trajectory": "unresolved",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "16-00",
       "chapter": "book-1/16-public-answerability.md",
       "section": "(preamble)",
@@ -1183,21 +1258,6 @@
     {
       "id": "18-06",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "Speaking for conditions nobody may spend away",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "both",
-      "setting": "a commons or future-conditions claim",
-      "trajectory": "works",
-      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "challenges"
-      ]
-    },
-    {
-      "id": "18-07",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The theorem this completes",
       "domain": "Democracy and amendment",
       "family": "ARTICLES",
@@ -1211,7 +1271,7 @@
       ]
     },
     {
-      "id": "18-08",
+      "id": "18-07",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The harsher test",
       "domain": "Records and accountability",
@@ -1226,7 +1286,7 @@
       ]
     },
     {
-      "id": "18-09",
+      "id": "18-08",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "Belonging without surrendering rights",
       "domain": "Collective and plurality rights",
@@ -1241,7 +1301,7 @@
       ]
     },
     {
-      "id": "18-10",
+      "id": "18-09",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "When the consent turns out not to have been consent",
       "domain": "Collective and plurality rights",
@@ -1257,7 +1317,7 @@
       ]
     },
     {
-      "id": "18-11",
+      "id": "18-10",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The home custody does not move",
       "domain": "Locality, mobility and external relations",
@@ -1272,7 +1332,7 @@
       ]
     },
     {
-      "id": "18-12",
+      "id": "18-11",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "Children, the difference between not yet and taken — and a third thing",
       "domain": "Life course, family, care and reproduction",
@@ -1287,7 +1347,7 @@
       ]
     },
     {
-      "id": "18-13",
+      "id": "18-12",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "What holding a role in somebody's life actually is",
       "domain": "Life course, family, care and reproduction",
@@ -1304,7 +1364,7 @@
       ]
     },
     {
-      "id": "18-14",
+      "id": "18-13",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The part that is weaker than it looks",
       "domain": "Democracy and amendment",
@@ -1319,7 +1379,7 @@
       ]
     },
     {
-      "id": "18-15",
+      "id": "18-14",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "And the same silence as before",
       "domain": "Democracy and amendment",
