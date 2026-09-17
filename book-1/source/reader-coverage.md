@@ -46,16 +46,16 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 7 |
+| chooses | 10 |
 | creates | 2 |
 | cares | 2 |
 | works | 10 |
-| associates | 4 |
+| associates | 5 |
 | requests | 3 |
-| receives | 19 |
+| receives | 22 |
 | challenges | 12 |
-| governs | 23 |
-| is acted upon | 54 |
+| governs | 25 |
+| is acted upon | 56 |
 
 ## Chapter patterns
 
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 35 |
+| constructive | 45 |
 | private-civic | 15 |
 | democratic | 23 |
 | coercive | 25 |
@@ -85,7 +85,7 @@ checked here.
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 5 | 6 |
 | Ecology, future generations and commons | 2 | 1 | 3 |
-| Economy, property, work and commons | 12 | 9 | 10 |
+| Economy, property, work and commons | 19 | 12 | 15 |
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
 | Knowledge, communication and culture | 1 | 1 | 1 |
@@ -144,6 +144,16 @@ checked here.
 | 10-02 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-03 | 10-contribution.md | Recognition for looking at people | Economy, property, work and commons | ARTICLES | ordinary | recognition for examining people | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-04 | 10-contribution.md | What is lost | Economy, property, work and commons | ARTICLES | protective | what the absence of arithmetic costs | works | unresolved | yes | private-civic | `book-1/10-contribution.pins.nibli` |
+| 11-00 | 11-what-money-cannot-buy.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | price on the far side of a line the floor never crosses | chooses | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-01 | 11-what-money-cannot-buy.md | Owning without owning the floor | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | conditional possession, plural tenure, the dwelling that is not an asset | chooses | works | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-02 | 11-what-money-cannot-buy.md | A promise is not a trap | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | consent, waivers, the enterprise as a tool | chooses, associates | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-03 | 11-what-money-cannot-buy.md | When a private power owes public duties | Economy, property, work and commons | PUBLIC-SCALE-VOCABULARY | protective | the named grounds, classes and tiers of a private-power finding | is acted upon | contested | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-04 | 11-what-money-cannot-buy.md | Public money | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | taxation, appropriation, borrowing under a legislative source | governs | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-05 | 11-what-money-cannot-buy.md | Money you can hold in your hand | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | the backbone with a non-digital route; the bounded monetary office | receives | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-06 | 11-what-money-cannot-buy.md | Which tier decides | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | the common tier's short list and the regional residue | governs | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-07 | 11-what-money-cannot-buy.md | When an economic power ends, and what does not | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | a power losing its current review; the floor and the service surviving it | is acted upon | fails | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-08 | 11-what-money-cannot-buy.md | The child with nobody | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the child with nobody: one birth entry and nothing else | receives | works | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
+| 11-09 | 11-what-money-cannot-buy.md | What none of this counts | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that values nothing | receives | unresolved | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
 | 16-00 | 16-public-answerability.md | (preamble) | Public institutions | ARTICLES | ordinary | who can be held to account | governs | works | yes | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-01 | 16-public-answerability.md | The part that looks like a mistake | Public institutions | STATE-FORM | protective | permanent answerability | governs | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-02 | 16-public-answerability.md | Boss | Public institutions | ARTICLES | protective | a recalled official and the person who exposed them | challenges | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |

@@ -90,10 +90,11 @@
         },
         {
           "number": 11,
+          "file": "11-what-money-cannot-buy.md",
           "title": "What Money Cannot Buy",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 12,

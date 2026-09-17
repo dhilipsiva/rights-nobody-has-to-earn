@@ -163,7 +163,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 08 | What Nobody Has to Ask Permission For | — | derived | engine | planned |
 | 09 | Earning Above the Floor | `09-earning-above-the-floor.md` | derived | engine | landed |
 | 10 | Contribution | `10-contribution.md` | derived | engine | landed |
-| 11 | What Money Cannot Buy | — | derived | engine | planned |
+| 11 | What Money Cannot Buy | `11-what-money-cannot-buy.md` | derived | engine | landed |
 | 12 | The Same Route for Everyone | — | derived | engine | planned |
 | 13 | A Place in Which Life Remains Possible | — | derived | engine | planned |
 | 14 | Holding a Role in Somebody's Life | — | derived | engine | planned |

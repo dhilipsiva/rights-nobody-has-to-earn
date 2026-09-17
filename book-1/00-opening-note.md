@@ -279,6 +279,12 @@ below.
   and honest examination without turning recognition into a number, price, or
   claim on the floor.
 
+- [Chapter 11: What Money Cannot Buy](11-what-money-cannot-buy.md) — keeps price
+  on the far side of the floor: conditional property, contracts that cannot
+  trap, the enterprise as a tool, private power bound only on a named ground,
+  and public money, credit and the monetary office each under a source with an
+  end.
+
 ### Part III — The public power that serves it
 
 - [Chapter 16: Public Answerability, and Why It Is Never Revoked](16-public-answerability.md) —
@@ -615,7 +621,8 @@ the domain.
   present; ordinary delivery remains the central gap.
 
 - **Work, property, enterprise, exchange, money, credit, debt, and public
-  finance:** Chapters [9](09-earning-above-the-floor.md), [26](26-clawback.md), [4](04-what-you-are-owed.md),
+  finance:** Chapters [9](09-earning-above-the-floor.md),
+  [11](11-what-money-cannot-buy.md), [26](26-clawback.md), [4](04-what-you-are-owed.md),
   [18](18-the-vote-conviction-does-not-take.md),
   [10](10-contribution.md), [28](28-where-people-are-put.md),
   [29](29-the-one-thing-taken.md),

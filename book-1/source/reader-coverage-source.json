@@ -638,6 +638,157 @@
       ]
     },
     {
+      "id": "11-00",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "(preamble)",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "price on the far side of a line the floor never crosses",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "11-01",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "Owning without owning the floor",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "conditional possession, plural tenure, the dwelling that is not an asset",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "11-02",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "A promise is not a trap",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "consent, waivers, the enterprise as a tool",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "chooses",
+        "associates"
+      ]
+    },
+    {
+      "id": "11-03",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "When a private power owes public duties",
+      "domain": "Economy, property, work and commons",
+      "family": "PUBLIC-SCALE-VOCABULARY",
+      "function": "protective",
+      "setting": "the named grounds, classes and tiers of a private-power finding",
+      "trajectory": "contested",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "11-04",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "Public money",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "ordinary",
+      "setting": "taxation, appropriation, borrowing under a legislative source",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "11-05",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "Money you can hold in your hand",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "ordinary",
+      "setting": "the backbone with a non-digital route; the bounded monetary office",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "11-06",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "Which tier decides",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "ordinary",
+      "setting": "the common tier's short list and the regional residue",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "11-07",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "When an economic power ends, and what does not",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "continuity",
+      "setting": "a power losing its current review; the floor and the service surviving it",
+      "trajectory": "fails",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "11-08",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "The child with nobody",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "11-09",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "What none of this counts",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "the boundary of a record that values nothing",
+      "trajectory": "unresolved",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "16-00",
       "chapter": "book-1/16-public-answerability.md",
       "section": "(preamble)",

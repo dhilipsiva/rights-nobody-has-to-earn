@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-9. **11 — What Money Cannot Buy** (NEW; cuts 08:781-800; closes ECONOMIC,
-   PUBLIC-SCALE-VOCABULARY).
 10. **Implement the substantive-equality ordinary half** (`equality-source.json`,
     `src/authoring/equality.rs` from `family_life.rs` by substitution, block
     `SUBSTANTIVE-EQUALITY-ORDINARY`, contract card, the cases in D5;

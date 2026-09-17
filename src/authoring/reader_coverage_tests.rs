@@ -181,16 +181,13 @@ fn the_postures_nobody_occupies_are_the_ones_recorded() {
 
 /// Rule families with a marked block in the constitution and no passage
 /// tagged to them in the ledger. "Book 1 must project each landed family" is
-/// the ruling; this is the census. Three on 2026-09-17, after the economy
-/// chapter rendered ECONOMIC-CONSTITUTION, INCOME-SECURITY and
-/// QUALIFICATIONS-COMPENSATION; each Phase B chapter removes its family, and
+/// the ruling; this is the census. Two on 2026-09-17, after the economy
+/// chapters rendered ECONOMIC-CONSTITUTION, INCOME-SECURITY,
+/// QUALIFICATIONS-COMPENSATION and PUBLIC-SCALE-VOCABULARY; each Phase B
+/// chapter removes its family, and
 /// the empty expectation then stays so the next family that lands without a
 /// passage fails here instead of passing quietly.
-const UNRENDERED_FAMILIES: [&str; 3] = [
-    "LIBERTY-ECOLOGY",
-    "PUBLIC-SCALE-VOCABULARY",
-    "SUBSTANTIVE-EQUALITY",
-];
+const UNRENDERED_FAMILIES: [&str; 2] = ["LIBERTY-ECOLOGY", "SUBSTANTIVE-EQUALITY"];
 
 /// Ledger family tags that name no block: the kernel articles, the placement
 /// rules, and the exempt Part V.
