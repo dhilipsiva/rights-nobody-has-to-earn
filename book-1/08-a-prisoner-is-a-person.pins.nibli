@@ -1,0 +1,146 @@
+# ── Chapter 8 fidelity pins: "A Prisoner Is a Person" ────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/08-a-prisoner-is-a-person.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# Zed is introduced BY this pin file rather than living in the constitution:
+# the chapter needs someone the person-roster has never mentioned, and every
+# prisoner in the cast is also asserted as a person. That is itself the
+# chapter's closing point.
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 22
+
+# "Zed injured Ivo. A court judged Zed."
+injure(Zed, Ivo).
+judge(Court, Zed).
+cite(Court, Case_Zed, Zed).
+observe(Chronicle, Case_Zed, Zed, CaseScope).
+observe(TemporalReview, Case_Zed, Zed, CaseScope).
+observe(Chronicle, Case_Zed, Court, HolderScope).
+observe(TemporalReview, Case_Zed, Court, HolderScope).
+observe(Chronicle, Case_Zed, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Zed, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Zed, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Zed, Ivo, InjuryVictimScope).
+authorized(Case_Zed, ActiveCustody, Case_Zed).
+observe(Chronicle, Case_Zed, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Zed, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Zed, Case_Zed, CaseBindingScope).
+observe(TemporalReview, Case_Zed, Case_Zed, CaseBindingScope).
+limit(Case_Zed, Case_Zed, Window_Custody).
+observe(Chronicle, Case_Zed, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Zed, Window_Custody, LimitScope).
+continue(Case_Zed, Epoch_Current).
+observe(Chronicle, Case_Zed, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Zed, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_Zed).
+endorses(TemporalReview, Case_Zed).
+
+? injure(Zed, Ivo).
+# => TRUE
+
+# "Zed is a prisoner, which follows from those two facts."
+? prisoner(Zed).
+# => TRUE
+
+# "And Zed is a person, which follows from being a prisoner." — nobody wrote it
+? person(Zed).
+# => TRUE
+
+# "Convicted, unlisted, and owed everything." The sentence says OWED, and until
+# now this file only proved undelivered — a FALSE that guards the gap, not the
+# debt. The debt pins are what the sentence rests on — and "everything" is
+# enumerated, not sampled, because the omitted item is exactly where a
+# universal fails: chapter 9's own missing expresses pin once hid a false one.
+# This file executes Zed's T3 custody-to-person chain, every itemised debt, and
+# the exact opaque floor projection from that derived standing in one process.
+? owe(State, Eats, Zed).
+# => TRUE
+
+? owe(State, Dwell, Zed).
+# => TRUE
+
+? owe(State, Healthy, Zed).
+# => TRUE
+
+? owe(State, Learn, Zed).
+# => TRUE
+
+? owe(State, Secure, Zed).
+# => TRUE
+
+? owe(State, Expresses, Zed).
+# => TRUE
+
+? owe(State, Believe, Zed).
+# => TRUE
+
+? owe(State, Meets, Zed).
+# => TRUE
+
+# (Owed, not delivered — the delivery gap is chapter 9's subject.)
+? eats(Zed).
+# => FALSE
+
+# "Zed is still a prisoner" — conviction stands
+? travel(Zed).
+# => FALSE
+
+# The firewall, which the chapter shows depends on the personhood line:
+:refuse reasoning /'prisoner' -> 'believe'/
+all $x: person($x) & ~believe($x) -> prisoner($x).
+
+:refuse reasoning /'prisoner' -> 'eats'/
+all $x: person($x) & ~eats($x) -> prisoner($x).
+
+# and the non-floor control, so the refusals above mean something
+# `:accept-scoped` loads the statement, reports whether it loaded, then retracts
+# it — so this control cannot widen the base for anything below it, and where a
+# query sits relative to the accepts stops mattering. Measured on this file: with
+# a plain `:accept` here, a `? prisoner(Quin).` added below answers TRUE — Quin
+# has no conviction, only no home — and with `:accept-scoped` the same query
+# answers FALSE. Keep the scoped form. `rights-floor.pins.nibli` records a real
+# vacuous green from the plain one: a `prisoner` query sat below this same
+# `~home` control and would have passed with Article 6 deleted outright.
+:accept-scoped
+all $x: person($x) & ~home($x) -> prisoner($x).
+
+# "the eight things are owed to persons" — Hano, convicted, keeps expression
+? expresses(Hano).
+# => TRUE
+
+# ── THE SECOND DOOR. MUST STAY LAST: free(Nemo) is a ground fact and persists ─
+# "release has to return you to the roster ... a finding with no finder." One
+# write, a name the record has never held, and a person exists — never listed,
+# never judged, released from a sentence that never existed. Chapter 2's suite
+# pins this same door via Wraith as the route the evidence list already
+# contained; this file pins it as the route the corollary used to deny.
+free(Nemo).
+
+? person(Nemo).
+# => TRUE
+
+? prisoner(Nemo).
+# => FALSE
+
+? travel(Nemo).
+# => TRUE
+
+? owe(State, Eats, Nemo).
+# => TRUE
+
+# The T3 custody chain derives Zed's standing; the floor must remain open.
+? entitled(Zed, event { eats() }).
+# => TRUE

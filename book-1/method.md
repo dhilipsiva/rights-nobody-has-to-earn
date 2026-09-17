@@ -111,7 +111,7 @@ record without a competing binding or conflicted order path. Then this final
 gate rejoins the case and lease evidence again. No standing appellate relief. A
 court not itself marked broken. No derived defence. Not already free. Then, and
 only then: prisoner. There is no second route, discretion, or “unless
-circumstances warrant.” Chapter 13's one direct punitive deprivation describes
+circumstances warrant.” Chapter 14's one direct punitive deprivation describes
 this conviction route. Separate protective instruments now use `restrain`,
 never `prisoner` or `capture`, with their own grounds, temporal contracts and
 floor firewalls. Their capability-loss projections remain unread leaves.
@@ -188,7 +188,7 @@ has producing rules *and* direct ground entries, and birth, encounter, custody,
 release and carried status provide independent producing routes. It is therefore
 a conclusion the machinery can reach that the record must nonetheless admit.
 *What counts as evidence* and *what may be written* are different sets:
-`person` is the clearest difference between them, and chapter 1 put personhood
+`person` is the clearest difference between them, and chapter 2 put personhood
 on its evidence list for precisely that reason. A failed lookup does not reverse
 a root already supplied, and correction or a death mark does not retract
 personhood.
@@ -205,7 +205,7 @@ reviewable edit, which is the point.
 ```
 
 I did not write that error message, and its last clause is the engine
-agreeing with chapter 1 in its own words: widening the record is a loud,
+agreeing with chapter 2 in its own words: widening the record is a loud,
 reviewable act, never a fact somebody quietly types.
 
 One honest note on why you are seeing excerpts and not the whole file. It is
@@ -245,7 +245,7 @@ reviewing the chapter order is separate from running the pins.
 You have already felt this order, whether or not you noticed. The book opened
 on the record itself — what may be written, and by whom — because everything
 else rests on it. It ended, before Part V, on the audit and the legal
-consequences that now sit above its findings. Chapter 14 ends there because the
+consequences that now sit above its findings. Chapter 15 ends there because the
 next missing link is not another conclusion. It is action in the world.
 
 Every chapter in
@@ -352,7 +352,7 @@ does not decide whether earned-time credit is just. The ratified temporal contra
 answers that question separately, and the enacted path contains no route from
 character, contribution, or recognition to a shorter sentence. Release remains an
 entry someone writes,
-never an output the machinery computes, and it carries the concession chapter 1
+never an output the machinery computes, and it carries the concession chapter 2
 already made: the entry does not say whose decision it records. The temporal rule
 instead constrains the authority holding the exact person in the exact case. If
 the current reviewed authority is absent, custody does not derive; `free` is not
@@ -449,7 +449,7 @@ current expectations.
 Some pins are stranger, and they are this method's most honest invention.
 The book argues about flaws the design still has — chapters stand on them.
 Those flaws are pinned too, marked as defects, with the marker recording
-what would flip them. From chapter 12's file, exactly as written:
+what would flip them. From chapter 13's file, exactly as written:
 
 ```
 :defect "a totality guard: a targetless proposal receives no law label"
@@ -458,7 +458,7 @@ what would flip them. From chapter 12's file, exactly as written:
 ```
 
 A targetless proposal still receives the law label here — a real defect in the
-label guard, not proof that any change took effect — and chapter 12's argument
+label guard, not proof that any change took effect — and chapter 13's argument
 depends on it being real. If a future edit quietly fixed it, the suite would not
 celebrate; it stops the build and says, in its own words, that this is a repair,
 not a regression — find the chapter that calls this a flaw and rewrite it, then

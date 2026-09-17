@@ -268,7 +268,7 @@
           "kind": "prose",
           "role": "exposes_gap",
           "supports": "RI-6",
-          "ref": "book-1/05-voiding.md::A fact deleted before the first attested"
+          "ref": "book-1/06-voiding.md::A fact deleted before the first attested"
         }
       ],
       "known_failure": "The current `complete(item, ScopeTag)`, `succeed(after, Transition)`, `succeed(lease, PowerBound)`, `precede(claim, SequenceTag)`, `time(window, ReviewedInterval)`, `related(case, CaseBound)`, `orderly(lease, WindowBound)`, `concurrent(lease, RenewalBound)`, `reference(binding, SourceBound)`, and `correct(lease, ActivePower)` conclusions are compressed typed status outputs whose consequential consumers rejoin raw fields and their matching witness fields; despite their ordinary English names none is a general correction event. The kernel still has no general superseding-entry effect, retention policy, deletion authorisation, or stored-history assurance.",
@@ -465,7 +465,7 @@
           "kind": "prose",
           "role": "supports_current",
           "supports": "RI-11",
-          "ref": "book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a"
+          "ref": "book-1/02-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a"
         }
       ],
       "known_failure": "Any claim of internal detection would be a false guarantee and could make an omitted or deleted claimant-supporting fact look lawfully absent.",
@@ -975,42 +975,42 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/01-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a",
+      "artifact_ref": "book-1/02-what-counts-as-evidence.md::Neither mechanism can find an encounter nobody reports, detect a",
       "current_claim": "An unreported birth or encounter and a deletion before or inside the first attested record remain undetectable; supplied standing roots and selected later carry omissions narrow different failures.",
       "classification": "revised",
       "reason": "The standing roots and staged path work only over supplied inputs and accepted snapshots; neither distinguishes deletion, withholding, and non-reporting inside one snapshot.",
       "future_trigger": "Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit."
     },
     {
-      "artifact_ref": "book-1/03-who-holds-the-pen.md::It does not prove independent",
+      "artifact_ref": "book-1/04-who-holds-the-pen.md::It does not prove independent",
       "current_claim": "Cross-body pens raise decision cost but do not assure record authorship.",
       "classification": "preserved",
       "reason": "The case distinguishes decisional independence from record witnessing and changes no pen rule.",
       "future_trigger": "Revise when authenticated, independently witnessed writer controls are formal and tested."
     },
     {
-      "artifact_ref": "book-1/05-voiding.md::They do not make the record self-authenticating.",
+      "artifact_ref": "book-1/06-voiding.md::They do not make the record self-authenticating.",
       "current_claim": "The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive.",
       "classification": "revised",
       "reason": "The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service.",
       "future_trigger": "Narrow, never erase, when scoped external assurance evidence exists; genesis, truth, exhaustive disclosure, storage integrity, and liveness limits remain."
     },
     {
-      "artifact_ref": "book-1/09-the-vote-conviction-does-not-take.md::This record only ever adds",
+      "artifact_ref": "book-1/10-the-vote-conviction-does-not-take.md::This record only ever adds",
       "current_claim": "Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission.",
       "classification": "preserved",
       "reason": "The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics.",
       "future_trigger": "Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect."
     },
     {
-      "artifact_ref": "book-1/12-changing-the-rules.md::integrity of the record those rules are written in.",
+      "artifact_ref": "book-1/13-changing-the-rules.md::integrity of the record those rules are written in.",
       "current_claim": "The declared-name guard rests on the integrity of its own rule, label register, and constitutional source; semantic entrenchment is not established.",
       "classification": "preserved",
       "reason": "The case treats the constitutional source as a record but does not harden amendment semantics.",
       "future_trigger": "Revise with the later semantic-amendment and source-transition rule family and its counterfactuals."
     },
     {
-      "artifact_ref": "book-1/14-when-the-system-notices-it-broke.md::The chain no longer ends there.",
+      "artifact_ref": "book-1/15-when-the-system-notices-it-broke.md::The chain no longer ends there.",
       "current_claim": "Every current formal finding kind reaches an exact source-bound typed reader/action route; the route proves no receipt, action, delivery, completed remedy, recurrence control, or institutional liveness.",
       "classification": "revised",
       "reason": "FS-CVF-016 retires the historical unread-duty endpoint with exact reader, nonresponse, alternate, continuity, individual-remedy, correction, re-audit, recurrence, and non-delay controls.",
@@ -1024,7 +1024,7 @@
       "future_trigger": "Revise only to the exact scope of later generated suites and independently deployed assurance evidence."
     },
     {
-      "artifact_ref": "book-1/15-the-five-joints.md::The constitutional source and the supplied record nevertheless remain",
+      "artifact_ref": "book-1/16-the-five-joints.md::The constitutional source and the supplied record nevertheless remain",
       "current_claim": "Capture at the constitutional-source and supplied-record surfaces is exposed rather than prevented.",
       "classification": "preserved",
       "reason": "The staged T3 path adds bounded formal safety controls, but the supplied premises, witnesses, source deployment, storage, readers, and institutional action remain externally capturable.",

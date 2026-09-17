@@ -1,0 +1,141 @@
+{
+  "name": "heart",
+  "date": "2026-09-17",
+  "notes": "",
+  "moves": [
+    {
+      "from": "book-1/01-what-counts-as-evidence.md",
+      "to": "book-1/02-what-counts-as-evidence.md"
+    },
+    {
+      "from": "book-1/01-what-counts-as-evidence.pins.nibli",
+      "to": "book-1/02-what-counts-as-evidence.pins.nibli"
+    },
+    {
+      "from": "book-1/02-public-answerability.md",
+      "to": "book-1/03-public-answerability.md"
+    },
+    {
+      "from": "book-1/02-public-answerability.pins.nibli",
+      "to": "book-1/03-public-answerability.pins.nibli"
+    },
+    {
+      "from": "book-1/03-who-holds-the-pen.md",
+      "to": "book-1/04-who-holds-the-pen.md"
+    },
+    {
+      "from": "book-1/03-who-holds-the-pen.pins.nibli",
+      "to": "book-1/04-who-holds-the-pen.pins.nibli"
+    },
+    {
+      "from": "book-1/04-the-shield.md",
+      "to": "book-1/05-the-shield.md"
+    },
+    {
+      "from": "book-1/04-the-shield.pins.nibli",
+      "to": "book-1/05-the-shield.pins.nibli"
+    },
+    {
+      "from": "book-1/05-voiding.md",
+      "to": "book-1/06-voiding.md"
+    },
+    {
+      "from": "book-1/05-voiding.pins.nibli",
+      "to": "book-1/06-voiding.pins.nibli"
+    },
+    {
+      "from": "book-1/06-clawback.md",
+      "to": "book-1/07-clawback.md"
+    },
+    {
+      "from": "book-1/06-clawback.pins.nibli",
+      "to": "book-1/07-clawback.pins.nibli"
+    },
+    {
+      "from": "book-1/07-a-prisoner-is-a-person.md",
+      "to": "book-1/08-a-prisoner-is-a-person.md"
+    },
+    {
+      "from": "book-1/07-a-prisoner-is-a-person.pins.nibli",
+      "to": "book-1/08-a-prisoner-is-a-person.pins.nibli"
+    },
+    {
+      "from": "book-1/08-what-you-are-owed.md",
+      "to": "book-1/09-what-you-are-owed.md"
+    },
+    {
+      "from": "book-1/08-what-you-are-owed.pins.nibli",
+      "to": "book-1/09-what-you-are-owed.pins.nibli"
+    },
+    {
+      "from": "book-1/09-the-vote-conviction-does-not-take.md",
+      "to": "book-1/10-the-vote-conviction-does-not-take.md"
+    },
+    {
+      "from": "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
+      "to": "book-1/10-the-vote-conviction-does-not-take.pins.nibli"
+    },
+    {
+      "from": "book-1/10-contribution.md",
+      "to": "book-1/11-contribution.md"
+    },
+    {
+      "from": "book-1/10-contribution.pins.nibli",
+      "to": "book-1/11-contribution.pins.nibli"
+    },
+    {
+      "from": "book-1/11-where-people-are-put.md",
+      "to": "book-1/12-where-people-are-put.md"
+    },
+    {
+      "from": "book-1/11-where-people-are-put.pins.nibli",
+      "to": "book-1/12-where-people-are-put.pins.nibli"
+    },
+    {
+      "from": "book-1/12-changing-the-rules.md",
+      "to": "book-1/13-changing-the-rules.md"
+    },
+    {
+      "from": "book-1/12-changing-the-rules.pins.nibli",
+      "to": "book-1/13-changing-the-rules.pins.nibli"
+    },
+    {
+      "from": "book-1/13-the-one-thing-taken.md",
+      "to": "book-1/14-the-one-thing-taken.md"
+    },
+    {
+      "from": "book-1/13-the-one-thing-taken.pins.nibli",
+      "to": "book-1/14-the-one-thing-taken.pins.nibli"
+    },
+    {
+      "from": "book-1/14-when-the-system-notices-it-broke.md",
+      "to": "book-1/15-when-the-system-notices-it-broke.md"
+    },
+    {
+      "from": "book-1/14-when-the-system-notices-it-broke.pins.nibli",
+      "to": "book-1/15-when-the-system-notices-it-broke.pins.nibli"
+    },
+    {
+      "from": "book-1/15-the-five-joints.md",
+      "to": "book-1/16-the-five-joints.md"
+    }
+  ],
+  "rewrites": [],
+  "labels": {
+    "1": "2",
+    "2": "3",
+    "3": "4",
+    "4": "5",
+    "5": "6",
+    "6": "7",
+    "7": "8",
+    "8": "9",
+    "9": "10",
+    "10": "11",
+    "11": "12",
+    "12": "13",
+    "13": "14",
+    "14": "15",
+    "15": "16"
+  }
+}

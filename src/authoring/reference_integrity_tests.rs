@@ -68,7 +68,7 @@ const KNOWN_MISSING: [&str; 32] = [
 /// Files whose reviewed needles no longer occur in them, with how many such
 /// needles each carries, measured 2026-09-16.
 const KNOWN_UNMATCHED: [(&str, usize); 5] = [
-    ("book-1/07-a-prisoner-is-a-person.md", 1),
+    ("book-1/08-a-prisoner-is-a-person.md", 1),
     ("book-1/method.md", 5),
     ("book-1/source/constitution.nibli", 2),
     ("book-1/source/counterfactual/README.md", 1),

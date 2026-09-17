@@ -15,7 +15,7 @@ gives disclosure no credit for closure.
 
 ### writable-credential — resolved-for-claim
 
-*Told in* `03-who-holds-the-pen.md`, "The gap that used to be here".
+*Told in* `04-who-holds-the-pen.md`, "The gap that used to be here".
 
 **What failed.** An examiner's pen could be written down directly, so the credential a voiding needs was a fact somebody typed rather than a conclusion anything derived.
 
@@ -29,13 +29,13 @@ gives disclosure no credit for closure.
 
 ### student-clawback — resolved-for-claim
 
-*Told in* `06-clawback.md`, "Cira, and the rule that is no longer here".
+*Told in* `07-clawback.md`, "Cira, and the rule that is no longer here".
 
 **What failed.** A student's recognition was docked for a teacher's adjudicated fraud — negative scoring of somebody who did nothing.
 
 **What changed.** The rule was deleted outright rather than narrowed, because students never mint and narrowing would have been repeal.
 
-**How the former attack is rerun.** `book-1/06-clawback.pins.nibli`
+**How the former attack is rerun.** `book-1/07-clawback.pins.nibli`
 
 **What still does not follow.** That anything is ever un-minted. Loss stays a leaf and derivation stays monotone; the surviving guards never-mint rather than subtract.
 
@@ -43,7 +43,7 @@ gives disclosure no credit for closure.
 
 ### placement-marker — resolved-for-claim
 
-*Told in* `11-where-people-are-put.md`, "The alarm that did not work".
+*Told in* `12-where-people-are-put.md`, "The alarm that did not work".
 
 **What failed.** The marker meant to report bad placements fired on correctly placed people and on nobody who was misplaced — wrong every time it spoke.
 
@@ -57,13 +57,13 @@ gives disclosure no credit for closure.
 
 ### shield-without-a-target — resolved-for-claim
 
-*Told in* `04-the-shield.md`, "Don".
+*Told in* `05-the-shield.md`, "Don".
 
 **What failed.** The shield asked what you exposed and not whom: any defendant could name their own accuser or victim and become unjailable.
 
 **What changed.** The rule now asks who was exposed, so exposing the person you injured earns nothing.
 
-**How the former attack is rerun.** `book-1/04-the-shield.pins.nibli`
+**How the former attack is rerun.** `book-1/05-the-shield.pins.nibli`
 
 **What still does not follow.** That the exposure was true or made in good faith. Absence of a deceit finding protects, and that default is priced rather than removed.
 
@@ -71,13 +71,13 @@ gives disclosure no credit for closure.
 
 ### borrowed-void-word — resolved-for-claim
 
-*Told in* `12-changing-the-rules.md`, "The word the machinery borrows, and the person it nearly cost".
+*Told in* `13-changing-the-rules.md`, "The word the machinery borrows, and the person it nearly cost".
 
 **What failed.** The voiding rule read anything recorded as touching a protected item, so one entry written by anyone about anyone could void a person.
 
 **What changed.** The rule was narrowed to the amendment machinery it was written for, and the reuse of one word across two machineries is disclosed rather than tidied away.
 
-**How the former attack is rerun.** `book-1/12-changing-the-rules.pins.nibli`
+**How the former attack is rerun.** `book-1/13-changing-the-rules.pins.nibli`
 
 **What still does not follow.** That reusing a word is safe in general. It was frugal, it nearly cost somebody their credibility, and the saving is still taken.
 
@@ -87,7 +87,7 @@ gives disclosure no credit for closure.
 
 ### unread-duty — operationally-unresolved
 
-*Told in* `14-when-the-system-notices-it-broke.md`, "And then a duty, which no longer has to be the end".
+*Told in* `15-when-the-system-notices-it-broke.md`, "And then a duty, which no longer has to be the end".
 
 **What failed.** A recorded breach concluded a two-place duty that nothing read, so the audit ended in a determination and stopped.
 
@@ -103,7 +103,7 @@ gives disclosure no credit for closure.
 
 ### kinship-silence — externally-bounded
 
-*Told in* `05-voiding.md`, "What it costs".
+*Told in* `06-voiding.md`, "What it costs".
 
 **What failed.** Independence was manufactured from missing parent, marriage and sibling entries, so a missing record looked exactly like no relationship.
 
@@ -117,7 +117,7 @@ gives disclosure no credit for closure.
 
 ### roster-standing — externally-bounded
 
-*Told in* `07-a-prisoner-is-a-person.md`, "The standing roots do not replace this line".
+*Told in* `08-a-prisoner-is-a-person.md`, "The standing roots do not replace this line".
 
 **What failed.** Personhood waited on somebody maintaining a roster, so a person never entered was indistinguishable from a person who does not exist.
 
@@ -133,7 +133,7 @@ gives disclosure no credit for closure.
 
 ### attester-collusion — irreducible-limitation
 
-*Told in* `05-voiding.md`, "It takes two, from two places".
+*Told in* `06-voiding.md`, "It takes two, from two places".
 
 **What failed.** Nothing authenticates a witness or checks that attested evidence is true.
 
@@ -147,7 +147,7 @@ gives disclosure no credit for closure.
 
 ### one-sided-closure — irreducible-limitation
 
-*Told in* `01-what-counts-as-evidence.md`, "The way this gets taken apart".
+*Told in* `02-what-counts-as-evidence.md`, "The way this gets taken apart".
 
 **What failed.** The closed record is extensional and one-sided: a word never used can be declared and used in the same breath, and a direct vocabulary widening bypasses the amendment machinery entirely.
 
@@ -163,7 +163,7 @@ gives disclosure no credit for closure.
 
 ### floor-delivery-markers — open-defect
 
-*Told in* `08-what-you-are-owed.md`, "Owed is not the same as delivered".
+*Told in* `09-what-you-are-owed.md`, "Owed is not the same as delivered".
 
 **What failed.** Nothing watches the floor debt against arrival: the design audits what it does and not what it owes.
 
@@ -177,7 +177,7 @@ gives disclosure no credit for closure.
 
 ### family-ordinary-half — open-defect
 
-*Told in* `09-the-vote-conviction-does-not-take.md`, "Children, the difference between not yet and taken — and a third thing".
+*Told in* `10-the-vote-conviction-does-not-take.md`, "Children, the difference between not yet and taken — and a third thing".
 
 **What failed.** The family, dependency, reproduction and care baseline landed its person-held barriers and no ordinary-operation interface, so the domain appears only under strain.
 

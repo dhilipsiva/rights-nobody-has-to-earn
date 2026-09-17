@@ -2447,13 +2447,13 @@ mod tests {
         let floor =
             std::fs::read_to_string(root.join("book-1/source/rights-floor.pins.nibli")).unwrap();
         let chapter =
-            std::fs::read_to_string(root.join("book-1/01-what-counts-as-evidence.pins.nibli"))
+            std::fs::read_to_string(root.join("book-1/02-what-counts-as-evidence.pins.nibli"))
                 .unwrap();
         let output = run_pin_files(
             &[source("constitution.nibli", &constitution)],
             &[
                 source("rights-floor.pins.nibli", &floor),
-                source("01-what-counts-as-evidence.pins.nibli", &chapter),
+                source("02-what-counts-as-evidence.pins.nibli", &chapter),
             ],
             PinOptions {
                 allow_shell: true,

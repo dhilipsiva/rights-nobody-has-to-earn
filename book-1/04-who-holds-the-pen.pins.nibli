@@ -1,0 +1,148 @@
+# ── Chapter 4 fidelity pins: "Who Holds the Pen" ─────────────────────────────
+#
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/04-who-holds-the-pen.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 23
+
+# "The electorate seated you. You have not been recalled. And you were not
+#  voided in an earlier period." — all three holding gives the pen.
+? choose(Electorate, Gia).
+# => TRUE
+
+? permits(Review, Gia).
+# => TRUE
+
+? permits(Tribunal, Wren).
+# => TRUE
+
+# "Writing it down directly is not forbidden-and-punished; it is refused."
+:refuse reasoning /declared derived-only/
+permits(Review, Sock).
+
+# "Boss keeps standing permanently and loses the credential immediately."
+? choose(Electorate, Boss).
+# => TRUE
+
+? broken(Boss).
+# => TRUE
+
+? authority(Boss).
+# => TRUE
+
+? permits(Review, Boss).
+# => FALSE
+
+# "Vex was also seated, and was never recalled — but Vex was voided in an
+#  earlier period. Vex has no pen either."
+? choose(Electorate, Vex).
+# => TRUE
+
+? rotten(Vex).
+# => TRUE
+
+? permits(Review, Vex).
+# => FALSE
+
+# "On the account so far, Nia should be a prisoner — the injury, the judgment,
+# the machinery." The premises are pinned so the relief verdict below cannot go
+# vacuous: prisoner(Nia) FALSE means something only while a conviction is there
+# to be relieved.
+? injure(Nia, Ivo).
+# => TRUE
+
+? judge(Court, Nia).
+# => TRUE
+
+# "Nia is not a prisoner, because Nia was cleared."
+? clear(Nia).
+# => TRUE
+
+# [v0.9] ...and the adjudication the relief now requires
+? judge(Appeals, Nia).
+# => TRUE
+
+? permits(Appeals, Nia).
+# => TRUE
+
+? prisoner(Nia).
+# => FALSE
+
+# ── THE BARE FLAG DERIVES NOTHING. Ground fact persists; keep this last ──────
+# "The clearing entry still names no author. The judgment names a body and
+# person, not a case, purpose, act or writer." Adam — convicted, homeless,
+# housed by confinement — is written as cleared, with no generic Appeals
+# judgment beside the word, and nothing moves. Negative-controlled against the pre-guard
+# constitution: these three flip (the flag alone sprang him), and Nia's pins
+# above stand either way.
+clear(Adam).
+
+? permits(Appeals, Adam).
+# => FALSE
+
+? prisoner(Adam).
+# => TRUE
+
+? travel(Adam).
+# => FALSE
+
+# ── THE BARE JUDGMENT DERIVES NOTHING EITHER — the other half, ruled 2026-08-02.
+# The chapter's new default paragraph stands on this pair: an appeals
+# examination that cleared nobody leaves the conviction exactly where it stood.
+# Relief takes both entries; either alone is an absence, and the absence
+# convicts — fail-closed, defended at Article 6's head. Voss is fresh (Adam's
+# persisting clear-flag above must not meet a judgment fact, or the two halves
+# would combine and free him). Self-controlling against Nia's block above:
+# both entries together lift a conviction, either alone lifts nothing.
+person(Voss).
+injure(Voss, Ivo).
+judge(Court, Voss).
+# T3 fixture: the judgment names one case and the current review binds that
+# exact case, person, Court, custody authority, window, and renewal.
+cite(Court, Case_Voss, Voss).
+observe(Chronicle, Case_Voss, Voss, CaseScope).
+observe(TemporalReview, Case_Voss, Voss, CaseScope).
+observe(Chronicle, Case_Voss, Court, HolderScope).
+observe(TemporalReview, Case_Voss, Court, HolderScope).
+observe(Chronicle, Case_Voss, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Voss, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Voss, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Voss, Ivo, InjuryVictimScope).
+authorized(Case_Voss, ActiveCustody, Case_Voss).
+observe(Chronicle, Case_Voss, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Voss, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Voss, Case_Voss, CaseBindingScope).
+observe(TemporalReview, Case_Voss, Case_Voss, CaseBindingScope).
+limit(Case_Voss, Case_Voss, Window_Custody).
+observe(Chronicle, Case_Voss, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Voss, Window_Custody, LimitScope).
+continue(Case_Voss, Epoch_Current).
+observe(Chronicle, Case_Voss, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Voss, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_Voss).
+endorses(TemporalReview, Case_Voss).
+
+? prisoner(Voss).
+# => TRUE
+
+judge(Appeals, Voss).
+
+? permits(Appeals, Voss).
+# => FALSE
+
+? prisoner(Voss).
+# => TRUE

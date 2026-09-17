@@ -53,16 +53,6 @@ needed.
 
 ### Phase A — the heart and the order
 
-5. **Write the heart chapter — *The Child With Nobody* — as chapter 1.**
-   Insert at 01 (manifest edit → `plan` → `apply` shifts the fourteen by one;
-   map `2026-09-16-heart.json`; the tool moves files and rewrites references,
-   and the opening note's per-part contents bullets are then reordered by hand —
-   `opening_note_navigation_matches_the_manifest` reports until they are);
-   chapter prose (D3 shape) + paired pins file +
-   suites case listing the fixture + ledger rows + opening-note contents/
-   glossary/index/domain entries; `claim_discipline` and coverage green. *Done
-   when:* `check`; `cargo test`; `./verify.sh`; `reader-coverage.md`
-   regenerated; the chapter contains no digit and no predicate of state.
 6. **Open the book on the argument.** Opening note: the argument block (D4),
    `### The child and the prisoner` replacing "Why the prisoner appears so
    early", line 18 back-reference, `:172`; Book 2 named on the first page;

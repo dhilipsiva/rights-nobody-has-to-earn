@@ -102436,20 +102436,20 @@
         "99b7ac8addcd0acd913538388bce581542f9cc4f9b177a1313428e19deedee9f"
       ],
       "pin_group_refs": [
-        "book-1/01-what-counts-as-evidence.pins.nibli",
-        "book-1/02-public-answerability.pins.nibli",
-        "book-1/03-who-holds-the-pen.pins.nibli",
-        "book-1/04-the-shield.pins.nibli",
-        "book-1/05-voiding.pins.nibli",
-        "book-1/06-clawback.pins.nibli",
-        "book-1/07-a-prisoner-is-a-person.pins.nibli",
-        "book-1/08-what-you-are-owed.pins.nibli",
-        "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
-        "book-1/10-contribution.pins.nibli",
-        "book-1/11-where-people-are-put.pins.nibli",
-        "book-1/12-changing-the-rules.pins.nibli",
-        "book-1/13-the-one-thing-taken.pins.nibli",
-        "book-1/14-when-the-system-notices-it-broke.pins.nibli"
+        "book-1/02-what-counts-as-evidence.pins.nibli",
+        "book-1/03-public-answerability.pins.nibli",
+        "book-1/04-who-holds-the-pen.pins.nibli",
+        "book-1/05-the-shield.pins.nibli",
+        "book-1/06-voiding.pins.nibli",
+        "book-1/07-clawback.pins.nibli",
+        "book-1/08-a-prisoner-is-a-person.pins.nibli",
+        "book-1/09-what-you-are-owed.pins.nibli",
+        "book-1/10-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/11-contribution.pins.nibli",
+        "book-1/12-where-people-are-put.pins.nibli",
+        "book-1/13-changing-the-rules.pins.nibli",
+        "book-1/14-the-one-thing-taken.pins.nibli",
+        "book-1/15-when-the-system-notices-it-broke.pins.nibli"
       ],
       "counterfactual_refs": [
         "book-1/source/counterfactual/no-choose-boss.nibli",
@@ -102460,24 +102460,24 @@
         "book-1/source/counterfactual/unguarded-pen.nibli"
       ],
       "prose_refs": [
-        "book-1/01-what-counts-as-evidence.md",
-        "book-1/02-public-answerability.md",
-        "book-1/03-who-holds-the-pen.md",
-        "book-1/04-the-shield.md",
-        "book-1/05-voiding.md",
-        "book-1/06-clawback.md",
-        "book-1/07-a-prisoner-is-a-person.md",
-        "book-1/08-what-you-are-owed.md",
-        "book-1/09-the-vote-conviction-does-not-take.md",
-        "book-1/10-contribution.md",
-        "book-1/11-where-people-are-put.md",
-        "book-1/12-changing-the-rules.md",
-        "book-1/13-the-one-thing-taken.md",
-        "book-1/14-when-the-system-notices-it-broke.md",
-        "book-1/15-the-five-joints.md"
+        "book-1/02-what-counts-as-evidence.md",
+        "book-1/03-public-answerability.md",
+        "book-1/04-who-holds-the-pen.md",
+        "book-1/05-the-shield.md",
+        "book-1/06-voiding.md",
+        "book-1/07-clawback.md",
+        "book-1/08-a-prisoner-is-a-person.md",
+        "book-1/09-what-you-are-owed.md",
+        "book-1/10-the-vote-conviction-does-not-take.md",
+        "book-1/11-contribution.md",
+        "book-1/12-where-people-are-put.md",
+        "book-1/13-changing-the-rules.md",
+        "book-1/14-the-one-thing-taken.md",
+        "book-1/15-when-the-system-notices-it-broke.md",
+        "book-1/16-the-five-joints.md"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md"
+        "book-1/16-the-five-joints.md"
       ],
       "blocked_before_drafting": "Any changed or unassigned formal statement fails before generation; this historical kernel gains no new power or operational claim.",
       "source_refs": [
@@ -102767,22 +102767,22 @@
         "0806111fac1aa65b1dd671a9a574a521a6bb9fe97fdddce5c308db74570ed580"
       ],
       "pin_group_refs": [
-        "book-1/07-a-prisoner-is-a-person.pins.nibli",
-        "book-1/09-the-vote-conviction-does-not-take.pins.nibli",
-        "book-1/12-changing-the-rules.pins.nibli",
+        "book-1/08-a-prisoner-is-a-person.pins.nibli",
+        "book-1/10-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/13-changing-the-rules.pins.nibli",
         "book-1/source/rights-floor.pins.nibli"
       ],
       "counterfactual_refs": [
         "book-1/source/temporal-assurance-case.json"
       ],
       "prose_refs": [
-        "book-1/07-a-prisoner-is-a-person.md",
-        "book-1/09-the-vote-conviction-does-not-take.md",
-        "book-1/12-changing-the-rules.md",
+        "book-1/08-a-prisoner-is-a-person.md",
+        "book-1/10-the-vote-conviction-does-not-take.md",
+        "book-1/13-changing-the-rules.md",
         "book-1/source/temporal-assurance-case.md"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md"
+        "book-1/16-the-five-joints.md"
       ],
       "blocked_before_drafting": "The retained T3 path stays case, source, lease, and window bound; no other power may borrow its record.",
       "source_refs": [
@@ -103145,24 +103145,24 @@
         "book-1/00-opening-note.md::**The State and the constitutional bodies:** the older `State` entry owes the",
         "book-1/00-opening-note.md::**Democracy, government, and administration:** Chapters",
         "book-1/00-opening-note.md::**Locality, membership, mobility, migration, and external relations:**",
-        "book-1/01-what-counts-as-evidence.md::This is a real gap and it is stated here rather than buried, because it is",
-        "book-1/02-public-answerability.md::Do not read those older routes as the map of the federal government added later.",
-        "book-1/03-who-holds-the-pen.md::The later state-form rules close a different boundary without turning it into",
-        "book-1/09-the-vote-conviction-does-not-take.md::Here, conviction and custody take neither franchise nor candidacy.",
-        "book-1/09-the-vote-conviction-does-not-take.md::## The home custody does not move",
-        "book-1/09-the-vote-conviction-does-not-take.md::Esa can challenge the missing or disputed age evidence.",
-        "book-1/09-the-vote-conviction-does-not-take.md::## And the same silence as before",
-        "book-1/12-changing-the-rules.md::A society that cannot change its rules is not stable, it is brittle. This record",
-        "book-1/12-changing-the-rules.md::What the older route proposes is a trade.",
-        "book-1/12-changing-the-rules.md::## Why this is thinner than it looks",
-        "book-1/12-changing-the-rules.md::**Nothing happens when something receives the older law label.**",
+        "book-1/02-what-counts-as-evidence.md::This is a real gap and it is stated here rather than buried, because it is",
+        "book-1/03-public-answerability.md::Do not read those older routes as the map of the federal government added later.",
+        "book-1/04-who-holds-the-pen.md::The later state-form rules close a different boundary without turning it into",
+        "book-1/10-the-vote-conviction-does-not-take.md::Here, conviction and custody take neither franchise nor candidacy.",
+        "book-1/10-the-vote-conviction-does-not-take.md::## The home custody does not move",
+        "book-1/10-the-vote-conviction-does-not-take.md::Esa can challenge the missing or disputed age evidence.",
+        "book-1/10-the-vote-conviction-does-not-take.md::## And the same silence as before",
+        "book-1/13-changing-the-rules.md::A society that cannot change its rules is not stable, it is brittle. This record",
+        "book-1/13-changing-the-rules.md::What the older route proposes is a trade.",
+        "book-1/13-changing-the-rules.md::## Why this is thinner than it looks",
+        "book-1/13-changing-the-rules.md::**Nothing happens when something receives the older law label.**",
         "book-1/method.md::The state-form and political-membership family completes the existing"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::What does this design do about rotation? It now has a constitutional answer for",
-        "book-1/15-the-five-joints.md::does not evade the state, it *specifies* one. It now specifies more than a",
-        "book-1/15-the-five-joints.md::The binding layer is wider still. It names the tiers, bodies, holders,",
-        "book-1/15-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
+        "book-1/16-the-five-joints.md::What does this design do about rotation? It now has a constitutional answer for",
+        "book-1/16-the-five-joints.md::does not evade the state, it *specifies* one. It now specifies more than a",
+        "book-1/16-the-five-joints.md::The binding layer is wider still. It names the tiers, bodies, holders,",
+        "book-1/16-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
       ],
       "blocked_before_drafting": "Coverage, formal rules, executable tests, counterfactuals, and approved SF-B1-v1 prose are complete; these remain supplied-record constitutional declarations and authority only, and establish no authentication, operation, staffing, election, delivery, feasibility, liveness, calibration, outside time, or institutional action.",
       "source_refs": [
@@ -104050,25 +104050,25 @@
       "prose_refs": [
         "book-1/00-opening-note.md::- **Work, property, enterprise, exchange, money, credit, debt, and public",
         "book-1/00-opening-note.md::- **Friendship, leisure, mutual aid, associations, and the residual free social",
-        "book-1/01-what-counts-as-evidence.md::The economic rules do not reopen that file. Raw income, wealth, tax,",
-        "book-1/02-public-answerability.md::The economic rules add no third route into this chapter's permanent",
-        "book-1/04-the-shield.md::takes no wage, property, pension, or floor right.",
-        "book-1/06-clawback.md::When someone's credibility is voided, their recognition stops following from",
-        "book-1/08-what-you-are-owed.md::A public function cannot shed its duties by being contracted out, insured,",
-        "book-1/08-what-you-are-owed.md::The public responsibility to finance, secure, and maintain the floor remains",
-        "book-1/08-what-you-are-owed.md::The reverse boundary matters just as much. No household, relationship,",
-        "book-1/09-the-vote-conviction-does-not-take.md::An enterprise receives no ballot, candidacy, human standing, or extra political",
-        "book-1/10-contribution.md::The labour constitution is separate from that narrow recognition rule. Every",
-        "book-1/11-where-people-are-put.md::The economic constitution keeps another boundary beside that one. A dwelling",
-        "book-1/12-changing-the-rules.md::The economic constitution sits inside the same distinction. It entrenches no",
-        "book-1/13-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss. Conviction",
-        "book-1/14-when-the-system-notices-it-broke.md::Economic wrongs remain itemised in the same way. A wage denial, unsafe or",
+        "book-1/02-what-counts-as-evidence.md::The economic rules do not reopen that file. Raw income, wealth, tax,",
+        "book-1/03-public-answerability.md::The economic rules add no third route into this chapter's permanent",
+        "book-1/05-the-shield.md::takes no wage, property, pension, or floor right.",
+        "book-1/07-clawback.md::When someone's credibility is voided, their recognition stops following from",
+        "book-1/09-what-you-are-owed.md::A public function cannot shed its duties by being contracted out, insured,",
+        "book-1/09-what-you-are-owed.md::The public responsibility to finance, secure, and maintain the floor remains",
+        "book-1/09-what-you-are-owed.md::The reverse boundary matters just as much. No household, relationship,",
+        "book-1/10-the-vote-conviction-does-not-take.md::An enterprise receives no ballot, candidacy, human standing, or extra political",
+        "book-1/11-contribution.md::The labour constitution is separate from that narrow recognition rule. Every",
+        "book-1/12-where-people-are-put.md::The economic constitution keeps another boundary beside that one. A dwelling",
+        "book-1/13-changing-the-rules.md::The economic constitution sits inside the same distinction. It entrenches no",
+        "book-1/14-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss. Conviction",
+        "book-1/15-when-the-system-notices-it-broke.md::Economic wrongs remain itemised in the same way. A wage denial, unsafe or",
         "book-1/method.md::The economic, labour, property, and fiscal family follows the same discipline"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::### Work, property, and private power",
-        "book-1/15-the-five-joints.md::Taxation across the system must reflect capacity to contribute. Democratic law",
-        "book-1/15-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
+        "book-1/16-the-five-joints.md::### Work, property, and private power",
+        "book-1/16-the-five-joints.md::Taxation across the system must reflect capacity to contribute. Democratic law",
+        "book-1/16-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
       ],
       "blocked_before_drafting": "All 28 economic power cards, their typed duties, exact current and temporal records, reviewed results, holders, executable tests, counterfactuals, and approved Book 1 prose are complete. They establish only source-bound legal effects over supplied records; no operation, calculation, delivery, remedy, institutional act, liveness, calibration, external truth, or feasibility is proved.",
       "source_refs": [
@@ -104354,12 +104354,12 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::At first contact, the record may use a temporary encounter name",
-        "book-1/01-what-counts-as-evidence.md::The name used at first contact may be temporary.",
-        "book-1/07-a-prisoner-is-a-person.md::Standing no longer waits for someone to maintain a roster.",
+        "book-1/02-what-counts-as-evidence.md::The name used at first contact may be temporary.",
+        "book-1/08-a-prisoner-is-a-person.md::Standing no longer waits for someone to maintain a roster.",
         "book-1/method.md::Those lines still need a person. Four new roots now supply that standing"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::Standing attaches before identity reconciliation."
+        "book-1/16-the-five-joints.md::Standing attaches before identity reconciliation."
       ],
       "blocked_before_drafting": "Coverage, formal rules, tests, and declared prose are complete; this remains a supplied-record constitutional claim and does not establish operation or delivery.",
       "source_refs": [
@@ -104454,11 +104454,11 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::constitutional barriers over supplied records, not measurements",
-        "book-1/08-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable.",
+        "book-1/09-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable.",
         "book-1/method.md::The liberty-and-ecology family is the first new family carried through that"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::The environmental right follows the same separation. A person living now has a"
+        "book-1/16-the-five-joints.md::The environmental right follows the same separation. A person living now has a"
       ],
       "blocked_before_drafting": "Claim-bearing prose is landed for this family; later animal, operational, measurement, delivery, restoration, feasibility, liveness, and calibration work remains separately gated.",
       "source_refs": [
@@ -104602,11 +104602,11 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::Substantive equality and anti-subordination:",
-        "book-1/08-what-you-are-owed.md::Equality is separate again.",
+        "book-1/09-what-you-are-owed.md::Equality is separate again.",
         "book-1/method.md::The substantive-equality family follows the same gate"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::The constitutional answer now begins with anti-subordination:"
+        "book-1/16-the-five-joints.md::The constitutional answer now begins with anti-subordination:"
       ],
       "blocked_before_drafting": "The equality family is prose-landed after audit of the opening note, every numbered chapter, Part V, and method; operation, population facts, data systems, programmes, institutional acts, completed remedies, and Book 2 delivery remain outside this coverage state.",
       "source_refs": [
@@ -104877,20 +104877,20 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::- **Personhood and life course:** Chapters",
-        "book-1/01-what-counts-as-evidence.md::The family and life-course entries no longer carry that second kind of power.",
-        "book-1/03-who-holds-the-pen.md::But an absent kinship entry never proved",
-        "book-1/05-voiding.md::A generic independence label, a finding about another case, or the absence of parent,",
-        "book-1/06-clawback.md::The broader family and life-course rule now says why this boundary must survive:",
-        "book-1/08-what-you-are-owed.md::**Care is not a family invoice.**",
-        "book-1/09-the-vote-conviction-does-not-take.md::The law beneath that evidence is stronger than an",
-        "book-1/10-contribution.md::Caregiver and dependant remain separate rights-holders",
-        "book-1/11-where-people-are-put.md::The old unary family entry remains in the cast, but it does no placement work.",
-        "book-1/13-the-one-thing-taken.md::Family status is not a placement input.",
-        "book-1/14-when-the-system-notices-it-broke.md::The adulthood case needs its own boundary. General adulthood attaches",
+        "book-1/02-what-counts-as-evidence.md::The family and life-course entries no longer carry that second kind of power.",
+        "book-1/04-who-holds-the-pen.md::But an absent kinship entry never proved",
+        "book-1/06-voiding.md::A generic independence label, a finding about another case, or the absence of parent,",
+        "book-1/07-clawback.md::The broader family and life-course rule now says why this boundary must survive:",
+        "book-1/09-what-you-are-owed.md::**Care is not a family invoice.**",
+        "book-1/10-the-vote-conviction-does-not-take.md::The law beneath that evidence is stronger than an",
+        "book-1/11-contribution.md::Caregiver and dependant remain separate rights-holders",
+        "book-1/12-where-people-are-put.md::The old unary family entry remains in the cast, but it does no placement work.",
+        "book-1/14-the-one-thing-taken.md::Family status is not a placement input.",
+        "book-1/15-when-the-system-notices-it-broke.md::The adulthood case needs its own boundary. General adulthood attaches",
         "book-1/method.md::The bodily-autonomy, health, care, family, and life-course family is the"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::Family status is not a constitutional shortcut."
+        "book-1/16-the-five-joints.md::Family status is not a constitutional shortcut."
       ],
       "blocked_before_drafting": "The bodily-autonomy, health, care, family, and life-course family is prose-landed after audit of the opening note, affected numbered chapters, Part V, and method; operation, delivery, age calibration, service routes, institutions, completed remedies, and Book 2 implementation remain outside this coverage state.",
       "source_refs": [
@@ -104937,18 +104937,18 @@
         "book-1/source/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route"
       ],
       "prose_refs": [
-        "book-1/08-what-you-are-owed.md::Ask whether Bela eats in the record supplied with this book.",
-        "book-1/08-what-you-are-owed.md::The debt says what it is about, and arrival is a separate conclusion.",
-        "book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated.",
-        "book-1/13-the-one-thing-taken.md::As a direct legal punishment, conviction takes movement and nothing else.",
-        "book-1/13-the-one-thing-taken.md::Leaving custody returns a person to a supplied record with no non-carceral receipt.",
-        "book-1/14-when-the-system-notices-it-broke.md::At first that looks like an alarm screaming. It is not, quite.",
-        "book-1/14-when-the-system-notices-it-broke.md::The delivery routes join that architecture at the arrival end without inventing the",
+        "book-1/09-what-you-are-owed.md::Ask whether Bela eats in the record supplied with this book.",
+        "book-1/09-what-you-are-owed.md::The debt says what it is about, and arrival is a separate conclusion.",
+        "book-1/09-what-you-are-owed.md::The lifecycle is specified, but it is not operated.",
+        "book-1/14-the-one-thing-taken.md::As a direct legal punishment, conviction takes movement and nothing else.",
+        "book-1/14-the-one-thing-taken.md::Leaving custody returns a person to a supplied record with no non-carceral receipt.",
+        "book-1/15-when-the-system-notices-it-broke.md::At first that looks like an alarm screaming. It is not, quite.",
+        "book-1/15-when-the-system-notices-it-broke.md::The delivery routes join that architecture at the arrival end without inventing the",
         "book-1/method.md::One of the sweeps deserves its own paragraph, because it polices me.",
         "book-1/method.md::The delivery-and-receipt family adds one recipient-side evidence relation,"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::The answer is the book's oldest honesty, sharpened."
+        "book-1/16-the-five-joints.md::The answer is the book's oldest honesty, sharpened."
       ],
       "blocked_before_drafting": "Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows.",
       "source_refs": [
@@ -105078,14 +105078,14 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::now distinguish public responsibility to respect a right, protect it against",
-        "book-1/02-public-answerability.md::the Appeals duty now reaches a named action route with a separately established",
-        "book-1/08-what-you-are-owed.md::Public responsibility around it takes distinct forms.",
-        "book-1/14-when-the-system-notices-it-broke.md::The chain no longer ends there. For the kinds named here, the duty reaches an",
+        "book-1/03-public-answerability.md::the Appeals duty now reaches a named action route with a separately established",
+        "book-1/09-what-you-are-owed.md::Public responsibility around it takes distinct forms.",
+        "book-1/15-when-the-system-notices-it-broke.md::The chain no longer ends there. For the kinds named here, the duty reaches an",
         "book-1/method.md::The non-reciprocal-obligations family is a completed cross-cutting family."
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::The duties are no longer undifferentiated. Public responsibility is",
-        "book-1/15-the-five-joints.md::Nor can a duty become the price of a right. Duties to a person, to a"
+        "book-1/16-the-five-joints.md::The duties are no longer undifferentiated. Public responsibility is",
+        "book-1/16-the-five-joints.md::Nor can a duty become the price of a right. Duties to a person, to a"
       ],
       "blocked_before_drafting": "Coverage, formal rules, executable pins, three counterfactuals, and the byte-exact OBL-B1-v1 prose are complete. They establish only source-bound legal effects over supplied records; no real receipt, action, delivery, remedy, recurrence control, or institutional liveness is proved.",
       "source_refs": [
@@ -105417,25 +105417,25 @@
       "prose_refs": [
         "book-1/00-opening-note.md::- **Work, property, enterprise, exchange, money, credit, debt, and public",
         "book-1/00-opening-note.md::- **Friendship, leisure, mutual aid, associations, and the residual free social",
-        "book-1/01-what-counts-as-evidence.md::The economic rules do not reopen that file. Raw income, wealth, tax,",
-        "book-1/02-public-answerability.md::The economic rules add no third route into this chapter's permanent",
-        "book-1/04-the-shield.md::takes no wage, property, pension, or floor right.",
-        "book-1/06-clawback.md::When someone's credibility is voided, their recognition stops following from",
-        "book-1/08-what-you-are-owed.md::A public function cannot shed its duties by being contracted out, insured,",
-        "book-1/08-what-you-are-owed.md::The public responsibility to finance, secure, and maintain the floor remains",
-        "book-1/08-what-you-are-owed.md::The reverse boundary matters just as much. No household, relationship,",
-        "book-1/09-the-vote-conviction-does-not-take.md::An enterprise receives no ballot, candidacy, human standing, or extra political",
-        "book-1/10-contribution.md::The labour constitution is separate from that narrow recognition rule. Every",
-        "book-1/11-where-people-are-put.md::The economic constitution keeps another boundary beside that one. A dwelling",
-        "book-1/12-changing-the-rules.md::The economic constitution sits inside the same distinction. It entrenches no",
-        "book-1/13-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss. Conviction",
-        "book-1/14-when-the-system-notices-it-broke.md::Economic wrongs remain itemised in the same way. A wage denial, unsafe or",
+        "book-1/02-what-counts-as-evidence.md::The economic rules do not reopen that file. Raw income, wealth, tax,",
+        "book-1/03-public-answerability.md::The economic rules add no third route into this chapter's permanent",
+        "book-1/05-the-shield.md::takes no wage, property, pension, or floor right.",
+        "book-1/07-clawback.md::When someone's credibility is voided, their recognition stops following from",
+        "book-1/09-what-you-are-owed.md::A public function cannot shed its duties by being contracted out, insured,",
+        "book-1/09-what-you-are-owed.md::The public responsibility to finance, secure, and maintain the floor remains",
+        "book-1/09-what-you-are-owed.md::The reverse boundary matters just as much. No household, relationship,",
+        "book-1/10-the-vote-conviction-does-not-take.md::An enterprise receives no ballot, candidacy, human standing, or extra political",
+        "book-1/11-contribution.md::The labour constitution is separate from that narrow recognition rule. Every",
+        "book-1/12-where-people-are-put.md::The economic constitution keeps another boundary beside that one. A dwelling",
+        "book-1/13-changing-the-rules.md::The economic constitution sits inside the same distinction. It entrenches no",
+        "book-1/14-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss. Conviction",
+        "book-1/15-when-the-system-notices-it-broke.md::Economic wrongs remain itemised in the same way. A wage denial, unsafe or",
         "book-1/method.md::The economic, labour, property, and fiscal family follows the same discipline"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::### Work, property, and private power",
-        "book-1/15-the-five-joints.md::Taxation across the system must reflect capacity to contribute. Democratic law",
-        "book-1/15-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
+        "book-1/16-the-five-joints.md::### Work, property, and private power",
+        "book-1/16-the-five-joints.md::Taxation across the system must reflect capacity to contribute. Democratic law",
+        "book-1/16-the-five-joints.md::**Survives, narrowed.** The floor is owed without an earned condition, and"
       ],
       "blocked_before_drafting": "All 145 person-held effects, their separately typed always-on duties, the three non-power carry result interfaces, executable tests, counterfactuals, and approved Book 1 prose are complete. They establish only source-bound legal effects over supplied records; no operation, calculation, delivery, remedy, institutional act, liveness, calibration, external truth, or feasibility is proved.",
       "source_refs": [
@@ -105484,14 +105484,14 @@
         "book-1/source/counterfactual/unguarded-contribution-reader.pins.nibli::# Counterfactual: a hostile reader of the contribution record added"
       ],
       "prose_refs": [
-        "book-1/01-what-counts-as-evidence.md::A contribution record is the one purpose-bound entry,",
-        "book-1/08-what-you-are-owed.md::Above the floor, the record can hold a contribution history, and a supplement",
-        "book-1/10-contribution.md::A contribution history is a different thing, and the design keeps it different.",
+        "book-1/02-what-counts-as-evidence.md::A contribution record is the one purpose-bound entry,",
+        "book-1/09-what-you-are-owed.md::Above the floor, the record can hold a contribution history, and a supplement",
+        "book-1/11-contribution.md::A contribution history is a different thing, and the design keeps it different.",
         "book-1/method.md::The income-security family adds one writable relation, `pay`, and one",
         "book-1/00-opening-note.md::- **Contribution record:** an entry that someone paid into a named scheme. It"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::The contribution-based supplement above the floor is now an executable interface"
+        "book-1/16-the-five-joints.md::The contribution-based supplement above the floor is now an executable interface"
       ],
       "blocked_before_drafting": "Coverage, four formal statements, the executable pin suite, three counterfactuals, and the session-drafted, author-approved (2026-09-05) prose are complete. The family ships dormant in the supplied cast and establishes only bounded consequences from supplied records; no contribution, adjudication, solvency, funding, amount, payment, arrival, or operation follows.",
       "source_refs": [
@@ -105534,14 +105534,14 @@
         "book-1/source/counterfactual/unguarded-compensation-reader.pins.nibli::# Counterfactual: a hostile reader of the compensation record added"
       ],
       "prose_refs": [
-        "book-1/01-what-counts-as-evidence.md::Someone promised a payment of a named kind to someone.",
-        "book-1/08-what-you-are-owed.md::Compensation above the floor \u2014 a wage, a profit, a return, a grant, a prize, a",
-        "book-1/10-contribution.md::A certificate is not recognition either, and neither is a wage.",
+        "book-1/02-what-counts-as-evidence.md::Someone promised a payment of a named kind to someone.",
+        "book-1/09-what-you-are-owed.md::Compensation above the floor \u2014 a wage, a profit, a return, a grant, a prize, a",
+        "book-1/11-contribution.md::A certificate is not recognition either, and neither is a wage.",
         "book-1/method.md::The qualifications-and-compensation family adds one writable relation,",
         "book-1/00-opening-note.md::- **Certificate:** the conclusion that an authorised body attested a function"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::Certificates and compensation are now executable interfaces as well."
+        "book-1/16-the-five-joints.md::Certificates and compensation are now executable interfaces as well."
       ],
       "blocked_before_drafting": "Coverage, six formal statements, the executable pin suite, three counterfactuals, and the session-drafted, author-approved (2026-09-05) prose are complete. The family ships dormant in the supplied cast and establishes only bounded consequences from supplied records; no competence, adequacy, payment, repayment, or operation follows.",
       "source_refs": [
@@ -105599,13 +105599,13 @@
         "book-1/source/counterfactual/unnamed-public-scale-trigger.pins.nibli::# Counterfactual: a sixteenth vocabulary rule admitting a revenue threshold as a ground"
       ],
       "prose_refs": [
-        "book-1/08-what-you-are-owed.md::The power to bind concentrated private power is not open-ended either, and this",
-        "book-1/14-when-the-system-notices-it-broke.md::There is a second shape of the same limit, and the finding that binds concentrated",
+        "book-1/09-what-you-are-owed.md::The power to bind concentrated private power is not open-ended either, and this",
+        "book-1/15-when-the-system-notices-it-broke.md::There is a second shape of the same limit, and the finding that binds concentrated",
         "book-1/method.md::The public-scale vocabulary family adds one conclusion-only head, `member`, and a",
         "book-1/00-opening-note.md::- **Public-scale finding:** the conclusion that a named private function carries"
       ],
       "part_v_refs": [
-        "book-1/15-the-five-joints.md::The finding that binds concentrated private power now has to name its ground,"
+        "book-1/16-the-five-joints.md::The finding that binds concentrated private power now has to name its ground,"
       ],
       "blocked_before_drafting": "Coverage, the enacted vocabulary statements, the executable pin suite, four counterfactuals, the repository producer-set guard, and the session-drafted, author-approved (2026-09-06) prose are complete. The family establishes only which ratified ground a supplied finding claims; no ground, reach, operation, or external truth follows.",
       "source_refs": [
@@ -110477,7 +110477,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/06-clawback.pins.nibli::somebody rebuilt the student clawback"
+        "reintroduction_control_ref": "book-1/07-clawback.pins.nibli::somebody rebuilt the student clawback"
       }
     },
     {
@@ -110541,7 +110541,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/11-where-people-are-put.pins.nibli::alarm that does not work"
+        "reintroduction_control_ref": "book-1/12-where-people-are-put.pins.nibli::alarm that does not work"
       }
     },
     {
@@ -110608,7 +110608,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/12-changing-the-rules.pins.nibli::false(Jala)"
+        "reintroduction_control_ref": "book-1/13-changing-the-rules.pins.nibli::false(Jala)"
       }
     },
     {
@@ -110674,7 +110674,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/05-voiding.pins.nibli::reported as forgery"
+        "reintroduction_control_ref": "book-1/06-voiding.pins.nibli::reported as forgery"
       }
     },
     {
@@ -110739,7 +110739,7 @@
       "residual_citations": [],
       "controls": {
         "containment_control_refs": [
-          "book-1/01-what-counts-as-evidence.md::A missing required carry no longer erases both the protection and the evidence",
+          "book-1/02-what-counts-as-evidence.md::A missing required carry no longer erases both the protection and the evidence",
           "book-1/source/temporal-assurance-case.md::ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED."
         ]
       }
@@ -110879,7 +110879,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/05-voiding.md::Koa recorded a finding about Esa"
+        "reintroduction_control_ref": "book-1/06-voiding.md::Koa recorded a finding about Esa"
       }
     },
     {
@@ -111432,7 +111432,7 @@
       "controls": {
         "containment_control_refs": [
           "book-1/source/temporal-assurance-case.md::ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED.",
-          "book-1/14-when-the-system-notices-it-broke.pins.nibli::The placement-marker defect RESOLVED 2026-08-02"
+          "book-1/15-when-the-system-notices-it-broke.pins.nibli::The placement-marker defect RESOLVED 2026-08-02"
         ]
       }
     },
@@ -111959,8 +111959,8 @@
       "why_it_failed": "The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.",
       "response_change": "The student clawback rule was deleted outright from Article 4; the wrongdoer rule survives.",
       "now_follows": "lose(Points, Cira) is FALSE and the surviving rule reaches only the adjudicated wrongdoer.",
-      "proof_ref": "book-1/06-clawback.pins.nibli::THE CIRA DEFECT IS RESOLVED",
-      "negative_control_ref": "book-1/06-clawback.pins.nibli::somebody rebuilt the student clawback",
+      "proof_ref": "book-1/07-clawback.pins.nibli::THE CIRA DEFECT IS RESOLVED",
+      "negative_control_ref": "book-1/07-clawback.pins.nibli::somebody rebuilt the student clawback",
       "still_does_not_follow": "Nothing reads a loss, nothing restores one, and no lifecycle exists for it \u2014 the leaf stays a leaf.",
       "residuals": [
         "FS-DFT-04"
@@ -111970,7 +111970,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/06-clawback.md::It is resolved \u2014 the resolution was a deletion"
+      "reader_mapping_ref": "book-1/07-clawback.md::It is resolved \u2014 the resolution was a deletion"
     },
     {
       "id": "FS-RCP-02",
@@ -111990,7 +111990,7 @@
       "why_it_failed": "err/2 read the eligibility combination instead of a reported placement.",
       "response_change": "The alarm was re-keyed onto the reported placement act put/3.",
       "now_follows": "Only a reported ineligible home placement trips the marker, and the repair is held as plain FALSE pins.",
-      "proof_ref": "book-1/11-where-people-are-put.pins.nibli::alarm that does not work",
+      "proof_ref": "book-1/12-where-people-are-put.pins.nibli::alarm that does not work",
       "negative_control_ref": "book-1/source/rights-floor.pins.nibli::RESOLVED DEFECT, kept as the exhibit it was",
       "still_does_not_follow": "The alarm watches half the space, the conclusion drops the author, and the delivery gap is exactly as wide as before.",
       "residuals": [
@@ -112001,7 +112001,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/11-where-people-are-put.md::The repair is to give the record that entry"
+      "reader_mapping_ref": "book-1/12-where-people-are-put.md::The repair is to give the record that entry"
     },
     {
       "id": "FS-RCP-03",
@@ -112021,8 +112021,8 @@
       "why_it_failed": "The voiding rule read the protected-item touch without any docket precondition.",
       "response_change": "A docket-precondition conjunct was added, so the void reaches exactly the docketed.",
       "now_follows": "false(Jala) is FALSE and lose(Points, Jala) is FALSE while the docket holds no entry naming Jala.",
-      "proof_ref": "book-1/12-changing-the-rules.pins.nibli::false(Jala)",
-      "negative_control_ref": "book-1/12-changing-the-rules.pins.nibli::suggest(Assembly, Amend_Sneak).",
+      "proof_ref": "book-1/13-changing-the-rules.pins.nibli::false(Jala)",
+      "negative_control_ref": "book-1/13-changing-the-rules.pins.nibli::suggest(Assembly, Amend_Sneak).",
       "still_does_not_follow": "The deciding check is an absence whose completeness is external, and if an assembly ever dockets a person the void arrives through the front door.",
       "residuals": [
         "FS-DFT-08"
@@ -112032,7 +112032,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/12-changing-the-rules.md::The repair is small, which is the lesson"
+      "reader_mapping_ref": "book-1/13-changing-the-rules.md::The repair is small, which is the lesson"
     },
     {
       "id": "FS-RCP-04",
@@ -112052,8 +112052,8 @@
       "why_it_failed": "The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.",
       "response_change": "The examiner rule gained the voiding guard, the same shape as the other doors.",
       "now_follows": "A voided person examines and the mint refuses; the clawback registers on the forced probe.",
-      "proof_ref": "book-1/05-voiding.pins.nibli::reported as forgery",
-      "negative_control_ref": "book-1/10-contribution.md::That contradiction was closed by making the examination",
+      "proof_ref": "book-1/06-voiding.pins.nibli::reported as forgery",
+      "negative_control_ref": "book-1/11-contribution.md::That contradiction was closed by making the examination",
       "still_does_not_follow": "A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.",
       "residuals": [
         "FS-DFT-10"
@@ -112063,7 +112063,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/05-voiding.md::Those are real repairs to the attacks this chapter used to disclose"
+      "reader_mapping_ref": "book-1/06-voiding.md::Those are real repairs to the attacks this chapter used to disclose"
     },
     {
       "id": "FS-RCP-05",
@@ -112083,8 +112083,8 @@
       "why_it_failed": "The prose asserted acts the record never held, and no pin guarded the mismatch.",
       "response_change": "The passage was corrected to the record and both false clauses are now pinned FALSE in the chapter's suite.",
       "now_follows": "The prose and the record agree, and the count isolation lives in a pin-file fixture that cannot void alone.",
-      "proof_ref": "book-1/05-voiding.pins.nibli::? judge(Koa, Esa).",
-      "negative_control_ref": "book-1/05-voiding.pins.nibli::? capture(Koa, Esa).",
+      "proof_ref": "book-1/06-voiding.pins.nibli::? judge(Koa, Esa).",
+      "negative_control_ref": "book-1/06-voiding.pins.nibli::? capture(Koa, Esa).",
       "still_does_not_follow": "The record still buys an author for the why and not its truth, and the void's own grounds stay deliberately unasked.",
       "residuals": [
         "none beyond the affected claim's own scope bound \u2014 the family has no residual sibling row"
@@ -112094,7 +112094,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/05-voiding.md::Koa recorded a finding about Esa"
+      "reader_mapping_ref": "book-1/06-voiding.md::Koa recorded a finding about Esa"
     },
     {
       "id": "FS-RCP-06",
@@ -112126,7 +112126,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated."
+      "reader_mapping_ref": "book-1/09-what-you-are-owed.md::The lifecycle is specified, but it is not operated."
     }
   ],
   "proposals": [],

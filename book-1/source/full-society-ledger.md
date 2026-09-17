@@ -3540,10 +3540,10 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Why it failed: The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.
 - The response: The student clawback rule was deleted outright from Article 4; the wrongdoer rule survives.
 - What now follows: lose(Points, Cira) is FALSE and the surviving rule reaches only the adjudicated wrongdoer.
-- Proof: `book-1/06-clawback.pins.nibli::THE CIRA DEFECT IS RESOLVED`; negative control: `book-1/06-clawback.pins.nibli::somebody rebuilt the student clawback`
+- Proof: `book-1/07-clawback.pins.nibli::THE CIRA DEFECT IS RESOLVED`; negative control: `book-1/07-clawback.pins.nibli::somebody rebuilt the student clawback`
 - What still does not follow: Nothing reads a loss, nothing restores one, and no lifecycle exists for it — the leaf stays a leaf.
 - Residuals: FS-DFT-04
-- Reader mapping: `book-1/06-clawback.md::It is resolved — the resolution was a deletion`; admissible evidence: executable pins over the current source
+- Reader mapping: `book-1/07-clawback.md::It is resolved — the resolution was a deletion`; admissible evidence: executable pins over the current source
 
 ### FS-RCP-02 — The placement alarm is keyed on the placement act
 
@@ -3553,10 +3553,10 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Why it failed: err/2 read the eligibility combination instead of a reported placement.
 - The response: The alarm was re-keyed onto the reported placement act put/3.
 - What now follows: Only a reported ineligible home placement trips the marker, and the repair is held as plain FALSE pins.
-- Proof: `book-1/11-where-people-are-put.pins.nibli::alarm that does not work`; negative control: `book-1/source/rights-floor.pins.nibli::RESOLVED DEFECT, kept as the exhibit it was`
+- Proof: `book-1/12-where-people-are-put.pins.nibli::alarm that does not work`; negative control: `book-1/source/rights-floor.pins.nibli::RESOLVED DEFECT, kept as the exhibit it was`
 - What still does not follow: The alarm watches half the space, the conclusion drops the author, and the delivery gap is exactly as wide as before.
 - Residuals: FS-DFT-06
-- Reader mapping: `book-1/11-where-people-are-put.md::The repair is to give the record that entry`; admissible evidence: executable pins over the current source
+- Reader mapping: `book-1/12-where-people-are-put.md::The repair is to give the record that entry`; admissible evidence: executable pins over the current source
 
 ### FS-RCP-03 — The void now requires a docket entry naming the person
 
@@ -3566,10 +3566,10 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Why it failed: The voiding rule read the protected-item touch without any docket precondition.
 - The response: A docket-precondition conjunct was added, so the void reaches exactly the docketed.
 - What now follows: false(Jala) is FALSE and lose(Points, Jala) is FALSE while the docket holds no entry naming Jala.
-- Proof: `book-1/12-changing-the-rules.pins.nibli::false(Jala)`; negative control: `book-1/12-changing-the-rules.pins.nibli::suggest(Assembly, Amend_Sneak).`
+- Proof: `book-1/13-changing-the-rules.pins.nibli::false(Jala)`; negative control: `book-1/13-changing-the-rules.pins.nibli::suggest(Assembly, Amend_Sneak).`
 - What still does not follow: The deciding check is an absence whose completeness is external, and if an assembly ever dockets a person the void arrives through the front door.
 - Residuals: FS-DFT-08
-- Reader mapping: `book-1/12-changing-the-rules.md::The repair is small, which is the lesson`; admissible evidence: executable pins over the current source
+- Reader mapping: `book-1/13-changing-the-rules.md::The repair is small, which is the lesson`; admissible evidence: executable pins over the current source
 
 ### FS-RCP-04 — The third door closes on voiding, enacted not disclosed
 
@@ -3579,10 +3579,10 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
 - The response: The examiner rule gained the voiding guard, the same shape as the other doors.
 - What now follows: A voided person examines and the mint refuses; the clawback registers on the forced probe.
-- Proof: `book-1/05-voiding.pins.nibli::reported as forgery`; negative control: `book-1/10-contribution.md::That contradiction was closed by making the examination`
+- Proof: `book-1/06-voiding.pins.nibli::reported as forgery`; negative control: `book-1/11-contribution.md::That contradiction was closed by making the examination`
 - What still does not follow: A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.
 - Residuals: FS-DFT-10
-- Reader mapping: `book-1/05-voiding.md::Those are real repairs to the attacks this chapter used to disclose`; admissible evidence: executable pins over the current source
+- Reader mapping: `book-1/06-voiding.md::Those are real repairs to the attacks this chapter used to disclose`; admissible evidence: executable pins over the current source
 
 ### FS-RCP-05 — The Esa passage tells the truth about Koa
 
@@ -3592,10 +3592,10 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Why it failed: The prose asserted acts the record never held, and no pin guarded the mismatch.
 - The response: The passage was corrected to the record and both false clauses are now pinned FALSE in the chapter's suite.
 - What now follows: The prose and the record agree, and the count isolation lives in a pin-file fixture that cannot void alone.
-- Proof: `book-1/05-voiding.pins.nibli::? judge(Koa, Esa).`; negative control: `book-1/05-voiding.pins.nibli::? capture(Koa, Esa).`
+- Proof: `book-1/06-voiding.pins.nibli::? judge(Koa, Esa).`; negative control: `book-1/06-voiding.pins.nibli::? capture(Koa, Esa).`
 - What still does not follow: The record still buys an author for the why and not its truth, and the void's own grounds stay deliberately unasked.
 - Residuals: none beyond the affected claim's own scope bound — the family has no residual sibling row
-- Reader mapping: `book-1/05-voiding.md::Koa recorded a finding about Esa`; admissible evidence: executable pins over the current source
+- Reader mapping: `book-1/06-voiding.md::Koa recorded a finding about Esa`; admissible evidence: executable pins over the current source
 
 ### FS-RCP-06 — The recipient-side delivery interface is executable without asserting arrival
 
@@ -3608,7 +3608,7 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Proof: `book-1/source/delivery-receipt.pins.nibli::# FS-CCE-190 counterfactual: with the arrival record and an independent`; negative control: `book-1/source/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route`
 - What still does not follow: No service offer, accessibility, adequacy, writer authentication, actual-world arrival, performed continuity, completed remedy, recurrence monitoring, future non-recurrence, or institutional liveness follows.
 - Residuals: FS-DFT-17; FS-DFT-18
-- Reader mapping: `book-1/08-what-you-are-owed.md::The lifecycle is specified, but it is not operated.`; admissible evidence: the unchanged delivery statements, 28 executable family pins, provider-independence counterfactual, and approved DLV-B1-v1 prose over the current source
+- Reader mapping: `book-1/09-what-you-are-owed.md::The lifecycle is specified, but it is not operated.`; admissible evidence: the unchanged delivery statements, 28 executable family pins, provider-independence counterfactual, and approved DLV-B1-v1 prose over the current source
 
 ## Repository scope audit and optional external review
 

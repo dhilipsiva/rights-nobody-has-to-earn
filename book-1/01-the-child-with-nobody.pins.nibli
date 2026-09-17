@@ -1,0 +1,192 @@
+# ── Chapter 1 fidelity pins: "The Child With Nobody" ─────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/01-the-child-with-nobody.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# Nell is introduced BY FIXTURE, never by the constitution's cast:
+# tests/pins/records/child_with_nobody/fixture.nibli holds exactly `born(Nell).`
+# and this chapter's case in tests/pins/suites.json lists it. A cast entry would
+# put Nell into every roster query in every case; the chapter needs a record
+# that holds nothing else. Ori is queried and never written.
+#
+# The chapter stands first because its positive derivations rest on the birth
+# entry, the universal-standing rule that reads it, and the rules whose whole
+# body is personhood. Everything that reads custody, adulthood evidence or the
+# two-witness delivery machinery is kept out and lands in later chapters'
+# "The child with nobody" sections.
+#
+# Supporting cases, run in their own contexts:
+#   tests/pins/records/child_with_nobody/expect.pins.nibli
+#       the whole constitution against the one-entry record (every barrier)
+#   book-1/source/counterfactual/no-birth-standing.pins.nibli
+#       the birth rule deleted: nothing owed, nothing barred, no alarm
+#   tests/pins/records/child_with_nobody/undelivered.pins.nibli
+#       the refused delivery marker fires on Nell and never on Ori
+#   tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli
+#       the immediate care-continuity duty completes with no family role
+#   tests/pins/delivery/received-outside-custody/expect.pins.nibli
+#       the mirror: a receipt plus an independent witness derives the floor
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it. Every FALSE about Nell below
+# flips on one written line; every FALSE about Ori flips on a birth or an
+# encounter.
+
+:expect-pins 48
+
+# "The record supplied for this chapter says one thing about Nell"
+? born(Nell).
+# => TRUE
+
+# "So Nell is a person — not provisionally, not pending anything"
+? person(Nell).
+# => TRUE
+
+# "Does the record hold a family for Nell? No. A home? No. Is Nell confined? No."
+# Each flips on a single written entry.
+? family(Nell).
+# => FALSE
+
+? home(Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
+
+# "Everything owed" — enumerated, not sampled.
+? owe(State, Eats, Nell).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+? owe(State, Healthy, Nell).
+# => TRUE
+
+? owe(State, Learn, Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+? owe(State, Believe, Nell).
+# => TRUE
+
+? owe(State, Meets, Nell).
+# => TRUE
+
+? entitled(Nell, event { eats() }).
+# => TRUE
+
+? entitled(Nell, event { dwell() }).
+# => TRUE
+
+? entitled(Nell, event { healthy() }).
+# => TRUE
+
+? entitled(Nell, event { learn() }).
+# => TRUE
+
+? entitled(Nell, event { secure() }).
+# => TRUE
+
+? entitled(Nell, event { expresses() }).
+# => TRUE
+
+? entitled(Nell, event { believe() }).
+# => TRUE
+
+? entitled(Nell, event { meets() }).
+# => TRUE
+
+# "No one is presumed to provide" — personhood alone puts every one of these
+# in place.
+? prevents(Nell, PublicFirstCareContinuity).
+# => TRUE
+
+? prevents(Nell, KinshipNoPersonalCareDebt).
+# => TRUE
+
+? prevents(Nell, DependantIndependentRights).
+# => TRUE
+
+? prevents(Nell, ChildIndependentRights).
+# => TRUE
+
+? prevents(Nell, ChildAccessibleInformationHelp).
+# => TRUE
+
+? prevents(Nell, ChildVoiceNoAgeFloor).
+# => TRUE
+
+? prevents(Nell, ChildSeparationLastResort).
+# => TRUE
+
+? prevents(Nell, SupportBeforeRemoval).
+# => TRUE
+
+? prevents(Nell, MissingKinshipNoIndependence).
+# => TRUE
+
+? prevents(Nell, FamilyStatusNoConfinement).
+# => TRUE
+
+? prevents(Nell, HouseholdNonprescription).
+# => TRUE
+
+? prevents(Nell, StatusNoHarmPresumption).
+# => TRUE
+
+? prevents(Nell, CareStatusNondelivery).
+# => TRUE
+
+? prevents(Nell, Book2LifeCourseBoundary).
+# => TRUE
+
+# "The word *vulnerable* is not merely absent from Nell's record. It is not a
+# word the record can hold at all" — refused before it can load.
+:refuse syntax /unknown predicate "vulnerable"/
+vulnerable(Nell).
+
+# "What does not follow" — no confinement, no receipt, no witness, no teacher.
+? eats(Nell).
+# => FALSE
+
+? dwell(Nell).
+# => FALSE
+
+? healthy(Nell).
+# => FALSE
+
+? secure(Nell).
+# => FALSE
+
+? meets(Nell).
+# => FALSE
+
+? learn(Nell).
+# => FALSE
+
+? expresses(Nell).
+# => FALSE
+
+? believe(Nell).
+# => FALSE
+
+# "Nell has one entry. Ori has none."
+? person(Ori).
+# => FALSE
+
+? owe(State, Eats, Ori).
+# => FALSE
+
+? entitled(Ori, event { eats() }).
+# => FALSE
+
+? prevents(Ori, PublicFirstCareContinuity).
+# => FALSE

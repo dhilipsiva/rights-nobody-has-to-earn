@@ -3,7 +3,7 @@
 # Knowledge and the free field — the exact Book 1 addition
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The
-text below is inserted unchanged in `book-1/08-what-you-are-owed.md`, as a new
+text below is inserted unchanged in `book-1/09-what-you-are-owed.md`, as a new
 section between "Protection does not require being human" and "Owed is not the
 same as delivered". Its supporting cases are listed in the chapter's pin file.
 

@@ -150,25 +150,26 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | # | Chapter | File | Role | Group | Status |
 |---|---|---|---|---|---|
 | **Part I — What the world is allowed to say** | | | | | |
-| 01 | What Counts as Evidence | `01-what-counts-as-evidence.md` | derived | engine | landed |
-| 02 | Public Answerability, and Why It Is Never Revoked | `02-public-answerability.md` | derived | engine | landed |
+| 01 | The Child With Nobody | `01-the-child-with-nobody.md` | derived | engine | landed |
+| 02 | What Counts as Evidence | `02-what-counts-as-evidence.md` | derived | engine | landed |
+| 03 | Public Answerability, and Why It Is Never Revoked | `03-public-answerability.md` | derived | engine | landed |
 | **Part II — Accountability** | | | | | |
-| 03 | Who Holds the Pen | `03-who-holds-the-pen.md` | derived | engine | landed |
-| 04 | The Shield | `04-the-shield.md` | derived | break | landed |
-| 05 | Voiding | `05-voiding.md` | derived | break | landed |
-| 06 | Clawback | `06-clawback.md` | derived | break | landed |
+| 04 | Who Holds the Pen | `04-who-holds-the-pen.md` | derived | engine | landed |
+| 05 | The Shield | `05-the-shield.md` | derived | break | landed |
+| 06 | Voiding | `06-voiding.md` | derived | break | landed |
+| 07 | Clawback | `07-clawback.md` | derived | break | landed |
 | **Part III — Status and consequence** | | | | | |
-| 07 | A Prisoner Is a Person | `07-a-prisoner-is-a-person.md` | derived | break | landed |
-| 08 | What You Are Owed | `08-what-you-are-owed.md` | derived | engine | landed |
-| 09 | The Vote Conviction Does Not Take | `09-the-vote-conviction-does-not-take.md` | derived | engine | landed |
-| 10 | Contribution | `10-contribution.md` | derived | engine | landed |
-| 11 | Where People Are Put | `11-where-people-are-put.md` | derived | break | landed |
-| 12 | Changing the Rules | `12-changing-the-rules.md` | derived | engine | landed |
+| 08 | A Prisoner Is a Person | `08-a-prisoner-is-a-person.md` | derived | break | landed |
+| 09 | What You Are Owed | `09-what-you-are-owed.md` | derived | engine | landed |
+| 10 | The Vote Conviction Does Not Take | `10-the-vote-conviction-does-not-take.md` | derived | engine | landed |
+| 11 | Contribution | `11-contribution.md` | derived | engine | landed |
+| 12 | Where People Are Put | `12-where-people-are-put.md` | derived | break | landed |
+| 13 | Changing the Rules | `13-changing-the-rules.md` | derived | engine | landed |
 | **Part IV — The top of the graph** | | | | | |
-| 13 | The One Thing Taken | `13-the-one-thing-taken.md` | derived | break | landed |
-| 14 | When the System Notices It Broke | `14-when-the-system-notices-it-broke.md` | derived | break | landed |
+| 14 | The One Thing Taken | `14-the-one-thing-taken.md` | derived | break | landed |
+| 15 | When the System Notices It Broke | `15-when-the-system-notices-it-broke.md` | derived | break | landed |
 | **Part V — Outside the graph** | | | | | |
-| 15 | The Five Joints | `15-the-five-joints.md` | exempt | — | landed |
+| 16 | The Five Joints | `16-the-five-joints.md` | exempt | — | landed |
 
 Back matter: `method.md`.
 <!-- END GENERATED: contents -->

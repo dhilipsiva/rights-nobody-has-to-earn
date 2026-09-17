@@ -822,7 +822,7 @@ At minimum, check these live claims:
   reader. Class-9 habitat protection may not be accepted as a substitute for
   Class-10 individual welfare, or vice versa.
 - Every Part V verdict and stated specification in
-  `book-1/15-the-five-joints.md`, including valuation's non-operative
+  `book-1/16-the-five-joints.md`, including valuation's non-operative
   recognition, rotation's failure and no-term-of-office claim, coercion's
   single-deprivation/duration/release claims, capture's record/audit claims, and
   the State joint's one deliberate non-carceral delivery route and Book 2 seam.

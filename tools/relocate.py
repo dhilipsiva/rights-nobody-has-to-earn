@@ -9,7 +9,7 @@
 A map is JSON:
 
     {"name": "...", "date": "YYYY-MM-DD", "notes": "...",
-     "moves":    [{"from": "book-1/08-what-you-are-owed.md", "to": "book-1/01-what-you-are-owed.md"}, ...],
+     "moves":    [{"from": "book-1/09-what-you-are-owed.md", "to": "book-1/01-what-you-are-owed.md"}, ...],
      "rewrites": [{"from": "book-1/source/", "to": "book-1/source/"}, ...],
      "labels":   {"8": "1", ...}}
 
@@ -182,6 +182,26 @@ def rewrite_labels(text: str, labels: dict[str, str]) -> tuple[str, int]:
     return text, count
 
 
+NUMBERED_LINK = re.compile(r"\[(\d{1,2})\]\((?:[^)]*/)?(\d{2})-[^)#]*\.md(?:#[^)]*)?\)")
+
+
+def fix_numbered_links(text: str) -> tuple[str, int]:
+    """A link whose text is a bare chapter number must carry its target's prefix:
+    `[12](12-where-people-are-put.md)`. The path pass retargets the file; this
+    pass makes the visible number follow it."""
+    count = 0
+
+    def one(m: re.Match) -> str:
+        nonlocal count
+        want = str(int(m.group(2)))
+        if m.group(1) == want:
+            return m.group(0)
+        count += 1
+        return "[" + want + m.group(0)[len(m.group(1)) + 1:]
+
+    return NUMBERED_LINK.sub(one, text), count
+
+
 def manifest_order() -> list[str]:
     data = json.loads((ROOT / MANIFEST).read_text(encoding="utf-8"))
     return [f"book-1/{c['file']}" for part in data["parts"] for c in part["chapters"] if c.get("file")]
@@ -298,6 +318,8 @@ def cmd_apply(args: argparse.Namespace) -> int:
         m = 0
         if labels and (matches(after(old_path), LABEL_GLOBS)):
             new, m = rewrite_labels(new, labels)
+        new, k = fix_numbered_links(new)
+        m += k
         if new != text:
             total += n + m
             if args.dry_run:

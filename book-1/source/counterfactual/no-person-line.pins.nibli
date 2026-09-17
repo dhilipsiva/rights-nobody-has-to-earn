@@ -1,5 +1,5 @@
 # ── Counterfactual: `prisoner -> person` deleted ─────────────────────────────
-# Chapter 7's headline result, run against a file where the line is gone.
+# Chapter 8's headline result, run against a file where the line is gone.
 # These verdicts are what the world looks like WITHOUT it. They must PASS here
 # and would fail against the real constitution — that contrast is the point.
 :expect-pins 6
@@ -52,7 +52,7 @@ endorses(TemporalReview, Case_Zed).
 ? person(Zed).
 # => FALSE
 
-# THE DEBT EVAPORATES WITH THE DEBTOR — chapter 7's "it closes the file". A
+# THE DEBT EVAPORATES WITH THE DEBTOR — chapter 8's "it closes the file". A
 # prisoner who is not a person is owed nothing: no unpaid obligation survives to
 # catch an auditor's eye, so de-personing leaves the books balanced rather than
 # showing a gap. Both TRUE against the real constitution (probed 2026-08-02);
