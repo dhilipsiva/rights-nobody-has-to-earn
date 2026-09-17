@@ -1,0 +1,23 @@
+# ── Counterfactual: the birth root deleted ────────────────────────────────────
+# The constitution minus `all $child: born($child) & ~public($child) -> person($child).`
+# — the mirror of no-first-contact-standing, run against the child with nobody.
+# Delete one rule and the child is owed nothing, barred from nothing, and no
+# alarm notices, because every duty and every barrier reads personhood and
+# personhood now has nothing to derive from.
+:expect-pins 7
+
+born(Nell).
+? born(Nell).
+# => TRUE
+? person(Nell).
+# => FALSE
+? entitled(Nell, event { eats() }).
+# => FALSE
+? owe(State, Eats, Nell).
+# => FALSE
+? prevents(Nell, PublicFirstCareContinuity).
+# => FALSE
+? travel(Nell).
+# => FALSE
+? err(Nell, Isolation).
+# => FALSE

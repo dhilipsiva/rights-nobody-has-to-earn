@@ -2649,7 +2649,7 @@ a **test on absent entries** — no private route to the floor, no chosen help,
 not acted upon by public power, presence not guaranteed — and the design's
 answer is that the public duty reads none of them: every debt and every
 barrier has `person($x)` as its whole body. It is never a status:
-`vulnerable` stays unadmitted and is pinned as refused; the test is computed
+`vulnerable` is not a corpus name and its refusal is pinned; the test is computed
 from silence and reads into nothing; it captures a set (the unconscious
 adult nobody has come for, the person whose only supporter is the one accused
 of failing them, the unaccompanied newcomer, the person whose language nobody

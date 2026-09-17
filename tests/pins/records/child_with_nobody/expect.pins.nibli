@@ -1,0 +1,494 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# ── The child with nobody ─────────────────────────────────────────────────────
+#
+# The record holds one line about Nell: that Nell was born. No entry names a
+# parent, a family, a home, a household, a supporter, a case, an order or a
+# teacher, and nothing says that anyone has done anything to Nell or for Nell.
+# This case asks what the whole constitution makes of that record. It is the
+# executable half of the 2026-09-16 ruling that the child with nobody is the
+# heart of Book 1 (book-1/appendix/decisions/child-with-nobody-decision.md), and
+# the first exercise of the birth root anywhere in the repository.
+#
+# Register: every pin is an entry present, an entry absent, a conclusion that
+# derives, or one that does not. Nothing here is a finding about Nell.
+:expect-pins 150
+
+# The one entry.
+? born(Nell).
+# => TRUE
+
+# Personhood derives from the birth alone: `born($child) & ~public($child) -> person($child)`.
+? person(Nell).
+# => TRUE
+
+# The entries the record does NOT hold. Each is FALSE because nobody wrote it,
+# and a single written line would flip it.
+? family(Nell).
+# => FALSE
+
+? home(Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
+
+? free(Nell).
+# => FALSE
+
+? false(Nell).
+# => FALSE
+
+? clean(Nell).
+# => FALSE
+
+? authority(Nell).
+# => FALSE
+
+? reward(Nell).
+# => FALSE
+
+# Everything owed. Every debt has `person($x)` as its whole body — no age, no
+# parent, no household, no roster beyond the one line. Enumerated, not sampled:
+# the omitted item is where a universal fails.
+? owe(State, Provision, Nell).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+? owe(State, Healthy, Nell).
+# => TRUE
+
+? owe(State, Learn, Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+? owe(State, Believe, Nell).
+# => TRUE
+
+? owe(State, Meets, Nell).
+# => TRUE
+
+? entitled(Nell, event { secure() }).
+# => TRUE
+
+? entitled(Nell, event { eats() }).
+# => TRUE
+
+? entitled(Nell, event { dwell() }).
+# => TRUE
+
+? entitled(Nell, event { healthy() }).
+# => TRUE
+
+? entitled(Nell, event { learn() }).
+# => TRUE
+
+? entitled(Nell, event { expresses() }).
+# => TRUE
+
+? entitled(Nell, event { believe() }).
+# => TRUE
+
+? entitled(Nell, event { meets() }).
+# => TRUE
+
+# No one is presumed to provide, and no status may be read against the child:
+# every life-course barrier whose whole body is personhood holds for Nell.
+? prevents(Nell, ChildIndependentRights).
+# => TRUE
+
+? prevents(Nell, ChildAccessibleInformationHelp).
+# => TRUE
+
+? prevents(Nell, ChildVoiceNoAgeFloor).
+# => TRUE
+
+? prevents(Nell, ChildViewWeightReasons).
+# => TRUE
+
+? prevents(Nell, ChildBestInterestsRecord).
+# => TRUE
+
+? prevents(Nell, ChildIndividualAssessment).
+# => TRUE
+
+? prevents(Nell, ChildFiduciaryAuthorityLimit).
+# => TRUE
+
+? prevents(Nell, UniformGeneralAdulthood).
+# => TRUE
+
+? prevents(Nell, AutomaticAdulthoodAcquisition).
+# => TRUE
+
+? prevents(Nell, AdulthoodRecordEvidenceOnly).
+# => TRUE
+
+? prevents(Nell, AdulthoodAlternativeEvidence).
+# => TRUE
+
+? prevents(Nell, EstablishedAdultContinuity).
+# => TRUE
+
+? prevents(Nell, AdulthoodNonretrogression).
+# => TRUE
+
+? prevents(Nell, ProvisionalAdultExpiringOpportunity).
+# => TRUE
+
+? prevents(Nell, EarlyAuthorityDecisionSpecific).
+# => TRUE
+
+? prevents(Nell, EarlyAuthorityPoliticalBoundary).
+# => TRUE
+
+? prevents(Nell, FamilyFormEqualRespect).
+# => TRUE
+
+? prevents(Nell, FamilyModuleSeparation).
+# => TRUE
+
+? prevents(Nell, FamilyModuleEntryConsent).
+# => TRUE
+
+? prevents(Nell, FamilyObligationDisclosure).
+# => TRUE
+
+? prevents(Nell, FamilyExitWindingUp).
+# => TRUE
+
+? prevents(Nell, FamilyPrivateWaiverLimit).
+# => TRUE
+
+? prevents(Nell, MarriageNoConstitutionalPriority).
+# => TRUE
+
+? prevents(Nell, CivilFamilyPublicControl).
+# => TRUE
+
+? prevents(Nell, ParentageResponsibility).
+# => TRUE
+
+? prevents(Nell, ParentageSourcePlurality).
+# => TRUE
+
+? prevents(Nell, PluralParentage).
+# => TRUE
+
+? prevents(Nell, ParentageDutyAllocationContinuity).
+# => TRUE
+
+? prevents(Nell, AdoptionConsentVoice).
+# => TRUE
+
+? prevents(Nell, ParentageAntiSaleStatusGap).
+# => TRUE
+
+? prevents(Nell, OriginRecordIntegrityAccess).
+# => TRUE
+
+? prevents(Nell, OriginAccessNoContactEffect).
+# => TRUE
+
+? prevents(Nell, CustodyParentageContinuity).
+# => TRUE
+
+? prevents(Nell, PublicFirstCareContinuity).
+# => TRUE
+
+? prevents(Nell, AssumedCareDutyBounds).
+# => TRUE
+
+? prevents(Nell, KinshipNoPersonalCareDebt).
+# => TRUE
+
+? prevents(Nell, DependantIndependentRights).
+# => TRUE
+
+? prevents(Nell, CaregiverIndependentRights).
+# => TRUE
+
+? prevents(Nell, CaregiverSafeRelinquishment).
+# => TRUE
+
+? prevents(Nell, CareWorkActualFunction).
+# => TRUE
+
+? prevents(Nell, CareStatusNondelivery).
+# => TRUE
+
+? prevents(Nell, HouseholdNonprescription).
+# => TRUE
+
+? prevents(Nell, StatusNoHarmPresumption).
+# => TRUE
+
+? prevents(Nell, DomesticProtectionEvidenceTrigger).
+# => TRUE
+
+? prevents(Nell, ConfidentialHelpNoOffenceProof).
+# => TRUE
+
+? prevents(Nell, TargetedProtectiveAction).
+# => TRUE
+
+? prevents(Nell, DomesticEmergencyTemporalLimit).
+# => TRUE
+
+? prevents(Nell, ChildSeparationLastResort).
+# => TRUE
+
+? prevents(Nell, SupportBeforeRemoval).
+# => TRUE
+
+? prevents(Nell, SeparationReviewReunification).
+# => TRUE
+
+? prevents(Nell, ChildActivityLabourSafety).
+# => TRUE
+
+? prevents(Nell, AdultLegalCapacity).
+# => TRUE
+
+? prevents(Nell, PlenaryGuardianshipRefusal).
+# => TRUE
+
+? prevents(Nell, ChosenSupportControl).
+# => TRUE
+
+? prevents(Nell, SupportNotSubstitution).
+# => TRUE
+
+? prevents(Nell, SupportRefusalContinuity).
+# => TRUE
+
+? prevents(Nell, BoundedBestInterpretation).
+# => TRUE
+
+? prevents(Nell, EmergencyAgencyNoncarry).
+# => TRUE
+
+? prevents(Nell, AgencyRecordScopeRevocation).
+# => TRUE
+
+? prevents(Nell, ReproductiveServiceAccess).
+# => TRUE
+
+? prevents(Nell, ReproductiveFreeInformedChoice).
+# => TRUE
+
+? prevents(Nell, ReproductiveCoercionProhibition).
+# => TRUE
+
+? prevents(Nell, ThirdPartyReproductiveVetoRefusal).
+# => TRUE
+
+? prevents(Nell, PregnancyContinuationTerminationAuthority).
+# => TRUE
+
+? prevents(Nell, FetalOverrideRefusal).
+# => TRUE
+
+? prevents(Nell, PregnancyOutcomeNonpunishment).
+# => TRUE
+
+? prevents(Nell, ConfidentialChildHealthRoute).
+# => TRUE
+
+? prevents(Nell, ConscientiousRefusalContinuity).
+# => TRUE
+
+? prevents(Nell, AssistedReproductionConsent).
+# => TRUE
+
+? prevents(Nell, GestationalBodyControlRefusal).
+# => TRUE
+
+? prevents(Nell, GestationalAntiExploitation).
+# => TRUE
+
+? prevents(Nell, ParentageAtBirthContinuity).
+# => TRUE
+
+? prevents(Nell, AgeingRightsContinuity).
+# => TRUE
+
+? prevents(Nell, CommunityLivingSupport).
+# => TRUE
+
+? prevents(Nell, PlacementConsentNarrowAuthority).
+# => TRUE
+
+? prevents(Nell, CurrentTreatmentDecision).
+# => TRUE
+
+? prevents(Nell, TreatmentRefusalLifeSustaining).
+# => TRUE
+
+? prevents(Nell, TreatmentAuthorityOrder).
+# => TRUE
+
+? prevents(Nell, TreatmentDisputeReviewContinuity).
+# => TRUE
+
+? prevents(Nell, AssistedDyingDemocraticBoundary).
+# => TRUE
+
+? prevents(Nell, AssistedDyingSafeguards).
+# => TRUE
+
+? prevents(Nell, AssistedDyingRepresentativeRefusal).
+# => TRUE
+
+? prevents(Nell, AssistedDyingFreshTemporal).
+# => TRUE
+
+? prevents(Nell, DeathExternalFinding).
+# => TRUE
+
+? prevents(Nell, RemainsDirectionsBoundary).
+# => TRUE
+
+? prevents(Nell, WillLedSuccession).
+# => TRUE
+
+? prevents(Nell, NoninheritabilityPublicStatus).
+# => TRUE
+
+? prevents(Nell, FunctionalIntestacy).
+# => TRUE
+
+? prevents(Nell, PluralChildSuccessionEquality).
+# => TRUE
+
+? prevents(Nell, CollectiveTitleSuccessionLimit).
+# => TRUE
+
+? prevents(Nell, SuccessionFloorHousingContinuity).
+# => TRUE
+
+? prevents(Nell, BeneficiaryCareConflict).
+# => TRUE
+
+? prevents(Nell, FamilyCommonMinimum).
+# => TRUE
+
+? prevents(Nell, FamilyFunctionSeparation).
+# => TRUE
+
+? prevents(Nell, FamilyRemedySet).
+# => TRUE
+
+? prevents(Nell, FamilyRemedyNonharm).
+# => TRUE
+
+? prevents(Nell, MissingKinshipNoIndependence).
+# => TRUE
+
+? prevents(Nell, FamilyStatusNoConfinement).
+# => TRUE
+
+? prevents(Nell, LegacyStatusNonproof).
+# => TRUE
+
+? prevents(Nell, HomeConceptSeparation).
+# => TRUE
+
+? prevents(Nell, T3LifeCourseNonborrowing).
+# => TRUE
+
+? prevents(Nell, Book2LifeCourseBoundary).
+# => TRUE
+
+# Three life-course barriers read a status entry beside personhood — a family,
+# a home, a marriage or a sibling — because they forbid substituting THAT status
+# for a finding. Two of the three names are also carried by the equality family
+# over personhood alone, so they hold for Nell through that route; the kinship
+# one is not, and Nell has no marriage or sibling entry for it to be about.
+? prevents(Nell, FamilyStatusSubstitution).
+# => TRUE
+
+? prevents(Nell, HomeStatusSubstitution).
+# => TRUE
+
+? prevents(Nell, KinshipStatusSubstitution).
+# => FALSE
+
+# What does not follow. A floor actuality derives only from a record that
+# something reached Nell plus an independent witness who was not the giver
+# (tests/pins/delivery/received-outside-custody is the mirror), or through
+# confinement. Nell has neither. The record does not say that Nell ate; it does
+# not say that Nell did not eat; it says nothing, and nothing derives from nothing.
+? eats(Nell).
+# => FALSE
+
+? dwell(Nell).
+# => FALSE
+
+? healthy(Nell).
+# => FALSE
+
+? secure(Nell).
+# => FALSE
+
+? meets(Nell).
+# => FALSE
+
+? learn(Nell).
+# => FALSE
+
+? expresses(Nell).
+# => FALSE
+
+? believe(Nell).
+# => FALSE
+
+# Liberty of movement is read from the absence of custody and restraint.
+? travel(Nell).
+# => TRUE
+
+# No adulthood evidence is written, so no ballot — not taken, not yet.
+? decide(Nell, Ballot).
+# => FALSE
+
+# The company alarm watches the confined; it cannot see the child.
+? err(Nell, Isolation).
+# => FALSE
+
+? err(Nell, Placement).
+# => FALSE
+
+# There is no field in the record for what Nell is. `vulnerable` is not even a
+# corpus name, so the lexicon refuses it one step before Article 0a's closure
+# would — the same place `trust` and `wellbeing` are stopped — and a rule that
+# tried to read it could not be written. The test for the most vulnerable person
+# is a test on absent entries, never a status somebody writes.
+:refuse syntax /unknown predicate "vulnerable"/
+vulnerable(Nell).
+
+# The child the record never entered. FALSE is the point: one written line
+# would flip each of these, and until it is written the design owes nothing,
+# bars nothing and notices nothing.
+? person(Ori).
+# => FALSE
+
+? owe(State, Eats, Ori).
+# => FALSE
+
+? entitled(Ori, event { eats() }).
+# => FALSE
+
+? prevents(Ori, PublicFirstCareContinuity).
+# => FALSE
+
+? travel(Ori).
+# => FALSE

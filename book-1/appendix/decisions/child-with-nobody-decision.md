@@ -77,10 +77,14 @@ acted-upon conclusion, so it can be checked by query and reads into nothing.
 Every floor debt and every FAMILY-LIFE barrier has `person($x)` as its whole
 body; the extra entries other people have are not conditions.
 
-**Why it is not a status.** There is no field: `vulnerable(Nell).` is refused
-at load as unadmitted vocabulary, the same way `rich(Adam).` and
-`dangerous(Adam).` are refused in chapter 1's suite, and the chapter pins the
-refusal. The test is computed from silence, and the design never derives
+**Why it is not a status.** There is no field: `vulnerable` is not a corpus
+name, so `vulnerable(Nell).` is refused one step before Article 0a's closure
+would refuse an unadmitted corpus word like `rich(Adam).` — the same place the
+lexicon stops `trust` and `wellbeing` — and the child's record pins that
+refusal (`tests/pins/records/child_with_nobody`). Measured on 2026-09-17: every
+life-course barrier whose whole body is personhood holds for the one-entry
+record; the three that read a status entry beside personhood do not, except
+where the equality family carries the same name over personhood alone. The test is computed from silence, and the design never derives
 anything from a missing entry. It captures a set, not a person: by the same
 test, the unconscious adult nobody has come for, the person whose only
 supporter is the one accused of failing them, the unaccompanied newcomer under

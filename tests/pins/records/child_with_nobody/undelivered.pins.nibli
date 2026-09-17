@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# ── The undelivered marker, run against the child with nobody ────────────────
+# The refused marker (counterfactual/undelivered-marker) is the alarm that would
+# notice a person owed food who has not eaten. It fires on Nell — and it fires
+# on everyone else alive in the record for the same reason, because `eats` is
+# asserted for nobody. It is exactly right about the child and discriminates
+# nothing, which is why the 2026-08-02 ruling refused it while the record holds
+# no arrival facts. The one person it does not reach is the one it does not owe.
+:expect-pins 4
+
+? owe(State, Eats, Nell).
+# => TRUE
+? eats(Nell).
+# => FALSE
+? err(Nell, Undelivered).
+# => TRUE
+? err(Ori, Undelivered).
+# => FALSE

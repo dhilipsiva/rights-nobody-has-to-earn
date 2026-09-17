@@ -53,13 +53,6 @@ needed.
 
 ### Phase A — the heart and the order
 
-4. **Run the constitution against a person with one entry.**
-   `tests/pins/records/child_with_nobody/{fixture,expect}.nibli`
-   (`born(Nell).`; person TRUE, eight owe, eight entitled, every barrier,
-   actualities FALSE, `vulnerable(Nell).` refused, Ori FALSE); base
-   `counterfactual/no-birth-standing` + its pins file; the Nell case on
-   `counterfactual/undelivered-marker`; `suites.json` entries. No prose. *Done
-   when:* `./verify.sh --only` each, then full; `:expect-pins` floors set.
 5. **Write the heart chapter — *The Child With Nobody* — as chapter 1.**
    Insert at 01 (manifest edit → `plan` → `apply` shifts the fourteen by one;
    map `2026-09-16-heart.json`; the tool moves files and rewrites references,
