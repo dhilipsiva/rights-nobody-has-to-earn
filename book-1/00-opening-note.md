@@ -278,6 +278,11 @@ below.
   finding lets anybody do, the priority keys refused by name, and what stays
   owed to the person who went without.
 
+- [Chapter 7: Who Owes, and What Follows](07-who-owes-and-what-follows.md) —
+  the forms public responsibility takes, what cannot be contracted away, what
+  voluntary provision does not do, and the chain that runs from a finding to a
+  named reader, an alternate, and a remedy nobody has performed yet.
+
 ### Part II — The life the design leaves alone
 
 - [Chapter 8: What Nobody Has to Ask Permission For](08-what-nobody-has-to-ask-permission-for.md)
@@ -647,6 +652,7 @@ the domain.
 - **Food, housing, land, utilities, infrastructure, and public space:** Chapters
   [5](05-whether-it-arrived.md),
   [6](06-when-there-is-genuinely-not-enough.md),
+  [7](07-who-owes-and-what-follows.md),
   [4](04-what-you-are-owed.md), [28](28-where-people-are-put.md), and
   [29](29-the-one-thing-taken.md). The entitlement and confinement cases are
   present; ordinary delivery remains the central gap.
@@ -684,6 +690,7 @@ the domain.
 - **Civil, criminal, and administrative justice, safety, and repair:** Chapters
   [24](24-the-shield.md), [25](25-voiding.md),
   [27](27-a-prisoner-is-a-person.md), [4](04-what-you-are-owed.md),
+  [7](07-who-owes-and-what-follows.md),
   [28](28-where-people-are-put.md),
   [29](29-the-one-thing-taken.md), and
   [30](30-when-the-system-notices-it-broke.md). These chapters cover evidence,

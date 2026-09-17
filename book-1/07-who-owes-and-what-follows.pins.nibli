@@ -1,0 +1,102 @@
+# ── Chapter 7 fidelity pins: "Who Owes, and What Follows" ──────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/07-who-owes-and-what-follows.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists the child fixture and seven obligations fixtures —
+# the five forms of public responsibility, delegation without discharge, and
+# the refusal to read a private duty out of subject matter alone:
+#   tests/pins/records/child_with_nobody/fixture.nibli
+#   tests/pins/obligations/case-001 .. case-008
+#
+# The rest of the chapter's chain rests on the families' own sequences, which
+# this file cites rather than duplicates:
+#   tests/pins/obligations/                     FS-CCE-198..222, the typed
+#                                               three-place duty and its bridge
+#   tests/pins/justice/appeal/request-without-operator-or-previous-permission
+#   tests/pins/justice/nonresponse/positive      and its silence-only control
+#   tests/pins/justice/defect/wrong-version-cannot-withdraw-real-relief
+#   tests/pins/public-safety/                    the protective-power route
+#   tests/pins/ecology/ecological-record-defect  and the animal remedy orders
+#   tests/pins/scarcity/nonresponse/positive
+# Each derives its family's duty on a named reader or executor. None of them
+# establishes that a reader received anything or that anybody acted.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 17
+
+# ── "Public responsibility around it takes distinct forms." ────────────────
+# Respect, protection, fulfilment, continuity, remedy — one typed duty each.
+? obliged(OblPositive198Bearer, OblPositive198Duty, OblPositive198Standard).
+# => TRUE
+
+? obliged(OblPositive199Bearer, OblPositive199Duty, OblPositive199Standard).
+# => TRUE
+
+? obliged(OblPositive200Bearer, OblPositive200Duty, OblPositive200Standard).
+# => TRUE
+
+? obliged(OblPositive201Bearer, OblPositive201Duty, OblPositive201Standard).
+# => TRUE
+
+? obliged(OblPositive202Bearer, OblPositive202Duty, OblPositive202Standard).
+# => TRUE
+
+# ── "A public function cannot shed its duties by being contracted out" ─────
+# The performer carries the duty for that work, and the public duty stays where
+# it was: both conclusions, not one replacing the other.
+? obliged(OblPositive203Bearer, OblPositive203Duty, OblPositive203Standard).
+# => TRUE
+
+? obliged(State, OblPositive203Duty, OblPositive203Standard).
+# => TRUE
+
+# ── "A private duty must be stated expressly for the function undertaken" ──
+? obliged(OblPositive204Bearer, OblPositive204Duty, OblPositive204Standard).
+# => TRUE
+
+# "The reverse boundary matters just as much." Subject matter alone concludes
+# no private duty; what would flip this is an express duty record for the
+# function, which case-007 above supplies for its own bearer.
+? prevents(OblPositive205Bearer, SubjectMatterOnlyPrivateDutyInference).
+# => TRUE
+
+# ── "Missing papers cannot suspend urgent human protection or animal care." ─
+# A direct urgent-care request with no owner, taxon or official record. It
+# creates a duty, not personhood and not proof that a rescue occurred.
+challenge(ECReaderHelper, ECReaderAnimal, ECReaderUrgentRequest).
+observe(ECReaderHelper, ECReaderUrgentRequest, ECUrgentPlausibleAnimalProtectionRequest, ECRequestKindScope).
+? obliged(State, ECProvidePromptSafeAnimalProtectionAndNecessaryCareBeforeRecordReconciliation, ECReaderUrgentRequest).
+# => TRUE
+
+? person(ECReaderAnimal).
+# => FALSE
+
+# ── "a duty here is a statement that somebody must answer" ─────────────────
+# The typed duty is a conclusion, never a verdict somebody writes.
+:refuse reasoning /declared derived-only/
+obliged(OblPositive198Bearer, OblPositive198Duty, ForgedObligationStandard).
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "no household, relationship, association or charity is presumed to provide
+# another person's floor, so the absence of all of them subtracts nothing"
+? prevents(Nell, KinshipNoPersonalCareDebt).
+# => TRUE
+
+? prevents(Nell, PublicFirstCareContinuity).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+# "Nothing between the birth entry and the debt asks who is caring for the
+# child." The record holds no family entry for Nell and the debt is unmoved.
+? family(Nell).
+# => FALSE

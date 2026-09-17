@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-16. **07 — Who Owes, and What Follows** (PROMOTED from 08 and 14; receipt
-    `unread-duty` moves only if its phrase moves).
 17. **15 — Arriving and Belonging** (PROMOTED).
 18. **14 — Holding a Role in Somebody's Life** (PROMOTED).
 19. **17 — How Public Power Is Built** (PROMOTED + new state-form sections).

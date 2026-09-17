@@ -210,63 +210,9 @@ runs to every person — not to members, not to contributors, not to residents,
 not to anyone who has qualified for it. That is the whole of the debt claimed
 here, and it remains a smaller claim than it sounds.
 
-Public responsibility around it takes distinct forms. To respect is not to
-interfere. To protect is to prevent, investigate, and answer private interference
-through the public route. To fulfil is to bear the legal responsibility for
-securing what the floor requires. To continue is to keep the protected position
-from collapsing when the ordinary bearer or provider fails. To remedy is to
-restore the person after a breach. Being public does not assign every task to
-every office. Each duty belongs only where a current lawful source names the
-bearer, function, jurisdiction, and scope.
-
-A public function cannot shed its duties by being contracted out, insured,
-paid through a voucher, or assigned to a public, cooperative, mutual,
-nonprofit, charitable, household, or private provider. Whoever performs that
-function carries its exact duties for that work and gains no wider public
-status or authority.
-
-The public responsibility to finance, secure, and maintain the floor remains
-throughout. Price, wealth, credit, contribution, insurance status, or ability
-to pay cannot decide access. Cash, a voucher, or an insurance approval is an
-instrument, not delivery; it counts only when independent evidence from the
-receiving side establishes timely, accessible, adequate real access.
-
-Voluntary household, charitable, mutual-aid, or private provision may prevent
-needless duplicate delivery when independent evidence shows that the protected
-condition currently holds. It never extinguishes the entitlement or the public
-responsibility. Withdrawal, dispute, inaccessibility, inadequacy, or failure
-requires public continuity.
-
-The reverse boundary matters just as much. No household, relationship,
-association, charity, or mutual-aid group is presumed to provide another
-person's floor. A private duty must be stated expressly for the function
-undertaken or the public-scale power independently found. Ordinary ownership,
-exchange, care, dependency, or intimate life creates no general public power
-over private life.
-
-Duties do not all run to the same place. A duty owed to a person, a duty owed
-to a source-defined common, a duty of an office or role, and a voluntary
-commitment remain different kinds of obligation. None is payment for a right.
-None automatically outranks the others. Existing protections that cannot be
-waived constrain every resolution, and one duty displaces another only when a
-current source supplies the exact priority rule and independently reviewed
-conflict evidence. A missing or conflicting priority record decides nothing and
-discharges nothing.
-
-An excuse also has to arrive as a positive, current, reviewable premise. It may
-suspend or move a person's performance; it cannot erase the claim on the other
-side. Continuity must pass to a separately named alternate. The bearer cannot
-create its own excuse by failing to answer.
-
-Civic duties may exist. Their breach cannot remove standing, the floor,
-political voice, access to evidence or challenge, or an effective remedy.
-Failure to work, pay, identify oneself, comply, contribute, or win social
-approval therefore buys no right to make a person less protected. Any other
-consequence needs its own lawful source and process.
-
-A voluntary commitment cannot waive a protection the constitution makes
-non-waivable. If its breach is said to limit some other right, that limit must
-pass the right's own test; the promise does not become a short route around it.
+What that responsibility consists of — the forms it takes, what cannot be
+contracted away, what voluntary provision does not do, and what follows once
+a finding exists — has its own chapter.
 
 **The debt carries the same protection the floor itself carries.** No law can be
 written that puts a class of people outside the provision and then punishes them

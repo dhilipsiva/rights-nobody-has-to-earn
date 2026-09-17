@@ -48,14 +48,14 @@ carried in single figures, which is where the rebalance has most to do.
 | --- | ---: |
 | chooses | 11 |
 | creates | 2 |
-| cares | 2 |
-| works | 10 |
+| cares | 3 |
+| works | 11 |
 | associates | 6 |
 | requests | 5 |
-| receives | 43 |
-| challenges | 14 |
+| receives | 51 |
+| challenges | 19 |
 | governs | 25 |
-| is acted upon | 60 |
+| is acted upon | 62 |
 
 ## Chapter patterns
 
@@ -65,11 +65,11 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 71 |
-| private-civic | 18 |
+| constructive | 81 |
+| private-civic | 19 |
 | democratic | 23 |
-| coercive | 25 |
-| records | 20 |
+| coercive | 27 |
+| records | 24 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -84,19 +84,19 @@ checked here.
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 5 | 6 |
-| Ecology, future generations and commons | 5 | 2 | 6 |
-| Economy, property, work and commons | 19 | 12 | 15 |
+| Ecology, future generations and commons | 5 | 3 | 6 |
+| Economy, property, work and commons | 19 | 13 | 16 |
 | Emergency and resilience | 1 | 1 | 2 |
-| Justice and coercion | 6 | 7 | 4 |
+| Justice and coercion | 7 | 7 | 4 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
-| Life course, family, care and reproduction | 3 | 1 | 3 |
+| Life course, family, care and reproduction | 4 | 1 | 3 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
-| Material floor | 5 | 15 | 12 |
+| Material floor | 8 | 19 | 13 |
 | Non-human animals | 1 | 1 | 2 |
-| Personhood and equality | 14 | 8 | 7 |
+| Personhood and equality | 15 | 8 | 7 |
 | Public institutions | 8 | 5 | 8 |
-| Public safety, policing and use of force | 5 | 2 | 7 |
-| Records and accountability | 10 | 9 | 12 |
+| Public safety, policing and use of force | 5 | 3 | 8 |
+| Records and accountability | 10 | 13 | 14 |
 
 ## Every passage
 
@@ -137,6 +137,23 @@ checked here.
 | 06-06 | 06-when-there-is-genuinely-not-enough.md | The conflicts that are not about supply | Material floor | SCARCITY-AND-CONFLICT | protective | the named cross-domain conflicts | receives | contested | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-07 | 06-when-there-is-genuinely-not-enough.md | The child with nobody | Material floor | SCARCITY-AND-CONFLICT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-08 | 06-when-there-is-genuinely-not-enough.md | What none of this counts | Material floor | SCARCITY-AND-CONFLICT | protective | the boundary of a record that counts no stock | receives | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 07-00 | 07-who-owes-and-what-follows.md | (preamble) | Material floor | OBLIGATIONS | ordinary | the third question: who has to answer | receives | works | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-01 | 07-who-owes-and-what-follows.md | The forms public responsibility takes | Material floor | OBLIGATIONS | ordinary | respect, protection, fulfilment, continuity, remedy | receives | works | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-02 | 07-who-owes-and-what-follows.md | A duty cannot be contracted away | Material floor | OBLIGATIONS | protective | a public function handed to a provider | receives | works | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-03 | 07-who-owes-and-what-follows.md | What voluntary provision does not do | Life course, family, care and reproduction | OBLIGATIONS | protective | a household, a charity, and what neither is presumed to owe | cares | works | no | private-civic | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-04 | 07-who-owes-and-what-follows.md | Duties do not all run to the same place | Material floor | OBLIGATIONS | protective | two duties and no priority record between them | receives | contested | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-05 | 07-who-owes-and-what-follows.md | An excuse has to arrive as a record | Material floor | OBLIGATIONS | continuity | a bearer who cannot perform | receives | continuity-remedy | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-06 | 07-who-owes-and-what-follows.md | Civic duties, and what their breach cannot reach | Personhood and equality | OBLIGATIONS | protective | somebody who did not work, pay, identify or comply | is acted upon | works | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-07 | 07-who-owes-and-what-follows.md | The chain after a finding | Records and accountability | OBLIGATIONS | both | a finding, a named reader, and an alternate | challenges | continuity-remedy | no | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-08 | 07-who-owes-and-what-follows.md | Where delivery joins it | Material floor | DELIVERY-RECEIPT | continuity | a receipt that is absent, and what that does not establish | receives | unresolved | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-09 | 07-who-owes-and-what-follows.md | The lifecycle, and the record each step needs | Records and accountability | OBLIGATIONS | both | entitlement, offer, arrival, dispute, continuity, remedy | challenges | continuity-remedy | yes | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-10 | 07-who-owes-and-what-follows.md | Economic wrongs, one route at a time | Economy, property, work and commons | ECONOMIC-CONSTITUTION | both | a wage denial, an eviction, an unlawful licence | works | continuity-remedy | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-11 | 07-who-owes-and-what-follows.md | Silence at a review supplies nothing | Records and accountability | OBLIGATIONS | protective | a review nobody answered | challenges | contested | no | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-12 | 07-who-owes-and-what-follows.md | A way in that does not need the operator's permission | Justice and coercion | NON-CARCERAL-JUSTICE | both | a request to review that the operator did not authorise | challenges | works | no | coercive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-13 | 07-who-owes-and-what-follows.md | When the actor is a protective power | Public safety, policing and use of force | PUBLIC-SAFETY | continuity | unlawful force, and a record that was never written | is acted upon | fails | yes | coercive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-14 | 07-who-owes-and-what-follows.md | When the finding is about conditions or an animal | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | a defective ecological record and an animal needing care | challenges | continuity-remedy | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-15 | 07-who-owes-and-what-follows.md | The child with nobody | Material floor | OBLIGATIONS | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-16 | 07-who-owes-and-what-follows.md | And then nobody has necessarily acted | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | yes | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-02 | 08-what-nobody-has-to-ask-permission-for.md | The child with nobody | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the child with nobody: one birth entry and nothing else | receives | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
