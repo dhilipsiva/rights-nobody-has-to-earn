@@ -1,0 +1,109 @@
+# ── Chapter 8 fidelity pins: "What Nobody Has to Ask Permission For" ────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+#
+# The knowledge family's own cases carry the reviewed restriction, its
+# enforcement, the residual-freedom record, public information, accessible
+# communication, inquiry and creation autonomy, the concentration finding, the
+# defect and the nonresponse:
+#   tests/pins/knowledge/{restriction,enforcement,residual,information,
+#                         accessibility,autonomy,free-field,plurality,defect,
+#                         nonresponse}
+#   book-1/source/liberty-environment.pins.nibli   FS-CCE-11..20, the liberties
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 27
+
+# "The things power may not prescribe" — held for a cast member by name.
+? prevents(Adam, ArbitraryPrivacyInterference).
+# => TRUE
+
+? prevents(Adam, CoercedBodilyChoice).
+# => TRUE
+
+? prevents(Adam, UnsupportedMovementRestriction).
+# => TRUE
+
+? prevents(Adam, UnreviewedConsequentialDecision).
+# => TRUE
+
+? prevents(Adam, CoercedAssociation).
+# => TRUE
+
+? prevents(Adam, PrescribedExpression).
+# => TRUE
+
+? prevents(Adam, CompelledConscience).
+# => TRUE
+
+? prevents(Adam, PrescribedFamilyForm).
+# => TRUE
+
+? prevents(Adam, UnequalCivicStatus).
+# => TRUE
+
+? prevents(Adam, PrescribedPrivateCivicLife).
+# => TRUE
+
+# "For the child with nobody, this chapter asks for nothing and forbids a great
+# deal"
+? prevents(Nell, ArbitraryPrivacyInterference).
+# => TRUE
+
+? prevents(Nell, CoercedBodilyChoice).
+# => TRUE
+
+? prevents(Nell, UnsupportedMovementRestriction).
+# => TRUE
+
+? prevents(Nell, CoercedAssociation).
+# => TRUE
+
+? prevents(Nell, PrescribedExpression).
+# => TRUE
+
+? prevents(Nell, CompelledConscience).
+# => TRUE
+
+? prevents(Nell, PrescribedFamilyForm).
+# => TRUE
+
+? prevents(Nell, UnequalCivicStatus).
+# => TRUE
+
+? prevents(Nell, PrescribedPrivateCivicLife).
+# => TRUE
+
+? owe(State, Learn, Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+? owe(State, Believe, Nell).
+# => TRUE
+
+? owe(State, Meets, Nell).
+# => TRUE
+
+# "a barrier against prescribing expression is not a recorded voice" — the
+# walls derive no actuality for the person they protect. Each would flip on a
+# teacher heard, a holding, or a receipt with an independent witness.
+? learn(Nell).
+# => FALSE
+
+? expresses(Nell).
+# => FALSE
+
+? believe(Nell).
+# => FALSE
+
+? meets(Nell).
+# => FALSE

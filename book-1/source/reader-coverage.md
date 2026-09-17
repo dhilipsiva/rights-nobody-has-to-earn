@@ -46,13 +46,13 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 10 |
+| chooses | 11 |
 | creates | 2 |
 | cares | 2 |
 | works | 10 |
 | associates | 6 |
 | requests | 5 |
-| receives | 27 |
+| receives | 29 |
 | challenges | 13 |
 | governs | 25 |
 | is acted upon | 60 |
@@ -66,7 +66,7 @@ what matters is the book's shape, not the chapter's.
 | Pattern | Passages |
 | --- | ---: |
 | constructive | 56 |
-| private-civic | 15 |
+| private-civic | 18 |
 | democratic | 23 |
 | coercive | 25 |
 | records | 20 |
@@ -88,7 +88,7 @@ checked here.
 | Economy, property, work and commons | 19 | 12 | 15 |
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
-| Knowledge, communication and culture | 1 | 1 | 1 |
+| Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 3 | 1 | 3 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
 | Material floor | 3 | 6 | 7 |
@@ -125,11 +125,14 @@ checked here.
 | 04-05 | 04-what-you-are-owed.md | When the record the protection rested on was defective | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | an ecological record found defective | is acted upon, challenges | continuity-remedy | yes | records | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-06 | 04-what-you-are-owed.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-07 | 04-what-you-are-owed.md | When a use has to be stopped | Non-human animals | ECOLOGICAL-ANIMAL | continuity | remedy orders after an adjudicated animal harm | is acted upon | fails | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-08 | 04-what-you-are-owed.md | What nobody has to ask permission for | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | learning, speech, belief, association and culture | chooses, creates, associates | works | yes | private-civic | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-09 | 04-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-10 | 04-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-11 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-12 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-08 | 04-what-you-are-owed.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-09 | 04-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-10 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-11 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-02 | 08-what-nobody-has-to-ask-permission-for.md | The child with nobody | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the child with nobody: one birth entry and nothing else | receives | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-03 | 08-what-nobody-has-to-ask-permission-for.md | What none of this certifies | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the boundary of a record that certifies nothing | receives | unresolved | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 09-00 | 09-earning-above-the-floor.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | what may be earned above a floor that is never earned | works, chooses | works | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-01 | 09-earning-above-the-floor.md | Whose work it is | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | worker status by control and dependency, not label | works | works | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-02 | 09-earning-above-the-floor.md | Acting together | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | collective action and the narrow continuity power | associates | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |

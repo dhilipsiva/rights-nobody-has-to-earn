@@ -160,7 +160,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 06 | When There Is Genuinely Not Enough | — | derived | engine | planned |
 | 07 | Who Owes, and What Follows | — | derived | engine | planned |
 | **Part II — The life the design leaves alone** | | | | | |
-| 08 | What Nobody Has to Ask Permission For | — | derived | engine | planned |
+| 08 | What Nobody Has to Ask Permission For | `08-what-nobody-has-to-ask-permission-for.md` | derived | engine | landed |
 | 09 | Earning Above the Floor | `09-earning-above-the-floor.md` | derived | engine | landed |
 | 10 | Contribution | `10-contribution.md` | derived | engine | landed |
 | 11 | What Money Cannot Buy | `11-what-money-cannot-buy.md` | derived | engine | landed |

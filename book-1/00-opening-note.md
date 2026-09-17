@@ -270,6 +270,12 @@ below.
 
 ### Part II — The life the design leaves alone
 
+- [Chapter 8: What Nobody Has to Ask Permission For](08-what-nobody-has-to-ask-permission-for.md)
+  — the free field: what a public actor must establish before it narrows
+  learning, speech, belief, association, inquiry, art, language, or public
+  information, the residual freedom written as a duty on power, and the walls
+  on what power may prescribe.
+
 - [Chapter 9: Earning Above the Floor](09-earning-above-the-floor.md) — keeps
   everything a person may earn — a wage, a supplement, a certificate, collective
   action, a fresh start after insolvency — on the far side of a line the floor
@@ -617,6 +623,7 @@ the domain.
   completed remedy, feasibility, or liveness follows from those rules.
 
 - **Learning, knowledge, media, science, religion, and culture:** Chapters
+  [8](08-what-nobody-has-to-ask-permission-for.md),
   [27](27-a-prisoner-is-a-person.md), [4](04-what-you-are-owed.md), and
   [10](10-contribution.md). Learning has a narrow two-sided route; the wider
   domain does not yet have complete derived coverage.

@@ -67,10 +67,11 @@
       "chapters": [
         {
           "number": 8,
+          "file": "08-what-nobody-has-to-ask-permission-for.md",
           "title": "What Nobody Has to Ask Permission For",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 9,

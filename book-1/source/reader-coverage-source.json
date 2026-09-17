@@ -349,23 +349,6 @@
     {
       "id": "04-08",
       "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "What nobody has to ask permission for",
-      "domain": "Knowledge, communication and culture",
-      "family": "KNOWLEDGE-AND-FREE-FIELD",
-      "function": "ordinary",
-      "setting": "learning, speech, belief, association and culture",
-      "trajectory": "works",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "chooses",
-        "creates",
-        "associates"
-      ]
-    },
-    {
-      "id": "04-09",
-      "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Owed is not the same as delivered",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
@@ -379,7 +362,7 @@
       ]
     },
     {
-      "id": "04-10",
+      "id": "04-09",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "When there is genuinely not enough",
       "domain": "Material floor",
@@ -394,7 +377,7 @@
       ]
     },
     {
-      "id": "04-11",
+      "id": "04-10",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Where the protection stops",
       "domain": "Material floor",
@@ -409,7 +392,7 @@
       ]
     },
     {
-      "id": "04-12",
+      "id": "04-11",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "Owed by whom",
       "domain": "Material floor",
@@ -419,6 +402,68 @@
       "trajectory": "works",
       "basis": "book-1/04-what-you-are-owed.pins.nibli",
       "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "08-00",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "(preamble)",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "ordinary",
+      "setting": "the free field, and what narrowing it has to establish",
+      "trajectory": "works",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "chooses",
+        "creates",
+        "associates"
+      ]
+    },
+    {
+      "id": "08-01",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "The things power may not prescribe",
+      "domain": "Knowledge, communication and culture",
+      "family": "LIBERTY-ECOLOGY",
+      "function": "protective",
+      "setting": "the walls on public power over private and civic life",
+      "trajectory": "works",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "08-02",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "The child with nobody",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "08-03",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "What none of this certifies",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "protective",
+      "setting": "the boundary of a record that certifies nothing",
+      "trajectory": "unresolved",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "private-civic",
       "postures": [
         "receives"
       ]
