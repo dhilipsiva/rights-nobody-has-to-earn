@@ -273,6 +273,11 @@ below.
   concludes that something reached a person, why an absence is not a failure,
   and what a housing repair did not fix.
 
+- [Chapter 6: When There Is Genuinely Not Enough](06-when-there-is-genuinely-not-enough.md)
+  — what has to be established before a shortage may be acted on, what a
+  finding lets anybody do, the priority keys refused by name, and what stays
+  owed to the person who went without.
+
 ### Part II — The life the design leaves alone
 
 - [Chapter 8: What Nobody Has to Ask Permission For](08-what-nobody-has-to-ask-permission-for.md)
@@ -641,6 +646,7 @@ the domain.
 
 - **Food, housing, land, utilities, infrastructure, and public space:** Chapters
   [5](05-whether-it-arrived.md),
+  [6](06-when-there-is-genuinely-not-enough.md),
   [4](04-what-you-are-owed.md), [28](28-where-people-are-put.md), and
   [29](29-the-one-thing-taken.md). The entitlement and confinement cases are
   present; ordinary delivery remains the central gap.
@@ -648,6 +654,7 @@ the domain.
 - **Work, property, enterprise, exchange, money, credit, debt, and public
   finance:** Chapters [9](09-earning-above-the-floor.md),
   [11](11-what-money-cannot-buy.md), [26](26-clawback.md), [4](04-what-you-are-owed.md),
+  [6](06-when-there-is-genuinely-not-enough.md),
   [18](18-the-vote-conviction-does-not-take.md),
   [10](10-contribution.md), [28](28-where-people-are-put.md),
   [29](29-the-one-thing-taken.md),

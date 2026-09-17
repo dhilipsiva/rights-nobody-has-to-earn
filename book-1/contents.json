@@ -49,10 +49,11 @@
         },
         {
           "number": 6,
+          "file": "06-when-there-is-genuinely-not-enough.md",
           "title": "When There Is Genuinely Not Enough",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 7,

@@ -1,0 +1,266 @@
+# ── Chapter 6 fidelity pins: "When There Is Genuinely Not Enough" ───────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/06-when-there-is-genuinely-not-enough.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists two fixtures:
+#   tests/pins/records/child_with_nobody/fixture.nibli
+#   tests/pins/scarcity/priority/false-scarcity-stops-the-allocation/fixture.nibli
+# The second builds the whole ordinary sequence — a reviewed finding, an
+# allocation made under it, a shortfall recorded as failure — and a person
+# standing beside it. This file asks what that sequence concludes and what it
+# leaves alone; the family's own cases carry the rest:
+#   tests/pins/scarcity/priority/false-scarcity-stops-the-allocation
+#                                       establishing that the shortage was a
+#                                       budget choice withdraws the finding,
+#                                       the allocation and the shortfall
+#   tests/pins/scarcity/priority/forbidden-Wealth  and its fourteen siblings —
+#                                       an allocation naming a forbidden key
+#                                       completes nothing
+#   tests/pins/scarcity/priority/finding-does-not-cover-another-resource
+#   tests/pins/scarcity/priority/finding-does-not-cover-another-population
+#   tests/pins/scarcity/defect/positive  a reviewed defect withholds the exact
+#                                       use it names
+#   tests/pins/scarcity/conflict/        the named cross-domain conflicts
+#
+# The vocabulary probes below use one bare lexicon record with no authorised
+# attesters, so they complete nothing and raise no record ambiguity; what they
+# exercise is the closed vocabulary each name belongs to.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 57
+
+# ── The ordinary sequence, from the fixture ────────────────────────────────
+# "A physical shortage has to be established" — and when it is, the manager
+# administers it under published reasons and a challenge somebody must hear.
+? authority(ScarcitySequenceManager, AdministerPhysicalScarcity, ScarcitySequenceAuthorization).
+# => TRUE
+
+? complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).
+# => TRUE
+
+? obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).
+# => TRUE
+
+? obliged(ScarcityAuthorizationReader, HearScarcityChallengeAndCorrect, ScarcitySequenceAuthorization).
+# => TRUE
+
+# "What follows from a finding is bounded in the same way."
+? permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).
+# => TRUE
+
+# "Whatever is still unmet is recorded as failure."
+? obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).
+# => TRUE
+
+? complete(ScarcityUnmetRecord, ReviewedScarcityShortfall, ScarcitySequenceResource).
+# => TRUE
+
+? obliged(ScarcityUnmetReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityUnmetRecord).
+# => TRUE
+
+# ── "not as a fact about the person who went without" ──────────────────────
+# The whole sequence is in the record and the person beside it is untouched.
+? person(ScarcityClaimant).
+# => TRUE
+
+? owe(State, Eats, ScarcityClaimant).
+# => TRUE
+
+? decide(ScarcityClaimant, Ballot).
+# => TRUE
+
+? false(ScarcityClaimant).
+# => FALSE
+
+? lose(Points, ScarcityClaimant).
+# => FALSE
+
+? prisoner(ScarcityClaimant).
+# => FALSE
+
+# ── "What may never decide it is written out" ──────────────────────────────
+# Each name refused by name, in the chapter's own order.
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Wealth, ForbiddenPriorityKeyScope).
+? member(Wealth, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Contribution, ForbiddenPriorityKeyScope).
+? member(Contribution, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Recognition, ForbiddenPriorityKeyScope).
+? member(Recognition, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Conviction, ForbiddenPriorityKeyScope).
+? member(Conviction, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, FamilyStatus, ForbiddenPriorityKeyScope).
+? member(FamilyStatus, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, DisabilityStereotype, ForbiddenPriorityKeyScope).
+? member(DisabilityStereotype, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ExpectedProductivity, ForbiddenPriorityKeyScope).
+? member(ExpectedProductivity, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, SocialUsefulness, ForbiddenPriorityKeyScope).
+? member(SocialUsefulness, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, GeneralizedLifespan, ForbiddenPriorityKeyScope).
+? member(GeneralizedLifespan, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, PoliticalFavour, ForbiddenPriorityKeyScope).
+? member(PoliticalFavour, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Nationality, ForbiddenPriorityKeyScope).
+? member(Nationality, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Citizenship, ForbiddenPriorityKeyScope).
+? member(Citizenship, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ImmigrationStatus, ForbiddenPriorityKeyScope).
+? member(ImmigrationStatus, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Documentation, ForbiddenPriorityKeyScope).
+? member(Documentation, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, MannerOfEntry, ForbiddenPriorityKeyScope).
+? member(MannerOfEntry, ForbiddenPriorityKeyVocabulary).
+# => TRUE
+
+# The list is closed, which is what makes writing it out worth anything: a key
+# nobody enacted is not in it, however it is spelled.
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, UnapprovedScarcityKind, ForbiddenPriorityKeyScope).
+? member(UnapprovedScarcityKind, ForbiddenPriorityKeyVocabulary).
+# => FALSE
+
+# ── "it runs on urgency, accessibility, imminent irreversible harm, harm from
+# broken continuity, and individual resource-specific benefit assessed after
+# accommodation" — the permitted keys are a closed list too.
+? member(Urgency, ScarcityMitigationKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Accessibility, ScarcityMitigationKeyScope).
+? member(Accessibility, ScarcityMitigationKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ImminentIrreversibleHarm, ScarcityMitigationKeyScope).
+? member(ImminentIrreversibleHarm, ScarcityMitigationKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ContinuityHarm, ScarcityMitigationKeyScope).
+? member(ContinuityHarm, ScarcityMitigationKeyVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, IndividualizedResourceSpecificBenefitAfterAccommodation, ScarcityMitigationKeyScope).
+? member(IndividualizedResourceSpecificBenefitAfterAccommodation, ScarcityMitigationKeyVocabulary).
+# => TRUE
+
+# ── "Almost everything that gets called a shortage is not one." ────────────
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, BudgetChoice, FalseScarcityKindScope).
+? member(BudgetChoice, FalseScarcityKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, PriceExclusion, FalseScarcityKindScope).
+? member(PriceExclusion, FalseScarcityKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, AdministrativeDelay, FalseScarcityKindScope).
+? member(AdministrativeDelay, FalseScarcityKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ArtificialWithholding, FalseScarcityKindScope).
+? member(ArtificialWithholding, FalseScarcityKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Monopoly, FalseScarcityKindScope).
+? member(Monopoly, FalseScarcityKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ProviderFailure, FalseScarcityKindScope).
+? member(ProviderFailure, FalseScarcityKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, RefusalToProcure, FalseScarcityKindScope).
+? member(RefusalToProcure, FalseScarcityKindVocabulary).
+# => TRUE
+
+# ── "A physical shortage has to be established" — one admissible ground. ───
+? member(AuthenticatedResourceAndPopulationSpecificPhysicalShortage, ScarcityGroundVocabulary).
+# => TRUE
+
+# ── "Conflicts that are not about supply get the same treatment" ───────────
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, PropertyVersusFloorOrCommons, ScarcityConflictKindScope).
+? member(PropertyVersusFloorOrCommons, ScarcityConflictKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, ExpressionVersusEvidencedHarm, ScarcityConflictKindScope).
+? member(ExpressionVersusEvidencedHarm, ScarcityConflictKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, PrivacyVersusPublicAccountability, ScarcityConflictKindScope).
+? member(PrivacyVersusPublicAccountability, ScarcityConflictKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, LocalChoiceVersusPortability, ScarcityConflictKindScope).
+? member(LocalChoiceVersusPortability, ScarcityConflictKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, PresentClaimVersusFutureConditions, ScarcityConflictKindScope).
+? member(PresentClaimVersusFutureConditions, ScarcityConflictKindVocabulary).
+# => TRUE
+
+observe(ScarcityLexiconWriter, ScarcityLexiconRecord, EmergencyActionVersusNonDerogableProtection, ScarcityConflictKindScope).
+? member(EmergencyActionVersusNonDerogableProtection, ScarcityConflictKindVocabulary).
+# => TRUE
+
+# ── "A request to review ... places a duty on the reader named in the record"
+challenge(ScarcityChapterRequester, ScarcityChapterReader, ScarcityChapterRequest).
+authorized(ScarcityChapterReader, ScarcityChallengeReaderAuthority, ScarcityChapterRequest).
+observe(ScarcityChapterRequester, ScarcityChapterRequest, ScarcityChapterResource, ScarcityChallengeResourceScope).
+? obliged(ScarcityChapterReader, ReviewScarcityFindingAllocationOrShortfall, ScarcityChapterRequest).
+# => TRUE
+
+# "the duty moves only on a positive, independently certified finding that the
+# reader did not respond" — and no such record has been written here.
+? obliged(ScarcityChapterAlternate, ReviewScarcityRequestAndSecureIndependentRemedy, ScarcityChapterRequest).
+# => FALSE
+
+# ── The conclusions cannot be written, only derived. ───────────────────────
+:refuse reasoning /declared derived-only/
+complete(ScarcityChapterRequest, ReviewedPhysicalScarcityFinding, ScarcityChapterResource).
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "nothing about the child moves" — with the whole sequence above in the record.
+? person(Nell).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+? lose(Points, Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
+
+# "What does not follow is a meal."
+? eats(Nell).
+# => FALSE

@@ -52,8 +52,8 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 10 |
 | associates | 6 |
 | requests | 5 |
-| receives | 36 |
-| challenges | 13 |
+| receives | 43 |
+| challenges | 14 |
 | governs | 25 |
 | is acted upon | 60 |
 
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 63 |
+| constructive | 71 |
 | private-civic | 18 |
 | democratic | 23 |
 | coercive | 25 |
@@ -91,7 +91,7 @@ checked here.
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 3 | 1 | 3 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
-| Material floor | 4 | 8 | 9 |
+| Material floor | 5 | 15 | 12 |
 | Non-human animals | 1 | 1 | 2 |
 | Personhood and equality | 14 | 8 | 7 |
 | Public institutions | 8 | 5 | 8 |
@@ -121,14 +121,22 @@ checked here.
 | 04-01 | 04-what-you-are-owed.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-02 | 04-what-you-are-owed.md | When the record cannot say what it says | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | continuity | an asylum determination whose record contradicts itself | is acted upon | fails | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-03 | 04-what-you-are-owed.md | A way to be heard | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-04 | 04-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-05 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
-| 04-06 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-04 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 04-05 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 05-00 | 05-whether-it-arrived.md | (preamble) | Material floor | DELIVERY-RECEIPT | ordinary | the debt, and the next thing the debt does not contain | receives | works | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 05-01 | 05-whether-it-arrived.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 05-02 | 05-whether-it-arrived.md | What that does not fix | Material floor | DELIVERY-RECEIPT | ordinary | shelter that arrives only through conviction | receives | fails | no | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 05-03 | 05-whether-it-arrived.md | The child with nobody | Material floor | DELIVERY-RECEIPT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 05-04 | 05-whether-it-arrived.md | What none of this proves | Material floor | DELIVERY-RECEIPT | protective | the boundary of a record that proves no arrival | receives | unresolved | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
+| 06-00 | 06-when-there-is-genuinely-not-enough.md | (preamble) | Material floor | SCARCITY-AND-CONFLICT | ordinary | the sentence that turns a failure into a fact of nature | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-01 | 06-when-there-is-genuinely-not-enough.md | What has to be true before the word may be used | Material floor | SCARCITY-AND-CONFLICT | protective | what a shortage finding has to establish first | receives | contested | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-02 | 06-when-there-is-genuinely-not-enough.md | What a finding lets anybody do | Material floor | SCARCITY-AND-CONFLICT | continuity | an allocation bounded by the finding it rejoins | receives | continuity-remedy | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-03 | 06-when-there-is-genuinely-not-enough.md | What may never decide it | Material floor | SCARCITY-AND-CONFLICT | protective | the priority keys refused by name | receives | works | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-04 | 06-when-there-is-genuinely-not-enough.md | What is still owed afterwards | Material floor | SCARCITY-AND-CONFLICT | continuity | a shortfall recorded as failure | receives | continuity-remedy | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-05 | 06-when-there-is-genuinely-not-enough.md | When somebody asks and nobody answers | Material floor | SCARCITY-AND-CONFLICT | both | a request to review, and a reader who does not act | challenges | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-06 | 06-when-there-is-genuinely-not-enough.md | The conflicts that are not about supply | Material floor | SCARCITY-AND-CONFLICT | protective | the named cross-domain conflicts | receives | contested | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-07 | 06-when-there-is-genuinely-not-enough.md | The child with nobody | Material floor | SCARCITY-AND-CONFLICT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-08 | 06-when-there-is-genuinely-not-enough.md | What none of this counts | Material floor | SCARCITY-AND-CONFLICT | protective | the boundary of a record that counts no stock | receives | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-02 | 08-what-nobody-has-to-ask-permission-for.md | The child with nobody | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the child with nobody: one birth entry and nothing else | receives | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
