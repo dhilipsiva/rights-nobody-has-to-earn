@@ -9,9 +9,10 @@ qualifying condition. You do not have to work, contribute, belong, register or b
 The executable constitution is the formal source. Book 1 explains its consequences
 in ordinary language; its chapter pins test the corresponding formal claims.
 Checking whether the prose faithfully explains those rules is a separate review,
-not something the verifier certifies. Book 2 is planned to describe operation and
+not something the verifier certifies. Book 2, *What It Would Take*, is planned to describe operation and
 transition within declared local conditions without silently changing that
-destination.
+destination — that book is the road; this one, *The Rights Nobody Has to
+Earn*, is the destination.
 
 ## What is here
 

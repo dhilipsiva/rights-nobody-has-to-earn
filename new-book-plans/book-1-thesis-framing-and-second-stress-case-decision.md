@@ -15,6 +15,16 @@
 > rulings remain unchanged. The author-as-drafter restriction is superseded by
 > the exact-version approval protocol in the narrative-register decision's
 > section 15.
+>
+> **Superseded in scope, 2026-09-16.** The author ruled the caregiverless
+> child the heart of Book 1 — the opening argument, the first derived chapter
+> and a recurring test section in every engine chapter — and ruled chapter
+> order editorial. §3's "whatever density the landed rules support", §4's
+> "substance primacy is not allocatable — chapter order is computed" and §5's
+> refusal of the through-line are superseded by
+> [`../book-1/appendix/decisions/child-with-nobody-decision.md`](../book-1/appendix/decisions/child-with-nobody-decision.md);
+> §2's thesis-form constraints, the register, the no-score rule and the
+> Reasoned posture stand.
 
 ## 1. What was ruled, verbatim
 

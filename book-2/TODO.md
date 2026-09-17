@@ -1,4 +1,9 @@
-# TODO — book-2
+# TODO — book-2 (*What It Would Take*)
+
+*Titled by the author on 2026-09-16, paired with Book 1, *The Rights Nobody Has
+to Earn*: that book is the destination, this one is the road. The ruling is R2
+of "The rebuild of Book 1" in `CLAUDE.md`; the controlling record is
+`book-1/appendix/decisions/reading-order-and-appendix-decision.md`.*
 
 ## Collected ecological and animal implementation handoff — 2026-09-14
 
@@ -37,8 +42,10 @@ claims require **traceable evidence, costs, uncertainty and claim-appropriate
 validation**. Code, quantitative models and data regenerate where applicable;
 qualitative/lived evidence needs auditable provenance and methods; normative
 choices need their lawful decision source. Neither volume may claim the other's
-half or hide an omitted domain at the seam. book-1 references book-2 exactly
-once, at its very end.
+half or hide an omitted domain at the seam. Book 1 names Book 2 at its seams —
+Part V's family section and coercion joint, the method's close, and the opening
+note's first page once the rebuild lands it — by title, and never inside a
+derived chapter (R2, 2026-09-16).
 
 > **Terminology supersession — 2026-08-30.** Retained handoff clauses below that
 > say “Book 1 owns” or “Book 1 defines” a constitutional surface are historical

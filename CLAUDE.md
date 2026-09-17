@@ -5,7 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Its sections are ordered: what the repository is, how work lands, the
 author-ratified rulings, the files, and the long-settled design decisions.
 The rulings section is the largest and is grouped by kind, not by date; each
-ruling names its own controlling record in `new-book-plans/`, which is
+ruling names its own controlling record in `new-book-plans/` — or, from
+2026-09-16, in `book-1/appendix/decisions/` — which is
 authoritative where this summary and that record ever diverge.
 
 ## What This Repository Is
@@ -1547,7 +1548,10 @@ opening note and Part V**, because both are exempt elements in the first-person
 channel. (b) **`method.md` is excluded despite being exempt**, not because it is
 less exempt but because its scope is sealed by five decisions and its reading
 contract is what keeps a documented renderer defect dormant. Derived chapters
-stay closed by three standing rulings; no fourth exempt element exists.
+stay closed by three standing rulings; no fourth exempt element exists. (R4 of
+*The rebuild of Book 1*, 2026-09-16, overrides this narrowly for the directory, not
+the book: `book-1/appendix/` is a carried archive, and the book's exempt elements
+remain three.)
 
 **Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
 draft the Book 1 manuscript, including its epigraph, opening note, numbered
@@ -2625,6 +2629,97 @@ the resolution receipts refuse and what this table used to permit. Nine open:
 four public-claim-limited, three route-unbuilt, two author-ruling-pending, none
 blocking a gate.
 
+### The rebuild of Book 1 — 2026-09-16
+
+Seven rulings from one sitting, taken after the root tracker was retired and
+re-created the same evening as the ordered tracker for this work. Each is
+**ratified but unimplemented** in the standing sense until its tracker item
+lands; the supersession notes that follow implementation are added here as
+each item lands. The controlling records are the first two files under
+`book-1/appendix/decisions/`, the directory the fold (R5) populates.
+
+**R1 — The child is the heart.** The caregiverless child is the opening
+argument (exempt), the first derived chapter (*The Child With Nobody* — a
+record of one line, `born(Nell).`, introduced by fixture and never added to
+the cast), and the closing test section `## The child with nobody` of every
+engine chapter that can run its rule against a person with one entry,
+asserted by membership with reasons for every exemption. "Most vulnerable" is
+a **test on absent entries** — no private route to the floor, no chosen help,
+not acted upon by public power, presence not guaranteed — and the design's
+answer is that the public duty reads none of them: every debt and every
+barrier has `person($x)` as its whole body. It is never a status:
+`vulnerable` stays unadmitted and is pinned as refused; the test is computed
+from silence and reads into nothing; it captures a set (the unconscious
+adult nobody has come for, the person whose only supporter is the one accused
+of failing them, the unaccompanied newcomer, the person whose language nobody
+present speaks) and excludes the prisoner and any child with a recorded
+parent, which is the pair. This supersedes the 2026-08-17 through-line refusal
+in exactly that scope and nothing else: the flat register (the affect warning
+is now printed rather than implied), the `dignity`/`safety` bans, the title
+ruling, the passage rule and `OL-15-v1` stand; the methodological claim stays
+Reasoned in the exempt elements beside its one executable instance; the
+receipt gap for a recipient who cannot choose a witness stays open and named.
+The "hardest stress test" superlative is retired for the pair, which needs no
+winner — the re-measurement the 2026-08-17 ruling required is recorded by
+method in the record. Controlling record:
+`book-1/appendix/decisions/child-with-nobody-decision.md`.
+
+**R2 — Names.** Book 1 keeps *The Rights Nobody Has to Earn* and now speaks
+it. **Book 2 is *What It Would Take*.** Both names are used in every exempt
+element, the front matter, the READMEs, both trackers and the appendix;
+**derived chapters stay name-free** by the author's choice, because a derived
+sentence traces to a rule or a pin and a title is neither. The former
+"book-1 references book-2 exactly once" constraint is retired; it was already
+false. Rejected titles are recorded so they are not re-proposed.
+
+**R3 — The reading order is editorial: engines before breaks.** Chapter order
+was never computed — `3-spine.md` says so itself, and the runtime order is
+the filename prefix — so "strictly computed, never chosen" below is
+superseded, as is the 2026-08-17 "substance primacy is not allocatable". The
+rule: *the chapters run in the order a person meets the design, not the order
+its rules depend on one another* — who counts and what may be written, then
+what is owed and how it reaches, then the life the design leaves alone, then
+the public power that serves it, and only at the end what the design does to
+a person and how it catches itself. `book-1/contents.json` records the rule
+and the final thirty-one-chapter table with reserved slots; development
+tests enforce it; the stratification remains the derivation record. Chapter
+numbers in rulings dated before 2026-09-16 are pre-reorder and are not
+rewritten; the applied maps under `tools/maps/` are the key. Controlling
+record: `book-1/appendix/decisions/reading-order-and-appendix-decision.md`.
+
+**R4 — The appendix is a carried archive, not a fourth channel.** The planning
+record moves under `book-1/appendix/`. The 2026-08-08 refusal of "a fourth
+exempt element" is overridden **narrowly**: the appendix is a non-derived
+element of the *directory*, not of the *book* — no passages, no register, not
+an ordered input to any artifact, outside the edition boundary until a Gate
+B/C decision binds it, unclassified in the coverage ledger, **outside the
+length-invariant measurement**, and never the sole support for a chapter's
+claim. The book's exempt elements remain three; the method part's sealed
+scope is untouched and its "the repository is the appendix" pointer names
+the directory.
+
+**R5 — `new-book-plans/` ceases to exist.** The forty-five human-facing
+planning documents move to `book-1/appendix/{decisions,contracts,briefs,maps}`
+with the `book-1-` prefix dropped; everything else — the constitution, every
+`*-source.json`, the family pins, `counterfactual/`, the generated reports
+and frozen audits, the reader-evidence kit, the reader drafts, the scripts and
+the engine-measurement history — moves by flat rename to `book-1/source/`.
+The relocation tool rewrites every path; the constitution, the rule-family
+sources, every non-comment pins line, `4-strata.py`, `registry/` and
+`reviews/` are asserted byte-identical. Every `new-book-plans/` path in this
+file is a pointer and is rewritten when the move lands.
+
+**R6 — The re-measurement.** Custody remains the deepest derivation chain;
+family and life course is now the widest family, its heads read by no rule;
+in the shipped cast the floor actualities still derive only through
+confinement. Depth and width name different subjects, which is why the
+superlative goes and the pair stays.
+
+**R7 — Two counts corrected.** "Fourteen derived chapters" becomes
+manifest-derived — the digit-gate test reads `book-1/contents.json` instead
+of counting the directory — and "references book-2 exactly once" is replaced
+by R2.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless
@@ -3114,8 +3209,19 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   and restates none of that content.
 - `book-2/TODO.md` — Book 2's own tracker, collection-only until Book 1 — First
   Edition actually ships at Gate C. Collect there; rule in this file.
+- `book-1/appendix/` — the planning record carried with the book (R4/R5 of *The
+  rebuild of Book 1*): `decisions/`, `contracts/`, `briefs/`, `maps/`. Its first two
+  files are the two 2026-09-16 controlling records; the other forty-five arrive
+  with the tracker's move item. Non-derived, outside the reading order and the
+  length measurement, never the sole support for a chapter's claim.
+- `book-1/source/`, `book-1/contents.json`, `tools/` — created by the tracker's
+  items: the formal source and everything else from `new-book-plans/` by flat
+  rename; the chapter manifest (rule, parts, landed and planned entries); the
+  relocation tool and its applied maps.
 - `new-book-plans/` — constitution, substantive design decisions, legal
-  contracts, formal pins, and historical planning material. The decisions and
+  contracts, formal pins, and historical planning material. **Moves under
+  `book-1/` by the tracker's move item (R5)**: decisions, contracts, briefs and
+  maps to `book-1/appendix/`, everything else to `book-1/source/`. The decisions and
   contracts retain their subject-matter meaning; old verifier/audit procedures
   are retired under the 2026-09-12 author decision.
 - `tests/pins/suites.json` — explicit execution inventory, shared bases,
@@ -3515,9 +3621,14 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   cannot be settled by accident later. A session may propose the thesis sentence under the 2026-08-20 protocol;
   approval of that exact displayed version makes it canonical. The controlling record is
   `new-book-plans/book-1-thesis-framing-and-second-stress-case-decision.md`.
+  **Superseded in scope 2026-09-16 by R1 of *The rebuild of Book 1***: the
+  child is the heart — opening argument, first chapter, recurring test
+  section — and chapter order is editorial; the §2 thesis-form constraints,
+  the register, the no-score rule and the Reasoned posture stand.
 
 - **The voice boundary is the derivation boundary**, ruled 2026-08-02. The plain, direct,
-  reader-facing register of the fourteen derived chapters is ratified as their voice — it is a
+  reader-facing register of the derived chapters — fourteen at the ruling, manifest-derived
+  since 2026-09-16 — is ratified as their voice — it is a
   voice, and the texture ruling cites its restraint as the thesis performed. The author's
   first person enters at exactly the three elements the derivation gate already exempts: the
   opening note, Part V, and the method part. **The seam is audible and deliberate** — a reader
@@ -3561,8 +3672,9 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   adds it, cite nibli README's "Trust boundary" callout by heading. The part's quoted error
   messages were reproduced against the built engine on landing day; the stress-surface
   paragraph's upstream inventory names artifact classes, never counts, because upstream
-  counts rot. book-1 references book-2 exactly once, in this file's closing lines — do not
-  add a second reference anywhere.
+  counts rot. Book 1 names Book 2 at its seams — Part V and this file's closing lines —
+  and by title since the 2026-09-16 naming ruling (R2); derived chapters never name
+  either book. The former "exactly once" constraint is retired.
 
 - **The reach strategy: public construction from a home of its own**, ruled
   2026-08-02, qualified by E2 + P1 + D2 on 2026-08-04, and bounded to Gate C
@@ -3726,8 +3838,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 
 - **Two severity refusals, both on lexical/structural grounds rather than taste.** **Directness is refused**: the committed corpus has exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`, `injure` — and none means "directly"; `cause` (rinka) compiles but puts the person in the *effect* slot and is true of every injury in the cast, so as a boolean it routes nothing. Do not re-propose without a corpus name that carries the meaning. **Graded tiers are refused**: `building(MedSec, $x)` compiles and the constant is free, but `building/2` has no exclusivity constraint. Its relation-wide closure blocks direct ground assertions; it does not stop rules from deriving two placements for an offender matching two combinations, and `err(_, Placement)` is blind to that conflict at runtime. The full verifier's generated placement audit rejects a conflicting source outcome when run; it does not give the deployed society a reader or remedy. A graded outcome needs a mutual-exclusion marker built in the same edit.
 - **Never route a constitutional judgment through the compute backend**, and the reason is not performance. An external predicate is a **trusted oracle, not something nibli proves**: a `true` reply is auto-asserted as a ground fact mid-query and never re-derived or checked (nibli `README.md:18`, and the *Trust boundary* callout in its compute-backend section — **cite that one by its heading, not a line number**; the citation has rotted twice, `:333` then `:323`, and is `:325` today). So a grade, tier or severity computed there enters the record as *a conclusion someone wrote*, which is exactly what chapter 1 says this design makes impossible. Embedding the backend changes who operates the oracle, not whether the result is derived. **Built-in arithmetic is different on trust and identical on lifecycle** — `product`/`sum`/`quotient` are computed locally with no third party, but the arithmetic fast path calls the same `assert_typed_fact`, so they leave the same untracked ground fact; "carries none of the oracle problem" is true of trust only. Two engine behaviours worth stating precisely because the earlier wording overstated both: an unreachable backend yields `UNKNOWN(BackendUnavailable)` and never `FALSE`, but a tuple already computed in that session still answers TRUE from the auto-asserted fact — an outage-*cache*, not a stall. And a universal over a number-bearing predicate is still vacuously true. It is **sometimes** no longer silent, and the earlier wording here overstated that twice. Since nibli `95cba22` a `[Domain]` note fires — but only where the restricting relation is **asserted**; put one rule in between and it goes quiet again (their corrected repro: `sum(every dog, 2, 2)` notes, the one-hop twin `sum(every animal, 2, 2)` does not). And **neither the note nor the proof step is reachable from `nibli-pin`**, which is the only binary this repo runs — verified 2026-08-01, no flag exposes it, and `nibli-host` still fails outright on a stale wasm. So treat the diagnostic as absent here, not as a safety net. What actually contains this is that there is nothing numeric to quantify over. The digit ban that kept it that way was a `verify.sh` section the 2026-09-12 decision retired; it is re-established as the development test `floor_vector_tests::nothing_in_the_enacted_lines_is_a_quantity`, which is negative-controlled and, being a development test, adds no gate to verification. Compute is legitimate for the claim registry and the method part; never for the society's own conclusions.
-- **Chapter order is strictly computed**, never chosen. Exactly three elements are exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.
-- **The length invariant is "book-1 stays majority-derived, measured across the whole book"** — the derived chapters must outweigh the opening note plus Part V plus the method part, combined. **The ~38,000 target for Parts I–IV is retired — ruled 2026-08-03: content governs.** The book's length is an outcome, not a goal: expansion happens only where verified-untold material exists (TRUE in the engine, absent from prose), and every non-derived part landed under its old budget by exactly that rule (Part V ~5,500 against ~12,000; the method part ~4,100 against ~5,000). Figures are hand-maintained and go stale — re-run `wc -w book-1/*.md` before trusting any; measured 2026-08-03: derived 29,440 against 10,545 non-derived, the invariant holding with a wide margin. Do **not** restate the old cap — *"~14,500 against ~36,000 derived keeps it near 29%"* — and do not restate the retired 38,000 as a target; both belong to git history now.
+- **Chapter order is editorial — superseded 2026-09-16.** The sentence that stood here, "strictly computed, never chosen", was never true of the repository: `3-spine.md` generates the stratification and hand-lists the chapters, and the runtime order is the filename prefix. The rule is now *engines before breaks*, recorded in `book-1/contents.json` and enforced by development tests (R3 of *The rebuild of Book 1*). Exactly three elements remain exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.
+- **The length invariant is "book-1 stays majority-derived, measured across the whole book"** — the derived chapters must outweigh the opening note plus Part V plus the method part, combined. **The ~38,000 target for Parts I–IV is retired — ruled 2026-08-03: content governs.** The book's length is an outcome, not a goal: expansion happens only where verified-untold material exists (TRUE in the engine, absent from prose), and every non-derived part landed under its old budget by exactly that rule (Part V ~5,500 against ~12,000; the method part ~4,100 against ~5,000). Figures are hand-maintained and go stale — re-run `wc -w book-1/*.md` before trusting any; measured 2026-08-03: derived 29,440 against 10,545 non-derived, the invariant holding with a wide margin. Do **not** restate the old cap — *"~14,500 against ~36,000 derived keeps it near 29%"* — and do not restate the retired 38,000 as a target; both belong to git history now. Since 2026-09-16 the measurement covers the ordered inputs only: `book-1/appendix/` and `book-1/source/` are outside it (R4).
 
 **Legacy `book.md` (below) — historical; do not port these into book-1 without re-checking them against the constitution:**
 

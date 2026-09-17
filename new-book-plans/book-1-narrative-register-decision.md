@@ -169,6 +169,15 @@ Two deltas, named rather than left to be discovered:
 Derived chapters stay closed to non-derived content by three standing rulings.
 No fourth exempt element is created.
 
+*Narrowed 2026-09-16.* The reading-order-and-appendix decision
+([`../book-1/appendix/decisions/reading-order-and-appendix-decision.md`](../book-1/appendix/decisions/reading-order-and-appendix-decision.md))
+overrides the refusal above for the *directory*, not the *book*: the planning
+record is carried under `book-1/appendix/` as a non-derived archive with no
+passages, no register, no place in the reading order or the length
+measurement, and no power to be the sole support for a chapter's claim. The
+book's exempt elements remain three, and the method part's sealed scope is
+untouched.
+
 ## 6. Supply
 
 **Author-drafted.** This decision defines the slot, the form, the assertion
