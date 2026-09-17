@@ -424,6 +424,143 @@
       ]
     },
     {
+      "id": "09-00",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "(preamble)",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "ordinary",
+      "setting": "what may be earned above a floor that is never earned",
+      "trajectory": "works",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "works",
+        "chooses"
+      ]
+    },
+    {
+      "id": "09-01",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "Whose work it is",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "worker status by control and dependency, not label",
+      "trajectory": "works",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "works"
+      ]
+    },
+    {
+      "id": "09-02",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "Acting together",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "ordinary",
+      "setting": "collective action and the narrow continuity power",
+      "trajectory": "works",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "associates"
+      ]
+    },
+    {
+      "id": "09-03",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "A licence needs a reason, and a certificate opens no door",
+      "domain": "Economy, property, work and commons",
+      "family": "QUALIFICATIONS-COMPENSATION",
+      "function": "ordinary",
+      "setting": "a licence as a public power; a certificate read by nothing",
+      "trajectory": "works",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "works",
+        "chooses"
+      ]
+    },
+    {
+      "id": "09-04",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "Pay is a record with the kind named in it",
+      "domain": "Economy, property, work and commons",
+      "family": "QUALIFICATIONS-COMPENSATION",
+      "function": "ordinary",
+      "setting": "a promise, an independent attestation, a kind",
+      "trajectory": "works",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "works"
+      ]
+    },
+    {
+      "id": "09-05",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "A supplement above the floor",
+      "domain": "Economy, property, work and commons",
+      "family": "INCOME-SECURITY",
+      "function": "ordinary",
+      "setting": "a contribution record and an adjudicated event, dormant in the cast",
+      "trajectory": "unresolved",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "09-06",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "When the money runs out",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "continuity",
+      "setting": "fresh start, guarantee, temporary powers with an end",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "09-07",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "The child with nobody",
+      "domain": "Economy, property, work and commons",
+      "family": "INCOME-SECURITY",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "09-08",
+      "chapter": "book-1/09-earning-above-the-floor.md",
+      "section": "What none of this counts",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "the boundary of a record that holds no amount",
+      "trajectory": "unresolved",
+      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "10-00",
       "chapter": "book-1/10-contribution.md",
       "section": "(preamble)",

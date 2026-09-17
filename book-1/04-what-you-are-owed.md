@@ -754,32 +754,12 @@ here, and the chapter on public answerability prices exactly what deleting its
 supporting entry would do.
 
 Then the limits, and they have the shape everything in this chapter has.
+What a person may earn above the floor — a wage, a supplement, a certificate —
+has its own chapter, and the whole of what it says here is that none of it
+touches the floor in either direction.
 
-Above the floor, the record can hold a contribution history, and a supplement
-for illness, disability, unemployment, caregiving, injury at work, age, or the
-death of a provider can be concluded from it. The conclusion needs the
-contribution record and a separate finding that the event happened, made for
-that person under the same scheme by someone who is not the carrier that would
-owe the supplement. Either alone concludes nothing. Neither touches the floor
-in any direction: a person with no contribution history keeps everything the
-floor owes, and a person whose supplement is withheld loses nothing else. When
-the carrier fails, the same record and the same finding conclude the supplement
-against the public guarantee instead. What the supplement is worth, whether it
-is funded, and whether it is paid are not in this record at all.
-
-Compensation above the floor — a wage, a profit, a return, a grant, a prize, a
-subsidy, an incentive — is one kind of record with the kind named in it, and it
-is concluded only when someone authorised for that person, who is not the
-payer, attests the same kind on a stated basis. The payer's own word concludes
-nothing. A certificate that a body attested someone can do a named thing is
-concluded the same way and is then read by nothing: it opens no door the floor
-keeps shut and shuts none the floor keeps open. Neither passes to a child. Only
-a court's finding of fraud on the attested basis blocks that payment, and it
-concludes restitution for that basis alone; the floor is not in the sentence.
-How much any of this is worth, and whether it is paid, are not in this record.
-
-The power to bind concentrated private power is not open-ended either, and this
-is where it stopped being a form of words. A finding that a private function
+The power to bind concentrated private power is not open-ended, and this is
+where it stopped being a form of words. A finding that a private function
 carries public duties has to state its ground, and the grounds are named in the
 constitution itself: that the function is essential, that one actor dominates
 it, that it is the gate others must pass, that people depend on it, that they

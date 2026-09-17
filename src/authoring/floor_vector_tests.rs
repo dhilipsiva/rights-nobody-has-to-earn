@@ -784,3 +784,80 @@ fn no_duty_compels_or_certifies_a_personal_state() {
         );
     }
 }
+
+/// Purpose-limited records: a contribution record is written by a scheme and a
+/// promise of pay by a payer, and each is read by exactly the rules that
+/// conclude what it is for — never under negation, never concluded, never by
+/// anything else. The engine does not enforce this: both are base relations,
+/// so a rule confining a person for lacking one has no negative cycle for the
+/// stratifier to refuse, and `counterfactual/unguarded-contribution-reader`
+/// and `counterfactual/unguarded-compensation-reader` show it deriving. This
+/// test is the guard the 2026-09-05 ruling named, re-established as a
+/// development test after the retired repository audit; those two copies are
+/// its watched failing controls.
+const PURPOSE_LIMITED: [(&str, &[&str]); 2] = [("pay", &["insure"]), ("promise", &["provide"])];
+
+fn purpose_limited_violations(statements: &[String]) -> Vec<String> {
+    let mut violations = Vec::new();
+    for (relation, readers) in PURPOSE_LIMITED {
+        let read = Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])(~?){relation}\(")).unwrap();
+        for statement in statements {
+            let Some((body, head)) = split(statement) else {
+                if statement.starts_with(&format!("{relation}(")) {
+                    violations.push(format!("'{relation}' is asserted by the constitution itself: {statement}"));
+                }
+                continue;
+            };
+            if head_relation(head) == relation {
+                violations.push(format!("'{relation}' is concluded by a rule; it is a record, never a conclusion: {statement}"));
+            }
+            for found in read.captures_iter(body) {
+                if &found[1] == "~" {
+                    violations.push(format!("'{relation}' is read under negation; its absence may never be a premise: {statement}"));
+                } else if !readers.contains(&head_relation(head)) {
+                    violations.push(format!("'{relation}' is read by a rule concluding '{}', outside its purpose: {statement}", head_relation(head)));
+                }
+            }
+        }
+    }
+    violations
+}
+
+#[test]
+fn a_purpose_limited_record_is_read_only_for_its_purpose() {
+    let statements = statements();
+    let violations = purpose_limited_violations(&statements);
+    assert!(violations.is_empty(), "{}", violations.join("\n"));
+    for relation in PURPOSE_LIMITED.map(|(relation, _)| relation) {
+        assert!(
+            statements.iter().any(|s| split(s).is_some_and(|(body, _)| body.contains(&format!("{relation}(")))),
+            "'{relation}' is no longer read at all; a guard over a vanished record passes for nothing"
+        );
+    }
+    // The watched failing controls: the exact hostile readers the execution
+    // inventory keeps as counterfactual bases, applied to the real statements.
+    let context = Context::discover().expect("repository");
+    let inventory: serde_json::Value =
+        serde_json::from_str(&context.read("tests/pins/suites.json").unwrap()).unwrap();
+    for (base, relation) in [
+        ("counterfactual/unguarded-contribution-reader", "pay"),
+        ("counterfactual/unguarded-compensation-reader", "promise"),
+    ] {
+        let edits = inventory["bases"][base]["edits"].as_array().expect("hostile base");
+        let mut hostile = statements.clone();
+        for edit in edits {
+            let before = edit["before"].as_str().unwrap();
+            let after = edit["after"].as_str().unwrap();
+            for line in after.strip_prefix(before).unwrap_or(after).lines() {
+                if !line.trim().is_empty() {
+                    hostile.push(line.trim().to_owned());
+                }
+            }
+        }
+        let found = purpose_limited_violations(&hostile);
+        assert!(
+            found.iter().any(|v| v.contains(&format!("'{relation}' is read under negation"))),
+            "{base} no longer trips the guard; the control must fail"
+        );
+    }
+}

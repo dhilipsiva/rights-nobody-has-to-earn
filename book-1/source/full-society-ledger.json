@@ -105485,8 +105485,8 @@
       ],
       "prose_refs": [
         "book-1/03-what-counts-as-evidence.md::A contribution record is the one purpose-bound entry,",
-        "book-1/04-what-you-are-owed.md::Above the floor, the record can hold a contribution history, and a supplement",
-        "book-1/10-contribution.md::A contribution history is a different thing, and the design keeps it different.",
+        "book-1/09-earning-above-the-floor.md::Above the floor, the record can hold a contribution history, and a supplement",
+        "book-1/09-earning-above-the-floor.md::A contribution history is a different thing from recognition",
         "book-1/method.md::The income-security family adds one writable relation, `pay`, and one",
         "book-1/00-opening-note.md::- **Contribution record:** an entry that someone paid into a named scheme. It"
       ],
@@ -105535,8 +105535,8 @@
       ],
       "prose_refs": [
         "book-1/03-what-counts-as-evidence.md::Someone promised a payment of a named kind to someone.",
-        "book-1/04-what-you-are-owed.md::Compensation above the floor \u2014 a wage, a profit, a return, a grant, a prize, a",
-        "book-1/10-contribution.md::A certificate is not recognition either, and neither is a wage.",
+        "book-1/09-earning-above-the-floor.md::Compensation above the floor \u2014 a wage, a profit, a return, a grant, a prize, a",
+        "book-1/09-earning-above-the-floor.md::A certificate is the gentler record.",
         "book-1/method.md::The qualifications-and-compensation family adds one writable relation,",
         "book-1/00-opening-note.md::- **Certificate:** the conclusion that an authorised body attested a function"
       ],
@@ -105599,7 +105599,7 @@
         "book-1/source/counterfactual/unnamed-public-scale-trigger.pins.nibli::# Counterfactual: a sixteenth vocabulary rule admitting a revenue threshold as a ground"
       ],
       "prose_refs": [
-        "book-1/04-what-you-are-owed.md::The power to bind concentrated private power is not open-ended either, and this",
+        "book-1/04-what-you-are-owed.md::The power to bind concentrated private power is not open-ended, and this is",
         "book-1/30-when-the-system-notices-it-broke.md::There is a second shape of the same limit, and the finding that binds concentrated",
         "book-1/method.md::The public-scale vocabulary family adds one conclusion-only head, `member`, and a",
         "book-1/00-opening-note.md::- **Public-scale finding:** the conclusion that a named private function carries"

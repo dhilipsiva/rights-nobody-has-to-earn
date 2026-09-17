@@ -74,10 +74,11 @@
         },
         {
           "number": 9,
+          "file": "09-earning-above-the-floor.md",
           "title": "Earning Above the Floor",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 10,

@@ -270,6 +270,11 @@ below.
 
 ### Part II — The life the design leaves alone
 
+- [Chapter 9: Earning Above the Floor](09-earning-above-the-floor.md) — keeps
+  everything a person may earn — a wage, a supplement, a certificate, collective
+  action, a fresh start after insolvency — on the far side of a line the floor
+  never crosses, and says what none of those conclusions proves.
+
 - [Chapter 10: Contribution](10-contribution.md) — recognises teaching, work,
   and honest examination without turning recognition into a number, price, or
   claim on the floor.
@@ -610,7 +615,7 @@ the domain.
   present; ordinary delivery remains the central gap.
 
 - **Work, property, enterprise, exchange, money, credit, debt, and public
-  finance:** Chapters [26](26-clawback.md), [4](04-what-you-are-owed.md),
+  finance:** Chapters [9](09-earning-above-the-floor.md), [26](26-clawback.md), [4](04-what-you-are-owed.md),
   [18](18-the-vote-conviction-does-not-take.md),
   [10](10-contribution.md), [28](28-where-people-are-put.md),
   [29](29-the-one-thing-taken.md),

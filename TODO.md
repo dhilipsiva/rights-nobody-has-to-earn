@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-8. **09 — Earning Above the Floor** (NEW; cuts 08:758-779, 10:95-114; closes
-   INCOME-SECURITY, QUALIFICATIONS-COMPENSATION, half of ECONOMIC).
 9. **11 — What Money Cannot Buy** (NEW; cuts 08:781-800; closes ECONOMIC,
    PUBLIC-SCALE-VOCABULARY).
 10. **Implement the substantive-equality ordinary half** (`equality-source.json`,

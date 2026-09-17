@@ -46,13 +46,13 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 5 |
+| chooses | 7 |
 | creates | 2 |
 | cares | 2 |
-| works | 6 |
-| associates | 3 |
+| works | 10 |
+| associates | 4 |
 | requests | 3 |
-| receives | 15 |
+| receives | 19 |
 | challenges | 12 |
 | governs | 23 |
 | is acted upon | 54 |
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 26 |
+| constructive | 35 |
 | private-civic | 15 |
 | democratic | 23 |
 | coercive | 25 |
@@ -85,7 +85,7 @@ checked here.
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 5 | 6 |
 | Ecology, future generations and commons | 2 | 1 | 3 |
-| Economy, property, work and commons | 6 | 6 | 7 |
+| Economy, property, work and commons | 12 | 9 | 10 |
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 6 | 7 | 4 |
 | Knowledge, communication and culture | 1 | 1 | 1 |
@@ -130,8 +130,17 @@ checked here.
 | 04-10 | 04-what-you-are-owed.md | When there is genuinely not enough | Material floor | SCARCITY-AND-CONFLICT | continuity | a genuine shortage | receives | continuity-remedy | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-11 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-12 | 04-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
+| 09-00 | 09-earning-above-the-floor.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | what may be earned above a floor that is never earned | works, chooses | works | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-01 | 09-earning-above-the-floor.md | Whose work it is | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | worker status by control and dependency, not label | works | works | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-02 | 09-earning-above-the-floor.md | Acting together | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | collective action and the narrow continuity power | associates | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-03 | 09-earning-above-the-floor.md | A licence needs a reason, and a certificate opens no door | Economy, property, work and commons | QUALIFICATIONS-COMPENSATION | ordinary | a licence as a public power; a certificate read by nothing | works, chooses | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-04 | 09-earning-above-the-floor.md | Pay is a record with the kind named in it | Economy, property, work and commons | QUALIFICATIONS-COMPENSATION | ordinary | a promise, an independent attestation, a kind | works | works | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-05 | 09-earning-above-the-floor.md | A supplement above the floor | Economy, property, work and commons | INCOME-SECURITY | ordinary | a contribution record and an adjudicated event, dormant in the cast | receives | unresolved | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-06 | 09-earning-above-the-floor.md | When the money runs out | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | fresh start, guarantee, temporary powers with an end | receives | continuity-remedy | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-07 | 09-earning-above-the-floor.md | The child with nobody | Economy, property, work and commons | INCOME-SECURITY | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-08 | 09-earning-above-the-floor.md | What none of this counts | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that holds no amount | receives | unresolved | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 10-00 | 10-contribution.md | (preamble) | Economy, property, work and commons | ARTICLES | ordinary | three routes to recognition, and care walking through two of them | works, cares, creates | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
-| 10-01 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
+| 10-01 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | no | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-02 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-03 | 10-contribution.md | Recognition for looking at people | Economy, property, work and commons | ARTICLES | ordinary | recognition for examining people | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 10-04 | 10-contribution.md | What is lost | Economy, property, work and commons | ARTICLES | protective | what the absence of arithmetic costs | works | unresolved | yes | private-civic | `book-1/10-contribution.pins.nibli` |

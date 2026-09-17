@@ -161,7 +161,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 07 | Who Owes, and What Follows | — | derived | engine | planned |
 | **Part II — The life the design leaves alone** | | | | | |
 | 08 | What Nobody Has to Ask Permission For | — | derived | engine | planned |
-| 09 | Earning Above the Floor | — | derived | engine | planned |
+| 09 | Earning Above the Floor | `09-earning-above-the-floor.md` | derived | engine | landed |
 | 10 | Contribution | `10-contribution.md` | derived | engine | landed |
 | 11 | What Money Cannot Buy | — | derived | engine | planned |
 | 12 | The Same Route for Everyone | — | derived | engine | planned |

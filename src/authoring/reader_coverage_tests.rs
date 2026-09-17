@@ -178,3 +178,65 @@ fn the_postures_nobody_occupies_are_the_ones_recorded() {
          stopped showing somebody doing something."
     );
 }
+
+/// Rule families with a marked block in the constitution and no passage
+/// tagged to them in the ledger. "Book 1 must project each landed family" is
+/// the ruling; this is the census. Three on 2026-09-17, after the economy
+/// chapter rendered ECONOMIC-CONSTITUTION, INCOME-SECURITY and
+/// QUALIFICATIONS-COMPENSATION; each Phase B chapter removes its family, and
+/// the empty expectation then stays so the next family that lands without a
+/// passage fails here instead of passing quietly.
+const UNRENDERED_FAMILIES: [&str; 3] = [
+    "LIBERTY-ECOLOGY",
+    "PUBLIC-SCALE-VOCABULARY",
+    "SUBSTANTIVE-EQUALITY",
+];
+
+/// Ledger family tags that name no block: the kernel articles, the placement
+/// rules, and the exempt Part V.
+const LEDGER_ONLY_FAMILIES: [&str; 3] = ["ARTICLES", "PLACEMENT", "exempt"];
+
+/// Every family the constitution carries as a marked block, read from the
+/// source so a family that lands without a passage fails rather than passes.
+fn constitutional_families(context: &Context) -> BTreeSet<String> {
+    let marker = Regex::new(r"^# <([A-Z][A-Z0-9-]*)-BEGIN>$").expect("marker");
+    context
+        .read("book-1/source/constitution.nibli")
+        .expect("constitution")
+        .lines()
+        .filter_map(|line| marker.captures(line.trim()).map(|c| c[1].to_owned()))
+        .map(|name| {
+            let name = name
+                .trim_end_matches("-RULES")
+                .trim_end_matches("-ADMISSIONS")
+                .trim_end_matches("-DERIVED")
+                .trim_end_matches("-FACTS")
+                .to_owned();
+            // The economic family's derived-only roster is marked ECONOMIC.
+            if name == "ECONOMIC" { "ECONOMIC-CONSTITUTION".to_owned() } else { name }
+        })
+        // The temporal articles are kernel, tagged ARTICLES in the ledger.
+        .filter(|name| !name.starts_with("T1") && !name.starts_with("T2") && !name.starts_with("T3"))
+        .collect()
+}
+
+#[test]
+fn every_constitutional_family_is_projected_by_a_passage() {
+    let context = Context::discover().expect("repository");
+    let records = records(&context).expect("ledger source");
+    let blocks = constitutional_families(&context);
+    assert!(blocks.len() > 15, "the block census collapsed to {}", blocks.len());
+    let tagged: BTreeSet<String> = records.iter().map(|r| r.family.clone()).collect();
+    let unrendered: BTreeSet<String> = blocks.difference(&tagged).cloned().collect();
+    assert_eq!(
+        unrendered,
+        UNRENDERED_FAMILIES.iter().map(ToString::to_string).collect(),
+        "the set of rule families Book 1 does not project changed. A new arrival is a \
+         family that landed without a passage; a departure belongs out of UNRENDERED_FAMILIES."
+    );
+    let orphan: Vec<&String> = tagged
+        .iter()
+        .filter(|f| !LEDGER_ONLY_FAMILIES.contains(&f.as_str()) && !blocks.contains(*f))
+        .collect();
+    assert!(orphan.is_empty(), "passages tagged to a family no block carries: {orphan:?}");
+}
