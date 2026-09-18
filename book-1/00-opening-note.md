@@ -348,6 +348,11 @@ below.
   political home and atomic transfer, and keeps the supplied-record result
   distinct from a delivered ballot or operated election.
 
+- [Chapter 19: What May Be Kept About You](19-what-may-be-kept-about-you.md) —
+  a holding permitted for a declared purpose and nothing else, with watching,
+  computing and deciding as separate permissions that must rejoin the exact
+  holding reviewed, and a subject who is a handle rather than a verdict.
+
 - [Chapter 22: Changing the Rules](22-changing-the-rules.md) — keeps the older
   declared-target law label separate from a source-bound constitutional result,
   then separates both from exact source identity, publication, deployment, and

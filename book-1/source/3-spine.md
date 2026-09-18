@@ -172,7 +172,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 16 | Public Answerability, and Why It Is Never Revoked | `16-public-answerability.md` | derived | engine | landed |
 | 17 | How Public Power Is Built | `17-how-public-power-is-built.md` | derived | engine | landed |
 | 18 | The Vote Conviction Does Not Take | `18-the-vote-conviction-does-not-take.md` | derived | engine | landed |
-| 19 | What May Be Kept About You | — | derived | engine | planned |
+| 19 | What May Be Kept About You | `19-what-may-be-kept-about-you.md` | derived | engine | landed |
 | 20 | A Crisis Does Not Suspend the Republic | — | derived | engine | planned |
 | 21 | A Way to Be Heard | — | derived | engine | planned |
 | 22 | Changing the Rules | `22-changing-the-rules.md` | derived | engine | landed |

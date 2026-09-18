@@ -138,36 +138,6 @@
     {
       "id": "03-02",
       "chapter": "book-1/03-what-counts-as-evidence.md",
-      "section": "Counting without ranking people",
-      "domain": "Records and accountability",
-      "family": "OFFICIAL-STATISTICS",
-      "function": "both",
-      "setting": "official statistics and planning",
-      "trajectory": "works",
-      "basis": "book-1/03-what-counts-as-evidence.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "03-03",
-      "chapter": "book-1/03-what-counts-as-evidence.md",
-      "section": "Keeping, watching, and letting a machine help",
-      "domain": "Records and accountability",
-      "family": "RECORD-POWER",
-      "function": "both",
-      "setting": "records, surveillance and automated support",
-      "trajectory": "works",
-      "basis": "book-1/03-what-counts-as-evidence.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "03-04",
-      "chapter": "book-1/03-what-counts-as-evidence.md",
       "section": "Facts and conclusions are kept apart",
       "domain": "Records and accountability",
       "family": "ARTICLES",
@@ -181,7 +151,7 @@
       ]
     },
     {
-      "id": "03-05",
+      "id": "03-03",
       "chapter": "book-1/03-what-counts-as-evidence.md",
       "section": "One person's word does not move anything",
       "domain": "Records and accountability",
@@ -196,7 +166,7 @@
       ]
     },
     {
-      "id": "03-06",
+      "id": "03-04",
       "chapter": "book-1/03-what-counts-as-evidence.md",
       "section": "The way this gets taken apart",
       "domain": "Records and accountability",
@@ -211,7 +181,7 @@
       ]
     },
     {
-      "id": "03-07",
+      "id": "03-05",
       "chapter": "book-1/03-what-counts-as-evidence.md",
       "section": "The other way in",
       "domain": "Records and accountability",
@@ -2152,6 +2122,81 @@
       "trajectory": "unresolved",
       "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
       "pattern": "democratic",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "19-00",
+      "chapter": "book-1/19-what-may-be-kept-about-you.md",
+      "section": "(preamble)",
+      "domain": "Records and accountability",
+      "family": "RECORD-POWER",
+      "function": "ordinary",
+      "setting": "the records kept about a person, and the permissions over them",
+      "trajectory": "works",
+      "basis": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "19-01",
+      "chapter": "book-1/19-what-may-be-kept-about-you.md",
+      "section": "Keeping, watching, and letting a machine help",
+      "domain": "Records and accountability",
+      "family": "RECORD-POWER",
+      "function": "both",
+      "setting": "records, surveillance and automated support",
+      "trajectory": "works",
+      "basis": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "19-02",
+      "chapter": "book-1/19-what-may-be-kept-about-you.md",
+      "section": "Counting without ranking people",
+      "domain": "Records and accountability",
+      "family": "OFFICIAL-STATISTICS",
+      "function": "both",
+      "setting": "official statistics and planning",
+      "trajectory": "works",
+      "basis": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "19-03",
+      "chapter": "book-1/19-what-may-be-kept-about-you.md",
+      "section": "The child with nobody",
+      "domain": "Records and accountability",
+      "family": "RECORD-POWER",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "19-04",
+      "chapter": "book-1/19-what-may-be-kept-about-you.md",
+      "section": "What none of this holds",
+      "domain": "Records and accountability",
+      "family": "RECORD-POWER",
+      "function": "protective",
+      "setting": "the boundary of a record family that stores nothing",
+      "trajectory": "unresolved",
+      "basis": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+      "pattern": "records",
       "postures": [
         "is acted upon"
       ]

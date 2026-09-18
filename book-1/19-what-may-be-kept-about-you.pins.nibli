@@ -1,0 +1,116 @@
+# ── Chapter 19 fidelity pins: "What May Be Kept About You" ─────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/19-what-may-be-kept-about-you.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists two fixtures:
+#   tests/pins/records/child_with_nobody/fixture.nibli
+#   tests/pins/record-power/power/holding-defect-and-rights-sequence
+# The second builds a reviewed holding, the watching that rejoins it, and the
+# automated support that rejoins both, with a person standing beside them.
+#
+# The rest of the two families' coverage is cited rather than duplicated:
+#   tests/pins/record-power/power/holding-does-not-cover-another-subject
+#                                       a holding reviewed about one person
+#                                       licenses nothing about another
+#   tests/pins/record-power/power/unrelated-defect   a defect stops the exact
+#                                       use it names and leaves the rest
+#   tests/pins/record-power/{holding,processing,automated,access,retention,
+#                            nonresponse,defect}/   the field, attester,
+#                                       vocabulary, version and period matrix
+#   tests/pins/statistics/{use,pattern,rebuttal,data-wall,access,challenge,
+#                          release,nonresponse,defect}/   the statistical
+#                                       interface, its remedial-proceeding
+#                                       presumption and its criminal-burden
+#                                       wall
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 20
+
+# ── "Keeping one is permitted for a declared purpose and for nothing else." ─
+? complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).
+# => TRUE
+
+? authority(RecordSequenceHolder, DeliverTheServiceRecorded, RecordSequenceAuthorization).
+# => TRUE
+
+# "accurate and correctable on request ... and open to the person it is about"
+? obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).
+# => TRUE
+
+# "retaliation for objecting" is one of the defects the family names, and the
+# duty not to retaliate is a conclusion rather than an aspiration.
+? obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).
+# => TRUE
+
+# ── "Watching is a separate permission, and it points at the exact holding
+# that was reviewed." ─────────────────────────────────────────────────────
+? permits(RecordSequenceHolder, OrdinaryRecordKeeping, RecordSequenceRecord).
+# => TRUE
+
+? complete(RecordSequenceRecord, ReviewedRecordProcessing, RecordSequenceSubject).
+# => TRUE
+
+# "and notice to the person afterwards"
+? obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).
+# => TRUE
+
+# ── "Letting a machine help is a permission of its own, and the design keeps
+# it as help." ────────────────────────────────────────────────────────────
+# "There has to be an explanation of what went in and how it was reasoned"
+? obliged(RecordSequenceHolder, ExplainAutomatedSupportAndAllowContest, RecordSupportRecord).
+# => TRUE
+
+# "a real chance to contest before anything takes effect"
+? permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).
+# => TRUE
+
+# "a human and independent review that actually decides"
+? obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).
+# => TRUE
+
+? complete(RecordSupportRecord, ReviewedAutomatedDecisionSupport, RecordSequenceSubject).
+# => TRUE
+
+# ── "None of it says anything about the person." ───────────────────────────
+# The subject of a holding is an opaque handle, not a roster entry: keeping a
+# record about somebody does not put them on the roster, and this is the
+# direction that matters — it cannot take them off it either. Writing a birth
+# or an encounter for this handle is what would make personhood derive, and
+# the record family supplies neither.
+? person(RecordSequenceSubject).
+# => FALSE
+
+? false(RecordSequenceSubject).
+# => FALSE
+
+? prisoner(RecordSequenceSubject).
+# => FALSE
+
+? lose(Points, RecordSequenceSubject).
+# => FALSE
+
+# And nobody else in the record moves either.
+? owe(State, Eats, Hano).
+# => TRUE
+
+? decide(Hano, Ballot).
+# => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "The floor does not run through a file" — no record about this child exists
+# and every debt holds anyway.
+? person(Nell).
+# => TRUE
+
+? owe(State, Healthy, Nell).
+# => TRUE
+
+# "an entry naming this child would be an entry, not a finding" — and no such
+# entry has been written, so nothing about the child is held at all.
+? false(Nell).
+# => FALSE

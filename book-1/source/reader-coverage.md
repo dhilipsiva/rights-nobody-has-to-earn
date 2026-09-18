@@ -52,10 +52,10 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 5 |
-| receives | 56 |
+| receives | 57 |
 | challenges | 22 |
 | governs | 33 |
-| is acted upon | 61 |
+| is acted upon | 63 |
 
 ## Chapter patterns
 
@@ -69,7 +69,7 @@ what matters is the book's shape, not the chapter's.
 | private-civic | 28 |
 | democratic | 32 |
 | coercive | 27 |
-| records | 26 |
+| records | 29 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -96,7 +96,7 @@ checked here.
 | Personhood and equality | 15 | 8 | 7 |
 | Public institutions | 10 | 10 | 12 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
-| Records and accountability | 10 | 13 | 14 |
+| Records and accountability | 11 | 15 | 17 |
 
 ## Every passage
 
@@ -111,12 +111,10 @@ checked here.
 | 01-06 | 01-the-child-with-nobody.md | What this chapter does not establish | Personhood and equality | UNIVERSAL-STANDING | protective | the boundary of a one-entry record | receives | unresolved | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 03-00 | 03-what-counts-as-evidence.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-01 | 03-what-counts-as-evidence.md | What is missing | Records and accountability | ARTICLES | protective | the closed evidence list | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-02 | 03-what-counts-as-evidence.md | Counting without ranking people | Records and accountability | OFFICIAL-STATISTICS | both | official statistics and planning | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-03 | 03-what-counts-as-evidence.md | Keeping, watching, and letting a machine help | Records and accountability | RECORD-POWER | both | records, surveillance and automated support | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-04 | 03-what-counts-as-evidence.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-05 | 03-what-counts-as-evidence.md | One person's word does not move anything | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-06 | 03-what-counts-as-evidence.md | The way this gets taken apart | Records and accountability | ARTICLES | protective | widening the record | is acted upon | contested | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-07 | 03-what-counts-as-evidence.md | The other way in | Records and accountability | ARTICLES | protective | a fabricated direct entry | is acted upon | unresolved | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
+| 03-02 | 03-what-counts-as-evidence.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
+| 03-03 | 03-what-counts-as-evidence.md | One person's word does not move anything | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
+| 03-04 | 03-what-counts-as-evidence.md | The way this gets taken apart | Records and accountability | ARTICLES | protective | widening the record | is acted upon | contested | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
+| 03-05 | 03-what-counts-as-evidence.md | The other way in | Records and accountability | ARTICLES | protective | a fabricated direct entry | is acted upon | unresolved | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 04-00 | 04-what-you-are-owed.md | (preamble) | Material floor | ARTICLES | ordinary | the floor in one breath | receives | works | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-01 | 04-what-you-are-owed.md | A way to be heard | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | yes | coercive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 04-02 | 04-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
@@ -245,6 +243,11 @@ checked here.
 | 18-07 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-08 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-09 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 19-00 | 19-what-may-be-kept-about-you.md | (preamble) | Records and accountability | RECORD-POWER | ordinary | the records kept about a person, and the permissions over them | is acted upon | works | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
+| 19-01 | 19-what-may-be-kept-about-you.md | Keeping, watching, and letting a machine help | Records and accountability | RECORD-POWER | both | records, surveillance and automated support | is acted upon | works | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
+| 19-02 | 19-what-may-be-kept-about-you.md | Counting without ranking people | Records and accountability | OFFICIAL-STATISTICS | both | official statistics and planning | is acted upon | works | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
+| 19-03 | 19-what-may-be-kept-about-you.md | The child with nobody | Records and accountability | RECORD-POWER | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
+| 19-04 | 19-what-may-be-kept-about-you.md | What none of this holds | Records and accountability | RECORD-POWER | protective | the boundary of a record family that stores nothing | is acted upon | unresolved | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Approved and marked dead | Democracy and amendment | AMENDMENT-ENACTMENT | protective | an approved amendment marked dead | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-02 | 22-changing-the-rules.md | Why the list guards itself | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the register that guards itself | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
