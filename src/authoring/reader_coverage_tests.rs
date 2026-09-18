@@ -147,10 +147,64 @@ fn the_book_is_not_one_failure_first_formula() {
 /// progress and the list growing is a passage that lost its subject.
 const UNOCCUPIED_POSTURES: [&str; 0] = [];
 
-/// Postures held by two passages or fewer. Thin is not absent, and the two
-/// thinnest are the ones the portfolio standard cares most about: somebody
-/// making something, and somebody caring for somebody.
-const THIN_POSTURES: [&str; 3] = ["associates", "cares", "creates"];
+/// Postures held by two passages or fewer. Thin is not absent, and a thin
+/// posture is usually a missing interface rather than a missing paragraph — the
+/// way to fill one is to land the rules that let somebody do the thing, not to
+/// write a passage about it. Measured 2026-09-18, after the rebuild: `cares`
+/// and `associates` left when the life-course and mobility families were
+/// rendered, and `creates` is the one that remains.
+const THIN_POSTURES: [&str; 1] = ["creates"];
+
+#[test]
+fn the_thin_postures_are_the_ones_recorded() {
+    let context = Context::discover().expect("repository");
+    let records = records(&context).expect("ledger source");
+    let held = |posture: &str| {
+        records
+            .iter()
+            .filter(|record| record.postures.iter().any(|entry| entry == posture))
+            .count()
+    };
+    let thin: BTreeSet<String> = POSTURES
+        .iter()
+        .filter(|posture| {
+            let count = held(posture);
+            count > 0 && count <= 2
+        })
+        .map(|posture| (*posture).to_owned())
+        .collect();
+    assert_eq!(
+        thin,
+        THIN_POSTURES.iter().map(ToString::to_string).collect(),
+        "the set of postures carried by two passages or fewer changed. A          posture leaving is progress; a posture arriving means the book stopped          showing somebody doing something it used to show."
+    );
+}
+
+/// Every rule family the book renders must state a boundary somewhere it is
+/// rendered. A family projected only in the affirmative reads as a promise, and
+/// the whole register of this book is that a legal conclusion is not an event.
+/// Boundary is read out of the prose rather than declared, so a family cannot
+/// claim a disclosure its passages do not make.
+#[test]
+fn every_family_states_a_boundary_where_it_is_rendered() {
+    let context = Context::discover().expect("repository");
+    let records = records(&context).expect("ledger source");
+    let mut families: BTreeMap<String, bool> = BTreeMap::new();
+    for record in &records {
+        let stated = states_boundary(&context, record).expect("passage");
+        let entry = families.entry(record.family.clone()).or_default();
+        *entry = *entry || stated;
+    }
+    let silent: BTreeSet<&String> = families
+        .iter()
+        .filter(|(_, stated)| !**stated)
+        .map(|(family, _)| family)
+        .collect();
+    assert!(
+        silent.is_empty(),
+        "these families are rendered without stating a boundary anywhere:          {silent:?}. A family projected only in the affirmative reads as a          promise."
+    );
+}
 
 #[test]
 fn the_postures_nobody_occupies_are_the_ones_recorded() {

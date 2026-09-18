@@ -85,7 +85,7 @@ checked here.
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 8 | 7 |
 | Ecology, future generations and commons | 5 | 3 | 6 |
-| Economy, property, work and commons | 19 | 13 | 16 |
+| Economy, property, work and commons | 19 | 13 | 17 |
 | Emergency and resilience | 3 | 2 | 4 |
 | Justice and coercion | 13 | 10 | 9 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
@@ -167,7 +167,7 @@ checked here.
 | 09-02 | 09-earning-above-the-floor.md | Acting together | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | collective action and the narrow continuity power | associates | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-03 | 09-earning-above-the-floor.md | A licence needs a reason, and a certificate opens no door | Economy, property, work and commons | QUALIFICATIONS-COMPENSATION | ordinary | a licence as a public power; a certificate read by nothing | works, chooses | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-04 | 09-earning-above-the-floor.md | Pay is a record with the kind named in it | Economy, property, work and commons | QUALIFICATIONS-COMPENSATION | ordinary | a promise, an independent attestation, a kind | works | works | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
-| 09-05 | 09-earning-above-the-floor.md | A supplement above the floor | Economy, property, work and commons | INCOME-SECURITY | ordinary | a contribution record and an adjudicated event, dormant in the cast | receives | unresolved | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
+| 09-05 | 09-earning-above-the-floor.md | A supplement above the floor | Economy, property, work and commons | INCOME-SECURITY | ordinary | a contribution record and an adjudicated event, dormant in the cast | receives | unresolved | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-06 | 09-earning-above-the-floor.md | When the money runs out | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | fresh start, guarantee, temporary powers with an end | receives | continuity-remedy | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-07 | 09-earning-above-the-floor.md | The child with nobody | Economy, property, work and commons | INCOME-SECURITY | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-08 | 09-earning-above-the-floor.md | What none of this counts | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that holds no amount | receives | unresolved | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |

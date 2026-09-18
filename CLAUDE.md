@@ -2639,9 +2639,16 @@ lands; the supersession notes that follow implementation are added here as
 each item lands. The controlling records are the first two files under
 `book-1/appendix/decisions/`, the directory the fold (R5) populates.
 
-**R1 — The child is the heart.** *(The chapter, its pins and the opening
-argument landed 2026-09-17, `session-drafted, author-approved under delegated
-approval (2026-09-17)`; the slots and the reorder follow.)* The caregiverless child is the opening
+**R1 — The child is the heart.** *(Landed in full. The chapter, its pins and
+the opening argument landed 2026-09-17; the recurring section landed
+2026-09-18 in every derived chapter that can run it, with four exemptions
+carrying reasons — chapter 1 is the case, chapter 10 already carries Cira,
+chapter 23 turns on a credential a one-entry record cannot hold, and chapters
+24 and 26 turn on an exposure the child has not made and a recognition the
+child has never held. Two membership tests hold it:
+`every_derived_chapter_runs_the_child_or_says_why_not` and
+`every_child_slot_loads_the_one_line_record`, the second of which caught a slot
+whose second case did not load the record.)* The caregiverless child is the opening
 argument (exempt), the first derived chapter (*The Child With Nobody* — a
 record of one line, `born(Nell).`, introduced by fixture and never added to
 the cast), and the closing test section `## The child with nobody` of every
@@ -2678,7 +2685,11 @@ false. Rejected titles are recorded so they are not re-proposed.
 **R3 — The reading order is editorial: engines before breaks.** *(Landed
 2026-09-17: the manifest carries the rule and the thirty-one-chapter table with
 fifteen reserved slots, the files carry the final numbers, and
-`derived_chapters_run_engines_before_breaks` enforces the partition.)* Chapter order
+`derived_chapters_run_engines_before_breaks` enforces the partition. Completed
+2026-09-18: every reserved slot is filled, no `planned` entry remains, and the
+share the ordering exists to protect is measured rather than asserted — 41 of
+232 passages are coercive, against 153 of provision, private life and
+democratic agency, bounded by `the_book_is_not_one_failure_first_formula`.)* Chapter order
 was never computed — `3-spine.md` says so itself, and the runtime order is
 the filename prefix — so "strictly computed, never chosen" below is
 superseded, as is the 2026-08-17 "substance primacy is not allocatable". The
@@ -2693,7 +2704,10 @@ numbers in rulings dated before 2026-09-16 are pre-reorder and are not
 rewritten; the applied maps under `tools/maps/` are the key. Controlling
 record: `book-1/appendix/decisions/reading-order-and-appendix-decision.md`.
 
-**R4 — The appendix is a carried archive, not a fourth channel.** The planning
+**R4 — The appendix is a carried archive, not a fourth channel.** *(Landed
+2026-09-17 with the move; confirmed by measurement 2026-09-18 — the
+length-invariant figures recorded under R6 count the ordered inputs only, and
+`book-1/appendix/` and `book-1/source/` are outside them.)* The planning
 record moves under `book-1/appendix/`. The 2026-08-08 refusal of "a fourth
 exempt element" is overridden **narrowly**: the appendix is a non-derived
 element of the *directory*, not of the *book* — no passages, no register, not
@@ -2704,7 +2718,10 @@ claim. The book's exempt elements remain three; the method part's sealed
 scope is untouched and its "the repository is the appendix" pointer names
 the directory.
 
-**R5 — `new-book-plans/` ceases to exist.** The forty-five human-facing
+**R5 — `new-book-plans/` ceases to exist.** *(Landed 2026-09-17. The
+directory is gone, every path in this file points at its new home, and
+`every_reviewed_reference_resolves_exactly_once` holds the rewrite against a
+dated baseline.)* The forty-five human-facing
 planning documents move to `book-1/appendix/{decisions,contracts,briefs,maps}`
 with the `book-1-` prefix dropped; everything else — the constitution, every
 `*-source.json`, the family pins, `counterfactual/`, the generated reports
@@ -2720,6 +2737,19 @@ family and life course is now the widest family, its heads read by no rule;
 in the shipped cast the floor actualities still derive only through
 confinement. Depth and width name different subjects, which is why the
 superlative goes and the pair stays.
+
+*Re-measured 2026-09-18, after the rebuild.* All three findings hold, and the
+third is now executable in the book rather than only in the source: chapter 27
+runs the pair side by side and derives shelter and recorded speech for the
+confined person and neither for the child, with both owed both. The reader
+ledger's own census moved where the interfaces moved — `cares` and `associates`
+left the thin set when the life-course and mobility families were rendered, and
+`creates` is the only posture left at two passages or fewer, which is the
+pattern the ledger predicts: a thin posture is a missing interface, not a
+missing paragraph. Book 1 measures 68,666 derived words against 24,884
+non-derived (opening note 7,468; Part V 9,245; method 8,171), so the
+majority-derived invariant holds with a wide margin; `book-1/appendix/` and
+`book-1/source/` are outside that measurement per R4.
 
 **R7 — Two counts corrected.** "Fourteen derived chapters" becomes
 manifest-derived — the digit-gate test reads `book-1/contents.json` instead
@@ -3198,28 +3228,22 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
 
-- `TODO.md` — **the ordered tracker for the 2026-09-16 rebuild of Book 1**:
-  the child with nobody at the heart, engines before breaks, every family
-  rendered, both books named, and the former `new-book-plans/` merged under
-  `book-1/`.
-  Work it one item at a time, in order; delete an item when it lands. It is a
-  work list, not a second statement of any gate or discipline — the rulings
-  here control, and its item 1 moves the design it carries into the two
-  controlling decision records and cuts it from the tracker. History: the
-  previous root tracker was retired and deleted earlier the same day (git
-  retains it), its open items all closed or ruled, and its durable content
-  moved to where each piece belongs — the gate ladder to
-  `book-1/appendix/decisions/full-society-boundary-decision.md`, the Book 2 seam
-  discipline and legacy-volume inheritance to `book-2/TODO.md`, the standing
-  facts, methods and two live obligations to the sections of this file above.
-  The new tracker exists on the author's explicit instruction of that evening
-  and restates none of that content.
+- `TODO.md` — **retired 2026-09-18, its work complete** (git retains it). It
+  was the ordered tracker for the 2026-09-16 rebuild of Book 1: the child with
+  nobody at the heart, engines before breaks, every family rendered, both books
+  named, and the former `new-book-plans/` merged under `book-1/`. Every item
+  landed. What it produced is recorded where it belongs rather than in a work
+  list — the seven rulings and their supersession notes in *The rebuild of Book
+  1* above, the design in the two controlling decision records under
+  `book-1/appendix/decisions/`, the chapter table in `book-1/contents.json`,
+  and the standing measurements under R3 and R6. The root tracker it replaced
+  was retired the same way on 2026-09-16.
 - `book-2/TODO.md` — Book 2's own tracker, collection-only until Book 1 — First
   Edition actually ships at Gate C. Collect there; rule in this file.
 - `book-1/appendix/` — the planning record carried with the book (R4/R5 of *The
-  rebuild of Book 1*): `decisions/`, `contracts/`, `briefs/`, `maps/`. Its first two
-  files are the two 2026-09-16 controlling records; the other forty-five arrive
-  with the tracker's move item. Non-derived, outside the reading order and the
+  rebuild of Book 1*): `decisions/`, `contracts/`, `briefs/`, `maps/`. All
+  forty-seven files arrived with the 2026-09-17 move; the two 2026-09-16
+  controlling records sit among them. Non-derived, outside the reading order and the
   length measurement, never the sole support for a chapter's claim.
 - `book-1/contents.json` — the chapter manifest: front matter, parts, every
   chapter with its number, file, title, role (derived/exempt), group

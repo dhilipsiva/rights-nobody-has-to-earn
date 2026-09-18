@@ -172,6 +172,13 @@ never under negation, never concluded, and the copy of the constitution with
 the hostile rule added is kept as the guard's watched failing control. That is
 the honest shape of this protection — a check on the text, not a law of nature.
 
+And the boundary of the whole route belongs in the same breath as the route.
+A concluded supplement establishes no payment. It does not prove that a scheme
+holds the money, that a carrier is solvent, that the public guarantee has
+anything behind it, or that anything reached the person the conclusion is
+about. Amounts, funding, actuarial assumptions and scheme administration are
+not in this record, and the second book owns every one of them.
+
 ## When the money runs out
 
 Personal insolvency is a fresh start, and the barriers say what a fresh start
