@@ -71,6 +71,44 @@ starting diagnosis or promising a particular rating.
   reader testing, expert endorsement, empirical evidence or operational success.
   Do not treat AI agreement as independent validation.
 
+## Resolve before defending — author instruction, 2026-09-18
+
+This rule governs every item and its completion criteria. Exposing, labeling or
+explaining a defect is not a substitute for correcting the design.
+
+1. Establish the actual failure and its cause against the current source. Try
+   substantive repairs, including a different representation, narrower power,
+   replacement mechanism, simplification or removal. Examine nonessential
+   design choices rather than treating an inherited decision as an immovable
+   constraint. Preserve the constitutional commitments stated above and record
+   any policy supersession under the standing delegated approval.
+2. Implement and verify a sound resolution when available. Test both the
+   legitimate behavior that must remain and the harmful behavior that must stop,
+   including downstream interactions. Rewrite the reader-facing account to
+   describe the resulting current design; do not narrate the repair history.
+3. Defend a remaining limitation only when resolution is shown to be impossible
+   within explicitly stated, justified constraints. Record the alternatives
+   examined, their results and the necessary constraint preventing resolution in
+   the existing repository decision record. A failed encoding, inconvenient
+   implementation, elapsed effort, tooling limit or lack of a discovered fix is
+   not proof that the constitutional problem cannot be solved. State the scope
+   of any impossibility result; do not infer universal impossibility from a
+   finite search. Uncertainty or an execution blocker leaves the issue open.
+4. An adequate fallback defense must explain why the constraint is necessary,
+   why the chosen arrangement is preferable to available alternatives, who bears
+   the remaining harm, what safeguards and remedies limit it, and what evidence
+   would require reconsideration. Merely calling a cost a trade-off, disclosing
+   it honestly, or showing that a pin reproduces it does not meet this standard.
+5. If neither resolution nor an adequate defense is established, keep the item
+   open and pursue redesign, removal or narrowing of the unjustified mechanism
+   or claim. Do not transfer a constitutional defect to Book 2 to close it.
+
+Completion must distinguish a verified repair, a finding disproved by current
+evidence, a necessarily constrained and adequately defended limitation, and an
+unresolved defect or blocker. Only the first three can close the relevant issue.
+Reader-facing prose states present rules and justified limits; the attempted
+solutions and development history stay outside the book's reading sequence.
+
 ## I. Repair the substantive arguments
 
 ### 01. Separate access to appeal from appellate relief
@@ -142,9 +180,11 @@ it. Distinguish an unrelated prosecution from retaliation disguised as one.
 
 **Done when:** the genuine, mistaken, deliberately false, repeated, historical
 and reviewer-targeting disclosure cases have explicit outcomes; unrelated
-wrongdoing receives an argued treatment; the Rex sequence is resolved or its
-remaining cost is justified against a tested narrower alternative; and both
-retaliation risk and harm to other affected people appear in the argument.
+wrongdoing receives an argued treatment; the Rex sequence is resolved through
+a verified design change, or meets every requirement of the resolve-before-
+defending rule; and both retaliation risk and harm to other affected people
+appear in the argument. Comparing alternatives alone does not establish that
+resolution is impossible or justify closing the issue.
 
 ### 05. Justify the public purpose of contribution and recognition
 
@@ -208,8 +248,10 @@ Book 2 without attempting to solve them here.
 
 **Done when:** each case identifies the right-holder, current duty-bearer,
 trigger, evidence, limit, failure, interim protection and review route; public
-power does not extend itself through failure; and gaps are fixed or accurately
-classified without claiming that an unfulfilled duty performed an action.
+power does not extend itself through failure; and constitutional gaps are fixed
+or meet the resolve-before-defending standard. Classification or disclosure
+alone does not close a gap. Operational handoffs must be genuine operational
+questions, and an unfulfilled duty must not be described as a performed action.
 
 ## II. Strengthen evidence and justification
 
@@ -260,8 +302,11 @@ attribute human criticism only where an actual source supports it. Treat the
 kitchen and other imagined scenes as hypothetical, without invented testimony.
 
 **Done when:** all five joints examine the final design; each conclusion follows
-from its argument; no success is inferred from AI agreement; and unresolved
-trade-offs remain visible without repeating the whole constitutional catalogue.
+from its argument; no success is inferred from AI agreement; and every retained
+design failure meets the resolve-before-defending standard. If the argument
+reveals a repairable failure, return it to substantive implementation rather
+than making its disclosure the conclusion. Present justified residual costs
+without repeating the whole constitutional catalogue or the repair history.
 
 ### 12. Make the optional method accurate and useful to a skeptical reader
 
@@ -413,9 +458,10 @@ of assuming the performance target. Check that all factual citations and the
 submission package still describe the final text.
 
 **Done when:** required checks actually complete; failures and incomplete
-contradiction checks are resolved; remaining modeled defects are explicitly
-dispositioned and accurately disclosed; and no material defect identified for
-repair is relabeled as a success merely because its pin passes.
+contradiction checks are resolved; any retained modeled defect satisfies the
+resolve-before-defending standard with supporting evidence; and no material
+defect is relabeled as a success merely because its pin passes. A described
+but unresolved defect, resource limit or tooling blocker cannot pass this item.
 
 ### 20. Give the finished manuscript a fresh, evidence-based review
 
@@ -426,13 +472,16 @@ Use the strongest objections, not agreement with the politics, as the test.
 Distinguish formal results, editorial judgment and optional external feedback.
 Name the remaining weaknesses and the strongest chapters with specific examples.
 If a material defect remains, add a concrete repair task and complete its
-necessary validation before declaring this backlog finished. Do not create
-cosmetic work or keep revising merely to force a higher numerical rating.
+necessary validation before declaring this backlog finished. A fallback defense
+is available only under the resolve-before-defending rule, never as a shortcut
+around implementation. Do not create cosmetic work or keep revising merely to
+force a higher numerical rating.
 
 **Done when:** the substantive problems in this review have supported
-dispositions; all chapters meet the observable standards above; no known
-material error is left without a repair or an honest limitation; and the final
-assessment states the book's actual quality without guaranteeing "10/10."
+dispositions under the resolve-before-defending rule; all chapters meet the
+observable standards above; no known material error remains merely disclosed
+or rhetorically defended; and the final assessment states the book's actual
+quality without guaranteeing "10/10."
 
 ## Licence
 

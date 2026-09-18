@@ -19,6 +19,12 @@ the opening, Part V and method. Keep the book's development and revision history
 in Git and repository decision records, not in the reader narrative. Follow the
 2026-09-18 current-design ruling in `CLAUDE.md` on every future revision.
 
+Resolve design failures before defending them: try substantive repairs and
+verify a sound resolution. A fallback defense requires demonstrated inability
+to resolve the issue under named, justified constraints and an adequate account
+of alternatives, costs and safeguards. Disclosure or a failed attempt is not
+completion. Follow the 2026-09-18 resolve-before-defending ruling in `CLAUDE.md`.
+
 ## Verification — author decision, 2026-09-12
 
 Verification means executing the substantive Nibli pins and checking the

@@ -42,6 +42,32 @@ they must not become accounts of superseded designs. Do not conceal a present
 defect or present a historical result as a current test. Preserve immutable
 published editions: "current" means the design bound to that edition.
 
+## Resolve design failures before defending them — author decision, 2026-09-18
+
+When a failure can be corrected in the design, correct it. Confirm the failure,
+try substantive repairs and alternative representations, and consider narrowing,
+replacing or removing the faulty mechanism. Reconsider nonessential inherited
+choices under the standing delegated approval while preserving constitutional
+commitments and recording substantive supersessions. Implement and verify a
+sound resolution before revising the reader-facing account of the current design.
+
+An adequately defended limitation is a fallback only when resolution is shown
+to be impossible within named, justified constraints. Record alternatives,
+results and the necessary constraint in the existing repository decision record.
+A failed encoding, tooling limit, implementation cost or unsuccessful search is
+not proof of impossibility; uncertainty or blocked execution leaves the issue
+open. Bound any impossibility claim to what the evidence actually establishes.
+
+A fallback defense must establish why the constraint is necessary, why the
+chosen arrangement is preferable to available alternatives, who bears its cost,
+the safeguards and remedies, and what would require reconsideration. Disclosure,
+an asserted trade-off or a passing known-defect pin is insufficient. If neither
+repair nor adequate defense is established, keep the work open and pursue
+redesign, removal or narrowing; do not relabel a constitutional defect as Book 2
+operation. This supersedes earlier permission to close work merely by exposing
+or acknowledging a design failure. The book states the resulting present design
+and justified limits; attempted repairs and development history stay in the repo.
+
 ## Verification and authoring — author decision, 2026-09-12
 
 The author clarified that verification means **Nibli pins and contradiction
