@@ -3228,9 +3228,12 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
 
-- `TODO.md` — **retired 2026-09-18, its work complete** (git retains it). It
-  was the ordered tracker for the 2026-09-16 rebuild of Book 1: the child with
-  nobody at the heart, engines before breaks, every family rendered, both books
+- `TODO.md` — the ordered revision backlog requested on 2026-09-18 after the
+  manuscript review, covering substantive corrections, evidence, editing and
+  publication preparation. Creating the plan does not implement its items.
+  Its predecessor was **retired 2026-09-18, its work complete** (git retains
+  it): the ordered tracker for the 2026-09-16 rebuild of Book 1, placing the
+  child with nobody at the heart, engines before breaks, every family rendered, both books
   named, and the former `new-book-plans/` merged under `book-1/`. Every item
   landed. What it produced is recorded where it belongs rather than in a work
   list — the seven rulings and their supersession notes in *The rebuild of Book
