@@ -106,6 +106,111 @@
       ]
     },
     {
+      "id": "02-00",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "(preamble)",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "ordinary",
+      "setting": "whether the answer depended on the birth",
+      "trajectory": "works",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "02-01",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "The ways in",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "ordinary",
+      "setting": "a birth, an encounter, a presence, a holding",
+      "trajectory": "works",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "02-02",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "A name at an encounter is a handle",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "protective",
+      "setting": "a name that turns out to be wrong",
+      "trajectory": "works",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "02-03",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "What cannot take it away",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "protective",
+      "setting": "an entry recording somebody as dead",
+      "trajectory": "works",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "02-04",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "The standing roots do not replace this line",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "ordinary",
+      "setting": "standing without a roster",
+      "trajectory": "works",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "02-05",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "The child with nobody",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "02-06",
+      "chapter": "book-1/02-who-counts.md",
+      "section": "What none of this observes",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "protective",
+      "setting": "the boundary of a route nobody has to walk down",
+      "trajectory": "unresolved",
+      "basis": "book-1/02-who-counts.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "03-00",
       "chapter": "book-1/03-what-counts-as-evidence.md",
       "section": "(preamble)",
@@ -2844,21 +2949,6 @@
       "pattern": "constructive",
       "postures": [
         "is acted upon"
-      ]
-    },
-    {
-      "id": "27-05",
-      "chapter": "book-1/27-a-prisoner-is-a-person.md",
-      "section": "The standing roots do not replace this line",
-      "domain": "Personhood and equality",
-      "family": "UNIVERSAL-STANDING",
-      "function": "ordinary",
-      "setting": "standing without a roster",
-      "trajectory": "works",
-      "basis": "book-1/27-a-prisoner-is-a-person.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
       ]
     },
     {

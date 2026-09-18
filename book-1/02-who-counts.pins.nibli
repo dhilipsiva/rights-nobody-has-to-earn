@@ -1,0 +1,120 @@
+# ── Chapter 2 fidelity pins: "Who Counts" ──────────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/02-who-counts.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli
+# and writes its own roots inline, because each root is one fact and writing
+# them here is what lets this file ask the same questions of each.
+#
+# The family's own coverage is book-1/source/universal-standing.pins.nibli,
+# which carries FS-CCE-01 through FS-CCE-08 with their counterfactuals. This
+# file asks the chapter's claim rather than the family's: that what follows
+# from each root is identical.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 24
+
+# ── "There is more than one way a person enters this design" ───────────────
+born(WhoBorn).
+at(WhoMet, FirstContact).
+at(WhoPresent, RepublicJurisdiction).
+at(WhoHeld, EffectiveControl).
+
+? person(WhoBorn).
+# => TRUE
+
+? person(WhoMet).
+# => TRUE
+
+? person(WhoPresent).
+# => TRUE
+
+? person(WhoHeld).
+# => TRUE
+
+# ── "the rooms behind them are the same room" ──────────────────────────────
+# The same debt, asked of each root in turn.
+? owe(State, Eats, WhoBorn).
+# => TRUE
+
+? owe(State, Eats, WhoMet).
+# => TRUE
+
+? owe(State, Eats, WhoPresent).
+# => TRUE
+
+? owe(State, Eats, WhoHeld).
+# => TRUE
+
+# And the entitlement, which is the other half of the floor's shape.
+? entitled(WhoPresent, event { eats() }).
+# => TRUE
+
+? entitled(WhoHeld, event { secure() }).
+# => TRUE
+
+# ── "It proves no civil identity, no citizenship, no family relationship, no
+# liability and no guilt." ────────────────────────────────────────────────
+? authority(WhoMet).
+# => FALSE
+
+? prisoner(WhoMet).
+# => FALSE
+
+? false(WhoMet).
+# => FALSE
+
+# ── "An alias claim is not an identity merge ... in either direction." ─────
+cite(Registry, WhoAliasClaim, WhoMet).
+cite(Registry, WhoAliasClaim, WhoPresent).
+? match(WhoMet, WhoPresent).
+# => FALSE
+
+? match(WhoPresent, WhoMet).
+# => FALSE
+
+# ── "a public body cannot be smuggled in through the encounter route" ──────
+at(Court, FirstContact).
+? person(Court).
+# => FALSE
+
+# ── "A mistaken status entry does not retract personhood." ─────────────────
+cite(Registry, WhoDeathEntry, WhoMet).
+broken(WhoDeathEntry).
+? person(WhoMet).
+# => TRUE
+
+# The broken entry stays on the record as a broken entry.
+? broken(WhoDeathEntry).
+# => TRUE
+
+# ── "Missing or disputed evidence of age does not postpone standing" ───────
+# It costs exactly what it should cost and no more.
+? at(WhoPresent, GeneralAdulthood).
+# => FALSE
+
+? decide(WhoPresent, Ballot).
+# => FALSE
+
+? person(WhoPresent).
+# => TRUE
+
+# ── "the routes here are generous about who counts, and entirely silent
+# about who notices" ──────────────────────────────────────────────────────
+? eats(WhoHeld).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "the child is a person because of an entry that says nothing else about
+# them. That is the whole mechanism, and it is the same mechanism" — the birth
+# root asked of the fixture rather than of a probe written in this file.
+? person(Nell).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE

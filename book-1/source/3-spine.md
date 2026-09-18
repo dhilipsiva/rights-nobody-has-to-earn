@@ -153,7 +153,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 |---|---|---|---|---|---|
 | **Part I — Who counts, and what they are owed** | | | | | |
 | 01 | The Child With Nobody | `01-the-child-with-nobody.md` | derived | engine | landed |
-| 02 | Who Counts | — | derived | engine | planned |
+| 02 | Who Counts | `02-who-counts.md` | derived | engine | landed |
 | 03 | What Counts as Evidence | `03-what-counts-as-evidence.md` | derived | engine | landed |
 | 04 | What You Are Owed | `04-what-you-are-owed.md` | derived | engine | landed |
 | 05 | Whether It Arrived | `05-whether-it-arrived.md` | derived | engine | landed |

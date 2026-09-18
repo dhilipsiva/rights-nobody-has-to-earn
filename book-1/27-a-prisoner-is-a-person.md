@@ -199,29 +199,3 @@ of who is outside becomes a question a powerful person answers.
 The design refuses the carve-out. Not because prisoners have earned generosity, and
 not as a gesture toward their dignity, but because the alternative is a floor that
 everyone stands on conditionally.
-
-## The standing roots do not replace this line
-
-One consequence follows from this that ought to be said out loud. Standing no longer waits for someone to maintain a roster.
-An externally supplied birth fact, first
-contact, physical presence, or effective control establishes personhood immediately;
-the encounter name may be temporary, and proves no civil identity, citizenship,
-family relationship, liability, or guilt. Missing or disputed records therefore do
-not postpone the floor, process, or remedy while reconciliation happens.
-
-The new protective-order and independently witnessed physical-holding routes
-also preserve standing. Zed's counterfactual supplies neither. Their existence
-does not mean every person is observed or every holding is entered.
-
-The custody and release rules remain valid independent routes. That redundancy is
-deliberate. If an encounter fact is absent from the supplied record, a lawful custody
-record must not become a route out of standing. Conversely, the presence of an
-encounter token cannot import another record's conviction or sentence. Identity links
-remain consequential claims: uncertainty keeps records separate and challengeable,
-and correction must retain provenance rather than erase accountability or remedy.
-
-There is still an evidence ceiling. These rules say what follows from facts supplied
-to the constitutional record. They do not prove that births and encounters are
-observed, that a service route is reachable, that an identity system reconciles
-records correctly, or that any institution operates in practice. Those delivery and
-identity-system questions remain outside this chapter and outside Gate A.

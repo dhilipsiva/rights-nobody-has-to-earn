@@ -18,10 +18,11 @@
         },
         {
           "number": 2,
+          "file": "02-who-counts.md",
           "title": "Who Counts",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 3,

@@ -52,10 +52,10 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 8 |
-| receives | 59 |
+| receives | 64 |
 | challenges | 23 |
 | governs | 33 |
-| is acted upon | 67 |
+| is acted upon | 68 |
 
 ## Chapter patterns
 
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 83 |
+| constructive | 89 |
 | private-civic | 28 |
 | democratic | 32 |
 | coercive | 37 |
@@ -93,7 +93,7 @@ checked here.
 | Locality, mobility and external relations | 1 | 2 | 2 |
 | Material floor | 8 | 19 | 13 |
 | Non-human animals | 1 | 1 | 2 |
-| Personhood and equality | 15 | 8 | 7 |
+| Personhood and equality | 20 | 9 | 10 |
 | Public institutions | 10 | 10 | 12 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
 | Records and accountability | 11 | 15 | 17 |
@@ -109,6 +109,13 @@ checked here.
 | 01-04 | 01-the-child-with-nobody.md | What does not follow | Material floor | DELIVERY-RECEIPT | both | owed without a receipt, a witness or a cell | receives | unresolved | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 01-05 | 01-the-child-with-nobody.md | The child the record never entered | Personhood and equality | UNIVERSAL-STANDING | protective | the child with no entry, and the birth rule deleted | receives | fails | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 01-06 | 01-the-child-with-nobody.md | What this chapter does not establish | Personhood and equality | UNIVERSAL-STANDING | protective | the boundary of a one-entry record | receives | unresolved | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 02-00 | 02-who-counts.md | (preamble) | Personhood and equality | UNIVERSAL-STANDING | ordinary | whether the answer depended on the birth | receives | works | yes | constructive | `book-1/02-who-counts.pins.nibli` |
+| 02-01 | 02-who-counts.md | The ways in | Personhood and equality | UNIVERSAL-STANDING | ordinary | a birth, an encounter, a presence, a holding | receives | works | no | constructive | `book-1/02-who-counts.pins.nibli` |
+| 02-02 | 02-who-counts.md | A name at an encounter is a handle | Personhood and equality | UNIVERSAL-STANDING | protective | a name that turns out to be wrong | receives | works | yes | constructive | `book-1/02-who-counts.pins.nibli` |
+| 02-03 | 02-who-counts.md | What cannot take it away | Personhood and equality | UNIVERSAL-STANDING | protective | an entry recording somebody as dead | is acted upon | works | no | constructive | `book-1/02-who-counts.pins.nibli` |
+| 02-04 | 02-who-counts.md | The standing roots do not replace this line | Personhood and equality | UNIVERSAL-STANDING | ordinary | standing without a roster | receives | works | yes | constructive | `book-1/02-who-counts.pins.nibli` |
+| 02-05 | 02-who-counts.md | The child with nobody | Personhood and equality | UNIVERSAL-STANDING | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/02-who-counts.pins.nibli` |
+| 02-06 | 02-who-counts.md | What none of this observes | Personhood and equality | UNIVERSAL-STANDING | protective | the boundary of a route nobody has to walk down | receives | unresolved | yes | constructive | `book-1/02-who-counts.pins.nibli` |
 | 03-00 | 03-what-counts-as-evidence.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-01 | 03-what-counts-as-evidence.md | What is missing | Records and accountability | ARTICLES | protective | the closed evidence list | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-02 | 03-what-counts-as-evidence.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
@@ -291,7 +298,6 @@ checked here.
 | 27-02 | 27-a-prisoner-is-a-person.md | The part nobody predicts | Personhood and equality | ARTICLES | protective | the compile-time refusal of a belief prison | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-03 | 27-a-prisoner-is-a-person.md | The loop does not take sides | Personhood and equality | ARTICLES | protective | the refusal is structural, not judgement | is acted upon | contested | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-04 | 27-a-prisoner-is-a-person.md | What that means | Personhood and equality | ARTICLES | protective | rights that do not thin out | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
-| 27-05 | 27-a-prisoner-is-a-person.md | The standing roots do not replace this line | Personhood and equality | UNIVERSAL-STANDING | ordinary | standing without a roster | receives | works | yes | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 28-00 | 28-where-people-are-put.md | (preamble) | Justice and coercion | PLACEMENT | ordinary | placement without discretion | is acted upon | works | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-01 | 28-where-people-are-put.md | The farmhouse | Justice and coercion | PLACEMENT | protective | severity and the domestic case | is acted upon | contested | no | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-02 | 28-where-people-are-put.md | The alarm that did not work | Justice and coercion | PLACEMENT | continuity | a marker added to catch a reopened hole | is acted upon | continuity-remedy | no | coercive | `book-1/28-where-people-are-put.pins.nibli` |

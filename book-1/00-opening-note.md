@@ -260,6 +260,11 @@ below.
   birth: everything owed, nobody presumed to provide, nothing shown to arrive,
   and the one line whose removal is silent.
 
+- [Chapter 2: Who Counts](02-who-counts.md) — generalises the first chapter's
+  one line: a birth, a first contact, presence within the jurisdiction or being
+  under its control each attach personhood on their own, and what follows from
+  each is identical.
+
 - [Chapter 3: What Counts as Evidence](03-what-counts-as-evidence.md) — closes
   the record's vocabulary, separates supplied entries from conclusions, and
   shows how birth or encounter can start standing without making a temporary

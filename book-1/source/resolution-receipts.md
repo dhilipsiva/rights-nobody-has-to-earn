@@ -145,7 +145,7 @@ gives disclosure no credit for closure.
 
 ### roster-standing — externally-bounded
 
-*Told in* `27-a-prisoner-is-a-person.md`, "The standing roots do not replace this line".
+*Told in* `02-who-counts.md`, "The standing roots do not replace this line".
 
 **What failed.** Personhood waited on somebody maintaining a roster, so a person never entered was indistinguishable from a person who does not exist.
 

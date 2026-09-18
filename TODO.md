@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-23. **02 — Who Counts** (PROMOTED from 07; opens by generalising chapter 1's
-    birth root to the other three; may add a `records/first_contact_*` case).
 24. **The child slot in every kept engine chapter** (03, 04, 16, 18, 22; the
     exempt list 10/23 with reasons) and the membership tests
     (`CHILD_SLOT_CHAPTERS`, fixture listing, anti-monoculture child form).
