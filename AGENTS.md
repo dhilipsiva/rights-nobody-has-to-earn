@@ -14,6 +14,11 @@ opening note, Part V, and method are the non-derived exceptions. Book 2 remains
 inactive until Gate C and owns operation and transition. Preserve the legacy
 manuscripts until their TODO harvest. Keep epigraph and method unnumbered.
 
+All reader-facing parts describe the current design of their edition, including
+the opening, Part V and method. Keep the book's development and revision history
+in Git and repository decision records, not in the reader narrative. Follow the
+2026-09-18 current-design ruling in `CLAUDE.md` on every future revision.
+
 ## Verification — author decision, 2026-09-12
 
 Verification means executing the substantive Nibli pins and checking the

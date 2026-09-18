@@ -24,6 +24,24 @@ staffing, costs, resources, technology, workflows, capacity, and empirical
 feasibility. Its tracker is collection-only until Book 1 ships at Gate C.
 Preserve `book.md` and `manifesto.md` until their legacy harvest is complete.
 
+## Current design throughout — author decision, 2026-09-18
+
+The reader-facing book always describes the current design of the edition being
+read. This applies to every chapter, the opening note, Part V and the optional
+method. Do not narrate how the book or constitution developed: no earlier-version
+comparisons, accounts of repairs or additions, or before/after design histories,
+even when accurate or instructive. Explain the current rule, its rationale,
+consequences and remaining limits directly. This instruction supersedes earlier
+permission to retain development history for its explanatory value and governs
+future revisions as well as the current edit.
+
+Git and repository decision records retain the development history outside the
+reading sequence. Historical evidence about the world, explicitly tested
+alternatives, and temporal behavior within the current model remain admissible;
+they must not become accounts of superseded designs. Do not conceal a present
+defect or present a historical result as a current test. Preserve immutable
+published editions: "current" means the design bound to that edition.
+
 ## Verification and authoring — author decision, 2026-09-12
 
 The author clarified that verification means **Nibli pins and contradiction

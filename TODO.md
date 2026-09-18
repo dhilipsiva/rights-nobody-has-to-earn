@@ -43,6 +43,17 @@ starting diagnosis or promising a particular rating.
 - Preserve the three exempt prose channels, unnumbered epigraph and method,
   editorial order, and the majority-derived length rule. The existing appendix
   is a carried archive, not an extra channel for new reader-facing arguments.
+- **Current design throughout — author instruction, 2026-09-18.** Every
+  reader-facing part, including the opening, Part V and optional method, must
+  describe the design of the edition being read. Remove accounts of the book's
+  own development, earlier rules, repairs, additions and before/after versions,
+  even when accurate or instructive. Explain the current rule, its rationale,
+  consequences and limits directly. Keep revision history in Git and repository
+  decision records outside the reading sequence. This is a continuing authoring
+  rule, not a one-time reduction of repetition. Historical evidence about the
+  world, explicitly tested alternatives and temporal behavior within the current
+  model remain admissible; they must not narrate superseded designs. Preserve
+  immutable published editions; "current" means the design bound to that edition.
 - Respect the required child test and its documented exemptions. Improve its
   usefulness and brevity without silently deleting its membership requirement.
 - Use focused substantive checks during implementation, then the complete
@@ -258,14 +269,17 @@ trade-offs remain visible without repeating the whole constitutional catalogue.
 
 Explain the chosen modeling language, supplied premises, derivation, refusal,
 contradiction checks and empirical limits using a small number of complete
-examples. Integrate item 01's appeal correction. Remove stale implementation
-history and internal labels that explain no claim. State what verification
-establishes, what it assumes, what it does not check, and which cited failures
-remain current. Preserve its permitted scope and optional, unnumbered position.
+examples. Integrate item 01's appeal correction. Remove development history,
+including accurate accounts of earlier attempts and subsequent fixes. Teach
+through the current rules and explicitly tested counterfactuals, not through
+the author's route to them. Remove internal labels that explain no claim.
+State what verification establishes, what it assumes, what it does not check,
+and which failures remain in the current design. Preserve its permitted scope
+and optional, unnumbered position.
 
 **Done when:** the worked examples match executed behavior; a reader can tell
-model consistency from truth, feasibility and justice; and the method neither
-overclaims nor requires understanding an internal development chronology.
+model consistency from truth, feasibility and justice; and the method explains
+the current design without narrating its development or overclaiming its reach.
 
 ## III. Make the book work as a book
 
@@ -315,17 +329,24 @@ limitation concisely; its required fixture and documented exemptions remain.
 - [ ] Edit every ordered input, including the unnumbered material, after the
   developmental changes are stable.
 
-Remove repetitive throat-clearing, legal inventories, redundant qualifications
-and repeated "earlier/newer version" explanations. Keep qualifications that
-change meaning. Replace jargon with concrete subjects and verbs within the
+Remove repetitive throat-clearing, legal inventories and redundant
+qualifications. Remove all narration of earlier/newer versions, including
+"we added," "we fixed," "used to," and "now" when they describe the book's
+revision history. Rewrite the passage as a direct account of the current design;
+retain its present rationale and limitations, not the story of the change.
+Apply this to every reader-facing part, including the opening, Part V and
+method, and to each future revision. Keep qualifications that change meaning.
+Replace jargon with concrete subjects and verbs within the
 established voice and passage rules. Check pronouns, negation, terminology,
 sentence rhythm, unnecessary rhetorical certainty and duplicated examples.
 Let content determine length; do not cut to an arbitrary percentage or pad to
 reach a score. Remeasure the majority-derived requirement after restructuring.
 
-**Done when:** a full sequential reading finds no known material ambiguity,
-avoidable repetition or accidental voice change; the important distinctions
-survive the edit; and the book remains majority-derived by its defined count.
+**Done when:** a full sequential reading finds no narration of the book's own
+development, no known material ambiguity, avoidable repetition or accidental
+voice change; the important distinctions survive the edit; and the book remains
+majority-derived by its defined count. Check meaning, not just keywords:
+historical evidence and time within the current model are not revision history.
 
 ### 16. Repair navigation and check the assembled reading experience
 
