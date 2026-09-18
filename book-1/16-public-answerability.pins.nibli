@@ -19,7 +19,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 22
+:expect-pins 25
 
 # "The court has standing... They have it by being what they are."
 ? public(Court).
@@ -126,4 +126,19 @@ authority(Pax).
 # => TRUE
 
 ? permits(Review, Vex).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "the body owing this child the floor is answerable for it" — the owing body
+# holds public answerability, and the child holds the debt.
+? authority(State).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+# "The child cannot ask, cannot complain and cannot expose anybody, and the
+# answerability of whoever owes them is unchanged by all three." The child
+# holds no office and acquires none by being owed something.
+? authority(Nell).
 # => FALSE

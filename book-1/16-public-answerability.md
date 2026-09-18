@@ -255,3 +255,18 @@ nothing. Other deletions may still be noticed because the books this design keep
 itself read the deleted fact for another reason, not because there is a complete
 recovery guarantee. The discipline this chapter ends on is not decoration. It is the
 floor under everything above it.
+
+## The child with nobody
+
+Public answerability points at power, so the child with nobody appears here as
+the other party rather than the subject. What this chapter establishes is that
+the body owing this child the floor is answerable for it — permanently, without
+the child doing anything, and with no route by which the debt is owed and the
+owing hidden.
+
+The order matters and is worth stating exactly. A body's answerability rests on
+an entry, like everything else here, so the chapter cannot claim the debt
+creates the accountability. It claims the narrower thing: that nothing about
+the recipient conditions it. The child cannot ask, cannot complain and cannot
+expose anybody, and the answerability of whoever owes them is unchanged by all
+three.

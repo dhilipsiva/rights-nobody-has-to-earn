@@ -150,7 +150,7 @@
 # rehabilitation, sanctuary, habitat, monitoring, structural, licence and
 # record-correction orders are the same shape and have their own cases. None
 # infers a performed rescue, treatment, transfer, restoration or delivery.
-:expect-pins 53
+:expect-pins 70
 
 ? complete(ECReaderClaim, ECEnvironmentalRightClaim, Bela).
 # => FALSE
@@ -407,4 +407,62 @@ hears(Cira, Bela).
 # => TRUE
 
 ? reward(Cira).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "The pins ask every debt and every entitlement of the child by name rather
+# than sampling, because the claim of this chapter is that the list does not
+# shorten for anybody."
+? owe(State, Eats, Nell).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+? owe(State, Healthy, Nell).
+# => TRUE
+
+? owe(State, Learn, Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+? owe(State, Believe, Nell).
+# => TRUE
+
+? owe(State, Meets, Nell).
+# => TRUE
+
+? entitled(Nell, event { eats() }).
+# => TRUE
+
+? entitled(Nell, event { dwell() }).
+# => TRUE
+
+? entitled(Nell, event { healthy() }).
+# => TRUE
+
+? entitled(Nell, event { learn() }).
+# => TRUE
+
+? entitled(Nell, event { secure() }).
+# => TRUE
+
+? entitled(Nell, event { expresses() }).
+# => TRUE
+
+? entitled(Nell, event { believe() }).
+# => TRUE
+
+? entitled(Nell, event { meets() }).
+# => TRUE
+
+# "A child with nobody is where that guarantee is doing the most work and
+# asking the least." Nothing was asked of them, and nothing follows against
+# them either.
+? prisoner(Nell).
 # => FALSE

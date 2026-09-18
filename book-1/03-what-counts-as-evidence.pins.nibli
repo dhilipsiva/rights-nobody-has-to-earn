@@ -73,7 +73,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 42
+:expect-pins 45
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -301,3 +301,19 @@ person(Ghost).
 
 ? travel(Ghost).
 # => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "It could be written, because a birth is a fact somebody reports and the list
+# admits it" — the exposure this chapter concedes, asked of the thinnest record.
+? person(Nell).
+# => TRUE
+
+# "the record admits no word for what the child is" — the refusal happens at
+# the closed vocabulary, before the rule loads, not after somebody notices.
+:refuse syntax /unknown predicate "vulnerable"/
+vulnerable(Nell).
+
+# And the conclusions this chapter keeps apart stay apart for the child too:
+# nothing about one birth entry concludes anything about them.
+? false(Nell).
+# => FALSE

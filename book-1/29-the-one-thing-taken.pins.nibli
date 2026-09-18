@@ -36,7 +36,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 37
+:expect-pins 43
 
 # The order may be read; the loss and free-movement capability may not.
 # This checks the enacted source with a live positive control. The authoring
@@ -200,3 +200,25 @@ year(Term_Ruk, Two).
 
 ? free(Ruk).
 # => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "movement is unrestrained and no confinement conclusion follows"
+? travel(Nell).
+# => TRUE
+
+? restrain(Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
+
+# "Every other thing a punishment might reach ... is either absent already or
+# held by a rule that does not read whether anybody was punished."
+? false(Nell).
+# => FALSE
+
+? lose(Points, Nell).
+# => FALSE
+
+? owe(State, Eats, Nell).
+# => TRUE

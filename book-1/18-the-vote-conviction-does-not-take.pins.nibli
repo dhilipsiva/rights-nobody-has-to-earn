@@ -116,7 +116,7 @@
 # and alternate-function cases, and animal-guardian-conflict/positive.
 # No stay or inspection power arises just from an office's name. Actual positive
 # records and each required-field/upstream omission are separate ordinary cases.
-:expect-pins 26
+:expect-pins 31
 
 ? interrupt(FSBOD_22, ECReaderStay, ECGuardianAutomaticStay).
 # => FALSE
@@ -237,4 +237,26 @@ decide(Ghost, Ballot, Election).
 all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
 
 ? decide(Hano, Ballot).
+# => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "No franchise conclusion follows for a child with one birth entry, because
+# the franchise route needs typed evidence of the common adulthood threshold
+# and nothing supplies it."
+? decide(Nell, Ballot).
+# => FALSE
+
+? at(Nell, GeneralAdulthood).
+# => FALSE
+
+# "What it is not is a taking." Nothing ran against this child.
+? prisoner(Nell).
+# => FALSE
+
+? false(Nell).
+# => FALSE
+
+# "the voice is not the vote: the barrier against a minimum speaking age holds
+# for this child on personhood alone"
+? prevents(Nell, ChildVoiceNoAgeFloor).
 # => TRUE

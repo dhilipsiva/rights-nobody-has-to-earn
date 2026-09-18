@@ -172,3 +172,18 @@ ate, whether a service reached her, or whether a remedy was completed in the wor
 and this book has no evidence from which to answer. What changed is that selected
 arrivals and the legal duties around failure now have exact constitutional
 interfaces. Operation, liveness, and actual arrival remain unproved.
+
+## The child with nobody
+
+Read the floor once more with the thinnest possible record in mind. A person
+with one entry is owed all of it: food, shelter, care, learning, safety,
+speech, belief and the company of other people, each of them owed in full and
+none of them waiting on anything. The pins ask every debt and every entitlement
+of the child by name rather than sampling, because the claim of this chapter is
+that the list does not shorten for anybody.
+
+The firewall is the same sentence from the other end. No law can be written
+that punishes the child for lacking any of those things — not because a rule
+forbids it, but because the machinery that would make the punishment
+conditional cannot be built above a floor that is unconditional. A child with
+nobody is where that guarantee is doing the most work and asking the least.

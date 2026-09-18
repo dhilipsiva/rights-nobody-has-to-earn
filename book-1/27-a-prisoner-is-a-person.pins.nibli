@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 22
+:expect-pins 32
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
@@ -144,3 +144,39 @@ free(Nemo).
 # The T3 custody chain derives Zed's standing; the floor must remain open.
 ? entitled(Zed, event { eats() }).
 # => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# The pair, run side by side. Zed is confined, so shelter and a recorded voice
+# derive; the child is confined by nobody, so neither does.
+? dwell(Zed).
+# => TRUE
+
+? expresses(Zed).
+# => TRUE
+
+? dwell(Nell).
+# => FALSE
+
+? expresses(Nell).
+# => FALSE
+
+# "Both are owed both." The entitlement is identical on each side of that line.
+? owe(State, Dwell, Zed).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+? owe(State, Expresses, Zed).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+# "the difference between them is that public power acted on one and has not
+# acted on the other"
+? prisoner(Zed).
+# => TRUE
+
+? prisoner(Nell).
+# => FALSE

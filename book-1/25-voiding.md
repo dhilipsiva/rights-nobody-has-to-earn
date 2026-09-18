@@ -188,3 +188,23 @@ during one check, a later successor must be checked from scratch; adding it to a
 check does not retract what that check already concluded. The rules now guarantee more about what
 follows from supplied records. They still depend on people and institutions to make
 those records honest and to make the next one arrive.
+
+## The child with nobody
+
+Voiding reaches credibility, and the child with nobody has said nothing for
+anybody to disbelieve. That sounds like the section could stop there, and the
+reason it cannot is the more useful half.
+
+Run the voiding machinery at this child and watch what survives. Suppose two
+properly seated bodies did void them — the finding lands on credibility and on
+recognition, and every one of the eight debts is exactly where it was. The
+floor is not a reward for being believed. A person nobody will believe is owed
+food, shelter, care, learning, safety, speech, belief and company on the same
+terms as anybody else, and the pins ask all eight after the voiding rather than
+before.
+
+What the chapter's own worry costs this child is worth stating too. Voiding
+asks who and never why, and a person with one entry has nothing on the record
+that could contradict a finding about them. The design's answer is not that
+this cannot happen. It is that the finding cannot reach anything the child
+needs to stay alive.

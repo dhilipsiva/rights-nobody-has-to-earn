@@ -269,6 +269,20 @@ housing entitlement, property, family relations, political membership and
 remedy. It cannot prevent practical harm, operate continuity, measure
 duration, advance time or open a cell.
 
+One more thing belongs at this joint, because it is the joint where a reader
+is most likely to mistake the book's shape for its priorities. The chapters
+about what this design does to a person are the last ones, and they are last
+on purpose: a reader who meets coercion first will read every earlier
+guarantee as a concession wrung from it. But the ordering is editorial and the
+substance is not, and the pair I keep returning to cuts against the flattering
+reading. Run any rule in this book against the person public power has acted
+on and against the person it has not — the prisoner and the child with nobody —
+and it is the prisoner for whom the floor actually arrives. Shelter and a
+recorded voice derive through confinement and through nothing else in the
+supplied record. The chapters at the end of this book are the ones where the
+design can show its work; the chapters at the front are where it mostly cannot
+yet.
+
 ## Capture
 
 Mondragon is the counterexample to despair. Five graduates of a technical school

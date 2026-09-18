@@ -293,3 +293,22 @@ stating without softening. **The strongest protection in
 this design is the impossibility of writing certain rules. The weakest is the
 integrity of the record those rules are written in.** Everything in the preceding
 chapters sits on the second, and the second is people.
+
+## The child with nobody
+
+An amendment is where a design finds out what it actually protects, so ask what
+a majority could do to the child with nobody.
+
+Not this. The floor and the personhood article are on the permanent register,
+and the pins ask both by name. What is entrenched is not a promise about
+children; it is the unconditionality itself, which is why it reaches a child
+nobody has recorded anything else about. A rule that made the floor conditional
+would have to pass through the corridor, and the corridor is what refuses it.
+
+Then the honest half, which this chapter has already made twice over. The
+entrenchment binds a label against a register, not the source against a
+reviewer. The concealed-change route in this chapter would remove what the
+child is owed while the labels stayed harmless, and that route is open for the
+child exactly as it is open for everybody else. The most protected person in
+this design is protected by the same machinery that this chapter shows can be
+walked around.

@@ -43,7 +43,7 @@
 # Each actual amendment consumer has a paired explicit source counterfactual;
 # amendment-enactment/without-AmendmentAnimal*CoreScope tests positive review.
 # An absent breach record is not evidence of compatibility or source authority.
-:expect-pins 28
+:expect-pins 32
 
 ? contradict(ECAbsentAmendmentRecord, AmendmentSourceAuthorization).
 # => FALSE
@@ -176,4 +176,22 @@ adjust(Jala, Art_Floor).
 # The control is already above: `lose(Points, Jala)` FALSE, the person the
 # docket guard repaired out of the void, so the clawback does not follow her.
 ? lose(Points, Amend_Floor).
+# => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "The floor and the personhood article are on the permanent register, and the
+# pins ask both by name."
+? permanent(Art_Floor).
+# => TRUE
+
+? permanent(Art_Person).
+# => TRUE
+
+# "What is entrenched is not a promise about children; it is the
+# unconditionality itself, which is why it reaches a child nobody has recorded
+# anything else about."
+? person(Nell).
+# => TRUE
+
+? owe(State, Eats, Nell).
 # => TRUE

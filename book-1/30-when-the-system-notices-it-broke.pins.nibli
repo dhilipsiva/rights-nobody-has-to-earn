@@ -53,7 +53,7 @@
 
 # The ecological and animal continuation moved with its prose to the chapter on
 # who owes and what follows; its probe lives in that chapter's pin file now.
-:expect-pins 31
+:expect-pins 37
 
 # The source-bound finding/action contract consumes the older underfilled duty
 # only after the supplied initial-finding standard and its other typed evidence
@@ -206,3 +206,30 @@ all $x: obliged(Review, $x) & ~capture(Review, $x) -> err($x, Duty).
 
 ? err(Ruk, Duty).
 # => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "The isolation marker reads confinement, so it does not fire. The placement
+# marker reads a placement report, and nobody has filed one."
+? err(Nell, Isolation).
+# => FALSE
+
+? err(Nell, Placement).
+# => FALSE
+
+# "the machinery that notices failure is pointed exclusively at the half of the
+# problem that involves an act"
+? prisoner(Nell).
+# => FALSE
+
+? obliged(Review, Nell).
+# => FALSE
+
+# "Run it against this child in a counterfactual and it does fire" — that run is
+# tests/pins/records/child_with_nobody/undelivered.pins.nibli, against the base
+# counterfactual/undelivered-marker. Here, on the shipped source, the marker
+# does not exist and the debt stands unwatched.
+? owe(State, Eats, Nell).
+# => TRUE
+
+? eats(Nell).
+# => FALSE

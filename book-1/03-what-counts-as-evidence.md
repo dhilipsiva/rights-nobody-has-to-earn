@@ -448,3 +448,19 @@ the list. Personhood may be written directly or follow from birth, contact, pres
 custody, release, or carried status. If you want to know where to watch, watch whether
 those roots are supplied, whether a temporary encounter name is being mistaken for
 civil identity, and whether reconciliation preserves the history it changes.
+
+## The child with nobody
+
+The child with nobody is one entry, and this is the chapter that decides what
+an entry may be. Both halves of the closed record bear on that line. It could
+be written, because a birth is a fact somebody reports and the list admits it —
+which is the exposure the chapter has already conceded, and it does not become
+smaller because the subject is a newborn. And nothing further about the child
+can be invented, because the record admits no word for what the child is. There
+is no field for *vulnerable*, and a rule that tried to read one is refused
+before it loads rather than after somebody notices.
+
+That refusal is worth watching happen rather than taking on trust, which is why
+it is pinned here beside the ordinary admissions. The design does not decide
+that the child is vulnerable and then protect them. It has no way to say it, and
+protects them anyway.

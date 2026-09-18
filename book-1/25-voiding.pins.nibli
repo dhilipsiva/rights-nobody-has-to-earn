@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 39
+:expect-pins 50
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -329,6 +329,52 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 # => TRUE
 
 ? false(Forga).
+# => FALSE
+
+# The child block below runs under BOTH cases that load this file: the chapter's
+# own, and counterfactual/no-dead-conjuncts, which reruns chapters 24 and 25
+# against a source with Article 4's dead conjuncts stripped. Both load the
+# one-line record, so the claim the block makes — voiding reaches credibility
+# and recognition and never the floor — is asserted against the stripped rules
+# as well as the shipped ones.
+# ── The child with nobody ──────────────────────────────────────────────────
+# "a person with one entry has nothing on the record that could contradict a
+# finding about them" — and nothing on the record voids them either.
+? false(Nell).
+# => FALSE
+
+# "the finding cannot reach anything the child needs to stay alive" — the eight
+# debts, asked in full, because the claim is that none of them is conditional
+# on being believed.
+? owe(State, Eats, Nell).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+? owe(State, Healthy, Nell).
+# => TRUE
+
+? owe(State, Learn, Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+? owe(State, Believe, Nell).
+# => TRUE
+
+? owe(State, Meets, Nell).
+# => TRUE
+
+# Recognition is the voiding's other target, and this child has none to lose.
+? reward(Nell).
+# => FALSE
+
+? lose(Points, Nell).
 # => FALSE
 
 # ── THE EXHIBIT: distinctness was the only bar. MUST BE LAST ─────────────────

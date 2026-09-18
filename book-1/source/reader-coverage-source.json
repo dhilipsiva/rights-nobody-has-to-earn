@@ -301,6 +301,21 @@
       ]
     },
     {
+      "id": "03-06",
+      "chapter": "book-1/03-what-counts-as-evidence.md",
+      "section": "The child with nobody",
+      "domain": "Records and accountability",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/03-what-counts-as-evidence.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
       "id": "04-00",
       "chapter": "book-1/04-what-you-are-owed.md",
       "section": "(preamble)",
@@ -338,6 +353,21 @@
       "family": "STATE-FORM",
       "function": "ordinary",
       "setting": "the duty-bearer",
+      "trajectory": "works",
+      "basis": "book-1/04-what-you-are-owed.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "04-03",
+      "chapter": "book-1/04-what-you-are-owed.md",
+      "section": "The child with nobody",
+      "domain": "Material floor",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
       "trajectory": "works",
       "basis": "book-1/04-what-you-are-owed.pins.nibli",
       "pattern": "constructive",
@@ -1917,6 +1947,21 @@
       ]
     },
     {
+      "id": "16-06",
+      "chapter": "book-1/16-public-answerability.md",
+      "section": "The child with nobody",
+      "domain": "Public institutions",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/16-public-answerability.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "17-00",
       "chapter": "book-1/17-how-public-power-is-built.md",
       "section": "(preamble)",
@@ -2154,6 +2199,21 @@
       "pattern": "democratic",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "18-06",
+      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
+      "section": "The child with nobody",
+      "domain": "Democracy and amendment",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "receives"
       ]
     },
     {
@@ -2547,6 +2607,21 @@
       ]
     },
     {
+      "id": "22-06",
+      "chapter": "book-1/22-changing-the-rules.md",
+      "section": "The child with nobody",
+      "domain": "Democracy and amendment",
+      "family": "AMENDMENT-ENACTMENT",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "contested",
+      "basis": "book-1/22-changing-the-rules.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "23-00",
       "chapter": "book-1/23-who-holds-the-pen.md",
       "section": "(preamble)",
@@ -2802,6 +2877,21 @@
       ]
     },
     {
+      "id": "25-05",
+      "chapter": "book-1/25-voiding.md",
+      "section": "The child with nobody",
+      "domain": "Records and accountability",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/25-voiding.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
       "id": "26-00",
       "chapter": "book-1/26-clawback.md",
       "section": "(preamble)",
@@ -2952,6 +3042,21 @@
       ]
     },
     {
+      "id": "27-05",
+      "chapter": "book-1/27-a-prisoner-is-a-person.md",
+      "section": "The child with nobody",
+      "domain": "Material floor",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "contested",
+      "basis": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "28-00",
       "chapter": "book-1/28-where-people-are-put.md",
       "section": "(preamble)",
@@ -3039,6 +3144,21 @@
       "pattern": "constructive",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "28-06",
+      "chapter": "book-1/28-where-people-are-put.md",
+      "section": "The child with nobody",
+      "domain": "Justice and coercion",
+      "family": "PLACEMENT",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/28-where-people-are-put.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "receives"
       ]
     },
     {
@@ -3147,6 +3267,21 @@
       ]
     },
     {
+      "id": "29-07",
+      "chapter": "book-1/29-the-one-thing-taken.md",
+      "section": "The child with nobody",
+      "domain": "Justice and coercion",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "works",
+      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "30-00",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
       "section": "(preamble)",
@@ -3235,6 +3370,21 @@
       "pattern": "records",
       "postures": [
         "requests"
+      ]
+    },
+    {
+      "id": "30-06",
+      "chapter": "book-1/30-when-the-system-notices-it-broke.md",
+      "section": "The child with nobody",
+      "domain": "Records and accountability",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "receives"
       ]
     },
     {

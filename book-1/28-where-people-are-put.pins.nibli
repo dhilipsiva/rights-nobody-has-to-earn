@@ -21,7 +21,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 45
+:expect-pins 50
 
 # Hano — meant it, and that alone is not enough. These two pins belong next to
 # each other: with no dimension recorded at all, severe(Hano) would be FALSE for
@@ -198,3 +198,24 @@ put(State, Hano, Homestay).
 
 ? err(Hano, Placement).
 # => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "no eligibility conclusion, no destination, and no alarm"
+? fit(Nell, Homestay).
+# => FALSE
+
+? dwell(Nell).
+# => FALSE
+
+? err(Nell, Placement).
+# => FALSE
+
+# "a rule that fired here would be a rule reaching somebody public power never
+# touched"
+? prisoner(Nell).
+# => FALSE
+
+# "Shelter derives for the first and not the second" — the debt is there and
+# the arrival is not.
+? owe(State, Dwell, Nell).
+# => TRUE

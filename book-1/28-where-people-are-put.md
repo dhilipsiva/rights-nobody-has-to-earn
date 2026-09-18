@@ -264,3 +264,17 @@ confined row in the reviewed matrix derives shelter, while no non-confined mirro
 The result closes the placement table without pretending that the unconditional
 housing debt was delivered.
 
+## The child with nobody
+
+Placement decides where a confined person goes, so for the child with nobody it
+decides nothing at all: no eligibility conclusion, no destination, and no
+alarm. The chapter's whole apparatus is silent about them.
+
+This is the right silence and it is worth separating from the wrong one. The
+placement rules watch what the design does to people, and nothing has been done
+to this child — so a rule that fired here would be a rule reaching somebody
+public power never touched. The gap this chapter documents is next door and
+still open: the design has machinery that notices a confined person with
+nowhere to be confined, and none that notices a child with nowhere to live.
+Shelter derives for the first and not the second, and the alarm that would
+catch the difference is the one this book has repeatedly declined to fake.

@@ -216,3 +216,22 @@ in the same position as a person with an unimpeachable right to eat and no food.
 The constitutional route is now less silent about what a valid result must
 contain. It still does not show that the world supplied one or that the ballot
 arrived.
+
+## The child with nobody
+
+This chapter is about something the child does not have, and the design is
+careful to say which kind of not-having it is.
+
+No franchise conclusion follows for a child with one birth entry, because the
+franchise route needs typed evidence of the common adulthood threshold and
+nothing supplies it. That is the *not yet* of this chapter's title, or possibly
+the *evidence absent* — the record has no outside clock and cannot tell which,
+and it does not pretend to. What it is not is a taking. Nothing reached in and
+removed anything, no rule ran, and nobody decided against this child.
+
+The distinction costs something to maintain and is worth the cost. A design
+that blurred it would find it easier to describe the child as simply outside
+the franchise, and the same blur is what makes disenfranchisement sound like a
+threshold. Meanwhile the voice is not the vote: the barrier against a minimum
+speaking age holds for this child on personhood alone, with no age evidence
+anywhere in the record.

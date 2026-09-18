@@ -199,3 +199,22 @@ of who is outside becomes a question a powerful person answers.
 The design refuses the carve-out. Not because prisoners have earned generosity, and
 not as a gesture toward their dignity, but because the alternative is a floor that
 everyone stands on conditionally.
+
+## The child with nobody
+
+Here the pair this book is built on can be run side by side, and the result is
+uncomfortable in the direction the book keeps insisting on.
+
+Zed is confined, and shelter and a recorded voice derive for Zed — because the
+design assigns them to a person it is physically holding. The child with nobody
+is confined by no one, and neither derives. Both are owed both. One of them has
+the thing; the other has the entitlement and nothing else, and the difference
+between them is that public power acted on one and has not acted on the other.
+
+That is the whole argument of this book compressed into one comparison, and it
+cuts the way the prisoner chapter says it does rather than the way a reader
+might expect. The prisoner is not the person the design treats worst. In the
+record supplied with this book the prisoner is the only kind of person for whom
+the floor actually arrives, and a chapter defending the prisoner's personhood
+is also, unavoidably, a demonstration of how little the design has managed for
+everybody else.

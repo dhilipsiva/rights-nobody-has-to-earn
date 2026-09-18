@@ -307,3 +307,18 @@ Everything above the floor here remains exact. The floor itself is owed, selecte
 arrival routes are specified, and the supplied record still contains no actual
 non-carceral arrival. Outside records, service operation, accessibility, continuity,
 and completed delivery remain things this book cannot establish.
+
+## The child with nobody
+
+The single deprivation this chapter is about has not been applied to the child
+with nobody, and the pins say so in the ordinary way: movement is unrestrained
+and no confinement conclusion follows.
+
+The claim the chapter makes is that punishment reduced to its logic takes
+movement and nothing else, and this child is where that claim is cheapest to
+test, because there is nothing else in the record to lose. Every other thing a
+punishment might reach — credibility, recognition, the floor, the vote once age
+evidence exists — is either absent already or held by a rule that does not read
+whether anybody was punished. Nothing is taken here because nothing was done
+here. What the section shows is that the taking, when it happens, has exactly
+one place to land.

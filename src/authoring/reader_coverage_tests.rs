@@ -237,3 +237,91 @@ fn every_constitutional_family_is_projected_by_a_passage() {
         .collect();
     assert!(orphan.is_empty(), "passages tagged to a family no block carries: {orphan:?}");
 }
+
+/// Derived chapters that do NOT carry the recurring `## The child with nobody`
+/// section, each with the reason it does not. The list is asserted by
+/// membership rather than counted, so a chapter landing without a slot and
+/// without a reason fails here.
+///
+/// Chapter 1 is the child: the whole chapter is the case, and a section inside
+/// it would be a section about its own subject. Chapter 10 recognises
+/// contribution and already runs its claim against a child — Cira works and is
+/// recognised, and the doors carry no age test — so a second child would
+/// duplicate the exhibit rather than add one. Chapter 23 is about who holds a
+/// credential; a record of one birth entry holds none, and the honest slot
+/// would say only that, which the chapter says already about everybody who is
+/// not seated. Chapters 24 and 26 are the two breaks whose subject the child
+/// cannot reach: the shield protects somebody who exposed an authority, and
+/// clawback takes recognition. A child with one entry has made no exposure and
+/// holds no recognition, so both slots would say only that the chapter's
+/// subject does not arise — and chapter 25's slot already runs the claim that
+/// matters, which is that neither instrument reaches the floor.
+const CHILD_SLOT_EXEMPT: [(&str, &str); 5] = [
+    ("01-the-child-with-nobody.md", "the chapter is the case"),
+    ("10-contribution.md", "Cira already carries the child exhibit"),
+    ("23-who-holds-the-pen.md", "a record of one entry holds no credential"),
+    ("24-the-shield.md", "the shield needs an exposure this child has not made"),
+    ("26-clawback.md", "clawback takes recognition this child has never held"),
+];
+
+#[test]
+fn every_derived_chapter_runs_the_child_or_says_why_not() {
+    let context = Context::discover().expect("repository");
+    let exempt: BTreeSet<&str> = CHILD_SLOT_EXEMPT.iter().map(|(file, _)| *file).collect();
+    assert_eq!(
+        exempt.len(),
+        CHILD_SLOT_EXEMPT.len(),
+        "a chapter is listed twice in the exemptions"
+    );
+    let contents = Contents::load(&context).expect("manifest");
+    let mut missing = Vec::new();
+    for chapter in contents.derived() {
+        let file = chapter
+            .rsplit('/')
+            .next()
+            .expect("chapter file name")
+            .to_string();
+        let prose = context.read(&chapter).expect("chapter");
+        let runs = prose.contains("\n## The child with nobody\n");
+        match (runs, exempt.contains(file.as_str())) {
+            (false, false) => missing.push(format!("{file} has no child slot and no reason")),
+            (true, true) => missing.push(format!("{file} is exempt and carries a slot anyway")),
+            _ => {}
+        }
+    }
+    assert!(missing.is_empty(), "{}", missing.join("\n"));
+}
+
+/// Every chapter that runs the child must load the one-line record it runs
+/// against. A slot written against a record the case does not carry would pass
+/// the prose check above and prove nothing.
+#[test]
+fn every_child_slot_loads_the_one_line_record() {
+    const FIXTURE: &str = "tests/pins/records/child_with_nobody/fixture.nibli";
+    let context = Context::discover().expect("repository");
+    let suites = context.read("tests/pins/suites.json").expect("suites");
+    let suites: serde_json::Value = serde_json::from_str(&suites).expect("suites json");
+    let cases = suites["cases"].as_array().expect("cases");
+    let contents = Contents::load(&context).expect("manifest");
+    let mut missing = Vec::new();
+    for chapter in contents.derived() {
+        let prose = context.read(&chapter).expect("chapter");
+        if !prose.contains("\n## The child with nobody\n") {
+            continue;
+        }
+        let id = chapter.trim_end_matches(".md");
+        let case = cases
+            .iter()
+            .find(|case| case["id"].as_str() == Some(id))
+            .unwrap_or_else(|| panic!("{id} has no case"));
+        let loads = case["fixtures"]
+            .as_array()
+            .expect("fixtures")
+            .iter()
+            .any(|fixture| fixture.as_str() == Some(FIXTURE));
+        if !loads {
+            missing.push(format!("{id} runs the child without loading the record"));
+        }
+    }
+    assert!(missing.is_empty(), "{}", missing.join("\n"));
+}

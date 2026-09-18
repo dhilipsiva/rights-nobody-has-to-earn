@@ -59,15 +59,8 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-24. **The child slot in every kept engine chapter** (03, 04, 16, 18, 22; the
-    exempt list 10/23 with reasons) and the membership tests
-    (`CHILD_SLOT_CHAPTERS`, fixture listing, anti-monoculture child form).
-
 ### Phase C — the breaks, read last
 
-25. **The child slot in the break chapters** (25, 27, 28, 29, 30 incl. the
-    Undelivered case; 24/26 exempt with reasons); Part V's coercion joint
-    sentence and the pair in its family section.
 26. **Close the rebalance.** `breaks_come_after_engines` coercive-share bound
     and `every_family_states_a_boundary_where_it_is_rendered` landed;
     `UNRENDERED_FAMILIES` empty; `THIN_POSTURES` re-censused; length invariant

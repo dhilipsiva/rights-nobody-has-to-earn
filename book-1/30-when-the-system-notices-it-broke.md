@@ -267,3 +267,23 @@ to be an insider, using nothing but the design's own account of itself.
 
 That is what the derived part of this book can establish. What follows is a different
 kind of argument, and it is labelled as such.
+
+## The child with nobody
+
+The alarms in this chapter are silent about the child with nobody, and this is
+the chapter where that silence is a finding rather than a formality.
+
+The isolation marker reads confinement, so it does not fire. The placement
+marker reads a placement report, and nobody has filed one. Every instrument in
+this chapter watches what the design does to a person, and the design has done
+nothing to this child — which means the machinery that notices failure is
+pointed exclusively at the half of the problem that involves an act.
+
+The floor chapter's gap is the other half, and this chapter can now say
+precisely what it would take to see it. The undelivered marker exists, it is
+buildable, and this book declines to ship it while the record holds no arrival
+facts — because a marker that fires on everybody discriminates nobody. Run it
+against this child in a counterfactual and it does fire, which is the honest
+demonstration: not that the design cannot notice a child who has been given
+nothing, but that it has not been given a record in which noticing would mean
+anything.
