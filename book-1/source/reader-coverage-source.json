@@ -813,6 +813,21 @@
     {
       "id": "07-15",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
+      "section": "The one duty that does not wait to be asked",
+      "domain": "Material floor",
+      "family": "OBLIGATIONS",
+      "function": "protective",
+      "setting": "a person nobody has come for",
+      "trajectory": "works",
+      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "07-16",
+      "chapter": "book-1/07-who-owes-and-what-follows.md",
       "section": "The child with nobody",
       "domain": "Material floor",
       "family": "OBLIGATIONS",
@@ -826,7 +841,7 @@
       ]
     },
     {
-      "id": "07-16",
+      "id": "07-17",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
       "section": "And then nobody has necessarily acted",
       "domain": "Records and accountability",
@@ -1708,6 +1723,21 @@
     {
       "id": "14-09",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "When nobody holds a role at all",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "continuity",
+      "setting": "an appointment for somebody who asked for nothing",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "14-10",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
       "section": "Children, the difference between not yet and taken — and a third thing",
       "domain": "Life course, family, care and reproduction",
       "family": "FAMILY-LIFE-COURSE",
@@ -1721,7 +1751,7 @@
       ]
     },
     {
-      "id": "14-10",
+      "id": "14-11",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
       "section": "The child with nobody",
       "domain": "Life course, family, care and reproduction",
@@ -1736,7 +1766,7 @@
       ]
     },
     {
-      "id": "14-11",
+      "id": "14-12",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
       "section": "What none of this decides",
       "domain": "Life course, family, care and reproduction",

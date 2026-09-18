@@ -28,7 +28,7 @@ surfaced only because the spine's predicate count fell from 95 to 92 — `home`,
 with an existing block deletes that block's contents. The same hazard exists for
 a family name colliding with an existing `tests/pins/<dir>`.
 
-## What the ten contracts are
+## What the eleven contracts are
 
 **Role.** Parentage, caregiving, household, material support, property and
 succession, and decision agent are a closed vocabulary and stay separable: one
@@ -52,6 +52,27 @@ while support can still be given, refuses plenary guardianship, status-based
 incapacity and any global capability score, and requires accessible formats and
 time. Its conclusion is the supporter's authority to assist, and its own case
 pins that this is not a role over the person and not the interpretation route.
+
+**Initiation (added 2026-09-18).** The ordinary half's answer to the person
+nobody has come for. Article 1c owes the initiation of assistance and
+representation to every person, without a request, reading personhood and
+nothing else; this contract is what discharging it must contain. A trigger from
+a closed vocabulary — nobody is recorded as acting for the person, the only
+recorded supporter is the accused party, the person cannot be reached in an
+accessible language or form, the person is held or placed and unrepresented, an
+earlier appointment ended without a successor — so the appointment is not a
+general power over somebody's life. A representative appointed for the named
+matter only and never as a status or guardianship, distinct from the acting
+body, the source, the evidence attester, the reviewer, the challenge reader, the
+alternate, and the person themselves. A named receipt witness, which is the
+constitutional answer to the delivery family's open question: the acting body is
+**obliged to authorise** the named witness rather than the record concluding the
+authorisation, because concluding `authorized` closes a negative cycle through
+`contradict` and the engine refused it in those words. No request from the
+affected person and no capability finding. The person's own voice retained and
+never replaced. Minimum necessary information, no reusable classification, no
+enrolment. Care continuity and the floor unaffected by any gap in
+representation. A source-bound end that does not renew in silence.
 
 **Interpretation** is the bounded best-interpretation route, and it is gated on
 positive evidence that support was actually provided first, together with will

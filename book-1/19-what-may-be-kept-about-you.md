@@ -137,11 +137,16 @@ that route in the same breath as it permits the registry. And the subject of a
 holding is an opaque handle: an entry naming this child would be an entry, not
 a finding, and would take no standing, no floor and no credibility.
 
-What does not follow is anybody looking. The access, correction and objection
-routes all begin with the subject asking, and a child with nobody asks for
-nothing. The independent alternate exists for a reader who does not answer,
-not for a subject who cannot ask, and that asymmetry is the same open gap the
-chapter on arrival names: the routes are built for a person who can use them.
+What does not follow from this chapter is anybody looking. The access,
+correction and objection routes all begin with the subject asking, and a child
+with nobody asks for nothing; the independent alternate exists for a reader who
+does not answer, not for a subject who cannot ask. The route that does not wait
+for the asking is in the chapter on who owes, and the appointment it leads to
+is bound by this chapter's own discipline rather than exempt from it: the
+appointment record carries the least information its matter needs, builds no
+reusable classification, and enrols nobody. A representative appointed because
+a child had nobody is not a file about the child, and the design is careful to
+say so in the same place it creates the appointment.
 
 ## What none of this holds
 

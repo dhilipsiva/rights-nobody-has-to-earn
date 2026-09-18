@@ -52,7 +52,7 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 8 |
-| receives | 72 |
+| receives | 74 |
 | challenges | 25 |
 | governs | 33 |
 | is acted upon | 70 |
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 90 |
+| constructive | 92 |
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 42 |
@@ -89,9 +89,9 @@ checked here.
 | Emergency and resilience | 3 | 2 | 4 |
 | Justice and coercion | 13 | 11 | 10 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
-| Life course, family, care and reproduction | 11 | 4 | 5 |
+| Life course, family, care and reproduction | 12 | 4 | 6 |
 | Locality, mobility and external relations | 1 | 2 | 2 |
-| Material floor | 9 | 20 | 13 |
+| Material floor | 10 | 20 | 15 |
 | Non-human animals | 1 | 1 | 2 |
 | Personhood and equality | 20 | 9 | 10 |
 | Public institutions | 11 | 10 | 12 |
@@ -156,8 +156,9 @@ checked here.
 | 07-12 | 07-who-owes-and-what-follows.md | A way in that does not need the operator's permission | Justice and coercion | NON-CARCERAL-JUSTICE | both | a request to review that the operator did not authorise | challenges | works | no | coercive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-13 | 07-who-owes-and-what-follows.md | When the actor is a protective power | Public safety, policing and use of force | PUBLIC-SAFETY | continuity | unlawful force, and a record that was never written | is acted upon | fails | yes | coercive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-14 | 07-who-owes-and-what-follows.md | When the finding is about conditions or an animal | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | a defective ecological record and an animal needing care | challenges | continuity-remedy | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
-| 07-15 | 07-who-owes-and-what-follows.md | The child with nobody | Material floor | OBLIGATIONS | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
-| 07-16 | 07-who-owes-and-what-follows.md | And then nobody has necessarily acted | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | yes | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-15 | 07-who-owes-and-what-follows.md | The one duty that does not wait to be asked | Material floor | OBLIGATIONS | protective | a person nobody has come for | receives | works | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-16 | 07-who-owes-and-what-follows.md | The child with nobody | Material floor | OBLIGATIONS | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-17 | 07-who-owes-and-what-follows.md | And then nobody has necessarily acted | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | yes | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-02 | 08-what-nobody-has-to-ask-permission-for.md | The child with nobody | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the child with nobody: one birth entry and nothing else | receives | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
@@ -215,9 +216,10 @@ checked here.
 | 14-06 | 14-holding-a-role-in-somebodys-life.md | Reproductive and bodily care, and the order of a treatment decision | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a treatment decision and who may make it | chooses | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-07 | 14-holding-a-role-in-somebodys-life.md | Your own origin record | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | reaching and correcting the record about yourself | challenges | works | no | records | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-08 | 14-holding-a-role-in-somebodys-life.md | When one of these records is defective | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | a role record independently found defective | challenges | continuity-remedy | no | records | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
-| 14-09 | 14-holding-a-role-in-somebodys-life.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | not yet, taken away, and evidence absent | is acted upon | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
-| 14-10 | 14-holding-a-role-in-somebodys-life.md | The child with nobody | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the child with nobody: one birth entry and nothing else | cares | unresolved | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
-| 14-11 | 14-holding-a-role-in-somebodys-life.md | What none of this decides | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the boundary of a family interface that decides nothing | cares | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-09 | 14-holding-a-role-in-somebodys-life.md | When nobody holds a role at all | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | an appointment for somebody who asked for nothing | receives | works | yes | constructive | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-10 | 14-holding-a-role-in-somebodys-life.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | not yet, taken away, and evidence absent | is acted upon | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-11 | 14-holding-a-role-in-somebodys-life.md | The child with nobody | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the child with nobody: one birth entry and nothing else | cares | unresolved | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-12 | 14-holding-a-role-in-somebodys-life.md | What none of this decides | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the boundary of a family interface that decides nothing | cares | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 15-00 | 15-arriving-and-belonging.md | (preamble) | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | two questions usually answered by asking for papers | receives | works | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-01 | 15-arriving-and-belonging.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-02 | 15-arriving-and-belonging.md | When the record cannot say what it says | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | continuity | an asylum determination whose record contradicts itself | is acted upon | fails | yes | coercive | `book-1/15-arriving-and-belonging.pins.nibli` |

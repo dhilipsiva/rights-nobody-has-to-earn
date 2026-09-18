@@ -131,10 +131,29 @@ ships dormant: in the record supplied with this book, no continuity record is
 written for anyone, so no continuity duty derives for anyone, and none derives
 for Nell. And even where the record is written, a duty that derives is a duty
 that derives. It does not prove that anyone arrived, that care continued, that
-the child was reached, or that the actor named in the record exists. The
-design can say, with complete precision, what is owed to a child with nobody
-and who is bound to provide it. It cannot say, from that alone, that anybody
-did.
+the child was reached, or that the actor named in the record exists.
+
+There is one duty underneath even that, and it is the only rule in the design
+that needs no record at all. The initiation of assistance and representation is
+owed to every person, by an independent advocate, without a request — its whole
+condition is being a person, exactly like the debts in the chapter on what you
+are owed, and for exactly the same reason. A duty scoped to whoever is unable
+to act would need a finding about capability, and this design holds no such
+finding about anyone. A duty computed from what is missing in a record would
+fire on everybody and single out nobody. So it is owed to everybody, discharged
+in the asking wherever somebody asked, and load-bearing precisely where nobody
+did. It holds for Nell, whose record is one line, and there is nothing in it
+Nell could fail.
+
+The escalation beneath it takes no credential either: anyone at all may record
+that a person appears to have nobody acting for them, and that entry lands a
+review duty on a separate office. It concludes nothing about the person named —
+not that a duty was breached, not that they are unable to act, not that they
+are anything at all.
+
+So the design can say, with complete precision, what is owed to a child with
+nobody, who is bound to provide it, and who is bound to begin without being
+asked. It cannot say, from any of that, that anybody did.
 
 ## What does not follow
 

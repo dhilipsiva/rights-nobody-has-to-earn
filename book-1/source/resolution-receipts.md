@@ -169,6 +169,20 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** Every liveness premise here belongs to Book 2 or to operational assurance, which is unbuilt.
 
+### nobody-obliged-to-begin — operationally-unresolved
+
+*Told in* `07-who-owes-and-what-follows.md`, "The one duty that does not wait to be asked".
+
+**What failed.** Every route into this design began with a record somebody wrote — a request, a challenge, a receipt, a reviewed finding — and each was unconditional in the ways that usually stop people while still waiting for an act. For a person nobody had come for, the whole apparatus sat downstream of an act nobody was obliged to perform.
+
+**What changed.** The initiation of assistance and representation is owed by a named office to every person without a request, its whole condition being personhood, and an entry from any writer at all lands a review duty on a separate office. What discharging it must contain is a reviewed appointment in the life-course family: a closed list of triggers, a representative for one named matter, a named receipt witness the acting body must authorise, the person's own voice retained, minimum information, a source-bound end, a challenge reader and an independent alternate.
+
+**How the former attack is rerun.** `book-1/07-who-owes-and-what-follows.pins.nibli`
+
+**What still does not follow.** That anybody notices. No rule reads a duty, so nothing establishes that an advocate exists, was funded, was told, arrived or acted, and the entry that opens the escalation must still be written by somebody who saw.
+
+**What remains external or open.** The seeing. A rule over supplied records cannot discover a person no record has entered; what changed is that the act nobody performs is now owed by a named office rather than waited for from the person who cannot perform it.
+
 ## externally-bounded
 
 ### kinship-silence — externally-bounded

@@ -111,25 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 03. Assign responsibility when the rights-holder cannot initiate a claim
-
-- [ ] Close the constitutional initiation gap across chapters 1, 5, 7, 14,
-  19 and 21, then update the recurring child cases affected by the change.
-
-Assign a public duty to initiate assistance and representation for a known
-person unable to act, with an accountable substitute when the first responsible
-party is absent, conflicted or inactive. Address the recipient who cannot choose
-a receipt witness. Define admissible triggers, independent appointment or
-challenge, privacy limits, continuity and escalation. Keep the baseline
-`born(Nell).` fixture separate from cases with additional supplied evidence.
-Do not assume that an unrepresented child supplies their own request, or that
-the engine discovers an unknown person, appoints a real advocate or delivers care.
-
-**Done when:** the silent child, unconscious adult, conflicted sole supporter
-and unaccompanied newcomer each have a specified constitutional route; no route
-depends on volunteering by an unspecified somebody; failure of the first duty
-has a named consequence; and the remaining operational limits are stated exactly.
-
 ### 04. Protect disclosures without an unjustified general prosecution escape
 
 - [ ] Reassess chapter 24's shield against narrower alternatives and implement

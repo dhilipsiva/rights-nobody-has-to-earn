@@ -91,6 +91,48 @@ what it names and lands the duties to correct and to publish the correction. A
 request for review does not need the acting body's permission, and a certified
 failure to answer moves the duty to an independent alternate.
 
+## When nobody holds a role at all
+
+The roles above are things people take up. This one is what happens when nobody
+has. The duty to begin belongs to the independent rights advocate and is owed to
+every person without a request; what it looks like when it is discharged is a
+record, and the record has to contain particular things before anything follows
+from it.
+
+It names a trigger, drawn from a closed list: nobody is recorded as acting for
+the person; the only recorded supporter is the party accused of failing them;
+the person cannot be reached in an accessible language or form; the person is
+held or placed and unrepresented; an earlier appointment ended with no
+successor. A trigger the list does not contain completes nothing, which is what
+keeps this from becoming a general power to appoint somebody over a person's
+life.
+
+It names a representative, appointed for the matter named in the record and not
+as a status. It names a receipt witness, which is the answer to a question the
+chapter on delivery has to leave open — somebody has to be able to attest that
+what was owed reached a person who cannot choose an attester, and this record is
+where that person is named and the body that must authorise them is obliged.
+
+It carries the limits in the same breath as the appointment. No request from the
+affected person is required and no finding about their capability is made. Their
+own voice is retained and never replaced by the appointment. The information is
+the least the matter needs, it builds no reusable classification, and it enrols
+nobody in anything. Care continuity and the floor are unaffected by any gap in
+representation. The appointment has a source-bound end and does not renew itself
+in silence.
+
+And it is answerable like everything else in this family. Three separately
+authorised people must agree on every field; the representative may not be the
+acting body, the reviewer, the challenge reader, the alternate, or the person
+themselves; a challenge reader must hear a contest of the appointment and
+correct it; an independent alternate stands behind that reader. A conflicting
+authorised entry on a single-valued field blocks the record rather than picking
+a convenient version.
+
+None of it establishes that an advocate exists, that the appointment was made,
+that the representative acted, or that a witness attested anything. It is what
+the design requires of an appointment, not a report that one happened.
+
 ## Children, the difference between not yet and taken — and a third thing
 
 Cira is a person and is owed everything on the floor. The supplied record contains no
@@ -164,15 +206,26 @@ line: nobody inherits a duty to this child through kinship, no household is
 presumed to be feeding them, no status stands in for a decision, and the
 absence of a family is not a reason to confine anybody.
 
-What the chapter cannot supply is the person at the other end. A supporter is
-chosen, and a child with nobody has chosen no one; the bounded route that opens
-when will and preferences remain unascertainable requires positive evidence
-that support was actually provided first, which is the right condition and is
-one nobody has met here. The design refuses to let the last resort be reached
-by skipping the step before it, and for this child the step before it has not
-happened. That is a gap in the world the record describes, not a defect in the
-rule, and the rule is written so that the gap stays visible instead of being
-stepped over.
+A supporter is chosen, and a child with nobody has chosen no one. The bounded
+route that opens when will and preferences remain unascertainable requires
+positive evidence that support was actually provided first — the right
+condition, and one nobody has met here. The design refuses to let the last
+resort be reached by skipping the step before it, and for this child that step
+has not happened.
+
+Which is what the appointment above is for, and why it is in this chapter
+rather than left to the one on being heard. It does not wait to be chosen. Its
+trigger is that nobody is recorded as acting for the person, the duty to begin
+it is owed to every person without a request, and the record it produces names
+the representative, names the witness who could attest a receipt, and keeps the
+child's own voice where it was. Run the machinery at this child and the
+appointment is what stands between them and none of the routes at all.
+
+The pins are exact about what that is and is not. The duty holds for a record
+of one line. No appointment record exists for this child, so nothing about them
+is completed, and no representative, no witness and no authority follows. A
+named duty-bearer is the end of the constitutional question and the beginning
+of the operational one.
 
 ## What none of this decides
 

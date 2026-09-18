@@ -123,15 +123,21 @@ and nobody to speak for them, each of those refusals is doing work: the price
 of entry, the permission of whoever decided, the need to win first, the need
 to arrive holding representation.
 
-What none of them supplies is the asking. The route begins when somebody
-files, and this child files nothing. The design's nearest answer sits in the
-way in: a child needs an independent voice and separate assistance where the
-adults' interests conflict, and a representative does not create the child's
-standing — which is exactly the right shape, because it means the voice is not
-the source of the right. But a duty to make assistance available is not
-a person arriving, and no rule here obliges anybody to notice a child who has
-not asked. That is the same gap the chapters on arrival and on records name,
-and it is the one this book has not closed.
+What none of them supplies is the asking. The route begins when somebody files,
+and this child files nothing. Two answers sit outside this chapter and both
+belong here. The way in already says that a child needs an independent voice
+and separate assistance where the adults' interests conflict, and that a
+representative does not create the child's standing — the right shape, because
+it means the voice is not the source of the right. And the chapter on who owes
+carries the duty this chapter cannot: the initiation of assistance and
+representation is owed to every person without a request, so the act that opens
+this route is somebody's duty rather than somebody's kindness.
+
+What is still true is narrower, and it is the honest residue. A duty is not a
+person arriving. Nothing here establishes that anybody came for this child, and
+the entry that escalates when nobody has must be written by somebody who saw.
+The design has moved the missing act off the person who cannot perform it. It
+has not made anybody perform it.
 
 ## What none of this hears
 

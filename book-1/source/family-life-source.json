@@ -136,6 +136,17 @@
         "ContinuityOrRespiteWithdrawal",
         "RetaliationForSeekingHelp"
       ]
+    ],
+    [
+      "LifeCourseInitiationTriggerScope",
+      "LifeCourseInitiationTriggerVocabulary",
+      [
+        "NobodyIsRecordedAsActingForThePerson",
+        "TheOnlyRecordedSupporterIsTheAccusedParty",
+        "ThePersonCannotBeReachedInAnAccessibleLanguageOrForm",
+        "ThePersonIsHeldOrPlacedAndUnrepresented",
+        "AnEarlierAppointmentEndedWithoutASuccessor"
+      ]
     ]
   ],
   "contracts": [
@@ -257,6 +268,67 @@
         "~($supporter = $review)",
         "~($supporter = $reader)",
         "~($supporter = $alternate)"
+      ],
+      "record_dependency": false,
+      "bindings": {}
+    },
+    {
+      "id": "initiation",
+      "kind": "ReviewedAssistanceInitiation",
+      "fields": [
+        [
+          "$trigger",
+          "LifeCourseInitiationTriggerScope"
+        ],
+        [
+          "$representative",
+          "LifeCourseAppointedRepresentativeScope"
+        ],
+        [
+          "$witness",
+          "LifeCourseReceiptWitnessScope"
+        ],
+        [
+          "NoRequestFromTheAffectedPersonRequiredAndNoCapabilityFindingMade",
+          "LifeCourseNoRequestScope"
+        ],
+        [
+          "AppointedForTheNamedMatterOnlyAndNotAsAStatusOrGuardianship",
+          "LifeCourseAppointmentReachScope"
+        ],
+        [
+          "TheAffectedPersonsOwnVoiceRetainedAndNeverReplacedByTheAppointment",
+          "LifeCourseVoiceRetainedScope"
+        ],
+        [
+          "MinimumNecessaryInformationNoReusableClassificationAndNoEnrolment",
+          "LifeCoursePrivacyLimitScope"
+        ],
+        [
+          "ContinuityOfCareAndTheFloorUnaffectedByAnyGapInRepresentation",
+          "LifeCourseInitiationContinuityScope"
+        ]
+      ],
+      "heads": [
+        "obliged($representative, ActForThePersonWithinTheAppointedMatterOnly, $record)",
+        "obliged($reader, HearTheChallengeToTheAppointmentAndCorrectIt, $record)",
+        "obliged($actor, AuthorizeTheNamedReceiptWitnessForThePerson, $record)"
+      ],
+      "extra": [
+        "~($representative = $actor)",
+        "~($representative = $source)",
+        "~($representative = $evidence)",
+        "~($representative = $review)",
+        "~($representative = $reader)",
+        "~($representative = $alternate)",
+        "~($representative = $participant)",
+        "~($witness = $actor)",
+        "~($witness = $source)",
+        "~($witness = $representative)",
+        "~($witness = $participant)",
+        "observe($source, $record, $participant, LifeCourseParticipantScope)",
+        "observe($evidence, $record, $participant, LifeCourseParticipantScope)",
+        "observe($review, $record, $participant, LifeCourseParticipantScope)"
       ],
       "record_dependency": false,
       "bindings": {}

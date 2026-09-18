@@ -27,7 +27,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 17
+:expect-pins 24
 
 # ── "Public responsibility around it takes distinct forms." ────────────────
 # Respect, protection, fulfilment, continuity, remedy — one typed duty each.
@@ -99,4 +99,35 @@ obliged(OblPositive198Bearer, OblPositive198Duty, ForgedObligationStandard).
 # "Nothing between the birth entry and the debt asks who is caring for the
 # child." The record holds no family entry for Nell and the debt is unmoved.
 ? family(Nell).
+# => FALSE
+
+# ── The one duty that does not wait to be asked ──────────────────────────────
+# Article 1c's whole body is `person($x)`, so it holds for the record of one
+# line and holds identically for everybody else. There is nothing in it a
+# person could fail and nothing about it a record could withhold.
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Nell).
+# => TRUE
+
+# The escalation waits for an entry, and the entry takes no seat, no
+# relationship and no standing.
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Nell).
+# => FALSE
+
+observe(Bystander, NellAlone, Nell, UninitiatedAssistanceScope).
+
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Nell).
+# => TRUE
+
+# "the entry concludes nothing about the person it names"
+? prisoner(Nell).
+# => FALSE
+
+? false(Nell).
+# => FALSE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+# "A duty is not an arrival" — nothing reads either duty, and no actuality moves.
+? eats(Nell).
 # => FALSE

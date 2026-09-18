@@ -34,7 +34,7 @@
 # flips on one written line; every FALSE about Ori flips on a birth or an
 # encounter.
 
-:expect-pins 48
+:expect-pins 58
 
 # "The record supplied for this chapter says one thing about Nell"
 ? born(Nell).
@@ -189,4 +189,49 @@ vulnerable(Nell).
 # => FALSE
 
 ? prevents(Ori, PublicFirstCareContinuity).
+# => FALSE
+
+# ── The duty that needs no request ───────────────────────────────────────────
+# Article 1c reads personhood and nothing else, so it holds for a record of one
+# line. Writing a request, a relationship or a capability finding would change
+# nothing about it, which is the point: there is nothing here to withhold.
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Nell).
+# => TRUE
+
+# And nothing about it reaches the person. A duty is read by no rule in this
+# design, so the eight debts, the floor actualities and the barriers are
+# exactly where the sections above left them.
+? eats(Nell).
+# => FALSE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+# The escalation waits for an entry, and the entry takes no credential.
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Nell).
+# => FALSE
+
+# A stranger with no seat, no relationship and no standing writes one.
+observe(Passerby, NellUnattended, Nell, UninitiatedAssistanceScope).
+
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Nell).
+# => TRUE
+
+# The observation concludes nothing about Nell. Not that anybody failed, not
+# that Nell is unable to act, not that Nell is anything at all.
+? person(Passerby).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
+
+? false(Nell).
+# => FALSE
+
+? lose(Points, Nell).
+# => FALSE
+
+# Ori, whom no record has entered, is owed no duty either — the rule needs the
+# one entry that makes a person, and Ori has none.
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Ori).
 # => FALSE

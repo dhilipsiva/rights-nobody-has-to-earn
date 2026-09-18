@@ -156,11 +156,21 @@ arriving, because the recipient-side route needs a receipt and a witness
 authorised for Nell, and nobody has written either. The pins show what would
 change that: a receipt naming Nell and an authorised witness who is not the
 provider derive that food reached Nell, exactly as they do for anyone else,
-with no roster entry and no adult required. They also show the question the
-route leaves open and this book does not close. The witness for a person who
-can choose one is chosen; the witness for a person who cannot is authorised by
-somebody, and who that somebody may be is a rule the design has not yet
-written. Naming that gap is not the same as closing it.
+with no roster entry and no adult required. They also answer a question worth asking slowly. The rule never
+required the recipient to choose the witness — it asks for a witness authorised
+*for* the person, and says nothing about who did the authorising — so the
+question was never whether an unrepresented person may have a witness. It was
+who is answerable for naming one. The chapter on roles has that answer now: the
+reviewed appointment that follows the duty to begin names a receipt witness
+among the things it must contain, before three separate attesters, with a
+challenge reader and an independent alternate behind it, and the acting body is
+obliged to authorise the person it names.
+
+What that does not do is write the entry. The appointment record obliges
+somebody to authorise a witness; it does not authenticate the witness, prove
+the appointment was made, or show that anything reached anyone. A named
+duty-bearer is the end of the constitutional question and the beginning of the
+operational one.
 
 ## What none of this proves
 

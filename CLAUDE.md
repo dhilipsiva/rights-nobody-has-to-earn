@@ -2927,6 +2927,56 @@ signing inside one record (the three routes examined each reintroduce the loop
 or a finding with no finder) — is recorded with its examined alternatives in the
 decision.
 
+**Item 03 — the initiation gap, landed 2026-09-18.** Every route into this
+design began with a record somebody wrote, and each was unconditional in the
+ways that usually stop people while still waiting for an act. For a person
+nobody had come for, the whole apparatus sat downstream of an act nobody was
+obliged to perform. **Article 1c** closes it in the shape of Article 1b
+directly above: `all $x: person($x) -> obliged(RightsAdvocate,
+InitiateAssistanceAndRepresentationWithoutARequest, $x).` — personhood is the
+whole body.
+
+**It reads nothing about the person, and that is the ruling.** A duty scoped to
+whoever is "unable to act" needs a capability finding this design refuses to
+hold (`vulnerable` unadmitted, no global capability score, the life-course
+corridor naming that refusal by constant). A duty computed from what is
+*absent* in a record fires on everyone and discriminates nobody — the exact
+ground the floor-delivery markers were refused on. So it is owed to everyone,
+discharged in the asking wherever somebody asked, and load-bearing where
+nothing else happened. The escalation takes no credential: `person($x) &
+observe($writer, $entry, $x, UninitiatedAssistanceScope) ->
+obliged(IndependentRightsAlternate, …)` — any writer at all, the justice
+family's bare-request polarity pointed at a third party because the subject is
+the one who cannot file. The entry concludes nothing about the person.
+
+**What discharging it must contain** is the `initiation` card added to
+FAMILY-LIFE-ORDINARY: a closed trigger vocabulary, a representative for one
+named matter and not a status, a named receipt witness, no request and no
+capability finding, the person's own voice retained, minimum information and no
+enrolment, continuity unaffected by a gap in representation, a source-bound end,
+three distinct attesters, a challenge reader and an independent alternate. The
+generator produced 60 cases from the card.
+
+**The receipt-witness answer, and the refusal that shaped it.** The delivery
+rules read `authorized($w, DeliveryWitness, $p)` — a witness authorised *for*
+the person, never *by* them — so the gap was never that an unrepresented person
+may not have a witness; it was that nobody was answerable for naming one. The
+card's first draft concluded `authorized(...)` directly and **the engine refused
+it**: `Unstratifiable negation: 'authorized' -> 'contradict' (negative)`,
+because every card's premises read `~contradict($record, …)` and `contradict`
+is downstream of `authorized`. The head is a duty on the acting body to
+authorise the named witness instead, which is what the design can honestly say.
+
+Rule count 7088 → 7107; predicates, derived predicates, strata and the floor
+unchanged. Chapters 1, 5, 7, 14, 19 and 21 carry it, and chapter 21's child
+section — which said "no rule here obliges anybody to notice a child who has not
+asked… the one this book has not closed" — is rewritten. The residual is
+recorded as `nobody-obliged-to-begin`, state `operationally-unresolved`: a rule
+over supplied records cannot discover a person no record has entered, and the
+entry that opens the escalation must still be written by somebody who saw. What
+changed is that the act nobody performs is owed by a named office rather than
+waited for from the person who cannot perform it.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

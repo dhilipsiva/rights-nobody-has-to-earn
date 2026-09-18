@@ -30,7 +30,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 22
+:expect-pins 31
 
 # ── "Every barrier above is written over personhood alone" ─────────────────
 # The barriers this chapter renders, asked of a record of one line. Each has
@@ -113,4 +113,44 @@
 # => TRUE
 
 ? decide(Cira, Ballot).
+# => FALSE
+
+# ── When nobody holds a role at all ──────────────────────────────────────────
+# The reviewed appointment, run from tests/pins/family-life/initiation/positive.
+# Three separately authorised people agree on every field; the representative is
+# none of them and is not the person; the appointment names a receipt witness
+# the acting body is obliged to authorise.
+? complete(LifeCourseCaseRecord, ReviewedAssistanceInitiation, LifeCourseCaseDecision).
+# => TRUE
+
+? obliged(LifeCourseCaseRepresentative, ActForThePersonWithinTheAppointedMatterOnly, LifeCourseCaseRecord).
+# => TRUE
+
+? obliged(LifeCourseCaseReader, HearTheChallengeToTheAppointmentAndCorrectIt, LifeCourseCaseRecord).
+# => TRUE
+
+# "somebody has to be able to attest that what was owed reached a person who
+# cannot choose an attester" — the appointment names them and obliges the
+# acting body to authorise them. It does not authorise them.
+? obliged(LifeCourseCaseActor, AuthorizeTheNamedReceiptWitnessForThePerson, LifeCourseCaseRecord).
+# => TRUE
+
+? authorized(LifeCourseCaseWitness, DeliveryWitness, LifeCourseCaseParticipant).
+# => FALSE
+
+# "not as a status or guardianship" — the appointment concludes nothing about
+# the person, and confers no role authority over them.
+? person(LifeCourseCaseParticipant).
+# => FALSE
+
+? authority(LifeCourseCaseRepresentative, Parentage, LifeCourseCaseRecord).
+# => FALSE
+
+# ── The child with nobody, and the duty that needs no request ────────────────
+# Article 1c reads personhood alone, so it holds for a record of one line while
+# no appointment record exists for that child at all.
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Nell).
+# => TRUE
+
+? complete(Nell, ReviewedAssistanceInitiation, Nell).
 # => FALSE

@@ -208,6 +208,54 @@ inspection permission is not a general power to enter, search or seize.
 Human responsibility still requires its actual court, assistance, defence
 and appeal safeguards, without turning an animal into an offender.
 
+## The one duty that does not wait to be asked
+
+Everything above is a route, and every route in this design starts with a
+record somebody wrote. A hearing starts when somebody files. A receipt needs a
+witness named for the recipient. A correction needs a challenge. Each of those
+is unconditional in the ways that usually stop people — no money, no papers, no
+status, no permission, no prior finding of merit — and every one of them still
+waits for an act. For a person nobody has come for, the whole apparatus sits
+downstream of an act nobody performs.
+
+So one duty does not wait. The independent rights advocate owes every person the
+initiation of assistance and representation without a request, and the condition
+of that duty is being a person. It is the same shape as the debt at the front of
+this part, for the same reason: what the design cannot ask, it does not ask.
+
+It reads nothing about the person, and that is a decision rather than a shortage
+of vocabulary. A duty scoped to whoever is *unable to act* would need a finding
+about capability, and this design refuses to hold one — there is no such word in
+the record, no capability score anywhere, and the chapter on roles names that
+refusal as a limit on every rule in its family. A duty computed instead from what
+is *missing* in somebody's record would fire on every person alike and
+distinguish nobody, which is why the delivery alarms were refused on the same
+ground. What is left is a duty owed to everyone. For anybody who asked, or for
+whom somebody asked, it is discharged in the asking. It means something exactly
+where nothing else happened.
+
+The escalation takes no credential either. Anybody at all may record that a
+person appears to have nobody acting for them, and that entry lands a review
+duty on a separate office — no seat, no relationship, no standing, no prior
+finding. It is the same polarity as the bare request above, pointed at a third
+party because the subject is the one who cannot file. And the entry concludes
+nothing about the person it names: not that a duty was breached, not that
+anybody is unable to act, not that anybody is at fault.
+
+What discharging the first duty looks like is the reviewed appointment the
+chapter on roles sets out — a named trigger, a named representative appointed
+for one matter and not as a status, a named witness who can attest a receipt,
+the person's own voice retained, the least information the matter needs, an end
+that does not renew itself, a challenge reader and an independent alternate.
+
+Then the honest half, and it is narrower than it was. The design can say who
+owes this, that it is owed without being asked, and what discharging it must
+contain. It cannot make anybody notice. No rule reads a duty, so nothing here
+establishes that an advocate exists, was funded, was told, arrived, or acted,
+and the entry that opens the escalation still has to be written by somebody who
+saw. What has changed is that the person who does not write it is no longer the
+one the duty was waiting for.
+
 ## The child with nobody
 
 The child with nobody has no relationship the rules could send a bill to, and
@@ -217,16 +265,23 @@ absence of all of them subtracts nothing from what is owed. The public duty
 runs to a person, and being a person is the whole of its condition. Nothing
 between the birth entry and the debt asks who is caring for the child.
 
-The chain after a finding is where the child's position is weaker, and this
-chapter should say so rather than let the machinery read as protection. Every
-route here begins with a record somebody wrote — a request, a challenge, a
-reviewed finding — and none of those writers is the child. Some of them do not
-need to be: the sections above say that anyone may request review without the
-operator's permission, and that a supporter, an association or a rights
-advocate can reach an independent reader without the acting body's leave. No
-rule here makes asking a condition of being owed. What is missing is the other
-half. Nothing says who must ask when nobody has, and a duty waiting on a
-request that nobody is obliged to make can sit still indefinitely.
+The chain after a finding is where this child stands furthest from the routes,
+and the section above is what stands between that and nothing. Every route here
+begins with a record somebody wrote — a request, a challenge, a reviewed
+finding — and none of those writers is the child. Some of them do not need to
+be: anyone may request review without the operator's permission, and a
+supporter, an association or a rights advocate can reach an independent reader
+without the acting body's leave. No rule here makes asking a condition of being
+owed. And the duty to begin does not wait for the asking at all: it is owed to
+this child by name of being a person, with nothing in its condition that a
+child with one entry could fail.
+
+What remains is narrower and should be said exactly. A duty is not an arrival.
+Nothing here establishes that anybody came, and the entry that opens the
+escalation is still written by somebody who saw. The design has moved the
+missing act from the person who cannot perform it to the office that owes it,
+which is the most a rule over supplied records can do about a person nobody has
+recorded.
 
 ## And then nobody has necessarily acted
 
