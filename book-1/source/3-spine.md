@@ -166,7 +166,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 11 | What Money Cannot Buy | `11-what-money-cannot-buy.md` | derived | engine | landed |
 | 12 | The Same Route for Everyone | `12-the-same-route-for-everyone.md` | derived | engine | landed |
 | 13 | A Place in Which Life Remains Possible | `13-a-place-in-which-life-remains-possible.md` | derived | engine | landed |
-| 14 | Holding a Role in Somebody's Life | — | derived | engine | planned |
+| 14 | Holding a Role in Somebody's Life | `14-holding-a-role-in-somebodys-life.md` | derived | engine | landed |
 | 15 | Arriving and Belonging | `15-arriving-and-belonging.md` | derived | engine | landed |
 | **Part III — The public power that serves it** | | | | | |
 | 16 | Public Answerability, and Why It Is Never Revoked | `16-public-answerability.md` | derived | engine | landed |

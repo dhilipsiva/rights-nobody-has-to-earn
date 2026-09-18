@@ -1481,6 +1481,186 @@
       ]
     },
     {
+      "id": "14-00",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "(preamble)",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "the ordinary case underneath the barriers",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "cares"
+      ]
+    },
+    {
+      "id": "14-01",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "What kinship does not create",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-COURSE",
+      "function": "protective",
+      "setting": "a caregiver, a dependant, and no inherited debt",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "cares"
+      ]
+    },
+    {
+      "id": "14-02",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "A role is scoped, and the roles are separable",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "parentage, caregiving, household, support, property, decision agent",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "14-03",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "The person the decision is about is heard",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "a decision about somebody, and their own account of it",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "14-04",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "Support assists; it does not replace",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "protective",
+      "setting": "a chosen supporter, and the route that opens only after support",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "14-05",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "Care continuity needs nobody to hold a role",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "continuity",
+      "setting": "a record with no family in it",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "14-06",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "Reproductive and bodily care, and the order of a treatment decision",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "a treatment decision and who may make it",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "14-07",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "Your own origin record",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "reaching and correcting the record about yourself",
+      "trajectory": "works",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "14-08",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "When one of these records is defective",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "continuity",
+      "setting": "a role record independently found defective",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "14-09",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "Children, the difference between not yet and taken — and a third thing",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-COURSE",
+      "function": "protective",
+      "setting": "not yet, taken away, and evidence absent",
+      "trajectory": "unresolved",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "14-10",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "The child with nobody",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "cares"
+      ]
+    },
+    {
+      "id": "14-11",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "What none of this decides",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "protective",
+      "setting": "the boundary of a family interface that decides nothing",
+      "trajectory": "unresolved",
+      "basis": "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "cares"
+      ]
+    },
+    {
       "id": "15-00",
       "chapter": "book-1/15-arriving-and-belonging.md",
       "section": "(preamble)",
@@ -1814,38 +1994,6 @@
     {
       "id": "18-09",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "Children, the difference between not yet and taken — and a third thing",
-      "domain": "Life course, family, care and reproduction",
-      "family": "FAMILY-LIFE-COURSE",
-      "function": "ordinary",
-      "setting": "a child and the adulthood threshold",
-      "trajectory": "unresolved",
-      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "18-10",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "What holding a role in somebody's life actually is",
-      "domain": "Life course, family, care and reproduction",
-      "family": "FAMILY-LIFE-ORDINARY",
-      "function": "ordinary",
-      "setting": "a scoped family role, support and care continuity",
-      "trajectory": "works",
-      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "cares",
-        "chooses",
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "18-11",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The part that is weaker than it looks",
       "domain": "Democracy and amendment",
       "family": "ARTICLES",
@@ -1859,7 +2007,7 @@
       ]
     },
     {
-      "id": "18-12",
+      "id": "18-10",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "And the same silence as before",
       "domain": "Democracy and amendment",

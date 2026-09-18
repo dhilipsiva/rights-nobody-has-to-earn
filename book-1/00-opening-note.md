@@ -318,6 +318,12 @@ below.
   affected reliance, the Guardian who speaks for conditions nobody may spend
   away, and the animals whose interests are their own.
 
+- [Chapter 14: Holding a Role in Somebody's Life](14-holding-a-role-in-somebodys-life.md)
+  — what a parent, carer, household or decision agent actually holds: scoped
+  separable roles, the person's own voice with no minimum speaking age, support
+  that may not substitute, and care continuity that needs no family in the
+  record.
+
 - [Chapter 15: Arriving and Belonging](15-arriving-and-belonging.md) — what a
   person who has just arrived is owed before anybody checks anything, and what
   belonging to a people, a language or a faith may never cost them.
@@ -623,7 +629,8 @@ the domain.
 
 - **Personhood and life course:** Chapters
   [1](01-the-child-with-nobody.md), [3](03-what-counts-as-evidence.md), [16](16-public-answerability.md),
-  [27](27-a-prisoner-is-a-person.md), and
+  [27](27-a-prisoner-is-a-person.md),
+  [14](14-holding-a-role-in-somebodys-life.md), and
   [18](18-the-vote-conviction-does-not-take.md). The constitutional source now
   gives children independent standing and voice; makes general adulthood
   automatic under the later common-tier age while treating records as evidence
@@ -634,7 +641,9 @@ the domain.
   proof of an age, a clock, a working registry, a proceeding, or delivery.
 
 - **Body, health, care, family, and intimacy:** Chapters
-  [1](01-the-child-with-nobody.md), [25](25-voiding.md), [26](26-clawback.md),
+  [1](01-the-child-with-nobody.md),
+  [14](14-holding-a-role-in-somebodys-life.md), [25](25-voiding.md),
+  [26](26-clawback.md),
   [4](04-what-you-are-owed.md), [10](10-contribution.md),
   [28](28-where-people-are-put.md), and
   [31](31-the-five-joints.md). The constitutional source now separates family,

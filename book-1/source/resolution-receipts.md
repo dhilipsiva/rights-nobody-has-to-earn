@@ -27,6 +27,20 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** The seating fact is supplied from outside and is not produced here.
 
+### writable-franchise-word — resolved-for-claim
+
+*Told in* `18-the-vote-conviction-does-not-take.md`, "The part that is weaker than it looks".
+
+**What failed.** The franchise conclusion sat on neither guarded list — not the words the world may write, not the words only rules may conclude — so a forged conclusion was refused only because nobody had added that exact word to the writable list. Tested by adding it, a hand could write the conclusion directly and skip the rule that grants it.
+
+**What changed.** The word is reserved relation-wide as conclusion-only, in every form and at every arity, so admitting it no longer makes it writable and only a rule may produce it. A cast ballot, a tally, an institution's decision and a legal result therefore need their own words rather than borrowing this one.
+
+**How the former attack is rerun.** `book-1/18-the-vote-conviction-does-not-take.pins.nibli`
+
+**What still does not follow.** That the franchise rule is armoured. Typed age evidence may still be missing or disputed, the rule may still be narrowed or deleted, another rule may still produce the same conclusion, and no ballot is cast, collected, tallied or delivered by any of it.
+
+**What remains external or open.** The repeal flank stays open by design: the hostile clause enters and does nothing only for as long as the wider rule survives beside it.
+
 ### student-clawback — resolved-for-claim
 
 *Told in* `26-clawback.md`, "Cira, and the rule that is no longer here".
@@ -54,6 +68,20 @@ gives disclosure no credit for closure.
 **What still does not follow.** That anyone reads the marker, acts on it, or moves anybody. It is an alarm, not a remedy.
 
 **What remains external or open.** The placement-input authority, provenance and challenge gaps stay with the justice interface.
+
+### family-ordinary-half — resolved-for-claim
+
+*Told in* `14-holding-a-role-in-somebodys-life.md`, "Children, the difference between not yet and taken — and a third thing".
+
+**What failed.** The family, dependency, reproduction and care baseline landed its person-held barriers and no ordinary-operation interface, so the domain appears only under strain.
+
+**What changed.** The ordinary half landed as its own constitution block beside the barriers (FAMILY-LIFE-ORDINARY), and the passage followed the interface rather than preceding it, so the coverage is derived rather than written. The domain now carries an ordinary passage in the reader ledger, and the chapter renders the scoped separable roles, the person's own voice, support that does not substitute, care continuity that needs no family in the record, bodily and reproductive care, origin-record access and the defect route.
+
+**How the former attack is rerun.** `book-1/source/reader-coverage.md`
+
+**What still does not follow.** That any role was ever held, any child heard, any supporter chosen, or any care delivered. The family ships dormant in the supplied record, and the ledger establishes what a reader meets, never what the world did.
+
+**What remains external or open.** Service capacity, family and care proceedings, clinical operation and consultation practice stay with the second book.
 
 ### shield-without-a-target — resolved-for-claim
 
@@ -174,18 +202,4 @@ gives disclosure no credit for closure.
 **What still does not follow.** Any claim that the floor arrives. The supplied record derives floor actualities only through confinement.
 
 **What remains external or open.** The refusal expires with its premise: Book 2's delivery layer generating arrival facts is what reopens it.
-
-### family-ordinary-half — open-defect
-
-*Told in* `18-the-vote-conviction-does-not-take.md`, "Children, the difference between not yet and taken — and a third thing".
-
-**What failed.** The family, dependency, reproduction and care baseline landed its person-held barriers and no ordinary-operation interface, so the domain appears only under strain.
-
-**What changed.** Nothing yet. The reader ledger found it; writing a passage showing family life working would fictionalise coverage the source does not derive.
-
-**How the former attack is rerun.** `book-1/source/reader-coverage.md`
-
-**What still does not follow.** Any claim that this book shows ordinary family, care or life-course operation.
-
-**What remains external or open.** The ordinary half has to be implemented before the passage exists; the tracker carries it.
 

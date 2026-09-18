@@ -13,6 +13,18 @@
       "external_or_open": "The seating fact is supplied from outside and is not produced here."
     },
     {
+      "id": "writable-franchise-word",
+      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
+      "section": "The part that is weaker than it looks",
+      "what_failed": "The franchise conclusion sat on neither guarded list — not the words the world may write, not the words only rules may conclude — so a forged conclusion was refused only because nobody had added that exact word to the writable list. Tested by adding it, a hand could write the conclusion directly and skip the rule that grants it.",
+      "what_changed": "The word is reserved relation-wide as conclusion-only, in every form and at every arity, so admitting it no longer makes it writable and only a rule may produce it. A cast ballot, a tally, an institution's decision and a legal result therefore need their own words rather than borrowing this one.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+      "phrase": "The word is now conclusion-only",
+      "still_not_established": "That the franchise rule is armoured. Typed age evidence may still be missing or disputed, the rule may still be narrowed or deleted, another rule may still produce the same conclusion, and no ballot is cast, collected, tallied or delivered by any of it.",
+      "external_or_open": "The repeal flank stays open by design: the hostile clause enters and does nothing only for as long as the wider rule survives beside it."
+    },
+    {
       "id": "student-clawback",
       "chapter": "book-1/26-clawback.md",
       "section": "Cira, and the rule that is no longer here",
@@ -98,15 +110,15 @@
     },
     {
       "id": "family-ordinary-half",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
       "section": "Children, the difference between not yet and taken — and a third thing",
       "what_failed": "The family, dependency, reproduction and care baseline landed its person-held barriers and no ordinary-operation interface, so the domain appears only under strain.",
-      "what_changed": "Nothing yet. The reader ledger found it; writing a passage showing family life working would fictionalise coverage the source does not derive.",
-      "state": "open-defect",
+      "what_changed": "The ordinary half landed as its own constitution block beside the barriers (FAMILY-LIFE-ORDINARY), and the passage followed the interface rather than preceding it, so the coverage is derived rather than written. The domain now carries an ordinary passage in the reader ledger, and the chapter renders the scoped separable roles, the person's own voice, support that does not substitute, care continuity that needs no family in the record, bodily and reproductive care, origin-record access and the defect route.",
+      "state": "resolved-for-claim",
       "rerun": "book-1/source/reader-coverage.md",
       "phrase": "not yet",
-      "still_not_established": "Any claim that this book shows ordinary family, care or life-course operation.",
-      "external_or_open": "The ordinary half has to be implemented before the passage exists; the tracker carries it."
+      "still_not_established": "That any role was ever held, any child heard, any supporter chosen, or any care delivered. The family ships dormant in the supplied record, and the ledger establishes what a reader meets, never what the world did.",
+      "external_or_open": "Service capacity, family and care proceedings, clinical operation and consultation practice stay with the second book."
     },
     {
       "id": "shield-without-a-target",

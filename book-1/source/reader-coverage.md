@@ -46,16 +46,16 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 11 |
+| chooses | 13 |
 | creates | 2 |
-| cares | 3 |
+| cares | 6 |
 | works | 11 |
 | associates | 6 |
 | requests | 5 |
-| receives | 54 |
-| challenges | 19 |
+| receives | 55 |
+| challenges | 22 |
 | governs | 25 |
-| is acted upon | 62 |
+| is acted upon | 61 |
 
 ## Chapter patterns
 
@@ -65,11 +65,11 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 84 |
-| private-civic | 19 |
+| constructive | 83 |
+| private-civic | 28 |
 | democratic | 23 |
 | coercive | 27 |
-| records | 24 |
+| records | 26 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -89,7 +89,7 @@ checked here.
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 7 | 7 | 4 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
-| Life course, family, care and reproduction | 4 | 1 | 3 |
+| Life course, family, care and reproduction | 11 | 4 | 5 |
 | Locality, mobility and external relations | 1 | 1 | 2 |
 | Material floor | 8 | 19 | 13 |
 | Non-human animals | 1 | 1 | 2 |
@@ -200,6 +200,18 @@ checked here.
 | 13-06 | 13-a-place-in-which-life-remains-possible.md | When a use has to be stopped | Non-human animals | ECOLOGICAL-ANIMAL | continuity | remedy orders after an adjudicated animal harm | is acted upon | fails | yes | coercive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 13-07 | 13-a-place-in-which-life-remains-possible.md | The child with nobody | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the child with nobody: one birth entry and nothing else | receives | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 13-08 | 13-a-place-in-which-life-remains-possible.md | What none of this measures | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the boundary of a record that measures no ecology | receives | unresolved | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 14-00 | 14-holding-a-role-in-somebodys-life.md | (preamble) | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | the ordinary case underneath the barriers | cares | works | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-01 | 14-holding-a-role-in-somebodys-life.md | What kinship does not create | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | a caregiver, a dependant, and no inherited debt | cares | works | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-02 | 14-holding-a-role-in-somebodys-life.md | A role is scoped, and the roles are separable | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | parentage, caregiving, household, support, property, decision agent | chooses | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-03 | 14-holding-a-role-in-somebodys-life.md | The person the decision is about is heard | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a decision about somebody, and their own account of it | challenges | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-04 | 14-holding-a-role-in-somebodys-life.md | Support assists; it does not replace | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | a chosen supporter, and the route that opens only after support | chooses | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-05 | 14-holding-a-role-in-somebodys-life.md | Care continuity needs nobody to hold a role | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | a record with no family in it | receives | works | no | constructive | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-06 | 14-holding-a-role-in-somebodys-life.md | Reproductive and bodily care, and the order of a treatment decision | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a treatment decision and who may make it | chooses | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-07 | 14-holding-a-role-in-somebodys-life.md | Your own origin record | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | reaching and correcting the record about yourself | challenges | works | no | records | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-08 | 14-holding-a-role-in-somebodys-life.md | When one of these records is defective | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | a role record independently found defective | challenges | continuity-remedy | no | records | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-09 | 14-holding-a-role-in-somebodys-life.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | not yet, taken away, and evidence absent | is acted upon | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-10 | 14-holding-a-role-in-somebodys-life.md | The child with nobody | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the child with nobody: one birth entry and nothing else | cares | unresolved | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-11 | 14-holding-a-role-in-somebodys-life.md | What none of this decides | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the boundary of a family interface that decides nothing | cares | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 15-00 | 15-arriving-and-belonging.md | (preamble) | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | two questions usually answered by asking for papers | receives | works | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-01 | 15-arriving-and-belonging.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-02 | 15-arriving-and-belonging.md | When the record cannot say what it says | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | continuity | an asylum determination whose record contradicts itself | is acted upon | fails | yes | coercive | `book-1/15-arriving-and-belonging.pins.nibli` |
@@ -222,10 +234,8 @@ checked here.
 | 18-06 | 18-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-07 | 18-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-08 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-09 | 18-the-vote-conviction-does-not-take.md | Children, the difference between not yet and taken — and a third thing | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | ordinary | a child and the adulthood threshold | is acted upon | unresolved | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-10 | 18-the-vote-conviction-does-not-take.md | What holding a role in somebody's life actually is | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a scoped family role, support and care continuity | cares, chooses, is acted upon | works | yes | constructive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-11 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-12 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-09 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-10 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Approved and marked dead | Democracy and amendment | AMENDMENT-ENACTMENT | protective | an approved amendment marked dead | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-02 | 22-changing-the-rules.md | Why the list guards itself | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the register that guards itself | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
