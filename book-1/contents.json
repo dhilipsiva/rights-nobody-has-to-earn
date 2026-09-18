@@ -147,10 +147,11 @@
         },
         {
           "number": 17,
+          "file": "17-how-public-power-is-built.md",
           "title": "How Public Power Is Built",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 18,

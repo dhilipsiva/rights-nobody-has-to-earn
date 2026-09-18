@@ -1,0 +1,237 @@
+# ── Chapter 17 fidelity pins: "How Public Power Is Built" ──────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/17-how-public-power-is-built.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+#
+# The tiers, the bodies, the deadlock routes, the secession route and the
+# result contract all conclude `authority(body, power, record)` from a complete
+# state-form record, and those records are written inside the family's own
+# cases rather than duplicated here:
+#   tests/pins/state-form/main-01 .. main-64   the powers this chapter names,
+#                                       one complete record each: enumerated
+#                                       common competence and regional residual
+#                                       authority, subsidiarity displacement and
+#                                       interim allocation, Assembly lawmaking,
+#                                       revenue, spending, oversight and
+#                                       amendment initiation, Regions Council
+#                                       selection, reasoned return and
+#                                       federal-settlement consent, executive
+#                                       execution, confidence and constructive
+#                                       replacement, the President's selection,
+#                                       appointment, promulgation and
+#                                       continuity, ordinary-court relief,
+#                                       general invalidation, procedure review,
+#                                       the alternate panel, the appointments
+#                                       function, cause-only removal and the
+#                                       vacancy fallback
+#   tests/pins/state-form/counterfactual-01 .. counterfactual-17   what stops
+#                                       deriving when a required condition is
+#                                       taken out of the source
+#   tests/pins/integrity/               the money, disclosure, districting,
+#                                       opposition and coordination findings
+# Every one of those is a legal effect over a supplied record. None of them
+# staffs a body, holds an election, or establishes that an institution acted.
+#
+# The vocabulary probes below use one bare lexicon record with no authorised
+# attesters, so they complete nothing; what they exercise is the closed list
+# each name belongs to. The state-form block declares no single-valued scope
+# and no record-ambiguity rule, so one record carries them all.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 43
+
+# ── "one current government, chamber, party coalition, profession or
+# appointing source" — the closed list of sources the anti-capture rule names.
+observe(PowerLexiconWriter, PowerLexiconRecord, CurrentGovernmentAppointmentSource, AppointmentControlSourceKindScope).
+? member(CurrentGovernmentAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ChamberAppointmentSource, AppointmentControlSourceKindScope).
+? member(ChamberAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, PartyCoalitionAppointmentSource, AppointmentControlSourceKindScope).
+? member(PartyCoalitionAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ProfessionAppointmentSource, AppointmentControlSourceKindScope).
+? member(ProfessionAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, SingleAppointingBodyAppointmentSource, AppointmentControlSourceKindScope).
+? member(SingleAppointingBodyAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => TRUE
+
+# "both direct and de facto appointment control observable" — the second is
+# the one a divided-sources arrangement hides.
+observe(PowerLexiconWriter, PowerLexiconRecord, DirectAppointmentControl, AppointmentControlModeScope).
+? member(DirectAppointmentControl, AppointmentControlModeVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, DeFactoAppointmentControl, AppointmentControlModeScope).
+? member(DeFactoAppointmentControl, AppointmentControlModeVocabulary).
+# => TRUE
+
+# ── "An office's own, household or controlled-entity interests" ───────────
+observe(PowerLexiconWriter, PowerLexiconRecord, OwnMaterialInterest, MaterialInterestKindScope).
+? member(OwnMaterialInterest, MaterialInterestKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, HouseholdMaterialInterest, MaterialInterestKindScope).
+? member(HouseholdMaterialInterest, MaterialInterestKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ControlledEntityMaterialInterest, MaterialInterestKindScope).
+? member(ControlledEntityMaterialInterest, MaterialInterestKindVocabulary).
+# => TRUE
+
+# "Gifts from counterparties and dealings through former holders face
+# relationship-bound limits" — the relationships, by name.
+observe(PowerLexiconWriter, PowerLexiconRecord, RegulatedCounterparty, CounterpartyRelationshipKindScope).
+? member(RegulatedCounterparty, CounterpartyRelationshipKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ContractingCounterparty, CounterpartyRelationshipKindScope).
+? member(ContractingCounterparty, CounterpartyRelationshipKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, AdjudicatedCounterparty, CounterpartyRelationshipKindScope).
+? member(AdjudicatedCounterparty, CounterpartyRelationshipKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, AppointedCounterparty, CounterpartyRelationshipKindScope).
+? member(AppointedCounterparty, CounterpartyRelationshipKindVocabulary).
+# => TRUE
+
+# The three shapes an office-integrity finding can take.
+observe(PowerLexiconWriter, PowerLexiconRecord, ConflictedAct, OfficeIntegrityModeScope).
+? member(ConflictedAct, OfficeIntegrityModeVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, CounterpartyBenefit, OfficeIntegrityModeScope).
+? member(CounterpartyBenefit, OfficeIntegrityModeVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, FormerHolderCounterpartyDealing, OfficeIntegrityModeScope).
+? member(FormerHolderCounterpartyDealing, OfficeIntegrityModeVocabulary).
+# => TRUE
+
+# ── "the kinds of payer, instrument and recipient" ────────────────────────
+# "Enterprise treasuries, unions and voluntary civic associations remain
+# different kinds; relabelling cannot replace examination of who controls
+# the payment."
+observe(PowerLexiconWriter, PowerLexiconRecord, PersonPayer, PoliticalFinancePayerKindScope).
+? member(PersonPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, EnterpriseTreasuryPayer, PoliticalFinancePayerKindScope).
+? member(EnterpriseTreasuryPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, UnionPayer, PoliticalFinancePayerKindScope).
+? member(UnionPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, VoluntaryCivicAssociationPayer, PoliticalFinancePayerKindScope).
+? member(VoluntaryCivicAssociationPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, OutsideJurisdictionPayer, PoliticalFinancePayerKindScope).
+? member(OutsideJurisdictionPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ControllingPartyPayer, PoliticalFinancePayerKindScope).
+? member(ControllingPartyPayer, PoliticalFinancePayerKindVocabulary).
+# => TRUE
+
+# The instruments, so a loan or an in-kind provision cannot be filed as
+# something the record does not examine.
+observe(PowerLexiconWriter, PowerLexiconRecord, ContributionInstrument, PoliticalFinanceInstrumentKindScope).
+? member(ContributionInstrument, PoliticalFinanceInstrumentKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ExpenditureInstrument, PoliticalFinanceInstrumentKindScope).
+? member(ExpenditureInstrument, PoliticalFinanceInstrumentKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, InKindProvisionInstrument, PoliticalFinanceInstrumentKindScope).
+? member(InKindProvisionInstrument, PoliticalFinanceInstrumentKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, LoanOrGuaranteeInstrument, PoliticalFinanceInstrumentKindScope).
+? member(LoanOrGuaranteeInstrument, PoliticalFinanceInstrumentKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, PurchasedIndependentAdvocacyInstrument, PoliticalFinanceInstrumentKindScope).
+? member(PurchasedIndependentAdvocacyInstrument, PoliticalFinanceInstrumentKindVocabulary).
+# => TRUE
+
+# And the recipients.
+observe(PowerLexiconWriter, PowerLexiconRecord, CandidateRecipient, PoliticalFinanceRecipientKindScope).
+? member(CandidateRecipient, PoliticalFinanceRecipientKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, PartyOrCoalitionRecipient, PoliticalFinanceRecipientKindScope).
+? member(PartyOrCoalitionRecipient, PoliticalFinanceRecipientKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, BallotQuestionRecipient, PoliticalFinanceRecipientKindScope).
+? member(BallotQuestionRecipient, PoliticalFinanceRecipientKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, OfficeHolderRecipient, PoliticalFinanceRecipientKindScope).
+? member(OfficeHolderRecipient, PoliticalFinanceRecipientKindVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, PublicDecisionRecipient, PoliticalFinanceRecipientKindScope).
+? member(PublicDecisionRecipient, PoliticalFinanceRecipientKindVocabulary).
+# => TRUE
+
+# ── "A district plan may not be drawn to entrench a party, coalition or
+# incumbent, or to dilute a protected ground." ────────────────────────────
+observe(PowerLexiconWriter, PowerLexiconRecord, PartyOrCoalitionEntrenchment, ForbiddenDistrictingPurposeScope).
+? member(PartyOrCoalitionEntrenchment, ForbiddenDistrictingPurposeVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, IncumbentEntrenchment, ForbiddenDistrictingPurposeScope).
+? member(IncumbentEntrenchment, ForbiddenDistrictingPurposeVocabulary).
+# => TRUE
+
+observe(PowerLexiconWriter, PowerLexiconRecord, ProtectedGroundDilution, ForbiddenDistrictingPurposeScope).
+? member(ProtectedGroundDilution, ForbiddenDistrictingPurposeVocabulary).
+# => TRUE
+# The lists are closed, which is what makes writing them out worth anything: a
+# kind nobody enacted is in none of them, however it is spelled.
+observe(PowerLexiconWriter, PowerLexiconRecord, UnapprovedAppointmentSource, AppointmentControlSourceKindScope).
+? member(UnapprovedAppointmentSource, AppointmentControlSourceKindVocabulary).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "Nothing in this chapter reads a person at all." The whole apparatus above is
+# in the record and the child's own conclusions are exactly what they were.
+? person(Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+# "The ballot is not on the floor" — said plainly here rather than blurred.
+? decide(Nell, Ballot).
+# => FALSE
+
+? false(Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
+
+# A person is not a body. Writing a complete state-form record that named this
+# child as the holder is what would flip this, and nobody has written one.
+? authority(Nell, FSPOW_005, PowerLexiconRecord).
+# => FALSE

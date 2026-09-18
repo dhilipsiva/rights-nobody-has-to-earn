@@ -336,6 +336,12 @@ below.
   explains why removing an official must not erase protection for the person
   who exposed them.
 
+- [Chapter 17: How Public Power Is Built](17-how-public-power-is-built.md) —
+  which tier holds which power, the named bodies and what none of them may do
+  alone, how somebody comes to hold an office, what happens when nobody can
+  agree, and what a public result has to contain before anything may be done
+  on it.
+
 - [Chapter 18: The Vote Conviction Does Not Take](18-the-vote-conviction-does-not-take.md)
   — shows why conviction and custody remove neither franchise nor candidacy,
   separates automatic legal adulthood from its evidence, adds residence-first
@@ -689,6 +695,7 @@ the domain.
   instruments, or an operating economy.
 
 - **Democracy, government, and administration:** Chapters
+  [17](17-how-public-power-is-built.md),
   [16](16-public-answerability.md), [23](23-who-holds-the-pen.md),
   [18](18-the-vote-conviction-does-not-take.md), and
   [22](22-changing-the-rules.md). The constitutional source now formalises the

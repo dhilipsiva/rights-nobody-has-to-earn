@@ -1857,6 +1857,156 @@
       ]
     },
     {
+      "id": "17-00",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "(preamble)",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "ordinary",
+      "setting": "what is actually fixed about public power",
+      "trajectory": "works",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-01",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "Which tier holds which power",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "ordinary",
+      "setting": "an enumerated common competence and a disputed power",
+      "trajectory": "contested",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-02",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "The bodies, and what none of them may do alone",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "ordinary",
+      "setting": "the named institutions and their separate powers",
+      "trajectory": "works",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-03",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "Keeping public decisions answerable",
+      "domain": "Democracy and amendment",
+      "family": "DEMOCRATIC-INTEGRITY",
+      "function": "protective",
+      "setting": "office integrity and political money",
+      "trajectory": "works",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-04",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "How somebody comes to hold an office",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "protective",
+      "setting": "an appointment one coalition could otherwise control",
+      "trajectory": "contested",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-05",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "When nobody can agree",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "continuity",
+      "setting": "a government that could not be formed and a budget that failed",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-06",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "Leaving",
+      "domain": "Locality, mobility and external relations",
+      "family": "STATE-FORM",
+      "function": "protective",
+      "setting": "a region seeking an exit",
+      "trajectory": "contested",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-07",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "What a public result has to contain",
+      "domain": "Democracy and amendment",
+      "family": "STATE-FORM",
+      "function": "both",
+      "setting": "a result nobody can act on until the record holds together",
+      "trajectory": "unresolved",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-08",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "The child with nobody",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "protective",
+      "setting": "the child with nobody: one birth entry and nothing else",
+      "trajectory": "unresolved",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "17-09",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "What none of this staffs",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "protective",
+      "setting": "the boundary of an unstaffed state",
+      "trajectory": "unresolved",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
       "id": "18-00",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "(preamble)",
@@ -1874,21 +2024,6 @@
     {
       "id": "18-01",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "Keeping public decisions answerable",
-      "domain": "Democracy and amendment",
-      "family": "DEMOCRATIC-INTEGRITY",
-      "function": "protective",
-      "setting": "office integrity and political money",
-      "trajectory": "works",
-      "basis": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "18-02",
-      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "A crisis does not suspend the republic",
       "domain": "Emergency and resilience",
       "family": "PUBLIC-SAFETY",
@@ -1902,7 +2037,7 @@
       ]
     },
     {
-      "id": "18-03",
+      "id": "18-02",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "When the emergency broke the rule it was under",
       "domain": "Emergency and resilience",
@@ -1917,7 +2052,7 @@
       ]
     },
     {
-      "id": "18-04",
+      "id": "18-03",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "Power does not grow at the border",
       "domain": "Defence and armed force",
@@ -1932,7 +2067,7 @@
       ]
     },
     {
-      "id": "18-05",
+      "id": "18-04",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "When a public power was handed to a private force",
       "domain": "Defence and armed force",
@@ -1947,7 +2082,7 @@
       ]
     },
     {
-      "id": "18-06",
+      "id": "18-05",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The theorem this completes",
       "domain": "Democracy and amendment",
@@ -1962,7 +2097,7 @@
       ]
     },
     {
-      "id": "18-07",
+      "id": "18-06",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The harsher test",
       "domain": "Records and accountability",
@@ -1977,7 +2112,7 @@
       ]
     },
     {
-      "id": "18-08",
+      "id": "18-07",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The home custody does not move",
       "domain": "Locality, mobility and external relations",
@@ -1992,7 +2127,7 @@
       ]
     },
     {
-      "id": "18-09",
+      "id": "18-08",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "The part that is weaker than it looks",
       "domain": "Democracy and amendment",
@@ -2007,7 +2142,7 @@
       ]
     },
     {
-      "id": "18-10",
+      "id": "18-09",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
       "section": "And the same silence as before",
       "domain": "Democracy and amendment",

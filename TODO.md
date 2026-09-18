@@ -59,7 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-19. **17 — How Public Power Is Built** (PROMOTED + new state-form sections).
 20. **19 — What May Be Kept About You** (PROMOTED from 01).
 21. **20 — A Crisis Does Not Suspend the Republic** (PROMOTED).
 22. **21 — A Way to Be Heard** (PROMOTED).

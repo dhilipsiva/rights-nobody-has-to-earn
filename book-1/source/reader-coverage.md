@@ -52,9 +52,9 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 5 |
-| receives | 55 |
+| receives | 56 |
 | challenges | 22 |
-| governs | 25 |
+| governs | 33 |
 | is acted upon | 61 |
 
 ## Chapter patterns
@@ -67,7 +67,7 @@ what matters is the book's shape, not the chapter's.
 | --- | ---: |
 | constructive | 83 |
 | private-civic | 28 |
-| democratic | 23 |
+| democratic | 32 |
 | coercive | 27 |
 | records | 26 |
 | argument | 7 |
@@ -83,18 +83,18 @@ checked here.
 | Borders, migration, asylum and expulsion | 2 | 3 | 4 |
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 2 |
-| Democracy and amendment | 6 | 5 | 6 |
+| Democracy and amendment | 6 | 6 | 6 |
 | Ecology, future generations and commons | 5 | 3 | 6 |
 | Economy, property, work and commons | 19 | 13 | 16 |
 | Emergency and resilience | 1 | 1 | 2 |
 | Justice and coercion | 7 | 7 | 4 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 11 | 4 | 5 |
-| Locality, mobility and external relations | 1 | 1 | 2 |
+| Locality, mobility and external relations | 1 | 2 | 2 |
 | Material floor | 8 | 19 | 13 |
 | Non-human animals | 1 | 1 | 2 |
 | Personhood and equality | 15 | 8 | 7 |
-| Public institutions | 8 | 5 | 8 |
+| Public institutions | 10 | 10 | 12 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
 | Records and accountability | 10 | 13 | 14 |
 
@@ -225,17 +225,26 @@ checked here.
 | 16-03 | 16-public-answerability.md | What is actually being separated | Public institutions | ARTICLES | ordinary | answerability against capacity to act | governs | works | no | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-04 | 16-public-answerability.md | The separation runs deeper than power | Public institutions | ARTICLES | protective | answerability, capacity and credibility held apart | governs | works | yes | democratic | `book-1/16-public-answerability.pins.nibli` |
 | 16-05 | 16-public-answerability.md | What it costs | Public institutions | ARTICLES | protective | the growing pool of answerable people | governs | unresolved | yes | democratic | `book-1/16-public-answerability.pins.nibli` |
+| 17-00 | 17-how-public-power-is-built.md | (preamble) | Public institutions | STATE-FORM | ordinary | what is actually fixed about public power | governs | works | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-01 | 17-how-public-power-is-built.md | Which tier holds which power | Public institutions | STATE-FORM | ordinary | an enumerated common competence and a disputed power | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-02 | 17-how-public-power-is-built.md | The bodies, and what none of them may do alone | Public institutions | STATE-FORM | ordinary | the named institutions and their separate powers | governs | works | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-03 | 17-how-public-power-is-built.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-04 | 17-how-public-power-is-built.md | How somebody comes to hold an office | Public institutions | STATE-FORM | protective | an appointment one coalition could otherwise control | governs | contested | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-05 | 17-how-public-power-is-built.md | When nobody can agree | Public institutions | STATE-FORM | continuity | a government that could not be formed and a budget that failed | governs | continuity-remedy | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-06 | 17-how-public-power-is-built.md | Leaving | Locality, mobility and external relations | STATE-FORM | protective | a region seeking an exit | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-07 | 17-how-public-power-is-built.md | What a public result has to contain | Democracy and amendment | STATE-FORM | both | a result nobody can act on until the record holds together | governs | unresolved | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-08 | 17-how-public-power-is-built.md | The child with nobody | Public institutions | STATE-FORM | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-09 | 17-how-public-power-is-built.md | What none of this staffs | Public institutions | STATE-FORM | protective | the boundary of an unstaffed state | governs | unresolved | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 18-00 | 18-the-vote-conviction-does-not-take.md | (preamble) | Democracy and amendment | ARTICLES | ordinary | a person in custody who still votes | is acted upon | works | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-01 | 18-the-vote-conviction-does-not-take.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-02 | 18-the-vote-conviction-does-not-take.md | A crisis does not suspend the republic | Emergency and resilience | PUBLIC-SAFETY | protective | an emergency declaration | governs | works | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-03 | 18-the-vote-conviction-does-not-take.md | When the emergency broke the rule it was under | Emergency and resilience | PUBLIC-SAFETY | continuity | an emergency declaration found defective | is acted upon | fails | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-04 | 18-the-vote-conviction-does-not-take.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | defence under civilian command | governs | works | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-05 | 18-the-vote-conviction-does-not-take.md | When a public power was handed to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defence structure found defective | is acted upon | fails | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-06 | 18-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-07 | 18-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-08 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-09 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-10 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-01 | 18-the-vote-conviction-does-not-take.md | A crisis does not suspend the republic | Emergency and resilience | PUBLIC-SAFETY | protective | an emergency declaration | governs | works | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-02 | 18-the-vote-conviction-does-not-take.md | When the emergency broke the rule it was under | Emergency and resilience | PUBLIC-SAFETY | continuity | an emergency declaration found defective | is acted upon | fails | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-03 | 18-the-vote-conviction-does-not-take.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | defence under civilian command | governs | works | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-04 | 18-the-vote-conviction-does-not-take.md | When a public power was handed to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defence structure found defective | is acted upon | fails | yes | coercive | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-05 | 18-the-vote-conviction-does-not-take.md | The theorem this completes | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-06 | 18-the-vote-conviction-does-not-take.md | The harsher test | Records and accountability | ARTICLES | protective | voiding as the harsher loss | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-07 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-08 | 18-the-vote-conviction-does-not-take.md | The part that is weaker than it looks | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-09 | 18-the-vote-conviction-does-not-take.md | And the same silence as before | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Approved and marked dead | Democracy and amendment | AMENDMENT-ENACTMENT | protective | an approved amendment marked dead | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-02 | 22-changing-the-rules.md | Why the list guards itself | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the register that guards itself | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
