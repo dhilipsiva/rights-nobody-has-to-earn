@@ -2800,6 +2800,73 @@ manifest-derived — the digit-gate test reads `book-1/contents.json` instead
 of counting the directory — and "references book-2 exactly once" is replaced
 by R2.
 
+### The revision of Book 1 — 2026-09-18
+
+Two standing authoring rules arrived with the revision tracker, and both govern
+every item in it and everything after. They are recorded here because a tracker
+is deleted when its work lands and these are not task-shaped.
+
+**Current design throughout — author instruction, 2026-09-18.** Every
+reader-facing part, including the opening note, Part V and the optional method,
+describes the design of the edition being read. Accounts of the book's own
+development — earlier rules, repairs, additions, before-and-after versions —
+come out, accurate and instructive or not, and the current rule is explained
+directly with its rationale, consequences and limits. Revision history lives in
+git and in the repository's decision records, outside the reading sequence.
+Three things are expressly still admissible and must not be swept with the
+rest: historical evidence about the world (Part V's cases), explicitly tested
+alternatives and counterfactuals, and temporal behaviour inside the current
+model. This narrows the repaired-defect register the 2026-08-02 clawback ruling
+and the resolution receipts established for chapters — the receipts themselves
+are repository records and are unaffected, but a chapter is no longer the place
+a repair is told. "Current" means the design bound to the edition being read;
+published editions stay immutable.
+
+**Resolve before defending — author instruction, 2026-09-18.** Exposing,
+labelling or explaining a defect does not substitute for correcting the design.
+Establish the failure and its cause against the current source; attempt
+substantive repair, including a different representation, a narrower power, a
+replacement mechanism, simplification or removal, and treat an inherited choice
+as movable unless it is one of the ratified commitments. Implement and verify
+when a sound resolution exists, testing both the legitimate behaviour that must
+remain and the harmful behaviour that must stop. Defend a remaining limitation
+only when resolution is shown impossible inside stated, justified constraints,
+recording the alternatives examined and their results in the controlling
+decision — and a failed encoding, an inconvenient implementation, a tooling
+limit or an undiscovered fix is not such a proof, nor does a finite search
+establish universal impossibility. An adequate defence says why the constraint
+is necessary, why this arrangement beats the alternatives, who bears the
+remaining harm, what safeguards bound it, and what evidence would reopen it;
+calling a cost a trade-off, disclosing it honestly, or pinning it does not meet
+that bar. A constitutional defect may not be closed by transferring it to Book 2.
+
+**Item 01 — the appeal stages, landed 2026-09-18.** `permits(Appeals, ·)` is
+appellate relief already granted, per case, and is the one conclusion in the
+record able to stop a conviction holding. Reading it as permission to appeal
+made `all $x: prisoner($x) -> permits(Appeals, $x).` look like a universal
+right of appeal; it is universal automatic relief, and the stratification
+refusal it earns says nothing about the policy. Measured 2026-09-18: the
+replacement encoding — `all $x: prisoner($x) -> obliged(Appeals, $x).`, a duty
+on the appeal body — loads, and with it resident `prisoner(Ruk)` stays TRUE,
+`permits(Appeals, Ruk)` stays FALSE and `free(Ruk)` stays FALSE. Both encodings
+are now pinned in `book-1/21-a-way-to-be-heard.pins.nibli`, whose closing block
+is last because its `:accept` is unscoped. The stages the design actually
+carries — access under `JusticeAccessibleProcess` with its wealth, documentation
+and status barrier reading `person($x)` as its whole body; the request needing
+no operator permission; the duty to hear with its interim-relief clause and its
+nonresponse route to a separated alternate; and relief — are separated in
+chapter 21 and receipted as `appeal-read-as-relief`.
+
+The same item found the method part printing the four standing roots with every
+variable stripped, which is not what the source says and breaks that part's own
+ground rule that rules appear exactly as the files write them.
+`claim_discipline_tests::every_rule_the_method_part_quotes_is_a_rule_some_file_holds`
+now requires every quoted rule to occur verbatim in some `.nibli` file, which is
+why the two refused rules the part shows are pinned in chapter 21 and chapter 29
+rather than only quoted. It is sabotage-tested against the exact defect. Its
+scope is quoted **rules** — a statement opening `all ` and carrying an arrow;
+the vocabulary listings are set in columns for the page and are outside it.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

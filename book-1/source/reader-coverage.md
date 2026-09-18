@@ -53,7 +53,7 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 6 |
 | requests | 8 |
 | receives | 72 |
-| challenges | 23 |
+| challenges | 24 |
 | governs | 33 |
 | is acted upon | 70 |
 
@@ -68,7 +68,7 @@ what matters is the book's shape, not the chapter's.
 | constructive | 90 |
 | private-civic | 28 |
 | democratic | 35 |
-| coercive | 41 |
+| coercive | 42 |
 | records | 31 |
 | argument | 7 |
 
@@ -87,7 +87,7 @@ checked here.
 | Ecology, future generations and commons | 5 | 3 | 6 |
 | Economy, property, work and commons | 19 | 13 | 17 |
 | Emergency and resilience | 3 | 2 | 4 |
-| Justice and coercion | 13 | 10 | 9 |
+| Justice and coercion | 13 | 11 | 10 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 11 | 4 | 5 |
 | Locality, mobility and external relations | 1 | 2 | 2 |
@@ -267,8 +267,9 @@ checked here.
 | 21-03 | 21-a-way-to-be-heard.md | Support that does not decide anybody's guilt | Justice and coercion | NON-CARCERAL-JUSTICE | ordinary | a survivor who wants help and not a trial | requests | works | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 21-04 | 21-a-way-to-be-heard.md | What a court may order, and which court | Justice and coercion | NON-CARCERAL-JUSTICE | both | relief for one case, and invalidation for everyone | challenges | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 21-05 | 21-a-way-to-be-heard.md | Enforcement that stays inside the remedy | Justice and coercion | NON-CARCERAL-JUSTICE | continuity | a remedy being enforced without a coercive power | is acted upon | works | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
-| 21-06 | 21-a-way-to-be-heard.md | The child with nobody | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
-| 21-07 | 21-a-way-to-be-heard.md | What none of this hears | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the boundary of a route that needs somebody to file | requests | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-06 | 21-a-way-to-be-heard.md | Asking again | Justice and coercion | NON-CARCERAL-JUSTICE | both | a decision that went against somebody | challenges | contested | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-07 | 21-a-way-to-be-heard.md | The child with nobody | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-08 | 21-a-way-to-be-heard.md | What none of this hears | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the boundary of a route that needs somebody to file | requests | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Approved and marked dead | Democracy and amendment | AMENDMENT-ENACTMENT | protective | an approved amendment marked dead | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-02 | 22-changing-the-rules.md | Why the list guards itself | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the register that guards itself | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |

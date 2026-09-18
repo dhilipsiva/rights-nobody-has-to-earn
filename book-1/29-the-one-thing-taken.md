@@ -238,6 +238,14 @@ Recognition, work, compliance, wealth and character cannot shorten or extend cus
 either. Time constrains the power holding a person; it does not become a price attached
 to the person.
 
+The most direct way to write the route from earning to release is not merely unbuilt,
+and the pins run it: a release derived from being confined closes the same loop that
+appellate relief derived from being confined closes, because the conviction rule reads
+both words as absences. The shape is refused before anybody argues about the policy.
+That refusal is not the whole claim, and the chapter on contribution carries the rest —
+a differently named relation would route around the loop, and what stops it is that
+nothing anywhere reads recognition.
+
 So this design can now say more than *a sentence may end*. It can refuse custody that
 lacks a current, case-bound review when the selected record is evaluated afresh. What
 it still cannot say is

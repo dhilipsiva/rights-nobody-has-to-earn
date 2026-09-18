@@ -111,6 +111,20 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** Nothing external. The cost of every future reuse is the argument this section exists to make.
 
+### appeal-read-as-relief — resolved-for-claim
+
+*Told in* `21-a-way-to-be-heard.md`, "Asking again".
+
+**What failed.** The book read one predicate in the sense it wanted rather than the sense it carries. Appellate relief already granted was described as the right to appeal, and the stratifier's refusal of a rule granting it to every confined person was printed as proof that a universal right of appeal could not be expressed at all.
+
+**What changed.** The stages are separated where the interface lives — access, the request, the duty to hear with its interim protection and its alternate, and relief — and the replacement encoding is executed rather than asserted: a universal duty on the appeal body loads, and with it in force the confined person is still confined and nobody is free.
+
+**How the former attack is rerun.** `book-1/21-a-way-to-be-heard.pins.nibli`
+
+**What still does not follow.** That anybody was heard. Every stage but relief concludes a duty, and no rule reads a duty, so a request that lands one proves no review happened and no interim protection reached anyone.
+
+**What remains external or open.** The asking itself. The route begins when somebody files, and nothing here obliges anybody to notice a person who has not.
+
 ## operationally-unresolved
 
 ### unread-duty — operationally-unresolved

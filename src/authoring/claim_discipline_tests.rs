@@ -138,3 +138,100 @@ fn the_derived_chapters_still_carry_no_figures() {
         }
     }
 }
+
+/// Every rule the method part quotes has to be a rule some file actually holds.
+///
+/// The part opens on a ground rule — the reader sees rules "exactly as they are
+/// written in the files" — and that promise is mechanical, so it is checked
+/// rather than trusted. It was not holding: the four standing roots were printed
+/// with every variable stripped (`all : born() & ~public() -> person().`), which
+/// is not a rule, is not what the source says, and had survived because nothing
+/// looked. Rules the part shows in order to say they were REFUSED count too, and
+/// they are held by the pin files that run the refusal — so a quoted refusal
+/// cannot drift away from the refusal anybody can execute.
+///
+/// Scope, stated because the gap matters: this guards quoted RULES — a statement
+/// opening `all ` and carrying an arrow. The vocabulary listings are set in
+/// columns to fit the page and are deliberately outside it, as are the engine's
+/// error messages and the pin excerpts.
+#[test]
+fn every_rule_the_method_part_quotes_is_a_rule_some_file_holds() {
+    let context = Context::discover().expect("repository");
+    let method = context.read("book-1/method.md").expect("method part");
+
+    let mut quoted: Vec<String> = Vec::new();
+    let mut fenced = false;
+    let mut pending = String::new();
+    for line in method.lines() {
+        if line.trim_start().starts_with("```") {
+            fenced = !fenced;
+            pending.clear();
+            continue;
+        }
+        if !fenced {
+            continue;
+        }
+        if !pending.is_empty() {
+            pending.push(' ');
+        }
+        pending.push_str(line.trim());
+        if pending.trim_end().ends_with('.') {
+            let statement = normalise(&pending);
+            if statement.starts_with("all ") && statement.contains("->") {
+                quoted.push(statement);
+            }
+            pending.clear();
+        }
+    }
+    assert!(
+        quoted.len() >= 6,
+        "the method part quotes {} rules, which is fewer than it has ever shown — \
+         the extractor has stopped seeing them",
+        quoted.len()
+    );
+
+    let mut sources = Vec::new();
+    nibli_files(&context.path("book-1"), &mut sources);
+    nibli_files(&context.path("tests"), &mut sources);
+    assert!(sources.len() > 40, "the rule sweep found only {} files", sources.len());
+    let mut held: BTreeSet<String> = BTreeSet::new();
+    for file in &sources {
+        for line in std::fs::read_to_string(file).expect("nibli file").lines() {
+            let line = line.trim();
+            if line.starts_with('#') || !line.contains("->") {
+                continue;
+            }
+            held.insert(normalise(line));
+        }
+    }
+
+    let missing: Vec<&String> = quoted
+        .iter()
+        .filter(|rule| !held.contains(*rule))
+        .collect();
+    assert!(
+        missing.is_empty(),
+        "the method part promises rules exactly as the files write them, and these \
+         are in no file: {missing:#?}"
+    );
+}
+
+fn normalise(text: &str) -> String {
+    text.split_whitespace().collect::<Vec<_>>().join(" ")
+}
+
+fn nibli_files(dir: &std::path::Path, into: &mut Vec<std::path::PathBuf>) {
+    let mut entries: Vec<_> = std::fs::read_dir(dir)
+        .expect("directory")
+        .filter_map(Result::ok)
+        .map(|e| e.path())
+        .collect();
+    entries.sort();
+    for entry in entries {
+        if entry.is_dir() {
+            nibli_files(&entry, into);
+        } else if entry.extension().is_some_and(|ext| ext == "nibli") {
+            into.push(entry);
+        }
+    }
+}

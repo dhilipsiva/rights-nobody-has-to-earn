@@ -56,14 +56,17 @@ sections describe. The floor is not a preamble. It is load-bearing text in a
 running system, and the current full list — like every figure in this part —
 lives in the repository, not on this page, for a reason I will come to.
 
-Those lines still need a person. Four new roots now supply that standing, exactly
-as written:
+Those lines still need a person. Four roots supply that standing, exactly as
+written:
 
 ```
-all : born() & ~public() -> person().
-all : at(, FirstContact) & ~public() -> person().
-all : at(, RepublicJurisdiction) & ~public() -> person().
-all : at(, EffectiveControl) & ~public() -> person().
+all $child: born($child) & ~public($child) -> person($child).
+all $subject: at($subject, FirstContact) &
+  ~public($subject) -> person($subject).
+all $subject: at($subject, RepublicJurisdiction) &
+  ~public($subject) -> person($subject).
+all $subject: at($subject, EffectiveControl) &
+  ~public($subject) -> person($subject).
 ```
 
 Birth, first contact, physical presence and effective control do not read
@@ -275,8 +278,6 @@ The engine's answer, exactly as printed:
 component containing 'prisoner' -> 'permits' (negative)
 ```
 
-A universal right of appeal cannot be expressed in this constitution.
-
 Follow the loop once, because it is the same loop the whole book stands on.
 Conviction reads the *absence* of appellate permission. My rule derives that
 permission *from* conviction. So the conclusion would feed the very absence
@@ -289,19 +290,45 @@ third case, and the difference is only whose rule died: the same wall, met
 from inside, by the author. One mechanism, no special pleading, and none of
 the three outcomes chosen by whoever was writing that day.
 
+Now the part the refusal does not settle, and it matters more than the refusal
+does. Read the predicate rather than its name. `permits(Appeals, ·)` is not
+permission to appeal. It is relief already granted, per case, and it is the one
+conclusion in the record with the power to stop a conviction holding. So my
+line does not say that every prisoner may appeal. It says that every prisoner
+has already won, which would empty every conviction in the file. The shape is
+circular and the content is wrong, independently, and the engine happens to
+catch only the first. Take the refusal as a verdict on what I wanted and I
+would have written down that a universal right of appeal cannot be expressed
+here — a false sentence, arrived at honestly, from a true error message.
+
+It is expressed. It is in the chapter on being heard, as stages the design
+keeps deliberately apart: access to a hearing that money, documents and status
+cannot buy; a request that needs nobody's permission and no prior finding of
+merit; a duty to hear it resting on an independent reader, moving to a
+separated alternate when it goes unanswered; and relief, which is what a body
+concludes at the end. Only the last of those touches a conviction. The first
+three are what people usually mean by a right of appeal, and none of them meets
+this wall.
+
+The difference is executable, which is the only reason I will assert it. Write
+the guarantee as the thing it meant — a duty on the appeal body, every confined
+person's case must be heard — and it loads without complaint. The closing pins
+of that chapter run it: with the duty in force, the confined person is still
+confined, relief has still not been granted, and nobody has become free.
+
 That chapter also named the trap, and it applies to me exactly as printed
-there: a refusal leaves the *loose* rule in force. When the engine refused my
-guarantee, prisoners did not get a right of appeal — relief stayed what it
-was, an act somebody performs, granted case by case, with the cost the book
-prices where it weighs that default: a person whose case nobody takes up
-stays held. Being told no is not being kept safe. The refusal told me the
-guarantee I wanted cannot exist in this shape, and that what exists instead
-would keep running whether or not I made my peace with it.
+there: a refusal leaves the *loose* rule in force. Refusing my line grants
+nobody relief. Relief remains what it is — an act somebody performs, granted
+case by case — with the cost the book prices where it weighs that default: a
+person whose case nobody takes up stays held, and a duty to take it up is a
+duty, not an arrival. Being told no is not being kept safe. A refusal is a fact
+about the rule in front of it and never a verdict on the policy behind it, and
+that distinction is cheap to state and expensive to keep.
 
 A second refusal shows something less comfortable: a wall can block a bad
-intention without proving a good policy. An earlier version would have let a
-convicted person earn their sentence shorter, and the obvious way to write that
-was release earned from inside:
+intention without proving a good policy. Suppose a design wanted to let a
+convicted person earn their sentence shorter. The obvious way to write that is
+release earned from inside:
 
 ```
 all $x: prisoner($x) & reward($x) -> free($x).
@@ -313,11 +340,12 @@ component containing 'prisoner' -> 'free' (negative)
 ```
 
 Conviction reads *not already free*; a release derived from conviction loops
-straight back through it. That tells a fact about the current formal shape. It
-does not decide whether earned-time credit is just. The ratified temporal contract
-answers that question separately, and the enacted path contains no route from
-character, contribution, or recognition to a shorter sentence. Release remains an
-entry someone writes,
+straight back through it. That tells a fact about the formal shape. It does not
+decide whether earned-time credit is just, and this is exactly where refusing
+the shape and settling the policy come apart: the policy is settled elsewhere,
+by the temporal contract, which contains no route from character, contribution
+or recognition to a shorter sentence. The chapter on what punishment takes runs
+this refusal in its own pins. Release remains an entry someone writes,
 never an output the machinery computes, and it carries the concession chapter 3
 already made: the entry does not say whose decision it records. The temporal rule
 instead constrains the authority holding the exact person in the exact case. If
@@ -327,9 +355,10 @@ manufactured in its place.
 What it felt like, since the opening note promised I would say: not like
 being corrected. Like leaning on a wall I had built myself and finding it did
 not care that I was its builder. The machine holds no opinions about appeals
-or mercy. It found a shape twice, and both times it returned a fact my draft had
-to answer. That made the later decision more honest — not because it is wise,
-but because it cannot be talked out of anything, including by me.
+or mercy. It finds a shape, and what it returns is a fact the rule has to
+answer. That makes the design more honest than my intentions would have — not
+because the machine is wise, but because it cannot be talked out of anything,
+including by me.
 
 ## The checks, and the check on the checks
 

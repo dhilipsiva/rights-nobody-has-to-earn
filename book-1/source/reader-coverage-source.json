@@ -2489,6 +2489,21 @@
     {
       "id": "21-06",
       "chapter": "book-1/21-a-way-to-be-heard.md",
+      "section": "Asking again",
+      "domain": "Justice and coercion",
+      "family": "NON-CARCERAL-JUSTICE",
+      "function": "both",
+      "setting": "a decision that went against somebody",
+      "trajectory": "contested",
+      "basis": "book-1/21-a-way-to-be-heard.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "21-07",
+      "chapter": "book-1/21-a-way-to-be-heard.md",
       "section": "The child with nobody",
       "domain": "Justice and coercion",
       "family": "NON-CARCERAL-JUSTICE",
@@ -2502,7 +2517,7 @@
       ]
     },
     {
-      "id": "21-07",
+      "id": "21-08",
       "chapter": "book-1/21-a-way-to-be-heard.md",
       "section": "What none of this hears",
       "domain": "Justice and coercion",

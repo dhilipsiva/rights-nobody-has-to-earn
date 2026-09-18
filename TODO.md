@@ -111,23 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 01. Separate access to appeal from appellate relief
-
-- [ ] Inspect the appeal rules and their consumers; repair the argument in
-  `book-1/method.md` and any affected passages in chapters 21, 27 and 29.
-
-Distinguish the entitlement to initiate an appeal, the duty to consider it,
-any separately authorized interim protection, and relief actually granted.
-Establish what the present constitution already represents before adding
-anything. Do not describe `prisoner -> permits(Appeals, ...)` as merely a right
-to file when that predicate means granted relief. Explain the scope of the
-stratification refusal and test any replacement encoding.
-
-**Done when:** the prose distinguishes all applicable stages; a filed appeal
-does not automatically erase a conviction; granted relief has its intended
-effect; lack of money, documents or personal assistance cannot remove access;
-and no passage turns rejection of one encoding into impossibility of the policy.
-
 ### 02. Give adverse credibility consequences substantive grounds and limits
 
 - [ ] Rework the mechanism described in chapter 25 and its consumers in

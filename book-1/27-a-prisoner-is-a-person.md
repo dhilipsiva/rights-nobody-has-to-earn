@@ -146,6 +146,14 @@ saying that the protection you want cannot exist in this shape, and that what ex
 instead will keep running — so the places where a rule cannot be tightened have to be
 known, priced, and watched, not discovered by whoever tries first.
 
+The trap has a second mouth, and that one is harder to notice because falling into
+it feels like modesty. A refusal is a fact about the rule in front of it and says
+nothing about the policy behind it. Read as a verdict, it will persuade a careful
+designer to write down that some guarantee is impossible here when what is
+impossible is one particular way of writing it. The optional part on method runs
+that case to the end: a guarantee refused in one form, and the same guarantee
+loading without complaint once it is written as the thing it meant.
+
 And one more limit, the sharpest in the chapter. The refusal you have been watching
 originally guarded one consequence: imprisonment. Every new protective instrument
 now has its own connection to standing and its own refusal of each floor-based

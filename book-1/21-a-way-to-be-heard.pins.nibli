@@ -29,8 +29,14 @@
 #
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
+#
+# THE CLOSING BLOCK IS LAST FOR A MECHANICAL REASON. It ends on an unscoped
+# `:accept`, which leaves its rule resident for everything below it, so it sits
+# at the foot of the file where there is nothing below to widen. Do not move it
+# up, and do not scope it: the block's whole point is to ask what the accepted
+# rule derived.
 
-:expect-pins 11
+:expect-pins 25
 
 # ── "A right needs a way to be heard when somebody denies it." ─────────────
 ? complete(JCaseRecord, JusticeFairHearing, JCaseCase).
@@ -72,10 +78,77 @@
 ? owe(State, Secure, Nell).
 # => TRUE
 
+# "money, documents and immigration status cannot be the price of entry" — the
+# barrier saying so has `person($x)` as its whole body, so it holds for a child
+# with one birth entry, no papers and nobody to ask on their behalf. Nothing
+# about wealth, documents or representation appears in it to be missing.
+? prevents(Nell, JusticeWealthDocumentationOrStatusConditionedAccess).
+# => TRUE
+
+? prevents(Nell, JusticeInstitutionalDelayExtendingCustody).
+# => TRUE
+
 # "What none of it supplies is the asking." Nothing has been filed for this
 # child, so no hearing and no review duty follows for them.
 ? complete(Nell, JusticeFairHearing, Nell).
 # => FALSE
 
 ? prisoner(Nell).
+# => FALSE
+
+
+# ── "Relief is the last of them ... the only one with an effect on a
+# conviction." ───────────────────────────────────────────────────────────────
+# Nia was cleared beside a generic Appeals judgment, so relief derives and the
+# conviction does not hold. Ruk has no clearing entry, so it does.
+? permits(Appeals, Nia).
+# => TRUE
+
+? prisoner(Nia).
+# => FALSE
+
+? prisoner(Ruk).
+# => TRUE
+
+? permits(Appeals, Ruk).
+# => FALSE
+
+# Nothing has landed a duty on the appeal body for Ruk: that needs either a
+# contested temporal defect or a justice appeal record, and the shipped cast
+# carries neither.
+? obliged(Appeals, Ruk).
+# => FALSE
+
+# ── The encoding that is refused, and what it actually said ────────────────
+# Written as a right of appeal and read as one for a long time. It is not one:
+# `permits(Appeals, ·)` is relief already granted, so this rule says every
+# confined person has already won, and the conviction rule reads its absence.
+# The loop is the conclusion feeding its own premise.
+:refuse reasoning /Unstratifiable/
+all $x: prisoner($x) -> permits(Appeals, $x).
+
+# ── The encoding that is not refused ───────────────────────────────────────
+# The same guarantee written as what it meant — a duty on the appeal body to
+# hear every confined person's case — loads without complaint. Nothing reads
+# it, so nothing downstream moves.
+:accept
+all $x: prisoner($x) -> obliged(Appeals, $x).
+
+? obliged(Appeals, Ruk).
+# => TRUE
+
+# "an unheard appeal does not empty a conviction" — the duty is in force for
+# every confined person and the conviction is untouched.
+? prisoner(Ruk).
+# => TRUE
+
+? permits(Appeals, Ruk).
+# => FALSE
+
+? free(Ruk).
+# => FALSE
+
+# And the duty reaches only people the conviction rule reached. The child has
+# no case to hear.
+? obliged(Appeals, Nell).
 # => FALSE

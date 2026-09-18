@@ -228,7 +228,12 @@ that it did — and a remedy that arrived by default, granted
 wherever nobody had yet said otherwise, would not be a remedy at all. It would be the
 record convicting nobody, ever, on the authority of whoever declines to write. The
 cost runs the other way and it is real: a person whose case nobody takes up — or
-whose completed relief never reaches the record — stays held. The shield chapter prices the mirror
+whose completed relief never reaches the record — stays held. That cost is bounded
+rather than absorbed. The chapter on being heard lands a review duty on an
+independent reader from a bare request, and moves it to a separated alternate when
+the reader does not answer, so declining to take a case up is a contestable failure
+and not a silence. What none of that supplies is relief, which is the only one of
+them a conviction reads. The shield chapter prices the mirror
 of that cost — a guilty man free while an exposure waits for review — and calls its
 window deliberate. This is the other pan of the same scale, and it is weighed the
 same way: the benefit of an absence goes to what the machinery has already concluded,
