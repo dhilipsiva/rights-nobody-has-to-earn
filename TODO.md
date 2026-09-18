@@ -59,8 +59,6 @@ Each Phase B item: chapter + pins + suites + ledger rows + child slot +
 opening-note entries + host cut + `UNRENDERED_FAMILIES`/`THIN_POSTURES`
 membership updated + regenerated reports + `cargo test` + `./verify.sh`.
 
-21. **20 — A Crisis Does Not Suspend the Republic** (PROMOTED).
-22. **21 — A Way to Be Heard** (PROMOTED).
 23. **02 — Who Counts** (PROMOTED from 07; opens by generalising chapter 1's
     birth root to the other three; may add a `records/first_contact_*` case).
 24. **The child slot in every kept engine chapter** (03, 04, 16, 18, 22; the

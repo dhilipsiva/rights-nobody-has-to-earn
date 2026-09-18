@@ -353,6 +353,16 @@ below.
   computing and deciding as separate permissions that must rejoin the exact
   holding reviewed, and a subject who is a handle rather than a verdict.
 
+- [Chapter 20: A Crisis Does Not Suspend the Republic](20-a-crisis-does-not-suspend-the-republic.md)
+  — what a declaration may actually do, what no emergency may ever do, why
+  power does not grow at a border, and what the record does when one of these
+  powers breaks the rule it was operating under.
+
+- [Chapter 21: A Way to Be Heard](21-a-way-to-be-heard.md) — the way in when
+  somebody denies what you are owed: accessible notice and assistance, separated
+  functions, support that decides nobody's guilt, which court may order what,
+  and enforcement that carries no power to imprison.
+
 - [Chapter 22: Changing the Rules](22-changing-the-rules.md) — keeps the older
   declared-target law label separate from a source-bound constitutional result,
   then separates both from exact source identity, publication, deployment, and
@@ -713,6 +723,7 @@ the domain.
   staffing, funding, publication, operation, or delivery.
 
 - **Civil, criminal, and administrative justice, safety, and repair:** Chapters
+  [21](21-a-way-to-be-heard.md),
   [24](24-the-shield.md), [25](25-voiding.md),
   [27](27-a-prisoner-is-a-person.md), [4](04-what-you-are-owed.md),
   [7](07-who-owes-and-what-follows.md),
@@ -754,7 +765,7 @@ the domain.
   outside the formal coverage; foreign recognition is an external assumption.
 
 - **Emergencies, security, and defence:** Chapters
-  [18](18-the-vote-conviction-does-not-take.md) and
+  [20](20-a-crisis-does-not-suspend-the-republic.md) and
   [29](29-the-one-thing-taken.md) set separate protective mandates, individual
   coercive instruments, force limits, non-derogating emergencies, intelligence
   controls, objection and external-power limits. Each power has its own

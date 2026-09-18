@@ -1,0 +1,96 @@
+# ── Chapter 20 fidelity pins: "A Crisis Does Not Suspend the Republic" ─────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists two fixtures:
+#   tests/pins/records/child_with_nobody/fixture.nibli
+#   tests/pins/public-safety/review/declaration-conflict-withdraws-requisition
+# The second builds a completed non-derogating declaration and the compensated
+# requisition taken under it, with a person named in the measure. This file
+# asks what that state concludes and what it leaves alone.
+#
+# The withdrawal halves the chapter narrates are their own cases, cited rather
+# than duplicated because the defect record is longer than this whole file:
+#   tests/pins/public-safety/review/declaration-conflict-withdraws-requisition
+#                                       the declaration is found to have
+#                                       suspended something or governed by
+#                                       decree; the declaration, the
+#                                       requisition, the restraint, the
+#                                       recorded loss and the operator's
+#                                       accounting duty all stop, and the
+#                                       person keeps personhood, the floor and
+#                                       liberty throughout
+#   tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad
+#                                       a defence structure is found to have
+#                                       delegated public coercion to a private
+#                                       actor; the structure, the authorisation
+#                                       for force abroad and the ceiling duty
+#                                       stop the same way
+#   tests/pins/public-safety/review/policing-conflict-withdraws-arrest
+#   tests/pins/public-safety/review/security-intelligence-conflict-withdraws-surveillance
+#   tests/pins/public-safety/firewalls/   every coercive instrument against all
+#                                       eight floor rights
+#   tests/pins/public-safety/composed/   the alternate-authoriser and
+#                                       substitute-reviewer routes, per window
+#   tests/pins/public-safety/temporal/   the window and renewal machinery
+# None of them ends an emergency, recalls a deployment, returns property or
+# establishes that an institution acted.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 12
+
+# ── "Start with a declaration that completed" ──────────────────────────────
+# A named hazard, a named affected population, published reasons and evidence,
+# its own current window, an authorisation no single body gave itself, and
+# immediate notification to the Assembly and the Constitutional Court.
+? complete(PSMandateConflictdeclarationRecord, PSNonDerogatingEmergencyDeclaration, PSMandateConflictdeclarationSubject).
+# => TRUE
+
+# "On that declaration a requisition completed" — specified property necessary
+# for that hazard, with an inventory, a route to return or compensation, and a
+# real challenge.
+? complete(PSMandateConflictrequisitionRecord, PSCompensatedRequisitionMeasure, PSMandateConflictrequisitionSubject).
+# => TRUE
+
+# ── "What does not move is the person." ───────────────────────────────────
+# The declaration and the requisition both stand, and the person named in the
+# measure is a person, is owed the floor, and is not a prisoner.
+? person(PSMandateConflictrequisitionSubject).
+# => TRUE
+
+? owe(State, Eats, PSMandateConflictrequisitionSubject).
+# => TRUE
+
+? prisoner(PSMandateConflictrequisitionSubject).
+# => FALSE
+
+# An emergency measure is not a credibility finding and not a clawback either.
+? false(PSMandateConflictrequisitionSubject).
+# => FALSE
+
+? lose(Points, PSMandateConflictrequisitionSubject).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "for a record holding one birth entry, a declared emergency changes nothing
+# at all. Not because the child is exempted. Because there is no clause that
+# reaches them."
+? person(Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+? travel(Nell).
+# => TRUE
+
+? restrain(Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE

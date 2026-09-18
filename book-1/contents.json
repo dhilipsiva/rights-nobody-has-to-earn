@@ -171,17 +171,19 @@
         },
         {
           "number": 20,
+          "file": "20-a-crisis-does-not-suspend-the-republic.md",
           "title": "A Crisis Does Not Suspend the Republic",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 21,
+          "file": "21-a-way-to-be-heard.md",
           "title": "A Way to Be Heard",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 22,

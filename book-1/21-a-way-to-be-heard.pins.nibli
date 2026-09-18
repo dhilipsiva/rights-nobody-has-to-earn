@@ -1,0 +1,81 @@
+# ── Chapter 21 fidelity pins: "A Way to Be Heard" ──────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/21-a-way-to-be-heard.pins.nibli
+#   ./verify.sh          # the real check — the line above cannot see
+#                        # the cross-file reconciliation or the prose guards
+#
+# The chapter's case lists three fixtures, which share no record or subject
+# constant:
+#   tests/pins/records/child_with_nobody/fixture.nibli
+#   tests/pins/justice/hearing/positive
+#   tests/pins/justice/appeal/request-without-operator-or-previous-permission
+#
+# The rest of the family is cited rather than duplicated:
+#   tests/pins/justice/hearing/{CivilJustice,AdministrativeJustice,
+#       FamilyJustice,LabourJustice,ConsumerJustice,ConstitutionalJustice,
+#       CriminalJustice}   one case per domain the section enumerates
+#   tests/pins/justice/{assistance,investigation,prosecution,defence,
+#       survivor,restoration}/   the independent-assistance, function-separation
+#                                and voluntary-restoration records
+#   tests/pins/justice/{case-relief,general-invalidation,composition-review}/
+#                                which court may order what
+#   tests/pins/justice/enforcement/   enforcement bounded to the exact remedy
+#   tests/pins/justice/nonresponse/positive   a certified failure to answer
+#                                moves the duty to an independent alternate
+#   tests/pins/justice/boundaries/no-person-consequences-or-forged-orders
+#   tests/pins/justice/{access,conditions,continuity,release-review,defect}/
+# None of them establishes that a hearing happened or that anybody was heard.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 11
+
+# ── "A right needs a way to be heard when somebody denies it." ─────────────
+? complete(JCaseRecord, JusticeFairHearing, JCaseCase).
+# => TRUE
+
+? obliged(JCaseOperator, ProvideFairReasonedAndContestableHearing, JCaseRecord).
+# => TRUE
+
+# ── "A request to review needs nobody's permission" ────────────────────────
+# A bare request from anyone at all, with no operator authorisation and no
+# previous reviewer, lands a review duty on an independent reader.
+? obliged(IndependentJusticeReader, ReviewJusticeRequest, BareJusticeRequest).
+# => TRUE
+
+# ── "This non-coercive route creates no arrest warrant, search power,
+# seizure power or authority to imprison." ────────────────────────────────
+# The hearing stands and its subject is neither confined nor discredited.
+? prisoner(JCaseSubject).
+# => FALSE
+
+? false(JCaseSubject).
+# => FALSE
+
+? lose(Points, JCaseSubject).
+# => FALSE
+
+# "a representative does not create the child's standing" — and a hearing
+# record does not create personhood either. Writing a birth or an encounter
+# for this subject is what would flip it.
+? person(JCaseSubject).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "money, documentation and immigration status cannot be the price of entry"
+# — the child holds none of the three and is owed the floor regardless.
+? person(Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+# "What none of it supplies is the asking." Nothing has been filed for this
+# child, so no hearing and no review duty follows for them.
+? complete(Nell, JusticeFairHearing, Nell).
+# => FALSE
+
+? prisoner(Nell).
+# => FALSE
